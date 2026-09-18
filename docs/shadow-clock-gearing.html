@@ -704,61 +704,111 @@ fn emitField(p : vec3f) -> vec3f {
   let SB = vec3f( 0.10, 0.86,  0.35);
   let SC = vec3f( 1.70, -0.10, -0.30);
 
-  /* cores inside the shells — this is the bleed-through */
+  /* luminous lace / yarn interiors inside glass — lookref orange/red filament,
+     cyan hub cue (A), orange data core (B), green yarn (C). Not Graphic D. */
   let puls = 0.86 + 0.14 * sin(u.time * 1.7);
-  e += glowPoint(p, SA, vec3f(0.24, 0.72, 1.00) * 1.35 * puls, 0.13, 1.0);
-  e += glowPoint(p, SB, vec3f(1.00, 0.50, 0.10) * 1.55 * puls, 0.15, 2.0);
-  e += glowPoint(p, SC, vec3f(0.22, 1.00, 0.44) * 1.35 * puls, 0.13, 3.0);
+  e += glowPoint(p, SA, vec3f(0.30, 0.82, 1.00) * 1.55 * puls, 0.11, 1.0);
+  e += glowPoint(p, SB, vec3f(1.00, 0.42, 0.08) * 1.85 * puls, 0.13, 2.0);
+  e += glowPoint(p, SC, vec3f(0.28, 1.00, 0.42) * 1.55 * puls, 0.11, 3.0);
+  /* nested inner glow (glyph-cube feel) */
+  e += glowPoint(p, SA, vec3f(0.55, 0.90, 1.00) * 0.55 * puls, 0.22, 1.0);
+  e += glowPoint(p, SB, vec3f(1.00, 0.28, 0.10) * 0.70 * puls, 0.24, 2.0);
+  e += glowPoint(p, SC, vec3f(0.40, 1.00, 0.55) * 0.55 * puls, 0.22, 3.0);
+  /* tangled lace filaments inside each shell */
+  for (var i = 0; i < 8; i = i + 1) {
+    let t0 = f32(i) / 8.0; let t1 = f32(i + 1) / 8.0;
+    let ang0 = t0 * 9.4 + u.time * 0.35; let ang1 = t1 * 9.4 + u.time * 0.35;
+    let ra = 0.16 + 0.05 * sin(t0 * 12.0);
+    let rb = 0.18 + 0.06 * sin(t0 * 10.0 + 1.2);
+    let rc = 0.15 + 0.05 * cos(t0 * 11.0);
+    let a0 = SA + vec3f(cos(ang0) * ra, (t0 - 0.5) * 0.34, sin(ang0) * ra);
+    let a1 = SA + vec3f(cos(ang1) * ra, (t1 - 0.5) * 0.34, sin(ang1) * ra);
+    let b0 = SB + vec3f(cos(ang0 * 1.1) * rb, (t0 - 0.5) * 0.38, sin(ang0 * 1.1) * rb);
+    let b1 = SB + vec3f(cos(ang1 * 1.1) * rb, (t1 - 0.5) * 0.38, sin(ang1 * 1.1) * rb);
+    let c0 = SC + vec3f(cos(ang0 * 0.9) * rc, (t0 - 0.5) * 0.32, sin(ang0 * 0.9) * rc);
+    let c1 = SC + vec3f(cos(ang1 * 0.9) * rc, (t1 - 0.5) * 0.32, sin(ang1 * 0.9) * rc);
+    e += glowLine(p, a0, a1, vec3f(0.45, 0.88, 1.00) * 0.70, 0.008, 1.0);
+    e += glowLine(p, b0, b1, vec3f(1.00, 0.48, 0.12) * 0.95, 0.009, 2.0);
+    e += glowLine(p, c0, c1, vec3f(0.35, 1.00, 0.48) * 0.75, 0.008, 3.0);
+  }
 
-  /* crossing beams, arced */
+  /* crossing beams, arced — slightly thicker lookref cyan paths */
   for (var i = 0; i < 5; i = i + 1) {
     let t0 = f32(i) / 5.0; let t1 = f32(i + 1) / 5.0;
-    e += glowLine(p, arcPt(SA, SB, 0.55, t0), arcPt(SA, SB, 0.55, t1), vec3f(0.30, 0.78, 1.00) * 0.55, 0.012, 5.0);
-    e += glowLine(p, arcPt(SB, SC, 0.55, t0), arcPt(SB, SC, 0.55, t1), vec3f(0.30, 0.78, 1.00) * 0.55, 0.012, 6.0);
-    e += glowLine(p, arcPt(SC, SA, -0.70, t0), arcPt(SC, SA, -0.70, t1), vec3f(0.40, 0.86, 1.00) * 0.55, 0.012, 7.0);
+    e += glowLine(p, arcPt(SA, SB, 0.55, t0), arcPt(SA, SB, 0.55, t1), vec3f(0.30, 0.78, 1.00) * 0.70, 0.016, 5.0);
+    e += glowLine(p, arcPt(SB, SC, 0.55, t0), arcPt(SB, SC, 0.55, t1), vec3f(0.30, 0.78, 1.00) * 0.70, 0.016, 6.0);
+    e += glowLine(p, arcPt(SC, SA, -0.70, t0), arcPt(SC, SA, -0.70, t1), vec3f(0.40, 0.86, 1.00) * 0.70, 0.016, 7.0);
   }
 
   /* WIRE OF LIGHT = Hands lace cord (Layer III only).
      One luminous strand tying glass stations A/B/C through the axle spine.
-     Cyan trail core + golden wisps. Denser where participation winds near B.
-     Two ends exist (start → halt). Not a CTC. Not a second store. Not Graphic D. */
+     Thicker cyan/gold cord (lattice lookrefs). Two ends (start → halt). Not CTC. */
   let startEnd = vec3f(-2.85, -0.42, -0.95);
   let haltEnd  = vec3f( 2.85, -0.52,  0.35);
-  /* axle spine through stations — cyan primary */
-  e += glowLine(p, startEnd, SA, vec3f(0.35, 0.88, 1.00) * 0.95, 0.018, 4.0);
-  e += glowLine(p, SA, SB,    vec3f(0.35, 0.88, 1.00) * 1.15, 0.020, 4.0);
-  e += glowLine(p, SB, SC,    vec3f(0.35, 0.88, 1.00) * 1.15, 0.020, 4.0);
-  e += glowLine(p, SC, haltEnd, vec3f(0.35, 0.88, 1.00) * 0.95, 0.018, 4.0);
-  /* golden wisp sheath along the same strand (slightly thicker, softer) */
-  e += glowLine(p, startEnd, SA, vec3f(1.00, 0.78, 0.28) * 0.38, 0.032, 4.0);
-  e += glowLine(p, SA, SB,    vec3f(1.00, 0.78, 0.28) * 0.48, 0.036, 4.0);
-  e += glowLine(p, SB, SC,    vec3f(1.00, 0.78, 0.28) * 0.48, 0.036, 4.0);
-  e += glowLine(p, SC, haltEnd, vec3f(1.00, 0.78, 0.28) * 0.38, 0.032, 4.0);
-  /* end caps — visible start / halt (Rule Zero picture) */
-  e += glowPoint(p, startEnd, vec3f(1.00, 0.90, 0.55) * 0.85, 0.055, 4.0);
-  e += glowPoint(p, haltEnd,  vec3f(1.00, 0.90, 0.55) * 0.85, 0.055, 4.0);
+  e += glowLine(p, startEnd, SA, vec3f(0.40, 0.92, 1.00) * 1.25, 0.028, 4.0);
+  e += glowLine(p, SA, SB,    vec3f(0.40, 0.92, 1.00) * 1.45, 0.032, 4.0);
+  e += glowLine(p, SB, SC,    vec3f(0.40, 0.92, 1.00) * 1.45, 0.032, 4.0);
+  e += glowLine(p, SC, haltEnd, vec3f(0.40, 0.92, 1.00) * 1.25, 0.028, 4.0);
+  /* golden wisp sheath — lookref gold wire of light */
+  e += glowLine(p, startEnd, SA, vec3f(1.00, 0.82, 0.28) * 0.62, 0.048, 4.0);
+  e += glowLine(p, SA, SB,    vec3f(1.00, 0.82, 0.28) * 0.78, 0.055, 4.0);
+  e += glowLine(p, SB, SC,    vec3f(1.00, 0.82, 0.28) * 0.78, 0.055, 4.0);
+  e += glowLine(p, SC, haltEnd, vec3f(1.00, 0.82, 0.28) * 0.62, 0.048, 4.0);
+  e += glowPoint(p, startEnd, vec3f(1.00, 0.92, 0.55) * 1.05, 0.070, 4.0);
+  e += glowPoint(p, haltEnd,  vec3f(1.00, 0.92, 0.55) * 1.05, 0.070, 4.0);
   /* denser winding near B (participation heat) — open helix, not closed */
-  for (var i = 0; i < 7; i = i + 1) {
-    let t0 = f32(i) / 7.0; let t1 = f32(i + 1) / 7.0;
+  for (var i = 0; i < 8; i = i + 1) {
+    let t0 = f32(i) / 8.0; let t1 = f32(i + 1) / 8.0;
     let ang0 = t0 * 4.2; let ang1 = t1 * 4.2;
-    let r0 = 0.22 + 0.06 * sin(t0 * 6.28);
-    let r1 = 0.22 + 0.06 * sin(t1 * 6.28);
+    let r0 = 0.24 + 0.07 * sin(t0 * 6.28);
+    let r1 = 0.24 + 0.07 * sin(t1 * 6.28);
     let w0 = SB + vec3f(cos(ang0) * r0, (t0 - 0.5) * 0.55, sin(ang0) * r0);
     let w1 = SB + vec3f(cos(ang1) * r1, (t1 - 0.5) * 0.55, sin(ang1) * r1);
-    e += glowLine(p, w0, w1, vec3f(1.00, 0.82, 0.35) * 0.55, 0.010, 0.0);
+    e += glowLine(p, w0, w1, vec3f(1.00, 0.84, 0.32) * 0.72, 0.013, 0.0);
   }
-  /* soft floor trail echo under the cord (lookref golden trail) */
+  /* soft floor trail echo under the cord */
   for (var i = 0; i < 6; i = i + 1) {
     let t0 = f32(i) / 6.0; let t1 = f32(i + 1) / 6.0;
     let p0 = mix(startEnd, haltEnd, t0) + vec3f(0.0, FLOOR_Y_C + 0.08 - mix(startEnd, haltEnd, t0).y, 0.0);
     let p1 = mix(startEnd, haltEnd, t1) + vec3f(0.0, FLOOR_Y_C + 0.08 - mix(startEnd, haltEnd, t1).y, 0.0);
-    e += glowLine(p, p0, p1, vec3f(1.00, 0.72, 0.22) * 0.22, 0.020, 0.0);
+    e += glowLine(p, p0, p1, vec3f(1.00, 0.72, 0.22) * 0.32, 0.028, 0.0);
   }
 
-  /* cluster orbs */
-  e += glowPoint(p, vec3f(-2.45, 0.55, 0.55), vec3f(0.22, 1.00, 0.46) * 0.75, 0.11,  8.0);
-  e += glowPoint(p, vec3f( 0.15, 1.85, -0.35), vec3f(0.22, 1.00, 0.46) * 0.75, 0.11,  9.0);
-  e += glowPoint(p, vec3f( 2.45, 0.40, 0.60), vec3f(0.22, 1.00, 0.46) * 0.75, 0.11, 10.0);
+  /* floor path arrow cues between regions (lookref cyan glyph arrows) — view only */
+  for (var i = 0; i < 4; i = i + 1) {
+    let t = (f32(i) + 0.5) / 4.0;
+    let abm = mix(SA, SB, t);
+    let bcm = mix(SB, SC, t);
+    let ab = vec3f(abm.x, FLOOR_Y_C + 0.04, abm.z);
+    let bc = vec3f(bcm.x, FLOOR_Y_C + 0.04, bcm.z);
+    let abDir = normalize(SB - SA) * 0.10;
+    let bcDir = normalize(SC - SB) * 0.10;
+    e += glowLine(p, ab - abDir, ab + abDir, vec3f(0.25, 0.90, 1.00) * 0.55, 0.012, 0.0);
+    e += glowPoint(p, ab + abDir * 1.4, vec3f(0.35, 0.95, 1.00) * 0.70, 0.035, 0.0);
+    e += glowLine(p, bc - bcDir, bc + bcDir, vec3f(0.25, 0.90, 1.00) * 0.55, 0.012, 0.0);
+    e += glowPoint(p, bc + bcDir * 1.4, vec3f(0.35, 0.95, 1.00) * 0.70, 0.035, 0.0);
+  }
+
+  /* faint vertical uplink on axle/B — projection / axle deadbolt accent ONLY.
+     Not POINTER emission. Not Core. Label: view instrument. */
+  let up0 = vec3f(0.10, FLOOR_Y_C + 0.02, 0.35);
+  let up1 = vec3f(0.10, 3.40, 0.35);
+  e += glowLine(p, up0, up1, vec3f(0.55, 0.92, 1.00) * 0.48, 0.014, 4.0);
+  e += glowPoint(p, up0, vec3f(0.85, 0.95, 1.00) * 0.90, 0.09, 4.0);
+  e += glowPoint(p, mix(up0, up1, 0.55), vec3f(0.40, 0.85, 1.00) * 0.25, 0.18, 0.0);
+
+  /* soft atmospheric wisps (lookref bloom energy) */
+  e += glowPoint(p, SA + vec3f(0.55, 0.95, -0.40), vec3f(0.20, 0.55, 0.90) * 0.18, 0.55, 0.0);
+  e += glowPoint(p, SB + vec3f(-0.35, 0.70, 0.55), vec3f(1.00, 0.55, 0.20) * 0.16, 0.60, 0.0);
+  e += glowPoint(p, SC + vec3f(-0.50, 0.85, 0.30), vec3f(0.25, 0.90, 0.50) * 0.16, 0.50, 0.0);
+
+  /* cluster orbs — green yarn spheres (ASTRA yarn = lace suggestion only) */
+  e += glowPoint(p, vec3f(-2.45, 0.55, 0.55), vec3f(0.22, 1.00, 0.46) * 0.95, 0.14,  8.0);
+  e += glowPoint(p, vec3f( 0.15, 1.85, -0.35), vec3f(0.22, 1.00, 0.46) * 0.95, 0.14,  9.0);
+  e += glowPoint(p, vec3f( 2.45, 0.40, 0.60), vec3f(0.22, 1.00, 0.46) * 0.95, 0.14, 10.0);
+  e += glowPoint(p, vec3f(-2.45, 0.55, 0.55), vec3f(0.55, 1.00, 0.70) * 0.45, 0.22,  8.0);
+  e += glowPoint(p, vec3f( 0.15, 1.85, -0.35), vec3f(0.55, 1.00, 0.70) * 0.45, 0.22,  9.0);
+  e += glowPoint(p, vec3f( 2.45, 0.40, 0.60), vec3f(0.55, 1.00, 0.70) * 0.45, 0.22, 10.0);
 
   /* tick cells t0..t6 */
   for (var i = 0; i < 7; i = i + 1) {
@@ -782,16 +832,30 @@ fn emitField(p : vec3f) -> vec3f {
    called from inside the march. When a pixel spans more than about a third of a
    cell the grid is unresolvable, so it fades out instead of aliasing. */
 fn floorColor(q : vec2f, foot : f32) -> vec3f {
-  let w = max(foot * 1.6, 0.006);
+  /* denser circuit grid + micro annotation ticks (lattice lookrefs) */
+  let w = max(foot * 1.6, 0.005);
   let res = 1.0 - smoothstep(0.30, 0.85, foot);
   if (res <= 0.001) { return vec3f(0.0); }
-  let g = abs(fract(q) - vec2f(0.5));
-  let minor = 1.0 - smoothstep(0.0, w, min(g.x, g.y));
+  let g = abs(fract(q * 2.0) - vec2f(0.5));
+  let minor = 1.0 - smoothstep(0.0, w * 2.0, min(g.x, g.y));
+  let g2 = abs(fract(q) - vec2f(0.5));
+  let mid = 1.0 - smoothstep(0.0, w, min(g2.x, g2.y));
   let g4 = abs(fract(q * 0.25) - vec2f(0.5));
   let major = 1.0 - smoothstep(0.0, w * 0.30, min(g4.x, g4.y));
-  let fade = exp(-length(q) * 0.30);
-  return (vec3f(0.10, 0.48, 0.62) * minor * 0.72
-        + vec3f(0.22, 0.82, 1.00) * major * 1.35) * fade * res;
+  /* cheap micro annotation dots */
+  let cell = floor(q * 5.0);
+  let h = fract(sin(dot(cell, vec2f(127.1, 311.7))) * 43758.5453);
+  let gx = abs(fract(q.x * 5.0) - 0.5);
+  let gz = abs(fract(q.y * 5.0) - 0.5);
+  let near = 1.0 - smoothstep(0.0, max(w * 3.0, 0.04), length(vec2f(gx, gz)));
+  let dots = select(0.0, near, h > 0.88);
+  let ticks = select(0.0, 1.0 - smoothstep(0.0, w * 2.5, min(gx, gz)), h > 0.78 && h <= 0.88);
+  let fade = exp(-length(q) * 0.28);
+  return (vec3f(0.08, 0.40, 0.52) * minor * 0.55
+        + vec3f(0.12, 0.55, 0.70) * mid * 0.70
+        + vec3f(0.22, 0.82, 1.00) * major * 1.45
+        + vec3f(0.55, 0.90, 1.00) * dots * 0.85
+        + vec3f(1.00, 0.78, 0.30) * ticks * 0.35) * fade * res;
 }
 
 /* the whole picture, as a function of NDC — so it can be run from a compute
@@ -833,10 +897,12 @@ fn shade(ndc : vec2f) -> vec3f {
         mapGlass(p + e.yxy).x - mapGlass(p - e.yxy).x,
         mapGlass(p + e.yyx).x - mapGlass(p - e.yyx).x));
       let fres = pow(1.0 - abs(dot(n, rd)), 2.6);
-      let tint = select(select(vec3f(0.22, 1.00, 0.44), vec3f(1.00, 0.50, 0.10), g.y < 2.5),
-                        vec3f(0.24, 0.72, 1.00), g.y < 1.5);
-      col += (vec3f(0.55, 0.78, 0.95) * 0.30 + tint * 0.55) * fres * trans * hiMul(g.y);
-      trans *= 0.80;
+      let tint = select(select(vec3f(0.22, 1.00, 0.44), vec3f(1.00, 0.42, 0.08), g.y < 2.5),
+                        vec3f(0.28, 0.80, 1.00), g.y < 1.5);
+      /* clearer glass shell + luminous interior bleed */
+      col += (vec3f(0.65, 0.85, 1.00) * 0.38 + tint * 0.72) * fres * trans * hiMul(g.y);
+      col += tint * 0.12 * trans * hiMul(g.y);
+      trans *= 0.78;
       t += 0.045;
       continue;
     }
@@ -852,10 +918,10 @@ fn shade(ndc : vec2f) -> vec3f {
     if (t > 26.0 || trans < 0.02) { break; }
   }
 
-  /* atmospheric lift + filmic roll-off so cores bloom instead of clipping */
-  col = col * 4.2 + vec3f(0.002, 0.003, 0.006);
-  col = col / (col + vec3f(0.50));
-  col = pow(col, vec3f(0.82));
+  /* atmospheric lift + filmic roll-off — lookref bloom without washing cubes */
+  col = col * 4.8 + vec3f(0.001, 0.002, 0.004);
+  col = col / (col + vec3f(0.48));
+  col = pow(col, vec3f(0.80));
   return col;
 }
 
@@ -902,21 +968,27 @@ fn fs_main(input : VSOut) -> @location(0) vec4f {
       entries: [{ binding: 0, resource: { buffer: uniformBuffer } }],
     });
 
-    /* ——— orbit / zoom camera with real control ——— */
-    const TARGET = [0, -0.05, 0];
-    let yaw = -0.62, pitch = 0.42, radius = 7.4, userTouched = false;
+    /* ——— orbit / zoom camera with real control ———
+       Default frames A/B/C cluster cubes + wire of light (not empty floor).
+       TARGET = geometric center of stations, slightly below visual interest so
+       content sits upper-middle above HUD/legend/telemetry. Portrait widens FOV
+       and pulls SCENE_R in so primary cubes are not edge-clipped. */
+    const TARGET = [0.03, 0.24, -0.10]; /* geo center A/B/C; HUD bias */
+    const DEFAULT_YAW = -0.88;
+    const DEFAULT_PITCH = 0.52; /* elevated 3/4 toward B / axle */
+    let yaw = DEFAULT_YAW, pitch = DEFAULT_PITCH, radius = 5.0, userTouched = false;
 
-    /* Fit the scene instead of guessing per device. The bound covers every
-       emitter (stations, clusters, audits at z -2.70, cord at z +1.75).
-       On portrait the HORIZONTAL half-angle is the binding one, which is why
-       a phone has to stand much further back than a desktop. */
-    const SCENE_R = 4.4;
-    const FOV_SCALE = 0.72;
+    /* Bound = cluster triangle + wire midspan — not audits/ticks at z±2.7 */
+    const SCENE_R = 2.60;
+    const FOV_DESKTOP = 0.78;
+    const FOV_PORTRAIT = 0.98;
+    function fovFor(aspect) { return aspect < 0.78 ? FOV_PORTRAIT : FOV_DESKTOP; }
     function autoRadius(aspect) {
-      const halfV = Math.atan(FOV_SCALE);
-      const halfH = Math.atan(FOV_SCALE * aspect);
+      const fov = fovFor(aspect);
+      const halfV = Math.atan(fov);
+      const halfH = Math.atan(fov * aspect);
       const d = SCENE_R / Math.sin(Math.min(halfV, halfH));
-      return Math.min(17, Math.max(5.5, d * 1.06));
+      return Math.min(11, Math.max(3.8, d * 1.02));
     }
     function camEye() {
       const cp = Math.cos(pitch), sp = Math.sin(pitch);
@@ -942,7 +1014,7 @@ fn fs_main(input : VSOut) -> @location(0) vec4f {
       const aspect = w / Math.max(h, 1);
       if (!userTouched) radius = autoRadius(aspect);
       const eye = camEye();
-      const fovScale = FOV_SCALE;
+      const fovScale = fovFor(aspect);
 
       /* keep JS picking in lockstep with the shader camera */
       const proj = mat4Perspective(2 * Math.atan(fovScale), aspect, 0.1, 100);
@@ -954,7 +1026,7 @@ fn fs_main(input : VSOut) -> @location(0) vec4f {
       const pass = enc.beginRenderPass({
         colorAttachments: [{
           view: context.getCurrentTexture().createView(),
-          clearValue: { r: 0.008, g: 0.011, b: 0.018, a: 1 },
+          clearValue: { r: 0.004, g: 0.006, b: 0.012, a: 1 },
           loadOp: "clear", storeOp: "store",
         }],
       });
@@ -1049,7 +1121,7 @@ fn fs_main(input : VSOut) -> @location(0) vec4f {
 
     const resetBtn = document.getElementById("camReset");
     if (resetBtn) resetBtn.addEventListener("click", () => {
-      yaw = -0.62; pitch = 0.42; userTouched = false;
+      yaw = DEFAULT_YAW; pitch = DEFAULT_PITCH; userTouched = false;
     });
 
     window.addEventListener("resize", () => resize());
