@@ -126,6 +126,51 @@ Arrival is Hands + Contract II. Combined gears time and diagnose. They do not cl
 | T4 | Two-mind / two-inventory |
 | T5 | Null mesh to P0 |
 
+## 3-axis legal cells (pass 2)
+
+Not a full cube. Blank triples stay `[GAP]`, not invented-illegal.
+
+| Cup | Water | HCC | Legal? |
+|---|---|---|---|
+| C3 | S1 | any πB | grind — no |
+| C3 | S2–S3 | πB (RIC∥PFC) | yes — live work |
+| C3 | S2–S3 | PFC-only | locked — no |
+| C3 | S0 | πB | banks; nothing crosses — no tick |
+| C4 | any | πB as alter | late — no |
+| C4 | — | πFB | yes — ground truth |
+| C5 | S0–S1 talk | πID | yes — priors; not impact |
+| C2 | S2 | πB | initiation if meshed |
+| C1 | S0 | πRIC / πPFC | field; no act |
+
+## Combined trace (pass 2)
+
+One event. Labels only. Order between C4 and HCC S7 unspecified.
+
+1. C1 / Water S0 / HCC priors present — loaded field  
+2. Pressure → Water S1 — grind if anyone works C3  
+3. Kernel / F2 — leave S1  
+4. C2 let-go or speech — πB initiation  
+5. C3 ∧ Water S2–S3 — only live window  
+6. C4 floor — πFB  
+7. C5 talk — πID; Water may return S4 then S0  
+
+## Cluster labels on the train (pass 2)
+
+Relationships cluster as the train turns. Labels may be created, split, or merged to name what is observed. Layer III. Not L-merge. Not F3 pairing. Not P4.
+
+## Shadow t0–t6 (pass 2)
+
+`docs/shadow-clock-gearing.html` / clock t0–t6 is a Layer III flatten of this train. Not a fourth clock. Do not fuse.
+
+## Pass 2 clipboard deltas
+
+| Ticket | Action |
+|---|---|
+| T1 | 3-axis licensed cells |
+| T2 | Combined trace |
+| T3 | Cluster labels ≠ L / F3 / P4 |
+| T4 | Shadow t0–t6 flatten stamp |
+
 ---
 
 ## Executive Seams Summary
