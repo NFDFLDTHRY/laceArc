@@ -46,6 +46,7 @@ Same rule. Same strand. 3D stars and N-dimensional participation are readings of
 | [docs/petersen-zech-clipboard-prompt.md](docs/petersen-zech-clipboard-prompt.md) | Agent prompt: ASCII clipboard for Petersen & Zech *Mathematical theory of deep learning*. |
 | [docs/agentscope-clipboard-prompt.md](docs/agentscope-clipboard-prompt.md) | Agent prompt: ASCII clipboard for Bi et al. AgentScope (Diagnosing with Insights). |
 | [docs/rust-nostd-crate-map-prompt.md](docs/rust-nostd-crate-map-prompt.md) | Agent prompt: ASCII map of Hands → Rust `#![no_std]` first-party crates (intuitive tree; no `src/` yet). |
+| [docs/rust-nostd-branch-contracts-prompt.md](docs/rust-nostd-branch-contracts-prompt.md) | Agent prompt: next plan — per-branch `#![no_std]` contracts on top of the crate map (plan only; no `src/`). |
 | [docs/gearing-code-1to1-prompt.md](docs/gearing-code-1to1-prompt.md) | Agent prompt: force 1:1 between WebGPU gearing visual keys and code units (Layer III; emission [GAP]). |
 | [docs/pointer-emission-prompt.md](docs/pointer-emission-prompt.md) | Agent prompt: draft `docs/pointer-emission.md` as unanswered questions only (DRAFT; human accepts later; no `src/`). |
 | [docs/gearing-html-iterate-prompt.md](docs/gearing-html-iterate-prompt.md) | Agent prompt: iterate WebGPU gearing HTML / shafts under claim law, 1:1 keys, Layer III. |
