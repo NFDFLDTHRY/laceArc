@@ -26,7 +26,7 @@ A plan that shuffled folders again would be restructuring theatre. This plan mov
 | **R2** | **Identifier families collide.** `A5` is Graphic A panel 5 (the star) *and* train-A tooth 5 in `contracts-trainA.js`. `C1` is Graphic C panel 1, Coffee Cup stage 1, and crate-map Page C. `P1` is atomic primitive *occurrence at a position* in `atomic-primitives-map.md` and manifest Piece 1 *continuous strand* in the hologram IR golden — both under `docs/plans/`. Live families: graphic panels A1–A13/B1–B12/C1–C12/D1–D6; manifest Pieces 1–15; atomic P0–P4, K1–K6, G1–G7; audit stations A1–A14; downstream F01–F12; reason-model RM1–RM10; manifest Q1–Q11; gear keys A1–A9/B1–B5/C1–C10/t0–t6/E1–E2/R1/X1–X6; HCC H1–H11; Cup C1–C5; my review prompt B1–B9. A citation "see A5" is now ambiguous between the source of record and a Shadow gear tooth. | `grep -c` of each family across the tree; gear keys are baked into JS and HTML and the 1:1 audit forbids renaming them. |
 | **R3** | **Four documents are titled "Systems Manifest".** The Hands manifest and three gear manifests (HCC-A 793 lines, Cup 357, Water 279). Subordinate by content — each says "Hands court: `docs/systems-manifest.md`" — coequal by title. | `git grep -l '^# Systems Manifest'` → 4. |
 | **R4** | **"A pass" follows four conventions.** History: `history-recovered-pass-N-*.md` products beside a `pass-6-plan` ticket. Clock: one `<gear>-pass-N-plan.md` per executed pass, kept beside its product — 14 files, every one an island and a dead end, all marked EXECUTED. Plans: `atomic-construction-pass-1-plan.md`, NOT_RUN. Audit: passes as ticks in one append-only log. Only the last one scales. | Link graph §6 check 3: 26 islands, 19 of them files (14 are clock pass plans), 7 are shelf READMEs reached only by directory link. |
-| **R5** | **Shelf doors don't name what is on the shelf.** `history/README.md` names 0 of 10 files. `prompts/README.md` names 0 of 16. `clock/README.md` names 13 of 26 — not `hcc-a-projection.html`, not any pass plan. `gearing/README.md` omits `RESYNC.md`, `resync.sh`, `claims/`. `hologram/README.md` omits the seven `primitive-*.png` sheets. `plans/README.md` names every file but as bare text, not links, so its files register as orphans. `docs/` root — the court, 11 files — has no README at all; nor do `.claude/`, `coord/stations/`, `gearing/claims/`, `plans/fixtures/`, `plans/tools/`. | §6 check 2. |
+| **R5** | **Shelf doors don't name what is on the shelf.** `history/README.md` names 0 of 10 files. `prompts/README.md` names 0 of 16. `clock/README.md` names 14 of 34 and links **none** — not `hcc-a-projection.html`, not any pass plan. (26 at survey; the campaign adds ~16/hour.) `gearing/README.md` omits `RESYNC.md`, `resync.sh`, `claims/`. `hologram/README.md` omits the seven `primitive-*.png` sheets. `plans/README.md` names every file but as bare text, not links, so its files register as orphans. Six of nine doors have this defect; see §4.1. `docs/` root — the court, 11 files — has no README at all; nor do `.claude/`, `coord/stations/`, `gearing/claims/`, `plans/fixtures/`, `plans/tools/`. | §6 check 2. |
 | **R6** | **Shelf descriptions have drifted from shelf contents.** Root README: "Plans — Rust `[PLAN]` tree + birth cards"; the shelf holds hologram IR schema and binding, two golden fixtures, a Python validator, an atomic-construction plan, the projection brief and a second reading. "Shadow view — `shadow-clock-gearing.html`, gearing, hologram"; there are now three HTML viewers (`docs/shadow-clock-gearing.html`, `docs/hologram/nostd-pipeline.html`, `docs/clock/hcc-a-projection.html`) and the `renderer` station owns exactly one of them. | `git ls-files '*.html'` + `which` on each. |
 | **R7** | **Ten tracked paths are unowned — fail closed for every agent.** All eight `docs/gearing/claims/*.claim` (the files `claim.sh` itself writes), `.gitignore`, `LICENSE`. | `which` over `git ls-files`: 151 owned, 10 UNOWNED. |
 | **R8** | **Coordination bookkeeping is 31% of `main`'s history.** 44 of 138 commits in eight hours are claim, release or refresh. Each is a push that races every other agent's push. `CLAIMS.md` warned "do not maintain a shared STATUS.md that everyone rewrites — that reintroduces grind"; the umbrella reintroduced it at station granularity. One station (`prompts`) has been held for over two hours with no commit to its directory. | `git log --since='8 hours ago'`, subject prefixes. |
@@ -103,20 +103,75 @@ Each phase: one station, one commit, "do not run until go phase N". Phase 1 is d
 
 | Phase | Station | Product | Go-gate |
 |---|---|---|---|
-| **0** | coord | RULES: `docs/gearing/claims/<shaft>.claim` → `gear:<shaft>`; `.gitignore` `LICENSE` `docs/README.md` `docs/namespace-register.md` → law/maps; `docs/**/*.html` → renderer (all three viewers). `stations/README.md`. **Zero unowned paths.** | go phase 0 |
-| **1a** | history | `history/README.md` names all 10 files, as links. | go phase 1 |
-| **1b** | prompts | `prompts/README.md` names all 16, as links; one line: *a running pass ticket lives here; an executed one becomes a receipt or a log tick, not a file*. | go phase 1 |
-| **1c** | hologram | `clock/README.md` names all 26 incl. `hcc-a-projection.html`; `hologram/README.md` names the seven primitive sheets. | go phase 1 |
-| **1d** | gearing-meta | `gearing/README.md` names `RESYNC.md`, `resync.sh`, `claims/`; `claims/README.md` (one line: written by `claim.sh`; owned per shaft). | go phase 1 |
-| **1e** | maps | `plans/README.md` rows → links; `fixtures/README.md`, `tools/README.md` one line each; shelf description corrected (plans, not rust only). | go phase 1 |
-| **1f** | coord | `coord/stations/README.md`. (Can ride phase 0.) | go phase 1 |
-| **2** | law | `docs/README.md` (court door). Root README loses the per-file table, keeps the shelf table and Hands rows, and its shelf descriptions are corrected (R6). `AGENTS.md` paths → links. `staking` and `law-why` gain their one-line self-identification (R1). `defrag-plan.md` gains "superseded by". | go phase 2 — **after 1a–1f**, so nothing loses its index |
+| **0** ✅ | coord | **DONE** `5799afc`, released `92d3e02`. RULES: `docs/gearing/claims/<shaft>.claim` → `gear:<shaft>`; `.gitignore` `LICENSE` `docs/README.md` `docs/namespace-register.md` → law/maps; `docs/**/*.html` → renderer (all three viewers). `stations/README.md`. **Zero unowned paths.** | done |
+| **1** | see **§4.1** | Move the index out of the root README into the shelf doors, so phase 2 can delete the root table without orphaning 23 files. Nine sub-phases, one prerequisite. | go phase 1 |
+| **2** | law | `docs/README.md` (court door). Root README loses the per-file table, keeps the shelf table and Hands rows, and its shelf descriptions are corrected (R6). `AGENTS.md` paths → links. `staking` and `law-why` gain their one-line self-identification (R1). `defrag-plan.md` gains "superseded by". | go phase 2 — removes **only** the rows whose shelf door already links them (§4.1 gate) |
 | **3** | kit | `agent-control.md` and `grok-bot-profile.md`: IMPLEMENTATION LAW, READING ORDER and STILL FORBIDDEN blocks regenerated byte-for-byte from `law-why`, plus a header line `TRANSPORT COPY of law-why@<sha>`. Hook check 7: every transport copy's block equals the live block, or the copy carries `STALE` in its header. Hook check 8: every file in a shelf is named as a link in that shelf's README. | go phase 3 |
 | **4** | maps | `docs/namespace-register.md`: one table, every identifier family, its owner, its prefix. Source panels keep bare `A5`. Atomic primitives become `AP0–AP4`; manifest pieces are written `Piece 1` / `P.1`, never `P1`; audit stations `S-A1`; gear teeth keep their baked keys but are always written with the shaft, `trainA:A5`. Each owning station applies the spelling when it next touches its file; Pass 1 (Codex) adopts `AP` before it runs. | go phase 4 |
-| **5** | hologram | Three gear manifests retitled `Gear manifest — HCC-A (Shadow)` etc. (title line only; filenames stay). `clock/passes/` + index for the 14 executed pass plans, `git mv` only. Forward rule in `clock/README.md`: no new one-file-per-pass. | go phase 5 — **after the Cup/Water/HCC campaign stops** (passes landed within the last hour) |
+| **5** | hologram | Three gear manifests retitled `Gear manifest — HCC-A (Shadow)` etc. (title line only; filenames stay). `clock/passes/` + index for the executed pass plans (24 and counting), `git mv` only. **Absorbs sub-phase 1i:** the clock door is written here, once, against the folded shape. Forward rule in `clock/README.md`: no new one-file-per-pass. | go phase 5 — **after the Cup/Water/HCC campaign stops** (passes landed within the last hour) |
 | **6** *(optional)* | history + law | `READ_ME_FIRST.md` and `downstream-audit.md` → `history/` as dated artefacts; `CLAUDE.md` and `CONTRIBUTING.md` links follow. `kit/` becomes live controls only. | go phase 6 — costs a CLAUDE.md edit |
 | **7** | coord — **human decision** | Claim and release stop being their own commits: `claim` writes the station file locally; the work commit carries HELD; `release` rides the next work commit or a `doctor` sweep. `doctor --auto-clear` also frees a station whose `SINCE` is older than N hours with no commit to its paths. Target: claim/release share of commits from 31% to under 5%. | go phase 7 — changes the protocol every agent runs |
 | **8** | law — **human decision** | One sentence: *Core is Rust `no_std` only. Steward tooling — hooks, coord scripts, validators, Layer III viewers — may be any language, is never a Core dependency, and never lives under `src/`.* Closes downstream F11 and the question `tools/hologram-ir-validate.py` raises. | go phase 8 |
+
+### 4.1 Phase 1 — expanded, after measurement
+
+The table above described phase 1 as "shelf doors name their files." Measuring
+it changed three things: what the defect is, what the success test is, and what
+phase 1 is actually *for*.
+
+**What phase 1 is for.** The root README links 10 of 10 history files, 15 of 16
+prompts, 5 of 10 clipboards. The shelf doors link 0, 0 and 1. With two
+exceptions — `hologram/` at 16 of 23 and `graphics/` at 4 of 4 — **the root
+README is the repository's only index and the doors are decorative.** That is
+R9 measured. Phase 2 deletes the root table; **23 files would become orphans
+the moment it does.** Phase 1 is the transfer that makes phase 2 safe. It is
+not tidying.
+
+**What the defect is.** Not missing names — missing *links*. A bare filename in
+a door does not make a file reachable and does not clear the orphan check
+(verified: linked `water-pass-6-plan.md` cleared; bare-named `water-pass-5-plan.md`
+did not). Six of nine doors name files they do not link:
+clock 14 named / 0 linked, gearing 10/2, plans 8/1, clipboards 6/1, kit 5/0,
+coord 1/0.
+
+**What the success test is.** Broken, and fixed first. The orphan check compares
+**basenames**, so any link to any `README.md` exempts every `README.md`, and two
+files sharing a basename in different directories are conflated (demonstrated
+with a twin fixture). It reports 26; a path-resolving count reports **56**,
+including **7 shelf doors that are themselves unreachable** because the root
+README links `docs/clock/` rather than `docs/clock/README.md`.
+
+| Sub-phase | Station | Work | State |
+|---|---|---|---|
+| **1-pre** | kit | Orphan check resolves links to paths, not basenames; stop exempting every `README.md`; keep only the true root entry points. Accept: the check's count equals the independent path-resolved count (56 at this tip). | **first — nothing else is verifiable without it** |
+| **1a** | history | 10 files as links. Clears 3 root-only. | ready |
+| **1b** | prompts | 16 files as links, + *a running ticket lives here; an executed one becomes a receipt or a log tick, never a file*. Clears 9 root-only — **the largest phase-2 risk**. | **blocked**: `prompts` HELD by `Codex-atomic-pass2` since 20:48Z, 0 commits to `docs/prompts/` since. Needs the human to clear a stale claim. |
+| **1c** | hologram | `hologram/README.md`: the 7 `primitive-*.png` sheets. (`clock/README.md` is **not** here — see 1i.) | ready |
+| **1d** | gearing-meta | `RESYNC.md`, `resync.sh` added; the 8 `contracts-*.js` become links; `claims/README.md` (one line: written by `claim.sh`, owned per shaft). Clears 1 root-only. | ready |
+| **1e** | maps | `plans/README.md` rows → links; `fixtures/README.md`, `tools/README.md`; shelf description corrected (R6). Clears 1 root-only. Carries the phase-0 done-marker and this section. | ready |
+| **1f** | coord | `stations/README.md` lists the 10 station files as links; `coord.sh` becomes a link. Phase 0 created the file but it names none of them. | ready — **redo** |
+| **1g** | kit | 5 files as links. Clears 1 root-only. | ready |
+| **1h** | clipboards | **Deferred.** 10 files and growing — 4 Kauffman pass plans landed during this measurement, 8 commits in 90 minutes. A flat door drifts by the hour. | to phase 5's shape |
+| **1i** | clock | **Deferred into phase 5.** 34 files, 27 orphans, **16 added per hour** while the campaign runs. Phase 5 moves the pass plans to `clock/passes/`; a door written now is 34 rows phase 5 rewrites. | merged into phase 5 |
+
+**Order.** `1-pre` first. Then **1a, 1c, 1d, 1e, 1f, 1g in parallel** — six
+stations, no shared file, no shared line. `1b` when `prompts` frees.
+
+**Gate for phase 2.** Phase 2's law commit removes exactly the root-README rows
+whose shelf door now links that file, and no others. Rows for `clock/` and
+`clipboards/` stay until phase 5. This replaces "after 1a–1f": the root table
+shrinks shelf by shelf as each door takes over, and never leaves a gap.
+
+**Accept phase 1** when: the path-resolving check runs; root-only drops from 23
+to 4 after 1a–1g + 1b (the remaining 4 are `docs/README.md` and root entry
+points, which are phase 2's own work); no door names a file it does not link;
+and `docs/clock/` plus `docs/clipboards/` are the only shelves still indexed
+from the root.
+
+**Not in phase 1.** Making the 7 doors reachable — that needs the root README
+to link `docs/<shelf>/README.md` instead of `docs/<shelf>/`, which is phase 2,
+law station. Until then those doors stay orphans and the fixed check will say so.
+
 
 Phases 0–3 are filing. Phase 4 is naming. Phase 5 waits on another campaign. Phases 7–8 change law or protocol and are only proposals here.
 
