@@ -510,3 +510,5 @@ This test binds implementation posture (no crates.io graph, no foreign Core dyna
 ---
 
 *End of system mathematical model. Emission remains \([GAP]\). No `src/` authorized by this file.*
+
+| `docs/history-recovered-pass-3-2026-09-18.md` | Pass 3 recovery; graphics kin; emission still [GAP] |

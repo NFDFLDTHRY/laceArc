@@ -1,214 +1,158 @@
-# History recovery pass 3 — how the third extract sits
+# Lace memory recovery: third pass
 
-Source: workspace attachment `Lace_Memory_Recovery_Pass_3_2026-09-18.md` (18 September 2026).
+18 September 2026. This supplements the first two recovery notes. It records newly located history, direct source inspection, and corrections to claim strength. It is a reading note. The human-supplied staking law remains controlling in full; this note neither replaces that law nor supplies a missing Core rule.
 
-Supplements [pass 1](history-recovered-2026-09-18.md) and [pass 2](history-recovered-pass-2-2026-09-18.md).
+The strongest additions are four recovered visual counterparts of the canonical graphics; the user's September 7 correction to a 1D array whose pointers are themselves Lace; P02 v0.3's explicit retreat from cross-schedule trace equivalence; and source-level reasons why the old codec's exact-roundtrip claim cannot establish preservation of raw input. The standing DESIGN.md ledger also preserves specific assistant guesses and failed measurements.
 
-This is a **reading of that extract against current law**.
-It does not amend staking law.
-It does not settle pointer-emission.
-It does not replace `docs/graphics/` bytes.
-It does not grant `src/`.
-It does not install P02, the codec, or DESIGN.md defaults.
+Repository reference for this pass: NFDFLDTHRY/laceArc at `eed8396b205328b88bc8d8c14f2b479f339d7ccf`. The working tree was clean at the beginning and final inspection. `docs/pointer-emission.md` and `src/` were absent. No identifiable acceptance of an exact pointer-emission contract was recovered. This pass creates only this historical note; it does not change or publish repository files. One agent performed the recovery and its source checks; there was no independent reviewer or physical shoelace demonstration.
 
-The extract already says it is a reading note and that staking law remains controlling. Honor that.
+Conversation quotations below reproduce snippets returned by historical retrieval. They are not authenticated full transcript exports. Direct file readings, image inspection, metadata, static code observations, and historical claims are distinguished. Searches that returned the first two recovery notes were not counted as independent corroboration.
 
-The extract pinned `NFDFLDTHRY/laceArc` at `eed8396`. This map is written later. Pin ≠ authority over Hands.
+The graphics gap is substantially narrower.
 
----
+All four historical images were located, downloaded without alteration, and visually compared with the corresponding tracked repository files. The matching compositions include A's empty start and PIE examples, B's twelve mechanism panels, C's twelve dimensional-participation panels, and D's WORD/POINTER table and `ref_A`/`ref_B` example. The titles rendered inside the images match the canonical titles even where their stored filenames differ.
 
-## What pass 3 adds that 1–2 did not have
+| Graphic / original attachment named by repository | Recovered filename | Recorded creation time, UTC, 7 September 2026 | Recovered pixels / repository pixels |
+|---|---|---|---|
+| A / `13284.png` | The Lace Model in 3D: Words to Worlds.png | 00:24:10.170290 | 1536 × 1024 / 1500 × 1000 |
+| B / `13285.png` | Lace Mechanisms in 3D: Continuous Wire Universe.png | 00:27:44.502311 | 1672 × 941 / 1500 × 844 |
+| C / `13286.png` | N-Dimensional Lace Relationships Infographic.png | 00:32:45.114105 | 1672 × 941 / 1500 × 844 |
+| D / `13287.png` | Lace Data Structure: One Line, Infinite Structure.png | 01:05:43.976320 | 1536 × 1024 / 1500 × 1000 |
 
-- Four recovered visual counterparts of Graphics A–D, with timestamps, resolutions, and SHA-256 of both recovered and tracked files.
-- Direct user wording, 7 September 2026: the store is a 1D array; every pointer is another section of lace.
-- Full reads of P02 v0.2 and superseding v0.3: same reachable derivations ≠ same recorded history.
-- Static inspection of two `star_codec` sources: the 100% roundtrip is against a *normalized* string, not raw arrival.
-- `DESIGN.md` ledger: MINE guesses, known-bad measurements, missing-ruling count mismatch.
-- Cat / cat-1: only a two-line fragment is sourced. Embellished retrieval is excluded.
+These are recorded artifact timestamps, not proof of the first conception of the design. The attachment-number mapping comes from the pinned repository's graphics README. It was not recovered as an original upload receipt.
 
-29 August walker rejection is **not reversed**.
-Pass 2 contact-rule conflicts stay **visible**.
-Unary `POINT(target)` vs Graphic D `ref_A`/`ref_B` stays a **conflict**.
+The recovered files are PNGs. All four repository files have `.png` names but were identified by the image reader as JPEG data. Their SHA-256 digests differ from the recovered files. The repository working copies exactly matched the blobs at the pinned commit. This establishes visual correspondence and distinct file encodings; it does not prove the precise conversion history or byte identity with attachments 13284–13287. No asset was replaced or renamed.
 
----
-
-## Graphics — visual kin, not byte identity
-
-| Claim in extract | Lawful reading | Unlawful reading |
+| Graphic | Recovered file SHA-256 | Tracked repository file SHA-256 |
 |---|---|---|
-| Compositions match A–D (empty start, PIE, twelve B panels, twelve C panels, WORD/POINTER + `ref_A`/`ref_B`) | Current graphics are the same *pictures* the 7 Sep work was drawing | Recovered PNG bytes replace tracked files |
-| Titles inside images match canonical titles | Naming is stable | Filename drift authors Core |
-| Recovered 7 Sep 00:24–01:05 UTC; repo commit of graphics is 18 Sep | Earlier visual record exists | Authoring-date of the idea is proved |
-| Recovered SHA ≠ tracked SHA; tracked files named `.png` read as JPEG | Encoding path unverified | “The repo files are forgeries” or “swap them now” |
-| Attachment numbers 13284–13287 come from current graphics README | Catalog in *this* repo | Original upload receipt |
+| A | `ad9e42e33842fff9d127fc4ab885c146a6ab575db25ae7e4d2ce0a1a2282b9b6` | `afbf058e778f0a35513492b453152bd7af53abff84682b8486df9e395f22f877` |
+| B | `db995bcd782e98eafb07ee691a835eab31cf532f7eaa8528fa5ace026c08dfce` | `8d45850ef1bf73b8e7ab3a67ab2bd176d307a034e2b89e41bfb49735fdb0a24d` |
+| C | `d71f7dcf559b8d8ac5f92bc8248b377a106b7a970024c2f3e42cecd5f3815992` | `bdb0b154c4d3643ac40f295a482a65a76e824d56fb51a69810ae7db31310920f` |
+| D | `873f12c57116bef9e431210b0a05b09bcb13d3cc3be19c86e3f03b35ed45ce89` | `709678cdd68d361dc25a084da9144a1bfc9312dc5e58c42c4fe77aacc4848614` |
 
-Do **not** replace `docs/graphics/*`. Conversion history is still `[GAP]` as provenance, not as Core.
+The local Git history records the graphics in commit `4fe984bb098d5ca21c9704234df4fddd53056efb`, dated September 18 at 04:47:18 UTC. That is repository history, not their authoring date. The recovered September 7 assets provide an earlier, independently located visual record.
 
-The 7 Sep conversation order recovered (3D request → mechanisms → N-D → user correction → fourth image) is chronology consistent with image metadata. It is not the emission contract.
+The user's own correction now connects that visual record to the storage premise.
 
----
+Historical retrieval returned these role-attributed snippets from September 7:
 
-## 7 September correction — pointer is lace
-
-Recovered user wording (snippets, not full transcript export):
-
-- “You literally just need a 1D array, and then pointers for your wiring.”
-- “every pointer created is another section of lace… it all lands on lace so then that relationship can then participate in a later structure… a 1D lace”
-
-Assistant echo (“A pointer is not outside Lace… It becomes more Lace.”) is **not** an extra user ruling.
-
-### Map onto Hands
-
-This is Graphic D / Piece 5, already law:
-
-- POINTER is an entry on the same line as WORD.
-- Later participation uses that entry as material.
-- There is no separate graph store.
-
-This is **not**:
-
-- when a POINTER is written
-- which targets
-- arity (unary historical `POINT(target)` vs illustrated `ref_A`/`ref_B`)
-- whether adjacent WORDs already relate
-- word identity
-
-The extract says the two-reference illustration and the earlier unary prescription **remain a conflict**. Keep both visible. Do not pick a winner from enthusiasm for Graphic D.
-
-Onto the mathematical model (`docs/system-mathematical-model.md`):
-
-\[
-e_j=(P,\rho)\ \text{is an entry of }L,\ \text{not a row in another algebra}.
-\]
-
-\(\Phi\) still \(\in[\mathrm{GAP}]\). “Pointer is lace” names the *sort*. It does not define the *writer*.
-
----
-
-## P02 v0.3 — EE is not recorded history
-
-v0.3 supersedes v0.2. Historical proposal. Not Core.
-
-| v0.3 correction | Clock / Hands reading | Do not import |
+| Time, UTC | Attribution and recovered wording | What it supports |
 |---|---|---|
-| Equality of admitted derivations (EE) ≠ byte-identical replay under the same schedule | \(L\) *is* recorded history. Same reachable work can yield different \(L_n\) | Checkpoint + replay as Core store |
-| Re-run of identical job ≠ new evidence | Tick is append of *this* occurrence, not a count of compute | Epoch-as-evidence |
-| Local admissibility ≠ commit policy | Gear W Locate ≠ \(\mathrm{app}\) | Admission engine in Arrival |
-| StructureBytes equality is relative to canonicalizer \(V\) | Lossy \(V\) is Xiao intern / codec `.lower()` | Byte-eq after erase as possession of the strand |
-| Overlapping serialization offsets ≠ incidence | Gluing is hitch / later grab, not shared file offset | Offset-as-POINTER |
-| Coverage-from-strand withdrawn | Hands never claimed unrecorded work is in \(L\) | Reconstruct-from-missing |
-| Starvation theorem left to P09 | Scheduler still not Core (pass 2) | Eleven-rule / 4:3:2:1 |
-| Dog/wolf limited to pattern selected by \(V_1\) | No shared semantic role | Sense on WORD |
+| 00:57:54 | User: “You literally just need a 1D array, and then pointers for your wiring.” | The user explicitly redirected the architecture to the simple line and its pointers. |
+| 01:00:42 | User, excerpt with omissions as returned: “every pointer created is another section of lace… it all lands on lace so then that relationship can then participate in a later structure… a 1D lace” | A relationship's pointer is itself material available to later participation. |
+| 01:00:54 | Assistant: “A pointer is not outside Lace… It does not sit in some separate graph. It becomes more Lace.” | The assistant's response recognized the correction; this is not an additional user ruling. |
 
-Central recovered sentence, keep:
+The same retrieval placed the earlier 3D request at 00:23:02, a request to deepen the mechanisms at 00:25:28, and the N-dimensional request at 00:30:17. Those are retrieved conversation chronology, consistent with the image metadata; the complete original authoring prompts were not returned.
 
-> The same reachable derivations are not necessarily the same recorded history.
+The combined evidence supports this history: the 3D explanations were followed by an explicit user correction about how Lace is stored, and the fourth image presents that line. It does not settle emission timing, target choice, pointer arity, adjacency, or word identity. In particular, the two-reference illustration and the earlier unary `POINT(target)` prescription remain a conflict requiring authoritative resolution. General enthusiasm for a graphic is not acceptance of an absent implementation contract.
 
-That is Rule Zero said against a fixed-point fantasy. It does **not** authorize P02 atoms, jobs, Z assignments, or projection equations as array types.
+P02 v0.3 preserves an important correction to the earlier mathematical claims.
 
-v0.3 “equations on derived projections” is kin of Contract III: views may carry equations. Those equations do not write \(L\).
+Both July 11 files were read completely: `P02_Minimal_Contact_Temporal_Calculus_v0_2.md` and `P02_v0_3_Three_System_Formulation.md`. The latter explicitly supersedes v0.2 and labels itself a formal-design candidate that is not yet settled. These are historical proposals, with their own atoms, canonicalizers, jobs and scheduling assumptions. Their terminology and status labels do not establish current Core authority.
 
-This recovery did not audit the EE proof and did not run the falsification tests. Treat them as proposed.
+| Issue | Earlier v0.2 claim | v0.3 correction actually recorded |
+|---|---|---|
+| Execution equivalence | Its semi-naive argument moves from the same fixed point and linearization to an identical strand. | Section 8 separates equality of admitted derivation sets, EE, from byte-identical replay under the same budget schedule and rule versions. Different schedules may yield different Z assignments and epoch batches. |
+| Identity of repeat work | Walk and occurrence bookkeeping leave room for execution to inflate evidence. | A derivation key uses the job and output index. Re-running an identical job is an execution duplicate; the epoch alone is not new evidence. |
+| Admission | State-dependent suppression is mixed with fixed-point claims. | Local admissibility is separated from commit policy. Suppressed derivations must remain re-derivable for the stated obligations to hold. |
+| Structural equality | Normalized bytes support strong structural language. | Section 5 calls StructureBytes a designed abstraction. Equality is relative to what canonicalizer version V erases and retains. |
+| Gluing | Byte-form operations risk conflating serialization with incidence. | Section 6 requires actual shared support or role correspondence. Overlapping serialization offsets are not structural incidence. |
+| Coverage | Reconstructible from the strand despite potentially unrecorded no-result work. | Section 9 explicitly withdraws that claim and chooses checkpointed execution state with replay. |
+| Scheduler guarantee | Every nonempty shell gets service in each epoch. | Section 10 acknowledges the budget problem and leaves the exact starvation theorem, including arrivals and queue growth, to P09. |
+| Dog/wolf example | Corresponding structural roles invite a broader interpretation. | Section 11 limits the result to the pattern selected by V1. It explicitly does not establish a shared semantic role. |
 
----
+The central recovered distinction is precise: **the same reachable derivations are not necessarily the same recorded history**. v0.3 claims EE under its contracts and gives a replay proof sketch; this recovery has not discharged those premises or independently verified the proof. Its falsification tests are proposed tests, not run results from this pass.
 
-## Codec — exact roundtrip ≠ raw arrival
+The v0.3 discussion also corrects “no equations anywhere”: it preserves occurrence history while permitting equations on derived projections. This is useful evidence of the historical reasoning, not authorization to install its projections or checkpoint machinery in current Lace. The source's candid recognition that canonicalization selects an abstraction is especially important: byte equality after information has been discarded cannot, by itself, prove possession of the full construction.
 
-Two sources inspected statically: `star_codec.py`, `star_codec(1).py`. Not run in this bind.
+The codec evidence is narrower than the old “lossless arrival” wording.
 
-| Source fact | Consequence |
+Two distinct source texts were read in full: `star_codec(1).py` and `star_codec.py`. The unsuffixed file contains comments identifying corrected demonstrations. Their suffixes and near-identical upload times alone do not establish chronology; the correction comments and actual code differences do.
+
+Static inspection establishes the following, without running either file:
+
+| Observation in the source | Consequence for the historical claim |
 |---|---|
-| Reader: UTF-8 replace, lowercase, newlines→spaces, split, `VAL` alphabet, first terminal mark only | Comparison domain is already transformed |
-| Roundtrip target = `' '.join(words)` + mark | 100% is match-to-normalized, not to raw bytes |
-| `Cat` vs `cat` collapse | Concrete counterexample to raw preservation |
-| Decode keeps supplied word-tuple order; sorts character angles | Does not prove sentence order from an unordered figure |
-| Novelty example pre-selects `the lake is cooler` | Decoder does not discover the answer |
-| 16-combination enumeration | Combinatorics, no selection rule |
-| `legal()` = membership in seen word figures | Vocabulary-shape, not grammar or truth |
-| Trajectory function explicitly unwritten | No dynamics to import |
-| 60,002 / 104,510 sentence figures | Reported runs; logs not recovered here |
+| `read_sentences` opens UTF-8 with replacement errors, lowercases the input, converts newlines to spaces, splits on spaces, and retains characters from a fixed `VAL` alphabet. It keeps only the first terminal mark in the extracted group. | The reader transforms input before encoding. The experiment does not compare a decoded result with the original raw record. |
+| The roundtrip reference is reconstructed as `' '.join(words)` plus the retained mark, after the preceding transformations. | A reported 100% match concerns this normalized representation. It cannot certify conservation of discarded case, spacing, characters, punctuation multiplicity, or original bytes. |
+| `word_star` also filters characters against `VAL`. | The encoder's input domain is restricted even outside the CSV reader. A bijection claim needs that domain stated explicitly. |
+| `decode` iterates outer word spokes in their supplied tuple order; it sorts character angles inside each word. | Word order is retained by the container as supplied. These tests do not establish reconstruction of sentence order solely from an unordered geometric figure. |
+| The older novelty example explicitly chooses `the`, `lake`, `is`, `cooler` before assembling their stars. | That example supplies the desired answer in advance. The decoder does not discover or select it. |
+| The corrected example enumerates all 16 index combinations across two four-word figures. | It demonstrates combinatorial assembly in the source, still without a rule selecting an appropriate response. |
+| `legal()` checks membership in the set of previously seen word figures. | It is a vocabulary-shape membership condition. It does not establish grammar, truth, contextual suitability, or a learned selection rule. |
 
-Pass 2 already: codec round-trip ≠ intelligence. Pass 3 tightens: it is not even lossless *arrival*.
+For a concrete static counterexample to raw preservation, inputs differing only as `Cat` and `cat` become the same reader input after `.lower()`. The recovered roundtrip comparison cannot detect that loss. This is reasoning from the code, not a newly executed test.
 
-FORBID as Core defaults: `VAL` alphabet, lowercase intern, `[a-z']+` tokenizer, whitelist, old Python deps.
+The corrected file also admits that its earlier legality experiment sampled words from the corpus and then checked that they occurred in the corpus. That positive result was built into the sampling procedure. The replacement experiment examines sparsity in the possible figure space; it still does not supply the missing selection mechanism. The file explicitly says its trajectory function remains unwritten.
 
-Petersen KEEP still applies: function ≠ construction. A decoder that rebuilds a normalized string does not possess the strand.
+The source header reports 60,002 exact sentence roundtrips. A targeted reread of `LACE_CLAUDE_SIDE_CAPTURE_v2_2026-08-11.md` records both 60,002 and 104,510 **sentences**, describing them as separate reported runs. Neither source supplies independently verified run logs in this recovery. An exact-title search did not locate `The-Office-Lines-V4.csv`; that is a retrieval limit, not proof that the dataset no longer exists. No corpus experiment was rerun.
 
----
+The direct source inspection strengthens and narrows pass two: the old work contains an encoder/decoder and explicit corrections to misleading demonstrations, while the broad claim that it preserved every raw arrival is unsupported by the comparison it actually performs. The whitelist, fixed alphabet, normalization and old Python dependencies are historical material, not permissible current Core defaults.
 
-## DESIGN.md — guesses and known-bad
+The standing design ledger recovers the team's own failure record.
 
-Useful as a failure ledger. Not rulings.
+`DESIGN.md`, read completely, opens by warning against rebuilding from the latest message alone. It distinguishes LIVE implementation, MISSING rulings, MINE assistant guesses, and OPEN choices. That distinction is valuable, but individual source attributions still need checking: for example, R7 cites Kimi rather than a direct owner statement, despite the document's broad opening description as the owner's rulings.
 
-- Distinguishes LIVE / MISSING / MINE / OPEN. Keep the *habit*. Check each citation (R7 attributed to Kimi, not owner).
-- Five MINE fills: angular normalization, extra-character order, ending punctuation, partial-paragraph regen, sentence prefixes as full blocks. Assistant defaults ≠ Hands.
-- Known-bad (reported, not re-run): value-sum collapse 19,682→212; tokenizer collisions 9,571; “41.6%” that was constant 340; MI inflated by thin cells, twice.
-- Prose says four MISSING (R9–R12); table also marks R13. Count is internally wrong. LIVE labels do not prove implementation completeness.
-- `slide.py` measurements stay historical.
+The ledger describes `slide.py` as a structure builder with no retrieval, descent, ties or output. It reports 570,666 word positions and 881,721 blocks, with word/sentence/paragraph recall figures. Those are the ledger's historical measurements; its definition of recall is reuse of an already existing identical figure. They are not independently reproduced results or a current license to merge arriving WORD occurrences.
 
-These are Gear H PFC-wins: a number felt like progress. Gear W: no OBS on the raw run.
+The five MINE entries record specific unruled choices: angular normalization, the order of extra characters in the value scale, treatment of ending punctuation, regeneration of a partial paragraph, and writing sentence prefixes as full sentence blocks. These are concrete examples of an assistant filling unresolved design choices with defaults.
 
----
+Its “known-bad” list reports:
 
-## Cat / cat-1 — do not manufacture
+- Summed character values collapsed 19,682 words into 212 numbers, with 273 words in the largest bucket.
+- An `[a-z']+` tokenizer caused 9,571 token collisions/losses in the reported work.
+- The advertised 41.6% improvement from a pooled-window median was the constant 340 for every input.
+- Mutual information was inflated by thin cells, twice.
 
-Sourced fragment only:
+These are recovered admissions and reported measurements, not raw results newly authenticated here. They remain useful warnings because they identify the mechanism of each overclaim.
 
-```
-cat → tail, fur, tongue
-> cat-1 → tail, fur, tongue
-```
+There is also an internal accounting error visible directly in the ledger: its prose says four rulings are MISSING and names R9–R12, but its table additionally labels R13, recent occurrence over frequency, MISSING. The table therefore marks five. Neither the prose count nor the LIVE label is adequate evidence of implementation completeness.
 
-Capture says the full `>` / `<` notation is unavailable and must not be manufactured.
+The cat example remains a controlled recovery gap.
 
-A more elaborate scratches/purr version is an **unverified retrieval lead**. Excluded.
+The saved August 11 context capture, at returned lines 330–337, explicitly says only this fragment is recoverable:
 
-Meaning of `>` and the full progression remain open. Silence ≠ a Star table of parts.
+> cat → tail, fur, tongue  
+> \> cat-1 → tail, fur, tongue
 
----
+It then says the complete greater-than/less-than notation is unavailable and must not be manufactured. An initial memory search in this pass returned a more elaborate version involving scratches and purr. A targeted follow-up did not recover the original conversation supporting those additions, and the directly inspected capture does not contain them. They are therefore unverified retrieval leads, excluded from recovered rulings. The meaning of `>` and the full cat/cat-1 progression remain open.
 
-## Structure spec v2 — opening only
+This is a practical recovery safeguard: a confident memory summary can contain more detail than the accessible source. Repetition of that summary would not improve its authority.
 
-Empty seed and reject-cutting as primitive: kin of A1 / Rule Zero.
+One earlier structural document supplies a bounded additional connection. The inspected opening of `LACE_STRUCTURE_SPEC_v2.md` already describes an empty seed and rejects cutting as a primitive. It also contains historical closed-circle, strict-starvation and typed-pointer machinery. The empty-start resemblance to A1 is a conceptual antecedent, not proof that this document authored the later graphic or that its other mechanisms survived into current law.
 
-Also contains historical closed-circle, strict-starvation, typed-pointer machinery: already forbidden (pass 1–2). Antecedent ≠ survival into current law.
+The resulting changes to the recovery record are specific.
 
----
+| Previous unresolved point | Third-pass result | Remaining limit |
+|---|---|---|
+| Exact identity and origin of the four graphics | Four matching visual compositions recovered, with timestamps, resolutions, hashes and a September 7 correction chain. | Full authoring prompts, attachment receipts and the conversion path into repository bytes remain unverified. |
+| P02 as a named archival lead | v0.2 and superseding v0.3 read directly; withdrawn claims and open obligations located. | No independent proof audit, executable result or current adoption established. |
+| Codec versus intelligence | Two source variants inspected; normalization, preselected output and tautological legality sampling identified. | Raw corpus and run logs still not recovered; selection remains unwritten in the source. |
+| DESIGN.md and failed measurements | Ledger recovered directly, including guesses, reported failures and its missing-ruling count discrepancy. | Individual raw experiments and owner acceptance for each attributed ruling are not established. |
+| Full cat rulings | The supported fragment is located and embellished retrieval is rejected as unverified. | Original full exchange and notation still missing. |
+| Current pointer-emission acceptance | No acceptance recovered; the pinned checkout has no pointer-emission document. | The Core implementation gate remains closed. |
 
-## What still does not move
+The old July scheduler transcript, the complete August 11 allocation correction, and exact revisions behind numbered card references also remain unresolved from pass two. Nothing in this pass reverses the exclusion of the separate September C-array experiment from Lace's measured evidence.
 
-| Item | Status |
-|---|---|
-| Pointer-emission acceptance | None recovered. `docs/pointer-emission.md` and `src/` absent in the pinned checkout and still required before code |
-| Unary vs two-ref POINTER | Conflict |
-| Graphics conversion path | Unverified |
-| Full cat exchange | Missing |
-| July scheduler transcript / August allocation correction / card revisions | Still unresolved from pass 2 |
-| September C-array experiment | Still not Lace evidence |
-| 29 Aug walkers | Still dead |
+The following register gives persistent source identities for a later reviewer. A full read means the returned text was covered, not that every assertion was proved. Image inspection means visible comparison, not authentication of every historical upload step.
 
----
+| Source | Persistent source reference | Actual coverage in this pass |
+|---|---|---|
+| Graphic A counterpart | `libfile_1f2b723b936481919ec9fb25a27ab93a` | Complete image; visually compared with tracked A; metadata and bytes inspected. |
+| Graphic B counterpart | `libfile_32aab3e8eed481919d24176dd44fd5c6` | Complete image; visually compared with tracked B; metadata and bytes inspected. |
+| Graphic C counterpart | `libfile_a15096987ed881919f1bc901f01bceb0` | Complete image; visually compared with tracked C; metadata and bytes inspected. |
+| Graphic D counterpart | `libfile_e57b2129d56081918c8668ee39fa6c02` | Complete image; visually compared with tracked D; metadata and bytes inspected. |
+| P02_Minimal_Contact_Temporal_Calculus_v0_2.md | `libfile_90a99bd9dbb081918cb72484ac7c7531` | Full returned text, 218 lines, in two windows. |
+| P02_v0_3_Three_System_Formulation.md | `libfile_4d0705418ba4819188d2bdff262717da` | Full returned text, 112 lines; sections 5–13 reinspected from retained read output. |
+| DESIGN.md | `libfile_38ea3e17599c8191bf8f29784dbcb125` | Full returned text, 141 lines. |
+| star_codec.py | `libfile_16bc20d0721c81919da8e87cea45b050` | Full returned source, 254 lines; static inspection only. |
+| star_codec(1).py | `libfile_27bb1ce2a6548191a03ccfe3d24a6cc4` | Full returned source, 225 lines; static inspection only. |
+| LACE_STRUCTURE_SPEC_v2.md | `libfile_9e54eb796a2081919085899a123a68e2` | Returned lines 1–85 of 212; opening structure and definitions only. |
+| SHOE_LACEY_CONTEXT_CAPTURE_2026-08-11.md | `libfile_9f20c3103db8819182d33dbfedb93cc4` | Targeted cat-1 matches and surrounding text, including the explicit missing-source notice. |
+| LACE_CLAUDE_SIDE_CAPTURE_v2_2026-08-11.md | `libfile_3f8bee39b62c8191a8ca3f9cc9fd602d` | Targeted 60,002/104,510 matches and their context. |
 
-## Stamps
+The second recovery note was reread as the baseline; relevant first-note passages were compared. Repository controls and graphics README were inspected, as were the manifest's relevant storage pieces and the reason map's physical-object/gap statements. Repository file hashes were checked against the pinned commit. Other returned candidates, including duplicate archaeology-report identities and an additional codec copy, were not silently treated as read or byte-identical.
 
-| Recovered object | Stamp |
-|---|---|
-| 7 Sep “1D array + pointers are lace” | `[I]` kin of Graphic D |
-| Visual match of four pictures | `[I]` kin of current graphics; bytes stay as tracked |
-| P02 EE ≠ trace | `[H]` / metaphor `[I]` history-as-tape; machinery `[X]` |
-| Equations on projections | `[III]` |
-| Codec normalized roundtrip | `[X]` as arrival / intern |
-| DESIGN.md MINE / known-bad | `[H]` ledger |
-| Cat embellishment | unverified; do not write |
-| Anchor / codec trajectory / P02 commit as \(\Phi\) | `[GAP]` / `[X]` if filled |
+Targeted conversation searches covered the full cat example, P02 history and proof repair, graphics identity and original corrections, and reported codec/corpus runs. Narrow file searches followed those leads. Unrelated returned results were excluded. Source snippets supplied by retrieval occasionally disagreed with other retrieved material; the direct source boundary is recorded above rather than resolved by confidence or repetition.
 
----
-
-## Steward test
-
-If you cannot do it to a shoe lace in your hands, you may not do it to laceArc.
-
-Matching a picture is not replacing the picture.
-Matching a decoder is not keeping the arrival.
-Matching a derivation set is not the recorded strand.
-\(\Phi\) remains `[GAP]`.
+Completion criterion for this pass was to recover additional primary artifacts, compare them with the first two notes, and leave each material claim at its observed strength. That work is complete. The next narrow historical question is the original, full cat/cat-1 exchange; its absence does not authorize a reconstruction. Any future implementation task still depends on the separately required human acceptance of an exact pointer-emission contract.
