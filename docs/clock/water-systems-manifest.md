@@ -268,6 +268,57 @@ I-A2: each party has an OBS list. DELTA requires pairing. Not Graphic D. Not HCC
 | T3 | H×C×W crossing table |
 | T4 | Two inventories ≠ one store |
 
+## Packet dictionary (pass 4)
+
+| Packet | Produced by | Consumed by | Not |
+|---|---|---|---|
+| conversational signal | speech / writing | F1 | a row |
+| OBS node | F2 | F3, S3 | P3 POINTER |
+| DELTA node | F3 | S3 resolve | Graphic D edge |
+| UNK entry | F4 | S3 (must be listed); blocks S4 while open | a waiting tape row |
+| INVALID | F5 | convert-or-drop | WORD |
+| action list | S4 | may become πB / C2 | P4 |
+
+Quote / timestamp / message id are §6 examples, not a chosen OBS format. `[GAP]`
+
+## Transition register (pass 4)
+
+| From | Guard (source) | To | Illegal |
+|---|---|---|---|
+| — | pressure forces engagement | S1 | calling S1 progress |
+| S0 | F2 acknowledged by the other | S2 | pairing with one OBS |
+| S1 | F2 acknowledged (leave loud water) | S2 | F3 in S1 |
+| S1 | F5 only | S1 | treating heat as OBS |
+| S2 | F3 + UNKs listed | S3 | S3 without a pair |
+| S3 | DELTAs worked; UNKs cleared *or* listed under unpinned budget | S4 | S4 with silent UNK |
+| S4 | action done / inventories changed | S0 | S4 as append |
+
+S3→S4 UNK halt vs budget remains `[GAP]`.  
+S3 “resolve” = record the mismatch and/or promote UNK→OBS in talk or writing. Not P4. Not agreement-as-truth.  
+S1 cannot pair (I-B1). INVALID does not advance the FSM.
+
+## Kernel as a call (pass 4)
+
+Kernel = F1(Locate = rapids) + request F2. River hears move-to-delta. Ledger hears anchor + pairing requirement. One utterance, two ears. Not a sixth function.
+
+## Two runtimes (pass 4)
+
+Same FSM. Live Locate is fast and lossy. Writing serializes OBS (story: left the room, then wrote). A’s weakness is live overhead; A’s strength is the audit trail. Not two systems.
+
+## Namespace (pass 4)
+
+Water S0–S4 ≠ HCC S0–S7 ≠ Cup C1–C5. Do not renumber.
+
+## Pass 4 clipboard deltas
+
+| Ticket | Action |
+|---|---|
+| T1 | Packet dictionary |
+| T2 | Transition register |
+| T3 | Kernel = F1 + request F2 |
+| T4 | Live vs writing |
+| T5 | Namespace stamp |
+
 ---
 
 ## Executive Seams Summary
