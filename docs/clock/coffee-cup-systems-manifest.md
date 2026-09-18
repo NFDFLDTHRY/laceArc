@@ -8,7 +8,7 @@ The Coffee Cup is Gear C: the five-tooth phase wheel that times work on the lace
 **Compressed ancestor:** `docs/clock/philosophy-map.md` Gear C. Where that file dropped lanes, questions, or recirculation, **the attachment wins**.  
 **Hands court:** `docs/graphics/` + `docs/systems-manifest.md`.
 
-Author frame: *how you see*, not what should be done. Empty cup on purpose — if stakes were high you would stop looking at structure.
+Author frame: *how you see*, not what should be done. Empty disposable cup, lid, almost no weight, no coffee — **nothing bad if it falls**. That removes the escape into arguing stakes. Invariant of the whole wheel: if stakes re-enter, structure-looking stops. Not a sixth stage.
 
 Loop the source states:
 
@@ -78,7 +78,7 @@ Three lanes ride every packet: social interaction · language · lived events. D
 - **Inputs:** Motion. Contact still exists. Options exist and narrow.
 - **Outputs:** Shrinking-window packet. Questions forced: when did this become obvious; what signals were visible but ignored; what interventions were possible but socially costly; when did “still time” become “too late.”
 - **Preconditions:** After release, before impact.
-- **Effects:** Intervention here is more cord, not less (philosophy-map + Hands). Late in the window only partial mitigation remains. Eventually nothing can be done.
+- **Effects:** Intervention here is more cord, not less (philosophy-map + Hands). Gradient in the source: early = trivial; later = speed; later still = partial mitigation; eventually = nothing. Certainty is not a precondition: you do not know yet whether intervention is necessary; you only know the window is shrinking.
 - **Invariants:** Trajectory is a visibility discipline, not a courtroom. Skip it → “inevitable” or “blame after.”
 - **Failure modes:** Demanding certainty before acting. Working this tooth in Water rapids (grind). Rewriting Graphic D because the window is uncomfortable.
 - **Boundary & Coupling:** Only live work window on the lace. Mesh to Water clutch: work only while meshed. Mesh to HCC πB while the window is open. Two clocks. Water clipboard not this file.
@@ -139,17 +139,31 @@ Three lanes ride every packet: social interaction · language · lived events. D
 - **Failure modes:** Choosing one moment and calling it causality.
 - **Hands:** `[H]` steward literacy, not a Core operator
 
-### Attention collapse
+### Quiet end
 
-- **Kind:** Diagnostic
-- **Source location:** What This Exposes About You
-- **Purpose:** Relief at release → live upstream, call it inevitability. Clarity at impact → arrive late, call it judgment. Discomfort at trajectory → responsibility without permission. Argue what should have been done → already in aftermath.
-- **Invariants:** Not a moral failing. How attention collapses under time.
+- **Kind:** Diagnostic obligation
+- **Source location:** The Quiet End
+- **Purpose:** The cup was never the point. The failure is choosing one moment and calling it causality. The cup is already falling. Blame is not the question. Once you can see the fall while time exists, you do not get to pretend you cannot.
+- **Invariants:** Literacy (hold five) is the skill. Quiet end is the obligation after seeing. Not POINTER emission.
 - **Hands:** `[H]`
 
 ---
 
-## Meshes (pass 1, named only)
+## C packet ↔ HCC π (pass 2)
+
+Two clocks. No S0–S7 = C1–C5.
+
+| Cup packet | May mesh | Must not become |
+|---|---|---|
+| possibility field | πRIC structure already there; πPFC priors | fate row |
+| motion / C2 | πB act | P4 / POINTER |
+| shrinking window | πB while Water meshed | Core operator |
+| ground truth | πFB next-world structure | Graphic D file |
+| narrative-that-rewrites-C1 | πID next PFC | WORD rewrite |
+
+C4 → πFB (world). C5 → πID (priors). Talking after impact is C5, not a second impact.
+
+---
 
 | From | To | Payload | Forbidden |
 |---|---|---|---|
@@ -176,6 +190,16 @@ Water clipboard is not this file. HCC S0–S7 is a different clock. Do not fuse.
 | Empty-cup stake removal | opening of the text | Overview |
 
 None of these license stages as Graphic D row types. Emission remains `[GAP]`.
+
+## Pass 2 clipboard deltas
+
+| Ticket | Action |
+|---|---|
+| T1 | Stake removal as wheel invariant |
+| T2 | C3 four-grade gradient; no certainty required |
+| T3 | Quiet end piece |
+| T4 | C packet ↔ HCC π table |
+| T5 | C4→πFB vs C5→πID stamped |
 
 ---
 
