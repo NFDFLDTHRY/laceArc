@@ -143,19 +143,29 @@ README links `docs/clock/` rather than `docs/clock/README.md`.
 
 | Sub-phase | Station | Work | State |
 |---|---|---|---|
-| **1-pre** | kit | Orphan check resolves links to paths, not basenames; stop exempting every `README.md`; keep only the true root entry points. Accept: the check's count equals the independent path-resolved count (56 at this tip). | **first — nothing else is verifiable without it** |
-| **1a** | history | 10 files as links. Clears 3 root-only. | ready |
-| **1b** | prompts | 16 files as links, + *a running ticket lives here; an executed one becomes a receipt or a log tick, never a file*. Clears 9 root-only — **the largest phase-2 risk**. | **blocked**: `prompts` HELD by `Codex-atomic-pass2` since 20:48Z, 0 commits to `docs/prompts/` since. Needs the human to clear a stale claim. |
-| **1c** | hologram | `hologram/README.md`: the 7 `primitive-*.png` sheets. (`clock/README.md` is **not** here — see 1i.) | ready |
-| **1d** | gearing-meta | `RESYNC.md`, `resync.sh` added; the 8 `contracts-*.js` become links; `claims/README.md` (one line: written by `claim.sh`, owned per shaft). Clears 1 root-only. | ready |
-| **1e** | maps | `plans/README.md` rows → links; `fixtures/README.md`, `tools/README.md`; shelf description corrected (R6). Clears 1 root-only. Carries the phase-0 done-marker and this section. | ready |
-| **1f** | coord | `stations/README.md` lists the 10 station files as links; `coord.sh` becomes a link. Phase 0 created the file but it names none of them. | ready — **redo** |
-| **1g** | kit | 5 files as links. Clears 1 root-only. | ready |
+| **1-pre** | kit | Orphan check resolves links to paths, not basenames; stop exempting every `README.md`; keep only the true root entry points. | ✅ `e0557da` — reported 31, reports **62**, matching the independent count |
+| **1a** | history | 10 files as links; extraction and sit-note separated. | ✅ `799ea88` — 3 root-only cleared |
+| **1b** | prompts | 16 files as links, + *a running ticket lives here; an executed one becomes a receipt or a log tick, never a file*. | **still blocked**: `prompts` HELD by `Codex-atomic-pass2` since 20:48Z, 0 commits to `docs/prompts/` in 2h30m. Carries 9 of the 17 remaining root-only files — the largest phase-2 blocker. Needs the human to clear a stale claim |
+| **1c** | hologram | — | ✅ **no work needed.** The door already points at the sheets through [`visual-primitives.md`](../hologram/visual-primitives.md), which links each one. It was never an orphan source; the survey's "missing 7" counted names, not reachability |
+| **1d** | gearing-meta | `RESYNC.md`, `resync.sh` added; the 8 `contracts-*.js` become links; new `claims/README.md`. | ✅ `fcc8c1e` — **10 orphans cleared** |
+| **1e** | maps | `plans/README.md` rows → links; new `fixtures/` and `tools/` doors. The tools door records F7: the validator checks shape, not the plan. | ✅ `0db2536` |
+| **1f** | coord | `stations/README.md` lists the 10 station files as links, each with what it owns. | ✅ `19032a1` — **10 orphans cleared**; see the ordering note below |
+| **1g** | kit | 5 files as links, with a status column: two are transport copies, one is a dated snapshot. | ✅ `3e8e27e` |
 | **1h** | clipboards | **Deferred.** 10 files and growing — 4 Kauffman pass plans landed during this measurement, 8 commits in 90 minutes. A flat door drifts by the hour. | to phase 5's shape |
 | **1i** | clock | **Deferred into phase 5.** 34 files, 27 orphans, **16 added per hour** while the campaign runs. Phase 5 moves the pass plans to `clock/passes/`; a door written now is 34 rows phase 5 rewrites. | merged into phase 5 |
 
-**Order.** `1-pre` first. Then **1a, 1c, 1d, 1e, 1f, 1g in parallel** — six
-stations, no shared file, no shared line. `1b` when `prompts` frees.
+**Order — corrected by running it.** `1-pre` first; that part held. The claim
+that the rest run "in parallel, no shared file, no shared line" was **wrong**.
+Distinct stations do not make independent commits: `stations/README.md` (coord)
+links `claims/README.md` (gearing-meta), so **1d must precede 1f**. Run the
+other way round, as it was, main carried a dead link for two commits
+(`19032a1`, `83795ef`; green again at `fcc8c1e`).
+
+**The rule that replaces it:** a sub-phase that links a file another sub-phase
+creates runs *after* it, whatever station owns it. Where both files are in one
+station, write them in one commit — 1e did that for `plans/`, `fixtures/` and
+`tools/`. Cross-shelf links are an ordering edge; only genuinely unlinked
+shelves are parallel.
 
 **Gate for phase 2.** Phase 2's law commit removes exactly the root-README rows
 whose shelf door now links that file, and no others. Rows for `clock/` and
@@ -167,6 +177,37 @@ to 4 after 1a–1g + 1b (the remaining 4 are `docs/README.md` and root entry
 points, which are phase 2's own work); no door names a file it does not link;
 and `docs/clock/` plus `docs/clipboards/` are the only shelves still indexed
 from the root.
+
+### 4.2 Phase 1 — outcome, measured
+
+Ran 2026-09-18. Six commits, six stations, all gates passing at commit time
+except the one noted above.
+
+| Measure | Before | After |
+|---|---|---|
+| Orphans, path-resolved | 62 | **44** |
+| Files whose only inbound link is the root README | 23 | **17** |
+| Shelves whose door links every file it holds | 2 of 14 | **9 of 14** |
+
+Door coverage now: `history/` 10/10 · `gearing/` 12/12 · `gearing/claims/` 8/8 ·
+`coord/stations/` 10/10 · `plans/` 8/8 · `plans/fixtures/` 2/2 · `plans/tools/`
+1/1 · `kit/` 5/5 · `graphics/` 4/4. Not covered: `prompts/` 0/16 (blocked),
+`clock/` 0/36 and `clipboards/` 1/15 (deferred), `hologram/` 16/23 (the seven
+reach through the catalog), `coord/` 0/1.
+
+**The orphan count did not fall as far as the work suggests, and that is the
+point.** 1a and 1g cleared nothing: those files were already reachable — *from
+the root README*. Phase 1 was never a clearing exercise; it was the transfer
+that lets phase 2 delete the root table. The measure that moved is root-only,
+23 → 17. What is left there is 9 prompts (1b), 2 clipboards and 2 clock
+(deferred), and 4 root/`docs/` files that are phase 2's own work.
+
+`docs/clock/` grew from 34 files to 36 during phase 1, and still holds 29 of the
+44 orphans. Deferring it was right; phase 5 has not got smaller.
+
+**Phase 2 is ready for every shelf except `prompts/`, `clock/` and
+`clipboards/`.** Under the per-shelf gate it can start now and leave those three
+sets of rows in place.
 
 **Not in phase 1.** Making the 7 doors reachable — that needs the root README
 to link `docs/<shelf>/README.md` instead of `docs/<shelf>/`, which is phase 2,
