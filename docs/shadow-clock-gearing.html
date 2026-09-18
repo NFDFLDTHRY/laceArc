@@ -671,7 +671,7 @@
     /* flattened Y triad on floor — lookref field framing, not B sky-pillar */
     A: { pos: [-1.55, 0.12, -0.40], r: 0.40, core: [1.00, 0.42, 0.10], id: 1 },
     B: { pos: [ 0.05, 0.22,  0.28], r: 0.44, core: [1.00, 0.48, 0.08], id: 2 },
-    C: { pos: [ 1.60, 0.08, -0.25], r: 0.40, core: [1.00, 0.38, 0.10], id: 3 },
+    C: { pos: [ 1.60, 0.08, -0.25], r: 0.40, core: [0.22, 1.00, 0.44], id: 3 },
   };
   /* green yarn spheres — separate lace suggestion clusters, not C tint */
   const CLUSTER_POS = { A1: [-2.35, 0.28, 0.85], B1: [0.95, 0.32, 1.15], C1: [2.20, 0.26, 0.55] };
@@ -1269,12 +1269,14 @@ fn fs_main(input : VSOut) -> @location(0) vec4f {
     });
 
     /* elevated 3/4 looking down on A/B/C triad + wire (lookref-like; not floor) */
-    const TARGET = [0.03, 0.12, -0.12];
-    const DEFAULT_YAW = -0.65;
-    const DEFAULT_PITCH = 1.00;
-    let yaw = DEFAULT_YAW, pitch = DEFAULT_PITCH, radius = 7.8, userTouched = false;
+    /* Default look-at = green yarn marker YA (the bright green floor dot).
+       Cubes A/B/C stay in frame toward +X. Reset restores this. */
+    const TARGET = [-2.35, 0.28, 0.85]; /* YA — green lace yarn orb */
+    const DEFAULT_YAW = -0.35;
+    const DEFAULT_PITCH = 0.95;
+    let yaw = DEFAULT_YAW, pitch = DEFAULT_PITCH, radius = 6.4, userTouched = false;
 
-    const SCENE_R = 3.35;
+    const SCENE_R = 2.85;
     const FOV_DESKTOP = 0.72;
     const FOV_PORTRAIT = 0.82;
     function fovFor(aspect) { return aspect < 0.78 ? FOV_PORTRAIT : FOV_DESKTOP; }
