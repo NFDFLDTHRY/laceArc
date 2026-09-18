@@ -105,6 +105,22 @@ Oil inside a gear is not a tooth on the cord.
         internals stay boxed      work only in window      no mesh, no torque
 
 
+HOLOGRAM TOUCH — Perceived Reality / Story Defense
+--------------------------------------------------
+Image: docs/hologram/perceived-reality-story-defense.png
+Not Graphic E. Not a row type.
+
+  KEEP: curating exposure does not change R
+  KEEP: shared recognition is overlap, not total Reality
+  KEEP: signal can arrive and the route not form
+  KEEP: evidence passes through the model that
+        decides what counts as evidence
+  KEEP: story preserves itself until impact is costly
+  FORBID: PR / Personal Story / Story Defense as array rows
+  FORBID: curation as Lace tokenizer
+  FORBID: "meaning did not land" as emission
+
+
 CLOCK  (the same train, counted)
 --------------------------------
 Mainspring = R.  Tape = Graphic D.  Hands = projections.

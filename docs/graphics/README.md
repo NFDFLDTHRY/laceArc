@@ -10,3 +10,5 @@ These four images are the source of record for laceArc. The systems manifest is 
 | [data-structure-1d-array.png](data-structure-1d-array.png) | `13287.png` | Lace Data Structure: One 1D Array, Everything is Lace |
 
 Read them in that order for the story, or read graphic 4 first if you need the store.
+
+Hologram touches (not this directory): `docs/hologram/`. Those diagnose the holder. They are not a fifth graphic.

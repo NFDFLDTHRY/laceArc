@@ -91,6 +91,11 @@ Tooth 3 is the work window. Tooth 5 drives the next tooth 1. Do not file impact.
 OBS / DELTA / UNK / INVALID and river banks / rapids / delta.  
 No mesh, no torque. Do not treat OBS as POINTER emission.
 
+#### 8b. Model of Perceived Reality and Story Defense  (hologram touch)
+
+Image: `docs/hologram/perceived-reality-story-defense.png` (attachment `13960.png`).  
+Overlap of two PR fields; why a true claim can fail to land; story defense; curation of exposure. Diagnoses the holder. Not Graphic E. Not array rows.
+
 ### History (ancestry, not foundation)
 
 #### 9. Lace memory recovery — 18 September 2026

@@ -704,6 +704,34 @@ The hologram in the head is the reason-model held all-at-once — Cup’s “hol
 
 “System abstract behavior mapping the observed behavior” is Water Pair(): one OBS is the hologram’s expected structure, one OBS is what the artifact did. DELTA is the defect. If the hologram cannot yet point, that is UNK, not permission to invent a row type.
 
+### Touch: Perceived Reality and Story Defense
+
+Source image: `docs/hologram/perceived-reality-story-defense.png` (workspace `13960.png`). Shadow. Not Graphic E. Not Core.
+
+Five panels. One holder diagnostic of why structure can arrive and a route still fails to form in the other mind.
+
+| Panel | What it draws | Clock / Hands reading | Unlawful |
+|---|---|---|---|
+| 1 Reality | All states under bounded rules | Mainspring R. Not a Lace store | Treat R as Graphic D |
+| 1 Exposure | Portion actually encountered | Interface / Cond field / RIC encounter. Curating exposure does not change R | Curate Lace ingest (Xiao intern / drop tokens) |
+| 1 Perceived Reality | What a person can presently model or accept | Loaded Banks / PFC-colored field | PR as array type |
+| 1 Personal Story | Internally coherent model of self and world | Holder L + ISL + PFC priors | Story as WORD sense |
+| 2 Overlap | A-only / overlap / B-only / real-but-outside | Water Banks vs mesh. No Containers: shared recognition is overlap of separately built structure, not a payload in the sentence | Overlap stored as edge table |
+| 3 Fail to land | S arrives; B cannot parse, or Story Defense fires | Signal can be punch-card (words arrive). Meaning-as-route may be absent in B. Defense = PFC-wins / Rapids INVALID | “Meaning did not land” as license to write Φ |
+| 4 Change possible | Lived consequences weaken defense; story reorganizes; PR expands | Cup Impact → After → next Cond. Floor first | Aftermath files tooth 4 / mutate WORD |
+| 5 Curate exposure | Constrain concepts → plausible → understood → accepted | Holder diagnosis (AgentScope shelf). Constrains what that mind can presently recognize | Curation as Core tokenizer |
+
+Keep, from the drawing:
+
+- Curating exposure does not change Reality.
+- Shared recognition comes mainly from overlap, not from total R.
+- Evidence does not compete directly with belief. It passes through the model that decides what counts as evidence.
+- Until contradiction is costly enough to live through, the story preserves itself.
+
+That last line is PFC' eating the next tick. It is not Rule Zero of the tape.
+
+“Signal arrives; meaning does not” is the same split already bound: project meaning is a route through words. Words can be said. The route may not exist in the other holder. Structure may cross. The route stays local until overlap can be pointed at.
+
 ### Two oracles (do not fuse)
 
 1. **Shoe in hands** — public, pointable, law. If you cannot do it to a lace, you may not do it to laceArc.
