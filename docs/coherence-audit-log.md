@@ -88,3 +88,56 @@ Agent: LaceArc. Date: America/Los_Angeles.
 - fix: none
 - cites: docs/shadow-clock-hologram.md; docs/shadow-clock-agent-brief.md; docs/shadow-clock-gear-contracts.md; docs/prompts/shadow-clock-shared-interactive-prompt.md (authority line)
 - emission contact: silenced → [GAP]
+
+### tick 2026-09-18 · station A11 · tip 33b7e79dd4039eceac9087bc80a7dd3cf73aeae6
+Agent: LaceArc. Date: America/Los_Angeles.
+- finding: Listed docs/history/history-recovered*.md (10 artifacts) + pass-7 evidence JSON present. Pass 7 bound header + steward filter table: FORCE/Onion = Shadow not Core; dual-store FORBID; emission lookalikes → [GAP]; closed-loop / Reidemeister / intern not reopened. Pass 5 narrative + pass-5-sit: closed-loop [X], Φ [GAP], dynamic arity/density/WELD-1 not Core; steward test present. Companion relative links all resolve (incl. evidence JSON). No history doc promotes Shadow to Core without filter. Did not rewrite historical narrative substance.
+- kind: ok
+- fix: none
+- cites: docs/history/history-recovered-pass-{5,7}-2026-09-18.md; docs/history/history-recovered-pass-5-sit.md; docs/history/history-recovered-pass-7-evidence-2026-09-18.json; docs/history/README.md
+- emission contact: silenced → [GAP]
+
+### tick 2026-09-18 · station A12 · tip 33b7e79dd4039eceac9087bc80a7dd3cf73aeae6
+Agent: LaceArc. Date: America/Los_Angeles.
+- finding: Parsed README.md markdown links to docs/ and docs/prompts/: 69 relative targets checked; 0 missing. All prompt rows already under docs/prompts/ (post-defrag); no stale docs/*-prompt.md paths. All ten history-recovered* artifacts linked. Did not invent files or add rows for ABSENT products (e.g. Petersen filled clipboard still absent — correct).
+- kind: ok
+- fix: none (no stale five-refs-class links at this tip)
+- cites: README.md; docs/prompts/*; docs/history/history-recovered*
+- emission contact: none
+
+### tick 2026-09-18 · station A13 · tip 33b7e79dd4039eceac9087bc80a7dd3cf73aeae6
+Agent: LaceArc. Date: America/Los_Angeles.
+- finding: RESYNC.md STATUS: FIRED (TIP_AT_FIRE 490473e7e3d3e1579da7ea0361d5c1654360e648; FIRED_AT 2026-09-18T17:48:05Z). LIVE_TIP_RULE origin/main = this tip 33b7e79… (ff of TIP_AT_FIRE). CLAIMS.md Layer III / emission [GAP] / no src/. claim.sh present, executable (-rwxr-xr-x); status: all eight shafts FREE. Did not clear RESYNC or force-free shafts (requires human). LOG only.
+- kind: ok
+- fix: none
+- cites: docs/gearing/RESYNC.md (STATUS block); docs/gearing/CLAIMS.md; docs/gearing/claim.sh; docs/gearing/claims/*.claim
+- emission contact: silenced → [GAP]
+
+### tick 2026-09-18 · station A14 · tip 33b7e79dd4039eceac9087bc80a7dd3cf73aeae6
+Agent: LaceArc. Date: America/Los_Angeles.
+- finding: Re-checked downstream-audit F01–F12 at live tip without forging enforcement. Did not change GitHub branch protection.
+- F## live snapshot:
+
+| ID | Status at tip 33b7e79 | Note |
+|---|---|---|
+| F01 | still-open (live) | gh api branches/main: protected:false, protection.enabled:false, required_status_checks off; rulesets []; protection endpoint 404 “Branch not protected”. MCP repository_ruleset_read list = []. Not timeless — snapshot 2026-09-18 PT. |
+| F02 | still-open / mitigated-by-docs | pointer-emission.md Status DRAFT / Not accepted; AGENTS Job + “If asked to implement” require human acceptance (cite AGENTS.md; docs/pointer-emission.md). Existence ≠ acceptance. |
+| F03 | mitigated-by-docs | Permanent bans vs temporal gate separated in AGENTS/staking/law-why; no re-open of permanent list this tip. |
+| F04 | still-open | Arity/emission unsettled; emission [GAP]; do not choose. |
+| F05 | mitigated-by-docs | Current law FORBID controls over weaker “view” wording; not re-litigated. |
+| F06 | still-open / not-rechecked as gate | check-docs.sh still present; coverage remains partial — not claimed as general compliance gate. |
+| F07 | still-open / not-rechecked | session-start wrapper still present; advisory≠blocking not re-run this tick. |
+| F08 | mitigated-by-docs | AgentScope appendix note retained in downstream-audit / reason-map discipline. |
+| F09 | still-open | One-task/one-branch law vs multi-agent intent — protocol docs only; no enforcement forged. |
+| F10 | still-open (scope narrowed) | File now exists as DRAFT (was absent at audit pin 4fe984b); acceptance still missing; dependent gaps still block. |
+| F11 | still-open | Bash hooks vs Rust no_std future — scope question open; no language exception created. |
+| F12 | still-open | No executable emission/capability evidence claimed. |
+
+- kind: ok
+- fix: none
+- cites: docs/downstream-audit.md (F01–F12); gh api repos/NFDFLDTHRY/laceArc/branches/main; gh api …/rulesets; docs/pointer-emission.md; AGENTS.md; .claude/hooks/check-docs.sh; .claude/hooks/session-start.sh
+- emission contact: silenced → [GAP]
+
+### tick 2026-09-18 · campaign summary A1–A14 · tip 33b7e79dd4039eceac9087bc80a7dd3cf73aeae6
+Agent: LaceArc. Date: America/Los_Angeles.
+- rollup: A1 ok (graphics). A2 ok (manifest/[GAP]s). A3 ok (Implementation Law align). A4 ok (stakes↔reason-map). A5 OPEN [GAP] (Petersen filled clipboard ABSENT). A6 FIX-APPLIED (AGENTS Job↔acceptance). A7 FIX-APPLIED (stale untracked/ABSENT notes) + doors/order ok. A8 drift logged (plastic↔hologram pixel debt; 1:1 keys ok). A9 drift logged (restyle paths ok; HTML not restyled). A10 ok (Shadow prose headers). A11 ok (history steward filters Hands-safe). A12 ok (README↔disk; 0 missing). A13 ok LOG-only (RESYNC FIRED; shafts FREE; claim.sh exec). A14 ok (F01 still unprotected live; F02/F10 acceptance still open; emission [GAP]). Campaign coherent at docs/Layer III. Do not declare Core ready. Emission remains [GAP]. No src/.
