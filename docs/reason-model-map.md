@@ -6,7 +6,15 @@ That sentence is the test, not branding. Source of record remains `docs/graphics
 
 Core pieces named below are the pieces in `docs/systems-manifest.md` (Pieces 1–15). Adjacent texts do not add a Core piece.
 
-**Mapping status:** pass 2/2. Complete for the stated task. Later chapters that could hide a false Core piece have been sampled. Remaining unread pages are diagram-class invariants, cosmology, training variants, or decoding — none change a hands verdict. Pointer-emission is still a Core [GAP], not a missing map cell.
+**N = 3.** Three mapping passes. No pass 4 unless a new document arrives.
+
+| Pass | What it closed |
+|---|---|
+| 1 | Every Core piece 1–15 scored against the five texts |
+| 2 | High-risk lookalikes: Kauffman hitches / slide / virtual; Rowlands §20 DNA / UG |
+| 3 | Leftovers that pass 2 only type-classified: Xiao ch. 5 inference; Petersen NTK; AgentScope remainder (22-page paper, no hidden appendix piece) |
+
+**Mapping status:** 3/3. Complete. Pointer-emission is still a Core [GAP], not a missing map cell.
 
 ---
 
@@ -271,6 +279,12 @@ Hands: **conflict** with RM6 and Graphic D “no separate database.” Vectors g
 Kind: Steward and adaptation. Ch. 3–4.  
 Hands: **adjacent** as policy over a holder of language. **conflict** if stored as Core rows.
 
+**X7 — Inference / prefilling / decoding (ch. 5)**  
+Kind: Projection / generation procedure.  
+Source language: input sequence \(x = x_0\ldots x_m\) (a “prompt”); output \(y = y_1\ldots y_n\); “the goal of LLM inference is to maximize \(\mathrm{Pr}(y\mid x)\).” Algorithms: greedy, beam, sampling, penalty, speculative decoding.  
+Hands: **conflict** as Core continue (Piece 2 outputs a kept pass, not \(\arg\max \mathrm{Pr}(y\mid x)\)). **adjacent** as something a steward may do *with* language while holding the lace.  
+Does not decide ingest. Does not emit POINTER.
+
 ### Interface coherence (Xiao & Zhu → Core)
 
 X1’s output (an ordered list of atoms) looks like Piece 3’s input and is not. Piece 3 consumes raw arrival and emits WORD sections without discarding. X4’s output is a *damaged* sequence. That cannot be an input to Piece 2.
@@ -312,6 +326,11 @@ Hands: **kin of a negation.** Lace *is* only the construction (the route). Behav
 Kind: Exclusion list in the introduction.  
 Source language: GNNs “are a natural choice for graph-based data.” They omit them.  
 Hands: that “natural choice” is the exact false Core a reader reaches for after Graphic B.
+
+**P7 — Neural tangent kernel / infinite width (ch. 11)**  
+Kind: Linearization of training.  
+Source language: wide nets “exhibit linear-like behavior in the infinite-width limit”; empirical tangent kernel from first-order Taylor of \(\Phi\) in \(w\); width \(n\to\infty\) yields the NTK. Interpolation (ch. 9) is another possession-of-\(f\) result.  
+Hands: **conflict** with Piece 1/6 if treated as Core. A kernel that stands in for training is still a second mutable world, now linearized. Infinite width is not Piece 12.
 
 ### Interface coherence (Petersen & Zech → Core)
 
@@ -356,6 +375,11 @@ Kind: Library of steward breaches. Three dimensions: Reasoning, Control-flow, Ac
 
 **Verdict on A4:** tooling for the Bot, layered *over* Lace. Not WORD/POINTER.
 
+**A5 — Remainder of the 22-page paper (no hidden appendix piece)**  
+Kind: Evaluation / limitation note.  
+Source language: Action Mismatch worked as \(\mathrm{iv}_{mismatch}\) over ReAG nodes; `aligned()` is an LLM binary classifier. Closing pages: trajectories contain multiple errors; annotated first-mistake is not always the decisive loop.  
+Hands: **adjacent** steward diagnosis. Confirms there is no second AgentScope store hiding after §3. The paper ends at p.22.
+
 ### Interface coherence (AgentScope → Core)
 
 A2’s output (a DAG of steps) does not match Piece 5’s input (earlier indices on the same lace). The real entity that flows is *steward behavior*, which Core does not store.
@@ -385,8 +409,10 @@ RM6 no tag  ──forbids──  meaning table / embedding store
 | X2 intern token → Piece 4/7 | vocab id as identity | **[CONFLICT]** intern |
 | X4 [MASK] → Piece 3 | damaged sequence | **[CONFLICT]** cut |
 | X3 next-token → Piece 2 | \(\mathrm{Pr}(x_{i+1}\mid x_{\le i})\) | wrong output type |
+| X7 decode \(\arg\max\mathrm{Pr}(y\mid x)\) → Piece 2 | sampled continuation | wrong output type |
 | P1 \(\Phi(w)\) → Piece 7 | hidden unit as star | **[CONFLICT]** |
 | P4 train \(w\) → Piece 6 | mutated weights | **[CONFLICT]** rewrite |
+| P7 NTK → Piece 6 | linearized training kernel | **[CONFLICT]** second world |
 | A2 ReAG → Piece 5 | steward DAG as pointers | second store |
 
 ### Failure propagation
@@ -553,17 +579,17 @@ Marks in cells: kin / weak / adj / conflict / off / — (no contact).
 
 **Rowlands §20.18 Language / UG** — off-shoe. Chomsky + holographic labels. Not dictionary wiring. Not a stored grammar.
 
-**Xiao ch. 5 / Petersen NTK+ / AgentScope appendix** — left as type-classified: decoding, kernels, robustness, more steward predicates. None is ingest, none is append, none is hitch. A new lookalike piece did not appear.
+**Xiao ch. 5 / Petersen NTK+ / AgentScope remainder** — opened in pass 3. See X7, P7, A5. No sixth Core piece.
 
 ### Certification table
 
-| Text | High-risk unread after pass 1 | Pass 2 result |
+| Text | After pass 2 | Pass 3 result |
 |---|---|---|
-| Kauffman 4ed | Part II hitches, slide, virtual | Hitches = K7 kin. Slide = K8 conflict. Virtual = K9 conflict. Rest of Part II stays diagram-class / speculation. |
-| Rowlands | §20.16–20.18 | R5 off-shoe. R6 off-shoe. Name clash unchanged. |
-| Xiao & Zhu | Ch. 5 inference | Type: projection. No ingest rule. |
-| Petersen & Zech | NTK, interpolation, robustness | Type: mutate or approximate. |
-| AgentScope | Appendix invariants | Type: more steward predicates. |
+| Kauffman 4ed | K7 kin; K8/K9 conflict | Unchanged |
+| Rowlands | R5/R6 off-shoe | Unchanged |
+| Xiao & Zhu | ch. 5 type-classified | **X7 opened:** maximize \(\mathrm{Pr}(y\mid x)\); greedy/beam/sample. Conflict as Core continue. Not ingest. |
+| Petersen & Zech | NTK type-classified | **P7 opened:** infinite-width NTK is linearized training. Conflict as second world. Width \(\neq\) Piece 12. |
+| AgentScope | “appendix” type-classified | **A5 opened:** 22-page paper; invariants live in §3.2; no hidden store. |
 
 ---
 
@@ -601,6 +627,6 @@ n is reached only when all of the following are true:
 4. No POINTER emission, arity, or adjacency rule is written as if the books decided it. **Held.**
 5. The physical lace test still rejects every conflict row. **Held.**
 
-**n = 2. Mapping task complete.**
+**N = 3. Mapping task complete.**
 
-A later book can reopen the map. It cannot be reopened from the five texts already scored. Do not start `docs/pointer-emission.md` from K7 friction or R5 DNA. That file, if written, is unanswered questions from the four graphics.
+A later book can reopen the map. It cannot be reopened from the five texts already scored. Do not start `docs/pointer-emission.md` from K7 friction, R5 DNA, X7 decoding, or P7 NTK. That file, if written, is unanswered questions from the four graphics.
