@@ -13,6 +13,9 @@ Source corpus for this manifest (author-presented as the definition of the proje
 
 The four graphics are four presentations of one mechanism, not four subsystems. Graphic D is the only storage model. Graphics A–C are behavioral / topological presentations of the same growth rule.
 
+ASCII spine (pass 1, companion): `docs/systems-manifest-ascii.md`. Does not replace this file. Does not fill G2.
+
+
 ---
 
 ## Puzzle Pieces
