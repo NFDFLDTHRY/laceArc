@@ -292,6 +292,36 @@ None of these license stages as Graphic D row types. Emission remains `[GAP]`.
 | T2 | Packet schedule |
 | T3 | Leftover source lines on Overview, C4, Literacy |
 
+## HCC-A × Cup crossing register (pass 5)
+
+Two clocks. Cup times. HCC compiles. Zero shared store.
+
+| HCC packet | C1 | C2 | C3 | C4 | C5 |
+|---|---|---|---|---|---|
+| raw signal / ordered trace | field already there | — | live | — | — |
+| schema stream / priors | trained phrases present | — | can distort | — | written for next |
+| ledger op / state | — | — | oil inside holder | — | oil while talking |
+| weight / affect | — | — | in flight | — | assigned meaning (source: C5) |
+| act πB | — | initiation (incl. silence / let-go / freeze) | live work | too late as *altering* | talking is not a second impact |
+| next-world πFB | — | — | — | ground truth | — |
+| priors πID | consumed | — | — | — | produced |
+
+Two writers into next C1: Cup C5 rewritten thresholds ⟂ HCC πID / Act VI templates. Same next looking. Two objects. Do not fuse.
+
+Two names on impact: C4 ground truth and πFB next-world. Same floor if they are one bounce. Still two names.
+
+PFC-only during C3 = locked train in the only live window. Interaction forensics: seeing is C1–C3; arguing *should* = already C5.
+
+Water: C3 work only while meshed. Not filled here.
+
+## Pass 5 clipboard deltas
+
+| Ticket | Action |
+|---|---|
+| T1 | Crossing register HCC packet × Cup tooth |
+| T2 | Two next-C1 writers stamped |
+| T3 | HCC clipboard “mesh only B+RIC” corrected |
+
 ---
 
 ## Executive Seams Summary

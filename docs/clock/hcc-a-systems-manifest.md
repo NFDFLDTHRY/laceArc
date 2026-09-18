@@ -538,7 +538,7 @@ Two contracts, already stated in philosophy-map:
 1. **Workpiece (Lace Core)** — irreducible append-only strand.
 2. **Gearbox (H, C, W)** — required to operate upon 1. Zero shared mutable state with the array.
 
-HCC-A is the driver *inside* contract 2. Cup and Water are not pieces of this manifest; they mesh **only** at B (act in time) and at RIC (structure back from impact).
+HCC-A is the driver *inside* contract 2. Cup and Water are not pieces of this mill. They are other gears. Crossings with Cup are on `docs/clock/coffee-cup-systems-manifest.md` (pass 5 register). Not “only B and RIC”: C1 already touches πRIC/πPFC; C5 writes πID; C4 is πFB.
 
 ```
   [H housing]
@@ -622,7 +622,7 @@ Diagnostic use: hear wrong mesh (PFC-only, ledger-delete-on-tape, M as WORD) bef
 - POINTER when / arity / adjacency — Hands `[GAP]`. Not an HCC degree of freedom.
 - Numeric RIC/PFC switching procedure — modes named; procedure still `[GAP]`.
 - Original HCC-A attachment is **not** in git (pass 1 read it from workspace attachments). Do not `git add` the txt.
-- Cup and Water mesh tables live in philosophy-map, not here.
+- Cup crossings: `docs/clock/coffee-cup-systems-manifest.md` pass 5 register. Water clutch still unnamed as its own clipboard.
 
 ---
 
