@@ -11,7 +11,8 @@ HANDS CITE: Punch-card arrival (Piece 3); no stored meaning (Piece 14)
 SHADOW CITE: HCC-A spec
 HISTORY CITE: pass2 D08 fidelity audit repairs are [X]
 DELTA vs HOLOGRAM: confirms
-NOTE: A alone is blind to joint crossing + time window` },
+NOTE: A alone is blind to joint crossing + time window
+BIND: WebGPU pick + HUD · key A` },
   "B": { group: "gears", chip: "Gear B", title: "GEAR B — Coffee Cup fall train", body: `MESH: Cond→Rel→Traj→Imp→After→Cond'   (scale: B)
 INPUTS: one event unfolding (empty-cup stake removal)
 OUTPUTS: recirculating conditions / scripts
@@ -24,7 +25,8 @@ HANDS CITE: Impact = ground truth kin; no rewrite i (Rule Zero)
 SHADOW CITE: Coffee Cup
 HISTORY CITE: none required
 DELTA vs HOLOGRAM: confirms
-NOTE: B alone is blind to knobs + repair protocol` },
+NOTE: B alone is blind to knobs + repair protocol
+BIND: WebGPU pick + HUD · key B` },
   "C": { group: "gears", chip: "Gear C", title: "GEAR C — Water / Proof crossing train", body: `MESH: Banks→Rapids→Delta→Cross→Rebuild→Banks'   (scale: C)
        + Locate/Anchor/Pair/Unknowns/Reject
 INPUTS: conversational heat / blockage
@@ -40,7 +42,8 @@ SHADOW CITE: Where the Water Is Loud + Dual Proofing
 HISTORY CITE: pass1 — old OBS labels not row types
 DELTA vs HOLOGRAM: confirms
 REPAIR: We're in the rapids. Pick one pointable thing (OBS)…
-NOTE: C alone is blind to full local stack + pre-release field` },
+NOTE: C alone is blind to full local stack + pre-release field
+BIND: WebGPU pick + HUD · key C` },
   "AB": { group: "gears", chip: "A×B", title: "MESH A×B — compile × fall time", body: `MESH: A ↔ B   (scale: A×B×C co-presence)
 INPUTS: event stage (B) gates which A subsystem is diagnostic
 OUTPUTS: phased compile read (priors @ Cond; M+E @ Traj; Act VI @ After)
@@ -52,7 +55,8 @@ BOUNDARY STAMP: [H] recirculation | metaphor growth [I] | mutate WORD [X]
 HANDS CITE: append-only growth ≠ story rewrite
 SHADOW CITE: hologram morphism B→A
 HISTORY CITE: none
-DELTA vs HOLOGRAM: confirms` },
+DELTA vs HOLOGRAM: confirms
+BIND: chip only this renderer · key AB · no pickTarget` },
   "BC": { group: "gears", chip: "B×C", title: "MESH B×C — fall window × crossing", body: `MESH: B.Traj ↔ C.Locate/Anchor   (scale: A×B×C ; time: t2)
 INPUTS: shrinking control window + Rapids heat
 OUTPUTS: manual escapement release OR window burn
@@ -64,7 +68,8 @@ BOUNDARY STAMP: escapement [H] | ≠ POINTER emission [GAP]
 HANDS CITE: emission still sealed
 SHADOW CITE: hologram § Escapement; Water repair sentence
 HISTORY CITE: pass2 — contact rules cannot supply emission
-DELTA vs HOLOGRAM: confirms` },
+DELTA vs HOLOGRAM: confirms
+BIND: chip only this renderer · key BC · no pickTarget` },
   "CA": { group: "gears", chip: "C×A", title: "MESH C×A — crossing × two compiles", body: `MESH: C states ↔ A×A   (scale: A×B×C)
 INPUTS: two local compiles (separate RIC/PFC)
 OUTPUTS: Banks / Rapids / Delta / Cross / Rebuild per mind pair
@@ -76,5 +81,6 @@ BOUNDARY STAMP: [H] | meaning-as-stored-sense [X]
 HANDS CITE: Piece 14 no stored meaning
 SHADOW CITE: hologram morphism C→A
 HISTORY CITE: pass1
-DELTA vs HOLOGRAM: confirms` }
+DELTA vs HOLOGRAM: confirms
+BIND: chip only this renderer · key CA · no pickTarget` }
 });
