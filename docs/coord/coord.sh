@@ -167,17 +167,28 @@ path_to_station() {
     die "cannot tell station for '$raw' (unknown gearing contract shaft)"
   fi
 
+  # Gear claim state → the same gear:<shaft>. claim.sh writes these files on
+  # behalf of the shaft's holder, so the holder owns them.
+  if [[ "$path" =~ ^docs/gearing/claims/([a-zA-Z0-9]+)\.claim$ ]]; then
+    local shaft="${BASH_REMATCH[1]}"
+    if [[ " ${GEAR_SHAFTS[*]} " == *" $shaft "* ]]; then
+      echo "gear:$shaft"
+      return 0
+    fi
+    die "cannot tell station for '$raw' (unknown gearing claim shaft)"
+  fi
+
   # Explicit rule table: station → space-separated patterns
   local best_station="" best_score=-1 score pat station patterns
   local -A RULES=(
     [clipboards]="docs/clipboards/**"
     [prompts]="docs/prompts/**"
-    [maps]="docs/reason-model-map.md docs/rust-nostd-*.md docs/atomic-primitives-map.md docs/gearing-code-1to1.md docs/clock/gearing-code-1to1.md docs/coherence-audit*.md docs/system-mathematical-model.md docs/clock/system-mathematical-model.md docs/defrag-plan.md docs/plans/**"
+    [maps]="docs/reason-model-map.md docs/rust-nostd-*.md docs/atomic-primitives-map.md docs/gearing-code-1to1.md docs/clock/gearing-code-1to1.md docs/coherence-audit*.md docs/system-mathematical-model.md docs/clock/system-mathematical-model.md docs/defrag-plan.md docs/plans/** docs/namespace-register.md"
     [history]="docs/history-recovered* docs/history/**"
     [hologram]="docs/hologram/** docs/clock/** docs/shadow-clock-hologram.md docs/shadow-clock-agent-brief.md docs/shadow-clock-gear-contracts.md docs/philosophy-map.md docs/agent-interaction-model.md"
-    [renderer]="docs/shadow-clock-gearing.html"
+    [renderer]="docs/shadow-clock-gearing.html docs/hologram/nostd-pipeline.html docs/clock/hcc-a-projection.html"
     [kit]="docs/kit/** .claude/**"
-    [law]="AGENTS.md CLAUDE.md docs/staking-the-workspace.md docs/law-why-these-documents.md docs/systems-manifest.md docs/graphics/** docs/graphics-close-reading.md docs/pointer-emission.md docs/references.md CONTRIBUTING.md README.md"
+    [law]="AGENTS.md CLAUDE.md docs/staking-the-workspace.md docs/law-why-these-documents.md docs/systems-manifest.md docs/graphics/** docs/graphics-close-reading.md docs/pointer-emission.md docs/references.md CONTRIBUTING.md README.md .gitignore LICENSE docs/README.md"
     [gearing-meta]="docs/gearing/*.md docs/gearing/*.sh docs/gearing/RESYNC.md"
     [coord]="docs/coord/**"
   )

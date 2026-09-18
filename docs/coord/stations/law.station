@@ -1,6 +1,6 @@
 STATUS: FREE
 STATION: law
-OWNS: AGENTS.md CLAUDE.md docs/staking-the-workspace.md docs/law-why-these-documents.md docs/systems-manifest.md docs/graphics/** docs/graphics-close-reading.md docs/pointer-emission.md docs/references.md CONTRIBUTING.md README.md
+OWNS: AGENTS.md CLAUDE.md docs/staking-the-workspace.md docs/law-why-these-documents.md docs/systems-manifest.md docs/graphics/** docs/graphics-close-reading.md docs/pointer-emission.md docs/references.md CONTRIBUTING.md README.md .gitignore LICENSE docs/README.md
 AGENT: -
 BASE: -
 SINCE: -

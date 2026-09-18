@@ -1,6 +1,6 @@
 STATUS: FREE
 STATION: renderer
-OWNS: docs/shadow-clock-gearing.html
+OWNS: docs/shadow-clock-gearing.html docs/hologram/nostd-pipeline.html docs/clock/hcc-a-projection.html
 AGENT: -
 BASE: -
 SINCE: -

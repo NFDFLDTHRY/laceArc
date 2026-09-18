@@ -45,18 +45,18 @@ Paste-ready ASCII: `docs/prompts/coord-protocol-prompt.md`.
 
 ## Doc stations
 
-Station files: `docs/coord/stations/<name>.station`
+Station files: `docs/coord/stations/<name>.station` — see [stations/README.md](stations/README.md).
 
 | Station | Owns |
 |---|---|
 | clipboards | `docs/clipboards/**` |
 | prompts | `docs/prompts/**` |
-| maps | `docs/reason-model-map.md` `docs/rust-nostd-*.md` `docs/atomic-primitives-map.md` `docs/clock/gearing-code-1to1.md` `docs/coherence-audit*.md` `docs/clock/system-mathematical-model.md` `docs/defrag-plan.md` `docs/plans/**` |
+| maps | `docs/reason-model-map.md` `docs/rust-nostd-*.md` `docs/atomic-primitives-map.md` `docs/clock/gearing-code-1to1.md` `docs/coherence-audit*.md` `docs/clock/system-mathematical-model.md` `docs/defrag-plan.md` `docs/plans/**` `docs/namespace-register.md` |
 | history | `docs/history-recovered*` `docs/history/**` |
 | hologram | `docs/hologram/**` `docs/clock/**` (1:1 + math stay maps: exact path wins) |
-| renderer | `docs/shadow-clock-gearing.html` |
+| renderer | the three Layer III viewers: `docs/shadow-clock-gearing.html` (frozen; designated editor, per `gearing/CLAIMS.md`), `docs/hologram/nostd-pipeline.html`, `docs/clock/hcc-a-projection.html` |
 | kit | `docs/kit/**` `.claude/**` (hooks + session config are operating kit) |
-| law | `AGENTS.md` `CLAUDE.md` staking, law-why, manifest, graphics, close-reading, `pointer-emission.md`, references, CONTRIBUTING, README |
+| law | `AGENTS.md` `CLAUDE.md` staking, law-why, manifest, graphics, close-reading, `pointer-emission.md`, references, CONTRIBUTING, README, `.gitignore`, `LICENSE`, `docs/README.md` |
 | coord | docs/coord/** (this umbrella) |
 | gearing-meta | `docs/gearing/*.md` `docs/gearing/*.sh` `docs/gearing/RESYNC.md` (not `contracts-*.js`) |
 
@@ -65,6 +65,7 @@ Station files: `docs/coord/stations/<name>.station`
 `gear:axle` `gear:gears` `gear:trainA` `gear:trainB` `gear:trainC` `gear:cells` `gear:escape` `gear:audits`
 
 `docs/gearing/contracts-<shaft>.js` → `gear:<shaft>`.
+`docs/gearing/claims/<shaft>.claim` → `gear:<shaft>` (written by `claim.sh` for the holder).
 
 ---
 
