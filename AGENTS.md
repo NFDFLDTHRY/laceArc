@@ -95,7 +95,7 @@ Stop. The next honest artifact is `docs/pointer-emission.md` that states:
 
 Only after that file exists may Core code appear, and it must implement that file exactly.
 
-## Adjacent books
+## Adjacent reading
 
-Kauffman *Knots and Physics* (4ed) and Rowlands *Zero to Infinity* are cited in `docs/references.md`.
-They are not source of record. Do not import their axioms into Core. Do not add the PDF files to git.
+Cited in `docs/references.md` only: Kauffman, Rowlands, Xiao & Zhu (LLMs), Petersen & Zech (DL theory), Bi et al. (AgentScope).
+Not source of record. Do not import their axioms into Core. Do not add PDF files to git.
