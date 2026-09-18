@@ -1,7 +1,7 @@
-STATUS: FREE
+STATUS: HELD
 STATION: kit
 OWNS: docs/kit/** .claude/**
-AGENT: -
-BASE: -
-SINCE: -
+AGENT: Claude-Projection
+BASE: 0f2bbcd7f436776257950b42f6880e9ac8ff367c
+SINCE: 2026-09-18T23:14:16Z
 NOTE: 

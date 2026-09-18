@@ -47,6 +47,7 @@ fi
 # A file being written right now must meet the gate before it is committed,
 # not after; enumerating only the index made a new file invisible to it.
 _docs=$(git ls-files --cached --others --exclude-standard -- '*.md')
+_all=$(git ls-files --cached --others --exclude-standard)
 
 # 4. Relative links in the markdown resolve. A dead link to a graphic is a
 #    dead pointer to the source of record.
@@ -119,19 +120,51 @@ while IFS= read -r md; do
 done < <(printf '%s\n' "$_docs")
 [ "$stale" -eq 0 ] && note_ok "no stale absence claims (nothing called absent that is tracked)"
 
-# 6. Orphan documents. A tracked document no other document links to is
-#    unreachable by reading: written, committed, and invisible.
-linked=$(printf '%s\n' "$_docs" | xargs grep -ohE '\]\([^)]+\)' 2>/dev/null \
-  | sed -E 's/^\]\(//; s/\)$//; s/ .*$//; s/#.*$//; s#.*/##' | sort -u)
-orphans=0
-for f in $_docs; do
-  # Entry points are reached from outside the tree, not by an inbound link.
-  case "$f" in README.md|AGENTS.md|CLAUDE.md|READ_ME_FIRST.md|CONTRIBUTING.md) continue ;; esac
-  if ! printf '%s\n' "$linked" | grep -qxF -- "$(basename -- "$f")"; then
-    note_warn "orphan: $f — no document links to it"
-    orphans=$((orphans + 1))
-  fi
-done
+# 6. Orphan documents. A tracked file no document links to is unreachable by
+#    reading: written, committed, and invisible. Links are resolved to paths,
+#    not basenames -- a basename test silently exempts every README.md and
+#    conflates two files that share a name in different directories.
+linked=$(printf '%s\n' "$_docs" | tr '\n' '\0' | xargs -0 -r awk '
+  function norm(p,   n, a, i, st, k, out) {
+    n = split(p, a, "/"); k = 0
+    for (i = 1; i <= n; i++) {
+      if (a[i] == "." || a[i] == "") continue
+      if (a[i] == "..") { if (k > 0) k--; continue }
+      st[++k] = a[i]
+    }
+    out = ""
+    for (i = 1; i <= k; i++) out = out (i > 1 ? "/" : "") st[i]
+    return out
+  }
+  {
+    line = $0
+    while (match(line, /\]\([^)]+\)/)) {
+      t = substr(line, RSTART + 2, RLENGTH - 3)
+      line = substr(line, RSTART + RLENGTH)
+      sub(/[ \t].*$/, "", t); sub(/#.*$/, "", t)
+      if (t == "" || t ~ /^(https?:|mailto:|tel:)/) continue
+      d = FILENAME
+      if (sub("/[^/]*$", "", d) == 0) d = "."
+      print norm(d "/" t)
+    }
+  }' 2>/dev/null | sort -u)
+
+# Entry points are reached from outside the tree, not by an inbound link.
+orph_list=$(awk '
+  NR == FNR { seen[$0]; next }
+  $0 == "README.md" || $0 == "AGENTS.md" || $0 == "CLAUDE.md" || $0 == "CONTRIBUTING.md" { next }
+  !($0 in seen)
+' <(printf '%s\n' "$linked") <(printf '%s\n' "$_all"))
+orphans=$(printf '%s' "$orph_list" | grep -c . || true)
+
+if [ "$orphans" -gt 0 ]; then
+  note_warn "orphans: $orphans file(s) no document links to"
+  printf '%s\n' "$orph_list" | awk -F/ '
+    NF > 1 { d = ""; for (i = 1; i < NF; i++) d = d $i "/"; c[d]++; if (!(d in e)) e[d] = $NF; next }
+    { c["(repo root)"]++; if (!("(repo root)" in e)) e["(repo root)"] = $0 }
+    END { for (k in c) printf "%5d  %-24s e.g. %s\n", c[k], k, e[k] }
+  ' | sort -rn | sed 's/^/       /'
+fi
 [ "$orphans" -eq 0 ] && note_ok "no orphan documents (every document is reachable by a link)"
 
 if [ "$fail" -eq 0 ]; then
