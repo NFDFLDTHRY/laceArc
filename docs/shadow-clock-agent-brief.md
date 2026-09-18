@@ -133,3 +133,4 @@ Holder gears diagnose the steward (same shelf as AgentScope stake). They do not 
 | [`staking-the-workspace.md`](staking-the-workspace.md) | Hands vs Shadow law |
 | [`reason-model-map.md`](reason-model-map.md) | Five PDF stakes → Hands |
 | [`systems-manifest.md`](systems-manifest.md) | Contract I / II / III |
+| [`shadow-clock-gearing.html`](shadow-clock-gearing.html) | Interactive physical gearing map (Layer III; raw.githack) |

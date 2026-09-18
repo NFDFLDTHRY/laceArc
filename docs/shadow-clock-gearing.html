@@ -3,378 +3,568 @@
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>laceArc — Shadow clock gearing</title>
+<title>Lace Shadow Clock — Gearing Interaction Contracts</title>
+<meta name="description" content="Projection view: holder machine {A,B,C} as physical clock gearing of lace. Not Core. Not a sixth graphic."/>
 <style>
   :root {
-    --bg: #0d0c0a;
-    --panel: #16130f;
-    --brass: #c4a35a;
-    --brass-dim: #7a6230;
-    --steel: #6e8aa8;
-    --copper: #c4845a;
-    --silver: #b8b3a8;
-    --danger: #c45a5a;
-    --gap: #6a5a8a;
-    --tape: #d4c4a0;
-    --ink: #e8dfd0;
-    --muted: #8a8070;
-    --line: #2a241c;
+    --bg: #0a0c10;
+    --panel: #12161e;
+    --ink: #e8ecf4;
+    --muted: #8b93a7;
+    --axle: #c9a227;
+    --a: #5b9fd4;
+    --b: #d4a05b;
+    --c: #7bc96f;
+    --lace: #e8dcc8;
+    --danger: #e85d5d;
+    --gap: #9b7bff;
+    --wall: #3d4555;
+    --mesh: #f0e6a0;
   }
   * { box-sizing: border-box; }
-  html, body { margin: 0; height: 100%; background: var(--bg); color: var(--ink);
-    font: 14px/1.45 "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif; }
+  html, body {
+    margin: 0; padding: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font: 15px/1.45 "IBM Plex Sans", "Segoe UI", system-ui, sans-serif;
+    min-height: 100%;
+  }
   header {
-    display: flex; justify-content: space-between; align-items: baseline;
-    padding: 14px 22px 8px; border-bottom: 1px solid var(--line);
+    padding: 1rem 1.25rem 0.75rem;
+    border-bottom: 1px solid #242a36;
+    display: flex; flex-wrap: wrap; gap: 0.75rem 1.5rem;
+    align-items: baseline; justify-content: space-between;
   }
-  header h1 { font-size: 15px; letter-spacing: .12em; text-transform: uppercase; margin: 0; color: var(--brass); font-weight: 600; }
-  header p { margin: 0; color: var(--muted); font-size: 12px; }
-  .wrap { display: grid; grid-template-columns: 1fr 380px; min-height: calc(100% - 52px); }
-  @media (max-width: 980px) { .wrap { grid-template-columns: 1fr; } }
-  .stage { position: relative; padding: 12px 16px 20px; }
-  svg.clock { width: 100%; height: auto; max-height: 72vh; display: block; }
-  .legend { display: flex; flex-wrap: wrap; gap: 8px 14px; padding: 8px 4px 0; font-size: 11px; letter-spacing: .06em; color: var(--muted); }
-  .sw { display: inline-block; width: 9px; height: 9px; border-radius: 1px; margin-right: 5px; vertical-align: -1px; }
-  .dock {
-    background: var(--panel); border-left: 1px solid var(--line);
-    padding: 16px 18px 28px; overflow: auto;
+  header h1 {
+    margin: 0; font-size: 1.15rem; font-weight: 600; letter-spacing: 0.02em;
   }
-  .dock h2 { margin: 0 0 6px; font-size: 16px; color: var(--brass); }
-  .meta { color: var(--muted); font-size: 12px; margin-bottom: 12px; }
-  .stamp { display: inline-block; font-size: 10px; letter-spacing: .08em; padding: 2px 6px; border: 1px solid; margin: 0 4px 4px 0; }
-  .s-I { color: var(--brass); border-color: var(--brass); }
-  .s-II { color: var(--steel); border-color: var(--steel); }
-  .s-III { color: var(--silver); border-color: var(--silver); }
-  .s-H { color: var(--copper); border-color: var(--copper); }
-  .s-X { color: var(--danger); border-color: var(--danger); }
-  .s-GAP { color: var(--gap); border-color: var(--gap); }
-  .block { margin: 10px 0; }
-  .block h3 { margin: 0 0 4px; font-size: 11px; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); }
-  .block p { margin: 0; }
-  .hint { color: var(--muted); font-size: 12px; }
-  button.tick {
-    background: transparent; color: var(--brass); border: 1px solid var(--brass-dim);
-    padding: 6px 12px; letter-spacing: .1em; text-transform: uppercase; font: inherit; font-size: 11px;
-    cursor: pointer;
+  header .sub { color: var(--muted); font-size: 0.85rem; max-width: 52rem; }
+  header .badge {
+    font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.08em;
+    border: 1px solid var(--wall); color: var(--muted);
+    padding: 0.25rem 0.5rem; border-radius: 999px;
   }
-  button.tick:hover { background: #2a2214; }
-  .controls { display: flex; gap: 8px; align-items: center; margin: 8px 0 0; }
-  a { color: var(--steel); }
-  .gear-hit { cursor: pointer; }
-  .mesh-hit { cursor: pointer; }
-  .hot .tooth, .hot circle.rim { stroke: var(--ink); }
-  #tapeMarks text { font-family: ui-monospace, Menlo, Consolas, monospace; font-size: 9px; fill: #3a3228; }
+  .layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(280px, 360px);
+    gap: 0;
+    min-height: calc(100vh - 5.5rem);
+  }
+  @media (max-width: 960px) {
+    .layout { grid-template-columns: 1fr; }
+  }
+  .stage {
+    position: relative;
+    padding: 0.5rem;
+    border-right: 1px solid #242a36;
+    background:
+      radial-gradient(ellipse at 50% 45%, #151a24 0%, var(--bg) 70%);
+  }
+  svg#clock {
+    width: 100%; height: auto; max-height: 78vh;
+    display: block; margin: 0 auto;
+  }
+  .side {
+    background: var(--panel);
+    padding: 1rem 1.1rem 2rem;
+    overflow: auto;
+    max-height: calc(100vh - 5.5rem);
+  }
+  .side h2 {
+    margin: 0 0 0.5rem; font-size: 0.95rem;
+  }
+  .side h3 {
+    margin: 1rem 0 0.35rem; font-size: 0.8rem;
+    text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted);
+  }
+  .stamp {
+    display: inline-block; font-family: ui-monospace, monospace;
+    font-size: 0.72rem; padding: 0.1rem 0.35rem; border-radius: 3px;
+    margin-right: 0.25rem; border: 1px solid #333;
+  }
+  .stamp-I { color: #9fd4ff; border-color: #3a6a8a; }
+  .stamp-II { color: #9fe0c0; border-color: #3a7a5a; }
+  .stamp-III { color: #d4c09f; border-color: #7a6a3a; }
+  .stamp-H { color: #f0e6a0; border-color: #8a7a30; }
+  .stamp-X { color: #ffb0b0; border-color: #8a3a3a; background: #2a1515; }
+  .stamp-GAP { color: #d0c0ff; border-color: #5a4a8a; }
+  #contract {
+    font-family: ui-monospace, "IBM Plex Mono", monospace;
+    font-size: 0.78rem; line-height: 1.4;
+    white-space: pre-wrap; background: #0a0c10;
+    border: 1px solid #2a3140; border-radius: 6px;
+    padding: 0.75rem; min-height: 12rem; color: #d8dee9;
+  }
+  .hint { color: var(--muted); font-size: 0.8rem; margin: 0.5rem 0 1rem; }
+  .links a {
+    color: var(--a); text-decoration: none; display: block;
+    font-size: 0.82rem; margin: 0.25rem 0;
+  }
+  .links a:hover { text-decoration: underline; }
+  .legend {
+    display: flex; flex-wrap: wrap; gap: 0.5rem 1rem;
+    font-size: 0.75rem; color: var(--muted); margin-top: 0.5rem;
+  }
+  .legend span::before {
+    content: ""; display: inline-block; width: 0.65rem; height: 0.65rem;
+    border-radius: 50%; margin-right: 0.35rem; vertical-align: -1px;
+  }
+  .legend .la::before { background: var(--a); }
+  .legend .lb::before { background: var(--b); }
+  .legend .lc::before { background: var(--c); }
+  .legend .ll::before { background: var(--lace); }
+  .legend .lx::before { background: var(--axle); }
+  button.chip {
+    background: #1a2030; border: 1px solid #333a4a; color: var(--ink);
+    border-radius: 999px; padding: 0.25rem 0.65rem; font-size: 0.75rem;
+    cursor: pointer; margin: 0.15rem 0.2rem 0.15rem 0;
+  }
+  button.chip:hover, button.chip.active {
+    border-color: var(--axle); color: var(--axle);
+  }
+  .gear-hot { filter: drop-shadow(0 0 6px rgba(240,230,160,0.55)); }
+  footer {
+    grid-column: 1 / -1; padding: 0.6rem 1.25rem;
+    border-top: 1px solid #242a36; color: var(--muted); font-size: 0.75rem;
+  }
+  .wall-note {
+    border-left: 3px solid var(--danger); padding-left: 0.65rem;
+    margin: 0.75rem 0; color: var(--muted); font-size: 0.8rem;
+  }
 </style>
 </head>
 <body>
 <header>
-  <h1>laceArc shadow clock</h1>
-  <p>Holder machine {A, B, C} · projection only · Lace ∉ these gears · emission [GAP]</p>
+  <div>
+    <h1>Lace Shadow Clock — Physical Gearing</h1>
+    <p class="sub">Holder machine {A, B, C} as clock gearing on one lace axle. Projection only — not Core, not a sixth graphic, not WORD/POINTER rows. POINTER emission stays [GAP].</p>
+  </div>
+  <span class="badge">Layer III · read-only</span>
 </header>
-<div class="wrap">
+
+<div class="layout">
   <div class="stage">
-    <svg class="clock" viewBox="0 0 920 640" xmlns="http://www.w3.org/2000/svg">
+    <svg id="clock" viewBox="0 0 920 640" role="img" aria-label="Three meshed clock gears A B C with lace cord through axle">
       <defs>
-        <radialGradient id="brassFill" cx="35%" cy="30%">
-          <stop offset="0%" stop-color="#e8d39a"/>
-          <stop offset="55%" stop-color="#b8923e"/>
-          <stop offset="100%" stop-color="#5a4318"/>
-        </radialGradient>
-        <radialGradient id="steelFill" cx="35%" cy="30%">
-          <stop offset="0%" stop-color="#c5d4e2"/>
-          <stop offset="60%" stop-color="#6a849c"/>
-          <stop offset="100%" stop-color="#2a3848"/>
-        </radialGradient>
-        <radialGradient id="copperFill" cx="35%" cy="30%">
-          <stop offset="0%" stop-color="#efc09a"/>
-          <stop offset="60%" stop-color="#b06a3a"/>
-          <stop offset="100%" stop-color="#4a2814"/>
-        </radialGradient>
-        <filter id="shade"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#000" flood-opacity=".45"/></filter>
+        <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
+          <feGaussianBlur stdDeviation="1.2" result="b"/>
+          <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+        </filter>
+        <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+          <path d="M0 0 L10 5 L0 10 z" fill="#f0e6a0"/>
+        </marker>
       </defs>
 
-      <text x="20" y="28" fill="#c4a35a" font-size="13" letter-spacing="2">MAINSPRING  R  constrains</text>
-      <text x="20" y="46" fill="#8a8070" font-size="11">only structure crosses · meaning stays local · grind is not a tick</text>
-
-      <!-- Train A case -->
-      <rect x="30" y="64" width="280" height="292" rx="6" fill="#14110d" stroke="#3a3228"/>
-      <text x="44" y="86" fill="#c4a35a" font-size="12" letter-spacing="1.5">A  COMPILE CLOCK</text>
-      <text x="44" y="102" fill="#8a8070" font-size="10">HCC-A · dual shaft · B escapes the case</text>
-
-      <g id="gearA" class="gear-hit" data-id="train-a" transform="translate(170 210)" filter="url(#shade)">
-        <g class="spinA">
-          <circle class="rim" r="78" fill="url(#brassFill)" stroke="#3a2a10" stroke-width="3"/>
-          <g stroke="#3a2a10" stroke-width="2" fill="#8a6a28">
-            <!-- teeth -->
-            <g id="aTeeth"></g>
-          </g>
-          <circle r="18" fill="#2a1e0c" stroke="#e8d39a" stroke-width="2"/>
-          <text text-anchor="middle" y="4" fill="#e8d39a" font-size="14">A</text>
-        </g>
-      </g>
-      <text x="44" y="338" fill="#6e8aa8" font-size="10">RIC ∥ PFC</text>
-      <text x="200" y="338" fill="#c45a5a" font-size="10">C L M boxed</text>
-      <text x="44" y="352" fill="#c4845a" font-size="10">E ISL B  [H]</text>
-
-      <!-- Train B five-tooth -->
-      <rect x="330" y="64" width="250" height="292" rx="6" fill="#14110d" stroke="#3a3228"/>
-      <text x="344" y="86" fill="#6e8aa8" font-size="12" letter-spacing="1.5">B  PHASE CLOCK</text>
-      <text x="344" y="102" fill="#8a8070" font-size="10">Coffee Cup · 5 teeth · only 3 is live work</text>
-      <g id="gearB" class="gear-hit" data-id="train-b" transform="translate(456 210)" filter="url(#shade)">
-        <g class="spinB">
-          <circle class="rim" r="70" fill="url(#steelFill)" stroke="#1c2834" stroke-width="3"/>
-          <g id="bTeeth"></g>
-          <circle r="16" fill="#101820" stroke="#c5d4e2" stroke-width="2"/>
-          <text text-anchor="middle" y="4" fill="#c5d4e2" font-size="14">B</text>
-        </g>
-      </g>
-      <text x="344" y="338" fill="#6e8aa8" font-size="10">1 Cond  2 Rel  3 Traj*</text>
-      <text x="344" y="352" fill="#6e8aa8" font-size="10">4 Imp [I]  5 After → 1'</text>
-
-      <!-- Train C escapement -->
-      <rect x="600" y="64" width="290" height="292" rx="6" fill="#14110d" stroke="#3a3228"/>
-      <text x="614" y="86" fill="#c4845a" font-size="12" letter-spacing="1.5">C  ESCAPEMENT</text>
-      <text x="614" y="102" fill="#8a8070" font-size="10">Water · pallet 0|1 · no mesh, no torque</text>
-      <g id="gearC" class="gear-hit" data-id="train-c" transform="translate(748 210)" filter="url(#shade)">
-        <g class="spinC">
-          <circle class="rim" r="62" fill="url(#copperFill)" stroke="#3a1c10" stroke-width="3"/>
-          <g id="cTeeth"></g>
-          <circle r="14" fill="#20140c" stroke="#efc09a" stroke-width="2"/>
-          <text text-anchor="middle" y="4" fill="#efc09a" font-size="13">C</text>
-        </g>
-      </g>
-      <!-- pallet -->
-      <g id="pallet" class="gear-hit" data-id="escapement" transform="translate(748 118)">
-        <rect x="-46" y="-10" width="92" height="16" rx="3" fill="#3a3228" stroke="#c4845a"/>
-        <text text-anchor="middle" y="3" fill="#c4845a" font-size="9">PALLET</text>
-      </g>
-      <text x="614" y="338" fill="#c4845a" font-size="10">S0 banks · S1 rapids</text>
-      <text x="614" y="352" fill="#c4845a" font-size="10">S2 delta · S3 cross · S4 rebuild</text>
-
-      <!-- mesh shafts -->
-      <line class="mesh-hit" data-id="a-b" x1="248" y1="210" x2="386" y2="210" stroke="#c4a35a" stroke-width="3"/>
-      <line class="mesh-hit" data-id="b-c" x1="526" y1="210" x2="686" y2="210" stroke="#6e8aa8" stroke-width="3"/>
-      <line class="mesh-hit" data-id="c-tape" x1="748" y1="272" x2="748" y2="400" stroke="#c4845a" stroke-width="3"/>
-
-      <!-- tape / workpiece -->
-      <text x="30" y="392" fill="#d4c4a0" font-size="12" letter-spacing="2">WORKPIECE  GRAPHIC D  one append-only strand</text>
-      <rect x="30" y="404" width="860" height="54" rx="4" fill="#2a2418" stroke="#d4c4a0"/>
-      <g id="tapeMarks"></g>
-      <text x="40" y="436" fill="#8a8070" font-size="11">WORD and POINTER only · no gear tooth stored · tick = legal append</text>
-      <text x="620" y="436" fill="#6a5a8a" font-size="11">POINTER emission [GAP]</text>
-
-      <!-- hands / projection -->
-      <text x="30" y="488" fill="#b8b3a8" font-size="12" letter-spacing="2">HANDS  PROJECTION  [III] must not write back</text>
-      <g id="cells"></g>
-
       <!-- wall -->
-      <rect x="30" y="568" width="860" height="54" rx="4" fill="#100e0c" stroke="#c45a5a"/>
-      <text x="46" y="592" fill="#c45a5a" font-size="12" letter-spacing="1">GREAT CONTRACT WALL</text>
-      <text x="46" y="610" fill="#8a8070" font-size="11">PASS kin-read [I] [II] [III]     STOP [X]     Shadow diagnoses the holder     Lace is not {A,B,C}</text>
+      <rect x="24" y="24" width="872" height="592" rx="12" fill="none" stroke="#2a3140" stroke-dasharray="6 5"/>
+      <text x="40" y="48" fill="#8b93a7" font-size="11" font-family="ui-monospace, monospace">GREAT CONTRACT WALL — Shadow stops here · Hands = one strand beyond</text>
+
+      <!-- lace cord (behind gears) -->
+      <path id="lacePath" d="M60 520 C 180 480, 260 400, 340 360 S 480 300, 520 320 S 600 380, 700 300 S 820 220, 880 180"
+            fill="none" stroke="#e8dcc8" stroke-width="3.5" stroke-linecap="round" opacity="0.85"/>
+      <path d="M60 520 C 180 480, 260 400, 340 360 S 480 300, 520 320 S 600 380, 700 300 S 820 220, 880 180"
+            fill="none" stroke="#a89070" stroke-width="1" stroke-dasharray="2 6" opacity="0.7"/>
+      <text x="58" y="545" fill="#e8dcc8" font-size="11">LACE (Hands) — one cord, two ends, append-only</text>
+      <text x="700" y="170" fill="#e8dcc8" font-size="11">continue →</text>
+
+      <!-- axle hub -->
+      <g id="axle" style="cursor:pointer">
+        <circle cx="460" cy="330" r="28" fill="#1a1608" stroke="#c9a227" stroke-width="3"/>
+        <circle cx="460" cy="330" r="10" fill="#c9a227"/>
+        <text x="460" y="375" text-anchor="middle" fill="#c9a227" font-size="12" font-weight="600">AXLE</text>
+        <text x="460" y="390" text-anchor="middle" fill="#8b93a7" font-size="10">Reality · structure-only · recirculation</text>
+      </g>
+
+      <!-- Gear A - compile -->
+      <g id="gearA" class="gear" data-mesh="A" transform="translate(250,250)" style="cursor:pointer">
+        <g class="teeth" fill="#5b9fd4" stroke="#2a5070" stroke-width="1"></g>
+        <circle r="52" fill="#0f1822" stroke="#5b9fd4" stroke-width="2.5"/>
+        <text text-anchor="middle" y="-4" fill="#5b9fd4" font-size="22" font-weight="700">A</text>
+        <text text-anchor="middle" y="14" fill="#a8c8e0" font-size="9">HCC-A</text>
+        <text text-anchor="middle" y="26" fill="#8b93a7" font-size="8">compile</text>
+      </g>
+
+      <!-- Gear B - fall -->
+      <g id="gearB" class="gear" data-mesh="B" transform="translate(460,200)" style="cursor:pointer">
+        <g class="teeth" fill="#d4a05b" stroke="#6a5020" stroke-width="1"></g>
+        <circle r="44" fill="#1a140a" stroke="#d4a05b" stroke-width="2.5"/>
+        <text text-anchor="middle" y="-4" fill="#d4a05b" font-size="20" font-weight="700">B</text>
+        <text text-anchor="middle" y="12" fill="#e0c8a0" font-size="9">Cup</text>
+        <text text-anchor="middle" y="24" fill="#8b93a7" font-size="8">fall time</text>
+      </g>
+
+      <!-- Gear C - crossing -->
+      <g id="gearC" class="gear" data-mesh="C" transform="translate(640,300)" style="cursor:pointer">
+        <g class="teeth" fill="#7bc96f" stroke="#3a6a35" stroke-width="1"></g>
+        <circle r="48" fill="#0f1a10" stroke="#7bc96f" stroke-width="2.5"/>
+        <text text-anchor="middle" y="-4" fill="#7bc96f" font-size="20" font-weight="700">C</text>
+        <text text-anchor="middle" y="12" fill="#b0e0a8" font-size="9">Water</text>
+        <text text-anchor="middle" y="24" fill="#8b93a7" font-size="8">crossing</text>
+      </g>
+
+      <!-- mesh arcs -->
+      <g id="meshes" fill="none" stroke="#f0e6a0" stroke-width="1.5" opacity="0.55" marker-end="url(#arrow)">
+        <path id="meshAB" d="M300 230 Q 355 180 415 195" style="cursor:pointer"/>
+        <path id="meshBC" d="M505 220 Q 560 240 595 275" style="cursor:pointer"/>
+        <path id="meshCA" d="M590 330 Q 420 400 300 290" style="cursor:pointer"/>
+      </g>
+      <text x="350" y="175" fill="#f0e6a0" font-size="10" id="labAB" style="cursor:pointer">A×B</text>
+      <text x="555" y="245" fill="#f0e6a0" font-size="10" id="labBC" style="cursor:pointer">B×C</text>
+      <text x="430" y="385" fill="#f0e6a0" font-size="10" id="labCA" style="cursor:pointer">C×A</text>
+
+      <!-- tick strip -->
+      <g font-family="ui-monospace, monospace" font-size="10" fill="#8b93a7">
+        <text x="40" y="600">t0 Cond/Banks</text>
+        <text x="160" y="600">t1 Rel/Rapids</text>
+        <text x="290" y="600">t2 Traj/Locate*</text>
+        <text x="430" y="600">t3 Delta</text>
+        <text x="530" y="600">t4 Impact</text>
+        <text x="640" y="600">t5 After/Rebuild</text>
+        <text x="780" y="600">t6 next</text>
+      </g>
+      <g id="ticks">
+        <!-- clickable tick markers -->
+      </g>
     </svg>
     <div class="legend">
-      <span><i class="sw" style="background:#c4a35a"></i>[I] Core kin</span>
-      <span><i class="sw" style="background:#6e8aa8"></i>[II] Arrival kin</span>
-      <span><i class="sw" style="background:#b8b3a8"></i>[III] Projection</span>
-      <span><i class="sw" style="background:#c4845a"></i>[H] Holder</span>
-      <span><i class="sw" style="background:#c45a5a"></i>[X] Forbidden cross</span>
-      <span><i class="sw" style="background:#6a5a8a"></i>[GAP] Hands silent</span>
-    </div>
-    <div class="controls">
-      <button class="tick" id="btnTick" type="button">Advance cell t</button>
-      <span class="hint" id="tickLabel">t0 · Conditions × Banks × S0–S1</span>
+      <span class="la">A compile</span>
+      <span class="lb">B fall</span>
+      <span class="lc">C crossing</span>
+      <span class="ll">Lace cord (Hands)</span>
+      <span class="lx">Shared axle</span>
     </div>
   </div>
-  <aside class="dock" id="dock">
-    <h2>Select a gear or shaft</h2>
-    <p class="meta">Physical clock of the holder machine. Not Core. Click A, B, C, pallet, shafts, or a t-cell.</p>
-    <div class="block"><p class="hint">If you cannot do it to a shoe lace in your hands, you may not do it to laceArc.</p></div>
+
+  <aside class="side">
+    <h2 id="panelTitle">Select a gear or mesh</h2>
+    <p class="hint">Click a gear (A/B/C), a mesh (A×B / B×C / C×A), the axle, or a time chip. Contracts are Shadow interaction specs — stamps show the great contract wall.</p>
+
+    <div id="chips"></div>
+
+    <h3>Interaction contract</h3>
+    <div id="contract">Click a hot target on the clock…</div>
+
+    <div class="wall-note">
+      If a contract would change WORD, POINTER, STAR, or the governing rule — discard for Core.
+      Escapement repair (C.Locate @ B.Traj) is [H] only — not pointer-emission.
+    </div>
+
+    <h3>Docs</h3>
+    <div class="links">
+      <a href="https://github.com/NFDFLDTHRY/laceArc/blob/main/docs/shadow-clock-hologram.md" target="_blank" rel="noopener">shadow-clock-hologram.md</a>
+      <a href="https://github.com/NFDFLDTHRY/laceArc/blob/main/docs/shadow-clock-agent-brief.md" target="_blank" rel="noopener">shadow-clock-agent-brief.md</a>
+      <a href="https://github.com/NFDFLDTHRY/laceArc/blob/main/docs/staking-the-workspace.md" target="_blank" rel="noopener">staking-the-workspace.md</a>
+      <a href="https://github.com/NFDFLDTHRY/laceArc/blob/main/docs/systems-manifest.md" target="_blank" rel="noopener">systems-manifest.md</a>
+      <a href="https://github.com/NFDFLDTHRY/laceArc" target="_blank" rel="noopener">NFDFLDTHRY/laceArc</a>
+    </div>
   </aside>
 </div>
+
+<footer>
+  Projection (Layer III). raw.githack: serve this file from main. Shoe lace in hands — or get out of here.
+</footer>
+
 <script>
 (function () {
-  function teeth(target, n, r0, r1, fill) {
-    const g = document.getElementById(target);
-    let s = "";
-    for (let i = 0; i < n; i++) {
-      const a = (i / n) * Math.PI * 2;
-      const x0 = Math.cos(a) * r0, y0 = Math.sin(a) * r0;
-      const x1 = Math.cos(a) * r1, y1 = Math.sin(a) * r1;
-      const a2 = a + 0.09;
-      const x2 = Math.cos(a2) * r1, y2 = Math.sin(a2) * r1;
-      const x3 = Math.cos(a2) * r0, y3 = Math.sin(a2) * r0;
-      s += `<polygon class="tooth" points="${x0},${y0} ${x1},${y1} ${x2},${y2} ${x3},${y3}" fill="${fill}"/>`;
+  function gearTeeth(gSelector, toothCount, outerR, innerR, tip) {
+    const g = document.querySelector(gSelector + " .teeth");
+    let d = "";
+    for (let i = 0; i < toothCount; i++) {
+      const a0 = (Math.PI * 2 * i) / toothCount;
+      const a1 = a0 + Math.PI / toothCount;
+      const aMid = (a0 + a1) / 2;
+      const x0 = Math.cos(a0) * innerR, y0 = Math.sin(a0) * innerR;
+      const tx = Math.cos(aMid) * (innerR + tip), ty = Math.sin(aMid) * (innerR + tip);
+      const x1 = Math.cos(a1) * innerR, y1 = Math.sin(a1) * innerR;
+      d += `M ${x0} ${y0} L ${tx} ${ty} L ${x1} ${y1} `;
     }
-    g.innerHTML = s;
+    const ring = document.createElementNS("http://www.w3.org/2000/svg", "path");
+    ring.setAttribute("d", d);
+    g.appendChild(ring);
+    const rim = document.createElementNS("http://www.w3.org/2000/svg", "circle");
+    rim.setAttribute("r", String(outerR));
+    rim.setAttribute("fill", "none");
+    g.appendChild(rim);
   }
-  teeth("aTeeth", 18, 78, 92, "#8a6a28");
-  teeth("bTeeth", 5, 70, 88, "#4a6074");
-  teeth("cTeeth", 12, 62, 74, "#8a4a28");
+  gearTeeth("#gearA", 16, 70, 62, 14);
+  gearTeeth("#gearB", 12, 60, 52, 12);
+  gearTeeth("#gearC", 14, 66, 58, 13);
 
-  const tape = document.getElementById("tapeMarks");
-  let ticks = "";
-  for (let i = 0; i < 24; i++) {
-    const x = 48 + i * 34;
-    ticks += `<rect x="${x}" y="412" width="22" height="16" fill="#d4c4a0" opacity=".35"/>`;
-    ticks += `<text x="${x + 2}" y="424">${i < 12 ? "W" : "P"}</text>`;
+  // slow opposite rotations (meshed look)
+  let t = 0;
+  function spin() {
+    t += 0.35;
+    document.querySelector("#gearA .teeth").setAttribute("transform", "rotate(" + t + ")");
+    document.querySelector("#gearB .teeth").setAttribute("transform", "rotate(" + (-t * (16/12)) + ")");
+    document.querySelector("#gearC .teeth").setAttribute("transform", "rotate(" + (t * (16/14)) + ")");
+    requestAnimationFrame(spin);
   }
-  tape.innerHTML = ticks;
+  requestAnimationFrame(spin);
 
-  const cellSpec = [
-    ["t0", "Cond × Banks × S0–S1", "H II"],
-    ["t1", "Rel × Rapids × S2", "H"],
-    ["t2", "Traj × Locate · LOCK/RELEASE", "H"],
-    ["t3", "window × DELTA/CROSS × force", "H X"],
-    ["t4", "Imp × OBS ground × R", "I"],
-    ["t5", "After × Rebuild × Act VI", "H"],
-    ["t6", "Cond' × Banks' × PFC'", "H X"]
-  ];
-  const cells = document.getElementById("cells");
-  cells.innerHTML = cellSpec.map((c, i) => {
-    const x = 30 + i * 124;
-    return `<g class="gear-hit" data-id="${c[0]}" transform="translate(${x} 500)">
-      <rect width="116" height="52" rx="3" fill="#16130f" stroke="#3a3228"/>
-      <text x="8" y="18" fill="#c4a35a" font-size="11">${c[0]}</text>
-      <text x="8" y="34" fill="#8a8070" font-size="9">${c[1].slice(0, 22)}</text>
-      <text x="8" y="46" fill="#6e8aa8" font-size="8">${c[2]}</text>
-    </g>`;
-  }).join("");
+  const CONTRACTS = {
+    axle: {
+      title: "AXLE — shared deadbolt",
+      body:
+`MESH: Reality → {A,B,C}   (scale: axle)
+INPUTS: constraint-bearing world
+OUTPUTS: common deadbolt for all three trains
+PRECONDITIONS: none (prior to local compile)
+EFFECTS: binds structure-only transfer; forbids meaning cross
+INVARIANTS:
+  Reality constrains
+  Only structure crosses minds
+  Push without orientation fails
+  Loud moment ≠ end of event
+  Failure often = place/timing
+BOUNDARY STAMP: [I] kin
+HANDS CITE: Rule Zero / governing rule (graphics B12 C12 D)
+SHADOW CITE: hologram § Axle
+HISTORY CITE: pass1 ancestry 26 Aug {A,B,C}
+DELTA vs HOLOGRAM: confirms
+IF CONFLICT: Hands win`
+    },
+    A: {
+      title: "GEAR A — HCC-A compile train",
+      body:
+`MESH: R→I→RIC∥PFC→C→L→M→E→ISL→B→R   (scale: A)
+INPUTS: Interface signals from Reality
+OUTPUTS: Behavior into Reality; Act VI templates into next PFC
+PRECONDITIONS: dual channel parallel (RIC∥PFC escapement)
+EFFECTS: local story/force/self; never transmits meaning
+INVARIANTS: structure crosses; meaning local; loop S0..S7
+FAILURE MODES: PFC-dominant lock; ledger merge/delete treated as Lace write
+BOUNDARY STAMP: gears mix [II] RIC | [H] E/ISL | [X] L-merge/M-sense/PFC-as-Star
+HANDS CITE: Punch-card arrival (Piece 3); no stored meaning (Piece 14)
+SHADOW CITE: HCC-A spec
+HISTORY CITE: pass2 D08 fidelity audit repairs are [X]
+DELTA vs HOLOGRAM: confirms
+NOTE: A alone is blind to joint crossing + time window`
+    },
+    B: {
+      title: "GEAR B — Coffee Cup fall train",
+      body:
+`MESH: Cond→Rel→Traj→Imp→After→Cond'   (scale: B)
+INPUTS: one event unfolding (empty-cup stake removal)
+OUTPUTS: recirculating conditions / scripts
+PRECONDITIONS: attention not escaped into pure stakes-argument
+EFFECTS: places causality across five teeth
+INVARIANTS: Release initiating not decisive; Traj mechanical; After causal
+FAILURE MODES: skip Cond; over-Rel; skip Traj; miss Imp; skip After
+BOUNDARY STAMP: Imp [I] | Cond/Rel/Traj/After [H] | After-as-mutate-WORD [X]
+HANDS CITE: Impact = ground truth kin; no rewrite i (Rule Zero)
+SHADOW CITE: Coffee Cup
+HISTORY CITE: none required
+DELTA vs HOLOGRAM: confirms
+NOTE: B alone is blind to knobs + repair protocol`
+    },
+    C: {
+      title: "GEAR C — Water / Proof crossing train",
+      body:
+`MESH: Banks→Rapids→Delta→Cross→Rebuild→Banks'   (scale: C)
+       + Locate/Anchor/Pair/Unknowns/Reject
+INPUTS: conversational heat / blockage
+OUTPUTS: route to Anchor or Reject; shared OBS pair when possible
+PRECONDITIONS: none for Locate; Crossing needs OBS pair + UNK list
+EFFECTS: decides whether understanding is possible yet (not who is right)
+INVARIANTS: loud ≠ transferable; if can't point, can't push
+FAILURE MODES: INVALID heat recursion; false progress; mirror lock
+BOUNDARY STAMP: protocol [H] | river draw [III] | OBS/DELTA as Lace rows [X]
+                Anchor as emission [GAP] unfilled
+HANDS CITE: Graphic D WORD/POINTER only; emission [GAP]
+SHADOW CITE: Where the Water Is Loud + Dual Proofing
+HISTORY CITE: pass1 — old OBS labels not row types
+DELTA vs HOLOGRAM: confirms
+REPAIR: "We're in the rapids. Pick one pointable thing (OBS)…"
+NOTE: C alone is blind to full local stack + pre-release field`
+    },
+    AB: {
+      title: "MESH A×B — compile × fall time",
+      body:
+`MESH: A ↔ B   (scale: A×B×C co-presence)
+INPUTS: event stage (B) gates which A subsystem is diagnostic
+OUTPUTS: phased compile read (priors @ Cond; M+E @ Traj; Act VI @ After)
+PRECONDITIONS: same axle
+EFFECTS: B.After ≡ A.Act VI → next PFC
+INVARIANTS: Aftermath recirculation = priors recursion
+FAILURE MODES: single-tooth collapse mis-phases A
+BOUNDARY STAMP: [H] recirculation | metaphor growth [I] | mutate WORD [X]
+HANDS CITE: append-only growth ≠ story rewrite
+SHADOW CITE: hologram morphism B→A
+HISTORY CITE: none
+DELTA vs HOLOGRAM: confirms`
+    },
+    BC: {
+      title: "MESH B×C — fall window × crossing",
+      body:
+`MESH: B.Traj ↔ C.Locate/Anchor   (scale: A×B×C ; time: t2)
+INPUTS: shrinking control window + Rapids heat
+OUTPUTS: manual escapement release OR window burn
+PRECONDITIONS: contact still exists (pre-Impact)
+EFFECTS: only explicit re-entry when A×A locked in Rapids
+INVARIANTS: repair belongs in Trajectory, not after door closed
+FAILURE MODES: push without OBS; over-privilege Release as fate
+BOUNDARY STAMP: escapement [H] | ≠ POINTER emission [GAP]
+HANDS CITE: emission still sealed
+SHADOW CITE: hologram § Escapement; Water repair sentence
+HISTORY CITE: pass2 — contact rules cannot supply emission
+DELTA vs HOLOGRAM: confirms`
+    },
+    CA: {
+      title: "MESH C×A — crossing × two compiles",
+      body:
+`MESH: C states ↔ A×A   (scale: A×B×C)
+INPUTS: two local compiles (separate RIC/PFC)
+OUTPUTS: Banks / Rapids / Delta / Cross / Rebuild per mind pair
+PRECONDITIONS: structure may cross; meaning may not
+EFFECTS: shared OBS is structure; each M/E/ISL stays local
+INVARIANTS: HCC-A "only structure crosses" ≡ Water pointability
+FAILURE MODES: meaning-transfer fantasy; mirror "can't speak here"
+BOUNDARY STAMP: [H] | meaning-as-stored-sense [X]
+HANDS CITE: Piece 14 no stored meaning
+SHADOW CITE: hologram morphism C→A
+HISTORY CITE: pass1
+DELTA vs HOLOGRAM: confirms`
+    },
+    t0: {
+      title: "t0 — Conditions / Banks / S0–S1",
+      body:
+`MESH: B.Cond × C.Banks × A.S0–S1   (time: t0)
+CELL STAMP: [H]|[II]
+CONTRACT: field before motion; separate OBS inventories; RIC∥PFC intake
+HANDS CITE: loaded arrival context kin — not entry type
+SHADOW CITE: Cup Stage 1; Water Banks
+X FORBID: Cond as array row`
+    },
+    t1: {
+      title: "t1 — Release / Rapids entry / S2 edge",
+      body:
+`MESH: B.Rel × C.Rapids↓ × A.S2   (time: t1)
+CELL STAMP: [H] (Compiler≠Core op)
+CONTRACT: initiation; pressure forces talk; ledger update starts
+HANDS CITE: not POINTER emission trigger
+SHADOW CITE: Cup Release; Water Rapids
+X FORBID: Rel as emission rule`
+    },
+    t2: {
+      title: "t2 — Trajectory / Locate* / M+E  [*escapement]",
+      body:
+`MESH: B.Traj × C.Locate/Anchor × A.S3–S4   (time: t2)
+CELL STAMP: [H] escapement
+CONTRACT: window shrinks; repair tooth here; force in flight
+HANDS CITE: emission [GAP] — do not fill from Anchor
+SHADOW CITE: Cup Trajectory; Water Locate; hologram escapement
+STEWARD: if locked in Rapids without OBS, utter repair sentence`
+    },
+    t3: {
+      title: "t3 — Delta / Crossing setup",
+      body:
+`MESH: B.window × C.Delta/Cross × A.force   (time: t3)
+CELL STAMP: [H]
+CONTRACT: shared pointable forming; joint talk ≠ Core write
+X FORBID: DELTA as edge table / graph DB`
+    },
+    t4: {
+      title: "t4 — Impact / grounded OBS / Reality",
+      body:
+`MESH: B.Imp × C.OBS ground × A.Reality→L   (time: t4)
+CELL STAMP: [I] kin
+CONTRACT: ground truth; what reality produced
+HANDS CITE: constraint-bearing; no float without Impact`
+    },
+    t5: {
+      title: "t5 — Aftermath / Rebuild / Act VI",
+      body:
+`MESH: B.After × C.S4 Rebuild × A.Act VI   (time: t5)
+CELL STAMP: [H]
+CONTRACT: master recursion fold — scripts write next start
+X FORBID: Aftermath as mutate WORD @ i (Rowlands stake)`
+    },
+    t6: {
+      title: "t6 — next Cond / Banks / PFC",
+      body:
+`MESH: Cond' × Banks' × PFC'   (time: t6)
+CELL STAMP: [H] | PFC'-as-Star [X]
+CONTRACT: tick_{n+1}.start = tick_n.(After ≡ Rebuild ≡ ActVI)
+HANDS CITE: Lace grows by append — holder priors are not the strand`
+    },
+    Xaudit: {
+      title: "[X] audit — must die at the wall",
+      body:
+`EXPLICIT [X] (from agent brief walk 7):
+  L merge/delete          → Rule Zero breach if Lace write
+  M as word sense         → Piece 14 breach
+  PFC as Star table       → Graphic D / Piece 7 breach
+  OBS/DELTA as array rows → only WORD/POINTER drawn
+  Anchor as emission      → [GAP] — do not invent
+  After as rewrite i      → Rowlands FORBID + Rule Zero
 
-  const C = {
-    "train-a": {
-      title: "Train A — compile clock (HCC-A)",
-      meta: "scale A · case gear · output shaft is Behavior only",
-      stamps: ["H", "II", "X"],
-      body: [
-        ["INPUTS / OUTPUTS", "R constrains. I converts to signals. RIC keeps structure. PFC colors with priors. Both shafts must turn. C writes private ledger L. M/E/ISL stay boxed. Only B leaves the case."],
-        ["PRECONDITIONS / EFFECTS", "Dual shaft 1:1. PFC-only is a locked train. Internals may merge/delete their own oil. That oil is not Lace."],
-        ["INVARIANTS", "Governing rule ≠ A.C. Meaning does not cross minds. Star is not a self."],
-        ["FAILURE", "PFC as Star table. L merge as array op. M as word sense. B treated as POINTER emission."],
-        ["HANDS", "Graphic D only store. Piece 2 arrive / route / continue. Piece 14 no stored meaning. Xiao FORBID intern."],
-        ["DELTA", "Confirms hologram. Emission unfilled."]
-      ]
-    },
-    "train-b": {
-      title: "Train B — phase clock (Coffee Cup)",
-      meta: "scale B · 5-tooth wheel · tooth 3 is the impulse window",
-      stamps: ["H", "II", "I", "X"],
-      body: [
-        ["TEETH", "1 Conditions — field before motion. 2 Release — initiation, not emission. 3 Trajectory — only live work; more cord, not less. 4 Impact — floor / Graphic D as it is [I]. 5 Aftermath — scripts for next Cond; never files tooth 4."],
-        ["RATIO", "5:5 wrap. Tooth 5 drives next tooth 1. Recirculation ≠ Reidemeister."],
-        ["FAILURE", "Skip Cond. Fate at Rel. Skip Traj. After as rewrite WORD @ i."],
-        ["HANDS", "Piece 1 history only grows. Rowlands FORBID rewrite. Kauffman hitch = later grab as more cord."]
-      ]
-    },
-    "train-c": {
-      title: "Train C — crossing / clutch (Water)",
-      meta: "scale C · pallet 0 or 1 drop · talk types only",
-      stamps: ["H", "III", "X", "GAP"],
-      body: [
-        ["FSM", "S0 Banks → S1 Rapids → S2 Delta → S3 Crossing → S4 Rebuild → S0'."],
-        ["BRIDGE", "Locate / Anchor / Pair / Unknowns / Reject. Repair: we're in the rapids — pick one pointable thing."],
-        ["INVARIANTS", "Pressure ≠ transfer. If you cannot point at it you cannot push on it. OBS is not POINTER."],
-        ["FAILURE", "OBS/DELTA as array rows. Anchor as emission. Two laces."],
-        ["GAP", "Water OBS format, INVALID list, UNK budget do not fill Hands pointer-emission."]
-      ]
-    },
-    "a-b": {
-      title: "Mesh A → B",
-      meta: "Behavior into the five-tooth wheel",
-      stamps: ["H", "X"],
-      body: [
-        ["INPUTS / OUTPUTS", "A.B (observable act) impulses B at Rel–Traj."],
-        ["STRIP", "Treat Behavior as a rewrite of old rows."],
-        ["STAMP", "Holder act in time [H]. Rewrite [X]."]
-      ]
-    },
-    "b-c": {
-      title: "Mesh B → C",
-      meta: "Work window through the clutch",
-      stamps: ["H", "X"],
-      body: [
-        ["INPUTS / OUTPUTS", "B.Traj (tooth 3) may pass only if C is meshed."],
-        ["STRIP", "Work in rapids or after impact."],
-        ["STAMP", "No mesh, no torque."]
-      ]
-    },
-    "c-tape": {
-      title: "Mesh C → tape (Graphic D)",
-      meta: "Escapement onto the workpiece",
-      stamps: ["I", "GAP", "X"],
-      body: [
-        ["LAW", "0 or 1 legal append per attempt. Grind is not a tick. Cluster may change only if tape grew."],
-        ["NOT THIS MESH", "When a POINTER section is cut. That remains [GAP]."],
-        ["FORBIDDEN", "OBS node stored as POINTER. Second array. object.relations[]."]
-      ]
-    },
-    "escapement": {
-      title: "Escapement — Rapids LOCK / Locate RELEASE",
-      meta: "scale A×B×C · time t2",
-      stamps: ["H", "GAP", "X"],
-      body: [
-        ["LOCK", "A×A in rapids, no OBS, trajectory window burning. Power on, teeth not engaged."],
-        ["RELEASE", "Locate → Anchor(OBS) → DELTA → CROSS. Structure shared. Meaning stays local in each A."],
-        ["INVARIANT", "Only manual escapement when A×A locks. Do not emit to soothe the lock."],
-        ["HISTORY", "Fidelity mirror, BFS, C-machine counts were grind counted as a tick."]
-      ]
-    },
-    t0: { title: "Cell t0", meta: "Cond × Banks × S0–S1", stamps: ["H", "II"], body: [["", "Loaded field. Separate inventories. Dual-shaft intake. Nothing has fallen. Arrival-kin only."]] },
-    t1: { title: "Cell t1", meta: "Rel × Rapids × S2", stamps: ["H"], body: [["", "Release. Pressure rising. Local compile begins. A.C is not the Lace governing rule."]] },
-    t2: { title: "Cell t2 — escapement cell", meta: "Traj × Locate × S3–S4", stamps: ["H", "X"], body: [["", "Window burning. LOCK if no OBS. RELEASE if Locate then Anchor. M boxed [X], E holder [H]."]] },
-    t3: { title: "Cell t3", meta: "window × DELTA/CROSS × force", stamps: ["H", "X"], body: [["", "Joint talk may compute. Does not write Graphic D types. OBS→rows is Hands breach."]] },
-    t4: { title: "Cell t4 — ground", meta: "Imp × OBS ground × R", stamps: ["I", "X"], body: [["", "Three presentations of constraint. Chart is not the strand. Ground-OBS is not POINTER."]] },
-    t5: { title: "Cell t5 — master fold in", meta: "After × Rebuild × Act VI", stamps: ["H", "X"], body: [["", "Scripts + banks reform + world-rule. Recirculation [H]. Mutate WORD [X]."]] },
-    t6: { title: "Cell t6 — next start", meta: "Cond' × Banks' × PFC'", stamps: ["H", "X"], body: [["", "tick_n+1.start = tick_n.(After ≡ Rebuild ≡ ActVI). PFC' knobs [H]. PFC' as Star table [X]."]] },
-    fold: {
-      title: "Master recursion (1)",
-      meta: "After ≡ Rebuild ≡ Act VI → next start",
-      stamps: ["H", "I", "X"],
-      body: [
-        ["THREE STAMPS", "[H] holder recirculation. Metaphor [I] more world / maybe later more cord. [X] mutate WORD @ i."],
-        ["HANDS", "Piece 1 extend-only. Kauffman hitch = later grab, not retie. FORBID closed loop."]
-      ]
+GREAT CONTRACT WALL:
+  PASS kin-read [I]/[II]/[III]
+  STOP [X]
+  Shadow diagnoses HOLDER — does not enter Core as rows`
     }
   };
 
-  const dock = document.getElementById("dock");
-  function stampsHtml(list) {
-    return (list || []).map(s => `<span class="stamp s-${s}">[${s}]</span>`).join("");
-  }
-  function show(id) {
-    const d = C[id] || C.fold;
-    dock.innerHTML = `<h2>${d.title}</h2>
-      <p class="meta">${d.meta || ""}</p>
-      <div>${stampsHtml(d.stamps)}</div>
-      ${(d.body || []).map(b => `<div class="block">${b[0] ? `<h3>${b[0]}</h3>` : ""}<p>${b[1]}</p></div>`).join("")}
-      <div class="block hint">Source: docs/shadow-clock-gear-contracts.md · hologram · Hands graphics A–D. Not Core.</div>`;
-    document.querySelectorAll(".hot").forEach(n => n.classList.remove("hot"));
-    document.querySelectorAll(`[data-id="${id}"]`).forEach(n => n.classList.add("hot"));
+  const titleEl = document.getElementById("panelTitle");
+  const bodyEl = document.getElementById("contract");
+  const chips = document.getElementById("chips");
+
+  function show(key) {
+    const c = CONTRACTS[key];
+    if (!c) return;
+    titleEl.textContent = c.title;
+    bodyEl.textContent = c.body;
+    document.querySelectorAll("button.chip").forEach(b => {
+      b.classList.toggle("active", b.dataset.key === key);
+    });
+    document.querySelectorAll(".gear").forEach(g => g.classList.remove("gear-hot"));
+    if (key === "A") document.getElementById("gearA").classList.add("gear-hot");
+    if (key === "B") document.getElementById("gearB").classList.add("gear-hot");
+    if (key === "C") document.getElementById("gearC").classList.add("gear-hot");
   }
 
-  document.querySelectorAll("[data-id]").forEach(el => {
-    el.addEventListener("click", () => show(el.getAttribute("data-id")));
+  const chipKeys = [
+    ["axle","Axle"],["A","Gear A"],["B","Gear B"],["C","Gear C"],
+    ["AB","A×B"],["BC","B×C"],["CA","C×A"],
+    ["t0","t0"],["t1","t1"],["t2","t2*"],["t3","t3"],["t4","t4"],["t5","t5"],["t6","t6"],
+    ["Xaudit","[X] audit"]
+  ];
+  chipKeys.forEach(([k, label]) => {
+    const b = document.createElement("button");
+    b.className = "chip";
+    b.textContent = label;
+    b.dataset.key = k;
+    b.onclick = () => show(k);
+    chips.appendChild(b);
   });
 
-  let t = 0;
-  const labels = cellSpec.map(c => c[0] + " · " + c[1]);
-  document.getElementById("btnTick").addEventListener("click", () => {
-    t = (t + 1) % 7;
-    document.getElementById("tickLabel").textContent = labels[t];
-    show("t" + t);
-    const a = document.querySelector(".spinA");
-    const b = document.querySelector(".spinB");
-    const c = document.querySelector(".spinC");
-    const ta = (t * 20) % 360, tb = (t * -72) % 360, tc = (t * 30) % 360;
-    a.style.transform = `rotate(${ta}deg)`;
-    b.style.transform = `rotate(${tb}deg)`;
-    c.style.transform = `rotate(${tc}deg)`;
-    a.style.transformOrigin = "0 0";
-    b.style.transformOrigin = "0 0";
-    c.style.transformOrigin = "0 0";
-    a.style.transition = b.style.transition = c.style.transition = "transform .6s ease";
+  document.getElementById("gearA").addEventListener("click", () => show("A"));
+  document.getElementById("gearB").addEventListener("click", () => show("B"));
+  document.getElementById("gearC").addEventListener("click", () => show("C"));
+  document.getElementById("axle").addEventListener("click", () => show("axle"));
+  document.getElementById("meshAB").addEventListener("click", () => show("AB"));
+  document.getElementById("meshBC").addEventListener("click", () => show("BC"));
+  document.getElementById("meshCA").addEventListener("click", () => show("CA"));
+  document.getElementById("labAB").addEventListener("click", () => show("AB"));
+  document.getElementById("labBC").addEventListener("click", () => show("BC"));
+  document.getElementById("labCA").addEventListener("click", () => show("CA"));
+
+  // tick hit targets
+  const ticks = document.getElementById("ticks");
+  const xs = [40,160,290,430,530,640,780];
+  ["t0","t1","t2","t3","t4","t5","t6"].forEach((k, i) => {
+    const r = document.createElementNS("http://www.w3.org/2000/svg", "rect");
+    r.setAttribute("x", String(xs[i] - 4));
+    r.setAttribute("y", "575");
+    r.setAttribute("width", "100");
+    r.setAttribute("height", "36");
+    r.setAttribute("fill", "transparent");
+    r.style.cursor = "pointer";
+    r.addEventListener("click", () => show(k));
+    ticks.appendChild(r);
   });
 
-  show("escapement");
+  show("axle");
 })();
 </script>
 </body>
