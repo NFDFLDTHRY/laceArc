@@ -50,3 +50,17 @@ Related prior: [downstream-audit.md](downstream-audit.md) (do not erase; re-chec
 - fix: AGENTS.md (Job line)
 - cites: docs/pointer-emission.md; docs/pointer-emission-prompt.md; README.md (pointer-emission row); AGENTS.md (Job; If asked to implement)
 - emission contact: silenced → [GAP]
+
+### tick 2026-09-18 · station A7 · tip 6603c1bf19c85c38f5271c38ded76b283835e957
+- finding: Tree doors match across crate-map + branch-contracts: strand word pointer route view_star view_proj core. No arrival/, emit_pointer/, utils/ as doors. Birth order serial: strand → word → pointer → route → view_star → view_proj → core. pointer/ TYPE-only; emission [GAP]; no emit stub as Core. Both docs PLAN / no src/ / gate = human-accepted pointer-emission.md (still DRAFT). Prompt product paths point at filled files that exist. README links both products + both prompts. No src/ or Cargo.toml on disk. Shadow gearing (trainA / A/B/C HTML) explicitly excluded from core/. RESYNC STATUS FIRED (TIP_AT_FIRE 490473e); live tip origin/main = this tip. Cites AGENTS Implementation Law + staking/law-why IMPLEMENTATION LAW (no_std; one branch one task; acceptance gate).
+- kind: ok
+- fix: none (coherence of doors/order/PLAN/[GAP] holds)
+- cites: docs/rust-nostd-crate-map.md (A–G,X); docs/rust-nostd-branch-contracts.md (A–X); docs/rust-nostd-crate-map-prompt.md; docs/rust-nostd-branch-contracts-prompt.md; README.md (rust-nostd rows); AGENTS.md (Implementation Law); docs/staking-the-workspace.md; docs/law-why-these-documents.md
+- emission contact: silenced → [GAP]
+
+### tick 2026-09-18 · station A7 · tip 6603c1bf19c85c38f5271c38ded76b283835e957
+- finding: Stale steward note in crate-map claimed docs/agentscope-clipboard.md “untracked”; file is tracked on main. Stale ABSENT notes in branch-contracts for docs/pointer-emission-prompt.md (source-diff #1, PAGE G “currently ABSENT”, PAGE H dangling-path / absent-at-revision) while outline is present on live tip. PAGE C allowed: stale untracked/absent notes when file is on main. Did not fill emission [GAP]s; did not create src/ or Cargo.toml; did not change KEEP/FORBID or acceptance gate.
+- kind: drift
+- fix: docs/rust-nostd-crate-map.md (steward untracked→tracked); docs/rust-nostd-branch-contracts.md (outline PRESENT on live tip; linkable; outline≠acceptance)
+- cites: docs/rust-nostd-crate-map.md; docs/rust-nostd-branch-contracts.md; docs/agentscope-clipboard.md; docs/pointer-emission-prompt.md; docs/pointer-emission.md (still DRAFT)
+- emission contact: none

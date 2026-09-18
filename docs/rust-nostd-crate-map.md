@@ -231,6 +231,6 @@ fetch/ff main → shoe → graphics A–D → manifest → IMPLEMENTATION LAW
 - `pointer/` after the gate is a type crate. It is not `docs/pointer-emission.md`.
 - Arrival is a surface in the manifest. A crate that owned tokens would be Xiao intern by another door.
 - This file does not create directories, Cargo.toml, or `src/`.
-- `docs/agentscope-clipboard.md` is a separate untracked file and is not this map.
+- `docs/agentscope-clipboard.md` is a separate tracked clipboard (AgentScope hold) and is not this map.
 
 Shoe in hands, or no.

@@ -91,9 +91,10 @@ anti-import boundaries; it does not reopen the five-stake mapping.
 
 ### Source differences that remain visible
 
-1. **Missing requested outline.** `docs/pointer-emission-prompt.md` is absent
-   from the inspected main tree. Page H points to that required destination
-   without pretending the file exists or authoring it in this task.
+1. **Outline path (baseline vs live tip).** At the inspected baseline tip
+   above, `docs/pointer-emission-prompt.md` was absent. On live `origin/main`
+   the outline file now exists (tracked). Page H still treats the outline as
+   distinct from the acceptance gate: outline ≠ contract; existence ≠ acceptance.
 2. **Target-kind conflict.** The current `pointer-emission.md` section 4 asks
    whether POINTER-to-POINTER targeting is general or merely illustrative.
    Graphic D3 says later entries can reference words or other pointers;
@@ -714,7 +715,7 @@ do not smuggle the change into a README or signature.
 
 ```text
 REQUIRED OUTLINE: docs/pointer-emission-prompt.md
-        currently ABSENT; this task does not create it
+        currently PRESENT on live tip (outline only; not acceptance)
                             |
                             v
 POINTER CONTRACT: docs/pointer-emission.md
@@ -783,12 +784,11 @@ or a grant of permission.
 | Finite resources, layout composition, failure/durability and concurrent arrival ordering | Future proof obligations; manifest open questions | Unsettled premises; no allocator, persistence or concurrency scheme selected |
 
 Required outline destination:
-`docs/pointer-emission-prompt.md` — written here as a path, deliberately not
-as a link, because the target does not resolve and a dangling link fails
-`.claude/hooks/check-docs.sh`.
-**It is absent at the inspected revision.** The user requires that outline
-before any planned branch directory becomes real. Pointing to its path
-does not satisfy that requirement. Its absence is not permission to put
+[`docs/pointer-emission-prompt.md`](pointer-emission-prompt.md) — present on
+live tip (was absent at the inspected baseline revision above). The outline
+must exist before any planned branch directory becomes real; it is **not**
+the acceptance gate and does not fill emission answers. Pointing to its path
+does not open Implementation Law. Its presence is not permission to put
 answers in these contracts.
 
 The separate acceptance gate is
