@@ -73,7 +73,7 @@ Law: diagram ≠ rope · hitch kin · grab ≠ emission · Hands win · `[GAP]` 
   ============================================================
   Lace Core is NOT on this board.
   See: docs/systems-manifest-ascii.md
-  POINTER emission Phi = [GAP]   (Hands silent; this diagram does not fill it)
+  emission Phi = [GAP]           (Hands silent; this diagram does not fill it)
   ============================================================
 ```
 
