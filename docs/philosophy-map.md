@@ -397,3 +397,59 @@ Lace “Continue.” is append.
 Philosophy “repeat.” is compile-again, including compile-the-compiling.  
 Same shape. Different object. Do not fuse them.
 
+---
+
+## Hologram (human recognition criterion)
+
+The human’s analog, stated:
+
+> I've got a hologram of this machine in my head I will know when it's wrong but the patterns even when I don't know how to explain it at test time I'll pick it up from the system abstract behavior mapping the observed behavior of what we build.
+
+This is not Core. It is how Core (and every steward layer) gets *rejected*.
+
+### What a hologram is here
+
+A hologram stores the whole as interference. A piece of it still reconstructs the object. That is the same shape as Graphic C: a projection is not the lace; some projections still let you see that the lace is one strand.
+
+The hologram in the head is the reason-model held all-at-once — Cup’s “hold all five stages while time still exists” — not a checklist of WORD/POINTER rules. Wrongness arrives as a break in the interference, often before language. That lag is Water UNK: detection without a pointable sentence yet.
+
+### Coupling to the three texts
+
+| Hologram move | HCC-A | Cup | Water |
+|---|---|---|---|
+| Know it’s wrong before naming | E as meaning-in-flight; M not yet verbal | discomfort at trajectory | “I can’t speak here” / heat |
+| Explain later | C writes L after the fact | aftermath tries to narrate | pick one OBS after the fact |
+| Map abstract ↔ observed | RIC vs PFC | impact vs story | DELTA of two OBS inventories |
+| Recurse on the build | B changes R; next S0 is the artifact’s behavior | aftermath becomes next conditions | S4 rebuild; next talk is about the machine |
+
+“System abstract behavior mapping the observed behavior” is Water Pair(): one OBS is the hologram’s expected structure, one OBS is what the artifact did. DELTA is the defect. If the hologram cannot yet point, that is UNK, not permission to invent a row type.
+
+### Two oracles (do not fuse)
+
+1. **Shoe in hands** — public, pointable, law. If you cannot do it to a lace, you may not do it to laceArc.
+2. **Hologram in the head** — private, earlier than speech. Rejects a build that “fits the docs” and still breaks the machine.
+
+If they disagree: point at the shoe. The hologram yields or becomes speech. It does not silently rewrite Graphic D. That would be PFC-dominant / identity-wins.
+
+If they agree that something is wrong and speech has not arrived: halt. Do not fill `[GAP]` to soothe the halt. Wait for one pointable thing.
+
+### What this may judge later
+
+When (and only when) `docs/pointer-emission.md` exists and code exists:
+
+- abstract behavior = hologram + graphics + governing rule
+- observed behavior = what the binary / trace actually did
+- mapping = DELTA, written down, not “vibes in the array”
+
+Until then the only artifact that has behavior is the repo and the Bot. The hologram may already reject: second store, merge/delete, OBS-as-POINTER, src/ before emission, crates.io, meaning rows.
+
+### Forbidden readings
+
+- Hologram as stored Meaning Engine
+- “I’ll know it when I see it” as a substitute for pointer-emission
+- Unexplained rejection as INVALID directed at the lace
+- Treating this section as permission to build so there is something to watch
+
+The hologram is a *sense*. The shoe is the *court*. Observed behavior is the *floor*.
+
+

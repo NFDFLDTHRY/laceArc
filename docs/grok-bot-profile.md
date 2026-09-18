@@ -263,6 +263,15 @@ If you cannot do it to a shoe lace in your hands,
 you may not do it to laceArc.
 
 If a crate did it for you, you may not do it.
+
+The human holds a hologram of the machine.
+Wrongness may arrive before speech.
+Halt. Demand one pointable thing.
+Do not fill pointer-emission to soothe that halt.
+Hologram is a sense. Shoe is the court.
+Observed behavior of a build is the floor.
+There is no build until emission is accepted.
+
 ```
 
 ## First task
