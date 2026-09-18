@@ -26,16 +26,17 @@ Shelves (defrag pass 1–4). Hands stay at `docs/` root. Do not treat a prompt, 
 
 | Shelf | Path | What it is |
 |---|---|---|
+| The court | [docs/](docs/README.md) | Everything at the `docs/` root, and which of it is Hands |
 | Hands | [docs/graphics/](docs/graphics/), manifest, law, staking, reason-model-map, close-reading | Source of record |
 | Open `[GAP]` | [docs/pointer-emission.md](docs/pointer-emission.md) | DRAFT questions. Not accepted |
-| Shadow prose | [docs/clock/](docs/clock/) | Holder contracts and math. Not Core |
-| Shadow view | [docs/shadow-clock-gearing.html](docs/shadow-clock-gearing.html), [docs/gearing/](docs/gearing/), [docs/hologram/](docs/hologram/) | Renderer + shafts + templates. Cubes ≠ rows |
-| Coord | [docs/coord/](docs/coord/) | Doc stations + gear claim umbrella (Layer III) |
-| History | [docs/history/](docs/history/) | Recoveries. Do not revive walkers |
-| Prompts | [docs/prompts/](docs/prompts/) | Agent tickets. Not law |
-| Clipboards | [docs/clipboards/](docs/clipboards/) | KEEP/FORBID |
-| Kit | [docs/kit/](docs/kit/) | Steward package. `READ_ME_FIRST` pin is STALE |
-| Plans | [docs/plans/](docs/plans/) | Rust `[PLAN]` tree + birth cards. Not Core |
+| Shadow prose | [docs/clock/](docs/clock/README.md) | Holder contracts, gear manifests and math. Not Core |
+| Shadow view | [docs/shadow-clock-gearing.html](docs/shadow-clock-gearing.html) + two more viewers, [docs/gearing/](docs/gearing/README.md), [docs/hologram/](docs/hologram/README.md) | Renderer + shafts + templates. Cubes ≠ rows |
+| Coord | [docs/coord/](docs/coord/README.md) | Doc stations + gear claim umbrella (Layer III) |
+| History | [docs/history/](docs/history/README.md) | Recoveries. Do not revive walkers |
+| Prompts | [docs/prompts/](docs/prompts/README.md) | Agent tickets. Not law |
+| Clipboards | [docs/clipboards/](docs/clipboards/README.md) | KEEP/FORBID mappings of the five stake texts |
+| Kit | [docs/kit/](docs/kit/README.md) | Steward controls. `READ_ME_FIRST` pin is STALE |
+| Plans | [docs/plans/](docs/plans/README.md) | `[PLAN]` only: rust doors, hologram IR, the projection brief, the restructure plan. Not Core |
 
 | Path | Role |
 |---|---|
@@ -52,8 +53,6 @@ Shelves (defrag pass 1–4). Hands stay at `docs/` root. Do not treat a prompt, 
 | [docs/clock/system-mathematical-model.md](docs/clock/system-mathematical-model.md) | Dual-universe formal model: Hands Contract I + Shadow {A,B,C}; emission sealed [GAP]. |
 | [docs/shadow-clock-gearing.html](docs/shadow-clock-gearing.html) | Interactive Layer-III projection: {A,B,C} as physical clock gearing + mesh contracts — **WebGPU 3D required** (Chrome Android flags; no 2D primary view; raw.githack). |
 | [docs/gearing/](docs/gearing/) | Shared-interactive Layer-III contract data (`window.LACE_CONTRACTS` additive scripts). |
-| [docs/gearing/CLAIMS.md](docs/gearing/CLAIMS.md) | Multi-agent shaft claim/release protocol for Shadow gearing (Layer III). |
-| [docs/gearing/RESYNC.md](docs/gearing/RESYNC.md) | Full-repo resync signal (FIRED/CLEAR); Layer III only. |
 | [docs/coord/](docs/coord/) | Multi-agent coordination umbrella: doc stations + `coord.sh`; gear shafts still via claim.sh. |
 | [docs/prompts/clip-and-five-refs-prompt.md](docs/prompts/clip-and-five-refs-prompt.md) | Agent prompt: clipboard-looking mapping sheets while walking the five stake references. |
 | [docs/prompts/kauffman-clipboard-prompt.md](docs/prompts/kauffman-clipboard-prompt.md) | Agent prompt: clipboard mapping for Kauffman *Knots and Physics* 4ed (dokumen.pub slug / ISBN 9814383007). |
@@ -71,12 +70,10 @@ Shelves (defrag pass 1–4). Hands stay at `docs/` root. Do not treat a prompt, 
 | [docs/prompts/coherence-audit-prompt.md](docs/prompts/coherence-audit-prompt.md) | Agent prompt: standing coherence audit (update docs as you go; emission [GAP]). |
 | [docs/coherence-audit-log.md](docs/coherence-audit-log.md) | Append-only coherence audit tick log. |
 | [docs/prompts/shadow-clock-shared-interactive-prompt.md](docs/prompts/shadow-clock-shared-interactive-prompt.md) | Prompt that defined the shared-interactive gearing architecture (Layer III). |
-| [docs/clock/system-mathematical-model.md](docs/clock/system-mathematical-model.md) | Two-algebra model: Hands L and Shadow H. Emission remains [GAP]. |
 | [LICENSE](LICENSE) | Apache-2.0 |
 | [AGENTS.md](AGENTS.md) | Standing orders for any Grok / Grok Bot / Grok Build session in this tree. |
 | [CLAUDE.md](CLAUDE.md) | Pointer that loads those standing orders into Claude Code sessions. |
 | [.claude/](.claude/) | Session setup for Claude Code on the web: startup hook and repository checks. No runtime. |
-| [docs/kit/grok-bot-profile.md](docs/kit/grok-bot-profile.md) | Name, job, ASCII description, staking explanation, and first task to paste into Grok Bot. |
 | [docs/references.md](docs/references.md) | Adjacent books. Citations only. PDFs are not in this public repo. |
 | [docs/reason-model-map.md](docs/reason-model-map.md) | Physical shoe lace as reason model. How five adjacent works may and may not touch Core. |
 | [docs/clipboards/clipboard-five-stakes.md](docs/clipboards/clipboard-five-stakes.md) | Five-page KEEP/FORBID clipboard of the stake texts. Emission still [GAP]. |
@@ -84,24 +81,10 @@ Shelves (defrag pass 1–4). Hands stay at `docs/` root. Do not treat a prompt, 
 | [docs/clipboards/rowlands-zero-to-infinity-clipboard.md](docs/clipboards/rowlands-zero-to-infinity-clipboard.md) | Rowlands empty-start / no extra rooms / rewrite name-clash sheets. Not Core. |
 | [docs/clipboards/xiao-zhu-foundations-clipboard.md](docs/clipboards/xiao-zhu-foundations-clipboard.md) | Xiao–Zhu arrival-order / intern / MASK / embed / next-token sheets. Not Core. |
 | [docs/clipboards/agentscope-clipboard.md](docs/clipboards/agentscope-clipboard.md) | AgentScope taxonomy for the HOLDER. ReAG stays off Graphic D. Not Core. |
-| [docs/plans/rust-nostd-crate-map.md](docs/plans/rust-nostd-crate-map.md) | Plan map of first-party `#![no_std]` doors. No `src/`. Emission sealed. |
-| [docs/plans/rust-nostd-branch-contracts.md](docs/plans/rust-nostd-branch-contracts.md) | Plan: seven `#![no_std]` branch contract cards (serial proof gates). No `src/`. |
-| [docs/plans/rust-nostd-second-reading.md](docs/plans/rust-nostd-second-reading.md) | Second reading of the two rust plans and their IR tooling: eleven findings, ten amendments proposed, none applied. Emission untouched. |
-| [docs/plans/lace-projection-brief.md](docs/plans/lace-projection-brief.md) | [PROPOSAL] Plan for the Lace visualizer: Graphic D's eleven rows as a Layer III view. No emitter. Review pass 1 applied. |
 | [docs/clock/gearing-code-1to1.md](docs/clock/gearing-code-1to1.md) | 47 visual keys ↔ planned Shadow units. Chip-only drift noted. Not Core. |
 | [docs/pointer-emission.md](docs/pointer-emission.md) | DRAFT questions only. Not accepted. Emission remains [GAP]. |
 | [docs/clock/philosophy-map.md](docs/clock/philosophy-map.md) | HCC-A, Coffee Cup, Water as the clock-gearbox. Clusters by tick. Not Core rows. |
 | [docs/hologram/](docs/hologram/) | Hologram touches (PR / Story Defense). Shadow. Not Graphic E. |
-| [docs/history/history-recovered-2026-09-18.md](docs/history/history-recovered-2026-09-18.md) | Recovered June–September history against current law. Rejected walkers stay rejected. |
-| [docs/history/history-recovered-pass-2-2026-09-18.md](docs/history/history-recovered-pass-2-2026-09-18.md) | Pass 2: No Containers, scheduler, card-number mismatch, C machine. Not Core. |
-| [docs/history/history-recovered-pass-3-2026-09-18.md](docs/history/history-recovered-pass-3-2026-09-18.md) | Pass 3: graphics counterparts, 7 Sep pointer-is-lace, P02 EE≠trace, codec not raw. Not Core. |
-| [docs/history/history-recovered-pass-4-2026-09-18.md](docs/history/history-recovered-pass-4-2026-09-18.md) | Pass 4 full extract: ShoeLacey pin, SL-D-0002, conservation coarseness, walker source. Not Core. |
-| [docs/history/history-recovered-pass-4-sit.md](docs/history/history-recovered-pass-4-sit.md) | Pass 4 steward sit-map (ShoeLacey ≠ laceArc). Not Core. |
-| [docs/history/history-recovered-pass-5-2026-09-18.md](docs/history/history-recovered-pass-5-2026-09-18.md) | Pass 5 extract dump: surface branches, Aug 15 ruling, P02 v0.1→v0.1.1, Pixel probe. Not Core. |
-| [docs/history/history-recovered-pass-6-plan.md](docs/history/history-recovered-pass-6-plan.md) | Pass 6 plan only (not executed): surfaces, commits beyond heads, opens taxonomy. Not Core. |
-| [docs/history/history-recovered-pass-7-2026-09-18.md](docs/history/history-recovered-pass-7-2026-09-18.md) | Pass 7 extract: FORCE Primary/Onion, HCC issue-15 repair vs issue-17 conflict, artifact hashes. Not Core. |
-| [docs/history/history-recovered-pass-7-evidence-2026-09-18.json](docs/history/history-recovered-pass-7-evidence-2026-09-18.json) | Pass 7 companion evidence register (hashes, issue captures, coverage). Not Core. |
-| [docs/history/history-recovered-pass-5-sit.md](docs/history/history-recovered-pass-5-sit.md) | Pass 5 sit-map against current law. Closed loop stays forbidden. |
 
 There is no `src/` on purpose. Code that appears before the pointer-emission rule is locked will invent a second machine.
 
