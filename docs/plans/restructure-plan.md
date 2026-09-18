@@ -146,7 +146,7 @@ Run from a clean checkout of the tip named in the status line.
 |---|---|---|
 | 1 Law copies | hash of the text between `IMPLEMENTATION LAW` and `STEWARD TEST` in the four files; `difflib` between them | 3 distinct sizes; agent-control −3 lines vs stake; grok 17 lines differ; READING ORDER 3 hashes / 4 copies |
 | 2 Shelf doors | for each dir with a README, files in that dir whose basename does not appear in it | history 0/10, prompts 0/16, clock 13/26, gearing 10/12, hologram 16/23, root 3/5; no README: `docs/`, `.claude/`, `coord/stations/`, `gearing/claims/`, `plans/fixtures/`, `plans/tools/` |
-| 3 Link graph | every `](target)` in every tracked `.md`, resolved; in-degree and out-degree | hubs: law-why 14, manifest 12, staking 11; islands 26; dead ends 61 |
+| 3 Link graph | every markdown link in every tracked `.md`, resolved to a path; in-degree and out-degree | hubs: law-why 14, manifest 12, staking 11; islands 26; dead ends 61 |
 | 4 Station coverage | `coord.sh which` over `git ls-files` | 151 owned across 18 stations; 10 unowned |
 | 5 Commit mix | `git log --since='8 hours ago' --format=%s`, prefix Claim/Release/Refresh | 44 of 138 |
 | 6 Viewers | `git ls-files '*.html'` + `which` + `grep src=\|fetch(` | 3 viewers, 2 stations, none loads a CDN |
