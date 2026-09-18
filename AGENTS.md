@@ -3,6 +3,7 @@
 You are working in **laceArc**. Load this file as standing orders.
 
 Home: https://github.com/NFDFLDTHRY/laceArc
+Claude Code sessions load this file through `CLAUDE.md`. These orders are the authority; that file is a pointer.
 Source of record: `docs/graphics/` then `docs/systems-manifest.md`.
 There is no `src/` yet. That is intentional.
 
