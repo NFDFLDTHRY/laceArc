@@ -47,6 +47,7 @@ Same rule. Same strand. 3D stars and N-dimensional participation are readings of
 | [docs/history-recovered-2026-09-18.md](docs/history-recovered-2026-09-18.md) | Recovered June–September history against current law. Rejected walkers stay rejected. |
 | [docs/history-recovered-pass-2-2026-09-18.md](docs/history-recovered-pass-2-2026-09-18.md) | Pass 2: No Containers, scheduler, card-number mismatch, C machine. Not Core. |
 | [docs/history-recovered-pass-3-2026-09-18.md](docs/history-recovered-pass-3-2026-09-18.md) | Pass 3: graphics counterparts, 7 Sep pointer-is-lace, P02 EE≠trace, codec not raw. Not Core. |
+| [docs/history-recovered-pass-4-2026-09-18.md](docs/history-recovered-pass-4-2026-09-18.md) | Pass 4: ShoeLacey pin, SL-D-0002, conservation coarseness, walker source. Not Core. |
 
 There is no `src/` on purpose. Code that appears before the pointer-emission rule is locked will invent a second machine.
 

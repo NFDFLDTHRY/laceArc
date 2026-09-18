@@ -6,7 +6,7 @@ Source of record remains `docs/graphics/`.
 The five academic documents remain adjacent. They do not enter Core.
 Three philosophical texts (HCC-A, Coffee Cup, Water/Proofing) are the gearbox. They do not enter Core as rows.
 History extracts do not amend this law and do not revive walkers.
-See `docs/reason-model-map.md`, `docs/philosophy-map.md`, `docs/history-recovered-2026-09-18.md`, `docs/history-recovered-pass-2-2026-09-18.md`, `docs/history-recovered-pass-3-2026-09-18.md`.
+See `docs/reason-model-map.md`, `docs/philosophy-map.md`, `docs/history-recovered-2026-09-18.md`, `docs/history-recovered-pass-2-2026-09-18.md`, `docs/history-recovered-pass-3-2026-09-18.md`, `docs/history-recovered-pass-4-2026-09-18.md`.
 Implementation remains forbidden until `docs/pointer-emission.md` exists.
 When implementation exists, it obeys the IMPLEMENTATION LAW block with no exceptions.
 
@@ -165,6 +165,19 @@ Pass 3 map: docs/history-recovered-pass-3-2026-09-18.md
   Unary POINT vs ref_A/ref_B stays a conflict.
   Emission acceptance still not recovered.
 
+Pass 4 map: docs/history-recovered-pass-4-2026-09-18.md
+  KEEP ShoeLacey as a dated other repo, not this law.
+  KEEP SL-D-0002: 4:3:2:1 is an illustrative shape.
+  KEEP three opens: SEARCH / EXPERIMENT / RULING.
+  KEEP continuation-slot reject (fill-later alters history).
+  FORBID degree-sloped scheduler as Core.
+  FORBID lace_walk intern / stack guard / ring.
+  FORBID XOR tensor probe as contact law.
+  FORBID dot-as-zoom-star.
+  FORBID importing SL-C-0002 remedies as policy.
+  Card-N still mismatched. Cat still unmanufactured.
+
+
 
 
 READING ORDER WHEN A DOCUMENT IS IN THE WORKSPACE
@@ -176,6 +189,7 @@ READING ORDER WHEN A DOCUMENT IS IN THE WORKSPACE
        or docs/history-recovered-2026-09-18.md
        or docs/history-recovered-pass-2-2026-09-18.md
        or docs/history-recovered-pass-3-2026-09-18.md
+       or docs/history-recovered-pass-4-2026-09-18.md
     5. the document itself          <-- only after 1-4
     6. never PDF into git
 
@@ -277,6 +291,9 @@ STILL FORBIDDEN AFTER CODE EXISTS
   codec VAL / lowercase intern as arrival
   P02 checkpoints / StructureBytes as the strand
   manufactured cat/cat-1 notation
+  degree-sloped scheduler / 4:3:2:1 as Core formula
+  lace_walk intern dictionary / recursion guard
+  XOR tensor probe as contact law
   a second lace
 
 

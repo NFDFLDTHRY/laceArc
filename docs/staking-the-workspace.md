@@ -157,6 +157,7 @@ STILL FORBIDDEN AFTER CODE EXISTS
   ReAG inside the array
   codec VAL / lowercase intern as arrival
   P02 checkpoints / StructureBytes as the strand
+  degree-sloped scheduler / lace_walk intern / XOR-as-contact
   a second lace
 
 

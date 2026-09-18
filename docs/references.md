@@ -111,6 +111,12 @@ Workspace attachment `Lace_Memory_Recovery_Pass_3_2026-09-18.md`. Map: `docs/his
 
 Visual counterparts of Graphics A–D (composition match, byte mismatch). User 7 Sep: 1D array; pointer is more lace. P02 v0.3: same derivations ≠ same recorded history. Codec roundtrip is normalized, not raw. DESIGN.md guesses and known-bad. Cat/cat-1 fragment only. Does not settle emission. Does not replace graphics.
 
+#### 12. Lace memory recovery pass 4 — 18 September 2026
+
+Workspace attachment `Lace_Memory_Recovery_Pass_4_2026-09-18.md`. Map: `docs/history-recovered-pass-4-2026-09-18.md`.
+
+Historical repo NFDFLDTHRY/ShoeLacey at `cda3bb34`. SL-D-0002 degree-sloped scheduling (`4:3:2:1` illustrative). SL-C-0002 coarseness loss. Three opens. Walker source intern+guard. XOR probe not contact law. Continuation-slot reject. Not laceArc law.
+
 
 
 
