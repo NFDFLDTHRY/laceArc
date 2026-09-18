@@ -1,7 +1,7 @@
-STATUS: HELD
+STATUS: FREE
 STATION: maps
 OWNS: docs/reason-model-map.md docs/rust-nostd-*.md docs/atomic-primitives-map.md docs/clock/gearing-code-1to1.md docs/coherence-audit*.md docs/clock/system-mathematical-model.md docs/defrag-plan.md docs/plans/**
-AGENT: LaceArc
-BASE: 6c9d98d2d787695628c1a4b141160dbd509ee8af
-SINCE: 2026-09-18T21:31:06Z
+AGENT: -
+BASE: -
+SINCE: -
 NOTE: 
