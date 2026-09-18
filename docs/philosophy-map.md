@@ -9,7 +9,11 @@ They describe how a *mind* and a *talk* compile. Lace stores neither mind nor ta
 
 Marks: **kin** / **adjacent** / **conflict** / **off-shoe** / **[GAP]** / **[CONFLICT]** as in the reason-model map.
 
-The human labeled these “primary philosophical source material.” Primary for *steward seeing*. Not primary for Core storage.
+The human labeled these “primary philosophical source material.”
+They are not Core storage.
+They are the **gearbox required to operate upon the lace**.
+Workpiece = the strand (graphics). Gears = these three. Oil inside a gear is not a tooth on the cord.
+
 
 ---
 
@@ -17,7 +21,127 @@ The human labeled these “primary philosophical source material.” Primary for
 
 On a shoe you may add cord and pass it again. You may not merge two wraps into one, re-index a wrap to a tidier hole, or delete a wrap because the story improved.
 
-HCC-A’s Story Ledger names addition, merging, re-indexing, and deletion as native operations. That ledger, applied to Graphic D, is Rule Zero dying.
+HCC-A’s Story Ledger names addition, merging, re-indexing, and deletion as native operations. That ledger is oil *inside* the driver gear. Applied to Graphic D, it is Rule Zero dying.
+
+---
+
+## Gear train (required to operate upon lace)
+
+A gear is not the workpiece. A gear is what makes force on the workpiece legal.
+
+Without this train you can still *touch* a lace. You cannot *operate* it: you will cut, intern, shout, or rewrite and call that work.
+
+```
+                    [ hologram / hands ]
+                            |
+                            v
+              +-------------+-------------+
+              |     GEAR H  HCC-A         |
+              |  dual shaft RIC || PFC    |
+              |  internals: C L M E ISL   |
+              |  OUTPUT SHAFT = B only    |
+              +-------------+-------------+
+                            |
+                            v
+              +-------------+-------------+
+              |     GEAR C  COFFEE CUP    |
+              |  phase teeth 1-5          |
+              |  only tooth 3 is live     |
+              |  work window              |
+              +-------------+-------------+
+                            |
+                            v
+              +-------------+-------------+
+              |     GEAR W  WATER/PROOF   |
+              |  clutch: mesh or grind    |
+              |  mesh = one pointable     |
+              |  grind = rapids           |
+              +-------------+-------------+
+                            |
+                            v
+                    [ WORKPIECE ]
+                    one append-only strand
+                    WORD / POINTER only
+                    no gear teeth stored
+```
+
+Order in the drawing is torque path, not reading order. Reading order remains shoe → graphics → maps → documents.
+
+All three gears must turn. Removing one strips the others.
+
+### Gear C — phase (Coffee Cup)
+
+Kind: timing wheel. Five teeth. Continuous rotation.
+
+| Tooth | Name in source | What it does to work on the lace |
+|---|---|---|
+| 1 | Conditions | Read what already exists (eyelets, old wraps). Do not call it fate. |
+| 2 | Release | Arrival. Motion starts. Not yet a POINTER decision. |
+| 3 | Trajectory | **The only live work window.** Intervention = more cord, not less. |
+| 4 | Impact | Floor. Graphic D as it is. Stop arguing with physics. |
+| 5 | Aftermath | Narrative that becomes *next* tooth 1. Never files tooth 4 smoother. |
+
+Required: without C you apply force on the wrong tooth — Reidemeister at 4, fate at 1, blame after 4, “should” while claiming you are still at 3.
+
+Ratio: 5:5 wrap. Tooth 5 drives the next revolution’s tooth 1. That wrap is recirculation, not a file on the previous tooth.
+
+### Gear W — clutch / mesh (Water / Proofing)
+
+Kind: alignment clutch between operator and workpiece (and between two operators).
+
+- Disengaged (banks): two inventories, no shared tooth.
+- Grinding (rapids): power on, no mesh. Heat. INVALID. Do not decide. Do not emit.
+- Meshed (delta): one pointable thing. Crossing can start.
+- Driving (crossing): DELTAs and UNKs are being worked *in talk or in the hologram*, not as array types.
+
+Required: without W you torque an unmeshed lace — OBS treated as POINTER, volume treated as append, kernel sentence never said.
+
+The clutch lever is the kernel sentence. Pulling it does not cut cord. It stops grind.
+
+W’s unfinished parameters (OBS format, INVALID list, UNK budget) are clutch-plate tolerances. They are not the emission rule for a POINTER tooth.
+
+### Gear H — driver (HCC-A)
+
+Kind: enclosed gearbox with two input shafts and one output shaft that may touch the world.
+
+- Input shafts: RIC and PFC, **both must turn**. PFC-only is a locked train that never admits the workpiece.
+- Internals (C, L, M, E, ISL): may add, merge, re-index, delete *their own oil*. That is how this gear is specified. That oil is not lace.
+- Output shaft: Behavior only. The only thing that may change R, and therefore the only thing that may request “more strand.”
+
+Required: without H you do not know which shaft is allowed to touch the workpiece. Meaning, identity, and emotion leak onto the cord as if they were WORD.
+
+Invariant of the housing: “Only structure crosses.” Meaning stays in the box.
+
+### Mesh table (teeth that must meet)
+
+| From | To | Mesh | Strip (forbidden) |
+|---|---|---|---|
+| H output B | C tooth 2–3 | an act in time | B as a rewrite of old rows |
+| C tooth 3 | W clutch | work only while meshed and in window | work in rapids or after impact |
+| W mesh | workpiece | one pointable structure, then append | OBS node stored as POINTER |
+| C tooth 5 | H PFC next rev | aftermath becomes next prior | aftermath files Graphic D |
+| Workpiece impact | H RIC | structure back into the driver | chart treated as the strand |
+
+Hologram is the machinist’s ear on the case. Wrong mesh is heard before it is named. Halt. Point. Do not add a tooth to the cord to quiet the case.
+
+### What “required to operate upon” does *not* mean
+
+- Gears are not WORD, POINTER, STAR, DOCUMENT, SELF, EMOTION rows.
+- Gear internals are not a second lace.
+- Required ≠ implement now. Emission is still `[GAP]`.
+- Required ≠ the five academic texts. Those remain fence posts around the shoe. These three are the train *between* hands and shoe.
+
+### Seam restated as gearbox
+
+Two contracts, tighter than “adjacent reading”:
+
+1. **Workpiece (Lace Core)** — irreducible. Append-only strand.
+2. **Gearbox (H, C, W)** — required to operate upon 1. High dependency both ways: Core without gears is touched, not operated; gears without Core have nothing to turn. **Zero shared mutable state** with the array. All mutation inside H stays inside H.
+
+Rejected cuts: fuse gearbox into Graphic D; run Core with no clutch; implement H’s ledger ops as array ops.
+
+AgentScope remains a gauge on the machinist, not a fourth gear in this train.
+
 
 ---
 
@@ -206,12 +330,14 @@ They do not add DOCUMENT / SELF / EMOTION entry types.
 
 ## Decomposition seam
 
-Same two contracts as the five-book map, plus a named steward-philosophy layer:
+See **Gear train** above. Summary:
 
-1. **Lace Core** — unchanged, irreducible.
-2. **Adjacent reading / steward / philosophy layer** — HCC-A, Coffee Cup, Water/Proofing live *here* with AgentScope. High dependency on Core existing. Zero array state. Diagnostic of holders and talks.
+1. **Workpiece (Lace Core)** — irreducible.
+2. **Gearbox (HCC-A, Cup, Water)** — required to operate upon the workpiece. Zero array state.
 
-Rejected cut: “cognitive compiler service” beside the 1D array.
+Rejected cut: “cognitive compiler service” *inside* the 1D array.
+The five academic texts remain fence posts, not gears.
+
 
 ---
 

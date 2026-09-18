@@ -121,7 +121,8 @@ Full ASCII: `docs/law-why-these-documents.md`.
 
 ## Adjacent reading
 
-Reason model: `docs/reason-model-map.md` (a shoe lace in the hands). Philosophy of seeing/talking: `docs/philosophy-map.md` (HCC-A, Coffee Cup, Water/Proofing). Cited in `docs/references.md`.
+Reason model: `docs/reason-model-map.md` (a shoe lace in the hands). Philosophy of operating the lace: `docs/philosophy-map.md`. HCC-A, Coffee Cup, Water/Proofing are gears required to operate upon the workpiece. They are not WORD/POINTER. Ledger ops stay inside HCC-A. Clutch (Water) before torque. Phase (Cup) tooth 3 is the work window.
+Cited in `docs/references.md`.
 Not source of record. Do not import their axioms into Core. Do not add PDF files to git.
 Do not treat Story Ledger merge/delete, Meaning Engine weights, or OBS talk-pointers as Graphic D.
 The human holds a hologram of the machine. Wrongness may arrive before speech. Halt. Demand one pointable thing. Do not fill pointer-emission to soothe the halt. Shoe in hands is the court; the hologram is not a Meaning Engine and not a license to build.

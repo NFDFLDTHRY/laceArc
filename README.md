@@ -34,7 +34,7 @@ Same rule. Same strand. 3D stars and N-dimensional participation are readings of
 | [docs/grok-bot-profile.md](docs/grok-bot-profile.md) | Name, job, ASCII description, staking explanation, and first task to paste into Grok Bot. |
 | [docs/references.md](docs/references.md) | Adjacent books. Citations only. PDFs are not in this public repo. |
 | [docs/reason-model-map.md](docs/reason-model-map.md) | Physical shoe lace as reason model. How five adjacent works may and may not touch Core. |
-| [docs/philosophy-map.md](docs/philosophy-map.md) | HCC-A, Coffee Cup, Water/Proofing: steward seeing and talk-repair. Not Core storage. |
+| [docs/philosophy-map.md](docs/philosophy-map.md) | HCC-A, Coffee Cup, Water/Proofing as the gearbox required to operate upon the lace. Not Core storage. |
 
 There is no `src/` on purpose. Code that appears before the pointer-emission rule is locked will invent a second machine.
 

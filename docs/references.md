@@ -71,24 +71,26 @@ Approximation, ReLU calculus, depth. Adjacent if someone asks whether a star is 
 
 Reasoning-Action graphs and neural invariants for agent failure localization. Adjacent to the LaceArc *Grok Bot* (how a steward fails), not to Lace storage. Do not add ReAG or a failure taxonomy as a second store beside the append-only line.
 
-### Philosophy of seeing and talking (steward neighborhood)
+### Philosophy of seeing and talking (gearbox to operate upon the lace)
 
 Workspace attachments. Not committed as binaries. Map: `docs/philosophy-map.md`.
+Fence posts (1–5) surround the shoe. Gears (6–8) stand between hands and shoe. Not Core rows.
 
-#### 6. HCC-A v1.0 — Human Cognitive Compiler Architecture
+#### 6. HCC-A v1.0 — Human Cognitive Compiler Architecture  (Gear H, driver)
 
 Self/other mapping spec: RIC ∥ PFC → Compiler → Story Ledger → Meaning → Emotion → Identity → Behavior.  
-Keep RIC and “only structure crosses.” Do not import ledger merge/re-index/delete or a Meaning Engine into Graphic D.
+Keep dual shaft and output = Behavior only. Internals may mutate *inside the box*. Do not import ledger merge/re-index/delete or a Meaning Engine into Graphic D.
 
-#### 7. The Coffee Cup — A Walk-Through of How You Actually See
+#### 7. The Coffee Cup — A Walk-Through of How You Actually See  (Gear C, phase)
 
 Five stages: conditions, release, trajectory, impact, aftermath.  
-Keep impact as ground truth and trajectory as a window. Do not treat aftermath narrative as permission to rewrite rows.
+Tooth 3 is the work window. Tooth 5 drives the next tooth 1. Do not file impact.
 
-#### 8. Where the Water Is Loud + Dual Proofing Systems
+#### 8. Where the Water Is Loud + Dual Proofing Systems  (Gear W, clutch)
 
 OBS / DELTA / UNK / INVALID and river banks / rapids / delta.  
-Keep “if you cannot point at it, you cannot push on it.” Do not treat OBS as POINTER emission.
+No mesh, no torque. Do not treat OBS as POINTER emission.
+
 
 ## Series frame (from Rowlands front matter)
 

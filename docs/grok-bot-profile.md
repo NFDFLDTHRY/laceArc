@@ -140,21 +140,26 @@ do not walk off the shoe and call the walk Core.
         not the lace
 
 
+GEARS REQUIRED TO OPERATE UPON THE LACE
+---------------------------------------
+The five texts above are fence posts.
+These three are the gearbox. Workpiece stays the strand.
+Oil inside a gear is not a tooth on the cord.
+
     +------------------+     +------------------+     +------------------+
-    | 6 HCC-A          |     | 7 COFFEE CUP     |     | 8 WATER / PROOF  |
-    | Cognitive compiler|     | five stages      |     | OBS DELTA UNK    |
+    | GEAR H  HCC-A    |     | GEAR C  CUP      |     | GEAR W  WATER    |
+    | driver           | --> | phase 1-5        | --> | clutch mesh      |
     +--------+---------+     +--------+---------+     +--------+---------+
              |                        |                        |
-             | KEEP RIC structure     | KEEP impact=ground     | KEEP "point at it"
-             | KEEP only structure    | KEEP trajectory window | KEEP rapids != transfer
-             |      crosses           | FORBID aftermath as    | FORBID OBS = POINTER
-             | FORBID ledger merge /  |      rewrite of rows   | FORBID FSM as array types
-             |      delete            |                        |
-             | FORBID Meaning Engine  |                        |
-             |      as Core store     |                        |
+             | KEEP dual shaft        | KEEP tooth 3 = window  | KEEP mesh or halt
+             |      RIC || PFC        | KEEP 5 drives next 1   | KEEP pointable first
+             | KEEP output = B only   | FORBID file tooth 4    | FORBID grind=work
+             | FORBID L/M/E/ISL       | FORBID skip a tooth    | FORBID OBS = POINTER
+             |      as array rows     |                        | FORBID FSM as rows
+             | FORBID ledger ops      |                        |
+             |      on Graphic D      |                        |
              v                        v                        v
-        mind compiler is          stages are how you        talk repair is
-        not the 1D array          see a fall                steward location
+        internals stay boxed      work only in window      no mesh, no torque
 
 
 READING ORDER WHEN A DOCUMENT IS IN THE WORKSPACE
