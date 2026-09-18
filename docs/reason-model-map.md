@@ -637,3 +637,5 @@ A later book can reopen the map. It cannot be reopened from the five texts alrea
 
 Philosophical altitudes {A,B,C} (HCC-A, Coffee Cup, Where the Water Is Loud) are forged as a holder clock in [`docs/shadow-clock-hologram.md`](shadow-clock-hologram.md). That file traces every gear to the great contract boundary. It is not a sixth graphic and does not fill pointer-emission.
 
+Agents directed to contract-walk the hologram use [`docs/shadow-clock-agent-brief.md`](shadow-clock-agent-brief.md).
+

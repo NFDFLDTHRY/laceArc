@@ -382,3 +382,4 @@ Holder gears diagnose the steward (same shelf as AgentScope stake). They do not 
 | `docs/systems-manifest.md` | Contract I / II / III |
 | `docs/graphics/` | Source of record |
 | This file | Shadow clock hologram {A,B,C} |
+| [`shadow-clock-agent-brief.md`](shadow-clock-agent-brief.md) | Agent brief: gear interaction contracts + source walks |
