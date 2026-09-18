@@ -64,6 +64,19 @@ This file is Layer III. Not Core.
 | Amended | reason-model-map · law · graphics · five-stakes | **No** |
 | Emission | still `[GAP]` |
 
+
+## Pass 3 receipt
+
+| Field | Value |
+|---|---|
+| Status | EXECUTED |
+| Station | clipboards · agent `reference-Mapper` |
+| Plan | [kauffman-pass-3-plan.md](kauffman-pass-3-plan.md) |
+| Product | coherence mesh (book ↔ five-stakes ↔ map K1–K9); five-stakes ≤ sync; Gauss pin PDF p.562 / printed p.543 |
+| Amended | reason-model-map · law · graphics | **No** (map K7 still writes `<`; noted OPEN under mesh) |
+| Five-stakes | PAGE 1/5 transcription note updated only |
+| Emission | still `[GAP]` |
+
 Law on this clip: diagram ≠ rope · hitch kin · grab ≠ emission · `[GAP]` sealed.
 
 ```
@@ -208,7 +221,7 @@ fetch/ff main → shoe → graphics A–D → manifest → law
 │   │ false friends inspected:                                       │     │
 │   │   clove "grab" / "participates later"   → kin, not when        │     │
 │   │   Reidemeister II crossing change       → rewrite, not emit    │     │
-│   │   Gauss code (later Part I)             → codes a closed       │     │
+│   │   Gauss code (appendix PDF p.562 / printed p.543)             → codes a closed       │     │
 │   │                                           diagram class,       │     │
 │   │                                           not append life      │     │
 │   │   bracket / Jones / Yang–Baxter (K5)    → diagram-class        │     │
@@ -257,6 +270,7 @@ fetch/ff main → shoe → graphics A–D → manifest → law
 - This file does not amend `docs/reason-model-map.md`, law, graphics, or five-stakes.
 - **Pass 2 (PDF-sighted)** rewrote D5 (PDF present), pinned FM-K5/K6/K9 loci, fixed PAGE E appendix title to PDF p.782 / printed p.763.
 - Searchable text layer still absent; denser OCR remains optional.
+- **Pass 3** added coherence mesh + Gauss pin (PDF p.562); synced five-stakes ≤ note; map K7 `<` left OPEN.
 
 ---
 
@@ -307,7 +321,7 @@ Mirrored from five-stakes PAGE 1/5. Book clipboard holds the page walk; this str
 | FM-K2 | closed loop ⇒ Lace identity | two ends; Continue | PDF p.27–28 / printed p.8–9 (cite C) |
 | FM-K3 | Move Zero ⇒ array write | projection only | PDF p.35 / printed p.16 (cite B) |
 | FM-K4 | Reidemeister ⇒ simplify stars / emit | Rule Zero; not Piece 6 | PDF p.35–36 / printed p.16–17 (cite C) |
-| FM-K5 | Jones/bracket ⇒ wrap history on D | do not store | **PDF p.68 / printed p.49** §5° Jones; bracket **PDF p.44 / printed p.25** |
+| FM-K5 | Jones/bracket/Gauss ⇒ wrap history on D | do not store | Jones **PDF p.68 / p.49**; bracket **PDF p.44 / p.25**; Gauss appendix **PDF p.562 / printed p.543** |
 | FM-K6 | DNA passage ⇒ thread-through write | cut-rejoin `[X]` | **PDF p.507 / printed p.488** §15° DNA and QFT |
 | FM-K7 | T2 / κ / e^θ ⇒ array columns | friction ≠ fields | PDF p.342–343 / printed p.323–324 (cite A) |
 | FM-K8 | slide ⇒ milder Core write | implies RII/RIII class | PDF p.355 / printed p.336 (cite D) |
@@ -334,6 +348,37 @@ Five-stakes PAGE 1/5 left untouched (≤ conflict note there is historical; book
 - Add `src/`
 - Git-add the PDF
 - Pretend a fresh OCR walk without the file
+
+---
+
+## Pass 3 deltas
+
+Pass 1–2 (PDF) filled pages and FM pins. Pass 3 is coherence only. Emission stays `[GAP]`.
+
+### P3-M — Coherence mesh
+
+| Hands / Piece | Map K# | Book stamp | Five-stakes PAGE 1/5 | Mesh |
+|---|---|---|---|---|
+| Piece 5 participation | K1 / K7 | CONFIRM KEEP hitch | KEEP hitch / windings | same tooth |
+| Piece 1 open strand | K2 | CONFIRM CONFLICT | FORBID closed loop | same tooth |
+| Piece 13 projection | K3 | CONFIRM KEEP diagram≠rope | KEEP diagram ≠ rope | same tooth |
+| Piece 6 new section | K4 | CONFIRM CONFLICT | FORBID Reidemeister | same tooth |
+| (history only) | K5 | FORBID store | FORBID Jones/bracket/Gauss as history | same tooth |
+| Rule Zero | K6 | FORBID DNA write | FORBID DNA cut-rejoin | same tooth |
+| Graphic D fields | K7 math | FORBID friction fields; page **≤** | FORBID Bayman κ fields | same tooth; see OPEN |
+| Rule Zero | K8 | CONFIRM CONFLICT | FORBID slide | same tooth |
+| one store | K9 | CONFIRM CONFLICT | FORBID virtual handles | same tooth |
+| POINTER when / arity / adjacency | — | SILENT `[GAP]` | Emission NO `[GAP]` | same open |
+
+**OPEN (not amended):** `docs/reason-model-map.md` K7 prose still writes a strict `<` in the friction model line; printed/PDF p.323/342 and this clipboard use inclusive **≤**. Five-stakes now records that the book clipboard follows ≤. Map left untouched this pass.
+
+### P3-G — Gauss pin
+
+Appendix article title sighted: “Gauss Codes, Quantum Groups and Ribbon Hopf Algebras” — **PDF p.562 / printed p.543**. Codes a closed-diagram class; not append-only Lace history. FM-K5 and PAGE F updated.
+
+### P3-5S — Five-stakes
+
+PAGE 1/5 transcription note updated to stop claiming this clipboard still uses strict `<`. KEEP/FORBID rows unchanged.
 
 
 Shoe in hands, or no.

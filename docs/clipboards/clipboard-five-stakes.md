@@ -72,7 +72,7 @@ Legend:
 
 **vs reason-model-map.** K1/K7 remain physical kin of later participation, and K2/K4/K8 remain forbidden Core imports. Kauffman's deformations preserve knot type; they do not require tearing the rope. The project restriction concerns replacing Lace's retained occurrence history with diagram equivalence. The reason map's “untie and retie” wording is a Lace analogy, not a literal definition of all Reidemeister moves. K5/K6/K9 retain their existing map/law classifications; their full source regions were not reread for this clipboard check.
 
-**[CONFLICT: transcription]** Printed p.323 gives the no-slip inequality as `T2 ≤ κ T1`; K7 and the [Kauffman-specific clipboard](kauffman-4ed-clipboard.md) transcribe a strict `<`. The displayed source uses the inclusive inequality. Neither form is a Lace field or emission rule. This records the discrepancy without editing either source map.
+**[NOTE: transcription · Pass 3 sync]** Printed p.323 / PDF p.342 give the no-slip inequality as `T2 ≤ κ T1` (inclusive). The [Kauffman-specific clipboard](kauffman-4ed-clipboard.md) now follows **≤** (PDF-sighted pass 1). Older drafts and `docs/reason-model-map.md` K7 prose may still show a strict `<`; that map line is OPEN, not silently edited here. Neither form is a Lace field or emission rule.
 
 **Contact with the atomic map:** POINTER participation is the comparison point. Friction does not determine emission timing, targets, or arity.
 
@@ -257,7 +257,7 @@ If a sentence on any page would change WORD, POINTER, star, or the governing rul
 | Relation to atomic primitives | Each card names its contact with the prior atomic mapping. K/R/X/P/A labels here are the reason-map labels; in particular Petersen's P1–P7 are not the atomic map's P0–P4 identifiers. |
 | Propose / attack / resolve | One agent performed all three roles. Attacks checked whether analogies were being reported as source facts, whether shared word identity was confused with an occurrence, and whether holder diagnostics were being promoted into Core. No independent review. |
 | Resolved in this clipboard | Added edition-specific passage locations; qualified the knot, token, parameter-update, and appendix claims. Existing KEEP/FORBID boundaries retained. |
-| Unresolved source wording | The K7 inequality transcription and X2/occurrence characterization conflicts are recorded above; reason-model-map and the Kauffman-specific clipboard are unchanged. This clipboard cannot silently amend its sources. |
+| Unresolved source wording | K7 inequality: book clipboard synced to ≤ (Pass 3); reason-model-map K7 `<` remains OPEN. X2/occurrence characterization conflict unchanged; reason-model-map not edited from this clipboard. This clipboard cannot silently amend its sources. |
 | Physical evidence | No physical shoe-lace experiment performed by this agent. Diagrams and prose were inspected. |
 | Changed file | Only this clipboard in this task. The pre-existing uncommitted atomic-primitives-map.md draft remains untouched. No PDFs, Core code, renderer, or gearing data files added or edited. |
 | Document checks | All five cards contain every requested field and source check; local links resolve; git diff --check passes. The changed tracked path is this file alone. These are document checks, not Core tests. |
