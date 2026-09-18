@@ -91,7 +91,15 @@ while IFS= read -r md; do
   # next, so a claim split across two lines still binds; grep -n then reports
   # the first line of the pair.
   while IFS=: read -r lineno text; do
-    for tok in $(printf '%s\n' "$text" | grep -oE "^($_TOK)" | sort -u); do
+    # A dated receipt ("absent at 6fb2dac", "THEN untracked ... NOW at ...")
+    # is a true statement about a revision, not live drift. A commit SHA on
+    # the line or its neighbours marks it: receipts here are tables whose
+    # SHA sits one row above the claim. Whole-word hex runs only; a word
+    # like "acceded" is hex-only and would be skipped too, which costs a
+    # missed advisory, not a false one.
+    sed -n "$(( lineno > 1 ? lineno - 1 : 1 )),$(( lineno + 1 ))p" "$md" \
+      | grep -qE '\b[0-9a-f]{7,40}\b' && continue
+    for tok in $(printf '%s\n' "$text" | grep -oE "($_TOK).{0,30}($_PHR)" | grep -oE "^($_TOK)" | sort -u); do
       case " $seen " in *" $tok "*) continue ;; esac
       path=$(printf '%s\n' "$_tracked" | grep -ixF -- "$tok" | head -1)
       [ -n "$path" ] || path=$(printf '%s\n' "$_tracked" \
@@ -102,7 +110,7 @@ while IFS= read -r md; do
       stale=$((stale + 1))
     done
   done < <(awk '{if (NR > 1) print prev " " $0; prev = $0} END {print prev}' "$md" \
-           | grep -nEo "($_TOK).{0,30}($_PHR)")
+           | grep -nE "($_TOK).{0,30}($_PHR)")
 done < <(git ls-files '*.md')
 [ "$stale" -eq 0 ] && note_ok "no stale absence claims (nothing called absent that is tracked)"
 
