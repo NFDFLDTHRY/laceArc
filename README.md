@@ -49,6 +49,7 @@ Same rule. Same strand. 3D stars and N-dimensional participation are readings of
 | [docs/gearing-code-1to1-prompt.md](docs/gearing-code-1to1-prompt.md) | Agent prompt: force 1:1 between WebGPU gearing visual keys and code units (Layer III; emission [GAP]). |
 | [docs/pointer-emission-prompt.md](docs/pointer-emission-prompt.md) | Agent prompt: draft `docs/pointer-emission.md` as unanswered questions only (DRAFT; human accepts later; no `src/`). |
 | [docs/gearing-html-iterate-prompt.md](docs/gearing-html-iterate-prompt.md) | Agent prompt: iterate WebGPU gearing HTML / shafts under claim law, 1:1 keys, Layer III. |
+| [docs/gearing-html-fix-prompt.md](docs/gearing-html-fix-prompt.md) | Agent prompt: designated-editor FIX pass for WebGPU gearing HTML (mobile HUD/camera/chrome). |
 | [docs/shadow-clock-shared-interactive-prompt.md](docs/shadow-clock-shared-interactive-prompt.md) | Prompt that defined the shared-interactive gearing architecture (Layer III). |
 | [docs/system-mathematical-model.md](docs/system-mathematical-model.md) | Two-algebra model: Hands L and Shadow H. Emission remains [GAP]. |
 | [LICENSE](LICENSE) | Apache-2.0 |
