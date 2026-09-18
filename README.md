@@ -47,6 +47,7 @@ Same rule. Same strand. 3D stars and N-dimensional participation are readings of
 | [docs/agentscope-clipboard-prompt.md](docs/agentscope-clipboard-prompt.md) | Agent prompt: ASCII clipboard for Bi et al. AgentScope (Diagnosing with Insights). |
 | [docs/rust-nostd-crate-map-prompt.md](docs/rust-nostd-crate-map-prompt.md) | Agent prompt: ASCII map of Hands → Rust `#![no_std]` first-party crates (intuitive tree; no `src/` yet). |
 | [docs/gearing-code-1to1-prompt.md](docs/gearing-code-1to1-prompt.md) | Agent prompt: force 1:1 between WebGPU gearing visual keys and code units (Layer III; emission [GAP]). |
+| [docs/pointer-emission-prompt.md](docs/pointer-emission-prompt.md) | Agent prompt: draft `docs/pointer-emission.md` as unanswered questions only (DRAFT; human accepts later; no `src/`). |
 | [docs/shadow-clock-shared-interactive-prompt.md](docs/shadow-clock-shared-interactive-prompt.md) | Prompt that defined the shared-interactive gearing architecture (Layer III). |
 | [docs/system-mathematical-model.md](docs/system-mathematical-model.md) | Two-algebra model: Hands L and Shadow H. Emission remains [GAP]. |
 | [LICENSE](LICENSE) | Apache-2.0 |
