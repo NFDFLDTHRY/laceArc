@@ -265,6 +265,18 @@
     border-left: 3px solid var(--axle); padding-left: 0.65rem;
     margin: 0.75rem 0; color: var(--muted); font-size: 0.8rem;
   }
+
+  .cam-controls {
+    display: flex; align-items: center; gap: .6rem;
+    flex-wrap: wrap; margin-top: .35rem;
+  }
+  .cam-controls button {
+    background: #12202c; color: #cfe6f2;
+    border: 1px solid #2c4a5e; border-radius: 999px;
+    padding: .25rem .7rem; font-size: .78rem; cursor: pointer;
+  }
+  .cam-controls button:hover { background: #1a2f40; }
+  .cam-hint { font-size: .72rem; color: #6f8496; }
 </style>
 </head>
 <body>
@@ -312,6 +324,10 @@
       <span class="lc">C crossing</span>
       <span class="ll">Lace cord (Hands)</span>
       <span class="lx">Shared axle</span>
+    </div>
+    <div class="cam-controls">
+      <button id="camReset" type="button">Reset view</button>
+      <span class="cam-hint">drag to orbit · pinch or scroll to zoom · tap a station to select</span>
     </div>
   </div>
 
@@ -459,29 +475,6 @@
     o[14] = -(zx * eye[0] + zy * eye[1] + zz * eye[2]);
     return o;
   }
-  function mat4Translate(tx, ty, tz) {
-    const o = mat4Identity();
-    o[12] = tx; o[13] = ty; o[14] = tz;
-    return o;
-  }
-  function mat4RotateZ(rad) {
-    const c = Math.cos(rad), s = Math.sin(rad);
-    const o = mat4Identity();
-    o[0] = c; o[1] = s; o[4] = -s; o[5] = c;
-    return o;
-  }
-  function mat4RotateY(rad) {
-    const c = Math.cos(rad), s = Math.sin(rad);
-    const o = mat4Identity();
-    o[0] = c; o[2] = -s; o[8] = s; o[10] = c;
-    return o;
-  }
-  function mat4RotateX(rad) {
-    const c = Math.cos(rad), s = Math.sin(rad);
-    const o = mat4Identity();
-    o[5] = c; o[6] = s; o[9] = -s; o[10] = c;
-    return o;
-  }
   function transformPoint(m, x, y, z) {
     const w = m[3] * x + m[7] * y + m[11] * z + m[15];
     return [
@@ -491,571 +484,406 @@
     ];
   }
 
-  /* ——— procedural meshes: pos(3) + normal(3) + color(3) = 9 floats ———
-     Hologram skin: glass cube stations, lattice floor, crossing beams,
-     cluster orbs, gold cord. Shapes are a SHADOW (Layer III). A cube is not a
-     WORD row, a beam is not a POINTER, an orb is not a star.
-     See docs/hologram/README.md and visual-primitives.md §2.5 (stacks). ——— */
-  function pushTri(arr, ax,ay,az, bx,by,bz, cx,cy,cz, nx,ny,nz, r,g,b) {
-    arr.push(ax,ay,az, nx,ny,nz, r,g,b);
-    arr.push(bx,by,bz, nx,ny,nz, r,g,b);
-    arr.push(cx,cy,cz, nx,ny,nz, r,g,b);
-  }
-  function pushQuad(arr, a, b, c, d, n, col) {
-    pushTri(arr, a[0],a[1],a[2], b[0],b[1],b[2], c[0],c[1],c[2], n[0],n[1],n[2], col[0],col[1],col[2]);
-    pushTri(arr, a[0],a[1],a[2], c[0],c[1],c[2], d[0],d[1],d[2], n[0],n[1],n[2], col[0],col[1],col[2]);
-  }
+  /* ——— Shader-first renderer ———
+     The templates are not geometry. They are volumetric glow inside glass,
+     bloom, and atmospheric falloff. So the scene is an SDF raymarch in WGSL:
+     no vertex buffers, no extruded cages. Emission accumulates ALONG the ray,
+     which is why a core bleeds through its shell.
 
-  /* axis-aligned box centred at origin */
-  function buildBox(sx, sy, sz, color, out) {
-    const arr = out || [];
-    const x = sx/2, y = sy/2, z = sz/2;
-    const P = [[-x,-y,-z],[x,-y,-z],[x,y,-z],[-x,y,-z],[-x,-y,z],[x,-y,z],[x,y,z],[-x,y,z]];
-    pushQuad(arr, P[4],P[5],P[6],P[7], [0,0,1], color);
-    pushQuad(arr, P[1],P[0],P[3],P[2], [0,0,-1], color);
-    pushQuad(arr, P[5],P[1],P[2],P[6], [1,0,0], color);
-    pushQuad(arr, P[0],P[4],P[7],P[3], [-1,0,0], color);
-    pushQuad(arr, P[7],P[6],P[2],P[3], [0,1,0], color);
-    pushQuad(arr, P[0],P[1],P[5],P[4], [0,-1,0], color);
-    return arr;
-  }
+     Still Layer III. A cube is not a WORD row, a beam is not a POINTER, an orb
+     is not a star. docs/hologram/README.md. ——— */
 
-  /* translated box helper */
-  function boxAt(arr, cx, cy, cz, sx, sy, sz, color) {
-    const tmp = buildBox(sx, sy, sz, color);
-    for (let i = 0; i < tmp.length; i += 9) {
-      tmp[i] += cx; tmp[i+1] += cy; tmp[i+2] += cz;
-    }
-    for (let i = 0; i < tmp.length; i++) arr.push(tmp[i]);
-    return arr;
-  }
-
-  /* 12 thin bars = glass-cube edge cage (reads as glass on black) */
-  function buildCage(size, thick, color) {
-    const arr = [];
-    const h = size / 2;
-    for (const sy of [-h, h]) for (const sz of [-h, h]) boxAt(arr, 0, sy, sz, size, thick, thick, color);
-    for (const sx of [-h, h]) for (const sz of [-h, h]) boxAt(arr, sx, 0, sz, thick, size, thick, color);
-    for (const sx of [-h, h]) for (const sy of [-h, h]) boxAt(arr, sx, sy, 0, thick, thick, size, color);
-    return new Float32Array(arr);
-  }
-
-  /* emissive inner core, faceted blob */
-  function buildCore(r, color) {
-    const arr = [];
-    const R = 3, S = 6;
-    for (let i = 0; i < R; i++) {
-      const p0 = Math.PI * (i / R), p1 = Math.PI * ((i + 1) / R);
-      for (let j = 0; j < S; j++) {
-        const t0 = 2 * Math.PI * (j / S), t1 = 2 * Math.PI * ((j + 1) / S);
-        const v = (p, t) => [r * Math.sin(p) * Math.cos(t), r * Math.cos(p), r * Math.sin(p) * Math.sin(t)];
-        const a = v(p0, t0), b = v(p1, t0), c = v(p1, t1), d = v(p0, t1);
-        const n = [(a[0]+c[0])/2, (a[1]+c[1])/2, (a[2]+c[2])/2];
-        const nl = Math.hypot(n[0], n[1], n[2]) || 1;
-        pushQuad(arr, a, b, c, d, [n[0]/nl, n[1]/nl, n[2]/nl], color);
-      }
-    }
-    return new Float32Array(arr);
-  }
-
-  /* green cluster orb — spiky wire knot kin to the traces template */
-  function buildCluster(r, color) {
-    const arr = [];
-    const N = 22;
-    for (let i = 0; i < N; i++) {
-      const a = (i / N) * Math.PI * 2 * 3.0;
-      const b = (i / N) * Math.PI * 2 * 1.0;
-      const p = [r * Math.cos(a) * Math.cos(b), r * Math.sin(b), r * Math.sin(a) * Math.cos(b)];
-      const q = [r * Math.cos(a + 0.9) * Math.cos(b + 0.4), r * Math.sin(b + 0.4), r * Math.sin(a + 0.9) * Math.cos(b + 0.4)];
-      tubeSeg(arr, p, q, r * 0.10, color);
-    }
-    return new Float32Array(arr);
-  }
-
-  /* one quad-pair segment between two points, billboard-ish ribbon */
-  function tubeSeg(arr, a, b, w, color) {
-    const dx = b[0]-a[0], dy = b[1]-a[1], dz = b[2]-a[2];
-    let ux = -dy, uy = dx, uz = 0;
-    let ul = Math.hypot(ux, uy, uz);
-    if (ul < 1e-5) { ux = 0; uy = 0; uz = 1; ul = 1; }
-    ux/=ul; uy/=ul; uz/=ul;
-    let vx = dy*uz - dz*uy, vy = dz*ux - dx*uz, vz = dx*uy - dy*ux;
-    const vl = Math.hypot(vx, vy, vz) || 1; vx/=vl; vy/=vl; vz/=vl;
-    for (const [px,py,pz] of [[ux,uy,uz],[vx,vy,vz]]) {
-      const p0 = [a[0]-px*w, a[1]-py*w, a[2]-pz*w];
-      const p1 = [a[0]+px*w, a[1]+py*w, a[2]+pz*w];
-      const p2 = [b[0]+px*w, b[1]+py*w, b[2]+pz*w];
-      const p3 = [b[0]-px*w, b[1]-py*w, b[2]-pz*w];
-      pushQuad(arr, p0, p1, p2, p3, [vx,vy,vz], color);
-      pushQuad(arr, p3, p2, p1, p0, [-vx,-vy,-vz], color);
-    }
-  }
-
-  function buildPath(points, w, color) {
-    const arr = [];
-    for (let i = 0; i < points.length - 1; i++) tubeSeg(arr, points[i], points[i+1], w, color);
-    return new Float32Array(arr);
-  }
-
-  /* lifted arc between two stations = crossing beam */
-  function arcPoints(a, b, lift, n) {
-    const pts = [];
-    for (let i = 0; i <= n; i++) {
-      const t = i / n;
-      const s = Math.sin(Math.PI * t);
-      pts.push([
-        a[0] + (b[0]-a[0]) * t,
-        a[1] + (b[1]-a[1]) * t + s * lift,
-        a[2] + (b[2]-a[2]) * t + s * lift * 0.28,
-      ]);
-    }
-    return pts;
-  }
-
-  /* dark circuit/grid floor — lattice template */
-  function buildFloor(half, divs, y, minor, major) {
-    const arr = [];
-    const step = (half * 2) / divs;
-    const t = 0.012, tM = 0.026;
-    for (let i = 0; i <= divs; i++) {
-      const v = -half + i * step;
-      const isMajor = (i % 4 === 0);
-      const col = isMajor ? major : minor;
-      const th = isMajor ? tM : t;
-      boxAt(arr, 0, y, v, half * 2, th, th, col);
-      boxAt(arr, v, y, 0, th, th, half * 2, col);
-    }
-    return new Float32Array(arr);
-  }
-
-  /* residual floor traces under stations — traces template */
-  function buildTraces(y, color) {
-    const arr = [];
-    const marks = [
-      [-1.55, -0.45], [0.05, 0.30], [1.55, -0.25],
-      [-0.75, 0.95], [0.85, 0.95], [-2.2, 0.2], [2.2, 0.1],
-    ];
-    for (const [x, z] of marks) {
-      boxAt(arr, x, y + 0.004, z, 0.52, 0.006, 0.014, color);
-      boxAt(arr, x, y + 0.004, z, 0.014, 0.006, 0.52, color);
-    }
-    return new Float32Array(arr);
-  }
-
-  /* ——— scene layout: stacked cells on a surface, NOT a flat cog train.
-     visual-primitives.md §2.5: "Draw gears as stacked 3D cells on a surface." ——— */
   const FLOOR_Y = -1.30;
   const STATION = {
-    A: { pos: [-1.55, 0.02, -0.45], size: 0.78, core: [0.30, 0.78, 1.00] },
-    B: { pos: [ 0.05, 0.74,  0.30], size: 0.86, core: [1.00, 0.54, 0.12] },
-    C: { pos: [ 1.55, -0.16, -0.25], size: 0.80, core: [0.28, 1.00, 0.46] },
+    A: { pos: [-1.70, 0.10, -0.50], r: 0.42, core: [0.24, 0.72, 1.00], id: 1 },
+    B: { pos: [ 0.10, 0.86,  0.35], r: 0.46, core: [1.00, 0.50, 0.10], id: 2 },
+    C: { pos: [ 1.70, -0.10, -0.30], r: 0.43, core: [0.22, 1.00, 0.44], id: 3 },
   };
-  const GLASS_COL = [0.46, 0.62, 0.74];
-  const BEAM_COL  = [0.42, 0.86, 1.00];
-  const LACE_COL  = [1.00, 0.89, 0.58];
-  const CLUST_COL = [0.26, 1.00, 0.50];
-  const AUDIT_COL = [0.62, 0.30, 0.22];
+  const CLUSTER_POS = { A1: [-2.45, 0.55, 0.55], B1: [0.15, 1.85, -0.35], C1: [2.45, 0.40, 0.60] };
+  const ESCAPE_POS  = { E1: [-0.85, FLOOR_Y + 0.05, -1.35], E2: [0.90, FLOOR_Y + 0.05, -1.35], R1: [0.10, FLOOR_Y + 0.05, -2.05] };
+  const TICK_POS = [], AUDIT_POS = {};
+  for (let i = 0; i < 7; i++) TICK_POS.push([-2.4 + i * 0.8, FLOOR_Y + 0.02, 1.75]);
+  for (let i = 0; i < 6; i++) AUDIT_POS["X" + (i + 1)] = [-2.0 + i * 0.8, FLOOR_Y + 0.04, -2.70];
 
-  const TICK_POS = [];
-  for (let i = 0; i < 7; i++) TICK_POS.push([-2.4 + i * 0.8, FLOOR_Y + 0.02, 1.62]);
-
-  const CLUSTER_POS = {
-    A1: [-2.32, 0.42, 0.35],
-    B1: [ 0.10, 1.62, -0.30],
-    C1: [ 2.30, 0.30,  0.45],
-  };
-  const ESCAPE_POS = {
-    E1: [-0.80, FLOOR_Y + 0.14, -1.25],
-    E2: [ 0.85, FLOOR_Y + 0.14, -1.25],
-    R1: [ 0.05, FLOOR_Y + 0.14, -1.95],
-  };
-  const AUDIT_POS = {};
-  for (let i = 0; i < 6; i++) AUDIT_POS["X" + (i + 1)] = [-2.0 + i * 0.8, FLOOR_Y + 0.10, -2.55];
+  /* key -> shader id (0 = no 3D element; chips still reach it) */
+  const KEY_ID = { A:1, B:2, C:3, axle:4, AB:5, BC:6, CA:7, A1:8, B1:9, C1:10,
+                   E1:18, E2:19, R1:20 };
+  for (let i = 0; i < 7; i++) KEY_ID["t" + i] = 11 + i;
+  for (let i = 1; i <= 6; i++) KEY_ID["X" + i] = 20 + i;
 
   const SHADER = `
-struct Uniforms {
-  mvp : mat4x4f,
-  model : mat4x4f,
-  lightDir : vec4f,
-  eyePos : vec4f,
-  highlight : vec4f,   // x = solo hi, y = mesh-pair hi, z = emissive, w = glass
+struct U {
+  res    : vec2f,
+  time   : f32,
+  hiId   : f32,
+  eye    : vec4f,
+  target : vec4f,
+  params : vec4f,   // x = fov
 };
-@group(0) @binding(0) var<uniform> u : Uniforms;
+@group(0) @binding(0) var<uniform> u : U;
 
-struct VSIn {
-  @location(0) pos : vec3f,
-  @location(1) normal : vec3f,
-  @location(2) color : vec3f,
-};
-struct VSOut {
-  @builtin(position) clip : vec4f,
-  @location(0) worldPos : vec3f,
-  @location(1) normal : vec3f,
-  @location(2) color : vec3f,
-};
+struct VSOut { @builtin(position) clip : vec4f, @location(0) uv : vec2f };
 
 @vertex
-fn vs_main(input : VSIn) -> VSOut {
+fn vs_main(@builtin(vertex_index) vi : u32) -> VSOut {
+  var p = array<vec2f, 3>(vec2f(-1.0, -3.0), vec2f(-1.0, 1.0), vec2f(3.0, 1.0));
   var o : VSOut;
-  let wp = u.model * vec4f(input.pos, 1.0);
-  o.worldPos = wp.xyz;
-  o.normal = (u.model * vec4f(input.normal, 0.0)).xyz;
-  o.color = input.color;
-  o.clip = u.mvp * vec4f(input.pos, 1.0);
+  o.clip = vec4f(p[vi], 0.0, 1.0);
+  o.uv = p[vi];
   return o;
+}
+
+fn sdRoundBox(p : vec3f, b : vec3f, r : f32) -> f32 {
+  let q = abs(p) - b + vec3f(r);
+  return length(max(q, vec3f(0.0))) + min(max(q.x, max(q.y, q.z)), 0.0) - r;
+}
+fn sdCapsule(p : vec3f, a : vec3f, b : vec3f, r : f32) -> f32 {
+  let pa = p - a; let ba = b - a;
+  let h = clamp(dot(pa, ba) / dot(ba, ba), 0.0, 1.0);
+  return length(pa - ba * h) - r;
+}
+fn hiMul(id : f32) -> f32 { return select(1.0, 3.4, abs(u.hiId - id) < 0.5); }
+
+/* ---- station shells: glass, marched through ---- */
+fn mapGlass(p : vec3f) -> vec2f {
+  let a = sdRoundBox(p - vec3f(-1.70, 0.10, -0.50), vec3f(0.42), 0.05);
+  let b = sdRoundBox(p - vec3f( 0.10, 0.86,  0.35), vec3f(0.46), 0.05);
+  let c = sdRoundBox(p - vec3f( 1.70, -0.10, -0.30), vec3f(0.43), 0.05);
+  var d = a; var id = 1.0;
+  if (b < d) { d = b; id = 2.0; }
+  if (c < d) { d = c; id = 3.0; }
+  return vec2f(d, id);
+}
+
+/* ---- emissive field: what actually makes the picture ---- */
+fn glowPoint(p : vec3f, c : vec3f, col : vec3f, rad : f32, id : f32) -> vec3f {
+  let d = max(length(p - c) - rad, 0.0);
+  return col * hiMul(id) / (1.0 + d * d * 42.0);
+}
+fn glowLine(p : vec3f, a : vec3f, b : vec3f, col : vec3f, rad : f32, id : f32) -> vec3f {
+  let d = max(sdCapsule(p, a, b, rad), 0.0);
+  return col * hiMul(id) / (1.0 + d * d * 150.0);
+}
+fn arcPt(a : vec3f, b : vec3f, lift : f32, t : f32) -> vec3f {
+  return mix(a, b, t) + vec3f(0.0, sin(3.14159 * t) * lift, 0.0);
+}
+
+fn emitField(p : vec3f) -> vec3f {
+  var e = vec3f(0.0);
+  let SA = vec3f(-1.70, 0.10, -0.50);
+  let SB = vec3f( 0.10, 0.86,  0.35);
+  let SC = vec3f( 1.70, -0.10, -0.30);
+
+  /* cores inside the shells — this is the bleed-through */
+  let puls = 0.86 + 0.14 * sin(u.time * 1.7);
+  e += glowPoint(p, SA, vec3f(0.24, 0.72, 1.00) * 1.35 * puls, 0.13, 1.0);
+  e += glowPoint(p, SB, vec3f(1.00, 0.50, 0.10) * 1.55 * puls, 0.15, 2.0);
+  e += glowPoint(p, SC, vec3f(0.22, 1.00, 0.44) * 1.35 * puls, 0.13, 3.0);
+
+  /* crossing beams, arced */
+  for (var i = 0; i < 5; i = i + 1) {
+    let t0 = f32(i) / 5.0; let t1 = f32(i + 1) / 5.0;
+    e += glowLine(p, arcPt(SA, SB, 0.55, t0), arcPt(SA, SB, 0.55, t1), vec3f(0.30, 0.78, 1.00) * 0.55, 0.012, 5.0);
+    e += glowLine(p, arcPt(SB, SC, 0.55, t0), arcPt(SB, SC, 0.55, t1), vec3f(0.30, 0.78, 1.00) * 0.55, 0.012, 6.0);
+    e += glowLine(p, arcPt(SC, SA, -0.70, t0), arcPt(SC, SA, -0.70, t1), vec3f(0.40, 0.86, 1.00) * 0.55, 0.012, 7.0);
+  }
+
+  /* spine through the stations = axle */
+  e += glowLine(p, vec3f(-2.6, -0.35, -0.85), SA, vec3f(1.00, 0.80, 0.30) * 0.42, 0.010, 4.0);
+  e += glowLine(p, SA, SB, vec3f(1.00, 0.80, 0.30) * 0.42, 0.010, 4.0);
+  e += glowLine(p, SB, SC, vec3f(1.00, 0.80, 0.30) * 0.42, 0.010, 4.0);
+  e += glowLine(p, SC, vec3f(2.6, -0.45, 0.30), vec3f(1.00, 0.80, 0.30) * 0.42, 0.010, 4.0);
+
+  /* Hands cord — gold flow across the field */
+  for (var i = 0; i < 9; i = i + 1) {
+    let t0 = f32(i) / 9.0; let t1 = f32(i + 1) / 9.0;
+    let p0 = vec3f(-3.1 + t0 * 6.2, FLOOR_Y_C + 0.34 + sin(t0 * 5.0) * 0.40, 1.15 + cos(t0 * 6.6) * 0.50);
+    let p1 = vec3f(-3.1 + t1 * 6.2, FLOOR_Y_C + 0.34 + sin(t1 * 5.0) * 0.40, 1.15 + cos(t1 * 6.6) * 0.50);
+    e += glowLine(p, p0, p1, vec3f(1.00, 0.88, 0.55) * 0.60, 0.014, 0.0);
+  }
+
+  /* cluster orbs */
+  e += glowPoint(p, vec3f(-2.45, 0.55, 0.55), vec3f(0.22, 1.00, 0.46) * 0.75, 0.11,  8.0);
+  e += glowPoint(p, vec3f( 0.15, 1.85, -0.35), vec3f(0.22, 1.00, 0.46) * 0.75, 0.11,  9.0);
+  e += glowPoint(p, vec3f( 2.45, 0.40, 0.60), vec3f(0.22, 1.00, 0.46) * 0.75, 0.11, 10.0);
+
+  /* tick cells t0..t6 */
+  for (var i = 0; i < 7; i = i + 1) {
+    let x = -2.4 + f32(i) * 0.8;
+    e += glowPoint(p, vec3f(x, FLOOR_Y_C + 0.02, 1.75), vec3f(0.22, 0.70, 0.86) * 0.40, 0.08, 11.0 + f32(i));
+  }
+  /* escapement marks */
+  e += glowPoint(p, vec3f(-0.85, FLOOR_Y_C + 0.05, -1.35), vec3f(1.00, 0.76, 0.28) * 0.45, 0.06, 18.0);
+  e += glowPoint(p, vec3f( 0.90, FLOOR_Y_C + 0.05, -1.35), vec3f(1.00, 0.76, 0.28) * 0.45, 0.06, 19.0);
+  e += glowPoint(p, vec3f( 0.10, FLOOR_Y_C + 0.05, -2.05), vec3f(1.00, 0.76, 0.28) * 0.45, 0.06, 20.0);
+  /* audit stamps — dim warning hue */
+  for (var i = 0; i < 6; i = i + 1) {
+    let x = -2.0 + f32(i) * 0.8;
+    e += glowPoint(p, vec3f(x, FLOOR_Y_C + 0.04, -2.70), vec3f(0.90, 0.32, 0.20) * 0.30, 0.06, 21.0 + f32(i));
+  }
+  return e;
+}
+
+/* procedural lattice floor — a shader, not extruded bars */
+fn floorColor(q : vec2f) -> vec3f {
+  let g = abs(fract(q) - 0.5);
+  let line = min(g.x, g.y);
+  let w = fwidth(q.x) * 1.6 + 0.004;
+  let minor = 1.0 - smoothstep(0.0, w, line);
+  let g4 = abs(fract(q * 0.25) - 0.5);
+  let major = 1.0 - smoothstep(0.0, w * 0.9, min(g4.x, g4.y));
+  let fade = exp(-length(q) * 0.16);
+  return (vec3f(0.06, 0.34, 0.44) * minor * 0.55 + vec3f(0.14, 0.62, 0.78) * major * 0.85) * fade;
 }
 
 @fragment
 fn fs_main(input : VSOut) -> @location(0) vec4f {
-  let n = normalize(input.normal);
-  let L = normalize(u.lightDir.xyz);
-  let V = normalize(u.eyePos.xyz - input.worldPos);
-  let diff = max(dot(n, L), 0.0);
-  let H = normalize(L + V);
-  let spec = pow(max(dot(n, H), 0.0), 40.0);
-  let fres = pow(1.0 - abs(dot(n, V)), 2.4);
+  let aspect = u.res.x / u.res.y;
+  let uv = vec2f(input.uv.x * aspect, input.uv.y);
 
-  // opaque / lattice
-  var col = input.color * (0.22 + 0.78 * diff) + vec3f(0.65, 0.85, 1.0) * spec * 0.22;
+  let ro = u.eye.xyz;
+  let fwd = normalize(u.target.xyz - ro);
+  let rgt = normalize(cross(fwd, vec3f(0.0, 1.0, 0.0)));
+  let upv = cross(rgt, fwd);
+  let rd = normalize(fwd + (rgt * uv.x + upv * uv.y) * u.params.x);
 
-  // glass shell: dark body, bright rim (no alpha blending needed on black)
-  let glassCol = input.color * 0.12 + input.color * fres * 2.35
-               + vec3f(0.55, 0.85, 1.0) * spec * 0.55;
-  col = mix(col, glassCol, u.highlight.w);
+  var col = vec3f(0.0);
+  var trans = 1.0;
+  var t = 0.05;
 
-  // emissive core / beam / cord: unlit, rim-boosted
-  let emitCol = input.color * (1.35 + 1.15 * fres);
-  col = mix(col, emitCol, u.highlight.z);
+  for (var i = 0; i < 96; i = i + 1) {
+    let p = ro + rd * t;
+    let g = mapGlass(p);
 
-  // selection
-  col = mix(col, col * 1.30 + input.color * 0.55 + vec3f(0.10, 0.14, 0.18), u.highlight.x);
-  col = mix(col, col * 1.18 + vec3f(0.30, 0.52, 0.66), u.highlight.y);
+    /* volumetric emission along the ray — bleeds through glass */
+    let step = clamp(max(g.x, 0.02) * 0.85, 0.02, 0.30);
+    col += emitField(p) * step * trans * 0.42;
 
-  // gentle filmic roll-off so cores bloom instead of clipping flat
-  col = col / (col + vec3f(0.92));
-  col = pow(col, vec3f(0.85));
+    /* glass shell: rim, then keep going so the interior shows */
+    if (g.x < 0.006) {
+      let n = normalize(vec3f(
+        mapGlass(p + vec3f(0.002, 0.0, 0.0)).x - mapGlass(p - vec3f(0.002, 0.0, 0.0)).x,
+        mapGlass(p + vec3f(0.0, 0.002, 0.0)).x - mapGlass(p - vec3f(0.0, 0.002, 0.0)).x,
+        mapGlass(p + vec3f(0.0, 0.0, 0.002)).x - mapGlass(p - vec3f(0.0, 0.0, 0.002)).x));
+      let fres = pow(1.0 - abs(dot(n, rd)), 2.6);
+      let tint = select(select(vec3f(0.22, 1.00, 0.44), vec3f(1.00, 0.50, 0.10), g.y < 2.5),
+                        vec3f(0.24, 0.72, 1.00), g.y < 1.5);
+      col += (vec3f(0.55, 0.78, 0.95) * 0.22 + tint * 0.40) * fres * trans * hiMul(g.y);
+      trans *= 0.74;
+      t += 0.05;
+      continue;
+    }
+
+    /* floor plane */
+    if (rd.y < 0.0) {
+      let tf = (FLOOR_Y_C - ro.y) / rd.y;
+      if (tf > 0.0 && tf < t + step && tf > t - step) {
+        let fp = ro + rd * tf;
+        col += floorColor(fp.xz) * trans;
+        trans *= 0.10;
+      }
+    }
+
+    t += step;
+    if (t > 22.0 || trans < 0.02) { break; }
+  }
+
+  /* atmospheric lift + filmic roll-off so cores bloom instead of clipping */
+  col += vec3f(0.012, 0.018, 0.030);
+  col = col / (col + vec3f(0.85));
+  col = pow(col, vec3f(0.80));
   return vec4f(col, 1.0);
 }
-`;
+`.replace(/FLOOR_Y_C/g, FLOOR_Y.toFixed(2));
 
   async function initWebGPU() {
-    if (!navigator.gpu) {
-      gpuError.hidden = false;
-      return null;
-    }
+    if (!navigator.gpu) { gpuError.hidden = false; return null; }
     const adapter = await navigator.gpu.requestAdapter();
-    if (!adapter) {
-      gpuError.hidden = false;
-      return null;
-    }
+    if (!adapter) { gpuError.hidden = false; return null; }
     const device = await adapter.requestDevice();
     const context = canvas.getContext("webgpu");
-    if (!context) {
-      gpuError.hidden = false;
-      return null;
-    }
+    if (!context) { gpuError.hidden = false; return null; }
     const format = navigator.gpu.getPreferredCanvasFormat();
 
     function resize() {
-      const dpr = Math.min(window.devicePixelRatio || 1, 2);
+      /* glow-heavy look: internal res below dpr keeps phones smooth */
+      const dpr = Math.min(window.devicePixelRatio || 1, 1.35);
       const w = Math.max(1, Math.floor(canvas.clientWidth * dpr));
       const h = Math.max(1, Math.floor(canvas.clientHeight * dpr));
       if (canvas.width !== w || canvas.height !== h) {
-        canvas.width = w;
-        canvas.height = h;
-        context.configure({
-          device,
-          format,
-          alphaMode: "opaque",
-        });
+        canvas.width = w; canvas.height = h;
+        context.configure({ device, format, alphaMode: "opaque" });
       }
       return [w, h];
     }
     resize();
 
-    function makeBuffer(data) {
-      const buf = device.createBuffer({
-        size: data.byteLength,
-        usage: GPUBufferUsage.VERTEX | GPUBufferUsage.COPY_DST,
-      });
-      device.queue.writeBuffer(buf, 0, data);
-      return { buffer: buf, vertexCount: data.length / 9 };
-    }
-
-    /* stations: glass cage + emissive core */
-    const bufCageA = makeBuffer(buildCage(STATION.A.size, 0.052, GLASS_COL));
-    const bufCageB = makeBuffer(buildCage(STATION.B.size, 0.056, GLASS_COL));
-    const bufCageC = makeBuffer(buildCage(STATION.C.size, 0.054, GLASS_COL));
-    const bufCoreA = makeBuffer(buildCore(STATION.A.size * 0.30, STATION.A.core));
-    const bufCoreB = makeBuffer(buildCore(STATION.B.size * 0.32, STATION.B.core));
-    const bufCoreC = makeBuffer(buildCore(STATION.C.size * 0.30, STATION.C.core));
-
-    /* lattice floor + residual traces */
-    const bufFloor  = makeBuffer(buildFloor(3.6, 24, FLOOR_Y, [0.07, 0.26, 0.34], [0.13, 0.46, 0.58]));
-    const bufTraces = makeBuffer(buildTraces(FLOOR_Y, [0.16, 0.52, 0.44]));
-
-    /* spine through the stations = axle */
-    const bufSpine = makeBuffer(buildPath(
-      [[-2.45, -0.30, -0.80], STATION.A.pos, STATION.B.pos, STATION.C.pos, [2.45, -0.45, 0.35]],
-      0.030, [0.98, 0.80, 0.32]));
-
-    /* crossing beams AB / BC / CA */
-    const bufAB = makeBuffer(buildPath(arcPoints(STATION.A.pos, STATION.B.pos, 0.60, 26), 0.030, BEAM_COL));
-    const bufBC = makeBuffer(buildPath(arcPoints(STATION.B.pos, STATION.C.pos, 0.60, 26), 0.030, BEAM_COL));
-    const bufCA = makeBuffer(buildPath(arcPoints(STATION.C.pos, STATION.A.pos, -0.78, 30), 0.030, BEAM_COL));
-
-    /* Hands cord — gold/white flow near the spine */
-    const lacePts = [];
-    for (let i = 0; i <= 72; i++) {
-      const t = i / 72;
-      lacePts.push([
-        -3.0 + t * 6.0,
-        FLOOR_Y + 0.30 + Math.sin(t * Math.PI * 1.6) * 0.42 + t * 0.30,
-        1.05 + Math.cos(t * Math.PI * 2.2) * 0.46,
-      ]);
-    }
-    const bufLace = makeBuffer(buildPath(lacePts, 0.034, LACE_COL));
-
-    /* cluster orbs, tick cells, escapement marks, audit stamps */
-    const bufCluster = makeBuffer(buildCluster(0.30, CLUST_COL));
-    const bufTick    = makeBuffer(new Float32Array(boxAt([], 0, 0, 0, 0.56, 0.018, 0.34, [0.20, 0.62, 0.74])));
-    const bufEscape  = makeBuffer(new Float32Array(boxAt([], 0, 0, 0, 0.26, 0.10, 0.26, [0.95, 0.72, 0.28])));
-    const bufAudit   = makeBuffer(new Float32Array(boxAt([], 0, 0, 0, 0.30, 0.16, 0.30, AUDIT_COL)));
-
-    const shaderModule = device.createShaderModule({ code: SHADER });
+    const uniformBuffer = device.createBuffer({
+      size: 64, usage: GPUBufferUsage.UNIFORM | GPUBufferUsage.COPY_DST,
+    });
+    const module = device.createShaderModule({ code: SHADER });
     const pipeline = device.createRenderPipeline({
       layout: "auto",
-      vertex: {
-        module: shaderModule,
-        entryPoint: "vs_main",
-        buffers: [{
-          arrayStride: 36,
-          attributes: [
-            { shaderLocation: 0, offset: 0, format: "float32x3" },
-            { shaderLocation: 1, offset: 12, format: "float32x3" },
-            { shaderLocation: 2, offset: 24, format: "float32x3" },
-          ],
-        }],
-      },
-      fragment: {
-        module: shaderModule,
-        entryPoint: "fs_main",
-        targets: [{ format }],
-      },
-      primitive: { topology: "triangle-list", cullMode: "none" },
-      depthStencil: {
-        format: "depth24plus",
-        depthWriteEnabled: true,
-        depthCompare: "less",
-      },
-    });
-
-    const uniformSize = 256; // padded
-    const uniformBuffer = device.createBuffer({
-      size: uniformSize,
-      usage: GPUBufferUsage.UNIFORM | GPUBufferUsage.COPY_DST,
+      vertex: { module, entryPoint: "vs_main" },
+      fragment: { module, entryPoint: "fs_main", targets: [{ format }] },
+      primitive: { topology: "triangle-list" },
     });
     const bindGroup = device.createBindGroup({
       layout: pipeline.getBindGroupLayout(0),
       entries: [{ binding: 0, resource: { buffer: uniformBuffer } }],
     });
 
-    let depthTexture = null;
-    let depthView = null;
-    function ensureDepth(w, h) {
-      if (depthTexture && depthTexture.width === w && depthTexture.height === h) return;
-      if (depthTexture) depthTexture.destroy();
-      depthTexture = device.createTexture({
-        size: [w, h],
-        format: "depth24plus",
-        usage: GPUTextureUsage.RENDER_ATTACHMENT,
-      });
-      depthView = depthTexture.createView();
-    }
+    /* ——— orbit / zoom camera with real control ——— */
+    const TARGET = [0, -0.05, 0];
+    let yaw = -0.62, pitch = 0.42, radius = 7.4, userTouched = false;
 
-    // world centers for picking (gear bodies + mesh contact zones AB/BC/CA)
-    // mesh:true zones are preferred over gear centers when both hit
-    const pickTargets = [
-      { key: "A", pos: STATION.A.pos, radius: 0.58 },
-      { key: "B", pos: STATION.B.pos, radius: 0.62 },
-      { key: "C", pos: STATION.C.pos, radius: 0.58 },
-      { key: "axle", pos: [-1.35, -0.36, -0.62], radius: 0.26 },
-      { key: "axle", pos: [ 2.05, -0.40,  0.22], radius: 0.26 },
-      /* crossing beams — arc apex wins over station bodies (same keys) */
-      { key: "AB", pos: arcPoints(STATION.A.pos, STATION.B.pos, 0.60, 2)[1], radius: 0.40, mesh: true },
-      { key: "BC", pos: arcPoints(STATION.B.pos, STATION.C.pos, 0.60, 2)[1], radius: 0.40, mesh: true },
-      { key: "CA", pos: arcPoints(STATION.C.pos, STATION.A.pos, -0.78, 2)[1], radius: 0.42, mesh: true },
-      /* cluster orbs — one representative key per train; chips reach the rest */
-      { key: "A1", pos: CLUSTER_POS.A1, radius: 0.32, mesh: true },
-      { key: "B1", pos: CLUSTER_POS.B1, radius: 0.32, mesh: true },
-      { key: "C1", pos: CLUSTER_POS.C1, radius: 0.32, mesh: true },
-    ];
-    for (let i = 0; i < 7; i++) pickTargets.push({ key: "t" + i, pos: TICK_POS[i], radius: 0.30, mesh: true });
-    for (const k of ["E1", "E2", "R1"]) pickTargets.push({ key: k, pos: ESCAPE_POS[k], radius: 0.20, mesh: true });
-    for (let i = 1; i <= 6; i++) pickTargets.push({ key: "X" + i, pos: AUDIT_POS["X" + i], radius: 0.20, mesh: true });
+    /* Fit the scene instead of guessing per device. The bound covers every
+       emitter (stations, clusters, audits at z -2.70, cord at z +1.75).
+       On portrait the HORIZONTAL half-angle is the binding one, which is why
+       a phone has to stand much further back than a desktop. */
+    const SCENE_R = 4.4;
+    const FOV_SCALE = 0.72;
+    function autoRadius(aspect) {
+      const halfV = Math.atan(FOV_SCALE);
+      const halfH = Math.atan(FOV_SCALE * aspect);
+      const d = SCENE_R / Math.sin(Math.min(halfV, halfH));
+      return Math.min(17, Math.max(5.5, d * 1.06));
+    }
+    function camEye() {
+      const cp = Math.cos(pitch), sp = Math.sin(pitch);
+      return [
+        TARGET[0] + radius * cp * Math.sin(yaw),
+        TARGET[1] + radius * sp,
+        TARGET[2] + radius * cp * Math.cos(yaw),
+      ];
+    }
 
     let lastVP = mat4Identity();
-    let lastEye = [0, 0, 0];
-    let angle = 0;
-
-    function writeUniforms(mvp, model, lightDir, eye, highlight) {
-      // layout: mvp(64) + model(64) + light(16) + eye(16) + highlight(16) = 176
-      const data = new Float32Array(64);
-      data.set(mvp, 0);
-      data.set(model, 16);
-      data.set(lightDir, 32);
-      data.set([eye[0], eye[1], eye[2], 1], 36);
-      data.set(highlight, 40);
-      device.queue.writeBuffer(uniformBuffer, 0, data);
-    }
-
-    function drawMesh(pass, mesh, model, mvpBase, eye, light, hi) {
-      const mvp = mat4Multiply(mvpBase, model);
-      writeUniforms(mvp, model, light, eye, hi);
-      pass.setBindGroup(0, bindGroup);
-      pass.setVertexBuffer(0, mesh.buffer);
-      pass.draw(mesh.vertexCount);
-    }
-
-    function projectHud() {
-      /* Screen-fixed HUD — labels are a rail, not world-projected onto teeth. */
+    function writeUniforms(w, h, eye, fovScale, hiId, time) {
+      const d = new Float32Array(16);
+      d[0] = w; d[1] = h; d[2] = time; d[3] = hiId;
+      d.set([eye[0], eye[1], eye[2], 1], 4);
+      d.set([TARGET[0], TARGET[1], TARGET[2], 1], 8);
+      d[12] = fovScale;
+      device.queue.writeBuffer(uniformBuffer, 0, d);
     }
 
     function frame(ts) {
       const [w, h] = resize();
-      ensureDepth(w, h);
-      angle = ts * 0.00035;
-
       const aspect = w / Math.max(h, 1);
-      const proj = mat4Perspective((46 * Math.PI) / 180, aspect, 0.1, 100);
-      /* 3/4 view: +X shows YZ gear faces; +Z still reads shared axle spacing */
-      const eye = aspect < 0.95 ? [4.4, 3.1, 6.6] : [4.2, 2.5, 5.4];
-      const view = mat4LookAt(eye, [0, -0.10, 0], [0, 1, 0]);
-      // mild world tilt — axle still reads as one shaft without edge-on faces
-      const worldTilt = mat4RotateY(-0.16);
-      const vp = mat4Multiply(proj, mat4Multiply(view, worldTilt));
-      lastVP = vp;
-      lastEye = eye;
+      if (!userTouched) radius = autoRadius(aspect);
+      const eye = camEye();
+      const fovScale = FOV_SCALE;
 
-      const light = [0.72, 0.78, 0.42, 0];
+      /* keep JS picking in lockstep with the shader camera */
+      const proj = mat4Perspective(2 * Math.atan(fovScale), aspect, 0.1, 100);
+      lastVP = mat4Multiply(proj, mat4LookAt(eye, TARGET, [0, 1, 0]));
+
+      writeUniforms(w, h, eye, fovScale, KEY_ID[highlightKey] || 0, ts * 0.001);
 
       const enc = device.createCommandEncoder();
       const pass = enc.beginRenderPass({
         colorAttachments: [{
           view: context.getCurrentTexture().createView(),
-          clearValue: { r: 0.012, g: 0.017, b: 0.026, a: 1 },
-          loadOp: "clear",
-          storeOp: "store",
+          clearValue: { r: 0.008, g: 0.011, b: 0.018, a: 1 },
+          loadOp: "clear", storeOp: "store",
         }],
-        depthStencilAttachment: {
-          view: depthView,
-          depthClearValue: 1,
-          depthLoadOp: "clear",
-          depthStoreOp: "store",
-        },
       });
       pass.setPipeline(pipeline);
-
-      /* highlight = [solo, meshPair, emissive, glass] */
-      const M_GLASS = (hi) => [hi ? 1 : 0, 0, 0.10, 1];
-      const M_EMIT  = (hi) => [hi ? 1 : 0, 0, 1, 0];
-      const M_LINE  = (hi) => [hi ? 1 : 0, 0, 0.55, 0];
-      const meshPair = (highlightKey === "AB" || highlightKey === "BC" || highlightKey === "CA");
-      const pulse = 0.85 + 0.15 * Math.sin(ts * 0.0022);
-
-      /* floor lattice + residual traces (S1, S6) */
-      drawMesh(pass, bufFloor,  mat4Identity(), vp, eye, light, [0, 0, 0.42, 0]);
-      drawMesh(pass, bufTraces, mat4Identity(), vp, eye, light, [0, 0, 0.72, 0]);
-
-      /* tick cells t0–t6 */
-      for (let i = 0; i < 7; i++) {
-        drawMesh(pass, bufTick, mat4Translate(TICK_POS[i][0], TICK_POS[i][1], TICK_POS[i][2]),
-          vp, eye, light, M_LINE(highlightKey === "t" + i));
-      }
-      /* escapement marks E1 E2 R1 */
-      for (const k of ["E1", "E2", "R1"]) {
-        const q = ESCAPE_POS[k];
-        drawMesh(pass, bufEscape, mat4Translate(q[0], q[1], q[2]), vp, eye, light, M_EMIT(highlightKey === k));
-      }
-      /* audit stamps X1–X6 — dim warning hue */
-      for (let i = 1; i <= 6; i++) {
-        const q = AUDIT_POS["X" + i];
-        drawMesh(pass, bufAudit, mat4Translate(q[0], q[1], q[2]), vp, eye, light,
-          highlightKey === "X" + i ? M_EMIT(true) : [0, 0, 0.30, 0]);
-      }
-
-      /* Hands cord (S5) and spine/axle */
-      drawMesh(pass, bufLace, mat4Identity(), vp, eye, light, [0, 0, 1, 0]);
-      drawMesh(pass, bufSpine, mat4Identity(), vp, eye, light, M_EMIT(highlightKey === "axle"));
-
-      /* crossing beams (S4) */
-      drawMesh(pass, bufAB, mat4Identity(), vp, eye, light, M_EMIT(highlightKey === "AB"));
-      drawMesh(pass, bufBC, mat4Identity(), vp, eye, light, M_EMIT(highlightKey === "BC"));
-      drawMesh(pass, bufCA, mat4Identity(), vp, eye, light, M_EMIT(highlightKey === "CA"));
-
-      /* cluster orbs — slow independent drift */
-      const clusters = [["A1", bufCluster], ["B1", bufCluster], ["C1", bufCluster]];
-      clusters.forEach(([k, buf], i) => {
-        const q = CLUSTER_POS[k];
-        const m = mat4Multiply(mat4Translate(q[0], q[1], q[2]), mat4RotateY(angle * (1 + i * 0.4)));
-        drawMesh(pass, buf, m, vp, eye, light, M_EMIT(highlightKey === k));
-      });
-
-      /* stations: glass cage, then emissive core (S2, S3) */
-      function station(cage, core, st, key, inMesh) {
-        const solo = highlightKey === key;
-        const T = mat4Translate(st.pos[0], st.pos[1], st.pos[2]);
-        const spin = mat4Multiply(mat4RotateY(angle * 0.55), mat4RotateX(angle * 0.22));
-        drawMesh(pass, cage, mat4Multiply(T, spin), vp, eye, light,
-          solo ? M_GLASS(true) : (meshPair && inMesh ? [0, 1, 0.10, 1] : M_GLASS(false)));
-        const cm = mat4Multiply(T, mat4RotateY(-angle * 0.9));
-        drawMesh(pass, core, cm, vp, eye, light, [solo ? 1 : 0, 0, pulse, 0]);
-      }
-      station(bufCageA, bufCoreA, STATION.A, "A", highlightKey === "AB" || highlightKey === "CA");
-      station(bufCageB, bufCoreB, STATION.B, "B", highlightKey === "AB" || highlightKey === "BC");
-      station(bufCageC, bufCoreC, STATION.C, "C", highlightKey === "BC" || highlightKey === "CA");
-
+      pass.setBindGroup(0, bindGroup);
+      pass.draw(3);
       pass.end();
       device.queue.submit([enc.finish()]);
-      projectHud();
       requestAnimationFrame(frame);
     }
 
+    /* ——— pick targets (world points projected with the live camera) ——— */
+    const pickTargets = [
+      { key: "A", pos: STATION.A.pos, radius: 0.46 },
+      { key: "B", pos: STATION.B.pos, radius: 0.50 },
+      { key: "C", pos: STATION.C.pos, radius: 0.46 },
+      { key: "axle", pos: [-2.15, -0.14, -0.68], radius: 0.24 },
+      { key: "axle", pos: [ 2.15, -0.28, 0.00], radius: 0.24 },
+    ];
+    const mid = (a, b, lift) => [(a[0]+b[0])/2, (a[1]+b[1])/2 + lift, (a[2]+b[2])/2];
+    pickTargets.push({ key: "AB", pos: mid(STATION.A.pos, STATION.B.pos, 0.55), radius: 0.34, mesh: true });
+    pickTargets.push({ key: "BC", pos: mid(STATION.B.pos, STATION.C.pos, 0.55), radius: 0.34, mesh: true });
+    pickTargets.push({ key: "CA", pos: mid(STATION.C.pos, STATION.A.pos, -0.70), radius: 0.36, mesh: true });
+    for (const k of ["A1", "B1", "C1"]) pickTargets.push({ key: k, pos: CLUSTER_POS[k], radius: 0.30, mesh: true });
+    for (let i = 0; i < 7; i++) pickTargets.push({ key: "t" + i, pos: TICK_POS[i], radius: 0.28, mesh: true });
+    for (const k of ["E1", "E2", "R1"]) pickTargets.push({ key: k, pos: ESCAPE_POS[k], radius: 0.20, mesh: true });
+    for (let i = 1; i <= 6; i++) pickTargets.push({ key: "X" + i, pos: AUDIT_POS["X" + i], radius: 0.20, mesh: true });
+
     function hitAmong(targets, nx, ny) {
-      let best = null;
-      let bestDist = Infinity;
+      let best = null, bestDist = Infinity;
       targets.forEach(t => {
         const clip = transformPoint(lastVP, t.pos[0], t.pos[1], t.pos[2]);
-        const dx = clip[0] - nx;
-        const dy = clip[1] - ny;
-        const d = Math.hypot(dx, dy);
+        const d = Math.hypot(clip[0] - nx, clip[1] - ny);
         const edge = transformPoint(lastVP, t.pos[0] + t.radius, t.pos[1], t.pos[2]);
-        const pr = Math.max(0.04, Math.hypot(edge[0] - clip[0], edge[1] - clip[1]));
-        if (d < pr && d < bestDist) {
-          bestDist = d;
-          best = t.key;
-        }
+        const pr = Math.max(0.05, Math.hypot(edge[0] - clip[0], edge[1] - clip[1]));
+        if (d < pr && d < bestDist) { bestDist = d; best = t.key; }
       });
       return best;
     }
-
     function pick(clientX, clientY) {
       const rect = canvas.getBoundingClientRect();
       const nx = ((clientX - rect.left) / rect.width) * 2 - 1;
       const ny = 1 - ((clientY - rect.top) / rect.height) * 2;
-      /* Mesh contact zones win over gear/axle bodies (chips still select any key). */
-      const meshHit = hitAmong(pickTargets.filter(t => t.mesh), nx, ny);
-      if (meshHit) return meshHit;
-      return hitAmong(pickTargets.filter(t => !t.mesh), nx, ny);
+      return hitAmong(pickTargets.filter(t => t.mesh), nx, ny)
+          || hitAmong(pickTargets.filter(t => !t.mesh), nx, ny);
     }
 
+    /* ——— input: drag orbits, pinch/wheel zooms, tap selects ——— */
+    const pointers = new Map();
+    let dragged = false, lastX = 0, lastY = 0, pinchStart = 0, radiusStart = 0;
+
+    canvas.style.touchAction = "none";
     canvas.addEventListener("pointerdown", (e) => {
-      const key = pick(e.clientX, e.clientY);
-      if (key) show(key);
+      canvas.setPointerCapture(e.pointerId);
+      pointers.set(e.pointerId, [e.clientX, e.clientY]);
+      dragged = false; lastX = e.clientX; lastY = e.clientY;
+      if (pointers.size === 2) {
+        const [p1, p2] = [...pointers.values()];
+        pinchStart = Math.hypot(p1[0] - p2[0], p1[1] - p2[1]);
+        radiusStart = radius;
+      }
+    });
+    canvas.addEventListener("pointermove", (e) => {
+      if (!pointers.has(e.pointerId)) return;
+      pointers.set(e.pointerId, [e.clientX, e.clientY]);
+      if (pointers.size === 2 && pinchStart > 0) {
+        const [p1, p2] = [...pointers.values()];
+        const d = Math.hypot(p1[0] - p2[0], p1[1] - p2[1]);
+        radius = Math.min(18, Math.max(3.2, radiusStart * (pinchStart / Math.max(d, 1))));
+        userTouched = true; dragged = true;
+        return;
+      }
+      const dx = e.clientX - lastX, dy = e.clientY - lastY;
+      if (Math.hypot(dx, dy) > 2) dragged = true;
+      lastX = e.clientX; lastY = e.clientY;
+      yaw -= dx * 0.006;
+      pitch = Math.max(-0.25, Math.min(1.25, pitch + dy * 0.005));
+      userTouched = true;
+    });
+    function endPointer(e) {
+      if (pointers.size < 2) pinchStart = 0;
+      pointers.delete(e.pointerId);
+      if (!dragged) { const k = pick(e.clientX, e.clientY); if (k) show(k); }
+    }
+    canvas.addEventListener("pointerup", endPointer);
+    canvas.addEventListener("pointercancel", endPointer);
+    canvas.addEventListener("wheel", (e) => {
+      e.preventDefault();
+      radius = Math.min(18, Math.max(3.2, radius * (1 + Math.sign(e.deltaY) * 0.10)));
+      userTouched = true;
+    }, { passive: false });
+
+    const resetBtn = document.getElementById("camReset");
+    if (resetBtn) resetBtn.addEventListener("click", () => {
+      yaw = -0.62; pitch = 0.42; userTouched = false;
     });
 
     window.addEventListener("resize", () => resize());
-
     requestAnimationFrame(frame);
     return true;
   }
