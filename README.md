@@ -27,6 +27,8 @@ Same rule. Same strand. 3D stars and N-dimensional participation are readings of
 | [docs/graphics/](docs/graphics/) | Canonical source graphics. These define the project. |
 | [docs/systems-manifest.md](docs/systems-manifest.md) | Contract map extracted from those graphics: pieces, couplings, seams, open gaps. |
 | [LICENSE](LICENSE) | Apache-2.0 |
+| [AGENTS.md](AGENTS.md) | Standing orders for any Grok / Grok Bot / Grok Build session in this tree. |
+| [docs/grok-bot-profile.md](docs/grok-bot-profile.md) | Name, job, ASCII description, and first task to paste into Grok Bot. |
 
 There is no `src/` on purpose. Code that appears before the pointer-emission rule is locked will invent a second machine.
 
