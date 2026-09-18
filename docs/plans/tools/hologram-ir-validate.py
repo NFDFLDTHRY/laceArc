@@ -47,13 +47,14 @@ def validate(doc: object) -> list[str]:
             errors,
         )
 
+    door_ids: set[str] = set()
     doors = doc.get("doors")
     if not isinstance(doors, list):
         fail("doors must be a list", errors)
     else:
         if len(doors) != 7:
             fail(f"doors length must be 7 (got {len(doors)})", errors)
-        ids = []
+        ids: list[str] = []
         for i, door in enumerate(doors):
             if not isinstance(door, dict):
                 fail(f"doors[{i}] must be an object", errors)
@@ -63,6 +64,7 @@ def validate(doc: object) -> list[str]:
                 fail(f"doors[{i}].id must be a string", errors)
             else:
                 ids.append(did)
+        door_ids = set(ids)
         missing = [d for d in REQUIRED_DOOR_IDS if d not in ids]
         extra = [d for d in ids if d not in REQUIRED_DOOR_IDS]
         if missing:
@@ -84,6 +86,19 @@ def validate(doc: object) -> list[str]:
                     f"edges[{i}].kind {kind!r} not in {sorted(ALLOWED_EDGE_KINDS)}",
                     errors,
                 )
+            frm = edge.get("from")
+            to = edge.get("to")
+            if door_ids:
+                if not isinstance(frm, str) or frm not in door_ids:
+                    fail(
+                        f"edges[{i}].from {frm!r} not in doors",
+                        errors,
+                    )
+                if not isinstance(to, str) or to not in door_ids:
+                    fail(
+                        f"edges[{i}].to {to!r} not in doors",
+                        errors,
+                    )
 
     transforms = doc.get("transforms")
     if not isinstance(transforms, list):
@@ -99,6 +114,13 @@ def validate(doc: object) -> list[str]:
                     f"(got {tx.get('emission_touch')!r})",
                     errors,
                 )
+            door_id = tx.get("door_id")
+            if door_ids:
+                if not isinstance(door_id, str) or door_id not in door_ids:
+                    fail(
+                        f"transforms[{i}].door_id {door_id!r} not in doors",
+                        errors,
+                    )
 
     diags = doc.get("diagnostics")
     if not isinstance(diags, list) or len(diags) == 0:

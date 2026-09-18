@@ -228,9 +228,11 @@ Transform tokens in the hologram move along `dataflow` edges. Birth gates unlock
 - Auto-refresh on open: run extractor (or fetch last CI IR) → replace scene.  
 - Time scrubber binds to `timeline[]`.  
 - Picking a node shows door/item ports and diags — not holder gear contracts unless explicitly a secondary pane.  
-- WebGPU scene-graph (meshes/lines) fits this IR; full-screen SDF does not. Engine choice (vanilla WebGPU vs lawfully amended Three.js) is orthogonal and deferred.
+- **Current elaborated page:** Canvas 2D only (`docs/hologram/nostd-pipeline.html`) — no Three.js/CDN/npm. WebGPU scene-graph remains deferred; full-screen SDF is not the pipeline subject.
 
 The existing `docs/shadow-clock-gearing.html` remains a **Shadow holder** visual. It is not the AST pipeline hologram. Do not silently retitle it as nostd tracking.
+
+**IR ↔ picture binding (rigorous):** [hologram-ast-ir-viewer.md](hologram-ast-ir-viewer.md) — field→chrome map, edge visual grammar, transform token semantics, selection contract, fixture vs workspace, golden walkthrough, elaborated-viewer acceptance.
 
 ---
 
@@ -261,7 +263,7 @@ Done when:
 3. AST-hard-requirement and emission/`src/` gates are explicit.  
 4. plans README links this file.
 
-Not done for full pipeline: AST extractor against crates, adding `src/`. Validator + Layer III viewer are spiked on the golden fixture (see §9 ticks 3–4).
+Not done for full pipeline: AST extractor against crates, adding `src/`. Validator + Layer III viewer are elaborated on the golden fixture (see §9 ticks 3–4 and hologram-ast-ir-viewer.md).
 
 ---
 
@@ -270,5 +272,5 @@ Not done for full pipeline: AST extractor against crates, adding `src/`. Validat
 1. Human review of this IR.  
 2. Golden `HologramIr` fixture JSON (maps or hologram station). **Done** — `fixtures/hologram-ir-golden-v0.1.0.json`.  
 3. Host extractor / validator spike (std host tool) against fixture — still no Core `src/`. **Spiked** — `tools/hologram-ir-validate.py` checks golden IR (version, mode, emission_gate, 7 doors, edge kinds, emission_touch, diagnostics). Not a full AST extractor.  
-4. New Layer III viewer page bound to IR (hologram station) — mesh/graph, not SDF-as-pipeline. **Spiked** — `docs/hologram/nostd-pipeline.html` loads the golden fixture (Canvas 2D; no Three.js).  
+4. New Layer III viewer page bound to IR (hologram station) — mesh/graph, not SDF-as-pipeline. **Elaborated** — `docs/hologram/nostd-pipeline.html` (Canvas 2D; filters, inspection, transforms rail, timeline token, mobile). Binding: [hologram-ast-ir-viewer.md](hologram-ast-ir-viewer.md).  
 5. After emission acceptance: point extractor at real first-party crates as they birth.

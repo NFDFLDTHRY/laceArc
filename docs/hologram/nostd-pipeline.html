@@ -33,58 +33,116 @@
     font: 15px/1.45 "IBM Plex Sans", "Segoe UI", system-ui, sans-serif;
     min-height: 100%;
   }
+  a { color: var(--cyan); }
   header {
     padding: 1rem 1.25rem 0.75rem;
     border-bottom: 1px solid var(--hud-line);
     display: flex; flex-wrap: wrap; gap: 0.75rem 1.5rem;
-    align-items: baseline; justify-content: space-between;
-    background: linear-gradient(180deg, rgba(12, 21, 32, 0.9), transparent);
+    align-items: flex-start; justify-content: space-between;
+    background: linear-gradient(180deg, rgba(12, 21, 32, 0.95), transparent);
   }
   header h1 {
     margin: 0; font-size: 1.1rem; font-weight: 600; letter-spacing: 0.04em;
     color: var(--cyan);
     text-shadow: 0 0 18px rgba(62, 200, 255, 0.25);
   }
-  header .sub { color: var(--muted); font-size: 0.85rem; max-width: 48rem; margin: 0.35rem 0 0; }
-  header .badge {
+  header .sub { color: var(--muted); font-size: 0.85rem; max-width: 52rem; margin: 0.35rem 0 0; }
+  header .paths {
+    margin: 0.45rem 0 0;
+    font-size: 0.72rem; color: var(--muted);
+    font-family: ui-monospace, "Cascadia Code", "SF Mono", Menlo, monospace;
+    line-height: 1.55;
+  }
+  header .paths code { color: var(--door); }
+  .chip-row {
+    display: flex; flex-wrap: wrap; gap: 0.4rem;
+    align-items: center; justify-content: flex-end;
+  }
+  .badge, .chip {
     font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.1em;
     border: 1px solid var(--cyan); color: var(--cyan);
     padding: 0.25rem 0.55rem; border-radius: 2px;
     background: rgba(62, 200, 255, 0.06);
     white-space: nowrap;
   }
-  .note {
-    font-size: 0.75rem; color: var(--muted);
-    border-left: 2px solid var(--bracket);
-    padding: 0.35rem 0.75rem;
-    margin: 0.5rem 1.25rem 0;
-    max-width: 56rem;
-  }
+  .chip.mode-fixture { border-color: var(--warn); color: var(--warn); background: rgba(224,180,74,0.08); }
+  .chip.mode-workspace { border-color: var(--birth); color: var(--birth); background: rgba(77,255,138,0.08); }
+  .chip.gate-blocked { border-color: var(--danger); color: var(--danger); background: rgba(232,93,93,0.08); }
+  .chip.gate-accepted { border-color: var(--birth); color: var(--birth); background: rgba(77,255,138,0.08); }
+  .chip.neutral { border-color: var(--muted); color: var(--muted); }
   #diag-banner {
     display: flex; flex-wrap: wrap; gap: 0.4rem;
+    align-items: center;
     padding: 0.55rem 1.25rem;
     border-bottom: 1px solid var(--hud-line);
     min-height: 2rem;
   }
+  #diag-banner[hidden] { display: none; }
   .diag {
-    font-size: 0.72rem; letter-spacing: 0.04em;
+    font-size: 0.72rem; letter-spacing: 0.03em;
     padding: 0.2rem 0.5rem; border-radius: 2px;
     border: 1px solid;
+    max-width: 100%;
   }
   .diag.info { color: var(--cyan); border-color: var(--cyan); background: rgba(62,200,255,0.08); }
   .diag.warn { color: var(--warn); border-color: var(--warn); background: rgba(224,180,74,0.1); }
   .diag.error { color: var(--danger); border-color: var(--danger); background: rgba(232,93,93,0.1); }
   .diag.load-err { color: var(--danger); border-color: var(--danger); }
+  .diag-dismiss {
+    margin-left: auto;
+    font-size: 0.7rem;
+    color: var(--muted);
+    background: transparent;
+    border: 1px solid var(--hud-line);
+    padding: 0.2rem 0.5rem;
+  }
+  .legend {
+    display: flex; flex-wrap: wrap; gap: 0.45rem 0.65rem;
+    padding: 0.45rem 1.25rem;
+    border-bottom: 1px solid var(--hud-line);
+    font-size: 0.72rem; color: var(--muted);
+    align-items: center;
+  }
+  .legend .lbl { color: var(--muted); margin-right: 0.25rem; }
+  .legend button.filter {
+    font: inherit; font-size: 0.72rem;
+    color: var(--ink);
+    background: rgba(12,16,24,0.8);
+    border: 1px solid var(--hud-line);
+    border-radius: 2px;
+    padding: 0.28rem 0.55rem;
+    cursor: pointer;
+    display: inline-flex; align-items: center; gap: 0.35rem;
+  }
+  .legend button.filter::before {
+    content: "";
+    display: inline-block;
+    width: 0.85rem; height: 0.22rem;
+    border-radius: 1px;
+  }
+  .legend button.filter.call::before { background: var(--call); }
+  .legend button.filter.birth_before::before { background: var(--birth); }
+  .legend button.filter.premise::before {
+    background: transparent;
+    border-top: 2px dashed var(--premise);
+    height: 0;
+  }
+  .legend button.filter.dataflow::before { background: var(--dataflow); height: 0.28rem; }
+  .legend button.filter.off {
+    opacity: 0.38;
+    text-decoration: line-through;
+  }
+  .legend button.filter:focus-visible { outline: 1px solid var(--cyan); }
   .layout {
     display: grid;
-    grid-template-columns: minmax(0, 1fr) minmax(260px, 340px);
+    grid-template-columns: minmax(0, 1fr) minmax(280px, 360px);
     gap: 0;
-    min-height: calc(100vh - 11rem);
+    min-height: calc(100vh - 16rem);
   }
   .stage {
     position: relative;
     border-right: 1px solid var(--hud-line);
-    min-height: 320px;
+    min-height: 360px;
     background:
       linear-gradient(rgba(62,200,255,0.03) 1px, transparent 1px),
       linear-gradient(90deg, rgba(62,200,255,0.03) 1px, transparent 1px);
@@ -94,7 +152,7 @@
     display: block;
     width: 100%;
     height: 100%;
-    min-height: 320px;
+    min-height: 360px;
     cursor: pointer;
     touch-action: manipulation;
   }
@@ -102,7 +160,7 @@
     background: var(--panel);
     padding: 0.85rem 1rem 1.25rem;
     overflow: auto;
-    max-height: calc(100vh - 11rem);
+    max-height: calc(100vh - 16rem);
   }
   .side h2 {
     margin: 0 0 0.5rem;
@@ -110,6 +168,13 @@
     text-transform: uppercase;
     letter-spacing: 0.12em;
     color: var(--teal);
+  }
+  .side h3 {
+    margin: 0.85rem 0 0.35rem;
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--muted);
   }
   .side .empty { color: var(--muted); font-size: 0.85rem; }
   .side dl {
@@ -120,38 +185,76 @@
   }
   .side dt { color: var(--muted); }
   .side dd { margin: 0; word-break: break-word; }
-  .side pre {
-    margin: 0.5rem 0 0;
-    font-size: 0.72rem;
-    background: #080c12;
-    border: 1px solid var(--hud-line);
-    padding: 0.5rem;
-    overflow: auto;
-    max-height: 14rem;
-    color: var(--door);
+  .edge-list {
+    margin: 0; padding: 0; list-style: none;
+    font-size: 0.78rem;
   }
-  .legend {
-    display: flex; flex-wrap: wrap; gap: 0.55rem 0.9rem;
-    padding: 0.45rem 1.25rem;
-    border-bottom: 1px solid var(--hud-line);
-    font-size: 0.72rem; color: var(--muted);
+  .edge-list li {
+    margin: 0.35rem 0;
+    padding: 0.35rem 0.45rem;
+    border-left: 3px solid var(--muted);
+    background: rgba(8,12,18,0.55);
   }
-  .legend span::before {
-    content: "";
+  .edge-list li.call { border-color: var(--call); }
+  .edge-list li.birth_before { border-color: var(--birth); }
+  .edge-list li.premise { border-color: var(--premise); }
+  .edge-list li.dataflow { border-color: var(--dataflow); }
+  .edge-list .kind {
+    font-size: 0.65rem; text-transform: uppercase; letter-spacing: 0.08em;
+    color: var(--muted);
+  }
+  .edge-list .note { color: var(--muted); font-size: 0.72rem; margin-top: 0.15rem; }
+  .tx-chip {
     display: inline-block;
-    width: 0.7rem; height: 0.2rem;
-    margin-right: 0.35rem;
-    vertical-align: middle;
-    border-radius: 1px;
+    margin: 0.2rem 0.25rem 0 0;
+    padding: 0.2rem 0.45rem;
+    font-size: 0.72rem;
+    border: 1px solid rgba(255,138,58,0.55);
+    border-radius: 2px;
+    color: var(--door);
+    background: rgba(255,138,58,0.08);
+    cursor: pointer;
   }
-  .legend .call::before { background: var(--call); }
-  .legend .birth::before { background: var(--birth); }
-  .legend .premise::before { background: var(--premise); }
-  .legend .dataflow::before { background: var(--dataflow); }
+  .tx-chip:hover, .tx-chip:focus-visible {
+    background: rgba(255,138,58,0.2);
+    outline: none;
+  }
+  .tx-rail {
+    display: flex; flex-wrap: wrap; gap: 0.4rem;
+    padding: 0.55rem 1.25rem;
+    border-top: 1px solid var(--hud-line);
+    border-bottom: 1px solid var(--hud-line);
+    background: rgba(8, 12, 18, 0.75);
+    align-items: center;
+  }
+  .tx-rail .lbl {
+    font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.1em;
+    color: var(--teal); margin-right: 0.35rem; white-space: nowrap;
+  }
+  .tx-rail button.tx {
+    font: inherit; font-size: 0.78rem;
+    color: var(--ink);
+    background: rgba(255,138,58,0.08);
+    border: 1px solid rgba(255,138,58,0.45);
+    border-radius: 2px;
+    padding: 0.35rem 0.65rem;
+    cursor: pointer;
+    white-space: normal;
+    text-align: left;
+    max-width: 100%;
+  }
+  .tx-rail button.tx .seq {
+    color: var(--dataflow); font-size: 0.68rem; margin-right: 0.35rem;
+  }
+  .tx-rail button.tx.active {
+    background: rgba(255,138,58,0.28);
+    border-color: var(--dataflow);
+    box-shadow: 0 0 10px rgba(255,138,58,0.25);
+  }
   .controls {
     display: flex; flex-wrap: wrap; gap: 0.5rem 0.75rem;
     align-items: center;
-    padding: 0.55rem 1.25rem 0.85rem;
+    padding: 0.55rem 1.25rem 0.75rem;
     border-top: 1px solid var(--hud-line);
     background: rgba(8, 12, 18, 0.85);
   }
@@ -168,78 +271,126 @@
     background: rgba(62, 200, 255, 0.18);
     outline: none;
   }
-  button:disabled {
-    opacity: 0.45; cursor: not-allowed;
-  }
+  button:disabled { opacity: 0.45; cursor: not-allowed; }
   .scrub {
-    flex: 1 1 12rem;
+    flex: 1 1 14rem;
     display: flex; align-items: center; gap: 0.5rem;
     min-width: 10rem;
   }
   .scrub input[type="range"] { flex: 1; accent-color: var(--cyan); }
-  .scrub .label { font-size: 0.72rem; color: var(--muted); min-width: 7rem; }
-  #status-line {
-    font-size: 0.75rem; color: var(--muted);
+  .scrub .label { font-size: 0.72rem; color: var(--muted); min-width: 5rem; }
+  #event-summary {
+    font-size: 0.78rem; color: var(--door);
     width: 100%;
+    padding: 0.15rem 0 0;
   }
+  #status-line {
+    font-size: 0.72rem; color: var(--muted);
+    width: 100%;
+    font-family: ui-monospace, "Cascadia Code", Menlo, monospace;
+  }
+  footer.explicit {
+    padding: 0.85rem 1.25rem 1.25rem;
+    border-top: 1px solid var(--hud-line);
+    font-size: 0.78rem;
+    color: var(--muted);
+    line-height: 1.55;
+  }
+  footer.explicit strong { color: var(--warn); font-weight: 600; }
+  footer.explicit code { color: var(--door); font-size: 0.85em; }
   @media (max-width: 900px) {
-    .layout { grid-template-columns: 1fr; }
-    .stage { border-right: none; border-bottom: 1px solid var(--hud-line); min-height: 42vh; }
+    .layout { grid-template-columns: 1fr; min-height: 0; }
+    .stage { border-right: none; border-bottom: 1px solid var(--hud-line); min-height: 48vh; }
     .side { max-height: none; }
-    header h1 { font-size: 0.95rem; }
+    header h1 { font-size: 0.98rem; }
     header .sub { font-size: 0.78rem; }
+    .tx-rail button.tx { font-size: 0.74rem; }
+    .chip-row { justify-content: flex-start; }
   }
 </style>
 </head>
 <body>
 <header>
   <div>
-    <h1>LaceArc / nostd pipeline hologram (Layer III)</h1>
-    <p class="sub">AST→IR projection — fixture mode until src/ + emission acceptance</p>
+    <h1>LaceArc / nostd pipeline hologram</h1>
+    <p class="sub">Layer III · AST→IR projection of planned nostd doors, typed edges, and transforms across time. Fixture-honest until src/ + emission acceptance.</p>
+    <p class="paths">
+      schema: <code>docs/plans/hologram-ast-ir.md</code><br/>
+      golden: <code>docs/plans/fixtures/hologram-ir-golden-v0.1.0.json</code><br/>
+      validate: <code>docs/plans/tools/hologram-ir-validate.py</code><br/>
+      binding: <code>docs/plans/hologram-ast-ir-viewer.md</code>
+    </p>
   </div>
-  <span class="badge">Layer III · read-only</span>
+  <div class="chip-row" id="header-chips" aria-live="polite">
+    <span class="badge">Layer III · read-only</span>
+    <span class="chip neutral" id="chip-mode">mode: —</span>
+    <span class="chip neutral" id="chip-gate">emission_gate: —</span>
+  </div>
 </header>
-<p class="note">
-  Not <code>shadow-clock-gearing.html</code>. Not the {A,B,C} holder machine.
-  This page projects planned nostd doors, typed edges, and transforms across time from HologramIr.
-</p>
+
 <div id="diag-banner" aria-live="polite"></div>
-<div class="legend" aria-hidden="true">
-  <span class="call">call</span>
-  <span class="birth">birth_before</span>
-  <span class="premise">premise</span>
-  <span class="dataflow">dataflow</span>
+
+<div class="legend" role="group" aria-label="Edge kind filters">
+  <span class="lbl">Edges (toggle):</span>
+  <button type="button" class="filter call" data-kind="call" aria-pressed="true">call</button>
+  <button type="button" class="filter birth_before" data-kind="birth_before" aria-pressed="true">birth_before</button>
+  <button type="button" class="filter premise" data-kind="premise" aria-pressed="true">premise</button>
+  <button type="button" class="filter dataflow" data-kind="dataflow" aria-pressed="true">dataflow</button>
 </div>
+
 <div class="layout">
   <div class="stage">
-    <canvas id="graph" width="800" height="480" role="img" aria-label="Nostd pipeline door graph"></canvas>
+    <canvas id="graph" width="800" height="520" role="img" aria-label="Nostd pipeline door graph"></canvas>
   </div>
   <aside class="side" id="side">
-    <h2>Selection</h2>
-    <p class="empty" id="side-empty">Tap a door or transform node.</p>
+    <h2>Inspection</h2>
+    <p class="empty" id="side-empty">Tap a door on the graph or a transform on the rail. Selection shows ports, incident edges by kind, and related transforms.</p>
     <div id="side-body" hidden></div>
   </aside>
 </div>
+
+<div class="tx-rail" id="tx-rail" aria-label="Transforms rail">
+  <span class="lbl">Transforms</span>
+  <span class="empty" id="tx-rail-empty" style="font-size:0.78rem;color:var(--muted)">Load IR…</span>
+</div>
+
 <div class="controls">
   <button type="button" id="btn-reload">Reload IR</button>
-  <button type="button" id="btn-play" disabled>Play timeline</button>
+  <button type="button" id="btn-play" disabled>Play</button>
   <button type="button" id="btn-pause" disabled>Pause</button>
   <div class="scrub">
     <span class="label" id="scrub-label">t: —</span>
     <input type="range" id="scrub" min="0" max="0" value="0" disabled aria-label="Timeline scrubber"/>
   </div>
+  <div id="event-summary">Timeline idle.</div>
   <div id="status-line">Loading IR…</div>
 </div>
+
+<footer class="explicit">
+  <strong>Not</strong> <code>shadow-clock-gearing.html</code>.
+  <strong>Not</strong> the {A,B,C} holder machine.
+  This page projects HologramIr only — planned nostd doors, typed edges, transforms, timeline.
+  AST <code>items[]</code> stay empty until an extractor runs.
+  Emission remains <code>[GAP]</code>; fixture doors are not proved births; no <code>src/</code>.
+</footer>
+
 <script>
 (function () {
   "use strict";
 
   var IR_URL = "../plans/fixtures/hologram-ir-golden-v0.1.0.json";
+  var EDGE_KINDS = ["dataflow", "birth_before", "call", "premise"]; // paint order bottom→top
   var EDGE_COLORS = {
     call: "#3ec8ff",
     birth_before: "#4dff8a",
     premise: "#9b7bff",
     dataflow: "#ff8a3a"
+  };
+  var BEND = {
+    dataflow: -18,
+    birth_before: 22,
+    call: 0,
+    premise: 14
   };
 
   var canvas = document.getElementById("graph");
@@ -249,19 +400,47 @@
   var selected = null;
   var timelineIdx = 0;
   var playing = false;
-  var playToken = 0;
   var animT = 0;
   var animPath = null;
   var animRaf = 0;
   var dpr = Math.max(1, window.devicePixelRatio || 1);
+  var edgeOn = { call: true, birth_before: true, premise: true, dataflow: true };
+  var diagsDismissed = false;
 
   function setStatus(msg) {
     document.getElementById("status-line").textContent = msg;
   }
 
+  function setEventSummary(msg) {
+    document.getElementById("event-summary").textContent = msg;
+  }
+
+  function updateChips() {
+    var modeEl = document.getElementById("chip-mode");
+    var gateEl = document.getElementById("chip-gate");
+    if (!ir) {
+      modeEl.textContent = "mode: —";
+      modeEl.className = "chip neutral";
+      gateEl.textContent = "emission_gate: —";
+      gateEl.className = "chip neutral";
+      return;
+    }
+    var mode = ir.mode || "?";
+    modeEl.textContent = "mode: " + mode;
+    modeEl.className = "chip mode-" + (mode === "workspace" ? "workspace" : "fixture");
+    var gate = (ir.source && ir.source.emission_gate) || "?";
+    gateEl.textContent = "emission_gate: " + gate;
+    gateEl.className = "chip gate-" + (gate === "accepted" ? "accepted" : "blocked");
+  }
+
   function showDiags(diags, loadError) {
     var el = document.getElementById("diag-banner");
     el.innerHTML = "";
+    if (diagsDismissed && !loadError) {
+      el.hidden = true;
+      return;
+    }
+    el.hidden = false;
     if (loadError) {
       var bad = document.createElement("span");
       bad.className = "diag load-err error";
@@ -277,28 +456,38 @@
       s.textContent = (d.code || "?") + (d.message ? " — " + d.message : "");
       el.appendChild(s);
     });
+    if ((diags || []).length) {
+      var dismiss = document.createElement("button");
+      dismiss.type = "button";
+      dismiss.className = "diag-dismiss";
+      dismiss.textContent = "Dismiss diags";
+      dismiss.addEventListener("click", function () {
+        diagsDismissed = true;
+        el.hidden = true;
+      });
+      el.appendChild(dismiss);
+    }
   }
 
   function layoutDoors(doors, w, h) {
     positions = {};
     var n = doors.length;
-    var padX = Math.max(48, w * 0.08);
-    var padY = Math.max(56, h * 0.18);
+    var padX = Math.max(56, w * 0.07);
     var usableW = w - padX * 2;
-    var midY = h * 0.42;
-    var amp = Math.min(h * 0.22, 90);
+    var midY = Math.min(h * 0.40, h - 130);
+    var amp = Math.min(h * 0.18, 78);
     doors.forEach(function (d, i) {
       var t = n === 1 ? 0.5 : i / (n - 1);
       var x = padX + t * usableW;
       var y = midY + Math.sin(t * Math.PI) * amp;
-      positions[d.id] = { x: x, y: y, r: 22, door: d };
+      positions[d.id] = { x: x, y: y, r: 26, door: d };
     });
   }
 
   function resize() {
     var stage = canvas.parentElement;
     var w = Math.max(320, stage.clientWidth);
-    var h = Math.max(280, stage.clientHeight || 420);
+    var h = Math.max(300, stage.clientHeight || 440);
     canvas.width = Math.floor(w * dpr);
     canvas.height = Math.floor(h * dpr);
     canvas.style.width = w + "px";
@@ -308,27 +497,112 @@
     draw();
   }
 
-  function drawArrow(x1, y1, x2, y2, color, width) {
-    var dx = x2 - x1, dy = y2 - y1;
+  function curvePoints(a, b, kind) {
+    var midX = (a.x + b.x) / 2;
+    var midY = (a.y + b.y) / 2;
+    var dx = b.x - a.x, dy = b.y - a.y;
     var len = Math.sqrt(dx * dx + dy * dy) || 1;
-    var ux = dx / len, uy = dy / len;
-    var inset = 24;
-    var sx = x1 + ux * inset, sy = y1 + uy * inset;
-    var ex = x2 - ux * inset, ey = y2 - uy * inset;
-    ctx.strokeStyle = color;
-    ctx.lineWidth = width || 1.5;
+    var nx = -dy / len, ny = dx / len;
+    var bend = BEND[kind] != null ? BEND[kind] : 0;
+    return { cx: midX + nx * bend, cy: midY + ny * bend };
+  }
+
+  function edgeIncident(e) {
+    if (!selected || selected.type !== "door") return false;
+    return e.from === selected.id || e.to === selected.id;
+  }
+
+  function drawEdge(e, a, b) {
+    var col = EDGE_COLORS[e.kind] || "#7a8a9c";
+    var c = curvePoints(a, b, e.kind);
+    var incident = edgeIncident(e);
+    var dim = selected && selected.type === "door" && !incident;
+    ctx.save();
+    ctx.globalAlpha = dim ? 0.18 : (e.kind === "premise" ? 0.85 : 0.95);
+    if (incident) {
+      ctx.shadowColor = col;
+      ctx.shadowBlur = 10;
+    }
+    ctx.strokeStyle = col;
+    if (e.kind === "premise") {
+      ctx.setLineDash([6, 5]);
+      ctx.lineWidth = incident ? 2.4 : 1.6;
+    } else if (e.kind === "dataflow") {
+      ctx.setLineDash([]);
+      ctx.lineWidth = incident ? 3.0 : 2.2;
+    } else if (e.kind === "birth_before") {
+      ctx.setLineDash([]);
+      ctx.lineWidth = incident ? 2.6 : 1.9;
+    } else {
+      ctx.setLineDash([]);
+      ctx.lineWidth = incident ? 2.4 : 1.5;
+    }
     ctx.beginPath();
-    ctx.moveTo(sx, sy);
-    ctx.lineTo(ex, ey);
+    ctx.moveTo(a.x, a.y);
+    ctx.quadraticCurveTo(c.cx, c.cy, b.x, b.y);
     ctx.stroke();
+    ctx.setLineDash([]);
+    ctx.shadowBlur = 0;
+
+    var t = 0.90;
+    var qx = (1 - t) * (1 - t) * a.x + 2 * (1 - t) * t * c.cx + t * t * b.x;
+    var qy = (1 - t) * (1 - t) * a.y + 2 * (1 - t) * t * c.cy + t * t * b.y;
+    var tx = 2 * (1 - t) * (c.cx - a.x) + 2 * t * (b.x - c.cx);
+    var ty = 2 * (1 - t) * (c.cy - a.y) + 2 * t * (b.y - c.cy);
+    var tl = Math.sqrt(tx * tx + ty * ty) || 1;
+    tx /= tl; ty /= tl;
     var ah = 7;
+    ctx.fillStyle = col;
     ctx.beginPath();
-    ctx.moveTo(ex, ey);
-    ctx.lineTo(ex - ux * ah - uy * ah * 0.55, ey - uy * ah + ux * ah * 0.55);
-    ctx.lineTo(ex - ux * ah + uy * ah * 0.55, ey - uy * ah - ux * ah * 0.55);
+    ctx.moveTo(qx, qy);
+    ctx.lineTo(qx - tx * ah - ty * ah * 0.5, qy - ty * ah + tx * ah * 0.5);
+    ctx.lineTo(qx - tx * ah + ty * ah * 0.5, qy - ty * ah - tx * ah * 0.5);
     ctx.closePath();
-    ctx.fillStyle = color;
     ctx.fill();
+    ctx.restore();
+  }
+
+  function drawDoor(d) {
+    var p = positions[d.id];
+    if (!p) return;
+    var sel = selected && (
+      (selected.type === "door" && selected.id === d.id) ||
+      (selected.type === "transform" && selected.transform && selected.transform.door_id === d.id)
+    );
+    ctx.beginPath();
+    ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+    ctx.fillStyle = sel ? "rgba(62,200,255,0.28)" : "rgba(12,16,24,0.94)";
+    ctx.fill();
+    ctx.strokeStyle = sel ? "#3ec8ff" : "#e8dcc8";
+    ctx.lineWidth = sel ? 2.8 : 1.6;
+    ctx.stroke();
+
+    // birth index badge
+    var bx = p.x + p.r * 0.72;
+    var by = p.y - p.r * 0.72;
+    ctx.beginPath();
+    ctx.arc(bx, by, 9, 0, Math.PI * 2);
+    ctx.fillStyle = "#0c1018";
+    ctx.fill();
+    ctx.strokeStyle = "#4dff8a";
+    ctx.lineWidth = 1.2;
+    ctx.stroke();
+    ctx.fillStyle = "#4dff8a";
+    ctx.font = "600 10px system-ui, sans-serif";
+    ctx.textAlign = "center";
+    ctx.textBaseline = "middle";
+    ctx.fillText(String(d.birth_index || "?"), bx, by);
+
+    // full door name (not truncated)
+    ctx.fillStyle = "#e6eef6";
+    ctx.font = "600 12px system-ui, sans-serif";
+    ctx.textAlign = "center";
+    ctx.textBaseline = "middle";
+    ctx.fillText(d.id, p.x, p.y + 2);
+
+    ctx.fillStyle = "#7a8a9c";
+    ctx.font = "9px system-ui, sans-serif";
+    ctx.fillText("b" + (d.birth_index || "?"), p.x, p.y + p.r + 14);
   }
 
   function draw() {
@@ -342,100 +616,17 @@
       return;
     }
 
-    var edges = ir.edges || [];
-    var kindOrder = { birth_before: 0, premise: 1, call: 2, dataflow: 3 };
-    edges.slice().sort(function (a, b) {
-      return (kindOrder[a.kind] || 9) - (kindOrder[b.kind] || 9);
-    }).forEach(function (e) {
-      var a = positions[e.from], b = positions[e.to];
-      if (!a || !b) return;
-      var col = EDGE_COLORS[e.kind] || "#7a8a9c";
-      var lw = e.kind === "dataflow" ? 2.2 : e.kind === "birth_before" ? 1.8 : 1.4;
-      // slight curve offset by kind so parallel edges separate
-      var midX = (a.x + b.x) / 2;
-      var midY = (a.y + b.y) / 2;
-      var dx = b.x - a.x, dy = b.y - a.y;
-      var len = Math.sqrt(dx * dx + dy * dy) || 1;
-      var nx = -dy / len, ny = dx / len;
-      var bend = (kindOrder[e.kind] || 0) * 10 - 12;
-      var cx = midX + nx * bend;
-      var cy = midY + ny * bend;
-      ctx.strokeStyle = col;
-      ctx.lineWidth = lw;
-      ctx.globalAlpha = e.kind === "premise" ? 0.75 : 0.9;
-      ctx.beginPath();
-      ctx.moveTo(a.x, a.y);
-      ctx.quadraticCurveTo(cx, cy, b.x, b.y);
-      ctx.stroke();
-      ctx.globalAlpha = 1;
-      // arrowhead near end
-      var t = 0.92;
-      var qx = (1 - t) * (1 - t) * a.x + 2 * (1 - t) * t * cx + t * t * b.x;
-      var qy = (1 - t) * (1 - t) * a.y + 2 * (1 - t) * t * cy + t * t * b.y;
-      var tx = 2 * (1 - t) * (cx - a.x) + 2 * t * (b.x - cx);
-      var ty = 2 * (1 - t) * (cy - a.y) + 2 * t * (b.y - cy);
-      var tl = Math.sqrt(tx * tx + ty * ty) || 1;
-      tx /= tl; ty /= tl;
-      var ah = 6;
-      ctx.fillStyle = col;
-      ctx.beginPath();
-      ctx.moveTo(qx, qy);
-      ctx.lineTo(qx - tx * ah - ty * ah * 0.5, qy - ty * ah + tx * ah * 0.5);
-      ctx.lineTo(qx - tx * ah + ty * ah * 0.5, qy - ty * ah - tx * ah * 0.5);
-      ctx.closePath();
-      ctx.fill();
+    EDGE_KINDS.forEach(function (kind) {
+      if (!edgeOn[kind]) return;
+      (ir.edges || []).forEach(function (e) {
+        if (e.kind !== kind) return;
+        var a = positions[e.from], b = positions[e.to];
+        if (!a || !b) return;
+        drawEdge(e, a, b);
+      });
     });
 
-    (ir.doors || []).forEach(function (d) {
-      var p = positions[d.id];
-      if (!p) return;
-      var sel = selected && selected.type === "door" && selected.id === d.id;
-      ctx.beginPath();
-      ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
-      ctx.fillStyle = sel ? "rgba(62,200,255,0.25)" : "rgba(12,16,24,0.92)";
-      ctx.fill();
-      ctx.strokeStyle = sel ? "#3ec8ff" : "#e8dcc8";
-      ctx.lineWidth = sel ? 2.5 : 1.5;
-      ctx.stroke();
-      ctx.fillStyle = "#e6eef6";
-      ctx.font = "600 11px system-ui, sans-serif";
-      ctx.textAlign = "center";
-      ctx.textBaseline = "middle";
-      ctx.fillText(String(d.birth_index || ""), p.x, p.y - 4);
-      ctx.font = "10px system-ui, sans-serif";
-      ctx.fillStyle = "#3ec8ff";
-      ctx.fillText(d.id, p.x, p.y + 10);
-      ctx.fillStyle = "#7a8a9c";
-      ctx.font = "9px system-ui, sans-serif";
-      ctx.fillText("b" + (d.birth_index || "?"), p.x, p.y + p.r + 12);
-    });
-
-    // transform chips under arc (dataflow pipeline order)
-    var txs = (ir.transforms || []).slice().sort(function (a, b) {
-      return (a.seq || 0) - (b.seq || 0);
-    });
-    var chipY = h - 48;
-    var chipPad = 40;
-    txs.forEach(function (tx, i) {
-      var t = txs.length === 1 ? 0.5 : i / (txs.length - 1);
-      var x = chipPad + t * (w - chipPad * 2);
-      var sel = selected && selected.type === "transform" && selected.id === tx.id;
-      ctx.fillStyle = sel ? "rgba(255,138,58,0.25)" : "rgba(8,12,18,0.9)";
-      ctx.strokeStyle = sel ? "#ff8a3a" : "rgba(255,138,58,0.55)";
-      ctx.lineWidth = 1;
-      var bw = 64, bh = 22;
-      ctx.beginPath();
-      ctx.rect(x - bw / 2, chipY - bh / 2, bw, bh);
-      ctx.fill();
-      ctx.stroke();
-      ctx.fillStyle = "#e6eef6";
-      ctx.font = "9px system-ui, sans-serif";
-      ctx.textAlign = "center";
-      ctx.textBaseline = "middle";
-      var label = (tx.name || tx.id || "").slice(0, 12);
-      ctx.fillText(label, x, chipY);
-      positions["__tx__" + tx.id] = { x: x, y: chipY, r: 18, transform: tx, isTx: true };
-    });
+    (ir.doors || []).forEach(drawDoor);
 
     if (animPath && animPath.length >= 2) {
       var i0 = Math.floor(animT);
@@ -445,29 +636,74 @@
       var x = a.x + (b.x - a.x) * frac;
       var y = a.y + (b.y - a.y) * frac;
       ctx.beginPath();
-      ctx.arc(x, y, 6, 0, Math.PI * 2);
+      ctx.arc(x, y, 7, 0, Math.PI * 2);
       ctx.fillStyle = "#ff8a3a";
       ctx.shadowColor = "#ff8a3a";
-      ctx.shadowBlur = 12;
+      ctx.shadowBlur = 14;
       ctx.fill();
       ctx.shadowBlur = 0;
+      ctx.strokeStyle = "#fff3e6";
+      ctx.lineWidth = 1.2;
+      ctx.stroke();
     }
   }
 
   function hitTest(mx, my) {
-    var keys = Object.keys(positions);
-    for (var i = keys.length - 1; i >= 0; i--) {
-      var p = positions[keys[i]];
+    var doors = ir && ir.doors ? ir.doors : [];
+    for (var i = doors.length - 1; i >= 0; i--) {
+      var p = positions[doors[i].id];
+      if (!p) continue;
       var dx = mx - p.x, dy = my - p.y;
-      if (dx * dx + dy * dy <= (p.r + 4) * (p.r + 4)) return p;
+      if (dx * dx + dy * dy <= (p.r + 8) * (p.r + 8)) return p;
     }
     return null;
+  }
+
+  function esc(s) {
+    return String(s)
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;");
+  }
+
+  function edgesForDoor(doorId) {
+    var out = { outgoing: [], incoming: [] };
+    (ir.edges || []).forEach(function (e) {
+      if (e.from === doorId) out.outgoing.push(e);
+      if (e.to === doorId) out.incoming.push(e);
+    });
+    return out;
+  }
+
+  function renderEdgeList(title, edges) {
+    if (!edges.length) return "<h3>" + esc(title) + "</h3><p class='empty'>None</p>";
+    var html = "<h3>" + esc(title) + "</h3><ul class='edge-list'>";
+    edges.forEach(function (e) {
+      html += "<li class='" + esc(e.kind) + "'>";
+      html += "<div class='kind'>" + esc(e.kind) + "</div>";
+      html += "<div>" + esc(e.from) + " → " + esc(e.to) + "</div>";
+      if (e.note) html += "<div class='note'>" + esc(e.note) + "</div>";
+      if (e.evidence) html += "<div class='note'>evidence: " + esc(e.evidence) + "</div>";
+      html += "</li>";
+    });
+    html += "</ul>";
+    return html;
+  }
+
+  function relatedTransforms(doorId) {
+    return (ir.transforms || []).filter(function (tx) {
+      return tx.door_id === doorId;
+    }).sort(function (a, b) { return (a.seq || 0) - (b.seq || 0); });
   }
 
   function showSelection(sel) {
     selected = sel;
     var empty = document.getElementById("side-empty");
     var body = document.getElementById("side-body");
+    document.querySelectorAll(".tx-rail button.tx").forEach(function (btn) {
+      btn.classList.toggle("active", !!(sel && sel.type === "transform" && sel.id === btn.getAttribute("data-id")));
+    });
     if (!sel) {
       empty.hidden = false;
       body.hidden = true;
@@ -479,40 +715,95 @@
     var html = "";
     if (sel.type === "door") {
       var d = sel.door;
+      var lists = edgesForDoor(d.id);
       html += "<h2>Door</h2><dl>";
       html += "<dt>id</dt><dd>" + esc(d.id) + "</dd>";
       html += "<dt>kind</dt><dd>" + esc(d.kind) + "</dd>";
-      html += "<dt>birth</dt><dd>" + esc(String(d.birth_index)) + "</dd>";
-      html += "<dt>no_std</dt><dd>" + esc(String(d.no_std)) + "</dd>";
-      html += "<dt>status</dt><dd>" + esc(d.status) + "</dd>";
+      html += "<dt>birth_index</dt><dd>" + esc(String(d.birth_index)) + "</dd>";
       html += "<dt>path</dt><dd>" + esc(d.path || "") + "</dd>";
+      html += "<dt>status</dt><dd>" + esc(d.status) + "</dd>";
+      html += "<dt>no_std</dt><dd>" + esc(String(d.no_std)) + "</dd>";
       html += "</dl>";
-      var related = (ir.edges || []).filter(function (e) {
-        return e.from === d.id || e.to === d.id;
-      });
-      html += "<h2 style='margin-top:0.85rem'>Edges</h2><pre>" + esc(JSON.stringify(related, null, 2)) + "</pre>";
+      html += renderEdgeList("Outgoing", lists.outgoing);
+      html += renderEdgeList("Incoming", lists.incoming);
+      var txs = relatedTransforms(d.id);
+      html += "<h3>Related transforms</h3>";
+      if (!txs.length) {
+        html += "<p class='empty'>None</p>";
+      } else {
+        txs.forEach(function (tx) {
+          html += "<button type='button' class='tx-chip' data-tx='" + esc(tx.id) + "'>";
+          html += esc(String(tx.seq)) + ". " + esc(tx.name || tx.id);
+          html += "</button>";
+        });
+      }
     } else if (sel.type === "transform") {
       var tx = sel.transform;
       html += "<h2>Transform</h2><dl>";
       html += "<dt>id</dt><dd>" + esc(tx.id) + "</dd>";
       html += "<dt>seq</dt><dd>" + esc(String(tx.seq)) + "</dd>";
       html += "<dt>name</dt><dd>" + esc(tx.name) + "</dd>";
-      html += "<dt>door</dt><dd>" + esc(tx.door_id) + "</dd>";
+      html += "<dt>door_id</dt><dd>" + esc(tx.door_id) + "</dd>";
       html += "<dt>effect</dt><dd>" + esc(tx.effect) + "</dd>";
       html += "<dt>emission_touch</dt><dd>" + esc(String(tx.emission_touch)) + "</dd>";
       html += "</dl>";
-      html += "<h2 style='margin-top:0.85rem'>IO</h2><pre>" + esc(JSON.stringify({ inputs: tx.inputs, outputs: tx.outputs }, null, 2)) + "</pre>";
+      html += "<h3>Inputs</h3>";
+      html += renderPorts(tx.inputs || []);
+      html += "<h3>Outputs</h3>";
+      html += renderPorts(tx.outputs || []);
+      html += "<h3>Door highlight</h3>";
+      html += "<p class='empty'>Graph highlights door <code>" + esc(tx.door_id) + "</code>.</p>";
     }
     body.innerHTML = html;
+    body.querySelectorAll("button.tx-chip").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        var id = btn.getAttribute("data-tx");
+        var found = (ir.transforms || []).find(function (t) { return t.id === id; });
+        if (found) showSelection({ type: "transform", id: found.id, transform: found });
+      });
+    });
     draw();
   }
 
-  function esc(s) {
-    return String(s)
-      .replace(/&/g, "&amp;")
-      .replace(/</g, "&lt;")
-      .replace(/>/g, "&gt;")
-      .replace(/"/g, "&quot;");
+  function renderPorts(ports) {
+    if (!ports.length) return "<p class='empty'>None</p>";
+    var html = "<ul class='edge-list'>";
+    ports.forEach(function (p) {
+      html += "<li class='dataflow'>";
+      html += "<div>" + esc(p.name || "?") + "</div>";
+      html += "<div class='note'>carrier: " + esc(p.carrier || "?");
+      if (p.ty_hint != null) html += " · ty_hint: " + esc(String(p.ty_hint));
+      html += "</div></li>";
+    });
+    html += "</ul>";
+    return html;
+  }
+
+  function buildTxRail() {
+    var rail = document.getElementById("tx-rail");
+    var empty = document.getElementById("tx-rail-empty");
+    rail.querySelectorAll("button.tx").forEach(function (b) { b.remove(); });
+    if (!ir || !(ir.transforms || []).length) {
+      empty.hidden = false;
+      empty.textContent = "No transforms in IR.";
+      return;
+    }
+    empty.hidden = true;
+    var txs = (ir.transforms || []).slice().sort(function (a, b) {
+      return (a.seq || 0) - (b.seq || 0);
+    });
+    txs.forEach(function (tx) {
+      var btn = document.createElement("button");
+      btn.type = "button";
+      btn.className = "tx";
+      btn.setAttribute("data-id", tx.id);
+      btn.innerHTML = "<span class='seq'>" + esc(String(tx.seq)) + "</span>" + esc(tx.name || tx.id);
+      btn.title = (tx.name || tx.id) + " @ " + (tx.door_id || "?");
+      btn.addEventListener("click", function () {
+        showSelection({ type: "transform", id: tx.id, transform: tx });
+      });
+      rail.appendChild(btn);
+    });
   }
 
   function buildDataflowPath() {
@@ -521,12 +812,27 @@
       return (a.seq || 0) - (b.seq || 0);
     });
     var pts = [];
+    var lastDoor = null;
     txs.forEach(function (tx) {
       var door = positions[tx.door_id];
-      var chip = positions["__tx__" + tx.id];
-      if (door) pts.push({ x: door.x, y: door.y });
-      if (chip) pts.push({ x: chip.x, y: chip.y });
+      if (!door) return;
+      if (lastDoor && lastDoor !== tx.door_id) {
+        // hop along dataflow chord between door centers
+        pts.push({ x: door.x, y: door.y, door_id: tx.door_id, tx: tx.id });
+      } else {
+        pts.push({ x: door.x, y: door.y, door_id: tx.door_id, tx: tx.id });
+      }
+      lastDoor = tx.door_id;
     });
+    // Prefer explicit dataflow chain order from edges when available
+    var df = (ir.edges || []).filter(function (e) { return e.kind === "dataflow"; });
+    if (df.length && txs.length) {
+      pts = [];
+      txs.forEach(function (tx) {
+        var door = positions[tx.door_id];
+        if (door) pts.push({ x: door.x, y: door.y, door_id: tx.door_id, tx: tx.id });
+      });
+    }
     return pts.length >= 2 ? pts : null;
   }
 
@@ -537,27 +843,39 @@
     scrub.max = Math.max(0, tl.length - 1);
     scrub.value = String(timelineIdx);
     scrub.disabled = tl.length === 0;
-    document.getElementById("btn-play").disabled = !ir || tl.length === 0;
+    document.getElementById("btn-play").disabled = !ir || !(ir.transforms || []).length;
     document.getElementById("btn-pause").disabled = !playing;
     if (tl.length === 0) {
       label.textContent = "t: —";
+      setEventSummary("No timeline events in IR.");
       return;
     }
     var ev = tl[timelineIdx] || {};
-    label.textContent = "t: " + (ev.t || timelineIdx);
-    setStatus((ev.kind || "event") + " — " + (ev.summary || ""));
+    label.textContent = "t[" + timelineIdx + "]";
+    setEventSummary((ev.kind || "event") + " · " + (ev.t || "") + " — " + (ev.summary || ""));
   }
 
   function tickAnim() {
     if (!playing || !animPath) return;
-    animT += 0.035;
+    animT += 0.028;
     if (animT >= animPath.length - 1) {
       animT = 0;
-      // advance timeline when token loops
       var tl = (ir && ir.timeline) || [];
       if (tl.length) {
         timelineIdx = (timelineIdx + 1) % tl.length;
         updateScrub();
+      }
+    }
+    // highlight transform under token
+    var i0 = Math.min(Math.floor(animT), animPath.length - 1);
+    var node = animPath[i0];
+    if (node && node.tx && (!selected || selected.type !== "transform" || selected.id !== node.tx)) {
+      var found = (ir.transforms || []).find(function (t) { return t.id === node.tx; });
+      if (found) {
+        // soft sync rail active without rewriting full panel every frame when already that tx
+        document.querySelectorAll(".tx-rail button.tx").forEach(function (btn) {
+          btn.classList.toggle("active", btn.getAttribute("data-id") === found.id);
+        });
       }
     }
     draw();
@@ -568,6 +886,11 @@
     if (!ir) return;
     playing = true;
     animPath = buildDataflowPath();
+    if (!animPath) {
+      playing = false;
+      setEventSummary("Cannot animate: need ≥2 transforms with door positions.");
+      return;
+    }
     animT = 0;
     document.getElementById("btn-pause").disabled = false;
     cancelAnimationFrame(animRaf);
@@ -583,19 +906,31 @@
 
   function applyIr(doc) {
     ir = doc;
+    diagsDismissed = false;
     showDiags(doc.diagnostics || []);
+    updateChips();
     selected = null;
     document.getElementById("side-empty").hidden = false;
     document.getElementById("side-body").hidden = true;
     timelineIdx = 0;
     stopPlay();
+    buildTxRail();
     resize();
     updateScrub();
     var nd = (doc.doors || []).length;
     var ne = (doc.edges || []).length;
     var nt = (doc.transforms || []).length;
-    setStatus("Loaded IR v" + (doc.ir_version || "?") + " · mode=" + (doc.mode || "?") +
-      " · doors=" + nd + " edges=" + ne + " transforms=" + nt);
+    var ni = (doc.items || []).length;
+    var gat = doc.generated_at || "?";
+    var grev = (doc.source && doc.source.git_rev) || "?";
+    setStatus(
+      "IR v" + (doc.ir_version || "?") +
+      " · mode=" + (doc.mode || "?") +
+      " · emission_gate=" + ((doc.source && doc.source.emission_gate) || "?") +
+      " · doors=" + nd + " edges=" + ne + " transforms=" + nt + " items=" + ni +
+      " · generated_at=" + gat +
+      " · git_rev=" + grev
+    );
   }
 
   function loadIr() {
@@ -609,8 +944,10 @@
       .then(applyIr)
       .catch(function (err) {
         ir = null;
+        updateChips();
         showDiags(null, "IR load failed: " + (err && err.message ? err.message : String(err)));
         setStatus("Failed to load golden IR. Serve docs/ over HTTP or open via raw.githack.");
+        buildTxRail();
         resize();
         updateScrub();
       });
@@ -618,18 +955,26 @@
 
   canvas.addEventListener("click", function (ev) {
     var rect = canvas.getBoundingClientRect();
-    var mx = (ev.clientX - rect.left) * (canvas.clientWidth / rect.width);
-    var my = (ev.clientY - rect.top) * (canvas.clientHeight / rect.height);
+    var scaleX = canvas.clientWidth / rect.width;
+    var scaleY = canvas.clientHeight / rect.height;
+    var mx = (ev.clientX - rect.left) * scaleX;
+    var my = (ev.clientY - rect.top) * scaleY;
     var hit = hitTest(mx, my);
     if (!hit) {
       showSelection(null);
       return;
     }
-    if (hit.isTx) {
-      showSelection({ type: "transform", id: hit.transform.id, transform: hit.transform });
-    } else {
-      showSelection({ type: "door", id: hit.door.id, door: hit.door });
-    }
+    showSelection({ type: "door", id: hit.door.id, door: hit.door });
+  });
+
+  document.querySelectorAll(".legend button.filter").forEach(function (btn) {
+    btn.addEventListener("click", function () {
+      var kind = btn.getAttribute("data-kind");
+      edgeOn[kind] = !edgeOn[kind];
+      btn.classList.toggle("off", !edgeOn[kind]);
+      btn.setAttribute("aria-pressed", edgeOn[kind] ? "true" : "false");
+      draw();
+    });
   });
 
   document.getElementById("btn-reload").addEventListener("click", loadIr);

@@ -41,7 +41,7 @@ Primitive sheets (`primitive-*.png`) remain the lawful shape catalog beside thes
 
 | File | Title | Role |
 |---|---|---|
-| [nostd-pipeline.html](nostd-pipeline.html) | LaceArc / nostd pipeline hologram (Layer III) | Canvas 2D graph of HologramIr doors, typed edges, transforms + timeline — fixture mode until src/ + emission acceptance. **Not** `shadow-clock-gearing.html` / `{A,B,C}` holder machine. |
+| [nostd-pipeline.html](nostd-pipeline.html) | LaceArc / nostd pipeline hologram (Layer III) | Elaborated Canvas 2D viewer: doors (full names + birth badges), typed edge filters, inspection panel, transforms rail, timeline token along dataflow. Fixture-honest. IR binding: [../plans/hologram-ast-ir-viewer.md](../plans/hologram-ast-ir-viewer.md). Schema: [../plans/hologram-ast-ir.md](../plans/hologram-ast-ir.md). Golden: [../plans/fixtures/hologram-ir-golden-v0.1.0.json](../plans/fixtures/hologram-ir-golden-v0.1.0.json). **Not** `shadow-clock-gearing.html` / `{A,B,C}` holder machine. |
 
 ## Geometry metaphor
 
