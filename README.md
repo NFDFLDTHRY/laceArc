@@ -33,6 +33,7 @@ Same rule. Same strand. 3D stars and N-dimensional participation are readings of
 | [docs/shadow-clock-agent-brief.md](docs/shadow-clock-agent-brief.md) | Standing brief for agents: define gear interaction contracts and walk all sources. |
 | [docs/shadow-clock-gear-contracts.md](docs/shadow-clock-gear-contracts.md) | Walk artifact: every mesh contracted, stamped, cited. Shadow only. |
 | [docs/shadow-clock-gearing.html](docs/shadow-clock-gearing.html) | Interactive Layer-III projection: {A,B,C} as physical clock gearing + mesh contracts (raw.githack). |
+| [docs/system-mathematical-model.md](docs/system-mathematical-model.md) | Two-algebra model: Hands L and Shadow H. Emission remains [GAP]. |
 | [LICENSE](LICENSE) | Apache-2.0 |
 | [AGENTS.md](AGENTS.md) | Standing orders for any Grok / Grok Bot / Grok Build session in this tree. |
 | [CLAUDE.md](CLAUDE.md) | Pointer that loads those standing orders into Claude Code sessions. |
