@@ -4,9 +4,9 @@
 
 ```
 STATUS: FIRED
-TIP_AT_FIRE: b2afaa2e9c558e6427d09c81b2c0de9a41275706
+TIP_AT_FIRE: 490473e7e3d3e1579da7ea0361d5c1654360e648
 LIVE_TIP_RULE: origin/main
-FIRED_AT: 2026-09-18T07:25:53Z
+FIRED_AT: 2026-09-18T17:48:05Z
 FIRED_BY: LaceArc (steward)
 NOTE: While FIRED, effective tip is always current origin/main. TIP_AT_FIRE is the signal commit. All BASE values are STALE until claim/refresh against live tip.
 ```
