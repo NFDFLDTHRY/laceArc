@@ -199,16 +199,51 @@ Graphic A's header reads:
 > a persistent 3D formation. Meaning does not exist. Only structure, sequence,
 > and participation.
 
-The scale clause appears nowhere in `README.md`, `AGENTS.md`,
-`docs/systems-manifest.md`, or `docs/reason-model-map.md`. It matters because the
-repo's first line is a physical instruction — *put a shoe lace in your hands* —
-and this is the only place the source fixes the exchange rate between that object
-and the model.
+The clause appears nowhere in `README.md`, `AGENTS.md`,
+`docs/systems-manifest.md`, or `docs/reason-model-map.md`.
 
-At one centimeter per word:
+> **Correction.** An earlier revision of this section called the clause "the
+> exchange rate," converted it into a table of metres and kilometres, and
+> concluded that the hands test in `docs/reason-model-map.md` "is exact for about
+> a paragraph" and past that "stops being the right size." **All of that is
+> withdrawn.** The measurement is abstract system reasoning, not an
+> implementation detail. Treating an illustrative quantity as a literal unit is
+> the same error as treating D1's eleven rows as an emission algorithm — the one
+> Piece 5 warns about — committed by a file whose §3 is about exactly that. The
+> steward test is a reasoning test, not a size test. It does not expire at 114
+> words, and nothing in this repo licensed me to say it did.
 
-| Text | Lace |
-|---|---|
+### What the clause actually fixes
+
+Read as reasoning rather than as a unit, it says three things about the strand,
+and the third is load-bearing:
+
+1. **Cost is uniform.** Every word costs the same quantum of wire. No word is
+   more expensive than another, so no word earns special storage.
+2. **Cost is non-zero.** No word is free. An arrival always adds material.
+3. **Cost is charged per occurrence, not per distinct word.** The thousandth
+   `the` costs the same centimeter as the first.
+
+The third is the anti-interning claim stated physically. Interning is precisely
+the optimisation that makes a repeated word cost nothing after the first — one
+row plus a count. The header prices every occurrence identically, so interning
+is not a compression of this model, it is a different model.
+
+That prohibition already exists in the repo twice, on the Shadow side:
+`AGENTS.md` Never — *intern a word (one row + count)* — and the staking law's
+Xiao stake, **FORBID intern token**. The header puts it on the **Hands** side,
+where it outranks both.
+
+Corroborating panels, so this does not rest on the header alone: A13 *"Every word
+occurrence preserved"*; D5 *"Every occurrence of the same word adds another
+passage through the same star"*; C10 *"Every word occurrence is preserved as
+another segment."*
+
+**[INFERENCE]** The reading of the clause as an anti-intern statement is this
+file's. The quantity itself is not a number to compute with, and no Core
+mechanism depends on it.
+
+---|---|
 | a 12-word sentence | 12 cm — a hand's span |
 | a 114 cm shoe lace (45 in) | ~114 words — a short paragraph |
 | a 1,000-word document | 10 m |
