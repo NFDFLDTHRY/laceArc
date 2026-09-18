@@ -142,3 +142,19 @@ Human-only. Record why in the commit message.
 If you cannot do it to a shoe lace in your hands, you may not do it to laceArc.  
 If a crate did it for you, you may not.  
 The clock is a shadow. Lace is not in it.
+
+---
+
+## Full repo resync
+
+When the steward fires a resync (`docs/gearing/RESYNC.md` STATUS: FIRED), every BASE is stale.
+
+```bash
+./docs/gearing/resync.sh status
+git fetch origin main && git pull --ff-only origin main
+./docs/gearing/claim.sh status
+# release or refresh any held shaft, then claim with BASE == TIP
+```
+
+If you cannot tell whether resync is live, it is live. See `docs/gearing/RESYNC.md`.
+
