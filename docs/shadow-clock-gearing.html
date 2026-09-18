@@ -38,7 +38,16 @@
   header h1 {
     margin: 0; font-size: 1.15rem; font-weight: 600; letter-spacing: 0.02em;
   }
-  header .sub { color: var(--muted); font-size: 0.85rem; max-width: 52rem; }
+  header .sub { color: var(--muted); font-size: 0.85rem; max-width: 52rem; margin: 0.35rem 0 0; }
+  header .sub-wrap { max-width: 52rem; }
+  header .sub-wrap summary {
+    display: none;
+    color: var(--muted);
+    font-size: 0.75rem;
+    cursor: pointer;
+    list-style: none;
+  }
+  header .sub-wrap summary::-webkit-details-marker { display: none; }
   header .badge {
     font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.08em;
     border: 1px solid var(--axle); color: var(--axle);
@@ -52,6 +61,39 @@
   }
   @media (max-width: 960px) {
     .layout { grid-template-columns: 1fr; }
+    .side { max-height: none; }
+  }
+  @media (max-width: 600px) {
+    header { padding: 0.55rem 0.75rem 0.4rem; gap: 0.35rem; }
+    header h1 { font-size: 0.95rem; }
+    header .badge { font-size: 0.62rem; padding: 0.15rem 0.4rem; }
+    header .sub-wrap summary { display: block; }
+    header .sub-wrap:not([open]) .sub { display: none; }
+    header .sub { font-size: 0.78rem; }
+    canvas#clock3d {
+      height: 45vh;
+      min-height: 220px;
+    }
+    .stage { min-height: 0; }
+    .hud-labels {
+      position: relative;
+      top: auto;
+      left: auto;
+      max-width: none;
+      flex-direction: row;
+      flex-wrap: wrap;
+      padding: 0.3rem 0.5rem 0;
+      gap: 0.28rem;
+    }
+    .tick-bar {
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      gap: 0.28rem;
+      padding: 0.35rem 0.5rem;
+    }
+    .tick-bar button { white-space: nowrap; flex: 0 0 auto; }
+    .legend { display: none; }
   }
   .stage {
     position: relative;
@@ -103,15 +145,20 @@
   }
   .hud-labels {
     position: absolute;
-    inset: 0;
-    pointer-events: none;
+    top: 0.45rem;
+    left: 0.45rem;
     z-index: 5;
+    display: flex;
+    flex-direction: column;
+    gap: 0.28rem;
+    pointer-events: none;
+    max-width: 11.5rem;
   }
   .hud-labels .lab {
-    position: absolute;
-    transform: translate(-50%, -50%);
+    position: static;
+    transform: none;
     pointer-events: auto;
-    background: rgba(10, 12, 16, 0.72);
+    background: rgba(10, 12, 16, 0.82);
     border: 1px solid #333a4a;
     color: var(--ink);
     border-radius: 6px;
@@ -120,6 +167,9 @@
     font-weight: 700;
     cursor: pointer;
     letter-spacing: 0.04em;
+    text-align: left;
+    width: max-content;
+    max-width: 100%;
   }
   .hud-labels .lab[data-key="A"] { border-color: var(--a); color: var(--a); }
   .hud-labels .lab[data-key="B"] { border-color: var(--b); color: var(--b); }
@@ -210,7 +260,10 @@
 <header>
   <div>
     <h1>Lace Shadow Clock — Physical Gearing</h1>
-    <p class="sub">Holder machine {A, B, C} as clock gearing on one lace axle. Projection only — not Core, not a sixth graphic, not WORD/POINTER rows. POINTER emission stays [GAP]. <strong>3D WebGPU required</strong> (no 2D primary view).</p>
+    <details class="sub-wrap">
+      <summary>Layer III · emission [GAP] · WebGPU 3D</summary>
+      <p class="sub">Holder machine {A, B, C} as clock gearing on one lace axle. Projection only — not Core, not a sixth graphic, not WORD/POINTER rows. POINTER emission stays [GAP]. <strong>3D WebGPU required</strong> (no 2D primary view).</p>
+    </details>
   </div>
   <span class="badge">REQUIRES WebGPU · 3D only · Layer III</span>
 </header>
@@ -529,7 +582,7 @@
       const z = -1.2 + Math.cos(t * Math.PI * 2.1) * 0.7 + Math.sin(t * 3.0) * 0.25;
       pts.push([x, y, z]);
     }
-    const halfW = 0.06;
+    const halfW = 0.035;
     for (let i = 0; i < pts.length - 1; i++) {
       const a = pts[i], b = pts[i + 1];
       const dx = b[0] - a[0], dy = b[1] - a[1], dz = b[2] - a[2];
@@ -643,7 +696,7 @@ fn fs_main(input : VSOut) -> @location(0) vec4f {
     const meshB = buildGear(GEAR_B.teeth, GEAR_B.inner, GEAR_B.outer, GEAR_B.tip, GEAR_B.halfT, GEAR_B.color);
     const meshC = buildGear(GEAR_C.teeth, GEAR_C.inner, GEAR_C.outer, GEAR_C.tip, GEAR_C.halfT, GEAR_C.color);
     const axleMesh = buildCylinder(0.08, 2.0, 20, [0.79, 0.64, 0.15], "x");
-    const laceMesh = buildLaceRibbon([0.91, 0.86, 0.78]);
+    const laceMesh = buildLaceRibbon([0.72, 0.68, 0.60]);
 
     function makeBuffer(data) {
       const buf = device.createBuffer({
@@ -745,26 +798,7 @@ fn fs_main(input : VSOut) -> @location(0) vec4f {
     }
 
     function projectHud() {
-      const rect = canvas.getBoundingClientRect();
-      const map = {
-        A: document.getElementById("labA"),
-        B: document.getElementById("labB"),
-        C: document.getElementById("labC"),
-        axle: document.getElementById("labAxle"),
-        AB: document.getElementById("labAB"),
-        BC: document.getElementById("labBC"),
-        CA: document.getElementById("labCA"),
-      };
-      pickTargets.forEach(t => {
-        const el = map[t.key];
-        if (!el) return;
-        const clip = transformPoint(lastVP, t.pos[0], t.pos[1], t.pos[2]);
-        const sx = (clip[0] * 0.5 + 0.5) * rect.width;
-        const sy = (1 - (clip[1] * 0.5 + 0.5)) * rect.height;
-        el.style.left = sx + "px";
-        el.style.top = sy + "px";
-        el.style.visibility = (clip[2] > -1 && clip[2] < 1) ? "visible" : "hidden";
-      });
+      /* Screen-fixed HUD — labels are a rail, not world-projected onto teeth. */
     }
 
     function frame(ts) {
@@ -773,11 +807,11 @@ fn fs_main(input : VSOut) -> @location(0) vec4f {
       angle = ts * 0.00035;
 
       const aspect = w / Math.max(h, 1);
-      const proj = mat4Perspective((42 * Math.PI) / 180, aspect, 0.1, 100);
-      const eye = [2.6, 1.55, 4.2];
-      const view = mat4LookAt(eye, [0, 0, 0], [0, 1, 0]);
+      const proj = mat4Perspective((48 * Math.PI) / 180, aspect, 0.1, 100);
+      const eye = [0.2, 1.15, 6.6];
+      const view = mat4LookAt(eye, [0, 0.05, 0], [0, 1, 0]);
       // slight world tilt so axle reads as shared shaft in depth
-      const worldTilt = mat4Multiply(mat4RotateY(-0.35), mat4RotateX(-0.28));
+      const worldTilt = mat4Multiply(mat4RotateY(-0.22), mat4RotateX(-0.22));
       const vp = mat4Multiply(proj, mat4Multiply(view, worldTilt));
       lastVP = vp;
       lastEye = eye;
