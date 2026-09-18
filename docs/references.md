@@ -141,3 +141,9 @@ Knots as a meeting place for apparently separate ideas. That is the only series 
 ## Rule for readers and bots
 
 If a sentence in any of these works would change WORD, POINTER, star, or the governing rule, discard it for Core and keep it as reading notes. Pointer emission remains a `[GAP]` until written in `docs/pointer-emission.md` from the four graphics, not from these volumes and not from HCC-A / Coffee Cup / Water OBS format.
+
+#### History — recovery pass 5 (18 September 2026)
+
+Workspace attachment bound as `docs/history-recovered-pass-5-2026-09-18.md`.  
+ShoeLacey surface branches; Aug 15 owner-ruling / opening-dot; Aug 17 Lace/Star context pass; P02 v0.1→v0.1.1; June synthesis blob checks; Pixel capability probe. Historical Shadow only. Does not amend staking or settle pointer-emission.
+

@@ -51,6 +51,7 @@ Same rule. Same strand. 3D stars and N-dimensional participation are readings of
 | [docs/history-recovered-pass-3-2026-09-18.md](docs/history-recovered-pass-3-2026-09-18.md) | Pass 3: graphics counterparts, 7 Sep pointer-is-lace, P02 EE≠trace, codec not raw. Not Core. |
 | [docs/history-recovered-pass-4-2026-09-18.md](docs/history-recovered-pass-4-2026-09-18.md) | Pass 4 full extract: ShoeLacey pin, SL-D-0002, conservation coarseness, walker source. Not Core. |
 | [docs/history-recovered-pass-4-sit.md](docs/history-recovered-pass-4-sit.md) | Pass 4 steward sit-map (ShoeLacey ≠ laceArc). Not Core. |
+| [docs/history-recovered-pass-5-2026-09-18.md](docs/history-recovered-pass-5-2026-09-18.md) | Pass 5: ShoeLacey surface branches, Aug 15 ruling, P02 v0.1→v0.1.1, Pixel probe. Not Core. |
 
 There is no `src/` on purpose. Code that appears before the pointer-emission rule is locked will invent a second machine.
 
