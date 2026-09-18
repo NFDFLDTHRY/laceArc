@@ -8,7 +8,10 @@ The Coffee Cup is Gear C: the five-tooth phase wheel that times work on the lace
 **Compressed ancestor:** `docs/clock/philosophy-map.md` Gear C. Where that file dropped lanes, questions, or recirculation, **the attachment wins**.  
 **Hands court:** `docs/graphics/` + `docs/systems-manifest.md`.
 
-Author frame: *how you see*, not what should be done. Empty disposable cup, lid, almost no weight, no coffee — **nothing bad if it falls**. That removes the escape into arguing stakes. Invariant of the whole wheel: if stakes re-enter, structure-looking stops. Not a sixth stage.
+Author frame: *how you see*, not what should be done. “You are not here to decide what should be done.” Demo act: “Now let go of the cup.” That let-go may mesh πB. It is not POINTER emission.
+
+Empty disposable cup, lid, almost no weight, no coffee — **nothing bad if it falls**. That removes the escape into arguing stakes. Invariant of the whole wheel: if stakes re-enter, structure-looking stops. Not a sixth stage.
+
 
 Loop the source states:
 
@@ -96,7 +99,7 @@ Three lanes ride every packet: social interaction · language · lived events. D
 - **Outputs:** Ground-truth packet. Question: *What did reality produce.* Sound, bounce, rest. In social: rupture, block, severance. In language: final statement. In lived: outcome that cannot be undone.
 - **Preconditions:** Trajectory ran.
 - **Effects:** Physics finished. Causality is not (C5).
-- **Invariants:** Impact is constraint. Miss it → float, theorize without check.
+- **Invariants:** Impact is constraint. Miss it → float; theorize without checking whether understanding matches reality. Empty-cup bounce: nothing damaged — stakes were removed so structure stays visible.
 - **Failure modes:** Filing Graphic D smoother after the bounce. Reidemeister at 4. Arguing with the floor.
 - **Boundary & Coupling:** Mesh to R / HCC πFB next-world structure into next RIC. Not a WORD rewrite. Empty-cup demo: nothing damaged — stakes were removed so structure stays visible.
 - **Implementation implications:** Do not treat impact as P4.
@@ -135,7 +138,7 @@ Three lanes ride every packet: social interaction · language · lived events. D
 
 - **Kind:** Diagnostic use
 - **Source location:** The Strategic Theory You Were Missing
-- **Purpose:** Planning is not prediction. Hold C1–C5 at once: conditions without fate; release without total causality; trajectory without certainty; impact against reality; aftermath rewriting the starting line.
+- **Purpose:** Planning is not prediction. That is not wisdom. That is literacy. Hold C1–C5 at once: conditions without fate; release without total causality; trajectory without certainty; impact against reality; aftermath rewriting the starting line. Blame is not the question.
 - **Failure modes:** Choosing one moment and calling it causality.
 - **Hands:** `[H]` steward literacy, not a Core operator
 
@@ -225,6 +228,28 @@ Layer III labels ≠ L merge ≠ ISL snapshot.
 
 No scheduler that orders C4/C5 against S7. Attachment is silent. Procedure `[GAP]`.
 
+## Lane specimens C1 / C3 / C5 (pass 4)
+
+Pass 3 sampled C2 and C4. Attachment covers all five.
+
+| Lane | C1 | C3 | C5 |
+|---|---|---|---|
+| social | shared history, unspoken expectations, power, fatigue, unclosed residue | escalation that could still be slowed; misunderstanding still clarifiable | who is dangerous / misunderstood; what this proves about people |
+| language | tone defaults; trigger vocabulary; silence trained as contempt or abandonment | apology loops; scope widening; clarifications too late or too broad | shorthand reused next time without re-examination |
+| lived | compressed timelines; unmapped boundaries; interfaces on assumption; stability depends on everyone continuing to behave well | after initiation, before severance; contact exists; options narrow | higher threat thresholds; lower ambiguity; preemptive hardening |
+
+## Packet schedule (pass 4)
+
+| Packet | Born | Live | Dies / settles | Illegal at |
+|---|---|---|---|---|
+| possibility field | before C2 | C1 | consumed by release | fate |
+| motion | C2 | C2–C3 | consumed by impact | total causality; P4 |
+| shrinking window | C3 | C3 only | ends at C4 | courtroom; Core operator |
+| ground truth | C4 | C4–C5 | physics finished; causality continues in C5 | Graphic D file |
+| narrative-that-rewrites-C1 | C5 | C5 → next C1 | becomes next possibility field | WORD rewrite |
+
+Do not order these cells against HCC S7.
+
 ---
 
 ## Pass 1 clipboard deltas (vs philosophy-map Gear C)
@@ -258,6 +283,14 @@ None of these license stages as Graphic D row types. Emission remains `[GAP]`.
 | T2 | Recirculation drawn as C5→C1 pipe |
 | T3 | Cluster-label table on teeth |
 | T4 | Cup vs HCC coexistence; no fused scheduler |
+
+## Pass 4 clipboard deltas
+
+| Ticket | Action |
+|---|---|
+| T1 | C1 / C3 / C5 lane specimens |
+| T2 | Packet schedule |
+| T3 | Leftover source lines on Overview, C4, Literacy |
 
 ---
 
