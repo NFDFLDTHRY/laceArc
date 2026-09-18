@@ -4,8 +4,9 @@ This file is **repo law**. Paste the ASCII block into Grok Bot as the explanatio
 
 Source of record remains `docs/graphics/`.
 The five academic documents remain adjacent. They do not enter Core.
-Three philosophical texts (HCC-A, Coffee Cup, Water/Proofing) are steward-seeing material. They do not enter Core.
-See `docs/reason-model-map.md` and `docs/philosophy-map.md`.
+Three philosophical texts (HCC-A, Coffee Cup, Water/Proofing) are the gearbox. They do not enter Core as rows.
+History extracts do not amend this law and do not revive walkers.
+See `docs/reason-model-map.md`, `docs/philosophy-map.md`, `docs/history-recovered-2026-09-18.md`.
 Implementation remains forbidden until `docs/pointer-emission.md` exists.
 When implementation exists, it obeys the IMPLEMENTATION LAW block with no exceptions.
 
@@ -125,12 +126,31 @@ Emission remains a [GAP].
 The clock does not close it.
 
 
+HISTORY  (recovered memory is not a sixth graphic)
+-------------------------------------------------
+ChatGPT extract 2026-09-18 is a reading note.
+Map: docs/history-recovered-2026-09-18.md
+
+  29 Aug: three walkers rejected. No authoritative file.
+  KEEP arrival sequence. FORBID sorting touches.
+  KEEP star as lens. FORBID Star table.
+  KEEP "input ends on the lace" as intent.
+  FORBID "touch grows lace" as emission.
+  FORBID closed ring.
+  FORBID fidelity mirror / lookup / BFS / replay.
+  FORBID ATOM/POINT as a silent rename of WORD/POINTER.
+  "Relationships are the object" (8 Jun) does not
+  license object.relations[]. Cluster-as-what-you-see
+  is the lawful reading. Conflict stays visible.
+
+
 READING ORDER WHEN A DOCUMENT IS IN THE WORKSPACE
 -------------------------------------------------
     1. shoe in hands
     2. four graphics
     3. docs/systems-manifest.md
     4. docs/reason-model-map.md or docs/philosophy-map.md
+       or docs/history-recovered-2026-09-18.md
     5. the document itself          <-- only after 1-4
     6. never PDF into git
 
@@ -224,6 +244,7 @@ STILL FORBIDDEN AFTER CODE EXISTS
   OBS talk-pointers as POINTER emission
   object.relations[] / graph beside the tape
   cluster update with no tick
+  revived walkers / lace_walk.py / fidelity mirrors
   a second lace
 
 

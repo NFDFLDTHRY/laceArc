@@ -121,7 +121,8 @@ Full ASCII: `docs/law-why-these-documents.md`.
 
 ## Adjacent reading
 
-Reason model: `docs/reason-model-map.md` (a shoe lace in the hands). Clock: objects do not have relationships. Clusters form as the train ticks. A variable is a label on index geometry of Graphic D — a view, not a second array, not pointer-emission.
+Reason model: `docs/reason-model-map.md` (a shoe lace in the hands). History: `docs/history-recovered-2026-09-18.md`. Ancestry and rejected walkers. Do not revive lace_walk.py, mirrors, lookups, BFS closures, sorted touches, or closed rings. Do not treat “touch grows lace” as pointer-emission.
+Clock: objects do not have relationships. Clusters form as the train ticks. A variable is a label on index geometry of Graphic D — a view, not a second array, not pointer-emission.
 Philosophy of operating the lace: `docs/philosophy-map.md`. HCC-A, Coffee Cup, Water/Proofing are gears required to operate upon the workpiece. They are not WORD/POINTER. Ledger ops stay inside HCC-A. Clutch (Water) before torque. Phase (Cup) tooth 3 is the work window.
 Cited in `docs/references.md`.
 Not source of record. Do not import their axioms into Core. Do not add PDF files to git.

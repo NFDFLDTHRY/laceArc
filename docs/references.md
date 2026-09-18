@@ -91,6 +91,15 @@ Tooth 3 is the work window. Tooth 5 drives the next tooth 1. Do not file impact.
 OBS / DELTA / UNK / INVALID and river banks / rapids / delta.  
 No mesh, no torque. Do not treat OBS as POINTER emission.
 
+### History (ancestry, not foundation)
+
+#### 9. Lace memory recovery — 18 September 2026
+
+Workspace attachment `Lace_Memory_Recovery_2026-09-18.md`. Map: `docs/history-recovered-2026-09-18.md`.
+
+June–September conversation extract. Records rejected walkers, invented guards, fidelity mirrors, and the 26 August placement of HCC-A / Coffee Cup / Water as ancestry. Does not amend law. Does not revive code.
+
+
 
 ## Series frame (from Rowlands front matter)
 
