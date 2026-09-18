@@ -2,7 +2,7 @@
 
 Source: workspace attachment `Lace_Memory_Recovery_Pass_2_2026-09-18.md` (18 September 2026).
 
-Supplements [docs/history-recovered-2026-09-18.md](history-recovered-2026-09-18.md).
+Supplements [docs/history/history-recovered-2026-09-18.md](history-recovered-2026-09-18.md).
 
 This is a **reading of that extract against current law**.
 It does not amend staking law.

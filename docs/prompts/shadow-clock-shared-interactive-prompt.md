@@ -77,7 +77,7 @@ const chipKeys = Object.keys(CONTRACTS).sort().map(k => [k, (CONTRACTS[k] && CON
 Save the user prompt text to:
 
 ```
-docs/shadow-clock-shared-interactive-prompt.md
+docs/prompts/shadow-clock-shared-interactive-prompt.md
 ```
 
 ## 5. Update README

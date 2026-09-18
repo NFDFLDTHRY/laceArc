@@ -109,31 +109,31 @@ Layer III camera on the lace clock. Floor = projected line. Orbs = star-as-seen.
 
 #### 9. Lace memory recovery — 18 September 2026
 
-Workspace attachment `Lace_Memory_Recovery_2026-09-18.md`. Map: `docs/history-recovered-2026-09-18.md`.
+Workspace attachment `Lace_Memory_Recovery_2026-09-18.md`. Map: `docs/history/history-recovered-2026-09-18.md`.
 
 June–September conversation extract. Records rejected walkers, invented guards, fidelity mirrors, and the 26 August placement of HCC-A / Coffee Cup / Water as ancestry. Does not amend law. Does not revive code.
 
 #### 10. Lace memory recovery pass 2 — 18 September 2026
 
-Workspace attachment `Lace_Memory_Recovery_Pass_2_2026-09-18.md`. Map: `docs/history-recovered-pass-2-2026-09-18.md`.
+Workspace attachment `Lace_Memory_Recovery_Pass_2_2026-09-18.md`. Map: `docs/history/history-recovered-pass-2-2026-09-18.md`.
 
 Direct reads of ten historical documents. No Containers, eleven-rule scheduler (later allocation correction), card-number mismatch, rejected continuation slot, C-machine false attribution. Does not reverse 29 August. Does not amend law.
 
 #### 11. Lace memory recovery pass 3 — 18 September 2026
 
-Workspace attachment `Lace_Memory_Recovery_Pass_3_2026-09-18.md`. Map: `docs/history-recovered-pass-3-2026-09-18.md`.
+Workspace attachment `Lace_Memory_Recovery_Pass_3_2026-09-18.md`. Map: `docs/history/history-recovered-pass-3-2026-09-18.md`.
 
 Visual counterparts of Graphics A–D (composition match, byte mismatch). User 7 Sep: 1D array; pointer is more lace. P02 v0.3: same derivations ≠ same recorded history. Codec roundtrip is normalized, not raw. DESIGN.md guesses and known-bad. Cat/cat-1 fragment only. Does not settle emission. Does not replace graphics.
 
 #### 12. Lace memory recovery pass 4 — 18 September 2026
 
-Workspace attachment `Lace_Memory_Recovery_Pass_4_2026-09-18.md`. Map: `docs/history-recovered-pass-4-2026-09-18.md`.
+Workspace attachment `Lace_Memory_Recovery_Pass_4_2026-09-18.md`. Map: `docs/history/history-recovered-pass-4-2026-09-18.md`.
 
 Historical repo NFDFLDTHRY/ShoeLacey at `cda3bb34`. SL-D-0002 degree-sloped scheduling (`4:3:2:1` illustrative). SL-C-0002 coarseness loss. Three opens. Walker source intern+guard. XOR probe not contact law. Continuation-slot reject. Not laceArc law.
 
 #### 13. Lace memory recovery pass 5 — 18 September 2026
 
-Workspace attachment `Lace_Memory_Recovery_Pass_5_2026-09-18.md`. Dump: `docs/history-recovered-pass-5-2026-09-18.md`. Sit-map: `docs/history-recovered-pass-5-sit.md`.
+Workspace attachment `Lace_Memory_Recovery_Pass_5_2026-09-18.md`. Dump: `docs/history/history-recovered-pass-5-2026-09-18.md`. Sit-map: `docs/history/history-recovered-pass-5-sit.md`.
 
 Ten ShoeLacey branch heads. Aug 15 owner-ruling (connect-the-ends is historical; closed loop stays forbidden). Aug 17 context pass (not accepted). P02 v0.1→v0.1.1 (binary sufficiency withdrawn). WELD-1 / scoped UNK remain proposed. Pixel rust probe is not a Lace test. Cat still Issue 43 / OPEN-SEARCH.
 
@@ -150,5 +150,5 @@ Five-page KEEP/FORBID clip of stakes 1–5: `docs/clipboard-five-stakes.md`. Pro
 
 #### History — sixth extraction plan (18 September 2026)
 
-Bound as `docs/history-recovered-pass-6-plan.md`. Plans the next recovery pass; does not execute it. Governing check: located ≠ read ≠ accepted ≠ proven. Historical Shadow only; does not amend staking or settle pointer-emission.
+Bound as `docs/history/history-recovered-pass-6-plan.md`. Plans the next recovery pass; does not execute it. Governing check: located ≠ read ≠ accepted ≠ proven. Historical Shadow only; does not amend staking or settle pointer-emission.
 

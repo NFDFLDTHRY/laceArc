@@ -4,8 +4,8 @@ Paste everything inside the outer box to an agent. **Layer III only.** Iterate `
 
 Authority: `docs/shadow-clock-gear-contracts.md` → shafts → WebGPU page.  
 Coordination: `docs/gearing/CLAIMS.md` + `claim.sh`.  
-1:1 law: `docs/gearing-code-1to1-prompt.md` / `docs/gearing-code-1to1.md`.  
-Bootstrap (already done): `docs/shadow-clock-shared-interactive-prompt.md`.
+1:1 law: `docs/prompts/gearing-code-1to1-prompt.md` / `docs/gearing-code-1to1.md`.  
+Bootstrap (already done): `docs/prompts/shadow-clock-shared-interactive-prompt.md`.
 
 ```
 ╔══════════════════════════════════════════════════════════════════════════╗

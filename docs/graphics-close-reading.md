@@ -305,7 +305,7 @@ standing in for continuing behaviour.
 ### Second pass (same day, same status: data, not authority)
 
 **Anchor note** (F3, applied here). The binding on `main`,
-`docs/history-recovered-pass-2-2026-09-18.md`, is a *reading* of the extract and
+`docs/history/history-recovered-pass-2-2026-09-18.md`, is a *reading* of the extract and
 does not carry every passage cited below. Checked: the phrases
 `dynamic-arity` and `original image identities` appear in the extract
 (`Lace_Memory_Recovery_Pass_2_2026-09-18.md`, workspace attachment) but **not** in

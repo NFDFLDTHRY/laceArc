@@ -78,7 +78,7 @@ exact, and every clause below is a rule:
    surface, never consensus. There is no tick on which the elephant is finished.
 
 Rule 6 is the one with a body count in this repository. Every failure in
-`docs/history-recovered-2026-09-18.md` is the same failure: an invented recursion
+`docs/history/history-recovered-2026-09-18.md` is the same failure: an invented recursion
 guard, a "local fidelity mirror" substituted for the authoritative file, an
 external lookup bypassing traversal, breadth-first closure standing in for
 continuing behaviour. In each case machinery was altered, the altered machine was
@@ -91,7 +91,7 @@ and reporting the push as its shape.**
 
 The second-pass memory extract (another agent's report; C06 data, not authority)
 documents three ways feelers fail that §3 does not cover. It is bound on `main`
-as `docs/history-recovered-pass-2-2026-09-18.md`, though that binding is a
+as `docs/history/history-recovered-pass-2-2026-09-18.md`, though that binding is a
 reading and does not carry every passage — the `apparent assent` warning in F1 is
 in the extract, not in the binding. Two readings of one source that overlap
 without coinciding is itself a `DELTA`, recorded here rather than smoothed. None was invented here. All three are recorded in this project's own

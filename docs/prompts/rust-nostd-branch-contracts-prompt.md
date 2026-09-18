@@ -177,7 +177,7 @@ Hands first: graphics → manifest → IMPLEMENTATION LAW → crate map → this
 │   │   [GAP] adjacent WORD rows as relation?                        │     │
 │   │   [GAP] word-identity (case/stem) if graphics silent           │     │
 │   │                                                                │     │
-│   │   Point to docs/pointer-emission-prompt.md for the outline     │     │
+│   │   Point to docs/prompts/pointer-emission-prompt.md for the outline     │     │
 │   │   that must exist BEFORE any branch directory is real.         │     │
 │   │   Do not draft answers in this contracts file.                 │     │
 │   └────────────────────────────────────────────────────────────────┘     │

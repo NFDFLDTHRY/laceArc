@@ -93,7 +93,8 @@ anti-import boundaries; it does not reopen the five-stake mapping.
 
 1. **Outline path (baseline vs live tip).** At the inspected baseline tip
    above, `docs/pointer-emission-prompt.md` was absent. On live `origin/main`
-   the outline file now exists (tracked). Page H still treats the outline as
+   the outline file now exists at `docs/prompts/pointer-emission-prompt.md`
+   (defrag pass 1). Page H still treats the outline as
    distinct from the acceptance gate: outline ≠ contract; existence ≠ acceptance.
 2. **Target-kind conflict.** The current `pointer-emission.md` section 4 asks
    whether POINTER-to-POINTER targeting is general or merely illustrative.
@@ -714,7 +715,7 @@ do not smuggle the change into a README or signature.
 ## PAGE G — Prove before the next birth
 
 ```text
-REQUIRED OUTLINE: docs/pointer-emission-prompt.md
+REQUIRED OUTLINE: docs/prompts/pointer-emission-prompt.md
         currently PRESENT on live tip (outline only; not acceptance)
                             |
                             v
@@ -784,8 +785,8 @@ or a grant of permission.
 | Finite resources, layout composition, failure/durability and concurrent arrival ordering | Future proof obligations; manifest open questions | Unsettled premises; no allocator, persistence or concurrency scheme selected |
 
 Required outline destination:
-[`docs/pointer-emission-prompt.md`](pointer-emission-prompt.md) — present on
-live tip (was absent at the inspected baseline revision above). The outline
+[`docs/prompts/pointer-emission-prompt.md`](../prompts/pointer-emission-prompt.md) — present on
+live tip (was absent at the inspected baseline revision above; moved in defrag pass 1). The outline
 must exist before any planned branch directory becomes real; it is **not**
 the acceptance gate and does not fill emission answers. Pointing to its path
 does not open Implementation Law. Its presence is not permission to put

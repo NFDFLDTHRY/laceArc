@@ -6,7 +6,7 @@ Source of record remains `docs/graphics/`.
 The five academic documents remain adjacent. They do not enter Core.
 Three philosophical texts (HCC-A, Coffee Cup, Water/Proofing) are the gearbox. They do not enter Core as rows.
 History extracts do not amend this law and do not revive walkers.
-See `docs/reason-model-map.md`, `docs/philosophy-map.md`, `docs/history-recovered-2026-09-18.md`, `docs/history-recovered-pass-2-2026-09-18.md`, `docs/history-recovered-pass-3-2026-09-18.md`, `docs/history-recovered-pass-4-2026-09-18.md`, `docs/history-recovered-pass-5-2026-09-18.md`, `docs/history-recovered-pass-5-sit.md`.
+See `docs/reason-model-map.md`, `docs/philosophy-map.md`, `docs/history/history-recovered-2026-09-18.md`, `docs/history/history-recovered-pass-2-2026-09-18.md`, `docs/history/history-recovered-pass-3-2026-09-18.md`, `docs/history/history-recovered-pass-4-2026-09-18.md`, `docs/history/history-recovered-pass-5-2026-09-18.md`, `docs/history/history-recovered-pass-5-sit.md`.
 Implementation remains forbidden until `docs/pointer-emission.md` exists.
 When implementation exists, it obeys the IMPLEMENTATION LAW block with no exceptions.
 
@@ -211,7 +211,7 @@ The clock does not close it.
 HISTORY  (recovered memory is not a sixth graphic)
 -------------------------------------------------
 ChatGPT extract 2026-09-18 is a reading note.
-Map: docs/history-recovered-2026-09-18.md
+Map: docs/history/history-recovered-2026-09-18.md
 
   29 Aug: three walkers rejected. No authoritative file.
   KEEP arrival sequence. FORBID sorting touches.
@@ -225,7 +225,7 @@ Map: docs/history-recovered-2026-09-18.md
   license object.relations[]. Cluster-as-what-you-see
   is the lawful reading. Conflict stays visible.
 
-Pass 2 map: docs/history-recovered-pass-2-2026-09-18.md
+Pass 2 map: docs/history/history-recovered-pass-2-2026-09-18.md
   KEEP no-payload / objects as formations (No Containers).
   FORBID substitution as a write on the tape.
   FORBID eleven-rule scheduler as Core.
@@ -236,7 +236,7 @@ Pass 2 map: docs/history-recovered-pass-2-2026-09-18.md
   FORBID codec/C-machine counts as Lace evidence.
   29 Aug rejection is not reversed.
 
-Pass 3 map: docs/history-recovered-pass-3-2026-09-18.md
+Pass 3 map: docs/history/history-recovered-pass-3-2026-09-18.md
   KEEP 7 Sep: 1D array; pointer is more lace.
   KEEP visual kin of A–D. Do not swap tracked bytes.
   KEEP P02: same derivations ≠ same recorded history.
@@ -247,7 +247,7 @@ Pass 3 map: docs/history-recovered-pass-3-2026-09-18.md
   Unary POINT vs ref_A/ref_B stays a conflict.
   Emission acceptance still not recovered.
 
-Pass 4 map: docs/history-recovered-pass-4-2026-09-18.md
+Pass 4 map: docs/history/history-recovered-pass-4-2026-09-18.md
   KEEP ShoeLacey as a dated other repo, not this law.
   KEEP SL-D-0002: 4:3:2:1 is an illustrative shape.
   KEEP three opens: SEARCH / EXPERIMENT / RULING.
@@ -259,7 +259,7 @@ Pass 4 map: docs/history-recovered-pass-4-2026-09-18.md
   FORBID importing SL-C-0002 remedies as policy.
   Card-N still mismatched. Cat still unmanufactured.
 
-Pass 5 map: docs/history-recovered-pass-5-sit.md
+Pass 5 map: docs/history/history-recovered-pass-5-sit.md
   KEEP surface branches as archive; absence from main ≠ absence.
   KEEP Aug 15 shoe-in-hands verbatim. Recorder ≠ owner speech.
   KEEP Aug 17 as 1D-append witness. Two copies ≠ two witnesses.
@@ -284,12 +284,12 @@ READING ORDER WHEN A DOCUMENT IS IN THE WORKSPACE
     2. four graphics
     3. docs/systems-manifest.md
     4. docs/reason-model-map.md or docs/philosophy-map.md
-       or docs/history-recovered-2026-09-18.md
-       or docs/history-recovered-pass-2-2026-09-18.md
-       or docs/history-recovered-pass-3-2026-09-18.md
-       or docs/history-recovered-pass-4-2026-09-18.md
-       or docs/history-recovered-pass-5-2026-09-18.md
-       or docs/history-recovered-pass-5-sit.md
+       or docs/history/history-recovered-2026-09-18.md
+       or docs/history/history-recovered-pass-2-2026-09-18.md
+       or docs/history/history-recovered-pass-3-2026-09-18.md
+       or docs/history/history-recovered-pass-4-2026-09-18.md
+       or docs/history/history-recovered-pass-5-2026-09-18.md
+       or docs/history/history-recovered-pass-5-sit.md
     5. the document itself          <-- only after 1-4
     6. never PDF into git
 

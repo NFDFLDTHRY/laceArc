@@ -26,7 +26,7 @@ Hands first for Core. Shadow first for the clock. Do not fuse them.
                     │  Visual renderer (frozen [III]):        │
                     │    docs/shadow-clock-gearing.html       │
                     │  Code plan (Hands / when allowed):      │
-                    │    docs/rust-nostd-crate-map-prompt.md  │
+                    │    docs/prompts/rust-nostd-crate-map-prompt.md  │
                     │    docs/rust-nostd-crate-map.md (if any)│
                     │  Math dual-universe (if present):       │
                     │    docs/system-mathematical-model.md    │

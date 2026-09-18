@@ -22,6 +22,17 @@ Same rule. Same strand. 3D stars and N-dimensional participation are readings of
 
 ## What this repo contains
 
+Shelves (defrag pass 1). Hands stay at `docs/` root. Do not treat a prompt or a recovery as Graphic D.
+
+| Shelf | Path | What it is |
+|---|---|---|
+| Hands | [docs/graphics/](docs/graphics/), manifest, law, staking, reason-model-map, close-reading | Source of record |
+| Open `[GAP]` | [docs/pointer-emission.md](docs/pointer-emission.md) | DRAFT questions. Not accepted |
+| Shadow | [docs/gearing/](docs/gearing/), shadow-clock-*, [docs/hologram/](docs/hologram/) | Holder clock. Cubes ≠ rows |
+| History | [docs/history/](docs/history/) | Recoveries. Do not revive walkers |
+| Prompts | [docs/prompts/](docs/prompts/) | Agent tickets. Not law |
+| Clipboards | `docs/*clipboard*` | KEEP/FORBID. Petersen prompt-only |
+
 | Path | Role |
 |---|---|
 | [docs/graphics/](docs/graphics/) | Canonical source graphics. These define the project. |
@@ -39,22 +50,22 @@ Same rule. Same strand. 3D stars and N-dimensional participation are readings of
 | [docs/gearing/](docs/gearing/) | Shared-interactive Layer-III contract data (`window.LACE_CONTRACTS` additive scripts). |
 | [docs/gearing/CLAIMS.md](docs/gearing/CLAIMS.md) | Multi-agent shaft claim/release protocol for Shadow gearing (Layer III). |
 | [docs/gearing/RESYNC.md](docs/gearing/RESYNC.md) | Full-repo resync signal (FIRED/CLEAR); Layer III only. |
-| [docs/clip-and-five-refs-prompt.md](docs/clip-and-five-refs-prompt.md) | Agent prompt: clipboard-looking mapping sheets while walking the five stake references. |
-| [docs/kauffman-clipboard-prompt.md](docs/kauffman-clipboard-prompt.md) | Agent prompt: clipboard mapping for Kauffman *Knots and Physics* 4ed (dokumen.pub slug / ISBN 9814383007). |
-| [docs/rowlands-clipboard-prompt.md](docs/rowlands-clipboard-prompt.md) | Agent prompt: ASCII clipboard for Rowlands *Zero to Infinity* (Series on Knots and Everything). |
-| [docs/xiao-clipboard-prompt.md](docs/xiao-clipboard-prompt.md) | Agent prompt: ASCII clipboard for Xiao & Zhu *Foundations of Large Language Models*. |
-| [docs/petersen-zech-clipboard-prompt.md](docs/petersen-zech-clipboard-prompt.md) | Agent prompt: ASCII clipboard for Petersen & Zech *Mathematical theory of deep learning*. |
-| [docs/agentscope-clipboard-prompt.md](docs/agentscope-clipboard-prompt.md) | Agent prompt: ASCII clipboard for Bi et al. AgentScope (Diagnosing with Insights). |
-| [docs/rust-nostd-crate-map-prompt.md](docs/rust-nostd-crate-map-prompt.md) | Agent prompt: ASCII map of Hands → Rust `#![no_std]` first-party crates (intuitive tree; no `src/` yet). |
-| [docs/rust-nostd-branch-contracts-prompt.md](docs/rust-nostd-branch-contracts-prompt.md) | Agent prompt: next plan — per-branch `#![no_std]` contracts on top of the crate map (plan only; no `src/`). |
-| [docs/gearing-code-1to1-prompt.md](docs/gearing-code-1to1-prompt.md) | Agent prompt: force 1:1 between WebGPU gearing visual keys and code units (Layer III; emission [GAP]). |
-| [docs/pointer-emission-prompt.md](docs/pointer-emission-prompt.md) | Agent prompt: draft `docs/pointer-emission.md` as unanswered questions only (DRAFT; human accepts later; no `src/`). |
-| [docs/gearing-html-iterate-prompt.md](docs/gearing-html-iterate-prompt.md) | Agent prompt: iterate WebGPU gearing HTML / shafts under claim law, 1:1 keys, Layer III. |
-| [docs/gearing-html-fix-prompt.md](docs/gearing-html-fix-prompt.md) | Agent prompt: designated-editor FIX pass for WebGPU gearing HTML (mobile HUD/camera/chrome). |
-| [docs/gearing-html-hologram-restyle-prompt.md](docs/gearing-html-hologram-restyle-prompt.md) | Agent prompt: restyle WebGPU gearing HTML to hologram lattice/crossing/traces templates (keep keys; [GAP]). |
-| [docs/coherence-audit-prompt.md](docs/coherence-audit-prompt.md) | Agent prompt: standing coherence audit (update docs as you go; emission [GAP]). |
+| [docs/prompts/clip-and-five-refs-prompt.md](docs/prompts/clip-and-five-refs-prompt.md) | Agent prompt: clipboard-looking mapping sheets while walking the five stake references. |
+| [docs/prompts/kauffman-clipboard-prompt.md](docs/prompts/kauffman-clipboard-prompt.md) | Agent prompt: clipboard mapping for Kauffman *Knots and Physics* 4ed (dokumen.pub slug / ISBN 9814383007). |
+| [docs/prompts/rowlands-clipboard-prompt.md](docs/prompts/rowlands-clipboard-prompt.md) | Agent prompt: ASCII clipboard for Rowlands *Zero to Infinity* (Series on Knots and Everything). |
+| [docs/prompts/xiao-clipboard-prompt.md](docs/prompts/xiao-clipboard-prompt.md) | Agent prompt: ASCII clipboard for Xiao & Zhu *Foundations of Large Language Models*. |
+| [docs/prompts/petersen-zech-clipboard-prompt.md](docs/prompts/petersen-zech-clipboard-prompt.md) | Agent prompt: ASCII clipboard for Petersen & Zech *Mathematical theory of deep learning*. |
+| [docs/prompts/agentscope-clipboard-prompt.md](docs/prompts/agentscope-clipboard-prompt.md) | Agent prompt: ASCII clipboard for Bi et al. AgentScope (Diagnosing with Insights). |
+| [docs/prompts/rust-nostd-crate-map-prompt.md](docs/prompts/rust-nostd-crate-map-prompt.md) | Agent prompt: ASCII map of Hands → Rust `#![no_std]` first-party crates (intuitive tree; no `src/` yet). |
+| [docs/prompts/rust-nostd-branch-contracts-prompt.md](docs/prompts/rust-nostd-branch-contracts-prompt.md) | Agent prompt: next plan — per-branch `#![no_std]` contracts on top of the crate map (plan only; no `src/`). |
+| [docs/prompts/gearing-code-1to1-prompt.md](docs/prompts/gearing-code-1to1-prompt.md) | Agent prompt: force 1:1 between WebGPU gearing visual keys and code units (Layer III; emission [GAP]). |
+| [docs/prompts/pointer-emission-prompt.md](docs/prompts/pointer-emission-prompt.md) | Agent prompt: draft `docs/pointer-emission.md` as unanswered questions only (DRAFT; human accepts later; no `src/`). |
+| [docs/prompts/gearing-html-iterate-prompt.md](docs/prompts/gearing-html-iterate-prompt.md) | Agent prompt: iterate WebGPU gearing HTML / shafts under claim law, 1:1 keys, Layer III. |
+| [docs/prompts/gearing-html-fix-prompt.md](docs/prompts/gearing-html-fix-prompt.md) | Agent prompt: designated-editor FIX pass for WebGPU gearing HTML (mobile HUD/camera/chrome). |
+| [docs/prompts/gearing-html-hologram-restyle-prompt.md](docs/prompts/gearing-html-hologram-restyle-prompt.md) | Agent prompt: restyle WebGPU gearing HTML to hologram lattice/crossing/traces templates (keep keys; [GAP]). |
+| [docs/prompts/coherence-audit-prompt.md](docs/prompts/coherence-audit-prompt.md) | Agent prompt: standing coherence audit (update docs as you go; emission [GAP]). |
 | [docs/coherence-audit-log.md](docs/coherence-audit-log.md) | Append-only coherence audit tick log. |
-| [docs/shadow-clock-shared-interactive-prompt.md](docs/shadow-clock-shared-interactive-prompt.md) | Prompt that defined the shared-interactive gearing architecture (Layer III). |
+| [docs/prompts/shadow-clock-shared-interactive-prompt.md](docs/prompts/shadow-clock-shared-interactive-prompt.md) | Prompt that defined the shared-interactive gearing architecture (Layer III). |
 | [docs/system-mathematical-model.md](docs/system-mathematical-model.md) | Two-algebra model: Hands L and Shadow H. Emission remains [GAP]. |
 | [LICENSE](LICENSE) | Apache-2.0 |
 | [AGENTS.md](AGENTS.md) | Standing orders for any Grok / Grok Bot / Grok Build session in this tree. |
@@ -74,16 +85,16 @@ Same rule. Same strand. 3D stars and N-dimensional participation are readings of
 | [docs/pointer-emission.md](docs/pointer-emission.md) | DRAFT questions only. Not accepted. Emission remains [GAP]. |
 | [docs/philosophy-map.md](docs/philosophy-map.md) | HCC-A, Coffee Cup, Water as the clock-gearbox. Clusters by tick. Not Core rows. |
 | [docs/hologram/](docs/hologram/) | Hologram touches (PR / Story Defense). Shadow. Not Graphic E. |
-| [docs/history-recovered-2026-09-18.md](docs/history-recovered-2026-09-18.md) | Recovered June–September history against current law. Rejected walkers stay rejected. |
-| [docs/history-recovered-pass-2-2026-09-18.md](docs/history-recovered-pass-2-2026-09-18.md) | Pass 2: No Containers, scheduler, card-number mismatch, C machine. Not Core. |
-| [docs/history-recovered-pass-3-2026-09-18.md](docs/history-recovered-pass-3-2026-09-18.md) | Pass 3: graphics counterparts, 7 Sep pointer-is-lace, P02 EE≠trace, codec not raw. Not Core. |
-| [docs/history-recovered-pass-4-2026-09-18.md](docs/history-recovered-pass-4-2026-09-18.md) | Pass 4 full extract: ShoeLacey pin, SL-D-0002, conservation coarseness, walker source. Not Core. |
-| [docs/history-recovered-pass-4-sit.md](docs/history-recovered-pass-4-sit.md) | Pass 4 steward sit-map (ShoeLacey ≠ laceArc). Not Core. |
-| [docs/history-recovered-pass-5-2026-09-18.md](docs/history-recovered-pass-5-2026-09-18.md) | Pass 5 extract dump: surface branches, Aug 15 ruling, P02 v0.1→v0.1.1, Pixel probe. Not Core. |
-| [docs/history-recovered-pass-6-plan.md](docs/history-recovered-pass-6-plan.md) | Pass 6 plan only (not executed): surfaces, commits beyond heads, opens taxonomy. Not Core. |
-| [docs/history-recovered-pass-7-2026-09-18.md](docs/history-recovered-pass-7-2026-09-18.md) | Pass 7 extract: FORCE Primary/Onion, HCC issue-15 repair vs issue-17 conflict, artifact hashes. Not Core. |
-| [docs/history-recovered-pass-7-evidence-2026-09-18.json](docs/history-recovered-pass-7-evidence-2026-09-18.json) | Pass 7 companion evidence register (hashes, issue captures, coverage). Not Core. |
-| [docs/history-recovered-pass-5-sit.md](docs/history-recovered-pass-5-sit.md) | Pass 5 sit-map against current law. Closed loop stays forbidden. |
+| [docs/history/history-recovered-2026-09-18.md](docs/history/history-recovered-2026-09-18.md) | Recovered June–September history against current law. Rejected walkers stay rejected. |
+| [docs/history/history-recovered-pass-2-2026-09-18.md](docs/history/history-recovered-pass-2-2026-09-18.md) | Pass 2: No Containers, scheduler, card-number mismatch, C machine. Not Core. |
+| [docs/history/history-recovered-pass-3-2026-09-18.md](docs/history/history-recovered-pass-3-2026-09-18.md) | Pass 3: graphics counterparts, 7 Sep pointer-is-lace, P02 EE≠trace, codec not raw. Not Core. |
+| [docs/history/history-recovered-pass-4-2026-09-18.md](docs/history/history-recovered-pass-4-2026-09-18.md) | Pass 4 full extract: ShoeLacey pin, SL-D-0002, conservation coarseness, walker source. Not Core. |
+| [docs/history/history-recovered-pass-4-sit.md](docs/history/history-recovered-pass-4-sit.md) | Pass 4 steward sit-map (ShoeLacey ≠ laceArc). Not Core. |
+| [docs/history/history-recovered-pass-5-2026-09-18.md](docs/history/history-recovered-pass-5-2026-09-18.md) | Pass 5 extract dump: surface branches, Aug 15 ruling, P02 v0.1→v0.1.1, Pixel probe. Not Core. |
+| [docs/history/history-recovered-pass-6-plan.md](docs/history/history-recovered-pass-6-plan.md) | Pass 6 plan only (not executed): surfaces, commits beyond heads, opens taxonomy. Not Core. |
+| [docs/history/history-recovered-pass-7-2026-09-18.md](docs/history/history-recovered-pass-7-2026-09-18.md) | Pass 7 extract: FORCE Primary/Onion, HCC issue-15 repair vs issue-17 conflict, artifact hashes. Not Core. |
+| [docs/history/history-recovered-pass-7-evidence-2026-09-18.json](docs/history/history-recovered-pass-7-evidence-2026-09-18.json) | Pass 7 companion evidence register (hashes, issue captures, coverage). Not Core. |
+| [docs/history/history-recovered-pass-5-sit.md](docs/history/history-recovered-pass-5-sit.md) | Pass 5 sit-map against current law. Closed loop stays forbidden. |
 
 There is no `src/` on purpose. Code that appears before the pointer-emission rule is locked will invent a second machine.
 
