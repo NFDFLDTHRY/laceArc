@@ -1,7 +1,7 @@
-STATUS: FREE
+STATUS: HELD
 STATION: maps
 OWNS: docs/reason-model-map.md docs/rust-nostd-*.md docs/atomic-primitives-map.md docs/clock/gearing-code-1to1.md docs/coherence-audit*.md docs/clock/system-mathematical-model.md docs/defrag-plan.md docs/plans/**
-AGENT: -
-BASE: -
-SINCE: -
+AGENT: Codex-atomic-pass1
+BASE: 24c6348e5bec4918b61846360cd28bca4a52937d
+SINCE: 2026-09-18T20:27:47Z
 NOTE: 
