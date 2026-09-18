@@ -16,7 +16,7 @@ Moved here in defrag pass 3.
 | hcc-a-systems-manifest.md | HCC-A clipboard. Pipeline register is the composition. Stations H1–H11 remain below. Not Core. |
 | coffee-cup-systems-manifest.md | Event-time clipboard C1–C5 + loop. Not Core. |
 | water-systems-manifest.md | Water clutch clipboard. OBS ≠ POINTER. Not Core. |
-| water-pass-2-plan.md | Pass 2 plan. Executed: sayable states, FM tables, F I/O. |
+| water-pass-3-plan.md | Pass 3 plan. Executed: isomorphism + H×C×W meshes. |
 | agent-interaction-model.md | elephant clock `[PROPOSAL]` |
 | system-mathematical-model.md | Hands L + Shadow H; emission `[GAP]` |
 

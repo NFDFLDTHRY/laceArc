@@ -177,7 +177,7 @@ C4 → πFB (world). C5 → πID (priors). Talking after impact is C5, not a sec
 | C5 | πID / next PFC | narrative-as-prior | WORD rewrite |
 | C5 | next C1 | rewritten conditions | fate |
 
-Water clipboard is not this file. HCC S0–S7 is a different clock. Do not fuse.
+Water clipboard: `docs/clock/water-systems-manifest.md`. HCC S0–S7 is a different clock. Do not fuse.
 
 ---
 

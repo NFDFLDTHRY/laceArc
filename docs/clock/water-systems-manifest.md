@@ -228,6 +228,46 @@ None of these license Water buckets as Graphic D row types. Emission remains `[G
 | T4 | F1–F5 input/output |
 | T5 | Story heat-lines as INVALID specimens |
 
+## Structural isomorphism (pass 3)
+
+Source §3: a crossing requires shared reference objects and bounded unknowns. A and B are two tongues for that requirement, not two clutches.
+
+| River | Ledger | Equivalence |
+|---|---|---|
+| Banks | separate OBS inventories | shout; nothing crosses |
+| Rapids | high-rate talk + missing anchors + unresolved UNK | loud ≠ transferable |
+| Delta | one shared pointable pair forming | “crossing can start” |
+| Crossing | DELTA(OBS_A, OBS_B) exists; UNKs declared | “crossing is possible” iff that pair + UNK list |
+
+Either party may speak native A or native B. Interface keeps the joint process coherent.
+
+## Recirculation S4 → S0 (pass 3)
+
+S4 action / calm water returns people to banks with new inventories. Next heat can start in rapids again (story: they still stepped into loud water). Action list is not P4.
+
+## Two inventories (pass 3)
+
+I-A2: each party has an OBS list. DELTA requires pairing. Not Graphic D. Not HCC L. Layer III labels may name a paired DELTA after the fact. Label merge ≠ pairing.
+
+## H × C × W crossing (pass 3)
+
+| Water | Cup | HCC | Forbidden |
+|---|---|---|---|
+| S1 | C3 closed | πB would be grind | tick |
+| S2–S3 | C3 open | shared OBS ≈ structure-only | POINTER from Anchor |
+| S4 | may become C2 / πB | act after crossing | P4 |
+| Kernel | stop C3 work | halt compile-as-talk | emission |
+| two OBS inventories | two looking | two HCC boxes | one merged L |
+
+## Pass 3 clipboard deltas
+
+| Ticket | Action |
+|---|---|
+| T1 | A↔B isomorphism table |
+| T2 | S4→S0 recirculation |
+| T3 | H×C×W crossing table |
+| T4 | Two inventories ≠ one store |
+
 ---
 
 ## Executive Seams Summary
