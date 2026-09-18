@@ -105,8 +105,6 @@ Law on this clip: diagram ≠ rope · hitch kin · grab ≠ emission · `[GAP]` 
 
 ---
 
----
-
 ```
 ┌──────────────────────────────────────────────────────────────────────────┐
 │ CLIPBOARD                                                                │
