@@ -36,6 +36,7 @@ Derived from the Hands. Proposals and readings, never a second source.
 |---|---|
 | [reason-model-map.md](reason-model-map.md) | The five stakes mapped onto the shoe: KEEP / FORBID per text |
 | [atomic-primitives-map.md](atomic-primitives-map.md) | `[PROPOSAL]` P0–P4 and K1–K6: the smallest source-supported obligations, and the G1–G7 gaps |
+| [namespace-register.md](namespace-register.md) | Sixteen identifier families on one alphabet. `A5` is a Graphic panel, a gear tooth and an audit station — which one, and how to tell |
 | [systems-manifest-ascii.md](systems-manifest-ascii.md) | ASCII spine of the manifest |
 | systems-manifest-ascii-pass-{[1](systems-manifest-ascii-pass-1-plan.md),[2](systems-manifest-ascii-pass-2-plan.md),[3](systems-manifest-ascii-pass-3-plan.md),[4](systems-manifest-ascii-pass-4-plan.md),[5](systems-manifest-ascii-pass-5-plan.md),[6](systems-manifest-ascii-pass-6-plan.md)}-plan.md | Six pass tickets behind that spine. **One file per pass** — the pattern [the restructure plan](plans/restructure-plan.md) calls R4; a shelf for them is phase 5's work |
 

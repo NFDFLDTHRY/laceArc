@@ -72,7 +72,7 @@ Guard the model. Do not implement Core until [`docs/pointer-emission.md`](docs/p
 1. Open [`docs/graphics/README.md`](docs/graphics/README.md) and the four PNGs before proposing structure.
 2. Treat Graphic 4 ([`docs/graphics/data-structure-1d-array.png`](docs/graphics/data-structure-1d-array.png)) as the only store.
 3. Treat Graphics 1–3 as the same rule seen as topology.
-4. Cite the graphic or manifest section you are using.
+4. Cite the graphic or manifest section you are using. Where an identifier could belong to another family — `A5` is a Graphic panel, a gear tooth and an audit station — qualify it: see [`docs/namespace-register.md`](docs/namespace-register.md).
 5. Mark `[GAP]` when the source is silent. Do not fill gaps with schema convenience.
 6. Keep distinct passes distinct. Ambiguity remaining in 3D is success.
 7. Ask before any commit that adds code, types, or a second store.
