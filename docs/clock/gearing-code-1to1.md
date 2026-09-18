@@ -154,14 +154,14 @@ The remaining keys **axle, A, B, C, AB, BC, CA** summarize the hologram's axle, 
 
 ## PAGE F — RENDERER ↔ DATA
 
-**Plastic vs hologram skin (pixel debt, 2026-09-18; upstream 33b7e79):** live `docs/shadow-clock-gearing.html` still uses extruded plastic `buildGear` as its primary look. Restyle is not done on main at the publication re-anchor f1adf2d; side commit b8d7e73 is not an ancestor. The [standing restyle prompt](../prompts/gearing-html-hologram-restyle-prompt.md) calls for lattice/crossing/traces and visual-primitives §2.5. Keys and picks are unchanged; no Core rule is invented to close this visual debt.
+**Hologram skin primary (2026-09-18; LaceArc renderer tick):** live `docs/shadow-clock-gearing.html` now draws lattice floor, glass-cube stations with emissive cores (A cool / B amber / C green), cyan/white crossing arc beams (AB/BC/CA), gold-white Hands lace cord, and residual floor traces. Plastic `buildGear` extrusion is removed (not primary). Keys and pick ids unchanged; chips still from `Object.keys(LACE_CONTRACTS)`. Cubes/beams remain Layer III view only — not Graphic D / not emission. See [restyle prompt](../prompts/gearing-html-hologram-restyle-prompt.md) and [visual-primitives §2.5](../hologram/visual-primitives.md).
 
 Source: [the renderer](../shadow-clock-gearing.html), especially chipKeys, show, pickTargets, hitAmong, pick, buildLaceRibbon, and frame. It remains read-only for this audit; the designated editor's upstream changes are incorporated here.
 
 | Visual/control group | Keys and present binding | Drift or limit |
 |---|---|---|
-| Main gears | A, B, C: registry chips, HUD buttons, pick targets, mesh highlight conditions | Source bindings use those three keys. Pair priority intercepts B's projected center in the current synthetic checks. Train contracts remain individually unbound. |
-| Pair interactions | AB, BC, CA: registry chips, HUD buttons, two preferential contact hit regions per key, and gold highlight conditions on the two corresponding main gears | Upstream 2b2e882 supplies the contact-band priority and pair highlighting. Their JS BIND notes still say chip-only/no pickTarget, which is stale. No separate pair-interaction mesh is drawn. |
+| Main stations (hologram glass cubes) | A, B, C: registry chips, HUD buttons, pick targets, glass-shell + core highlight | Same three keys; skin is stacked glass cells with emissive cores (not plastic teeth). Pair-region priority can still intercept B/axle at shared center in synthetic checks. Train contracts remain individually unbound (chip OK). |
+| Pair interactions (crossing beams) | AB, BC, CA: registry chips, HUD buttons, mesh-priority pick regions, visible cyan/white arc beams with highlight | Beams are drawn as presentation mesh (crossing template). Mesh-priority pick still applies. JS BIND notes in shaft files may still say chip-only — shaft not edited this tick. |
 | Axle | axle: registry chip, HUD button, mesh, and declared pick target | Shares B's center; the current picker selects CA there because mesh contact regions have priority. The B/axle body collision also remains; tested below. HUD/chip code still calls show with axle. |
 | Train contracts | A1–A9, B1–B5, C1–C10: 24 registry chips | No individual pick targets or matching mesh highlight conditions. |
 | Time cells | t0–t6: seven registry chips and seven time-bar buttons | Both controls pass the same key to show. No individual 3D targets; these buttons do not advance a model clock. |
@@ -199,9 +199,11 @@ This is a **synthetic picker counterexample**, not a WebGPU render or Android to
 
 ### Geometry is not contract grain
 
-GEAR_A, GEAR_B, and GEAR_C specify **16, 12, and 14 geometric teeth**, while their trains contain **9, 5, and 10 contracts**. Individual polygon teeth carry no train key. The gear objects have coarse contract bodies, but “every visible tooth is a named contract” is not established.
+**Skin note:** plastic tooth extrusion is no longer the live primary look; stations are glass cubes / stacked cells. The tooth-count mismatch below remains a historical audit finding against earlier revisions and the walk artifact’s GEAR_* specs — it does not reintroduce plastic teeth.
 
-The draw conditions also reuse mesh A for A/AB/CA, mesh B for B/AB/BC, and mesh C for C/BC/CA. Pair selection now adds a distinct gold highlight to the selected pair. That is shared coarse highlighting, not a key-to-mesh bijection. The unkeyed ribbon additionally defeats the literal ban on visual-only decoration. Calling it “Lace cord (Hands)” in the legend does not make its generated geometry the strand.
+GEAR_A, GEAR_B, and GEAR_C specify **16, 12, and 14 geometric teeth**, while their trains contain **9, 5, and 10 contracts**. Individual polygon teeth carry no train key. Under the hologram skin, A/B/C are coarse station bodies (shell + core), still not a 1:1 tooth↔train-key map.
+
+Pair selection highlights the corresponding crossing beam (and station when selected). That is shared coarse highlighting, not a key-to-mesh bijection for train contracts. The unkeyed lace ribbon remains presentation-only Hands geometry (authorized as skin, not a new contract key). Calling it “Lace cord (Hands)” in the legend does not make its generated geometry the strand.
 
 ### Minimal repairs identified, not applied
 
