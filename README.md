@@ -77,6 +77,8 @@ Same rule. Same strand. 3D stars and N-dimensional participation are readings of
 | [docs/history-recovered-pass-4-sit.md](docs/history-recovered-pass-4-sit.md) | Pass 4 steward sit-map (ShoeLacey ≠ laceArc). Not Core. |
 | [docs/history-recovered-pass-5-2026-09-18.md](docs/history-recovered-pass-5-2026-09-18.md) | Pass 5 extract dump: surface branches, Aug 15 ruling, P02 v0.1→v0.1.1, Pixel probe. Not Core. |
 | [docs/history-recovered-pass-6-plan.md](docs/history-recovered-pass-6-plan.md) | Pass 6 plan only (not executed): surfaces, commits beyond heads, opens taxonomy. Not Core. |
+| [docs/history-recovered-pass-7-2026-09-18.md](docs/history-recovered-pass-7-2026-09-18.md) | Pass 7 extract: FORCE Primary/Onion, HCC issue-15 repair vs issue-17 conflict, artifact hashes. Not Core. |
+| [docs/history-recovered-pass-7-evidence-2026-09-18.json](docs/history-recovered-pass-7-evidence-2026-09-18.json) | Pass 7 companion evidence register (hashes, issue captures, coverage). Not Core. |
 | [docs/history-recovered-pass-5-sit.md](docs/history-recovered-pass-5-sit.md) | Pass 5 sit-map against current law. Closed loop stays forbidden. |
 
 There is no `src/` on purpose. Code that appears before the pointer-emission rule is locked will invent a second machine.
