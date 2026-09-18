@@ -7,7 +7,10 @@ Authority read:
 - `docs/shadow-clock-gear-contracts.md`
 - `docs/gearing/contracts-*.js` (eight shafts)
 - `docs/shadow-clock-gearing.html` (frozen renderer)
-- `docs/rust-nostd-crate-map.md` (plan; local/untracked until committed)
+- `docs/rust-nostd-crate-map.md` (plan; on main)
+- `docs/rust-nostd-branch-contracts.md` (plan cards; on main)
+- `docs/pointer-emission.md` (DRAFT questions only; not accepted)
+- `docs/shadow-clock-gearing.html` HUD: screen-fixed rail after `f995e44` (not world-projected onto teeth)
 - `docs/system-mathematical-model.md`
 
 ```
@@ -142,7 +145,7 @@ fetch/ff main
 │   │                                                                │     │
 │   │   WebGPU / chip / label     │ contract key │ drift?            │     │
 │   │   ─────────────────────────┼──────────────┼────────────────── │     │
-│   │   gear A (pick + HUD)      │ A            │ no (mesh+chip)    │     │
+│   │   gear A (pick + HUD rail) │ A            │ no (mesh+chip)    │     │
 │   │   gear B                   │ B            │ no                │     │
 │   │   gear C                   │ C            │ no                │     │
 │   │   mesh AB BC CA            │ AB BC CA     │ YES — chip only   │     │
@@ -156,6 +159,7 @@ fetch/ff main
 │   │   FORBID: decorative gear with no contract body  — none found  │     │
 │   │   NOTE: most teeth are selectable as chips, not as meshes.     │     │
 │   │   That is renderer drift, not a missing contract.              │     │
+│   │   HUD labs are screen-fixed (f995e44); no tooth-overlap drift. │     │
 │   └────────────────────────────────────────────────────────────────┘     │
 │                                                                          │
 │   ┌────────────────────────────────────────────────────────────────┐     │
@@ -232,5 +236,8 @@ X1 X2 X3 X4 X5 X6
 - Bijection is a **plan** on the Shadow side. Disk emptiness is law, not an orphan.
 - Renderer pick-set `{A,B,C,axle}` is the honest drift. Do not invent 43 extra Core modules to “complete” the clock.
 - Math model two-universe split matches PAGE B. Homomorphism wall ≠ Φ.
+- **HUD refresh (2026-09-18):** labels live in a screen-fixed rail (mobile: wrap under canvas). They no longer project onto gear teeth. Keys and 1:1 unchanged.
+- **Adjacent maps:** `rust-nostd-crate-map.md` + `rust-nostd-branch-contracts.md` are Hands/plan. `pointer-emission.md` is DRAFT `[GAP]` questions — not a gearing key and not acceptance.
+- **Elephant clock** (`agent-interaction-model.md`) is steward feeler law. It is not a `LACE_CONTRACTS` key set and must not be folded into this bijection.
 
 Shoe in hands, or no.
