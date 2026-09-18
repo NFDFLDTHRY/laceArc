@@ -49,6 +49,21 @@ This file is Layer III. Not Core.
 | Amended | reason-model-map · law · graphics · five-stakes | **No** |
 | Emission | still `[GAP]` |
 
+
+## Pass 2 (PDF-sighted) receipt
+
+| Field | Value |
+|---|---|
+| Status | EXECUTED |
+| Station | clipboards · agent `reference-Mapper` |
+| Plan | [kauffman-pass-2-pdf-plan.md](kauffman-pass-2-pdf-plan.md) |
+| Hands + sibling | shoe → A–D → manifest → law → reason-model-map §1 → PDF pass-1 clipboard → five-stakes PAGE 1/5 (read-only) |
+| PDF | **PRESENT** at `refs/local/kauffman-knots-and-physics-4ed.pdf` (865 pp., image-only; gitignored) |
+| Product | D5 rewritten; FM-K5/K6/K7/K8/K9 PDF locus pins; PAGE E appendix title pinned; prior D1–D4/D6 kept |
+| Offset used | printed p. ≈ PDF p. − 19 (checked on clove/hitches/slide/Jones/DNA/appendix) |
+| Amended | reason-model-map · law · graphics · five-stakes | **No** |
+| Emission | still `[GAP]` |
+
 Law on this clip: diagram ≠ rope · hitch kin · grab ≠ emission · `[GAP]` sealed.
 
 ```
@@ -169,9 +184,10 @@ fetch/ff main → shoe → graphics A–D → manifest → law
 │   ┌────────────────────────────────────────────────────────────────┐     │
 │   │ PAGE E — VIRTUAL / 1-HANDLES / EXTRA SURFACES                  │     │
 │   │ locus: Preface to 4ed  printed p.xv / PDF p.16                 │     │
-│   │        + appendix article (Virtual Knot Theory / Khovanov)      │     │
-│   │          (body sighted ~PDF p.800+; printed ~p.781+)           │     │
-│   │ stamp: CONFIRM CONFLICT (PDF-sighted)                          │     │
+│   │        Appendix title: printed p.763 / PDF p.782               │     │
+│   │        "Introduction to Virtual Knot Theory and Khovanov       │     │
+│   │         Homology" (Pass 2 PDF pin)                             │     │
+│   │ stamp: CONFIRM CONFLICT (PDF-sighted; appendix pinned)          │     │
 │   │ quote/eye (4ed preface): Virtual Knot Theory = generalization  │     │
 │   │   to knots in thickened surfaces, modified by adding or        │     │
 │   │   subtracting 1-handles in the complement; diagrammatic        │     │
@@ -238,8 +254,9 @@ fetch/ff main → shoe → graphics A–D → manifest → law
 - PAGE F: Kauffman never writes the missing Core sentence. Do not finish it from a clove hitch.
 - Prior OCR pass 1 accepted a missing PDF. **Pass 1 (PDF-sighted)** re-walked seed loci against the attached 865-page image-only scan (`refs/local/…`).
 - PAGE A inequality aligned to printed/PDF **T2 ≤ κ T1** (inclusive). Prior strict `<` was transcription drift; not a Lace field.
-- This file does not amend `docs/reason-model-map.md`, law, graphics, or five-stakes. Pass 2 D1–D6 kept.
-- A searchable text layer still does not exist on this PDF; deeper OCR of every page is a later pass if wanted.
+- This file does not amend `docs/reason-model-map.md`, law, graphics, or five-stakes.
+- **Pass 2 (PDF-sighted)** rewrote D5 (PDF present), pinned FM-K5/K6/K9 loci, fixed PAGE E appendix title to PDF p.782 / printed p.763.
+- Searchable text layer still absent; denser OCR remains optional.
 
 ---
 
@@ -284,25 +301,31 @@ Mirrored from five-stakes PAGE 1/5. Book clipboard holds the page walk; this str
 
 ### D3 — Failure modes (reader → Lace)
 
-| ID | Misread | Hands deadbolt |
-|---|---|---|
-| FM-K1 | clove grab ⇒ POINTER when-rule | grab is kin; Φ stays `[GAP]` |
-| FM-K2 | closed loop ⇒ Lace identity | two ends; Continue |
-| FM-K3 | Move Zero ⇒ array write | projection only |
-| FM-K4 | Reidemeister ⇒ simplify stars / emit | Rule Zero; not Piece 6 |
-| FM-K5 | Jones/Gauss ⇒ wrap history on D | do not store |
-| FM-K6 | DNA passage ⇒ thread-through write | cut-rejoin `[X]` |
-| FM-K7 | T2 / κ / e^θ ⇒ array columns | friction ≠ fields |
-| FM-K8 | slide ⇒ milder Core write | implies RII/RIII class |
-| FM-K9 | virtual 1-handles ⇒ extra rooms | one store |
+| ID | Misread | Hands deadbolt | PDF pin (Pass 2) |
+|---|---|---|---|
+| FM-K1 | clove grab ⇒ POINTER when-rule | grab is kin; Φ stays `[GAP]` | PDF p.23 / printed p.4 (cite A) |
+| FM-K2 | closed loop ⇒ Lace identity | two ends; Continue | PDF p.27–28 / printed p.8–9 (cite C) |
+| FM-K3 | Move Zero ⇒ array write | projection only | PDF p.35 / printed p.16 (cite B) |
+| FM-K4 | Reidemeister ⇒ simplify stars / emit | Rule Zero; not Piece 6 | PDF p.35–36 / printed p.16–17 (cite C) |
+| FM-K5 | Jones/bracket ⇒ wrap history on D | do not store | **PDF p.68 / printed p.49** §5° Jones; bracket **PDF p.44 / printed p.25** |
+| FM-K6 | DNA passage ⇒ thread-through write | cut-rejoin `[X]` | **PDF p.507 / printed p.488** §15° DNA and QFT |
+| FM-K7 | T2 / κ / e^θ ⇒ array columns | friction ≠ fields | PDF p.342–343 / printed p.323–324 (cite A) |
+| FM-K8 | slide ⇒ milder Core write | implies RII/RIII class | PDF p.355 / printed p.336 (cite D) |
+| FM-K9 | virtual 1-handles ⇒ extra rooms | one store | preface PDF p.16; appendix title **PDF p.782 / printed p.763** |
 
 ### D4 — Interface coherence
 
 Only K1’s output (a felt grab that leaves wraps in place) matches a Core input (later participation). K4’s output (an equivalent diagram) does **not** match Piece 6’s input (a new section). The entity that would have to flow — “sameness after rewrite” — is exactly what Lace refuses. This paragraph does not close Φ.
 
-### D5 — Source gate (this execute)
+### D5 — Source gate (Pass 2 PDF-sighted)
 
-PDF under `artifacts/refs/` was **absent**. No printed↔PDF page bridges added. Prior-OCR label from Pass 1 stands. Five-stakes PAGE 1/5 already carries PDF one-based loci for sibling reference; this file does not copy them as if freshly sighted.
+PDF is **present** at `refs/local/kauffman-knots-and-physics-4ed.pdf` (also mirrored under `artifacts/refs/` if linked). 865 pages. Producer `tiff2pdf`. **No text layer** (`pdftotext` empty). Never `git add` the PDF.
+
+Printed↔PDF offset used this pass: **PDF p. ≈ printed p. + 19** (verified on clove, hitches, slide, Jones, DNA, virtual appendix).
+
+Bridges: A–E from Pass 1 (PDF-sighted); FM-K5/K6/K9 appendix title pinned this pass. Method: `pdftoppm` + visual read. Full-page OCR still optional later.
+
+Five-stakes PAGE 1/5 left untouched (≤ conflict note there is historical; book clipboard now follows inclusive ≤).
 
 ### D6 — Sealed (still)
 
