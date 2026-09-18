@@ -13,4 +13,21 @@ Additive `window.LACE_CONTRACTS` scripts loaded by [`../shadow-clock-gearing.htm
 | `contracts-escape.js` | Escapement / recursion |
 | `contracts-audits.js` | Walk 7 audits `X1`–`X6` |
 
+## Multi-agent claim / release
+
+| Path | Role |
+|---|---|
+| [`CLAIMS.md`](CLAIMS.md) | Full shaft claim/release protocol (Layer III only) |
+| [`claim.sh`](claim.sh) | Executable: `status` \| `claim` \| `release` \| `check` \| `refresh` \| `force-free` |
+| `claims/*.claim` | Per-shaft FREE/HELD state (status derived; no shared STATUS.md) |
+
+One shaft per agent. Zero or one drop per shaft per tick. Always `git fetch` + ff-only `main` before claim. Never edit another shaft’s `.claim` or `contracts-*.js`. Renderer stays frozen / designated editor only. Not Core; POINTER emission remains `[GAP]`.
+
+```bash
+./docs/gearing/claim.sh status
+./docs/gearing/claim.sh claim axle "YourAgent"
+./docs/gearing/claim.sh check axle "YourAgent"
+./docs/gearing/claim.sh release axle "YourAgent"
+```
+
 **Renderer requirement:** the HTML stage is **WebGPU 3D only** (Chrome Android: enable WebGPU + WebNN flags). No 2D SVG primary clock. POINTER emission remains `[GAP]` — do not invent it here.

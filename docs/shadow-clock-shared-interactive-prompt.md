@@ -106,6 +106,28 @@ These constraints apply to `docs/shadow-clock-gearing.html` and any Layer-III in
 | Layer | Still **[III]** projection only; shafts unchanged; contracts still `docs/gearing/contracts-*.js` |
 | Core | Still not Lace Core; POINTER emission remains `[GAP]` |
 
+## BEFORE YOU DROP (claim / release — mandatory)
+
+Layer III multi-agent coordination. Protocol: [`docs/gearing/CLAIMS.md`](gearing/CLAIMS.md). Tool: [`docs/gearing/claim.sh`](gearing/claim.sh).
+
+**Law:** One shaft per agent. Zero or one drop per shaft per tick. If you cannot tell whether a shaft is held → **it is held**.
+
+| Step | Command / rule |
+|---|---|
+| Before edit | `./docs/gearing/claim.sh claim <shaft> "<agent>"` — fetch `origin/main`; fail if HELD by another agent |
+| Before drop | `./docs/gearing/claim.sh check <shaft> "<agent>"` — must be HELD by you **and** `BASE == origin/main` |
+| If base moved | pull `--ff-only`, re-read sources, `./docs/gearing/claim.sh refresh <shaft> "<agent>"`, re-walk, then drop |
+| After drop / abandon | `./docs/gearing/claim.sh release <shaft> "<agent>"` — same agent only |
+| Stuck claim | human: `./docs/gearing/claim.sh force-free <shaft>` |
+
+- Edit **only** your claimed `contracts-*.js` and your `.claim` file.
+- Never edit another shaft’s `.claim` or `contracts-*.js`.
+- Do **not** maintain a shared STATUS.md everyone rewrites — status is derived from `claims/*.claim`.
+- Renderer `docs/shadow-clock-gearing.html` stays **frozen** / designated editor only.
+- Not Core. Do not invent POINTER emission (`[GAP]`).
+
+---
+
 ## 6. Hard forbids
 
 - Do NOT invent emission.
