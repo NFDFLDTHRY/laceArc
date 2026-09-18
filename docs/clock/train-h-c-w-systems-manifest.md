@@ -171,6 +171,40 @@ Relationships cluster as the train turns. Labels may be created, split, or merge
 | T3 | Cluster labels ≠ L / F3 / P4 |
 | T4 | Shadow t0–t6 flatten stamp |
 
+## Three recirculation pipes (pass 3)
+
+Not one fused return.
+
+```
+Cup  C5 narrative ──────────────► next C1 possibility
+HCC  πFB world ─────────────────► next RIC
+HCC  πID / Act VI ──────────────► next PFC
+Water S4 action list ───────────► S0 new inventories
+                                 (may become Cup C2 / πB)
+```
+
+Same next looking can receive Cup C5 **and** πID. Two objects. No merge rule. Procedure `[GAP]`.
+
+## Hologram ear (pass 3)
+
+Wrong mesh is heard before it is named. Halt. Point. Do not add a tooth to the cord to quiet the case.
+
+K5 / hologram **reads** grind, locked, late. It does not emit. Hearing is not F2 and not P3.
+
+## AgentScope (pass 3)
+
+Gauge on the steward. Not a fourth gear. Not Graphic D.
+
+## Pass 3 clipboard deltas
+
+| Ticket | Action |
+|---|---|
+| T1 | Three return pipes drawn separately |
+| T2 | Hologram ear is read-only |
+| T3 | AgentScope stays a gauge |
+
+Last train-composition pass unless a new combined remainder is pointed at.
+
 ---
 
 ## Executive Seams Summary
