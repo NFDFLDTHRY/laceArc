@@ -2,196 +2,320 @@
 <html lang="en">
 <head>
 <meta charset="utf-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>HCC-A systems projection — laceArc Layer III</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
+<title>HCC-A across time — laceArc Layer III</title>
 <style>
-  :root { --bg:#07080d; --ink:#d7e4ff; --dim:#7e8aa8; --h:#e8b86d; --x:#ff5d6c; --i:#6ee0ff; --g:#d86bff; }
-  * { box-sizing: border-box; }
-  html, body { margin:0; height:100%; background:var(--bg); color:var(--ink); font:14px/1.4 ui-sans-serif, system-ui, sans-serif; }
-  header { position:fixed; top:0; left:0; right:0; z-index:2; padding:10px 14px; background:linear-gradient(#07080dee,#07080d00); }
-  header h1 { margin:0; font-size:14px; letter-spacing:.04em; }
-  header p { margin:2px 0 0; color:var(--dim); font-size:12px; }
-  #c { display:block; width:100%; height:100%; }
-  aside { position:fixed; right:10px; top:72px; width:min(340px, 42vw); max-height:calc(100% - 90px); overflow:auto; background:#0c1018cc; border:1px solid #243049; padding:10px 12px; z-index:2; }
+  :root { --bg:#06070b; --ink:#e6edf8; --dim:#8b97b0; --line:#243044; --h:#e8b86d; --x:#ff6b78; --i:#6ee0ff; --g:#d86bff; }
+  * { box-sizing:border-box; }
+  html,body { margin:0; height:100%; background:var(--bg); color:var(--ink); font:13px/1.4 ui-sans-serif,system-ui,sans-serif; overflow:hidden; }
+  #c { display:block; width:100%; height:100%; touch-action:none; }
+  .hud { position:fixed; inset:0; pointer-events:none; }
+  .hud > * { pointer-events:auto; }
+  header { position:absolute; top:0; left:0; right:0; padding:10px 12px 8px; background:linear-gradient(#06070bf2,#06070b00); }
+  header h1 { margin:0; font-size:13px; letter-spacing:.06em; }
+  header p { margin:2px 0 0; color:var(--dim); font-size:11px; }
+  .rail { position:absolute; left:10px; right:10px; bottom:58px; display:flex; gap:4px; }
+  .rail button { flex:1; min-width:0; padding:7px 2px; border:1px solid var(--line); background:#0c1118cc; color:var(--dim); font-size:10px; }
+  .rail button.on { color:#061018; background:var(--i); border-color:var(--i); }
+  .bar { position:absolute; left:10px; right:10px; bottom:10px; display:flex; gap:6px; align-items:center; }
+  .bar button, .bar label { border:1px solid var(--line); background:#0c1118; color:var(--ink); padding:8px 10px; font-size:12px; }
+  .bar input[type=range] { flex:1; }
+  aside { position:absolute; top:58px; right:10px; width:min(300px,40vw); max-height:calc(100% - 140px); overflow:auto; background:#0b1018e6; border:1px solid var(--line); padding:10px; }
   aside h2 { margin:0 0 6px; font-size:13px; }
-  aside .stamp { display:inline-block; margin-right:4px; padding:0 6px; border:1px solid currentColor; font-size:11px; }
-  .H { color:var(--h); } .X { color:var(--x); } .I { color:var(--i); } .G { color:var(--g); }
-  aside dl { margin:8px 0 0; }
-  aside dt { color:var(--dim); font-size:11px; text-transform:uppercase; }
-  aside dd { margin:0 0 8px; }
-  .hint { position:fixed; left:12px; bottom:10px; color:var(--dim); font-size:11px; z-index:2; }
+  .stamp { display:inline-block; margin:0 4px 6px 0; padding:0 5px; border:1px solid currentColor; font-size:10px; }
+  .H{color:var(--h)} .X{color:var(--x)} .I{color:var(--i)} .G{color:var(--g)}
+  dt { color:var(--dim); font-size:10px; text-transform:uppercase; margin-top:8px; }
+  dd { margin:2px 0 0; }
+  @media (max-width:720px){
+    aside { left:10px; right:10px; width:auto; top:auto; bottom:108px; max-height:28vh; }
+    header p { display:none; }
+  }
 </style>
 </head>
 <body>
-<header>
-  <h1>HCC-A SYSTEMS PROJECTION</h1>
-  <p>Layer III · follows docs/clock/hcc-a-systems-manifest.md · not Graphic D · POINTER emission [GAP]</p>
-</header>
 <canvas id="c"></canvas>
-<aside id="card">
-  <h2 id="title">click a node</h2>
-  <div id="stamps"></div>
-  <dl id="fields"></dl>
-</aside>
-<div class="hint">drag to orbit · scroll to zoom · token walks S0–S7 · oil stays in the box</div>
+<div class="hud">
+  <header>
+    <h1>HCC-A ACROSS TIME</h1>
+    <p>S0–S7 is the clock. RIC∥PFC both turn. Oil stays in the box. Emission [GAP].</p>
+  </header>
+  <div class="rail" id="rail"></div>
+  <div class="bar">
+    <button type="button" id="play">pause</button>
+    <button type="button" id="reset">reset cam</button>
+    <label>speed <input id="spd" type="range" min="0.25" max="3" step="0.25" value="1"/></label>
+    <span id="phase" style="color:#8b97b0;min-width:9em"></span>
+  </div>
+  <aside id="card"></aside>
+</div>
 <script>
-// Manifest-derived graph. Cubes/points are holder oil, not WORD rows.
+const STAGES = [
+  {id:0, name:'S0 Intake', live:['R','I','RIC','PFC'],
+   text:'I receives R. RIC and PFC both load the same signals.'},
+  {id:1, name:'S1 Early prune', live:['RIC','PFC'],
+   text:'Both shafts stay on. Noise drops. PFC tags threat / irrelevant / opportunity.'},
+  {id:2, name:'S2 Compile', live:['RIC','PFC','C','L'],
+   text:'C takes {RIC, PFC} → L: add, merge, reclassify. Oil only.'},
+  {id:3, name:'S3 Meaning', live:['L','M'],
+   text:'M weights L plus internal priorities. Directive, not a label.'},
+  {id:4, name:'S4 Emotion', live:['M','E'],
+   text:'E is meaning-in-flight. Stable→calm. Unstable→turbulence. Not transmissible.'},
+  {id:5, name:'S5 Identity', live:['L','M','E','ISL'],
+   text:'ISL compresses L + weights + emotional patterns. Priors for next PFC.'},
+  {id:6, name:'S6 Behavior', live:['ISL','M','E','B'],
+   text:'Only observable shaft. Freeze/fawn/words are still B. B is not POINTER.'},
+  {id:7, name:'S7 Feedback', live:['B','R','ISL','PFC'],
+   text:'B alters R. ISL writes next PFC. Loop restarts at S0.'}
+];
+
+// x = time (stage), y = structure(−) / meaning(+), z = RIC(−) / PFC(+)
 const NODES = [
-  {id:'R',   name:'H1 Reality',     p:[0,0,0],       stamp:['H'], kind:'Region',
-   purpose:'Constraint-bearing world. Not directly accessible.', x:'not a Lace store'},
-  {id:'I',   name:'H2 Interface',    p:[1.4,0.15,0.1], stamp:['H'], kind:'Interface',
-   purpose:'Senses / nervous system / body state. R → raw signals.', x:'not Contract II ingest'},
-  {id:'RIC', name:'H3 RIC',          p:[2.6,-1.1,0.5], stamp:['I','X'], kind:'Shaft',
-   purpose:'Preserve structure and order in parallel with PFC.', x:'second log = [X]'},
-  {id:'PFC', name:'H4 PFC',          p:[2.6,1.15,-0.55], stamp:['H','X'], kind:'Shaft',
-   purpose:'Priors/templates before compile. ISL_n-1 loads this shaft.', x:'PFC-only ingest = [X]'},
-  {id:'C',   name:'H5 Compiler',     p:[3.9,0.05,0.05], stamp:['X'], kind:'Mechanism',
-   purpose:'Structure → story. Updates ledger oil.', x:'not a Core operator'},
-  {id:'L',   name:'H6 Story Ledger', p:[5.1,-0.35,0.35], stamp:['X'], kind:'Store',
-   purpose:'Add/merge/reindex/delete oil. Concrete+abstract+imagined+inferred.', x:'Rule Zero dies if on tape'},
-  {id:'M',   name:'H7 Meaning',      p:[6.2,0.85,0.15], stamp:['X'], kind:'Mechanism',
-   purpose:'Weights + transitions. Directive, not a label.', x:'not project-meaning'},
-  {id:'E',   name:'H8 Emotion',      p:[6.2,1.7,-0.45], stamp:['H'], kind:'Mechanism',
-   purpose:'Meaning-in-flight. Not transmissible.', x:'no E rows'},
-  {id:'ISL', name:'H9 ISL',          p:[4.5,1.35,-1.45], stamp:['H','X'], kind:'Compressor',
-   purpose:'Who am I. Priors for next PFC.', x:'not a star'},
-  {id:'B',   name:'H10 Behavior',    p:[7.4,0.05,0.85], stamp:['H'], kind:'Output shaft',
-   purpose:'Only observable output. Alters R. Freeze is still B.', x:'B is not POINTER'},
-  {id:'GAP', name:'POINTER emission',p:[8.6,-1.6,-1.2], stamp:['G'], kind:'Open Hands gap',
-   purpose:'When / arity / adjacency unanswered.', x:'this projection does not fill it'}
+  {id:'R',   name:'H1 Reality',     p:[0.0,  0.0,  0.0], stamp:['H'], kind:'Region',
+   purpose:'Constraint world. Not accessible as such.'},
+  {id:'I',   name:'H2 Interface',    p:[0.7,  0.15, 0.0], stamp:['H'], kind:'Interface',
+   purpose:'Body / senses / nervous system.'},
+  {id:'RIC', name:'H3 RIC',          p:[1.6, -1.15,-0.9], stamp:['I','X'], kind:'Shaft',
+   purpose:'Keep structure and order. Parallel with PFC.'},
+  {id:'PFC', name:'H4 PFC',          p:[1.6,  1.15, 0.9], stamp:['H','X'], kind:'Shaft',
+   purpose:'Priors before compile. Next-rev ISL loads this shaft.'},
+  {id:'C',   name:'H5 Compiler',     p:[2.6,  0.05, 0.0], stamp:['X'], kind:'Mechanism',
+   purpose:'Structure → story into L.'},
+  {id:'L',   name:'H6 Ledger',       p:[3.4, -0.35, 0.15], stamp:['X'], kind:'Oil store',
+   purpose:'Concrete/abstract/imagined/inferred. Add/merge/reindex/delete oil.'},
+  {id:'M',   name:'H7 Meaning',      p:[4.3,  0.95, 0.1], stamp:['X'], kind:'Mechanism',
+   purpose:'Weights + transitions. Directive.'},
+  {id:'E',   name:'H8 Emotion',      p:[5.0,  1.55,-0.35], stamp:['H'], kind:'Runtime',
+   purpose:'Not meaning, story, or intent. Not transmissible.'},
+  {id:'ISL', name:'H9 ISL',          p:[5.6,  0.7,  0.85], stamp:['H','X'], kind:'Compressor',
+   purpose:'Who am I. Writes next PFC.'},
+  {id:'B',   name:'H10 Behavior',    p:[6.6,  0.0,  0.2], stamp:['H'], kind:'Output shaft',
+   purpose:'Only observable output. Alters R.'},
+  {id:'GAP', name:'POINTER [GAP]',   p:[7.4, -1.6,-1.2], stamp:['G'], kind:'Hands silence',
+   purpose:'When / arity / adjacency unanswered. Off the train.'}
 ];
 const EDGES = [
-  ['R','I','H'], ['I','RIC','H'], ['I','PFC','H'],
-  ['RIC','C','I'], ['PFC','C','X'], ['C','L','X'], ['L','M','X'],
-  ['M','E','H'], ['L','ISL','H'], ['M','ISL','H'], ['E','ISL','H'],
-  ['ISL','PFC','H'], ['ISL','B','H'], ['M','B','H'], ['E','B','H'],
-  ['B','R','H']
+  ['R','I',0],['I','RIC',0],['I','PFC',0],
+  ['RIC','C',2],['PFC','C',2],['C','L',2],
+  ['L','M',3],['M','E',4],
+  ['L','ISL',5],['M','ISL',5],['E','ISL',5],
+  ['ISL','B',6],['M','B',6],['E','B',6],
+  ['B','R',7],['ISL','PFC',7]
 ];
-const LOOP = ['R','I','RIC','C','L','M','E','ISL','B','R'];
-const STAGES = ['S0 Intake','S1 Early prune','S2 Compile','S3 Meaning','S4 Emotion','S5 Identity','S6 Behavior','S7 Feedback'];
+const PATH = [
+  ['R','I'],['I','RIC'],['I','PFC'],['RIC','C'],['PFC','C'],['C','L'],
+  ['L','M'],['M','E'],['E','ISL'],['ISL','B'],['B','R']
+];
 
-const byId = Object.fromEntries(NODES.map(n => [n.id, n]));
-const canvas = document.getElementById('c');
-const ctx = canvas.getContext('2d');
+const byId = Object.fromEntries(NODES.map(n=>[n.id,n]));
+const canvas=document.getElementById('c');
+const ctx=canvas.getContext('2d');
 let W=0,H=0,dpr=1;
-let yaw=0.55, pitch=0.42, zoom=42, cx=3.6, cy=0.1, cz=-0.1;
-let dragging=false, lx=0, ly=0, t0=performance.now();
+let yaw=-0.85, pitch=0.38, dist=11.5;
+const look=[3.4,0.15,0];
+let stage=0, playing=true, speed=1, acc=0;
 let selected='C';
+let pointers=new Map();
+let lastTap=0;
 
 function resize(){
-  dpr = Math.min(devicePixelRatio||1, 2);
-  W = canvas.clientWidth = innerWidth;
-  H = canvas.clientHeight = innerHeight;
-  canvas.width = W*dpr; canvas.height = H*dpr;
+  dpr=Math.min(window.devicePixelRatio||1,2);
+  W=innerWidth; H=innerHeight;
+  canvas.width=W*dpr; canvas.height=H*dpr;
+  canvas.style.width=W+'px'; canvas.style.height=H+'px';
   ctx.setTransform(dpr,0,0,dpr,0,0);
 }
 addEventListener('resize', resize); resize();
-canvas.addEventListener('pointerdown', e => { dragging=true; lx=e.clientX; ly=e.clientY; canvas.setPointerCapture(e.pointerId); });
-canvas.addEventListener('pointerup', () => dragging=false);
-canvas.addEventListener('pointermove', e => {
-  if(!dragging) return;
-  yaw += (e.clientX-lx)*0.008;
-  pitch = Math.max(-1.2, Math.min(1.2, pitch+(e.clientY-ly)*0.008));
-  lx=e.clientX; ly=e.clientY;
+
+canvas.addEventListener('pointerdown', e=>{
+  e.preventDefault();
+  pointers.set(e.pointerId,{x:e.clientX,y:e.clientY});
+  canvas.setPointerCapture(e.pointerId);
+  if(e.pointerType==='mouse' && e.button===0){
+    const now=performance.now();
+    if(now-lastTap<280){ resetCam(); }
+    lastTap=now;
+  }
 });
-canvas.addEventListener('wheel', e => { e.preventDefault(); zoom = Math.max(18, Math.min(90, zoom*(e.deltaY>0?0.94:1.06))); }, {passive:false});
-canvas.addEventListener('click', e => {
-  const hit = pick(e.clientX, e.clientY);
-  if(hit){ selected=hit; renderCard(); }
+canvas.addEventListener('pointerup', e=>{
+  if(pointers.size===1){
+    const hit=pick(e.clientX,e.clientY);
+    if(hit){ selected=hit; card(); }
+  }
+  pointers.delete(e.pointerId);
+});
+canvas.addEventListener('pointercancel', e=>pointers.delete(e.pointerId));
+canvas.addEventListener('pointermove', e=>{
+  const prev=pointers.get(e.pointerId);
+  if(!prev) return;
+  const pts=[...pointers.values()];
+  if(pointers.size===1){
+    yaw += (e.clientX-prev.x)*0.01;
+    pitch = clamp(pitch+(e.clientY-prev.y)*0.01, -1.15, 1.15);
+  } else if(pointers.size===2){
+    const other=[...pointers.entries()].find(([id])=>id!==e.pointerId)[1];
+    const d0=Math.hypot(prev.x-other.x, prev.y-other.y);
+    const d1=Math.hypot(e.clientX-other.x, e.clientY-other.y);
+    if(d0>8) dist=clamp(dist*(d0/d1), 6, 22);
+  }
+  pointers.set(e.pointerId,{x:e.clientX,y:e.clientY});
+});
+canvas.addEventListener('wheel', e=>{
+  e.preventDefault();
+  dist=clamp(dist+(e.deltaY>0?0.7:-0.7), 6, 22);
+},{passive:false});
+
+document.getElementById('play').onclick=()=>{
+  playing=!playing;
+  document.getElementById('play').textContent=playing?'pause':'play';
+};
+document.getElementById('reset').onclick=resetCam;
+document.getElementById('spd').oninput=e=>{ speed=parseFloat(e.target.value); };
+document.getElementById('rail').innerHTML=STAGES.map(s=>
+  `<button type="button" data-s="${s.id}">${s.name.replace(' ','\n')}</button>`
+).join('');
+document.getElementById('rail').onclick=e=>{
+  const b=e.target.closest('button'); if(!b) return;
+  stage=+b.dataset.s; acc=0; playing=false;
+  document.getElementById('play').textContent='play';
+  card();
+};
+addEventListener('keydown', e=>{
+  if(e.code==='Space'){ e.preventDefault(); document.getElementById('play').click(); }
+  if(e.code==='ArrowRight'){ stage=(stage+1)%8; acc=0; playing=false; document.getElementById('play').textContent='play'; card(); }
+  if(e.code==='ArrowLeft'){ stage=(stage+7)%8; acc=0; playing=false; document.getElementById('play').textContent='play'; card(); }
+  if(e.code==='KeyR') resetCam();
 });
 
-function rot(p){
-  let [x,y,z] = [p[0]-cx, p[1]-cy, p[2]-cz];
-  const cyw=Math.cos(yaw), syw=Math.sin(yaw);
-  let x1=x*cyw - z*syw, z1=x*syw + z*cyw;
-  const cp=Math.cos(pitch), sp=Math.sin(pitch);
-  let y2=y*cp - z1*sp, z2=y*sp + z1*cp;
-  return [x1,y2,z2];
+function resetCam(){ yaw=-0.85; pitch=0.38; dist=11.5; }
+function clamp(v,a,b){ return Math.max(a,Math.min(b,v)); }
+function liveSet(){ return new Set(STAGES[stage].live); }
+
+function cam(){
+  const cp=Math.cos(pitch), sp=Math.sin(pitch), cy=Math.cos(yaw), sy=Math.sin(yaw);
+  return {
+    pos:[ look[0]+dist*cp*sy, look[1]+dist*sp, look[2]+dist*cp*cy ],
+    right:[ cy, 0, -sy ],
+    up:[ -sy*sp, cp, -cy*sp ]
+  };
 }
 function proj(p){
-  const [x,y,z]=rot(p);
-  const f = zoom*18/(9+z);
-  return [W*0.42 + x*f, H*0.52 - y*f, z];
+  const c=cam();
+  const vx=p[0]-c.pos[0], vy=p[1]-c.pos[1], vz=p[2]-c.pos[2];
+  const f=[ look[0]-c.pos[0], look[1]-c.pos[1], look[2]-c.pos[2] ];
+  const fl=Math.hypot(f[0],f[1],f[2])||1;
+  f[0]/=fl; f[1]/=fl; f[2]/=fl;
+  const z=vx*f[0]+vy*f[1]+vz*f[2];
+  const x=vx*c.right[0]+vy*c.right[1]+vz*c.right[2];
+  const y=vx*c.up[0]+vy*c.up[1]+vz*c.up[2];
+  const s= (H*0.72) / Math.max(0.6, z);
+  return [W*0.42+x*s, H*0.46-y*s, z];
 }
 function pick(mx,my){
-  let best=null, bd=18;
+  let best=null, bd=22;
   for(const n of NODES){
-    const [x,y]=proj(n.p);
-    const d=Math.hypot(x-mx,y-my);
+    const q=proj(n.p); if(q[2]<0.4) continue;
+    const d=Math.hypot(q[0]-mx,q[1]-my);
     if(d<bd){ bd=d; best=n.id; }
   }
   return best;
 }
 function col(st){
   if(st.includes('G')) return '#d86bff';
-  if(st.includes('X') && st.includes('I')) return '#9ad7ff';
-  if(st.includes('X')) return '#ff5d6c';
+  if(st.includes('X')) return '#ff6b78';
   if(st.includes('I')) return '#6ee0ff';
   return '#e8b86d';
 }
-function lerp(a,b,t){ return a+(b-a)*t; }
-function lerp3(a,b,t){ return [lerp(a[0],b[0],t),lerp(a[1],b[1],t),lerp(a[2],b[2],t)]; }
-function tokenPos(now){
-  const cycle=9000;
-  const u=((now-t0)%cycle)/cycle;
-  const seg=u*(LOOP.length-1);
-  const i=Math.floor(seg);
-  const t=seg-i;
-  const a=byId[LOOP[i]].p, b=byId[LOOP[i+1]].p;
-  return {p:lerp3(a,b,t), stage:STAGES[Math.min(i,STAGES.length-1)]};
-}
-function axes(){
-  const o=[cx,cy,cz], s=2.2;
-  const segs=[[ [o[0]-s,o[1],o[2]],[o[0]+s,o[1],o[2]],'#335' ],
-              [ [o[0],o[1]-s,o[2]],[o[0],o[1]+s,o[2]],'#335' ],
-              [ [o[0],o[1],o[2]-s],[o[0],o[1],o[2]+s],'#335' ]];
-  ctx.lineWidth=1;
-  for(const [a,b,c] of segs){
-    const A=proj(a), B=proj(b);
-    ctx.strokeStyle=c; ctx.beginPath(); ctx.moveTo(A[0],A[1]); ctx.lineTo(B[0],B[1]); ctx.stroke();
+function lerp3(a,b,t){ return [a[0]+(b[0]-a[0])*t, a[1]+(b[1]-a[1])*t, a[2]+(b[2]-a[2])*t]; }
+
+function tokens(){
+  // Dual-shaft walk: S0–S1 two tokens; later one token on the live mill.
+  const u=acc;
+  if(stage===0){
+    return [
+      {p:lerp3(byId.R.p, byId.I.p, Math.min(1,u*2)), twin:false},
+      {p:u<0.5? byId.I.p : lerp3(byId.I.p, byId.RIC.p, (u-0.5)*2), twin:true},
+      {p:u<0.5? byId.I.p : lerp3(byId.I.p, byId.PFC.p, (u-0.5)*2), twin:true}
+    ];
   }
+  if(stage===1) return [{p:byId.RIC.p,twin:true},{p:byId.PFC.p,twin:true}];
+  const map={
+    2:[['RIC','C'],['PFC','C'],['C','L']],
+    3:[['L','M']],
+    4:[['M','E']],
+    5:[['L','ISL'],['M','ISL'],['E','ISL']],
+    6:[['ISL','B']],
+    7:[['B','R'],['ISL','PFC']]
+  };
+  return (map[stage]||[]).map(([a,b])=>({p:lerp3(byId[a].p, byId[b].p, u), twin:a==='RIC'||a==='PFC'||b==='PFC'}));
 }
-function draw(){
-  ctx.clearRect(0,0,W,H);
-  const g=ctx.createRadialGradient(W*0.4,H*0.5,20,W*0.4,H*0.5,Math.max(W,H)*0.7);
-  g.addColorStop(0,'#10182a'); g.addColorStop(1,'#07080d');
-  ctx.fillStyle=g; ctx.fillRect(0,0,W,H);
-  axes();
-  for(const [a,b,st] of EDGES){
-    const A=proj(byId[a].p), B=proj(byId[b].p);
-    ctx.strokeStyle = st==='X' ? '#ff5d6c55' : st==='I' ? '#6ee0ff55' : '#e8b86d44';
-    ctx.lineWidth = (a===selected||b===selected)?2:1;
+
+function drawGrid(){
+  ctx.strokeStyle='#1b2433'; ctx.lineWidth=1;
+  for(let x=0;x<=7;x++){
+    const A=proj([x,-1.8,0]), B=proj([x,1.8,0]);
     ctx.beginPath(); ctx.moveTo(A[0],A[1]); ctx.lineTo(B[0],B[1]); ctx.stroke();
   }
-  const tok=tokenPos(performance.now());
-  const T=proj(tok.p);
-  ctx.fillStyle='#fff'; ctx.beginPath(); ctx.arc(T[0],T[1],4.5,0,6.3); ctx.fill();
-  ctx.fillStyle='#9ab'; ctx.font='11px ui-sans-serif'; ctx.fillText(tok.stage, T[0]+8, T[1]-8);
-  const order=[...NODES].sort((a,b)=>rot(a.p)[2]-rot(b.p)[2]);
-  for(const n of order){
-    const [x,y]=proj(n.p);
-    const on=n.id===selected;
-    ctx.beginPath(); ctx.arc(x,y,on?9:6,0,6.3);
-    ctx.fillStyle=col(n.stamp);
-    ctx.globalAlpha=on?1:0.92; ctx.fill(); ctx.globalAlpha=1;
-    ctx.strokeStyle='#fff8'; ctx.lineWidth=on?2:0.6; ctx.stroke();
-    ctx.fillStyle='#eef6ff'; ctx.font=(on?'13px':'11px')+' ui-sans-serif';
-    ctx.fillText(n.id, x+10, y-8);
+  ctx.fillStyle='#5f6d86'; ctx.font='10px ui-sans-serif';
+  const lab=['t0 R','t1 shafts','t2 C/L','t3 M','t4 E','t5 ISL','t6 B','t7 back'];
+  lab.forEach((s,i)=>{ const q=proj([i,-2.05,0]); ctx.fillText(s,q[0]-10,q[1]); });
+}
+
+function frame(now){
+  if(!frame.t) frame.t=now;
+  const dt=Math.min(0.05,(now-frame.t)/1000); frame.t=now;
+  if(playing){
+    acc+=dt*0.55*speed;
+    if(acc>=1){ acc=0; stage=(stage+1)%8; card(); }
   }
-  requestAnimationFrame(draw);
+  ctx.clearRect(0,0,W,H);
+  const bg=ctx.createRadialGradient(W*0.4,H*0.45,10,W*0.4,H*0.45,Math.max(W,H));
+  bg.addColorStop(0,'#10182a'); bg.addColorStop(1,'#06070b');
+  ctx.fillStyle=bg; ctx.fillRect(0,0,W,H);
+  drawGrid();
+  const live=liveSet();
+  for(const [a,b,s] of EDGES){
+    const on=s===stage || (live.has(a)&&live.has(b));
+    const A=proj(byId[a].p), B=proj(byId[b].p);
+    ctx.strokeStyle=on? '#e8b86dcc' : '#24304488';
+    ctx.lineWidth=on?2:1;
+    ctx.beginPath(); ctx.moveTo(A[0],A[1]); ctx.lineTo(B[0],B[1]); ctx.stroke();
+  }
+  for(const tok of tokens()){
+    const q=proj(tok.p);
+    ctx.fillStyle=tok.twin?'#6ee0ff':'#fff';
+    ctx.beginPath(); ctx.arc(q[0],q[1],5,0,6.3); ctx.fill();
+  }
+  const ordered=[...NODES].sort((a,b)=>proj(b.p)[2]-proj(a.p)[2]);
+  for(const n of ordered){
+    const q=proj(n.p);
+    if(q[2]<0.3) continue;
+    const on=live.has(n.id) || n.id==='GAP';
+    const sel=n.id===selected;
+    ctx.globalAlpha=on?1:0.28;
+    ctx.beginPath(); ctx.arc(q[0],q[1], sel?10:7,0,6.3);
+    ctx.fillStyle=col(n.stamp); ctx.fill();
+    ctx.strokeStyle='#fff9'; ctx.lineWidth=sel?2:0.7; ctx.stroke();
+    ctx.fillStyle='#eef6ff'; ctx.font=(sel?'13px':'11px')+' ui-sans-serif';
+    ctx.fillText(n.id, q[0]+11, q[1]-7);
+    ctx.globalAlpha=1;
+  }
+  document.getElementById('phase').textContent=STAGES[stage].name;
+  [...document.querySelectorAll('#rail button')].forEach((b,i)=>b.classList.toggle('on', i===stage));
+  requestAnimationFrame(frame);
 }
-function renderCard(){
+
+function card(){
   const n=byId[selected];
-  document.getElementById('title').textContent=n.name;
-  document.getElementById('stamps').innerHTML=n.stamp.map(s=>{
-    const cls=s==='G'?'G':s;
-    const lab=s==='G'?'[GAP]':`[${s}]`;
-    return `<span class="stamp ${cls}">${lab}</span>`;
-  }).join('');
-  document.getElementById('fields').innerHTML=
-    `<dt>Kind</dt><dd>${n.kind}</dd><dt>Purpose</dt><dd>${n.purpose}</dd><dt>On Graphic D</dt><dd>${n.x}</dd>`;
+  const s=STAGES[stage];
+  document.getElementById('card').innerHTML=
+    `<h2>${n.name}</h2>`+
+    n.stamp.map(t=>`<span class="stamp ${t==='G'?'G':t}">${t==='G'?'[GAP]':'['+t+']'}</span>`).join('')+
+    `<dl><dt>Kind</dt><dd>${n.kind}</dd><dt>Purpose</dt><dd>${n.purpose}</dd>`+
+    `<dt>Now on the clock</dt><dd><b>${s.name}</b> — ${s.text}</dd>`+
+    `<dt>Live this stage</dt><dd>${s.live.join(' · ')}</dd></dl>`;
 }
-renderCard(); draw();
+card();
+requestAnimationFrame(frame);
 </script>
 </body>
 </html>
