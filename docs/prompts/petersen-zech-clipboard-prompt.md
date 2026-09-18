@@ -155,7 +155,7 @@ Hands first: shoe → graphics A–D → systems-manifest → staking / law-why 
          fill PAGE A → B → C → D → E → F → X
               │
               v
-         write docs/petersen-zech-clipboard.md
+         write docs/clipboards/petersen-zech-clipboard.md
               │
               v
          STOP  (commit only if human asks)
