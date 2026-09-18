@@ -202,4 +202,119 @@ A = growth story · B = 3D mechanism · C = what more dimensions is not · D = o
 | T3 | Diagnostic tells |
 | T4 | A/B/C/D jobs |
 
+## Source panels (pass 4)
+
+There is no Core source PDF. Source = `docs/graphics/` A–D. Panel jobs from `docs/systems-manifest.md` source-location lines. D1 tape from `docs/graphics-close-reading.md`. C3 is cited there, not as a token in the manifest body.
+
+### Graphic D — only store
+
+```
+ D footer    One line. Infinite structure.
+ D1          eleven-row tape (illustrative mix, not an emission trace)
+ D2          what each entry looks like  WORD | POINTER
+ D3          pointer participates
+ D4          3D view is not stored in the array
+ D5          repeated variable → star (view)
+ D6          pointer may ref a pointer
+ Key props   append-only; indices forever
+```
+
+D1 tape (close-reading, exact):
+
+```
+ 0000 WORD     PIE
+ 0001 WORD     DESSERT
+ 0002 POINTER  0000 → 0001     PIE relates to DESSERT
+ 0003 WORD     PIE
+ 0004 POINTER  0003 → 0000     New PIE relates to first PIE
+ 0005 WORD     WHOLE
+ 0006 POINTER  0003 → 0005     This PIE relates to WHOLE
+ 0007 POINTER  0006 → 0004     relationship participates in relationship
+ 0008 WORD     CUSTOMER
+ 0009 POINTER  0008 → 0007     CUSTOMER relates to that relationship
+ 0010 POINTER  0009 → 0002     this relationship relates to an earlier one
+```
+
+Closed by the rows (close-reading): backward-only; six of six arity 2 in *this* tape; pointer may ref pointer; types = WORD|POINTER only.  
+Still `[GAP]`: when to emit; whether arity is *exactly* two forever; slot A vs B (not chronological).  
+Ruled out: every adjacent WORD pair emits a POINTER (0001–0003 and 0005–0008 have none).
+
+### Graphic A — growth story
+
+```
+ A1   Start: empty strand
+ A2–A4  arrival / punch-card
+ A5   words form stars
+ A6–A9  document routes
+ A10  touches
+ A11  dictionary wiring
+ A12  zoom: PIE star
+ A13  punch-card; no stored meaning
+```
+
+### Graphic B — mechanism
+
+```
+ B1   continuous wire
+ B2–B3  star / wire through star
+ B4   dictionary
+ B5   sequence is physical
+ B6   document feed (punch-card input)
+ B7–B8  touch
+ B9   star-inside-star traffic
+ B10  collapse / stored definition
+ B11  graph is a shadow
+ B12  governing rule
+```
+
+### Graphic C — what more dimensions is not
+
+```
+ C1   Rule Zero
+ C2   1D presentation
+ C3   2D crossings / adjacency     (close-reading ladder)
+ C4   3D looping / stars
+ C5   more dimensions ≠ more meaning
+ C6   four named families (not D types)   [GAP] vs D schema
+ C7   5D+ touches of touches
+ C8   symptoms of N-D (view)
+ C9   dictionary / no collapse
+ C10  input treatment
+ C11  projection ≠ lace
+ C12  governing rule
+```
+
+### Panel → Piece (pass 4)
+
+| Panels | Piece |
+|---|---|
+| C1 B1 A1 D footer | 1 |
+| B12 C12 D footer A13 | 2 |
+| C10 B2 A2–A4 A13 B6 | 3 |
+| D1 D2 D5 | 4 |
+| D1–D3 D6 | 5 |
+| Graphic D entire | 6 |
+| A5 A12 B2–B3 B9 C4 C6 C8 D4–D5 | 7 |
+| B5 A4 C2 | 8 |
+| B4 C9 A6 A11 | 9 |
+| B6 A6–A9 C10 | 10 |
+| B7–B8 C7 A10 D6 | 11 |
+| C5–C8 C header | 12 |
+| C2–C4 C11 B10–B11 D4 | 13 |
+| A13 B10 C9 C12 | 14 |
+| B9 A12 | 15 |
+
+No new pieces.
+
+## Pass 4 deltas
+
+| Ticket | Action |
+|---|---|
+| T1 | Graphic D + D1 tape |
+| T2 | Graphic A panels |
+| T3 | Graphic B panels |
+| T4 | Graphic C panels |
+| T5 | Panel → Piece cross-walk |
+
+
 
