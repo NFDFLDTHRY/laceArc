@@ -148,3 +148,11 @@ Agent: LaceArc. Date: America/Los_Angeles.
 - fix: path edited (add coord station); LaceArc on protocol
 - cites: docs/coord/README.md; docs/prompts/coord-protocol-prompt.md; docs/coord/stations/maps.station
 - emission contact: none
+
+### tick 2026-09-18 · station maps · pass 6 · tip 368c380d0bc743b0590facd8ac90c051082c747d
+Agent: Grok. Date: America/Denver.
+- finding: A5 / prompt-product tick recorded Petersen filled clipboard as ABSENT (`docs/petersen-zech-clipboard.md`). That finding is **THEN**. **NOW:** `docs/clipboards/petersen-zech-clipboard.md` exists on main (sheets A–F and X). Emission remains `[GAP]`. File is not accepted as Core. Rust products now live under `docs/plans/`. This stanza does not rewrite the old A5 line; it dates it.
+- kind: ok
+- fix: log-only
+- cites: docs/clipboards/petersen-zech-clipboard.md; docs/clipboards/README.md; docs/plans/rust-nostd-crate-map.md; docs/plans/rust-nostd-branch-contracts.md; A5 rollup above
+- emission contact: silenced → [GAP]

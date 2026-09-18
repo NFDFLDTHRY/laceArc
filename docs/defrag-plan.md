@@ -1,6 +1,6 @@
 # Defrag plan (PREPARE only)
 
-Status: **PASS 1–5 on main.** PASS 5 prompts `fa0ecfd`, clipboards `2a2be11`.
+Status: **PASS 1–6 on main.** PASS 6 = coherence THEN/NOW on Petersen (maps).
 POINTER emission stays `[GAP]`. No further filing pass planned.
 
 Shoe test: filing, not wrapping the cord.
@@ -342,7 +342,7 @@ One station, one commit. First ticket if you say go: **prompts**, then clipboard
 
 ### After pass 5
 
-Filing + path sweep done. Next work is Hands (`[GAP]`), not shelves.
+Filing + path sweep done. Pass 6 dated the stale Petersen-ABSENT audit line. Next work is Hands (`[GAP]`), not shelves.
 
 
 
