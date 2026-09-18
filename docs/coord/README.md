@@ -57,6 +57,7 @@ Station files: `docs/coord/stations/<name>.station`
 | renderer | `docs/shadow-clock-gearing.html` |
 | kit | `docs/kit/**` |
 | law | `AGENTS.md` `docs/staking-the-workspace.md` `docs/law-why-these-documents.md` `docs/systems-manifest.md` `docs/graphics/**` `CONTRIBUTING.md` `README.md` (rare; steward) |
+| coord | docs/coord/** (this umbrella) |
 | gearing-meta | `docs/gearing/*.md` `docs/gearing/*.sh` `docs/gearing/RESYNC.md` (not `contracts-*.js`) |
 
 ## Gear stations (delegate to claim.sh)

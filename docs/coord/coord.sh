@@ -10,7 +10,7 @@ CLAIM_SH="$ROOT/docs/gearing/claim.sh"
 RESYNC_SH="$ROOT/docs/gearing/resync.sh"
 RESYNC_MD="$ROOT/docs/gearing/RESYNC.md"
 
-DOC_STATIONS=(clipboards prompts maps history hologram renderer kit law gearing-meta)
+DOC_STATIONS=(clipboards prompts maps history hologram renderer kit law gearing-meta coord)
 GEAR_SHAFTS=(axle gears trainA trainB trainC cells escape audits)
 
 die() { echo "ERROR: $*" >&2; exit 1; }
@@ -176,6 +176,7 @@ path_to_station() {
     [kit]="docs/kit/**"
     [law]="AGENTS.md docs/staking-the-workspace.md docs/law-why-these-documents.md docs/systems-manifest.md docs/graphics/** CONTRIBUTING.md README.md"
     [gearing-meta]="docs/gearing/*.md docs/gearing/*.sh docs/gearing/RESYNC.md"
+    [coord]="docs/coord/**"
   )
 
   # noglob: patterns contain * and ** which must not expand on disk

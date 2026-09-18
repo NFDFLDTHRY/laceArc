@@ -141,3 +141,10 @@ Agent: LaceArc. Date: America/Los_Angeles.
 ### tick 2026-09-18 · campaign summary A1–A14 · tip 33b7e79dd4039eceac9087bc80a7dd3cf73aeae6
 Agent: LaceArc. Date: America/Los_Angeles.
 - rollup: A1 ok (graphics). A2 ok (manifest/[GAP]s). A3 ok (Implementation Law align). A4 ok (stakes↔reason-map). A5 OPEN [GAP] (Petersen filled clipboard ABSENT). A6 FIX-APPLIED (AGENTS Job↔acceptance). A7 FIX-APPLIED (stale untracked/ABSENT notes) + doors/order ok. A8 drift logged (plastic↔hologram pixel debt; 1:1 keys ok). A9 drift logged (restyle paths ok; HTML not restyled). A10 ok (Shadow prose headers). A11 ok (history steward filters Hands-safe). A12 ok (README↔disk; 0 missing). A13 ok LOG-only (RESYNC FIRED; shafts FREE; claim.sh exec). A14 ok (F01 still unprotected live; F02/F10 acceptance still open; emission [GAP]). Campaign coherent at docs/Layer III. Do not declare Core ready. Emission remains [GAP]. No src/.
+
+### tick 2026-09-18 · station maps · tip 2e3cc8a3b73d
+- finding: LaceArc began using docs/coord umbrella. Claimed maps. Noted hole: docs/coord/** itself had no station (which fail-closed) — fixing by adding station `coord`.
+- kind: drift
+- fix: path edited (add coord station); LaceArc on protocol
+- cites: docs/coord/README.md; docs/prompts/coord-protocol-prompt.md; docs/coord/stations/maps.station
+- emission contact: none

@@ -1,0 +1,7 @@
+STATUS: FREE
+STATION: coord
+OWNS: docs/coord/**
+AGENT: -
+BASE: -
+SINCE: -
+NOTE: umbrella scripts + station files; claim before editing coord.sh
