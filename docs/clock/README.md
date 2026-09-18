@@ -12,6 +12,7 @@ Moved here in defrag pass 3.
 | shadow-clock-gear-contracts-second-reading.md | `[PROPOSAL]` |
 | gearing-code-1to1.md | visual key ↔ unit |
 | philosophy-map.md | HCC-A / Cup / Water as gears |
+| hcc-a-mechanisms-plan.md | PLAN: ASCII systems map of HCC-A internals only |
 | agent-interaction-model.md | elephant clock `[PROPOSAL]` |
 | system-mathematical-model.md | Hands L + Shadow H; emission `[GAP]` |
 
