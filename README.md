@@ -30,8 +30,8 @@ Same rule. Same strand. 3D stars and N-dimensional participation are readings of
 | [docs/staking-the-workspace.md](docs/staking-the-workspace.md) | Exact Hands vs Shadow staking ASCII (companion to law-why). |
 | [docs/shadow-clock-hologram.md](docs/shadow-clock-hologram.md) | Holder machine {A,B,C} clock hologram; gears traced to contract boundary. Shadow only. |
 | [docs/shadow-clock-agent-brief.md](docs/shadow-clock-agent-brief.md) | Standing brief for agents: define gear interaction contracts and walk all sources. |
-| [docs/shadow-clock-agent-brief.md](docs/shadow-clock-agent-brief.md) | Standing brief for agents: define gear interaction contracts and walk all sources. |
 | [docs/shadow-clock-gear-contracts.md](docs/shadow-clock-gear-contracts.md) | Walk artifact: every mesh contracted, stamped, cited. Shadow only. |
+| [docs/system-mathematical-model.md](docs/system-mathematical-model.md) | Dual-universe formal model: Hands Contract I + Shadow {A,B,C}; emission sealed [GAP]. |
 | [docs/shadow-clock-gearing.html](docs/shadow-clock-gearing.html) | Interactive Layer-III projection: {A,B,C} as physical clock gearing + mesh contracts (raw.githack). |
 | [docs/system-mathematical-model.md](docs/system-mathematical-model.md) | Two-algebra model: Hands L and Shadow H. Emission remains [GAP]. |
 | [LICENSE](LICENSE) | Apache-2.0 |

@@ -993,3 +993,14 @@ Holder gears diagnose the steward. They do not grow a second store beside Graphi
 Lace ∉ {A,B,C}.  
 Lace = append → star → continue.  
 POINTER emission = `[GAP]`.
+
+---
+
+## Related
+
+| Path | Role |
+|---|---|
+| [docs/system-mathematical-model.md](system-mathematical-model.md) | Formal dual-universe model derived from these walks; emission remains [GAP]. |
+| [docs/shadow-clock-hologram.md](shadow-clock-hologram.md) | Diagram under test |
+| [docs/shadow-clock-agent-brief.md](shadow-clock-agent-brief.md) | Standing brief |
+| [docs/shadow-clock-gearing.html](shadow-clock-gearing.html) | Layer-III gearing projection |
