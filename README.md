@@ -27,6 +27,7 @@ Same rule. Same strand. 3D stars and N-dimensional participation are readings of
 | [docs/graphics/](docs/graphics/) | Canonical source graphics. These define the project. |
 | [docs/systems-manifest.md](docs/systems-manifest.md) | Contract map extracted from those graphics: pieces, couplings, seams, open gaps. |
 | [docs/graphics-close-reading.md](docs/graphics-close-reading.md) | Row-level second pass over panel D1. What the eleven rows close, and three gaps they open. |
+| [docs/lace-projection-brief.md](docs/lace-projection-brief.md) | [PROPOSAL] Plan for the Lace visualizer: Graphic D as a Layer III view. Eleven rows, no emitter. |
 | [docs/agent-interaction-model.md](docs/agent-interaction-model.md) | [PROPOSAL] How several agents mesh: the elephant clock. Stewards only, never Core concurrency. |
 | [docs/shadow-clock-gear-contracts-second-reading.md](docs/shadow-clock-gear-contracts-second-reading.md) | [PROPOSAL] Bounded counter-reading of the gear contracts. Five findings outstanding; one absorbed by the primary. |
 | [docs/law-why-these-documents.md](docs/law-why-these-documents.md) | Repo law: why the five adjacent documents were staked, and the only allowed implementation posture (Rust `no_std`, zero foreign deps). |
