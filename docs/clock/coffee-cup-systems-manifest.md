@@ -178,6 +178,55 @@ Water clipboard is not this file. HCC S0–S7 is a different clock. Do not fuse.
 
 ---
 
+## Concurrent lanes (pass 3)
+
+One event is three payloads in parallel at the same C-index. Lanes are views of one fall, not three cups.
+
+| Lane | C2 specimen (source) | C4 specimen (source) |
+|---|---|---|
+| social | boundary crossed or refused; silence where a response was expected | rupture / block / severance |
+| language | first charged utterance; label; accusation; framing | final statement; declaration; label that ends dialogue |
+| lived | leaving; blocking; external authority; irreversible step | door closes; path ends |
+
+Failure: treating a language C4 as if lived C3 were still open.
+
+## Recirculation pipe (pass 3)
+
+```
+C1 possibility ──► C2 motion ──► C3 window ──► C4 ground truth
+                                              │
+                                              ▼
+                         next C1 ◄── C5 narrative-that-rewrites-C1
+```
+
+C5→C1 payload is rewritten thresholds (higher threat, lower ambiguity, preemptive hardening) — not a copy of C4. Holder time. Not P4. Not HCC S7 fused into one sink.
+
+## Cluster labels over the wheel (pass 3)
+
+Objects do not have relationships. Relationships cluster as the wheel turns. Labels may be created, split, or merged to name what is observed. Those acts name. They do not rewrite WORD.
+
+| Stage | May | Must not |
+|---|---|---|
+| C1 | notice existing wraps / eyelets | call them fate |
+| C3 | intervene = more cord | merge labels as if merging L |
+| C4 | ground-truth the observed cluster | file Graphic D smoother |
+| C5 | new / split / merge **labels** for next looking | rewrite WORD; πID as star |
+
+Layer III labels ≠ L merge ≠ ISL snapshot.
+
+## Dual-clock coexistence (pass 3)
+
+| Cup | May overlap HCC | Not equal to |
+|---|---|---|
+| C2 | πB (an act) | S6 only — an act can be freeze, speech, or let-go |
+| C3 | πB while Water meshed | S0–S7 running *inside* a holder during a window |
+| C4 | πFB | S7 world sink |
+| C5 | πID | S7 identity sink |
+
+No scheduler that orders C4/C5 against S7. Attachment is silent. Procedure `[GAP]`.
+
+---
+
 ## Pass 1 clipboard deltas (vs philosophy-map Gear C)
 
 | Philosophy-map | Attachment | Action |
@@ -200,6 +249,15 @@ None of these license stages as Graphic D row types. Emission remains `[GAP]`.
 | T3 | Quiet end piece |
 | T4 | C packet ↔ HCC π table |
 | T5 | C4→πFB vs C5→πID stamped |
+
+## Pass 3 clipboard deltas
+
+| Ticket | Action |
+|---|---|
+| T1 | Three lanes as concurrent pipes + C2/C4 specimens |
+| T2 | Recirculation drawn as C5→C1 pipe |
+| T3 | Cluster-label table on teeth |
+| T4 | Cup vs HCC coexistence; no fused scheduler |
 
 ---
 
