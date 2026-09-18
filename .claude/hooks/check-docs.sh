@@ -43,6 +43,11 @@ else
   note_ok "no tracked PDFs (references stay citations)"
 fi
 
+# Documents under check: tracked, plus untracked files git would not ignore.
+# A file being written right now must meet the gate before it is committed,
+# not after; enumerating only the index made a new file invisible to it.
+_docs=$(git ls-files --cached --others --exclude-standard -- '*.md')
+
 # 4. Relative links in the markdown resolve. A dead link to a graphic is a
 #    dead pointer to the source of record.
 broken=0
@@ -60,7 +65,7 @@ while IFS= read -r md; do
       broken=$((broken + 1))
     fi
   done < <(grep -oE '\]\([^)]+\)' "$md" | sed -E 's/^\]\(//; s/\)$//; s/ .*$//')
-done < <(git ls-files '*.md')
+done < <(printf '%s\n' "$_docs")
 if [ "$broken" -eq 0 ]; then
   note_ok "relative markdown links: all resolve"
 else
@@ -111,15 +116,15 @@ while IFS= read -r md; do
     done
   done < <(awk '{if (NR > 1) print prev " " $0; prev = $0} END {print prev}' "$md" \
            | grep -nE "($_TOK).{0,30}($_PHR)")
-done < <(git ls-files '*.md')
+done < <(printf '%s\n' "$_docs")
 [ "$stale" -eq 0 ] && note_ok "no stale absence claims (nothing called absent that is tracked)"
 
 # 6. Orphan documents. A tracked document no other document links to is
 #    unreachable by reading: written, committed, and invisible.
-linked=$(git ls-files '*.md' | xargs grep -ohE '\]\([^)]+\)' 2>/dev/null \
+linked=$(printf '%s\n' "$_docs" | xargs grep -ohE '\]\([^)]+\)' 2>/dev/null \
   | sed -E 's/^\]\(//; s/\)$//; s/ .*$//; s/#.*$//; s#.*/##' | sort -u)
 orphans=0
-for f in $(git ls-files '*.md'); do
+for f in $_docs; do
   # Entry points are reached from outside the tree, not by an inbound link.
   case "$f" in README.md|AGENTS.md|CLAUDE.md|READ_ME_FIRST.md|CONTRIBUTING.md) continue ;; esac
   if ! printf '%s\n' "$linked" | grep -qxF -- "$(basename -- "$f")"; then
