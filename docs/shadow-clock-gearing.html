@@ -264,6 +264,15 @@
   Projection (Layer III). raw.githack: serve this file from main. Shoe lace in hands — or get out of here.
 </footer>
 
+
+<script src="gearing/contracts-axle.js"></script>
+<script src="gearing/contracts-gears.js"></script>
+<script src="gearing/contracts-trainA.js"></script>
+<script src="gearing/contracts-trainB.js"></script>
+<script src="gearing/contracts-trainC.js"></script>
+<script src="gearing/contracts-cells.js"></script>
+<script src="gearing/contracts-escape.js"></script>
+<script src="gearing/contracts-audits.js"></script>
 <script>
 (function () {
   function gearTeeth(gSelector, toothCount, outerR, innerR, tip) {
@@ -301,209 +310,7 @@
   }
   requestAnimationFrame(spin);
 
-  const CONTRACTS = {
-    axle: {
-      title: "AXLE — shared deadbolt",
-      body:
-`MESH: Reality → {A,B,C}   (scale: axle)
-INPUTS: constraint-bearing world
-OUTPUTS: common deadbolt for all three trains
-PRECONDITIONS: none (prior to local compile)
-EFFECTS: binds structure-only transfer; forbids meaning cross
-INVARIANTS:
-  Reality constrains
-  Only structure crosses minds
-  Push without orientation fails
-  Loud moment ≠ end of event
-  Failure often = place/timing
-BOUNDARY STAMP: [I] kin
-HANDS CITE: Rule Zero / governing rule (graphics B12 C12 D)
-SHADOW CITE: hologram § Axle
-HISTORY CITE: pass1 ancestry 26 Aug {A,B,C}
-DELTA vs HOLOGRAM: confirms
-IF CONFLICT: Hands win`
-    },
-    A: {
-      title: "GEAR A — HCC-A compile train",
-      body:
-`MESH: R→I→RIC∥PFC→C→L→M→E→ISL→B→R   (scale: A)
-INPUTS: Interface signals from Reality
-OUTPUTS: Behavior into Reality; Act VI templates into next PFC
-PRECONDITIONS: dual channel parallel (RIC∥PFC escapement)
-EFFECTS: local story/force/self; never transmits meaning
-INVARIANTS: structure crosses; meaning local; loop S0..S7
-FAILURE MODES: PFC-dominant lock; ledger merge/delete treated as Lace write
-BOUNDARY STAMP: gears mix [II] RIC | [H] E/ISL | [X] L-merge/M-sense/PFC-as-Star
-HANDS CITE: Punch-card arrival (Piece 3); no stored meaning (Piece 14)
-SHADOW CITE: HCC-A spec
-HISTORY CITE: pass2 D08 fidelity audit repairs are [X]
-DELTA vs HOLOGRAM: confirms
-NOTE: A alone is blind to joint crossing + time window`
-    },
-    B: {
-      title: "GEAR B — Coffee Cup fall train",
-      body:
-`MESH: Cond→Rel→Traj→Imp→After→Cond'   (scale: B)
-INPUTS: one event unfolding (empty-cup stake removal)
-OUTPUTS: recirculating conditions / scripts
-PRECONDITIONS: attention not escaped into pure stakes-argument
-EFFECTS: places causality across five teeth
-INVARIANTS: Release initiating not decisive; Traj mechanical; After causal
-FAILURE MODES: skip Cond; over-Rel; skip Traj; miss Imp; skip After
-BOUNDARY STAMP: Imp [I] | Cond/Rel/Traj/After [H] | After-as-mutate-WORD [X]
-HANDS CITE: Impact = ground truth kin; no rewrite i (Rule Zero)
-SHADOW CITE: Coffee Cup
-HISTORY CITE: none required
-DELTA vs HOLOGRAM: confirms
-NOTE: B alone is blind to knobs + repair protocol`
-    },
-    C: {
-      title: "GEAR C — Water / Proof crossing train",
-      body:
-`MESH: Banks→Rapids→Delta→Cross→Rebuild→Banks'   (scale: C)
-       + Locate/Anchor/Pair/Unknowns/Reject
-INPUTS: conversational heat / blockage
-OUTPUTS: route to Anchor or Reject; shared OBS pair when possible
-PRECONDITIONS: none for Locate; Crossing needs OBS pair + UNK list
-EFFECTS: decides whether understanding is possible yet (not who is right)
-INVARIANTS: loud ≠ transferable; if can't point, can't push
-FAILURE MODES: INVALID heat recursion; false progress; mirror lock
-BOUNDARY STAMP: protocol [H] | river draw [III] | OBS/DELTA as Lace rows [X]
-                Anchor as emission [GAP] unfilled
-HANDS CITE: Graphic D WORD/POINTER only; emission [GAP]
-SHADOW CITE: Where the Water Is Loud + Dual Proofing
-HISTORY CITE: pass1 — old OBS labels not row types
-DELTA vs HOLOGRAM: confirms
-REPAIR: "We're in the rapids. Pick one pointable thing (OBS)…"
-NOTE: C alone is blind to full local stack + pre-release field`
-    },
-    AB: {
-      title: "MESH A×B — compile × fall time",
-      body:
-`MESH: A ↔ B   (scale: A×B×C co-presence)
-INPUTS: event stage (B) gates which A subsystem is diagnostic
-OUTPUTS: phased compile read (priors @ Cond; M+E @ Traj; Act VI @ After)
-PRECONDITIONS: same axle
-EFFECTS: B.After ≡ A.Act VI → next PFC
-INVARIANTS: Aftermath recirculation = priors recursion
-FAILURE MODES: single-tooth collapse mis-phases A
-BOUNDARY STAMP: [H] recirculation | metaphor growth [I] | mutate WORD [X]
-HANDS CITE: append-only growth ≠ story rewrite
-SHADOW CITE: hologram morphism B→A
-HISTORY CITE: none
-DELTA vs HOLOGRAM: confirms`
-    },
-    BC: {
-      title: "MESH B×C — fall window × crossing",
-      body:
-`MESH: B.Traj ↔ C.Locate/Anchor   (scale: A×B×C ; time: t2)
-INPUTS: shrinking control window + Rapids heat
-OUTPUTS: manual escapement release OR window burn
-PRECONDITIONS: contact still exists (pre-Impact)
-EFFECTS: only explicit re-entry when A×A locked in Rapids
-INVARIANTS: repair belongs in Trajectory, not after door closed
-FAILURE MODES: push without OBS; over-privilege Release as fate
-BOUNDARY STAMP: escapement [H] | ≠ POINTER emission [GAP]
-HANDS CITE: emission still sealed
-SHADOW CITE: hologram § Escapement; Water repair sentence
-HISTORY CITE: pass2 — contact rules cannot supply emission
-DELTA vs HOLOGRAM: confirms`
-    },
-    CA: {
-      title: "MESH C×A — crossing × two compiles",
-      body:
-`MESH: C states ↔ A×A   (scale: A×B×C)
-INPUTS: two local compiles (separate RIC/PFC)
-OUTPUTS: Banks / Rapids / Delta / Cross / Rebuild per mind pair
-PRECONDITIONS: structure may cross; meaning may not
-EFFECTS: shared OBS is structure; each M/E/ISL stays local
-INVARIANTS: HCC-A "only structure crosses" ≡ Water pointability
-FAILURE MODES: meaning-transfer fantasy; mirror "can't speak here"
-BOUNDARY STAMP: [H] | meaning-as-stored-sense [X]
-HANDS CITE: Piece 14 no stored meaning
-SHADOW CITE: hologram morphism C→A
-HISTORY CITE: pass1
-DELTA vs HOLOGRAM: confirms`
-    },
-    t0: {
-      title: "t0 — Conditions / Banks / S0–S1",
-      body:
-`MESH: B.Cond × C.Banks × A.S0–S1   (time: t0)
-CELL STAMP: [H]|[II]
-CONTRACT: field before motion; separate OBS inventories; RIC∥PFC intake
-HANDS CITE: loaded arrival context kin — not entry type
-SHADOW CITE: Cup Stage 1; Water Banks
-X FORBID: Cond as array row`
-    },
-    t1: {
-      title: "t1 — Release / Rapids entry / S2 edge",
-      body:
-`MESH: B.Rel × C.Rapids↓ × A.S2   (time: t1)
-CELL STAMP: [H] (Compiler≠Core op)
-CONTRACT: initiation; pressure forces talk; ledger update starts
-HANDS CITE: not POINTER emission trigger
-SHADOW CITE: Cup Release; Water Rapids
-X FORBID: Rel as emission rule`
-    },
-    t2: {
-      title: "t2 — Trajectory / Locate* / M+E  [*escapement]",
-      body:
-`MESH: B.Traj × C.Locate/Anchor × A.S3–S4   (time: t2)
-CELL STAMP: [H] escapement
-CONTRACT: window shrinks; repair tooth here; force in flight
-HANDS CITE: emission [GAP] — do not fill from Anchor
-SHADOW CITE: Cup Trajectory; Water Locate; hologram escapement
-STEWARD: if locked in Rapids without OBS, utter repair sentence`
-    },
-    t3: {
-      title: "t3 — Delta / Crossing setup",
-      body:
-`MESH: B.window × C.Delta/Cross × A.force   (time: t3)
-CELL STAMP: [H]
-CONTRACT: shared pointable forming; joint talk ≠ Core write
-X FORBID: DELTA as edge table / graph DB`
-    },
-    t4: {
-      title: "t4 — Impact / grounded OBS / Reality",
-      body:
-`MESH: B.Imp × C.OBS ground × A.Reality→L   (time: t4)
-CELL STAMP: [I] kin
-CONTRACT: ground truth; what reality produced
-HANDS CITE: constraint-bearing; no float without Impact`
-    },
-    t5: {
-      title: "t5 — Aftermath / Rebuild / Act VI",
-      body:
-`MESH: B.After × C.S4 Rebuild × A.Act VI   (time: t5)
-CELL STAMP: [H]
-CONTRACT: master recursion fold — scripts write next start
-X FORBID: Aftermath as mutate WORD @ i (Rowlands stake)`
-    },
-    t6: {
-      title: "t6 — next Cond / Banks / PFC",
-      body:
-`MESH: Cond' × Banks' × PFC'   (time: t6)
-CELL STAMP: [H] | PFC'-as-Star [X]
-CONTRACT: tick_{n+1}.start = tick_n.(After ≡ Rebuild ≡ ActVI)
-HANDS CITE: Lace grows by append — holder priors are not the strand`
-    },
-    Xaudit: {
-      title: "[X] audit — must die at the wall",
-      body:
-`EXPLICIT [X] (from agent brief walk 7):
-  L merge/delete          → Rule Zero breach if Lace write
-  M as word sense         → Piece 14 breach
-  PFC as Star table       → Graphic D / Piece 7 breach
-  OBS/DELTA as array rows → only WORD/POINTER drawn
-  Anchor as emission      → [GAP] — do not invent
-  After as rewrite i      → Rowlands FORBID + Rule Zero
-
-GREAT CONTRACT WALL:
-  PASS kin-read [I]/[II]/[III]
-  STOP [X]
-  Shadow diagnoses HOLDER — does not enter Core as rows`
-    }
-  };
+  const CONTRACTS = window.LACE_CONTRACTS || {};
 
   const titleEl = document.getElementById("panelTitle");
   const bodyEl = document.getElementById("contract");
@@ -523,12 +330,7 @@ GREAT CONTRACT WALL:
     if (key === "C") document.getElementById("gearC").classList.add("gear-hot");
   }
 
-  const chipKeys = [
-    ["axle","Axle"],["A","Gear A"],["B","Gear B"],["C","Gear C"],
-    ["AB","A×B"],["BC","B×C"],["CA","C×A"],
-    ["t0","t0"],["t1","t1"],["t2","t2*"],["t3","t3"],["t4","t4"],["t5","t5"],["t6","t6"],
-    ["Xaudit","[X] audit"]
-  ];
+  const chipKeys = Object.keys(CONTRACTS).sort().map(k => [k, (CONTRACTS[k] && CONTRACTS[k].chip) || k]);
   chipKeys.forEach(([k, label]) => {
     const b = document.createElement("button");
     b.className = "chip";
