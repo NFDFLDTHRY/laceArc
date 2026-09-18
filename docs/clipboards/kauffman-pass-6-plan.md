@@ -1,6 +1,6 @@
 # Kauffman pass 6 — Wave B mechanisms + ASCII (algebra / braid / YBE)
 
-**Status:** PLANNED — not executed. Emission `[GAP]`.  
+**Status:** EXECUTED. Emission `[GAP]`.  
 **Station:** clipboards (HELD `reference-Mapper`)  
 **Base at plan:** refresh to current `origin/main` before execute  
 **Source:** L.H. Kauffman, *Knots and Physics*, 4ed · slug `dokumen.pub_knots-and-physics-4ed-9814383007`  
@@ -205,3 +205,19 @@ YBE is not array law.
 Skein choice points are `[OPEN]`, not Φ.  
 Gauss code is not append-life.  
 Φ stays `[GAP]`.
+
+---
+
+## Execution receipt
+
+| Field | Value |
+|---|---|
+| Status | EXECUTED |
+| Agent | reference-Mapper (clipboards HELD; leave claim for parent release) |
+| Commit intent | Wave B M-B1…B5 + P-B1…B5 + overview fork + clipboard Pass 6 receipt + this plan |
+| PDF pins | B1: 104–109; B2: 123–133; B3: 70–71, 180–185 (+75 miniature); B4: 193–197; B5: 562–569 |
+| [OPEN] | Map K-ids for braid/YBE/Homfly/Alexander/Gauss (neighbors noted); axis choice; Fig.14/R-glyphs/Gauss Fig.1 figure-authoritative |
+| C–D | still deferred |
+| Push | **not** pushed |
+| Station | claim left HELD for parent release |
+

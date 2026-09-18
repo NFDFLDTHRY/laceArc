@@ -1,10 +1,10 @@
 # Kauffman 4ed — ASCII source-machinery model (Shadow)
 
-**Status:** Pass 5 EXECUTED (Wave A panels P-A1–A9). Emission `[GAP]`.  
+**Status:** Pass 6 EXECUTED (Wave A P-A1–A9 + Wave B P-B1–B5). Emission `[GAP]`.  
 **Source:** L.H. Kauffman, *Knots and Physics*, 4ed.  
 **PDF:** `refs/local/kauffman-knots-and-physics-4ed.pdf` (image-only; **never git-add**).  
 **Offset:** PDF p. ≈ printed p. + 19.  
-**Algorithms:** [`kauffman-4ed-mechanisms.md`](kauffman-4ed-mechanisms.md) (M-A1–A9).  
+**Algorithms:** [`kauffman-4ed-mechanisms.md`](kauffman-4ed-mechanisms.md) (M-A1–A9 · M-B1–B5).  
 **Admission:** [`kauffman-4ed-clipboard.md`](kauffman-4ed-clipboard.md).  
 **Map / stakes:** [`reason-model-map.md`](../reason-model-map.md) §1 · [`clipboard-five-stakes.md`](clipboard-five-stakes.md) PAGE 1/5.  
 **Not this file:** Lace Core ASCII lives in [`systems-manifest-ascii.md`](../systems-manifest-ascii.md) — **do not conflate**.
@@ -31,6 +31,11 @@ Law: diagram ≠ rope · hitch kin · grab ≠ emission · Hands win · `[GAP]` 
 | **FORBID-extra-rooms** | Must not add surfaces / virtual rooms as Lace storage |
 | **SILENT/off-shoe** | Book procedure is silent for Lace append; do not smuggle as scheduler |
 | **FORBID-as-history-store** | Polynomial / state-sum must not become Lace history |
+| **FORBID-as-Lace-chronology** | Must not read braid/time-order as Lace append history |
+| **FORBID-as-array-law** | Must not install YBE/R-matrix as Core array rewrite |
+| **FORBID-as-emission-scheduler** | Must not use skein/crossing choice as POINTER when-rule |
+| **FORBID-as-store** | Must not use Alexander (or similar) polynomial as Lace store |
+| **FORBID-as-append-life** | Must not treat Gauss/trip code as Lace strand life |
 
 ---
 
@@ -64,20 +69,33 @@ Law: diagram ≠ rope · hitch kin · grab ≠ emission · Hands win · `[GAP]` 
                                               v
                                        [Jones V(t) via A = t^(-1/4)]
 
+  WAVE B FORK (still book, not Core)   <--- off [closed diagram] / algebra
+  ----------------------------------
+  [closed diagram]
+        |
+        +--> [braid word <-> closure]
+        |         |
+        |         v
+        |   [Yang-Baxter / R]
+        |
+        +--> [Homfly skein] --> (specializes toward Jones)
+        |
+        +--> [Alexander state/model]
+        |
+        +--> [Gauss code <-> trip]
+
   APPENDIX FORK (still book, not Core)
   ------------------------------------
-  [virtual crossing (circled)] + [detour] + [± empty 1-handle]
+  [virtual crossing (circled)] + [detour] + [+/- empty 1-handle]
        stamp: FORBID-extra-rooms
 
 
   ============================================================
   Lace Core is NOT on this board.
   See: docs/systems-manifest-ascii.md
-  emission Phi = [GAP]           (Hands silent; this diagram does not fill it)
+  emission Phi = [GAP]    (Hands silent; board does not fill it)
   ============================================================
 ```
-
----
 
 ## Wave A panels
 
@@ -389,6 +407,205 @@ Law: diagram ≠ rope · hitch kin · grab ≠ emission · Hands win · `[GAP]` 
 
 ---
 
+## Wave B panels
+
+### P-B1 — Braid word ↔ closure
+
+| Field | Content |
+|---|---|
+| Mechanism cite | M-B1 · Part I §7° pp.85–90 / PDF 104–109 |
+| Sighting | OCR pass 6 PDF 104–109; TOC §7 printed 85 |
+| Lace stamp | **FORBID-as-Lace-chronology** |
+| Map cite | OPEN (K6/FM-K5 neighbor) |
+| False friend | Braid word order ≠ Lace strand chronology |
+| Implements | M-B1 steps 3–4 (word → diagram → close top↔bottom); worked miniature 3-braid |
+
+```
+  ARTIN braid-string (B3)                 OPEN 3-BRAID
+  ---------------                 ------------
+  b = s1 * s2 * s1                  1  2  3   (top)
+                                      \ / /
+                                       X /     s1
+                                      / X      s2
+                                     / / \     s1
+                                    1  2  3   (bottom)
+
+  CLOSURE: parallel arcs top↔bottom (no new mutual crossings)
+
+       ,----1----.
+       |  \ / /  |
+       |   X /   |     closed braid b-hat
+       |  / X    |
+       | / / \   |
+       `----3----'
+
+  Artin moves (book): s_i s_i^{-1}=1 (RII);
+    s_i s_{i+1} s_i = s_{i+1} s_i s_{i+1} (RIII);
+    distant generators commute
+
+  Alexander: any link ~ some closed braid (axis choice [OPEN])
+
+  stamp under fence: FORBID-as-Lace-chronology
+```
+
+---
+
+### P-B2 — Yang–Baxter / R-matrix
+
+| Field | Content |
+|---|---|
+| Mechanism cite | M-B2 · Part I §8° pp.104–114 / PDF 123–133 |
+| Sighting | OCR pass 6 PDF 123–133; Fig.14 YBE **figure-authoritative** |
+| Lace stamp | **FORBID-as-array-law**; **SILENT/off-shoe** |
+| Map cite | OPEN (K5/K6 neighbor) |
+| False friend | YBE / RLL as Lace array rewrite law |
+| Implements | M-B2 steps 3–5 (assign R → contract → check unitarity+YBE) |
+
+```
+  ABSTRACT TENSOR at a crossing          R-matrix weight
+  -----------------------------          ----------------
+       a\ /b                                R^{ab}_{cd}
+         X  ----weight---->                 (in a,b / out c,d)
+       c/ \d
+
+  CHANNEL UNITARITY (IIA):     R * Rbar = id
+  CROSS-CHANNEL UNITARITY:     IIB matrix identity (book)
+  YANG-BAXTER (III(A)+):       R R R = R R R  on triple
+       (Fig.14 PDF 129 is source of record)
+
+  Thm 8.1: channel + cross-channel + YBE
+           => T(K) regular-isotopy invariant
+
+  bracket-motivated example (PDF 131):
+    R = A * (parallel deltas) + A^{-1} * (crossed deltas)
+    loop value n = -A^2 - A^{-2}
+
+  figure-authoritative: PDF p.129 / printed p.110 (Fig.14)
+
+  stamp under fence: FORBID-as-array-law | SILENT/off-shoe
+```
+
+---
+
+### P-B3 — Homfly skein / specializations
+
+| Field | Content |
+|---|---|
+| Mechanism cite | M-B3 · Part I §5° pp.51–52 / PDF 70–71; §11° pp.161–166 / PDF 180–185 |
+| Sighting | OCR pass 6 PDF 70–71, 75, 180–185 |
+| Lace stamp | **FORBID-as-emission-scheduler**; **FORBID-as-history-store** |
+| Map cite | K6 neighbor; Homfly K-id OPEN |
+| False friend | Skein crossing-choice as Lace emission scheduler |
+| Implements | M-B3 skein steps 2–4 (one exchange); specializations note |
+
+```
+  ONE SKEIN STEP (regular Homfly form)
+  ------------------------------------
+     L+              L-              L0
+     \ /             \ /             ) (
+      X      and      X      and      )
+     / \             / \             ) (
+
+  exchange (book regular):  H(L+) - H(L-) = z * H(L0)
+  curls:                    H(curl+/-) = a^{+/-1} * H
+
+  SPECIALIZATIONS
+  ---------------
+  Homfly P(a,z)
+       |
+       +--> Jones:     a = t^{-1},  z = sqrt(t)-1/sqrt(t)
+       |
+       +--> Alexander: a = 1   (Conway form)
+
+  §11 route: YBE R with q-weights → state sum → adjust delta
+             → regular-isotopy Homfly specializations
+
+  crossing choice in recursion = [OPEN] (not a Lace scheduler)
+
+  stamp under fence: FORBID-as-emission-scheduler | FORBID-hist-store
+```
+
+---
+
+### P-B4 — Alexander via state / model
+
+| Field | Content |
+|---|---|
+| Mechanism cite | M-B4 · Part I §12° pp.174–178 / PDF 193–197 |
+| Sighting | OCR pass 6 PDF 193–197; R glyphs **figure-authoritative** PDF 195 |
+| Lace stamp | **FORBID-as-store** |
+| Map cite | OPEN (Conway/K6 neighbor) |
+| False friend | Alexander states as Lace history store |
+| Implements | M-B4 steps 1–6 (tangle form → R on {±1} → state sum → normalize) |
+
+```
+  TANGLE FORM (book escape from split-link collapse)
+  --------------------------------------------------
+     top endpoint
+        |
+       ... diagram in strip R x I ...
+        |
+     bottom endpoint
+     (no motion past endpoints)
+
+  Conway skein:  V(L+) - V(L-) = z * V(L0)
+                 V(unknot) = 1
+                 split link => V = 0
+
+  YBE STATE MODEL (Sec 12)
+  ------------------------
+  index set I = {+1, -1}
+  assign R / Rbar at +/- crossings
+  ||sigma|| = rotational spin norm (as Sec 11)
+  set delta = i  (i^2 = -1) for curl lemma
+  normalize -> V_K Alexander-Conway
+
+  bare string eval = 1;  disjoint circle factor = 0
+
+  figure-authoritative: PDF p.195 / printed p.176 (R entries)
+
+  stamp under fence: FORBID-as-store
+```
+
+---
+
+### P-B5 — Gauss code reconstruct / trip
+
+| Field | Content |
+|---|---|
+| Mechanism cite | M-B5 · Appendix Gauss Codes… Sec.II pp.543–550 / PDF 562–569 |
+| Sighting | OCR pass 6 PDF 562–569; Fig.1 **figure-authoritative** PDF 570 |
+| Lace stamp | **FORBID-as-append-life** |
+| Map cite | FM-K5 / PAGE F neighbor; Gauss K-id OPEN |
+| False friend | Trip order as Lace append-life / emission log |
+| Implements | M-B5 encode steps 2 + decode steps 3 (flip → Jordan → chords) |
+
+```
+  ENCODE (trip)
+  -------------
+  label crossings 1..c; pick basepoint + direction
+  walk, record label at each crossing through
+  trefoil universe example:  1 2 3 1 2 3
+  augmented (O/U):           O1 U2 O3 U1 O2 U3
+
+  DECODE (flip -> Jordan -> chords)
+  ---------------------------------
+  for label k = 1..c:
+    reverse subsequence strictly between the two k's
+  example: 123123 --flip1--> 132123 (then 2,3 may no-op)
+
+  draw circle with Jordan order; join equal labels
+  by noncrossing chords (in and/or out); restore crossings
+
+       (1)---(3)---(2)---(1)---(3)---(2)
+              \___________/  chords -> universe
+
+  Reidemeister <-> local code rewrites: Fig.1 (PDF 570)
+
+  stamp under fence: FORBID-as-append-life
+```
+
+
 ## Cross-walk (P-ID → M-ID → stamp → map → clipboard)
 
 | P-ID | M-ID | Lace stamp | Map | Clipboard PAGE / FM |
@@ -402,24 +619,32 @@ Law: diagram ≠ rope · hitch kin · grab ≠ emission · Hands win · `[GAP]` 
 | P-A7 | M-A7 | FORBID-as-history-store | K6 | PAGE E |
 | P-A8 | M-A8 | FORBID-as-Core-write | K8 | slide / FM |
 | P-A9 | M-A9 | FORBID-extra-rooms | K9 | PAGE F · virtual |
+| P-B1 | M-B1 | FORBID-as-Lace-chronology | OPEN (K6/FM-K5 neighbor) | braid / FM |
+| P-B2 | M-B2 | FORBID-as-array-law; SILENT/off-shoe | OPEN (K5/K6 neighbor) | YBE / FM |
+| P-B3 | M-B3 | FORBID-as-emission-scheduler; FORBID-as-history-store | K6 neighbor; Homfly OPEN | PAGE E family · FM-K5/K6 |
+| P-B4 | M-B4 | FORBID-as-store | OPEN (Conway/K6 neighbor) | Alexander / FM |
+| P-B5 | M-B5 | FORBID-as-append-life | FM-K5 / PAGE F neighbor; Gauss K-id OPEN | PAGE F · Gauss |
 
 ---
 
-## Deferred panels (Waves B–D)
+## Deferred panels (Waves C–D)
 
 | Panel | Mechanism seed | Why deferred |
 |---|---|---|
-| P-B1… | braid / YBE / Homfly / Alexander / Gauss | same as mechanisms Deferred; optional later sighting |
-| P-C1… | DNA / rubber / belt | metaphor wave |
-| P-D1… | deepen virtual / arrow / Khovanov | appendix depth |
+| P-C1… | DNA / rubber / belt | metaphor wave; same as mechanisms M-C* |
+| P-D1… | deepen virtual / arrow / Khovanov | appendix depth; same as mechanisms M-D* |
 
-No Wave B–D panels filled this pass.
+Wave B panels P-B1…P-B5 filled this pass. C–D remain deferred with seeds.
 
 ---
 
 ## Pass 5 method note
 
 Panels cite pass-4 PDF pins (`pdftoppm` + `tesseract`). Figure-heavy loci (slide axioms, virtual Fig.1–2, bracket Fig.9) remain **figure-authoritative**. No `src/`. PDF never staged. `systems-manifest-ascii.md` untouched.
+
+## Pass 6 method note
+
+Wave B panels P-B1…P-B5 drawn to match M-B1…M-B5. Fresh OCR pins: braid PDF 104–109, YBE 123–133, Homfly 70–71/180–185, Alexander 193–197, Gauss 562–569. Overview extended with Wave B fork; Lace Core still off-board; Phi `[GAP]`. Fence bodies use book glyphs only (no Lace WORD/POINTER). No `src/`. PDF never staged. `systems-manifest-ascii.md` untouched.
 
 ---
 

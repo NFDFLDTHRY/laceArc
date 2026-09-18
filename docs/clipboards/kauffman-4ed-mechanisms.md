@@ -1,6 +1,6 @@
 # Kauffman 4ed — mechanism cards (constructive algorithms)
 
-**Status:** Pass 4 EXECUTED (Wave A complete; Waves B–D deferred).  
+**Status:** Pass 6 EXECUTED (Wave A + Wave B complete; Waves C–D deferred).  
 **Source:** L.H. Kauffman, *Knots and Physics*, 4th ed.  
 **PDF:** `refs/local/kauffman-knots-and-physics-4ed.pdf` (865 pp., image-only `tiff2pdf`; **never git-add**)  
 **Offset:** PDF page ≈ printed page + 19 (verified passes 1–3)  
@@ -13,7 +13,8 @@ This file is **Shadow / Layer III documentation of the book**, not Lace `src/`, 
 ---
 
 
-**Pass 5 ASCII panels:** see [`kauffman-4ed-ascii-machinery.md`](kauffman-4ed-ascii-machinery.md) (P-A1–A9). Algorithms unchanged this pass.
+**Pass 5 ASCII panels:** see [`kauffman-4ed-ascii-machinery.md`](kauffman-4ed-ascii-machinery.md) (P-A1–A9).
+**Pass 6:** Wave B cards M-B1…M-B5 filled here; matching panels P-B1…P-B5 in ascii-machinery.
 ## Stamp legend
 
 | Stamp | Meaning |
@@ -25,6 +26,11 @@ This file is **Shadow / Layer III documentation of the book**, not Lace `src/`, 
 | **FORBID-extra-rooms** | Must not add surfaces / virtual rooms as Lace storage |
 | **SILENT/off-shoe** | Book procedure is silent for Lace append; do not smuggle as scheduler |
 | **FORBID-as-history-store** | Polynomial / state-sum must not become Lace history |
+| **FORBID-as-Lace-chronology** | Must not read braid/time-order as Lace append history |
+| **FORBID-as-array-law** | Must not install YBE/R-matrix as Core array rewrite |
+| **FORBID-as-emission-scheduler** | Must not use skein/crossing choice as POINTER when-rule |
+| **FORBID-as-store** | Must not use Alexander (or similar) polynomial as Lace store |
+| **FORBID-as-append-life** | Must not treat Gauss/trip code as Lace strand life |
 
 ---
 
@@ -410,23 +416,239 @@ virtual_isotopy:
 
 ---
 
-## Wave B–D — Deferred
+## Wave B — Algebra / braid / YBE / Homfly / Alexander / Gauss
+
+### M-B1 — Braid word ↔ closure
+
+| Field | Content |
+|---|---|
+| Kind | combinatorics / group |
+| Book locus | Part I §7° Braids and the Jones Polynomial · printed pp.85–90 · PDF pp.104–109 |
+| Sighting method | OCR this pass (tesseract 5.5.0) on PDF 104–109; TOC pin §7 printed 85 |
+| Eye-quote | "Alexander's Theorem: Each link in three-dimensional space is ambient isotopic to a link in the form of a closed braid." / "The closure of a braid b is obtained by connecting the initial points to the end-points by a collection of parallel strands." / Artin relations: sigma_i sigma_i^{-1}=1; sigma_i sigma_{i+1} sigma_i = sigma_{i+1} sigma_i sigma_{i+1}; sigma_i sigma_j = sigma_j sigma_i for |i-j|>1. |
+| Inputs | Braid word in generators sigma_1..sigma_{n-1} (and inverses); or an open n-strand braid diagram |
+| Outputs | Closed braid diagram; braid group element in B_n; (via Alexander) ambient-isotopy class of a link |
+| Invariants | Braid equivalence keeping endpoints fixed (Artin B_n); closed-braid ambient isotopy class of the link (Markov moves enter when comparing closures — see book §7) |
+| Algorithm | See below |
+| Complexity / termination | Word length finite; closure is O(n) arcs; search for a braid representative of an arbitrary link is constructive in principle (Alexander) but choice of axis [OPEN] |
+| Worked miniature | 3-braid b = sigma_1 sigma_2 sigma_1 in B_3: three strands, generators as adjacent swaps; close by parallel top↔bottom arcs → trefoil-type closed braid (book Fig. context PDF 106–108) |
+| Lace stamp | **FORBID-as-Lace-chronology** (braid time-arrow / word order ≠ Lace append history) |
+| Hands cite | Diagram chronology ≠ Lace chronology |
+| Map cite | OPEN (no dedicated braid K-id; neighbor Jones family K6 / FM-K5) |
+| False friend | Reading braid word left-to-right as Lace strand chronology; treating sigma_i as Core write ops |
+| Open gaps | Choice of braid axis for Alexander theorem — book constructive sketch, axis choice [OPEN]. Phi = [GAP] |
+
+**Algorithm**
+
+1. **Preconditions.** Either (A) an n-strand braid diagram / word, or (B) a link to be put in closed-braid form.  
+2. **State.** For (A): current braid word w in {sigma_i^{±1}}. For (B): current link diagram + candidate axis.  
+3. **Steps — braid word → diagram.**  
+   1. Draw n fixed top points and n fixed bottom points in matching order.  
+   2. Parse w left-to-right: each sigma_i (resp. sigma_i^{-1}) crosses strands i and i+1 positively (resp. negatively); distant generators commute.  
+   3. Reduce using Artin relations when desired (type II / type III as braid moves).  
+4. **Steps — closure.** Connect each top endpoint to the corresponding bottom endpoint by a parallel exterior arc that does not add crossings among the closing arcs → closed braid.  
+5. **Steps — Alexander (link → closed braid).** Choose a proposed axis; isotope so the link meets every half-plane from the axis in the same number of points (strand count); obtain a closed braid. Axis choice = [OPEN].  
+6. **Choice points.** Axis; freely reducing vs leaving word unreduced; Markov moves when comparing two closures — book §7; not a Lace scheduler.  
+7. **Halt.** Closed braid diagram (or braid word) recorded.  
+8. **Output certificate.** Word w in B_n plus closure diagram, or Alexander sequence to a closed braid.
+
+```text
+word w in B_n  →  draw strands + crossings  →  close top↔bottom parallel
+link L         →  pick axis [OPEN]  →  isotope to closed braid
+```
+
+---
+
+### M-B2 — Yang–Baxter / R-matrix
+
+| Field | Content |
+|---|---|
+| Kind | algebra / diagram-rewrite |
+| Book locus | Part I §8° Abstract Tensors and the Yang-Baxter Equation · printed pp.104–114 · PDF pp.123–133; continues §§9–10 |
+| Sighting method | OCR this pass on PDF 123–133; TOC §8 printed 104 |
+| Eye-quote | "The Yang-Baxter Equation Corresponding to a Move of type III(A)" / Thm 8.1: if R and R-bar satisfy (1) channel unitarity (2) cross-channel unitarity and (3) Yang-Baxter Equation then T(K) is a regular isotopy invariant for oriented diagrams K. / Bracket-motivated R with deltas and n = -A^2 - A^{-2}. |
+| Inputs | Oriented link diagram; index set I; R-matrix R^{ab}_{cd} (and inverse R-bar) on I⊗I |
+| Outputs | Tensor / state evaluation T(K); regular-isotopy invariant when Thm 8.1 hypotheses hold |
+| Invariants | Regular isotopy (Move Zero + RII + RIII) when channel + cross-channel unitarity + YBE hold |
+| Algorithm | See below |
+| Complexity / termination | Contracting an n-crossing diagram is exponential in crossings unless structure is exploited; verifying YBE is finite check on index tuples |
+| Worked miniature | Bracket R: A·id + A^{-1}·swap-style deltas (PDF 131–132); loop value n = tr(delta) = -A^2 - A^{-2} recovers specialized bracket |
+| Lace stamp | **FORBID-as-array-law**; **SILENT/off-shoe** algebra |
+| Hands cite | YBE off-shoe; not Core mutation |
+| Map cite | OPEN (YBE not a K-id; neighbor K5 bracket / K6 Jones) |
+| False friend | Installing RLL / YBE as Lace array rewrite law; treating R as emission amplitude for POINTER |
+| Open gaps | Rapidity/momentum parameters mentioned (PDF 130) not used in the basic spin-only model — [OPEN] if extending. Phi = [GAP] |
+
+**Algorithm**
+
+1. **Preconditions.** Oriented diagram K; chosen finite index set I; matrices R, R-bar on I⊗I.  
+2. **State.** Vertex weights at each crossing; open strands carry indices.  
+3. **Steps — local weights.**  
+   1. At a positive crossing, assign R^{ab}_{cd} to (in-spins a,b → out-spins c,d) per book diagrammatic convention.  
+   2. At a negative crossing, assign R-bar.  
+4. **Steps — global evaluation.** Sum/contract all internal indices (Einstein / diagrammatic plugging) to obtain T(K); closed loops contribute Kronecker/trace factors.  
+5. **Steps — certify regular-isotopy invariance (Thm 8.1).**  
+   1. **Channel unitarity:** R · R-bar = id (move IIA).  
+   2. **Cross-channel unitarity:** corresponding IIB matrix identity.  
+   3. **Yang–Baxter (III(A)):** triple product identity on R (Fig. 14, PDF 129); likewise for R-bar.  
+6. **Choice points.** Which solution R (bracket-family, Homfly-family, Alexander-family, …) — model choice, not Lace scheduler.  
+7. **Halt.** Scalar/polynomial T(K) plus (optional) unitarity/YBE check certificate.  
+8. **Output certificate.** T(K) with cited R and verified Thm 8.1 hypotheses (or failure).
+
+```text
+assign R / Rbar at crossings → contract indices → T(K)
+if channel + cross-channel + YBE: T regular-isotopy invariant
+```
+
+---
+
+### M-B3 — Homfly skein / specializations
+
+| Field | Content |
+|---|---|
+| Kind | algebra / combinatorics |
+| Book locus | Part I §5° (Homfly introduction) · printed pp.51–52 · PDF pp.70–71; §11° Yang-Baxter Models for Specializations of the Homfly Polynomial · printed pp.161–166 · PDF pp.180–185 |
+| Sighting method | OCR this pass on PDF 70–71, 180–185 |
+| Eye-quote | Homfly exchange for P_K(a,z) (oriented 2-variable); specializes to Jones at a=t^{-1}, z=sqrt(t)-1/sqrt(t) and to Conway-Alexander at a=1. §11: state model from R gives exchange identity for the regular isotopy version of the Homfly polynomial. |
+| Inputs | Oriented link diagram; variables (a,z) or YBE parameters (q, delta) + index set |
+| Outputs | Homfly P_K(a,z) (ambient) or regular-isotopy precursor H_K; specializations Jones / Alexander-Conway |
+| Invariants | Ambient isotopy for P_K; regular isotopy for the §11 state sum after adjusting delta |
+| Algorithm | See below |
+| Complexity / termination | Skein tree exponential in crossings unless memoized; YBE state sum exponential in crossings × |I| |
+| Worked miniature | One skein step (PDF 75 / §5 examples): H(L+) - H(L-) = z H(L0); curls H → a^{±1} H; trefoil computation yields chirality-sensitive P_T |
+| Lace stamp | **FORBID-as-emission-scheduler**; **FORBID-as-history-store** |
+| Hands cite | Skein choice ≠ Lace when-rule |
+| Map cite | K6 neighbor (Jones specialization); Homfly itself OPEN as dedicated K-id |
+| False friend | Using Homfly crossing-choice as POINTER emission scheduler; storing P_K as the strand |
+| Open gaps | Full existence via induction historically; book also gives YBE models for specializations (§11) enough to establish the 2-variable polynomial — which specialization path to compute [OPEN]. Phi = [GAP] |
+
+**Algorithm (skein / template route, §5)**
+
+1. **Preconditions.** Oriented diagram K.  
+2. **State.** Skein tree of diagrams; known unknot value.  
+3. **Steps.**  
+   1. If K is ambient-isotopic to unknot, set base value per book normalization.  
+   2. Pick an oriented crossing as L+ or L- (choice [OPEN]).  
+   3. Form L+, L-, L0 (oriented smoothings).  
+   4. Apply Homfly exchange (book a,z form) / regular form H(L+) - H(L-) = z H(L0) with curl rules H → a^{±1} H.  
+   5. Recurse; normalize by writhe/framing factors to ambient P_K as in book.  
+4. **Specializations.** Jones: plug a=t^{-1}, z=sqrt(t)-1/sqrt(t). Alexander-Conway: a=1.  
+5. **Halt.** Laurent polynomial in a,z (or specialized ring).  
+6. **Output certificate.** P_K plus skein tree (or STA template expansion).
+
+**Algorithm (YBE specialization route, §11)**
+
+1. Choose index set I and R of Homfly type (book: R with q-weights and [a<b] projectors).  
+2. Expand crossings into decorated splices / graphical crossings; label loops with constant spins obeying book inequalities.  
+3. Score <K> = sum_sigma <K|sigma> delta^{||sigma||} with rotational spin norm.  
+4. Adjust delta for regular isotopy; specialize toward Homfly / Jones as book directs.  
+5. Halt with specialized invariant.
+
+```text
+# one skein step
+pick crossing [OPEN] → form L+, L-, L0
+H(L+) - H(L-) = z * H(L0)   # regular form
+# specialize e.g. to Jones or Alexander-Conway
+```
+
+---
+
+### M-B4 — Alexander via state / YBE model
+
+| Field | Content |
+|---|---|
+| Kind | algebra / combinatorics |
+| Book locus | Part I §12° The Alexander Polynomial · printed pp.174–178 · PDF pp.193–197 |
+| Sighting method | OCR this pass on PDF 193–197; TOC §12 printed 174 |
+| Eye-quote | Conway axioms: (i) ambient isotopy invariance (ii) V(unknot)=1 (iii) V(L+)-V(L-)=z V(L0). / "a Yang-Baxter model essentially similar to the one discussed in section 11° can produce the Alexander-Conway polynomial." / Index set I={-1,+1}; delta=i with i^2=-1; tangle normalization so split links vanish without killing the model. |
+| Inputs | Oriented diagram as single-input/single-output tangle in a strip (endpoints fixed); parameter q (or z); R-matrix on {±1} |
+| Outputs | Alexander-Conway polynomial V_K(z); vanishes on split links |
+| Invariants | Ambient isotopy (after curl normalization + IIB check in book) |
+| Algorithm | See below |
+| Complexity / termination | State sum over {±1} labels: exponential in crossings; skein route same as Conway recursion |
+| Worked miniature | Split-link vanishing: if K splits, book shows z V_K=0 hence V_K=0 (PDF 194). Tangle normalization: bare string evaluates to 1; disjoint circle factor 0 — avoids collapsing the model |
+| Lace stamp | **FORBID-as-store** (polynomial / state sum ≠ Lace history store) |
+| Hands cite | Alexander off-shoe |
+| Map cite | OPEN (Alexander not a K-id; Conway neighbor to K6 family) |
+| False friend | Storing Alexander states as Lace append-life; reading tangle endpoints as Core I/O ports |
+| Open gaps | Full IIB verification sketched (Prop 12.2); multi-variable Alexander deferred to citations. Classical Seifert/Fox views deferred to §13°. Figure-authoritative: exact R glyph entries PDF 195. Phi = [GAP] |
+
+**Algorithm**
+
+1. **Preconditions.** Represent the link as a **1-in/1-out tangle** in strip R×I (endpoints fixed; no motion past endpoints).  
+2. **R-matrix.** Use book's I={-1,+1} solution (positive crossings R, negative R-bar); Deus-ex-machina form PDF 195 — figure-authoritative for exact entries; OCR partial on glyphs.  
+3. **State sum.** <K> = sum_sigma <K|sigma> i^{||sigma||} with rotational norm on spin labels as in §11; bare string rot=0, evaluation 1.  
+4. **Normalize curls.** Set delta=i so Lemma 12.1 curl factors hold; define V_K via book's (i q^{-1})^{…}<K> so curls cancel toward ambient invariance.  
+5. **Verify moves.** Channel-style identities from YBE inverse pair; complete IIB as in Prop 12.2.  
+6. **Skein check.** Model realizes V(L+)-V(L-)=z V(L0) with V(unknot)=1.  
+7. **Choice points.** Whether to compute via states or via Conway skein — equivalent when well-defined; order [OPEN].  
+8. **Halt.** Laurent/polynomial V_K(z).  
+9. **Output certificate.** V_K plus tangle diagram and (optional) state list.
+
+```text
+tangle form (1-in/1-out) → R on {+1,-1} → state sum with delta=i
+→ normalize curls → V_K Alexander-Conway
+# split links → V=0
+```
+
+---
+
+### M-B5 — Gauss code reconstruct / trip
+
+| Field | Content |
+|---|---|
+| Kind | combinatorics / coding |
+| Book locus | Appendix article *Gauss Codes, Quantum Groups and Ribbon Hopf Algebras* · Sec. II · printed pp.543–550 · PDF pp.562–569 |
+| Sighting method | OCR this pass on PDF 562–569; prior pin PDF 562 / printed 543 (pass 3) |
+| Eye-quote | "First, there is the Gauss code, a sequence of symbols representing a record of the crossings encountered in taking a trip along the curve of the knot. Knots can be reconstructed from their Gauss codes (Sec. 2)." / Trefoil universe code 123123; augmented O1U2O3U1O2U3. / Jordan decode: flip between paired labels → draw circle → connect equal labels by noncrossing arcs → restore crossings. |
+| Inputs | Gauss / trip code (labels); optional O/U augmentation; (for decode) primality assumptions per book |
+| Outputs | Planar universe / link diagram (up to the book's reconstruction); or code word from a diagram |
+| Invariants | Diagram information transcribed linearly; Reidemeister moves act as stated local code rewrites (Fig. 1, PDF 569–570) |
+| Algorithm | See below |
+| Complexity / termination | Code length 2c for c crossings; flip-decode O(c^2) symbol moves; planarity may fail for abstract codes |
+| Worked miniature | Code 123123 → flip procedure → Jordan 132123 → circle with chords → trefoil universe (PDF 565–568) |
+| Lace stamp | **FORBID-as-append-life** (trip code ≠ Lace strand life/history) |
+| Hands cite | Code walk ≠ Lace append |
+| Map cite | FM-K5 / PAGE F neighbor (Gauss cited with virtual family); dedicated Gauss K-id OPEN |
+| False friend | Treating Gauss trip order as Lace append-only chronology; using code as emission log |
+| Open gaps | Abstract-code planarity (Gauss's question) solved by Rosenstiehl–Read — full criterion outside this card. Figure 1 Reidemeister↔code map is **figure-authoritative** (PDF 570). Phi = [GAP] |
+
+**Algorithm**
+
+1. **Preconditions.** A classical diagram, or a candidate code word on crossing labels {1,…,c}.  
+2. **Encode (diagram → code).**  
+   1. Label crossings 1..c.  
+   2. Choose basepoint on an edge and a travel direction.  
+   3. Traverse, recording each crossing label when passed (crossing through at vertices) → length-2c word for a knot universe.  
+   4. Optional: augment with O/U (over/under) at each visit → augmented trip code.  
+3. **Decode (code → Jordan → diagram) — Dehn / Rosenstiehl–Read sketch.**  
+   1. From universe trip code, obtain a Jordan-curve code by, for each label in order, **reversing** the subsequence strictly between the two occurrences of that label (book's systematic flip).  
+   2. Draw a circle; place labels in Jordan-code order.  
+   3. Join equal labels by pairwise noncrossing chords (some inside, some outside). If impossible → no planar realization.  
+   4. Replace each chord pair by a crossing; restore O/U from augmentation if present.  
+4. **Reidemeister on codes.** Apply local word rewrites matching R I–III (Fig. 1).  
+5. **Choice points.** Basepoint and direction; which planar chord embedding when several — [OPEN] up to diagram isotopy.  
+6. **Halt.** Code word or reconstructed diagram.  
+7. **Output certificate.** Trip word (± O/U) and/or planar diagram with crossing labels.
+
+```text
+diagram --trip--> word of labels (± O/U)
+word --flip each label--> Jordan code --chords--> universe --O/U--> diagram
+```
+
+---
+
+## Wave C–D — Deferred
 
 | ID | Mechanism | Reason deferred | Next seed (PDF / printed) |
 |---|---|---|---|
-| M-B1 | Braid word ↔ closure | Time: Wave A blocking complete | Part I §7 ~PDF 104 / printed ~85 |
-| M-B2 | Yang–Baxter / R-matrix | Time | §8–10 TOC |
-| M-B3 | Skein recursion Homfly / specializations | Partial overlap M-A7; full Homfly not sighted this pass | §5–6, §11 |
-| M-B4 | Alexander via state/model | Time | §12 |
-| M-B5 | Gauss code reconstruct / trip | Prior pin PDF 562 / printed 543; card not filled | PDF 562 |
-| M-C1 | DNA strand passage / Lk Tw Wr | Time | PDF 507 / printed 488 |
-| M-C2 | Rubber band / twisted tube | Time | Part II TOC ~329 |
-| M-C3 | Quaternion / belt trick | Time | TOC ~403–427 |
+| M-C1 | DNA strand passage / Lk Tw Wr | Pass 6 scoped to Wave B | PDF 507 / printed 488 |
+| M-C2 | Rubber band / twisted tube | Pass 6 scoped to Wave B | Part II §2 ~printed 329 / PDF ~348 |
+| M-C3 | Quaternion / belt trick | Pass 6 scoped to Wave B | TOC ~403–427 |
 | M-D1 | Virtual crossing detail (expand M-A9) | M-A9 holds defs; deeper figures deferred | PDF 782+ |
 | M-D2 | Arrow polynomial expansion | Intro sighted; expansion Sec.8 not carded | ~PDF 800+ |
 | M-D3 | Khovanov cube / graded Euler → bracket | Appendix review Secs.9–17 not carded | appendix |
 
----
 
 ## Cross-walk (M-ID → stamp → map → clipboard)
 
@@ -441,12 +663,21 @@ virtual_isotopy:
 | M-A7 | FORBID-as-history-store | K6 | PAGE E |
 | M-A8 | FORBID-as-Core-write | K8 | slide / FM |
 | M-A9 | FORBID-extra-rooms | K9 | PAGE F · virtual / Gauss neighbor |
+| M-B1 | FORBID-as-Lace-chronology | OPEN (K6/FM-K5 neighbor) | braid / FM |
+| M-B2 | FORBID-as-array-law; SILENT/off-shoe | OPEN (K5/K6 neighbor) | YBE / FM |
+| M-B3 | FORBID-as-emission-scheduler; FORBID-as-history-store | K6 neighbor; Homfly OPEN | PAGE E family · FM-K5/K6 |
+| M-B4 | FORBID-as-store | OPEN (Conway/K6 neighbor) | Alexander / FM |
+| M-B5 | FORBID-as-append-life | FM-K5 / PAGE F neighbor; Gauss K-id OPEN | PAGE F · Gauss |
 
 ---
 
 ## Pass 4 method note
 
 Image-only PDF: no text layer. This pass used `pdftoppm` rasters + `tesseract` 5.5.0. Diagram-heavy pages (Fig. 9, Reidemeister Fig. 8, slide axiom figures, virtual Fig. 1–2) remain **figure-authoritative**; OCR quotes capture surrounding prose. No card closes Φ. No `src/`. PDF never staged.
+
+## Pass 6 method note
+
+Wave B cards M-B1…M-B5 filled from fresh `pdftoppm` + `tesseract` 5.5.0 on §7–8, §5/§11, §12, Gauss appendix. Figure-authoritative: braid Fig.11, YBE Fig.14, Alexander R glyphs, Gauss Fig.1. Waves C–D remain deferred with seeds. No card closes Φ. No `src/`. PDF never staged.
 
 ---
 

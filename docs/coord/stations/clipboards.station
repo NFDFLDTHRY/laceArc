@@ -1,7 +1,7 @@
-STATUS: FREE
+STATUS: HELD
 STATION: clipboards
 OWNS: docs/clipboards/**
-AGENT: -
-BASE: -
-SINCE: -
-NOTE: 
+AGENT: reference-Mapper
+BASE: 4dd27d0c07c89e11b257b9a09fb2c0135ed6d33a
+SINCE: 2026-09-18T23:24:09Z
+NOTE: Pass 6 Wave B EXECUTED; claim held for parent release

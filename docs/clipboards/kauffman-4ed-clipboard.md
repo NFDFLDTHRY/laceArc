@@ -123,6 +123,25 @@ Law on this clip: diagram ≠ rope · hitch kin · grab ≠ emission · `[GAP]` 
 
 ---
 
+## Pass 6 receipt
+
+| Field | Value |
+|---|---|
+| Status | EXECUTED |
+| Station | clipboards · agent `reference-Mapper` |
+| Plan | [kauffman-pass-6-plan.md](kauffman-pass-6-plan.md) |
+| Product | [`kauffman-4ed-mechanisms.md`](kauffman-4ed-mechanisms.md) — Wave B cards M-B1…M-B5; [`kauffman-4ed-ascii-machinery.md`](kauffman-4ed-ascii-machinery.md) — Wave B panels P-B1…P-B5 + overview Wave B fork |
+| Sighting | `pdftoppm` + `tesseract` 5.5.0 on braid §7 PDF 104–109, YBE §8 PDF 123–133, Homfly §5/§11 PDF 70–71 & 180–185, Alexander §12 PDF 193–197, Gauss appendix PDF 562–569 |
+| PAGE A–X morals | **unchanged** (receipt only) |
+| Emission | still `[GAP]` |
+| src/ | **none** |
+| Core ASCII | `docs/systems-manifest-ascii.md` **untouched** |
+| Waves C–D | still deferred with seeds |
+
+Law on this clip: diagram ≠ rope · hitch kin · grab ≠ emission · `[GAP]` sealed. Braid/YBE/skein/Alexander/Gauss ≠ Lace writes.
+
+---
+
 ```
 ┌──────────────────────────────────────────────────────────────────────────┐
 │ CLIPBOARD                                                                │
