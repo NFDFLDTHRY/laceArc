@@ -12,6 +12,8 @@ Portable steward controls. Not Hands. Not Graphic D. Nothing here is a source of
 
 The transport copies carry the law's blocks at the revision they were made; where a copy and [the live law](../law-why-these-documents.md) disagree, the live law wins. Restructure phase 3 regenerates them and adds a check.
 
+This station also owns [`.claude/`](../../.claude/README.md) — the hooks and session settings.
+
 [`docs/clock/agent-interaction-model.md`](../clock/agent-interaction-model.md) stays outside this shelf — it is an elephant-clock `[PROPOSAL]`, not a control.
 
 POINTER emission stays `[GAP]`. No `src/`.
