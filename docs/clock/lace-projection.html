@@ -7,9 +7,13 @@
 <style>
 :root{--bg:#05070c;--ink:#e6eef6;--dim:#7a8a9c;--line:rgba(62,200,255,.22);--cyan:#3ec8ff}
 *{box-sizing:border-box}
-html,body{margin:0;height:100%;background:#05070c;color:var(--ink);font:13px/1.4 ui-sans-serif,system-ui,sans-serif;overflow:hidden}
-#c{display:block;width:100%;height:100%}
-.hud{position:fixed;inset:0;pointer-events:none}
+html,body{margin:0;min-height:100dvh;height:100%;background:#05070c;color:var(--ink);font:13px/1.4 ui-sans-serif,system-ui,sans-serif;overflow:hidden}
+#c{position:fixed;inset:0;width:100%;height:100dvh;display:block;z-index:0}
+#fallback{position:fixed;inset:0;z-index:1;background:#05070c}
+#fallback img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity .35s}
+#fallback img.on{opacity:1}
+#fallback .why{position:absolute;left:10px;bottom:64px;color:#7a8a9c;font-size:11px;max-width:90%}
+.hud{position:fixed;inset:0;pointer-events:none;z-index:2}
 .hud .hit{pointer-events:auto}
 header.hit{position:absolute;top:0;left:0;right:0;padding:calc(8px + env(safe-area-inset-top)) 12px 8px;background:linear-gradient(#05070cf5,#05070c00)}
 header h1{margin:0;font-size:12px;letter-spacing:.08em;color:var(--cyan)}
@@ -25,18 +29,16 @@ button.on{background:var(--cyan);color:#061018}
 #phase{color:var(--dim);font-size:12px;white-space:nowrap}
 aside{position:absolute;right:8px;top:calc(52px + env(safe-area-inset-top));width:min(320px,42vw);max-height:40vh;overflow:auto;background:#0b1018f2;border:1px solid var(--line);border-radius:8px;padding:10px;font:11px/1.4 ui-monospace,monospace;color:#c9d7ea}
 aside[hidden]{display:none}
-#fallback{display:none;position:absolute;inset:0;background:#05070c;padding:72px 12px 80px;overflow:auto}
-#fallback img{width:100%;max-width:720px;border:1px solid var(--line);margin:0 0 12px;border-radius:6px}
 .stamp{color:#9b7bff;font-size:10px;letter-spacing:.08em}
 </style>
 </head>
 <body>
 <canvas id="c"></canvas>
 <div id="fallback">
-  <p>WebGPU missing — lookrefs only. Enable WebGPU. Cubes are glyphs, not WORD types.</p>
-  <img src="../hologram/clockwork-view-lattice.jpg" alt="lattice template"/>
-  <img src="../hologram/clockwork-view-crossing.png" alt="crossing template"/>
-  <img src="../hologram/clockwork-view-traces.jpg" alt="traces template"/>
+  <img id="look-lattice" class="on" src="../hologram/clockwork-view-lattice.jpg" alt="lattice template"/>
+  <img id="look-traces" src="../hologram/clockwork-view-traces.jpg" alt="traces template"/>
+  <img id="look-crossing" src="../hologram/clockwork-view-crossing.png" alt="crossing template"/>
+  <p class="why" id="why">Lookrefs on stage until WebGPU paints. Glyphs ≠ schema. [GAP]</p>
 </div>
 <div class="hud">
   <header class="hit">
@@ -230,14 +232,34 @@ function buildScene(){
   return {P,N,C,B};
 }
 
-let playing=true, tVal=0;
+let playing=true, tVal=0, gpuLive=false;
+function showLook(t){
+  const a=document.getElementById("look-lattice");
+  const b=document.getElementById("look-traces");
+  const c=document.getElementById("look-crossing");
+  if(!a) return;
+  a.classList.toggle("on", t < 3.5);
+  b.classList.toggle("on", t >= 3.5 && t < 7);
+  c.classList.toggle("on", t >= 7);
+}
+function keepFallback(why){
+  gpuLive=false;
+  const f=document.getElementById("fallback");
+  f.style.display="block";
+  const w=document.getElementById("why");
+  if(w) w.textContent=why;
+}
+function hideFallback(){
+  gpuLive=true;
+  document.getElementById("fallback").style.display="none";
+}
 const tEl=document.getElementById("t");
 const phase=document.getElementById("phase");
 document.getElementById("play").onclick=()=>{
   playing=!playing;
   document.getElementById("play").textContent=playing?"pause":"play";
 };
-tEl.oninput=()=>{ tVal=+tEl.value; playing=false; document.getElementById("play").textContent="play"; };
+tEl.oninput=()=>{ tVal=+tEl.value; playing=false; document.getElementById("play").textContent="play"; showLook(tVal); };
 document.querySelectorAll(".modes button").forEach(btn=>{
   btn.onclick=()=>{
     document.querySelectorAll(".modes button").forEach(b=>b.classList.toggle("on",b===btn));
@@ -248,11 +270,13 @@ document.querySelectorAll(".modes button").forEach(btn=>{
 
 async function main(){
   const canvas=document.getElementById("c");
-  if(!navigator.gpu){ document.getElementById("fallback").style.display="block"; return; }
+  showLook(0);
+  if(!navigator.gpu){ keepFallback("No navigator.gpu — lookrefs on stage."); return; }
   const ad=await navigator.gpu.requestAdapter();
-  if(!ad){ document.getElementById("fallback").style.display="block"; return; }
+  if(!ad){ keepFallback("No GPU adapter — lookrefs on stage."); return; }
   const device=await ad.requestDevice();
   const ctx=canvas.getContext("webgpu");
+  if(!ctx){ keepFallback("No WebGPU canvas context — lookrefs on stage."); return; }
   const fmt=navigator.gpu.getPreferredCanvasFormat();
   const scene=buildScene();
   const vCount=scene.P.length/3;
@@ -282,8 +306,9 @@ async function main(){
   let depth;
   function resize(){
     const dpr=Math.min(devicePixelRatio||1, 2);
-    canvas.width=Math.floor(canvas.clientWidth*dpr);
-    canvas.height=Math.floor(canvas.clientHeight*dpr);
+    canvas.width=Math.max(2, Math.floor((canvas.clientWidth||visualViewport.width)*dpr));
+    canvas.height=Math.max(2, Math.floor((canvas.clientHeight||visualViewport.height)*dpr));
+    if(canvas.width<8 || canvas.height<8) keepFallback("Canvas has no size — lookrefs on stage.");
     ctx.configure({device,format:fmt,alphaMode:"premultiplied"});
     depth=device.createTexture({size:[canvas.width,canvas.height],format:"depth24plus",usage:GPUTextureUsage.RENDER_ATTACHMENT});
   }
@@ -292,6 +317,8 @@ async function main(){
   function frame(now){
     const dt=(now-last)/1000; last=now;
     if(playing){ tVal+=dt*0.7; if(tVal>10.4) tVal=0; tEl.value=tVal; }
+    showLook(tVal);
+    if(!gpuLive && canvas.width>8 && canvas.height>8) hideFallback();
     const idx=Math.min(10, Math.floor(tVal+0.001));
     phase.textContent="t="+String(idx).padStart(4,"0")+" "+(D1[idx].k==="WORD"?D1[idx].v:"PTR");
     const asp=canvas.width/Math.max(1,canvas.height);
@@ -317,7 +344,7 @@ async function main(){
 }
 main().catch(err=>{
   console.warn(err);
-  document.getElementById("fallback").style.display="block";
+  keepFallback("WebGPU failed — lookrefs on stage.");
 });
 </script>
 </body>

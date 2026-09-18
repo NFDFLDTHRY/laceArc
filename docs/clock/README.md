@@ -19,6 +19,7 @@ Moved here in defrag pass 3.
 | train-h-c-w-systems-manifest.md | Combined H×C×W train. Not Core. |
 | lace-projection.html | Merged Layer III: WebGPU 3D + D1 time. Templates lattice/crossing/traces. Glyphs ≠ schema. |
 | projection-merge-pass-1-plan.md | Merge pass 1. Executed as shell. |
+| projection-visual-pass-1-plan.md | Pass 1: fail closed to lookrefs. Executed. |
 | agent-interaction-model.md | elephant clock `[PROPOSAL]` |
 | system-mathematical-model.md | Hands L + Shadow H; emission `[GAP]` |
 
