@@ -154,7 +154,7 @@ The remaining keys **axle, A, B, C, AB, BC, CA** summarize the hologram's axle, 
 
 ## PAGE F — RENDERER ↔ DATA
 
-**Hologram skin primary (2026-09-18; LaceArc renderer tick):** live `docs/shadow-clock-gearing.html` now draws lattice floor, glass-cube stations with emissive cores (A cool / B amber / C green), cyan/white crossing arc beams (AB/BC/CA), gold-white Hands lace cord, and residual floor traces. Plastic `buildGear` extrusion is removed (not primary). Keys and pick ids unchanged; chips still from `Object.keys(LACE_CONTRACTS)`. Cubes/beams remain Layer III view only — not Graphic D / not emission. See [restyle prompt](../prompts/gearing-html-hologram-restyle-prompt.md) and [visual-primitives §2.5](../hologram/visual-primitives.md).
+- Shader gear pipeline restored (`6fb2dac` kin); hologram templates stay look-refs only until a restyle keeps WGSL/`buildGear`.
 
 Source: [the renderer](../shadow-clock-gearing.html), especially chipKeys, show, pickTargets, hitAmong, pick, buildLaceRibbon, and frame. It remains read-only for this audit; the designated editor's upstream changes are incorporated here.
 
@@ -201,7 +201,7 @@ This is a **synthetic picker counterexample**, not a WebGPU render or Android to
 
 **Skin note:** plastic tooth extrusion is no longer the live primary look; stations are glass cubes / stacked cells. The tooth-count mismatch below remains a historical audit finding against earlier revisions and the walk artifact’s GEAR_* specs — it does not reintroduce plastic teeth.
 
-GEAR_A, GEAR_B, and GEAR_C specify **16, 12, and 14 geometric teeth**, while their trains contain **9, 5, and 10 contracts**. Individual polygon teeth carry no train key. Under the hologram skin, A/B/C are coarse station bodies (shell + core), still not a 1:1 tooth↔train-key map.
+- Shader gear pipeline restored (`6fb2dac` kin); hologram templates stay look-refs only until a restyle keeps WGSL/`buildGear`.
 
 Pair selection highlights the corresponding crossing beam (and station when selected). That is shared coarse highlighting, not a key-to-mesh bijection for train contracts. The unkeyed lace ribbon remains presentation-only Hands geometry (authorized as skin, not a new contract key). Calling it “Lace cord (Hands)” in the legend does not make its generated geometry the strand.
 
