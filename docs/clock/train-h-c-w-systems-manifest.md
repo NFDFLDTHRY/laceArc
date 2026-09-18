@@ -110,9 +110,7 @@ Arrival is Hands + Contract II. Combined gears time and diagnose. They do not cl
 
 ## Open on the train
 
-- Water §6: OBS format, INVALID list, UNK halt vs budget  
-- Cup C4 vs HCC S7 order  
-- POINTER when / arity / adjacency  
+Superseded by the pass 4 sealed board.
 
 ---
 
@@ -204,6 +202,34 @@ Gauge on the steward. Not a fourth gear. Not Graphic D.
 | T3 | AgentScope stays a gauge |
 
 Last train-composition pass unless a new combined remainder is pointed at.
+
+## License walk (pass 4)
+
+Mesh register rows already carry a cite. 3-axis cells fold those cites. Return pipes cite Cup pass 2/5, HCC Act VI / πFB / πID, Water S4→S0. Failure rows fold the same plus HCC RIC∥PFC and philosophy-map ear.
+
+No train row was found without a cite. None added.
+
+## Sealed board (pass 4)
+
+| Open | Owner | Not |
+|---|---|---|
+| POINTER when / arity / adjacency | Hands G2 | train |
+| C4 vs HCC S7 order | silent in both attachments | scheduler |
+| Two writers into next C1 | C5 ⟂ πID | merge rule |
+| Water OBS format / INVALID list / UNK budget | Water §6 | train |
+| Empty L / ISL halt / numeric P4 | HCC | train |
+
+## Anti-import (pass 4)
+
+This file does not amend Core Pieces 1–15. Cluster labels stay Layer III. Train is gearbox law, not Graphic D.
+
+## Pass 4 clipboard deltas
+
+| Ticket | Action |
+|---|---|
+| T1 | License walk — no uncited row |
+| T2 | Sealed board |
+| T3 | Anti-import vs Core |
 
 ---
 
