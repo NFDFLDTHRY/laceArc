@@ -38,6 +38,7 @@ Same rule. Same strand. 3D stars and N-dimensional participation are readings of
 | [docs/gearing/RESYNC.md](docs/gearing/RESYNC.md) | Full-repo resync signal (FIRED/CLEAR); Layer III only. |
 | [docs/clip-and-five-refs-prompt.md](docs/clip-and-five-refs-prompt.md) | Agent prompt: clipboard-looking mapping sheets while walking the five stake references. |
 | [docs/kauffman-clipboard-prompt.md](docs/kauffman-clipboard-prompt.md) | Agent prompt: clipboard mapping for Kauffman *Knots and Physics* 4ed (dokumen.pub slug / ISBN 9814383007). |
+| [docs/rowlands-clipboard-prompt.md](docs/rowlands-clipboard-prompt.md) | Agent prompt: ASCII clipboard for Rowlands *Zero to Infinity* (Series on Knots and Everything). |
 | [docs/shadow-clock-shared-interactive-prompt.md](docs/shadow-clock-shared-interactive-prompt.md) | Prompt that defined the shared-interactive gearing architecture (Layer III). |
 | [docs/system-mathematical-model.md](docs/system-mathematical-model.md) | Two-algebra model: Hands L and Shadow H. Emission remains [GAP]. |
 | [LICENSE](LICENSE) | Apache-2.0 |
