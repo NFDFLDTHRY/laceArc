@@ -1,7 +1,7 @@
 # CLIPBOARD — laceArc ← Rowlands *Zero to Infinity*
 
 Shadow stake only. Hands win. POINTER emission = `[GAP]`.
-PDF: local `artifacts/refs/rowlands-zero-to-infinity.pdf` (Series on Knots and Everything Vol. 41, World Scientific 2007). **Never git-add the PDF.**
+PDF: gitignored `refs/local/rowlands-zero-to-infinity.pdf` → attachment `47022f28…5cc458.pdf` (Series on Knots and Everything Vol. 41, World Scientific 2007). **Never git-add the PDF.**
 This file is Layer III. Not Core.
 
 **PDF fact this pass:** 738 pages. Text layer present (Type1 fonts). Printed page \(p\) ≈ PDF page \(p+25\) after front matter (checked: printed p.2 = PDF 27; printed p.590 = PDF 615). Eye-quotes below are short fragments from that text layer. They do not import the book into Core.
@@ -16,6 +16,50 @@ fetch/ff main → shoe → graphics A–D → manifest → law
                  → this file
                  → STOP
 ```
+
+## Pass 1 (PDF-sighted) receipt
+
+| Field | Value |
+|---|---|
+| Status | EXECUTED |
+| When | 2026-09-18 ~16:33 PT |
+| Station | clipboards · agent `reference-Mapper` |
+| Plan | [rowlands-pass-1-pdf-plan.md](rowlands-pass-1-pdf-plan.md) |
+| Hands skim | shoe → graphics A–D → systems-manifest → staking / law-why → reason-model-map §2 (R1–R6) → five-stakes PAGE 2/5 (read-only; T5 skip) |
+| PDF | **PRESENT** — `refs/local/rowlands-zero-to-infinity.pdf` → `47022f28…5cc458.pdf`; **738** pp.; text layer yes (Type1 / `pdftotext`); gitignored; never staged |
+| Method | `pdftotext -f N -l N -layout` on this attachment |
+| Product | A–F, X loci re-bridged; eye-quotes CONFIRM; offset certificate; morals unchanged |
+| Amended | reason-model-map · law · graphics · five-stakes · src/ · systems-manifest | **No** |
+| Emission | still `[GAP]` |
+
+### Offset certificate (printed ↔ PDF, this attachment)
+
+| Printed | PDF (1-based) | Locus |
+|---|---|---|
+| p.1 | 26 | ch.1 head “Zero” / generated from zero |
+| p.2 | 27 | §1.1 “An Origin for Everything” |
+| p.5–7 | 30–32 | ch.1 rewrite / concatenation algebra |
+| p.484 | 509 | ch.18 “Dimensionality, Strings…” |
+| p.590 | 615 | §20.16 “DNA as a Rewrite System” |
+| p.596 | 621 | §20.18 “Language and Universal Grammar” |
+| Preface vii | 10 | simplest foundations; strings/membranes refuse |
+
+Rule after front matter: printed p ≈ PDF p+25 (matches prior clipboard; **CONFIRM** on pairs above).
+
+### Per-page stamps vs reason-model-map §2
+
+| PAGE | Stamp | Notes |
+|---|---|---|
+| A Empty start | **CONFIRM** R1 | Preface PDF 10 + §1.1 PDF 27 eye-quotes match; KEEP empty start; not a second cosmos |
+| B No extra rooms | **CONFIRM** R2 | Preface strings/membranes refuse PDF 10; ch.18 opens PDF 509 / p.484 — math representation ≠ store |
+| C “Rewrite” | **CONFIRM** R3 clash | PDF 30–32 generate-from-empty / concatenation; FORBID English leak as mutate-WORD |
+| D TOE / Dirac | **CONFIRM** R4 FORBID | §1.1 unified-theory aim PDF 27; Dirac nilpotent sample PDF 100 / printed ~75 — opened not imported |
+| E §20 DNA / UG | **CONFIRM** R5/R6 FORBID | §20.16 PDF 615; §20.18 PDF 621; opened ≠ imported |
+| F When-to-point | **SILENT** | No POINTER when/arity/adjacency rule; false friends still generate/chemistry/physics-table |
+| X Cross-cut | **CONFIRM** | Temptations vs Hands deadbolts intact; Φ `[GAP]` |
+
+T5 five-stakes: **skip** — PAGE 2/5 source pins and morals agree with this PDF.
+
 
 ---
 
@@ -52,7 +96,7 @@ fetch/ff main → shoe → graphics A–D → manifest → law
 │   ┌────────────────────────────────────────────────────────────────┐     │
 │   │ PAGE B — NO EXTRA ROOMS / ONE PROCESS                          │     │
 │   │ locus: Preface printed p.vii (PDF 10)                          │     │
-│   │        continued ch. 18 “Dimensionality, Strings…” (TOC p.484) │     │
+│   │        ch. 18 opens printed p.484 (PDF 509); TOC PDF 23        │     │
 │   │ quote/eye:                                                     │     │
 │   │   avoided: “restructuring of particle physics in terms of      │     │
 │   │    multidimensional space-time strings or membranes.”          │     │
@@ -95,8 +139,8 @@ fetch/ff main → shoe → graphics A–D → manifest → law
 │                                                                          │
 │   ┌────────────────────────────────────────────────────────────────┐     │
 │   │ PAGE D — TOE / DIRAC / NILPOTENT TABLES AS CORE ROOMS          │     │
-│   │ locus: most of the book after ch. 3; Dirac/nilpotent are       │     │
-│   │        ubiquitous (200+ page hits). Not opened as schema.      │     │
+│   │ locus: most of the book after ch. 3; sample Dirac nilpotent    │     │
+│   │        PDF 100 / printed ~75. Not opened as schema.            │     │
 │   │ quote/eye:                                                     │     │
 │   │   1.1 already aims at “the long-desired ‘unified theory        │     │
 │   │    of physics’.” That aim is HIS book. Not Graphic D.          │     │
@@ -177,5 +221,6 @@ fetch/ff main → shoe → graphics A–D → manifest → law
 - PAGE E was opened. Opening is not importing.
 - PAGE F: Rowlands never writes the missing Core sentence. Do not finish it from a concatenation rule.
 - This file does not amend `docs/reason-model-map.md`.
+- **Pass 1 (PDF-sighted)** re-walked A–X against attachment `47022f28…5cc458` via `pdftotext`; offset +25 after front matter CONFIRMED; morals unchanged.
 
 Shoe in hands, or no.

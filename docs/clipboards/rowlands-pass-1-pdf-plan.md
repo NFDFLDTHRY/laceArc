@@ -1,6 +1,6 @@
 # Rowlands pass 1 (PDF-sighted) — clipboard vs attached *Zero to Infinity*
 
-**Status:** PLANNED — not executed. Emission `[GAP]`.  
+**Status:** EXECUTED — 2026-09-18 ~16:33 PT. Emission `[GAP]`.  
 **Station:** clipboards (HELD `reference-Mapper`)  
 **Base at plan:** refresh to current `origin/main` before execute  
 **Book:** Peter Rowlands, *Zero to Infinity: The Foundations of Physics* · Series on Knots and Everything Vol. 41 · World Scientific 2007  
@@ -44,7 +44,7 @@ pull/ff → claim clipboards → Hands skim
 | ~10 | Preface: simplest foundations; rejects model-dependent theories; avoids multidimensional strings/membranes as physics restructure (allows as math representation) | PAGE A/B seed language CONFIRMED |
 | 27 | §1.1 “An Origin for Everything” — “most fundamental possible idea…”; unified-theory aim | PAGE A locus CONFIRMED (printed ≈ p.2) |
 
-Full A–X walk remains **TODO** at execute.
+Full A–X walk **DONE** at execute (see Execution receipt + clipboard Pass 1 receipt).
 
 ---
 
@@ -134,13 +134,22 @@ Ask before push.
 
 ---
 
-## Execution (when you say go pass 1 / go Rowlands pass 1)
+## Execution receipt
 
-1. Refresh claim.  
-2. T1–T4 (T5 only if needed).  
-3. Mark this plan EXECUTED.  
-4. Check · commit · release.  
-5. Stop.
+| Field | Value |
+|---|---|
+| Status | **EXECUTED** |
+| When | 2026-09-18 ~16:33 PT |
+| Agent | `reference-Mapper` (clipboards station) |
+| PDF | `refs/local/rowlands-zero-to-infinity.pdf` → `47022f28…5cc458.pdf`; 738 pp.; text layer; gitignored; never staged |
+| Method | `pdftotext -f N -l N -layout` |
+| Clipboard | `rowlands-zero-to-infinity-clipboard.md` — Pass 1 receipt + offset cert + A–X stamps; page-pin REFINE B (ch.18 PDF 509) + D (Dirac sample PDF 100) |
+| T5 five-stakes | skipped (PAGE 2/5 agrees) |
+| Stamps | A CONFIRM R1 · B CONFIRM R2 · C CONFIRM R3 clash · D CONFIRM R4 FORBID · E CONFIRM R5/R6 FORBID · F SILENT · X CONFIRM |
+| Untouched | src/ · systems-manifest* · law · graphics · reason-model-map (read §2 only) |
+| Emission | `[GAP]` |
+
+Steps done: refresh claim → Hands skim → PDF gate → page walk T3 → offset cert T4 → clipboard receipt → this plan EXECUTED → check · commit · release · no push.
 
 ---
 
