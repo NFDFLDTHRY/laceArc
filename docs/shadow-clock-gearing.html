@@ -517,7 +517,7 @@ struct U {
   time   : f32,
   hiId   : f32,
   eye    : vec4f,
-  target : vec4f,
+  ctr    : vec4f,   // NOT "target" — reserved keyword in WGSL
   params : vec4f,   // x = fov
 };
 @group(0) @binding(0) var<uniform> u : U;
@@ -641,13 +641,14 @@ fn floorColor(q : vec2f, foot : f32) -> vec3f {
         + vec3f(0.20, 0.72, 0.92) * major * 1.15) * fade * res;
 }
 
-@fragment
-fn fs_main(input : VSOut) -> @location(0) vec4f {
+/* the whole picture, as a function of NDC — so it can be run from a compute
+   entry point and read back for testing, not only presented to a canvas */
+fn shade(ndc : vec2f) -> vec3f {
   let aspect = u.res.x / u.res.y;
-  let uv = vec2f(input.uv.x * aspect, input.uv.y);
+  let uv = vec2f(ndc.x * aspect, ndc.y);
 
   let ro = u.eye.xyz;
-  let fwd = normalize(u.target.xyz - ro);
+  let fwd = normalize(u.ctr.xyz - ro);
   let rgt = normalize(cross(fwd, vec3f(0.0, 1.0, 0.0)));
   let upv = cross(rgt, fwd);
   let rd = normalize(fwd + (rgt * uv.x + upv * uv.y) * u.params.x);
@@ -702,7 +703,12 @@ fn fs_main(input : VSOut) -> @location(0) vec4f {
   col = col * 4.2 + vec3f(0.002, 0.003, 0.006);
   col = col / (col + vec3f(0.50));
   col = pow(col, vec3f(0.82));
-  return vec4f(col, 1.0);
+  return col;
+}
+
+@fragment
+fn fs_main(input : VSOut) -> @location(0) vec4f {
+  return vec4f(shade(input.uv), 1.0);
 }
 `.replace(/FLOOR_Y_C/g, FLOOR_Y.toFixed(2));
 
