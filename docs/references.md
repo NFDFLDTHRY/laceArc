@@ -105,6 +105,12 @@ Workspace attachment `Lace_Memory_Recovery_Pass_2_2026-09-18.md`. Map: `docs/his
 
 Direct reads of ten historical documents. No Containers, eleven-rule scheduler (later allocation correction), card-number mismatch, rejected continuation slot, C-machine false attribution. Does not reverse 29 August. Does not amend law.
 
+#### 11. Lace memory recovery pass 3 — 18 September 2026
+
+Workspace attachment `Lace_Memory_Recovery_Pass_3_2026-09-18.md`. Map: `docs/history-recovered-pass-3-2026-09-18.md`.
+
+Visual counterparts of Graphics A–D (composition match, byte mismatch). User 7 Sep: 1D array; pointer is more lace. P02 v0.3: same derivations ≠ same recorded history. Codec roundtrip is normalized, not raw. DESIGN.md guesses and known-bad. Cat/cat-1 fragment only. Does not settle emission. Does not replace graphics.
+
 
 
 

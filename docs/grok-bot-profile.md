@@ -211,6 +211,17 @@ Pass 2 map: docs/history-recovered-pass-2-2026-09-18.md
   FORBID codec/C-machine counts as Lace evidence.
   29 Aug rejection is not reversed.
 
+Pass 3 map: docs/history-recovered-pass-3-2026-09-18.md
+  KEEP 7 Sep: 1D array; pointer is more lace.
+  KEEP visual kin of A–D. Do not swap tracked bytes.
+  KEEP P02: same derivations ≠ same recorded history.
+  FORBID P02 jobs / checkpoints / StructureBytes as Core.
+  FORBID codec VAL / lowercase / whitelist as arrival.
+  FORBID “100% roundtrip” as raw preservation.
+  FORBID manufacturing the cat / cat-1 notation.
+  Unary POINT vs ref_A/ref_B stays a conflict.
+  Emission acceptance still not recovered.
+
 
 READING ORDER WHEN A DOCUMENT IS IN THE WORKSPACE
 -------------------------------------------------
@@ -220,6 +231,7 @@ READING ORDER WHEN A DOCUMENT IS IN THE WORKSPACE
     4. docs/reason-model-map.md or docs/philosophy-map.md
        or docs/history-recovered-2026-09-18.md
        or docs/history-recovered-pass-2-2026-09-18.md
+       or docs/history-recovered-pass-3-2026-09-18.md
     5. the document itself
     6. never PDF into git
 
@@ -318,6 +330,9 @@ STILL FORBIDDEN AFTER CODE EXISTS
   mutable continuation slot
   substitution rewrite of occurrence history
   C append-machine counts as Lace evidence
+  codec VAL / lowercase intern as arrival
+  P02 checkpoints / StructureBytes as the strand
+  manufactured cat/cat-1 notation
   a second lace
 
 

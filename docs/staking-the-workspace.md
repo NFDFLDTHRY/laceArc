@@ -155,6 +155,8 @@ STILL FORBIDDEN AFTER CODE EXISTS
   Reidemeister as a write
   next-token as Core dynamics
   ReAG inside the array
+  codec VAL / lowercase intern as arrival
+  P02 checkpoints / StructureBytes as the strand
   a second lace
 
 
