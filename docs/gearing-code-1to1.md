@@ -131,9 +131,9 @@ fetch/ff main
 │   │     1. Prose MESH titles ≠ keys                                │     │
 │   │        (A.R → A.I  vs  A1). Bridged by JS `title` field.       │     │
 │   │        Minimal fix later: heading also says A1.                │     │
-│   │     2. WebGPU pickTargets bind only {A,B,C,axle}.              │     │
-│   │        AB BC CA, trains, cells, escape, audits = chip-only.    │     │
-│   │        Not decorative (they have bodies). Mesh-unbound.        │     │
+│   │     2. WebGPU picks: {A,B,C,axle} + mesh bands AB/BC/CA        │     │
+│   │        (2b2e882: contact zones preferred over gear bodies).   │     │
+│   │        Trains, cells, escape, audits = chip-only still.       │     │
 │   │     3. t0–t6 rendered twice (chip row + tick bar).             │     │
 │   │        Same keys. Not two contracts.                           │     │
 │   │                                                                │     │
@@ -148,7 +148,7 @@ fetch/ff main
 │   │   gear A (pick + HUD rail) │ A            │ no (mesh+chip)    │     │
 │   │   gear B                   │ B            │ no                │     │
 │   │   gear C                   │ C            │ no                │     │
-│   │   mesh AB BC CA            │ AB BC CA     │ YES — chip only   │     │
+│   │   mesh AB BC CA            │ AB BC CA     │ no (mesh band+chip)│     │
 │   │   axle                     │ axle         │ no                │     │
 │   │   cells t0–t6              │ t0–t6        │ YES — chip+ticks  │     │
 │   │                            │              │      no 3D pick   │     │
@@ -157,9 +157,9 @@ fetch/ff main
 │   │   train teeth A1–C10       │ A1–C10       │ YES — chip only   │     │
 │   │                                                                │     │
 │   │   FORBID: decorative gear with no contract body  — none found  │     │
-│   │   NOTE: most teeth are selectable as chips, not as meshes.     │     │
-│   │   That is renderer drift, not a missing contract.              │     │
-│   │   HUD labs are screen-fixed (f995e44); no tooth-overlap drift. │     │
+│   │   NOTE: train/cell/escape/audit teeth = chips, not 3D picks.   │     │
+│   │   That remaining drift is honest — not a missing contract.    │     │
+│   │   HUD labs screen-fixed (f995e44); mesh bands (2b2e882).      │     │
 │   └────────────────────────────────────────────────────────────────┘     │
 │                                                                          │
 │   ┌────────────────────────────────────────────────────────────────┐     │
@@ -234,7 +234,7 @@ X1 X2 X3 X4 X5 X6
 ## Steward notes
 
 - Bijection is a **plan** on the Shadow side. Disk emptiness is law, not an orphan.
-- Renderer pick-set `{A,B,C,axle}` is the honest drift. Do not invent 43 extra Core modules to “complete” the clock.
+- Renderer pick-set is `{A,B,C,axle,AB,BC,CA}` after `2b2e882`. Remaining chip-only keys (trains/cells/escape/audits) are honest drift. Do not invent Core modules to “complete” the clock.
 - Math model two-universe split matches PAGE B. Homomorphism wall ≠ Φ.
 - **HUD refresh (2026-09-18):** labels live in a screen-fixed rail (mobile: wrap under canvas). They no longer project onto gear teeth. Keys and 1:1 unchanged.
 - **Adjacent maps:** `rust-nostd-crate-map.md` + `rust-nostd-branch-contracts.md` are Hands/plan. `pointer-emission.md` is DRAFT `[GAP]` questions — not a gearing key and not acceptance.
