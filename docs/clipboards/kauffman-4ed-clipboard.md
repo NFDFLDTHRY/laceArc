@@ -20,6 +20,20 @@ This file is Layer III. Not Core.
 | Amended | reason-model-map · law · graphics · five-stakes | **No** |
 | Emission | still `[GAP]` — do not invent when / arity / adjacency |
 
+
+## Pass 2 receipt
+
+| Field | Value |
+|---|---|
+| Status | EXECUTED |
+| Station | clipboards · agent `reference-Mapper` |
+| Plan | [kauffman-pass-2-plan.md](kauffman-pass-2-plan.md) |
+| Hands + sibling | shoe → A–D → manifest → law → reason-model-map §1 → pass-1 pages → five-stakes PAGE 1/5 (read-only) |
+| PDF on this machine | **MISSING** — no printed↔PDF bridges added (D5 no-PDF branch) |
+| Product | D1–D4 + D6 sealed; A–X pages left intact |
+| Amended | reason-model-map · law · graphics · five-stakes | **No** |
+| Emission | still `[GAP]` |
+
 Law on this clip: diagram ≠ rope · hitch kin · grab ≠ emission · `[GAP]` sealed.
 
 ```
@@ -198,6 +212,79 @@ fetch/ff main → shoe → graphics A–D → manifest → law
 - PAGE C/D/E are the fence. Quoting them does not restore the operators.
 - PAGE F: Kauffman never writes the missing Core sentence. Do not finish it from a clove hitch.
 - Pass 1 accepted a missing local PDF and prior-OCR loci. A later text layer requires a re-walk under a new claim — not a silent amend of this file as if freshly OCR’d.
-- This file does not amend `docs/reason-model-map.md`, law, or graphics. It is the clipboard the prompt asked for.
+- This file does not amend `docs/reason-model-map.md`, law, graphics, or five-stakes. Pass 2 deltas mirror the five-stakes admission strip; they do not rewrite that sibling.
+- Pass 2 executed with PDF still missing (D5 no-PDF branch).
+
+---
+
+## Pass 2 deltas
+
+Pass 1 filled PAGE A–X. These deltas are leftovers only. They do not invent emission.
+
+### D1 — What this clipboard is not
+
+- Not Core. Not Graphic D. Not `docs/pointer-emission.md`.
+- Not a rewrite of `docs/reason-model-map.md` §1.
+- Not a substitute for [clipboard-five-stakes.md](clipboard-five-stakes.md) PAGE 1/5 (admission boundary lives there).
+- Not therapy for knot theory. Not a license to close Φ.
+
+### D2 — ON THE SHOE / KEEP / FORBID / MAP ARROWS
+
+Mirrored from five-stakes PAGE 1/5. Book clipboard holds the page walk; this strip is the admission boundary in one place.
+
+```
+┌──────────────────────────────────────────────────────────────────────────┐
+│ ON THE SHOE                                                              │
+│   Clove hitch. Later tension grabs earlier wraps. Two ends.              │
+│   A closed loop is not this shoe.                                        │
+│                                                                          │
+│ KEEP                           FORBID                                    │
+│   hitch / windings (K1,K7)     Reidemeister I–III (K4)                   │
+│   diagram ≠ rope (K3)          closed loop as identity (K2)              │
+│   later grab as *felt*         slide equivalence (K8)                    │
+│                                virtual handles (K9)                      │
+│                                Jones / bracket / Gauss as history (K5)   │
+│                                DNA cut-and-rejoin (K6)                   │
+│                                Bayman κ as array fields                  │
+│                                                                          │
+│ MAP ARROWS                                                               │
+│   K1 hitch  ──kin──►  RM4 / Piece 5   (does not write the row)           │
+│   K4 moves  ──[X]──►  Piece 6                                            │
+│   K3 Move0  ──read──► RM5 projection                                     │
+│                                                                          │
+│ EMISSION settled? NO  [GAP]                                              │
+└──────────────────────────────────────────────────────────────────────────┘
+```
+
+### D3 — Failure modes (reader → Lace)
+
+| ID | Misread | Hands deadbolt |
+|---|---|---|
+| FM-K1 | clove grab ⇒ POINTER when-rule | grab is kin; Φ stays `[GAP]` |
+| FM-K2 | closed loop ⇒ Lace identity | two ends; Continue |
+| FM-K3 | Move Zero ⇒ array write | projection only |
+| FM-K4 | Reidemeister ⇒ simplify stars / emit | Rule Zero; not Piece 6 |
+| FM-K5 | Jones/Gauss ⇒ wrap history on D | do not store |
+| FM-K6 | DNA passage ⇒ thread-through write | cut-rejoin `[X]` |
+| FM-K7 | T2 / κ / e^θ ⇒ array columns | friction ≠ fields |
+| FM-K8 | slide ⇒ milder Core write | implies RII/RIII class |
+| FM-K9 | virtual 1-handles ⇒ extra rooms | one store |
+
+### D4 — Interface coherence
+
+Only K1’s output (a felt grab that leaves wraps in place) matches a Core input (later participation). K4’s output (an equivalent diagram) does **not** match Piece 6’s input (a new section). The entity that would have to flow — “sameness after rewrite” — is exactly what Lace refuses. This paragraph does not close Φ.
+
+### D5 — Source gate (this execute)
+
+PDF under `artifacts/refs/` was **absent**. No printed↔PDF page bridges added. Prior-OCR label from Pass 1 stands. Five-stakes PAGE 1/5 already carries PDF one-based loci for sibling reference; this file does not copy them as if freshly sighted.
+
+### D6 — Sealed (still)
+
+- Invent when / arity / adjacency for POINTER
+- Amend reason-model-map, law, graphics, or five-stakes from this clipboard
+- Add `src/`
+- Git-add the PDF
+- Pretend a fresh OCR walk without the file
+
 
 Shoe in hands, or no.
