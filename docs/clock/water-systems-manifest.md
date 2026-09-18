@@ -39,7 +39,7 @@ Stamps: `[H]` clutch · `[X]` forbidden as Core type · `[I]` kin-read · `[GAP]
 - **Purpose:** Something that can be pointed at. Time/context anchor, concrete event or quote.
 - **Inputs:** A located claim.
 - **Outputs:** An OBS in one party’s inventory. Inventories need not match yet.
-- **Invariants:** I-A1 Pointability: if it can’t be pointed at, it is not OBS. Sharedness is optional at OBS (I-A2).
+- **Invariants:** I-A1 Pointability: if it can’t be pointed at, it is not OBS. Sharedness is optional at OBS; **mandatory** at DELTA resolution (I-A2). Anti-property: interpretive intent assignment without an anchor is not OBS.
 - **Failure modes:** Interpretive intent without anchor. OBS stored as P3 POINTER. `[X]`
 - **Boundary & Coupling:** Kin of “only structure crosses.” Not a Graphic D entry form.
 - **Key source language:** “Something that can be pointed at.”
@@ -52,7 +52,7 @@ Stamps: `[H]` clutch · `[X]` forbidden as Core type · `[I]` kin-read · `[GAP]
 - **Purpose:** Where two observations don’t match. Communication happens here only if both OBS exist.
 - **Inputs:** At least two OBS nodes (or OBS vs expected rule).
 - **Outputs:** A paired mismatch.
-- **Invariants:** No shared OBS → no real DELTA → no understanding.
+- **Invariants:** No shared OBS → no real DELTA → no understanding. Sharedness is **mandatory** at DELTA resolution (I-A2).
 - **Failure modes:** DELTA as an array edge. Fight without two OBS.
 - **Hands:** `[H]` / `[X]` as Graphic D edge
 
@@ -71,7 +71,7 @@ Stamps: `[H]` clutch · `[X]` forbidden as Core type · `[I]` kin-read · `[GAP]
 - **Kind:** Bucket
 - **Source location:** System A §4; FM-A3
 - **Purpose:** Statements with no usable payload. Examples: “You’re bad.” “This is stupid.” “Obviously.”
-- **Invariants:** Not wrong. Meaningless until converted into OBS, DELTA, or UNK. Produce heat, no compute.
+- **Invariants:** Not wrong. Meaningless until converted into OBS, DELTA, or UNK. Produce heat, no compute. Function: reject and route back — ask for OBS / DELTA / UNK. F5 does not delete.
 - **Failure modes:** INVALID as a WORD value. Treating accusation as structure.
 - **Open:** stop-word list not pinned. `[GAP]`
 - **Hands:** `[H]` / `[GAP]` list
@@ -97,7 +97,7 @@ Stamps: `[H]` clutch · `[X]` forbidden as Core type · `[I]` kin-read · `[GAP]
 - **Kind:** Region / crossing setup
 - **Source location:** System B §3; S2
 - **Purpose:** Water slows. Ground visible. Both can point at the same rock. Only place crossing is possible.
-- **Invariants:** I-B2 Crossing requires delta conditions.
+- **Invariants:** I-B2 Crossing requires delta conditions. If you can’t cross, you can’t resolve.
 - **Mesh:** Cup C3 live window only if here.
 - **Hands:** `[H]`
 
@@ -130,7 +130,7 @@ Stamps: `[H]` clutch · `[X]` forbidden as Core type · `[I]` kin-read · `[GAP]
 
 - **Kind:** Minimal function set
 - **Source location:** Specs §4.2
-- **Purpose:** Translate river signal ↔ ledger bucket. Talk / hologram only. Not array ops.
+- **Purpose:** Translate River location into Proof Ledger requirements, and vice versa. Talk / hologram only. Not array ops.
 
 | Fn | Input | Output | River hears |
 |---|---|---|---|
@@ -138,7 +138,7 @@ Stamps: `[H]` clutch · `[X]` forbidden as Core type · `[I]` kin-read · `[GAP]
 | F2 Anchor | a thing we can point at | OBS with pointer metadata | “at delta now” |
 | F3 Pair | two OBS nodes | DELTA node | “crossing possible” |
 | F4 Unknowns | “I don’t understand / missing context / what do you mean?” | UNK naming the required OBS | still too loud; widen delta |
-| F5 Reject | “you’re bad / obviously / that’s stupid” | INVALID + request anchor or UNK | shouting in rapids |
+| F5 Reject | “you’re bad / obviously / that’s stupid” | INVALID + route back to OBS / DELTA / UNK | shouting in rapids |
 
 - **Hands:** `[H]` / `[X]` if F2 writes Graphic D
 
@@ -155,6 +155,7 @@ Stamps: `[H]` clutch · `[X]` forbidden as Core type · `[I]` kin-read · `[GAP]
 - **Kind:** Unpinned tolerances
 - **Source location:** Specs §6
 - **Still open in the attachment:** OBS pointer format; INVALID pattern list; UNK halt vs budget.
+- **Examples, not a choice:** quote snippet; timestamp; message id; “the sentence you said: X”.
 - **Invariants:** Marked by the source as degrees of freedom. Pass 1 does not invent them. They are not G2.
 - **Hands:** `[GAP]`
 
@@ -200,7 +201,7 @@ Not therapy. Not a debate framework. Not a power move. Not a spec meant to impre
 | FM-B3 | Mistaking motion for progress → talked a lot; zero crossing |
 
 A: high-fidelity audit trail; works in writing / slow passes; heavy in live speech (needs serialization).  
-B: fast “wrong place”; “go to the delta” stays vague without A.
+B: fast “wrong place”; without A, “go to the delta” stays vague and never operationalized.
 
 ---
 
@@ -353,6 +354,27 @@ River detects *where*. Ledger specifies *what must exist* for crossing.
 | T2 | River where / Ledger what-must-exist |
 | T3 | I-A1 named Pointability |
 | T4 | When/where diagnosis seated on the trace |
+
+## Leftover spec mechanics (pass 6)
+
+Interface job (source §4): translate River location into Proof Ledger requirements, and vice versa.
+
+B without A: “go to the delta” stays vague and never operationalized.
+
+OBS format examples in §6 are examples only. Not a chosen format.
+
+## Pass 6 clipboard deltas
+
+| Ticket | Action |
+|---|---|
+| T1 | OBS anti-property: intent without anchor |
+| T2 | UNK payload shape (already on A-UNK; kept) |
+| T3 | INVALID / F5 route back, not delete |
+| T4 | I-A2 mandatory pairing; I-B2 spoken |
+| T5 | Interface one-liner; B-needs-A |
+| T6 | Last Water-only pass against this txt |
+
+Next work is the H×C×W train, not another Water heading walk.
 
 ---
 
