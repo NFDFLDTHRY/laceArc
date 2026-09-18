@@ -1,7 +1,7 @@
-STATUS: FREE
+STATUS: HELD
 STATION: coord
 OWNS: docs/coord/**
-AGENT: -
-BASE: -
-SINCE: -
+AGENT: Claude-Projection
+BASE: 9c11139eb6bd6d551c9659d09659f2866468dd13
+SINCE: 2026-09-18T23:17:02Z
 NOTE: umbrella scripts + station files; claim before editing coord.sh
