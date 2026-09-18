@@ -302,6 +302,62 @@ recursion guard, a "local fidelity mirror" substituted for the authoritative fil
 an external spelling lookup bypassing traversal, and breadth-first closure
 standing in for continuing behaviour.
 
+### Second pass (same day, same status: data, not authority)
+
+`Lace_Memory_Recovery_Pass_2_2026-09-18.md` reads ten historical documents
+directly. Four items bear here.
+
+**The provenance of the four graphics is unestablished.** The pass reports that a
+14 September exchange calls four images "communication barrier passing outputs"
+and that one was described as containing `ref_A`/`ref_B`, but that the search
+**"did not recover original image identities"**, generation dates, or links
+proving those images are the current A/B/C/D files.
+
+> This file is built entirely on panel D1 of
+> `docs/graphics/data-structure-1d-array.png`. Current law names the four graphics
+> the source of record, so the reading stands on the declared source. But the
+> chain from those images to any earlier authored artifact is **`UNESTABLISHED`**,
+> and this file should not be read as reaching past the images themselves.
+
+**Arity gains a third candidate, so §1 loosens further.** The same passage names a
+September **"dynamic-arity diagram"** as a separate lead.
+
+> **[CONFLICT]** Three historical positions now stand against Graphic D's two
+> slots: unary `POINT(target)` (§7 above), dynamic arity (this pass), and the
+> two-reference form D2 draws. §1 says the evidence for 2 "is stronger than one
+> example." That remains true *of the graphics* and is now clearly not a reason to
+> choose. Arity is more open than when §1 was written, not less.
+
+**One historical emission rule survives contact with D1.** The pass records that
+an arriving figure matching an earlier figure causes a tie to be appended
+(D01 §3.5; D09 "A tie is a block"). Tested against the eleven rows:
+
+| | Result |
+|---|---|
+| Repeat-occurrence WORDs in D1 | one — `0003 PIE`, first at `0000` |
+| Does it carry a tie back to its first occurrence | yes — `0004`, *"New PIE relates to first PIE"* |
+| Pointers the rule accounts for | 1 of 6 |
+
+> **[INFERENCE]** This is a different status from the adjacency candidate in §3.
+> Adjacency is **refuted** by D1 — two of four adjacent pairs carry no pointer.
+> The exact-match tie is **not refuted**: it holds on every case D1 contains
+> (1 of 1), and is merely **insufficient**, saying nothing about the other five
+> pointers. A partial emission rule is not a closure of item 6, and the pass notes
+> at least two further competing historical accounts — admission as *change* in a
+> populated window (D07 §9), and pointability/crossing (D04). Recorded, not
+> adopted.
+
+**Citation hazard, self-applying.** The pass found that D01 cites `axioms.html`
+card numbers as load-bearing, that the recovered deck has no such numbers, and
+that the subjects at those ordinals do not match — concluding that
+**"title, actual text and version are needed."**
+
+> Panel labels `D1`, `B8`, `C6` are assigned by the manifest and by these files.
+> They are not printed in the graphics. Combined with the unestablished provenance
+> above, this repository can drift exactly as D01 did. This file happens to
+> transcribe D1's eleven rows verbatim, so its claims survive a relabelling; that
+> was not deliberate. See `docs/agent-interaction-model.md` §3b F3.
+
 Evidence state for every item in this section: `OBSERVED` in a retrieved report;
 `NOT_TESTED` here. Human acceptance: `ABSENT`. No item above changes §1-§6.
 

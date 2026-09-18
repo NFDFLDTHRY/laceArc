@@ -87,6 +87,87 @@ and reporting the push as its shape.**
 
 ---
 
+## 3b. Three failure modes the archive names
+
+`Lace_Memory_Recovery_Pass_2_2026-09-18.md` (second pass, another agent's report;
+C06 data, not authority) documents three ways feelers fail that §3 does not
+cover. None was invented here. All three are recorded in this project's own
+history, and all three are failures *of interaction*, not of observation.
+
+### Root, stated by the author
+
+`no_containers.md` (D06) argues that words carry no semantic payload between
+minds, and that **"understanding depends on overlap between separately developed
+structures."**
+
+That is the elephant, stated formally and by the author, and it is a better root
+for this file than the parable. Each feeler develops its own structure. Overlap
+is the only thing that crosses. It is also the same claim the clock already makes
+— objects do not have relationships; formations do.
+
+### F1 — False mesh. An acknowledgement is not a mesh.
+
+The second pass records that D02 warns even **`EW`, `RULING` and `LOCKED` can
+preserve apparent assent while the parties imagine different behavior**, and that
+D01 says **silence is not assent**.
+
+In clock terms this is the one state §5 lacks a name for: not `locked`, not
+`drop`, not `grind`, but **gears that appear engaged and turn at different
+rates**. In elephant terms: two feelers both report "leg" and mean different legs.
+The words overlap; the structures do not.
+
+- Agreement is not a reading. It has no station and is therefore not `OBS`.
+- A label — approved, accepted, locked, resolved — is evidence that an answer was
+  given, never that the same behaviour was imagined. C12 already says this of
+  acknowledgement; the archive shows it happening.
+- Test for mesh by asking the other feeler to state the *consequence* they expect,
+  not to confirm the claim. Divergent consequences under identical words is a
+  `DELTA`, and it is the most valuable kind, because it was invisible.
+
+The second pass applies this caution to itself. So does this file.
+
+### F2 — Familiar-adjacent capture. Reporting the shape you expected.
+
+D06 describes a communication failure in which **a reader responds to a familiar
+adjacent claim while missing the proposed inversion**. D01 records an instance: a
+model **retained the familiar relabeling argument while dropping the rest**.
+
+This is the most dangerous failure in the set, because it produces a *fluent,
+confident, well-formed* reading that is about the wrong object. It is rule 6
+inverted: rather than moving the elephant, the feeler leaves it alone and reports
+the animal they already knew.
+
+- Every unknown object has a familiar neighbour. The neighbour is always easier to
+  describe.
+- Signal: the reading would have been producible without touching. If your report
+  survives deleting the station, you reported the neighbour.
+- Signal: the novel claim in a source is an *inversion* of a common one, and the
+  report preserves the common one.
+- This is the same failure as rule 2 at a different altitude. There the quantifier
+  inflates; here the object substitutes.
+
+### F3 — Ordinal drift. An anchor that is only a number is not an anchor.
+
+The second pass found that D01 cites `axioms.html` card numbers as load-bearing
+references, that the recovered deck contains no card-number identifiers, and that
+subjects at those ordinals do not match. Its conclusion: **"a bare card number
+cannot reliably identify a rule"**, and **"title, actual text and version are
+needed."**
+
+**This repository is exposed to exactly that failure now.** `D1`, `B8`, `C6`,
+`Piece 5` are labels the manifest and these files assign. They are not printed in
+the graphics. Panel provenance is itself unresolved — see
+`docs/graphics-close-reading.md` §7. If the graphics are ever re-rendered or
+re-ordered, every citation in this repository drifts precisely as D01's did, and
+silently.
+
+- An anchor carries title, quoted text, and version — not an ordinal alone.
+- `docs/graphics-close-reading.md` transcribes D1's eleven rows verbatim rather
+  than citing the panel by number. That is the practice this failure mode
+  requires, and it was luck, not design.
+- **[GAP]** Whether the four graphics should carry stable in-image identifiers is
+  a question for the mainspring. This file does not propose changing them.
+
 ## 4. The mapping
 
 | Metaphor | This repository | Existing term |
