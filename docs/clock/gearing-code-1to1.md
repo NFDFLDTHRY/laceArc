@@ -154,7 +154,7 @@ The remaining keys **axle, A, B, C, AB, BC, CA** summarize the hologram's axle, 
 
 ## PAGE F — RENDERER ↔ DATA
 
-- Shader gear pipeline restored (`6fb2dac` kin); hologram templates stay look-refs only until a restyle keeps WGSL/`buildGear`.
+- **Approved renderer baseline (2026-09-18):** SDF raymarch + orbit/zoom (`db469c3` kin — “drag to orbit · pinch or scroll to zoom”). Plastic `buildGear` and the post-raymarch mesh restyles (`12e4021` / `b6ce0ac`) are rejected. Improve on this shader path; do not drop WGSL raymarch or orbit.
 
 Source: [the renderer](../shadow-clock-gearing.html), especially chipKeys, show, pickTargets, hitAmong, pick, buildLaceRibbon, and frame. It remains read-only for this audit; the designated editor's upstream changes are incorporated here.
 
@@ -199,9 +199,9 @@ This is a **synthetic picker counterexample**, not a WebGPU render or Android to
 
 ### Geometry is not contract grain
 
-**Skin note:** plastic tooth extrusion is no longer the live primary look; stations are glass cubes / stacked cells. The tooth-count mismatch below remains a historical audit finding against earlier revisions and the walk artifact’s GEAR_* specs — it does not reintroduce plastic teeth.
+**Skin note:** live primary look is SDF raymarch hologram stations (neon lattice / volumetric cubes), not plastic teeth and not the later mesh-only glass restyle. The tooth-count mismatch below remains a historical audit finding against earlier revisions and the walk artifact’s GEAR_* specs — it does not reintroduce plastic teeth.
 
-- Shader gear pipeline restored (`6fb2dac` kin); hologram templates stay look-refs only until a restyle keeps WGSL/`buildGear`.
+- **Approved renderer baseline (2026-09-18):** SDF raymarch + orbit/zoom (`db469c3` kin — “drag to orbit · pinch or scroll to zoom”). Plastic `buildGear` and the post-raymarch mesh restyles (`12e4021` / `b6ce0ac`) are rejected. Improve on this shader path; do not drop WGSL raymarch or orbit.
 
 Pair selection highlights the corresponding crossing beam (and station when selected). That is shared coarse highlighting, not a key-to-mesh bijection for train contracts. The unkeyed lace ribbon remains presentation-only Hands geometry (authorized as skin, not a new contract key). Calling it “Lace cord (Hands)” in the legend does not make its generated geometry the strand.
 
