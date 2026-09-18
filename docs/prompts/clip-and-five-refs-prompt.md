@@ -139,7 +139,7 @@ DONE MEANS
 
   One artifact, canonical path (already on disk if filled):
 
-    docs/clipboard-five-stakes.md
+    docs/clipboards/clipboard-five-stakes.md
 
   Do not invent docs/five-refs-clipboard.md — that name is wrong.
   Contains the full clipboard frame + pages 1–5 + cross-cut page,

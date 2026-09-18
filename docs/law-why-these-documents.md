@@ -427,7 +427,7 @@ There is no build until emission is accepted.
 |---|---|
 | this file | the explanation + implementation law |
 | `AGENTS.md` | standing orders; must cite this file |
-| `docs/grok-bot-profile.md` | paste block for the Bot |
+| `docs/kit/grok-bot-profile.md` | paste block for the Bot |
 | `CONTRIBUTING.md` | human contributors under the same law |
 | `README.md` | public notice that the law exists |
 

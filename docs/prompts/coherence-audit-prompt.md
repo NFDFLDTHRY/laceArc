@@ -2,7 +2,7 @@
 
 Paste everything inside the outer box to an agent. **Audit + update-as-you-go.** Hands win. Emission `[GAP]`. No `src/`. No inventing pointer-emission answers.
 
-Prior related work (do not ignore): `docs/downstream-audit.md` (pre-integration / enforcement findings).  
+Prior related work (do not ignore): `docs/kit/downstream-audit.md` (pre-integration / enforcement findings).  
 This prompt is a **standing walk** across live tip materials: graphics → law → maps → Shadow → plans → HTML, fixing doc drift as each station passes.
 
 ```

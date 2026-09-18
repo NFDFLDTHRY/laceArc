@@ -3,7 +3,7 @@
 Append-only. Hands win. Emission remains `[GAP]`. No `src/`.
 
 Process: [coherence-audit-prompt.md](prompts/coherence-audit-prompt.md).  
-Related prior: [downstream-audit.md](downstream-audit.md) (do not erase; re-check live claims).
+Related prior: [downstream-audit.md](kit/downstream-audit.md) (do not erase; re-check live claims).
 
 ---
 
@@ -41,7 +41,7 @@ Related prior: [downstream-audit.md](downstream-audit.md) (do not erase; re-chec
 - finding: Prompt→product paths checked. kauffman-clipboard-prompt → kauffman-4ed-clipboard.md PRESENT; rowlands-clipboard-prompt → rowlands-zero-to-infinity-clipboard.md PRESENT; xiao-clipboard-prompt → xiao-zhu-foundations-clipboard.md PRESENT; agentscope-clipboard-prompt → agentscope-clipboard.md PRESENT; clip-and-five-refs-prompt → clipboard-five-stakes.md PRESENT (explicitly forbids five-refs-clipboard.md). petersen-zech-clipboard-prompt → docs/petersen-zech-clipboard.md ABSENT (PAGE F hotspot) — LOG OPEN; do not invent fill. README contents rows exist for every filled clipboard; no Petersen filled row (correct while ABSENT). No wrong product paths in prompts.
 - kind: [GAP]
 - fix: none
-- cites: docs/*-clipboard-prompt.md; docs/prompts/clip-and-five-refs-prompt.md; docs/kauffman-4ed-clipboard.md; docs/rowlands-zero-to-infinity-clipboard.md; docs/xiao-zhu-foundations-clipboard.md; docs/agentscope-clipboard.md; docs/clipboard-five-stakes.md; README.md (clipboard rows); ABSENT docs/petersen-zech-clipboard.md
+- cites: docs/*-clipboard-prompt.md; docs/prompts/clip-and-five-refs-prompt.md; docs/clipboards/kauffman-4ed-clipboard.md; docs/clipboards/rowlands-zero-to-infinity-clipboard.md; docs/clipboards/xiao-zhu-foundations-clipboard.md; docs/clipboards/agentscope-clipboard.md; docs/clipboards/clipboard-five-stakes.md; README.md (clipboard rows); ABSENT docs/petersen-zech-clipboard.md
 - emission contact: none
 
 ### tick 2026-09-18 · station A6 · tip 820b4d69425f2e389596dcef12396b90a9a3d37c
@@ -59,10 +59,10 @@ Related prior: [downstream-audit.md](downstream-audit.md) (do not erase; re-chec
 - emission contact: silenced → [GAP]
 
 ### tick 2026-09-18 · station A7 · tip 6603c1bf19c85c38f5271c38ded76b283835e957
-- finding: Stale steward note in crate-map claimed docs/agentscope-clipboard.md “untracked”; file is tracked on main. Stale ABSENT notes in branch-contracts for docs/pointer-emission-prompt.md (source-diff #1, PAGE G “currently ABSENT”, PAGE H dangling-path / absent-at-revision) while outline is present on live tip. PAGE C allowed: stale untracked/absent notes when file is on main. Did not fill emission [GAP]s; did not create src/ or Cargo.toml; did not change KEEP/FORBID or acceptance gate.
+- finding: Stale steward note in crate-map claimed docs/clipboards/agentscope-clipboard.md “untracked”; file is tracked on main. Stale ABSENT notes in branch-contracts for docs/pointer-emission-prompt.md (source-diff #1, PAGE G “currently ABSENT”, PAGE H dangling-path / absent-at-revision) while outline is present on live tip. PAGE C allowed: stale untracked/absent notes when file is on main. Did not fill emission [GAP]s; did not create src/ or Cargo.toml; did not change KEEP/FORBID or acceptance gate.
 - kind: drift
 - fix: docs/rust-nostd-crate-map.md (steward untracked→tracked); docs/rust-nostd-branch-contracts.md (outline PRESENT on live tip; linkable; outline≠acceptance)
-- cites: docs/rust-nostd-crate-map.md; docs/rust-nostd-branch-contracts.md; docs/agentscope-clipboard.md; docs/pointer-emission-prompt.md; docs/pointer-emission.md (still DRAFT)
+- cites: docs/rust-nostd-crate-map.md; docs/rust-nostd-branch-contracts.md; docs/clipboards/agentscope-clipboard.md; docs/pointer-emission-prompt.md; docs/pointer-emission.md (still DRAFT)
 - emission contact: none
 
 ### tick 2026-09-18 · station A8 · tip 94cdba8c67dbea209213b49f7cb2a476044b09e6

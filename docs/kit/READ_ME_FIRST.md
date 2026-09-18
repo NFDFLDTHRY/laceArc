@@ -1,5 +1,7 @@
 # Lace agent package
 
+**STALE pin:** prepared against `4fe984bb`. That is not live `main`. Read `AGENTS.md` and the current tip first. This file is kit, not Hands.
+
 Prepared 18 September 2026 against `NFDFLDTHRY/laceArc` commit `4fe984bb098d5ca21c9704234df4fddd53056efb`.
 
 This documentation package is integrated into the repository for local and cloud agents. AGENTS.md, CLAUDE.md, the Grok profile, README.md, and CONTRIBUTING.md route contributors to these controls. The weaker entry-point gate wording has been aligned with the full law's requirement for human acceptance of exact content.
@@ -8,9 +10,9 @@ This documentation integration creates no Core implementation, pointer-emission 
 
 | File | Use |
 |---|---|
-| [docs/agent-control.md](docs/agent-control.md) | Portable standing prompt. Contains the author's staking law verbatim, then the operating controls. |
-| [docs/agent-task-template.md](docs/agent-task-template.md) | Reusable one-task, adjudication, proof-contract, and handoff forms. |
-| [docs/downstream-audit.md](docs/downstream-audit.md) | Evidence, concrete failure paths, source corrections, and agent challenge cases. |
+| [docs/kit/agent-control.md](docs/kit/agent-control.md) | Portable standing prompt. Contains the author's staking law verbatim, then the operating controls. |
+| [docs/kit/agent-task-template.md](docs/kit/agent-task-template.md) | Reusable one-task, adjudication, proof-contract, and handoff forms. |
+| [docs/kit/downstream-audit.md](docs/kit/downstream-audit.md) | Evidence, concrete failure paths, source corrections, and agent challenge cases. |
 
 Read the audit before giving agents repository write permissions. Use the full control prompt plus one filled task form for an agent that cannot load repository instructions. An agent that can load the repository should also inspect the actual current sources. No wrapper summary is a substitute for the law.
 
@@ -18,12 +20,12 @@ Read the audit before giving agents repository write permissions. Use the full c
 
 The three `docs/` files supplement the canonical documents. The four graphics, systems manifest, reason map, and staking ASCII remain intact. The law document's introductory gate sentence has been aligned with its unchanged ASCII block.
 
-AGENTS.md requires every agent to read `docs/agent-control.md` and `docs/agent-task-template.md`, subordinate to the human-authored law. For a provider profile or local harness configured outside the repository, supply the following routing text with the current task appended:
+AGENTS.md requires every agent to read `docs/kit/agent-control.md` and `docs/kit/agent-task-template.md`, subordinate to the human-authored law. For a provider profile or local harness configured outside the repository, supply the following routing text with the current task appended:
 
 ```text
 Project: NFDFLDTHRY/laceArc.
 Read AGENTS.md and docs/law-why-these-documents.md.
-Read docs/agent-control.md and docs/agent-task-template.md.
+Read docs/kit/agent-control.md and docs/kit/agent-task-template.md.
 Then follow the law's source-reading order for the assigned task.
 Return a source-specific receipt before proposing Core structure.
 Pointer-emission remains a gap unless the exact current contract has

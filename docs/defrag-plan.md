@@ -1,8 +1,7 @@
 # Defrag plan (PREPARE only)
 
-Status: **PASS 1 DONE locally** — prompts + history moved; links rewritten.
-Not committed until the human asks. POINTER emission stays `[GAP]`.
-Tip surveyed at start of pass: `6603c1b`.
+Status: **PASS 1 on main `94cdba8`. PASS 2 DONE locally** (clipboards + kit). Not committed until asked.
+POINTER emission stays `[GAP]`. Tip at pass-2 start: `33b7e79`.
 
 Shoe test: filing, not wrapping the cord.
 
@@ -96,3 +95,66 @@ Rewriting history recoveries into law.
 Filling `[GAP]` because the index looks tidy.
 Merging shadow clock into Core docs.
 Approving a missing projection brief by inventing it.
+
+---
+
+## PASS 2 PLAN (clipboards + kit) — do not run until “go pass 2”
+
+Tip to rebase onto: live `origin/main` (pass 1 is `94cdba8`).
+Clock HTML restyle stays out of this commit.
+
+### Move (`git mv`)
+
+```
+docs/clipboards/
+  clipboard-five-stakes.md
+  kauffman-4ed-clipboard.md
+  rowlands-zero-to-infinity-clipboard.md
+  xiao-zhu-foundations-clipboard.md
+  agentscope-clipboard.md
+  README.md          (new door: KEEP/FORBID; not Core; Petersen unfilled)
+
+docs/kit/
+  agent-control.md
+  agent-task-template.md
+  downstream-audit.md
+  grok-bot-profile.md
+  README.md          (new door: portable steward kit; not Hands)
+READ_ME_FIRST.md  →  docs/kit/READ_ME_FIRST.md
+```
+
+### Do not move in pass 2
+
+| File | Why |
+|---|---|
+| Graphics A–D, manifest, law, staking, reason-model-map, close-reading, pointer-emission.md, references.md | Hands |
+| shadow-clock-*, gearing/, hologram/, philosophy-map.md | Shadow — pass 3 |
+| rust-nostd-crate-map.md, rust-nostd-branch-contracts.md | Decide pointer only; leave at `docs/` |
+| agent-interaction-model.md | `[PROPOSAL]` elephant clock — Shadow-adjacent, not kit |
+| petersen-zech-clipboard-prompt.md | Already in `docs/prompts/`; product never written |
+| coherence-audit-log.md | Stay at `docs/` root (append-only live log) |
+| shadow-clock-gearing.html dirty restyle | Separate tick |
+
+### Decisions locked in the same commit (small text, not physics)
+
+1. Petersen: README clipboards door says `STATUS: unfilled` (prompt only).
+2. `READ_ME_FIRST.md`: first line `STALE pin 4fe984b` + “read live AGENTS.md / tip”. Do not pretend the package is current.
+3. Rust: one sentence in both plan files: `crate-map.md` = tree; `branch-contracts.md` = serial birth cards. Neither is plan-of-record for emission.
+4. No inventing `lace-projection-brief.md`.
+5. No RESYNC CLEAR.
+
+### Link blast
+
+Rewrite `docs/NAME` → `docs/clipboards/NAME` and `docs/kit/NAME` in README, AGENTS, law-why, references, kit internals, clipboards’ cross-links.
+Relative links from `docs/*.md` that named those files by basename.
+
+Expected touch set (from pass-1 pattern): README, AGENTS, references, law-why, grok-bot-profile (after move), clipboards themselves, coherence-audit-log if it cites kit.
+
+### Commit shape
+
+One commit. Message: shelves only. No HTML. No `src/`. No `[GAP]` fill.
+
+### After
+
+Stop. Pass 3 is clock path (`docs/clock/` vs leave), not this.
+

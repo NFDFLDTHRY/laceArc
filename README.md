@@ -22,7 +22,7 @@ Same rule. Same strand. 3D stars and N-dimensional participation are readings of
 
 ## What this repo contains
 
-Shelves (defrag pass 1). Hands stay at `docs/` root. Do not treat a prompt or a recovery as Graphic D.
+Shelves (defrag pass 1–2). Hands stay at `docs/` root. Do not treat a prompt, clipboard, or recovery as Graphic D.
 
 | Shelf | Path | What it is |
 |---|---|---|
@@ -31,7 +31,8 @@ Shelves (defrag pass 1). Hands stay at `docs/` root. Do not treat a prompt or a 
 | Shadow | [docs/gearing/](docs/gearing/), shadow-clock-*, [docs/hologram/](docs/hologram/) | Holder clock. Cubes ≠ rows |
 | History | [docs/history/](docs/history/) | Recoveries. Do not revive walkers |
 | Prompts | [docs/prompts/](docs/prompts/) | Agent tickets. Not law |
-| Clipboards | `docs/*clipboard*` | KEEP/FORBID. Petersen prompt-only |
+| Clipboards | [docs/clipboards/](docs/clipboards/) | KEEP/FORBID. Petersen unfilled |
+| Kit | [docs/kit/](docs/kit/) | Steward package. `READ_ME_FIRST` pin is STALE |
 
 | Path | Role |
 |---|---|
@@ -71,14 +72,14 @@ Shelves (defrag pass 1). Hands stay at `docs/` root. Do not treat a prompt or a 
 | [AGENTS.md](AGENTS.md) | Standing orders for any Grok / Grok Bot / Grok Build session in this tree. |
 | [CLAUDE.md](CLAUDE.md) | Pointer that loads those standing orders into Claude Code sessions. |
 | [.claude/](.claude/) | Session setup for Claude Code on the web: startup hook and repository checks. No runtime. |
-| [docs/grok-bot-profile.md](docs/grok-bot-profile.md) | Name, job, ASCII description, staking explanation, and first task to paste into Grok Bot. |
+| [docs/kit/grok-bot-profile.md](docs/kit/grok-bot-profile.md) | Name, job, ASCII description, staking explanation, and first task to paste into Grok Bot. |
 | [docs/references.md](docs/references.md) | Adjacent books. Citations only. PDFs are not in this public repo. |
 | [docs/reason-model-map.md](docs/reason-model-map.md) | Physical shoe lace as reason model. How five adjacent works may and may not touch Core. |
-| [docs/clipboard-five-stakes.md](docs/clipboard-five-stakes.md) | Five-page KEEP/FORBID clipboard of the stake texts. Emission still [GAP]. |
-| [docs/kauffman-4ed-clipboard.md](docs/kauffman-4ed-clipboard.md) | Kauffman 4ed hitch / diagram / Reidemeister / slide / virtual sheets. Not Core. |
-| [docs/rowlands-zero-to-infinity-clipboard.md](docs/rowlands-zero-to-infinity-clipboard.md) | Rowlands empty-start / no extra rooms / rewrite name-clash sheets. Not Core. |
-| [docs/xiao-zhu-foundations-clipboard.md](docs/xiao-zhu-foundations-clipboard.md) | Xiao–Zhu arrival-order / intern / MASK / embed / next-token sheets. Not Core. |
-| [docs/agentscope-clipboard.md](docs/agentscope-clipboard.md) | AgentScope taxonomy for the HOLDER. ReAG stays off Graphic D. Not Core. |
+| [docs/clipboards/clipboard-five-stakes.md](docs/clipboards/clipboard-five-stakes.md) | Five-page KEEP/FORBID clipboard of the stake texts. Emission still [GAP]. |
+| [docs/clipboards/kauffman-4ed-clipboard.md](docs/clipboards/kauffman-4ed-clipboard.md) | Kauffman 4ed hitch / diagram / Reidemeister / slide / virtual sheets. Not Core. |
+| [docs/clipboards/rowlands-zero-to-infinity-clipboard.md](docs/clipboards/rowlands-zero-to-infinity-clipboard.md) | Rowlands empty-start / no extra rooms / rewrite name-clash sheets. Not Core. |
+| [docs/clipboards/xiao-zhu-foundations-clipboard.md](docs/clipboards/xiao-zhu-foundations-clipboard.md) | Xiao–Zhu arrival-order / intern / MASK / embed / next-token sheets. Not Core. |
+| [docs/clipboards/agentscope-clipboard.md](docs/clipboards/agentscope-clipboard.md) | AgentScope taxonomy for the HOLDER. ReAG stays off Graphic D. Not Core. |
 | [docs/rust-nostd-crate-map.md](docs/rust-nostd-crate-map.md) | Plan map of first-party `#![no_std]` doors. No `src/`. Emission sealed. |
 | [docs/rust-nostd-branch-contracts.md](docs/rust-nostd-branch-contracts.md) | Plan: seven `#![no_std]` branch contract cards (serial proof gates). No `src/`. |
 | [docs/gearing-code-1to1.md](docs/gearing-code-1to1.md) | 47 visual keys ↔ planned Shadow units. Chip-only drift noted. Not Core. |

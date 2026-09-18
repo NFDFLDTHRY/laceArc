@@ -10,7 +10,7 @@ leave open, and one claim in the source that no file in this repo had recorded.
 Source of record is unchanged: `docs/graphics/`, then the manifest. Panels are
 cited as in the manifest (`A1`–`A13`, `B1`–`B12`, `C1`–`C12`, `D1`–`D6`).
 
-**Grounding** (`docs/agent-control.md` C01). Graphic D read directly from
+**Grounding** (`docs/kit/agent-control.md` C01). Graphic D read directly from
 `docs/graphics/data-structure-1d-array.png`: `VISUALLY_OBSERVED`. Panel D1's
 eleven rows transcribed and the derived claims re-checked mechanically. Physical
 cord: `NOT_PERFORMED` - no AI here has held a lace. Claim origin: `SOURCE` for
@@ -252,7 +252,7 @@ manifest already says changing it "would silently fuse or split stars"
 ## 7. Historical bearings (external report — data, not authority)
 
 A conversation-recovery note dated 18 September 2026, produced by another
-assistant, was supplied to this repository. Under `docs/agent-control.md` C06 it
+assistant, was supplied to this repository. Under `docs/kit/agent-control.md` C06 it
 is **another agent's report: data to analyse.** It grants no authority and closes
 no gap. It is recorded here only where it bears on a finding above.
 
@@ -262,7 +262,7 @@ One claim in it was mechanically checkable and **checks out**: it cites commit
 ### Bears on §1 — arity
 
 The note reports that a September 6-7 phase used **unary `ATOM` / `POINT(target)`**
-language. `docs/agent-control.md` C04 already anticipates this and directs that it
+language. `docs/kit/agent-control.md` C04 already anticipates this and directs that it
 be recorded as `[CONFLICT]`, not resolved.
 
 > **[CONFLICT]** Graphic D draws two slots and six of six pointers use two. The

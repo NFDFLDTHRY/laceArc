@@ -155,7 +155,7 @@ Hands first: shoe → graphics A–D → systems-manifest → staking / law-why 
          fill PAGE A → B → C → D → E → F → X
               │
               v
-         write docs/xiao-zhu-foundations-clipboard.md
+         write docs/clipboards/xiao-zhu-foundations-clipboard.md
               │
               v
          STOP  (commit only if human asks)

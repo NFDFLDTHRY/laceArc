@@ -3,8 +3,8 @@
 Standing orders for this tree are in [AGENTS.md](AGENTS.md). They apply to every
 local and cloud agent, Claude Code included. Read that file together with
 [the repository law](docs/law-why-these-documents.md),
-[the agent control prompt](docs/agent-control.md), and
-[the task and handoff templates](docs/agent-task-template.md).
+[the agent control prompt](docs/kit/agent-control.md), and
+[the task and handoff templates](docs/kit/agent-task-template.md).
 The human-authored law governs these operating controls. Return the template's
 source-specific receipt before proposing Core structure.
 
@@ -40,4 +40,4 @@ start of web sessions via `.claude/hooks/session-start.sh`.
 
 These are limited documentation checks. The session-start wrapper reports check
 failures but returns success; it is advisory, not a publishing gate. Inspect the
-underlying result. See [the dated downstream audit](docs/downstream-audit.md).
+underlying result. See [the dated downstream audit](docs/kit/downstream-audit.md).

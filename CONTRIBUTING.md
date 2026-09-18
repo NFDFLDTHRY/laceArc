@@ -4,7 +4,7 @@ This repository is model-first. The four graphics in `docs/graphics/` are the so
 
 Repo law: `docs/law-why-these-documents.md`.
 
-All contributors and agent harnesses must use [the agent controls](docs/agent-control.md) and [the task, review, and handoff templates](docs/agent-task-template.md), subordinate to that law. See [READ_ME_FIRST.md](READ_ME_FIRST.md) for the installed documentation package and its remaining enforcement limits.
+All contributors and agent harnesses must use [the agent controls](docs/kit/agent-control.md) and [the task, review, and handoff templates](docs/kit/agent-task-template.md), subordinate to that law. See [docs/kit/READ_ME_FIRST.md](docs/kit/READ_ME_FIRST.md) for the installed documentation package and its remaining enforcement limits.
 
 ## Do
 

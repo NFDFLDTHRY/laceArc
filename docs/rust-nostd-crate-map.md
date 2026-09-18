@@ -1,6 +1,7 @@
 # CLIPBOARD — laceArc ← Rust `#![no_std]` crate / branch map
 
 Plan map only. Hands win. POINTER emission = `[GAP]`. **NO `src/` yet.**
+Shelf note (defrag pass 2): this file is the **crate tree**. Serial birth cards live in `docs/rust-nostd-branch-contracts.md`. Neither file is an accepted emission rule.
 Not Core code. Not a Cargo workspace. Do not create these directories.
 
 Law: `docs/law-why-these-documents.md` IMPLEMENTATION LAW + `AGENTS.md`.
@@ -231,6 +232,6 @@ fetch/ff main → shoe → graphics A–D → manifest → IMPLEMENTATION LAW
 - `pointer/` after the gate is a type crate. It is not `docs/pointer-emission.md`.
 - Arrival is a surface in the manifest. A crate that owned tokens would be Xiao intern by another door.
 - This file does not create directories, Cargo.toml, or `src/`.
-- `docs/agentscope-clipboard.md` is a separate tracked clipboard (AgentScope hold) and is not this map.
+- `docs/clipboards/agentscope-clipboard.md` is a separate tracked clipboard (AgentScope hold) and is not this map.
 
 Shoe in hands, or no.

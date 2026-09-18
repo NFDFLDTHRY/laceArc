@@ -1,6 +1,7 @@
 # CLIPBOARD — laceArc no_std branch contracts
 
 **Status: PLAN / PROPOSAL. Seven prose cards. No implementation acceptance.**
+Shelf note (defrag pass 2): this file is the **serial birth cards**. The crate tree is `docs/rust-nostd-crate-map.md`. Neither fills POINTER emission.
 
 Repository destination: `docs/rust-nostd-branch-contracts.md`.
 Prior product: [rust-nostd-crate-map.md](rust-nostd-crate-map.md).
@@ -83,7 +84,7 @@ Read sources at this baseline:
 - [AGENTS.md](../AGENTS.md), [staking](staking-the-workspace.md), [Implementation Law](law-why-these-documents.md), and [CONTRIBUTING.md](../CONTRIBUTING.md).
 - [Reason model](reason-model-map.md), RM1–RM10, X2/X4, rejected imports and open questions.
 - [Crate map](rust-nostd-crate-map.md), Pages A–X; [pointer-emission draft](pointer-emission.md), especially its status and sections 1–5.
-- [Agent controls](agent-control.md) and [task/proof/handoff forms](agent-task-template.md).
+- [Agent controls](kit/agent-control.md) and [task/proof/handoff forms](kit/agent-task-template.md).
 
 The adjacent PDFs and philosophical texts are not additional authorities
 for a WORD, POINTER or append rule. This pass uses their already-recorded

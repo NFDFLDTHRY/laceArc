@@ -1,6 +1,6 @@
 # Agent interaction model — the elephant clock
 
-`[PROPOSAL]` — not law. `docs/agent-control.md` C09: a control change must be
+`[PROPOSAL]` — not law. `docs/kit/agent-control.md` C09: a control change must be
 visible as a control change, and its own result cannot authorise it. This file
 proposes how **stewards mesh with each other**. Only the human accepts it.
 
@@ -17,7 +17,7 @@ see §7, which is the hardest rule in this file.
 
 ## 1. Why this file exists
 
-`docs/agent-control.md` C07 already governs one agent: one active task, one
+`docs/kit/agent-control.md` C07 already governs one agent: one active task, one
 branch, a designated editor. It does not say what happens when **several agents
 are already inside the repository at once**, which is the actual condition here.
 
@@ -242,8 +242,8 @@ attacks. If you cannot tell whether a shaft is held, it is held.
 
 ## 6. What a feeler emits per tick
 
-Plugs into `docs/agent-task-template.md` §2 (source and law receipt) and
-`docs/agent-control.md` C10. Nothing new is invented here:
+Plugs into `docs/kit/agent-task-template.md` §2 (source and law receipt) and
+`docs/kit/agent-control.md` C10. Nothing new is invented here:
 
 | Field | Metaphor | Required |
 |---|---|---|
@@ -263,7 +263,7 @@ can point at.
 
 ## 7. What this model must never become
 
-`docs/agent-control.md` C07 states it directly, and it is the reason this file
+`docs/kit/agent-control.md` C07 states it directly, and it is the reason this file
 is dangerous:
 
 > Do not resolve Core's concurrency gap by copying the team's editing arrangement
