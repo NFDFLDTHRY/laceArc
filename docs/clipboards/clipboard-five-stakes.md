@@ -109,6 +109,8 @@ Legend:
 
 **Source check.** *Zero to Infinity*: Preface, printed pp.vii and ix / PDF pp.10 and 12 (dimension and zero totality); Chapter 1 opening, printed p.1 / PDF p.26 (the generative rewrite analogy); §20.16 opening, printed p.590 / PDF p.615 (DNA proposal); §20.18 opening, printed p.596 / PDF p.621 (language and universal grammar).
 
+**Pass 3 mesh (2026-09-18 ~16:46 PT).** Coherence mesh on [rowlands-zero-to-infinity-clipboard.md](rowlands-zero-to-infinity-clipboard.md) CONFIRMS agreement with this PAGE 2 KEEP/FORBID and book D2/D3 (commit intent: `Rowlands pass 3: coherence mesh book/five-stakes/map`). “Vacuum tables” = R4 off-shoe physics tables (same tooth as Dirac/TOE); morals unchanged. Emission still `[GAP]`.
+
 **vs reason-model-map.** R1/R2 retain the empty-start and no-extra-rooms comparison. Rowlands asks physics to explain dimension; he does not specify an append-only data store. Likewise, his zero-totality algebra, DNA proposal, and language claims supply no WORD or POINTER operation. These comparisons are kin-readings made by Lace, not construction rules established by Rowlands.
 
 **Contact with the atomic map:** the empty strand and the restriction to one carrier. No algebraic generator is added to APPEND.

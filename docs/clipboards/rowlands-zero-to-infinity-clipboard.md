@@ -76,6 +76,22 @@ T5 five-stakes: **skip** — PAGE 2/5 source pins and morals agree with this PDF
 | T5 five-stakes | **skip** (default) |
 | D7 | **included** — ch.1 generate-from-empty paper algorithm (PDF 30–32); FORBID-as-mutate-WORD; SILENT for Lace append |
 
+## Pass 3 receipt
+
+| Field | Value |
+|---|---|
+| Status | EXECUTED |
+| When | 2026-09-18 ~16:46 PT |
+| Station | clipboards · agent `reference-Mapper` |
+| Plan | [rowlands-pass-3-plan.md](rowlands-pass-3-plan.md) |
+| Hands skim | shoe → graphics A–D → systems-manifest → law → reason-model-map §2 (R1–R6 read-only) → book Pass 1 stamps + Pass 2 D2/D3/D4/D7 → five-stakes PAGE 2/5 |
+| PDF | **PRESENT** — cite Pass 1; optional P3-P pin (vacuum / nilpotent Dirac) |
+| Product | P3-M coherence mesh (book ↔ five-stakes ↔ map R1–R6); P3-5S receipt line; optional P3-P pin |
+| Amended | reason-model-map · law · graphics · src/ · systems-manifest | **No** |
+| Five-stakes | PAGE 2/5 source-check / vacuum=R4 clarify only; KEEP/FORBID morals unchanged |
+| Mesh | all R1–R6 **same tooth**; Φ **same open**; D7 OPENs ≠ Φ fill |
+| Emission | still `[GAP]` |
+
 
 ---
 
@@ -239,6 +255,7 @@ T5 five-stakes: **skip** — PAGE 2/5 source pins and morals agree with this PDF
 - This file does not amend `docs/reason-model-map.md`.
 - **Pass 1 (PDF-sighted)** re-walked A–X against attachment `47022f28…5cc458` via `pdftotext`; offset +25 after front matter CONFIRMED; morals unchanged.
 - **Pass 2** landed D1–D6 leftovers (+ D7 Shadow miniature); A–X morals untouched; Φ still `[GAP]`.
+- **Pass 3** added coherence mesh (book ↔ five-stakes ↔ map R1–R6); five-stakes PAGE 2 receipt + vacuum=R4 wording note; P3-P vacuum pin PDF 99; map untouched; Φ still `[GAP]`.
 
 
 ---
@@ -334,6 +351,37 @@ PDF is **PRESENT** (do not narrate absent). Pass 1 receipt: `refs/local/rowlands
 **[OPEN] (book continues; not settled for Lace):** full cycle tables for every later extension stage; when the generative series stops; any coupling of this alphabet to physics tables — out of scope here. Do **not** finish those from Lace.
 
 **Lace refusal:** this generates alphabets on paper. It does **not** mutate WORD @ i, does **not** append to the strand, and does **not** schedule POINTER emission.
+
+---
+
+## Pass 3 deltas
+
+Pass 1–2 filled A–X and D1–D7. Pass 3 is coherence only: one named mesh across book clipboard, five-stakes PAGE 2/5, and map §2. Emission stays `[GAP]`. D7 OPENs are not Φ fill.
+
+### P3-M — Coherence mesh
+
+| Hands / Piece | Map R# | Book stamp (Pass 1/2) | Five-stakes PAGE 2/5 | Mesh |
+|---|---|---|---|---|
+| Piece 1 / Graphic A1 empty | R1 | CONFIRM KEEP empty start | KEEP empty start (R1) | same tooth |
+| Graphic D one line | R2 | CONFIRM KEEP no extra rooms | KEEP no extra rooms (R2) | same tooth |
+| Piece 2 / Piece 6 (name) | R3 | CONFIRM name clash / FORBID mutate-WORD | FORBID rewrite-as-mutate-WORD | same tooth |
+| no second store / no meaning table | R4 | CONFIRM FORBID TOE/Dirac tables | FORBID TOE / Dirac / vacuum tables | same tooth (note wording) |
+| Piece 9 route ≠ lexicon | R5 | CONFIRM FORBID DNA rewrite | FORBID DNA rewrite tables | same tooth |
+| Piece 9 ≠ stored grammar | R6 | CONFIRM FORBID UG tables | FORBID UG tables | same tooth |
+| POINTER when/arity/adjacency | — | SILENT `[GAP]` (+ D7 OPENs ≠ Φ) | Emission NO `[GAP]` | same open |
+
+**Wording note (R4):** five-stakes “vacuum tables” = map R4 off-shoe physics stack (nilpotent Dirac, vacuum, particle tables) — same tooth as book D2/D3 TOE/Dirac FORBID. Not a new moral.
+
+**OPEN (not amended):** none on R1–R6. `docs/reason-model-map.md` §2 left untouched. D7 cycle-tables / halt / physics-coupling remain book OPENs and do **not** close Φ.
+
+### P3-P — Precision pin
+
+- Preface PDF 10–12 / printed pp.vii–ix: dimension must be explained; zero totality as foundation (already cited Pass 1 A/B; re-sighted).
+- **New soft pin:** “representing vacuum or the rest of the universe” — **PDF 99** / printed ~74 (Dirac-state vicinity); §3.5 “The Nilpotent Dirac Equation” opens **PDF 102** / printed ~77. Strengthens R4 vacuum=Dirac same-tooth note. Morals unchanged.
+
+### P3-5S — Five-stakes
+
+PAGE 2/5: added Pass 3 mesh receipt / source-check line; clarified vacuum=R4 same tooth. KEEP/FORBID rows unchanged.
 
 
 Shoe in hands, or no.

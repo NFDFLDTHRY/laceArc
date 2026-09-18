@@ -1,6 +1,6 @@
 # Rowlands pass 3 — coherence mesh (book ↔ five-stakes ↔ map §2)
 
-**Status:** PLANNED — not executed. Emission `[GAP]`.  
+**Status:** EXECUTED — mesh + five-stakes receipt + P3-P vacuum pin. Emission `[GAP]`.  
 **Station:** clipboards (HELD `reference-Mapper`)  
 **Base at plan:** refresh to current `origin/main` before execute  
 **Book:** Peter Rowlands, *Zero to Infinity* · K&E Vol. 41  
@@ -145,3 +145,17 @@ Ask before push.
 If the three files disagree, expose the row — do not invent Core to pick a winner.  
 D7’s open physics coupling is not a license to close Φ.  
 Φ stays `[GAP]`. Shoe in hands, or no.
+
+---
+
+## Execute receipt
+
+| Field | Value |
+|---|---|
+| Status | EXECUTED |
+| When | 2026-09-18 ~16:46 PT |
+| Station | clipboards · agent `reference-Mapper` |
+| Mesh | R1–R6 same tooth; Φ same open; no map amend |
+| Five-stakes | PAGE 2/5 receipt + vacuum=R4 clarify; KEEP/FORBID unchanged |
+| P3-P | yes — vacuum PDF 99; nilpotent Dirac §3.5 PDF 102 |
+| Emission | still `[GAP]` |
