@@ -104,6 +104,12 @@ Oil inside a gear is not a tooth on the cord.
              v                        v                        v
         internals stay boxed      work only in window      no mesh, no torque
 
+The 2D row above is a FLATTEN.
+The gears STACK in 3D.
+Visual kin: the Sun's observable surface.
+Granules packed and stacked. Flux through a skin.
+The skin is the view. The dynamo is not the drawing.
+
 
 HOLOGRAM TOUCH — Perceived Reality / Story Defense
 --------------------------------------------------
@@ -131,6 +137,8 @@ Suggested Layer III camera. Not Graphic E-G.
   KEEP: floor = projected line; orbs = star-as-seen
   KEEP: arrows are drawn participation
   KEEP: lattice / crossing / traces as altitudes of one view
+  KEEP: gears as 3D STACKS, photosphere-like
+  KEEP: observable surface = view; dynamo stays under
   FORBID: cubes own edges
   FORBID: orbs as Star table
   FORBID: arrows as POINTER emission
@@ -157,6 +165,10 @@ CLOCK  (the same train, counted)
 --------------------------------
 Mainspring = R.  Tape = Graphic D.  Hands = projections.
 Tick = one legal append.  No tick, no cluster change.
+
+  Gears STACK in 3D. Not a flat cog strip.
+  Visual kin: photosphere. Surface is seen.
+  Interior is not the picture.
 
   H dual shaft 1:1
   C five-tooth, tooth 3 impulses the pallet

@@ -771,6 +771,8 @@ Two families.
 
 Dashboard “proof stream” counts are theater. They do not conserve the strand.
 
+The gears themselves **stack**. The 2D H→C→W strip is a flatten. The hologram is photosphere-like: packed 3D cells on an observable surface, flux piercing the skin, dynamo under the drawing. Granule / meso / super is altitude of one train (lattice / crossing / traces), not three stores. Solar MHD does not enter Graphic D.
+
 ### Two oracles (do not fuse)
 
 1. **Shoe in hands** — public, pointable, law. If you cannot do it to a lace, you may not do it to laceArc.

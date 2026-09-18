@@ -45,6 +45,28 @@ More tubes do not add meaning (Graphic C). Strain tensor / energy cascade / loca
 
 ---
 
+## 2.5 Stacks (photosphere mechanic)
+
+The gears are **not** a flat 2D cog train. They stack in 3D.
+
+The visual kin is the Sun’s **observable surface**, not solar interior physics as Core:
+
+| Solar surface mechanic | Clock / Hands reading | Unlawful |
+|---|---|---|
+| Photosphere (what can be seen) | Layer III. Hands. The picture | Treating the surface as the store |
+| Interior dynamo / fusion | R + tape growth. Not in the drawing | MHD as Graphic D |
+| Granules packed on the disk | Gear cells stacked side-by-side and in depth | Granules as objects with edges |
+| Stacked scales (granule / meso / super) | Altitudes of one train: lattice / crossing / traces | Three stores |
+| Flux tube piercing the surface | A route made visible where it crosses the view | POINTER emission |
+| Differential rotation | H 1:1, C five-tooth, W 0-or-1. Different rates, one axle | Separate clocks |
+| Limb darkening / you see a skin | Projection loses interior | “If I can’t see it it isn’t on the tape” |
+
+Draw gears as **stacked 3D cells** on a surface driven from below. Do not flatten H → C → W into a single plane except as a schematic.
+
+The 2D ASCII train in law is a flatten. The hologram is the stack.
+
+---
+
 ## 3. Allowed use
 
 - Draw a worldline when you mean the tape in \(t\).
@@ -53,6 +75,7 @@ More tubes do not add meaning (Graphic C). Strain tensor / energy cascade / loca
 - Draw a split shell when you mean a label split.
 - Draw a torus only to show holder recirculation, and stamp it \([H]\) / \([III]\).
 - Draw a CTC only as the thing the shoe forbids.
+- Draw gears as stacked 3D surface cells, photosphere-like, driven from below.
 
 ## 4. Forbidden use
 
@@ -61,3 +84,5 @@ More tubes do not add meaning (Graphic C). Strain tensor / energy cascade / loca
 - Let diagram \(\phi\) fill emission \(\Phi\).
 - Import GPT-6 / ASTRA / multi-agent lab as a Lace runtime.
 - Close start to halt on the workpiece.
+- Flatten the gearbox into one plane and call that the machine.
+- Import solar MHD, sunspots, or fusion as row types.
