@@ -4,17 +4,28 @@
 
 HCC-A is Gear H: the enclosed driver that compiles Reality into local story, force, self, and behavior. It is not Lace Core. It is not Graphic D. Internals may add, merge, re-index, and delete **their own oil**. Those operations applied to the tape kill Rule Zero.
 
-Source for this manifest: `docs/clock/philosophy-map.md` §1 (H1–H11), with housing/train from the same file’s Gear H and clock sections. Original philosophy attachment is not in git. Hands court remains `docs/graphics/` + `docs/systems-manifest.md`.
+**Pass 1 source (this tick):** attachment `Human Cognitive Compiler Architecture.txt` (HCC-A v1.0). Not in git.  
+**Clipboard being corrected:** this file, first drafted from `docs/clock/philosophy-map.md` §1.  
+Where philosophy-map compressed or dropped a source distinction, **the attachment wins** and this clipboard is updated. Hands court remains `docs/graphics/` + `docs/systems-manifest.md` (Lace).
+
+Author uses: self-mapping, other-mapping, interaction forensics, narrative & relational modeling, sovereign operations.
+
+Author invariant: *every human has these components; differences are parameters, not presence.*
 
 Loop as the source states it:
 
 `R → I → RIC∥PFC → C → L → M → E → ISL → B → R'`
 
+State machine the source also states: S0 Intake → S1 Coexistence & Early Pruning → S2 Compilation → S3 Meaning → S4 Emotion Runtime → S5 Identity Update → S6 Behavior → S7 Feedback → S0.
+
 PFC at step n carries ISL from step n−1. Both RIC and PFC must turn. PFC-only is a locked train.
+
+Closing constraints in the spec: assumes objective reality; respects individual subjective compilation; **forbids meaning transfer**; **restricts communication to structure**.
 
 Stamps on every piece: `[H]` holder oil · `[X]` forbidden as Core mechanism · `[I]` kin-read only · `[GAP]` Hands silent.
 
 This manifest does not close POINTER emission.
+
 
 ---
 
@@ -41,7 +52,7 @@ This manifest does not close POINTER emission.
 
 - **Kind:** Interface
 - **Source location:** §1 H2
-- **Purpose:** Body converts R into raw signals.
+- **Purpose:** Biological and perceptual system (senses, nervous system, body state). Converts Reality → raw internal signals.
 - **Inputs:** R (inaccessible as such).
 - **Outputs:** Raw signals to RIC and PFC in parallel.
 - **Preconditions:** A body / sensor path exists.
@@ -58,7 +69,7 @@ This manifest does not close POINTER emission.
 
 - **Kind:** Mechanism / input shaft
 - **Source location:** §1 H3; Gear H dual shaft
-- **Purpose:** Preserve external structure: “X said Y”, timing, sequence, cause/effect traces.
+- **Purpose:** Preserve external structure as faithfully as possible. Examples in source: “X said Y”, “door closed”, “bank account at $23.14”, timing, sequence, spatial relations, cause/effect traces.
 - **Inputs:** Raw signals from I.
 - **Outputs:** Structured arrival traces into Compiler C, in parallel with PFC.
 - **Preconditions:** I is handing signals. PFC is also turning.
@@ -75,7 +86,7 @@ This manifest does not close POINTER emission.
 
 - **Kind:** Mechanism / input shaft
 - **Source location:** §1 H4; ISL feedback
-- **Purpose:** Same signals through priors, templates, roles, threat models, ideology. Assigns interpretations *before* full compilation.
+- **Purpose:** Same signals routed through priors, templates, roles, threat models, cultural narratives, ideology, religion, fandoms. Apply pre-existing schemas and assign probable interpretations before full compilation. Schema *strength* is a knob (override raw input vs suggest probabilities) — see P1.
 - **Inputs:** Raw signals from I. Priors from ISL_{n−1}.
 - **Outputs:** Pre-interpreted stream into C, in parallel with RIC.
 - **Preconditions:** An identity/prior pack exists or is empty. Empty is still a shaft, not an absence of the shaft.
@@ -109,7 +120,7 @@ This manifest does not close POINTER emission.
 
 - **Kind:** Store (holder oil)
 - **Source location:** §1 H6; opening Rule Zero warning
-- **Purpose:** Internal event log. Supports addition, merging, re-indexing, deletion/suppression. “Ledger is not narrative form.”
+- **Purpose:** Internal event log / ledger. Contains concrete, abstract, imagined, and inferred events. Supports addition, merging, re-indexing, deletion/suppression. “Ledger is not narrative form.” It is the underlying data the mind later uses to construct narrative.
 - **Inputs:** Compiler updates.
 - **Outputs:** Ledger state to Meaning Engine M.
 - **Preconditions:** A compilation occurred or an empty ledger is allowed — source does not freeze the empty case. `[GAP]`
@@ -127,33 +138,33 @@ This manifest does not close POINTER emission.
 - **Kind:** Mechanism
 - **Source location:** §1 H7; project-meaning contrast in philosophy-map
 - **Purpose:** Weights + transitions on the ledger. “Meaning is directive.” Modes: descriptive / evaluative / directive.
-- **Inputs:** L.
-- **Outputs:** Directive / evaluative / descriptive influence toward E, ISL, and B. Directive mode changes what happens next.
+- **Inputs:** Current Ledger (L). Internal value/priorities.
+- **Outputs:** Weights (how important each event/cluster is). Transitions that should change: beliefs, priorities, roles, future expectations, allowed behaviors.
 - **Preconditions:** A ledger to weight.
-- **Effects:** Can stall as commentary (descriptive/evaluative) or turn the loop (directive).
-- **Invariants:** HCC-A M is not this project’s “meaning” (routes / touches / participation).
+- **Effects:** Can stall as commentary (descriptive/evaluative — “most people live here”) or turn the loop (directive — “sovereignty and consistent agency”).
+- **Invariants:** HCC-A M is not this project’s “meaning” (routes / touches / participation). Meaning is directive in the spec: it does not just label.
 - **Failure modes:** Stored gloss as WORD. Directive meaning as POINTER emission. `[X]`
-- **Boundary & Coupling:** **[CONFLICT]** with Core Piece 14. M’s output (weights / must-do) does not match Piece 2’s output (more strand).
+- **Boundary & Coupling:** **[CONFLICT]** with Core Piece 14. M’s output (weights / must-do) does not match Piece 2’s output (more strand). Couples to P2 priority stack and P5 style.
 - **Implementation implications:** Box M. Do not put weights on the tape.
 - **Metaphor / diagnostic role:** Recursion with teeth (directive mode).
-- **Key source language:** “Meaning is directive.” “influences what happens next.”
+- **Key source language:** “Meaning is directive.” “It doesn’t just label; it influences what happens next.”
 - **Hands:** **[CONFLICT]**. `[X]`
 
 ### H8 — Emotion Engine (E)
 
 - **Kind:** Mechanism
 - **Source location:** §1 H8
-- **Purpose:** “Meaning-in-flight.” Not transmissible. Others generate their own E from their M+L.
-- **Inputs:** M + L locally.
+- **Purpose:** “Meaning-in-flight.” Runtime state while M is applying transitions. Not meaning itself, not story, not intent. Experienced internal turbulence or resonance during change. Emotions vanish or settle when transitions complete or stall. Stable meaning → calm. Unstable meaning → turbulence.
+- **Inputs:** M + L locally (source: others generate their own E from their M + L).
 - **Outputs:** Local affect. Not a packet across a mind-boundary.
-- **Preconditions:** Local M+L.
-- **Effects:** None on another mind’s E. None on Graphic D.
+- **Preconditions:** Local M+L. Transitions in flight or stalled.
+- **Effects:** None on another mind’s E. None on Graphic D. Emotion handling *style* (P6) can drive B, rewrite story, re-weight, or ignore.
 - **Invariants:** Only structure is transmissible. E stays in the box.
 - **Failure modes:** E rows. Transmitting E as if it were structure.
-- **Boundary & Coupling:** Kin of a negation shared with Cup/Water: only structure crosses. Off-shoe as storage.
+- **Boundary & Coupling:** Kin of a negation shared with Cup/Water: only structure crosses. Off-shoe as storage. Couples to P6 (decision-driving / story-rewriting / re-weighting / ignorable).
 - **Implementation implications:** Do not store E.
 - **Metaphor / diagnostic role:** Heat in the case, not a shaft.
-- **Key source language:** Not transmissible.
+- **Key source language:** “Emotions are not transmissible. Only structure is.”
 - **Hands:** off-shoe. `[H]`
 
 ### H9 — Identity Shaping Layer (ISL)
@@ -161,16 +172,16 @@ This manifest does not close POINTER emission.
 - **Kind:** Mechanism / compressor
 - **Source location:** §1 H9; loop `ISL_n → PFC_{n+1}`
 - **Purpose:** Compression into “what kind of agent am I.” Updated rules/priors for future compilation.
-- **Inputs:** M, E, L residue after a revolution.
-- **Outputs:** Prior pack installed as next PFC.
-- **Preconditions:** A compilation cycle completed enough to compress — exact halt `[GAP]`.
-- **Effects:** Changes the next PFC. Does not change a star.
+- **Inputs:** Ledger state. Meaning weights and transitions. Emotional patterns over time.
+- **Outputs:** Current identity snapshot. Updated rules/priors for future compilation.
+- **Preconditions:** Integration across story + meaning + repeated emotional patterns — source names the ingredients; exact halt clock `[GAP]`.
+- **Effects:** Changes the next PFC. Does not change a star. Identity is not aesthetics or self-descriptions; it is “what kind of agent am I in this world?”
 - **Invariants:** Identity snapshot is not a star. A star is wraps through a word.
 - **Failure modes:** ISL as star table. YAML person_model as owner of WORD identity.
-- **Boundary & Coupling:** Closed loop with H4. High state coupling across revolutions. Off-shoe.
+- **Boundary & Coupling:** Closed loop with H4. High state coupling across revolutions. Off-shoe. Style knob is P7 (coherent / fragmented / scripted / aesthetic / sovereign).
 - **Implementation implications:** Do not implement “self” as an array type.
 - **Metaphor / diagnostic role:** Flywheel that loads the next PFC tooth.
-- **Key source language:** “Updated rules/priors for future compilation.”
+- **Key source language:** Compression/synchronization layer. “what kind of agent am I in this world?”
 - **Hands:** off-shoe. `[H]` / `[X]` if stored as star.
 
 ### H10 — Behavior (B) + Feedback
@@ -178,34 +189,108 @@ This manifest does not close POINTER emission.
 - **Kind:** Interface / output shaft
 - **Source location:** §1 H10; Gear H “OUTPUT SHAFT = B only”
 - **Purpose:** Only directly observable part of the loop. Behavior alters Reality; loop restarts.
-- **Inputs:** Compiled local state (M/E/ISL as the source bundles them). Exact bundle `[GAP]` if we pretend a wire format.
-- **Outputs:** Acts in the world. The only thing that may change R, and therefore the only thing that may *request* “more strand.”
-- **Preconditions:** A compilation that produced an act — or a halt. Halt is legal. Grind is not a tick (that is Water; do not import as HCC output type).
-- **Effects:** R changes. Next RIC may see new structure.
-- **Invariants:** B is not a rewrite of old rows. B is not POINTER.
+- **Inputs:** Identity snapshot (ISL). Current Meaning transitions. Current emotional state. Active templates and constraints.
+- **Outputs:** External observable actions. Source examples: words spoken or withheld; physical actions; silence / freeze; jokes, escalation, retreat, attack, fawn.
+- **Preconditions:** S6 in the state machine. Source does not require a “successful” compile — freeze is a B.
+- **Effects:** R changes (S7). Next RIC may see new structure.
+- **Invariants:** B is the only directly observable part of the loop. B is not a rewrite of old rows. B is not POINTER.
 - **Failure modes:** Behavior as in-place edit of Graphic D. Behavior as emission rule.
-- **Boundary & Coupling:** Only legal mesh from H toward Cup tooth 2–3 is an act in time. Adjacent to AgentScope’s action dimension (holder output).
+- **Boundary & Coupling:** Only legal mesh from H toward Cup tooth 2–3 is an act in time. Adjacent to AgentScope’s action dimension (holder output). The first-draft `[GAP]` on the B bundle is **closed by the attachment** (four named inputs).
 - **Implementation implications:** Diagnose the steward’s B. Do not emit POINTER because B happened.
 - **Metaphor / diagnostic role:** Single output shaft from the case.
-- **Key source language:** Only directly observable part. Behavior alters Reality.
+- **Key source language:** “Behavior is the only directly observable part of the loop.”
 - **Hands:** adjacent. `[H]`
 
-### H11 — Six-act stack / YAML person_model
+### H11 — Spec schema (YAML person_model + event_trace)
 
 - **Kind:** Parameter set / diagnostic wrapper
-- **Source location:** §1 H11
-- **Purpose:** Scene, story update, meaning, identity, behavior, world-rule. Per-person parameter sheet.
-- **Inputs:** A person to sheet.
-- **Outputs:** Steward forensics sheet.
-- **Preconditions:** Forensic use, not storage authority.
+- **Source location:** attachment §6
+- **Purpose:** Per-person or per-event config sheet. `schema_version: HCC-A-1.0`. Not a process layer (those are Acts) and not a knob (those are P).
+- **Inputs:** A person or event to sheet.
+- **Outputs:** Filled `person_model` + optional `event_trace` (act_I … act_VI fields).
+- **Preconditions:** Forensic / sovereign-ops use, not storage authority over Graphic D.
 - **Effects:** None on Graphic D if kept as a sheet. Second store if it owns WORD identity.
-- **Invariants:** Wrapper around H5–H10, not a twelfth Core type.
+- **Invariants:** Wrapper over P + Acts + H5–H10. Same spec, different parameters.
 - **Failure modes:** YAML as second store.
-- **Boundary & Coupling:** Narrative wrapper over H. Dependent layer, not a clean module.
-- **Implementation implications:** Keep off the array.
-- **Metaphor / diagnostic role:** Spec of depth-1 that includes feedback 0←1.
-- **Key source language:** Per-person parameter sheet.
+- **Boundary & Coupling:** Dependent layer. YAML names two arbitration axes the first clipboard collapsed into one: `raw_vs_template` and `identity_vs_reality`.
+- **Implementation implications:** Keep off the array. Do not git-add private person sheets.
+- **Metaphor / diagnostic role:** Clipboard for a mind, not a lace.
+- **Key source language:** “Same spec, different parameters.”
 - **Hands:** adjacent steward; conflict if second store. `[H]` / `[X]`
+
+### SM — State machine S0–S7
+
+- **Kind:** Stage / loop
+- **Source location:** attachment §3
+- **Purpose:** Universal loop any mind runs. Not a second ontology; it is H1–H10 in time.
+- **Inputs / Outputs by stage:**
+  - S0 Intake — I from R; RIC raw structured events; PFC priors on the same events
+  - S1 Coexistence & Early Pruning — both shafts active; drop sensory/noise; tag threat / irrelevant / opportunity
+  - S2 Compilation — C takes {RIC, PFC} → L: add, merge, *reclassify*
+  - S3 Meaning — M on L: what matters, how much, what must change → weights + intended transitions
+  - S4 Emotion Runtime — felt meaning-in-motion; stable→calm; unstable→turbulence
+  - S5 Identity Update — “Who am I now, given this?”
+  - S6 Behavior — action from identity + meaning + emotion + constraints/templates
+  - S7 Feedback — B changes outer structure; new conditions into S0
+- **Preconditions:** Components present (author: differences are parameters, not presence).
+- **Effects:** One revolution of oil. Zero array writes.
+- **Invariants:** S1 is a real stage the first clipboard omitted. S2 “reclassify” is a ledger op alongside add/merge.
+- **Failure modes:** Treating S* as Graphic D row types. Skipping S1 so PFC looks serial.
+- **Boundary & Coupling:** Entangled with H3–H10. SM is the clock of the same mill, not a second mill.
+- **Implementation implications:** Do not implement S0–S7 as array enums.
+- **Metaphor / diagnostic role:** Going train inside the case.
+- **Key source language:** “Universal loop any mind runs.”
+- **Hands:** `[H]` / `[X]` as Core stages.
+
+### P — Parameter space (how individuals differ)
+
+- **Kind:** Parameter set
+- **Source location:** attachment §4
+- **Purpose:** Same machine; different settings. Knobs, not extra components.
+- **Knobs:**
+  - **P1 Template / Schema Library (PFC content)** — schemas for love, conflict, success, failure, authority, self, others. Strength: override raw input vs suggest probabilities.
+  - **P2 Priority Stack** — when conflict, what is preserved first. Source list: coherence, comfort, belonging, control, safety, novelty, power, harmony, image, autonomy, truth, sovereignty, status, peace.
+  - **P3 Pruning Strategy** — where data loss happens: perceptual (S0), pre-filter (S1), post-compile (S3–S5: revise/erase/reframe/down-weight).
+  - **P4 Arbitration** — RIC-dominant / PFC-dominant / coherence-dominant (Compiler) / identity-dominant (ISL). YAML splits this into `raw_vs_template` and `identity_vs_reality`.
+  - **P5 Meaning Engine Style** — descriptive / evaluative / directive. Most people live in the first two. Directive is where sovereignty and consistent agency come from.
+  - **P6 Emotion Handling Style** — decision-driving (Mode D); story-rewriting (Mode C); re-weighting (Mode B); ignorable. Mixtures allowed. YAML `dominant_transition`: reindex|reweight|rewrite|decide|ignore.
+  - **P7 Identity Mode** — coherent / fragmented / scripted / aesthetic / sovereign.
+- **Inputs:** A person.
+- **Outputs:** Settings that modulate H3–H10. Not new shafts.
+- **Preconditions:** Components already present.
+- **Effects:** Changes *how* oil moves, not whether the mill exists.
+- **Invariants:** Parameters ≠ presence.
+- **Failure modes:** Turning a knob into a Core type. Treating P6 “rewrite” as license to rewrite Graphic D.
+- **Boundary & Coupling:** Cross-cuts every internal piece. P4 was listed as `[GAP]` procedure; source still gives no numeric algorithm — modes only. Procedure remains `[GAP]`; *mode names* are not `[GAP]`.
+- **Implementation implications:** Kit/forensics only.
+- **Metaphor / diagnostic role:** Gear ratios, not extra gears.
+- **Key source language:** “Same machine; different settings.”
+- **Hands:** `[H]`
+
+### Acts — Six-act stack (process layers)
+
+- **Kind:** Stage / diagnostic play
+- **Source location:** attachment §5
+- **Purpose:** Reusable play any mind runs when processing an event. Acts are **process layers, not content**.
+- **Stage assumptions (source):** Reality exists and constrains. Only structure crosses between minds. Meaning and story are local. RIC + PFC run in parallel. Full loop (C, L, M, E, ISL, B) is present.
+- **Acts:**
+  - I Scene & Stakes — “What world am I in?” RIC captures; PFC names scene type. Output: perceived stakes + roles
+  - II Story Update — “What just got added to my story?” add / merge / re-tag; PFC may distort or gate
+  - III Meaning & Emotion — “What does this mean for me?”
+  - IV Identity Integration — “What does this say about who I am?”
+  - V Behavior Emission — “What do I do now?”
+  - VI World Model & Template Update — “What did this teach me about the world?” PFC templates entrenched / weakened / split
+- **Inputs:** An event or interaction.
+- **Outputs:** Diagnostic answers + Act VI template change into next PFC.
+- **Preconditions:** Stage assumptions above.
+- **Effects:** Act VI writes priors (oil). Not Graphic D.
+- **Invariants:** Acts align to SM S0–S7 but are the *play* framing, not a second machine.
+- **Failure modes:** Acts as WORD types. Act II merge as array merge.
+- **Boundary & Coupling:** Maps onto SM + H. Act VI couples to P1. Dependent diagnostic layer.
+- **Implementation implications:** Steward questions only.
+- **Metaphor / diagnostic role:** Script of one revolution.
+- **Key source language:** “Acts are process layers, not content.”
+- **Hands:** `[H]` / `[X]` if stored as rows.
 
 ---
 
@@ -219,12 +304,12 @@ Flow inside the box:
 |---|---|---|
 | I → RIC | raw signals | source-stated |
 | I → PFC | same signals + priors | source-stated |
-| RIC/PFC → C | structure + pre-interpretation | source-stated; arbiter algorithm `[GAP]` |
-| C → L | story update | source-stated |
-| L → M | ledger | source-stated |
+| RIC/PFC → C | structure + pre-interpretation | source-stated; numeric arbiter `[GAP]`; modes named (P4) |
+| C → L | add / merge / reclassify | source-stated S2 |
+| L → M | ledger + internal value/priorities | source-stated; first clipboard dropped priorities |
 | M → E | meaning-in-flight locally | source-stated |
-| * → ISL | compression inputs | bundled; exact tuple `[GAP]` |
-| ISL → PFC next | priors | source-stated |
+| L+M+E-patterns → ISL | three named inputs | source-stated; first-clipboard tuple `[GAP]` **closed** |
+| ISL → PFC next | priors / templates entrenched, weakened, or split (Act VI) | source-stated |
 | B → R | acts | source-stated |
 | L → Graphic D | “revised ledger” | **does not match** Piece 6. `[CONFLICT]` |
 | M → Graphic D | weights / must-do | **does not match** Piece 2. `[CONFLICT]` |
@@ -239,7 +324,7 @@ Failure propagation:
 - H9 as star → self row.
 - H10 as emission → `[GAP]` falsely closed.
 
-Arbitration (RIC-dominant / PFC-dominant / compiler / identity) is which depth may correct which. Exact switching rule `[GAP]` in the in-repo map.
+Arbitration modes are named (P4). Numeric switching rule remains `[GAP]`. Two YAML axes: raw_vs_template and identity_vs_reality — first clipboard had collapsed them.
 
 ---
 
@@ -286,9 +371,10 @@ Candidate cuts (ranked):
 1. **H as one contract** (strong). Internals stay fused. This is the cut philosophy-map already chose.
 2. **B as a dependent interface layer** over H (weak). B cannot function without the box. Low state coupling to Core, high dependency coupling on H.
 3. **R as the world** (not a software contract).
-4. **H11 YAML** as optional diagnostic wrapper over H (dependent layer).
-5. **Do not cut** L, M, C from each other. That would invent wires the source treats as one mill.
-6. **Do not cut** H into Graphic D. That is the rejected “cognitive compiler service inside the 1D array.”
+4. **H11 YAML + Acts** as optional diagnostic wrappers over H (dependent layers).
+5. **P knobs** as configuration of H, not sibling contracts.
+6. **Do not cut** L, M, C from each other. That would invent wires the source treats as one mill.
+7. **Do not cut** H into Graphic D. That is the rejected “cognitive compiler service inside the 1D array.”
 
 Dependency coupling to Core is high (nothing to operate upon without the workpiece). State coupling to Core must stay **zero**.
 
@@ -296,17 +382,15 @@ Dependency coupling to Core is high (nothing to operate upon without the workpie
 
 ## Cross-Cutting Parameters & Variation
 
-- Arbitration mode: RIC-dominant / PFC-dominant / compiler / identity.
-- M mode: descriptive / evaluative / directive.
-- ISL prior pack (content of next PFC).
-- Six-act / YAML person_model fields (H11).
-- `[GAP]` OBS/INVALID/UNK belong to Water, not this compiler. Do not fill them here.
+See piece **P**. First clipboard listed four bullets. Attachment has seven knobs, a priority vocabulary, three pruning sites, two arbitration axes, four emotion-handling styles, five identity modes.
+
+`[GAP]` OBS/INVALID/UNK belong to Water, not this compiler. Do not fill them here.
 
 ---
 
 ## Purpose, Assumptions & Diagnostic Use
 
-HCC-A is self-mapping / other-mapping / interaction forensics. In laceArc it diagnoses the **holder** who operates upon the lace. It does not grow the lace.
+HCC-A is self-mapping / other-mapping / interaction forensics / narrative & relational modeling / **sovereign operations**. In laceArc it diagnoses the **holder** who operates upon the lace. It does not grow the lace.
 
 Assumptions imported from Hands, not from HCC-A:
 
@@ -321,10 +405,36 @@ Diagnostic use: hear wrong mesh (PFC-only, ledger-delete-on-tape, M as WORD) bef
 ## Open Questions or Remaining Design Degrees of Freedom
 
 - POINTER when / arity / adjacency — Hands `[GAP]`. Not an HCC degree of freedom.
-- Exact RIC/PFC arbiter algorithm — named modes, no procedure in-repo. `[GAP]`
-- Exact ISL halt / compression tuple. `[GAP]`
-- Original HCC-A attachment text is not in git; this manifest is bound to philosophy-map §1. Re-open if the attachment is staked as Hands.
+- Numeric RIC/PFC switching procedure — modes named; procedure still `[GAP]`.
+- Original HCC-A attachment is **not** in git (pass 1 read it from workspace attachments). Do not `git add` the txt.
 - Cup and Water mesh tables live in philosophy-map, not here.
+
+---
+
+## Pass 1 clipboard deltas (attachment vs first draft)
+
+| First clipboard | Attachment | Action |
+|---|---|---|
+| Source = philosophy-map only | HCC-A v1.0 txt | rebound |
+| I = “body” | senses, nervous system, body state | updated H2 |
+| RIC examples thin | door / account / spatial | updated H3 |
+| PFC list short | religion, fandoms; strength knob | updated H4 + P1 |
+| L = ops only | also concrete/abstract/imagined/inferred; S2 reclassify | updated H6 + SM |
+| M input = L only | + internal value/priorities; transition targets listed | updated H7 |
+| E thin | vanish/settle; calm/turbulence; not intent | updated H8 |
+| ISL inputs `[GAP]` | L + weights/transitions + emotional patterns | closed |
+| B bundle `[GAP]` | four named inputs + act examples | closed |
+| No S1 | Coexistence & Early Pruning | added SM |
+| One arbitration axis | raw_vs_template **and** identity_vs_reality | added P4 |
+| No priority vocabulary | listed stack | added P2 |
+| No pruning sites | S0 / S1 / S3–S5 | added P3 |
+| No emotion-handling styles | D/C/B/ignore | added P6 |
+| No identity modes | five styles | added P7 |
+| Six-act collapsed into YAML | process layers ≠ content; Act VI splits templates | added Acts |
+| Uses = forensics | + sovereign operations | updated purpose |
+
+None of these deltas license L/M ops on Graphic D. Emission remains `[GAP]`.
+
 
 ---
 
