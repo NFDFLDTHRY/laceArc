@@ -337,7 +337,7 @@ READING ORDER WHEN A DOCUMENT IS IN THE WORKSPACE
     1. shoe in hands
     2. four graphics
     3. docs/systems-manifest.md
-    4. docs/reason-model-map.md or docs/philosophy-map.md
+    4. docs/reason-model-map.md or docs/clock/philosophy-map.md
        or docs/history/history-recovered-2026-09-18.md
        or docs/history/history-recovered-pass-2-2026-09-18.md
        or docs/history/history-recovered-pass-3-2026-09-18.md

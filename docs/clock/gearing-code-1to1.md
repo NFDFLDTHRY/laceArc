@@ -4,14 +4,14 @@ Layer III. Hands win on Core. POINTER emission = `[GAP]`. **NO `src/` yet.**
 Product of this pass: table + orphans. Not Core. Not a second store.
 
 Authority read:
-- `docs/shadow-clock-gear-contracts.md`
+- `docs/clock/shadow-clock-gear-contracts.md`
 - `docs/gearing/contracts-*.js` (eight shafts)
 - `docs/shadow-clock-gearing.html` (frozen renderer)
 - `docs/rust-nostd-crate-map.md` (plan; on main)
 - `docs/rust-nostd-branch-contracts.md` (plan cards; on main)
 - `docs/pointer-emission.md` (DRAFT questions only; not accepted)
 - `docs/shadow-clock-gearing.html` HUD: screen-fixed rail after `f995e44` (not world-projected onto teeth)
-- `docs/system-mathematical-model.md`
+- `docs/clock/system-mathematical-model.md`
 
 ```
 fetch/ff main

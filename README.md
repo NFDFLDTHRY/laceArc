@@ -22,13 +22,14 @@ Same rule. Same strand. 3D stars and N-dimensional participation are readings of
 
 ## What this repo contains
 
-Shelves (defrag pass 1–2). Hands stay at `docs/` root. Do not treat a prompt, clipboard, or recovery as Graphic D.
+Shelves (defrag pass 1–3). Hands stay at `docs/` root. Do not treat a prompt, clipboard, clock cube, or recovery as Graphic D.
 
 | Shelf | Path | What it is |
 |---|---|---|
 | Hands | [docs/graphics/](docs/graphics/), manifest, law, staking, reason-model-map, close-reading | Source of record |
 | Open `[GAP]` | [docs/pointer-emission.md](docs/pointer-emission.md) | DRAFT questions. Not accepted |
-| Shadow | [docs/gearing/](docs/gearing/), shadow-clock-*, [docs/hologram/](docs/hologram/) | Holder clock. Cubes ≠ rows |
+| Shadow prose | [docs/clock/](docs/clock/) | Holder contracts and math. Not Core |
+| Shadow view | [docs/shadow-clock-gearing.html](docs/shadow-clock-gearing.html), [docs/gearing/](docs/gearing/), [docs/hologram/](docs/hologram/) | Renderer + shafts + templates. Cubes ≠ rows |
 | History | [docs/history/](docs/history/) | Recoveries. Do not revive walkers |
 | Prompts | [docs/prompts/](docs/prompts/) | Agent tickets. Not law |
 | Clipboards | [docs/clipboards/](docs/clipboards/) | KEEP/FORBID. Petersen unfilled |
@@ -39,14 +40,14 @@ Shelves (defrag pass 1–2). Hands stay at `docs/` root. Do not treat a prompt, 
 | [docs/graphics/](docs/graphics/) | Canonical source graphics. These define the project. |
 | [docs/systems-manifest.md](docs/systems-manifest.md) | Contract map extracted from those graphics: pieces, couplings, seams, open gaps. |
 | [docs/graphics-close-reading.md](docs/graphics-close-reading.md) | Row-level second pass over panel D1. What the eleven rows close, and three gaps they open. |
-| [docs/agent-interaction-model.md](docs/agent-interaction-model.md) | [PROPOSAL] How several agents mesh: the elephant clock. Stewards only, never Core concurrency. |
-| [docs/shadow-clock-gear-contracts-second-reading.md](docs/shadow-clock-gear-contracts-second-reading.md) | [PROPOSAL] Bounded counter-reading of the gear contracts. Five findings outstanding; one absorbed by the primary. |
+| [docs/clock/agent-interaction-model.md](docs/clock/agent-interaction-model.md) | [PROPOSAL] How several agents mesh: the elephant clock. Stewards only, never Core concurrency. |
+| [docs/clock/shadow-clock-gear-contracts-second-reading.md](docs/clock/shadow-clock-gear-contracts-second-reading.md) | [PROPOSAL] Bounded counter-reading of the gear contracts. Five findings outstanding; one absorbed by the primary. |
 | [docs/law-why-these-documents.md](docs/law-why-these-documents.md) | Repo law: why the five adjacent documents were staked, and the only allowed implementation posture (Rust `no_std`, zero foreign deps). |
 | [docs/staking-the-workspace.md](docs/staking-the-workspace.md) | Exact Hands vs Shadow staking ASCII (companion to law-why). |
-| [docs/shadow-clock-hologram.md](docs/shadow-clock-hologram.md) | Holder machine {A,B,C} clock hologram; gears traced to contract boundary. Shadow only. |
-| [docs/shadow-clock-agent-brief.md](docs/shadow-clock-agent-brief.md) | Standing brief for agents: define gear interaction contracts and walk all sources. |
-| [docs/shadow-clock-gear-contracts.md](docs/shadow-clock-gear-contracts.md) | Walk artifact: every mesh contracted, stamped, cited. Shadow only. |
-| [docs/system-mathematical-model.md](docs/system-mathematical-model.md) | Dual-universe formal model: Hands Contract I + Shadow {A,B,C}; emission sealed [GAP]. |
+| [docs/clock/shadow-clock-hologram.md](docs/clock/shadow-clock-hologram.md) | Holder machine {A,B,C} clock hologram; gears traced to contract boundary. Shadow only. |
+| [docs/clock/shadow-clock-agent-brief.md](docs/clock/shadow-clock-agent-brief.md) | Standing brief for agents: define gear interaction contracts and walk all sources. |
+| [docs/clock/shadow-clock-gear-contracts.md](docs/clock/shadow-clock-gear-contracts.md) | Walk artifact: every mesh contracted, stamped, cited. Shadow only. |
+| [docs/clock/system-mathematical-model.md](docs/clock/system-mathematical-model.md) | Dual-universe formal model: Hands Contract I + Shadow {A,B,C}; emission sealed [GAP]. |
 | [docs/shadow-clock-gearing.html](docs/shadow-clock-gearing.html) | Interactive Layer-III projection: {A,B,C} as physical clock gearing + mesh contracts — **WebGPU 3D required** (Chrome Android flags; no 2D primary view; raw.githack). |
 | [docs/gearing/](docs/gearing/) | Shared-interactive Layer-III contract data (`window.LACE_CONTRACTS` additive scripts). |
 | [docs/gearing/CLAIMS.md](docs/gearing/CLAIMS.md) | Multi-agent shaft claim/release protocol for Shadow gearing (Layer III). |
@@ -67,7 +68,7 @@ Shelves (defrag pass 1–2). Hands stay at `docs/` root. Do not treat a prompt, 
 | [docs/prompts/coherence-audit-prompt.md](docs/prompts/coherence-audit-prompt.md) | Agent prompt: standing coherence audit (update docs as you go; emission [GAP]). |
 | [docs/coherence-audit-log.md](docs/coherence-audit-log.md) | Append-only coherence audit tick log. |
 | [docs/prompts/shadow-clock-shared-interactive-prompt.md](docs/prompts/shadow-clock-shared-interactive-prompt.md) | Prompt that defined the shared-interactive gearing architecture (Layer III). |
-| [docs/system-mathematical-model.md](docs/system-mathematical-model.md) | Two-algebra model: Hands L and Shadow H. Emission remains [GAP]. |
+| [docs/clock/system-mathematical-model.md](docs/clock/system-mathematical-model.md) | Two-algebra model: Hands L and Shadow H. Emission remains [GAP]. |
 | [LICENSE](LICENSE) | Apache-2.0 |
 | [AGENTS.md](AGENTS.md) | Standing orders for any Grok / Grok Bot / Grok Build session in this tree. |
 | [CLAUDE.md](CLAUDE.md) | Pointer that loads those standing orders into Claude Code sessions. |
@@ -82,9 +83,9 @@ Shelves (defrag pass 1–2). Hands stay at `docs/` root. Do not treat a prompt, 
 | [docs/clipboards/agentscope-clipboard.md](docs/clipboards/agentscope-clipboard.md) | AgentScope taxonomy for the HOLDER. ReAG stays off Graphic D. Not Core. |
 | [docs/rust-nostd-crate-map.md](docs/rust-nostd-crate-map.md) | Plan map of first-party `#![no_std]` doors. No `src/`. Emission sealed. |
 | [docs/rust-nostd-branch-contracts.md](docs/rust-nostd-branch-contracts.md) | Plan: seven `#![no_std]` branch contract cards (serial proof gates). No `src/`. |
-| [docs/gearing-code-1to1.md](docs/gearing-code-1to1.md) | 47 visual keys ↔ planned Shadow units. Chip-only drift noted. Not Core. |
+| [docs/clock/gearing-code-1to1.md](docs/clock/gearing-code-1to1.md) | 47 visual keys ↔ planned Shadow units. Chip-only drift noted. Not Core. |
 | [docs/pointer-emission.md](docs/pointer-emission.md) | DRAFT questions only. Not accepted. Emission remains [GAP]. |
-| [docs/philosophy-map.md](docs/philosophy-map.md) | HCC-A, Coffee Cup, Water as the clock-gearbox. Clusters by tick. Not Core rows. |
+| [docs/clock/philosophy-map.md](docs/clock/philosophy-map.md) | HCC-A, Coffee Cup, Water as the clock-gearbox. Clusters by tick. Not Core rows. |
 | [docs/hologram/](docs/hologram/) | Hologram touches (PR / Story Defense). Shadow. Not Graphic E. |
 | [docs/history/history-recovered-2026-09-18.md](docs/history/history-recovered-2026-09-18.md) | Recovered June–September history against current law. Rejected walkers stay rejected. |
 | [docs/history/history-recovered-pass-2-2026-09-18.md](docs/history/history-recovered-pass-2-2026-09-18.md) | Pass 2: No Containers, scheduler, card-number mismatch, C machine. Not Core. |

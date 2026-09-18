@@ -4,7 +4,7 @@
 visible as a control change, and its own result cannot authorise it. This file
 proposes how **stewards mesh with each other**. Only the human accepts it.
 
-**Grounding** (C01). Existing clock read from `docs/philosophy-map.md` lines
+**Grounding** (C01). Existing clock read from `docs/clock/philosophy-map.md` lines
 147-250 at commit `cfdaa24`: `VISUALLY_OBSERVED`. The collision in §2 is
 `OBSERVED` — it happened in this repository and is in the history. Physical
 cord: `NOT_PERFORMED`. Human acceptance: `ABSENT`.
@@ -21,7 +21,7 @@ see §7, which is the hardest rule in this file.
 branch, a designated editor. It does not say what happens when **several agents
 are already inside the repository at once**, which is the actual condition here.
 
-The repository already contains a clock. `docs/philosophy-map.md` builds a going
+The repository already contains a clock. `docs/clock/philosophy-map.md` builds a going
 train — mainspring, case gear H, phase wheel C, escapement W, tape, dial — and
 gives the escapement a law: **0 or 1 tick per attempt**, where a `drop` is a
 legal advance and a `grind` is power without mesh.
@@ -44,7 +44,7 @@ word.
 
 ## 2. The failure this is built from
 
-Not hypothetical. On 18 September two agents wrote `docs/philosophy-map.md`
+Not hypothetical. On 18 September two agents wrote `docs/clock/philosophy-map.md`
 simultaneously. One branched at `42cc4fb`, never re-checked the base, and
 published four commits while `main` advanced twelve. The other produced 686 lines
 on the same subject. The first version was dropped (this branch) because it would
@@ -298,6 +298,6 @@ adjudicates, and C02 says no agent can. The honest answer is that it waits for
 the mainspring, which does not scale — but inventing an adjudicator here would be
 exactly the machinery the audit warns about.
 
-**[CONFLICT]** None known between this file and `docs/philosophy-map.md`'s clock.
+**[CONFLICT]** None known between this file and `docs/clock/philosophy-map.md`'s clock.
 Vocabulary is deliberately shared. If the two ever disagree about what `drop`,
 `grind`, or `locked` mean, `philosophy-map.md` is the older use and wins.

@@ -1,7 +1,8 @@
 # Defrag plan (PREPARE only)
 
-Status: **PASS 1 on main `94cdba8`. PASS 2 DONE locally** (clipboards + kit). Not committed until asked.
-POINTER emission stays `[GAP]`. Tip at pass-2 start: `33b7e79`.
+Status: **PASS 1 `94cdba8`. PASS 2 `f1adf2d`. HTML restyle `12e4021`.**
+PASS 3 DONE locally — Shadow prose in `docs/clock/`; HTML / gearing / hologram unmoved.
+Not committed until asked. POINTER emission stays `[GAP]`.
 
 Shoe test: filing, not wrapping the cord.
 
@@ -157,4 +158,72 @@ One commit. Message: shelves only. No HTML. No `src/`. No `[GAP]` fill.
 ### After
 
 Stop. Pass 3 is clock path (`docs/clock/` vs leave), not this.
+
+---
+
+## PASS 3 PLAN (Shadow clock path) — do not run until “go pass 3”
+
+Question from the original plan: `docs/clock/` vs leave.
+
+**Locked recommendation: split.** Move Shadow *prose*. Do **not** move the renderer or `docs/gearing/`.
+
+Why not move HTML / gearing / hologram images:
+
+- `shadow-clock-gearing.html` loads `gearing/contracts-*.js` and `hologram/clockwork-view-*` by relative path.
+- GitHack URL in README is `docs/shadow-clock-gearing.html`.
+- Claim/resync scripts live next to the JS shafts.
+- Cubes staying beside hologram templates is the right category. A `docs/clock/` dump of the `.html` would look like Core.
+
+### Move (`git mv`) → `docs/clock/`
+
+```
+shadow-clock-agent-brief.md
+shadow-clock-gear-contracts.md
+shadow-clock-gear-contracts-second-reading.md
+shadow-clock-hologram.md
+gearing-code-1to1.md
+philosophy-map.md
+agent-interaction-model.md
+system-mathematical-model.md
+README.md   (new door: Layer III prose; HTML stays put; cubes ≠ rows)
+```
+
+`system-mathematical-model.md` is dual-universe. It goes with Shadow formalization, not Hands. First line already seals `[GAP]`.
+
+### Leave
+
+| Path | Why |
+|---|---|
+| `docs/shadow-clock-gearing.html` | relative scripts + githack |
+| `docs/gearing/` | shaft JS + CLAIMS + RESYNC |
+| `docs/hologram/` | already a shelf |
+| Hands root | graphics, manifest, law, staking, reason-model-map, close-reading, pointer-emission, references |
+| rust-nostd-* | stay at `docs/` |
+| coherence-audit-log.md | live log at root |
+| `src/` | still absent |
+
+### Same-commit text only
+
+1. `docs/clock/README.md`: Layer III; not Core; emission `[GAP]`; link to HTML and `docs/gearing/`.
+2. README shelf Shadow row: prose → `docs/clock/`; view → HTML + gearing + hologram.
+3. No RESYNC CLEAR unless you say CLEAR.
+4. No inventing `lace-projection-brief.md`.
+5. Second gear-contracts reading stays `[PROPOSAL]`.
+
+### Link blast
+
+`docs/shadow-clock-*.md` → `docs/clock/shadow-clock-*.md`  
+`docs/clock/gearing-code-1to1.md` → `docs/clock/gearing-code-1to1.md`  
+`docs/clock/philosophy-map.md` / `agent-interaction-model.md` / `system-mathematical-model.md` same pattern.
+
+Do **not** rewrite `script src="gearing/..."`.
+
+### Commit shape
+
+One commit. Shelves only. No pixel pass. No `src/`. No `[GAP]` fill.
+
+### After
+
+Stop. There is no pass 4 in this plan unless you name one (rust door pick, RESYNC CLEAR, Petersen fill).
+
 

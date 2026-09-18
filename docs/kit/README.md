@@ -8,4 +8,4 @@ Portable steward controls. Not Hands. Not Graphic D.
 - `downstream-audit.md` — failure paths
 - `grok-bot-profile.md` — paste profile
 
-`docs/agent-interaction-model.md` stays outside this shelf (elephant clock proposal).
+`docs/clock/agent-interaction-model.md` stays outside this shelf (elephant clock proposal).

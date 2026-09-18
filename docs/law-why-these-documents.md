@@ -6,7 +6,7 @@ Source of record remains `docs/graphics/`.
 The five academic documents remain adjacent. They do not enter Core.
 Three philosophical texts (HCC-A, Coffee Cup, Water/Proofing) are the gearbox. They do not enter Core as rows.
 History extracts do not amend this law and do not revive walkers.
-See `docs/reason-model-map.md`, `docs/philosophy-map.md`, `docs/history/history-recovered-2026-09-18.md`, `docs/history/history-recovered-pass-2-2026-09-18.md`, `docs/history/history-recovered-pass-3-2026-09-18.md`, `docs/history/history-recovered-pass-4-2026-09-18.md`, `docs/history/history-recovered-pass-5-2026-09-18.md`, `docs/history/history-recovered-pass-5-sit.md`.
+See `docs/reason-model-map.md`, `docs/clock/philosophy-map.md`, `docs/history/history-recovered-2026-09-18.md`, `docs/history/history-recovered-pass-2-2026-09-18.md`, `docs/history/history-recovered-pass-3-2026-09-18.md`, `docs/history/history-recovered-pass-4-2026-09-18.md`, `docs/history/history-recovered-pass-5-2026-09-18.md`, `docs/history/history-recovered-pass-5-sit.md`.
 Implementation remains forbidden until `docs/pointer-emission.md` exists.
 When implementation exists, it obeys the IMPLEMENTATION LAW block with no exceptions.
 
@@ -283,7 +283,7 @@ READING ORDER WHEN A DOCUMENT IS IN THE WORKSPACE
     1. shoe in hands
     2. four graphics
     3. docs/systems-manifest.md
-    4. docs/reason-model-map.md or docs/philosophy-map.md
+    4. docs/reason-model-map.md or docs/clock/philosophy-map.md
        or docs/history/history-recovered-2026-09-18.md
        or docs/history/history-recovered-pass-2-2026-09-18.md
        or docs/history/history-recovered-pass-3-2026-09-18.md

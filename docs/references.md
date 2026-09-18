@@ -73,7 +73,7 @@ Reasoning-Action graphs and neural invariants for agent failure localization. Ad
 
 ### Philosophy of seeing and talking (gearbox to operate upon the lace)
 
-Workspace attachments. Not committed as binaries. Map: `docs/philosophy-map.md`.
+Workspace attachments. Not committed as binaries. Map: `docs/clock/philosophy-map.md`.
 Fence posts (1–5) surround the shoe. Gears (6–8) stand between hands and shoe. Not Core rows.
 
 #### 6. HCC-A v1.0 — Human Cognitive Compiler Architecture  (Gear H, driver)

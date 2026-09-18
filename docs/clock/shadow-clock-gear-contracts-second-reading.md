@@ -1,13 +1,13 @@
 # Gear contracts — second reading (bounded)
 
 **Status:** `[PROPOSAL]`. Secondary. Not a replacement.
-**Primary:** [`docs/shadow-clock-gear-contracts.md`](shadow-clock-gear-contracts.md), on `main` at `df39244`, extended through `ed06eec`. That file is the walk artifact. This one is a counter-reading against it.
-**Diagram under test:** [`docs/shadow-clock-hologram.md`](shadow-clock-hologram.md) · **Brief:** [`docs/shadow-clock-agent-brief.md`](shadow-clock-agent-brief.md)
+**Primary:** [`docs/clock/shadow-clock-gear-contracts.md`](shadow-clock-gear-contracts.md), on `main` at `df39244`, extended through `ed06eec`. That file is the walk artifact. This one is a counter-reading against it.
+**Diagram under test:** [`docs/clock/shadow-clock-hologram.md`](shadow-clock-hologram.md) · **Brief:** [`docs/clock/shadow-clock-agent-brief.md`](shadow-clock-agent-brief.md)
 
 ## Why this file exists instead of a second walk artifact
 
 Two agents walked the hologram at the same time and both produced
-`docs/shadow-clock-gear-contracts.md`. That is a grind — two feelers dropping on
+`docs/clock/shadow-clock-gear-contracts.md`. That is a grind — two feelers dropping on
 one shaft in one tick (`agent-interaction-model.md` §2, §5). The other reading
 landed first and is the primary; this session yields the shaft.
 

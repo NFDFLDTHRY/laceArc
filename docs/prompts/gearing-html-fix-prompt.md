@@ -3,7 +3,7 @@
 Paste everything inside the outer box to an agent. **One designated-editor tick** on `docs/shadow-clock-gearing.html` only. Layer III. Emission `[GAP]`. No `src/`. No CDN / npm / Three.js / `fetch` for contracts. Do **not** edit `contracts-*.js` this turn.
 
 Parent loop: `docs/prompts/gearing-html-iterate-prompt.md`  
-1:1: `docs/gearing-code-1to1.md`  
+1:1: `docs/clock/gearing-code-1to1.md`  
 Evidence: mobile githack shot — HUD labels collide with mesh; camera too tight; header/chips crowd the stage.
 
 ```

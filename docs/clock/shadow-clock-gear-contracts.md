@@ -1,13 +1,13 @@
 # Shadow Clock Gear Interaction Contracts
 
 **Status:** Shadow audit. Not a sixth graphic. Not Core.  
-**Diagram under test:** `docs/shadow-clock-hologram.md`  
-**Brief:** `docs/shadow-clock-agent-brief.md`  
+**Diagram under test:** `docs/clock/shadow-clock-hologram.md`  
+**Brief:** `docs/clock/shadow-clock-agent-brief.md`  
 **Authority:** Hands (`docs/graphics/` A–D → `docs/systems-manifest.md`) then staking law.  
 **This file does not** invent pointer-emission, add `src/`, or grow a second store.
 
 Label note: hologram `{A,B,C}` = HCC-A / Coffee Cup / Water.  
-`docs/philosophy-map.md` used Gear H / Gear C / Gear W for the same three. This file uses hologram letters only.
+`docs/clock/philosophy-map.md` used Gear H / Gear C / Gear W for the same three. This file uses hologram letters only.
 
 If Hands and hologram conflict, Hands win. Hologram wins over a Shadow text only when Hands agree.
 
@@ -1000,7 +1000,7 @@ POINTER emission = `[GAP]`.
 
 | Path | Role |
 |---|---|
-| [docs/system-mathematical-model.md](system-mathematical-model.md) | Formal dual-universe model derived from these walks; emission remains [GAP]. |
-| [docs/shadow-clock-hologram.md](shadow-clock-hologram.md) | Diagram under test |
-| [docs/shadow-clock-agent-brief.md](shadow-clock-agent-brief.md) | Standing brief |
+| [docs/clock/system-mathematical-model.md](system-mathematical-model.md) | Formal dual-universe model derived from these walks; emission remains [GAP]. |
+| [docs/clock/shadow-clock-hologram.md](shadow-clock-hologram.md) | Diagram under test |
+| [docs/clock/shadow-clock-agent-brief.md](shadow-clock-agent-brief.md) | Standing brief |
 | [docs/shadow-clock-gearing.html](shadow-clock-gearing.html) | Layer-III gearing projection |

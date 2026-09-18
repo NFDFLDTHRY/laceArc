@@ -10,7 +10,7 @@ Paste everything inside the outer box to an agent. **Designated-editor tick(s)**
 | Crossing | `docs/hologram/clockwork-view-crossing.png` | Live cyan/white mesh beams, arcs between stations |
 | Traces | `docs/hologram/clockwork-view-traces.jpg` | Floor cyan traces, green clusters, residual heat after ticks |
 
-Also read: `docs/hologram/README.md`, `docs/hologram/visual-primitives.md` (§2.5 stacks / photosphere), `docs/gearing-code-1to1.md`, `docs/prompts/gearing-html-iterate-prompt.md`.
+Also read: `docs/hologram/README.md`, `docs/hologram/visual-primitives.md` (§2.5 stacks / photosphere), `docs/clock/gearing-code-1to1.md`, `docs/prompts/gearing-html-iterate-prompt.md`.
 
 ```
 ╔══════════════════════════════════════════════════════════════════════════╗
@@ -128,7 +128,7 @@ Also read: `docs/hologram/README.md`, `docs/hologram/visual-primitives.md` (§2.
 │   ┌────────────────────────────────────────────────────────────────┐     │
 │   │ PAGE F — 1:1 / LAW CHECK                                       │     │
 │   │                                                                │     │
-│   │  [ ] Update docs/gearing-code-1to1.md PAGE F if pick/visual    │     │
+│   │  [ ] Update docs/clock/gearing-code-1to1.md PAGE F if pick/visual    │     │
 │   │      binding changed (same keys; note hologram skin)           │     │
 │   │  [ ] hologram/README respected: no cube→Graphic D types        │     │
 │   │  [ ] No emit_pointer UI · no Core row kinds                    │     │

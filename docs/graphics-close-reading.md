@@ -365,7 +365,7 @@ that the subjects at those ordinals do not match — concluding that
 > They are not printed in the graphics. Combined with the unestablished provenance
 > above, this repository can drift exactly as D01 did. This file happens to
 > transcribe D1's eleven rows verbatim, so its claims survive a relabelling; that
-> was not deliberate. See `docs/agent-interaction-model.md` §3b F3.
+> was not deliberate. See `docs/clock/agent-interaction-model.md` §3b F3.
 
 Evidence state for every item in this section: `OBSERVED` in a retrieved report;
 `NOT_TESTED` here. Human acceptance: `ABSENT`. No item above changes §1-§6.

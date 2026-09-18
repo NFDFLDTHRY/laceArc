@@ -2,9 +2,9 @@
 
 Paste everything inside the outer box to an agent. **Layer III only.** Iterate `docs/shadow-clock-gearing.html` and/or claimed `docs/gearing/contracts-*.js`. Not Core. Emission `[GAP]`. No `src/`. No CDN / npm / Three.js / `fetch` for contracts.
 
-Authority: `docs/shadow-clock-gear-contracts.md` → shafts → WebGPU page.  
+Authority: `docs/clock/shadow-clock-gear-contracts.md` → shafts → WebGPU page.  
 Coordination: `docs/gearing/CLAIMS.md` + `claim.sh`.  
-1:1 law: `docs/prompts/gearing-code-1to1-prompt.md` / `docs/gearing-code-1to1.md`.  
+1:1 law: `docs/prompts/gearing-code-1to1-prompt.md` / `docs/clock/gearing-code-1to1.md`.  
 Bootstrap (already done): `docs/prompts/shadow-clock-shared-interactive-prompt.md`.
 
 ```

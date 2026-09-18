@@ -2,7 +2,7 @@
 
 **Audience:** Any agent operating on laceArc Shadow clock work.  
 **Status:** Standing brief. Not a sixth graphic. Not Core.  
-**Gearing diagram under test:** [`docs/shadow-clock-hologram.md`](shadow-clock-hologram.md)
+**Gearing diagram under test:** [`docs/clock/shadow-clock-hologram.md`](shadow-clock-hologram.md)
 
 You are not implementing Lace Core. You are auditing and contracting the **holder machine** `{A, B, C}` already forged in the hologram.
 
@@ -24,7 +24,7 @@ You are not implementing Lace Core. You are auditing and contracting the **holde
 3. `docs/systems-manifest.md` (contracts I / II / III)
 4. `docs/staking-the-workspace.md` (Hands vs Shadow law — do not paraphrase away)
 5. `docs/reason-model-map.md`
-6. `docs/shadow-clock-hologram.md` (the gearing diagram)
+6. `docs/clock/shadow-clock-hologram.md` (the gearing diagram)
 7. Only then: Shadow texts and history notes
 
 ---
@@ -41,7 +41,7 @@ You are not implementing Lace Core. You are auditing and contracting the **holde
 
 - `docs/staking-the-workspace.md`
 - `docs/reason-model-map.md`
-- `docs/shadow-clock-hologram.md`
+- `docs/clock/shadow-clock-hologram.md`
 - This brief
 
 **Philosophical gears** (attachments / prior chat — not Core)
@@ -111,7 +111,7 @@ Boundary stamp meanings (from the hologram):
 A single markdown artifact listing every mesh contract + walk result + open `[GAP]`s. No Core schema. No emission rule filled. Commit docs only if the human asks.
 
 Suggested output path (when the human requests the walk artifact):  
-`docs/shadow-clock-gear-contracts.md`
+`docs/clock/shadow-clock-gear-contracts.md`
 
 ---
 

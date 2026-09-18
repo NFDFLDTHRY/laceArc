@@ -2,7 +2,7 @@
 
 **Status:** Prompt for the designated editor of laceArc Shadow clock gearing (Layer III only).  
 **Repo:** laceArc  
-**Authority for contract bodies:** `docs/shadow-clock-gear-contracts.md`  
+**Authority for contract bodies:** `docs/clock/shadow-clock-gear-contracts.md`  
 **Renderer:** `docs/shadow-clock-gearing.html`  
 **This prompt does not** invent pointer-emission, add `src/`, or commit/push.
 
@@ -36,7 +36,7 @@ window.LACE_CONTRACTS = Object.assign(window.LACE_CONTRACTS || {}, {
 |---|---|
 | `docs/gearing/contracts-axle.js` | `axle` only |
 | `docs/gearing/contracts-gears.js` | `A`, `B`, `C`, `AB`, `BC`, `CA` |
-| `docs/gearing/contracts-trainA.js` | Prefer mapping Walk 1 MESH headers to `A1`..`A9` from `docs/shadow-clock-gear-contracts.md`. If HTML only has coarse A and mapping is impossible, put coarse A in gears.js and leave trainA empty or faithfully mapped stubs only. |
+| `docs/gearing/contracts-trainA.js` | Prefer mapping Walk 1 MESH headers to `A1`..`A9` from `docs/clock/shadow-clock-gear-contracts.md`. If HTML only has coarse A and mapping is impossible, put coarse A in gears.js and leave trainA empty or faithfully mapped stubs only. |
 | `docs/gearing/contracts-trainB.js` | `B1`..`B5` from Walk 2 |
 | `docs/gearing/contracts-trainC.js` | `C1`..`C10` from Walk 3 (FSM + bridge) |
 | `docs/gearing/contracts-cells.js` | `t0`..`t6` |
@@ -45,7 +45,7 @@ window.LACE_CONTRACTS = Object.assign(window.LACE_CONTRACTS || {}, {
 
 ### Body text rules
 
-- Copy/adapt from `docs/shadow-clock-gear-contracts.md` (authority).
+- Copy/adapt from `docs/clock/shadow-clock-gear-contracts.md` (authority).
 - Panel is a COPY of the walk artifact.
 - Use backtick template literals; **no backticks inside body**.
 - Keep BOUNDARY STAMP / cites.
@@ -93,7 +93,7 @@ These constraints apply to `docs/shadow-clock-gearing.html` and any Layer-III in
 - **Interactive MUST be 3D.** The primary clock visualization is a WebGPU canvas (procedural extruded gears + lace ribbon). No Three.js, no CDN, no npm, no build step.
 - **WebGPU required.** Target environment: Chrome on Android with **WebGPU** and **WebNN** flags enabled (`chrome://flags`). WebNN need not be called by the render pass yet — document the expected flags. If `navigator.gpu` / adapter / device is missing, show a clear full-panel error requiring WebGPU; do **not** silently fall back to a 2D SVG as the primary clock.
 - **No 2D-only primary view.** 2D SVG may be removed or demoted to optional debug only.
-- **Still [III] projection.** Not Core. Shaft / axle partition unchanged. Contract bodies remain authority of `docs/shadow-clock-gear-contracts.md` via `docs/gearing/contracts-*.js`.
+- **Still [III] projection.** Not Core. Shaft / axle partition unchanged. Contract bodies remain authority of `docs/clock/shadow-clock-gear-contracts.md` via `docs/gearing/contracts-*.js`.
 - **Still no CDN.** Keep loading all eight `gearing/contracts-*.js` via relative `<script src>` before the main script. `CONTRACTS = window.LACE_CONTRACTS || {}` and derived `chipKeys`. No `fetch()` for contracts.
 - **Do not invent POINTER emission.** Leave `[GAP]` text alone.
 

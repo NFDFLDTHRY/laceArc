@@ -20,7 +20,7 @@ Hands first for Core. Shadow first for the clock. Do not fuse them.
 
                     ┌────────────── AUTHORITY ──────────────┐
                     │  Contracts prose:                       │
-                    │    docs/shadow-clock-gear-contracts.md  │
+                    │    docs/clock/shadow-clock-gear-contracts.md  │
                     │  Visual data (keys):                    │
                     │    docs/gearing/contracts-*.js          │
                     │  Visual renderer (frozen [III]):        │
@@ -29,7 +29,7 @@ Hands first for Core. Shadow first for the clock. Do not fuse them.
                     │    docs/prompts/rust-nostd-crate-map-prompt.md  │
                     │    docs/rust-nostd-crate-map.md (if any)│
                     │  Math dual-universe (if present):       │
-                    │    docs/system-mathematical-model.md    │
+                    │    docs/clock/system-mathematical-model.md    │
                     └──────────────────┬────────────────────┘
                                        │ read first
                                        v
@@ -78,7 +78,7 @@ Hands first for Core. Shadow first for the clock. Do not fuse them.
 │   │               │  1:1 lives HERE               │              │     │
 │   │               │  (Shadow code ↔ visual)       │  separate    │     │
 │   │               v                               │  map         │     │
-│   │        docs/gearing-code-1to1.md              │  (rust map)  │     │
+│   │        docs/clock/gearing-code-1to1.md              │  (rust map)  │     │
 │   │                                               v              │     │
 │   │                                    Great Contract Wall       │     │
 │   │                                    (no ReAG in array)        │     │
@@ -204,7 +204,7 @@ Hands first for Core. Shadow first for the clock. Do not fuse them.
 │   │  src/ before acceptance │ FORBIDDEN                            │     │
 │   │                                                                │     │
 │   │  STILL [GAP]: POINTER when / arity / adjacency                 │     │
-│   │  PRODUCT: docs/gearing-code-1to1.md  (table + orphans)         │     │
+│   │  PRODUCT: docs/clock/gearing-code-1to1.md  (table + orphans)         │     │
 │   └────────────────────────────────────────────────────────────────┘     │
 │                                                                          │
 │ [clip]                                                                   │
@@ -225,7 +225,7 @@ Hands first for Core. Shadow first for the clock. Do not fuse them.
          fill PAGE A → B → C → D → E → F → G → H → X
               │
               v
-         write docs/gearing-code-1to1.md
+         write docs/clock/gearing-code-1to1.md
               │
               v
          STOP  (no src/ · commit only if human asks)

@@ -14,7 +14,7 @@ Source of record remains `docs/graphics/` A–D.
 
 Primitive sheets live beside this README (`primitive-*.png`). Catalog: [visual-primitives.md](visual-primitives.md).
 
-Map: `docs/philosophy-map.md` sections on hologram touches.
+Map: `docs/clock/philosophy-map.md` sections on hologram touches.
 
 Do not import Personal Story, Perceived Reality, or Story Defense as row types on Graphic D.
 Do not treat curation of exposure as Lace ingest.

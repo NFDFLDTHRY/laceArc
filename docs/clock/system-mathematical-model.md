@@ -1,20 +1,20 @@
 # System Mathematical Model — Lace Hands + Shadow Clock
 
 **Status:** Formal dual-universe specification derived from Hands and Shadow contracts. Not Core executable code. Not a sixth graphic.  
-**Primary derivation:** `docs/shadow-clock-gear-contracts.md` (walks 1–7).  
+**Primary derivation:** `docs/clock/shadow-clock-gear-contracts.md` (walks 1–7).  
 **Hands authority:** Graphic D (`docs/graphics/`), `docs/systems-manifest.md` Contracts I–III.  
-**Shadow companions:** `docs/shadow-clock-hologram.md`, `docs/staking-the-workspace.md`, `docs/law-why-these-documents.md`.  
+**Shadow companions:** `docs/clock/shadow-clock-hologram.md`, `docs/staking-the-workspace.md`, `docs/law-why-these-documents.md`.  
 **Hard law:** POINTER emission remains \([GAP]\). Shadow \(\{A,B,C\}\) is the HOLDER machine, not Lace Core rows. Hands win over Shadow on conflict. No `src/` is implied by this document.
 
 ---
 
 ## 0. Scope and completeness claim
 
-This document states a **complete dual-universe mathematical model relative to** the contracted meshes of `docs/shadow-clock-gear-contracts.md` walks 1–7, together with every Hands piece that those walks and the systems manifest already state about Contract I (Lace Core), Contract II (Arrival), and Contract III (Projection). “Complete” here means: every MESH header in walks 1–6, every Walk 7 \([X]\) audit, and every Hands object named in Graphic D / Pieces 1–14 that those meshes cite, appears below as a formal object, map, FSM edge, or co-presence cell, each stamped with the boundary predicates defined in §1.
+This document states a **complete dual-universe mathematical model relative to** the contracted meshes of `docs/clock/shadow-clock-gear-contracts.md` walks 1–7, together with every Hands piece that those walks and the systems manifest already state about Contract I (Lace Core), Contract II (Arrival), and Contract III (Projection). “Complete” here means: every MESH header in walks 1–6, every Walk 7 \([X]\) audit, and every Hands object named in Graphic D / Pieces 1–14 that those meshes cite, appears below as a formal object, map, FSM edge, or co-presence cell, each stamped with the boundary predicates defined in §1.
 
 It is **not** complete as a Core executable. The governing step that would turn an arrival into a POINTER cut — when a POINTER is written, at what arity, and whether adjacency of WORDs implies a relation — is Hands-silent and is left sealed as \([GAP]\). Shadow language (Anchor, OBS, “touch grows lace” as intent) is never used to invent that rule. Consequently this model is a specification of two universes and of the wall between them, not a program that grows Graphic D.
 
-**Sources (in authority order).** Hands: Graphics A–D, especially Graphic D (WORD/POINTER append-only array); `docs/systems-manifest.md`. Law: `docs/staking-the-workspace.md`, `docs/law-why-these-documents.md`. Shadow: `docs/shadow-clock-hologram.md`, `docs/shadow-clock-gear-contracts.md` (primary mesh inventory). Projections and briefs: `docs/shadow-clock-gearing.html`, `docs/shadow-clock-agent-brief.md`, `docs/reason-model-map.md`.
+**Sources (in authority order).** Hands: Graphics A–D, especially Graphic D (WORD/POINTER append-only array); `docs/systems-manifest.md`. Law: `docs/staking-the-workspace.md`, `docs/law-why-these-documents.md`. Shadow: `docs/clock/shadow-clock-hologram.md`, `docs/clock/shadow-clock-gear-contracts.md` (primary mesh inventory). Projections and briefs: `docs/shadow-clock-gearing.html`, `docs/clock/shadow-clock-agent-brief.md`, `docs/reason-model-map.md`.
 
 ---
 
@@ -478,7 +478,7 @@ Therefore every map in \(\mathsf{Stop}\) is excluded from \(\mathrm{Hom}(-,L)\) 
 
 ## 6. Completeness theorem (relative)
 
-**Theorem (relative completeness).** Relative to `docs/shadow-clock-gear-contracts.md` walks 1–7 and to the Hands pieces those walks and `docs/systems-manifest.md` state for Contracts I–III, the model of §§1–5 is complete as a **dual-universe specification**: Hands is formalized for every stated Core/Arrival/Projection object (with emission left open), and Shadow is formalized for every contracted mesh of trains A, B, C, co-presence cells \(t0\)–\(t6\), escapement Lock/Release, and the master fold After ≡ Rebuild ≡ ActVI.
+**Theorem (relative completeness).** Relative to `docs/clock/shadow-clock-gear-contracts.md` walks 1–7 and to the Hands pieces those walks and `docs/systems-manifest.md` state for Contracts I–III, the model of §§1–5 is complete as a **dual-universe specification**: Hands is formalized for every stated Core/Arrival/Projection object (with emission left open), and Shadow is formalized for every contracted mesh of trains A, B, C, co-presence cells \(t0\)–\(t6\), escapement Lock/Release, and the master fold After ≡ Rebuild ≡ ActVI.
 
 **Proof sketch.** Walk 1’s ten meshes are the edges of §3.1; Walk 2’s five meshes are the edges and window of §3.2; Walk 3’s five FSM edges and five bridge ops are §3.3; Walk 4’s seven cells are §3.4’s table; Walk 5’s two modes are Lock/Release; Walk 6 is the master equivalence; Walk 7’s six audits are \(\mathsf{Stop}\). Hands objects Graphic D / Pieces 1–14 appear in §2. Kin-reads and the wall appear in §5. No contracted MESH header is left without a formal counterpart. \(\square\)
 
@@ -518,9 +518,9 @@ This test binds implementation posture (no crates.io graph, no foreign Core dyna
 
 | Path | Role |
 |---|---|
-| [docs/shadow-clock-hologram.md](shadow-clock-hologram.md) | Holder machine \(\{A,B,C\}\) hologram; stamps and axle |
-| [docs/shadow-clock-gear-contracts.md](shadow-clock-gear-contracts.md) | Primary MESH inventory (walks 1–7) |
-| [docs/shadow-clock-agent-brief.md](shadow-clock-agent-brief.md) | Standing brief for contract walks |
+| [docs/clock/shadow-clock-hologram.md](shadow-clock-hologram.md) | Holder machine \(\{A,B,C\}\) hologram; stamps and axle |
+| [docs/clock/shadow-clock-gear-contracts.md](shadow-clock-gear-contracts.md) | Primary MESH inventory (walks 1–7) |
+| [docs/clock/shadow-clock-agent-brief.md](shadow-clock-agent-brief.md) | Standing brief for contract walks |
 | [docs/systems-manifest.md](systems-manifest.md) | Hands Contracts I–III; Graphic D pieces; open Q gaps |
 | [docs/staking-the-workspace.md](staking-the-workspace.md) | Hands vs Shadow staking; steward test |
 | [docs/law-why-these-documents.md](law-why-these-documents.md) | Repo law; KEEP/FORBID; shoe/crate lines |
