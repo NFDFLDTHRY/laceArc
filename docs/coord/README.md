@@ -55,7 +55,7 @@ Station files: `docs/coord/stations/<name>.station`
 | history | `docs/history-recovered*` `docs/history/**` |
 | hologram | `docs/hologram/**` `docs/clock/**` (1:1 + math stay maps: exact path wins) |
 | renderer | `docs/shadow-clock-gearing.html` |
-| kit | `docs/kit/**` |
+| kit | `docs/kit/**` `.claude/**` (hooks + session config are operating kit) |
 | law | `AGENTS.md` `CLAUDE.md` staking, law-why, manifest, graphics, close-reading, `pointer-emission.md`, references, CONTRIBUTING, README |
 | coord | docs/coord/** (this umbrella) |
 | gearing-meta | `docs/gearing/*.md` `docs/gearing/*.sh` `docs/gearing/RESYNC.md` (not `contracts-*.js`) |

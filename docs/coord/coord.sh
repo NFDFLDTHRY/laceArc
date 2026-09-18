@@ -65,6 +65,9 @@ write_station() {
   [[ -f "$f" ]] || die "missing station file $f"
   owns="$(read_field "$f" OWNS)"
   [[ -n "$owns" ]] || owns="-"
+  # NOTE is the station's standing description. claim and release pass "",
+  # which erased it on every cycle; keep whatever the file already says.
+  [[ -n "$note" ]] || note="$(read_field "$f" NOTE)"
   # Normalize empty agent/base/since to "-"
   [[ -n "$agent" ]] || agent="-"
   [[ -n "$base" ]] || base="-"
@@ -173,7 +176,7 @@ path_to_station() {
     [history]="docs/history-recovered* docs/history/**"
     [hologram]="docs/hologram/** docs/clock/** docs/shadow-clock-hologram.md docs/shadow-clock-agent-brief.md docs/shadow-clock-gear-contracts.md docs/philosophy-map.md docs/agent-interaction-model.md"
     [renderer]="docs/shadow-clock-gearing.html"
-    [kit]="docs/kit/**"
+    [kit]="docs/kit/** .claude/**"
     [law]="AGENTS.md CLAUDE.md docs/staking-the-workspace.md docs/law-why-these-documents.md docs/systems-manifest.md docs/graphics/** docs/graphics-close-reading.md docs/pointer-emission.md docs/references.md CONTRIBUTING.md README.md"
     [gearing-meta]="docs/gearing/*.md docs/gearing/*.sh docs/gearing/RESYNC.md"
     [coord]="docs/coord/**"

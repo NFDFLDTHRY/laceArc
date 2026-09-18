@@ -1,6 +1,6 @@
 STATUS: FREE
 STATION: kit
-OWNS: docs/kit/**
+OWNS: docs/kit/** .claude/**
 AGENT: -
 BASE: -
 SINCE: -
