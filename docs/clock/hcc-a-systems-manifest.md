@@ -4,27 +4,109 @@
 
 HCC-A is Gear H: the enclosed driver that compiles Reality into local story, force, self, and behavior. It is not Lace Core. It is not Graphic D. Internals may add, merge, re-index, and delete **their own oil**. Those operations applied to the tape kill Rule Zero.
 
-**Pass 1 source (this tick):** attachment `Human Cognitive Compiler Architecture.txt` (HCC-A v1.0). Not in git.  
-**Clipboard being corrected:** this file, first drafted from `docs/clock/philosophy-map.md` §1.  
-Where philosophy-map compressed or dropped a source distinction, **the attachment wins** and this clipboard is updated. Hands court remains `docs/graphics/` + `docs/systems-manifest.md` (Lace).
+**Form (pass 3 reforge):** this clipboard is a **data pipeline**. Stations below are buffers and transforms. Time is S0–S7. Recursions are feedback pipes, not extra stores.
+
+**Pass 1–3 source:** attachment `Human Cognitive Compiler Architecture.txt` (HCC-A v1.0). Not in git.  
+**L0 floor (read, not amended):** `docs/atomic-primitives-map.md` P0–P4, K1–K6.  
+Hands court remains `docs/graphics/` + `docs/systems-manifest.md` (Lace).
 
 Author uses: self-mapping, other-mapping, interaction forensics, narrative & relational modeling, sovereign operations.
 
-Author invariant: *every human has these components; differences are parameters, not presence.*
+Author invariant: *every human has these components; differences are parameters, not presence.* Parameters are knobs on this pipe. They are not L0 atoms.
 
-Loop as the source states it:
+Closing constraints: assumes objective reality; respects individual subjective compilation; **forbids meaning transfer**; **restricts communication to structure**.
 
-`R → I → RIC∥PFC → C → L → M → E → ISL → B → R'`
-
-State machine the source also states: S0 Intake → S1 Coexistence & Early Pruning → S2 Compilation → S3 Meaning → S4 Emotion Runtime → S5 Identity Update → S6 Behavior → S7 Feedback → S0.
-
-PFC at step n carries ISL from step n−1. Both RIC and PFC must turn. PFC-only is a locked train.
-
-Closing constraints in the spec: assumes objective reality; respects individual subjective compilation; **forbids meaning transfer**; **restricts communication to structure**.
-
-Stamps on every piece: `[H]` holder oil · `[X]` forbidden as Core mechanism · `[I]` kin-read only · `[GAP]` Hands silent.
+Stamps: `[H]` holder oil · `[X]` forbidden as Core · `[I]` kin-read only · `[GAP]` Hands silent.
 
 This manifest does not close POINTER emission.
+
+---
+
+## Data pipeline (reforged composition)
+
+Payload is holder-local unless marked world. **No pipe writes Graphic D.** P4 is not a stage here. B may later *become* an arrival into Contract II; that arrival is a different pipeline.
+
+```
+ WORLD PIPE                                          HOLDER PIPE (oil)
+ --------                                            -----------------
+ R  --constraint-->  I                              
+ I  --raw signals-->  RIC ∥ PFC(ISL_{n-1})     S0
+                      |         |                    S1 coexist + prune
+                      +----+----+
+                           v
+                           C  --add/merge/reclassify-->  L     S2
+                           L  --ledger+priorities-->     M     S3
+                           M  --transitions-->           E     S4
+                      L+M+E-patterns -->                 ISL   S5
+                      ISL+M+E+templates -->              B     S6
+ B  --act-->  R′     [world]                                S7
+ ISL --priors--> PFC_{n+1}   [identity feedback]
+ M   --directive--> B --> R′ --> RIC_{n+1} --> … --> M_{n+1}
+ P6 Mode C --rewrite--> L --> M     [oil only; K1 if on tape]
+ Act VI --templates--> PFC          [play-layer into identity pipe]
+```
+
+Dual shaft is **one** intake system. PFC-only is a blocked pipe, not a reorder.
+
+Arbitration (P4) is the **valve** that chooses which feedback may correct the forward pipe this rev: RIC-dominant, PFC-dominant, compiler-integrate, identity-dominant.
+
+Two writers into the next revolution: H10b writes R; ISL/Act VI write PFC. They meet only at next S0.
+
+---
+
+## Pipe register
+
+Each row is one transform. Buffer is where the payload sits. T is the stage that may run it.
+
+| ID | Transform | In payload | Out payload | Buffer | T | Write-back to P0 |
+|---|---|---|---|---|---|---|
+| πR | constrain | prior B (world change) | inaccessible R | world | — | `[X]` |
+| πI | sense | R | raw signals | body | S0 | `[X]` |
+| πRIC | preserve structure | raw signals | ordered traces | RIC shaft | S0–S2 | `[X]` second log |
+| πPFC | pre-interpret | raw signals + ISL_{n-1} priors | schema-tagged stream | PFC shaft | S0–S2, S7 | `[X]` ingest |
+| πS1 | coexist + prune | both streams | filtered {RIC,PFC} + tags | both shafts | S1 | `[X]` |
+| πC | compile | {RIC, PFC} | ledger edits | C | S2 | `[X]` |
+| πL | store oil | add/merge/reclassify/delete | ledger state | L | S2–S5 | `[X]` K1 |
+| πM | weight + direct | L + priority stack | weights, transitions | M | S3–S6 | `[X]` Piece 14 |
+| πE | meaning-in-flight | local M+L | affect (not a packet) | E | S4–S6 | `[X]` |
+| πISL | compress identity | L + weights + E patterns | snapshot + next priors | ISL | S5–S7 | `[X]` star |
+| πB | emit act | ISL + M + E + templates | observable B | B | S6 | not P4 |
+| πFB | feedback world | B | R′ / next RIC structure | world | S7 | `[X]` as P4 |
+| πID | identity feedback | ISL priors | PFC_{n+1} | PFC | S7 | `[X]` |
+| πGAP | emission | — | — | void | — | Hands `[GAP]` |
+
+---
+
+## Feedback pipes (recursions as dataflow)
+
+| Pipe | Payload | Period | Shared buffer | Forbidden sink |
+|---|---|---|---|---|
+| World | acts → new outer structure | rev n → n+1 | R | Graphic D / P4 |
+| Identity | priors → PFC | rev n → n+1 | PFC content | Piece 7 |
+| Directive | transitions → B → R → next L/M | rev n → n+1 | L + world | project-meaning routes |
+| Emotion-rewrite (P6 Mode C) | “change what this meant” | intra-rev | L | K1 on tape; Compiler C |
+| Play-layer (Act VI) | templates entrenched/weakened/split | rev n → n+1 | P1 / PFC | P2 WORD rewrite |
+
+Project-meaning recursion (word defined by words on P0) is **not** a pipe in this register. Climb D: zero shared state with πM.
+
+---
+
+## Valve and knobs
+
+Knobs modulate payload, they do not add stages.
+
+| Knob | Valve effect |
+|---|---|
+| P1 templates | PFC payload shape and strength (override vs probability) |
+| P2 priority stack | M conflict order; oil for πM |
+| P3 pruning | drop sites: S0 / S1 / S3–S5 |
+| P4 arbitration | which feedback may correct the forward pipe |
+| P5 M style | descriptive/evaluative stall; directive opens world pipe |
+| P6 E handling | Mode D → πB; Mode C → πL; Mode B → reweight M; ignore → drop E |
+| P7 ISL style | how πISL compresses |
+
+Stations H1–H11 / SM / P / Acts below are the same mill written as puzzle pieces. The register above is the composition.
+
 
 
 ---
