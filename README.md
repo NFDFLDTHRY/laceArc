@@ -46,6 +46,7 @@ Same rule. Same strand. 3D stars and N-dimensional participation are readings of
 | [docs/references.md](docs/references.md) | Adjacent books. Citations only. PDFs are not in this public repo. |
 | [docs/reason-model-map.md](docs/reason-model-map.md) | Physical shoe lace as reason model. How five adjacent works may and may not touch Core. |
 | [docs/clipboard-five-stakes.md](docs/clipboard-five-stakes.md) | Five-page KEEP/FORBID clipboard of the stake texts. Emission still [GAP]. |
+| [docs/kauffman-4ed-clipboard.md](docs/kauffman-4ed-clipboard.md) | Kauffman 4ed hitch / diagram / Reidemeister / slide / virtual sheets. Not Core. |
 | [docs/philosophy-map.md](docs/philosophy-map.md) | HCC-A, Coffee Cup, Water as the clock-gearbox. Clusters by tick. Not Core rows. |
 | [docs/hologram/](docs/hologram/) | Hologram touches (PR / Story Defense). Shadow. Not Graphic E. |
 | [docs/history-recovered-2026-09-18.md](docs/history-recovered-2026-09-18.md) | Recovered June–September history against current law. Rejected walkers stay rejected. |
