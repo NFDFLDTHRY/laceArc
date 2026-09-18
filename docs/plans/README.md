@@ -14,6 +14,7 @@
 | atomic-construction-pass-1-plan.md | Pass 1 construction crosswalk plan |
 | lace-projection-brief.md | [PROPOSAL] the Lace visualizer: Graphic D's eleven rows as a Layer III view; no emitter; review pass 1 applied |
 | rust-nostd-second-reading.md | second reading of the two rust plans and their IR tooling — findings with consequences, amendments proposed, none applied |
+| [restructure-plan.md](restructure-plan.md) | `[PROPOSAL]` coherence of the whole tree: twelve measured findings, eight phases, one station per commit; supersedes the defrag plan as filing plan of record |
 
 Neither fills POINTER emission. Both stay `[PLAN]`.
 
