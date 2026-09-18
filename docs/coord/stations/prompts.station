@@ -1,7 +1,7 @@
-STATUS: FREE
+STATUS: HELD
 STATION: prompts
 OWNS: docs/prompts/**
-AGENT: -
-BASE: -
-SINCE: -
+AGENT: Codex-atomic-pass2
+BASE: fa15cb5e1d89c5faf4ee91e3878a4eef5e57ab1a
+SINCE: 2026-09-18T20:48:47Z
 NOTE: 
