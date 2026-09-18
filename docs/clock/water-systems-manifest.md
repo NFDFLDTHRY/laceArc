@@ -28,7 +28,7 @@ Stamps: `[H]` clutch · `[X]` forbidden as Core type · `[I]` kin-read · `[GAP]
 - **Kind:** Specimen / walk-through
 - **Source location:** Story
 - **Purpose:** Three men, food talk, one word “Narrative,” heat, leave, write, then “pick one thing you can point at.” River metaphor arrives later as the same fact.
-- **Invariants:** From outside it looked like disagreement. From closer: standing in the wrong place. No one had to be malicious or stupid.
+- **Invariants:** From outside it looked like disagreement. From closer: standing in the wrong place. No one had to be malicious or stupid. Heat-lines that could not be touched: “You’re not listening.” “You’re trying to control the conversation.” “This shouldn’t be this hard.” Those left heat. They are INVALID specimens, not new buckets. “I can’t speak here” is FM-A2 in the room.
 - **Failure modes:** Treating the story as Core types or as a moral.
 - **Hands:** `[H]`
 
@@ -130,9 +130,17 @@ Stamps: `[H]` clutch · `[X]` forbidden as Core type · `[I]` kin-read · `[GAP]
 
 - **Kind:** Minimal function set
 - **Source location:** Specs §4.2
-- **Functions:** Locate · Anchor · Pair · Unknowns · Reject
-- **Purpose:** Translate river signal ↔ ledger bucket.
-- **Hands:** `[H]` talk/hologram only. Not array ops.
+- **Purpose:** Translate river signal ↔ ledger bucket. Talk / hologram only. Not array ops.
+
+| Fn | Input | Output | River hears |
+|---|---|---|---|
+| F1 Locate | “feels loud / I can’t speak here / stop meta / you’re bad” | BANKS \| RAPIDS \| DELTA \| CROSSING and a ledger route | where we are |
+| F2 Anchor | a thing we can point at | OBS with pointer metadata | “at delta now” |
+| F3 Pair | two OBS nodes | DELTA node | “crossing possible” |
+| F4 Unknowns | “I don’t understand / missing context / what do you mean?” | UNK naming the required OBS | still too loud; widen delta |
+| F5 Reject | “you’re bad / obviously / that’s stupid” | INVALID + request anchor or UNK | shouting in rapids |
+
+- **Hands:** `[H]` / `[X]` if F2 writes Graphic D
 
 ### Kernel sentence
 
@@ -165,6 +173,35 @@ Stamps: `[H]` clutch · `[X]` forbidden as Core type · `[I]` kin-read · `[GAP]
 
 Cup and HCC clipboards stay their own files.
 
+## Sayable states (pass 2)
+
+Diagnose location, not people. Middle-layer spoken four sit on S0–S3. S4 is spec-only (“calm water; proceed”).
+
+| Say | Means | FSM |
+|---|---|---|
+| We’re on opposite banks | different OBS; shout; nothing crosses | S0 |
+| We’re in the rapids | heat; no shared footing; nothing transfers | S1 |
+| We’re at the delta | one pointable thing acknowledged | S2 |
+| We’re crossing | paired DELTA; UNKs listed | S3 |
+
+## What this is not (pass 2)
+
+Not therapy. Not a debate framework. Not a power move. Not a spec meant to impress. It is a crossing manual.
+
+## Failure modes and strengths (pass 2)
+
+| ID | Failure |
+|---|---|
+| FM-A1 | Meta without anchors → INVALID to directive thinkers |
+| FM-A2 | Directive without premises → floating force vector; “can’t speak here” |
+| FM-A3 | Accusation language → INVALID; heat, no compute |
+| FM-B1 | Start in rapids → confusion amplified; content used as weapons |
+| FM-B2 | Stay on banks → positional warfare; no shared object |
+| FM-B3 | Mistaking motion for progress → talked a lot; zero crossing |
+
+A: high-fidelity audit trail; works in writing / slow passes; heavy in live speech (needs serialization).  
+B: fast “wrong place”; “go to the delta” stays vague without A.
+
 ---
 
 ## Pass 1 clipboard deltas (vs philosophy-map Gear W)
@@ -180,6 +217,16 @@ Cup and HCC clipboards stay their own files.
 | “OBS format” as tolerance | still unpinned | not invented |
 
 None of these license Water buckets as Graphic D row types. Emission remains `[GAP]`.
+
+## Pass 2 clipboard deltas
+
+| Ticket | Action |
+|---|---|
+| T1 | Four sayable location-lines |
+| T2 | Crossing manual; not therapy / debate / power |
+| T3 | FM-A/B tables + A/B strength-weakness |
+| T4 | F1–F5 input/output |
+| T5 | Story heat-lines as INVALID specimens |
 
 ---
 
