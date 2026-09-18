@@ -93,3 +93,60 @@ They diagnose and time the holder. They do not grow Graphic D.
 | T3 | Dual rule on one operator box |
 | T4 | Train cited outside I |
 | T5 | G2 left `[GAP]` |
+
+## Piece board (pass 2)
+
+| # | Kind | Job |
+|---|---|---|
+| 1 | invariant | one strand; Rule Zero |
+| 2 | operator | one rule; two sentences |
+| 3 | arrival | order / punch-card fidelity |
+| 4 | entry | WORD section |
+| 5 | entry | POINTER section |
+| 6 | store | 1D array *is* the lace stored |
+| 7 | formation | star = persistent word identity as passes |
+| 8 | formation | sequence as physical route |
+| 9 | use of I | dictionary = wiring |
+| 10 | use of I | document feed |
+| 11 | formation | touch / later participation |
+| 12 | reading of I | independent participation axis — not Contract IV |
+| 13 | view | projection ≠ lace |
+| 14 | invariant | no stored meaning / no collapse |
+| 15 | formation | star-internal traffic (same wire) |
+
+## Four interfaces (pass 2)
+
+```
+ write         arriving words (and pointer sections)
+ identity      word → star ; index → exact occurrence
+ participation pointer to earlier index (WORD or POINTER)
+ view          projections downward ; no upward write
+```
+
+No query interface. No delete interface. No transaction interface. No multi-Lace interface.
+
+## Presentation ladder (pass 2)
+
+| Presentation | Shows | Must not become |
+|---|---|---|
+| 1D array | storage, addresses, append, pointer participation | a log from which a “real graph” is extracted |
+| 1D sequence view | before/after only | proof Lace is only a list |
+| 2D paper/graph | crossings as flat adjacencies | the schema |
+| 3D star/thread | persistent identity + distinct passes | a coordinate store |
+| N-D families | independent participation axes | N-dimensional storage or extra meaning |
+
+## Shared state / control (pass 2)
+
+Shared state = L. One line.  
+Control = arrive → append → participate → continue.  
+No second clock inside I.
+
+## Pass 2 deltas
+
+| Ticket | Action |
+|---|---|
+| T1 | Piece board |
+| T2 | Four interfaces |
+| T3 | Presentation ladder |
+| T4 | One state, one control flow |
+
