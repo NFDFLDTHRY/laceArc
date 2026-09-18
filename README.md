@@ -52,6 +52,8 @@ Same rule. Same strand. 3D stars and N-dimensional participation are readings of
 | [docs/gearing-html-iterate-prompt.md](docs/gearing-html-iterate-prompt.md) | Agent prompt: iterate WebGPU gearing HTML / shafts under claim law, 1:1 keys, Layer III. |
 | [docs/gearing-html-fix-prompt.md](docs/gearing-html-fix-prompt.md) | Agent prompt: designated-editor FIX pass for WebGPU gearing HTML (mobile HUD/camera/chrome). |
 | [docs/gearing-html-hologram-restyle-prompt.md](docs/gearing-html-hologram-restyle-prompt.md) | Agent prompt: restyle WebGPU gearing HTML to hologram lattice/crossing/traces templates (keep keys; [GAP]). |
+| [docs/coherence-audit-prompt.md](docs/coherence-audit-prompt.md) | Agent prompt: standing coherence audit (update docs as you go; emission [GAP]). |
+| [docs/coherence-audit-log.md](docs/coherence-audit-log.md) | Append-only coherence audit tick log. |
 | [docs/shadow-clock-shared-interactive-prompt.md](docs/shadow-clock-shared-interactive-prompt.md) | Prompt that defined the shared-interactive gearing architecture (Layer III). |
 | [docs/system-mathematical-model.md](docs/system-mathematical-model.md) | Two-algebra model: Hands L and Shadow H. Emission remains [GAP]. |
 | [LICENSE](LICENSE) | Apache-2.0 |
