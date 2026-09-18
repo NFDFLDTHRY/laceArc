@@ -482,6 +482,37 @@ That pass also rules out one candidate emission rule rather than leaving it open
 "every adjacent WORD pair emits a pointer" is contradicted by D1, where two of four
 adjacent pairs have no pointer between them.
 
+12. [GAP] Pointer emission remains unanswered. The holder gearbox documented under
+    `docs/clock/hcc-a-systems-manifest.md` (HCC-A pipeline, packets, S0–S7) does
+    **not** close questions 1–11 and is not a sixteenth piece.
+
+---
+
+## Adjacent holder pipeline — do not import
+
+HCC-A is Gear H: a data pipeline that compiles Reality into local story, force, self, and behavior. It is required to *operate upon* lace. It is not lace.
+
+Nuances found while mapping that pipeline. Each is a **fence**, not a Core row.
+
+| Found | Hands reading |
+|---|---|
+| RIC keeps order | Kind-kin of Piece 3 only. Not a second log. `[I]` / `[X]` if stored |
+| PFC priors / ISL snapshot | Not a star (Piece 7). `[X]` |
+| L add/merge/reindex/delete | Housing-legal. Tape-illegal. K1 / Piece 6 `[X]` |
+| M weights; “meaning is directive” | Not project-meaning (routes / touches / participation). Piece 14 `[X]` |
+| E affect “not transmissible” | Only structure crosses. Not a row |
+| B / freeze / fawn | Holder act. Not P4. Not POINTER. `[GAP]` if used to close Q2 |
+| H10b “new structure” | World change. Not APPEND |
+| Dual shaft RIC∥PFC + valve P4 | Holder intake. Not Contract II |
+| Two S7 sinks (R′ and next PFC) | Unordered in the source. Not a Core scheduler |
+| Act VI writes templates | Oil. Not WORD rewrite |
+| YAML person_model / event_trace | Trace of the holder pipe. Second store if it owns identity `[X]` |
+| Cluster / variable labels | Layer III names on index geometry. Label merge ≠ L merge |
+| Mode C (emotion rewrite) | Recursion into L. Not Compiler C. K1 if on tape |
+| Parameters ≠ presence | Holder knobs. Not L0 atoms P0–P4 |
+
+Do not add an R table, RIC table, Story Ledger type, meaning weights, ISL star, or emission stub because this table exists.
+
 ---
 
 ## Executive Seams Summary
