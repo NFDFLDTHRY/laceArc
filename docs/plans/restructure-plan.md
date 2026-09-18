@@ -305,6 +305,68 @@ IMPLEMENTATION LAW block permits code when the human has *accepted* it.
 Existence is not acceptance. The file now carries a note naming the
 contradiction and editing neither sentence.
 
+### 4.5 Phase 3 — expanded, after measurement
+
+Measured at `892fdec`. The table said *regenerate the transport copies and add
+two hook checks*. Measuring found one thing serious enough to change the
+ordering, and one that is not an agent's to touch.
+
+**`docs/kit/agent-control.md` is missing two whole sections of the law and 20
+of its 28 prohibitions — while stating on line 174 that the block is "the
+author's law, preserved verbatim."** It carries 166 lines where the live law
+carries 396. Absent: *GEARS REQUIRED TO OPERATE UPON THE LACE*, *OBJECTS DO NOT
+HAVE RELATIONSHIPS*, and prohibitions including `revived walkers /
+lace_walk.py`, `mutable continuation slot`, `substitution rewrite of occurrence
+history`, `codec VAL / lowercase intern as arrival`, `WELD-1 / scoped-UNK as
+Core`. This is the file handed to an agent that **cannot read the repository**.
+It is a portable prompt that under-states the law and says it does not.
+
+`docs/kit/grok-bot-profile.md` is nearly current: 391 lines against 396, seven
+differing lines, two prohibitions short.
+
+**Nothing in either copy is absent from the live law** — checked item by item.
+Regeneration therefore loses no text, which is the precondition for doing it
+mechanically.
+
+`docs/staking-the-workspace.md` is a different shape: its law text is **not
+fenced** at all. It is the frozen ORIGINAL STAKE and is not regenerated or
+checked against anything.
+
+| Sub-phase | Station | Work |
+|---|---|---|
+| **3a** | kit | Replace `agent-control.md`'s law block with the live law's fenced block, byte for byte. Same for `grok-bot-profile.md`. Each gains a header line naming the source revision: `TRANSPORT COPY of law-why@<sha>`. |
+| **3b** | kit | **Hook check 7 — law-copy parity.** For every file carrying a fenced block containing `STILL FORBIDDEN`, compare it to the live law's. Report drift unless the file's header says `STALE`. Skips `staking-the-workspace.md` (unfenced, frozen) and the live law itself. |
+| **3c** | kit | **Hook check 8 — door coverage.** Per shelf: how many of its files its own door links. Advisory. Today: `clipboards/` 1/17, `clock/` 0/39, `coord/` 0/1, `hologram/` 16/23, `prompts/` 0/16; `.claude/` and `.claude/hooks/` have no door at all. |
+| **3d** | kit + law | `.claude/README.md` (kit) — clears 3 orphans. One mention of `.gitignore` in the root README (law) — clears 1. Orphans 35 → 31. |
+
+**Why 3c is worth a check and not just a habit.** It is the phase-2 gate,
+automated: a root-README row is safe to drop exactly when that file's own shelf
+door links it. It also catches what the orphan check cannot — `hologram/` is
+16/23 because the seven primitive sheets are linked by `visual-primitives.md`
+and not by the door. No orphan, still an incomplete door. The two checks
+measure different things and both are worth having.
+
+**The judgment call in 3a, for the human.** The mismatch is the defect; there
+are two honest repairs. **Restore the text** — the missing items are
+substantive prohibitions, not formatting, and the claim on line 174 becomes
+true. Cost: a portable prompt roughly doubles, which matters if it was
+abridged deliberately for a paste budget. **Or correct the claim** — leave 166
+lines and say *abridged; the live law governs*. Recommended: restore, because
+an agent that cannot read the repository has only this text, and what is
+missing from it is exactly the walker-revival list AGENTS.md warns about.
+
+**Raised in 3b, not fixed there.** The live law lists `manufactured cat/cat-1
+notation` **twice** in STILL FORBIDDEN. Harmless, and human-authored; the
+parity check would propagate it to both copies verbatim, which is correct
+behaviour for a copy. Noted so it is not mistaken later for a regeneration bug.
+
+**Order.** `3a` before `3b` — adding a check that immediately reports known
+drift is noise. `3c` and `3d` are independent of both.
+
+**Accept phase 3** when: both transport copies are byte-identical to the live
+law's block and say which revision they came from; check 7 is silent; check 8
+reports the six incomplete shelves without failing the gate; orphans are 31.
+
 Phases 0–3 are filing. Phase 4 is naming. Phase 5 waits on another campaign. Phases 7–8 change law or protocol and are only proposals here.
 
 ---
