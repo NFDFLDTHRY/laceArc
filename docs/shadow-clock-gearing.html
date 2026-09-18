@@ -558,11 +558,11 @@ fn mapGlass(p : vec3f) -> vec2f {
 /* ---- emissive field: what actually makes the picture ---- */
 fn glowPoint(p : vec3f, c : vec3f, col : vec3f, rad : f32, id : f32) -> vec3f {
   let d = max(length(p - c) - rad, 0.0);
-  return col * hiMul(id) / (1.0 + d * d * 42.0);
+  return col * hiMul(id) * (7.0 / (1.0 + d * d * 420.0) + 0.40 / (1.0 + d * d * 90.0));
 }
 fn glowLine(p : vec3f, a : vec3f, b : vec3f, col : vec3f, rad : f32, id : f32) -> vec3f {
   let d = max(sdCapsule(p, a, b, rad), 0.0);
-  return col * hiMul(id) / (1.0 + d * d * 150.0);
+  return col * hiMul(id) * (3.0 / (1.0 + d * d * 1600.0) + 0.16 / (1.0 + d * d * 260.0));
 }
 fn arcPt(a : vec3f, b : vec3f, lift : f32, t : f32) -> vec3f {
   return mix(a, b, t) + vec3f(0.0, sin(3.14159 * t) * lift, 0.0);
@@ -624,16 +624,21 @@ fn emitField(p : vec3f) -> vec3f {
   return e;
 }
 
-/* procedural lattice floor — a shader, not extruded bars */
-fn floorColor(q : vec2f) -> vec3f {
-  let g = abs(fract(q) - 0.5);
-  let line = min(g.x, g.y);
-  let w = fwidth(q.x) * 1.6 + 0.004;
-  let minor = 1.0 - smoothstep(0.0, w, line);
-  let g4 = abs(fract(q * 0.25) - 0.5);
-  let major = 1.0 - smoothstep(0.0, w * 0.9, min(g4.x, g4.y));
-  let fade = exp(-length(q) * 0.16);
-  return (vec3f(0.06, 0.34, 0.44) * minor * 0.55 + vec3f(0.14, 0.62, 0.78) * major * 0.85) * fade;
+/* Procedural lattice floor. Anti-aliased from the ray footprint rather than
+   fwidth(): derivatives are undefined in non-uniform control flow, and this is
+   called from inside the march. When a pixel spans more than about a third of a
+   cell the grid is unresolvable, so it fades out instead of aliasing. */
+fn floorColor(q : vec2f, foot : f32) -> vec3f {
+  let w = max(foot * 1.6, 0.006);
+  let res = 1.0 - smoothstep(0.30, 0.85, foot);
+  if (res <= 0.001) { return vec3f(0.0); }
+  let g = abs(fract(q) - vec2f(0.5));
+  let minor = 1.0 - smoothstep(0.0, w, min(g.x, g.y));
+  let g4 = abs(fract(q * 0.25) - vec2f(0.5));
+  let major = 1.0 - smoothstep(0.0, w * 0.30, min(g4.x, g4.y));
+  let fade = exp(-length(q) * 0.30);
+  return (vec3f(0.08, 0.40, 0.54) * minor * 0.55
+        + vec3f(0.20, 0.72, 0.92) * major * 1.15) * fade * res;
 }
 
 @fragment
@@ -651,47 +656,52 @@ fn fs_main(input : VSOut) -> @location(0) vec4f {
   var trans = 1.0;
   var t = 0.05;
 
-  for (var i = 0; i < 96; i = i + 1) {
+  /* analytic floor plane — computed once, not probed with a step window */
+  var tFloor = 1e9;
+  if (rd.y < -1e-4) {
+    let tf = (FLOOR_Y_C - ro.y) / rd.y;
+    if (tf > 0.0) { tFloor = tf; }
+  }
+
+  for (var i = 0; i < 110; i = i + 1) {
     let p = ro + rd * t;
     let g = mapGlass(p);
+    let step = clamp(max(g.x, 0.018) * 0.8, 0.018, 0.55);
 
-    /* volumetric emission along the ray — bleeds through glass */
-    let step = clamp(max(g.x, 0.02) * 0.85, 0.02, 0.30);
-    col += emitField(p) * step * trans * 0.42;
+    /* volumetric emission; the threshold keeps far-field haze off the sky */
+    let em = max(emitField(p) - vec3f(0.020), vec3f(0.0));
+    col += em * step * trans * 0.30;
 
-    /* glass shell: rim, then keep going so the interior shows */
     if (g.x < 0.006) {
+      let e = vec2f(0.002, 0.0);
       let n = normalize(vec3f(
-        mapGlass(p + vec3f(0.002, 0.0, 0.0)).x - mapGlass(p - vec3f(0.002, 0.0, 0.0)).x,
-        mapGlass(p + vec3f(0.0, 0.002, 0.0)).x - mapGlass(p - vec3f(0.0, 0.002, 0.0)).x,
-        mapGlass(p + vec3f(0.0, 0.0, 0.002)).x - mapGlass(p - vec3f(0.0, 0.0, 0.002)).x));
+        mapGlass(p + e.xyy).x - mapGlass(p - e.xyy).x,
+        mapGlass(p + e.yxy).x - mapGlass(p - e.yxy).x,
+        mapGlass(p + e.yyx).x - mapGlass(p - e.yyx).x));
       let fres = pow(1.0 - abs(dot(n, rd)), 2.6);
       let tint = select(select(vec3f(0.22, 1.00, 0.44), vec3f(1.00, 0.50, 0.10), g.y < 2.5),
                         vec3f(0.24, 0.72, 1.00), g.y < 1.5);
-      col += (vec3f(0.55, 0.78, 0.95) * 0.22 + tint * 0.40) * fres * trans * hiMul(g.y);
-      trans *= 0.74;
-      t += 0.05;
+      col += (vec3f(0.55, 0.78, 0.95) * 0.30 + tint * 0.55) * fres * trans * hiMul(g.y);
+      trans *= 0.80;
+      t += 0.045;
       continue;
     }
 
-    /* floor plane */
-    if (rd.y < 0.0) {
-      let tf = (FLOOR_Y_C - ro.y) / rd.y;
-      if (tf > 0.0 && tf < t + step && tf > t - step) {
-        let fp = ro + rd * tf;
-        col += floorColor(fp.xz) * trans;
-        trans *= 0.10;
-      }
+    if (t >= tFloor) {
+      let fp = ro + rd * tFloor;
+      col += floorColor(fp.xz, tFloor * (2.0 * u.params.x / u.res.y)) * trans;
+      trans *= 0.06;
+      break;
     }
 
     t += step;
-    if (t > 22.0 || trans < 0.02) { break; }
+    if (t > 26.0 || trans < 0.02) { break; }
   }
 
   /* atmospheric lift + filmic roll-off so cores bloom instead of clipping */
-  col += vec3f(0.012, 0.018, 0.030);
-  col = col / (col + vec3f(0.85));
-  col = pow(col, vec3f(0.80));
+  col = col * 4.2 + vec3f(0.002, 0.003, 0.006);
+  col = col / (col + vec3f(0.50));
+  col = pow(col, vec3f(0.82));
   return vec4f(col, 1.0);
 }
 `.replace(/FLOOR_Y_C/g, FLOOR_Y.toFixed(2));
