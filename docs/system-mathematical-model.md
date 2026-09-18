@@ -112,6 +112,23 @@ $$
 
 Participation of those occurrences via POINTER chains is a further reading of \(L\): chains of entries of kind \(\mathsf{POINTER}\) whose refs eventually name members of \(\mathrm{Star}(v)\). That reading is projection language over \(L\), not a Star table. Installing \(\mathrm{Star}\) as a mutable identity store is \([X]\).
 
+### 2.3.1 Labels on observed clusters (view algebra)
+
+The premise is structure. Objects do not carry a relation field. A **label** \(\lambda\) is a name used to describe an observed cluster of indices at a time \(|L|=n\):
+
+$$
+\mathrm{bind}(\lambda;L_n)\;=\;\{ i < n \mid \text{the projection calls } i \text{ by }\lambda \}\qquad [III].
+$$
+
+As \(n\) increases the observed cluster may change. The naming view then admits three acts that do **not** act on \(e_i\):
+
+$$
+\mathsf{Create}(\lambda),\quad \mathsf{Split}(\lambda\to\lambda_1,\lambda_2),\quad \mathsf{Merge}(\lambda_1,\lambda_2\to\lambda)
+\qquad [III]/[H].
+$$
+
+Applying any of those as \(\mathrm{rew}(e_i)\) is \([X]\). The cat fragment (`cat`, `cat-1`, observed `tail`/`fur`/`tongue`) is a specimen of two labels on observed structure. The operator written `>` in that fragment remains \([GAP]\) / OPEN-SEARCH. Do not finish it.
+
 ### 2.4 Governing operator (geometry / storage as one step)
 
 Piece 2 states one closed step. In storage voice, the **stated** fragment is WORD append:
@@ -139,6 +156,7 @@ Relative to Graphic D and Pieces 1, 6, 13, 14, the following are not morphisms o
 - a second Lace / second schema of row types;
 - next-token dynamics as Core;
 - write-back from any projection.
+- split / merge / create of a label implemented as mutate-WORD.
 
 ### 2.6 Projection layer (Contract III)
 

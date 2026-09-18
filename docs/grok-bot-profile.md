@@ -174,7 +174,13 @@ Tick = one legal append.  No tick, no cluster change.
 
 OBJECTS DO NOT HAVE RELATIONSHIPS.
 Relationships CLUSTER as the train turns over time.
-A variable is a label on that cluster.
+The premise is STRUCTURE, not meaning.
+The specimen is the cat fragment (do not invent >).
+A variable is a label on the observed cluster.
+When the cluster changes, the label may be
+  created, split, or merged
+to describe what is seen.
+Those acts name. They do not rewrite WORD @ i.
 Binding = array{ ref by lace index geometry }
           = view of Graphic D, not a second array,
             not object.relations[], not emission.

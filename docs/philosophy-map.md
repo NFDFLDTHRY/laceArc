@@ -211,7 +211,7 @@ Tick → another index exists on the tape → the visible cluster may thicken.
 
 That is hitch physics: later participation. The earlier wrap does not grow a field named `related_to`.
 
-Update of a cluster is **not** an in-place edit of a variable record. It is more tape. The name persists. The geometry grows.
+Update of a cluster is **not** an in-place edit of a variable record. It is more tape. Geometry grows because indices exist that did not exist.
 
 ### Variable = cluster reference label
 
@@ -230,6 +230,33 @@ That is a **view**. It is kin of Piece 4 (star as accumulated passes) and Piece 
 
 It is **not** pointer-emission. Emission would be the rule that *writes* a POINTER section when a tick must name earlier geometry. That rule is still `[GAP]`. This section only says what a variable *is* when you look: a label on a cluster of indices, authored by time.
 
+### Premise: structure. Specimen: the cat
+
+The premise is structure, not meaning.
+
+Objects do not have relationships. Relationships cluster. As the cluster changes over ticks, the *call* that describes what is observed may have to change with it.
+
+A label may be:
+
+- **created** — a new observed cluster needs a name
+- **split** — one call now names two observed clusters
+- **merged** — two calls now name one observed cluster
+
+Those three acts are **naming**. They describe what is seen. They do not rewrite WORD @ i. They do not attach `relations[]` to a cat.
+
+The sourced fragment (pass 3; do not manufacture the rest):
+
+```
+cat → tail, fur, tongue
+> cat-1 → tail, fur, tongue
+```
+
+Lawful reading: `cat` and `cat-1` are labels. `tail`, `fur`, `tongue` are observed structure under a call. `cat-1` is a later or split name, not a field written onto the first `cat`. The meaning of `>` remains OPEN-SEARCH.
+
+Unlawful reading: cat owns parts; parts are edges; `>` is a Core operator we may finish from memory.
+
+Holder ledger split/merge/delete stays oil in Gear H. Same words, different algebra. Applying them to Graphic D remains `[X]`.
+
 ### What the clock forbids
 
 - Relationship as an object property
@@ -238,13 +265,15 @@ It is **not** pointer-emission. Emission would be the rule that *writes* a POINT
 - `array{ref}` as a second array beside Graphic D
 - Escapement drop treated as “we now know POINTER emission”
 - Hands (cluster view) written back onto the tape as edges
+- Split / merge / create of a label treated as mutate-WORD
+- Finishing the cat `>` notation from memory
 
 ### What the clock permits the hologram to judge
 
 Wrong tick (append that is grind).  
 Wrong phase (work off tooth 3).  
 Wrong display (hands claiming objects own edges).  
-Right machine: tape grows; clusters thicken in the view; labels name geometry; nothing on the tape is an edge list.
+Right machine: tape grows; clusters thicken in the view; labels name geometry; a label may be created, split, or merged as the observation changes; nothing on the tape is an edge list.
 
 
 
