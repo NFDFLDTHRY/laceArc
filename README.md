@@ -41,6 +41,7 @@ Same rule. Same strand. 3D stars and N-dimensional participation are readings of
 | [docs/rowlands-clipboard-prompt.md](docs/rowlands-clipboard-prompt.md) | Agent prompt: ASCII clipboard for Rowlands *Zero to Infinity* (Series on Knots and Everything). |
 | [docs/xiao-clipboard-prompt.md](docs/xiao-clipboard-prompt.md) | Agent prompt: ASCII clipboard for Xiao & Zhu *Foundations of Large Language Models*. |
 | [docs/petersen-zech-clipboard-prompt.md](docs/petersen-zech-clipboard-prompt.md) | Agent prompt: ASCII clipboard for Petersen & Zech *Mathematical theory of deep learning*. |
+| [docs/agentscope-clipboard-prompt.md](docs/agentscope-clipboard-prompt.md) | Agent prompt: ASCII clipboard for Bi et al. AgentScope (Diagnosing with Insights). |
 | [docs/shadow-clock-shared-interactive-prompt.md](docs/shadow-clock-shared-interactive-prompt.md) | Prompt that defined the shared-interactive gearing architecture (Layer III). |
 | [docs/system-mathematical-model.md](docs/system-mathematical-model.md) | Two-algebra model: Hands L and Shadow H. Emission remains [GAP]. |
 | [LICENSE](LICENSE) | Apache-2.0 |
