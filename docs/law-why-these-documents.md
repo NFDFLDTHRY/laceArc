@@ -137,6 +137,22 @@ Suggested Layer III camera. Not Graphic E-G.
   FORBID: inferring unrecorded Core from the picture
 
 
+HOLOGRAM TOUCH — visual primitives
+----------------------------------
+docs/hologram/visual-primitives.md
+
+  KEEP: time-like life-line = strand in t
+  KEEP: r=const hypersurface = one slice
+  KEEP: stream tubes = projected routes
+  KEEP: split shells = label split
+  KEEP: torus only as holder recirculation view
+  FORBID: CTC / closed photon curve as Core
+  FORBID: vortex reconnection as a write
+  FORBID: diagram phi = emission Phi
+  FORBID: proof-stream counters as the strand
+  FORBID: ASTRA / multi-agent lab as runtime
+
+
 CLOCK  (the same train, counted)
 --------------------------------
 Mainspring = R.  Tape = Graphic D.  Hands = projections.

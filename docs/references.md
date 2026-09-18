@@ -101,6 +101,10 @@ Overlap of two PR fields; why a true claim can fail to land; story defense; cura
 `docs/hologram/clockwork-view-lattice.jpg`, `clockwork-view-crossing.png`, `clockwork-view-traces.jpg`.  
 Layer III camera on the lace clock. Floor = projected line. Orbs = star-as-seen. Arrows = drawn participation, not emission.
 
+#### 8d. Visual primitives (worldline / streamlines)
+
+`docs/hologram/visual-primitives.md`. Life-line kin; CTC forbidden; tubes = routes; torus = holder view only. ASTRA screenshots are shape catalog, not authority.
+
 ### History (ancestry, not foundation)
 
 #### 9. Lace memory recovery — 18 September 2026

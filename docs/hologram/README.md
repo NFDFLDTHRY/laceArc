@@ -10,6 +10,9 @@ Source of record remains `docs/graphics/` A–D.
 | [clockwork-view-lattice.jpg](clockwork-view-lattice.jpg) | `…2377.jpg` | 3D clockwork view — lattice | Marks on a projected plane |
 | [clockwork-view-crossing.png](clockwork-view-crossing.png) | `…2379.png` | 3D clockwork view — crossing | Live mesh / beam |
 | [clockwork-view-traces.jpg](clockwork-view-traces.jpg) | `…2378.jpg` | 3D clockwork view — traces | Clusters and floor traces after ticks |
+| [visual-primitives.md](visual-primitives.md) | catalog | Worldline, CTC, stream tubes, helix, torus, split | Camera vocabulary |
+
+Primitive sheets live beside this README (`primitive-*.png`). Catalog: [visual-primitives.md](visual-primitives.md).
 
 Map: `docs/philosophy-map.md` sections on hologram touches.
 

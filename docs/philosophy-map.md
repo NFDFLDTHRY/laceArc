@@ -759,6 +759,18 @@ If a cube seems to *have* the arrows, the picture has slipped into “objects ha
 
 Arrows do not close \(\Phi\).
 
+### Touch: visual primitives (worldline, tubes, forbidden CTC)
+
+Catalog: `docs/hologram/visual-primitives.md`.
+
+Two families.
+
+**Worldline sheet** (`primitive-worldline-ctc.png`): a time-like life-line with start and halt is kin of the strand. A closed photon-like curve / CTC band is the closed ring in physics dress. \(r=\mathrm{const}\) is one projection slice. Diagram \(\phi\) is azimuth. It is not emission \(\Phi\).
+
+**Streamline family** (ASTRA screenshots as *shape only*): tubes = projected routes; helical shell = winding with ends still open; bifurcation / two shells = label split; inward spiral = rapids; torus = holder recirculation view \([H]\), never the workpiece; vortex reconnection = Reidemeister urge, not a write.
+
+Dashboard “proof stream” counts are theater. They do not conserve the strand.
+
 ### Two oracles (do not fuse)
 
 1. **Shoe in hands** — public, pointable, law. If you cannot do it to a lace, you may not do it to laceArc.
