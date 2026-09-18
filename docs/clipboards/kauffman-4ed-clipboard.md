@@ -3,7 +3,7 @@
 Shadow stake only. Hands win. POINTER emission = `[GAP]`.
 Source slug: `dokumen.pub_knots-and-physics-4ed-9814383007`.
 Book: L.H. Kauffman, *Knots and Physics*, 4ed · ISBN family `9814383007`.
-PDF path (gitignored): `artifacts/refs/kauffman-knots-and-physics-4ed.pdf`. **Never git-add the PDF.**
+PDF path (gitignored): `refs/local/kauffman-knots-and-physics-4ed.pdf` (also `artifacts/refs/…`). **Never git-add the PDF.**
 This file is Layer III. Not Core.
 
 ## Pass 1 receipt
@@ -34,12 +34,27 @@ This file is Layer III. Not Core.
 | Amended | reason-model-map · law · graphics · five-stakes | **No** |
 | Emission | still `[GAP]` |
 
+
+## Pass 1 (PDF-sighted) receipt
+
+| Field | Value |
+|---|---|
+| Status | EXECUTED |
+| Station | clipboards · agent `reference-Mapper` |
+| Plan | [kauffman-pass-1-pdf-plan.md](kauffman-pass-1-pdf-plan.md) |
+| Hands chain | shoe → graphics A–D → systems-manifest → staking / law-why → reason-model-map §1 → prior A–X + Pass 2 deltas |
+| PDF | **PRESENT** — attachment linked at `refs/local/kauffman-knots-and-physics-4ed.pdf` (865 pp., `tiff2pdf`, image-only; `pdftotext` empty) |
+| Method | `pdftoppm` → visual read of seed pages (no tesseract on box) |
+| Product | printed↔PDF bridges on A–E; PAGE A inequality aligned to **≤**; stamps CONFIRM; Pass 2 D1–D6 kept |
+| Amended | reason-model-map · law · graphics · five-stakes | **No** |
+| Emission | still `[GAP]` |
+
 Law on this clip: diagram ≠ rope · hitch kin · grab ≠ emission · `[GAP]` sealed.
 
 ```
 fetch/ff main → shoe → graphics A–D → manifest → law
                  → reason-model-map §1
-                 → Kauffman 4ed (no git add; PDF missing → prior OCR)
+                 → Kauffman 4ed (no git add; PDF-sighted pass 1)
                  → PAGE A → B → C → D → E → F → X
                  → this file
                  → STOP
@@ -57,8 +72,10 @@ fetch/ff main → shoe → graphics A–D → manifest → law
 │                                                                          │
 │   ┌────────────────────────────────────────────────────────────────┐     │
 │   │ PAGE A — HITCHES (Part II §1 / Theory of Hitches)              │     │
-│   │ locus: Part II §1°   printed p.323  (after Bayman)             │     │
-│   │        also Part I §1°  (clove hitch before the math)          │     │
+│   │ locus: Part I §1°  printed p.4  / PDF p.23  (clove hitch)      │     │
+│   │        Part II §1° printed p.323 / PDF p.342 (after Bayman)    │     │
+│   │        PDF p.343 = printed p.324 (κ = e^{θ/2π}; wrap-overs)    │     │
+│   │ stamp: CONFIRM (PDF-sighted)                                   │     │
 │   │ quote/eye:                                                     │     │
 │   │   "A hitch is a mode of wrapping a rope around a post so       │     │
 │   │    that, with the help of a little friction, the rope holds    │     │
@@ -67,28 +84,30 @@ fetch/ff main → shoe → graphics A–D → manifest → law
 │   │    assemblage from slipping."                                  │     │
 │   │   wrap-over: "the top part squeezes the bottom part            │     │
 │   │    against the rod."                                           │     │
-│   │   windings: no slip while T2 < κ T1; model κ = e^θ             │     │
-│   │    (unit friction). Square grips. Granny feeds through.        │     │
-│   │   [NOTE] five-stakes records printed p.323 as T2 ≤ κ T1;       │     │
-│   │    map/clipboard often write strict <. Neither is a Lace field.│     │
+│   │   windings: no slip while T2 ≤ κ T1 (PDF p.342 / printed p.323)│     │
+│   │    model κ grows with turns; unit-friction form κ = e^{θ/2π}  │     │
+│   │    (PDF p.343). Square grips. Granny feeds through.           │     │
+│   │   [REFINE] prior clipboard/map often wrote strict <; page is   │     │
+│   │    inclusive ≤. Neither form is a Lace field or emission rule. │     │
 │   │                                                                │     │
 │   │   later tension ──participates──► earlier wrap                 │     │
 │   │   wrap remains (no pull-out)                                   │     │
 │   │                                                                │     │
 │   │ ON SHOE: kin of Piece 5 / Graphic B,D participation            │     │
 │   │ KEEP: hitch image                                              │     │
-│   │ FORBID: copy friction law T2<e^θ T1 into array fields          │     │
+│   │ FORBID: copy friction law T2≤κ T1 / e^{θ} into array fields    │     │
 │   │ EMISSION? NO — grab ≠ POINTER rule [GAP]                       │     │
-│   │ vs reason-model-map: CONFIRMS K1/K7. Does not close Φ.         │     │
+│   │ vs reason-model-map: CONFIRM K1/K7 (PDF). Does not close Φ.    │     │
 │   └────────────────────────────────────────────────────────────────┘     │
 │                                                                          │
 │   ┌────────────────────────────────────────────────────────────────┐     │
 │   │ PAGE B — DIAGRAM ≠ ROPE                                        │     │
-│   │ locus: Part I §2°  named "Move Zero"                           │     │
-│   │        fork restated Part II §1° p.323:                        │     │
-│   │        "The topology that we know has been obtained at         │     │
-│   │         the price of initial abstraction from these            │     │
-│   │         physical grounds."                                     │     │
+│   │ locus: Part I §2°  "Move Zero"  printed p.16 / PDF p.35        │     │
+│   │        closed-loop setup printed p.8–9 / PDF p.27–28           │     │
+│   │        fork also at Part II §1° printed p.323 / PDF p.342      │     │
+│   │ stamp: CONFIRM (PDF-sighted)                                   │     │
+│   │ quote/eye (Move Zero): basic planar deformations of a curve    │     │
+│   │   with no crossing change — projection hygiene, not a write.   │     │
 │   │                                                                │     │
 │   │   [drawing]  ≠  [physical cord]                                │     │
 │   │      │                │                                        │     │
@@ -100,12 +119,14 @@ fetch/ff main → shoe → graphics A–D → manifest → law
 │   │ FORBID: treat knot diagram as Lace authority                   │     │
 │   │ ON SHOE: Piece 13 Projection vs store                          │     │
 │   │ EMISSION? NO [GAP]                                             │     │
-│   │ vs reason-model-map: CONFIRMS K3 / RM5.                        │     │
+│   │ vs reason-model-map: CONFIRM K3 / RM5 (PDF).                   │     │
 │   └────────────────────────────────────────────────────────────────┘     │
 │                                                                          │
 │   ┌────────────────────────────────────────────────────────────────┐     │
 │   │ PAGE C — REIDEMEISTER / CLOSED LOOP                            │     │
-│   │ locus: Part I §2°  Figure 8                                    │     │
+│   │ locus: Part I §2° Fig.8  printed pp.16–17 / PDF pp.35–36       │     │
+│   │        closed-loop definition printed p.8–9 / PDF p.27–28      │     │
+│   │ stamp: CONFIRM CONFLICT (PDF-sighted)                          │     │
 │   │ quote/eye:                                                     │     │
 │   │   closed: "a knot shall correspond to a single closed          │     │
 │   │    loop of rope." Advantage he names: experiment               │     │
@@ -125,12 +146,13 @@ fetch/ff main → shoe → graphics A–D → manifest → law
 │   │ FORBID: Reidemeister as Lace write; closed loop as operator    │     │
 │   │ ON SHOE: Piece 1 continuous strand. Two ends. Continue.        │     │
 │   │ EMISSION? NO [GAP]  (move II is not POINTER emission)          │     │
-│   │ vs reason-model-map: CONFIRMS K2/K4 CONFLICT.                  │     │
+│   │ vs reason-model-map: CONFIRM K2/K4 CONFLICT (PDF).             │     │
 │   └────────────────────────────────────────────────────────────────┘     │
 │                                                                          │
 │   ┌────────────────────────────────────────────────────────────────┐     │
 │   │ PAGE D — SLIDE EQUIVALENCE                                     │     │
-│   │ locus: FOUND  Part II §4°  printed p.336                       │     │
+│   │ locus: FOUND  Part II §4°  printed p.336 / PDF p.355           │     │
+│   │ stamp: CONFIRM CONFLICT (PDF-sighted)                          │     │
 │   │ quote/eye:                                                     │     │
 │   │   slide equivalence generated by local slide axioms;           │     │
 │   │   "the usual Reidemeister moves of type II and III are         │     │
@@ -140,31 +162,33 @@ fetch/ff main → shoe → graphics A–D → manifest → law
 │   │                                                                │     │
 │   │ FORBID: slide as Core write                                    │     │
 │   │ EMISSION? NO [GAP]                                             │     │
-│   │ vs reason-model-map: CONFIRMS K8 CONFLICT.                     │     │
+│   │ vs reason-model-map: CONFIRM K8 CONFLICT (PDF).                │     │
 │   │ Not a milder write. Same crime, different generators.          │     │
 │   └────────────────────────────────────────────────────────────────┘     │
 │                                                                          │
 │   ┌────────────────────────────────────────────────────────────────┐     │
 │   │ PAGE E — VIRTUAL / 1-HANDLES / EXTRA SURFACES                  │     │
-│   │ locus: 4ed preface + appendix                                  │     │
-│   │ quote/eye:                                                     │     │
-│   │   "a generalization of knot theory to a theory of knots        │     │
-│   │    in thickened surfaces taken up to changing these            │     │
-│   │    surfaces by adding or subtracting 1-handles in the          │     │
-│   │    complement of the knot or link," diagrammatic theory        │     │
-│   │    "exactly analogous" to classical.                           │     │
+│   │ locus: Preface to 4ed  printed p.xv / PDF p.16                 │     │
+│   │        + appendix article (Virtual Knot Theory / Khovanov)      │     │
+│   │          (body sighted ~PDF p.800+; printed ~p.781+)           │     │
+│   │ stamp: CONFIRM CONFLICT (PDF-sighted)                          │     │
+│   │ quote/eye (4ed preface): Virtual Knot Theory = generalization  │     │
+│   │   to knots in thickened surfaces, modified by adding or        │     │
+│   │   subtracting 1-handles in the complement; diagrammatic        │     │
+│   │   theory analogous to classical.                               │     │
 │   │                                                                │     │
 │   │   virtual rooms ──X──► second store / extra rooms              │     │
 │   │                                                                │     │
 │   │ FORBID: virtual knot / handle moves as Core rooms              │     │
 │   │ ON SHOE: one line · Graphic D header                           │     │
 │   │ EMISSION? NO [GAP]                                             │     │
-│   │ vs reason-model-map: CONFIRMS K9 CONFLICT.                     │     │
+│   │ vs reason-model-map: CONFIRM K9 CONFLICT (PDF).                │     │
 │   └────────────────────────────────────────────────────────────────┘     │
 │                                                                          │
 │   ┌────────────────────────────────────────────────────────────────┐     │
 │   │ PAGE F — ANYTHING THAT LOOKS LIKE “WHEN TO POINT”              │     │
-│   │ locus: NONE FOUND as an emission rule                          │     │
+│   │ locus: NONE FOUND as an emission rule (PDF-sighted seeds)      │     │
+│   │ stamp: SILENT / CONFIRM no emission sentence                   │     │
 │   │ false friends inspected:                                       │     │
 │   │   clove "grab" / "participates later"   → kin, not when        │     │
 │   │   Reidemeister II crossing change       → rewrite, not emit    │     │
@@ -186,6 +210,7 @@ fetch/ff main → shoe → graphics A–D → manifest → law
 │                                                                          │
 │   ┌────────────────────────────────────────────────────────────────┐     │
 │   │ PAGE X — CROSS-CUT                                             │     │
+│   │ stamp: CONFIRM deadbolts (PDF did not unlock any)              │     │
 │   │                                                                │     │
 │   │  temptation              │ Hands deadbolt                      │     │
 │   │  ───────────────────────┼──────────────────────────────────── │     │
@@ -211,9 +236,10 @@ fetch/ff main → shoe → graphics A–D → manifest → law
 - PAGE B is permission to draw. It is not permission to store the drawing.
 - PAGE C/D/E are the fence. Quoting them does not restore the operators.
 - PAGE F: Kauffman never writes the missing Core sentence. Do not finish it from a clove hitch.
-- Pass 1 accepted a missing local PDF and prior-OCR loci. A later text layer requires a re-walk under a new claim — not a silent amend of this file as if freshly OCR’d.
-- This file does not amend `docs/reason-model-map.md`, law, graphics, or five-stakes. Pass 2 deltas mirror the five-stakes admission strip; they do not rewrite that sibling.
-- Pass 2 executed with PDF still missing (D5 no-PDF branch).
+- Prior OCR pass 1 accepted a missing PDF. **Pass 1 (PDF-sighted)** re-walked seed loci against the attached 865-page image-only scan (`refs/local/…`).
+- PAGE A inequality aligned to printed/PDF **T2 ≤ κ T1** (inclusive). Prior strict `<` was transcription drift; not a Lace field.
+- This file does not amend `docs/reason-model-map.md`, law, graphics, or five-stakes. Pass 2 D1–D6 kept.
+- A searchable text layer still does not exist on this PDF; deeper OCR of every page is a later pass if wanted.
 
 ---
 
