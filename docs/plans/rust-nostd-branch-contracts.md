@@ -1,9 +1,9 @@
 # CLIPBOARD — laceArc no_std branch contracts
 
 **Status: PLAN / PROPOSAL. Seven prose cards. No implementation acceptance.**
-Shelf note (defrag pass 2): this file is the **serial birth cards**. The crate tree is `docs/rust-nostd-crate-map.md`. Neither fills POINTER emission.
+Shelf note (defrag pass 2): this file is the **serial birth cards**. The crate tree is `docs/plans/rust-nostd-crate-map.md`. Neither fills POINTER emission.
 
-Repository destination: `docs/rust-nostd-branch-contracts.md`.
+Repository destination: `docs/plans/rust-nostd-branch-contracts.md`.
 Prior product: [rust-nostd-crate-map.md](rust-nostd-crate-map.md).
 Source baseline: `NFDFLDTHRY/laceArc` main at
 [`f995e4429ffc202be06dc6230423f3288edbb620`](https://github.com/NFDFLDTHRY/laceArc/tree/f995e4429ffc202be06dc6230423f3288edbb620)
@@ -842,7 +842,7 @@ tree read returned the same baseline and unchanged controlling source
 blobs. No compiler, runtime, physical-cord or mathematical-proof execution
 was performed; structural document checks do not establish those results.
 
-**Handoff:** One authored product, `docs/rust-nostd-branch-contracts.md`.
+**Handoff:** One authored product, `docs/plans/rust-nostd-branch-contracts.md`.
 Prior map, law, graphics and pointer draft are unchanged. No Rust source,
 Cargo files, planned branch directories, code/type definitions, commit,
 push, branch birth or acceptance record is part of this task.

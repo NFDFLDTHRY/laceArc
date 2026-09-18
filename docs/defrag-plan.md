@@ -1,8 +1,8 @@
 # Defrag plan (PREPARE only)
 
-Status: **PASS 1 `94cdba8`. PASS 2 `f1adf2d`. HTML restyle `12e4021`.**
-PASS 3 DONE locally — Shadow prose in `docs/clock/`; HTML / gearing / hologram unmoved.
-Not committed until asked. POINTER emission stays `[GAP]`.
+Status: **PASS 1 `94cdba8`. PASS 2 `f1adf2d`. HTML `12e4021`. PASS 3 `b7ed9a6`.**
+PASS 4 DONE locally under maps claim — rust plans in `docs/plans/`.
+POINTER emission stays `[GAP]`. README catalog (law station) still lists old rust paths until a law tick.
 
 Shoe test: filing, not wrapping the cord.
 
@@ -225,5 +225,78 @@ One commit. Shelves only. No pixel pass. No `src/`. No `[GAP]` fill.
 ### After
 
 Stop. There is no pass 4 in this plan unless you name one (rust door pick, RESYNC CLEAR, Petersen fill).
+
+---
+
+## PASS 4 PLAN (rust plans shelf) — do not run until “go pass 4”
+
+What is left at `docs/` root after pass 3:
+
+```
+HANDS (do not move)
+  systems-manifest.md
+  graphics-close-reading.md
+  law-why-these-documents.md
+  staking-the-workspace.md
+  reason-model-map.md
+  pointer-emission.md     DRAFT / [GAP]
+  references.md
+
+OPS (do not move)
+  coherence-audit-log.md
+  defrag-plan.md
+
+LOOSE
+  rust-nostd-crate-map.md
+  rust-nostd-branch-contracts.md
+```
+
+Pass 4 is only the rust pair. It is **not** RESYNC CLEAR. It is **not** Petersen. It is **not** accepting emission.
+
+### Move (`git mv`) → `docs/plans/`
+
+```
+rust-nostd-crate-map.md          tree
+rust-nostd-branch-contracts.md   serial birth cards
+README.md                        door: PLAN only; neither fills Φ
+```
+
+### Do not do in pass 4
+
+| Temptation | Deadbolt |
+|---|---|
+| CLEAR RESYNC because FIRED looks stale | Steward word only. `STATUS: FIRED` stays |
+| Fill Petersen clipboard | Prompt-only until you ask |
+| Accept `pointer-emission.md` | Human only |
+| Invent `lace-projection-brief.md` | Still missing |
+| Move Hands law/manifest | Root is the court |
+| Move audit log or defrag-plan | Ops stay findable |
+| Add `src/` or Cargo.toml | Forbidden |
+| Merge crate-map into branch-contracts | Two jobs, two files |
+
+### Same-commit text only
+
+1. `docs/plans/README.md`: tree vs birth cards; both `[PLAN]`; emission `[GAP]`.
+2. README shelf row: Plans → `docs/plans/`.
+3. Existing one-liners in those two files keep working after path rewrite.
+
+### Link blast
+
+`docs/rust-nostd-*.md` → `docs/plans/rust-nostd-*.md`  
+Prompts already in `docs/prompts/` stay.
+
+### Commit shape
+
+One commit. Shelves only.
+
+### After
+
+Defrag **filing** is complete. Remaining open work is not filing:
+
+- POINTER emission `[GAP]`
+- Petersen unfilled
+- RESYNC FIRED until you CLEAR
+- `lace-projection-brief.md` absent
+
 
 

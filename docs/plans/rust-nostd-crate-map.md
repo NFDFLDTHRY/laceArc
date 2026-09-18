@@ -2,7 +2,7 @@
 
 **PLAN / PROPOSAL. Nine sheets, A–H and X. No implementation acceptance. POINTER emission = [GAP].**
 
-Shelf note (defrag pass 2): this file is the **crate tree**. Serial birth cards live in `docs/rust-nostd-branch-contracts.md`. Neither file is an accepted emission rule.
+Shelf note (defrag pass 2): this file is the **crate tree**. Serial birth cards live in `docs/plans/rust-nostd-branch-contracts.md`. Neither file is an accepted emission rule.
 
 Execution of [the crate-map prompt](prompts/rust-nostd-crate-map-prompt.md), checking and completing its existing draft. The sheets use rendered mapping tables. The seven planned names, birth order, and direct dependencies are retained alongside [the branch contracts](rust-nostd-branch-contracts.md). No proposed directory is created.
 
@@ -208,7 +208,7 @@ The companion plan records a required outline at [pointer-emission-prompt.md](pr
 
 | Field | Observed scope |
 |---|---|
-| Task | Execute the Rust no_std crate-map prompt; one documentation output: `docs/rust-nostd-crate-map.md`. |
+| Task | Execute the Rust no_std crate-map prompt; one documentation output: `docs/plans/rust-nostd-crate-map.md`. |
 | Initial base | `f995e4429ffc202be06dc6230423f3288edbb620`, branch main. |
 | Re-anchor before editing | Fetched and fast-forwarded to `7cd385f1debd88c4eeb2fe847279ba91851cb927`. Only the branch-contracts document was added; the map baseline, prompt, graphics, manifest, laws, controls, reason map, and emission draft are unchanged. The new companion was read in full before editing. |
 | Completion re-anchor | A final fetch advanced main to `490473e7e3d3e1579da7ea0361d5c1654360e648`. Fast-forwarded while preserving local drafts. Reopened all four replacement lossless graphics, read the full new close-reading document, and reviewed manifest and companion-contract changes. Incorporated slot assignment, eventual-reference and C6-family gaps, plus the bounded adjacency counterexample. The assigned prompt and map baseline remain unchanged. |
