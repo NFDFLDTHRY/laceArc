@@ -624,11 +624,13 @@
 
   const FLOOR_Y = -1.30;
   const STATION = {
-    A: { pos: [-1.70, 0.10, -0.50], r: 0.42, core: [0.24, 0.72, 1.00], id: 1 },
-    B: { pos: [ 0.10, 0.86,  0.35], r: 0.46, core: [1.00, 0.50, 0.10], id: 2 },
-    C: { pos: [ 1.70, -0.10, -0.30], r: 0.43, core: [0.22, 1.00, 0.44], id: 3 },
+    /* flattened Y triad on floor — lookref field framing, not B sky-pillar */
+    A: { pos: [-1.55, 0.12, -0.40], r: 0.40, core: [1.00, 0.42, 0.10], id: 1 },
+    B: { pos: [ 0.05, 0.22,  0.28], r: 0.44, core: [1.00, 0.48, 0.08], id: 2 },
+    C: { pos: [ 1.60, 0.08, -0.25], r: 0.40, core: [1.00, 0.38, 0.10], id: 3 },
   };
-  const CLUSTER_POS = { A1: [-2.45, 0.55, 0.55], B1: [0.15, 1.85, -0.35], C1: [2.45, 0.40, 0.60] };
+  /* green yarn spheres — separate lace suggestion clusters, not C tint */
+  const CLUSTER_POS = { A1: [-2.35, 0.28, 0.85], B1: [0.95, 0.32, 1.15], C1: [2.20, 0.26, 0.55] };
   const ESCAPE_POS  = { E1: [-0.85, FLOOR_Y + 0.05, -1.35], E2: [0.90, FLOOR_Y + 0.05, -1.35], R1: [0.10, FLOOR_Y + 0.05, -2.05] };
   const TICK_POS = [], AUDIT_POS = {};
   for (let i = 0; i < 7; i++) TICK_POS.push([-2.4 + i * 0.8, FLOOR_Y + 0.02, 1.75]);
@@ -671,17 +673,38 @@ fn sdCapsule(p : vec3f, a : vec3f, b : vec3f, r : f32) -> f32 {
   let h = clamp(dot(pa, ba) / dot(ba, ba), 0.0, 1.0);
   return length(pa - ba * h) - r;
 }
-fn hiMul(id : f32) -> f32 { return select(1.0, 3.4, abs(u.hiId - id) < 0.5); }
+fn hiMul(id : f32) -> f32 { return select(1.0, 1.35, abs(u.hiId - id) < 0.5); }
 
 /* ---- clustering-region shells (glass): participation bunched under one view;
    not objects that own relationships; not Graphic D. Wire of light threads them. ---- */
 fn mapGlass(p : vec3f) -> vec2f {
-  let a = sdRoundBox(p - vec3f(-1.70, 0.10, -0.50), vec3f(0.42), 0.05);
-  let b = sdRoundBox(p - vec3f( 0.10, 0.86,  0.35), vec3f(0.46), 0.05);
-  let c = sdRoundBox(p - vec3f( 1.70, -0.10, -0.30), vec3f(0.43), 0.05);
+  /* primary clustering regions A/B/C — glass shells over orange lace cores */
+  let a = sdRoundBox(p - vec3f(-1.55, 0.12, -0.40), vec3f(0.40), 0.045);
+  let b = sdRoundBox(p - vec3f( 0.05, 0.22,  0.28), vec3f(0.44), 0.045);
+  let c = sdRoundBox(p - vec3f( 1.60, 0.08, -0.25), vec3f(0.40), 0.045);
   var d = a; var id = 1.0;
   if (b < d) { d = b; id = 2.0; }
   if (c < d) { d = c; id = 3.0; }
+  /* many smaller ambient idle/dim glass cubes across the floor field */
+  let amb = array<vec3f, 12>(
+    vec3f(-2.80, FLOOR_Y_C + 0.18, -1.10),
+    vec3f(-2.10, FLOOR_Y_C + 0.16,  0.70),
+    vec3f(-0.90, FLOOR_Y_C + 0.15, -1.55),
+    vec3f(-0.35, FLOOR_Y_C + 0.17,  1.20),
+    vec3f( 0.70, FLOOR_Y_C + 0.15, -1.20),
+    vec3f( 1.15, FLOOR_Y_C + 0.16,  0.85),
+    vec3f( 2.45, FLOOR_Y_C + 0.17, -0.90),
+    vec3f( 2.90, FLOOR_Y_C + 0.15,  0.40),
+    vec3f(-1.20, FLOOR_Y_C + 0.14,  0.15),
+    vec3f( 0.40, FLOOR_Y_C + 0.14, -0.55),
+    vec3f(-2.50, FLOOR_Y_C + 0.15, -0.20),
+    vec3f( 2.05, FLOOR_Y_C + 0.14,  1.35)
+  );
+  let ambR = array<f32, 12>(0.18, 0.15, 0.14, 0.16, 0.15, 0.14, 0.17, 0.15, 0.13, 0.14, 0.15, 0.13);
+  for (var i = 0; i < 12; i = i + 1) {
+    let di = sdRoundBox(p - amb[i], vec3f(ambR[i]), 0.03);
+    if (di < d) { d = di; id = 30.0 + f32(i); }
+  }
   return vec2f(d, id);
 }
 
@@ -700,129 +723,146 @@ fn arcPt(a : vec3f, b : vec3f, lift : f32, t : f32) -> vec3f {
 
 fn emitField(p : vec3f) -> vec3f {
   var e = vec3f(0.0);
-  let SA = vec3f(-1.70, 0.10, -0.50);
-  let SB = vec3f( 0.10, 0.86,  0.35);
-  let SC = vec3f( 1.70, -0.10, -0.30);
+  let SA = vec3f(-1.55, 0.12, -0.40);
+  let SB = vec3f( 0.05, 0.22,  0.28);
+  let SC = vec3f( 1.60, 0.08, -0.25);
 
-  /* luminous lace / yarn interiors inside glass — lookref orange/red filament,
-     cyan hub cue (A), orange data core (B), green yarn (C). Not Graphic D. */
-  let puls = 0.86 + 0.14 * sin(u.time * 1.7);
-  e += glowPoint(p, SA, vec3f(0.30, 0.82, 1.00) * 1.55 * puls, 0.11, 1.0);
-  e += glowPoint(p, SB, vec3f(1.00, 0.42, 0.08) * 1.85 * puls, 0.13, 2.0);
-  e += glowPoint(p, SC, vec3f(0.28, 1.00, 0.42) * 1.55 * puls, 0.11, 3.0);
-  /* nested inner glow (glyph-cube feel) */
-  e += glowPoint(p, SA, vec3f(0.55, 0.90, 1.00) * 0.55 * puls, 0.22, 1.0);
-  e += glowPoint(p, SB, vec3f(1.00, 0.28, 0.10) * 0.70 * puls, 0.24, 2.0);
-  e += glowPoint(p, SC, vec3f(0.40, 1.00, 0.55) * 0.55 * puls, 0.22, 3.0);
-  /* tangled lace filaments inside each shell */
-  for (var i = 0; i < 8; i = i + 1) {
-    let t0 = f32(i) / 8.0; let t1 = f32(i + 1) / 8.0;
-    let ang0 = t0 * 9.4 + u.time * 0.35; let ang1 = t1 * 9.4 + u.time * 0.35;
-    let ra = 0.16 + 0.05 * sin(t0 * 12.0);
-    let rb = 0.18 + 0.06 * sin(t0 * 10.0 + 1.2);
-    let rc = 0.15 + 0.05 * cos(t0 * 11.0);
-    let a0 = SA + vec3f(cos(ang0) * ra, (t0 - 0.5) * 0.34, sin(ang0) * ra);
-    let a1 = SA + vec3f(cos(ang1) * ra, (t1 - 0.5) * 0.34, sin(ang1) * ra);
-    let b0 = SB + vec3f(cos(ang0 * 1.1) * rb, (t0 - 0.5) * 0.38, sin(ang0 * 1.1) * rb);
-    let b1 = SB + vec3f(cos(ang1 * 1.1) * rb, (t1 - 0.5) * 0.38, sin(ang1 * 1.1) * rb);
-    let c0 = SC + vec3f(cos(ang0 * 0.9) * rc, (t0 - 0.5) * 0.32, sin(ang0 * 0.9) * rc);
-    let c1 = SC + vec3f(cos(ang1 * 0.9) * rc, (t1 - 0.5) * 0.32, sin(ang1 * 0.9) * rc);
-    e += glowLine(p, a0, a1, vec3f(0.45, 0.88, 1.00) * 0.70, 0.008, 1.0);
-    e += glowLine(p, b0, b1, vec3f(1.00, 0.48, 0.12) * 0.95, 0.009, 2.0);
-    e += glowLine(p, c0, c1, vec3f(0.35, 1.00, 0.48) * 0.75, 0.008, 3.0);
-  }
-
-  /* crossing beams, arced — slightly thicker lookref cyan paths */
-  for (var i = 0; i < 5; i = i + 1) {
-    let t0 = f32(i) / 5.0; let t1 = f32(i + 1) / 5.0;
-    e += glowLine(p, arcPt(SA, SB, 0.55, t0), arcPt(SA, SB, 0.55, t1), vec3f(0.30, 0.78, 1.00) * 0.70, 0.016, 5.0);
-    e += glowLine(p, arcPt(SB, SC, 0.55, t0), arcPt(SB, SC, 0.55, t1), vec3f(0.30, 0.78, 1.00) * 0.70, 0.016, 6.0);
-    e += glowLine(p, arcPt(SC, SA, -0.70, t0), arcPt(SC, SA, -0.70, t1), vec3f(0.40, 0.86, 1.00) * 0.70, 0.016, 7.0);
-  }
-
-  /* WIRE OF LIGHT = Hands lace cord (Layer III only).
-     One luminous strand tying glass stations A/B/C through the axle spine.
-     Thicker cyan/gold cord (lattice lookrefs). Two ends (start → halt). Not CTC. */
-  let startEnd = vec3f(-2.85, -0.42, -0.95);
-  let haltEnd  = vec3f( 2.85, -0.52,  0.35);
-  e += glowLine(p, startEnd, SA, vec3f(0.40, 0.92, 1.00) * 1.25, 0.028, 4.0);
-  e += glowLine(p, SA, SB,    vec3f(0.40, 0.92, 1.00) * 1.45, 0.032, 4.0);
-  e += glowLine(p, SB, SC,    vec3f(0.40, 0.92, 1.00) * 1.45, 0.032, 4.0);
-  e += glowLine(p, SC, haltEnd, vec3f(0.40, 0.92, 1.00) * 1.25, 0.028, 4.0);
-  /* golden wisp sheath — lookref gold wire of light */
-  e += glowLine(p, startEnd, SA, vec3f(1.00, 0.82, 0.28) * 0.62, 0.048, 4.0);
-  e += glowLine(p, SA, SB,    vec3f(1.00, 0.82, 0.28) * 0.78, 0.055, 4.0);
-  e += glowLine(p, SB, SC,    vec3f(1.00, 0.82, 0.28) * 0.78, 0.055, 4.0);
-  e += glowLine(p, SC, haltEnd, vec3f(1.00, 0.82, 0.28) * 0.62, 0.048, 4.0);
-  e += glowPoint(p, startEnd, vec3f(1.00, 0.92, 0.55) * 1.05, 0.070, 4.0);
-  e += glowPoint(p, haltEnd,  vec3f(1.00, 0.92, 0.55) * 1.05, 0.070, 4.0);
-  /* denser winding near B (participation heat) — open helix, not closed */
-  for (var i = 0; i < 8; i = i + 1) {
-    let t0 = f32(i) / 8.0; let t1 = f32(i + 1) / 8.0;
-    let ang0 = t0 * 4.2; let ang1 = t1 * 4.2;
-    let r0 = 0.24 + 0.07 * sin(t0 * 6.28);
-    let r1 = 0.24 + 0.07 * sin(t1 * 6.28);
-    let w0 = SB + vec3f(cos(ang0) * r0, (t0 - 0.5) * 0.55, sin(ang0) * r0);
-    let w1 = SB + vec3f(cos(ang1) * r1, (t1 - 0.5) * 0.55, sin(ang1) * r1);
-    e += glowLine(p, w0, w1, vec3f(1.00, 0.84, 0.32) * 0.72, 0.013, 0.0);
-  }
-  /* soft floor trail echo under the cord */
-  for (var i = 0; i < 6; i = i + 1) {
-    let t0 = f32(i) / 6.0; let t1 = f32(i + 1) / 6.0;
-    let p0 = mix(startEnd, haltEnd, t0) + vec3f(0.0, FLOOR_Y_C + 0.08 - mix(startEnd, haltEnd, t0).y, 0.0);
-    let p1 = mix(startEnd, haltEnd, t1) + vec3f(0.0, FLOOR_Y_C + 0.08 - mix(startEnd, haltEnd, t1).y, 0.0);
-    e += glowLine(p, p0, p1, vec3f(1.00, 0.72, 0.22) * 0.32, 0.028, 0.0);
-  }
-
-  /* floor path arrow cues between regions (lookref cyan glyph arrows) — view only */
+  /* orange/red lace-filament cores inside glass (glyph feel) — all three primaries */
+  let puls = 0.88 + 0.12 * sin(u.time * 1.5);
+  let lace = vec3f(1.00, 0.40, 0.08);
+  let laceHot = vec3f(1.00, 0.22, 0.06);
+  e += glowPoint(p, SA, lace * 1.15 * puls, 0.09, 1.0);
+  e += glowPoint(p, SB, lace * 1.25 * puls, 0.10, 2.0);
+  e += glowPoint(p, SC, lace * 1.15 * puls, 0.09, 3.0);
+  e += glowPoint(p, SA, laceHot * 0.40 * puls, 0.18, 1.0);
+  e += glowPoint(p, SB, laceHot * 0.48 * puls, 0.20, 2.0);
+  e += glowPoint(p, SC, laceHot * 0.40 * puls, 0.18, 3.0);
+  /* fewer filament capsules (perf) — still reads as tangled lace */
   for (var i = 0; i < 4; i = i + 1) {
-    let t = (f32(i) + 0.5) / 4.0;
+    let t0 = f32(i) / 4.0; let t1 = f32(i + 1) / 4.0;
+    let ang0 = t0 * 8.6 + u.time * 0.28; let ang1 = t1 * 8.6 + u.time * 0.28;
+    let ra = 0.14 + 0.04 * sin(t0 * 11.0);
+    let rb = 0.16 + 0.05 * sin(t0 * 9.0 + 1.1);
+    let rc = 0.14 + 0.04 * cos(t0 * 10.0);
+    let a0 = SA + vec3f(cos(ang0) * ra, (t0 - 0.5) * 0.28, sin(ang0) * ra);
+    let a1 = SA + vec3f(cos(ang1) * ra, (t1 - 0.5) * 0.28, sin(ang1) * ra);
+    let b0 = SB + vec3f(cos(ang0 * 1.1) * rb, (t0 - 0.5) * 0.30, sin(ang0 * 1.1) * rb);
+    let b1 = SB + vec3f(cos(ang1 * 1.1) * rb, (t1 - 0.5) * 0.30, sin(ang1 * 1.1) * rb);
+    let c0 = SC + vec3f(cos(ang0 * 0.9) * rc, (t0 - 0.5) * 0.26, sin(ang0 * 0.9) * rc);
+    let c1 = SC + vec3f(cos(ang1 * 0.9) * rc, (t1 - 0.5) * 0.26, sin(ang1 * 0.9) * rc);
+    e += glowLine(p, a0, a1, lace * 0.55, 0.007, 1.0);
+    e += glowLine(p, b0, b1, lace * 0.70, 0.008, 2.0);
+    e += glowLine(p, c0, c1, lace * 0.55, 0.007, 3.0);
+  }
+
+  /* cyan wires of light / grid paths between regions (lookref trails) */
+  for (var i = 0; i < 3; i = i + 1) {
+    let t0 = f32(i) / 3.0; let t1 = f32(i + 1) / 3.0;
+    e += glowLine(p, arcPt(SA, SB, 0.28, t0), arcPt(SA, SB, 0.28, t1), vec3f(0.25, 0.82, 1.00) * 0.48, 0.012, 5.0);
+    e += glowLine(p, arcPt(SB, SC, 0.28, t0), arcPt(SB, SC, 0.28, t1), vec3f(0.25, 0.82, 1.00) * 0.48, 0.012, 6.0);
+    e += glowLine(p, arcPt(SC, SA, -0.22, t0), arcPt(SC, SA, -0.22, t1), vec3f(0.30, 0.86, 1.00) * 0.42, 0.011, 7.0);
+  }
+
+  /* WIRE OF LIGHT = Hands lace cord (Layer III). Gold/cyan through A–B–C.
+     Two ends (start → halt). Not CTC. */
+  let startEnd = vec3f(-2.70, -0.55, -0.85);
+  let haltEnd  = vec3f( 2.70, -0.55,  0.30);
+  e += glowLine(p, startEnd, SA, vec3f(0.35, 0.88, 1.00) * 0.85, 0.022, 4.0);
+  e += glowLine(p, SA, SB,    vec3f(0.35, 0.88, 1.00) * 1.00, 0.026, 4.0);
+  e += glowLine(p, SB, SC,    vec3f(0.35, 0.88, 1.00) * 1.00, 0.026, 4.0);
+  e += glowLine(p, SC, haltEnd, vec3f(0.35, 0.88, 1.00) * 0.85, 0.022, 4.0);
+  e += glowLine(p, startEnd, SA, vec3f(1.00, 0.78, 0.25) * 0.42, 0.040, 4.0);
+  e += glowLine(p, SA, SB,    vec3f(1.00, 0.78, 0.25) * 0.52, 0.045, 4.0);
+  e += glowLine(p, SB, SC,    vec3f(1.00, 0.78, 0.25) * 0.52, 0.045, 4.0);
+  e += glowLine(p, SC, haltEnd, vec3f(1.00, 0.78, 0.25) * 0.42, 0.040, 4.0);
+  e += glowPoint(p, startEnd, vec3f(1.00, 0.88, 0.45) * 0.70, 0.055, 4.0);
+  e += glowPoint(p, haltEnd,  vec3f(1.00, 0.88, 0.45) * 0.70, 0.055, 4.0);
+  /* light winding near B — 4 segs only */
+  for (var i = 0; i < 4; i = i + 1) {
+    let t0 = f32(i) / 4.0; let t1 = f32(i + 1) / 4.0;
+    let ang0 = t0 * 3.8; let ang1 = t1 * 3.8;
+    let r0 = 0.20 + 0.05 * sin(t0 * 6.28);
+    let r1 = 0.20 + 0.05 * sin(t1 * 6.28);
+    let w0 = SB + vec3f(cos(ang0) * r0, (t0 - 0.5) * 0.35, sin(ang0) * r0);
+    let w1 = SB + vec3f(cos(ang1) * r1, (t1 - 0.5) * 0.35, sin(ang1) * r1);
+    e += glowLine(p, w0, w1, vec3f(1.00, 0.80, 0.28) * 0.45, 0.010, 0.0);
+  }
+  /* floor trail under cord */
+  for (var i = 0; i < 4; i = i + 1) {
+    let t0 = f32(i) / 4.0; let t1 = f32(i + 1) / 4.0;
+    let m0 = mix(startEnd, haltEnd, t0);
+    let m1 = mix(startEnd, haltEnd, t1);
+    let p0 = vec3f(m0.x, FLOOR_Y_C + 0.06, m0.z);
+    let p1 = vec3f(m1.x, FLOOR_Y_C + 0.06, m1.z);
+    e += glowLine(p, p0, p1, vec3f(1.00, 0.70, 0.20) * 0.18, 0.022, 0.0);
+  }
+
+  /* cyan floor path arrow cues (lookref glyph arrows) — view only */
+  for (var i = 0; i < 3; i = i + 1) {
+    let t = (f32(i) + 0.5) / 3.0;
     let abm = mix(SA, SB, t);
     let bcm = mix(SB, SC, t);
-    let ab = vec3f(abm.x, FLOOR_Y_C + 0.04, abm.z);
-    let bc = vec3f(bcm.x, FLOOR_Y_C + 0.04, bcm.z);
-    let abDir = normalize(SB - SA) * 0.10;
-    let bcDir = normalize(SC - SB) * 0.10;
-    e += glowLine(p, ab - abDir, ab + abDir, vec3f(0.25, 0.90, 1.00) * 0.55, 0.012, 0.0);
-    e += glowPoint(p, ab + abDir * 1.4, vec3f(0.35, 0.95, 1.00) * 0.70, 0.035, 0.0);
-    e += glowLine(p, bc - bcDir, bc + bcDir, vec3f(0.25, 0.90, 1.00) * 0.55, 0.012, 0.0);
-    e += glowPoint(p, bc + bcDir * 1.4, vec3f(0.35, 0.95, 1.00) * 0.70, 0.035, 0.0);
+    let ab = vec3f(abm.x, FLOOR_Y_C + 0.035, abm.z);
+    let bc = vec3f(bcm.x, FLOOR_Y_C + 0.035, bcm.z);
+    let abDir = normalize(vec3f(SB.x - SA.x, 0.0, SB.z - SA.z)) * 0.09;
+    let bcDir = normalize(vec3f(SC.x - SB.x, 0.0, SC.z - SB.z)) * 0.09;
+    e += glowLine(p, ab - abDir, ab + abDir, vec3f(0.22, 0.88, 1.00) * 0.40, 0.010, 0.0);
+    e += glowPoint(p, ab + abDir * 1.35, vec3f(0.30, 0.92, 1.00) * 0.50, 0.028, 0.0);
+    e += glowLine(p, bc - bcDir, bc + bcDir, vec3f(0.22, 0.88, 1.00) * 0.40, 0.010, 0.0);
+    e += glowPoint(p, bc + bcDir * 1.35, vec3f(0.30, 0.92, 1.00) * 0.50, 0.028, 0.0);
   }
 
-  /* faint vertical uplink on axle/B — projection / axle deadbolt accent ONLY.
-     Not POINTER emission. Not Core. Label: view instrument. */
-  let up0 = vec3f(0.10, FLOOR_Y_C + 0.02, 0.35);
-  let up1 = vec3f(0.10, 3.40, 0.35);
-  e += glowLine(p, up0, up1, vec3f(0.55, 0.92, 1.00) * 0.48, 0.014, 4.0);
-  e += glowPoint(p, up0, vec3f(0.85, 0.95, 1.00) * 0.90, 0.09, 4.0);
-  e += glowPoint(p, mix(up0, up1, 0.55), vec3f(0.40, 0.85, 1.00) * 0.25, 0.18, 0.0);
+  /* faint vertical uplink on hub/B — projection ONLY, not POINTER */
+  let up0 = vec3f(0.05, FLOOR_Y_C + 0.02, 0.28);
+  let up1 = vec3f(0.05, 2.20, 0.28);
+  e += glowLine(p, up0, up1, vec3f(0.45, 0.88, 1.00) * 0.18, 0.010, 4.0);
+  e += glowPoint(p, up0, vec3f(0.70, 0.92, 1.00) * 0.35, 0.055, 4.0);
 
-  /* soft atmospheric wisps (lookref bloom energy) */
-  e += glowPoint(p, SA + vec3f(0.55, 0.95, -0.40), vec3f(0.20, 0.55, 0.90) * 0.18, 0.55, 0.0);
-  e += glowPoint(p, SB + vec3f(-0.35, 0.70, 0.55), vec3f(1.00, 0.55, 0.20) * 0.16, 0.60, 0.0);
-  e += glowPoint(p, SC + vec3f(-0.50, 0.85, 0.30), vec3f(0.25, 0.90, 0.50) * 0.16, 0.50, 0.0);
+  /* ambient idle cube cores — dim orange lace hints */
+  let ambC = array<vec3f, 8>(
+    vec3f(-2.80, FLOOR_Y_C + 0.18, -1.10),
+    vec3f(-2.10, FLOOR_Y_C + 0.16,  0.70),
+    vec3f(-0.90, FLOOR_Y_C + 0.15, -1.55),
+    vec3f( 0.70, FLOOR_Y_C + 0.15, -1.20),
+    vec3f( 1.15, FLOOR_Y_C + 0.16,  0.85),
+    vec3f( 2.45, FLOOR_Y_C + 0.17, -0.90),
+    vec3f(-1.20, FLOOR_Y_C + 0.14,  0.15),
+    vec3f( 2.05, FLOOR_Y_C + 0.14,  1.35)
+  );
+  for (var i = 0; i < 8; i = i + 1) {
+    e += glowPoint(p, ambC[i], lace * 0.22, 0.045, 0.0);
+  }
 
-  /* cluster orbs — green yarn spheres (ASTRA yarn = lace suggestion only) */
-  e += glowPoint(p, vec3f(-2.45, 0.55, 0.55), vec3f(0.22, 1.00, 0.46) * 0.95, 0.14,  8.0);
-  e += glowPoint(p, vec3f( 0.15, 1.85, -0.35), vec3f(0.22, 1.00, 0.46) * 0.95, 0.14,  9.0);
-  e += glowPoint(p, vec3f( 2.45, 0.40, 0.60), vec3f(0.22, 1.00, 0.46) * 0.95, 0.14, 10.0);
-  e += glowPoint(p, vec3f(-2.45, 0.55, 0.55), vec3f(0.55, 1.00, 0.70) * 0.45, 0.22,  8.0);
-  e += glowPoint(p, vec3f( 0.15, 1.85, -0.35), vec3f(0.55, 1.00, 0.70) * 0.45, 0.22,  9.0);
-  e += glowPoint(p, vec3f( 2.45, 0.40, 0.60), vec3f(0.55, 1.00, 0.70) * 0.45, 0.22, 10.0);
+  /* green yarn / sphere clusters — separate from C (ASTRA yarn = lace suggestion) */
+  let YA = vec3f(-2.35, 0.28, 0.85);
+  let YB = vec3f( 0.95, 0.32, 1.15);
+  let YC = vec3f( 2.20, 0.26, 0.55);
+  e += glowPoint(p, YA, vec3f(0.22, 1.00, 0.42) * 0.75, 0.12,  8.0);
+  e += glowPoint(p, YB, vec3f(0.22, 1.00, 0.42) * 0.80, 0.13,  9.0);
+  e += glowPoint(p, YC, vec3f(0.22, 1.00, 0.42) * 0.75, 0.12, 10.0);
+  e += glowPoint(p, YA, vec3f(0.45, 1.00, 0.60) * 0.28, 0.20,  8.0);
+  e += glowPoint(p, YB, vec3f(0.45, 1.00, 0.60) * 0.30, 0.22,  9.0);
+  e += glowPoint(p, YC, vec3f(0.45, 1.00, 0.60) * 0.28, 0.20, 10.0);
+  /* cyan links yarn ↔ nearby stations */
+  e += glowLine(p, YA, SA, vec3f(0.25, 0.85, 1.00) * 0.28, 0.008, 0.0);
+  e += glowLine(p, YB, SB, vec3f(0.25, 0.85, 1.00) * 0.28, 0.008, 0.0);
+  e += glowLine(p, YC, SC, vec3f(0.25, 0.85, 1.00) * 0.28, 0.008, 0.0);
 
-  /* tick cells t0..t6 */
+  /* haze/wisps heavily cut — dark void like lookrefs, not fog soup */
+  e += glowPoint(p, SA + vec3f(0.40, 0.55, -0.25), vec3f(0.15, 0.40, 0.70) * 0.04, 0.40, 0.0);
+  e += glowPoint(p, SB + vec3f(-0.20, 0.40, 0.35), vec3f(0.80, 0.40, 0.12) * 0.035, 0.42, 0.0);
+
+  /* tick cells t0..t6 — sparse floor marks */
   for (var i = 0; i < 7; i = i + 1) {
     let x = -2.4 + f32(i) * 0.8;
-    e += glowPoint(p, vec3f(x, FLOOR_Y_C + 0.02, 1.75), vec3f(0.22, 0.70, 0.86) * 0.40, 0.08, 11.0 + f32(i));
+    e += glowPoint(p, vec3f(x, FLOOR_Y_C + 0.02, 1.75), vec3f(0.20, 0.65, 0.80) * 0.22, 0.055, 11.0 + f32(i));
   }
-  /* escapement marks */
-  e += glowPoint(p, vec3f(-0.85, FLOOR_Y_C + 0.05, -1.35), vec3f(1.00, 0.76, 0.28) * 0.45, 0.06, 18.0);
-  e += glowPoint(p, vec3f( 0.90, FLOOR_Y_C + 0.05, -1.35), vec3f(1.00, 0.76, 0.28) * 0.45, 0.06, 19.0);
-  e += glowPoint(p, vec3f( 0.10, FLOOR_Y_C + 0.05, -2.05), vec3f(1.00, 0.76, 0.28) * 0.45, 0.06, 20.0);
-  /* audit stamps — dim warning hue */
+  e += glowPoint(p, vec3f(-0.85, FLOOR_Y_C + 0.05, -1.35), vec3f(1.00, 0.72, 0.25) * 0.28, 0.05, 18.0);
+  e += glowPoint(p, vec3f( 0.90, FLOOR_Y_C + 0.05, -1.35), vec3f(1.00, 0.72, 0.25) * 0.28, 0.05, 19.0);
+  e += glowPoint(p, vec3f( 0.10, FLOOR_Y_C + 0.05, -2.05), vec3f(1.00, 0.72, 0.25) * 0.28, 0.05, 20.0);
   for (var i = 0; i < 6; i = i + 1) {
     let x = -2.0 + f32(i) * 0.8;
-    e += glowPoint(p, vec3f(x, FLOOR_Y_C + 0.04, -2.70), vec3f(0.90, 0.32, 0.20) * 0.30, 0.06, 21.0 + f32(i));
+    e += glowPoint(p, vec3f(x, FLOOR_Y_C + 0.04, -2.70), vec3f(0.85, 0.30, 0.18) * 0.18, 0.045, 21.0 + f32(i));
   }
   return e;
 }
@@ -851,11 +891,11 @@ fn floorColor(q : vec2f, foot : f32) -> vec3f {
   let dots = select(0.0, near, h > 0.88);
   let ticks = select(0.0, 1.0 - smoothstep(0.0, w * 2.5, min(gx, gz)), h > 0.78 && h <= 0.88);
   let fade = exp(-length(q) * 0.28);
-  return (vec3f(0.08, 0.40, 0.52) * minor * 0.55
-        + vec3f(0.12, 0.55, 0.70) * mid * 0.70
-        + vec3f(0.22, 0.82, 1.00) * major * 1.45
-        + vec3f(0.55, 0.90, 1.00) * dots * 0.85
-        + vec3f(1.00, 0.78, 0.30) * ticks * 0.35) * fade * res;
+  return (vec3f(0.05, 0.22, 0.30) * minor * 0.35
+        + vec3f(0.08, 0.35, 0.45) * mid * 0.45
+        + vec3f(0.14, 0.55, 0.70) * major * 0.85
+        + vec3f(0.40, 0.75, 0.90) * dots * 0.45
+        + vec3f(0.90, 0.65, 0.22) * ticks * 0.22) * fade * res;
 }
 
 /* the whole picture, as a function of NDC — so it can be run from a compute
@@ -881,29 +921,39 @@ fn shade(ndc : vec2f) -> vec3f {
     if (tf > 0.0) { tFloor = tf; }
   }
 
-  for (var i = 0; i < 110; i = i + 1) {
+  var interiorHits = 0;
+  for (var i = 0; i < 64; i = i + 1) {
     let p = ro + rd * t;
     let g = mapGlass(p);
-    let step = clamp(max(g.x, 0.018) * 0.8, 0.018, 0.55);
+    /* larger min step + clamp — fewer near-surface thrash loops */
+    let step = clamp(max(g.x, 0.028) * 0.85, 0.028, 0.70);
 
-    /* volumetric emission; the threshold keeps far-field haze off the sky */
-    let em = max(emitField(p) - vec3f(0.020), vec3f(0.0));
-    col += em * step * trans * 0.30;
+    /* volumetric emission; threshold keeps far-field haze off the sky */
+    let em = max(emitField(p) - vec3f(0.028), vec3f(0.0));
+    col += em * step * trans * 0.22;
 
-    if (g.x < 0.006) {
-      let e = vec2f(0.002, 0.0);
-      let n = normalize(vec3f(
-        mapGlass(p + e.xyy).x - mapGlass(p - e.xyy).x,
-        mapGlass(p + e.yxy).x - mapGlass(p - e.yxy).x,
-        mapGlass(p + e.yyx).x - mapGlass(p - e.yyx).x));
-      let fres = pow(1.0 - abs(dot(n, rd)), 2.6);
-      let tint = select(select(vec3f(0.22, 1.00, 0.44), vec3f(1.00, 0.42, 0.08), g.y < 2.5),
-                        vec3f(0.28, 0.80, 1.00), g.y < 1.5);
-      /* clearer glass shell + luminous interior bleed */
-      col += (vec3f(0.65, 0.85, 1.00) * 0.38 + tint * 0.72) * fres * trans * hiMul(g.y);
-      col += tint * 0.12 * trans * hiMul(g.y);
-      trans *= 0.78;
-      t += 0.045;
+    if (g.x < 0.008) {
+      interiorHits = interiorHits + 1;
+      /* skip full 6× mapGlass normals on alternate hits (perf) */
+      if ((interiorHits & 1) == 1) {
+        let e = vec2f(0.003, 0.0);
+        let n = normalize(vec3f(
+          mapGlass(p + e.xyy).x - mapGlass(p - e.xyy).x,
+          mapGlass(p + e.yxy).x - mapGlass(p - e.yxy).x,
+          mapGlass(p + e.yyx).x - mapGlass(p - e.yyx).x));
+        let fres = pow(1.0 - abs(dot(n, rd)), 2.2) * 0.55;
+        /* ambient idle cubes: cool glass; primaries: soft orange lace bleed */
+        let tint = select(vec3f(0.55, 0.75, 0.90),
+                          select(select(vec3f(1.00, 0.38, 0.10), vec3f(1.00, 0.45, 0.08), g.y < 2.5),
+                                 vec3f(1.00, 0.42, 0.10), g.y < 1.5),
+                          g.y < 29.5);
+        col += (vec3f(0.45, 0.65, 0.85) * 0.18 + tint * 0.35) * fres * trans * hiMul(min(g.y, 3.0));
+        col += tint * 0.06 * trans * hiMul(min(g.y, 3.0));
+      }
+      trans *= 0.82;
+      t += 0.055;
+      /* cap interior march cost — avoid freeze inside glass */
+      if (interiorHits > 6) { t += 0.12; }
       continue;
     }
 
@@ -915,13 +965,13 @@ fn shade(ndc : vec2f) -> vec3f {
     }
 
     t += step;
-    if (t > 26.0 || trans < 0.02) { break; }
+    if (t > 22.0 || trans < 0.025) { break; }
   }
 
-  /* atmospheric lift + filmic roll-off — lookref bloom without washing cubes */
-  col = col * 4.8 + vec3f(0.001, 0.002, 0.004);
-  col = col / (col + vec3f(0.48));
-  col = pow(col, vec3f(0.80));
+  /* modest gain + gentler filmic — dark floor stays dark; cubes glow without white pillar */
+  col = col * 1.25 + vec3f(0.0005, 0.001, 0.002);
+  col = col / (col + vec3f(0.85));
+  col = pow(max(col, vec3f(0.0)), vec3f(0.92));
   return col;
 }
 
@@ -940,18 +990,37 @@ fn fs_main(input : VSOut) -> @location(0) vec4f {
     if (!context) { gpuError.hidden = false; return null; }
     const format = navigator.gpu.getPreferredCanvasFormat();
 
-    function resize() {
-      /* glow-heavy look: internal res below dpr keeps phones smooth */
-      const dpr = Math.min(window.devicePixelRatio || 1, 1.35);
+    let lost = false;
+    device.lost.then((info) => {
+      lost = true;
+      console.warn("WebGPU device lost", info);
+    });
+
+    let resizePending = null;
+    let lastCfgW = 0, lastCfgH = 0;
+    function resizeNow() {
+      /* portrait: 0.75× backing store for march cost; CSS size unchanged */
+      const aspectCss = canvas.clientWidth / Math.max(canvas.clientHeight, 1);
+      const dprCap = aspectCss < 0.78 ? 0.75 : Math.min(window.devicePixelRatio || 1, 1.25);
+      const dpr = Math.min(window.devicePixelRatio || 1, dprCap);
       const w = Math.max(1, Math.floor(canvas.clientWidth * dpr));
       const h = Math.max(1, Math.floor(canvas.clientHeight * dpr));
       if (canvas.width !== w || canvas.height !== h) {
         canvas.width = w; canvas.height = h;
+      }
+      if (w !== lastCfgW || h !== lastCfgH) {
         context.configure({ device, format, alphaMode: "opaque" });
+        lastCfgW = w; lastCfgH = h;
       }
       return [w, h];
     }
-    resize();
+    function resize() {
+      /* debounce resize storms (mobile chrome URL bar) */
+      if (resizePending != null) return [canvas.width || 1, canvas.height || 1];
+      resizePending = requestAnimationFrame(() => { resizePending = null; resizeNow(); });
+      return resizeNow();
+    }
+    resizeNow();
 
     const uniformBuffer = device.createBuffer({
       size: 64, usage: GPUBufferUsage.UNIFORM | GPUBufferUsage.COPY_DST,
@@ -969,26 +1038,28 @@ fn fs_main(input : VSOut) -> @location(0) vec4f {
     });
 
     /* ——— orbit / zoom camera with real control ———
-       Default frames A/B/C cluster cubes + wire of light (not empty floor).
-       TARGET = geometric center of stations, slightly below visual interest so
-       content sits upper-middle above HUD/legend/telemetry. Portrait widens FOV
-       and pulls SCENE_R in so primary cubes are not edge-clipped. */
-    const TARGET = [0.03, 0.24, -0.10]; /* geo center A/B/C; HUD bias */
-    const DEFAULT_YAW = -0.88;
-    const DEFAULT_PITCH = 0.52; /* elevated 3/4 toward B / axle */
-    let yaw = DEFAULT_YAW, pitch = DEFAULT_PITCH, radius = 5.0, userTouched = false;
+       Lookref framing: elevated isometric OVER the cluster field so MULTIPLE
+       cubes + floor grid + wires sit in frame center (not one clipped box).
+       Portrait: pull-back radius, NOT extreme FOV warp.
+       Approximate NDC: A/B/C centers land in central ~60% for default cam. */
+    const TARGET = [0.05, -0.35, 0.00]; /* floor-centered cluster centroid */
+    const DEFAULT_YAW = -0.72;
+    const DEFAULT_PITCH = 0.62; /* high 3/4 looking down across field */
+    let yaw = DEFAULT_YAW, pitch = DEFAULT_PITCH, radius = 7.2, userTouched = false;
 
-    /* Bound = cluster triangle + wire midspan — not audits/ticks at z±2.7 */
-    const SCENE_R = 2.60;
-    const FOV_DESKTOP = 0.78;
-    const FOV_PORTRAIT = 0.98;
+    /* Bound = triad + ambient field — pull back enough to see all three + wire */
+    const SCENE_R = 3.35;
+    const FOV_DESKTOP = 0.72;
+    const FOV_PORTRAIT = 0.82; /* prefer radius over insane FOV */
     function fovFor(aspect) { return aspect < 0.78 ? FOV_PORTRAIT : FOV_DESKTOP; }
     function autoRadius(aspect) {
       const fov = fovFor(aspect);
       const halfV = Math.atan(fov);
       const halfH = Math.atan(fov * aspect);
       const d = SCENE_R / Math.sin(Math.min(halfV, halfH));
-      return Math.min(11, Math.max(3.8, d * 1.02));
+      /* portrait: extra pull-back so field stays centered */
+      const pad = aspect < 0.78 ? 1.18 : 1.08;
+      return Math.min(12, Math.max(5.5, d * pad));
     }
     function camEye() {
       const cp = Math.cos(pitch), sp = Math.sin(pitch);
@@ -1009,8 +1080,11 @@ fn fs_main(input : VSOut) -> @location(0) vec4f {
       device.queue.writeBuffer(uniformBuffer, 0, d);
     }
 
+    let rafId = 0;
     function frame(ts) {
-      const [w, h] = resize();
+      rafId = 0;
+      if (lost) return;
+      const [w, h] = resizeNow();
       const aspect = w / Math.max(h, 1);
       if (!userTouched) radius = autoRadius(aspect);
       const eye = camEye();
@@ -1022,20 +1096,27 @@ fn fs_main(input : VSOut) -> @location(0) vec4f {
 
       writeUniforms(w, h, eye, fovScale, KEY_ID[highlightKey] || 0, ts * 0.001);
 
-      const enc = device.createCommandEncoder();
-      const pass = enc.beginRenderPass({
-        colorAttachments: [{
-          view: context.getCurrentTexture().createView(),
-          clearValue: { r: 0.004, g: 0.006, b: 0.012, a: 1 },
-          loadOp: "clear", storeOp: "store",
-        }],
-      });
-      pass.setPipeline(pipeline);
-      pass.setBindGroup(0, bindGroup);
-      pass.draw(3);
-      pass.end();
-      device.queue.submit([enc.finish()]);
-      requestAnimationFrame(frame);
+      try {
+        const enc = device.createCommandEncoder();
+        const pass = enc.beginRenderPass({
+          colorAttachments: [{
+            view: context.getCurrentTexture().createView(),
+            clearValue: { r: 0.004, g: 0.006, b: 0.012, a: 1 },
+            loadOp: "clear", storeOp: "store",
+          }],
+        });
+        pass.setPipeline(pipeline);
+        pass.setBindGroup(0, bindGroup);
+        pass.draw(3);
+        pass.end();
+        device.queue.submit([enc.finish()]);
+      } catch (err) {
+        console.warn("frame submit failed", err);
+        lost = true;
+        return;
+      }
+      /* single rAF chain — never stack parallel frames */
+      if (!lost && rafId === 0) rafId = requestAnimationFrame(frame);
     }
 
     /* ——— pick targets (world points projected with the live camera) ——— */
@@ -1047,9 +1128,9 @@ fn fs_main(input : VSOut) -> @location(0) vec4f {
       { key: "axle", pos: [ 2.15, -0.28, 0.00], radius: 0.24 },
     ];
     const mid = (a, b, lift) => [(a[0]+b[0])/2, (a[1]+b[1])/2 + lift, (a[2]+b[2])/2];
-    pickTargets.push({ key: "AB", pos: mid(STATION.A.pos, STATION.B.pos, 0.55), radius: 0.34, mesh: true });
-    pickTargets.push({ key: "BC", pos: mid(STATION.B.pos, STATION.C.pos, 0.55), radius: 0.34, mesh: true });
-    pickTargets.push({ key: "CA", pos: mid(STATION.C.pos, STATION.A.pos, -0.70), radius: 0.36, mesh: true });
+    pickTargets.push({ key: "AB", pos: mid(STATION.A.pos, STATION.B.pos, 0.28), radius: 0.34, mesh: true });
+    pickTargets.push({ key: "BC", pos: mid(STATION.B.pos, STATION.C.pos, 0.28), radius: 0.34, mesh: true });
+    pickTargets.push({ key: "CA", pos: mid(STATION.C.pos, STATION.A.pos, -0.22), radius: 0.36, mesh: true });
     for (const k of ["A1", "B1", "C1"]) pickTargets.push({ key: k, pos: CLUSTER_POS[k], radius: 0.30, mesh: true });
     for (let i = 0; i < 7; i++) pickTargets.push({ key: "t" + i, pos: TICK_POS[i], radius: 0.28, mesh: true });
     for (const k of ["E1", "E2", "R1"]) pickTargets.push({ key: k, pos: ESCAPE_POS[k], radius: 0.20, mesh: true });
@@ -1124,8 +1205,8 @@ fn fs_main(input : VSOut) -> @location(0) vec4f {
       yaw = DEFAULT_YAW; pitch = DEFAULT_PITCH; userTouched = false;
     });
 
-    window.addEventListener("resize", () => resize());
-    requestAnimationFrame(frame);
+    window.addEventListener("resize", () => { resize(); });
+    rafId = requestAnimationFrame(frame);
     return true;
   }
 
