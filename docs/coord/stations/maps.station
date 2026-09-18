@@ -1,7 +1,7 @@
-STATUS: HELD
+STATUS: FREE
 STATION: maps
 OWNS: docs/reason-model-map.md docs/rust-nostd-*.md docs/atomic-primitives-map.md docs/clock/gearing-code-1to1.md docs/coherence-audit*.md docs/clock/system-mathematical-model.md docs/defrag-plan.md docs/plans/**
-AGENT: Claude-Projection
-BASE: a8e58511f31abec75b3cc34309aaa821d69f5e26
-SINCE: 2026-09-18T22:40:51Z
+AGENT: -
+BASE: -
+SINCE: -
 NOTE: 
