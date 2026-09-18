@@ -9,6 +9,6 @@ KEEP/FORBID mappings of the five stake texts onto the shoe. Not Core. Not an emi
 | rowlands-zero-to-infinity-clipboard.md | Rowlands |
 | xiao-zhu-foundations-clipboard.md | Xiao & Zhu |
 | agentscope-clipboard.md | AgentScope |
-| — | Petersen: **STATUS: unfilled** (prompt only: `docs/prompts/petersen-zech-clipboard-prompt.md`) |
+| [petersen-zech-clipboard.md](petersen-zech-clipboard.md) | Petersen & Zech: source-reading pass complete (sheets A–F and X); no Core or emission acceptance. |
 
 POINTER emission stays `[GAP]`.

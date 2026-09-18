@@ -108,7 +108,7 @@ These constraints apply to `docs/shadow-clock-gearing.html` and any Layer-III in
 
 ## BEFORE YOU DROP (claim / release — mandatory)
 
-Layer III multi-agent coordination. Protocol: [`docs/gearing/CLAIMS.md`](gearing/CLAIMS.md). Tool: [`docs/gearing/claim.sh`](gearing/claim.sh).
+Layer III multi-agent coordination. Protocol: [`docs/gearing/CLAIMS.md`](../gearing/CLAIMS.md). Tool: [`docs/gearing/claim.sh`](../gearing/claim.sh).
 
 **Law:** One shaft per agent. Zero or one drop per shaft per tick. If you cannot tell whether a shaft is held → **it is held**.
 

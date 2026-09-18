@@ -10,9 +10,9 @@ This documentation integration creates no Core implementation, pointer-emission 
 
 | File | Use |
 |---|---|
-| [docs/kit/agent-control.md](docs/kit/agent-control.md) | Portable standing prompt. Contains the author's staking law verbatim, then the operating controls. |
-| [docs/kit/agent-task-template.md](docs/kit/agent-task-template.md) | Reusable one-task, adjudication, proof-contract, and handoff forms. |
-| [docs/kit/downstream-audit.md](docs/kit/downstream-audit.md) | Evidence, concrete failure paths, source corrections, and agent challenge cases. |
+| [docs/kit/agent-control.md](agent-control.md) | Portable standing prompt. Contains the author's staking law verbatim, then the operating controls. |
+| [docs/kit/agent-task-template.md](agent-task-template.md) | Reusable one-task, adjudication, proof-contract, and handoff forms. |
+| [docs/kit/downstream-audit.md](downstream-audit.md) | Evidence, concrete failure paths, source corrections, and agent challenge cases. |
 
 Read the audit before giving agents repository write permissions. Use the full control prompt plus one filled task form for an agent that cannot load repository instructions. An agent that can load the repository should also inspect the actual current sources. No wrapper summary is a substitute for the law.
 

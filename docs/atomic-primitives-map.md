@@ -67,7 +67,7 @@ This table covers **all 15 manifest pieces**. A composition here identifies stru
 | Clock tick | One legal append, P4, as counted in the live law. | Neither elapsed time nor a holder's request establishes that a legal append occurred. G2 still controls the missing construction rule. |
 | Focus / zoom / camera | A selected view of existing structure. | Focus is not the append frontier. Picture depth is not contact admission or POINTER arity. |
 
-Sources: [live law, Clock and Meaning](law-why-these-documents.md), [mathematical model §2.3.1](system-mathematical-model.md), [pass-5 sit map](history-recovered-pass-5-sit.md), and [visual vocabulary](hologram/visual-primitives.md).
+Sources: [live law, Clock and Meaning](law-why-these-documents.md), [mathematical model §2.3.1](clock/system-mathematical-model.md), [pass-5 sit map](history/history-recovered-pass-5-sit.md), and [visual vocabulary](hologram/visual-primitives.md).
 
 ## 3. Concrete witness: Graphic D's existing example
 
@@ -148,10 +148,10 @@ Closing G2 is necessary for Core construction and does not automatically close G
 | HCC-A driver; clock train A | Reality → Interface; parallel RIC and PFC; Compiler; Story Ledger; Meaning Engine; Emotional Layer; Identity/State Layer; Behavior; feedback to Reality. Its S0–S7 phases and Six-Act cycle organize this same holder process. | `[H]`. Ledger addition/merge/re-index/delete and meaning weights remain inside the holder. B is its observable output; B does not specify G2. |
 | Coffee Cup phase; clock train B | Conditions, Release, Trajectory, Impact, Aftermath; Aftermath changes subsequent Conditions. Trajectory is the intervention window. | `[H]`. No stage rewrites a historical Lace occurrence or decides POINTER emission. |
 | Water/Proofing clutch; clock train C | Banks, Rapids, Delta, Crossing, Bank Rebuild; OBS, DELTA, UNK, INVALID; Locate, Anchor, Pair, Unknowns, Reject. | `[H]`. Pointability and shared comparison organize talk. An OBS address is not a Graphic D position; Anchor is not P3/P4. |
-| Coupled clock | Co-presence cells t0–t6, Lock/Release escapement, Aftermath/Rebuild/ActVI recurrence, and six boundary audits. | Holder composition and `[III]` display. The [walk artifact](shadow-clock-gear-contracts.md) controls the panel copies. It does not supply G2. |
+| Coupled clock | Co-presence cells t0–t6, Lock/Release escapement, Aftermath/Rebuild/ActVI recurrence, and six boundary audits. | Holder composition and `[III]` display. The [walk artifact](clock/shadow-clock-gear-contracts.md) controls the panel copies. It does not supply G2. |
 | Visual primitives | Worldline, slice, stream, helix, shells, projected crossings; holder recirculation may be shown as a torus. | `[III]`. No closed Core ends, vortex reconnection write, stored coordinates, or dynamical physics inferred from a picture. |
 
-Source crosswalk: HCC-A §§1–5; *The Coffee Cup*, Stages One–Five and its loop; *Where the Water Is Loud*, Specs §§1–4, 6; repository [philosophy map](philosophy-map.md), [hologram](shadow-clock-hologram.md), [walks](shadow-clock-gear-contracts.md), and [visual vocabulary](hologram/visual-primitives.md).
+Source crosswalk: HCC-A §§1–5; *The Coffee Cup*, Stages One–Five and its loop; *Where the Water Is Loud*, Specs §§1–4, 6; repository [philosophy map](clock/philosophy-map.md), [hologram](clock/shadow-clock-hologram.md), [walks](clock/shadow-clock-gear-contracts.md), and [visual vocabulary](hologram/visual-primitives.md).
 
 The five academic stakes also supply no atomic Core operator. Kauffman's later grab and diagram/cord distinction, Rowlands' empty start, Xiao–Zhu's arrival-order contrast, Petersen–Zech's function/construction distinction, and AgentScope's holder failure taxonomy retain exactly the KEEP/FORBID boundaries in the full law and [reason-model map](reason-model-map.md). This task does not reopen their rejected constructions.
 

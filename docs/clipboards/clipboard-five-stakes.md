@@ -1,10 +1,10 @@
 # CLIPBOARD — laceArc five-stake mappings
 
 Layer III reading aid. Not a sixth graphic. Not Core.
-Source of the mapping: [reason-model-map.md](reason-model-map.md).
-Source of record: [graphics A–D](graphics/README.md).
+Source of the mapping: [reason-model-map.md](../reason-model-map.md).
+Source of record: [graphics A–D](../graphics/README.md).
 
-Checked against `cffe7e55a7a251b7a21263bda7498e9174d13618` and the supplied editions. This is a verification of the clipboard's wording and source locations, not a new mapping pass or a change to the completed N = 3 verdicts. The full [staking law](staking-the-workspace.md) and [live law](law-why-these-documents.md) remain binding.
+Checked against `cffe7e55a7a251b7a21263bda7498e9174d13618` and the supplied editions. This is a verification of the clipboard's wording and source locations, not a new mapping pass or a change to the completed N = 3 verdicts. The full [staking law](../staking-the-workspace.md) and [live law](../law-why-these-documents.md) remain binding.
 
 KEEP/FORBID records **Lace's admission boundary**. It does not imply that an adjacent author claims to implement Lace. The source checks below distinguish what each text says from the project restriction applied to it. PDF page numbers are one-based positions in the supplied files; printed page numbers are stated separately.
 

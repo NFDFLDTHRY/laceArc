@@ -1003,4 +1003,4 @@ POINTER emission = `[GAP]`.
 | [docs/clock/system-mathematical-model.md](system-mathematical-model.md) | Formal dual-universe model derived from these walks; emission remains [GAP]. |
 | [docs/clock/shadow-clock-hologram.md](shadow-clock-hologram.md) | Diagram under test |
 | [docs/clock/shadow-clock-agent-brief.md](shadow-clock-agent-brief.md) | Standing brief |
-| [docs/shadow-clock-gearing.html](shadow-clock-gearing.html) | Layer-III gearing projection |
+| [docs/shadow-clock-gearing.html](../shadow-clock-gearing.html) | Layer-III gearing projection |

@@ -2,11 +2,11 @@
 
 **[III] read-only projection. Hands win. POINTER emission = [GAP].**
 
-Execution of [the Petersen–Zech clipboard prompt](petersen-zech-clipboard-prompt.md), with sheets A–F and X rendered as Markdown tables. This is a source-reading artifact, not a new mapping pass that reopens Core.
+Execution of [the Petersen–Zech clipboard prompt](../prompts/petersen-zech-clipboard-prompt.md), with sheets A–F and X rendered as Markdown tables. This is a source-reading artifact, not a new mapping pass that reopens Core.
 
 **Source:** Philipp Petersen & Jakob Zech, *Mathematical theory of deep learning*, arXiv:2407.18384v4. The attached cover is dated January 16, 2026; its arXiv version stamp is January 15, 2026. Local attachment: `04-2407.18384v4.pdf`, 333 PDF pages, text layer present. SHA-256: `a8505f3de280cb1c6f9742161471fadc52c21340afc05efe4549bd58c84383fa`. The PDF stays outside git. All “eye” entries below are paraphrases, not quotations.
 
-**Authority:** [graphics A–D](graphics/README.md), [systems manifest](systems-manifest.md), the complete [staking law](staking-the-workspace.md), and the complete [live law](law-why-these-documents.md). These links retain the full laws; this clipboard does not replace them. Comparisons use [reason-model-map §4](reason-model-map.md#4-petersen--zech--mathematical-theory-of-deep-learning), P1–P7. Those IDs name that section's book mappings, not additional Lace primitives.
+**Authority:** [graphics A–D](../graphics/README.md), [systems manifest](../systems-manifest.md), the complete [staking law](../staking-the-workspace.md), and the complete [live law](../law-why-these-documents.md). These links retain the full laws; this clipboard does not replace them. Comparisons use [reason-model-map §4](../reason-model-map.md#4-petersen--zech--mathematical-theory-of-deep-learning), P1–P7. Those IDs name that section's book mappings, not additional Lace primitives.
 
 **Notation:** → records a source statement or a labeled comparison; ↛ rejects the proposed substitution. Neither arrow writes a POINTER. The book's Φ denotes a realized function, not a Lace emission rule. [H] means the holder; [X] marks a forbidden crossing into Graphic D's array authority, not the array's layer number. The clipboard itself remains [III].
 
@@ -96,7 +96,7 @@ Execution of [the Petersen–Zech clipboard prompt](petersen-zech-clipboard-prom
 
 Retrieval check repeated over all 333 text-layer pages: case-insensitive whole-word searches for `lace`, `emission`, and the forms `append`, `appends`, `appended`, `appending` found no matches. `pointer`/`pointers` matched only PDF pp.18 and 290, both references to other literature. This lexical check helps locate passages; it is not a full-book semantic proof. “Appendix” is not an append operation.
 
-The current [pointer-emission draft](pointer-emission.md) exists, explicitly unanswered and unaccepted. Its §4 reopens whether a POINTER may target a POINTER, although Graphic D3/D6, manifest Piece 5, and agent-control C05 already permit that target kind. **[CONFLICT]** Keep that permission distinct from the unresolved choice of which earlier targets, when, and with what arity. The manifest also explicitly rejects “every adjacent WORD pair emits a pointer”; this rejected candidate does not settle adjacency's meaning or supply a replacement rule. This clipboard changes neither document.
+The current [pointer-emission draft](../pointer-emission.md) exists, explicitly unanswered and unaccepted. Its §4 reopens whether a POINTER may target a POINTER, although Graphic D3/D6, manifest Piece 5, and agent-control C05 already permit that target kind. **[CONFLICT]** Keep that permission distinct from the unresolved choice of which earlier targets, when, and with what arity. The manifest also explicitly rejects “every adjacent WORD pair emits a pointer”; this rejected candidate does not settle adjacency's meaning or supply a replacement rule. This clipboard changes neither document.
 
 ## PAGE X — CROSS-CUT
 

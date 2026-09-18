@@ -2,7 +2,7 @@
 
 18 September 2026 | Repository revision `4fe984bb098d5ca21c9704234df4fddd53056efb`
 
-This is the pre-integration audit. Its dated findings and experiments are retained below. See [READ_ME_FIRST.md](../READ_ME_FIRST.md) for the documentation integration that followed: entry-point wording and routing have been aligned, while enforcement remains unestablished. Publishing the controls does not accept pointer emission.
+This is the pre-integration audit. Its dated findings and experiments are retained below. See [READ_ME_FIRST.md](READ_ME_FIRST.md) for the documentation integration that followed: entry-point wording and routing have been aligned, while enforcement remains unestablished. Publishing the controls does not accept pointer emission.
 
 The project has a strong structural boundary and an unresolved construction rule. The immediate risk is that an agent turns incomplete prose, an old implementation prompt, or a successful advisory check into authority to invent that rule.
 

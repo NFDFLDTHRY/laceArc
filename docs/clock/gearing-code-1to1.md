@@ -2,13 +2,15 @@
 
 **Layer III audit. Nine sheets, A–H and X. The 47 proposed names form a bijection with the registry; the strict implemented visual/prose/code correspondence is BROKEN. POINTER emission remains [GAP].**
 
-Execution of [the gearing audit prompt](gearing-code-1to1-prompt.md), against main at **44711d31714d18bd417ae5b9e3fc8bbd260596c0**. This completes the audit document, not the renderer repairs or a future implementation.
+Execution of [the gearing audit prompt](../prompts/gearing-code-1to1-prompt.md), against main at **44711d31714d18bd417ae5b9e3fc8bbd260596c0**. This completes the audit document, not the renderer repairs or a future implementation.
 
 **Commit re-anchor:** reconciled with **6fb2dacc4d25460bd000cf43e4700cb9949e6b77** before committing the pending documents. The registry and controlling sources are unchanged. Page F now includes the upstream contact-band priority, gold pair highlighting, and changed camera, with the earlier picker measurements retained under their original revision.
 
+**Publication scope (upstream b7ed9a6):** the renderer was subsequently restyled in 12e4021 and this document moved into docs/clock/. Renderer findings and uses of “current” below refer to the measured revisions 44711d3 and 6fb2dac. The restyled renderer has not been rerun through this audit; its visual and picker results are NOT_TESTED here. The earlier pixel-debt note is retained as a dated observation, not a statement that the restyle is still absent.
+
 **Question:** Does each current gearing contract key have exactly one identified code counterpart, with a traceable prose source and selectable visual representation, without crossing into Lace Core?
 
-Authority remains the [canonical graphics](graphics/README.md), [systems manifest](systems-manifest.md), complete [staking law](staking-the-workspace.md), complete [live law](law-why-these-documents.md), [standing orders](../AGENTS.md), and [agent controls](agent-control.md). For the clock, read the [hologram](shadow-clock-hologram.md) and [walk artifact](shadow-clock-gear-contracts.md). Panel copies cannot overrule that prose.
+Authority remains the [canonical graphics](../graphics/README.md), [systems manifest](../systems-manifest.md), complete [staking law](../staking-the-workspace.md), complete [live law](../law-why-these-documents.md), [standing orders](../../AGENTS.md), and [agent controls](../kit/agent-control.md). For the clock, read the [hologram](shadow-clock-hologram.md) and [walk artifact](shadow-clock-gear-contracts.md). Panel copies cannot overrule that prose.
 
 ## PAGE A — WHAT “1:1” MEANS HERE
 
@@ -28,9 +30,9 @@ The prompt's literal “every gearing-related code unit” also encounters share
 
 ## PAGE B — TWO UNIVERSES AND THE STAMP LEGEND
 
-All Page D units belong to **Layer III Shadow tooling**. None belongs in the seven planned Hands doors in [the Rust crate map](rust-nostd-crate-map.md). Those doors remain a separate conditional plan; these 47 names neither add 47 crates nor authorize simultaneous branch births.
+All Page D units belong to **Layer III Shadow tooling**. None belongs in the seven planned Hands doors in [the Rust crate map](../rust-nostd-crate-map.md). Those doors remain a separate conditional plan; these 47 names neither add 47 crates nor authorize simultaneous branch births.
 
-The crate map and [branch contracts](rust-nostd-branch-contracts.md) are plans already represented on main; the local crate-map revision is included in this documentation commit. The [pointer-emission draft](pointer-emission.md) remains unanswered and unaccepted. The [elephant-clock interaction model](agent-interaction-model.md) concerns steward operation and is not another LACE_CONTRACTS key set.
+The crate map and [branch contracts](../rust-nostd-branch-contracts.md) are plans already represented on main; the local crate-map revision is included in this documentation commit. The [pointer-emission draft](../pointer-emission.md) remains unanswered and unaccepted. The [elephant-clock interaction model](agent-interaction-model.md) concerns steward operation and is not another LACE_CONTRACTS key set.
 
 The clock's [boundary-stamp legend](shadow-clock-hologram.md#boundary-stamps) is:
 
@@ -53,14 +55,14 @@ The [mathematical model](system-mathematical-model.md), §§1 and 5, preserves t
 
 | Shaft / data file | Present keys | Count | Missing / extra |
 |---|---|---:|---|
-| [axle](gearing/contracts-axle.js) | axle | 1 | none / none |
-| [gears](gearing/contracts-gears.js) | A, B, C, AB, BC, CA | 6 | none / none |
-| [trainA](gearing/contracts-trainA.js) | A1–A9 | 9 | none / none |
-| [trainB](gearing/contracts-trainB.js) | B1–B5 | 5 | none / none |
-| [trainC](gearing/contracts-trainC.js) | C1–C10 | 10 | none / none |
-| [cells](gearing/contracts-cells.js) | t0–t6 | 7 | none / none |
-| [escape](gearing/contracts-escape.js) | E1, E2, R1 | 3 | none / none |
-| [audits](gearing/contracts-audits.js) | X1–X6 | 6 | none / none |
+| [axle](../gearing/contracts-axle.js) | axle | 1 | none / none |
+| [gears](../gearing/contracts-gears.js) | A, B, C, AB, BC, CA | 6 | none / none |
+| [trainA](../gearing/contracts-trainA.js) | A1–A9 | 9 | none / none |
+| [trainB](../gearing/contracts-trainB.js) | B1–B5 | 5 | none / none |
+| [trainC](../gearing/contracts-trainC.js) | C1–C10 | 10 | none / none |
+| [cells](../gearing/contracts-cells.js) | t0–t6 | 7 | none / none |
+| [escape](../gearing/contracts-escape.js) | E1, E2, R1 | 3 | none / none |
+| [audits](../gearing/contracts-audits.js) | X1–X6 | 6 | none / none |
 | **Union** | **K** | **47** | **0 / 0** |
 
 Observed with Node v24.19.0: each inspected script evaluates to its assigned keys; all records have nonempty group, chip, title, and body strings; there are no duplicate declarations within or across these files. The renderer loads all eight exactly once through relative script-src elements before the main script.
@@ -152,9 +154,9 @@ The remaining keys **axle, A, B, C, AB, BC, CA** summarize the hologram's axle, 
 
 ## PAGE F — RENDERER ↔ DATA
 
-**Plastic vs hologram skin (pixel debt, 2026-09-18; upstream 33b7e79):** live `docs/shadow-clock-gearing.html` still uses extruded plastic `buildGear` as its primary look. Restyle is not done on main at the publication re-anchor f1adf2d; side commit b8d7e73 is not an ancestor. The [standing restyle prompt](prompts/gearing-html-hologram-restyle-prompt.md) calls for lattice/crossing/traces and visual-primitives §2.5. Keys and picks are unchanged; no Core rule is invented to close this visual debt.
+**Plastic vs hologram skin (pixel debt, 2026-09-18; upstream 33b7e79):** live `docs/shadow-clock-gearing.html` still uses extruded plastic `buildGear` as its primary look. Restyle is not done on main at the publication re-anchor f1adf2d; side commit b8d7e73 is not an ancestor. The [standing restyle prompt](../prompts/gearing-html-hologram-restyle-prompt.md) calls for lattice/crossing/traces and visual-primitives §2.5. Keys and picks are unchanged; no Core rule is invented to close this visual debt.
 
-Source: [the renderer](shadow-clock-gearing.html), especially chipKeys, show, pickTargets, hitAmong, pick, buildLaceRibbon, and frame. It remains read-only for this audit; the designated editor's upstream changes are incorporated here.
+Source: [the renderer](../shadow-clock-gearing.html), especially chipKeys, show, pickTargets, hitAmong, pick, buildLaceRibbon, and frame. It remains read-only for this audit; the designated editor's upstream changes are incorporated here.
 
 | Visual/control group | Keys and present binding | Drift or limit |
 |---|---|---|
@@ -221,9 +223,9 @@ These are three traceability samples. The third leg is a **proposed name**, so n
 
 | Key | Exact walk locus | Existing JS record | Proposed unit |
 |---|---|---|---|
-| A3 | Walk 1: MESH A.RIC ∥ A.PFC → A.C; scale A, time S2 | [trainA](gearing/contracts-trainA.js), key A3 | shadow_clock::train_a::A3 |
-| t2 | Walk 4: MESH t2 Traj × Locate* × A.S3–S4; scale A×B×C, time t2 | [cells](gearing/contracts-cells.js), key t2; chip label t2* | shadow_clock::cells::t2 |
-| X1 | Walk 7: AUDIT A.L merge/delete as Lace write | [audits](gearing/contracts-audits.js), key X1 | shadow_clock::audits::X1 |
+| A3 | Walk 1: MESH A.RIC ∥ A.PFC → A.C; scale A, time S2 | [trainA](../gearing/contracts-trainA.js), key A3 | shadow_clock::train_a::A3 |
+| t2 | Walk 4: MESH t2 Traj × Locate* × A.S3–S4; scale A×B×C, time t2 | [cells](../gearing/contracts-cells.js), key t2; chip label t2* | shadow_clock::cells::t2 |
+| X1 | Walk 7: AUDIT A.L merge/delete as Lace write | [audits](../gearing/contracts-audits.js), key X1 | shadow_clock::audits::X1 |
 
 For this comparison only, Markdown code/emphasis marks and double-quote glyphs were removed, curly apostrophes normalized, and whitespace collapsed. This is a disclosed textual comparison, not a byte-for-byte-copy assertion or a semantic proof.
 

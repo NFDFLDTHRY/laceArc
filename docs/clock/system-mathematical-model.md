@@ -521,12 +521,12 @@ This test binds implementation posture (no crates.io graph, no foreign Core dyna
 | [docs/clock/shadow-clock-hologram.md](shadow-clock-hologram.md) | Holder machine \(\{A,B,C\}\) hologram; stamps and axle |
 | [docs/clock/shadow-clock-gear-contracts.md](shadow-clock-gear-contracts.md) | Primary MESH inventory (walks 1–7) |
 | [docs/clock/shadow-clock-agent-brief.md](shadow-clock-agent-brief.md) | Standing brief for contract walks |
-| [docs/systems-manifest.md](systems-manifest.md) | Hands Contracts I–III; Graphic D pieces; open Q gaps |
-| [docs/staking-the-workspace.md](staking-the-workspace.md) | Hands vs Shadow staking; steward test |
-| [docs/law-why-these-documents.md](law-why-these-documents.md) | Repo law; KEEP/FORBID; shoe/crate lines |
-| [docs/reason-model-map.md](reason-model-map.md) | Physical shoe lace as reason model |
-| [docs/shadow-clock-gearing.html](shadow-clock-gearing.html) | Layer-III interactive projection of the clock |
-| [docs/history/history-recovered-pass-3-2026-09-18.md](history/history-recovered-pass-3-2026-09-18.md) | Pass 3 recovery; graphics kin; emission still [GAP] |
+| [docs/systems-manifest.md](../systems-manifest.md) | Hands Contracts I–III; Graphic D pieces; open Q gaps |
+| [docs/staking-the-workspace.md](../staking-the-workspace.md) | Hands vs Shadow staking; steward test |
+| [docs/law-why-these-documents.md](../law-why-these-documents.md) | Repo law; KEEP/FORBID; shoe/crate lines |
+| [docs/reason-model-map.md](../reason-model-map.md) | Physical shoe lace as reason model |
+| [docs/shadow-clock-gearing.html](../shadow-clock-gearing.html) | Layer-III interactive projection of the clock |
+| [docs/history/history-recovered-pass-3-2026-09-18.md](../history/history-recovered-pass-3-2026-09-18.md) | Pass 3 recovery; graphics kin; emission still [GAP] |
 
 ---
 

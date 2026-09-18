@@ -786,7 +786,7 @@ or a grant of permission.
 | Finite resources, layout composition, failure/durability and concurrent arrival ordering | Future proof obligations; manifest open questions | Unsettled premises; no allocator, persistence or concurrency scheme selected |
 
 Required outline destination:
-[`docs/prompts/pointer-emission-prompt.md`](../prompts/pointer-emission-prompt.md) — present on
+[`docs/prompts/pointer-emission-prompt.md`](prompts/pointer-emission-prompt.md) — present on
 live tip (was absent at the inspected baseline revision above; moved in defrag pass 1). The outline
 must exist before any planned branch directory becomes real; it is **not**
 the acceptance gate and does not fill emission answers. Pointing to its path

@@ -2,11 +2,11 @@
 
 **[III] read-only projection. Hands win. POINTER emission = [GAP].**
 
-Completion of [the AgentScope clipboard prompt](agentscope-clipboard-prompt.md), checking the existing upstream draft against the attached paper. Sheets A–F and X use rendered mapping tables. **KEEP failure taxonomy for the HOLDER. FORBID ReAG rows in the 1D array.**
+Completion of [the AgentScope clipboard prompt](../prompts/agentscope-clipboard-prompt.md), checking the existing upstream draft against the attached paper. Sheets A–F and X use rendered mapping tables. **KEEP failure taxonomy for the HOLDER. FORBID ReAG rows in the 1D array.**
 
 **Source:** Jiayi Bi et al., *Diagnosing with Insights: Structured Analysis of Agent Failures via Behavioral Abstractions*, arXiv:2609.02371v1, September 2, 2026. Tool name: AGENTSCOPE. The inspected attachment is `03-2609.02371v1.pdf`, 22 pages, with a text layer. SHA-256: `6464d69d81d4265aff0cab1e1affe160ef7af4c77ccc142436528f75ea3fd1e9`. Printed and PDF page numbers coincide at the cited loci. **Never git-add the PDF.** Eye entries below are source paraphrases, not quotations.
 
-**Authority:** [graphics A–D](graphics/README.md), [systems manifest](systems-manifest.md), the complete [staking law](staking-the-workspace.md), the complete [live law](law-why-these-documents.md), and [agent controls](agent-control.md). These laws remain controlling in full. Comparisons use [reason-model-map §5](reason-model-map.md#5-bi-et-al--agentscope-arxiv260902371), A1–A5; those IDs refer to book mappings, not Graphic A panels or new Core primitives.
+**Authority:** [graphics A–D](../graphics/README.md), [systems manifest](../systems-manifest.md), the complete [staking law](../staking-the-workspace.md), the complete [live law](../law-why-these-documents.md), and [agent controls](../kit/agent-control.md). These laws remain controlling in full. Comparisons use [reason-model-map §5](../reason-model-map.md#5-bi-et-al--agentscope-arxiv260902371), A1–A5; those IDs refer to book mappings, not Graphic A panels or new Core primitives.
 
 **Boundary:** [H] is the holder and the holder's diagnostic records. [X] is the Graphic D array boundary. This clipboard is [III]. → marks a source relationship or labeled analogy; ↛ rejects a substitution. Neither arrow emits a POINTER. Source descriptions, Lace law, and inferred stewardship examples are distinguished below.
 

@@ -4,9 +4,9 @@
 
 Shelf note (defrag pass 2): this file is the **crate tree**. Serial birth cards live in `docs/rust-nostd-branch-contracts.md`. Neither file is an accepted emission rule.
 
-Execution of [the crate-map prompt](rust-nostd-crate-map-prompt.md), checking and completing its existing draft. The sheets use rendered mapping tables. The seven planned names, birth order, and direct dependencies are retained alongside [the branch contracts](rust-nostd-branch-contracts.md). No proposed directory is created.
+Execution of [the crate-map prompt](prompts/rust-nostd-crate-map-prompt.md), checking and completing its existing draft. The sheets use rendered mapping tables. The seven planned names, birth order, and direct dependencies are retained alongside [the branch contracts](rust-nostd-branch-contracts.md). No proposed directory is created.
 
-**Authority:** [graphics A–D](graphics/README.md), [systems manifest](systems-manifest.md), the complete [staking law](staking-the-workspace.md), the complete [live law](law-why-these-documents.md), [AGENTS.md](../AGENTS.md), and [agent controls](agent-control.md). The [reason model](reason-model-map.md) supplies the recorded anti-import boundaries. This map replaces none of those sources.
+**Authority:** [graphics A–D](graphics/README.md), [systems manifest](systems-manifest.md), the complete [staking law](staking-the-workspace.md), the complete [live law](law-why-these-documents.md), [AGENTS.md](../AGENTS.md), and [agent controls](kit/agent-control.md). The [reason model](reason-model-map.md) supplies the recorded anti-import boundaries. This map replaces none of those sources.
 
 **Implementation Law:** Rust; `#![no_std]`; zero external dependencies; every dependency is our first-party branch; one branch, one task; state and prove that task before another branch exists. Allocation requires its own proven first-party task under the full law. The posture names, including seL4 and Coq, are the bar, not dependencies to import.
 
@@ -179,7 +179,7 @@ The emission draft §4 currently reopens whether POINTERs may target POINTERs. T
 
 The updated manifest also records a counterexample to the proposed rule that every consecutive WORD pair emits a POINTER. In D1's WORD subsequence, pairs 0001/0003 and 0005/0008 have no corresponding POINTER in the illustrated prefix. This bounds a candidate against the recorded example; it does not establish a replacement emission rule or settle whether adjacency itself is a relation. “Consecutive” here means consecutive WORD occurrences, not adjacent array indices. [Row-level reading, §3](graphics-close-reading.md#3-emission-is-underdetermined-and-the-rows-prove-it).
 
-The companion plan records a required outline at [pointer-emission-prompt.md](pointer-emission-prompt.md). It was absent at the original audit revision and is present at the commit-integration base 6fb2dac. Its header explicitly calls for unanswered questions, keeps the output DRAFT, and states that writing it is not acceptance. The outline remains distinct from an exact accepted emission contract; this commit task does not execute it.
+The companion plan records a required outline at [pointer-emission-prompt.md](prompts/pointer-emission-prompt.md). It was absent at the original audit revision and is present at the commit-integration base 6fb2dac. Its header explicitly calls for unanswered questions, keeps the output DRAFT, and states that writing it is not acceptance. The outline remains distinct from an exact accepted emission contract; this commit task does not execute it.
 
 **DELTA:** SILENT on emission; FALSE FRIEND when a pointer type or folder is mistaken for the rule; CONFLICT if Continue, a view, or composition supplies an unrecorded decision. **EMISSION SETTLED? NO / [GAP].**
 
