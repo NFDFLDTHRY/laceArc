@@ -506,9 +506,9 @@ This test binds implementation posture (no crates.io graph, no foreign Core dyna
 | [docs/law-why-these-documents.md](law-why-these-documents.md) | Repo law; KEEP/FORBID; shoe/crate lines |
 | [docs/reason-model-map.md](reason-model-map.md) | Physical shoe lace as reason model |
 | [docs/shadow-clock-gearing.html](shadow-clock-gearing.html) | Layer-III interactive projection of the clock |
+| [docs/history-recovered-pass-3-2026-09-18.md](history-recovered-pass-3-2026-09-18.md) | Pass 3 recovery; graphics kin; emission still [GAP] |
 
 ---
 
 *End of system mathematical model. Emission remains \([GAP]\). No `src/` authorized by this file.*
 
-| `docs/history-recovered-pass-3-2026-09-18.md` | Pass 3 recovery; graphics kin; emission still [GAP] |
