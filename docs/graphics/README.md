@@ -12,3 +12,15 @@ These four images are the source of record for laceArc. The systems manifest is 
 Read them in that order for the story, or read graphic 4 first if you need the store.
 
 Hologram touches (not this directory): `docs/hologram/`. Those diagnose the holder. They are not a fifth graphic.
+
+## Format
+
+Lossless PNG, 1536x1024 (graphics 1 and 4) and 1672x941 (graphics 2 and 3).
+
+These replaced earlier copies that carried a `.png` extension but held JPEG data
+at 1500px. Same artwork, lossy. Every panel here is dense small text — the table
+in graphic 4 is the only numeric evidence in the project — so the source of
+record is kept lossless even though it costs about 9 MB.
+
+Re-encoding these to a lossy format is a model break in the same way a second
+store is: the graphics are the source, not a preview of it.

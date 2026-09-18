@@ -467,6 +467,21 @@ Intended use of the four graphics together: A = growth story; B = 3D mechanism; 
 7. [INFERENCE to verify later] The two Kauffman *Knots and Physics* PDFs in `artifacts/` are adjacent reference, not part of these four graphics. Do not import knot axioms into Lace unless a later source says so.
 8. No multi-Lace, snapshot, or export rule is given.
 
+A later row-level pass over panel D1 (`docs/graphics-close-reading.md`) leaves
+questions 1–8 standing and adds three:
+
+9. [GAP] Slot assignment: what makes an index `ref_A` rather than `ref_B`. D1's six
+   pointers are not ordered by index (two ascending, four descending); in all six
+   `ref_A` is the subject of the panel's gloss, which the array cannot compute.
+10. [GAP] Whether every entry must eventually be referenced. True of every entry but
+    the newest in D1; never stated as a rule.
+11. [GAP] Which reading of C6's four relation families holds. The 4D rung of C's own
+    ladder is the only one with no correspondent in D's entry schema.
+
+That pass also rules out one candidate emission rule rather than leaving it open:
+"every adjacent WORD pair emits a pointer" is contradicted by D1, where two of four
+adjacent pairs have no pointer between them.
+
 ---
 
 ## Executive Seams Summary
