@@ -145,21 +145,24 @@ fetch/ff main
 │   │                                                                │     │
 │   │   WebGPU / chip / label     │ contract key │ drift?            │     │
 │   │   ─────────────────────────┼──────────────┼────────────────── │     │
-│   │   gear A (pick + HUD rail) │ A            │ no (mesh+chip)    │     │
-│   │   gear B                   │ B            │ no                │     │
-│   │   gear C                   │ C            │ no                │     │
-│   │   mesh AB BC CA            │ AB BC CA     │ no (mesh band+chip)│     │
-│   │   axle                     │ axle         │ no                │     │
-│   │   cells t0–t6              │ t0–t6        │ YES — chip+ticks  │     │
-│   │                            │              │      no 3D pick   │     │
-│   │   escapement               │ E1 E2 R1     │ YES — chip only   │     │
-│   │   audit chips X1–X6        │ X1–X6        │ YES — chip only   │     │
-│   │   train teeth A1–C10       │ A1–C10       │ YES — chip only   │     │
+│   │   station A glass cube+core│ A            │ no (pick+HUD+chip)│     │
+│   │   station B                │ B            │ no                │     │
+│   │   station C                │ C            │ no                │     │
+│   │   crossing beam arcs       │ AB BC CA     │ no (arc apex pick)│     │
+│   │   spine through stations   │ axle         │ no (2 pick pts)   │     │
+│   │   floor cells t0–t6        │ t0–t6        │ no — 3D pick now  │     │
+│   │   escapement floor marks   │ E1 E2 R1     │ no — 3D pick now  │     │
+│   │   audit floor stamps X1–X6 │ X1–X6        │ no — 3D pick now  │     │
+│   │   cluster orbs (3)         │ A1 B1 C1     │ no — 3D pick now  │     │
+│   │   remaining train teeth    │ A2–A9 B2–B5  │ YES — chip only   │     │
+│   │                            │ C2–C10       │                   │     │
 │   │                                                                │     │
 │   │   FORBID: decorative gear with no contract body  — none found  │     │
-│   │   NOTE: train/cell/escape/audit teeth = chips, not 3D picks.   │     │
-│   │   That remaining drift is honest — not a missing contract.    │     │
-│   │   HUD labs screen-fixed (f995e44); mesh bands (2b2e882).      │     │
+│   │   NOTE: hologram restyle added 3D picks for cells, escapement, │     │
+│   │   audits and one orb per train. 21 train teeth stay chip-only; │     │
+│   │   that drift is honest — crowding, not a missing contract.     │     │
+│   │   Chips derive from Object.keys(CONTRACTS): all 47 reachable.  │     │
+│   │   Skin = docs/hologram templates. Keys unchanged; no renames.  │     │
 │   └────────────────────────────────────────────────────────────────┘     │
 │                                                                          │
 │   ┌────────────────────────────────────────────────────────────────┐     │
