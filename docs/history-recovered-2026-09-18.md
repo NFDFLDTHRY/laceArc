@@ -148,3 +148,5 @@ Use it to refuse revival.
 Do not use it to fill emission.
 Do not paste old Python into a first-party branch.
 If a later file from the lead table is opened, map it here first; do not implement it.
+
+Pass 2: [docs/history-recovered-pass-2-2026-09-18.md](history-recovered-pass-2-2026-09-18.md). No Containers, scheduler, card-number mismatch, C machine. Does not reverse 29 August.

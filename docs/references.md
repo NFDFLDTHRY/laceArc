@@ -99,6 +99,13 @@ Workspace attachment `Lace_Memory_Recovery_2026-09-18.md`. Map: `docs/history-re
 
 June–September conversation extract. Records rejected walkers, invented guards, fidelity mirrors, and the 26 August placement of HCC-A / Coffee Cup / Water as ancestry. Does not amend law. Does not revive code.
 
+#### 10. Lace memory recovery pass 2 — 18 September 2026
+
+Workspace attachment `Lace_Memory_Recovery_Pass_2_2026-09-18.md`. Map: `docs/history-recovered-pass-2-2026-09-18.md`.
+
+Direct reads of ten historical documents. No Containers, eleven-rule scheduler (later allocation correction), card-number mismatch, rejected continuation slot, C-machine false attribution. Does not reverse 29 August. Does not amend law.
+
+
 
 
 ## Series frame (from Rowlands front matter)

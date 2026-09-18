@@ -200,6 +200,17 @@ Map: docs/history-recovered-2026-09-18.md
   license object.relations[]. Cluster-as-what-you-see
   is the lawful reading. Conflict stays visible.
 
+Pass 2 map: docs/history-recovered-pass-2-2026-09-18.md
+  KEEP no-payload / objects as formations (No Containers).
+  FORBID substitution as a write on the tape.
+  FORBID eleven-rule scheduler as Core.
+  FORBID 4:3:2:1 as the user's formula.
+  FORBID mutable / write-once continuation slot.
+  FORBID card-N as a ruling (numbering mismatch).
+  FORBID exact-match tie as emission.
+  FORBID codec/C-machine counts as Lace evidence.
+  29 Aug rejection is not reversed.
+
 
 READING ORDER WHEN A DOCUMENT IS IN THE WORKSPACE
 -------------------------------------------------
@@ -208,6 +219,7 @@ READING ORDER WHEN A DOCUMENT IS IN THE WORKSPACE
     3. docs/systems-manifest.md
     4. docs/reason-model-map.md or docs/philosophy-map.md
        or docs/history-recovered-2026-09-18.md
+       or docs/history-recovered-pass-2-2026-09-18.md
     5. the document itself
     6. never PDF into git
 
@@ -302,6 +314,10 @@ STILL FORBIDDEN AFTER CODE EXISTS
   object.relations[] / graph beside the tape
   cluster update with no tick
   revived walkers / lace_walk.py / fidelity mirrors
+  eleven-rule scheduler as Core
+  mutable continuation slot
+  substitution rewrite of occurrence history
+  C append-machine counts as Lace evidence
   a second lace
 
 
