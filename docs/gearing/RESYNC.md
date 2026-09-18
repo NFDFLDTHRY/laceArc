@@ -4,10 +4,11 @@
 
 ```
 STATUS: FIRED
-TIP: b2afaa2e9c558e6427d09c81b2c0de9a41275706
-FIRED_AT: 2026-09-18T07:25:23Z
+TIP_AT_FIRE: b2afaa2e9c558e6427d09c81b2c0de9a41275706
+LIVE_TIP_RULE: origin/main
+FIRED_AT: 2026-09-18T07:25:53Z
 FIRED_BY: LaceArc (steward)
-NOTE: Human/steward signal. All BASE values are STALE until refresh or new claim on this tip.
+NOTE: While FIRED, effective tip is always current origin/main. TIP_AT_FIRE is the signal commit. All BASE values are STALE until claim/refresh against live tip.
 ```
 
 ## Signal diagram
