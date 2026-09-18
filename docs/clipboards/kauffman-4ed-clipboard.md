@@ -1,17 +1,31 @@
 # CLIPBOARD — laceArc ← Kauffman 4ed
 
 Shadow stake only. Hands win. POINTER emission = `[GAP]`.
-PDF: local `artifacts/refs/kauffman-knots-and-physics-4ed.pdf` (dokumen.pub 4ed, 9814383007). **Never git-add the PDF.**
+Source slug: `dokumen.pub_knots-and-physics-4ed-9814383007`.
+Book: L.H. Kauffman, *Knots and Physics*, 4ed · ISBN family `9814383007`.
+PDF path (gitignored): `artifacts/refs/kauffman-knots-and-physics-4ed.pdf`. **Never git-add the PDF.**
 This file is Layer III. Not Core.
 
-**PDF fact this pass:** 865 pages. `pypdf` / `pypdfium2` extract **zero** characters on sampled pages (front, mid, Part II region). Image-only scan. Loci and eye-quotes below are those already recovered into `docs/reason-model-map.md` §1 from an earlier OCR pass. They are not a fresh byte-read of every page. If a later text layer appears, re-walk.
+## Pass 1 receipt
+
+| Field | Value |
+|---|---|
+| Status | EXECUTED |
+| Station | clipboards · agent `reference-Mapper` |
+| Plan | [kauffman-pass-1-plan.md](kauffman-pass-1-plan.md) |
+| Hands chain | shoe → graphics A–D → systems-manifest → staking / law-why → reason-model-map §1 |
+| PDF on this machine | **MISSING** — prior-OCR baseline accepted for this pass (human go 2026-09-18) |
+| PDF fact (prior) | 865 pages; `pypdf` / `pypdfium2` = **zero** chars on sampled pages (front, mid, Part II). Image-only scan. |
+| Loci / eye-quotes | Recovered into `docs/reason-model-map.md` §1 (K1–K9) from an earlier OCR pass. **Not** a fresh byte-read of every page this pass. |
+| Amended | reason-model-map · law · graphics · five-stakes | **No** |
+| Emission | still `[GAP]` — do not invent when / arity / adjacency |
 
 Law on this clip: diagram ≠ rope · hitch kin · grab ≠ emission · `[GAP]` sealed.
 
 ```
 fetch/ff main → shoe → graphics A–D → manifest → law
                  → reason-model-map §1
-                 → Kauffman 4ed (no git add)
+                 → Kauffman 4ed (no git add; PDF missing → prior OCR)
                  → PAGE A → B → C → D → E → F → X
                  → this file
                  → STOP
@@ -41,6 +55,8 @@ fetch/ff main → shoe → graphics A–D → manifest → law
 │   │    against the rod."                                           │     │
 │   │   windings: no slip while T2 < κ T1; model κ = e^θ             │     │
 │   │    (unit friction). Square grips. Granny feeds through.        │     │
+│   │   [NOTE] five-stakes records printed p.323 as T2 ≤ κ T1;       │     │
+│   │    map/clipboard often write strict <. Neither is a Lace field.│     │
 │   │                                                                │     │
 │   │   later tension ──participates──► earlier wrap                 │     │
 │   │   wrap remains (no pull-out)                                   │     │
@@ -141,12 +157,16 @@ fetch/ff main → shoe → graphics A–D → manifest → law
 │   │   Gauss code (later Part I)             → codes a closed       │     │
 │   │                                           diagram class,       │     │
 │   │                                           not append life      │     │
+│   │   bracket / Jones / Yang–Baxter (K5)    → diagram-class        │     │
+│   │                                           invariant; do not    │     │
+│   │                                           store as wrap history│     │
 │   │   DNA strand passage / enzyme switch    → cut-and-rejoin [X]   │     │
 │   │                                                                │     │
 │   │   looks like emission ──silenced──► [GAP]                      │     │
 │   │   do not invent when / arity / adjacency                       │     │
 │   │                                                                │     │
-│   │ DELTA: false friend (hitch grab) + conflict (RII, DNA)         │     │
+│   │ DELTA: false friend (hitch grab, Gauss/K5)                     │     │
+│   │         + conflict (RII, DNA)                                  │     │
 │   │         + silent (no when/arity/adjacency sentence)            │     │
 │   └────────────────────────────────────────────────────────────────┘     │
 │                                                                          │
@@ -160,12 +180,13 @@ fetch/ff main → shoe → graphics A–D → manifest → law
 │   │  slide / virtual rooms  │ one store; no extra rooms            │     │
 │   │  hitch math as fields   │ D: WORD/POINTER only                 │     │
 │   │  grab = emission        │ [GAP] grab is kin, not the rule      │     │
+│   │  diagram as authority   │ Hands graphics A–D win               │     │
 │   │                                                                │     │
 │   │  STILL [GAP]: POINTER when / arity / adjacency                 │     │
 │   └────────────────────────────────────────────────────────────────┘     │
 │                                                                          │
 │ [clip]                                                                   │
-└──────────────────────────────────────────────────────────────────────────┘
+│└──────────────────────────────────────────────────────────────────────────┘
 ```
 
 ---
@@ -176,6 +197,7 @@ fetch/ff main → shoe → graphics A–D → manifest → law
 - PAGE B is permission to draw. It is not permission to store the drawing.
 - PAGE C/D/E are the fence. Quoting them does not restore the operators.
 - PAGE F: Kauffman never writes the missing Core sentence. Do not finish it from a clove hitch.
-- This file does not amend `docs/reason-model-map.md`. It is the clipboard the prompt asked for.
+- Pass 1 accepted a missing local PDF and prior-OCR loci. A later text layer requires a re-walk under a new claim — not a silent amend of this file as if freshly OCR’d.
+- This file does not amend `docs/reason-model-map.md`, law, or graphics. It is the clipboard the prompt asked for.
 
 Shoe in hands, or no.
