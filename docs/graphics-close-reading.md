@@ -58,6 +58,14 @@ These hold in all six pointers. They are not inferences.
   open — but the evidence for 2 is stronger than "one example."
 - **A pointer may reference a pointer.** 0007, 0009, 0010. This is the storage
   correspondent of higher-dimensional participation, stated outright in D6.
+- **Target kind is per-slot, not per-entry.** Sorting the six by what they name:
+  three are all-WORD (0002, 0004, 0006), two are all-POINTER (0007, 0010), and
+  **0009 is mixed** — `0008 → 0007` names a WORD and a POINTER in one entry, and
+  the gloss agrees: *"CUSTOMER relates to that relationship."* So a layout that
+  forces homogeneous targets is refuted by a row the panel already contains. Any
+  admitted reference must carry its kind independently of its siblings.
+  *(Added on a later pass. The first version of this section listed 0009 among
+  the pointer-targeting rows without noticing it was the only mixed one.)*
 - **Type is closed at two values.** Only WORD and POINTER appear. No document,
   conversation, or provenance entry type exists anywhere in D.
 
@@ -369,6 +377,78 @@ that the subjects at those ordinals do not match — concluding that
 
 Evidence state for every item in this section: `OBSERVED` in a retrieved report;
 `NOT_TESTED` here. Human acceptance: `ABSENT`. No item above changes §1-§6.
+
+## 8. Ambiguity audit — where the accounts collapse
+
+`AGENTS.md`: *"Keep distinct passes distinct. Ambiguity remaining in 3D is
+success."* This section applies that to the project's own documents. It proposes
+no change to any of them and edits none of them.
+
+### The gate's question set closes itself
+
+`docs/pointer-emission.md` is the acceptance gate: implementation opens when the
+human accepts it. It asks five questions, then states: **"No other extra
+questions."**
+
+That is a completeness claim, and two of the rows above sit outside it.
+
+| Not asked by the gate | Evidence | Why it is an emission-shape question |
+|---|---|---|
+| Which reference occupies `ref_A` rather than `ref_B` | §2 — two ascend, four descend; `ref_A` is the gloss subject in six of six | If arity resolves to two, the gate is satisfied while the slot rule is still undetermined. It is internal to the POINTER, not a silence of another Piece. |
+| Whether target kinds may be mixed within one entry | §1 — 0009 names a WORD and a POINTER | Gate Q4 asks *"May a POINTER target only WORD?"* and answers `[GAP]`. D1 already shows heterogeneous targeting; the panel is not silent here. |
+
+The gate's own exclusion of document provenance, query operators and spelling is
+reasoned and sound — those *are* silences of other Pieces. **[INFERENCE]** These
+two are not excluded by that reasoning, and the closing sentence forecloses them
+anyway. Recorded here; the gate is not this file's to edit.
+
+### "Rejected" carries three different grounds
+
+The gate's non-answers table gives a reason per row, so nothing is hidden. One
+distinction is still worth stating, because a reader scanning the column will
+flatten it: **historically rejected is not the same as refuted by the Hands.**
+
+- **Adjacency** is *refuted by D1* — two of four adjacent WORD pairs carry no
+  pointer (§3). The panel rules it out.
+- **Exact-match ties** are listed as *"history — rejected."* Tested against D1
+  the rule is **not refuted**: it holds on the one repeat occurrence the panel
+  contains (0003 PIE → 0004 back to 0000) and is merely insufficient, explaining
+  one of six pointers.
+
+Both are correctly excluded from the gate. They are excluded on different
+grounds, and only one of them is something the graphics decide.
+
+### A false mesh in this session's own work
+
+`docs/agent-interaction-model.md` §3b F1 names the failure where agreement
+preserves apparent assent while the parties imagine different behaviour.
+
+`docs/shadow-clock-gear-contracts-second-reading.md` reported **"no conflicts
+found"** against the primary walk — 26 confirms, 14 refines, zero conflicts. On
+re-check, eight of ten spot-checked findings were absent from the primary
+entirely. **The verdicts agreed; the readings did not.** Reporting verdict
+agreement as "no conflict" is the exact failure F1 describes, committed by the
+file that describes it.
+
+The count was not wrong. The word was. Two readings can agree on every verdict
+and still be reading different things, and that is information — the thing rule 3
+says averaging destroys.
+
+### Standing homonyms
+
+Not new, listed together because each is a place where one word now names
+distinct mechanisms and a reader can cross layers without noticing.
+
+| Word | Senses in this repo |
+|---|---|
+| escapement | Gear W's pallet on the tape · `C.Locate @ B.Traj` in talk · the shaft rule between agents |
+| delta | difference between two OBS · the river's crossing zone |
+| pointer | an addressable claim in Water · a section of Lace in Graphic D |
+
+The third is the dangerous one: it is the vocabulary by which `Anchor()` becomes
+emission (`[X]` audit 5).
+
+---
 
 ## Citation index
 
