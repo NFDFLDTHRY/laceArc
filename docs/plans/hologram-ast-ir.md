@@ -261,14 +261,14 @@ Done when:
 3. AST-hard-requirement and emission/`src/` gates are explicit.  
 4. plans README links this file.
 
-Not done: running an extractor, adding `src/`, or shipping a new HTML viewer.
+Not done for full pipeline: AST extractor against crates, adding `src/`. Validator + Layer III viewer are spiked on the golden fixture (see §9 ticks 3–4).
 
 ---
 
 ## 9. Next implementation ticks (ordered; each needs its own claim)
 
 1. Human review of this IR.  
-2. Golden `HologramIr` fixture JSON (maps or hologram station).  
-3. Host extractor spike (std host tool) against fixture — still no Core `src/`.  
-4. New Layer III viewer page bound to IR (renderer/hologram stations) — mesh graph, not SDF-as-pipeline.  
+2. Golden `HologramIr` fixture JSON (maps or hologram station). **Done** — `fixtures/hologram-ir-golden-v0.1.0.json`.  
+3. Host extractor / validator spike (std host tool) against fixture — still no Core `src/`. **Spiked** — `tools/hologram-ir-validate.py` checks golden IR (version, mode, emission_gate, 7 doors, edge kinds, emission_touch, diagnostics). Not a full AST extractor.  
+4. New Layer III viewer page bound to IR (hologram station) — mesh/graph, not SDF-as-pipeline. **Spiked** — `docs/hologram/nostd-pipeline.html` loads the golden fixture (Canvas 2D; no Three.js).  
 5. After emission acceptance: point extractor at real first-party crates as they birth.

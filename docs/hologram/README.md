@@ -36,6 +36,13 @@ Light-mode Axial Lab dashboards. **Not** Lace runtime. **Not** the canvas backgr
 
 Primitive sheets (`primitive-*.png`) remain the lawful shape catalog beside these lookrefs. Catalog: [visual-primitives.md](visual-primitives.md).
 
+
+## Live Layer III viewers
+
+| File | Title | Role |
+|---|---|---|
+| [nostd-pipeline.html](nostd-pipeline.html) | LaceArc / nostd pipeline hologram (Layer III) | Canvas 2D graph of HologramIr doors, typed edges, transforms + timeline — fixture mode until src/ + emission acceptance. **Not** `shadow-clock-gearing.html` / `{A,B,C}` holder machine. |
+
 ## Geometry metaphor
 
 | File | Source hash prefix | Title | Role |
