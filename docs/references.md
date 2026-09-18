@@ -96,6 +96,11 @@ No mesh, no torque. Do not treat OBS as POINTER emission.
 Image: `docs/hologram/perceived-reality-story-defense.png` (attachment `13960.png`).  
 Overlap of two PR fields; why a true claim can fail to land; story defense; curation of exposure. Diagnoses the holder. Not Graphic E. Not array rows.
 
+#### 8c. 3D clockwork views (suggested projection)
+
+`docs/hologram/clockwork-view-lattice.jpg`, `clockwork-view-crossing.png`, `clockwork-view-traces.jpg`.  
+Layer III camera on the lace clock. Floor = projected line. Orbs = star-as-seen. Arrows = drawn participation, not emission.
+
 ### History (ancestry, not foundation)
 
 #### 9. Lace memory recovery — 18 September 2026

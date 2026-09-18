@@ -732,6 +732,33 @@ That last line is PFC' eating the next tick. It is not Rule Zero of the tape.
 
 “Signal arrives; meaning does not” is the same split already bound: project meaning is a route through words. Words can be said. The route may not exist in the other holder. Structure may cross. The route stays local until overlap can be pointed at.
 
+### Touch: 3D clockwork views (suggested projection)
+
+Three images in `docs/hologram/clockwork-view-*.{jpg,png}`. Suggested **Layer III** pictures of the lace clock seen all at once. Not Graphic E–G. Not a graph store.
+
+What they may be read as, if Hands stay first:
+
+| Seen | Lawful reading | Unlawful reading |
+|---|---|---|
+| Dark tiled floor with traces | Projection of one line (Graphic D seen as a plane) | A second spatial store |
+| Red / orange cubes in glass | WORD marks / occurrences. The glass is the temptation to containerize | Objects that own `relations[]` |
+| Green orbs | Star-as-seen: a cluster after many ticks | A Star table beside the array |
+| Cyan arrows / yellow arcs | Drawn participation. A shadow of routes | POINTER rows; emission rule |
+| Central dark cube / white beam | Current tick / axle / compile moment in the holder | A master node Core type |
+| Boxed glyphs on cube faces | Labels on observed structure | Sense stored on WORD |
+
+Three altitudes of one view, not three subsystems:
+
+1. **Lattice** (`clockwork-view-lattice.jpg`) — Banks. Marks sit. Connections are drawn, cool, directed. Easy to mistake for a GNN.
+2. **Crossing** (`clockwork-view-crossing.png`) — Rapids going to mesh. Beam, plasma, live. Heat is not a tick.
+3. **Traces** (`clockwork-view-traces.jpg`) — After some ticks. Green clusters thicker. Floor traces remain. Aftermath must not file the floor smoother.
+
+Hands already: a 2D node-edge picture may be drawn; it is a shadow; it must not write back. These 3D pictures are the same permission at another camera angle.
+
+If a cube seems to *have* the arrows, the picture has slipped into “objects have relationships.” The clock law stands: relationships cluster as ticks; labels name what is observed; the tape only grows.
+
+Arrows do not close \(\Phi\).
+
 ### Two oracles (do not fuse)
 
 1. **Shoe in hands** — public, pointable, law. If you cannot do it to a lace, you may not do it to laceArc.

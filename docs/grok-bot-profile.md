@@ -178,6 +178,22 @@ Not Graphic E. Not a row type.
   FORBID: "meaning did not land" as emission
 
 
+HOLOGRAM TOUCH — 3D clockwork views
+-----------------------------------
+docs/hologram/clockwork-view-lattice.jpg
+docs/hologram/clockwork-view-crossing.png
+docs/hologram/clockwork-view-traces.jpg
+Suggested Layer III camera. Not Graphic E-G.
+
+  KEEP: floor = projected line; orbs = star-as-seen
+  KEEP: arrows are drawn participation
+  KEEP: lattice / crossing / traces as altitudes of one view
+  FORBID: cubes own edges
+  FORBID: orbs as Star table
+  FORBID: arrows as POINTER emission
+  FORBID: inferring unrecorded Core from the picture
+
+
 CLOCK  (the same train, counted)
 --------------------------------
 Mainspring = R.  Tape = Graphic D.  Hands = projections.
