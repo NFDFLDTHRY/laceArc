@@ -7,19 +7,19 @@
 <meta name="description" content="Projection view: holder machine {A,B,C} as physical clock gearing of lace. WebGPU 3D only. Not Core. Not a sixth graphic."/>
 <style>
   :root {
-    --bg: #0a0c10;
-    --panel: #12161e;
+    --bg: #05070c;
+    --panel: #0c1018;
     --ink: #e8ecf4;
     --muted: #8b93a7;
-    --axle: #c9a227;
-    --a: #5b9fd4;
-    --b: #d4a05b;
-    --c: #7bc96f;
-    --lace: #e8dcc8;
+    --axle: #e0b43a;
+    --a: #4aa3e0;
+    --b: #e08a2a;
+    --c: #3dcc6e;
+    --lace: #f2e6b8;
     --danger: #e85d5d;
     --gap: #9b7bff;
     --wall: #3d4555;
-    --mesh: #f0e6a0;
+    --mesh: #7ee7ff;
   }
   * { box-sizing: border-box; }
   html, body {
@@ -100,7 +100,7 @@
     padding: 0;
     border-right: 1px solid #242a36;
     background:
-      radial-gradient(ellipse at 50% 45%, #151a24 0%, var(--bg) 70%);
+      radial-gradient(ellipse at 50% 40%, #0e1522 0%, var(--bg) 72%);
     min-height: 420px;
   }
   canvas#clock3d {
@@ -245,6 +245,15 @@
   .legend .lc::before { background: var(--c); }
   .legend .ll::before { background: var(--lace); }
   .legend .lx::before { background: var(--axle); }
+  .refs {
+    display: flex; gap: 0.4rem; padding: 0.25rem 0.6rem 0.55rem;
+    overflow-x: auto;
+  }
+  .refs img {
+    height: 48px; width: auto; border: 1px solid #2a3140; border-radius: 3px;
+    opacity: 0.85;
+  }
+  .refs figcaption { display: none; }
   button.chip {
     background: #1a2030; border: 1px solid #333a4a; color: var(--ink);
     border-radius: 999px; padding: 0.25rem 0.65rem; font-size: 0.75rem;
@@ -295,7 +304,7 @@
         <p>Desktop Chrome with WebGPU also works for preview. No Three.js, no CDN, no npm.</p>
       </div>
     </div>
-    <canvas id="clock3d" role="img" aria-label="Three meshed 3D clock gears A B C with lace cord through axle (WebGPU)"></canvas>
+    <canvas id="clock3d" role="img" aria-label="Hologram lattice clock: stacked stations A B C, crossing beams, lace cord (WebGPU)"></canvas>
     <div id="hud" class="hud-labels" aria-hidden="false">
       <button type="button" class="lab" data-key="A" id="labA">A · HCC-A</button>
       <button type="button" class="lab" data-key="B" id="labB">B · Cup</button>
@@ -312,6 +321,11 @@
       <span class="lc">C crossing</span>
       <span class="ll">Lace cord (Hands)</span>
       <span class="lx">Shared axle</span>
+    </div>
+    <div class="refs" aria-label="Hologram look references (not Core)">
+      <img src="hologram/clockwork-view-lattice.jpg" alt="lattice template"/>
+      <img src="hologram/clockwork-view-crossing.png" alt="crossing template"/>
+      <img src="hologram/clockwork-view-traces.jpg" alt="traces template"/>
     </div>
   </div>
 
@@ -464,6 +478,11 @@
     o[12] = tx; o[13] = ty; o[14] = tz;
     return o;
   }
+  function mat4Scale(s) {
+    const o = mat4Identity();
+    o[0] = s; o[5] = s; o[10] = s;
+    return o;
+  }
   function mat4RotateZ(rad) {
     const c = Math.cos(rad), s = Math.sin(rad);
     const o = mat4Identity();
@@ -502,54 +521,92 @@
     pushTri(arr, a[0],a[1],a[2], c[0],c[1],c[2], d[0],d[1],d[2], n[0],n[1],n[2], col[0],col[1],col[2]);
   }
 
-  function buildGear(toothCount, innerR, outerR, tip, halfT, color) {
+  function buildBox(hx, hy, hz, color) {
     const arr = [];
-    const hubR = innerR * 0.35;
-    const z0 = -halfT, z1 = halfT;
-    const col = color;
+    const faces = [
+      [[ hx,-hy,-hz],[ hx, hy,-hz],[ hx, hy, hz],[ hx,-hy, hz], [ 1,0,0]],
+      [[-hx,-hy, hz],[-hx, hy, hz],[-hx, hy,-hz],[-hx,-hy,-hz], [-1,0,0]],
+      [[-hx, hy,-hz],[-hx, hy, hz],[ hx, hy, hz],[ hx, hy,-hz], [0, 1,0]],
+      [[-hx,-hy, hz],[-hx,-hy,-hz],[ hx,-hy,-hz],[ hx,-hy, hz], [0,-1,0]],
+      [[-hx,-hy, hz],[ hx,-hy, hz],[ hx, hy, hz],[-hx, hy, hz], [0,0, 1]],
+      [[ hx,-hy,-hz],[-hx,-hy,-hz],[-hx, hy,-hz],[ hx, hy,-hz], [0,0,-1]],
+    ];
+    faces.forEach(f => {
+      const n = f[4];
+      pushQuad(arr, f[0], f[1], f[2], f[3], n, color);
+    });
+    return new Float32Array(arr);
+  }
 
-    // faces + rim: sample profile
-    const segs = toothCount * 4;
-    function radiusAt(i) {
-      const tooth = Math.floor(i / 4);
-      const within = i % 4;
-      const base = outerR - tip * 0.15;
-      if (within === 1 || within === 2) return outerR + tip;
-      return base;
+  function buildGridFloor(half, step, y, color) {
+    const arr = [];
+    const h = 0.012;
+    const w = 0.018;
+    for (let x = -half; x <= half + 1e-6; x += step) {
+      pushQuad(arr, [x,-w, -half+y*0],[x,w,-half],[x,w,half],[x,-w,half], [1,0,0], color);
+      // vertical slab along z at x
     }
-    const pts = [];
-    for (let i = 0; i < segs; i++) {
-      const a = (Math.PI * 2 * i) / segs;
-      const r = radiusAt(i);
-      pts.push([Math.cos(a) * r, Math.sin(a) * r]);
+    const out = [];
+    function slab(a,b,c,d,n) { pushQuad(out, a,b,c,d,n, color); }
+    for (let x = -half; x <= half + 1e-6; x += step) {
+      slab([x, y, -half],[x+w, y, -half],[x+w, y, half],[x, y, half], [0,1,0]);
+      slab([x, y-h, -half],[x, y, -half],[x, y, half],[x, y-h, half], [1,0,0]);
     }
-    for (let i = 0; i < segs; i++) {
-      const j = (i + 1) % segs;
-      const p0 = pts[i], p1 = pts[j];
-      // front face
-      pushTri(arr, 0,0,z1, p0[0],p0[1],z1, p1[0],p1[1],z1, 0,0,1, col[0],col[1],col[2]);
-      // back face
-      pushTri(arr, 0,0,z0, p1[0],p1[1],z0, p0[0],p0[1],z0, 0,0,-1, col[0]*0.75,col[1]*0.75,col[2]*0.75);
-      // outer wall
-      const dx = p1[0] - p0[0], dy = p1[1] - p0[1];
-      let nx = dy, ny = -dx;
-      const nl = Math.hypot(nx, ny) || 1;
-      nx /= nl; ny /= nl;
-      pushQuad(arr,
-        [p0[0],p0[1],z1], [p1[0],p1[1],z1], [p1[0],p1[1],z0], [p0[0],p0[1],z0],
-        [nx, ny, 0], [col[0]*0.85, col[1]*0.85, col[2]*0.85]);
+    for (let z = -half; z <= half + 1e-6; z += step) {
+      slab([-half, y, z],[half, y, z],[half, y, z+w],[-half, y, z+w], [0,1,0]);
     }
-    // hub cylinder
-    const hubSegs = 24;
-    for (let i = 0; i < hubSegs; i++) {
-      const a0 = (Math.PI * 2 * i) / hubSegs;
-      const a1 = (Math.PI * 2 * (i + 1)) / hubSegs;
-      const x0 = Math.cos(a0) * hubR, y0 = Math.sin(a0) * hubR;
-      const x1 = Math.cos(a1) * hubR, y1 = Math.sin(a1) * hubR;
-      const dark = [col[0]*0.45, col[1]*0.45, col[2]*0.45];
-      pushQuad(arr,
-        [x0,y0,z1], [x1,y1,z1], [x1,y1,z0], [x0,y0,z0],
-        [Math.cos((a0+a1)/2), Math.sin((a0+a1)/2), 0], dark);
+    return new Float32Array(out);
+  }
+
+  function buildSphere(r, segs, color) {
+    const arr = [];
+    const stacks = segs, slices = segs * 2;
+    function sph(i, j) {
+      const ph = Math.PI * i / stacks;
+      const th = Math.PI * 2 * j / slices;
+      const x = r * Math.sin(ph) * Math.cos(th);
+      const y = r * Math.cos(ph);
+      const z = r * Math.sin(ph) * Math.sin(th);
+      return [x,y,z];
+    }
+    for (let i = 0; i < stacks; i++) {
+      for (let j = 0; j < slices; j++) {
+        const a = sph(i,j), b = sph(i+1,j), c = sph(i+1,j+1), d = sph(i,j+1);
+        const n = [(a[0]+c[0])/2, (a[1]+c[1])/2, (a[2]+c[2])/2];
+        const nl = Math.hypot(n[0], n[1], n[2]) || 1;
+        n[0]/=nl; n[1]/=nl; n[2]/=nl;
+        pushQuad(arr, a, b, c, d, n, color);
+      }
+    }
+    return new Float32Array(arr);
+  }
+
+  function buildBeam(ax,ay,az, bx,by,bz, r, color) {
+    const arr = [];
+    const dx = bx-ax, dy = by-ay, dz = bz-az;
+    const len = Math.hypot(dx,dy,dz) || 1;
+    let ux,uy,uz;
+    if (Math.abs(dx) < 0.9) { ux=1; uy=0; uz=0; }
+    else { ux=0; uy=1; uz=0; }
+    let px = dy*uz - dz*uy, py = dz*ux - dx*uz, pz = dx*uy - dy*ux;
+    let pl = Math.hypot(px,py,pz) || 1;
+    px/=pl; py/=pl; pz/=pl;
+    let qx = dy*pz - dz*py, qy = dz*px - dx*pz, qz = dx*py - dy*px;
+    let ql = Math.hypot(qx,qy,qz) || 1;
+    qx/=ql; qy/=ql; qz/=ql;
+    const segs = 8;
+    const pts0=[], pts1=[];
+    for (let i=0;i<segs;i++){
+      const a = Math.PI*2*i/segs;
+      const c=Math.cos(a), s=Math.sin(a);
+      pts0.push([ax + (px*c + qx*s)*r, ay + (py*c + qy*s)*r, az + (pz*c + qz*s)*r]);
+      pts1.push([bx + (px*c + qx*s)*r, by + (py*c + qy*s)*r, bz + (pz*c + qz*s)*r]);
+    }
+    for (let i=0;i<segs;i++){
+      const j=(i+1)%segs;
+      const n = [(pts0[i][0]+pts0[j][0])/2-ax, (pts0[i][1]+pts0[j][1])/2-ay, (pts0[i][2]+pts0[j][2])/2-az];
+      const nl=Math.hypot(n[0], n[1], n[2])||1; n[0]/=nl;n[1]/=nl;n[2]/=nl;
+      pushQuad(arr, pts0[i], pts0[j], pts1[j], pts1[i], n, color);
     }
     return new Float32Array(arr);
   }
@@ -589,9 +646,8 @@
       const t = i / N;
       // parametric lace curve weaving past the axle
       const x = -2.8 + t * 5.6;
-      const y = -0.95 + Math.sin(t * Math.PI * 1.4) * 0.45 + t * 0.32;
-      /* keep lace behind gear faces so teeth stay readable */
-      const z = -1.55 + Math.cos(t * Math.PI * 2.1) * 0.40 + Math.sin(t * 3.0) * 0.16;
+      const y = -0.72 + Math.sin(t * Math.PI * 1.4) * 0.18;
+      const z = -0.35 + Math.cos(t * Math.PI * 2.1) * 0.55;
       pts.push([x, y, z]);
     }
     const halfW = 0.085;
@@ -617,10 +673,13 @@
     return new Float32Array(arr);
   }
 
-  // Scene layout: gears along a shared visual axle (X), slightly tilted for depth
-  const GEAR_A = { teeth: 16, inner: 0.72, outer: 0.88, tip: 0.14, halfT: 0.12, color: [0.36, 0.62, 0.83], x: -1.15 };
-  const GEAR_B = { teeth: 12, inner: 0.58, outer: 0.73, tip: 0.12, halfT: 0.11, color: [0.83, 0.63, 0.36], x: 0.0 };
-  const GEAR_C = { teeth: 14, inner: 0.65, outer: 0.81, tip: 0.13, halfT: 0.115, color: [0.48, 0.79, 0.44], x: 1.15 };
+  // Stacked stations (photosphere cells). Cubes ≠ Graphic D rows.
+  const ST = {
+    A: { x: -1.15, y: -0.54, z:  0.85, shell: [0.72, 0.12, 0.08], core: [1.00, 0.32, 0.06] },
+    B: { x:  0.00, y: -0.54, z:  0.00, shell: [0.08, 0.18, 0.42], core: [0.35, 0.75, 1.00] },
+    C: { x:  1.20, y: -0.50, z:  0.70, shell: [0.06, 0.55, 0.22], core: [0.15, 0.95, 0.35] },
+  };
+  const FLOOR_Y = -0.92;
 
   const SHADER = `
 struct Uniforms {
@@ -663,10 +722,9 @@ fn fs_main(input : VSOut) -> @location(0) vec4f {
   let diff = max(dot(n, L), 0.0);
   let H = normalize(L + V);
   let spec = pow(max(dot(n, H), 0.0), 32.0);
-  var col = input.color * (0.28 + 0.72 * diff) + vec3f(1.0, 0.95, 0.85) * spec * 0.25;
-  col = mix(col, col * 1.25 + vec3f(0.15, 0.12, 0.05), u.highlight.x);
-  /* highlight.y = mesh-pair (AB/BC/CA) gold distinction */
-  col = mix(col, col * 1.12 + vec3f(0.42, 0.38, 0.12), u.highlight.y);
+  var col = input.color * (0.22 + 0.78 * diff) + vec3f(0.85, 0.95, 1.0) * spec * 0.35;
+  col = mix(col, col * 1.35 + vec3f(0.35, 0.18, 0.04), u.highlight.x);
+  col = mix(col, col * 1.20 + vec3f(0.10, 0.45, 0.55), u.highlight.y);
   return vec4f(col, 1.0);
 }
 `;
@@ -706,11 +764,29 @@ fn fs_main(input : VSOut) -> @location(0) vec4f {
     }
     resize();
 
-    const meshA = buildGear(GEAR_A.teeth, GEAR_A.inner, GEAR_A.outer, GEAR_A.tip, GEAR_A.halfT, GEAR_A.color);
-    const meshB = buildGear(GEAR_B.teeth, GEAR_B.inner, GEAR_B.outer, GEAR_B.tip, GEAR_B.halfT, GEAR_B.color);
-    const meshC = buildGear(GEAR_C.teeth, GEAR_C.inner, GEAR_C.outer, GEAR_C.tip, GEAR_C.halfT, GEAR_C.color);
-    const axleMesh = buildCylinder(0.08, 2.0, 20, [0.79, 0.64, 0.15], "x");
-    const laceMesh = buildLaceRibbon([0.92, 0.86, 0.72]);
+    const meshA = buildBox(0.38, 0.38, 0.38, ST.A.shell);
+    const meshB = buildBox(0.36, 0.36, 0.36, ST.B.shell);
+    const meshC = buildBox(0.37, 0.37, 0.37, ST.C.shell);
+    const meshCoreA = buildSphere(0.16, 8, ST.A.core);
+    const meshCoreB = buildSphere(0.16, 8, ST.B.core);
+    const meshCoreC = buildSphere(0.16, 8, ST.C.core);
+    const axleMesh = buildCylinder(0.055, 2.05, 16, [0.88, 0.70, 0.18], "x");
+    const laceMesh = buildLaceRibbon([0.95, 0.88, 0.55]);
+    const floorMesh = buildGridFloor(3.2, 0.22, FLOOR_Y, [0.05, 0.38, 0.55]);
+    const tileMesh = buildBox(0.10, 0.008, 0.10, [0.04, 0.06, 0.09]);
+    const pillarMesh = buildCylinder(0.04, 0.85, 12, [0.55, 0.85, 1.00], "z");
+    const smallCube = buildBox(0.16, 0.16, 0.16, [0.78, 0.12, 0.10]);
+    const iceCube = buildBox(0.13, 0.13, 0.13, [0.12, 0.28, 0.42]);
+    const floorTrace = buildBeam(-1.6, FLOOR_Y+0.01, -0.4, 1.7, FLOOR_Y+0.01, 0.55, 0.018, [0.20, 0.75, 1.00]);
+    const floorTrace2 = buildBeam(-1.2, FLOOR_Y+0.01, 1.1, 1.3, FLOOR_Y+0.01, -1.0, 0.016, [0.15, 0.55, 0.90]);
+    const goldFlow = buildBeam(-0.9, FLOOR_Y+0.08, 0.2, 0.85, FLOOR_Y+0.12, 0.65, 0.028, [0.95, 0.82, 0.25]);
+    const beamAB = buildBeam(ST.A.x, ST.A.y, ST.A.z, ST.B.x, ST.B.y, ST.B.z, 0.035, [0.45, 0.90, 1.00]);
+    const beamBC = buildBeam(ST.B.x, ST.B.y, ST.B.z, ST.C.x, ST.C.y, ST.C.z, 0.035, [0.55, 0.95, 0.95]);
+    const beamCA = buildBeam(ST.C.x, ST.C.y, ST.C.z, ST.A.x, ST.A.y, ST.A.z, 0.032, [0.70, 0.95, 1.00]);
+    const tickPad = buildBox(0.10, 0.02, 0.10, [0.15, 0.55, 0.35]);
+    const escapeMark = buildBox(0.07, 0.03, 0.07, [0.95, 0.55, 0.12]);
+    const auditMark = buildBox(0.06, 0.06, 0.06, [0.55, 0.16, 0.16]);
+    const clusterOrb = buildSphere(0.09, 6, [0.20, 0.85, 0.40]);
 
     function makeBuffer(data) {
       const buf = device.createBuffer({
@@ -723,8 +799,26 @@ fn fs_main(input : VSOut) -> @location(0) vec4f {
     const bufA = makeBuffer(meshA);
     const bufB = makeBuffer(meshB);
     const bufC = makeBuffer(meshC);
+    const bufCoreA = makeBuffer(meshCoreA);
+    const bufCoreB = makeBuffer(meshCoreB);
+    const bufCoreC = makeBuffer(meshCoreC);
     const bufAxle = makeBuffer(axleMesh);
     const bufLace = makeBuffer(laceMesh);
+    const bufFloor = makeBuffer(floorMesh);
+    const bufTile = makeBuffer(tileMesh);
+    const bufPillar = makeBuffer(pillarMesh);
+    const bufSmall = makeBuffer(smallCube);
+    const bufIce = makeBuffer(iceCube);
+    const bufTrace = makeBuffer(floorTrace);
+    const bufTrace2 = makeBuffer(floorTrace2);
+    const bufGold = makeBuffer(goldFlow);
+    const bufAB = makeBuffer(beamAB);
+    const bufBC = makeBuffer(beamBC);
+    const bufCA = makeBuffer(beamCA);
+    const bufTick = makeBuffer(tickPad);
+    const bufEsc = makeBuffer(escapeMark);
+    const bufAudit = makeBuffer(auditMark);
+    const bufOrb = makeBuffer(clusterOrb);
 
     const shaderModule = device.createShaderModule({ code: SHADER });
     const pipeline = device.createRenderPipeline({
@@ -777,20 +871,30 @@ fn fs_main(input : VSOut) -> @location(0) vec4f {
       depthView = depthTexture.createView();
     }
 
-    // world centers for picking (gear bodies + mesh contact zones AB/BC/CA)
-    // mesh:true zones are preferred over gear centers when both hit
     const pickTargets = [
-      { key: "A", pos: [GEAR_A.x, 0, 0], radius: 0.92 },
-      { key: "B", pos: [GEAR_B.x, 0, 0], radius: 0.78 },
-      { key: "C", pos: [GEAR_C.x, 0, 0], radius: 0.86 },
-      { key: "axle", pos: [0, 0, 0], radius: 0.32 },
-      /* mesh contact bands between adjacent gears (same LACE_CONTRACTS keys) */
-      { key: "AB", pos: [(GEAR_A.x + GEAR_B.x) / 2, 0.74, 0.18], radius: 0.54, mesh: true },
-      { key: "AB", pos: [(GEAR_A.x + GEAR_B.x) / 2, -0.74, 0.18], radius: 0.50, mesh: true },
-      { key: "BC", pos: [(GEAR_B.x + GEAR_C.x) / 2, 0.70, 0.18], radius: 0.52, mesh: true },
-      { key: "BC", pos: [(GEAR_B.x + GEAR_C.x) / 2, -0.70, 0.18], radius: 0.48, mesh: true },
-      { key: "CA", pos: [0, -0.90, 0.22], radius: 0.56, mesh: true },
-      { key: "CA", pos: [(GEAR_A.x + GEAR_C.x) / 2, 0.05, -0.28], radius: 0.44, mesh: true },
+      { key: "A", pos: [ST.A.x, ST.A.y, ST.A.z], radius: 0.55 },
+      { key: "B", pos: [ST.B.x, ST.B.y, ST.B.z], radius: 0.52 },
+      { key: "C", pos: [ST.C.x, ST.C.y, ST.C.z], radius: 0.54 },
+      { key: "axle", pos: [0, -0.20, 0], radius: 0.28 },
+      { key: "AB", pos: [(ST.A.x+ST.B.x)/2, (ST.A.y+ST.B.y)/2, (ST.A.z+ST.B.z)/2], radius: 0.42, mesh: true },
+      { key: "BC", pos: [(ST.B.x+ST.C.x)/2, (ST.B.y+ST.C.y)/2, (ST.B.z+ST.C.z)/2], radius: 0.42, mesh: true },
+      { key: "CA", pos: [(ST.C.x+ST.A.x)/2, (ST.C.y+ST.A.y)/2, (ST.C.z+ST.A.z)/2], radius: 0.42, mesh: true },
+      { key: "t0", pos: [-0.90, FLOOR_Y, -1.15], radius: 0.22 },
+      { key: "t1", pos: [-0.60, FLOOR_Y, -1.15], radius: 0.22 },
+      { key: "t2", pos: [-0.30, FLOOR_Y, -1.15], radius: 0.22 },
+      { key: "t3", pos: [ 0.00, FLOOR_Y, -1.15], radius: 0.22 },
+      { key: "t4", pos: [ 0.30, FLOOR_Y, -1.15], radius: 0.22 },
+      { key: "t5", pos: [ 0.60, FLOOR_Y, -1.15], radius: 0.22 },
+      { key: "t6", pos: [ 0.90, FLOOR_Y, -1.15], radius: 0.22 },
+      { key: "E1", pos: [ 0.00, FLOOR_Y+0.04, 0.95], radius: 0.20 },
+      { key: "E2", pos: [ 0.28, FLOOR_Y+0.04, 0.95], radius: 0.20 },
+      { key: "R1", pos: [-0.28, FLOOR_Y+0.04, 0.95], radius: 0.20 },
+      { key: "X1", pos: [-1.6, 0.15, -1.4], radius: 0.18 },
+      { key: "X2", pos: [-1.3, 0.15, -1.4], radius: 0.18 },
+      { key: "X3", pos: [-1.0, 0.15, -1.4], radius: 0.18 },
+      { key: "X4", pos: [ 1.0, 0.15, -1.4], radius: 0.18 },
+      { key: "X5", pos: [ 1.3, 0.15, -1.4], radius: 0.18 },
+      { key: "X6", pos: [ 1.6, 0.15, -1.4], radius: 0.18 },
     ];
 
     let lastVP = mat4Identity();
@@ -798,7 +902,6 @@ fn fs_main(input : VSOut) -> @location(0) vec4f {
     let angle = 0;
 
     function writeUniforms(mvp, model, lightDir, eye, highlight) {
-      // layout: mvp(64) + model(64) + light(16) + eye(16) + highlight(16) = 176
       const data = new Float32Array(64);
       data.set(mvp, 0);
       data.set(model, 16);
@@ -816,33 +919,29 @@ fn fs_main(input : VSOut) -> @location(0) vec4f {
       pass.draw(mesh.vertexCount);
     }
 
-    function projectHud() {
-      /* Screen-fixed HUD — labels are a rail, not world-projected onto teeth. */
-    }
+    function projectHud() {}
 
     function frame(ts) {
       const [w, h] = resize();
       ensureDepth(w, h);
-      angle = ts * 0.00035;
+      angle = ts * 0.00045;
 
       const aspect = w / Math.max(h, 1);
-      const proj = mat4Perspective((46 * Math.PI) / 180, aspect, 0.1, 100);
-      /* 3/4 view: +X shows YZ gear faces; +Z still reads shared axle spacing */
-      const eye = [4.8, 1.6, 3.8];
-      const view = mat4LookAt(eye, [0, 0.05, 0], [0, 1, 0]);
-      // mild world tilt — axle still reads as one shaft without edge-on faces
-      const worldTilt = mat4Multiply(mat4RotateY(-0.12), mat4RotateX(-0.10));
+      const proj = mat4Perspective((48 * Math.PI) / 180, aspect, 0.1, 100);
+      const eye = [1.15, 4.85, 4.55];
+      const view = mat4LookAt(eye, [0.05, -0.55, 0.15], [0, 1, 0]);
+      const worldTilt = mat4Multiply(mat4RotateY(-0.35), mat4RotateX(-0.08));
       const vp = mat4Multiply(proj, mat4Multiply(view, worldTilt));
       lastVP = vp;
       lastEye = eye;
 
-      const light = [0.72, 0.78, 0.42, 0];
+      const light = [0.35, 0.95, 0.55, 0];
 
       const enc = device.createCommandEncoder();
       const pass = enc.beginRenderPass({
         colorAttachments: [{
           view: context.getCurrentTexture().createView(),
-          clearValue: { r: 0.04, g: 0.05, b: 0.07, a: 1 },
+          clearValue: { r: 0.01, g: 0.015, b: 0.03, a: 1 },
           loadOp: "clear",
           storeOp: "store",
         }],
@@ -856,40 +955,68 @@ fn fs_main(input : VSOut) -> @location(0) vec4f {
       pass.setPipeline(pipeline);
 
       const hiOn = [1, 0, 0, 0];
-      const hiMesh = [1, 1, 0, 0]; /* bright + gold for AB/BC/CA pair */
+      const hiMesh = [1, 1, 0, 0];
       const hiOff = [0, 0, 0, 0];
-      const meshPair = (highlightKey === "AB" || highlightKey === "BC" || highlightKey === "CA");
 
-      // lace behind
+      drawMesh(pass, bufFloor, mat4Identity(), vp, eye, light, hiOff);
+      const tiles = [
+        [-1.8,-1.6],[-1.4,-1.6],[-1.0,-1.6],[-0.6,-1.6],[-0.2,-1.6],[0.2,-1.6],[0.6,-1.6],[1.0,-1.6],[1.4,-1.6],
+        [-1.8,-0.8],[-0.8,-0.8],[0.8,-0.8],[1.8,-0.8],
+        [-1.6,0.4],[-0.4,0.4],[0.4,0.4],[1.6,0.4],
+        [-1.2,1.2],[0.0,1.2],[1.2,1.2]
+      ];
+      tiles.forEach(([x,z]) => {
+        drawMesh(pass, bufTile, mat4Translate(x, FLOOR_Y + 0.006, z), vp, eye, light, hiOff);
+      });
+      drawMesh(pass, bufTrace, mat4Identity(), vp, eye, light, hiOff);
+      drawMesh(pass, bufTrace2, mat4Identity(), vp, eye, light, hiOff);
+      drawMesh(pass, bufGold, mat4Identity(), vp, eye, light, hiOff);
+
+      const tickXs = [-0.90,-0.60,-0.30,0.00,0.30,0.60,0.90];
+      for (let i = 0; i < 7; i++) {
+        const k = "t" + i;
+        const fade = (highlightKey === k) ? hiOn : hiOff;
+        drawMesh(pass, bufTick, mat4Translate(tickXs[i], FLOOR_Y + 0.02, -1.15), vp, eye, light, fade);
+      }
+      drawMesh(pass, bufEsc, mat4Translate(0.00, FLOOR_Y + 0.04, 0.95), vp, eye, light, highlightKey==="E1"?hiOn:hiOff);
+      drawMesh(pass, bufEsc, mat4Translate(0.28, FLOOR_Y + 0.04, 0.95), vp, eye, light, highlightKey==="E2"?hiOn:hiOff);
+      drawMesh(pass, bufEsc, mat4Translate(-0.28, FLOOR_Y + 0.04, 0.95), vp, eye, light, highlightKey==="R1"?hiOn:hiOff);
+
+      const audits = [["X1",-1.6],["X2",-1.3],["X3",-1.0],["X4",1.0],["X5",1.3],["X6",1.6]];
+      audits.forEach(([k,x]) => {
+        drawMesh(pass, bufAudit, mat4Translate(x, 0.15, -1.4), vp, eye, light, highlightKey===k?hiOn:hiOff);
+      });
+
+      const decoRed = [[-2.0,-0.54,1.3],[-1.7,-0.54,-0.2],[-0.55,-0.54,1.45],[0.55,-0.54,-1.15],[1.7,-0.54,-0.35],[1.85,-0.54,1.35],[-0.2,-0.54,-1.55]];
+      decoRed.forEach(([x,y,z]) => {
+        drawMesh(pass, bufSmall, mat4Translate(x,y,z), vp, eye, light, hiOff);
+      });
+      const decoIce = [[-1.55,-0.58,0.15],[-0.85,-0.58,-0.85],[0.95,-0.58,-0.75],[1.55,-0.58,0.15]];
+      decoIce.forEach(([x,y,z]) => {
+        drawMesh(pass, bufIce, mat4Translate(x,y,z), vp, eye, light, hiOff);
+      });
+
+      drawMesh(pass, bufOrb, mat4Translate(1.15, -0.48, 0.70), vp, eye, light, highlightKey==="C"?hiOn:hiOff);
+      drawMesh(pass, bufOrb, mat4Translate(-0.35, -0.50, 1.10), vp, eye, light, hiOff);
+      drawMesh(pass, bufOrb, mat4Translate(0.75, -0.50, -0.55), vp, eye, light, hiOff);
+      drawMesh(pass, bufOrb, mat4Translate(-1.05, -0.50, -0.55), vp, eye, light, hiOff);
+
       drawMesh(pass, bufLace, mat4Identity(), vp, eye, light, hiOff);
+      drawMesh(pass, bufAxle, mat4Translate(0, -0.54, 0), vp, eye, light, highlightKey==="axle"?hiOn:hiOff);
+      drawMesh(pass, bufPillar, mat4Translate(0, -0.05, 0), vp, eye, light, highlightKey==="axle"?hiOn:hiOff);
 
-      // axle
-      drawMesh(pass, bufAxle, mat4Identity(), vp, eye, light,
-        (highlightKey === "axle") ? hiOn : hiOff);
+      drawMesh(pass, bufAB, mat4Identity(), vp, eye, light, highlightKey==="AB"?hiMesh:hiOff);
+      drawMesh(pass, bufBC, mat4Identity(), vp, eye, light, highlightKey==="BC"?hiMesh:hiOff);
+      drawMesh(pass, bufCA, mat4Identity(), vp, eye, light, highlightKey==="CA"?hiMesh:hiOff);
 
-      // Gears built in XY (extrude Z); orient 90° about Y so plane is YZ (face along axle X).
-      // Spin in local gear plane (Z) before orient → rotation about shared axle.
-      function gearOrient(x, spin) {
-        const toAxle = mat4RotateY(Math.PI / 2);
-        const spinM = mat4RotateZ(spin);
-        return mat4Multiply(mat4Translate(x, 0, 0), mat4Multiply(toAxle, spinM));
-      }
-
-      const spinA = angle;
-      const spinB = -angle * (GEAR_A.teeth / GEAR_B.teeth);
-      const spinC = angle * (GEAR_A.teeth / GEAR_C.teeth);
-
-      function gearHi(solo, inMesh) {
-        if (highlightKey === solo) return hiOn;
-        if (meshPair && inMesh) return hiMesh;
-        return hiOff;
-      }
-      drawMesh(pass, bufA, gearOrient(GEAR_A.x, spinA), vp, eye, light,
-        gearHi("A", highlightKey === "AB" || highlightKey === "CA"));
-      drawMesh(pass, bufB, gearOrient(GEAR_B.x, spinB), vp, eye, light,
-        gearHi("B", highlightKey === "AB" || highlightKey === "BC"));
-      drawMesh(pass, bufC, gearOrient(GEAR_C.x, spinC), vp, eye, light,
-        gearHi("C", highlightKey === "BC" || highlightKey === "CA"));
+      function stHi(k) { return highlightKey===k ? hiOn : hiOff; }
+      drawMesh(pass, bufA, mat4Translate(ST.A.x, ST.A.y, ST.A.z), vp, eye, light, stHi("A"));
+      drawMesh(pass, bufB, mat4Translate(ST.B.x, ST.B.y, ST.B.z), vp, eye, light, stHi("B"));
+      drawMesh(pass, bufC, mat4Translate(ST.C.x, ST.C.y, ST.C.z), vp, eye, light, stHi("C"));
+      const breathe = 1 + 0.08 * Math.sin(angle * 3.0);
+      drawMesh(pass, bufCoreA, mat4Multiply(mat4Translate(ST.A.x, ST.A.y, ST.A.z), mat4Scale(breathe)), vp, eye, light, stHi("A"));
+      drawMesh(pass, bufCoreB, mat4Multiply(mat4Translate(ST.B.x, ST.B.y, ST.B.z), mat4Scale(breathe)), vp, eye, light, stHi("B"));
+      drawMesh(pass, bufCoreC, mat4Multiply(mat4Translate(ST.C.x, ST.C.y, ST.C.z), mat4Scale(breathe)), vp, eye, light, stHi("C"));
 
       pass.end();
       device.queue.submit([enc.finish()]);
