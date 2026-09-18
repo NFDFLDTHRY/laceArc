@@ -29,3 +29,24 @@ Related prior: [downstream-audit.md](downstream-audit.md) (do not erase; re-chec
 - fix: none
 - cites: docs/staking-the-workspace.md (IMPLEMENTATION LAW); docs/law-why-these-documents.md (IMPLEMENTATION LAW); AGENTS.md (Implementation Law; If asked to implement)
 - emission contact: silenced → [GAP]
+
+### tick 2026-09-18 · station A4 · tip 820b4d69425f2e389596dcef12396b90a9a3d37c
+- finding: reason-model-map §§1–5 + certification dispositions align with staking-the-workspace KEEP/FORBID for all five stakes. Kauffman: hitch kin / diagram≠rope; FORBID closed-loop, Reidemeister, slide, virtual = map conflict. Rowlands: empty + no-extra-rooms kin; FORBID "rewrite" name-clash + TOE/Dirac = map conflict/off-shoe. Xiao: KEEP arrival-order = weak kin X1; FORBID intern/[MASK]/embed/next-token Core = map conflicts. Petersen: KEEP function≠construction = P5 kin-of-negation; FORBID star=neuron / train-w / GNN / NTK = map conflicts. AgentScope: KEEP taxonomy for HOLDER; FORBID ReAG-in-array = map adjacent/conflict. Certification table present; mapping 3/3; emission still [GAP]. No KEEP/FORBID or Piece-meaning rewrite. Cite A1–A3 prior ticks (tip fa48e9f / commit 820b4d6). RESYNC STATUS FIRED (TIP_AT_FIRE 490473e); live tip origin/main = this tip.
+- kind: ok
+- fix: none
+- cites: docs/staking-the-workspace.md (KEEP/FORBID five stakes); docs/reason-model-map.md (§§1–5; Coupling matrix; Certification; Open Questions); docs/coherence-audit-log.md (A1–A3)
+- emission contact: silenced → [GAP]
+
+### tick 2026-09-18 · station A5 · tip 820b4d69425f2e389596dcef12396b90a9a3d37c
+- finding: Prompt→product paths checked. kauffman-clipboard-prompt → kauffman-4ed-clipboard.md PRESENT; rowlands-clipboard-prompt → rowlands-zero-to-infinity-clipboard.md PRESENT; xiao-clipboard-prompt → xiao-zhu-foundations-clipboard.md PRESENT; agentscope-clipboard-prompt → agentscope-clipboard.md PRESENT; clip-and-five-refs-prompt → clipboard-five-stakes.md PRESENT (explicitly forbids five-refs-clipboard.md). petersen-zech-clipboard-prompt → docs/petersen-zech-clipboard.md ABSENT (PAGE F hotspot) — LOG OPEN; do not invent fill. README contents rows exist for every filled clipboard; no Petersen filled row (correct while ABSENT). No wrong product paths in prompts.
+- kind: [GAP]
+- fix: none
+- cites: docs/*-clipboard-prompt.md; docs/clip-and-five-refs-prompt.md; docs/kauffman-4ed-clipboard.md; docs/rowlands-zero-to-infinity-clipboard.md; docs/xiao-zhu-foundations-clipboard.md; docs/agentscope-clipboard.md; docs/clipboard-five-stakes.md; README.md (clipboard rows); ABSENT docs/petersen-zech-clipboard.md
+- emission contact: none
+
+### tick 2026-09-18 · station A6 · tip 820b4d69425f2e389596dcef12396b90a9a3d37c
+- finding: pointer-emission.md Status DRAFT / Not accepted / Not implemented; every Answer line is `[GAP]`; prompt requires DRAFT + human acceptance + no src/. README row correctly says DRAFT / Not accepted / [GAP]. AGENTS "If asked to implement" already requires file exists AND human accepted. Drift: AGENTS Job line said only "written in-repo as prose," which could read as acceptance-by-file-existence (PAGE B). Fixed Job line to match the acceptance gate; did not change gate substance. No emission answers filled.
+- kind: drift
+- fix: AGENTS.md (Job line)
+- cites: docs/pointer-emission.md; docs/pointer-emission-prompt.md; README.md (pointer-emission row); AGENTS.md (Job; If asked to implement)
+- emission contact: silenced → [GAP]

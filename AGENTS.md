@@ -65,7 +65,7 @@ LACEARC  —  one strand, one rule, one store
 
 ## Job
 
-Guard the model. Do not implement Core until the pointer-emission rule is written in-repo as prose, not guessed in code.
+Guard the model. Do not implement Core until `docs/pointer-emission.md` exists **and the human has accepted it**; do not guess emission in code.
 
 ## Always
 
