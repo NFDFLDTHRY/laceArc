@@ -184,36 +184,64 @@ This manifest does not close POINTER emission.
 - **Key source language:** Compression/synchronization layer. “what kind of agent am I in this world?”
 - **Hands:** off-shoe. `[H]` / `[X]` if stored as star.
 
-### H10 — Behavior (B) + Feedback
+### H10 — Behavior (B)
 
 - **Kind:** Interface / output shaft
-- **Source location:** §1 H10; Gear H “OUTPUT SHAFT = B only”
-- **Purpose:** Only directly observable part of the loop. Behavior alters Reality; loop restarts.
+- **Source location:** attachment §2.7
+- **Purpose:** Only directly observable part of the loop.
 - **Inputs:** Identity snapshot (ISL). Current Meaning transitions. Current emotional state. Active templates and constraints.
 - **Outputs:** External observable actions. Source examples: words spoken or withheld; physical actions; silence / freeze; jokes, escalation, retreat, attack, fawn.
-- **Preconditions:** S6 in the state machine. Source does not require a “successful” compile — freeze is a B.
-- **Effects:** R changes (S7). Next RIC may see new structure.
-- **Invariants:** B is the only directly observable part of the loop. B is not a rewrite of old rows. B is not POINTER.
+- **Preconditions:** S6. Freeze is a legal B.
+- **Effects:** Hands an act to Feedback (H10b). Does not itself rewrite R inside this piece — §2.8 does that.
+- **Invariants:** B is the only directly observable part of the loop. B is not a rewrite of old rows. B is not POINTER. B is not Emotion Mode B.
 - **Failure modes:** Behavior as in-place edit of Graphic D. Behavior as emission rule.
-- **Boundary & Coupling:** Only legal mesh from H toward Cup tooth 2–3 is an act in time. Adjacent to AgentScope’s action dimension (holder output). The first-draft `[GAP]` on the B bundle is **closed by the attachment** (four named inputs).
+- **Boundary & Coupling:** Seam with H10b: B emits; Feedback writes R and restarts S0. Mesh toward Cup tooth 2–3 is an act in time.
 - **Implementation implications:** Diagnose the steward’s B. Do not emit POINTER because B happened.
 - **Metaphor / diagnostic role:** Single output shaft from the case.
 - **Key source language:** “Behavior is the only directly observable part of the loop.”
 - **Hands:** adjacent. `[H]`
 
+### H10b — Feedback
+
+- **Kind:** Loop / world write
+- **Source location:** attachment §2.8; SM S7
+- **Purpose:** Behavior alters Reality / environment. New events become new structure. Loop restarts.
+- **Inputs:** B (the act).
+- **Outputs:** Changed R. New conditions into S0 / next RIC.
+- **Preconditions:** A B occurred, including freeze/silence.
+- **Effects:** Outer structure changes. ISL→PFC priors are Act VI / S7 companions, not this piece’s only job.
+- **Invariants:** Feedback is not a second output shaft. It is B hitting R. Not a Graphic D append rule.
+- **Failure modes:** Treating Feedback as POINTER emission. Treating “new structure” as license to intern.
+- **Boundary & Coupling:** Sits between H10 and H1. Zero shared state with the array.
+- **Implementation implications:** Do not implement Feedback as an array op.
+- **Metaphor / diagnostic role:** Escapement return to the mainspring.
+- **Key source language:** “Behavior alters Reality / environment. New events become new structure. Loop restarts.”
+- **Hands:** adjacent. `[H]` / `[X]` as Core write
+
 ### H11 — Spec schema (YAML person_model + event_trace)
 
 - **Kind:** Parameter set / diagnostic wrapper
 - **Source location:** attachment §6
-- **Purpose:** Per-person or per-event config sheet. `schema_version: HCC-A-1.0`. Not a process layer (those are Acts) and not a knob (those are P).
-- **Inputs:** A person or event to sheet.
-- **Outputs:** Filled `person_model` + optional `event_trace` (act_I … act_VI fields).
+- **Purpose:** Per-person or per-event config sheet. `schema_version: HCC-A-1.0`. Not a process layer (Acts) and not a knob body (P).
+- **Inputs / field contract:**
+  - `person_model.name`
+  - `templates`: romance, conflict, authority, self, others
+  - `priority_stack`: ordered list (P2 vocabulary)
+  - `pruning.perceptual_level | prefilter_level | postcompile_level`: low|medium|high
+  - `arbitration.raw_vs_template`: raw_wins | template_wins | compiler_resolves | identity_wins
+  - `arbitration.identity_vs_reality`: identity_yields | reality_yields | split
+  - `meaning_engine.mode`: descriptive | evaluative | directive
+  - `emotion_style.dominant_transition`: reindex | reweight | rewrite | decide | ignore
+  - `emotion_style.volatility`: low|medium|high
+  - `identity_mode.style`: coherent | fragmented | scripted | aesthetic | sovereign
+  - `event_trace`: event_id, description, act_I_scene (scene_type, stakes, roles), act_II_story_update.ledger_change, act_III_meaning_emotion (meaning_focus, emotion_state), act_IV_identity.identity_effect, act_V_behavior (chosen_action, perceived_forced), act_VI_world_update.world_rule_update
+- **Outputs:** A filled sheet for one person or one event.
 - **Preconditions:** Forensic / sovereign-ops use, not storage authority over Graphic D.
 - **Effects:** None on Graphic D if kept as a sheet. Second store if it owns WORD identity.
-- **Invariants:** Wrapper over P + Acts + H5–H10. Same spec, different parameters.
-- **Failure modes:** YAML as second store.
-- **Boundary & Coupling:** Dependent layer. YAML names two arbitration axes the first clipboard collapsed into one: `raw_vs_template` and `identity_vs_reality`.
-- **Implementation implications:** Keep off the array. Do not git-add private person sheets.
+- **Invariants:** Wrapper over P + Acts + H. Same spec, different parameters.
+- **Failure modes:** YAML as second store. Git-adding private person sheets.
+- **Boundary & Coupling:** Dependent layer. Two arbitration axes stay distinct.
+- **Implementation implications:** Keep off the array.
 - **Metaphor / diagnostic role:** Clipboard for a mind, not a lace.
 - **Key source language:** “Same spec, different parameters.”
 - **Hands:** adjacent steward; conflict if second store. `[H]` / `[X]`
@@ -253,7 +281,7 @@ This manifest does not close POINTER emission.
   - **P3 Pruning Strategy** — where data loss happens: perceptual (S0), pre-filter (S1), post-compile (S3–S5: revise/erase/reframe/down-weight).
   - **P4 Arbitration** — RIC-dominant / PFC-dominant / coherence-dominant (Compiler) / identity-dominant (ISL). YAML splits this into `raw_vs_template` and `identity_vs_reality`.
   - **P5 Meaning Engine Style** — descriptive / evaluative / directive. Most people live in the first two. Directive is where sovereignty and consistent agency come from.
-  - **P6 Emotion Handling Style** — decision-driving (Mode D); story-rewriting (Mode C); re-weighting (Mode B); ignorable. Mixtures allowed. YAML `dominant_transition`: reindex|reweight|rewrite|decide|ignore.
+  - **P6 Emotion Handling Style** — decision-driving (**Mode D**); story-rewriting (**Mode C**); re-weighting (**Mode B**); ignorable. Mixtures allowed. YAML `dominant_transition`: reindex|reweight|rewrite|decide|ignore. **Letter collision:** Mode C is not Compiler C (H5). Mode B is not Behavior B (H10). Do not fuse.
   - **P7 Identity Mode** — coherent / fragmented / scripted / aesthetic / sovereign.
 - **Inputs:** A person.
 - **Outputs:** Settings that modulate H3–H10. Not new shafts.
@@ -274,17 +302,17 @@ This manifest does not close POINTER emission.
 - **Purpose:** Reusable play any mind runs when processing an event. Acts are **process layers, not content**.
 - **Stage assumptions (source):** Reality exists and constrains. Only structure crosses between minds. Meaning and story are local. RIC + PFC run in parallel. Full loop (C, L, M, E, ISL, B) is present.
 - **Acts:**
-  - I Scene & Stakes — “What world am I in?” RIC captures; PFC names scene type. Output: perceived stakes + roles
-  - II Story Update — “What just got added to my story?” add / merge / re-tag; PFC may distort or gate
-  - III Meaning & Emotion — “What does this mean for me?”
-  - IV Identity Integration — “What does this say about who I am?”
-  - V Behavior Emission — “What do I do now?”
-  - VI World Model & Template Update — “What did this teach me about the world?” PFC templates entrenched / weakened / split
+  - **I Scene & Stakes** — “What world am I in right now?” RIC captures; PFC names scene type. Scene vocabulary: argument, test, rejection, game, lesson, betrayal, opportunity. Output: perceived stakes + perceived roles. Prompts: “What kind of scene is this to you?” “If this were a movie, what type of scene would this be?”
+  - **II Story Update** — “What just got added to my story?” add / merge / re-tag; PFC may distort or gate. Prompts: “If you told yourself tonight what happened here, how would you tell it?” “What line gets added to your internal ledger from this?”
+  - **III Meaning & Emotion** — “What does this mean for me?” Prompts: “What matters most about this to you?” “What part of this hits you hardest?” “What would be the worst-case interpretation for you?”
+  - **IV Identity Integration** — “What does this say about who I am?” Prompts: “If this kept happening, what kind of person would you think it proved you are?” “What does this make you quietly say about yourself?”
+  - **V Behavior Emission** — “What do I do now?” Prompts: “Given everything you’re feeling and thinking, what feels like the only thing you can do?” “What options do you feel are off the table?”
+  - **VI World Model & Template Update** — “What did this teach me about the world?” templates entrenched / weakened / split. Prompts: “What does this convince you people/the world are like?” “What rule about life does this reinforce for you?”
 - **Inputs:** An event or interaction.
 - **Outputs:** Diagnostic answers + Act VI template change into next PFC.
 - **Preconditions:** Stage assumptions above.
 - **Effects:** Act VI writes priors (oil). Not Graphic D.
-- **Invariants:** Acts align to SM S0–S7 but are the *play* framing, not a second machine.
+- **Invariants:** Acts align to SM but are the play framing, not a second machine.
 - **Failure modes:** Acts as WORD types. Act II merge as array merge.
 - **Boundary & Coupling:** Maps onto SM + H. Act VI couples to P1. Dependent diagnostic layer.
 - **Implementation implications:** Steward questions only.
@@ -310,7 +338,7 @@ Flow inside the box:
 | M → E | meaning-in-flight locally | source-stated |
 | L+M+E-patterns → ISL | three named inputs | source-stated; first-clipboard tuple `[GAP]` **closed** |
 | ISL → PFC next | priors / templates entrenched, weakened, or split (Act VI) | source-stated |
-| B → R | acts | source-stated |
+| B → R | acts via H10b Feedback | source-stated §2.8 |
 | L → Graphic D | “revised ledger” | **does not match** Piece 6. `[CONFLICT]` |
 | M → Graphic D | weights / must-do | **does not match** Piece 2. `[CONFLICT]` |
 | RIC → Piece 3 | structured arrival | kind-kin only. Not a wire. `[I]` |
@@ -325,6 +353,24 @@ Failure propagation:
 - H10 as emission → `[GAP]` falsely closed.
 
 Arbitration modes are named (P4). Numeric switching rule remains `[GAP]`. Two YAML axes: raw_vs_template and identity_vs_reality — first clipboard had collapsed them.
+
+### SM → piece interface coherence (pass 2)
+
+| From | Hands to | Thing handed | Match? |
+|---|---|---|---|
+| S0 I | RIC and PFC | raw signals | match |
+| S0 RIC∥PFC | S1 | both streams still live | match (coexistence) |
+| S1 tags | S2 C | filtered {RIC, PFC} | match; tag schema not enumerated beyond threat/irrelevant/opportunity |
+| S2 C | L | add / merge / reclassify | match |
+| S3 M | E | intended transitions in flight | match |
+| S4 E | ISL | emotional patterns | match |
+| S5 ISL | S6 B | identity snapshot | match |
+| S6 B | H10b | observable act | match |
+| H10b | S0 / R | new outer structure | match as world change; **not** Graphic D append |
+| observer talk (“recognition that…”) | next piece | — | not used; handed things above |
+
+Numeric RIC vs PFC switch remains `[GAP]`.
+
 
 ---
 
@@ -352,6 +398,18 @@ HCC-A is the driver *inside* contract 2. Cup and Water are not pieces of this ma
 ```
 
 Housing invariant: only structure crosses a mind-boundary.
+
+### System invariants (attachment §7)
+
+Author closing constraints, now clipboard law for this gearbox:
+
+1. Assumes objective reality.
+2. Respects individual subjective compilation.
+3. Forbids meaning transfer.
+4. Restricts communication to structure.
+
+Hands: kin of “no stored meaning.” Not an emission rule. Not a fourth Core type.
+
 
 ---
 
@@ -435,6 +493,19 @@ Diagnostic use: hear wrong mesh (PFC-only, ledger-delete-on-tape, M as WORD) bef
 
 None of these deltas license L/M ops on Graphic D. Emission remains `[GAP]`.
 
+## Pass 2 clipboard deltas
+
+| Ticket | Attachment | Clipboard before | Action |
+|---|---|---|---|
+| T1 | §2.7 B and §2.8 Feedback | fused under H10 | split H10 / H10b |
+| T2 | Act diagnostic prompts | questions only | prompts listed on Acts |
+| T3 | Act I scene types | “stakes + roles” | scene vocabulary added |
+| T4 | §6 YAML fields | nickname | field contract on H11 |
+| T5 | Emotion Mode C / B | easy to fuse with H5 / H10 | collision stamped on P6 and H10 |
+| T6 | SM handed things | edge table only | SM → piece coherence table |
+| T7 | §7 four constraints | overview prose | System invariants block |
+
+Projection HTML not updated this tick.
 
 ---
 
