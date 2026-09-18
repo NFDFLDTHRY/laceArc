@@ -381,6 +381,7 @@ Next work is the H×C×W train, not another Water heading walk.
 ## Executive Seams Summary
 
 - Two systems, one interface. Location first, then compute.
+- Combined train: `docs/clock/train-h-c-w-systems-manifest.md`.
 - Loud ≠ transferable. INVALID is heat without payload.
 - Kernel stops grind. It does not write the tape.
 - OBS is pointable structure in talk. OBS is not POINTER.

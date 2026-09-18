@@ -622,7 +622,7 @@ Diagnostic use: hear wrong mesh (PFC-only, ledger-delete-on-tape, M as WORD) bef
 - POINTER when / arity / adjacency — Hands `[GAP]`. Not an HCC degree of freedom.
 - Numeric RIC/PFC switching procedure — modes named; procedure still `[GAP]`.
 - Original HCC-A attachment is **not** in git (pass 1 read it from workspace attachments). Do not `git add` the txt.
-- Cup crossings: `docs/clock/coffee-cup-systems-manifest.md` pass 5 register. Water crossings: `docs/clock/water-systems-manifest.md` pass 3 register.
+- Cup crossings: `docs/clock/coffee-cup-systems-manifest.md` pass 5 register. Water crossings: `docs/clock/water-systems-manifest.md` pass 3 register. Combined train: `docs/clock/train-h-c-w-systems-manifest.md`.
 
 ---
 
