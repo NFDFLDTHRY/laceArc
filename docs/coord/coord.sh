@@ -169,12 +169,12 @@ path_to_station() {
   local -A RULES=(
     [clipboards]="docs/clipboards/**"
     [prompts]="docs/prompts/**"
-    [maps]="docs/reason-model-map.md docs/rust-nostd-*.md docs/gearing-code-1to1.md docs/clock/gearing-code-1to1.md docs/coherence-audit*.md docs/system-mathematical-model.md docs/clock/system-mathematical-model.md docs/defrag-plan.md"
+    [maps]="docs/reason-model-map.md docs/rust-nostd-*.md docs/atomic-primitives-map.md docs/gearing-code-1to1.md docs/clock/gearing-code-1to1.md docs/coherence-audit*.md docs/system-mathematical-model.md docs/clock/system-mathematical-model.md docs/defrag-plan.md docs/plans/**"
     [history]="docs/history-recovered* docs/history/**"
-    [hologram]="docs/hologram/** docs/shadow-clock-hologram.md docs/clock/shadow-clock-hologram.md docs/shadow-clock-agent-brief.md docs/clock/shadow-clock-agent-brief.md docs/shadow-clock-gear-contracts.md docs/clock/shadow-clock-gear-contracts.md docs/philosophy-map.md docs/clock/philosophy-map.md docs/agent-interaction-model.md docs/clock/agent-interaction-model.md"
+    [hologram]="docs/hologram/** docs/clock/** docs/shadow-clock-hologram.md docs/shadow-clock-agent-brief.md docs/shadow-clock-gear-contracts.md docs/philosophy-map.md docs/agent-interaction-model.md"
     [renderer]="docs/shadow-clock-gearing.html"
     [kit]="docs/kit/**"
-    [law]="AGENTS.md docs/staking-the-workspace.md docs/law-why-these-documents.md docs/systems-manifest.md docs/graphics/** CONTRIBUTING.md README.md"
+    [law]="AGENTS.md CLAUDE.md docs/staking-the-workspace.md docs/law-why-these-documents.md docs/systems-manifest.md docs/graphics/** docs/graphics-close-reading.md docs/pointer-emission.md docs/references.md CONTRIBUTING.md README.md"
     [gearing-meta]="docs/gearing/*.md docs/gearing/*.sh docs/gearing/RESYNC.md"
     [coord]="docs/coord/**"
   )

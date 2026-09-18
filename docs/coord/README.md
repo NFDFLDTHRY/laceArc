@@ -51,12 +51,12 @@ Station files: `docs/coord/stations/<name>.station`
 |---|---|
 | clipboards | `docs/clipboards/**` |
 | prompts | `docs/prompts/**` |
-| maps | `docs/reason-model-map.md` `docs/rust-nostd-*.md` `docs/gearing-code-1to1.md` / `docs/clock/gearing-code-1to1.md` `docs/coherence-audit*.md` `docs/system-mathematical-model.md` / `docs/clock/system-mathematical-model.md` `docs/defrag-plan.md` |
+| maps | `docs/reason-model-map.md` `docs/rust-nostd-*.md` `docs/atomic-primitives-map.md` `docs/clock/gearing-code-1to1.md` `docs/coherence-audit*.md` `docs/clock/system-mathematical-model.md` `docs/defrag-plan.md` `docs/plans/**` |
 | history | `docs/history-recovered*` `docs/history/**` |
-| hologram | `docs/hologram/**` Shadow prose under `docs/clock/` (`shadow-clock-hologram.md`, `shadow-clock-agent-brief.md`, `shadow-clock-gear-contracts.md`, `philosophy-map.md`, `agent-interaction-model.md`) |
+| hologram | `docs/hologram/**` `docs/clock/**` (1:1 + math stay maps: exact path wins) |
 | renderer | `docs/shadow-clock-gearing.html` |
 | kit | `docs/kit/**` |
-| law | `AGENTS.md` `docs/staking-the-workspace.md` `docs/law-why-these-documents.md` `docs/systems-manifest.md` `docs/graphics/**` `CONTRIBUTING.md` `README.md` (rare; steward) |
+| law | `AGENTS.md` `CLAUDE.md` staking, law-why, manifest, graphics, close-reading, `pointer-emission.md`, references, CONTRIBUTING, README |
 | coord | docs/coord/** (this umbrella) |
 | gearing-meta | `docs/gearing/*.md` `docs/gearing/*.sh` `docs/gearing/RESYNC.md` (not `contracts-*.js`) |
 
