@@ -142,6 +142,9 @@ Rejected cuts: fuse gearbox into Graphic D; run Core with no clutch; implement H
 
 AgentScope remains a gauge on the machinist, not a fourth gear in this train.
 
+Composition law for this sketch (meshes, 3-axis cells, ratios, sealed `[GAP]`s) lives at `docs/clock/train-h-c-w-systems-manifest.md`. This map is not rewritten by that file.
+
+
 ---
 
 ## Mechanical clock (sorted gearing)

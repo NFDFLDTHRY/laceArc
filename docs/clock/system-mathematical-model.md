@@ -14,7 +14,7 @@ This document states a **complete dual-universe mathematical model relative to**
 
 It is **not** complete as a Core executable. The governing step that would turn an arrival into a POINTER cut — when a POINTER is written, at what arity, and whether adjacency of WORDs implies a relation — is Hands-silent and is left sealed as \([GAP]\). Shadow language (Anchor, OBS, “touch grows lace” as intent) is never used to invent that rule. Consequently this model is a specification of two universes and of the wall between them, not a program that grows Graphic D.
 
-**Sources (in authority order).** Hands: Graphics A–D, especially Graphic D (WORD/POINTER append-only array); `docs/systems-manifest.md`. Law: `docs/staking-the-workspace.md`, `docs/law-why-these-documents.md`. Shadow: `docs/clock/shadow-clock-hologram.md`, `docs/clock/shadow-clock-gear-contracts.md` (primary mesh inventory). Projections and briefs: `docs/shadow-clock-gearing.html`, `docs/clock/shadow-clock-agent-brief.md`, `docs/reason-model-map.md`.
+**Sources (in authority order).** Hands: Graphics A–D, especially Graphic D (WORD/POINTER append-only array); `docs/systems-manifest.md`. Law: `docs/staking-the-workspace.md`, `docs/law-why-these-documents.md`. Shadow: `docs/clock/shadow-clock-hologram.md`, `docs/clock/shadow-clock-gear-contracts.md` (primary mesh inventory). Train composition (H×C×W clocks, not a replacement of this algebra): `docs/clock/train-h-c-w-systems-manifest.md`. Projections and briefs: `docs/shadow-clock-gearing.html`, `docs/clock/shadow-clock-agent-brief.md`, `docs/reason-model-map.md`.
 
 ---
 

@@ -255,6 +255,18 @@ Ratios do not fill the sealed board.
 | T1 | Ratio register bound |
 | T2 | Tick = 0 or 1 per attempt; grind = 0 |
 
+## Stop (pass 6)
+
+No further composition passes against H×C×W unless a new remainder is pointed at. The remainder is the sealed board. Philosophy-map and the math model now point here. `docs/systems-manifest.md` is law station — not edited this pass.
+
+## Pass 6 clipboard deltas
+
+| Ticket | Action |
+|---|---|
+| T1 | Stop stamp |
+| T2 | Philosophy-map pointer |
+| T3 | Math-model pointer |
+
 ---
 
 ## Executive Seams Summary
