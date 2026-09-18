@@ -12,6 +12,8 @@ This file is **Shadow / Layer III documentation of the book**, not Lace `src/`, 
 
 ---
 
+
+**Pass 5 ASCII panels:** see [`kauffman-4ed-ascii-machinery.md`](kauffman-4ed-ascii-machinery.md) (P-A1–A9). Algorithms unchanged this pass.
 ## Stamp legend
 
 | Stamp | Meaning |

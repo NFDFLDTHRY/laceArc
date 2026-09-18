@@ -105,6 +105,24 @@ Law on this clip: diagram ≠ rope · hitch kin · grab ≠ emission · `[GAP]` 
 
 ---
 
+## Pass 5 receipt
+
+| Field | Value |
+|---|---|
+| Status | EXECUTED |
+| Station | clipboards · agent `reference-Mapper` |
+| Plan | [kauffman-pass-5-plan.md](kauffman-pass-5-plan.md) |
+| Product | [`kauffman-4ed-ascii-machinery.md`](kauffman-4ed-ascii-machinery.md) — SOURCE MACHINERY overview + Wave A panels P-A1…P-A9 |
+| Algorithms | unchanged; cite [`kauffman-4ed-mechanisms.md`](kauffman-4ed-mechanisms.md) |
+| PAGE A–X morals | **unchanged** (receipt only) |
+| Emission | still `[GAP]` |
+| src/ | **none** |
+| Core ASCII | `docs/systems-manifest-ascii.md` **untouched** |
+
+Law on this clip: diagram ≠ rope · hitch kin · grab ≠ emission · `[GAP]` sealed. Book ASCII ≠ Lace append.
+
+---
+
 ```
 ┌──────────────────────────────────────────────────────────────────────────┐
 │ CLIPBOARD                                                                │
@@ -287,6 +305,7 @@ Law on this clip: diagram ≠ rope · hitch kin · grab ≠ emission · `[GAP]` 
 - Searchable text layer still absent; denser OCR remains optional.
 - **Pass 3** added coherence mesh + Gauss pin (PDF p.562); synced five-stakes ≤ note; map K7 `<` left OPEN.
 - **Pass 4** added `kauffman-4ed-mechanisms.md` (Wave A M-A1–A9 constructive algorithms; B–D deferred). No PAGE rewrite; Φ still `[GAP]`.
+- **Pass 5** added `kauffman-4ed-ascii-machinery.md` (Wave A P-A1–A9 ASCII source machinery). No PAGE rewrite; Φ still `[GAP]`.
 
 ---
 

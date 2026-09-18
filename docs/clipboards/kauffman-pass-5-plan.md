@@ -1,6 +1,6 @@
 # Kauffman pass 5 — rigorous mechanism map + ASCII source-machinery model
 
-**Status:** PLANNED — not executed. Emission `[GAP]`.  
+**Status:** EXECUTED (Wave A panels complete; Waves B–D deferred). Emission `[GAP]`.  
 **Station:** clipboards (HELD `reference-Mapper`)  
 **Base at plan:** refresh to current `origin/main` before execute  
 **Source:** L.H. Kauffman, *Knots and Physics*, 4ed · slug `dokumen.pub_knots-and-physics-4ed-9814383007`  
@@ -256,3 +256,20 @@ Book gears on paper ≠ Lace append.
 ASCII that looks like Core but stamps FORBID is still Shadow — the stamp is the fence.  
 If a panel needs a Lace scheduler to choose the next crossing, that nondeterminism is `[OPEN]`, not Φ.  
 Φ stays `[GAP]`.
+
+
+---
+
+## Execution receipt
+
+| Field | Value |
+|---|---|
+| When | 2026-09-18 (PT) |
+| Agent | reference-Mapper |
+| Artifact | `docs/clipboards/kauffman-4ed-ascii-machinery.md` |
+| Wave A | P-A1…P-A9 filled to panel schema + overview board |
+| Wave B–D | Deferred (table in ascii file) |
+| Clipboard | Pass 5 receipt only |
+| systems-manifest-ascii.md | untouched |
+| PDF staged | No |
+| Push | Ask first |
