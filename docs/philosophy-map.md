@@ -142,6 +142,111 @@ Rejected cuts: fuse gearbox into Graphic D; run Core with no clutch; implement H
 
 AgentScope remains a gauge on the machinist, not a fourth gear in this train.
 
+---
+
+## Mechanical clock (sorted gearing)
+
+A gearbox can sit still. A clock cannot: it exists to *count turns*. Lace is the tape that keeps the count. The three gears are the going train and escapement that make a count legal.
+
+Human claim to honor:
+
+> Objects do not have relationships. Relationships cluster as the gears turn over time and this form / update relationship cluster reference labels aka a variable ie array{ref by lace index geometry}
+
+### Train (what turns what)
+
+```
+ MAINSPRING = R / constraint / gravity on the cup
+      |
+      v
+ CASE GEAR H (HCC-A)
+      RIC shaft and PFC shaft must both rotate
+      escape from the case = B only
+      |
+      v
+ PHASE WHEEL C (Cup)     5 teeth / rev
+      tooth 3 = impulse window
+      tooth 5 returns torque to H.PFC for the next rev
+      |
+      v
+ ESCAPEMENT W (Water)    pallet
+      locked  = banks / UNK
+      drop    = one pointable mesh, one possible tick
+      grind   = power without mesh  (not a tick)
+      |
+      v
+ TAPE (Graphic D)        one append = one tick recorded
+      |
+      v
+ HANDS / DIAL            Graphics B,C  (projection)
+      relationship CLUSTER is what the hands show
+      after many ticks. Not a pin between objects.
+```
+
+Ratios that must not slip:
+
+| Mesh | Ratio / law | Slip looks like |
+|---|---|---|
+| H.RIC : H.PFC | 1:1 both turning | PFC-only; world never enters |
+| H.B : C | 1 impulse into the five-tooth wheel | Behavior as rewrite |
+| C | 5:1 wrap (5 drives next 1) | aftermath files impact |
+| W pallet : tape | 0 or 1 tick per attempt | grind counted as append |
+| tape : hands | many ticks : one cluster view | cluster stored as edges on WORD |
+| tick : cluster update | cluster may change only on a tick | relationship write with no append |
+
+There is no fourth going-gear called Relationship. Clustering is the *wear pattern on the tape* plus the *hands*. Time is the only author of a cluster.
+
+### Objects do not have relationships
+
+A WORD is a mark on the tape, not a node with an edge list.
+
+A star is not a relation table. It is what you see when several ticks have passed the same eyelet.
+
+Forbidden: `object.relations[]`. That is a graph DB beside the lace (Petersen GNN, Xiao embed, second store).
+
+### Relationships cluster as the gears turn
+
+No tick → no new geometry → cluster unchanged.
+
+Tick → another index exists on the tape → the visible cluster may thicken.
+
+That is hitch physics: later participation. The earlier wrap does not grow a field named `related_to`.
+
+Update of a cluster is **not** an in-place edit of a variable record. It is more tape. The name persists. The geometry grows.
+
+### Variable = cluster reference label
+
+`variable` here is not a stored meaning and not a third entry type.
+
+It is the label by which a cluster is *called* when you point at index geometry:
+
+```
+variable  :=  label
+binding   :=  array{ ref by lace index geometry }
+```
+
+Read: given a label, the cluster is the set of positions on the 1D strand that have participated in that label. The array is Graphic D. The refs are indices. The geometry is where those indices sit (and how a projection shows them).
+
+That is a **view**. It is kin of Piece 4 (star as accumulated passes) and Piece 13 (projection ≠ store).
+
+It is **not** pointer-emission. Emission would be the rule that *writes* a POINTER section when a tick must name earlier geometry. That rule is still `[GAP]`. This section only says what a variable *is* when you look: a label on a cluster of indices, authored by time.
+
+### What the clock forbids
+
+- Relationship as an object property
+- Cluster update with no tick
+- Label as a meaning row
+- `array{ref}` as a second array beside Graphic D
+- Escapement drop treated as “we now know POINTER emission”
+- Hands (cluster view) written back onto the tape as edges
+
+### What the clock permits the hologram to judge
+
+Wrong tick (append that is grind).  
+Wrong phase (work off tooth 3).  
+Wrong display (hands claiming objects own edges).  
+Right machine: tape grows; clusters thicken in the view; labels name geometry; nothing on the tape is an edge list.
+
+
 
 ---
 

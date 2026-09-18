@@ -162,6 +162,27 @@ Oil inside a gear is not a tooth on the cord.
         internals stay boxed      work only in window      no mesh, no torque
 
 
+CLOCK  (the same train, counted)
+--------------------------------
+Mainspring = R.  Tape = Graphic D.  Hands = projections.
+Tick = one legal append.  No tick, no cluster change.
+
+  H dual shaft 1:1
+  C five-tooth, tooth 3 impulses the pallet
+  W escapement: 0 or 1 drop per attempt
+  grind is not a tick
+
+OBJECTS DO NOT HAVE RELATIONSHIPS.
+Relationships CLUSTER as the train turns over time.
+A variable is a label on that cluster.
+Binding = array{ ref by lace index geometry }
+          = view of Graphic D, not a second array,
+            not object.relations[], not emission.
+
+Emission remains a [GAP].
+The clock does not close it.
+
+
 READING ORDER WHEN A DOCUMENT IS IN THE WORKSPACE
 -------------------------------------------------
     1. shoe in hands
@@ -259,6 +280,8 @@ STILL FORBIDDEN AFTER CODE EXISTS
   ReAG inside the array
   Story Ledger merge/delete as array ops
   OBS talk-pointers as POINTER emission
+  object.relations[] / graph beside the tape
+  cluster update with no tick
   a second lace
 
 

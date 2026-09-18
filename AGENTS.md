@@ -121,7 +121,8 @@ Full ASCII: `docs/law-why-these-documents.md`.
 
 ## Adjacent reading
 
-Reason model: `docs/reason-model-map.md` (a shoe lace in the hands). Philosophy of operating the lace: `docs/philosophy-map.md`. HCC-A, Coffee Cup, Water/Proofing are gears required to operate upon the workpiece. They are not WORD/POINTER. Ledger ops stay inside HCC-A. Clutch (Water) before torque. Phase (Cup) tooth 3 is the work window.
+Reason model: `docs/reason-model-map.md` (a shoe lace in the hands). Clock: objects do not have relationships. Clusters form as the train ticks. A variable is a label on index geometry of Graphic D — a view, not a second array, not pointer-emission.
+Philosophy of operating the lace: `docs/philosophy-map.md`. HCC-A, Coffee Cup, Water/Proofing are gears required to operate upon the workpiece. They are not WORD/POINTER. Ledger ops stay inside HCC-A. Clutch (Water) before torque. Phase (Cup) tooth 3 is the work window.
 Cited in `docs/references.md`.
 Not source of record. Do not import their axioms into Core. Do not add PDF files to git.
 Do not treat Story Ledger merge/delete, Meaning Engine weights, or OBS talk-pointers as Graphic D.
