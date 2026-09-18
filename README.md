@@ -86,6 +86,8 @@ Shelves (defrag pass 1–4). Hands stay at `docs/` root. Do not treat a prompt, 
 | [docs/clipboards/agentscope-clipboard.md](docs/clipboards/agentscope-clipboard.md) | AgentScope taxonomy for the HOLDER. ReAG stays off Graphic D. Not Core. |
 | [docs/plans/rust-nostd-crate-map.md](docs/plans/rust-nostd-crate-map.md) | Plan map of first-party `#![no_std]` doors. No `src/`. Emission sealed. |
 | [docs/plans/rust-nostd-branch-contracts.md](docs/plans/rust-nostd-branch-contracts.md) | Plan: seven `#![no_std]` branch contract cards (serial proof gates). No `src/`. |
+| [docs/plans/rust-nostd-second-reading.md](docs/plans/rust-nostd-second-reading.md) | Second reading of the two rust plans and their IR tooling: eleven findings, ten amendments proposed, none applied. Emission untouched. |
+| [docs/plans/lace-projection-brief.md](docs/plans/lace-projection-brief.md) | [PROPOSAL] Plan for the Lace visualizer: Graphic D's eleven rows as a Layer III view. No emitter. Review pass 1 applied. |
 | [docs/clock/gearing-code-1to1.md](docs/clock/gearing-code-1to1.md) | 47 visual keys ↔ planned Shadow units. Chip-only drift noted. Not Core. |
 | [docs/pointer-emission.md](docs/pointer-emission.md) | DRAFT questions only. Not accepted. Emission remains [GAP]. |
 | [docs/clock/philosophy-map.md](docs/clock/philosophy-map.md) | HCC-A, Coffee Cup, Water as the clock-gearbox. Clusters by tick. Not Core rows. |
