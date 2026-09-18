@@ -591,10 +591,10 @@
       const x = -2.8 + t * 5.6;
       const y = -0.95 + Math.sin(t * Math.PI * 1.4) * 0.45 + t * 0.32;
       /* keep lace behind gear faces so teeth stay readable */
-      const z = -1.65 + Math.cos(t * Math.PI * 2.1) * 0.45 + Math.sin(t * 3.0) * 0.18;
+      const z = -1.55 + Math.cos(t * Math.PI * 2.1) * 0.40 + Math.sin(t * 3.0) * 0.16;
       pts.push([x, y, z]);
     }
-    const halfW = 0.035;
+    const halfW = 0.085;
     for (let i = 0; i < pts.length - 1; i++) {
       const a = pts[i], b = pts[i + 1];
       const dx = b[0] - a[0], dy = b[1] - a[1], dz = b[2] - a[2];
@@ -618,9 +618,9 @@
   }
 
   // Scene layout: gears along a shared visual axle (X), slightly tilted for depth
-  const GEAR_A = { teeth: 16, inner: 0.72, outer: 0.85, tip: 0.14, halfT: 0.09, color: [0.36, 0.62, 0.83], x: -1.15 };
-  const GEAR_B = { teeth: 12, inner: 0.58, outer: 0.70, tip: 0.12, halfT: 0.08, color: [0.83, 0.63, 0.36], x: 0.0 };
-  const GEAR_C = { teeth: 14, inner: 0.65, outer: 0.78, tip: 0.13, halfT: 0.085, color: [0.48, 0.79, 0.44], x: 1.15 };
+  const GEAR_A = { teeth: 16, inner: 0.72, outer: 0.88, tip: 0.14, halfT: 0.12, color: [0.36, 0.62, 0.83], x: -1.15 };
+  const GEAR_B = { teeth: 12, inner: 0.58, outer: 0.73, tip: 0.12, halfT: 0.11, color: [0.83, 0.63, 0.36], x: 0.0 };
+  const GEAR_C = { teeth: 14, inner: 0.65, outer: 0.81, tip: 0.13, halfT: 0.115, color: [0.48, 0.79, 0.44], x: 1.15 };
 
   const SHADER = `
 struct Uniforms {
@@ -710,7 +710,7 @@ fn fs_main(input : VSOut) -> @location(0) vec4f {
     const meshB = buildGear(GEAR_B.teeth, GEAR_B.inner, GEAR_B.outer, GEAR_B.tip, GEAR_B.halfT, GEAR_B.color);
     const meshC = buildGear(GEAR_C.teeth, GEAR_C.inner, GEAR_C.outer, GEAR_C.tip, GEAR_C.halfT, GEAR_C.color);
     const axleMesh = buildCylinder(0.08, 2.0, 20, [0.79, 0.64, 0.15], "x");
-    const laceMesh = buildLaceRibbon([0.72, 0.68, 0.60]);
+    const laceMesh = buildLaceRibbon([0.92, 0.86, 0.72]);
 
     function makeBuffer(data) {
       const buf = device.createBuffer({
@@ -780,17 +780,17 @@ fn fs_main(input : VSOut) -> @location(0) vec4f {
     // world centers for picking (gear bodies + mesh contact zones AB/BC/CA)
     // mesh:true zones are preferred over gear centers when both hit
     const pickTargets = [
-      { key: "A", pos: [GEAR_A.x, 0, 0], radius: 0.88 },
-      { key: "B", pos: [GEAR_B.x, 0, 0], radius: 0.74 },
-      { key: "C", pos: [GEAR_C.x, 0, 0], radius: 0.82 },
+      { key: "A", pos: [GEAR_A.x, 0, 0], radius: 0.92 },
+      { key: "B", pos: [GEAR_B.x, 0, 0], radius: 0.78 },
+      { key: "C", pos: [GEAR_C.x, 0, 0], radius: 0.86 },
       { key: "axle", pos: [0, 0, 0], radius: 0.32 },
       /* mesh contact bands between adjacent gears (same LACE_CONTRACTS keys) */
-      { key: "AB", pos: [(GEAR_A.x + GEAR_B.x) / 2, 0.72, 0.12], radius: 0.52, mesh: true },
-      { key: "AB", pos: [(GEAR_A.x + GEAR_B.x) / 2, -0.72, 0.12], radius: 0.48, mesh: true },
-      { key: "BC", pos: [(GEAR_B.x + GEAR_C.x) / 2, 0.68, 0.12], radius: 0.50, mesh: true },
-      { key: "BC", pos: [(GEAR_B.x + GEAR_C.x) / 2, -0.68, 0.12], radius: 0.46, mesh: true },
-      { key: "CA", pos: [0, -0.88, 0.18], radius: 0.55, mesh: true },
-      { key: "CA", pos: [(GEAR_A.x + GEAR_C.x) / 2, 0.05, -0.35], radius: 0.42, mesh: true },
+      { key: "AB", pos: [(GEAR_A.x + GEAR_B.x) / 2, 0.74, 0.18], radius: 0.54, mesh: true },
+      { key: "AB", pos: [(GEAR_A.x + GEAR_B.x) / 2, -0.74, 0.18], radius: 0.50, mesh: true },
+      { key: "BC", pos: [(GEAR_B.x + GEAR_C.x) / 2, 0.70, 0.18], radius: 0.52, mesh: true },
+      { key: "BC", pos: [(GEAR_B.x + GEAR_C.x) / 2, -0.70, 0.18], radius: 0.48, mesh: true },
+      { key: "CA", pos: [0, -0.90, 0.22], radius: 0.56, mesh: true },
+      { key: "CA", pos: [(GEAR_A.x + GEAR_C.x) / 2, 0.05, -0.28], radius: 0.44, mesh: true },
     ];
 
     let lastVP = mat4Identity();
@@ -826,16 +826,17 @@ fn fs_main(input : VSOut) -> @location(0) vec4f {
       angle = ts * 0.00035;
 
       const aspect = w / Math.max(h, 1);
-      const proj = mat4Perspective((44 * Math.PI) / 180, aspect, 0.1, 100);
-      const eye = [0.15, 1.05, 7.15];
-      const view = mat4LookAt(eye, [0, 0.02, 0], [0, 1, 0]);
-      // slight world tilt so axle reads as shared shaft in depth
-      const worldTilt = mat4Multiply(mat4RotateY(-0.22), mat4RotateX(-0.22));
+      const proj = mat4Perspective((46 * Math.PI) / 180, aspect, 0.1, 100);
+      /* 3/4 view: +X shows YZ gear faces; +Z still reads shared axle spacing */
+      const eye = [4.8, 1.6, 3.8];
+      const view = mat4LookAt(eye, [0, 0.05, 0], [0, 1, 0]);
+      // mild world tilt — axle still reads as one shaft without edge-on faces
+      const worldTilt = mat4Multiply(mat4RotateY(-0.12), mat4RotateX(-0.10));
       const vp = mat4Multiply(proj, mat4Multiply(view, worldTilt));
       lastVP = vp;
       lastEye = eye;
 
-      const light = [0.45, 0.85, 0.55, 0];
+      const light = [0.72, 0.78, 0.42, 0];
 
       const enc = device.createCommandEncoder();
       const pass = enc.beginRenderPass({
