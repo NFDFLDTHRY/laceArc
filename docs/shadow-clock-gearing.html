@@ -178,8 +178,19 @@
   .hud-labels .lab[data-key="AB"],
   .hud-labels .lab[data-key="BC"],
   .hud-labels .lab[data-key="CA"] { border-color: var(--mesh); color: var(--mesh); font-weight: 600; }
-  .hud-labels .lab.active, .hud-labels .lab:hover {
+  .hud-labels .lab:hover {
     box-shadow: 0 0 10px rgba(240, 230, 160, 0.35);
+  }
+  .hud-labels .lab.active {
+    box-shadow: 0 0 14px rgba(240, 230, 160, 0.55);
+    background: rgba(42, 38, 22, 0.94);
+    outline: 1px solid var(--mesh);
+  }
+  .hud-labels .lab[data-key="AB"].active,
+  .hud-labels .lab[data-key="BC"].active,
+  .hud-labels .lab[data-key="CA"].active {
+    background: rgba(55, 50, 22, 0.96);
+    box-shadow: 0 0 16px rgba(240, 230, 160, 0.65);
   }
   .tick-bar {
     display: flex; flex-wrap: wrap; gap: 0.35rem;
@@ -306,7 +317,7 @@
 
   <aside class="side">
     <h2 id="panelTitle">Select a gear or mesh</h2>
-    <p class="hint">Tap a gear (A/B/C), mesh (A×B / B×C / C×A), the axle, or a time chip. Contracts are Shadow interaction specs — stamps show the great contract wall.</p>
+    <p class="hint">Tap a gear (A/B/C), a mesh contact band (A×B / B×C / C×A), the axle, HUD rail, or a time chip. Contracts are Shadow interaction specs — stamps show the great contract wall.</p>
 
     <div id="chips"></div>
 
@@ -578,8 +589,9 @@
       const t = i / N;
       // parametric lace curve weaving past the axle
       const x = -2.8 + t * 5.6;
-      const y = -0.9 + Math.sin(t * Math.PI * 1.4) * 0.55 + t * 0.35;
-      const z = -1.2 + Math.cos(t * Math.PI * 2.1) * 0.7 + Math.sin(t * 3.0) * 0.25;
+      const y = -0.95 + Math.sin(t * Math.PI * 1.4) * 0.45 + t * 0.32;
+      /* keep lace behind gear faces so teeth stay readable */
+      const z = -1.65 + Math.cos(t * Math.PI * 2.1) * 0.45 + Math.sin(t * 3.0) * 0.18;
       pts.push([x, y, z]);
     }
     const halfW = 0.035;
@@ -653,6 +665,8 @@ fn fs_main(input : VSOut) -> @location(0) vec4f {
   let spec = pow(max(dot(n, H), 0.0), 32.0);
   var col = input.color * (0.28 + 0.72 * diff) + vec3f(1.0, 0.95, 0.85) * spec * 0.25;
   col = mix(col, col * 1.25 + vec3f(0.15, 0.12, 0.05), u.highlight.x);
+  /* highlight.y = mesh-pair (AB/BC/CA) gold distinction */
+  col = mix(col, col * 1.12 + vec3f(0.42, 0.38, 0.12), u.highlight.y);
   return vec4f(col, 1.0);
 }
 `;
@@ -763,15 +777,20 @@ fn fs_main(input : VSOut) -> @location(0) vec4f {
       depthView = depthTexture.createView();
     }
 
-    // world centers for picking / HUD (local gear origin at gear.x on axle)
+    // world centers for picking (gear bodies + mesh contact zones AB/BC/CA)
+    // mesh:true zones are preferred over gear centers when both hit
     const pickTargets = [
-      { key: "A", pos: [GEAR_A.x, 0, 0], radius: 0.95 },
-      { key: "B", pos: [GEAR_B.x, 0, 0], radius: 0.82 },
-      { key: "C", pos: [GEAR_C.x, 0, 0], radius: 0.90 },
-      { key: "axle", pos: [0, 0, 0], radius: 0.35 },
-      { key: "AB", pos: [(GEAR_A.x + GEAR_B.x) / 2, 0.55, 0.2], radius: 0.4 },
-      { key: "BC", pos: [(GEAR_B.x + GEAR_C.x) / 2, 0.55, 0.2], radius: 0.4 },
-      { key: "CA", pos: [0, -0.7, 0.15], radius: 0.45 },
+      { key: "A", pos: [GEAR_A.x, 0, 0], radius: 0.88 },
+      { key: "B", pos: [GEAR_B.x, 0, 0], radius: 0.74 },
+      { key: "C", pos: [GEAR_C.x, 0, 0], radius: 0.82 },
+      { key: "axle", pos: [0, 0, 0], radius: 0.32 },
+      /* mesh contact bands between adjacent gears (same LACE_CONTRACTS keys) */
+      { key: "AB", pos: [(GEAR_A.x + GEAR_B.x) / 2, 0.72, 0.12], radius: 0.52, mesh: true },
+      { key: "AB", pos: [(GEAR_A.x + GEAR_B.x) / 2, -0.72, 0.12], radius: 0.48, mesh: true },
+      { key: "BC", pos: [(GEAR_B.x + GEAR_C.x) / 2, 0.68, 0.12], radius: 0.50, mesh: true },
+      { key: "BC", pos: [(GEAR_B.x + GEAR_C.x) / 2, -0.68, 0.12], radius: 0.46, mesh: true },
+      { key: "CA", pos: [0, -0.88, 0.18], radius: 0.55, mesh: true },
+      { key: "CA", pos: [(GEAR_A.x + GEAR_C.x) / 2, 0.05, -0.35], radius: 0.42, mesh: true },
     ];
 
     let lastVP = mat4Identity();
@@ -807,9 +826,9 @@ fn fs_main(input : VSOut) -> @location(0) vec4f {
       angle = ts * 0.00035;
 
       const aspect = w / Math.max(h, 1);
-      const proj = mat4Perspective((48 * Math.PI) / 180, aspect, 0.1, 100);
-      const eye = [0.2, 1.15, 6.6];
-      const view = mat4LookAt(eye, [0, 0.05, 0], [0, 1, 0]);
+      const proj = mat4Perspective((44 * Math.PI) / 180, aspect, 0.1, 100);
+      const eye = [0.15, 1.05, 7.15];
+      const view = mat4LookAt(eye, [0, 0.02, 0], [0, 1, 0]);
       // slight world tilt so axle reads as shared shaft in depth
       const worldTilt = mat4Multiply(mat4RotateY(-0.22), mat4RotateX(-0.22));
       const vp = mat4Multiply(proj, mat4Multiply(view, worldTilt));
@@ -836,7 +855,9 @@ fn fs_main(input : VSOut) -> @location(0) vec4f {
       pass.setPipeline(pipeline);
 
       const hiOn = [1, 0, 0, 0];
+      const hiMesh = [1, 1, 0, 0]; /* bright + gold for AB/BC/CA pair */
       const hiOff = [0, 0, 0, 0];
+      const meshPair = (highlightKey === "AB" || highlightKey === "BC" || highlightKey === "CA");
 
       // lace behind
       drawMesh(pass, bufLace, mat4Identity(), vp, eye, light, hiOff);
@@ -857,12 +878,17 @@ fn fs_main(input : VSOut) -> @location(0) vec4f {
       const spinB = -angle * (GEAR_A.teeth / GEAR_B.teeth);
       const spinC = angle * (GEAR_A.teeth / GEAR_C.teeth);
 
+      function gearHi(solo, inMesh) {
+        if (highlightKey === solo) return hiOn;
+        if (meshPair && inMesh) return hiMesh;
+        return hiOff;
+      }
       drawMesh(pass, bufA, gearOrient(GEAR_A.x, spinA), vp, eye, light,
-        (highlightKey === "A" || highlightKey === "AB" || highlightKey === "CA") ? hiOn : hiOff);
+        gearHi("A", highlightKey === "AB" || highlightKey === "CA"));
       drawMesh(pass, bufB, gearOrient(GEAR_B.x, spinB), vp, eye, light,
-        (highlightKey === "B" || highlightKey === "AB" || highlightKey === "BC") ? hiOn : hiOff);
+        gearHi("B", highlightKey === "AB" || highlightKey === "BC"));
       drawMesh(pass, bufC, gearOrient(GEAR_C.x, spinC), vp, eye, light,
-        (highlightKey === "C" || highlightKey === "BC" || highlightKey === "CA") ? hiOn : hiOff);
+        gearHi("C", highlightKey === "BC" || highlightKey === "CA"));
 
       pass.end();
       device.queue.submit([enc.finish()]);
@@ -870,18 +896,14 @@ fn fs_main(input : VSOut) -> @location(0) vec4f {
       requestAnimationFrame(frame);
     }
 
-    function pick(clientX, clientY) {
-      const rect = canvas.getBoundingClientRect();
-      const nx = ((clientX - rect.left) / rect.width) * 2 - 1;
-      const ny = 1 - ((clientY - rect.top) / rect.height) * 2;
+    function hitAmong(targets, nx, ny) {
       let best = null;
       let bestDist = Infinity;
-      pickTargets.forEach(t => {
+      targets.forEach(t => {
         const clip = transformPoint(lastVP, t.pos[0], t.pos[1], t.pos[2]);
         const dx = clip[0] - nx;
         const dy = clip[1] - ny;
         const d = Math.hypot(dx, dy);
-        // scale pick radius by approximate projected size
         const edge = transformPoint(lastVP, t.pos[0] + t.radius, t.pos[1], t.pos[2]);
         const pr = Math.max(0.04, Math.hypot(edge[0] - clip[0], edge[1] - clip[1]));
         if (d < pr && d < bestDist) {
@@ -890,6 +912,16 @@ fn fs_main(input : VSOut) -> @location(0) vec4f {
         }
       });
       return best;
+    }
+
+    function pick(clientX, clientY) {
+      const rect = canvas.getBoundingClientRect();
+      const nx = ((clientX - rect.left) / rect.width) * 2 - 1;
+      const ny = 1 - ((clientY - rect.top) / rect.height) * 2;
+      /* Mesh contact zones win over gear/axle bodies (chips still select any key). */
+      const meshHit = hitAmong(pickTargets.filter(t => t.mesh), nx, ny);
+      if (meshHit) return meshHit;
+      return hitAmong(pickTargets.filter(t => !t.mesh), nx, ny);
     }
 
     canvas.addEventListener("pointerdown", (e) => {
