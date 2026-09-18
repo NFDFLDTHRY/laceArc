@@ -2,7 +2,7 @@
 
 Paste everything inside the outer box to an agent. **Audit / map only.** Layer III. Not Core. Emission `[GAP]`. No `src/` until pointer-emission is accepted.
 
-Goal: the **visual clock gearing mapper** (`docs/shadow-clock-gearing.html` + `docs/gearing/contracts-*.js`) and the **code** (planned Rust `#![no_std]` first-party layout in `docs/rust-nostd-crate-map.md` / later crates) stay in a **strict one-to-one** relationship — every visible contract key has exactly one code unit, and every gearing-related code unit has exactly one visual key.
+Goal: the **visual clock gearing mapper** (`docs/shadow-clock-gearing.html` + `docs/gearing/contracts-*.js`) and the **code** (planned Rust `#![no_std]` first-party layout in `docs/plans/rust-nostd-crate-map.md` / later crates) stay in a **strict one-to-one** relationship — every visible contract key has exactly one code unit, and every gearing-related code unit has exactly one visual key.
 
 Hands first for Core. Shadow first for the clock. Do not fuse them.
 
@@ -27,7 +27,7 @@ Hands first for Core. Shadow first for the clock. Do not fuse them.
                     │    docs/shadow-clock-gearing.html       │
                     │  Code plan (Hands / when allowed):      │
                     │    docs/prompts/rust-nostd-crate-map-prompt.md  │
-                    │    docs/rust-nostd-crate-map.md (if any)│
+                    │    docs/plans/rust-nostd-crate-map.md (if any)│
                     │  Math dual-universe (if present):       │
                     │    docs/clock/system-mathematical-model.md    │
                     └──────────────────┬────────────────────┘

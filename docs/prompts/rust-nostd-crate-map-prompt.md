@@ -6,6 +6,8 @@ Hands first: shoe → graphics A–D → systems-manifest → staking IMPLEMENTA
 
 Special attention: **keep the codebase structure intuitive** — a stranger who held a shoe lace should recognize the tree without a second glossary.
 
+NOW path (defrag pass 4+): write `docs/plans/rust-nostd-crate-map.md`. Do not write the pre-shelf `docs/rust-nostd-crate-map.md` name.
+
 ```
 ╔══════════════════════════════════════════════════════════════════════════╗
 ║  LACEARC  ·  ASCII PROMPT  ·  RUST no_std / CRATE MAP                    ║
@@ -218,7 +220,7 @@ Special attention: **keep the codebase structure intuitive** — a stranger who 
          fill PAGE A → B → C → D → E → F → G → H → X
               │
               v
-         write docs/rust-nostd-crate-map.md
+         write docs/plans/rust-nostd-crate-map.md
               │
               v
          STOP  (no src/ · no Cargo.toml · commit only if human asks)

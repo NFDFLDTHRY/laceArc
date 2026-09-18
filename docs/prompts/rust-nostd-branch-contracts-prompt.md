@@ -1,10 +1,12 @@
 # Rust `#![no_std]` — next plan: per-branch contracts ASCII prompt
 
-Paste everything inside the outer box to an agent. **Plan only.** Deepen `docs/rust-nostd-crate-map.md` into per-branch contracts (API surface, forbidden states, proof shape). Not code. Not `src/`. Emission `[GAP]`.
+Paste everything inside the outer box to an agent. **Plan only.** Deepen `docs/plans/rust-nostd-crate-map.md` into per-branch contracts (API surface, forbidden states, proof shape). Not code. Not `src/`. Emission `[GAP]`.
 
-Prerequisite (already on disk): `docs/rust-nostd-crate-map.md`  
+Prerequisite (already on disk): `docs/plans/rust-nostd-crate-map.md`  
 Gate for any real dirs: human-accepted `docs/pointer-emission.md` (still may be absent — do not invent it here).  
 Hands first: graphics → manifest → IMPLEMENTATION LAW → crate map → this prompt.
+NOW path (defrag pass 4+): `docs/plans/rust-nostd-*.md`. Do not write the pre-shelf `docs/rust-nostd-*.md` names.
+
 
 ```
 ╔══════════════════════════════════════════════════════════════════════════╗
@@ -20,7 +22,7 @@ Hands first: graphics → manifest → IMPLEMENTATION LAW → crate map → this
 
 
                     ┌────────────── INPUTS ──────────────┐
-                    │  docs/rust-nostd-crate-map.md        │
+                    │  docs/plans/rust-nostd-crate-map.md        │
                     │  docs/graphics A–D                   │
                     │  docs/systems-manifest.md            │
                     │  staking / AGENTS Implementation Law │
@@ -28,7 +30,7 @@ Hands first: graphics → manifest → IMPLEMENTATION LAW → crate map → this
                     └──────────────────┬─────────────────┘
                                        │ read first
                                        v
-                         FILL → write docs/rust-nostd-branch-contracts.md
+                         FILL → write docs/plans/rust-nostd-branch-contracts.md
 
 
 ┌──────────────────────────────────────────────────────────────────────────┐
@@ -41,8 +43,8 @@ Hands first: graphics → manifest → IMPLEMENTATION LAW → crate map → this
 │   ┌────────────────────────────────────────────────────────────────┐     │
 │   │ PAGE A — RELATION TO PRIOR MAP                                 │     │
 │   │                                                                │     │
-│   │   Prior product: docs/rust-nostd-crate-map.md                  │     │
-│   │   This product:  docs/rust-nostd-branch-contracts.md           │     │
+│   │   Prior product: docs/plans/rust-nostd-crate-map.md                  │     │
+│   │   This product:  docs/plans/rust-nostd-branch-contracts.md           │     │
 │   │                                                                │     │
 │   │   KEEP tree: strand word pointer route view_star view_proj core│     │
 │   │   KEEP birth: strand → word → pointer → route → views → core   │     │
@@ -193,7 +195,7 @@ Hands first: graphics → manifest → IMPLEMENTATION LAW → crate map → this
 │   │  gearing crates in Core │ [III] stays Shadow                   │     │
 │   │  utils/ “shared”        │ FORBID                               │     │
 │   │                                                                │     │
-│   │  PRODUCT: docs/rust-nostd-branch-contracts.md                  │     │
+│   │  PRODUCT: docs/plans/rust-nostd-branch-contracts.md                  │     │
 │   │  AFTER: STOP · commit only if human asks · no src/             │     │
 │   └────────────────────────────────────────────────────────────────┘     │
 │                                                                          │
@@ -212,7 +214,7 @@ Hands first: graphics → manifest → IMPLEMENTATION LAW → crate map → this
          fill PAGE A → B (×7 cards) → C → D → E → F → G → H → X
               │
               v
-         write docs/rust-nostd-branch-contracts.md
+         write docs/plans/rust-nostd-branch-contracts.md
               │
               v
          STOP
