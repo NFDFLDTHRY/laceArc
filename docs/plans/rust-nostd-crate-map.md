@@ -4,13 +4,13 @@
 
 Shelf note (defrag pass 2): this file is the **crate tree**. Serial birth cards live in `docs/plans/rust-nostd-branch-contracts.md`. Neither file is an accepted emission rule.
 
-Execution of [the crate-map prompt](prompts/rust-nostd-crate-map-prompt.md), checking and completing its existing draft. The sheets use rendered mapping tables. The seven planned names, birth order, and direct dependencies are retained alongside [the branch contracts](rust-nostd-branch-contracts.md). No proposed directory is created.
+Execution of [the crate-map prompt](../prompts/rust-nostd-crate-map-prompt.md), checking and completing its existing draft. The sheets use rendered mapping tables. The seven planned names, birth order, and direct dependencies are retained alongside [the branch contracts](rust-nostd-branch-contracts.md). No proposed directory is created.
 
-**Authority:** [graphics A–D](graphics/README.md), [systems manifest](systems-manifest.md), the complete [staking law](staking-the-workspace.md), the complete [live law](law-why-these-documents.md), [AGENTS.md](../AGENTS.md), and [agent controls](kit/agent-control.md). The [reason model](reason-model-map.md) supplies the recorded anti-import boundaries. This map replaces none of those sources.
+**Authority:** [graphics A–D](../graphics/README.md), [systems manifest](../systems-manifest.md), the complete [staking law](../staking-the-workspace.md), the complete [live law](../law-why-these-documents.md), [AGENTS.md](../../AGENTS.md), and [agent controls](../kit/agent-control.md). The [reason model](../reason-model-map.md) supplies the recorded anti-import boundaries. This map replaces none of those sources.
 
 **Implementation Law:** Rust; `#![no_std]`; zero external dependencies; every dependency is our first-party branch; one branch, one task; state and prove that task before another branch exists. Allocation requires its own proven first-party task under the full law. The posture names, including seL4 and Coq, are the bar, not dependencies to import.
 
-**Gate:** [pointer-emission.md](pointer-emission.md) exists as an explicitly unanswered, unaccepted draft. Its filename, commit, or presence does not open implementation. Exact human acceptance and every premise needed by the particular task remain required. This map supplies no emission answer.
+**Gate:** [pointer-emission.md](../pointer-emission.md) exists as an explicitly unanswered, unaccepted draft. Its filename, commit, or presence does not open implementation. Exact human acceptance and every premise needed by the particular task remain required. This map supplies no emission answer.
 
 ## PAGE A — INTUITION TEST
 
@@ -28,7 +28,7 @@ The YES entries are the editor's proposed association between a name and its cit
 
 **KEEP:** shoe-readable names and one task per planned door. **FORBID:** names that conceal a graph, vocabulary, embedding, meaning store, or emission policy.
 
-The [AgentScope clipboard](clipboards/agentscope-clipboard.md) is a separate tracked document about the holder, not part of this crate map.
+The [AgentScope clipboard](../clipboards/agentscope-clipboard.md) is a separate tracked document about the holder, not part of this crate map.
 
 The absence of an arrival/ folder is a layout choice, not rejection of **Contract II, the Arrival Surface**. Arrival remains necessary as a thin surface. It must not own a vocabulary or second history. This revision preserves the seven-door plan rather than adding an eighth door.
 
@@ -167,7 +167,7 @@ Before graduation, each task needs its exact contract and revision, implementati
 | Backward references | D2/D3: targets are earlier existing positions on the same line. | The evidence/admission mechanism and choice of targets. |
 | Target kinds | D3/D6, key properties, AGENTS.md, and Piece 5 allow earlier WORD or POINTER targets. | Permission does not select a particular target or cause an append. |
 | POINTER representation | POINTER is itself a retained section. | Arity and concrete layout; no unary, pair, optional slot, or variable-length default. |
-| Slot assignment if a multi-slot layout is selected | D1's reference order is not uniformly earlier-first or later-first; see the [row-level reading, §2](graphics-close-reading.md#2-the-slot-problem-what-distinguishes-ref_a-from-ref_b). | What assigns a reference to each slot; neither target validity nor arity supplies that rule. |
+| Slot assignment if a multi-slot layout is selected | D1's reference order is not uniformly earlier-first or later-first; see the [row-level reading, §2](../graphics-close-reading.md#2-the-slot-problem-what-distinguishes-ref_a-from-ref_b). | What assigns a reference to each slot; neither target validity nor arity supplies that rule. |
 | Arrival and adjacency | Arrival order is preserved. | Which arrivals emit POINTERs, and whether adjacent WORDs already constitute a relation. |
 | Repetition / star reading | Repeated occurrences remain distinct passes. | Whether a particular passage also requires POINTER emission; equality is not an accepted trigger. |
 | Eventual participation | In the illustrated D1 prefix, all entries except the newest are referenced later. | Whether every entry must eventually be referenced; an example pattern is not a requirement. |
@@ -177,9 +177,9 @@ Before graduation, each task needs its exact contract and revision, implementati
 
 The emission draft §4 currently reopens whether POINTERs may target POINTERs. This conflicts with the explicit permission in Graphic D3/D6 and the standing orders. Preserve that permission while keeping timing, arity, target selection, and adjacency unresolved. This map does not edit the draft or treat its questions as an amendment.
 
-The updated manifest also records a counterexample to the proposed rule that every consecutive WORD pair emits a POINTER. In D1's WORD subsequence, pairs 0001/0003 and 0005/0008 have no corresponding POINTER in the illustrated prefix. This bounds a candidate against the recorded example; it does not establish a replacement emission rule or settle whether adjacency itself is a relation. “Consecutive” here means consecutive WORD occurrences, not adjacent array indices. [Row-level reading, §3](graphics-close-reading.md#3-emission-is-underdetermined-and-the-rows-prove-it).
+The updated manifest also records a counterexample to the proposed rule that every consecutive WORD pair emits a POINTER. In D1's WORD subsequence, pairs 0001/0003 and 0005/0008 have no corresponding POINTER in the illustrated prefix. This bounds a candidate against the recorded example; it does not establish a replacement emission rule or settle whether adjacency itself is a relation. “Consecutive” here means consecutive WORD occurrences, not adjacent array indices. [Row-level reading, §3](../graphics-close-reading.md#3-emission-is-underdetermined-and-the-rows-prove-it).
 
-The companion plan records a required outline at [pointer-emission-prompt.md](prompts/pointer-emission-prompt.md). It was absent at the original audit revision and is present at the commit-integration base 6fb2dac. Its header explicitly calls for unanswered questions, keeps the output DRAFT, and states that writing it is not acceptance. The outline remains distinct from an exact accepted emission contract; this commit task does not execute it.
+The companion plan records a required outline at [pointer-emission-prompt.md](../prompts/pointer-emission-prompt.md). It was absent at the original audit revision and is present at the commit-integration base 6fb2dac. Its header explicitly calls for unanswered questions, keeps the output DRAFT, and states that writing it is not acceptance. The outline remains distinct from an exact accepted emission contract; this commit task does not execute it.
 
 **DELTA:** SILENT on emission; FALSE FRIEND when a pointer type or folder is mistaken for the rule; CONFLICT if Continue, a view, or composition supplies an unrecorded decision. **EMISSION SETTLED? NO / [GAP].**
 

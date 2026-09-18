@@ -79,12 +79,12 @@ before it can be proposed for use.
 
 Read sources at this baseline:
 
-- [Graphics index](graphics/README.md) and the four PNGs: [A](graphics/from-words-to-worlds.png), [B](graphics/mechanisms-in-3d.png), [C](graphics/n-dimensional-relationships.png), [D](graphics/data-structure-1d-array.png).
-- [Systems manifest](systems-manifest.md), Pieces 1–15, interface-coherence check, composition, seams and open questions.
-- [AGENTS.md](../AGENTS.md), [staking](staking-the-workspace.md), [Implementation Law](law-why-these-documents.md), and [CONTRIBUTING.md](../CONTRIBUTING.md).
-- [Reason model](reason-model-map.md), RM1–RM10, X2/X4, rejected imports and open questions.
-- [Crate map](rust-nostd-crate-map.md), Pages A–X; [pointer-emission draft](pointer-emission.md), especially its status and sections 1–5.
-- [Agent controls](kit/agent-control.md) and [task/proof/handoff forms](kit/agent-task-template.md).
+- [Graphics index](../graphics/README.md) and the four PNGs: [A](../graphics/from-words-to-worlds.png), [B](../graphics/mechanisms-in-3d.png), [C](../graphics/n-dimensional-relationships.png), [D](../graphics/data-structure-1d-array.png).
+- [Systems manifest](../systems-manifest.md), Pieces 1–15, interface-coherence check, composition, seams and open questions.
+- [AGENTS.md](../../AGENTS.md), [staking](../staking-the-workspace.md), [Implementation Law](../law-why-these-documents.md), and [CONTRIBUTING.md](../../CONTRIBUTING.md).
+- [Reason model](../reason-model-map.md), RM1–RM10, X2/X4, rejected imports and open questions.
+- [Crate map](rust-nostd-crate-map.md), Pages A–X; [pointer-emission draft](../pointer-emission.md), especially its status and sections 1–5.
+- [Agent controls](../kit/agent-control.md) and [task/proof/handoff forms](../kit/agent-task-template.md).
 
 The adjacent PDFs and philosophical texts are not additional authorities
 for a WORD, POINTER or append rule. This pass uses their already-recorded
@@ -786,7 +786,7 @@ or a grant of permission.
 | Finite resources, layout composition, failure/durability and concurrent arrival ordering | Future proof obligations; manifest open questions | Unsettled premises; no allocator, persistence or concurrency scheme selected |
 
 Required outline destination:
-[`docs/prompts/pointer-emission-prompt.md`](prompts/pointer-emission-prompt.md) — present on
+[`docs/prompts/pointer-emission-prompt.md`](../prompts/pointer-emission-prompt.md) — present on
 live tip (was absent at the inspected baseline revision above; moved in defrag pass 1). The outline
 must exist before any planned branch directory becomes real; it is **not**
 the acceptance gate and does not fill emission answers. Pointing to its path
@@ -794,7 +794,7 @@ does not open Implementation Law. Its presence is not permission to put
 answers in these contracts.
 
 The separate acceptance gate is
-[`docs/pointer-emission.md`](pointer-emission.md), which currently exists
+[`docs/pointer-emission.md`](../pointer-emission.md), which currently exists
 as an unanswered, unaccepted draft. An outline is not the contract;
 existence is not acceptance; acceptance cannot be inferred from a commit.
 No answers to these questions are drafted here.

@@ -30,9 +30,9 @@ The prompt's literal “every gearing-related code unit” also encounters share
 
 ## PAGE B — TWO UNIVERSES AND THE STAMP LEGEND
 
-All Page D units belong to **Layer III Shadow tooling**. None belongs in the seven planned Hands doors in [the Rust crate map](../rust-nostd-crate-map.md). Those doors remain a separate conditional plan; these 47 names neither add 47 crates nor authorize simultaneous branch births.
+All Page D units belong to **Layer III Shadow tooling**. None belongs in the seven planned Hands doors in [the Rust crate map](../plans/rust-nostd-crate-map.md). Those doors remain a separate conditional plan; these 47 names neither add 47 crates nor authorize simultaneous branch births.
 
-The crate map and [branch contracts](../rust-nostd-branch-contracts.md) are plans already represented on main; the local crate-map revision is included in this documentation commit. The [pointer-emission draft](../pointer-emission.md) remains unanswered and unaccepted. The [elephant-clock interaction model](agent-interaction-model.md) concerns steward operation and is not another LACE_CONTRACTS key set.
+The crate map and [branch contracts](../plans/rust-nostd-branch-contracts.md) are plans already represented on main; the local crate-map revision is included in this documentation commit. The [pointer-emission draft](../pointer-emission.md) remains unanswered and unaccepted. The [elephant-clock interaction model](agent-interaction-model.md) concerns steward operation and is not another LACE_CONTRACTS key set.
 
 The clock's [boundary-stamp legend](shadow-clock-hologram.md#boundary-stamps) is:
 
