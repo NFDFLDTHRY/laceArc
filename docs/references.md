@@ -146,6 +146,8 @@ Knots as a meeting place for apparently separate ideas. That is the only series 
 
 If a sentence in any of these works would change WORD, POINTER, star, or the governing rule, discard it for Core and keep it as reading notes. Pointer emission remains a `[GAP]` until written in `docs/pointer-emission.md` from the four graphics, not from these volumes and not from HCC-A / Coffee Cup / Water OBS format.
 
+Five-page KEEP/FORBID clip of stakes 1–5: `docs/clipboard-five-stakes.md`. Projection of `docs/reason-model-map.md`. Not Core.
+
 #### History — sixth extraction plan (18 September 2026)
 
 Bound as `docs/history-recovered-pass-6-plan.md`. Plans the next recovery pass; does not execute it. Governing check: located ≠ read ≠ accepted ≠ proven. Historical Shadow only; does not amend staking or settle pointer-emission.
