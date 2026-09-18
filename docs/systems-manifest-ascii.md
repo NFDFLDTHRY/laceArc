@@ -150,3 +150,56 @@ No second clock inside I.
 | T3 | Presentation ladder |
 | T4 | One state, one control flow |
 
+## Open board (pass 3)
+
+From `docs/systems-manifest.md`. Not answers.
+
+| # | Open | Stamp |
+|---|---|---|
+| 1 | tokenization / case / multiword | `[GAP]` |
+| 2 | POINTER when / arity / implicit adjacent edge | `[GAP]` |
+| 3 | document / conversation / provenance as entries | `[GAP]` |
+| 4 | read / query / traversal operator | `[GAP]` |
+| 5 | concurrency / multi-writer | `[GAP]` |
+| 6 | geometric “thread through 3D” beyond append+pointer | `[GAP]` |
+| 7 | Kauffman PDFs are adjacent, not graphics | fence |
+| 8 | no multi-Lace / snapshot / export rule | unstated |
+| 9 | slot assignment ref_A vs ref_B | `[GAP]` |
+| 10 | must every entry eventually be referenced | `[GAP]` |
+| 11 | C6 four families vs D schema | `[GAP]` |
+| 12 | emission still unanswered; HCC is not piece 16 | `[GAP]` |
+
+Ruled out (D1): “every adjacent WORD pair emits a POINTER.” Two of four adjacent pairs in D1 have no pointer.
+
+## Parameters that are not G2 (pass 3)
+
+| Parameter | Is | Not |
+|---|---|---|
+| word identity (`PIE`/`pie`, Golden/Skillet) | unspecified, system-wide | emission |
+| route-family labels | axes named; not types in D | extra stores |
+| projection choice | view only | schema |
+| growth bound | unbounded; no pruning | a tidy-history knob |
+
+No priority / arbitration / filter parameters in the source.
+
+## Diagnostic tells (pass 3)
+
+- Node-edge graph as Lace → shadow  
+- Definition string → collapse  
+- New dimension adds information content → left the model  
+- History rewritten to keep tidy → Rule Zero already failed  
+
+## Four graphics as jobs (pass 3)
+
+A = growth story · B = 3D mechanism · C = what more dimensions is not · D = only store
+
+## Pass 3 deltas
+
+| Ticket | Action |
+|---|---|
+| T1 | Open board 1–12 + ruled-out adjacent-pair rule |
+| T2 | Parameters that are not G2 |
+| T3 | Diagnostic tells |
+| T4 | A/B/C/D jobs |
+
+
