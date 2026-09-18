@@ -185,6 +185,22 @@ Binding = array{ ref by lace index geometry }
           = view of Graphic D, not a second array,
             not object.relations[], not emission.
 
+MEANING in this project
+-----------------------
+A word is defined by words.
+Those words are defined by words.
+The walk loops because the wire is infinite.
+That is the theory of language here:
+the electrician routing a two-ended shoe lace
+that can take more cord forever.
+Definition = route through stars.
+Not PIE = "a dessert".
+Not HCC-A Meaning Engine as a row.
+Recursion = Continue. Not a closed splice.
+Seeing the route is a view.
+Writing the POINTER that would cut the route
+is still [GAP].
+
 Emission remains a [GAP].
 The clock does not close it.
 

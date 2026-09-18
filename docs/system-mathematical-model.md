@@ -129,6 +129,8 @@ $$
 
 Applying any of those as \(\mathrm{rew}(e_i)\) is \([X]\). The cat fragment (`cat`, `cat-1`, observed `tail`/`fur`/`tongue`) is a specimen of two labels on observed structure. The operator written `>` in that fragment remains \([GAP]\) / OPEN-SEARCH. Do not finish it.
 
+Project **meaning** is this naming plus the Hands fact that a definition is a route through other stars. Let \(\mathrm{Def}(\sigma)\) be a reading of participation from \(\mathrm{Star}(\sigma)\) through other stars and back into further stars. The reading may be walked without bound because \(|L|\) is unbounded (Continue). That walk is not a closed splice of \(L\) (Kauffman closed loop remains \([X]\)). \(\mathrm{Def}\) is \([III]\). The cut that would *write* a POINTER to materialize a particular route remains \(\Phi\in[GAP]\). HCC-A \(M\) is not \(\mathrm{Def}\).
+
 ### 2.4 Governing operator (geometry / storage as one step)
 
 Piece 2 states one closed step. In storage voice, the **stated** fragment is WORD append:

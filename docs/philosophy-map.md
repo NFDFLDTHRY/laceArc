@@ -257,6 +257,24 @@ Unlawful reading: cat owns parts; parts are edges; `>` is a Core operator we may
 
 Holder ledger split/merge/delete stays oil in Gear H. Same words, different algebra. Applying them to Graphic D remains `[X]`.
 
+### Project meaning = route, not gloss
+
+This project’s word “meaning” is the naming-and-routing just stated. It is **not** HCC-A’s Meaning Engine (weights, transitions, stored sense). That M remains boxed `[H]` and `[X]` as a Core row.
+
+A word is defined by words. Those words are defined by words. The walk is a recursive loop because the wire does not end:
+
+```
+word  :=  route through other stars
+those stars  :=  routes through other stars
+Continue.
+```
+
+Hands already: “A definition is a route through other stars.” “No stored meaning — only routes, touches, and structure.” Collapse `PIE = "a dessert..."` is the failure of this theory.
+
+The theory of language here is the same act as the electrician wiring a physical shoe lace that can take more wire forever. Two ends. No splice into a ring. Infinite cord is Rule Zero plus Continue, not a closed loop of the workpiece (Kauffman FORBID).
+
+Seeing the route is a view `[III]`. Cutting a POINTER to *write* the route is still `[GAP]`. Do not fill emission because a definition is a route.
+
 ### What the clock forbids
 
 - Relationship as an object property
@@ -267,13 +285,15 @@ Holder ledger split/merge/delete stays oil in Gear H. Same words, different alge
 - Hands (cluster view) written back onto the tape as edges
 - Split / merge / create of a label treated as mutate-WORD
 - Finishing the cat `>` notation from memory
+- Project-meaning stored as a gloss / HCC-A M row
+- Recursive definition-walk treated as a closed splice of the lace
 
 ### What the clock permits the hologram to judge
 
 Wrong tick (append that is grind).  
 Wrong phase (work off tooth 3).  
 Wrong display (hands claiming objects own edges).  
-Right machine: tape grows; clusters thicken in the view; labels name geometry; a label may be created, split, or merged as the observation changes; nothing on the tape is an edge list.
+Right machine: tape grows; clusters thicken in the view; labels name geometry; a label may be created, split, or merged as the observation changes; a word is a route through words on an infinite wire; nothing on the tape is an edge list.
 
 
 
