@@ -1,6 +1,7 @@
 # Defrag plan (PREPARE only)
 
 Status: **PASS 1–6 on main.** PASS 6 = coherence THEN/NOW on Petersen (maps).
+**Superseded** as filing plan of record by [plans/restructure-plan.md](plans/restructure-plan.md), which measured what this plan's filing could not fix: the copies, the names and the doors. Passes 1–6 here are done and stay as the record of how the shelves were made.
 POINTER emission stays `[GAP]`. No further filing pass planned.
 
 Shoe test: filing, not wrapping the cord.
