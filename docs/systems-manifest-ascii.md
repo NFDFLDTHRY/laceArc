@@ -390,6 +390,55 @@ Same operator. Two presentations. Not two engines.
 | T4 | Dual presentation kept one |
 | T5 | Not-a-mechanism fence |
 
+## Core as clock (pass 6)
+
+Holder train is a different clock (`docs/clock/train-h-c-w-systems-manifest.md`). This drawing is Graphic D only.
+
+```
+ impulse     arriving input              Contract II thin
+      │
+      v
+ pallet      append section              WORD | POINTER
+      │
+      v
+ tape        Graphic D                   history only grows
+      │
+      v
+ hands       Layer III / star views      what you see after many ticks
+```
+
+What turns what:
+
+- Arrival turns append.  
+- Append turns indices.  
+- Repeated variables turn a star *view*.  
+- Views do not turn the tape.
+
+## Slip (pass 6)
+
+| Mesh | Law | Slip |
+|---|---|---|
+| arrival : tape | every arrival extends L | batch “build a graph” |
+| POINTER : earlier index | backward only | forward / external ref |
+| many ticks : one star view | star is passes | star table beside L |
+| tape : hands | projection | hands write the tape |
+
+W pallet : tape = 0 or 1 lives on the **train** file. Not Piece 16.
+
+## Two clocks, one workpiece (pass 6)
+
+Holder train times the steward. Core clock counts appends. They mesh only as train “legal work.” Not redrawn here.
+
+## Pass 6 deltas
+
+| Ticket | Action |
+|---|---|
+| T1 | Core going-train (impulse / pallet / tape / hands) |
+| T2 | What turns what |
+| T3 | Slip table |
+| T4 | Two clocks, one workpiece |
+
+
 
 
 
