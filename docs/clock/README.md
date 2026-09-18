@@ -13,6 +13,7 @@ Moved here in defrag pass 3.
 | gearing-code-1to1.md | visual key ↔ unit |
 | philosophy-map.md | HCC-A / Cup / Water as gears |
 | hcc-a-mechanisms-plan.md | PLAN: ASCII systems map of HCC-A internals only |
+| hcc-a-systems-manifest.md | Systems Manifest of HCC-A H1–H11. Not Core. Emission `[GAP]` |
 | agent-interaction-model.md | elephant clock `[PROPOSAL]` |
 | system-mathematical-model.md | Hands L + Shadow H; emission `[GAP]` |
 
