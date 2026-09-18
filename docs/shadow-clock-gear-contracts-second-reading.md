@@ -14,8 +14,12 @@ landed first and is the primary; this session yields the shaft.
 The two readings agree on every verdict that matters: 40 contracts, no conflict
 requiring the hologram to stop, all six `[X]` crossings forbidden, emission
 unfilled. **Averaging them would destroy the only thing the pair carries.** Six
-findings appear in this reading and not in the primary. They are recorded here,
+findings appeared in this reading and not in the primary. They are recorded here,
 each checked against the primary before being claimed.
+
+**Resync, live tip `7cd385f`.** Re-checked under `docs/gearing/RESYNC.md`
+(`STATUS: FIRED`, readings stale). **S1 has since been absorbed by the primary**
+and is retained below, restated, rather than deleted. Five remain outstanding.
 
 Nothing below changes a stamp in the primary. Nothing below fills a `[GAP]`.
 
@@ -24,10 +28,16 @@ Nothing below changes a stamp in the primary. Nothing below fills a `[GAP]`.
 
 ---
 
-## S1 — `[X]` audit 1 has a re-entry path under a friendlier name
+## S1 — `[X]` audit 1 has a re-entry path under a friendlier name — **ABSORBED**
+
+**Status:** **closed.** The primary now carries this at line 134 —
+*"Write-once continuation" revival (pass 2 D07/D02/D03)* — as a failure mode of
+the A.C → A.L mesh, with the same citation. No action outstanding. The finding is
+kept below as the record of how it entered, not as an open proposal.
 
 **Bears on:** Walk 7, X1 (`L` merge/delete).
-**Checked:** the phrase "write once" does not appear in the primary.
+**Originally checked:** the hyphenated form was absent from the primary at
+`df39244`; it is present at `7cd385f`.
 
 The primary forbids ledger merge/delete as a Lace write. The breach also arrives
 as a **write-once continuation field on an already-created block** — an
@@ -39,8 +49,9 @@ append-only declaration sitting beside a single-assignment slot.
   reviving the mutable continuation mechanism. The recovery note states the rule
   directly: the present law "must not acquire an exception merely because the old
   field was called 'write once.'"
-- **PROPOSAL:** X1's stamp should name single-assignment fields explicitly. An
-  exception does not become legal by being small or by being spent only once.
+- **PROPOSAL (discharged):** X1's stamp should name single-assignment fields
+  explicitly. An exception does not become legal by being small or by being spent
+  only once. The primary now names it.
 
 ## S2 — `OBS`/`DELTA` ≠ rows has a mechanical reason, not only an authority
 
