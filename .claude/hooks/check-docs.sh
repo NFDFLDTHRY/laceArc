@@ -85,7 +85,10 @@ note_warn() { report '⚠️ ' "$1"; }
 # 5. Stale absence claims. A document says a path is absent, missing or
 #    untracked, and the path is tracked. The claim outlived the condition.
 _TOK='[A-Za-z0-9_.-]+(/[A-Za-z0-9_.-]+)+|[A-Za-z0-9_-]+\.md'
-_PHR='is absent|is missing|does not exist|untracked|currently ABSENT'
+# "X is missing from main" claims X is absent. "X is missing two sections"
+# claims something is absent from X -- the opposite. Require the phrase to end
+# its clause, or to be followed by from/at/on.
+_PHR='is absent|is missing (from|at|on)|is missing[.,;)]|does not exist|untracked|currently ABSENT'
 _tracked=$(git ls-files)          # read the index once, not per token
 stale=0
 while IFS= read -r md; do
@@ -167,11 +170,87 @@ if [ "$orphans" -gt 0 ]; then
 fi
 [ "$orphans" -eq 0 ] && note_ok "no orphan documents (every document is reachable by a link)"
 
+# 7. Law-copy parity. The law's ASCII lives in more than one file so that a
+#    portable prompt can carry it to an agent that cannot read this repository.
+#    A copy that has fallen behind understates the law while looking complete:
+#    agent-control.md once carried 166 lines of a 396-line law, missing 20 of
+#    28 prohibitions, under the words "preserved verbatim".
+#    staking-the-workspace.md is exempt -- its text is unfenced and frozen.
+_LAW=docs/law-why-these-documents.md
+_lawblock() {
+  awk '
+    /^```/ { if (inb) { if (buf ~ /STILL FORBIDDEN/) { printf "%s", buf; exit } ; buf=""; inb=0 } else inb=1; next }
+    inb { buf = buf $0 "\n" }
+  ' "$1"
+}
+drift=0
+if [ -f "$_LAW" ]; then
+  live_sum=$(_lawblock "$_LAW" | sha256sum | cut -d' ' -f1)
+  while IFS= read -r md; do
+    case "$md" in "$_LAW"|docs/staking-the-workspace.md) continue ;; esac
+    grep -q 'STILL FORBIDDEN' "$md" 2>/dev/null || continue
+    # Compare both sides through a pipe. Capturing a block with $(...) strips
+    # its trailing newlines, and this block ends on a blank line -- a captured
+    # copy would never equal an uncaptured live sum, and the check would warn
+    # forever about files that are byte-identical.
+    copy_lines=$(_lawblock "$md" | grep -c '')
+    [ "$copy_lines" -gt 0 ] || continue
+    [ "$(_lawblock "$md" | sha256sum | cut -d' ' -f1)" = "$live_sum" ] && continue
+    if head -30 "$md" | grep -q 'STALE'; then continue; fi
+    note_warn "law copy drifted: $md carries $copy_lines lines against $(_lawblock "$_LAW" | grep -c '') live; mark it STALE or regenerate"
+    drift=$((drift + 1))
+  done < <(printf '%s\n' "$_docs")
+  [ "$drift" -eq 0 ] && note_ok "law copies match $_LAW (or declare themselves STALE)"
+fi
+
+# 8. Door coverage. How many of a shelf's files its OWN README links. Distinct
+#    from check 6: a file can be reachable from elsewhere and still missing
+#    from its shelf's door. This is also the restructure plan's phase-2 gate --
+#    a root-README row is safe to drop exactly when that file's door links it.
+_links_of() {
+  awk '
+    function norm(p,   n, a, i, st, k, out) {
+      n = split(p, a, "/"); k = 0
+      for (i = 1; i <= n; i++) {
+        if (a[i] == "." || a[i] == "") continue
+        if (a[i] == "..") { if (k > 0) k--; continue }
+        st[++k] = a[i]
+      }
+      out = ""
+      for (i = 1; i <= k; i++) out = out (i > 1 ? "/" : "") st[i]
+      return out
+    }
+    {
+      line = $0
+      while (match(line, /\]\([^)]+\)/)) {
+        t = substr(line, RSTART + 2, RLENGTH - 3)
+        line = substr(line, RSTART + RLENGTH)
+        sub(/[ \t].*$/, "", t); sub(/#.*$/, "", t)
+        if (t == "" || t ~ /^(https?:|mailto:|tel:)/) continue
+        d = FILENAME
+        if (sub("/[^/]*$", "", d) == 0) d = "."
+        print norm(d "/" t)
+      }
+    }' "$1" | sort -u
+}
+thin=0
+while IFS= read -r rp; do
+  d=$(dirname "$rp")
+  here=$(printf '%s\n' "$_all" | awk -v d="$d" -v rp="$rp" -F/ '{ p=$0; sub("/[^/]*$","",p); if (p==d && $0!=rp) print }')
+  [ -n "$here" ] || continue
+  total=$(printf '%s\n' "$here" | grep -c .)
+  covered=$(comm -12 <(printf '%s\n' "$here" | sort -u) <(_links_of "$rp") | grep -c . || true)
+  [ "$covered" -eq "$total" ] && continue
+  note_warn "door covers $covered/$total: $rp does not link $((total - covered)) file(s) on its own shelf"
+  thin=$((thin + 1))
+done < <(printf '%s\n' "$_all" | grep -E '(^|/)README\.md$' | sort -u)
+[ "$thin" -eq 0 ] && note_ok "every shelf door links every file on its shelf"
+
 if [ "$fail" -eq 0 ]; then
-  if [ $((stale + orphans)) -eq 0 ]; then
+  if [ $((stale + orphans + drift + thin)) -eq 0 ]; then
     echo "All checks passed."
   else
-    echo "Invariants hold. $((stale + orphans)) advisory finding(s) above — voids, not breaches."
+    echo "Invariants hold. $((stale + orphans + drift + thin)) advisory finding(s) above — voids, not breaches."
   fi
 else
   echo "Checks failed."
