@@ -630,3 +630,10 @@ n is reached only when all of the following are true:
 **N = 3. Mapping task complete.**
 
 A later book can reopen the map. It cannot be reopened from the five texts already scored. Do not start `docs/pointer-emission.md` from K7 friction, R5 DNA, X7 decoding, or P7 NTK. That file, if written, is unanswered questions from the four graphics.
+
+---
+
+## Related Shadow hologram
+
+Philosophical altitudes {A,B,C} (HCC-A, Coffee Cup, Where the Water Is Loud) are forged as a holder clock in [`docs/shadow-clock-hologram.md`](shadow-clock-hologram.md). That file traces every gear to the great contract boundary. It is not a sixth graphic and does not fill pointer-emission.
+
