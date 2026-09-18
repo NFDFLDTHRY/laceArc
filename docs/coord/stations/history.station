@@ -1,7 +1,7 @@
-STATUS: FREE
+STATUS: HELD
 STATION: history
 OWNS: docs/history-recovered* docs/history/**
-AGENT: -
-BASE: -
-SINCE: -
+AGENT: Claude-Projection
+BASE: 18ababafd5dabb888f90f6d842d49bcd4aeb7c24
+SINCE: 2026-09-18T23:15:57Z
 NOTE: 
