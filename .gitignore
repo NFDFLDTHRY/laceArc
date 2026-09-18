@@ -17,3 +17,7 @@ venv/
 *.pyc
 .env
 .cache/
+
+# Lawful local copies of copyrighted references — never push
+refs/local/
+*.pdf

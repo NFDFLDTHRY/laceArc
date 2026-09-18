@@ -94,3 +94,8 @@ Stop. The next honest artifact is `docs/pointer-emission.md` that states:
 - that refs point only backward on the same line
 
 Only after that file exists may Core code appear, and it must implement that file exactly.
+
+## Adjacent books
+
+Kauffman *Knots and Physics* (4ed) and Rowlands *Zero to Infinity* are cited in `docs/references.md`.
+They are not source of record. Do not import their axioms into Core. Do not add the PDF files to git.
