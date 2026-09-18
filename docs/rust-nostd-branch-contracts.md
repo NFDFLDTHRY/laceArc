@@ -338,6 +338,12 @@ unresolved pairs such as PIE/pie; it is not a default normalization rule.
 - Graphic D2 shows `ref_A` and `ref_B` as an example. No fixed pair,
   unary layout, optional slot, variable-length target collection or
   default empty reference list is selected. Arity remains `[GAP]`.
+- **Slot assignment is a separate open question from arity.** If a two-slot
+  layout is ever selected, nothing in the Hands says which reference occupies
+  which slot. Across D1's six pointers the order is not chronological — two
+  ascend, four descend — and in all six `ref_A` is the subject of the panel's
+  own gloss, which the array cannot compute. Selecting a slot convention
+  ("A is the new arrival") would contradict rows 0002 and 0006. `[GAP]`.
 - The concrete encoding and mechanism for carrying evidence of
   existing/same-line/earlier status remain unstated. They must be proven
   at later composition; this card invents no admission procedure or
@@ -367,7 +373,9 @@ unresolved pairs such as PIE/pie; it is not a default normalization rule.
 - Self/forward/dangling/external targets admitted as valid; an existing
   POINTER retargeted in place; an unfinished slot patched later; an
   external edge object standing for the POINTER; arity fixed by example;
-  a "read" that creates a row or chooses when one should be created.
+  a "read" that creates a row or chooses when one should be created;
+  a multi-slot layout whose slots carry no stated filling rule, so that a
+  semantically reversed POINTER is type-valid.
 
 #### Proof shape (what “proven” means before next birth)
 
@@ -766,6 +774,7 @@ or a grant of permission.
 |---|---|---|
 | When a POINTER is appended | Piece 5 Boundary; draft question 1; D's mix of rows | `[GAP]` |
 | POINTER arity | D2's ref_A/ref_B example; draft question 2 | `[GAP]`; no unary, pair or variable-length default |
+| Which reference occupies `ref_A` rather than `ref_B`, if arity is ever two | D1's six pointers; `docs/graphics-close-reading.md` §2 | `[GAP]`; order is not chronological and the array cannot compute a subject |
 | Whether adjacent WORD rows are already a relation | Pieces 3, 5 and 8; draft question 3 | `[GAP]`; neither yes nor no is inferred |
 | Word identity, case, stem, homograph and segmentation | Pieces 3–4; A6–A7; reason-map open questions | `[GAP]`; no normalization or tokenizer choice |
 | Target selection and the evidence admitting earlier same-line references | Manifest interface-coherence check; draft sections 1/4 | `[GAP]`; backward-only law does not choose an algorithm |
@@ -774,7 +783,9 @@ or a grant of permission.
 | Finite resources, layout composition, failure/durability and concurrent arrival ordering | Future proof obligations; manifest open questions | Unsettled premises; no allocator, persistence or concurrency scheme selected |
 
 Required outline destination:
-[`docs/pointer-emission-prompt.md`](pointer-emission-prompt.md).
+`docs/pointer-emission-prompt.md` — written here as a path, deliberately not
+as a link, because the target does not resolve and a dangling link fails
+`.claude/hooks/check-docs.sh`.
 **It is absent at the inspected revision.** The user requires that outline
 before any planned branch directory becomes real. Pointing to its path
 does not satisfy that requirement. Its absence is not permission to put
