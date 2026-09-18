@@ -1,7 +1,7 @@
-STATUS: FREE
+STATUS: HELD
 STATION: law
 OWNS: AGENTS.md CLAUDE.md docs/staking-the-workspace.md docs/law-why-these-documents.md docs/systems-manifest.md docs/graphics/** docs/graphics-close-reading.md docs/pointer-emission.md docs/references.md CONTRIBUTING.md README.md .gitignore LICENSE docs/README.md
-AGENT: -
-BASE: -
-SINCE: -
+AGENT: Claude-Projection
+BASE: b00d3f9f3f8efe35643ffab2188b154dda602cf9
+SINCE: 2026-09-18T23:34:55Z
 NOTE: 

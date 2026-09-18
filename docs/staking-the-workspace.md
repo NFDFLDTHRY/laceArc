@@ -1,5 +1,7 @@
 # STAKING THE WORKSPACE
 
+> **ORIGINAL STAKE.** The human's own words, verbatim. Frozen: this file records what was staked, not what is currently enforced. The live law is [law-why-these-documents.md](law-why-these-documents.md); where a copy of either block disagrees with the live law, the live law wins.
+
 You were handed documents and told "I'll explain shortly."
 This is the explanation. It is law. Do not paraphrase it away.
 

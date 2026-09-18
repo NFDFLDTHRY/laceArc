@@ -1,5 +1,9 @@
 # Law — why the documents, and how code may exist
 
+> **LIVE LAW.** This is the enforced text. [staking-the-workspace.md](staking-the-workspace.md) is the original stake it discharges; `docs/kit/agent-control.md` and `docs/kit/grok-bot-profile.md` carry transport copies of its blocks and may lag. Where they disagree with this file, this file wins.
+>
+> **Unresolved, for the human — not for an agent to edit.** Line 10 below reads *"Implementation remains forbidden until `docs/pointer-emission.md` exists."* The IMPLEMENTATION LAW block in this same file reads *"When the human has accepted docs/pointer-emission.md, code may appear."* Existence is not acceptance, and AGENTS.md was corrected for this same drift by the coherence audit's A6 tick. Both sentences are human-authored; neither has been changed here.
+
 This file is **repo law**. Paste the ASCII block into Grok Bot as the explanation that was promised when the workspace was staked.
 
 Source of record remains `docs/graphics/`.
