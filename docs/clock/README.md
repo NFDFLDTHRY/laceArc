@@ -14,7 +14,8 @@ Moved here in defrag pass 3.
 | philosophy-map.md | HCC-A / Cup / Water as gears |
 | hcc-a-mechanisms-plan.md | PLAN: ASCII systems map of HCC-A internals only |
 | hcc-a-systems-manifest.md | HCC-A clipboard. Pipeline register is the composition. Stations H1–H11 remain below. Not Core. |
-| hcc-a-pass-5-plan.md | Pass 5 plan. Executed: schedule + Act↔packet fold. |
+| coffee-cup-systems-manifest.md | Event-time clipboard C1–C5 + loop. Not Core. |
+| coffee-cup-pass-1-plan.md | Pass 1 plan. Executed. |
 | agent-interaction-model.md | elephant clock `[PROPOSAL]` |
 | system-mathematical-model.md | Hands L + Shadow H; emission `[GAP]` |
 
