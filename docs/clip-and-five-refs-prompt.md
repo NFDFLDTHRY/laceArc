@@ -137,10 +137,11 @@ FORBIDDEN
 DONE MEANS
 ────────────────────────────────────────────────────────────────────────────
 
-  One artifact, suggested path:
+  One artifact, canonical path (already on disk if filled):
 
-    docs/five-refs-clipboard.md
+    docs/clipboard-five-stakes.md
 
+  Do not invent docs/five-refs-clipboard.md — that name is wrong.
   Contains the full clipboard frame + pages 1–5 + cross-cut page,
   all in the clipboard ASCII look above.
   No Core schema. Emission still [GAP].
