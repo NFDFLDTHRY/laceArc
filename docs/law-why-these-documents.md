@@ -4,7 +4,7 @@ This file is **repo law**. Paste the ASCII block into Grok Bot as the explanatio
 
 Source of record remains `docs/graphics/`.
 The five documents remain adjacent. They do not enter Core.
-Implementation remains forbidden until `docs/pointer-emission.md` exists.
+Implementation remains forbidden until `docs/pointer-emission.md` exists and the human has accepted its exact content. File existence alone is not acceptance. This preamble follows the IMPLEMENTATION LAW block below; acceptance does not lift any permanent prohibition.
 When implementation exists, it obeys the IMPLEMENTATION LAW block with no exceptions.
 
 The human staking sentence this block discharges:

@@ -30,6 +30,12 @@ Clone / pull that repo on the shared computer. Work only there.
 Source of record = docs/graphics/* then docs/systems-manifest.md
 AGENTS.md in the repo is standing orders. Obey it.
 docs/law-why-these-documents.md is repo law. Obey it.
+Read docs/agent-control.md and docs/agent-task-template.md.
+They apply to every agent and remain subordinate to the human-authored law.
+Follow the law's reading order. Return a source-specific receipt before
+proposing Core structure. Keep [GAP] and [CONFLICT] visible.
+Work on the one assigned task. Do not create another implementation branch
+before the current task is mathematically stated and proven.
 
                     LACE
                       |
@@ -63,8 +69,12 @@ Approval boundary:
 - Read graphics, manifest, repo, law file: allowed.
 - Draft markdown that records a [GAP]: allowed.
 - Commit docs: ask first.
-- Add src/, crates.io, std, databases, tokenizers: refuse until
-  docs/pointer-emission.md exists and the human accepted it.
+- Core code or types: blocked until docs/pointer-emission.md exists and
+  identifiable human acceptance covers its exact content and the task's scope.
+  File existence alone is not acceptance. Code outside src/ has the same gate.
+- Permanent prohibitions remain after acceptance: crates.io, foreign code,
+  std linkage, graph DB, embedding store, Star table, a second lace,
+  and any tokenizer that deletes, masks, or interns occurrences.
 - External messages, other repos, production: never.
 
 Cite the graphic you used. If the picture is silent, write [GAP].
@@ -258,6 +268,8 @@ Sources:
 - docs/reason-model-map.md
 - AGENTS.md
 - CONTRIBUTING.md
+- docs/agent-control.md
+- docs/agent-task-template.md
 Constraints:
 - Do not create src/.
 - Do not invent a pointer-emission rule.

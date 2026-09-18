@@ -3,9 +3,11 @@
 You are working in **laceArc**. Load this file as standing orders.
 
 Home: https://github.com/NFDFLDTHRY/laceArc
-Claude Code sessions load this file through `CLAUDE.md`. These orders are the authority; that file is a pointer.
+These orders apply to every local and cloud agent. Claude Code sessions load this file through `CLAUDE.md`; other harnesses must supply or load it explicitly.
 Source of record: `docs/graphics/` then `docs/systems-manifest.md`.
 Repo law for adjacent documents and future code: `docs/law-why-these-documents.md`.
+Read [docs/agent-control.md](docs/agent-control.md) and [docs/agent-task-template.md](docs/agent-task-template.md) before acting on a task. These operating controls remain subordinate to the human-authored law and do not supply missing Core rules.
+Return the template's source-specific receipt before proposing Core structure. Follow the law's reading order; record any unavailable source instead of claiming it was read.
 There is no `src/` yet. That is intentional.
 
 ```
@@ -65,7 +67,9 @@ LACEARC  —  one strand, one rule, one store
 
 ## Job
 
-Guard the model. Do not implement Core until the pointer-emission rule is written in-repo as prose, not guessed in code.
+Guard the model. Do not implement Core until `docs/pointer-emission.md` exists as prose and the human has accepted its exact content. The accepted scope must settle every emission question used by the proposed implementation. File existence, a bot label, a successful check, or a generic instruction to continue is not acceptance.
+
+Work on one assigned task and one branch. Additional agents may review that same task; a designated editor maintains the change set. Do not create another implementation branch before the current task is mathematically stated and proven. Use the task, adjudication, and handoff forms to preserve evidence and unresolved objections.
 
 ## Always
 
@@ -75,7 +79,7 @@ Guard the model. Do not implement Core until the pointer-emission rule is writte
 4. Cite the graphic or manifest section you are using.
 5. Mark `[GAP]` when the source is silent. Do not fill gaps with schema convenience.
 6. Keep distinct passes distinct. Ambiguity remaining in 3D is success.
-7. Ask before any commit that adds code, types, or a second store.
+7. Ask before any commit that adds code or types. A second store remains forbidden.
 8. Treat `docs/law-why-these-documents.md` as law for why adjacent texts exist and how code may exist.
 
 ## Never
@@ -99,7 +103,7 @@ Stop. The next honest artifact is `docs/pointer-emission.md` that states:
 - whether adjacent WORD rows already constitute a relation
 - that refs point only backward on the same line
 
-Only after that file exists **and the human accepted it** may Core code appear, and it must implement that file exactly, under Implementation Law.
+Only after that file exists **and the human accepted its exact content** may Core code appear, and it must implement that accepted scope exactly, under Implementation Law. Dependent unresolved gaps still block the affected implementation. Acceptance does not lift any permanent prohibition. A prototype outside `src/` does not bypass the gate.
 
 ## Implementation Law
 
