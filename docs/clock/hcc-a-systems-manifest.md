@@ -509,9 +509,107 @@ Projection HTML not updated this tick.
 
 ---
 
+## Pass 3 — climb from Lace atoms through recursive systems
+
+Pass 1–2 listed gears. This section seats them on `docs/atomic-primitives-map.md` (read; not amended) and names the recursions the attachment already runs. No new Core piece numbers. Emission stays `[GAP]`.
+
+### Climb A — L0 atoms vs what HCC may see
+
+| L0 (atomic map) | Obligation | HCC may see | HCC may not become |
+|---|---|---|---|
+| P0 one strand | one array, two ends, open | nothing stored | a second P0 / Story Ledger as tape |
+| P1 occurrence | identity + order on P0 | RIC “order kept” (kind-kin) | intern / collapse of repeats |
+| P2 WORD | entry form at a position | spoken/written structure after B hits R | HCC “story line” as WORD |
+| P3 POINTER | later section refers earlier | — | OBS, B, or M as POINTER |
+| P4 APPEND | only legal change to P0 | B as a *possible later arrival* | H10b “new structure” as P4 |
+| K1 prefix | no delete/rewrite | L add-only would have been kin | L merge/reindex/delete |
+| K2 arrival order | repeats stay distinct | RIC | PFC-only ingest |
+| K3 backward ref | referent exists first | — | forward / invented refs |
+| K4 one structure | no second store | — | YAML / ISL / M weights as authority |
+| K5 view no write-back | Layer III reads | this projection; steward hologram | chart treated as strand |
+| K6 strand open | no closed splice | — | closed identity loop as Core |
+
+Atomic composition Pieces 1–15 remain Hands. This table cites them; it does not renumber them.
+
+### Climb B — HCC internals as recursive systems
+
+| System | Recurses into | Shared oil | Forbidden identification |
+|---|---|---|---|
+| C | L (write this rev) | L | Piece 2 governing rule |
+| L | M, ISL, Act II | L | P0 / P4 / K1 |
+| M | E, B, then R via B | L + P2 priority stack | Piece 14; project-meaning recursion |
+| E | ISL; B if P6 Mode D; L if P6 Mode C | none transmissible | a row |
+| ISL | PFC_{n+1} | priors | Piece 7 star |
+| PFC | C this rev | ISL_{n-1} | Contract II ingest |
+| H10b | R → I → RIC | world | P4 |
+| P6 Mode C | L (story-rewrite) then M | L | Compiler C; K1 on Graphic D |
+
+P6 Mode C is a recursion into L. That is a second reason it is `[X]` on the tape: letter collision was Pass 2; K1 collision is Pass 3.
+
+### Climb C — coupling lattice
+
+Author-supported edges that *share oil or world*, not new pieces:
+
+```
+ISL_n ──priors──► PFC_{n+1} ──► C_{n+1} ──► L_{n+1}
+   identity recursion
+
+M_n ──directive──► B_n ──► R' ──► RIC_{n+1} ──► C_{n+1} ──► L_{n+1} ──► M_{n+1}
+   directive recursion
+
+P6 Mode C ──rewrite──► L ──► M
+   emotion-rewrite recursion (oil only)
+
+Act VI ──templates──► P1 / PFC
+   play-layer write into identity recursion
+```
+
+| English in both systems | Lace object | HCC object | Stamp |
+|---|---|---|---|
+| meaning | routes / touches / participation (Pieces 7–9, 11) | M weights + directive transitions | `[CONFLICT]` if fused |
+| structure | P0 prefix + P1 order | RIC traces; “only structure crosses” | kin of a negation; not P3 |
+| identity | star = wraps through a word | ISL snapshot / “what kind of agent” | `[CONFLICT]` if fused |
+| story | sequence-as-route (Piece 8) | L narrative-not-form + Act II tell | `[CONFLICT]` if L becomes P0 |
+| pointer | P3 on the same line | talk OBS / “point at” | false friend (already Water) |
+| cluster / variable | Layer III label on index geometry | ISL / role / scene type | ⟂ different object; label merge ≠ L merge |
+
+Zero shared mutable state between the lattice above and Graphic D.
+
+### Climb D — two recursions, zero shared state
+
+Project-meaning recursion (Hands): a word is defined by words; those words have definition routes; the strand stays open (K6). Construction of which POINTER is written remains G2 `[GAP]`.
+
+HCC directive recursion (holder): M changes allowed B; B changes R; R changes next RIC/L/M.
+
+They rhyme in English. They do not share a store. Closing one from the other is `[X]`.
+
+Philosophy-map depths onto this climb:
+
+| Depth | Lives at |
+|---|---|
+| 0 R | Climb A world / H10b |
+| 1 compile | Climb B mill + Climb C identity/directive loops |
+| 2 talk | Water — not filled from L |
+| 3 noticing | K5 / hologram |
+| 4 spec | H11 parameters of the mill, not a new atom |
+
+## Pass 3 clipboard deltas
+
+| Climb | Before | After |
+|---|---|---|
+| A | gears floated above Hands | every HCC see/not-become cites P0–P4 / K1–K6 |
+| B | sibling H pieces | systems that recurse; Mode C → L named |
+| C | arrows listed | lattice + English `[CONFLICT]` table |
+| D | project-meaning vs M only in H7 | two recursions, zero shared state |
+
+Atomic map not edited. Projection fetches this file.
+
+---
+
 ## Executive Seams Summary
 
 - One fused driver. Only B leaves. Only structure enters.
 - L/M ops are oil. Same names on Graphic D are `[X]`.
 - RIC is kin of order, not a second log.
-- Emission remains `[GAP]`.
+- Three HCC recursions (world / identity / directive) share oil or world, never Graphic D.
+- Project-meaning recursion is a fourth object. Emission remains `[GAP]`.
