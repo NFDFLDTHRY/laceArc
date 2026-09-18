@@ -212,44 +212,25 @@ function lookAt(e,c,up){
   return m;
 }
 
-function buildScene(){
-  const P=[],N=[],C=[],B=[];
-  function add(g, col, off, born){
-    for(let i=0;i<g.p.length;i+=3){
-      P.push(g.p[i]+off[0], g.p[i+1]+off[1], g.p[i+2]+off[2]);
-      N.push(g.n[i], g.n[i+1], g.n[i+2]);
-      C.push(...col); B.push(born);
-    }
-  }
-  const box=cube(0.46), shell=cube(0.50), core=cube(0.20), ball=sphere(0.62, 14), ballIn=sphere(0.38, 10);
-  for(const r of D1){
-    const off=posOf(r.i);
-    if(r.k==="WORD"){
-      add(shell,[0.55,0.18,0.08],off,r.i);
-      add(core,[1.0,0.45,0.08],off,r.i);
-      if(r.v==="PIE"){
-        add(ball,[0.12,0.95,0.32],[off[0],off[1]+1.05,off[2]], r.i);
-        add(ballIn,[0.05,1.0,0.22],[off[0],off[1]+1.05,off[2]], r.i);
-      }
-    } else {
-      add(cube(0.16),[0.15,0.55,0.95],off,r.i);
-      const A=posOf(r.a), Bb=posOf(r.b);
-      const mid=[(A[0]+Bb[0])/2, 0.22+(r.i%3)*0.06, (A[2]+Bb[2])/2];
-      add(beam(A, mid, 0.018),[0.25,0.85,1.0],[0,0,0],r.i);
-      add(beam(mid, Bb, 0.018),[0.25,0.85,1.0],[0,0,0],r.i);
-    }
-  }
-  for(let x=-10;x<=10;x++){
-    add(beam([-10.5,0.01,x*0.7],[10.5,0.01,x*0.7], 0.012),[0.04,0.22,0.38],[0,0,0], -1);
-  }
-  for(let z=-10;z<=10;z++){
-    add(beam([z*0.7,0.01,-10.5],[z*0.7,0.01,10.5], 0.012),[0.04,0.22,0.38],[0,0,0], -1);
-  }
-  for(let i=0;i<24;i++){
-    const x=((i*5)%17)-8, z=((i*9)%17)-8;
-    add(cube(0.05),[0.9,0.25,0.05],[x*0.7,0.04,z*0.7], -1);
-  }
-  return {P,N,C,B};
+function bakeViaWorker(){
+  return new Promise((resolve, reject) => {
+    let w;
+    try { w = new Worker("projection-bake-worker.js"); }
+    catch (e) { reject(e); return; }
+    const t = setTimeout(() => { try{w.terminate();}catch(_){ } reject(new Error("bake timeout")); }, 8000);
+    w.onerror = e => { clearTimeout(t); reject(e); };
+    w.onmessage = ev => {
+      clearTimeout(t);
+      const d = ev.data;
+      resolve({
+        P: new Float32Array(d.P), N: new Float32Array(d.N),
+        C: new Float32Array(d.C), B: new Float32Array(d.B),
+        wasm: !!d.wasm, isolated: !!d.isolated
+      });
+      w.terminate();
+    };
+    w.postMessage("bake");
+  });
 }
 
 let playing=true, tVal=0, gpuLive=false;
@@ -298,7 +279,12 @@ async function main(){
   const ctx=canvas.getContext("webgpu");
   if(!ctx){ keepFallback("No WebGPU canvas context — lookrefs on stage."); return; }
   const fmt=navigator.gpu.getPreferredCanvasFormat();
-  const scene=buildScene();
+  let scene;
+  try { scene = await bakeViaWorker(); }
+  catch (e) {
+    keepFallback("CPU bake worker failed — lookrefs stay. " + (e && e.message ? e.message : e));
+    return;
+  }
   const vCount=scene.P.length/3;
   function buf(arr, stride){
     const a=arr instanceof Float32Array?arr:new Float32Array(arr);
