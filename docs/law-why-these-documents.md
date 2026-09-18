@@ -3,8 +3,10 @@
 This file is **repo law**. Paste the ASCII block into Grok Bot as the explanation that was promised when the workspace was staked.
 
 Source of record remains `docs/graphics/`.
-The five documents remain adjacent. They do not enter Core.
-Implementation remains forbidden until `docs/pointer-emission.md` exists and the human has accepted its exact content. File existence alone is not acceptance. This preamble follows the IMPLEMENTATION LAW block below; acceptance does not lift any permanent prohibition.
+The five academic documents remain adjacent. They do not enter Core.
+Three philosophical texts (HCC-A, Coffee Cup, Water/Proofing) are steward-seeing material. They do not enter Core.
+See `docs/reason-model-map.md` and `docs/philosophy-map.md`.
+Implementation remains forbidden until `docs/pointer-emission.md` exists.
 When implementation exists, it obeys the IMPLEMENTATION LAW block with no exceptions.
 
 The human staking sentence this block discharges:
@@ -80,12 +82,30 @@ do not walk off the shoe and call the walk Core.
         not the lace
 
 
+    +------------------+     +------------------+     +------------------+
+    | 6 HCC-A          |     | 7 COFFEE CUP     |     | 8 WATER / PROOF  |
+    | Cognitive compiler|     | five stages      |     | OBS DELTA UNK    |
+    +--------+---------+     +--------+---------+     +--------+---------+
+             |                        |                        |
+             | KEEP RIC structure     | KEEP impact=ground     | KEEP "point at it"
+             | KEEP "only structure   | KEEP trajectory window | KEEP rapids != transfer
+             |      crosses"          | FORBID aftermath as    | FORBID OBS = POINTER
+             | FORBID ledger merge /  |      rewrite of rows   | FORBID FSM as array types
+             |      reindex / delete  |                        |
+             | FORBID Meaning Engine  |                        |
+             |      as Core store     |                        |
+             v                        v                        v
+        mind compiler is          stages are how you        talk repair is
+        not the 1D array          see a fall, not how       steward location
+                                  the array edits itself
+
+
 READING ORDER WHEN A DOCUMENT IS IN THE WORKSPACE
 -------------------------------------------------
     1. shoe in hands
     2. four graphics
     3. docs/systems-manifest.md
-    4. docs/reason-model-map.md     <-- how that document sits
+    4. docs/reason-model-map.md or docs/philosophy-map.md
     5. the document itself          <-- only after 1-4
     6. never PDF into git
 
@@ -175,6 +195,8 @@ STILL FORBIDDEN AFTER CODE EXISTS
   Reidemeister as a write
   next-token as Core dynamics
   ReAG inside the array
+  Story Ledger merge/delete as array ops
+  OBS talk-pointers as POINTER emission
   a second lace
 
 

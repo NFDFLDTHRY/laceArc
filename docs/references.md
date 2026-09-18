@@ -71,10 +71,29 @@ Approximation, ReLU calculus, depth. Adjacent if someone asks whether a star is 
 
 Reasoning-Action graphs and neural invariants for agent failure localization. Adjacent to the LaceArc *Grok Bot* (how a steward fails), not to Lace storage. Do not add ReAG or a failure taxonomy as a second store beside the append-only line.
 
+### Philosophy of seeing and talking (steward neighborhood)
+
+Workspace attachments. Not committed as binaries. Map: `docs/philosophy-map.md`.
+
+#### 6. HCC-A v1.0 — Human Cognitive Compiler Architecture
+
+Self/other mapping spec: RIC ∥ PFC → Compiler → Story Ledger → Meaning → Emotion → Identity → Behavior.  
+Keep RIC and “only structure crosses.” Do not import ledger merge/re-index/delete or a Meaning Engine into Graphic D.
+
+#### 7. The Coffee Cup — A Walk-Through of How You Actually See
+
+Five stages: conditions, release, trajectory, impact, aftermath.  
+Keep impact as ground truth and trajectory as a window. Do not treat aftermath narrative as permission to rewrite rows.
+
+#### 8. Where the Water Is Loud + Dual Proofing Systems
+
+OBS / DELTA / UNK / INVALID and river banks / rapids / delta.  
+Keep “if you cannot point at it, you cannot push on it.” Do not treat OBS as POINTER emission.
+
 ## Series frame (from Rowlands front matter)
 
 Knots as a meeting place for apparently separate ideas. That is the only series claim laceArc needs.
 
 ## Rule for readers and bots
 
-If a sentence in any of these works would change WORD, POINTER, star, or the governing rule, discard it for Core and keep it as reading notes. Pointer emission remains a `[GAP]` until written in `docs/pointer-emission.md` from the four graphics, not from these volumes.
+If a sentence in any of these works would change WORD, POINTER, star, or the governing rule, discard it for Core and keep it as reading notes. Pointer emission remains a `[GAP]` until written in `docs/pointer-emission.md` from the four graphics, not from these volumes and not from HCC-A / Coffee Cup / Water OBS format.

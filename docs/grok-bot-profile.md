@@ -30,12 +30,6 @@ Clone / pull that repo on the shared computer. Work only there.
 Source of record = docs/graphics/* then docs/systems-manifest.md
 AGENTS.md in the repo is standing orders. Obey it.
 docs/law-why-these-documents.md is repo law. Obey it.
-Read docs/agent-control.md and docs/agent-task-template.md.
-They apply to every agent and remain subordinate to the human-authored law.
-Follow the law's reading order. Return a source-specific receipt before
-proposing Core structure. Keep [GAP] and [CONFLICT] visible.
-Work on the one assigned task. Do not create another implementation branch
-before the current task is mathematically stated and proven.
 
                     LACE
                       |
@@ -69,12 +63,8 @@ Approval boundary:
 - Read graphics, manifest, repo, law file: allowed.
 - Draft markdown that records a [GAP]: allowed.
 - Commit docs: ask first.
-- Core code or types: blocked until docs/pointer-emission.md exists and
-  identifiable human acceptance covers its exact content and the task's scope.
-  File existence alone is not acceptance. Code outside src/ has the same gate.
-- Permanent prohibitions remain after acceptance: crates.io, foreign code,
-  std linkage, graph DB, embedding store, Star table, a second lace,
-  and any tokenizer that deletes, masks, or interns occurrences.
+- Add src/, crates.io, std, databases, tokenizers: refuse until
+  docs/pointer-emission.md exists and the human accepted it.
 - External messages, other repos, production: never.
 
 Cite the graphic you used. If the picture is silent, write [GAP].
@@ -150,12 +140,29 @@ do not walk off the shoe and call the walk Core.
         not the lace
 
 
+    +------------------+     +------------------+     +------------------+
+    | 6 HCC-A          |     | 7 COFFEE CUP     |     | 8 WATER / PROOF  |
+    | Cognitive compiler|     | five stages      |     | OBS DELTA UNK    |
+    +--------+---------+     +--------+---------+     +--------+---------+
+             |                        |                        |
+             | KEEP RIC structure     | KEEP impact=ground     | KEEP "point at it"
+             | KEEP only structure    | KEEP trajectory window | KEEP rapids != transfer
+             |      crosses           | FORBID aftermath as    | FORBID OBS = POINTER
+             | FORBID ledger merge /  |      rewrite of rows   | FORBID FSM as array types
+             |      delete            |                        |
+             | FORBID Meaning Engine  |                        |
+             |      as Core store     |                        |
+             v                        v                        v
+        mind compiler is          stages are how you        talk repair is
+        not the 1D array          see a fall                steward location
+
+
 READING ORDER WHEN A DOCUMENT IS IN THE WORKSPACE
 -------------------------------------------------
     1. shoe in hands
     2. four graphics
     3. docs/systems-manifest.md
-    4. docs/reason-model-map.md
+    4. docs/reason-model-map.md or docs/philosophy-map.md
     5. the document itself
     6. never PDF into git
 
@@ -245,6 +252,8 @@ STILL FORBIDDEN AFTER CODE EXISTS
   Reidemeister as a write
   next-token as Core dynamics
   ReAG inside the array
+  Story Ledger merge/delete as array ops
+  OBS talk-pointers as POINTER emission
   a second lace
 
 
@@ -268,8 +277,6 @@ Sources:
 - docs/reason-model-map.md
 - AGENTS.md
 - CONTRIBUTING.md
-- docs/agent-control.md
-- docs/agent-task-template.md
 Constraints:
 - Do not create src/.
 - Do not invent a pointer-emission rule.

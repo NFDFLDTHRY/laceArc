@@ -28,18 +28,15 @@ Same rule. Same strand. 3D stars and N-dimensional participation are readings of
 | [docs/systems-manifest.md](docs/systems-manifest.md) | Contract map extracted from those graphics: pieces, couplings, seams, open gaps. |
 | [docs/law-why-these-documents.md](docs/law-why-these-documents.md) | Repo law: why the five adjacent documents were staked, and the only allowed implementation posture (Rust `no_std`, zero foreign deps). |
 | [LICENSE](LICENSE) | Apache-2.0 |
-| [AGENTS.md](AGENTS.md) | Standing orders for every local and cloud agent in this tree. |
+| [AGENTS.md](AGENTS.md) | Standing orders for any Grok / Grok Bot / Grok Build session in this tree. |
 | [CLAUDE.md](CLAUDE.md) | Pointer that loads those standing orders into Claude Code sessions. |
 | [.claude/](.claude/) | Session setup for Claude Code on the web: startup hook and repository checks. No runtime. |
 | [docs/grok-bot-profile.md](docs/grok-bot-profile.md) | Name, job, ASCII description, staking explanation, and first task to paste into Grok Bot. |
 | [docs/references.md](docs/references.md) | Adjacent books. Citations only. PDFs are not in this public repo. |
 | [docs/reason-model-map.md](docs/reason-model-map.md) | Physical shoe lace as reason model. How five adjacent works may and may not touch Core. |
-| [docs/agent-control.md](docs/agent-control.md) | Complete staking law plus operating controls for agent authority, evidence, gaps, and single-task collaboration. |
-| [docs/agent-task-template.md](docs/agent-task-template.md) | Reusable ASCII task, adjudication, proof-contract, and handoff forms. |
-| [docs/downstream-audit.md](docs/downstream-audit.md) | Dated source review, concrete failure paths, and 36 unrun agent challenge specifications. |
-| [READ_ME_FIRST.md](READ_ME_FIRST.md) | How to load the agent package and distinguish installed documentation from enforced permissions. |
+| [docs/philosophy-map.md](docs/philosophy-map.md) | HCC-A, Coffee Cup, Water/Proofing: steward seeing and talk-repair. Not Core storage. |
 
-There is no `src/` on purpose. Core code requires `docs/pointer-emission.md` to exist and have identifiable human acceptance of its exact content. File existence alone is not acceptance; dependent unresolved gaps still block implementation. Acceptance does not lift permanent prohibitions.
+There is no `src/` on purpose. Code that appears before the pointer-emission rule is locked will invent a second machine.
 
 When code is ever allowed it is only Rust `#![no_std]`, with zero external dependencies. Every dependency is a first-party branch that does one mathematically stated and proven task. See [docs/law-why-these-documents.md](docs/law-why-these-documents.md).
 
