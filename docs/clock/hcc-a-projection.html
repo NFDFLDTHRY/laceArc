@@ -77,207 +77,135 @@ aside.hidden+#peek, body.card-closed #peek{display:block}
   </div>
 </div>
 <script>
-const PIECES = {
-R:{id:'R',name:'H1 Reality',kind:'Region',stamp:['H'],p:[0,0,0],
-   purpose:'Objective constraint-bearing world. Not directly accessible by any mind.',
-   inputs:'B from prior revolution (alters R).',
-   outputs:'Constraint on I. Not a readable object inside a mind.',
-   pre:'A world that can constrain.',
-   effects:'Cup-impact / floor. New events become next RIC structure.',
-   inv:'R is not a ledger. R is not Graphic D.',
-   fail:'Treat R as a Lace store. Treat a chart as the strand.',
-   couple:'Entangled with I and B. Clean vs Core: not an array.',
-   impl:'Do not add an R table beside Graphic D.',
-   meta:'Gravity on the cup; mainspring.',
-   quote:'not directly accessible by any mind.',
-   hands:'adjacent [H]', live:[0,7]},
-I:{id:'I',name:'H2 Interface',kind:'Interface',stamp:['H'],p:[1.15,0.2,0],
-   purpose:'Senses, nervous system, body state. Converts R → raw internal signals.',
-   inputs:'R (inaccessible as such).',
-   outputs:'Raw signals to RIC and PFC in parallel.',
-   pre:'A body / sensor path exists.',
-   effects:'None on the lace.',
-   inv:'I does not compile. I does not store meaning.',
-   fail:'Calling I ingest for Contract II.',
-   couple:'Hands off both shafts. Off-shoe for Core.',
-   impl:'Steward-adjacent only.',
-   meta:'Case opening; skin of the gearbox.',
-   quote:'Body converts R → raw signals.',
-   hands:'off-shoe [H]', live:[0]},
-RIC:{id:'RIC',name:'H3 RIC',kind:'Input shaft',stamp:['I','X'],p:[2.2,-1.15,-0.85],
-   purpose:'Preserve external structure as faithfully as possible.',
-   inputs:'Raw signals from I: “X said Y”, door, account, timing, sequence, spatial, cause/effect.',
-   outputs:'Structured arrival traces into C, in parallel with PFC.',
-   pre:'I handing signals. PFC also turning.',
-   effects:'None on Graphic D. Must not become a second log.',
-   inv:'Order kept. Structure kept. Parallel with PFC.',
-   fail:'RIC as second punch-card. RIC silenced so PFC-only wins.',
-   couple:'Kind-kin of Core Piece 3 arrival order. Still not Piece 3.',
-   impl:'A RIC table is a second store.',
-   meta:'Workpiece-facing shaft.',
-   quote:'preserve external structure as faithfully as possible.',
-   hands:'kin of order if not stored twice', live:[0,1,2]},
-PFC:{id:'PFC',name:'H4 PFC',kind:'Input shaft',stamp:['H','X'],p:[2.2,1.2,0.9],
-   purpose:'Same signals through priors, templates, roles, threat models, culture, ideology, religion, fandoms. Interpret before compile.',
-   inputs:'Raw signals from I. Priors from ISL n-1. Strength knob: override vs probability (P1).',
-   outputs:'Pre-interpreted stream into C.',
-   pre:'An identity/prior pack exists or is empty. Empty is still a shaft.',
-   effects:'Can starve RIC if it wins arbitration (P4).',
-   inv:'Must turn with RIC. PFC is previous identity installed as pre-filter.',
-   fail:'PFC as Contract II ingest = intern + meaning table before append.',
-   couple:'Tight loop with ISL. High dependency on H9.',
-   impl:'Diagnosis of misread Graphic D. Not a row type.',
-   meta:'Prior-loaded shaft.',
-   quote:'assign probable interpretations before full compilation.',
-   hands:'conflict if ingest', live:[0,1,2,7]},
-C:{id:'C',name:'H5 Compiler',kind:'Mechanism',stamp:['X'],p:[3.35,0.05,0],
-   purpose:'Mechanism that converts structure → story. Updates the Story Ledger.',
-   inputs:'Structured RIC data + PFC-shaped interpretations.',
-   outputs:'Updates to L.',
-   pre:'Dual shafts turning. Arbitration mode chosen (P4). Numeric arbiter [GAP].',
-   effects:'L changes. Core must not see C as an operator.',
-   inv:'C is inside the box. Structure→stored-story forbidden as Core.',
-   fail:'C as Core operator. Piece 14 dies.',
-   couple:'Entangled with L. Not a clean cut from H6.',
-   impl:'Do not implement C as a write path on Graphic D.',
-   meta:'Conversion mill inside the case.',
-   quote:'converts structure → story.',
-   hands:'conflict as Core', live:[2]},
-L:{id:'L',name:'H6 Story Ledger',kind:'Oil store',stamp:['X'],p:[4.4,-0.4,0.2],
-   purpose:'Internal event log. Concrete, abstract, imagined, inferred. Add / merge / re-index / delete-suppress. Not narrative form.',
-   inputs:'Compiler updates.',
-   outputs:'Ledger state to M (and residue to ISL).',
-   pre:'A compilation occurred, or empty ledger — empty case not frozen in spec.',
-   effects:'Oil mutates. Addition-only would have been kin to Rule Zero. Spec does not stop at addition.',
-   inv:'L is not Graphic D. L ops housing-legal, tape-illegal.',
-   fail:'Merge / re-index / delete on the array. Reidemeister-shaped writes.',
-   couple:'[CONFLICT] with Core Piece 1 and 6. “Revised ledger” has no legal wire to the tape.',
-   impl:'Any Story Ledger type in Graphic D is a breach.',
-   meta:'Oil sump. Not a tooth on the cord.',
-   quote:'Ledger is not narrative form.',
-   hands:'[CONFLICT]', live:[2,3,5]},
-M:{id:'M',name:'H7 Meaning Engine',kind:'Mechanism',stamp:['X'],p:[5.35,0.85,0.1],
-   purpose:'Weight system + transition logic on the ledger. Meaning is directive.',
-   inputs:'Current L. Internal value/priorities (P2).',
-   outputs:'Weights. Transitions on beliefs, priorities, roles, future expectations, allowed behaviors.',
-   pre:'A ledger to weight.',
-   effects:'Descriptive/evaluative stall as commentary. Directive turns the loop (sovereignty).',
-   inv:'HCC-A M ≠ project-meaning (routes / touches / participation).',
-   fail:'Stored gloss as WORD. Directive meaning as POINTER emission.',
-   couple:'[CONFLICT] with Core Piece 14. Weights do not match “more strand.”',
-   impl:'Box M. Do not put weights on the tape.',
-   meta:'Recursion with teeth.',
-   quote:'It doesn’t just label; it influences what happens next.',
-   hands:'[CONFLICT]', live:[3,4,5,6]},
-E:{id:'E',name:'H8 Emotion Engine',kind:'Runtime',stamp:['H'],p:[5.9,1.55,-0.4],
-   purpose:'Meaning-in-flight. Not meaning, story, or intent. Turbulence or resonance during change.',
-   inputs:'Local M + L. Others generate their own E from their M + L.',
-   outputs:'Local affect. Not a packet across a mind-boundary.',
-   pre:'Local M+L. Transitions in flight or stalled.',
-   effects:'Vanish or settle when transitions complete or stall. Stable→calm. Unstable→turbulence. P6 can drive B, rewrite, re-weight, or ignore.',
-   inv:'Only structure is transmissible. E stays in the box.',
-   fail:'E rows. Transmitting E as if it were structure.',
-   couple:'Kin of negation with Cup/Water: only structure crosses.',
-   impl:'Do not store E.',
-   meta:'Heat in the case, not a shaft.',
-   quote:'Emotions are not transmissible. Only structure is.',
-   hands:'off-shoe', live:[4,5,6]},
-ISL:{id:'ISL',name:'H9 Identity Shaping',kind:'Compressor',stamp:['H','X'],p:[4.85,0.75,1.05],
-   purpose:'Compression of Story + Meaning + repeated emotion into “what kind of agent am I.”',
-   inputs:'Ledger state. Meaning weights and transitions. Emotional patterns over time.',
-   outputs:'Identity snapshot. Updated rules/priors for future compilation (next PFC).',
-   pre:'Ingredients named; exact halt clock [GAP].',
-   effects:'Changes next PFC. Does not change a star. Not aesthetics or self-description.',
-   inv:'Identity snapshot is not a star. A star is wraps through a word.',
-   fail:'ISL as star table. YAML as owner of WORD identity.',
-   couple:'Closed loop with H4. Style knob P7.',
-   impl:'Do not implement self as an array type.',
-   meta:'Flywheel that loads the next PFC tooth.',
-   quote:'what kind of agent am I in this world?',
-   hands:'off-shoe', live:[5,6,7]},
-B:{id:'B',name:'H10 Behavior',kind:'Output shaft',stamp:['H'],p:[6.7,0.05,0.15],
-   purpose:'Only directly observable part of the loop. Alters Reality. Loop restarts.',
-   inputs:'ISL snapshot. Current meaning transitions. Current E. Active templates and constraints.',
-   outputs:'Words spoken or withheld; physical acts; silence/freeze; jokes, escalation, retreat, attack, fawn.',
-   pre:'S6. Freeze is a legal B.',
-   effects:'R changes (S7). Next RIC may see new structure.',
-   inv:'B is not a rewrite of old rows. B is not POINTER.',
-   fail:'Behavior as in-place edit of Graphic D. Behavior as emission rule.',
-   couple:'Only legal mesh toward Cup tooth 2–3 is an act in time.',
-   impl:'Diagnose the steward’s B. Do not emit POINTER because B happened.',
-   meta:'Single output shaft from the case.',
-   quote:'Behavior is the only directly observable part of the loop.',
-   hands:'adjacent', live:[6,7]},
-GAP:{id:'GAP',name:'POINTER emission',kind:'Hands silence',stamp:['G'],p:[7.55,-1.55,-1.15],
-   purpose:'When / arity / adjacency unanswered. Off the train.',
-   inputs:'None from this gearbox.',
-   outputs:'None. This projection does not fill it.',
-   pre:'Hands graphics A–D still silent.',
-   effects:'None.',
-   inv:'Existence of this node is not an answer.',
-   fail:'Closing [GAP] from HCC-A B, OBS, or M.',
-   couple:'No legal wire from B or L to Graphic D POINTER.',
-   impl:'Do not add src/.',
-   meta:'Void beside the housing.',
-   quote:'This manifest does not close POINTER emission.',
-   hands:'[GAP]', live:[]}
+const MANIFEST_URL = new URL('hcc-a-systems-manifest.md', location.href).href;
+const LAYOUT = {
+  R:[0,0,0], I:[1.15,0.2,0], RIC:[2.2,-1.15,-0.85], PFC:[2.2,1.2,0.9],
+  C:[3.35,0.05,0], L:[4.4,-0.4,0.2], M:[5.35,0.85,0.1], E:[5.9,1.55,-0.4],
+  ISL:[4.85,0.75,1.05], B:[6.7,0.05,0.15], H10b:[7.25,-0.55,0.55],
+  GAP:[7.55,-1.55,-1.15]
+};
+const FMAP = {
+  'Kind':'kind','Purpose':'purpose','Inputs':'inputs','Outputs':'outputs',
+  'Preconditions':'pre','Effects':'effects','Invariants':'inv',
+  'Failure modes':'fail','Failure modes / breakdown conditions':'fail',
+  'Boundary & Coupling':'couple','Implementation implications':'impl',
+  'Metaphor / diagnostic role':'meta','Key source language':'quote','Hands':'hands'
 };
 
-const EDGES = [
-  {a:'R',b:'I',flow:'constraint / raw world',s:[0]},
-  {a:'I',b:'RIC',flow:'raw signals (structure)',s:[0]},
-  {a:'I',b:'PFC',flow:'same signals + priors',s:[0]},
-  {a:'RIC',b:'C',flow:'structured arrival',s:[2]},
-  {a:'PFC',b:'C',flow:'pre-interpretation',s:[2]},
-  {a:'C',b:'L',flow:'add / merge / reclassify',s:[2]},
-  {a:'L',b:'M',flow:'ledger + priorities',s:[3]},
-  {a:'M',b:'E',flow:'meaning-in-flight',s:[4]},
-  {a:'L',b:'ISL',flow:'ledger shape',s:[5]},
-  {a:'M',b:'ISL',flow:'weights / transitions',s:[5]},
-  {a:'E',b:'ISL',flow:'emotional patterns',s:[5]},
-  {a:'ISL',b:'B',flow:'identity snapshot',s:[6]},
-  {a:'M',b:'B',flow:'intended transitions',s:[6]},
-  {a:'E',b:'B',flow:'runtime affect',s:[6]},
-  {a:'B',b:'R',flow:'acts change outer structure',s:[7]},
-  {a:'ISL',b:'PFC',flow:'priors / templates next rev',s:[7]}
-];
+function parseManifest(md){
+  const pieces={}, stages=[], params=[], acts=[], edges=[];
+  const chunks = md.split(/^### /m).slice(1);
+  for(const chunk of chunks){
+    const lines = chunk.split('\n');
+    const title = lines[0].trim();
+    const body = lines.slice(1).join('\n');
+    if(/^SM\b/.test(title)){
+      for(const ln of body.split('\n')){
+        const m = ln.match(/S(\d)\s+[—-]\s+(.+)/);
+        if(m) stages.push({id:+m[1], name:'S'+m[1], text:m[2].replace(/\s+/g,' ').trim()});
+      }
+      continue;
+    }
+    if(/^P\b/.test(title)){
+      for(const ln of body.split('\n')){
+        const m = ln.match(/\*\*(P\d)\s+([^*]+)\*\*\s+[—-]\s+(.+)/);
+        if(m) params.push({id:m[1], name:m[2].trim(), text:m[3].trim(), p:LAYOUT[m[1]] || [2.2,2.1,0]});
+      }
+      continue;
+    }
+    if(/^Acts\b/.test(title)){
+      for(const ln of body.split('\n')){
+        const m = ln.match(/\*\*([IVX]+)\s+([^*]+)\*\*\s+[—-]\s+(.+)/);
+        if(m) acts.push({id:m[1], name:'Act '+m[1]+' '+m[2].trim(), q:m[3].trim(), p:[acts.length*1.1, -2.3, 0]});
+      }
+      continue;
+    }
+    if(/^(H11|SM →|System invariants)\b/.test(title)) continue;
+    const idm = title.match(/\(([A-Za-z0-9]+)\)\s*$/) || title.match(/^(H10b|GAP|H\d+[a-z]?)\b/);
+    let id = idm ? idm[1] : title.split(/[—-]/)[0].trim().replace(/\s+/g,'');
+    if(id==='H10b' || /Feedback/.test(title) && /H10b/.test(title)) id='H10b';
+    if(/POINTER emission|Hands silence/.test(title)) id='GAP';
+    if(!/^H\d|^[A-Z]{1,4}$|^H10b$|^GAP$|^RIC$|^PFC$|^ISL$/.test(id) && !LAYOUT[id]){
+      if(/^H\d/.test(title) || /\(R\)|\(I\)|\(C\)|\(L\)|\(M\)|\(E\)|\(B\)/.test(title) || /RIC|PFC|ISL|Feedback|POINTER/.test(title)){
+        /* keep */
+      } else continue;
+    }
+    const fields={};
+    let cur=null, acc='';
+    for(const ln of body.split('\n')){
+      const fm = ln.match(/^- \*\*([^*]+):\*\*\s*(.*)$/);
+      if(fm){
+        if(cur) fields[cur]=acc.trim();
+        cur=fm[1]; acc=fm[2];
+      } else if(cur && ln.startsWith('  ')) acc += ' '+ln.trim();
+      else if(cur && ln.startsWith('- ')) { fields[cur]=acc.trim(); cur=null; acc=''; }
+    }
+    if(cur) fields[cur]=acc.trim();
+    const n={id, name:title.replace(/\s+/g,' '), p:LAYOUT[id]||hashP(id), live:[]};
+    for(const [k,v] of Object.entries(fields)){
+      const key=FMAP[k]; if(key) n[key]=v;
+    }
+    n.kind=n.kind||'Piece';
+    n.stamp=stampsOf(n.hands||'', n.inv||'', n.fail||'', title+body.slice(0,400));
+    pieces[id]=n;
+  }
+  const table = md.split('## Relational Mapping')[1] || '';
+  for(const ln of table.split('\n')){
+    const m = ln.match(/\|\s*([A-Za-z0-9]+)\s*→\s*([A-Za-z0-9]+)\s*\|\s*([^|]+)\|/);
+    if(m && pieces[m[1]] && pieces[m[2]]) edges.push({a:m[1],b:m[2],flow:m[3].trim(),s:[]});
+  }
+  if(!stages.length){
+    for(let i=0;i<8;i++) stages.push({id:i,name:'S'+i,text:''});
+  }
+  inferLive(pieces, stages);
+  inferEdgeStages(edges, pieces);
+  if(!pieces.GAP){
+    pieces.GAP={id:'GAP',name:'POINTER emission [GAP]',kind:'Hands silence',stamp:['G'],
+      purpose:'When / arity / adjacency unanswered.',p:LAYOUT.GAP,live:[],
+      inputs:'None.',outputs:'None.',hands:'[GAP]'};
+  }
+  return {pieces, stages, params, acts, edges};
+}
+function hashP(id){
+  let h=0; for(const c of id) h=c.charCodeAt(0)+((h<<5)-h);
+  return [3.5+(h%10)*0.2, ((h>>3)%9-4)*0.25, ((h>>7)%7-3)*0.2];
+}
+function stampsOf(){
+  const s=new Set();
+  const blob=[...arguments].join(' ');
+  if(/\[GAP\]/.test(blob)) s.add('G');
+  if(/\[X\]|CONFLICT/.test(blob)) s.add('X');
+  if(/\[I\]/.test(blob) && !/Contract II/.test(blob.split('[I]')[0].slice(-20))) s.add('I');
+  if(/\[H\]/.test(blob) || s.size===0) s.add('H');
+  if(s.has('G')) return ['G'];
+  return [...s];
+}
+function inferLive(pieces, stages){
+  for(const st of stages){
+    const t=(st.text||'').toUpperCase();
+    for(const id of Object.keys(pieces)){
+      if(id==='GAP') continue;
+      const token = id==='H10b' ? 'FEEDBACK' : id;
+      if(new RegExp('\\b'+token+'\\b').test(t) || (id==='B' && /BEHAVIOR|\\bB\\b/.test(t)))
+        pieces[id].live.push(st.id);
+    }
+  }
+}
+function inferEdgeStages(edges, pieces){
+  for(const e of edges){
+    const la=new Set(pieces[e.a].live||[]), lb=new Set(pieces[e.b].live||[]);
+    e.s=[...la].filter(x=>lb.has(x));
+    if(!e.s.length) e.s=[...la];
+  }
+}
 
-const STAGES = [
-  {id:0,name:'S0 Intake',text:'I receives R. RIC∥PFC both load the same signals.'},
-  {id:1,name:'S1 Early prune',text:'Both shafts stay on. Drop noise. Tag threat / irrelevant / opportunity.'},
-  {id:2,name:'S2 Compile',text:'C takes {RIC,PFC} → L. Add, merge, reclassify. Oil only.'},
-  {id:3,name:'S3 Meaning',text:'M: what matters, how much, what must change.'},
-  {id:4,name:'S4 Emotion',text:'E runtime. Stable→calm. Unstable→turbulence. Not transmissible.'},
-  {id:5,name:'S5 Identity',text:'ISL: who am I now, given this.'},
-  {id:6,name:'S6 Behavior',text:'Only observable shaft. Freeze is still B. B ≠ POINTER.'},
-  {id:7,name:'S7 Feedback',text:'B alters R. ISL writes next PFC. Restart S0.'}
-];
-
-const PARAMS = [
-  {id:'P1',name:'Template library',p:[2.2,2.15,0.9],text:'PFC content. Love/conflict/authority/self/others. Override vs probability.'},
-  {id:'P2',name:'Priority stack',p:[5.35,2.05,0.1],text:'coherence comfort belonging control safety novelty power harmony image autonomy truth sovereignty status peace'},
-  {id:'P3',name:'Pruning',p:[1.6,-2.05,-0.2],text:'S0 perceptual · S1 pre-filter · S3–S5 post-compile revise/erase/reframe'},
-  {id:'P4',name:'Arbitration',p:[3.35,2.0,0],text:'RIC / PFC / compiler / identity. YAML: raw_vs_template AND identity_vs_reality.'},
-  {id:'P5',name:'M style',p:[5.35,-1.7,0.1],text:'descriptive | evaluative | directive. Most live in 1–2. Directive = sovereignty.'},
-  {id:'P6',name:'E handling',p:[5.9,2.35,-0.4],text:'decide | rewrite story | reweight | ignore'},
-  {id:'P7',name:'ISL mode',p:[4.85,2.05,1.05],text:'coherent | fragmented | scripted | aesthetic | sovereign'}
-];
-
-const ACTS = [
-  {id:'I',name:'Act I Scene',p:[0.4,-2.3,0],q:'What world am I in?',out:'stakes + roles'},
-  {id:'II',name:'Act II Story',p:[3.35,-2.3,0],q:'What got added to my story?',out:'add/merge/re-tag'},
-  {id:'III',name:'Act III Meaning',p:[5.35,-2.3,0],q:'What does this mean for me?',out:'weights + E'},
-  {id:'IV',name:'Act IV Identity',p:[4.85,-2.3,1.2],q:'What does this say about who I am?',out:'ISL shift'},
-  {id:'V',name:'Act V Behavior',p:[6.7,-2.3,0.2],q:'What do I do now?',out:'B'},
-  {id:'VI',name:'Act VI World',p:[6.7,-2.3,1.3],q:'What did this teach me?',out:'templates split/entrench'}
-];
-
-const LAYERS = {pieces:true, wires:true, knobs:false, acts:false};
-let stage=0, playing=true, speed=1, acc=0, selected='C', tab='now', cardOpen=true;
+const LAYERS={pieces:true,wires:true,knobs:false,acts:false};
+let PIECES={}, STAGES=[], PARAMS=[], ACTS=[], EDGES=[];
+let stage=0, playing=true, speed=1, acc=0, selected=null, tab='now', cardOpen=true;
 let yaw=-0.72, pitch=0.32, dist=13.2;
 const look=[3.5,0.15,0];
 const canvas=document.getElementById('c'), ctx=canvas.getContext('2d');
-let W=0,H=0,dpr=1, pointers=new Map(), moved=false;
+let W=0,H=0,dpr=1, pointers=new Map(), moved=false, ready=false, loadErr='';
 
 function resize(){
   dpr=Math.min(devicePixelRatio||1,2);
@@ -288,70 +216,86 @@ function resize(){
 }
 addEventListener('resize', resize); resize();
 
+async function boot(){
+  try{
+    const res=await fetch(MANIFEST_URL, {cache:'no-store'});
+    if(!res.ok) throw new Error('HTTP '+res.status+' '+MANIFEST_URL);
+    const md=await res.text();
+    const M=parseManifest(md);
+    PIECES=M.pieces; STAGES=M.stages; PARAMS=M.params; ACTS=M.acts; EDGES=M.edges;
+    selected = PIECES.C ? 'C' : Object.keys(PIECES)[0];
+    ready=true;
+    wire(); card();
+  }catch(err){
+    loadErr=String(err);
+    document.getElementById('card').innerHTML='<h2>manifest not loaded</h2><p>This page reads <code>hcc-a-systems-manifest.md</code> beside itself. Open via githack or a local server — file:// cannot fetch.</p><p class="port">'+loadErr+'</p>';
+  }
+}
+
+function wire(){
+  document.getElementById('layers').innerHTML=['pieces','wires','knobs','acts'].map(k=>
+    `<button type="button" data-k="${k}" class="${LAYERS[k]?'on':''}">${k}</button>`).join('');
+  document.getElementById('layers').onclick=e=>{
+    const b=e.target.closest('button'); if(!b) return;
+    LAYERS[b.dataset.k]=!LAYERS[b.dataset.k];
+    b.classList.toggle('on', LAYERS[b.dataset.k]);
+  };
+  document.getElementById('rail').innerHTML=STAGES.map(s=>`<button type="button" data-s="${s.id}">S${s.id}</button>`).join('');
+  document.getElementById('rail').onclick=e=>{
+    const b=e.target.closest('button'); if(!b) return;
+    setStage(+b.dataset.s,true);
+  };
+  document.getElementById('play').onclick=()=>{
+    playing=!playing; document.getElementById('play').textContent=playing?'pause':'play';
+  };
+  document.getElementById('prev').onclick=()=>setStage(stage-1,true);
+  document.getElementById('next').onclick=()=>setStage(stage+1,true);
+  document.getElementById('reset').onclick=()=>{yaw=-0.72;pitch=0.32;dist=13.2};
+  document.getElementById('spd').oninput=e=>speed=+e.target.value;
+  document.getElementById('peek').onclick=()=>{cardOpen=true; card();};
+  addEventListener('keydown',e=>{
+    if(e.code==='Space'){e.preventDefault();document.getElementById('play').click();}
+    if(e.code==='ArrowRight') setStage(stage+1,true);
+    if(e.code==='ArrowLeft') setStage(stage-1,true);
+    if(e.code==='KeyR') document.getElementById('reset').click();
+    if(e.code==='KeyH'){cardOpen=!cardOpen; card();}
+  });
+  canvas.addEventListener('pointerdown',e=>{
+    e.preventDefault(); moved=false;
+    pointers.set(e.pointerId,{x:e.clientX,y:e.clientY});
+    canvas.setPointerCapture(e.pointerId);
+  });
+  canvas.addEventListener('pointerup',e=>{
+    if(pointers.size===1 && !moved){
+      const hit=pick(e.clientX,e.clientY);
+      if(hit){selected=hit; cardOpen=true; card();}
+    }
+    pointers.delete(e.pointerId);
+  });
+  canvas.addEventListener('pointercancel',e=>pointers.delete(e.pointerId));
+  canvas.addEventListener('pointermove',e=>{
+    const prev=pointers.get(e.pointerId); if(!prev) return;
+    if(Math.hypot(e.clientX-prev.x,e.clientY-prev.y)>6) moved=true;
+    if(pointers.size===1){
+      yaw+=(e.clientX-prev.x)*0.01;
+      pitch=Math.max(-1.2,Math.min(1.2,pitch+(e.clientY-prev.y)*0.01));
+    } else if(pointers.size===2){
+      const other=[...pointers.entries()].find(([id])=>id!==e.pointerId)[1];
+      const d0=Math.hypot(prev.x-other.x,prev.y-other.y);
+      const d1=Math.hypot(e.clientX-other.x,e.clientY-other.y);
+      if(d0>8) dist=Math.max(6.5,Math.min(24,dist*(d0/d1)));
+    }
+    pointers.set(e.pointerId,{x:e.clientX,y:e.clientY});
+  });
+  canvas.addEventListener('wheel',e=>{e.preventDefault();dist=Math.max(6.5,Math.min(24,dist+(e.deltaY>0?0.6:-0.6)));},{passive:false});
+}
 function setStage(s, pause){
-  stage=((s%8)+8)%8; acc=0;
+  const n=STAGES.length||8;
+  stage=((s%n)+n)%n; acc=0;
   if(pause){ playing=false; document.getElementById('play').textContent='play'; }
   card();
 }
-document.getElementById('layers').innerHTML=['pieces','wires','knobs','acts'].map(k=>
-  `<button type="button" data-k="${k}" class="${LAYERS[k]?'on':''}">${k}</button>`).join('');
-document.getElementById('layers').onclick=e=>{
-  const b=e.target.closest('button'); if(!b) return;
-  LAYERS[b.dataset.k]=!LAYERS[b.dataset.k];
-  b.classList.toggle('on', LAYERS[b.dataset.k]);
-};
-document.getElementById('rail').innerHTML=STAGES.map(s=>`<button type="button" data-s="${s.id}">S${s.id}</button>`).join('');
-document.getElementById('rail').onclick=e=>{
-  const b=e.target.closest('button'); if(!b) return;
-  setStage(+b.dataset.s, true);
-};
-document.getElementById('play').onclick=()=>{
-  playing=!playing; document.getElementById('play').textContent=playing?'pause':'play';
-};
-document.getElementById('prev').onclick=()=>setStage(stage-1,true);
-document.getElementById('next').onclick=()=>setStage(stage+1,true);
-document.getElementById('reset').onclick=()=>{yaw=-0.72;pitch=0.32;dist=13.2};
-document.getElementById('spd').oninput=e=>speed=+e.target.value;
-document.getElementById('peek').onclick=()=>{cardOpen=true; card();};
-addEventListener('keydown',e=>{
-  if(e.code==='Space'){e.preventDefault();document.getElementById('play').click();}
-  if(e.code==='ArrowRight') setStage(stage+1,true);
-  if(e.code==='ArrowLeft') setStage(stage-1,true);
-  if(e.code==='KeyR') document.getElementById('reset').click();
-  if(e.code==='KeyH'){cardOpen=!cardOpen; card();}
-});
-
-canvas.addEventListener('pointerdown',e=>{
-  e.preventDefault(); moved=false;
-  pointers.set(e.pointerId,{x:e.clientX,y:e.clientY});
-  canvas.setPointerCapture(e.pointerId);
-});
-canvas.addEventListener('pointerup',e=>{
-  if(pointers.size===1 && !moved){
-    const hit=pick(e.clientX,e.clientY);
-    if(hit){selected=hit; cardOpen=true; card();}
-  }
-  pointers.delete(e.pointerId);
-});
-canvas.addEventListener('pointercancel',e=>pointers.delete(e.pointerId));
-canvas.addEventListener('pointermove',e=>{
-  const prev=pointers.get(e.pointerId); if(!prev) return;
-  if(Math.hypot(e.clientX-prev.x,e.clientY-prev.y)>6) moved=true;
-  if(pointers.size===1){
-    yaw+=(e.clientX-prev.x)*0.01;
-    pitch=clamp(pitch+(e.clientY-prev.y)*0.01,-1.2,1.2);
-  } else if(pointers.size===2){
-    const other=[...pointers.entries()].find(([id])=>id!==e.pointerId)[1];
-    const d0=Math.hypot(prev.x-other.x,prev.y-other.y);
-    const d1=Math.hypot(e.clientX-other.x,e.clientY-other.y);
-    if(d0>8) dist=clamp(dist*(d0/d1),6.5,24);
-  }
-  pointers.set(e.pointerId,{x:e.clientX,y:e.clientY});
-});
-canvas.addEventListener('wheel',e=>{e.preventDefault();dist=clamp(dist+(e.deltaY>0?0.6:-0.6),6.5,24);},{passive:false});
-
-function clamp(v,a,b){return Math.max(a,Math.min(b,v));}
-function live(id){return (PIECES[id].live||[]).includes(stage);}
+function live(id){return (PIECES[id]&&PIECES[id].live||[]).includes(stage);}
 function cam(){
   const cp=Math.cos(pitch),sp=Math.sin(pitch),cy=Math.cos(yaw),sy=Math.sin(yaw);
   return {pos:[look[0]+dist*cp*sy, look[1]+dist*sp, look[2]+dist*cp*cy],
@@ -377,23 +321,13 @@ function pick(mx,my){
   }
   return best;
 }
-function col(st){ if(st.includes('G'))return '#d86bff'; if(st.includes('X'))return '#ff6b78'; if(st.includes('I'))return '#6ee0ff'; return '#e8b86d'; }
+function col(st){ if((st||[]).includes('G'))return '#d86bff'; if((st||[]).includes('X'))return '#ff6b78'; if((st||[]).includes('I'))return '#6ee0ff'; return '#e8b86d'; }
 function lerp3(a,b,t){return [a[0]+(b[0]-a[0])*t,a[1]+(b[1]-a[1])*t,a[2]+(b[2]-a[2])*t];}
-
 function tokens(){
-  const u=acc, P=PIECES;
-  if(stage===0) return [
-    {p:lerp3(P.R.p,P.I.p,Math.min(1,u*2))},
-    {p:u<0.5?P.I.p:lerp3(P.I.p,P.RIC.p,(u-0.5)*2),twin:1},
-    {p:u<0.5?P.I.p:lerp3(P.I.p,P.PFC.p,(u-0.5)*2),twin:1}
-  ];
-  if(stage===1) return [{p:P.RIC.p,twin:1},{p:P.PFC.p,twin:1}];
-  const map={2:[['RIC','C'],['PFC','C'],['C','L']],3:[['L','M']],4:[['M','E']],
-             5:[['L','ISL'],['M','ISL'],['E','ISL']],6:[['ISL','B'],['M','B'],['E','B']],
-             7:[['B','R'],['ISL','PFC']]};
-  return (map[stage]||[]).map(([a,b])=>({p:lerp3(P[a].p,P[b].p,u),twin:a==='RIC'||a==='PFC'||b==='PFC'}));
+  const liveE=EDGES.filter(e=>e.s.includes(stage) || (live(e.a)&&live(e.b)));
+  if(!liveE.length) return [];
+  return liveE.map(e=>({p:lerp3(PIECES[e.a].p, PIECES[e.b].p, acc), twin:e.a==='RIC'||e.a==='PFC'||e.b==='PFC'}));
 }
-
 function box(){
   const corners=[[0.3,-1.7,-1.3],[6.2,-1.7,-1.3],[6.2,1.85,-1.3],[0.3,1.85,-1.3],
                  [0.3,-1.7,1.35],[6.2,-1.7,1.35],[6.2,1.85,1.35],[0.3,1.85,1.35]];
@@ -403,23 +337,21 @@ function box(){
     const A=proj(corners[i]), B=proj(corners[j]);
     ctx.beginPath(); ctx.moveTo(A[0],A[1]); ctx.lineTo(B[0],B[1]); ctx.stroke();
   }
-  const lab=proj([3.2,1.95,-1.3]);
-  ctx.fillStyle='#5d6b82'; ctx.font='10px ui-sans-serif';
-  ctx.fillText('HOUSING · only structure crosses · meaning stays in the box', lab[0]-90, lab[1]);
 }
-
 function frame(now){
   if(!frame.t) frame.t=now;
   const dt=Math.min(0.05,(now-frame.t)/1000); frame.t=now;
-  if(playing){ acc+=dt*0.5*speed; if(acc>=1){acc=0;stage=(stage+1)%8;card();} }
+  if(ready && playing && STAGES.length){ acc+=dt*0.5*speed; if(acc>=1){acc=0;stage=(stage+1)%STAGES.length;card();} }
   ctx.clearRect(0,0,W,H);
-  const g=ctx.createRadialGradient(W*0.38,H*0.42,20,W*0.38,H*0.42,Math.max(W,H));
+  const g=ctx.createRadialGradient(W*0.46,H*0.36,20,W*0.46,H*0.36,Math.max(W,H));
   g.addColorStop(0,'#121a2b'); g.addColorStop(1,'#07080c');
   ctx.fillStyle=g; ctx.fillRect(0,0,W,H);
+  if(!ready){ requestAnimationFrame(frame); return; }
   box();
   if(LAYERS.wires){
     for(const e of EDGES){
-      const on=e.s.includes(stage) || (live(e.a)&&live(e.b));
+      if(!PIECES[e.a]||!PIECES[e.b]) continue;
+      const on=e.s.includes(stage)||(live(e.a)&&live(e.b));
       const A=proj(PIECES[e.a].p), B=proj(PIECES[e.b].p);
       ctx.strokeStyle=on?'#e8b86dcc':'#2a334866';
       ctx.lineWidth=on?2:1;
@@ -432,20 +364,21 @@ function frame(now){
     }
   }
   if(LAYERS.knobs){
-    for(const k of PARAMS){
-      const q=proj(k.p);
+    PARAMS.forEach((k,i)=>{
+      const p=k.p||[2.2+i*0.5,2.1,0];
+      const q=proj(p);
       ctx.fillStyle='#6ee0ff'; ctx.beginPath(); ctx.arc(q[0],q[1],4,0,6.3); ctx.fill();
       ctx.fillStyle='#9ad7ff'; ctx.font='10px ui-sans-serif';
       ctx.fillText(k.id+' '+k.name, q[0]+7, q[1]-6);
-    }
+    });
   }
   if(LAYERS.acts){
-    for(const a of ACTS){
+    ACTS.forEach(a=>{
       const q=proj(a.p);
       ctx.strokeStyle='#e8b86d'; ctx.strokeRect(q[0]-6,q[1]-6,12,12);
       ctx.fillStyle='#e8b86d'; ctx.font='10px ui-sans-serif';
       ctx.fillText(a.name, q[0]+8, q[1]);
-    }
+    });
   }
   if(LAYERS.pieces){
     for(const tok of tokens()){
@@ -467,50 +400,44 @@ function frame(now){
       ctx.globalAlpha=1;
     }
   }
-  document.getElementById('phase').textContent=STAGES[stage].name;
+  if(STAGES[stage]) document.getElementById('phase').textContent=STAGES[stage].name;
   [...document.querySelectorAll('#rail button')].forEach((b,i)=>b.classList.toggle('on',i===stage));
   requestAnimationFrame(frame);
 }
-
 function card(){
-  const n=PIECES[selected], s=STAGES[stage];
-  const act=ACTS[Math.min(stage,5)];
   const el=document.getElementById('card');
   const peek=document.getElementById('peek');
-  if(!cardOpen){
-    el.classList.add('hidden');
-    peek.style.display='block';
-    return;
-  }
-  el.classList.remove('hidden');
-  peek.style.display='none';
-  const body = {
-    now:`<dt>Clock</dt><dd><b>${s.name}</b> — ${s.text}</dd>
-         <dt>Purpose</dt><dd>${n.purpose}</dd>
-         <dt>Act rhyme</dt><dd>${act.name}: ${act.q} → ${act.out}</dd>
-         <dt>Kind</dt><dd>${n.kind}</dd>`,
-    ports:`<dt>Inputs</dt><dd class="port">${n.inputs}</dd>
-           <dt>Outputs</dt><dd class="port">${n.outputs}</dd>
-           <dt>Preconditions</dt><dd>${n.pre}</dd>
-           <dt>Effects</dt><dd>${n.effects}</dd>`,
-    law:`<dt>Invariants</dt><dd>${n.inv}</dd>
-         <dt>Failure</dt><dd>${n.fail}</dd>
-         <dt>Boundary & coupling</dt><dd>${n.couple}</dd>
-         <dt>Implementation</dt><dd>${n.impl}</dd>`,
-    hands:`<dt>Hands</dt><dd>${n.hands}</dd>
-           <dt>Metaphor</dt><dd>${n.meta}</dd>
-           <dt>Source language</dt><dd>${n.quote}</dd>`
+  if(!ready||!selected||!PIECES[selected]) return;
+  const n=PIECES[selected], s=STAGES[stage]||{name:'',text:''};
+  const act=ACTS[Math.min(stage, Math.max(0,ACTS.length-1))]||{name:'',q:'',out:''};
+  if(!cardOpen){ el.classList.add('hidden'); peek.style.display='block'; return; }
+  el.classList.remove('hidden'); peek.style.display='none';
+  const body={
+    now:`<dt>Clock</dt><dd><b>${s.name||('S'+stage)}</b> — ${s.text||''}</dd>
+         <dt>Purpose</dt><dd>${n.purpose||''}</dd>
+         <dt>Kind</dt><dd>${n.kind||''}</dd>`,
+    ports:`<dt>Inputs</dt><dd class="port">${n.inputs||''}</dd>
+           <dt>Outputs</dt><dd class="port">${n.outputs||''}</dd>
+           <dt>Preconditions</dt><dd>${n.pre||''}</dd>
+           <dt>Effects</dt><dd>${n.effects||''}</dd>`,
+    law:`<dt>Invariants</dt><dd>${n.inv||''}</dd>
+         <dt>Failure</dt><dd>${n.fail||''}</dd>
+         <dt>Boundary & coupling</dt><dd>${n.couple||''}</dd>
+         <dt>Implementation</dt><dd>${n.impl||''}</dd>`,
+    hands:`<dt>Hands</dt><dd>${n.hands||''}</dd>
+           <dt>Metaphor</dt><dd>${n.meta||''}</dd>
+           <dt>Source language</dt><dd>${n.quote||''}</dd>`
   }[tab];
   el.innerHTML=
     `<div class="card-top"><h2>${n.name}</h2><button type="button" id="hide">hide</button></div>`+
-    n.stamp.map(t=>`<span class="stamp ${t==='G'?'G':t}">${t==='G'?'[GAP]':'['+t+']'}</span>`).join('')+
+    (n.stamp||[]).map(t=>`<span class="stamp ${t==='G'?'G':t}">${t==='G'?'[GAP]':'['+t+']'}</span>`).join('')+
     `<div class="tabs">${['now','ports','law','hands'].map(k=>
       `<button type="button" data-t="${k}" class="${k===tab?'on':''}">${k}</button>`).join('')}</div>`+
-    `<div class="card-body"><dl>${body}</dl></div>`;
+    `<div class="card-body"><dl>${body}</dl><p class="port">source: hcc-a-systems-manifest.md</p></div>`;
   el.querySelector('#hide').onclick=()=>{cardOpen=false; card();};
   el.querySelectorAll('.tabs button').forEach(b=>b.onclick=()=>{tab=b.dataset.t; card();});
 }
-card();
+boot();
 requestAnimationFrame(frame);
 </script>
 </body>
