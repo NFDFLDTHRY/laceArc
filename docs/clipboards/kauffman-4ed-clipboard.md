@@ -88,6 +88,23 @@ fetch/ff main → shoe → graphics A–D → manifest → law
                  → STOP
 ```
 
+## Pass 4 receipt
+
+| Field | Value |
+|---|---|
+| Status | EXECUTED |
+| Station | clipboards · agent `reference-Mapper` |
+| Plan | [kauffman-pass-4-plan.md](kauffman-pass-4-plan.md) |
+| Product | [`kauffman-4ed-mechanisms.md`](kauffman-4ed-mechanisms.md) — Wave A cards M-A1…M-A9 (constructive algorithms + Lace stamps); Waves B–D deferred table |
+| Sighting | `pdftoppm` + `tesseract` 5.5.0 on Wave A PDF pages; figure-heavy pages remain figure-authoritative |
+| PAGE A–X morals | **unchanged** (receipt only) |
+| Emission | still `[GAP]` |
+| src/ | **none** |
+
+Law on this clip: diagram ≠ rope · hitch kin · grab ≠ emission · `[GAP]` sealed. Book procedure on paper ≠ Lace append.
+
+---
+
 ---
 
 ```
@@ -271,6 +288,7 @@ fetch/ff main → shoe → graphics A–D → manifest → law
 - **Pass 2 (PDF-sighted)** rewrote D5 (PDF present), pinned FM-K5/K6/K9 loci, fixed PAGE E appendix title to PDF p.782 / printed p.763.
 - Searchable text layer still absent; denser OCR remains optional.
 - **Pass 3** added coherence mesh + Gauss pin (PDF p.562); synced five-stakes ≤ note; map K7 `<` left OPEN.
+- **Pass 4** added `kauffman-4ed-mechanisms.md` (Wave A M-A1–A9 constructive algorithms; B–D deferred). No PAGE rewrite; Φ still `[GAP]`.
 
 ---
 
