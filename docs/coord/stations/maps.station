@@ -1,7 +1,7 @@
 STATUS: HELD
 STATION: maps
 OWNS: docs/reason-model-map.md docs/rust-nostd-*.md docs/atomic-primitives-map.md docs/clock/gearing-code-1to1.md docs/coherence-audit*.md docs/clock/system-mathematical-model.md docs/defrag-plan.md docs/plans/**
-AGENT: Codex-atomic-pass1
-BASE: 24c6348e5bec4918b61846360cd28bca4a52937d
-SINCE: 2026-09-18T20:27:47Z
+AGENT: LaceArc steward
+BASE: b7d4891545de712832dece67163d69ac276996d3
+SINCE: 2026-09-18T20:33:18Z
 NOTE: 

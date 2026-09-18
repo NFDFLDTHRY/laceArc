@@ -156,11 +156,18 @@ The remaining keys **axle, A, B, C, AB, BC, CA** summarize the hologram's axle, 
 
 - **Approved renderer baseline (2026-09-18):** SDF raymarch + orbit/zoom (`db469c3` kin — “drag to orbit · pinch or scroll to zoom”). Plastic `buildGear` and the post-raymarch mesh restyles (`12e4021` / `b6ce0ac`) are rejected. Improve on this shader path; do not drop WGSL raymarch or orbit.
 
+### Steward note — lookref language split (2026-09-18)
+
+- **Scene lookrefs (batch 2)** = primary canvas language: dark lattice floor; glass cubes as **clustering regions** (participation bunched under one view); **wire of light** (cyan/gold) = Hands lace cord threading those regions, two ends, not CTC. Files: `docs/hologram/lookref-lattice-hub-uplink.png`, `lookref-lattice-trail-annotations.jpg`, `lookref-lattice-glyph-arrows.jpg`.
+- **ASTRA lookrefs (batch 1)** = page chrome / view instruments only (brackets, scientific labels, optional telemetry from real `LACE_CONTRACTS`). Not Lace runtime; not canvas background.
+- **SDF raymarch baseline unchanged** (`db469c3` kin). Plastic `buildGear` and mesh-only restyles remain rejected. Cubes ≠ Graphic D types; wire ≠ second store.
+
+
 Source: [the renderer](../shadow-clock-gearing.html), especially chipKeys, show, pickTargets, hitAmong, pick, buildLaceRibbon, and frame. It remains read-only for this audit; the designated editor's upstream changes are incorporated here.
 
 | Visual/control group | Keys and present binding | Drift or limit |
 |---|---|---|
-| Main stations (hologram glass cubes) | A, B, C: registry chips, HUD buttons, pick targets, glass-shell + core highlight | Same three keys; skin is stacked glass cells with emissive cores (not plastic teeth). Pair-region priority can still intercept B/axle at shared center in synthetic checks. Train contracts remain individually unbound (chip OK). |
+| Main clustering regions (hologram glass cubes) | A, B, C: registry chips, HUD buttons, pick targets, glass-shell + core highlight | Same three keys; skin is stacked glass **clustering regions** threaded by wire-of-light Hands cord (not plastic teeth; cubes ≠ Graphic D). Pair-region priority can still intercept B/axle at shared center in synthetic checks. Train contracts remain individually unbound (chip OK). |
 | Pair interactions (crossing beams) | AB, BC, CA: registry chips, HUD buttons, mesh-priority pick regions, visible cyan/white arc beams with highlight | Beams are drawn as presentation mesh (crossing template). Mesh-priority pick still applies. JS BIND notes in shaft files may still say chip-only — shaft not edited this tick. |
 | Axle | axle: registry chip, HUD button, mesh, and declared pick target | Shares B's center; the current picker selects CA there because mesh contact regions have priority. The B/axle body collision also remains; tested below. HUD/chip code still calls show with axle. |
 | Train contracts | A1–A9, B1–B5, C1–C10: 24 registry chips | No individual pick targets or matching mesh highlight conditions. |

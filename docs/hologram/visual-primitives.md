@@ -8,11 +8,55 @@ A primitive that would require rewriting \(L\), closing the two ends, or filling
 
 Diagram \(\phi\) (azimuth on the CTC figure) is **not** pointer-emission \(\Phi\). Do not collide the letters.
 
+**Live draw path:** SDF raymarch + orbit/pinch/zoom in `docs/shadow-clock-gearing.html` (WGSL). Keep that path. Do not restore plastic `buildGear`. Do not replace the shader with a mesh-only restyle.
+
+**Language split:** live HTML **canvas** = SCENE language (batch-2 lattice). Page **chrome** may borrow ASTRA cues (brackets, thin scientific labels, optional telemetry strip from real `LACE_CONTRACTS` text). ASTRA light dashboards are **not** the canvas background.
+
+---
+
+## 0. SCENE language (Layer III canvas — batch 2)
+
+Primary look for the 3D canvas. Kin to `clockwork-view-lattice` / crossing / traces and the three lattice lookrefs.
+
+**Lock (user):** Glass cubes are lace-representation **clustering regions** — places where participation bunches under one view. They are not empty generic stations, not objects that own relationships, and not Graphic D row types. The **wire of light** (cyan trails / golden wisps) is the Hands strand threading those clustering regions — one luminous cord with two ends (start → halt). ASTRA yarn-ball is only a suggestion for that one-strand look. Not a CTC, not a second store, not write-back to Graphic D.
+
+| Cue | Lawful use | Unlawful |
+|---|---|---|
+| Dark infinite / cracked / motherboard floor with fine glowing circuit grid | Projection plane under clustering regions | ASTRA white lab as canvas bg |
+| Translucent glass cubes | Clustering regions of the lace (participation bunched under one view); A/B/C as cluster shells | Cubes as Graphic D types / WORD rows; cubes as objects that own edges |
+| Wire of light — cyan trail + golden wisps through the cubes | Hands lace cord in the picture; denser where participation winds; two ends exist | Closed CTC; second store; POINTER emission; strand as Core |
+| Cyan / blue hub, uplink, crossing paths, directional grid arrows | Focus, mesh contacts, route hints on the view | Arrows as Core edges; cubes owning relationships |
+| Green neural / plasma spheres / clusters | Secondary cluster accents beside primary regions | Orbs as stars / STAR rows |
+| Orange molten / tangle data inside glass | Heat / bunching accent *inside* a clustering region | Orange objects as stored entries |
+| Bloom, wisps, golden energy trail, micro floor annotations | Atmosphere on the view | Proof of possession of the strand |
+| Shallow DoF / atmospheric falloff | Camera depth on Layer III | Filling \(\Phi\) from pretty blur |
+
+Lookrefs: [lookref-lattice-hub-uplink.png](lookref-lattice-hub-uplink.png), [lookref-lattice-trail-annotations.jpg](lookref-lattice-trail-annotations.jpg), [lookref-lattice-glyph-arrows.jpg](lookref-lattice-glyph-arrows.jpg).
+
+Cubes, orbs, and glowing arrows remain **shadow only**. They are not Graphic D types. Live canvas: cluster-region glass + luminous wire; draw path remains SDF raymarch.
+
+---
+
+## 0.5 ASTRA chrome vocabulary (view instruments only)
+
+Light-mode Axial Lab dashboards (ENERGY CASCADE / STRAIN TENSOR / PROOF STREAM / TOPOLOGY OBSERVATORY / streamline density) are **not** an authority and **not** Lace runtime. SL-C-0002: a complete-looking panel is not conservation. Dashboard counts are theater.
+
+| Borrow for page chrome | Stay off the canvas / Core |
+|---|---|
+| Corner brackets around the stage | White lab as primary page/canvas ground |
+| Thin scientific HUD labels | Fake agent counts as truth |
+| Optional telemetry strip fed from real `LACE_CONTRACTS` key + stamp + title/body snippet | “Proof stream” as the strand |
+| Teal / cyan / orange / green accent tokens matching scene lookrefs | Importing GPT-6 / ASTRA / multi-agent lab as runtime |
+
+Lookrefs: [lookref-astra-stream-bifurcation.png](lookref-astra-stream-bifurcation.png), [lookref-astra-helical-shell.png](lookref-astra-helical-shell.png), [lookref-astra-vortex-reconnect.png](lookref-astra-vortex-reconnect.png), [lookref-astra-toroidal-tangle.png](lookref-astra-toroidal-tangle.png), [lookref-astra-toroidal-pair.png](lookref-astra-toroidal-pair.png).
+
 ---
 
 ## 1. Worldline sheet
 
-File: [primitive-worldline-ctc.png](primitive-worldline-ctc.png)
+Files:
+- Full diagram: [lookref-worldline-ctc-full.png](lookref-worldline-ctc-full.png) (`e24bb13a…`)
+- Primitive sheet: [primitive-worldline-ctc.png](primitive-worldline-ctc.png)
 
 | Drawn | Lawful primitive | Unlawful |
 |---|---|---|
@@ -20,10 +64,10 @@ File: [primitive-worldline-ctc.png](primitive-worldline-ctc.png)
 | \(t\) axis | Tick count \(\lvert L\rvert\) | A second time stored on a WORD |
 | \(r=\mathrm{const}\) hypersurface | One projection slice / one camera altitude | A spatial store beside Graphic D |
 | Blue helix | Later participation seen as winding | A stored helix object |
-| Closed photon-like curve / CTC band | The forbidden closed ring, drawn in physics dress | Core dynamics |
+| Closed photon-like curve / CTC band | The forbidden closed ring, drawn in physics dress | Core dynamics; CTC as Core |
 | White / black ovals on the curve | Occurrences / two banks under one view | Polarized objects that own the curve |
 
-The prize of this sheet is the contrast: the life-line is kin; the CTC is the anti-model of Rule Zero. Recursion of definition is Continue. It is not a closed time-like curve through an earlier WORD.
+The prize of this sheet is the contrast: the life-line is kin; the CTC is the anti-model of Rule Zero. Recursion of definition is Continue. It is not a closed time-like curve through an earlier WORD. Diagram \(\phi\) ≠ emission \(\Phi\).
 
 ---
 
@@ -76,6 +120,9 @@ The 2D ASCII train in law is a flatten. The hologram is the stack.
 - Draw a torus only to show holder recirculation, and stamp it \([H]\) / \([III]\).
 - Draw a CTC only as the thing the shoe forbids.
 - Draw gears as stacked 3D surface cells, photosphere-like, driven from below.
+- Restyle the live canvas toward SCENE lattice lookrefs; restyle page chrome toward ASTRA instrument cues without importing ASTRA as runtime.
+- Keep SDF raymarch + orbit as the approved draw path.
+- Draw glass cubes as clustering regions; thread them with one wire of light (Hands), two ends.
 
 ## 4. Forbidden use
 
@@ -86,3 +133,9 @@ The 2D ASCII train in law is a flatten. The hologram is the stack.
 - Close start to halt on the workpiece.
 - Flatten the gearbox into one plane and call that the machine.
 - Import solar MHD, sunspots, or fusion as row types.
+- Treat cubes, orbs, or glowing arrows as Graphic D types.
+- Treat glass cubes as objects that own relationships (they are clustering regions only).
+- Close the wire of light into a CTC or treat it as a second store.
+- Treat CTC as Core.
+- Replace WGSL SDF raymarch with plastic `buildGear` or a mesh-only restyle.
+- Use ASTRA light dashboards as the canvas background.

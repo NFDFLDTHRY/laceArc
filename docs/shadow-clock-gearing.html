@@ -3,40 +3,49 @@
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Lace Shadow Clock — Gearing Interaction Contracts (WebGPU 3D)</title>
+<title>LaceArc / Shadow clock — Gearing Interaction Contracts (WebGPU 3D)</title>
 <meta name="description" content="Projection view: holder machine {A,B,C} as physical clock gearing of lace. WebGPU 3D only. Not Core. Not a sixth graphic."/>
 <style>
   :root {
-    --bg: #0a0c10;
-    --panel: #12161e;
-    --ink: #e8ecf4;
-    --muted: #8b93a7;
-    --axle: #c9a227;
-    --a: #5b9fd4;
-    --b: #d4a05b;
-    --c: #7bc96f;
+    --bg: #06080c;
+    --panel: #0c1018;
+    --ink: #e6eef6;
+    --muted: #7a8a9c;
+    --axle: #e0b44a;
+    --a: #3ec8ff;
+    --b: #ff8a3a;
+    --c: #4dff8a;
     --lace: #e8dcc8;
     --danger: #e85d5d;
     --gap: #9b7bff;
     --wall: #3d4555;
-    --mesh: #f0e6a0;
+    --mesh: #7ee7ff;
+    --cyan: #3ec8ff;
+    --teal: #2a9bb5;
+    --bracket: rgba(62, 200, 255, 0.55);
+    --hud-line: rgba(62, 200, 255, 0.22);
   }
   * { box-sizing: border-box; }
   html, body {
     margin: 0; padding: 0;
-    background: var(--bg);
+    background:
+      radial-gradient(ellipse at 50% 0%, #0c1520 0%, var(--bg) 55%),
+      var(--bg);
     color: var(--ink);
     font: 15px/1.45 "IBM Plex Sans", "Segoe UI", system-ui, sans-serif;
     min-height: 100%;
   }
   header {
     padding: 1rem 1.25rem 0.75rem;
-    border-bottom: 1px solid #242a36;
+    border-bottom: 1px solid var(--hud-line);
     display: flex; flex-wrap: wrap; gap: 0.75rem 1.5rem;
     align-items: baseline; justify-content: space-between;
+    background: linear-gradient(180deg, rgba(12, 21, 32, 0.9), transparent);
   }
   header h1 {
-    margin: 0; font-size: 1.15rem; font-weight: 600; letter-spacing: 0.02em;
+    margin: 0; font-size: 1.15rem; font-weight: 600; letter-spacing: 0.04em;
+    color: var(--cyan);
+    text-shadow: 0 0 18px rgba(62, 200, 255, 0.25);
   }
   header .sub { color: var(--muted); font-size: 0.85rem; max-width: 52rem; margin: 0.35rem 0 0; }
   header .sub-wrap { max-width: 52rem; }
@@ -49,9 +58,10 @@
   }
   header .sub-wrap summary::-webkit-details-marker { display: none; }
   header .badge {
-    font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.08em;
-    border: 1px solid var(--axle); color: var(--axle);
-    padding: 0.25rem 0.5rem; border-radius: 999px;
+    font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.1em;
+    border: 1px solid var(--cyan); color: var(--cyan);
+    padding: 0.25rem 0.55rem; border-radius: 2px;
+    background: rgba(62, 200, 255, 0.06);
   }
   .layout {
     display: grid;
@@ -94,15 +104,64 @@
     }
     .tick-bar button { white-space: nowrap; flex: 0 0 auto; }
     .legend { display: none; }
+    .telemetry { font-size: 0.65rem; }
   }
   .stage {
     position: relative;
     padding: 0;
-    border-right: 1px solid #242a36;
+    border-right: 1px solid var(--hud-line);
     background:
-      radial-gradient(ellipse at 50% 45%, #151a24 0%, var(--bg) 70%);
+      radial-gradient(ellipse at 50% 45%, #0e1824 0%, var(--bg) 70%);
     min-height: 420px;
   }
+  /* ASTRA-style corner brackets — chrome only, around the stage */
+  .stage::before,
+  .stage::after,
+  .stage-brackets::before,
+  .stage-brackets::after {
+    content: "";
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    z-index: 6;
+    pointer-events: none;
+    border-color: var(--bracket);
+    border-style: solid;
+  }
+  .stage::before {
+    top: 8px; left: 8px;
+    border-width: 1.5px 0 0 1.5px;
+  }
+  .stage::after {
+    top: 8px; right: 8px;
+    border-width: 1.5px 1.5px 0 0;
+  }
+  .stage-brackets::before {
+    bottom: 8px; left: 8px;
+    border-width: 0 0 1.5px 1.5px;
+  }
+  .stage-brackets::after {
+    bottom: 8px; right: 8px;
+    border-width: 0 1.5px 1.5px 0;
+  }
+  .stage-brackets {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    z-index: 6;
+  }
+  .sci-label {
+    position: absolute;
+    z-index: 7;
+    pointer-events: none;
+    font-family: ui-monospace, "IBM Plex Mono", monospace;
+    font-size: 0.62rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: rgba(62, 200, 255, 0.7);
+  }
+  .sci-label.top-left { top: 12px; left: 32px; }
+  .sci-label.top-right { top: 12px; right: 32px; }
   canvas#clock3d {
     width: 100%;
     height: min(78vh, 640px);
@@ -118,13 +177,13 @@
     align-items: center;
     justify-content: center;
     padding: 1.5rem;
-    background: rgba(10, 12, 16, 0.96);
+    background: rgba(6, 8, 12, 0.96);
   }
   .gpu-error[hidden] { display: none; }
   .gpu-error .box {
     max-width: 32rem;
     border: 1px solid var(--danger);
-    border-radius: 8px;
+    border-radius: 2px;
     padding: 1.25rem 1.4rem;
     background: #1a1010;
   }
@@ -145,7 +204,7 @@
   }
   .hud-labels {
     position: absolute;
-    top: 0.45rem;
+    top: 1.6rem;
     left: 0.45rem;
     z-index: 5;
     display: flex;
@@ -158,15 +217,17 @@
     position: static;
     transform: none;
     pointer-events: auto;
-    background: rgba(10, 12, 16, 0.82);
-    border: 1px solid #333a4a;
+    background: rgba(6, 10, 16, 0.78);
+    border: 1px solid var(--hud-line);
     color: var(--ink);
-    border-radius: 6px;
-    padding: 0.2rem 0.45rem;
-    font-size: 0.72rem;
-    font-weight: 700;
+    border-radius: 2px;
+    padding: 0.18rem 0.42rem;
+    font-size: 0.68rem;
+    font-weight: 600;
+    font-family: ui-monospace, monospace;
     cursor: pointer;
-    letter-spacing: 0.04em;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
     text-align: left;
     width: max-content;
     max-width: 100%;
@@ -179,18 +240,18 @@
   .hud-labels .lab[data-key="BC"],
   .hud-labels .lab[data-key="CA"] { border-color: var(--mesh); color: var(--mesh); font-weight: 600; }
   .hud-labels .lab:hover {
-    box-shadow: 0 0 10px rgba(240, 230, 160, 0.35);
+    box-shadow: 0 0 10px rgba(62, 200, 255, 0.35);
   }
   .hud-labels .lab.active {
-    box-shadow: 0 0 14px rgba(240, 230, 160, 0.55);
-    background: rgba(42, 38, 22, 0.94);
-    outline: 1px solid var(--mesh);
+    box-shadow: 0 0 14px rgba(62, 200, 255, 0.55);
+    background: rgba(12, 28, 40, 0.94);
+    outline: 1px solid var(--cyan);
   }
   .hud-labels .lab[data-key="AB"].active,
   .hud-labels .lab[data-key="BC"].active,
   .hud-labels .lab[data-key="CA"].active {
-    background: rgba(55, 50, 22, 0.96);
-    box-shadow: 0 0 16px rgba(240, 230, 160, 0.65);
+    background: rgba(18, 40, 48, 0.96);
+    box-shadow: 0 0 16px rgba(126, 231, 255, 0.55);
   }
   .tick-bar {
     display: flex; flex-wrap: wrap; gap: 0.35rem;
@@ -199,30 +260,32 @@
     font-size: 0.72rem;
   }
   .tick-bar button {
-    background: #1a2030; border: 1px solid #333a4a; color: var(--muted);
-    border-radius: 4px; padding: 0.2rem 0.45rem; cursor: pointer;
+    background: #0e1620; border: 1px solid #243040; color: var(--muted);
+    border-radius: 2px; padding: 0.2rem 0.45rem; cursor: pointer;
   }
   .tick-bar button:hover, .tick-bar button.active {
-    border-color: var(--axle); color: var(--axle);
+    border-color: var(--cyan); color: var(--cyan);
   }
   .side {
     background: var(--panel);
     padding: 1rem 1.1rem 2rem;
     overflow: auto;
     max-height: calc(100vh - 5.5rem);
+    border-left: 1px solid var(--hud-line);
   }
   .side h2 {
     margin: 0 0 0.5rem; font-size: 0.95rem;
+    letter-spacing: 0.04em;
   }
   .side h3 {
-    margin: 1rem 0 0.35rem; font-size: 0.8rem;
-    text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted);
+    margin: 1rem 0 0.35rem; font-size: 0.72rem;
+    text-transform: uppercase; letter-spacing: 0.1em; color: var(--teal);
   }
   #contract {
     font-family: ui-monospace, "IBM Plex Mono", monospace;
     font-size: 0.78rem; line-height: 1.4;
-    white-space: pre-wrap; background: #0a0c10;
-    border: 1px solid #2a3140; border-radius: 6px;
+    white-space: pre-wrap; background: #06080c;
+    border: 1px solid #1e2a38; border-radius: 2px;
     padding: 0.75rem; min-height: 12rem; color: #d8dee9;
   }
   .hint { color: var(--muted); font-size: 0.8rem; margin: 0.5rem 0 1rem; }
@@ -246,16 +309,17 @@
   .legend .ll::before { background: var(--lace); }
   .legend .lx::before { background: var(--axle); }
   button.chip {
-    background: #1a2030; border: 1px solid #333a4a; color: var(--ink);
-    border-radius: 999px; padding: 0.25rem 0.65rem; font-size: 0.75rem;
+    background: #0e1620; border: 1px solid #243040; color: var(--ink);
+    border-radius: 2px; padding: 0.25rem 0.65rem; font-size: 0.75rem;
     cursor: pointer; margin: 0.15rem 0.2rem 0.15rem 0;
+    font-family: ui-monospace, monospace;
   }
   button.chip:hover, button.chip.active {
-    border-color: var(--axle); color: var(--axle);
+    border-color: var(--cyan); color: var(--cyan);
   }
   footer {
     grid-column: 1 / -1; padding: 0.6rem 1.25rem;
-    border-top: 1px solid #242a36; color: var(--muted); font-size: 0.75rem;
+    border-top: 1px solid var(--hud-line); color: var(--muted); font-size: 0.75rem;
   }
   .wall-note {
     border-left: 3px solid var(--danger); padding-left: 0.65rem;
@@ -269,20 +333,58 @@
   .cam-controls {
     display: flex; align-items: center; gap: .6rem;
     flex-wrap: wrap; margin-top: .35rem;
+    padding: 0 0.75rem 0.5rem;
   }
   .cam-controls button {
-    background: #12202c; color: #cfe6f2;
-    border: 1px solid #2c4a5e; border-radius: 999px;
+    background: #0c1a24; color: #cfe6f2;
+    border: 1px solid #2c4a5e; border-radius: 2px;
     padding: .25rem .7rem; font-size: .78rem; cursor: pointer;
+    font-family: ui-monospace, monospace; letter-spacing: 0.06em;
+    text-transform: uppercase;
   }
-  .cam-controls button:hover { background: #1a2f40; }
+  .cam-controls button:hover { background: #142838; border-color: var(--cyan); }
   .cam-hint { font-size: .72rem; color: #6f8496; }
+
+  /* Telemetry strip — real LACE_CONTRACTS only; view instrument, not runtime */
+  .telemetry {
+    margin: 0 0.75rem 0.65rem;
+    padding: 0.45rem 0.65rem;
+    border: 1px solid var(--hud-line);
+    background: rgba(8, 14, 22, 0.92);
+    font-family: ui-monospace, "IBM Plex Mono", monospace;
+    font-size: 0.7rem;
+    line-height: 1.35;
+    color: var(--muted);
+  }
+  .telemetry .tel-key {
+    color: var(--cyan);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+  .telemetry .tel-stamp {
+    color: var(--b);
+    margin-left: 0.55rem;
+  }
+  .telemetry .tel-title {
+    color: var(--ink);
+    display: block;
+    margin-top: 0.15rem;
+  }
+  .telemetry .tel-body {
+    display: block;
+    margin-top: 0.2rem;
+    color: #8a9aab;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+  }
 </style>
 </head>
 <body>
 <header>
   <div>
-    <h1>Lace Shadow Clock — Physical Gearing</h1>
+    <h1>LaceArc / Shadow clock — Physical Gearing</h1>
     <details class="sub-wrap">
       <summary>Layer III · emission [GAP] · WebGPU 3D</summary>
       <p class="sub">Holder machine {A, B, C} as clock gearing on one lace axle. Projection only — not Core, not a sixth graphic, not WORD/POINTER rows. POINTER emission stays [GAP]. <strong>3D WebGPU required</strong> (no 2D primary view).</p>
@@ -293,6 +395,9 @@
 
 <div class="layout">
   <div class="stage">
+    <div class="stage-brackets" aria-hidden="true"></div>
+    <span class="sci-label top-left">LAYER III · CLUSTER REGIONS</span>
+    <span class="sci-label top-right">SDF RAYMARCH · VIEW ONLY</span>
     <div id="gpuError" class="gpu-error" hidden>
       <div class="box">
         <h2>WebGPU required</h2>
@@ -307,11 +412,11 @@
         <p>Desktop Chrome with WebGPU also works for preview. No Three.js, no CDN, no npm.</p>
       </div>
     </div>
-    <canvas id="clock3d" role="img" aria-label="Three meshed 3D clock gears A B C with lace cord through axle (WebGPU)"></canvas>
+    <canvas id="clock3d" role="img" aria-label="Lace clustering regions A B C as glass cubes threaded by wire of light (WebGPU SDF)"></canvas>
     <div id="hud" class="hud-labels" aria-hidden="false">
-      <button type="button" class="lab" data-key="A" id="labA">A · HCC-A</button>
-      <button type="button" class="lab" data-key="B" id="labB">B · Cup</button>
-      <button type="button" class="lab" data-key="C" id="labC">C · Water</button>
+      <button type="button" class="lab" data-key="A" id="labA">A · cluster</button>
+      <button type="button" class="lab" data-key="B" id="labB">B · cluster</button>
+      <button type="button" class="lab" data-key="C" id="labC">C · cluster</button>
       <button type="button" class="lab" data-key="axle" id="labAxle">AXLE</button>
       <button type="button" class="lab" data-key="AB" id="labAB">A×B</button>
       <button type="button" class="lab" data-key="BC" id="labBC">B×C</button>
@@ -319,15 +424,21 @@
     </div>
     <div class="tick-bar" id="tickBar" aria-label="Time cells t0–t6"></div>
     <div class="legend">
-      <span class="la">A compile</span>
-      <span class="lb">B fall</span>
-      <span class="lc">C crossing</span>
-      <span class="ll">Lace cord (Hands)</span>
+      <span class="la">A cluster region</span>
+      <span class="lb">B cluster region</span>
+      <span class="lc">C cluster region</span>
+      <span class="ll">Lace cord — wire of light (Hands)</span>
       <span class="lx">Shared axle</span>
     </div>
     <div class="cam-controls">
       <button id="camReset" type="button">Reset view</button>
       <span class="cam-hint">drag to orbit · pinch or scroll to zoom · tap a station to select</span>
+    </div>
+    <div id="telemetry" class="telemetry" aria-live="polite">
+      <span class="tel-key" id="telKey">—</span>
+      <span class="tel-stamp" id="telStamp"></span>
+      <span class="tel-title" id="telTitle">Select a station</span>
+      <span class="tel-body" id="telBody">Telemetry reads LACE_CONTRACTS only — no theater counts.</span>
     </div>
   </div>
 
@@ -390,6 +501,11 @@
   let selectedKey = "axle";
   let highlightKey = "axle";
 
+  const telKey = document.getElementById("telKey");
+  const telStamp = document.getElementById("telStamp");
+  const telTitle = document.getElementById("telTitle");
+  const telBody = document.getElementById("telBody");
+
   function show(key) {
     const c = CONTRACTS[key];
     if (!c) return;
@@ -397,6 +513,18 @@
     highlightKey = key;
     titleEl.textContent = c.title;
     bodyEl.textContent = c.body;
+    if (telKey) telKey.textContent = key;
+    if (telStamp) {
+      let st = c.stamp || c.group || "";
+      const m = String(c.body || "").match(/BOUNDARY STAMP:\s*(\[[^\]]+\][^\n]*)/);
+      if (m) st = m[1].trim();
+      telStamp.textContent = st ? String(st) : "";
+    }
+    if (telTitle) telTitle.textContent = c.title || "";
+    if (telBody) {
+      const raw = (c.body || "").replace(/\s+/g, " ").trim();
+      telBody.textContent = raw.length > 160 ? raw.slice(0, 157) + "…" : raw;
+    }
     document.querySelectorAll("button.chip").forEach(b => {
       b.classList.toggle("active", b.dataset.key === key);
     });
@@ -491,7 +619,8 @@
      which is why a core bleeds through its shell.
 
      Still Layer III. A cube is not a WORD row, a beam is not a POINTER, an orb
-     is not a star. docs/hologram/README.md. ——— */
+     is not a star. The luminous strand tying stations is Hands geometry (wire of
+     light) — two ends, not a CTC. docs/hologram/README.md. ——— */
 
   const FLOOR_Y = -1.30;
   const STATION = {
@@ -544,7 +673,8 @@ fn sdCapsule(p : vec3f, a : vec3f, b : vec3f, r : f32) -> f32 {
 }
 fn hiMul(id : f32) -> f32 { return select(1.0, 3.4, abs(u.hiId - id) < 0.5); }
 
-/* ---- station shells: glass, marched through ---- */
+/* ---- clustering-region shells (glass): participation bunched under one view;
+   not objects that own relationships; not Graphic D. Wire of light threads them. ---- */
 fn mapGlass(p : vec3f) -> vec2f {
   let a = sdRoundBox(p - vec3f(-1.70, 0.10, -0.50), vec3f(0.42), 0.05);
   let b = sdRoundBox(p - vec3f( 0.10, 0.86,  0.35), vec3f(0.46), 0.05);
@@ -588,18 +718,41 @@ fn emitField(p : vec3f) -> vec3f {
     e += glowLine(p, arcPt(SC, SA, -0.70, t0), arcPt(SC, SA, -0.70, t1), vec3f(0.40, 0.86, 1.00) * 0.55, 0.012, 7.0);
   }
 
-  /* spine through the stations = axle */
-  e += glowLine(p, vec3f(-2.6, -0.35, -0.85), SA, vec3f(1.00, 0.80, 0.30) * 0.42, 0.010, 4.0);
-  e += glowLine(p, SA, SB, vec3f(1.00, 0.80, 0.30) * 0.42, 0.010, 4.0);
-  e += glowLine(p, SB, SC, vec3f(1.00, 0.80, 0.30) * 0.42, 0.010, 4.0);
-  e += glowLine(p, SC, vec3f(2.6, -0.45, 0.30), vec3f(1.00, 0.80, 0.30) * 0.42, 0.010, 4.0);
-
-  /* Hands cord — gold flow across the field */
-  for (var i = 0; i < 9; i = i + 1) {
-    let t0 = f32(i) / 9.0; let t1 = f32(i + 1) / 9.0;
-    let p0 = vec3f(-3.1 + t0 * 6.2, FLOOR_Y_C + 0.34 + sin(t0 * 5.0) * 0.40, 1.15 + cos(t0 * 6.6) * 0.50);
-    let p1 = vec3f(-3.1 + t1 * 6.2, FLOOR_Y_C + 0.34 + sin(t1 * 5.0) * 0.40, 1.15 + cos(t1 * 6.6) * 0.50);
-    e += glowLine(p, p0, p1, vec3f(1.00, 0.88, 0.55) * 0.60, 0.014, 0.0);
+  /* WIRE OF LIGHT = Hands lace cord (Layer III only).
+     One luminous strand tying glass stations A/B/C through the axle spine.
+     Cyan trail core + golden wisps. Denser where participation winds near B.
+     Two ends exist (start → halt). Not a CTC. Not a second store. Not Graphic D. */
+  let startEnd = vec3f(-2.85, -0.42, -0.95);
+  let haltEnd  = vec3f( 2.85, -0.52,  0.35);
+  /* axle spine through stations — cyan primary */
+  e += glowLine(p, startEnd, SA, vec3f(0.35, 0.88, 1.00) * 0.95, 0.018, 4.0);
+  e += glowLine(p, SA, SB,    vec3f(0.35, 0.88, 1.00) * 1.15, 0.020, 4.0);
+  e += glowLine(p, SB, SC,    vec3f(0.35, 0.88, 1.00) * 1.15, 0.020, 4.0);
+  e += glowLine(p, SC, haltEnd, vec3f(0.35, 0.88, 1.00) * 0.95, 0.018, 4.0);
+  /* golden wisp sheath along the same strand (slightly thicker, softer) */
+  e += glowLine(p, startEnd, SA, vec3f(1.00, 0.78, 0.28) * 0.38, 0.032, 4.0);
+  e += glowLine(p, SA, SB,    vec3f(1.00, 0.78, 0.28) * 0.48, 0.036, 4.0);
+  e += glowLine(p, SB, SC,    vec3f(1.00, 0.78, 0.28) * 0.48, 0.036, 4.0);
+  e += glowLine(p, SC, haltEnd, vec3f(1.00, 0.78, 0.28) * 0.38, 0.032, 4.0);
+  /* end caps — visible start / halt (Rule Zero picture) */
+  e += glowPoint(p, startEnd, vec3f(1.00, 0.90, 0.55) * 0.85, 0.055, 4.0);
+  e += glowPoint(p, haltEnd,  vec3f(1.00, 0.90, 0.55) * 0.85, 0.055, 4.0);
+  /* denser winding near B (participation heat) — open helix, not closed */
+  for (var i = 0; i < 7; i = i + 1) {
+    let t0 = f32(i) / 7.0; let t1 = f32(i + 1) / 7.0;
+    let ang0 = t0 * 4.2; let ang1 = t1 * 4.2;
+    let r0 = 0.22 + 0.06 * sin(t0 * 6.28);
+    let r1 = 0.22 + 0.06 * sin(t1 * 6.28);
+    let w0 = SB + vec3f(cos(ang0) * r0, (t0 - 0.5) * 0.55, sin(ang0) * r0);
+    let w1 = SB + vec3f(cos(ang1) * r1, (t1 - 0.5) * 0.55, sin(ang1) * r1);
+    e += glowLine(p, w0, w1, vec3f(1.00, 0.82, 0.35) * 0.55, 0.010, 0.0);
+  }
+  /* soft floor trail echo under the cord (lookref golden trail) */
+  for (var i = 0; i < 6; i = i + 1) {
+    let t0 = f32(i) / 6.0; let t1 = f32(i + 1) / 6.0;
+    let p0 = mix(startEnd, haltEnd, t0) + vec3f(0.0, FLOOR_Y_C + 0.08 - mix(startEnd, haltEnd, t0).y, 0.0);
+    let p1 = mix(startEnd, haltEnd, t1) + vec3f(0.0, FLOOR_Y_C + 0.08 - mix(startEnd, haltEnd, t1).y, 0.0);
+    e += glowLine(p, p0, p1, vec3f(1.00, 0.72, 0.22) * 0.22, 0.020, 0.0);
   }
 
   /* cluster orbs */
@@ -637,8 +790,8 @@ fn floorColor(q : vec2f, foot : f32) -> vec3f {
   let g4 = abs(fract(q * 0.25) - vec2f(0.5));
   let major = 1.0 - smoothstep(0.0, w * 0.30, min(g4.x, g4.y));
   let fade = exp(-length(q) * 0.30);
-  return (vec3f(0.08, 0.40, 0.54) * minor * 0.55
-        + vec3f(0.20, 0.72, 0.92) * major * 1.15) * fade * res;
+  return (vec3f(0.10, 0.48, 0.62) * minor * 0.72
+        + vec3f(0.22, 0.82, 1.00) * major * 1.35) * fade * res;
 }
 
 /* the whole picture, as a function of NDC — so it can be run from a compute
