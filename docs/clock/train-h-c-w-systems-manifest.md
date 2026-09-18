@@ -55,6 +55,9 @@ Work on the lace (more cord, not less) is legal only when all hold:
 
 Water kernel stops grind. It does not append.
 
+Tick = one legal append on Graphic D. Water pallet : tape = 0 or 1 per attempt. Grind = 0.
+
+
 ---
 
 ## Mesh register (pass 1)
@@ -230,6 +233,27 @@ This file does not amend Core Pieces 1–15. Cluster labels stay Layer III. Trai
 | T1 | License walk — no uncited row |
 | T2 | Sealed board |
 | T3 | Anti-import vs Core |
+
+## Ratio register (pass 5)
+
+From philosophy-map “Ratios that must not slip.” 5:5 wrap (Gear C) and 5:1 wrap (ratio table) are the same recirculation: tooth 5 drives next tooth 1.
+
+| Mesh | Ratio / law | Slip | Train name |
+|---|---|---|---|
+| H.RIC : H.PFC | 1:1 both turning | PFC-only | locked train |
+| H.B : C | 1 impulse into the five-tooth wheel | Behavior as rewrite | πB as P4 |
+| C wrap | tooth 5 drives next tooth 1 | aftermath files impact | C5 files C4 |
+| W pallet : tape | 0 or 1 tick per attempt | grind counted as append | C3∧S1 counted as tick |
+| tape : hands | many ticks : one cluster view | cluster stored as edges on WORD | label as Graphic D |
+
+Ratios do not fill the sealed board.
+
+## Pass 5 clipboard deltas
+
+| Ticket | Action |
+|---|---|
+| T1 | Ratio register bound |
+| T2 | Tick = 0 or 1 per attempt; grind = 0 |
 
 ---
 
