@@ -43,7 +43,9 @@ Six pointers. Everything below is read off them.
 
 ## 1. What the rows close
 
-These hold in all six pointers. They are not inferences.
+Read off all six pointers. None is an inference. The first three hold of every
+pointer; the fourth is an exhaustive partition of the six, and its constraint
+rests on the single counterexample a refutation needs.
 
 - **Backward-only.** Every reference is to a strictly lower index than the
   pointer's own. 0002 refs {0000, 0001}; 0004 refs {0003, 0000}; 0006 refs
@@ -65,7 +67,8 @@ These hold in all six pointers. They are not inferences.
   forces homogeneous targets is refuted by a row the panel already contains. Any
   admitted reference must carry its kind independently of its siblings.
   *(Added on a later pass. The first version of this section listed 0009 among
-  the pointer-targeting rows without noticing it was the only mixed one.)*
+  the pointer-targeting rows without noticing it was the only mixed one. This is
+  a refutation, not a universal: one counterexample is what it needs.)*
 - **Type is closed at two values.** Only WORD and POINTER appear. No document,
   conversation, or provenance entry type exists anywhere in D.
 
@@ -192,7 +195,7 @@ file:**
 
 Graphic A's header reads:
 
-> One continuous strand. **Every word a centimetre of wire.** Every word's star
+> One continuous strand. **Every word a centimeter of wire.** Every word's star
 > a persistent 3D formation. Meaning does not exist. Only structure, sequence,
 > and participation.
 
@@ -202,7 +205,7 @@ repo's first line is a physical instruction — *put a shoe lace in your hands* 
 and this is the only place the source fixes the exchange rate between that object
 and the model.
 
-At one centimetre per word:
+At one centimeter per word:
 
 | Text | Lace |
 |---|---|
@@ -461,6 +464,6 @@ emission (`[X]` audit 5).
 | Star as repeated passage through one variable | D5, B3, A5 |
 | Dimension ladder 1D → 5D+ | C2, C3, C4, C6, C7 |
 | Four named relation families | C6 |
-| "Every word a centimetre of wire" | A header |
+| "Every word a centimeter of wire" | A header |
 | Sequence is the physical route | B5, A9 |
 | Projection is a shadow that cannot write back | B11, C11, D4 |
