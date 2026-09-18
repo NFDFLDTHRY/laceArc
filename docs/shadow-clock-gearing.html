@@ -987,7 +987,7 @@ fn fs_main(input : VSOut) -> @location(0) vec4f {
 `;
 
   /* Android-safe: A/B/C + wire + yarn only; no ambient cube field / filaments;
-     march ≤40; cheap fresnel most frames; still WebGPU SDF. */
+     sphere-trace (step 0.012–0.28); one glass hit then jump-out; still WebGPU SDF. */
   const SHADER_ANDROID_BODY = `
 fn mapGlass(p : vec3f) -> vec2f {
   let a = sdRoundBox(p - vec3f(-1.55, 0.12, -0.40), vec3f(0.40), 0.045);
@@ -1006,12 +1006,10 @@ fn emitField(p : vec3f) -> vec3f {
   let SC = vec3f( 1.60, 0.08, -0.25);
   let puls = 0.90 + 0.10 * sin(u.time * 1.5);
   let lace = vec3f(1.00, 0.40, 0.08);
-  e += glowPoint(p, SA, lace * 1.20 * puls, 0.10, 1.0);
-  e += glowPoint(p, SB, lace * 1.30 * puls, 0.11, 2.0);
-  e += glowPoint(p, SC, lace * 1.20 * puls, 0.10, 3.0);
-  e += glowPoint(p, SA, lace * 0.35 * puls, 0.20, 1.0);
-  e += glowPoint(p, SB, lace * 0.40 * puls, 0.22, 2.0);
-  e += glowPoint(p, SC, lace * 0.35 * puls, 0.20, 3.0);
+  /* tight cores only — no stacked wide soft shells (onion rings at low res) */
+  e += glowPoint(p, SA, lace * 1.15 * puls, 0.055, 1.0);
+  e += glowPoint(p, SB, lace * 1.25 * puls, 0.060, 2.0);
+  e += glowPoint(p, SC, lace * 1.15 * puls, 0.055, 3.0);
   /* one arc segment per mesh (no 3-loop filament / ambient cubes) */
   e += glowLine(p, arcPt(SA, SB, 0.28, 0.0), arcPt(SA, SB, 0.28, 1.0), vec3f(0.25, 0.82, 1.00) * 0.55, 0.014, 5.0);
   e += glowLine(p, arcPt(SB, SC, 0.28, 0.0), arcPt(SB, SC, 0.28, 1.0), vec3f(0.25, 0.82, 1.00) * 0.55, 0.014, 6.0);
@@ -1029,19 +1027,19 @@ fn emitField(p : vec3f) -> vec3f {
   let YA = vec3f(-2.35, 0.28, 0.85);
   let YB = vec3f( 0.95, 0.32, 1.15);
   let YC = vec3f( 2.20, 0.26, 0.55);
-  e += glowPoint(p, YA, vec3f(0.22, 1.00, 0.42) * 0.80, 0.13,  8.0);
-  e += glowPoint(p, YB, vec3f(0.22, 1.00, 0.42) * 0.85, 0.14,  9.0);
-  e += glowPoint(p, YC, vec3f(0.22, 1.00, 0.42) * 0.80, 0.13, 10.0);
+  e += glowPoint(p, YA, vec3f(0.22, 1.00, 0.42) * 0.70, 0.075,  8.0);
+  e += glowPoint(p, YB, vec3f(0.22, 1.00, 0.42) * 0.75, 0.080,  9.0);
+  e += glowPoint(p, YC, vec3f(0.22, 1.00, 0.42) * 0.70, 0.075, 10.0);
   e += glowLine(p, YA, SA, vec3f(0.25, 0.85, 1.00) * 0.30, 0.009, 0.0);
   e += glowLine(p, YB, SB, vec3f(0.25, 0.85, 1.00) * 0.30, 0.009, 0.0);
   e += glowLine(p, YC, SC, vec3f(0.25, 0.85, 1.00) * 0.30, 0.009, 0.0);
   for (var i = 0; i < 7; i = i + 1) {
     let x = -2.4 + f32(i) * 0.8;
-    e += glowPoint(p, vec3f(x, FLOOR_Y_C + 0.02, 1.75), vec3f(0.20, 0.65, 0.80) * 0.20, 0.05, 11.0 + f32(i));
+    e += glowPoint(p, vec3f(x, FLOOR_Y_C + 0.02, 1.75), vec3f(0.20, 0.65, 0.80) * 0.18, 0.035, 11.0 + f32(i));
   }
-  e += glowPoint(p, vec3f(-0.85, FLOOR_Y_C + 0.05, -1.35), vec3f(1.00, 0.72, 0.25) * 0.25, 0.05, 18.0);
-  e += glowPoint(p, vec3f( 0.90, FLOOR_Y_C + 0.05, -1.35), vec3f(1.00, 0.72, 0.25) * 0.25, 0.05, 19.0);
-  e += glowPoint(p, vec3f( 0.10, FLOOR_Y_C + 0.05, -2.05), vec3f(1.00, 0.72, 0.25) * 0.25, 0.05, 20.0);
+  e += glowPoint(p, vec3f(-0.85, FLOOR_Y_C + 0.05, -1.35), vec3f(1.00, 0.72, 0.25) * 0.22, 0.035, 18.0);
+  e += glowPoint(p, vec3f( 0.90, FLOOR_Y_C + 0.05, -1.35), vec3f(1.00, 0.72, 0.25) * 0.22, 0.035, 19.0);
+  e += glowPoint(p, vec3f( 0.10, FLOOR_Y_C + 0.05, -2.05), vec3f(1.00, 0.72, 0.25) * 0.22, 0.035, 20.0);
   return e;
 }
 
@@ -1074,34 +1072,33 @@ fn shade(ndc : vec2f) -> vec3f {
     let tf = (FLOOR_Y_C - ro.y) / rd.y;
     if (tf > 0.0) { tFloor = tf; }
   }
-  let maxSteps = i32(clamp(u.params.y, 12.0, 40.0));
-  var interiorHits = 0;
-  for (var i = 0; i < 40; i = i + 1) {
+  /* floor 36 — budget must not reintroduce smear via coarse shells */
+  let maxSteps = i32(clamp(u.params.y, 36.0, 48.0));
+  for (var i = 0; i < 48; i = i + 1) {
     if (i >= maxSteps) { break; }
     let p = ro + rd * t;
     let g = mapGlass(p);
-    let step = clamp(max(g.x, 0.035) * 0.90, 0.035, 0.85);
+    /* proper sphere-trace — never min 0.035 / max 0.85 */
+    let step = clamp(g.x * 0.85, 0.012, 0.28);
     let em = max(emitField(p) - vec3f(0.030), vec3f(0.0));
-    col += em * step * trans * 0.24;
+    /* cap step contribution so large leaps don't paint onion rings */
+    col += em * min(step, 0.08) * trans * 0.14;
     if (g.x < 0.010) {
-      interiorHits = interiorHits + 1;
-      /* cheap fresnel most hits; full normals every 3rd */
+      /* ONE fresnel + one interior glow per surface entry, then jump out (no multi-interior smear) */
       let tint = select(select(vec3f(1.00, 0.38, 0.10), vec3f(1.00, 0.45, 0.08), g.y < 2.5),
                         vec3f(1.00, 0.42, 0.10), g.y < 1.5);
-      if ((interiorHits % 3) == 1) {
-        let e = vec2f(0.004, 0.0);
-        let n = normalize(vec3f(
-          mapGlass(p + e.xyy).x - mapGlass(p - e.xyy).x,
-          mapGlass(p + e.yxy).x - mapGlass(p - e.yxy).x,
-          mapGlass(p + e.yyx).x - mapGlass(p - e.yyx).x));
-        let fres = pow(1.0 - abs(dot(n, rd)), 2.0) * 0.50;
-        col += (vec3f(0.45, 0.65, 0.85) * 0.16 + tint * 0.32) * fres * trans * hiMul(g.y);
-      } else {
-        col += tint * 0.10 * trans * hiMul(g.y);
-      }
-      trans *= 0.80;
-      t += 0.065;
-      if (interiorHits > 4) { t += 0.14; }
+      let e = vec2f(0.004, 0.0);
+      let n = normalize(vec3f(
+        mapGlass(p + e.xyy).x - mapGlass(p - e.xyy).x,
+        mapGlass(p + e.yxy).x - mapGlass(p - e.yxy).x,
+        mapGlass(p + e.yyx).x - mapGlass(p - e.yyx).x));
+      let fres = pow(1.0 - abs(dot(n, rd)), 2.0) * 0.50;
+      col += (vec3f(0.45, 0.65, 0.85) * 0.16 + tint * 0.32) * fres * trans * hiMul(g.y);
+      let pIn = ro + rd * (t + 0.04);
+      let emIn = max(emitField(pIn) - vec3f(0.030), vec3f(0.0));
+      col += emIn * 0.055 * trans * hiMul(g.y);
+      trans *= 0.72;
+      t += max(0.08, abs(g.x)) + 0.02;
       continue;
     }
     if (t >= tFloor) {
@@ -1227,10 +1224,10 @@ fn fs_main(input : VSOut) -> @location(0) vec4f {
       }
     });
 
-    /* adaptive backing: Android ≤0.5× DPR start; budget 0.35–0.65 */
-    let resScale = usedAndroidShader ? 0.50 : 1.0;
+    /* adaptive backing: Android ~0.58× DPR start; budget prefers resScale over steps */
+    let resScale = usedAndroidShader ? 0.58 : 1.0;
     const RES_MIN = usedAndroidShader ? 0.35 : 0.75;
-    const RES_MAX = usedAndroidShader ? 0.65 : Math.min(window.devicePixelRatio || 1, 1.25);
+    const RES_MAX = usedAndroidShader ? 0.70 : Math.min(window.devicePixelRatio || 1, 1.25);
     let maxSteps = usedAndroidShader ? 40 : 64;
     let emitQuality = usedAndroidShader ? 0.0 : 1.0; /* android shader ignores filaments anyway */
     let overBudgetStreak = 0;
@@ -1249,6 +1246,7 @@ fn fs_main(input : VSOut) -> @location(0) vec4f {
         canvas.width = w; canvas.height = h;
       }
       if (w !== lastCfgW || h !== lastCfgH) {
+        /* canvas.width/height already set above — u.res written from same w/h each frame */
         context.configure({ device, format, alphaMode: "opaque" });
         lastCfgW = w; lastCfgH = h;
       }
@@ -1270,10 +1268,11 @@ fn fs_main(input : VSOut) -> @location(0) vec4f {
       entries: [{ binding: 0, resource: { buffer: uniformBuffer } }],
     });
 
-    const TARGET = [0.05, -0.35, 0.00];
-    const DEFAULT_YAW = -0.72;
-    const DEFAULT_PITCH = 0.62;
-    let yaw = DEFAULT_YAW, pitch = DEFAULT_PITCH, radius = 7.2, userTouched = false;
+    /* elevated 3/4 looking down on A/B/C triad + wire (lookref-like; not floor) */
+    const TARGET = [0.03, 0.12, -0.12];
+    const DEFAULT_YAW = -0.65;
+    const DEFAULT_PITCH = 1.00;
+    let yaw = DEFAULT_YAW, pitch = DEFAULT_PITCH, radius = 7.8, userTouched = false;
 
     const SCENE_R = 3.35;
     const FOV_DESKTOP = 0.72;
@@ -1372,7 +1371,8 @@ fn fs_main(input : VSOut) -> @location(0) vec4f {
             if (overBudgetStreak >= 3) {
               resScale = Math.max(RES_MIN, resScale * 0.88);
               if (usedAndroidShader) {
-                maxSteps = Math.max(24, maxSteps - 4);
+                /* keep maxSteps ≥36 — dropping steps reintroduces glow shells */
+                maxSteps = Math.max(36, maxSteps);
               } else {
                 emitQuality = 0.0;
                 maxSteps = Math.max(32, maxSteps - 8);
