@@ -193,6 +193,14 @@ path_to_station() {
     [coord]="docs/coord/**"
   )
 
+  # Catch-all for the court root. Every rule above is exact or a directory
+  # prefix, so a NEW file at docs/ root matched nothing and failed closed --
+  # docs/systems-manifest-ascii.md and six pass plans arrived that way, and the
+  # agent writing them could not gate its own paths. A glob scores 3005 here
+  # against 10000 for an exact match and 5000+ for a directory, so this fires
+  # only where nothing else does. Derivative maps of the manifest are maps work.
+  RULES[maps]="${RULES[maps]} docs/*.md"
+
   # noglob: patterns contain * and ** which must not expand on disk
   set -f
   for station in "${DOC_STATIONS[@]}"; do

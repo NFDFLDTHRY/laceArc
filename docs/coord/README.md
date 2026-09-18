@@ -51,7 +51,7 @@ Station files: `docs/coord/stations/<name>.station` — see [stations/README.md]
 |---|---|
 | clipboards | `docs/clipboards/**` |
 | prompts | `docs/prompts/**` |
-| maps | `docs/reason-model-map.md` `docs/rust-nostd-*.md` `docs/atomic-primitives-map.md` `docs/clock/gearing-code-1to1.md` `docs/coherence-audit*.md` `docs/clock/system-mathematical-model.md` `docs/defrag-plan.md` `docs/plans/**` `docs/namespace-register.md` |
+| maps | `docs/reason-model-map.md` `docs/rust-nostd-*.md` `docs/atomic-primitives-map.md` `docs/clock/gearing-code-1to1.md` `docs/coherence-audit*.md` `docs/clock/system-mathematical-model.md` `docs/defrag-plan.md` `docs/plans/**` `docs/namespace-register.md` — and `docs/*.md` as a **catch-all**, so a new file at the court root never fails closed |
 | history | `docs/history-recovered*` `docs/history/**` |
 | hologram | `docs/hologram/**` `docs/clock/**` (1:1 + math stay maps: exact path wins) |
 | renderer | the three Layer III viewers: `docs/shadow-clock-gearing.html` (frozen; designated editor, per `gearing/CLAIMS.md`), `docs/hologram/nostd-pipeline.html`, `docs/clock/hcc-a-projection.html` |
