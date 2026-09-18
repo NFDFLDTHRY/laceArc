@@ -60,6 +60,22 @@ Rule after front matter: printed p ≈ PDF p+25 (matches prior clipboard; **CONF
 
 T5 five-stakes: **skip** — PAGE 2/5 source pins and morals agree with this PDF.
 
+## Pass 2 receipt
+
+| Field | Value |
+|---|---|
+| Status | EXECUTED |
+| When | 2026-09-18 ~16:40 PT |
+| Station | clipboards · agent `reference-Mapper` |
+| Plan | [rowlands-pass-2-plan.md](rowlands-pass-2-plan.md) |
+| Hands skim | shoe → graphics A–D → systems-manifest → law → reason-model-map §2 (R1–R6 read-only) → Pass 1 pages → five-stakes PAGE 2/5 (read-only; T5 skip) |
+| PDF | **PRESENT** — cite Pass 1: `refs/local/rowlands-zero-to-infinity.pdf` → `47022f28…5cc458.pdf`; **738** pp.; text layer; offset +25; gitignored; never staged |
+| Product | D1–D6 leftovers (+ D7 Shadow miniature); A–X morals untouched |
+| Amended | reason-model-map · law · graphics · five-stakes · src/ · systems-manifest | **No** |
+| Emission | still `[GAP]` |
+| T5 five-stakes | **skip** (default) |
+| D7 | **included** — ch.1 generate-from-empty paper algorithm (PDF 30–32); FORBID-as-mutate-WORD; SILENT for Lace append |
+
 
 ---
 
@@ -222,5 +238,102 @@ T5 five-stakes: **skip** — PAGE 2/5 source pins and morals agree with this PDF
 - PAGE F: Rowlands never writes the missing Core sentence. Do not finish it from a concatenation rule.
 - This file does not amend `docs/reason-model-map.md`.
 - **Pass 1 (PDF-sighted)** re-walked A–X against attachment `47022f28…5cc458` via `pdftotext`; offset +25 after front matter CONFIRMED; morals unchanged.
+- **Pass 2** landed D1–D6 leftovers (+ D7 Shadow miniature); A–X morals untouched; Φ still `[GAP]`.
+
+
+---
+
+## Pass 2 deltas
+
+Pass 1 filled PAGE A–X against the PDF. These deltas are leftovers only. They do not invent emission. A–X morals are unchanged.
+
+### D1 — What this clipboard is not
+
+- Not Core. Not a sixth graphic.
+- Not `docs/pointer-emission.md`.
+- Not a rewrite of `docs/reason-model-map.md` §2.
+- Not permission to say “rewrite” in standing orders as mutate-WORD.
+- Not an import of §20 DNA / UG into Piece 9.
+- Not a substitute for [clipboard-five-stakes.md](clipboard-five-stakes.md) PAGE 2/5 (admission boundary lives there too; this strip mirrors it).
+
+### D2 — ON THE SHOE / KEEP / FORBID / MAP ARROWS
+
+Mirrored from five-stakes PAGE 2/5. Book clipboard holds the page walk; this strip is the admission boundary in one place. Matches Pass 1 morals.
+
+```
+┌──────────────────────────────────────────────────────────────────────────┐
+│ ON THE SHOE                                                              │
+│   Empty cord. No extra rooms beside the eyelets.                         │
+│   “Rewrite” in this book is generate-from-empty, not mutate-WORD.        │
+│   Do not say the English word “rewrite” in standing orders.              │
+│                                                                          │
+│ KEEP                           FORBID                                    │
+│   empty start (R1)             rewrite-as-mutate-WORD (R3 name)          │
+│   no extra rooms (R2)          TOE / Dirac / vacuum tables (R4)          │
+│   dimension explained          DNA rewrite / UG tables (R5, R6)          │
+│     not stored                                                           │
+│                                                                          │
+│ MAP ARROWS                                                               │
+│   R1 empty   ──kin──►  Graphic A1 / Piece 1                              │
+│   R2 no rooms──kin──►  Graphic D “no N-D storage”                        │
+│   R3 rewrite ──[X]──►  Piece 2 / Piece 6  (name clash)                   │
+│   emission   ──[GAP]─► POINTER when / arity / adjacency unset            │
+│                                                                          │
+│ EMISSION settled? NO  [GAP]                                              │
+└──────────────────────────────────────────────────────────────────────────┘
+```
+
+### D3 — Failure modes (FM-R1…R9)
+
+| ID | Misread | Hands deadbolt | PDF / printed pin (Pass 1 reuse) |
+|---|---|---|---|
+| FM-R1 | empty start ⇒ second cosmos / second store | A1 empty start on **one** strand; R1 names, does not add WORD | Preface PDF 10; §1.1 PDF 27 / printed p.2 (cite A) |
+| FM-R2 | strings/membranes math ⇒ N-D Lace rooms | Graphic D one line; math representation ≠ store | Preface PDF 10 (refuse); ch.18 opens PDF 509 / printed p.484 (cite B) |
+| FM-R3 | English “rewrite” ⇒ mutate WORD @ i | Rule Zero; name clash only — generate ≠ overwrite | ch.1 PDF 30–32 / printed p.5–7 (cite C) |
+| FM-R4 | TOE / Dirac nilpotent tables ⇒ Core schema | off-shoe; no second store / no meaning table | §1.1 unified-theory aim PDF 27; Dirac sample PDF 100 / printed ~75 (cite D) |
+| FM-R5 | DNA create/conserve ⇒ WORD append types | Piece 9 is route through stars, not production rows | §20.16 PDF 615 / printed p.590 (cite E) |
+| FM-R6 | UG / Chomsky ⇒ stored lexicon / Piece 9 field | off-shoe; opened ≠ imported | §20.18 PDF 621 / printed p.596 (cite E) |
+| FM-R7 | concatenation / new alphabet ⇒ POINTER emission | generate, not point; Φ stays `[GAP]` | PDF 30–32 / p.5–7 (cite C, F false friend) |
+| FM-R8 | “one process” ⇒ scheduler for Φ | kin of one strand only; not a when-rule | PAGE B / Preface PDF 10 + ch.18 PDF 509 (cite B, F) |
+| FM-R9 | unified-theory aim ⇒ license to fill `[GAP]` | his book’s aim ≠ Graphic D; emission still silent | §1.1 PDF 27 / printed p.2 (cite D, X) |
+
+### D4 — Interface coherence
+
+Only R1/R2 outputs are kin to Hands inputs: empty totality matches Graphic A1 / Piece 1; “explain dimension, do not store rooms” matches Graphic D. R3 is a **name clash**, not an operator — its generated alphabet does not match Piece 4/5/6 write inputs. R4–R6 outputs (TOE/Dirac tables; DNA create/conserve; UG lexicon) do not match any Core write. Nothing in the book supplies POINTER when / arity / adjacency — `[GAP]` remains. This paragraph does not close Φ.
+
+### D5 — Source gate (cite Pass 1)
+
+PDF is **PRESENT** (do not narrate absent). Pass 1 receipt: `refs/local/rowlands-zero-to-infinity.pdf` → attachment `47022f28…5cc458.pdf`; **738** pages; text layer present (Type1 / `pdftotext`); printed p ≈ PDF p+25 after front matter; gitignored; **never `git add`**. Method this pass: reuse Pass 1 pins; `pdftotext -f 30 -l 32` only for optional D7 eye-walk. Five-stakes PAGE 2/5 left untouched (T5 skip).
+
+### D6 — Sealed (still)
+
+- Invent POINTER when / arity / adjacency
+- Soften R1/R2 KEEP or R3–R6 FORBID / clash
+- Amend reason-model-map, law, graphics, systems-manifest, or five-stakes from this clipboard
+- Add `src/` or edit Kauffman mechanism/ASCII shelves
+- Git-add the PDF
+- Pretend OCR / claim PDF absent when the file is present
+
+### D7 — Constructive miniature (Shadow only) — ch.1 generate-from-empty
+
+**Stamp:** FORBID-as-mutate-WORD · **SILENT for Lace append** · not a Core scheduler · not Φ. Paper algorithm only. Steps below are what PDF 30–32 / printed p.5–7 state; no invented operators.
+
+1. Make no prior numbering assumptions; take **zero totality** as the only possible state.
+2. Any assumed nonzero deviation (say R) generates an automatic mechanism for recovering zero (conjugate).
+3. Zero totality is **infinitely degenerate**: each state is a zero totality, but not a unique zero.
+4. Rewriting marks (book’s sense): within-system “nothing new” (symbolized →); and production of a **new** zero-totality outside when the finite alphabet is examined against itself.
+5. Call the totality so far an **alphabet** (convenience; no form assumed).
+6. Rule: (subalphabet)(alphabet) → (alphabet) — nothing new.
+7. Rule: (alphabet)(alphabet) yields a **new** alphabet — a finite alphabet cannot represent a unique zero.
+8. Start from nonzero R; add conjugate R* so the conjugated alphabet is (R, R*).
+9. Apply → to all concatenations with proper subalphabets; ordering is not required; only the alphabet returns.
+10. Because (R, R*) is not unique zero, concatenate with itself and introduce a further conjugated pair (A, A*) chosen so → still holds (terms cycle into each other).
+11. Next stage likewise forces concatenated terms (e.g. B, B*, AB, AB*) so subalphabet checks still yield only the alphabet.
+12. Duality at all times: terms are paired; absolute dual choices that would collapse distinct letters are refused because they fail to extend.
+
+**[OPEN] (book continues; not settled for Lace):** full cycle tables for every later extension stage; when the generative series stops; any coupling of this alphabet to physics tables — out of scope here. Do **not** finish those from Lace.
+
+**Lace refusal:** this generates alphabets on paper. It does **not** mutate WORD @ i, does **not** append to the strand, and does **not** schedule POINTER emission.
+
 
 Shoe in hands, or no.

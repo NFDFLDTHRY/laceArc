@@ -1,6 +1,6 @@
 # Rowlands pass 2 — leftovers / failure modes / coherence (PDF present)
 
-**Status:** PLANNED — not executed. Emission `[GAP]`.  
+**Status:** EXECUTED — 2026-09-18 ~16:40 PT. Emission still `[GAP]`.  
 **Station:** clipboards (HELD `reference-Mapper`)  
 **Base at plan:** refresh to current `origin/main` before execute  
 **Book:** Peter Rowlands, *Zero to Infinity: The Foundations of Physics* · K&E Vol. 41 · World Scientific 2007  
@@ -214,3 +214,17 @@ Empty start ≠ second cosmos.
 §20 opened ≠ §20 imported.  
 Failure modes are fences, not new Core ops.  
 Φ stays `[GAP]`.
+
+---
+
+## Execution receipt
+
+| Field | Value |
+|---|---|
+| Status | EXECUTED |
+| When | 2026-09-18 ~16:40 PT |
+| Agent | `reference-Mapper` |
+| Product | D1–D6 on book clipboard; D7 included (PDF 30–32 miniature); T5 skip |
+| Commit target | clipboard + this plan; then release clipboards |
+| Push | not requested |
+
