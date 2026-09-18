@@ -66,11 +66,14 @@ Versioned JSON (or MessagePack) document produced by the extractor and consumed 
 
 ```text
 HologramIr {
-  ir_version: "0.1.0"
+  ir_version: "0.2.0"       // 0.1.0 historical (doors-only); prefer 0.2.0
   generated_at: ISO-8601
   source: SourcePin
   mode: "fixture" | "workspace"
-  doors: [DoorNode]
+  doors: [DoorNode]         // packaging overlay (7 planned crates)
+  pieces: [ManifestPiece]   // P1–P15 Hands / systems-manifest (0.2.0+)
+  seams: [SeamBand]         // contract_I, contract_II, layer_III (0.2.0+)
+  binds: [PieceDoorBind]    // piece ↔ door; authority PROPOSAL|SOURCE|LAW (0.2.0+)
   items: [AstItem]          // optional fine grain once src exists
   edges: [IrEdge]
   transforms: [TransformStep]
@@ -104,6 +107,61 @@ DoorNode {
   path: string | null       // e.g. future strand/
 }
 ```
+
+### 3.3b ManifestPiece (Hands ground — ir_version ≥ 0.2.0)
+
+Puzzle pieces from [systems-manifest.md](../systems-manifest.md). **Hands graphics remain authority.** Packaging doors do not replace pieces.
+
+```text
+ManifestPiece {
+  id: "P1" .. "P15"
+  title: string
+  kind: string              // Primitive / Mechanism / Stage / Region / …
+  summary: string           // one line
+  graphic_cites: [string]   // A/B/C/D panel cites
+}
+```
+
+### 3.3c SeamBand (contract seams — ir_version ≥ 0.2.0)
+
+```text
+SeamBand {
+  id: string                // e.g. contract_I | contract_II | layer_III
+  label: string
+  contains_piece_ids: [string]  // subset of P1..P15
+}
+```
+
+- **contract_I** ≈ Lace Core (irreducible): strand/array/WORD/POINTER/star/route/touch/invariants/governing rule  
+- **contract_II** ≈ Arrival Surface: Piece 3 + dictionary/document feeds (P9–P10) — **not a door**  
+- **layer_III** ≈ Projection views: P12/P13 (read-only; must not write Core)
+
+### 3.3d PieceDoorBind (packaging overlay — ir_version ≥ 0.2.0)
+
+Maps Hands pieces → planned crate doors (crate-map Page C). **Default authority is PROPOSAL** — never invent LAW.
+
+```text
+PieceDoorBind {
+  piece_id: "P1" .. "P15"
+  door_id: DoorNode.id
+  role: string              // one-task contribution of this bind
+  authority: "PROPOSAL" | "SOURCE" | "LAW"
+}
+```
+
+Golden Page C mappings (all `PROPOSAL` in fixture):
+
+| door | pieces |
+|---|---|
+| strand | P1, P6 (also P8 retains order) |
+| word | P4 |
+| pointer | P5 |
+| route | P2, P8 |
+| view_star | P7, P15 |
+| view_proj | P13 |
+| core | P2 (composition facade) |
+
+Arrival/feeds (P3, P9, P10) note **Contract II — not a door**. P11/P14 have no exclusive door; P14 constrains every door; P12 is Layer III reading config.
 
 ### 3.4 AstItem (fine grain; optional until src/)
 
@@ -250,9 +308,10 @@ The existing `docs/shadow-clock-gearing.html` remains a **Shadow holder** visual
 
 Sealed plan-shaped IR (no AST parse):
 
-- [fixtures/hologram-ir-golden-v0.1.0.json](fixtures/hologram-ir-golden-v0.1.0.json)
+- [fixtures/hologram-ir-golden-v0.2.0.json](fixtures/hologram-ir-golden-v0.2.0.json) — **current** (pieces + seams + binds; viewer default)
+- [fixtures/hologram-ir-golden-v0.1.0.json](fixtures/hologram-ir-golden-v0.1.0.json) — historical doors-only envelope
 
-`mode` is `"fixture"`. `items` is empty. `emission_gate` is `"blocked"`. Viewer spikes may load this file; they must show FIXTURE_MODE / EMISSION_GATE_BLOCKED diags and must not imply proved births.
+`mode` is `"fixture"`. `items` is empty. `emission_gate` is `"blocked"`. Binds are `authority: "PROPOSAL"` only. Viewer spikes must show FIXTURE_MODE / EMISSION_GATE_BLOCKED / BINDS_PROPOSAL_ONLY diags and must not imply proved births or LAW packaging.
 
 ## 8. Acceptance for this planning doc
 
@@ -267,10 +326,14 @@ Not done for full pipeline: AST extractor against crates, adding `src/`. Validat
 
 ---
 
+## 8.5 Version 0.2.0
+
+Additive fields `pieces`, `seams`, `binds` on the same envelope. Prefer **0.2.0** for new work; keep 0.1.0 as historical. Validator accepts both. Viewer defaults to Manifest mode (Hands ground / strand spine); Packaging mode keeps the 7-door arc; Both overlays PROPOSAL binds as dashed links. Hands graphics remain authority; crate doors remain packaging overlay. Emission stays `[GAP]`. No `src/`.
+
 ## 9. Next implementation ticks (ordered; each needs its own claim)
 
 1. Human review of this IR.  
-2. Golden `HologramIr` fixture JSON (maps or hologram station). **Done** — `fixtures/hologram-ir-golden-v0.1.0.json`.  
-3. Host extractor / validator spike (std host tool) against fixture — still no Core `src/`. **Spiked** — `tools/hologram-ir-validate.py` checks golden IR (version, mode, emission_gate, 7 doors, edge kinds, emission_touch, diagnostics). Not a full AST extractor.  
-4. New Layer III viewer page bound to IR (hologram station) — mesh/graph, not SDF-as-pipeline. **Elaborated** — `docs/hologram/nostd-pipeline.html` (Canvas 2D; filters, inspection, transforms rail, timeline token, mobile). Binding: [hologram-ast-ir-viewer.md](hologram-ast-ir-viewer.md).  
+2. Golden `HologramIr` fixture JSON (maps or hologram station). **Done** — v0.1.0 historical; **v0.2.0 current** with pieces/seams/binds.  
+3. Host extractor / validator spike (std host tool) against fixture — still no Core `src/`. **Spiked** — `tools/hologram-ir-validate.py` checks golden IR (0.1.0 and 0.2.0: doors/edges/transforms; 0.2.0 also pieces×15, seams endpoints, binds endpoints + PROPOSAL honesty). Not a full AST extractor.  
+4. New Layer III viewer page bound to IR (hologram station) — mesh/graph, not SDF-as-pipeline. **Elaborated** — `docs/hologram/nostd-pipeline.html` (Canvas 2D; Manifest / Packaging / Both modes; strand spine; filters; inspection; transforms rail; timeline token; mobile). Binding: [hologram-ast-ir-viewer.md](hologram-ast-ir-viewer.md).  
 5. After emission acceptance: point extractor at real first-party crates as they birth.

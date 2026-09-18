@@ -1,0 +1,753 @@
+{
+  "ir_version": "0.2.0",
+  "generated_at": "2026-09-18T21:50:00Z",
+  "source": {
+    "git_rev": "fixture-hologram-ir-v0.2.0",
+    "paths": [],
+    "rustc_or_ra": "none — sealed fixture; no AST parse; Hands pieces + crate-map Page C overlay",
+    "emission_gate": "blocked"
+  },
+  "mode": "fixture",
+  "doors": [
+    {
+      "id": "strand",
+      "kind": "planned_door",
+      "birth_index": 1,
+      "no_std": true,
+      "status": "fixture",
+      "path": "strand/"
+    },
+    {
+      "id": "word",
+      "kind": "planned_door",
+      "birth_index": 2,
+      "no_std": true,
+      "status": "fixture",
+      "path": "word/"
+    },
+    {
+      "id": "pointer",
+      "kind": "planned_door",
+      "birth_index": 3,
+      "no_std": true,
+      "status": "fixture",
+      "path": "pointer/"
+    },
+    {
+      "id": "route",
+      "kind": "planned_door",
+      "birth_index": 4,
+      "no_std": true,
+      "status": "fixture",
+      "path": "route/"
+    },
+    {
+      "id": "view_star",
+      "kind": "planned_door",
+      "birth_index": 5,
+      "no_std": true,
+      "status": "fixture",
+      "path": "view_star/"
+    },
+    {
+      "id": "view_proj",
+      "kind": "planned_door",
+      "birth_index": 6,
+      "no_std": true,
+      "status": "fixture",
+      "path": "view_proj/"
+    },
+    {
+      "id": "core",
+      "kind": "planned_door",
+      "birth_index": 7,
+      "no_std": true,
+      "status": "fixture",
+      "path": "core/"
+    }
+  ],
+  "items": [],
+  "edges": [
+    {
+      "id": "birth-strand-word",
+      "kind": "birth_before",
+      "from": "strand",
+      "to": "word",
+      "evidence": "plan",
+      "note": "crate-map serial birth · badge b1→b2 on viewer"
+    },
+    {
+      "id": "birth-word-pointer",
+      "kind": "birth_before",
+      "from": "word",
+      "to": "pointer",
+      "evidence": "plan",
+      "note": "crate-map serial birth"
+    },
+    {
+      "id": "birth-pointer-route",
+      "kind": "birth_before",
+      "from": "pointer",
+      "to": "route",
+      "evidence": "plan",
+      "note": "crate-map serial birth"
+    },
+    {
+      "id": "birth-route-view_star",
+      "kind": "birth_before",
+      "from": "route",
+      "to": "view_star",
+      "evidence": "plan",
+      "note": "crate-map serial birth"
+    },
+    {
+      "id": "birth-view_star-view_proj",
+      "kind": "birth_before",
+      "from": "view_star",
+      "to": "view_proj",
+      "evidence": "plan",
+      "note": "crate-map serial birth"
+    },
+    {
+      "id": "birth-view_proj-core",
+      "kind": "birth_before",
+      "from": "view_proj",
+      "to": "core",
+      "evidence": "plan",
+      "note": "crate-map serial birth"
+    },
+    {
+      "id": "call-route-strand",
+      "kind": "call",
+      "from": "route",
+      "to": "strand",
+      "evidence": "plan",
+      "note": "crate-map Page D; one of nine planned calls; AST will confirm later"
+    },
+    {
+      "id": "call-route-word",
+      "kind": "call",
+      "from": "route",
+      "to": "word",
+      "evidence": "plan",
+      "note": "crate-map Page D"
+    },
+    {
+      "id": "call-route-pointer",
+      "kind": "call",
+      "from": "route",
+      "to": "pointer",
+      "evidence": "plan",
+      "note": "crate-map Page D"
+    },
+    {
+      "id": "call-view_star-strand",
+      "kind": "call",
+      "from": "view_star",
+      "to": "strand",
+      "evidence": "plan",
+      "note": "crate-map Page D"
+    },
+    {
+      "id": "call-view_proj-strand",
+      "kind": "call",
+      "from": "view_proj",
+      "to": "strand",
+      "evidence": "plan",
+      "note": "crate-map Page D"
+    },
+    {
+      "id": "call-view_proj-view_star",
+      "kind": "call",
+      "from": "view_proj",
+      "to": "view_star",
+      "evidence": "plan",
+      "note": "crate-map Page D"
+    },
+    {
+      "id": "call-core-route",
+      "kind": "call",
+      "from": "core",
+      "to": "route",
+      "evidence": "plan",
+      "note": "crate-map Page D"
+    },
+    {
+      "id": "call-core-view_star",
+      "kind": "call",
+      "from": "core",
+      "to": "view_star",
+      "evidence": "plan",
+      "note": "crate-map Page D"
+    },
+    {
+      "id": "call-core-view_proj",
+      "kind": "call",
+      "from": "core",
+      "to": "view_proj",
+      "evidence": "plan",
+      "note": "crate-map Page D"
+    },
+    {
+      "id": "df-route-strand",
+      "kind": "dataflow",
+      "from": "route",
+      "to": "strand",
+      "evidence": "plan",
+      "note": "pipeline hop: compose_section → retain_section (token door route→strand)"
+    },
+    {
+      "id": "df-word-route",
+      "kind": "dataflow",
+      "from": "word",
+      "to": "route",
+      "evidence": "plan",
+      "note": "pipeline hop: describe_word → compose_section (token animates door word→route)"
+    },
+    {
+      "id": "df-pointer-route",
+      "kind": "dataflow",
+      "from": "pointer",
+      "to": "route",
+      "evidence": "plan",
+      "note": "pointer constraints feed compose; no emit authority"
+    },
+    {
+      "id": "df-strand-view_star",
+      "kind": "dataflow",
+      "from": "strand",
+      "to": "view_star",
+      "evidence": "plan",
+      "note": "read-only star projection"
+    },
+    {
+      "id": "df-strand-view_proj",
+      "kind": "dataflow",
+      "from": "strand",
+      "to": "view_proj",
+      "evidence": "plan",
+      "note": "read-only shadow"
+    },
+    {
+      "id": "df-view_star-view_proj",
+      "kind": "dataflow",
+      "from": "view_star",
+      "to": "view_proj",
+      "evidence": "plan",
+      "note": "proj may use star read"
+    },
+    {
+      "id": "premise-pointer-emission",
+      "kind": "premise",
+      "from": "pointer",
+      "to": "route",
+      "evidence": "plan",
+      "note": "OPEN: emission acceptance required before POINTER append authority · dashed violet on top"
+    },
+    {
+      "id": "premise-impl-gate",
+      "kind": "premise",
+      "from": "strand",
+      "to": "core",
+      "evidence": "plan",
+      "note": "OPEN: human-accepted pointer-emission.md before any birth · dashed violet on top"
+    }
+  ],
+  "transforms": [
+    {
+      "id": "tx-describe-word",
+      "seq": 1,
+      "name": "describe_word",
+      "door_id": "word",
+      "inputs": [
+        {
+          "name": "occurrence",
+          "ty_hint": null,
+          "carrier": "word_value"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "word_layout",
+          "ty_hint": null,
+          "carrier": "word_value"
+        }
+      ],
+      "effect": "describe_only",
+      "emission_touch": false
+    },
+    {
+      "id": "tx-constrain-pointer",
+      "seq": 2,
+      "name": "constrain_pointer",
+      "door_id": "pointer",
+      "inputs": [
+        {
+          "name": "layout_rules",
+          "ty_hint": null,
+          "carrier": "pointer_layout"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "pointer_layout",
+          "ty_hint": null,
+          "carrier": "pointer_layout"
+        }
+      ],
+      "effect": "describe_only",
+      "emission_touch": false
+    },
+    {
+      "id": "tx-compose-route",
+      "seq": 3,
+      "name": "compose_section",
+      "door_id": "route",
+      "inputs": [
+        {
+          "name": "word_layout",
+          "ty_hint": null,
+          "carrier": "word_value"
+        },
+        {
+          "name": "pointer_layout",
+          "ty_hint": null,
+          "carrier": "pointer_layout"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "admitted_section",
+          "ty_hint": null,
+          "carrier": "strand_section"
+        }
+      ],
+      "effect": "compose",
+      "emission_touch": false
+    },
+    {
+      "id": "tx-retain-strand",
+      "seq": 4,
+      "name": "retain_section",
+      "door_id": "strand",
+      "inputs": [
+        {
+          "name": "admitted_section",
+          "ty_hint": null,
+          "carrier": "strand_section"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "retained_line",
+          "ty_hint": null,
+          "carrier": "strand_section"
+        }
+      ],
+      "effect": "append_strand",
+      "emission_touch": false
+    },
+    {
+      "id": "tx-read-star",
+      "seq": 5,
+      "name": "read_star",
+      "door_id": "view_star",
+      "inputs": [
+        {
+          "name": "retained_line",
+          "ty_hint": null,
+          "carrier": "strand_section"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "star_view",
+          "ty_hint": null,
+          "carrier": "view_label"
+        }
+      ],
+      "effect": "read_only",
+      "emission_touch": false
+    },
+    {
+      "id": "tx-read-proj",
+      "seq": 6,
+      "name": "read_proj",
+      "door_id": "view_proj",
+      "inputs": [
+        {
+          "name": "retained_line",
+          "ty_hint": null,
+          "carrier": "strand_section"
+        },
+        {
+          "name": "star_view",
+          "ty_hint": null,
+          "carrier": "view_label"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "shadow_view",
+          "ty_hint": null,
+          "carrier": "view_label"
+        }
+      ],
+      "effect": "read_only",
+      "emission_touch": false
+    },
+    {
+      "id": "tx-orchestrate-core",
+      "seq": 7,
+      "name": "orchestrate",
+      "door_id": "core",
+      "inputs": [
+        {
+          "name": "compose",
+          "ty_hint": null,
+          "carrier": "strand_section"
+        },
+        {
+          "name": "views",
+          "ty_hint": null,
+          "carrier": "view_label"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "composed_facade",
+          "ty_hint": null,
+          "carrier": "other"
+        }
+      ],
+      "effect": "compose",
+      "emission_touch": false
+    }
+  ],
+  "timeline": [
+    {
+      "t": "fixture-hologram-ir-v0.2.0",
+      "kind": "pass_receipt",
+      "summary": "Sealed golden IR v0.2.0 — doors + Hands pieces + PROPOSAL piece↔door binds + seams; no AST items",
+      "ir_diff": null
+    },
+    {
+      "t": "birth-gate-blocked",
+      "kind": "birth_gate",
+      "summary": "All seven births ineligible: pointer-emission.md not human-accepted",
+      "ir_diff": null
+    },
+    {
+      "t": "manifest-mode",
+      "kind": "pass_receipt",
+      "summary": "Viewer Manifest mode: strand spine + pieces; Packaging doors remain overlay. Binds authority=PROPOSAL only.",
+      "ir_diff": null
+    }
+  ],
+  "diagnostics": [
+    {
+      "severity": "info",
+      "code": "FIXTURE_MODE",
+      "message": "No Rust AST parsed. Doors/edges/transforms/pieces/binds/seams are plan-shaped golden data for viewer spike.",
+      "span": null
+    },
+    {
+      "severity": "warn",
+      "code": "EMISSION_GATE_BLOCKED",
+      "message": "Implementation gate closed. Do not treat fixture doors as proved births or permit src/.",
+      "span": null
+    },
+    {
+      "severity": "info",
+      "code": "NO_AST_ITEMS",
+      "message": "items[] empty until host extractor runs against fixture crates or real first-party sources.",
+      "span": null
+    },
+    {
+      "severity": "info",
+      "code": "BINDS_PROPOSAL_ONLY",
+      "message": "piece↔door binds are crate-map Page C PROPOSAL packaging. Hands graphics remain authority; binds are not LAW.",
+      "span": null
+    },
+    {
+      "severity": "info",
+      "code": "ARRIVAL_NOT_A_DOOR",
+      "message": "Pieces P3/P9/P10 sit on Contract II (Arrival Surface). No arrival/ door; feeds are use of Core, not view ownership.",
+      "span": null
+    }
+  ],
+  "pieces": [
+    {
+      "id": "P1",
+      "title": "Continuous Strand (Rule Zero)",
+      "kind": "Primitive / Invariant",
+      "summary": "One continuous strand that only grows; history is never deleted or rewritten.",
+      "graphic_cites": [
+        "C1",
+        "B1",
+        "A1",
+        "D footer"
+      ]
+    },
+    {
+      "id": "P2",
+      "title": "Governing Rule",
+      "kind": "Mechanism / Operator",
+      "summary": "Arrive → route through star → append → continue; one operator, not a second engine.",
+      "graphic_cites": [
+        "B12",
+        "C12",
+        "D footer",
+        "A13"
+      ]
+    },
+    {
+      "id": "P3",
+      "title": "Raw Input / Arrival Order",
+      "kind": "Stage / Interface",
+      "summary": "Feed raw input word-by-word in arrival order; no parsing, no discarding.",
+      "graphic_cites": [
+        "C10",
+        "B2",
+        "A2–A4",
+        "B6"
+      ]
+    },
+    {
+      "id": "P4",
+      "title": "WORD Entry",
+      "kind": "Primitive",
+      "summary": "A word occurrence as an append-only section {index, WORD, value}; no interning.",
+      "graphic_cites": [
+        "D1–D2",
+        "D5"
+      ]
+    },
+    {
+      "id": "P5",
+      "title": "POINTER Entry",
+      "kind": "Primitive",
+      "summary": "Later section participates in earlier sections on the same line; emission remains [GAP].",
+      "graphic_cites": [
+        "D1–D3",
+        "D6"
+      ]
+    },
+    {
+      "id": "P6",
+      "title": "Append-Only 1D Array",
+      "kind": "Region / Store",
+      "summary": "The sole store: one growing line; same object as the continuous strand.",
+      "graphic_cites": [
+        "Graphic D",
+        "D1",
+        "D key properties"
+      ]
+    },
+    {
+      "id": "P7",
+      "title": "Star (persistent word identity)",
+      "kind": "Mechanism / Formation",
+      "summary": "Accumulated 3D formation of all passes of a word; not a stored Star object.",
+      "graphic_cites": [
+        "A5",
+        "A12",
+        "B2–B3",
+        "D4–D5"
+      ]
+    },
+    {
+      "id": "P8",
+      "title": "Sequence as Physical Route",
+      "kind": "Mechanism",
+      "summary": "Exact word order is the exact physical route of wire through stars.",
+      "graphic_cites": [
+        "B5",
+        "A4",
+        "C2"
+      ]
+    },
+    {
+      "id": "P9",
+      "title": "Dictionary Wiring",
+      "kind": "Mechanism / Feed",
+      "summary": "Definition is a route through other stars via the Arrival Surface; not a lexicon store.",
+      "graphic_cites": [
+        "B4",
+        "C9",
+        "A6",
+        "A11"
+      ]
+    },
+    {
+      "id": "P10",
+      "title": "Document Feed",
+      "kind": "Stage / Feed",
+      "summary": "Longer text routed through stars in arrival order on the same Lace.",
+      "graphic_cites": [
+        "B6",
+        "A6–A9",
+        "C10"
+      ]
+    },
+    {
+      "id": "P11",
+      "title": "Touch / Higher-Dimensional Participation",
+      "kind": "Mechanism / Loop",
+      "summary": "New wire threads existing structure; touches remain and can be re-entered later.",
+      "graphic_cites": [
+        "B7–B8",
+        "C7",
+        "A10",
+        "D6"
+      ]
+    },
+    {
+      "id": "P12",
+      "title": "Dimension",
+      "kind": "Parameter / Reading",
+      "summary": "Independent participation axes over the same strand; not a new store or schema cut.",
+      "graphic_cites": [
+        "C5–C8"
+      ]
+    },
+    {
+      "id": "P13",
+      "title": "Projection vs Actual Lace",
+      "kind": "Interface / View",
+      "summary": "1D/2D/3D pictures are shadows; must not write back or become the store.",
+      "graphic_cites": [
+        "C2–C4",
+        "C11",
+        "B10–B11",
+        "D4"
+      ]
+    },
+    {
+      "id": "P14",
+      "title": "No Stored Meaning / No Collapse",
+      "kind": "Invariant set",
+      "summary": "Forbid meaning objects, second stores, and collapse of many passes into one edge.",
+      "graphic_cites": [
+        "A13",
+        "B10",
+        "C9",
+        "C12",
+        "D key properties"
+      ]
+    },
+    {
+      "id": "P15",
+      "title": "Star-Internal Traffic",
+      "kind": "Region (interior)",
+      "summary": "Interior of a star: many distinct passes; view_star reads it; no separate engine.",
+      "graphic_cites": [
+        "B9",
+        "A12"
+      ]
+    }
+  ],
+  "seams": [
+    {
+      "id": "contract_I",
+      "label": "Contract I — Lace Core (irreducible)",
+      "contains_piece_ids": [
+        "P1",
+        "P2",
+        "P4",
+        "P5",
+        "P6",
+        "P7",
+        "P8",
+        "P11",
+        "P14",
+        "P15"
+      ]
+    },
+    {
+      "id": "contract_II",
+      "label": "Contract II — Arrival Surface",
+      "contains_piece_ids": [
+        "P3",
+        "P9",
+        "P10"
+      ]
+    },
+    {
+      "id": "layer_III",
+      "label": "Layer III — Projection / Visualization",
+      "contains_piece_ids": [
+        "P12",
+        "P13"
+      ]
+    }
+  ],
+  "binds": [
+    {
+      "piece_id": "P1",
+      "door_id": "strand",
+      "role": "retain continuous history",
+      "authority": "PROPOSAL"
+    },
+    {
+      "piece_id": "P6",
+      "door_id": "strand",
+      "role": "append-only 1D store (same object as P1)",
+      "authority": "PROPOSAL"
+    },
+    {
+      "piece_id": "P4",
+      "door_id": "word",
+      "role": "WORD occurrence value/layout",
+      "authority": "PROPOSAL"
+    },
+    {
+      "piece_id": "P5",
+      "door_id": "pointer",
+      "role": "POINTER layout constraints (no emit authority)",
+      "authority": "PROPOSAL"
+    },
+    {
+      "piece_id": "P2",
+      "door_id": "route",
+      "role": "governing continuation through one strand",
+      "authority": "PROPOSAL"
+    },
+    {
+      "piece_id": "P2",
+      "door_id": "core",
+      "role": "thin composition facade (not a second store)",
+      "authority": "PROPOSAL"
+    },
+    {
+      "piece_id": "P8",
+      "door_id": "route",
+      "role": "sequence as physical route",
+      "authority": "PROPOSAL"
+    },
+    {
+      "piece_id": "P8",
+      "door_id": "strand",
+      "role": "retain exact supplied order on the line",
+      "authority": "PROPOSAL"
+    },
+    {
+      "piece_id": "P7",
+      "door_id": "view_star",
+      "role": "read star formation (Core forms; view reads)",
+      "authority": "PROPOSAL"
+    },
+    {
+      "piece_id": "P15",
+      "door_id": "view_star",
+      "role": "read star-internal traffic",
+      "authority": "PROPOSAL"
+    },
+    {
+      "piece_id": "P13",
+      "door_id": "view_proj",
+      "role": "read-only projection vs actual Lace",
+      "authority": "PROPOSAL"
+    }
+  ]
+}

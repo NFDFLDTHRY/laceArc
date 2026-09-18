@@ -298,6 +298,34 @@
   }
   footer.explicit strong { color: var(--warn); font-weight: 600; }
   footer.explicit code { color: var(--door); font-size: 0.85em; }
+
+  .mode-bar {
+    display: flex; flex-wrap: wrap; gap: 0.45rem 0.85rem;
+    padding: 0.45rem 1.25rem;
+    border-bottom: 1px solid var(--hud-line);
+    font-size: 0.72rem; color: var(--muted);
+    align-items: center;
+  }
+  .mode-toggle {
+    display: inline-flex; gap: 0.2rem;
+    border: 1px solid var(--hud-line);
+    border-radius: 2px; padding: 0.12rem;
+    background: rgba(8,12,18,0.7);
+  }
+  .mode-toggle button {
+    font: inherit; font-size: 0.72rem;
+    text-transform: uppercase; letter-spacing: 0.08em;
+    color: var(--muted); background: transparent;
+    border: 1px solid transparent; border-radius: 2px;
+    padding: 0.28rem 0.55rem; cursor: pointer;
+  }
+  .mode-toggle button.active {
+    color: var(--cyan); border-color: var(--cyan);
+    background: rgba(62,200,255,0.12);
+  }
+  .legend.dimmed { opacity: 0.42; }
+  .edge-list li.bind { border-color: #c4a35a; }
+
   @media (max-width: 900px) {
     .layout { grid-template-columns: 1fr; min-height: 0; }
     .stage { border-right: none; border-bottom: 1px solid var(--hud-line); min-height: 48vh; }
@@ -313,10 +341,10 @@
 <header>
   <div>
     <h1>LaceArc / nostd pipeline hologram</h1>
-    <p class="sub">Layer III · AST→IR projection of planned nostd doors, typed edges, and transforms across time. Fixture-honest until src/ + emission acceptance.</p>
+    <p class="sub">Layer III · Manifest (Hands pieces + strand spine) · Packaging (7 doors) · Both (PROPOSAL binds). Fixture-honest until src/ + emission acceptance.</p>
     <p class="paths">
       schema: <code>docs/plans/hologram-ast-ir.md</code><br/>
-      golden: <code>docs/plans/fixtures/hologram-ir-golden-v0.1.0.json</code><br/>
+      golden: <code>docs/plans/fixtures/hologram-ir-golden-v0.2.0.json</code><br/>
       validate: <code>docs/plans/tools/hologram-ir-validate.py</code><br/>
       binding: <code>docs/plans/hologram-ast-ir-viewer.md</code>
     </p>
@@ -325,12 +353,22 @@
     <span class="badge">Layer III · read-only</span>
     <span class="chip neutral" id="chip-mode">mode: —</span>
     <span class="chip neutral" id="chip-gate">emission_gate: —</span>
+    <span class="chip neutral" id="chip-view">view: Manifest</span>
   </div>
 </header>
 
 <div id="diag-banner" aria-live="polite"></div>
 
-<div class="legend" role="group" aria-label="Edge kind filters">
+
+<div class="mode-bar">
+  <span class="lbl">View:</span>
+  <div class="mode-toggle" role="group" aria-label="View mode">
+    <button type="button" data-view="manifest" class="active" aria-pressed="true">Manifest</button>
+    <button type="button" data-view="packaging" aria-pressed="false">Packaging</button>
+    <button type="button" data-view="both" aria-pressed="false">Both</button>
+  </div>
+</div>
+<div class="legend" id="edge-legend" role="group" aria-label="Edge kind filters">
   <span class="lbl">Edges (toggle):</span>
   <button type="button" class="filter call" data-kind="call" aria-pressed="true">call</button>
   <button type="button" class="filter birth_before" data-kind="birth_before" aria-pressed="true">birth_before</button>
@@ -344,7 +382,7 @@
   </div>
   <aside class="side" id="side">
     <h2>Inspection</h2>
-    <p class="empty" id="side-empty">Tap a door on the graph or a transform on the rail. Selection shows ports, incident edges by kind, and related transforms.</p>
+    <p class="empty" id="side-empty">Default Manifest: Hands pieces on strand spine. Packaging: 7 doors. Both: dashed PROPOSAL binds. Tap piece / door / transform.</p>
     <div id="side-body" hidden></div>
   </aside>
 </div>
@@ -369,7 +407,7 @@
 <footer class="explicit">
   <strong>Not</strong> <code>shadow-clock-gearing.html</code>.
   <strong>Not</strong> the {A,B,C} holder machine.
-  This page projects HologramIr only — planned nostd doors, typed edges, transforms, timeline.
+  Hands graphics remain authority; crate doors are packaging overlay. Binds are PROPOSAL — not LAW.
   AST <code>items[]</code> stay empty until an extractor runs.
   Emission remains <code>[GAP]</code>; fixture doors are not proved births; no <code>src/</code>.
 </footer>
@@ -378,7 +416,7 @@
 (function () {
   "use strict";
 
-  var IR_URL = "../plans/fixtures/hologram-ir-golden-v0.1.0.json";
+  var IR_URL = "../plans/fixtures/hologram-ir-golden-v0.2.0.json";
   var EDGE_KINDS = ["dataflow", "birth_before", "call", "premise"]; // paint order bottom→top
   var EDGE_COLORS = {
     call: "#3ec8ff",
@@ -406,6 +444,11 @@
   var dpr = Math.max(1, window.devicePixelRatio || 1);
   var edgeOn = { call: true, birth_before: true, premise: true, dataflow: true };
   var diagsDismissed = false;
+  var viewMode = "manifest";
+  var piecePos = {};
+  var PIECE_FLOW = ["P3","P4","P7","P5","P2","P8","P1","P6","P11","P9","P10","P15","P12"];
+  var PIECE_ANNOTATION = { P13: true, P14: true };
+  var GOVERN_PATH = ["P3","P7","P6","P2"];
 
   function setStatus(msg) {
     document.getElementById("status-line").textContent = msg;
@@ -418,6 +461,10 @@
   function updateChips() {
     var modeEl = document.getElementById("chip-mode");
     var gateEl = document.getElementById("chip-gate");
+    var viewEl = document.getElementById("chip-view");
+    if (viewEl) {
+      viewEl.textContent = "view: " + viewMode.charAt(0).toUpperCase() + viewMode.slice(1);
+    }
     if (!ir) {
       modeEl.textContent = "mode: —";
       modeEl.className = "chip neutral";
@@ -469,19 +516,66 @@
     }
   }
 
-  function layoutDoors(doors, w, h) {
+  function layoutDoors(doors, w, h, secondary) {
     positions = {};
     var n = doors.length;
     var padX = Math.max(56, w * 0.07);
     var usableW = w - padX * 2;
-    var midY = Math.min(h * 0.40, h - 130);
-    var amp = Math.min(h * 0.18, 78);
+    var midY = secondary ? Math.min(h * 0.72, h - 70) : Math.min(h * 0.40, h - 130);
+    var amp = secondary ? Math.min(h * 0.08, 36) : Math.min(h * 0.18, 78);
+    var rad = secondary ? 18 : 26;
     doors.forEach(function (d, i) {
       var t = n === 1 ? 0.5 : i / (n - 1);
       var x = padX + t * usableW;
       var y = midY + Math.sin(t * Math.PI) * amp;
-      positions[d.id] = { x: x, y: y, r: 26, door: d };
+      positions[d.id] = { x: x, y: y, r: rad, door: d };
     });
+  }
+
+  function layoutPieces(pieces, w, h) {
+    piecePos = {};
+    if (!pieces || !pieces.length) return;
+    var byId = {};
+    pieces.forEach(function (p) { byId[p.id] = p; });
+    var padX = Math.max(48, w * 0.06);
+    var usableW = w - padX * 2;
+    var spineY = Math.min(h * 0.42, h - 150);
+    var flow = PIECE_FLOW.filter(function (id) { return !!byId[id]; });
+    pieces.forEach(function (p) {
+      if (flow.indexOf(p.id) < 0 && !PIECE_ANNOTATION[p.id]) flow.push(p.id);
+    });
+    flow.forEach(function (id, i) {
+      var t = flow.length === 1 ? 0.5 : i / (flow.length - 1);
+      var x = padX + t * usableW;
+      var bob = ((i % 3) - 1) * 22;
+      piecePos[id] = { x: x, y: spineY + bob, r: 20, piece: byId[id] };
+    });
+    if (byId.P13) {
+      piecePos.P13 = {
+        x: padX + usableW * 0.82,
+        y: spineY - Math.min(h * 0.22, 95),
+        r: 16, piece: byId.P13, annotation: true
+      };
+    }
+    if (byId.P14) {
+      piecePos.P14 = {
+        x: padX + usableW * 0.55,
+        y: spineY + Math.min(h * 0.24, 105),
+        r: 16, piece: byId.P14, annotation: true
+      };
+    }
+  }
+
+  function spinePoints(w, h) {
+    var padX = Math.max(48, w * 0.06);
+    var usableW = w - padX * 2;
+    var spineY = Math.min(h * 0.42, h - 150);
+    var pts = [];
+    for (var i = 0; i <= 32; i++) {
+      var t = i / 32;
+      pts.push({ x: padX + t * usableW, y: spineY + Math.sin(t * Math.PI) * 10 });
+    }
+    return pts;
   }
 
   function resize() {
@@ -493,7 +587,18 @@
     canvas.style.width = w + "px";
     canvas.style.height = h + "px";
     ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
-    if (ir && ir.doors) layoutDoors(ir.doors, w, h);
+    piecePos = {};
+    positions = {};
+    if (ir) {
+      if (viewMode === "packaging") {
+        layoutDoors(ir.doors || [], w, h, false);
+      } else if (viewMode === "manifest") {
+        layoutPieces(ir.pieces || [], w, h);
+      } else {
+        layoutPieces(ir.pieces || [], w, h);
+        layoutDoors(ir.doors || [], w, h, true);
+      }
+    }
     draw();
   }
 
@@ -605,6 +710,114 @@
     ctx.fillText("b" + (d.birth_index || "?"), p.x, p.y + p.r + 14);
   }
 
+  function drawStrandSpine(w, h) {
+    var pts = spinePoints(w, h);
+    ctx.save();
+    ctx.strokeStyle = "rgba(126,200,255,0.55)";
+    ctx.lineWidth = 3.2;
+    ctx.shadowColor = "rgba(62,200,255,0.35)";
+    ctx.shadowBlur = 12;
+    ctx.beginPath();
+    pts.forEach(function (p, i) {
+      if (i === 0) ctx.moveTo(p.x, p.y); else ctx.lineTo(p.x, p.y);
+    });
+    ctx.stroke();
+    ctx.shadowBlur = 0;
+    ctx.fillStyle = "rgba(126,200,255,0.8)";
+    ctx.font = "600 10px system-ui, sans-serif";
+    ctx.textAlign = "left";
+    ctx.fillText("strand spine · P1 / P6", pts[0].x, pts[0].y - 14);
+    ctx.restore();
+  }
+
+  function drawSeamBands(w, h) {
+    if (!ir || !(ir.seams || []).length) return;
+    var padX = Math.max(48, w * 0.06);
+    var usableW = w - padX * 2;
+    var colors = {
+      contract_I: "rgba(62,200,255,0.07)",
+      contract_II: "rgba(224,180,74,0.09)",
+      layer_III: "rgba(155,123,255,0.09)"
+    };
+    var labels = {};
+    (ir.seams || []).forEach(function (s) { labels[s.id] = s.label; });
+    [
+      { id: "layer_III", y0: h * 0.06, y1: h * 0.16 },
+      { id: "contract_I", y0: h * 0.18, y1: h * 0.55 },
+      { id: "contract_II", y0: h * 0.55, y1: h * 0.70 }
+    ].forEach(function (b) {
+      ctx.fillStyle = colors[b.id] || "rgba(255,255,255,0.04)";
+      ctx.fillRect(padX, b.y0, usableW, b.y1 - b.y0);
+      ctx.fillStyle = "rgba(122,138,156,0.9)";
+      ctx.font = "9px system-ui, sans-serif";
+      ctx.textAlign = "left";
+      ctx.fillText(labels[b.id] || b.id, padX + 6, b.y0 + 12);
+    });
+  }
+
+  function drawPiece(node) {
+    var piece = node.piece;
+    var sel = selected && selected.type === "piece" && selected.id === piece.id;
+    ctx.save();
+    if (node.annotation) {
+      var rw = 38, rh = 22;
+      ctx.fillStyle = sel ? "rgba(155,123,255,0.28)" : "rgba(12,16,24,0.9)";
+      ctx.fillRect(node.x - rw / 2, node.y - rh / 2, rw, rh);
+      ctx.setLineDash([4, 3]);
+      ctx.strokeStyle = sel ? "#9b7bff" : "rgba(155,123,255,0.75)";
+      ctx.lineWidth = sel ? 2.2 : 1.3;
+      ctx.strokeRect(node.x - rw / 2, node.y - rh / 2, rw, rh);
+      ctx.setLineDash([]);
+    } else {
+      ctx.beginPath();
+      ctx.arc(node.x, node.y, node.r, 0, Math.PI * 2);
+      ctx.fillStyle = sel ? "rgba(240,230,208,0.28)" : "rgba(12,16,24,0.94)";
+      ctx.fill();
+      ctx.strokeStyle = sel ? "#f0e6d0" : "#c8b896";
+      ctx.lineWidth = sel ? 2.6 : 1.5;
+      ctx.stroke();
+    }
+    ctx.fillStyle = "#f0e6d0";
+    ctx.font = "600 11px system-ui, sans-serif";
+    ctx.textAlign = "center";
+    ctx.textBaseline = "middle";
+    ctx.fillText(piece.id, node.x, node.y);
+    ctx.fillStyle = "#7a8a9c";
+    ctx.font = "9px system-ui, sans-serif";
+    var tip = (piece.title || "").split(" ").slice(0, 2).join(" ");
+    ctx.fillText(tip, node.x, node.y + (node.annotation ? 20 : node.r + 12));
+    ctx.restore();
+  }
+
+  function drawBinds() {
+    (ir.binds || []).forEach(function (b) {
+      var a = piecePos[b.piece_id];
+      var d = positions[b.door_id];
+      if (!a || !d) return;
+      var sel = selected && (
+        (selected.type === "piece" && selected.id === b.piece_id) ||
+        (selected.type === "door" && selected.id === b.door_id)
+      );
+      ctx.save();
+      ctx.globalAlpha = selected && !sel ? 0.18 : 0.85;
+      ctx.strokeStyle = "#c4a35a";
+      ctx.lineWidth = sel ? 2.2 : 1.3;
+      ctx.setLineDash([5, 5]);
+      ctx.beginPath();
+      ctx.moveTo(a.x, a.y);
+      ctx.lineTo(d.x, d.y);
+      ctx.stroke();
+      ctx.setLineDash([]);
+      if (sel) {
+        ctx.fillStyle = "#c4a35a";
+        ctx.font = "8px system-ui, sans-serif";
+        ctx.textAlign = "center";
+        ctx.fillText("PROPOSAL", (a.x + d.x) / 2, (a.y + d.y) / 2 - 4);
+      }
+      ctx.restore();
+    });
+  }
+
   function draw() {
     var w = canvas.width / dpr;
     var h = canvas.height / dpr;
@@ -616,17 +829,31 @@
       return;
     }
 
-    EDGE_KINDS.forEach(function (kind) {
-      if (!edgeOn[kind]) return;
-      (ir.edges || []).forEach(function (e) {
-        if (e.kind !== kind) return;
-        var a = positions[e.from], b = positions[e.to];
-        if (!a || !b) return;
-        drawEdge(e, a, b);
-      });
-    });
+    if (viewMode === "manifest" || viewMode === "both") {
+      drawSeamBands(w, h);
+      drawStrandSpine(w, h);
+    }
 
-    (ir.doors || []).forEach(drawDoor);
+    if (viewMode === "packaging" || viewMode === "both") {
+      EDGE_KINDS.forEach(function (kind) {
+        if (!edgeOn[kind]) return;
+        (ir.edges || []).forEach(function (e) {
+          if (e.kind !== kind) return;
+          var a = positions[e.from], b = positions[e.to];
+          if (!a || !b) return;
+          drawEdge(e, a, b);
+        });
+      });
+    }
+
+    if (viewMode === "both") drawBinds();
+
+    if (viewMode === "packaging" || viewMode === "both") {
+      (ir.doors || []).forEach(drawDoor);
+    }
+    if (viewMode === "manifest" || viewMode === "both") {
+      Object.keys(piecePos).forEach(function (id) { drawPiece(piecePos[id]); });
+    }
 
     if (animPath && animPath.length >= 2) {
       var i0 = Math.floor(animT);
@@ -649,12 +876,23 @@
   }
 
   function hitTest(mx, my) {
-    var doors = ir && ir.doors ? ir.doors : [];
-    for (var i = doors.length - 1; i >= 0; i--) {
-      var p = positions[doors[i].id];
-      if (!p) continue;
-      var dx = mx - p.x, dy = my - p.y;
-      if (dx * dx + dy * dy <= (p.r + 8) * (p.r + 8)) return p;
+    if (viewMode === "manifest" || viewMode === "both") {
+      var ids = Object.keys(piecePos);
+      for (var i = ids.length - 1; i >= 0; i--) {
+        var pn = piecePos[ids[i]];
+        var dx = mx - pn.x, dy = my - pn.y;
+        var rr = pn.annotation ? 22 : pn.r + 8;
+        if (dx * dx + dy * dy <= rr * rr) return { kind: "piece", node: pn };
+      }
+    }
+    if (viewMode === "packaging" || viewMode === "both") {
+      var doors = ir && ir.doors ? ir.doors : [];
+      for (var j = doors.length - 1; j >= 0; j--) {
+        var p = positions[doors[j].id];
+        if (!p) continue;
+        var ddx = mx - p.x, ddy = my - p.y;
+        if (ddx * ddx + ddy * ddy <= (p.r + 8) * (p.r + 8)) return { kind: "door", node: p };
+      }
     }
     return null;
   }
@@ -713,10 +951,48 @@
     empty.hidden = true;
     body.hidden = false;
     var html = "";
-    if (sel.type === "door") {
+    if (sel.type === "piece") {
+      var piece = sel.piece;
+      html += "<h2>Piece (Hands)</h2><dl>";
+      html += "<dt>id</dt><dd>" + esc(piece.id) + "</dd>";
+      html += "<dt>title</dt><dd>" + esc(piece.title || "") + "</dd>";
+      html += "<dt>kind</dt><dd>" + esc(piece.kind || "") + "</dd>";
+      html += "<dt>summary</dt><dd>" + esc(piece.summary || "") + "</dd>";
+      html += "<dt>graphic_cites</dt><dd>" + esc((piece.graphic_cites || []).join("; ")) + "</dd>";
+      html += "</dl>";
+      var binds = (ir.binds || []).filter(function (b) { return b.piece_id === piece.id; });
+      html += "<h3>Door binds (PROPOSAL)</h3>";
+      if (!binds.length) {
+        html += "<p class='empty'>None (arrival/feeds may be doorless)</p>";
+      } else {
+        html += "<ul class='edge-list'>";
+        binds.forEach(function (b) {
+          html += "<li class='bind'><div class='kind'>bind · " + esc(b.authority) + "</div>";
+          html += "<div>" + esc(b.piece_id) + " ↔ " + esc(b.door_id) + "</div>";
+          if (b.role) html += "<div class='note'>" + esc(b.role) + "</div>";
+          html += "</li>";
+        });
+        html += "</ul>";
+      }
+      var seams = (ir.seams || []).filter(function (s) {
+        return (s.contains_piece_ids || []).indexOf(piece.id) >= 0;
+      });
+      html += "<h3>Seams</h3>";
+      if (!seams.length) html += "<p class='empty'>None</p>";
+      else {
+        html += "<ul class='edge-list'>";
+        seams.forEach(function (s) {
+          html += "<li><div class='kind'>" + esc(s.id) + "</div><div>" + esc(s.label) + "</div></li>";
+        });
+        html += "</ul>";
+      }
+      if (piece.id === "P3" || piece.id === "P9" || piece.id === "P10") {
+        html += "<p class='empty'>Contract II — Arrival Surface. Not a packaging door.</p>";
+      }
+    } else if (sel.type === "door") {
       var d = sel.door;
       var lists = edgesForDoor(d.id);
-      html += "<h2>Door</h2><dl>";
+      html += "<h2>Door (packaging)</h2><dl>";
       html += "<dt>id</dt><dd>" + esc(d.id) + "</dd>";
       html += "<dt>kind</dt><dd>" + esc(d.kind) + "</dd>";
       html += "<dt>birth_index</dt><dd>" + esc(String(d.birth_index)) + "</dd>";
@@ -726,6 +1002,19 @@
       html += "</dl>";
       html += renderEdgeList("Outgoing", lists.outgoing);
       html += renderEdgeList("Incoming", lists.incoming);
+      var doorBinds = (ir.binds || []).filter(function (b) { return b.door_id === d.id; });
+      html += "<h3>Piece binds (PROPOSAL)</h3>";
+      if (!doorBinds.length) html += "<p class='empty'>None</p>";
+      else {
+        html += "<ul class='edge-list'>";
+        doorBinds.forEach(function (b) {
+          html += "<li class='bind'><div class='kind'>bind · " + esc(b.authority) + "</div>";
+          html += "<div>" + esc(b.piece_id) + " ↔ " + esc(b.door_id) + "</div>";
+          if (b.role) html += "<div class='note'>" + esc(b.role) + "</div>";
+          html += "</li>";
+        });
+        html += "</ul>";
+      }
       var txs = relatedTransforms(d.id);
       html += "<h3>Related transforms</h3>";
       if (!txs.length) {
@@ -808,31 +1097,22 @@
 
   function buildDataflowPath() {
     if (!ir) return null;
+    if (viewMode === "manifest" || viewMode === "both") {
+      var gpts = [];
+      GOVERN_PATH.forEach(function (id) {
+        var p = piecePos[id];
+        if (p) gpts.push({ x: p.x, y: p.y, piece_id: id });
+      });
+      if (gpts.length >= 2) return gpts;
+    }
     var txs = (ir.transforms || []).slice().sort(function (a, b) {
       return (a.seq || 0) - (b.seq || 0);
     });
     var pts = [];
-    var lastDoor = null;
     txs.forEach(function (tx) {
       var door = positions[tx.door_id];
-      if (!door) return;
-      if (lastDoor && lastDoor !== tx.door_id) {
-        // hop along dataflow chord between door centers
-        pts.push({ x: door.x, y: door.y, door_id: tx.door_id, tx: tx.id });
-      } else {
-        pts.push({ x: door.x, y: door.y, door_id: tx.door_id, tx: tx.id });
-      }
-      lastDoor = tx.door_id;
+      if (door) pts.push({ x: door.x, y: door.y, door_id: tx.door_id, tx: tx.id });
     });
-    // Prefer explicit dataflow chain order from edges when available
-    var df = (ir.edges || []).filter(function (e) { return e.kind === "dataflow"; });
-    if (df.length && txs.length) {
-      pts = [];
-      txs.forEach(function (tx) {
-        var door = positions[tx.door_id];
-        if (door) pts.push({ x: door.x, y: door.y, door_id: tx.door_id, tx: tx.id });
-      });
-    }
     return pts.length >= 2 ? pts : null;
   }
 
@@ -918,6 +1198,9 @@
     resize();
     updateScrub();
     var nd = (doc.doors || []).length;
+    var np = (doc.pieces || []).length;
+    var nb = (doc.binds || []).length;
+    var ns = (doc.seams || []).length;
     var ne = (doc.edges || []).length;
     var nt = (doc.transforms || []).length;
     var ni = (doc.items || []).length;
@@ -927,7 +1210,8 @@
       "IR v" + (doc.ir_version || "?") +
       " · mode=" + (doc.mode || "?") +
       " · emission_gate=" + ((doc.source && doc.source.emission_gate) || "?") +
-      " · doors=" + nd + " edges=" + ne + " transforms=" + nt + " items=" + ni +
+      " · doors=" + nd + " pieces=" + np + " binds=" + nb + " seams=" + ns +
+      " · edges=" + ne + " transforms=" + nt + " items=" + ni +
       " · generated_at=" + gat +
       " · git_rev=" + grev
     );
@@ -964,7 +1248,11 @@
       showSelection(null);
       return;
     }
-    showSelection({ type: "door", id: hit.door.id, door: hit.door });
+    if (hit.kind === "piece") {
+      showSelection({ type: "piece", id: hit.node.piece.id, piece: hit.node.piece });
+    } else {
+      showSelection({ type: "door", id: hit.node.door.id, door: hit.node.door });
+    }
   });
 
   document.querySelectorAll(".legend button.filter").forEach(function (btn) {
@@ -985,7 +1273,33 @@
     updateScrub();
   });
 
+  function syncLegendDim() {
+    var legend = document.getElementById("edge-legend");
+    if (legend) legend.classList.toggle("dimmed", viewMode === "manifest");
+  }
+
+  function setViewMode(mode) {
+    viewMode = mode;
+    document.querySelectorAll(".mode-toggle button").forEach(function (btn) {
+      var on = btn.getAttribute("data-view") === mode;
+      btn.classList.toggle("active", on);
+      btn.setAttribute("aria-pressed", on ? "true" : "false");
+    });
+    syncLegendDim();
+    updateChips();
+    stopPlay();
+    showSelection(null);
+    resize();
+  }
+
+  document.querySelectorAll(".mode-toggle button").forEach(function (btn) {
+    btn.addEventListener("click", function () {
+      setViewMode(btn.getAttribute("data-view"));
+    });
+  });
+
   window.addEventListener("resize", resize);
+  syncLegendDim();
   resize();
   loadIr();
 })();

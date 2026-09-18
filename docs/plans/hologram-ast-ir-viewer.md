@@ -47,15 +47,39 @@ Engine constraint (locked for this elaboration): **Canvas 2D only** — no Three
 | `transforms[].emission_touch` | detail panel | Must be `false` until accepted emission |
 | `timeline[]` | scrubber + event summary | Play advances token + steps events |
 | `diagnostics[]` | **diag strip** | Severity colors; dismissible; reload restores |
+| `pieces[]` | Manifest / Both: piece nodes along strand spine | Hands ground; tap → detail |
+| `pieces[].graphic_cites` | detail panel | A/B/C/D cites |
+| `seams[]` | optional background bands (Manifest / Both) | contract_I / contract_II / layer_III |
+| `binds[]` | Both mode: dashed PROPOSAL links piece↔door | Packaging overlay — not LAW |
+| `binds[].authority` | bind stroke label / detail | Fixture must be PROPOSAL |
+| view mode (UI) | **Manifest \| Packaging \| Both** toggle | Default **Manifest**; not an IR field |
+
 
 Static header paths (always visible as text, not live links required):
 
 - schema: `docs/plans/hologram-ast-ir.md`
-- golden: `docs/plans/fixtures/hologram-ir-golden-v0.1.0.json`
+- golden: `docs/plans/fixtures/hologram-ir-golden-v0.2.0.json` (v0.1.0 historical)
 - validate: `docs/plans/tools/hologram-ir-validate.py`
 - binding: `docs/plans/hologram-ast-ir-viewer.md`
 
 ---
+
+## 1.5 Manifest vs Packaging binding
+
+Two pictures of one IR. Hands pieces are ground; crate doors are packaging overlay.
+
+| View mode | Spine / nodes | Edges shown | Token animation | Authority shown |
+|---|---|---|---|---|
+| **Manifest** (default) | Continuous **strand** wire (P1/P6 visual); piece nodes along/near spine in control-flow order (3→4→7→5→2→8…); P13/P14 as projection/constraint annotations, not peer stores; optional seam bands | Piece-local only (no door call graph required) | Along governing-rule path: arrive → star → append → continue | Hands / systems-manifest |
+| **Packaging** | Existing 7-door arc + birth badges | Typed IR edges with filters (call / birth_before / premise / dataflow) | Along transform door hops (legacy) | Crate-map plan (still fixture) |
+| **Both** | Strand spine + piece nodes + doors as secondary nodes | Door edge filters **and** dashed PROPOSAL binds | Prefer governing-rule path; door hops secondary | Binds labeled PROPOSAL — not LAW |
+
+Rules:
+
+- Switching mode never invents emission or proved births.
+- Edge filters apply in Packaging and Both for door edges; binds stay visually distinct (dashed violet/amber, “PROPOSAL”).
+- Arrival / dictionary / document feeds (P3/P9/P10) are Contract II — **not a door**; do not invent an `arrival/` node.
+- Canvas 2D only; mobile OK; fixture diags remain.
 
 ## 2. Edge-kind visual grammar
 
@@ -156,7 +180,7 @@ Golden fixture pins:
 
 ## 7. Worked example — golden fixture walkthrough
 
-File: [fixtures/hologram-ir-golden-v0.1.0.json](fixtures/hologram-ir-golden-v0.1.0.json)
+File: [fixtures/hologram-ir-golden-v0.2.0.json](fixtures/hologram-ir-golden-v0.2.0.json) (current; v0.1.0 historical)
 
 ### 7.1 Birth chain (`birth_before` × 6)
 
@@ -218,6 +242,8 @@ Done when all of the following hold on main:
 2. **Diag strip** uses severity colors; diags are dismissible; reload restores them.
 3. **Edge filters** toggle call / birth_before / premise / dataflow (default all on); legend is clickable.
 4. **Graph** shows full door names, birth badges, tap/click hit-test, incident-edge highlight, kind curvature + z-order (dataflow under, birth chord, call mid, premise dashed on top).
+4b. **Mode toggle** Manifest | Packaging | Both (default Manifest): Manifest shows strand spine + pieces; Packaging keeps 7-door arc; Both shows PROPOSAL binds as dashed piece↔door links.
+4c. Golden v0.2.0 loads by default; validator PASS on pieces/seams/binds; binds authority PROPOSAL only.
 5. **Detail panel** for door: id, birth_index, path, status, no_std; outgoing/incoming by kind with notes; related transforms.
 6. **Transforms rail** shows full names (wrap on mobile); tap selects transform → inputs/outputs/effect/emission_touch; highlights door_id.
 7. **Timeline** scrubber + play/pause; token animates along transform/dataflow path; current event summary visible.

@@ -41,7 +41,7 @@ Primitive sheets (`primitive-*.png`) remain the lawful shape catalog beside thes
 
 | File | Title | Role |
 |---|---|---|
-| [nostd-pipeline.html](nostd-pipeline.html) | LaceArc / nostd pipeline hologram (Layer III) | Elaborated Canvas 2D viewer: doors (full names + birth badges), typed edge filters, inspection panel, transforms rail, timeline token along dataflow. Fixture-honest. IR binding: [../plans/hologram-ast-ir-viewer.md](../plans/hologram-ast-ir-viewer.md). Schema: [../plans/hologram-ast-ir.md](../plans/hologram-ast-ir.md). Golden: [../plans/fixtures/hologram-ir-golden-v0.1.0.json](../plans/fixtures/hologram-ir-golden-v0.1.0.json). **Not** `shadow-clock-gearing.html` / `{A,B,C}` holder machine. |
+| [nostd-pipeline.html](nostd-pipeline.html) | LaceArc / nostd pipeline hologram (Layer III) | Canvas 2D viewer with **Manifest / Packaging / Both** modes (default Manifest: Hands pieces + strand spine). Packaging keeps 7-door arc; Both shows dashed PROPOSAL binds. Typed edge filters, inspection, transforms rail, timeline token. Fixture-honest. IR binding: [../plans/hologram-ast-ir-viewer.md](../plans/hologram-ast-ir-viewer.md). Schema: [../plans/hologram-ast-ir.md](../plans/hologram-ast-ir.md). Golden: [../plans/fixtures/hologram-ir-golden-v0.2.0.json](../plans/fixtures/hologram-ir-golden-v0.2.0.json). **Not** `shadow-clock-gearing.html` / `{A,B,C}` holder machine. |
 
 ## Geometry metaphor
 
