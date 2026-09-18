@@ -1,7 +1,7 @@
-STATUS: HELD
+STATUS: FREE
 SHAFT: audits
 FILE: docs/gearing/contracts-audits.js
-AGENT: Codex-c38ffbb7d329-audits
-BASE: 907d937aa87061c94dc7f10433964f07615cd6b7
-SINCE: 2026-09-18T07:13:02Z
-NOTE: Human authorized push; Walk 7 source checks passed; file:// chip check blocked by browser URL policy.
+AGENT:
+BASE:
+SINCE:
+NOTE:
