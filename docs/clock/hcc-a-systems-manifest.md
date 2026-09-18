@@ -144,7 +144,42 @@ Packets do not mix. Attachment wins on what the packet *is*.
 | Acts I–V | fold / read | no second mill |
 | Act VI | write into πID | only Act that writes |
 
+### Revolution schedule (pass 5)
+
+One rev = S0–S7. Attachment does not order the two S7 sinks against each other.
+
+| Packet | Born | Live | Dies / settles | Illegal at |
+|---|---|---|---|---|
+| constraint | always (world) | all T | — | stored as Graphic D |
+| raw signal | S0 | S0–S1 | consumed at S2 | stored log after compile |
+| ordered trace | S0–S1 | through S2 | into ledger op | second P0 |
+| schema stream | S0–S1 | through S2 | into ledger op | Contract II ingest |
+| ledger op | S2 | S2 | applied to L | P4 |
+| ledger state | S2 | S2–S5 | residue into ISL | Graphic D |
+| weight / transition | S3 | S3–S6 | into E, B, ISL | project-meaning |
+| affect | S4 | S4–S6 | vanish or settle (source) | a transmissible packet |
+| identity snapshot | S5 | S5–S7 + next S0 as priors | — | a star |
+| act | S6 | S6–S7 | becomes next-world or nothing visible | POINTER |
+| next-world structure | S7 | next S0 | becomes raw signal | P4 |
+| priors | S5–S7 | next S0 PFC | — | a star |
+
+S7 sinks: πFB → R′ and πID → PFC_{n+1}. No author order between them. They join only as next S0 inputs. Conflict between those inputs is P4 `identity_vs_reality` — modes named, procedure `[GAP]`. Do not invent a scheduler.
+
+### Act ↔ packet fold (pass 5)
+
+| Act | Reads | Writes |
+|---|---|---|
+| I | raw signal, ordered trace, schema stream | none |
+| II | ledger op / ledger state | none (talk about L, not a second πL) |
+| III | weight / transition, affect | none |
+| IV | identity snapshot | none |
+| V | act (chosen or withheld) | none |
+| VI | snapshot + what the rev taught | priors / templates into πID |
+
+Prompts stay on the Act station. This table is the fold only.
+
 Stations H1–H11 / SM / P / Acts below are the same mill written as puzzle pieces. The register above is the composition.
+
 
 
 
@@ -452,15 +487,15 @@ Flow inside the box:
 
 | Edge | What actually flows | Match? |
 |---|---|---|
-| I → RIC | raw signals | source-stated |
-| I → PFC | same signals + priors | source-stated |
-| RIC/PFC → C | structure + pre-interpretation | source-stated; numeric arbiter `[GAP]`; modes named (P4) |
-| C → L | add / merge / reclassify | source-stated S2 |
-| L → M | ledger + internal value/priorities | source-stated; first clipboard dropped priorities |
-| M → E | meaning-in-flight locally | source-stated |
-| L+M+E-patterns → ISL | three named inputs | source-stated; first-clipboard tuple `[GAP]` **closed** |
-| ISL → PFC next | priors / templates entrenched, weakened, or split (Act VI) | source-stated |
-| B → R | acts via H10b Feedback | source-stated §2.8 |
+| I → RIC | raw-signal packet | source-stated |
+| I → PFC | raw-signal packet + priors | source-stated |
+| RIC/PFC → C | ordered-trace + schema-stream packets | source-stated; numeric valve `[GAP]`; modes named (P4) |
+| C → L | ledger-op packet | source-stated S2 |
+| L → M | ledger-state packet + P2 | source-stated |
+| M → E | weight/transition → affect | source-stated |
+| L+M+E-patterns → ISL | ledger state + weights + affect patterns | source-stated |
+| ISL → PFC next | priors packet (πID / Act VI) | source-stated |
+| B → R | act packet via πFB | source-stated §2.8 |
 | L → Graphic D | “revised ledger” | **does not match** Piece 6. `[CONFLICT]` |
 | M → Graphic D | weights / must-do | **does not match** Piece 2. `[CONFLICT]` |
 | RIC → Piece 3 | structured arrival | kind-kin only. Not a wire. `[I]` |
@@ -737,6 +772,15 @@ Atomic map not edited. Projection fetches this file.
 | T5 | Acts fold the pipe; only Act VI writes |
 | T6 | H11 is trace tape, not a π |
 | T7 | Sealed `[GAP]`s left sealed |
+
+## Pass 5 clipboard deltas
+
+| Ticket | Action |
+|---|---|
+| T1 | Revolution schedule; S7 two sinks unordered |
+| T2 | Act ↔ packet fold |
+| T3 | Pass-2 edges retagged to packet names |
+| T4–T5 | Sealed leftovers not filled; no new π |
 
 ---
 
