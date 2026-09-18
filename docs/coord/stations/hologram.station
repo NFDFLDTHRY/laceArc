@@ -1,0 +1,7 @@
+STATUS: FREE
+STATION: hologram
+OWNS: docs/hologram/** docs/shadow-clock-hologram.md docs/clock/shadow-clock-hologram.md docs/shadow-clock-agent-brief.md docs/clock/shadow-clock-agent-brief.md docs/shadow-clock-gear-contracts.md docs/clock/shadow-clock-gear-contracts.md docs/philosophy-map.md docs/clock/philosophy-map.md docs/agent-interaction-model.md docs/clock/agent-interaction-model.md
+AGENT: -
+BASE: -
+SINCE: -
+NOTE: 

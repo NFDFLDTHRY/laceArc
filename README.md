@@ -30,6 +30,7 @@ Shelves (defrag pass 1–3). Hands stay at `docs/` root. Do not treat a prompt, 
 | Open `[GAP]` | [docs/pointer-emission.md](docs/pointer-emission.md) | DRAFT questions. Not accepted |
 | Shadow prose | [docs/clock/](docs/clock/) | Holder contracts and math. Not Core |
 | Shadow view | [docs/shadow-clock-gearing.html](docs/shadow-clock-gearing.html), [docs/gearing/](docs/gearing/), [docs/hologram/](docs/hologram/) | Renderer + shafts + templates. Cubes ≠ rows |
+| Coord | [docs/coord/](docs/coord/) | Doc stations + gear claim umbrella (Layer III) |
 | History | [docs/history/](docs/history/) | Recoveries. Do not revive walkers |
 | Prompts | [docs/prompts/](docs/prompts/) | Agent tickets. Not law |
 | Clipboards | [docs/clipboards/](docs/clipboards/) | KEEP/FORBID. Petersen unfilled |
@@ -52,6 +53,7 @@ Shelves (defrag pass 1–3). Hands stay at `docs/` root. Do not treat a prompt, 
 | [docs/gearing/](docs/gearing/) | Shared-interactive Layer-III contract data (`window.LACE_CONTRACTS` additive scripts). |
 | [docs/gearing/CLAIMS.md](docs/gearing/CLAIMS.md) | Multi-agent shaft claim/release protocol for Shadow gearing (Layer III). |
 | [docs/gearing/RESYNC.md](docs/gearing/RESYNC.md) | Full-repo resync signal (FIRED/CLEAR); Layer III only. |
+| [docs/coord/](docs/coord/) | Multi-agent coordination umbrella: doc stations + `coord.sh`; gear shafts still via claim.sh. |
 | [docs/prompts/clip-and-five-refs-prompt.md](docs/prompts/clip-and-five-refs-prompt.md) | Agent prompt: clipboard-looking mapping sheets while walking the five stake references. |
 | [docs/prompts/kauffman-clipboard-prompt.md](docs/prompts/kauffman-clipboard-prompt.md) | Agent prompt: clipboard mapping for Kauffman *Knots and Physics* 4ed (dokumen.pub slug / ISBN 9814383007). |
 | [docs/prompts/rowlands-clipboard-prompt.md](docs/prompts/rowlands-clipboard-prompt.md) | Agent prompt: ASCII clipboard for Rowlands *Zero to Infinity* (Series on Knots and Everything). |

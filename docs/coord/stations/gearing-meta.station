@@ -1,0 +1,7 @@
+STATUS: FREE
+STATION: gearing-meta
+OWNS: docs/gearing/*.md docs/gearing/*.sh docs/gearing/RESYNC.md (not contracts-*.js)
+AGENT: -
+BASE: -
+SINCE: -
+NOTE: 

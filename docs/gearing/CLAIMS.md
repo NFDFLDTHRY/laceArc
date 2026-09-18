@@ -1,6 +1,7 @@
 # Shaft claim / release — current-state protocol
 
 **Layer:** III (agent coordination for Shadow gearing). Not Core.  
+**Umbrella:** Doc stations + single entrypoint live under [`docs/coord/`](../coord/README.md) (`coord.sh`). This file remains the shaft-only protocol; `gear:*` stations delegate here.  
 **Law:** One shaft per agent. Zero or one drop per shaft per tick. If you cannot tell whether a shaft is held, it is held.  
 **Goal:** Every agent always works against **current** `origin/main`, without editing another agent’s keys.
 

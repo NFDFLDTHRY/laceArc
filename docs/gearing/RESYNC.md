@@ -3,12 +3,12 @@
 **Layer:** III coordination only. Not Core. Emission remains `[GAP]`.
 
 ```
-STATUS: FIRED
-TIP_AT_FIRE: 490473e7e3d3e1579da7ea0361d5c1654360e648
+STATUS: CLEAR
+TIP_AT_FIRE: (see git history of prior FIRED)
 LIVE_TIP_RULE: origin/main
-FIRED_AT: 2026-09-18T17:48:05Z
-FIRED_BY: LaceArc (steward)
-NOTE: While FIRED, effective tip is always current origin/main. TIP_AT_FIRE is the signal commit. All BASE values are STALE until claim/refresh against live tip.
+CLEARED_AT: 2026-09-18T20:10:50Z
+CLEARED_BY: LaceArc (steward)
+NOTE: Resync complete. Normal claim/release resumes. BASE must still equal origin/main on check.
 ```
 
 ## Signal diagram

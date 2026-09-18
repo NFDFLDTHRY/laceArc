@@ -119,6 +119,15 @@ Those names are a height. They are not Core. They are not dependencies. Proofs l
 
 Full ASCII: `docs/law-why-these-documents.md`.
 
+## Coordination
+
+Multi-agent claim/release for docs and gearing shafts: `docs/coord/README.md`.
+Entrypoint: `./docs/coord/coord.sh` (doc stations + `gear:*` → `docs/gearing/claim.sh`).
+Paste-ready: `docs/prompts/coord-protocol-prompt.md`.
+
+Before editing: pull ff-only → `which` → `claim` → edit only owned paths → `check` → commit → `release`.
+Docs-only work does not need a gearing shaft claim. Steward may `doctor --auto-clear` when RESYNC is stuck FIRED and everything is FREE.
+
 ## Adjacent reading
 
 Reason model: `docs/reason-model-map.md` (a shoe lace in the hands). History: `docs/history/history-recovered-2026-09-18.md`, `docs/history/history-recovered-pass-2-2026-09-18.md`, `docs/history/history-recovered-pass-3-2026-09-18.md`, `docs/history/history-recovered-pass-4-2026-09-18.md`, `docs/history/history-recovered-pass-5-sit.md`. Ancestry and rejected walkers. Do not revive lace_walk.py, intern dictionaries, recursion guards, mirrors, lookups, BFS closures, sorted touches, closed rings, eleven-rule or degree-sloped schedulers, mutable continuation slots, XOR tensor probes, or C-machine metrics. Do not restore connect-the-ends from the August 15 ruling. Do not treat “touch grows lace” or exact-match ties as pointer-emission. Do not treat D06 substitution as a write. Do not treat codec roundtrip or P02 StructureBytes as possession of the strand. Do not cherry-pick P02 versions. Do not import WELD-1 or scoped-UNK. Do not manufacture cat/cat-1. Do not swap graphics bytes because a recovered PNG matches the picture. ShoeLacey (`cda3bb34` and its surface branches) is a dated other repo, not this law.
