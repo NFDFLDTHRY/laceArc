@@ -83,6 +83,9 @@ _PHR='is absent|is missing|does not exist|untracked|currently ABSENT'
 _tracked=$(git ls-files)          # read the index once, not per token
 stale=0
 while IFS= read -r md; do
+  # An append-only log records past states on purpose: "X was ABSENT, now
+  # fixed" is its job, not drift. Skip anything that declares itself so.
+  head -20 "$md" | grep -qiE '(^|[[:space:]])append[- ]only' && continue
   seen=""
   # One awk + one grep per file. Each output line pairs an input line with the
   # next, so a claim split across two lines still binds; grep -n then reports
