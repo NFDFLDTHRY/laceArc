@@ -214,6 +214,58 @@ to link `docs/<shelf>/README.md` instead of `docs/<shelf>/`, which is phase 2,
 law station. Until then those doors stay orphans and the fixed check will say so.
 
 
+### 4.3 Phase 2 — expanded, after measurement
+
+Measured at `028acf2`. Phase 2 was one line in the table: *root README loses
+the per-file table*. It cannot, yet, and the reason is worth stating before
+anyone tries.
+
+**Only 17 of the root README's 63 per-file rows can go.** Under the per-shelf
+gate — a row goes only when that file's own shelf door links it — the safe set
+is exactly: the 10 history files, 4 plans files, 2 gearing files, 1 kit file.
+The other **46 stay**, because their shelf door does not yet link them:
+16 prompts rows (1b blocked), clipboards and clock rows (deferred to phase 5),
+and every `docs/` root file, which has no door at all. Phase 2 shrinks the
+table by a quarter. Finishing it is phase 5's and 1b's work, not phase 2's.
+
+**Phase 0's guarantee has already regressed.** Seven tracked files are unowned
+again — `docs/systems-manifest-ascii.md` and its six pass plans, written in the
+15 minutes before this measurement and still landing. The `RULES` table lists
+`docs/systems-manifest.md` exactly, so the derivative matched nothing. **Any new
+file at the `docs/` root falls through**, and the agent writing it cannot gate
+its own path. That is a hole in phase 0, not a mistake by that agent.
+
+**The court root is becoming a shelf.** It now holds 18 files: eight Hands
+prose, two ops, one renderer HTML, and seven from a live ASCII campaign — six
+of them one-file-per-pass, none linked, none owned. That is R4 at the court,
+the same pattern deferred in `docs/clock/`. Naming them in a door is a
+stopgap; the durable shape is phase 5's.
+
+| Sub-phase | Station | Work | Notes |
+|---|---|---|---|
+| **2-pre** | coord | Add a `docs/*.md` catch-all to `RULES` so the court root cannot go unowned again. | Verified non-disruptive: a glob scores 3005 against exact 10000 and `docs/plans/**` at 5011, so it fires only where nothing else matches — exactly the 7 files above and nothing else. **Which station it points at is a policy choice**: `maps` matches the derivative-map artifacts already there (`reason-model-map`, `atomic-primitives-map`, `coherence-audit-log`); `law` would make every new court file need a steward claim. Proposed: `maps`. |
+| **2a** | law | `docs/README.md`, the court door: 18 root files, what each is, which are Hands and which are not. Root README in the **same commit**: drop the 17 safe rows, link the shelf table at `docs/<shelf>/README.md` instead of `docs/<shelf>/`, correct the shelf descriptions (R6), remove the duplicated `system-mathematical-model.md` row. | One commit because the root README links the court door; split, main carries a dead link — the 1f lesson. Clears **13 orphans**: the 6 ASCII files and the 7 shelf doors that are unreachable only because the shelf table points at directories. |
+| **2b** | law | `AGENTS.md`: 20 backtick paths become links. One is wrong — `data-structure-1d-array.png` is written bare and resolves nowhere. | AGENTS.md is a dead end in the link graph and the first file every agent is told to load. |
+| **2c** | law | `staking-the-workspace.md` gains one line: **ORIGINAL STAKE**, frozen. `law-why-these-documents.md` gains one line: **LIVE LAW**. | Part of R1. The rest of R1 — regenerating the transport copies — is phase 3. |
+| **2d** | maps | `defrag-plan.md` gains a "superseded by" line. | **Not law**: `defrag-plan.md` is a maps path. Phase 2 is not a single-station phase. |
+
+**Raised in 2c, not fixed there.** `law-why-these-documents.md` line 10 reads
+*"Implementation remains forbidden until `docs/pointer-emission.md` exists."*
+Its own IMPLEMENTATION LAW block, 290 lines below, reads *"When the human has
+accepted docs/pointer-emission.md, code may appear."* Existence is not
+acceptance — the whole repository turns on that distinction, and AGENTS.md was
+already corrected for the same drift by the coherence audit's A6 tick. This is
+**human-authored law contradicting itself**, so no agent should quietly edit
+either sentence. Phase 2 reports it; the human decides the wording.
+
+**Order.** `2-pre` first — it restores the protocol for the campaign now
+running. Then `2a`; `2b`, `2c`, `2d` in any order after it.
+
+**Accept phase 2** when: no tracked path is unowned; `docs/README.md` exists and
+names every root file; the shelf table links doors, not directories; orphans
+fall from 44 to about 31; the root README holds 46 rows and each survivor's
+shelf is named in §4.1 as blocked or deferred.
+
 Phases 0–3 are filing. Phase 4 is naming. Phase 5 waits on another campaign. Phases 7–8 change law or protocol and are only proposals here.
 
 ---
