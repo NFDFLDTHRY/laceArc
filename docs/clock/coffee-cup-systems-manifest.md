@@ -48,7 +48,7 @@ Three lanes ride every packet: social interaction · language · lived events. D
 - **Outputs:** Possibility field. Question: *Why was a fall possible.*
 - **Preconditions:** Looking at structure, not stakes.
 - **Effects:** None on Graphic D. None on the cup yet.
-- **Invariants:** Conditions do not cause the fall. They make it possible. Rushing this stage is the tell.
+- **Invariants:** Conditions do not cause the fall. They make it possible. Before the hand opens, nothing has happened — and yet everything required for the fall already exists. Rushing C1 because nothing is happening is the tell.
 - **Failure modes:** Calling C1 fate. Believing outcomes appear out of nowhere. Reidemeister-planning “if we had arranged the floor.”
 - **Boundary & Coupling:** Next C2. Aftermath of a prior rev writes this field (loop). Mesh to HCC πRIC (structure already there) and πPFC (trained phrases / priors) — cite, not fuse. Two clocks.
 - **Implementation implications:** Do not store a Conditions row.
@@ -63,14 +63,14 @@ Three lanes ride every packet: social interaction · language · lived events. D
 - **Purpose:** Possibility collapses into motion. Hand opens. That is all.
 - **Inputs:** C1 field + an opening (let go / line spoken / silence where response was expected / irreversible step).
 - **Outputs:** Motion packet. Question: *When did motion begin.*
-- **Preconditions:** A hold was available. After C2 only one process remains available.
-- **Effects:** Trajectory starts. Not impact.
+- **Preconditions:** Before C2 the cup could be held, set down, or dropped. After C2 only one process remains available.
+- **Effects:** Trajectory starts. Release is not impact. Release is not trajectory.
+- **Key source language:** “Release is the point where possibility collapses into motion.” “Before this moment, the cup could be held, set down, or dropped.”
 - **Invariants:** Release is initiating, not decisive. Miss it → everything feels like drift. Over-privilege it → everything feels inevitable.
 - **Failure modes:** Treating release as POINTER emission. Treating release as total causality. Treating release as impact.
 - **Boundary & Coupling:** May mesh HCC πB (an act in time). Is not P4. Philosophy-map tooth 2 “Arrival” is an alias, not a Contract II ingest.
 - **Implementation implications:** Do not emit because a hand opened.
 - **Metaphor / diagnostic role:** First charged utterance; initiation.
-- **Key source language:** “Release is the point where possibility collapses into motion.”
 - **Hands:** `[H]` / `[X]` as emission
 
 ### C3 — Trajectory (Control Window)
@@ -121,7 +121,7 @@ Three lanes ride every packet: social interaction · language · lived events. D
 - **Boundary & Coupling:** Mesh to HCC πID / next PFC (priors). Oil. Not Graphic D. Distinct from πFB (world). Two S7 sinks stay two sinks.
 - **Implementation implications:** Do not write aftermath into the array.
 - **Metaphor / diagnostic role:** Narrative recirculation.
-- **Key source language:** “Aftermath is not commentary. It is causal.” “Narratives alter future release thresholds.”
+- **Key source language:** “Aftermath is not commentary. It is causal.” “Narratives alter future release thresholds.” “They reshape what interventions will be attempted next time.”
 - **Hands:** `[H]` / `[X]` as rewrite of old rows
 
 ### Loop — recirculation
@@ -202,7 +202,7 @@ C1 possibility ──► C2 motion ──► C3 window ──► C4 ground truth
                          next C1 ◄── C5 narrative-that-rewrites-C1
 ```
 
-C5→C1 payload is rewritten thresholds (higher threat, lower ambiguity, preemptive hardening) — not a copy of C4. Holder time. Not P4. Not HCC S7 fused into one sink.
+C5→C1 payload is rewritten thresholds **and** which interventions will be attempted next time — not a copy of C4. Holder time. Not P4. Not HCC S7 fused into one sink.
 
 ## Cluster labels over the wheel (pass 3)
 
@@ -321,6 +321,30 @@ Water: C3 work only while meshed. Not filled here.
 | T1 | Crossing register HCC packet × Cup tooth |
 | T2 | Two next-C1 writers stamped |
 | T3 | HCC clipboard “mesh only B+RIC” corrected |
+
+## Physical specimen (pass 6)
+
+The disposable cup is the walk-through, not a fourth metaphysics.
+
+| Stage | Cup body (source) |
+|---|---|
+| C1 | elevated; gravity; distance; hand not table; nothing has happened |
+| C2 | hand opens; held / set-down / dropped collapses to fall |
+| C3 | falling; early trivial → speed → partial → nothing |
+| C4 | sound; bounce once; comes to rest; nothing damaged |
+| C5 | cup on the floor; people start talking; physics finished |
+
+## Pass 6 clipboard deltas
+
+| Ticket | Action |
+|---|---|
+| T1 | Physical specimen column |
+| T2 | C2 triad: held / set down / dropped |
+| T3 | C5 also rewrites next interventions |
+| T4 | C1 paradox: nothing happened / everything required exists |
+| T5 | Last Cup-only pass against this txt unless a new remainder is pointed at |
+
+Next gear is Water.
 
 ---
 
