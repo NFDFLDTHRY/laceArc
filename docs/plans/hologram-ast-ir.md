@@ -244,6 +244,14 @@ The existing `docs/shadow-clock-gearing.html` remains a **Shadow holder** visual
 
 ---
 
+## 7.5 Golden fixture
+
+Sealed plan-shaped IR (no AST parse):
+
+- [fixtures/hologram-ir-golden-v0.1.0.json](fixtures/hologram-ir-golden-v0.1.0.json)
+
+`mode` is `"fixture"`. `items` is empty. `emission_gate` is `"blocked"`. Viewer spikes may load this file; they must show FIXTURE_MODE / EMISSION_GATE_BLOCKED diags and must not imply proved births.
+
 ## 8. Acceptance for this planning doc
 
 Done when:

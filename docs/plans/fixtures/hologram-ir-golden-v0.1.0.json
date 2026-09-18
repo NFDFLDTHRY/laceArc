@@ -1,0 +1,164 @@
+{
+  "ir_version": "0.1.0",
+  "generated_at": "2026-09-18T21:33:00Z",
+  "source": {
+    "git_rev": "fixture-hologram-ir-v0.1.0",
+    "paths": [],
+    "rustc_or_ra": "none — sealed fixture; no AST parse",
+    "emission_gate": "blocked"
+  },
+  "mode": "fixture",
+  "doors": [
+    { "id": "strand", "kind": "planned_door", "birth_index": 1, "no_std": true, "status": "fixture", "path": "strand/" },
+    { "id": "word", "kind": "planned_door", "birth_index": 2, "no_std": true, "status": "fixture", "path": "word/" },
+    { "id": "pointer", "kind": "planned_door", "birth_index": 3, "no_std": true, "status": "fixture", "path": "pointer/" },
+    { "id": "route", "kind": "planned_door", "birth_index": 4, "no_std": true, "status": "fixture", "path": "route/" },
+    { "id": "view_star", "kind": "planned_door", "birth_index": 5, "no_std": true, "status": "fixture", "path": "view_star/" },
+    { "id": "view_proj", "kind": "planned_door", "birth_index": 6, "no_std": true, "status": "fixture", "path": "view_proj/" },
+    { "id": "core", "kind": "planned_door", "birth_index": 7, "no_std": true, "status": "fixture", "path": "core/" }
+  ],
+  "items": [],
+  "edges": [
+    { "id": "birth-strand-word", "kind": "birth_before", "from": "strand", "to": "word", "evidence": "plan", "note": "crate-map serial birth" },
+    { "id": "birth-word-pointer", "kind": "birth_before", "from": "word", "to": "pointer", "evidence": "plan", "note": "crate-map serial birth" },
+    { "id": "birth-pointer-route", "kind": "birth_before", "from": "pointer", "to": "route", "evidence": "plan", "note": "crate-map serial birth" },
+    { "id": "birth-route-view_star", "kind": "birth_before", "from": "route", "to": "view_star", "evidence": "plan", "note": "crate-map serial birth" },
+    { "id": "birth-view_star-view_proj", "kind": "birth_before", "from": "view_star", "to": "view_proj", "evidence": "plan", "note": "crate-map serial birth" },
+    { "id": "birth-view_proj-core", "kind": "birth_before", "from": "view_proj", "to": "core", "evidence": "plan", "note": "crate-map serial birth" },
+
+    { "id": "call-route-strand", "kind": "call", "from": "route", "to": "strand", "evidence": "plan", "note": "crate-map Page D; AST will confirm later" },
+    { "id": "call-route-word", "kind": "call", "from": "route", "to": "word", "evidence": "plan", "note": "crate-map Page D" },
+    { "id": "call-route-pointer", "kind": "call", "from": "route", "to": "pointer", "evidence": "plan", "note": "crate-map Page D" },
+    { "id": "call-view_star-strand", "kind": "call", "from": "view_star", "to": "strand", "evidence": "plan", "note": "crate-map Page D" },
+    { "id": "call-view_proj-strand", "kind": "call", "from": "view_proj", "to": "strand", "evidence": "plan", "note": "crate-map Page D" },
+    { "id": "call-view_proj-view_star", "kind": "call", "from": "view_proj", "to": "view_star", "evidence": "plan", "note": "crate-map Page D" },
+    { "id": "call-core-route", "kind": "call", "from": "core", "to": "route", "evidence": "plan", "note": "crate-map Page D" },
+    { "id": "call-core-view_star", "kind": "call", "from": "core", "to": "view_star", "evidence": "plan", "note": "crate-map Page D" },
+    { "id": "call-core-view_proj", "kind": "call", "from": "core", "to": "view_proj", "evidence": "plan", "note": "crate-map Page D" },
+
+    { "id": "df-route-strand", "kind": "dataflow", "from": "route", "to": "strand", "evidence": "plan", "note": "compose → append retained section" },
+    { "id": "df-word-route", "kind": "dataflow", "from": "word", "to": "route", "evidence": "plan", "note": "word describe feeds compose" },
+    { "id": "df-pointer-route", "kind": "dataflow", "from": "pointer", "to": "route", "evidence": "plan", "note": "pointer constraints feed compose; no emit authority" },
+    { "id": "df-strand-view_star", "kind": "dataflow", "from": "strand", "to": "view_star", "evidence": "plan", "note": "read-only star projection" },
+    { "id": "df-strand-view_proj", "kind": "dataflow", "from": "strand", "to": "view_proj", "evidence": "plan", "note": "read-only shadow" },
+    { "id": "df-view_star-view_proj", "kind": "dataflow", "from": "view_star", "to": "view_proj", "evidence": "plan", "note": "proj may use star read" },
+
+    { "id": "premise-pointer-emission", "kind": "premise", "from": "pointer", "to": "route", "evidence": "plan", "note": "OPEN: emission acceptance required before POINTER append authority" },
+    { "id": "premise-impl-gate", "kind": "premise", "from": "strand", "to": "core", "evidence": "plan", "note": "OPEN: human-accepted pointer-emission.md before any birth" }
+  ],
+  "transforms": [
+    {
+      "id": "tx-describe-word",
+      "seq": 1,
+      "name": "describe_word",
+      "door_id": "word",
+      "inputs": [{ "name": "occurrence", "ty_hint": null, "carrier": "word_value" }],
+      "outputs": [{ "name": "word_layout", "ty_hint": null, "carrier": "word_value" }],
+      "effect": "describe_only",
+      "emission_touch": false
+    },
+    {
+      "id": "tx-constrain-pointer",
+      "seq": 2,
+      "name": "constrain_pointer",
+      "door_id": "pointer",
+      "inputs": [{ "name": "layout_rules", "ty_hint": null, "carrier": "pointer_layout" }],
+      "outputs": [{ "name": "pointer_layout", "ty_hint": null, "carrier": "pointer_layout" }],
+      "effect": "describe_only",
+      "emission_touch": false
+    },
+    {
+      "id": "tx-compose-route",
+      "seq": 3,
+      "name": "compose_section",
+      "door_id": "route",
+      "inputs": [
+        { "name": "word_layout", "ty_hint": null, "carrier": "word_value" },
+        { "name": "pointer_layout", "ty_hint": null, "carrier": "pointer_layout" }
+      ],
+      "outputs": [{ "name": "admitted_section", "ty_hint": null, "carrier": "strand_section" }],
+      "effect": "compose",
+      "emission_touch": false
+    },
+    {
+      "id": "tx-retain-strand",
+      "seq": 4,
+      "name": "retain_section",
+      "door_id": "strand",
+      "inputs": [{ "name": "admitted_section", "ty_hint": null, "carrier": "strand_section" }],
+      "outputs": [{ "name": "retained_line", "ty_hint": null, "carrier": "strand_section" }],
+      "effect": "append_strand",
+      "emission_touch": false
+    },
+    {
+      "id": "tx-read-star",
+      "seq": 5,
+      "name": "read_star",
+      "door_id": "view_star",
+      "inputs": [{ "name": "retained_line", "ty_hint": null, "carrier": "strand_section" }],
+      "outputs": [{ "name": "star_view", "ty_hint": null, "carrier": "view_label" }],
+      "effect": "read_only",
+      "emission_touch": false
+    },
+    {
+      "id": "tx-read-proj",
+      "seq": 6,
+      "name": "read_proj",
+      "door_id": "view_proj",
+      "inputs": [
+        { "name": "retained_line", "ty_hint": null, "carrier": "strand_section" },
+        { "name": "star_view", "ty_hint": null, "carrier": "view_label" }
+      ],
+      "outputs": [{ "name": "shadow_view", "ty_hint": null, "carrier": "view_label" }],
+      "effect": "read_only",
+      "emission_touch": false
+    },
+    {
+      "id": "tx-orchestrate-core",
+      "seq": 7,
+      "name": "orchestrate",
+      "door_id": "core",
+      "inputs": [
+        { "name": "compose", "ty_hint": null, "carrier": "strand_section" },
+        { "name": "views", "ty_hint": null, "carrier": "view_label" }
+      ],
+      "outputs": [{ "name": "composed_facade", "ty_hint": null, "carrier": "other" }],
+      "effect": "compose",
+      "emission_touch": false
+    }
+  ],
+  "timeline": [
+    {
+      "t": "fixture-hologram-ir-v0.1.0",
+      "kind": "pass_receipt",
+      "summary": "Sealed golden IR v0.1.0 — plan overlay only; no AST items",
+      "ir_diff": null
+    },
+    {
+      "t": "birth-gate-blocked",
+      "kind": "birth_gate",
+      "summary": "All seven births ineligible: pointer-emission.md not human-accepted",
+      "ir_diff": null
+    }
+  ],
+  "diagnostics": [
+    {
+      "severity": "info",
+      "code": "FIXTURE_MODE",
+      "message": "No Rust AST parsed. Doors/edges/transforms are plan-shaped golden data for viewer spike.",
+      "span": null
+    },
+    {
+      "severity": "warn",
+      "code": "EMISSION_GATE_BLOCKED",
+      "message": "Implementation gate closed. Do not treat fixture doors as proved births or permit src/.",
+      "span": null
+    },
+    {
+      "severity": "info",
+      "code": "NO_AST_ITEMS",
+      "message": "items[] empty until host extractor runs against fixture crates or real first-party sources.",
+      "span": null
+    }
+  ]
+}
