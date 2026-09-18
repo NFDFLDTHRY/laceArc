@@ -1,7 +1,7 @@
-STATUS: HELD
+STATUS: FREE
 STATION: renderer
 OWNS: docs/shadow-clock-gearing.html
-AGENT: LaceArc
-BASE: 95c0e6035b77b130a3d0ff05a93ad510f89684b2
-SINCE: 2026-09-18T20:39:51Z
+AGENT: -
+BASE: -
+SINCE: -
 NOTE: 
