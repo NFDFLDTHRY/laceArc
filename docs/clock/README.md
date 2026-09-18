@@ -15,7 +15,8 @@ Moved here in defrag pass 3.
 | hcc-a-mechanisms-plan.md | PLAN: ASCII systems map of HCC-A internals only |
 | hcc-a-systems-manifest.md | HCC-A clipboard. Pipeline register is the composition. Stations H1–H11 remain below. Not Core. |
 | coffee-cup-systems-manifest.md | Event-time clipboard C1–C5 + loop. Not Core. |
-| coffee-cup-pass-6-plan.md | Pass 6 plan. Executed: physical specimen, C2 triad, C5 interventions. Last Cup-only pass. |
+| water-systems-manifest.md | Water clutch clipboard. OBS ≠ POINTER. Not Core. |
+| water-pass-1-plan.md | Pass 1 plan. Executed. |
 | agent-interaction-model.md | elephant clock `[PROPOSAL]` |
 | system-mathematical-model.md | Hands L + Shadow H; emission `[GAP]` |
 
