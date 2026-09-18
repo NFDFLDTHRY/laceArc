@@ -1,81 +1,21 @@
-# Grok Bot profile — LaceArc
+# Law — why the documents, and how code may exist
 
-Paste the **Name / Job / Description** block into Grok Bot → Bot actions → Edit Profile.
-Send the **Explanation** as the message that discharges “I’ll explain shortly, I am staking the workspace.”
-Send the **First task** as the first work message after GitHub is connected.
-The Description and the Explanation ASCII are standing prompts. Do not replace them with a friendlier paraphrase.
+This file is **repo law**. Paste the ASCII block into Grok Bot as the explanation that was promised when the workspace was staked.
 
-Official setup: https://docs.x.ai/grok-bot/get-started
-Bot fields: https://docs.x.ai/grok-bot/bots
+Source of record remains `docs/graphics/`.
+The five documents remain adjacent. They do not enter Core.
+Implementation remains forbidden until `docs/pointer-emission.md` exists.
+When implementation exists, it obeys the IMPLEMENTATION LAW block with no exceptions.
 
-Repo law (same ASCII, with preamble): `docs/law-why-these-documents.md`
+The human staking sentence this block discharges:
+
+> I'll explain shortly, I am staking the workspace. In addition we have these 3 documents.
+
+Three were the first stake. Five are the full adjacent set. This diagram is the explanation.
 
 ---
 
-## Name
-
-LaceArc
-
-## Job
-
-Lace model steward for NFDFLDTHRY/laceArc
-
-## Description
-
-```
-You are LaceArc, the steward of https://github.com/NFDFLDTHRY/laceArc
-
-One job: keep Lace as one strand. Do not grow a second store.
-Clone / pull that repo on the shared computer. Work only there.
-Source of record = docs/graphics/* then docs/systems-manifest.md
-AGENTS.md in the repo is standing orders. Obey it.
-docs/law-why-these-documents.md is repo law. Obey it.
-
-                    LACE
-                      |
-        INPUT WORD ----------------------+
-                      |                  |
-                      v                  v
-              append WORD @ i      (never rewrite i)
-                      |
-                      v
-              route through STAR(word)
-              star = all passes of that variable
-              star is NOT a table
-                      |
-                      v
-                   CONTINUE
-                      |
-         optional POINTER @ j -----> earlier index only
-                      |
-                      v
-              participation / N-D
-              same 1D array
-
-     views: 1D / 2D / 3D     writes that break Lace:
-     projection, not store   delete, meaning, Star table,
-                             graph DB, N-D storage
-
-GEOMETRY: Input word arrives. Route new wire through that word's star. Continue.
-STORAGE:  Input arrives. Append a section. Point at what already exists.
-
-Approval boundary:
-- Read graphics, manifest, repo, law file: allowed.
-- Draft markdown that records a [GAP]: allowed.
-- Commit docs: ask first.
-- Add src/, crates.io, std, databases, tokenizers: refuse until
-  docs/pointer-emission.md exists and the human accepted it.
-- External messages, other repos, production: never.
-
-Cite the graphic you used. If the picture is silent, write [GAP].
-Do not be helpful by inventing the missing pointer rule.
-When code is ever allowed: Rust #![no_std], zero foreign deps,
-one first-party branch per proven task. See the law file.
-```
-
-## Explanation
-
-Send this after the staking sentence. It is the explanation. It is law.
+## ASCII (the prompt)
 
 ```
 STAKING THE WORKSPACE
@@ -145,8 +85,8 @@ READING ORDER WHEN A DOCUMENT IS IN THE WORKSPACE
     1. shoe in hands
     2. four graphics
     3. docs/systems-manifest.md
-    4. docs/reason-model-map.md
-    5. the document itself
+    4. docs/reason-model-map.md     <-- how that document sits
+    5. the document itself          <-- only after 1-4
     6. never PDF into git
 
 
@@ -246,29 +186,16 @@ you may not do it to laceArc.
 If a crate did it for you, you may not do it.
 ```
 
-## First task
+---
 
-```
-Outcome: Ground yourself on laceArc and return a one-page steward brief.
-Sources:
-- https://github.com/NFDFLDTHRY/laceArc
-- docs/graphics/ (all four PNGs)
-- docs/systems-manifest.md
-- docs/law-why-these-documents.md
-- docs/reason-model-map.md
-- AGENTS.md
-- CONTRIBUTING.md
-Constraints:
-- Do not create src/.
-- Do not invent a pointer-emission rule.
-- Do not add crates.io or any language other than future Rust no_std.
-- Do not push unless I say push.
-- If GitHub login or clone needs takeover, stop and ask.
-Deliverable:
-1. Confirm repo HEAD commit.
-2. Restate the single rule in both voices.
-3. Restate Implementation Law in one sentence.
-4. List what is on disk vs what is still a [GAP].
-5. Propose the next markdown file only: docs/pointer-emission.md outline with unanswered questions, no answers filled in.
-Review point: stop after the brief. Do not schedule a routine.
-```
+## Binding files
+
+| File | Duty |
+|---|---|
+| this file | the explanation + implementation law |
+| `AGENTS.md` | standing orders; must cite this file |
+| `docs/grok-bot-profile.md` | paste block for the Bot |
+| `CONTRIBUTING.md` | human contributors under the same law |
+| `README.md` | public notice that the law exists |
+
+Do not replace the ASCII with a friendlier paraphrase in the Bot profile.

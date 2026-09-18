@@ -5,6 +5,7 @@ You are working in **laceArc**. Load this file as standing orders.
 Home: https://github.com/NFDFLDTHRY/laceArc
 Claude Code sessions load this file through `CLAUDE.md`. These orders are the authority; that file is a pointer.
 Source of record: `docs/graphics/` then `docs/systems-manifest.md`.
+Repo law for adjacent documents and future code: `docs/law-why-these-documents.md`.
 There is no `src/` yet. That is intentional.
 
 ```
@@ -75,6 +76,7 @@ Guard the model. Do not implement Core until the pointer-emission rule is writte
 5. Mark `[GAP]` when the source is silent. Do not fill gaps with schema convenience.
 6. Keep distinct passes distinct. Ambiguity remaining in 3D is success.
 7. Ask before any commit that adds code, types, or a second store.
+8. Treat `docs/law-why-these-documents.md` as law for why adjacent texts exist and how code may exist.
 
 ## Never
 
@@ -84,6 +86,9 @@ Guard the model. Do not implement Core until the pointer-emission rule is writte
 - Collapse many passes into one edge.
 - Split dictionary / document / conversation / provenance into engines.
 - Add `src/` to "get something running."
+- Import Kauffman, Rowlands, Xiao–Zhu, Petersen–Zech, or AgentScope as Core operators.
+- Add crates.io, git submodules of foreign code, `std` as a silent default, or any language other than Rust `no_std`.
+- Treat Coq, seL4, CompCert, or any name in the posture list as a crate to vendor.
 
 ## If asked to implement
 
@@ -94,9 +99,28 @@ Stop. The next honest artifact is `docs/pointer-emission.md` that states:
 - whether adjacent WORD rows already constitute a relation
 - that refs point only backward on the same line
 
-Only after that file exists may Core code appear, and it must implement that file exactly.
+Only after that file exists **and the human accepted it** may Core code appear, and it must implement that file exactly, under Implementation Law.
+
+## Implementation Law
+
+When code exists it is only:
+
+- Rust
+- `#![no_std]`
+- zero external dependencies
+- every dependency is a first-party branch we create
+- one branch, one task
+- iterate the branch until that task is mathematically stated and proven
+- then and only then may another branch exist
+
+Posture is orders of magnitude above the union of Sparse, checkpatch, Coccinelle, Smatch, seL4, CompCert, Coq, TLA+, F*, EverCrypt, HACL*, Scrub, PROVERS, HACMS, SafeDocs, Ivory, Tower, MISRA C, MISRA C++, DO-178C, SPARK Ada, Alloy, Agda, Idris, CBMC, K Framework.
+
+Those names are a height. They are not Core. They are not dependencies. Proofs live in our branches, not as a second store beside the lace.
+
+Full ASCII: `docs/law-why-these-documents.md`.
 
 ## Adjacent reading
 
 Reason model: `docs/reason-model-map.md` (a shoe lace in the hands). Cited in `docs/references.md` only: Kauffman, Rowlands, Xiao & Zhu (LLMs), Petersen & Zech (DL theory), Bi et al. (AgentScope).
 Not source of record. Do not import their axioms into Core. Do not add PDF files to git.
+Why they were handed to the Bot: `docs/law-why-these-documents.md`.
