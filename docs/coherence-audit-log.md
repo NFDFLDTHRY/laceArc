@@ -64,3 +64,27 @@ Related prior: [downstream-audit.md](downstream-audit.md) (do not erase; re-chec
 - fix: docs/rust-nostd-crate-map.md (steward untracked→tracked); docs/rust-nostd-branch-contracts.md (outline PRESENT on live tip; linkable; outline≠acceptance)
 - cites: docs/rust-nostd-crate-map.md; docs/rust-nostd-branch-contracts.md; docs/agentscope-clipboard.md; docs/pointer-emission-prompt.md; docs/pointer-emission.md (still DRAFT)
 - emission contact: none
+
+### tick 2026-09-18 · station A8 · tip 94cdba8c67dbea209213b49f7cb2a476044b09e6
+Agent: LaceArc. Date: America/Los_Angeles.
+- finding: After ff to tip (defrag shelved prompts→docs/prompts/). Canonical 47 keys in gearing-code-1to1.md match Object.assign keys across all eight docs/gearing/contracts-*.js (axle; A B C AB BC CA; A1–A9; B1–B5; C1–C10; t0–t6; E1 E2 R1; X1–X6). HTML loads all 8 shafts via relative script src (no fetch/CDN/Three.js lib). pickTargets = {A,B,C,axle} + mesh bands AB/BC/CA (after 2b2e882; camera face-on 6fb2dac; HUD rail f995e44) — PAGE F + steward pick-set notes match. OPEN pixel drift: primary look still plastic buildGear; hologram restyle prompt exists at docs/prompts/gearing-html-hologram-restyle-prompt.md but not applied on main (b8d7e73 not ancestor). Did not restyle HTML; did not edit contracts bodies; did not invent keys or fill emission. RESYNC STATUS FIRED; live tip origin/main = this tip.
+- kind: drift
+- fix: docs/gearing-code-1to1.md (steward note: plastic vs hologram pixel debt + restyle prompt path under docs/prompts/)
+- cites: docs/gearing-code-1to1.md (PAGE C/F; steward); docs/gearing/contracts-*.js; docs/shadow-clock-gearing.html (script srcs; pickTargets); docs/prompts/gearing-html-hologram-restyle-prompt.md; docs/gearing/README.md
+- emission contact: none
+
+### tick 2026-09-18 · station A9 · tip 94cdba8c67dbea209213b49f7cb2a476044b09e6
+Agent: LaceArc. Date: America/Los_Angeles.
+- finding: Restyle prompt (now docs/prompts/gearing-html-hologram-restyle-prompt.md post-defrag) cites correct template paths (docs/hologram/clockwork-view-lattice.jpg, clockwork-view-crossing.png, clockwork-view-traces.jpg) — all three present. hologram/README forbids cubes/orbs/arrows as Graphic D types; restyle prompt PAGE A/F/X agrees. Root README rows the restyle prompt at the new path. visual-primitives.md §2.5 stacks law cited. OPEN expected: live shadow-clock-gearing.html not yet restyled to lattice/crossing/traces (plastic primary) — pixel debt only; do not invent Core. No path fixes needed this tick.
+- kind: drift
+- fix: none (log-only pixel debt; paths/law already coherent post-defrag)
+- cites: docs/prompts/gearing-html-hologram-restyle-prompt.md; docs/hologram/README.md; docs/hologram/visual-primitives.md (§2.5); docs/hologram/clockwork-view-{lattice,crossing,traces}.*; README.md (restyle row); docs/shadow-clock-gearing.html
+- emission contact: none
+
+### tick 2026-09-18 · station A10 · tip 94cdba8c67dbea209213b49f7cb2a476044b09e6
+Agent: LaceArc. Date: America/Los_Angeles.
+- finding: Headers align — hologram / agent-brief / gear-contracts all Status Not Core / not sixth graphic; emission [GAP] sealed; Hands win on Core clash. Brief product path still docs/shadow-clock-gear-contracts.md (walk artifact); docs/prompts/shadow-clock-shared-interactive-prompt.md names gear-contracts as contract-body authority. No Shadow→Hands promotion. Cross-links resolve; no stale ABSENT/untracked notes on these surfaces. Did not rewrite contract bodies.
+- kind: ok
+- fix: none
+- cites: docs/shadow-clock-hologram.md; docs/shadow-clock-agent-brief.md; docs/shadow-clock-gear-contracts.md; docs/prompts/shadow-clock-shared-interactive-prompt.md (authority line)
+- emission contact: silenced → [GAP]

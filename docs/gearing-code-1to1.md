@@ -238,6 +238,7 @@ X1 X2 X3 X4 X5 X6
 - Math model two-universe split matches PAGE B. Homomorphism wall ≠ Φ.
 - **HUD refresh (2026-09-18):** labels live in a screen-fixed rail (mobile: wrap under canvas). They no longer project onto gear teeth. Keys and 1:1 unchanged.
 - **Adjacent maps:** `rust-nostd-crate-map.md` + `rust-nostd-branch-contracts.md` are Hands/plan. `pointer-emission.md` is DRAFT `[GAP]` questions — not a gearing key and not acceptance.
+- **Plastic vs hologram skin (pixel debt, 2026-09-18):** live `docs/shadow-clock-gearing.html` still uses extruded plastic `buildGear` as primary look. Restyle is **not** done on `main` (side commit `b8d7e73` is not an ancestor). Standing restyle prompt: `docs/prompts/gearing-html-hologram-restyle-prompt.md` (lattice/crossing/traces + visual-primitives §2.5). Keys/picks unchanged; do not invent Core to close pixels.
 - **Elephant clock** (`agent-interaction-model.md`) is steward feeler law. It is not a `LACE_CONTRACTS` key set and must not be folded into this bijection.
 
 Shoe in hands, or no.
