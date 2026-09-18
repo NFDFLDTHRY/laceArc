@@ -167,15 +167,27 @@ struct VSOut { @builtin(position) p: vec4<f32>, @location(0) wpos: vec3<f32>, @l
 @fragment fn fs(i: VSOut) -> @location(0) vec4<f32> {
   let appear = smoothstep(i.born - 0.15, i.born + 0.05, u.t.x);
   if (appear < 0.02) { discard; }
-  let L = normalize(vec3<f32>(0.4, 0.9, 0.2));
+  let L = normalize(vec3<f32>(0.25, 1.0, 0.35));
   let N = normalize(i.nrm);
   let V = normalize(u.eye.xyz - i.wpos);
-  let diff = max(dot(N, L), 0.12);
-  let spec = pow(max(dot(reflect(-L, N), V), 0.0), 32.0);
-  let glow = i.col * (0.35 + 0.65 * diff) + vec3<f32>(spec) * 0.35;
-  let fog = clamp(length(i.wpos - u.eye.xyz) / 18.0, 0.0, 1.0);
-  let rgb = mix(glow, vec3<f32>(0.02, 0.04, 0.06), fog);
-  return vec4<f32>(rgb * appear, 0.92 * appear);
+  let fres = pow(1.0 - max(dot(N, V), 0.0), 2.4);
+  let diff = max(dot(N, L), 0.08);
+  let spec = pow(max(dot(reflect(-L, N), V), 0.0), 48.0);
+  let hash = fract(sin(dot(i.wpos.xz, vec2<f32>(12.99, 78.23))) * 43758.5);
+  var rgb = i.col * (0.22 + 0.55 * diff);
+  rgb += i.col * fres * 0.55;
+  rgb += vec3<f32>(spec) * 0.45;
+  if (i.col.g > 0.7 && i.col.r < 0.4) {
+    rgb += vec3<f32>(0.05, 0.35, 0.12) * hash;
+    rgb *= 0.75 + 0.55 * hash;
+  }
+  if (i.col.r > 0.7) {
+    rgb += vec3<f32>(0.35, 0.08, 0.0) * (0.4 + 0.6 * hash);
+  }
+  let fog = clamp(length(i.wpos - u.eye.xyz) / 16.0, 0.0, 1.0);
+  rgb = mix(rgb, vec3<f32>(0.01, 0.03, 0.05), fog * 0.85);
+  let alpha = mix(0.55, 0.95, fres) * appear;
+  return vec4<f32>(rgb * appear, alpha);
 }
 `;
 
@@ -209,25 +221,33 @@ function buildScene(){
       C.push(...col); B.push(born);
     }
   }
-  const box=cube(0.42), core=cube(0.22), ball=sphere(0.55);
+  const box=cube(0.46), shell=cube(0.50), core=cube(0.20), ball=sphere(0.62, 14), ballIn=sphere(0.38, 10);
   for(const r of D1){
     const off=posOf(r.i);
     if(r.k==="WORD"){
-      add(box,[1.0,0.35,0.12],off,r.i);
-      add(core,[1.0,0.55,0.15],off,r.i);
-      if(r.v==="PIE") add(ball,[0.15,1.0,0.35],[off[0],off[1]+0.95,off[2]], r.i);
+      add(shell,[0.55,0.18,0.08],off,r.i);
+      add(core,[1.0,0.45,0.08],off,r.i);
+      if(r.v==="PIE"){
+        add(ball,[0.12,0.95,0.32],[off[0],off[1]+1.05,off[2]], r.i);
+        add(ballIn,[0.05,1.0,0.22],[off[0],off[1]+1.05,off[2]], r.i);
+      }
     } else {
-      add(cube(0.22),[0.2,0.75,1.0],off,r.i);
+      add(cube(0.16),[0.15,0.55,0.95],off,r.i);
       const A=posOf(r.a), Bb=posOf(r.b);
-      const mid=[(A[0]+Bb[0])/2, 1.1+(r.i%3)*0.15, (A[2]+Bb[2])/2];
-      add(beam(A, mid, 0.035),[0.35,0.9,1.0],[0,0,0],r.i);
-      add(beam(mid, Bb, 0.035),[0.35,0.9,1.0],[0,0,0],r.i);
+      const mid=[(A[0]+Bb[0])/2, 0.22+(r.i%3)*0.06, (A[2]+Bb[2])/2];
+      add(beam(A, mid, 0.018),[0.25,0.85,1.0],[0,0,0],r.i);
+      add(beam(mid, Bb, 0.018),[0.25,0.85,1.0],[0,0,0],r.i);
     }
   }
-  const fl=cube(0.02);
-  for(let x=-8;x<=8;x++) for(let z=-8;z<=8;z++){
-    add({p:[x,0,z, x+1,0,z, x+1,0,z+0.02, x,0,z, x+1,0,z+0.02, x,0,z+0.02],
-         n:[0,1,0,0,1,0,0,1,0,0,1,0,0,1,0,0,1,0]}, [0.05,0.18,0.28],[0,0,0], -1);
+  for(let x=-10;x<=10;x++){
+    add(beam([-10.5,0.01,x*0.7],[10.5,0.01,x*0.7], 0.012),[0.04,0.22,0.38],[0,0,0], -1);
+  }
+  for(let z=-10;z<=10;z++){
+    add(beam([z*0.7,0.01,-10.5],[z*0.7,0.01,10.5], 0.012),[0.04,0.22,0.38],[0,0,0], -1);
+  }
+  for(let i=0;i<24;i++){
+    const x=((i*5)%17)-8, z=((i*9)%17)-8;
+    add(cube(0.05),[0.9,0.25,0.05],[x*0.7,0.04,z*0.7], -1);
   }
   return {P,N,C,B};
 }
