@@ -97,5 +97,5 @@ Only after that file exists may Core code appear, and it must implement that fil
 
 ## Adjacent reading
 
-Cited in `docs/references.md` only: Kauffman, Rowlands, Xiao & Zhu (LLMs), Petersen & Zech (DL theory), Bi et al. (AgentScope).
+Reason model: `docs/reason-model-map.md` (a shoe lace in the hands). Cited in `docs/references.md` only: Kauffman, Rowlands, Xiao & Zhu (LLMs), Petersen & Zech (DL theory), Bi et al. (AgentScope).
 Not source of record. Do not import their axioms into Core. Do not add PDF files to git.

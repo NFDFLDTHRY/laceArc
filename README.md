@@ -30,6 +30,7 @@ Same rule. Same strand. 3D stars and N-dimensional participation are readings of
 | [AGENTS.md](AGENTS.md) | Standing orders for any Grok / Grok Bot / Grok Build session in this tree. |
 | [docs/grok-bot-profile.md](docs/grok-bot-profile.md) | Name, job, ASCII description, and first task to paste into Grok Bot. |
 | [docs/references.md](docs/references.md) | Adjacent books (Kauffman, Rowlands). Citations only. PDFs are not in this public repo. |
+| [docs/reason-model-map.md](docs/reason-model-map.md) | Physical shoe lace as reason model. How five adjacent works may and may not touch Core. |
 
 There is no `src/` on purpose. Code that appears before the pointer-emission rule is locked will invent a second machine.
 
