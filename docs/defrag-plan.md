@@ -1,8 +1,7 @@
 # Defrag plan (PREPARE only)
 
-Status: **PASS 1 `94cdba8`. PASS 2 `f1adf2d`. HTML `12e4021`. PASS 3 `b7ed9a6`.**
-PASS 4 DONE locally under maps claim — rust plans in `docs/plans/`.
-POINTER emission stays `[GAP]`. README catalog (law station) still lists old rust paths until a law tick.
+Status: **PASS 1–4 on main.** PASS 5 executing (stale-path sweep).
+POINTER emission stays `[GAP]`. Maps BASE refreshed to live tip before this tick.
 
 Shoe test: filing, not wrapping the cord.
 
@@ -291,12 +290,60 @@ One commit. Shelves only.
 
 ### After
 
-Defrag **filing** is complete. Remaining open work is not filing:
+Defrag **filing** of folders is complete after pass 4. Remaining open work is not new shelves:
 
 - POINTER emission `[GAP]`
-- Petersen unfilled
-- RESYNC FIRED until you CLEAR
-- `lace-projection-brief.md` absent
+- Petersen clipboard now exists (pass-4 plan text above is stale)
+- RESYNC was CLEARED
+- `lace-projection-brief.md` still absent
+
+---
+
+## PASS 5 PLAN (stale-path sweep) — do not run until “go pass 5”
+
+No new folder. Pass 5 rewrites **old path strings** left by passes 1–4.
+
+### Leave at `docs/` root (not a move)
+
+Hands + ops + maps that belong at the court:
+
+```
+systems-manifest.md
+graphics-close-reading.md
+law-why / staking / reason-model-map
+pointer-emission.md          DRAFT / [GAP]
+references.md
+coherence-audit-log.md
+defrag-plan.md
+atomic-primitives-map.md     maps; sibling of reason-model-map, not rust
+```
+
+Do **not** move `atomic-primitives-map.md` into `docs/plans/` (that shelf is rust `[PLAN]` only).
+
+### Sweep by station (one station per commit)
+
+| Station | What to fix |
+|---|---|
+| prompts | `docs/rust-nostd-*.md` → `docs/plans/rust-nostd-*.md` in rust + 1:1 prompts. Historical ASCII boxes may keep the old path as *then-write* and add a one-line NOW path |
+| clipboards | Petersen “work already present” row still names pre-shelf paths; date it, don’t pretend those edits happened at the new path |
+| maps | this plan file; any remaining rust root paths in coherence log |
+| law | only if README/AGENTS still point at a dead rust root path (pass-4 law tick already moved catalog rows) |
+| kit / hologram / history | only if `which` + grep still find dead `docs/<old-name>` |
+
+Do **not** rewrite `claim.sh`. Do **not** touch renderer (currently HELD LaceArc). Do **not** invent emission. Do **not** invent the projection brief.
+
+### Renderer hold (out of scope)
+
+`renderer` is HELD by LaceArc with BASE `36003dd` while tip has moved. That is a refresh/release for that agent, not a defrag folder.
+
+### Commit shape
+
+One station, one commit. First ticket if you say go: **prompts**, then clipboards.
+
+### After pass 5
+
+Filing + path sweep done. Next work is Hands (`[GAP]`), not shelves.
+
 
 
 
