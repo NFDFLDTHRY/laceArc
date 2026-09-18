@@ -105,7 +105,47 @@ Knobs modulate payload, they do not add stages.
 | P6 E handling | Mode D → πB; Mode C → πL; Mode B → reweight M; ignore → drop E |
 | P7 ISL style | how πISL compresses |
 
+### Packet dictionary (pass 4)
+
+Packets do not mix. Attachment wins on what the packet *is*.
+
+| Packet | Produced by | Consumed by | Not |
+|---|---|---|---|
+| constraint | πR | πI | a readable object inside a mind |
+| raw signal | πI | πRIC and πPFC | a compile |
+| ordered trace | πRIC | πC | a second P0 |
+| schema stream | πPFC | πC | Contract II ingest |
+| ledger op | πC | πL | P4 |
+| ledger state | πL | πM, πISL | Graphic D |
+| weight / transition | πM | πE, πB, πISL | project-meaning routes |
+| affect | πE | πISL, πB (local) | a transmissible packet |
+| identity snapshot | πISL | πB, πID | a star |
+| act | πB | πFB | POINTER |
+| next-world structure | πFB | next πRIC | an append |
+
+### Station ↔ π bijection (pass 4)
+
+| Station | π | Payload agreement |
+|---|---|---|
+| H1 R | πR | constraint. match |
+| H2 I | πI | raw signal. match |
+| H3 RIC | πRIC | ordered trace. match after stamp |
+| H4 PFC | πPFC | schema stream. match after stamp |
+| H5 C | πC | {ordered trace, schema stream} → ledger op. match after valve sentence |
+| H6 L | πL | ledger op → ledger state. match |
+| H7 M | πM | ledger state + P2 → weight/transition. match |
+| H8 E | πE | weight/transition → affect. match |
+| H9 ISL | πISL + πID | snapshot out; priors to next PFC. two sinks kept |
+| H10 B | πB | act. match |
+| H10b Feedback | πFB | act → next-world structure. not πID |
+| H11 YAML | (trace) | records packets + knobs. not a π |
+| SM S0–S7 | T column | stages. match |
+| P1–P7 | valves | knobs. match |
+| Acts I–V | fold / read | no second mill |
+| Act VI | write into πID | only Act that writes |
+
 Stations H1–H11 / SM / P / Acts below are the same mill written as puzzle pieces. The register above is the composition.
+
 
 
 
@@ -152,11 +192,11 @@ Stations H1–H11 / SM / P / Acts below are the same mill written as puzzle piec
 - **Kind:** Mechanism / input shaft
 - **Source location:** §1 H3; Gear H dual shaft
 - **Purpose:** Preserve external structure as faithfully as possible. Examples in source: “X said Y”, “door closed”, “bank account at $23.14”, timing, sequence, spatial relations, cause/effect traces.
-- **Inputs:** Raw signals from I.
-- **Outputs:** Structured arrival traces into Compiler C, in parallel with PFC.
-- **Preconditions:** I is handing signals. PFC is also turning.
+- **Inputs:** Raw signal packet from I.
+- **Outputs:** Ordered-trace packet into C, in parallel with PFC.
+- **Preconditions:** I is handing signals. PFC is also turning. Dual shaft + P4 valve.
 - **Effects:** None on Graphic D. Must not become a second log.
-- **Invariants:** Order kept. Structure kept. Runs in parallel with PFC.
+- **Invariants:** Order kept. Structure kept. Same packet family as PFC (raw signal in). This transform emits ordered trace. PFC-only is a blocked pipe.
 - **Failure modes:** RIC stored as a second punch-card beside the array. RIC silenced so PFC-only wins.
 - **Boundary & Coupling:** Interface-coherence: RIC’s structured arrival is the only HCC output that matches Core Piece 3’s *kind* (order kept). It is still not Piece 3. Kin-read `[I]`, not implementation.
 - **Implementation implications:** If someone “implements RIC” as a table, they built a second store.
@@ -170,10 +210,10 @@ Stations H1–H11 / SM / P / Acts below are the same mill written as puzzle piec
 - **Source location:** §1 H4; ISL feedback
 - **Purpose:** Same signals routed through priors, templates, roles, threat models, cultural narratives, ideology, religion, fandoms. Apply pre-existing schemas and assign probable interpretations before full compilation. Schema *strength* is a knob (override raw input vs suggest probabilities) — see P1.
 - **Inputs:** Raw signals from I. Priors from ISL_{n−1}.
-- **Outputs:** Pre-interpreted stream into C, in parallel with RIC.
-- **Preconditions:** An identity/prior pack exists or is empty. Empty is still a shaft, not an absence of the shaft.
+- **Outputs:** Schema-stream packet into C, in parallel with RIC.
+- **Preconditions:** An identity/prior pack exists or is empty. Empty is still a shaft, not an absence of the shaft. Dual shaft + P4 valve.
 - **Effects:** Can starve RIC if it wins arbitration.
-- **Invariants:** Must turn with RIC. PFC is the previous identity installed as a pre-filter.
+- **Invariants:** Must turn with RIC. Same packet family as RIC (raw signal in). This transform emits schema stream. PFC is the previous identity installed as a pre-filter. PFC-only is a blocked pipe.
 - **Failure modes:** PFC as Contract II ingest = Xiao intern + meaning table before append. `[X]`
 - **Boundary & Coupling:** Tight loop with ISL. High dependency on H9. Conflict as Core ingest.
 - **Implementation implications:** Adjacent as diagnosis of why a steward misreads Graphic D. Not a row type.
@@ -186,11 +226,11 @@ Stations H1–H11 / SM / P / Acts below are the same mill written as puzzle piec
 - **Kind:** Mechanism
 - **Source location:** §1 H5
 - **Purpose:** “Mechanism that converts structure → story.” Updates the Story Ledger.
-- **Inputs:** RIC structure and PFC interpretation, both present.
-- **Outputs:** Story updates into L.
-- **Preconditions:** Dual shafts turning. Arbitration mode chosen (RIC-dominant / PFC-dominant / compiler / identity) — source names the modes; exact arbiter algorithm `[GAP]` in-repo.
+- **Inputs:** Ordered-trace packet (RIC) and schema-stream packet (PFC). Same family, two transforms, one P4 valve.
+- **Outputs:** Ledger-op packet into L.
+- **Preconditions:** Dual shafts turning. Valve chosen (RIC-dominant / PFC-dominant / compiler / identity). Numeric switching procedure `[GAP]`.
 - **Effects:** L changes. Core must not see this as an operator.
-- **Invariants:** C is inside the box. Structure→stored-story is forbidden as Core.
+- **Invariants:** C is inside the box. Structure→stored-story is forbidden as Core. PFC-only is a blocked pipe, not a reorder.
 - **Failure modes:** C as Core operator. Piece 14 dies.
 - **Boundary & Coupling:** Entangled with L (C exists to write L). Not a clean cut from H6.
 - **Implementation implications:** Do not implement C as a write path on Graphic D.
@@ -203,8 +243,8 @@ Stations H1–H11 / SM / P / Acts below are the same mill written as puzzle piec
 - **Kind:** Store (holder oil)
 - **Source location:** §1 H6; opening Rule Zero warning
 - **Purpose:** Internal event log / ledger. Contains concrete, abstract, imagined, and inferred events. Supports addition, merging, re-indexing, deletion/suppression. “Ledger is not narrative form.” It is the underlying data the mind later uses to construct narrative.
-- **Inputs:** Compiler updates.
-- **Outputs:** Ledger state to Meaning Engine M.
+- **Inputs:** Ledger-op packet from C.
+- **Outputs:** Ledger-state packet to M (and residue to ISL).
 - **Preconditions:** A compilation occurred or an empty ledger is allowed — source does not freeze the empty case. `[GAP]`
 - **Effects:** Oil mutates. Addition-only would have been kin to Rule Zero. The spec does not stop at addition.
 - **Invariants:** L is not Graphic D. L ops are housing-legal and tape-illegal.
@@ -220,8 +260,8 @@ Stations H1–H11 / SM / P / Acts below are the same mill written as puzzle piec
 - **Kind:** Mechanism
 - **Source location:** §1 H7; project-meaning contrast in philosophy-map
 - **Purpose:** Weights + transitions on the ledger. “Meaning is directive.” Modes: descriptive / evaluative / directive.
-- **Inputs:** Current Ledger (L). Internal value/priorities.
-- **Outputs:** Weights (how important each event/cluster is). Transitions that should change: beliefs, priorities, roles, future expectations, allowed behaviors.
+- **Inputs:** Ledger-state packet. Internal value/priorities (P2).
+- **Outputs:** Weight / transition packets.
 - **Preconditions:** A ledger to weight.
 - **Effects:** Can stall as commentary (descriptive/evaluative — “most people live here”) or turn the loop (directive — “sovereignty and consistent agency”).
 - **Invariants:** HCC-A M is not this project’s “meaning” (routes / touches / participation). Meaning is directive in the spec: it does not just label.
@@ -255,7 +295,7 @@ Stations H1–H11 / SM / P / Acts below are the same mill written as puzzle piec
 - **Source location:** §1 H9; loop `ISL_n → PFC_{n+1}`
 - **Purpose:** Compression into “what kind of agent am I.” Updated rules/priors for future compilation.
 - **Inputs:** Ledger state. Meaning weights and transitions. Emotional patterns over time.
-- **Outputs:** Current identity snapshot. Updated rules/priors for future compilation.
+- **Outputs:** Identity-snapshot packet to B. Priors packet into πID / next PFC. Two sinks: do not fuse with πFB.
 - **Preconditions:** Integration across story + meaning + repeated emotional patterns — source names the ingredients; exact halt clock `[GAP]`.
 - **Effects:** Changes the next PFC. Does not change a star. Identity is not aesthetics or self-descriptions; it is “what kind of agent am I in this world?”
 - **Invariants:** Identity snapshot is not a star. A star is wraps through a word.
@@ -288,11 +328,11 @@ Stations H1–H11 / SM / P / Acts below are the same mill written as puzzle piec
 - **Kind:** Loop / world write
 - **Source location:** attachment §2.8; SM S7
 - **Purpose:** Behavior alters Reality / environment. New events become new structure. Loop restarts.
-- **Inputs:** B (the act).
-- **Outputs:** Changed R. New conditions into S0 / next RIC.
+- **Inputs:** Act packet from B.
+- **Outputs:** Next-world structure (changed R) into next S0 / πRIC. Not a priors packet. πFB ≠ πID.
 - **Preconditions:** A B occurred, including freeze/silence.
-- **Effects:** Outer structure changes. ISL→PFC priors are Act VI / S7 companions, not this piece’s only job.
-- **Invariants:** Feedback is not a second output shaft. It is B hitting R. Not a Graphic D append rule.
+- **Effects:** Outer structure changes. ISL→PFC priors are πID / Act VI, not this pipe.
+- **Invariants:** Feedback is not a second output shaft. It is B hitting R. Not P4. Not identity feedback.
 - **Failure modes:** Treating Feedback as POINTER emission. Treating “new structure” as license to intern.
 - **Boundary & Coupling:** Sits between H10 and H1. Zero shared state with the array.
 - **Implementation implications:** Do not implement Feedback as an array op.
@@ -304,7 +344,7 @@ Stations H1–H11 / SM / P / Acts below are the same mill written as puzzle piec
 
 - **Kind:** Parameter set / diagnostic wrapper
 - **Source location:** attachment §6
-- **Purpose:** Per-person or per-event config sheet. `schema_version: HCC-A-1.0`. Not a process layer (Acts) and not a knob body (P).
+- **Purpose:** Trace tape of this pipeline plus knob sheet. `schema_version: HCC-A-1.0`. Not a π. `person_model` = P knobs. `event_trace` = packets by Act fold.
 - **Inputs / field contract:**
   - `person_model.name`
   - `templates`: romance, conflict, authority, self, others
@@ -381,7 +421,7 @@ Stations H1–H11 / SM / P / Acts below are the same mill written as puzzle piec
 
 - **Kind:** Stage / diagnostic play
 - **Source location:** attachment §5
-- **Purpose:** Reusable play any mind runs when processing an event. Acts are **process layers, not content**.
+- **Purpose:** Fold / read of the pipe when processing an event. Acts are **process layers, not content**, and not a second mill.
 - **Stage assumptions (source):** Reality exists and constrains. Only structure crosses between minds. Meaning and story are local. RIC + PFC run in parallel. Full loop (C, L, M, E, ISL, B) is present.
 - **Acts:**
   - **I Scene & Stakes** — “What world am I in right now?” RIC captures; PFC names scene type. Scene vocabulary: argument, test, rejection, game, lesson, betrayal, opportunity. Output: perceived stakes + perceived roles. Prompts: “What kind of scene is this to you?” “If this were a movie, what type of scene would this be?”
@@ -391,10 +431,10 @@ Stations H1–H11 / SM / P / Acts below are the same mill written as puzzle piec
   - **V Behavior Emission** — “What do I do now?” Prompts: “Given everything you’re feeling and thinking, what feels like the only thing you can do?” “What options do you feel are off the table?”
   - **VI World Model & Template Update** — “What did this teach me about the world?” templates entrenched / weakened / split. Prompts: “What does this convince you people/the world are like?” “What rule about life does this reinforce for you?”
 - **Inputs:** An event or interaction.
-- **Outputs:** Diagnostic answers + Act VI template change into next PFC.
+- **Outputs:** Diagnostic answers. Act I–V read only. **Act VI only** writes (templates into πID / next PFC).
 - **Preconditions:** Stage assumptions above.
 - **Effects:** Act VI writes priors (oil). Not Graphic D.
-- **Invariants:** Acts align to SM but are the play framing, not a second machine.
+- **Invariants:** Acts align to SM / π T-column. Act II does not grow a second πL. Play framing, not a second machine.
 - **Failure modes:** Acts as WORD types. Act II merge as array merge.
 - **Boundary & Coupling:** Maps onto SM + H. Act VI couples to P1. Dependent diagnostic layer.
 - **Implementation implications:** Steward questions only.
@@ -685,6 +725,18 @@ Philosophy-map depths onto this climb:
 | D | project-meaning vs M only in H7 | two recursions, zero shared state |
 
 Atomic map not edited. Projection fetches this file.
+
+## Pass 4 clipboard deltas
+
+| Ticket | Action |
+|---|---|
+| T1 | Station ↔ π bijection table |
+| T2 | Packet dictionary |
+| T3 | Dual shaft + valve stamped on H3, H4, H5 |
+| T4 | πFB ≠ πID on H9 / H10b |
+| T5 | Acts fold the pipe; only Act VI writes |
+| T6 | H11 is trace tape, not a π |
+| T7 | Sealed `[GAP]`s left sealed |
 
 ---
 
