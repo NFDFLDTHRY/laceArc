@@ -4,7 +4,9 @@ Repo description: *Put a shoe lace in your hands or get out of here.*
 
 That sentence is the test, not branding. Source of record remains `docs/graphics/` and `docs/systems-manifest.md`. This file only says how five adjacent documents sit on the physical object those graphics already describe.
 
-Core pieces named below are the pieces in `docs/systems-manifest.md`. Adjacent texts do not add a sixth Core piece.
+Core pieces named below are the pieces in `docs/systems-manifest.md` (Pieces 1–15). Adjacent texts do not add a Core piece.
+
+**Mapping status:** pass 1/n. n is reached when (a) every Core piece has a hands verdict against each text that could be mistaken for it, (b) every author-piece that looks like wire/star/token/graph/rewrite has a verdict, (c) later chapters sampled as off-shoe stay off-shoe, (d) no emission rule is invented. Pass 1 does (a) for Pieces 8–15 and writes the stop-rule. Pass 2 must sample later chapters. Not complete.
 
 ---
 
@@ -90,8 +92,36 @@ These are not new Core pieces. They are how the Core pieces feel.
 ### RM6 — No tag that replaces the bow (no stored meaning)
 
 - **Kind:** Invariant
-- **Maps onto:** “No stored meaning — only routes, touches, and structure.”
+- **Maps onto:** Piece 14 No Stored Meaning / No Collapse
 - **Hands test:** The bow is the bow. A paper saying “bow = two loops and a knot” is not a section of the lace.
+
+### RM7 — The order of holes is the route
+
+- **Kind:** Mechanism
+- **Maps onto:** Piece 8 Sequence as Physical Route
+- **Hands test:** First eyelet, then the next, is the sentence. The sentence is not a second object tied beside the lace.
+- **Failure:** Bag-of-words. Reorder for syntax. Store “the sentence” as a unit.
+
+### RM8 — A definition is another pass, not a lexicon card
+
+- **Kind:** Mechanism
+- **Maps onto:** Piece 9 Dictionary Wiring
+- **Hands test:** Telling what PIE is means running the cord through dessert, slice, whole, food. Those eyelets are ordinary eyelets.
+- **Failure:** A tag on the PIE eyelet. A separate dictionary lace.
+
+### RM9 — A document is more wrapping of the same lace
+
+- **Kind:** Stage
+- **Maps onto:** Piece 10 Document Feed
+- **Hands test:** A paragraph is a longer run through the same eyelets. It is not a new shoe.
+- **Failure:** Per-document graph. [GAP] Graphic D has no DOCUMENT type.
+
+### RM10 — Extra axes are extra grabs, not extra rooms
+
+- **Kind:** Axis
+- **Maps onto:** Piece 11 Touch; Piece 12 Dimension; Piece 15 Star-Internal Traffic
+- **Hands test:** Conversation, provenance, dictionary, document are different ways the same cord can grab earlier wraps. Inside one eyelet the passes still cross. That crossing is traffic, not a node.
+- **Failure:** One table per axis. Flatten traffic to one edge.
 
 ---
 
@@ -441,6 +471,60 @@ Diagnostic use:
 
 ---
 
+## Pass 1 — Core Pieces 1–15 vs the five texts
+
+This is the hole the first map left: Pieces 8–15 existed in `docs/systems-manifest.md` and were only implied. Verdicts below are *hands tests*, not invitations to implement.
+
+Marks in cells: kin / weak / adj / conflict / off / — (no contact).
+
+| Core piece | Kauffman | Rowlands | Xiao & Zhu | Petersen & Zech | AgentScope |
+|---|---|---|---|---|---|
+| 1 Strand / Rule Zero | K1 kin; K2/K4 conflict | R1 kin; R3 name clash | X4 conflict | P4 conflict | A2 in-array conflict |
+| 2 Governing Rule | K1 reads “continue wrapping”; K4 false operator | R1 “one process” kin | X3 next-token is wrong output | P1 Φ is wrong operator | steward policy only |
+| 3 Raw Input | off (closed-loop erases arrival) | off | X1 weak order; X4 conflict | off | off |
+| 4 WORD Entry | off | off | X2 intern conflict | off | off |
+| 5 POINTER Entry | K1 strong kin of grab; does not emit row | off | off | off | A2 false POINTER |
+| 6 1D Array | diagram class ≠ array | no extra-dimensional store kin | embedding store conflict | weight file conflict | ReAG store conflict |
+| 7 Star | hitch windings kin of many wraps; Reidemeister curl = collapse | off | intern = one node | hidden unit = false star | off |
+| 8 Sequence as route | closed loop *drops* the open route (conflict with continue) | generate-from-zero is not arrival order | token sequence weak kin until intern | input vector ≠ word order | trajectory order is steward, not lace |
+| 9 Dictionary wiring | off-shoe (invariants are not definition routes) | universal grammar / DNA rewrite **off-shoe**; name clash if called rewrite of PIE | gloss / embedding as definition **conflict** with “route not stored meaning” | approximating a lexicon **conflict** | off |
+| 10 Document feed | a link diagram is not a document ingest | off | corpus as training set: mutates weights, does not append lace | dataset \((x_i,y_i)\) is not punch-card append | AgentErrata is a steward corpus |
+| 11 Touch / later participation | **K1 clove hitch is the kin** | off | attention *looks* like touch; it is a weight, **conflict** if stored | message-passing / GNN **conflict** | ReAG edge is steward touch, not lace touch |
+| 12 Dimension as participation axis | extra space in ambient isotopy is room around a closed loop, not a new grab **conflict** if stored | R2 kin (must explain dimension, not store it) | positional / segment embedding = extra rooms **conflict** | width / depth as dimension **conflict** | ReAG DAG axes = steward shadow |
+| 13 Projection vs actual | K3 Move Zero adj; “diagram is not the rope” kin | math representation of strings allowed *as* representation (preface) — adj if kept as shadow | model of language is a shadow that the book treats as the thing **conflict** | Φ approximates f: shadow treated as possession **conflict** | ReAG explicitly a structured representation — adj over steward, conflict in array |
+| 14 No stored meaning / no collapse | bracket polynomial *is* stored meaning of a diagram class **conflict** as Core | particle tables / rewrite alphabets as stored code **off / clash** | embeddings, vocab, [MASK] **conflict** | weights **conflict** | neural invariant text **adj** over steward only |
+| 15 Star-internal traffic | windings on a post: many turns through one place, all kept — **kin** of traffic; Reidemeister I deletes a curl — **conflict** | off | one token id with positions collapses traffic **conflict** | one neuron absorbs many paths **conflict** | off |
+
+### Piece-by-piece notes (8–15 only)
+
+**Piece 8.** Xiao’s sequence is the only imported *order*. It dies as soon as the atom is interned. Kauffman’s closed loop is the opposite of an open route still being fed.
+
+**Piece 9.** None of the five texts give a definition-as-route. Xiao/Petersen will offer a gloss or an approximator. That is RM8’s failure mode.
+
+**Piece 10.** “Corpus” in Xiao and “dataset” in Petersen are fuel for a second mutable world. AgentScope’s AgentErrata is fuel for steward diagnosis. None is punch-card append to one lace. [GAP] DOCUMENT type remains unset.
+
+**Piece 11.** K1 remains the only kin. Transformer attention and GNN message-passing will be offered as “touch.” Both live in weights. Weights rewrite. Forbidden.
+
+**Piece 12.** Rowlands R2 is the only kin: do not store extra rooms. Xiao positional channels and Petersen width/depth are extra rooms.
+
+**Piece 13.** Kauffman’s own fork (“physicality cannot be ignored / successes will be more linguistic”) is the diagnostic. Lace keeps the first clause.
+
+**Piece 14.** Every imported invariant polynomial, embedding, or weight file is a tag that wants to replace the bow.
+
+**Piece 15.** Multiple windings through one post, all left in place, is star-internal traffic on a shoe. Reidemeister I and token-intern both flatten that traffic.
+
+### What pass 1 does *not* certify
+
+| Text | Mapped author-pieces | Unsampled region | Risk if skipped |
+|---|---|---|---|
+| Kauffman 4ed | Part I §1°–2° + named later engines (bracket, Jones, YBE, Gauss, DNA) | Part II excursions (Potts, virtual knots, Khovanov, functional integrals) | Low if they stay diagram-class invariants; **pass 2 must open virtual / slide moves** because those look like new writes |
+| Rowlands | Preface, ch. 1 origin, rewrite name, extra-dimension refusal | Ch. 20 language, DNA rewrite, universal grammar | Medium name-clash only; **pass 2 must quote §20.16 / 20.18** so “language” is not mistaken for Piece 9 |
+| Xiao & Zhu | Ch. 1–2 token/mask/embed/next-token; ch. 3–4 named as steward | Ch. 5 inference/decoding | Low; decoding is another projection. Sample to confirm no ingest rule |
+| Petersen & Zech | Def. 2.1, Remark 2.2, training, UAT, GNN exclusion | NTK, interpolation, robustness | Low; all mutate or approximate |
+| AgentScope | Abstract, taxonomy, ReAG, neural invariants | Appendix invariant list | Low; more steward predicates |
+
+---
+
 ## Open Questions (none closed by these documents)
 
 They do not say when a POINTER is written.  
@@ -460,3 +544,21 @@ If you cannot do it to a shoe lace in your hands, you may not do it to laceArc.
 - Only Kauffman hitch, Rowlands empty/no-extra-store, and AgentScope-on-the-holder may sit beside Core.
 - Reidemeister, intern/mask, \(\Phi(w)\), and ReAG-in-the-array are illegal fusions.
 - Pointer-emission remains an internal Core [GAP]. Do not fill it from these volumes.
+
+---
+
+## Completeness protocol (how n is decided)
+
+The mapping task is **not** “summarize five books.” It is “every Lace piece and every imported lookalike has a hands verdict.”
+
+n is reached only when all of the following are true:
+
+1. Pieces 1–15 each have a cell in the pass-1 table. **Done in pass 1.**
+2. Author-pieces that share English with Core (wire, star, token, graph, rewrite, dimension, attention, invariant) have kin/conflict/off marks. **Done for the named pieces. Pass 2 must still quote Rowlands §20 and Kauffman virtual/slide.**
+3. Coverage of unread pages is classified, not pretended. **Declared in the unsampled table. Not certified.**
+4. No POINTER emission, arity, or adjacency rule is written as if the books decided it. **Still held.**
+5. The physical lace test still rejects every conflict row. **Held.**
+
+Until (2) and (3) are certified by sampling, status stays **1/n**. Expected n = 2 if the samples stay off-shoe; 3 if a new lookalike piece appears.
+
+Pass 2 (next): open Kauffman virtual/slide pages and Rowlands §20.16–20.18 only. Do not start `docs/pointer-emission.md` from those pages.
