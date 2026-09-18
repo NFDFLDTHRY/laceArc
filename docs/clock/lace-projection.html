@@ -4,6 +4,10 @@
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
 <title>LaceArc · Layer III · 3D lattice (D1 time)</title>
+<link rel="manifest" href="manifest.webmanifest"/>
+<meta name="theme-color" content="#05070c"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="mobile-web-app-capable" content="yes"/>
 <style>
 :root{--bg:#05070c;--ink:#e6eef6;--dim:#7a8a9c;--line:rgba(62,200,255,.22);--cyan:#3ec8ff}
 *{box-sizing:border-box}
@@ -66,6 +70,7 @@ holder  outside this box</aside>
     <button type="button" id="play">pause</button>
     <input id="t" type="range" min="0" max="10" step="0.02" value="0"/>
     <span id="phase">t=0000</span>
+    <span class="stamp" id="nnstamp">WebNN ?</span>
     <span class="stamp">glyphs ≠ schema</span>
   </div>
 </div>
@@ -174,9 +179,9 @@ struct VSOut { @builtin(position) p: vec4<f32>, @location(0) wpos: vec3<f32>, @l
   let diff = max(dot(N, L), 0.08);
   let spec = pow(max(dot(reflect(-L, N), V), 0.0), 48.0);
   let hash = fract(sin(dot(i.wpos.xz, vec2<f32>(12.99, 78.23))) * 43758.5);
-  var rgb = i.col * (0.22 + 0.55 * diff);
-  rgb += i.col * fres * 0.55;
-  rgb += vec3<f32>(spec) * 0.45;
+  let rgb = i.col * (0.45 + 0.75 * diff);
+  rgb += i.col * fres * 0.85;
+  rgb += vec3<f32>(spec) * 0.65;
   if (i.col.g > 0.7 && i.col.r < 0.4) {
     rgb += vec3<f32>(0.05, 0.35, 0.12) * hash;
     rgb *= 0.75 + 0.55 * hash;
@@ -184,9 +189,9 @@ struct VSOut { @builtin(position) p: vec4<f32>, @location(0) wpos: vec3<f32>, @l
   if (i.col.r > 0.7) {
     rgb += vec3<f32>(0.35, 0.08, 0.0) * (0.4 + 0.6 * hash);
   }
-  let fog = clamp(length(i.wpos - u.eye.xyz) / 16.0, 0.0, 1.0);
-  rgb = mix(rgb, vec3<f32>(0.01, 0.03, 0.05), fog * 0.85);
-  let alpha = mix(0.55, 0.95, fres) * appear;
+  let fog = clamp(length(i.wpos - u.eye.xyz) / 22.0, 0.0, 1.0);
+  rgb = mix(rgb, vec3<f32>(0.02, 0.04, 0.06), fog * 0.55);
+  let alpha = mix(0.7, 0.98, fres) * appear;
   return vec4<f32>(rgb * appear, alpha);
 }
 `;
@@ -326,18 +331,32 @@ async function main(){
     showLook(tVal);
     if(!gpuLive && canvas.width>8 && canvas.height>8) hideFallback();
     const idx=Math.min(10, Math.floor(tVal+0.001));
-    phase.textContent="t="+String(idx).padStart(4,"0")+" "+(D1[idx].k==="WORD"?D1[idx].v:"PTR");
+    const live=D1[idx];
+    let look=posOf(live.i);
+    if(live.k==="PTR"){
+      const A=posOf(live.a), B=posOf(live.b);
+      look=[(A[0]+B[0])/2, 0.7, (A[2]+B[2])/2];
+    }
+    if(!frame.look) frame.look=look.slice();
+    frame.look[0]+= (look[0]-frame.look[0])*Math.min(1,dt*3);
+    frame.look[1]+= (look[1]-frame.look[1])*Math.min(1,dt*3);
+    frame.look[2]+= (look[2]-frame.look[2])*Math.min(1,dt*3);
+    phase.textContent="t="+String(idx).padStart(4,"0")+" "+(live.k==="WORD"?live.v:"PTR");
     const asp=canvas.width/Math.max(1,canvas.height);
-    const ang=now/8000;
-    const eye=[Math.sin(ang)*9.5, 6.2, Math.cos(ang)*9.5];
-    const vp=matMul(persp(0.9,asp,0.1,80), lookAt(eye,[0,0.4,0],[0,1,0]));
+    const ang=now/9000;
+    const eye=[
+      frame.look[0] + Math.sin(ang)*4.2,
+      frame.look[1] + 3.1,
+      frame.look[2] + Math.cos(ang)*4.2
+    ];
+    const vp=matMul(persp(0.85,asp,0.1,80), lookAt(eye, frame.look,[0,1,0]));
     const ub=new Float32Array(64);
     ub.set(vp,0); ub[16]=eye[0];ub[17]=eye[1];ub[18]=eye[2];ub[19]=1;
     ub[20]=tVal;
     device.queue.writeBuffer(uni,0,ub);
     const enc=device.createCommandEncoder();
     const pass=enc.beginRenderPass({
-      colorAttachments:[{view:ctx.getCurrentTexture().createView(),clearValue:{r:0.02,g:0.03,b:0.05,a:1},loadOp:"clear",storeOp:"store"}],
+      colorAttachments:[{view:ctx.getCurrentTexture().createView(),clearValue:{r:0.03,g:0.05,b:0.08,a:1},loadOp:"clear",storeOp:"store"}],
       depthStencilAttachment:{view:depth.createView(),depthClearValue:1,depthLoadOp:"clear",depthStoreOp:"store"}
     });
     pass.setPipeline(pipe); pass.setBindGroup(0,bg);
@@ -352,6 +371,18 @@ main().catch(err=>{
   console.warn(err);
   keepFallback("WebGPU failed — lookrefs on stage.");
 });
+(async () => {
+  const el=document.getElementById("nnstamp");
+  try {
+    if (navigator.ml && navigator.ml.createContext) {
+      await navigator.ml.createContext();
+      el.textContent="WebNN on";
+    } else el.textContent="WebNN off";
+  } catch (_) { el.textContent="WebNN off"; }
+})();
+if ("serviceWorker" in navigator) {
+  navigator.serviceWorker.register("sw.js").catch(()=>{});
+}
 </script>
 </body>
 </html>
