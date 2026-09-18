@@ -1,217 +1,143 @@
-# History recovery pass 4 — how the fourth extract sits
+# Lace memory recovery: fourth pass
 
-Source: workspace attachment `Lace_Memory_Recovery_Pass_4_2026-09-18.md` (18 September 2026).
+18 September 2026. This supplements the three previous recovery notes. The major new source is the historical `NFDFLDTHRY/ShoeLacey` repository, which contains a dated scheduler decision, a twelve-lap Opus conservation investigation, and a working record specifically about losing authority and structure during summarization. Additional direct source inspection recovers the criticized walker mechanisms and an explicitly experimental tensor probe.
 
-Supplements [pass 1](history-recovered-2026-09-18.md), [pass 2](history-recovered-pass-2-2026-09-18.md), [pass 3](history-recovered-pass-3-2026-09-18.md).
+This is a historical reading note. The user's current staking law remains controlling in full. No historical status label, implementation, experiment, or repository convention amends that law. No Lace code was created or executed, no repository was changed, and no historical proposal was promoted. The current laceArc checkout remained clean at `eed8396b205328b88bc8d8c14f2b479f339d7ccf`; `docs/pointer-emission.md` and `src/` were absent. No acceptance of an exact pointer-emission contract was recovered.
 
-This is a **reading of that extract against current law**.
-It does not amend staking law.
-It does not settle pointer-emission.
-It does not import ShoeLacey controls, crates, or remedies into laceArc.
-It does not revive `lace_walk.py`, a scheduler, a tensor probe, or a second lace.
+The historical repository is now a concrete source.
 
-The extract already says staking law remains controlling and that no historical status label amends it. Honor that.
+The accessible ShoeLacey `main` resolved to commit `cda3bb34b5feb0047f9dc06976f653a4dcd754b5`, dated 20 August 2026 at 04:25:08 UTC, with message “Add authority-layered thinking surface record.” Its exact tree, `df03e38096f612ee70170b6be914882c6914680e`, returned 149 entries, including 113 files, without truncation. Reads below are pinned to that commit. This is distinct from the current laceArc repository and its governing law.
 
-Pins named in the extract:
+The dated records are useful because they preserve what an earlier agent actually wrote, including its authority labels, limits, failed checks and proposed remedies. They are not a substitute for original conversation transcripts or independently rerun experiments. A file saying `accepted_by: project-owner` establishes what the decision record claims; its acceptance evidence still needs to be assessed at the strength actually preserved.
 
-- laceArc at `eed8396` — a *then-current* checkout. This map is written later. Pin ≠ Hands.
-- ShoeLacey `main` at `cda3bb34b5feb0047f9dc06976f653a4dcd754b5` (20 Aug 2026), tree `df03e380`. **A different repository.** Its `AGENTS.md` and `accepted_by: project-owner` labels are not laceArc law.
+The scheduler correction now has a durable decision record.
 
----
+[`SL-D-0002-degree-sloped-scheduling.md`](https://github.com/NFDFLDTHRY/ShoeLacey/blob/cda3bb34b5feb0047f9dc06976f653a4dcd754b5/record/decisions/SL-D-0002-degree-sloped-scheduling.md) is dated August 11, marked an active ruling, and names the project owner as accepting it. It explicitly supersedes strict deep-shell starvation and the bounded-fairness framing. Its stated decision is:
 
-## What pass 4 adds that 1–3 did not have
+- Available compute is divided by degree of separation from external input.
+- The lowest active degree receives the largest allocation.
+- Farther degrees receive progressively fewer slices.
+- Farther work does not have to wait for a nearer degree to finish.
 
-- A concrete historical repo: [NFDFLDTHRY/ShoeLacey](https://github.com/NFDFLDTHRY/ShoeLacey) at `cda3bb34`.
-- Dated decision `SL-D-0002` for degree-sloped scheduling (11 Aug).
-- Conservation case `SL-C-0002`: summaries lose what they do not record.
-- Authority-layered working record: three kinds of “open.”
-- Session ruling in that record: Lace / Star / Coffee Cup / Water / HCC-A as one machine at different scales — correspondences still unspecified.
-- Byte-identical `axioms.html` in that repo vs the pass-2 deck. Card-number revision still missing.
-- Static read of `lace_walk.py` v2 (28 Aug): intern dictionary + recursion guard after contact append.
-- Opening of `lace_live_tensor_probe_v0_2.c`: experimental; XOR not claimed as contact law. Distinct from the September C-array excluded in pass 2.
-- Hologram §2.3: continuation slot rejected because fill-later still alters history.
-- Archaeology “no copy” left unresolved among physical / semantic / optimization.
-- ShoeLacey `MISSING.md` four names now cross-referenced to separately recovered artifacts. Not an import receipt.
+The record expressly leaves the weight function, active degree range, work quantum, rounding, within-degree tie breaking, rebasing, empty-degree handling, and allocation proof across worker counts open. It expressly classifies `4:3:2:1` as an illustrative shape, not an accepted universal formula.
 
-29 August walker rejection is **not reversed**.
-`4:3:2:1` is still **not** a formula.
-Unary vs `ref_A`/`ref_B` stays a **conflict**.
-Cat / cat-1 stays **unmanufactured**.
-Emission acceptance still **absent**.
+Its “Acceptance evidence” section is a dated prose attribution of the owner's ruling. The complete original August 11 exchange was not recovered. This nevertheless strengthens passes one and two: the correction exists in the older project's decision system, not only in returned memory snippets. It does not establish a current executable scheduler or override the current pointer-emission gate.
 
----
+The decision also lists changing worker count without changing committed semantic history as a required test. That is an obligation in the record, not a successful result. P02 v0.3's distinction between derivation-set equivalence and schedule-specific replay, recovered in pass three, remains relevant when assessing such a claim. Neither record supplies an automatic proof of the other.
 
-## ShoeLacey is not laceArc
+An earlier investigation had already found how project details disappeared.
 
-| ShoeLacey (historical) | laceArc (current) |
-|---|---|
-| `cda3bb34` 20 Aug 2026 | Graphics A–D + staking law |
-| `CODE_MAP.md`: no semantic mechanism implemented | No `src/` until `docs/pointer-emission.md` is accepted |
-| `SL-C-0001`: “Open. No contact algebra is promoted.” | Same gate, stronger: Φ ∈ [GAP] |
-| Host-tooling / reference-vendoring of that era | Rust `#![no_std]`, zero foreign deps |
-| Decision labels and case outcomes | Hands first |
+[`SL-C-0002`'s outcome](https://github.com/NFDFLDTHRY/ShoeLacey/blob/cda3bb34b5feb0047f9dc06976f653a4dcd754b5/record/cases/SL-C-0002-project-structure-conservation/OUTCOME.md) describes twelve laps by Opus over five conceptual work surfaces. Its baseline records ten branches and 57 issues at the start of that investigation. Those are historical audit observations, not a new audit of today's entire GitHub account.
 
-A file saying `accepted_by: project-owner` records what **that** decision file claims. The complete 11 Aug exchange was not recovered. It does not override current law.
+The central proposed finding is that a record preserves content only at the detail level it actually records. When the record is coarser than its source, omitted details can disappear without the record detecting the loss.
 
----
+The retrieved outcome and the opening of [`PROPOSALS.md`](https://github.com/NFDFLDTHRY/ShoeLacey/blob/cda3bb34b5feb0047f9dc06976f653a4dcd754b5/record/cases/SL-C-0002-project-structure-conservation/PROPOSALS.md) give concrete examples:
 
-## SL-D-0002 — scheduler correction, still not Core
-
-Dated 11 Aug. Marks itself active. Explicitly supersedes strict deep-shell starvation and bounded-fairness.
-
-Stated decision (historical):
-
-- Divide available compute by degree of separation from external input.
-- Lowest active degree gets the largest allocation.
-- Farther degrees get fewer slices.
-- Farther work need not wait for a nearer degree to finish.
-
-Open in the record itself: weight function, active degree range, quantum, rounding, within-degree ties, rebasing, empty-degree handling, allocation proof across worker counts.
-
-`4:3:2:1` is classified there as an **illustrative shape**, not an accepted universal formula. That matches pass-2 law. Keep it.
-
-Required test in the record: change worker count without changing committed semantic history. That is an **obligation written down**, not a discharged result. Pass 3 P02: same derivations ≠ same recorded history. Neither record proves the other.
-
-FORBID: eleven-rule scheduler, degree-slope, or `4:3:2:1` as Core. Talk UNK / hologram Locate stay holder protocol.
-
----
-
-## SL-C-0002 — conservation of detail
-
-Twelve Opus laps. Baseline (historical): ten branches, 57 issues. Not a new audit of today's account.
-
-Central finding, keep:
-
-> A record preserves content only at the detail level it actually records. When the record is coarser than its source, omitted details can disappear without the record detecting the loss.
-
-Examples the case recorded (not re-audited here): HCC-A value-set collapse under a group row; one-sided relation prose; `MISSING.md` too small; proposal bodies living only in issues.
-
-Disposition in the outcome: **complete as analysis, not discharged as remediation**. No findings or proposals received owner acceptance. “Seventeen of seventeen” is a documentary handoff checklist, not seventeen Lace behavior tests.
-
-Clock reading: this is Gear W on summaries. A polished panel is [III]. It is not the strand. Same rule as this interactive: if panel text and the walk artifact disagree, the walk wins.
-
-Do **not** import the case's proposed remedies as laceArc policy. The failure *mechanism* is the usable warning.
-
----
-
-## Three kinds of “open”
-
-From the 19 Aug authority-layered working record:
-
-| Label | Meaning | This recovery |
+| Historical finding | Mechanism recorded by the case | Evidence limit in this recovery |
 |---|---|---|
-| `OPEN-SEARCH` | Source not recovered enough | Full cat exchange; card-number revision; July 25 original thread |
-| `OPEN-EXPERIMENT` | Need a discriminating test | Reuse / representation claims. Current law still decides whether any test may be implemented |
-| `OPEN-RULING` | Owner decision required | Pointer-emission gate. An assistant reconstruction cannot close it |
+| HCC-A values disappeared during decomposition. | An audit row tracked a field group while the source carried individual allowed values inside that group. The case reports that `identity_yields` and `split` were absent, while `reindex` survived only in a caveat rather than the enumerated value set. | The case and proposal text were read. The complete old branch/issue population was not independently re-audited here. |
+| Relations between work items were one-sided. | Each endpoint held its own prose description, without a record requiring both descriptions to agree. | This is the case's finding and proposed judgment, not a newly proved graph property of Lace. |
+| The missing-source inventory was too small. | `MISSING.md` listed four artifacts while other surfaces named at least eighteen. | The four-item file was read directly; the eighteen-item historical population was not recounted in this pass. |
+| The audit repeated its own failure. | Proposal summaries and issue numbers were in Git, but the complete proposal bodies lived only in GitHub issues. | The outcome records the failed completion clause and its repair by adding `PROPOSALS.md`; that file was directly located and its opening read. |
 
-Missing conversation ≠ license to invent. Explicit law-gate ≠ “we searched and found nothing, so maybe.”
+The outcome also records correction of several of the auditor's own conclusions, including two supposed competing predictions that were not mutually exclusive on one axis. It distinguishes a reported formatting-check failure from other reported successful tooling checks. No such check was rerun in this pass.
 
-The same record preserves a session ruling:
+Its final disposition is particularly important: **complete as analysis, not discharged as remediation**. It says no findings or proposals received owner acceptance. Some issue-side restoration was performed, while major proposed changes remained unexecuted. The record's “seventeen of seventeen” completion result concerns its documentary handoff checklist; it is not seventeen successful Lace behavior tests.
 
-> Lace, Star, The Coffee Cup, Where the Water Is Loud, and HCC-A are the same Lace operating at different scales.
+This supplies a concrete precedent for the user's downstream-fidelity requirement. A complete-looking summary or valid metadata cannot establish conservation of individual instructions, relationships or corrections. That implication follows from the recorded failure mechanism; it does not promote the case's proposed remedies into current policy.
 
-Attribution: committed working record, not an independently authenticated full transcript. Correspondences operator-to-scale remain unspecified in that record.
+The thinking-surface record preserves a distinction these recovery passes must retain.
 
-Lawful reading now: those five are **holder / view scales**, not five extra Graphics, not the five adjacent books (Kauffman…AgentScope), not five row types. Current staking already treats HCC-A / Cup / Water as gearbox and Star as formation-of-strand. “Same machine, different scales” does not put M/E/ISL or OBS on Graphic D.
+The August 19 [`Authority-Layered Working Record`](https://github.com/NFDFLDTHRY/ShoeLacey/blob/cda3bb34b5feb0047f9dc06976f653a4dcd754b5/record/cases/SL-C-0003-thinking-surface-representation/contributions/ShoeLacey_Thinking_Surface_Authority_Layered_Working_Record.md) describes a previous reset document that turned a correction-rich discussion into a polished narrative and lost authority, provenance and settled instructions. It names three different reasons something can appear open:
 
-Rejected invention in that record: a dot is a compacted star you can zoom into. Structural resemblance did not establish the map. Do not revive it.
+| Source label | Meaning in the recovered record | Application to this recovery |
+|---|---|---|
+| `OPEN-SEARCH` | The historical record has not been recovered sufficiently. | The full cat exchange and original numbered deck revisions remain retrieval gaps. Their absence does not give an agent permission to invent replacements. |
+| `OPEN-EXPERIMENT` | Available source is insufficient; a discriminating experiment is needed. | Claims about computational reuse or a proposed representation need evidence beyond repeated assertion. Current law still controls whether any experiment may be implemented. |
+| `OPEN-RULING` | A project-owner decision is required. | A known requirement for human acceptance cannot be satisfied by an assistant's reconstruction or a historical status label. |
 
-Star collision retained there: later similarity-based memory vs older exact-identity / no-metric account. Leave the collision visible. Current STAR is accumulated passes / index geometry, not a metric table.
+This refines the interpretation of “open” in the first three notes. A missing original conversation is a missing source. The current pointer-emission gate, by contrast, is explicit in the human-supplied law; it was not inferred merely because a search returned nothing.
 
----
+The same working record preserves the user's statement that **Lace, Star, The Coffee Cup, Where the Water Is Loud, and HCC-A are the same Lace operating at different scales**. It attributes that statement as a session ruling and separates whole-machine identity from the still-unspecified operator/scale correspondences. These five historical work surfaces are not the five adjacent books in the current staking law.
 
-## Cards — same bytes, still wrong numbers
+The attribution matters: this pass recovered the committed working record carrying that statement, not an independently authenticated full transcript of its original session. The document still contains the old warning `UNADDRESSED`; the pinned commit now gives the working record itself a durable address. That does not automatically authenticate every quotation or resolve its open mappings.
 
-ShoeLacey `record/corpus/imported-artifacts/axioms.html` and the separately recovered `axioms.html` are byte-identical:
+The record also preserves an explicit rejected invention: equating a dot with a compacted star and assuming zooming into it reveals the star. Structural resemblance did not establish that mapping. Its Star section retains a collision between a later remembered similarity-based account and an older exact-identity/no-metric account. It leaves that as a source-recovery problem rather than manufacturing an equivalence. Current STAR law is not changed by either historical account.
 
-- 81,900 bytes
-- SHA-256 `1cdf729d468b648f752cc0cc79f45561cde1bdc4b03132357f3afa516dd68392`
-- Git blob `759214b02db69fc4fea826033c5e7e80923c3de9`
+The card deck has an exact identity result, but no recovered alternative numbering.
 
-No recovered revision reconciles captured “Card 13 / 22–25” with deck ordinals 30 / 32–35. Card-N is still not a ruling.
+The repository's `record/corpus/imported-artifacts/axioms.html` and the separately recovered `axioms.html` are byte-for-byte identical: 81,900 bytes, SHA-256 `1cdf729d468b648f752cc0cc79f45561cde1bdc4b03132357f3afa516dd68392`. The fetched repository text also reproduces its Git blob identity, `759214b02db69fc4fea826033c5e7e80923c3de9`.
 
----
+Thus the repository supplies a pinned location for the same 55-card artifact inspected in pass two. It does not supply the missing revision that would reconcile the captured references to Card 13 and Cards 22–25 with the recovered deck's corresponding ordinals 30 and 32–35. Card numbers still need a revision or title to be reliable. Neither the deck nor its scripts were executed.
 
-## Walkers and the C probe — source, still dead
+The older project's implementation state was explicitly limited.
 
-`lace_walk.py` v2, mtime 28 Aug 03:52 UTC. Static read:
+[`record/current/CODE_MAP.md`](https://github.com/NFDFLDTHRY/ShoeLacey/blob/cda3bb34b5feb0047f9dc06976f653a4dcd754b5/record/current/CODE_MAP.md) states that no semantic ShoeLacey mechanism had been implemented in that governed project. The pinned tree corroborates the narrow structural facts: the three semantic crate directories contain README files, and `tests/traces/` contains instructions and a format document, with no trace fixtures. Historical Python prototypes remain archived under the corpus; their presence is not an accepted semantic implementation.
 
-- `lay_wordnet` intern: same spelling → earlier Unit, not a new WORD. Clearing the dict later does not unwrite admission.
-- `_is_active` checks live return-frame stack.
-- `step` appends a contact, then uses the guard to skip recursive *entry*. The contact already happened.
+[`SL-C-0001`'s outcome](https://github.com/NFDFLDTHRY/ShoeLacey/blob/cda3bb34b5feb0047f9dc06976f653a4dcd754b5/record/cases/SL-C-0001-executable-contact-algebra/OUTCOME.md) remains explicit: “Open. No contact algebra is promoted.” The old repository's successful tooling checks therefore cannot establish a working Lace intelligence mechanism. Its historical host-tooling permissions and reference-vendoring choices also do not override today's stricter staking law.
 
-This is the lookup + recursion-control pair criticized on 28 Aug. The file predates the claimed 04:46 lookup correction. It does not prove that correction landed.
+Original walker source now supports part of the August failure history directly.
 
-FORBID: intern dictionary, ring, pair-valued Touch, stack policy as Core. 29 Aug stands.
+The recovered `lace_walk.py`, source version 2, has a recorded modification time of August 28 at 03:52:48 UTC. Selected source sections show:
 
-`lace_live_tensor_probe_v0_2.c` (28 Aug 02:25 UTC): opening retracts v0.1 static-graph-into-array. Proposes a live loop with XOR and **says XOR is not Lace's contact law**. First 65 lines only. No result, no authority. Distinct from the September C-array already excluded.
+- `lay_wordnet` creates a spelling-to-Unit dictionary named `name_pointer`. A repeated spelling obtains the earlier Unit rather than appending another WORD. Clearing the dictionary afterward does not reverse those admission decisions.
+- `_is_active` checks whether the target is already a focus in the live return-frame stack.
+- `step` appends a contact and then uses that guard to choose whether to enter the target recursively. The guard suppresses recursive entry in that situation; it does not suppress the contact append that already happened.
 
----
+These are static observations from the recovered file, not runtime measurements. They directly support the existence of the lookup and recursion-control mechanisms criticized in retrieved August 28 discussions. The source predates the reported 04:46 lookup correction. It is not evidence that the later claimed fix was successfully implemented, preserved, or validated.
 
-## Continuation slot and “no copy”
+This strengthens the first pass's account without importing the old ring, interning, pair-valued Touch, or stack policy into current Lace. Whether the old guard was “only execution state” cannot be settled by that comment alone: the code uses it to change which recursive step occurs.
 
-Hologram synthesis §2.3: filling a future continuation slot later still alters history. Needed continuation = later history, unless a different immutable encoding is demonstrated. Byte-identical arrivals remain distinct occurrences.
+An explicitly Lace-related C probe was also recovered: `lace_live_tensor_probe_v0_2.c`, recorded August 28 at 02:25:54 UTC. Its opening retracts v0.1 for serializing a static graph into an array. It then proposes a live-loop representation using XOR and explicitly says XOR is not claimed as Lace's canonical contact or contraction law. Only the opening 65 lines were inspected. No result, performance claim, proof, or present implementation authority is established by this read. This is distinct from the separate September C-array experiment excluded in pass two.
 
-That is Rule Zero. It confirms pass-2 FORBID of the write-once continuation field. Coordinate-chart / tie / matrix language around it stays historical.
+The continuation-slot correction now has a directly inspected source.
 
-August 26 archaeology: meaning of “no copy” left open among physical duplication, semantic authority, and optimization. Retain the uncertainty. Do not use it to license a disposable store that determines Core facts, or a second authoritative lace.
+The opening of `SHOE_LACEY_THE_HOLOGRAM_2026-08-11.md`, particularly section 2.3, explicitly rejects the older future continuation slot: filling it later would still alter history. It requires any needed continuation to be represented by later history unless a different immutable encoding is demonstrated. The same section preserves byte-identical arrivals as distinct occurrences. Its broader coordinate-chart, tie and matrix language remains a historical synthesis with its own open seams; reading it does not accept those mechanisms for current Core.
 
----
+The August 26 archaeology report provides another useful boundary. Its selected sections explicitly leave the meaning of “no copy” unresolved among physical duplication, semantic authority and optimization. That historical uncertainty must be retained when interpreting older claims. It does not relax the current prohibition on an authoritative second lace or authorize a supposedly disposable store that determines Core facts.
 
-## MISSING.md cross-walk — locate ≠ import
+The old missing-source list can now be connected to recovered artifacts.
 
-| Named missing in ShoeLacey | Later located (pass 3 register) |
+The pinned repository's `record/corpus/MISSING.md` lists four unavailable primaries. Earlier passes have located all four as separately preserved artifacts, with text inspected to the extent stated in those reports:
+
+| Named missing artifact in ShoeLacey | Recovered source reference |
 |---|---|
-| `lace-manifest.md` | recovered separately |
-| `LACE_STRUCTURE_SPEC_v2.md` | recovered separately |
-| `pointer_ball_system.md` | recovered separately |
-| `P02_Minimal_Contact_Temporal_Calculus_v0_2.md` | recovered separately |
+| `lace-manifest.md` | `libfile_d81b85f1d17c8191a7930b91963d2438` |
+| `LACE_STRUCTURE_SPEC_v2.md` | `libfile_9e54eb796a2081919085899a123a68e2` |
+| `pointer_ball_system.md` | `libfile_7777c30a036081919f99ed4522f3b9d7` |
+| `P02_Minimal_Contact_Temporal_Calculus_v0_2.md` | `libfile_90a99bd9dbb081918cb72484ac7c7531` |
 
-Absence from the Aug 20 checkout no longer means “no artifact exists.” Full-byte provenance and current law still block silent archival import into laceArc.
+This is a recovery cross-reference, not an import receipt. The old checkout remains unchanged. Absence from that checkout no longer means no separately accessible artifact has been located. Full-byte provenance and review requirements still apply before any future archival import.
 
----
+The remaining limits are specific.
 
-## What still does not move
-
-| Item | Status |
+| Question | Fourth-pass result |
 |---|---|
-| Pointer-emission acceptance | None. Gate explicit in law, not inferred from empty search |
-| Full cat / `>` notation | OPEN-SEARCH. Scratches/purr still excluded |
-| Original 25 July scheduler thread | Missing. Later handoff + SL-D-0002 are the witnesses |
-| Accepted numeric allocation law | Unavailable. `4:3:2:1` illustrative only |
-| Card-number revision | Same deck, still mismatched citations |
-| Office CSV / codec logs | Not in pinned ShoeLacey tree |
-| 29 Aug walkers | Dead. Source now seen; still dead |
-| Unary vs two-ref POINTER | Conflict |
+| Full cat/cat-1 and greater-than/less-than exchange | Still not recovered. The search again returned unsupported scratches/purr details alongside explicit missing-original statements. Those additions remain excluded from recovered rulings. |
+| Original July scheduler conversation | The specific July 25 title was searched; no matching original conversation was returned. The reproduced later handoff remains the available witness. |
+| Full August 11 allocation correction | The durable decision is recovered. Its original complete conversation and an accepted numeric allocation law remain unavailable. |
+| Missing card-number revision | The repository copy is an exact match to the known deck. No different revision was recovered. |
+| Raw Office dataset and codec logs | Narrow searches did not locate the dataset. The complete pinned main tree contains no Office-named or CSV paths. Other branches and the entire historical Git object graph were not exhaustively searched. |
+| Raw early Opus/Fable conversations | The later August 19–20 Opus case is recovered. It does not substitute for missing earlier raw conversations. |
+| Current pointer-emission acceptance | None recovered; the explicit current gate remains closed. |
 
----
+The evidence register below records actual coverage rather than implying a complete audit of every retrieved source.
 
-## Stamps
+| Source | Identity | Coverage |
+|---|---|---|
+| ShoeLacey repository | Commit `cda3bb34b5feb0047f9dc06976f653a4dcd754b5`; exact tree `df03e38096f612ee70170b6be914882c6914680e` | Repository metadata, commit metadata and complete recursive tree. No code execution or repository mutation. |
+| Repository controls and routing | `AGENTS.md`, `record/AGENTS.md`, `record/START_HERE.md`, `record/current/PRECONDITIONS.md`, `record/INDEX.md` at that commit | Full returned texts. Historical project controls; not substituted for current laceArc law. |
+| Scheduler decision | `record/decisions/SL-D-0002-degree-sloped-scheduling.md` | Full text. Acceptance attribution and open fields inspected. |
+| Conservation case | `SL-C-0002/OUTCOME.md`, `T0_BASELINE.md`, `case.toml` | Full texts. Historical test/audit results classified as reported, not rerun. |
+| Conservation proposals | `SL-C-0002/PROPOSALS.md` | Lines 1–85; status, reason for preservation, P-01 and opening P-02. |
+| Thinking-surface record | `SL-C-0003/.../ShoeLacey_Thinking_Surface_Authority_Layered_Working_Record.md` | Full text retrieved; opening, sections 3, 8.2–8.3, 9, 11, 15 and 17–19 inspected; heading and targeted-term scan elsewhere. |
+| Card deck | Repository corpus file and `libfile_d0fc359d24c08191af8e67f2ba30773a` | Full-byte comparison and Git blob integrity check. Card semantics were inspected in pass two, not rerun as a new experiment. |
+| Code state and missing sources | `record/current/CODE_MAP.md`, `record/corpus/MISSING.md`, `SL-C-0001/OUTCOME.md` | Full returned texts, compared with tree paths and earlier recovery locators. |
+| Walker source | `libfile_6650a5153dd48191b9f008cc56904f38`, version 2; `file_00000000df3c822f825c5a43a0fa8ea8` | Lines 1–36, 230–374 and 478–535; targeted guard context at 458–470. Static inspection only. |
+| Tensor probe | `libfile_cf10b5e3ac1c8191895d3580731a060b`; `file_00000000e290822fa69539e1825f5ae9` | Lines 1–65 of 1222. Header and stated scope only. |
+| Hologram synthesis | `libfile_882473ba6f44819186b11d5e4e683ede`; `file_000000008d50822f9d59da00dd7c31ca` | Lines 1–148. |
+| Archaeology report | `libfile_4fe1188095e481918ad40cae0b537dfd`; `file_000000001c0481f5ad071e1ff039cc90` | Lines 1–75, 394–417, 468–479 and 829–883, plus targeted matches/headings. Its similarly named duplicate was not assumed identical. |
 
-| Recovered object | Stamp |
-|---|---|
-| ShoeLacey repo as dated record | `[H]` ancestry |
-| SL-D-0002 degree slope | `[H]`; as Core scheduler `[X]` |
-| `4:3:2:1` illustrative | confirms pass 2 |
-| SL-C-0002 coarseness loss | `[III]` warning; remedies `[X]` as policy |
-| OPEN-SEARCH / EXPERIMENT / RULING | `[H]` discipline |
-| Same-machine-different-scales | `[H]` / view `[III]`; as five Core sorts `[X]` |
-| Dot-as-zoom-star | `[X]` |
-| Identical axioms.html | provenance only |
-| `lace_walk.py` intern + guard | evidence of the rejected machine `[X]` |
-| XOR tensor probe | `[H]` experiment; as contact law `[X]` |
-| Continuation-slot reject | `[I]` kin Rule Zero |
-| “No copy” ambiguity | keep visible; second lace `[X]` |
-| Φ from any of the above | `[GAP]` |
+The third note was reread as the current recovery baseline; relevant passages in the first two were compared. Five targeted conversation searches addressed cat, scheduler, card/anchor provenance, the July 25 thread, and August no-copy/walker corrections. Returned derivative recovery notes were excluded as independent corroboration. Unrelated projects and unrelated file-search results were excluded.
 
----
-
-## Steward test
-
-If you cannot do it to a shoe lace in your hands, you may not do it to laceArc.
-
-A decision file is not the conversation.
-A complete checklist is not conservation.
-A walker source is not a pardon.
-ShoeLacey is not laceArc.
-\(\Phi\) remains `[GAP]`.
+One agent performed this pass and its checks. The observed verification is limited to source contents, pinned repository structure, exact card-file identity, and an unchanged current checkout. The historical experiments, Opus audit populations, owner acceptance claims and mathematical obligations were not independently rerun or discharged. This fourth recovery pass is complete; the original cat exchange remains the next narrowly identified retrieval gap.
