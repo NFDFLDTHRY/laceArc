@@ -1,7 +1,7 @@
 # Defrag plan (PREPARE only)
 
-Status: **PASS 1–4 on main.** PASS 5 executing (stale-path sweep).
-POINTER emission stays `[GAP]`. Maps BASE refreshed to live tip before this tick.
+Status: **PASS 1–5 on main.** PASS 5 prompts `fa0ecfd`, clipboards `2a2be11`.
+POINTER emission stays `[GAP]`. No further filing pass planned.
 
 Shoe test: filing, not wrapping the cord.
 
