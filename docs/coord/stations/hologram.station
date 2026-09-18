@@ -1,7 +1,7 @@
-STATUS: FREE
+STATUS: HELD
 STATION: hologram
 OWNS: docs/hologram/** docs/clock/**
-AGENT: -
-BASE: -
-SINCE: -
+AGENT: LaceArc
+BASE: dbb1ebc9af52717bec3b96ce8c1bf868901b4630
+SINCE: 2026-09-18T21:40:55Z
 NOTE: 
