@@ -316,5 +316,80 @@ No new pieces.
 | T4 | Graphic C panels |
 | T5 | Panel → Piece cross-walk |
 
+## One-tick mechanism (pass 5)
+
+```
+ input arrives
+      │
+      v
+ next unused index  ── append section ──  WORD  |  POINTER
+      │
+      ├── WORD     variable written (identity rule still [GAP])
+      └── POINTER  refs strictly earlier indices only
+      │
+      v
+ participation is now on the tape
+      │
+      v
+ continue
+```
+
+Illegal as a tick of I: compact/tidy rewrite; emit because adjacent; gear packet writes L.
+
+## Participation mechanism (pass 5)
+
+```
+ WORD @ i
+ WORD @ j
+ PTR  @ k  → (i, j)       participates in words
+ PTR  @ n  → (k, …)       participates in a participation
+```
+
+Pointer is itself a section (D6). D1: six of six are 2-ref and backward. Source never writes “exactly two forever.” Arity `[GAP]`. Slot A vs B `[GAP]`.
+
+## Star mechanism (pass 5)
+
+```
+ variable V
+   pass @ i
+   pass @ j
+   pass @ …
+ view:  star(V) = those passes
+ write: the WORD rows only
+```
+
+Star is not a row type. D4: 3D view is not stored in the array.
+
+## Dual presentation, one mechanism (pass 5)
+
+```
+ geometric:  word arrives → route new wire through that word's star → continue
+ array:      input arrives → append section → pointers participate → continue
+```
+
+Same operator. Two presentations. Not two engines.
+
+## Not a Core mechanism (pass 5)
+
+| Looks mechanical | Is |
+|---|---|
+| HCC S0–S7 | holder compile |
+| Cup C1–C5 | event-time |
+| Water F1–F5 | clutch |
+| Reidemeister / slide | forbidden vs Rule Zero |
+| query / delete / transaction | source gives none |
+| G2 emission | unanswered |
+
+## Pass 5 deltas
+
+| Ticket | Action |
+|---|---|
+| T1 | One-tick mechanism |
+| T2 | Participation / pointer-to-pointer |
+| T3 | Star as passes |
+| T4 | Dual presentation kept one |
+| T5 | Not-a-mechanism fence |
+
+
 
 
