@@ -304,6 +304,15 @@ standing in for continuing behaviour.
 
 ### Second pass (same day, same status: data, not authority)
 
+**Anchor note** (F3, applied here). The binding on `main`,
+`docs/history-recovered-pass-2-2026-09-18.md`, is a *reading* of the extract and
+does not carry every passage cited below. Checked: the phrases
+`dynamic-arity` and `original image identities` appear in the extract
+(`Lace_Memory_Recovery_Pass_2_2026-09-18.md`, workspace attachment) but **not** in
+that binding. Those two items are cited to the extract, which is not in this
+repository — an anchor this repository cannot currently resolve. **[GAP]** whether
+the extract itself should be filed.
+
 `Lace_Memory_Recovery_Pass_2_2026-09-18.md` reads ten historical documents
 directly. Four items bear here.
 
