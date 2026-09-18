@@ -6,7 +6,7 @@ Source of record remains `docs/graphics/`.
 The five academic documents remain adjacent. They do not enter Core.
 Three philosophical texts (HCC-A, Coffee Cup, Water/Proofing) are the gearbox. They do not enter Core as rows.
 History extracts do not amend this law and do not revive walkers.
-See `docs/reason-model-map.md`, `docs/philosophy-map.md`, `docs/history-recovered-2026-09-18.md`, `docs/history-recovered-pass-2-2026-09-18.md`, `docs/history-recovered-pass-3-2026-09-18.md`, `docs/history-recovered-pass-4-2026-09-18.md`.
+See `docs/reason-model-map.md`, `docs/philosophy-map.md`, `docs/history-recovered-2026-09-18.md`, `docs/history-recovered-pass-2-2026-09-18.md`, `docs/history-recovered-pass-3-2026-09-18.md`, `docs/history-recovered-pass-4-2026-09-18.md`, `docs/history-recovered-pass-5-2026-09-18.md`, `docs/history-recovered-pass-5-sit.md`.
 Implementation remains forbidden until `docs/pointer-emission.md` exists.
 When implementation exists, it obeys the IMPLEMENTATION LAW block with no exceptions.
 
@@ -259,6 +259,22 @@ Pass 4 map: docs/history-recovered-pass-4-2026-09-18.md
   FORBID importing SL-C-0002 remedies as policy.
   Card-N still mismatched. Cat still unmanufactured.
 
+Pass 5 map: docs/history-recovered-pass-5-sit.md
+  KEEP surface branches as archive; absence from main ≠ absence.
+  KEEP Aug 15 shoe-in-hands verbatim. Recorder ≠ owner speech.
+  KEEP Aug 17 as 1D-append witness. Two copies ≠ two witnesses.
+  KEEP P02 as a version sequence. Binary sufficiency was withdrawn.
+  KEEP occurrence identity as append position (v0.1.1), not as schema.
+  KEEP philosophy blob match as file identity only.
+  FORBID connect-the-ends / circle / closed loop restored from Aug 15.
+  FORBID equating collapsed-whole dot with A1 empty-start.
+  FORBID dynamic arity, density-as-weight, pseudolace as Core.
+  FORBID WELD-1 and scoped-UNK (proposed, no source).
+  FORBID cherry-picking P02 versions into one machine.
+  FORBID Pixel rust probe as Lace evidence.
+  Issue 43 addresses the cat. Dialogue still missing.
+
+
 
 
 
@@ -272,6 +288,8 @@ READING ORDER WHEN A DOCUMENT IS IN THE WORKSPACE
        or docs/history-recovered-pass-2-2026-09-18.md
        or docs/history-recovered-pass-3-2026-09-18.md
        or docs/history-recovered-pass-4-2026-09-18.md
+       or docs/history-recovered-pass-5-2026-09-18.md
+       or docs/history-recovered-pass-5-sit.md
     5. the document itself          <-- only after 1-4
     6. never PDF into git
 
@@ -378,6 +396,9 @@ STILL FORBIDDEN AFTER CODE EXISTS
   degree-sloped scheduler / 4:3:2:1 as Core formula
   lace_walk intern dictionary / recursion guard
   XOR tensor probe as contact law
+  connect-the-ends restored from Aug 15
+  WELD-1 / scoped-UNK as Core
+  P02 mixed-version machine
   a second lace
 
 

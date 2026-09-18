@@ -131,7 +131,11 @@ Workspace attachment `Lace_Memory_Recovery_Pass_4_2026-09-18.md`. Map: `docs/his
 
 Historical repo NFDFLDTHRY/ShoeLacey at `cda3bb34`. SL-D-0002 degree-sloped scheduling (`4:3:2:1` illustrative). SL-C-0002 coarseness loss. Three opens. Walker source intern+guard. XOR probe not contact law. Continuation-slot reject. Not laceArc law.
 
+#### 13. Lace memory recovery pass 5 — 18 September 2026
 
+Workspace attachment `Lace_Memory_Recovery_Pass_5_2026-09-18.md`. Dump: `docs/history-recovered-pass-5-2026-09-18.md`. Sit-map: `docs/history-recovered-pass-5-sit.md`.
+
+Ten ShoeLacey branch heads. Aug 15 owner-ruling (connect-the-ends is historical; closed loop stays forbidden). Aug 17 context pass (not accepted). P02 v0.1→v0.1.1 (binary sufficiency withdrawn). WELD-1 / scoped UNK remain proposed. Pixel rust probe is not a Lace test. Cat still Issue 43 / OPEN-SEARCH.
 
 
 ## Series frame (from Rowlands front matter)
@@ -142,8 +146,4 @@ Knots as a meeting place for apparently separate ideas. That is the only series 
 
 If a sentence in any of these works would change WORD, POINTER, star, or the governing rule, discard it for Core and keep it as reading notes. Pointer emission remains a `[GAP]` until written in `docs/pointer-emission.md` from the four graphics, not from these volumes and not from HCC-A / Coffee Cup / Water OBS format.
 
-#### History — recovery pass 5 (18 September 2026)
-
-Workspace attachment bound as `docs/history-recovered-pass-5-2026-09-18.md`.  
-ShoeLacey surface branches; Aug 15 owner-ruling / opening-dot; Aug 17 Lace/Star context pass; P02 v0.1→v0.1.1; June synthesis blob checks; Pixel capability probe. Historical Shadow only. Does not amend staking or settle pointer-emission.
 
