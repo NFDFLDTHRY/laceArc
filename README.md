@@ -22,7 +22,7 @@ Same rule. Same strand. 3D stars and N-dimensional participation are readings of
 
 ## What this repo contains
 
-Shelves (defrag pass 1–3). Hands stay at `docs/` root. Do not treat a prompt, clipboard, clock cube, or recovery as Graphic D.
+Shelves (defrag pass 1–4). Hands stay at `docs/` root. Do not treat a prompt, clipboard, clock cube, plan, or recovery as Graphic D.
 
 | Shelf | Path | What it is |
 |---|---|---|
@@ -33,8 +33,9 @@ Shelves (defrag pass 1–3). Hands stay at `docs/` root. Do not treat a prompt, 
 | Coord | [docs/coord/](docs/coord/) | Doc stations + gear claim umbrella (Layer III) |
 | History | [docs/history/](docs/history/) | Recoveries. Do not revive walkers |
 | Prompts | [docs/prompts/](docs/prompts/) | Agent tickets. Not law |
-| Clipboards | [docs/clipboards/](docs/clipboards/) | KEEP/FORBID. Petersen unfilled |
+| Clipboards | [docs/clipboards/](docs/clipboards/) | KEEP/FORBID |
 | Kit | [docs/kit/](docs/kit/) | Steward package. `READ_ME_FIRST` pin is STALE |
+| Plans | [docs/plans/](docs/plans/) | Rust `[PLAN]` tree + birth cards. Not Core |
 
 | Path | Role |
 |---|---|
@@ -83,8 +84,8 @@ Shelves (defrag pass 1–3). Hands stay at `docs/` root. Do not treat a prompt, 
 | [docs/clipboards/rowlands-zero-to-infinity-clipboard.md](docs/clipboards/rowlands-zero-to-infinity-clipboard.md) | Rowlands empty-start / no extra rooms / rewrite name-clash sheets. Not Core. |
 | [docs/clipboards/xiao-zhu-foundations-clipboard.md](docs/clipboards/xiao-zhu-foundations-clipboard.md) | Xiao–Zhu arrival-order / intern / MASK / embed / next-token sheets. Not Core. |
 | [docs/clipboards/agentscope-clipboard.md](docs/clipboards/agentscope-clipboard.md) | AgentScope taxonomy for the HOLDER. ReAG stays off Graphic D. Not Core. |
-| [docs/rust-nostd-crate-map.md](docs/rust-nostd-crate-map.md) | Plan map of first-party `#![no_std]` doors. No `src/`. Emission sealed. |
-| [docs/rust-nostd-branch-contracts.md](docs/rust-nostd-branch-contracts.md) | Plan: seven `#![no_std]` branch contract cards (serial proof gates). No `src/`. |
+| [docs/plans/rust-nostd-crate-map.md](docs/plans/rust-nostd-crate-map.md) | Plan map of first-party `#![no_std]` doors. No `src/`. Emission sealed. |
+| [docs/plans/rust-nostd-branch-contracts.md](docs/plans/rust-nostd-branch-contracts.md) | Plan: seven `#![no_std]` branch contract cards (serial proof gates). No `src/`. |
 | [docs/clock/gearing-code-1to1.md](docs/clock/gearing-code-1to1.md) | 47 visual keys ↔ planned Shadow units. Chip-only drift noted. Not Core. |
 | [docs/pointer-emission.md](docs/pointer-emission.md) | DRAFT questions only. Not accepted. Emission remains [GAP]. |
 | [docs/clock/philosophy-map.md](docs/clock/philosophy-map.md) | HCC-A, Coffee Cup, Water as the clock-gearbox. Clusters by tick. Not Core rows. |
