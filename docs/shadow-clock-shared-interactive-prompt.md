@@ -10,7 +10,7 @@
 
 ## Goal
 
-Implement the shared-interactive architecture EXACTLY so the Layer-III gearing page loads additive contract data via `<script src>` (not fetch), with a frozen renderer that reads `window.LACE_CONTRACTS`.
+Implement the shared-interactive architecture EXACTLY so the Layer-III gearing page loads additive contract data via `<script src>` (not fetch), with a frozen renderer that reads `window.LACE_CONTRACTS`. The interactive clock **must** render in **3D via WebGPU** (see REQUIREMENTS).
 
 ---
 
@@ -83,6 +83,28 @@ docs/shadow-clock-shared-interactive-prompt.md
 ## 5. Update README
 
 Add rows for `docs/gearing/` and the prompt file if a contents table exists.
+
+---
+
+## REQUIREMENTS (renderer — WebGPU 3D)
+
+These constraints apply to `docs/shadow-clock-gearing.html` and any Layer-III interactive gearing view:
+
+- **Interactive MUST be 3D.** The primary clock visualization is a WebGPU canvas (procedural extruded gears + lace ribbon). No Three.js, no CDN, no npm, no build step.
+- **WebGPU required.** Target environment: Chrome on Android with **WebGPU** and **WebNN** flags enabled (`chrome://flags`). WebNN need not be called by the render pass yet — document the expected flags. If `navigator.gpu` / adapter / device is missing, show a clear full-panel error requiring WebGPU; do **not** silently fall back to a 2D SVG as the primary clock.
+- **No 2D-only primary view.** 2D SVG may be removed or demoted to optional debug only.
+- **Still [III] projection.** Not Core. Shaft / axle partition unchanged. Contract bodies remain authority of `docs/shadow-clock-gear-contracts.md` via `docs/gearing/contracts-*.js`.
+- **Still no CDN.** Keep loading all eight `gearing/contracts-*.js` via relative `<script src>` before the main script. `CONTRACTS = window.LACE_CONTRACTS || {}` and derived `chipKeys`. No `fetch()` for contracts.
+- **Do not invent POINTER emission.** Leave `[GAP]` text alone.
+
+| Requirement | Rule |
+|---|---|
+| Dimension | Primary gearing view is **3D** |
+| API | **WebGPU** (`navigator.gpu`) — no Three.js, no CDN, no npm, no build step |
+| Environment | Verified target: **Chrome on Android** with **WebGPU** and **WebNN** flags enabled. WebNN is an environment note for this device class; this render pass uses WebGPU only. |
+| Fallback | If WebGPU is missing, show a clear blocking error that names the requirement — do **not** silently substitute a 2D primary view |
+| Layer | Still **[III]** projection only; shafts unchanged; contracts still `docs/gearing/contracts-*.js` |
+| Core | Still not Lace Core; POINTER emission remains `[GAP]` |
 
 ## 6. Hard forbids
 

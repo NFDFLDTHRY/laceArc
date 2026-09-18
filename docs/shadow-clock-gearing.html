@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Lace Shadow Clock — Gearing Interaction Contracts</title>
-<meta name="description" content="Projection view: holder machine {A,B,C} as physical clock gearing of lace. Not Core. Not a sixth graphic."/>
+<title>Lace Shadow Clock — Gearing Interaction Contracts (WebGPU 3D)</title>
+<meta name="description" content="Projection view: holder machine {A,B,C} as physical clock gearing of lace. WebGPU 3D only. Not Core. Not a sixth graphic."/>
 <style>
   :root {
     --bg: #0a0c10;
@@ -41,7 +41,7 @@
   header .sub { color: var(--muted); font-size: 0.85rem; max-width: 52rem; }
   header .badge {
     font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.08em;
-    border: 1px solid var(--wall); color: var(--muted);
+    border: 1px solid var(--axle); color: var(--axle);
     padding: 0.25rem 0.5rem; border-radius: 999px;
   }
   .layout {
@@ -55,14 +55,94 @@
   }
   .stage {
     position: relative;
-    padding: 0.5rem;
+    padding: 0;
     border-right: 1px solid #242a36;
     background:
       radial-gradient(ellipse at 50% 45%, #151a24 0%, var(--bg) 70%);
+    min-height: 420px;
   }
-  svg#clock {
-    width: 100%; height: auto; max-height: 78vh;
-    display: block; margin: 0 auto;
+  canvas#clock3d {
+    width: 100%;
+    height: min(78vh, 640px);
+    display: block;
+    touch-action: none;
+    cursor: crosshair;
+  }
+  .gpu-error {
+    position: absolute;
+    inset: 0;
+    z-index: 20;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+    background: rgba(10, 12, 16, 0.96);
+  }
+  .gpu-error[hidden] { display: none; }
+  .gpu-error .box {
+    max-width: 32rem;
+    border: 1px solid var(--danger);
+    border-radius: 8px;
+    padding: 1.25rem 1.4rem;
+    background: #1a1010;
+  }
+  .gpu-error h2 {
+    margin: 0 0 0.5rem;
+    font-size: 1rem;
+    color: var(--danger);
+  }
+  .gpu-error p, .gpu-error ol {
+    color: var(--muted);
+    font-size: 0.85rem;
+    margin: 0.4rem 0;
+  }
+  .gpu-error code {
+    font-family: ui-monospace, monospace;
+    font-size: 0.78rem;
+    color: var(--ink);
+  }
+  .hud-labels {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    z-index: 5;
+  }
+  .hud-labels .lab {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    pointer-events: auto;
+    background: rgba(10, 12, 16, 0.72);
+    border: 1px solid #333a4a;
+    color: var(--ink);
+    border-radius: 6px;
+    padding: 0.2rem 0.45rem;
+    font-size: 0.72rem;
+    font-weight: 700;
+    cursor: pointer;
+    letter-spacing: 0.04em;
+  }
+  .hud-labels .lab[data-key="A"] { border-color: var(--a); color: var(--a); }
+  .hud-labels .lab[data-key="B"] { border-color: var(--b); color: var(--b); }
+  .hud-labels .lab[data-key="C"] { border-color: var(--c); color: var(--c); }
+  .hud-labels .lab[data-key="axle"] { border-color: var(--axle); color: var(--axle); }
+  .hud-labels .lab[data-key="AB"],
+  .hud-labels .lab[data-key="BC"],
+  .hud-labels .lab[data-key="CA"] { border-color: var(--mesh); color: var(--mesh); font-weight: 600; }
+  .hud-labels .lab.active, .hud-labels .lab:hover {
+    box-shadow: 0 0 10px rgba(240, 230, 160, 0.35);
+  }
+  .tick-bar {
+    display: flex; flex-wrap: wrap; gap: 0.35rem;
+    padding: 0.5rem 0.75rem 0.25rem;
+    font-family: ui-monospace, monospace;
+    font-size: 0.72rem;
+  }
+  .tick-bar button {
+    background: #1a2030; border: 1px solid #333a4a; color: var(--muted);
+    border-radius: 4px; padding: 0.2rem 0.45rem; cursor: pointer;
+  }
+  .tick-bar button:hover, .tick-bar button.active {
+    border-color: var(--axle); color: var(--axle);
   }
   .side {
     background: var(--panel);
@@ -77,17 +157,6 @@
     margin: 1rem 0 0.35rem; font-size: 0.8rem;
     text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted);
   }
-  .stamp {
-    display: inline-block; font-family: ui-monospace, monospace;
-    font-size: 0.72rem; padding: 0.1rem 0.35rem; border-radius: 3px;
-    margin-right: 0.25rem; border: 1px solid #333;
-  }
-  .stamp-I { color: #9fd4ff; border-color: #3a6a8a; }
-  .stamp-II { color: #9fe0c0; border-color: #3a7a5a; }
-  .stamp-III { color: #d4c09f; border-color: #7a6a3a; }
-  .stamp-H { color: #f0e6a0; border-color: #8a7a30; }
-  .stamp-X { color: #ffb0b0; border-color: #8a3a3a; background: #2a1515; }
-  .stamp-GAP { color: #d0c0ff; border-color: #5a4a8a; }
   #contract {
     font-family: ui-monospace, "IBM Plex Mono", monospace;
     font-size: 0.78rem; line-height: 1.4;
@@ -103,7 +172,8 @@
   .links a:hover { text-decoration: underline; }
   .legend {
     display: flex; flex-wrap: wrap; gap: 0.5rem 1rem;
-    font-size: 0.75rem; color: var(--muted); margin-top: 0.5rem;
+    font-size: 0.75rem; color: var(--muted);
+    padding: 0.35rem 0.75rem 0.75rem;
   }
   .legend span::before {
     content: ""; display: inline-block; width: 0.65rem; height: 0.65rem;
@@ -122,7 +192,6 @@
   button.chip:hover, button.chip.active {
     border-color: var(--axle); color: var(--axle);
   }
-  .gear-hot { filter: drop-shadow(0 0 6px rgba(240,230,160,0.55)); }
   footer {
     grid-column: 1 / -1; padding: 0.6rem 1.25rem;
     border-top: 1px solid #242a36; color: var(--muted); font-size: 0.75rem;
@@ -131,101 +200,48 @@
     border-left: 3px solid var(--danger); padding-left: 0.65rem;
     margin: 0.75rem 0; color: var(--muted); font-size: 0.8rem;
   }
+  .env-note {
+    border-left: 3px solid var(--axle); padding-left: 0.65rem;
+    margin: 0.75rem 0; color: var(--muted); font-size: 0.8rem;
+  }
 </style>
 </head>
 <body>
 <header>
   <div>
     <h1>Lace Shadow Clock — Physical Gearing</h1>
-    <p class="sub">Holder machine {A, B, C} as clock gearing on one lace axle. Projection only — not Core, not a sixth graphic, not WORD/POINTER rows. POINTER emission stays [GAP].</p>
+    <p class="sub">Holder machine {A, B, C} as clock gearing on one lace axle. Projection only — not Core, not a sixth graphic, not WORD/POINTER rows. POINTER emission stays [GAP]. <strong>3D WebGPU required</strong> (no 2D primary view).</p>
   </div>
-  <span class="badge">Layer III · read-only</span>
+  <span class="badge">REQUIRES WebGPU · 3D only · Layer III</span>
 </header>
 
 <div class="layout">
   <div class="stage">
-    <svg id="clock" viewBox="0 0 920 640" role="img" aria-label="Three meshed clock gears A B C with lace cord through axle">
-      <defs>
-        <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
-          <feGaussianBlur stdDeviation="1.2" result="b"/>
-          <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
-        </filter>
-        <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
-          <path d="M0 0 L10 5 L0 10 z" fill="#f0e6a0"/>
-        </marker>
-      </defs>
-
-      <!-- wall -->
-      <rect x="24" y="24" width="872" height="592" rx="12" fill="none" stroke="#2a3140" stroke-dasharray="6 5"/>
-      <text x="40" y="48" fill="#8b93a7" font-size="11" font-family="ui-monospace, monospace">GREAT CONTRACT WALL — Shadow stops here · Hands = one strand beyond</text>
-
-      <!-- lace cord (behind gears) -->
-      <path id="lacePath" d="M60 520 C 180 480, 260 400, 340 360 S 480 300, 520 320 S 600 380, 700 300 S 820 220, 880 180"
-            fill="none" stroke="#e8dcc8" stroke-width="3.5" stroke-linecap="round" opacity="0.85"/>
-      <path d="M60 520 C 180 480, 260 400, 340 360 S 480 300, 520 320 S 600 380, 700 300 S 820 220, 880 180"
-            fill="none" stroke="#a89070" stroke-width="1" stroke-dasharray="2 6" opacity="0.7"/>
-      <text x="58" y="545" fill="#e8dcc8" font-size="11">LACE (Hands) — one cord, two ends, append-only</text>
-      <text x="700" y="170" fill="#e8dcc8" font-size="11">continue →</text>
-
-      <!-- axle hub -->
-      <g id="axle" style="cursor:pointer">
-        <circle cx="460" cy="330" r="28" fill="#1a1608" stroke="#c9a227" stroke-width="3"/>
-        <circle cx="460" cy="330" r="10" fill="#c9a227"/>
-        <text x="460" y="375" text-anchor="middle" fill="#c9a227" font-size="12" font-weight="600">AXLE</text>
-        <text x="460" y="390" text-anchor="middle" fill="#8b93a7" font-size="10">Reality · structure-only · recirculation</text>
-      </g>
-
-      <!-- Gear A - compile -->
-      <g id="gearA" class="gear" data-mesh="A" transform="translate(250,250)" style="cursor:pointer">
-        <g class="teeth" fill="#5b9fd4" stroke="#2a5070" stroke-width="1"></g>
-        <circle r="52" fill="#0f1822" stroke="#5b9fd4" stroke-width="2.5"/>
-        <text text-anchor="middle" y="-4" fill="#5b9fd4" font-size="22" font-weight="700">A</text>
-        <text text-anchor="middle" y="14" fill="#a8c8e0" font-size="9">HCC-A</text>
-        <text text-anchor="middle" y="26" fill="#8b93a7" font-size="8">compile</text>
-      </g>
-
-      <!-- Gear B - fall -->
-      <g id="gearB" class="gear" data-mesh="B" transform="translate(460,200)" style="cursor:pointer">
-        <g class="teeth" fill="#d4a05b" stroke="#6a5020" stroke-width="1"></g>
-        <circle r="44" fill="#1a140a" stroke="#d4a05b" stroke-width="2.5"/>
-        <text text-anchor="middle" y="-4" fill="#d4a05b" font-size="20" font-weight="700">B</text>
-        <text text-anchor="middle" y="12" fill="#e0c8a0" font-size="9">Cup</text>
-        <text text-anchor="middle" y="24" fill="#8b93a7" font-size="8">fall time</text>
-      </g>
-
-      <!-- Gear C - crossing -->
-      <g id="gearC" class="gear" data-mesh="C" transform="translate(640,300)" style="cursor:pointer">
-        <g class="teeth" fill="#7bc96f" stroke="#3a6a35" stroke-width="1"></g>
-        <circle r="48" fill="#0f1a10" stroke="#7bc96f" stroke-width="2.5"/>
-        <text text-anchor="middle" y="-4" fill="#7bc96f" font-size="20" font-weight="700">C</text>
-        <text text-anchor="middle" y="12" fill="#b0e0a8" font-size="9">Water</text>
-        <text text-anchor="middle" y="24" fill="#8b93a7" font-size="8">crossing</text>
-      </g>
-
-      <!-- mesh arcs -->
-      <g id="meshes" fill="none" stroke="#f0e6a0" stroke-width="1.5" opacity="0.55" marker-end="url(#arrow)">
-        <path id="meshAB" d="M300 230 Q 355 180 415 195" style="cursor:pointer"/>
-        <path id="meshBC" d="M505 220 Q 560 240 595 275" style="cursor:pointer"/>
-        <path id="meshCA" d="M590 330 Q 420 400 300 290" style="cursor:pointer"/>
-      </g>
-      <text x="350" y="175" fill="#f0e6a0" font-size="10" id="labAB" style="cursor:pointer">A×B</text>
-      <text x="555" y="245" fill="#f0e6a0" font-size="10" id="labBC" style="cursor:pointer">B×C</text>
-      <text x="430" y="385" fill="#f0e6a0" font-size="10" id="labCA" style="cursor:pointer">C×A</text>
-
-      <!-- tick strip -->
-      <g font-family="ui-monospace, monospace" font-size="10" fill="#8b93a7">
-        <text x="40" y="600">t0 Cond/Banks</text>
-        <text x="160" y="600">t1 Rel/Rapids</text>
-        <text x="290" y="600">t2 Traj/Locate*</text>
-        <text x="430" y="600">t3 Delta</text>
-        <text x="530" y="600">t4 Impact</text>
-        <text x="640" y="600">t5 After/Rebuild</text>
-        <text x="780" y="600">t6 next</text>
-      </g>
-      <g id="ticks">
-        <!-- clickable tick markers -->
-      </g>
-    </svg>
+    <div id="gpuError" class="gpu-error" hidden>
+      <div class="box">
+        <h2>WebGPU required</h2>
+        <p>This Layer-III shadow clock is <strong>3D only</strong>. There is no 2D SVG fallback as the primary view.</p>
+        <p>Target: <strong>Chrome on Android</strong> with experimental flags enabled:</p>
+        <ol>
+          <li>Open <code>chrome://flags</code></li>
+          <li>Enable <strong>WebGPU</strong> (<code>#enable-unsafe-webgpu</code> or platform WebGPU flag)</li>
+          <li>Enable <strong>WebNN</strong> (<code>#webnn</code> / <code>#enable-webnn</code>) — expected environment; not called by this render pass yet</li>
+          <li>Relaunch Chrome, then reload this page</li>
+        </ol>
+        <p>Desktop Chrome with WebGPU also works for preview. No Three.js, no CDN, no npm.</p>
+      </div>
+    </div>
+    <canvas id="clock3d" role="img" aria-label="Three meshed 3D clock gears A B C with lace cord through axle (WebGPU)"></canvas>
+    <div id="hud" class="hud-labels" aria-hidden="false">
+      <button type="button" class="lab" data-key="A" id="labA">A · HCC-A</button>
+      <button type="button" class="lab" data-key="B" id="labB">B · Cup</button>
+      <button type="button" class="lab" data-key="C" id="labC">C · Water</button>
+      <button type="button" class="lab" data-key="axle" id="labAxle">AXLE</button>
+      <button type="button" class="lab" data-key="AB" id="labAB">A×B</button>
+      <button type="button" class="lab" data-key="BC" id="labBC">B×C</button>
+      <button type="button" class="lab" data-key="CA" id="labCA">C×A</button>
+    </div>
+    <div class="tick-bar" id="tickBar" aria-label="Time cells t0–t6"></div>
     <div class="legend">
       <span class="la">A compile</span>
       <span class="lb">B fall</span>
@@ -237,7 +253,7 @@
 
   <aside class="side">
     <h2 id="panelTitle">Select a gear or mesh</h2>
-    <p class="hint">Click a gear (A/B/C), a mesh (A×B / B×C / C×A), the axle, or a time chip. Contracts are Shadow interaction specs — stamps show the great contract wall.</p>
+    <p class="hint">Tap a gear (A/B/C), mesh (A×B / B×C / C×A), the axle, or a time chip. Contracts are Shadow interaction specs — stamps show the great contract wall.</p>
 
     <div id="chips"></div>
 
@@ -247,6 +263,11 @@
     <div class="wall-note">
       If a contract would change WORD, POINTER, STAR, or the governing rule — discard for Core.
       Escapement repair (C.Locate @ B.Traj) is [H] only — not pointer-emission.
+    </div>
+
+    <div class="env-note">
+      Environment: Chrome Android with WebGPU + WebNN flags expected.
+      This page uses <strong>WebGPU for rendering only</strong>; WebNN is not invoked in this pass.
     </div>
 
     <h3>Docs</h3>
@@ -261,9 +282,8 @@
 </div>
 
 <footer>
-  Projection (Layer III). raw.githack: serve this file from main. Shoe lace in hands — or get out of here.
+  Projection (Layer III). WebGPU 3D required — no 2D primary clock. POINTER emission [GAP] untouched. Shoe lace in hands — or get out of here.
 </footer>
-
 
 <script src="gearing/contracts-axle.js"></script>
 <script src="gearing/contracts-gears.js"></script>
@@ -275,59 +295,37 @@
 <script src="gearing/contracts-audits.js"></script>
 <script>
 (function () {
-  function gearTeeth(gSelector, toothCount, outerR, innerR, tip) {
-    const g = document.querySelector(gSelector + " .teeth");
-    let d = "";
-    for (let i = 0; i < toothCount; i++) {
-      const a0 = (Math.PI * 2 * i) / toothCount;
-      const a1 = a0 + Math.PI / toothCount;
-      const aMid = (a0 + a1) / 2;
-      const x0 = Math.cos(a0) * innerR, y0 = Math.sin(a0) * innerR;
-      const tx = Math.cos(aMid) * (innerR + tip), ty = Math.sin(aMid) * (innerR + tip);
-      const x1 = Math.cos(a1) * innerR, y1 = Math.sin(a1) * innerR;
-      d += `M ${x0} ${y0} L ${tx} ${ty} L ${x1} ${y1} `;
-    }
-    const ring = document.createElementNS("http://www.w3.org/2000/svg", "path");
-    ring.setAttribute("d", d);
-    g.appendChild(ring);
-    const rim = document.createElementNS("http://www.w3.org/2000/svg", "circle");
-    rim.setAttribute("r", String(outerR));
-    rim.setAttribute("fill", "none");
-    g.appendChild(rim);
-  }
-  gearTeeth("#gearA", 16, 70, 62, 14);
-  gearTeeth("#gearB", 12, 60, 52, 12);
-  gearTeeth("#gearC", 14, 66, 58, 13);
-
-  // slow opposite rotations (meshed look)
-  let t = 0;
-  function spin() {
-    t += 0.35;
-    document.querySelector("#gearA .teeth").setAttribute("transform", "rotate(" + t + ")");
-    document.querySelector("#gearB .teeth").setAttribute("transform", "rotate(" + (-t * (16/12)) + ")");
-    document.querySelector("#gearC .teeth").setAttribute("transform", "rotate(" + (t * (16/14)) + ")");
-    requestAnimationFrame(spin);
-  }
-  requestAnimationFrame(spin);
+  "use strict";
 
   const CONTRACTS = window.LACE_CONTRACTS || {};
 
   const titleEl = document.getElementById("panelTitle");
   const bodyEl = document.getElementById("contract");
   const chips = document.getElementById("chips");
+  const tickBar = document.getElementById("tickBar");
+  const gpuError = document.getElementById("gpuError");
+  const canvas = document.getElementById("clock3d");
+  const hud = document.getElementById("hud");
+
+  let selectedKey = "axle";
+  let highlightKey = "axle";
 
   function show(key) {
     const c = CONTRACTS[key];
     if (!c) return;
+    selectedKey = key;
+    highlightKey = key;
     titleEl.textContent = c.title;
     bodyEl.textContent = c.body;
     document.querySelectorAll("button.chip").forEach(b => {
       b.classList.toggle("active", b.dataset.key === key);
     });
-    document.querySelectorAll(".gear").forEach(g => g.classList.remove("gear-hot"));
-    if (key === "A") document.getElementById("gearA").classList.add("gear-hot");
-    if (key === "B") document.getElementById("gearB").classList.add("gear-hot");
-    if (key === "C") document.getElementById("gearC").classList.add("gear-hot");
+    document.querySelectorAll(".tick-bar button").forEach(b => {
+      b.classList.toggle("active", b.dataset.key === key);
+    });
+    document.querySelectorAll(".hud-labels .lab").forEach(b => {
+      b.classList.toggle("active", b.dataset.key === key);
+    });
   }
 
   const chipKeys = Object.keys(CONTRACTS).sort().map(k => [k, (CONTRACTS[k] && CONTRACTS[k].chip) || k]);
@@ -340,33 +338,543 @@
     chips.appendChild(b);
   });
 
-  document.getElementById("gearA").addEventListener("click", () => show("A"));
-  document.getElementById("gearB").addEventListener("click", () => show("B"));
-  document.getElementById("gearC").addEventListener("click", () => show("C"));
-  document.getElementById("axle").addEventListener("click", () => show("axle"));
-  document.getElementById("meshAB").addEventListener("click", () => show("AB"));
-  document.getElementById("meshBC").addEventListener("click", () => show("BC"));
-  document.getElementById("meshCA").addEventListener("click", () => show("CA"));
-  document.getElementById("labAB").addEventListener("click", () => show("AB"));
-  document.getElementById("labBC").addEventListener("click", () => show("BC"));
-  document.getElementById("labCA").addEventListener("click", () => show("CA"));
-
-  // tick hit targets
-  const ticks = document.getElementById("ticks");
-  const xs = [40,160,290,430,530,640,780];
-  ["t0","t1","t2","t3","t4","t5","t6"].forEach((k, i) => {
-    const r = document.createElementNS("http://www.w3.org/2000/svg", "rect");
-    r.setAttribute("x", String(xs[i] - 4));
-    r.setAttribute("y", "575");
-    r.setAttribute("width", "100");
-    r.setAttribute("height", "36");
-    r.setAttribute("fill", "transparent");
-    r.style.cursor = "pointer";
-    r.addEventListener("click", () => show(k));
-    ticks.appendChild(r);
+  ["t0 Cond/Banks", "t1 Rel/Rapids", "t2 Traj/Locate*", "t3 Delta", "t4 Impact", "t5 After/Rebuild", "t6 next"].forEach((label, i) => {
+    const k = "t" + i;
+    const b = document.createElement("button");
+    b.type = "button";
+    b.textContent = label;
+    b.dataset.key = k;
+    b.onclick = () => show(k);
+    tickBar.appendChild(b);
   });
 
+  hud.querySelectorAll(".lab").forEach(btn => {
+    btn.addEventListener("click", (e) => {
+      e.stopPropagation();
+      show(btn.dataset.key);
+    });
+  });
+
+  /* ——— math helpers ——— */
+  function mat4Identity() {
+    return new Float32Array([1,0,0,0, 0,1,0,0, 0,0,1,0, 0,0,0,1]);
+  }
+  function mat4Multiply(a, b) {
+    const o = new Float32Array(16);
+    for (let c = 0; c < 4; c++) {
+      for (let r = 0; r < 4; r++) {
+        o[c * 4 + r] =
+          a[0 * 4 + r] * b[c * 4 + 0] +
+          a[1 * 4 + r] * b[c * 4 + 1] +
+          a[2 * 4 + r] * b[c * 4 + 2] +
+          a[3 * 4 + r] * b[c * 4 + 3];
+      }
+    }
+    return o;
+  }
+  function mat4Perspective(fovy, aspect, near, far) {
+    const f = 1 / Math.tan(fovy / 2);
+    const nf = 1 / (near - far);
+    const o = new Float32Array(16);
+    o[0] = f / aspect; o[5] = f; o[10] = (far + near) * nf; o[11] = -1;
+    o[14] = 2 * far * near * nf;
+    return o;
+  }
+  function mat4LookAt(eye, center, up) {
+    let zx = eye[0] - center[0], zy = eye[1] - center[1], zz = eye[2] - center[2];
+    let len = Math.hypot(zx, zy, zz) || 1; zx /= len; zy /= len; zz /= len;
+    let xx = up[1] * zz - up[2] * zy, xy = up[2] * zx - up[0] * zz, xz = up[0] * zy - up[1] * zx;
+    len = Math.hypot(xx, xy, xz) || 1; xx /= len; xy /= len; xz /= len;
+    const yx = zy * xz - zz * xy, yy = zz * xx - zx * xz, yz = zx * xy - zy * xx;
+    const o = mat4Identity();
+    o[0] = xx; o[1] = yx; o[2] = zx;
+    o[4] = xy; o[5] = yy; o[6] = zy;
+    o[8] = xz; o[9] = yz; o[10] = zz;
+    o[12] = -(xx * eye[0] + xy * eye[1] + xz * eye[2]);
+    o[13] = -(yx * eye[0] + yy * eye[1] + yz * eye[2]);
+    o[14] = -(zx * eye[0] + zy * eye[1] + zz * eye[2]);
+    return o;
+  }
+  function mat4Translate(tx, ty, tz) {
+    const o = mat4Identity();
+    o[12] = tx; o[13] = ty; o[14] = tz;
+    return o;
+  }
+  function mat4RotateZ(rad) {
+    const c = Math.cos(rad), s = Math.sin(rad);
+    const o = mat4Identity();
+    o[0] = c; o[1] = s; o[4] = -s; o[5] = c;
+    return o;
+  }
+  function mat4RotateY(rad) {
+    const c = Math.cos(rad), s = Math.sin(rad);
+    const o = mat4Identity();
+    o[0] = c; o[2] = -s; o[8] = s; o[10] = c;
+    return o;
+  }
+  function mat4RotateX(rad) {
+    const c = Math.cos(rad), s = Math.sin(rad);
+    const o = mat4Identity();
+    o[5] = c; o[6] = s; o[9] = -s; o[10] = c;
+    return o;
+  }
+  function transformPoint(m, x, y, z) {
+    const w = m[3] * x + m[7] * y + m[11] * z + m[15];
+    return [
+      (m[0] * x + m[4] * y + m[8] * z + m[12]) / w,
+      (m[1] * x + m[5] * y + m[9] * z + m[13]) / w,
+      (m[2] * x + m[6] * y + m[10] * z + m[14]) / w
+    ];
+  }
+
+  /* ——— procedural meshes: pos(3) + normal(3) + color(3) = 9 floats ——— */
+  function pushTri(arr, ax,ay,az, bx,by,bz, cx,cy,cz, nx,ny,nz, r,g,b) {
+    arr.push(ax,ay,az, nx,ny,nz, r,g,b);
+    arr.push(bx,by,bz, nx,ny,nz, r,g,b);
+    arr.push(cx,cy,cz, nx,ny,nz, r,g,b);
+  }
+  function pushQuad(arr, a, b, c, d, n, col) {
+    pushTri(arr, a[0],a[1],a[2], b[0],b[1],b[2], c[0],c[1],c[2], n[0],n[1],n[2], col[0],col[1],col[2]);
+    pushTri(arr, a[0],a[1],a[2], c[0],c[1],c[2], d[0],d[1],d[2], n[0],n[1],n[2], col[0],col[1],col[2]);
+  }
+
+  function buildGear(toothCount, innerR, outerR, tip, halfT, color) {
+    const arr = [];
+    const hubR = innerR * 0.35;
+    const z0 = -halfT, z1 = halfT;
+    const col = color;
+
+    // faces + rim: sample profile
+    const segs = toothCount * 4;
+    function radiusAt(i) {
+      const tooth = Math.floor(i / 4);
+      const within = i % 4;
+      const base = outerR - tip * 0.15;
+      if (within === 1 || within === 2) return outerR + tip;
+      return base;
+    }
+    const pts = [];
+    for (let i = 0; i < segs; i++) {
+      const a = (Math.PI * 2 * i) / segs;
+      const r = radiusAt(i);
+      pts.push([Math.cos(a) * r, Math.sin(a) * r]);
+    }
+    for (let i = 0; i < segs; i++) {
+      const j = (i + 1) % segs;
+      const p0 = pts[i], p1 = pts[j];
+      // front face
+      pushTri(arr, 0,0,z1, p0[0],p0[1],z1, p1[0],p1[1],z1, 0,0,1, col[0],col[1],col[2]);
+      // back face
+      pushTri(arr, 0,0,z0, p1[0],p1[1],z0, p0[0],p0[1],z0, 0,0,-1, col[0]*0.75,col[1]*0.75,col[2]*0.75);
+      // outer wall
+      const dx = p1[0] - p0[0], dy = p1[1] - p0[1];
+      let nx = dy, ny = -dx;
+      const nl = Math.hypot(nx, ny) || 1;
+      nx /= nl; ny /= nl;
+      pushQuad(arr,
+        [p0[0],p0[1],z1], [p1[0],p1[1],z1], [p1[0],p1[1],z0], [p0[0],p0[1],z0],
+        [nx, ny, 0], [col[0]*0.85, col[1]*0.85, col[2]*0.85]);
+    }
+    // hub cylinder
+    const hubSegs = 24;
+    for (let i = 0; i < hubSegs; i++) {
+      const a0 = (Math.PI * 2 * i) / hubSegs;
+      const a1 = (Math.PI * 2 * (i + 1)) / hubSegs;
+      const x0 = Math.cos(a0) * hubR, y0 = Math.sin(a0) * hubR;
+      const x1 = Math.cos(a1) * hubR, y1 = Math.sin(a1) * hubR;
+      const dark = [col[0]*0.45, col[1]*0.45, col[2]*0.45];
+      pushQuad(arr,
+        [x0,y0,z1], [x1,y1,z1], [x1,y1,z0], [x0,y0,z0],
+        [Math.cos((a0+a1)/2), Math.sin((a0+a1)/2), 0], dark);
+    }
+    return new Float32Array(arr);
+  }
+
+  function buildCylinder(radius, halfLen, segs, color, axis) {
+    // axis: 'z' (default) or 'x'
+    const arr = [];
+    const z0 = -halfLen, z1 = halfLen;
+    for (let i = 0; i < segs; i++) {
+      const a0 = (Math.PI * 2 * i) / segs;
+      const a1 = (Math.PI * 2 * (i + 1)) / segs;
+      let p0, p1, p2, p3, n;
+      if (axis === "x") {
+        p0 = [z1, Math.cos(a0)*radius, Math.sin(a0)*radius];
+        p1 = [z1, Math.cos(a1)*radius, Math.sin(a1)*radius];
+        p2 = [z0, Math.cos(a1)*radius, Math.sin(a1)*radius];
+        p3 = [z0, Math.cos(a0)*radius, Math.sin(a0)*radius];
+        n = [0, Math.cos((a0+a1)/2), Math.sin((a0+a1)/2)];
+      } else {
+        p0 = [Math.cos(a0)*radius, Math.sin(a0)*radius, z1];
+        p1 = [Math.cos(a1)*radius, Math.sin(a1)*radius, z1];
+        p2 = [Math.cos(a1)*radius, Math.sin(a1)*radius, z0];
+        p3 = [Math.cos(a0)*radius, Math.sin(a0)*radius, z0];
+        n = [Math.cos((a0+a1)/2), Math.sin((a0+a1)/2), 0];
+      }
+      pushQuad(arr, p0, p1, p2, p3, n, color);
+    }
+    return new Float32Array(arr);
+  }
+
+  function buildLaceRibbon(color) {
+    // Bezier-ish path through scene; ribbon strip
+    const arr = [];
+    const pts = [];
+    const N = 64;
+    for (let i = 0; i <= N; i++) {
+      const t = i / N;
+      // parametric lace curve weaving past the axle
+      const x = -2.8 + t * 5.6;
+      const y = -0.9 + Math.sin(t * Math.PI * 1.4) * 0.55 + t * 0.35;
+      const z = -1.2 + Math.cos(t * Math.PI * 2.1) * 0.7 + Math.sin(t * 3.0) * 0.25;
+      pts.push([x, y, z]);
+    }
+    const halfW = 0.06;
+    for (let i = 0; i < pts.length - 1; i++) {
+      const a = pts[i], b = pts[i + 1];
+      const dx = b[0] - a[0], dy = b[1] - a[1], dz = b[2] - a[2];
+      // approximate binormal for ribbon width in Y-ish up
+      let ux = -dy, uy = dx, uz = 0;
+      let ul = Math.hypot(ux, uy, uz);
+      if (ul < 1e-5) { ux = 0; uy = 0; uz = 1; ul = 1; }
+      ux /= ul; uy /= ul; uz /= ul;
+      const p0 = [a[0] - ux * halfW, a[1] - uy * halfW, a[2] - uz * halfW];
+      const p1 = [a[0] + ux * halfW, a[1] + uy * halfW, a[2] + uz * halfW];
+      const p2 = [b[0] + ux * halfW, b[1] + uy * halfW, b[2] + uz * halfW];
+      const p3 = [b[0] - ux * halfW, b[1] - uy * halfW, b[2] - uz * halfW];
+      // normal ~ cross of tangent and width
+      let nx = dy * uz - dz * uy, ny = dz * ux - dx * uz, nz = dx * uy - dy * ux;
+      const nl = Math.hypot(nx, ny, nz) || 1;
+      nx /= nl; ny /= nl; nz /= nl;
+      pushQuad(arr, p0, p1, p2, p3, [nx, ny, nz], color);
+      pushQuad(arr, p0, p3, p2, p1, [-nx, -ny, -nz], [color[0]*0.8, color[1]*0.8, color[2]*0.8]);
+    }
+    return new Float32Array(arr);
+  }
+
+  // Scene layout: gears along a shared visual axle (X), slightly tilted for depth
+  const GEAR_A = { teeth: 16, inner: 0.72, outer: 0.85, tip: 0.14, halfT: 0.09, color: [0.36, 0.62, 0.83], x: -1.15 };
+  const GEAR_B = { teeth: 12, inner: 0.58, outer: 0.70, tip: 0.12, halfT: 0.08, color: [0.83, 0.63, 0.36], x: 0.0 };
+  const GEAR_C = { teeth: 14, inner: 0.65, outer: 0.78, tip: 0.13, halfT: 0.085, color: [0.48, 0.79, 0.44], x: 1.15 };
+
+  const SHADER = `
+struct Uniforms {
+  mvp : mat4x4f,
+  model : mat4x4f,
+  lightDir : vec4f,
+  eyePos : vec4f,
+  highlight : vec4f,
+};
+@group(0) @binding(0) var<uniform> u : Uniforms;
+
+struct VSIn {
+  @location(0) pos : vec3f,
+  @location(1) normal : vec3f,
+  @location(2) color : vec3f,
+};
+struct VSOut {
+  @builtin(position) clip : vec4f,
+  @location(0) worldPos : vec3f,
+  @location(1) normal : vec3f,
+  @location(2) color : vec3f,
+};
+
+@vertex
+fn vs_main(input : VSIn) -> VSOut {
+  var o : VSOut;
+  let wp = u.model * vec4f(input.pos, 1.0);
+  o.worldPos = wp.xyz;
+  o.normal = (u.model * vec4f(input.normal, 0.0)).xyz;
+  o.color = input.color;
+  o.clip = u.mvp * vec4f(input.pos, 1.0);
+  return o;
+}
+
+@fragment
+fn fs_main(input : VSOut) -> @location(0) vec4f {
+  let n = normalize(input.normal);
+  let L = normalize(u.lightDir.xyz);
+  let V = normalize(u.eyePos.xyz - input.worldPos);
+  let diff = max(dot(n, L), 0.0);
+  let H = normalize(L + V);
+  let spec = pow(max(dot(n, H), 0.0), 32.0);
+  var col = input.color * (0.28 + 0.72 * diff) + vec3f(1.0, 0.95, 0.85) * spec * 0.25;
+  col = mix(col, col * 1.25 + vec3f(0.15, 0.12, 0.05), u.highlight.x);
+  return vec4f(col, 1.0);
+}
+`;
+
+  async function initWebGPU() {
+    if (!navigator.gpu) {
+      gpuError.hidden = false;
+      return null;
+    }
+    const adapter = await navigator.gpu.requestAdapter();
+    if (!adapter) {
+      gpuError.hidden = false;
+      return null;
+    }
+    const device = await adapter.requestDevice();
+    const context = canvas.getContext("webgpu");
+    if (!context) {
+      gpuError.hidden = false;
+      return null;
+    }
+    const format = navigator.gpu.getPreferredCanvasFormat();
+
+    function resize() {
+      const dpr = Math.min(window.devicePixelRatio || 1, 2);
+      const w = Math.max(1, Math.floor(canvas.clientWidth * dpr));
+      const h = Math.max(1, Math.floor(canvas.clientHeight * dpr));
+      if (canvas.width !== w || canvas.height !== h) {
+        canvas.width = w;
+        canvas.height = h;
+        context.configure({
+          device,
+          format,
+          alphaMode: "opaque",
+        });
+      }
+      return [w, h];
+    }
+    resize();
+
+    const meshA = buildGear(GEAR_A.teeth, GEAR_A.inner, GEAR_A.outer, GEAR_A.tip, GEAR_A.halfT, GEAR_A.color);
+    const meshB = buildGear(GEAR_B.teeth, GEAR_B.inner, GEAR_B.outer, GEAR_B.tip, GEAR_B.halfT, GEAR_B.color);
+    const meshC = buildGear(GEAR_C.teeth, GEAR_C.inner, GEAR_C.outer, GEAR_C.tip, GEAR_C.halfT, GEAR_C.color);
+    const axleMesh = buildCylinder(0.08, 2.0, 20, [0.79, 0.64, 0.15], "x");
+    const laceMesh = buildLaceRibbon([0.91, 0.86, 0.78]);
+
+    function makeBuffer(data) {
+      const buf = device.createBuffer({
+        size: data.byteLength,
+        usage: GPUBufferUsage.VERTEX | GPUBufferUsage.COPY_DST,
+      });
+      device.queue.writeBuffer(buf, 0, data);
+      return { buffer: buf, vertexCount: data.length / 9 };
+    }
+    const bufA = makeBuffer(meshA);
+    const bufB = makeBuffer(meshB);
+    const bufC = makeBuffer(meshC);
+    const bufAxle = makeBuffer(axleMesh);
+    const bufLace = makeBuffer(laceMesh);
+
+    const shaderModule = device.createShaderModule({ code: SHADER });
+    const pipeline = device.createRenderPipeline({
+      layout: "auto",
+      vertex: {
+        module: shaderModule,
+        entryPoint: "vs_main",
+        buffers: [{
+          arrayStride: 36,
+          attributes: [
+            { shaderLocation: 0, offset: 0, format: "float32x3" },
+            { shaderLocation: 1, offset: 12, format: "float32x3" },
+            { shaderLocation: 2, offset: 24, format: "float32x3" },
+          ],
+        }],
+      },
+      fragment: {
+        module: shaderModule,
+        entryPoint: "fs_main",
+        targets: [{ format }],
+      },
+      primitive: { topology: "triangle-list", cullMode: "none" },
+      depthStencil: {
+        format: "depth24plus",
+        depthWriteEnabled: true,
+        depthCompare: "less",
+      },
+    });
+
+    const uniformSize = 256; // padded
+    const uniformBuffer = device.createBuffer({
+      size: uniformSize,
+      usage: GPUBufferUsage.UNIFORM | GPUBufferUsage.COPY_DST,
+    });
+    const bindGroup = device.createBindGroup({
+      layout: pipeline.getBindGroupLayout(0),
+      entries: [{ binding: 0, resource: { buffer: uniformBuffer } }],
+    });
+
+    let depthTexture = null;
+    let depthView = null;
+    function ensureDepth(w, h) {
+      if (depthTexture && depthTexture.width === w && depthTexture.height === h) return;
+      if (depthTexture) depthTexture.destroy();
+      depthTexture = device.createTexture({
+        size: [w, h],
+        format: "depth24plus",
+        usage: GPUTextureUsage.RENDER_ATTACHMENT,
+      });
+      depthView = depthTexture.createView();
+    }
+
+    // world centers for picking / HUD (local gear origin at gear.x on axle)
+    const pickTargets = [
+      { key: "A", pos: [GEAR_A.x, 0, 0], radius: 0.95 },
+      { key: "B", pos: [GEAR_B.x, 0, 0], radius: 0.82 },
+      { key: "C", pos: [GEAR_C.x, 0, 0], radius: 0.90 },
+      { key: "axle", pos: [0, 0, 0], radius: 0.35 },
+      { key: "AB", pos: [(GEAR_A.x + GEAR_B.x) / 2, 0.55, 0.2], radius: 0.4 },
+      { key: "BC", pos: [(GEAR_B.x + GEAR_C.x) / 2, 0.55, 0.2], radius: 0.4 },
+      { key: "CA", pos: [0, -0.7, 0.15], radius: 0.45 },
+    ];
+
+    let lastVP = mat4Identity();
+    let lastEye = [0, 0, 0];
+    let angle = 0;
+
+    function writeUniforms(mvp, model, lightDir, eye, highlight) {
+      // layout: mvp(64) + model(64) + light(16) + eye(16) + highlight(16) = 176
+      const data = new Float32Array(64);
+      data.set(mvp, 0);
+      data.set(model, 16);
+      data.set(lightDir, 32);
+      data.set([eye[0], eye[1], eye[2], 1], 36);
+      data.set(highlight, 40);
+      device.queue.writeBuffer(uniformBuffer, 0, data);
+    }
+
+    function drawMesh(pass, mesh, model, mvpBase, eye, light, hi) {
+      const mvp = mat4Multiply(mvpBase, model);
+      writeUniforms(mvp, model, light, eye, hi);
+      pass.setBindGroup(0, bindGroup);
+      pass.setVertexBuffer(0, mesh.buffer);
+      pass.draw(mesh.vertexCount);
+    }
+
+    function projectHud() {
+      const rect = canvas.getBoundingClientRect();
+      const map = {
+        A: document.getElementById("labA"),
+        B: document.getElementById("labB"),
+        C: document.getElementById("labC"),
+        axle: document.getElementById("labAxle"),
+        AB: document.getElementById("labAB"),
+        BC: document.getElementById("labBC"),
+        CA: document.getElementById("labCA"),
+      };
+      pickTargets.forEach(t => {
+        const el = map[t.key];
+        if (!el) return;
+        const clip = transformPoint(lastVP, t.pos[0], t.pos[1], t.pos[2]);
+        const sx = (clip[0] * 0.5 + 0.5) * rect.width;
+        const sy = (1 - (clip[1] * 0.5 + 0.5)) * rect.height;
+        el.style.left = sx + "px";
+        el.style.top = sy + "px";
+        el.style.visibility = (clip[2] > -1 && clip[2] < 1) ? "visible" : "hidden";
+      });
+    }
+
+    function frame(ts) {
+      const [w, h] = resize();
+      ensureDepth(w, h);
+      angle = ts * 0.00035;
+
+      const aspect = w / Math.max(h, 1);
+      const proj = mat4Perspective((42 * Math.PI) / 180, aspect, 0.1, 100);
+      const eye = [2.6, 1.55, 4.2];
+      const view = mat4LookAt(eye, [0, 0, 0], [0, 1, 0]);
+      // slight world tilt so axle reads as shared shaft in depth
+      const worldTilt = mat4Multiply(mat4RotateY(-0.35), mat4RotateX(-0.28));
+      const vp = mat4Multiply(proj, mat4Multiply(view, worldTilt));
+      lastVP = vp;
+      lastEye = eye;
+
+      const light = [0.45, 0.85, 0.55, 0];
+
+      const enc = device.createCommandEncoder();
+      const pass = enc.beginRenderPass({
+        colorAttachments: [{
+          view: context.getCurrentTexture().createView(),
+          clearValue: { r: 0.04, g: 0.05, b: 0.07, a: 1 },
+          loadOp: "clear",
+          storeOp: "store",
+        }],
+        depthStencilAttachment: {
+          view: depthView,
+          depthClearValue: 1,
+          depthLoadOp: "clear",
+          depthStoreOp: "store",
+        },
+      });
+      pass.setPipeline(pipeline);
+
+      const hiOn = [1, 0, 0, 0];
+      const hiOff = [0, 0, 0, 0];
+
+      // lace behind
+      drawMesh(pass, bufLace, mat4Identity(), vp, eye, light, hiOff);
+
+      // axle
+      drawMesh(pass, bufAxle, mat4Identity(), vp, eye, light,
+        (highlightKey === "axle") ? hiOn : hiOff);
+
+      // Gears built in XY (extrude Z); orient 90° about Y so plane is YZ (face along axle X).
+      // Spin in local gear plane (Z) before orient → rotation about shared axle.
+      function gearOrient(x, spin) {
+        const toAxle = mat4RotateY(Math.PI / 2);
+        const spinM = mat4RotateZ(spin);
+        return mat4Multiply(mat4Translate(x, 0, 0), mat4Multiply(toAxle, spinM));
+      }
+
+      const spinA = angle;
+      const spinB = -angle * (GEAR_A.teeth / GEAR_B.teeth);
+      const spinC = angle * (GEAR_A.teeth / GEAR_C.teeth);
+
+      drawMesh(pass, bufA, gearOrient(GEAR_A.x, spinA), vp, eye, light,
+        (highlightKey === "A" || highlightKey === "AB" || highlightKey === "CA") ? hiOn : hiOff);
+      drawMesh(pass, bufB, gearOrient(GEAR_B.x, spinB), vp, eye, light,
+        (highlightKey === "B" || highlightKey === "AB" || highlightKey === "BC") ? hiOn : hiOff);
+      drawMesh(pass, bufC, gearOrient(GEAR_C.x, spinC), vp, eye, light,
+        (highlightKey === "C" || highlightKey === "BC" || highlightKey === "CA") ? hiOn : hiOff);
+
+      pass.end();
+      device.queue.submit([enc.finish()]);
+      projectHud();
+      requestAnimationFrame(frame);
+    }
+
+    function pick(clientX, clientY) {
+      const rect = canvas.getBoundingClientRect();
+      const nx = ((clientX - rect.left) / rect.width) * 2 - 1;
+      const ny = 1 - ((clientY - rect.top) / rect.height) * 2;
+      let best = null;
+      let bestDist = Infinity;
+      pickTargets.forEach(t => {
+        const clip = transformPoint(lastVP, t.pos[0], t.pos[1], t.pos[2]);
+        const dx = clip[0] - nx;
+        const dy = clip[1] - ny;
+        const d = Math.hypot(dx, dy);
+        // scale pick radius by approximate projected size
+        const edge = transformPoint(lastVP, t.pos[0] + t.radius, t.pos[1], t.pos[2]);
+        const pr = Math.max(0.04, Math.hypot(edge[0] - clip[0], edge[1] - clip[1]));
+        if (d < pr && d < bestDist) {
+          bestDist = d;
+          best = t.key;
+        }
+      });
+      return best;
+    }
+
+    canvas.addEventListener("pointerdown", (e) => {
+      const key = pick(e.clientX, e.clientY);
+      if (key) show(key);
+    });
+
+    window.addEventListener("resize", () => resize());
+
+    requestAnimationFrame(frame);
+    return true;
+  }
+
   show("axle");
+
+  initWebGPU().catch((err) => {
+    console.error(err);
+    gpuError.hidden = false;
+  });
 })();
 </script>
 </body>
