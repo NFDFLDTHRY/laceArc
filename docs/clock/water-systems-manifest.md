@@ -39,7 +39,7 @@ Stamps: `[H]` clutch · `[X]` forbidden as Core type · `[I]` kin-read · `[GAP]
 - **Purpose:** Something that can be pointed at. Time/context anchor, concrete event or quote.
 - **Inputs:** A located claim.
 - **Outputs:** An OBS in one party’s inventory. Inventories need not match yet.
-- **Invariants:** If it can’t be pointed at, it is not OBS. Sharedness is optional at OBS (I-A2).
+- **Invariants:** I-A1 Pointability: if it can’t be pointed at, it is not OBS. Sharedness is optional at OBS (I-A2).
 - **Failure modes:** Interpretive intent without anchor. OBS stored as P3 POINTER. `[X]`
 - **Boundary & Coupling:** Kin of “only structure crosses.” Not a Graphic D entry form.
 - **Key source language:** “Something that can be pointed at.”
@@ -318,6 +318,41 @@ Water S0–S4 ≠ HCC S0–S7 ≠ Cup C1–C5. Do not renumber.
 | T3 | Kernel = F1 + request F2 |
 | T4 | Live vs writing |
 | T5 | Namespace stamp |
+
+## Story as FSM trace (pass 5)
+
+| Beat | Mechanic |
+|---|---|
+| Food examples on the table | F2 attempts; first man inventorying OBS |
+| Second man’s tense claim, no examples | pressure; missing anchor; S1 |
+| “Narrative” as a grab for frame | intended F2; heard as power — no shared reference |
+| “Can’t speak here” / boxed in | FM-A2 |
+| Heat-lines that slide off | F5 INVALID; density not transfer |
+| Leave the room | runtime change; not punishment |
+| Writing after pressure has nowhere to feed | A’s slow pass |
+| “Pick one thing you can point at” | kernel / F2 request |
+| River + proof recognized as the same thing | §3 isomorphism, spoken |
+| Later: “not at the crossing yet” | F1 Locate |
+
+They did not solve food. That is not failure. They found Locate. Diagnosis in the source: failed because of *when and where*, not what was said. Pressure entered before orientation.
+
+## Division of labor (pass 5)
+
+River detects *where*. Ledger specifies *what must exist* for crossing.
+
+| | Unit of progress | Failure detector |
+|---|---|---|
+| A | OBS created → DELTA created → UNK resolved | INVALID |
+| B | rapids → delta → crossing | too loud to cross |
+
+## Pass 5 clipboard deltas
+
+| Ticket | Action |
+|---|---|
+| T1 | Story walked as S*/F* trace |
+| T2 | River where / Ledger what-must-exist |
+| T3 | I-A1 named Pointability |
+| T4 | When/where diagnosis seated on the trace |
 
 ---
 
