@@ -1,6 +1,6 @@
 # Verification iteration 2, pass 2 — the checker, tested against its own labels
 
-**Status:** `[PLAN]`. Execution NOT_RUN. **Station:** maps for this plan and its record; **kit** only if a ruling authorises a patch.
+**Status:** `[PLAN]`. **EXECUTED** — [the record](verification-iter2-pass-2-findings.md). 12 cases, 4 of 8 checks fail their own label; 2v reproduced F7. **Station:** maps for this plan and its record; **kit** only if a ruling authorises a patch.
 **Emission:** `[GAP]`. No `src/`.
 **Iteration:** [iteration 2](verification-iteration-2-plan.md), pass 2 of six. Pass 1 EXECUTED and completed.
 
