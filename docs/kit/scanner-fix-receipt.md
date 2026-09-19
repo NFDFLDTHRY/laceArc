@@ -3,7 +3,7 @@
 **Status:** CLOSED. Six of six.  
 **Station:** kit.  
 **Object:** how a quiet-door rescan must speak.  
-**Pin:** `PENDING` (stamped on the execute commit).  
+**Pin:** `34879d9` (execute `34879d9f9bf24ca0432d04f0317a54beb8b7c558`).  
 **Diagram:** [`scanner.md`](scanner.md).  
 **Not:** live law. Not Hands. Not cold-doors pass 7. Not door #1 pass 7. Not door #2.  
 **Emission:** `[GAP]`. No `src/`.
