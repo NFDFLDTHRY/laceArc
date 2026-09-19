@@ -4,4 +4,4 @@ OWNS: docs/clipboards/**
 AGENT: -
 BASE: -
 SINCE: -
-NOTE: wasm-spec-3 Pass 5 EXECUTED (Spec↔ASCII mapping + Shadow Order Proposal); station FREE
+NOTE: wasm-spec-3 Pass 6 PLAN only (HELD/NOT EXECUTED); station FREE
