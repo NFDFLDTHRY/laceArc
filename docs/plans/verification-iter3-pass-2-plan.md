@@ -1,6 +1,6 @@
 # Verification iteration 3, pass 2 — classify every broken reference
 
-**Status:** `[PLAN]`. Execution NOT_RUN. **Station:** maps for this plan and its record. Read-only elsewhere.
+**Status:** `[PLAN]`. **EXECUTED** — [the record](verification-iter3-pass-2-findings.md). 33 read in place; 11 real, and a sixth kind found. **Station:** maps for this plan and its record. Read-only elsewhere.
 **Emission:** `[GAP]`. No `src/`. **Pinned at `ee37319`.**
 **Iteration:** [iteration 3](verification-iteration-3-plan.md), pass 2 of six. Pass 1 EXECUTED and completed.
 
