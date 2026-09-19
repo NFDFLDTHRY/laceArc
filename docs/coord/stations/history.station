@@ -2,6 +2,6 @@ STATUS: HELD
 STATION: history
 OWNS: docs/history-recovered* docs/history/**
 AGENT: Grok-evidence
-BASE: f9b12337e3e73c206996f2068e97b91478c07bdd
-SINCE: 2026-09-19T21:27:59Z
-NOTE: Grok-evidence Pass 4 EXECUTED close-and-park. A/B unapplied. Maps unclaimed. Hold until human free. Door #5 CLOSED. Not pass 8. Φ [GAP].
+BASE: a22ea28c704860adfa7505716b29529852137ab3
+SINCE: 2026-09-19T21:29:07Z
+NOTE: Grok-evidence Pass 4 EXECUTED park. Pass 5 PLAN only (drift-check). A/B unapplied. Maps unclaimed. Door #5 CLOSED. Not pass 8. Φ [GAP].
