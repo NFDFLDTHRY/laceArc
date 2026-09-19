@@ -2,7 +2,7 @@
 
 **Object:** `docs/clock/README.md`  
 **Station:** hologram. There is no clock station.  
-**Executed:** [quiet-door-6-pass-1-plan.md](quiet-door-6-pass-1-plan.md) · [quiet-door-6-pass-2-plan.md](quiet-door-6-pass-2-plan.md).  
+**Executed:** [quiet-door-6-pass-1-plan.md](quiet-door-6-pass-1-plan.md) · [quiet-door-6-pass-2-plan.md](quiet-door-6-pass-2-plan.md) · [quiet-door-6-pass-3-plan.md](quiet-door-6-pass-3-plan.md).  
 **Not:** Core. Not Graphic D. Not Hands. Not door #5 pass 7. Not projection iter 5.  
 **Emission:** `[GAP]`. No `src/`. Clock door bytes untouched. HTML untouched. Renderer unclaimed.
 
@@ -107,3 +107,26 @@ G2 stays `[GAP]`.
 | T2 | Cl3 Break = cubes as WORD; Cl6 Break = viewer writes |
 | T3 | Spine left in place |
 | T4 | Door + HTML untouched; renderer unclaimed |
+
+## Pass 3 — grain
+
+Hologram owns the door and lace-projection. Renderer owns two HTML viewers. Hands stores. Those are not the same column.
+
+| Kind | Says | `which` | Collapse would look like |
+|---|---|---|---|
+| Clock door | Layer III; not Core; cubes are not WORD | hologram | treat the index as Hands |
+| `lace-projection.html` | shows the strand; never decides | hologram | rewrite HTML from this reading |
+| `hcc-a-projection.html` | HCC-A systems-manifest projection | renderer | claim renderer from hologram |
+| Frozen viewer | `docs/shadow-clock-gearing.html` | renderer | edit the frozen file |
+| Hands (four graphics) | source of record | graphics | cubes as WORD rows |
+| Hologram templates | diagnose / suggest a projection | hologram | treat lookrefs as Graphic E |
+| Live law | the store | law | let a viewer win over this file |
+
+## Pass 3 deltas
+
+| Ticket | Action |
+|---|---|
+| T1 | Seven-row grain |
+| T2 | Hologram ≠ renderer ≠ Hands |
+| T3 | Cubes still not WORD |
+| T4 | Door + HTML + Hands untouched |

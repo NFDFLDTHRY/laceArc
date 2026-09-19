@@ -1,6 +1,6 @@
 # Quiet door #6 (Clock) — Pass 3 PLAN
 
-**Status:** PLAN only. Not run.  
+**Status:** EXECUTED — grain on `docs/clock/quiet-door-6-ascii.md`. Door + HTML unchanged. Emission `[GAP]`.  
 **Station:** hologram (HELD Grok-hologram).  
 **Object:** Clock grain — hologram vs renderer vs Hands.  
 **Authority:** [`quiet-door-6-ascii.md`](quiet-door-6-ascii.md) passes 1–2. Clock door as written. `coord.sh which`.  
