@@ -2,7 +2,7 @@
 
 **Object:** `docs/hologram/README.md`  
 **Station:** hologram.  
-**Executed:** [quiet-door-7-pass-1-plan.md](quiet-door-7-pass-1-plan.md).  
+**Executed:** [quiet-door-7-pass-1-plan.md](quiet-door-7-pass-1-plan.md) · [quiet-door-7-pass-2-plan.md](quiet-door-7-pass-2-plan.md).  
 **Not:** Core. Not Graphic E. Not Graphics A–D. Not Hands. Not door #6 pass 7. Not projection iter 5.  
 **Emission:** `[GAP]`. No `src/`. Hologram door bytes untouched. HTML untouched. Renderer unclaimed. Door #6 CLOSED.
 
@@ -86,3 +86,29 @@ Touches diagnose. Hands stores. Lookrefs are not Graphic E. Renderer stays uncla
 | T1 | Spine drawn from `docs/hologram/README.md` headings |
 | T2 | Viewer named, not rewritten |
 | T3 | Door + HTML + Hands + Clock untouched |
+
+## Pass 2 — fields
+
+Off the hologram door headings. Door wins over invention.
+
+| # | Block | In | Does | Break | Gap | Role |
+|---|---|---|---|---|---|---|
+| Hg1 | the hologram door | a reader at `docs/hologram/` | names touches, not Hands | treat this page as Hands | — | index |
+| Hg2 | not Graphics A–D / do not store | a bid to store | keeps this shelf off the four graphics | treat this shelf as Hands | — | fence |
+| Hg3 | touches (defense / lattice / crossing / traces) | a true claim that fails to land, or a 3D view | diagnose the holder; suggest a projection | import Story Defense as D row types | — | diagnosis |
+| Hg4 | visual-primitives catalog | a camera word (worldline, CTC, tube) | names lawful vs forbidden shapes | CTC as Core | — | catalog |
+| Hg5 | scene lookrefs (batch 2) | a canvas look | dark lattice language the canvas follows | lookrefs as Graphic E | — | lookref |
+| Hg6 | ASTRA chrome (batch 1) | a page-chrome bid | instruments only; proof counters are theater | ASTRA as Lace runtime | — | chrome |
+| Hg7 | nostd-pipeline viewer | a Layer III canvas | named here; owned by renderer | rewrite HTML from hologram | — | viewer |
+| Hg8 | CTC / φ ≠ Φ | a closed loop, or a diagram φ | start→halt; CTC is anti-model | fill G2 from “signal arrives” | G2 `[GAP]` | fence |
+
+G2 stays `[GAP]`.
+
+## Pass 2 deltas
+
+| Ticket | Action |
+|---|---|
+| T1 | Eight In / Does / Break / Gap / Role rows |
+| T2 | Hg5 Break = lookrefs as Graphic E; Hg7 Break = rewrite HTML |
+| T3 | Spine left in place |
+| T4 | Door + HTML + Hands + Clock untouched |

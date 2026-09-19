@@ -1,6 +1,6 @@
 # Quiet door #7 (Hologram) — Pass 2 PLAN
 
-**Status:** PLAN only. Not run.  
+**Status:** EXECUTED — fields on `docs/hologram/quiet-door-7-ascii.md`. Door + HTML unchanged. Emission `[GAP]`.  
 **Station:** hologram (HELD Grok-hologram).  
 **Object:** Hologram fields — In / Does / Break / Gap / Role.  
 **Authority:** [`quiet-door-7-ascii.md`](quiet-door-7-ascii.md) pass-1 spine. Hologram door as written.  
