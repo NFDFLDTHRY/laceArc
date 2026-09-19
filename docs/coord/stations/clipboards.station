@@ -4,4 +4,4 @@ OWNS: docs/clipboards/**
 AGENT: -
 BASE: -
 SINCE: -
-NOTE: webgpu Pass 2 PLAN HELD/NOT EXECUTED (host/GPU FM-Wgpu*); Pass 1 EXECUTED; wasm-spec-3 Pass 6 EXECUTED (wasm64); FREE
+NOTE: webgpu Pass 2 EXECUTED (host/GPU FM-Wgpu* / D1–D6+D7); Pass 1 EXECUTED; wasm-spec-3 Pass 6 EXECUTED (wasm64); FREE
