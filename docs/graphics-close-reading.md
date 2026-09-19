@@ -184,9 +184,13 @@ file:**
 
 Graphic A's header reads:
 
-> One continuous strand. **Every word a centimetre of wire.** Every word's star
+> One continuous strand. **Every word a centimeter of wire.** Every word's star
 > a persistent 3D formation. Meaning does not exist. Only structure, sequence,
 > and participation.
+
+**`centimeter`, read off the PNG at iteration 4 pass 5.** This document and three
+files on the graphics shelf had transcribed it `centimetre`. The graphic is the
+source of record; the spelling here now matches it.
 
 The scale clause appears nowhere in `README.md`, `AGENTS.md`,
 `docs/systems-manifest.md`, or `docs/reason-model-map.md`. It matters because the
@@ -194,20 +198,41 @@ repo's first line is a physical instruction — *put a shoe lace in your hands* 
 and this is the only place the source fixes the exchange rate between that object
 and the model.
 
-At one centimetre per word:
+### `[UNSUPPORTED]` — the conversion table, and the ruling that replaces it
 
-| Text | Lace |
-|---|---|
-| a 12-word sentence | 12 cm — a hand's span |
-| a 114 cm shoe lace (45 in) | ~114 words — a short paragraph |
-| a 1,000-word document | 10 m |
-| an 80,000-word book | 800 m |
+**Human ruling, iteration 4 pass 5:** *the unit is the index. The lace is a 1D
+array, and both length wordings are confusing.*
 
-The hands test in `docs/reason-model-map.md` is therefore exact for about a
-paragraph. Past that the lace is still the right *object* and stops being the
-right *size*, which is worth saying out loud in a repo whose entry condition is
-holding one. This is a reading of the header, not a rule the source states;
-nothing in Core depends on it.
+The table below is kept for the record and is **`[UNSUPPORTED]`**. It is not
+merely unproven; **it is the wrong kind of quantity.**
+
+| Text | Lace | |
+|---|---|---|
+| a 12-word sentence | 12 cm — a hand's span | `[UNSUPPORTED]` |
+| a 114 cm shoe lace (45 in) | ~114 words — a short paragraph | `[UNSUPPORTED]` |
+| a 1,000-word document | 10 m | `[UNSUPPORTED]` |
+| an 80,000-word book | 800 m | `[UNSUPPORTED]` |
+
+**Two things are wrong with it, and the second is the ruling.**
+
+1. **It counts only words.** The array holds WORD **and** POINTER entries. Panel
+   `D1` shows **six pointers against five words** — so a table that converts word
+   count to length understates the strand by more than half, on the source's own
+   eleven rows. Whatever the exchange rate is, it is not one word to one unit.
+2. **Length is not the array's unit.** The lace is one append-only 1D array and
+   its positions are **indices**. An index has no centimetres. A sentence of
+   twelve words does not occupy twelve of anything until you say twelve *what*,
+   and the only answer the structure supports is **entries** — which is eleven,
+   not twelve, for `D1`'s example.
+
+**So the header's clause is the source's physical analogy for holding the object,
+not a unit of the model.** It earns the shoe lace in the hands; it does not fix an
+exchange rate, and nothing may derive one from it. The hands test in
+`docs/reason-model-map.md` stands as an instruction to hold a lace, not as a
+measurement.
+
+**`[GAP]`** — the source states no unit for an index. It is not closed here, and
+a convenient one must not be invented for it.
 
 ---
 
@@ -381,6 +406,6 @@ Evidence state for every item in this section: `OBSERVED` in a retrieved report;
 | Star as repeated passage through one variable | D5, B3, A5 |
 | Dimension ladder 1D → 5D+ | C2, C3, C4, C6, C7 |
 | Four named relation families | C6 |
-| "Every word a centimetre of wire" | A header |
+| "Every word a centimeter of wire" | A header |
 | Sequence is the physical route | B5, A9 |
 | Projection is a shadow that cannot write back | B11, C11, D4 |
