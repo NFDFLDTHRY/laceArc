@@ -1,6 +1,6 @@
 # Quiet door #1 (package) — Pass 4 PLAN
 
-**Status:** PLAN only. Not run.  
+**Status:** EXECUTED — mechanism map on `docs/kit/quiet-door-1-ascii.md`. Package door unchanged. Emission `[GAP]`.  
 **Station:** kit (HELD Grok-kit).  
 **Object:** quiet door #1 — routing mechanism vs live law.  
 **Authority:** [`READ_ME_FIRST.md`](READ_ME_FIRST.md). Then [`quiet-door-1-ascii.md`](quiet-door-1-ascii.md) passes 1–3. Live law and `AGENTS.md` as **targets the door names**, not files this pass edits.  

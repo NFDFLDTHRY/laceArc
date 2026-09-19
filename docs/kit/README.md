@@ -15,7 +15,7 @@ Portable steward controls. Not Hands. Not Graphic D. Nothing here is a source of
 | [quiet-door-1-pass-1-plan.md](quiet-door-1-pass-1-plan.md) | Door #1 (package) pass 1: ASCII spine. Not cold-doors pass 7 | EXECUTED |
 | [quiet-door-1-pass-2-plan.md](quiet-door-1-pass-2-plan.md) | Door #1 pass 2: In / Does / Break / Gap | EXECUTED |
 | [quiet-door-1-pass-3-plan.md](quiet-door-1-pass-3-plan.md) | Door #1 pass 3: THEN / NOW / tip grain | EXECUTED |
-| [quiet-door-1-pass-4-plan.md](quiet-door-1-pass-4-plan.md) | Door #1 pass 4 PLAN: routing mechanism vs live law | **PLAN only. Not run** |
+| [quiet-door-1-pass-4-plan.md](quiet-door-1-pass-4-plan.md) | Door #1 pass 4: routing mechanism vs live law | EXECUTED |
 | [quiet-door-1-ascii.md](quiet-door-1-ascii.md) | Door #1 ASCII companion. Does not replace the package door. Does not fill G2 | pass 1 spine |
 | [agent-control.md](agent-control.md) | Portable standing prompt: the staking law verbatim, then the operating controls C01–C12 | DATED transport at `e21cf39`; [live law](../law-why-these-documents.md) wins |
 | [agent-task-template.md](agent-task-template.md) | One-task, adjudication, proof-contract and handoff forms | live |
