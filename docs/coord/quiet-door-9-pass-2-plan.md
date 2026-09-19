@@ -1,6 +1,6 @@
 # Quiet door #9 (Coord) — Pass 2 PLAN
 
-**Status:** PLAN only. Not run.  
+**Status:** EXECUTED — fields on `docs/coord/quiet-door-9-ascii.md`. Door + `coord.sh` unchanged. Emission `[GAP]`.  
 **Station:** coord (HELD Grok-coord).  
 **Object:** Coord fields — In / Does / Break / Gap / Role.  
 **Authority:** [`quiet-door-9-ascii.md`](quiet-door-9-ascii.md) pass-1 spine. Coord door as written.  
