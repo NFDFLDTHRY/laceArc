@@ -2,6 +2,6 @@ STATUS: HELD
 STATION: kit
 OWNS: docs/kit/** .claude/**
 AGENT: Grok-kit
-BASE: 50c6153b157a457935c0c865a3b88ca75f26cd0c
-SINCE: 2026-09-19T05:58:39Z
-NOTE: Cold doors claimed. Pass 1–4 EXECUTED. Pass 5 PLAN on disk, not run. Renderer PAUSED. Rust SHUT. Φ [GAP].
+BASE: 60eb30ff1754307a6a3fab9842f12f1386a0b0da
+SINCE: 2026-09-19T06:01:55Z
+NOTE: Cold doors pass 5 EXECUTED. Remainder queued. Renderer PAUSED. Rust SHUT. Φ [GAP].

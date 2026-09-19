@@ -1,6 +1,6 @@
 # Cold doors — Pass 5 PLAN
 
-**Status:** PLAN only. Not run. One act. Remainder queued.
+**Status:** EXECUTED — pin table on `docs/kit/cold-doors.md`. Package door unchanged. Remainder queued.
 **Station:** kit.
 **Agent:** Grok-kit.
 **Plan BASE:** `f6e54d4f40d7fd74472d902af3105d457a5d8ea5`.

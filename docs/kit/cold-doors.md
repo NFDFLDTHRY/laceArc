@@ -1,11 +1,12 @@
 # Cold doors
 
-**Status:** Pass 1 EXECUTED. Pass 2 EXECUTED. Pass 3 EXECUTED. Pass 4 EXECUTED.
+**Status:** Pass 1 EXECUTED. Pass 2 EXECUTED. Pass 3 EXECUTED. Pass 4 EXECUTED. Pass 5 EXECUTED.
 **Station:** kit.
 **Pass 1 BASE:** `ec5ae61624db93bb19e2560adacfded080f98a50`.
 **Pass 2 BASE:** `8c912a10df56504cb51cf95cd33c68ac8d3f2f45` (companions unchanged from `22ac006`).
 **Pass 3 BASE:** `e6e19352364cec81f96409596b8e8d3ffe70b63b`.
 **Pass 4 BASE:** `ccc68724d07095e5673ee380783bbdc4fc6c5326`.
+**Pass 5 BASE:** `60eb30ff1754307a6a3fab9842f12f1386a0b0da`.
 **Read:** 19 September 2026.
 **Emission:** `[GAP]`. No `src/`.
 
@@ -139,6 +140,37 @@ No file in this table was edited. R1 remains a size split with different duties,
 ## Noticed, not repaired
 
 Restructure R1: four law-bearing files differ in size at this BASE (`staking-the-workspace.md` 5961, live law 17385, `grok-bot-profile.md` 18739, `agent-control.md` 31663). Live law already says the copies may lag. Repair is a law-station pass if the human names one.
+
+---
+
+## Pass 5 — package-door pins
+
+Question: do THEN and NOW still resolve, and do the NOW claims still hold at execute tip — without retargeting the pins?
+
+Pins as written on `docs/kit/READ_ME_FIRST.md`. Package door bytes were not edited.
+
+**Pin fate** (execute tip `60eb30ff1754307a6a3fab9842f12f1386a0b0da`)
+
+| Label | Written SHA | Resolves? | Full SHA or UNREACHABLE |
+|---|---|---|---|
+| THEN | `4fe984bb098d5ca21c9704234df4fddd53056efb` | yes, as an object (`git fetch origin <sha>`) | `4fe984bb098d5ca21c9704234df4fddd53056efb` — *Make staking ASCII and Rust no_std implementation posture repo law* |
+| NOW | `044257ceb95e78612d302a204a9438c72d06aa96` | yes, as an object (`git fetch origin <sha>`) | `044257ceb95e78612d302a204a9438c72d06aa96` — *Release maps station (Claude-Projection).* |
+| execute tip | claim BASE | yes | `60eb30ff1754307a6a3fab9842f12f1386a0b0da` |
+
+A default shallow clone does not contain THEN or NOW until they are fetched by SHA. That is depth, not a missing pin. Neither pin is the tip. Tip-moved is not a defect in NOW.
+
+**Door claims**
+
+| # | When | Claim | Hold? |
+|---|---|---|---|
+| 1 | THEN | At that pin `docs/pointer-emission.md` was absent. | **hold** — `git cat-file -e THEN:docs/pointer-emission.md` fails. Path exists on disk now; it is not in that tree. |
+| 2 | NOW | Routing still holds to live `AGENTS.md` and live law. | **hold** — both files present at execute tip. Door still names them. |
+| 3 | NOW | `docs/pointer-emission.md` exists as DRAFT unanswered questions — not accepted. | **hold** — header at tip and at NOW: DRAFT, not accepted, not implemented. |
+| 4 | NOW | Emission remains `[GAP]`. No `src/`. | **hold** — no `src/` at THEN, NOW, or execute tip. |
+
+Package door stays LIVE. THEN/NOW were not retargeted.
+
+Queued (not this pass): off-kit remainder table — R1 law-station; renderer hologram PAUSED; Rust maps SHUT; emission `[GAP]`.
 
 ---
 

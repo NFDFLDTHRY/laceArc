@@ -5,12 +5,12 @@ Portable steward controls. Not Hands. Not Graphic D. Nothing here is a source of
 | File | Use | Status |
 |---|---|---|
 | [READ_ME_FIRST.md](READ_ME_FIRST.md) | Package door: what the documentation package is and what it does not establish | live routing; THEN pin `4fe984b`, NOW re-read `044257c` — read live [AGENTS.md](../../AGENTS.md) |
-| [cold-doors.md](cold-doors.md) | Quiet-door register: LIVE / DATED / STALE / PAUSED / SHUT | Pass 1–4 EXECUTED |
+| [cold-doors.md](cold-doors.md) | Quiet-door register: LIVE / DATED / STALE / PAUSED / SHUT | Pass 1–5 EXECUTED |
 | [cold-doors-pass-1-plan.md](cold-doors-pass-1-plan.md) | Pass 1 plan for that register | EXECUTED |
 | [cold-doors-pass-2-plan.md](cold-doors-pass-2-plan.md) | Pass 2 plan: stamp kit companions behind the package door | EXECUTED |
 | [cold-doors-pass-3-plan.md](cold-doors-pass-3-plan.md) | Pass 3 plan: inventory transport-copy lag against live law | EXECUTED |
 | [cold-doors-pass-4-plan.md](cold-doors-pass-4-plan.md) | Pass 4 plan: sit the other R1 law-bearing files | EXECUTED |
-| [cold-doors-pass-5-plan.md](cold-doors-pass-5-plan.md) | Pass 5 PLAN: package-door THEN/NOW pins (rows named, not scored) | **PLAN only. Not run** |
+| [cold-doors-pass-5-plan.md](cold-doors-pass-5-plan.md) | Pass 5 plan: package-door THEN/NOW pins | EXECUTED |
 | [agent-control.md](agent-control.md) | Portable standing prompt: the staking law verbatim, then the operating controls C01–C12 | DATED transport at `e21cf39`; [live law](../law-why-these-documents.md) wins |
 | [agent-task-template.md](agent-task-template.md) | One-task, adjudication, proof-contract and handoff forms | live |
 | [downstream-audit.md](downstream-audit.md) | Dated audit: evidence, failure paths, source corrections, agent challenge cases F01–F12 | dated snapshot at `4fe984b`, re-checked by the coherence audit |
