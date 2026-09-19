@@ -1,6 +1,6 @@
 # Systems-manifest ASCII pass 19 plan — Update wave · Iteration 3 · Pass 1 · Delta inventory + mechanism/systems-level map
 
-**Status:** **HELD** (plan only · 2026-09-19 PT). Emission `[GAP]`.  
+**Status:** **EXECUTED** (2026-09-19 PT). Emission `[GAP]`.  
 **Series:** Pass **19** (linear executed-passes list) = **Update wave · Iteration 3 · Pass 1**. Subtitle: **Update wave · Iteration 3 · Pass 1**.  
 **Station:** maps (catch-all for `docs/*.md` at court root). Holder: **reference-Mapper**. Keep maps **HELD**.  
 **Authority:** `docs/systems-manifest.md` (Contracts I / II / Layer III; Pieces unchanged).  
@@ -333,12 +333,12 @@ Refuse on execute (and for this Iteration-3 Pass 1):
 
 ### Execute turn (when human says Proceed)
 
-- [ ] T1: Delta inventory board cites quiet-door #6 (OPEN/cite) · reconfirms #1/#3 OPEN-with-cause · cite-checks #4 leftover / #5 note-only · reconfirms nine shelves (or path-drift only).  
-- [ ] T2: Mechanism/systems-level map rows (station → disposition → systems slot · G-KD pattern cite · no invent G-KD-6 Core · G2/Φ `[GAP]`).  
-- [ ] T3: Thin KEEP·FORBID·MAP fence; #6 ≠ I door ≠ shelf ≠ Core clock tooth ≠ G-KD-6 Core; Pass 18 OPENS honest.  
-- [ ] T4: Executed-passes +19; Iteration-3 banner; thin Spine/Contract/Overview pointers; G2/Φ `[GAP]`; Pass 18 DIAGRAM SOUND WITH OPENS baseline retained.  
-- [ ] T5: Deltas + sealed refuse honored (Pass 18 refuse + no invent G-KD-6 Core; no quiet-door→I; no soft-close OPENS; no clipboard/kit/history/clock edits; no invent Φ; no src/; no fill G2; no rewrite Passes 1–18 beyond thin pointers / new Pass 19 section).  
-- [ ] maps still HELD by reference-Mapper (unless human releases).
+- [x] T1: Delta inventory board cites quiet-door #6 (OPEN/cite) · reconfirms #1/#3 OPEN-with-cause · cite-checks #4 leftover / #5 note-only · reconfirms nine shelves (or path-drift only).  
+- [x] T2: Mechanism/systems-level map rows (station → disposition → systems slot · G-KD pattern cite · no invent G-KD-6 Core · G2/Φ `[GAP]`).  
+- [x] T3: Thin KEEP·FORBID·MAP fence; #6 ≠ I door ≠ shelf ≠ Core clock tooth ≠ G-KD-6 Core; Pass 18 OPENS honest.  
+- [x] T4: Executed-passes +19; Iteration-3 banner; thin Spine/Contract/Overview pointers; G2/Φ `[GAP]`; Pass 18 DIAGRAM SOUND WITH OPENS baseline retained.  
+- [x] T5: Deltas + sealed refuse honored (Pass 18 refuse + no invent G-KD-6 Core; no quiet-door→I; no soft-close OPENS; no clipboard/kit/history/clock edits; no invent Φ; no src/; no fill G2; no rewrite Passes 1–18 beyond thin pointers / new Pass 19 section).  
+- [x] maps still HELD by reference-Mapper (unless human releases).
 
 ---
 
