@@ -1,6 +1,6 @@
 # Quiet door #7 (Hologram) — Pass 1 PLAN
 
-**Status:** PLAN only. Not run.  
+**Status:** EXECUTED — spine on `docs/hologram/quiet-door-7-ascii.md`. Door unchanged. HTML untouched. Emission `[GAP]`.  
 **Station:** hologram (HELD Grok-hologram).  
 **Object:** quiet door #7 — [`docs/hologram/README.md`](README.md).  
 **Why hologram, not kit / not renderer:** hologram OWNS `docs/hologram/**`. The companion can live next to the door. Renderer owns `nostd-pipeline.html` (and two other viewers). This campaign does not claim renderer and does not rewrite HTML.  
