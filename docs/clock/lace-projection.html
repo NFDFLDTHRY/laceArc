@@ -48,7 +48,7 @@ aside[hidden]{display:none}
 </div>
 <div class="hud">
   <header class="hit">
-    <h1>LAYER III · i1p5 · A17 AUDIT</h1>
+    <h1>LAYER III · i1p6 · BUTTONS</h1>
     <p>Install on githack <code>main</code>, not a SHA. Audit ticks stay SHA-pinned. Cubes are glyphs. No emitter. [GAP]</p>
   </header>
   <div class="modes hit">
@@ -70,7 +70,7 @@ aside[hidden]{display:none}
     <button type="button" id="updatebtn">Update</button>
     <input id="t" type="range" min="0" max="10" step="0.02" value="0"/>
     <span id="phase">t=0000</span>
-    <span class="stamp">i1p5</span>
+    <span class="stamp">i1p6</span>
     <span class="stamp">A17</span>
     <span class="stamp" id="nnstamp">WebNN ?</span>
     <span class="stamp" id="pwastamp">PWA ?</span>
@@ -281,17 +281,18 @@ document.getElementById("play").onclick=()=>{
   document.getElementById("play").textContent=playing?"pause":"play";
 };
 tEl.oninput=()=>{ tVal=+tEl.value; playing=false; document.getElementById("play").textContent="play"; showLook(tVal); };
-document.getElementById("refbtn").onclick=()=>{
+document.getElementById("refbtn").addEventListener("click", ev=>{
+  ev.preventDefault();
+  ev.stopPropagation();
   document.body.classList.toggle("ref");
-  document.getElementById("refbtn").classList.toggle("on");
-};
-document.querySelectorAll(".modes button").forEach(btn=>{
-  btn.onclick=()=>{
-    if(btn.id==="refbtn") return;
+  document.getElementById("refbtn").classList.toggle("on", document.body.classList.contains("ref"));
+});
+document.querySelectorAll(".modes button[data-mode]").forEach(btn=>{
+  btn.addEventListener("click", ()=>{
     document.querySelectorAll(".modes button[data-mode]").forEach(b=>b.classList.toggle("on",b===btn));
     document.getElementById("ascii").hidden = btn.dataset.mode!=="ascii";
     document.getElementById("holder").hidden = btn.dataset.mode!=="holder";
-  };
+  });
 });
 
 async function main(){
@@ -404,7 +405,7 @@ function runAudit(){
   const el=document.getElementById("audit");
   if(!el) return;
   const title=document.querySelector("h1")?.textContent||"";
-  const A=/i1p5/.test(title)?"ok":"fail";
+  const A=/i1p6/.test(title)?"ok":"fail";
   const D=!!(navigator.serviceWorker && navigator.serviceWorker.controller);
   const E=!!(window.deferredPrompt || window.matchMedia("(display-mode: standalone)").matches);
   const F=!!document.getElementById("installbtn");
@@ -415,7 +416,7 @@ function runAudit(){
     const ct=r.headers.get("content-type")||"";
     const B=/manifest|json/i.test(ct)?"ok":("fail "+ct);
     el.textContent=
-      "A title i1p5 "+A+"\n"+
+      "A title i1p6 "+A+"\n"+
       "B manifest MIME "+B+"\n"+
       "C icons 192+512 ok\n"+
       "D SW controlling "+(D?"ok":"fail")+"\n"+
@@ -436,17 +437,27 @@ window.addEventListener("beforeinstallprompt", ev=>{
   const b=document.getElementById("installbtn");
   if(b) b.hidden=false;
 });
-document.getElementById("installbtn").onclick=async ()=>{
-  if(!deferredPrompt){
-    const e=document.getElementById("pwastamp");
-    if(e) e.textContent="Share→Add";
+document.getElementById("installbtn").addEventListener("click", async ev=>{
+  ev.preventDefault();
+  const e=document.getElementById("pwastamp");
+  if(window.matchMedia("(display-mode: standalone)").matches){
+    if(e) e.textContent="installed";
     return;
   }
-  deferredPrompt.prompt();
-  await deferredPrompt.userChoice.catch(()=>{});
+  if(!deferredPrompt){
+    if(e) e.textContent="no bip";
+    return;
+  }
+  try {
+    deferredPrompt.prompt();
+    await deferredPrompt.userChoice;
+    if(e) e.textContent="prompted";
+  } catch(err) {
+    if(e) e.textContent="bip fail";
+  }
   deferredPrompt=null;
-  document.getElementById("installbtn").hidden=true;
-};
+  window.deferredPrompt=null;
+});
 if ("serviceWorker" in navigator) {
   let reloading=false;
   navigator.serviceWorker.register("sw.js", { scope: "./" })
@@ -465,12 +476,14 @@ if ("serviceWorker" in navigator) {
         if(!w) return;
         w.addEventListener("statechange", kick);
       });
-      upd.onclick=()=>{
+      upd.addEventListener("click", ev=>{
+        ev.preventDefault();
+        if(e) e.textContent="chk";
         try { reg.update(); } catch(_){}
         if(reg.waiting){
           reg.waiting.postMessage({type:"skip"});
-        } else if(e) e.textContent="PWA chk";
-      };
+        } else if(e) e.textContent="fresh";
+      });
     })
     .catch(() => { const e=document.getElementById("pwastamp"); if(e) e.textContent="PWA off"; });
   navigator.serviceWorker.addEventListener("controllerchange", () => {
@@ -481,8 +494,6 @@ if ("serviceWorker" in navigator) {
   });
 } else {
   const e=document.getElementById("pwastamp"); if(e) e.textContent="PWA off";
-  const b=document.getElementById("installbtn");
-  if(b){ b.hidden=false; }
 }
 </script>
 </body>
