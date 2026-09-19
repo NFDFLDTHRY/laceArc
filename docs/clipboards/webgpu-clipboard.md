@@ -422,3 +422,148 @@ All **PASS**. Full matrix on ascii file. Panel rows P-G1…P-G9: Implements OK �
 | Fence hygiene | **no POINTER word** inside any diagram fence; stamps under fences |
 | PDF staged | **No** |
 | Push | **No** (ask before push) |
+
+
+---
+
+## Pass 5 — Light accuracy steward + Shadow Order Proposal (HOST/GPU)
+
+**Status:** **EXECUTED** · 2026-09-18 ~21:15 PT · station clipboards · agent `Grok-webgpu-p5-exec`  
+**Plan:** [`webgpu-pass-5-plan.md`](webgpu-pass-5-plan.md) (HELD → EXECUTED)  
+**ASCII under test:** [`webgpu-ascii-machinery.md`](webgpu-ascii-machinery.md) — SOURCE MACHINERY + **P-G1…P-G9** · P4-X all PASS  
+**Mechanisms:** [`webgpu-mechanisms.md`](webgpu-mechanisms.md) — **M-G1…M-G9** (cite only; unchanged)  
+**Law:** WebGPU = **HOST/GPU Shadow only**. Pass 4 SOURCE MACHINERY adopted as **Shadow Order Proposal** for shelf hygiene beside Shadow projection / hologram. Order Proposal **FORBID-as-Core-write**; **NON-binding** on Core / `src/` / Φ / systems-manifest-ascii / graphics. Emission Φ still `[GAP]`.
+
+**Hands + host/GPU mesh skim (T1):** shoe / AGENTS Implementation Law → graphics A–D → systems-manifest → staking / law-why → pointer-emission DRAFT/`[GAP]` → clock/README (`lace-projection.html` WebGPU 3D — **Shadow consumer**) → hologram + visual-primitives (WGSL live path — **Shadow consumer**) → rust-nostd crate-map + branch-contracts (PROPOSAL only · cite) → wasm-spec-3 banner (**wasm64** cite-only) → Pass 1–4 clipboard (P4-R / P4-X all PASS) → ascii overview + P-G1…P-G9 → mechanisms M-G1…M-G9 → this Pass 5 plan → AgentScope/Petersen/wasm-spec-3 Pass 5 Order Proposal shape (adapt to **HOST/GPU**).
+
+**PDF gate (T2):** `refs/local/webgpu-crd-20260915.pdf` · SHA-256 `6bc31a9e21074a039a5c854f1bfc33bdbf282cd8b48e22a4977ca406ca64afe1` · 321 pp · `git check-ignore` OK · **never staged**. Re-sight not required (P5-X all CONFIRM / no FIX pin).
+
+### P5-X — Light accuracy matrix (CONFIRM Pass 4 · reopen only OPENS/drift)
+
+**Stance:** P4-X **all PASS** is baseline. Light steward re-walk — default **CONFIRM**. Reopen to FIX only if book OPENS surface as representation drift, stamp/fence/overview attach drifted since Pass 4 tip `9767fde`, or a steward refuse test fails against current card+panel. No second full P4 special-gate PDF campaign.
+
+**Columns:** `overview node · P-G* · M-G* · stamp · Implements OK · Fence OK · Overview OK · Pin OK · PASS/FIX`
+
+#### Wave A panels (P-G1…P-G9 ↔ M-G1…M-G9)
+
+| overview node | P-G* | M-G* | stamp | Impl | Fence | Overview | Pin | PASS/FIX |
+|---|---|---|---|---|---|---|---|---|
+| navigator.gpu / requestAdapter | P-G1 | M-G1 | KEEP-read-as-host-API · FORBID-as-Lace-strand · FORBID-as-Core-write | Y | Y | Y | Y (Pass 1–4) | **PASS** |
+| requestDevice · device.queue | P-G2 | M-G2 | KEEP-read-as-host-API · FORBID-as-Lace-strand · FORBID-as-Core-write | Y | Y | Y | Y | **PASS** |
+| createBuffer · mapAsync | P-G3 | M-G3 | FORBID-as-Lace-store · map FORBID-as-emission-rule · SILENT | Y | Y | Y | Y | **PASS** |
+| createTexture · createView | P-G4 | M-G4 | FORBID-as-Lace-store | Y | Y | Y | Y | **PASS** |
+| bindGroupLayout · bindGroup | P-G5 | M-G5 | FORBID-as-Lace-store | Y | Y | Y | Y | **PASS** |
+| shaderModule + pipeline · WGSL | P-G6 | M-G6 | FORBID-as-Core-write (WGSL ≠ WORD) | Y | Y | Y | Y | **PASS** |
+| commandEncoder · passes · finish | P-G7 | M-G7 | FORBID-as-emission-rule · FORBID-as-Core · SILENT · D7 | Y | Y | Y | Y | **PASS** |
+| queue.submit · canvas configure | P-G8 | M-G8 | FORBID-as-emission-rule · canvas PROPOSAL-only · FORBID fill-GAP | Y | Y | Y | Y | **PASS** |
+| errors · device.lost | P-G9 | M-G9 | SILENT-for-Lace-append · FORBID-as-emission-rule | Y | Y | Y | Y | **PASS** |
+
+#### Overview spine nodes (+ forbidden exit)
+
+| overview node | attach P/M | Fence OK | Stamp / off-board OK | Pin OK | PASS/FIX |
+|---|---|---|---|---|---|
+| navigator.gpu / requestAdapter | P-G1 / M-G1 | Y | Y | Y | **PASS** |
+| requestDevice · device.queue | P-G2 / M-G2 | Y | Y | Y | **PASS** |
+| createBuffer · mapAsync | P-G3 / M-G3 | Y | Y | Y | **PASS** |
+| createTexture · createView | P-G4 / M-G4 | Y | Y | Y | **PASS** |
+| bindGroupLayout · bindGroup | P-G5 / M-G5 | Y | Y | Y | **PASS** |
+| shaderModule + pipeline · WGSL | P-G6 / M-G6 | Y | Y | Y | **PASS** |
+| commandEncoder · passes · finish | P-G7 / M-G7 | Y | Y | Y | **PASS** |
+| queue.submit · canvas configure | P-G8 / M-G8 | Y | Y | Y | **PASS** |
+| errors · device.lost | P-G9 / M-G9 | Y | Y | Y | **PASS** |
+| forbidden Core / Φ / wasm64 exit | off-board · FM-Wgpu7 | Y | Y | Y | **PASS** |
+
+**P5-X counts:** panels **9 PASS** + overview spine **10 PASS** = **19 PASS · 0 FIX**.
+
+**Book OPENS (non-blocking · representation impact?):**
+
+| OPEN | Affects card+panel representation? | Pass 5 stance |
+|---|---|---|
+| full per-pass Valid Usage tables | No — panels still depict spine correctly | **still OPEN** · book-continues |
+| multi-queue / timeline beyond Content/Device/Queue sketch | No — Wave C seed; not spine drift | **still OPEN** · non-blocking |
+| which host embed may call this from Lace projection | No — PROPOSAL-only / cite; does not contradict P-G8 | **still OPEN** · non-blocking |
+| Waves B–D deferred | No — out of Wave A board | **still OPEN** · default skip |
+| Order Proposal was deferred | This pass delivers it | **CLOSED** by P5-P |
+
+**Steward refuse tests (P5-X + P5-P stamps):** all 11 plan tests still refuse via panel/M-G/FM teeth — no representation enables Buffer=strand · Device=Graphic D · submit=Φ · WGSL=WORD · canvas=fill GAP · WebGPU=wasm64 · lost=cut · mapAsync=append · Core promote · clock/hologram/rust-nostd/wasm-spec-3 rewrite.
+
+### P5-F — Fix drift
+
+**None.** Matrix all PASS. No ascii panel/overview/cross-walk drift; no mechanism caption edit. Did not reopen Pass 4 FIX list (was already empty).
+
+### P5-O — Canonical SOURCE MACHINERY
+
+Exactly **one** `## SOURCE MACHINERY overview` fence in `webgpu-ascii-machinery.md` (grep count=1). P4-O stand **confirmed**. Lace Core / Graphic D / Φ / wasm64 ISA remain FORBIDDEN off-board. Short P5-P mirror added **under** overview (outside the fence).
+
+### Order proposal (Shadow) — SOURCE MACHINERY as shelf hygiene (HOST/GPU)
+
+**Stamps:** **KEEP-read-as-host-API** · **FORBID-as-Core-write** · **FORBID-as-Lace-store** · **FORBID-as-Lace-strand** · **FORBID-as-emission-rule** · **FORBID-as-Core** · **FORBID fill-GAP** · **FORBID-as-compile-target-swap** · **SILENT-for-Lace-append** · **PROPOSAL** · **NON-binding**
+
+1. **This is a proposal, not Core.** It does not amend AGENTS.md, `systems-manifest-ascii.md`, Graphic D, reason-model-map, law, graphics, or rust-nostd crate-map / branch-contracts. Hands may refuse without breach of Core. It is Shadow / Layer III **HOST/GPU shelf hygiene** only — how this WebGPU CRD shelf stays ordered beside Shadow projection / hologram consumers. **NON-binding** on Core / `src/` / Φ / systems-manifest-ascii / graphics. **Order Proposal FORBID-as-Core-write.**
+
+2. **Stage → hygiene table** (Pass 4/5 SOURCE MACHINERY read as steward order):
+
+| Pipeline stage (ASCII) | Proposal for shelf / steward order |
+|---|---|
+| `navigator.gpu` / `requestAdapter` (P-G1) | Observe what is actually on the shelf (files, receipts, claim) before rewriting; **FORBID** Adapter as Lace strand / Core door |
+| `requestDevice` / `device.queue` (P-G2) | Name Device/Queue honestly; **FORBID** Device ≠ Graphic D / Core write |
+| `createBuffer` / `mapAsync` (P-G3) | Stamp-check: Buffer ≠ strand · map/readback ≠ Lace append authority |
+| Texture / view (P-G4) | Diagram-check; **FORBID** texture as second Lace store |
+| Bind group layout / bind group (P-G5) | Stamp-check; **FORBID** bind-group as second store beside Graphic D |
+| Pipeline + WGSL (P-G6) | Name shader boundary; **FORBID** WGSL as Lace WORD / Core operator |
+| Command encoder / passes / finish (P-G7) | Stamp-check: encode/finish ≠ Φ / POINTER when; D7 miniature stays Shadow |
+| `queue.submit` / canvas configure (P-G8) | **FORBID** submit/draw/dispatch as emission · canvas **PROPOSAL-only** · **FORBID fill-GAP** |
+| Errors / `device.lost` (P-G9) | **FORBID** validation/lost as Lace cut · **SILENT** for Lace append |
+| FORBIDDEN exit → Core / Graphic D / Φ / wasm64 swap | Decisive judgment = commit / release / defer / stop — **not** Φ fill / emission invent / compile-target swap |
+| Projection / hologram (Shadow consumers) | Named as **consumers** of KEEP-read host/GPU mechanics — not Core writers; cite-only; do not amend clock/hologram in this pass |
+
+3. **Recommended reader shelf file order** (proposal only):  
+   `clipboard (admit) → mechanisms (algorithms) → ascii-machinery (diagrams) → pass plans (history)`  
+   with **clock/** (`lace-projection.html` WebGPU 3D) and **hologram/** (`visual-primitives.md` WGSL) named as **Shadow consumers** (cite beside; do not amend) · rust-nostd crate-map / branch-contracts · wasm-spec-3 **wasm64** cited **beside** as mesh / different-layer — not as Spec authority and not as accepted birth / accepted emission.
+
+4. **Steward loop** when touching this shelf: observe → name → diagram-check → stamp-check → list OPENs → decide (commit / release / defer / stop).
+
+5. **Explicit keep-outs / FORBID:**
+   - Buffer ≠ strand · Device ≠ Graphic D · texture/bind ≠ second store
+   - `queue.submit` / draw / dispatch ≠ Φ / POINTER when
+   - WGSL ≠ WORD
+   - canvas configure / present ≠ fill `[GAP]` / accept `pointer-emission.md`
+   - WebGPU ≠ wasm64 compile target (wasm-spec-3 remains the target shelf)
+   - validation / `device.lost` ≠ Lace cut
+   - `mapAsync` / CPU readback ≠ Lace append authority
+   - promote ascii Order Proposal into Core / AGENTS.md / systems-manifest-ascii / Graphic D
+   - treat rust-nostd doors as accepted emission or as WebGPU birth events
+   - amend clock / hologram as if Order Proposal owns them
+   - **SILENT for Lace append**
+
+6. **Honesty link:** light accuracy matrix **P5-X** above is how the proposal stays honest (every M-G* ↔ P-G* ↔ overview node CONFIRM-scored against Pass 4).
+
+7. **Emission column remains `[GAP]`** sealed — no POINTER when / arity / adjacency invented.
+
+Mirror (short): under SOURCE MACHINERY overview in [`webgpu-ascii-machinery.md`](webgpu-ascii-machinery.md).
+
+### P5-R — Pass 5 receipt
+
+| Field | Value |
+|---|---|
+| Status | **EXECUTED** |
+| When | 2026-09-18 ~21:15 PT |
+| Station | clipboards · agent `Grok-webgpu-p5-exec` |
+| Plan | [`webgpu-pass-5-plan.md`](webgpu-pass-5-plan.md) → **EXECUTED** |
+| Claim BASE | `b6170bf` (= `origin/main` at claim after rebase of plan commits onto Pass 2d tip) |
+| Hands skim | shoe → graphics A–D → systems-manifest → staking / law-why → AGENTS Implementation Law → pointer-emission DRAFT/`[GAP]` → clock/README (Shadow consumer) → hologram/visual-primitives (WGSL Shadow consumer) → rust-nostd cite-only → wasm-spec-3 wasm64 cite-only → Pass 1–4 + ascii + mechanisms → sibling Pass 5 shapes |
+| PDF | **PRESENT** — gitignored; **never staged** |
+| P5-X | **19 PASS · 0 FIX** (9 panels + 10 overview spine) · CONFIRM of P4-X |
+| P5-F | **none** |
+| P5-O | exactly one SOURCE MACHINERY overview fence; Core/Φ/wasm64 off-board |
+| P5-P | Order Proposal full text **this section**; short mirror under ascii overview |
+| Wave B | **SKIP** (default) — still deferred |
+| Pass 6 | **not opened** |
+| Book OPENS | Valid Usage / multi-queue / host-embed — still OPEN · non-blocking |
+| Emission | still `[GAP]` — no POINTER when / arity / adjacency; no invented Φ |
+| Amended | reason-model-map · law · graphics · systems-manifest · systems-manifest-ascii · rust-nostd · wasm-spec-3 · five-stakes · clock · hologram · `src/` · M-G* bodies · PAGE morals | **No** |
+| Touched | clipboard · ascii-machinery · pass-5-plan (EXECUTED) · clipboards.station |
+| PDF staged | **No** |
+| Push | **No** (ask before push) |
+| `src/` | absent |
+

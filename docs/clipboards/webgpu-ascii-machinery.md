@@ -1,10 +1,10 @@
 # WebGPU CRD 2026-09-15 — ASCII SOURCE MACHINERY (HOST/GPU · Wave A P-G1…P-G9 · P4-X)
 
-**Status:** Pass 4 **EXECUTED** · Wave A panels **P-G1…P-G9** 1:1 with **M-G1…M-G9** · P4-X all **PASS**. Emission `[GAP]`.  
+**Status:** Pass 4 **EXECUTED** · Pass 5 **EXECUTED** (Shadow Order Proposal + light P5-X CONFIRM) · Wave A panels **P-G1…P-G9** 1:1 with **M-G1…M-G9** · P4-X/P5-X all **PASS**. Emission `[GAP]`.  
 **Source:** *WebGPU* — **W3C Candidate Recommendation Draft, 15 September 2026**. Editors: Kai Ninomiya, Brandon Jones, Jim Blandy (et al.).  
 **PDF:** `refs/local/webgpu-crd-20260915.pdf` → attachment `6bc31a9e21074a039a5c854f1bfc33bdbf282cd8b48e22a4977ca406ca64afe1` (**321** pp., text layer; **never git-add**). PDF one-based primary.  
 **Algorithms (unchanged):** [`webgpu-mechanisms.md`](webgpu-mechanisms.md) — **M-G1…M-G9** (cite only; do not rewrite).  
-**Admission:** [`webgpu-clipboard.md`](webgpu-clipboard.md) · plan [`webgpu-pass-4-plan.md`](webgpu-pass-4-plan.md).  
+**Admission:** [`webgpu-clipboard.md`](webgpu-clipboard.md) · plans [`webgpu-pass-4-plan.md`](webgpu-pass-4-plan.md) · [`webgpu-pass-5-plan.md`](webgpu-pass-5-plan.md).  
 **Mesh (cite-only):** [`pointer-emission.md`](../pointer-emission.md) = DRAFT/`[GAP]` · [`clock/README.md`](../clock/README.md) · [`hologram/`](../hologram/README.md) · wasm-spec-3 (**wasm64** — different layer).  
 **Not this file:** Lace Core ASCII = [`systems-manifest-ascii.md`](../systems-manifest-ascii.md) — **do not conflate**.
 
@@ -22,7 +22,7 @@
 |  KEEP-read: host/GPU mechanics for Shadow projection / hologram.     |
 |  ASCII fences = Spec/API-side glyphs ONLY; stamps live UNDER fences. |
 |  No src/ until pointer-emission accepted.  One strand.               |
-|  Status: Pass 4 EXECUTED.  Emission [GAP].                           |
+|  Status: Pass 4+5 EXECUTED (Order Proposal Shadow). Emission [GAP]. |
 +======================================================================+
 ```
 
@@ -100,6 +100,14 @@ Spine matches **M-G1…M-G9** / **P-G1…P-G9**. Constructive host/GPU path only
 stamp under fence: KEEP-read-as-host-API | Core/Phi/wasm64 FORBIDDEN off-board | FM-Wgpu7
 
 **P4-X:** Rigor matrix lives below (this file) and on the clipboard Pass 4 receipt. This file holds **exactly one** canonical SOURCE MACHINERY overview (above).
+
+**P5-O:** Overview count=1 confirmed (Pass 5). Core / Graphic D / Φ / wasm64 ISA remain FORBIDDEN off-board.
+
+### Order proposal (Shadow) — SOURCE MACHINERY as shelf hygiene *(short mirror)*
+
+**Full text:** clipboard Pass 5 **P5-P**. **Stamps:** KEEP-read-as-host-API · FORBID-as-Core-write · FORBID-as-Lace-store · FORBID-as-Lace-strand · FORBID-as-emission-rule · FORBID-as-Core · FORBID fill-GAP · FORBID-as-compile-target-swap · SILENT-for-Lace-append · PROPOSAL · NON-binding.
+
+This overview **proposes** HOST/GPU shelf hygiene beside Shadow projection / hologram — observe → name → diagram-check → stamp-check → list OPENs → decide (commit/release/defer/stop). It is **not** Core, not an AGENTS.md amendment, not Graphic D, not a Φ scheduler, and **NON-binding** on `systems-manifest-ascii.md` / graphics / rust-nostd / wasm-spec-3. Keep-outs stand: Buffer≠strand · Device≠Graphic D · submit/draw≠Φ · WGSL≠WORD · canvas≠fill `[GAP]` · WebGPU≠wasm64 · lost≠cut · mapAsync≠append. Projection/hologram = **Shadow consumers** (cite-only). Recommended reader order (proposal only): clipboard → mechanisms → ascii-machinery → pass plans. Emission `[GAP]`. See clipboard P5-P for stage→hygiene table + P5-X.
 
 ---
 
@@ -502,7 +510,7 @@ Columns: `node · P · M · stamp · Implements OK · Fence OK (API-only; no POI
 | C | Multi-queue / timestamp queries; shader compilation detail beyond WGSL boundary |
 | D | clock/hologram viewer implementation notes (cite-only; do not amend those files) |
 
-**No** full Wave B panels this pass. **No** Pass 5 Order Proposal yet.
+**No** full Wave B panels this pass (default skip). Pass 5 Order Proposal = **EXECUTED** (clipboard P5-P + short mirror above).
 
 ---
 
@@ -538,3 +546,9 @@ They do not write Graphic D, do not birth `src/`, do not fill Φ, and do not swa
 | Fence audit | **no POINTER word** inside any diagram fence |
 | Emission | still `[GAP]` |
 | PDF staged | **No** |
+
+---
+
+## Pass 5 pointer (ascii)
+
+Light accuracy steward + Shadow Order Proposal EXECUTED on clipboard (**P5-X / P5-F / P5-O / P5-P / P5-R**). Canonical overview = this file’s singular SOURCE MACHINERY fence (count=1; P5-O stand). Short Order Proposal mirror under overview. Emission still `[GAP]`.

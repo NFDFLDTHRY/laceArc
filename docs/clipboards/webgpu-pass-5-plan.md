@@ -1,8 +1,8 @@
 # WebGPU CRD 2026-09-15 — Pass 5 PLAN (ASCII as Order Proposal + light accuracy steward)
 
-**Status:** **HELD / NOT EXECUTED** · plan turn 2026-09-18 ~21:12 PT · agent `Grok-webgpu-p5-plan`  
-**Station:** clipboards (HELD `Grok-webgpu-p5-plan` · claim BASE `72fa281` = `origin/main` at claim after refresh)  
-**Tip at plan:** `72fa281` (includes Pass 4 tip `9767fde` + maps/verification/Graphic-C cites) · refresh to current `origin/main` before execute  
+**Status:** **EXECUTED** · execute turn 2026-09-18 ~21:15 PT · agent `Grok-webgpu-p5-exec` · plan was HELD by `Grok-webgpu-p5-plan`  
+**Station:** clipboards (EXECUTE claimed `Grok-webgpu-p5-exec` · claim BASE `b6170bf` = `origin/main` at execute after rebase)  
+**Tip at execute:** `b6170bf` (= origin/main; includes Pass 2d Graphic B) · plan commits rebased · Pass 4 tip `9767fde` stands  
 **Spec:** *WebGPU* — **W3C Candidate Recommendation Draft, 15 September 2026** · editors Kai Ninomiya, Brandon Jones, Jim Blandy (et al.)  
 **ASCII (Pass 4):** `docs/clipboards/webgpu-ascii-machinery.md` — SOURCE MACHINERY + **P-G1…P-G9** · P4-X **all PASS** · singular overview (P4-O stand)  
 **Mechanisms (Pass 3):** `docs/clipboards/webgpu-mechanisms.md` — **M-G1…M-G9** · P3-M CONFIRM×9 · CONFLICT×0  
@@ -55,7 +55,7 @@ pull/ff → claim clipboards → Hands + host/GPU mesh skim
 |  KEEP-read: host/GPU mechanics for Shadow projection / hologram.     |
 |  rust-nostd / wasm-spec-3 wasm64 = cite-only (different layer).      |
 |  No src/ until pointer-emission accepted.  One strand.               |
-|  Status: HELD / NOT EXECUTED — plan only; P5-P body = execute only.  |
+|  Status: EXECUTED — P5-X/F/O/P/R delivered; Order Proposal on clipboard. |
 +======================================================================+
 ```
 
@@ -374,3 +374,25 @@ Emission stays `[GAP]`.
 | `docs/coord/stations/clipboards.station` (claim/release as protocol) | PDF · `src/` · rust-nostd · wasm-spec-3 · law · graphics · systems-manifest · five-stakes · clock · hologram |
 
 After plan commit: **release** clipboards station. Ahead of origin by plan commit(s) only. Do not push. Do not execute P5-X/F/O/P/R now.
+
+---
+
+## Execute receipt (Pass 5)
+
+| Field | Value |
+|---|---|
+| Status | **EXECUTED** |
+| When | 2026-09-18 ~21:15 PT |
+| Agent | `Grok-webgpu-p5-exec` |
+| Claim BASE | `b6170bf` (== origin/main at claim) |
+| P5-X | **19 PASS · 0 FIX** (CONFIRM Pass 4) |
+| P5-F | none |
+| P5-O | singular overview confirmed (count=1) |
+| P5-P | clipboard full Order Proposal + ascii short mirror |
+| P5-R | on clipboard |
+| Wave B | SKIP |
+| Pass 6 | not opened |
+| Emission | `[GAP]` |
+| PDF staged | No |
+| Push | No |
+| `src/` | absent |
