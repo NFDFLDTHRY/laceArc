@@ -30,8 +30,10 @@ button{
   border-radius:6px;font-size:12px
 }
 button.on{background:var(--cyan);color:#061018}
-.dock{position:absolute;left:0;right:0;bottom:0;padding:8px 10px calc(10px + env(safe-area-inset-bottom));background:#05070cf2;border-top:1px solid var(--line);display:flex;gap:8px;align-items:center}
-.dock input{flex:1}
+.dock{position:absolute;left:0;right:0;bottom:0;padding:8px 10px calc(10px + env(safe-area-inset-bottom));background:#05070cf2;border-top:1px solid var(--line);display:flex;flex-direction:column;gap:8px}
+.dock .row{display:flex;gap:8px;align-items:center}
+.dock .row.acts button{flex:0 0 auto;min-width:64px}
+.dock input{flex:1;min-width:0;width:100%}
 #phase{color:var(--dim);font-size:12px;white-space:nowrap}
 aside{position:absolute;right:8px;top:calc(52px + env(safe-area-inset-top));width:min(320px,42vw);max-height:40vh;overflow:auto;background:#0b1018f2;border:1px solid var(--line);border-radius:8px;padding:10px;font:11px/1.4 ui-monospace,monospace;color:#c9d7ea;z-index:3}
 aside[hidden]{display:none}
@@ -48,7 +50,7 @@ aside[hidden]{display:none}
 </div>
 <div class="hud">
   <header class="hit">
-    <h1>LAYER III · i1p6 · BUTTONS</h1>
+    <h1>LAYER III · i2p1 · DOCK</h1>
     <p>Install on githack <code>main</code>, not a SHA. Audit ticks stay SHA-pinned. Cubes are glyphs. No emitter. [GAP]</p>
   </header>
   <div class="modes hit">
@@ -65,16 +67,20 @@ aside[hidden]{display:none}
     Doors. Not fused into L.
   </aside>
   <div class="dock hit">
-    <button type="button" id="play">pause</button>
-    <button type="button" id="installbtn">Install</button>
-    <button type="button" id="updatebtn">Update</button>
-    <input id="t" type="range" min="0" max="10" step="0.02" value="0"/>
-    <span id="phase">t=0000</span>
-    <span class="stamp">i1p6</span>
-    <span class="stamp">A17</span>
-    <span class="stamp" id="nnstamp">WebNN ?</span>
-    <span class="stamp" id="pwastamp">PWA ?</span>
-    <span class="stamp">glyphs ≠ schema</span>
+    <div class="row acts">
+      <button type="button" id="play">pause</button>
+      <button type="button" id="installbtn">Install</button>
+      <button type="button" id="updatebtn">Update</button>
+    </div>
+    <div class="row">
+      <input id="t" type="range" min="0" max="10" step="0.02" value="0"/>
+      <span id="phase">t=0000</span>
+      <span class="stamp">i2p1</span>
+      <span class="stamp">A17</span>
+      <span class="stamp" id="nnstamp">WebNN ?</span>
+      <span class="stamp" id="pwastamp">PWA ?</span>
+      <span class="stamp">glyphs ≠ schema</span>
+    </div>
   </div>
 </div>
 <script>
@@ -405,7 +411,7 @@ function runAudit(){
   const el=document.getElementById("audit");
   if(!el) return;
   const title=document.querySelector("h1")?.textContent||"";
-  const A=/i1p6/.test(title)?"ok":"fail";
+  const A=/i2p1/.test(title)?"ok":"fail";
   const D=!!(navigator.serviceWorker && navigator.serviceWorker.controller);
   const E=!!(window.deferredPrompt || window.matchMedia("(display-mode: standalone)").matches);
   const F=!!document.getElementById("installbtn");
@@ -416,7 +422,7 @@ function runAudit(){
     const ct=r.headers.get("content-type")||"";
     const B=/manifest|json/i.test(ct)?"ok":("fail "+ct);
     el.textContent=
-      "A title i1p6 "+A+"\n"+
+      "A title i2p1 "+A+"\n"+
       "B manifest MIME "+B+"\n"+
       "C icons 192+512 ok\n"+
       "D SW controlling "+(D?"ok":"fail")+"\n"+
