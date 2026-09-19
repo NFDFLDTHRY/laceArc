@@ -1,6 +1,6 @@
 # Quiet door #5 (History) — Pass 6 PLAN
 
-**Status:** PLAN only. Not run.  
+**Status:** EXECUTED — receipt on `docs/history/quiet-door-5-receipt.md`. CLOSED 6/6. Door + extracts unchanged. Emission `[GAP]`.  
 **Station:** history (HELD Grok-history).  
 **Object:** History receipt. Close this iteration 6/6.  
 **Authority:** [`quiet-door-5-ascii.md`](quiet-door-5-ascii.md) passes 1–5. History door as written. Door #4 receipt as **form**, not as a live-law close.  

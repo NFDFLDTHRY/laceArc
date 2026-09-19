@@ -1,8 +1,9 @@
 # Quiet door #5 — History ASCII
 
+**Status:** CLOSED 6/6. Receipt: [quiet-door-5-receipt.md](quiet-door-5-receipt.md).  
 **Object:** `docs/history/README.md`  
 **Station:** history.  
-**Executed:** [quiet-door-5-pass-1-plan.md](quiet-door-5-pass-1-plan.md) · [quiet-door-5-pass-2-plan.md](quiet-door-5-pass-2-plan.md) · [quiet-door-5-pass-3-plan.md](quiet-door-5-pass-3-plan.md) · [quiet-door-5-pass-4-plan.md](quiet-door-5-pass-4-plan.md) · [quiet-door-5-pass-5-plan.md](quiet-door-5-pass-5-plan.md).  
+**Executed:** [quiet-door-5-pass-1-plan.md](quiet-door-5-pass-1-plan.md) · [quiet-door-5-pass-2-plan.md](quiet-door-5-pass-2-plan.md) · [quiet-door-5-pass-3-plan.md](quiet-door-5-pass-3-plan.md) · [quiet-door-5-pass-4-plan.md](quiet-door-5-pass-4-plan.md) · [quiet-door-5-pass-5-plan.md](quiet-door-5-pass-5-plan.md) · [quiet-door-5-pass-6-plan.md](quiet-door-5-pass-6-plan.md).  
 **Not:** Core. Not an emitter. Not Hands. Not history pass 8. Not door #4 pass 7.  
 **Emission:** `[GAP]`. No `src/`. History door bytes untouched. Extracts untouched.
 
