@@ -1,6 +1,6 @@
 # Cold doors — Pass 6 PLAN
 
-**Status:** PLAN only. Not run. One act.  
+**Status:** EXECUTED — remainder table on `docs/kit/cold-doors.md`. No foreign file edited.  
 **Station:** kit.  
 **Agent:** Grok-kit.  
 **Plan BASE:** `fa7c84266c8a257a90631b86095562009173219c`.  

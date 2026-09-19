@@ -1,12 +1,13 @@
 # Cold doors
 
-**Status:** Pass 1 EXECUTED. Pass 2 EXECUTED. Pass 3 EXECUTED. Pass 4 EXECUTED. Pass 5 EXECUTED.
+**Status:** Pass 1 EXECUTED. Pass 2 EXECUTED. Pass 3 EXECUTED. Pass 4 EXECUTED. Pass 5 EXECUTED. Pass 6 EXECUTED.
 **Station:** kit.
 **Pass 1 BASE:** `ec5ae61624db93bb19e2560adacfded080f98a50`.
 **Pass 2 BASE:** `8c912a10df56504cb51cf95cd33c68ac8d3f2f45` (companions unchanged from `22ac006`).
 **Pass 3 BASE:** `e6e19352364cec81f96409596b8e8d3ffe70b63b`.
 **Pass 4 BASE:** `ccc68724d07095e5673ee380783bbdc4fc6c5326`.
 **Pass 5 BASE:** `60eb30ff1754307a6a3fab9842f12f1386a0b0da`.
+**Pass 6 BASE:** `1fcada25a43c88b3328cb529befff2c531ba28d9`.
 **Read:** 19 September 2026.
 **Emission:** `[GAP]`. No `src/`.
 
@@ -171,6 +172,31 @@ A default shallow clone does not contain THEN or NOW until they are fetched by S
 Package door stays LIVE. THEN/NOW were not retargeted.
 
 Queued (not this pass): off-kit remainder table — R1 law-station; renderer hologram PAUSED; Rust maps SHUT; emission `[GAP]`.
+
+---
+
+## Pass 6 — off-kit remainder
+
+Question: what remainders did passes 1–5 notice and refuse to repair, and which station owns each?
+
+Kit named the doors. It did not walk through them. No foreign file edited.
+
+Execute tip `1fcada25a43c88b3328cb529befff2c531ba28d9`.
+
+| Remainder | Station that would own a repair | Stamp already on register | Pass 6 sit | Kit may |
+|---|---|---|---|---|
+| R1 size split (5961 / 17385 / 18739 / 31663) | law | noticed, not repaired | **hold** — sizes unchanged at this tip | name the station |
+| Live-law header pair (exists ≠ accepted) | law | noticed pass 1 / 3 | **hold** — both sentences still in live law | name the station |
+| Pin `e21cf39` | kit (label only) | DATED companions; pass 3 UNREACHABLE | **hold label** — object resolves (`e21cf399` *Phase 2c…*); companions still name it; do not retarget | keep the label |
+| Graphics door row says station `law` | graphics + coord | door 10 | **moved** — `coord.sh which docs/graphics/README.md` → `graphics`; register row still says law | notice; do not rewrite OWNS |
+| Projection HTML campaign | hologram | PAUSED | **hold** — HTML present; hologram and renderer FREE; FREE is not a resume | do not resume |
+| Seven Rust doors | maps | SHUT | **hold** — contracts still PLAN / PROPOSAL; no `src/` | do not open |
+| Emission | law | `[GAP]` | **hold** — `docs/pointer-emission.md` DRAFT, not accepted | do not fill |
+| Graphics ASCII i3 (D companion) | graphics | queued, no plan | **hold** — i3 “not opened this tick”; graphics HELD elsewhere | do not start |
+
+No remainder became kit work. PAUSED stays paused. SHUT stays shut. Φ stays `[GAP]`.
+
+A later named pass on **law** / **hologram** / **maps** / **graphics** is not a kit pass 7.
 
 ---
 
