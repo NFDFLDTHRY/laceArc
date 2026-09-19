@@ -591,7 +591,12 @@ lives beside the product it serves, and the product links it when the pass is
 executed.* For `docs/clock/`, "beside" means `passes/`. That is what lets a
 campaign resume tomorrow and land correctly without another phase.
 
-**Ordering, learned the hard way in 1f.** 5a moves files that two documents
+**Ordering — the premise was wrong.** 5a was planned around three
+cross-station links into the pass plans. Re-measuring at execution showed they
+are backticked *mentions*, not links: the `CITED` check used `git grep -l`,
+which matches any occurrence. 5a-pre (`1b27939`) therefore changed nothing but
+its own station file while its message claims to have unlinked three citations,
+and 5a-post was never needed. Recorded, not rewritten. The original note said: 5a moves files that two documents
 link. Five of those links are from `clock/README.md` — same station, same
 commit, no window. Two are from this plan, a maps file, so they are unlinked
 before the move and re-linked after. Three commits where one would have left
