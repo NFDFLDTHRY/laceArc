@@ -1,7 +1,7 @@
-STATUS: FREE
+STATUS: HELD
 STATION: kit
 OWNS: docs/kit/** .claude/**
-AGENT: -
-BASE: -
-SINCE: -
-NOTE: Cold doors pass 6 EXECUTED. Kit FREE. Remainder is other stations. Φ [GAP].
+AGENT: Grok-kit
+BASE: ed29fec857c0f61a54204626b397af019260759f
+SINCE: 2026-09-19T06:10:23Z
+NOTE: Quiet door #1 (package) pass 1 PLAN. Cold-doors register 6/6 closed. Not kit pass 7. Φ [GAP].
