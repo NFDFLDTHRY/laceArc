@@ -1,6 +1,6 @@
 # Systems-manifest ASCII pass 13 plan — Update wave · Iteration 2 · Pass 1 · Delta inventory admission
 
-**Status:** **HELD** (plan-only). Emission `[GAP]`.  
+**Status:** **EXECUTED** (2026-09-18 PT). Emission `[GAP]`.  
 **Series:** Pass **13** (linear executed-passes list) = **Update wave · Iteration 2 · Pass 1** (also: **new iteration Pass 1**). Subtitle: both names.  
 **Station:** maps (catch-all for `docs/*.md` at court root). Holder: **reference-Mapper**. Keep maps **HELD**.  
 **Authority:** `docs/systems-manifest.md` (Contracts I / II / Layer III; Pieces unchanged).  
@@ -253,14 +253,14 @@ Refuse on execute (and for this Iteration-2 Pass 1):
 - [ ] Plan committed with maps.station if refresh dirty; ahead of origin; **not pushed**.  
 - [ ] Emission `[GAP]`; `src/` absent; **no** `docs/systems-manifest-ascii.md` body edits.
 
-### Execute turn (later — when human says Proceed)
+### Execute turn (when human said Proceed)
 
-- [ ] T1: Delta inventory board cites quiet-door #3 (OPEN/cite) · reconfirms quiet-door #1 OPEN · reconfirms nine shelves (or path-drift only).  
-- [ ] T2: Delta board outside Contract I; I→III read/cite only; labels kit-door / Shadow — never Core gear / Φ.  
-- [ ] T3: Short false-friend / fence note; kit quiet-doors ≠ I door ≠ clipboard shelf ≠ Φ; point at existing FM-* (no full table copy).  
-- [ ] T4: Executed-passes +13; Iteration-2 banner; thin Overview pointer; G2/Φ `[GAP]`; Pass 12 DIAGRAM SOUND WITH OPENS baseline retained.  
-- [ ] T5: Sealed refuse honored (Pass 12 refuse + no promote OPENS by inventing Core; no quiet-door→I; no invent shelf for #3; no clipboard/kit edits; no invent Φ; no src/; no fill G2; no rewrite Passes 1–12 beyond thin pointers / new Pass 13 section).  
-- [ ] maps still HELD by reference-Mapper (unless human releases).
+- [x] T1: Delta inventory board cites quiet-door #3 (OPEN/cite) · reconfirms quiet-door #1 OPEN · reconfirms nine shelves (or path-drift only).
+- [x] T2: Delta board outside Contract I; I→III read/cite only; labels kit-door / Shadow — never Core gear / Φ.
+- [x] T3: Short false-friend / fence note; kit quiet-doors ≠ I door ≠ clipboard shelf ≠ Φ; point at existing FM-* (no full table copy).
+- [x] T4: Executed-passes +13; Iteration-2 banner; thin Overview pointer; G2/Φ `[GAP]`; Pass 12 DIAGRAM SOUND WITH OPENS baseline retained.
+- [x] T5: Sealed refuse honored (Pass 12 refuse + no promote OPENS by inventing Core; no quiet-door→I; no invent shelf for #3; no clipboard/kit edits; no invent Φ; no src/; no fill G2; no rewrite Passes 1–12 beyond thin pointers / new Pass 13 section).
+- [x] maps still HELD by reference-Mapper (unless human releases).
 
 ---
 
