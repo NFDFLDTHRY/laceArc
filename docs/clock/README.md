@@ -41,8 +41,15 @@ Read-only projection. It shows the strand; it never decides what goes on it.
 | [sw.js](sw.js) · [manifest.webmanifest](manifest.webmanifest) | Service worker and web manifest — installable. `file://` will not install |
 | [wasm/](wasm/README.md) | wasm notes; the wasm32 sysroot is still missing |
 
-**Install (PWA):** `https://raw.githack.com/NFDFLDTHRY/laceArc/main/docs/clock/lace-projection.html?i=1`
-**Audit a tick:** SHA-pinned raw.githack. Do not Add-to-Home-Screen a SHA URL.
+**Install (PWA):** commit-pinned `rawcdn.githack.com`, never a floating branch.
+
+```
+https://rawcdn.githack.com/NFDFLDTHRY/laceArc/<FULL_COMMIT_SHA>/docs/clock/lace-projection.html
+```
+
+That origin+path owns the manifest, service worker, and storage. A new commit is a new URL. Update = open the new SHA and install that. `raw.githack.com` / `main` is not the install host.
+
+**Preview / audit:** `raw.githack.com` against `main` or a SHA is fine to *look*. Do not Add-to-Home-Screen those.
 
 ## Provenance
 
