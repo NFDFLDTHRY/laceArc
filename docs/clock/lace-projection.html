@@ -47,7 +47,7 @@ aside[hidden]{display:none}
 <div class="hud">
   <header class="hit">
     <h1>LAYER III · 3D + TIME · D1 GIVEN</h1>
-    <p>Look: lattice / crossing / traces. Cubes and orbs are glyphs, not Core types. Time walks 0000…0010. No emitter. [GAP]</p>
+    <p>Install on githack <code>main</code>, not a SHA. Audit ticks stay SHA-pinned. Cubes are glyphs. No emitter. [GAP]</p>
   </header>
   <div class="modes hit">
     <button type="button" class="on" data-mode="core">Core time</button>
@@ -71,6 +71,7 @@ holder  outside this box</aside>
     <input id="t" type="range" min="0" max="10" step="0.02" value="0"/>
     <span id="phase">t=0000</span>
     <span class="stamp" id="nnstamp">WebNN ?</span>
+    <span class="stamp" id="pwastamp">PWA ?</span>
     <span class="stamp">glyphs ≠ schema</span>
   </div>
 </div>
@@ -381,7 +382,11 @@ main().catch(err=>{
   } catch (_) { el.textContent="WebNN off"; }
 })();
 if ("serviceWorker" in navigator) {
-  navigator.serviceWorker.register("sw.js").catch(()=>{});
+  navigator.serviceWorker.register("sw.js", { scope: "./" })
+    .then(() => { const e=document.getElementById("pwastamp"); if(e) e.textContent="PWA on"; })
+    .catch(() => { const e=document.getElementById("pwastamp"); if(e) e.textContent="PWA off"; });
+} else {
+  const e=document.getElementById("pwastamp"); if(e) e.textContent="PWA off";
 }
 </script>
 </body>

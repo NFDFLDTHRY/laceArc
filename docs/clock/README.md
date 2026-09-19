@@ -23,6 +23,10 @@ Moved here in defrag pass 3.
 | projection-visual-pass-2-plan.md | Pass 2: lattice materials. Executed. |
 | projection-visual-pass-3-plan.md | Pass 3: worker bake + cheap lattice. wasm32 sysroot still missing. |
 | projection-visual-pass-4-plan.md | Pass 4: follow-tick camera + PWA. Executed. |
+| projection-visual-pass-5-plan.md | Pass 5: githack install path. Executed. |
+
+**Install (PWA):** https://raw.githack.com/NFDFLDTHRY/laceArc/main/docs/clock/lace-projection.html  
+**Audit a tick:** SHA-pinned raw.githack. Do not Add-to-Home-Screen a SHA URL.
 | manifest.webmanifest / sw.js | Installable Layer III app. file:// will not install. |
 | agent-interaction-model.md | elephant clock `[PROPOSAL]` |
 | system-mathematical-model.md | Hands L + Shadow H; emission `[GAP]` |

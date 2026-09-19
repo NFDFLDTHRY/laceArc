@@ -1,5 +1,5 @@
 /* Layer III cache only. Not Core. */
-const CACHE = "lace-iii-d1-v4";
+const CACHE = "lace-iii-d1-v5-githack-main";
 const PRE = [
   "./lace-projection.html",
   "./projection-bake-worker.js",
