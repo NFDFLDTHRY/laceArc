@@ -18,13 +18,7 @@ Moved here in defrag pass 3.
 | water-systems-manifest.md | Water clutch clipboard. OBS ≠ POINTER. Not Core. |
 | train-h-c-w-systems-manifest.md | Combined H×C×W train. Not Core. |
 | lace-projection.html | Merged Layer III: WebGPU 3D + D1 time. Templates lattice/crossing/traces. Glyphs ≠ schema. |
-| projection-merge-pass-1-plan.md | Merge pass 1. Executed as shell. |
-| projection-visual-pass-1-plan.md | Pass 1: fail closed to lookrefs. Executed. |
-| projection-visual-pass-2-plan.md | Pass 2: lattice materials. Executed. |
-| projection-visual-pass-3-plan.md | Pass 3: worker bake + cheap lattice. wasm32 sysroot still missing. |
-| projection-visual-pass-4-plan.md | Pass 4: follow-tick camera + PWA. Executed. |
-| projection-visual-pass-5-plan.md | Pass 5: githack install path. Executed. |
-| projection-visual-pass-6-plan.md | Pass 6: HUD v6 + SW update reload. Executed. |
+| [passes/](passes/README.md) | **Executed pass plans**, 29 across six campaigns. A new pass plan goes there, and the product it serves links it. |
 
 **Install (PWA):** https://raw.githack.com/NFDFLDTHRY/laceArc/main/docs/clock/lace-projection.html  
 **Audit a tick:** SHA-pinned raw.githack. Do not Add-to-Home-Screen a SHA URL.
