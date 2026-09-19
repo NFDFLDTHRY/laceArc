@@ -1,6 +1,6 @@
 # Systems-manifest ASCII pass 9 plan — Update wave Pass 3 · Layer III Shadow SOURCE mechanism mesh
 
-**Status:** **HELD** / NOT EXECUTED. Emission `[GAP]`.  
+**Status:** **EXECUTED** 2026-09-18 PT. Emission `[GAP]`.  
 **Series:** Pass **9** (linear executed-passes list) = **Update wave · Pass 3**. Subtitle: both names.  
 **Station:** maps (catch-all for `docs/*.md` at court root). Holder: **reference-Mapper**. Keep maps **HELD**.  
 **Authority:** `docs/systems-manifest.md` (Contracts I / II / Layer III; Pieces unchanged).  

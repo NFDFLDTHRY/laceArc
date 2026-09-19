@@ -2,7 +2,7 @@
 
 **Not the manifest.** [`systems-manifest.md`](systems-manifest.md) is the Hands contract map; this is an ASCII reading of it and settles nothing it does not.
 
-**Executed passes:** [1](systems-manifest-ascii-pass-1-plan.md) · [2](systems-manifest-ascii-pass-2-plan.md) · [3](systems-manifest-ascii-pass-3-plan.md) · [4](systems-manifest-ascii-pass-4-plan.md) · [5](systems-manifest-ascii-pass-5-plan.md) · [6](systems-manifest-ascii-pass-6-plan.md) · [7](systems-manifest-ascii-pass-7-plan.md) · [8](systems-manifest-ascii-pass-8-plan.md). A new pass is linked here once it is executed.
+**Executed passes:** [1](systems-manifest-ascii-pass-1-plan.md) · [2](systems-manifest-ascii-pass-2-plan.md) · [3](systems-manifest-ascii-pass-3-plan.md) · [4](systems-manifest-ascii-pass-4-plan.md) · [5](systems-manifest-ascii-pass-5-plan.md) · [6](systems-manifest-ascii-pass-6-plan.md) · [7](systems-manifest-ascii-pass-7-plan.md) · [8](systems-manifest-ascii-pass-8-plan.md) · [9](systems-manifest-ascii-pass-9-plan.md). A new pass is linked here once it is executed.
 
 **Authority:** `docs/systems-manifest.md`. Companion, not a replacement.  
 **Hands:** Graphics A–D. Shoe in hands.  
@@ -568,3 +568,92 @@ Emission `[GAP]`. No `src/`. Pass 7 nine-row board retained. Passes 1–6 untouc
 | T3 | Global D1–D6 KEEP/FORBID/MAP coherence spine (not WebNN clone) |
 | T4 | Executed-passes +8; Pass 8 leftovers / coherence / deltas; G2 `[GAP]` |
 | T5 | Sealed refuse honored (no src/; no Core rename; no clipboard/kit edits; no quiet-door I import) |
+
+## Layer III — Shadow SOURCE cite-cards (pass 9 · G-III-1…9)
+
+Update wave · Pass 3. Thin Wave A **cite-cards** only. Paths + FORBID bleed; **no** panel paste.  
+Cite both `*-ascii-machinery.md` and `*-mechanisms.md` (all nine present). Outside Contract I. Emission `[GAP]`.
+
+| ID | Shelf role | Cite paths | FORBID Core bleed |
+|---|---|---|---|
+| **G-III-1** | HOST/GPU | `docs/clipboards/webgpu-ascii-machinery.md` · `docs/clipboards/webgpu-mechanisms.md` | GPUDevice/Queue/Buffer/Texture ≠ strand/store; submit/draw/dispatch ≠ Φ |
+| **G-III-2** | SHADER-LANG | `docs/clipboards/wgsl-ascii-machinery.md` · `docs/clipboards/wgsl-mechanisms.md` | WGSL ≠ WORD; module/entry ≠ strand/Φ; address space ≠ Lace store |
+| **G-III-3** | HOST-NN | `docs/clipboards/webnn-ascii-machinery.md` · `docs/clipboards/webnn-mechanisms.md` | MLGraph/builder ≠ strand; MLTensor ≠ store; dispatch ≠ Φ |
+| **G-III-4** | wasm64 compile-target | `docs/clipboards/wasm-spec-3-ascii-machinery.md` · `docs/clipboards/wasm-spec-3-mechanisms.md` | linear mem/table/stack ≠ L; br/return ≠ Φ; trap ≠ cut |
+| **G-III-5** | book · AgentScope | `docs/clipboards/agentscope-ascii-machinery.md` · `docs/clipboards/agentscope-mechanisms.md` | ReAG/ISR ≠ Graphic D rows; LLM verdict ≠ Hands |
+| **G-III-6** | book · Petersen–Zech | `docs/clipboards/petersen-zech-ascii-machinery.md` · `docs/clipboards/petersen-zech-mechanisms.md` | neuron/width/depth ≠ WORD/STAR; NTK ↛ store |
+| **G-III-7** | book · Xiao–Zhu | `docs/clipboards/xiao-zhu-foundations-ascii-machinery.md` · `docs/clipboards/xiao-zhu-foundations-mechanisms.md` | embed/KV ≠ store; next-token ≠ Core continue; tokenizer `[GAP]` |
+| **G-III-8** | book · Kauffman 4ed | `docs/clipboards/kauffman-4ed-ascii-machinery.md` · `docs/clipboards/kauffman-4ed-mechanisms.md` | diagram ≠ rope; grab ≠ emission; YBE ↛ array law |
+| **G-III-9** | book · Rowlands | `docs/clipboards/rowlands-zero-to-infinity-ascii-machinery.md` · `docs/clipboards/rowlands-zero-to-infinity-mechanisms.md` | rewrite ≠ mutate-WORD; no extra rooms; algebra ≠ Core ops |
+
+Pass 7 inventory board retained (thin pointer). No shelf M-* bodies pasted here.
+
+## P9-M — Layer III Shadow SOURCE mechanism mesh (pass 9)
+
+Global companion mesh. **Not** a shelf P3-M paste. I → III = **read / cite only**. Nine Shadow nodes **outside** Contract I. Emission / G2 stay `[GAP]`.
+
+```
+  ╔══════════════════════════════════════╗
+  ║  Contract I — Lace Core              ║
+  ║  impulse / pallet / tape / hands     ║
+  ║  (Pass 6; unchanged)                 ║
+  ╚══════════════════════════════════════╝
+            |
+            |  I → III  read / cite only
+            |  (no upward write III → I)
+            v
+  +------------------------------------------------------------------+
+  |  Layer III / outside-I — P9-M mesh                               |
+  |  FORBID-as-Core-write · NON-binding · G2 / Φ = [GAP]             |
+  |                                                                  |
+  |   [G-III-1 HOST/GPU]  [G-III-2 SHADER]  [G-III-3 HOST-NN]        |
+  |   [G-III-4 wasm64]    [G-III-5 AgentScope]                       |
+  |   [G-III-6 Petersen]  [G-III-7 Xiao-Zhu]                         |
+  |   [G-III-8 Kauffman]  [G-III-9 Rowlands]                         |
+  |     ^ nine Shadow SOURCE nodes (cite ascii + mechanisms)         |
+  |                                                                  |
+  |   (Piece 13)  Hands projection dual                              |
+  |     views of 7, 12, 15  ≠  Shadow SOURCE cites                   |
+  |                                                                  |
+  |   . . . (quiet-door OPEN) . . .                                  |
+  |     docs/kit/quiet-door-1-ascii.md                               |
+  |     dashed / OPEN candidate — NOT tenth clipboard shelf          |
+  |     -/-> Contract I                                              |
+  +------------------------------------------------------------------+
+
+  train / HCC / Cup / Water     outside I (cite only; not Core mesh teeth)
+  G2 POINTER when/arity/adj     [GAP]
+  emission Φ                    [GAP]
+```
+
+| Node | Kind | Cite | Relation to I | Emission |
+|---|---|---|---|---|
+| G-III-1…9 | Shadow SOURCE | ascii + mechanisms paths (cite-cards above) | I → III read/cite | `[GAP]` |
+| Piece 13 | Hands projection dual | systems-manifest Piece 13 | views only; no upward write | `[GAP]` |
+| quiet-door | OPEN / dashed | `docs/kit/quiet-door-1-ascii.md` | -/-> Contract I | `[GAP]` |
+
+## Cross-walk G-III-* ↔ shelf M-*/P-* (pass 9 · cite only)
+
+Book shelves share M-A*/P-A* locally — disambiguate by **path**. Do not renumber shelf cards. Do not paste shelf bodies.
+
+| G-III-* | Shelf role | Shelf M-* | Shelf P-* | mechanisms | ascii-machinery |
+|---|---|---|---|---|---|
+| G-III-1 | HOST/GPU | M-G* | P-G* | `docs/clipboards/webgpu-mechanisms.md` | `docs/clipboards/webgpu-ascii-machinery.md` |
+| G-III-2 | SHADER-LANG | M-S* | P-S* | `docs/clipboards/wgsl-mechanisms.md` | `docs/clipboards/wgsl-ascii-machinery.md` |
+| G-III-3 | HOST-NN | M-N* | P-N* | `docs/clipboards/webnn-mechanisms.md` | `docs/clipboards/webnn-ascii-machinery.md` |
+| G-III-4 | wasm64 | M-T* | P-T* | `docs/clipboards/wasm-spec-3-mechanisms.md` | `docs/clipboards/wasm-spec-3-ascii-machinery.md` |
+| G-III-5 | AgentScope | M-A* (agentscope) | P-A* | `docs/clipboards/agentscope-mechanisms.md` | `docs/clipboards/agentscope-ascii-machinery.md` |
+| G-III-6 | Petersen–Zech | M-A* (petersen) | P-A* | `docs/clipboards/petersen-zech-mechanisms.md` | `docs/clipboards/petersen-zech-ascii-machinery.md` |
+| G-III-7 | Xiao–Zhu | M-A* (xiao-zhu) | P-A* | `docs/clipboards/xiao-zhu-foundations-mechanisms.md` | `docs/clipboards/xiao-zhu-foundations-ascii-machinery.md` |
+| G-III-8 | Kauffman 4ed | M-A* (+ M-B*) | P-A* (+ P-B*) | `docs/clipboards/kauffman-4ed-mechanisms.md` | `docs/clipboards/kauffman-4ed-ascii-machinery.md` |
+| G-III-9 | Rowlands | M-A* (+ M-B*) | P-A* (+ P-B*) | `docs/clipboards/rowlands-zero-to-infinity-mechanisms.md` | `docs/clipboards/rowlands-zero-to-infinity-ascii-machinery.md` |
+
+## Pass 9 deltas
+
+| Ticket | Action |
+|---|---|
+| T1 | Thin G-III-1…G-III-9 cite-cards (role · ascii+mechanisms · FORBID bleed); no panel paste |
+| T2 | P9-M mesh: I→III read/cite; nine Shadow outside I; Piece 13 dual; quiet-door dashed/OPEN; train/HCC outside I; G2/Φ `[GAP]` |
+| T3 | Cross-walk G-III-* ↔ shelf M-*/P-* + paths (book M-A* disambiguated by path) |
+| T4 | Executed-passes +9; thin Pass 9 deltas; G2 `[GAP]`; Pass 7–8 retained |
+| T5 | Sealed refuse honored (no src/; no new mechanisms/ascii files; no clipboard/kit edits; no Core invent; no quiet-door→I; no invent Φ; no fill G2; no shelf body paste; no WebNN Pass 3 morals into Core) |
