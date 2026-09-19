@@ -193,24 +193,56 @@ files on the graphics shelf had transcribed it `centimetre`. The graphic is the
 source of record; the spelling here now matches it.
 
 The scale clause appears nowhere in `README.md`, `AGENTS.md`,
-`docs/systems-manifest.md`, or `docs/reason-model-map.md`. It matters because the
-repo's first line is a physical instruction — *put a shoe lace in your hands* —
-and this is the only place the source fixes the exchange rate between that object
-and the model.
+`docs/systems-manifest.md`, or `docs/reason-model-map.md`. ~~It matters because the
+repo's first line is a physical instruction — *put a shoe lace in your hands* — and
+this is the only place the source fixes the exchange rate between that object and
+the model.~~
 
-### The centimeter is the index unit
+**Struck. There is no exchange rate, and this document spent three readings looking
+for one.** §5a is the author's own account of the clause.
 
-**Human ruling:** *the unit is the index. The centimeter **is** the index unit,
-whatever a unit of lace is.*
+### 5a. The unit, from the author
 
-**So the header's clause is not an analogy and must not be read as one.** It is the
-source naming the step between one position on the strand and the next. One
-centimeter is one index. The lace is a 1D array; the array's positions are
-indices; the source calls an index a centimeter of wire.
+**The unit is one item in the lace array.** One item, one index, one step along the
+strand. **The author's ruling, not a reading of the graphics** — stated in prose
+rather than stamped, because the boundary-stamp family is the law's and has no token
+for *the human said so*.
 
-**This document said otherwise for one commit.** It read the ruling as demoting
-the clause to a physical metaphor — *"an index has no centimetres"* — and that was
-wrong. The ruling names the unit; it does not retire it.
+**And the name of that unit is arbitrary.** The author's account, recorded because
+nothing else in the tree carries it:
+
+> *"I needed a unit so I picked one at random — the centimeter. In reality the unit
+> could be anything; an item in the lace array is probably the best answer we have
+> for this project."*
+
+**So `centimeter` is a placeholder, and it is the author's placeholder, not a
+reader's inference.** It names something real — the step between one position on the
+strand and the next — and it commits to nothing physical. The word in the header is
+a label on the unit, not a measurement of it.
+
+**Three readings of this clause are on the record, and only the third is right.**
+
+| | Reading | Verdict |
+|---|---|---|
+| 1 | An exchange rate between a real shoe lace and the model | **Wrong.** Assumed the centimeter was a length |
+| 2 | A physical analogy, not a unit at all — *"an index has no centimetres"* | **Wrong.** Retired a unit the source does name. Corrected at `0554228` |
+| 3 | **An arbitrarily named unit whose referent is one array item** | **The author's ruling** |
+
+**Reading 1 was this document's own for three readings; reading 2 was the steward's
+for one commit. The human supplied the correction both times.** That is left visible
+on purpose.
+
+### What §5a settles, and what it does not
+
+**Settled: a POINTER occupies a unit.** If the unit is *an item in the array*, and
+`D1` writes POINTER entries as rows of the array, a pointer costs exactly what a
+word costs — one. **This closes the `[GAP]` this document opened at `0554228`, and
+it is closed by the author's ruling, not by the graphics**, which show the rows and
+never state the accounting.
+
+**Not settled, and not touched: POINTER emission remains `[GAP]`.** *Which* arrivals
+write a pointer is a different question from *what a pointer costs once written*.
+Nothing in §5a bears on it, and **no part of this section opens the `src/` gate.**
 
 **The conversion table is kept for the record and is `[UNSUPPORTED]`.**
 
@@ -221,23 +253,22 @@ wrong. The ruling names the unit; it does not retire it.
 | a 1,000-word document | 10 m | `[UNSUPPORTED]` |
 | an 80,000-word book | 800 m | `[UNSUPPORTED]` |
 
-**What is wrong with it is the counting, not the unit.**
+**Both of its columns are void, for different reasons.**
 
-It reads *one word, one centimeter* as *one word, one index* — **and that assumes
-only WORDs occupy indices.** They do not. The array holds WORD **and** POINTER
-entries, and panel `D1` shows **eleven rows for five words: six pointers against
-five words.** Measured in indices, `D1`'s example is **eleven centimeters, not
-five**, and every row of the table above is short by whatever the pointers cost.
+**The count is wrong.** It reads *one word, one unit*, which assumes only WORDs
+occupy items. They do not. `D1` writes **eleven rows for five words — six pointers
+against five** — and by §5a a pointer costs one item. **`D1`'s example is eleven
+units, not five.**
 
-**`[GAP]` — does a POINTER occupy a centimeter?** The source names the unit and
-does not say what fills it. `D1` puts pointers in the array's own rows, which is
-the reason to think they do; nothing in the four graphics states it. **The ruling
-fixes the unit. It does not fix the census, and a convenient census must not be
-invented for it.**
+**And the lengths were never convertible.** *"A 114 cm shoe lace ≈ 114 words"*
+converts **physical centimetres of actual shoelace** into array items through a name
+the author picked at random. There is no such conversion. The metre and kilometre
+rows are the same error at scale.
 
-So the hands test in `docs/reason-model-map.md` still measures something real —
-**a centimeter of lace is an index of Lace** — and what remains unknown is how many
-indices a given text costs, not what an index is.
+**So the hands test in `docs/reason-model-map.md` is an instruction, not a ruler.**
+Hold the lace: it is the right object, and the reason is sequence and one continuous
+strand, not size. **Nothing in this repository may measure a text against a physical
+length**, and the entry condition never asked it to.
 
 ---
 
