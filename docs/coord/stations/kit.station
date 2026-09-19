@@ -1,7 +1,7 @@
-STATUS: FREE
+STATUS: HELD
 STATION: kit
 OWNS: docs/kit/** .claude/**
-AGENT: -
-BASE: -
-SINCE: -
-NOTE: Quiet door #1 CLOSED 6/6. Kit FREE. Not door #2. Φ [GAP].
+AGENT: Grok-kit
+BASE: adac3b9f4a5e2ff70c4aa04ace61cef279435974
+SINCE: 2026-09-19T06:28:26Z
+NOTE: Scanner fix pass 1 PLAN. Door #1 CLOSED 6/6 stays. Not cold-doors 7. Φ [GAP].
