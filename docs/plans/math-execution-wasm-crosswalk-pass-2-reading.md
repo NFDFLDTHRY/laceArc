@@ -3,7 +3,7 @@
 **Status:** KEEP/FORBID/SILENT **reading** (EXECUTED). Not a bridge model. Not an emitter.
 **Pass:** Math-execution × WASM Pass 2 execute (authorized by [math-execution-wasm-crosswalk-pass-2-plan.md](math-execution-wasm-crosswalk-pass-2-plan.md)).
 **Parent map:** [math-execution-wasm-crosswalk-pass-1.md](math-execution-wasm-crosswalk-pass-1.md) — READY-PARTIAL-CROSSWALK ∧ BLOCKED-BRIDGE-COMPLETE.
-**Pinned main:** `901950641eaa2f75e632f86fcadf1efc7b96ea73`.
+**Pinned main:** `a41c2a1a790ea32fc44949730d0fc98154a88979`.
 **Emission / Φ:** `[GAP]`. No `src/`.
 **WASM role:** Shadow compile-target (`wasm64`) only. **Not** Core. **Not** Graphic D.
 
@@ -127,7 +127,7 @@ This reading:
 |---|---|
 | Pass | Math-execution × WASM Pass 2 **EXECUTED** (KEEP/FORBID/SILENT reading) |
 | Product | `docs/plans/math-execution-wasm-crosswalk-pass-2-reading.md` |
-| Pinned SHA | `901950641eaa2f75e632f86fcadf1efc7b96ea73` |
+| Pinned SHA | `a41c2a1a790ea32fc44949730d0fc98154a88979` |
 | Parent map | Pass 1 READY-PARTIAL-CROSSWALK ∧ BLOCKED-BRIDGE-COMPLETE |
 | Φ | `[GAP]` |
 | Bridge | BLOCKED-BRIDGE-COMPLETE **retained** |
