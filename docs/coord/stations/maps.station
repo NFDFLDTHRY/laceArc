@@ -2,6 +2,6 @@ STATUS: HELD
 STATION: maps
 OWNS: docs/reason-model-map.md docs/rust-nostd-*.md docs/atomic-primitives-map.md docs/clock/gearing-code-1to1.md docs/coherence-audit*.md docs/clock/system-mathematical-model.md docs/defrag-plan.md docs/plans/** docs/namespace-register.md docs/*.md (catch-all: any unmatched file at the docs/ root)
 AGENT: reference-Mapper
-BASE: 98c700edc231f1116b11baa546e9edc4762f0d18
-SINCE: 2026-09-19T07:23:39Z
+BASE: d2f07db95aec8ba92b54a69ba2a816e3068cd99e
+SINCE: 2026-09-19T07:26:00Z
 NOTE: 
