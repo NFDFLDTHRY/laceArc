@@ -36,6 +36,7 @@
 | [verification-iterations.md](verification-iterations.md) | **the standing shape of an iteration.** Six passes, the Plan/Proceed/Commit cadence, and the rules measured from three iterations of practice |
 | [verification-iter3-pass-2-plan.md](verification-iter3-pass-2-plan.md) | `[PLAN]` iteration 3 pass 2: classify 14 genuine broken references. A fifth kind — quoted as evidence — and 93% of rot is backticked |
 | [verification-iter3-pass-2-findings.md](verification-iter3-pass-2-findings.md) | pass 2 record. 33 read in place: 11 moved, 19 evidence, 3 conditional-or-forbidden. Zero never-arrived |
+| [verification-iter3-pass-3-plan.md](verification-iter3-pass-3-plan.md) | `[PLAN]` iteration 3 pass 3: the dating convention has an owner — cold-doors, kit. This campaign wrote the second vocabulary |
 | [restructure-plan.md](restructure-plan.md) | `[PROPOSAL]` coherence of the whole tree: twelve measured findings, eight phases, one station per commit; supersedes the defrag plan as filing plan of record |
 
 Sub-shelves: [fixtures/](fixtures/README.md) sealed golden IR · [tools/](tools/README.md) host validator.
