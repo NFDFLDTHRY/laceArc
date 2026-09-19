@@ -2,7 +2,7 @@
 
 **Object:** `docs/kit/READ_ME_FIRST.md`  
 **Station:** kit.  
-**Executed:** [quiet-door-1-pass-1-plan.md](quiet-door-1-pass-1-plan.md).  
+**Executed:** [quiet-door-1-pass-1-plan.md](quiet-door-1-pass-1-plan.md) · [quiet-door-1-pass-2-plan.md](quiet-door-1-pass-2-plan.md).  
 **Not:** live law. Not Hands. Not Graphic D. Not cold-doors pass 7.  
 **Emission:** `[GAP]`. No `src/`. Package door bytes untouched.
 
@@ -82,4 +82,30 @@ The door is a route. Law is stored in live law. D is still the Hands store. Kit 
 | T3 | THEN/NOW cited, not moved |
 | T4 | Pointer from kit README |
 
-Queued (later passes on this door, not cold-doors 7): fields; THEN/NOW/tip grain; routing mechanism; companion seam; receipt.
+Queued (later passes on this door, not cold-doors 7): THEN/NOW/tip grain; routing mechanism; companion seam; receipt.
+
+## Pass 2 — panel fields
+
+Off the package door only. In / Does / Break / Gap / Role. Spine above stays. Door bytes untouched.
+
+| # | Block | In | Does | Break | Gap | Role |
+|---|---|---|---|---|---|---|
+| D1 | Opening (kit, not Hands) | a reader at this file | names live AGENTS + live law at tip as the win; no wrapper substitutes | treat this file as live law | — | precondition |
+| D2 | THEN pin | commit `4fe984b` | dates the package; emission absent *in that tree*; old STALE banner was a warning | retarget THEN; claim the file is still missing | — | dated pin |
+| D3 | NOW pin | commit `044257c` | re-read; routing holds; DRAFT not accepted; no `src/`; not the tip | treat NOW as the tip; claim acceptance | — | dated pin |
+| D4 | Integration / no enforcement | the package in-repo | says what it does not establish: no Core, no acceptance, no permissions, no enforcement | treat presence as acceptance or enforcement | — | constraint |
+| D5 | Companion table | three kit files | indexes control / forms / THEN-audit | promote a companion to live law | other kit files (githack, grok paste) not in this table → pass 5 | index |
+| D6 | Harness paste-block | an agent that cannot load the repo | routes to live AGENTS + live law + kit controls; staking ASCII is not replaced | replace staking ASCII with this block | — | route |
+| D7 | Audit paragraph | the THEN audit body | keeps the snapshot; notes F10 then-absent / now-DRAFT; does not rewrite the body | rewrite `downstream-audit.md` from this door | remaining enforcement findings unresolved | constraint |
+| D8 | Ready / not-ready | prompt + forms | ready for docs/review; Core / emission / next branch stay under live law | treat challenges as run, or Core as ready | challenges unrun | statement |
+
+D2/D3 are pins, not machines. G2 stays `[GAP]`.
+
+## Pass 2 deltas
+
+| Ticket | Action |
+|---|---|
+| T1 | Eight In / Does / Break / Gap / Role rows |
+| T2 | D1 precondition; D2/D3 pins; D4/D7 constraints; D6 route |
+| T3 | Spine left in place |
+| T4 | Door bytes untouched |

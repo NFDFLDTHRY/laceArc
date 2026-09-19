@@ -1,6 +1,6 @@
 # Quiet door #1 (package) — Pass 2 PLAN
 
-**Status:** PLAN only. Not run.  
+**Status:** EXECUTED — fields on `docs/kit/quiet-door-1-ascii.md`. Package door unchanged. Emission `[GAP]`.  
 **Station:** kit (HELD Grok-kit).  
 **Object:** quiet door #1 — `docs/kit/READ_ME_FIRST.md`. ASCII spine already on [`quiet-door-1-ascii.md`](quiet-door-1-ascii.md).  
 **This pass:** In / Does / Break / Gap for the door's blocks.  
