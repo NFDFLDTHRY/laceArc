@@ -1,6 +1,6 @@
 # Projection iteration 5 / pass 3 plan — stop framing empty space
 
-**Status:** PLAN. Not executed. Emission `[GAP]`.  
+**Status:** EXECUTED. Emission `[GAP]`. Title `i5p3`. Camera on D1 centroid. Floor louder. Ember through cube tops. Gold chords thicker.  
 **Station:** hologram  
 **Evidence:** `i5p2` shot `t=0004 PTR`, `ms 107`, `GPU on`. Navy void. Two teal boxes + green orbs clipped to the edges. No circuit. No gold chord. No orange core.
 

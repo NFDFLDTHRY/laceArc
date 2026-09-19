@@ -57,7 +57,7 @@ aside[hidden]{display:none}
 </div>
 <div class="hud">
   <header class="hit">
-    <h1>LAYER III · i5p2 · RAWCDN SHA</h1>
+    <h1>LAYER III · i5p3 · RAWCDN SHA</h1>
     <p>Install this URL only if it is <code>rawcdn.githack.com</code> + a full SHA. Floating <code>main</code> is preview. Cubes are glyphs. No emitter. [GAP]</p>
   </header>
   <div class="modes hit">
@@ -82,7 +82,7 @@ aside[hidden]{display:none}
     <div class="row">
       <input id="t" type="range" min="0" max="10" step="0.02" value="0"/>
       <span id="phase">t=0000</span>
-      <span class="stamp">i5p2</span>
+      <span class="stamp">i5p3</span>
       <span class="stamp">A17</span>
       <span class="stamp" id="gpustamp">GPU ?</span>
       <span class="stamp" id="bootstamp">boot ?</span>
@@ -117,6 +117,11 @@ function posOf(i){
   const col = i % 4, row = Math.floor(i / 4);
   return [col * 2.4 - 3.6, 0.55, row * 2.4 - 2.4];
 }
+const GRID=(()=>{
+  let x=0,z=0;
+  for(let i=0;i<11;i++){ const p=posOf(i); x+=p[0]; z+=p[2]; }
+  return [x/11, 0.55, z/11];
+})();
 function cube(s){
   const p=[],n=[],c=[];
   const f=[[0,1,0],[0,-1,0],[1,0,0],[-1,0,0],[0,0,1],[0,0,-1]];
@@ -209,21 +214,21 @@ struct VSOut { @builtin(position) p: vec4<f32>, @location(0) wpos: vec3<f32>, @l
     let fx = fract(i.wpos.x * 0.72);
     let fz = fract(i.wpos.z * 0.72);
     let edge = min(min(fx, 1.0 - fx), min(fz, 1.0 - fz));
-    let coarse = 1.0 - smoothstep(0.018, 0.045, edge);
+    let coarse = 1.0 - smoothstep(0.04, 0.10, edge);
     let fx2 = fract(i.wpos.x * 2.16);
     let fz2 = fract(i.wpos.z * 2.16);
-    let fine = 1.0 - smoothstep(0.008, 0.022, min(min(fx2, 1.0-fx2), min(fz2, 1.0-fz2)));
-    let well = 0.45 + 0.55 * hash;
-    let crack = step(0.93, fract(sin(dot(cell, vec2<f32>(3.7, 9.1))) * 6123.2));
-    let tick = step(0.97, fract(sin(dot(cell, vec2<f32>(11.1, 4.7))) * 9123.4));
-    var rgb = vec3<f32>(0.07, 0.13, 0.17) * well;
-    rgb += vec3<f32>(0.25, 0.90, 1.0) * coarse * 1.35;
-    rgb += vec3<f32>(0.18, 0.75, 0.82) * fine * 0.7;
-    rgb += vec3<f32>(0.28, 0.10, 0.04) * crack * 0.55;
-    rgb += vec3<f32>(1.0, 0.32, 0.05) * tick * 0.7;
+    let fine = 1.0 - smoothstep(0.012, 0.03, min(min(fx2, 1.0-fx2), min(fz2, 1.0-fz2)));
+    let well = 0.55 + 0.45 * hash;
+    let crack = step(0.88, fract(sin(dot(cell, vec2<f32>(3.7, 9.1))) * 6123.2));
+    let tick = step(0.92, fract(sin(dot(cell, vec2<f32>(11.1, 4.7))) * 9123.4));
+    var rgb = vec3<f32>(0.06, 0.12, 0.16) * well;
+    rgb += vec3<f32>(0.30, 0.95, 1.0) * coarse * 1.7;
+    rgb += vec3<f32>(0.20, 0.80, 0.88) * fine * 0.9;
+    rgb += vec3<f32>(0.35, 0.12, 0.04) * crack * 0.7;
+    rgb += vec3<f32>(1.0, 0.38, 0.05) * tick * 1.05;
     let d = length(i.wpos.xz - u.t.yz);
-    rgb += vec3<f32>(0.15, 0.55, 0.7) * (1.0 - smoothstep(0.2, 2.8, d)) * 0.35;
-    rgb += vec3<f32>(0.04, 0.08, 0.1);
+    rgb += vec3<f32>(0.18, 0.6, 0.75) * (1.0 - smoothstep(0.2, 3.2, d)) * 0.4;
+    rgb += vec3<f32>(0.05, 0.09, 0.12);
     return vec4<f32>(rgb, 1.0);
   }
   let appear = smoothstep(i.born - 0.15, i.born + 0.05, u.t.x);
@@ -242,11 +247,13 @@ struct VSOut { @builtin(position) p: vec4<f32>, @location(0) wpos: vec3<f32>, @l
   if (filament && i.col.r < 0.12 && abs(i.born - floor(u.t.x + 0.001)) > 0.51) { discard; }
   if (glass) {
     let mark = step(0.84, fract(sin(dot(floor(i.wpos * 7.0), vec3<f32>(3.1, 7.4, 1.7))) * 2345.6));
-    rgb = vec3<f32>(0.12, 0.28, 0.36) * (0.03 + 0.08 * diff);
-    rgb += vec3<f32>(0.55, 0.92, 1.0) * fres * 0.9;
-    rgb += vec3<f32>(1.0, 0.32, 0.05) * mark * 0.85;
-    rgb += vec3<f32>(spec) * 0.25;
-    alpha = mix(0.02, 0.22, fres) * appear;
+    let face = smoothstep(0.35, 0.8, ndv);
+    rgb = vec3<f32>(0.10, 0.22, 0.30) * (0.02 + 0.06 * diff);
+    rgb += vec3<f32>(0.55, 0.92, 1.0) * fres * (1.0 - face);
+    rgb += vec3<f32>(1.0, 0.28, 0.04) * mark * 0.7;
+    rgb += vec3<f32>(1.0, 0.25, 0.04) * face * 0.12;
+    rgb += vec3<f32>(spec) * 0.2;
+    alpha = mix(0.16, 0.04, face) * appear;
   } else if (ember) {
     let pulse = 0.7 + 0.3 * sin(u.t.x * 3.2 + hash * 6.0);
     rgb = vec3<f32>(1.0, 0.22, 0.03) * (0.85 + 0.25 * pulse);
@@ -308,7 +315,7 @@ function lookAt(e,c,up){
 function bakeViaWorker(src){
   return new Promise((resolve, reject) => {
     let w;
-    try { w = new Worker(src || "projection-bake-worker.js?i=5p2"); }
+    try { w = new Worker(src || "projection-bake-worker.js?i=5p3"); }
     catch (e) { reject(e); return; }
     const t = setTimeout(() => { try{w.terminate();}catch(_){ } reject(new Error("bake timeout")); }, 8000);
     w.onerror = e => { clearTimeout(t); try{w.terminate();}catch(_){ } reject(e); };
@@ -329,9 +336,9 @@ let bakedScene=null;
 let bakeInFlight=null;
 async function bakeScene(){
   if(bakedScene && bakedScene.P && bakedScene.P.length>6) return bakedScene;
-  try { bakedScene = await bakeViaWorker("projection-bake-worker.js?i=5p2"); }
+  try { bakedScene = await bakeViaWorker("projection-bake-worker.js?i=5p3"); }
   catch (e1) {
-    const src = await fetch("projection-bake-worker.js?i=5p2", {cache:"no-store"}).then(r => {
+    const src = await fetch("projection-bake-worker.js?i=5p3", {cache:"no-store"}).then(r => {
       if (!r.ok) throw new Error("worker fetch "+r.status);
       return r.text();
     });
@@ -594,33 +601,25 @@ async function main(gen){
     }
     const idx=Math.min(10, Math.floor(tVal+0.001));
     const live=D1[idx];
-    let look=posOf(live.i);
-    if(live.k==="PTR"){
-      const A=posOf(live.a), B=posOf(live.b);
-      look=[(A[0]+B[0])/2, 0.7, (A[2]+B[2])/2];
-    }
-    if(!frame.look) frame.look=look.slice();
-    frame.look[0]+= (look[0]-frame.look[0])*Math.min(1,dt*3);
-    frame.look[1]+= (look[1]-frame.look[1])*Math.min(1,dt*3);
-    frame.look[2]+= (look[2]-frame.look[2])*Math.min(1,dt*3);
     phase.textContent="t="+String(idx).padStart(4,"0")+" "+(live.k==="WORD"?live.v:"PTR");
     const asp=canvas.width/Math.max(1,canvas.height);
     const ang=now/9000;
     const eye=[
-      frame.look[0] + Math.sin(ang)*7.2,
-      9.0,
-      frame.look[2] + Math.cos(ang)*7.2
+      GRID[0] + Math.sin(ang)*5.5,
+      11.0,
+      GRID[2] + Math.cos(ang)*5.5
     ];
+    const target=[GRID[0], 0.55, GRID[2]];
     try {
-      const vp=matMul(persp(0.85,asp,0.1,80), lookAt(eye, [frame.look[0], 0.2, frame.look[2]],[0,1,0]));
+      const vp=matMul(persp(0.85,asp,0.1,80), lookAt(eye, target,[0,1,0]));
       const ub=new Float32Array(64);
       ub.set(vp,0); ub[16]=eye[0];ub[17]=eye[1];ub[18]=eye[2];ub[19]=1;
-      ub[20]=tVal; ub[21]=frame.look[0]; ub[22]=frame.look[2]; ub[23]=0;
+      ub[20]=tVal; ub[21]=GRID[0]; ub[22]=GRID[2]; ub[23]=0;
       device.queue.writeBuffer(uni,0,ub);
       const tex=ctx.getCurrentTexture();
       const enc=device.createCommandEncoder();
       const pass=enc.beginRenderPass({
-        colorAttachments:[{view:tex.createView(),clearValue:{r:0.05,g:0.08,b:0.12,a:1},loadOp:"clear",storeOp:"store"}],
+        colorAttachments:[{view:tex.createView(),clearValue:{r:0.04,g:0.07,b:0.10,a:1},loadOp:"clear",storeOp:"store"}],
         depthStencilAttachment:{view:sess.depth.createView(),depthClearValue:1,depthLoadOp:"clear",depthStoreOp:"store"}
       });
       pass.setPipeline(pipeSolid); pass.setBindGroup(0,bgSolid);
@@ -683,7 +682,7 @@ function runAudit(){
   const el=document.getElementById("audit");
   if(!el) return;
   const title=document.querySelector("h1")?.textContent||"";
-  const A=/i5p2/.test(title)?"ok":"fail";
+  const A=/i5p3/.test(title)?"ok":"fail";
   const D=!!(navigator.serviceWorker && navigator.serviceWorker.controller);
   const E=!!(window.deferredPrompt || window.matchMedia("(display-mode: standalone)").matches);
   const F=!!document.getElementById("installbtn");
@@ -694,7 +693,7 @@ function runAudit(){
     const ct=r.headers.get("content-type")||"";
     const B=/manifest|json/i.test(ct)?"ok":("fail "+ct);
     el.textContent=
-      "A title i5p2 "+A+"\n"+
+      "A title i5p3 "+A+"\n"+
       "B manifest MIME "+B+"\n"+
       "C icons 192+512 ok\n"+
       "D SW controlling "+(D?"ok":"fail")+"\n"+
