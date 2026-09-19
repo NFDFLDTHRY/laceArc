@@ -62,7 +62,7 @@
 | Status | **EXECUTED** |
 | When | 2026-09-18 ~21:35 PT |
 | Station | clipboards · agent `wgsl Pass 1 EXECUTE` |
-| Plan | [wgsl-pass-1-plan.md](wgsl-pass-1-plan.md) (was HELD; plan commits after rebase `9322ecf` · `9117981`; claim BASE `44c2237` = origin/main) |
+| Plan | [wgsl-pass-1-plan.md](wgsl-pass-1-plan.md) (was HELD; plan commits after rebase `4f959c5` · `9924713`; claim BASE `22ac006` = origin/main) |
 | Hands skim | shoe → graphics A–D → systems-manifest → staking / law-why → AGENTS Implementation Law → pointer-emission DRAFT/`[GAP]` → clock/README + lace-projection → clock/wasm README (different layer) → hologram/visual-primitives (WGSL live path cite) → webgpu Pass 1 banner / PAGE E WGSL boundary (**cite-only**) → wasm-spec-3 Pass 1 banner (**cite-only**) → this plan → PDF |
 | PDF | **PRESENT** — `refs/local/wgsl-w3c-crd-20260915.pdf`; SHA `73dc9e35047d8715a88ae3b1082b2e887c750da9f5c0f97d78410fc6c2f5eb6d`; **381** pp.; text layer yes; title WebGPU Shading Language · W3C CRD **15 September 2026**; Baker/Derin/Neto; `git check-ignore` OK; **never staged** |
 | Method | `pdftotext -f N -l N -layout`; PDF one-based primary (no clear printed↔PDF offset) |

@@ -292,7 +292,7 @@ WGSL ≠ wasm64.
 |---|---|
 | Status | **EXECUTED** |
 | When | 2026-09-18 ~21:35 PT |
-| Station | clipboards · claim `wgsl Pass 1 EXECUTE` (BASE `44c2237` = origin/main after rebase) |
+| Station | clipboards · claim `wgsl Pass 1 EXECUTE` (BASE `22ac006` = origin/main after rebase; execute `c64a620`) |
 | Products | [`wgsl-clipboard.md`](wgsl-clipboard.md) — PAGE **A–H, X** PDF-sighted; **no** ascii Wave A; PDF symlink `refs/local/wgsl-w3c-crd-20260915.pdf` (gitignored, never staged) |
 | PDF | WGSL CRD **15 September 2026**, **381** pp., SHA `73dc9e35047d8715a88ae3b1082b2e887c750da9f5c0f97d78410fc6c2f5eb6d` (re-verified on execute) |
 | Emission | still `[GAP]` |
