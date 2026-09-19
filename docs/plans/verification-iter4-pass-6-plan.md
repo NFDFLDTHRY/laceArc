@@ -1,6 +1,6 @@
 # Verification iteration 4, pass 6 — the receipt
 
-**Status:** `[PLAN]`. **Station:** maps. **Emission:** `[GAP]`. No `src/`.
+**Status:** **EXECUTED.** [The receipt](verification-iteration-4-receipt.md). **Station:** maps. **Emission:** `[GAP]`. No `src/`.
 **Iteration:** [iteration 4](verification-iteration-4-plan.md). **Prior:** [pass 5 record](verification-iter4-pass-5-findings.md).
 **Board pinned at:** `a927668` — **497 tracked files, 423 markdown, 977 commits.**
 

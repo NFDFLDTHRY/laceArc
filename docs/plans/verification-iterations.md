@@ -43,6 +43,7 @@ Each commit: `pull --ff-only` → `which` → `claim` → edit only owned paths 
 | **1** | board measured at one pin | re-measuring overturned its own headline finding — 1 out-of-range cite became 0 |
 | **2** | audited 2 instruments of 9 | found F7, the tree's worst instrument, and the thesis gained a mode |
 | **3** | counted one form of citation | found that rot lives where the checker cannot look, and that the pin census cannot be taken by regex |
+| **4** | premise false in three of four working passes | **nine self-corrections inside one iteration** — the pass 4 thesis lost to a falsifier written for it in its own plan |
 
 **Every time, the first cut measured too little and the correction changed the conclusion.** Plan for it: pass 1's `Proceed` turn is not a formality.
 
@@ -55,11 +56,16 @@ Each commit: `pull --ff-only` → `which` → `claim` → edit only owned paths 
 | **0** | [the restructure](restructure-plan.md) — legibility | the human. **Nine phases, not six**; the shape settled afterwards |
 | **1** | [truth](verification-iteration-1-receipt.md) — do the documents match the source? | iteration 0 made the tree legible and never asked |
 | **2** | [the instruments](verification-iteration-2-receipt.md) — do the tools measure what they claim? | iteration 1 found the documents sound and the ruler bent, four times |
-| **3** | [what rots](verification-iteration-3-plan.md) — **live, at pass 1** | iteration 2's receipt named E5 the largest unowned thing |
+| **3** | [what rots](verification-iteration-3-receipt.md) — CLOSED | iteration 2's receipt named E5 the largest unowned thing |
+| **4** | [the state of the tree](verification-iteration-4-receipt.md) — CLOSED | the human, when iteration 3's receipt asked whether anything still needed measuring |
 
 ## 6. Where things stand
 
-**Iteration 3 is live and has five passes left.** This document changes nothing about that; it records the form the next five will take, and the form iteration 4 will take when its subject is named by iteration 3's receipt.
+**The campaign is closed.** [Iteration 4's receipt](verification-iteration-4-receipt.md) recommends no iteration 5 **as a measuring campaign**, and the reason is in the table above: four iterations each ended by finding the *instrument* wrong rather than the tree, and the fourth spent nine of its sixteen corrections on itself. **That is a campaign that has run out of things to be wrong about.**
+
+**What this document still governs:** if a sixth-pass cadence is convened again, it takes this form. The form is not retired — the subject is exhausted.
+
+**What is left is not a survey.** Six human rulings, one structural question about the station model — a campaign whose output lands on shelves it does not own has no door — and [a decay baseline](verification-iteration-4-receipt.md) whose whole purpose is that nobody has to convene anything to read it.
 
 ## Steward test
 
