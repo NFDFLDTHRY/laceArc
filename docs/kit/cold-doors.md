@@ -36,6 +36,8 @@ THEN/NOW on the package door is a reading, not a retarget.
 
 No row in this table is STALE.
 
+Activity is not this table. After door #1 CLOSED 6/6, a rescan must also read [`scanner.md`](scanner.md). LIVE is not idle. This line is a route, not cold-doors pass 7, not an Activity column.
+
 ---
 
 ## Already on the package door

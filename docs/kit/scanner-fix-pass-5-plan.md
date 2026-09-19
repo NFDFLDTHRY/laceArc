@@ -1,6 +1,6 @@
 # Scanner fix — Pass 5 PLAN
 
-**Status:** PLAN only. Not run.  
+**Status:** EXECUTED — REFUSE column; pointer on `cold-doors.md`. Ten rows unchanged. LIVE stays LIVE. Emission `[GAP]`.  
 **Station:** kit (HELD Grok-kit).  
 **Object:** patch the ten-door table, or refuse.  
 **Authority:** [`scanner.md`](scanner.md) passes 1–4. [`cold-doors.md`](cold-doors.md) as written (register CLOSED 6/6). Door #1 receipt `fab1864`.  

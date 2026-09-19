@@ -1,7 +1,7 @@
 # Scanner
 
 **Station:** kit.  
-**Executed:** [scanner-fix-pass-1-plan.md](scanner-fix-pass-1-plan.md) · [scanner-fix-pass-2-plan.md](scanner-fix-pass-2-plan.md) · [scanner-fix-pass-3-plan.md](scanner-fix-pass-3-plan.md) · [scanner-fix-pass-4-plan.md](scanner-fix-pass-4-plan.md).  
+**Executed:** [scanner-fix-pass-1-plan.md](scanner-fix-pass-1-plan.md) · [scanner-fix-pass-2-plan.md](scanner-fix-pass-2-plan.md) · [scanner-fix-pass-3-plan.md](scanner-fix-pass-3-plan.md) · [scanner-fix-pass-4-plan.md](scanner-fix-pass-4-plan.md) · [scanner-fix-pass-5-plan.md](scanner-fix-pass-5-plan.md).  
 **Object:** how a quiet-door **rescan** must speak. Not the package door bytes.  
 **Not:** live law. Not Hands. Not cold-doors pass 7. Not door #1 pass 7. Not door #2.  
 **Emission:** `[GAP]`. No `src/`.
@@ -176,3 +176,20 @@ All `New machine?` = no.
 | T2 | Eleven-row register; all New machine?=no |
 | T3 | Scanner↔Core ASCII seam |
 | T4 | Register unpatched; maps file untouched |
+
+## Pass 5 — patch or refuse
+
+| Chosen | Why | What landed |
+|---|---|---|
+| REFUSE the Activity column. ALLOW a pointer. | Stamp column is still true. Activity already lives here. A new column would reopen a closed 6/6 as a seventh pass. A pointer is a route. | one sentence under the ten-door table on `cold-doors.md`; ten rows unchanged; LIVE unchanged; #10 station still `law` (noticed) |
+
+#1 stays LIVE + CLOSED `fab1864`. Work did not flip LIVE.
+
+## Pass 5 deltas
+
+| Ticket | Action |
+|---|---|
+| T1 | Decision: refuse column |
+| T2 | Pointer under the table, not in it |
+| T3 | Ten rows + stamps untouched |
+| T4 | #10 OWNS not rewritten |
