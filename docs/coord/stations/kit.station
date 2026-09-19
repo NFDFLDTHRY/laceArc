@@ -2,6 +2,6 @@ STATUS: HELD
 STATION: kit
 OWNS: docs/kit/** .claude/**
 AGENT: Grok-kit
-BASE: 7d449e1f08d8759c626fa27f98d5e6441277da3b
-SINCE: 2026-09-19T06:41:22Z
-NOTE: Scanner-fix pass 5 EXECUTED. REFUSE column. Pointer only. Next pass 6 receipt. Φ [GAP].
+BASE: 3869a079be3b166a08c29a1f95bfb75b39b3f3a0
+SINCE: 2026-09-19T06:42:03Z
+NOTE: Scanner-fix pass 6 PLAN. Receipt. Pass 1–5 EXECUTED. Φ [GAP].
