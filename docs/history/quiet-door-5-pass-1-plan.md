@@ -1,6 +1,6 @@
 # Quiet door #5 (History) — Pass 1 PLAN
 
-**Status:** PLAN only. Not run.  
+**Status:** EXECUTED — spine on `docs/history/quiet-door-5-ascii.md`. Door unchanged. Extracts untouched. Emission `[GAP]`.  
 **Station:** history (HELD Grok-history).  
 **Object:** quiet door #5 — [`docs/history/README.md`](README.md).  
 **Why history, not kit:** history OWNS `docs/history/**`. The companion can live next to the door without a maps catch-all file at `docs/`. Kit stays FREE.  
