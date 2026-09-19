@@ -1,10 +1,10 @@
 # WGSL CRD 2026-09-15 — Pass 1 PLAN (PDF admission · SHADER-LANG reference)
 
-**Status:** **HELD** · plan-only · 2026-09-18 ~21:29 PT · agent `wgsl Pass 1 plan HELD` · **NOT EXECUTED**  
-**Station:** clipboards (claim note: `wgsl Pass 1 plan HELD`)  
+**Status:** **EXECUTED** — Pass 1 products landed (2026-09-18 ~21:35 PT).  
+**Station:** clipboards (execute claim: `wgsl Pass 1 EXECUTE`)  
 **Base at plan:** `8840f08` (= `origin/main` after maps release / verification-iteration-2-plan refresh) · refresh `git pull --ff-only` before any execute  
 **Emission:** still `[GAP]` (`docs/pointer-emission.md` = DRAFT, not human-accepted)  
-**Push:** **DO NOT PUSH** this plan turn. Clipboard / symlink deferred to execute.  
+**Push:** **DO NOT PUSH** this execute turn (ask before push). Pass 1 products landed.  
 **Kebab strand:** stick to `wgsl-*` for all products of this shelf (`wgsl-pass-1-plan.md`, future `wgsl-clipboard.md`, …).
 
 ---
@@ -286,14 +286,14 @@ WGSL ≠ wasm64.
 
 ---
 
-## Execution receipt (Pass 1) — placeholder until Proceed
+## Execution receipt (Pass 1) — P1-R
 
 | Field | Value |
 |---|---|
-| Status | **HELD / NOT EXECUTED** |
-| When | — |
-| Station | clipboards · claim `wgsl Pass 1 EXECUTE` (future) |
-| Products | — (clipboard + symlink on execute only) |
-| PDF | WGSL CRD **15 September 2026**, **381** pp., SHA `73dc9e35047d8715a88ae3b1082b2e887c750da9f5c0f97d78410fc6c2f5eb6d` (verified at plan) |
+| Status | **EXECUTED** |
+| When | 2026-09-18 ~21:35 PT |
+| Station | clipboards · claim `wgsl Pass 1 EXECUTE` (BASE `44c2237` = origin/main after rebase) |
+| Products | [`wgsl-clipboard.md`](wgsl-clipboard.md) — PAGE **A–H, X** PDF-sighted; **no** ascii Wave A; PDF symlink `refs/local/wgsl-w3c-crd-20260915.pdf` (gitignored, never staged) |
+| PDF | WGSL CRD **15 September 2026**, **381** pp., SHA `73dc9e35047d8715a88ae3b1082b2e887c750da9f5c0f97d78410fc6c2f5eb6d` (re-verified on execute) |
 | Emission | still `[GAP]` |
-| Push | **NOT pushed** |
+| Push | **NOT pushed** (per execute instructions) |
