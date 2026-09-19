@@ -1,6 +1,6 @@
 # Quiet door #1 (package) — Pass 6 PLAN
 
-**Status:** PLAN only. Not run.  
+**Status:** EXECUTED — receipt on `docs/kit/quiet-door-1-receipt.md`. CLOSED 6/6. Package door unchanged. Emission `[GAP]`.  
 **Station:** kit (HELD Grok-kit).  
 **Object:** quiet door #1 — receipt. Close this iteration 6/6.  
 **Authority:** [`quiet-door-1-ascii.md`](quiet-door-1-ascii.md) passes 1–5. Package door bytes as written. Graphics receipt shape as **form**, not as Hands content.  

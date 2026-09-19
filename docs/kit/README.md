@@ -17,8 +17,9 @@ Portable steward controls. Not Hands. Not Graphic D. Nothing here is a source of
 | [quiet-door-1-pass-3-plan.md](quiet-door-1-pass-3-plan.md) | Door #1 pass 3: THEN / NOW / tip grain | EXECUTED |
 | [quiet-door-1-pass-4-plan.md](quiet-door-1-pass-4-plan.md) | Door #1 pass 4: routing mechanism vs live law | EXECUTED |
 | [quiet-door-1-pass-5-plan.md](quiet-door-1-pass-5-plan.md) | Door #1 pass 5: companion seam | EXECUTED |
-| [quiet-door-1-pass-6-plan.md](quiet-door-1-pass-6-plan.md) | Door #1 pass 6 PLAN: receipt. Close 6/6 | **PLAN only. Not run** |
-| [quiet-door-1-ascii.md](quiet-door-1-ascii.md) | Door #1 ASCII companion. Does not replace the package door. Does not fill G2 | pass 1–5 |
+| [quiet-door-1-pass-6-plan.md](quiet-door-1-pass-6-plan.md) | Door #1 pass 6: receipt. Close 6/6 | EXECUTED |
+| [quiet-door-1-receipt.md](quiet-door-1-receipt.md) | Door #1 iteration receipt. CLOSED 6/6 | CLOSED |
+| [quiet-door-1-ascii.md](quiet-door-1-ascii.md) | Door #1 ASCII companion. Does not replace the package door. Does not fill G2 | CLOSED 6/6 |
 | [agent-control.md](agent-control.md) | Portable standing prompt: the staking law verbatim, then the operating controls C01–C12 | DATED transport at `e21cf39`; [live law](../law-why-these-documents.md) wins |
 | [agent-task-template.md](agent-task-template.md) | One-task, adjudication, proof-contract and handoff forms | live |
 | [downstream-audit.md](downstream-audit.md) | Dated audit: evidence, failure paths, source corrections, agent challenge cases F01–F12 | dated snapshot at `4fe984b`, re-checked by the coherence audit |

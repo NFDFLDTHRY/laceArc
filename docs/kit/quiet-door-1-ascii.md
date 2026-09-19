@@ -1,8 +1,9 @@
 # Quiet door #1 — package door ASCII
 
+**Status:** CLOSED 6/6. Receipt: [quiet-door-1-receipt.md](quiet-door-1-receipt.md).  
 **Object:** `docs/kit/READ_ME_FIRST.md`  
 **Station:** kit.  
-**Executed:** [quiet-door-1-pass-1-plan.md](quiet-door-1-pass-1-plan.md) · [quiet-door-1-pass-2-plan.md](quiet-door-1-pass-2-plan.md) · [quiet-door-1-pass-3-plan.md](quiet-door-1-pass-3-plan.md) · [quiet-door-1-pass-4-plan.md](quiet-door-1-pass-4-plan.md) · [quiet-door-1-pass-5-plan.md](quiet-door-1-pass-5-plan.md).  
+**Executed:** [quiet-door-1-pass-1-plan.md](quiet-door-1-pass-1-plan.md) · [quiet-door-1-pass-2-plan.md](quiet-door-1-pass-2-plan.md) · [quiet-door-1-pass-3-plan.md](quiet-door-1-pass-3-plan.md) · [quiet-door-1-pass-4-plan.md](quiet-door-1-pass-4-plan.md) · [quiet-door-1-pass-5-plan.md](quiet-door-1-pass-5-plan.md) · [quiet-door-1-pass-6-plan.md](quiet-door-1-pass-6-plan.md).  
 **Not:** live law. Not Hands. Not Graphic D. Not cold-doors pass 7.  
 **Emission:** `[GAP]`. No `src/`. Package door bytes untouched.
 
