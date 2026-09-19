@@ -22,6 +22,7 @@ Additive `window.LACE_CONTRACTS` scripts loaded by [`../shadow-clock-gearing.htm
 | [`claims/`](claims/README.md) | Per-shaft FREE/HELD state, one file per shaft (status derived; no shared STATUS.md) |
 | [`RESYNC.md`](RESYNC.md) | Full-repo resync signal: FIRED/CLEAR, TIP_AT_FIRE, the live-tip rule |
 | [`resync.sh`](resync.sh) | Executable: `fire` \| `status` \| `clear` — steward word only |
+| [`resync-pass-1-plan.md`](resync-pass-1-plan.md) | Pass 1 plan: stuck-FIRED diagnosis; execute is a later authorized tick |
 
 One shaft per agent. Zero or one drop per shaft per tick. Always `git fetch` + ff-only `main` before claim. Never edit another shaft’s `.claim` or `contracts-*.js`. Renderer stays frozen / designated editor only. Not Core; POINTER emission remains `[GAP]`.
 
