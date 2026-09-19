@@ -1,6 +1,6 @@
 # Systems-manifest ASCII pass 15 plan — Update wave · Iteration 2 · Pass 3 · kit-door / Iter2 delta mechanism mesh
 
-**Status:** **HELD**. Emission `[GAP]`.  
+**Status:** **EXECUTED** (2026-09-19 PT). Emission `[GAP]`.  
 **Series:** Pass **15** (linear executed-passes list) = **Update wave · Iteration 2 · Pass 3**. Subtitle: both names.  
 **Station:** maps (catch-all for `docs/*.md` at court root). Holder: **reference-Mapper**. Keep maps **HELD**.  
 **Authority:** `docs/systems-manifest.md` (Contracts I / II / Layer III; Pieces unchanged).  
@@ -302,12 +302,12 @@ Refuse on execute (and for this Iteration-2 Pass 3):
 
 ### Execute turn (when human says Proceed)
 
-- [ ] T1: Thin G-KD-1 · G-KD-3 cite-cards (role · kit path · OPEN-with-cause · FORBID); no G-III rebuild; no panel paste.  
-- [ ] T2: P15-M mesh — I→III read/cite; nine Shadow retained cites; Piece 13 dual; #1/#3 dashed OPEN adjuncts; train/HCC outside I; G2/Φ `[GAP]`; no quiet-door→I; no paste shelf P3-M; #4 note-only at most.  
-- [ ] T3: Cross-walk G-KD-* ↔ kit ascii (+ receipt pins); optional G-III ↔ Pass 9 pointer (no rewrite / no shelf M-* renumber).  
-- [ ] T4: Executed-passes +15; thin Overview / Pass 13–14 pointers; G2/Φ `[GAP]`; no gear rename.  
-- [ ] T5: Sealed refuse honored (Pass 14 refuse + no invent Core mechanisms; no new clipboard mechanisms; no kit/clipboard edits; no invent Φ; no src/; no fill G2; no quiet-door→I; no invent Core close of OPENS; no full admit #4 without Pass-13-style admit).  
-- [ ] maps still HELD by reference-Mapper (unless human releases).
+- [x] T1: Thin G-KD-1 · G-KD-3 cite-cards (role · kit path · OPEN-with-cause · FORBID); no G-III rebuild; no panel paste.  
+- [x] T2: P15-M mesh — I→III read/cite; nine Shadow retained cites; Piece 13 dual; #1/#3 dashed OPEN adjuncts; train/HCC outside I; G2/Φ `[GAP]`; no quiet-door→I; no paste shelf P3-M; #4 note-only at most.  
+- [x] T3: Cross-walk G-KD-* ↔ kit ascii (+ receipt pins); optional G-III ↔ Pass 9 pointer (no rewrite / no shelf M-* renumber).  
+- [x] T4: Executed-passes +15; thin Overview / Pass 13–14 pointers; G2/Φ `[GAP]`; no gear rename.  
+- [x] T5: Sealed refuse honored (Pass 14 refuse + no invent Core mechanisms; no new clipboard mechanisms; no kit/clipboard edits; no invent Φ; no src/; no fill G2; no quiet-door→I; no invent Core close of OPENS; no full admit #4 without Pass-13-style admit).  
+- [x] maps still HELD by reference-Mapper (unless human releases).
 
 ---
 

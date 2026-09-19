@@ -2,7 +2,7 @@
 
 **Not the manifest.** [`systems-manifest.md`](systems-manifest.md) is the Hands contract map; this is an ASCII reading of it and settles nothing it does not.
 
-**Executed passes:** [1](systems-manifest-ascii-pass-1-plan.md) · [2](systems-manifest-ascii-pass-2-plan.md) · [3](systems-manifest-ascii-pass-3-plan.md) · [4](systems-manifest-ascii-pass-4-plan.md) · [5](systems-manifest-ascii-pass-5-plan.md) · [6](systems-manifest-ascii-pass-6-plan.md) · [7](systems-manifest-ascii-pass-7-plan.md) · [8](systems-manifest-ascii-pass-8-plan.md) · [9](systems-manifest-ascii-pass-9-plan.md) · [10](systems-manifest-ascii-pass-10-plan.md) · [11](systems-manifest-ascii-pass-11-plan.md) · [12](systems-manifest-ascii-pass-12-plan.md) · [13](systems-manifest-ascii-pass-13-plan.md) · [14](systems-manifest-ascii-pass-14-plan.md). A new pass is linked here once it is executed.
+**Executed passes:** [1](systems-manifest-ascii-pass-1-plan.md) · [2](systems-manifest-ascii-pass-2-plan.md) · [3](systems-manifest-ascii-pass-3-plan.md) · [4](systems-manifest-ascii-pass-4-plan.md) · [5](systems-manifest-ascii-pass-5-plan.md) · [6](systems-manifest-ascii-pass-6-plan.md) · [7](systems-manifest-ascii-pass-7-plan.md) · [8](systems-manifest-ascii-pass-8-plan.md) · [9](systems-manifest-ascii-pass-9-plan.md) · [10](systems-manifest-ascii-pass-10-plan.md) · [11](systems-manifest-ascii-pass-11-plan.md) · [12](systems-manifest-ascii-pass-12-plan.md) · [13](systems-manifest-ascii-pass-13-plan.md) · [14](systems-manifest-ascii-pass-14-plan.md) · [15](systems-manifest-ascii-pass-15-plan.md). A new pass is linked here once it is executed.
 
 **Authority:** `docs/systems-manifest.md`. Companion, not a replacement.  
 **Hands:** Graphics A–D. Shoe in hands.  
@@ -10,7 +10,7 @@
 
 Emission remains `[GAP]`.
 
-**Update wave · Iteration 2:** Pass **13** = Iteration-2 Pass **1** · **delta admission**. Pass **14** = Iteration-2 Pass **2** · **leftovers / FM audit / coherence** (mirror Pass 8 / Update-wave Pass 2 shape). Iteration **1** = linear Passes **7–12** (tip **DIAGRAM SOUND WITH OPENS**). Leftovers / D-spine → pass 14. G2 / Φ stay `[GAP]`.
+**Update wave · Iteration 2:** Pass **13** = Iteration-2 Pass **1** · **delta admission**. Pass **14** = Iteration-2 Pass **2** · **leftovers / FM audit / coherence**. Pass **15** = Iteration-2 Pass **3** · **kit-door / Iter2 delta mechanism mesh** (mirror Pass 9 / Update-wave Pass 3 shape). Iteration **1** = linear Passes **7–12** (tip **DIAGRAM SOUND WITH OPENS**). G2 / Φ stay `[GAP]`.
 
 ---
 
@@ -69,6 +69,9 @@ Emission remains `[GAP]`.
                          Iteration-2 leftovers / coherence → pass 14
                          (dual kit-door · #3 OPEN-with-cause · Iter2 D1–D6;
                           outside I; G2/Φ [GAP])
+                         Iteration-2 kit-door / delta mesh → pass 15
+                         (G-KD-1·3 cite-cards · P15-M · #1/#3 dashed OPEN;
+                          Shadow retained cites; #4 note-only; G2/Φ [GAP])
 
 
   G2  POINTER when / arity / adjacency     = [GAP]
@@ -107,6 +110,8 @@ Layer III also hosts a **cite-only** Shadow SOURCE MACHINERY inventory (pass 7):
 **Pass 13 pointer:** Iteration-2 Pass 1 **delta inventory** (quiet-door #3 OPEN/cite · #1 reconfirm · nine shelves) → sections after Pass 12. Outside Contract I; kit-door / Shadow labels only; no quiet-door→I; no tenth shelf; G2 / Φ `[GAP]`.
 
 **Pass 14 pointer:** Iteration-2 Pass 2 **leftovers / FM audit / coherence** (dual kit-door · Piece 13 dual · #3 OPEN-with-cause · Iter2 D1–D6) → sections after Pass 13. Outside Contract I; no quiet-door→I; no invent Core close of OPENS; G2 / Φ `[GAP]`.
+
+**Pass 15 pointer:** Iteration-2 Pass 3 **kit-door / Iter2 delta mechanism mesh** (G-KD-1 · G-KD-3 cite-cards · **P15-M** · cross-walk) → sections after Pass 14. Outside Contract I; Pass 9 G-III retained cite-only; no G-KD-4 full admit; no quiet-door→I; G2 / Φ `[GAP]`.
 
 ---
 
@@ -1206,4 +1211,101 @@ Emission `[GAP]`. No `src/`. Pass 13 delta board retained. Pass 12 **DIAGRAM SOU
 | T3 | Iter2 global D1–D6 KEEP/FORBID/MAP coherence spine (not WebNN clone); Pass 12 SOUND WITH OPENS retained |
 | T4 | Executed-passes +14; thin Pass 13 leftovers note + Spine/Contract/banner pointers; G2 `[GAP]`; no gear rename; no quiet-door→I |
 | T5 | Pass 14 deltas; refuse honored (Pass 13 refuse + no invent Core close OPENS; no invent shelf; no clipboard/kit edits; no invent Φ; no src/; no fill G2; no rewrite Passes 1–13 beyond thin pointers / new Pass 14 section); Passes 7–13 retained |
+
+
+**Pass 15 kit-door mesh note:** G-KD-1 · G-KD-3 thin cite-cards · **P15-M** Iter2 mesh · G-KD ↔ kit ascii cross-walk → sections after this Pass 14 board (pass 15). Pass 13–14 boards **stand** (not rewritten). Pass 9 G-III / P9-M **retained** (cite-only).
+
+## Layer III — Kit-door cite-cards (pass 15 · G-KD-1 · G-KD-3)
+
+Update wave · **Iteration 2 · Pass 3** (linear Pass **15**). Thin Wave A **cite-cards** for kit-door nodes only. Mirror Pass 9 shape; **retargeted to Iteration 2** after Passes 13–14.  
+**No** G-III-1…9 rebuild (Pass 9 stands — cite-only). **No** kit / clipboard panel paste. **No** G-KD-4 full admit. Outside Contract I. Emission `[GAP]`.
+
+| ID | Door · role | Kit path (+ receipt / pin) | OPEN-with-cause | FORBID |
+|---|---|---|---|---|
+| **G-KD-1** | Quiet door **#1** · package door (`READ_ME_FIRST`) | `docs/kit/quiet-door-1-ascii.md` · receipt `docs/kit/quiet-door-1-receipt.md` · pin **`fab1864`** | Kit **CLOSED** 6/6 (cite) · companion **OPEN** adjunct (Passes 8–14) · kit sealed ≠ Core close | ≠ Contract I import · ≠ tenth clipboard shelf · ≠ Φ fill · ≠ Graphic D / Hands law · ≠ merge with #3 |
+| **G-KD-3** | Quiet door **#3** · court (`docs/README.md`) | `docs/kit/quiet-door-3-ascii.md` · receipt `docs/kit/quiet-door-3-receipt.md` · pin **`4d9aa03`** | Kit **CLOSED** 6/6 (cite) · companion **OPEN/cite** (Δ-QD3) · OPEN-with-cause (Pass 14) · kit sealed ≠ Core close | ≠ Contract I import · ≠ tenth clipboard shelf · ≠ Φ fill · ≠ Graphic D / Hands law · ≠ merge with #1 |
+
+Pass 9 G-III-1…9 cite-cards retained (thin pointer only — do not paste / rebuild). Pass 13–14 dual / OPEN-with-cause boards retained.
+
+## P15-M — Iter2 kit-door / delta mechanism mesh (pass 15)
+
+Global companion mesh for Iteration-2 kit-door / delta nodes. **Not** a shelf P3-M paste. **Not** a P9-M rewrite (P9-M stands — retained Shadow cites). I → III = **read / cite only**. Emission / G2 stay `[GAP]`.
+
+```
+  ╔══════════════════════════════════════╗
+  ║  Contract I — Lace Core              ║
+  ║  impulse / pallet / tape / hands     ║
+  ║  (Pass 6; unchanged)                 ║
+  ╚══════════════════════════════════════╝
+            |
+            |  I → III  read / cite only
+            |  (no upward write III → I)
+            v
+  +------------------------------------------------------------------+
+  |  Layer III / outside-I — P15-M (Iter2 kit-door mesh)             |
+  |  FORBID-as-Core-write · NON-binding · G2 / Φ = [GAP]             |
+  |                                                                  |
+  |   [G-III-1…9]  Shadow SOURCE — retained cites → Pass 9 / P9-M    |
+  |     (pointer only; no card rebuild · no shelf P3-M paste)        |
+  |                                                                  |
+  |   (Piece 13)  Hands projection dual                              |
+  |     views of 7, 12, 15                                           |
+  |     ≠ Shadow SOURCE cites (G-III)                                |
+  |     ≠ kit-door OPEN adjuncts (G-KD)                              |
+  |                                                                  |
+  |   . . . (G-KD-1 OPEN adjunct) . . .                              |
+  |     quiet-door #1 · package · docs/kit/quiet-door-1-ascii.md     |
+  |     kit CLOSED pin fab1864 · companion OPEN-with-cause           |
+  |     dashed / OPEN — NOT tenth clipboard shelf · -/-> Contract I  |
+  |                                                                  |
+  |   . . . (G-KD-3 OPEN adjunct) . . .                              |
+  |     quiet-door #3 · court · docs/kit/quiet-door-3-ascii.md       |
+  |     kit CLOSED pin 4d9aa03 · companion OPEN/cite · OPEN-with-cause|
+  |     dashed / OPEN — NOT tenth clipboard shelf · -/-> Contract I  |
+  |                                                                  |
+  |   . . . (#4 emerging leftover — not yet on Iter2 delta board) . .|
+  |     docs/kit/quiet-door-4-ascii.md · no G-KD-4 this pass         |
+  |     -/-> Contract I · ≠ tenth shelf · ≠ Φ                        |
+  +------------------------------------------------------------------+
+
+  train / HCC / Cup / Water     outside I (cite only; not Core mesh teeth)
+  G2 POINTER when/arity/adj     [GAP]
+  emission Φ                    [GAP]
+```
+
+| Node | Kind | Cite | Relation to I | Emission |
+|---|---|---|---|---|
+| G-III-1…9 | Shadow SOURCE (retained cite) | Pass 9 cite-cards / P9-M (pointer) | I → III read/cite | `[GAP]` |
+| Piece 13 | Hands projection dual | systems-manifest Piece 13 | views only; no upward write | `[GAP]` |
+| G-KD-1 · G-KD-3 | Kit-door OPEN / dashed | kit ascii + receipt pins (cite-cards above) | -/-> Contract I · OPEN-with-cause | `[GAP]` |
+| (#4 note) | Emerging leftover | `docs/kit/quiet-door-4-ascii.md` | not yet on Iter2 delta board · no G-KD-4 | `[GAP]` |
+
+**Quiet-door #4:** kit ascii exists (passes 1–2 on origin). **Not** admitted on companion Iter2 delta board (Pass 13). Dashed “not yet on Iter2 delta board” note only — **no** full Δ admit · **no** G-KD-4 card. Prefer later Iter2 Pass 1-style delta.
+
+No invent Φ edges. No quiet-door → Contract I.
+
+## Cross-walk G-KD-* ↔ kit ascii (pass 15 · cite only)
+
+Thin table so readers find the real kit surfaces without copying them. Do **not** invent G-KD-4 as full admit. Do **not** renumber shelf M-*/P-*.
+
+| G-KD-* | Door | Kit ascii path | Receipt / pin (kit CLOSED) | Companion disposition | Object |
+|---|---|---|---|---|---|
+| G-KD-1 | #1 | `docs/kit/quiet-door-1-ascii.md` | `docs/kit/quiet-door-1-receipt.md` · pin **`fab1864`** | OPEN adjunct · OPEN-with-cause | package `READ_ME_FIRST` |
+| G-KD-3 | #3 | `docs/kit/quiet-door-3-ascii.md` | `docs/kit/quiet-door-3-receipt.md` · pin **`4d9aa03`** | OPEN/cite (Δ-QD3) · OPEN-with-cause | court `docs/README.md` |
+
+**G-III pointer (optional):** G-III-1…9 ↔ Pass 9 cite-cards / cross-walk table — retained; no rewrite · no shelf M-* renumber.
+
+## Pass 15 deltas
+
+| Ticket | Action |
+|---|---|
+| T1 | Thin G-KD-1 · G-KD-3 cite-cards (role · kit path · OPEN-with-cause · FORBID); no G-III rebuild; no panel paste; no G-KD-4 |
+| T2 | P15-M mesh: I→III read/cite; nine Shadow retained cites; Piece 13 dual; #1/#3 dashed OPEN; train/HCC outside I; G2/Φ `[GAP]`; #4 note-only |
+| T3 | Cross-walk G-KD-* ↔ kit ascii (+ receipt pins); optional G-III ↔ Pass 9 pointer |
+| T4 | Executed-passes +15; thin Overview / Pass 13–14 pointers; G2 `[GAP]`; no gear rename |
+| T5 | Pass 15 deltas; refuse honored (Pass 14 refuse + no invent Core mechanisms; no new clipboard mechanisms; no kit/clipboard edits; no invent Φ; no src/; no fill G2; no quiet-door→I; no invent Core close of OPENS; no full admit #4; no rebuild G-III-1…9); Passes 7–14 / Pass 9 board retained |
+
+### Sealed refuse (pass 15 · honored · T5)
+
+Pass 14 refuse still stands (includes Pass 13 / Pass 12 refuse), plus: no invent Core mechanisms; no new clipboard mechanisms / ascii-machinery files; no kit / clipboard edits (cite-only); no invent Φ; no fill G2; no `src/`; no quiet-door → Contract I (#1 / #3 / #4); no invent Core close of OPENS; no full admit #4 without Pass-13-style admit (note/dashed leftover only); no rebuild / paste G-III-1…9 or P9-M / shelf P3-M bodies; no invent tenth clipboard shelf; no Device / Queue / dispatch / WGSL / wasm64 / MLGraph as Core ops; no train oil / HCC / Cup / Water inside Contract I; no Core gear rename; no rewrite of Passes 1–14 beyond thin pointers / new Pass 15 section / executed-passes link.
 
