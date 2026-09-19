@@ -41,8 +41,8 @@ Read-only projection. It shows the strand; it never decides what goes on it.
 | [sw.js](sw.js) · [manifest.webmanifest](manifest.webmanifest) | Service worker and web manifest — installable. `file://` will not install |
 | [wasm/](wasm/README.md) | wasm notes; the wasm32 sysroot is still missing |
 
-**Install (PWA):** `https://nfdfldthry.github.io/laceArc/clock/lace-projection.html`
-**Audit a tick:** SHA-pinned raw.githack. Do not Add-to-Home-Screen a githack URL.
+**Install (PWA):** `https://raw.githack.com/NFDFLDTHRY/laceArc/main/docs/clock/lace-projection.html?i=1`
+**Audit a tick:** SHA-pinned raw.githack. Do not Add-to-Home-Screen a SHA URL.
 
 ## Provenance
 

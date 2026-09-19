@@ -51,8 +51,8 @@ aside[hidden]{display:none}
 </div>
 <div class="hud">
   <header class="hit">
-    <h1>LAYER III · i2p3 · PAGES</h1>
-    <p>Install on <code>nfdfldthry.github.io/laceArc/clock/</code>. githack is audit only. Cubes are glyphs. No emitter. [GAP]</p>
+    <h1>LAYER III · i2p3 · GITHACK</h1>
+    <p>Install on githack <code>main</code>, not a SHA. Audit ticks stay SHA-pinned. Cubes are glyphs. No emitter. [GAP]</p>
   </header>
   <div class="modes hit">
     <button type="button" class="on" data-mode="core">Core time</button>
@@ -436,11 +436,6 @@ function runAudit(){
   }).catch(()=>{ el.textContent="B manifest fetch fail"; });
 }
 setTimeout(runAudit, 600);
-(function(){
-  const e=document.getElementById("pwastamp");
-  const pages=/github\.io$/i.test(location.host);
-  if(e && !pages) e.textContent="not pages";
-})();
 let deferredPrompt=null;
 window.addEventListener("beforeinstallprompt", ev=>{
   ev.preventDefault();

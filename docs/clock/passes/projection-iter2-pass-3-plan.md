@@ -1,6 +1,8 @@
 # Projection iteration 2 / pass 3 plan — githack is not the install origin
 
-**Status:** EXECUTED. Pages origin + split icons + manifest link. Emission `[GAP]`.  
+# Projection iteration 2 / pass 3 plan — install origin
+
+**Status:** EXECUTED then **RETRACTED on origin**. Steward: githack `main` is the install path (same as visual pass 5). Pages was an agent inference after Chrome refused WebAPK. Keep: `rel=manifest`, split icon purpose. Emission `[GAP]`.  
 **Station:** hologram  
 **Target:** Chrome Android only.  
 **Evidence:** i2p1 sheet — *Install* grey, “This app cannot be installed.” *Create shortcut* still offered.
