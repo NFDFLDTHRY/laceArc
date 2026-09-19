@@ -1,7 +1,7 @@
-STATUS: HELD
+STATUS: FREE
 STATION: clipboards
 OWNS: docs/clipboards/**
-AGENT: wgsl Pass 3 EXECUTE
-BASE: 8a75850914ef9bf1b2f05077538c713ada51a6de
-SINCE: 2026-09-19T04:47:37Z
+AGENT: -
+BASE: -
+SINCE: -
 NOTE: wgsl Pass 2 EXECUTED (D1–D6 + FM-Wgsl1…9 + D7 · P2-R; plan EXECUTED); Pass 1 EXECUTED (SHADER-LANG A–H,X · P1-R); webgpu Pass 5 EXECUTED (P5-X CONFIRM · Order Proposal HOST/GPU Shadow; webgpu-ascii-machinery.md mirror); Pass 4–1 EXECUTED; webgpu Pass 6 HELD; wasm-spec-3 Pass 6 EXECUTED (wasm64); FREE
