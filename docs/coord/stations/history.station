@@ -1,7 +1,7 @@
-STATUS: HELD
+STATUS: FREE
 STATION: history
 OWNS: docs/history-recovered* docs/history/**
-AGENT: Grok-history
-BASE: f39f51770914b59de290bf868c9e3f8eea0e93a2
-SINCE: 2026-09-19T04:24:08Z
-NOTE: 
+AGENT: -
+BASE: -
+SINCE: -
+NOTE: Pass 6 EXECUTED (HCC/Cup/Water originals vs surfaces; extract f39f517 + sit-note). Pass 7 already bound. Emission still [GAP].
