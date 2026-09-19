@@ -1,6 +1,6 @@
 # Systems-manifest ASCII pass 7 plan — Update wave Pass 1 · Shadow SOURCE MACHINERY as Layer III cites
 
-**Status:** HELD — plan only. Do **not** edit `docs/systems-manifest-ascii.md` until the human says Proceed. Emission `[GAP]`.  
+**Status:** EXECUTED on `docs/systems-manifest-ascii.md` (2026-09-18 PT). Emission `[GAP]`.  
 **Series:** Pass **7** (linear executed-passes list) = **Update wave · Pass 1**. Subtitle: both names.  
 **Station:** maps (catch-all for `docs/*.md` at court root). Holder: **reference-Mapper**. Keep maps **HELD**.  
 **Authority:** `docs/systems-manifest.md` (Contracts I / II / Layer III; Pieces unchanged).  
@@ -153,12 +153,12 @@ Refuse on execute (and forever for this update wave Pass 1):
 
 ## Success criteria
 
-- [ ] New Layer III / outside-Core shelf inventory cites all nine paths above.  
-- [ ] Hard fence present: FORBID bleed + false-friend table pointing at FM-* families (no full table copy).  
-- [ ] Contract I / Passes 1–6 mechanism & clock art unchanged except thin pointers.  
-- [ ] Executed-passes header links Pass 7 once executed.  
-- [ ] Emission Φ and G2 remain `[GAP]`.  
-- [ ] No clipboard ascii edits; no `src/`; maps still HELD by reference-Mapper (unless human releases).
+- [x] New Layer III / outside-Core shelf inventory cites all nine paths above.  
+- [x] Hard fence present: FORBID bleed + false-friend table pointing at FM-* families (no full table copy).  
+- [x] Contract I / Passes 1–6 mechanism & clock art unchanged except thin pointers.  
+- [x] Executed-passes header links Pass 7 once executed.  
+- [x] Emission Φ and G2 remain `[GAP]`.  
+- [x] No clipboard ascii edits; no `src/`; maps still HELD by reference-Mapper (unless human releases).
 
 ---
 

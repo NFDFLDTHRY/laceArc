@@ -2,7 +2,7 @@
 
 **Not the manifest.** [`systems-manifest.md`](systems-manifest.md) is the Hands contract map; this is an ASCII reading of it and settles nothing it does not.
 
-**Executed passes:** [1](systems-manifest-ascii-pass-1-plan.md) · [2](systems-manifest-ascii-pass-2-plan.md) · [3](systems-manifest-ascii-pass-3-plan.md) · [4](systems-manifest-ascii-pass-4-plan.md) · [5](systems-manifest-ascii-pass-5-plan.md) · [6](systems-manifest-ascii-pass-6-plan.md). A new pass is linked here once it is executed.
+**Executed passes:** [1](systems-manifest-ascii-pass-1-plan.md) · [2](systems-manifest-ascii-pass-2-plan.md) · [3](systems-manifest-ascii-pass-3-plan.md) · [4](systems-manifest-ascii-pass-4-plan.md) · [5](systems-manifest-ascii-pass-5-plan.md) · [6](systems-manifest-ascii-pass-6-plan.md) · [7](systems-manifest-ascii-pass-7-plan.md). A new pass is linked here once it is executed.
 
 **Authority:** `docs/systems-manifest.md`. Companion, not a replacement.  
 **Hands:** Graphics A–D. Shoe in hands.  
@@ -54,6 +54,9 @@ Emission remains `[GAP]`.
                          Graphics A–C
                          no write-back
                          2D/3D/N-D are views, not stores
+                         Shadow SOURCE MACHINERY cites → pass 7 board
+                         (host-embed · shader · compile-target · book;
+                          I→III read/cite only; never Core gear / Φ)
 
 
   G2  POINTER when / arity / adjacency     = [GAP]
@@ -78,6 +81,8 @@ Emission remains `[GAP]`.
 | — | Piece 12 | Contract IV |
 
 No query / delete / transaction / multi-Lace interface (manifest: none given).
+
+Layer III also hosts a **cite-only** Shadow SOURCE MACHINERY inventory (pass 7): nine clipboard paths outside Contract I. Not Core gear. Not a second strand. Does not fill G2 / Φ.
 
 ---
 
@@ -442,7 +447,63 @@ Holder train times the steward. Core clock counts appends. They mesh only as tra
 | T3 | Slip table |
 | T4 | Two clocks, one workpiece |
 
+## Layer III — Shadow SOURCE MACHINERY (pass 7)
 
+Update wave · Pass 1. Cite-only inventory of Shadow shelves. **Outside** Contract I.  
+Labels: host-embed · shader surface · compile-target · book Shadow.  
+Never Core gear · never second strand · never Φ rule.  
+I → III arrows are **read / cite** only (no upward write).  
+HCC / Cup / Water / train stay cited elsewhere outside I — not oiled into this board.  
+Panel bodies live on the clipboard paths; this file does not paste them.
 
+```
+  Contract I  (unchanged rectangle above)
+        |
+        |  read / cite only
+        v
+  +------------------------------------------------------------------+
+  |  Layer III / outside-Core — Shadow SOURCE MACHINERY cites        |
+  |  FORBID-as-Core-write · NON-binding · emission still [GAP]       |
+  +------------------------------------------------------------------+
+```
 
+### Shadow shelf inventory (cite-only)
 
+| Shelf | Path | Role | FORBID bleed |
+|---|---|---|---|
+| HOST/GPU | `docs/clipboards/webgpu-ascii-machinery.md` | WebGPU host/GPU API Shadow projection surface | GPUDevice/Queue/Buffer/Texture ≠ strand/store; submit/draw/dispatch ≠ Φ |
+| SHADER-LANG | `docs/clipboards/wgsl-ascii-machinery.md` | WGSL shader-lang Shadow draw-path surface | WGSL ≠ WORD; module/entry ≠ strand/Φ; address space ≠ Lace store |
+| HOST-NN | `docs/clipboards/webnn-ascii-machinery.md` | WebNN host-NN embed / projection surface | MLGraph/builder ≠ strand; MLTensor ≠ store; dispatch ≠ Φ |
+| wasm64 compile-target | `docs/clipboards/wasm-spec-3-ascii-machinery.md` | Wasm Spec 3.0 compile-target ISA Shadow | linear mem/table/stack ≠ L; br/return ≠ Φ; trap ≠ cut |
+| book · AgentScope | `docs/clipboards/agentscope-ascii-machinery.md` | Multi-agent / ReAG Shadow anti-model | ReAG/ISR ≠ Graphic D rows; LLM verdict ≠ Hands |
+| book · Petersen–Zech | `docs/clipboards/petersen-zech-ascii-machinery.md` | Deep-learning math Shadow reading | neuron/width/depth ≠ WORD/STAR; NTK ↛ store |
+| book · Xiao–Zhu | `docs/clipboards/xiao-zhu-foundations-ascii-machinery.md` | LLM pipeline Shadow anti-model of ingest | embed/KV ≠ store; next-token ≠ Core continue; tokenizer `[GAP]` |
+| book · Kauffman 4ed | `docs/clipboards/kauffman-4ed-ascii-machinery.md` | Knots/physics Shadow reading | diagram ≠ rope; grab ≠ emission; YBE ↛ array law |
+| book · Rowlands | `docs/clipboards/rowlands-zero-to-infinity-ascii-machinery.md` | Foundations-of-physics Shadow reading | rewrite ≠ mutate-WORD; no extra rooms; algebra ≠ Core ops |
+
+### False-friend fence (point at FM-* · full tables stay on clipboards)
+
+| Looks like Core | Is not | Point (cite shelf FM family) |
+|---|---|---|
+| MLGraph / MLContext / builder | strand / Graphic D | FM-Webnn* (`webnn-ascii-machinery.md`) |
+| GPUBuffer / GPUTexture / bind-group | L / second store | FM-Wgpu1 · FM-Wgpu4 (`webgpu-ascii-machinery.md`) |
+| GPUDevice / Adapter / Queue | Core door / cord | FM-Wgpu2 |
+| WGSL / shader module / entry | WORD / Core operator / Φ | FM-Wgpu5 · FM-Wgsl* (`wgsl-ascii-machinery.md`) |
+| encode / draw / dispatch / `queue.submit` | emission / Φ | FM-Wgpu3 · FM-Webnn* (dispatch) |
+| wasm linear mem / table / stack | Lace store / strand | FM-W1…W3 (`wasm-spec-3-ascii-machinery.md`) |
+| `br` / `return` / call / trap | POINTER when / cut / Φ | FM-W4 · FM-W8 |
+| host import / canvas accept | fill emission `[GAP]` | FM-W7 · FM-Wgpu6 |
+| book neuron / embed / ReAG / knot state-sum | WORD/STAR/store/history | FM-A* + book stamp legends (agentscope · petersen · xiao-zhu · kauffman · rowlands) |
+
+G2 (POINTER when / arity / adjacency) and emission Φ remain `[GAP]`. This board does not answer them.  
+Shoe still: arrive → append → participate → continue.
+
+## Pass 7 deltas
+
+| Ticket | Action |
+|---|---|
+| T1 | Shadow shelf inventory board (9 cite rows) |
+| T2 | Layer III / outside-Core placement; I→III read/cite only |
+| T3 | False-friend fence pointing at FM-* (no full table copy) |
+| T4 | Executed-passes link + thin Overview/Layer III pointer; G2 `[GAP]` |
+| T5 | Sealed refuse honored (no src/; no Core rename; no clipboard edits) |
