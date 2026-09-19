@@ -1,7 +1,7 @@
-STATUS: HELD
+STATUS: FREE
 STATION: coord
 OWNS: docs/coord/**
-AGENT: Grok-coord
-BASE: b79c59ca0ae1595e285a534af409d342b2a26071
-SINCE: 2026-09-19T05:00:24Z
+AGENT: -
+BASE: -
+SINCE: -
 NOTE: umbrella scripts + station files; claim before editing coord.sh
