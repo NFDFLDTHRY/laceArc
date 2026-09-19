@@ -4,6 +4,8 @@
 
 | File | Job |
 |---|---|
+| [../math-execution-model-pass-6-arrival.md](../math-execution-model-pass-6-arrival.md) | **EXECUTED** Pass 6 Contract II **Arrival** reading (thin feed; zero own store); Φ `[GAP]`; G1 open; not an emitter |
+| [math-execution-model-pass-6-plan.md](math-execution-model-pass-6-plan.md) | `[PLAN]` Pass 6 (executed): Arrival reading → [`../math-execution-model-pass-6-arrival.md`](../math-execution-model-pass-6-arrival.md); Φ `[GAP]`; G1 open |
 | [../math-execution-model-pass-5-projections.md](../math-execution-model-pass-5-projections.md) | **EXECUTED** Pass 5 Graphics A–C **projection readings** under Pass 2 π / Contract III; Φ `[GAP]`; not an emitter |
 | [math-execution-model-pass-5-plan.md](math-execution-model-pass-5-plan.md) | `[PLAN]` Pass 5 (executed): A–C projections → [`../math-execution-model-pass-5-projections.md`](../math-execution-model-pass-5-projections.md); Φ `[GAP]` |
 | [../math-execution-model-pass-4-adversarial.md](../math-execution-model-pass-4-adversarial.md) | **EXECUTED** Pass 4 **adversarial non-examples** under Pass 2/3; Φ `[GAP]`; not an emitter |
