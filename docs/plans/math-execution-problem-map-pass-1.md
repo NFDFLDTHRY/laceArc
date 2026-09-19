@@ -2,7 +2,7 @@
 
 **Status:** EXECUTED (problem mapping). Not a formal model. Not an emitter.
 **Station:** maps (`docs/plans/**`).
-**Pinned main:** `898047252f9b60ba32e355ccaf329919469aa2f2` (2026-09-19).
+**Pinned main:** `30f6f870e2db94dbe4a418f61921f1a7b85f76be` (2026-09-19).
 **Emission / Φ:** remains `[GAP]`. No `src/`.
 
 **One question:** What must be true, cited, sealed, or deferred before any mathematical execution model of Lace may begin — and which beginning (partial vs complete) does that evidence allow?
@@ -85,7 +85,7 @@ Each row is SOURCE or LAW. None answers when a POINTER is written.
 
 | Prerequisite | Kind | Needed for |
 |---|---|---|
-| Pinned SHA for Graphics + systems-manifest + systems-manifest-ascii + pointer-emission | soft | Reproducible mapping (this file pins `898047252f9b60ba32e355ccaf329919469aa2f2`) |
+| Pinned SHA for Graphics + systems-manifest + systems-manifest-ascii + pointer-emission | soft | Reproducible mapping (this file pins `30f6f870e2db94dbe4a418f61921f1a7b85f76be`) |
 | Diff Hands Core §2 (`docs/clock/system-mathematical-model.md`) vs `docs/atomic-primitives-map.md` P0–P4 | soft | Avoid forking competing atoms in Pass 2 |
 | maps station claim before editing `docs/plans/**` | soft | Coord law |
 | Header discipline: partial vs complete executor | soft | Stop later agents treating `[GAP]` as a TODO to invent |
@@ -162,7 +162,7 @@ Steward line: *Shoe in hands. Partial formalization of what the strand already i
 |---|---|
 | Pass | Math-execution problem map Pass 1 |
 | Kind | Problem mapping (EXECUTED) |
-| Pinned SHA | `898047252f9b60ba32e355ccaf329919469aa2f2` |
+| Pinned SHA | `30f6f870e2db94dbe4a418f61921f1a7b85f76be` |
 | Φ | `[GAP]` |
 | Verdict | READY-PARTIAL ∧ BLOCKED-COMPLETE |
 | Supersedes | Chat transition-ticket Pass 1 draft |
