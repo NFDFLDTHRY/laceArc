@@ -198,10 +198,10 @@
 
 ---
 
-## Explicitly not this pass (Pass 1 + Pass 2 stand)
+## Explicitly not this pass (Pass 1–2 stand; Pass 3 mechanisms done)
 
-- No `webgpu-ascii-machinery.md` / Wave A panels (Pass 4 shape later unless human asks).
-- No `webgpu-mechanisms.md` (deferred).
+- No `webgpu-ascii-machinery.md` / Wave A panels (**Pass 4**; future **P-G\*** titles reserved by M-G\*).
+- `webgpu-mechanisms.md` — **Pass 3 EXECUTED** (M-G1…M-G9); see P3-M / P3-R below.
 - No five-stakes rewrite (default **skip**).
 - wasm-spec-3 products **untouched** (cite-only).
 - No `src/`. Emission still `[GAP]`.
@@ -299,7 +299,7 @@ PDF is **PRESENT** (do not narrate absent). Pass 1 receipt: `refs/local/webgpu-c
 - Swap WebGPU for wasm64 / wasm-spec-3 compile target
 - Treat validation / device-lost as Lace cut / Φ gate / append rule
 - Treat `mapAsync` / `getMappedRange` / CPU readback as Lace append authority
-- Create `webgpu-ascii-machinery.md` / Wave A panels · create `webgpu-mechanisms.md`
+- Create `webgpu-ascii-machinery.md` / Wave A panels (still sealed) · ~~create `webgpu-mechanisms.md`~~ (**Pass 3 did**; ascii still absent)
 - Amend wasm-spec-3 products · law / graphics / systems-manifest / five-stakes / clock / hologram
 - Add `src/` / Cargo.toml before emission acceptance
 - Git-add the PDF · pretend OCR / claim PDF absent when present
@@ -320,3 +320,53 @@ PDF is **PRESENT** (do not narrate absent). Pass 1 receipt: `refs/local/webgpu-c
 **Lace refusal:** this sketches **host/GPU command encode → queue schedule**. It does **not** emit POINTER, does **not** append to Graphic D, does **not** open Core doors / `src/`, and does **not** fill emission `[GAP]`. `queue.submit` is not Φ.
 
 ---
+
+---
+
+## Pass 3 — Mechanism coherence (P3-M) + receipt (P3-R)
+
+**Status:** **EXECUTED** · agent `webgpu Pass 3 EXECUTE` · ~2026-09-18 21:00 PT · claim BASE `a6c36e7` (origin/main after rebase of plan commits) · tip at execute ahead of origin by plan commits + this commit.
+
+### P3-M — Mechanism coherence mesh
+
+| Mechanism (M-G*) | Future panel (P-G*) | Clipboard PAGE | FM-Wgpu* | Projection / hologram (cite) | wasm64 (cite-only) | Emission | KEEP/FORBID tooth | Same story? |
+|---|---|---|---|---|---|---|---|---|
+| **M-G1** Adapter request | P-G1 | C | **FM-Wgpu2** | Shadow host acquire only (`clock/README.md` · `lace-projection.html`) | ≠ compile target (**FM-Wgpu7**) | `[GAP]` | KEEP-read-as-host-API · **FORBID-as-Lace-strand** · FORBID-as-Core-write | YES |
+| **M-G2** Device / Queue | P-G2 | C | **FM-Wgpu2** | Device ≠ Graphic D | ≠ wasm64 ISA | `[GAP]` | KEEP-read-as-host-API · **FORBID-as-Lace-strand** · FORBID-as-Core-write | YES |
+| **M-G3** Buffer alloc / map | P-G3 | D | **FM-Wgpu1** · **FM-Wgpu9** | Buffer/map ≠ strand/append | ≠ linear mem strand | `[GAP]` | KEEP-read · **FORBID-as-Lace-store** · **FORBID-as-emission-rule** (map) · SILENT | YES |
+| **M-G4** Texture / view | P-G4 | D | **FM-Wgpu4** | Texture ≠ store; hologram may *draw* | cite-only | `[GAP]` | KEEP-read · **FORBID-as-Lace-store** | YES |
+| **M-G5** Bind group layout | P-G5 | D | **FM-Wgpu4** | Bind ≠ second Lace store | cite-only | `[GAP]` | KEEP-read · **FORBID-as-Lace-store** | YES |
+| **M-G6** Pipeline + WGSL | P-G6 | E | **FM-Wgpu5** | WGSL live path cite (`hologram/visual-primitives.md`); WGSL ≠ WORD | cite-only | `[GAP]` | KEEP-read · **FORBID-as-Core-write** | YES |
+| **M-G7** Command encoder / passes | P-G7 | F | **FM-Wgpu3** | Encoder ≠ Φ; **D7** cross-link | cite-only | `[GAP]` | KEEP-read · **FORBID-as-emission-rule** · FORBID-as-Core · SILENT | YES |
+| **M-G8** Submit / present | P-G8 | F+G | **FM-Wgpu3** · **FM-Wgpu6** | submit ≠ emission; canvas **PROPOSAL-only** | cite-only | `[GAP]` (FORBID fill) | KEEP-read submit · **FORBID-as-emission-rule** · canvas PROPOSAL-only · FORBID fill-GAP | YES |
+| **M-G9** Error / device-lost | P-G9 | H | **FM-Wgpu8** | device-lost ≠ Lace cut | cite-only | `[GAP]` | KEEP-read · **SILENT-for-Lace-append** · FORBID-as-emission-rule | YES |
+
+**CONFLICT:** none. PAGE A/B/X remain mesh context (not Wave A cards). Pass 1–2 morals / FM-Wgpu\* / D7 **stand** (not rewritten).  
+**Projection/hologram files:** cite-only — **not amended**. **wasm-spec-3 products:** cite-only — **not amended**.  
+**Emission:** `[GAP]` on every row. **Ascii:** deferred Pass 4; future P-G\* titles reserved by M-G\*.
+
+### P3-5S — Five-stakes
+
+**skip** (default) — no unexpected five-stakes drift; this shelf is not an anti-model PAGE.
+
+### P3-R — Pass 3 receipt
+
+| Field | Value |
+|---|---|
+| Status | **EXECUTED** |
+| When | 2026-09-18 ~21:00 PT |
+| Station | clipboards · agent `webgpu Pass 3 EXECUTE` |
+| Plan | [webgpu-pass-3-plan.md](webgpu-pass-3-plan.md) (was HELD; plan after rebase `6a996f8` · release `0c68cdd` · FREE note `877df9a`) |
+| Claim BASE | `a6c36e7` (= `origin/main` after maps release; local plan commits rebased onto it) |
+| Hands skim | shoe → graphics A–D → systems-manifest → staking / law-why → AGENTS Implementation Law → pointer-emission DRAFT/`[GAP]` → clock/README + lace-projection (WebGPU 3D) → clock/wasm README (different layer) → hologram/README + visual-primitives (WGSL cite) → wasm-spec-3 Pass 1–6 banner (**cite-only**; untouched) → Pass 1–2 clipboard (A–H/X + D1–D6 + FM-Wgpu\* + D7) → this plan → house mechanism schema (wasm-spec-3 / Xiao–Zhu) → PDF |
+| PDF | **PRESENT** — `refs/local/webgpu-crd-20260915.pdf` → `6bc31a9e…64afe1`; **321** pp.; text layer; PDF one-based; SHA match; gitignored; **never staged** |
+| Artifact A | [`webgpu-mechanisms.md`](webgpu-mechanisms.md) · **M-G1…M-G9** full schema |
+| Artifact B | P3-M mesh (9 rows) + this receipt |
+| Hard stamps | M-G3 FORBID-as-Lace-store + map FORBID-as-emission-rule · M-G1/M-G2 FORBID-as-Lace-strand · M-G4/M-G5 FORBID-as-Lace-store · M-G6 FORBID-as-Core-write · M-G7/M-G8 FORBID-as-emission-rule · M-G8 canvas PROPOSAL-only · M-G9 SILENT · M-G7 **D7** cross-link |
+| T6 five-stakes | **skip** |
+| T7 ascii | **skip** (Pass 4; future P-G\* reserved) |
+| Amended | Core graphics · systems-manifest(-ascii) · five-stakes · src/ · wasm-spec-3 · clock · hologram · law · pointer-emission | **No** |
+| Pass 1–2 / FM-Wgpu\* / D7 | **stand** (D6 mechanisms-deferred line annotated; no PAGE rewrite) |
+| Emission | still `[GAP]` — no POINTER when / arity / adjacency; no invented Φ |
+| PDF staged | **No** |
+| Push | **No** (ask before push) |

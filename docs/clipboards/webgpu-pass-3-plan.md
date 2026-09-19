@@ -1,6 +1,6 @@
 # WebGPU CRD 2026-09-15 — Pass 3 PLAN (HOST/GPU system mechanisms / Wave A M-G* + P3-M mesh)
 
-**Status:** **HELD / NOT EXECUTED** — plan only this turn.  
+**Status:** **EXECUTED** — Wave A M-G1…M-G9 + P3-M/P3-R committed this turn.  
 **Station:** clipboards (HELD `webgpu Pass 3 PLAN (HOST/GPU mechanisms)` · BASE `0e95a18` (refreshed; tip was `0334f33` at first claim))  
 **Base at plan:** `0e95a18` (= `origin/main` after refresh; first claim `0334f33` = Pass 2 tip). Refresh `git pull --ff-only` before any execute.  
 **Spec:** *WebGPU* — **W3C Candidate Recommendation Draft, 15 September 2026** · editors Kai Ninomiya, Brandon Jones, Jim Blandy (et al.)  
@@ -57,7 +57,7 @@ pull/ff → claim clipboards → Hands + host/GPU mesh skim
 |  KEEP-read: host/GPU mechanics for Shadow projection / hologram.     |
 |  No src/ until pointer-emission accepted.  One strand.               |
 |  No ascii Wave A this pass (Pass 4).  Mechanisms file = execute only.|
-|  Status this commit: HELD / NOT EXECUTED — plan only.                |
+|  Status this commit: EXECUTED — Wave A cards + P3-M.                 |
 +======================================================================+
 ```
 
@@ -375,7 +375,7 @@ WebGPU is not the wasm64 compile target.
 
 | Field | Value |
 |---|---|
-| Status | **HELD / NOT EXECUTED** |
+| Status | **HELD / NOT EXECUTED** (plan turn; superseded by execute below) |
 | When | 2026-09-18 ~20:53 PT (plan) |
 | Agent | `webgpu Pass 3 PLAN (HOST/GPU mechanisms)` |
 | Base | `0e95a18` (refresh after kit door; first claim was `0334f33`) |
@@ -385,14 +385,14 @@ WebGPU is not the wasm64 compile target.
 | PDF staged | No |
 | Push | **No** |
 | Emission | `[GAP]` |
-| Execute | **not** performed |
+| Execute | **performed** — see Execution receipt |
 
 ### Execution receipt (fill on execute)
 
 | Field | Value |
 |---|---|
-| Status | _(fill)_ |
-| When | _(fill)_ |
+| Status | **EXECUTED** |
+| When | 2026-09-18 ~21:00 PT |
 | Agent | `webgpu Pass 3 EXECUTE` |
 | Artifact A | `webgpu-mechanisms.md` · M-G1…M-G9 |
 | Artifact B | P3-M / P3-R on `webgpu-clipboard.md` |
@@ -401,4 +401,4 @@ WebGPU is not the wasm64 compile target.
 | Amended map/law/graphics/src/wasm-spec-3/clock/hologram | **No** |
 | PDF staged | **No** |
 | Emission | `[GAP]` |
-| Claim BASE | _(fill)_ |
+| Claim BASE | `a6c36e7` (origin/main; plan commits rebased) |
