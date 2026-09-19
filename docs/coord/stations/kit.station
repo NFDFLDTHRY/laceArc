@@ -1,7 +1,7 @@
-STATUS: HELD
+STATUS: FREE
 STATION: kit
 OWNS: docs/kit/** .claude/**
-AGENT: Grok-kit
-BASE: 4f1644776ac5c6c6aea93d6b4fed5b10561d4009
-SINCE: 2026-09-19T07:01:15Z
-NOTE: Court door pass 6 EXECUTE pending. Receipt. Φ [GAP].
+AGENT: -
+BASE: -
+SINCE: -
+NOTE: Court door CLOSED 6/6. Kit FREE. Not door #4. Φ [GAP].
