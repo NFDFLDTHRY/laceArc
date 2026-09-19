@@ -2,7 +2,7 @@
 
 **Object:** `docs/hologram/README.md`  
 **Station:** hologram.  
-**Executed:** [quiet-door-7-pass-1-plan.md](quiet-door-7-pass-1-plan.md) · [quiet-door-7-pass-2-plan.md](quiet-door-7-pass-2-plan.md) · [quiet-door-7-pass-3-plan.md](quiet-door-7-pass-3-plan.md).  
+**Executed:** [quiet-door-7-pass-1-plan.md](quiet-door-7-pass-1-plan.md) · [quiet-door-7-pass-2-plan.md](quiet-door-7-pass-2-plan.md) · [quiet-door-7-pass-3-plan.md](quiet-door-7-pass-3-plan.md) · [quiet-door-7-pass-4-plan.md](quiet-door-7-pass-4-plan.md).  
 **Not:** Core. Not Graphic E. Not Graphics A–D. Not Hands. Not door #6 pass 7. Not projection iter 5.  
 **Emission:** `[GAP]`. No `src/`. Hologram door bytes untouched. HTML untouched. Renderer unclaimed. Door #6 CLOSED.
 
@@ -135,4 +135,73 @@ Touches diagnose. Hands stores. Renderer owns HTML. Primitives catalog shapes. T
 | T1 | Eight-row grain |
 | T2 | Touches ≠ Hands ≠ renderer ≠ primitives |
 | T3 | Lookrefs still not Graphic E |
+| T4 | Door + HTML + Hands + Clock untouched |
+
+## Pass 4 — walk
+
+This walk diagnoses the holder or suggests a projection and does not append. Hands keeps A13. Lookrefs stay lookrefs.
+
+### Operator (from the hologram door)
+
+```
+ ╔══════════════════════════════════════════════════════════════╗
+ ║  These images are not Graphics A–D.                          ║
+ ║  They do not store Lace.                                     ║
+ ║  They diagnose the holder or suggest a projection.           ║
+ ╚══════════════════════════════════════════════════════════════╝
+
+  reader arrives at docs/hologram/README.md
+    if a touch is asked         → diagnose / suggest; do not store
+    if Hands is asked           → send to the four graphics
+    if frozen HTML is asked     → renderer; do not claim it
+    if ASTRA is asked           → chrome only; not runtime
+    never: lookref ⇒ Graphic E
+    never: CTC ⇒ Core
+    never: this shelf ⇒ Hands
+    never: hologram ⇒ renderer
+    never: door #6 ⇒ reopened
+
+  not "emit POINTER."
+  not A13 arrive / through-star / continue.
+```
+
+### Application register
+
+| # | Role | What arrives | What is walked | What continues | New machine? |
+|---|---|---|---|---|---|
+| Hg1 | door | a reader at `docs/hologram/` | index of touches | Hands still the store | no |
+| Hg2 | do not store | a bid to store | keep this shelf off the four graphics | — | no |
+| Hg3 | touches | a true claim that fails, or a 3D view | diagnose / suggest | — | no |
+| Hg4 | primitives | a camera word | lawful vs forbidden shapes | CTC stays anti-model | no |
+| Hg5 | lookrefs | a canvas look | dark lattice language | not Graphic E | no |
+| Hg6 | ASTRA | a page-chrome bid | instruments only | not runtime | no |
+| Hg7 | viewer | a Layer III canvas | named here; owned by renderer | renderer stays unclaimed | no |
+| Hg8 | CTC / φ ≠ Φ | a closed loop, or a diagram φ | start→halt | G2 still `[GAP]` | no |
+
+All `New machine?` = no.
+
+### Hologram versus Hands versus renderer
+
+```
+ quiet-door-7-ascii.md       hologram door           Hands
+ --------------------       --------------          -----
+ Layer III reading          the index               the store
+ names lookrefs             names lookrefs          four graphics
+
+ wrapper-as-Core            [X]
+ Hands verbs pasted here    [X]
+ lookrefs as Graphic E      [X]
+ viewer writes L            [X]
+ renderer claimed           [X]
+ door #6 reopened           [X]
+ G2                         [GAP]
+```
+
+## Pass 4 deltas
+
+| Ticket | Action |
+|---|---|
+| T1 | One walk box quoted from the hologram door |
+| T2 | Eight-row register; all New machine?=no |
+| T3 | Hologram ↔ Hands ↔ renderer |
 | T4 | Door + HTML + Hands + Clock untouched |
