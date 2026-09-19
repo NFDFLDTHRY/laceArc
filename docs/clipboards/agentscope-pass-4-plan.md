@@ -1,6 +1,7 @@
 # AgentScope pass 4 — ASCII source-machinery of Wave A system mechanisms
 
-**Status:** PLANNED — not executed. Emission `[GAP]`.  
+**Status:** EXECUTED. Emission `[GAP]`.
+**Execution receipt:** 2026-09-18 ~17:45 PT · agent `reference-Mapper` · artifact `docs/clipboards/agentscope-ascii-machinery.md` (SOURCE MACHINERY overview + P-A1…P-A9) · M-A* algorithms untouched · PDF never staged · Φ still `[GAP]`.  
 **Station:** clipboards (HELD `reference-Mapper`)  
 **Base at plan:** refresh to current `origin/main` before execute  
 **Paper:** Jiayi Bi et al., *Diagnosing with Insights: Structured Analysis of Agent Failures via Behavioral Abstractions*  
@@ -250,3 +251,20 @@ ReAG boxes stay off Graphic D.
 Neural check boxes are not Core proofs.  
 Decisive-error diamonds are not POINTER when-rules.  
 Φ stays `[GAP]`.
+
+---
+
+## Execution receipt
+
+| Field | Value |
+|---|---|
+| Status | **EXECUTED** |
+| When | 2026-09-18 ~17:45 PT |
+| Agent | `reference-Mapper` |
+| Artifact | `docs/clipboards/agentscope-ascii-machinery.md` |
+| Contents | Opening contract · stamp legend · SOURCE MACHINERY overview · P-A1…P-A9 · cross-walk · Waves B–D seeds |
+| Mechanisms | Algorithms **unchanged** (optional status one-liner only) |
+| Clipboard | Pass 4 receipt + P3-M one-liner pointer |
+| PDF | Never staged; SHA matched Pass 1–3 |
+| Emission | `[GAP]` |
+| Push | **not** performed |

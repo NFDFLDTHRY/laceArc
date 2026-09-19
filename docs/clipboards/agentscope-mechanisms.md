@@ -1,6 +1,6 @@
 # AgentScope — mechanism cards (constructive algorithms)
 
-**Status:** Pass 3 EXECUTED (Wave A M-A1…M-A9; Waves B–D deferred one-line seeds). Emission `[GAP]`.  
+**Status:** Pass 3 EXECUTED (Wave A M-A1…M-A9; Waves B–D deferred one-line seeds). Pass 4 ASCII: see [agentscope-ascii-machinery.md](agentscope-ascii-machinery.md) (P-A1…P-A9). Algorithms unchanged. Emission `[GAP]`.  
 **Source:** Jiayi Bi et al., *Diagnosing with Insights: Structured Analysis of Agent Failures via Behavioral Abstractions*, arXiv:2609.02371v1 · tool **AGENTSCOPE**  
 **PDF:** `refs/local/bi-et-al-agentscope-diagnosing-insights.pdf` → attachment `6464d69d81d4265aff0cab1e1affe160ef7af4c77ccc142436528f75ea3fd1e9` (22 pp., text layer; **never git-add**)  
 **Offset:** printed ≈ PDF at cited loci (Pass 1–2)  
@@ -8,7 +8,7 @@
 **Companion:** [`agentscope-clipboard.md`](agentscope-clipboard.md) · map [`reason-model-map.md`](../reason-model-map.md) §5 (A1–A5) · [`clipboard-five-stakes.md`](clipboard-five-stakes.md) PAGE 5/5 · plan [`agentscope-pass-3-plan.md`](agentscope-pass-3-plan.md)
 
 Law: taxonomy = **holder** vocabulary · ReAG ↛ 1D array · neural invariants ≠ Core proofs · diagnosis ↛ strand write · Hands win · Φ `[GAP]` sealed.  
-This file is **Shadow / Layer III documentation of the paper**, not Lace `src/`, not `systems-manifest-ascii.md`, not Φ. ASCII machinery deferred.
+This file is **Shadow / Layer III documentation of the paper**, not Lace `src/`, not `systems-manifest-ascii.md`, not Φ. Pass 4 ASCII panels exist; algorithms here unchanged.
 
 ---
 

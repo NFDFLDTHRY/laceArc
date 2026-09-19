@@ -92,6 +92,25 @@ T5 five-stakes: **skip** — PAGE 5/5 source pins and KEEP/FORBID agree with thi
 
 P3-M summary: **9 CONFIRM · 0 REFINE · 0 CONFLICT**. ReAG-in-array FORBID retained (M-A3). Emission `[GAP]`. Five-stakes PAGE 5/5 untouched.
 
+Pass 4 ASCII panels P-A1…P-A9 → [agentscope-ascii-machinery.md](agentscope-ascii-machinery.md).
+
+## Pass 4 receipt
+
+| Field | Value |
+|---|---|
+| Status | EXECUTED |
+| When | 2026-09-18 ~17:45 PT |
+| Station | clipboards · agent `reference-Mapper` |
+| Plan | [agentscope-pass-4-plan.md](agentscope-pass-4-plan.md) |
+| Hands skim | shoe → graphics A–D → systems-manifest → staking / law-why → reason-model-map §5 (A1–A5) → mechanisms Wave A → Pass 3 clipboard → five-stakes PAGE 5/5 (read-only) → sibling ASCII sample (Rowlands/Kauffman panel schema) |
+| PDF | **PRESENT** — cite Pass 1: `refs/local/bi-et-al-agentscope-diagnosing-insights.pdf` → attachment `6464d69d…fd1e9.pdf`; SHA-256 `6464d69d81d4265aff0cab1e1affe160ef7af4c77ccc142436528f75ea3fd1e9`; **22** pp.; text layer yes; gitignored; never staged |
+| Method | `pdftotext -f N -l N -layout` re-sight Table 1 / §3.1–3.3 / Fig.1–2 as needed for diagram fidelity; Pass 1–3 pins reused |
+| Product | [agentscope-ascii-machinery.md](agentscope-ascii-machinery.md) — SOURCE MACHINERY overview + panels **P-A1…P-A9** (9 panels, 1:1 with M-A1…M-A9); cross-walk; Waves B–D deferred one-line seeds |
+| Panel count | overview + **9** Wave A panels |
+| Amended | reason-model-map · law · graphics · five-stakes · src/ · systems-manifest · systems-manifest-ascii · Pass 1–3 morals / FM-A* / P3-M teeth / M-A* algorithm bodies | **No** |
+| Emission | still `[GAP]` — no POINTER when / arity / adjacency; no panel closes Φ |
+
+
 ## PAGE A — FAILURE TAXONOMY FOR THE HOLDER
 
 | Field | Filled sheet |
