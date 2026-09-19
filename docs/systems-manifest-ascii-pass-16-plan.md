@@ -1,6 +1,6 @@
 # Systems-manifest ASCII pass 16 plan — Update wave · Iteration 2 · Pass 4 · mechanism↔ASCII rigor map (Iter2)
 
-**Status:** **HELD**. Emission `[GAP]`.  
+**Status:** **EXECUTED** (2026-09-19 PT). Emission `[GAP]`.  
 **Series:** Pass **16** (linear executed-passes list) = **Update wave · Iteration 2 · Pass 4**. Subtitle: both names.  
 **Station:** maps (catch-all for `docs/*.md` at court root). Holder: **reference-Mapper**. Keep maps **HELD**.  
 **Authority:** `docs/systems-manifest.md` (Contracts I / II / Layer III; Pieces unchanged).  
@@ -361,12 +361,12 @@ Refuse on execute (and for this Iteration-2 Pass 4):
 
 ### Execute turn (when human says Proceed)
 
-- [ ] T1: G-KD-1 · G-KD-3 mechanism↔ASCII map (CONFIRM/OPEN/CONFLICT · OPEN-with-cause / kit CLOSED honesty · G2/Φ `[GAP]`).  
-- [ ] T2: P15-M + retained Layer III map (I→III · nine Shadow · Piece 13 dual · #1/#3 dashed · #4 note); no G-III rebuild.  
-- [ ] T3: P16-X compact matrix (Iter2 rows + thin Core CONFIRM pointer + special gates including #4 leftover).  
-- [ ] T4: Thin Overview/Pass 15 → Pass 16 pointers; FIX only if matrix cites; no gear rename; no quiet-door→I.  
-- [ ] T5: Executed-passes +16; Pass 16 deltas; refuse honored; G2/Φ `[GAP]`.  
-- [ ] maps still HELD by reference-Mapper (unless human releases).
+- [x] T1: G-KD-1 · G-KD-3 mechanism↔ASCII map (CONFIRM/OPEN/CONFLICT · OPEN-with-cause / kit CLOSED honesty · G2/Φ `[GAP]`).  
+- [x] T2: P15-M + retained Layer III map (I→III · nine Shadow · Piece 13 dual · #1/#3 dashed · #4 note); no G-III rebuild.  
+- [x] T3: P16-X compact matrix (Iter2 rows + thin Core CONFIRM pointer + special gates including #4 leftover).  
+- [x] T4: Thin Overview/Pass 15 → Pass 16 pointers; FIX only if matrix cites; no gear rename; no quiet-door→I.  
+- [x] T5: Executed-passes +16; Pass 16 deltas; refuse honored; G2/Φ `[GAP]`.  
+- [x] maps still HELD by reference-Mapper (unless human releases).
 
 ---
 

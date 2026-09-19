@@ -2,7 +2,7 @@
 
 **Not the manifest.** [`systems-manifest.md`](systems-manifest.md) is the Hands contract map; this is an ASCII reading of it and settles nothing it does not.
 
-**Executed passes:** [1](systems-manifest-ascii-pass-1-plan.md) · [2](systems-manifest-ascii-pass-2-plan.md) · [3](systems-manifest-ascii-pass-3-plan.md) · [4](systems-manifest-ascii-pass-4-plan.md) · [5](systems-manifest-ascii-pass-5-plan.md) · [6](systems-manifest-ascii-pass-6-plan.md) · [7](systems-manifest-ascii-pass-7-plan.md) · [8](systems-manifest-ascii-pass-8-plan.md) · [9](systems-manifest-ascii-pass-9-plan.md) · [10](systems-manifest-ascii-pass-10-plan.md) · [11](systems-manifest-ascii-pass-11-plan.md) · [12](systems-manifest-ascii-pass-12-plan.md) · [13](systems-manifest-ascii-pass-13-plan.md) · [14](systems-manifest-ascii-pass-14-plan.md) · [15](systems-manifest-ascii-pass-15-plan.md). A new pass is linked here once it is executed.
+**Executed passes:** [1](systems-manifest-ascii-pass-1-plan.md) · [2](systems-manifest-ascii-pass-2-plan.md) · [3](systems-manifest-ascii-pass-3-plan.md) · [4](systems-manifest-ascii-pass-4-plan.md) · [5](systems-manifest-ascii-pass-5-plan.md) · [6](systems-manifest-ascii-pass-6-plan.md) · [7](systems-manifest-ascii-pass-7-plan.md) · [8](systems-manifest-ascii-pass-8-plan.md) · [9](systems-manifest-ascii-pass-9-plan.md) · [10](systems-manifest-ascii-pass-10-plan.md) · [11](systems-manifest-ascii-pass-11-plan.md) · [12](systems-manifest-ascii-pass-12-plan.md) · [13](systems-manifest-ascii-pass-13-plan.md) · [14](systems-manifest-ascii-pass-14-plan.md) · [15](systems-manifest-ascii-pass-15-plan.md) · [16](systems-manifest-ascii-pass-16-plan.md). A new pass is linked here once it is executed.
 
 **Authority:** `docs/systems-manifest.md`. Companion, not a replacement.  
 **Hands:** Graphics A–D. Shoe in hands.  
@@ -10,7 +10,7 @@
 
 Emission remains `[GAP]`.
 
-**Update wave · Iteration 2:** Pass **13** = Iteration-2 Pass **1** · **delta admission**. Pass **14** = Iteration-2 Pass **2** · **leftovers / FM audit / coherence**. Pass **15** = Iteration-2 Pass **3** · **kit-door / Iter2 delta mechanism mesh** (mirror Pass 9 / Update-wave Pass 3 shape). Iteration **1** = linear Passes **7–12** (tip **DIAGRAM SOUND WITH OPENS**). G2 / Φ stay `[GAP]`.
+**Update wave · Iteration 2:** Pass **13** = Iteration-2 Pass **1** · **delta admission**. Pass **14** = Iteration-2 Pass **2** · **leftovers / FM audit / coherence**. Pass **15** = Iteration-2 Pass **3** · **kit-door / Iter2 delta mechanism mesh**. Pass **16** = Iteration-2 Pass **4** · **mechanism↔ASCII rigor map** (**P16-X**; mirror Pass 10 / Update-wave Pass 4 P4-X spirit). Iteration **1** = linear Passes **7–12** (tip **DIAGRAM SOUND WITH OPENS**; **P10-X** / **P12-X** stand). G2 / Φ stay `[GAP]`.
 
 ---
 
@@ -72,6 +72,9 @@ Emission remains `[GAP]`.
                          Iteration-2 kit-door / delta mesh → pass 15
                          (G-KD-1·3 cite-cards · P15-M · #1/#3 dashed OPEN;
                           Shadow retained cites; #4 note-only; G2/Φ [GAP])
+                         Iteration-2 mechanism↔ASCII rigor → pass 16
+                         (P16-X · G-KD map · P15-M map · thin Core CONFIRM
+                          to P10-X/P12-X; #4 leftover OPEN; G2/Φ [GAP])
 
 
   G2  POINTER when / arity / adjacency     = [GAP]
@@ -112,6 +115,8 @@ Layer III also hosts a **cite-only** Shadow SOURCE MACHINERY inventory (pass 7):
 **Pass 14 pointer:** Iteration-2 Pass 2 **leftovers / FM audit / coherence** (dual kit-door · Piece 13 dual · #3 OPEN-with-cause · Iter2 D1–D6) → sections after Pass 13. Outside Contract I; no quiet-door→I; no invent Core close of OPENS; G2 / Φ `[GAP]`.
 
 **Pass 15 pointer:** Iteration-2 Pass 3 **kit-door / Iter2 delta mechanism mesh** (G-KD-1 · G-KD-3 cite-cards · **P15-M** · cross-walk) → sections after Pass 14. Outside Contract I; Pass 9 G-III retained cite-only; no G-KD-4 full admit; no quiet-door→I; G2 / Φ `[GAP]`.
+
+**Pass 16 pointer:** Iteration-2 Pass 4 **mechanism↔ASCII rigor map** (G-KD fidelity · **P15-M** map · **P16-X** · thin Core CONFIRM to **P10-X**/**P12-X**) → sections after Pass 15. Outside Contract I; no invent Core mechanisms; no full admit #4 / G-KD-4; no quiet-door→I; G2 / Φ `[GAP]`.
 
 ---
 
@@ -1263,9 +1268,9 @@ Global companion mesh for Iteration-2 kit-door / delta nodes. **Not** a shelf P3
   |     kit CLOSED pin 4d9aa03 · companion OPEN/cite · OPEN-with-cause|
   |     dashed / OPEN — NOT tenth clipboard shelf · -/-> Contract I  |
   |                                                                  |
-  |   . . . (#4 emerging leftover — not yet on Iter2 delta board) . .|
-  |     docs/kit/quiet-door-4-ascii.md · no G-KD-4 this pass         |
-  |     -/-> Contract I · ≠ tenth shelf · ≠ Φ                        |
+  |   . . . (#4 leftover — kit CLOSED · companion not admitted) . . .|
+  |     docs/kit/quiet-door-4-ascii.md · receipt pin 7f83e25 (cite)  |
+  |     no G-KD-4 · -/-> Contract I · ≠ tenth shelf · ≠ Φ            |
   +------------------------------------------------------------------+
 
   train / HCC / Cup / Water     outside I (cite only; not Core mesh teeth)
@@ -1278,9 +1283,9 @@ Global companion mesh for Iteration-2 kit-door / delta nodes. **Not** a shelf P3
 | G-III-1…9 | Shadow SOURCE (retained cite) | Pass 9 cite-cards / P9-M (pointer) | I → III read/cite | `[GAP]` |
 | Piece 13 | Hands projection dual | systems-manifest Piece 13 | views only; no upward write | `[GAP]` |
 | G-KD-1 · G-KD-3 | Kit-door OPEN / dashed | kit ascii + receipt pins (cite-cards above) | -/-> Contract I · OPEN-with-cause | `[GAP]` |
-| (#4 note) | Emerging leftover | `docs/kit/quiet-door-4-ascii.md` | not yet on Iter2 delta board · no G-KD-4 | `[GAP]` |
+| (#4 note) | Leftover (kit CLOSED · companion not admitted) | `docs/kit/quiet-door-4-ascii.md` · receipt pin **`7f83e25`** (cite) | note-only · no G-KD-4 · see Pass 16 **P16-X** | `[GAP]` |
 
-**Quiet-door #4:** kit ascii exists (passes 1–2 on origin). **Not** admitted on companion Iter2 delta board (Pass 13). Dashed “not yet on Iter2 delta board” note only — **no** full Δ admit · **no** G-KD-4 card. Prefer later Iter2 Pass 1-style delta.
+**Quiet-door #4:** kit **CLOSED** 6/6 · receipt `docs/kit/quiet-door-4-receipt.md` · pin **`7f83e25`** (cite-only; verified Pass 16). Companion **still note-only / not admitted** on Iter2 delta board (Pass 13 did **not** admit it; **no** G-KD-4). Kit sealed ≠ companion admit ≠ Core close. Prefer later Iter2 Pass 1-style Δ admit if steward admits. See Pass 16 **P16-X** #4 leftover gate.
 
 No invent Φ edges. No quiet-door → Contract I.
 
@@ -1308,4 +1313,82 @@ Thin table so readers find the real kit surfaces without copying them. Do **not*
 ### Sealed refuse (pass 15 · honored · T5)
 
 Pass 14 refuse still stands (includes Pass 13 / Pass 12 refuse), plus: no invent Core mechanisms; no new clipboard mechanisms / ascii-machinery files; no kit / clipboard edits (cite-only); no invent Φ; no fill G2; no `src/`; no quiet-door → Contract I (#1 / #3 / #4); no invent Core close of OPENS; no full admit #4 without Pass-13-style admit (note/dashed leftover only); no rebuild / paste G-III-1…9 or P9-M / shelf P3-M bodies; no invent tenth clipboard shelf; no Device / Queue / dispatch / WGSL / wasm64 / MLGraph as Core ops; no train oil / HCC / Cup / Water inside Contract I; no Core gear rename; no rewrite of Passes 1–14 beyond thin pointers / new Pass 15 section / executed-passes link.
+
+**Pass 16 rigor note:** G-KD mechanism↔ASCII map · **P15-M** retained Layer III map · **P16-X** Iter2 rigor matrix → sections after this Pass 15 board (pass 16). Pass 13–15 boards **stand** (thin P16-X-cited #4 caption FIX only). Pass 10/12 **P10-X** / **P12-X** **CONFIRM** (no C-Mech redo).
+
+## G-KD mechanism ↔ ASCII map (pass 16 · G-KD-1 · G-KD-3)
+
+Update wave · **Iteration 2 · Pass 4** (linear Pass **16**). Fidelity scoreboard for Pass 15 kit-door claim surfaces already on this file. Mirror Pass 10 C-Mech map spirit; **Iter2 retarget**. **No** invent Core mechanisms. **No** kit panel paste. **No** G-KD-4 full admit. Pins verified 2026-09-19 PT. G2 / Φ stay `[GAP]`.
+
+| G-KD-* | Mechanism | Claim surface | Fidelity note | Verdict | Kit CLOSED pin | Companion disposition | G2/Φ |
+|---|---|---|---|---|---|---|---|
+| **G-KD-1** | Package quiet-door #1 cite-card · OPEN adjunct | Pass 15 G-KD cite-card row · **P15-M** dashed OPEN · cross-walk row | Figure claims kit **CLOSED** 6/6 + companion **OPEN** adjunct / OPEN-with-cause; kit sealed ≠ Core close ≠ drop OPEN; FORBID I / ≠ tenth shelf / ≠ Φ / ≠ #3 | **CONFIRM** | **`fab1864`** (receipt header match) | OPEN adjunct · OPEN-with-cause (Passes 8–15) | `[GAP]` |
+| **G-KD-3** | Court quiet-door #3 cite-card · OPEN/cite | Same Pass 15 surfaces | Same honesty · distinct from #1; Δ-QD3 OPEN/cite + OPEN-with-cause stands; kit sealed ≠ Core close | **CONFIRM** | **`4d9aa03`** (receipt header match) | OPEN/cite (Δ-QD3) · OPEN-with-cause (Pass 14–15) | `[GAP]` |
+
+**Honesty:** Kit close is kit station truth (cite). Companion OPEN adjunct is companion truth until steward closes it honestly — **not** by inventing Core answers. Pass 12 **DIAGRAM SOUND WITH OPENS** stays. CONFIRM=2 · OPEN=0 · CONFLICT=0 on G-KD fidelity rows.
+
+## P15-M + retained Layer III map (pass 16)
+
+Map Pass 15 mesh nodes ↔ claimed mechanisms. **No** G-III-1…9 rebuild. **No** P9-M / shelf P3-M paste. **No** invent Φ edges. **No** quiet-door → I.
+
+| Node | Claimed mechanism | Map check | Verdict | G2/Φ |
+|---|---|---|---|---|
+| I → III | read / cite only (no upward write) | Mesh arrow + prose match Pass 14 D4 / Pass 9 P9-M spirit; no III→write I language | **CONFIRM** | `[GAP]` |
+| Nine Shadow retained | G-III-1…9 / P9-M cite-only back-pointers | Paths OK; pointer-only; no card rebuild / panel paste | **CONFIRM** | `[GAP]` |
+| Piece 13 dual | Hands projection under III | Explicit triple dual: Piece 13 ≠ Shadow SOURCE (G-III) ≠ kit-door OPEN (G-KD) | **CONFIRM** | `[GAP]` |
+| #1 / #3 dashed | G-KD OPEN adjuncts | OPEN-with-cause · FORBID I · ≠ tenth shelf · pins on mesh | **CONFIRM** | `[GAP]` |
+| train / HCC / Cup / Water | outside I | Cite only — not oiled into mesh as Core teeth | **CONFIRM** | `[GAP]` |
+| G2 / Φ | `[GAP]` | Sealed on mesh footer + every smuggle-prone row | **CONFIRM** | `[GAP]` |
+| (#4 note) | leftover / not admitted | Kit **CLOSED** pin **`7f83e25`** (cite) · companion **still note-only** · **no** G-KD-4 invent | **OPEN** (leftover disposition) | `[GAP]` |
+
+CONFIRM=6 · OPEN=1 (#4 leftover) · CONFLICT=0. Thin #4 caption FIX applied under T4 (kit CLOSED honesty; companion not admitted).
+
+## P16-X — Iter2 mechanism↔ASCII rigor matrix (pass 16)
+
+Update wave · **Iteration 2 · Pass 4** primary steward deliverable. Pass 10 **P10-X** spirit, **Iter2 retarget** after Passes 13–15. Scoring: all gate cells Y → **PASS**; else **FIX** (thin caption/stamp/pointer only) or **OPEN** (defer; do not invent).
+
+| Row | Kind | Claim surface / cite | Fidelity | Stamp | kit≠Core / false-friend | No POINTER/Φ | G2 | Score |
+|---|---|---|---|---|---|---|---|---|
+| G-KD-1 | Iter2 | Pass 15 cite-card · P15-M dashed · cross-walk | Y · pin `fab1864` verified; kit CLOSED ≠ Core close | KEEP-read / FORBID-as-Core-write | kit ≠ impulse/pallet/tape/hands · ≠ tenth shelf | Y | `[GAP]` | **PASS** |
+| G-KD-3 | Iter2 | Pass 15 cite-card · P15-M dashed · cross-walk | Y · pin `4d9aa03` verified; distinct from #1 | KEEP-read / FORBID-as-Core-write | same · ≠ merge with #1 | Y | `[GAP]` | **PASS** |
+| P15-M I→III | Iter2 | P15-M mesh arrow | Y · read/cite only | FORBID-as-Core-write | no III→write I | Y | `[GAP]` | **PASS** |
+| P15-M Shadow retained | Iter2 | G-III-1…9 / P9-M pointers | Y · pointer-only; no rebuild | KEEP-read / FORBID-as-Core-write | Shadow M/P ≠ Core teeth | Y | `[GAP]` | **PASS** |
+| P15-M dashed OPEN | Iter2 | G-KD-1 · G-KD-3 dashed nodes | Y · OPEN-with-cause held | FORBID I import | kit CLOSED ≠ Core close | Y | `[GAP]` | **PASS** |
+| P15-M train/HCC | Iter2 | mesh footer outside I | Y · cite only | outside I | not Core mesh teeth | Y | `[GAP]` | **PASS** |
+| Piece 13 dual | Iter2 | P15-M (Piece 13) node | Y · triple dual explicit | projection only | ≠ G-III ≠ G-KD | Y | `[GAP]` | **PASS** |
+| Cross-layer kit≠Core | Iter2 | G-KD vs Pass 6 clock gear | Y · quiet-door never Core teeth | FORBID-as-Core-write | kit ≠ impulse/pallet/tape/hands | Y | `[GAP]` | **PASS** |
+| No POINTER/Φ in fence | Iter2 | Iter2 claim surfaces | Y · no emission smuggle | fence | n/a | Y | `[GAP]` | **PASS** |
+| G2 `[GAP]` | Iter2 | every smuggle-prone row | Y · sealed | sealed | n/a | Y | `[GAP]` | **PASS** |
+| #4 leftover gate | Iter2 | P15-M #4 note · kit receipt | Kit CLOSED pin `7f83e25` cite · companion still note-only / not admitted · **no** invent G-KD-4 | FORBID I · ≠ tenth shelf · ≠ Φ | kit sealed ≠ companion admit ≠ Core close | Y | `[GAP]` | **OPEN** |
+| Thin Core CONFIRM | Core-pointer | Pass 10 **P10-X** · Pass 12 **P12-X** | Y · stand; no cited Iter2→Core drift | Core claim (pointer) | n/a (not a second C-Mech campaign) | Y | `[GAP]` | **PASS** |
+
+### P16-X special gates
+
+| Gate | Check | Score |
+|---|---|---|
+| Kit CLOSED ≠ Core close | #1/#3 companion OPEN-with-cause stays honest | **PASS** |
+| Cross-layer kit ≠ Core teeth | Quiet-door never becomes impulse/pallet/tape/hands | **PASS** |
+| Piece 13 dual | Projection ≠ G-III ≠ G-KD — three classes | **PASS** |
+| No POINTER/Φ in fence | No emission smuggle on Iter2 rows | **PASS** |
+| G2 `[GAP]` | Sealed | **PASS** |
+| #4 leftover | Kit CLOSED `7f83e25` · companion **not** admitted · **no** invent G-KD-4 / Pass-13-style Δ | **OPEN** (leftover disposition) |
+| Thin Core pointer | **P10-X** / **P12-X** CONFIRM; do not redo C-Mech-1…8 | **PASS** |
+
+**P16-X-cited thin FIX (T4):** Pass 15 #4 note / mesh caption — replace stale “passes 1–2 on origin” with kit **CLOSED** pin **`7f83e25`** · companion still note-only / not admitted (applied above). No gear rename. No quiet-door→I. No G-KD-4 invent.
+
+**P16-X verdict:** Iter2+Core-pointer rows **PASS** ×11 · **FIX**=1 (thin #4 caption; applied) · **OPEN**=1 (#4 leftover disposition). Special gates **PASS** ×6 · **OPEN** ×1 (#4). Thin Core CONFIRM: **P10-X** / **P12-X** stand. Emission / G2 stay `[GAP]`.
+
+## Pass 16 deltas
+
+| Ticket | Action |
+|---|---|
+| T1 | G-KD-1 · G-KD-3 mechanism↔ASCII map; CONFIRM×2; kit CLOSED pins `fab1864` / `4d9aa03` verified; OPEN-with-cause honesty; G2/Φ `[GAP]`; no G-KD-4 |
+| T2 | P15-M + retained Layer III map; CONFIRM×6 · OPEN×1 (#4 leftover); no G-III rebuild; Piece 13 dual; #1/#3 dashed; G2/Φ `[GAP]` |
+| T3 | **P16-X** Iter2 matrix + special gates; PASS×11 · FIX×1 (thin #4 caption) · OPEN×1 (#4 leftover); thin Core CONFIRM to **P10-X**/**P12-X** |
+| T4 | Thin Overview / Spine / Contract-map / Pass 15 → Pass 16 pointers; P16-X-cited #4 caption FIX applied; no gear rename; no quiet-door→I |
+| T5 | Executed-passes +16; Pass 16 deltas; refuse honored; G2 `[GAP]`; Passes 7–15 / Pass 9–12 retained |
+
+### Sealed refuse (pass 16 · honored · T5)
+
+Pass 15 refuse still stands (includes Pass 14 / 13 / 12 refuse), plus: no invent Core mechanisms (Pass 5/6 Core art stands; Pass 10/12 rigor stands — map/CONFIRM, do not redraw); no clipboard / kit edits (cite-only); no new `docs/clipboards/*-ascii-machinery.md` or `*-mechanisms.md`; no invent Φ; no fill G2; no `src/`; no quiet-door → Contract I (#1 / #3 / #4); no invent Core close of OPENS (kit CLOSED ≠ Core close; companion OPEN-with-cause only); no full admit #4 / G-KD-4 without a Pass-13-style Δ admit (none exists — leftover cite-check / OPEN disposition only); no rebuild / paste of G-III-1…9 or P9-M / shelf P3-M / P15-M bodies (map only; thin FIX if P16-X cites); no redo Pass 9/10 full campaigns (thin CONFIRM pointer to P10-X/P12-X only); no invent tenth clipboard shelf; no Device / Queue / dispatch / WGSL / wasm64 / MLGraph as Core ops; no train oil / HCC / Cup / Water inside Contract I; no Core gear rename; no rewrite of Passes 1–15 beyond thin pointers / P16-X-cited thin FIX / new Pass 16 rigor section / executed-passes link; no push unless human asks.
 
