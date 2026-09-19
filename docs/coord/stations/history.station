@@ -1,7 +1,7 @@
-STATUS: FREE
+STATUS: HELD
 STATION: history
 OWNS: docs/history-recovered* docs/history/**
-AGENT: -
-BASE: -
-SINCE: -
-NOTE: Quiet door #5 CLOSED 6/6. Walkers dead. Not pass 8. Φ [GAP]. Astra-evidence relationship evidence Pass 1 EXECUTED within text-source review scope at a0d7e6aea0267e63ebe8ac7a5febdef85275d832. Findings 901950641eaa2f75e632f86fcadf1efc7b96ea73; plan receipt a41c2a1a790ea32fc44949730d0fc98154a88979; History-index link 7e65f9d6f98b4fdd99e30cbe81394cfc7c0fb68b. Published findings/index reread; plan diff verified; parallel math/Wasm work left separate. Source-text coupling supported; star-caption ambiguity and missing explicit definition coupling recorded; proposals NOT_APPLIED. Canonical-image verification BLOCKED; global-mapper response and independent adjudication NOT_RUN; no runtime proof or emission acceptance. Original question packet, global companion, upstream manifest, law, graphics, pointer draft and tracking unchanged by this task. Connector SHA-checked release; coord.sh and repository shell/runtime checks NOT_RUN (Git transport DNS failure). No automatic Pass 2.
+AGENT: Grok-evidence
+BASE: 46d2a24665eff0be5805824fa93cfa8e7c8cf14f
+SINCE: 2026-09-19T21:11:10Z
+NOTE: Takeover Grok-evidence 2026-09-19T21:11:10Z. Pass 2 PLAN only. Pass 1 text EXECUTED by Astra-evidence; image BLOCKED; mapper/adjudication were NOT_RUN. Door #5 CLOSED. Not pass 8. Φ [GAP].
