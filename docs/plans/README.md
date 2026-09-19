@@ -34,6 +34,7 @@
 | [verification-iteration-2-receipt.md](verification-iteration-2-receipt.md) | **iteration 2 receipt.** Four modes of instrument failure; four checks repaired; the one decay that costs anything has no owner |
 | [verification-iteration-3-plan.md](verification-iteration-3-plan.md) | `[PROPOSAL]` iteration 3: **what rots.** Pass 1 executed — nine broken citations with four different causes, treated as one |
 | [verification-iterations.md](verification-iterations.md) | **the standing shape of an iteration.** Six passes, the Plan/Proceed/Commit cadence, and the rules measured from three iterations of practice |
+| [verification-iter3-pass-2-plan.md](verification-iter3-pass-2-plan.md) | `[PLAN]` iteration 3 pass 2: classify 14 genuine broken references. A fifth kind — quoted as evidence — and 93% of rot is backticked |
 | [restructure-plan.md](restructure-plan.md) | `[PROPOSAL]` coherence of the whole tree: twelve measured findings, eight phases, one station per commit; supersedes the defrag plan as filing plan of record |
 
 Sub-shelves: [fixtures/](fixtures/README.md) sealed golden IR · [tools/](tools/README.md) host validator.
