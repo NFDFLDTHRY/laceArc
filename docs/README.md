@@ -18,7 +18,7 @@ The four graphics define the project. Everything else on this page is derived fr
 
 | File | Status |
 |---|---|
-| [pointer-emission.md](pointer-emission.md) | **DRAFT. Claimed as object. Not accepted.** Pass 1 PLAN (stamp walk) in-file. Invented answers remain a breach. `src/` waits on accept |
+| [pointer-emission.md](pointer-emission.md) | **DRAFT. Pass 1 EXECUTED (stamps). Not accepted.** Invented when still a breach. `src/` waits on accept |
 
 ## Law
 
