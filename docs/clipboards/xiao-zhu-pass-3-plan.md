@@ -1,7 +1,7 @@
 # Xiao & Zhu pass 3 — system mechanisms (Wave A) + mechanism mesh
 
-**Status:** **HELD** / ready for execute — **NOT EXECUTED**. Emission still `[GAP]`.  
-**Station:** clipboards (HELD `Xiao–Zhu pass 3 plan: Wave A system mechanisms` at plan; execute refreshes as `reference-Mapper`)  
+**Status:** **EXECUTED** · 2026-09-18 ~19:23 PT · station clipboards · `reference-Mapper`. Emission still `[GAP]`. Tokenizer still `[GAP]`.  
+**Station:** clipboards · EXECUTED as `reference-Mapper` (claim: `Xiao–Zhu pass 3: Wave A system mechanisms`)  
 **Base at plan:** `b83fd11` (Pass 2 tip) · refresh to current `origin/main` before execute  
 **Book:** Tong Xiao & Jingbo Zhu, *Foundations of Large Language Models*  
 **arXiv:** `2501.09223v2` [cs.CL] · 15/17 Jun 2025  
@@ -253,17 +253,21 @@ Opening a tokenizer gap is not filling Φ.
 
 ---
 
-## Plan receipt (this commit — plan only)
+## Plan receipt (EXECUTED)
 
 | Field | Value |
 |---|---|
-| Status | **HELD** / ready for execute — **NOT EXECUTED** |
+| Status | **EXECUTED** |
 | When (plan) | 2026-09-18 ~19:20 PT |
-| Station | clipboards · plan agent |
-| Artifact A | `xiao-zhu-foundations-mechanisms.md` — **not created yet** |
-| Artifact B | P3-M / P3-R — **deferred to execute** |
+| When (execute) | 2026-09-18 ~19:23 PT |
+| Station | clipboards · agent `reference-Mapper` |
+| Base | rebased onto `571533c` (origin/main); plan tip was `ff88c89` |
+| Artifact A | [xiao-zhu-foundations-mechanisms.md](xiao-zhu-foundations-mechanisms.md) — Wave A **M-A1…M-A9** filled |
+| Artifact B | P3-M mesh + Pass 3 receipt on [xiao-zhu-foundations-clipboard.md](xiao-zhu-foundations-clipboard.md) — **9 CONFIRM · 0 CONFLICT** |
+| Hard stamps | M-A2 FORBID-as-Lace-identity · M-A3 FORBID-as-store · M-A4/M-A9 FORBID next-token/decode as Core continue · M-A5 FORBID-as-Core-write (MASK≠cut) · M-A9 not POINTER when · D7 cross-linked not rewritten |
 | ASCII | deferred — Pass 4 |
 | Emission | `[GAP]` |
 | Tokenizer | `[GAP]` |
+| T6 five-stakes | skip — no CONFLICT |
 | PDF | never staged |
 | Push | not performed |

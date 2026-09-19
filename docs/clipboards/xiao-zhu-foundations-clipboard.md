@@ -84,6 +84,45 @@ T6 five-stakes: **skip** — PAGE 3/5 source pins (Eq 1.1 PDF 9; BERT PDF 30; §
 | T5 five-stakes | **skip** (default) — PAGE 3/5 KEEP/FORBID agree; no rewrite |
 | D7 | **included** — §1.3 BERT MASK/replace/leave (PDF 30–31); FORBID-as-Core-write; SILENT for Lace append |
 
+## Pass 3 receipt
+
+| Field | Value |
+|---|---|
+| Status | EXECUTED |
+| When | 2026-09-18 ~19:23 PT |
+| Station | clipboards · agent `reference-Mapper` |
+| Plan | [xiao-zhu-pass-3-plan.md](xiao-zhu-pass-3-plan.md) |
+| Hands skim | shoe → graphics A–D → systems-manifest → staking / law-why → reason-model-map §3 (X1–X7) → Pass 1–2 clipboard (FM-X* + D7) → five-stakes PAGE 3/5 (read-only; T6 skip) → AgentScope/Petersen mechanism card schema |
+| PDF | **PRESENT** — cite Pass 1: `refs/local/xiao-zhu-foundations-llm.pdf` → attachment `0f5d145d…ba50bc1a.pdf`; SHA-256 `0f5d145d298a90bbe1648b365d97b8833e86be3c31bedd7db900a932ba50bc1a`; **277** pp.; text layer yes; printed≈PDF−7; gitignored; never staged |
+| Method | `pdftotext -f N -l N -layout` on §1.1 / §1.2 / §1.3 / §2.1.1 / §2.3.3 / §3.3.2 / §4.2 / §4.3–4.4 / §5.1; Pass 1–2 pins reused |
+| Product | Wave A mechanism cards **M-A1…M-A9** in [xiao-zhu-foundations-mechanisms.md](xiao-zhu-foundations-mechanisms.md); P3-M mechanism mesh below; Waves B–D deferred one-line seeds; ASCII **not** created |
+| Mesh | **CONFIRM** ×9 · **REFINE** ×0 · **CONFLICT** ×0 |
+| Amended | reason-model-map · law · graphics · five-stakes · src/ · systems-manifest · Pass 1–2 morals / FM-X* / D7 | **No** |
+| Emission | still `[GAP]` — no POINTER when / arity / adjacency; no invented Φ |
+| Tokenizer | still `[GAP]` — PAGE F open; no Lace tokenizer invent |
+| T6 five-stakes | **skip** (default) — P3-M finds no CONFLICT with PAGE 3/5 |
+
+### P3-M — Mechanism coherence mesh
+
+| Mechanism | Map | Clipboard PAGE | KEEP/FORBID tooth | Same story? |
+|---|---|---|---|---|
+| M-A1 Pre-train / foundation adapt pipeline | **X** / FM-X9 | X | KEEP-read pipeline; FORBID-as-Core-write; FORBID corpus→DOCUMENT | **CONFIRM** |
+| M-A2 Tokenization → shared-vocab intern | **X2** | B | KEEP-read book primitive; **FORBID-as-Lace-identity** | **CONFIRM** |
+| M-A3 Token + position (+ segment) embed | **X5** | D | KEEP-read book vectors; **FORBID-as-store** | **CONFIRM** |
+| M-A4 Decoder-only causal next-token train | **X3** | E / A | KEEP-read objective; **FORBID next-token as Core continue**; SILENT | **CONFIRM** |
+| M-A5 BERT MASK 80/10/10 corruption | **X4** | C / D7 | KEEP-read paper corruption; **FORBID-as-Core-write** (MASK ≠ Lace cut); SILENT | **CONFIRM** |
+| M-A6 Soft-prompt / prompt-tuning | **X6** | F | KEEP-read steward; **FORBID as Core rows** | **CONFIRM** |
+| M-A7 Instruction fine-tuning (SFT) | **X6** | F | KEEP-read steward; FORBID-as-Core-write; SILENT | **CONFIRM** |
+| M-A8 RLHF / preference / DPO family | **X6** | F | KEEP-read steward alignment; **FORBID as Core write** | **CONFIRM** |
+| M-A9 Prefilling / decode / KV-cache | **X7** | E / F | KEEP-read projection; **FORBID Core continue / POINTER when**; Φ `[GAP]` | **CONFIRM** |
+
+P3-M summary: **9 CONFIRM · 0 REFINE · 0 CONFLICT**. Hard stamps retained (M-A2 identity · M-A3 store · M-A4/M-A9 next-token/decode · M-A5 MASK≠cut · M-A9 not POINTER when). Emission `[GAP]`. Tokenizer `[GAP]`. Five-stakes PAGE 3/5 untouched.
+
+**P3-5S five-stakes:** skip — no PAGE 3/5 drift.
+
+Pass 4 ASCII deferred.
+
+
 
 
 ---
