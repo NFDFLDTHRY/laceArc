@@ -1,6 +1,6 @@
 # Verification iteration 4, pass 4 — two checks were ruled on as one
 
-**Status:** `[PLAN]`. **Station:** maps *(this document)*; the subject is **kit + coord**. **Emission:** `[GAP]`. No `src/`.
+**Status:** **EXECUTED.** [Findings](verification-iter4-pass-4-findings.md) — **the thesis lost its falsifier and `D1`/`D2` hold.** **Station:** maps *(this document)*; the subject is **kit + coord**. **Emission:** `[GAP]`. No `src/`.
 **Iteration:** [iteration 4](verification-iteration-4-plan.md). **Prior:** [pass 3 findings](verification-iter4-pass-3-findings.md).
 **Board pinned at:** `30f6f87`.
 
