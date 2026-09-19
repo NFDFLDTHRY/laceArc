@@ -1,6 +1,6 @@
 # Quiet door #4 (live law) — Pass 1 PLAN
 
-**Status:** PLAN only. Not run.  
+**Status:** EXECUTED — spine on `docs/kit/quiet-door-4-ascii.md`. Live-law bytes unchanged. Pair untouched. Emission `[GAP]`.  
 **Station:** kit (HELD Grok-kit).  
 **Object:** quiet door #4 — [`docs/law-why-these-documents.md`](../law-why-these-documents.md).  
 **Why kit, not law:** law OWNS the door. Claiming law also locks AGENTS / emission / court. A new `docs/*.md` hits the maps catch-all. This campaign is a **reading**. Kit holds the reading. Live law still wins on the door.  
