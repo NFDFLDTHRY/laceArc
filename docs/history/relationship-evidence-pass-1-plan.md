@@ -1,6 +1,6 @@
 # Relationship evidence — Pass 1 plan
 
-**Status: PLAN ONLY. Review execution: NOT_RUN.**
+**Status: EXECUTED within the text-source review scope. Canonical-image verification: BLOCKED. Independent adjudication: NOT_RUN.** See section 9 and [the findings](relationship-evidence-pass-1-findings.md). Earlier planning/publication statements below retain their historical scope.
 
 This plans the first evidence review of the already-published question packet. It does not redo its sampling, count as a global ASCII pass, reopen quiet-door #5, or start historical extraction pass 8.
 
@@ -79,7 +79,7 @@ One Lace strand remains the workpiece. WORD/POINTER sections, formations, and vi
 
 **Grounding boundary:** no physical-cord experiment is asserted. If a PNG cannot be viewed, finish the supported text comparison but label image-dependent judgments BLOCKED. Unavailable imagery does not erase documented text; documented text does not establish fresh visual verification.
 
-## 4. Six review steps — all NOT_RUN
+## 4. Six review steps — original plan; execution outcomes in section 9
 
 The step labels below are local to this plan, not global-diagram pass identifiers.
 
@@ -210,6 +210,33 @@ Finish with a claim-scoped handoff and the actual changed-file/check receipt. Re
 **Coordination limit:** a fresh `git ls-remote` failed with `Could not resolve host: github.com`. GitHub connector reads and a SHA-checked station update succeeded. `git pull`, `coord.sh claim/check/gate`, and repository shell checks were NOT_RUN. The connector operations are not those checks passing. This publication is through GitHub's contents API, not a successful Git transport push.
 
 **Execution status:** PLAN ONLY. The six review steps, mapper response, counterexample outcomes, and independent adjudication remain NOT_RUN. No findings document, Core changes, pointer-emission acceptance, or tracking-configuration changes are produced by this publication. A later instruction to proceed and a fresh ownership/state check are required before review execution.
+
+## 9. Execution receipt — 19 September 2026
+
+**Human instruction:** “Proceed with pass 1.” This authorizes the planned bounded evidence review, not a global-diagram amendment or emission acceptance.
+
+**Editor / ownership:** Astra-evidence resumed the existing History claim. Execution refresh commit: `5da058eb5802b2f2c660e0707792232b6109450f`. Review source pin: `a0d7e6aea0267e63ebe8ac7a5febdef85275d832`. Prepublication check: `a675ecff96cb5b4220519df101a59c3ccedeb4f0`; neither manifest target nor the packet/plan changed from the review pin. Read current station metadata for current ownership, not this dated receipt.
+
+**Published output:** [relationship-evidence-pass-1-findings.md](https://github.com/NFDFLDTHRY/laceArc/blob/901950641eaa2f75e632f86fcadf1efc7b96ea73/docs/history/relationship-evidence-pass-1-findings.md), commit `901950641eaa2f75e632f86fcadf1efc7b96ea73`.
+
+| Step | Execution outcome |
+|---|---|
+| 1. Freeze | Historical A/B retained; matching source blobs reverified; current review pin and governing identities recorded |
+| 2. Extract | Q1/Q2 answered from the manifest/law; assembled coupling labeled inference from stated premises |
+| 3. Exhibit | Current companion searched and relevant panels/audits read in context; positive definition coupling underexpressed; general POINTER participation already present |
+| 4. Attack | Same-record/two-views counterexample evaluated analytically against the D1 transcription; occurrence-only completeness refuted within that specimen, lawful partial views not refuted |
+| 5. Separate | Timing, target selection, arity, slots, adjacency, identity and family-recognition questions distinguished; draft target-kind tension preserved |
+| 6. Resolve | Q1-Q5 dispositions, objections, bounded verdict and two unapplied caption/coupling proposals published |
+
+**Result:** source-text coupling supported; companion presentation incomplete/ambiguous for the assigned relationship. The narrower conclusion does not erase prior boundary checks, assert that all participation is absent, or supply an emitter. The sampled snapshots contain identical documents, not independent corroboration.
+
+**Grounding / limits:** canonical PNGs A/B/C/D NOT_VIEWED; Graphic D retrieval returned no usable bytes and blob decoding failed. Image-dependent verification remains BLOCKED. Physical evidence NOT_PERFORMED. Propose/attack/resolve were performed by the same agent; independent adjudication and a response from the global mapper are NOT_RUN. The counterexample is an analytical source comparison, not a runtime test or proof of Core.
+
+**Operational limits:** Git transport DNS failure remains recorded. Connector reads and SHA-checked writes are not `git pull` or `coord.sh` passing. Shell coordination checks, repository test execution and runtime tests remain NOT_RUN. No acceptance evidence is manufactured.
+
+**Changed scope:** findings document, current plan status/this additive receipt, History-index status/link, and our own claim/release metadata only. Original question packet, global ASCII, upstream manifest, law, graphics, pointer draft, other agents' work and tracking configuration are not changed by this review.
+
+**Stop boundary:** text-review deliverable complete with named image/independence limitations. Verify committed files and scoped diff, then release History. No automatic diagram repair, source-law amendment, new campaign, or Pass 2. Sections 7–8 above are preserved as historical planning/publication receipts, not current execution claims.
 
 ## Source links
 
