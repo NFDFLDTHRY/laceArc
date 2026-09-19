@@ -2,7 +2,7 @@
 
 **Not Graphic A.** [`from-words-to-worlds.png`](from-words-to-worlds.png) is the source. This is an ASCII reading of its thirteen panels and settles nothing the PNG does not.
 
-**Executed:** [pass 1](graphic-a-ascii-pass-1-plan.md) · [pass 2](graphic-a-ascii-pass-2-plan.md) · [pass 3](graphic-a-ascii-pass-3-plan.md).  
+**Executed:** [pass 1](graphic-a-ascii-pass-1-plan.md) · [pass 2](graphic-a-ascii-pass-2-plan.md) · [pass 3](graphic-a-ascii-pass-3-plan.md) · [pass 4](graphic-a-ascii-pass-4-plan.md).  
 **Station:** graphics.  
 **Store:** Graphic D. A is a growth reading of the same strand.  
 **Not this file:** B, C, D1 tape, Hands-manifest spine (`docs/systems-manifest-ascii.md`), H×C×W oil, `src/`, POINTER emission answers.
@@ -287,4 +287,96 @@ Interior is this rule. Not coordinates. Not a row type next to WORD | POINTER.
 | T3 | Six-line interior rule drawn |
 | T4 | G2 untouched; A11 vs D not opened |
 
-Queued (not this file): A11 vs D types.
+## Pass 4 — mechanism map
+
+One operator. Panels apply it or view it. Feeds are not types.
+
+### Operator (A13)
+
+```
+ ╔══════════════════════════════════════════════════════════════╗
+ ║  Input word arrives.                                         ║
+ ║  Route new wire through that word's star.                    ║
+ ║  Continue.                                                   ║
+ ╚══════════════════════════════════════════════════════════════╝
+         punch-card: treated exactly as it arrives
+         not a second machine
+
+  constrained by A's header:
+    one continuous strand
+    every word a centimetre of wire
+    every word's star a persistent 3D formation
+    meaning does not exist
+    only structure, sequence, and participation
+
+  three verbs. no fourth.
+  no "emit POINTER." no "write definition."
+```
+
+### Application register
+
+| # | Role | What arrives | What is routed | What continues | New machine? |
+|---|---|---|---|---|---|
+| A1 | precondition | nothing | nothing | empty strand | no |
+| A2 | application | “The” | first pass; beginning of that star | the wire | no |
+| A3 | application | “Golden Skillet” | each word through its star (or a new one) | the wire in sequence | no |
+| A4 | application | “The Golden Skillet had pancakes.” | physical route through those stars in arrival order | the wire | no |
+| A5 | application | later “The” | same star, new direction | the wire | no |
+| A6 | specimen | “The order said: PIE.” | each word through its star; PIE created or reinforced | the wire | no |
+| A7 | specimen | “Is that a slice of pie?” | slice / pie through their stars | the wire; PIE in a larger formation | no |
+| A8 | specimen | “Or is it the whole pie?” | same PIE star, different path | the wire; distinct pass | no |
+| A9 | specimen | “Courier … customer … support …” | stars in the actual sequence of the text | the wire; chain of participation | no |
+| A10 | application | new input through a star that already contains history | new strand through prior formation | that structure participates in future Lace | no |
+| A11 | statement | definition / document / conversation as feeds | more wire through the same stars | one Lace | no |
+| A12 | view | — (arrivals already drawn) | many distinct strands, one PIE star | — (zoom does not append) | no |
+| A13 | statement | — | — | states the operator | no |
+
+A8 is a second application of the same operator, not a disambiguator.  
+A10’s name “higher-dimensional touch” is this application onto prior history, not a new opcode and not G2.
+
+### A11 versus D types
+
+A11: dictionary + document wired together. Each star is a word. Every definition, every document, every conversation adds more wire through these stars.
+
+```
+ A names          D stores
+ --------         --------
+ definition  \
+ document     }→  more WORD rows
+ conversation /   (and POINTER rows only when that rule exists)
+
+                  types on D: WORD | POINTER only
+
+ document-boundary-as-entry     [GAP]   A never draws a DOCUMENT row
+ conversation-as-entry          [GAP]
+ definition-as-stored-gloss     [X]     header / A13: meaning does not exist
+```
+
+Feeds are names of incoming text. They are not array types.  
+B4’s PIE→dessert path is not on A11 and is not copied here.
+
+### Seam table
+
+| Name | On Graphic A? | Mechanism status |
+|---|---|---|
+| arrive / route through star / continue | A13 | the operator |
+| punch-card arrival | A13 | constraint on arrival |
+| star as persistent 3D formation | header, A2, A5, A12, A13 | formation / view of passes |
+| sentence as physical route | A4 | application (sequence = route) |
+| distinct passes, not collapsed edges | A8 | success condition, not a tool |
+| higher-dimensional touch | A10 | application onto prior formation |
+| dictionary + document + conversation | A11 | feed names, same operator |
+| meaning | header, A9, A13 | does not exist; not stored |
+| WORD / POINTER / index / arity / when | not on A | D / G2. Pointed. Not filled. |
+| Star table / sense list / document type | not on A | forbidden, or `[GAP]` as above |
+
+## Pass 4 deltas
+
+| Ticket | Action |
+|---|---|
+| T1 | Operator box from A13 |
+| T2 | Thirteen-row application register; all New machine? = no |
+| T3 | A11 feeds vs D WORD\|POINTER; document boundary `[GAP]` |
+| T4 | Seam table |
+
+A map on this station is four passes. Next graphic is a new ticket.

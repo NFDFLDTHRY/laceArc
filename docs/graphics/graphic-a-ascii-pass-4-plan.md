@@ -1,12 +1,12 @@
 # Graphic A → ASCII systems diagram — Pass 4 PLAN
 
-**Status:** PLAN only. Not run. One act. Remainder queued.  
+**Status:** EXECUTED — mechanism map on `docs/graphics/graphic-a-ascii.md`. Emission `[GAP]`.  
 **Station:** graphics (HELD Grok-graphics).  
 **Authority:** `docs/graphics/from-words-to-worlds.png` — header, A1–A13 captions, A13 governing rule, A11 “dictionary + document,” footer. Then passes 1–3 on [`graphic-a-ascii.md`](graphic-a-ascii.md).  
 **Not authority:** Graphic B/C/D panels (cite D only as type seam). Manifest Pieces 9–11 field dumps. C6 family names.  
 **Emission:** `[GAP]`. No `src/`. PNG bytes stay put. Passes 1–3 stay.
 
-Pass 3 split A8 and inventoried A12. The human named pass 4 and required a rigorous mechanism map of A. Execute is not this tick.
+Execute landed: operator box, application register, A11↔D seam, seam table. A-map four passes complete.
 
 ```
 pull/ff → refresh graphics
