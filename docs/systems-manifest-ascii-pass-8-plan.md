@@ -1,6 +1,6 @@
 # Systems-manifest ASCII pass 8 plan — Update wave Pass 2 · leftovers / FM audit / Layer III coherence
 
-**Status:** HELD (plan only). Emission `[GAP]`.  
+**Status:** **EXECUTED** 2026-09-18 PT. Emission `[GAP]`.  
 **Series:** Pass **8** (linear executed-passes list) = **Update wave · Pass 2**. Subtitle: both names.  
 **Station:** maps (catch-all for `docs/*.md` at court root). Holder: **reference-Mapper**. Keep maps **HELD**.  
 **Authority:** `docs/systems-manifest.md` (Contracts I / II / Layer III; Pieces unchanged).  
@@ -195,13 +195,13 @@ Refuse on execute (and for this update wave Pass 2):
 
 ## Success criteria
 
-- [ ] Leftovers board: Contract map III dual note + OPEN quiet-door cite (kit path) + no invented clipboard shelf.  
-- [ ] FM fence point-verified; wrong/vague family labels fixed only; no full FM table copy.  
-- [ ] Short global KEEP/FORBID/MAP coherence spine present (D-style, global companion — not WebNN clone into Core).  
-- [ ] Executed-passes header links Pass 8 once executed; thin Pass 8 deltas or coherence note only.  
-- [ ] Passes 1–6 unchanged; Pass 7 board retained.  
-- [ ] Emission Φ and G2 remain `[GAP]`.  
-- [ ] No clipboard / kit edits; no `src/`; maps still HELD by reference-Mapper (unless human releases).
+- [x] Leftovers board: Contract map III dual note + OPEN quiet-door cite (kit path) + no invented clipboard shelf.  
+- [x] FM fence point-verified; wrong/vague family labels fixed only; no full FM table copy.  
+- [x] Short global KEEP/FORBID/MAP coherence spine present (D-style, global companion — not WebNN clone into Core).  
+- [x] Executed-passes header links Pass 8 once executed; thin Pass 8 deltas or coherence note only.  
+- [x] Passes 1–6 unchanged; Pass 7 board retained.  
+- [x] Emission Φ and G2 remain `[GAP]`.  
+- [x] No clipboard / kit edits; no `src/`; maps still HELD by reference-Mapper (unless human releases).
 
 ---
 

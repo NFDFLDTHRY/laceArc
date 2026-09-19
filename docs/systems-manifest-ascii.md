@@ -2,7 +2,7 @@
 
 **Not the manifest.** [`systems-manifest.md`](systems-manifest.md) is the Hands contract map; this is an ASCII reading of it and settles nothing it does not.
 
-**Executed passes:** [1](systems-manifest-ascii-pass-1-plan.md) · [2](systems-manifest-ascii-pass-2-plan.md) · [3](systems-manifest-ascii-pass-3-plan.md) · [4](systems-manifest-ascii-pass-4-plan.md) · [5](systems-manifest-ascii-pass-5-plan.md) · [6](systems-manifest-ascii-pass-6-plan.md) · [7](systems-manifest-ascii-pass-7-plan.md). A new pass is linked here once it is executed.
+**Executed passes:** [1](systems-manifest-ascii-pass-1-plan.md) · [2](systems-manifest-ascii-pass-2-plan.md) · [3](systems-manifest-ascii-pass-3-plan.md) · [4](systems-manifest-ascii-pass-4-plan.md) · [5](systems-manifest-ascii-pass-5-plan.md) · [6](systems-manifest-ascii-pass-6-plan.md) · [7](systems-manifest-ascii-pass-7-plan.md) · [8](systems-manifest-ascii-pass-8-plan.md). A new pass is linked here once it is executed.
 
 **Authority:** `docs/systems-manifest.md`. Companion, not a replacement.  
 **Hands:** Graphics A–D. Shoe in hands.  
@@ -83,6 +83,8 @@ Emission remains `[GAP]`.
 No query / delete / transaction / multi-Lace interface (manifest: none given).
 
 Layer III also hosts a **cite-only** Shadow SOURCE MACHINERY inventory (pass 7): nine clipboard paths outside Contract I. Not Core gear. Not a second strand. Does not fill G2 / Φ.
+
+**Dual (pass 8):** Contract map III Hands projection = **Piece 13** (views of 7, 12, 15; Graphics A–C; no upward write). Piece 13 projection ≠ Shadow SOURCE MACHINERY cite inventory. Both live under Layer III / outside upward write into I; neither is a Core write surface; neither fills G2 / Φ.
 
 ---
 
@@ -490,10 +492,10 @@ Panel bodies live on the clipboard paths; this file does not paste them.
 | GPUDevice / Adapter / Queue | Core door / cord | FM-Wgpu2 |
 | WGSL / shader module / entry | WORD / Core operator / Φ | FM-Wgpu5 · FM-Wgsl* (`wgsl-ascii-machinery.md`) |
 | encode / draw / dispatch / `queue.submit` | emission / Φ | FM-Wgpu3 · FM-Webnn* (dispatch) |
-| wasm linear mem / table / stack | Lace store / strand | FM-W1…W3 (`wasm-spec-3-ascii-machinery.md`) |
+| wasm linear mem / table / stack | Lace store / strand | FM-W1…W3 · FM-T* (`wasm-spec-3-ascii-machinery.md`) |
 | `br` / `return` / call / trap | POINTER when / cut / Φ | FM-W4 · FM-W8 |
 | host import / canvas accept | fill emission `[GAP]` | FM-W7 · FM-Wgpu6 |
-| book neuron / embed / ReAG / knot state-sum | WORD/STAR/store/history | FM-A* + book stamp legends (agentscope · petersen · xiao-zhu · kauffman · rowlands) |
+| book neuron / embed / ReAG / knot state-sum | WORD/STAR/store/history | FM-A* (agentscope FM-A1…A9) · FM-P* (petersen-zech) · FM-X* (xiao-zhu) · FM-K* (kauffman-4ed; shelf has ≥ FM-K5) · FM-R* (rowlands) |
 
 G2 (POINTER when / arity / adjacency) and emission Φ remain `[GAP]`. This board does not answer them.  
 Shoe still: arrive → append → participate → continue.
@@ -507,3 +509,62 @@ Shoe still: arrive → append → participate → continue.
 | T3 | False-friend fence pointing at FM-* (no full table copy) |
 | T4 | Executed-passes link + thin Overview/Layer III pointer; G2 `[GAP]` |
 | T5 | Sealed refuse honored (no src/; no Core rename; no clipboard edits) |
+
+## Leftovers (pass 8)
+
+Update wave · Pass 2. After Pass 7 board. Cite / dual / OPEN only — no clipboard rewrite.
+
+| Leftover | Stamp |
+|---|---|
+| Contract map III dual | Hands **Piece 13** projection ≠ Shadow SOURCE MACHINERY cite inventory. Both outside upward write into I. Neither fills G2 / Φ. |
+| OPEN cite · quiet door #1 | `docs/kit/quiet-door-1-ascii.md` — kit station · package-door ASCII · Layer III / outside-I **candidate**. Cite-only. **FORBID** Contract I import. **FORBID** invent tenth `*-ascii-machinery.md` clipboard shelf. Do not edit kit files. |
+| Machinery shelves | Still **nine** clipboard paths only (Pass 7 board). No new `docs/clipboards/*-ascii-machinery.md` at execute. |
+| Stamp/path | Nine Pass 7 paths re-checked OK. Quiet-door path exists under kit (not clipboards). |
+
+## Layer III coherence (pass 8 · D1–D6 global companion)
+
+Global KEEP / FORBID / MAP spine for the Pass 7 Layer III board vs Contract I / G2 / train / Hands. **Not** a WebNN (or any shelf) D1–D6 paste into Core.
+
+### D1 — What this Layer III board is not
+
+Not Contract I. Not a second strand. Not Φ fill. Not train oil / HCC / Cup / Water inside I. Not quiet-door Core import. Not a clipboard rewrite surface.
+
+### D2 — ON-TARGET KEEP / FORBID
+
+| KEEP-read | FORBID |
+|---|---|
+| Shadow SOURCE MACHINERY cites (nine paths) | Device / Queue / dispatch / WGSL / wasm64 / MLGraph as Core ops |
+| Hands Piece 13 views of 7, 12, 15 | Promote Shadow Order Proposal → Core / Hands law |
+| I → III read / cite only | Upward write III → I; quiet-door → Contract I |
+
+### D3 — FM fence stands
+
+Point at audited FM-* (pass 8 T2): FM-Webnn* · FM-Wgpu1…6 · FM-Wgsl* · FM-W1…W3 · FM-T* · FM-W4·FM-W8 · FM-W7·FM-Wgpu6 · FM-A* / FM-P* / FM-X* / FM-K* / FM-R*. Full tables stay on clipboards.
+
+### D4 — MAP spine
+
+```
+  I  ──read/cite──>  III (Hands Piece 13 · Shadow SOURCE cites · OPEN quiet-door cite)
+  III  -/-> write I
+  train / HCC / Cup / Water     outside I
+  G2 / emission Φ               [GAP]
+  quiet-door OPEN cite          -/-> Contract I
+```
+
+### D5 — Hands / projection
+
+Graphics A–D win. Piece 13 projection vs Shadow SOURCE cites = dual (leftovers). Shoe: arrive → append → participate → continue.
+
+### D6 — Sealed
+
+Emission `[GAP]`. No `src/`. Pass 7 nine-row board retained. Passes 1–6 untouched beyond thin Contract-map dual pointer. No Core gear rename (impulse / pallet / tape / hands stay Pass 6).
+
+## Pass 8 deltas
+
+| Ticket | Action |
+|---|---|
+| T1 | Leftovers: III dual · OPEN quiet-door cite · nine shelves confirmed |
+| T2 | FM fence label audit; book row → per-shelf FM-A*/P*/X*/K*/R*; wasm + FM-T* |
+| T3 | Global D1–D6 KEEP/FORBID/MAP coherence spine (not WebNN clone) |
+| T4 | Executed-passes +8; Pass 8 leftovers / coherence / deltas; G2 `[GAP]` |
+| T5 | Sealed refuse honored (no src/; no Core rename; no clipboard/kit edits; no quiet-door I import) |
