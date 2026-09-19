@@ -2,6 +2,6 @@ STATUS: HELD
 STATION: hologram
 OWNS: docs/hologram/** docs/clock/**
 AGENT: Grok-hologram
-BASE: 48c0594e08797abb8b4e6e55720120c53a5277c0
-SINCE: 2026-09-19T14:00:33Z
-NOTE: Quiet door #7 pass 4 EXECUTED. Walk on quiet-door-7-ascii.md. Next pass 5 seam. Door #6 CLOSED. Φ [GAP].
+BASE: e798b33ba05ea370f0632c9348aba5d5ceca086f
+SINCE: 2026-09-19T14:01:50Z
+NOTE: Quiet door #7 pass 5 PLAN. Pass 1–4 EXECUTED. Seam. Door+HTML untouched. Door #6 CLOSED. Φ [GAP].
