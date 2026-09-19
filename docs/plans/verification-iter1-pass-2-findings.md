@@ -100,3 +100,41 @@ Pass 1's instrument needed extending on contact with the tree. So did this one. 
 **No `NEAR`. No `UNSUPPORTED`. No wrong-panel citation anywhere in 79 lines.** The error class this iteration was convened to hunt did not appear in Graphic D's cites. Three defects surfaced, all in one document, and all three are about how a true claim was worded rather than which panel was named.
 
 That is a real result and it is one graphic, not four. 2b, 2c and 2d decide whether it generalises.
+
+---
+
+## 2b — Graphic C, `n-dimensional-relationships.png`
+
+**Coverage: 58 of 58 cite-bearing lines. Complete.** Read at `af89f85` against the PNG opened directly.
+
+| Document | Lines | `MATCH` | False positive | Findings |
+|---|---|---|---|---|
+| `systems-manifest.md` | 23 | 23 | — | 0 |
+| `graphics-close-reading.md` | 14 | 14 | — | 0 |
+| `atomic-primitives-map.md` | 21 | 20 | **1** | 0 |
+| | **58** | **57** | **1** | **0** |
+
+### No defects. Every genuine Graphic C citation matches its panel.
+
+The quotations are the strong part. Three are verbatim or faithfully elided:
+
+- `systems-manifest.md:159` — "In 1D you only see sequence; no crossings, no depth, no visible structure (C2)." **C2's bullets, word for word.**
+- `systems-manifest.md:220` — "Four independent relational axes (same structure, no new meaning)" — **C6's own label, verbatim.**
+- `systems-manifest.md:456` — C8's *Visible symptoms* list reproduced with **all six** items, including "naturally formed from repeated threading". Nothing dropped.
+- `graphics-close-reading.md:151` — "crossings and adjacency … co-occur" — **an ellipsis used correctly**, spanning two of C3's bullets.
+
+That last one matters against 2a: the same document that truncated D4 without an ellipsis uses one properly here. **The misquotation defect is not a habit of the file. It is specific to the passages 2a and 2c name.**
+
+### The false positive, and it is my counter's, not the document's
+
+`atomic-primitives-map.md:194` reads "standing orders; control **C01–C12**; task template". That is the **agent-control clause family**, zero-padded — the range `C01`–`C12` whose padding [the register](../namespace-register.md) says is the tell.
+
+My cite regex matched the bare `C12` inside the padded range. **The document is correct and the instrument counted it wrong** — the third time this iteration, after pass 1's `D7` and 2a's `D1`–`D4`. Every one has been the counter's error, and every one was found by reading.
+
+### C5's dimension planes, confirmed and registered
+
+Plan §7 carried this from 2a. Confirmed against the panel: **C5 labels its stacked planes `D1` `D2` `D3` `D4` `Dn`.** A third owner for those tokens, beside Graphic D's panels and the Rowlands clipboard sections. The register row is added in this sub-pass.
+
+### 2a-2 re-confirmed on a second graphic
+
+2a found "panel labels … are not printed in the graphics" to be wrong for Graphic D. **Graphic C prints its numbering too** — "1. Rule zero" through "12. Governing rule". The finding now rests on two graphics rather than one.

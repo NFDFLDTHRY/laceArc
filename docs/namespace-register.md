@@ -3,9 +3,9 @@
 **Status:** `[PROPOSAL]` for the citation rule. The families themselves are measured, not proposed — each range below was read out of its defining document.
 **Station:** maps. **Emission:** `[GAP]`. No `src/`.
 
-Nineteen identifier families share one small alphabet. **41 tokens are claimed by two or more families**, 15 of them by three. `A5` is a Graphic A panel, a `trainA` gear tooth, and a coherence-audit station.
+Twenty identifier families share one small alphabet. **41 tokens are claimed by two or more families**, 19 of them by three. `A5` is a Graphic A panel, a `trainA` gear tooth, and a coherence-audit station.
 
-**How those two numbers are got:** expand every `Range` cell in the table below into its tokens, *keeping zero-padding*, and count the tokens with more than one owner. Re-derived that way at `810d200`. An earlier reading of this file said sixteen families and 33 tokens and did not record how it counted, so the figures are replaced rather than reconciled — which is the whole complaint of [verification iteration 1](plans/verification-iteration-1-plan.md) landing on this file first.
+**How those two numbers are got:** expand every `Range` cell in the table below into its tokens, *keeping zero-padding*, and count the tokens with more than one owner. Re-derived that way at `810d200`, and again at `af89f85` after [pass 2b](plans/verification-iter1-pass-2-findings.md) registered Graphic C5's dimension planes — which added a family and moved the three-owner count from 15 to 19 without moving the two-owner total, because `D1`–`D4` already collided. An earlier reading of this file said sixteen families and 33 tokens and did not record how it counted, so the figures are replaced rather than reconciled — which is the whole complaint of [verification iteration 1](plans/verification-iteration-1-plan.md) landing on this file first.
 
 **Nothing is renamed to fix this, and nothing should be.** The gear keys are string literals in `contracts-*.js`, and [the 1:1 audit](clock/gearing-code-1to1.md) states the 47 names form a bijection with the registry — renaming a tooth breaks running code and a documented audit together. `A1` alone appears in 50 files. See [the restructure plan §4.7](plans/restructure-plan.md) for the measurement that settled this.
 
@@ -49,6 +49,7 @@ Each station applies this when it next touches a file it owns. **No file is rewr
 | HCC station / phase | `H1`–`H11`; `S0`–`S7` | [hcc-a-systems-manifest.md](clock/hcc-a-systems-manifest.md) | hologram | |
 | Cup stage | `C1`–`C5` | [coffee-cup-systems-manifest.md](clock/coffee-cup-systems-manifest.md) | hologram | |
 | Rowlands clipboard section | `D1`–`D7` | [rowlands-pass-2-plan.md](clipboards/rowlands-pass-2-plan.md) | clipboards | `D7` is optional in the plan and present in the clipboard |
+| Graphic C5 dimension plane | `D1`–`D4`, `Dn` | panel C5 of `n-dimensional-relationships.png`; read in [pass 2b](plans/verification-iter1-pass-2-findings.md) | law | printed on the panel, not assigned |
 | Water bucket / spec | `OBS` `DELTA` `UNK` `INVALID`; `F1`–`F5` | [water-systems-manifest.md](clock/water-systems-manifest.md) | hologram | |
 
 ## Collisions, and how to tell
@@ -61,7 +62,7 @@ Each station applies this when it next touches a file it owns. **No file is rewr
 | `C1`–`C5` | Graphic C panel · gear `trainC` tooth · **Cup stage** | Cup stages are event-time and appear only in Shadow prose under `docs/clock/`. Graphic C runs to `C12` |
 | `C6`–`C10` | Graphic C panel · gear `trainC` tooth | `trainC` stops at `C10`; Cup stops at `C5` |
 | `C10`–`C12` | Graphic C panel · agent control | **Zero-padding stops telling them apart at ten**: `C01`–`C09` are safe, `C10`–`C12` are byte-identical to the panels. Agent-control items are numbered rows inside [agent-control.md](kit/agent-control.md) and are cited nowhere else; a panel cite names a picture |
-| `D1`–`D6` | Graphic D panel · Rowlands clipboard section | Sections are `### D4 — …` headings and back-references inside `docs/clipboards/rowlands-*`. A panel cite names a row of the array table. **`D7` is a section only** — Graphic D stops at `D6`, so a bare `D7` is never an out-of-range panel |
+| `D1`–`D6` | Graphic D panel · Rowlands clipboard section · **Graphic C5 dimension plane** | Sections are `### D4 — …` headings and back-references inside `docs/clipboards/rowlands-*`. A panel cite names a row of the array table. A **plane** is a stacked axis inside C5 and reads `D1, D2, D3, D4, …` or `D1`–`Dn` in one breath — see [the manifest's Piece 12](systems-manifest.md), whose Source location says `C5–C8`. **`D7` is a section only**; Graphic D stops at `D6`, so a bare `D7` is never an out-of-range panel |
 | `P1`–`P4` | atomic primitive · manifest Piece (as IR `P1`) | **Write `Piece 4` for the manifest.** Bare `P4` is the atomic primitive. The IR's `P1`–`P15` are Pieces and are baked |
 | `X1`–`X6` | gear audit key · crate-map page `X` | The crate map has one page `X`, not six |
 | `R1` | gear escapement key · restructure finding 1 | Only `escape:R1` is a key; the finding is always in prose about this plan |
