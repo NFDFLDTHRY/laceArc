@@ -1,6 +1,6 @@
 # AgentScope pass 3 — system mechanisms (Wave A) + mechanism mesh
 
-**Status:** PLANNED — not executed. Emission `[GAP]`.  
+**Status:** EXECUTED. Emission `[GAP]`.  
 **Station:** clipboards (HELD `reference-Mapper`)  
 **Base at plan:** refresh to current `origin/main` before execute  
 **Paper:** Jiayi Bi et al., *Diagnosing with Insights: Structured Analysis of Agent Failures via Behavioral Abstractions*  
@@ -221,3 +221,20 @@ AGENTSCOPE’s machinery diagnoses the **holder**, not the lace.
 Taxonomy labels · ReAG · ISR · neural checks · staged verdicts are **Shadow procedures**.  
 None of them emit POINTER.  
 Φ stays `[GAP]`.
+
+---
+
+## Execution receipt
+
+| Field | Value |
+|---|---|
+| Status | EXECUTED |
+| When | 2026-09-18 ~17:42 PT |
+| Agent | `reference-Mapper` |
+| Artifact | [`agentscope-mechanisms.md`](agentscope-mechanisms.md) — Wave A M-A1…M-A9 |
+| Mesh | P3-M on book clipboard: CONFIRM ×9 · CONFLICT ×0 |
+| Five-stakes | skipped (no CONFLICT) |
+| ASCII | deferred (not created) |
+| Emission | `[GAP]` |
+| PDF | never staged |
+

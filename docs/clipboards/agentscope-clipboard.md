@@ -58,6 +58,40 @@ T5 five-stakes: **skip** — PAGE 5/5 source pins and KEEP/FORBID agree with thi
 | D7 | **included** — §3.3 staged diagnosis + §3.1 ReAG construction paper steps; FORBID-as-Core-write; SILENT for Lace append |
 
 
+
+## Pass 3 receipt
+
+| Field | Value |
+|---|---|
+| Status | EXECUTED |
+| When | 2026-09-18 ~17:42 PT |
+| Station | clipboards · agent `reference-Mapper` |
+| Plan | [agentscope-pass-3-plan.md](agentscope-pass-3-plan.md) |
+| Hands skim | shoe → graphics A–D → systems-manifest → staking / law-why → reason-model-map §5 (A1–A5) → Pass 1–2 clipboard → five-stakes PAGE 5/5 (read-only; T6 skip) → sample Rowlands/Kauffman mechanism cards |
+| PDF | **PRESENT** — cite Pass 1: `refs/local/bi-et-al-agentscope-diagnosing-insights.pdf` → attachment `6464d69d…fd1e9.pdf`; SHA-256 `6464d69d81d4265aff0cab1e1affe160ef7af4c77ccc142436528f75ea3fd1e9`; **22** pp.; text layer yes; gitignored; never staged |
+| Method | `pdftotext -f N -l N -layout` on §2 Table 1, §3.1–3.3, Fig.1–2, App. A, App. C |
+| Product | Wave A mechanism cards M-A1…M-A9 in [agentscope-mechanisms.md](agentscope-mechanisms.md); P3-M mechanism mesh below; Waves B–D deferred one-line seeds; ASCII **not** created |
+| Mesh | **CONFIRM** ×9 · **REFINE** ×0 · **CONFLICT** ×0 |
+| Amended | reason-model-map · law · graphics · five-stakes · src/ · systems-manifest · Pass 1–2 morals / FM-A* | **No** |
+| Emission | still `[GAP]` — no POINTER when / arity / adjacency; no invented Φ |
+| T6 five-stakes | **skip** (default) — P3-M finds no CONFLICT with PAGE 5/5 |
+
+### P3-M — Mechanism coherence mesh
+
+| Mechanism | Map | Clipboard PAGE | KEEP/FORBID tooth | Same story? |
+|---|---|---|---|---|
+| M-A1 Failure taxonomy catalog | **A4** | PAGE A / E | KEEP holder vocab; FORBID as Core types | **CONFIRM** |
+| M-A2 Trajectory → instrumented steps | **A1** | PAGE B | KEEP steward observation; FORBID as Lace arrival | **CONFIRM** |
+| M-A3 ReAG construction \(G=\{V,E\}\) | **A2** | PAGE C | KEEP diagnostic graph; **FORBID ReAG rows in 1D array** | **CONFIRM** |
+| M-A4 ISR packing \(I_i=(C_i,R_i,S_i)\) | **A2** | PAGE C | KEEP semantic annotation; FORBID as Lace store | **CONFIRM** |
+| M-A5 Neural-invariant catalog | **A3** | PAGE D | KEEP steward predicates; FORBID as Core proofs | **CONFIRM** |
+| M-A6 Neural function / LLM judge | **A3** | PAGE D | KEEP local detection; FORBID as Hands override | **CONFIRM** |
+| M-A7 Stage 1 ReAG construction workflow | **A2** | PAGE C / D7 | Shadow pipeline; FORBID-as-Core-write; SILENT for Lace append | **CONFIRM** |
+| M-A8 Stage 2 failure-mode detection | **A3**+**A4** | PAGE A / E / D | Holder diagnosis; FORBID as Core flags | **CONFIRM** |
+| M-A9 Stage 3 decisive-error judgment | **A5** | PAGE F / X | KEEP-read attribution; FORBID as POINTER when-rule / Φ fill | **CONFIRM** |
+
+P3-M summary: **9 CONFIRM · 0 REFINE · 0 CONFLICT**. ReAG-in-array FORBID retained (M-A3). Emission `[GAP]`. Five-stakes PAGE 5/5 untouched.
+
 ## PAGE A — FAILURE TAXONOMY FOR THE HOLDER
 
 | Field | Filled sheet |
