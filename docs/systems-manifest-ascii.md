@@ -2,7 +2,7 @@
 
 **Not the manifest.** [`systems-manifest.md`](systems-manifest.md) is the Hands contract map; this is an ASCII reading of it and settles nothing it does not.
 
-**Executed passes:** [1](systems-manifest-ascii-pass-1-plan.md) · [2](systems-manifest-ascii-pass-2-plan.md) · [3](systems-manifest-ascii-pass-3-plan.md) · [4](systems-manifest-ascii-pass-4-plan.md) · [5](systems-manifest-ascii-pass-5-plan.md) · [6](systems-manifest-ascii-pass-6-plan.md) · [7](systems-manifest-ascii-pass-7-plan.md) · [8](systems-manifest-ascii-pass-8-plan.md) · [9](systems-manifest-ascii-pass-9-plan.md). A new pass is linked here once it is executed.
+**Executed passes:** [1](systems-manifest-ascii-pass-1-plan.md) · [2](systems-manifest-ascii-pass-2-plan.md) · [3](systems-manifest-ascii-pass-3-plan.md) · [4](systems-manifest-ascii-pass-4-plan.md) · [5](systems-manifest-ascii-pass-5-plan.md) · [6](systems-manifest-ascii-pass-6-plan.md) · [7](systems-manifest-ascii-pass-7-plan.md) · [8](systems-manifest-ascii-pass-8-plan.md) · [9](systems-manifest-ascii-pass-9-plan.md) · [10](systems-manifest-ascii-pass-10-plan.md). A new pass is linked here once it is executed.
 
 **Authority:** `docs/systems-manifest.md`. Companion, not a replacement.  
 **Hands:** Graphics A–D. Shoe in hands.  
@@ -85,6 +85,8 @@ No query / delete / transaction / multi-Lace interface (manifest: none given).
 Layer III also hosts a **cite-only** Shadow SOURCE MACHINERY inventory (pass 7): nine clipboard paths outside Contract I. Not Core gear. Not a second strand. Does not fill G2 / Φ.
 
 **Dual (pass 8):** Contract map III Hands projection = **Piece 13** (views of 7, 12, 15; Graphics A–C; no upward write). Piece 13 projection ≠ Shadow SOURCE MACHINERY cite inventory. Both live under Layer III / outside upward write into I; neither is a Core write surface; neither fills G2 / Φ.
+
+**Pass 10 pointer:** Core + Shadow mechanism↔ASCII rigor map / **P10-X** → sections after Pass 9. Cite only; no gear rename; no quiet-door→I.
 
 ---
 
@@ -632,6 +634,8 @@ Global companion mesh. **Not** a shelf P3-M paste. I → III = **read / cite onl
 | Piece 13 | Hands projection dual | systems-manifest Piece 13 | views only; no upward write | `[GAP]` |
 | quiet-door | OPEN / dashed | `docs/kit/quiet-door-1-ascii.md` | -/-> Contract I | `[GAP]` |
 
+**Pass 10 pointer:** fidelity / stamp / FM / G2 rigor → **P10-X** (pass 10). Mesh body unchanged.
+
 ## Cross-walk G-III-* ↔ shelf M-*/P-* (pass 9 · cite only)
 
 Book shelves share M-A*/P-A* locally — disambiguate by **path**. Do not renumber shelf cards. Do not paste shelf bodies.
@@ -657,3 +661,90 @@ Book shelves share M-A*/P-A* locally — disambiguate by **path**. Do not renumb
 | T3 | Cross-walk G-III-* ↔ shelf M-*/P-* + paths (book M-A* disambiguated by path) |
 | T4 | Executed-passes +9; thin Pass 9 deltas; G2 `[GAP]`; Pass 7–8 retained |
 | T5 | Sealed refuse honored (no src/; no new mechanisms/ascii files; no clipboard/kit edits; no Core invent; no quiet-door→I; no invent Φ; no fill G2; no shelf body paste; no WebNN Pass 3 morals into Core) |
+
+## Core mechanism ↔ ASCII map (pass 10 · C-Mech-*)
+
+Update wave · Pass 4. Fidelity scoreboard for Pass 5/6 Core claim surfaces already on this file. **No new Core morals.** G2 / Φ stay `[GAP]`.
+
+| ID | Mechanism | Claim surface | Fidelity | Verdict | G2/Φ |
+|---|---|---|---|---|---|
+| **C-Mech-1** | One-tick | `## One-tick mechanism (pass 5)` tick diagram | Figure shows arrive→append WORD\|POINTER→participate→continue; illegal tick prose matches Rule Zero | **CONFIRM** | `[GAP]` |
+| **C-Mech-2** | Participation | `## Participation mechanism (pass 5)` WORD/PTR diagram | PTR participates in words / in participation; D1 six-of-six 2-ref stands; arity / Slot A vs B sealed `[GAP]` | **CONFIRM** | `[GAP]` |
+| **C-Mech-3** | Star | `## Star mechanism (pass 5)` star(V)=passes | Star is view of WORD passes, not a row type; D4 3D-not-stored stands | **CONFIRM** | `[GAP]` |
+| **C-Mech-4** | Dual presentation | `## Dual presentation, one mechanism (pass 5)` geometric ‖ array | Same operator, two presentations; not two engines | **CONFIRM** | `[GAP]` |
+| **C-Mech-5** | Not-a-mechanism fence | `## Not a Core mechanism (pass 5)` table | HCC/Cup/Water/Reidemeister/query/G2 stay outside I / unanswered | **CONFIRM** | `[GAP]` |
+| **C-Mech-6** | Core as clock | `## Core as clock (pass 6)` impulse/pallet/tape/hands | Going-train metaphor on Graphic D only; no gear rename; train file outside I | **CONFIRM** | `[GAP]` |
+| **C-Mech-7** | What turns what + Slip | Pass 6 bullets + `## Slip (pass 6)` table | Slip names illegal meshes; W pallet:tape lives on train, not Piece 16 | **CONFIRM** | `[GAP]` |
+| **C-Mech-8** | Two clocks | `## Two clocks, one workpiece (pass 6)` | Holder train ≠ Core append clock; mesh only as train legal work | **CONFIRM** | `[GAP]` |
+| **C-Mech-Spine** | Contract I spine box | `## Spine` Mechanism/Array + shoe | Cross-check vs C-Mech-1…4: one object, one operator; shoe arrive→append→participate→continue | **CONFIRM** | `[GAP]` |
+
+Ancestor Pass 4 Graphic B panels = graphics source (different job); not a second Core engine. CONFIRM=9 · OPEN=0 · CONFLICT=0. No P10-X-cited caption FIX required.
+
+## Layer III G-III ↔ shelf M/P rigor map (pass 10)
+
+Update wave · Pass 4. Path-verify + one fidelity line each. **KEEP-read** · **FORBID-as-Core-write**. Cite only — no panel paste. Emission `[GAP]`.
+
+| G-III | Role | Paths OK? | M-* | P-* | Fidelity (1 line) | Stamp | FM-* point | Emission |
+|---|---|---|---|---|---|---|---|---|
+| **G-III-1** | HOST/GPU | OK · ascii+mech | M-G* | P-G* | Shelf Device/Queue/Buffer mechanisms ↔ P-G* host/GPU panels; ≠ strand/store | KEEP-read / FORBID-as-Core-write | FM-Wgpu* | `[GAP]` |
+| **G-III-2** | SHADER-LANG | OK · ascii+mech | M-S* | P-S* | Shelf WGSL module/entry mechanisms ↔ P-S* draw-path panels; ≠ WORD/Φ | KEEP-read / FORBID-as-Core-write | FM-Wgsl* (+ FM-Wgpu5) | `[GAP]` |
+| **G-III-3** | HOST-NN | OK · ascii+mech | M-N* | P-N* | Shelf MLGraph/builder/MLTensor ↔ P-N* host-NN panels; ≠ strand/store/Φ | KEEP-read / FORBID-as-Core-write | FM-Webnn* | `[GAP]` |
+| **G-III-4** | wasm64 | OK · ascii+mech | M-T* | P-T* | Shelf mem/table/stack/br mechanisms ↔ P-T* ISA panels; ≠ L / cut / Φ | KEEP-read / FORBID-as-Core-write | FM-W* · FM-T* | `[GAP]` |
+| **G-III-5** | AgentScope | OK · ascii+mech | M-A* (agentscope) | P-A* | Shelf ReAG/ISR anti-model ↔ P-A* book panels; ≠ Graphic D rows | KEEP-read / FORBID-as-Core-write | FM-A* | `[GAP]` |
+| **G-III-6** | Petersen–Zech | OK · ascii+mech | M-A* (petersen) | P-A* | Shelf neuron/width/depth reading ↔ P-A*; ≠ WORD/STAR/store | KEEP-read / FORBID-as-Core-write | FM-P* | `[GAP]` |
+| **G-III-7** | Xiao–Zhu | OK · ascii+mech | M-A* (xiao-zhu) | P-A* | Shelf embed/KV/next-token anti-model ↔ P-A*; ≠ store/continue | KEEP-read / FORBID-as-Core-write | FM-X* | `[GAP]` |
+| **G-III-8** | Kauffman 4ed | OK · ascii+mech | M-A* (+ M-B*) | P-A* (+ P-B*) | Shelf knot/diagram/YBE reading ↔ P-A*/P-B*; ≠ rope/emission/array law | KEEP-read / FORBID-as-Core-write | FM-K* | `[GAP]` |
+| **G-III-9** | Rowlands | OK · ascii+mech | M-A* (+ M-B*) | P-A* (+ P-B*) | Shelf algebra/rewrite foundations ↔ P-A*/P-B*; ≠ mutate-WORD / Core ops | KEEP-read / FORBID-as-Core-write | FM-R* | `[GAP]` |
+
+Quiet-door `docs/kit/quiet-door-1-ascii.md` = OPEN / dashed (Pass 8–9); **not** a tenth shelf; **FORBID** Contract I import. Paths re-checked 2026-09-18 PT: all nine pairs present; no missing mechanisms.
+
+## P10-X — Global rigor matrix (pass 10)
+
+Update wave · Pass 4 primary steward deliverable. Shelf P4-X spirit, **global** retarget. Core rows + nine Shadow rows. Scoring: all gate cells Y → **PASS**; else **FIX** (thin caption/stamp/pointer only) or **OPEN** (defer).
+
+| Row | Kind | Claim / cite | Fidelity | Stamp | False-friend | No POINTER/Φ in fence | G2 | Score |
+|---|---|---|---|---|---|---|---|---|
+| C-Mech-1 | Core | One-tick (pass 5) | Y vs spine shoe | Core claim | n/a (Core) | Y | `[GAP]` | **PASS** |
+| C-Mech-2 | Core | Participation (pass 5) | Y; arity sealed | Core claim | n/a | Y | `[GAP]` | **PASS** |
+| C-Mech-3 | Core | Star (pass 5) | Y; not row type | Core claim | n/a | Y | `[GAP]` | **PASS** |
+| C-Mech-4 | Core | Dual (pass 5) | Y; one operator | Core claim | n/a | Y | `[GAP]` | **PASS** |
+| C-Mech-5 | Core | Not-a-mechanism (pass 5) | Y; HCC/Cup/Water out | Fence | n/a | Y | `[GAP]` | **PASS** |
+| C-Mech-6 | Core | Clock (pass 6) | Y; no gear rename | Core claim | n/a | Y | `[GAP]` | **PASS** |
+| C-Mech-7 | Core | Slip + turns (pass 6) | Y; slip ≠ new teeth | Core claim | n/a | Y | `[GAP]` | **PASS** |
+| C-Mech-8 | Core | Two clocks (pass 6) | Y; train ≠ Core clock | Core claim | n/a | Y | `[GAP]` | **PASS** |
+| C-Mech-Spine | Core | Spine Contract I box | Y vs C-Mech-1…4 | Core claim | n/a | Y | `[GAP]` | **PASS** |
+| G-III-1 | Shadow | webgpu ascii+mech | Y · M-G*/P-G* | KEEP-read / FORBID-as-Core-write | FM-Wgpu* | Y | `[GAP]` | **PASS** |
+| G-III-2 | Shadow | wgsl ascii+mech | Y · M-S*/P-S* | KEEP-read / FORBID-as-Core-write | FM-Wgsl* (+FM-Wgpu5) | Y | `[GAP]` | **PASS** |
+| G-III-3 | Shadow | webnn ascii+mech | Y · M-N*/P-N* | KEEP-read / FORBID-as-Core-write | FM-Webnn* | Y | `[GAP]` | **PASS** |
+| G-III-4 | Shadow | wasm-spec-3 ascii+mech | Y · M-T*/P-T* | KEEP-read / FORBID-as-Core-write | FM-W* · FM-T* | Y | `[GAP]` | **PASS** |
+| G-III-5 | Shadow | agentscope ascii+mech | Y · M-A*/P-A* | KEEP-read / FORBID-as-Core-write | FM-A* | Y | `[GAP]` | **PASS** |
+| G-III-6 | Shadow | petersen-zech ascii+mech | Y · M-A*/P-A* | KEEP-read / FORBID-as-Core-write | FM-P* | Y | `[GAP]` | **PASS** |
+| G-III-7 | Shadow | xiao-zhu ascii+mech | Y · M-A*/P-A* | KEEP-read / FORBID-as-Core-write | FM-X* | Y | `[GAP]` | **PASS** |
+| G-III-8 | Shadow | kauffman-4ed ascii+mech | Y · M-A*/M-B* · P-A*/P-B* | KEEP-read / FORBID-as-Core-write | FM-K* | Y | `[GAP]` | **PASS** |
+| G-III-9 | Shadow | rowlands ascii+mech | Y · M-A*/M-B* · P-A*/P-B* | KEEP-read / FORBID-as-Core-write | FM-R* | Y | `[GAP]` | **PASS** |
+| quiet-door | OPEN adjunct | `docs/kit/quiet-door-1-ascii.md` | OPEN cite only; not shelf | FORBID I import | n/a (kit) | Y | `[GAP]` | **OPEN** |
+
+### P10-X special gates
+
+| Gate | Check | Score |
+|---|---|---|
+| C-Mech-1…4 vs spine shoe | Dual stays one operator; no second engine | **PASS** |
+| C-Mech-5 | HCC/Cup/Water/Reidemeister/query outside I | **PASS** |
+| C-Mech-6…8 | Train ≠ Core clock; no gear rename; hands = projection | **PASS** |
+| Shadow G-III-1…4 | Device/Queue/dispatch/WGSL/wasm mem ≠ Core teeth · ≠ Φ | **PASS** |
+| Shadow G-III-5…9 | book neuron/embed/ReAG/knot/algebra ≠ WORD/STAR/store/history | **PASS** |
+| Cross-layer | Shadow M/P never redraw as Core impulse/pallet/tape/hands | **PASS** |
+| No POINTER/Φ claimed in fence | Companion does not smuggle emission answers | **PASS** |
+| G2 `[GAP]` | Every when/arity/adjacency row sealed | **PASS** |
+
+**P10-X verdict:** Core+Shadow rows **PASS** ×18 · FIX=0 · OPEN=1 (quiet-door adjunct only). Hard fence prose stands (Pass 7–9). No thin caption FIX required this pass.
+
+## Pass 10 deltas
+
+| Ticket | Action |
+|---|---|
+| T1 | Core mechanism↔ASCII map C-Mech-1…8 + spine; CONFIRM×9; G2/Φ `[GAP]` |
+| T2 | G-III-1…9 rigor map: paths OK; M-*/P-*; fidelity; KEEP-read / FORBID-as-Core-write; FM-* point; no panel paste |
+| T3 | P10-X matrix Core+Shadow + special gates; PASS×18 · FIX=0 · OPEN=1 (quiet-door) |
+| T4 | Thin Contract-map + P9-M pointers to Pass 10 / P10-X; no gear rename; no quiet-door→I |
+| T5 | Executed-passes +10; Pass 10 deltas; refuse honored; G2 `[GAP]`; Pass 7–9 retained |

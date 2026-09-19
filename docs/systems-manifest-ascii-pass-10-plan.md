@@ -1,6 +1,6 @@
 # Systems-manifest ASCII pass 10 plan — Update wave Pass 4 · mechanism↔ASCII rigor map
 
-**Status:** **HELD** 2026-09-18 PT. Emission `[GAP]`.  
+**Status:** **EXECUTED** 2026-09-18 PT. Emission `[GAP]`.  
 **Series:** Pass **10** (linear executed-passes list) = **Update wave · Pass 4**. Subtitle: both names.  
 **Station:** maps (catch-all for `docs/*.md` at court root). Holder: **reference-Mapper**. Keep maps **HELD**.  
 **Authority:** `docs/systems-manifest.md` (Contracts I / II / Layer III; Pieces unchanged).  
