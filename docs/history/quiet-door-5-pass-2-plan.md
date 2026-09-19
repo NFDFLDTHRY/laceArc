@@ -1,6 +1,6 @@
 # Quiet door #5 (History) — Pass 2 PLAN
 
-**Status:** PLAN only. Not run.  
+**Status:** EXECUTED — fields on `docs/history/quiet-door-5-ascii.md`. Door + extracts unchanged. Emission `[GAP]`.  
 **Station:** history (HELD Grok-history).  
 **Object:** History fields — In / Does / Break / Gap / Role.  
 **Authority:** [`quiet-door-5-ascii.md`](quiet-door-5-ascii.md) pass-1 spine. History door as written.  
