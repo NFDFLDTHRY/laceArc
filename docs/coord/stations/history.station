@@ -2,6 +2,6 @@ STATUS: HELD
 STATION: history
 OWNS: docs/history-recovered* docs/history/**
 AGENT: Grok-history
-BASE: c88517c7cc8a894a106dfc03ed74eb3cd8acdea3
-SINCE: 2026-09-19T07:21:24Z
-NOTE: Quiet door #5 pass 1 EXECUTED. Spine on quiet-door-5-ascii.md. Door untouched. Not pass 8. Next pass 2 fields. Φ [GAP].
+BASE: 53c9a4d2154cbec305649b4d906bce2d36227d8b
+SINCE: 2026-09-19T07:22:24Z
+NOTE: Quiet door #5 pass 2 PLAN. Pass 1 spine EXECUTED. Fields. Not pass 8. Φ [GAP].
