@@ -1,6 +1,6 @@
 # AgentScope — ASCII source-machinery model (Shadow)
 
-**Status:** Pass 4 EXECUTED (SOURCE MACHINERY overview + Wave A P-A1…P-A9). Emission `[GAP]`.  
+**Status:** Pass 4 EXECUTED (SOURCE MACHINERY overview + Wave A P-A1…P-A9). **Pass 5 EXECUTED** (P5-X accuracy · Order Proposal Shadow · P5-R). Emission `[GAP]`.  
 **Source:** Jiayi Bi et al., *Diagnosing with Insights: Structured Analysis of Agent Failures via Behavioral Abstractions*, arXiv:2609.02371v1 · tool **AGENTSCOPE**  
 **PDF:** `refs/local/bi-et-al-agentscope-diagnosing-insights.pdf` → attachment `6464d69d81d4265aff0cab1e1affe160ef7af4c77ccc142436528f75ea3fd1e9` (22 pp., text layer; **never git-add**)  
 **Algorithms:** [`agentscope-mechanisms.md`](agentscope-mechanisms.md) (M-A1…M-A9; algorithms unchanged this pass).  
@@ -65,6 +65,14 @@ Law: taxonomy = **holder** vocabulary · ReAG ↛ 1D array · neural invariants 
   Lace Core OFF this board --> docs/systems-manifest-ascii.md
   Phi = [GAP]
 ```
+
+**P5-X:** Accuracy matrix (all PASS) lives on the book clipboard under Pass 5 — [agentscope-clipboard.md](agentscope-clipboard.md#p5-x--accuracy-matrix-m-a--p-a--overview). This file holds **exactly one** canonical SOURCE MACHINERY overview (above).
+
+### Order proposal (Shadow) — SOURCE MACHINERY as shelf hygiene *(short mirror)*
+
+**Full text:** clipboard Pass 5. **Stamps:** KEEP-read · FORBID-as-Core-write · FORBID-ReAG-in-array · SILENT-for-Lace-append · PROPOSAL.
+
+This overview **proposes** shelf hygiene — observe → name → diagram-check → stamp-check → list OPENs → decide (commit/release/defer/stop). It is **not** Core, not an AGENTS.md amendment, not a Φ scheduler, and not a second store beside Graphic D. Recommended reader order (proposal only): clipboard → mechanisms → ascii-machinery → pass plans. See clipboard P5-P for the stage→hygiene table.
 
 ---
 

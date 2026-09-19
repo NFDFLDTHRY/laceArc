@@ -1,6 +1,6 @@
 # AgentScope pass 5 — ASCII as order proposal + accuracy steward
 
-**Status:** PLANNED — not executed. Emission `[GAP]`.  
+**Status:** **EXECUTED** — 2026-09-18 ~17:50 PT · `reference-Mapper`. Emission `[GAP]`.  
 **Station:** clipboards (HELD `reference-Mapper`)  
 **Base at plan:** refresh to current `origin/main` before execute  
 **Paper:** Jiayi Bi et al., *Diagnosing with Insights…* · arXiv `2609.02371v1` · **AGENTSCOPE**  
@@ -207,3 +207,24 @@ It does not become the lace.
 ReAG stays a photograph.  
 Decisive judgment is release/stop — not Φ.  
 `[GAP]` remains.
+
+---
+
+## Execution receipt (Pass 5)
+
+| Field | Value |
+|---|---|
+| When | 2026-09-18 ~17:50 PT |
+| Agent | `reference-Mapper` |
+| P5-X | **11 PASS · 0 FIX** (9 Wave A + trajectory input + Core/Φ off-board) |
+| P5-F | none |
+| P5-O | one canonical SOURCE MACHINERY overview in ascii-machinery.md |
+| P5-P | Order Proposal on clipboard Pass 5 + short ascii mirror |
+| P5-R | clipboard Pass 5 receipt |
+| Wave B | **SKIP** (default) |
+| Φ | still `[GAP]` |
+| Commit | see git log after execute |
+| Touched | `agentscope-clipboard.md` · `agentscope-ascii-machinery.md` · this plan |
+| Untouched | mechanisms · PAGE morals · FM-A* · P3-M · map · law · graphics · systems-manifest · Core ASCII · src/ · PDF |
+
+Acceptance: P5-X all PASS; singular overview; Order Proposal stamped Shadow / FORBID-as-Core-write / FORBID-ReAG-in-array / SILENT-for-Lace-append; stage→hygiene + file-order present; no Φ invent; PDF never staged.

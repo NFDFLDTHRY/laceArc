@@ -111,6 +111,82 @@ Pass 4 ASCII panels P-A1…P-A9 → [agentscope-ascii-machinery.md](agentscope-a
 | Emission | still `[GAP]` — no POINTER when / arity / adjacency; no panel closes Φ |
 
 
+
+## Pass 5 — Accuracy steward + Order Proposal (Shadow)
+
+**Status:** EXECUTED · 2026-09-18 ~17:50 PT · station clipboards · `reference-Mapper`  
+**Plan:** [agentscope-pass-5-plan.md](agentscope-pass-5-plan.md)  
+**ASCII:** [agentscope-ascii-machinery.md](agentscope-ascii-machinery.md) · **Mechanisms:** [agentscope-mechanisms.md](agentscope-mechanisms.md)  
+**Law:** Pass 4 SOURCE MACHINERY is a **Shadow order proposal**, not Core. Emission Φ still `[GAP]`.
+
+### P5-X — Accuracy matrix (M-A* ↔ P-A* ↔ overview)
+
+Scoring: Implements / Fence / Overview / Pin all Y → **PASS**. Every FIX would name an edit target. Prefer panel/overview/cross-walk fixes over rewriting M-A* bodies.
+
+| node (overview) | P-A* | M-A* | stamp | Implements OK | Fence OK | Overview OK | Pin OK | PASS/FIX |
+|---|---|---|---|---|---|---|---|---|
+| taxonomy labels checks (holder vocab) | P-A1 | M-A1 | KEEP-read holder; FORBID-as-Core-types | Y | Y | Y | Y | **PASS** |
+| [instrumented steps] | P-A2 | M-A2 | KEEP-read; FORBID-as-Lace-arrival | Y | Y | Y | Y | **PASS** |
+| [ReAG G={V,E} + ISR] (vertices/edges) | P-A3 | M-A3 | KEEP-read; **FORBID-ReAG-in-array** | Y | Y | Y | Y | **PASS** |
+| [ReAG G={V,E} + ISR] (ISR pack) | P-A4 | M-A4 | KEEP-read; FORBID-as-Lace-store | Y | Y | Y | Y | **PASS** |
+| [neural invariant checks] (catalog) | P-A5 | M-A5 | KEEP-read; FORBID-as-Core-proof | Y | Y | Y | Y | **PASS** |
+| [neural invariant checks] (LLM judge) | P-A6 | M-A6 | KEEP-read; FORBID-as-Hands-override | Y | Y | Y | Y | **PASS** |
+| [ReAG G={V,E} + ISR] (Stage 1 workflow) | P-A7 | M-A7 | FORBID-as-Core-write; SILENT-for-Lace-append | Y | Y | Y | Y | **PASS** |
+| [neural checks] → [candidate failures + evidence] | P-A8 | M-A8 | holder diagnosis; FORBID-as-Core-flags | Y | Y | Y | Y | **PASS** |
+| [decisive error judgment] | P-A9 | M-A9 | KEEP-read; FORBID-as-POINTER-when | Y | Y | Y | Y | **PASS** |
+| [agent trajectory / logs] (input spine) | — | — | observe shelf first | — | Y | Y | Y | **PASS** |
+| Lace Core / 1D array / Phi OFF board | — | — | FORBIDDEN off this board; Φ=`[GAP]` | — | Y | Y | Y | **PASS** |
+
+**Verdict:** **11 PASS · 0 FIX**. No P5-F edits required. Canonical overview already singular in ascii-machinery.md. Cross-walk stamps match mechanisms + P3-M teeth. PDF pins reused from Pass 1–4 (no re-sight needed).
+
+### Order proposal (Shadow) — SOURCE MACHINERY as shelf hygiene
+
+**Stamps:** **KEEP-read** · **FORBID-as-Core-write** · **FORBID-ReAG-in-array** · **SILENT-for-Lace-append** · **PROPOSAL**
+
+1. **This is a proposal, not Core.** It does not amend AGENTS.md, `systems-manifest-ascii.md`, Graphic D, reason-model-map, or law. Hands may refuse without breach of Core. It is Shadow / Layer III shelf hygiene only.
+
+2. **Stage → hygiene table** (Pass 4 SOURCE MACHINERY read as steward order):
+
+| Pipeline stage (ASCII) | Proposal for shelf / steward order |
+|---|---|
+| trajectory / logs | Observe what is actually on the shelf (files, receipts, claim state) before rewriting |
+| instrumented steps | Name artifacts and passes in recorded order; do not invent arrival order |
+| ReAG + ISR | Build a **diagnostic picture** of relations (clipboard ↔ mechanisms ↔ ASCII ↔ map); **FORBID** as a second store beside Graphic D |
+| neural / stamp checks | Run KEEP/FORBID / FM-A* / P3-M teeth as steward checks — not Core proofs |
+| candidates + evidence | List `[OPEN]` / drift / CONFLICT with evidence; do not auto-blame |
+| decisive-error judgment | Choose commit / release / defer / stop — **not** POINTER when / Φ fill |
+
+3. **Recommended reader file order** (proposal only):  
+   `clipboard (admit) → mechanisms (algorithms) → ascii-machinery (diagrams) → pass plans (history)`
+
+4. **Steward loop** when touching this shelf: observe → name → diagram-check → stamp-check → list OPENs → decide (commit / release / defer / stop).
+
+5. **Explicit FORBID:** using this loop as a Φ scheduler; ReAG-in-array / second store; Hands override; promoting this proposal into Core / AGENTS.md / systems-manifest-ascii / Graphic D. Proposal is **SILENT for Lace append** — not a Φ scheduler.
+
+6. **Honesty link:** accuracy matrix **P5-X** above is how the proposal stays honest (every M-A* ↔ P-A* ↔ overview node checked).
+
+Mirror (short): under SOURCE MACHINERY overview in [agentscope-ascii-machinery.md](agentscope-ascii-machinery.md).
+
+### P5-R — Pass 5 receipt
+
+| Field | Value |
+|---|---|
+| Status | EXECUTED |
+| When | 2026-09-18 ~17:50 PT |
+| Station | clipboards · agent `reference-Mapper` |
+| Plan | [agentscope-pass-5-plan.md](agentscope-pass-5-plan.md) |
+| Hands skim | shoe / staking → graphics A–D → systems-manifest (+ ascii Core separate) → law-why → reason-model-map §5 → M-A1…A9 → P-A1…A9 + overview → Pass 1–4 receipts → five-stakes PAGE 5/5 (read-only) |
+| PDF | **PRESENT** gitignored; never staged |
+| P5-X | **11 PASS · 0 FIX** (9 Wave A pairs + trajectory input + Core/Φ off-board) |
+| P5-F | none (matrix all PASS) |
+| P5-O | exactly one SOURCE MACHINERY overview fence in ascii-machinery.md; Core/Φ off-board |
+| P5-P | Order Proposal full text **this section**; short mirror under ascii overview |
+| Wave B | **SKIP** (default) — still deferred |
+| Emission | still `[GAP]` — no POINTER when / arity / adjacency; no invented Φ |
+| Amended | reason-model-map · law · graphics · five-stakes · src/ · systems-manifest · systems-manifest-ascii · PAGE morals · FM-A* · P3-M · M-A* bodies | **No** |
+| Touched | clipboard · ascii-machinery · pass-5-plan (EXECUTED) |
+
+
 ## PAGE A — FAILURE TAXONOMY FOR THE HOLDER
 
 | Field | Filled sheet |
