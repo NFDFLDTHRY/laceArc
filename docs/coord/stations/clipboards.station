@@ -1,7 +1,7 @@
-STATUS: FREE
+STATUS: HELD
 STATION: clipboards
 OWNS: docs/clipboards/**
-AGENT: -
-BASE: -
-SINCE: -
+AGENT: reference-Mapper
+BASE: 877c94f193cea1ecb702792b1905776f684ba622
+SINCE: 2026-09-19T03:26:57Z
 NOTE: wasm-spec-3 Pass 3 EXECUTED (M-T1…M-T9 + P3-M); station FREE

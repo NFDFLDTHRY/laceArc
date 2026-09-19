@@ -1,6 +1,6 @@
 # WebAssembly Spec 3.0 — Pass 5 PLAN (ASCII as Order Proposal + light accuracy steward)
 
-**Status:** **HELD / NOT EXECUTED** — plan only · 2026-09-18 ~20:22 PT  
+**Status:** **EXECUTED** · 2026-09-18 ~20:30 PT · agent `reference-Mapper`  
 **Station:** clipboards (HELD `reference-Mapper` · claim for wasm-spec-3 Pass 5 plan)  
 **Base at plan:** `2b6d048` (== `origin/main` at claim; includes Pass 4 tip `857ca97` + projection ixp1) · refresh to current `origin/main` before execute  
 **Spec:** WebAssembly Specification **Release 3.0** (2026-09-11) · editor Andreas Rossberg / W3C CG  
@@ -50,7 +50,7 @@ pull/ff → claim clipboards → Hands + target-mesh skim
 |        systems-manifest-ascii / Graphic D.                             |
 |  WASM ops = TARGET semantics.  Do NOT invent POINTER emission / Phi.   |
 |  Zero crates.io / foreign deps.  No src/ until pointer-emission accepted.|
-|  Status: HELD / NOT EXECUTED — plan only. Do not write P5-P body now.  |
+|  Status: EXECUTED — see clipboard P5-X / P5-P / P5-R.                  |
 +======================================================================+
 ```
 
@@ -348,3 +348,23 @@ Emission stays `[GAP]`.
 | `docs/coord/stations/clipboards.station` (claim/release as protocol) | PDF · `src/` · rust-nostd · law · graphics · systems-manifest · five-stakes |
 
 After plan commit: **release** clipboards station. Ahead of origin by plan commit only. Do not push. Do not execute P5-X/F/O/P/R now.
+
+
+---
+
+## Execute receipt
+
+| Field | Value |
+|---|---|
+| Status | **EXECUTED** |
+| When | 2026-09-18 ~20:30 PT |
+| Agent | `reference-Mapper` |
+| Base at execute | origin/main `877c94f` (plan rebased from `e123f23` → `db1e305`) |
+| P5-X | Rigorous Spec↔ASCII mapping · see clipboard · **18 PASS · 0 FIX** |
+| P5-F | none |
+| P5-O | singular overview stand |
+| P5-P | clipboard full + ascii short mirror |
+| P5-R | clipboard |
+| Wave B | SKIP |
+| Emission | `[GAP]` |
+| Push | **not** performed |

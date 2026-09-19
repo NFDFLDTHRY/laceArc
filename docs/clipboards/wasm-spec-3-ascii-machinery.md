@@ -1,6 +1,6 @@
 # WebAssembly Spec 3.0 — ASCII SOURCE MACHINERY (Shadow · compile target)
 
-**Status:** Pass 1–4 EXECUTED (Pass 4 = representation fidelity). Emission `[GAP]`. See clipboard **P4-X / P4-R**.  
+**Status:** Pass 1–5 EXECUTED (Pass 5 = rigorous Spec↔ASCII mapping + Shadow Order Proposal). Emission `[GAP]`. See clipboard **P5-X / P5-P / P5-R**.  
 **Source:** Andreas Rossberg / WebAssembly Community Group, *WebAssembly Specification* Release **3.0 (2026-09-11)**.  
 **PDF:** `refs/local/webassembly-spec-3.0.pdf` → attachment `687e73641a7eec8692273fdf048e1578bf2f379f507c36ec284a39d9e7f70fce` (323 pp., text layer; **never git-add**). SHA-256 `687e73641a7eec8692273fdf048e1578bf2f379f507c36ec284a39d9e7f70fce`. Printed ≈ PDF − 4.  
 **Admission:** [`wasm-spec-3-clipboard.md`](wasm-spec-3-clipboard.md).  
@@ -77,6 +77,12 @@ Law: WASM = **machine we may compile toward**, not the lace · linear memory ≠
 ```
 
 stamp under fence: KEEP-read-as-target overview | FORBID-as-Core-write | FORBID-as-Lace-store | SILENT-for-Lace-append | Phi=[GAP]
+
+### Order proposal (Shadow) — SOURCE MACHINERY as shelf hygiene *(short mirror)*
+
+**Full text:** clipboard Pass 5 **P5-P**. **Stamps:** KEEP-read · FORBID-as-Core-write · FORBID-as-Lace-store · FORBID-as-emission-rule · FORBID-as-Core · FORBID fill-GAP · SILENT-for-Lace-append · PROPOSAL · NON-binding.
+
+This overview **proposes** compile-target shelf hygiene when the mesh aims at wasm32 — observe → name → diagram-check → stamp-check → list OPENs → decide (commit/release/defer/stop). It is **not** Core, not an AGENTS.md amendment, not Graphic D, not a Φ scheduler, and **NON-binding** on `systems-manifest-ascii.md` / rust-nostd maps (doors stay proposals). Keep-outs stand: mem≠strand · table≠star · stack≠append · br/return≠Φ · validate≠admit POINTER · host≠fill `[GAP]` · trap≠Lace cut · instantiate≠Core birth · ascii≠Graphic D/Core. Recommended reader order (proposal only): clipboard → mechanisms → ascii-machinery → pass plans (rust-nostd cite beside). Emission `[GAP]`. See clipboard P5-P for stage→hygiene table + P5-X Spec↔ASCII mapping.
 
 ---
 
@@ -387,3 +393,9 @@ Steward refuse tests (stamp-supported): linear memory as Lace strand · `br`/`re
 ## Pass 4 pointer (ascii)
 
 Representation fidelity steward EXECUTED on clipboard (**P4-A / P4-X / P4-F / P4-O / P4-R**). Canonical overview = this file’s singular SOURCE MACHINERY fence (count=1). Emission still `[GAP]`.
+
+---
+
+## Pass 5 pointer (ascii)
+
+Rigorous Spec↔ASCII mapping steward + Shadow Order Proposal EXECUTED on clipboard (**P5-X / P5-F / P5-O / P5-P / P5-R**). Canonical overview = this file’s singular SOURCE MACHINERY fence (count=1; P5-O stand). Short Order Proposal mirror under overview. Emission still `[GAP]`.
