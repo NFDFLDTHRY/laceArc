@@ -39,7 +39,7 @@ Leftover from iteration 1, in order. These are **iteration 2 passes 1–6**, not
 
 | i2 pass | Act | Plan on disk |
 |---|---|---|
-| 1 | B7–B9 grain (thread / remains / interior) **OPEN** | [`ascii-iteration-2-pass-1-plan.md`](ascii-iteration-2-pass-1-plan.md) |
+| 1 | B7–B9 grain (thread / remains / interior) **EXECUTED** | [`ascii-iteration-2-pass-1-plan.md`](ascii-iteration-2-pass-1-plan.md) |
 | 2 | B mechanism map (B12 operator; feeds vs D types) | not written |
 | 3 | Graphic C spine | not written |
 | 4 | C fields | not written |

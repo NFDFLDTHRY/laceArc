@@ -2,7 +2,7 @@
 
 **Not Graphic B.** [`mechanisms-in-3d.png`](mechanisms-in-3d.png) is the source. This is an ASCII reading of how the wire behaves and settles nothing the PNG does not.
 
-**Executed:** [pass 1](graphic-b-ascii-pass-1-plan.md) · [pass 2](graphic-b-ascii-pass-2-plan.md).  
+**Executed:** [pass 1](graphic-b-ascii-pass-1-plan.md) · [pass 2](graphic-b-ascii-pass-2-plan.md) · [i2p1](ascii-iteration-2-pass-1-plan.md).  
 **Station:** graphics.  
 **Store:** Graphic D. B is the mechanism reading of the same strand.  
 **Not this file:** Graphic A ASCII (`graphic-a-ascii.md` is closed), C, D1 tape, Hands-manifest spine (`docs/systems-manifest-ascii.md`), H×C×W oil, `src/`, POINTER emission answers.
@@ -174,4 +174,58 @@ B10 / B11 have no constructive operator. Their Does is the prohibition.
 | T3 | G2 pointed from B8, not filled |
 | T4 | Spine above this section left in place |
 
-Queued (iteration 2, not this file's iteration-1 body): B7–B9 grain; mechanism map vs D types. See [`ascii-iterations.md`](ascii-iterations.md).
+## Iteration 2 pass 1 — B7–B9 grain
+
+Thread ≠ attach. A touch stays. Interior is traffic, not a table. G2 pointed, not filled.
+
+### B7 — thread, not attach
+
+B7: a new occurrence does not sit on the outside. It threads the existing 3D structure.
+
+| Move | On B7 | Looks like | Must not become |
+|---|---|---|---|
+| Attach | forbidden picture | new wire stuck to the outside of a star | the model of later participation |
+| Thread | the move B names | new wire through the existing formation | a POINTER-when rule |
+
+### B8 — the touch remains
+
+B8: the newly created touch remains in Lace. Later wire can re-enter it. A touch becomes material for future Lace.
+
+| After the pass | Stays? | Re-enter later? | Collapse would look like |
+|---|---|---|---|
+| the touch | yes | yes | drop it when the sentence ends |
+| the sentence-as-unit | no (B5: the sentence is the wire) | no | a stored sentence object |
+| a stored edge A—B | no (that is B11's shadow) | no | freeze the pass as one edge |
+
+B8 names permanence and later participation. When a POINTER is appended remains `[GAP]` (G2).
+
+### B9 — interior traffic
+
+B9 source labels as printed on this graphic: not recovered this tick.
+
+| Source label on B9 | Kind of pass | Merged with any other? |
+|---|---|---|
+| — | — | no |
+
+Do not import A12's six labels. If a later pass reads printed sources on B9, the PNG wins.
+
+```
+ same star
+ many strands
+ many crossings
+ all remain in Lace
+ none merged or lost
+```
+
+Interior is this rule. Not coordinates. Not a row type next to WORD | POINTER.
+
+## Iteration 2 pass 1 deltas
+
+| Ticket | Action |
+|---|---|
+| T1 | Attach vs thread table |
+| T2 | What remains after the pass |
+| T3 | B9 interior rule; source labels `[GAP]` |
+| T4 | G2 pointed from B8, not filled |
+
+Queued (later i2, not this pass): B mechanism map vs D types; Graphic C. See [`ascii-iterations.md`](ascii-iterations.md).

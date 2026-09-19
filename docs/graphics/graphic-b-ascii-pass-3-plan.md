@@ -1,6 +1,6 @@
 # Graphic B → ASCII systems diagram — Pass 3 PLAN
 
-**Status:** OPEN as alias of [`ascii-iteration-2-pass-1-plan.md`](ascii-iteration-2-pass-1-plan.md). Same ticket. Do not execute twice. Iteration 1 stays closed.  
+**Status:** EXECUTED as alias of [`ascii-iteration-2-pass-1-plan.md`](ascii-iteration-2-pass-1-plan.md). Same ticket. Iteration 1 stays closed. Emission `[GAP]`.  
 **Station:** graphics (HELD Grok-graphics). No separate `graphic-b` station — `docs/graphics/**` already maps here. A second station would split OWNS.  
 **Claim:** Graphic B is the active object on this station. Pass 1 spine and pass 2 fields already on main (iteration 1 passes 5–6). This ticket is B7–B9 grain = B map pass 3 = **i2p1**.  
 **Authority:** Graphic B panels B7, B8, B9 on `docs/graphics/mechanisms-in-3d.png`. Then pass-1 spine + pass-2 rows on [`graphic-b-ascii.md`](graphic-b-ascii.md).  

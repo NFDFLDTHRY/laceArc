@@ -2,6 +2,6 @@ STATUS: HELD
 STATION: graphics
 OWNS: docs/graphics/** docs/graphics-close-reading.md
 AGENT: Grok-graphics
-BASE: 93033a08c883cc2ce34630964a2519f4a54e9e26
-SINCE: 2026-09-19T05:34:40Z
-NOTE: Active object Graphic B. i1 CLOSED 6/6. i2 OPEN pass 1 (B7–B9 grain). Same strand as Graphic D. Not a second store. Φ [GAP].
+BASE: 494031613115c9eb94a8b5680e172f1572382421
+SINCE: 2026-09-19T05:38:37Z
+NOTE: Active object Graphic B. i1 CLOSED 6/6. i2 pass 1 EXECUTED. Next i2p2 mechanism map. Same strand as Graphic D. Not a second store. Φ [GAP].

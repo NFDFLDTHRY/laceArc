@@ -1,6 +1,6 @@
 # Graphics ASCII — Iteration 2, Pass 1 PLAN
 
-**Status:** PLAN only. Not run. Iteration 2 is **open**. Iteration 1 stays closed.  
+**Status:** EXECUTED — B7–B9 grain on `docs/graphics/graphic-b-ascii.md`. Iteration 2 remains open (pass 1 of 6). Iteration 1 stays closed. Emission `[GAP]`.  
 **Station:** graphics (HELD Grok-graphics).  
 **Object:** Graphic B.  
 **This pass:** B7–B9 grain (thread / remains / interior). Same leftover named in [`ascii-iterations.md`](ascii-iterations.md). Companion grain sheet: [`graphic-b-ascii-pass-3-plan.md`](graphic-b-ascii-pass-3-plan.md) (alias; do not execute twice).  
