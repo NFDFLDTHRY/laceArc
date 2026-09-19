@@ -30,3 +30,5 @@ POINTER emission stays `[GAP]`. No `src/`.
 ## Relationship evidence questions
 
 [Two-point challenge, pass 1](relationship-evidence-pass-1.md): reproducibly sampled historical snapshots; word / definition-route / retained-touch questions for the global mapper. Sampling and bounded text inspection performed; mapper response and independent adjudication **NOT_RUN**. The two snapshots share document blobs and are not independent corroboration. This is not recovery pass 8, a global-diagram pass, or a reopening of quiet-door #5. No acceptance or Core change.
+
+[Pass 1 review plan](relationship-evidence-pass-1-plan.md): **PLAN ONLY; review execution NOT_RUN**. Answers the existing Q1-Q5 through a source-to-diagram coupling review and a same-strand/two-views counterexample. The findings document is a proposed execution output, not an existing result. Publication does not execute the plan or authorize changes to the global companion.
