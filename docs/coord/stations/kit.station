@@ -1,7 +1,7 @@
-STATUS: FREE
+STATUS: HELD
 STATION: kit
 OWNS: docs/kit/** .claude/**
-AGENT: -
-BASE: -
-SINCE: -
-NOTE: Scanner-fix CLOSED 6/6. Kit FREE. LIVE ≠ idle. Φ [GAP].
+AGENT: Grok-kit
+BASE: cfd7a5030bfe97bb87e5ecf52f8fc9cd73811921
+SINCE: 2026-09-19T06:48:10Z
+NOTE: Court door pass 1 PLAN. Object docs/README.md. Door untouched. Not law rewrite. Φ [GAP].
