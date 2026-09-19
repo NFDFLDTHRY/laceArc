@@ -1,7 +1,7 @@
-STATUS: FREE
+STATUS: HELD
 STATION: clipboards
 OWNS: docs/clipboards/**
-AGENT: -
-BASE: -
-SINCE: -
+AGENT: webgpu Pass 3 PLAN (HOST/GPU mechanisms)
+BASE: 0e95a18bb73c746e9cd024022b80c2213f0f2304
+SINCE: 2026-09-19T03:54:36Z
 NOTE: webgpu Pass 2 EXECUTED (host/GPU FM-Wgpu* / D1–D6+D7); Pass 1 EXECUTED; wasm-spec-3 Pass 6 EXECUTED (wasm64); FREE
