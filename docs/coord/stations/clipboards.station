@@ -4,4 +4,4 @@ OWNS: docs/clipboards/**
 AGENT: -
 BASE: -
 SINCE: -
-NOTE: wasm-spec-3 Pass 6 PLAN rebuild (wasm64 seal); HELD/NOT EXECUTED
+NOTE: wasm-spec-3 Pass 6 EXECUTED (wasm64 seal); DIAGRAM SOUND WITH OPENS; FREE
