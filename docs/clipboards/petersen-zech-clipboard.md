@@ -57,6 +57,23 @@ T5 five-stakes: **skip** — PAGE 4/5 source pins and KEEP/FORBID agree with thi
 | T5 five-stakes | **skip** (default) |
 | D7 | **included** — §10.1–10.2 GD/SGD update (PDF 133, 138); FORBID-as-Core-write; SILENT for Lace append |
 
+## Pass 3 receipt
+
+| Field | Value |
+|---|---|
+| Status | **EXECUTED** |
+| When | 2026-09-18 ~18:30 PT |
+| Station | clipboards · agent `reference-Mapper` |
+| Plan | [petersen-zech-pass-3-plan.md](petersen-zech-pass-3-plan.md) |
+| Hands skim | shoe → graphics A–D → systems-manifest → staking / law-why → reason-model-map §4 (P1–P7) → Pass 1–2 clipboard → five-stakes PAGE 4/5 (read-only; T6 skip) → AgentScope mechanisms schema sample |
+| PDF | **PRESENT** — cite Pass 1: `refs/local/petersen-zech-mathematical-theory-deep-learning.pdf` → `a8505f3d…c84383fa.pdf`; **333** pp.; text layer; SHA match; gitignored; **never staged** |
+| Method | `pdftotext -f N -l N -layout` on Wave A loci (Def 2.1, Remark 2.2, Ch.3/5–11); Pass 1–2 pins reused |
+| Product | [petersen-zech-mechanisms.md](petersen-zech-mechanisms.md) Wave A **M-A1…M-A9**; P3-M mechanism mesh (below); Waves B–D one-line deferred seeds only; **ASCII deferred** (no ascii-machinery file) |
+| Mesh summary | **CONFIRM** ×7 · **REFINE** ×2 · **CONFLICT** ×0 (see P3-M) |
+| Amended | reason-model-map · law · graphics · five-stakes · src/ · systems-manifest · A–X morals · D1–D6 · FM-P* · D7 | **No** |
+| Emission | still `[GAP]` — no POINTER when / arity / adjacency; no invented Φ |
+| T6 five-stakes | **skip** (default) — PAGE 4/5 KEEP/FORBID agree; no CONFLICT |
+
 ## PAGE A — FUNCTION ≠ CONSTRUCTION
 
 | Field | Filled sheet |
@@ -268,6 +285,28 @@ PDF is **PRESENT** (do not narrate absent). Pass 1 receipt: `refs/local/petersen
 
 **Lace refusal:** this updates **parameters** on paper. It does **not** rewrite WORD/POINTER history, does **not** append to Graphic D, does **not** treat \(w\) or \(G_k\) as occurrence memory, and does **not** schedule POINTER emission.
 
+
+
+
+## Pass 3 — P3-M mechanism coherence mesh
+
+Mechanism cards: [petersen-zech-mechanisms.md](petersen-zech-mechanisms.md). One tooth per Wave A card. Pass 1–2 morals / FM-P* / D1–D7 unchanged. CONFLICT would halt; none found.
+
+| Mechanism | Map | Clipboard PAGE | KEEP/FORBID tooth | Same story? |
+|---|---|---|---|---|
+| **M-A1** Feedforward Def 2.1 | **P1** | B | KEEP-read map; **FORBID** star=neuron / Core type | **CONFIRM** |
+| **M-A2** Remark 2.2 fn≠construction | **P5** | A | KEEP-read (P5); **FORBID** Φ-sameness as Lace identity | **CONFIRM** |
+| **M-A3** Universal approx Ch.3 | **P3** | X | KEEP-read existence; **FORBID** approx⇒possession | **CONFIRM** |
+| **M-A4** ReLU/CPWL calculus Ch.5 | **P3** (kin) | X / B | KEEP-read book algebra; **FORBID** as Core ops | **REFINE** (explicit Ch.5 calculus card; morals unchanged) |
+| **M-A5** Affine pieces / depth Ch.6–7 | **P3** | X / B | KEEP-read; **FORBID** depth/width⇒Lace rooms (FM-P8) | **CONFIRM** |
+| **M-A6** High-d / Barron / compositionality Ch.8 | **P3** | X | KEEP-read; **FORBID** as Core dimension axis | **CONFIRM** |
+| **M-A7** Interpolation / reconstruction Ch.9 | **P7**/P3 | F / X | KEEP-read; **FORBID** as POINTER when-rule (FM-P9) | **CONFIRM** |
+| **M-A8** Training GD/SGD/backprop Ch.10 | **P4** | C | **FORBID-as-Lace-history**; SILENT for Lace append | **CONFIRM** |
+| **M-A9** NTK linearization / ∞-width §11.3–11.6 | **P7** | E | **FORBID-as-store**; width≠Piece 12 | **CONFIRM** |
+
+**P3-5S five-stakes:** skip — no PAGE 4/5 drift; mesh does not soften KEEP function≠construction or FORBID star=neuron / train-w / GNN / NTK.
+
+**Counts:** CONFIRM 7 · REFINE 2 · CONFLICT 0.
 
 ## Source and law receipt
 

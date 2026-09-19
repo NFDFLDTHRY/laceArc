@@ -1,6 +1,6 @@
 # Petersen & Zech pass 3 — system mechanisms (Wave A) + mechanism mesh
 
-**Status:** PLANNED — not executed. Emission `[GAP]`.  
+**Status:** **EXECUTED** 2026-09-18 ~18:30 PT. Emission still `[GAP]`.  
 **Station:** clipboards (HELD `reference-Mapper`)  
 **Base at plan:** refresh to current `origin/main` before execute  
 **Book:** Philipp Petersen & Jakob Zech, *Mathematical theory of deep learning*  
@@ -218,3 +218,22 @@ Forward maps and approximation constructions are not Lace possession.
 Training updates parameters — not occurrence history.  
 NTK is analysis — not a second store.  
 Φ stays `[GAP]`.
+
+
+---
+
+## Execution receipt
+
+| Field | Value |
+|---|---|
+| Status | **EXECUTED** |
+| When | 2026-09-18 ~18:30 PT |
+| Station | clipboards · `reference-Mapper` |
+| Artifact A | `docs/clipboards/petersen-zech-mechanisms.md` — M-A1…M-A9 filled |
+| Artifact B | P3-M mesh + Pass 3 receipt on `petersen-zech-clipboard.md` |
+| Mesh | CONFIRM 7 · REFINE 2 · CONFLICT 0 |
+| Five-stakes | skip (default) |
+| ASCII | deferred — no ascii-machinery file |
+| Emission | `[GAP]` |
+| PDF | never staged |
+| Push | not performed |
