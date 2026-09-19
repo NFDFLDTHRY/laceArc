@@ -1,6 +1,6 @@
 # Projection iteration 4 / pass 4 plan — first load paints
 
-**Status:** PLAN. Not executed. Emission `[GAP]`.  
+**Status:** EXECUTED. Emission `[GAP]`. Title `i4p4`. First SW claim does not reload. Cold pageshow does not reboot. Layout rAF before adapter.  
 **Station:** hologram  
 **Evidence:** `i4p3` paints after reload. First open of the SHA (and first open of the WebAPK) is a dark stage. Reload then `GPU on`.
 

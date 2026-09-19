@@ -57,7 +57,7 @@ aside[hidden]{display:none}
 </div>
 <div class="hud">
   <header class="hit">
-    <h1>LAYER III · i4p3 · RAWCDN SHA</h1>
+    <h1>LAYER III · i4p4 · RAWCDN SHA</h1>
     <p>Install this URL only if it is <code>rawcdn.githack.com</code> + a full SHA. Floating <code>main</code> is preview. Cubes are glyphs. No emitter. [GAP]</p>
   </header>
   <div class="modes hit">
@@ -82,9 +82,10 @@ aside[hidden]{display:none}
     <div class="row">
       <input id="t" type="range" min="0" max="10" step="0.02" value="0"/>
       <span id="phase">t=0000</span>
-      <span class="stamp">i4p3</span>
+      <span class="stamp">i4p4</span>
       <span class="stamp">A17</span>
       <span class="stamp" id="gpustamp">GPU ?</span>
+      <span class="stamp" id="bootstamp">boot ?</span>
       <span class="stamp" id="szstamp">?x?</span>
       <span class="stamp" id="nstamp">n=?</span>
       <span class="stamp" id="nnstamp">WebNN ?</span>
@@ -294,7 +295,7 @@ function lookAt(e,c,up){
 function bakeViaWorker(src){
   return new Promise((resolve, reject) => {
     let w;
-    try { w = new Worker(src || "projection-bake-worker.js?i=4p3"); }
+    try { w = new Worker(src || "projection-bake-worker.js?i=4p4"); }
     catch (e) { reject(e); return; }
     const t = setTimeout(() => { try{w.terminate();}catch(_){ } reject(new Error("bake timeout")); }, 8000);
     w.onerror = e => { clearTimeout(t); try{w.terminate();}catch(_){ } reject(e); };
@@ -314,9 +315,9 @@ function bakeViaWorker(src){
 let bakedScene=null;
 async function bakeScene(){
   if(bakedScene && bakedScene.P && bakedScene.P.length>6) return bakedScene;
-  try { bakedScene = await bakeViaWorker("projection-bake-worker.js?i=4p3"); }
+  try { bakedScene = await bakeViaWorker("projection-bake-worker.js?i=4p4"); }
   catch (e1) {
-    const src = await fetch("projection-bake-worker.js?i=4p3", {cache:"no-store"}).then(r => {
+    const src = await fetch("projection-bake-worker.js?i=4p4", {cache:"no-store"}).then(r => {
       if (!r.ok) throw new Error("worker fetch "+r.status);
       return r.text();
     });
@@ -330,6 +331,11 @@ async function bakeScene(){
 let playing=true, tVal=0, gpuLive=false;
 let gpuBooting=false, gpuGen=0, needReboot=false, gpuGaveUp=false;
 let gpuSession=null, lastRebootAt=0;
+const hadController=!!(navigator.serviceWorker && navigator.serviceWorker.controller);
+{
+  const b=document.getElementById("bootstamp");
+  if(b) b.textContent = hadController ? "boot rel" : "boot 1st";
+}
 function showLook(t){
   const a=document.getElementById("look-lattice");
   const b=document.getElementById("look-traces");
@@ -397,6 +403,7 @@ async function bootGpu(){
   gpuBooting=true;
   needReboot=false;
   gpuGaveUp=false;
+  lastRebootAt=performance.now();
   gpuGen++;
   const my=gpuGen;
   killGpuSession();
@@ -417,6 +424,8 @@ async function main(gen){
   const szstamp=document.getElementById("szstamp");
   const nstamp=document.getElementById("nstamp");
   showLook(tVal);
+  await new Promise(r=>requestAnimationFrame(()=>requestAnimationFrame(r)));
+  if(gen!==gpuGen) return;
   if(!navigator.gpu){ keepFallback("No navigator.gpu — CSS grid on stage."); return; }
   const ad=await navigator.gpu.requestAdapter();
   if(gen!==gpuGen) return;
@@ -565,7 +574,8 @@ async function main(gen){
 }
 addEventListener("resize", ()=>{ if(gpuSession && gpuSession.resize) gpuSession.resize(); });
 addEventListener("pageshow", ev=>{
-  requestReboot(ev.persisted?"bfcache":"pageshow");
+  if(ev.persisted) requestReboot("bfcache");
+  else if(gpuSession && gpuSession.resize) gpuSession.resize();
 });
 addEventListener("pagehide", ()=>{ gpuLive=false; });
 addEventListener("freeze", ()=>{ gpuLive=false; });
@@ -595,7 +605,7 @@ function runAudit(){
   const el=document.getElementById("audit");
   if(!el) return;
   const title=document.querySelector("h1")?.textContent||"";
-  const A=/i4p3/.test(title)?"ok":"fail";
+  const A=/i4p4/.test(title)?"ok":"fail";
   const D=!!(navigator.serviceWorker && navigator.serviceWorker.controller);
   const E=!!(window.deferredPrompt || window.matchMedia("(display-mode: standalone)").matches);
   const F=!!document.getElementById("installbtn");
@@ -606,7 +616,7 @@ function runAudit(){
     const ct=r.headers.get("content-type")||"";
     const B=/manifest|json/i.test(ct)?"ok":("fail "+ct);
     el.textContent=
-      "A title i4p3 "+A+"\n"+
+      "A title i4p4 "+A+"\n"+
       "B manifest MIME "+B+"\n"+
       "C icons 192+512 ok\n"+
       "D SW controlling "+(D?"ok":"fail")+"\n"+
@@ -724,6 +734,7 @@ document.getElementById("installbtn").addEventListener("click", async ev=>{
 });
 if ("serviceWorker" in navigator) {
   let reloading=false;
+  const already=hadController;
   navigator.serviceWorker.register("sw.js", { scope: "./", updateViaCache: "none" })
     .then(reg => {
       const e=document.getElementById("pwastamp");
@@ -758,9 +769,14 @@ if ("serviceWorker" in navigator) {
     })
     .catch(() => { const e=document.getElementById("pwastamp"); if(e) e.textContent="PWA off"; });
   navigator.serviceWorker.addEventListener("controllerchange", () => {
+    const e=document.getElementById("pwastamp");
+    if(!already){
+      if(e) e.textContent="PWA on";
+      return;
+    }
     if(reloading) return;
     reloading=true;
-    const e=document.getElementById("pwastamp"); if(e) e.textContent="PWA upd";
+    if(e) e.textContent="PWA upd";
     location.reload();
   });
 } else {
