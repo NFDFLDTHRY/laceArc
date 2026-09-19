@@ -2,7 +2,7 @@
 
 **Object:** `docs/history/README.md`  
 **Station:** history.  
-**Executed:** [quiet-door-5-pass-1-plan.md](quiet-door-5-pass-1-plan.md) · [quiet-door-5-pass-2-plan.md](quiet-door-5-pass-2-plan.md) · [quiet-door-5-pass-3-plan.md](quiet-door-5-pass-3-plan.md).  
+**Executed:** [quiet-door-5-pass-1-plan.md](quiet-door-5-pass-1-plan.md) · [quiet-door-5-pass-2-plan.md](quiet-door-5-pass-2-plan.md) · [quiet-door-5-pass-3-plan.md](quiet-door-5-pass-3-plan.md) · [quiet-door-5-pass-4-plan.md](quiet-door-5-pass-4-plan.md).  
 **Not:** Core. Not an emitter. Not Hands. Not history pass 8. Not door #4 pass 7.  
 **Emission:** `[GAP]`. No `src/`. History door bytes untouched. Extracts untouched.
 
@@ -119,4 +119,68 @@ Extract is evidence. Sit-note is ruling. Law stores. Those are not the same colu
 | T1 | Seven-row grain |
 | T2 | Extract ≠ sit-note ≠ law |
 | T3 | Pass 8 not a row |
+| T4 | Door + extracts + live law untouched |
+
+## Pass 4 — walk
+
+This walk recovers evidence, sits it against law, and does not write law. Hands keeps A13. Walkers stay dead.
+
+### Operator (from the history door)
+
+```
+ ╔══════════════════════════════════════════════════════════════╗
+ ║  Readings against current law. Not Core.                     ║
+ ║  History does not amend law.                                 ║
+ ╚══════════════════════════════════════════════════════════════╝
+
+  reader arrives at docs/history/README.md
+    if an extract is asked     → evidence; do not rewrite it
+    if a sit-note is asked     → ruling; not live law
+    if law is asked            → send to live law
+    never: extract ⇒ law
+    never: sit-note ⇒ law
+    never: walker ⇒ revived
+    never: this iteration ⇒ pass 8
+
+  not "emit POINTER."
+  not A13 arrive / through-star / continue.
+```
+
+### Application register
+
+| # | Role | What arrives | What is walked | What continues | New machine? |
+|---|---|---|---|---|---|
+| Hy1 | door | a reader at `docs/history/` | index of extracts / sits | live law still the store | no |
+| Hy2 | readings | a bid to treat history as Hands | keep them off Core | — | no |
+| Hy3 | extract | a recovered pass | hold evidence | do not rewrite | no |
+| Hy4 | sit-note | an extract against current law | hold the ruling | do not become law | no |
+| Hy5 | bound 1–7 | a request for pass 8 | list what landed | stop | no |
+| Hy6 | walkers | a revival from an extract | reject | AGENTS list still binds | no |
+| Hy7 | pass 6 | HCC / Cup / Water originals vs surfaces | already bound | gears stay off Core rows | no |
+| Hy8 | pass 7 JSON | a machine record | cite pass 6 | not the store | no |
+
+All `New machine?` = no.
+
+### History versus live law versus Hands
+
+```
+ quiet-door-5-ascii.md       history door            live law
+ --------------------       -------------            --------
+ history reading            the index                the store
+ names extract / sit        names extract / sit      wins
+
+ wrapper-as-Core            [X]
+ Hands verbs pasted here    [X]
+ walker revived             [X]
+ pass 8                     [X]
+ G2                         [GAP]
+```
+
+## Pass 4 deltas
+
+| Ticket | Action |
+|---|---|
+| T1 | One walk box quoted from the history door |
+| T2 | Eight-row register; all New machine?=no |
+| T3 | History ↔ live law ↔ Hands |
 | T4 | Door + extracts + live law untouched |
