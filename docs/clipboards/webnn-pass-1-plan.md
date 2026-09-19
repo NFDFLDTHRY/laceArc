@@ -1,10 +1,10 @@
 # WebNN CRD 2026-09-10 — Pass 1 PLAN (PDF admission · HOST-NN inference API reference)
 
-**Status:** **HELD** / **NOT EXECUTED** — plan only; awaiting human **Proceed**.  
-**Station:** clipboards (claim note: `webnn Pass 1 PLAN only`)  
-**Base at plan:** `3b7a4b3` (= `origin/main` after Graphic A ASCII pass 4 plan) · refresh `git pull --ff-only` before any execute  
+**Status:** **EXECUTED** — Pass 1 products landed (2026-09-18 ~22:19 PT).  
+**Station:** clipboards (claim note: `webnn Pass 1 EXECUTE`)  
+**Base at plan:** `3b7a4b3` · execute rebased onto `58b12f9` (= origin/main) · plan commits rebased `3917723`/`bc04c36` (was `cd02180`/`2f28909`)  
 **Emission:** still `[GAP]` (`docs/pointer-emission.md` = DRAFT, not human-accepted)  
-**Push:** **DO NOT PUSH** this plan turn.  
+**Push:** **DO NOT PUSH** this execute turn (ask before push). Pass 1 products landed.  
 **Kebab strand:** stick to `webnn-*` for all products of this shelf (`webnn-pass-1-plan.md`, future `webnn-clipboard.md`, …).
 
 ---
@@ -300,14 +300,15 @@ Mechanisms/ASCII wait for later passes.
 
 ---
 
-## Execution receipt (Pass 1) — placeholder until Proceed
+## Execution receipt (Pass 1) — P1-R
 
 | Field | Value |
 |---|---|
-| Status | **HELD** / **NOT EXECUTED** |
-| When | — (awaiting Proceed) |
-| Station | clipboards · plan claim `webnn Pass 1 PLAN only` |
-| Products (on execute) | `webnn-clipboard.md` — PAGE **A–H, X** PDF-sighted; **no** ascii/mechanisms; PDF symlink `refs/local/webnn-crd-20260910.pdf` (gitignored, never staged) |
-| PDF | WebNN CRD **10 September 2026**, **353** pp., SHA `e11532183ed50d11e91c70881c59b805346b6607d41e82e7d52aca520df53fdc` |
+| Status | **EXECUTED** |
+| When | 2026-09-18 ~22:19 PT |
+| Station | clipboards · agent `webnn Pass 1 EXECUTE` · BASE `58b12f9` |
+| Products | `docs/clipboards/webnn-clipboard.md` — PAGE **A–H, X** PDF-sighted; **no** ascii/mechanisms; PDF symlink `refs/local/webnn-crd-20260910.pdf` (gitignored, never staged) |
+| PDF | WebNN CRD **10 September 2026**, **353** pp., SHA `e11532183ed50d11e91c70881c59b805346b6607d41e82e7d52aca520df53fdc`; `git check-ignore` OK |
 | Emission | still `[GAP]` |
 | Push | **NOT pushed** |
+| Notes | Plan commits rebased onto origin (`3917723`/`bc04c36`). webgpu/wgsl/wasm-spec-3 untouched. `src/` absent. |
