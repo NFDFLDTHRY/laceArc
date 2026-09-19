@@ -27,7 +27,13 @@
 Applied to `docs/graphics-close-reading.md`. The conversion table is kept and marked **`[UNSUPPORTED]`**, with the reason stated twice:
 
 1. **It counts only words.** The array holds WORD *and* POINTER entries, and panel `D1` shows **six pointers against five words** — a word-count-to-length table understates the strand by more than half, on the source's own eleven rows.
-2. **Length is not the array's unit.** Positions are indices and an index has no centimetres. The header's clause is the source's physical analogy for holding the object; it fixes no exchange rate and nothing may derive one from it. **The unit an index carries stays `[GAP]`.**
+2. ~~**Length is not the array's unit.** Positions are indices and an index has no centimetres. The header's clause is the source's physical analogy for holding the object.~~ **Struck. This read the ruling too narrowly and it was corrected at `0554228`.**
+
+**The human's clarification:** *the centimeter **is** the index unit, whatever a unit of lace is.* **The ruling names the unit; it does not retire it.** One centimeter is one index, and the header's clause is the source naming the step between one position on the strand and the next — not a metaphor to be set aside.
+
+**So point 1 is the whole fault and it is a counting fault.** The table reads *one word, one centimeter* as *one word, one index*, which assumes only WORDs occupy indices. Measured in indices, `D1`'s example is **eleven centimeters, not five.**
+
+**The `[GAP]` moves with it:** not *what unit an index carries* — that is answered — but **does a POINTER occupy a centimeter.** `D1` puts pointers in the array's own rows, which is the reason to think so; nothing in the four graphics states it.
 
 ### And the quotation was wrong
 

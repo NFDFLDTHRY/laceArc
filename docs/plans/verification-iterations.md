@@ -43,7 +43,7 @@ Each commit: `pull --ff-only` → `which` → `claim` → edit only owned paths 
 | **1** | board measured at one pin | re-measuring overturned its own headline finding — 1 out-of-range cite became 0 |
 | **2** | audited 2 instruments of 9 | found F7, the tree's worst instrument, and the thesis gained a mode |
 | **3** | counted one form of citation | found that rot lives where the checker cannot look, and that the pin census cannot be taken by regex |
-| **4** | premise false in three of four working passes | **nine self-corrections inside one iteration** — the pass 4 thesis lost to a falsifier written for it in its own plan |
+| **4** | premise false in three of four working passes | **ten self-corrections inside one iteration** — the pass 4 thesis lost to a falsifier written for it in its own plan |
 
 **Every time, the first cut measured too little and the correction changed the conclusion.** Plan for it: pass 1's `Proceed` turn is not a formality.
 
@@ -61,7 +61,7 @@ Each commit: `pull --ff-only` → `which` → `claim` → edit only owned paths 
 
 ## 6. Where things stand
 
-**The campaign is closed.** [Iteration 4's receipt](verification-iteration-4-receipt.md) recommends no iteration 5 **as a measuring campaign**, and the reason is in the table above: four iterations each ended by finding the *instrument* wrong rather than the tree, and the fourth spent nine of its sixteen corrections on itself. **That is a campaign that has run out of things to be wrong about.**
+**The campaign is closed.** [Iteration 4's receipt](verification-iteration-4-receipt.md) recommends no iteration 5 **as a measuring campaign**, and the reason is in the table above: four iterations each ended by finding the *instrument* wrong rather than the tree, and the fourth spent ten of its seventeen corrections on itself. **That is a campaign that has run out of things to be wrong about.**
 
 **What this document still governs:** if a sixth-pass cadence is convened again, it takes this form. The form is not retired — the subject is exhausted.
 
