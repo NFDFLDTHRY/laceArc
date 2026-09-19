@@ -35,7 +35,7 @@ A map is four-pass complete. B spine + fields are on main. G2 still `[GAP]`.
 
 ## Iteration 2 — closed
 
-Receipt: [`ascii-iteration-2-receipt.md`](ascii-iteration-2-receipt.md). Pin `a1a24793846ca375f57bcd85fb04579cb2b75abc` (i2p6 execute). Later claim/queue commits do not reopen it.
+Receipt: [`ascii-iteration-2-receipt.md`](ascii-iteration-2-receipt.md). Pin `4fd3dff` (i2p6 execute). Later claim/queue commits do not reopen it.
 
 | i2 pass | Act | Plan on disk |
 |---|---|---|

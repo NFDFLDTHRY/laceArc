@@ -2,7 +2,7 @@
 
 **Status:** CLOSED. Six of six.  
 **Station:** graphics.  
-**Pin:** execute commit of this receipt (see `git log` on `ascii-iteration-2-receipt.md`).  
+**Pin:** `4fd3dff` (i2p6 execute).  
 **Emission:** `[GAP]`. No `src/`.
 
 Human law: six passes is one iteration. Leftovers queue to iteration 3. This file does not reopen iteration 1 or 2.

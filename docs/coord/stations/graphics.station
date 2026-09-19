@@ -2,6 +2,6 @@ STATUS: HELD
 STATION: graphics
 OWNS: docs/graphics/** docs/graphics-close-reading.md
 AGENT: Grok-graphics
-BASE: 6260009be55c2ae08cab5c645a15d8a607e65add
-SINCE: 2026-09-19T05:53:09Z
+BASE: 4fd3dff96d9ea6df24e6b78926e09fbd6e0454a4
+SINCE: 2026-09-19T05:54:12Z
 NOTE: i1 CLOSED 6/6. i2 CLOSED 6/6. Next i3 not opened. D companion unstarted. Same strand as Graphic D. Not a second store. Φ [GAP].
