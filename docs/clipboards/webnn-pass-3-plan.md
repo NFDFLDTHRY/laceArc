@@ -4,10 +4,10 @@
 **Station:** clipboards (plan claim: `WebNN Pass 3 PLAN HELD`; execute claim e.g. `webnn Pass 3 EXECUTE`)  
 **Base at plan:** claim BASE `77ae5de` (= `origin/main` after refresh). Refresh `git pull --ff-only` before any execute.  
 **Spec:** *Web Neural Network API* (WebNN) — **W3C Candidate Recommendation Draft, 10 September 2026** · editors Ningxin Hu, Dwayne Robinson (et al.)  
-**Clipboard under test:** `docs/clipboards/webnn-clipboard.md` (Pass 1 EXECUTED · PAGE A–H, X)  
-**Pass 2 prerequisite:** [`webnn-pass-2-plan.md`](webnn-pass-2-plan.md) is still **HELD / NOT EXECUTED**. **Pass 3 execute MUST NOT start until Pass 2 is EXECUTED** (D1–D6 + FM-Webnn1…Webnn9 present on clipboard; optional D7 if included). If Pass 2 is still HELD at execute request → **STOP** and report gate.  
+**Clipboard under test:** `docs/clipboards/webnn-clipboard.md` (Pass 1–2 EXECUTED · PAGE A–H, X · D1–D6 + FM-Webnn1…9 + D7 · P2-R)  
+**Pass 2 prerequisite:** [`webnn-pass-2-plan.md`](webnn-pass-2-plan.md) is **EXECUTED** (tip `01f42a2` · P2-R on clipboard · D1–D6 + FM-Webnn1…Webnn9 + D7). **Gate CLEAR** for Pass 3 execute when human says go — Pass 3 itself remains **HELD / NOT EXECUTED**. If Pass 2 were rolled back to HELD at execute request → **STOP** and report gate.  
 **ASCII companion:** **absent** — Pass 4+ shape later (`webnn-ascii-machinery.md` · future **P-N\***); Wave A cards align to PAGE themes / **future** ascii — do **not** invent ascii at Pass 3  
-**Ancestors:** [`webnn-pass-1-plan.md`](webnn-pass-1-plan.md) (EXECUTED) · [`webnn-pass-2-plan.md`](webnn-pass-2-plan.md) (HELD — gate)  
+**Ancestors:** [`webnn-pass-1-plan.md`](webnn-pass-1-plan.md) (EXECUTED) · [`webnn-pass-2-plan.md`](webnn-pass-2-plan.md) (EXECUTED · tip `01f42a2` · gate CLEAR)  
 **Templates mirrored (adapt stamps; don’t clone host-GPU or shader-lang morals wholesale):** [`webgpu-pass-3-plan.md`](webgpu-pass-3-plan.md) · [`wgsl-pass-3-plan.md`](wgsl-pass-3-plan.md) · [`wasm-spec-3-pass-3-plan.md`](wasm-spec-3-pass-3-plan.md)  
 **Mechanism schema samples (read-only):** [`webgpu-mechanisms.md`](webgpu-mechanisms.md) header + stamp legend + one card · [`wgsl-pass-3-plan.md`](wgsl-pass-3-plan.md) card schema  
 **New artifact (execute only):** `docs/clipboards/webnn-mechanisms.md` — **do not create at plan time**  
@@ -94,8 +94,9 @@ It is **host-NN inference Web API hygiene**: CRD **constructive procedures** car
 | Optional D7 | If Pass 2 included it, cross-link from M-N2/M-N5/M-N6 as apt — **do not rewrite** D7 |
 | Pass 1 | PAGE A–H, X stand (already EXECUTED) |
 
-**At plan time (this commit):** Pass 2 is still **HELD**. This plan may be written and committed HELD.  
-**At execute time:** if Pass 2 is still HELD → **refuse execute**; report “Pass 3 blocked on Pass 2 EXECUTED (D1–D6 + FM-Webnn*)”. Do **not** invent FM-Webnn\* rows inside Pass 3 to bypass the gate. Do **not** soft-execute partial Wave A without the FM mesh targets.
+**At original plan time:** Pass 2 was still **HELD**; plan committed HELD (`e8cd69c`).  
+**Gate refresh (this commit):** Pass 2 is now **EXECUTED** (tip `01f42a2` · clipboard P2-R · D1–D6 + FM-Webnn1…9 + D7). **Gate CLEAR** — Pass 3 remains **HELD / NOT EXECUTED** until human says go.  
+**At execute time:** if Pass 2 is somehow HELD again → **refuse execute**; report “Pass 3 blocked on Pass 2 EXECUTED (D1–D6 + FM-Webnn*)”. Do **not** invent FM-Webnn\* rows inside Pass 3 to bypass the gate. Do **not** soft-execute partial Wave A without the FM mesh targets.
 
 ---
 
@@ -104,7 +105,7 @@ It is **host-NN inference Web API hygiene**: CRD **constructive procedures** car
 | Pass | Job |
 |---|---|
 | 1 (PDF) | **Admission** — PAGE A–H, X stamped against CRD 2026-09-10 |
-| 2 | **Leftovers** — D1–D6 + FM-Webnn1…9 (+ optional D7); coherence spine (**HELD at this plan — gate**) |
+| 2 | **Leftovers** — D1–D6 + FM-Webnn1…9 (+ D7); coherence spine (**EXECUTED** · tip `01f42a2` · gate CLEAR) |
 | **3** | **System mechanisms of the host-NN API** — constructive CRD algorithms along the projection/hologram spine, stamped KEEP/FORBID for Shadow hygiene, plus P3-M mesh |
 
 Sibling shelves (WebGPU / WGSL / wasm-spec-3 / Xiao–Zhu / …) used Pass 3 for Wave A cards + mechanism mesh.  
@@ -151,7 +152,7 @@ Not: Lace Φ, Graphic D writes, a second store beside the strand, WebGPU Device/
 | Layer | State |
 |---|---|
 | PAGE A–H, X | Filled; Pass 1 KEEP-read-as-host-NN-API / FORBID-* / PROPOSAL-only / SILENT stamps stand |
-| D1–D6 + FM-Webnn1…Webnn9 + D7 | **Not yet** — Pass 2 still HELD; required before Pass 3 execute |
+| D1–D6 + FM-Webnn1…Webnn9 + D7 | **Present** — Pass 2 EXECUTED (tip `01f42a2` · P2-R); stand as mesh targets |
 | Five-stakes | **Out of scope** for this shelf (default skip) |
 | Ascii Wave A / `webnn-ascii-machinery.md` | **Absent** — Pass 4+; do not create |
 | `webnn-mechanisms.md` | **Absent** (create at execute only) |
@@ -318,7 +319,7 @@ Optional thin stub at plan time: **none** — plan file alone. Clipboard “Pass
 
 ### T0 — Claim / base + Pass 2 gate
 
-Held at plan by `WebNN Pass 3 PLAN HELD` · BASE `77ae5de`. Before execute: `git pull --ff-only` · refresh claim · **verify Pass 2 EXECUTED** (D1–D6 + FM-Webnn1…9 on clipboard). If Pass 2 still HELD → **STOP**. Agent id e.g. `webnn Pass 3 EXECUTE`.
+Held at plan by `WebNN Pass 3 PLAN HELD` · BASE `77ae5de`. **Gate refresh:** Pass 2 EXECUTED tip `01f42a2` (P2-R · D1–D6 + FM-Webnn1…9 + D7). Before execute: `git pull --ff-only` · refresh claim · **re-verify Pass 2 still EXECUTED**. If Pass 2 HELD → **STOP**. Agent id e.g. `webnn Pass 3 EXECUTE`.
 
 ### T1 — Hands + host-NN mesh skim
 
@@ -433,7 +434,7 @@ WebNN is not WebGPU Device/Queue. WebNN is not WGSL. WebNN is not the wasm64 tar
 `exportToGPU` does not accept emission. Validation is not a Lace cut.  
 Security text is not Lace law.  
 Φ stays `[GAP]`. No ascii until Pass 4+. No `src/` until human-accepted emission.  
-Pass 3 execute waits on Pass 2 EXECUTED.
+Pass 2 EXECUTED (**gate CLEAR** · tip `01f42a2`). Pass 3 execute waits on human go (plan still HELD).
 
 ---
 
@@ -442,12 +443,13 @@ Pass 3 execute waits on Pass 2 EXECUTED.
 | Field | Value |
 |---|---|
 | Status | **HELD / NOT EXECUTED** |
-| When | 2026-09-18 ~22:26 PT |
-| Agent | `WebNN Pass 3 PLAN HELD` |
-| Base | claim BASE `77ae5de` (= origin/main after refresh) |
-| Product | this plan only (HELD) |
+| When | plan 2026-09-18 ~22:26 PT · gate refresh 2026-09-18 ~22:36 PT |
+| Agent | plan `WebNN Pass 3 PLAN HELD` · refresh `webnn Pass 3 PLAN refresh` |
+| Base | plan claim BASE `77ae5de`; refresh claim BASE = current origin/main |
+| Product | this plan only (HELD) — gate status refreshed; roster/schema unchanged |
+| Gate refresh | Pass 2 **EXECUTED** tip `01f42a2` · clipboard P2-R — **gate CLEAR**; do **not** execute Pass 3 this turn |
 | Pass 1 ancestor | EXECUTED · PAGE A–H, X |
-| Pass 2 prerequisite | **HELD** — execute gated until Pass 2 EXECUTED (D1–D6 + FM-Webnn*) |
+| Pass 2 prerequisite | **EXECUTED** (tip `01f42a2` · P2-R · D1–D6 + FM-Webnn1…9 + D7) — **gate CLEAR**; Pass 3 still HELD |
 | Amended clipboard/ascii/mechanisms/src/maps/law/webgpu/wgsl/wasm | **No** (plan only) |
 | PDF staged | No |
 | PDF SHA-256 | `e11532183ed50d11e91c70881c59b805346b6607d41e82e7d52aca520df53fdc` |
@@ -461,7 +463,7 @@ Pass 3 execute waits on Pass 2 EXECUTED.
 | Status | _pending_ |
 | When | |
 | Agent | `webnn Pass 3 EXECUTE` |
-| Pass 2 gate | _must be EXECUTED before fill_ |
+| Pass 2 gate | **CLEAR** (tip `01f42a2`) — re-verify at execute |
 | Artifact A | `webnn-mechanisms.md` · M-N1…M-N9 |
 | Artifact B | P3-M / P3-R on `webnn-clipboard.md` |
 | T6 five-stakes | **skip** (default) |
