@@ -1,6 +1,6 @@
 # Projection iteration 5 / pass 5 plan — floor is a pass, not a hope
 
-**Status:** PLAN. Not executed. Emission `[GAP]`.  
+**Status:** EXECUTED. Emission `[GAP]`. Title `i5p5`. Floor drawn first, depth-always. Ember core, glass rim only. Gold stays. Plasma holes.  
 **Station:** hologram  
 **Evidence:** `i5p4` title (SHA is live), `t=0005 WHOLE`, `ms 83`. Three teal cubes with brown specks, one green disc, navy everywhere. No circuit. No gold. No molten core.
 

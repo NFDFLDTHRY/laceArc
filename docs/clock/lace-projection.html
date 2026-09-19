@@ -82,7 +82,7 @@ aside[hidden]{display:none}
     <div class="row">
       <input id="t" type="range" min="0" max="10" step="0.02" value="0"/>
       <span id="phase">t=0000</span>
-      <span class="stamp">i5p4</span>
+      <span class="stamp">i5p5</span>
       <span class="stamp">A17</span>
       <span class="stamp" id="gpustamp">GPU ?</span>
       <span class="stamp" id="bootstamp">boot ?</span>
@@ -246,30 +246,26 @@ struct VSOut { @builtin(position) p: vec4<f32>, @location(0) wpos: vec3<f32>, @l
   if (glassPass != isGlassish) { discard; }
   if (filament && i.col.r < 0.12 && abs(i.born - floor(u.t.x + 0.001)) > 0.51) { discard; }
   if (glass) {
-    if (ndv > 0.45) { discard; }
-    let mark = step(0.84, fract(sin(dot(floor(i.wpos * 7.0), vec3<f32>(3.1, 7.4, 1.7))) * 2345.6));
-    rgb = vec3<f32>(0.10, 0.22, 0.30) * (0.02 + 0.06 * diff);
-    rgb += vec3<f32>(0.55, 0.92, 1.0) * fres * 0.8;
-    rgb += vec3<f32>(1.0, 0.28, 0.04) * mark * 0.7;
-    rgb += vec3<f32>(spec) * 0.2;
-    alpha = mix(0.14, 0.04, ndv) * appear;
+    if (fres < 0.38) { discard; }
+    rgb = vec3<f32>(0.65, 0.92, 1.0) * fres;
+    rgb += vec3<f32>(spec) * 0.25;
+    alpha = mix(0.08, 0.5, fres) * appear;
   } else if (ember) {
-    let pulse = 0.7 + 0.3 * sin(u.t.x * 3.2 + hash * 6.0);
-    rgb = vec3<f32>(1.0, 0.22, 0.03) * (0.85 + 0.25 * pulse);
-    rgb += vec3<f32>(1.0, 0.55, 0.08) * spec * 0.45;
-    rgb += vec3<f32>(1.0, 0.18, 0.02) * hash * 0.3;
+    let pulse = 0.75 + 0.25 * sin(u.t.x * 3.2 + hash * 6.0);
+    rgb = vec3<f32>(1.0, 0.28, 0.04) * (0.9 + 0.2 * pulse);
+    rgb += vec3<f32>(1.0, 0.5, 0.08) * spec * 0.35;
     alpha = 1.0 * appear;
   } else if (plasma) {
-    let w = sin(i.wpos.x * 11.0 + i.wpos.y * 13.0 + u.t.x * 3.0);
-    let w2 = sin(i.wpos.z * 9.0 - i.wpos.y * 7.0 + hash * 8.0);
-    rgb = vec3<f32>(0.04, 0.95, 0.22) * (0.22 + 0.6 * abs(w * w2));
-    rgb += vec3<f32>(0.35, 1.0, 0.5) * fres * 0.8;
-    rgb += vec3<f32>(0.05, 0.35, 0.1) * hash;
-    alpha = mix(0.12, 0.72, fres) * appear;
+    let w = abs(sin(i.wpos.x * 11.0 + i.wpos.y * 13.0 + u.t.x * 3.0) * sin(i.wpos.z * 9.0 - i.wpos.y * 7.0));
+    if (w < 0.18 + 0.22 * hash) { discard; }
+    rgb = vec3<f32>(0.04, 0.95, 0.22) * (0.35 + 0.65 * w);
+    rgb += vec3<f32>(0.4, 1.0, 0.5) * fres * 0.7;
+    alpha = mix(0.12, 0.62, fres) * appear;
   } else if (gold) {
-    rgb = vec3<f32>(1.0, 0.72, 0.12) * (0.55 + 0.45 * fres);
-    rgb += vec3<f32>(1.0, 0.95, 0.45) * spec * 0.7;
-    alpha = 0.95 * appear;
+    if (i.born > u.t.x + 0.2) { discard; }
+    rgb = vec3<f32>(1.0, 0.72, 0.12) * (0.7 + 0.3 * fres);
+    rgb += vec3<f32>(1.0, 0.95, 0.4) * spec * 0.5;
+    alpha = 1.0;
   } else if (filament) {
     rgb = vec3<f32>(0.35, 0.95, 1.0) * (0.65 + 0.45 * fres);
     rgb += vec3<f32>(0.9, 1.0, 1.0) * spec * 0.9;
@@ -314,7 +310,7 @@ function lookAt(e,c,up){
 function bakeViaWorker(src){
   return new Promise((resolve, reject) => {
     let w;
-    try { w = new Worker(src || "projection-bake-worker.js?i=5p4"); }
+    try { w = new Worker(src || "projection-bake-worker.js?i=5p5"); }
     catch (e) { reject(e); return; }
     const t = setTimeout(() => { try{w.terminate();}catch(_){ } reject(new Error("bake timeout")); }, 8000);
     w.onerror = e => { clearTimeout(t); try{w.terminate();}catch(_){ } reject(e); };
@@ -324,6 +320,7 @@ function bakeViaWorker(src){
       resolve({
         P: new Float32Array(d.P), N: new Float32Array(d.N),
         C: new Float32Array(d.C), B: new Float32Array(d.B),
+        fCount: d.fCount|0,
         wasm: !!d.wasm, isolated: !!d.isolated
       });
       w.terminate();
@@ -335,9 +332,9 @@ let bakedScene=null;
 let bakeInFlight=null;
 async function bakeScene(){
   if(bakedScene && bakedScene.P && bakedScene.P.length>6) return bakedScene;
-  try { bakedScene = await bakeViaWorker("projection-bake-worker.js?i=5p4"); }
+  try { bakedScene = await bakeViaWorker("projection-bake-worker.js?i=5p5"); }
   catch (e1) {
-    const src = await fetch("projection-bake-worker.js?i=5p4", {cache:"no-store"}).then(r => {
+    const src = await fetch("projection-bake-worker.js?i=5p5", {cache:"no-store"}).then(r => {
       if (!r.ok) throw new Error("worker fetch "+r.status);
       return r.text();
     });
@@ -511,8 +508,10 @@ async function main(gen){
   }
   if(gen!==gpuGen){ try{device.destroy();}catch(_){ } return; }
   const vCount=scene.P.length/3;
-  if(nstamp) nstamp.textContent="n="+vCount;
-  if(vCount<6){ keepFallback("Bake produced no triangles."); return; }
+  const fCount=Math.max(0, Math.min(vCount, scene.fCount|0));
+  const gCount=vCount-fCount;
+  if(nstamp) nstamp.textContent="n="+gCount+" f="+fCount;
+  if(gCount<6){ keepFallback("Bake produced no triangles."); return; }
   function buf(arr){
     const a=arr instanceof Float32Array?arr:new Float32Array(arr);
     const b=device.createBuffer({size:a.byteLength,usage:GPUBufferUsage.VERTEX|GPUBufferUsage.COPY_DST});
@@ -537,8 +536,16 @@ async function main(gen){
       depthStencil:{format:"depth24plus",depthWriteEnabled:depthWrite,depthCompare:"less"}
     });
   }
+  const pipeFloor=device.createRenderPipeline({
+    layout:"auto",
+    vertex:{module:shader,entryPoint:"vs",buffers:vbufs},
+    fragment:{module:shader,entryPoint:"fs",targets:[{format:fmt}]},
+    primitive:{topology:"triangle-list",cullMode:"none"},
+    depthStencil:{format:"depth24plus",depthWriteEnabled:false,depthCompare:"always"}
+  });
   const pipeSolid=mkPipe(true);
   const pipeGlass=mkPipe(false);
+  const bgFloor=device.createBindGroup({layout:pipeFloor.getBindGroupLayout(0),entries:[{binding:0,resource:{buffer:uni}}]});
   const bgSolid=device.createBindGroup({layout:pipeSolid.getBindGroupLayout(0),entries:[{binding:0,resource:{buffer:uni}}]});
   const bgGlass=device.createBindGroup({layout:pipeGlass.getBindGroupLayout(0),entries:[{binding:0,resource:{buffer:uni}}]});
   const sess={dead:false,raf:0,device,depth:null};
@@ -604,9 +611,9 @@ async function main(gen){
     const asp=canvas.width/Math.max(1,canvas.height);
     const ang=now/9000;
     const eye=[
-      GRID[0] + Math.sin(ang)*5.5,
-      11.0,
-      GRID[2] + Math.cos(ang)*5.5
+      GRID[0] + Math.sin(ang)*6.5,
+      12.0,
+      GRID[2] + Math.cos(ang)*6.5
     ];
     const target=[GRID[0], 0.55, GRID[2]];
     try {
@@ -621,9 +628,12 @@ async function main(gen){
         colorAttachments:[{view:tex.createView(),clearValue:{r:0.05,g:0.10,b:0.13,a:1},loadOp:"clear",storeOp:"store"}],
         depthStencilAttachment:{view:sess.depth.createView(),depthClearValue:1,depthLoadOp:"clear",depthStoreOp:"store"}
       });
+      pass.setPipeline(pipeFloor); pass.setBindGroup(0,bgFloor);
+      pass.setVertexBuffer(0,bP); pass.setVertexBuffer(1,bN); pass.setVertexBuffer(2,bC); pass.setVertexBuffer(3,bB);
+      if(fCount>0) pass.draw(fCount);
       pass.setPipeline(pipeSolid); pass.setBindGroup(0,bgSolid);
       pass.setVertexBuffer(0,bP); pass.setVertexBuffer(1,bN); pass.setVertexBuffer(2,bC); pass.setVertexBuffer(3,bB);
-      pass.draw(vCount);
+      if(gCount>0) pass.draw(gCount, 1, fCount);
       pass.end();
       ub[23]=1;
       device.queue.writeBuffer(uni,0,ub);
@@ -633,7 +643,7 @@ async function main(gen){
       });
       passG.setPipeline(pipeGlass); passG.setBindGroup(0,bgGlass);
       passG.setVertexBuffer(0,bP); passG.setVertexBuffer(1,bN); passG.setVertexBuffer(2,bC); passG.setVertexBuffer(3,bB);
-      passG.draw(vCount);
+      if(gCount>0) passG.draw(gCount, 1, fCount);
       passG.end();
       device.queue.submit([enc.finish()]);
       drawFails=0;
@@ -681,7 +691,7 @@ function runAudit(){
   const el=document.getElementById("audit");
   if(!el) return;
   const title=document.querySelector("h1")?.textContent||"";
-  const A=/i5p4/.test(title)?"ok":"fail";
+  const A=/i5p5/.test(title)?"ok":"fail";
   const D=!!(navigator.serviceWorker && navigator.serviceWorker.controller);
   const E=!!(window.deferredPrompt || window.matchMedia("(display-mode: standalone)").matches);
   const F=!!document.getElementById("installbtn");
@@ -692,7 +702,7 @@ function runAudit(){
     const ct=r.headers.get("content-type")||"";
     const B=/manifest|json/i.test(ct)?"ok":("fail "+ct);
     el.textContent=
-      "A title i5p4 "+A+"\n"+
+      "A title i5p5 "+A+"\n"+
       "B manifest MIME "+B+"\n"+
       "C icons 192+512 ok\n"+
       "D SW controlling "+(D?"ok":"fail")+"\n"+

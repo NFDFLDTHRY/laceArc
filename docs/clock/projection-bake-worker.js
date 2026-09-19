@@ -65,13 +65,17 @@ function bake(){
       N.push(g.n[i],g.n[i+1],g.n[i+2]); C.push(...col); B.push(born);
     }
   }
-  const shell=cube(0.50), core=cube(0.46), halo=cube(0.38), ball=sphere(0.62,20);
+  add({
+    p:[-20,0,-20, 20,0,-20, 20,0,20, -20,0,-20, 20,0,20, -20,0,20],
+    n:[0,1,0,0,1,0,0,1,0,0,1,0,0,1,0,0,1,0]
+  },[0.05,0.10,0.13],[0,0,0],-1);
+  const fCount=P.length/3;
+  const shell=cube(0.50), core=cube(0.46), ball=sphere(0.62,20);
   for(const r of D1){
     const off=posOf(r.i);
     if(r.k==="WORD"){
+      add(core,[1.0,0.32,0.04],off,r.i);
       add(shell,[0.55,0.18,0.08],off,r.i);
-      add(halo,[0.92,0.30,0.05],off,r.i);
-      add(core,[1.0,0.42,0.06],off,r.i);
       if(r.v==="PIE") add(ball,[0.12,0.95,0.32],[off[0],off[1]+0.85,off[2]], r.i);
     } else {
       add(cube(0.16),[0.15,0.55,0.95],off,r.i);
@@ -84,18 +88,10 @@ function bake(){
     }
     add(ribbon([off[0],0.55,off[2]],[off[0],2.35,off[2]],0.018),[0.05,0.88,1.0],[0,0,0],r.i);
   }
-  for(let i=-10;i<=10;i++){
-    const t=i*0.7;
-    add(ribbon([-7.4,0.02,t],[7.4,0.02,t],0.014),[0.04,0.18,0.26],[0,0,0],-1);
-    add(ribbon([t,0.02,-7.4],[t,0.02,7.4],0.014),[0.04,0.18,0.26],[0,0,0],-1);
-  }
-  add({
-    p:[-12,0.02,-12, 12,0.02,-12, 12,0.02,12, -12,0.02,-12, 12,0.02,12, -12,0.02,12],
-    n:[0,1,0,0,1,0,0,1,0,0,1,0,0,1,0,0,1,0]
-  },[0.02,0.05,0.10],[0,0,0],-1);
   return {
     P: new Float32Array(P), N: new Float32Array(N),
     C: new Float32Array(C), B: new Float32Array(B),
+    fCount,
     isolated: typeof SharedArrayBuffer !== "undefined" && self.crossOriginIsolated === true
   };
 }
@@ -103,6 +99,7 @@ onmessage = () => {
   const s = bake();
   postMessage({
     P: s.P.buffer, N: s.N.buffer, C: s.C.buffer, B: s.B.buffer,
-    isolated: s.isolated, wasm: false
+    fCount: s.fCount, isolated: s.isolated, wasm: false
   }, [s.P.buffer, s.N.buffer, s.C.buffer, s.B.buffer]);
 };
+
