@@ -431,3 +431,147 @@ Overview spine (10 nodes incl. forbidden Core/Φ/host-API/wasm64 exit): all **PA
 | Pass 5 / Pass 6 | deferred (Order Proposal / deep diagram audit) |
 | PDF staged | **No** |
 | Push | **No** (ask before push) |
+
+---
+
+## Pass 5 — Shadow Order Proposal + light accuracy steward (P5-X / P5-F / P5-O / P5-P / P5-R)
+
+**Status:** **EXECUTED** · 2026-09-18 ~22:10 PT · station clipboards · agent `WGSL Pass 5 EXECUTE`  
+**Plan:** [`wgsl-pass-5-plan.md`](wgsl-pass-5-plan.md) (HELD → EXECUTED)  
+**ASCII under test:** [`wgsl-ascii-machinery.md`](wgsl-ascii-machinery.md) — SOURCE MACHINERY + **P-S1…P-S9** · P4-X all PASS  
+**Mechanisms:** [`wgsl-mechanisms.md`](wgsl-mechanisms.md) — **M-S1…M-S9** (cite only; unchanged)  
+**Law:** WGSL = **SHADER-LANG Shadow only**. Pass 4 SOURCE MACHINERY adopted as **Shadow Order Proposal** for shelf hygiene beside Shadow projection / hologram. Order Proposal **FORBID-as-Core-write**; **NON-binding** on Core / `src/` / Φ / systems-manifest-ascii / graphics. Emission Φ still `[GAP]`.
+
+**Hands + shader-lang mesh skim (T1):** shoe / AGENTS Implementation Law → graphics A–D → systems-manifest → staking / law-why → pointer-emission DRAFT/`[GAP]` → clock/README (`lace-projection.html` — **Shadow consumer**) → hologram + visual-primitives (WGSL live path — **Shadow consumer**) → webgpu-* banner (**HOST/GPU** cite-only; **do not edit**) → wasm-spec-3 banner (**wasm64** cite-only) → Pass 1–4 clipboard (P4-R / P4-X all PASS · **FM-Wgsl1…Wgsl9**) → ascii overview + P-S1…P-S9 → mechanisms M-S1…M-S9 → this Pass 5 plan → webgpu / wasm-spec-3 Pass 5 Order Proposal shape (read-only; adapt to **SHADER-LANG**).
+
+**PDF gate (T2):** `refs/local/wgsl-w3c-crd-20260915.pdf` · SHA-256 `73dc9e35047d8715a88ae3b1082b2e887c750da9f5c0f97d78410fc6c2f5eb6d` · 381 pp · `git check-ignore` OK · **never staged**. Re-sight not required (P5-X all CONFIRM / no FIX pin).
+
+### P5-X — Light accuracy matrix (CONFIRM Pass 4 · reopen only OPENS/drift)
+
+**Stance:** P4-X **all PASS** is baseline. Light steward re-walk — default **CONFIRM**. Reopen to FIX only if book OPENS surface as representation drift, stamp/fence/overview attach drifted since Pass 4 tip, or a steward refuse test fails against current card+panel. No second full P4 special-gate PDF campaign.
+
+**Columns:** `overview node · P-S* · M-S* · stamp · Implements OK · Fence OK · Overview OK · Pin OK · PASS/FIX`
+
+#### Wave A panels (P-S1…P-S9 ↔ M-S1…M-S9)
+
+| overview node | P-S* | M-S* | stamp | Impl | Fence | Overview | Pin | PASS/FIX |
+|---|---|---|---|---|---|---|---|---|
+| module / parse / textual structure | P-S1 | M-S1 | KEEP-read-as-shader-lang · FORBID-as-Lace-WORD · FORBID-as-Lace-strand · FORBID-as-host-API-swap · D7 | Y | Y | Y | Y (FM-Wgsl1·4·7) | **PASS** |
+| types · plain / vector / memory-view | P-S2 | M-S2 | KEEP-read-as-shader-lang · FORBID-as-Core-write · FORBID-as-Lace-WORD | Y | Y | Y | Y (FM-Wgsl4) | **PASS** |
+| address spaces · var/let/const | P-S3 | M-S3 | KEEP-read-as-shader-lang · FORBID-as-Lace-store | Y | Y | Y | Y (FM-Wgsl3) | **PASS** |
+| expressions · early eval / ops | P-S4 | M-S4 | KEEP-read-as-shader-lang · FORBID-as-Lace-WORD | Y | Y | Y | Y (FM-Wgsl4) | **PASS** |
+| statements · control / discard | P-S5 | M-S5 | KEEP-read-as-shader-lang · SILENT-for-Lace-append · FORBID-as-emission-rule | Y | Y | Y | Y (FM-Wgsl5) | **PASS** |
+| functions · entry points / stages | P-S6 | M-S6 | KEEP-read-as-shader-lang · FORBID-as-emission-rule · FORBID-as-Lace-strand · FORBID fill-GAP | Y | Y | Y | Y (FM-Wgsl1·2) | **PASS** |
+| @ attributes · workgroup_size | P-S7 | M-S7 | KEEP-read-as-shader-lang · FORBID-as-Lace-strand · FORBID-as-Core-write | Y | Y | Y | Y (FM-Wgsl1) | **PASS** |
+| built-ins · texture / atomic / sync | P-S8 | M-S8 | KEEP-read-as-shader-lang · FORBID-as-Core-write · FORBID-as-emission-rule | Y | Y | Y | Y (FM-Wgsl9·6) | **PASS** |
+| execution · uniformity · validation | P-S9 | M-S9 | KEEP-read-as-shader-lang · SILENT-for-Lace-append · FORBID-as-emission-rule | Y | Y | Y | Y (FM-Wgsl6) | **PASS** |
+
+#### Overview spine nodes (+ forbidden exit)
+
+| overview node | attach P/M | Fence OK | Stamp / off-board OK | Pin OK | PASS/FIX |
+|---|---|---|---|---|---|
+| module / parse / textual structure | P-S1 / M-S1 | Y | Y | Y | **PASS** |
+| types · plain / vector / memory-view | P-S2 / M-S2 | Y | Y | Y | **PASS** |
+| address spaces · var/let/const | P-S3 / M-S3 | Y | Y | Y | **PASS** |
+| expressions · early eval / ops | P-S4 / M-S4 | Y | Y | Y | **PASS** |
+| statements · control / discard | P-S5 / M-S5 | Y | Y | Y | **PASS** |
+| functions · entry points / stages | P-S6 / M-S6 | Y | Y | Y | **PASS** |
+| @ attributes · workgroup_size | P-S7 / M-S7 | Y | Y | Y | **PASS** |
+| built-ins · texture / atomic / sync | P-S8 / M-S8 | Y | Y | Y | **PASS** |
+| execution · uniformity · validation | P-S9 / M-S9 | Y | Y | Y | **PASS** |
+| forbidden Core / Φ / host-API / wasm64 exit | off-board · FM-Wgsl7 · FM-Wgsl8 | Y | Y | Y | **PASS** |
+
+**P5-X counts:** panels **9 PASS** + overview spine **10 PASS** = **19 PASS · 0 FIX**.
+
+**Book OPENS (non-blocking · representation impact?):**
+
+| OPEN | Affects card+panel representation? | Pass 5 stance |
+|---|---|---|
+| full Valid Usage / diagnostic filter detail | No — panels still depict spine correctly | **still OPEN** · book-continues |
+| which hologram draw embed may compile which module | No — PROPOSAL-only / cite; does not contradict P-S1/P-S6 | **still OPEN** · non-blocking |
+| Waves B–D deferred | No — out of Wave A board | **still OPEN** · default skip |
+| Order Proposal was deferred | This pass delivers it | **CLOSED** by P5-P |
+| Deep diagram structural audit | Not this pass | **deferred** · Pass 6 |
+
+**Steward refuse tests (P5-X + P5-P stamps):** all 11 plan tests still refuse via panel/M-S/FM teeth — no representation enables module=strand · type=WORD · address-space=store · entry=Φ · discard=cut · barrier/uniformity=Φ · WGSL=Device/Queue · WGSL=wasm64 · builtins=Core ops · Core promote · clock/hologram/webgpu-*/wasm-spec-3 rewrite.
+
+### P5-F — Fix drift
+
+**None.** Matrix all PASS. No ascii panel/overview/cross-walk drift; no mechanism caption edit. Did not reopen Pass 4 FIX list (was already empty). Book OPENS remain non-blocking.
+
+### P5-O — Canonical SOURCE MACHINERY
+
+Exactly **one** `## SOURCE MACHINERY overview` fence in `wgsl-ascii-machinery.md` (grep count=1). P4-O stand **confirmed**. Lace Core / Graphic D / Φ / WebGPU Device·Queue / wasm64 ISA remain FORBIDDEN off-board. Short P5-P mirror added **under** overview (outside the fence).
+
+### Order proposal (Shadow) — SOURCE MACHINERY as shelf hygiene (SHADER-LANG)
+
+**Stamps:** **KEEP-read-as-shader-lang** · **FORBID-as-Core-write** · **FORBID-as-Lace-WORD** · **FORBID-as-Lace-store** · **FORBID-as-Lace-strand** · **FORBID-as-emission-rule** · **FORBID-as-Core** · **FORBID fill-GAP** · **FORBID-as-host-API-swap** · **FORBID-as-compile-target-swap** · **SILENT-for-Lace-append** · **PROPOSAL** / **PROPOSAL-only** · **NON-binding**
+
+1. **This is a proposal, not Core.** It does not amend AGENTS.md, `systems-manifest-ascii.md`, Graphic D, reason-model-map, law, or graphics. Hands may refuse without breach of Core. It is Shadow / Layer III **SHADER-LANG shelf hygiene** only — how this WGSL CRD shelf stays ordered beside Shadow projection / hologram consumers. **NON-binding** on Core / `src/` / Φ / systems-manifest-ascii / graphics / webgpu-* / wasm-spec-3. **Order Proposal FORBID-as-Core-write.**
+
+2. **Stage → hygiene table** (Pass 4/5 SOURCE MACHINERY read as steward order):
+
+| Pipeline stage (ASCII) | Proposal for shelf / steward order |
+|---|---|
+| Module / parse / textual structure (P-S1) | Observe what is actually on the shelf (files, receipts, claim) before rewriting; **FORBID** module as Lace WORD / strand / host-API swap (**FM-Wgsl1 · FM-Wgsl4 · FM-Wgsl7** · **D7**) |
+| Types (P-S2) | Stamp-check: types ≠ Lace WORD / Core schema (**FM-Wgsl4**) |
+| Address spaces / vars (P-S3) | Stamp-check: address-space / buffer / memory ≠ Lace strand / second store (**FM-Wgsl3**) |
+| Expressions (P-S4) | Stamp-check: expr algebra ≠ Lace WORD / Core ops (**FM-Wgsl4**) |
+| Statements / `discard` (P-S5) | **FORBID** discard as Lace cut · **SILENT** for Lace append (**FM-Wgsl5**) |
+| Functions / entry points (P-S6) | **FORBID** entry ≠ Φ · stage ≠ lace cord (**FM-Wgsl1 · FM-Wgsl2**) |
+| Attributes / `workgroup_size` (P-S7) | Stamp-check: workgroup ≠ Graphic D (**FM-Wgsl1**) |
+| Built-ins / barriers (P-S8) | **FORBID** builtins ≠ Core ops · barriers ≠ Φ (**FM-Wgsl9 · FM-Wgsl6**) |
+| Execution / uniformity / validation (P-S9) | **FORBID** uniformity/validation as Lace law / Φ gate · **SILENT** (**FM-Wgsl6**) |
+| FORBIDDEN exit → Core / Graphic D / Φ / Device·Queue / wasm64 | Decisive judgment = commit / release / defer / stop — **not** Φ fill / emission invent / host-API swap / compile-target swap (**FM-Wgsl7 · FM-Wgsl8**) |
+| Projection / hologram (Shadow consumers) | Named as **consumers** of KEEP-read shader-lang mechanics — not Core writers; cite-only; do not amend clock/hologram in this pass |
+
+3. **Recommended reader shelf file order** (proposal only):  
+   `clipboard (admit) → mechanisms (algorithms) → ascii-machinery (diagrams) → pass plans (history)`  
+   with **clock/** (`lace-projection.html`) and **hologram/** (`visual-primitives.md` WGSL live path) named as **Shadow consumers** (cite beside; do not amend) · **webgpu-*** HOST/GPU · **wasm-spec-3** wasm64 cited **beside** as mesh / different Spec·layer — not as Spec authority and not as accepted birth / accepted emission.
+
+4. **Steward loop** when touching this shelf: observe → name → diagram-check → stamp-check → list OPENs → decide (commit / release / defer / stop).
+
+5. **Explicit keep-outs / FORBID** (SHADER-LANG — do **not** clone WebGPU Buffer/submit keep-outs wholesale):
+   - module ≠ strand / Lace WORD (**FM-Wgsl1 · FM-Wgsl4**)
+   - type ≠ WORD / Core schema (**FM-Wgsl4**)
+   - address-space ≠ Lace-store / second store (**FM-Wgsl3**)
+   - entry ≠ Φ / POINTER when (**FM-Wgsl2**)
+   - discard ≠ Lace cut (**FM-Wgsl5**)
+   - barrier / uniformity ≠ Φ / Lace scheduler (**FM-Wgsl6**)
+   - WGSL ≠ WebGPU Device/Queue/Buffer host API (**FM-Wgsl7**)
+   - WGSL ≠ wasm64 compile target (**FM-Wgsl8**)
+   - builtins ≠ Core ops / Φ fillers (**FM-Wgsl9**)
+   - promote ascii Order Proposal into Core / AGENTS.md / systems-manifest-ascii / Graphic D
+   - amend clock / hologram / webgpu-* / wasm-spec-3 as if Order Proposal owns them
+   - **SILENT for Lace append**
+
+6. **Honesty link:** light accuracy matrix **P5-X** above is how the proposal stays honest (every M-S* ↔ P-S* ↔ overview node CONFIRM-scored against Pass 4).
+
+7. **Emission column remains `[GAP]`** sealed — no POINTER when / arity / adjacency invented.
+
+Mirror (short): under SOURCE MACHINERY overview in [`wgsl-ascii-machinery.md`](wgsl-ascii-machinery.md).
+
+### P5-R — Pass 5 receipt
+
+| Field | Value |
+|---|---|
+| Status | **EXECUTED** |
+| When | 2026-09-18 ~22:10 PT |
+| Station | clipboards · agent `WGSL Pass 5 EXECUTE` |
+| Plan | [`wgsl-pass-5-plan.md`](wgsl-pass-5-plan.md) → **EXECUTED** |
+| Claim BASE | `7854d038c48c204b325e65777ebcfdd86b3034c8` (= `origin/main` at claim after rebase of plan commits onto Graphic A ASCII execute tip) |
+| Hands skim | shoe → graphics A–D → systems-manifest → staking / law-why → AGENTS Implementation Law → pointer-emission DRAFT/`[GAP]` → clock/README (Shadow consumer) → hologram/visual-primitives (WGSL Shadow consumer) → webgpu-* HOST/GPU cite-only → wasm-spec-3 wasm64 cite-only → Pass 1–4 + ascii + mechanisms → sibling Pass 5 shapes |
+| PDF | **PRESENT** — gitignored; SHA-256 `73dc9e35047d8715a88ae3b1082b2e887c750da9f5c0f97d78410fc6c2f5eb6d`; **never staged** |
+| P5-X | **19 PASS · 0 FIX** (9 panels + 10 overview spine) · CONFIRM of P4-X |
+| P5-F | **none** |
+| P5-O | exactly one SOURCE MACHINERY overview fence (count=1); Core/Φ/Device·Queue/wasm64 off-board |
+| P5-P | Order Proposal full text **this section**; short mirror under ascii overview |
+| Wave B | **SKIP** (default) — still deferred |
+| Pass 6 | **not opened** |
+| Book OPENS | Valid Usage / diagnostic filter / hologram-embed — still OPEN · non-blocking |
+| Emission | still `[GAP]` — no POINTER when / arity / adjacency; no invented Φ |
+| Amended | reason-model-map · law · graphics · systems-manifest · systems-manifest-ascii · webgpu-* · wasm-spec-3 · five-stakes · clock · hologram · `src/` · M-S* bodies · PAGE morals | **No** |
+| Touched | clipboard · ascii-machinery · pass-5-plan (EXECUTED) · clipboards.station |
+| PDF staged | **No** |
+| Push | **No** (ask before push) |
+| `src/` | absent |

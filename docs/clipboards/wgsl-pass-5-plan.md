@@ -1,6 +1,6 @@
 # WGSL CRD 2026-09-15 — Pass 5 PLAN (ASCII as Shadow Order Proposal + light accuracy steward)
 
-**Status:** **HELD / NOT EXECUTED** · plan turn 2026-09-18 ~22:04 PT · agent `WGSL Pass 5 plan HELD`  
+**Status:** **EXECUTED** · plan turn 2026-09-18 ~22:04 PT · execute ~2026-09-18 ~22:10 PT · agent `WGSL Pass 5 EXECUTE`  
 **Station:** clipboards (claim BASE `498da0c` = `origin/main` at plan)  
 **Tip at plan:** `498da0c` (= origin/main; includes WGSL Pass 4 EXECUTED + Graphic A ASCII plan)  
 **Spec:** *WGSL* — **W3C Candidate Recommendation Draft, 15 September 2026**  
@@ -58,8 +58,8 @@ pull/ff → claim clipboards → Hands + shader-lang mesh skim
 |  KEEP-read: shader-lang mechanics for Shadow projection draw path.   |
 |  webgpu-* / wasm-spec-3 = cite-only (different Spec / layer).        |
 |  No src/ until pointer-emission accepted.  One strand.               |
-|  Status: HELD / NOT EXECUTED — plan only; Order Proposal body =      |
-|          execute.  Emission [GAP] sealed.  Pass 6 = deep audit.      |
+|  Status: EXECUTED — Order Proposal body landed on clipboard.       |
+|          Emission [GAP] sealed.  Pass 6 = deep audit (not opened).  |
 +======================================================================+
 ```
 
@@ -371,8 +371,8 @@ Deep diagram structural audit waits for **Pass 6**.
 | wasm-spec-3 | Pass 1–6 EXECUTED · **wasm64** · cite-only |
 | pointer-emission.md | DRAFT / `[GAP]` |
 | PDF | PRESENT · gitignored · SHA-256 `73dc9e35047d8715a88ae3b1082b2e887c750da9f5c0f97d78410fc6c2f5eb6d` · never staged |
-| Execute | **NOT performed** |
-| P5-P body | **not written** (seed only in this plan) |
+| Execute | **PERFORMED** (this tip) |
+| P5-P body | **written** on clipboard + ascii mirror |
 | Push | **NOT performed** |
 | Emission | `[GAP]` |
 | `src/` | absent |
@@ -394,15 +394,15 @@ After plan commit: **release** clipboards station. Ahead of origin by plan commi
 
 | Field | Value |
 |---|---|
-| Status | _(fill on execute — leave blank at plan)_ |
-| When | |
-| Agent | |
-| Claim BASE | |
-| P5-X | |
-| P5-F | |
-| P5-O | |
-| P5-P | |
-| P5-R | |
+| Status | **EXECUTED** |
+| When | 2026-09-18 ~22:10 PT |
+| Agent | `WGSL Pass 5 EXECUTE` |
+| Claim BASE | `7854d038c48c204b325e65777ebcfdd86b3034c8` (= origin/main after rebase of plan commits) |
+| P5-X | **19 PASS · 0 FIX** (CONFIRM Pass 4) |
+| P5-F | **none** |
+| P5-O | singular overview count=1 confirmed |
+| P5-P | Order Proposal on clipboard + ascii short mirror |
+| P5-R | receipt on clipboard |
 | Wave B | SKIP (default) |
 | Pass 6 | not opened |
 | Emission | `[GAP]` |
