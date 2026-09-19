@@ -1,7 +1,7 @@
-STATUS: FREE
+STATUS: HELD
 STATION: hologram
 OWNS: docs/hologram/** docs/clock/**
-AGENT: -
-BASE: -
-SINCE: -
-NOTE: Quiet door #6 CLOSED 6/6. Hologram FREE. Renderer unclaimed. Cubes not WORD. Φ [GAP].
+AGENT: Grok-hologram
+BASE: 3d2f24ad8fe44a8fdf1d74ca9030bebaedba1ef0
+SINCE: 2026-09-19T07:58:42Z
+NOTE: Claimed for quiet door #7 (Hologram). Object docs/hologram/README.md. Door #6 CLOSED. Renderer unclaimed. HTML not this claim. No new pass this tick. Φ [GAP].
