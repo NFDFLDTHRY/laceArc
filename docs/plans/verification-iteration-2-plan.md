@@ -1,6 +1,6 @@
 # Verification iteration 2 — the instruments
 
-**Status:** `[PROPOSAL]`. **Pass 1 EXECUTED** at `9d27286`; passes 2–6 NOT_RUN.
+**Status:** `[PROPOSAL]`. **Pass 1 EXECUTED** at `9d27286`, **completed at `823bef9`** — the first cut measured two instruments of nine and stated a thesis one mode too narrow; §1.4–§1.6 and §2 are that correction. Passes 2–6 NOT_RUN.
 **Station:** maps. **Emission:** `[GAP]`. No `src/`.
 **Previous:** [iteration 1](verification-iteration-1-plan.md), CLOSED — [its receipt](verification-iteration-1-receipt.md). Iteration 0 was [the restructure](restructure-plan.md).
 
@@ -70,6 +70,37 @@ That 42 includes **`L0`**. It is not an identifier. It is the variable in the Ka
 
 **Recorded here rather than left for someone else to catch**, because it is the thesis arriving on schedule: every instrument this tree has built so far has been unable to tell a token in use from a token being mentioned, **and the one I wrote an hour ago is no exception.**
 
+### 1.4 The inventory — nine executables, and the board had measured two
+
+The first cut of this board audited the checker and the register and called itself done. **That is the failure iteration 1's pass 1 punished**: a board written from a survey rather than an inventory. Completed at `823bef9`:
+
+| Instrument | Station | What it claims | Audited? |
+|---|---|---|---|
+| `.claude/hooks/check-docs.sh` | kit | eight checks over the tree | **§1.1** — 4 of 8 blind to use/mention |
+| `.claude/hooks/session-start.sh` | kit | runs the checker at session start | **always exits 0**, swallowing failure — *by design and documented in `CLAUDE.md`*, not a hidden defect |
+| `docs/coord/coord.sh` | coord | doc-station claims | no expiry, **and no `force-free`** — see §1.5 |
+| `docs/gearing/claim.sh` | gearing-meta | gear-shaft claims | has `force-free`; no expiry either |
+| `docs/gearing/resync.sh` | gearing-meta | fire/clear the resync | signs every tick `LaceArc (steward)` whoever runs it |
+| **`docs/plans/tools/hologram-ir-validate.py`** | maps | "rejects wrong order, wrong edge, cycle" | **§1.6 — fails 5 of 6** |
+| `docs/gearing/contracts-*.js` ×8 | `gear:<shaft>` | the 47 baked keys | not audited here; a documented 1:1 depends on them |
+| `docs/clock/sw.js`, `projection-bake-worker.js` | hologram | Layer III viewer runtime | another campaign's |
+| `docs/kit/agent-task-template.md` | kit | the receipt every agent fills | iteration 1 pass 3: **it, not the law, is the standard** |
+
+### 1.5 The umbrella dropped a command the protocol it wraps already had
+
+`claim.sh` offers `status | claim | release | check | refresh | **force-free**`.
+`coord.sh` offers `status | which | claim | release | check | refresh | doctor | gate` — **no `force-free`**.
+
+When the stale `prompts` claim was cleared by hand today, that was a capability the gear-shaft protocol ships as a command, performed manually because the umbrella built on top of it did not carry it forward. **The expiry question is pass 5's; this one is smaller and answerable without a ruling.**
+
+### 1.6 The worst instrument in the tree was already measured, and this board had omitted it
+
+[The rust second reading's **F7**](rust-nostd-second-reading.md) — *"The golden fixture's validator cannot tell the plan from its opposite."* Six mutations of the golden fixture were run through `hologram-ir-validate.py`: **five PASS, one FAIL.**
+
+An instrument that accepts five of six deliberately wrong inputs, filed, severity `mislead`, unresolved. **Omitting it from the first cut of this board is the same class of error the board is about** — and it was found by reading a plan this pass had already cited.
+
+**F7 does not fit the use/mention thesis.** The validator has the code: seventeen references to order, edge and cycle. It runs, it reports PASS, and it is wrong. That is a third failure mode.
+
 ## 2. The thesis, stated so it can lose
 
 **One defect explains almost everything iteration 1 found: the instruments cannot distinguish use from mention.**
@@ -83,11 +114,32 @@ That 42 includes **`L0`**. It is not an identifier. It is the variable in the Ka
 | Check 5's three false fires | ✔ absence phrases inside quotations |
 | Check 4's one false fire | ✔ a link inside a fence |
 | `L0` read as an identifier | ✔ a variable inside a formula |
-| **The unreproducible 241** | ✘ **a method nobody recorded — a different failure** |
+| **The unreproducible 241** | ✘ **a method nobody recorded** |
+| **F7: the validator passes 5 of 6 wrong plans** | ✘ **a specification implemented and ineffective** |
 
-Seven of eight fit. **The one that does not is named rather than forced**, and it points at iteration 2's second theme: an instrument whose method was never written down cannot be audited at all.
+**The thesis stated in the first cut of this pass was too strong, and completing the inventory is what narrowed it.** Seven findings are use/mention. Two are not, and they are different from each other:
 
-**Falsifier:** if iteration 2 finds instrument defects that are neither use/mention nor unrecorded-method, the thesis narrows and the receipt says so.
+| Mode | Instrument fails because | Instances |
+|---|---|---|
+| **Use vs mention** | it reads a token without its context | 7 |
+| **Unrecorded method** | nobody wrote down how it counted, so nothing can re-run it | 1 — the 241 |
+| **Implemented and ineffective** | the code is there, it runs, it returns PASS, and it is wrong | 1 — **F7** |
+
+The third is the dangerous one. A blind regex over-reports and someone notices. **A validator that says PASS on five of six wrong plans under-reports, and nobody notices** — its output looks exactly like success.
+
+**Falsifier, restated:** if iteration 2 finds a fourth mode, the receipt names it. The thesis has already lost once, in its own pass 1, which is what it was written for.
+
+### How each number is got
+
+```bash
+git ls-files '*.md' | wc -l
+git ls-files | grep -E '\.(sh|py|js)$'            # the instrument inventory
+grep -c '```' .claude/hooks/check-docs.sh          # fence handling, check 7 only
+python3 - <<'X'  ... X                             # links inside fences: 0
+python3 - <<'X'  ... X                             # register claims 156; 176 cross 3+ files; 42 unclaimed
+```
+
+The two python probes are reproduced in the pass 1 commit message's parent diff rather than pasted here, for the reason §1.1a gives: **this document cannot print the patterns it is about without tripping the checker it is about.** Pinned at `823bef9`.
 
 ## 3. The six passes
 
