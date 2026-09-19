@@ -79,6 +79,26 @@
 
 ---
 
+## Pass 2 receipt
+
+| Field | Value |
+|---|---|
+| Status | **EXECUTED** |
+| When | 2026-09-18 ~20:52 PT |
+| Station | clipboards · agent `webgpu Pass 2 EXECUTE` |
+| Plan | [webgpu-pass-2-plan.md](webgpu-pass-2-plan.md) (was HELD; plan commits after rebase `e1c9d32` · `7675112`; claim BASE `044257c` = origin/main) |
+| Hands skim | shoe → graphics A–D → systems-manifest → staking / law-why → AGENTS Implementation Law → pointer-emission DRAFT/`[GAP]` → clock/README + lace-projection (WebGPU 3D) → clock/wasm README (different layer) → hologram/README + visual-primitives (WGSL cite) → wasm-spec-3 Pass 1–6 banner (**cite-only**; untouched) → Pass 1 clipboard → this plan → PDF |
+| PDF | **PRESENT** — cite Pass 1: `refs/local/webgpu-crd-20260915.pdf` → `6bc31a9e…64afe1.pdf`; **321** pp.; text layer; PDF one-based primary; SHA match; gitignored; **never staged** |
+| Product | D1–D6 leftovers (+ D7 Shadow command-encoder→submit miniature); A–H/X morals untouched; **no** ascii Wave A; mechanisms deferred |
+| Amended | Core graphics · systems-manifest(-ascii) · five-stakes · src/ · wasm-spec-3 · clock · hologram · law | **No** |
+| Emission | still `[GAP]` — no POINTER when / arity / adjacency; no invented Φ |
+| T5 five-stakes | **skip** (default) |
+| T7 ascii/mechanisms/wasm | **skip** — no ascii Wave A; mechanisms deferred; wasm-spec-3 untouched |
+| D7 | **included** — command encoder → finish → `queue.submit` sketch (PAGE F · CmdBuf/encoder PDF **160–165** · submit PDF **218**); **FORBID-as-Core** · **FORBID-as-emission-rule** · **SILENT-for-Lace-append** |
+| FM-Wgpu1…Wgpu9 | all pinned (no OPEN) |
+
+---
+
 ## PAGE A — Identity / Introduction / Fundamentals
 
 | Field | Content |
@@ -178,10 +198,125 @@
 
 ---
 
-## Explicitly not this pass
+## Explicitly not this pass (Pass 1 + Pass 2 stand)
 
 - No `webgpu-ascii-machinery.md` / Wave A panels (Pass 4 shape later unless human asks).
-- No `webgpu-mechanisms.md`.
+- No `webgpu-mechanisms.md` (deferred).
 - No five-stakes rewrite (default **skip**).
 - wasm-spec-3 products **untouched** (cite-only).
 - No `src/`. Emission still `[GAP]`.
+
+---
+
+## Pass 2 deltas
+
+Pass 1 filled PAGE A–H, X against the CRD. These deltas are **host/GPU leftovers / false friends / coherence** only. They do not invent emission. A–H/X morals are unchanged. FORBID-as-Lace-store / FORBID-as-Lace-strand / FORBID-as-emission-rule / PROPOSAL-only / FORBID-as-compile-target-swap are not softened. WebGPU remains **HOST/GPU Shadow only**.
+
+### D1 — What this clipboard / shelf is not
+
+- Not Core / not a sixth graphic / not systems-manifest-ascii.
+- Not `pointer-emission.md` / not a Φ fill / not acceptance of emission by calling WebGPU.
+- Not Lace’s 1D strand, star index, or Graphic D scheduler.
+- Not permission to treat **GPUBuffer / GPUTexture / bind-group** as Lace store.
+- Not permission to treat **GPUDevice / Adapter / Queue** as lace cord / Core door / Graphic D.
+- Not permission to treat **`queue.submit` / draw / dispatch / encoder finish** as POINTER when / arity / adjacency.
+- Not permission to treat **WGSL** as Lace WORD.
+- Not permission to treat **canvas configure / present** as accepting pointer-emission.
+- Not a **wasm64 compile-target** swap (wasm-spec-3 shelf stands; different layer).
+- Not permission to treat **validation / device-lost** as Lace cut or Φ gate.
+- Not permission to treat **`mapAsync` / CPU readback** as Lace append authority.
+- Not a rewrite of clock / hologram / AGENTS Implementation Law.
+- Not permission to add `src/` before emission acceptance.
+- Not an anti-model LLM leftover shelf; not an ISA leftover shelf (FM-W\* stay on wasm-spec-3).
+
+### D2 — ON-TARGET / KEEP / FORBID / MAP strip
+
+Compact spine on this clipboard (not five-stakes). Matches Pass 1 morals.
+
+| KEEP-read-as-host-API | FORBID |
+|---|---|
+| CRD 2026-09-15 identity / fundamentals / timelines (PAGE A) | Timelines ⇒ Lace append order (A) |
+| Host security & privacy threat model (B) | WebGPU security text ⇒ Lace law / AGENTS.md (B; **FORBID-as-Core-write**) |
+| Adapter / Device / Queue mechanics (C) | GPUDevice/Adapter/Queue ⇒ lace cord / Graphic D / Core door (C; **FORBID-as-Lace-strand**) |
+| Buffer / Texture / Sampler / Binding (D) | GPUBuffer/Texture/bind-group ⇒ Lace strand or second store (D; **FORBID-as-Lace-store**) |
+| Pipelines + WGSL shader path (E) | WGSL ⇒ Lace WORD / Core operator (E; **FORBID-as-Core-write**) |
+| Commands / encoders / compute & render passes (F) | `submit`/draw/dispatch ⇒ POINTER when/arity/adjacency / Φ (F; **FORBID-as-emission-rule**) |
+| Canvas / presentation surface (G) | Canvas configure ⇒ accept `pointer-emission.md` (G; **PROPOSAL-only** / FORBID) |
+| Errors / validation / device lost (H) | Validation / device-lost ⇒ Lace cut / append scheduler / Φ gate (H; **SILENT-for-Lace-append**) |
+| Host/GPU as Shadow projection API (X) | WebGPU ⇒ wasm64 compile-target swap (X; **FORBID-as-compile-target-swap**) |
+
+**MAP arrows (coherence with Hands / projection / hologram / wasm64 — all exits FORBIDDEN into Core write):**
+
+```
+A ──KEEP-read-as-host-API──► Shadow host/GPU identity     ──[X]──► Core / sixth graphic
+B ──KEEP-read──► host threat model                        ──[X]──► Lace law / AGENTS rewrite
+C ──KEEP-read──► Device/Queue mechanics                   ──[X]──► Graphic D / lace cord / Core door
+D ──KEEP-read──► Buffer/Texture/Binding                   ──[X]──► Lace 1D strand / second store
+E ──KEEP-read──► WGSL / pipeline (hologram live path cite)──[X]──► WORD / Core ops / src/
+F ──KEEP-read──► encoder → submit / draw / dispatch       ──[X]──► pointer-emission when-rule / Φ
+G ──PROPOSAL-only──► canvas / present (projection surface)──[X]──► accept pointer-emission.md
+H ──SILENT──► validation / device-lost                    ──[X]──► Lace cut / append / Φ gate
+X ──SILENT──► false friends / steward refuse              ──[X]──► wasm64 swap · invent Φ
+clock/hologram ──cite──► Shadow viewer using this API     ──[X]──► Core authority
+wasm-spec-3 ──cite-only──► wasm64 compile target          ──[X]──► conflate with WebGPU
+mapAsync/readback ──KEEP-read──► CPU↔GPU transfer         ──[X]──► Lace append authority
+emission = [GAP]  ·  Hands win  ·  no src/ until human-accepted emission
+```
+
+### D3 — Failure modes (FM-Wgpu1…Wgpu9)
+
+| ID | Misread | Hands / law deadbolt | PDF pin (Pass 1 reuse + Pass 2 verify) |
+|---|---|---|---|
+| **FM-Wgpu1** | **GPUBuffer** ⇒ Lace **1D strand** | **FORBID-as-Lace-store** · Piece 1/6 · PAGE D | §5.1 GPUBuffer PDF **53** — “A GPUBuffer represents a block of memory… Data is stored in linear layout…” (cite D) |
+| **FM-Wgpu2** | **GPUDevice / Adapter / Queue** ⇒ **Core / Graphic D** / lace cord / Core door | **FORBID-as-Lace-strand** · PAGE C | §4.4 GPUDevice PDF **50** — “top-level interface through which WebGPU interfaces are created”; §19.2 GPUQueue IDL PDF **218** — `submit(sequence<GPUCommandBuffer>)` (cite C) |
+| **FM-Wgpu3** | **`queue.submit` / draw / dispatch** ⇒ POINTER **when** / arity / adjacency (**Φ** fill) | **FORBID-as-emission-rule** · pointer-emission `[GAP]` · PAGE F | §16.1.2 Dispatch PDF **185–186**; draw IDL PDF **200**; `submit` PDF **218** — “Schedules the execution of the command buffers by the GPU on this queue.” (cite F) |
+| **FM-Wgpu4** | **Texture / bind-group** ⇒ **second Lace store** / Graphic D backing | **FORBID-as-Lace-store** · PAGE D | §8.2.1 Bind Group Creation PDF **100** — `createBindGroup()` / `GPUBindingResource`; Texture usages / GPUTexture region (TOC §6; Pass 1 cite ~PDF **222** fragment) (cite D) |
+| **FM-Wgpu5** | **WGSL** ⇒ Lace **WORD** / Core operator / schema language | **FORBID-as-Core-write** · PAGE E | §9 Shader Modules PDF **109–110** — `code` = “The WGSL source code for the shader module.”; EXAMPLE 27 override constants PDF **120** (cite E) |
+| **FM-Wgpu6** | **Canvas configure / present** ⇒ **accept** `pointer-emission.md` / close Φ | **PROPOSAL-only** · **FORBID** accept-GAP · PAGE G | §21 Canvas Rendering PDF **228–230** — `getContext('webgpu')` · `configure()`; `GPUCanvasConfiguration` PDF **235** (cite G) |
+| **FM-Wgpu7** | **WebGPU** ⇒ **wasm64 compile target** / replaces wasm-spec-3 shelf | **FORBID-as-compile-target-swap** · PAGE X | PAGE X steward refuse (5) + wasm-spec-3 Pass 1–6 cite-only (different layer; **not** this CRD) |
+| **FM-Wgpu8** | **Validation / device-lost** ⇒ Lace **cut** / authorized rewrite / Φ gate / append rule | **SILENT-for-Lace-append** · **FORBID-as-emission-rule** · PAGE H | §22 Errors & Debugging PDF **238–240** — “errors are raised via dispatch error” · `GPUDevice.lost` / device-lost validation skip (cite H) |
+| **FM-Wgpu9** | **`mapAsync` / `getMappedRange` / CPU readback** ⇒ Lace **append authority** / strand write gate | **FORBID-as-emission-rule** · **SILENT-for-Lace-append** · PAGE D | §5.1 GPUBuffer IDL PDF **53** — `mapAsync` / `getMappedRange` / `unmap`; mapping EXAMPLE 18 PDF **55–60** (cite D) |
+
+No FM row left `[OPEN]`. Pins reused/verified from Pass 1; Pass 2 re-sighted Buffer/Device/Queue/BindGroup/WGSL/Dispatch/draw/submit/Canvas/§22/`mapAsync` via `pdftotext -f N -l N -layout`.
+
+### D4 — Interface coherence (Hands + projection + hologram + wasm64)
+
+**Only** KEEP-read-as-host-API outputs may sit **beside** Lace: WebGPU CRD as the **host/GPU Web API** Shadow projection / hologram / canvas embed may call. **Nothing** in A–H/X writes Graphic D, strand/, word/, pointer/, or fills `pointer-emission.md`. **clock/** (`lace-projection.html`, WebGPU 3D + D1 time) and **hologram/** (`visual-primitives.md` WGSL live path) are **Shadow surfaces** that *cite* this API — glyphs ≠ schema; they do not become Core authority for this CRD or vice versa. **`docs/clock/wasm/README.md`** is Shadow **projection bake** (`wasm32`/Workers) — **different layer** from this host/GPU shelf; not Spec authority. **wasm-spec-3** = **compile-target ISA / wasm64 seal** — cite-only; WebGPU does **not** replace it (FM-Wgpu7). Canvas / host-embed sketches stay **PROPOSAL-only**; calling GPU or configuring canvas does **not** accept emission. `[GAP]` remains. Shoe in hands, or no.
+
+### D5 — Source gate (cite Pass 1)
+
+PDF is **PRESENT** (do not narrate absent). Pass 1 receipt: `refs/local/webgpu-crd-20260915.pdf` → attachment `6bc31a9e21074a039a5c854f1bfc33bdbf282cd8b48e22a4977ca406ca64afe1.pdf`; **321** pages; text layer present (Skia/PDF); PDF one-based primary (no clear printed↔PDF offset); SHA-256 `6bc31a9e21074a039a5c854f1bfc33bdbf282cd8b48e22a4977ca406ca64afe1`; title WebGPU · W3C CRD **15 September 2026** · URL `https://www.w3.org/TR/2026/CRD-webgpu-20260915/`; `git check-ignore` OK; **never `git add`**. Pass 1 products: clipboard PAGE A–H, X · **no** ascii Wave A · mechanisms deferred · execute ~`e05664e` / station note ~`8c81990`. Method this pass: reuse Pass 1 pins; `pdftotext` verify for FM-Wgpu\* + D7. Five-stakes left untouched (T5 skip).
+
+### D6 — Sealed (still)
+
+- Invent POINTER when / arity / adjacency (Φ stays `[GAP]`)
+- Soften Pass 1 FORBID-as-Lace-store / FORBID-as-Lace-strand / FORBID-as-emission-rule / PROPOSAL-only / FORBID-as-compile-target-swap
+- Promote GPUBuffer / GPUTexture / bind-group as Lace store
+- Promote GPUDevice / Adapter / Queue as Graphic D / lace cord / Core door
+- Use `queue.submit` / draw / dispatch / encoder finish as POINTER emission / Φ
+- Treat WGSL as Lace WORD / Core operator
+- Treat canvas configure / present as accepting `pointer-emission.md`
+- Swap WebGPU for wasm64 / wasm-spec-3 compile target
+- Treat validation / device-lost as Lace cut / Φ gate / append rule
+- Treat `mapAsync` / `getMappedRange` / CPU readback as Lace append authority
+- Create `webgpu-ascii-machinery.md` / Wave A panels · create `webgpu-mechanisms.md`
+- Amend wasm-spec-3 products · law / graphics / systems-manifest / five-stakes / clock / hologram
+- Add `src/` / Cargo.toml before emission acceptance
+- Git-add the PDF · pretend OCR / claim PDF absent when present
+- Clone Xiao–Zhu / Petersen / AgentScope LLM morals or wasm FM-W\* ISA morals onto this host/GPU shelf
+
+### D7 — Constructive miniature (Shadow only) — command encoder → submit sketch
+
+**Choice (a).** Stamp: **FORBID-as-Core** · **FORBID-as-emission-rule** · **SILENT-for-Lace-append** · not POINTER when-rule · not Φ · not `src/`. Paper algorithm only (Ch.12–13 / PAGE F · CmdBuf/encoder PDF **160–165**; GPUQueue `submit` PDF **218**). Steps below are what the Spec states; no invented operators. Canvas configure miniature (choice b) deferred.
+
+1. Obtain a `GPUDevice` (host/GPU init path — **KEEP-read-as-host-API** only; Device ↛ Graphic D / Core door — FM-Wgpu2).
+2. Create a command encoder: `device.createCommandEncoder()` (§13.2 GPUCommandEncoder IDL PDF **~160–165**).
+3. Encode GPU commands into the encoder (compute/render passes, copies, …) while encoder state is `"open"` (§13.1 `[[commands]]` list on Device timeline — host encode hygiene only).
+4. Finish: `commandBuffer = commandEncoder.finish()` → yields a `GPUCommandBuffer` (EXAMPLE clear-buffer path PDF **~160–165**: create → finish → submit).
+5. Submit: `device.queue.submit([commandBuffer])` — “Schedules the execution of the command buffers by the GPU on this queue.” (PDF **218**). Submitted buffers cannot be reused (Pass 1 cite PDF **222** prose).
+
+**[OPEN] (book continues; not settled for Lace):** full per-pass Valid Usage tables; multi-queue / timeline interaction beyond Content/Device/Queue sketch; which host embed may call this from Lace projection — out of scope here. Do **not** finish those from Lace.
+
+**Lace refusal:** this sketches **host/GPU command encode → queue schedule**. It does **not** emit POINTER, does **not** append to Graphic D, does **not** open Core doors / `src/`, and does **not** fill emission `[GAP]`. `queue.submit` is not Φ.
+
+---

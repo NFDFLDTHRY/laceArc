@@ -1,7 +1,7 @@
 # WebGPU CRD 2026-09-15 — Pass 2 PLAN (leftovers / failure modes / host-GPU coherence)
 
-**Status:** **HELD / NOT EXECUTED** — plan only (2026-09-18 ~20:48 PT).  
-**Station:** clipboards (HELD `webgpu Pass 2 PLAN only`)  
+**Status:** **EXECUTED** (2026-09-18 ~20:52 PT) — Pass 2 leftovers / FM-Wgpu* / coherence landed on clipboard.  
+**Station:** clipboards (EXECUTE `webgpu Pass 2 EXECUTE`)  
 **Base at plan:** claim BASE `8c81990` (= `origin/main` after Pass 1 EXECUTED). Refresh `git pull --ff-only` before any execute.  
 **Spec:** *WebGPU* — **W3C Candidate Recommendation Draft, 15 September 2026** · editors Kai Ninomiya, Brandon Jones, Jim Blandy (et al.)  
 **Clipboard under test:** `docs/clipboards/webgpu-clipboard.md`  
@@ -51,7 +51,7 @@ pull/ff → claim clipboards → Hands + projection skim (host/GPU mesh)
 |  FORBID: validation/device-lost as Lace cut · mapAsync as append.    |
 |  KEEP-read: host/GPU mechanics for Shadow projection / hologram.     |
 |  No src/ until pointer-emission accepted.  One strand.               |
-|  Status this commit: HELD / NOT EXECUTED — plan only.                |
+|  Status this commit: EXECUTED — D1–D6 (+ D7) on clipboard.           |
 +======================================================================+
 ```
 
@@ -391,13 +391,13 @@ Validation / device-lost is not a Lace cut.
 
 | Field | Value |
 |---|---|
-| Status | **HELD / NOT EXECUTED** (plan only) |
-| When | 2026-09-18 ~20:48 PT |
-| Agent | `webgpu Pass 2 PLAN only` |
-| Base | `8c81990` (= origin/main at claim) |
-| Product | this plan file only |
+| Status | **EXECUTED** |
+| When | 2026-09-18 ~20:48 PT (plan) · EXECUTED ~20:52 PT |
+| Agent | `webgpu Pass 2 PLAN only` → `webgpu Pass 2 EXECUTE` |
+| Base | plan BASE was `8c81990`; execute claim BASE `044257c` |
+| Product | this plan (EXECUTED) + clipboard D1–D6 (+ D7) |
 | Pass 1 ancestor | EXECUTED ~`e05664e` (clipboard A–H,X) · station note ~`8c81990` |
-| Amended clipboard/ascii/src/maps/law/wasm-spec-3 | **No** (plan only) |
+| Amended clipboard/ascii/src/maps/law/wasm-spec-3 | clipboard yes (Pass 2 deltas); ascii/src/maps/law/wasm-spec-3 **No** |
 | PDF staged | No |
 | Push | **No** |
 | Emission | `[GAP]` |
@@ -406,13 +406,15 @@ Validation / device-lost is not a Lace cut.
 
 | Field | Value |
 |---|---|
-| Status | _(empty until execute)_ |
-| When | |
+| Status | **EXECUTED** |
+| When | 2026-09-18 ~20:52 PT |
 | Agent | `webgpu Pass 2 EXECUTE` |
-| Product | D1–D6 (+ D7 if any) on `webgpu-clipboard.md` |
+| Product | D1–D6 (+ D7 encoder→submit Shadow miniature) on `webgpu-clipboard.md` |
 | T5 five-stakes | **skip** (default) |
 | T7 ascii/mechanisms/wasm | **skip** |
-| FM-Wgpu1…Wgpu9 | _(fill: all pinned themes)_ |
+| FM-Wgpu1…Wgpu9 | **all pinned** (Buffer≠strand · Device≠Graphic D · submit/draw≠Φ · texture/bind≠2nd store · WGSL≠WORD · canvas≠accept emission · ≠wasm64 · validation/lost≠cut · mapAsync≠append) |
 | Amended map/law/graphics/src/wasm-spec-3 | **No** |
 | PDF staged | **No** |
 | Emission | `[GAP]` |
+| D7 | **yes** — choice (a) command encoder → finish → `queue.submit` · FORBID-as-Core · FORBID-as-emission-rule · SILENT-for-Lace-append |
+| Claim BASE | `044257c` (origin/main at claim; plan ancestors rebased `e1c9d32` · `7675112`) |
