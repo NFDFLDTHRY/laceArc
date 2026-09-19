@@ -1,6 +1,6 @@
 # Projection iteration 5 / pass 2 plan — shaders to the three lookrefs
 
-**Status:** PLAN. Not executed. Emission `[GAP]`.  
+**Status:** EXECUTED. Emission `[GAP]`. Title `i5p2`. Floor lifted. Ember+face marks. Gold PTR. Live cyan hub. Camera y=9 look y=0.2.  
 **Station:** hologram  
 **Evidence:** `i5p1` shot, `ms 64`, `GPU on`, `t=0004 PTR`. Stage is a dark tank of empty teal boxes. Authority: traces `2378.jpg`, crossing `2379.png`, lattice `2377.jpg`.
 

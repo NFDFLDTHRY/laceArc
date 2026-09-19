@@ -72,16 +72,17 @@ function bake(){
       add(shell,[0.55,0.18,0.08],off,r.i);
       add(halo,[0.92,0.30,0.05],off,r.i);
       add(core,[1.0,0.42,0.06],off,r.i);
-      if(r.v==="PIE") add(ball,[0.12,0.95,0.32],[off[0],off[1]+1.05,off[2]], r.i);
+      if(r.v==="PIE") add(ball,[0.12,0.95,0.32],[off[0],off[1]+0.85,off[2]], r.i);
     } else {
       add(cube(0.16),[0.15,0.55,0.95],off,r.i);
       const A=posOf(r.a), Bb=posOf(r.b);
       const seg=shorten(A,Bb,0.52);
       if(seg){
-        add(ribbon(seg[0],seg[1],0.040),[0.18,0.62,0.92],[0,0,0],r.i);
-        add(ribbon(seg[0],seg[1],0.016),[0.25,0.85,1],[0,0,0],r.i);
+        add(ribbon(seg[0],seg[1],0.045),[0.82,0.52,0.08],[0,0,0],r.i);
+        add(ribbon(seg[0],seg[1],0.018),[0.78,0.68,0.12],[0,0,0],r.i);
       }
     }
+    add(ribbon([off[0],0.55,off[2]],[off[0],2.35,off[2]],0.018),[0.05,0.88,1.0],[0,0,0],r.i);
   }
   for(let i=-10;i<=10;i++){
     const t=i*0.7;
