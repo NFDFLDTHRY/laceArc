@@ -2,7 +2,7 @@
 
 **Object:** `docs/history/README.md`  
 **Station:** history.  
-**Executed:** [quiet-door-5-pass-1-plan.md](quiet-door-5-pass-1-plan.md) · [quiet-door-5-pass-2-plan.md](quiet-door-5-pass-2-plan.md).  
+**Executed:** [quiet-door-5-pass-1-plan.md](quiet-door-5-pass-1-plan.md) · [quiet-door-5-pass-2-plan.md](quiet-door-5-pass-2-plan.md) · [quiet-door-5-pass-3-plan.md](quiet-door-5-pass-3-plan.md).  
 **Not:** Core. Not an emitter. Not Hands. Not history pass 8. Not door #4 pass 7.  
 **Emission:** `[GAP]`. No `src/`. History door bytes untouched. Extracts untouched.
 
@@ -97,3 +97,26 @@ G2 stays `[GAP]`.
 | T2 | Hy2 Break = history as Hands; Hy6 Break = revive walker |
 | T3 | Spine left in place |
 | T4 | Door + extracts untouched |
+
+## Pass 3 — grain
+
+Extract is evidence. Sit-note is ruling. Law stores. Those are not the same column.
+
+| Kind | Says | `which` | Collapse would look like |
+|---|---|---|---|
+| History door | readings against current law; not Core | history | treat the index as live law |
+| Extract (as a class) | what a pass recovered | history | rewrite evidence into a ruling |
+| Sit-note (as a class) | how that extract sits against law now | history | treat the ruling as live law |
+| Pass 6 extract | HCC-A / Cup / Water originals vs surfaces | history | drop gears into Core as rows |
+| Pass 6 sit-note | ruling on that extract | history | amend live law from the sit |
+| Pass 7 extract + JSON | bound; cites pass 6; machine record | history | treat JSON as the store |
+| Live law | the store; history does not amend it | law | let an extract win over this file |
+
+## Pass 3 deltas
+
+| Ticket | Action |
+|---|---|
+| T1 | Seven-row grain |
+| T2 | Extract ≠ sit-note ≠ law |
+| T3 | Pass 8 not a row |
+| T4 | Door + extracts + live law untouched |

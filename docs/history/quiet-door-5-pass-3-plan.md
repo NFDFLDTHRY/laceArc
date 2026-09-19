@@ -1,6 +1,6 @@
 # Quiet door #5 (History) — Pass 3 PLAN
 
-**Status:** PLAN only. Not run.  
+**Status:** EXECUTED — grain on `docs/history/quiet-door-5-ascii.md`. Door + extracts unchanged. Emission `[GAP]`.  
 **Station:** history (HELD Grok-history).  
 **Object:** History grain — extract vs sit-note vs law.  
 **Authority:** [`quiet-door-5-ascii.md`](quiet-door-5-ascii.md) passes 1–2. History door as written. `coord.sh which`.  
