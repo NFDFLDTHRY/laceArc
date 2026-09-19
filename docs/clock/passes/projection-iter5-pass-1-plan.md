@@ -1,6 +1,6 @@
 # Projection iteration 5 / pass 1 plan — first paint is 38 KB, not 728 KB
 
-**Status:** PLAN. Not executed. Emission `[GAP]`.  
+**Status:** EXECUTED. Emission `[GAP]`. Title `i5p1`. Lookrefs lazy. Bake parallel with adapter. No 300ms sleep. HUD ms.  
 **Station:** hologram  
 **Evidence:** i4p6 yes–no–yes sat on load lag. HTML+worker ≈ 38 KB. Three lookref JPEGs ≈ 728 KB, fetched on every open. Adapter then worker is serial. Controlled load sleeps 300 ms.
 

@@ -19,7 +19,7 @@ body.gpu-off{
     repeating-linear-gradient(0deg, transparent 0 46px, rgba(62,200,255,.28) 46px 48px),
     repeating-linear-gradient(90deg, transparent 0 46px, rgba(62,200,255,.28) 46px 48px);
 }
-body.ref{background:#05070c url("../hologram/clockwork-view-lattice.jpg") center/cover no-repeat}
+body.ref{background:#05070c}
 #c{position:fixed;inset:0;width:100%;height:100dvh;display:block;z-index:0}
 #fallback{position:fixed;inset:0;z-index:1;display:none;background:#05070c}
 body.ref #fallback{display:block}
@@ -50,14 +50,14 @@ aside[hidden]{display:none}
 <body>
 <canvas id="c"></canvas>
 <div id="fallback">
-  <img id="look-lattice" class="on" src="../hologram/clockwork-view-lattice.jpg" alt="lattice template"/>
-  <img id="look-traces" src="../hologram/clockwork-view-traces.jpg" alt="traces template"/>
-  <img id="look-crossing" src="../hologram/clockwork-view-crossing.png" alt="crossing template"/>
+  <img id="look-lattice" class="on" alt="lattice template"/>
+  <img id="look-traces" alt="traces template"/>
+  <img id="look-crossing" alt="crossing template"/>
   <p class="why" id="why">Lookrefs on stage until WebGPU paints. Glyphs ≠ schema. [GAP]</p>
 </div>
 <div class="hud">
   <header class="hit">
-    <h1>LAYER III · i4p6 · RAWCDN SHA</h1>
+    <h1>LAYER III · i5p1 · RAWCDN SHA</h1>
     <p>Install this URL only if it is <code>rawcdn.githack.com</code> + a full SHA. Floating <code>main</code> is preview. Cubes are glyphs. No emitter. [GAP]</p>
   </header>
   <div class="modes hit">
@@ -82,11 +82,12 @@ aside[hidden]{display:none}
     <div class="row">
       <input id="t" type="range" min="0" max="10" step="0.02" value="0"/>
       <span id="phase">t=0000</span>
-      <span class="stamp">i4p6</span>
+      <span class="stamp">i5p1</span>
       <span class="stamp">A17</span>
       <span class="stamp" id="gpustamp">GPU ?</span>
       <span class="stamp" id="bootstamp">boot ?</span>
       <span class="stamp" id="loadstamp">load ?</span>
+      <span class="stamp" id="msstamp">ms ?</span>
       <span class="stamp" id="wdogstamp">wdog 0</span>
       <span class="stamp" id="szstamp">?x?</span>
       <span class="stamp" id="nstamp">n=?</span>
@@ -297,7 +298,7 @@ function lookAt(e,c,up){
 function bakeViaWorker(src){
   return new Promise((resolve, reject) => {
     let w;
-    try { w = new Worker(src || "projection-bake-worker.js?i=4p6"); }
+    try { w = new Worker(src || "projection-bake-worker.js?i=5p1"); }
     catch (e) { reject(e); return; }
     const t = setTimeout(() => { try{w.terminate();}catch(_){ } reject(new Error("bake timeout")); }, 8000);
     w.onerror = e => { clearTimeout(t); try{w.terminate();}catch(_){ } reject(e); };
@@ -315,11 +316,12 @@ function bakeViaWorker(src){
   });
 }
 let bakedScene=null;
+let bakeInFlight=null;
 async function bakeScene(){
   if(bakedScene && bakedScene.P && bakedScene.P.length>6) return bakedScene;
-  try { bakedScene = await bakeViaWorker("projection-bake-worker.js?i=4p6"); }
+  try { bakedScene = await bakeViaWorker("projection-bake-worker.js?i=5p1"); }
   catch (e1) {
-    const src = await fetch("projection-bake-worker.js?i=4p6", {cache:"no-store"}).then(r => {
+    const src = await fetch("projection-bake-worker.js?i=5p1", {cache:"no-store"}).then(r => {
       if (!r.ok) throw new Error("worker fetch "+r.status);
       return r.text();
     });
@@ -355,6 +357,7 @@ function showLook(t){
 function keepFallback(why){
   gpuLive=false;
   gpuGaveUp=true;
+  ensureLookrefs();
   document.body.classList.add("gpu-off");
   const f=document.getElementById("fallback");
   f.style.display="block";
@@ -364,7 +367,20 @@ function keepFallback(why){
   if(g) g.textContent="GPU off";
 }
 function hideFallback(){
-  /* pass 6f: never remove lookrefs. Black stage is illegal. */
+  /* lookrefs stay unloaded until REF or GPU-off */
+}
+function ensureLookrefs(){
+  if(ensureLookrefs.done) return;
+  const map=[
+    ["look-lattice","../hologram/clockwork-view-lattice.jpg"],
+    ["look-traces","../hologram/clockwork-view-traces.jpg"],
+    ["look-crossing","../hologram/clockwork-view-crossing.png"]
+  ];
+  for(const [id,src] of map){
+    const el=document.getElementById(id);
+    if(el && !el.getAttribute("src")) el.src=src;
+  }
+  ensureLookrefs.done=true;
 }
 const tEl=document.getElementById("t");
 const phase=document.getElementById("phase");
@@ -377,6 +393,7 @@ document.getElementById("refbtn").addEventListener("click", ev=>{
   ev.preventDefault();
   ev.stopPropagation();
   document.body.classList.toggle("ref");
+  if(document.body.classList.contains("ref")) ensureLookrefs();
   document.getElementById("refbtn").classList.toggle("on", document.body.classList.contains("ref"));
 });
 document.querySelectorAll(".modes button[data-mode]").forEach(btn=>{
@@ -447,9 +464,8 @@ async function main(gen){
   const szstamp=document.getElementById("szstamp");
   const nstamp=document.getElementById("nstamp");
   showLook(tVal);
+  const bakeP = bakeInFlight || (bakeInFlight=bakeScene());
   await new Promise(r=>requestAnimationFrame(()=>requestAnimationFrame(r)));
-  if(gen!==gpuGen) return;
-  if(hadController) await new Promise(r=>setTimeout(r,300));
   if(gen!==gpuGen) return;
   if(!navigator.gpu){ keepFallback("No navigator.gpu — CSS grid on stage."); return; }
   let ad=null;
@@ -472,7 +488,7 @@ async function main(gen){
   if(!ctx){ keepFallback("No WebGPU canvas context — CSS grid on stage."); return; }
   const fmt=navigator.gpu.getPreferredCanvasFormat();
   let scene;
-  try { scene = await bakeScene(); }
+  try { scene = await bakeP; }
   catch (e) {
     keepFallback("CPU bake worker failed — CSS grid stays. " + (e && e.message ? e.message : e));
     return;
@@ -563,6 +579,8 @@ async function main(gen){
       gpuLive=true;
       document.body.classList.remove("gpu-off");
       if(gstamp) gstamp.textContent="GPU on";
+      const ms=document.getElementById("msstamp");
+      if(ms) ms.textContent="ms "+Math.round(performance.now()-bootAt);
     }
     const idx=Math.min(10, Math.floor(tVal+0.001));
     const live=D1[idx];
@@ -640,6 +658,7 @@ addEventListener("visibilitychange", ()=>{
 if(window.visualViewport) visualViewport.addEventListener("resize", ()=>{
   if(gpuSession && gpuSession.resize) gpuSession.resize();
 });
+bakeInFlight=bakeScene();
 bootGpu();
 (async () => {
   const el=document.getElementById("nnstamp");
@@ -654,7 +673,7 @@ function runAudit(){
   const el=document.getElementById("audit");
   if(!el) return;
   const title=document.querySelector("h1")?.textContent||"";
-  const A=/i4p6/.test(title)?"ok":"fail";
+  const A=/i5p1/.test(title)?"ok":"fail";
   const D=!!(navigator.serviceWorker && navigator.serviceWorker.controller);
   const E=!!(window.deferredPrompt || window.matchMedia("(display-mode: standalone)").matches);
   const F=!!document.getElementById("installbtn");
@@ -665,7 +684,7 @@ function runAudit(){
     const ct=r.headers.get("content-type")||"";
     const B=/manifest|json/i.test(ct)?"ok":("fail "+ct);
     el.textContent=
-      "A title i4p6 "+A+"\n"+
+      "A title i5p1 "+A+"\n"+
       "B manifest MIME "+B+"\n"+
       "C icons 192+512 ok\n"+
       "D SW controlling "+(D?"ok":"fail")+"\n"+
