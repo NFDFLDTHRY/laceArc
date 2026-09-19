@@ -8,6 +8,7 @@ Portable steward controls. Not Hands. Not Graphic D. Nothing here is a source of
 | [cold-doors.md](cold-doors.md) | Quiet-door register: LIVE / DATED / STALE / PAUSED / SHUT | Pass 1–2 EXECUTED |
 | [cold-doors-pass-1-plan.md](cold-doors-pass-1-plan.md) | Pass 1 plan for that register | EXECUTED |
 | [cold-doors-pass-2-plan.md](cold-doors-pass-2-plan.md) | Pass 2 plan: stamp kit companions behind the package door | EXECUTED |
+| [cold-doors-pass-3-plan.md](cold-doors-pass-3-plan.md) | Pass 3 PLAN: inventory transport-copy lag against live law | **PLAN only. Not run** |
 | [agent-control.md](agent-control.md) | Portable standing prompt: the staking law verbatim, then the operating controls C01–C12 | DATED transport at `e21cf39`; [live law](../law-why-these-documents.md) wins |
 | [agent-task-template.md](agent-task-template.md) | One-task, adjudication, proof-contract and handoff forms | live |
 | [downstream-audit.md](downstream-audit.md) | Dated audit: evidence, failure paths, source corrections, agent challenge cases F01–F12 | dated snapshot at `4fe984b`, re-checked by the coherence audit |
