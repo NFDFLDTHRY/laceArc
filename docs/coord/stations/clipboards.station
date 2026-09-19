@@ -1,7 +1,7 @@
-STATUS: HELD
+STATUS: FREE
 STATION: clipboards
 OWNS: docs/clipboards/**
-AGENT: wasm-spec-3 Pass 4 EXECUTE
-BASE: ebc7dca57c576a81507e54c71344f367522ca31b
-SINCE: 2026-09-19T03:16:58Z
+AGENT: -
+BASE: -
+SINCE: -
 NOTE: wasm-spec-3 Pass 3 EXECUTED (M-T1…M-T9 + P3-M); station FREE
