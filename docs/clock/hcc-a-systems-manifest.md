@@ -1,4 +1,6 @@
-# Systems Manifest — HCC-A (Human Cognitive Compiler Architecture)
+# Gear manifest — HCC-A (the driver (Gear H))
+
+**Executed passes:** [2](passes/hcc-a-pass-2-plan.md) · [3](passes/hcc-a-pass-3-plan.md) · [4](passes/hcc-a-pass-4-plan.md) · [5](passes/hcc-a-pass-5-plan.md) — plans in [`passes/`](passes/README.md). A new pass is linked here once it is executed.
 
 ## Overview
 

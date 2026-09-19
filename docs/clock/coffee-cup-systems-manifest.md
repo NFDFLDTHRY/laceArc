@@ -1,4 +1,6 @@
-# Systems Manifest — Coffee Cup (event-time)
+# Gear manifest — Coffee Cup (event-time gear (Gear C))
+
+**Executed passes:** [1](passes/coffee-cup-pass-1-plan.md) · [2](passes/coffee-cup-pass-2-plan.md) · [3](passes/coffee-cup-pass-3-plan.md) · [4](passes/coffee-cup-pass-4-plan.md) · [5](passes/coffee-cup-pass-5-plan.md) · [6](passes/coffee-cup-pass-6-plan.md) — plans in [`passes/`](passes/README.md). A new pass is linked here once it is executed.
 
 ## Overview
 

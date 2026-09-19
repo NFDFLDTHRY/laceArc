@@ -1,4 +1,4 @@
-# Systems Manifest — Train H × C × W
+# Gear manifest — Train H × C × W (the composition)
 
 ## Overview
 

@@ -1,4 +1,6 @@
-# Systems Manifest — Where the Water Is Loud (clutch / proofing)
+# Gear manifest — Where the Water Is Loud (the clutch (Gear W))
+
+**Executed passes:** [1](passes/water-pass-1-plan.md) · [2](passes/water-pass-2-plan.md) · [3](passes/water-pass-3-plan.md) · [4](passes/water-pass-4-plan.md) · [5](passes/water-pass-5-plan.md) · [6](passes/water-pass-6-plan.md) — plans in [`passes/`](passes/README.md). A new pass is linked here once it is executed.
 
 ## Overview
 
