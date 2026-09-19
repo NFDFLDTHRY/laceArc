@@ -3,7 +3,7 @@
 **Status:** CLOSED. Six of six.  
 **Station:** gearing-meta.  
 **Object:** `docs/gearing/README.md`  
-**Pin:** pending execute.  
+**Pin:** `7ed7b29` (execute `7ed7b297a60935edfdf5bc71e49d1df6cb59d20e`).  
 **Diagram:** [`quiet-door-8-ascii.md`](quiet-door-8-ascii.md).  
 **Not:** projection iter 5. Not Graphic E. Not HTML rewrite. Not JS rewrite. Not renderer claim. Not a shaft claim. Not door #9. Not door #7 pass 7.  
 **Emission:** `[GAP]`. No `src/`. Gearing door bytes untouched. HTML untouched. `contracts-*.js` untouched.
