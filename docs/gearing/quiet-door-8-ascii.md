@@ -1,8 +1,9 @@
 # Quiet door #8 — Gearing ASCII
 
+**Status:** CLOSED 6/6. Receipt: [quiet-door-8-receipt.md](quiet-door-8-receipt.md).  
 **Object:** `docs/gearing/README.md`  
 **Station:** gearing-meta.  
-**Executed:** [quiet-door-8-pass-1-plan.md](quiet-door-8-pass-1-plan.md) · [quiet-door-8-pass-2-plan.md](quiet-door-8-pass-2-plan.md) · [quiet-door-8-pass-3-plan.md](quiet-door-8-pass-3-plan.md) · [quiet-door-8-pass-4-plan.md](quiet-door-8-pass-4-plan.md · [quiet-door-8-pass-5-plan.md](quiet-door-8-pass-5-plan.md).  
+**Executed:** [quiet-door-8-pass-1-plan.md](quiet-door-8-pass-1-plan.md) · [quiet-door-8-pass-2-plan.md](quiet-door-8-pass-2-plan.md) · [quiet-door-8-pass-3-plan.md](quiet-door-8-pass-3-plan.md) · [quiet-door-8-pass-4-plan.md](quiet-door-8-pass-4-plan.md) · [quiet-door-8-pass-5-plan.md](quiet-door-8-pass-5-plan.md) · [quiet-door-8-pass-6-plan.md](quiet-door-8-pass-6-plan.md).  
 **Not:** Core. Not Graphic E. Not Hands. Not door #7 pass 7. Not projection iter 5. Not a shaft claim.  
 **Emission:** `[GAP]`. No `src/`. Gearing door bytes untouched. HTML untouched. `contracts-*.js` untouched. Renderer unclaimed. Shafts FREE. Door #7 CLOSED.
 

@@ -1,6 +1,6 @@
 # Quiet door #8 (Gearing) — Pass 6 PLAN
 
-**Status:** PLAN only. Not run.  
+**Status:** EXECUTED — receipt on `docs/gearing/quiet-door-8-receipt.md`. CLOSED 6/6. Door + HTML + JS unchanged. Emission `[GAP]`.  
 **Station:** gearing-meta (HELD Grok-gearing).  
 **Object:** Gearing receipt. Close this iteration 6/6.  
 **Authority:** [`quiet-door-8-ascii.md`](quiet-door-8-ascii.md) passes 1–5. Gearing door as written. Door #7 receipt as **form**, not as a hologram close.  
