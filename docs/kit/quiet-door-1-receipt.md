@@ -3,7 +3,7 @@
 **Status:** CLOSED. Six of six.  
 **Station:** kit.  
 **Object:** `docs/kit/READ_ME_FIRST.md`  
-**Pin:** `PENDING` (stamped on the execute commit).  
+**Pin:** `fab1864` (execute `fab18647e7bb389a6d24a8a147bcc35141a13f28`).  
 **Diagram:** [`quiet-door-1-ascii.md`](quiet-door-1-ascii.md).  
 **Not:** live law. Not Hands. Not cold-doors pass 7. Not quiet door #2.  
 **Emission:** `[GAP]`. No `src/`. Package door bytes untouched.
