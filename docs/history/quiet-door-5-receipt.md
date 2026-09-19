@@ -3,7 +3,7 @@
 **Status:** CLOSED. Six of six.  
 **Station:** history.  
 **Object:** `docs/history/README.md`  
-**Pin:** `PENDING` (stamped on the execute commit).  
+**Pin:** `45a6830` (execute `45a6830233c7282d7a83d7ffc664575297c2a41d`).  
 **Diagram:** [`quiet-door-5-ascii.md`](quiet-door-5-ascii.md).  
 **Not:** history recoveries pass 8. Not a new extract. Not a walker revival. Not door #6.  
 **Emission:** `[GAP]`. No `src/`. History door bytes untouched. Extracts untouched.
