@@ -1,6 +1,6 @@
 # Xiao & Zhu pass 2 — leftovers / failure modes / coherence (PDF present)
 
-**Status:** PLANNED — not executed. Emission `[GAP]`.  
+**Status:** EXECUTED — 2026-09-18 ~19:13 PT · agent `reference-Mapper`. Emission still `[GAP]`.  
 **Station:** clipboards (HELD `reference-Mapper`)  
 **Base at plan:** refresh to current `origin/main` before execute  
 **Book:** Tong Xiao & Jingbo Zhu, *Foundations of Large Language Models*  
@@ -225,3 +225,19 @@ Next-token prediction is not putting cord through a hole.
 MASK/replace is not a Lace edit.  
 Opening a tokenizer gap is not filling Φ.  
 Φ stays `[GAP]`.
+
+---
+
+## Execution receipt
+
+| Field | Value |
+|---|---|
+| Status | EXECUTED |
+| When | 2026-09-18 ~19:13 PT |
+| Agent | `reference-Mapper` |
+| Product | D1–D6 + D7 (BERT MASK miniature) on `xiao-zhu-foundations-clipboard.md` |
+| T5 five-stakes | skip |
+| FM-X1…X9 | all pinned; no `[OPEN]` |
+| Amended map/law/graphics/src | No |
+| PDF staged | No |
+| Emission | `[GAP]` |
