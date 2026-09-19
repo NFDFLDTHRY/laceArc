@@ -1,6 +1,6 @@
 # Projection iteration 3 / pass 2 plan — pull the camera back, quiet the floor
 
-**Status:** PLAN. Not executed. Emission `[GAP]`.  
+**Status:** EXECUTED. Emission `[GAP]`. Title `i3p2`. Orbit 8.4/6.2. Floor ~0.35×.  
 **Station:** hologram  
 **Target:** Chrome Android 17, rawcdn SHA WebAPK.  
 **Evidence:** `i3p1` shot, Core time, `t=0002 PTR`, `GPU on`, `970x1994`, `n=1674`. Lattice and cubes are visible. Camera is on top of the tooth. Floor lines eat the glyphs.

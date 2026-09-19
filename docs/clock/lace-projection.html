@@ -57,7 +57,7 @@ aside[hidden]{display:none}
 </div>
 <div class="hud">
   <header class="hit">
-    <h1>LAYER III · i3p1 · RAWCDN SHA</h1>
+    <h1>LAYER III · i3p2 · RAWCDN SHA</h1>
     <p>Install this URL only if it is <code>rawcdn.githack.com</code> + a full SHA. Floating <code>main</code> is preview. Cubes are glyphs. No emitter. [GAP]</p>
   </header>
   <div class="modes hit">
@@ -82,7 +82,7 @@ aside[hidden]{display:none}
     <div class="row">
       <input id="t" type="range" min="0" max="10" step="0.02" value="0"/>
       <span id="phase">t=0000</span>
-      <span class="stamp">i3p1</span>
+      <span class="stamp">i3p2</span>
       <span class="stamp">A17</span>
       <span class="stamp" id="gpustamp">GPU ?</span>
       <span class="stamp" id="szstamp">?x?</span>
@@ -192,12 +192,12 @@ struct VSOut { @builtin(position) p: vec4<f32>, @location(0) wpos: vec3<f32>, @l
   if (i.born < 0.0) {
     let gx = abs(fract(i.wpos.x * 0.85) - 0.5);
     let gz = abs(fract(i.wpos.z * 0.85) - 0.5);
-    let line = 1.0 - smoothstep(0.035, 0.07, min(gx, gz));
+    let line = 1.0 - smoothstep(0.018, 0.04, min(gx, gz));
     let hot = fract(sin(dot(floor(i.wpos.xz * 0.85), vec2<f32>(12.1, 7.3))) * 43758.5);
-    var rgb = vec3<f32>(0.05, 0.12, 0.18) + vec3<f32>(0.25, 0.95, 1.0) * line;
-    rgb += vec3<f32>(1.0, 0.28, 0.06) * step(0.88, hot) * 0.85;
+    var rgb = vec3<f32>(0.05, 0.10, 0.14) + vec3<f32>(0.09, 0.33, 0.35) * line;
+    rgb += vec3<f32>(0.55, 0.16, 0.04) * step(0.94, hot) * 0.22;
     let d = length(i.wpos.xz - u.t.yz);
-    rgb += vec3<f32>(0.35, 0.95, 1.0) * (1.0 - smoothstep(0.15, 2.2, d)) * 0.85;
+    rgb += vec3<f32>(0.20, 0.55, 0.65) * (1.0 - smoothstep(0.2, 1.8, d)) * 0.22;
     return vec4<f32>(rgb, 1.0);
   }
   let appear = smoothstep(i.born - 0.15, i.born + 0.05, u.t.x);
@@ -408,9 +408,9 @@ async function main(){
     const asp=canvas.width/Math.max(1,canvas.height);
     const ang=now/9000;
     const eye=[
-      frame.look[0] + Math.sin(ang)*4.2,
-      frame.look[1] + 3.1,
-      frame.look[2] + Math.cos(ang)*4.2
+      frame.look[0] + Math.sin(ang)*8.4,
+      frame.look[1] + 6.2,
+      frame.look[2] + Math.cos(ang)*8.4
     ];
     const vp=matMul(persp(0.85,asp,0.1,80), lookAt(eye, frame.look,[0,1,0]));
     const ub=new Float32Array(64);
@@ -447,7 +447,7 @@ function runAudit(){
   const el=document.getElementById("audit");
   if(!el) return;
   const title=document.querySelector("h1")?.textContent||"";
-  const A=/i3p1/.test(title)?"ok":"fail";
+  const A=/i3p2/.test(title)?"ok":"fail";
   const D=!!(navigator.serviceWorker && navigator.serviceWorker.controller);
   const E=!!(window.deferredPrompt || window.matchMedia("(display-mode: standalone)").matches);
   const F=!!document.getElementById("installbtn");
@@ -458,7 +458,7 @@ function runAudit(){
     const ct=r.headers.get("content-type")||"";
     const B=/manifest|json/i.test(ct)?"ok":("fail "+ct);
     el.textContent=
-      "A title i3p1 "+A+"\n"+
+      "A title i3p2 "+A+"\n"+
       "B manifest MIME "+B+"\n"+
       "C icons 192+512 ok\n"+
       "D SW controlling "+(D?"ok":"fail")+"\n"+
