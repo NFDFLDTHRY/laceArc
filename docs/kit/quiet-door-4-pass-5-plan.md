@@ -1,6 +1,6 @@
 # Quiet door #4 (live law) — Pass 5 PLAN
 
-**Status:** PLAN only. Not run.  
+**Status:** EXECUTED — seam on `docs/kit/quiet-door-4-ascii.md`. Five files unchanged. Emission `[GAP]`.  
 **Station:** kit (HELD Grok-kit).  
 **Object:** live-law seam — vs court, package door, AGENTS.  
 **Authority:** [`quiet-door-4-ascii.md`](quiet-door-4-ascii.md) passes 1–4. [`docs/law-why-these-documents.md`](../law-why-these-documents.md). [`docs/README.md`](../README.md). [`READ_ME_FIRST.md`](READ_ME_FIRST.md). `AGENTS.md`.  

@@ -2,6 +2,6 @@ STATUS: HELD
 STATION: kit
 OWNS: docs/kit/** .claude/**
 AGENT: Grok-kit
-BASE: 859ba3f3e7849b94717b230502c9f7afef9f9598
-SINCE: 2026-09-19T07:13:35Z
-NOTE: Live-law door pass 5 PLAN. Pass 1–4 EXECUTED. Seam. Φ [GAP].
+BASE: c7b53deb29300a6f58ee492169e5cb17e033506e
+SINCE: 2026-09-19T07:14:06Z
+NOTE: Live-law door pass 5 EXECUTED. Seam on quiet-door-4-ascii.md. Next pass 6 receipt. Φ [GAP].

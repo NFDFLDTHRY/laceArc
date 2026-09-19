@@ -40,8 +40,8 @@ Portable steward controls. Not Hands. Not Graphic D. Nothing here is a source of
 | [quiet-door-4-pass-2-plan.md](quiet-door-4-pass-2-plan.md) | Door #4 pass 2: In / Does / Break / Gap | EXECUTED |
 | [quiet-door-4-pass-3-plan.md](quiet-door-4-pass-3-plan.md) | Door #4 pass 3: pair vs block vs transports | EXECUTED |
 | [quiet-door-4-pass-4-plan.md](quiet-door-4-pass-4-plan.md) | Door #4 pass 4: this file stores; copies lag | EXECUTED |
-| [quiet-door-4-pass-5-plan.md](quiet-door-4-pass-5-plan.md) | Door #4 pass 5 PLAN: seam vs court, package, AGENTS | **PLAN only. Not run** |
-| [quiet-door-4-ascii.md](quiet-door-4-ascii.md) | Door #4 ASCII companion. Does not replace live law. Does not fill G2 | pass 1–4 |
+| [quiet-door-4-pass-5-plan.md](quiet-door-4-pass-5-plan.md) | Door #4 pass 5: seam vs court, package, AGENTS | EXECUTED |
+| [quiet-door-4-ascii.md](quiet-door-4-ascii.md) | Door #4 ASCII companion. Does not replace live law. Does not fill G2 | pass 1–5 |
 | [agent-control.md](agent-control.md) | Portable standing prompt: the staking law verbatim, then the operating controls C01–C12 | DATED transport at `e21cf39`; [live law](../law-why-these-documents.md) wins |
 | [agent-task-template.md](agent-task-template.md) | One-task, adjudication, proof-contract and handoff forms | live |
 | [downstream-audit.md](downstream-audit.md) | Dated audit: evidence, failure paths, source corrections, agent challenge cases F01–F12 | dated snapshot at `4fe984b`, re-checked by the coherence audit |

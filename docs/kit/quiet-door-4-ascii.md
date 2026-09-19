@@ -2,7 +2,7 @@
 
 **Object:** `docs/law-why-these-documents.md`  
 **Station:** kit (reading). Live law wins on the door.  
-**Executed:** [quiet-door-4-pass-1-plan.md](quiet-door-4-pass-1-plan.md) · [quiet-door-4-pass-2-plan.md](quiet-door-4-pass-2-plan.md) · [quiet-door-4-pass-3-plan.md](quiet-door-4-pass-3-plan.md) · [quiet-door-4-pass-4-plan.md](quiet-door-4-pass-4-plan.md).  
+**Executed:** [quiet-door-4-pass-1-plan.md](quiet-door-4-pass-1-plan.md) · [quiet-door-4-pass-2-plan.md](quiet-door-4-pass-2-plan.md) · [quiet-door-4-pass-3-plan.md](quiet-door-4-pass-3-plan.md) · [quiet-door-4-pass-4-plan.md](quiet-door-4-pass-4-plan.md) · [quiet-door-4-pass-5-plan.md](quiet-door-4-pass-5-plan.md).  
 **Not:** live law. Not Hands. Not the header pair. Not door #3 pass 7.  
 **Emission:** `[GAP]`. No `src/`. Live-law bytes untouched.
 
@@ -196,3 +196,26 @@ All `New machine?` = no.
 | T2 | Eight-row register; all New machine?=no |
 | T3 | Live law ↔ Hands ↔ kit reading |
 | T4 | Pair untouched; live-law bytes untouched |
+
+## Pass 5 — seam
+
+Five files. None becomes another.
+
+| File | Stores | Names | Routes | Orders | Becomes the other if |
+|---|---|---|---|---|---|
+| `docs/law-why-these-documents.md` | yes — live law | why the stakes; how code may exist | transports back to itself | no | treated as the court index |
+| `docs/README.md` | no | Hands / gate / law / maps | to the named files | no | treated as live law |
+| `docs/kit/READ_ME_FIRST.md` | no | what the package is not | to AGENTS + live law | no | treated as live law |
+| `AGENTS.md` | no | standing orders | to this live-law file | yes — must cite this file | treated as the store |
+| `docs/kit/quiet-door-4-ascii.md` | no | the store as a reading | to live law | no | treated as live law |
+
+This file stores. Court names. Package routes. AGENTS orders. Kit reads.
+
+## Pass 5 deltas
+
+| Ticket | Action |
+|---|---|
+| T1 | Five-file seam |
+| T2 | None of the five rewritten |
+| T3 | This reading is not the store |
+| T4 | Pair / live law / court / package / AGENTS untouched |
