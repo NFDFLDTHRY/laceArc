@@ -1,8 +1,9 @@
 # WebAssembly Spec 3.0 — Pass 4 PLAN (representation fidelity / accuracy steward)
 
-**Status:** **HELD / NOT EXECUTED** · plan only · 2026-09-18 ~20:14 PT  
-**Station:** clipboards (HELD `wasm-spec-3 Pass 4 plan`)  
-**Base at plan:** `ebc7dca` (== `origin/main` at claim/refresh)  
+**Status:** **EXECUTED** · 2026-09-18 ~20:17 PT  
+**Station:** clipboards (`wasm-spec-3 Pass 4 EXECUTE`)  
+**Base at plan:** `ebc7dca` (== `origin/main` at claim); execute on tip including plan `2382efe`  
+**Receipt:** [`wasm-spec-3-clipboard.md`](wasm-spec-3-clipboard.md) § Pass 4 (P4-A/X/F/O/R) · **Verdict: SOUND WITH OPENS**  
 **Spec:** WebAssembly Specification **Release 3.0** (2026-09-11) · editor Andreas Rossberg / W3C CG  
 **Clipboard under test:** `docs/clipboards/wasm-spec-3-clipboard.md` (Pass 1–3 EXECUTED; P3-M CONFIRM×9 · CONFLICT×0)  
 **ASCII under test:** `docs/clipboards/wasm-spec-3-ascii-machinery.md` (SOURCE MACHINERY overview + **P-T1…P-T9**)  
@@ -50,7 +51,7 @@ pull/ff → claim clipboards → Hands + target-mesh skim
 |  WASM ops = TARGET semantics.  Do NOT invent POINTER emission / Phi.   |
 |  Do NOT import WASM store/memory/table/stack as Lace's 1D strand.      |
 |  Zero crates.io / foreign deps.  No src/ until pointer-emission accepted.|
-|  Status this commit: HELD / NOT EXECUTED — plan only.                  |
+|  Status: EXECUTED — see clipboard P4-R. Do not re-execute blindly.     |
 +======================================================================+
 ```
 
@@ -353,7 +354,7 @@ If a panel/card **misrepresents** Spec so a steward cannot refuse with the card+
 | P3-M | CONFIRM×9 · CONFLICT×0 · emission `[GAP]` |
 | Contested seeds logged | FM-T* vs FM-W* · P-T6 stamp thin · FM-W1/W2 PDF 90 vs cited 91 · Pass-1 cross-walk |
 | Special-gate PDF light sight | Results/trap §4.2.2 p.88 · store p.88 · Table/Memory §4.2.8/9 **p.90** · Control §4.6.2 p.127–128 · Embedding §7.1 p.245 |
-| Execute | **NOT performed** |
+| Execute | **PERFORMED** — P4-A/X/F/O/R · FIX×5 · SOUND WITH OPENS |
 | Push | **NOT performed** |
 | Emission | `[GAP]` |
 | `src/` | absent |

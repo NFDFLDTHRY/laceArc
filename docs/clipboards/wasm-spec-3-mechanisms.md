@@ -1,6 +1,6 @@
 # WebAssembly Spec 3.0 — mechanism cards (compile-target system procedures)
 
-**Status:** Pass 3 EXECUTED (Wave A **M-T1…M-T9**; Waves B–D deferred one-line seeds). ASCII: [`wasm-spec-3-ascii-machinery.md`](wasm-spec-3-ascii-machinery.md) (P-T1…P-T9). Emission `[GAP]`.  
+**Status:** Pass 3–4 EXECUTED (Wave A **M-T1…M-T9**; Pass 4 fidelity). ASCII: [`wasm-spec-3-ascii-machinery.md`](wasm-spec-3-ascii-machinery.md) (P-T1…P-T9). Clipboard **P4-X / P4-R**. Emission `[GAP]`.  
 **Source:** Andreas Rossberg / WebAssembly Community Group, *WebAssembly Specification* Release **3.0 (2026-09-11)**.  
 **PDF:** `refs/local/webassembly-spec-3.0.pdf` → attachment `687e73641a7eec8692273fdf048e1578bf2f379f507c36ec284a39d9e7f70fce` (323 pp., text layer; **never git-add**). SHA-256 `687e73641a7eec8692273fdf048e1578bf2f379f507c36ec284a39d9e7f70fce`. Printed ≈ PDF − 4.  
 **Sighting this pass:** `pdftotext -f N -l N -layout` on §2.5 / §2.2–2.3 / Ch.3 / §4.2 / §4.6 / Ch.5 / Ch.6 / §7.1 / §4.2.2+trap; Pass 1–2 pins reused.  
@@ -172,7 +172,7 @@ C ⊢ instr* : [t1*] →x* [t2*]   →  valid? → may instantiate
 | Field | Content |
 |---|---|
 | Kind | runtime |
-| Spec locus | §4.2 Runtime Structure · PDF **87–94** (=p.83–90); store §4.2.3 · PDF **88**; tables §4.2.8 / mems §4.2.9 · PDF **~91**; stack/frames §4.2.17 · PDF **93–94** |
+| Spec locus | §4.2 Runtime Structure · PDF **87–94** (=p.83–90); store §4.2.3 · PDF **88**; tables §4.2.8 / mems §4.2.9 · PDF **90** (=p.86); stack/frames §4.2.17 · PDF **93–94** |
 | Sighting method | `pdftotext -f 87 -l 94` / `-f 90 -l 91` (this pass); Pass 1 PAGE E / P-T4 |
 | Eye-quote | “A memory instance is the runtime representation of a **linear memory**… `meminst ::= {type memtype, bytes byte*}`” / “A table instance… `tableinst ::= {type tabletype, refs ref*}`” / “The store represents all global state… tags, globals, mems, tables, funcs, …” |
 | Inputs | Allocated instances during abstract-machine lifetime |
@@ -466,3 +466,9 @@ Steward refuse tests (stamp-supported): linear mem as strand · table as star ·
 | rust-nostd / law / graphics / five-stakes / `src/` / Cargo | untouched |
 | Ascii P-T* | read-only default (no stamp conflict) |
 | D7 | cross-linked from M-T6; not rewritten |
+
+---
+
+## Pass 4 pointer (mechanisms)
+
+P4-X / P4-R on [`wasm-spec-3-clipboard.md`](wasm-spec-3-clipboard.md). Matrix-cited pin tighten: M-T4 tables/mems PDF **90** (=p.86). P-T6 stamp aligned to this card (FORBID-as-Core · SILENT). No algorithm rewrite. Emission `[GAP]`.

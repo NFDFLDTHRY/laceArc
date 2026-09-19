@@ -246,8 +246,8 @@ emission = [GAP]  ·  Hands win  ·  no src/ until human-accepted emission
 
 | ID | Misread | Hands / law deadbolt | PDF pin (Pass 1 reuse + verify) |
 |---|---|---|---|
-| **FM-W1** | WASM **linear memory** ⇒ Lace **1D strand** | **FORBID-as-Lace-store** · Piece 1/6 · PAGE E / P-T4 | §4.2.9 Memory Instances PDF **91** (=p.87) — `meminst ::= {type memtype, bytes byte*}` · “runtime representation of a **linear memory**” (cite E) |
-| **FM-W2** | WASM **table** (funcref/externref) ⇒ Lace **star** / star index | **FORBID-as-Lace-store** · Piece 7 · PAGE E / P-T4 | §4.2.8 Table Instances PDF **91** (=p.87) — `tableinst ::= {type tabletype, refs ref*}` (cite E) |
+| **FM-W1** | WASM **linear memory** ⇒ Lace **1D strand** | **FORBID-as-Lace-store** · Piece 1/6 · PAGE E / P-T4 | §4.2.9 Memory Instances PDF **90** (=p.86) — `meminst ::= {type memtype, bytes byte*}` · “runtime representation of a **linear memory**” (cite E; Pass 4 re-sight) |
+| **FM-W2** | WASM **table** (funcref/externref) ⇒ Lace **star** / star index | **FORBID-as-Lace-store** · Piece 7 · PAGE E / P-T4 | §4.2.8 Table Instances PDF **90** (=p.86) — `tableinst ::= {type tabletype, refs ref*}` (cite E; Pass 4 re-sight) |
 | **FM-W3** | Operand **stack / frames** ⇒ Lace **append** / Graphic D rows | **FORBID-as-Lace-store** · Piece 6 · PAGE E / P-T4 | §4.2.17 Stack / Call Frames PDF **93–94** (=p.89–90); §4.2.3 Store PDF **88** (=p.84) (cite E) |
 | **FM-W4** | **`br` / `return` / call** ⇒ POINTER **when** / arity / adjacency (Φ fill) | **FORBID-as-emission-rule** · pointer-emission `[GAP]` · PAGE F / P-T5 | §4.6.2 Control PDF **127–128** (=p.123–124) — `br ℓ` / `return` reductions; `unreachable ˓→ trap` (cite F) |
 | **FM-W5** | **Validation** (stack-type / matching) ⇒ **admit POINTER** / Lace write gate | **FORBID-as-emission-rule** · **SILENT-for-Lace-append** · PAGE D / P-T3 | Ch.3 Conventions PDF **33** (=p.29) — “Only valid modules can be instantiated.” · App. §7.6 Validation Algorithm PDF **274** (=p.270) (cite D) |
@@ -256,7 +256,7 @@ emission = [GAP]  ·  Hands win  ·  no src/ until human-accepted emission
 | **FM-W8** | WASM **trap** / divergence ⇒ Lace **cut** / authorized rewrite / append rule | **FORBID-as-emission-rule** · **SILENT** · PAGE X / P-T9 | §4.2.2 Results PDF **88** (=p.84) — `result ::= val* \| … \| trap` · control/trap reductions PDF **126–128** (cite X / P-T9) |
 | **FM-W9** | **Instantiate** (module→instance) ⇒ Lace **Core birth** / door open / `src/` gate | **FORBID-as-Core** · rust-nostd birth cards stand separate · PAGE E/H | §4.7.2 Instantiation PDF **177** (=p.173) — `instantiate(s, module, externaddr*)`; §4.2.6 Module Instances PDF **90** (=p.86) (cite E/H · branch-contracts) |
 
-No FM row left `[OPEN]`. Pins reused/verified from Pass 1; `pdftotext -f N -l N -layout` re-sighted §4.2.3/8/9, §4.6.2, §4.7.2, Ch.3/5/6, §7.1, §7.6 this pass.
+No FM row left `[OPEN]`. Pins reused/verified from Pass 1; `pdftotext -f N -l N -layout` re-sighted §4.2.3/8/9, §4.6.2, §4.7.2, Ch.3/5/6, §7.1, §7.6 (Pass 2). **Pass 4 pin tighten:** FM-W1/W2 Table/Memory Instances = PDF **90** (=p.86), not 91 (p.91 = Globals §4.2.10); printed≈PDF−4 stands.
 
 ### D4 — Interface coherence (Hands + rust-nostd + ASCII)
 
@@ -275,7 +275,7 @@ PDF is **PRESENT** (do not narrate absent). Pass 1 receipt: `refs/local/webassem
 - Treat validate as admit-POINTER · treat instantiate as Core birth · treat wat as sole authority
 - Fill `[GAP]` via host import / compile-to-wasm32 story
 - Amend rust-nostd maps / law / graphics / systems-manifest / five-stakes
-- Wave B mechanisms rewrite · Pass 4 products (Pass 3 Wave A M-T* + P3-M landed)
+- Wave B mechanisms rewrite · Order Proposal (Pass 5 shape if wanted; Pass 4 fidelity landed)
 - Add `src/` / Cargo.toml / crates.io deps
 - Git-add the PDF · pretend OCR / claim PDF absent when present
 - Clone Xiao–Zhu / Petersen / AgentScope LLM morals onto this compile-target shelf
@@ -339,3 +339,112 @@ No CONFLICT. Emission column `[GAP]` on every row. rust-nostd cited read-only (t
 | Push | **not** performed |
 
 Steward refuse (shoe in hands): linear mem=strand · table=star · stack=append · br/return→Φ · validate→admit POINTER · wat sole authority · import fills GAP · trap=Lace cut · instantiate=Core birth — refuse via M-T* + P3-M teeth above.
+
+---
+
+## Pass 4 — representation fidelity (P4-A / P4-X / P4-F / P4-O / P4-R)
+
+Pass 3 M-T* + P3-M stand (CONFIRM×9 · CONFLICT×0). Pass 4 is **accuracy steward** — M-T* ↔ P-T* ↔ Spec PDF. Not Wave B. Not Order Proposal. Not Core. WASM = **TARGET only**.
+
+### P4-A — Structural re-walk
+
+| Check | Result |
+|---|---|
+| Coverage | overview **1** · P-T1…P-T9 **9** · M-T1…M-T9 **9** |
+| 1:1 | every P-T* ↔ matching M-T* (ascii cross-walk now has M-T* column; mechanisms Panel cite + P3-M) |
+| Stamp under-fence | all 9 panels + overview have stamp **under** fence |
+| No POINTER-in-fence | no Lace POINTER/WORD/Graphic D as WASM **objects** inside fences (FORBIDDEN-exit / steward comments only) |
+| Cross-walk freshness | Pass-1 table **superseded** by P4-X + ascii Pass-4 cross-walk (M-T* column) |
+| P3-M stand | CONFIRM×9 · CONFLICT×0 · not reopened (P-T6 stamp **tighten** only — matches M-T6 / P3-M) |
+
+### P4-X — Deep accuracy matrix
+
+Columns: `overview node · P-T* · M-T* · stamp · Implements OK · Fence OK · Stamp OK · FM OK · Pin OK · Overview OK · PASS/FIX`
+
+#### Wave A pairs (9)
+
+| overview node | P-T* | M-T* | stamp | Impl | Fence | Stamp | FM | Pin | Ov | Verdict |
+|---|---|---|---|---|---|---|---|---|---|---|
+| abstract module | P-T1 | M-T1 | KEEP · FORBID-as-Lace-store · FORBID-as-Core | Y | Y | Y | Y→FM-W9 | Y | Y | **PASS** (FM cite fixed) |
+| abstract module (types) | P-T2 | M-T2 | KEEP · FORBID-as-Core-write | Y | Y | Y | Y→MAP | Y | Y | **PASS** (FM cite fixed) |
+| validate | P-T3 | M-T3 | KEEP · FORBID-as-emission-rule · SILENT | Y | Y | Y | Y→FM-W5 | Y | Y | **PASS** (FM cite fixed) |
+| instantiate + store | P-T4 | M-T4 | KEEP · FORBID-as-Lace-store | Y | Y | Y | Y→FM-W1…W3 | Y→p.90 | Y | **PASS** (FM+pin fixed) **GATE** |
+| reduce instructions | P-T5 | M-T5 | KEEP · FORBID-as-emission-rule | Y | Y | Y | Y→FM-W4 | Y | Y | **PASS** (FM cite fixed) **GATE** |
+| decode / parse | P-T6 | M-T6 | KEEP · FORBID-as-Core · SILENT | Y | Y | Y→aligned | Y→FM-W9 | Y | Y | **PASS** (stamp+FM fixed) |
+| decode / parse (wat) | P-T7 | M-T7 | KEEP · text non-authority | Y | Y | Y | Y→FM-W6 | Y | Y | **PASS** (FM cite fixed) |
+| instantiate + store (host) | P-T8 | M-T8 | KEEP · PROPOSAL-only · FORBID fill-GAP | Y | Y | Y | Y→FM-W7 | Y | Y | **PASS** (FM cite fixed) **GATE** |
+| trap / diverge | P-T9 | M-T9 | KEEP · FORBID-as-emission-rule · SILENT | Y | Y | Y | Y→FM-W8 | Y | Y | **PASS** (FM cite fixed) **GATE** |
+
+#### Overview spine nodes
+
+| overview node | P-T* / note | Impl | Fence | Stamp | FM | Pin | Ov | Verdict |
+|---|---|---|---|---|---|---|---|---|
+| decode / parse | P-T6 · P-T7 on board | Y | Y | Y | Y | Y | Y | **PASS** |
+| abstract module | P-T1 · P-T2 on board | Y | Y | Y | Y | Y | Y | **PASS** |
+| validate | P-T3 on board | Y | Y | Y | Y | Y | Y | **PASS** |
+| instantiate + store | P-T4 · P-T8 share node | Y | Y | Y | Y | Y | Y | **PASS** |
+| reduce instructions | P-T5 on board | Y | Y | Y | Y | Y | Y | **PASS** |
+| trap / diverge | P-T9 exit | Y | Y | Y | Y | Y | Y | **PASS** |
+| Lace Core / Graphic D / Phi | FORBIDDEN off-board · Φ=`[GAP]` | Y | Y | Y | Y | Y | Y | **PASS** |
+
+#### Special gates (explicit, not inherited)
+
+| Gate | Score | Note |
+|---|---|---|
+| **M-T4 / P-T4** · FM-W1…W3 (· W9) | **PASS** | FORBID-as-Lace-store under fence + card; FM-W1/W2 pin → PDF **90** |
+| **M-T5 / P-T5** · FM-W4 | **PASS** | br/return/call FORBID-as-emission-rule; Φ=`[GAP]` |
+| **M-T8 / P-T8** · FM-W7 | **PASS** | PROPOSAL-only · FORBID fill-GAP; §7.1 PDF **245** |
+| **M-T9 / P-T9** · FM-W8 | **PASS** | trap ≠ Lace cut; Results §4.2.2 PDF **88**; SILENT |
+| **FM-W1…W4, W7, W8** pins | **PASS** | W1/W2 re-sighted PDF **90**; W3/W4/W7/W8 Pass 1–3 pins stand |
+
+#### Plan-time seeds → resolution
+
+| Seed | Resolution |
+|---|---|
+| FM-T* vs FM-W* | **FIX** — ascii false-friend rows cite FM-W* / MAP; FM-T*=alias noted |
+| P-T6 stamp thin | **FIX** — under-fence + Lace stamp = KEEP · FORBID-as-Core · SILENT (match M-T6) |
+| FM-W1/W2 PDF 91 vs 90 | **FIX** — clipboard D3 + M-T4 locus → PDF **90** (=p.86); Globals remain PDF 91 |
+| Pass-1 cross-walk no M-T* | **FIX** — ascii cross-walk superseded; this P4-X is canonical |
+| Overview count | **PASS** — singular SOURCE MACHINERY (count=1); P4-O confirm |
+| Fence glyphs | **PASS** — no POINTER/WORD/Graphic D as WASM objects inside fences |
+
+**P4-X counts (post-FIX):** **16 PASS · 0 open FIX** (9 pairs + 7 overview nodes). Pre-FIX seeds were 4 FIX loci (all resolved).
+
+### P4-F — Fixes applied
+
+| # | Path | Edit |
+|---|---|---|
+| 1 | `wasm-spec-3-ascii-machinery.md` | False-friend FM-T* → FM-W* / MAP (all 9 panels) |
+| 2 | `wasm-spec-3-ascii-machinery.md` | P-T6 Lace stamp + under-fence → FORBID-as-Core · SILENT |
+| 3 | `wasm-spec-3-ascii-machinery.md` | Cross-walk superseded with M-T* + FM-W* columns |
+| 4 | `wasm-spec-3-clipboard.md` | FM-W1/W2 pin PDF **91**→**90** (=p.86) |
+| 5 | `wasm-spec-3-mechanisms.md` | M-T4 Spec locus tables/mems PDF **~91**→**90** (=p.86) |
+
+No Core invent. No Wave B. No Order Proposal. No aesthetic overview redraw. No algorithm rewrite.
+
+### P4-O — Canonical SOURCE MACHINERY overview
+
+Singular fence in `wasm-spec-3-ascii-machinery.md` (**count=1**). All P-T1…P-T9 attach (P-T8 shares instantiate node). Lace Core / Graphic D / Phi = FORBIDDEN exit; Φ=`[GAP]`. No redraw.
+
+### P4-R — Receipt + verdict
+
+| Field | Value |
+|---|---|
+| Status | **EXECUTED** |
+| When | 2026-09-18 ~20:17 PT |
+| Station | clipboards · agent `wasm-spec-3 Pass 4 EXECUTE` |
+| Plan | [`wasm-spec-3-pass-4-plan.md`](wasm-spec-3-pass-4-plan.md) |
+| PDF | `refs/local/webassembly-spec-3.0.pdf` · SHA `687e73641a7eec8692273fdf048e1578bf2f379f507c36ec284a39d9e7f70fce` · gitignored · **never staged** |
+| P4-A | coverage/1:1/stamp-under-fence/no-POINTER-in-fence/cross-walk freshness — all OK |
+| P4-X | **16 PASS · 0 open FIX**; special gates M-T4/5/8/9 + FM-W1–W4,W7,W8 scored |
+| P4-F | **5** edits (ascii×3 · clipboard FM pins · M-T4 locus) |
+| P4-O | singular overview confirmed (no redraw) |
+| **Verdict** | **SOUND WITH OPENS** |
+| Opens (non-blocking) | D7 `[OPEN]` book-continues (Pass 2); Waves B–D deferred; Order Proposal deferred (Pass 5 shape if wanted) |
+| P3-M | CONFIRM×9 stand · no stamp-conflict (P-T6 aligned *to* M-T6) |
+| Emission | still `[GAP]` |
+| `src/` / Cargo | absent |
+| rust-nostd / law / graphics / systems-manifest / five-stakes | untouched |
+| Push | **not** performed |
+
+Steward refuse (shoe in hands): linear mem=strand · table=star · stack=append · br/return→Φ · validate→admit POINTER · wat sole authority · import fills GAP · trap=Lace cut · instantiate=Core birth · POINTER-as-WASM-object in fence — refuse via M-T* + P-T* + P4-X teeth above.
