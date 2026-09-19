@@ -2,6 +2,6 @@ STATUS: HELD
 STATION: kit
 OWNS: docs/kit/** .claude/**
 AGENT: Grok-kit
-BASE: 8deec20d6bd4b3c5f970b1510fd19b69951419eb
-SINCE: 2026-09-19T06:17:25Z
-NOTE: Quiet door #1 pass 3 EXECUTED. Grain on quiet-door-1-ascii.md. Door untouched. Next pass 4 mechanism. Φ [GAP].
+BASE: 78a4cb248ffd2ef674428135057068432df289cb
+SINCE: 2026-09-19T06:18:36Z
+NOTE: Quiet door #1 pass 4 PLAN. Pass 1–3 EXECUTED. Door untouched. Φ [GAP].
