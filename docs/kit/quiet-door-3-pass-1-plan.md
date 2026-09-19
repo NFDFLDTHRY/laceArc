@@ -1,6 +1,6 @@
 # Quiet door #3 (Court) — Pass 1 PLAN
 
-**Status:** PLAN only. Not run.  
+**Status:** EXECUTED — spine on `docs/kit/quiet-door-3-ascii.md`. Court door unchanged. Emission `[GAP]`.  
 **Station:** kit (HELD Grok-kit).  
 **Object:** quiet door #3 — [`docs/README.md`](../README.md) (the court).  
 **Why kit, not law:** law OWNS the door. A new `docs/*.md` hits the maps catch-all. This campaign is a **reading**. Kit holds the reading. Law still wins on the door.  
