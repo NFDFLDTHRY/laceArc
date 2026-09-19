@@ -1,6 +1,6 @@
 # WebNN CRD 2026-09-10 — Pass 3 PLAN (HOST-NN system mechanisms / Wave A M-N* + P3-M mesh)
 
-**Status:** **HELD / NOT EXECUTED** — plan only; leave HELD until human says go Pass 3.  
+**Status:** **EXECUTED** — Wave A M-N1…M-N9 + P3-M/P3-R on clipboard; ascii deferred Pass 4+; emission `[GAP]`.  
 **Station:** clipboards (plan claim: `WebNN Pass 3 PLAN HELD`; execute claim e.g. `webnn Pass 3 EXECUTE`)  
 **Base at plan:** claim BASE `77ae5de` (= `origin/main` after refresh). Refresh `git pull --ff-only` before any execute.  
 **Spec:** *Web Neural Network API* (WebNN) — **W3C Candidate Recommendation Draft, 10 September 2026** · editors Ningxin Hu, Dwayne Robinson (et al.)  
@@ -71,7 +71,7 @@ pull/ff → claim clipboards → Hands + host-NN mesh skim
 |  FORBID-as-Core-write; NON-binding on Core/src/Phi.                  |
 |  No src/ until pointer-emission accepted.  One strand.               |
 |  No ascii Wave A this pass (Pass 4+).  Mechanisms file = execute only.|
-|  Status this commit: HELD / NOT EXECUTED — plan only.                |
+|  Status this commit: EXECUTED — M-N1…M-N9 + P3-M.  Emission [GAP].  |
 |  Emission [GAP] sealed.  Pass 2 EXECUTED is a hard execute gate.     |
 +======================================================================+
 ```
@@ -434,7 +434,7 @@ WebNN is not WebGPU Device/Queue. WebNN is not WGSL. WebNN is not the wasm64 tar
 `exportToGPU` does not accept emission. Validation is not a Lace cut.  
 Security text is not Lace law.  
 Φ stays `[GAP]`. No ascii until Pass 4+. No `src/` until human-accepted emission.  
-Pass 2 EXECUTED (**gate CLEAR** · tip `01f42a2`). Pass 3 execute waits on human go (plan still HELD).
+Pass 2 EXECUTED (**gate CLEAR** · tip `01f42a2`). Pass 3 **EXECUTED** (M-N1…M-N9 + P3-M; ascii still Pass 4+).
 
 ---
 
@@ -442,15 +442,15 @@ Pass 2 EXECUTED (**gate CLEAR** · tip `01f42a2`). Pass 3 execute waits on human
 
 | Field | Value |
 |---|---|
-| Status | **HELD / NOT EXECUTED** |
-| When | plan 2026-09-18 ~22:26 PT · gate refresh 2026-09-18 ~22:36 PT |
-| Agent | plan `WebNN Pass 3 PLAN HELD` · refresh `webnn Pass 3 PLAN refresh` |
-| Base | plan claim BASE `77ae5de`; refresh claim BASE = current origin/main |
-| Product | this plan only (HELD) — gate status refreshed; roster/schema unchanged |
-| Gate refresh | Pass 2 **EXECUTED** tip `01f42a2` · clipboard P2-R — **gate CLEAR**; do **not** execute Pass 3 this turn |
+| Status | **EXECUTED** (was HELD / NOT EXECUTED at plan) |
+| When | plan 2026-09-18 ~22:26 PT · gate refresh ~22:36 PT · execute ~22:38 PT |
+| Agent | execute `webnn Pass 3 EXECUTE` (plan was `WebNN Pass 3 PLAN HELD`) |
+| Base | execute claim BASE `8b4f95e` (full `8b4f95e0ecd15ac2e7953e6a8a199d7aa4dbd513` = `origin/main`) |
+| Product | `webnn-mechanisms.md` M-N1…M-N9 · clipboard P3-M/P3-R · this plan EXECUTED |
+| Gate at execute | Pass 2 **EXECUTED** tip `01f42a2` · P2-R · D1–D6 + FM-Webnn1…9 + D7 — **CLEAR** (re-verified) |
 | Pass 1 ancestor | EXECUTED · PAGE A–H, X |
-| Pass 2 prerequisite | **EXECUTED** (tip `01f42a2` · P2-R · D1–D6 + FM-Webnn1…9 + D7) — **gate CLEAR**; Pass 3 still HELD |
-| Amended clipboard/ascii/mechanisms/src/maps/law/webgpu/wgsl/wasm | **No** (plan only) |
+| Pass 2 prerequisite | **EXECUTED** (tip `01f42a2`) — gate CLEAR at execute |
+| Amended clipboard/ascii/mechanisms/src/maps/law/webgpu/wgsl/wasm | clipboard P3-M/P3-R + mechanisms **yes**; ascii/src/maps/law/webgpu/wgsl/wasm **No** |
 | PDF staged | No |
 | PDF SHA-256 | `e11532183ed50d11e91c70881c59b805346b6607d41e82e7d52aca520df53fdc` |
 | Push | **No** |
@@ -460,10 +460,10 @@ Pass 2 EXECUTED (**gate CLEAR** · tip `01f42a2`). Pass 3 execute waits on human
 
 | Field | Value |
 |---|---|
-| Status | _pending_ |
-| When | |
+| Status | **EXECUTED** |
+| When | 2026-09-18 ~22:38 PT |
 | Agent | `webnn Pass 3 EXECUTE` |
-| Pass 2 gate | **CLEAR** (tip `01f42a2`) — re-verify at execute |
+| Pass 2 gate | **CLEAR** (tip `01f42a2`) — re-verified at execute |
 | Artifact A | `webnn-mechanisms.md` · M-N1…M-N9 |
 | Artifact B | P3-M / P3-R on `webnn-clipboard.md` |
 | T6 five-stakes | **skip** (default) |
@@ -471,4 +471,4 @@ Pass 2 EXECUTED (**gate CLEAR** · tip `01f42a2`). Pass 3 execute waits on human
 | Amended map/law/graphics/src/webgpu/wgsl/wasm | **No** |
 | PDF staged | **No** |
 | Emission | `[GAP]` |
-| Claim BASE | |
+| Claim BASE | `8b4f95e` (`8b4f95e0ecd15ac2e7953e6a8a199d7aa4dbd513`) |

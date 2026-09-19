@@ -214,7 +214,7 @@
 ## Explicitly not this pass (Pass 1 deferrals — Pass 2 status)
 
 - No `webnn-ascii-machinery.md` / Wave A panels yet (**Pass 4+**; Pass 2 does not invent ascii).
-- No `webnn-mechanisms.md` yet (**Pass 3+**; Pass 2 defers mechanisms).
+- `webnn-mechanisms.md` — **Pass 3 EXECUTED** (M-N1…M-N9); see P3-M / P3-R below. (Pass 2 had deferred mechanisms.)
 - No five-stakes rewrite (default **skip**).
 - webgpu-* / wgsl-* / wasm-spec-3-* products **untouched** (cite-only).
 - No `src/`. Emission still `[GAP]`.
@@ -320,7 +320,7 @@ PDF is **PRESENT** (do not narrate absent). Pass 1 receipt (P1-R): `refs/local/w
 - Treat `exportToGPU` as identity merge / emission accept
 - Treat security / privacy / a11y text as Lace law / AGENTS rewrite
 - Treat broadcasting / Changes / algorithms as Lace append scheduler / Φ gate
-- Create `webnn-ascii-machinery.md` / Wave A panels (**deferred Pass 4+**) · create `webnn-mechanisms.md` (**deferred Pass 3+**)
+- Create `webnn-ascii-machinery.md` / Wave A panels (**deferred Pass 4+**) · create `webnn-mechanisms.md` (**Pass 3 lifted — see P3-M/P3-R**; do not reopen inventively)
 - Amend webgpu-* / wgsl-* / wasm-spec-3 products · law / graphics / systems-manifest / five-stakes / clock / hologram
 - Invent Core maps into five-stakes / reason-model
 - Add `src/` / Cargo.toml before emission acceptance
@@ -344,3 +344,55 @@ PDF is **PRESENT** (do not narrate absent). Pass 1 receipt (P1-R): `refs/local/w
 
 ---
 
+
+---
+
+## Pass 3 — Mechanism coherence (P3-M) + receipt (P3-R)
+
+**Status:** **EXECUTED** · agent `webnn Pass 3 EXECUTE` · ~2026-09-18 22:38 PT · claim BASE `8b4f95e` (= `origin/main` after refresh; full `8b4f95e0ecd15ac2e7953e6a8a199d7aa4dbd513`).
+
+### P3-M — Mechanism coherence mesh
+
+| Mechanism (M-N*) | Future panel (P-N*) | Clipboard PAGE | FM-Webnn* | Companion (cite-only) | Projection / hologram (cite) | Emission | KEEP/FORBID tooth | Same story? |
+|---|---|---|---|---|---|---|---|---|
+| **M-N1** Context / device | P-N1 | B | **FM-Webnn2** · **FM-Webnn6** | ≠ WebGPU Device (cite webgpu-*) | Shadow host-NN acquire (`clock/` · `hologram/`) | `[GAP]` | KEEP-read-as-host-NN-API · **FORBID-as-Lace-strand** · FORBID-as-Core-write · **FORBID-as-WebGPU-conflation** | YES |
+| **M-N2** Graph builder | P-N2 | C | **FM-Webnn1** · **FM-Webnn9** | cite-only | Builder ≠ Graphic D factory | `[GAP]` | KEEP-read · **FORBID-as-Lace-strand** · **FORBID-as-Core-write** · FORBID-as-Core · **D7** | YES |
+| **M-N3** Tensors / operands | P-N3 | D | **FM-Webnn3** | cite-only | Operand/tensor ≠ strand/append | `[GAP]` | KEEP-read · **FORBID-as-Lace-store** | YES |
+| **M-N4** Operators / op graph | P-N4 | E | **FM-Webnn5** · **FM-Webnn7** | ≠ WGSL (cite wgsl-*) | Op graph ≠ WORD | `[GAP]` | KEEP-read · **FORBID-as-Lace-WORD** · FORBID-as-Core-write · **FORBID-as-WGSL-conflation** | YES |
+| **M-N5** Compilation / build | P-N5 | C | **FM-Webnn1** · **FM-Webnn9** | cite-only; **D7** cross-link | MLGraph ≠ lace cord | `[GAP]` | KEEP-read · **FORBID-as-Lace-strand** · FORBID-as-Core-write · FORBID-as-Core · **D7** | YES |
+| **M-N6** Execution / dispatch | P-N6 | F | **FM-Webnn4** | cite-only; **D7** cross-link | dispatch ≠ Φ | `[GAP]` | KEEP-read · **FORBID-as-emission-rule** · **SILENT-for-Lace-append** · **D7** | YES |
+| **M-N7** MLTensor / buffers / export | P-N7 | D | **FM-Webnn3** · **FM-Webnn6** · **FM-Webnn9** | export ≠ Buffer identity (cite webgpu-*) | export ≠ accept emission | `[GAP]` (FORBID fill) | KEEP-read · **FORBID-as-Lace-store** · **PROPOSAL-only** · FORBID-as-WebGPU-conflation · **FORBID** accept-GAP | YES |
+| **M-N8** Error / validation | P-N8 | B+H | PAGE H/X SILENT mesh | cite-only | validation ≠ Lace cut | `[GAP]` | KEEP-read · **SILENT-for-Lace-append** · **FORBID-as-emission-rule** | YES |
+| **M-N9** Security / privacy | P-N9 | G | **FM-Webnn6** · PAGE X · **FM-Webnn8** | ≠ WebGPU identity (§5.3); ≠ wasm64 | threat text ≠ Lace law | `[GAP]` | KEEP-read · **FORBID-as-Core-write** · **FORBID-as-WebGPU-conflation** | YES |
+
+**CONFLICT:** none. PAGE A/X remain mesh context (not Wave A cards). Pass 1–2 morals / FM-Webnn\* / D7 **stand** (not rewritten).  
+**Companions:** webgpu-* (HOST/GPU · M-G\*) · wgsl-* (SHADER-LANG · M-S\*) · wasm-spec-3 (wasm64 · M-T\*) — **cite-only; not amended**.  
+**Projection/hologram / clock / law / graphics / systems-manifest / five-stakes / src / emission:** **not amended**.  
+**Emission:** `[GAP]` on every row. **Ascii:** deferred Pass 4+ (future **P-N1…P-N9** reserved by M-N\*).
+
+### P3-5S — Five-stakes
+
+**skip** (default) — no unexpected five-stakes drift; this shelf is not an anti-model PAGE.
+
+### P3-R — Pass 3 receipt
+
+| Field | Value |
+|---|---|
+| Status | **EXECUTED** |
+| When | 2026-09-18 ~22:38 PT |
+| Station | clipboards · agent `webnn Pass 3 EXECUTE` |
+| Plan | [webnn-pass-3-plan.md](webnn-pass-3-plan.md) (was HELD; gate CLEAR after Pass 2 tip `01f42a2`) |
+| Claim BASE | `8b4f95e` (full `8b4f95e0ecd15ac2e7953e6a8a199d7aa4dbd513` = `origin/main` at refresh) |
+| Pass 2 gate | **CLEAR** — Pass 2 **EXECUTED** (P2-R · D1–D6 + FM-Webnn1…9 + D7); re-verified at execute |
+| Hands skim | shoe → graphics A–D → systems-manifest → staking / law-why → AGENTS Implementation Law → pointer-emission DRAFT/`[GAP]` → clock/README + hologram (Shadow) → clock/wasm README (different layer) → webgpu mechanisms header / M-G\* (**cite-only**) → wgsl mechanisms / M-S\* schema (**cite-only**) → wasm-spec-3 banner (**cite-only**) → Pass 1–2 clipboard (A–H/X + D1–D6 + FM-Webnn\* + D7) → this plan → PDF |
+| PDF | **PRESENT** — `refs/local/webnn-crd-20260910.pdf` → `e11532183ed50d11e91c70881c59b805346b6607d41e82e7d52aca520df53fdc`; **353** pp.; text layer; PDF one-based; SHA match; gitignored; **never staged** |
+| Artifact A | [`webnn-mechanisms.md`](webnn-mechanisms.md) · **M-N1…M-N9** full schema |
+| Artifact B | P3-M mesh (9 rows) + this receipt |
+| Hard stamps | M-N1 FORBID-as-Lace-strand + FORBID-as-WebGPU-conflation · M-N2/M-N5 FORBID-as-Lace-strand / FORBID-as-Core-write · M-N3/M-N7 FORBID-as-Lace-store · M-N4 FORBID-as-Lace-WORD · M-N6 FORBID-as-emission-rule · M-N7 PROPOSAL-only + FORBID accept-GAP · M-N8 SILENT-for-Lace-append · M-N9 FORBID-as-Core-write · **D7** cross-link M-N2/M-N5/M-N6 |
+| T6 five-stakes | **skip** |
+| T7 ascii | **skip** (Pass 4+; future P-N\* reserved by M-N\*) |
+| Amended | Core graphics · systems-manifest · five-stakes · src/ · webgpu-* · wgsl-* · wasm-spec-3 · clock · hologram · law · pointer-emission | **No** |
+| Pass 1–2 / FM-Webnn\* / D7 | **stand** (D6 mechanisms-deferred line annotated; no PAGE rewrite) |
+| Emission | still `[GAP]` — no POINTER when / arity / adjacency; no invented Φ |
+| PDF staged | **No** |
+| Push | **No** (ask before push) |
