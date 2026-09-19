@@ -1,7 +1,7 @@
-STATUS: HELD
+STATUS: FREE
 STATION: kit
 OWNS: docs/kit/** .claude/**
-AGENT: Claude-Projection
-BASE: d2e6c25214f26d6b08f8ffb43dbac4a3de95d962
-SINCE: 2026-09-19T14:12:35Z
+AGENT: -
+BASE: -
+SINCE: -
 NOTE: Live-law door CLOSED 6/6. Kit FREE. Pair human. Not door #5. Φ [GAP].
