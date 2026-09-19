@@ -35,9 +35,33 @@ The complete inventory:
 
 **A gating check has been failing for twelve commits and no campaign stopped, because nothing can stop them.**
 
+### It resolved while this pass was measuring, and that is the E6 answer
+
+`docs/clipboards/wgsl-ascii-machinery.md` now exists, created by `25e26b3` *Execute WGSL Pass 4*. **`main` is green.**
+
+| | |
+|---|---|
+| Link created | `e6dd515`, WGSL Pass 3 |
+| Target created | `25e26b3`, WGSL Pass 4 |
+| **Red lasted** | **21 commits** |
+
+**The link was never dead. It was early by twenty-one commits**, and every sibling campaign — agentscope, kauffman, petersen-zech, rowlands, wasm-spec-3, webgpu, xiao-zhu — carries the same `-ascii-machinery.md` artifact. It was a forward reference to a conventional file, and it arrived.
+
+**Check 4 was right about the bytes and wrong about the meaning for twenty-one commits.**
+
+And it sharpens **E1** rather than softening it: **had anything actually enforced, four campaigns would have been blocked for twenty-one commits over a file that was always going to arrive.** Enforcement is not free, and this is the measured price of the first case it would have caught.
+
 ### So `D1` and `D2` are asking after something that does not exist
 
 [Iteration 1's D1 and D2](verification-iter1-pass-5-plan.md) ask whether the door and orphan checks should *gate*. **On this measurement, gating is not a property any check in this tree currently has.** Ruling them "gate" would change a word in a script and nothing else.
+
+### What each edit costs, measured
+
+| | Edit | Size |
+|---|---|---|
+| **E3** | lift `cmd_force_free` from `claim.sh` into `coord.sh` | **10 lines**, already written and in the tree |
+| **E4** | stop hardcoding the signer | **2 sites** — `resync.sh:48` and `:73` |
+| **E6** / `D3` | strip fenced and backticked spans before the four regex checks | check 7 already does it; the pattern is in the same file |
 
 ## 1. The decisions
 
