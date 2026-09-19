@@ -33,7 +33,7 @@ A map is four-pass complete. B spine + fields are on main. G2 still `[GAP]`.
 
 ---
 
-## Iteration 2 — OPEN (pass 5 executed; 6 queued)
+## Iteration 2 — OPEN (pass 6 PLAN)
 
 Leftover from iteration 1, in order. These are **iteration 2 passes 1–6**, not B-pass-7.
 
@@ -44,7 +44,7 @@ Leftover from iteration 1, in order. These are **iteration 2 passes 1–6**, not
 | 3 | Graphic C spine **EXECUTED** | [`ascii-iteration-2-pass-3-plan.md`](ascii-iteration-2-pass-3-plan.md) |
 | 4 | C fields + Role map **EXECUTED** | [`ascii-iteration-2-pass-4-plan.md`](ascii-iteration-2-pass-4-plan.md) |
 | 5 | C grain / anti-model (C6 vs D; C11) **EXECUTED** | [`ascii-iteration-2-pass-5-plan.md`](ascii-iteration-2-pass-5-plan.md) |
-| 6 | C mechanism map or receipt | not written |
+| 6 | C mechanism map + i2 receipt **OPEN** | [`ascii-iteration-2-pass-6-plan.md`](ascii-iteration-2-pass-6-plan.md) |
 
 C slots 3–6 are placeholders. A later receipt may rename them. Do not start C from a leftover B ticket. Do not fill G2 to “finish” an iteration.
 
