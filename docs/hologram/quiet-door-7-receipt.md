@@ -3,7 +3,7 @@
 **Status:** CLOSED. Six of six.  
 **Station:** hologram.  
 **Object:** `docs/hologram/README.md`  
-**Pin:** pending execute.  
+**Pin:** `bb476ad` (execute `bb476ad176bd3379e3778e96e498c555e4577073`).  
 **Diagram:** [`quiet-door-7-ascii.md`](quiet-door-7-ascii.md).  
 **Not:** projection iter 5. Not Graphic E. Not HTML rewrite. Not renderer claim. Not door #8. Not door #6 pass 7.  
 **Emission:** `[GAP]`. No `src/`. Hologram door bytes untouched. HTML untouched.
