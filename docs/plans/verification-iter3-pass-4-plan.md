@@ -1,6 +1,6 @@
 # Verification iteration 3, pass 4 — E5, and what a moved file actually costs
 
-**Status:** `[PLAN]`. Execution NOT_RUN. **Proposal only** — pass 4 builds nothing.
+**Status:** `[PLAN]`. **EXECUTED** — [the record](verification-iter3-pass-4-findings.md), which corrects this plan's 11-of-17 to 3-of-20. Built nothing.
 **Station:** maps for this plan. Any remedy lands in kit or coord and needs a ruling first.
 **Emission:** `[GAP]`. No `src/`. **Pinned at `8f2c397`.**
 **Iteration:** [iteration 3](verification-iteration-3-plan.md), pass 4 of six. Passes 1–3 EXECUTED.

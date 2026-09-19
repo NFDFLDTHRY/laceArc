@@ -39,6 +39,7 @@
 | [verification-iter3-pass-3-plan.md](verification-iter3-pass-3-plan.md) | `[PLAN]` iteration 3 pass 3: the dating convention has an owner — cold-doors, kit. This campaign wrote the second vocabulary |
 | [verification-iter3-pass-3-findings.md](verification-iter3-pass-3-findings.md) | pass 3 record. 13 DATED, 2 PAUSED, and 10 that no stamp fits — a sixth stamp offered to cold-doors |
 | [verification-iter3-pass-4-plan.md](verification-iter3-pass-4-plan.md) | `[PLAN]` iteration 3 pass 4: E5. Moves are campaign events, the sweep already happened and leaked 11 of 17 |
+| [verification-iter3-pass-4-findings.md](verification-iter3-pass-4-findings.md) | pass 4 record. The sweep was 85% effective; the unswept move was this campaign's own 30-file Phase 5a |
 | [restructure-plan.md](restructure-plan.md) | `[PROPOSAL]` coherence of the whole tree: twelve measured findings, eight phases, one station per commit; supersedes the defrag plan as filing plan of record |
 
 Sub-shelves: [fixtures/](fixtures/README.md) sealed golden IR · [tools/](tools/README.md) host validator.
