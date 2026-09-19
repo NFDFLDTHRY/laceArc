@@ -1,6 +1,6 @@
 # WGSL CRD 2026-09-15 — Pass 3 PLAN (SHADER-LANG system mechanisms / Wave A M-S* + P3-M mesh)
 
-**Status:** **HELD / NOT EXECUTED** — plan only this turn.  
+**Status:** **EXECUTED** — Wave A M-S1…M-S9 + P3-M/P3-R committed this turn.  
 **Station:** clipboards (HELD `wgsl-pass-3-plan` · BASE `ccc68724d07095e5673ee380783bbdc4fc6c5326`)  
 **Base at plan:** `ccc6872` (= `origin/main` after refresh). Refresh `git pull --ff-only` before any execute.  
 **Spec:** *WebGPU Shading Language* (WGSL) — **W3C Candidate Recommendation Draft, 15 September 2026** · editors Alan Baker, Mehmet Oguz Derin, David Neto (et al.)  
@@ -64,7 +64,7 @@ pull/ff → claim clipboards → Hands + shader-lang mesh skim
 |  FORBID-as-Core-write; NON-binding on Core/src/Phi.                  |
 |  No src/ until pointer-emission accepted.  One strand.               |
 |  No ascii Wave A this pass (Pass 4).  Mechanisms file = execute only.|
-|  Status this commit: HELD / NOT EXECUTED — plan only.                |
+|  Status this commit: EXECUTED — Wave A cards + P3-M.                 |
 |  Emission [GAP] sealed.                                              |
 +======================================================================+
 ```
@@ -376,10 +376,10 @@ They do not write Graphic D, do not birth `src/`, do not fill Φ, do not swap We
 
 ---
 
-## Success criteria (plan turn — this commit)
+## Success criteria (plan turn — historical; execute supersedes)
 
 1. This file exists at `docs/clipboards/wgsl-pass-3-plan.md`.  
-2. Status **HELD / NOT EXECUTED**; WGSL SHADER-LANG SPECIAL banner present; emission `[GAP]` explicit.  
+2. Status was **HELD / NOT EXECUTED** at plan; now **EXECUTED**; WGSL SHADER-LANG SPECIAL banner present; emission `[GAP]` explicit.  
 3. Wave A **M-S1…M-S9** + full card schema + P3-M mesh + tickets + acceptance + steward refuse specified.  
 4. Prefix **M-S\*** justified (S = shader-lang; WebGPU M-G\* / wasm M-T\* noted).  
 5. **No** `wgsl-mechanisms.md` created; **no** clipboard / ascii / src product deltas in this commit (plan only).  
@@ -404,29 +404,32 @@ WGSL is not the WebGPU Device/Queue host API. WGSL is not the wasm64 compile tar
 
 | Field | Value |
 |---|---|
-| Status | **HELD / NOT EXECUTED** |
-| When | 2026-09-18 ~21:45 PT |
-| Agent | `wgsl-pass-3-plan` |
-| Base | `ccc68724d07095e5673ee380783bbdc4fc6c5326` (`ccc6872`) |
-| Product | this plan only |
+| Status | **EXECUTED** (plan was HELD; execute this turn) |
+| When (plan) | 2026-09-18 ~21:45 PT |
+| When (execute) | 2026-09-18 ~21:50 PT |
+| Agent (plan) | `wgsl-pass-3-plan` |
+| Agent (execute) | `wgsl Pass 3 EXECUTE` |
+| Base (plan historical) | `ccc6872` (pre-rebase) |
+| Claim BASE (execute) | `8a75850` (= origin/main; plan commits rebased as `8394baf` / `10d2178`) |
+| Product | `wgsl-mechanisms.md` M-S1…M-S9 + clipboard P3-M/P3-R + this plan EXECUTED |
 | Pass 1–2 ancestors | Pass 1 PAGE A–H,X · Pass 2 D1–D6 + FM-Wgsl\* + D7 EXECUTED |
 | Wave A ids | **M-S1…M-S9** (S = shader-lang) |
-| Execute artifact (later) | `docs/clipboards/wgsl-mechanisms.md` |
-| Ascii | deferred Pass 4 (`wgsl-ascii-machinery.md` · P-S\*) |
-| Amended clipboard/ascii/mechanisms/src/maps/law/webgpu/wasm-spec-3 | **No** |
+| Execute artifact | `docs/clipboards/wgsl-mechanisms.md` |
+| Ascii | deferred Pass 4 (`wgsl-ascii-machinery.md` · P-S\*) — **not created** |
+| Amended clipboard/ascii/mechanisms/src/maps/law/webgpu/wasm-spec-3 | clipboard P3-M/P3-R + mechanisms created; webgpu/wasm-spec-3/src/maps/law **No** |
 | PDF staged | No |
 | PDF SHA-256 | `73dc9e35047d8715a88ae3b1082b2e887c750da9f5c0f97d78410fc6c2f5eb6d` |
 | Push | **No** |
 | Emission | `[GAP]` |
-| Execute | **not performed** — leave HELD |
+| Execute | **performed** |
 
 ### Execution receipt (fill on execute)
 
 | Field | Value |
 |---|---|
-| Status | _(empty until execute)_ |
-| When | |
-| Agent | |
+| Status | **EXECUTED** |
+| When | 2026-09-18 ~21:50 PT |
+| Agent | `wgsl Pass 3 EXECUTE` |
 | Artifact A | `wgsl-mechanisms.md` · M-S1…M-S9 |
 | Artifact B | P3-M / P3-R on `wgsl-clipboard.md` |
 | T6 five-stakes | skip (default) |
@@ -434,4 +437,4 @@ WGSL is not the WebGPU Device/Queue host API. WGSL is not the wasm64 compile tar
 | Amended map/law/graphics/src/webgpu/wasm-spec-3/clock/hologram | **No** |
 | PDF staged | **No** |
 | Emission | `[GAP]` |
-| Claim BASE | |
+| Claim BASE | `8a75850` |

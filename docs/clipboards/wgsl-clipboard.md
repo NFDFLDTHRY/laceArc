@@ -207,10 +207,10 @@
 
 ---
 
-## Explicitly not this pass (Pass 1–2 stand; Pass 3+ later)
+## Explicitly not this pass (Pass 1–2 stand; Pass 3 EXECUTED; Pass 4 later)
 
-- No `wgsl-ascii-machinery.md` / Wave A panels (**Pass 3+ / Pass 4 shape later**).
-- No `wgsl-mechanisms.md` / mechanism cards (**deferred Pass 3+**).
+- No `wgsl-ascii-machinery.md` / Wave A panels (**Pass 4**; future **P-S\*** reserved by M-S\*).
+- `wgsl-mechanisms.md` / mechanism cards — **Pass 3 EXECUTED** (M-S1…M-S9); see P3-M / P3-R below.
 - No five-stakes rewrite / no invent Core maps into reason-model (default **skip**).
 - webgpu-* products **untouched** (cite-only; Pass 1–5 EXECUTED · Pass 6 HELD).
 - wasm-spec-3 products **untouched** (cite-only; Pass 1–6 EXECUTED).
@@ -311,7 +311,7 @@ PDF is **PRESENT** (do not narrate absent). Pass 1 receipt (P1-R): `refs/local/w
 - Swap WGSL for WebGPU Device/Queue/Buffer host API
 - Swap WGSL for wasm64 / wasm-spec-3 compile target
 - Treat validation / shader-creation / pipeline-creation / dynamic errors as Lace law / Φ gate
-- Create `wgsl-ascii-machinery.md` / Wave A panels · create `wgsl-mechanisms.md` / mechanism cards
+- Create `wgsl-ascii-machinery.md` / Wave A panels (**still sealed — Pass 4**) · create `wgsl-mechanisms.md` / mechanism cards (**Pass 3 lifted — see P3-M/P3-R**; do not reopen inventively)
 - Amend webgpu-* / wasm-spec-3 / law / graphics / systems-manifest / five-stakes / clock / hologram
 - Invent Core maps into five-stakes / reason-model
 - Add `src/` / Cargo.toml before emission acceptance
@@ -332,3 +332,52 @@ PDF is **PRESENT** (do not narrate absent). Pass 1 receipt (P1-R): `refs/local/w
 
 **Lace refusal:** this sketches **shader-lang module → host create → pipeline → execution** on the language side only. It does **not** emit POINTER, does **not** append to Graphic D, does **not** open Core doors / `src/`, and does **not** fill emission `[GAP]`. Shader module is not strand. Entry point is not Φ. WGSL is not Device/Queue.
 
+---
+
+## Pass 3 — Mechanism coherence (P3-M) + receipt (P3-R)
+
+**Status:** **EXECUTED** · agent `wgsl Pass 3 EXECUTE` · ~2026-09-18 21:50 PT · claim BASE `8a75850` (= `origin/main` after rebase of plan commits `8394baf` / `10d2178`).
+
+### P3-M — Mechanism coherence mesh
+
+| Mechanism (M-S*) | Future panel (P-S*) | Clipboard PAGE | FM-Wgsl* | Projection / hologram (cite) | webgpu (cite-only) | wasm64 (cite-only) | Emission | KEEP/FORBID tooth | Same story? |
+|---|---|---|---|---|---|---|---|---|---|
+| **M-S1** Module / parse | P-S1 | A | **FM-Wgsl1** · **FM-Wgsl4** · **FM-Wgsl7** | Shadow module identity; **D7** cross-link (`clock/README.md` · `lace-projection.html` · `hologram/visual-primitives.md`) | ≠ Device/Queue (**FM-Wgsl7**) | ≠ compile target (**FM-Wgsl8**) | `[GAP]` | KEEP-read-as-shader-lang · **FORBID-as-Lace-WORD** · **FORBID-as-Lace-strand** · **FORBID-as-host-API-swap** · FORBID-as-Core · FORBID fill-GAP | YES |
+| **M-S2** Types | P-S2 | B | **FM-Wgsl4** | types ≠ schema; hologram may *draw* | cite-only | cite-only | `[GAP]` | KEEP-read-as-shader-lang · **FORBID-as-Core-write** · **FORBID-as-Lace-WORD** | YES |
+| **M-S3** Address spaces / vars | P-S3 | C | **FM-Wgsl3** | address space ≠ strand/store | ≠ GPUBuffer swap | ≠ linear mem strand | `[GAP]` | KEEP-read-as-shader-lang · **FORBID-as-Lace-store** | YES |
+| **M-S4** Expressions | P-S4 | D | **FM-Wgsl4** | expr algebra ≠ WORD | cite-only | cite-only | `[GAP]` | KEEP-read-as-shader-lang · **FORBID-as-Lace-WORD** | YES |
+| **M-S5** Statements | P-S5 | E | **FM-Wgsl5** | discard ≠ Lace cut; SILENT | cite-only | cite-only | `[GAP]` | KEEP-read-as-shader-lang · **SILENT-for-Lace-append** · **FORBID-as-emission-rule** | YES |
+| **M-S6** Functions / entry | P-S6 | F | **FM-Wgsl1** · **FM-Wgsl2** | entry ≠ Φ; stage ≠ lace cord | ≠ pipeline host API | cite-only | `[GAP]` | KEEP-read-as-shader-lang · **FORBID-as-emission-rule** · **FORBID-as-Lace-strand** · FORBID fill-GAP | YES |
+| **M-S7** Attributes | P-S7 | F | **FM-Wgsl1** | workgroup_size ≠ Graphic D | cite-only | cite-only | `[GAP]` | KEEP-read-as-shader-lang · **FORBID-as-Lace-strand** · **FORBID-as-Core-write** | YES |
+| **M-S8** Built-ins | P-S8 | G | **FM-Wgsl9** · **FM-Wgsl6** | builtins/barriers ≠ Core/Φ | cite-only | cite-only | `[GAP]` | KEEP-read-as-shader-lang · **FORBID-as-Core-write** · **FORBID-as-emission-rule** | YES |
+| **M-S9** Execution / uniformity | P-S9 | H | **FM-Wgsl6** | uniformity/validation ≠ Lace law | cite-only | cite-only | `[GAP]` | KEEP-read-as-shader-lang · **SILENT-for-Lace-append** · **FORBID-as-emission-rule** | YES |
+
+**CONFLICT:** none. PAGE X remains mesh context (steward refuse · FM-Wgsl7/8 · SILENT · Φ `[GAP]`). Pass 1–2 morals / FM-Wgsl\* / D7 **stand** (not rewritten).  
+**Projection/hologram files:** cite-only — **not amended**. **webgpu-* products:** cite-only — **not amended**. **wasm-spec-3 products:** cite-only — **not amended**.  
+**Emission:** `[GAP]` on every row. **Ascii:** deferred Pass 4 → `wgsl-ascii-machinery.md` (future **P-S1…P-S9**; not created).
+
+### P3-5S — Five-stakes
+
+**skip** (default) — no unexpected five-stakes drift; this shelf is not an anti-model PAGE.
+
+### P3-R — Pass 3 receipt
+
+| Field | Value |
+|---|---|
+| Status | **EXECUTED** |
+| When | 2026-09-18 ~21:50 PT |
+| Station | clipboards · agent `wgsl Pass 3 EXECUTE` |
+| Plan | [wgsl-pass-3-plan.md](wgsl-pass-3-plan.md) (was HELD; plan after rebase `8394baf` · release `10d2178`) |
+| Claim BASE | `8a75850` (= `origin/main` after maps release; local plan commits rebased onto it) |
+| Hands skim | shoe → graphics A–D → systems-manifest → staking / law-why → AGENTS Implementation Law → pointer-emission DRAFT/`[GAP]` → clock/README + lace-projection → clock/wasm README (different layer) → hologram/README + visual-primitives (WGSL live path cite) → webgpu Pass 1–5 banner / PAGE E WGSL boundary (**cite-only**; untouched) → wasm-spec-3 Pass 1–6 banner (**cite-only**; untouched) → Pass 1–2 clipboard (A–H/X + D1–D6 + FM-Wgsl\* + D7) → this plan → house mechanism schema (webgpu-mechanisms) → PDF |
+| PDF | **PRESENT** — `refs/local/wgsl-w3c-crd-20260915.pdf` → `73dc9e35…c2f5eb6d`; **381** pp.; text layer; PDF one-based; SHA match; gitignored; **never staged** |
+| Artifact A | [`wgsl-mechanisms.md`](wgsl-mechanisms.md) · **M-S1…M-S9** full schema |
+| Artifact B | P3-M mesh (9 rows) + this receipt |
+| Hard stamps | M-S1 FORBID-as-Lace-WORD + FORBID-as-Lace-strand + FORBID-as-host-API-swap + **D7** cross-link · M-S2 FORBID-as-Core-write / FORBID-as-Lace-WORD · M-S3 FORBID-as-Lace-store · M-S4 FORBID-as-Lace-WORD · M-S5 SILENT + FORBID-as-emission-rule · M-S6 FORBID-as-emission-rule + FORBID-as-Lace-strand · M-S7 FORBID-as-Lace-strand · M-S8 FORBID-as-Core-write + FORBID-as-emission-rule · M-S9 SILENT |
+| T6 five-stakes | **skip** |
+| T7 ascii | **skip** (Pass 4; future P-S\* reserved by M-S\*; deliverable `wgsl-ascii-machinery.md`) |
+| Amended | Core graphics · systems-manifest(-ascii) · five-stakes · src/ · webgpu-* · wasm-spec-3 · clock · hologram · law · pointer-emission | **No** |
+| Pass 1–2 / FM-Wgsl\* / D7 | **stand** (D6 mechanisms-deferred line annotated; no PAGE rewrite) |
+| Emission | still `[GAP]` — no POINTER when / arity / adjacency; no invented Φ |
+| PDF staged | **No** |
+| Push | **No** (ask before push) |
