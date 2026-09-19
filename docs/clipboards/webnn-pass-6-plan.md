@@ -1,7 +1,7 @@
 # WebNN CRD 2026-09-10 — Pass 6 PLAN (rigorous analysis & ASCII systems-diagram correctness)
 
-**Status:** **HELD** · plan-only · 2026-09-18 ~22:58 PT · agent `WebNN Pass 6 PLAN HELD` · **NOT EXECUTED**  
-**Station:** clipboards (HELD `WebNN Pass 6 PLAN HELD` · claim BASE `60eb30f` = `origin/main` at plan after pull/refresh)  
+**Status:** **EXECUTED** · 2026-09-18 ~23:01 PT · agent `WebNN Pass 6 EXECUTE` · was HELD ~22:58 PT  
+**Station:** clipboards (EXECUTE `WebNN Pass 6 EXECUTE` · claim BASE `60eb30f` = `origin/main`)  
 **Tip at plan:** `60eb30f` (= origin/main after kit cold-doors claim refresh; WebNN Pass 5 EXECUTE tip stands under it)  
 **Spec:** *Web Neural Network API* (WebNN) — **W3C Candidate Recommendation Draft, 10 September 2026**  
 **Under test:** `docs/clipboards/webnn-ascii-machinery.md` — SOURCE MACHINERY + **P-N1…P-N9** + Pass 5 Order Proposal short mirror  
@@ -60,7 +60,7 @@ pull/ff → claim clipboards → Hands + host-NN mesh skim
 |  webgpu-* HOST/GPU · wgsl-* SHADER-LANG · wasm-spec-3 wasm64 =       |
 |        cite-only (do not edit).                                      |
 |  No src/ until pointer-emission accepted.  One strand.               |
-|  Emission [GAP].  Status: HELD — plan only; execute writes P6 tables.|
+|  Emission [GAP].  Status: EXECUTED — P6 tables on clipboard; verdict DIAGRAM SOUND WITH OPENS.|
 +======================================================================+
 ```
 
@@ -444,8 +444,8 @@ Distinctive product = **DIAGRAM SOUND** — not a new Wave B.
 | webgpu-* / wgsl-* / wasm-spec-3 | cite-only · do not edit |
 | pointer-emission.md | DRAFT / `[GAP]` |
 | PDF | PRESENT · SHA `e11532183ed50d11e91c70881c59b805346b6607d41e82e7d52aca520df53fdc` · gitignored · never staged · 353 pp |
-| Execute | **NOT performed** |
-| P6-A/P/X/F/O/R bodies | **not written** (plan seeds checklists only) |
+| Execute | **PERFORMED** · P6-A/P/X/F/O/R delivered · verdict **DIAGRAM SOUND WITH OPENS** |
+| P6-A/P/X/F/O/R bodies | **written** on clipboard Pass 6 · ascii Pass 6 receipt |
 | Push | **NOT performed** |
 | Emission | `[GAP]` |
 | `src/` | absent |

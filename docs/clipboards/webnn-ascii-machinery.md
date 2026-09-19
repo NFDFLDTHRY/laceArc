@@ -1,6 +1,6 @@
 # WebNN CRD 2026-09-10 — ASCII SOURCE MACHINERY (HOST-NN · Wave A P-N1…P-N9 · P4-X)
 
-**Status:** Pass 4 **EXECUTED** · Pass 5 **EXECUTED** (P5-X CONFIRM · Shadow Order Proposal) · Wave A panels **P-N1…P-N9** 1:1 with **M-N1…M-N9** · P4-X/P5-X all **PASS**. Emission `[GAP]`.  
+**Status:** Pass 4 **EXECUTED** · Pass 5 **EXECUTED** (P5-X CONFIRM · Shadow Order Proposal) · Pass 6 **EXECUTED** (**DIAGRAM SOUND WITH OPENS**) · Wave A panels **P-N1…P-N9** 1:1 with **M-N1…M-N9** · P4-X/P5-X/P6-X all **PASS**. Emission `[GAP]`.  
 **Source:** *Web Neural Network API* (WebNN) — **W3C Candidate Recommendation Draft, 10 September 2026**. Editors: Ningxin Hu, Dwayne Robinson (et al.).  
 **PDF:** `refs/local/webnn-crd-20260910.pdf` → attachment `e11532183ed50d11e91c70881c59b805346b6607d41e82e7d52aca520df53fdc` (**353** pp., text layer; **never git-add**). SHA-256 `e11532183ed50d11e91c70881c59b805346b6607d41e82e7d52aca520df53fdc`. PDF one-based primary.  
 **Algorithms (unchanged):** [`webnn-mechanisms.md`](webnn-mechanisms.md) — **M-N1…M-N9** (cite only; do not rewrite).  
@@ -29,7 +29,7 @@
 |  ASCII fences = Spec/host-NN glyphs ONLY; stamps live UNDER fences.  |
 |  FORBID-as-Core-write; NON-binding on Core/src/Phi.                  |
 |  No src/ until pointer-emission accepted.  One strand.               |
-|  Status: Pass 4 EXECUTED. Emission [GAP]. Order Proposal = Pass 5.   |
+|  Status: Pass 4–6 EXECUTED. Emission [GAP]. Order Proposal = Pass 5. |
 +======================================================================+
 ```
 
@@ -543,7 +543,7 @@ Columns: `node · P · M · stamp · Implements OK · Fence OK (Spec-only; no PO
 | C | Multi-context / NPU device edge cases; detailed `exportToGPU` transfer recipes |
 | D | clock/hologram viewer NN embed implementation notes (cite-only; do not amend those files) |
 
-**No** full Wave B panels this pass. **Order Proposal = Pass 5** (not this pass). **Deep diagram audit = Pass 6** (not this pass).
+**No** full Wave B panels. **Order Proposal = Pass 5**. **Deep diagram audit = Pass 6 EXECUTED** (clipboard P6-A/P/X/F/O/R · verdict **DIAGRAM SOUND WITH OPENS**).
 
 ---
 
@@ -596,4 +596,24 @@ They do not write Graphic D, do not birth `src/`, do not fill Φ, and do not swa
 | P5-X | CONFIRM · **19 PASS · 0 FIX** (see clipboard) |
 | Emission | still `[GAP]` |
 | PDF staged | **No** |
-| Pass 6 | **not opened** |
+| Pass 6 | **EXECUTED** — see Pass 6 receipt below · clipboard P6-R |
+
+---
+
+## Pass 6 execute receipt (ascii file)
+
+| Field | Value |
+|---|---|
+| Status | **EXECUTED** |
+| When | 2026-09-18 ~23:01 PT |
+| Verdict | **DIAGRAM SOUND WITH OPENS** (full tables on clipboard Pass 6) |
+| P6-A | **10 PASS · 0 OPEN** — fence integrity · singular overview · P-N1…P-N9 · no POINTER/Φ invent in fences · stamp legend · no Core bleed |
+| P6-P | **9 PASS** — Shadow / NON-binding · KEEP-read-as-host-NN-API · P5-P keep-outs intact |
+| P6-X | **9 PASS · 0 FIX** — Spec↔M-N*↔P-N*↔overview; FM-Webnn1…9 held; special gates PASS |
+| P6-F | **none** |
+| P6-O | overview **count=1** reconfirmed; Core/Φ/WebGPU/WGSL/wasm64 off-board |
+| Pointer | clipboard [`webnn-clipboard.md`](webnn-clipboard.md) Pass 6 section (P6-A/P/X/F/O/R) |
+| Plan | [`webnn-pass-6-plan.md`](webnn-pass-6-plan.md) → **EXECUTED** |
+| Emission | still `[GAP]` |
+| PDF staged | **No** |
+| Wave B | **SKIP** |

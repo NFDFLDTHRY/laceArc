@@ -587,3 +587,134 @@ Mirror (short): under SOURCE MACHINERY overview in [`webnn-ascii-machinery.md`](
 | PDF staged | **No** |
 | Push | **No** (ask before push) |
 | `src/` | absent |
+
+---
+
+## Pass 6 — Rigorous analysis & ASCII systems-diagram correctness (HOST-NN · DIAGRAM SOUND)
+
+**Status:** **EXECUTED** · 2026-09-18 ~23:01 PT · station clipboards · agent `WebNN Pass 6 EXECUTE`  
+**Plan:** [`webnn-pass-6-plan.md`](webnn-pass-6-plan.md) (HELD → EXECUTED)  
+**ASCII under test:** [`webnn-ascii-machinery.md`](webnn-ascii-machinery.md) — SOURCE MACHINERY + **P-N1…P-N9** + Pass 5 Order Proposal short mirror  
+**Mechanisms:** [`webnn-mechanisms.md`](webnn-mechanisms.md) — **M-N1…M-N9** (cite only; unchanged)  
+**Law:** WebNN = **HOST-NN Shadow only**. Distinctive product = **DIAGRAM SOUND** deep accuracy audit — **not** a new Wave B. Order Proposal still **Shadow / NON-binding** · **FORBID-as-Core-write**. Emission Φ still `[GAP]`. **KEEP-read-as-host-NN-API**. **FM-Webnn1…Webnn9** stand. No invent stamps. Cite-only webgpu-* / wgsl-* / wasm-spec-3.
+
+**Hands + host-NN mesh skim (T1):** shoe → graphics A–D → systems-manifest → staking / law-why → AGENTS Implementation Law → pointer-emission DRAFT/`[GAP]` → clock/README (**Shadow consumer**) → hologram + visual-primitives (**Shadow consumer**) → webgpu-* banner (**HOST/GPU** cite-only; **do not edit**) → wgsl-* banner (**SHADER-LANG** cite-only; **do not edit**) → wasm-spec-3 banner (**wasm64** cite-only) → Pass 1–5 clipboard (P5-X **19 PASS** · P5-P · P4-X all PASS · **FM-Webnn1…Webnn9**) → ascii overview + P-N1…P-N9 → mechanisms M-N1…M-N9 → this Pass 6 plan → wasm-spec-3 / agentscope Pass 6 P6-A/P/X/F/O/R shape (read-only; adapt to **HOST-NN**).
+
+**PDF gate (T2):** `refs/local/webnn-crd-20260910.pdf` · SHA-256 `e11532183ed50d11e91c70881c59b805346b6607d41e82e7d52aca520df53fdc` · 353 pp · `git check-ignore` OK · **never staged**. Light re-sight: `createContext` / MLContext PDF **28–29**; `dispatch` PDF **32–33** (NOTE: no completion signal); MLGraph PDF **50**; `exportToGPU` PDF **42–43**. Pins agree with M-N*/P-N* cites.
+
+### P6-A — Systems-diagram structure checklist
+
+| # | Item | Evidence | Verdict |
+|---|---|---|---|
+| 1 | Fence integrity | 11 code fences (banner + overview + 9 panels); markers balanced (22); stamps live **under** fences | **PASS** |
+| 2 | Spine completeness | overview: navigator.ml/`createContext`/MLContext (P-N1) → MLGraphBuilder/`input`/`constant` (P-N2) → MLOperand/tensors (P-N3) → operators (P-N4) → `build`→MLGraph (P-N5) → `dispatch`/ML task source (P-N6) → MLTensor/`exportToGPU` (P-N7) → validation/`opSupportLimits` (P-N8) → security/privacy/§5.3 (P-N9) → **FORBIDDEN** Core/Graphic D/Φ/WebGPU Device·Queue/WGSL/wasm64 exit | **PASS** |
+| 3 | Singular overview | exactly one `## SOURCE MACHINERY overview` (grep count=1); P5-O / P4-O stand | **PASS** |
+| 4 | Panel ids complete | **P-N1…P-N9** each: Spec cite · Lace stamp · Implements (via M-N*) · fence · under-fence stamp line | **PASS** |
+| 5 | No orphan nodes | every overview box cites ≥1 P-N*/M-N*; FORBIDDEN exit marked; no unmarked INPUT required (spine is constructive Spec path) | **PASS** |
+| 6 | Wave A coverage | M-N1…N9 / P-N1…N9 all appear on overview | **PASS** |
+| 7 | Off-board / no Core bleed | Lace Core / Graphic D / Φ / WebGPU Device·Queue / WGSL / wasm64 only as **FORBIDDEN exits** / edge labels — not on-board stores | **PASS** |
+| 8 | Glyph discipline | **no `POINTER` word inside any diagram fence**; Phi / Graphic D / Lace Core appear only as FORBIDDEN-exit / `# NOT …` refuse labels (not inventable Lace objects) | **PASS** |
+| 9 | Stamp legend consistent | ascii legend ≡ clipboard stamp-legend **family** (**KEEP-read-as-host-NN-API** · KEEP-read · FORBID-as-Core-write · FORBID-as-Lace-WORD · store · strand · emission-rule · SILENT · PROPOSAL-only · FORBID-as-WebGPU/WGSL/compile-target-swap · FORBID-as-Core · FORBID fill/accept-GAP); P5-P also carries PROPOSAL · NON-binding | **PASS** |
+| 10 | Stamp under-fence placement | **10** under-fence lines (overview + P-N1…P-N9); overview FORBID-* tokens scored as **edge labels / off-board exit** (label-vs-under-fence contract) — not inventable Lace objects inside fence | **PASS** |
+
+**P6-A count:** **10 PASS · 0 OPEN**
+
+### P6-P — Order Proposal rigor (still Shadow / NON-binding · keep-outs re-walk)
+
+| Check | Result | Verdict |
+|---|---|---|
+| Claim–diagram bind | Stage→hygiene rows (P5-P) point at real overview nodes / P-N1…P-N9 + FORBIDDEN exit + Shadow consumers | **PASS** |
+| Overclaim | No Core write / AGENTS amend / Φ schedule / `src/` birth / Core import of MLGraph/MLContext/builder as strand/WORD/emission | **PASS** |
+| FORBID completeness | FORBID-as-Core-write · Lace-WORD · store · strand · emission-rule · Core · fill-GAP · accept-GAP · WebGPU-conflation · WGSL-conflation · compile-target-swap · SILENT · PROPOSAL · NON-binding · Hands-refusal all explicit; consistent with panel stamps | **PASS** |
+| **P5-P keep-outs re-walk** | MLGraph≠strand · MLTensor≠store/append · dispatch≠Φ · WebNN≠WORD · WebNN≠WebGPU Device/Queue · WebNN≠WGSL · WebNN≠wasm64 · builder≠Core ctor · exportToGPU≠accept GAP — each still explicit and diagram-bound on clipboard P5-P + ascii short mirror | **PASS** |
+| Shadow + NON-binding · KEEP-read-as-host-NN-API | Proposal still stamped Shadow / PROPOSAL / NON-binding; **KEEP-read-as-host-NN-API** intact; FORBID-as-Core-write intact | **PASS** |
+| Steward loop soundness | observe→name→diagram-check→stamp-check→OPEN→decide; decide excludes POINTER-when / Φ fill / Core install / fill-GAP / WebGPU·WGSL·wasm64 conflation | **PASS** |
+| File-order proposal | clipboard→mechanisms→ascii→plans = proposal-only; projection/hologram Shadow consumers; webgpu-*/wgsl-*/wasm64 cited beside only | **PASS** |
+| Mirror fidelity | Ascii short mirror does **not** strengthen claims beyond clipboard P5-P | **PASS** |
+| FORBID-as-Core intact | Proposal does not install into systems-manifest-ascii / Graphic D / AGENTS.md / `src/` | **PASS** |
+
+**P6-P count:** **9 PASS · 0 OPEN** · Order Proposal remains **Shadow / NON-binding**. No wording tighten required.
+
+### P6-X — Deep accuracy matrix (Spec↔M-N*↔P-N*↔overview)
+
+Re-walked; did **not** inherit P4-X / P5-X blindly. Reopen only OPENS/drift — none surfaced as representation conflict. Columns: Cite · Stamp · Implements · Fence · Overview · FM · Verdict.
+
+| P | M | Cite | Stamp | Implements | Fence | Overview | FM | Verdict |
+|---|---|---|---|---|---|---|---|---|
+| P-N1 | M-N1 | §7.2 / §8.2 PDF **28–29** · §8.3 · §8.3.9 · §7.5 | KEEP-read-as-host-NN-API · FORBID-as-Lace-strand · FORBID-as-Core-write · FORBID-as-WebGPU-conflation | M-N1 alg 1–6 depictable | SecureContext→navigator.ml→createContext→MLContext→opSupportLimits; `# NOT Graphic D/Device` | Y | FM-Webnn2 · FM-Webnn6 | **PASS** |
+| P-N2 | M-N2 | §7.1 PDF **21–22** · §8.9 Builder PDF **62** | KEEP-read · FORBID-as-Lace-strand · FORBID-as-Core-write · FORBID-as-Core · D7 | M-N2 alg 1–6 · D7 steps 2–3 | new MLGraphBuilder→input/constant/ops; `# NOT Core ctor` | Y | FM-Webnn1 · FM-Webnn9 | **PASS** |
+| P-N3 | M-N3 | §8.5–8.6 PDF **51–53** · §7.1 · §8.3.2 | KEEP-read · FORBID-as-Lace-store | M-N3 alg 1–6 | MLOperandDescriptor→MLOperand edges→validate; `# NOT Lace store` | Y | FM-Webnn3 | **PASS** |
+| P-N4 | M-N4 | §7.3 PDF **24–25** · §8.9.5+ · §11 | KEEP-read · FORBID-as-Lace-WORD · FORBID-as-Core-write · FORBID-as-WGSL-conflation | M-N4 alg 1–6 | builder.op→operator node→new MLOperand; `# NOT WORD/WGSL` | Y | FM-Webnn5 · FM-Webnn7 | **PASS** |
+| P-N5 | M-N5 | §8.4 MLGraph PDF **50** · §8.9.4 `build` PDF **67–68** | KEEP-read · FORBID-as-Lace-strand · FORBID-as-Core-write · FORBID-as-Core · D7 | M-N5 alg 1–6 · D7 step 4 | build→immutable MLGraph · [[hasBuilt]]; `# NOT lace cord` | Y | FM-Webnn1 · FM-Webnn9 | **PASS** |
+| P-N6 | M-N6 | §8.3.1 `dispatch` PDF **32–33** · §7.4–7.5 | KEEP-read · FORBID-as-emission-rule · SILENT-for-Lace-append · D7 | M-N6 alg 1–6 · D7 step 5 | dispatch→[[timeline]] / no completion signal; `# NOT Phi gate` | Y | FM-Webnn4 | **PASS** |
+| P-N7 | M-N7 | §8.7–8.8 PDF **57–58** · `exportToGPU` PDF **42–43** | KEEP-read · FORBID-as-Lace-store · PROPOSAL-only · FORBID-as-WebGPU-conflation · FORBID accept/fill-GAP | M-N7 alg 1–6 | createTensor→read/write→exportToGPU rental; `# NOT store/Buffer id/accept GAP` | Y | FM-Webnn3 · FM-Webnn6 · FM-Webnn9 | **PASS** |
+| P-N8 | M-N8 | §8.3.9 PDF **46** · §9 · §14 · PAGE H/X | KEEP-read · SILENT-for-Lace-append · FORBID-as-emission-rule | M-N8 alg 1–6 | validation / opSupportLimits; `# SILENT · NOT Lace cut` | Y | PAGE H/X SILENT | **PASS** |
+| P-N9 | M-N9 | §3–5 / §5.3 PDF **15–16** / **19–20** | KEEP-read · FORBID-as-Core-write · FORBID-as-WebGPU-conflation | M-N9 alg 1–6 | SecureContext / Permissions / §5.3 comparison; `# NOT Lace law / WebGPU id / wasm64` | Y | FM-Webnn6 · FM-Webnn8 | **PASS** |
+
+**Special gates (HOST-NN):**
+
+| Gate | Result |
+|---|---|
+| P-N1 · FM-Webnn2 · FM-Webnn6 · KEEP-read-as-host-NN-API | **PASS** — Context ≠ Graphic D / Device identity |
+| P-N2 · FM-Webnn1 · FM-Webnn9 · D7 | **PASS** — builder ≠ Core ctor |
+| P-N3 · FM-Webnn3 | **PASS** — operand/tensor ≠ Lace store |
+| P-N4 · FM-Webnn5 · FM-Webnn7 | **PASS** — operators ≠ WORD / WGSL |
+| P-N5 · FM-Webnn1 · FM-Webnn9 · D7 | **PASS** — MLGraph ≠ strand |
+| P-N6 · FM-Webnn4 · D7 | **PASS** — dispatch ≠ Φ; SILENT; Spec NOTE (no completion signal) held |
+| P-N7 · FM-Webnn3 · FM-Webnn6 · FM-Webnn9 | **PASS** — export ≠ Buffer identity · ≠ accept GAP |
+| P-N8 · SILENT | **PASS** — validation ≠ Lace cut / Φ gate |
+| P-N9 · FM-Webnn6 · FM-Webnn8 | **PASS** — threat ≠ Lace law · ≠ WebGPU · ≠ wasm64 |
+| Overview forbidden exit · FM-Webnn6·7·8 | **PASS** — WebGPU/WGSL/wasm64 / Core/Φ off-board |
+| No POINTER-in-fence · no invent Φ | **PASS** — audited all fences |
+| False-friend fence scan | **PASS** — no Graphic D / 1D strand / POINTER art / WebGPU Device·Queue board / WGSL module board as if WebNN objects |
+
+**P6-X count:** **9 PASS · 0 FIX** (panels) + special gates all **PASS**. FM-Webnn1…9 **held**.
+
+**Book OPENS (non-blocking · representation impact?):**
+
+| OPEN | Affects card+panel representation? | Pass 6 stance |
+|---|---|---|
+| ISSUE 5/7 completion/error signaling during `dispatch()` (Spec silent / open) | No — P-N6 still depicts spine + Spec NOTE correctly | **still OPEN** · non-blocking |
+| which host embed may call this from Lace projection | No — PROPOSAL-only / cite; no panel contradiction | **still OPEN** · non-blocking |
+| Waves B–D deferred | No — out of Wave A board | **still OPEN** · default skip |
+
+**Steward refuse tests 1–12 (plan):** all still refuse via P6-A + P6-P + P6-X alone (MLGraph≠strand · MLContext≠Graphic D · MLTensor≠store · dispatch≠Φ · operators≠WORD · WebNN≠WebGPU/WGSL/wasm64 · builder≠Core ctor · exportToGPU≠accept GAP · validation≠cut · proposal≠Core rewrite).
+
+### P6-F — Fixes
+
+**None.** P6-A / P6-P / P6-X cite **0 FIX**. No ascii/mechanisms/proposal wording edits. Book OPENS left as book-continues `[OPEN]`. Did not soften FORBIDs. Did not invent Wave B. Did not edit webgpu-* / wgsl-* / wasm-spec-3 / Core / clock / hologram.
+
+### P6-O — Canonical SOURCE MACHINERY
+
+Exactly **one** `## SOURCE MACHINERY overview` fence in `webnn-ascii-machinery.md` (grep count=1). P5-O / P4-O **reconfirmed**. Lace Core / Graphic D / Φ / WebGPU Device·Queue / WGSL / wasm64 ISA remain FORBIDDEN off-board. No duplicate demotion needed.
+
+### P6-R — Pass 6 receipt
+
+| Field | Value |
+|---|---|
+| Status | **EXECUTED** |
+| When | 2026-09-18 ~23:01 PT |
+| Station | clipboards · agent `WebNN Pass 6 EXECUTE` |
+| Plan | [`webnn-pass-6-plan.md`](webnn-pass-6-plan.md) → **EXECUTED** |
+| Claim BASE | `60eb30f` (= `origin/main` at claim; plan tip under local ahead) |
+| Hands skim | complete (T1) |
+| PDF | **PRESENT** — SHA-256 `e11532183ed50d11e91c70881c59b805346b6607d41e82e7d52aca520df53fdc`; **353** pp.; gitignored; light re-sight createContext/dispatch/MLGraph/exportToGPU; **never staged** |
+| P6-A | **10 PASS · 0 OPEN** |
+| P6-P | **9 PASS · 0 OPEN** · Order Proposal still Shadow / NON-binding · KEEP-read-as-host-NN-API · keep-outs intact |
+| P6-X | **9 PASS · 0 FIX** · special gates all PASS · FM-Webnn1…9 held |
+| P6-F | **none** |
+| P6-O | overview count=1; Core/Φ/WebGPU/WGSL/wasm64 off-board |
+| **Verdict** | **DIAGRAM SOUND WITH OPENS** |
+| Opens (non-blocking) | dispatch completion signaling / host-embed; Waves B–D deferred |
+| Wave B | **SKIP** (default) — distinctive product = DIAGRAM SOUND audit |
+| FM-Webnn1…Webnn9 | **stand** (pinned; no invent) |
+| Emission | still `[GAP]` — no POINTER when / arity / adjacency; no invented Φ |
+| Amended | reason-model-map · law · graphics · systems-manifest · systems-manifest-ascii · webgpu-* · wgsl-* · wasm-spec-3 · five-stakes · clock · hologram · `src/` · M-N* bodies · PAGE morals | **No** |
+| Touched | clipboard · ascii-machinery (Pass 6 pointer/receipt) · pass-6-plan (EXECUTED) · clipboards.station |
+| PDF staged | **No** |
+| Push | **No** (ask before push) |
+| `src/` | absent |
+
+**Overall verdict: DIAGRAM SOUND WITH OPENS** — SOURCE MACHINERY + P-N1…P-N9 coherent, non-leaking, reverse-walk accurate, stamp-correct, steward-refusable under Hands as **HOST-NN Shadow**. Prior book OPENS remain non-blocking (no representation conflict). Order Proposal still Shadow / NON-binding. Emission `[GAP]`. No Wave B.
+
+**Steward test:** Shoe in hands — refuse install-as-Core, MLGraph=strand, MLContext=Graphic D, MLTensor=store, dispatch=Φ, operators=WORD, WebNN=WebGPU/WGSL/wasm64, builder=Core ctor, exportToGPU=accept GAP, validation=cut, proposal-rewrites-clock/hologram/companions — using P6-A + P6-P + P6-X alone.
