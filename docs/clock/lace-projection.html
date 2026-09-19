@@ -48,7 +48,7 @@ aside[hidden]{display:none}
 </div>
 <div class="hud">
   <header class="hit">
-    <h1>LAYER III · i1p2 · SHADER LATTICE</h1>
+    <h1>LAYER III · i1p3 · GLASS + HEAT</h1>
     <p>Install on githack <code>main</code>, not a SHA. Audit ticks stay SHA-pinned. Cubes are glyphs. No emitter. [GAP]</p>
   </header>
   <div class="modes hit">
@@ -73,7 +73,7 @@ holder  outside this box</aside>
     <button type="button" id="play">pause</button>
     <input id="t" type="range" min="0" max="10" step="0.02" value="0"/>
     <span id="phase">t=0000</span>
-    <span class="stamp">i1p2</span>
+    <span class="stamp">i1p3</span>
     <span class="stamp" id="nnstamp">WebNN ?</span>
     <span class="stamp" id="pwastamp">PWA ?</span>
     <span class="stamp">glyphs ≠ schema</span>
@@ -182,6 +182,8 @@ struct VSOut { @builtin(position) p: vec4<f32>, @location(0) wpos: vec3<f32>, @l
     let hot = fract(sin(dot(floor(i.wpos.xz * 0.85), vec2<f32>(12.1, 7.3))) * 43758.5);
     var rgb = vec3<f32>(0.02, 0.05, 0.08) + vec3<f32>(0.05, 0.35, 0.55) * line;
     rgb += vec3<f32>(0.55, 0.12, 0.04) * step(0.92, hot) * 0.45;
+    let d = length(i.wpos.xz - u.t.yz);
+    rgb += vec3<f32>(0.2, 0.7, 1.0) * (1.0 - smoothstep(0.2, 1.6, d)) * 0.55;
     return vec4<f32>(rgb, 1.0);
   }
   let appear = smoothstep(i.born - 0.15, i.born + 0.05, u.t.x);
@@ -189,23 +191,25 @@ struct VSOut { @builtin(position) p: vec4<f32>, @location(0) wpos: vec3<f32>, @l
   let L = normalize(vec3<f32>(0.25, 1.0, 0.35));
   let N = normalize(i.nrm);
   let V = normalize(u.eye.xyz - i.wpos);
-  let fres = pow(1.0 - max(dot(N, V), 0.0), 2.4);
+  let fres = pow(1.0 - max(dot(N, V), 0.0), 3.2);
   let diff = max(dot(N, L), 0.08);
-  let spec = pow(max(dot(reflect(-L, N), V), 0.0), 48.0);
+  let spec = pow(max(dot(reflect(-L, N), V), 0.0), 64.0);
   let hash = fract(sin(dot(i.wpos.xz, vec2<f32>(12.99, 78.23))) * 43758.5);
-  var rgb = i.col * (0.45 + 0.75 * diff);
-  rgb += i.col * fres * 0.85;
-  rgb += vec3<f32>(spec) * 0.65;
+  var rgb = i.col * (0.28 + 0.55 * diff);
+  rgb += i.col * fres * 1.15;
+  rgb += vec3<f32>(spec) * 0.85;
   if (i.col.g > 0.7 && i.col.r < 0.4) {
-    rgb += vec3<f32>(0.05, 0.35, 0.12) * hash;
-    rgb *= 0.75 + 0.55 * hash;
+    let w = sin(i.wpos.x * 9.0 + i.wpos.y * 11.0 + u.t.x) * 0.5 + 0.5;
+    rgb += vec3<f32>(0.02, 0.45, 0.14) * (hash + w);
+    rgb *= 0.55 + 0.7 * w;
   }
   if (i.col.r > 0.7) {
-    rgb += vec3<f32>(0.35, 0.08, 0.0) * (0.4 + 0.6 * hash);
+    rgb += vec3<f32>(0.55, 0.12, 0.02) * (0.5 + 0.5 * hash);
   }
   let fog = clamp(length(i.wpos - u.eye.xyz) / 22.0, 0.0, 1.0);
   rgb = mix(rgb, vec3<f32>(0.02, 0.04, 0.06), fog * 0.55);
-  let alpha = mix(0.7, 0.98, fres) * appear;
+  let alpha = mix(0.35, 0.95, fres) * appear;
+  if (i.col.r > 0.7) { alpha = max(alpha, 0.88); }
   return vec4<f32>(rgb * appear, alpha);
 }
 `;
@@ -370,7 +374,7 @@ async function main(){
     const vp=matMul(persp(0.85,asp,0.1,80), lookAt(eye, frame.look,[0,1,0]));
     const ub=new Float32Array(64);
     ub.set(vp,0); ub[16]=eye[0];ub[17]=eye[1];ub[18]=eye[2];ub[19]=1;
-    ub[20]=tVal;
+    ub[20]=tVal; ub[21]=frame.look[0]; ub[22]=frame.look[2];
     device.queue.writeBuffer(uni,0,ub);
     const enc=device.createCommandEncoder();
     const pass=enc.beginRenderPass({
