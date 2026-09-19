@@ -1,7 +1,7 @@
-STATUS: HELD
+STATUS: FREE
 STATION: gearing-meta
 OWNS: docs/gearing/*.md docs/gearing/*.sh docs/gearing/RESYNC.md (not contracts-*.js)
-AGENT: Grok-gearing
-BASE: f741aabf08ee26ff5c3b3d08c6bcacd5a550760a
-SINCE: 2026-09-19T14:34:11Z
-NOTE: Quiet door #8 pass 6 EXECUTED. CLOSED 6/6. Receipt pending pin. Door #7 CLOSED. Φ [GAP].
+AGENT: -
+BASE: -
+SINCE: -
+NOTE: Quiet door #8 CLOSED 6/6. Gearing-meta FREE. Scripts not owned here. Renderer unclaimed. Shafts FREE. Door #7 CLOSED. Φ [GAP].
