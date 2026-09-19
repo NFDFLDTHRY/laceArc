@@ -1,11 +1,12 @@
 # CLIPBOARD — laceArc ← WebAssembly Spec 3.0 (compile target)
 
 **[III] Shadow / read-only projection. Hands win. POINTER emission = `[GAP]`.**  
-**SPECIAL:** This is **compilation-target** admission — Lace Rust `#![no_std]` → `wasm32-unknown-unknown`. **NOT** Core. **NOT** Graphic D. **NOT** an anti-model shelf clipboard.
+**SPECIAL:** This is **compilation-target** admission — Lace Rust `#![no_std]` → `wasm64-unknown-unknown`. **NOT** Core. **NOT** Graphic D. **NOT** an anti-model shelf clipboard.
 
 ```
 +======================================================================+
-|  COMPILATION TARGET — Lace Rust #![no_std]  -->  wasm32-unknown-unknown |
+|  COMPILATION TARGET — Lace Rust #![no_std]  -->  wasm64-unknown-unknown |
+|  Sealed by human correction: wasm64.  wasm32 is NOT the shelf target.  |
 |  Shadow docs only this pass.  NOT Lace Core.  NOT Graphic D.           |
 |  WASM ops = TARGET semantics.  Do NOT invent POINTER emission / Phi.   |
 |  Do NOT import WASM store/memory/table/stack as Lace's 1D strand.      |
@@ -185,8 +186,8 @@
 | Field | Content |
 |---|---|
 | Stamps | **SILENT-for-Lace-append**; Φ **`[GAP]`**; all FORBIDs above retained |
-| False friends | WASM store ↔ Lace store · linear memory ↔ strand · table ↔ star index · operand stack ↔ append discipline · `br`/`return` ↔ POINTER when · host import ↔ emission acceptance · validating/compiling to wasm32 ↔ accepting `pointer-emission.md` |
-| Steward refuse (must reject) | (1) “WASM linear memory is the Lace strand” → **FORBID-as-Lace-store** · (2) “`br`/`return` emits POINTER” → **FORBID-as-emission-rule** · (3) “Import host fn fills emission `[GAP]`” → **FORBID** / **PROPOSAL-only**, GAP remains · (4) WASM store/table/stack as second Lace store / Graphic D → **FORBID** · (5) “Compiling to wasm32 accepts pointer-emission.md” → **FORBID** |
+| False friends | WASM store ↔ Lace store · linear memory ↔ strand · table ↔ star index · operand stack ↔ append discipline · `br`/`return` ↔ POINTER when · host import ↔ emission acceptance · validating/compiling to wasm64 ↔ accepting `pointer-emission.md` |
+| Steward refuse (must reject) | (1) “WASM linear memory is the Lace strand” → **FORBID-as-Lace-store** · (2) “`br`/`return` emits POINTER” → **FORBID-as-emission-rule** · (3) “Import host fn fills emission `[GAP]`” → **FORBID** / **PROPOSAL-only**, GAP remains · (4) WASM store/table/stack as second Lace store / Graphic D → **FORBID** · (5) “Compiling to wasm64 accepts pointer-emission.md” → **FORBID** |
 | Moral | Shoe in hands, or no. WASM is the machine we may compile toward, not the lace. Traps are not append rules. Host imports do not accept Φ. |
 
 ---
@@ -203,7 +204,7 @@ Pass 1 filled PAGE A–H, X and ASCII overview + P-T1…P-T9 against the PDF. Th
 ### D1 — What this clipboard / shelf is not
 
 - Not Core / not a sixth graphic / not systems-manifest-ascii.
-- Not `docs/pointer-emission.md` / not a Φ fill / not acceptance of emission by compiling to wasm32.
+- Not `docs/pointer-emission.md` / not a Φ fill / not acceptance of emission by compiling to wasm64.
 - Not Lace’s 1D strand, star index, or Graphic D scheduler.
 - Not permission to treat WASM **store / linear memory / table / stack / frames** as Lace store.
 - Not permission to treat **`br` / `return` / call / trap** as POINTER when / arity / adjacency or Lace cut.
@@ -230,7 +231,7 @@ Compact spine on this clipboard (not five-stakes). Matches Pass 1 morals.
 **MAP arrows (coherence with rust-nostd — all exits FORBIDDEN into Core write):**
 
 ```
-P-T1/B ──read-as-target──► future wasm32 surface   ──[X]──► strand/ · core/ doors
+P-T1/B ──read-as-target──► future wasm64 surface   ──[X]──► strand/ · core/ doors
 P-T2/C ──read-as-target──► valtypes                 ──[X]──► word/ · pointer/ kinds
 P-T3/D ──read-as-target──► validate                 ──[X]──► admit POINTER / Φ
 P-T4/E ──read-as-target──► store/mem/table/stack    ──[X]──► Lace 1D strand / Graphic D
@@ -260,7 +261,7 @@ No FM row left `[OPEN]`. Pins reused/verified from Pass 1; `pdftotext -f N -l N 
 
 ### D4 — Interface coherence (Hands + rust-nostd + ASCII)
 
-**Only** KEEP-read-as-target outputs may sit **beside** Lace: Spec 3.0 as the ISA a future `#![no_std]` build may compile toward (`wasm32-unknown-unknown`). **Nothing** in A–H/X or P-T1…P-T9 writes Graphic D, strand/, word/, pointer/, or fills `pointer-emission.md`. rust-nostd **crate-map** = planned first-party doors; **branch-contracts** = serial birth cards — both remain proposals; WASM is **target surface**, not a door and not a birth event. ASCII P-T* stand as Wave A machinery; Pass 2 cites them for MAP/FM pins — **read-only** (T7 skip; stamps stand). Host embed (P-T8 / PAGE H) stays **PROPOSAL-only**; compiling or instantiating does **not** accept emission. `[GAP]` remains. Shoe in hands, or no.
+**Only** KEEP-read-as-target outputs may sit **beside** Lace: Spec 3.0 as the ISA a future `#![no_std]` build may compile toward (`wasm64-unknown-unknown`). **Nothing** in A–H/X or P-T1…P-T9 writes Graphic D, strand/, word/, pointer/, or fills `pointer-emission.md`. rust-nostd **crate-map** = planned first-party doors; **branch-contracts** = serial birth cards — both remain proposals; WASM is **target surface**, not a door and not a birth event. ASCII P-T* stand as Wave A machinery; Pass 2 cites them for MAP/FM pins — **read-only** (T7 skip; stamps stand). Host embed (P-T8 / PAGE H) stays **PROPOSAL-only**; compiling or instantiating does **not** accept emission. `[GAP]` remains. Shoe in hands, or no.
 
 ### D5 — Source gate (cite Pass 1)
 
@@ -273,7 +274,7 @@ PDF is **PRESENT** (do not narrate absent). Pass 1 receipt: `refs/local/webassem
 - Promote WASM store / linear mem / table / stack / frames as Lace store
 - Use `br` / `return` / call / trap as emission or Lace cut
 - Treat validate as admit-POINTER · treat instantiate as Core birth · treat wat as sole authority
-- Fill `[GAP]` via host import / compile-to-wasm32 story
+- Fill `[GAP]` via host import / compile-to-wasm64 story
 - Amend rust-nostd maps / law / graphics / systems-manifest / five-stakes
 - Wave B mechanisms rewrite · Order Proposal (Pass 5 shape if wanted; Pass 4 fidelity landed)
 - Add `src/` / Cargo.toml / crates.io deps
@@ -304,7 +305,7 @@ Pass 2 leftovers stand. Pass 3 cardifies Spec 3.0 **constructive target procedur
 
 | Mechanism (M-T*) | Panel (P-T*) | Clipboard PAGE | FM-W* | rust-nostd (read-only) | Emission | KEEP/FORBID tooth | Same story? |
 |---|---|---|---|---|---|---|---|
-| **M-T1** Module anatomy | P-T1 | B | FM-W9 | wasm32 surface ≠ strand/ · core/ door | `[GAP]` | KEEP-read-as-target · **FORBID-as-Lace-store** · **FORBID-as-Core** | YES |
+| **M-T1** Module anatomy | P-T1 | B | FM-W9 | wasm64 surface ≠ strand/ · core/ door | `[GAP]` | KEEP-read-as-target · **FORBID-as-Lace-store** · **FORBID-as-Core** | YES |
 | **M-T2** Types/values | P-T2 | C | — (MAP forbid) | ≠ word/ · pointer/ kinds | `[GAP]` | KEEP-read-as-target · **FORBID-as-Core-write** | YES |
 | **M-T3** Validation | P-T3 | D | **FM-W5** | validate ≠ admit POINTER | `[GAP]` | KEEP-read-as-target · **FORBID-as-emission-rule** · **SILENT** | YES |
 | **M-T4** Runtime structures | P-T4 | E | **FM-W1…W3** · W9 | store/mem/table/stack ≠ strand / Graphic D | `[GAP]` | KEEP-read-as-target · **FORBID-as-Lace-store** | YES |
@@ -519,7 +520,7 @@ Exactly **one** `## SOURCE MACHINERY overview` fence in `wasm-spec-3-ascii-machi
 
 **Stamps:** **KEEP-read** · **FORBID-as-Core-write** · **FORBID-as-Lace-store** · **FORBID-as-emission-rule** · **FORBID-as-Core** · **FORBID fill-GAP** · **SILENT-for-Lace-append** · **PROPOSAL** · **NON-binding**
 
-1. **This is a proposal, not Core.** It does not amend AGENTS.md, `systems-manifest-ascii.md`, Graphic D, reason-model-map, law, or rust-nostd crate-map / branch-contracts. Hands may refuse without breach of Core. It is Shadow / Layer III **compile-target shelf hygiene** only — how this WASM Spec 3.0 shelf + rust-nostd mesh stay ordered when compiling toward `wasm32-unknown-unknown`. **NON-binding** on Core / `src/` / Φ / systems-manifest-ascii / graphics.
+1. **This is a proposal, not Core.** It does not amend AGENTS.md, `systems-manifest-ascii.md`, Graphic D, reason-model-map, law, or rust-nostd crate-map / branch-contracts. Hands may refuse without breach of Core. It is Shadow / Layer III **compile-target shelf hygiene** only — how this WASM Spec 3.0 shelf + rust-nostd mesh stay ordered when compiling toward `wasm64-unknown-unknown`. **NON-binding** on Core / `src/` / Φ / systems-manifest-ascii / graphics.
 
 2. **Stage → hygiene table** (Pass 4/5 SOURCE MACHINERY read as steward order):
 
@@ -545,7 +546,7 @@ Exactly **one** `## SOURCE MACHINERY overview` fence in `wasm-spec-3-ascii-machi
    - mem = strand · table = star · stack/frames = append / Graphic D
    - `br` / `return` / call = Φ / POINTER when
    - validate = admit POINTER
-   - host import / compile-to-wasm32 / instantiate = fill `[GAP]` / Core birth / `src/` gate
+   - host import / compile-to-wasm64 / instantiate = fill `[GAP]` / Core birth / `src/` gate
    - trap = Lace cut
    - promote this ascii Order Proposal into Core / AGENTS.md / systems-manifest-ascii / Graphic D
    - treat rust-nostd doors as accepted emission or as WASM birth events
@@ -582,3 +583,137 @@ Mirror (short): under SOURCE MACHINERY overview in [`wasm-spec-3-ascii-machinery
 | Push | **not** performed |
 
 **Steward test:** Shoe in hands — refuse “install this ASCII board as Graphic D / Core / systems-manifest-ascii” using P5-P + P5-X alone. WASM remains TARGET. Linear mem / table / stack still not the strand. `br` / validate / trap still not Φ / admit / cut. Host / instantiate still do not fill `[GAP]` or birth Core. rust-nostd doors stay proposals. Decisive judgment is release/stop — not Φ. Emission stays `[GAP]`.
+
+---
+
+## Pass 6 — Rigorous analysis & ASCII systems-diagram correctness (wasm64 seal)
+
+**Plan:** [`wasm-spec-3-pass-6-plan.md`](wasm-spec-3-pass-6-plan.md) · **Status:** **EXECUTED** · 2026-09-18 ~20:40 PT · agent `reference-Mapper`  
+**Sealed compile target:** Lace `#![no_std]` → **`wasm64-unknown-unknown`** (human correction; wasm32 is NOT the shelf target).  
+**Law:** WASM = TARGET only · Order Proposal still Shadow / NON-binding · FORBID-as-Core intact · Φ = `[GAP]` · no `src/`.
+
+### Hands + target-mesh skim (T1)
+
+shoe → graphics A–D → systems-manifest → staking / law-why → AGENTS Implementation Law → rust-nostd crate-map + branch-contracts (PROPOSAL only) → pointer-emission DRAFT/`[GAP]` → clock/wasm README (Shadow bake; libcore wasm32 note = toolchain fact, **not** shelf Spec authority) → Pass 1–5 clipboard (P5-X **18 PASS** · P5-P · P4-R SOUND WITH OPENS) → ascii overview+P-T* → mechanisms M-T* → Pass 6 plan (wasm64 seal).
+
+### PDF gate (T2)
+
+`refs/local/webassembly-spec-3.0.pdf` · SHA-256 `687e7364…e7f70fce` · gitignored · **never staged**. Re-sighted: §4.2.8–4.2.9 tables/mems PDF **90** (=p.86); §4.2.2 results PDF **88**; §4.6.2 control PDF **127–129**; §7.1 Embedding PDF **245**; §2.3.11 Address Types `addrtype ::= i32 | i64` (PDF ~15 / printed ~11).
+
+### P6-A — Systems-diagram structure checklist
+
+| # | Item | Evidence | Verdict |
+|---|---|---|---|
+| 1 | Spine completeness | overview fence: INPUT → decode P-T6/7 → module P-T1/2 → validate P-T3 → instantiate+store P-T4 + host P-T8 → reduce P-T5 → trap P-T9 → FORBIDDEN Core/Φ | **PASS** |
+| 2 | No orphan nodes | every overview box cites ≥1 P-T* (INPUT / FORBIDDEN exit marked) | **PASS** |
+| 3 | Wave A coverage | M-T1…T9 / P-T1…T9 on overview; P-T4+P-T8 share instantiate+store node | **PASS** |
+| 4 | Off-board integrity | Lace Core / Graphic D / Φ only as FORBIDDEN exits; Phi=[GAP] under fence | **PASS** |
+| 5 | Glyph discipline | no WORD/POINTER / Graphic-D art inside overview or P-T* fences (POINTER only in prose/stamps/false-friends) | **PASS** |
+| 6 | Stamp under-fence | overview + P-T1…P-T9 stamps under fences (not fence glyphs) | **PASS** |
+| 7 | Singularity | exactly one `## SOURCE MACHINERY overview` (count=1; P5-O/P4-O stand) | **PASS** |
+| 8 | Panel coverage | P-T1…P-T9 each: Spec cite · Lace stamp · fence · under-fence stamp; Implements via M-T* reverse-walk | **PASS** |
+| 9 | Target-banner coherence | ascii / clipboard / mechanisms COMPILATION TARGET banners say **`wasm64-unknown-unknown`** after P6-F | **PASS** |
+
+**P6-A count:** **9 PASS · 0 OPEN**
+
+### P6-P — Order Proposal rigor (still Shadow / NON-binding)
+
+| Check | Result | Verdict |
+|---|---|---|
+| Claim–diagram bind | Stage→hygiene rows point at real overview nodes / P-T* | **PASS** |
+| Overclaim | No Core write / AGENTS amend / Φ schedule / `src/` birth / accepted rust-nostd emission | **PASS** |
+| FORBID completeness | FORBID-as-Core-write · Lace-store · emission-rule · Core · fill-GAP · SILENT · PROPOSAL · NON-binding · Hands-refusal all explicit | **PASS** |
+| Steward loop | observe→name→diagram-check→stamp-check→OPEN→decide; decide excludes POINTER-when / Φ fill / Core install / fill-GAP | **PASS** |
+| File-order proposal | clipboard→mechanisms→ascii→plans = proposal-only; rust-nostd beside | **PASS** |
+| Mirror fidelity | ascii short mirror ≤ clipboard P5-P strength (no strengthen) | **PASS** |
+| FORBID-as-Core intact | proposal does not install into systems-manifest-ascii / Graphic D / AGENTS / `src/` | **PASS** |
+| Target seal in proposal | P5-P + mirror retargeted to **`wasm64-unknown-unknown`** (P6-F); compile-to-wasm64 refuse lines | **PASS** (after P6-F) |
+
+**P6-P count:** **8 PASS · 0 OPEN** · Order Proposal remains **Shadow / NON-binding**.
+
+### P6-X — Deep accuracy matrix (Spec↔M-T*↔P-T*↔overview)
+
+Re-walked; did **not** inherit P4-X/P5-X blindly. Columns: Cite · Stamp · Implements · Fence · Overview · FM · special gates.
+
+| P | M | Cite | Stamp | Implements | Fence | Overview | FM | Verdict |
+|---|---|---|---|---|---|---|---|---|
+| P-T1 | M-T1 | Ch.2.5 / §5.5 PDF 27/205 | KEEP · FORBID-store · FORBID-Core | steps 1–5 depictable on fence | module sections / binary preamble | abstract module | FM-W9 | **PASS** |
+| P-T2 | M-T2 | §2.3 / §4.2.1 PDF 13–16/87 | KEEP · FORBID-Core-write | num/vec/ref recorded | valtype tree incl. **i64** | abstract module | MAP forbid | **PASS** (i64 in valtype ≠ Lace index / strand address) |
+| P-T3 | M-T3 | Ch.3 / App 7.6 PDF 33/274 | KEEP · FORBID-emission · SILENT | declarative + matching | validate yes/no | validate | FM-W5 | **PASS** |
+| P-T4 | M-T4 | §4.2 PDF 87–94; tables/mems **90** (=p.86) | KEEP · **FORBID-as-Lace-store** | store/mem/table/stack/frames | meminst/tableinst/stack/config | instantiate+store | FM-W1…W3·W9 | **PASS** + **wasm64/memory64 note** (addrtype i32\|i64; width≠identity) |
+| P-T5 | M-T5 | §4.6.2 PDF 127–129 | KEEP · **FORBID-as-emission-rule** | reduce / control / br / return | config reduce · control | reduce | FM-W4 | **PASS** (br/return ≠ Φ) |
+| P-T6 | M-T6 | Ch.5 PDF 183/205 | KEEP · FORBID-Core · SILENT | magic→sections→module | decode pipeline | decode | FM-W9 related | **PASS** |
+| P-T7 | M-T7 | Ch.6 PDF 211 | KEEP · non-authority twin | wat↔module twin | wat/wasm twin | decode/parse | FM-W6 | **PASS** |
+| P-T8 | M-T8 | §7.1 PDF **245** | KEEP · PROPOSAL · **FORBID fill-GAP** | embed interface | HOST↔instance | instantiate+store (shared) | FM-W7 | **PASS** (host ≠ fill GAP; compile-to-**wasm64** ≠ accept emission) |
+| P-T9 | M-T9 | §4.2.2 PDF **88**; trap 94/127 | KEEP · FORBID-emission · SILENT | results/trap/diverge | trap paths · Rule Zero OFF | trap/diverge | FM-W8 | **PASS** (trap ≠ Lace cut) |
+
+**Special gates scored:**
+
+| Gate | Result |
+|---|---|
+| P-T4 mem≠strand · table≠star · stack≠append | **PASS** (FORBID-as-Lace-store; FM-W1…W3) |
+| P-T4 wasm64 / memory64 / addrtype | **PASS** — Spec §2.3.11 `addrtype ::= i32 \| i64`; caption+M-T4 TARGET note; **FORBID** mem=strand under any width |
+| P-T2 i64 in numtype | **PASS** — not collapsed into Lace index / strand address |
+| P-T5 control ≠ Φ | **PASS** |
+| P-T8 host ≠ fill GAP · compile-to-wasm64 ≠ accept emission | **PASS** |
+| P-T9 trap ≠ Lace cut | **PASS** |
+| P-T1 wasm64 surface ≠ strand/core door | **PASS** (after P6-F MAP/mesh seal) |
+| False-friend fence scan | **PASS** — no Graphic D / 1D strand / POINTER art in fences |
+
+**P6-X count:** **9 PASS · 0 FIX** (representation notes added under P6-F; not algorithm rewrites).
+
+**Steward refuse tests 1–12:** all still refuse via P6-A + P6-P + P6-X stamps (incl. target-seal #11 and width≠identity #12).
+
+### P6-F — Cited fixes (incl. Target seal inventory)
+
+| # | Locus | Fix |
+|---|---|---|
+| F1 | ascii COMPILATION TARGET banner | wasm32 → **wasm64-unknown-unknown** + seal line |
+| F2 | ascii overview fence caption | `--> wasm64-unknown-unknown` |
+| F3 | ascii Order Proposal short mirror | “aims at wasm64” |
+| F4 | clipboard SPECIAL + COMPILATION TARGET banner | wasm64 + seal line |
+| F5 | clipboard false-friends / steward-refuse | Compiling to **wasm64**… |
+| F6 | clipboard MAP arrow | future **wasm64** surface |
+| F7 | clipboard ON-THE-SHOE / keep-beside | compile toward `wasm64-unknown-unknown` |
+| F8 | clipboard fill-GAP / refuse | compile-to-**wasm64** |
+| F9 | clipboard M-T1 mesh row | wasm**64** surface ≠ … |
+| F10 | clipboard P5-P Order Proposal | compiling toward `wasm64-unknown-unknown`; compile-to-wasm64 refuse |
+| F11 | mechanisms COMPILATION TARGET banner | wasm64 + seal line |
+| F12 | mechanisms FORBID fill-GAP stamp | compile-to-**wasm64** |
+| F13 | mechanisms M-T1 rust-nostd cite | wasm**64** surface ≠ … |
+| F14 | mechanisms M-T8 open-gaps | compile-to-**wasm64** story |
+| F15 | ascii P-T4 caption + fence | TARGET note: addrtype i32\|i64 / memory64; width≠identity |
+| F16 | mechanisms M-T4 | TARGET note row + fence addrtype comment |
+
+**FIX count:** **16** (14 banner/MAP/refuse seal + 2 representation notes).  
+**Not done (by plan):** mass-rewrite Pass 1–5 plan bodies (historical drift only); Spec M-T*/P-T* algorithm invent; clock/wasm README (Shadow bake; OPEN non-blocking toolchain note that libcore wasm32 may still appear as bake fact — not shelf Spec authority).
+
+### P6-R — Pass 6 receipt
+
+| Field | Value |
+|---|---|
+| Status | **EXECUTED** |
+| When | 2026-09-18 ~20:40 PT |
+| Station | clipboards · agent `reference-Mapper` |
+| Plan | [`wasm-spec-3-pass-6-plan.md`](wasm-spec-3-pass-6-plan.md) → **EXECUTED** |
+| Base | tip at claim after plan rebuild `686d771` / plan tip `3cfe96a`; origin/main ff-only clean |
+| Hands skim | complete (T1) |
+| PDF | **PRESENT** gitignored; SHA `687e7364…e7f70fce`; re-sight special gates; **never staged** |
+| P6-A | **9 PASS · 0 OPEN** (incl. target-banner coherence wasm64) |
+| P6-P | **8 PASS** · Order Proposal still Shadow / NON-binding · wasm64 sealed in proposal prose |
+| P6-X | **9 PASS · 0 FIX** (algorithm); special gates P-T4/5/8/9 + memory64/addrtype **PASS** |
+| P6-F | **16 FIX** (wasm64 seal inventory + addrtype notes) |
+| Verdict | **DIAGRAM SOUND WITH OPENS** |
+| Opens (non-blocking) | D7 book-continues; Waves B–D deferred; Pass 1–5 plan banners may still say wasm32 historically (not mass-edited); clock/wasm README may mention wasm32 libcore as Shadow bake fact ≠ shelf target |
+| Overview | singular (count=1); Core/Φ off-board |
+| Target seal | ascii / clipboard / mechanisms COMPILATION TARGET banners = **`wasm64-unknown-unknown`** |
+| Wave B | **SKIP** |
+| Emission | still `[GAP]` |
+| `src/` / Cargo | absent · untouched |
+| rust-nostd / law / graphics / systems-manifest / five-stakes / Core ASCII | **untouched** |
+| Touched | clipboard · ascii-machinery · mechanisms · pass-6-plan (EXECUTED) · station |
+| Push | **not** performed |
+
+**Overall verdict: DIAGRAM SOUND WITH OPENS** — systems diagram coherent, non-leaking, reverse-walk accurate, stamp-correct, steward-refusable under Hands, and **bannered to sealed wasm64**. Prior Pass 4 OPENS remain non-blocking. Order Proposal still Shadow. Emission `[GAP]`.
+
+**Steward test:** Shoe in hands — refuse install-as-Core, mem=strand (incl. under i64/memory64), table=star, stack=append, br=Φ, validate=admit POINTER, host/compile-to-wasm64=fill GAP, trap=cut, instantiate=Core birth, proposal-rewrites-rust-nostd, retarget-to-wasm32 — using P6-A + P6-P + P6-X alone.

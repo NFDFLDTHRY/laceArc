@@ -9,7 +9,8 @@
 
 ```
 +======================================================================+
-|  COMPILATION TARGET — Lace Rust #![no_std]  -->  wasm32-unknown-unknown |
+|  COMPILATION TARGET — Lace Rust #![no_std]  -->  wasm64-unknown-unknown |
+|  Sealed by human correction: wasm64.  wasm32 is NOT the shelf target.  |
 |  Pass 3 = Wave A system mechanisms (M-T1…M-T9) + P3-M mesh.            |
 |  NOT Xiao–Zhu / Petersen / AgentScope morals (those are anti-model).   |
 |  NOT Lace Core.  NOT Graphic D.  NOT pointer-emission fill.            |
@@ -37,7 +38,7 @@ This file is **Shadow / Layer III documentation of Spec 3.0 target procedures**,
 | **SILENT-for-Lace-append** | Spec procedure is silent for Lace append; do not smuggle as scheduler |
 | **PROPOSAL-only** | Lace↔WASM bridge / host sketches are proposals only; not accepted law |
 | **FORBID-as-Core** | Must not promote WASM module/instance/decode into Lace Core doors / `src/` birth |
-| **FORBID fill-GAP** | Must not treat host import / embed / compile-to-wasm32 as filling emission `[GAP]` |
+| **FORBID fill-GAP** | Must not treat host import / embed / compile-to-wasm64 as filling emission `[GAP]` |
 
 ---
 
@@ -61,7 +62,7 @@ This file is **Shadow / Layer III documentation of Spec 3.0 target procedures**,
 | Hands cite | AGENTS Implementation Law (no `src/` until emission); systems-manifest (one store); PAGE B |
 | Panel cite | **P-T1** · PAGE **B** |
 | False friend | **FM-W9** (instantiate / module→instance ↛ Core birth); FM-T1 module ⇒ Lace crate |
-| rust-nostd cite | crate-map wasm32 **surface ≠** strand/ · core/ **door**; branch-contracts birth cards stand separate |
+| rust-nostd cite | crate-map wasm64 **surface ≠** strand/ · core/ **door**; branch-contracts birth cards stand separate |
 | Open gaps | Φ / emission `[GAP]`; no Core birth from module shape |
 
 **Algorithm**
@@ -187,6 +188,7 @@ C ⊢ instr* : [t1*] →x* [t2*]   →  valid? → may instantiate
 | False friend | **FM-W1…W3** · **FM-W9** |
 | rust-nostd cite | store/mem/table/stack ≠ strand/ / Graphic D; target surface ≠ door |
 | Open gaps | Φ / emission `[GAP]` |
+| TARGET note (wasm64) | Spec §2.3.11 `addrtype ::= i32 \| i64`; memtype/tabletype carry addrtype (memory64 / i64 addresses in-scope for sealed `wasm64-unknown-unknown`). **Width ≠ identity** — FORBID-as-Lace-store still for any addr width. |
 
 **Algorithm**
 
@@ -204,9 +206,9 @@ C ⊢ instr* : [t1*] →x* [t2*]   →  valid? → may instantiate
 
 ```text
 store { mems[], tables[], funcs[], … }
-meminst = {type, bytes[]}   # NOT Lace strand
+meminst = {type, bytes[]}   # NOT Lace strand (addrtype i32|i64)
 tableinst = {type, refs[]}  # NOT Lace star
-# FORBID-as-Lace-store · FM-W1…W3 · FM-W9
+# FORBID-as-Lace-store · FM-W1…W3 · FM-W9 · width≠identity
 ```
 
 **Steward refusal:** shoe in hands — refuse “WASM linear memory is the Lace strand” / “table is the star” / “stack is append” using this card + P3-M.
@@ -358,7 +360,7 @@ bytes → magic+version → section*(id|size|contents) → abstract module
 | Panel cite | **P-T8** · PAGE **H** |
 | False friend | **FM-W7** |
 | rust-nostd cite | host embed PROPOSAL-only; ≠ emission accept; ≠ door birth |
-| Open gaps | **`[GAP]`** remains — FORBID fill via host import / compile-to-wasm32 story |
+| Open gaps | **`[GAP]`** remains — FORBID fill via host import / compile-to-wasm64 story |
 
 **Algorithm**
 

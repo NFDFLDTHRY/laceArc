@@ -1,7 +1,7 @@
 # WebAssembly Spec 3.0 — Pass 6 PLAN (rigorous analysis & ASCII systems-diagram correctness)
 
-**Status:** **HELD / NOT EXECUTED** · plan rebuild 2026-09-18 ~20:35 PT · agent `reference-Mapper`  
-**Station:** clipboards (HELD `reference-Mapper` · claim for wasm-spec-3 Pass 6 plan rebuild)  
+**Status:** **EXECUTED** · 2026-09-18 ~20:40 PT · agent `reference-Mapper`  
+**Station:** clipboards (HELD `reference-Mapper` · Pass 6 execute wasm64 seal)  
 **Base at rebuild:** `7e87833` (== `origin/main` after rebase of prior Pass 6 plan tip) · refresh to current `origin/main` before execute  
 **Spec:** WebAssembly Specification **Release 3.0** (2026-09-11) · editor Andreas Rossberg / W3C CG  
 **Under test:** `docs/clipboards/wasm-spec-3-ascii-machinery.md` — SOURCE MACHINERY + **P-T1…P-T9** + Pass 5 Order Proposal short mirror  
@@ -48,7 +48,7 @@ pull/ff → claim → Hands + target-mesh skim
 |  Order Proposal stays Shadow / NON-binding; FORBID-as-Core intact.     |
 |  WASM ops = TARGET semantics.  Do NOT invent POINTER emission / Phi.   |
 |  Zero crates.io / foreign deps.  No src/ until pointer-emission accepted.|
-|  Status: HELD / NOT EXECUTED — plan only.                              |
+|  Status: EXECUTED — P6-A/P/X/F/R delivered; wasm64 sealed.             |
 +======================================================================+
 ```
 
@@ -350,8 +350,8 @@ Emission stays `[GAP]`.
 | rust-nostd | crate-map + branch-contracts present · proposals · emission `[GAP]` |
 | pointer-emission.md | DRAFT / `[GAP]` |
 | PDF | PRESENT · gitignored · never staged |
-| Execute | **NOT performed** |
-| P6-A/P/X/F/R bodies | **not written** (plan only) |
+| Execute | **PERFORMED** (this receipt) |
+| P6-A/P/X/F/R bodies | **written** on clipboard |
 | Push | **NOT performed** |
 | Emission | `[GAP]` |
 | `src/` | absent |
@@ -366,3 +366,25 @@ Emission stays `[GAP]`.
 | `docs/coord/stations/clipboards.station` (claim/release as protocol) | PDF · `src/` · rust-nostd · law · graphics · systems-manifest · five-stakes |
 
 After plan commit: **release** clipboards station. Ahead of origin by rebuild commit(s). Do not push. Do not execute P6-A/P/X/F/R now.
+
+---
+
+## Execute receipt (Pass 6)
+
+| Field | Value |
+|---|---|
+| Status | **EXECUTED** |
+| When | 2026-09-18 ~20:40 PT |
+| Agent | `reference-Mapper` |
+| Verdict | **DIAGRAM SOUND WITH OPENS** |
+| P6-A | 9 PASS · 0 OPEN |
+| P6-P | 8 PASS · Shadow / NON-binding · wasm64 in proposal |
+| P6-X | 9 PASS · special gates P-T4/5/8/9 + memory64/addrtype PASS |
+| P6-F | **16 FIX** (14 wasm64 seal + 2 addrtype notes) |
+| Target seal | ascii / clipboard / mechanisms banners = **`wasm64-unknown-unknown`** |
+| Opens (non-blocking) | D7; Waves B–D deferred; Pass 1–5 plan historical wasm32 banners; clock/wasm bake ≠ shelf |
+| Emission | `[GAP]` |
+| `src/` | absent |
+| Push | **not** performed |
+
+Products live on [`wasm-spec-3-clipboard.md`](wasm-spec-3-clipboard.md) Pass 6 section; ascii Pass 6 pointer; mechanisms TARGET notes.

@@ -1,6 +1,6 @@
 # WebAssembly Spec 3.0 — ASCII SOURCE MACHINERY (Shadow · compile target)
 
-**Status:** Pass 1–5 EXECUTED (Pass 5 = rigorous Spec↔ASCII mapping + Shadow Order Proposal). Emission `[GAP]`. See clipboard **P5-X / P5-P / P5-R**.  
+**Status:** Pass 1–6 EXECUTED (Pass 6 = rigorous diagram correctness + **wasm64** seal). Emission `[GAP]`. See clipboard **P6-A / P6-P / P6-X / P6-F / P6-R**.  
 **Source:** Andreas Rossberg / WebAssembly Community Group, *WebAssembly Specification* Release **3.0 (2026-09-11)**.  
 **PDF:** `refs/local/webassembly-spec-3.0.pdf` → attachment `687e73641a7eec8692273fdf048e1578bf2f379f507c36ec284a39d9e7f70fce` (323 pp., text layer; **never git-add**). SHA-256 `687e73641a7eec8692273fdf048e1578bf2f379f507c36ec284a39d9e7f70fce`. Printed ≈ PDF − 4.  
 **Admission:** [`wasm-spec-3-clipboard.md`](wasm-spec-3-clipboard.md).  
@@ -10,8 +10,9 @@
 
 ```
 +======================================================================+
-|  COMPILATION TARGET — Lace Rust #![no_std]  -->  wasm32-unknown-unknown |
-|  Shadow docs only this pass.  NOT Lace Core.  NOT Graphic D.           |
+|  COMPILATION TARGET — Lace Rust #![no_std]  -->  wasm64-unknown-unknown |
+|  Sealed by human correction: wasm64.  wasm32 is NOT the shelf target.  |
+|  Shadow docs.  NOT Lace Core.  NOT Graphic D.                          |
 |  WASM ops = TARGET semantics.  Do NOT invent emission rules / Phi.     |
 |  Do NOT import WASM store/memory/table/stack as Lace's 1D strand.      |
 |  Zero crates.io / foreign deps.  No src/ until pointer-emission accepted.|
@@ -73,7 +74,7 @@ Law: WASM = **machine we may compile toward**, not the lace · linear memory ≠
 
   Lace Core OFF this board --> docs/systems-manifest-ascii.md
   Phi = [GAP]
-  compile target banner: Lace #![no_std] --> wasm32-unknown-unknown (Shadow)
+  compile target banner: Lace #![no_std] --> wasm64-unknown-unknown (Shadow)
 ```
 
 stamp under fence: KEEP-read-as-target overview | FORBID-as-Core-write | FORBID-as-Lace-store | SILENT-for-Lace-append | Phi=[GAP]
@@ -82,7 +83,7 @@ stamp under fence: KEEP-read-as-target overview | FORBID-as-Core-write | FORBID-
 
 **Full text:** clipboard Pass 5 **P5-P**. **Stamps:** KEEP-read · FORBID-as-Core-write · FORBID-as-Lace-store · FORBID-as-emission-rule · FORBID-as-Core · FORBID fill-GAP · SILENT-for-Lace-append · PROPOSAL · NON-binding.
 
-This overview **proposes** compile-target shelf hygiene when the mesh aims at wasm32 — observe → name → diagram-check → stamp-check → list OPENs → decide (commit/release/defer/stop). It is **not** Core, not an AGENTS.md amendment, not Graphic D, not a Φ scheduler, and **NON-binding** on `systems-manifest-ascii.md` / rust-nostd maps (doors stay proposals). Keep-outs stand: mem≠strand · table≠star · stack≠append · br/return≠Φ · validate≠admit POINTER · host≠fill `[GAP]` · trap≠Lace cut · instantiate≠Core birth · ascii≠Graphic D/Core. Recommended reader order (proposal only): clipboard → mechanisms → ascii-machinery → pass plans (rust-nostd cite beside). Emission `[GAP]`. See clipboard P5-P for stage→hygiene table + P5-X Spec↔ASCII mapping.
+This overview **proposes** compile-target shelf hygiene when the mesh aims at wasm64 — observe → name → diagram-check → stamp-check → list OPENs → decide (commit/release/defer/stop). It is **not** Core, not an AGENTS.md amendment, not Graphic D, not a Φ scheduler, and **NON-binding** on `systems-manifest-ascii.md` / rust-nostd maps (doors stay proposals). Keep-outs stand: mem≠strand · table≠star · stack≠append · br/return≠Φ · validate≠admit POINTER · host≠fill `[GAP]` · trap≠Lace cut · instantiate≠Core birth · ascii≠Graphic D/Core. Recommended reader order (proposal only): clipboard → mechanisms → ascii-machinery → pass plans (rust-nostd cite beside). Emission `[GAP]`. See clipboard P5-P for stage→hygiene table + P5-X Spec↔ASCII mapping.
 
 ---
 
@@ -188,7 +189,7 @@ stamp under fence: KEEP-read-as-target | FORBID-as-emission-rule | SILENT-for-La
 | Sighting | `pdftotext -f 87 -l 94`; clipboard PAGE E |
 | Lace stamp | **KEEP-read-as-target**; **FORBID-as-Lace-store** |
 | False friend | **FM-W1…W3** — linear mem / table / stack ⇒ Lace strand / star / append (Pass-1 alias FM-T4) |
-| Caption | Store = global alloc pool (funcs, tables, mems, globals, tags, …). Moduleinst maps indices → addresses. Stack holds values + labels + call frames. meminst = byte sequence (“linear memory”). |
+| Caption | Store = global alloc pool (funcs, tables, mems, globals, tags, …). Moduleinst maps indices → addresses. Stack holds values + labels + call frames. meminst = byte sequence (“linear memory”). **TARGET note (wasm64):** Spec §2.3.11 `addrtype ::= i32 \| i64` — memory/table address width may be i64 (memory64); sealed compile target is `wasm64-unknown-unknown`. Width ≠ Lace store identity — **FORBID-as-Lace-store** still (any addr width). |
 
 ```
   store {
@@ -203,8 +204,10 @@ stamp under fence: KEEP-read-as-target | FORBID-as-emission-rule | SILENT-for-La
   stack      = values | labels | frames | handlers
 
   config = store ; frame ; instr*
+  # TARGET note: memtype/tabletype carry addrtype i32|i64 (Spec §2.3.11)
+  # wasm64 seal ⇒ i64 addresses in-scope; still NOT Lace strand
 
-  # FORBIDDEN: treat meminst/table/stack/store as Lace strand
+  # FORBIDDEN: treat meminst/table/stack/store as Lace strand (any width)
 ```
 
 stamp under fence: KEEP-read-as-target | FORBID-as-Lace-store
@@ -399,3 +402,9 @@ Representation fidelity steward EXECUTED on clipboard (**P4-A / P4-X / P4-F / P4
 ## Pass 5 pointer (ascii)
 
 Rigorous Spec↔ASCII mapping steward + Shadow Order Proposal EXECUTED on clipboard (**P5-X / P5-F / P5-O / P5-P / P5-R**). Canonical overview = this file’s singular SOURCE MACHINERY fence (count=1; P5-O stand). Short Order Proposal mirror under overview. Emission still `[GAP]`.
+
+---
+
+## Pass 6 pointer (ascii)
+
+Diagram correctness steward EXECUTED on clipboard (**P6-A / P6-P / P6-X / P6-F / P6-R**). COMPILATION TARGET banners sealed to **`wasm64-unknown-unknown`**. Canonical overview = this file’s singular SOURCE MACHINERY fence (count=1). Emission still `[GAP]`.
