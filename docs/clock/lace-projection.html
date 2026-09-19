@@ -12,7 +12,13 @@
 <style>
 :root{--bg:#05070c;--ink:#e6eef6;--dim:#7a8a9c;--line:rgba(62,200,255,.22);--cyan:#3ec8ff}
 *{box-sizing:border-box}
-html,body{margin:0;min-height:100dvh;height:100%;background:#05070c;color:var(--ink);font:13px/1.4 ui-sans-serif,system-ui,sans-serif;overflow:hidden}
+html,body{margin:0;min-height:100dvh;height:100%;background:#071018;color:var(--ink);font:13px/1.4 ui-sans-serif,system-ui,sans-serif;overflow:hidden}
+body.gpu-off{
+  background:
+    #071018
+    repeating-linear-gradient(0deg, transparent 0 46px, rgba(62,200,255,.28) 46px 48px),
+    repeating-linear-gradient(90deg, transparent 0 46px, rgba(62,200,255,.28) 46px 48px);
+}
 body.ref{background:#05070c url("../hologram/clockwork-view-lattice.jpg") center/cover no-repeat}
 #c{position:fixed;inset:0;width:100%;height:100dvh;display:block;z-index:0}
 #fallback{position:fixed;inset:0;z-index:1;display:none;background:#05070c}
@@ -51,7 +57,7 @@ aside[hidden]{display:none}
 </div>
 <div class="hud">
   <header class="hit">
-    <h1>LAYER III · i2p4 · RAWCDN SHA</h1>
+    <h1>LAYER III · i3p1 · RAWCDN SHA</h1>
     <p>Install this URL only if it is <code>rawcdn.githack.com</code> + a full SHA. Floating <code>main</code> is preview. Cubes are glyphs. No emitter. [GAP]</p>
   </header>
   <div class="modes hit">
@@ -76,8 +82,11 @@ aside[hidden]{display:none}
     <div class="row">
       <input id="t" type="range" min="0" max="10" step="0.02" value="0"/>
       <span id="phase">t=0000</span>
-      <span class="stamp">i2p4</span>
+      <span class="stamp">i3p1</span>
       <span class="stamp">A17</span>
+      <span class="stamp" id="gpustamp">GPU ?</span>
+      <span class="stamp" id="szstamp">?x?</span>
+      <span class="stamp" id="nstamp">n=?</span>
       <span class="stamp" id="nnstamp">WebNN ?</span>
       <span class="stamp" id="pwastamp">PWA ?</span>
       <span class="stamp">glyphs ≠ schema</span>
@@ -183,39 +192,38 @@ struct VSOut { @builtin(position) p: vec4<f32>, @location(0) wpos: vec3<f32>, @l
   if (i.born < 0.0) {
     let gx = abs(fract(i.wpos.x * 0.85) - 0.5);
     let gz = abs(fract(i.wpos.z * 0.85) - 0.5);
-    let line = 1.0 - smoothstep(0.02, 0.045, min(gx, gz));
+    let line = 1.0 - smoothstep(0.035, 0.07, min(gx, gz));
     let hot = fract(sin(dot(floor(i.wpos.xz * 0.85), vec2<f32>(12.1, 7.3))) * 43758.5);
-    var rgb = vec3<f32>(0.02, 0.05, 0.08) + vec3<f32>(0.05, 0.35, 0.55) * line;
-    rgb += vec3<f32>(0.55, 0.12, 0.04) * step(0.92, hot) * 0.45;
+    var rgb = vec3<f32>(0.05, 0.12, 0.18) + vec3<f32>(0.25, 0.95, 1.0) * line;
+    rgb += vec3<f32>(1.0, 0.28, 0.06) * step(0.88, hot) * 0.85;
     let d = length(i.wpos.xz - u.t.yz);
-    rgb += vec3<f32>(0.2, 0.7, 1.0) * (1.0 - smoothstep(0.2, 1.6, d)) * 0.55;
+    rgb += vec3<f32>(0.35, 0.95, 1.0) * (1.0 - smoothstep(0.15, 2.2, d)) * 0.85;
     return vec4<f32>(rgb, 1.0);
   }
   let appear = smoothstep(i.born - 0.15, i.born + 0.05, u.t.x);
-  if (appear < 0.02) { discard; }
+  if (appear < 0.01) { discard; }
   let L = normalize(vec3<f32>(0.25, 1.0, 0.35));
   let N = normalize(i.nrm);
   let V = normalize(u.eye.xyz - i.wpos);
   let fres = pow(1.0 - max(dot(N, V), 0.0), 3.2);
-  let diff = max(dot(N, L), 0.08);
-  let spec = pow(max(dot(reflect(-L, N), V), 0.0), 64.0);
+  let diff = max(dot(N, L), 0.42);
+  let spec = pow(max(dot(reflect(-L, N), V), 0.0), 48.0);
   let hash = fract(sin(dot(i.wpos.xz, vec2<f32>(12.99, 78.23))) * 43758.5);
-  var rgb = i.col * (0.28 + 0.55 * diff);
-  rgb += i.col * fres * 1.15;
-  rgb += vec3<f32>(spec) * 0.85;
+  var rgb = i.col * (0.62 + 0.75 * diff);
+  rgb += i.col * fres * 0.9;
+  rgb += vec3<f32>(spec) * 1.1;
   if (i.col.g > 0.7 && i.col.r < 0.4) {
     let w = sin(i.wpos.x * 9.0 + i.wpos.y * 11.0 + u.t.x) * 0.5 + 0.5;
-    rgb += vec3<f32>(0.02, 0.45, 0.14) * (hash + w);
-    rgb *= 0.55 + 0.7 * w;
+    rgb += vec3<f32>(0.05, 0.85, 0.22) * (hash + w);
+    rgb *= 0.7 + 0.6 * w;
   }
-  if (i.col.r > 0.7) {
-    rgb += vec3<f32>(0.55, 0.12, 0.02) * (0.5 + 0.5 * hash);
+  if (i.col.r > 0.55) {
+    rgb += vec3<f32>(1.0, 0.28, 0.04) * (0.45 + 0.55 * hash);
   }
-  let fog = clamp(length(i.wpos - u.eye.xyz) / 22.0, 0.0, 1.0);
-  rgb = mix(rgb, vec3<f32>(0.02, 0.04, 0.06), fog * 0.55);
-  let alpha = mix(0.35, 0.95, fres) * appear;
-  if (i.col.r > 0.7) { alpha = max(alpha, 0.88); }
-  return vec4<f32>(rgb * appear, alpha);
+  let fog = clamp(length(i.wpos - u.eye.xyz) / 28.0, 0.0, 1.0);
+  rgb = mix(rgb, vec3<f32>(0.06, 0.10, 0.14), fog * 0.22);
+  let alpha = max(0.92, mix(0.7, 1.0, fres)) * max(appear, 0.2);
+  return vec4<f32>(rgb * max(appear, 0.35), alpha);
 }
 `;
 
@@ -273,10 +281,13 @@ function showLook(t){
 }
 function keepFallback(why){
   gpuLive=false;
+  document.body.classList.add("gpu-off");
   const f=document.getElementById("fallback");
   f.style.display="block";
   const w=document.getElementById("why");
   if(w) w.textContent=why;
+  const g=document.getElementById("gpustamp");
+  if(g) g.textContent="GPU off";
 }
 function hideFallback(){
   /* pass 6f: never remove lookrefs. Black stage is illegal. */
@@ -304,21 +315,26 @@ document.querySelectorAll(".modes button[data-mode]").forEach(btn=>{
 
 async function main(){
   const canvas=document.getElementById("c");
+  const gstamp=document.getElementById("gpustamp");
+  const szstamp=document.getElementById("szstamp");
+  const nstamp=document.getElementById("nstamp");
   showLook(0);
-  if(!navigator.gpu){ keepFallback("No navigator.gpu — lookrefs on stage."); return; }
+  if(!navigator.gpu){ keepFallback("No navigator.gpu — CSS grid on stage."); return; }
   const ad=await navigator.gpu.requestAdapter();
-  if(!ad){ keepFallback("No GPU adapter — lookrefs on stage."); return; }
+  if(!ad){ keepFallback("No GPU adapter — CSS grid on stage."); return; }
   const device=await ad.requestDevice();
   const ctx=canvas.getContext("webgpu");
-  if(!ctx){ keepFallback("No WebGPU canvas context — lookrefs on stage."); return; }
+  if(!ctx){ keepFallback("No WebGPU canvas context — CSS grid on stage."); return; }
   const fmt=navigator.gpu.getPreferredCanvasFormat();
   let scene;
   try { scene = await bakeViaWorker(); }
   catch (e) {
-    keepFallback("CPU bake worker failed — lookrefs stay. " + (e && e.message ? e.message : e));
+    keepFallback("CPU bake worker failed — CSS grid stays. " + (e && e.message ? e.message : e));
     return;
   }
   const vCount=scene.P.length/3;
+  if(nstamp) nstamp.textContent="n="+vCount;
+  if(vCount<6){ keepFallback("Bake produced no triangles."); return; }
   function buf(arr, stride){
     const a=arr instanceof Float32Array?arr:new Float32Array(arr);
     const b=device.createBuffer({size:a.byteLength,usage:GPUBufferUsage.VERTEX|GPUBufferUsage.COPY_DST});
@@ -343,21 +359,40 @@ async function main(){
   });
   const bg=device.createBindGroup({layout:pipe.getBindGroupLayout(0),entries:[{binding:0,resource:{buffer:uni}}]});
   let depth;
+  function canvasCssSize(){
+    const vv=window.visualViewport;
+    const w=Math.max(canvas.clientWidth||0, vv?vv.width:0, window.innerWidth||0);
+    const h=Math.max(canvas.clientHeight||0, vv?vv.height:0, window.innerHeight||0);
+    return [w,h];
+  }
   function resize(){
     const dpr=Math.min(devicePixelRatio||1, 2);
-    canvas.width=Math.max(2, Math.floor((canvas.clientWidth||visualViewport.width)*dpr));
-    canvas.height=Math.max(2, Math.floor((canvas.clientHeight||visualViewport.height)*dpr));
-    if(canvas.width<8 || canvas.height<8) keepFallback("Canvas has no size — lookrefs on stage.");
-    ctx.configure({device,format:fmt,alphaMode:"premultiplied"});
+    const [cw,ch]=canvasCssSize();
+    canvas.width=Math.max(2, Math.floor(cw*dpr));
+    canvas.height=Math.max(2, Math.floor(ch*dpr));
+    if(szstamp) szstamp.textContent=canvas.width+"x"+canvas.height;
+    if(canvas.width<64 || canvas.height<64) return false;
+    ctx.configure({device,format:fmt,alphaMode:"opaque"});
+    if(depth) try{depth.destroy();}catch(_){}
     depth=device.createTexture({size:[canvas.width,canvas.height],format:"depth24plus",usage:GPUTextureUsage.RENDER_ATTACHMENT});
+    return true;
   }
-  resize(); addEventListener("resize", resize);
+  let sized=resize();
+  addEventListener("resize", ()=>{ sized=resize(); });
+  addEventListener("pageshow", ()=>{ sized=resize(); });
+  if(window.visualViewport) visualViewport.addEventListener("resize", ()=>{ sized=resize(); });
   let last=performance.now();
   function frame(now){
     const dt=(now-last)/1000; last=now;
+    if(!sized) sized=resize();
+    if(!sized){ requestAnimationFrame(frame); return; }
     if(playing){ tVal+=dt*0.7; if(tVal>10.4) tVal=0; tEl.value=tVal; }
     showLook(tVal);
-    if(!gpuLive && canvas.width>8 && canvas.height>8) hideFallback();
+    if(!gpuLive){
+      gpuLive=true;
+      document.body.classList.remove("gpu-off");
+      if(gstamp) gstamp.textContent="GPU on";
+    }
     const idx=Math.min(10, Math.floor(tVal+0.001));
     const live=D1[idx];
     let look=posOf(live.i);
@@ -384,7 +419,7 @@ async function main(){
     device.queue.writeBuffer(uni,0,ub);
     const enc=device.createCommandEncoder();
     const pass=enc.beginRenderPass({
-      colorAttachments:[{view:ctx.getCurrentTexture().createView(),clearValue:{r:0.02,g:0.03,b:0.05,a:1},loadOp:"clear",storeOp:"store"}],
+      colorAttachments:[{view:ctx.getCurrentTexture().createView(),clearValue:{r:0.07,g:0.12,b:0.18,a:1},loadOp:"clear",storeOp:"store"}],
       depthStencilAttachment:{view:depth.createView(),depthClearValue:1,depthLoadOp:"clear",depthStoreOp:"store"}
     });
     pass.setPipeline(pipe); pass.setBindGroup(0,bg);
@@ -397,7 +432,7 @@ async function main(){
 }
 main().catch(err=>{
   console.warn(err);
-  keepFallback("WebGPU failed — lookrefs on stage.");
+  keepFallback("WebGPU failed — CSS grid on stage.");
 });
 (async () => {
   const el=document.getElementById("nnstamp");
@@ -412,7 +447,7 @@ function runAudit(){
   const el=document.getElementById("audit");
   if(!el) return;
   const title=document.querySelector("h1")?.textContent||"";
-  const A=/i2p4/.test(title)?"ok":"fail";
+  const A=/i3p1/.test(title)?"ok":"fail";
   const D=!!(navigator.serviceWorker && navigator.serviceWorker.controller);
   const E=!!(window.deferredPrompt || window.matchMedia("(display-mode: standalone)").matches);
   const F=!!document.getElementById("installbtn");
@@ -423,7 +458,7 @@ function runAudit(){
     const ct=r.headers.get("content-type")||"";
     const B=/manifest|json/i.test(ct)?"ok":("fail "+ct);
     el.textContent=
-      "A title i2p4 "+A+"\n"+
+      "A title i3p1 "+A+"\n"+
       "B manifest MIME "+B+"\n"+
       "C icons 192+512 ok\n"+
       "D SW controlling "+(D?"ok":"fail")+"\n"+

@@ -1,6 +1,6 @@
 # Projection iteration 3 / pass 1 plan — stage is black in the installed app
 
-**Status:** PLAN. Not executed. Emission `[GAP]`.  
+**Status:** EXECUTED. Emission `[GAP]`. Title `i3p1`.  
 **Station:** hologram  
 **Target:** Chrome Android 17, installed WebAPK from rawcdn SHA.  
 **Evidence:** standalone LaceArc III, title `i2p4`, Core time, `t=0010 PTR`, play ran, HUD `installed`. Stage is a black void. REF off. Holder-doors shot earlier was the same void.
