@@ -1,10 +1,13 @@
 # Cold doors — Pass 2 PLAN
 
-**Status:** PLAN only. Not run.
+**Status:** EXECUTED at `8c912a10df56504cb51cf95cd33c68ac8d3f2f45` (refresh BASE; register commit follows).
 **Station:** kit.
 **Agent:** Grok-kit.
 **Plan BASE:** `44c2237eaaae4c6bc316a7322f15da90df7f01ae`.
+**Execute BASE:** `8c912a10df56504cb51cf95cd33c68ac8d3f2f45`.
 **Emission:** `[GAP]`. No `src/`. Renderer stays paused. Seven Rust doors stay shut.
+
+Human said proceed. Discharge: six companion rows appended to `docs/kit/cold-doors.md`. Live law unchanged. Copies not regenerated.
 
 Pass 1 said stop. The human named pass 2.
 

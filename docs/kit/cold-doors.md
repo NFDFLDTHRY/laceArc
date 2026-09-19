@@ -1,8 +1,9 @@
 # Cold doors
 
-**Status:** Pass 1 EXECUTED.
+**Status:** Pass 1 EXECUTED. Pass 2 EXECUTED.
 **Station:** kit.
-**Execute BASE:** `ec5ae61624db93bb19e2560adacfded080f98a50` (doors unchanged from `c4a1984`).
+**Pass 1 BASE:** `ec5ae61624db93bb19e2560adacfded080f98a50`.
+**Pass 2 BASE:** `8c912a10df56504cb51cf95cd33c68ac8d3f2f45` (companions unchanged from `22ac006`).
 **Read:** 19 September 2026.
 **Emission:** `[GAP]`. No `src/`.
 
@@ -55,6 +56,25 @@ Pass 1 does not add a second routing block. Those sentences stay where they are.
 | Seven first-party Rust doors in `docs/plans/rust-nostd-branch-contracts.md` | SHUT | Emission not accepted. Maps station. Not a README door. |
 | Clipboards / plans doors | — | Moving. Not classified here. |
 | HCC/Water “admission door” | — | Constraint, not a path. |
+
+---
+
+## Pass 2 — kit companions
+
+Behind the package door. Same stamps. Live law bytes not edited. Copies not regenerated.
+
+| # | Companion | Path | Stamp | Pin | Evidence |
+|---|---|---|---|---|---|
+| 1 | Standing prompt | `docs/kit/agent-control.md` | DATED | transport regen `e21cf39` | Calls itself a transport copy of the live-law fenced block. Says live law wins where they differ. Does not claim to be the tip. |
+| 2 | Grok paste | `docs/kit/grok-bot-profile.md` | DATED | transport regen `e21cf39` | Same declaration. Points at live law. Size still ≠ live law (R1). Lag is labeled. |
+| 3 | Downstream audit | `docs/kit/downstream-audit.md` | DATED | `4fe984bb098d5ca21c9704234df4fddd53056efb` | Header is the THEN pin. Package door already says the body is not rewritten. F10 at that pin: emission file absent; file now exists as DRAFT — the audit records the old observation, it does not pretend the tree is still missing the file. |
+| 4 | Task forms | `docs/kit/agent-task-template.md` | LIVE | none | Version 1.0 forms. Routes to “the current repository law.” Not a law-block copy. |
+| 5 | GitHack deploy | `docs/kit/githack-pwa-deploy.md` | LIVE | none as tip | Layer III deploy law. Host `rawcdn.githack.com` + full SHA; never branch name; never Pages. Matches AGENTS rule 9. |
+| 6 | Hook door | `.claude/README.md` | LIVE | none | Routes to live law. Names checks as advisory, not a publishing gate. Points at audit F06/F07. |
+
+No companion in this table is STALE.
+
+A lagging copy that says it may lag is DATED. R1 size split remains noticed, not repaired.
 
 ---
 
