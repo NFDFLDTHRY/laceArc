@@ -1,7 +1,7 @@
-STATUS: HELD
+STATUS: FREE
 STATION: kit
 OWNS: docs/kit/** .claude/**
-AGENT: Grok-kit
-BASE: 78e96bcb30ea6fe862b117631cb10da077d8c280
-SINCE: 2026-09-19T07:15:47Z
-NOTE: Live-law door pass 6 EXECUTE pending. Receipt. Φ [GAP].
+AGENT: -
+BASE: -
+SINCE: -
+NOTE: Live-law door CLOSED 6/6. Kit FREE. Pair human. Not door #5. Φ [GAP].
