@@ -92,6 +92,22 @@ T5 five-stakes: **skip** — PAGE 2/5 source pins and morals agree with this PDF
 | Mesh | all R1–R6 **same tooth**; Φ **same open**; D7 OPENs ≠ Φ fill |
 | Emission | still `[GAP]` |
 
+## Pass 4 receipt
+
+| Field | Value |
+|---|---|
+| Status | EXECUTED |
+| When | 2026-09-18 ~16:58 PT |
+| Station | clipboards · agent `reference-Mapper` |
+| Plan | [rowlands-pass-4-plan.md](rowlands-pass-4-plan.md) |
+| Hands skim | shoe → graphics A–D → systems-manifest → law → reason-model-map §2 (R1–R6 read-only) → five-stakes PAGE 2/5 → Passes 1–3 clipboard · plan |
+| PDF | **PRESENT** — `refs/local/rowlands-zero-to-infinity.pdf` → `47022f28…5cc458.pdf`; **738** pp.; text layer; offset −25; gitignored; never staged |
+| Method | `pdftotext -f N -l N -layout` on Wave A pins |
+| Product | Wave A mechanism cards M-A1…M-A9; SOURCE MACHINERY overview + panels P-A1…P-A9; Waves B–D deferred with seeds |
+| Artifacts | [rowlands-zero-to-infinity-mechanisms.md](rowlands-zero-to-infinity-mechanisms.md) · [rowlands-zero-to-infinity-ascii-machinery.md](rowlands-zero-to-infinity-ascii-machinery.md) |
+| Amended | A–X morals · Pass 2–3 deltas · reason-model-map · law · graphics · src/ · systems-manifest · systems-manifest-ascii | **No** (receipt only on this clipboard) |
+| Deferred | Wave B (ch.4–5, 10–11); Wave C (ch.13–15); Wave D (ch.17–18, 20–21, App. A) |
+| Emission | still `[GAP]`; D7 OPENs ≠ Φ fill |
 
 ---
 
@@ -256,6 +272,7 @@ T5 five-stakes: **skip** — PAGE 2/5 source pins and morals agree with this PDF
 - **Pass 1 (PDF-sighted)** re-walked A–X against attachment `47022f28…5cc458` via `pdftotext`; offset +25 after front matter CONFIRMED; morals unchanged.
 - **Pass 2** landed D1–D6 leftovers (+ D7 Shadow miniature); A–X morals untouched; Φ still `[GAP]`.
 - **Pass 3** added coherence mesh (book ↔ five-stakes ↔ map R1–R6); five-stakes PAGE 2 receipt + vacuum=R4 wording note; P3-P vacuum pin PDF 99; map untouched; Φ still `[GAP]`.
+- **Pass 4** forged Wave A mechanisms + ASCII source-machinery (M-A1…A9 / P-A1…A9 + overview); B–D deferred; A–X morals untouched; Φ still `[GAP]`.
 
 
 ---

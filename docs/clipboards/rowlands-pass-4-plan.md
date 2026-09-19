@@ -1,6 +1,6 @@
 # Rowlands pass 4 — rigorous mechanism map + ASCII source-machinery
 
-**Status:** PLANNED — not executed. Emission `[GAP]`.  
+**Status:** EXECUTED (2026-09-18 ~16:58 PT). Wave A complete; Waves B–D deferred with seeds. Emission `[GAP]`.  
 **Station:** clipboards (HELD `reference-Mapper`)  
 **Base at plan:** refresh to current `origin/main` before execute  
 **Book:** Peter Rowlands, *Zero to Infinity: The Foundations of Physics* · Series on Knots and Everything Vol. 41 · World Scientific 2007  
@@ -262,3 +262,17 @@ Book “rewrite” generates; Lace never mutates WORD @ i.
 Nilpotent Dirac on paper ≠ Core schema.  
 ASCII gears ≠ Lace append.  
 Φ stays `[GAP]`.
+
+---
+
+## Execution receipt
+
+| Field | Value |
+|---|---|
+| When | 2026-09-18 ~16:58 PT |
+| Agent | `reference-Mapper` |
+| Wave A | M-A1…M-A9 + P-A1…P-A9 + SOURCE MACHINERY overview |
+| Deferred | B–D (seed tables in both artifacts) |
+| Clipboard | Pass 4 receipt only (no A–X rewrite) |
+| Untouched | `src/` · systems-manifest* · systems-manifest-ascii · law · graphics · reason-model-map (read §2 only) · PDF (never staged) |
+| Commits | see git log this station release |
