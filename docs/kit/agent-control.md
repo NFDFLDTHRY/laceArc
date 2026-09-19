@@ -411,7 +411,7 @@ At the reviewed commit `4fe984bb098d5ca21c9704234df4fddd53056efb`, the repositor
 
 Read the repository's standing orders and law to learn the constraints. Then ground structural work in the law's reading order: physical lace; four graphics; systems manifest; reason-model map; adjacent text. Do not treat a document summary as having inspected its graphics. Name the graphic and panel used, for example D2 or B8.
 
-An AI must not claim to have held or tested a physical cord. Record grounding as `HUMAN_REPORTED`, `VISUALLY_OBSERVED`, or `NOT_PERFORMED`, with the actual evidence. Describe which existing passes the proposed action leaves intact. A physical analogy is a necessary fidelity check, not an emission algorithm or mathematical proof. If image access is unavailable, complete work that does not require visual interpretation; leave structural judgments dependent on the missing images `[BLOCKED]`.
+An AI must not claim to have held or tested a physical cord. Record grounding as `HUMAN_REPORTED`, `VISUALLY_OBSERVED`, or `NOT_PERFORMED`, with the actual evidence. Describe which existing passes the proposed action leaves intact. A physical analogy is a necessary fidelity check, not an emission algorithm or mathematical proof. If image access is unavailable, complete work that does not require visual interpretation; leave structural judgments dependent on the missing images `[BLOCKED]`. **Grounding is not evidence strength.** This clause answers *how was this grounded*; C10 answers *how strong is the conclusion*. A claim needs both, and until [the task template](agent-task-template.md) carried an `EVIDENCE STATE` line, C10's `PROVED_WITHIN_SCOPE` had been written zero times across the tree.
 
 ## C02. Keep authority explicit
 
@@ -534,9 +534,13 @@ Use independent fields for:
 | Field | Permitted distinctions |
 |---|---|
 | Claim origin | LAW / SOURCE / INFERENCE / PROPOSAL |
-| Evidence state | NOT_TESTED / BLOCKED / OBSERVED / REFUTED / UNESTABLISHED / PROVED_WITHIN_SCOPE |
+| Evidence state | NOT_TESTED / NOT_RUN / BLOCKED / OBSERVED / REFUTED / UNESTABLISHED / PROVED_WITHIN_SCOPE |
 | Human acceptance | ABSENT / PRESENT_FOR_EXACT_REVISION / STALE_OR_UNCLEAR |
 | Enforcement | NOT_CHECKED / ADVISORY / VERIFIED_FOR_NAMED_PATH |
+
+**Claim origin and Evidence state are not C01's grounding tokens.** C01 records *how you came to look* — `HUMAN_REPORTED`, `VISUALLY_OBSERVED`, `NOT_PERFORMED`. This clause records *what the looking established*. Both belong on a receipt; neither substitutes for the other. `NOT_RUN` is licensed here because the tree already used it in six files and no clause had claimed it.
+
+**A stamp covers the sentence it sits in, not the document it heads.** A grounding stamp at the top of a long document does not reach a claim three sections below it: one was found earned for a transcription and over-reaching by the end of the same file. Stamp the claim, or name the claims the stamp covers.
 
 Every established claim cites exact source or evidence, the relevant revision, and the scope of the conclusion. Record expected and actual outcomes separately. Include failed attempts and contradictions. Do not describe a source-reading exercise as a machine test, a synthetic host test as Android execution, an available API as reliable operation, or a model's classification as a theorem.
 

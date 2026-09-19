@@ -77,6 +77,7 @@ LAW SOURCE / REVISION:
 GRAPHICS ACTUALLY VIEWED: A / B / C / D [status for each]
 MANIFEST / REASON-MAP SECTIONS USED:
 PHYSICAL EVIDENCE: HUMAN_REPORTED / VISUALLY_OBSERVED / NOT_PERFORMED
+EVIDENCE STATE: NOT_TESTED / NOT_RUN / BLOCKED / OBSERVED / REFUTED / UNESTABLISHED / PROVED_WITHIN_SCOPE
 RELEVANT UNREAD OR INACCESSIBLE SOURCE:
 CURRENT POINTER-EMISSION GAP:
 HUMAN ACCEPTANCE: ABSENT / PRESENT_FOR_EXACT_REVISION / STALE_OR_UNCLEAR
@@ -86,6 +87,10 @@ FORBIDDEN NEXT ACTION:
 ```
 
 A receipt is not an authentication mechanism. Verify its source references before relying on it.
+
+**PHYSICAL EVIDENCE and EVIDENCE STATE are different questions, and both lines are here because nothing used to make an agent hold both at once.** C01 asks *how was this grounded* — did someone look at the cord, at the image, or at nothing. C10 asks *how strong is the evidence* — and its `PROVED_WITHIN_SCOPE` was written zero times across the tree until this line existed, because a token that is not on this page is not used. See [agent-control.md](agent-control.md) C01 and C10.
+
+**A stamp covers the sentence it sits in, not the document it sits at the top of.** A `VISUALLY_OBSERVED` earned by a transcription does not reach the claims three sections below it. Stamp the claim, or say which claims the stamp covers.
 
 ## 3. Evidence adjudication prompt
 
