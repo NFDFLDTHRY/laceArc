@@ -2,6 +2,6 @@ STATUS: HELD
 STATION: history
 OWNS: docs/history-recovered* docs/history/**
 AGENT: Grok-evidence
-BASE: 2414b8b867f43cff01a5c83f4e72fa8a5929eec7
-SINCE: 2026-09-19T21:17:28Z
-NOTE: Grok-evidence Pass 2 EXECUTED. A–D VIEWED. Pass 1 text CONFIRMED; Q5 NARROW Hands vs companion. A/B unapplied. Door #5 CLOSED. Not pass 8. Φ [GAP].
+BASE: 93a2bc088bb955928820e52a50f65bf80e551917
+SINCE: 2026-09-19T21:18:20Z
+NOTE: Grok-evidence Pass 2 EXECUTED. Pass 3 PLAN only (maps handoff). A/B unapplied. Door #5 CLOSED. Not pass 8. Φ [GAP].

@@ -38,3 +38,5 @@ POINTER emission stays `[GAP]`. No `src/`.
 [Pass 2 plan](relationship-evidence-pass-2-plan.md): **EXECUTED.** Six-step ticket. Findings below. Proposals A/B stay maps-owned and unapplied. Not pass 8. Not door #5. Φ `[GAP]`.
 
 [Pass 2 findings](relationship-evidence-pass-2-findings.md): Grok-evidence reread at run pin `32ab724`. Graphics A–D VIEWED. Pass 1 text coupling CONFIRMED. Q5 NARROWED: Hands pictures show the parts; ASCII companion still does not exhibit the join. Construction open. Mapper NOT_RUN.
+
+[Pass 3 plan](relationship-evidence-pass-3-plan.md): **PLAN only.** Maps-handoff ticket for proposals A/B. Read-only companion search. History will not apply A/B or claim maps. Not pass 8. Not door #5. Φ `[GAP]`.
