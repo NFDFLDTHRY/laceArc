@@ -1,6 +1,6 @@
 # Projection iteration 3 / pass 3 plan — shaders toward the hologram templates
 
-**Status:** PLAN. Not executed. Emission `[GAP]`.  
+**Status:** EXECUTED. Emission `[GAP]`. Title `i3p3`. Glass / ember / circuit / filament. Camera 8.4/6.2 kept.  
 **Station:** hologram  
 **Target:** Chrome Android 17, rawcdn SHA.  
 **Evidence:** `i3p2` shots `t=0003 PIE` and `t=0009 PTR`. Camera distance and floor quietness are accepted. The mesh still reads as **opaque plastic toys on graph paper**.

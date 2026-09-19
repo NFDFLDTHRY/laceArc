@@ -65,7 +65,7 @@ function bake(){
     } else {
       add(cube(0.16),[0.15,0.55,0.95],off,r.i);
       const A=posOf(r.a), Bb=posOf(r.b);
-      const mid=[(A[0]+Bb[0])/2, 0.18, (A[2]+Bb[2])/2];
+      const mid=[(A[0]+Bb[0])/2, 0.55, (A[2]+Bb[2])/2];
       add(ribbon(A,mid),[0.25,0.85,1],[0,0,0],r.i);
       add(ribbon(mid,Bb),[0.25,0.85,1],[0,0,0],r.i);
     }
