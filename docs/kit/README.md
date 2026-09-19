@@ -25,8 +25,9 @@ Portable steward controls. Not Hands. Not Graphic D. Nothing here is a source of
 | [scanner-fix-pass-3-plan.md](scanner-fix-pass-3-plan.md) | Scanner fix pass 3: register vs receipt vs which | EXECUTED |
 | [scanner-fix-pass-4-plan.md](scanner-fix-pass-4-plan.md) | Scanner fix pass 4: rescan walk. Not Core ASCII | EXECUTED |
 | [scanner-fix-pass-5-plan.md](scanner-fix-pass-5-plan.md) | Scanner fix pass 5: refuse Activity column; pointer only | EXECUTED |
-| [scanner-fix-pass-6-plan.md](scanner-fix-pass-6-plan.md) | Scanner fix pass 6 PLAN: receipt. Close 6/6 | **PLAN only. Not run** |
-| [scanner.md](scanner.md) | Rescan spine. Stamp ≠ activity. Door #1 LIVE + CLOSED 6/6 | pass 1–5 |
+| [scanner-fix-pass-6-plan.md](scanner-fix-pass-6-plan.md) | Scanner fix pass 6: receipt. Close 6/6 | EXECUTED |
+| [scanner-fix-receipt.md](scanner-fix-receipt.md) | Scanner-fix iteration receipt. CLOSED 6/6 | CLOSED |
+| [scanner.md](scanner.md) | Rescan spine. Stamp ≠ activity. Door #1 LIVE + CLOSED 6/6 | CLOSED 6/6 |
 | [agent-control.md](agent-control.md) | Portable standing prompt: the staking law verbatim, then the operating controls C01–C12 | DATED transport at `e21cf39`; [live law](../law-why-these-documents.md) wins |
 | [agent-task-template.md](agent-task-template.md) | One-task, adjudication, proof-contract and handoff forms | live |
 | [downstream-audit.md](downstream-audit.md) | Dated audit: evidence, failure paths, source corrections, agent challenge cases F01–F12 | dated snapshot at `4fe984b`, re-checked by the coherence audit |

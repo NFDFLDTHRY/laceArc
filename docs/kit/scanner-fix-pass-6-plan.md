@@ -1,6 +1,6 @@
 # Scanner fix — Pass 6 PLAN
 
-**Status:** PLAN only. Not run.  
+**Status:** EXECUTED — receipt on `docs/kit/scanner-fix-receipt.md`. CLOSED 6/6. LIVE stays LIVE. Emission `[GAP]`.  
 **Station:** kit (HELD Grok-kit).  
 **Object:** scanner-fix receipt. Close this iteration 6/6.  
 **Authority:** [`scanner.md`](scanner.md) passes 1–5. Pointer under the ten-door table. Door #1 receipt `fab1864`.  

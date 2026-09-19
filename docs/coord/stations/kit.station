@@ -2,6 +2,6 @@ STATUS: HELD
 STATION: kit
 OWNS: docs/kit/** .claude/**
 AGENT: Grok-kit
-BASE: 3869a079be3b166a08c29a1f95bfb75b39b3f3a0
-SINCE: 2026-09-19T06:42:03Z
-NOTE: Scanner-fix pass 6 PLAN. Receipt. Pass 1–5 EXECUTED. Φ [GAP].
+BASE: 263a7954735635c3135188751948e96c15818b45
+SINCE: 2026-09-19T06:43:46Z
+NOTE: Scanner-fix pass 6 EXECUTE pending. Receipt. Φ [GAP].

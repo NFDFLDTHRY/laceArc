@@ -1,7 +1,8 @@
 # Scanner
 
+**Status:** CLOSED 6/6. Receipt: [scanner-fix-receipt.md](scanner-fix-receipt.md).  
 **Station:** kit.  
-**Executed:** [scanner-fix-pass-1-plan.md](scanner-fix-pass-1-plan.md) · [scanner-fix-pass-2-plan.md](scanner-fix-pass-2-plan.md) · [scanner-fix-pass-3-plan.md](scanner-fix-pass-3-plan.md) · [scanner-fix-pass-4-plan.md](scanner-fix-pass-4-plan.md) · [scanner-fix-pass-5-plan.md](scanner-fix-pass-5-plan.md).  
+**Executed:** [scanner-fix-pass-1-plan.md](scanner-fix-pass-1-plan.md) · [scanner-fix-pass-2-plan.md](scanner-fix-pass-2-plan.md) · [scanner-fix-pass-3-plan.md](scanner-fix-pass-3-plan.md) · [scanner-fix-pass-4-plan.md](scanner-fix-pass-4-plan.md) · [scanner-fix-pass-5-plan.md](scanner-fix-pass-5-plan.md) · [scanner-fix-pass-6-plan.md](scanner-fix-pass-6-plan.md).  
 **Object:** how a quiet-door **rescan** must speak. Not the package door bytes.  
 **Not:** live law. Not Hands. Not cold-doors pass 7. Not door #1 pass 7. Not door #2.  
 **Emission:** `[GAP]`. No `src/`.
