@@ -1,6 +1,6 @@
 # Petersen & Zech pass 6 — rigorous analysis & ASCII systems-diagram accuracy
 
-**Status:** PLANNED — not executed. Emission `[GAP]`.  
+**Status:** EXECUTED — 2026-09-18 ~18:49 PT · agent `reference-Mapper` · verdict **DIAGRAM SOUND**. Emission `[GAP]`.  
 **Station:** clipboards (HELD `reference-Mapper`)  
 **Base at plan:** refresh to current `origin/main` before execute  
 **Book:** Philipp Petersen & Jakob Zech, *Mathematical theory of deep learning*  
@@ -208,3 +208,26 @@ Training fences stay parameter updates — not Lace history.
 NTK fences stay analysis — not a second store.  
 Decisive judgment stays release/stop — not Φ.  
 `[GAP]` remains.
+
+
+---
+
+## Execution receipt (Pass 6)
+
+| Field | Value |
+|---|---|
+| When | 2026-09-18 ~18:49 PT |
+| Agent | `reference-Mapper` |
+| Station | clipboards (HELD → release after commit) |
+| P6-A | 6 PASS · 0 OPEN |
+| P6-P | 6 PASS · 0 OPEN · no wording fix |
+| P6-X | 9 PASS · 0 FIX · P-A8/P-A9 special gates PASS |
+| P6-F | none |
+| Verdict | **DIAGRAM SOUND** |
+| Wave B | SKIP |
+| Φ | `[GAP]` |
+| Commit message | `Petersen–Zech pass 6: rigorous ASCII diagram accuracy audit` |
+| PDF | never staged |
+
+Products on clipboard Pass 6; ascii Status + pointer; this plan EXECUTED.
+

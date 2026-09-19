@@ -381,6 +381,92 @@ Mirror (short): under SOURCE MACHINERY overview in [petersen-zech-ascii-machiner
 | Amended | reason-model-map · law · graphics · five-stakes · src/ · systems-manifest · systems-manifest-ascii · PAGE morals · FM-P* · P3-M · M-A* bodies · Core ASCII | **No** |
 | Touched | clipboard · ascii-machinery · pass-5-plan (EXECUTED) |
 
+## Pass 6 — Rigorous ASCII systems-diagram accuracy
+
+**Status:** EXECUTED · 2026-09-18 ~18:49 PT · station clipboards · `reference-Mapper`  
+**Plan:** [petersen-zech-pass-6-plan.md](petersen-zech-pass-6-plan.md)  
+**ASCII:** [petersen-zech-ascii-machinery.md](petersen-zech-ascii-machinery.md) · **Mechanisms:** [petersen-zech-mechanisms.md](petersen-zech-mechanisms.md)  
+**Law:** ASCII board + Order Proposal remain **Shadow** — not Core · not Φ. Wave B **SKIP**. Emission still `[GAP]`. Do not invent Φ.
+
+### P6-A — Structural analysis (SOURCE MACHINERY as systems diagram)
+
+Walked the singular overview fence in ascii-machinery.md (book constructive spine only). Scoring: every checklist row PASS or OPEN-with-cause.
+
+| Item | Evidence | PASS/OPEN |
+|---|---|---|
+| Spine completeness (input→FF→fn≠build→approx/ReLU/depth→high-d→interp→train→NTK→FORBIDDEN Core/Φ) | Overview fence lines: `[input x]` → `[feedforward Phi(x;w)]` → `+--> [same Phi, many (arch,w)]` → `[approx / ReLU pieces / depth]` → `[high-d / Barron / composition]` → `[interpolation / reconstruction]` → `[train: GD/SGD/backprop on w]` → `[NTK / infinite-width limit]` → `x --> Lace Core / Graphic D / Phi` **FORBIDDEN** | **PASS** |
+| No orphan nodes | Every box cites ≥1 M-A*/P-A* **or** is INPUT (`[input x]`) / FORBIDDEN exit (Core/Graphic D/Φ). Bundled approx strip cites M-A3–A5 / P-A3–A5 explicitly | **PASS** |
+| All M-A1…A9 on overview | M-A1…A9 each appear once on overview (A3–A5 share approx strip) | **PASS** |
+| Core/Φ only FORBIDDEN exits | Lace Core / Graphic D / Phi appear only on the forbidden exit + off-board note; Φ=`[GAP]`; not on-board stores | **PASS** |
+| Glyph discipline (no WORD/POINTER in overview fence) | Overview fence body: no `WORD`, no `POINTER`; no Graphic-D row art as book objects (Graphic D named only as FORBIDDEN exit) | **PASS** |
+| Singularity (one canonical overview) | Exactly one `SOURCE MACHINERY overview` fence in ascii-machinery.md (P5-O reconfirmed); other phrase hits are pointers/status only | **PASS** |
+
+**P6-A counts:** **6 PASS · 0 OPEN**.
+
+Pointer: ascii file Status + steward block link here.
+
+### P6-P — Order Proposal rigor (clipboard P5-P + ascii short mirror)
+
+| Check | Question / result | PASS/OPEN |
+|---|---|---|
+| Claim–diagram bind | Each stage→hygiene row maps to a real overview node / P-A* (Input; FF/P-A1; same-Φ/P-A2; approx strip/P-A3–5 + high-d/P-A6; interp/P-A7; train/P-A8; NTK/P-A9; FORBIDDEN exit) | **PASS** |
+| No Core/Φ overclaim | P5-P §1: proposal not Core / not AGENTS.md / not systems-manifest-ascii / not Graphic D / not reason-model-map / not law. Mirror: “not Core, not an AGENTS.md amendment, not a Φ scheduler…” | **PASS** |
+| FORBID completeness | Explicit: FORBID-as-Core-write · FORBID-as-Lace-history · FORBID-as-store · SILENT-for-Lace-append · PROPOSAL · Hands-refusal (Hands may refuse; FORBID promoting past Hands / into Core). Panel stamps P-A8/P-A9 agree | **PASS** |
+| Steward loop soundness | observe→name→diagram-check→stamp-check→OPEN list→decide (commit/release/defer/stop). Decide excludes POINTER-when (interp row + FM-P9), Φ fill (FORBIDDEN exit row + SILENT), history rewrite via training (train row + FORBID-as-Lace-history) | **PASS** |
+| File-order proposal-only | clipboard → mechanisms → ascii → pass plans labeled “proposal only” / “Recommended reader order (proposal only)” | **PASS** |
+| Mirror ≤ clipboard | Ascii short mirror restates stamps + hygiene loop + non-Core / non-Φ / non-history / non-store; does **not** strengthen beyond clipboard P5-P; defers stage table to clipboard | **PASS** |
+
+**P6-P result:** **6 PASS · 0 OPEN**. No overclaim found. **No wording fix** (FORBIDs already explicit and fence-faithful; softening forbidden and unnecessary).
+
+### P6-X — Deep accuracy (re-walk; do not inherit P4-X/P5-X blindly)
+
+Columns: Cite · Stamp · Implements reverse-walk · Fence fidelity · Overview attach · FM · Verdict. Special gates on P-A2 / P-A8 / P-A9.
+
+| P | M | Cite | Stamp | Implements | Fence | Overview | FM | Verdict |
+|---|---|---|---|---|---|---|---|---|
+| P-A1 | M-A1 | PASS — Def 2.1 PDF p.20 re-sighted (`pdftotext -f 20 -l 21`); ≡ M-A1 | PASS — KEEP-read; FORBID star=neuron / FORBID-as-Core-type ≡ card | PASS — steps 3.1–3.4: layer loop → final affine → Φ → refuse star=neuron (M-A1 alg §3) | PASS — x^(ℓ), σ, W, b, Φ only; width≠Piece 12 comment; no WORD/POINTER | PASS — feedforward node | FM-P1/P2 present | **PASS** |
+| P-A2 | M-A2 | PASS — Remark 2.2 PDF p.21 re-sighted; ≡ M-A2 | PASS — KEEP-read (P5); FORBID-Φ-sameness-as-identity | PASS — 3.1–3.4 nonuniqueness → refuse unique meaning → fix construction → refuse Lace identity | PASS — C1/C2 → same Φ fork; **fn≠construction fork visible** (special gate) | PASS — same-Φ branch | FM-P5 present | **PASS** |
+| P-A3 | M-A3 | PASS — Def 3.1/3.3, Thm 3.9 PDF pp.27–30 ≡ M-A3 (pins reused; no doubt) | PASS — KEEP existence; FORBID-approx-as-possession | PASS — 3.1–3.4 Def→Thm 3.9→optional Remark 3.10→existence not possession | PASS — f, K, ε, N_{d,1}, σ; no Core tokens | PASS — approx strip | FM-P3 present | **PASS** |
+| P-A4 | M-A4 | PASS — §5.1 Lemmas 5.1–5.2 PDF pp.50–52 ≡ M-A4 | PASS — KEEP-read; FORBID-as-Core-ops | PASS — 3.1–3.4 id→compose∘/•→bounds→refuse Core ops | PASS — Φ_id, ∘, •, parallel, +; book algebra only | PASS — ReLU pieces strip | FM-P1/P8 present | **PASS** |
+| P-A5 | M-A5 | PASS — Def 6.1 · Prop 7.1 / Lem 7.2 ~pp.72, 85–86 ≡ M-A5 | PASS — KEEP-read; FORBID-as-Lace-rooms | PASS — 3.1–3.4 Pieces→s_n→realize depth-n→refuse rooms | PASS — Pieces, s_n, depth, size; no rooms art | PASS — depth strip | FM-P8 present | **PASS** |
+| P-A6 | M-A6 | PASS — Thm 8.1 / Barron 8.12 / §8.3 ~pp.101, 108–109, 113–115 ≡ M-A6 | PASS — KEEP-read; FORBID as Core dimension axis | PASS — 3.1–3.4 lower→Barron→DAG→refuse Core dim | PASS — C^k, Barron, DAG, rates; DAG=book composition | PASS — high-d node | FM-P3/P8 present | **PASS** |
+| P-A7 | M-A7 | PASS — Def 9.1 / Thm 9.3 PDF pp.122–123 ≡ M-A7 | PASS — KEEP-read; FORBID-as-POINTER-when | PASS — 3.1–3.4 Def 9.1→Thm 9.3→capacity warning→refuse POINTER when | PASS — samples, H, interpolate; emission note = `[GAP]` only (no invent Φ) | PASS — interpolation node | FM-P9 present | **PASS** |
+| P-A8 | M-A8 | PASS — (10.1.2) p.133 · (10.2.2) p.138 · §10.5 pp.152–153 re-sighted GD/SGD | PASS — **FORBID-as-Lace-history** explicit; SILENT-for-Lace-append; FORBID-as-Core-write ≡ M-A8 | PASS — 3.1–3.5 ∇/G_k→optional backprop→h_k→**update w only**→refuse Lace history | PASS — **special gate:** fence = parameter update only (`w_{k+1}:=…`); “NOT occurrence history / NOT append”; steward refuse; no Lace-append glyph | PASS — train node + FORBID as Lace history | FM-P4 present | **PASS** |
+| P-A9 | M-A9 | PASS — (11.3.1)/(11.3.4–5) pp.169–170 re-sighted; Thm 11.20 pp.179–180 ≡ M-A9 | PASS — **FORBID-as-store** explicit; width≠Piece 12; FORBID-as-Core-write ≡ M-A9 | PASS — 3.1–3.4 Φ_lin→K̂_n→n→∞ NTK→refuse store | PASS — **special gate:** fence = NTK/Φlin analysis only; “NOT a second store”; width n≠Piece 12; no Graphic D store rows | PASS — NTK node + FORBID as store | FM-P7 present | **PASS** |
+
+**Special-gate notes**
+- **P-A8:** FORBID-as-Lace-history is stamp + under-fence stamp + overview label; fence depicts **parameter update only** (not Lace append). Fence-faithful.
+- **P-A9:** FORBID-as-store is stamp + under-fence stamp + overview label; fence depicts **NTK/Φlin analysis only** (not Graphic D); width≠Piece 12 explicit. Fence-faithful.
+- **P-A2:** Overview `+--> [same Phi, many (arch,w)]` and panel C1/C2 fork keep **fn≠construction** visible; no collapse to Lace identity.
+
+**P6-X counts:** **9 PASS · 0 FIX**.
+
+### P6-F — Fixes
+
+**None.** Matrix cited no drift requiring Implements/stamp/pin/fence/proposal wording edits. Mechanisms bodies untouched (law). FORBIDs not softened.
+
+### P6-R — Pass 6 receipt
+
+| Field | Value |
+|---|---|
+| Status | **EXECUTED** |
+| When | 2026-09-18 ~18:49 PT |
+| Station | clipboards · agent `reference-Mapper` |
+| Plan | [petersen-zech-pass-6-plan.md](petersen-zech-pass-6-plan.md) → **EXECUTED** |
+| Hands skim | shoe (staking) → graphics A–D → systems-manifest (+ ascii Core separate) → law-why → reason-model-map §4 P1–P7 → M-A1…A9 → ascii overview+P-A* → clipboard P5-P/P5-X → five-stakes PAGE 4/5 (read-only) |
+| PDF | **PRESENT** gitignored `refs/local/…` SHA `a8505f3d…c84383fa`; re-sighted Def 2.1 / Remark 2.2 / (10.1.2) / (10.2.2) / (11.3.1)/(11.3.4–5); **never staged** |
+| P6-A | **6 PASS · 0 OPEN** |
+| P6-P | **6 PASS · 0 OPEN**; no overclaim; no wording fix |
+| P6-X | **9 PASS · 0 FIX**; P-A8/P-A9 special gates **PASS** |
+| P6-F | none |
+| Overall verdict | **DIAGRAM SOUND** |
+| Wave B | **SKIP** (default) |
+| Emission | still `[GAP]` — no POINTER when / arity / adjacency; **no invented Φ** |
+| Amended | reason-model-map · law · graphics · five-stakes · src/ · systems-manifest · systems-manifest-ascii · PAGE morals · FM-P* · P3-M · M-A* bodies · Core ASCII | **No** |
+| Touched | clipboard · ascii-machinery (pointer/status) · pass-6-plan (EXECUTED) |
+
+**Steward test:** Shoe in hands — refuse “install this systems diagram as Graphic D / Core ASCII” using P6-A + P6-P alone. Training fences stay parameter updates — not Lace history. NTK fences stay analysis — not a second store. Decisive judgment = release/stop — not Φ. `[GAP]` remains.
+
 ## Pass 3 — P3-M mechanism coherence mesh
 
 Mechanism cards: [petersen-zech-mechanisms.md](petersen-zech-mechanisms.md). One tooth per Wave A card. Pass 1–2 morals / FM-P* / D1–D7 unchanged. CONFLICT would halt; none found.

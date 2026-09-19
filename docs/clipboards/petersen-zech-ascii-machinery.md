@@ -1,6 +1,6 @@
 # Petersen & Zech — ASCII source-machinery model (Shadow)
 
-**Status:** Pass 5 EXECUTED (Order Proposal Shadow + P5-X accuracy; SOURCE MACHINERY overview + panels P-A1…P-A9 stand; P4-X baseline 9/9 PASS). Emission `[GAP]`.  
+**Status:** Pass 6 EXECUTED (DIAGRAM SOUND — P6-A/P6-P/P6-X rigor; SOURCE MACHINERY overview + panels P-A1…P-A9 stand; P5 Order Proposal Shadow confirmed; P4-X/P5-X baselines re-walked). Emission `[GAP]`.  
 **Source:** Philipp Petersen & Jakob Zech, *Mathematical theory of deep learning*, arXiv:2407.18384v4 [cs.LG] · cover 16 Jan 2026  
 **PDF:** `refs/local/petersen-zech-mathematical-theory-deep-learning.pdf` → attachment `a8505f3de280cb1c6f9742161471fadc52c21340afc05efe4549bd58c84383fa.pdf` (**333** pp., text layer; **never git-add**)  
 **SHA-256:** `a8505f3de280cb1c6f9742161471fadc52c21340afc05efe4549bd58c84383fa`  
@@ -80,6 +80,8 @@ Singular canonical overview for this pass. Book constructive spine only. Lace Co
 ```
 
 **P5-X:** Accuracy matrix (all PASS) lives on the book clipboard under Pass 5 — [petersen-zech-clipboard.md](petersen-zech-clipboard.md#p5-x--accuracy-matrix-m-a--p-a--overview). This file holds **exactly one** canonical SOURCE MACHINERY overview (above). P4-X rigor matrix (Pass 4 baseline) remains below.
+
+**P6-A / P6-X / P6-R:** Structural checklist + deep accuracy matrix + **DIAGRAM SOUND** verdict live on the book clipboard under Pass 6 — [petersen-zech-clipboard.md](petersen-zech-clipboard.md#pass-6--rigorous-ascii-systems-diagram-accuracy). Wave B skipped. Φ still `[GAP]`.
 
 ### Order proposal (Shadow) — SOURCE MACHINERY as shelf hygiene *(short mirror)*
 
@@ -435,6 +437,7 @@ Pass 4 success = overview + P-A1…P-A9 + cross-walk + P4-X + clipboard receipt.
 Shoe in hands, or no.  
 These diagrams are photographs of **book mathematics**, not Lace machinery.  
 Pass 5 adopts the board as a **shelf hygiene proposal** (Shadow) — not Core / not Φ.  
+Pass 6 **cross-examines** diagram accuracy (**DIAGRAM SOUND**); refuse install-as-Core from P6-A + P6-P alone.  
 Forward Φ boxes are not the strand.  
 Training boxes update parameters — not occurrence history (P-A8 + stamp).  
 NTK boxes are analysis — not a second store (P-A9).  
