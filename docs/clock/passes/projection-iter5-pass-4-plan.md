@@ -1,6 +1,6 @@
 # Projection iteration 5 / pass 4 plan — leave i5p2, then make the floor unmissable
 
-**Status:** PLAN. Not executed. Emission `[GAP]`.  
+**Status:** EXECUTED. Emission `[GAP]`. Title `i5p4`. Update jumps via 3 LATEST pointers. Floor blown out. Glass discarded on faces. Gold bar 0.08.  
 **Station:** hologram  
 **Evidence:** shot titled **`i5p2`**, stamp `i5p2`, `t=0009 PTR`, `PWA on`, `boot rel`. Two teal cubes in a navy void. No circuit. No gold. No ember.
 

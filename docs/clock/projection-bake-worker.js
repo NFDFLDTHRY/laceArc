@@ -78,8 +78,8 @@ function bake(){
       const A=posOf(r.a), Bb=posOf(r.b);
       const seg=shorten(A,Bb,0.52);
       if(seg){
-        add(ribbon(seg[0],seg[1],0.055),[0.82,0.52,0.08],[0,0,0],r.i);
-        add(ribbon(seg[0],seg[1],0.022),[0.78,0.68,0.12],[0,0,0],r.i);
+        add(ribbon(seg[0],seg[1],0.080),[0.82,0.52,0.08],[0,0,0],r.i);
+        add(ribbon(seg[0],seg[1],0.032),[0.78,0.68,0.12],[0,0,0],r.i);
       }
     }
     add(ribbon([off[0],0.55,off[2]],[off[0],2.35,off[2]],0.018),[0.05,0.88,1.0],[0,0,0],r.i);

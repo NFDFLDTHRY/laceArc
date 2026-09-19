@@ -57,7 +57,7 @@ aside[hidden]{display:none}
 </div>
 <div class="hud">
   <header class="hit">
-    <h1>LAYER III · i5p3 · RAWCDN SHA</h1>
+    <h1>LAYER III · i5p4 · RAWCDN SHA</h1>
     <p>Install this URL only if it is <code>rawcdn.githack.com</code> + a full SHA. Floating <code>main</code> is preview. Cubes are glyphs. No emitter. [GAP]</p>
   </header>
   <div class="modes hit">
@@ -82,7 +82,7 @@ aside[hidden]{display:none}
     <div class="row">
       <input id="t" type="range" min="0" max="10" step="0.02" value="0"/>
       <span id="phase">t=0000</span>
-      <span class="stamp">i5p3</span>
+      <span class="stamp">i5p4</span>
       <span class="stamp">A17</span>
       <span class="stamp" id="gpustamp">GPU ?</span>
       <span class="stamp" id="bootstamp">boot ?</span>
@@ -214,21 +214,21 @@ struct VSOut { @builtin(position) p: vec4<f32>, @location(0) wpos: vec3<f32>, @l
     let fx = fract(i.wpos.x * 0.72);
     let fz = fract(i.wpos.z * 0.72);
     let edge = min(min(fx, 1.0 - fx), min(fz, 1.0 - fz));
-    let coarse = 1.0 - smoothstep(0.04, 0.10, edge);
+    let coarse = 1.0 - smoothstep(0.05, 0.14, edge);
     let fx2 = fract(i.wpos.x * 2.16);
     let fz2 = fract(i.wpos.z * 2.16);
-    let fine = 1.0 - smoothstep(0.012, 0.03, min(min(fx2, 1.0-fx2), min(fz2, 1.0-fz2)));
-    let well = 0.55 + 0.45 * hash;
-    let crack = step(0.88, fract(sin(dot(cell, vec2<f32>(3.7, 9.1))) * 6123.2));
-    let tick = step(0.92, fract(sin(dot(cell, vec2<f32>(11.1, 4.7))) * 9123.4));
-    var rgb = vec3<f32>(0.06, 0.12, 0.16) * well;
-    rgb += vec3<f32>(0.30, 0.95, 1.0) * coarse * 1.7;
-    rgb += vec3<f32>(0.20, 0.80, 0.88) * fine * 0.9;
-    rgb += vec3<f32>(0.35, 0.12, 0.04) * crack * 0.7;
-    rgb += vec3<f32>(1.0, 0.38, 0.05) * tick * 1.05;
+    let fine = 1.0 - smoothstep(0.015, 0.04, min(min(fx2, 1.0-fx2), min(fz2, 1.0-fz2)));
+    let well = 0.7 + 0.3 * hash;
+    let crack = step(0.82, fract(sin(dot(cell, vec2<f32>(3.7, 9.1))) * 6123.2));
+    let tick = step(0.78, fract(sin(dot(cell, vec2<f32>(11.1, 4.7))) * 9123.4));
+    var rgb = vec3<f32>(0.05, 0.10, 0.13) * well;
+    rgb += vec3<f32>(0.45, 1.0, 1.0) * coarse * 2.2;
+    rgb += vec3<f32>(0.25, 0.85, 0.95) * fine * 1.1;
+    rgb += vec3<f32>(0.45, 0.14, 0.04) * crack * 0.9;
+    rgb += vec3<f32>(1.0, 0.42, 0.05) * tick * 1.7;
     let d = length(i.wpos.xz - u.t.yz);
-    rgb += vec3<f32>(0.18, 0.6, 0.75) * (1.0 - smoothstep(0.2, 3.2, d)) * 0.4;
-    rgb += vec3<f32>(0.05, 0.09, 0.12);
+    rgb += vec3<f32>(0.2, 0.7, 0.85) * (1.0 - smoothstep(0.15, 3.5, d)) * 0.5;
+    rgb += vec3<f32>(0.05, 0.10, 0.13);
     return vec4<f32>(rgb, 1.0);
   }
   let appear = smoothstep(i.born - 0.15, i.born + 0.05, u.t.x);
@@ -246,14 +246,13 @@ struct VSOut { @builtin(position) p: vec4<f32>, @location(0) wpos: vec3<f32>, @l
   if (glassPass != isGlassish) { discard; }
   if (filament && i.col.r < 0.12 && abs(i.born - floor(u.t.x + 0.001)) > 0.51) { discard; }
   if (glass) {
+    if (ndv > 0.45) { discard; }
     let mark = step(0.84, fract(sin(dot(floor(i.wpos * 7.0), vec3<f32>(3.1, 7.4, 1.7))) * 2345.6));
-    let face = smoothstep(0.35, 0.8, ndv);
     rgb = vec3<f32>(0.10, 0.22, 0.30) * (0.02 + 0.06 * diff);
-    rgb += vec3<f32>(0.55, 0.92, 1.0) * fres * (1.0 - face);
+    rgb += vec3<f32>(0.55, 0.92, 1.0) * fres * 0.8;
     rgb += vec3<f32>(1.0, 0.28, 0.04) * mark * 0.7;
-    rgb += vec3<f32>(1.0, 0.25, 0.04) * face * 0.12;
     rgb += vec3<f32>(spec) * 0.2;
-    alpha = mix(0.16, 0.04, face) * appear;
+    alpha = mix(0.14, 0.04, ndv) * appear;
   } else if (ember) {
     let pulse = 0.7 + 0.3 * sin(u.t.x * 3.2 + hash * 6.0);
     rgb = vec3<f32>(1.0, 0.22, 0.03) * (0.85 + 0.25 * pulse);
@@ -315,7 +314,7 @@ function lookAt(e,c,up){
 function bakeViaWorker(src){
   return new Promise((resolve, reject) => {
     let w;
-    try { w = new Worker(src || "projection-bake-worker.js?i=5p3"); }
+    try { w = new Worker(src || "projection-bake-worker.js?i=5p4"); }
     catch (e) { reject(e); return; }
     const t = setTimeout(() => { try{w.terminate();}catch(_){ } reject(new Error("bake timeout")); }, 8000);
     w.onerror = e => { clearTimeout(t); try{w.terminate();}catch(_){ } reject(e); };
@@ -336,9 +335,9 @@ let bakedScene=null;
 let bakeInFlight=null;
 async function bakeScene(){
   if(bakedScene && bakedScene.P && bakedScene.P.length>6) return bakedScene;
-  try { bakedScene = await bakeViaWorker("projection-bake-worker.js?i=5p3"); }
+  try { bakedScene = await bakeViaWorker("projection-bake-worker.js?i=5p4"); }
   catch (e1) {
-    const src = await fetch("projection-bake-worker.js?i=5p3", {cache:"no-store"}).then(r => {
+    const src = await fetch("projection-bake-worker.js?i=5p4", {cache:"no-store"}).then(r => {
       if (!r.ok) throw new Error("worker fetch "+r.status);
       return r.text();
     });
@@ -619,7 +618,7 @@ async function main(gen){
       const tex=ctx.getCurrentTexture();
       const enc=device.createCommandEncoder();
       const pass=enc.beginRenderPass({
-        colorAttachments:[{view:tex.createView(),clearValue:{r:0.04,g:0.07,b:0.10,a:1},loadOp:"clear",storeOp:"store"}],
+        colorAttachments:[{view:tex.createView(),clearValue:{r:0.05,g:0.10,b:0.13,a:1},loadOp:"clear",storeOp:"store"}],
         depthStencilAttachment:{view:sess.depth.createView(),depthClearValue:1,depthLoadOp:"clear",depthStoreOp:"store"}
       });
       pass.setPipeline(pipeSolid); pass.setBindGroup(0,bgSolid);
@@ -682,7 +681,7 @@ function runAudit(){
   const el=document.getElementById("audit");
   if(!el) return;
   const title=document.querySelector("h1")?.textContent||"";
-  const A=/i5p3/.test(title)?"ok":"fail";
+  const A=/i5p4/.test(title)?"ok":"fail";
   const D=!!(navigator.serviceWorker && navigator.serviceWorker.controller);
   const E=!!(window.deferredPrompt || window.matchMedia("(display-mode: standalone)").matches);
   const F=!!document.getElementById("installbtn");
@@ -693,7 +692,7 @@ function runAudit(){
     const ct=r.headers.get("content-type")||"";
     const B=/manifest|json/i.test(ct)?"ok":("fail "+ct);
     el.textContent=
-      "A title i5p3 "+A+"\n"+
+      "A title i5p4 "+A+"\n"+
       "B manifest MIME "+B+"\n"+
       "C icons 192+512 ok\n"+
       "D SW controlling "+(D?"ok":"fail")+"\n"+
@@ -734,11 +733,17 @@ async function readPersist(){
   }
 }
 async function resolveLatestSha(){
-  const pointer="https://raw.githubusercontent.com/NFDFLDTHRY/laceArc/main/docs/clock/LATEST.json";
-  try {
-    const j=await fetch(pointer,{cache:"no-store"}).then(r=>{ if(!r.ok) throw new Error("latest "+r.status); return r.json(); });
-    if(j && /^[0-9a-f]{40}$/i.test(j.sha||"")) return j.sha.toLowerCase();
-  } catch(_){}
+  const pointers=[
+    "https://raw.githubusercontent.com/NFDFLDTHRY/laceArc/main/docs/clock/LATEST.json",
+    "https://cdn.jsdelivr.net/gh/NFDFLDTHRY/laceArc@main/docs/clock/LATEST.json",
+    "https://rawcdn.githack.com/NFDFLDTHRY/laceArc/main/docs/clock/LATEST.json"
+  ];
+  for(const pointer of pointers){
+    try {
+      const j=await fetch(pointer,{cache:"no-store"}).then(r=>{ if(!r.ok) throw new Error("latest "+r.status); return r.json(); });
+      if(j && /^[0-9a-f]{40}$/i.test(j.sha||"")) return j.sha.toLowerCase();
+    } catch(_){}
+  }
   const tip=await fetch("https://api.github.com/repos/NFDFLDTHRY/laceArc/commits/main",{cache:"no-store"}).then(r=>{
     if(!r.ok) throw new Error("tip "+r.status);
     return r.json();
@@ -756,8 +761,11 @@ function rawcdnUrl(sha){
 async function goLatest(stamp){
   const sha=await resolveLatestSha();
   const here=currentPinSha();
-  if(stamp) stamp.textContent="tip "+sha.slice(0,7);
-  if(here && here===sha) return "same";
+  if(stamp) stamp.textContent="jump "+sha.slice(0,7);
+  if(here && here===sha){
+    if(stamp) stamp.textContent="same "+sha.slice(0,7);
+    return "same";
+  }
   location.replace(rawcdnUrl(sha));
   return "jump";
 }
