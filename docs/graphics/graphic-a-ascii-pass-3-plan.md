@@ -1,12 +1,12 @@
 # Graphic A → ASCII systems diagram — Pass 3 PLAN
 
-**Status:** PLAN only. Not run. One act. Remainder queued.  
+**Status:** EXECUTED — A8 grain + A12 traffic on `docs/graphics/graphic-a-ascii.md`. Emission `[GAP]`.  
 **Station:** graphics (HELD Grok-graphics).  
 **Authority:** Graphic A panels A8 and A12 on `docs/graphics/from-words-to-worlds.png`. Then pass-1 spine + pass-2 rows on [`graphic-a-ascii.md`](graphic-a-ascii.md).  
 **Not authority:** B9 (other graphic). Manifest Pieces 14–15 field dumps. D1 tape.  
 **Emission:** `[GAP]`. No `src/`. PNG bytes stay put. Spine and pass-2 board stay.
 
-Pass 2 hung fields. The human named pass 3. Execute is not this tick.
+Execute landed: two-pass table + A12 source labels + interior rule. Remainder still queued.
 
 ```
 pull/ff → refresh graphics

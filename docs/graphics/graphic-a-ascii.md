@@ -2,7 +2,7 @@
 
 **Not Graphic A.** [`from-words-to-worlds.png`](from-words-to-worlds.png) is the source. This is an ASCII reading of its thirteen panels and settles nothing the PNG does not.
 
-**Executed:** [pass 1](graphic-a-ascii-pass-1-plan.md) · [pass 2](graphic-a-ascii-pass-2-plan.md).  
+**Executed:** [pass 1](graphic-a-ascii-pass-1-plan.md) · [pass 2](graphic-a-ascii-pass-2-plan.md) · [pass 3](graphic-a-ascii-pass-3-plan.md).  
 **Station:** graphics.  
 **Store:** Graphic D. A is a growth reading of the same strand.  
 **Not this file:** B, C, D1 tape, Hands-manifest spine (`docs/systems-manifest-ascii.md`), H×C×W oil, `src/`, POINTER emission answers.
@@ -223,4 +223,68 @@ Off Graphic A only. In / Does / Break / Gap. Not manifest piece fields.
 | T3 | G2 pointed from A10, not filled |
 | T4 | Spine above this section left in place |
 
-Queued (not this file): A8 grain; A12 traffic; A11 vs D types.
+## Pass 3 — A8 grain + A12 traffic
+
+One star. Many passes. No Star table. No sense list.
+
+### A8 grain — two feeds, one PIE star
+
+```
+            A7  "Is that a slice of pie?"
+                 \
+                  \  different path
+                   v
+                 PIE star
+                   ^
+                  /  different path
+                 /
+            A8  "Or is it the whole pie?"
+```
+
+| Pass | Feed | Through | Must remain | Collapse would look like |
+|---|---|---|---|---|
+| A7 | “Is that a slice of pie?” | the PIE star | a distinct pass; PIE participates in a larger formation | one edge that means “slice” |
+| A8 | “Or is it the whole pie?” | the same PIE star | a distinct pass through a different path | merge A8 into A7 |
+
+A8's words: “In 3D, these are distinct passes, not collapsed edges.”
+
+Not two PIE stars. Not `PIE = slice` / `PIE = whole`. Meaning does not exist on A.
+
+### A12 traffic — interior of that star
+
+A12: “Zoom in: The PIE star.” “Many distinct strands pass through the same star.”
+
+Source labels as drawn on the zoom (PNG wins; garbled OCR not copied):
+
+| Source label on A12 | Kind of pass | Merged with any other? |
+|---|---|---|
+| definition of pie | definition | no |
+| “This says pie.” | — | no |
+| “slice of pie” | — | no |
+| “whole pie” | — | no |
+| liability discussion | discussion | no |
+| future conversations | conversation | no |
+
+Kind uses only words A already puts on A11/A12 (definition, discussion, conversation). Quotes without a kind stay `—`. C6 families are not imported.
+
+```
+ same star
+ many passes
+ different directions
+ different contexts
+ all remain in Lace
+ none merged or lost
+```
+
+Interior is this rule. Not coordinates. Not a row type next to WORD | POINTER.
+
+## Pass 3 deltas
+
+| Ticket | Action |
+|---|---|
+| T1 | A7/A8 two-pass table |
+| T2 | A12 six source labels inventoried |
+| T3 | Six-line interior rule drawn |
+| T4 | G2 untouched; A11 vs D not opened |
+
+Queued (not this file): A11 vs D types.
