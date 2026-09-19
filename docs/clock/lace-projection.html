@@ -20,7 +20,7 @@ body.gpu-off{
     repeating-linear-gradient(90deg, transparent 0 46px, rgba(62,200,255,.28) 46px 48px);
 }
 body.ref{background:#05070c}
-#c{position:fixed;inset:0;width:100%;height:100dvh;display:block;z-index:0}
+#c{position:fixed;inset:0;width:100%;height:100dvh;display:block;z-index:0;touch-action:none}
 #fallback{position:fixed;inset:0;z-index:1;display:none;background:#05070c}
 body.ref #fallback{display:block}
 #fallback img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity .35s}
@@ -57,7 +57,7 @@ aside[hidden]{display:none}
 </div>
 <div class="hud">
   <header class="hit">
-    <h1>LAYER III · i5p6 · RAWCDN SHA</h1>
+    <h1>LAYER III · ixp1 · RAWCDN SHA</h1>
     <p>Install this URL only if it is <code>rawcdn.githack.com</code> + a full SHA. Floating <code>main</code> is preview. Cubes are glyphs. No emitter. [GAP]</p>
   </header>
   <div class="modes hit">
@@ -82,7 +82,7 @@ aside[hidden]{display:none}
     <div class="row">
       <input id="t" type="range" min="0" max="10" step="0.02" value="0"/>
       <span id="phase">t=0000</span>
-      <span class="stamp">i5p6</span>
+      <span class="stamp">ixp1</span>
       <span class="stamp">A17</span>
       <span class="stamp" id="gpustamp">GPU ?</span>
       <span class="stamp" id="bootstamp">boot ?</span>
@@ -176,16 +176,62 @@ function beam(a,b,r=0.04){
   }
   return {p,n};
 }
-function concat(geoms, color, extra=[]){
-  const p=[],n=[],c=[];
-  for(const g of geoms){
+function ribbon(a,b,r=0.016){
+  const dx=b[0]-a[0], dz=b[2]-a[2], len=Math.hypot(dx,dz)||1;
+  const px=-dz/len*r, pz=dx/len*r;
+  const p0=[a[0]+px,a[1],a[2]+pz], p1=[a[0]-px,a[1],a[2]-pz];
+  const p2=[b[0]-px,b[1],b[2]-pz], p3=[b[0]+px,b[1],b[2]+pz];
+  return {p:[...p0,...p1,...p2,...p0,...p2,...p3], n:[0,1,0,0,1,0,0,1,0,0,1,0,0,1,0,0,1,0]};
+}
+function shorten(a,b,pad=0.55){
+  const dx=b[0]-a[0], dy=b[1]-a[1], dz=b[2]-a[2];
+  const L=Math.hypot(dx,dy,dz)||1;
+  const t=Math.min(0.42, pad/L);
+  if(t>=0.45) return null;
+  return [
+    [a[0]+dx*t, a[1]+dy*t, a[2]+dz*t],
+    [b[0]-dx*t, b[1]-dy*t, b[2]-dz*t]
+  ];
+}
+function bakeMain(){
+  const P=[],N=[],C=[],B=[];
+  function add(g,col,off,born){
     for(let i=0;i<g.p.length;i+=3){
-      p.push(g.p[i]+(g.off?g.off[0]:0), g.p[i+1]+(g.off?g.off[1]:0), g.p[i+2]+(g.off?g.off[2]:0));
-      n.push(g.n[i],g.n[i+1],g.n[i+2]);
-      c.push(...color);
+      P.push(g.p[i]+off[0], g.p[i+1]+off[1], g.p[i+2]+off[2]);
+      N.push(g.n[i],g.n[i+1],g.n[i+2]); C.push(...col); B.push(born);
     }
   }
-  return {p,n,c};
+  add({
+    p:[-20,0,-20, 20,0,-20, 20,0,20, -20,0,-20, 20,0,20, -20,0,20],
+    n:[0,1,0,0,1,0,0,1,0,0,1,0,0,1,0,0,1,0]
+  },[0.05,0.10,0.13],[0,0,0],-1);
+  const fCount=P.length/3;
+  const core=cube(0.48), ball=sphere(0.62,16);
+  for(let i=-10;i<=10;i++){
+    const t=i*1.2;
+    add(ribbon([-12,0.35,t],[12,0.35,t],0.045),[0.55,0.95,1.0],[0,0,0],0);
+    add(ribbon([t,0.35,-12],[t,0.35,12],0.045),[0.55,0.95,1.0],[0,0,0],0);
+  }
+  for(const r of D1){
+    const off=posOf(r.i);
+    if(r.k==="WORD"){
+      add(core,[1.0,0.28,0.04],off,r.i);
+      if(r.v==="PIE") add(ball,[0.12,0.95,0.32],[off[0],off[1]+0.85,off[2]], r.i);
+    } else {
+      add(cube(0.16),[0.15,0.55,0.95],off,r.i);
+      const A=posOf(r.a), Bb=posOf(r.b);
+      const seg=shorten(A,Bb,0.45);
+      if(seg){
+        add(ribbon(seg[0],seg[1],0.140),[0.82,0.52,0.08],[0,0,0],r.i);
+        add(ribbon(seg[0],seg[1],0.055),[0.78,0.68,0.12],[0,0,0],r.i);
+      }
+    }
+  }
+  return {
+    P: new Float32Array(P), N: new Float32Array(N),
+    C: new Float32Array(C), B: new Float32Array(B),
+    fCount, isolated:false, wasm:false
+  };
 }
 
 const WGSL = `
@@ -310,9 +356,9 @@ function lookAt(e,c,up){
 function bakeViaWorker(src){
   return new Promise((resolve, reject) => {
     let w;
-    try { w = new Worker(src || "projection-bake-worker.js?i=5p6"); }
+    try { w = new Worker(src || "projection-bake-worker.js?i=xp1"); }
     catch (e) { reject(e); return; }
-    const t = setTimeout(() => { try{w.terminate();}catch(_){ } reject(new Error("bake timeout")); }, 8000);
+    const t = setTimeout(() => { try{w.terminate();}catch(_){ } reject(new Error("bake timeout")); }, 2500);
     w.onerror = e => { clearTimeout(t); try{w.terminate();}catch(_){ } reject(e); };
     w.onmessage = ev => {
       clearTimeout(t);
@@ -332,20 +378,27 @@ let bakedScene=null;
 let bakeInFlight=null;
 async function bakeScene(){
   if(bakedScene && bakedScene.P && bakedScene.P.length>6) return bakedScene;
-  try { bakedScene = await bakeViaWorker("projection-bake-worker.js?i=5p6"); }
+  try { bakedScene = await bakeViaWorker("projection-bake-worker.js?i=xp1"); }
   catch (e1) {
-    const src = await fetch("projection-bake-worker.js?i=5p6", {cache:"no-store"}).then(r => {
-      if (!r.ok) throw new Error("worker fetch "+r.status);
-      return r.text();
-    });
-    const url = URL.createObjectURL(new Blob([src], {type:"text/javascript"}));
-    try { bakedScene = await bakeViaWorker(url); }
-    finally { URL.revokeObjectURL(url); }
+    try {
+      const src = await fetch("projection-bake-worker.js?i=xp1", {cache:"no-store"}).then(r => {
+        if (!r.ok) throw new Error("worker fetch "+r.status);
+        return r.text();
+      });
+      const url = URL.createObjectURL(new Blob([src], {type:"text/javascript"}));
+      try { bakedScene = await bakeViaWorker(url); }
+      finally { URL.revokeObjectURL(url); }
+    } catch(e2) {
+      bakedScene = bakeMain();
+      const g=document.getElementById("wdogstamp");
+      if(g) g.textContent="bake main";
+    }
   }
   return bakedScene;
 }
 
 let playing=true, tVal=0, gpuLive=false;
+let yaw=0.7, pitch=0.55, dragging=false, lastPtr=null;
 let gpuBooting=false, gpuGen=0, needReboot=false, gpuGaveUp=false;
 let gpuSession=null, lastRebootAt=0, wdogUsed=false, recycleUsed=false;
 const hadController=!!(navigator.serviceWorker && navigator.serviceWorker.controller);
@@ -461,14 +514,13 @@ function armWatchdog(){
     const w=document.getElementById("wdogstamp");
     if(!wdogUsed){
       wdogUsed=true;
-      if(w) w.textContent="wdog 1";
+      if(w) w.textContent="empty";
       requestReboot("wdog");
       return;
     }
-    if(w) w.textContent="wdog silent";
-    const g=document.getElementById("gpustamp");
-    if(g) g.textContent="GPU silent";
-  }, 2500);
+    if(w) w.textContent="empty";
+    keepFallback("GPU silent — CSS grid on stage.");
+  }, 1500);
 }
 
 async function main(gen){
@@ -503,15 +555,21 @@ async function main(gen){
   let scene;
   try { scene = await bakeP; }
   catch (e) {
-    keepFallback("CPU bake worker failed — CSS grid stays. " + (e && e.message ? e.message : e));
+    scene = bakeMain();
+    const w=document.getElementById("wdogstamp");
+    if(w) w.textContent="bake main";
+  }
+  if(!scene || !scene.P || scene.P.length<18){
+    keepFallback("Bake produced no triangles.");
     return;
   }
   if(gen!==gpuGen){ try{device.destroy();}catch(_){ } return; }
   const vCount=scene.P.length/3;
-  const fCount=Math.max(0, Math.min(vCount, scene.fCount|0));
+  let fCount=Math.max(0, Math.min(vCount, scene.fCount|0));
+  if(fCount>=vCount) fCount=0;
   const gCount=vCount-fCount;
   if(nstamp) nstamp.textContent="n="+gCount+" f="+fCount;
-  if(gCount<6){ keepFallback("Bake produced no triangles."); return; }
+  if(vCount<6){ keepFallback("Bake produced no triangles."); return; }
   function buf(arr){
     const a=arr instanceof Float32Array?arr:new Float32Array(arr);
     const b=device.createBuffer({size:a.byteLength,usage:GPUBufferUsage.VERTEX|GPUBufferUsage.COPY_DST});
@@ -609,11 +667,12 @@ async function main(gen){
     const live=D1[idx];
     phase.textContent="t="+String(idx).padStart(4,"0")+" "+(live.k==="WORD"?live.v:"PTR");
     const asp=canvas.width/Math.max(1,canvas.height);
-    const ang=now/9000;
+    if(!dragging) yaw+=dt*0.12;
+    const cp=Math.cos(pitch), sp=Math.sin(pitch);
     const eye=[
-      GRID[0] + Math.sin(ang)*6.5,
-      12.0,
-      GRID[2] + Math.cos(ang)*6.5
+      GRID[0] + Math.sin(yaw)*cp*7.2,
+      GRID[1] + sp*7.2 + 1.2,
+      GRID[2] + Math.cos(yaw)*cp*7.2
     ];
     const target=[GRID[0], 0.55, GRID[2]];
     try {
@@ -633,7 +692,8 @@ async function main(gen){
       if(fCount>0) pass.draw(fCount);
       pass.setPipeline(pipeSolid); pass.setBindGroup(0,bgSolid);
       pass.setVertexBuffer(0,bP); pass.setVertexBuffer(1,bN); pass.setVertexBuffer(2,bC); pass.setVertexBuffer(3,bB);
-      if(gCount>0) pass.draw(gCount, 1, fCount);
+      if(fCount>0 && gCount>0) pass.draw(gCount, 1, fCount);
+      else pass.draw(vCount);
       pass.end();
       ub[23]=1;
       device.queue.writeBuffer(uni,0,ub);
@@ -643,7 +703,8 @@ async function main(gen){
       });
       passG.setPipeline(pipeGlass); passG.setBindGroup(0,bgGlass);
       passG.setVertexBuffer(0,bP); passG.setVertexBuffer(1,bN); passG.setVertexBuffer(2,bC); passG.setVertexBuffer(3,bB);
-      if(gCount>0) passG.draw(gCount, 1, fCount);
+      if(fCount>0 && gCount>0) passG.draw(gCount, 1, fCount);
+      else passG.draw(vCount);
       passG.end();
       device.queue.submit([enc.finish()]);
       drawFails=0;
@@ -677,6 +738,22 @@ if(window.visualViewport) visualViewport.addEventListener("resize", ()=>{
   if(gpuSession && gpuSession.resize) gpuSession.resize();
 });
 bakeInFlight=bakeScene();
+{
+  const canvas=document.getElementById("c");
+  canvas.addEventListener("pointerdown", ev=>{
+    dragging=true; lastPtr=[ev.clientX, ev.clientY];
+    try{canvas.setPointerCapture(ev.pointerId);}catch(_){}
+  });
+  canvas.addEventListener("pointermove", ev=>{
+    if(!dragging||!lastPtr) return;
+    yaw+=(ev.clientX-lastPtr[0])*0.008;
+    pitch=Math.min(1.15, Math.max(0.18, pitch+(ev.clientY-lastPtr[1])*0.006));
+    lastPtr=[ev.clientX, ev.clientY];
+  });
+  const up=()=>{ dragging=false; lastPtr=null; };
+  canvas.addEventListener("pointerup", up);
+  canvas.addEventListener("pointercancel", up);
+}
 bootGpu();
 (async () => {
   const el=document.getElementById("nnstamp");
@@ -691,7 +768,7 @@ function runAudit(){
   const el=document.getElementById("audit");
   if(!el) return;
   const title=document.querySelector("h1")?.textContent||"";
-  const A=/i5p6/.test(title)?"ok":"fail";
+  const A=/ixp1/.test(title)?"ok":"fail";
   const D=!!(navigator.serviceWorker && navigator.serviceWorker.controller);
   const E=!!(window.deferredPrompt || window.matchMedia("(display-mode: standalone)").matches);
   const F=!!document.getElementById("installbtn");
@@ -702,7 +779,7 @@ function runAudit(){
     const ct=r.headers.get("content-type")||"";
     const B=/manifest|json/i.test(ct)?"ok":("fail "+ct);
     el.textContent=
-      "A title i5p6 "+A+"\n"+
+      "A title ixp1 "+A+"\n"+
       "B manifest MIME "+B+"\n"+
       "C icons 192+512 ok\n"+
       "D SW controlling "+(D?"ok":"fail")+"\n"+

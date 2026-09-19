@@ -1,6 +1,6 @@
 # Projection interaction pass 1 plan — black is illegal; then orbit
 
-**Status:** PLAN. Not executed. Emission `[GAP]`.  
+**Status:** EXECUTED. Emission `[GAP]`. Title `ixp1`. Inline bake fallback. Draw all verts if fCount is 0. One-finger orbit. Empty → CSS reason.  
 **Station:** hologram  
 **Evidence:** i5p6 “now nothing renders.” No new screenshot. Last good frame was i5p5 (`f=6`, teal cubes). i5p6 added cyan ribbons + dropped the glass shell.
 
