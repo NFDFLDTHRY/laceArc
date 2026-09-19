@@ -2,7 +2,7 @@
 
 **Not Graphic B.** [`mechanisms-in-3d.png`](mechanisms-in-3d.png) is the source. This is an ASCII reading of how the wire behaves and settles nothing the PNG does not.
 
-**Executed:** [pass 1](graphic-b-ascii-pass-1-plan.md) · [pass 2](graphic-b-ascii-pass-2-plan.md) · [i2p1](ascii-iteration-2-pass-1-plan.md).  
+**Executed:** [pass 1](graphic-b-ascii-pass-1-plan.md) · [pass 2](graphic-b-ascii-pass-2-plan.md) · [i2p1](ascii-iteration-2-pass-1-plan.md) · [i2p2](ascii-iteration-2-pass-2-plan.md).  
 **Station:** graphics.  
 **Store:** Graphic D. B is the mechanism reading of the same strand.  
 **Not this file:** Graphic A ASCII (`graphic-a-ascii.md` is closed), C, D1 tape, Hands-manifest spine (`docs/systems-manifest-ascii.md`), H×C×W oil, `src/`, POINTER emission answers.
@@ -228,4 +228,95 @@ Interior is this rule. Not coordinates. Not a row type next to WORD | POINTER.
 | T3 | B9 interior rule; source labels `[GAP]` |
 | T4 | G2 pointed from B8, not filled |
 
-Queued (later i2, not this pass): B mechanism map vs D types; Graphic C. See [`ascii-iterations.md`](ascii-iterations.md).
+## Iteration 2 pass 2 — mechanism map
+
+One operator. Panels apply it, view it, or forbid a fake. Feeds are not types.
+
+### Operator (B12)
+
+```
+ ╔══════════════════════════════════════════════════════════════╗
+ ║  Input word arrives.                                         ║
+ ║  Route new wire through that word's star.                    ║
+ ║  Continue.                                                   ║
+ ╚══════════════════════════════════════════════════════════════╝
+         punch-card at B6: raw sequence, no interpretation
+         not a second machine
+
+  constrained by B1:
+    one continuous wire
+    only grows
+    no cuts / no resets
+
+  three verbs. no fourth.
+  no "emit POINTER." no "write definition." no "build graph."
+```
+
+Same three verbs as A13. B states them. This is not A's register copied.
+
+### Application register
+
+| # | Role | What arrives | What is routed | What continues | New machine? |
+|---|---|---|---|---|---|
+| B1 | precondition | the strand | — | one wire that only grows | no |
+| B2 | application | a word | new wire through that word's star (or begins one) | the wire | no |
+| B3 | view | — (passes of the same word) | — (star is the formation of those passes) | — | no |
+| B4 | application | definition text (PIE → dessert → slice → whole → food) | that text as a route through other word stars | the wire; nothing stored as a gloss | no |
+| B5 | statement | an ordered series of words | exact order = exact physical route | the sentence is this piece of wire | no |
+| B6 | constraint + application | a longer raw sequence | punch-card; no interpretation; each word through its star | the strand | no |
+| B7 | application | new occurrence + existing 3D structure | threads the existing formation (not attach) | the wire through prior Lace | no |
+| B8 | statement | a touch just made | — (no extra route) | the touch remains; later wire can re-enter | no |
+| B9 | view | — (arrivals already drawn) | many strands, many crossings, one star | — (interior does not append) | no |
+| B10 | anti-model | the forbidden gloss | `[X]` stored definition | — | no |
+| B11 | anti-model | a 2D node-edge drawing | `[X]` graph as the thing | — | no |
+| B12 | statement | — | — | states the operator | no |
+
+B7's name “touch” is this application onto prior formation, not a new opcode and not G2.  
+B10 and B11 have no constructive operator.
+
+### B feeds versus D types
+
+B names dictionary (B4) and document feed (B6). Conversation as a third feed is not imported from A11.
+
+```
+ B names          D stores
+ --------         --------
+ dictionary  \
+ document     }→  more WORD rows
+              /   (POINTER rows only when that rule exists)
+
+                  types on D: WORD | POINTER only
+
+ document-boundary-as-entry     [GAP]
+ definition-as-stored-gloss     [X]     B10 / B4
+ graph-as-store                 [X]     B11
+```
+
+Feeds are names of incoming text. They are not array types.
+
+### Seam table
+
+| Name | On Graphic B? | Mechanism status |
+|---|---|---|
+| arrive / route through star / continue | B12 | the operator |
+| punch-card / no interpretation | B6 | constraint on arrival |
+| star as formation, not a point | B3 | view of passes |
+| definition as route | B4 | same operator on definition text |
+| sequence is physical | B5 | the route is the wire |
+| thread, not attach | B7 | how later application meets prior formation |
+| touch remains | B8 | permanence; not G2 |
+| interior traffic | B9 | view of many applications |
+| stored definition | B10 | `[X]` |
+| 2D graph as the thing | B11 | `[X]` |
+| WORD / POINTER / index / arity / when | not on B | D / G2. Point. Do not fill. |
+
+## Iteration 2 pass 2 deltas
+
+| Ticket | Action |
+|---|---|
+| T1 | One B12 operator box |
+| T2 | Twelve-row application register; all New machine?=no |
+| T3 | Dictionary/document feeds ≠ D types |
+| T4 | Seam table; G2 pointed not filled |
+
+Queued (later i2, not this pass): Graphic C. See [`ascii-iterations.md`](ascii-iterations.md).

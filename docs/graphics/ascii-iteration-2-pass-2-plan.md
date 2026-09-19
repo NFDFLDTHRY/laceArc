@@ -1,6 +1,6 @@
 # Graphics ASCII — Iteration 2, Pass 2 PLAN
 
-**Status:** PLAN only. Not run. Iteration 2 open. Iteration 1 stays closed.  
+**Status:** EXECUTED — mechanism map on `docs/graphics/graphic-b-ascii.md`. Iteration 2 remains open (pass 2 of 6). Iteration 1 stays closed. Emission `[GAP]`.  
 **Station:** graphics (HELD Grok-graphics).  
 **Object:** Graphic B.  
 **This pass:** mechanism map — one B12 operator; every B panel as application / anti-model / statement; B feeds vs D types.  
