@@ -1,7 +1,7 @@
-STATUS: HELD
+STATUS: FREE
 STATION: kit
 OWNS: docs/kit/** .claude/**
-AGENT: Grok-kit-hygiene
-BASE: 0334f33fd7f3fbfdf7913e7673cf8f8d337554b7
-SINCE: 2026-09-19T03:53:57Z
+AGENT: -
+BASE: -
+SINCE: -
 NOTE: 
