@@ -1,6 +1,6 @@
 # Verification iteration 3, pass 3 — the dating conventions, and who owns them
 
-**Status:** `[PLAN]`. Execution NOT_RUN. **Station:** maps. Read-only on kit.
+**Status:** `[PLAN]`. **EXECUTED** — [the record](verification-iter3-pass-3-findings.md). 13 DATED, 2 PAUSED, 10 unstampable. **Station:** maps. Read-only on kit.
 **Emission:** `[GAP]`. No `src/`. **Pinned at `93033a0`.**
 **Iteration:** [iteration 3](verification-iteration-3-plan.md), pass 3 of six. Passes 1 and 2 EXECUTED.
 
