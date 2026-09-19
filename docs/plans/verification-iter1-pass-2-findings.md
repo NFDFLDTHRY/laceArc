@@ -138,3 +138,59 @@ Plan §7 carried this from 2a. Confirmed against the panel: **C5 labels its stac
 ### 2a-2 re-confirmed on a second graphic
 
 2a found "panel labels … are not printed in the graphics" to be wrong for Graphic D. **Graphic C prints its numbering too** — "1. Rule zero" through "12. Governing rule". The finding now rests on two graphics rather than one.
+
+---
+
+## 2c — Graphic A, `from-words-to-worlds.png`
+
+**Coverage: 57 of 57 cite-bearing lines. Complete.** Read at `af89f85` against the PNG opened directly. **The resync's Hands re-read for Graphic A is discharged here.**
+
+| Document | Lines | `MATCH` | False positive | Findings |
+|---|---|---|---|---|
+| `systems-manifest.md` | 21 | 21 | — | 0 |
+| `graphics-close-reading.md` | 3 | 3 | — | 0 |
+| `atomic-primitives-map.md` | 14 | 14 | — | 0 |
+| `reason-model-map.md` | 19 | 1 | **18** | 0 |
+| | **57** | **39** | **18** | **1** (below, outside the line count) |
+
+### Eighteen of nineteen "A-cites" in the reason model are a different paper
+
+`reason-model-map.md` uses `A1`–`A5` for the **AgentScope paper's own sections**: `A1` Trajectory of an LLM agent, `A2` ReAG, `A3` Neural invariants, `A4` Failure taxonomy, `A5` Remainder of the 22-page paper. Only line 241 — "R1 output (empty totality) matches A1" — cites Graphic A's panel, and it matches: A1 is "Start — An empty Lace."
+
+**A fourth identifier family, undocumented, accounting for a third of this sub-pass's line count.** Registered in this sub-pass.
+
+This is the largest instrument error the iteration has found, and it inflated pass 1's board: "97 documents citing a graphic panel" counted this file on the strength of eighteen citations to a paper.
+
+### The genuine citations are exact, and several are sharp
+
+- `systems-manifest.md:90` — "'PIE' vs 'pie' appear in A6–A7". **A6 prints `PIE`, A7 prints `pie`.** A case-sensitivity gap found by looking at two panels.
+- `systems-manifest.md:190` — the responsibility chain "Courier / Restaurant / Customer / Support". **All four labels exact**, and A9's own line is "Each word's star connects through the actual sequence of the text."
+- `systems-manifest.md:274` — "A12 Zoom in: The PIE star" — **the panel heading verbatim.**
+- `systems-manifest.md:65` — "punch-card style" — **A13's bullet verbatim**: "Input is treated exactly as it arrives (punch-card style)."
+- `systems-manifest.md:137` — "First occurrence creates the beginning of a star (A2)" against A2's "The first occurrec[o]s of a word creates the beginning of a star."
+
+### Finding 2c-1 — the second `MISQUOTE`, in the same document as the first
+
+`graphics-close-reading.md:187` block-quotes Graphic A's header:
+
+> "One continuous strand. **Every word a centimetre of wire.** …"
+
+**The panel prints `centimeter`.** The file then builds its conversion table on that clause at line 197 and indexes it at line 384. Tree-wide: `centimetre` 3, `centimeter` 0 — **every instance in the repository is the altered spelling.**
+
+Together with 2a-1's truncated D4 quotation, that is two verbatim-presented quotations altered in transit, both in `graphics-close-reading.md`. 2b showed the same file using an ellipsis correctly on C3, so **this is not carelessness across the file; it is two specific passages.**
+
+**Verdict: `MISQUOTE`.** Law station; a proposal, not a repair.
+
+### The transcription ruling §1.2 asked for
+
+**Reproduce the source's spelling and its errors; mark an error where it would confuse, never silently correct it.**
+
+Graphic A prints three typographical errors — `occurrecos` (A2), `3D obiect` (A11), `Continure.` (A13). The last is **confirmed a typo by Graphic C**, whose C12 prints the same governing sentence ending `Continue.`
+
+Under this ruling `centimetre` is a defect whichever way it arose, and a document wanting to flag the source's US spelling adds a note rather than changing the word. **No document in the tree currently transcribes A's prose at length, so the ruling costs nothing today** — it is placed so that the first one to try has an answer.
+
+### A limit in the 240-line metric, stated
+
+The denominator counts lines carrying a **numbered panel token**. Citations that name a graphic region instead — `A header`, `D footer`, `D Key properties`, `C header` — are outside it. Eleven such references exist; most share a line with a numbered cite and are covered anyway, but roughly four are not. **2c-1 is one of them**: the misquoted header sits on line 187, which carries no panel number and was never in the 57.
+
+**So the finding of this sub-pass was found outside its own coverage metric.** Recorded plainly, because a coverage fraction that cannot see its own best finding is worth knowing about before iteration 2 reuses it.

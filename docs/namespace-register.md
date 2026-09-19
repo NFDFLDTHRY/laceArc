@@ -3,9 +3,9 @@
 **Status:** `[PROPOSAL]` for the citation rule. The families themselves are measured, not proposed — each range below was read out of its defining document.
 **Station:** maps. **Emission:** `[GAP]`. No `src/`.
 
-Twenty identifier families share one small alphabet. **41 tokens are claimed by two or more families**, 19 of them by three. `A5` is a Graphic A panel, a `trainA` gear tooth, and a coherence-audit station.
+Twenty-one identifier families share one small alphabet. **41 tokens are claimed by two or more families**, 19 of them by three and **5 by four**. `A5` is a Graphic A panel, a `trainA` gear tooth, and a coherence-audit station.
 
-**How those two numbers are got:** expand every `Range` cell in the table below into its tokens, *keeping zero-padding*, and count the tokens with more than one owner. Re-derived that way at `810d200`, and again at `af89f85` after [pass 2b](plans/verification-iter1-pass-2-findings.md) registered Graphic C5's dimension planes — which added a family and moved the three-owner count from 15 to 19 without moving the two-owner total, because `D1`–`D4` already collided. An earlier reading of this file said sixteen families and 33 tokens and did not record how it counted, so the figures are replaced rather than reconciled — which is the whole complaint of [verification iteration 1](plans/verification-iteration-1-plan.md) landing on this file first.
+**How those two numbers are got:** expand every `Range` cell in the table below into its tokens, *keeping zero-padding*, and count the tokens with more than one owner. Re-derived that way at `810d200`, and again at `af89f85` after passes 2b and 2c registered Graphic C5's dimension planes and the AgentScope paper's sections. Neither moved the two-owner total — `D1`–`D4` and `A1`–`A5` already collided — but the three-owner count went 15 → 19 and a **four-owner** band appeared for the first time. An earlier reading of this file said sixteen families and 33 tokens and did not record how it counted, so the figures are replaced rather than reconciled — which is the whole complaint of [verification iteration 1](plans/verification-iteration-1-plan.md) landing on this file first.
 
 **Nothing is renamed to fix this, and nothing should be.** The gear keys are string literals in `contracts-*.js`, and [the 1:1 audit](clock/gearing-code-1to1.md) states the 47 names form a bijection with the registry — renaming a tooth breaks running code and a documented audit together. `A1` alone appears in 50 files. See [the restructure plan §4.7](plans/restructure-plan.md) for the measurement that settled this.
 
@@ -50,6 +50,7 @@ Each station applies this when it next touches a file it owns. **No file is rewr
 | Cup stage | `C1`–`C5` | [coffee-cup-systems-manifest.md](clock/coffee-cup-systems-manifest.md) | hologram | |
 | Rowlands clipboard section | `D1`–`D7` | [rowlands-pass-2-plan.md](clipboards/rowlands-pass-2-plan.md) | clipboards | `D7` is optional in the plan and present in the clipboard |
 | Graphic C5 dimension plane | `D1`–`D4`, `Dn` | panel C5 of `n-dimensional-relationships.png`; read in [pass 2b](plans/verification-iter1-pass-2-findings.md) | law | printed on the panel, not assigned |
+| AgentScope paper section | `A1`–`A5` | [reason-model-map.md](reason-model-map.md) §§ on the AgentScope reading | maps | the paper's own sections, not Graphic A panels |
 | Water bucket / spec | `OBS` `DELTA` `UNK` `INVALID`; `F1`–`F5` | [water-systems-manifest.md](clock/water-systems-manifest.md) | hologram | |
 
 ## Collisions, and how to tell
@@ -57,6 +58,7 @@ Each station applies this when it next touches a file it owns. **No file is rewr
 | Token | Families | How to tell |
 |---|---|---|
 | `A1`–`A9` | Graphic A panel · gear `trainA` tooth · audit station | Panel if the sentence cites a picture or a Piece. Tooth if it is inside `docs/gearing/` or the gearing HTML. Station if it is a tick in [the audit log](coherence-audit-log.md) |
+| `A1`–`A5` | Graphic A panel · gear `trainA` tooth · audit station · **AgentScope paper section** | Four owners. The paper's sections appear only in [the reason model map](reason-model-map.md)'s AgentScope reading, where `A2` is ReAG and `A4` is the failure taxonomy — never a picture. [Pass 2c](plans/verification-iter1-pass-2-findings.md) found 18 of that file's 19 `A`-tokens are this family |
 | `A10`–`A13` | Graphic A panel · audit station | `trainA` stops at `A9`; audit stations run to `A14` |
 | `B1`–`B5` | Graphic B panel · gear `trainB` tooth | As above. Graphic B runs to `B12`; `trainB` stops at `B5` |
 | `C1`–`C5` | Graphic C panel · gear `trainC` tooth · **Cup stage** | Cup stages are event-time and appear only in Shadow prose under `docs/clock/`. Graphic C runs to `C12` |
