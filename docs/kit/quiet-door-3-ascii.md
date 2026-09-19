@@ -2,7 +2,7 @@
 
 **Object:** `docs/README.md`  
 **Station:** kit (reading). Law wins on the door.  
-**Executed:** [quiet-door-3-pass-1-plan.md](quiet-door-3-pass-1-plan.md) · [quiet-door-3-pass-2-plan.md](quiet-door-3-pass-2-plan.md).  
+**Executed:** [quiet-door-3-pass-1-plan.md](quiet-door-3-pass-1-plan.md) · [quiet-door-3-pass-2-plan.md](quiet-door-3-pass-2-plan.md) · [quiet-door-3-pass-3-plan.md](quiet-door-3-pass-3-plan.md).  
 **Not:** live law. Not Hands. Not Graphic D. Not cold-doors pass 7. Not door #1 pass 7.  
 **Emission:** `[GAP]`. No `src/`. Court door bytes untouched.
 
@@ -113,4 +113,36 @@ G2 stays `[GAP]`.
 | T1 | Eight In / Does / Break / Gap / Role rows |
 | T2 | Ct1 Break = page as live law; Ct3 Break = DRAFT accepted |
 | T3 | Spine left in place |
+| T4 | Court bytes untouched |
+
+## Pass 3 — grain
+
+Page label is what the court *calls* the file. `which` is who *owns* it. Those are not the same column.
+
+| Named on the court | Page label | `which` now | Collapse would look like |
+|---|---|---|---|
+| `graphics/` | Hands — source of record | graphics | treat the court as owning the PNGs |
+| `systems-manifest.md` | Hands | law | treat the contract map as a fifth graphic |
+| `graphics-close-reading.md` | Hands | graphics | treat D1 reading as live law |
+| `pointer-emission.md` | open gate | law | treat DRAFT as accepted because law owns it |
+| `law-why-these-documents.md` | Law — live law | law | treat the court page as this file |
+| `staking-the-workspace.md` | Law | law | treat staking as the winner over live law |
+| `references.md` | Law | law | drop PDFs into the repo because Law named them |
+| `reason-model-map.md` | Maps and readings | maps | treat KEEP/FORBID as Hands |
+| `atomic-primitives-map.md` | Maps — `[PROPOSAL]` | maps | treat P0–P4 as Core |
+| `namespace-register.md` | Maps | maps | merge A5 senses because they share a letter |
+| `systems-manifest-ascii.md` | Maps | maps | treat the ASCII spine as the manifest |
+| `coherence-audit-log.md` | Operations | maps | rewrite an earlier tick |
+| `defrag-plan.md` | Operations | maps | treat complete as still the filing plan of record |
+| `shadow-clock-gearing.html` | Not prose | renderer | treat the viewer as Graphic D |
+
+Hands on this page is a **source claim**. It is not `which=graphics` for every row under that heading. Manifest sits in Hands on the page and in law at `which`.
+
+## Pass 3 deltas
+
+| Ticket | Action |
+|---|---|
+| T1 | Fourteen-row grain |
+| T2 | Page label ≠ ownership |
+| T3 | Manifest Hands-on-page / law-at-which |
 | T4 | Court bytes untouched |
