@@ -3,7 +3,7 @@
 **Status:** record. **Station:** maps *(this file)*; the work below was done under `graphics`, `hologram` and `clipboards`, each claimed and released. **Emission:** `[GAP]`. No `src/`.
 **Method:** [the pass 5 docket](verification-iter4-pass-5-plan.md). **Board pinned at:** `93a2bc0`, 491 tracked files.
 
-**Four items applied. Eight still need the human, and two of those are blocked by a standing order rather than by a judgement.**
+**Seven items applied. Six still need the human.** Four were applied first; **the three code items were then authorized and taken** — §9.
 
 ---
 
@@ -115,6 +115,50 @@ broken link in docs/history/relationship-evidence-pass-3-plan.md -> relationship
 **This is the second time this campaign has caught a live forward reference in the act, and it is the argument for `E1`, `D1` and `D2` happening in front of us.** Had any check gated, `Grok-evidence` would be blocked, mid-pass, over a file its own plan is an instruction to write.
 
 **No action.** [Pass 4](verification-iter4-pass-4-findings.md) priced the only installable gate and this is what it would have cost, once, in the ninety minutes it took to run pass 5.
+
+---
+
+## 9. Authorized after the record was written: E, F and F7
+
+**The human took all three code items.** The concern that `F7` sits downstream of phase 8 was stated and the decision was reaffirmed, so it was done.
+
+### Option E — check 6 reads more than markdown
+
+| | |
+|---|---|
+| Orphans before | 6 |
+| **After** | **2** — both plans of a campaign mid-flight |
+| Advisory findings | 15 → **11** |
+
+All four false positives are gone. `LATEST.json` needed one thing the obvious fix would have missed: it is reached **only through a githack URL**, so a path inside a URL now has every tail emitted and the join against the tracked set discards the rest.
+
+**The use/mention line is held.** A path in a shell or python comment is a mention and is skipped — the same distinction `_prose` draws for markdown. The ownership map in `coord.sh`, an `href`, a webmanifest entry and a quoted path in a script are **uses**. Dropping comments cut the reachable-by-code set from 109 files to 106 with no false positive returning.
+
+**Regression tested both ways:** a fresh unlinked markdown file is still reported, and removing it returns the count. **The false-negative surface was measured, not assumed** — 58 markdown files are now also reachable via code, and the dominant source is `coord.sh`'s station ownership map, which is the tree's authoritative statement that a file is owned. That is a reference, not a mention.
+
+### Option F — the two classes print apart
+
+Each advisory class now prints under a heading saying whether it is **work** or **context**, and the summary breaks the count down. This is the direct consequence of pass 4: `docs/README.md` and `docs/clock/passes` sat at the same 50% coverage with 0 and 30 unreachable files, and printed in one block nobody could tell them apart.
+
+### `F7` — renamed, not repaired
+
+`hologram-ir-validate.py` → **`hologram-ir-shape-check.py`**. `PASS`/`FAIL` → `SHAPE OK`/`SHAPE FAIL`, and a passing run now prints the three things it did not check — **because the old summary was byte-identical to the golden's on five of six deliberately wrong plans.**
+
+`hologram-ast-ir.md` records it as **`[GAP]`: nothing in this tree checks the graph against the plan.** Amendment **A7 is the repair and stays open.**
+
+**Dated records keep the old name.** They record what was run under it.
+
+### Where the tree stands
+
+| | At the docket | **Now** |
+|---|---|---|
+| Advisory findings | 45 | **11** |
+| Orphans | 35 | **2** |
+| Instruments with a measured live defect | 1 | **1, now honestly named** |
+
+**And the forward reference in §8 resolved in one commit** — `73bbca5` planned it, `4dd26c7` wrote it. Faster than the median of 1. Had any check gated, it would have blocked a campaign for the length of one commit over a file its own plan was an instruction to write.
+
+**Six items still need the human:** `D10`, `D11` — which is the `src/` gate — `D12`, `D13`, and the twelve remaining branch commits.
 
 ## Steward test
 
