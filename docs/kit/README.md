@@ -23,6 +23,7 @@ Portable steward controls. Not Hands. Not Graphic D. Nothing here is a source of
 | [scanner-fix-pass-1-plan.md](scanner-fix-pass-1-plan.md) | Scanner fix pass 1: LIVE ≠ idle | EXECUTED |
 | [scanner-fix-pass-2-plan.md](scanner-fix-pass-2-plan.md) | Scanner fix pass 2: stamp vs activity fields | EXECUTED |
 | [scanner-fix-pass-3-plan.md](scanner-fix-pass-3-plan.md) | Scanner fix pass 3: register vs receipt vs which | EXECUTED |
+| [scanner-fix-pass-4-plan.md](scanner-fix-pass-4-plan.md) | Scanner fix pass 4 PLAN: rescan walk. Not Core ASCII | **PLAN only. Not run** |
 | [scanner.md](scanner.md) | Rescan spine. Stamp ≠ activity. Door #1 LIVE + CLOSED 6/6 | pass 1–3 |
 | [agent-control.md](agent-control.md) | Portable standing prompt: the staking law verbatim, then the operating controls C01–C12 | DATED transport at `e21cf39`; [live law](../law-why-these-documents.md) wins |
 | [agent-task-template.md](agent-task-template.md) | One-task, adjudication, proof-contract and handoff forms | live |

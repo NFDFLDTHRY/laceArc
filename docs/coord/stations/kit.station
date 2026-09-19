@@ -2,6 +2,6 @@ STATUS: HELD
 STATION: kit
 OWNS: docs/kit/** .claude/**
 AGENT: Grok-kit
-BASE: b0aabef03e639b4596c789a26a2ac1b822944acf
-SINCE: 2026-09-19T06:33:47Z
-NOTE: Scanner-fix pass 3 EXECUTED. Grain on scanner.md. Next pass 4 walk. Φ [GAP].
+BASE: 62e081c99d1d3df4157d76de6577ec69cb3bc76a
+SINCE: 2026-09-19T06:36:24Z
+NOTE: Scanner-fix pass 4 PLAN. Walk mechanism. Not Core ASCII rewrite. Φ [GAP].
