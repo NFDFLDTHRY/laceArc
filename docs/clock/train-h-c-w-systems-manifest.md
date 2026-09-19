@@ -1,5 +1,7 @@
 # Gear manifest — Train H × C × W (the composition)
 
+**Executed passes:** [1](passes/train-pass-1-plan.md) · [2](passes/train-pass-2-plan.md) · [3](passes/train-pass-3-plan.md) · [4](passes/train-pass-4-plan.md) · [5](passes/train-pass-5-plan.md) · [6](passes/train-pass-6-plan.md) — plans in [`passes/`](passes/README.md). A new pass is linked here once it is executed.
+
 ## Overview
 
 Composition of three already-bound gears. Not a fourth mill. Not Lace Core. Not Graphic D. Does not close POINTER emission.
