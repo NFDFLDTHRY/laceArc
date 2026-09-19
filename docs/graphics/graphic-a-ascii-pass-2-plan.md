@@ -1,12 +1,12 @@
 # Graphic A → ASCII systems diagram — Pass 2 PLAN
 
-**Status:** PLAN only. Not run. One act. Remainder queued.  
+**Status:** EXECUTED — panel fields on `docs/graphics/graphic-a-ascii.md`. Emission `[GAP]`.  
 **Station:** graphics (HELD Grok-graphics).  
 **Authority:** `docs/graphics/from-words-to-worlds.png`. Then the pass-1 spine [`graphic-a-ascii.md`](graphic-a-ascii.md).  
 **Not authority:** `docs/systems-manifest.md` piece-field dumps (wrong grain). Maps-station ASCII. OCR.  
 **Emission:** `[GAP]`. No `src/`. PNG bytes stay put. Spine from pass 1 stays.
 
-Pass 1 drew A1→A13. The human named pass 2. Execute is not this tick.
+Execute landed: thirteen In / Does / Break / Gap rows. Remainder still queued.
 
 ```
 pull/ff → refresh graphics
