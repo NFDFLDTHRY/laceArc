@@ -1,6 +1,6 @@
 # Rowlands pass 5 — rigorous Wave B mechanism map
 
-**Status:** PLANNED — not executed. Emission `[GAP]`.  
+**Status:** EXECUTED — Wave B M-B1…M-B5 + ASCII P-B1…P-B5. Waves C–D deferred with seeds. Emission `[GAP]`.  
 **Station:** clipboards (HELD `reference-Mapper`)  
 **Base at plan:** refresh to current `origin/main` before execute  
 **Book:** Peter Rowlands, *Zero to Infinity* · K&E Vol. 41 · World Scientific 2007  
@@ -189,3 +189,16 @@ Group duals are book readings — not a second Lace store.
 “Breaking the Dirac code” is streamlining a physics equation — not mutating WORD @ i.  
 Nilpotent emergence ≠ Φ scheduler.  
 Φ stays `[GAP]`.
+
+---
+
+## Execution record
+
+| Field | Value |
+|---|---|
+| When | 2026-09-18 ~17:10 PT |
+| Agent | `reference-Mapper` |
+| Base | refreshed to `origin/main` (rebase onto 389b86e; claim BASE matches) |
+| ASCII | Included (P-B1…P-B5 + SOURCE MACHINERY Wave B fork) |
+| Deferred | Wave C (M-C1/C2); Wave D (M-D1/D2/D3) — seeds retained |
+| Push | **not** pushed (standing rule) |

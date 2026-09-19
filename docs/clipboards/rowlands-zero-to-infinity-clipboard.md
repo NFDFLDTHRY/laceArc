@@ -111,6 +111,29 @@ T5 five-stakes: **skip** — PAGE 2/5 source pins and morals agree with this PDF
 
 ---
 
+## Pass 5 receipt
+
+| Field | Value |
+|---|---|
+| Status | EXECUTED |
+| When | 2026-09-18 ~17:10 PT |
+| Station | clipboards · agent `reference-Mapper` |
+| Plan | [rowlands-pass-5-plan.md](rowlands-pass-5-plan.md) |
+| Hands skim | shoe → graphics A–D → systems-manifest → law → reason-model-map §2 (R1–R6 read-only) → five-stakes PAGE 2/5 → Pass 4 Wave A cards · this plan |
+| PDF | **PRESENT** — `refs/local/rowlands-zero-to-infinity.pdf`; **738** pp.; text layer; offset −25; gitignored; never staged |
+| Method | `pdftotext -f N -l N -layout` on Wave B pins |
+| Pins | M-B1 PDF **113**/p.88; M-B2 PDF **136**/p.111; M-B3 PDF **162**/p.137; M-B4 PDF **264**/p.239; M-B5 PDF **310**/p.285 (ch.11 head; plan ~315 region) |
+| Product | Wave B mechanism cards M-B1…M-B5; SOURCE MACHINERY Wave B fork + panels P-B1…P-B5; Waves C–D deferred with seeds |
+| Artifacts | [rowlands-zero-to-infinity-mechanisms.md](rowlands-zero-to-infinity-mechanisms.md) · [rowlands-zero-to-infinity-ascii-machinery.md](rowlands-zero-to-infinity-ascii-machinery.md) |
+| ASCII | **Yes** — P-B1…P-B5 + overview Wave B fork (book glyphs only in fences) |
+| Amended | Wave A cards · A–X morals · Pass 2–4 deltas · reason-model-map · law · graphics · src/ · systems-manifest · systems-manifest-ascii | **No** (receipt only on this clipboard; Wave A untouched) |
+| Deferred | Wave C (ch.13–15); Wave D (ch.17–18, 20–21, App. A) |
+| Emission | still `[GAP]`; no card invents POINTER when/arity/adjacency; D7 OPENs ≠ Φ fill |
+| Cross-walk | M-B1→FORBID-schema/KEEP-read/R4; M-B2→FORBID-write/SILENT/R3–R4; M-B3→FORBID-schema/R4; M-B4→FORBID-fields/R4; M-B5→FORBID-history/Φ/R4 |
+
+---
+
+
 ```
 ┌──────────────────────────────────────────────────────────────────────────┐
 │ CLIPBOARD                                                                │

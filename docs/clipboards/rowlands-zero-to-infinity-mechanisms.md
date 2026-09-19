@@ -1,10 +1,10 @@
 # Rowlands — *Zero to Infinity* — mechanism cards (constructive algorithms)
 
-**Status:** Pass 4 EXECUTED (Wave A M-A1…M-A9 complete; Waves B–D deferred with seeds). Emission `[GAP]`.  
+**Status:** Pass 5 EXECUTED (Wave A M-A1…M-A9 + Wave B M-B1…M-B5; Waves C–D deferred with seeds). Emission `[GAP]`.  
 **Source:** Peter Rowlands, *Zero to Infinity: The Foundations of Physics* · Series on Knots and Everything Vol. 41 · World Scientific 2007  
 **PDF:** `refs/local/rowlands-zero-to-infinity.pdf` (738 pp., text layer; **never git-add**)  
 **Offset:** printed p ≈ PDF p − 25 after front matter (Pass 1: ch.1 printed p.1 ≈ PDF 26)  
-**Sighting this pass:** `pdftotext -f N -l N -layout` on Wave A pins; prior Pass 1–3 pins cited  
+**Sighting this pass:** `pdftotext -f N -l N -layout` on Wave B pins (ch.4/5/6/10/11); Wave A pins unchanged  
 **Companion:** [`rowlands-zero-to-infinity-clipboard.md`](rowlands-zero-to-infinity-clipboard.md) · ASCII [`rowlands-zero-to-infinity-ascii-machinery.md`](rowlands-zero-to-infinity-ascii-machinery.md) · map [`reason-model-map.md`](../reason-model-map.md) §2 · [`clipboard-five-stakes.md`](clipboard-five-stakes.md) PAGE 2/5  
 
 Law: empty start · no extra rooms · “rewrite” ≠ mutate-WORD · Hands win · `[GAP]` sealed.  
@@ -24,6 +24,8 @@ This file is **Shadow / Layer III documentation of the book**, not Lace `src/`, 
 | **FORBID-as-Core-schema** | Must not install Dirac / nilpotent / TOE tables as Core schema |
 | **FORBID-as-Core-write** | Must not become an array rewrite, second store, or emission rule |
 | **FORBID-R5/R6** | DNA rewrite / UG tables stay off-shoe (opened ≠ imported) |
+| **FORBID-as-Core-fields** | Must not install E/S/W / force / charge tables as Core fields |
+| **FORBID-as-history-store** | Must not treat QFT / propagator / renormalization methods as Lace history store or Φ scheduler |
 
 ---
 
@@ -363,17 +365,239 @@ require: (±ikE ± ip + jm)^2 = 0
 
 ---
 
-## Waves B–D — deferred (seeds only)
+## Wave B — groups / Dirac-code / nilpotent physics / forces / QFT (blocking)
+
+### M-B1 — Groups & representations; dual hierarchy from nilpotent
+
+| Field | Content |
+|---|---|
+| Kind | groups / representations / dual hierarchy |
+| Book locus | ch.4 “Groups and Representations” · printed p.88 · PDF **113**; §4.3–4.4 dual/group ladder · PDF **120–122** / printed ~95–97 |
+| Sighting method | `pdftotext` this pass on PDF 113–115, 120–122 |
+| Eye-quote | “The Dirac nilpotent and group representations allow many mathematical reformulations… using reversals of properties and a potentially infinite hierarchy of dualities.” / “object symmetry has the form SU(3) × SU(2) × U(1)… from the spontaneous symmetry breaking of the octonion symmetry G2.” |
+| Inputs | Nilpotent Dirac packaging (M-A5/M-A6); dual processes conjugation / complexification / dimensionalization (M-A3); STMC parameter duals |
+| Outputs | Dual hierarchy of conjugations/complexifications/dimensionalizations; group structures of physics interest (C₂, C₄, Q₄, Dirac 64, broken-octonion → SM factors); visual dual maps |
+| Invariants | Dualities reverse properties without inventing a second cosmos; math representational space may exceed physical representational space; nilpotents sit at quantum duality (object symmetry need not be a general group) |
+| Algorithm | See below |
+| Complexity / termination | Finite group-ladder steps per stage; hierarchy may continue; halt when dual/group sketch + FORBID stamp recorded |
+| Worked miniature | C₄ × C₂ × C₂ → dual anticommuting → C₄ × Q₄ (complexified quaternions); broken octonion G₂ → SU(3)×SU(2)×U(1) (PDF 120–121) |
+| Lace stamp | **FORBID-as-Core-schema**; **KEEP-read** as book dual/group map |
+| Hands cite | PAGE D neighborhood (physics tables); not a second Lace store; Graphic D remains sole storage |
+| Map cite | **R4** neighborhood (group/TOE tables); dual map may KEEP-read beside R1/R3 kin |
+| False friend | Dual hierarchy / SM group factors ⇒ second Lace schema or Core group table |
+| Open gaps | Full §§4.5–4.9 visual topology embeds; exact infinite-dual stopping rule — book continues; Φ = `[GAP]` |
+
+**Algorithm**
+
+1. **Preconditions.** Nilpotent / Dirac packaging available; STMC dual vocabulary from earlier chapters.  
+2. **State.** Current dual/group sketch (empty at start of ch.4 reading).  
+3. **Steps.**  
+   1. Open ch.4: treat Dirac nilpotent + representations as allowing **reversals** and a **hierarchy of dualities** (PDF 113).  
+   2. Record parameter duals (property/antiproperty; conserved/nonconserved; real/imaginary) as C₂ / C₄ factors; assemble C₄ × D₂-style order-16 then dual order-32 / C₄ × Q₄ as book (PDF 120).  
+   3. Distinguish existence/nonexistence dual maps from explicit vector/quaternion natures (64-term Dirac group option).  
+   4. Optionally lift to broken-octonion / G₂ → SU(3)×SU(2)×U(1) as **book** object-symmetry story (PDF 120–121).  
+   5. **Stamp:** KEEP-read as dual map; **FORBID** installing as Core schema / second store.  
+4. **Choice points.** Which visual dual (§4.8–4.9) or supersymmetry packaging to sketch — book options; `[OPEN]` which later chapter to deepen.  
+5. **Halt.** Dual/group sketch certified + stamp.  
+6. **Output certificate.** PDF **113** (ch.4 head) + PDF **120–121** dual/SM pin.
+
+```text
+nilpotent + duals → hierarchy(conjugation, complexification, dimensionalization)
+group ladder: C2/C4/Q4/... ; optional G2 --break--> SU(3)xSU(2)xU(1)
+KEEP-read map; FORBID Core schema
+```
+
+---
+
+### M-B2 — Breaking the Dirac code (remove redundancy / streamline)
+
+| Field | Content |
+|---|---|
+| Kind | equation hygiene / redundancy removal |
+| Book locus | ch.5 “Breaking the Dirac Code” · printed p.111 · PDF **136**; §5.2–5.3 redundancy/defragment · PDF **138–140** / printed ~113–115; §5.5 QSV overspecification · PDF **148–149** / printed ~123–124 |
+| Sighting method | `pdftotext` this pass on PDF 136–140, 148–149, 160–161 (orthonormal four solutions) |
+| Eye-quote | “the Dirac equation… incorporates intrinsic redundancies whose removal necessarily leads to an enormous gain in calculating power…” / “Effectively, the ‘Dirac code’ is broken…” / “The Dirac equation actually overspecifies its components… three times… In the nilpotent formulation, the information is specified only once…” |
+| Inputs | Conventional matrix Dirac (γµ∂µ + im)ψ = 0; Pauli/gamma asymmetry; four spinor solutions |
+| Outputs | Streamlined / defragmented nilpotent Dirac; physical (rotation-symmetric) momentum; four orthonormal solutions as ±E ±p package; calculating-power gain claimed by book |
+| Invariants | Remove coordinate/matrix-induced singularities and unphysical px±ipy-style fragments; keep physics content; one QSV specifies the four |
+| Algorithm | See below |
+| Complexity / termination | Finite algebraic rewrite of operator/spinor packaging; halt when streamlined form + orthonormal note certified |
+| Worked miniature | **Preferred.** Conventional overspecification (E-p-m + spinors + exponentials) → single anticommuting pentad (ikE + ip + ijm) selects the four ±E ±p terms automatically (PDF 148–149). |
+| Lace stamp | **FORBID-as-Core-write**; **SILENT** for Lace append |
+| Hands cite | PAGE C/D: streamlining ≠ mutate WORD @ i; Rule Zero |
+| Map cite | **R3** name-clash neighborhood (book “code break” ≠ array rewrite); **R4** (Dirac remains physics) |
+| False friend | “Break the Dirac code” / streamline ⇒ mutate WORD @ i or Lace append scheduler |
+| Open gaps | Full bilinear-covariant / transformation tables in later §§5.x; interacting fields → M-B4/M-B5; Φ = `[GAP]` |
+
+**Algorithm**
+
+1. **Preconditions.** Conventional Dirac matrix form available; multivariate vector / quaternion toolkit from earlier chapters.  
+2. **State.** Redundant Dirac packaging (matrices + 4-spinor + phase).  
+3. **Steps.**  
+   1. Locate redundancy source: matrix/Pauli representation breaks 3-D rotation symmetry of momentum (PDF 138–139).  
+   2. Replace fragmented γ/Pauli packaging with multivariate / quaternion operators so spatial terms stay physically symmetric (“defragment,” §5.3).  
+   3. Collapse overspecification: encode state once in quaternion state vector / nilpotent pentad; derive remaining ±E ±p companions automatically (PDF 148–149).  
+   4. Verify four solutions orthonormal (book: Gram–Schmidt / helicity alignment; PDF ~160–161).  
+   5. **Stamp FORBID-as-Core-write**; SILENT for Lace append — this is physics-equation hygiene, not array mutation.  
+4. **Choice points.** How far into bilinear covariants / formal maps to conventional form — `[OPEN]` depth; not required to close Φ.  
+5. **Halt.** Streamlined nilpotent Dirac + orthonormal four certified.  
+6. **Output certificate.** PDF **136** head + PDF **148–149** once-only QSV pin.
+
+```text
+conventional: (gamma d + im) psi = 0   # redundant / asymmetric packaging
+defragment --> quaternion / multivariate operators
+QSV once: (ikE + ip + ijm) implies four (±E, ±p)
+FORBID Core-write; SILENT Lace append
+```
+
+---
+
+### M-B3 — Dirac nilpotent as physics generator (emergence)
+
+| Field | Content |
+|---|---|
+| Kind | emergence / physics generator from formalism |
+| Book locus | ch.6 “The Dirac Nilpotent” · printed p.137 · PDF **162**; §6.4 Vacuum · PDF **171** / printed ~146; kin M-A6/M-A7 |
+| Sighting method | `pdftotext` this pass on PDF 162–164, 171–172 |
+| Eye-quote | “Fermions and bosons, baryons… CPT… vacuum… supersymmetry, renormalization, the quantum field… emerge out of the formalism alone, with no empirical or model-dependent input.” / “k(…), i(…), j(…) act as vacuum operators, leaving the fermion state unchanged.” |
+| Inputs | Nilpotent state (±ikE ± ip + jm); quaternion units i,j,k; free-particle / vacuum phase |
+| Outputs | Book’s emergence list: fermion/boson/baryon sketches, CPT, vacua, SUSY-without-new-particles readings, QFT operator character — **as formalism consequences**, not Lace tables |
+| Invariants | Emergence is from nilpotent algebra, not from adding empirical model rooms; vacuum operators leave fermion unchanged; bosons via Klein–Gordon path (nilpotent op needs nilpotent ψ) |
+| Algorithm | See below |
+| Complexity / termination | Finite operator constructions + stamp; halt when emergence fan-out recorded FORBID for Core |
+| Worked miniature | Vacuum series: ψ = ψ k ψ k ψ … ≡ ψ (−ψ̂) ψ (−ψ̂) … alternate fermion/boson images (PDF 171–172); spin/helicity constants of motion (§6.1–6.2) |
+| Lace stamp | **FORBID-as-Core-schema** / meaning table (**R4**) |
+| Hands cite | PAGE D; five-stakes “vacuum tables” = R4 same tooth; FM-R4 |
+| Map cite | **R4** |
+| False friend | Nilpotent emergence ⇒ Core meaning table / Φ scheduler / second store |
+| Open gaps | Full baryon/CPT/SUSY §§6.x detail; force packaging → M-B4; QFT methods → M-B5; Φ = `[GAP]` |
+
+**Algorithm**
+
+1. **Preconditions.** Nilpotent Dirac state from M-A6 / streamlined M-B2.  
+2. **State.** Fermion nilpotent ψ_f = (ikE + ip + jm) (signs per book).  
+3. **Steps.**  
+   1. Read ch.6 head: treat formalism as **generator** of fermion/boson/baryon/CPT/vacuum/SUSY/QFT concepts (PDF 162).  
+   2. Derive standard spin/helicity constants in quaternion clothing (§6.1–6.2) as worked physics, not Core ops.  
+   3. Build vacuum operators by postmultiplication with k, i, or j; expand infinite alternate fermion/boson series (PDF 171).  
+   4. Note boson exclusion: nilpotent differential needs nilpotent wavefunction; Klein–Gordon path admits bosons (PDF ~170).  
+   5. **Stamp FORBID-as-Core-schema / meaning table** — emergence stays Shadow physics.  
+4. **Choice points.** Which emerged topic to deepen (baryon §6.6, CPT, SUSY) — `[OPEN]`; Wave C charge tables deferred.  
+5. **Halt.** Emergence fan-out documented + FORBID.  
+6. **Output certificate.** PDF **162** head + PDF **171** vacuum pin.
+
+```text
+nilpotent box
+   |-- fermions / antifermions (±E, ±p)
+   |-- bosons (via KG path; not nilpotent-on-nilpotent alone)
+   |-- vacuum ops i,j,k (leave fermion unchanged)
+   |-- CPT / SUSY / QFT readings (book)
+FORBID Core schema / meaning table
+```
+
+---
+
+### M-B4 — Electric / strong / weak via nilpotent package
+
+| Field | Content |
+|---|---|
+| Kind | forces / interactions from nilpotent structure |
+| Book locus | ch.10 “Electric, Strong and Weak Forces” · printed p.239 · PDF **264**; §10.1 Coulomb nilpotent · PDF **265–266** / printed ~240–241; §10.4 SU(3) from **p** · PDF **275–276** / printed ~250–251 |
+| Sighting method | `pdftotext` this pass on PDF 264–266, 275–276 |
+| Eye-quote | “only one set of equations is required… because the nilpotent… works as a complete ‘package’…” / “a point source… requires a minimal condition of a Coulomb field to provide nilpotent solution.” / “SU(3) for the strong interaction is shown to be a consequence of the behaviour of the p term…” |
+| Inputs | Nilpotent (±kE ± ii p + ij m); spherically symmetric V(r); angular-momentum / spin packaging |
+| Outputs | Coulomb (inverse-r) as minimal nilpotent spherical solution; E vs S vs W differences from nilpotent structure; SU(3) from **p**-term phases; electroweak SU(2)_L × U(1) from iE–m pseudoscalar-scalar combination (book claim) |
+| Invariants | One nilpotent package carries the significant information; spherical point source forces Coulomb minimum; force distinctions are structural, not extra Lace fields |
+| Algorithm | See below |
+| Complexity / termination | Finite potential trials + group-phase sketch; halt when E/S/W structural map + FORBID recorded |
+| Worked miniature | **Preferred.** Polar σ·∇ = ∂/∂r + 1/r ± i(j+½)/r; unless V(r) supplies ±A/r, **no nilpotent solution** → Coulomb is minimal spherical condition (PDF 266). |
+| Lace stamp | **FORBID-as-Core-fields** / force table |
+| Hands cite | PAGE D physics; not Graphic D fields; FM-R4 |
+| Map cite | **R4** |
+| False friend | E/S/W nilpotent package ⇒ Core force fields / charge columns / second store |
+| Open gaps | Full hydrogen hyperfine six-step writeup; linear strong potential analytics; Higgs/weak vacuum fill detail — later §§10.x / Wave C; Φ = `[GAP]` |
+
+**Algorithm**
+
+1. **Preconditions.** Nilpotent free-fermion package; polar conversion of σ·∇ with explicit spin/angular momentum.  
+2. **State.** Candidate radial potential V(r) in operator k(E+V) + i(∂/∂r + 1/r ± i(j+½)/r) + ijm.  
+3. **Steps.**  
+   1. Require nilpotency of the field-dependent eigenvalue over the four ±E ±p solutions (PDF 265–266).  
+   2. Observe: without ±A/r in V(r), spherical 1/r terms block nilpotent solution → **Coulomb minimum** (electric).  
+   3. Read strong: SU(3) as gauge invariance among baryon phases with active p_x / p_y / p_z (PDF 275–276).  
+   4. Read weak/electric: book’s SU(2)_L × U(1) from iE and m combination / complex nilpotent source (ch.10 head).  
+   5. **Stamp FORBID-as-Core-fields** — do not install E/S/W as Lace fields.  
+4. **Choice points.** Depth of analytic qq̄ / qqq solutions — `[OPEN]`; GUT/masses → Wave C.  
+5. **Halt.** E/S/W structural map certified + FORBID.  
+6. **Output certificate.** PDF **264** head + PDF **266** Coulomb miniature + PDF **275** SU(3)/p pin.
+
+```text
+nilpotent package (±kE ± iip + ijm)
+   + spherical point source
+   => need V ~ A/r  (Coulomb minimum)     # electric
+p-term phase triad => SU(3)               # strong
+iE + m combination => SU(2)L x U(1)       # weak/EW (book)
+FORBID Core fields / force table
+```
+
+---
+
+### M-B5 — QFT methods with nilpotents (propagators / renormalization neighborhood)
+
+| Field | Content |
+|---|---|
+| Kind | QFT methods / propagators / renormalization hygiene |
+| Book locus | ch.11 “QED and its Analogues” · printed p.285 · PDF **310**; §11.3 renormalization neighborhood · PDF **~315–317** / printed ~290–292; §11.4 Green’s / propagator · PDF **318–320** / printed ~293–295 |
+| Sighting method | `pdftotext` this pass on PDF 310–312, 315–320 (ch.11 head found at PDF **310**, printed **285**) |
+| Eye-quote | “the packaged nilpotent automatically removes the infrared divergence in the fermion propagator, and that renormalization, as such, is not needed… although rescaling of charge values will occur…” / “In the nilpotent formalism… there is no infrared divergence at the pole, because the denominator… is a positive nonzero scalar.” |
+| Inputs | Nilpotent fermion package; EM potentials φ, A; perturbation series ψ = ψ₀ + ψ₁ + …; Green’s function machinery |
+| Outputs | Nilpotent QED perturbation sketch; fermion propagator S_F(p) = 1/(kE + iiσ·p + ijm); IR-pole hygiene claim; renormalization-as-unnecessary (with charge rescaling) claim; extensions to QCD/QFD announced |
+| Invariants | Methods stay book-side QFT; packaged nilpotent ≠ Lace history; no invented Φ/emission scheduler |
+| Algorithm | See below |
+| Complexity / termination | Finite perturbation orders + propagator definition; halt when method sketch + FORBID-as-history-store recorded |
+| Worked miniature | Define S_F(p) = 1/(kE + iiσ·p + ijm); contrast conventional pole iε / IR divergence — nilpotent denominator positive nonzero scalar (PDF 318–319). |
+| Lace stamp | **FORBID-as-history-store** / Φ scheduler |
+| Hands cite | PAGE D; emission still `[GAP]`; not Piece 5/6 append clock |
+| Map cite | **R4** neighborhood; does **not** close Φ |
+| False friend | Nilpotent QFT / propagators / “no renormalization” ⇒ Lace history store or POINTER emission scheduler |
+| Open gaps | Full QCD/QFD analogue writeups; Planck-mass cutoff / GU narrative → Wave C/D; Φ remains `[GAP]` |
+
+**Algorithm**
+
+1. **Preconditions.** Nilpotent Dirac + EM coupling; comfort with Green’s functions / Feynman language as **book** tools.  
+2. **State.** Unperturbed nilpotent free solution ψ₀; interaction −e(ikφ − iσ·A).  
+3. **Steps.**  
+   1. Expand ψ = ψ₀ + ψ₁ + ψ₂ + …; solve order-by-order with nilpotent differential operator (PDF 311–314).  
+   2. Introduce integral/Green’s solution; obtain fermion propagator S_F(p) = 1/(kE + iiσ·p + ijm) (PDF 318).  
+   3. Record book claim: no IR divergence at pole / iε unnecessary because denominator is positive nonzero scalar (PDF 319).  
+   4. Record §11.3 neighborhood: renormalization-as-such not needed; charge rescaling still occurs; finite summation / Planck-mass cutoff narrative is **physics**, not Lace (PDF 315–317).  
+   5. **Stamp FORBID-as-history-store / Φ scheduler** — refuse import as append clock or emission rule.  
+4. **Choice points.** How far into photon propagator / QCD/QFD analogues — `[OPEN]`; do not invent Lace timing.  
+5. **Halt.** QFT method sketch + FORBID.  
+6. **Output certificate.** PDF **310** (ch.11 head) + PDF **318–319** propagator pin + §11.3 renormalization neighborhood.
+
+```text
+perturb: psi = psi0 + psi1 + ...
+S_F(p) = 1 / (kE + ii sigma.p + ijm)   # nilpotent propagator
+book: no IR pole divergence; renormalization-as-such not required
+FORBID history-store / Phi scheduler
+Phi = [GAP]
+```
+
+---
+
+## Waves C–D — deferred (seeds only)
 
 | Wave | ID seeds (not filled) | Book seeds | Default |
 |---|---|---|---|
-| **B** | M-B1 groups/reps; M-B2 breaking Dirac code; M-B3 QFT/nilpotent methods | ch.4; ch.5; ch.10–11 | **Deferred** |
-| **C** | M-C1 fermion/boson charge tables; M-C2 GUT/masses | ch.13–14; ch.15 | **Deferred** |
-| **D** | M-D1 gravity/cosmology; M-D2 Nature’s rules / infinity; M-D3 App. A summary | ch.17–18, 21; ch.20–21; App. A | **Deferred** |
+| **C** | M-C1 charge tables ch.13–14; M-C2 GUT/masses ch.15 | ch.13–14; ch.15 | **Deferred** |
+| **D** | M-D1 gravity/cosmology ch.17–18, 21; M-D2 Nature’s rules/infinity ch.20–21; M-D3 App. A | ch.17–18, 21; ch.20–21; App. A | **Deferred** |
 
-Pass 4 success = Wave A only. Future passes may fill B–D cards/panels without softening A stamps.
+Pass 5 success = Wave B cards (+ ASCII panels). Wave A untouched. Future passes may fill C–D without softening A/B stamps.
 
 ---
+
+## Cross-walk (Wave A)
 
 ## Cross-walk (Wave A)
 
@@ -389,7 +613,19 @@ Pass 4 success = Wave A only. Future passes may fill B–D cards/panels without 
 | M-A8 | P-A8 | KEEP-read R2; FORBID rooms | R2 | PAGE B · FM-R2 |
 | M-A9 | P-A9 | FORBID R5/R6 | R5, R6 | PAGE E · FM-R5/R6 |
 
+
+## Cross-walk (Wave B)
+
+| M | P | Stamp | R# | Clipboard |
+|---|---|---|---|---|
+| M-B1 | P-B1 | FORBID-as-Core-schema; KEEP-read | R4 nbhd | PAGE D |
+| M-B2 | P-B2 | FORBID-as-Core-write; SILENT append | R3/R4 | PAGE C/D |
+| M-B3 | P-B3 | FORBID-as-Core-schema / meaning table | R4 | PAGE D · FM-R4 |
+| M-B4 | P-B4 | FORBID-as-Core-fields | R4 | PAGE D · FM-R4 |
+| M-B5 | P-B5 | FORBID-as-history-store / Φ scheduler | R4 nbhd | PAGE D · `[GAP]` |
+
 Φ / POINTER when·arity·adjacency: **SILENT `[GAP]`** on every card. D7 OPENs ≠ Φ fill.
+
 
 ---
 
@@ -399,4 +635,7 @@ Shoe in hands, or no.
 Zero totality is kin of Graphic A1 — not a second cosmos.  
 Book “rewrite” generates; Lace never mutates WORD @ i.  
 Nilpotent Dirac on paper ≠ Core schema.  
+Group duals are book readings — not a second Lace store.  
+“Breaking the Dirac code” streamlines a physics equation — not mutating WORD @ i.  
+Nilpotent emergence / QFT ≠ Φ scheduler.  
 Φ stays `[GAP]`.
