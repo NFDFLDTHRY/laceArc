@@ -91,6 +91,27 @@
 
 ---
 
+
+## Pass 2 receipt — P2-R
+
+| Field | Value |
+|---|---|
+| Status | **EXECUTED** |
+| When | 2026-09-18 ~22:30 PT |
+| Station | clipboards · agent `webnn Pass 2 EXECUTE` |
+| Plan | [webnn-pass-2-plan.md](webnn-pass-2-plan.md) (was HELD; claim BASE `ee37319` = origin/main after refresh) |
+| Hands skim | shoe → graphics A–D → systems-manifest → staking / law-why → AGENTS Implementation Law → pointer-emission DRAFT/`[GAP]` → clock/README + hologram notes (Shadow) → clock/wasm README (different layer) → webgpu Pass 1–5 banner / relation (**cite-only**) → wgsl Pass 1–5 banner / relation (**cite-only**) → wasm-spec-3 Pass 1–6 banner (**cite-only**) → Pass 1 clipboard → this plan → PDF |
+| PDF | **PRESENT** — cite Pass 1: `refs/local/webnn-crd-20260910.pdf` → `e11532183ed50d11e91c70881c59b805346b6607d41e82e7d52aca520df53fdc.pdf`; **353** pp.; text layer; PDF one-based primary; SHA match; gitignored; **never staged** |
+| Product | D1–D6 leftovers (+ D7 Shadow builder→build→dispatch miniature); A–H/X morals untouched; **no** ascii Wave A; mechanisms deferred Pass 3+ |
+| Amended | Core graphics · systems-manifest(-ascii) · five-stakes · src/ · webgpu-* · wgsl-* · wasm-spec-3 · clock · hologram · law | **No** |
+| Emission | still `[GAP]` — no POINTER when / arity / adjacency; no invented Φ |
+| T5 five-stakes | **skip** (default) |
+| T7 ascii/mechanisms/companions | **skip** — no ascii; no mechanisms; webgpu-* / wgsl-* / wasm-spec-3 untouched |
+| D7 | **included** — MLGraphBuilder → `input`/`constant` → `build` → `dispatch` sketch (PAGE C/F · Builder PDF **62** · `build` PDF **67–68** · `dispatch` PDF **32–33**); **FORBID-as-Lace-strand** · **FORBID-as-Core** · **FORBID-as-emission-rule** · **SILENT-for-Lace-append** |
+| FM-Webnn1…Webnn9 | all pinned (no OPEN) |
+
+---
+
 ## PAGE A — Overview / Identity
 
 | Field | Content |
@@ -190,10 +211,136 @@
 
 ---
 
-## Explicitly not this pass
+## Explicitly not this pass (Pass 1 deferrals — Pass 2 status)
 
-- No `webnn-ascii-machinery.md` / Wave A panels yet (**later pass**; mechanisms/ASCII are **not** Pass 1).
-- No `webnn-mechanisms.md` yet (**later pass**).
+- No `webnn-ascii-machinery.md` / Wave A panels yet (**Pass 4+**; Pass 2 does not invent ascii).
+- No `webnn-mechanisms.md` yet (**Pass 3+**; Pass 2 defers mechanisms).
 - No five-stakes rewrite (default **skip**).
 - webgpu-* / wgsl-* / wasm-spec-3-* products **untouched** (cite-only).
 - No `src/`. Emission still `[GAP]`.
+
+---
+
+## Pass 2 deltas
+
+Pass 1 filled PAGE A–H, X against the CRD. These deltas are **host-NN leftovers / false friends / coherence** only. They do not invent emission. A–H/X morals are unchanged. FORBID-as-Lace-WORD / FORBID-as-Lace-store / FORBID-as-Lace-strand / FORBID-as-emission-rule / FORBID-as-WebGPU-conflation / FORBID-as-WGSL-conflation / FORBID-as-compile-target-swap / PROPOSAL-only / SILENT are not softened. WebNN remains **HOST-NN Shadow only**.
+
+### D1 — What this clipboard / shelf is not
+
+- Not Core / not a sixth graphic / not systems-manifest-ascii.
+- Not `pointer-emission.md` / not a Φ fill / not acceptance of emission by calling WebNN.
+- Not Lace’s 1D strand, star index, or Graphic D scheduler.
+- Not permission to treat **MLGraph / MLContext / device selection** as lace cord / Graphic D / Core door.
+- Not permission to treat **MLTensor / operands / constant tensors** as Lace store / append surface.
+- Not permission to treat **`dispatch` / graph execute / ML task source** as POINTER when / arity / adjacency / Φ.
+- Not permission to treat **WebNN operators / graphs** as Lace WORD / Core ops.
+- Not permission to treat **MLGraphBuilder** as Lace Core constructor / Graphic D factory.
+- Not a **WebGPU Device/Queue/Buffer** host-API swap (webgpu-* shelf stands; different Spec; `exportToGPU` bridge ≠ identity).
+- Not a **WGSL / shader-lang** swap (wgsl-* shelf stands; different Spec).
+- Not a **wasm64 compile-target** swap (wasm-spec-3 shelf stands; different layer).
+- Not permission to treat **security / privacy / a11y** text as Lace law / AGENTS rewrite.
+- Not permission to treat **broadcasting / Changes / algorithms** as Lace append scheduler / Φ gate.
+- Not a rewrite of clock / hologram / AGENTS Implementation Law.
+- Not permission to add `src/` before emission acceptance.
+- Not an anti-model LLM leftover shelf; not an ISA leftover shelf; not a host/GPU leftover shelf; not a shader-lang leftover shelf (FM-W\* / FM-Wgpu\* / FM-Wgsl\* stay home).
+- Not new PAGEs for Ch.2 Use cases / Ch.6 Ethics / Ch.10 Examples / Ch.12–13 Appendices (cite-as-needed only).
+
+### D2 — ON-TARGET / KEEP / FORBID / MAP strip
+
+Compact spine on this clipboard (not five-stakes). Matches Pass 1 morals.
+
+| KEEP-read-as-host-NN-API | FORBID |
+|---|---|
+| CRD 2026-09-10 identity / programming-model overview (PAGE A) | Graph construction/execution ⇒ Lace append order (A) |
+| Context / device selection / `createContext` / `opSupportLimits` (PAGE B) | MLContext / device hint ⇒ lace cord / Graphic D / Core door (B; **FORBID-as-Lace-strand**); `createContext(GPUDevice)` ⇒ Device identity (B; **FORBID-as-WebGPU-conflation**) |
+| MLGraph / MLGraphBuilder / `build` (PAGE C) | MLGraph ⇒ Lace strand / Graphic D; builder ⇒ Core constructor (C; **FORBID-as-Lace-strand** / **FORBID-as-Core-write**) |
+| MLOperand / MLTensor / create·read·write / `exportToGPU` (PAGE D) | MLTensor/operands ⇒ Lace store/append; export ⇒ Buffer identity / accept emission (D; **FORBID-as-Lace-store** / **FORBID-as-WebGPU-conflation** / **PROPOSAL-only**) |
+| Operators / catalogue / emulation (PAGE E) | Operator graph ⇒ Lace WORD / Core ops; ops ⇒ WGSL entry points (E; **FORBID-as-Lace-WORD** / **FORBID-as-WGSL-conflation**) |
+| `dispatch` / task source / permissions (PAGE F) | `dispatch`/execute/task source ⇒ POINTER when/arity/adjacency / Φ (F; **FORBID-as-emission-rule**) |
+| Security / privacy / a11y / §5.3 WebGPU comparison (PAGE G) | WebNN security text ⇒ Lace law / AGENTS; §5.3 ⇒ identity merge (G; **FORBID-as-Core-write** / **FORBID-as-WebGPU-conflation**) |
+| Algorithms / Changes (PAGE H) | Broadcast/cast/Changes ⇒ Lace append scheduler / Φ gate (H; **SILENT-for-Lace-append**) |
+| Host-NN as Shadow projection API (PAGE X) | WebNN ⇒ WebGPU Device/Queue · WGSL · wasm64 swap (X; **FORBID-as-WebGPU-conflation** / **FORBID-as-WGSL-conflation** / **FORBID-as-compile-target-swap**) |
+
+**MAP arrows (coherence with Hands / projection / hologram / WebGPU companion / WGSL companion / wasm64 — all exits FORBIDDEN into Core write):**
+
+```
+A ──KEEP-read-as-host-NN-API──► Shadow host-NN identity     ──[X]──► Core / sixth graphic
+B ──KEEP-read──► MLContext / device selection               ──[X]──► Graphic D / lace cord / Core door
+C ──KEEP-read──► MLGraph / MLGraphBuilder                   ──[X]──► Lace strand / Core constructor
+D ──KEEP-read──► MLTensor / operands / exportToGPU bridge   ──[X]──► Lace store / Buffer identity / accept GAP
+E ──KEEP-read──► operator catalogue (Shadow cite)           ──[X]──► WORD / Core ops / WGSL entry / src/
+F ──KEEP-read──► dispatch / task source                     ──[X]──► pointer-emission when-rule / Φ
+G ──KEEP-read──► host threat / privacy / a11y               ──[X]──► Lace law / AGENTS rewrite
+H ──SILENT──► algorithms / Changes                          ──[X]──► Lace cut / append / Φ gate
+X ──SILENT──► false friends / steward refuse                ──[X]──► WebGPU swap · WGSL swap · wasm64 swap · invent Φ
+webgpu-* ──cite-only──► HOST/GPU companion (export bridge)  ──[X]──► conflate shelves / edit webgpu-*
+wgsl-* ──cite-only──► SHADER-LANG companion                 ──[X]──► conflate shelves / edit wgsl-*
+wasm-spec-3 ──cite-only──► wasm64 compile target            ──[X]──► conflate with WebNN
+clock/hologram ──cite──► Shadow viewer may later cite NN    ──[X]──► Core authority
+emission = [GAP]  ·  Hands win  ·  no src/ until human-accepted emission
+```
+
+### D3 — Failure modes (FM-Webnn1…Webnn9)
+
+| ID | Misread | Hands / law deadbolt | PDF pin (Pass 1 reuse + Pass 2 verify) |
+|---|---|---|---|
+| **FM-Webnn1** | **MLGraph** ⇒ Lace **1D strand** / Graphic D / Core graph | **FORBID-as-Lace-strand** · PAGE C | §8.4 MLGraph PDF **50** — “compiled computational graph… once constructed is immutable”; §7.1 overview PDF **21–22** — MLGraphBuilder factory / “at most one MLGraph” (cite C) |
+| **FM-Webnn2** | **MLContext / device selection / `createContext`** ⇒ **Core / Graphic D** / lace cord / Core door | **FORBID-as-Lace-strand** · **FORBID-as-Core-write** · PAGE B | §7.2 Device Selection PDF **23** — “global state of neural network execution”; `createContext` PDF **28–29**; §8.3 MLContext IDL PDF **29–30** (cite B) |
+| **FM-Webnn3** | **MLTensor / operands / constant tensors** ⇒ Lace **store / append surface** / second strand | **FORBID-as-Lace-store** · PAGE D | §8.5–8.6 Operand PDF **51–53**; §8.8 MLTensor PDF **57–58** — “tensor which may be used as an input or output to an MLGraph”; `createTensor` PDF **35** (cite D) |
+| **FM-Webnn4** | **`dispatch` / graph execute / ML task source** ⇒ POINTER **when** / arity / adjacency (**Φ** fill) | **FORBID-as-emission-rule** · pointer-emission `[GAP]` · PAGE F | §8.3.1 `dispatch` PDF **32–33** — “Schedules the computational workload…” · “dispatch() itself provides no signal that graph execution has completed.”; §7.4 Task Source PDF **25** (cite F) |
+| **FM-Webnn5** | **WebNN operators / operator graph** ⇒ Lace **WORD** / Core operator set / schema language | **FORBID-as-Lace-WORD** · **FORBID-as-Core-write** · PAGE E | §7.3 Operators PDF **24–25** — catalogue for CNN/RNN/transformer; ops from §8.9.5+ PDF **~68+**; §11 Emulation PDF **295** — “emulated using operations present in WebNN” (cite E) |
+| **FM-Webnn6** | **WebNN MLContext / Graph / Tensor** ⇒ **WebGPU Device / Queue / Buffer** (identity merge) | **FORBID-as-WebGPU-conflation** · PAGE B/D/G/X | `createContext(GPUDevice)` PDF **28–29**; `exportToGPU` PDF **42–43** — “no guarantee… zero-copy”; §5.3 WebGPU Comparison PDF **20** — “Unlike WebGPU, this API does not intrinsically support custom shader authoring…”; cite webgpu-* (different Spec) |
+| **FM-Webnn7** | **WebNN** ⇒ **WGSL / shader-lang** / operators ⇒ shader entry points | **FORBID-as-WGSL-conflation** · PAGE E/X | §5.3 PDF **20** (no custom shader authoring); cite wgsl-* (different Spec) |
+| **FM-Webnn8** | **WebNN** ⇒ **wasm64 compile target** / replaces wasm-spec-3 shelf | **FORBID-as-compile-target-swap** · PAGE X | PAGE X steward refuse (8) + wasm-spec-3 Pass 1–6 cite-only (different layer; **not** this CRD) |
+| **FM-Webnn9** | **MLGraphBuilder** ⇒ Lace **Core constructor** / Graphic D factory; **`exportToGPU`** ⇒ accept `pointer-emission.md` / merge shelves | **FORBID-as-Core-write** · **FORBID-as-Lace-strand** · **PROPOSAL-only** · **FORBID** accept-GAP · PAGE C/D | §8.9 Builder PDF **62**; `build` PDF **67–68** — “Each MLGraphBuilder can build at most one MLGraph.”; `exportToGPU` PDF **42–43** (cite C/D) |
+
+No FM row left `[OPEN]`. Pins reused/verified from Pass 1; Pass 2 re-sighted Device Selection / createContext / MLGraph / Builder/`build` / Operand/MLTensor / `dispatch` / Task Source / §5.3 / Emulation / `exportToGPU` via `pdftotext -f N -l N -layout`. Ch.2 / Ch.6 / Ch.10 / Ch.12–13 remain **cite-as-needed** (no new PAGEs).
+
+### D4 — Interface coherence (Hands + projection + hologram + WebGPU companion + WGSL companion + wasm64)
+
+**Only** KEEP-read-as-host-NN-API outputs may sit **beside** Lace: WebNN CRD as the **host-NN inference Web API** Shadow projection / hologram / host-embed may call. **Nothing** in A–H/X writes Graphic D, strand/, word/, pointer/, or fills `pointer-emission.md`. **webgpu-*** = **HOST/GPU Web API** companion — cite-only; WebNN does **not** replace Device/Queue/Buffer (**FM-Webnn6**). `exportToGPU` is a **bridge cite**, not identity; do **not** edit webgpu-*. **wgsl-*** = **SHADER-LANG** companion — cite-only; WebNN does **not** replace WGSL / shader entry points (**FM-Webnn7**). Do **not** edit wgsl-*. **wasm-spec-3** = **compile-target ISA / wasm64 seal** — cite-only; WebNN does **not** replace it (**FM-Webnn8**). **clock/** and **hologram/** are **Shadow surfaces** that may later *cite* host-NN — glyphs ≠ schema; they do not become Core authority for this CRD or vice versa. **`docs/clock/wasm/README.md`** is Shadow **projection bake** — **different layer** from this host-NN shelf; not Spec authority. Lace↔host-NN / `exportToGPU` sketches stay **PROPOSAL-only**; calling WebNN or exporting tensors does **not** accept emission. Ch.2 / Ch.6 / Ch.10 / Ch.12–13 remain cite-as-needed — not Core use-case/ethics/examples law, not new PAGEs. `[GAP]` remains. Shoe in hands, or no. **Do not invent Core maps** from this clipboard into five-stakes or reason-model.
+
+### D5 — Source gate (cite Pass 1)
+
+PDF is **PRESENT** (do not narrate absent). Pass 1 receipt (P1-R): `refs/local/webnn-crd-20260910.pdf` → attachment `e11532183ed50d11e91c70881c59b805346b6607d41e82e7d52aca520df53fdc.pdf`; **353** pages; text layer present (Skia/PDF); PDF one-based primary (no clear printed↔PDF offset); SHA-256 `e11532183ed50d11e91c70881c59b805346b6607d41e82e7d52aca520df53fdc`; title Web Neural Network API · W3C CRD **10 September 2026** · URL `https://www.w3.org/TR/2026/CRD-webnn-20260910/`; `git check-ignore` OK; **never `git add`**. Pass 1 products: clipboard PAGE A–H, X · **no** ascii Wave A · mechanisms deferred · execute ~`186ba06` / station release tip historically ~`6be7d27` (rebase-aware: cite P1-R fields on clipboard). Method this pass: reuse Pass 1 pins; `pdftotext` verify for FM-Webnn\* + D7. Five-stakes left untouched (T5 skip).
+
+### D6 — Sealed (still)
+
+- Invent POINTER when / arity / adjacency (Φ stays `[GAP]`)
+- Soften Pass 1 FORBID-as-Lace-WORD / FORBID-as-Lace-store / FORBID-as-Lace-strand / FORBID-as-emission-rule / FORBID-as-WebGPU-conflation / FORBID-as-WGSL-conflation / FORBID-as-compile-target-swap / PROPOSAL-only / SILENT
+- Promote MLGraph as Lace strand / Graphic D
+- Promote MLContext / device selection as Graphic D / lace cord / Core door
+- Promote MLTensor / operands / constant tensors as Lace store / append surface
+- Use `dispatch` / graph execute / ML task source as POINTER emission / Φ
+- Treat WebNN operators / graphs as Lace WORD / Core ops
+- Treat MLGraphBuilder as Lace Core constructor / Graphic D factory
+- Swap WebNN for WebGPU Device/Queue/Buffer (identity merge)
+- Swap WebNN for WGSL / shader-lang
+- Swap WebNN for wasm64 / wasm-spec-3 compile target
+- Treat `exportToGPU` as identity merge / emission accept
+- Treat security / privacy / a11y text as Lace law / AGENTS rewrite
+- Treat broadcasting / Changes / algorithms as Lace append scheduler / Φ gate
+- Create `webnn-ascii-machinery.md` / Wave A panels (**deferred Pass 4+**) · create `webnn-mechanisms.md` (**deferred Pass 3+**)
+- Amend webgpu-* / wgsl-* / wasm-spec-3 products · law / graphics / systems-manifest / five-stakes / clock / hologram
+- Invent Core maps into five-stakes / reason-model
+- Add `src/` / Cargo.toml before emission acceptance
+- Git-add the PDF · pretend OCR / claim PDF absent when present
+- Clone Xiao–Zhu / Petersen / AgentScope LLM morals, wasm FM-W\* ISA morals, WebGPU FM-Wgpu\* host-GPU morals, or WGSL FM-Wgsl\* shader morals onto this shelf
+- Open new PAGEs for Ch.2 / Ch.6 / Ch.10 / Ch.12–13
+
+### D7 — Constructive miniature (Shadow only) — builder → build → dispatch sketch
+
+**Choice (a).** Stamp: **FORBID-as-Lace-strand** · **FORBID-as-Core** · **FORBID-as-emission-rule** · **SILENT-for-Lace-append** · not POINTER when-rule · not Φ · not `src/` · builder ≠ Core constructor. Paper algorithm only (PAGE C/F · Builder PDF **62** · `build` PDF **67–68** · `dispatch` PDF **32–33**). Steps below are what the Spec states; no invented operators. `exportToGPU` bridge miniature (choice b) deferred.
+
+1. Obtain an `MLContext` via `navigator.ml.createContext(options)` or `createContext(gpuDevice)` (PAGE B · PDF **28–29** — **KEEP-read**; Context ↛ Graphic D / Core door — **FM-Webnn2** / **FM-Webnn6**).
+2. Construct `MLGraphBuilder(context)` (§8.9 PDF **62** — factory for graph construction; **≠** Lace Core constructor — **FM-Webnn9**).
+3. Declare graph edges: `builder.input(…)` / `builder.constant(…)` and operator methods (`gemm`, `relu`, …) returning distinct `MLOperand`s (§7.1 PDF **21–22**).
+4. Compile: `graph = await builder.build(outputs)` → `Promise<MLGraph>` (§8.9.4 PDF **67–68**). “Each MLGraphBuilder can build at most one MLGraph.” Compiled `MLGraph` is immutable (**≠** Lace strand — **FM-Webnn1**).
+5. Execute: `context.dispatch(graph, inputs, outputs)` (§8.3.1 PDF **32–33**) — “Schedules the computational workload of a compiled MLGraph on the MLContext’s [[timeline]].” **NOTE:** “dispatch() itself provides no signal that graph execution has completed.” Callers may await `readTensor` for outputs — still **not** Φ / POINTER when (**FM-Webnn4**).
+
+**[OPEN] (book continues; not settled for Lace):** ISSUE 5/7 completion/error signaling during `dispatch()` (Spec silent / open); which host embed may call this from Lace projection — out of scope here. Do **not** finish those from Lace.
+
+**Lace refusal:** this sketches **host-NN graph construct → compile → schedule**. It does **not** emit POINTER, does **not** append to Graphic D, does **not** open Core doors / `src/`, and does **not** fill emission `[GAP]`. `dispatch` is not Φ. Builder is not a Core constructor.
+
+---
+

@@ -1,6 +1,6 @@
 # WebNN CRD 2026-09-10 — Pass 2 PLAN (leftovers / failure modes / host-NN coherence)
 
-**Status:** **HELD / NOT EXECUTED** — plan only; leave HELD until human says go Pass 2.  
+**Status:** **EXECUTED** — D1–D6 (+ D7) on `webnn-clipboard.md`; FM-Webnn1…Webnn9 pinned; no ascii; mechanisms deferred Pass 3+.  
 **Station:** clipboards (plan claim: `webnn-pass-2-planner`; execute claim e.g. `webnn Pass 2 EXECUTE`)  
 **Base at plan:** claim BASE `abcd14b` (= `origin/main` after refresh; Pass 1 EXECUTED ancestor ~`6be7d27`). Refresh `git pull --ff-only` before any execute.  
 **Spec:** *Web Neural Network API* (WebNN) — **W3C Candidate Recommendation Draft, 10 September 2026** · editors Ningxin Hu, Dwayne Robinson (et al.)  
@@ -58,7 +58,7 @@ pull/ff → claim clipboards → Hands + projection skim (host-NN mesh)
 |  KEEP-read: host-NN inference mechanics for Shadow projection work.  |
 |  FORBID-as-Core-write; NON-binding on Core/src/Phi.                  |
 |  No src/ until pointer-emission accepted.  One strand.               |
-|  Status this commit: HELD / NOT EXECUTED — plan only.                |
+|  Status this commit: EXECUTED — D1–D6 + FM-Webnn* + D7.              |
 |  Emission [GAP] sealed.  No mechanism cards / ASCII yet (Pass 3+).   |
 +======================================================================+
 ```
@@ -427,13 +427,13 @@ WebNN is not WebGPU Device/Queue. WebNN is not WGSL. WebNN is not the wasm64 tar
 
 | Field | Value |
 |---|---|
-| Status | **HELD / NOT EXECUTED** |
-| When | 2026-09-18 ~22:25 PT |
-| Agent | `webnn-pass-2-planner` |
-| Base | claim BASE `abcd14b` (= origin/main after refresh; Pass 1 release ancestor ~`6be7d27`) |
-| Product | this plan only (HELD) |
-| Pass 1 ancestor | EXECUTED ~`186ba06` (clipboard A–H,X) · station release ~`6be7d27` |
-| Amended clipboard/ascii/src/maps/law/webgpu/wgsl/wasm | **No** (plan only) |
+| Status | **EXECUTED** (was HELD / NOT EXECUTED at plan) |
+| When | plan 2026-09-18 ~22:25 PT · execute 2026-09-18 ~22:30 PT |
+| Agent | plan `webnn-pass-2-planner` · execute `webnn Pass 2 EXECUTE` |
+| Base | execute claim BASE `ee37319` (= origin/main after refresh) |
+| Product | D1–D6 (+ D7) on `webnn-clipboard.md` · this plan EXECUTED |
+| Pass 1 ancestor | EXECUTED · PAGE A–H, X · P1-R |
+| Amended clipboard/ascii/src/maps/law/webgpu/wgsl/wasm | clipboard **yes** (Pass 2 deltas only) · ascii/src/maps/law/webgpu/wgsl/wasm **No** |
 | PDF staged | No |
 | Push | **No** |
 | Emission | `[GAP]` |
@@ -442,15 +442,15 @@ WebNN is not WebGPU Device/Queue. WebNN is not WGSL. WebNN is not the wasm64 tar
 
 | Field | Value |
 |---|---|
-| Status | _pending_ |
-| When | |
+| Status | **EXECUTED** |
+| When | 2026-09-18 ~22:30 PT |
 | Agent | `webnn Pass 2 EXECUTE` |
-| Product | D1–D6 (+ D7 if any) on `webnn-clipboard.md` |
+| Product | D1–D6 (+ D7) on `webnn-clipboard.md` · FM-Webnn1…Webnn9 pinned |
 | T5 five-stakes | **skip** (default) |
-| T7 ascii/mechanisms/companions | **skip** |
-| FM-Webnn1…Webnn9 | _pending pins_ |
+| T7 ascii/mechanisms/companions | **skip** — no ascii; mechanisms deferred Pass 3+; webgpu/wgsl/wasm untouched |
+| FM-Webnn1…Webnn9 | **9/9 pinned** (no OPEN) |
 | Amended map/law/graphics/src/webgpu/wgsl/wasm | **No** |
 | PDF staged | **No** |
 | Emission | `[GAP]` |
-| D7 | _pending_ |
-| Claim BASE | |
+| D7 | **included** — builder → build → dispatch (choice a) |
+| Claim BASE | `ee37319` |
