@@ -1,6 +1,6 @@
 # Scanner fix — Pass 3 PLAN
 
-**Status:** PLAN only. Not run.  
+**Status:** EXECUTED — grain on `docs/kit/scanner.md`. Register unpatched. Emission `[GAP]`.  
 **Station:** kit (HELD Grok-kit).  
 **Object:** scanner grain — register row vs receipt vs `which`.  
 **Authority:** [`scanner.md`](scanner.md) passes 1–2. [`cold-doors.md`](cold-doors.md) rows as written. [`quiet-door-1-receipt.md`](quiet-door-1-receipt.md). `coord.sh which`.  

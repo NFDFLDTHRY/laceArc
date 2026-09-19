@@ -1,7 +1,7 @@
 # Scanner
 
 **Station:** kit.  
-**Executed:** [scanner-fix-pass-1-plan.md](scanner-fix-pass-1-plan.md) · [scanner-fix-pass-2-plan.md](scanner-fix-pass-2-plan.md).  
+**Executed:** [scanner-fix-pass-1-plan.md](scanner-fix-pass-1-plan.md) · [scanner-fix-pass-2-plan.md](scanner-fix-pass-2-plan.md) · [scanner-fix-pass-3-plan.md](scanner-fix-pass-3-plan.md).  
 **Object:** how a quiet-door **rescan** must speak. Not the package door bytes.  
 **Not:** live law. Not Hands. Not cold-doors pass 7. Not door #1 pass 7. Not door #2.  
 **Emission:** `[GAP]`. No `src/`.
@@ -82,4 +82,28 @@ G2 stays `[GAP]`.
 | T1 | Eight In / Does / Break / Gap / Role rows |
 | T2 | S5 Break = LIVE as idle; S6 Break = CLOSED as STALE; S7 Break = work flips LIVE |
 | T3 | Spine sit table left in place |
+| T4 | Register unpatched |
+
+## Pass 3 — grain
+
+Register is stamp. Receipt is activity. `which` is ownership. Three stay three. Register not patched this pass.
+
+| Door | Register row | Receipt / activity file | `which` now | Collapse would look like |
+|---|---|---|---|---|
+| #1 Package | kit · LIVE · THEN/NOW pins · no activity column | CLOSED 6/6 `fab1864` on `quiet-door-1-receipt.md` | kit | drop the receipt; call #1 idle because LIVE |
+| #2 Kit index | kit · LIVE · no pin as tip | none | kit | invent a CLOSED for the index because kit held the campaign |
+| #10 Graphics | station **law** · LIVE | none as *door* receipt (graphics i1/i2 CLOSED live on graphics station) | **graphics** | keep register station=law and ignore `which`; or flip LIVE |
+| #3–#9 | LIVE · station matches `which` | none | matches register | treat "no receipt" as STALE |
+
+#3–#9 pattern: Court/law, Live law/law, History/history, Clock/hologram, Hologram/hologram, Gearing/gearing-meta, Coord/coord. Stamp LIVE. Activity QUIET *for the scanner campaign*. Ownership agrees.
+
+A rescan that reads only the register cannot claim #1 was idle without ignoring the receipt.
+
+## Pass 3 deltas
+
+| Ticket | Action |
+|---|---|
+| T1 | Three-source grain |
+| T2 | #1 LIVE vs CLOSED split; #10 law vs graphics |
+| T3 | #3–#9 same-pattern line |
 | T4 | Register unpatched |
