@@ -27,7 +27,7 @@
 | [hologram-ast-ir-viewer.md](hologram-ast-ir-viewer.md) | IR↔viewer binding — Manifest/Packaging/Both, chrome map, edge grammar, golden walkthrough, acceptance |
 | [fixtures/hologram-ir-golden-v0.2.0.json](fixtures/hologram-ir-golden-v0.2.0.json) | golden HologramIr v0.2.0 (pieces + seams + binds; current) |
 | [fixtures/hologram-ir-golden-v0.1.0.json](fixtures/hologram-ir-golden-v0.1.0.json) | golden HologramIr v0.1.0 (doors-only; historical) |
-| [tools/hologram-ir-validate.py](tools/hologram-ir-validate.py) | host validator for HologramIr golden/fixture JSON (0.1.0 + 0.2.0) |
+| [tools/hologram-ir-shape-check.py](tools/hologram-ir-shape-check.py) | host **shape** check for HologramIr golden/fixture JSON (0.1.0 + 0.2.0). It does not check the plan — F7 |
 | [atomic-construction-pass-1-plan.md](atomic-construction-pass-1-plan.md) | Pass 1 construction crosswalk plan |
 | [lace-projection-brief.md](lace-projection-brief.md) | [PROPOSAL] the Lace visualizer: Graphic D's eleven rows as a Layer III view; no emitter; review pass 1 applied |
 | [rust-nostd-second-reading.md](rust-nostd-second-reading.md) | second reading of the two rust plans and their IR tooling — findings with consequences, amendments proposed, none applied |

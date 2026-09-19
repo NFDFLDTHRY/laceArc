@@ -4,13 +4,13 @@ Host-side only. These are steward tooling, never a Core dependency, and they do 
 
 | File | Use |
 |---|---|
-| [hologram-ir-validate.py](hologram-ir-validate.py) | Validates a `HologramIr` golden/fixture JSON (0.1.0 and 0.2.0). Exit 0 pass, 1 fail. No network |
+| [hologram-ir-shape-check.py](hologram-ir-shape-check.py) | Checks the **shape** of a `HologramIr` golden/fixture JSON (0.1.0 and 0.2.0): required ids, endpoints that exist, counts, one PROPOSAL honesty flag. Exit 0 shape ok, 1 shape fail. No network. **It does not check the plan** |
 
 ```bash
-python3 docs/plans/tools/hologram-ir-validate.py            # default: golden v0.2.0
-python3 docs/plans/tools/hologram-ir-validate.py <path.json>
+python3 docs/plans/tools/hologram-ir-shape-check.py            # default: golden v0.2.0
+python3 docs/plans/tools/hologram-ir-shape-check.py <path.json>
 ```
 
-**Known limit**, recorded in [rust-nostd-second-reading.md](../rust-nostd-second-reading.md) F7: this validator checks *shape*, not the plan. A fixture with the birth order reversed, a dependency cycle, or the forbidden `core → strand` bypass still passes. Amendment A7 proposes carrying the plan as data.
+**Named for what it checks since iteration 4 pass 5** — it was `hologram-ir-validate.py`, a schema checker named for a plan checker. The limit recorded in [rust-nostd-second-reading.md](../rust-nostd-second-reading.md) F7 has not moved: it checks *shape*, not the plan. A fixture with the birth order reversed, a dependency cycle, or the forbidden `core → strand` bypass still passes. Amendment A7 proposes carrying the plan as data.
 
 Fixtures: [../fixtures/](../fixtures/README.md). POINTER emission stays `[GAP]`.

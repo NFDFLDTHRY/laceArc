@@ -1,10 +1,25 @@
 #!/usr/bin/env python3
-"""Validate a HologramIr golden/fixture JSON document.
+"""Check the SHAPE of a HologramIr golden/fixture JSON document.
 
-Host-side only. No network. No src/. Exit 0 on pass, 1 on fail.
+Host-side only. No network. No src/. Exit 0 on shape ok, 1 on shape fail.
 
-Supports ir_version 0.1.0 (doors/edges/transforms) and 0.2.0
+WHAT THIS CHECKS: that the document has the required ids, that endpoints
+name things that exist, that counts are right, and one PROPOSAL honesty
+flag. Supports ir_version 0.1.0 (doors/edges/transforms) and 0.2.0
 (+ pieces / seams / binds). Default fixture is v0.2.0.
+
+WHAT THIS DOES NOT CHECK: the plan. It does not know the birth order, it
+does not reject a dependency cycle, and it does not catch the forbidden
+core -> strand bypass. Six deliberately wrong plans were run through it
+and five passed, returning a summary byte-identical to the golden's --
+measured as F7 in docs/plans/rust-nostd-second-reading.md.
+
+It was named `hologram-ir-validate.py` until iteration 4 pass 5. A schema
+checker named for a plan checker is the defect; the ruling was to rename
+it rather than repair it, because the plan it would check still has open
+amendments A1-A10 and a validator built against a plan under revision
+would be wrong in a new way. NOTHING IN THIS TREE CHECKS THE GRAPH
+AGAINST THE PLAN.
 """
 from __future__ import annotations
 
@@ -266,13 +281,13 @@ def main(argv: list[str] | None = None) -> int:
         text = path.read_text(encoding="utf-8")
         doc = json.loads(text)
     except FileNotFoundError:
-        print(f"FAIL: file not found: {path}", file=sys.stderr)
+        print(f"SHAPE FAIL: file not found: {path}", file=sys.stderr)
         return 1
     except json.JSONDecodeError as exc:
-        print(f"FAIL: invalid JSON in {path}: {exc}", file=sys.stderr)
+        print(f"SHAPE FAIL: invalid JSON in {path}: {exc}", file=sys.stderr)
         return 1
     except OSError as exc:
-        print(f"FAIL: cannot read {path}: {exc}", file=sys.stderr)
+        print(f"SHAPE FAIL: cannot read {path}: {exc}", file=sys.stderr)
         return 1
 
     errors = validate(doc)
@@ -290,17 +305,19 @@ def main(argv: list[str] | None = None) -> int:
     )
 
     if errors:
-        print(f"FAIL: {path.name} — {len(errors)} error(s)")
+        print(f"SHAPE FAIL: {path.name} — {len(errors)} error(s)")
         for err in errors:
             print(f"  - {err}")
         print(summary)
         return 1
 
     print(
-        f"PASS: {path.name} ir_version={doc.get('ir_version')} "
+        f"SHAPE OK: {path.name} ir_version={doc.get('ir_version')} "
         f"mode={doc.get('mode')} emission_gate={doc.get('source', {}).get('emission_gate')}"
     )
     print(summary)
+    print("not checked: birth order, dependency cycles, the core -> strand bypass.")
+    print("             shape ok is not the plan. See F7.")
     return 0
 
 

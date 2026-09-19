@@ -59,7 +59,7 @@ Static header paths (always visible as text, not live links required):
 
 - schema: `docs/plans/hologram-ast-ir.md`
 - golden: `docs/plans/fixtures/hologram-ir-golden-v0.2.0.json` (v0.1.0 historical)
-- validate: `docs/plans/tools/hologram-ir-validate.py`
+- shape check: `docs/plans/tools/hologram-ir-shape-check.py` — shape only, never the plan (F7)
 - binding: `docs/plans/hologram-ast-ir-viewer.md`
 
 ---

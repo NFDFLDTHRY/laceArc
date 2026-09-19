@@ -89,7 +89,7 @@ The law gates *all* code on emission acceptance; this table does not loosen that
 
 ### F7 — The golden fixture's validator cannot tell the plan from its opposite
 
-**WHERE:** [tools/hologram-ir-validate.py](tools/hologram-ir-validate.py); [hologram-ast-ir.md](hologram-ast-ir.md) §3.8; [viewer binding](hologram-ast-ir-viewer.md) §8 item 11.
+**WHERE:** [tools/hologram-ir-shape-check.py](tools/hologram-ir-shape-check.py); [hologram-ast-ir.md](hologram-ast-ir.md) §3.8; [viewer binding](hologram-ast-ir-viewer.md) §8 item 11.
 **HANDS CITE:** none needed — this is tooling against the plan, not against the source.
 **STAMP:** `[III]`
 **SEVERITY:** mislead ("golden", "validator PASS")
@@ -178,7 +178,7 @@ the plans get a great deal right.
 | A4 | Birth × premise table | F4 | branch contracts Page G | maps | Pass 1 editor |
 | A5 | Evidence standard for "proven" | F5 | new `docs/proofs/` convention, or Page G | law | human |
 | A6 | Host-tool carve-out for test/proof binaries | F6 | branch contracts Page G | maps | human |
-| A7 | Validator carries the plan as data; rejects wrong order, wrong edge, cycle | F7 | `tools/hologram-ir-validate.py` | maps | its author |
+| A7 | Validator carries the plan as data; rejects wrong order, wrong edge, cycle | F7 | `tools/hologram-ir-shape-check.py` | maps | its author — **still open.** Iteration 4 pass 5 renamed the tool rather than repairing it; A7 is the repair and it waits on A1–A10 settling |
 | A8 | Golden dataflow follows the cards once A3 lands | F8 | golden fixture, viewer §3 | maps / hologram | its author |
 | A9 | Close the two §4 kind sub-questions in the draft, in words | F9 | `docs/pointer-emission.md` | law | human only |
 | A10 | `core/` names the arrival function | F11 | branch contracts | maps | Pass 1 editor |
