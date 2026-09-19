@@ -1,7 +1,7 @@
 # WebNN CRD 2026-09-10 — Pass 5 PLAN (ASCII as Shadow Order Proposal + light accuracy steward)
 
-**Status:** **HELD** · plan turn 2026-09-18 ~22:51 PT · agent `WebNN Pass 5 PLAN HELD` · **NOT EXECUTED**  
-**Station:** clipboards (HELD `WebNN Pass 5 PLAN HELD` · claim BASE `af6b982` = `origin/main` at plan after ff)  
+**Status:** **EXECUTED** · execute turn 2026-09-18 ~22:54 PT · agent `WebNN Pass 5 EXECUTE` · plan was HELD ~22:51 PT  
+**Station:** clipboards (HELD `WebNN Pass 5 EXECUTE` · claim BASE `26c8805` = `origin/main` at execute after rebase)  
 **Tip at plan:** `af6b982` (= origin/main; includes WebNN Pass 4 EXECUTED + graphics ascii i2p5 cite)  
 **Spec:** *Web Neural Network API* (WebNN) — **W3C Candidate Recommendation Draft, 10 September 2026**  
 **ASCII (Pass 4):** `docs/clipboards/webnn-ascii-machinery.md` — SOURCE MACHINERY + **P-N1…P-N9** · P4-X **all PASS** · singular overview (**count=1**)  
@@ -60,7 +60,7 @@ pull/ff → claim clipboards → Hands + host-NN mesh skim
 |  KEEP-read-as-host-NN-API: host-NN mechanics for Shadow projection.  |
 |  webgpu-* / wgsl-* / wasm-spec-3 = cite-only (different Spec/layer). |
 |  No src/ until pointer-emission accepted.  One strand.               |
-|  Status: HELD / NOT EXECUTED — Order Proposal body = EXECUTE-only.   |
+|  Status: EXECUTED — Order Proposal body written (clipboard P5-P).   |
 |          Emission [GAP] sealed.  Pass 6 = deep audit (not opened).  |
 +======================================================================+
 ```
@@ -380,8 +380,8 @@ Deep diagram structural audit waits for **Pass 6**.
 | wasm-spec-3 | Pass 1–6 EXECUTED · **wasm64** · cite-only |
 | pointer-emission.md | DRAFT / `[GAP]` |
 | PDF | PRESENT · gitignored · SHA-256 `e11532183ed50d11e91c70881c59b805346b6607d41e82e7d52aca520df53fdc` · never staged |
-| Execute | **NOT performed** |
-| P5-P body | **not written** (seed only in this plan) |
+| Execute | **PERFORMED** · 2026-09-18 ~22:54 PT |
+| P5-P body | **written** (clipboard P5-P + ascii mirror) |
 | Push | **NOT performed** |
 | Emission | `[GAP]` |
 | `src/` | absent |
@@ -403,15 +403,15 @@ After plan commit: **release** clipboards station. Ahead of origin by plan commi
 
 | Field | Value |
 |---|---|
-| Status | **HELD / NOT EXECUTED** (fill EXECUTED on execute) |
-| When | — |
-| Agent | — |
-| Claim BASE | — |
-| P5-X | — |
-| P5-F | — |
-| P5-O | — |
-| P5-P | — |
-| P5-R | — |
+| Status | **EXECUTED** |
+| When | 2026-09-18 ~22:54 PT |
+| Agent | `WebNN Pass 5 EXECUTE` |
+| Claim BASE | `26c8805` (= origin/main after rebase of plan commits) |
+| P5-X | **19 PASS · 0 FIX** (CONFIRM of P4-X) |
+| P5-F | **none** |
+| P5-O | overview count=1 confirmed |
+| P5-P | clipboard full Order Proposal + ascii short mirror |
+| P5-R | clipboard receipt · plan EXECUTED |
 | Wave B | SKIP (default) |
 | Pass 6 | not opened |
 | Emission | `[GAP]` |

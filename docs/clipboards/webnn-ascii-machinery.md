@@ -1,6 +1,6 @@
 # WebNN CRD 2026-09-10 — ASCII SOURCE MACHINERY (HOST-NN · Wave A P-N1…P-N9 · P4-X)
 
-**Status:** Pass 4 **EXECUTED** · Wave A panels **P-N1…P-N9** 1:1 with **M-N1…M-N9** · P4-X all **PASS**. Emission `[GAP]`.  
+**Status:** Pass 4 **EXECUTED** · Pass 5 **EXECUTED** (P5-X CONFIRM · Shadow Order Proposal) · Wave A panels **P-N1…P-N9** 1:1 with **M-N1…M-N9** · P4-X/P5-X all **PASS**. Emission `[GAP]`.  
 **Source:** *Web Neural Network API* (WebNN) — **W3C Candidate Recommendation Draft, 10 September 2026**. Editors: Ningxin Hu, Dwayne Robinson (et al.).  
 **PDF:** `refs/local/webnn-crd-20260910.pdf` → attachment `e11532183ed50d11e91c70881c59b805346b6607d41e82e7d52aca520df53fdc` (**353** pp., text layer; **never git-add**). SHA-256 `e11532183ed50d11e91c70881c59b805346b6607d41e82e7d52aca520df53fdc`. PDF one-based primary.  
 **Algorithms (unchanged):** [`webnn-mechanisms.md`](webnn-mechanisms.md) — **M-N1…M-N9** (cite only; do not rewrite).  
@@ -121,6 +121,14 @@ Spine matches **M-N1…M-N9** / **P-N1…P-N9**. Constructive Spec path only. **
 stamp under fence: KEEP-read-as-host-NN-API | Core/Phi/WebGPU/WGSL/wasm64 FORBIDDEN off-board | FM-Webnn6·7·8
 
 **P4-X:** Rigor matrix lives below (this file) and on the clipboard Pass 4 receipt. This file holds **exactly one** canonical SOURCE MACHINERY overview (above). **count=1**.
+
+**P5-O:** Overview count=1 confirmed (Pass 5). Core / Graphic D / Φ / WebGPU Device·Queue / WGSL / wasm64 ISA remain FORBIDDEN off-board.
+
+### Order proposal (Shadow) — SOURCE MACHINERY as shelf hygiene *(short mirror)*
+
+**Full text:** clipboard Pass 5 **P5-P**. **Stamps:** KEEP-read-as-host-NN-API · FORBID-as-Core-write · FORBID-as-Lace-WORD · FORBID-as-Lace-store · FORBID-as-Lace-strand · FORBID-as-emission-rule · FORBID-as-Core · FORBID fill-GAP · FORBID accept-GAP · FORBID-as-WebGPU-conflation · FORBID-as-WGSL-conflation · FORBID-as-compile-target-swap · SILENT-for-Lace-append · PROPOSAL · NON-binding.
+
+This overview **proposes** HOST-NN shelf hygiene beside Shadow projection / hologram — observe → name → diagram-check → stamp-check → list OPENs → decide (commit/release/defer/stop). It is **not** Core, not an AGENTS.md amendment, not Graphic D, not a Φ scheduler, and **NON-binding** on `systems-manifest-ascii.md` / graphics / webgpu-* / wgsl-* / wasm-spec-3. Keep-outs stand: MLGraph≠strand · MLTensor≠store/append · dispatch≠Φ · WebNN≠WORD · WebNN≠WebGPU Device/Queue · WebNN≠WGSL · WebNN≠wasm64 · builder≠Core ctor · exportToGPU≠accept `[GAP]`. Projection/hologram = **Shadow consumers** (cite-only). Recommended reader order (proposal only): clipboard → mechanisms → ascii-machinery → pass plans. Emission `[GAP]`. See clipboard P5-P for stage→hygiene table + P5-X. **FM-Webnn1…Webnn9**.
 
 ---
 
@@ -572,5 +580,20 @@ They do not write Graphic D, do not birth `src/`, do not fill Φ, and do not swa
 | Fence audit | **no POINTER word** inside any diagram fence |
 | Emission | still `[GAP]` |
 | PDF staged | **No** |
-| Order Proposal | deferred **Pass 5** |
-| Deep diagram audit | deferred **Pass 6** |
+| Order Proposal | **EXECUTED** Pass 5 (clipboard P5-P + short mirror under overview) |
+| Deep diagram audit | deferred **Pass 6** (not opened) |
+
+---
+
+## Pass 5 execute receipt (ascii file)
+
+| Field | Value |
+|---|---|
+| Status | **EXECUTED** |
+| When | 2026-09-18 ~22:54 PT |
+| P5-O | overview **count=1** confirmed |
+| P5-P mirror | short Order Proposal under overview (full text on clipboard) |
+| P5-X | CONFIRM · **19 PASS · 0 FIX** (see clipboard) |
+| Emission | still `[GAP]` |
+| PDF staged | **No** |
+| Pass 6 | **not opened** |
