@@ -2,7 +2,7 @@
 
 **Not the manifest.** [`systems-manifest.md`](systems-manifest.md) is the Hands contract map; this is an ASCII reading of it and settles nothing it does not.
 
-**Executed passes:** [1](systems-manifest-ascii-pass-1-plan.md) · [2](systems-manifest-ascii-pass-2-plan.md) · [3](systems-manifest-ascii-pass-3-plan.md) · [4](systems-manifest-ascii-pass-4-plan.md) · [5](systems-manifest-ascii-pass-5-plan.md) · [6](systems-manifest-ascii-pass-6-plan.md) · [7](systems-manifest-ascii-pass-7-plan.md) · [8](systems-manifest-ascii-pass-8-plan.md) · [9](systems-manifest-ascii-pass-9-plan.md) · [10](systems-manifest-ascii-pass-10-plan.md) · [11](systems-manifest-ascii-pass-11-plan.md). A new pass is linked here once it is executed.
+**Executed passes:** [1](systems-manifest-ascii-pass-1-plan.md) · [2](systems-manifest-ascii-pass-2-plan.md) · [3](systems-manifest-ascii-pass-3-plan.md) · [4](systems-manifest-ascii-pass-4-plan.md) · [5](systems-manifest-ascii-pass-5-plan.md) · [6](systems-manifest-ascii-pass-6-plan.md) · [7](systems-manifest-ascii-pass-7-plan.md) · [8](systems-manifest-ascii-pass-8-plan.md) · [9](systems-manifest-ascii-pass-9-plan.md) · [10](systems-manifest-ascii-pass-10-plan.md) · [11](systems-manifest-ascii-pass-11-plan.md) · [12](systems-manifest-ascii-pass-12-plan.md). A new pass is linked here once it is executed.
 
 **Authority:** `docs/systems-manifest.md`. Companion, not a replacement.  
 **Hands:** Graphics A–D. Shoe in hands.  
@@ -59,6 +59,8 @@ Emission remains `[GAP]`.
                           I→III read/cite only; never Core gear / Φ)
                          Order Proposal (Shadow) steward → pass 11 P11-P
                          (NON-binding · FORBID-as-Core-write · PROPOSAL-only)
+                         DIAGRAM SOUND audit → pass 12 P12-R
+                         (WITH OPENS if quiet-door OPEN; emission [GAP])
 
 
   G2  POINTER when / arity / adjacency     = [GAP]
@@ -91,6 +93,8 @@ Layer III also hosts a **cite-only** Shadow SOURCE MACHINERY inventory (pass 7):
 **Pass 10 pointer:** Core + Shadow mechanism↔ASCII rigor map / **P10-X** → sections after Pass 9. Cite only; no gear rename; no quiet-door→I.
 
 **Pass 11 pointer:** Shadow **Order Proposal** (P11-P) + light **P11-X** reconfirm → sections after Pass 10. NON-binding · FORBID-as-Core-write · PROPOSAL-only; no quiet-door→I; emission `[GAP]`.
+
+**Pass 12 pointer:** **DIAGRAM SOUND** audit (**P12-A** / **P12-P** / **P12-X** / **P12-O** / **P12-R**) → sections after Pass 11. Quiet-door may remain OPEN adjunct; no quiet-door→I; emission `[GAP]`.
 
 ---
 
@@ -642,6 +646,8 @@ Global companion mesh. **Not** a shelf P3-M paste. I → III = **read / cite onl
 
 **Pass 11 pointer:** singular Layer III reading order / Shadow Order Proposal → **P11-O** / **P11-P** (pass 11). Mesh body unchanged; P11-P is steward, not a rival board.
 
+**Pass 12 pointer:** whole-companion **DIAGRAM SOUND** → **P12-R** (pass 12). Mesh body unchanged.
+
 ## Cross-walk G-III-* ↔ shelf M-*/P-* (pass 9 · cite only)
 
 Book shelves share M-A*/P-A* locally — disambiguate by **path**. Do not renumber shelf cards. Do not paste shelf bodies.
@@ -746,6 +752,8 @@ Update wave · Pass 4 primary steward deliverable. Shelf P4-X spirit, **global**
 **P10-X verdict:** Core+Shadow rows **PASS** ×18 · FIX=0 · OPEN=1 (quiet-door adjunct only). Hard fence prose stands (Pass 7–9). No thin caption FIX required this pass.
 
 **Pass 11 pointer:** light CONFIRM re-walk → **P11-X**; steward reading order → **P11-P** Order Proposal (after Pass 10 deltas). Baseline stands unless P11-X cites drift.
+
+**Pass 12 pointer:** deep accuracy re-walk → **P12-X**; structural + Order Proposal rigor → **P12-A** / **P12-P**; verdict → **P12-R** (after Pass 11 deltas). Baseline stands unless P12-X cites drift.
 
 ## Pass 10 deltas
 
@@ -902,3 +910,139 @@ Decisive judgment = commit / defer / stop — **not** Φ fill / Core write / pro
 | T3 | **P11-P** Shadow Order Proposal body: NON-binding · FORBID-as-Core-write · PROPOSAL · KEEP-read · SILENT-for-Lace-append · G-III-1…9 · Piece 13 dual · quiet-door OPEN · I→III read/cite · Hands A–D win · G2/Φ `[GAP]` |
 | T4 | Executed-passes +11; thin Spine/Contract/P9-M/P10-X pointers to Order Proposal; no gear rename; no quiet-door→I |
 | T5 | Pass 11 deltas; refuse honored (Pass 10 refuse + no Order Proposal as Core/Hands law; no clipboard/kit edits; no invent Φ; no src/; no fill G2); Pass 7–10 retained |
+
+## P12-A — Structural analysis (pass 12 · one systems diagram)
+
+Update wave · Pass 6. Walk this companion as **one** systems diagram — Spine / Contract / Core mech / clock / Layer III / P9-M / P10-X / P11-P — not three rival audits. **No invent Φ.** No clipboard/kit edits. No Core redraw.
+
+| # | Surface walked | Seams / double-claims / missing fences | Score |
+|---|---|---|---|
+| 1 | Spine / Contract I·II·III | I/II/III fences intact; shoe arrive→append→participate→continue; train/HCC outside I; G2 `[GAP]`; Order Proposal steward + Pass 12 DIAGRAM SOUND pointers named | **PASS** |
+| 2 | Core mech (Pass 5) | One-tick · participation · star · dual · not-a-mechanism cohere as one operator; dual ≠ two engines; no second Core overview | **PASS** |
+| 3 | Core clock (Pass 6) | Impulse / pallet / tape / hands + slip + two clocks; train ≠ Core append clock; no gear rename; hands = projection | **PASS** |
+| 4 | Layer III board (Pass 7) | Nine cite rows + FM fence outside I; I→III read/cite only; no orphan shelf paths | **PASS** |
+| 5 | Leftovers / D1–D6 (Pass 8) | Piece 13 dual ≠ Shadow SOURCE (intentional dual, not double-claim); quiet-door **OPEN** adjunct named (**FORBID** I import) — not a missing fence | **PASS** |
+| 6 | G-III + P9-M (Pass 9) | Nine Shadow nodes outside I; mesh stamps FORBID-as-Core-write; train/HCC outside I; no competing Layer III canon | **PASS** |
+| 7 | C-Mech + G-III rigor + P10-X (Pass 10) | Accuracy how Core+Shadow stay honest; PASS×18 · OPEN×1 quiet-door; no orphan C-Mech / G-III attach | **PASS** |
+| 8 | P11-X / P11-O / P11-P (Pass 11) | Light CONFIRM · singular reading order Pass 7→11 · Order Proposal steward (not rival board); stamps NON-binding · FORBID-as-Core-write · SILENT | **PASS** |
+
+**Named intentional dual (not a seam failure):** Piece 13 Hands projection vs nine Shadow SOURCE cites — both under III / outside upward write; hard-fenced vs Core teeth.
+
+**Named OPEN adjunct (not a missing fence):** quiet-door `docs/kit/quiet-door-1-ascii.md` — dashed / OPEN · not tenth shelf · **FORBID** Contract I import.
+
+**P12-A verdict:** checklist **PASS** ×8 · OPEN-with-cause structural failures = 0. No invent Φ. No competing Layer III canons found.
+
+## P12-P — Order Proposal rigor check (pass 12)
+
+Update wave · Pass 6. Re-skim **P11-P** + **P11-O** reading order. Prefer **0** wording FIX. Tighten only if overclaim/drift.
+
+| Check | Question / evidence | Score |
+|---|---|---|
+| NON-binding | Banner + body stamp NON-binding on Core / `src/` / Φ / Hands law / graphics / clipboard bodies | **PASS** |
+| FORBID-as-Core-write | Prominent; no Core import of Shadow M/P as teeth; keep-outs list intact | **PASS** |
+| SILENT-for-Lace-append | Explicit; proposal does not schedule Lace append | **PASS** |
+| PROPOSAL-only / KEEP-read | PROPOSAL · KEEP-read (Shadow) stand; Hands may refuse without Core breach | **PASS** |
+| Piece 13 dual | Projection ≠ Shadow SOURCE; hard fence vs Core teeth | **PASS** |
+| Quiet-door OPEN | OPEN adjunct · not tenth shelf · **FORBID** I import | **PASS** |
+| Reading order 7→11 | Pass 7→8→9→10→P11-P intact; P11-P steward, not rival board | **PASS** |
+| Overclaim scan | No Core write / AGENTS.md / Φ schedule / `src/` / Order→Core / quiet-door→I language | **PASS** |
+| Mirror strength | Global proposal does not strengthen shelf host morals into Core | **PASS** |
+| Steward loop | observe→name→diagram-check→stamp-check→OPEN list→decide excludes Φ fill / Core install | **PASS** |
+
+**P12-P verdict:** stamps intact · FIX=0 · no rewrite of P11-P body. Emission / G2 stay `[GAP]`.
+
+## P12-X — Deep accuracy matrix (pass 12)
+
+Update wave · Pass 6. Stricter than **P11-X** (deeper evidence than light CONFIRM). Do not inherit PASS/CONFIRM blindly; reopen only drift / refuse fail. Quiet-door may remain **OPEN**.
+
+| Row | Kind | Prior P10/P11 | P12-X | Evidence (deeper than P11-X) | G2/Φ |
+|---|---|---|---|---|---|
+| C-Mech-1 | Core | PASS / CONFIRM | **PASS** | One-tick diagram still matches spine shoe arrive→append WORD\|POINTER→participate→continue; Rule Zero illegal-tick prose stands | `[GAP]` |
+| C-Mech-2 | Core | PASS / CONFIRM | **PASS** | Participation WORD/PTR + D1 six-of-six 2-ref; arity / Slot A vs B sealed unanswered | `[GAP]` |
+| C-Mech-3 | Core | PASS / CONFIRM | **PASS** | Star = view of WORD passes, not a row type; D4 3D-not-stored stands | `[GAP]` |
+| C-Mech-4 | Core | PASS / CONFIRM | **PASS** | Geometric ‖ array = one operator; no second engine in Spine or Pass 5 | `[GAP]` |
+| C-Mech-5 | Core | PASS / CONFIRM | **PASS** | HCC/Cup/Water/Reidemeister/query/G2 stay outside I / unanswered on not-a-mechanism table | `[GAP]` |
+| C-Mech-6 | Core | PASS / CONFIRM | **PASS** | Impulse/pallet/tape/hands metaphor on Graphic D only; no gear rename; train file outside I | `[GAP]` |
+| C-Mech-7 | Core | PASS / CONFIRM | **PASS** | Slip names illegal meshes; W pallet:tape on train, not Piece 16; no new Core teeth | `[GAP]` |
+| C-Mech-8 | Core | PASS / CONFIRM | **PASS** | Holder train ≠ Core append clock; mesh only as train legal work | `[GAP]` |
+| C-Mech-Spine | Core | PASS / CONFIRM | **PASS** | Spine Contract I box cross-checks C-Mech-1…4; shoe laceable without Shadow | `[GAP]` |
+| G-III-1 | Shadow | PASS / CONFIRM | **PASS** | webgpu ascii+mech paths present; Device/Queue/Buffer cite-only; KEEP-read / FORBID-as-Core-write; FM-Wgpu* | `[GAP]` |
+| G-III-2 | Shadow | PASS / CONFIRM | **PASS** | wgsl paths present; WGSL ≠ WORD/Φ; KEEP/FORBID + FM-Wgsl* | `[GAP]` |
+| G-III-3 | Shadow | PASS / CONFIRM | **PASS** | webnn paths present; MLGraph ≠ strand/store/Φ; KEEP/FORBID + FM-Webnn* | `[GAP]` |
+| G-III-4 | Shadow | PASS / CONFIRM | **PASS** | wasm-spec-3 paths present; mem/table ≠ L/cut/Φ; KEEP/FORBID + FM-W*/T* | `[GAP]` |
+| G-III-5 | Shadow | PASS / CONFIRM | **PASS** | agentscope paths present; ReAG/ISR ≠ Graphic D rows; KEEP/FORBID + FM-A* | `[GAP]` |
+| G-III-6 | Shadow | PASS / CONFIRM | **PASS** | petersen-zech paths present; neuron/width ≠ WORD/STAR/store; KEEP/FORBID + FM-P* | `[GAP]` |
+| G-III-7 | Shadow | PASS / CONFIRM | **PASS** | xiao-zhu paths present; embed/KV/next-token ≠ store/continue; KEEP/FORBID + FM-X* | `[GAP]` |
+| G-III-8 | Shadow | PASS / CONFIRM | **PASS** | kauffman-4ed paths present (+ Wave B where shelf has); knot ≠ rope/emission/array law; KEEP/FORBID + FM-K* | `[GAP]` |
+| G-III-9 | Shadow | PASS / CONFIRM | **PASS** | rowlands paths present (+ Wave B where shelf has); algebra ≠ mutate-WORD / Core ops; KEEP/FORBID + FM-R* | `[GAP]` |
+| quiet-door | OPEN adjunct | OPEN / OPEN | **OPEN** | Still OPEN cite at `docs/kit/quiet-door-1-ascii.md`; **FORBID** I import; not tenth shelf; no invent | `[GAP]` |
+
+### P12-X special gates (deep re-walk)
+
+| Gate | Check | P12-X |
+|---|---|---|
+| Spine shoe | arrive → append → participate → continue laceable from Spine + C-Mech alone | **PASS** |
+| C-Mech-5 outside-I | HCC/Cup/Water/Reidemeister/query outside I | **PASS** |
+| Clock ≠ train | C-Mech-6…8; no gear rename; hands = projection | **PASS** |
+| Shadow G-III-1…9 cite-only | Nine shelves KEEP-read / FORBID-as-Core-write; paths OK | **PASS** |
+| Cross-layer bleed | Device/Queue/dispatch/WGSL/wasm mem/MLGraph/ReAG/neuron/embed never Core teeth or Φ; Shadow M/P never redraw as impulse/pallet/tape/hands | **PASS** |
+| No POINTER/Φ invent | Companion does not smuggle emission answers | **PASS** |
+| G2 sealed | Every when/arity/adjacency row `[GAP]` | **PASS** |
+| Quiet-door FORBID I | OPEN adjunct only; not Contract I import | **PASS** (adjunct remains **OPEN**) |
+
+**P12-X verdict:** Core+Shadow rows **PASS** ×18 · FIX=0 · OPEN=1 (quiet-door adjunct only). Special gates **PASS** ×8 (quiet-door FORBID-I gate PASS while adjunct OPEN). Shoe test **PASS**. Emission / G2 stay `[GAP]`. No thin **P12-F** caption required.
+
+## P12-F / P12-O — Thin FIX + singular overview reconfirm (pass 12)
+
+**P12-F:** No matrix-cited thin caption/stamp/pointer FIX required (P12-A / P12-P / P12-X all FIX=0 on claim surfaces). Thin forward pointers only (executed-passes +12 · Spine/Contract/P9-M/P10-X → Pass 12) — not claim-surface drift.
+
+**P12-O:** Singular canonical Layer III / Shadow SOURCE reading order reconfirmed:
+
+```
+  Pass 7  Shadow SOURCE MACHINERY board
+     →
+  Pass 8  leftovers · D1–D6 (Piece 13 dual · quiet-door OPEN)
+     →
+  Pass 9  G-III-1…9 · P9-M · cross-walk
+     →
+  Pass 10 C-Mech · G-III rigor · P10-X
+     →
+  Pass 11 P11-P Order Proposal (steward — not rival)
+     →
+  Pass 12 P12-R DIAGRAM SOUND receipt (this pass)
+```
+
+No competing Layer III canons. No Core gear rename. No quiet-door → Contract I. Pass 7–11 bodies retained.
+
+## P12-R — DIAGRAM SOUND verdict (pass 12)
+
+Update wave · Pass 6 distinctive product.
+
+| Surface | Result |
+|---|---|
+| P12-A structural | **PASS** ×8 · structural OPEN failures = 0 |
+| P12-P Order Proposal rigor | Stamps intact · FIX=0 |
+| P12-X deep accuracy | Core+Shadow **PASS** ×18 · FIX=0 · OPEN×1 (quiet-door) |
+| P12-F | None (claim-surface) |
+| P12-O singular | **Y** — one stack Pass 7→12; no competing canons |
+
+**Overall verdict: DIAGRAM SOUND WITH OPENS**
+
+Quiet-door remains non-blocking **OPEN** adjunct (`docs/kit/quiet-door-1-ascii.md` · **FORBID** Contract I import · not tenth shelf). Diagram otherwise coherent and non-leaking. FORBIDs not softened to force SOUND.
+
+Emission / G2 / Φ remain **`[GAP]`**. Passes 7–11 retained. No clipboard/kit edits. No `src/`. No invent Φ. No Order→Core. No quiet-door→I. No Core rewrite beyond thin pointers.
+
+### Sealed refuse (pass 12 · honored)
+
+Pass 11 refuse still stands, plus: no Order Proposal as Core/Hands law; no Core rewrite beyond thin P12-cited FIX; no new clipboard machinery files; no paste shelf panels; no invent Φ / fill G2 / `src/`; no Core gear rename; no quiet-door→I; no Device/Queue/dispatch/WGSL/wasm/MLGraph as Core ops; no train oil / HCC / Cup / Water inside I; no clone shelf P6 tables into Core; no soft FORBID to force SOUND.
+
+## Pass 12 deltas
+
+| Ticket | Action |
+|---|---|
+| T1 | **P12-A** structural analysis of whole companion as one systems diagram; PASS×8; Piece 13 dual + quiet-door OPEN named; no invent Φ |
+| T2 | **P12-P** Order Proposal rigor; NON-binding · FORBID-as-Core-write · SILENT · Piece 13 dual · quiet-door OPEN · reading order 7→11 intact; FIX=0 |
+| T3 | **P12-X** deep accuracy; Core+Shadow PASS×18 · FIX=0 · OPEN×1 (quiet-door); special gates PASS; shoe PASS; G2/Φ `[GAP]` |
+| T4 | **P12-F/O** claim-surface FIX=0; singular overview reconfirmed Pass 7→12; thin pointers only; no gear rename; no quiet-door→I |
+| T5 | **P12-R** verdict **DIAGRAM SOUND WITH OPENS**; executed-passes +12; Pass 12 deltas; refuse honored; G2 `[GAP]`; Pass 7–11 retained |
+

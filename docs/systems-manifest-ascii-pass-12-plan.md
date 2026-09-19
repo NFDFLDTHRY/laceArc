@@ -1,6 +1,6 @@
 # Systems-manifest ASCII pass 12 plan — Update wave Pass 6 · DIAGRAM SOUND
 
-**Status:** **HELD** (plan only · 2026-09-18 PT). Emission `[GAP]`.  
+**Status:** **EXECUTED** (2026-09-18 PT) · verdict **DIAGRAM SOUND WITH OPENS**. Emission `[GAP]`.  
 **Series:** Pass **12** (linear executed-passes list) = **Update wave · Pass 6**. Subtitle: both names.  
 **Station:** maps (catch-all for `docs/*.md` at court root). Holder: **reference-Mapper**. Keep maps **HELD**.  
 **Authority:** `docs/systems-manifest.md` (Contracts I / II / Layer III; Pieces unchanged).  
@@ -100,7 +100,7 @@ pull/ff → maps check → Hands + global mesh skim
 | Nine `docs/clipboards/*-mechanisms.md` | All present — **cite only; do not create / edit** |
 | Emission / G2 | Still `[GAP]` — sealed |
 | Quiet door #1 ascii | Real file at `docs/kit/quiet-door-1-ascii.md` (kit). OPEN cite adjunct (Pass 8–11). **Not** a clipboard shelf |
-| P12-A/P/X/F/O/R bodies | **Not written at plan time** — execute writes them |
+| P12-A/P/X/F/O/R bodies | **EXECUTED** on companion — DIAGRAM SOUND WITH OPENS |
 
 Pass 12 does **not** re-draw Passes 1–6 art, rebuild the nine-row inventory, redo Pass 8 leftovers/coherence, redo Pass 9 cite-cards/mesh/cross-walk, re-score a full P10-X campaign, or rewrite P11-P unless a ticket names a concrete **thin pointer** or **P12-X-cited caption/stamp** fix for real drift.
 
@@ -387,13 +387,13 @@ Refuse on execute (and for this update wave Pass 6):
 
 ### Execute turn (later — when human says Proceed)
 
-- [ ] T1 P12-A: structural analysis of global ascii as one systems diagram; seams/double-claims/missing fences named; PASS or OPEN-with-cause; no invent Φ.  
-- [ ] T2 P12-P: Order Proposal rigor — NON-binding · FORBID-as-Core-write · SILENT-for-Lace-append · Piece 13 dual · quiet-door OPEN · Pass 7→11 reading order intact; thin stamp FIX only if cited.  
-- [ ] T3 P12-X: deep accuracy matrix Core C-Mech + G-III + special gates + cross-layer + G2/Φ `[GAP]` + shoe; PASS|FIX|OPEN; quieter than invent; quiet-door may remain OPEN.  
-- [ ] T4 P12-F/O: fix only cited thin drift; singular canonical overview reconfirmed (no competing Layer III canons); no gear rename; no quiet-door→I.  
-- [ ] T5 P12-R: verdict DIAGRAM SOUND | DIAGRAM SOUND WITH OPENS | NOT SOUND; executed-passes +12; Pass 12 deltas; G2/Φ `[GAP]`; refuse honored (Pass 11 + no Core rewrite beyond thin FIX; no clipboard/kit edits; no invent Φ; no src/; no fill G2; no Order→Core; no quiet-door→I).  
-- [ ] Passes 1–11 retained (thin pointers / cited FIX only); no clipboard/kit edits; no new machinery files; no Core invent beyond P12-cited thin fixes; no `src/`.  
-- [ ] maps still HELD by reference-Mapper (unless human releases).
+- [x] T1 P12-A: structural analysis of global ascii as one systems diagram; seams/double-claims/missing fences named; PASS or OPEN-with-cause; no invent Φ.  
+- [x] T2 P12-P: Order Proposal rigor — NON-binding · FORBID-as-Core-write · SILENT-for-Lace-append · Piece 13 dual · quiet-door OPEN · Pass 7→11 reading order intact; thin stamp FIX only if cited.  
+- [x] T3 P12-X: deep accuracy matrix Core C-Mech + G-III + special gates + cross-layer + G2/Φ `[GAP]` + shoe; PASS|FIX|OPEN; quieter than invent; quiet-door may remain OPEN.  
+- [x] T4 P12-F/O: fix only cited thin drift; singular canonical overview reconfirmed (no competing Layer III canons); no gear rename; no quiet-door→I.  
+- [x] T5 P12-R: verdict DIAGRAM SOUND | DIAGRAM SOUND WITH OPENS | NOT SOUND; executed-passes +12; Pass 12 deltas; G2/Φ `[GAP]`; refuse honored (Pass 11 + no Core rewrite beyond thin FIX; no clipboard/kit edits; no invent Φ; no src/; no fill G2; no Order→Core; no quiet-door→I).  
+- [x] Passes 1–11 retained (thin pointers / cited FIX only); no clipboard/kit edits; no new machinery files; no Core invent beyond P12-cited thin fixes; no `src/`.  
+- [x] maps still HELD by reference-Mapper (unless human releases).
 
 ---
 
