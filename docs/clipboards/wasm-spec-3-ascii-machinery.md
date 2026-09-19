@@ -4,7 +4,7 @@
 **Source:** Andreas Rossberg / WebAssembly Community Group, *WebAssembly Specification* Release **3.0 (2026-09-11)**.  
 **PDF:** `refs/local/webassembly-spec-3.0.pdf` → attachment `687e73641a7eec8692273fdf048e1578bf2f379f507c36ec284a39d9e7f70fce` (323 pp., text layer; **never git-add**). SHA-256 `687e73641a7eec8692273fdf048e1578bf2f379f507c36ec284a39d9e7f70fce`. Printed ≈ PDF − 4.  
 **Admission:** [`wasm-spec-3-clipboard.md`](wasm-spec-3-clipboard.md).  
-**Mechanisms:** deferred (captions under panels this pass).  
+**Mechanisms:** Pass 3 EXECUTED — [`wasm-spec-3-mechanisms.md`](wasm-spec-3-mechanisms.md) (M-T1…M-T9).  
 **Not this file:** Lace Core ASCII lives in [`systems-manifest-ascii.md`](../systems-manifest-ascii.md) — **do not conflate**.  
 **Adjacent (not Spec authority):** [`rust-nostd-crate-map.md`](../plans/rust-nostd-crate-map.md) · [`rust-nostd-branch-contracts.md`](../plans/rust-nostd-branch-contracts.md) · [`clock/wasm/README.md`](../clock/wasm/README.md) · [`pointer-emission.md`](../pointer-emission.md) = DRAFT/`[GAP]`.
 

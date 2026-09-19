@@ -1,8 +1,8 @@
 # WebAssembly Spec 3.0 — Pass 3 PLAN (system mechanisms / Wave A M-T* + P3-M mesh)
 
-**Status:** **HELD / NOT EXECUTED** · plan only · 2026-09-18 ~20:05 PT  
-**Station:** clipboards (HELD `wasm-spec-3 Pass 3 plan`)  
-**Base at plan:** `e1c1582` (= `origin/main` tip · Pass 2 station release)  
+**Status:** **EXECUTED** · 2026-09-18 ~20:08 PT  
+**Station:** clipboards (EXECUTE `wasm-spec-3 Pass 3 EXECUTE`)  
+**Base at plan:** `e1c1582` · plan rebased as `0575b28` (onto `591a61a`) · execute on top  
 **Spec:** WebAssembly Specification **Release 3.0** (2026-09-11) · editor Andreas Rossberg / W3C CG  
 **Clipboard under test:** `docs/clipboards/wasm-spec-3-clipboard.md` (Pass 1–2 EXECUTED)  
 **ASCII companion (read-only default):** `docs/clipboards/wasm-spec-3-ascii-machinery.md` (overview + **P-T1…P-T9**)  
@@ -47,7 +47,7 @@ pull/ff → claim clipboards → Hands + target-mesh skim
 |  WASM ops = TARGET semantics.  Do NOT invent POINTER emission / Phi.   |
 |  Do NOT import WASM store/memory/table/stack as Lace's 1D strand.      |
 |  Zero crates.io / foreign deps.  No src/ until pointer-emission accepted.|
-|  Status this commit: HELD / NOT EXECUTED — plan file only.             |
+|  Status this commit: EXECUTED — Wave A M-T1…M-T9 + P3-M.               |
 +======================================================================+
 ```
 
@@ -324,23 +324,24 @@ They do not write Graphic D, do not birth `src/`, and do not fill Φ.
 
 ---
 
-## Plan receipt (this turn — PLAN ONLY)
+## Plan receipt (EXECUTED)
 
 | Field | Value |
 |---|---|
-| Status | **HELD / NOT EXECUTED** |
+| Status | **EXECUTED** |
 | When (plan) | 2026-09-18 ~20:05 PT |
-| Station | clipboards · agent `wasm-spec-3 Pass 3 plan` |
-| Base | `e1c1582` (origin/main · Pass 2 tip) |
-| Artifact A | deferred — `wasm-spec-3-mechanisms.md` **not** created at plan time |
-| Artifact B | deferred — P3-M / P3-R at execute |
+| When (execute) | 2026-09-18 ~20:08 PT |
+| Station | clipboards · agent `wasm-spec-3 Pass 3 EXECUTE` |
+| Base | `e1c1582` · plan `0575b28` (rebased onto `591a61a`) |
+| Artifact A | [`wasm-spec-3-mechanisms.md`](wasm-spec-3-mechanisms.md) · **M-T1…M-T9** |
+| Artifact B | P3-M / P3-R on [`wasm-spec-3-clipboard.md`](wasm-spec-3-clipboard.md) |
 | Wave A IDs | **M-T1…M-T9** 1:1 with P-T1…P-T9 |
-| ASCII | read-only default (no Wave B) |
+| ASCII | read-only default (no Wave B; no stamp conflict) |
 | Emission | still `[GAP]` |
-| rust-nostd | read-only mesh cite |
+| rust-nostd | read-only mesh cite (untouched) |
 | PDF | never staged |
 | Push | **not** performed |
-| Execute | **not** performed |
+| Execute | **performed** |
 
 ---
 

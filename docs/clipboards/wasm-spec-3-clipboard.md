@@ -193,7 +193,7 @@
 
 ## Mechanisms note
 
-Thin `wasm-spec-3-mechanisms.md` (M-T1…M-T9) **deferred** this pass — panel captions + PDF pins carry Pass 1 rigor. Open if steward wants Petersen-grade algorithm cards later.
+Pass 3 EXECUTED: [`wasm-spec-3-mechanisms.md`](wasm-spec-3-mechanisms.md) Wave A **M-T1…M-T9** (compile-target system procedures). See **P3-M** / **P3-R** below. Emission `[GAP]`.
 
 
 ## Pass 2 deltas
@@ -275,7 +275,7 @@ PDF is **PRESENT** (do not narrate absent). Pass 1 receipt: `refs/local/webassem
 - Treat validate as admit-POINTER · treat instantiate as Core birth · treat wat as sole authority
 - Fill `[GAP]` via host import / compile-to-wasm32 story
 - Amend rust-nostd maps / law / graphics / systems-manifest / five-stakes
-- Wave B mechanisms rewrite / new M-T* file · Pass 3 / Pass 4 products
+- Wave B mechanisms rewrite · Pass 4 products (Pass 3 Wave A M-T* + P3-M landed)
 - Add `src/` / Cargo.toml / crates.io deps
 - Git-add the PDF · pretend OCR / claim PDF absent when present
 - Clone Xiao–Zhu / Petersen / AgentScope LLM morals onto this compile-target shelf
@@ -294,3 +294,48 @@ PDF is **PRESENT** (do not narrate absent). Pass 1 receipt: `refs/local/webassem
 
 **Lace refusal:** this sketches **target binary decode**. It does **not** open Core doors, does **not** append to Graphic D, does **not** birth `src/`, and does **not** fill emission `[GAP]`.
 
+---
+
+## Pass 3 — system mechanisms (Wave A) + P3-M mesh
+
+Pass 2 leftovers stand. Pass 3 cardifies Spec 3.0 **constructive target procedures** 1:1 from ascii **P-T1…P-T9**. Not anti-model morals. Not Core. Not emission fill. WASM remains **TARGET only**.
+
+### P3-M — Mechanism coherence mesh
+
+| Mechanism (M-T*) | Panel (P-T*) | Clipboard PAGE | FM-W* | rust-nostd (read-only) | Emission | KEEP/FORBID tooth | Same story? |
+|---|---|---|---|---|---|---|---|
+| **M-T1** Module anatomy | P-T1 | B | FM-W9 | wasm32 surface ≠ strand/ · core/ door | `[GAP]` | KEEP-read-as-target · **FORBID-as-Lace-store** · **FORBID-as-Core** | YES |
+| **M-T2** Types/values | P-T2 | C | — (MAP forbid) | ≠ word/ · pointer/ kinds | `[GAP]` | KEEP-read-as-target · **FORBID-as-Core-write** | YES |
+| **M-T3** Validation | P-T3 | D | **FM-W5** | validate ≠ admit POINTER | `[GAP]` | KEEP-read-as-target · **FORBID-as-emission-rule** · **SILENT** | YES |
+| **M-T4** Runtime structures | P-T4 | E | **FM-W1…W3** · W9 | store/mem/table/stack ≠ strand / Graphic D | `[GAP]` | KEEP-read-as-target · **FORBID-as-Lace-store** | YES |
+| **M-T5** Instruction reduction | P-T5 | F | **FM-W4** | control ≠ pointer-emission when-rule | `[GAP]` | KEEP-read-as-target · **FORBID-as-emission-rule** | YES |
+| **M-T6** Binary decode | P-T6 | G | — (D7) | decode ≠ Core birth / `src/` | `[GAP]` | KEEP-read-as-target · **FORBID-as-Core** · SILENT · D7 cross-link | YES |
+| **M-T7** Text twin | P-T7 | G | **FM-W6** | twin only; no sole authority | `[GAP]` | KEEP-read-as-target · text **non-authority** | YES |
+| **M-T8** Host embed | P-T8 | H | **FM-W7** | host embed PROPOSAL-only | `[GAP]` (FORBID fill) | KEEP-read-as-target · **PROPOSAL-only** · **FORBID fill-GAP** | YES |
+| **M-T9** Trap/divergence vs Lace append | P-T9 | X | **FM-W8** | trap ≠ Lace cut / append | `[GAP]` | KEEP-read-as-target · **FORBID-as-emission-rule** · **SILENT** | YES |
+
+No CONFLICT. Emission column `[GAP]` on every row. rust-nostd cited read-only (target surface ≠ door / ≠ birth) — files not amended. Ascii P-T* stamps stand (T7 skip). Five-stakes skipped (T6; not anti-model PAGE).
+
+### P3-5S — Five-stakes
+
+**skip** — no unexpected five-stakes drift; this shelf is compile-target, not anti-model PAGE.
+
+### P3-R — Pass 3 receipt
+
+| Field | Value |
+|---|---|
+| Status | **EXECUTED** |
+| When | 2026-09-18 ~20:08 PT |
+| Station | clipboards · agent `wasm-spec-3 Pass 3 EXECUTE` |
+| PDF | `refs/local/webassembly-spec-3.0.pdf` · SHA `687e73641a7eec8692273fdf048e1578bf2f379f507c36ec284a39d9e7f70fce` · never staged |
+| Artifact A | [`wasm-spec-3-mechanisms.md`](wasm-spec-3-mechanisms.md) · **M-T1…M-T9** full schema |
+| Artifact B | P3-M mesh (9 rows) + this receipt |
+| Hard stamps | M-T4 FORBID-as-Lace-store · M-T3/M-T5/M-T9 FORBID-as-emission-rule · M-T8 PROPOSAL-only+FORBID fill-GAP · M-T7 non-authority · M-T6 FORBID-as-Core+D7 |
+| Ascii P-T* | stamps stand (no stamp-conflict tighten) |
+| Pass 1–2 | A–H/X · FM-W* · D7 untouched (M-T6 cross-links D7 only) |
+| rust-nostd / law / graphics / systems-manifest / five-stakes | untouched |
+| Emission | still `[GAP]` |
+| `src/` / Cargo | absent (stay absent) |
+| Push | **not** performed |
+
+Steward refuse (shoe in hands): linear mem=strand · table=star · stack=append · br/return→Φ · validate→admit POINTER · wat sole authority · import fills GAP · trap=Lace cut · instantiate=Core birth — refuse via M-T* + P3-M teeth above.
