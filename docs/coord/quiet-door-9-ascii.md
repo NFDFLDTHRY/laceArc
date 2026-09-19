@@ -2,7 +2,7 @@
 
 **Object:** `docs/coord/README.md`  
 **Station:** coord.  
-**Executed:** [quiet-door-9-pass-1-plan.md](quiet-door-9-pass-1-plan.md) · [quiet-door-9-pass-2-plan.md](quiet-door-9-pass-2-plan.md) · [quiet-door-9-pass-3-plan.md](quiet-door-9-pass-3-plan.md).  
+**Executed:** [quiet-door-9-pass-1-plan.md](quiet-door-9-pass-1-plan.md) · [quiet-door-9-pass-2-plan.md](quiet-door-9-pass-2-plan.md) · [quiet-door-9-pass-3-plan.md](quiet-door-9-pass-3-plan.md) · [quiet-door-9-pass-4-plan.md](quiet-door-9-pass-4-plan.md).  
 **Not:** Core. Not Graphic E. Not Hands. Not door #8 pass 7. Not projection iter 5. Not a shaft claim. Not a rewrite of `coord.sh`.  
 **Emission:** `[GAP]`. No `src/`. Coord door bytes untouched. `coord.sh` untouched. Renderer unclaimed. Shafts FREE. Door #8 CLOSED.
 
@@ -128,4 +128,74 @@ Station *files* live here. Station *objects* do not.
 | T1 | Eight-row grain |
 | T2 | Umbrella ≠ script ≠ station object ≠ Hands |
 | T3 | `coord.sh` still coord and unedited |
+| T4 | Door + `coord.sh` + shafts + Gearing untouched |
+
+## Pass 4 — walk
+
+This walk names the owner or holds the unknown and does not emit POINTER. Hands keeps A13. This pass does not rewrite `coord.sh`.
+
+### Operator (from the coord door)
+
+```
+ ╔══════════════════════════════════════════════════════════════╗
+ ║  If you cannot tell which station owns a path, it is held.   ║
+ ║  Fail closed.                                                ║
+ ║  ff-only main → which → claim → edit owned files → check.    ║
+ ║  Do not invent Φ here.                                       ║
+ ╚══════════════════════════════════════════════════════════════╝
+
+  reader arrives at docs/coord/README.md
+    if a path is asked          → which; unknown is held
+    if an edit is asked         → claim the owner; edit only owned files
+    if Hands is asked           → send to the four graphics
+    if frozen HTML is asked     → renderer; do not claim it
+    if a shaft is asked         → delegate to claim.sh; this pass takes none
+    if Φ is asked               → leave G2 open
+    never: this shelf ⇒ Hands
+    never: coord ⇒ rewrite coord.sh this pass
+    never: coord ⇒ renderer
+    never: door #8 ⇒ reopened
+
+  not "emit POINTER."
+  not A13 arrive / through-star / continue.
+```
+
+### Application register
+
+| # | Role | What arrives | What is walked | What continues | New machine? |
+|---|---|---|---|---|---|
+| Co1 | door | a reader at `docs/coord/` | index of stations | Hands still the store | no |
+| Co2 | Layer III | a bid to store | keep the umbrella off Core | — | no |
+| Co3 | coord.sh | a status / which / claim bid | name it; do not rewrite it | script stays unedited | no |
+| Co4 | standing rule | an agent about to edit | which then claim | only owned files | no |
+| Co5 | doc stations | a docs path | name the owner | station objects stay theirs | no |
+| Co6 | gear delegates | a `gear:<shaft>` bid | strip prefix; call `claim.sh` | shafts stay FREE | no |
+| Co7 | fail closed | an unknown path | hold the unknown | — | no |
+| Co8 | Φ / do not invent | a missing emission rule | leave G2 open | G2 still `[GAP]` | no |
+
+### Coord versus Hands versus renderer
+
+```
+ quiet-door-9-ascii.md       coord door              Hands
+ --------------------       -------------           -----
+ Layer III reading          the index               the store
+ names stations             names stations          four graphics
+
+ wrapper-as-Core            [X]
+ Hands verbs pasted here    [X]
+ coord.sh rewritten         [X]
+ viewer writes L            [X]
+ renderer claimed           [X]
+ shaft claimed this pass    [X]
+ door #8 reopened           [X]
+ G2                         [GAP]
+```
+
+## Pass 4 deltas
+
+| Ticket | Action |
+|---|---|
+| T1 | One walk box |
+| T2 | Eight `New machine?` = no |
+| T3 | `coord.sh` unedited |
 | T4 | Door + `coord.sh` + shafts + Gearing untouched |

@@ -1,6 +1,6 @@
 # Quiet door #9 (Coord) — Pass 4 PLAN
 
-**Status:** PLAN only. Not run.  
+**Status:** EXECUTED — walk on `docs/coord/quiet-door-9-ascii.md`. Door + `coord.sh` unchanged. Emission `[GAP]`.  
 **Station:** coord (HELD Grok-coord).  
 **Object:** Coord **walk** — one mechanism on [`quiet-door-9-ascii.md`](quiet-door-9-ascii.md).  
 **Authority:** Coord door passes 1–3. Coord door as a *named door*, not bytes to edit.  
