@@ -69,6 +69,7 @@
 | [verification-iter4-pass-4-findings.md](verification-iter4-pass-4-findings.md) | pass 4 record. D1/D2 hold — a third of the tree was a transient orphan, and the checker has four standing false positives |
 | [verification-iter4-pass-5-plan.md](verification-iter4-pass-5-plan.md) | `[PLAN]` iteration 4 pass 5: the docket — twelve items in four groups, a thirteenth struck because it was already correct |
 | [verification-iter4-pass-5-findings.md](verification-iter4-pass-5-findings.md) | pass 5 record. Seven applied — advisories 45 to 11, orphans 35 to 2. Six still the human's |
+| [verification-iter4-pass-6-plan.md](verification-iter4-pass-6-plan.md) | `[PLAN]` iteration 4 pass 6: the receipt. Unreachable 97 to 39, and all 39 are one campaign's |
 | [restructure-plan.md](restructure-plan.md) | `[PROPOSAL]` coherence of the whole tree: twelve measured findings, eight phases, one station per commit; supersedes the defrag plan as filing plan of record |
 
 Sub-shelves: [fixtures/](fixtures/README.md) sealed golden IR · [tools/](tools/README.md) host validator.
