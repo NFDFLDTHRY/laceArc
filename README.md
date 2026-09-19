@@ -35,7 +35,7 @@ Shelves (defrag pass 1–4). Hands stay at `docs/` root. Do not treat a prompt, 
 | History | [docs/history/](docs/history/README.md) | Recoveries. Do not revive walkers |
 | Prompts | [docs/prompts/](docs/prompts/README.md) | Agent tickets. Not law |
 | Clipboards | [docs/clipboards/](docs/clipboards/README.md) | KEEP/FORBID mappings of the five stake texts |
-| Kit | [docs/kit/](docs/kit/README.md) | Steward controls. `READ_ME_FIRST` pin is STALE |
+| Kit | [docs/kit/](docs/kit/README.md) | Steward controls. PWA install law: [githack-pwa-deploy.md](docs/kit/githack-pwa-deploy.md) |
 | Plans | [docs/plans/](docs/plans/README.md) | `[PLAN]` only: rust doors, hologram IR, the projection brief, the restructure plan. Not Core |
 
 | Path | Role |
@@ -51,7 +51,7 @@ Shelves (defrag pass 1–4). Hands stay at `docs/` root. Do not treat a prompt, 
 | [docs/clock/shadow-clock-agent-brief.md](docs/clock/shadow-clock-agent-brief.md) | Standing brief for agents: define gear interaction contracts and walk all sources. |
 | [docs/clock/shadow-clock-gear-contracts.md](docs/clock/shadow-clock-gear-contracts.md) | Walk artifact: every mesh contracted, stamped, cited. Shadow only. |
 | [docs/clock/system-mathematical-model.md](docs/clock/system-mathematical-model.md) | Dual-universe formal model: Hands Contract I + Shadow {A,B,C}; emission sealed [GAP]. |
-| [docs/shadow-clock-gearing.html](docs/shadow-clock-gearing.html) | Interactive Layer-III projection: {A,B,C} as physical clock gearing + mesh contracts — **WebGPU 3D required** (Chrome Android flags; no 2D primary view; raw.githack). |
+| [docs/shadow-clock-gearing.html](docs/shadow-clock-gearing.html) | Interactive Layer-III projection: {A,B,C} as physical clock gearing + mesh contracts — **WebGPU 3D required**. Preview on raw.githack. **Install** only via [GitHack PWA policy](docs/kit/githack-pwa-deploy.md). |
 | [docs/gearing/](docs/gearing/) | Shared-interactive Layer-III contract data (`window.LACE_CONTRACTS` additive scripts). |
 | [docs/coord/](docs/coord/) | Multi-agent coordination umbrella: doc stations + `coord.sh`; gear shafts still via claim.sh. |
 | [docs/prompts/clip-and-five-refs-prompt.md](docs/prompts/clip-and-five-refs-prompt.md) | Agent prompt: clipboard-looking mapping sheets while walking the five stake references. |

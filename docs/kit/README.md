@@ -8,7 +8,7 @@ Portable steward controls. Not Hands. Not Graphic D. Nothing here is a source of
 | [agent-control.md](agent-control.md) | Portable standing prompt: the staking law verbatim, then the operating controls C01–C12 | transport copy of [the live law](../law-why-these-documents.md) |
 | [agent-task-template.md](agent-task-template.md) | One-task, adjudication, proof-contract and handoff forms | live |
 | [downstream-audit.md](downstream-audit.md) | Dated audit: evidence, failure paths, source corrections, agent challenge cases F01–F12 | dated snapshot, re-checked by the coherence audit |
-| [grok-bot-profile.md](grok-bot-profile.md) | Paste-ready provider profile | transport copy |
+| [githack-pwa-deploy.md](githack-pwa-deploy.md) | Layer III HTML install: `rawcdn` + full SHA. Never `main`, never Pages | **LAW** |
 
 The transport copies carry the law's blocks at the revision they were made; where a copy and [the live law](../law-why-these-documents.md) disagree, the live law wins. Restructure phase 3 regenerates them and adds a check.
 

@@ -77,6 +77,7 @@ Guard the model. Do not implement Core until [`docs/pointer-emission.md`](docs/p
 6. Keep distinct passes distinct. Ambiguity remaining in 3D is success.
 7. Ask before any commit that adds code, types, or a second store.
 8. Treat [`docs/law-why-these-documents.md`](docs/law-why-these-documents.md) as law for why adjacent texts exist and how code may exist.
+9. Deploy Layer III HTML only by [`docs/kit/githack-pwa-deploy.md`](docs/kit/githack-pwa-deploy.md): `rawcdn.githack.com` + full commit SHA + app path. Never `main`. Never GitHub Pages. A new commit is a new install URL.
 
 ## Never
 
@@ -89,6 +90,7 @@ Guard the model. Do not implement Core until [`docs/pointer-emission.md`](docs/p
 - Import Kauffman, Rowlands, Xiao–Zhu, Petersen–Zech, or AgentScope as Core operators.
 - Add crates.io, git submodules of foreign code, `std` as a silent default, or any language other than Rust `no_std`.
 - Treat Coq, seL4, CompCert, or any name in the posture list as a crate to vendor.
+- Treat GitHub Pages or floating `main` githack as an install host.
 
 ## If asked to implement
 
