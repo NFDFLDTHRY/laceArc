@@ -1,6 +1,14 @@
 # Lace: sixth extraction plan
 
-Plan prepared 18 September 2026 from the fifth extraction's saved source and coverage register. This plans the next recovery pass; it does not execute it.
+**Status:** EXECUTED.
+**Station:** history.
+**Agent:** Grok-history.
+**Plan prepared:** 18 September 2026 from the fifth extraction's saved source and coverage register.
+**Execute:** 19 September 2026. Dump [history-recovered-pass-6-2026-09-18.md](history-recovered-pass-6-2026-09-18.md). Sit-note [history-recovered-pass-6-sit.md](history-recovered-pass-6-sit.md).
+**Execute BASE:** `2e5ecbd240d71e438b37ff36b86e588a41202b95` (claim refresh before commit).
+**Emission:** `[GAP]`. No `src/`. No Core. No walker revival.
+
+This plans the next recovery pass. The execute filled the hole pass 7 already cited.
 
 ```text
 +--------------------------------------------------------------+
@@ -79,4 +87,3 @@ Plan prepared 18 September 2026 from the fifth extraction's saved source and cov
 | Missing history is not permission to invent machinery.       |
 +--------------------------------------------------------------+
 ```
-

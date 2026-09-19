@@ -19,8 +19,10 @@ An **extraction** is what a pass recovered. A **sit-note** is how that extract s
 | [history-recovered-pass-4-sit.md](history-recovered-pass-4-sit.md) | Pass 4 sit-note |
 | [history-recovered-pass-5-2026-09-18.md](history-recovered-pass-5-2026-09-18.md) | Pass 5 extraction |
 | [history-recovered-pass-5-sit.md](history-recovered-pass-5-sit.md) | Pass 5 sit-note |
-| [history-recovered-pass-6-plan.md](history-recovered-pass-6-plan.md) | Pass 6 — **plan only; not run** |
-| [history-recovered-pass-7-2026-09-18.md](history-recovered-pass-7-2026-09-18.md) | Pass 7 extraction (bound) |
+| [history-recovered-pass-6-plan.md](history-recovered-pass-6-plan.md) | Pass 6 plan (EXECUTED) |
+| [history-recovered-pass-6-2026-09-18.md](history-recovered-pass-6-2026-09-18.md) | Pass 6 extraction — HCC-A / Coffee Cup / Water originals vs surface branches |
+| [history-recovered-pass-6-sit.md](history-recovered-pass-6-sit.md) | Pass 6 sit-note |
+| [history-recovered-pass-7-2026-09-18.md](history-recovered-pass-7-2026-09-18.md) | Pass 7 extraction (bound; cites pass 6) |
 | [history-recovered-pass-7-evidence-2026-09-18.json](history-recovered-pass-7-evidence-2026-09-18.json) | Pass 7 evidence (409 KB JSON; machine record, not prose) |
 
 POINTER emission stays `[GAP]`. No `src/`.
