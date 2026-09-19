@@ -2,7 +2,7 @@
 
 **Not Graphic C.** [`n-dimensional-relationships.png`](n-dimensional-relationships.png) is the source. This is an ASCII reading of how more dimensions present themselves and settles nothing the PNG does not.
 
-**Executed:** [i2p3](ascii-iteration-2-pass-3-plan.md) · [i2p4](ascii-iteration-2-pass-4-plan.md) · [i2p5](ascii-iteration-2-pass-5-plan.md).  
+**Executed:** [i2p3](ascii-iteration-2-pass-3-plan.md) · [i2p4](ascii-iteration-2-pass-4-plan.md) · [i2p5](ascii-iteration-2-pass-5-plan.md) · [i2p6](ascii-iteration-2-pass-6-plan.md).  
 **Station:** graphics.  
 **Store:** Graphic D. C is the N-D presentation reading of the same strand.  
 **Not this file:** Graphic A ASCII, Graphic B ASCII, D1 tape, Hands-manifest spine (`docs/systems-manifest-ascii.md`), HCC/Cup C*, `src/`, POINTER emission answers.
@@ -217,4 +217,79 @@ Views do not write L. How a POINTER is emitted remains `[GAP]` (G2).
 | T3 | C11 picture table; write-back `[X]` |
 | T4 | Label-how and G2 pointed, not filled |
 
-Queued (later i2, not this pass): C mechanism map or iteration-2 receipt.
+## Iteration 2 pass 6 — mechanism map
+
+One operator. Panels apply it, view it, constrain it, or forbid a fake. Families are not types.
+
+### Operator (C12)
+
+```
+ ╔══════════════════════════════════════════════════════════════╗
+ ║  Input word arrives.                                         ║
+ ║  Route new wire through that word's star.                    ║
+ ║  Continue.                                                   ║
+ ╚══════════════════════════════════════════════════════════════╝
+         punch-card at C10: raw sequence, no interpretation
+         not a second machine
+
+  constrained by C1:
+    one continuous strand
+    only grows
+
+  constrained by C5:
+    more dimensions ≠ more meaning
+
+  three verbs. no fourth.
+  no "emit POINTER." no "allocate a dimension." no "write family as type."
+```
+
+Same three verbs as A13 / B12. C states them. This is not A's or B's register copied.
+
+### Application register
+
+| # | Role | What arrives | What is routed | What continues | New machine? |
+|---|---|---|---|---|---|
+| C1 | precondition | the strand | — | one wire that only grows | no |
+| C2 | view | — (sequence already on the wire) | — (1D shows order only) | — | no |
+| C3 | view | — | — (crossings / adjacency become visible) | — | no |
+| C4 | view | — | — (stars / looping become visible) | — | no |
+| C5 | statement | the same strand at more axes | — | more ways to participate; not new content | no |
+| C6 | view | four family names | — (those names are views of the same structure) | — | no |
+| C7 | view | prior formations | — (touches of touches already on the strand) | — | no |
+| C8 | view | many axes already visible | — (denser structure; more recoverable routes) | — | no |
+| C9 | constraint | definition text | that text as a route through other word stars | the wire; no stored gloss | no |
+| C10 | constraint | a raw sequence | punch-card; each word through its star | the strand | no |
+| C11 | anti-model | a flattened picture | `[X]` projection as the thing | — | no |
+| C12 | statement | — | — | states the operator | no |
+
+C7 is a view of applications already done, not G2.  
+C11 has no constructive operator.
+
+### Correctness board
+
+| Check | Hands says | ASCII still says | Mark |
+|---|---|---|---|
+| One operator | A13 = B12 = C12 three verbs | one box on A, B, C | Pass |
+| One store | Graphic D; WORD \| POINTER | no second array; C6 type? = no | Pass |
+| Rule Zero | strand only grows | C1 / B1 / A header | Pass |
+| Meaning | does not exist | B10 / C9 / C11; no stored gloss | Pass |
+| Dimensions | views of participation | C2–C8 stay views | Pass |
+| C6 families | routes / views | type? = no | Pass |
+| Projection | not the Lace | C11 / B11 `[X]` | Pass |
+| Emission | unstated | G2 `[GAP]` | Pass (silent) |
+| Printed panel numbers | on artwork | unread this campaign | `[GAP]` |
+| Document-as-entry | unstated | `[GAP]` | `[GAP]` |
+| Family-label-how | unstated | `[GAP]` | `[GAP]` |
+
+No Fail this tick. Gaps stay gaps.
+
+## Iteration 2 pass 6 deltas
+
+| Ticket | Action |
+|---|---|
+| T1 | One C12 operator box |
+| T2 | Twelve-row application register; all New machine?=no |
+| T3 | Correctness board; no Fail |
+| T4 | Iteration-2 receipt |
+
+Queued (iteration 3, not pass 7): Graphic D ASCII if named; printed numbers; remaining `[GAP]`s. See [`ascii-iterations.md`](ascii-iterations.md).

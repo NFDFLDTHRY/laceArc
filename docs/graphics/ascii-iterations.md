@@ -33,9 +33,9 @@ A map is four-pass complete. B spine + fields are on main. G2 still `[GAP]`.
 
 ---
 
-## Iteration 2 — OPEN (pass 6 PLAN)
+## Iteration 2 — closed
 
-Leftover from iteration 1, in order. These are **iteration 2 passes 1–6**, not B-pass-7.
+Receipt: [`ascii-iteration-2-receipt.md`](ascii-iteration-2-receipt.md). Pin `a1a24793846ca375f57bcd85fb04579cb2b75abc` (i2p6 execute). Later claim/queue commits do not reopen it.
 
 | i2 pass | Act | Plan on disk |
 |---|---|---|
@@ -44,9 +44,22 @@ Leftover from iteration 1, in order. These are **iteration 2 passes 1–6**, not
 | 3 | Graphic C spine **EXECUTED** | [`ascii-iteration-2-pass-3-plan.md`](ascii-iteration-2-pass-3-plan.md) |
 | 4 | C fields + Role map **EXECUTED** | [`ascii-iteration-2-pass-4-plan.md`](ascii-iteration-2-pass-4-plan.md) |
 | 5 | C grain / anti-model (C6 vs D; C11) **EXECUTED** | [`ascii-iteration-2-pass-5-plan.md`](ascii-iteration-2-pass-5-plan.md) |
-| 6 | C mechanism map + i2 receipt **OPEN** | [`ascii-iteration-2-pass-6-plan.md`](ascii-iteration-2-pass-6-plan.md) |
+| 6 | C mechanism map + i2 receipt **EXECUTED** | [`ascii-iteration-2-pass-6-plan.md`](ascii-iteration-2-pass-6-plan.md) |
 
-C slots 3–6 are placeholders. A later receipt may rename them. Do not start C from a leftover B ticket. Do not fill G2 to “finish” an iteration.
+B map complete. C map four-pass complete. G2 still `[GAP]`.
+
+---
+
+## Iteration 3 — not opened this tick
+
+Leftover from iteration 2, in order. These would be **iteration 3 passes 1–6**, not C-pass-7. Do not start them from the i2 receipt.
+
+| i3 pass | Act | Plan on disk |
+|---|---|---|
+| 1 | Graphic D ASCII spine (if named) | not written |
+| 2 | D fields | not written |
+| 3 | printed A/B/C numbers if recovered | not written |
+| 4–6 | leftover Hands-silent `[GAP]`s — point, do not fill G2 | not written |
 
 ---
 

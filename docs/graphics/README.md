@@ -15,9 +15,9 @@ Graphic A ASCII companion (iteration 1 passes 1–4): [`graphic-a-ascii.md`](gra
 
 Graphic B ASCII companion (iteration 1 passes 5–6 + i2p1–p2): [`graphic-b-ascii.md`](graphic-b-ascii.md). Does not replace the PNG. Does not fill G2.
 
-Graphic C ASCII companion (iteration 2 pass 3): [`graphic-c-ascii.md`](graphic-c-ascii.md). Does not replace the PNG. Does not fill G2 or C6 vs D.
+Graphic C ASCII companion (iteration 2 passes 3–6): [`graphic-c-ascii.md`](graphic-c-ascii.md). Does not replace the PNG. Does not fill G2 or C6 vs D.
 
-Iteration law + queue: [`ascii-iterations.md`](ascii-iterations.md). Iteration 1 receipt: [`ascii-iteration-1-receipt.md`](ascii-iteration-1-receipt.md). Six passes close an iteration. Leftovers are the next iteration, not pass 7.
+Iteration law + queue: [`ascii-iterations.md`](ascii-iterations.md). Iteration 1 receipt: [`ascii-iteration-1-receipt.md`](ascii-iteration-1-receipt.md). Iteration 2 receipt: [`ascii-iteration-2-receipt.md`](ascii-iteration-2-receipt.md). Six passes close an iteration. Leftovers are the next iteration, not pass 7.
 
 Hologram touches (not this directory): `docs/hologram/`. Those diagnose the holder. They are not a fifth graphic.
 

@@ -1,6 +1,6 @@
 # Graphics ASCII — Iteration 2, Pass 6 PLAN
 
-**Status:** PLAN only. Not run. Iteration 2 open (this pass closes it). Iteration 1 stays closed.  
+**Status:** EXECUTED — C mechanism map on `docs/graphics/graphic-c-ascii.md`; receipt `ascii-iteration-2-receipt.md`. Iteration 2 CLOSED 6/6. Iteration 1 stays closed. Emission `[GAP]`.  
 **Station:** graphics (HELD Grok-graphics).  
 **Object:** Graphic C mechanism map + iteration-2 correctness receipt.  
 **Authority:** C12 on `docs/graphics/n-dimensional-relationships.png`. Then [`graphic-c-ascii.md`](graphic-c-ascii.md) (i2p3–p5). A13 / B12 only as the already-stated operator quote. Graphic D types as the type seam.  
