@@ -2,6 +2,6 @@ STATUS: HELD
 STATION: coord
 OWNS: docs/coord/**
 AGENT: Grok-coord
-BASE: dca23941b3078c3fb3cf7a526c7facf6e1fe9afa
-SINCE: 2026-09-19T14:45:10Z
-NOTE: Quiet door #9 pass 1 EXECUTED. Spine on quiet-door-9-ascii.md. Next pass 2 fields. Door #8 CLOSED. Φ [GAP].
+BASE: fc166cbaca33974114a6972de8c8ab80da7fd825
+SINCE: 2026-09-19T14:46:20Z
+NOTE: Quiet door #9 pass 2 PLAN. Pass 1 EXECUTED. Fields. Door+coord.sh untouched. Door #8 CLOSED. Φ [GAP].
