@@ -1,6 +1,6 @@
 # Quiet door #8 (Gearing) — Pass 4 PLAN
 
-**Status:** PLAN only. Not run.  
+**Status:** EXECUTED — walk on `docs/gearing/quiet-door-8-ascii.md`. Door + HTML + JS unchanged. Emission `[GAP]`.  
 **Station:** gearing-meta (HELD Grok-gearing).  
 **Object:** Gearing **walk** — one mechanism on [`quiet-door-8-ascii.md`](quiet-door-8-ascii.md).  
 **Authority:** Gearing door passes 1–3. Gearing door as a *named door*, not bytes to edit.  

@@ -2,7 +2,7 @@
 
 **Object:** `docs/gearing/README.md`  
 **Station:** gearing-meta.  
-**Executed:** [quiet-door-8-pass-1-plan.md](quiet-door-8-pass-1-plan.md) · [quiet-door-8-pass-2-plan.md](quiet-door-8-pass-2-plan.md) · [quiet-door-8-pass-3-plan.md](quiet-door-8-pass-3-plan.md).  
+**Executed:** [quiet-door-8-pass-1-plan.md](quiet-door-8-pass-1-plan.md) · [quiet-door-8-pass-2-plan.md](quiet-door-8-pass-2-plan.md) · [quiet-door-8-pass-3-plan.md](quiet-door-8-pass-3-plan.md) · [quiet-door-8-pass-4-plan.md](quiet-door-8-pass-4-plan.md).  
 **Not:** Core. Not Graphic E. Not Hands. Not door #7 pass 7. Not projection iter 5. Not a shaft claim.  
 **Emission:** `[GAP]`. No `src/`. Gearing door bytes untouched. HTML untouched. `contracts-*.js` untouched. Renderer unclaimed. Shafts FREE. Door #7 CLOSED.
 
@@ -128,4 +128,73 @@ Protocol names. Shafts own JS. Renderer owns HTML. Hands stores. Those are not t
 | T1 | Eight-row grain |
 | T2 | Protocol ≠ JS ≠ renderer ≠ Hands |
 | T3 | `contracts-axle.js` still `gear:axle` |
+| T4 | Door + HTML + JS + shafts + Hologram untouched |
+
+## Pass 4 — walk
+
+This walk claims at most one shaft and does not emit POINTER. Hands keeps A13. This pass takes no shaft.
+
+### Operator (from the gearing door)
+
+```
+ ╔══════════════════════════════════════════════════════════════╗
+ ║  One shaft per agent.                                        ║
+ ║  Zero or one drop per shaft per tick.                        ║
+ ║  Never edit another shaft’s .claim or contracts-*.js.        ║
+ ║  Renderer stays frozen. Do not invent Φ here.                ║
+ ╚══════════════════════════════════════════════════════════════╝
+
+  reader arrives at docs/gearing/README.md
+    if a shaft is asked         → one shaft per agent; this pass takes none
+    if Hands is asked           → send to the four graphics
+    if frozen HTML is asked     → renderer; do not claim it
+    if JS is asked              → gear:* owns it; do not edit from here
+    if Φ is asked               → leave G2 open
+    never: this shelf ⇒ Hands
+    never: gearing-meta ⇒ renderer
+    never: gearing-meta ⇒ gear:axle bytes
+    never: door #7 ⇒ reopened
+
+  not "emit POINTER."
+  not A13 arrive / through-star / continue.
+```
+
+### Application register
+
+| # | Role | What arrives | What is walked | What continues | New machine? |
+|---|---|---|---|---|---|
+| Gr1 | door | a reader at `docs/gearing/` | index of shafts | Hands still the store | no |
+| Gr2 | Layer III | a bid to store | keep shafts off Core | — | no |
+| Gr3 | named scripts | a `contracts-*.js` path | name it; do not own it | still `gear:*` | no |
+| Gr4 | claim / release | an agent wanting a shaft | one shaft; this pass takes none | shafts stay FREE | no |
+| Gr5 | RESYNC | a full-repo halt bid | steward word only | RESYNC unedited | no |
+| Gr6 | frozen HTML | a viewer bid | name renderer; do not claim it | renderer stays unclaimed | no |
+| Gr7 | one shaft | a second shaft this tick | refuse the second | — | no |
+| Gr8 | Φ / do not invent | a missing emission rule | leave G2 open | G2 still `[GAP]` | no |
+
+### Gearing versus Hands versus renderer
+
+```
+ quiet-door-8-ascii.md       gearing door            Hands
+ --------------------       -------------           -----
+ Layer III reading          the index               the store
+ names shafts               names shafts            four graphics
+
+ wrapper-as-Core            [X]
+ Hands verbs pasted here    [X]
+ JS owned here              [X]
+ viewer writes L            [X]
+ renderer claimed           [X]
+ shaft claimed this pass    [X]
+ door #7 reopened           [X]
+ G2                         [GAP]
+```
+
+## Pass 4 deltas
+
+| Ticket | Action |
+|---|---|
+| T1 | One walk box |
+| T2 | Eight `New machine?` = no |
+| T3 | No shaft taken |
 | T4 | Door + HTML + JS + shafts + Hologram untouched |
