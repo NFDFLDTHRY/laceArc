@@ -2,7 +2,7 @@
 
 **Object:** `docs/history/README.md`  
 **Station:** history.  
-**Executed:** [quiet-door-5-pass-1-plan.md](quiet-door-5-pass-1-plan.md) · [quiet-door-5-pass-2-plan.md](quiet-door-5-pass-2-plan.md) · [quiet-door-5-pass-3-plan.md](quiet-door-5-pass-3-plan.md) · [quiet-door-5-pass-4-plan.md](quiet-door-5-pass-4-plan.md).  
+**Executed:** [quiet-door-5-pass-1-plan.md](quiet-door-5-pass-1-plan.md) · [quiet-door-5-pass-2-plan.md](quiet-door-5-pass-2-plan.md) · [quiet-door-5-pass-3-plan.md](quiet-door-5-pass-3-plan.md) · [quiet-door-5-pass-4-plan.md](quiet-door-5-pass-4-plan.md) · [quiet-door-5-pass-5-plan.md](quiet-door-5-pass-5-plan.md).  
 **Not:** Core. Not an emitter. Not Hands. Not history pass 8. Not door #4 pass 7.  
 **Emission:** `[GAP]`. No `src/`. History door bytes untouched. Extracts untouched.
 
@@ -184,3 +184,25 @@ All `New machine?` = no.
 | T2 | Eight-row register; all New machine?=no |
 | T3 | History ↔ live law ↔ Hands |
 | T4 | Door + extracts + live law untouched |
+
+## Pass 5 — seam
+
+Four files. None becomes another.
+
+| File | Names | Stores | Amends law? | Becomes the other if |
+|---|---|---|---|---|
+| `docs/history/README.md` | extracts and sit-notes; not Core | no | no | treated as live law |
+| `docs/law-why-these-documents.md` | why the stakes; how code may exist | yes — live law | this is the store | treated as a history extract |
+| `docs/README.md` | Hands / gate / law / maps | no | no | treated as an extract or as live law |
+| `docs/history/quiet-door-5-ascii.md` | the history door as a reading | no | no | treated as live law or as pass 8 |
+
+History names. Law stores. Court names Hands. This file reads the history door.
+
+## Pass 5 deltas
+
+| Ticket | Action |
+|---|---|
+| T1 | Four-file seam |
+| T2 | None of the four rewritten |
+| T3 | This reading is not the store |
+| T4 | Door / extracts / live law / court untouched |

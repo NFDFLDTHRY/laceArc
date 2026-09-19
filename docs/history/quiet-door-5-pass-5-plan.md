@@ -1,6 +1,6 @@
 # Quiet door #5 (History) — Pass 5 PLAN
 
-**Status:** PLAN only. Not run.  
+**Status:** EXECUTED — seam on `docs/history/quiet-door-5-ascii.md`. Door + extracts unchanged. Emission `[GAP]`.  
 **Station:** history (HELD Grok-history).  
 **Object:** History seam — vs live law and vs court.  
 **Authority:** [`quiet-door-5-ascii.md`](quiet-door-5-ascii.md) passes 1–4. [`docs/history/README.md`](README.md). [`docs/law-why-these-documents.md`](../law-why-these-documents.md). [`docs/README.md`](../README.md).  
