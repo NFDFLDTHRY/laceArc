@@ -1,6 +1,6 @@
 # Quiet door #4 (live law) — Pass 6 PLAN
 
-**Status:** PLAN only. Not run.  
+**Status:** EXECUTED — receipt on `docs/kit/quiet-door-4-receipt.md`. CLOSED 6/6. Pair untouched. Emission `[GAP]`.  
 **Station:** kit (HELD Grok-kit).  
 **Object:** live-law receipt. Close this iteration 6/6.  
 **Authority:** [`quiet-door-4-ascii.md`](quiet-door-4-ascii.md) passes 1–5. Live-law file as written.  

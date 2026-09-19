@@ -1,8 +1,9 @@
 # Quiet door #4 — live-law ASCII
 
+**Status:** CLOSED 6/6. Receipt: [quiet-door-4-receipt.md](quiet-door-4-receipt.md).  
 **Object:** `docs/law-why-these-documents.md`  
 **Station:** kit (reading). Live law wins on the door.  
-**Executed:** [quiet-door-4-pass-1-plan.md](quiet-door-4-pass-1-plan.md) · [quiet-door-4-pass-2-plan.md](quiet-door-4-pass-2-plan.md) · [quiet-door-4-pass-3-plan.md](quiet-door-4-pass-3-plan.md) · [quiet-door-4-pass-4-plan.md](quiet-door-4-pass-4-plan.md) · [quiet-door-4-pass-5-plan.md](quiet-door-4-pass-5-plan.md).  
+**Executed:** [quiet-door-4-pass-1-plan.md](quiet-door-4-pass-1-plan.md) · [quiet-door-4-pass-2-plan.md](quiet-door-4-pass-2-plan.md) · [quiet-door-4-pass-3-plan.md](quiet-door-4-pass-3-plan.md) · [quiet-door-4-pass-4-plan.md](quiet-door-4-pass-4-plan.md) · [quiet-door-4-pass-5-plan.md](quiet-door-4-pass-5-plan.md) · [quiet-door-4-pass-6-plan.md](quiet-door-4-pass-6-plan.md).  
 **Not:** live law. Not Hands. Not the header pair. Not door #3 pass 7.  
 **Emission:** `[GAP]`. No `src/`. Live-law bytes untouched.
 
