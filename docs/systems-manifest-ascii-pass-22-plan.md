@@ -1,6 +1,6 @@
 # Systems-manifest ASCII pass 22 plan — Update wave · Iteration 3 · Pass 3 · Iter3 delta / mechanism mesh
 
-**Status:** **HELD**. Emission `[GAP]`.  
+**Status:** **EXECUTED** 2026-09-19 PT. Emission `[GAP]`.  
 **Series:** Pass **22** (linear executed-passes list) = **Update wave · Iteration 3 · Pass 3**. Subtitle: **Update wave · Iteration 3 · Pass 3**.  
 **Station:** maps (catch-all for `docs/*.md` at court root). Holder: **reference-Mapper**. Keep maps **HELD**.  
 **Authority:** `docs/systems-manifest.md` (Contracts I / II / Layer III; Pieces unchanged).  
@@ -398,12 +398,12 @@ Pass 18 **DIAGRAM SOUND WITH OPENS** + Pass 19 Δ / systems-slot + Pass 20 IX-*/
 
 ### Execute turn (when human says Proceed)
 
-- [ ] T1: Thin G-KD-6 cite-card (role · path · OPEN-with-cause · FORBID; not Core); G-KD-1/3 CONFIRM pointer; #4/#5/#7 honesty notes; no G-III rebuild; no panel paste.  
-- [ ] T2: P22-M mesh — I→III read/cite; Iter3 Δ (#6 OPEN · #1/#3 OPEN · #4 leftover · #5/#7 note-only); retained P15-M / P9-M / G-III / IX-*; Piece 13 dual; train/HCC outside I; G2/Φ `[GAP]`; no quiet-door→I; no rival canons; no invent G-KD-6 Core.  
-- [ ] T3: Cross-walk Iter3 ↔ G-KD / G-III / Piece 13 (+ optional IX-* pointer); no G-KD-4/5/7 full admit rows; no shelf M-* renumber.  
-- [ ] T4: Executed-passes +22; thin Overview / Pass 19–21 pointers; G2/Φ `[GAP]`; no gear rename.  
-- [ ] T5: Sealed refuse honored (Pass 21 refuse + no invent G-KD-6 Core; no invent G-KD-4/5/7; no full admit #4/#5/#7; no rebuild G-KD-1/3 / G-III / P15-M; no overwrite Pass 19–21; no quiet-door→I; no invent Φ; no src/; no fill G2; no rewrite Passes 1–21 beyond thin pointers / new Pass 22 section); Pass 18 SOUND WITH OPENS + Pass 19–21 retained.  
-- [ ] maps still HELD by reference-Mapper (unless human releases).
+- [x] T1: Thin G-KD-6 cite-card (role · path · OPEN-with-cause · FORBID; not Core); G-KD-1/3 CONFIRM pointer; #4/#5/#7 honesty notes; no G-III rebuild; no panel paste.  
+- [x] T2: P22-M mesh — I→III read/cite; Iter3 Δ (#6 OPEN · #1/#3 OPEN · #4 leftover · #5/#7 note-only); retained P15-M / P9-M / G-III / IX-*; Piece 13 dual; train/HCC outside I; G2/Φ `[GAP]`; no quiet-door→I; no rival canons; no invent G-KD-6 Core.  
+- [x] T3: Cross-walk Iter3 ↔ G-KD / G-III / Piece 13 (+ optional IX-* pointer); no G-KD-4/5/7 full admit rows; no shelf M-* renumber.  
+- [x] T4: Executed-passes +22; thin Overview / Pass 19–21 pointers; G2/Φ `[GAP]`; no gear rename.  
+- [x] T5: Sealed refuse honored (Pass 21 refuse + no invent G-KD-6 Core; no invent G-KD-4/5/7; no full admit #4/#5/#7; no rebuild G-KD-1/3 / G-III / P15-M; no overwrite Pass 19–21; no quiet-door→I; no invent Φ; no src/; no fill G2; no rewrite Passes 1–21 beyond thin pointers / new Pass 22 section); Pass 18 SOUND WITH OPENS + Pass 19–21 retained.  
+- [x] maps still HELD by reference-Mapper (unless human releases).
 
 ---
 
