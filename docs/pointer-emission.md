@@ -1,18 +1,38 @@
 # Pointer emission
 
-Status: **DRAFT** — unanswered questions from `docs/graphics`.
-Not accepted. Not implemented. Emission remains `[GAP]`.
+**Status:** DRAFT. **Object:** claimed. Law station HELD Grok-evidence.  
+**Not accepted.** Not implemented. `src/` remains forbidden.  
+This file is the next honest artifact. It may be worked.
 
-This file is not a rule. A filled answer here would be a breach.
-Only the human can accept it, in-repo, in words. A commit is not acceptance.
+Three rules used to be one sentence. That sentence was the blocker.
+
+| Rule | Still | Not |
+|---|---|---|
+| Invent an emit-when, arity law, or adjacency law from habit, stakes, or “helpful” default | **Breach** | — |
+| Record what the four graphics already close, or write the human’s in-repo sentence onto an Answer line | **Work on this file** | Acceptance |
+| Human says this file is accepted, in-repo, in words | **Opens Implementation Law** | A commit, a draft rule v0, or an `emit` stub |
+
+Existence is not acceptance. A filled Answer line is not acceptance. Only the acceptance sentence is acceptance.
+
+## How this file may be edited
+
+Under a live law claim:
+
+- **CLOSED** — picture or D1 already settles it (including a ruled-out candidate). Cite the panel. Not Φ invented.
+- **SPOKEN** — the human wrote the sentence in-repo. Record it here. Still not accepted until they say accepted.
+- **CONFLICT** — two source-or-history readings, both kept visible. Do not pick a winner to soothe.
+- **`[GAP]`** — picture silent, human silent.
+
+Do not silence the graphics with a default. Do not treat this draft as Core code.
 
 ## Authority
 
 - Four graphics in `docs/graphics/` (A–D) and `docs/systems-manifest.md` derived from them.
-- If the picture is silent → write `[GAP]`. Do not fill.
-- Stake PDFs, history recoveries, shadow-clock / gearing, crate maps, and “helpful” defaults are silenced for answers.
+- If the picture is silent → write `[GAP]`. Do not invent.
+- Stake PDFs, history recoveries, shadow-clock / gearing, crate maps, and “helpful” defaults are silenced for *invented* answers. They may be cited as CONFLICT when the repo already recorded one.
 
 ## Required open questions (AGENTS.md)
+
 
 ### 1. When is a POINTER appended?
 

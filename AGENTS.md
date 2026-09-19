@@ -94,12 +94,14 @@ Guard the model. Do not implement Core until [`docs/pointer-emission.md`](docs/p
 
 ## If asked to implement
 
-Stop. The next honest artifact is [`docs/pointer-emission.md`](docs/pointer-emission.md) that states:
+Stop. The next honest artifact is [`docs/pointer-emission.md`](docs/pointer-emission.md). That file may be worked under a law claim. It states, or will state:
 
 - when a POINTER is appended
 - arity
 - whether adjacent WORD rows already constitute a relation
 - that refs point only backward on the same line
+
+Inventing those answers from habit or to soothe a halt remains a breach. Recording a source-closed constraint or a human-spoken sentence on that file is work, not acceptance.
 
 Only after that file exists **and the human accepted it** may Core code appear, and it must implement that file exactly, under Implementation Law.
 

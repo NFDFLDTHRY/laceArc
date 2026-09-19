@@ -28,7 +28,7 @@ Shelves (defrag pass 1–4). Hands stay at `docs/` root. Do not treat a prompt, 
 |---|---|---|
 | The court | [docs/](docs/README.md) | Everything at the `docs/` root, and which of it is Hands |
 | Hands | [docs/graphics/](docs/graphics/), manifest, law, staking, reason-model-map, close-reading | Source of record |
-| Open `[GAP]` | [docs/pointer-emission.md](docs/pointer-emission.md) | DRAFT questions. Not accepted |
+| Open `[GAP]` | [docs/pointer-emission.md](docs/pointer-emission.md) | DRAFT. May be worked. Not accepted. Invented answers still a breach |
 | Shadow prose | [docs/clock/](docs/clock/README.md) | Holder contracts, gear manifests and math. Not Core |
 | Shadow view | [docs/shadow-clock-gearing.html](docs/shadow-clock-gearing.html) + two more viewers, [docs/gearing/](docs/gearing/README.md), [docs/hologram/](docs/hologram/README.md) | Renderer + shafts + templates. Cubes ≠ rows |
 | Coord | [docs/coord/](docs/coord/README.md) | Doc stations + gear claim umbrella (Layer III) |
@@ -82,7 +82,7 @@ Shelves (defrag pass 1–4). Hands stay at `docs/` root. Do not treat a prompt, 
 | [docs/clipboards/xiao-zhu-foundations-clipboard.md](docs/clipboards/xiao-zhu-foundations-clipboard.md) | Xiao–Zhu arrival-order / intern / MASK / embed / next-token sheets. Not Core. |
 | [docs/clipboards/agentscope-clipboard.md](docs/clipboards/agentscope-clipboard.md) | AgentScope taxonomy for the HOLDER. ReAG stays off Graphic D. Not Core. |
 | [docs/clock/gearing-code-1to1.md](docs/clock/gearing-code-1to1.md) | 47 visual keys ↔ planned Shadow units. Chip-only drift noted. Not Core. |
-| [docs/pointer-emission.md](docs/pointer-emission.md) | DRAFT questions only. Not accepted. Emission remains [GAP]. |
+| [docs/pointer-emission.md](docs/pointer-emission.md) | DRAFT. May be worked. Not accepted. Invented answers still a breach. |
 | [docs/clock/philosophy-map.md](docs/clock/philosophy-map.md) | HCC-A, Coffee Cup, Water as the clock-gearbox. Clusters by tick. Not Core rows. |
 | [docs/hologram/](docs/hologram/) | Hologram touches (PR / Story Defense). Shadow. Not Graphic E. |
 

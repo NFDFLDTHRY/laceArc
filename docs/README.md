@@ -18,7 +18,7 @@ The four graphics define the project. Everything else on this page is derived fr
 
 | File | Status |
 |---|---|
-| [pointer-emission.md](pointer-emission.md) | **DRAFT. Not accepted.** Unanswered questions only. Emission is `[GAP]`; a commit is not acceptance, and existence is not acceptance |
+| [pointer-emission.md](pointer-emission.md) | **DRAFT. Claimed as object. Not accepted.** May be worked. Invented answers remain a breach. A commit is not acceptance. `src/` waits on the human’s accept sentence |
 
 ## Law
 
