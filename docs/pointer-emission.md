@@ -107,7 +107,75 @@ These are **rejected lookalikes**, not candidate rules. This table is not an alg
 | variable / cluster label | names; does not write POINTER |
 | clock tooth / Anchor / Locate | holder gear; Graphic D is silent |
 
+## Pass 1 plan — stamp walk
+
+**Status:** PLAN only. Not run.  
+**Object:** this file. **Station:** law (HELD Grok-evidence).  
+**Not:** acceptance. **Not:** `src/`. **Not:** invented emit-when. **Not:** maps A/B. **Not:** history Pass 7.
+
+```
+pull/ff → refresh law
+        → write this plan (this section)
+        → check · commit
+        → STOP
+execute (later, one authorized tick):
+        → open Graphics A–D
+        → stamp each question CLOSED / CONFLICT / [GAP]
+        → no SPOKEN line unless the human wrote the sentence
+        → check · commit
+        → STOP
+```
+
+### One question
+
+Which of Q1–Q5 (and Q4’s three sub-questions) can already carry **CLOSED** from the pictures and D1, which stay **`[GAP]`**, and which are **CONFLICT** — without treating any of those stamps as acceptance?
+
+Pass 1 does not invent a when. It moves stamps that already lag the source.
+
+### Expected starting board (not execute)
+
+| Q | Likely stamp if execute holds | Why that is not invention |
+|---|---|---|
+| Q4 header backward-same-line | already closed as constraint | D key properties; six of six |
+| “Every adjacent pair emits” | CLOSED as ruled out | D1 two of four WORD pairs have no pointer |
+| Fixed fan-out per arrival | CLOSED as ruled out | D1 counts 0,1,1,2,2 |
+| POINTER may name POINTER | CLOSED as drawn; CONFLICT if draft still asks vs D6/Piece 5 “including earlier pointers” | Picture + rows 0007/0009/0010 |
+| Q2 arity as law | likely stays `[GAP]` or CONFLICT (D2 two-slot schema vs Piece 5 “example form” vs old unary POINT) | Do not pick “exactly two” without SPOKEN |
+| Q3 leftover: adjacency-without-POINTER as a relation | likely stays `[GAP]` | Ruled-out emit ≠ named as relation |
+| Slots A vs B | likely stays `[GAP]` (array cannot compute subject) unless human SPOKEN | Close-reading is a reading, not accept |
+| Q1 when | `[GAP]` | D1 illustrative mix; Piece 5 says so |
+| Q5 later pass requires POINTER? | `[GAP]` | A5/B3 more wire; D writes WORD; no schedule |
+
+If execute disagrees with this board, the findings on the Answer lines win. This table is a plan hint, not a pre-filled draft.
+
+### Execute may edit
+
+- This file: Answer lines and a short Pass 1 receipt under this heading.
+- `docs/README.md` / `README.md` rows for this file, if a stamp line must not lie.
+- law.station NOTE.
+
+### Execute must not edit
+
+- `docs/systems-manifest.md` open-question list (unless a one-line “see emission stamps” pointer is needed; default is leave it).
+- Companion ASCII / maps A/B.
+- Graphics bytes.
+- `src/`, Cargo, emit stubs.
+- Acceptance section: do not mark accepted.
+
+### Stop test
+
+**This planning tick:** this section exists; Answer lines still `[GAP]`; not accepted.
+
+**Execute:** each listed question has CLOSED, CONFLICT, `[GAP]`, or SPOKEN with a cite; no invented when; Acceptance unchanged; shoe.
+
+### Planning receipt — 19 September 2026
+
+Gate split `6aaf667`. Human: “Plan pass 1.” Law refreshed at `e280b4bb4b1384cf854ee471427f161d4c463a83`. Close-reading moved on other agents after the gate split; execute must re-read it, not trust an old excerpt. Answers not stamped this tick.
+
+---
+
 ## Acceptance
+
 
 This file is accepted only when the human says so **in-repo**.
 

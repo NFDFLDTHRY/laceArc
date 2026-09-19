@@ -2,6 +2,6 @@ STATUS: HELD
 STATION: law
 OWNS: AGENTS.md CLAUDE.md docs/staking-the-workspace.md docs/law-why-these-documents.md docs/systems-manifest.md docs/pointer-emission.md docs/references.md CONTRIBUTING.md README.md .gitignore LICENSE docs/README.md
 AGENT: Grok-evidence
-BASE: 6aaf6679fdd924a44a4ca513777eb01177a90332
-SINCE: 2026-09-19T21:45:22Z
-NOTE: Grok-evidence. pointer-emission.md claimed as object. Gate split: invent=breach; work/record≠acceptance; src waits on accept. Answers not filled this tick. History still HELD same agent.
+BASE: e280b4bb4b1384cf854ee471427f161d4c463a83
+SINCE: 2026-09-19T22:00:58Z
+NOTE: Grok-evidence. pointer-emission Pass 1 PLAN only (stamp walk). Gate split live. Answers still [GAP]. Not accepted. History still HELD same agent.
