@@ -50,7 +50,9 @@ This is the only allowed install / Add-to-Home-Screen path for HTML in this repo
   ALLOW
     rawcdn.githack.com + 40-char SHA + path to the HTML
     relative manifest / sw.js / icons beside that HTML
-    new commit ⇒ new URL ⇒ new install  (explicit version)
+    stable manifest id  https://github.com/NFDFLDTHRY/laceArc/lace-iii
+    pointer file        docs/clock/LATEST.json on main (names the SHA)
+    new commit ⇒ new SHA URL; Update replaces the same id (not a new icon)
 
   FORBID
     raw.githack.com as the install host

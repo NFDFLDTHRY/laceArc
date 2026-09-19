@@ -57,7 +57,7 @@ aside[hidden]{display:none}
 </div>
 <div class="hud">
   <header class="hit">
-    <h1>LAYER III · i4p1 · RAWCDN SHA</h1>
+    <h1>LAYER III · i4p2 · RAWCDN SHA</h1>
     <p>Install this URL only if it is <code>rawcdn.githack.com</code> + a full SHA. Floating <code>main</code> is preview. Cubes are glyphs. No emitter. [GAP]</p>
   </header>
   <div class="modes hit">
@@ -82,7 +82,7 @@ aside[hidden]{display:none}
     <div class="row">
       <input id="t" type="range" min="0" max="10" step="0.02" value="0"/>
       <span id="phase">t=0000</span>
-      <span class="stamp">i4p1</span>
+      <span class="stamp">i4p2</span>
       <span class="stamp">A17</span>
       <span class="stamp" id="gpustamp">GPU ?</span>
       <span class="stamp" id="szstamp">?x?</span>
@@ -90,6 +90,7 @@ aside[hidden]{display:none}
       <span class="stamp" id="nnstamp">WebNN ?</span>
       <span class="stamp" id="pwastamp">PWA ?</span>
       <span class="stamp" id="persiststamp">persist ?</span>
+      <span class="stamp">id lace-iii</span>
       <span class="stamp">glyphs ≠ schema</span>
     </div>
   </div>
@@ -293,7 +294,7 @@ function lookAt(e,c,up){
 function bakeViaWorker(src){
   return new Promise((resolve, reject) => {
     let w;
-    try { w = new Worker(src || "projection-bake-worker.js?i=4p1"); }
+    try { w = new Worker(src || "projection-bake-worker.js?i=4p2"); }
     catch (e) { reject(e); return; }
     const t = setTimeout(() => { try{w.terminate();}catch(_){ } reject(new Error("bake timeout")); }, 8000);
     w.onerror = e => { clearTimeout(t); try{w.terminate();}catch(_){ } reject(e); };
@@ -313,9 +314,9 @@ function bakeViaWorker(src){
 let bakedScene=null;
 async function bakeScene(){
   if(bakedScene && bakedScene.P && bakedScene.P.length>6) return bakedScene;
-  try { bakedScene = await bakeViaWorker("projection-bake-worker.js?i=4p1"); }
+  try { bakedScene = await bakeViaWorker("projection-bake-worker.js?i=4p2"); }
   catch (e1) {
-    const src = await fetch("projection-bake-worker.js?i=4p1", {cache:"no-store"}).then(r => {
+    const src = await fetch("projection-bake-worker.js?i=4p2", {cache:"no-store"}).then(r => {
       if (!r.ok) throw new Error("worker fetch "+r.status);
       return r.text();
     });
@@ -594,7 +595,7 @@ function runAudit(){
   const el=document.getElementById("audit");
   if(!el) return;
   const title=document.querySelector("h1")?.textContent||"";
-  const A=/i4p1/.test(title)?"ok":"fail";
+  const A=/i4p2/.test(title)?"ok":"fail";
   const D=!!(navigator.serviceWorker && navigator.serviceWorker.controller);
   const E=!!(window.deferredPrompt || window.matchMedia("(display-mode: standalone)").matches);
   const F=!!document.getElementById("installbtn");
@@ -605,7 +606,7 @@ function runAudit(){
     const ct=r.headers.get("content-type")||"";
     const B=/manifest|json/i.test(ct)?"ok":("fail "+ct);
     el.textContent=
-      "A title i4p1 "+A+"\n"+
+      "A title i4p2 "+A+"\n"+
       "B manifest MIME "+B+"\n"+
       "C icons 192+512 ok\n"+
       "D SW controlling "+(D?"ok":"fail")+"\n"+
@@ -644,6 +645,34 @@ async function readPersist(){
     stampPersist("persist deny");
     return "deny";
   }
+}
+async function resolveLatestSha(){
+  const pointer="https://raw.githubusercontent.com/NFDFLDTHRY/laceArc/main/docs/clock/LATEST.json";
+  try {
+    const j=await fetch(pointer,{cache:"no-store"}).then(r=>{ if(!r.ok) throw new Error("latest "+r.status); return r.json(); });
+    if(j && /^[0-9a-f]{40}$/i.test(j.sha||"")) return j.sha.toLowerCase();
+  } catch(_){}
+  const tip=await fetch("https://api.github.com/repos/NFDFLDTHRY/laceArc/commits/main",{cache:"no-store"}).then(r=>{
+    if(!r.ok) throw new Error("tip "+r.status);
+    return r.json();
+  });
+  if(!tip || !tip.sha) throw new Error("no tip");
+  return String(tip.sha).toLowerCase();
+}
+function currentPinSha(){
+  const m=location.pathname.match(/\/laceArc\/([0-9a-f]{40})\//i);
+  return m?m[1].toLowerCase():"";
+}
+function rawcdnUrl(sha){
+  return "https://rawcdn.githack.com/NFDFLDTHRY/laceArc/"+sha+"/docs/clock/lace-projection.html";
+}
+async function goLatest(stamp){
+  const sha=await resolveLatestSha();
+  const here=currentPinSha();
+  if(stamp) stamp.textContent="tip "+sha.slice(0,7);
+  if(here && here===sha) return "same";
+  location.replace(rawcdnUrl(sha));
+  return "jump";
 }
 async function askPersist(why){
   if(persistAsked && why!=="install") return readPersist();
@@ -712,9 +741,15 @@ if ("serviceWorker" in navigator) {
         if(!w) return;
         w.addEventListener("statechange", kick);
       });
-      upd.addEventListener("click", ev=>{
+      upd.addEventListener("click", async ev=>{
         ev.preventDefault();
         if(e) e.textContent="chk";
+        try {
+          const act=await goLatest(e);
+          if(act==="jump") return;
+        } catch(err) {
+          if(e) e.textContent="tip fail";
+        }
         try { reg.update(); } catch(_){}
         if(reg.waiting){
           reg.waiting.postMessage({type:"skip"});

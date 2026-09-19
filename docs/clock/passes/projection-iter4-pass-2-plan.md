@@ -1,6 +1,6 @@
 # Projection iteration 4 / pass 2 plan — one icon, Update replaces
 
-**Status:** PLAN. Not executed. Emission `[GAP]`.  
+**Status:** EXECUTED. Emission `[GAP]`. Title `i4p2`. Manifest id lace-iii. Update reads LATEST.json then rawcdn SHA.  
 **Station:** hologram  
 **Evidence:** five home-screen icons, all named `LaceArc III`. Each rawcdn SHA install minted a new WebAPK.
 
