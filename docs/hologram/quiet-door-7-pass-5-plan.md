@@ -1,6 +1,6 @@
 # Quiet door #7 (Hologram) — Pass 5 PLAN
 
-**Status:** PLAN only. Not run.  
+**Status:** EXECUTED — seam on `docs/hologram/quiet-door-7-ascii.md`. Door + HTML unchanged. Emission `[GAP]`.  
 **Station:** hologram (HELD Grok-hologram).  
 **Object:** Hologram seam — vs Hands, clock, frozen viewer.  
 **Authority:** [`quiet-door-7-ascii.md`](quiet-door-7-ascii.md) passes 1–4. [`docs/hologram/README.md`](README.md). [`docs/graphics/README.md`](../graphics/README.md). [`docs/clock/README.md`](../clock/README.md). [`docs/shadow-clock-gearing.html`](../shadow-clock-gearing.html).  

@@ -2,7 +2,7 @@
 
 **Object:** `docs/hologram/README.md`  
 **Station:** hologram.  
-**Executed:** [quiet-door-7-pass-1-plan.md](quiet-door-7-pass-1-plan.md) · [quiet-door-7-pass-2-plan.md](quiet-door-7-pass-2-plan.md) · [quiet-door-7-pass-3-plan.md](quiet-door-7-pass-3-plan.md) · [quiet-door-7-pass-4-plan.md](quiet-door-7-pass-4-plan.md).  
+**Executed:** [quiet-door-7-pass-1-plan.md](quiet-door-7-pass-1-plan.md) · [quiet-door-7-pass-2-plan.md](quiet-door-7-pass-2-plan.md) · [quiet-door-7-pass-3-plan.md](quiet-door-7-pass-3-plan.md) · [quiet-door-7-pass-4-plan.md](quiet-door-7-pass-4-plan.md) · [quiet-door-7-pass-5-plan.md](quiet-door-7-pass-5-plan.md).  
 **Not:** Core. Not Graphic E. Not Graphics A–D. Not Hands. Not door #6 pass 7. Not projection iter 5.  
 **Emission:** `[GAP]`. No `src/`. Hologram door bytes untouched. HTML untouched. Renderer unclaimed. Door #6 CLOSED.
 
@@ -205,3 +205,26 @@ All `New machine?` = no.
 | T2 | Eight-row register; all New machine?=no |
 | T3 | Hologram ↔ Hands ↔ renderer |
 | T4 | Door + HTML + Hands + Clock untouched |
+
+## Pass 5 — seam
+
+Five files. None becomes another.
+
+| File | Names | Stores | Writes L? | Becomes the other if |
+|---|---|---|---|---|
+| `docs/hologram/README.md` | touches; not A–D; diagnose / suggest | no | no | treated as Hands |
+| `docs/graphics/README.md` | the four graphics | yes — Hands | no | treated as a lookref |
+| `docs/clock/README.md` | Layer III; CLOSED as door #6 | no | no | reopened as this campaign |
+| `docs/shadow-clock-gearing.html` | frozen Layer III viewer | no | no | claimed from hologram |
+| `docs/hologram/quiet-door-7-ascii.md` | the hologram door as a reading | no | no | treated as Hands or as HTML |
+
+Hologram names. Hands stores. Clock stays CLOSED. Frozen viewer stays renderer. This file reads the hologram door. `nostd-pipeline.html` is named here and `which` = renderer — not rewritten.
+
+## Pass 5 deltas
+
+| Ticket | Action |
+|---|---|
+| T1 | Five-file seam |
+| T2 | None of the five rewritten |
+| T3 | This reading is not the store |
+| T4 | Door / Hands / Clock / HTML untouched |
