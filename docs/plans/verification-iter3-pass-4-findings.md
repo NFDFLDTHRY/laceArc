@@ -66,6 +66,30 @@ Re-run with whole-token matching: **3**.
 - **Did not sweep Phase 5a**, though it is this campaign's own debt. That sweep is a maps-station edit across other stations' files, and it needs the same ruling as the tool.
 - **Did not treat the defrag as a failure.** It rewrote every link, they are still correct 600 commits later, and its sweep caught 17 of 20.
 
+## 6a. CORRECTION — Phase 5a had no debt, and §3 was wrong
+
+**Pass 5 ran the proposed list against `47ec0f7` Phase 5a, and it returned nothing.**
+
+**Thirty files moved. Zero prose citations of their old paths survive today.** There was nothing to sweep: Phase 5a moved campaign-internal pass plans into `docs/clock/passes/`, and nothing outside the campaign had ever cited them by path.
+
+And tracing each still-broken target to the commit that moved it:
+
+| Target | Moved by |
+|---|---|
+| `docs/pointer-emission-prompt.md` | `94cdba8` Defrag pass 1 |
+| `docs/agentscope-clipboard.md`, `docs/clipboard-five-stakes.md` | `f1adf2d` Defrag pass 2 |
+| `docs/gearing-code-1to1.md` | `b7ed9a6` Defrag pass 3 |
+| `docs/rust-nostd-crate-map.md` | `fbcd909` Defrag pass 4 |
+| `docs/petersen-zech-clipboard.md` | `1fa7da9` the reconcile commit |
+
+**All of them are the defrag's. None is Phase 5a's.**
+
+So §3's claim — *"the single largest rename event in this repository's history is a commit I wrote, and nothing followed it"* — is **half true and wholly misleading.** Nothing followed it because nothing needed to.
+
+**The error was an inference, not a count.** Pass 4 saw 30 renames and inferred 30 risks. **Rename volume is not citation risk: a file nothing cites can move freely.** Every previous artifact this session was a probe counting a mention as a use; this one is the same habit at one remove — reading a number as a consequence without measuring the consequence.
+
+**It sharpens the E5 ruling rather than reversing it.** The list is still worth building, and its value is concentrated on moves of *cited* files. **The trigger is not "a commit renamed files" but "a commit renamed a file something points at"** — which the list itself answers, and which is why it produces a list rather than a count.
+
 ## 7. For the ruling
 
 | | |

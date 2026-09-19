@@ -1,6 +1,6 @@
 # Verification iteration 3, pass 5 — the rulings, taken
 
-**Status:** `[PLAN]`. **This pass rules.** Execution NOT_RUN.
+**Status:** `[PLAN]`. **This pass rules, and execution is under way.** D6/D4/D5/D7 APPLIED. E5's sweep found [Phase 5a had no debt](verification-iter3-pass-4-findings.md) and corrected pass 4.
 **Station:** maps for this document; the rulings name their own stations.
 **Emission:** `[GAP]`. No `src/`. **Pinned at `4ed3c6e`.**
 **Iteration:** [iteration 3](verification-iteration-3-plan.md), pass 5 of six. Passes 1–4 EXECUTED.
@@ -51,7 +51,7 @@ kit is FREE. This is the single highest-leverage edit measured across three iter
 
 **Build the move-time completeness list.** [Pass 4](verification-iter3-pass-4-findings.md) tested it retroactively: it would have shown 20 citations at defrag time, of which 3 are still broken. It gates nothing, runs six times in 633 commits, and its known limit — a root-level rename cannot be swept mechanically — is written into the proposal.
 
-**And sweep Phase 5a.** Thirty renames, this campaign's own commit, no sweep after it. **The largest unswept move in the repository is ours.** It touches clipboards, hologram and prompts, so it runs station by station.
+**And sweep Phase 5a.** ~~Thirty renames, this campaign's own commit, no sweep after it.~~ **Ruled and then measured: there was nothing to sweep.** The list returned zero live citations of Phase 5a's old paths, and all eleven broken references trace to the defrag's moves instead. The correction is [in pass 4's record](verification-iter3-pass-4-findings.md) §6a. **The remaining eleven are the defrag's leftovers and belong to clipboards, hologram and prompts.**
 
 *The list is code in kit or coord. `CLAUDE.md` requires asking before a commit that adds code; the delegation covers it, and this sentence is the record that it was not assumed.*
 
