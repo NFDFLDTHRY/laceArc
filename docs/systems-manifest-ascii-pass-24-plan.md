@@ -1,6 +1,6 @@
 # Systems-manifest ASCII pass 24 plan — Update wave · Iteration 3 · Pass 5 · Shadow Order Proposal + light accuracy (Iter3)
 
-**Status:** **HELD**. Emission `[GAP]`.  
+**Status:** **EXECUTED** (2026-09-19 PT). Emission `[GAP]`.  
 **Series:** Pass **24** (linear executed-passes list) = **Update wave · Iteration 3 · Pass 5**. Subtitle: **Update wave · Iteration 3 · Pass 5**.  
 **Station:** maps (catch-all for `docs/*.md` at court root). Holder: **reference-Mapper**. Keep maps **HELD**.  
 **Authority:** `docs/systems-manifest.md` (Contracts I / II / Layer III; Pieces unchanged).  
