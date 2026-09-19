@@ -1,7 +1,7 @@
-STATUS: FREE
+STATUS: HELD
 STATION: kit
 OWNS: docs/kit/** .claude/**
-AGENT: -
-BASE: -
-SINCE: -
-NOTE: 
+AGENT: Grok-kit
+BASE: 502963a7e1e1b620a031b2da78f43ef72276ed04
+SINCE: 2026-09-19T05:58:31Z
+NOTE: Cold doors claimed. Pass 1–4 EXECUTED. Pass 5 PLAN on disk, not run. Renderer PAUSED. Rust SHUT. Φ [GAP].
