@@ -42,3 +42,5 @@ POINTER emission stays `[GAP]`. No `src/`.
 [Pass 3 plan](relationship-evidence-pass-3-plan.md): **EXECUTED.** Maps-handoff ticket. History did not apply A/B or claim maps. Not pass 8. Not door #5. Φ `[GAP]`.
 
 [Pass 3 handoff](relationship-evidence-pass-3-handoff.md): companion blob still `2628df45`. Join still missing. Star caption lines 453–464 = proposal A. Coupling note neighborhood = piece board 210–218 / A-list 345–356 / participation 442–451 / after star 464. Maps FREE. A/B unapplied.
+
+[Pass 4 plan](relationship-evidence-pass-4-plan.md): **PLAN only.** Close-and-park ticket. No new Q. Maps remains the next door. Not pass 8. Not door #5. Φ `[GAP]`.
