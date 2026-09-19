@@ -3,7 +3,9 @@
 **Status:** `[PROPOSAL]` for the citation rule. The families themselves are measured, not proposed — each range below was read out of its defining document.
 **Station:** maps. **Emission:** `[GAP]`. No `src/`.
 
-Sixteen identifier families share one small alphabet. **33 tokens are claimed by two or more families**, six ranges by three. `A5` is a Graphic A panel, a `trainA` gear tooth, and a coherence-audit station.
+Nineteen identifier families share one small alphabet. **41 tokens are claimed by two or more families**, 15 of them by three. `A5` is a Graphic A panel, a `trainA` gear tooth, and a coherence-audit station.
+
+**How those two numbers are got:** expand every `Range` cell in the table below into its tokens, *keeping zero-padding*, and count the tokens with more than one owner. Re-derived that way at `810d200`. An earlier reading of this file said sixteen families and 33 tokens and did not record how it counted, so the figures are replaced rather than reconciled — which is the whole complaint of [verification iteration 1](plans/verification-iteration-1-plan.md) landing on this file first.
 
 **Nothing is renamed to fix this, and nothing should be.** The gear keys are string literals in `contracts-*.js`, and [the 1:1 audit](clock/gearing-code-1to1.md) states the 47 names form a bijection with the registry — renaming a tooth breaks running code and a documented audit together. `A1` alone appears in 50 files. See [the restructure plan §4.7](plans/restructure-plan.md) for the measurement that settled this.
 
@@ -40,12 +42,13 @@ Each station applies this when it next touches a file it owns. **No file is rewr
 | IR piece | `P1`–`P15` | [hologram-ast-ir.md](plans/hologram-ast-ir.md) | maps | **BAKED** in the golden fixtures |
 | Crate-map page | `A`–`H`, `X` | [rust-nostd-crate-map.md](plans/rust-nostd-crate-map.md) | maps | |
 | Restructure finding | `R1`–`R12`; phases `0`–`8` | [restructure-plan.md](plans/restructure-plan.md) | maps | |
-| Agent control | `C01`–`C12` | [agent-control.md](kit/agent-control.md) | kit | zero-padded: never collides with `C1` |
+| Agent control | `C01`–`C12` | [agent-control.md](kit/agent-control.md) | kit | zero-padded — but the padding stops telling at ten, see below |
 | Downstream finding | `F01`–`F12` | [downstream-audit.md](kit/downstream-audit.md) | kit | zero-padded |
 | Coherence audit station | `A1`–`A14` | [coherence-audit-prompt.md](prompts/coherence-audit-prompt.md) | prompts | |
 | Gear key | `A1`–`A9` `B1`–`B5` `C1`–`C10` `t0`–`t6` `E1` `E2` `R1` `X1`–`X6`; `A` `B` `C` `AB` `BC` `CA`; `axle` | [`contracts-*.js`](gearing/README.md) | `gear:<shaft>` | **BAKED** — a bijection with the registry |
 | HCC station / phase | `H1`–`H11`; `S0`–`S7` | [hcc-a-systems-manifest.md](clock/hcc-a-systems-manifest.md) | hologram | |
 | Cup stage | `C1`–`C5` | [coffee-cup-systems-manifest.md](clock/coffee-cup-systems-manifest.md) | hologram | |
+| Rowlands clipboard section | `D1`–`D7` | [rowlands-pass-2-plan.md](clipboards/rowlands-pass-2-plan.md) | clipboards | `D7` is optional in the plan and present in the clipboard |
 | Water bucket / spec | `OBS` `DELTA` `UNK` `INVALID`; `F1`–`F5` | [water-systems-manifest.md](clock/water-systems-manifest.md) | hologram | |
 
 ## Collisions, and how to tell
@@ -57,6 +60,8 @@ Each station applies this when it next touches a file it owns. **No file is rewr
 | `B1`–`B5` | Graphic B panel · gear `trainB` tooth | As above. Graphic B runs to `B12`; `trainB` stops at `B5` |
 | `C1`–`C5` | Graphic C panel · gear `trainC` tooth · **Cup stage** | Cup stages are event-time and appear only in Shadow prose under `docs/clock/`. Graphic C runs to `C12` |
 | `C6`–`C10` | Graphic C panel · gear `trainC` tooth | `trainC` stops at `C10`; Cup stops at `C5` |
+| `C10`–`C12` | Graphic C panel · agent control | **Zero-padding stops telling them apart at ten**: `C01`–`C09` are safe, `C10`–`C12` are byte-identical to the panels. Agent-control items are numbered rows inside [agent-control.md](kit/agent-control.md) and are cited nowhere else; a panel cite names a picture |
+| `D1`–`D6` | Graphic D panel · Rowlands clipboard section | Sections are `### D4 — …` headings and back-references inside `docs/clipboards/rowlands-*`. A panel cite names a row of the array table. **`D7` is a section only** — Graphic D stops at `D6`, so a bare `D7` is never an out-of-range panel |
 | `P1`–`P4` | atomic primitive · manifest Piece (as IR `P1`) | **Write `Piece 4` for the manifest.** Bare `P4` is the atomic primitive. The IR's `P1`–`P15` are Pieces and are baked |
 | `X1`–`X6` | gear audit key · crate-map page `X` | The crate map has one page `X`, not six |
 | `R1` | gear escapement key · restructure finding 1 | Only `escape:R1` is a key; the finding is always in prose about this plan |
