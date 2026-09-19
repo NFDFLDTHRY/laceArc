@@ -1,7 +1,7 @@
-STATUS: FREE
+STATUS: HELD
 STATION: history
 OWNS: docs/history-recovered* docs/history/**
-AGENT: -
-BASE: -
-SINCE: -
+AGENT: Grok-history
+BASE: d6050c5abe289d752af2da9ee6df5361074fe759
+SINCE: 2026-09-19T04:09:31Z
 NOTE: 
