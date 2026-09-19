@@ -1,6 +1,6 @@
 # Projection iteration 4 / pass 6 plan — break yes–no–yes
 
-**Status:** PLAN. Not executed. Emission `[GAP]`.  
+**Status:** EXECUTED. Emission `[GAP]`. Title `i4p6`. Destroy on hide. Controlled load waits 300ms. HUD load n. Early lost = recycle.  
 **Station:** hologram  
 **Evidence:** `i4p5` cold open paints. Reload #1 dark. Reload #2 paints. Pattern: **yes, no, yes**.
 
