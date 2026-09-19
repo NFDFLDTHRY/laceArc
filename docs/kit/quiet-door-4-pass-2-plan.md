@@ -1,6 +1,6 @@
 # Quiet door #4 (live law) — Pass 2 PLAN
 
-**Status:** PLAN only. Not run.  
+**Status:** EXECUTED — fields on `docs/kit/quiet-door-4-ascii.md`. Live-law bytes unchanged. Pair untouched. Emission `[GAP]`.  
 **Station:** kit (HELD Grok-kit).  
 **Object:** live-law fields — In / Does / Break / Gap / Role.  
 **Authority:** [`quiet-door-4-ascii.md`](quiet-door-4-ascii.md) pass-1 spine. Live-law file as written.  

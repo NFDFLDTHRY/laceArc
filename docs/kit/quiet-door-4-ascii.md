@@ -2,7 +2,7 @@
 
 **Object:** `docs/law-why-these-documents.md`  
 **Station:** kit (reading). Live law wins on the door.  
-**Executed:** [quiet-door-4-pass-1-plan.md](quiet-door-4-pass-1-plan.md).  
+**Executed:** [quiet-door-4-pass-1-plan.md](quiet-door-4-pass-1-plan.md) · [quiet-door-4-pass-2-plan.md](quiet-door-4-pass-2-plan.md).  
 **Not:** live law. Not Hands. Not the header pair. Not door #3 pass 7.  
 **Emission:** `[GAP]`. No `src/`. Live-law bytes untouched.
 
@@ -83,4 +83,30 @@ This file stores. The court names it. The package door routes to it. Kit reads i
 | T3 | G2 pointed, not filled |
 | T4 | Live-law bytes untouched |
 
-Queued (later passes on this door): fields; header pair vs IMPLEMENTATION LAW vs transports; this-file-stores walk; seam vs court / package / AGENTS; receipt.
+Queued (later passes on this door): header pair vs IMPLEMENTATION LAW vs transports; this-file-stores walk; seam vs court / package / AGENTS; receipt.
+
+## Pass 2 — fields
+
+Off the live-law headings + header. Door wins over invention.
+
+| # | Block | In | Does | Break | Gap | Role |
+|---|---|---|---|---|---|---|
+| L1 | this file | a posture question | stores the explanation + implementation law | treat this kit reading as the store | — | store |
+| L2 | LIVE LAW banner | a copy that may lag | says this file wins | treat a transport as winner | — | banner |
+| L3 | unresolved pair | line 10 vs IMPLEMENTATION LAW | names existence ≠ acceptance | agent edits the pair | human ruling | human hold |
+| L4 | Why | graphics + five texts + gears + history | keeps them off Core | drop a text into Core | — | fence |
+| L5 | ASCII (the prompt) | the staking sentence | is the explanation; do not paraphrase it away | friendlier Bot paraphrase | — | prompt |
+| L6 | IMPLEMENTATION LAW | a request to write `src/` | says not now; accepted emission first | treat exists as accepted | G2 answers | gate |
+| L7 | Binding files | AGENTS / profile / CONTRIBUTING / README | names who must cite this file | replace the ASCII in the profile | — | bind list |
+| L8 | kit transports | agent-control + grok-bot-profile | may lag; this file still wins | regenerate them as if they were live law | R1 sizes | copies |
+
+G2 stays `[GAP]`.
+
+## Pass 2 deltas
+
+| Ticket | Action |
+|---|---|
+| T1 | Eight In / Does / Break / Gap / Role rows |
+| T2 | L3 Break = edit the pair; L6 Break = exists as accepted |
+| T3 | Spine left in place |
+| T4 | Live-law bytes untouched |

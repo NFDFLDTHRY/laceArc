@@ -2,6 +2,6 @@ STATUS: HELD
 STATION: kit
 OWNS: docs/kit/** .claude/**
 AGENT: Grok-kit
-BASE: 2e7e2be0dad84d75c1eee9267cda62a62626a6fb
-SINCE: 2026-09-19T07:06:16Z
-NOTE: Live-law door pass 2 PLAN. Pass 1 spine EXECUTED. Fields. Φ [GAP].
+BASE: 54513da7f9b4cc9b97f6edae3c5a14e65868777f
+SINCE: 2026-09-19T07:07:00Z
+NOTE: Live-law door pass 2 EXECUTED. Fields on quiet-door-4-ascii.md. Next pass 3 grain. Φ [GAP].
