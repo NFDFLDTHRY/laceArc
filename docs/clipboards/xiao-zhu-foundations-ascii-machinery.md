@@ -1,6 +1,6 @@
 # Xiao & Zhu — ASCII source-machinery model (Shadow)
 
-**Status:** Pass 4–5 EXECUTED (SOURCE MACHINERY overview + panels P-A1…P-A9; P4-X 9/9 PASS; P5-X accuracy + Order Proposal Shadow). Emission `[GAP]`. Tokenizer `[GAP]`.  
+**Status:** Pass 6 EXECUTED (DIAGRAM SOUND — P6-A/P6-P/P6-X rigor; SOURCE MACHINERY overview + panels P-A1…P-A9 stand; P5 Order Proposal Shadow confirmed; P4-X/P5-X baselines re-walked). Emission `[GAP]`. Tokenizer `[GAP]`.  
 **Source:** Tong Xiao & Jingbo Zhu, *Foundations of Large Language Models* · arXiv:2501.09223v2 [cs.CL] · 15/17 Jun 2025  
 **License:** CC BY-NC 4.0 — cite; do not fold body into Apache Core  
 **PDF:** `refs/local/xiao-zhu-foundations-llm.pdf` → attachment `0f5d145d298a90bbe1648b365d97b8833e86be3c31bedd7db900a932ba50bc1a` (**277** pp., text layer; **never git-add**)  
@@ -79,6 +79,8 @@ Singular canonical overview for this pass. Book constructive spine only. Lace Co
 ```
 
 **P5-X:** Accuracy matrix (all PASS) lives on the book clipboard under Pass 5 — [xiao-zhu-foundations-clipboard.md](xiao-zhu-foundations-clipboard.md#p5-x--accuracy-matrix-m-a--p-a--overview). This file holds **exactly one** canonical SOURCE MACHINERY overview (above). P4-X rigor matrix (Pass 4 baseline) remains below.
+
+**P6-A / P6-X / P6-R:** Structural checklist + deep accuracy matrix + **DIAGRAM SOUND** verdict live on the book clipboard under Pass 6 — [xiao-zhu-foundations-clipboard.md](xiao-zhu-foundations-clipboard.md#pass-6--rigorous-ascii-systems-diagram-accuracy). Wave B skipped. Emission `[GAP]`. Tokenizer `[GAP]`.
 
 ### Order proposal (Shadow) — SOURCE MACHINERY as shelf hygiene *(short mirror)*
 
@@ -463,9 +465,11 @@ Shoe in hands, or no.
 These diagrams are photographs of **book LLM machinery**, not Lace machinery.  
 Pre-training boxes mutate weights — not DOCUMENT append.  
 Vocab-intern boxes are not Lace WORD identity.  
-Embed boxes are a second store — not Graphic D.  
+Embed boxes are book vectors — not a second store / Graphic D.  
 Next-token and MASK boxes are training/corruption — not continue / cut.  
 Soft / SFT / RLHF boxes are steward adaptation — not Core rows.  
 Prefilling / decode / KV boxes project language — they do not emit when-rules.  
 Opening a tokenizer gap is not filling Φ.  
+Pass 6 **cross-examines** diagram accuracy (**DIAGRAM SOUND**); refuse install-as-Core from P6-A + P6-P alone.  
+Refuse “intern vocab as Lace WORD” from P-A2 / P6-X; “MASK the strand” from P-A5 / P6-X; “RLHF as Lace history” from P-A8 / P6-X; “decode as POINTER when” / “KV as second store” from P-A9 / P6-X.  
 Φ stays `[GAP]`. Tokenizer stays `[GAP]`.

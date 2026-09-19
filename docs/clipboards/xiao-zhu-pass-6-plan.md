@@ -1,6 +1,6 @@
 # Xiao & Zhu pass 6 — rigorous analysis & ASCII systems-diagram accuracy
 
-**Status:** **HELD / NOT EXECUTED** — ready for execute · plan-only 2026-09-18 ~19:45 PT · agent `reference-Mapper`. Emission `[GAP]`. Tokenizer `[GAP]`.  
+**Status:** **EXECUTED** — 2026-09-18 ~19:47 PT · agent `Xiao-Zhu Pass 6 execute` · verdict **DIAGRAM SOUND**. Emission `[GAP]`. Tokenizer `[GAP]`.  
 **Station:** clipboards (HELD `Xiao-Zhu Pass 6 plan only` at plan time; refresh claim before execute)  
 **Base at plan:** `4df3fae` (== `origin/main` after Pass 5 tip `1b9cba1` + clock i5p2/i5p3) · refresh to current `origin/main` before execute  
 **Book:** Tong Xiao & Jingbo Zhu, *Foundations of Large Language Models*  
@@ -231,17 +231,21 @@ Tokenizer stays `[GAP]`. Emission stays `[GAP]`.
 
 ---
 
-## Plan receipt (HELD — NOT EXECUTED)
+## Plan receipt (EXECUTED)
 
 | Field | Value |
 |---|---|
-| Status | **HELD / NOT EXECUTED** — ready for execute |
-| When (plan) | 2026-09-18 ~19:45 PT |
-| Station | clipboards · claim `Xiao-Zhu Pass 6 plan only` |
-| Base (plan) | `4df3fae` (== origin/main at plan; Pass 5 tip `1b9cba1` ancestor) |
-| Artifact this commit | **this plan file only** |
-| P6-A/P/X/F/R | **not** written yet — execute owns them |
-| Wave B | default **SKIP** |
+| Status | **EXECUTED** |
+| When (execute) | 2026-09-18 ~19:47 PT |
+| Station | clipboards · claim `Xiao-Zhu Pass 6 execute` |
+| Base (execute sync) | rebased plan tip onto `origin/main` `9f3dd6f` (local plan SHA moved `db97342`→`ca3ee92`); claim BASE=`9f3dd6f` |
+| P6-A | **8 PASS · 0 OPEN** |
+| P6-P | **7 PASS · 0 OPEN** · no wording fix · still Shadow / non-binding |
+| P6-X | **9 PASS · 0 FIX** · special gates P-A2/P-A5/P-A8/P-A9 **PASS** |
+| P6-F | **1** (ascii steward embed moral typo) |
+| Verdict | **DIAGRAM SOUND** |
+| Wave B | **SKIP** |
 | Emission | `[GAP]` |
 | Tokenizer | `[GAP]` |
 | Push | **not** performed |
+| Products | clipboard Pass 6 · ascii Status + P6 pointer + steward fix · this plan EXECUTED |

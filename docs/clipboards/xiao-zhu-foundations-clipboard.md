@@ -223,6 +223,105 @@ Mirror (short): under SOURCE MACHINERY overview in [xiao-zhu-foundations-ascii-m
 
 ---
 
+## Pass 6 — Rigorous ASCII systems-diagram accuracy
+
+**Status:** EXECUTED · 2026-09-18 ~19:47 PT · station clipboards · `Xiao-Zhu Pass 6 execute`  
+**Plan:** [xiao-zhu-pass-6-plan.md](xiao-zhu-pass-6-plan.md)  
+**ASCII:** [xiao-zhu-foundations-ascii-machinery.md](xiao-zhu-foundations-ascii-machinery.md) · **Mechanisms:** [xiao-zhu-foundations-mechanisms.md](xiao-zhu-foundations-mechanisms.md)  
+**Law:** ASCII board + Order Proposal remain **Shadow proposal** — not Core · not Φ · not Lace tokenizer. Wave B **SKIP**. Emission still `[GAP]`. Tokenizer still `[GAP]`.
+
+### P6-A — Structural analysis (SOURCE MACHINERY as systems diagram)
+
+Walked the singular overview fence in ascii-machinery.md (book constructive spine only). Scoring: every checklist row PASS or OPEN-with-cause.
+
+| Item | Evidence | PASS/OPEN |
+|---|---|---|
+| Spine completeness (corpus→tokenize/V→embed→causal\|MASK→soft/SFT/RLHF→prefill/decode/KV→FORBIDDEN Core/Φ/tokenizer) | Overview fence: `[corpus D + self-sup]` → `[tokenize -> shared vocab V]` → `[e = x + e_pos (+ e_seg)]` → fork `[causal next-token]` / `[BERT MASK 80/10/10]` → `[soft / SFT / RLHF\|DPO]` → `[prefill -> decode / KV]` → `x --> Lace Core / Graphic D / emission / tokenizer` **FORBIDDEN** | **PASS** |
+| No orphan nodes | Every box cites ≥1 M-A*/P-A* **or** is INPUT (corpus D spine) / FORBIDDEN exit (Core/Graphic D/emission/tokenizer). Soft/SFT/RLHF aggregate cites M-A6..8 / P-A6..8 | **PASS** |
+| Wave A coverage (all M-A1…A9 on overview) | M-A1…A9 each appear; M-A6..8 / P-A6..8 share one aggregated soft/SFT/RLHF node (confirmed attach) | **PASS** |
+| Off-board integrity | Lace Core / Graphic D / emission / tokenizer appear only as **FORBIDDEN exits** + off-board note; Φ=`[GAP]`; tokenizer=`[GAP]`; not on-board stores | **PASS** |
+| Glyph discipline (no WORD/POINTER as book objects in fences) | **10** fences scanned: **0** contain the word `POINTER`. Overview fence: no `WORD`/`POINTER`; Graphic D named only as FORBIDDEN exit. P-A2 refusal comment “NOT Lace WORD” is refuse-label, not book object | **PASS** |
+| Stamp under-fence placement | All 9 panels keep stamps on `stamp under fence:` lines **under** the fence (not smuggled as fence glyphs). Overview FORBID lines are labels beside nodes, not Lace objects. No POINTER invent inside fences | **PASS** |
+| Singularity (one canonical overview) | Exactly one `SOURCE MACHINERY overview` fence (P5-O reconfirmed); other phrase hits are Status/pointers only | **PASS** |
+| Panel coverage P-A1…P-A9 | Each panel present with Mechanism cite · Lace stamp · Implements · fence · under-fence stamp line | **PASS** |
+
+**P6-A counts:** **8 PASS · 0 OPEN**.
+
+Pointer: ascii file Status + overview P6 pointer + steward block link here.
+
+### P6-P — Order Proposal rigor (clipboard P5-P + ascii short mirror)
+
+| Check | Question / result | PASS/OPEN |
+|---|---|---|
+| Claim–diagram bind | Each stage→hygiene row maps to a real overview node / P-A* (corpus/P-A1; tokenize/P-A2; embed/P-A3; causal\|MASK/P-A4–5; soft/SFT/RLHF/P-A6–8; prefill/decode/P-A9; FORBIDDEN exit) | **PASS** |
+| No Core/Φ/tokenizer overclaim | P5-P §1: proposal not Core / not AGENTS.md / not systems-manifest-ascii / not Graphic D / not reason-model-map / not law; NON-binding on Core/`src/`/Φ. Mirror: “not Core, not an AGENTS.md amendment, not a Φ scheduler…”; tokenizer `[GAP]` explicit | **PASS** |
+| FORBID completeness | Explicit: FORBID-as-Core-write · FORBID-as-Lace-identity · FORBID-as-store · FORBID next-token/decode as Core continue · FORBID MASK as Lace cut · FORBID-as-POINTER-when · FORBID corpus→DOCUMENT · FORBID as Core rows · FORBID-as-Lace-history · SILENT-for-Lace-append · PROPOSAL · Hands-refusal. Panel stamps P-A2/P-A5/P-A8/P-A9 agree | **PASS** |
+| Steward loop soundness | observe→name→diagram-check→stamp-check→OPEN list→decide (commit/release/defer/stop). Decide excludes POINTER-when / Φ fill / Lace tokenizer invent / Core install (FORBIDDEN exit row + §5 Explicit FORBID) | **PASS** |
+| File-order proposal-only | clipboard → mechanisms → ascii → pass plans labeled “proposal only” / “Recommended reader order (proposal only)” | **PASS** |
+| Mirror ≤ clipboard | Ascii short mirror restates stamps + hygiene loop + non-Core / non-Φ / non-history / non-store / tokenizer GAP; does **not** strengthen beyond clipboard P5-P; defers stage table to clipboard | **PASS** |
+| FORBID-as-Core intact | Proposal does not install into systems-manifest-ascii / Graphic D / AGENTS.md; Hands may refuse; NON-binding explicit | **PASS** |
+
+**P6-P result:** **7 PASS · 0 OPEN**. No overclaim found. **No wording fix** (FORBIDs already explicit and fence-faithful; softening forbidden and unnecessary). Still Shadow / non-binding.
+
+### P6-X — Deep accuracy (re-walk; do not inherit P4-X/P5-X blindly)
+
+Columns: Cite · Stamp · Implements reverse-walk · Fence fidelity · Overview attach · FM · Verdict. Special gates **P-A2 / P-A5 / P-A8 / P-A9** must PASS.
+
+| P | M | Cite | Stamp | Implements | Fence | Overview | FM | Verdict |
+|---|---|---|---|---|---|---|---|---|
+| P-A1 | M-A1 | PASS — §1.1 / Eq (1.1) PDF pp.8–13 ≡ M-A1 (pin reuse; no doubt) | PASS — KEEP-read; FORBID-as-Core-write; FORBID corpus→DOCUMENT fuel ≡ card | PASS — 3.1–3.5: separate → self-sup → θ̂ → adapt → refuse D as DOCUMENT | PASS — D, g_theta, θ̂, fine-tune/prompt only; “NOT DOCUMENT append”; no POINTER | PASS — corpus node | FM-X9 present | **PASS** |
+| P-A2 | M-A2 | PASS — shared vocab PDF **p.36** re-sighted (“every token is just an entry of the shared vocabulary”); §2.1 pp.44–45 ≡ M-A2 | PASS — **FORBID-as-Lace-identity** explicit; tokenizer `[GAP]` under fence ≡ card | PASS — 3.1–3.4: tokenize → intern V → sequence → refuse Lace identity | PASS — **special gate:** vocab intern only (text→units→x_i∈V); “NOT Lace WORD/Star”; tokenizer `[GAP]` off-fence comment; no Star glyphs | PASS — tokenize node + FORBID-as-Lace-identity | FM-X2/X8 present | **PASS** |
+| P-A3 | M-A3 | PASS — §1.3.1.2 / §2.1.1 PDF pp.32–33, 45 ≡ M-A3 | PASS — KEEP-read; **FORBID-as-store** under fence ≡ card | PASS — 3.1–3.5: token→pos→seg→sum e→refuse Graphic D | PASS — x, e_pos, e_seg, e; no Graphic D rows; **FORBID-as-store** under fence | PASS — embed node | FM-X5 present | **PASS** |
+| P-A4 | M-A4 | PASS — §1.2.1 (1.5)–(1.7) / §2.1 (2.3) PDF pp.14–15, 45 ≡ M-A4 | PASS — FORBID next-token as Core continue; SILENT ≡ card | PASS — 3.1–3.5: Pr→LogCE→argmax_θ→optional pick→refuse continue | PASS — Pr, Loss, θ̂, argmax over V; no continue glyph; no POINTER | PASS — causal-train branch | FM-X3 present | **PASS** |
+| P-A5 | M-A5 | PASS — §1.3 BERT PDF **pp.30–31** re-sighted (15% · 80/10/10 · Loss_MLM (1.18)) ≡ M-A5 / D7 | PASS — **FORBID-as-Core-write (MASK ≠ Lace cut)**; SILENT; see D7 ≡ card | PASS — 3.1–3.6: 15%→80/10/10→Loss_MLM→NSP→D7→refuse Lace cut | PASS — **special gate:** 80/10/10 corruption visible; `[MASK]`/replace/leave; “≠ Lace cut”; see D7; not Piece 3 cut | PASS — MASK branch | FM-X4 present | **PASS** |
+| P-A6 | M-A6 | PASS — §3.3.2 Soft Prompts PDF pp.149–155 ≡ M-A6 | PASS — FORBID as Core rows; SILENT ≡ card | PASS — 3.1–3.4: choose→prefix/prompt tune→optimize→refuse Core rows | PASS — soft_emb, prefixes, freeze LLM; no Core rows | PASS — soft/SFT/RLHF strip | FM-X6 present | **PASS** |
+| P-A7 | M-A7 | PASS — §4.2.1 SFT PDF pp.164–170; (4.1)–(4.2) ≡ M-A7 | PASS — FORBID-as-Core-write; SILENT ≡ card | PASS — 3.1–3.4: (x,y)→log Pr(y\|x)→θ̃→refuse Core write | PASS — SFT pairs, Pr(y\|x), θ̃ only; no Core rows | PASS — soft/SFT/RLHF strip | FM-X6 present | **PASS** |
+| P-A8 | M-A8 | PASS — §4.3 RLHF PDF **~179–182** re-sighted (prefs→reward→PPO); §4.4 DPO PDF **~200** re-sighted (Fig 4.10 / §4.4.2) ≡ M-A8 | PASS — **FORBID as Core write** + **FORBID-as-Lace-history** under fence ≡ card | PASS — RLHF 3.1–3.4 + DPO 4.1–4.2: prefs→r/PPO or DPO→refuse Core write / Lace history | PASS — **special gate:** prefs / r_φ / PPO / DPO only; “NOT Graphic D; NOT Lace occurrence history”; no history/append glyph | PASS — soft/SFT/RLHF strip + FORBID history | FM-X6 present | **PASS** |
+| P-A9 | M-A9 | PASS — eq (5.1) PDF **p.210** + §5.1 PDF **pp.211–215** re-sighted (prefill/decode/Append KV (5.8)–(5.9)); §2.3.3 PDF **p.77** ≡ M-A9 | PASS — FORBID Core continue + **FORBID-as-POINTER-when** + **FORBID-as-store** (KV); SILENT; Φ `[GAP]` ≡ card | PASS — prefill 3.1–3.3 + decode 4.1–4.4: KV→Pr→select→Append→refuse continue / when-rule | PASS — **special gate:** prefill/decode/KV only; “KV = transient inference memory”; “NOT Piece 2 continue”; “emission stays [GAP]”; **no POINTER word** in fence | PASS — prefill/decode node | FM-X7 present | **PASS** |
+
+**Special-gate notes**
+- **P-A2:** FORBID-as-Lace-identity is stamp + under-fence + overview label; fence is vocab intern only; tokenizer stays `[GAP]` (off-fence). Fence-faithful.
+- **P-A5:** MASK ≠ Lace cut is stamp + under-fence + overview label; 80/10/10 + D7 visible; not Piece 3 cut. Fence-faithful.
+- **P-A8:** FORBID as Core write + FORBID-as-Lace-history are stamp + under-fence + overview aggregate; fence is preference/reward/policy only (not Lace append / history rewrite). Fence-faithful.
+- **P-A9:** FORBID Core continue + FORBID-as-POINTER-when + FORBID-as-store (KV) are stamp + under-fence + overview; fence is prefill/decode/KV only; Φ stays `[GAP]`; **no POINTER word** inside fence. Fence-faithful.
+- **P-A3 / P-A6:** FORBID-as-store / FORBID as Core rows still under fence (confirmed).
+
+**False-friend fence scan:** no fence accidentally looks like Graphic D / 1D array / POINTER art (10/10 book-only).
+
+**P6-X counts:** **9 PASS · 0 FIX**. Special gates P-A2 / P-A5 / P-A8 / P-A9 **PASS**.
+
+### P6-F — Fixes
+
+| # | Target | Cause | Edit |
+|---|---|---|---|
+| 1 | ascii steward test (embed line) | Analysis-cited moral misstatement: “Embed boxes are a second store” contradicted FORBID-as-store / P-A3 | Rewrote to “Embed boxes are book vectors — not a second store / Graphic D.” |
+
+No Implements/stamp/pin/fence/proposal wording edits required beyond that. Mechanisms bodies untouched (law). FORBIDs not softened. Singular overview reconfirmed. No POINTER in any diagram fence.
+
+### P6-R — Pass 6 receipt
+
+| Field | Value |
+|---|---|
+| Status | **EXECUTED** |
+| When | 2026-09-18 ~19:47 PT |
+| Station | clipboards · agent `Xiao-Zhu Pass 6 execute` |
+| Plan | [xiao-zhu-pass-6-plan.md](xiao-zhu-pass-6-plan.md) → **EXECUTED** |
+| Hands skim | shoe (staking) → graphics A–D → systems-manifest (+ ascii Core separate) → law-why → reason-model-map §3 X1–X7 → M-A1…A9 → ascii overview+P-A* → clipboard P5-P/P5-X → five-stakes PAGE 3/5 (read-only) |
+| PDF | **PRESENT** gitignored `refs/local/xiao-zhu-foundations-llm.pdf` SHA `0f5d145d298a90bbe1648b365d97b8833e86be3c31bedd7db900a932ba50bc1a` · **277** pp.; re-sighted p.36 (shared V) · pp.30–31 (BERT 80/10/10) · ~179–182 (RLHF) · ~200 (DPO) · p.210/(5.1) · pp.211–215 (prefill/KV Append) · p.77 (KV cache); **never staged** |
+| P6-A | **8 PASS · 0 OPEN** |
+| P6-P | **7 PASS · 0 OPEN**; no overclaim; no wording fix; still Shadow / non-binding; FORBID-as-Core intact |
+| P6-X | **9 PASS · 0 FIX**; special gates P-A2/P-A5/P-A8/P-A9 **PASS** |
+| P6-F | **1** (steward embed moral typo) |
+| Overall verdict | **DIAGRAM SOUND** |
+| Wave B | **SKIP** (default) |
+| Emission | still `[GAP]` — no POINTER when / arity / adjacency; **no invented Φ** |
+| Tokenizer | still `[GAP]` — PAGE F open; no Lace tokenizer invent |
+| Amended | reason-model-map · law · graphics · five-stakes · src/ · systems-manifest · systems-manifest-ascii · PAGE morals · FM-X* · P3-M · M-A* bodies · Core ASCII | **No** |
+| Touched | clipboard · ascii-machinery (pointer/status + steward fix) · pass-6-plan (EXECUTED) |
+
+**Steward test:** Shoe in hands — refuse “install this systems diagram as Graphic D / Core ASCII” using P6-A + P6-P alone. Refuse “intern vocab as Lace WORD” using P-A2 / P6-X. Refuse “MASK the strand” using P-A5 / P6-X. Refuse “decode as POINTER when” / “KV as second store” using P-A9 / P6-X. Refuse “RLHF as Lace history” using P-A8 / P6-X. Decisive judgment = release/stop — not Φ. Emission `[GAP]`. Tokenizer `[GAP]`.
+
+
 ```
 ┌──────────────────────────────────────────────────────────────────────────┐
 │ CLIPBOARD                                                                │
