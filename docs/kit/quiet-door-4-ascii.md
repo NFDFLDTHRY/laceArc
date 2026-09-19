@@ -2,7 +2,7 @@
 
 **Object:** `docs/law-why-these-documents.md`  
 **Station:** kit (reading). Live law wins on the door.  
-**Executed:** [quiet-door-4-pass-1-plan.md](quiet-door-4-pass-1-plan.md) · [quiet-door-4-pass-2-plan.md](quiet-door-4-pass-2-plan.md) · [quiet-door-4-pass-3-plan.md](quiet-door-4-pass-3-plan.md).  
+**Executed:** [quiet-door-4-pass-1-plan.md](quiet-door-4-pass-1-plan.md) · [quiet-door-4-pass-2-plan.md](quiet-door-4-pass-2-plan.md) · [quiet-door-4-pass-3-plan.md](quiet-door-4-pass-3-plan.md) · [quiet-door-4-pass-4-plan.md](quiet-door-4-pass-4-plan.md).  
 **Not:** live law. Not Hands. Not the header pair. Not door #3 pass 7.  
 **Emission:** `[GAP]`. No `src/`. Live-law bytes untouched.
 
@@ -134,3 +134,65 @@ Exists is not accepted. Copies lag. This file wins. The pair is human.
 | T2 | Exists ≠ accepted |
 | T3 | Transports `which` = kit; they lag |
 | T4 | Pair unnamed-as-winner; live-law bytes untouched |
+
+## Pass 4 — walk
+
+This walk wins where a copy disagrees. It does not accept emission. Hands keeps A13.
+
+### Operator (from live law)
+
+```
+ ╔══════════════════════════════════════════════════════════════╗
+ ║  This file wins where copies lag.                            ║
+ ║  Existence is not acceptance.                                ║
+ ╚══════════════════════════════════════════════════════════════╝
+
+  reader arrives at docs/law-why-these-documents.md
+    if a copy disagrees          → this file wins
+    if emission is asked         → DRAFT; not accepted
+    if the pair is asked         → human; do not edit
+    never: exists ⇒ accepted
+    never: transport ⇒ winner
+    never: kit reading ⇒ store
+
+  not "emit POINTER."
+  not A13 arrive / through-star / continue.
+```
+
+### Application register
+
+| # | Role | What arrives | What is walked | What continues | New machine? |
+|---|---|---|---|---|---|
+| L1 | this file | a posture question | store the explanation | kit reading is not this file | no |
+| L2 | banner | a lagging copy | this file wins | — | no |
+| L3 | pair | a request to pick a winner | name both; do not edit | human ruling | no |
+| L4 | Why | a bid to enter Core | keep texts / gears / history off Core | — | no |
+| L5 | ASCII | a request to paraphrase | keep the prompt | — | no |
+| L6 | IMPLEMENTATION LAW | a request to write `src/` | not now; accepted emission first | G2 `[GAP]` | no |
+| L7 | Binding files | AGENTS / profile / CONTRIBUTING / README | they cite this file | they are not this file | no |
+| L8 | transports | a lagging kit copy | this file still wins | do not regen this pass | no |
+
+All `New machine?` = no.
+
+### Live law versus Hands versus kit reading
+
+```
+ quiet-door-4-ascii.md       live law                 Hands
+ --------------------       --------                 -----
+ kit reading                the store                A13 verbs
+ names the store            wins                     not this walk
+
+ wrapper-as-Core            [X]
+ Hands verbs pasted here    [X]
+ pair resolved              [X]
+ G2                         [GAP]
+```
+
+## Pass 4 deltas
+
+| Ticket | Action |
+|---|---|
+| T1 | One walk box quoted from live law |
+| T2 | Eight-row register; all New machine?=no |
+| T3 | Live law ↔ Hands ↔ kit reading |
+| T4 | Pair untouched; live-law bytes untouched |
