@@ -3,7 +3,7 @@
 **Status:** CLOSED. Six of six.  
 **Station:** kit.  
 **Object:** `docs/README.md`  
-**Pin:** `52fad59` (execute `52fad594121ca21433b335c62cc0527bbeca4c6d`).  
+**Pin:** `4d9aa03` (execute `4d9aa03a880d50200ec1c8a5f059d161dfe4d0b2`).
 **Diagram:** [`quiet-door-3-ascii.md`](quiet-door-3-ascii.md).  
 **Not:** live law. Not Hands. Not door #1 pass 7. Not door #4.  
 **Emission:** `[GAP]`. No `src/`. Court door bytes untouched.
