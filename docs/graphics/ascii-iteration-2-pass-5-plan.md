@@ -1,6 +1,6 @@
 # Graphics ASCII — Iteration 2, Pass 5 PLAN
 
-**Status:** PLAN only. Not run. Iteration 2 open. Iteration 1 stays closed.  
+**Status:** EXECUTED — C6/C11 grain on `docs/graphics/graphic-c-ascii.md`. Iteration 2 remains open (pass 5 of 6). Iteration 1 stays closed. Emission `[GAP]`.  
 **Station:** graphics (HELD Grok-graphics).  
 **Object:** Graphic C.  
 **This pass:** C6 four families vs Graphic D types; C11 projection anti-model grain.  

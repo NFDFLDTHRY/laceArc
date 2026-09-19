@@ -2,7 +2,7 @@
 
 **Not Graphic C.** [`n-dimensional-relationships.png`](n-dimensional-relationships.png) is the source. This is an ASCII reading of how more dimensions present themselves and settles nothing the PNG does not.
 
-**Executed:** [i2p3](ascii-iteration-2-pass-3-plan.md) · [i2p4](ascii-iteration-2-pass-4-plan.md).  
+**Executed:** [i2p3](ascii-iteration-2-pass-3-plan.md) · [i2p4](ascii-iteration-2-pass-4-plan.md) · [i2p5](ascii-iteration-2-pass-5-plan.md).  
 **Station:** graphics.  
 **Store:** Graphic D. C is the N-D presentation reading of the same strand.  
 **Not this file:** Graphic A ASCII, Graphic B ASCII, D1 tape, Hands-manifest spine (`docs/systems-manifest-ascii.md`), HCC/Cup C*, `src/`, POINTER emission answers.
@@ -160,4 +160,61 @@ C11 has no constructive operator. C6 Role is view. Vs D stays `[GAP]`.
 | T3 | C11 anti-model; C6 vs D pointed |
 | T4 | Spine above this section left in place |
 
-Queued (later i2, not this pass): C6-vs-D grain; C mechanism map or i2 receipt.
+## Iteration 2 pass 5 — C6 / C11 grain
+
+Four families stay views. A flatten cannot write the array. G2 pointed, not filled.
+
+### C6 — four families, not four types
+
+Working names as bound on C. If a later pass reads different print on the PNG, the PNG wins.
+
+| Family on C6 | Kind of thing on C | On Graphic D as a type? | Collapse would look like |
+|---|---|---|---|
+| dictionary route | route / view | no | a DEFINITION row type |
+| document route | route / view | no | a DOCUMENT row type |
+| conversation route | route / view | no | a CONVERSATION row type |
+| provenance route | route / view | no | a PROVENANCE row type |
+
+```
+ C6 names                         D stores
+ --------                         --------
+ dictionary route   \
+ document route      }→           more WORD rows
+ conversation route  /            (POINTER rows only when that rule exists)
+ provenance route   /
+
+                                  types on D: WORD | POINTER only
+
+ family-as-entry-type             [X]
+ document-boundary-as-entry       [GAP]
+ how a family is labelled on D    [GAP]
+ G2 when / arity / adjacency      [GAP]
+```
+
+Families are names of participation. They are not array types.
+
+### C11 — projection is not Lace
+
+C11: a flattened picture is not the Lace and cannot write back as store. Kin of B11. B11’s table is not copied here.
+
+| Picture | Is Lace (the store)? | May write the array? | Collapse would look like |
+|---|---|---|---|
+| C2 1D sequence view | no | no | treat 1D as a lesser store |
+| C3 2D crossings view | no | no | write the flatten back |
+| C4 3D stars view | no | no | a Star table beside D |
+| C stacked planes D1–D4 | no | no | dimension columns on D |
+| a 2D node-edge graph | no | no | B11 / C11 as Core |
+| Graphic D 1D array | yes (the store) | yes (append only, by the operator) | — |
+
+Views do not write L. How a POINTER is emitted remains `[GAP]` (G2).
+
+## Iteration 2 pass 5 deltas
+
+| Ticket | Action |
+|---|---|
+| T1 | Four C6 families; type? = no |
+| T2 | C6↔D seam; family-as-type `[X]` |
+| T3 | C11 picture table; write-back `[X]` |
+| T4 | Label-how and G2 pointed, not filled |
+
+Queued (later i2, not this pass): C mechanism map or iteration-2 receipt.
