@@ -2,6 +2,6 @@ STATUS: HELD
 STATION: history
 OWNS: docs/history-recovered* docs/history/**
 AGENT: Grok-evidence
-BASE: 73bbca5b8b18a6fbf7142253799806db3b6edacc
-SINCE: 2026-09-19T21:18:56Z
-NOTE: Grok-evidence Pass 2 EXECUTED. Pass 3 PLAN only (maps handoff). A/B unapplied. Door #5 CLOSED. Not pass 8. Φ [GAP].
+BASE: fbc4e5ad17569a781c03a9189edffcfaafb02240
+SINCE: 2026-09-19T21:20:24Z
+NOTE: Grok-evidence Pass 3 EXECUTED handoff. A/B unapplied. Maps unclaimed. Door #5 CLOSED. Not pass 8. Φ [GAP].

@@ -1,6 +1,6 @@
 # Relationship evidence — Pass 3 plan
 
-**Status:** PLAN only. Not run.  
+**Status:** EXECUTED (handoff published). A/B still NOT_APPLIED. Maps unclaimed.  
 **Station:** history (HELD Grok-evidence).  
 **Object:** Pointable maps-handoff for proposals A/B after Pass 1+2. Read-only companion search. No companion edit.  
 **Parents:** [`relationship-evidence-pass-1-findings.md`](relationship-evidence-pass-1-findings.md) proposals A/B; [`relationship-evidence-pass-2-findings.md`](relationship-evidence-pass-2-findings.md) Q5 NARROW (Hands show the parts; companion does not exhibit the join).  
@@ -163,4 +163,11 @@ Release of history is not automatic.
 
 **Stations:** history HELD Grok-evidence. maps FREE. graphics FREE. law FREE. Door #5 CLOSED. Φ `[GAP]`.
 
-Shoe in hands. Pass 3 is a pointer to a door, not a walk through it.
+## 8. Execute receipt — 19 September 2026
+
+**Performed:** refresh/check at `fbc4e5ad17569a781c03a9189edffcfaafb02240`; companion blob still `2628df45`; search recorded in [`relationship-evidence-pass-3-handoff.md`](relationship-evidence-pass-3-handoff.md); join still missing; A/B loci named; maps left FREE.
+
+**Not performed:** maps claim; companion edit; Φ answers; Pass 4.
+
+Shoe in hands. Ticket closed as execute. Campaign hold remains until the human says otherwise.
+
