@@ -320,7 +320,7 @@ PDF is **PRESENT** (do not narrate absent). Pass 1 receipt (P1-R): `refs/local/w
 - Treat `exportToGPU` as identity merge / emission accept
 - Treat security / privacy / a11y text as Lace law / AGENTS rewrite
 - Treat broadcasting / Changes / algorithms as Lace append scheduler / Φ gate
-- Create `webnn-ascii-machinery.md` / Wave A panels (**deferred Pass 4+**) · create `webnn-mechanisms.md` (**Pass 3 lifted — see P3-M/P3-R**; do not reopen inventively)
+- ~~Create `webnn-ascii-machinery.md` / Wave A panels~~ (**Pass 4 did**) · ~~create `webnn-mechanisms.md`~~ (**Pass 3 did**; see P3-M/P3-R; do not reopen inventively)
 - Amend webgpu-* / wgsl-* / wasm-spec-3 products · law / graphics / systems-manifest / five-stakes / clock / hologram
 - Invent Core maps into five-stakes / reason-model
 - Add `src/` / Cargo.toml before emission acceptance
@@ -365,10 +365,11 @@ PDF is **PRESENT** (do not narrate absent). Pass 1 receipt (P1-R): `refs/local/w
 | **M-N8** Error / validation | P-N8 | B+H | PAGE H/X SILENT mesh | cite-only | validation ≠ Lace cut | `[GAP]` | KEEP-read · **SILENT-for-Lace-append** · **FORBID-as-emission-rule** | YES |
 | **M-N9** Security / privacy | P-N9 | G | **FM-Webnn6** · PAGE X · **FM-Webnn8** | ≠ WebGPU identity (§5.3); ≠ wasm64 | threat text ≠ Lace law | `[GAP]` | KEEP-read · **FORBID-as-Core-write** · **FORBID-as-WebGPU-conflation** | YES |
 
-**CONFLICT:** none. PAGE A/X remain mesh context (not Wave A cards). Pass 1–2 morals / FM-Webnn\* / D7 **stand** (not rewritten).  
+**CONFLICT:** none. PAGE A/X remain mesh context (not Wave A cards). Pass 1–2 morals / FM-Webnn\* / D7 **stand** (not rewritten).
+**Pass 4 ASCII panels P-N1…P-N9 → [`webnn-ascii-machinery.md`](webnn-ascii-machinery.md).**  
 **Companions:** webgpu-* (HOST/GPU · M-G\*) · wgsl-* (SHADER-LANG · M-S\*) · wasm-spec-3 (wasm64 · M-T\*) — **cite-only; not amended**.  
 **Projection/hologram / clock / law / graphics / systems-manifest / five-stakes / src / emission:** **not amended**.  
-**Emission:** `[GAP]` on every row. **Ascii:** deferred Pass 4+ (future **P-N1…P-N9** reserved by M-N\*).
+**Emission:** `[GAP]` on every row. **Ascii:** Pass 4 → [`webnn-ascii-machinery.md`](webnn-ascii-machinery.md) (**P-N1…P-N9**).
 
 ### P3-5S — Five-stakes
 
@@ -390,9 +391,53 @@ PDF is **PRESENT** (do not narrate absent). Pass 1 receipt (P1-R): `refs/local/w
 | Artifact B | P3-M mesh (9 rows) + this receipt |
 | Hard stamps | M-N1 FORBID-as-Lace-strand + FORBID-as-WebGPU-conflation · M-N2/M-N5 FORBID-as-Lace-strand / FORBID-as-Core-write · M-N3/M-N7 FORBID-as-Lace-store · M-N4 FORBID-as-Lace-WORD · M-N6 FORBID-as-emission-rule · M-N7 PROPOSAL-only + FORBID accept-GAP · M-N8 SILENT-for-Lace-append · M-N9 FORBID-as-Core-write · **D7** cross-link M-N2/M-N5/M-N6 |
 | T6 five-stakes | **skip** |
-| T7 ascii | **skip** (Pass 4+; future P-N\* reserved by M-N\*) |
+| T7 ascii | **done Pass 4** → [`webnn-ascii-machinery.md`](webnn-ascii-machinery.md) |
 | Amended | Core graphics · systems-manifest · five-stakes · src/ · webgpu-* · wgsl-* · wasm-spec-3 · clock · hologram · law · pointer-emission | **No** |
 | Pass 1–2 / FM-Webnn\* / D7 | **stand** (D6 mechanisms-deferred line annotated; no PAGE rewrite) |
+| Emission | still `[GAP]` — no POINTER when / arity / adjacency; no invented Φ |
+| PDF staged | **No** |
+| Push | **No** (ask before push) |
+
+---
+
+## Pass 4 — ASCII SOURCE MACHINERY (P-N1…P-N9) + P4-X + receipt (P4-R)
+
+**Status:** **EXECUTED** · agent `WebNN Pass 4 EXECUTE: ASCII P-N1…P-N9 + P4-X` · ~2026-09-18 22:45 PT · claim BASE `8a213ff` (= `origin/main` at rebase/refresh).
+
+### Artifact
+
+[`webnn-ascii-machinery.md`](webnn-ascii-machinery.md) — HOST-NN opening contract · stamp legend · **SOURCE MACHINERY overview** (count=1 · context→builder→operands→operators→build→dispatch→tensor/export→validation→security) · panels **P-N1…P-N9** 1:1 with **M-N1…M-N9** · cross-walk M↔P · **P4-X** rigor matrix.
+
+### P4-X — Rigor matrix (summary)
+
+| Block | Result |
+|---|---|
+| Panels P-N1…P-N9 (9) | **PASS** ×9 — Implements · Fence (Spec-only; no POINTER word) · Stamp · False-friend · Overview attach all Y |
+| Overview spine (10) | **PASS** ×10 — nine constructive nodes + forbidden Core/Φ/WebGPU/WGSL/wasm64 exit |
+| Special gates (13) | **PASS** ×13 — FM-Webnn1…9 / D7 / SILENT / no-POINTER-in-fence / no-invent-Φ |
+| FIX remaining | **0** |
+
+Hard stamps under fences: P-N1 FORBID-as-Lace-strand + FORBID-as-WebGPU-conflation + KEEP-read-as-host-NN-API · P-N2/P-N5 FORBID-as-Lace-strand + Core FORBIDs + **D7** · P-N3 FORBID-as-Lace-store · P-N4 FORBID-as-Lace-WORD + FORBID-as-WGSL-conflation · P-N6 FORBID-as-emission-rule + SILENT + **D7** · P-N7 FORBID-as-Lace-store + PROPOSAL-only + FORBID accept-GAP · P-N8 SILENT · P-N9 FORBID-as-Core-write + FORBID-as-WebGPU-conflation.
+
+### P4-R — Pass 4 receipt
+
+| Field | Value |
+|---|---|
+| Status | **EXECUTED** |
+| When | 2026-09-18 ~22:45 PT |
+| Station | clipboards · agent `WebNN Pass 4 EXECUTE: ASCII P-N1…P-N9 + P4-X` |
+| Plan | [webnn-pass-4-plan.md](webnn-pass-4-plan.md) (was HELD; now EXECUTED) |
+| Claim BASE | `8a213ff` (full `8a213ff3ee73928b52ed1ff7a34143297fc4a8a6` = `origin/main` after rebase) |
+| Hands skim | shoe → graphics A–D → systems-manifest → staking / law-why → AGENTS Implementation Law → pointer-emission DRAFT/`[GAP]` → clock/README + hologram (Shadow) → clock/wasm (different layer) → webgpu ascii/mechanisms (**cite-only**) → wgsl ascii/mechanisms (**cite-only**) → wasm-spec-3 banner (**cite-only**) → Pass 1–3 clipboard + M-N1…M-N9 → this plan → PDF gate |
+| PDF | **PRESENT** — `refs/local/webnn-crd-20260910.pdf` → `e11532183ed50d11e91c70881c59b805346b6607d41e82e7d52aca520df53fdc`; **353** pp.; text layer; PDF one-based; SHA match; gitignored; **never staged** |
+| Artifact | [`webnn-ascii-machinery.md`](webnn-ascii-machinery.md) · overview (**count=1**) + **P-N1…P-N9** + cross-walk + P4-X |
+| Algorithms | M-N* **unchanged** (cite only; panel cites → P-N*) |
+| P4-X | **PASS** × (9 panels + 10 overview + 13 special gates) · FIX=0 |
+| Fence audit | **no POINTER word** inside any diagram fence |
+| Amended | Core graphics · systems-manifest · five-stakes · src/ · webgpu-* · wgsl-* · wasm-spec-3 · clock · hologram · law · pointer-emission | **No** |
+| Pass 1–3 / FM-Webnn* / D7 / P3-M | **stand** (CONFIRM×9 · CONFLICT×0) |
+| Order Proposal | deferred **Pass 5** |
+| Deep diagram audit | deferred **Pass 6** |
 | Emission | still `[GAP]` — no POINTER when / arity / adjacency; no invented Φ |
 | PDF staged | **No** |
 | Push | **No** (ask before push) |

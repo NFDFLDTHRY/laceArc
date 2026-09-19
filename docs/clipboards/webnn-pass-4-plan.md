@@ -1,6 +1,6 @@
 # WebNN CRD 2026-09-10 — Pass 4 PLAN (HOST-NN ASCII source-machinery / Wave A P-N* + P4-X)
 
-**Status:** **HELD / NOT EXECUTED** · plan turn 2026-09-18 ~22:42 PT  
+**Status:** **EXECUTED** · plan turn 2026-09-18 ~22:42 PT · execute ~2026-09-18 22:45 PT  
 **Station:** clipboards (HELD `Grok-webnn-pass4-plan` · claim BASE `77b6be6` = `origin/main` at claim/refresh after ff)  
 **Tip at plan:** `77b6be6` (= `origin/main` after `git pull --ff-only`; prior claim `d744a70` superseded by graphics i2p2)  
 **Spec:** *Web Neural Network API* (WebNN) — **W3C Candidate Recommendation Draft, 10 September 2026** · editors Ningxin Hu, Dwayne Robinson (et al.)  
@@ -64,7 +64,7 @@ pull/ff → claim clipboards → Hands + host-NN mesh skim
 |  inside fences; stamps live UNDER fences.                            |
 |  FORBID-as-Core-write; NON-binding on Core/src/Phi.                  |
 |  No src/ until pointer-emission accepted.  One strand.               |
-|  Ascii file = execute only.  Status: HELD / NOT EXECUTED.            |
+|  Ascii file = execute only.  Status: EXECUTED (see execute receipt). |
 |  Emission [GAP] sealed.  Order Proposal = Pass 5. Audit = Pass 6.    |
 +======================================================================+
 ```
@@ -514,15 +514,38 @@ Fences stay Spec/host-NN-side; **no POINTER word inside fences**; stamps under f
 
 | Field | Value |
 |---|---|
-| Status (plan) | **HELD / NOT EXECUTED** |
+| Status (plan) | **HELD / NOT EXECUTED** (superseded) |
 | When (plan) | 2026-09-18 ~22:42 PT |
 | Station (plan) | clipboards · agent `Grok-webnn-pass4-plan` |
-| Claim BASE (plan) | `77b6be6` (= `origin/main` after refresh) |
+| Claim BASE (plan) | `77b6be6` (= `origin/main` after refresh; later rebased) |
 | Tip at plan | `77b6be6` |
 | Artifact created (plan) | this plan only |
-| Ascii created (plan) | **No** |
+| Ascii created (plan) | **No** (execute-only) |
 | Order Proposal | deferred **Pass 5** |
 | Deep diagram audit | deferred **Pass 6** |
 | Emission | `[GAP]` |
 | PDF staged | **No** |
+| Push | **No** |
+
+---
+
+## Execute receipt (Pass 4)
+
+| Field | Value |
+|---|---|
+| Status | **EXECUTED** |
+| When | 2026-09-18 ~22:45 PT |
+| Station | clipboards · agent `WebNN Pass 4 EXECUTE: ASCII P-N1…P-N9 + P4-X` |
+| Claim BASE | `8a213ff` (= `origin/main` after rebase/refresh) |
+| Tip at execute (pre-commit) | local tip after rebase of plan commits onto `8a213ff` |
+| Artifact | [`webnn-ascii-machinery.md`](webnn-ascii-machinery.md) · overview count=1 · **P-N1…P-N9** · P4-X all **PASS** |
+| Clipboard | Pass 4 receipt **P4-R** + P4-X summary |
+| Mechanisms | thin status + panel cites → **P-N***; algorithms unchanged |
+| P4-X | PASS × (9 panels + 10 overview + 13 special gates) · FIX=0 |
+| Fence audit | no POINTER word inside any diagram fence |
+| Order Proposal | deferred **Pass 5** |
+| Deep diagram audit | deferred **Pass 6** |
+| Emission | `[GAP]` |
+| PDF staged | **No** |
+| `src/` | **absent** |
 | Push | **No** |

@@ -1,13 +1,13 @@
 # WebNN CRD 2026-09-10 — mechanism cards (HOST-NN system procedures)
 
-**Status:** Pass 3 EXECUTED (Wave A **M-N1…M-N9**; P3-M mesh on clipboard). Ascii Wave A deferred Pass 4+ (**future P-N1…P-N9**). Algorithms unchanged. Emission `[GAP]`.  
+**Status:** Pass 3 EXECUTED (Wave A **M-N1…M-N9**; P3-M mesh on clipboard). Pass 4 ASCII: see [`webnn-ascii-machinery.md`](webnn-ascii-machinery.md) (**P-N1…P-N9**). Algorithms unchanged. Emission `[GAP]`.  
 **Source:** *Web Neural Network API* (WebNN) — **W3C Candidate Recommendation Draft, 10 September 2026**. Editors: Ningxin Hu, Dwayne Robinson (et al.).  
 **PDF:** `refs/local/webnn-crd-20260910.pdf` → attachment `e11532183ed50d11e91c70881c59b805346b6607d41e82e7d52aca520df53fdc` (**353** pp., text layer; **never git-add**). SHA-256 `e11532183ed50d11e91c70881c59b805346b6607d41e82e7d52aca520df53fdc`. PDF one-based primary.  
 **Sighting this pass:** `pdftotext -f N -l N -layout` on §7.1–7.5 Overview/Device/Operators/Task Source/Permissions · §8.2–8.3 createContext/MLContext/`dispatch`/`createTensor`/`exportToGPU`/`opSupportLimits` · §8.4–8.9 MLGraph/Operand/MLTensor/Builder/`build` · §3–5 Security/Privacy/§5.3 · §9 Algorithms · §11 Emulation · §14 Changes; Pass 1–2 pins reused.  
 **Companion:** [`webnn-clipboard.md`](webnn-clipboard.md) · plan [`webnn-pass-3-plan.md`](webnn-pass-3-plan.md) · Pass 2 **D7** (builder→build→dispatch miniature; cross-link from **M-N2 / M-N5 / M-N6**; do not rewrite) · [`pointer-emission.md`](../pointer-emission.md) = DRAFT/`[GAP]`.  
 **Not this file:** Lace Core ASCII = [`systems-manifest-ascii.md`](../systems-manifest-ascii.md) — **do not conflate**. **webgpu-*** **M-G\*** / FM-Wgpu\* = **HOST/GPU companion** — cite-only; different Spec. **wgsl-*** **M-S\*** / FM-Wgsl\* = **SHADER-LANG companion** — cite-only; different Spec. **wasm-spec-3** **M-T\*** / FM-W\* = **compile-target ISA** — cite-only; different layer.  
 **P3-M:** thin mechanism coherence mesh lives on [`webnn-clipboard.md`](webnn-clipboard.md) (9 rows · emission `[GAP]` every row).  
-**Ascii:** **absent** this pass — Pass 4+ (`webnn-ascii-machinery.md` · future **P-N\***).
+**Ascii:** Pass 4 → [`webnn-ascii-machinery.md`](webnn-ascii-machinery.md) (**P-N1…P-N9**).
 
 ```
 +======================================================================+
@@ -60,7 +60,7 @@ This file is **Shadow / Layer III documentation of CRD host-NN procedures**, not
 
 ---
 
-## Wave A — CRD constructive spine (blocking) — 1:1 with future P-N1…P-N9 (Pass 4+)
+## Wave A — CRD constructive spine (blocking) — 1:1 with P-N1…P-N9 (Pass 4 EXECUTED)
 
 ### M-N1 — Context / device selection (`createContext` · MLContext · backends / `opSupportLimits`)
 
@@ -78,7 +78,7 @@ This file is **Shadow / Layer III documentation of CRD host-NN procedures**, not
 | Worked miniature | Pass 2 **D7** step 1: obtain `MLContext` via `navigator.ml.createContext(…)` (KEEP-read; Context ↛ Graphic D — **FM-Webnn2** / **FM-Webnn6**) |
 | Lace stamp | **KEEP-read-as-host-NN-API**; **KEEP-read**; **FORBID-as-Lace-strand**; **FORBID-as-Core-write**; **FORBID-as-WebGPU-conflation** (`createContext(GPUDevice)` ≠ Device identity) |
 | Hands cite | Graphics A–D · systems-manifest (one store) · AGENTS Implementation Law · PAGE B |
-| Panel cite | **future P-N1** · PAGE **B** |
+| Panel cite | **P-N1** · PAGE **B** |
 | False friend | **FM-Webnn2** · **FM-Webnn6** |
 | Companion cite | webgpu-* cite-only — GPUDevice argument is **HOST/GPU companion** hook, not identity (**FM-Webnn6**); do not edit |
 | Projection / hologram cite | `clock/README.md` · `hologram/` — Shadow host-NN acquire only; glyphs ≠ schema |
@@ -117,7 +117,7 @@ This file is **Shadow / Layer III documentation of CRD host-NN procedures**, not
 | Worked miniature | **Pass 2 D7** steps 2–3 — `MLGraphBuilder(context)` → `input`/`constant`/ops (do not rewrite D7) |
 | Lace stamp | **KEEP-read**; **FORBID-as-Lace-strand**; **FORBID-as-Core-write** (builder ≠ Core constructor); **FORBID-as-Core** |
 | Hands cite | Graphics A–D · AGENTS Implementation Law · PAGE C · D7 |
-| Panel cite | **future P-N2** · PAGE **C** |
+| Panel cite | **P-N2** · PAGE **C** |
 | False friend | **FM-Webnn1** · **FM-Webnn9** |
 | Companion cite | webgpu-* / wgsl-* / wasm-spec-3 — cite-only; different Spec/layer |
 | Projection / hologram cite | Builder ≠ Graphic D factory; projection may later *cite* host-NN graph construct only |
@@ -155,7 +155,7 @@ This file is **Shadow / Layer III documentation of CRD host-NN procedures**, not
 | Worked miniature | D7 step 3 — `input`/`constant` declare edges (PAGE D) |
 | Lace stamp | **KEEP-read**; **FORBID-as-Lace-store** |
 | Hands cite | Piece 1/6 · Graphic D (one strand) · PAGE D |
-| Panel cite | **future P-N3** · PAGE **D** |
+| Panel cite | **P-N3** · PAGE **D** |
 | False friend | **FM-Webnn3** |
 | Companion cite | cite-only; operands ≠ GPUBuffer / WGSL types / wasm memory as Lace store |
 | Projection / hologram cite | Operand/tensor ≠ strand/append; may hold inference bytes for Shadow only |
@@ -193,7 +193,7 @@ This file is **Shadow / Layer III documentation of CRD host-NN procedures**, not
 | Worked miniature | §7.1 gemm/relu style: method creates operator + returns new `MLOperand` (PDF **21–22**) |
 | Lace stamp | **KEEP-read**; **FORBID-as-Lace-WORD**; **FORBID-as-Core-write**; **FORBID-as-WGSL-conflation** |
 | Hands cite | systems-manifest · PAGE E |
-| Panel cite | **future P-N4** · PAGE **E** |
+| Panel cite | **P-N4** · PAGE **E** |
 | False friend | **FM-Webnn5** · **FM-Webnn7** |
 | Companion cite | wgsl-* cite-only — operators ≠ shader entry points (**FM-Webnn7**); webgpu-* cite-only |
 | Projection / hologram cite | Op graph ≠ WORD; hologram may *cite* inference ops without becoming schema |
@@ -230,7 +230,7 @@ This file is **Shadow / Layer III documentation of CRD host-NN procedures**, not
 | Worked miniature | **Pass 2 D7** step 4 — `graph = await builder.build(outputs)` (do not rewrite D7) |
 | Lace stamp | **KEEP-read**; **FORBID-as-Lace-strand** (MLGraph ≠ strand); **FORBID-as-Core-write**; **FORBID-as-Core** |
 | Hands cite | Graphics A–D · PAGE C · D7 |
-| Panel cite | **future P-N5** · PAGE **C** |
+| Panel cite | **P-N5** · PAGE **C** |
 | False friend | **FM-Webnn1** · **FM-Webnn9** |
 | Companion cite | cite-only; MLGraph ≠ GPU pipeline / WGSL module / wasm module |
 | Projection / hologram cite | Compiled graph ≠ lace cord; Shadow inference artifact only |
@@ -268,7 +268,7 @@ This file is **Shadow / Layer III documentation of CRD host-NN procedures**, not
 | Worked miniature | **Pass 2 D7** step 5 — `context.dispatch(graph, inputs, outputs)` (do not rewrite D7) |
 | Lace stamp | **KEEP-read**; **FORBID-as-emission-rule**; **SILENT-for-Lace-append** (no completion signal ↛ Φ gate) |
 | Hands cite | AGENTS Implementation Law · pointer-emission `[GAP]` · PAGE F · D7 |
-| Panel cite | **future P-N6** · PAGE **F** |
+| Panel cite | **P-N6** · PAGE **F** |
 | False friend | **FM-Webnn4** |
 | Companion cite | cite-only; dispatch ≠ `queue.submit` / draw / wasm instantiate as emission |
 | Projection / hologram cite | dispatch ≠ Φ; projection may schedule inference without accepting emission |
@@ -306,7 +306,7 @@ This file is **Shadow / Layer III documentation of CRD host-NN procedures**, not
 | Worked miniature | createTensor → write/read path (PDF **35** example sketch); export bridge cite only (D7 choice (b) deferred — do not invent) |
 | Lace stamp | **KEEP-read**; **FORBID-as-Lace-store**; **PROPOSAL-only** (export bridge); **FORBID-as-WebGPU-conflation**; **FORBID** accept-GAP / **FORBID fill-GAP** |
 | Hands cite | systems-manifest (one store) · PAGE D · D1/D6 |
-| Panel cite | **future P-N7** · PAGE **D** |
+| Panel cite | **P-N7** · PAGE **D** |
 | False friend | **FM-Webnn3** · **FM-Webnn6** · **FM-Webnn9** |
 | Companion cite | webgpu-* cite-only — returned `GPUBuffer` is HOST/GPU companion object, not WebNN=WebGPU merge (**FM-Wgpu*** live there; do not edit) |
 | Projection / hologram cite | export ≠ identity merge; calling/exporting does **not** accept `pointer-emission.md` |
@@ -343,7 +343,7 @@ This file is **Shadow / Layer III documentation of CRD host-NN procedures**, not
 | Worked miniature | `dispatch` descriptor validation false → TypeError (PDF **32–33**); `build` operand validation (PDF **67–68**) |
 | Lace stamp | **KEEP-read**; **SILENT-for-Lace-append**; **FORBID-as-emission-rule** (validation ≠ Φ gate / Lace cut) |
 | Hands cite | PAGE H · PAGE X · AGENTS Implementation Law |
-| Panel cite | **future P-N8** · PAGE **B+H** |
+| Panel cite | **P-N8** · PAGE **B+H** |
 | False friend | PAGE H/X SILENT mesh (validation ↛ Lace cut); FM rows as apt |
 | Companion cite | cite-only; ≠ WebGPU device-lost as Lace cut (webgpu M-G9 different shelf) |
 | Projection / hologram cite | Spec fail paths ≠ Lace append scheduler |
@@ -381,7 +381,7 @@ This file is **Shadow / Layer III documentation of CRD host-NN procedures**, not
 | Worked miniature | createContext rejects with `SecurityError` when not allowed to use `"webnn"` (PDF **28–29**) |
 | Lace stamp | **KEEP-read**; **FORBID-as-Core-write** (≠ Lace law / AGENTS); **FORBID-as-WebGPU-conflation** (§5.3 ≠ identity merge) |
 | Hands cite | PAGE G · PAGE X · AGENTS Implementation Law (do not rewrite from CRD) |
-| Panel cite | **future P-N9** · PAGE **G** |
+| Panel cite | **P-N9** · PAGE **G** |
 | False friend | **FM-Webnn6** · PAGE X · **FM-Webnn8** (≠ wasm64) |
 | Companion cite | webgpu-* cite-only for §5.3 / GPUDevice security notes; wasm-spec-3 cite-only (**FM-Webnn8**) |
 | Projection / hologram cite | Threat text ≠ Lace law; Shadow embeds still under web platform gates |
@@ -423,4 +423,4 @@ This file is **Shadow / Layer III documentation of CRD host-NN procedures**, not
 | wasm-spec-3 mechanisms | wasm64 M-T\* — **cite-only; do not edit** |
 | [`pointer-emission.md`](../pointer-emission.md) | Still DRAFT / `[GAP]` |
 
-**Steward refuse (shoe in hands):** MLGraph ≠ strand · MLContext ≠ Graphic D · MLTensor ≠ store · `dispatch` ≠ Φ · operators ≠ WORD · builder ≠ Core constructor · WebNN ≠ WebGPU Device/Queue · WebNN ≠ WGSL · WebNN ≠ wasm64 · `exportToGPU` ≠ accept emission · validation ≠ Lace cut · security text ≠ Lace law. Emission `[GAP]`. No `src/`. No ascii until Pass 4+.
+**Steward refuse (shoe in hands):** MLGraph ≠ strand · MLContext ≠ Graphic D · MLTensor ≠ store · `dispatch` ≠ Φ · operators ≠ WORD · builder ≠ Core constructor · WebNN ≠ WebGPU Device/Queue · WebNN ≠ WGSL · WebNN ≠ wasm64 · `exportToGPU` ≠ accept emission · validation ≠ Lace cut · security text ≠ Lace law. Emission `[GAP]`. No `src/`. Ascii: [`webnn-ascii-machinery.md`](webnn-ascii-machinery.md).
