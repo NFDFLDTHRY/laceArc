@@ -194,3 +194,46 @@ Under this ruling `centimetre` is a defect whichever way it arose, and a documen
 The denominator counts lines carrying a **numbered panel token**. Citations that name a graphic region instead — `A header`, `D footer`, `D Key properties`, `C header` — are outside it. Eleven such references exist; most share a line with a numbered cite and are covered anyway, but roughly four are not. **2c-1 is one of them**: the misquoted header sits on line 187, which carries no panel number and was never in the 57.
 
 **So the finding of this sub-pass was found outside its own coverage metric.** Recorded plainly, because a coverage fraction that cannot see its own best finding is worth knowing about before iteration 2 reuses it.
+
+---
+
+## 2d — Graphic B, `mechanisms-in-3d.png`
+
+**Coverage: 46 of 46 cite-bearing lines. Complete.** Read at `72fa281` against the PNG opened directly. **The resync's Hands re-read for Graphic B is discharged here — the last one outstanding.**
+
+| Document | Lines | `MATCH` | Findings |
+|---|---|---|---|
+| `systems-manifest.md` | 20 | 20 | 0 |
+| `graphics-close-reading.md` | 5 | 5 | 0 |
+| `atomic-primitives-map.md` | 21 | 21 | 0 |
+| | **46** | **46** | **0** |
+
+### No defects, no false positives. The cleanest sub-pass of the four.
+
+Graphic B carries twelve panels, matching the declared `B1`–`B12`. Several citations are the panel's own words:
+
+- `systems-manifest.md:145` — "A star has internal traffic (B9): incoming passes from many contexts" against **B9's label, "Incoming passes (from many contexts)"**
+- `systems-manifest.md:65` — "punch-card input" — **B6's bullet verbatim**
+- `systems-manifest.md:205` — "not merely attach to the outside (B7)" against **B7's "A new occurrence doesn't just attach to the outside"**
+- `systems-manifest.md:274` — "B9 Star inside star traffic" — **the heading verbatim**
+- `systems-manifest.md:268` — "Anti-model panels (B10)" — B10 is exactly four crossed-out anti-models
+
+### One observation, not a defect: the strongest sentence in the graphics is uncited
+
+**B12's eighth bullet reads "No collapse, no second store, no separate mechanisms."**
+
+That is the repository's central prohibition, printed in the source of record in those words. `atomic-primitives-map.md:32` grounds K4 — *Keep one authoritative structure* — on `B10` and `D header and key properties`, which do support it. **But the sentence that says it outright is on B12, and no document cites B12 for it.**
+
+Not a finding; every cite that exists is correct. Recorded because a law this repository repeats constantly has a verbatim source that nothing points at.
+
+### 2a-2 now rests on three graphics
+
+B prints "1. Continuous wire" through "12. Governing rule". **Every graphic read in this pass prints its panel numbers.** The close reading's "they are not printed in the graphics" is wrong for D, C and B alike — only the letter prefix is assigned.
+
+### A fourth source typo
+
+B10's green panel reads **"Itt is a continuously growing 3D structure."**
+
+With Graphic A's three, that is four typographical errors across the two prose-heavy graphics. D's table and C's bullets carry none. **The transcription ruling from 2c stands and now has more to bite on** — reproduce, mark where confusing, never silently correct.
+
+B12 and C12 both print the governing sentence ending **`Continue.`**, against A13's `Continure.` — two graphics against one, which is what made A13's a typo rather than a variant.
