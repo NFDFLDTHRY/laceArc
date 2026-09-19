@@ -51,4 +51,6 @@ POINTER emission stays `[GAP]`. No `src/`.
 
 [Pass 5 drift](relationship-evidence-pass-5-drift.md): **NO-DRIFT.** Companion still `2628df45`. A/B unapplied. Maps FREE. Hold remains until free.
 
-[Pass 6 plan](relationship-evidence-pass-6-plan.md): **PLAN only.** 6/6 campaign receipt. Stop. Leftovers are maps / Φ / other agent — not Pass 7. Not pass 8. Not door #5. Φ `[GAP]`.
+[Pass 6 plan](relationship-evidence-pass-6-plan.md): **EXECUTED.** 6/6 stop. Leftovers are maps / Φ / other agent — not Pass 7. Not pass 8. Not door #5. Φ `[GAP]`.
+
+[Campaign receipt](relationship-evidence-receipt.md): **CLOSED 6/6 on history.** Companion still `2628df45`. A/B unapplied. Maps FREE. Hold remains until free.

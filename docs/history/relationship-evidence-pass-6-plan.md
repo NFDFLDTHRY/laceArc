@@ -1,6 +1,6 @@
 # Relationship evidence — Pass 6 plan
 
-**Status:** PLAN only. Not run.  
+**Status:** EXECUTED. Campaign CLOSED 6/6 on history. A/B still NOT_APPLIED. Maps unclaimed. Hold remains.  
 **Station:** history (HELD Grok-evidence).  
 **Object:** 6/6 campaign receipt. Stop. Leftovers leave this station.  
 **Parents:** Pass 1 findings; Pass 2 findings; Pass 3 handoff; Pass 4 close; Pass 5 NO-DRIFT.  
@@ -127,4 +127,11 @@ Write [`relationship-evidence-receipt.md`](relationship-evidence-receipt.md). St
 
 **Stations:** history HELD Grok-evidence. maps FREE. Door #5 CLOSED. Φ `[GAP]`.
 
-Shoe in hands. Six then stop. The captions wait on the other door.
+## 8. Execute receipt — 19 September 2026
+
+**Performed:** refresh/check at `20e75576ce8744e281b0ac14973f7d69a456d3dc`; companion still `2628df45`; maps FREE; wrote [`relationship-evidence-receipt.md`](relationship-evidence-receipt.md) CLOSED 6/6; no Pass 7 file; no release.
+
+**Not performed:** maps claim; A/B apply; Φ answers; Pass 7.
+
+Shoe in hands. Ticket closed as execute. Campaign hold remains until the human says free.
+
