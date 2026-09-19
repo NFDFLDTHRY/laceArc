@@ -2,6 +2,6 @@ STATUS: HELD
 STATION: gearing-meta
 OWNS: docs/gearing/*.md docs/gearing/*.sh docs/gearing/RESYNC.md (not contracts-*.js)
 AGENT: Grok-gearing
-BASE: b16c2b93d300bb13b1b9fa281773a8afa07c0c36
-SINCE: 2026-09-19T14:19:43Z
-NOTE: Quiet door #8 pass 4 EXECUTED. Walk on quiet-door-8-ascii.md. Next pass 5 seam. Door #7 CLOSED. Φ [GAP].
+BASE: 7ecac776c1c045e35a53e46427582fee438c1dc7
+SINCE: 2026-09-19T14:23:58Z
+NOTE: Quiet door #8 pass 5 PLAN. Pass 1–4 EXECUTED. Seam. Door+HTML+JS untouched. Door #7 CLOSED. Φ [GAP].
