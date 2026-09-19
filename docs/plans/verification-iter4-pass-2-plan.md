@@ -1,6 +1,6 @@
 # Verification iteration 4, pass 2 — reading the unreachable
 
-**Status:** `[PLAN]`. Execution NOT_RUN. **Station:** maps for this plan and its record. **Read-only elsewhere.**
+**Status:** `[PLAN]`. **EXECUTED** — [the record](verification-iter4-pass-2-findings.md). Three structures; four rows reconnect thirty-six files. **Station:** maps for this plan and its record. **Read-only elsewhere.**
 **Emission:** `[GAP]`. No `src/`. **Pinned at `610d680`.**
 **Iteration:** [iteration 4](verification-iteration-4-plan.md), pass 2 of six. Pass 1 EXECUTED and completed.
 

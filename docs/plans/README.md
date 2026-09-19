@@ -45,6 +45,7 @@
 | [verification-iteration-3-receipt.md](verification-iteration-3-receipt.md) | **iteration 3 receipt.** The queue collapsed to zero: all eleven were receipts, not citations. The tree has no citation rot |
 | [verification-iteration-4-plan.md](verification-iteration-4-plan.md) | `[PROPOSAL]` iteration 4: **the state of the tree.** Pass 1 executed — every file owned, 28% unreachable from the court door |
 | [verification-iter4-pass-2-plan.md](verification-iter4-pass-2-plan.md) | `[PLAN]` iteration 4 pass 2: the clipboards door names five campaigns and its shelf holds nine |
+| [verification-iter4-pass-2-findings.md](verification-iter4-pass-2-findings.md) | pass 2 record. Three structures, not one: a 36-file island, a 32-file cross-shelf island, 30 singletons |
 | [restructure-plan.md](restructure-plan.md) | `[PROPOSAL]` coherence of the whole tree: twelve measured findings, eight phases, one station per commit; supersedes the defrag plan as filing plan of record |
 
 Sub-shelves: [fixtures/](fixtures/README.md) sealed golden IR · [tools/](tools/README.md) host validator.
