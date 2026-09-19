@@ -1,6 +1,6 @@
 # WebAssembly Spec 3.0 — Pass 2 PLAN (leftovers / failure modes / target coherence)
 
-**Status:** **HELD / NOT EXECUTED** — plan only (2026-09-18 ~19:58 PT). Emission still `[GAP]`.  
+**Status:** **EXECUTED** (2026-09-18 ~20:04 PT). Emission still `[GAP]`.  
 **Station:** clipboards (HELD `wasm-spec-3.0 Pass 2 PLAN only`)  
 **Base at plan:** claim BASE `3e64996` (= `origin/main`); local tip may be ahead (Pass 1 EXECUTED ~`6ce0948` · station release ~`b866fef`). Refresh `git pull --ff-only` before any execute.  
 **Spec:** WebAssembly Specification **Release 3.0** (2026-09-11) · editor Andreas Rossberg / W3C CG  
@@ -46,7 +46,7 @@ pull/ff → claim clipboards → Hands skim (target mesh)
 |  WASM ops = TARGET semantics.  Do NOT invent POINTER emission / Phi.   |
 |  Do NOT import WASM store/memory/table/stack as Lace's 1D strand.      |
 |  Zero crates.io / foreign deps.  No src/ until pointer-emission accepted.|
-|  Status this commit: HELD / NOT EXECUTED — plan file only.             |
+|  Status this commit: EXECUTED — D1–D6 (+ D7) on clipboard.             |
 +======================================================================+
 ```
 
@@ -369,7 +369,7 @@ Instantiate is not Core birth.
 
 | Field | Value |
 |---|---|
-| Status | **HELD / NOT EXECUTED** (plan only) |
+| Status | **EXECUTED** (execute turn) |
 | When | 2026-09-18 ~19:58 PT |
 | Agent | `wasm-spec-3.0 Pass 2 PLAN only` |
 | Product | this plan file only |
@@ -383,13 +383,13 @@ Instantiate is not Core birth.
 
 | Field | Value |
 |---|---|
-| Status | _pending_ |
-| When | |
-| Agent | |
-| Product | D1–D6 (+ D7?) on `wasm-spec-3-clipboard.md` |
-| T5 five-stakes | skip (expected) |
-| T7 ascii | skip / stamp-tighten (circle) |
-| FM-W1…W9 | |
-| Amended map/law/graphics/src | No (required) |
-| PDF staged | No (required) |
-| Emission | `[GAP]` (required) |
+| Status | **EXECUTED** |
+| When | 2026-09-18 ~20:04 PT |
+| Agent | `wasm-spec-3.0 Pass 2 EXECUTE` |
+| Product | D1–D6 (+ D7 binary-section decode) on `wasm-spec-3-clipboard.md` |
+| T5 five-stakes | **skip** |
+| T7 ascii | **skip** — P-T1…P-T9 stamps stand |
+| FM-W1…W9 | all pinned (W1 mem≠strand · W2 table≠star · W3 stack≠append · W4 br≠Φ · W5 validate≠admit · W6 wat≠authority · W7 host≠GAP · W8 trap≠cut · W9 instantiate≠Core birth) |
+| Amended map/law/graphics/src | **No** |
+| PDF staged | **No** |
+| Emission | `[GAP]` |
