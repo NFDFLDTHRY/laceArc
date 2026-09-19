@@ -1,7 +1,7 @@
-STATUS: HELD
+STATUS: FREE
 STATION: clipboards
 OWNS: docs/clipboards/**
-AGENT: reference-Mapper
-BASE: 91b8087e22ffe2b1610af9551ffab1244044dc30
-SINCE: 2026-09-19T03:38:44Z
+AGENT: -
+BASE: -
+SINCE: -
 NOTE: wasm-spec-3 Pass 6 PLAN rebuild (wasm64 seal); HELD/NOT EXECUTED
