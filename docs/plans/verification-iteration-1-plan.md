@@ -1,6 +1,6 @@
 # Verification — iteration 1
 
-**Status:** `[PROPOSAL]` for passes 2–6. **Pass 1 EXECUTED** at `810d200`. One station per commit, each pass waiting on its own go.
+**Status:** **CLOSED.** Passes 1–4 and 6 EXECUTED; pass 5 is thirteen human rulings, recorded and open. [The receipt](verification-iteration-1-receipt.md) is pinned at `b6170bf`.
 **Station:** maps. **Emission:** `[GAP]`. No `src/`.
 **Previous iteration:** [the restructure](restructure-plan.md), iteration 0, phases 0–6 complete but for `5-pre`.
 
