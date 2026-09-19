@@ -1,12 +1,13 @@
 # RESYNC — Pass 1 PLAN
 
-**Status:** HELD / NOT EXECUTED. Plan only.
+**Status:** EXECUTED at `74881b1` (claim BASE; clear commit follows).
 **Station:** gearing-meta.
 **Agent:** Grok-resync-p1.
-**Claim BASE:** `a6c36e7d7801dfcdbb2ab151519ca53326c32235`.
+**Plan BASE:** `a6c36e7d7801dfcdbb2ab151519ca53326c32235`.
+**Execute BASE:** `74881b1bc64a032c7b125e69c7de6a3507afb62e`.
 **Emission:** `[GAP]`. No `src/`. Renderer stays frozen. Hands stay Hands.
 
-This plans one steward act on the stuck FIRED signal. It does not clear. It does not fire again. It does not open Core.
+Human said proceed. Discharge chosen: Hands-then-Shadow re-read recorded, then `resync.sh clear`, CLEARED_BY corrected by hand.
 
 ```
 pull/ff → claim gearing-meta
@@ -104,3 +105,18 @@ No third file. No `src/`. No second fire.
 - A pass-2 list inside this file.
 
 Shoe in hands. Then fetch. Then, only if authorized, the one act in §4.
+
+---
+
+## 6. Execute receipt
+
+Authorized by the human: "Proceed with pass 1."
+
+Hands this tick: `docs/graphics/README.md` (A–D still source; D still the store; hologram not a fifth graphic); four PNGs present; `docs/law-why-these-documents.md` LIVE LAW header; existence≠acceptance still unresolved for the human; `docs/systems-manifest.md` overview (one strand, D only store). No `src/`.
+
+Shadow this tick: `docs/clock/README.md` (holder, not Graphic D); `docs/hologram/README.md` (not Graphics A–D).
+
+`./docs/gearing/resync.sh clear` at 2026-09-19T04:05:47Z. `CLEARED_BY` corrected from hardcoded "LaceArc (steward)" to `Grok-resync-p1`. ASCII diagram unedited. `resync.sh` body unedited. Renderer/Core/emission not opened.
+
+No pass 2 from this file.
+
