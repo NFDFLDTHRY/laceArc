@@ -4,7 +4,8 @@
 
 | File | Job |
 |---|---|
-| [math-execution-wasm-crosswalk-pass-1-plan.md](math-execution-wasm-crosswalk-pass-1-plan.md) | `[PLAN]` Pass 1: math-execution × WASM Spec 3.0 **problem map** (compile-target Shadow only); Φ `[GAP]`; math-exec never cited WASM |
+| [math-execution-wasm-crosswalk-pass-1.md](math-execution-wasm-crosswalk-pass-1.md) | **EXECUTED** math-execution × WASM Spec 3.0 **problem map**; sealed stack never cited WASM; READY-PARTIAL-CROSSWALK ∧ BLOCKED-BRIDGE-COMPLETE; Φ `[GAP]` |
+| [math-execution-wasm-crosswalk-pass-1-plan.md](math-execution-wasm-crosswalk-pass-1-plan.md) | `[PLAN]` Pass 1 (executed): problem map → [`math-execution-wasm-crosswalk-pass-1.md`](math-execution-wasm-crosswalk-pass-1.md); Φ `[GAP]` |
 | [../math-execution-model-pass-6-arrival.md](../math-execution-model-pass-6-arrival.md) | **EXECUTED** Pass 6 Contract II **Arrival** reading (thin feed; zero own store); Φ `[GAP]`; G1 open; not an emitter |
 | [math-execution-model-pass-6-plan.md](math-execution-model-pass-6-plan.md) | `[PLAN]` Pass 6 (executed): Arrival reading → [`../math-execution-model-pass-6-arrival.md`](../math-execution-model-pass-6-arrival.md); Φ `[GAP]`; G1 open |
 | [../math-execution-model-pass-5-projections.md](../math-execution-model-pass-5-projections.md) | **EXECUTED** Pass 5 Graphics A–C **projection readings** under Pass 2 π / Contract III; Φ `[GAP]`; not an emitter |
