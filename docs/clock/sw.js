@@ -1,5 +1,5 @@
 /* Layer III cache. HTML is network-first so githack main can move. */
-const CACHE = "lace-iii-i1";
+const CACHE = "lace-iii-i1p2";
 const PRE = [
   "../hologram/clockwork-view-lattice.jpg",
   "../hologram/clockwork-view-traces.jpg",

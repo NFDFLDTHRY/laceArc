@@ -11,9 +11,11 @@
 <style>
 :root{--bg:#05070c;--ink:#e6eef6;--dim:#7a8a9c;--line:rgba(62,200,255,.22);--cyan:#3ec8ff}
 *{box-sizing:border-box}
-html,body{margin:0;min-height:100dvh;height:100%;background:#05070c url("../hologram/clockwork-view-lattice.jpg") center/cover no-repeat;color:var(--ink);font:13px/1.4 ui-sans-serif,system-ui,sans-serif;overflow:hidden}
+html,body{margin:0;min-height:100dvh;height:100%;background:#05070c;color:var(--ink);font:13px/1.4 ui-sans-serif,system-ui,sans-serif;overflow:hidden}
+body.ref{background:#05070c url("../hologram/clockwork-view-lattice.jpg") center/cover no-repeat}
 #c{position:fixed;inset:0;width:100%;height:100dvh;display:block;z-index:0}
-#fallback{position:fixed;inset:0;z-index:1;background:#05070c url("../hologram/clockwork-view-lattice.jpg") center/cover no-repeat}
+#fallback{position:fixed;inset:0;z-index:1;display:none;background:#05070c}
+body.ref #fallback{display:block}
 #fallback img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity .35s}
 #fallback img.on{opacity:1}
 #fallback .why{position:absolute;left:10px;bottom:64px;color:#7a8a9c;font-size:11px;max-width:90%}
@@ -46,13 +48,14 @@ aside[hidden]{display:none}
 </div>
 <div class="hud">
   <header class="hit">
-    <h1>LAYER III · i1 · D1 TIME</h1>
+    <h1>LAYER III · i1p2 · SHADER LATTICE</h1>
     <p>Install on githack <code>main</code>, not a SHA. Audit ticks stay SHA-pinned. Cubes are glyphs. No emitter. [GAP]</p>
   </header>
   <div class="modes hit">
     <button type="button" class="on" data-mode="core">Core time</button>
     <button type="button" data-mode="ascii">ASCII</button>
     <button type="button" data-mode="holder">Holder doors</button>
+    <button type="button" id="refbtn">REF</button>
   </div>
   <aside id="ascii" hidden>impulse arrival
 pallet  append
@@ -70,7 +73,7 @@ holder  outside this box</aside>
     <button type="button" id="play">pause</button>
     <input id="t" type="range" min="0" max="10" step="0.02" value="0"/>
     <span id="phase">t=0000</span>
-    <span class="stamp">i1</span>
+    <span class="stamp">i1p2</span>
     <span class="stamp" id="nnstamp">WebNN ?</span>
     <span class="stamp" id="pwastamp">PWA ?</span>
     <span class="stamp">glyphs ≠ schema</span>
@@ -172,6 +175,15 @@ struct VSOut { @builtin(position) p: vec4<f32>, @location(0) wpos: vec3<f32>, @l
   return o;
 }
 @fragment fn fs(i: VSOut) -> @location(0) vec4<f32> {
+  if (i.born < 0.0) {
+    let gx = abs(fract(i.wpos.x * 0.85) - 0.5);
+    let gz = abs(fract(i.wpos.z * 0.85) - 0.5);
+    let line = 1.0 - smoothstep(0.02, 0.045, min(gx, gz));
+    let hot = fract(sin(dot(floor(i.wpos.xz * 0.85), vec2<f32>(12.1, 7.3))) * 43758.5);
+    var rgb = vec3<f32>(0.02, 0.05, 0.08) + vec3<f32>(0.05, 0.35, 0.55) * line;
+    rgb += vec3<f32>(0.55, 0.12, 0.04) * step(0.92, hot) * 0.45;
+    return vec4<f32>(rgb, 1.0);
+  }
   let appear = smoothstep(i.born - 0.15, i.born + 0.05, u.t.x);
   if (appear < 0.02) { discard; }
   let L = normalize(vec3<f32>(0.25, 1.0, 0.35));
@@ -181,7 +193,7 @@ struct VSOut { @builtin(position) p: vec4<f32>, @location(0) wpos: vec3<f32>, @l
   let diff = max(dot(N, L), 0.08);
   let spec = pow(max(dot(reflect(-L, N), V), 0.0), 48.0);
   let hash = fract(sin(dot(i.wpos.xz, vec2<f32>(12.99, 78.23))) * 43758.5);
-  let rgb = i.col * (0.45 + 0.75 * diff);
+  var rgb = i.col * (0.45 + 0.75 * diff);
   rgb += i.col * fres * 0.85;
   rgb += vec3<f32>(spec) * 0.65;
   if (i.col.g > 0.7 && i.col.r < 0.4) {
@@ -267,9 +279,14 @@ document.getElementById("play").onclick=()=>{
   document.getElementById("play").textContent=playing?"pause":"play";
 };
 tEl.oninput=()=>{ tVal=+tEl.value; playing=false; document.getElementById("play").textContent="play"; showLook(tVal); };
+document.getElementById("refbtn").onclick=()=>{
+  document.body.classList.toggle("ref");
+  document.getElementById("refbtn").classList.toggle("on");
+};
 document.querySelectorAll(".modes button").forEach(btn=>{
   btn.onclick=()=>{
-    document.querySelectorAll(".modes button").forEach(b=>b.classList.toggle("on",b===btn));
+    if(btn.id==="refbtn") return;
+    document.querySelectorAll(".modes button[data-mode]").forEach(b=>b.classList.toggle("on",b===btn));
     document.getElementById("ascii").hidden = btn.dataset.mode!=="ascii";
     document.getElementById("holder").hidden = btn.dataset.mode!=="holder";
   };
@@ -357,7 +374,7 @@ async function main(){
     device.queue.writeBuffer(uni,0,ub);
     const enc=device.createCommandEncoder();
     const pass=enc.beginRenderPass({
-      colorAttachments:[{view:ctx.getCurrentTexture().createView(),clearValue:{r:0,g:0,b:0,a:0},loadOp:"clear",storeOp:"store"}],
+      colorAttachments:[{view:ctx.getCurrentTexture().createView(),clearValue:{r:0.02,g:0.03,b:0.05,a:1},loadOp:"clear",storeOp:"store"}],
       depthStencilAttachment:{view:depth.createView(),depthClearValue:1,depthLoadOp:"clear",depthStoreOp:"store"}
     });
     pass.setPipeline(pipe); pass.setBindGroup(0,bg);
