@@ -1,6 +1,6 @@
 # Projection iteration 4 / pass 1 plan — floor back, see into the cube
 
-**Status:** PLAN. Not executed. Emission `[GAP]`.  
+**Status:** EXECUTED. Emission `[GAP]`. Title `i4p1`. Resume always reboots GPU. Scene cached. Glass rim. Floor raised.  
 **Station:** hologram  
 **Closes iter3.** Persist grant and second-load reboot stay frozen.  
 **Evidence:** `i3p6` shots `t=0002 PTR`, `t=0007 PTR`.  

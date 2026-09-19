@@ -55,7 +55,7 @@ function bake(){
       N.push(g.n[i],g.n[i+1],g.n[i+2]); C.push(...col); B.push(born);
     }
   }
-  const shell=cube(0.50), core=cube(0.20), halo=cube(0.28), ball=sphere(0.62,20);
+  const shell=cube(0.50), core=cube(0.32), halo=cube(0.38), ball=sphere(0.62,20);
   for(const r of D1){
     const off=posOf(r.i);
     if(r.k==="WORD"){

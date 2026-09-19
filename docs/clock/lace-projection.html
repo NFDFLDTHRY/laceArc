@@ -57,7 +57,7 @@ aside[hidden]{display:none}
 </div>
 <div class="hud">
   <header class="hit">
-    <h1>LAYER III · i3p6 · RAWCDN SHA</h1>
+    <h1>LAYER III · i4p1 · RAWCDN SHA</h1>
     <p>Install this URL only if it is <code>rawcdn.githack.com</code> + a full SHA. Floating <code>main</code> is preview. Cubes are glyphs. No emitter. [GAP]</p>
   </header>
   <div class="modes hit">
@@ -82,7 +82,7 @@ aside[hidden]{display:none}
     <div class="row">
       <input id="t" type="range" min="0" max="10" step="0.02" value="0"/>
       <span id="phase">t=0000</span>
-      <span class="stamp">i3p6</span>
+      <span class="stamp">i4p1</span>
       <span class="stamp">A17</span>
       <span class="stamp" id="gpustamp">GPU ?</span>
       <span class="stamp" id="szstamp">?x?</span>
@@ -211,9 +211,9 @@ struct VSOut { @builtin(position) p: vec4<f32>, @location(0) wpos: vec3<f32>, @l
     let well = 0.45 + 0.55 * hash;
     let crack = step(0.93, fract(sin(dot(cell, vec2<f32>(3.7, 9.1))) * 6123.2));
     let tick = step(0.97, fract(sin(dot(cell, vec2<f32>(11.1, 4.7))) * 9123.4));
-    var rgb = vec3<f32>(0.025, 0.045, 0.07) * well;
-    rgb += vec3<f32>(0.07, 0.38, 0.48) * coarse * 0.42;
-    rgb += vec3<f32>(0.10, 0.48, 0.55) * fine * 0.22;
+    var rgb = vec3<f32>(0.04, 0.08, 0.11) * well;
+    rgb += vec3<f32>(0.12, 0.55, 0.68) * coarse * 0.75;
+    rgb += vec3<f32>(0.14, 0.62, 0.70) * fine * 0.35;
     rgb += vec3<f32>(0.15, 0.08, 0.04) * crack * 0.25;
     rgb += vec3<f32>(0.7, 0.18, 0.04) * tick * 0.16;
     let d = length(i.wpos.xz - u.t.yz);
@@ -233,11 +233,10 @@ struct VSOut { @builtin(position) p: vec4<f32>, @location(0) wpos: vec3<f32>, @l
   let isGlassish = glass || plasma || filament;
   if (glassPass != isGlassish) { discard; }
   if (glass) {
-    rgb = vec3<f32>(0.35, 0.62, 0.72) * (0.12 + 0.35 * diff);
-    rgb += vec3<f32>(0.55, 0.9, 1.0) * fres * 1.15;
-    rgb += vec3<f32>(spec) * 0.55;
-    rgb += vec3<f32>(0.45, 0.12, 0.04) * (0.08 + 0.12 * hash);
-    alpha = mix(0.08, 0.42, fres) * appear;
+    rgb = vec3<f32>(0.20, 0.45, 0.55) * (0.04 + 0.12 * diff);
+    rgb += vec3<f32>(0.55, 0.92, 1.0) * fres * 1.2;
+    rgb += vec3<f32>(spec) * 0.35;
+    alpha = mix(0.03, 0.38, fres) * appear;
   } else if (ember) {
     let pulse = 0.65 + 0.35 * sin(u.t.x * 3.2 + hash * 6.0);
     rgb = vec3<f32>(1.0, 0.32, 0.05) * (0.55 + 0.45 * pulse);
@@ -266,7 +265,7 @@ struct VSOut { @builtin(position) p: vec4<f32>, @location(0) wpos: vec3<f32>, @l
   }
   let fog = clamp(length(i.wpos - u.eye.xyz) / 32.0, 0.0, 1.0);
   rgb = mix(rgb, vec3<f32>(0.04, 0.07, 0.10), fog * 0.28);
-  return vec4<f32>(rgb * max(appear, 0.25), max(alpha, 0.12));
+  return vec4<f32>(rgb * appear, alpha);
 }
 `;
 
@@ -294,7 +293,7 @@ function lookAt(e,c,up){
 function bakeViaWorker(src){
   return new Promise((resolve, reject) => {
     let w;
-    try { w = new Worker(src || "projection-bake-worker.js?i=3p6"); }
+    try { w = new Worker(src || "projection-bake-worker.js?i=4p1"); }
     catch (e) { reject(e); return; }
     const t = setTimeout(() => { try{w.terminate();}catch(_){ } reject(new Error("bake timeout")); }, 8000);
     w.onerror = e => { clearTimeout(t); try{w.terminate();}catch(_){ } reject(e); };
@@ -311,22 +310,25 @@ function bakeViaWorker(src){
     w.postMessage("bake");
   });
 }
+let bakedScene=null;
 async function bakeScene(){
-  try { return await bakeViaWorker("projection-bake-worker.js?i=3p6"); }
+  if(bakedScene && bakedScene.P && bakedScene.P.length>6) return bakedScene;
+  try { bakedScene = await bakeViaWorker("projection-bake-worker.js?i=4p1"); }
   catch (e1) {
-    const src = await fetch("projection-bake-worker.js?i=3p6", {cache:"no-store"}).then(r => {
+    const src = await fetch("projection-bake-worker.js?i=4p1", {cache:"no-store"}).then(r => {
       if (!r.ok) throw new Error("worker fetch "+r.status);
       return r.text();
     });
     const url = URL.createObjectURL(new Blob([src], {type:"text/javascript"}));
-    try { return await bakeViaWorker(url); }
+    try { bakedScene = await bakeViaWorker(url); }
     finally { URL.revokeObjectURL(url); }
   }
+  return bakedScene;
 }
 
 let playing=true, tVal=0, gpuLive=false;
 let gpuBooting=false, gpuGen=0, needReboot=false, gpuGaveUp=false;
-let gpuSession=null;
+let gpuSession=null, lastRebootAt=0;
 function showLook(t){
   const a=document.getElementById("look-lattice");
   const b=document.getElementById("look-traces");
@@ -381,7 +383,9 @@ function killGpuSession(){
   gpuLive=false;
 }
 function requestReboot(why){
-  if(gpuGaveUp && why==="visible") return;
+  const now=performance.now();
+  if((why==="visible"||why==="focus"||why==="pageshow"||why==="bfcache") && now-lastRebootAt<900) return;
+  lastRebootAt=now;
   needReboot=true;
   const g=document.getElementById("gpustamp");
   if(g && why) g.textContent="GPU reboot";
@@ -560,11 +564,18 @@ async function main(gen){
 }
 addEventListener("resize", ()=>{ if(gpuSession && gpuSession.resize) gpuSession.resize(); });
 addEventListener("pageshow", ev=>{
-  if(ev.persisted) requestReboot("bfcache");
-  else if(gpuSession && gpuSession.resize) gpuSession.resize();
+  requestReboot(ev.persisted?"bfcache":"pageshow");
 });
+addEventListener("pagehide", ()=>{ gpuLive=false; });
+addEventListener("freeze", ()=>{ gpuLive=false; });
+addEventListener("resume", ()=>{ requestReboot("resume"); });
+addEventListener("focus", ()=>{ requestReboot("focus"); });
 addEventListener("visibilitychange", ()=>{
-  if(document.visibilityState==="visible" && !gpuLive) requestReboot("visible");
+  if(document.visibilityState==="hidden"){
+    gpuLive=false;
+    return;
+  }
+  requestReboot("visible");
 });
 if(window.visualViewport) visualViewport.addEventListener("resize", ()=>{
   if(gpuSession && gpuSession.resize) gpuSession.resize();
@@ -583,7 +594,7 @@ function runAudit(){
   const el=document.getElementById("audit");
   if(!el) return;
   const title=document.querySelector("h1")?.textContent||"";
-  const A=/i3p6/.test(title)?"ok":"fail";
+  const A=/i4p1/.test(title)?"ok":"fail";
   const D=!!(navigator.serviceWorker && navigator.serviceWorker.controller);
   const E=!!(window.deferredPrompt || window.matchMedia("(display-mode: standalone)").matches);
   const F=!!document.getElementById("installbtn");
@@ -594,7 +605,7 @@ function runAudit(){
     const ct=r.headers.get("content-type")||"";
     const B=/manifest|json/i.test(ct)?"ok":("fail "+ct);
     el.textContent=
-      "A title i3p6 "+A+"\n"+
+      "A title i4p1 "+A+"\n"+
       "B manifest MIME "+B+"\n"+
       "C icons 192+512 ok\n"+
       "D SW controlling "+(D?"ok":"fail")+"\n"+
