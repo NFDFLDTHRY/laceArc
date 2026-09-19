@@ -1,6 +1,6 @@
 # Quiet door #6 (Clock) — Pass 2 PLAN
 
-**Status:** PLAN only. Not run.  
+**Status:** EXECUTED — fields on `docs/clock/quiet-door-6-ascii.md`. Door + HTML unchanged. Emission `[GAP]`.  
 **Station:** hologram (HELD Grok-hologram).  
 **Object:** Clock fields — In / Does / Break / Gap / Role.  
 **Authority:** [`quiet-door-6-ascii.md`](quiet-door-6-ascii.md) pass-1 spine. Clock door as written.  
