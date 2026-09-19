@@ -2,7 +2,7 @@
 
 **Status:** PARTIAL mathematical execution model. **Not an emitter.**  
 **Pass:** 2 execute (authorized by [math-execution-model-pass-2-plan.md](plans/math-execution-model-pass-2-plan.md); readiness from [math-execution-problem-map-pass-1.md](plans/math-execution-problem-map-pass-1.md)).  
-**Pinned main:** `d2cd722264c77050c29b44ee16ca9763eaa9ceb3`.  
+**Pinned main:** `3cee660a5f0f1be160271103260a087d7d8cbfb8`.  
 **Emission / Φ:** `[GAP]`. Completeness of a Core executor requires human-accepted emission prose.  
 **No `src/`.** File existence here does not authorize code.
 
@@ -214,7 +214,7 @@ No competing atom is introduced. Proposal tags on the atomic map remain proposal
 |---|---|
 | Pass | Math-execution model Pass 2 **EXECUTED** (partial) |
 | Product | `docs/math-execution-model.md` |
-| Pinned SHA | `d2cd722264c77050c29b44ee16ca9763eaa9ceb3` |
+| Pinned SHA | `3cee660a5f0f1be160271103260a087d7d8cbfb8` |
 | Φ | `[GAP]` |
 | Arrive/WORD | Defined |
 | Participate/POINTER emission | Sealed hole |
