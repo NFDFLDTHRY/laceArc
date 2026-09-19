@@ -1,8 +1,8 @@
 # Xiao & Zhu pass 4 — rigorous ASCII map of Wave A system mechanisms
 
-**Status:** **HELD** / **NOT EXECUTED**. Emission `[GAP]`. Tokenizer `[GAP]`.  
-**Station:** clipboards (HELD `xiao-zhu-pass-4-plan` at plan; execute as `reference-Mapper` or equivalent)  
-**Base at plan:** `6b5aa03` (Pass 3 tip after last push) · refresh to current `origin/main` before execute  
+**Status:** **EXECUTED**. Emission `[GAP]`. Tokenizer `[GAP]`.  
+**Station:** clipboards (EXECUTED `Xiao–Zhu pass 4: ASCII Wave A machinery`)  
+**Base at execute:** `6300bef` (origin/main after rebase of plan `d59f3ab`/`131dbf5`) · plan base was `6b5aa03`  
 **Book:** Tong Xiao & Jingbo Zhu, *Foundations of Large Language Models*  
 **arXiv:** `2501.09223v2` [cs.CL] · 15/17 Jun 2025  
 **License:** CC BY-NC 4.0 — cite; do not fold body into Apache Core  
@@ -307,18 +307,20 @@ Opening a tokenizer gap is not filling Φ.
 
 ---
 
-## Plan receipt (HELD — NOT EXECUTED)
+## Plan receipt (EXECUTED)
 
 | Field | Value |
 |---|---|
-| Status | **HELD** / **NOT EXECUTED** |
+| Status | **EXECUTED** |
 | When (plan) | 2026-09-18 ~19:27 PT |
-| Station | clipboards · claim `xiao-zhu-pass-4-plan` |
-| Base | `6b5aa03` (Pass 3 tip) |
-| Artifact (execute only) | `docs/clipboards/xiao-zhu-foundations-ascii-machinery.md` — **not created at plan time** |
-| Panels planned | P-A1…P-A9 1:1 with M-A1…M-A9 |
-| P4-X | planned rigor matrix (execute fills) |
-| ASCII file | **not created** |
+| When (execute) | 2026-09-18 ~19:30 PT |
+| Station | clipboards · claim `Xiao–Zhu pass 4: ASCII Wave A machinery` |
+| Base (plan) | `6b5aa03` (Pass 3 tip) |
+| Base (execute) | `6300bef` (origin/main; plan commit rebased) |
+| Artifact | `docs/clipboards/xiao-zhu-foundations-ascii-machinery.md` — **created** |
+| Panels | P-A1…P-A9 1:1 with M-A1…M-A9 |
+| P4-X | **9/9 PASS · FIX 0** |
+| PDF | `refs/local/xiao-zhu-foundations-llm.pdf` · SHA-256 `0f5d145d298a90bbe1648b365d97b8833e86be3c31bedd7db900a932ba50bc1a` · **277** pp. · printed≈PDF−7 · never staged |
 | Emission | `[GAP]` |
 | Tokenizer | `[GAP]` |
 | Push | **not** performed |

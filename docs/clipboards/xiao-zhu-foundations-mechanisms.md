@@ -1,6 +1,6 @@
 # Xiao & Zhu — mechanism cards (constructive algorithms)
 
-**Status:** Pass 3 EXECUTED (Wave A M-A1…M-A9; Waves B–D deferred one-line seeds). ASCII deferred to Pass 4. Emission `[GAP]`. Tokenizer `[GAP]`.  
+**Status:** Pass 3 EXECUTED (Wave A M-A1…M-A9; Waves B–D deferred one-line seeds). Pass 4 ASCII: see [`xiao-zhu-foundations-ascii-machinery.md`](xiao-zhu-foundations-ascii-machinery.md) (P-A1…A9). Algorithms unchanged. Emission `[GAP]`. Tokenizer `[GAP]`.  
 **Source:** Tong Xiao & Jingbo Zhu, *Foundations of Large Language Models* · arXiv:2501.09223v2 [cs.CL] · 15/17 Jun 2025  
 **License:** CC BY-NC 4.0 — cite; do not fold body into Apache Core  
 **PDF:** `refs/local/xiao-zhu-foundations-llm.pdf` → attachment `0f5d145d298a90bbe1648b365d97b8833e86be3c31bedd7db900a932ba50bc1a` (**277** pp., text layer; **never git-add**)  

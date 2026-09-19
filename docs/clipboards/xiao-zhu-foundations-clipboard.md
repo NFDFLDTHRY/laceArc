@@ -120,10 +120,28 @@ P3-M summary: **9 CONFIRM · 0 REFINE · 0 CONFLICT**. Hard stamps retained (M-A
 
 **P3-5S five-stakes:** skip — no PAGE 3/5 drift.
 
-Pass 4 ASCII deferred.
+Pass 4 ASCII: see [xiao-zhu-foundations-ascii-machinery.md](xiao-zhu-foundations-ascii-machinery.md) (P-A1…P-A9).
 
+## Pass 4 receipt
 
+| Field | Value |
+|---|---|
+| Status | EXECUTED |
+| When | 2026-09-18 ~19:30 PT |
+| Station | clipboards · agent `Xiao–Zhu pass 4: ASCII Wave A machinery` |
+| Plan | [xiao-zhu-pass-4-plan.md](xiao-zhu-pass-4-plan.md) |
+| Hands skim | shoe → graphics A–D → systems-manifest → staking / law-why → reason-model-map §3 (X1–X7) → mechanisms Wave A M-A1…M-A9 → Pass 3 clipboard (P3-M) → five-stakes PAGE 3/5 (read-only) → AgentScope/Petersen ASCII schema |
+| PDF | **PRESENT** — cite Pass 1: `refs/local/xiao-zhu-foundations-llm.pdf` → attachment `0f5d145d…ba50bc1a.pdf`; SHA-256 `0f5d145d298a90bbe1648b365d97b8833e86be3c31bedd7db900a932ba50bc1a`; **277** pp.; text layer yes; printed≈PDF−7; gitignored; never staged |
+| Product | [xiao-zhu-foundations-ascii-machinery.md](xiao-zhu-foundations-ascii-machinery.md) — SOURCE MACHINERY overview + panels **P-A1…P-A9** 1:1 with M-A1…M-A9 + cross-walk + P4-X |
+| P4-X | **9/9 PASS · FIX 0** (stamp · Implements · fence book-only / no POINTER word · false-friend · overview attach) |
+| Amended | reason-model-map · law · graphics · five-stakes · src/ · systems-manifest · M-A* algorithms · Pass 1–2 morals / FM-X* / D7 | **No** |
+| Emission | still `[GAP]` — no POINTER when / arity / adjacency; no invented Φ |
+| Tokenizer | still `[GAP]` — PAGE F open; no Lace tokenizer invent |
+| Five-stakes | **skip** (default) — no PAGE 3/5 drift |
 
+### P4 cross-walk pointer
+
+Full table in ascii-machinery. Brief: P-A1↔M-A1/X·FM-X9 · P-A2↔M-A2/X2·FM-X2/8 · P-A3↔M-A3/X5·FM-X5 · P-A4↔M-A4/X3·FM-X3 · P-A5↔M-A5/X4·FM-X4·D7 · P-A6↔M-A6/X6·FM-X6 · P-A7↔M-A7/X6 · P-A8↔M-A8/X6 · P-A9↔M-A9/X7·FM-X7.
 
 ---
 
