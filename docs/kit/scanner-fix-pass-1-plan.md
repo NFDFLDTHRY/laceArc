@@ -1,6 +1,6 @@
 # Scanner fix — Pass 1 PLAN
 
-**Status:** PLAN only. Not run.  
+**Status:** EXECUTED — spine on `docs/kit/scanner.md`. Package door unchanged. LIVE stays LIVE. Emission `[GAP]`.  
 **Station:** kit (HELD Grok-kit).  
 **Object:** the quiet-door **rescan**, not the package door bytes.  
 **Miss:** after door #1 CLOSED 6/6 (`fab1864`), a rescan still called it "low traffic" because LIVE was treated as idle.  
