@@ -97,6 +97,14 @@ fi
 # noise. See docs/downstream-audit.md F06: this is not a compliance gate.
 # ---------------------------------------------------------------------------
 note_warn() { report '⚠️ ' "$1"; }
+# Advisories are not one thing and must not print as one block. Measured in
+# docs/plans/verification-iter4-pass-4-findings.md: an unreferenced file is a
+# reader's actual loss, and the orphan count has been flat while the tree grew
+# by 164 files. A thin door is a shelf index that is not 1:1, which nine
+# shelves are harmlessly -- docs/README.md and docs/clock/passes sat at the
+# same 50% with 0 and 30 unreachable files respectively. Printed together they
+# cannot be told apart, so each gets a heading that says what it is.
+section() { printf '\n  %s\n' "$1"; }
 
 # 5. Stale absence claims. A document says a path is absent, missing or
 #    untracked, and the path is tracked. The claim outlived the condition.
@@ -139,10 +147,20 @@ while IFS= read -r md; do
 done < <(printf '%s\n' "$_docs")
 [ "$stale" -eq 0 ] && note_ok "no stale absence claims (nothing called absent that is tracked)"
 
-# 6. Orphan documents. A tracked file no document links to is unreachable by
-#    reading: written, committed, and invisible. Links are resolved to paths,
+# 6. Orphan documents. A tracked file nothing references is unreachable:
+#    written, committed, and invisible. References are resolved to paths,
 #    not basenames -- a basename test silently exempts every README.md and
 #    conflates two files that share a name in different directories.
+#
+#    A reference is not always a markdown link. An icon is referenced by a
+#    web manifest, a service worker and a viewer; a config file by the script
+#    that reads it. Measured in docs/plans/verification-iter4-pass-4-findings.md:
+#    reading markdown alone made this check report LATEST.json, both PWA icons
+#    and .gitignore as unreachable -- 4 of 34 findings false, standing the
+#    whole time -- while each is wired into running code by the only mechanism
+#    its file type has. So the markdown pass below is joined by a second pass
+#    over non-markdown text files, which counts a quoted or bare path only when
+#    it resolves to a file that is actually tracked.
 linked=$(printf '%s\n' "$_docs" | tr '\n' '\0' | xargs -0 -r awk '
   function norm(p,   n, a, i, st, k, out) {
     n = split(p, a, "/"); k = 0
@@ -172,6 +190,48 @@ linked=$(printf '%s\n' "$_docs" | tr '\n' '\0' | xargs -0 -r awk '
     }
   }' 2>/dev/null | sort -u)
 
+# Second pass: references from non-markdown text files. Deliberately blunt --
+# every token that could be a path is emitted, and the join against $_all below
+# discards everything that does not name a tracked file. A binary is skipped; a
+# token like foo.length or a version string resolves to nothing and costs
+# nothing.
+_reffiles=$(printf '%s\n' "$_all" | grep -vE '\.md$' \
+  | grep -vE '\.(png|jpg|jpeg|gif|webp|ico|pdf|zip|gz|woff2?|ttf|otf|mp4|webm)$')
+linked_code=$(printf '%s\n' "$_reffiles" | tr '\n' '\0' | xargs -0 -r awk '
+  function norm(p,   n, a, i, st, k, out) {
+    n = split(p, a, "/"); k = 0
+    for (i = 1; i <= n; i++) {
+      if (a[i] == "." || a[i] == "") continue
+      if (a[i] == "..") { if (k > 0) k--; continue }
+      st[++k] = a[i]
+    }
+    out = ""
+    for (i = 1; i <= k; i++) out = out (i > 1 ? "/" : "") st[i]
+    return out
+  }
+  # A path in a shell or python comment is a MENTION, the same distinction
+  # _prose draws for markdown. The ownership map in coord.sh, an href, a
+  # webmanifest entry and a quoted path in a script are USES and are counted.
+  /^[[:space:]]*#/ { next }
+  {
+    line = $0
+    d = FILENAME
+    if (sub("/[^/]*$", "", d) == 0) d = "."
+    while (match(line, /[A-Za-z0-9_.\/-]*\.[A-Za-z0-9]+/)) {
+      t = substr(line, RSTART, RLENGTH)
+      line = substr(line, RSTART + RLENGTH)
+      if (t !~ /[A-Za-z0-9]/) continue
+      print norm(d "/" t)     # relative to the referring file
+      print norm(t)           # or to the repository root
+      # A path inside a URL carries the repo-relative path as one of its
+      # tails: .../laceArc/main/docs/clock/LATEST.json. Emit every tail so
+      # the real one is among them; the join below discards the rest.
+      rest = t
+      while (sub(/^[^\/]*\//, "", rest)) if (rest != "") print norm(rest)
+    }
+  }' 2>/dev/null | sort -u)
+linked=$(printf '%s\n%s\n' "$linked" "$linked_code" | sort -u)
+
 # Entry points are reached from outside the tree, not by an inbound link.
 orph_list=$(awk '
   NR == FNR { seen[$0]; next }
@@ -180,15 +240,16 @@ orph_list=$(awk '
 ' <(printf '%s\n' "$linked") <(printf '%s\n' "$_all"))
 orphans=$(printf '%s' "$orph_list" | grep -c . || true)
 
+section "Unreferenced files — work: nothing in the tree points at these"
 if [ "$orphans" -gt 0 ]; then
-  note_warn "orphans: $orphans file(s) no document links to"
+  note_warn "orphans: $orphans file(s) nothing references"
   printf '%s\n' "$orph_list" | awk -F/ '
     NF > 1 { d = ""; for (i = 1; i < NF; i++) d = d $i "/"; c[d]++; if (!(d in e)) e[d] = $NF; next }
     { c["(repo root)"]++; if (!("(repo root)" in e)) e["(repo root)"] = $0 }
     END { for (k in c) printf "%5d  %-24s e.g. %s\n", c[k], k, e[k] }
   ' | sort -rn | sed 's/^/       /'
 fi
-[ "$orphans" -eq 0 ] && note_ok "no orphan documents (every document is reachable by a link)"
+[ "$orphans" -eq 0 ] && note_ok "no orphans (every tracked file is referenced by something)"
 
 # 7. Law-copy parity. The law's ASCII lives in more than one file so that a
 #    portable prompt can carry it to an agent that cannot read this repository.
@@ -257,6 +318,7 @@ _links_of() {
       }
     }' "$1" | sort -u
 }
+section "Door coverage — context: which shelf indexes are 1:1 with their shelf"
 thin=0
 while IFS= read -r rp; do
   d=$(dirname "$rp")
@@ -274,7 +336,9 @@ if [ "$fail" -eq 0 ]; then
   if [ $((stale + orphans + drift + thin)) -eq 0 ]; then
     echo "All checks passed."
   else
+    printf '\n'
     echo "Invariants hold. $((stale + orphans + drift + thin)) advisory finding(s) above — voids, not breaches."
+    echo "  unreferenced files: $orphans · thin doors: $thin · stale absence: $stale · law-copy drift: $drift"
   fi
 else
   echo "Checks failed."
