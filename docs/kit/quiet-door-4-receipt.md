@@ -3,7 +3,7 @@
 **Status:** CLOSED. Six of six.  
 **Station:** kit.  
 **Object:** `docs/law-why-these-documents.md`  
-**Pin:** `PENDING` (stamped on the execute commit).  
+**Pin:** `7f83e25` (execute `7f83e2542934bc21e850210f8ca13b92c38086b6`).  
 **Diagram:** [`quiet-door-4-ascii.md`](quiet-door-4-ascii.md).  
 **Not:** live law rewrite. Not the header pair. Not door #3 pass 7. Not door #5.  
 **Emission:** `[GAP]`. No `src/`. Live-law bytes untouched.
