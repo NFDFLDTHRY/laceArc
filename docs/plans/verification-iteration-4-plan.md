@@ -1,0 +1,98 @@
+# Verification iteration 4 — the state of the tree
+
+**Status:** `[PROPOSAL]`. **Pass 1 EXECUTED** at `6581023`; passes 2–6 NOT_RUN.
+**Station:** maps. **Emission:** `[GAP]`. No `src/`.
+**Previous:** [iteration 3](verification-iteration-3-receipt.md), CLOSED. Before it, [2](verification-iteration-2-receipt.md), [1](verification-iteration-1-receipt.md) and [the restructure](restructure-plan.md).
+
+## 0. The subject, and why it is not another instrument audit
+
+Iteration 3's receipt asked whether anything here still needs measuring. **The human's answer is the tree itself**, and this campaign has held the coherence brief since iteration 0.
+
+**Iteration 0 made the tree legible at 220 files. It now holds 451.**
+
+## 1. The board, measured at `6581023`
+
+| | at the restructure | now |
+|---|---|---|
+| Tracked files / markdown | 220 / 156 | **451 / 377** |
+| Commits | ~300 | **869** |
+| **Commits in 24 hours** | 331 | **803** |
+| Advisory findings | 0 at close | **44** |
+
+### What held: ownership
+
+**Every one of 451 tracked files maps to a station. Unowned paths: zero.**
+
+Iteration 0 drove that from 10 to 0. **It has survived a doubling of the tree without a single regression** — the only structural property of this repository that has.
+
+### What did not: navigation
+
+**Doors cover 119 of 259 shelved files. 140 are not linked from their own index.**
+
+| Door | Covers | Shelf |
+|---|---|---|
+| `docs/clipboards/README.md` | 22 | **84** |
+| `docs/clock/passes/README.md` | 30 | 60 |
+| **`docs/README.md`** — the court door | 19 | 37 |
+| `docs/hologram/README.md` | 16 | 31 |
+| `docs/prompts/README.md` | **0** | 16 |
+
+### And the measurement that actually matters
+
+**Following links from the court door, transitively: 271 of 377 markdown files are reachable. 106 are not — 28% of the tree.**
+
+| Unreachable | Shelf |
+|---|---|
+| 36 | `docs/clipboards` |
+| 30 | `docs/clock/passes` |
+| 9 | `docs/prompts` |
+| 8 each | `docs/clock`, `docs/hologram`, `docs/history` |
+
+**A reader entering where the law says to enter cannot reach a quarter of this repository by following links.**
+
+## 2. This corrects a ruling I took, on evidence I measured wrong
+
+[Iteration 2 pass 4c](verification-iter2-pass-4-findings.md) measured that **all 16 prompts have an inbound link from somewhere** and concluded: *"a filing gap, not a reachability gap."* That conclusion fed [iteration 3's `D1`/`D2` ruling](verification-iter3-pass-5-plan.md) that door coverage stays advisory, partly because *"gating would block the tree on a shelf that is fully reachable."*
+
+**Measured now: all 16 still have an inbound link, and 9 of them are unreachable from the court door.**
+
+**Inbound-link count is not reachability.** A file linked only from an unreachable file is unreachable. Pass 4c measured **one hop** and concluded about **the graph**.
+
+**So the premise under `D1`/`D2` is gone.** The ruling may still stand — gating still buys stoppages, and iteration 2 priced one at 21 commits — but **it can no longer rest on "the doors are cosmetic", because they are not.** Pass 4 re-opens it with the corrected evidence.
+
+## 3. The thesis, stated so it can lose
+
+**This tree is coherent at the station level and incoherent at the reader level.**
+
+Ownership is a property of paths and it survived doubling. **Navigation is a property of the link graph, and nothing has ever maintained it** — the doors were written once, at the restructure, and campaigns have added 230 files since without adding rows.
+
+**Falsifier:** if the 106 turn out to be work that *should not* be reachable — scratch, superseded, campaign-internal — then the tree is coherent and only its advisory is wrong. **Pass 2 decides that by reading them**, and iteration 3 is the warning: its eleven "repairs" were all correct as written.
+
+## 4. The six passes
+
+| Pass | Station | Question |
+|---|---|---|
+| **1** | maps | What is the state of the tree? **This document. EXECUTED.** |
+| **2** | maps | **Read the 106.** Which are genuinely stranded, which are campaign-internal by design, which are superseded? §3's falsifier |
+| **3** | maps | **Have the shelves outgrown a flat index?** `clipboards` holds 84 files behind one README, `clock/passes` 60. A door that lists 84 rows is not a door |
+| **4** | kit + coord — **evidence for a ruling** | Re-open `D1`/`D2` against §2's result. Also: what would keep a door current without gating |
+| **5** | — **human** | The five law items still open from iteration 1, plus whatever pass 4 refers up |
+| **6** | maps | Receipt, and whether the coherence brief is discharged or continuing |
+
+## 5. What iteration 4 must not do
+
+- **Not add door rows before pass 2 reads the files.** Iteration 3 queued eleven repairs that were all correct; the same trap is here at ten times the scale.
+- **Not re-open the rulings that still hold.** `E1` (no gate), `E2` (no expiry), `E5` (no list) were ruled on evidence that has not changed. **Only `D1`/`D2`'s premise moved.**
+- **Not take another campaign's shelf.** `clipboards` and `clock/passes` are where the unreachable files are, and they are live.
+- **Not confuse reachable with correct.** A file reachable from the court door can still be wrong; iterations 1 and 2 covered that.
+- **Not fill `[GAP]`.**
+
+## 6. Accept iteration 4 when
+
+The 106 are read and each is stranded, internal-by-design or superseded; the two oversized shelves have a proposal or a reason to stay flat; `D1`/`D2` are re-ruled against evidence rather than the corrected premise; and the receipt says whether a reader entering at the court door can now reach what the law says they should.
+
+## Steward test
+
+If you cannot do it to a shoe lace in your hands, you may not do it to laceArc.
+
+Every file has an owner. **A quarter of them have no route from the front door.** Ownership is who may touch a thing; navigation is whether anyone can find it — and this tree has kept the first perfectly while losing the second. Emission remains `[GAP]`.

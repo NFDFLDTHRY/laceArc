@@ -43,6 +43,7 @@
 | [verification-iter3-pass-5-plan.md](verification-iter3-pass-5-plan.md) | `[PLAN]` iteration 3 pass 5: **the rulings, taken.** No gate, fix the template, build the list, rename the validator; five stay with law |
 | [verification-iter3-pass-6-plan.md](verification-iter3-pass-6-plan.md) | `[PLAN]` iteration 3 pass 6: run the leftovers queue — 11 repairs across four stations — then the receipt |
 | [verification-iteration-3-receipt.md](verification-iteration-3-receipt.md) | **iteration 3 receipt.** The queue collapsed to zero: all eleven were receipts, not citations. The tree has no citation rot |
+| [verification-iteration-4-plan.md](verification-iteration-4-plan.md) | `[PROPOSAL]` iteration 4: **the state of the tree.** Pass 1 executed — every file owned, 28% unreachable from the court door |
 | [restructure-plan.md](restructure-plan.md) | `[PROPOSAL]` coherence of the whole tree: twelve measured findings, eight phases, one station per commit; supersedes the defrag plan as filing plan of record |
 
 Sub-shelves: [fixtures/](fixtures/README.md) sealed golden IR · [tools/](tools/README.md) host validator.
