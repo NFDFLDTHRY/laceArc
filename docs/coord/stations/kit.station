@@ -2,6 +2,6 @@ STATUS: HELD
 STATION: kit
 OWNS: docs/kit/** .claude/**
 AGENT: Grok-kit
-BASE: c74b2f8855e98c04e83c4c9c0702aa068e8eae98
-SINCE: 2026-09-19T06:38:38Z
-NOTE: Scanner-fix pass 4 EXECUTED. Walk on scanner.md. Next pass 5 patch-or-refuse. Φ [GAP].
+BASE: cf69afeaa07d8194e92080920bbd8ae03c914778
+SINCE: 2026-09-19T06:40:21Z
+NOTE: Scanner-fix pass 5 PLAN. Patch-or-refuse. Pass 1–4 EXECUTED. Φ [GAP].
