@@ -47,4 +47,6 @@ POINTER emission stays `[GAP]`. No `src/`.
 
 [Pass 4 close](relationship-evidence-pass-4-close.md): history owes no further evidence work unless the companion blob changes or the human names a new question. A/B unapplied. Maps FREE. Hold remains until free.
 
-[Pass 5 plan](relationship-evidence-pass-5-plan.md): **PLAN only.** Drift-check of the Pass 4 park. No new Q. Not pass 8. Not door #5. Φ `[GAP]`.
+[Pass 5 plan](relationship-evidence-pass-5-plan.md): **EXECUTED.** Drift-check of the Pass 4 park. Not pass 8. Not door #5. Φ `[GAP]`.
+
+[Pass 5 drift](relationship-evidence-pass-5-drift.md): **NO-DRIFT.** Companion still `2628df45`. A/B unapplied. Maps FREE. Hold remains until free.

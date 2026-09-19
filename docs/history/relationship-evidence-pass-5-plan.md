@@ -1,6 +1,6 @@
 # Relationship evidence — Pass 5 plan
 
-**Status:** PLAN only. Not run.  
+**Status:** EXECUTED. Stamp NO-DRIFT. A/B still NOT_APPLIED. Maps unclaimed. Hold remains.  
 **Station:** history (HELD Grok-evidence).  
 **Object:** Drift-check of the Pass 4 park. Not a new evidence question.  
 **Parent:** [`relationship-evidence-pass-4-close.md`](relationship-evidence-pass-4-close.md).  
@@ -118,4 +118,11 @@ Write [`relationship-evidence-pass-5-drift.md`](relationship-evidence-pass-5-dri
 
 **Stations:** history HELD Grok-evidence. maps FREE. Door #5 CLOSED. Φ `[GAP]`.
 
-Shoe in hands. Pass 5 watches the lid. It does not lift it.
+## 7. Execute receipt — 19 September 2026
+
+**Performed:** refresh/check at `bd6ff511a38a757e2ab3c112a93441ef105c33c0`; companion still `2628df45`; packet still `6a1896b0`; maps FREE; wrote [`relationship-evidence-pass-5-drift.md`](relationship-evidence-pass-5-drift.md) **NO-DRIFT**.
+
+**Not performed:** maps claim; A/B apply; Φ answers; Pass 6; release.
+
+Shoe in hands. Ticket closed as execute. Campaign hold remains until the human says free.
+
