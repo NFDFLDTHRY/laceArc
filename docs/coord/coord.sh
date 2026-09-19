@@ -10,7 +10,7 @@ CLAIM_SH="$ROOT/docs/gearing/claim.sh"
 RESYNC_SH="$ROOT/docs/gearing/resync.sh"
 RESYNC_MD="$ROOT/docs/gearing/RESYNC.md"
 
-DOC_STATIONS=(clipboards prompts maps history hologram renderer kit law gearing-meta coord)
+DOC_STATIONS=(clipboards prompts maps history hologram renderer kit law graphics gearing-meta coord)
 GEAR_SHAFTS=(axle gears trainA trainB trainC cells escape audits)
 
 die() { echo "ERROR: $*" >&2; exit 1; }
@@ -188,7 +188,8 @@ path_to_station() {
     [hologram]="docs/hologram/** docs/clock/** docs/shadow-clock-hologram.md docs/shadow-clock-agent-brief.md docs/shadow-clock-gear-contracts.md docs/philosophy-map.md docs/agent-interaction-model.md"
     [renderer]="docs/shadow-clock-gearing.html docs/hologram/nostd-pipeline.html docs/clock/hcc-a-projection.html"
     [kit]="docs/kit/** .claude/**"
-    [law]="AGENTS.md CLAUDE.md docs/staking-the-workspace.md docs/law-why-these-documents.md docs/systems-manifest.md docs/graphics/** docs/graphics-close-reading.md docs/pointer-emission.md docs/references.md CONTRIBUTING.md README.md .gitignore LICENSE docs/README.md"
+    [graphics]="docs/graphics/** docs/graphics-close-reading.md"
+    [law]="AGENTS.md CLAUDE.md docs/staking-the-workspace.md docs/law-why-these-documents.md docs/systems-manifest.md docs/pointer-emission.md docs/references.md CONTRIBUTING.md README.md .gitignore LICENSE docs/README.md"
     [gearing-meta]="docs/gearing/*.md docs/gearing/*.sh docs/gearing/RESYNC.md"
     [coord]="docs/coord/**"
   )

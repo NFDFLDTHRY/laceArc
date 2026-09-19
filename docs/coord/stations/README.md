@@ -13,7 +13,8 @@ One file per doc station, written by [`../coord.sh`](../coord.sh) on claim, rele
 | [hologram.station](hologram.station) | `docs/hologram/**` and `docs/clock/**` — Shadow images and prose |
 | [renderer.station](renderer.station) | the three Layer III viewers |
 | [kit.station](kit.station) | `docs/kit/**` and `.claude/**` — steward controls and hooks |
-| [law.station](law.station) | standing orders, the laws, the manifest, the graphics, the root README |
+| [law.station](law.station) | standing orders, the laws, the manifest, the root README |
+| [graphics.station](graphics.station) | `docs/graphics/**` and `docs/graphics-close-reading.md` — Hands A–D |
 | [gearing-meta.station](gearing-meta.station) | `docs/gearing/` prose and scripts, **not** `contracts-*.js` |
 | [coord.station](coord.station) | `docs/coord/**` — this umbrella |
 

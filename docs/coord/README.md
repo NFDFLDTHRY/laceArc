@@ -58,7 +58,8 @@ Station files: `docs/coord/stations/<name>.station` — see [stations/README.md]
 | hologram | `docs/hologram/**` `docs/clock/**` (1:1 + math stay maps: exact path wins) |
 | renderer | the three Layer III viewers: `docs/shadow-clock-gearing.html` (frozen; designated editor, per `gearing/CLAIMS.md`), `docs/hologram/nostd-pipeline.html`, `docs/clock/hcc-a-projection.html` |
 | kit | `docs/kit/**` `.claude/**` (hooks + session config are operating kit) |
-| law | `AGENTS.md` `CLAUDE.md` staking, law-why, manifest, graphics, close-reading, `pointer-emission.md`, references, CONTRIBUTING, README, `.gitignore`, `LICENSE`, `docs/README.md` |
+| law | `AGENTS.md` `CLAUDE.md` staking, law-why, manifest, `pointer-emission.md`, references, CONTRIBUTING, README, `.gitignore`, `LICENSE`, `docs/README.md` |
+| graphics | `docs/graphics/**` `docs/graphics-close-reading.md` — Hands A–D. Source of record. Not a second store. |
 | coord | docs/coord/** (this umbrella) |
 | gearing-meta | `docs/gearing/*.md` `docs/gearing/*.sh` `docs/gearing/RESYNC.md` (not `contracts-*.js`) |
 
