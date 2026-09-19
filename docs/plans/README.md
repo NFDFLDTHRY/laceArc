@@ -30,6 +30,7 @@
 | [verification-iter2-pass-3-findings.md](verification-iter2-pass-3-findings.md) | pass 3 record. Inclusion rule replaced; 5 families registered, 3 excluded with reasons, L0 struck; T had a third meaning |
 | [verification-iter2-pass-4-plan.md](verification-iter2-pass-4-plan.md) | `[PLAN]` iteration 2 pass 4: the template's form has been filled zero times; seven documents invent seven receipts; every pinned commit resolves |
 | [verification-iter2-pass-4-findings.md](verification-iter2-pass-4-findings.md) | pass 4 record. The seven receipts share six slots under seven names — a broken form, not broken practice; commits survive, paths do not |
+| [verification-iter2-pass-5-plan.md](verification-iter2-pass-5-plan.md) | `[PLAN]` iteration 2 pass 5: **human rulings E1-E6.** There is no enforcement path at all; main has been red for twelve commits |
 | [restructure-plan.md](restructure-plan.md) | `[PROPOSAL]` coherence of the whole tree: twelve measured findings, eight phases, one station per commit; supersedes the defrag plan as filing plan of record |
 
 Sub-shelves: [fixtures/](fixtures/README.md) sealed golden IR · [tools/](tools/README.md) host validator.
