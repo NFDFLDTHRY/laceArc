@@ -1,6 +1,6 @@
 # Quiet door #9 (Coord) — Pass 1 PLAN
 
-**Status:** PLAN only. Not run.  
+**Status:** EXECUTED — spine on `docs/coord/quiet-door-9-ascii.md`. Door + `coord.sh` unchanged. Emission `[GAP]`.  
 **Station:** coord (HELD Grok-coord).  
 **Object:** quiet door #9 — [`docs/coord/README.md`](README.md).  
 **Why coord, not kit / not gearing-meta:** coord OWNS `docs/coord/**`. The companion can live next to the door. This campaign does not rewrite `coord.sh`, does not rewrite station files of other holders, and does not claim renderer.  
