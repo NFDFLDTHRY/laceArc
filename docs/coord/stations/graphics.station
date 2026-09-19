@@ -2,6 +2,6 @@ STATUS: HELD
 STATION: graphics
 OWNS: docs/graphics/** docs/graphics-close-reading.md
 AGENT: Grok-graphics
-BASE: 9b686b81bdb4f38e59f89674930c4d0178521535
-SINCE: 2026-09-19T05:47:17Z
-NOTE: Active object Graphic C. i1 CLOSED 6/6. i2p1–p3 EXECUTED. i2p4 PLAN C fields+Role. Same strand as Graphic D. Not a second store. Φ [GAP].
+BASE: 8a213ff3ee73928b52ed1ff7a34143297fc4a8a6
+SINCE: 2026-09-19T05:48:30Z
+NOTE: Active object Graphic C. i1 CLOSED 6/6. i2p1–p4 EXECUTED. Next i2p5 C6 grain. Same strand as Graphic D. Not a second store. Φ [GAP].

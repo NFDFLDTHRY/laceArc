@@ -2,7 +2,7 @@
 
 **Not Graphic C.** [`n-dimensional-relationships.png`](n-dimensional-relationships.png) is the source. This is an ASCII reading of how more dimensions present themselves and settles nothing the PNG does not.
 
-**Executed:** [i2p3](ascii-iteration-2-pass-3-plan.md).  
+**Executed:** [i2p3](ascii-iteration-2-pass-3-plan.md) · [i2p4](ascii-iteration-2-pass-4-plan.md).  
 **Station:** graphics.  
 **Store:** Graphic D. C is the N-D presentation reading of the same strand.  
 **Not this file:** Graphic A ASCII, Graphic B ASCII, D1 tape, Hands-manifest spine (`docs/systems-manifest-ascii.md`), HCC/Cup C*, `src/`, POINTER emission answers.
@@ -130,4 +130,34 @@ HCC π and Cup C* do not appear here. A’s file is not this file. B’s file is
 | T3 | C6 families quoted as views; vs D `[GAP]` |
 | T4 | Pointer from `docs/graphics/README.md` |
 
-Queued (not this file): C fields; C6-vs-D grain; C mechanism map or i2 receipt.
+## Iteration 2 pass 4 — panel fields + Role
+
+Off Graphic C only. In / Does / Break / Gap / Role. Not A’s board. Not B’s board. Not manifest piece fields.
+
+| # | Title | In | Does | Break | Gap | Role |
+|---|---|---|---|---|---|---|
+| C1 | Rule Zero | the strand as one wire | grows only; past stays; no cuts / no resets | cut, reset, rewrite, or a second strand | — | precondition |
+| C2 | 1D presentation | the same strand | shows sequence only; no crossings visible | treat 1D as a lesser Lace; store the sentence as a unit | — | view |
+| C3 | 2D crossings / adjacency | the same strand | crossings / adjacency become visible | treat the 2D flatten as the store | printed title on PNG `[GAP]` | view |
+| C4 | 3D looping / stars | the same strand | looping / stars; true structure begins to appear | allocate a Star table; a second array for 3D | stacked-plane D1–D4 ≠ Graphic D panels — dual-bound | view |
+| C5 | More dimensions ≠ more meaning | the same strand at more axes | more independent ways to participate; not new content | a meaning layer per dimension | — | statement |
+| C6 | Four named families | dictionary / document / conversation / provenance as names | those names as views of the same structure; no new meaning | promote them to array types | vs D schema → i2p5 | view |
+| C7 | 5D+ touches of touches | prior formations already on the strand | relations among relations; still the same strand | a new universe per nesting | when a POINTER is appended `[GAP]` (G2) | view |
+| C8 | Symptoms of N-D | many axes already visible | denser structure; more recoverable routes | treat symptoms as stored meaning | — | view |
+| C9 | Dictionary / no collapse | definition text | that text is a route; do not collapse to a gloss | store `word = gloss` | — | constraint |
+| C10 | Input treatment | a raw arriving sequence | punch-card; no interpretation; the strand grows | interpret before routing; isolate a per-document graph | document-as-entry vs D → i2p5 | constraint |
+| C11 | Projection ≠ lace | a flattened picture | `[X]` — that picture is not the Lace; cannot write back as store | treat the projection as Core | — | anti-model |
+| C12 | Governing rule | an arriving word | Input word arrives. Route new wire through that word's star. Continue. | a second rule; stored meaning; parse away arrival | array-layer POINTER sentence is not on C12 | operator |
+
+C11 has no constructive operator. C6 Role is view. Vs D stays `[GAP]`.
+
+## Iteration 2 pass 4 deltas
+
+| Ticket | Action |
+|---|---|
+| T1 | Twelve In / Does / Break / Gap / Role rows |
+| T2 | C2–C4 / C6 / C8 stay views |
+| T3 | C11 anti-model; C6 vs D pointed |
+| T4 | Spine above this section left in place |
+
+Queued (later i2, not this pass): C6-vs-D grain; C mechanism map or i2 receipt.

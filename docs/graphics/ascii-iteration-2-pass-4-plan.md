@@ -1,6 +1,6 @@
 # Graphics ASCII — Iteration 2, Pass 4 PLAN
 
-**Status:** PLAN only. Not run. Iteration 2 open. Iteration 1 stays closed.  
+**Status:** EXECUTED — fields + Role on `docs/graphics/graphic-c-ascii.md`. Iteration 2 remains open (pass 4 of 6). Iteration 1 stays closed. Emission `[GAP]`.  
 **Station:** graphics (HELD Grok-graphics).  
 **Object:** Graphic C.  
 **This pass:** rigorous per-panel map of C onto the ASCII spine — In / Does / Break / Gap off C only, plus a Role map (view / constraint / anti-model / operator).  
