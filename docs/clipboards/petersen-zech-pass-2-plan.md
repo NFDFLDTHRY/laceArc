@@ -1,6 +1,18 @@
 # Petersen & Zech pass 2 — leftovers / failure modes / coherence (PDF present)
 
-**Status:** PLANNED — not executed. Emission `[GAP]`.  
+**Status:** EXECUTED. Emission `[GAP]`.
+
+### Execution receipt (2026-09-18 ~18:21 PT)
+
+| Field | Value |
+|---|---|
+| Station | clipboards · `reference-Mapper` |
+| Product | D1–D6 + D7 (GD/SGD Shadow miniature) on `petersen-zech-clipboard.md` |
+| FM-P* | FM-P1…P9 pinned (Pass 1 reuse; no `[OPEN]`) |
+| T5 five-stakes | skip |
+| Amended | reason-model-map · law · graphics · five-stakes · src/ · systems-manifest | **No** |
+| PDF | never staged; SHA `a8505f3d…c84383fa` |
+| Emission | still `[GAP]` |  
 **Station:** clipboards (HELD `reference-Mapper`)  
 **Base at plan:** refresh to current `origin/main` before execute  
 **Book:** Philipp Petersen & Jakob Zech, *Mathematical theory of deep learning*  
@@ -205,11 +217,7 @@ Ask before push.
 
 ## Execution (when you say go pass 2)
 
-1. Refresh claim.  
-2. T1–T4 (+ T6 if time; T5 only if asked).  
-3. Mark this plan EXECUTED.  
-4. Check · commit · release.  
-5. Stop.
+**DONE** 2026-09-18 ~18:21 PT — refresh · T1–T4 · T6 D7 included · T5 skip · this plan EXECUTED · check · commit · release · STOP (no push).
 
 ---
 

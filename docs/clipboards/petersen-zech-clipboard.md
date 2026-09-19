@@ -41,6 +41,22 @@ Execution of [the Petersen–Zech clipboard prompt](../prompts/petersen-zech-cli
 
 T5 five-stakes: **skip** — PAGE 4/5 source pins and KEEP/FORBID agree with this PDF (no eye-quote conflict).
 
+## Pass 2 receipt
+
+| Field | Value |
+|---|---|
+| Status | EXECUTED |
+| When | 2026-09-18 ~18:21 PT |
+| Station | clipboards · agent `reference-Mapper` |
+| Plan | [petersen-zech-pass-2-plan.md](petersen-zech-pass-2-plan.md) |
+| Hands skim | shoe → graphics A–D → systems-manifest → staking / law-why → reason-model-map §4 (P1–P7) → Pass 1 clipboard → five-stakes PAGE 4/5 (read-only; T5 skip) |
+| PDF | **PRESENT** — cite Pass 1: `refs/local/petersen-zech-mathematical-theory-deep-learning.pdf` → `a8505f3d…c84383fa.pdf`; **333** pp.; text layer; printed≈PDF−1; gitignored; never staged |
+| Product | D1–D6 leftovers (+ D7 Shadow GD miniature); A–X morals untouched |
+| Amended | reason-model-map · law · graphics · five-stakes · src/ · systems-manifest | **No** |
+| Emission | still `[GAP]` |
+| T5 five-stakes | **skip** (default) |
+| D7 | **included** — §10.1–10.2 GD/SGD update (PDF 133, 138); FORBID-as-Core-write; SILENT for Lace append |
+
 ## PAGE A — FUNCTION ≠ CONSTRUCTION
 
 | Field | Filled sheet |
@@ -160,6 +176,98 @@ The current [pointer-emission draft](../pointer-emission.md) exists, explicitly 
 **Map arrows:** approximation of f → a function-approximation claim [SOURCE]; approximation of f ↛ possession of recorded Lace history [LAW]. **ON THE SHOE:** D1/D4/D5 and Piece 13; C5–C7 and Piece 12 for the dimension comparisons. **KEEP:** each theorem's actual scope and function ≠ construction. **FORBID:** promoting approximation or interpolation into construction identity, or claiming that this reading proves universal impossibility of simulation. **HOLDER / ARRAY:** an assessment in [H] does not authorize crossing [X]. **EMISSION:** NO / [GAP]. **vs reason-model-map:** CONFIRMS the P1–P7 restrictions on import; REFINES the source attributions on Pages A, C, D, and E, and supplies the previously unaudited Ch.7–8 statements and Ch.9 interpolation locus.
 
 **Product:** do not train a model of the lace and call its weights the lace. No cited operator becomes an accepted Core primitive. Nothing on these sheets rewrites a prior pass or adds a rule for the next one.
+
+
+## Pass 2 deltas
+
+Pass 1 filled PAGE A–F, X against the PDF. These deltas are leftovers only. They do not invent emission. A–X morals are unchanged. P5 KEEP and P1/P4/P6/P7 FORBID are not softened.
+
+### D1 — What this clipboard is not
+
+- Not Core / not a sixth graphic.
+- Not `docs/pointer-emission.md` / not a Φ fill.
+- Not a rewrite of `docs/reason-model-map.md` §4.
+- Not permission to replace Lace history with trained weights.
+- Not permission to treat Φ-sameness as Lace identity.
+- Not an import of GNN / NTK / architecture graphs into Graphic D.
+- Not a substitute for [clipboard-five-stakes.md](clipboard-five-stakes.md) PAGE 4/5 (admission boundary lives there too; D2 mirrors it).
+
+### D2 — ON THE SHOE / KEEP / FORBID / MAP ARROWS
+
+Mirrored from five-stakes PAGE 4/5 and Pass 1 morals. Book clipboard holds the page walk; this strip is the admission boundary in one place.
+
+```
+┌──────────────────────────────────────────────────────────────────────────┐
+│ ON THE SHOE                                                              │
+│   A net that approximates a lace is not the lace.                        │
+│   Trained weights cannot replace the kept history of passages.           │
+│   A star is not a neuron.                                                │
+│                                                                          │
+│ KEEP                           FORBID                                    │
+│   function ≠ construction      star = hidden unit (P1)                   │
+│     (P5 / Remark 2.2 kin)      train w as history (P4)                   │
+│                                GNN as Core (P6)                          │
+│                                NTK as store (P7)                         │
+│                                                                          │
+│ MAP ARROWS                                                               │
+│   P5 Φ≠build  ──kin of negation──► Piece 13 / projection                 │
+│   P1 neuron   ──[X]──►             Piece 7                               │
+│   P4 train w  ──[X]──►             Piece 6                               │
+│   P7 NTK      ──[X]──►             Piece 6  (second world)               │
+│   emission    ──[GAP]─►            POINTER when / arity / adjacency unset│
+│                                                                          │
+│ EMISSION settled? NO  [GAP]                                              │
+└──────────────────────────────────────────────────────────────────────────┘
+```
+
+### D3 — Failure modes (FM-P1…P9)
+
+| ID | Misread | Hands deadbolt | PDF pin (Pass 1 reuse) |
+|---|---|---|---|
+| FM-P1 | neuron / hidden unit ⇒ Lace star | star = accumulated passes (Piece 7 / D5); FORBID star=neuron | Def 2.1 **PDF p.20** / printed ~19; architecture graph Remark 2.2 **PDF p.21** (cite B) |
+| FM-P2 | architecture graph ⇒ Graphic D / POINTER edges | architecture drawing is computation picture; **FORBID** as authoritative node-edge store | Remark 2.2 **PDF p.21** (cite B/F) |
+| FM-P3 | universal approximation ⇒ Lace identity / possession | approximation ≠ possession (Piece 13 / D4); density ↛ retained route | Thm 3.9 **PDF ~30** / printed ~29; Ch.7–8 pins on PAGE X (cite X/P3) |
+| FM-P4 | train / GD / backprop ⇒ rewrite Lace history | optimizer updates **w**; Rule Zero / Pieces 1/6 preserve earlier entries; FORBID train-w as history | §10.1 eq.10.1.2 **PDF p.133**; §10.2 eq.10.2.2 **PDF p.138**; §10.5 **PDF pp.152–153** (cite C) |
+| FM-P5 | same Φ ⇒ same Lace (collapse construction) | KEEP **function ≠ construction**; Φ-sameness ↛ Lace identity | Remark 2.2 **PDF p.21** / printed ~20 (cite A) |
+| FM-P6 | GNN / message-passing ⇒ Core touch (from omission or analogy) | book **omits** GNNs; omit ↛ import; Piece 11 is later participation, not message-pass | §1.5 **PDF p.18** / printed ~17 (cite D) |
+| FM-P7 | NTK / infinite width ⇒ second store / participation axis | kernel / Φlin analysis ≠ strand; width ≠ Piece 12; FORBID NTK as store | §11.3 eqs.11.3.1, 11.3.4–5 **PDF pp.169–170**; §11.6 Thm 11.20 **PDF pp.179–180** (cite E) |
+| FM-P8 | depth / width hyperparameters ⇒ Lace dimension / rooms | depth/width are approximation budgets; Graphic D one line; N-D = participation not rooms | Def 2.1 width **PDF p.20**; Ch.7 depth/size bounds **PDF pp.85–94** (cite B/X) |
+| FM-P9 | interpolation / reconstruction theorems ⇒ POINTER when-rule / Φ fill | exact sample fit ↛ emission; when/arity/adjacency stay `[GAP]` | Def 9.1 **PDF p.122**; Thm 9.3 **PDF p.123**; Ch.8 reconstruction **PDF pp.101–104** (cite F/X) |
+
+No FM row left `[OPEN]`. Pins reused from Pass 1; `pdftotext -f 133 -l 138` and `-f 169 -l 170` re-sighted §10.1–10.2 / §11.3 for optional D7 only.
+
+### D4 — Interface coherence
+
+Only P5 (function ≠ construction) is kin to Hands inputs as a **negation/read**: projection ≠ store (Piece 13 / Graphic D4). P1–P4, P6–P7 outputs do not match any Core write (neuron ↛ star; train-w ↛ history; GNN ↛ touch; NTK ↛ store). Nothing in the book supplies POINTER when / arity / adjacency — `[GAP]` remains. Approximation ↛ strand operation. This paragraph does not close Φ.
+
+### D5 — Source gate (cite Pass 1)
+
+PDF is **PRESENT** (do not narrate absent). Pass 1 receipt: `refs/local/petersen-zech-mathematical-theory-deep-learning.pdf` → attachment `a8505f3de280cb1c6f9742161471fadc52c21340afc05efe4549bd58c84383fa.pdf`; **333** pages; text layer present (arXiv GenPDF / pikepdf); printed ≈ PDF − 1 at cited loci; SHA-256 `a8505f3de280cb1c6f9742161471fadc52c21340afc05efe4549bd58c84383fa`; `git check-ignore` OK; **never `git add`**. Method this pass: reuse Pass 1 pins; `pdftotext` on §§10.1–10.2 and §11.3 for optional D7 eye-walk only. Five-stakes PAGE 4/5 left untouched (T5 skip).
+
+### D6 — Sealed (still)
+
+- Invent POINTER when / arity / adjacency (Φ stays `[GAP]`)
+- Soften P5 KEEP or P1/P4/P6/P7 FORBID
+- Amend reason-model-map, law, graphics, systems-manifest, or five-stakes from this clipboard
+- Add `src/` or edit other reference shelves
+- Git-add the PDF
+- Treat nets / NTK / GNN as Lace Core
+- Pretend OCR / claim PDF absent when the file is present
+
+### D7 — Constructive miniature (Shadow only) — GD / SGD update step
+
+**Stamp:** FORBID-as-Core-write · **SILENT for Lace append** · not a Graphic D scheduler · not Φ. Paper algorithm only (§10.1–10.2 **PDF pp.133, 138**). Steps below are what the PDF states; no invented operators. NTK linearization (§11.3) left as sibling analysis, not a second miniature.
+
+1. Choose objective \(F\) and initial parameter vector \(w_0 \in \mathbb{R}^n\).
+2. At iterate \(k\), form the (full) gradient \(\nabla F(w_k)\) — or, for SGD, an unbiased estimator \(G_k\) with \(\mathbb{E}[G_k \mid w_k] = \nabla F(w_k)\) (eq.10.2.1).
+3. Choose step size / learning rate \(h_k > 0\).
+4. Update: \(w_{k+1} := w_k - h_k \nabla F(w_k)\) (eq.**10.1.2**) · or · \(w_{k+1} := w_k - h_k G_k\) (eq.**10.2.2**).
+5. Repeat; backpropagation (when used) computes the required derivatives for step 2 — it is not itself the write rule.
+
+**[OPEN] (book continues; not settled for Lace):** exact schedules for \(h_k\) (constant / decaying / adaptive §10.4); momentum / adaptive variants beyond the plain GD/SGD pair; backprop implementation details in §10.5 — out of scope here. Do **not** finish those from Lace.
+
+**Lace refusal:** this updates **parameters** on paper. It does **not** rewrite WORD/POINTER history, does **not** append to Graphic D, does **not** treat \(w\) or \(G_k\) as occurrence memory, and does **not** schedule POINTER emission.
+
 
 ## Source and law receipt
 
