@@ -1,6 +1,6 @@
 # Xiao & Zhu — ASCII source-machinery model (Shadow)
 
-**Status:** Pass 4 EXECUTED (SOURCE MACHINERY overview + panels P-A1…P-A9; P4-X 9/9 PASS). Emission `[GAP]`. Tokenizer `[GAP]`.  
+**Status:** Pass 4–5 EXECUTED (SOURCE MACHINERY overview + panels P-A1…P-A9; P4-X 9/9 PASS; P5-X accuracy + Order Proposal Shadow). Emission `[GAP]`. Tokenizer `[GAP]`.  
 **Source:** Tong Xiao & Jingbo Zhu, *Foundations of Large Language Models* · arXiv:2501.09223v2 [cs.CL] · 15/17 Jun 2025  
 **License:** CC BY-NC 4.0 — cite; do not fold body into Apache Core  
 **PDF:** `refs/local/xiao-zhu-foundations-llm.pdf` → attachment `0f5d145d298a90bbe1648b365d97b8833e86be3c31bedd7db900a932ba50bc1a` (**277** pp., text layer; **never git-add**)  
@@ -78,7 +78,13 @@ Singular canonical overview for this pass. Book constructive spine only. Lace Co
   emission = [GAP] · tokenizer = [GAP]
 ```
 
-**P4-X:** Rigor matrix (all PASS) lives below in this file. This file holds **exactly one** canonical SOURCE MACHINERY overview (above).
+**P5-X:** Accuracy matrix (all PASS) lives on the book clipboard under Pass 5 — [xiao-zhu-foundations-clipboard.md](xiao-zhu-foundations-clipboard.md#p5-x--accuracy-matrix-m-a--p-a--overview). This file holds **exactly one** canonical SOURCE MACHINERY overview (above). P4-X rigor matrix (Pass 4 baseline) remains below.
+
+### Order proposal (Shadow) — SOURCE MACHINERY as shelf hygiene *(short mirror)*
+
+**Full text:** clipboard Pass 5. **Stamps:** KEEP-read · FORBID-as-Core-write · FORBID-as-Lace-identity · FORBID-as-store · FORBID next-token/decode as Core continue · FORBID MASK as Lace cut · FORBID-as-POINTER-when · FORBID corpus→DOCUMENT · FORBID as Core rows · FORBID-as-Lace-history · SILENT-for-Lace-append · PROPOSAL.
+
+This overview **proposes** shelf hygiene — observe → name → diagram-check → stamp-check → list OPENs → decide (commit/release/defer/stop). It is **not** Core, not an AGENTS.md amendment, not a Φ scheduler, not Lace history via soft/SFT/RLHF, and not a second store (embed/KV) beside Graphic D. Recommended reader order (proposal only): clipboard → mechanisms → ascii-machinery → pass plans. See clipboard P5-P for the stage→hygiene table. **NON-binding** on Core / `src/` / Φ. Tokenizer stays `[GAP]`. Emission stays `[GAP]`.
 
 ---
 

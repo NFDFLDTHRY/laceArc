@@ -145,6 +145,84 @@ Full table in ascii-machinery. Brief: P-A1↔M-A1/X·FM-X9 · P-A2↔M-A2/X2·FM
 
 ---
 
+## Pass 5 — ASCII as order proposal + accuracy steward
+
+**Status:** EXECUTED · 2026-09-18 ~19:45 PT · station clipboards · `reference-Mapper`  
+**Plan:** [xiao-zhu-pass-5-plan.md](xiao-zhu-pass-5-plan.md)  
+**ASCII:** [xiao-zhu-foundations-ascii-machinery.md](xiao-zhu-foundations-ascii-machinery.md) · **Mechanisms:** [xiao-zhu-foundations-mechanisms.md](xiao-zhu-foundations-mechanisms.md)  
+**Law:** Pass 4 SOURCE MACHINERY is a **Shadow order proposal**, not Core. Emission Φ still `[GAP]`. Tokenizer still `[GAP]`. Wave B **SKIP**.
+
+### P5-X — Accuracy matrix (M-A* ↔ P-A* ↔ overview)
+
+Scoring: Implements / Fence / Overview / Pin all Y → **PASS**. Every FIX would name an edit target. Prefer panel/overview/cross-walk fixes over rewriting M-A* bodies. P4-X 9/9 PASS is **baseline only** — this matrix re-walks (not rubber-stamp).
+
+| node (overview) | P-A* | M-A* | stamp | Implements OK | Fence OK | Overview OK | Pin OK | PASS/FIX |
+|---|---|---|---|---|---|---|---|---|
+| [corpus D + self-sup task] | P-A1 | M-A1 | KEEP-read; FORBID-as-Core-write; FORBID corpus→DOCUMENT fuel | Y | Y | Y | Y | **PASS** |
+| [tokenize → shared vocab V] | P-A2 | M-A2 | KEEP-read; **FORBID-as-Lace-identity**; tokenizer `[GAP]` | Y | Y | Y | Y | **PASS** |
+| [e = x + e_pos (+ e_seg)] | P-A3 | M-A3 | KEEP-read; **FORBID-as-store** | Y | Y | Y | Y | **PASS** |
+| [causal next-token] | P-A4 | M-A4 | KEEP-read; **FORBID next-token as Core continue**; SILENT-for-Lace-append | Y | Y | Y | Y | **PASS** |
+| [BERT MASK 80/10/10] | P-A5 | M-A5 | KEEP-read; **FORBID-as-Core-write** (MASK≠Lace cut); SILENT; D7 | Y | Y | Y | Y | **PASS** |
+| [soft / SFT / RLHF\|DPO] (soft) | P-A6 | M-A6 | KEEP-read steward; **FORBID as Core rows**; SILENT | Y | Y | Y | Y | **PASS** |
+| [soft / SFT / RLHF\|DPO] (SFT) | P-A7 | M-A7 | KEEP-read steward; FORBID-as-Core-write; SILENT | Y | Y | Y | Y | **PASS** |
+| [soft / SFT / RLHF\|DPO] (RLHF/DPO) | P-A8 | M-A8 | KEEP-read steward; **FORBID as Core write**; **FORBID-as-Lace-history** | Y | Y | Y | Y | **PASS** |
+| [prefill → decode / KV] | P-A9 | M-A9 | KEEP-read; **FORBID Core continue / POINTER when**; FORBID-as-store (KV); SILENT; Φ `[GAP]` | Y | Y | Y | Y | **PASS** |
+| [corpus D] (input spine) | — | — | observe shelf first; FORBID D as DOCUMENT | — | Y | Y | Y | **PASS** |
+| Lace Core / Graphic D / emission / tokenizer OFF board | — | — | FORBIDDEN off this board; Φ=`[GAP]`; tokenizer=`[GAP]` | — | Y | Y | Y | **PASS** |
+
+**Verdict:** **11 PASS · 0 FIX**. No P5-F edits required. Canonical overview already singular in ascii-machinery.md (P5-O confirm). Cross-walk stamps match mechanisms + P3-M teeth. All 10 diagram fences book-only (**no POINTER word** inside fences). PDF pins reused from Pass 1–4 (no re-sight needed). Morals from Pass 1–4 unchanged (no softening).
+
+### Order proposal (Shadow) — SOURCE MACHINERY as shelf hygiene
+
+**Stamps:** **KEEP-read** · **FORBID-as-Core-write** · **FORBID-as-Lace-identity** · **FORBID-as-store** · **FORBID next-token/decode as Core continue** · **FORBID MASK as Lace cut** · **FORBID-as-POINTER-when** · **FORBID corpus→DOCUMENT** · **FORBID as Core rows** · **FORBID-as-Lace-history** · **SILENT-for-Lace-append** · **PROPOSAL**
+
+1. **This is a proposal, not Core.** It does not amend AGENTS.md, `systems-manifest-ascii.md`, Graphic D, reason-model-map, or law. Hands may refuse without breach of Core. It is Shadow / Layer III shelf hygiene only — not an AGENTS.md amendment. **NON-binding** on Core / `src/` / Φ.
+
+2. **Stage → hygiene table** (Pass 4 SOURCE MACHINERY read as steward order):
+
+| Pipeline stage (ASCII) | Proposal for shelf / steward order |
+|---|---|
+| corpus D + self-sup task | Observe what is actually on the shelf (files, receipts, claim) before rewriting; refuse corpus→DOCUMENT fuel |
+| tokenize → shared vocab V | Name book primitives honestly; **FORBID** vocab id as Lace WORD/Star identity; tokenizer stays `[GAP]` |
+| e = x + e_pos (+ e_seg) | Diagram-check constructions against cards; refuse embed tables as second store beside Graphic D |
+| causal next-token / BERT MASK | Stamp-check training/corruption objectives — not Piece 2 continue / not Lace cut |
+| soft / SFT / RLHF\|DPO | Steward adaptation only — **FORBID** as Core rows / Core write / Lace history |
+| prefill → decode / KV | Projection / inference memory only — **FORBID** as Core continue / POINTER when; SILENT for Lace append |
+| FORBIDDEN exit → Core / Φ / tokenizer | Decisive judgment = commit / release / defer / stop — **not** Φ fill / Lace tokenizer invent |
+
+3. **Recommended reader file order** (proposal only):  
+   `clipboard (admit) → mechanisms (algorithms) → ascii-machinery (diagrams) → pass plans (history)`
+
+4. **Steward loop** when touching this shelf: observe → name → diagram-check → stamp-check → list OPENs → decide (commit / release / defer / stop).
+
+5. **Explicit FORBID:** using this loop as a Φ scheduler; inventing a Lace tokenizer; vocab-as-identity; embed/KV-as-store; next-token/decode as Core continue; MASK as Lace cut; soft/SFT/RLHF as Core rows/write/history; Hands override; promoting this proposal into Core / AGENTS.md / systems-manifest-ascii / Graphic D. Proposal is **SILENT for Lace append** — not a Φ scheduler.
+
+6. **Honesty link:** accuracy matrix **P5-X** above is how the proposal stays honest (every M-A* ↔ P-A* ↔ overview node checked).
+
+Mirror (short): under SOURCE MACHINERY overview in [xiao-zhu-foundations-ascii-machinery.md](xiao-zhu-foundations-ascii-machinery.md).
+
+### P5-R — Pass 5 receipt
+
+| Field | Value |
+|---|---|
+| Status | EXECUTED |
+| When | 2026-09-18 ~19:45 PT |
+| Station | clipboards · agent `reference-Mapper` |
+| Plan | [xiao-zhu-pass-5-plan.md](xiao-zhu-pass-5-plan.md) |
+| Hands skim | shoe → graphics A–D → systems-manifest (+ ascii Core separate) → staking / law-why → reason-model-map §3 (X1–X7) → M-A1…A9 → P-A1…A9 + overview → Pass 1–4 receipts → five-stakes PAGE 3/5 (read-only) |
+| PDF | **PRESENT** gitignored; SHA-256 `0f5d145d298a90bbe1648b365d97b8833e86be3c31bedd7db900a932ba50bc1a`; **277** pp.; never staged |
+| P5-X | **11 PASS · 0 FIX** (9 Wave A pairs + corpus input spine + Core/Φ/tokenizer off-board) |
+| P5-F | none (matrix all PASS) |
+| P5-O | exactly one SOURCE MACHINERY overview fence in ascii-machinery.md; Core/Φ/tokenizer off-board |
+| P5-P | Order Proposal full text **this section**; short mirror under ascii overview |
+| Wave B | **SKIP** (default) — still deferred |
+| Emission | still `[GAP]` — no POINTER when / arity / adjacency; no invented Φ |
+| Tokenizer | still `[GAP]` — PAGE F open; no Lace tokenizer invent |
+| Amended | reason-model-map · law · graphics · five-stakes · src/ · systems-manifest · systems-manifest-ascii · PAGE morals · FM-X* · P3-M · M-A* bodies · Core ASCII | **No** |
+| Touched | clipboard · ascii-machinery · pass-5-plan (EXECUTED) |
+
+---
+
 ```
 ┌──────────────────────────────────────────────────────────────────────────┐
 │ CLIPBOARD                                                                │

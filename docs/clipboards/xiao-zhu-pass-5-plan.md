@@ -1,6 +1,6 @@
 # Xiao & Zhu pass 5 — ASCII as order proposal + accuracy steward
 
-**Status:** **HELD** / **NOT EXECUTED** — ready for execute. Emission `[GAP]`. Tokenizer `[GAP]`.  
+**Status:** **EXECUTED** · 2026-09-18 ~19:45 PT · station clipboards · `reference-Mapper`. Emission `[GAP]`. Tokenizer `[GAP]`.  
 **Station:** clipboards (HELD `xiao-zhu pass-5 plan` at plan time; refresh claim before execute)  
 **Base at plan:** `44a3af4` (origin/main after Pass 4 tip `6270270` + clock pins) · refresh to current `origin/main` before execute  
 **Book:** Tong Xiao & Jingbo Zhu, *Foundations of Large Language Models*  
@@ -238,16 +238,19 @@ Tokenizer stays `[GAP]`. Emission stays `[GAP]`.
 
 ---
 
-## Plan receipt (HELD — NOT EXECUTED)
+## Plan receipt (EXECUTED)
 
 | Field | Value |
 |---|---|
-| Status | **HELD** / **NOT EXECUTED** |
+| Status | **EXECUTED** |
 | When (plan) | 2026-09-18 ~19:35 PT |
-| Station | clipboards · claim `xiao-zhu pass-5 plan` |
+| When (execute) | 2026-09-18 ~19:45 PT |
+| Station | clipboards · claim `xiao-zhu pass-5 execute` · agent `reference-Mapper` |
 | Base (plan) | `44a3af4` |
-| Artifact at plan | plan file only — **no** Order Proposal body · **no** ascii Pass 5 EXECUTED mark |
-| P5 scope | P5-X matrix · P5-F if FIX · P5-O singular overview · P5-P Order Proposal (Shadow) · P5-R receipt |
+| Base (execute) | claim BASE `75e16d8` (== origin/main at claim); local tip ahead of origin at execute |
+| Artifact | P5-X matrix · P5-O singular overview confirm · P5-P Order Proposal (clipboard + ascii mirror) · P5-R receipt · plan EXECUTED |
+| P5-X | **11 PASS · 0 FIX** |
+| P5-F | none |
 | Wave B | **SKIP** (default) |
 | Pass 6 | not this pass |
 | Emission | `[GAP]` |
