@@ -1,13 +1,13 @@
 # Graphic B → ASCII systems diagram — Pass 3 PLAN
 
-**Status:** PLAN only. Not run. One act. Remainder queued.  
+**Status:** QUEUED as graphics ASCII **iteration 2 pass 1**. Not run. Iteration 1 is closed at six passes.  
 **Station:** graphics (HELD Grok-graphics). No separate `graphic-b` station — `docs/graphics/**` already maps here. A second station would split OWNS.  
-**Claim:** Graphic B is the active object on this station. Pass 1 spine and pass 2 fields already on main. This ticket is **pass 1 of B7–B9 grain** = B map pass 3.  
+**Claim:** Graphic B is the active object on this station. Pass 1 spine and pass 2 fields already on main (iteration 1 passes 5–6). This ticket is B7–B9 grain = B map pass 3 = **i2p1**.  
 **Authority:** Graphic B panels B7, B8, B9 on `docs/graphics/mechanisms-in-3d.png`. Then pass-1 spine + pass-2 rows on [`graphic-b-ascii.md`](graphic-b-ascii.md).  
 **Not authority:** Graphic A’s A8/A12 tables (kin, other graphic). Manifest Pieces 11 / 15 field dumps. D1 tape.  
 **Emission:** `[GAP]`. No `src/`. PNG bytes stay put. Spine and pass-2 board stay. A’s file stays closed.
 
-B pass 2 pointed grain here. The human named claim + pass 1. Pass 1 of B already executed — this is the next first-class B act. Execute is not this tick.
+Register: [`ascii-iterations.md`](ascii-iterations.md). Do not execute this plan as iteration-1 pass 7.
 
 ```
 pull/ff → refresh graphics

@@ -174,4 +174,4 @@ B10 / B11 have no constructive operator. Their Does is the prohibition.
 | T3 | G2 pointed from B8, not filled |
 | T4 | Spine above this section left in place |
 
-Queued (not this file): B7–B9 grain; mechanism map vs D types.
+Queued (iteration 2, not this file's iteration-1 body): B7–B9 grain; mechanism map vs D types. See [`ascii-iterations.md`](ascii-iterations.md).

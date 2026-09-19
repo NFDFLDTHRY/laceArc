@@ -2,6 +2,6 @@ STATUS: HELD
 STATION: graphics
 OWNS: docs/graphics/** docs/graphics-close-reading.md
 AGENT: Grok-graphics
-BASE: dc8f81d66209c17b2b7b2b3cf30d3fc4c95431fc
-SINCE: 2026-09-19T05:28:48Z
-NOTE: Active object Graphic B. Hands A–D + close-reading. Same strand as Graphic D. Not a second store. Φ [GAP].
+BASE: e91b79b5c313c25d71f065f561d11794a81f6970
+SINCE: 2026-09-19T05:31:52Z
+NOTE: Active object Graphic B. Iteration 1 CLOSED 6/6. Leftovers queued i2. Same strand as Graphic D. Not a second store. Φ [GAP].
