@@ -57,7 +57,7 @@ aside[hidden]{display:none}
 </div>
 <div class="hud">
   <header class="hit">
-    <h1>LAYER III · ixp1 · RAWCDN SHA</h1>
+    <h1>LAYER III · ixp2 · RAWCDN SHA</h1>
     <p>Install this URL only if it is <code>rawcdn.githack.com</code> + a full SHA. Floating <code>main</code> is preview. Cubes are glyphs. No emitter. [GAP]</p>
   </header>
   <div class="modes hit">
@@ -82,7 +82,7 @@ aside[hidden]{display:none}
     <div class="row">
       <input id="t" type="range" min="0" max="10" step="0.02" value="0"/>
       <span id="phase">t=0000</span>
-      <span class="stamp">ixp1</span>
+      <span class="stamp">ixp2</span>
       <span class="stamp">A17</span>
       <span class="stamp" id="gpustamp">GPU ?</span>
       <span class="stamp" id="bootstamp">boot ?</span>
@@ -297,9 +297,9 @@ struct VSOut { @builtin(position) p: vec4<f32>, @location(0) wpos: vec3<f32>, @l
     rgb += vec3<f32>(spec) * 0.25;
     alpha = mix(0.08, 0.5, fres) * appear;
   } else if (ember) {
-    let pulse = 0.75 + 0.25 * sin(u.t.x * 3.2 + hash * 6.0);
-    rgb = vec3<f32>(1.0, 0.28, 0.04) * (0.9 + 0.2 * pulse);
-    rgb += vec3<f32>(1.0, 0.5, 0.08) * spec * 0.35;
+    let pulse = 0.8 + 0.2 * sin(u.t.x * 3.2 + hash * 6.0);
+    rgb = vec3<f32>(1.0, 0.30, 0.05) * (1.05 + 0.2 * pulse);
+    rgb += vec3<f32>(1.0, 0.45, 0.08) * 0.25;
     alpha = 1.0 * appear;
   } else if (plasma) {
     let w = abs(sin(i.wpos.x * 11.0 + i.wpos.y * 13.0 + u.t.x * 3.0) * sin(i.wpos.z * 9.0 - i.wpos.y * 7.0));
@@ -309,8 +309,8 @@ struct VSOut { @builtin(position) p: vec4<f32>, @location(0) wpos: vec3<f32>, @l
     alpha = mix(0.12, 0.62, fres) * appear;
   } else if (gold) {
     if (i.born > u.t.x + 0.2) { discard; }
-    rgb = vec3<f32>(1.0, 0.72, 0.12) * (0.7 + 0.3 * fres);
-    rgb += vec3<f32>(1.0, 0.95, 0.4) * spec * 0.5;
+    rgb = vec3<f32>(1.0, 0.78, 0.14) * 1.15;
+    rgb += vec3<f32>(1.0, 0.95, 0.4) * spec * 0.25;
     alpha = 1.0;
   } else if (filament) {
     rgb = vec3<f32>(0.35, 0.95, 1.0) * (0.65 + 0.45 * fres);
@@ -322,9 +322,9 @@ struct VSOut { @builtin(position) p: vec4<f32>, @location(0) wpos: vec3<f32>, @l
     rgb += vec3<f32>(spec) * 0.7;
     alpha = mix(0.45, 0.85, fres) * appear;
   } else {
-    rgb = i.col * (0.4 + 0.6 * diff);
-    rgb += i.col * fres * 0.4;
-    alpha = 0.9 * appear;
+    rgb = i.col * 1.2 + vec3<f32>(0.08, 0.12, 0.14);
+    rgb += i.col * fres * 0.2;
+    alpha = 1.0 * appear;
   }
   let fog = clamp(length(i.wpos - u.eye.xyz) / 40.0, 0.0, 1.0);
   rgb = mix(rgb, vec3<f32>(0.03, 0.05, 0.07), fog * 0.18);
@@ -356,7 +356,7 @@ function lookAt(e,c,up){
 function bakeViaWorker(src){
   return new Promise((resolve, reject) => {
     let w;
-    try { w = new Worker(src || "projection-bake-worker.js?i=xp1"); }
+    try { w = new Worker(src || "projection-bake-worker.js?i=xp2"); }
     catch (e) { reject(e); return; }
     const t = setTimeout(() => { try{w.terminate();}catch(_){ } reject(new Error("bake timeout")); }, 2500);
     w.onerror = e => { clearTimeout(t); try{w.terminate();}catch(_){ } reject(e); };
@@ -378,10 +378,10 @@ let bakedScene=null;
 let bakeInFlight=null;
 async function bakeScene(){
   if(bakedScene && bakedScene.P && bakedScene.P.length>6) return bakedScene;
-  try { bakedScene = await bakeViaWorker("projection-bake-worker.js?i=xp1"); }
+  try { bakedScene = await bakeViaWorker("projection-bake-worker.js?i=xp2"); }
   catch (e1) {
     try {
-      const src = await fetch("projection-bake-worker.js?i=xp1", {cache:"no-store"}).then(r => {
+      const src = await fetch("projection-bake-worker.js?i=xp2", {cache:"no-store"}).then(r => {
         if (!r.ok) throw new Error("worker fetch "+r.status);
         return r.text();
       });
@@ -398,7 +398,7 @@ async function bakeScene(){
 }
 
 let playing=true, tVal=0, gpuLive=false;
-let yaw=0.7, pitch=0.55, dragging=false, lastPtr=null;
+let yaw=0.7, pitch=0.85, dragging=false, lastPtr=null;
 let gpuBooting=false, gpuGen=0, needReboot=false, gpuGaveUp=false;
 let gpuSession=null, lastRebootAt=0, wdogUsed=false, recycleUsed=false;
 const hadController=!!(navigator.serviceWorker && navigator.serviceWorker.controller);
@@ -669,10 +669,11 @@ async function main(gen){
     const asp=canvas.width/Math.max(1,canvas.height);
     if(!dragging) yaw+=dt*0.12;
     const cp=Math.cos(pitch), sp=Math.sin(pitch);
+    const R=10.0;
     const eye=[
-      GRID[0] + Math.sin(yaw)*cp*7.2,
-      GRID[1] + sp*7.2 + 1.2,
-      GRID[2] + Math.cos(yaw)*cp*7.2
+      GRID[0] + Math.sin(yaw)*cp*R,
+      GRID[1] + sp*R,
+      GRID[2] + Math.cos(yaw)*cp*R
     ];
     const target=[GRID[0], 0.55, GRID[2]];
     try {
@@ -747,7 +748,7 @@ bakeInFlight=bakeScene();
   canvas.addEventListener("pointermove", ev=>{
     if(!dragging||!lastPtr) return;
     yaw+=(ev.clientX-lastPtr[0])*0.008;
-    pitch=Math.min(1.15, Math.max(0.18, pitch+(ev.clientY-lastPtr[1])*0.006));
+    pitch=Math.min(1.25, Math.max(0.25, pitch+(ev.clientY-lastPtr[1])*0.006));
     lastPtr=[ev.clientX, ev.clientY];
   });
   const up=()=>{ dragging=false; lastPtr=null; };
@@ -768,7 +769,7 @@ function runAudit(){
   const el=document.getElementById("audit");
   if(!el) return;
   const title=document.querySelector("h1")?.textContent||"";
-  const A=/ixp1/.test(title)?"ok":"fail";
+  const A=/ixp2/.test(title)?"ok":"fail";
   const D=!!(navigator.serviceWorker && navigator.serviceWorker.controller);
   const E=!!(window.deferredPrompt || window.matchMedia("(display-mode: standalone)").matches);
   const F=!!document.getElementById("installbtn");
@@ -779,7 +780,7 @@ function runAudit(){
     const ct=r.headers.get("content-type")||"";
     const B=/manifest|json/i.test(ct)?"ok":("fail "+ct);
     el.textContent=
-      "A title ixp1 "+A+"\n"+
+      "A title ixp2 "+A+"\n"+
       "B manifest MIME "+B+"\n"+
       "C icons 192+512 ok\n"+
       "D SW controlling "+(D?"ok":"fail")+"\n"+

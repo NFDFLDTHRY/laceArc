@@ -1,5 +1,5 @@
 /* Layer III. First client is not claimed. Update posts skip. */
-const CACHE = "lace-iii-ixp1";
+const CACHE = "lace-iii-ixp2";
 const PRE = ["./icon-192.png", "./icon-512.png"];
 self.addEventListener("message", e => {
   if (e.data && e.data.type === "skip") self.skipWaiting();

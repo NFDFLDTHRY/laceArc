@@ -1,6 +1,6 @@
 # Projection interaction pass 2 plan — keep the plasma; show the lace around it
 
-**Status:** PLAN. Not executed. Emission `[GAP]`.  
+**Status:** EXECUTED. Emission `[GAP]`. Title `ixp2`. Pitch 0.85 R=10. Emissive orange/gold/cyan. Plasma holes untouched.  
 **Station:** hologram  
 **Evidence:** `ixp1` shot, `t=0002 PTR`, `ms 64`, `GPU on`, `n=5586 f=6`. One green volume. Best plasma yet. Rest of the phone is navy. Cubes, gold bars, cyan traces not in the frame.
 
