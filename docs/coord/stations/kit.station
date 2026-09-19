@@ -2,6 +2,6 @@ STATUS: HELD
 STATION: kit
 OWNS: docs/kit/** .claude/**
 AGENT: Grok-kit
-BASE: 6f78d3c55711785153cdfc31b89c07871f522bf8
-SINCE: 2026-09-19T06:52:50Z
-NOTE: Court door pass 2 EXECUTED. Fields on quiet-door-3-ascii.md. Next pass 3 grain. Φ [GAP].
+BASE: 4bfbc469c7e61d1cbfb328811b2b210d812aef2b
+SINCE: 2026-09-19T06:53:53Z
+NOTE: Court door pass 3 PLAN. Pass 1–2 EXECUTED. Grain. Φ [GAP].
