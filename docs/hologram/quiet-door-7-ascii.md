@@ -1,8 +1,9 @@
 # Quiet door #7 — Hologram ASCII
 
+**Status:** CLOSED 6/6. Receipt: [quiet-door-7-receipt.md](quiet-door-7-receipt.md).  
 **Object:** `docs/hologram/README.md`  
 **Station:** hologram.  
-**Executed:** [quiet-door-7-pass-1-plan.md](quiet-door-7-pass-1-plan.md) · [quiet-door-7-pass-2-plan.md](quiet-door-7-pass-2-plan.md) · [quiet-door-7-pass-3-plan.md](quiet-door-7-pass-3-plan.md) · [quiet-door-7-pass-4-plan.md](quiet-door-7-pass-4-plan.md) · [quiet-door-7-pass-5-plan.md](quiet-door-7-pass-5-plan.md).  
+**Executed:** [quiet-door-7-pass-1-plan.md](quiet-door-7-pass-1-plan.md) · [quiet-door-7-pass-2-plan.md](quiet-door-7-pass-2-plan.md) · [quiet-door-7-pass-3-plan.md](quiet-door-7-pass-3-plan.md) · [quiet-door-7-pass-4-plan.md](quiet-door-7-pass-4-plan.md) · [quiet-door-7-pass-5-plan.md](quiet-door-7-pass-5-plan.md) · [quiet-door-7-pass-6-plan.md](quiet-door-7-pass-6-plan.md).  
 **Not:** Core. Not Graphic E. Not Graphics A–D. Not Hands. Not door #6 pass 7. Not projection iter 5.  
 **Emission:** `[GAP]`. No `src/`. Hologram door bytes untouched. HTML untouched. Renderer unclaimed. Door #6 CLOSED.
 

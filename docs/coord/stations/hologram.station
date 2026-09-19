@@ -2,6 +2,6 @@ STATUS: HELD
 STATION: hologram
 OWNS: docs/hologram/** docs/clock/**
 AGENT: Grok-hologram
-BASE: 13b945496029654fe747ed934acf700dd8a5d638
-SINCE: 2026-09-19T14:04:06Z
-NOTE: Quiet door #7 pass 6 PLAN. Pass 1–5 EXECUTED. Receipt close. Door+HTML untouched. Door #6 CLOSED. Φ [GAP].
+BASE: b0c76920529a04bed361902ff21050713e172f57
+SINCE: 2026-09-19T14:06:32Z
+NOTE: Quiet door #7 pass 6 EXECUTED. CLOSED 6/6. Receipt pending pin. Door #6 CLOSED. Φ [GAP].
