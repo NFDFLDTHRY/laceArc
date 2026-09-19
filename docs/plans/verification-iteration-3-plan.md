@@ -1,6 +1,6 @@
 # Verification iteration 3 — what rots, and what does not
 
-**Status:** `[PROPOSAL]`. **Pass 1 EXECUTED** at `6be7d27`; passes 2–6 NOT_RUN.
+**Status:** **CLOSED** — [the receipt](verification-iteration-3-receipt.md). Passes 1–6 EXECUTED. **Pass 1 EXECUTED** at `6be7d27`; passes 2–6 NOT_RUN.
 **Station:** maps. **Emission:** `[GAP]`. No `src/`.
 **Previous:** [iteration 2](verification-iteration-2-receipt.md), CLOSED. Before it, [iteration 1](verification-iteration-1-receipt.md) and [the restructure](restructure-plan.md).
 
