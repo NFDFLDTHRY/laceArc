@@ -111,6 +111,26 @@ T5 five-stakes: **skip** — PAGE 2/5 source pins and morals agree with this PDF
 
 ---
 
+## Pass 6 receipt
+
+| Field | Value |
+|---|---|
+| Status | EXECUTED |
+| When | 2026-09-18 ~17:19 PT |
+| Station | clipboards · agent `reference-Mapper` |
+| Plan | [rowlands-pass-6-plan.md](rowlands-pass-6-plan.md) |
+| Hands skim | shoe → graphics A–D → systems-manifest → law → reason-model-map §2 (R1–R6 read-only) → five-stakes PAGE 2/5 → Wave A/B cards + ASCII SOURCE MACHINERY · this plan |
+| PDF | **PRESENT** — `refs/local/rowlands-zero-to-infinity.pdf`; gitignored; `pdftotext` only if pin dispute (none required this pass) |
+| Product | P6-X accuracy matrix (14/14 PASS after P6-F); P6-O canonical SOURCE MACHINERY (one overview; Core OFF-board; Φ `[GAP]`); Wave C **skipped** (default) |
+| P6-F fixes | P-B2/B3/B4 Implements ↔ numbered card steps; P-A6/P-B4 stamp align to cards; duplicate `## Cross-walk (Wave A)` header removed on mechanisms |
+| Artifacts | [rowlands-zero-to-infinity-mechanisms.md](rowlands-zero-to-infinity-mechanisms.md) · [rowlands-zero-to-infinity-ascii-machinery.md](rowlands-zero-to-infinity-ascii-machinery.md) |
+| Amended | A–X morals · Pass 2–5 deltas · reason-model-map · law · graphics · src/ · systems-manifest · systems-manifest-ascii | **No** (clipboards only; systems-manifest-ascii untouched) |
+| Deferred | Wave C (ch.13–15) skipped this pass; Wave D (ch.17–18, 20–21, App. A) |
+| Emission | still `[GAP]`; no FORBID stamp softened; no WORD/POINTER in fences |
+| Accuracy | 14 PASS · 0 FIX leftover · 0 blocking OPEN |
+
+---
+
 ## Pass 5 receipt
 
 | Field | Value |

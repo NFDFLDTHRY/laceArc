@@ -1,6 +1,6 @@
 # Rowlands — *Zero to Infinity* — ASCII source-machinery model (Shadow)
 
-**Status:** Pass 5 EXECUTED (Wave A P-A1…P-A9 + Wave B P-B1…P-B5 + SOURCE MACHINERY Wave B fork). Emission `[GAP]`.  
+**Status:** Pass 6 EXECUTED (accuracy matrix P6-X; Wave A P-A1…P-A9 + Wave B P-B1…P-B5; SOURCE MACHINERY canonical; Wave C skipped). Emission `[GAP]`.  
 **Source:** Peter Rowlands, *Zero to Infinity: The Foundations of Physics* · Vol. 41 · World Scientific 2007  
 **PDF:** `refs/local/rowlands-zero-to-infinity.pdf` (738 pp., text layer; **never git-add**).  
 **Offset:** printed p ≈ PDF p − 25 (ch.1 p.1 ≈ PDF 26).  
@@ -37,7 +37,9 @@ Law: empty start · no extra rooms · “rewrite” ≠ mutate-WORD · Hands win
 
 ---
 
-## SOURCE MACHINERY overview (book side only)
+## SOURCE MACHINERY overview (canonical · book side only)
+
+> Pass 6 P6-O: single authoritative overview (generative spine A + Wave B fork). No duplicate overview blocks retired — only one existed after Pass 5.
 
 ```
   [zero totality]
@@ -238,10 +240,10 @@ stamp under fence: FORBID-as-Core-schema (R4)
 |---|---|
 | Mechanism cite | M-A6 · §3.5 PDF 102+ / p.77+; vacuum phrase PDF 99; ch.6 |
 | Sighting | `pdftotext` PDF 99, 102–104 |
-| Lace stamp | **FORBID-as-Core-write** |
+| Lace stamp | **FORBID-as-Core-write** / meaning table (R4) |
 | Map cite | R4 |
 | False friend | Nilpotent state ⇒ Core write / Φ fill |
-| Implements | M-A6: remap → free particle → nilpotent square-zero |
+| Implements | M-A6 steps: remap → free particle → nilpotent square-zero |
 
 ```
   conventional Dirac form
@@ -261,7 +263,7 @@ stamp under fence: FORBID-as-Core-schema (R4)
   vacuum phrase (PDF 99): "rest of the universe"
   -- still physics recovery, not Lace rooms --
 ```
-stamp under fence: FORBID-as-Core-write (R4)
+stamp under fence: FORBID-as-Core-write / meaning table (R4)
 
 
 ---
@@ -369,7 +371,7 @@ stamp under fence: FORBID R5/R6 (opened =/= imported)
 | Lace stamp | **FORBID-as-Core-schema**; **KEEP-read** |
 | Map cite | R4 nbhd |
 | False friend | Dual hierarchy ⇒ second Lace store |
-| Implements | M-B1: dual ladder + optional G2→SM factors; stamp |
+| Implements | M-B1 steps 1–4: dual hierarchy → C2/C4/Q4 ladder → optional G2→SM; step 5 stamp |
 
 ```
   dual hierarchy (book)
@@ -401,7 +403,7 @@ stamp under fence: FORBID-as-Core-schema; KEEP-read
 | Lace stamp | **FORBID-as-Core-write**; **SILENT** append |
 | Map cite | R3/R4 |
 | False friend | Streamline ⇒ mutate at an index / Lace append |
-| Implements | M-B2 miniature: overspecification → one QSV |
+| Implements | M-B2 steps 1–3: locate redundancy → defragment → QSV once (overspecification → one QSV); step 5 stamp |
 
 ```
   BEFORE (redundant)              AFTER (streamlined)
@@ -431,7 +433,7 @@ stamp under fence: FORBID-as-Core-write; SILENT
 | Lace stamp | **FORBID-as-Core-schema** / meaning table |
 | Map cite | R4 |
 | False friend | Emergence ⇒ Core meaning table / Phi fill |
-| Implements | M-B3: formalism generates physics readings |
+| Implements | M-B3 steps 1–4: formalism generator → spin/helicity → vacuum ops → boson KG path; step 5 stamp |
 
 ```
            [ nilpotent box ]
@@ -455,10 +457,10 @@ stamp under fence: FORBID-as-Core-schema (R4)
 |---|---|
 | Mechanism cite | M-B4 · ch.10 p.239 / PDF 264; Coulomb PDF 266; SU(3)/p PDF 275 |
 | Sighting | `pdftotext` this pass |
-| Lace stamp | **FORBID-as-Core-fields** |
+| Lace stamp | **FORBID-as-Core-fields** / force table |
 | Map cite | R4 |
 | False friend | Force package ⇒ Core fields / charge columns |
-| Implements | M-B4 miniature: Coulomb minimum; p-term SU(3) |
+| Implements | M-B4 steps 1–3: require nilpotency → Coulomb min (±A/r) → SU(3) from p; step 5 stamp |
 
 ```
   one package: (±kE ± iip + ijm)
@@ -480,7 +482,7 @@ stamp under fence: FORBID-as-Core-schema (R4)
 
   FORBID Core fields / force table
 ```
-stamp under fence: FORBID-as-Core-fields
+stamp under fence: FORBID-as-Core-fields / force table
 
 
 ---
@@ -494,7 +496,7 @@ stamp under fence: FORBID-as-Core-fields
 | Lace stamp | **FORBID-as-history-store** / Φ scheduler |
 | Map cite | R4 nbhd; Φ stays `[GAP]` |
 | False friend | Nilpotent QFT ⇒ Lace history store / emission clock |
-| Implements | M-B5: propagator sketch + renormalization neighborhood stamp |
+| Implements | M-B5 steps 1–4: perturb series → S_F(p) → IR claim → renorm neighborhood; step 5 stamp |
 
 ```
   perturb: psi0 -> psi1 -> psi2 -> ...
@@ -525,15 +527,42 @@ stamp under fence: FORBID-as-history-store / Phi scheduler
 | P-A3 | M-A3 | KEEP-read; FORBID Core ops | R3 nbhd | PAGE C |
 | P-A4 | M-A4 | KEEP-read; FORBID rooms | R2 | PAGE B · FM-R2 |
 | P-A5 | M-A5 | FORBID-as-Core-schema | R4 | PAGE D · FM-R4 |
-| P-A6 | M-A6 | FORBID-as-Core-write | R4 | PAGE D · P3-P |
+| P-A6 | M-A6 | FORBID-as-Core-write / meaning table | R4 | PAGE D · P3-P |
 | P-A7 | M-A7 | FORBID rooms/schema | R4 | PAGE D · vacuum=R4 |
 | P-A8 | M-A8 | KEEP-read; FORBID rooms | R2 | PAGE B · FM-R2 |
 | P-A9 | M-A9 | FORBID R5/R6 | R5, R6 | PAGE E · FM-R5/R6 |
 | P-B1 | M-B1 | FORBID-as-Core-schema; KEEP-read | R4 nbhd | PAGE D |
 | P-B2 | M-B2 | FORBID-as-Core-write; SILENT | R3/R4 | PAGE C/D |
 | P-B3 | M-B3 | FORBID schema / meaning table | R4 | PAGE D · FM-R4 |
-| P-B4 | M-B4 | FORBID-as-Core-fields | R4 | PAGE D · FM-R4 |
+| P-B4 | M-B4 | FORBID-as-Core-fields / force table | R4 | PAGE D · FM-R4 |
 | P-B5 | M-B5 | FORBID-as-history-store / Φ | R4 nbhd | PAGE D · `[GAP]` |
+
+---
+
+## Pass 6 accuracy matrix (P6-X)
+
+Covers all M-A1…A9 and M-B1…B5 vs P-A*/P-B* and the canonical SOURCE MACHINERY overview. Scoring: Pin OK / Implements OK / Fence OK / Overview OK → PASS / FIX.
+
+| Overview node | P-ID | M-ID | Stamp | Pin OK? | Implements OK? | Fence OK? | Overview OK? | Verdict |
+|---|---|---|---|---|---|---|---|---|
+| zero totality | P-A1 | M-A1 | KEEP-read | Y | Y | Y | Y | **PASS** |
+| rewrite: subalphabet → new zero alphabet | P-A2 | M-A2 | FORBID-as-mutate-WORD; SILENT | Y | Y | Y | Y | **PASS** |
+| conjugation / complexification / dimensionalization | P-A3 | M-A3 | KEEP-read; FORBID-as-Core-ops | Y | Y | Y | Y | **PASS** |
+| dual / STMC · why physics works | P-A4 | M-A4 | KEEP-read; FORBID-extra-rooms | Y | Y | Y | Y | **PASS** |
+| Dirac algebra | P-A5 | M-A5 | FORBID-as-Core-schema | Y | Y | Y | Y | **PASS** |
+| nilpotent Dirac state | P-A6 | M-A6 | FORBID-as-Core-write / meaning table | Y | Y | Y | Y | **PASS** |
+| vacuum tables | P-A7 | M-A7 | FORBID-extra-rooms / FORBID-as-Core-schema | Y | Y | Y | Y | **PASS** |
+| dimension explained (strings = math rep) | P-A8 | M-A8 | KEEP-read; FORBID-extra-rooms | Y | Y | Y | Y | **PASS** |
+| DNA / UG rewrite fork | P-A9 | M-A9 | FORBID-R5/R6 | Y | Y | Y | Y | **PASS** |
+| groups / dual hierarchy | P-B1 | M-B1 | FORBID-as-Core-schema; KEEP-read | Y | Y | Y | Y | **PASS** |
+| break Dirac code / streamline | P-B2 | M-B2 | FORBID-as-Core-write; SILENT | Y | Y (P6-F: steps 1–3) | Y | Y | **PASS** |
+| emergence fan-out | P-B3 | M-B3 | FORBID-as-Core-schema / meaning table | Y | Y (P6-F: steps 1–4) | Y | Y | **PASS** |
+| E / S / W from one package | P-B4 | M-B4 | FORBID-as-Core-fields | Y | Y (P6-F: steps 1–3) | Y | Y | **PASS** |
+| QFT / propagator methods | P-B5 | M-B5 | FORBID-as-history-store / Φ | Y | Y | Y | Y | **PASS** |
+
+**Summary:** 14/14 **PASS** after P6-F. Leftover OPENs: none blocking. Wave C **skipped** (default; accuracy green but not opened this pass). Φ = `[GAP]`. Lace Core OFF-board (`systems-manifest-ascii.md` untouched).
+
+Same matrix also on [rowlands-zero-to-infinity-mechanisms.md](rowlands-zero-to-infinity-mechanisms.md).
 
 ---
 
@@ -541,7 +570,7 @@ stamp under fence: FORBID-as-history-store / Phi scheduler
 
 | Wave | Panel seeds (not drawn) | Book seeds | Default |
 |---|---|---|---|
-| **C** | P-C1 fermion/boson charge tables; P-C2 GUT/masses | ch.13–14; ch.15 | **Deferred** |
+| **C** | P-C1 fermion/boson charge tables; P-C2 GUT/masses | ch.13–14; ch.15 | **Deferred** (Pass 6 skipped Wave C) |
 | **D** | P-D1 gravity/cosmology; P-D2 Nature’s rules / infinity; P-D3 App. A | ch.17–18, 21; ch.20–21; App. A | **Deferred** |
 
 ---
@@ -553,3 +582,4 @@ Walk M-B2 steps on P-B2 alone; refuse “break Dirac code” as mutate-WORD.
 Refuse “nilpotent QFT ⇒ Lace history store” using P-B5 stamp + false friend.  
 Overview shows generative spine + Wave B fork without looking like Core tape.  
 Lace Core OFF board. Φ = `[GAP]`.
+Pass 6 steward: pick three overview nodes; find matching card steps from the panel Implements alone; refuse Core conflation via OFF-board legend.

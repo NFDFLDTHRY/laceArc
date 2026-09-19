@@ -1,7 +1,7 @@
 # Rowlands pass 6 — accurate mapping mechanisms ↔ ASCII SOURCE MACHINERY
 
-**Status:** PLANNED — not executed. Emission `[GAP]`.  
-**Station:** clipboards (HELD `reference-Mapper`)  
+**Status:** EXECUTED — accuracy matrix + P6-F fixes + canonical overview; Wave C skipped. Emission `[GAP]`.  
+**Station:** clipboards (released after execute · was `reference-Mapper`)  
 **Base at plan:** refresh to current `origin/main` before execute  
 **Prerequisite:** Pass 5 Wave B commits should be on the working branch (push or rebase first if still only local).  
 **Book:** Peter Rowlands, *Zero to Infinity* · K&E Vol. 41  
@@ -175,6 +175,12 @@ Ask before push.
 3. Mark plan EXECUTED.  
 4. Check · commit · release.  
 5. Stop.
+
+---
+
+## Execute record
+
+EXECUTED 2026-09-18 ~17:19 PT · agent `reference-Mapper` · P6-X 14/14 PASS · Wave C skipped · commit intent: `Rowlands pass 6: accuracy matrix mechanisms↔ASCII SOURCE MACHINERY` · no push.
 
 ---
 

@@ -1,6 +1,6 @@
 # Rowlands — *Zero to Infinity* — mechanism cards (constructive algorithms)
 
-**Status:** Pass 5 EXECUTED (Wave A M-A1…M-A9 + Wave B M-B1…M-B5; Waves C–D deferred with seeds). Emission `[GAP]`.  
+**Status:** Pass 6 EXECUTED (accuracy matrix P6-X; Wave A M-A1…M-A9 + Wave B M-B1…M-B5; Wave C skipped; Waves C–D still deferred). Emission `[GAP]`.  
 **Source:** Peter Rowlands, *Zero to Infinity: The Foundations of Physics* · Series on Knots and Everything Vol. 41 · World Scientific 2007  
 **PDF:** `refs/local/rowlands-zero-to-infinity.pdf` (738 pp., text layer; **never git-add**)  
 **Offset:** printed p ≈ PDF p − 25 after front matter (Pass 1: ch.1 printed p.1 ≈ PDF 26)  
@@ -590,14 +590,37 @@ Phi = [GAP]
 
 | Wave | ID seeds (not filled) | Book seeds | Default |
 |---|---|---|---|
-| **C** | M-C1 charge tables ch.13–14; M-C2 GUT/masses ch.15 | ch.13–14; ch.15 | **Deferred** |
+| **C** | M-C1 charge tables ch.13–14; M-C2 GUT/masses ch.15 | ch.13–14; ch.15 | **Deferred** (Pass 6 skipped Wave C) |
 | **D** | M-D1 gravity/cosmology ch.17–18, 21; M-D2 Nature’s rules/infinity ch.20–21; M-D3 App. A | ch.17–18, 21; ch.20–21; App. A | **Deferred** |
 
-Pass 5 success = Wave B cards (+ ASCII panels). Wave A untouched. Future passes may fill C–D without softening A/B stamps.
+Pass 6 success = P6-X accuracy matrix all PASS after P6-F; Wave C skipped (default). Future passes may fill C–D without softening A/B stamps.
 
 ---
 
-## Cross-walk (Wave A)
+## Pass 6 accuracy matrix (P6-X)
+
+Covers all M-A1…A9 and M-B1…B5 vs P-A*/P-B* and the canonical SOURCE MACHINERY overview in [rowlands-zero-to-infinity-ascii-machinery.md](rowlands-zero-to-infinity-ascii-machinery.md). Scoring: Pin OK / Implements OK / Fence OK / Overview OK → PASS / FIX.
+
+| Overview node | P-ID | M-ID | Stamp | Pin OK? | Implements OK? | Fence OK? | Overview OK? | Verdict |
+|---|---|---|---|---|---|---|---|---|
+| zero totality | P-A1 | M-A1 | KEEP-read | Y | Y | Y | Y | **PASS** |
+| rewrite: subalphabet → new zero alphabet | P-A2 | M-A2 | FORBID-as-mutate-WORD; SILENT | Y | Y | Y | Y | **PASS** |
+| conjugation / complexification / dimensionalization | P-A3 | M-A3 | KEEP-read; FORBID-as-Core-ops | Y | Y | Y | Y | **PASS** |
+| dual / STMC · why physics works | P-A4 | M-A4 | KEEP-read; FORBID-extra-rooms | Y | Y | Y | Y | **PASS** |
+| Dirac algebra | P-A5 | M-A5 | FORBID-as-Core-schema | Y | Y | Y | Y | **PASS** |
+| nilpotent Dirac state | P-A6 | M-A6 | FORBID-as-Core-write / meaning table | Y | Y | Y | Y | **PASS** |
+| vacuum tables | P-A7 | M-A7 | FORBID-extra-rooms / FORBID-as-Core-schema | Y | Y | Y | Y | **PASS** |
+| dimension explained (strings = math rep) | P-A8 | M-A8 | KEEP-read; FORBID-extra-rooms | Y | Y | Y | Y | **PASS** |
+| DNA / UG rewrite fork | P-A9 | M-A9 | FORBID-R5/R6 | Y | Y | Y | Y | **PASS** |
+| groups / dual hierarchy | P-B1 | M-B1 | FORBID-as-Core-schema; KEEP-read | Y | Y | Y | Y | **PASS** |
+| break Dirac code / streamline | P-B2 | M-B2 | FORBID-as-Core-write; SILENT | Y | Y (P6-F: steps 1–3) | Y | Y | **PASS** |
+| emergence fan-out | P-B3 | M-B3 | FORBID-as-Core-schema / meaning table | Y | Y (P6-F: steps 1–4) | Y | Y | **PASS** |
+| E / S / W from one package | P-B4 | M-B4 | FORBID-as-Core-fields | Y | Y (P6-F: steps 1–3) | Y | Y | **PASS** |
+| QFT / propagator methods | P-B5 | M-B5 | FORBID-as-history-store / Φ | Y | Y | Y | Y | **PASS** |
+
+**Summary:** 14/14 **PASS** after P6-F (Implements↔card steps on P-B2/B3/B4; stamp align P-A6/P-B4; duplicate Cross-walk header removed). Leftover OPENs: none blocking. Wave C **skipped**. Φ = `[GAP]`.
+
+---
 
 ## Cross-walk (Wave A)
 
@@ -608,7 +631,7 @@ Pass 5 success = Wave B cards (+ ASCII panels). Wave A untouched. Future passes 
 | M-A3 | P-A3 | KEEP-read algebra; FORBID Core ops | R3 nbhd | PAGE C |
 | M-A4 | P-A4 | KEEP-read explain; FORBID rooms | R2 | PAGE B · FM-R2 |
 | M-A5 | P-A5 | FORBID-as-Core-schema | R4 | PAGE D · FM-R4 |
-| M-A6 | P-A6 | FORBID-as-Core-write | R4 | PAGE D · P3-P |
+| M-A6 | P-A6 | FORBID-as-Core-write / meaning table | R4 | PAGE D · P3-P |
 | M-A7 | P-A7 | FORBID Core rooms/schema | R4 | PAGE D · vacuum=R4 |
 | M-A8 | P-A8 | KEEP-read R2; FORBID rooms | R2 | PAGE B · FM-R2 |
 | M-A9 | P-A9 | FORBID R5/R6 | R5, R6 | PAGE E · FM-R5/R6 |
@@ -621,7 +644,7 @@ Pass 5 success = Wave B cards (+ ASCII panels). Wave A untouched. Future passes 
 | M-B1 | P-B1 | FORBID-as-Core-schema; KEEP-read | R4 nbhd | PAGE D |
 | M-B2 | P-B2 | FORBID-as-Core-write; SILENT append | R3/R4 | PAGE C/D |
 | M-B3 | P-B3 | FORBID-as-Core-schema / meaning table | R4 | PAGE D · FM-R4 |
-| M-B4 | P-B4 | FORBID-as-Core-fields | R4 | PAGE D · FM-R4 |
+| M-B4 | P-B4 | FORBID-as-Core-fields / force table | R4 | PAGE D · FM-R4 |
 | M-B5 | P-B5 | FORBID-as-history-store / Φ scheduler | R4 nbhd | PAGE D · `[GAP]` |
 
 Φ / POINTER when·arity·adjacency: **SILENT `[GAP]`** on every card. D7 OPENs ≠ Φ fill.
@@ -639,3 +662,4 @@ Group duals are book readings — not a second Lace store.
 “Breaking the Dirac code” streamlines a physics equation — not mutating WORD @ i.  
 Nilpotent emergence / QFT ≠ Φ scheduler.  
 Φ stays `[GAP]`.
+Pass 6: ASCII systems diagram is a picture of these cards — not a second Core.
