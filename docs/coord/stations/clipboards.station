@@ -4,4 +4,4 @@ OWNS: docs/clipboards/**
 AGENT: -
 BASE: -
 SINCE: -
-NOTE: webgpu Pass 1 PLAN landed (HELD/NOT EXECUTED); wasm-spec-3 Pass 6 EXECUTED (wasm64); FREE
+NOTE: webgpu Pass 1 EXECUTED (host/GPU CRD clipboard); wasm-spec-3 Pass 6 EXECUTED (wasm64); FREE
