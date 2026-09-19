@@ -3,7 +3,7 @@
 **Status:** CLOSED. Six of six.  
 **Station:** hologram.  
 **Object:** `docs/clock/README.md`  
-**Pin:** `PENDING` (stamped on the execute commit).  
+**Pin:** `f568275` (execute `f5682758103279d2b790f88bfb3de798d9c0daf8`).  
 **Diagram:** [`quiet-door-6-ascii.md`](quiet-door-6-ascii.md).  
 **Not:** projection iter 5. Not Graphic E. Not HTML rewrite. Not renderer claim. Not door #7.  
 **Emission:** `[GAP]`. No `src/`. Clock door bytes untouched. HTML untouched.
