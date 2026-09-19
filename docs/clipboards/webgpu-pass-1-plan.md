@@ -1,10 +1,10 @@
 # WebGPU CRD 2026-09-15 — Pass 1 PLAN (PDF admission · HOST/GPU API reference)
 
-**Status:** **HELD / NOT EXECUTED** — plan only (2026-09-18 ~20:42 PT).  
+**Status:** **EXECUTED** — Pass 1 products landed (2026-09-18 ~20:45 PT).  
 **Station:** clipboards (claim note: `webgpu Pass 1 PLAN only`)  
 **Base at plan:** `0b97eec` (= `origin/main` after wasm-spec-3 Pass 6 push) · refresh `git pull --ff-only` before any execute  
 **Emission:** still `[GAP]` (`docs/pointer-emission.md` = DRAFT, not human-accepted)  
-**Push:** **DO NOT PUSH** this plan turn. **DO NOT EXECUTE** Pass 1 products in this commit.  
+**Push:** **DO NOT PUSH** this execute turn (ask before push). Pass 1 products landed.  
 **Kebab strand:** stick to `webgpu-*` for all products of this shelf (`webgpu-pass-1-plan.md`, future `webgpu-clipboard.md`, …).
 
 ---
@@ -262,9 +262,10 @@ WebGPU is not the wasm64 target.
 
 | Field | Value |
 |---|---|
-| Status | **NOT EXECUTED** (plan only) |
-| When | — |
-| Station | clipboards · plan claim `webgpu Pass 1 PLAN only` |
-| Products | **none yet** — `webgpu-clipboard.md` deferred to execute |
+| Status | **EXECUTED** |
+| When | 2026-09-18 ~20:45 PT |
+| Station | clipboards · claim `webgpu Pass 1 EXECUTE` |
+| Products | [`webgpu-clipboard.md`](webgpu-clipboard.md) — PAGE **A–H, X** PDF-sighted; **no** ascii Wave A; PDF symlink `refs/local/webgpu-crd-20260915.pdf` (gitignored, never staged) |
+| PDF | WebGPU CRD **15 September 2026**, **321** pp., SHA `6bc31a9e21074a039a5c854f1bfc33bdbf282cd8b48e22a4977ca406ca64afe1` |
 | Emission | still `[GAP]` |
-| Push | **NOT pushed** (per plan) |
+| Push | **NOT pushed** (per execute instructions) |
