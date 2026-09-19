@@ -1,7 +1,7 @@
-STATUS: HELD
+STATUS: FREE
 STATION: history
 OWNS: docs/history-recovered* docs/history/**
-AGENT: Grok-history
-BASE: 532c4fb02ace9992a3254534dca9ba813abd54c6
-SINCE: 2026-09-19T07:34:46Z
-NOTE: Quiet door #5 pass 6 EXECUTE pending. Receipt. Not pass 8. Φ [GAP].
+AGENT: -
+BASE: -
+SINCE: -
+NOTE: Quiet door #5 CLOSED 6/6. History FREE. Walkers dead. Not pass 8. Φ [GAP].
