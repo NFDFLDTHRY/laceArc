@@ -21,6 +21,7 @@
 | [verification-iter1-pass-3-findings.md](verification-iter1-pass-3-findings.md) | pass 3 record, 3a-3c complete. No document has ever recorded a positive evidence state; the task template, not the law, is the de-facto standard |
 | [verification-iter1-pass-4-plan.md](verification-iter1-pass-4-plan.md) | `[PLAN]` iteration 1 pass 4: the audit log's verdicts. 17 of 17 ticks stale, 392 commits behind; date them, do not re-walk |
 | [verification-iter1-pass-5-plan.md](verification-iter1-pass-5-plan.md) | `[PLAN]` iteration 1 pass 5: **enforcement, human rulings.** Thirteen decisions; 2b-2d queued for the next phase |
+| [verification-iter1-phase-6-plan.md](verification-iter1-phase-6-plan.md) | `[PLAN]` iteration 1 phase 6: run the queued 2b-2d, then the receipt. Graphic A probed; a second MISQUOTE and typos in the source |
 | [restructure-plan.md](restructure-plan.md) | `[PROPOSAL]` coherence of the whole tree: twelve measured findings, eight phases, one station per commit; supersedes the defrag plan as filing plan of record |
 
 Sub-shelves: [fixtures/](fixtures/README.md) sealed golden IR · [tools/](tools/README.md) host validator.
