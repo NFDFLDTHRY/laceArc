@@ -1,6 +1,6 @@
 # Petersen & Zech pass 5 — ASCII as order proposal + accuracy steward
 
-**Status:** PLANNED — not executed. Emission `[GAP]`.  
+**Status:** **EXECUTED** — Pass 5 complete. Emission `[GAP]`.  
 **Station:** clipboards (HELD `reference-Mapper`)  
 **Base at plan:** refresh to current `origin/main` before execute (Pass 4 may still be local — sync/rebase first)  
 **Book:** Philipp Petersen & Jakob Zech, *Mathematical theory of deep learning*  
@@ -207,3 +207,23 @@ Training boxes still do not rewrite Lace history.
 NTK boxes still are not a second store.  
 Decisive judgment is release/stop — not Φ.  
 `[GAP]` remains.
+
+---
+
+## Execution receipt (Pass 5)
+
+| Field | Value |
+|---|---|
+| When | 2026-09-18 ~18:45 PT |
+| Agent | `reference-Mapper` |
+| P5-X | **11 PASS · 0 FIX** (9 Wave A + input spine + Core/Φ off-board) |
+| P5-F | none |
+| P5-O | one canonical SOURCE MACHINERY overview in ascii-machinery.md |
+| P5-P | Order Proposal on clipboard Pass 5 + short ascii mirror |
+| P5-R | clipboard Pass 5 receipt |
+| Wave B | **SKIP** (default) |
+| Φ | still `[GAP]` |
+| Touched | `petersen-zech-clipboard.md` · `petersen-zech-ascii-machinery.md` · this plan |
+| Untouched | mechanisms · PAGE morals · FM-P* · P3-M · map · law · graphics · systems-manifest · Core ASCII · src/ · PDF |
+
+Acceptance: P5-X all PASS; singular overview; Order Proposal stamped Shadow / FORBID-as-Core-write / FORBID-as-Lace-history / FORBID-as-store / SILENT-for-Lace-append; stage→hygiene + file-order present; no Φ invent; PDF never staged.

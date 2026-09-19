@@ -305,6 +305,82 @@ PDF is **PRESENT** (do not narrate absent). Pass 1 receipt: `refs/local/petersen
 
 Optional pointer under P3-M: Pass 4 ASCII diagrams of Wave A live in [petersen-zech-ascii-machinery.md](petersen-zech-ascii-machinery.md) (P-A1…P-A9). P3-M teeth unchanged.
 
+## Pass 5 — Accuracy steward + Order Proposal (Shadow)
+
+**Status:** EXECUTED · 2026-09-18 ~18:45 PT · station clipboards · `reference-Mapper`  
+**Plan:** [petersen-zech-pass-5-plan.md](petersen-zech-pass-5-plan.md)  
+**ASCII:** [petersen-zech-ascii-machinery.md](petersen-zech-ascii-machinery.md) · **Mechanisms:** [petersen-zech-mechanisms.md](petersen-zech-mechanisms.md)  
+**Law:** Pass 4 SOURCE MACHINERY is a **Shadow order proposal**, not Core. Emission Φ still `[GAP]`. Wave B **SKIP**.
+
+### P5-X — Accuracy matrix (M-A* ↔ P-A* ↔ overview)
+
+Scoring: Implements / Fence / Overview / Pin all Y → **PASS**. Every FIX would name an edit target. Prefer panel/overview/cross-walk fixes over rewriting M-A* bodies. P4-X 9/9 PASS is **baseline only** — this matrix re-walks (not rubber-stamp).
+
+| node (overview) | P-A* | M-A* | stamp | Implements OK | Fence OK | Overview OK | Pin OK | PASS/FIX |
+|---|---|---|---|---|---|---|---|---|
+| [feedforward Phi(x;w)] | P-A1 | M-A1 | KEEP-read; FORBID star=neuron / FORBID-as-Core-type | Y | Y | Y | Y | **PASS** |
+| [same Phi, many (arch,w)] | P-A2 | M-A2 | KEEP-read (P5); FORBID-Φ-sameness-as-identity | Y | Y | Y | Y | **PASS** |
+| [approx / ReLU pieces / depth] (approx) | P-A3 | M-A3 | KEEP-read existence; FORBID-approx-as-possession | Y | Y | Y | Y | **PASS** |
+| [approx / ReLU pieces / depth] (ReLU/CPWL) | P-A4 | M-A4 | KEEP-read; FORBID-as-Core-ops | Y | Y | Y | Y | **PASS** |
+| [approx / ReLU pieces / depth] (depth) | P-A5 | M-A5 | KEEP-read; FORBID-as-Lace-rooms | Y | Y | Y | Y | **PASS** |
+| [high-d / Barron / composition] | P-A6 | M-A6 | KEEP-read; FORBID as Core dimension axis | Y | Y | Y | Y | **PASS** |
+| [interpolation / reconstruction] | P-A7 | M-A7 | KEEP-read; FORBID-as-POINTER-when | Y | Y | Y | Y | **PASS** |
+| [train: GD/SGD/backprop on w] | P-A8 | M-A8 | **FORBID-as-Lace-history**; SILENT-for-Lace-append; FORBID-as-Core-write | Y | Y | Y | Y | **PASS** |
+| [NTK / infinite-width limit] | P-A9 | M-A9 | **FORBID-as-store**; width≠Piece 12; FORBID-as-Core-write | Y | Y | Y | Y | **PASS** |
+| [input x] (input spine) | — | — | observe shelf first | — | Y | Y | Y | **PASS** |
+| Lace Core / Graphic D / Phi OFF board | — | — | FORBIDDEN off this board; Φ=`[GAP]` | — | Y | Y | Y | **PASS** |
+
+**Verdict:** **11 PASS · 0 FIX**. No P5-F edits required. Canonical overview already singular in ascii-machinery.md. Cross-walk stamps match mechanisms + P3-M teeth. PDF pins reused from Pass 1–4 (no re-sight needed). Morals from Pass 1–4 unchanged (no softening).
+
+### Order proposal (Shadow) — SOURCE MACHINERY as shelf hygiene
+
+**Stamps:** **KEEP-read** · **FORBID-as-Core-write** · **FORBID-as-Lace-history** · **FORBID-as-store** · **SILENT-for-Lace-append** · **PROPOSAL**
+
+1. **This is a proposal, not Core.** It does not amend AGENTS.md, `systems-manifest-ascii.md`, Graphic D, reason-model-map, or law. Hands may refuse without breach of Core. It is Shadow / Layer III shelf hygiene only — not an AGENTS.md amendment.
+
+2. **Stage → hygiene table** (Pass 4 SOURCE MACHINERY read as steward order):
+
+| Pipeline stage (ASCII) | Proposal for shelf / steward order |
+|---|---|
+| Input x / observe | Observe what is actually on the shelf (files, receipts, claim) before rewriting |
+| Feedforward Φ(x;w) | Name the constructive object under study; do not confuse map with Lace strand |
+| Same Φ, many (arch,w) | Keep function≠construction when comparing artifacts / digests |
+| Approx / ReLU / depth / high-d | Diagram-check constructions against cards; do not import as Core rooms |
+| Interpolation | List reconstruction claims as Shadow only — not POINTER when-rules |
+| Train GD/SGD/backprop | Stamp-check: parameter updates are **not** Lace history; refuse history-rewrite proposals |
+| NTK / ∞-width | Stamp-check: analysis ≠ second store; refuse Graphic D substitutes |
+| FORBIDDEN exit → Core / Φ | Decisive judgment = commit / release / defer / stop — **not** Φ fill |
+
+3. **Recommended reader file order** (proposal only):  
+   `clipboard (admit) → mechanisms (algorithms) → ascii-machinery (diagrams) → pass plans (history)`
+
+4. **Steward loop** when touching this shelf: observe → name → diagram-check → stamp-check → list OPENs → decide (commit / release / defer / stop).
+
+5. **Explicit FORBID:** using this loop as a Φ scheduler; treating train-w / GD / SGD / backprop as Lace history; treating NTK / Φlin / kernel as a second store; Hands override; promoting this proposal into Core / AGENTS.md / systems-manifest-ascii / Graphic D. Proposal is **SILENT for Lace append** — not a Φ scheduler.
+
+6. **Honesty link:** accuracy matrix **P5-X** above is how the proposal stays honest (every M-A* ↔ P-A* ↔ overview node checked).
+
+Mirror (short): under SOURCE MACHINERY overview in [petersen-zech-ascii-machinery.md](petersen-zech-ascii-machinery.md).
+
+### P5-R — Pass 5 receipt
+
+| Field | Value |
+|---|---|
+| Status | EXECUTED |
+| When | 2026-09-18 ~18:45 PT |
+| Station | clipboards · agent `reference-Mapper` |
+| Plan | [petersen-zech-pass-5-plan.md](petersen-zech-pass-5-plan.md) |
+| Hands skim | shoe → graphics A–D → systems-manifest (+ ascii Core separate) → staking / law-why → reason-model-map §4 (P1–P7) → M-A1…A9 → P-A1…A9 + overview → Pass 1–4 receipts → five-stakes PAGE 4/5 (read-only) |
+| PDF | **PRESENT** gitignored; never staged |
+| P5-X | **11 PASS · 0 FIX** (9 Wave A pairs + input spine + Core/Φ off-board) |
+| P5-F | none (matrix all PASS) |
+| P5-O | exactly one SOURCE MACHINERY overview fence in ascii-machinery.md; Core/Φ off-board |
+| P5-P | Order Proposal full text **this section**; short mirror under ascii overview |
+| Wave B | **SKIP** (default) — still deferred |
+| Emission | still `[GAP]` — no POINTER when / arity / adjacency; no invented Φ |
+| Amended | reason-model-map · law · graphics · five-stakes · src/ · systems-manifest · systems-manifest-ascii · PAGE morals · FM-P* · P3-M · M-A* bodies · Core ASCII | **No** |
+| Touched | clipboard · ascii-machinery · pass-5-plan (EXECUTED) |
+
 ## Pass 3 — P3-M mechanism coherence mesh
 
 Mechanism cards: [petersen-zech-mechanisms.md](petersen-zech-mechanisms.md). One tooth per Wave A card. Pass 1–2 morals / FM-P* / D1–D7 unchanged. CONFLICT would halt; none found.
