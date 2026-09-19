@@ -15,6 +15,7 @@ Claim/RESYNC on gearing shafts only covered eight `contracts-*.js` files. Agents
 ./docs/coord/coord.sh which <path>
 ./docs/coord/coord.sh claim <station> "<agent>"
 ./docs/coord/coord.sh release <station> "<agent>"
+./docs/coord/coord.sh force-free <station> "<reason>"
 ./docs/coord/coord.sh check <station> "<agent>"
 ./docs/coord/coord.sh refresh <station> "<agent>"
 ./docs/coord/coord.sh doctor [--auto-clear]
@@ -93,6 +94,7 @@ NOTE: <optional>
 - `which` prefers the longest / most specific OWNS match. Unknown path → error.
 - `gate` = `which` + `check`: exit 0 only if every path maps to the named station and check passes.
 - `doctor --auto-clear`: if RESYNC is FIRED and every gear claim and doc station is FREE → runs `./docs/gearing/resync.sh clear`.
+- `force-free` clears a HELD station **without being its holder**, and requires a reason, which is written into `NOTE` so the override is never silent. The gear-shaft protocol has had this all along; this umbrella wrapped it and dropped the command, so clearing a stale doc station meant a hand edit. Restored under [iteration 2 pass 5, E3](../plans/verification-iter2-pass-5-plan.md). **It is an override, not an expiry**: nothing in this protocol decides a claim is stale, and a human still does.
 
 Shaft claim protocol (unchanged): `docs/gearing/CLAIMS.md`.  
 Resync signal: `docs/gearing/RESYNC.md`.

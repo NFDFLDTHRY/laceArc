@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # Multi-agent coordination umbrella for laceArc (Layer III).
 # Doc stations + gear shafts (gear:* delegates to claim.sh).
-# Usage: ./docs/coord/coord.sh <status|which|claim|release|check|refresh|doctor|gate> ...
+# Usage: ./docs/coord/coord.sh <status|which|claim|release|force-free|check|refresh|doctor|gate> ...
 set -euo pipefail
 
 ROOT="$(cd "$(dirname "$0")/../.." && pwd)"
@@ -295,6 +295,37 @@ cmd_claim() {
   echo "CLAIMED $station by $agent BASE=$sha SINCE=$since"
 }
 
+# force-free: clear a HELD station without being its holder. The gear-shaft
+# protocol has had this since the start (docs/gearing/claim.sh force-free);
+# this umbrella wrapped that protocol and dropped it, so clearing a stale doc
+# station meant editing the file by hand. Measured in iteration 2 pass 1.
+# A reason is required and lands in NOTE, so the override is never silent.
+cmd_force_free() {
+  local station="${1:-}" reason="${2:-}"
+  [[ -n "$station" ]] || die "usage: force-free <station> \"<reason>\""
+  [[ -n "$reason" ]] || die "force-free needs a reason: it is recorded in NOTE"
+  need_station "$station"
+
+  if is_gear_station "$station"; then
+    delegate_gear force-free "$station"
+    return
+  fi
+
+  local f status holder since
+  f="$(station_path "$station")"
+  status="$(read_field "$f" STATUS)"
+  holder="$(read_field "$f" AGENT)"
+  since="$(read_field "$f" SINCE)"
+
+  if [[ "$status" != "HELD" ]]; then
+    die "station '$station' is not HELD (STATUS=$status) — nothing to force"
+  fi
+
+  write_station "$station" "FREE" "-" "-" "-" \
+    "force-freed $(date -u +%Y-%m-%dT%H:%M:%SZ): was held by $holder since $since. $reason"
+  echo "FORCE-FREED $station (was held by $holder since $since)"
+}
+
 cmd_release() {
   local station="${1:-}" agent="${2:-}"
   [[ -n "$station" ]] || die "usage: release <station> \"<agent>\""
@@ -497,6 +528,7 @@ main() {
     which) cmd_which "$@" ;;
     claim) cmd_claim "$@" ;;
     release) cmd_release "$@" ;;
+    force-free) cmd_force_free "$@" ;;
     check) cmd_check "$@" ;;
     refresh) cmd_refresh "$@" ;;
     doctor) cmd_doctor "$@" ;;
