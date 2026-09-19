@@ -1,6 +1,6 @@
 # Scanner fix — Pass 4 PLAN
 
-**Status:** PLAN only. Not run.  
+**Status:** EXECUTED — walk on `docs/kit/scanner.md`. Register unpatched. Core ASCII untouched. Emission `[GAP]`.  
 **Station:** kit (HELD Grok-kit).  
 **Object:** scanner **walk** — one mechanism on [`scanner.md`](scanner.md).  
 **Authority:** scanner passes 1–3. Package door as a *named door*, not bytes to edit.  

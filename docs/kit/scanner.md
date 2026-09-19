@@ -1,7 +1,7 @@
 # Scanner
 
 **Station:** kit.  
-**Executed:** [scanner-fix-pass-1-plan.md](scanner-fix-pass-1-plan.md) · [scanner-fix-pass-2-plan.md](scanner-fix-pass-2-plan.md) · [scanner-fix-pass-3-plan.md](scanner-fix-pass-3-plan.md).  
+**Executed:** [scanner-fix-pass-1-plan.md](scanner-fix-pass-1-plan.md) · [scanner-fix-pass-2-plan.md](scanner-fix-pass-2-plan.md) · [scanner-fix-pass-3-plan.md](scanner-fix-pass-3-plan.md) · [scanner-fix-pass-4-plan.md](scanner-fix-pass-4-plan.md).  
 **Object:** how a quiet-door **rescan** must speak. Not the package door bytes.  
 **Not:** live law. Not Hands. Not cold-doors pass 7. Not door #1 pass 7. Not door #2.  
 **Emission:** `[GAP]`. No `src/`.
@@ -107,3 +107,72 @@ A rescan that reads only the register cannot claim #1 was idle without ignoring 
 | T2 | #1 LIVE vs CLOSED split; #10 law vs graphics |
 | T3 | #3–#9 same-pattern line |
 | T4 | Register unpatched |
+
+## Pass 4 — walk
+
+This walk reads three sources, then speaks two columns. It does not append WORD. Hands keeps A13 / B12 / C12. Core ASCII stays maps.
+
+### Operator (from the scanner)
+
+```
+ ╔══════════════════════════════════════════════════════════════╗
+ ║  LIVE is route health. It is not idle.                       ║
+ ║  CLOSED 6/6 is activity. It is not STALE.                    ║
+ ║  which is ownership. It is not activity.                     ║
+ ╚══════════════════════════════════════════════════════════════╝
+
+  for each named door:
+    read register row     → stamp
+    read receipt if any   → activity
+    read which(path)      → station
+    speak stamp AND activity
+    never: LIVE ⇒ idle
+    never: CLOSED ⇒ STALE
+    never: work ⇒ STALE flip
+
+  not "emit POINTER."
+  not "append to D."
+  not A13 arrive / through-star / continue.
+```
+
+### Application register
+
+| # | Role | What arrives | What is walked | What continues | New machine? |
+|---|---|---|---|---|---|
+| S1 | stamp | register row | LIVE / DATED / STALE / PAUSED / SHUT | activity still to speak | no |
+| S2 | activity | receipt if any | QUIET / WORKED / CLOSED | stamp still to speak | no |
+| S3 | `which` | a path | owning station | not used as idle/busy | no |
+| S4 | idle | stamp + activity | derived only when LIVE/DATED **and** QUIET | — | no |
+| S5 | LIVE | a routing door | keep LIVE | do not say idle | no |
+| S6 | CLOSED | a finished 6-pass | keep CLOSED | do not say STALE | no |
+| S7 | STALE | a dead pin / absence-claim | keep STALE only if the tree outlived the claim | do not flip LIVE because work happened | no |
+| S8 | miss | last false rescan | name it; do not repeat | — | no |
+| D#1 | package | LIVE + CLOSED `fab1864` + `which` kit | speak both | — | no |
+| D#2 | kit index | LIVE + no receipt + `which` kit | LIVE + QUIET *this campaign* | — | no |
+| D#10 | graphics door | LIVE + register station law + `which` graphics | speak the station mismatch; do not flip LIVE | pass 5 may patch or refuse | no |
+
+All `New machine?` = no.
+
+### Scanner versus Core ASCII
+
+```
+ scanner.md                     systems-manifest-ascii.md
+ ----------                     ------------------------
+ kit                            maps (do not write)
+ rescan walk                    Hands reading of the manifest
+ stamp + activity               A–D / D1 tape / G2
+ LIVE ≠ idle                    not this mechanism
+
+ wrapper-as-Core                [X]
+ Hands verbs pasted here        [X]
+ G2 when / arity / adjacency    [GAP]
+```
+
+## Pass 4 deltas
+
+| Ticket | Action |
+|---|---|
+| T1 | One walk box quoted from the scanner |
+| T2 | Eleven-row register; all New machine?=no |
+| T3 | Scanner↔Core ASCII seam |
+| T4 | Register unpatched; maps file untouched |
