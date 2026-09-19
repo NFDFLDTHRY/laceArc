@@ -2,7 +2,7 @@
 
 **Not the manifest.** [`systems-manifest.md`](systems-manifest.md) is the Hands contract map; this is an ASCII reading of it and settles nothing it does not.
 
-**Executed passes:** [1](systems-manifest-ascii-pass-1-plan.md) · [2](systems-manifest-ascii-pass-2-plan.md) · [3](systems-manifest-ascii-pass-3-plan.md) · [4](systems-manifest-ascii-pass-4-plan.md) · [5](systems-manifest-ascii-pass-5-plan.md) · [6](systems-manifest-ascii-pass-6-plan.md) · [7](systems-manifest-ascii-pass-7-plan.md) · [8](systems-manifest-ascii-pass-8-plan.md) · [9](systems-manifest-ascii-pass-9-plan.md) · [10](systems-manifest-ascii-pass-10-plan.md) · [11](systems-manifest-ascii-pass-11-plan.md) · [12](systems-manifest-ascii-pass-12-plan.md) · [13](systems-manifest-ascii-pass-13-plan.md). A new pass is linked here once it is executed.
+**Executed passes:** [1](systems-manifest-ascii-pass-1-plan.md) · [2](systems-manifest-ascii-pass-2-plan.md) · [3](systems-manifest-ascii-pass-3-plan.md) · [4](systems-manifest-ascii-pass-4-plan.md) · [5](systems-manifest-ascii-pass-5-plan.md) · [6](systems-manifest-ascii-pass-6-plan.md) · [7](systems-manifest-ascii-pass-7-plan.md) · [8](systems-manifest-ascii-pass-8-plan.md) · [9](systems-manifest-ascii-pass-9-plan.md) · [10](systems-manifest-ascii-pass-10-plan.md) · [11](systems-manifest-ascii-pass-11-plan.md) · [12](systems-manifest-ascii-pass-12-plan.md) · [13](systems-manifest-ascii-pass-13-plan.md) · [14](systems-manifest-ascii-pass-14-plan.md). A new pass is linked here once it is executed.
 
 **Authority:** `docs/systems-manifest.md`. Companion, not a replacement.  
 **Hands:** Graphics A–D. Shoe in hands.  
@@ -10,7 +10,7 @@
 
 Emission remains `[GAP]`.
 
-**Update wave · Iteration 2:** Pass **13** = Iteration-2 Pass **1** · **delta admission** (mirror Pass 7 / Update-wave Pass 1 cite-only shape). Iteration **1** = linear Passes **7–12** (tip **DIAGRAM SOUND WITH OPENS**). Delta board → pass 13. G2 / Φ stay `[GAP]`.
+**Update wave · Iteration 2:** Pass **13** = Iteration-2 Pass **1** · **delta admission**. Pass **14** = Iteration-2 Pass **2** · **leftovers / FM audit / coherence** (mirror Pass 8 / Update-wave Pass 2 shape). Iteration **1** = linear Passes **7–12** (tip **DIAGRAM SOUND WITH OPENS**). Leftovers / D-spine → pass 14. G2 / Φ stay `[GAP]`.
 
 ---
 
@@ -66,6 +66,9 @@ Emission remains `[GAP]`.
                          Iteration-2 delta inventory → pass 13
                          (kit-door #3 OPEN cite · #1 reconfirm · nine shelves;
                           outside I; I→III read/cite; G2/Φ [GAP])
+                         Iteration-2 leftovers / coherence → pass 14
+                         (dual kit-door · #3 OPEN-with-cause · Iter2 D1–D6;
+                          outside I; G2/Φ [GAP])
 
 
   G2  POINTER when / arity / adjacency     = [GAP]
@@ -102,6 +105,8 @@ Layer III also hosts a **cite-only** Shadow SOURCE MACHINERY inventory (pass 7):
 **Pass 12 pointer:** **DIAGRAM SOUND** audit (**P12-A** / **P12-P** / **P12-X** / **P12-O** / **P12-R**) → sections after Pass 11. Quiet-door may remain OPEN adjunct; no quiet-door→I; emission `[GAP]`.
 
 **Pass 13 pointer:** Iteration-2 Pass 1 **delta inventory** (quiet-door #3 OPEN/cite · #1 reconfirm · nine shelves) → sections after Pass 12. Outside Contract I; kit-door / Shadow labels only; no quiet-door→I; no tenth shelf; G2 / Φ `[GAP]`.
+
+**Pass 14 pointer:** Iteration-2 Pass 2 **leftovers / FM audit / coherence** (dual kit-door · Piece 13 dual · #3 OPEN-with-cause · Iter2 D1–D6) → sections after Pass 13. Outside Contract I; no quiet-door→I; no invent Core close of OPENS; G2 / Φ `[GAP]`.
 
 ---
 
@@ -1122,4 +1127,83 @@ Pass 12 refuse still stands, plus: no promote DIAGRAM SOUND OPENS by inventing C
 | T3 | Short false-friend fence; kit quiet-doors ≠ I door ≠ clipboard shelf ≠ Φ; point FM-* (no full table copy) |
 | T4 | Executed-passes +13; Iteration-2 banner; thin Spine/Contract pointers; G2/Φ `[GAP]`; Pass 12 DIAGRAM SOUND WITH OPENS baseline retained |
 | T5 | Pass 13 deltas; refuse honored (Pass 12 refuse + no promote OPENS by inventing Core; no quiet-door→I; no invent shelf for #3; no clipboard/kit edits; no invent Φ; no src/; no fill G2); Passes 7–12 retained |
+
+**Pass 14 leftovers / coherence note:** dual kit-door (#1 vs #3) · Piece 13 dual restated · quiet-door #3 kit CLOSED / companion OPEN-with-cause · Iter2 D1–D6 → sections after this Pass 13 board (pass 14). Pass 13 delta admission **stands** (not rewritten).
+
+## Leftovers (pass 14)
+
+Update wave · **Iteration 2 · Pass 2** (linear Pass **14**). After Pass 13 delta board. Cite / dual / OPEN-with-cause only — no clipboard/kit rewrite. **Not** a redo of Pass 8 or Pass 13.
+
+| Leftover | Stamp |
+|---|---|
+| Dual kit-door · #1 vs #3 | **#1** `docs/kit/quiet-door-1-ascii.md` = package door (`READ_ME_FIRST`). **#3** `docs/kit/quiet-door-3-ascii.md` = court (`docs/README.md`). Both **outside** Contract I. Neither is a tenth clipboard shelf. Distinct objects — **do not merge**. Shared **FORBID**: I import · Φ fill · clipboard-shelf invent. |
+| Piece 13 dual (Iter2) | Hands **Piece 13** projection ≠ Shadow SOURCE MACHINERY cites ≠ kit-door OPEN adjuncts (#1 / #3). All outside upward write into I. None fills G2 / Φ. (Pass 8 dual stands; kit doors stay a third distinct class.) |
+| OPEN-with-cause · quiet door #3 | Kit station: **CLOSED** 6/6 · receipt `docs/kit/quiet-door-3-receipt.md` · pin **`4d9aa03`** · kit released (cite only). Companion: remain **OPEN adjunct** — kit sealed ≠ Core close ≠ drop cite. Same honesty pattern as #1 (kit CLOSED · companion OPEN adjunct). Do **not** invent Core close. Do **not** edit kit/receipt. |
+| OPEN-with-cause · quiet door #1 | Kit station: **CLOSED** 6/6 · receipt present (cite only). Companion: **OPEN** adjunct (Passes 8–13 reconfirm). Kit sealed ≠ Core close. |
+| Machinery shelves | Still **nine** clipboard paths only (Pass 7 / Δ-9). No invent tenth for either kit door. |
+| Pass 13 path/stamp | Δ-QD3 / Δ-QD1 / Δ-9 paths re-checked OK; count=9; no typo fix required this pass. |
+
+## Fence / FM point audit (pass 14 · T2 · delta scope)
+
+Point-verify after Pass 13 delta board. Label fixes only — **no** full FM table copy; **no** clipboard/kit edits; **no** invent FM rows for quiet-doors.
+
+| Fence surface | Verify stamp |
+|---|---|
+| Pass 13 short false-friend fence | Still holds: kit-door **#1 / #3 ≠ I door ≠ clipboard shelf ≠ Φ ≠ Graphic D / Hands law**. Hands page label on #3 ≠ ownership. |
+| Existing FM-* on Δ-9 shelves | Families still named on cited clipboards: `FM-Wgpu*` · `FM-Wgsl*` · `FM-Webnn*` · `FM-W*`/`FM-T*` · `FM-A*`/`FM-P*`/`FM-X*`/`FM-K*`/`FM-R*`. Point only; full tables stay on clipboards. |
+| Kit-door false-friends | #1 / #3 ≠ Contract I door ≠ clipboard SOURCE shelf ≠ Φ fill ≠ Graphic D. No FM invent for kit doors. |
+| Pass 7–8 FM fence | Audited families retained; fence follows shelf/kit truth (do not edit products to “match”). |
+
+**T2 verdict:** Pass 13 fence + FM-* point-verify **OK** · wrong-label list empty this pass.
+
+## Iteration-2 coherence (pass 14 · D1–D6 global companion)
+
+Global KEEP / FORBID / MAP spine for the Pass 13 Iteration-2 **delta board** vs Contract I / G2 / train / Hands / Pass 12 **DIAGRAM SOUND WITH OPENS**. Adapt Pass 8 D-shape; **not** a WebNN (or any shelf) D1–D6 paste into Core. ON-TARGET what Pass 13 already did.
+
+### D1 — What this Iter2 delta board is not
+
+Not Contract I. Not a second strand. Not Φ fill. Not train oil / HCC / Cup / Water inside I. Not quiet-door Core import. Not a clipboard rewrite surface. Not invent Core close of OPENS (kit #3 CLOSED ≠ Core close).
+
+### D2 — ON-TARGET KEEP / FORBID
+
+| KEEP-read | FORBID |
+|---|---|
+| Δ-QD3 / Δ-QD1 OPEN adjuncts (kit-door cites) | Device / Queue / dispatch / WGSL / wasm64 / MLGraph as Core ops |
+| Δ-9 Shadow SOURCE MACHINERY cites (nine paths) | Promote Shadow Order Proposal → Core / Hands law |
+| Hands Piece 13 views of 7, 12, 15 | Upward write III → I; quiet-door → Contract I; invent Core close of OPENS |
+| I → III read / cite only | Invent tenth clipboard shelf for #1 or #3 |
+
+### D3 — FM / fence stands
+
+Point at Pass 13 short fence + audited FM-* (pass 14 T2): FM-Webnn* · FM-Wgpu* · FM-Wgsl* · FM-W* · FM-T* · FM-A* / FM-P* / FM-X* / FM-K* / FM-R*. Full tables stay on clipboards. Kit doors have **no** FM invent.
+
+### D4 — MAP spine
+
+```
+  I  ──read/cite──>  III (Hands Piece 13 · Shadow SOURCE cites · kit-door OPEN adjuncts)
+  III  -/-> write I
+  train / HCC / Cup / Water     outside I
+  G2 / emission Φ               [GAP]
+  kit-door OPEN adjunct
+    (kit CLOSED · companion OPEN-with-cause)  -/-> Contract I
+  Pass 12 DIAGRAM SOUND WITH OPENS            retained (OPENS stay honest)
+```
+
+### D5 — Hands / projection
+
+Graphics A–D win. Piece 13 projection ≠ Shadow SOURCE cites ≠ kit-door dual (#1 package vs #3 court) — from leftovers. Shoe: arrive → append → participate → continue.
+
+### D6 — Sealed
+
+Emission `[GAP]`. No `src/`. Pass 13 delta board retained. Pass 12 **DIAGRAM SOUND WITH OPENS** retained. Passes 1–12 untouched beyond thin pointers. No Core gear rename (impulse / pallet / tape / hands stay Pass 6). No invent Core close of OPENS.
+
+## Pass 14 deltas
+
+| Ticket | Action |
+|---|---|
+| T1 | Leftovers: dual kit-door (#1 vs #3) · Piece 13 dual · #3/#1 kit CLOSED / companion OPEN-with-cause · nine shelves confirmed · Pass 13 paths OK (no typo fix) |
+| T2 | Fence / FM point audit (delta scope); kit-door false-friends hold; FM-* families pointed; no full table copy; no kit/clipboard edits |
+| T3 | Iter2 global D1–D6 KEEP/FORBID/MAP coherence spine (not WebNN clone); Pass 12 SOUND WITH OPENS retained |
+| T4 | Executed-passes +14; thin Pass 13 leftovers note + Spine/Contract/banner pointers; G2 `[GAP]`; no gear rename; no quiet-door→I |
+| T5 | Pass 14 deltas; refuse honored (Pass 13 refuse + no invent Core close OPENS; no invent shelf; no clipboard/kit edits; no invent Φ; no src/; no fill G2; no rewrite Passes 1–13 beyond thin pointers / new Pass 14 section); Passes 7–13 retained |
 

@@ -1,6 +1,6 @@
 # Systems-manifest ASCII pass 14 plan — Update wave · Iteration 2 · Pass 2 · leftovers / FM audit / Layer III coherence
 
-**Status:** **HELD**. Emission `[GAP]`.  
+**Status:** **EXECUTED** (2026-09-19 PT). Emission `[GAP]`.  
 **Series:** Pass **14** (linear executed-passes list) = **Update wave · Iteration 2 · Pass 2**. Subtitle: both names.  
 **Station:** maps (catch-all for `docs/*.md` at court root). Holder: **reference-Mapper**. Keep maps **HELD**.  
 **Authority:** `docs/systems-manifest.md` (Contracts I / II / Layer III; Pieces unchanged).  
@@ -264,12 +264,12 @@ Refuse on execute (and for this Iteration-2 Pass 2):
 
 ### Execute turn (when human says Proceed)
 
-- [ ] T1: Leftovers — dual kit-door (#1 vs #3) · Piece 13 dual · #3 kit-closed / companion OPEN-with-cause · Pass 13 typos only · no tenth shelf.  
-- [ ] T2: Fence / FM point audit (delta scope); kit-door false-friends; no full FM table copy; no kit edits.  
-- [ ] T3: Short KEEP/FORBID/MAP D-spine for Iter2 delta board vs I / G2 / train / Hands / Pass 12 SOUND WITH OPENS — not WebNN clone.  
-- [ ] T4: Executed-passes +14; thin Pass 13 leftovers/coherence note; G2/Φ `[GAP]`; no gear rename; no quiet-door→I.  
-- [ ] T5: Sealed refuse honored (Pass 13 refuse + no invent Core close OPENS; no invent shelf; no clipboard/kit edits; no invent Φ; no src/; no fill G2; no rewrite Passes 1–13 beyond thin pointers / new Pass 14 section).  
-- [ ] maps still HELD by reference-Mapper (unless human releases).
+- [x] T1: Leftovers — dual kit-door (#1 vs #3) · Piece 13 dual · #3 kit-closed / companion OPEN-with-cause · Pass 13 typos only · no tenth shelf.  
+- [x] T2: Fence / FM point audit (delta scope); kit-door false-friends; no full FM table copy; no kit edits.  
+- [x] T3: Short KEEP/FORBID/MAP D-spine for Iter2 delta board vs I / G2 / train / Hands / Pass 12 SOUND WITH OPENS — not WebNN clone.  
+- [x] T4: Executed-passes +14; thin Pass 13 leftovers/coherence note; G2/Φ `[GAP]`; no gear rename; no quiet-door→I.  
+- [x] T5: Sealed refuse honored (Pass 13 refuse + no invent Core close OPENS; no invent shelf; no clipboard/kit edits; no invent Φ; no src/; no fill G2; no rewrite Passes 1–13 beyond thin pointers / new Pass 14 section).  
+- [x] maps still HELD by reference-Mapper (unless human releases).
 
 ---
 
