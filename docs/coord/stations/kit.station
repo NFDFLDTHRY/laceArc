@@ -2,6 +2,6 @@ STATUS: HELD
 STATION: kit
 OWNS: docs/kit/** .claude/**
 AGENT: Grok-kit
-BASE: d94155be870d5eb3772918f5a8656d1e3b2f4de4
-SINCE: 2026-09-19T06:30:42Z
-NOTE: Scanner-fix pass 2 PLAN. Pass 1 spine EXECUTED. LIVE ≠ idle. Φ [GAP].
+BASE: e684f51dab1b7cd6c16c0e60c63a437baa70f924
+SINCE: 2026-09-19T06:31:14Z
+NOTE: Scanner-fix pass 2 EXECUTED. Fields on scanner.md. Next pass 3 grain. Φ [GAP].

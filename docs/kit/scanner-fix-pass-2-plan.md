@@ -1,6 +1,6 @@
 # Scanner fix — Pass 2 PLAN
 
-**Status:** PLAN only. Not run.  
+**Status:** EXECUTED — fields on `docs/kit/scanner.md`. Package door unchanged. Register unpatched. Emission `[GAP]`.  
 **Station:** kit (HELD Grok-kit).  
 **Object:** scanner fields — stamp vs activity.  
 **Authority:** [`scanner.md`](scanner.md) pass-1 spine. Cold-doors stamps. Door #1 receipt `fab1864`.  
