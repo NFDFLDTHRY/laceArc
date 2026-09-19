@@ -1,6 +1,6 @@
 # AgentScope — ASCII source-machinery model (Shadow)
 
-**Status:** Pass 4 EXECUTED (SOURCE MACHINERY overview + Wave A P-A1…P-A9). **Pass 5 EXECUTED** (P5-X accuracy · Order Proposal Shadow · P5-R). Emission `[GAP]`.  
+**Status:** Pass 4–5 EXECUTED. **Pass 6 EXECUTED** (P6-A structure · P6-P proposal rigor · P6-X deep accuracy · P6-F fence cite · P6-R). Emission `[GAP]`.  
 **Source:** Jiayi Bi et al., *Diagnosing with Insights: Structured Analysis of Agent Failures via Behavioral Abstractions*, arXiv:2609.02371v1 · tool **AGENTSCOPE**  
 **PDF:** `refs/local/bi-et-al-agentscope-diagnosing-insights.pdf` → attachment `6464d69d81d4265aff0cab1e1affe160ef7af4c77ccc142436528f75ea3fd1e9` (22 pp., text layer; **never git-add**)  
 **Algorithms:** [`agentscope-mechanisms.md`](agentscope-mechanisms.md) (M-A1…M-A9; algorithms unchanged this pass).  
@@ -41,7 +41,7 @@ Law: taxonomy = **holder** vocabulary · ReAG ↛ 1D array · neural invariants 
 ## SOURCE MACHINERY overview (book side only)
 
 ```
-  [agent trajectory / logs]
+  [agent trajectory / logs] --------- INPUT (observe shelf; off-panel)
            |
            v
   [instrumented steps] -------------- M-A2 / P-A2
@@ -50,10 +50,10 @@ Law: taxonomy = **holder** vocabulary · ReAG ↛ 1D array · neural invariants 
   [ReAG G={V,E} + ISR] -------------- M-A3 / M-A4 / M-A7
            |                          P-A3 / P-A4 / P-A7
            v
-  [neural invariant checks] --------- M-A5 / M-A6 / M-A8
-           |                          P-A5 / P-A6 / P-A8
+  [neural invariant checks] --------- M-A5 / M-A6
+           |                          P-A5 / P-A6
            v
-  [candidate failures + evidence]
+  [candidate failures + evidence] --- M-A8 / P-A8
            |
            v
   [decisive error judgment] --------- M-A9 / P-A9
@@ -67,6 +67,8 @@ Law: taxonomy = **holder** vocabulary · ReAG ↛ 1D array · neural invariants 
 ```
 
 **P5-X:** Accuracy matrix (all PASS) lives on the book clipboard under Pass 5 — [agentscope-clipboard.md](agentscope-clipboard.md#p5-x--accuracy-matrix-m-a--p-a--overview). This file holds **exactly one** canonical SOURCE MACHINERY overview (above).
+
+**P6:** Structural analysis (P6-A), Order Proposal rigor (P6-P), deep accuracy (P6-X), receipt (P6-R) live on the book clipboard under Pass 6 — [agentscope-clipboard.md](agentscope-clipboard.md#pass-6--rigorous-analysis--check-of-the-ascii-systems-diagram-proposal). Overview fence cite tighten (P6-F): trajectory marked INPUT; candidates cite M-A8/P-A8; neural line keeps M-A5/M-A6 (Stage 2 detection remains on candidates). Verdict: **PROPOSAL SOUND**.
 
 ### Order proposal (Shadow) — SOURCE MACHINERY as shelf hygiene *(short mirror)*
 

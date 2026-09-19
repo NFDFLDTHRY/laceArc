@@ -1,6 +1,6 @@
 # AgentScope pass 6 — rigorous analysis & check of the ASCII systems-diagram proposal
 
-**Status:** PLANNED — not executed. Emission `[GAP]`.  
+**Status:** EXECUTED · 2026-09-18 ~17:58 PT · `reference-Mapper`. Emission `[GAP]`.  
 **Station:** clipboards (HELD `reference-Mapper`)  
 **Base at plan:** refresh to current `origin/main` before execute (Pass 5 commits may still be local — sync first)  
 **Paper:** Jiayi Bi et al. · arXiv `2609.02371v1` · **AGENTSCOPE**  
@@ -201,3 +201,28 @@ If the board leaks toward Core, the proposal is not sound.
 ReAG stays a photograph.  
 Decisive judgment stays release/stop — not Φ.  
 `[GAP]` remains.
+
+---
+
+## Execution receipt (Pass 6)
+
+| Field | Value |
+|---|---|
+| When | 2026-09-18 ~17:58 PT |
+| Station | clipboards · HELD then RELEASED `reference-Mapper` |
+| Base | local `main` tip (ahead of origin with Pass 5 + this plan); `git pull --ff-only` already up to date; claim refreshed |
+| Hands | shoe / agent-control → graphics A–D → systems-manifest → law-why → map §5 → M-A* → ascii overview+P-A* → P5-P/P5-X → five-stakes PAGE 5/5 |
+| PDF | PRESENT gitignored; re-sighted §3.1–3.3 / Fig.2 / Table 1; never staged |
+| P6-A | 6 PASS / 0 OPEN (after P6-F INPUT + candidates cite) |
+| P6-P | PASS — no overclaims; FORBIDs complete; mirror ≤ clipboard; no proposal soften |
+| P6-X | 9 PASS / 0 FIX; P-A3 DAG-shaped + FORBID-ReAG-in-array confirmed |
+| P6-F | ascii overview fence only (trajectory INPUT; M-A8/P-A8 on candidates; neural = M-A5/M-A6) |
+| Verdict | **PROPOSAL SOUND** |
+| Wave B | SKIP |
+| Φ | still `[GAP]` |
+| Commit intent | `AgentScope pass 6: rigorous ASCII proposal audit` |
+| Push | **not** performed |
+
+Products: clipboard Pass 6 section · ascii P6 pointer + fence fix · this plan EXECUTED.
+
+

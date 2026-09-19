@@ -187,6 +187,91 @@ Mirror (short): under SOURCE MACHINERY overview in [agentscope-ascii-machinery.m
 | Touched | clipboard · ascii-machinery · pass-5-plan (EXECUTED) |
 
 
+## Pass 6 — Rigorous analysis & check of the ASCII systems-diagram proposal
+
+**Status:** EXECUTED · 2026-09-18 ~17:58 PT · station clipboards · `reference-Mapper`  
+**Plan:** [agentscope-pass-6-plan.md](agentscope-pass-6-plan.md)  
+**ASCII under test:** [agentscope-ascii-machinery.md](agentscope-ascii-machinery.md) — SOURCE MACHINERY + P-A1…P-A9 + Order Proposal mirror  
+**Law:** ASCII board + Order Proposal remain **Shadow proposal** — not Core · not AGENTS.md · not Φ. Emission still `[GAP]`. Wave B **SKIP**.
+
+### P6-A — Structural analysis (SOURCE MACHINERY as systems diagram)
+
+| # | Item | Evidence | PASS/OPEN |
+|---|---|---|---|
+| 1 | Spine completeness (trajectory→steps→ReAG+ISR→neural→candidates→decisive) | Overview fence: `[agent trajectory / logs]` → `[instrumented steps]` → `[ReAG G={V,E} + ISR]` → `[neural invariant checks]` → `[candidate failures + evidence]` → `[decisive error judgment]`; matches §3.3 Fig.2 three-stage + §3.1 construction | **PASS** |
+| 2 | No orphan overview nodes | Trajectory marked **INPUT**; steps/ReAG/neural/candidates/decisive each cite ≥1 M-A*/P-A*; taxonomy (M-A1/P-A1) labels checks; Core/Φ **FORBIDDEN** exits. P6-F tightened candidates cite + INPUT mark (was OPEN pre-fix: candidates lacked on-fence cite; trajectory unmarked) | **PASS** (after P6-F) |
+| 3 | All M-A1…A9 covered or labeled | M-A1 taxonomy labels; M-A2 steps; M-A3/M-A4/M-A7 ReAG+ISR; M-A5/M-A6 neural; M-A8 candidates; M-A9 decisive — all on overview | **PASS** |
+| 4 | Core / 1D array / Graphic D / Φ only as FORBIDDEN exits | Overview: `x --> Lace Core / 1D array / Phi` · `FORBIDDEN off this board` · `Phi = [GAP]`; no on-board store | **PASS** |
+| 5 | No WORD/POINTER inside overview fence as paper objects | Overview fence lines 43–67 (post-fix): no `WORD`/`POINTER`/Graphic-D row art; those tokens appear only in stamp legend / FM / steward test outside fence | **PASS** |
+| 6 | Exactly one canonical overview | One `## SOURCE MACHINERY overview` section; one overview fence (ascii lines ~43–67); panels have separate fences | **PASS** |
+
+**P6-A summary:** **6 PASS · 0 OPEN** (after P6-F cite/INPUT tighten). Singular overview reconfirmed.
+
+### P6-P — Order Proposal rigor (clipboard P5-P + ascii mirror)
+
+| Check | Result | Evidence |
+|---|---|---|
+| Claim–diagram bind | **PASS** | stage→hygiene rows bind: trajectory→INPUT observe; instrumented steps→P-A2; ReAG+ISR→P-A3/P-A4/P-A7; neural/stamp→P-A5/P-A6; candidates→P-A8; decisive→P-A9 |
+| Overclaim | **PASS** — no Core/AGENTS/Φ-schedule overclaim | P5-P §1 “proposal, not Core”; “does not amend AGENTS.md / systems-manifest-ascii / Graphic D”; mirror: “not Core, not an AGENTS.md amendment, not a Φ scheduler” |
+| FORBID completeness | **PASS** | Explicit: FORBID-as-Core-write · FORBID-ReAG-in-array · SILENT-for-Lace-append · PROPOSAL · Hands may refuse; consistent with panel stamps |
+| Steward loop soundness | **PASS** | observe→name→diagram-check→stamp-check→OPEN list→decide (commit/release/defer/stop); decisive row excludes POINTER-when / Φ fill; §5 forbids Φ scheduler |
+| File-order proposal | **PASS** | “proposal only”: clipboard→mechanisms→ascii→plans — not mandatory Core path |
+| Mirror fidelity | **PASS** | Ascii short mirror ≤ clipboard strength; no stronger Core/Φ claim; P6 did not strengthen mirror |
+
+**Overclaims found?** None. **Wording fixed?** No proposal-text soften/rewrite required (FORBIDs untouched). Overview fence cite-only P6-F (structure), not proposal rewrite.
+
+### P6-X — Deep accuracy re-audit (stricter; does not inherit P5-X blindly)
+
+PDF re-sight this pass: `pdftotext -f 1 -l 1` Abstract; `-f 3 -l 6` §3.1–3.3 / Fig.1–2 / Table 1. Pins agree.
+
+| P | M | Cite | Stamp | Implements | Fence | Overview | FM | Verdict |
+|---|---|---|---|---|---|---|---|---|
+| P-A1 | M-A1 | Y — Table 1 p.3; App. A pp.18–21 | ≡ KEEP-read holder; FORBID-as-Core-types | Y — 3.1–3.4 partition→name→evidence→vocab | Y — 3 dims + 10 modes; holder labels | Y — taxonomy labels | FM-A1 | **PASS** |
+| P-A2 | M-A2 | Y — Abs p.1; §3.1 pp.3–4; §3.3 p.5 | ≡ KEEP-read; FORBID-as-Lace-arrival | Y — 3.1–3.4 instrument→refine→ids→refuse arrival | Y — logs→instrument→step_seq; NOT arrival | Y — instrumented steps | FM-A2 | **PASS** |
+| P-A3 | M-A3 | Y — §3.1 pp.3–4; §3.3 p.5 | ≡ KEEP-read; **FORBID-ReAG-in-array** | Y — 3.1–3.4 vertices→deps→enrich→refuse array | Y — **DAG-shaped** v1/v2/v3 ctrl/data; `*** NOT a 1D row strip ***`; FORBID explicit | Y — ReAG node | FM-A3 | **PASS** |
+| P-A4 | M-A4 | Y — §3.1 pp.3–4 | ≡ KEEP-read; FORBID-as-Lace-store | Y — 3.1–3.4 C→R→S→attach | Y — I_i=(C,R,S); FORBID lace store | Y — ReAG+ISR | FM-A4 | **PASS** |
+| P-A5 | M-A5 | Y — §3.2 p.4; App. A pp.18–21 | ≡ KEEP-read; FORBID-as-Core-proof | Y — 3.1–3.4 iv_f→neural→diagnosis→expandable | Y — iv catalog; NOT Hoare/Core | Y — neural checks | FM-A5 | **PASS** |
+| P-A6 | M-A6 | Y — §3.2 pp.4–5; Fig.1 p.5 | ≡ KEEP-read; FORBID-as-Hands-override | Y — 3.1–3.4 fill→LLM→parse→evidence | Y — candidate only; Hands may refuse | Y — neural checks | FM-A6 | **PASS** |
+| P-A7 | M-A7 | Y — §3.3 Fig.2 pp.5–6 | ≡ FORBID-as-Core-write; SILENT-for-Lace-append | Y — 3.1–3.3 M-A2→M-A4→M-A3→emit Stage 2 | Y — Shadow pipeline; no lace append | Y — ReAG+ISR (Stage 1) | FM-A3/A4 | **PASS** |
+| P-A8 | M-A8 | Y — §3.3 Fig.2 p.5 | ≡ holder diagnosis; FORBID-as-Core-flags | Y — 3.1–3.4 select→judge→retain→no collapse | Y — multi-hypothesis C; no Core flags | Y — candidates (post P6-F cite) | FM-A1/A5 | **PASS** |
+| P-A9 | M-A9 | Y — §3.3 pp.5–6; §5.1 p.9; App. C p.22 | ≡ KEEP-read; FORBID-as-POINTER-when | Y — 3.1–3.4 impact→select→traceable→refuse when | Y — downstream impact ≠ first anomaly; Φ `[GAP]` | Y — decisive | FM-A8/A9 | **PASS** |
+
+**P-A3 note:** Fence remains DAG-shaped (branching ctrl/data edges into `G={V,E}`), **not** a 1D row strip; **FORBID-ReAG-in-array** stamp under fence explicit; steward refusal line present. PDF eye: “Formally, a ReAG is a directed acyclic graph: G = {V, E}”.
+
+**P6-X summary:** **9 PASS · 0 FIX** (panel bodies). Overview attach cite for P-A8 tightened under P6-F (fence only).
+
+### P6-F — Fixes (cited)
+
+| Target | Cause | Edit |
+|---|---|---|
+| ascii SOURCE MACHINERY overview fence | P6-A#2 orphan: `[candidate failures + evidence]` lacked on-fence M-A*/P-A* cite; trajectory unmarked as input | Mark trajectory **INPUT**; cite **M-A8 / P-A8** on candidates; neural line retains M-A5/M-A6 (Stage 2 detection on candidates). FORBIDs unchanged |
+| M-A* bodies / PAGE morals / FM / P3-M / map / law / graphics / Core ASCII | — | **none** |
+| Proposal wording (P5-P / mirror) | no overclaim | **none** (did not soften FORBIDs) |
+
+### P6-R — Receipt
+
+| Field | Value |
+|---|---|
+| Status | EXECUTED |
+| When | 2026-09-18 ~17:58 PT |
+| Station | clipboards · agent `reference-Mapper` |
+| Plan | [agentscope-pass-6-plan.md](agentscope-pass-6-plan.md) |
+| Hands skim | shoe / agent-control → graphics A–D → systems-manifest → law-why → reason-model-map §5 (A1–A5) → M-A1…A9 → ascii overview+P-A* → clipboard P5-P/P5-X → five-stakes PAGE 5/5 (read-only) |
+| PDF | **PRESENT** gitignored; `pdftotext` re-sight §3.1–3.3 / Fig.2 / Table 1; **never staged** |
+| P6-A | **6 PASS · 0 OPEN** (after P6-F) |
+| P6-P | **PASS** — no overclaims; FORBIDs complete; mirror ≤ clipboard; no proposal wording rewrite |
+| P6-X | **9 PASS · 0 FIX** (panels); P-A3 DAG + FORBID-ReAG-in-array confirmed |
+| P6-F | overview fence cite/INPUT only |
+| Overall verdict | **PROPOSAL SOUND** |
+| Wave B | **SKIP** (default) |
+| Emission | still `[GAP]` — no POINTER when / arity / adjacency; no invented Φ |
+| Amended | reason-model-map · law · graphics · five-stakes · src/ · systems-manifest · systems-manifest-ascii · PAGE morals · FM-A* · P3-M · M-A* bodies | **No** |
+| Touched | clipboard · ascii-machinery · pass-6-plan (EXECUTED) |
+
+**Steward test:** Shoe in hands — refuse “install this systems diagram as Graphic D / Core ASCII” using P6-A + P6-P alone. Proposal is Shadow shelf hygiene only. ReAG stays a photograph. Decisive judgment stays release/stop — not Φ.
+
+
+
 ## PAGE A — FAILURE TAXONOMY FOR THE HOLDER
 
 | Field | Filled sheet |
