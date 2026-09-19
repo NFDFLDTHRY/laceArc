@@ -1,6 +1,6 @@
 # Systems-manifest ASCII pass 21 plan — Update wave · Iteration 3 · Pass 2 · leftovers / FM audit / Iter3 coherence
 
-**Status:** **HELD**. Emission `[GAP]`.  
+**Status:** **EXECUTED** 2026-09-19 PT. Emission `[GAP]`.  
 **Series:** Pass **21** (linear executed-passes list) = **Update wave · Iteration 3 · Pass 2**. Subtitle: **Update wave · Iteration 3 · Pass 2**.  
 **Station:** maps (catch-all for `docs/*.md` at court root). Holder: **reference-Mapper**. Keep maps **HELD**.  
 **Authority:** `docs/systems-manifest.md` (Contracts I / II / Layer III; Pieces unchanged).  
@@ -312,12 +312,12 @@ Pass 18 **DIAGRAM SOUND WITH OPENS** + Pass 19 Δ / systems-slot + Pass 20 IX-*/
 
 ### Execute turn (when human says Proceed)
 
-- [ ] T1: Leftovers — #4 leftover OPEN · #5 note-only · #6 OPEN/cite honesty · #7 note-only · nine shelves · post-P20 thin drift typos only.  
-- [ ] T2: FM / false-friend audit (Iter3 edges); quiet-door≠Core · hologram CLOSED≠Core close · #6≠clock · Orders NON-binding · III↛I; no full FM table copy; no product edits.  
-- [ ] T3: Short KEEP/FORBID/MAP D-spine for Iter3 Δ + IX-/P20-X vs I / G2 / train / Hands / Pass 18 SOUND WITH OPENS — OPEN leftovers honest; not WebNN clone.  
-- [ ] T4: Executed-passes +21; thin Pass 19/20 leftovers/coherence note; G2/Φ `[GAP]`; no gear rename; no quiet-door→I.  
-- [ ] T5: Sealed refuse honored (Pass 20 refuse + no invent Core close OPENS; no invent G-KD-4/5/6/7; no #7 Δ admit; no clipboard/kit/history/clock/hologram edits; no invent Φ; no src/; no fill G2; no rewrite Passes 1–20 beyond thin pointers / new Pass 21 section); Pass 18 SOUND WITH OPENS + Pass 19/20 retained.  
-- [ ] maps still HELD by reference-Mapper (unless human releases).
+- [x] T1: Leftovers — #4 leftover OPEN · #5 note-only · #6 OPEN/cite honesty · #7 note-only · nine shelves · post-P20 thin drift typos only.  
+- [x] T2: FM / false-friend audit (Iter3 edges); quiet-door≠Core · hologram CLOSED≠Core close · #6≠clock · Orders NON-binding · III↛I; no full FM table copy; no product edits.  
+- [x] T3: Short KEEP/FORBID/MAP D-spine for Iter3 Δ + IX-/P20-X vs I / G2 / train / Hands / Pass 18 SOUND WITH OPENS — OPEN leftovers honest; not WebNN clone.  
+- [x] T4: Executed-passes +21; thin Pass 19/20 leftovers/coherence note; G2/Φ `[GAP]`; no gear rename; no quiet-door→I.  
+- [x] T5: Sealed refuse honored (Pass 20 refuse + no invent Core close OPENS; no invent G-KD-4/5/6/7; no #7 Δ admit; no clipboard/kit/history/clock/hologram edits; no invent Φ; no src/; no fill G2; no rewrite Passes 1–20 beyond thin pointers / new Pass 21 section); Pass 18 SOUND WITH OPENS + Pass 19/20 retained.  
+- [x] maps still HELD by reference-Mapper (unless human releases).
 
 ---
 

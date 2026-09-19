@@ -3,5 +3,5 @@ STATION: maps
 OWNS: docs/reason-model-map.md docs/rust-nostd-*.md docs/atomic-primitives-map.md docs/clock/gearing-code-1to1.md docs/coherence-audit*.md docs/clock/system-mathematical-model.md docs/defrag-plan.md docs/plans/** docs/namespace-register.md docs/*.md (catch-all: any unmatched file at the docs/ root)
 AGENT: reference-Mapper
 BASE: 3e55e1328e610eaf373704d6ebaf917506a64726
-SINCE: 2026-09-19T13:37:40Z
+SINCE: 2026-09-19T13:40:31Z
 NOTE: 
