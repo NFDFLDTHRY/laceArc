@@ -1,6 +1,6 @@
 # Relationship evidence — Pass 4 plan
 
-**Status:** PLAN only. Not run.  
+**Status:** EXECUTED (close published). A/B still NOT_APPLIED. Maps unclaimed. Hold remains.  
 **Station:** history (HELD Grok-evidence).  
 **Object:** Close-and-park receipt for the evidence campaign on history.  
 **Parents:** Pass 1 findings `9019506`; Pass 2 findings `2414b8b`; Pass 3 handoff `4dd26c7`.  
@@ -134,4 +134,11 @@ Write [`relationship-evidence-pass-4-close.md`](relationship-evidence-pass-4-clo
 
 **Stations:** history HELD Grok-evidence. maps FREE. Door #5 CLOSED. Φ `[GAP]`.
 
-Shoe in hands. Pass 4 is the lid, not another look under it.
+## 8. Execute receipt — 19 September 2026
+
+**Performed:** refresh/check at `a9276688e1ff4c1006abc898a27076e48d325728`; companion blob still `2628df45`; maps FREE; wrote [`relationship-evidence-pass-4-close.md`](relationship-evidence-pass-4-close.md); no new Q; no release.
+
+**Not performed:** maps claim; A/B apply; Φ answers; Pass 5.
+
+Shoe in hands. Ticket closed as execute. Campaign hold remains until the human says free.
+
