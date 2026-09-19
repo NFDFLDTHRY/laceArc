@@ -1,6 +1,6 @@
 # Quiet door #8 (Gearing) — Pass 1 PLAN
 
-**Status:** PLAN only. Not run.  
+**Status:** EXECUTED — spine on `docs/gearing/quiet-door-8-ascii.md`. Door + HTML + JS unchanged. Emission `[GAP]`.  
 **Station:** gearing-meta (HELD Grok-gearing).  
 **Object:** quiet door #8 — [`docs/gearing/README.md`](README.md).  
 **Why gearing-meta, not hologram / not renderer:** gearing-meta OWNS `docs/gearing/*.md` and `docs/gearing/*.sh`. The companion can live next to the door. Renderer owns `docs/shadow-clock-gearing.html`. Station does **not** own `contracts-*.js`. This campaign does not claim renderer, does not claim a shaft, and does not rewrite HTML or JS.  
