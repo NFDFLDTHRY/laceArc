@@ -2,7 +2,7 @@
 
 **Object:** `docs/README.md`  
 **Station:** kit (reading). Law wins on the door.  
-**Executed:** [quiet-door-3-pass-1-plan.md](quiet-door-3-pass-1-plan.md).  
+**Executed:** [quiet-door-3-pass-1-plan.md](quiet-door-3-pass-1-plan.md) · [quiet-door-3-pass-2-plan.md](quiet-door-3-pass-2-plan.md).  
 **Not:** live law. Not Hands. Not Graphic D. Not cold-doors pass 7. Not door #1 pass 7.  
 **Emission:** `[GAP]`. No `src/`. Court door bytes untouched.
 
@@ -87,4 +87,30 @@ The court names. Law is stored in live law. D is still the Hands store. Kit is n
 | T3 | G2 pointed, not filled |
 | T4 | Court bytes untouched |
 
-Queued (later passes on this door): fields; Hands vs law vs maps grain; court-indexes mechanism; seam vs live law and package door; receipt.
+Queued (later passes on this door): Hands vs law vs maps grain; court-indexes mechanism; seam vs live law and package door; receipt.
+
+## Pass 2 — fields
+
+Off the court headings. Door wins over invention.
+
+| # | Block | In | Does | Break | Gap | Role |
+|---|---|---|---|---|---|---|
+| Ct1 | the court page | a reader at `docs/` | names Hands / gate / law / maps / operations / shelves | treat this page as live law | — | index |
+| Ct2 | Hands | the four PNGs + manifest + D1 reading | says source of record; everything else can be wrong about them | treat this kit reading as a fifth graphic | printed panel numbers stay graphics | source pointer |
+| Ct3 | open gate | `pointer-emission.md` | says DRAFT; existence ≠ acceptance | treat DRAFT as accepted | answers (G2) | gate |
+| Ct4 | Law | live law + staking + references | points at the file that wins | copy law onto this page | R1 sizes stay law-station | law pointer |
+| Ct5 | Maps and readings | derived files named here | says never a second source | treat a map as Hands | maps-owned bodies stay maps | reading pointer |
+| Ct6 | Operations | audit log + defrag plan | names append-only / complete | rewrite an earlier audit tick | — | ops pointer |
+| Ct7 | Not prose | shadow-clock HTML | says Layer III; ≠ Graphic D | treat the viewer as D | renderer PAUSED stays hologram | viewer pointer |
+| Ct8 | Shelves | eight shelf paths | sends the reader to those doors | this page becomes those shelves | — | shelf index |
+
+G2 stays `[GAP]`.
+
+## Pass 2 deltas
+
+| Ticket | Action |
+|---|---|
+| T1 | Eight In / Does / Break / Gap / Role rows |
+| T2 | Ct1 Break = page as live law; Ct3 Break = DRAFT accepted |
+| T3 | Spine left in place |
+| T4 | Court bytes untouched |

@@ -1,6 +1,6 @@
 # Quiet door #3 (Court) — Pass 2 PLAN
 
-**Status:** PLAN only. Not run.  
+**Status:** EXECUTED — fields on `docs/kit/quiet-door-3-ascii.md`. Court door unchanged. Emission `[GAP]`.  
 **Station:** kit (HELD Grok-kit).  
 **Object:** Court fields — In / Does / Break / Gap / Role.  
 **Authority:** [`quiet-door-3-ascii.md`](quiet-door-3-ascii.md) pass-1 spine. Court page as written.  
