@@ -1,6 +1,6 @@
 # Projection iteration 4 / pass 5 plan — first paint is deterministic
 
-**Status:** PLAN. Not executed. Emission `[GAP]`.  
+**Status:** EXECUTED. Emission `[GAP]`. Title `i4p5`. No skipWaiting/claim. Draw throws skip 12 frames. Adapter retry 3×. Watchdog 2.5s.  
 **Station:** hologram  
 **Evidence:** `i4p4` sometimes paints, sometimes a dark stage. Reload still the luckier path. `boot 1st|rel` exists. Identity holds.
 

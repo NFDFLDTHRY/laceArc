@@ -57,7 +57,7 @@ aside[hidden]{display:none}
 </div>
 <div class="hud">
   <header class="hit">
-    <h1>LAYER III · i4p4 · RAWCDN SHA</h1>
+    <h1>LAYER III · i4p5 · RAWCDN SHA</h1>
     <p>Install this URL only if it is <code>rawcdn.githack.com</code> + a full SHA. Floating <code>main</code> is preview. Cubes are glyphs. No emitter. [GAP]</p>
   </header>
   <div class="modes hit">
@@ -82,10 +82,11 @@ aside[hidden]{display:none}
     <div class="row">
       <input id="t" type="range" min="0" max="10" step="0.02" value="0"/>
       <span id="phase">t=0000</span>
-      <span class="stamp">i4p4</span>
+      <span class="stamp">i4p5</span>
       <span class="stamp">A17</span>
       <span class="stamp" id="gpustamp">GPU ?</span>
       <span class="stamp" id="bootstamp">boot ?</span>
+      <span class="stamp" id="wdogstamp">wdog 0</span>
       <span class="stamp" id="szstamp">?x?</span>
       <span class="stamp" id="nstamp">n=?</span>
       <span class="stamp" id="nnstamp">WebNN ?</span>
@@ -295,7 +296,7 @@ function lookAt(e,c,up){
 function bakeViaWorker(src){
   return new Promise((resolve, reject) => {
     let w;
-    try { w = new Worker(src || "projection-bake-worker.js?i=4p4"); }
+    try { w = new Worker(src || "projection-bake-worker.js?i=4p5"); }
     catch (e) { reject(e); return; }
     const t = setTimeout(() => { try{w.terminate();}catch(_){ } reject(new Error("bake timeout")); }, 8000);
     w.onerror = e => { clearTimeout(t); try{w.terminate();}catch(_){ } reject(e); };
@@ -315,9 +316,9 @@ function bakeViaWorker(src){
 let bakedScene=null;
 async function bakeScene(){
   if(bakedScene && bakedScene.P && bakedScene.P.length>6) return bakedScene;
-  try { bakedScene = await bakeViaWorker("projection-bake-worker.js?i=4p4"); }
+  try { bakedScene = await bakeViaWorker("projection-bake-worker.js?i=4p5"); }
   catch (e1) {
-    const src = await fetch("projection-bake-worker.js?i=4p4", {cache:"no-store"}).then(r => {
+    const src = await fetch("projection-bake-worker.js?i=4p5", {cache:"no-store"}).then(r => {
       if (!r.ok) throw new Error("worker fetch "+r.status);
       return r.text();
     });
@@ -330,7 +331,7 @@ async function bakeScene(){
 
 let playing=true, tVal=0, gpuLive=false;
 let gpuBooting=false, gpuGen=0, needReboot=false, gpuGaveUp=false;
-let gpuSession=null, lastRebootAt=0;
+let gpuSession=null, lastRebootAt=0, wdogUsed=false;
 const hadController=!!(navigator.serviceWorker && navigator.serviceWorker.controller);
 {
   const b=document.getElementById("bootstamp");
@@ -415,7 +416,23 @@ async function bootGpu(){
   } finally {
     if(my===gpuGen) gpuBooting=false;
     if(needReboot && my===gpuGen) bootGpu();
+    else if(my===gpuGen) armWatchdog();
   }
+}
+function armWatchdog(){
+  setTimeout(()=>{
+    if(gpuLive || gpuBooting) return;
+    const w=document.getElementById("wdogstamp");
+    if(!wdogUsed){
+      wdogUsed=true;
+      if(w) w.textContent="wdog 1";
+      requestReboot("wdog");
+      return;
+    }
+    if(w) w.textContent="wdog silent";
+    const g=document.getElementById("gpustamp");
+    if(g) g.textContent="GPU silent";
+  }, 2500);
 }
 
 async function main(gen){
@@ -427,11 +444,22 @@ async function main(gen){
   await new Promise(r=>requestAnimationFrame(()=>requestAnimationFrame(r)));
   if(gen!==gpuGen) return;
   if(!navigator.gpu){ keepFallback("No navigator.gpu — CSS grid on stage."); return; }
-  const ad=await navigator.gpu.requestAdapter();
+  let ad=null;
+  for(let i=0;i<3 && !ad;i++){
+    if(gen!==gpuGen) return;
+    try { ad=await navigator.gpu.requestAdapter(); } catch(_){ ad=null; }
+    if(!ad && i<2) await new Promise(r=>setTimeout(r,300));
+  }
   if(gen!==gpuGen) return;
   if(!ad){ keepFallback("No GPU adapter — CSS grid on stage."); return; }
-  const device=await ad.requestDevice();
-  if(gen!==gpuGen){ try{device.destroy();}catch(_){ } return; }
+  let device=null;
+  for(let i=0;i<3 && !device;i++){
+    if(gen!==gpuGen) return;
+    try { device=await ad.requestDevice(); } catch(_){ device=null; }
+    if(!device && i<2) await new Promise(r=>setTimeout(r,300));
+  }
+  if(gen!==gpuGen){ if(device) try{device.destroy();}catch(_){ } return; }
+  if(!device){ keepFallback("No GPU device — CSS grid on stage."); return; }
   const ctx=canvas.getContext("webgpu");
   if(!ctx){ keepFallback("No WebGPU canvas context — CSS grid on stage."); return; }
   const fmt=navigator.gpu.getPreferredCanvasFormat();
@@ -505,6 +533,7 @@ async function main(gen){
   sess.resize=resize;
   let sized=resize();
   let last=performance.now();
+  let drawFails=0;
   function frame(now){
     if(sess.dead || gen!==gpuGen) return;
     if(needReboot){ requestReboot("frame"); return; }
@@ -564,8 +593,11 @@ async function main(gen){
       passG.draw(vCount);
       passG.end();
       device.queue.submit([enc.finish()]);
+      drawFails=0;
     } catch(_) {
-      requestReboot("draw");
+      drawFails++;
+      if(drawFails>=12){ requestReboot("draw"); return; }
+      sess.raf=requestAnimationFrame(frame);
       return;
     }
     sess.raf=requestAnimationFrame(frame);
@@ -605,7 +637,7 @@ function runAudit(){
   const el=document.getElementById("audit");
   if(!el) return;
   const title=document.querySelector("h1")?.textContent||"";
-  const A=/i4p4/.test(title)?"ok":"fail";
+  const A=/i4p5/.test(title)?"ok":"fail";
   const D=!!(navigator.serviceWorker && navigator.serviceWorker.controller);
   const E=!!(window.deferredPrompt || window.matchMedia("(display-mode: standalone)").matches);
   const F=!!document.getElementById("installbtn");
@@ -616,7 +648,7 @@ function runAudit(){
     const ct=r.headers.get("content-type")||"";
     const B=/manifest|json/i.test(ct)?"ok":("fail "+ct);
     el.textContent=
-      "A title i4p4 "+A+"\n"+
+      "A title i4p5 "+A+"\n"+
       "B manifest MIME "+B+"\n"+
       "C icons 192+512 ok\n"+
       "D SW controlling "+(D?"ok":"fail")+"\n"+
