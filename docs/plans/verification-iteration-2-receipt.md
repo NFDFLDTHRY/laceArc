@@ -102,6 +102,29 @@ git show <fix>^:.claude/hooks/check-docs.sh   # old checker, same tree, for the 
 
 **Iteration 3's question follows from §4, not from this table.** The instruments are now mostly honest and nothing enforces them, while the one decay that has actually cost this repository something — citations broken by a file move — has no owner at all. **That is E5, and it is the largest unowned thing in the tree.**
 
+## 5a. Re-verified against the live tree after the receipt was written
+
+The receipt's §4 admitted the fixes were "tested against twelve cases, not against four campaigns over a week." Part of that is now closed. Re-run at `9ce2088` — **336 files, a fresh disposable copy, after other agents had been committing into the tree:**
+
+| Case | Result | Wanted |
+|---|---|---|
+| dead link inside a fence | 0 reported | 0 |
+| dead link in bare prose | 1 | 1 |
+| absence claim in backticks | 0 findings | 0 |
+| same claim in bare prose | 1 finding | 1 |
+| file linked only in a fence | orphans **35 → 36** | +1 |
+| same file in a README fence | plans door 1 short | 1 |
+
+**All six hold**, and `check-docs.sh` is untouched since the fix landed — `_prose` is still wired into all four call sites.
+
+### A sixth tooling failure, and it is the same one
+
+The first run of this re-verification reported check 5 as **broken**: 1 finding where 0 was wanted. It was not. **The count was matching the case file's name in the orphan list's `e.g.` sample**, not in a stale-absence finding.
+
+**I counted a mention of a filename as evidence of a finding about it — while verifying the fix for instruments that count a mention as a use.** Corrected by grepping the finding rather than the name.
+
+That is six tooling failures across this iteration, every one mine, every one in the family the iteration set out to document. **§3's principle holds in the only way that matters: it is not a thing other people's tools do.**
+
 ## 6. What is queued
 
 | Item | Owner |
