@@ -33,7 +33,7 @@ A map is four-pass complete. B spine + fields are on main. G2 still `[GAP]`.
 
 ---
 
-## Iteration 2 — OPEN (pass 3 PLAN)
+## Iteration 2 — OPEN (pass 3 executed; 4–6 queued)
 
 Leftover from iteration 1, in order. These are **iteration 2 passes 1–6**, not B-pass-7.
 
@@ -41,7 +41,7 @@ Leftover from iteration 1, in order. These are **iteration 2 passes 1–6**, not
 |---|---|---|
 | 1 | B7–B9 grain (thread / remains / interior) **EXECUTED** | [`ascii-iteration-2-pass-1-plan.md`](ascii-iteration-2-pass-1-plan.md) |
 | 2 | B mechanism map (B12 operator; feeds vs D types) **EXECUTED** | [`ascii-iteration-2-pass-2-plan.md`](ascii-iteration-2-pass-2-plan.md) |
-| 3 | Graphic C spine **OPEN** | [`ascii-iteration-2-pass-3-plan.md`](ascii-iteration-2-pass-3-plan.md) |
+| 3 | Graphic C spine **EXECUTED** | [`ascii-iteration-2-pass-3-plan.md`](ascii-iteration-2-pass-3-plan.md) |
 | 4 | C fields | not written |
 | 5 | C grain / anti-model | not written |
 | 6 | C mechanism map or receipt | not written |

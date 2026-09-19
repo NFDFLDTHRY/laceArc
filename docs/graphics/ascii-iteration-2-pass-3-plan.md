@@ -1,6 +1,6 @@
 # Graphics ASCII — Iteration 2, Pass 3 PLAN
 
-**Status:** PLAN only. Not run. Iteration 2 open. Iteration 1 stays closed.  
+**Status:** EXECUTED — `docs/graphics/graphic-c-ascii.md`. Iteration 2 remains open (pass 3 of 6). Iteration 1 stays closed. Emission `[GAP]`.  
 **Station:** graphics (HELD Grok-graphics).  
 **Object:** Graphic C.  
 **This pass:** spine of C — what more dimensions is (and is not).  
