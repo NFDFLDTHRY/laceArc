@@ -1,6 +1,6 @@
 # AgentScope pass 1 (PDF-sighted) — clipboard vs attached diagnosis paper
 
-**Status:** PLANNED — not executed. Emission `[GAP]`.  
+**Status:** EXECUTED — 2026-09-18 ~17:28 PT. Emission still `[GAP]`.  
 **Station:** clipboards (HELD `reference-Mapper`)  
 **Base at plan:** refresh to current `origin/main` before execute  
 **Paper:** Jiayi Bi et al., *Diagnosing with Insights: Structured Analysis of Agent Failures via Behavioral Abstractions*  
@@ -44,7 +44,7 @@ pull/ff → claim clipboards → Hands skim
 | 3 | Table 1 taxonomy: Reasoning (WC,IU,IC,CM); Control-flow (TM,PT,SL); Action (AM,II,EF) | PAGE A / E taxonomy **CONFIRM** seed |
 | 3–4 | §3.1 ReAG = DAG of steps with ISR | PAGE C ReAG **CONFIRM** seed |
 
-Full A–X walk remains **TODO** at execute.
+Full A–X walk **DONE** at execute (see Execution receipt).
 
 ---
 
@@ -136,13 +136,23 @@ Ask before push.
 
 ---
 
-## Execution (when you say go pass 1 / go AgentScope pass 1)
+## Execution receipt
 
-1. Refresh claim.  
-2. T1–T4 (T5 only if needed).  
-3. Mark this plan EXECUTED.  
-4. Check · commit · release.  
-5. Stop.
+| Field | Value |
+|---|---|
+| Status | **EXECUTED** |
+| When | 2026-09-18 ~17:28 PT |
+| Agent | `reference-Mapper` |
+| PDF | `refs/local/bi-et-al-agentscope-diagnosing-insights.pdf` → `6464d69d…fd1e9`; 22 pp.; text layer; gitignored; never staged |
+| T1 Hands | skimmed shoe / graphics / manifest / law / reason-model-map §5 / clipboard / five-stakes 5/5 |
+| T2 PDF gate | symlink + SHA + `git check-ignore` OK |
+| T3 Page walk | A–F, X all PDF-pinned; stamps CONFIRM×6 · REFINE×5 retained · SILENT×1 (F) · CONFLICT×0 |
+| T4 Metrics | Table 3 PDF p.10 re-verified; no joint score; no [OPEN] overstatement |
+| T5 five-stakes | **skip** — eye-quotes agree |
+| Commit plan | `AgentScope pass 1: PDF-sight clipboard vs diagnosis paper` then release commit if station dirty |
+| Emission | still `[GAP]` |
+
+Execute steps completed: refresh → T1–T4 → this plan EXECUTED → check · commit · release · STOP.
 
 ---
 

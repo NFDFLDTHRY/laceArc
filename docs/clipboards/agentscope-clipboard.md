@@ -4,18 +4,50 @@
 
 Completion of [the AgentScope clipboard prompt](../prompts/agentscope-clipboard-prompt.md), checking the existing upstream draft against the attached paper. Sheets A–F and X use rendered mapping tables. **KEEP failure taxonomy for the HOLDER. FORBID ReAG rows in the 1D array.**
 
-**Source:** Jiayi Bi et al., *Diagnosing with Insights: Structured Analysis of Agent Failures via Behavioral Abstractions*, arXiv:2609.02371v1, September 2, 2026. Tool name: AGENTSCOPE. The inspected attachment is `03-2609.02371v1.pdf`, 22 pages, with a text layer. SHA-256: `6464d69d81d4265aff0cab1e1affe160ef7af4c77ccc142436528f75ea3fd1e9`. Printed and PDF page numbers coincide at the cited loci. **Never git-add the PDF.** Eye entries below are source paraphrases, not quotations.
+**Source:** Jiayi Bi et al., *Diagnosing with Insights: Structured Analysis of Agent Failures via Behavioral Abstractions*, arXiv:2609.02371v1, September 2, 2026. Tool name: AGENTSCOPE. Working PDF (gitignored): `refs/local/bi-et-al-agentscope-diagnosing-insights.pdf` → attachment `6464d69d81d4265aff0cab1e1affe160ef7af4c77ccc142436528f75ea3fd1e9.pdf` (≈664 KB / 679484 bytes). **22** pages; text layer present (arXiv GenPDF / pikepdf). Printed and PDF page numbers coincide at the cited loci. **Never git-add the PDF.** Eye entries below are short fragments or paraphrases, not long dumps.
 
 **Authority:** [graphics A–D](../graphics/README.md), [systems manifest](../systems-manifest.md), the complete [staking law](../staking-the-workspace.md), the complete [live law](../law-why-these-documents.md), and [agent controls](../kit/agent-control.md). These laws remain controlling in full. Comparisons use [reason-model-map §5](../reason-model-map.md#5-bi-et-al--agentscope-arxiv260902371), A1–A5; those IDs refer to book mappings, not Graphic A panels or new Core primitives.
 
 **Boundary:** [H] is the holder and the holder's diagnostic records. [X] is the Graphic D array boundary. This clipboard is [III]. → marks a source relationship or labeled analogy; ↛ rejects a substitution. Neither arrow emits a POINTER. Source descriptions, Lace law, and inferred stewardship examples are distinguished below.
 
+## Pass 1 (PDF-sighted) receipt
+
+| Field | Value |
+|---|---|
+| Status | EXECUTED |
+| When | 2026-09-18 ~17:28 PT |
+| Station | clipboards · agent `reference-Mapper` |
+| Plan | [agentscope-pass-1-pdf-plan.md](agentscope-pass-1-pdf-plan.md) |
+| Hands skim | shoe → graphics A–D → systems-manifest → staking / law-why → reason-model-map §5 (A1–A5) → five-stakes PAGE 5/5 (read-only; T5 skip) |
+| PDF | **PRESENT** — `refs/local/bi-et-al-agentscope-diagnosing-insights.pdf` → attachment `6464d69d…fd1e9.pdf`; **22** pp.; text layer yes; `git check-ignore` OK; never staged |
+| Method | `pdftotext -f N -l N` on this attachment (primary) |
+| Product | A–F, X loci re-pinned; Table 1 / ReAG / neural invariants / Table 3 metrics re-verified; false friends refreshed; morals unchanged |
+| Stamps | **CONFIRM** ×6 (A,B,C,D,E,X) · **REFINE** ×5 retained (A,B,C,D,E vs map shorthand) · **SILENT** ×1 (F on Φ) · **CONFLICT** ×0 |
+| Metrics (T4) | Table 3 PDF p.10 GPT-5.1 AGENTSCOPE w/o Solution: SLA **31.35%**, CA **45.87%** — retained as separate metrics; no joint score invented |
+| Amended | reason-model-map · law · graphics · five-stakes · src/ · systems-manifest | **No** |
+| Emission | still `[GAP]` — no POINTER when / arity / adjacency |
+
+### Per-page stamps vs reason-model-map §5
+
+| PAGE | Stamp | PDF pin(s) | Notes |
+|---|---|---|---|
+| A Failure taxonomy | **CONFIRM** A4; **REFINE** shorthand | Table 1 PDF p.3; App. A PDF pp.18–21 | 3×10 modes KEEP holder; FORBID as Core types |
+| B Trajectory | **CONFIRM** A1; **REFINE** “observed life” | Abstract PDF p.1; §3.1 PDF pp.3–4 | trajectory ≠ Lace strand |
+| C ReAG | **CONFIRM** A2; **REFINE** “photograph” | §3.1 PDF pp.3–4; §3.3 PDF p.5 | DAG + ISR; **FORBID** ReAG rows in 1D array |
+| D Neural invariants | **CONFIRM** A3; **REFINE** “invariant” strength | §3.2 PDF p.4; Fig.1 PDF p.5; App. A PDF pp.18–21 | LLM-judged predicates; not Core proofs |
+| E Sample modes | **CONFIRM** A4; **REFINE** IC/CM · II/EF | Table 1 PDF p.3; A.1–A.10 PDF pp.18–21 | spellings WC/IU/IC/CM/TM/PT/SL/AM/II/EF match |
+| F When-to-point | **SILENT** on Φ; false-friend pins | none as emission; lookalikes §3.1 / §3.3 / App. A | no lace/pointer/emission/append whole-word hits |
+| X Cross-cut | **CONFIRM** A1–A5 | §3.3 PDF pp.5–6; §5.1 PDF p.9; App. C PDF p.22; Fig.6 PDF p.21 | temptations vs Hands; Φ `[GAP]`; Fig.6 36+31+36=103 retained |
+
+T5 five-stakes: **skip** — PAGE 5/5 source pins and KEEP/FORBID agree with this PDF.
+
+
 ## PAGE A — FAILURE TAXONOMY FOR THE HOLDER
 
 | Field | Filled sheet |
 |---|---|
-| Locus | §2, pp.2–3; Table 1, p.3; operational checks in Appendix A, pp.18–21. |
-| Eye — SOURCE | The taxonomy has three dimensions and ten modes: Reasoning (WC, IU, IC, CM); Control-flow (TM, PT, SL); Action (AM, II, EF). It is based on the authors' trajectory analysis and referenced categorizations. The full names and evidence distinctions appear on Page E. |
+| Locus | §2 PDF pp.2–3; **Table 1 PDF p.3**; Appendix A PDF pp.18–21. Printed = PDF at these loci. |
+| Eye — SOURCE | Table 1: “Wrong Context (WC) … Instruction Unfollowing (IU) … Insufficient Context (IC) … Context Miss (CM) … Termination Miss (TM) … Premature Termination (PT) … Step Loop (SL) … Action Mismatch (AM) … Invocation Issue (II) … Execution Failure (EF).” Three dimensions Reasoning / Control-flow / Action. Full names and evidence distinctions on Page E. |
 | Map arrows | Taxonomy → labels for examining steward behavior [INFERENCE under LAW]; taxonomy ↛ WORD/POINTER schema. A category label does not itself establish a breach or its cause. |
 | ON THE SHOE | AGENTS.md and agent-control C06 govern the steward. Graphics B1 and D1 constrain the strand; a diagnosis of the person or Bot holding it is a different object. |
 | KEEP | **Failure taxonomy for the HOLDER.** Attach any proposed label to observable evidence and its source. |
@@ -28,8 +60,8 @@ Completion of [the AgentScope clipboard prompt](../prompts/agentscope-clipboard-
 
 | Field | Filled sheet |
 |---|---|
-| Locus | Abstract, p.1; §3.1, pp.3–4; §3.3, pp.4–6. |
-| Eye — SOURCE | Agent behavior is abstracted from runtime trajectories. Instrumentation, logs, semantic parsing, and selected LLM interpretation contribute to the structured representation. |
+| Locus | Abstract **PDF p.1**; §3.1 **PDF pp.3–4**; §3.3 **PDF pp.4–6**. |
+| Eye — SOURCE | Abstract: “abstract agent behavior, based on its trajectories, into structured representations.” §3.1: vertices from instrumentation of API calls, tool interactions, and system logs, refined with semantic parsing; unstructured logs → annotated graphs with ISR. |
 | Map arrows | Recorded trajectory → an abstraction of observed agent activity [SOURCE]; trajectory ↛ the continuous Lace strand [LAW]. “Holder life” is an analogy, not a claim to capture an entire life or every internal state. |
 | ON THE SHOE | Piece 3 and Graphic C10 preserve input occurrence order. Agent step boundaries and diagnostic annotations do not determine Lace arrivals. Graphic A13 keeps every occurrence; the paper's semantic abstraction is not that preservation contract. |
 | KEEP | Trajectory as steward observation, with coverage and reconstruction limits stated. |
@@ -42,8 +74,8 @@ Completion of [the AgentScope clipboard prompt](../prompts/agentscope-clipboard-
 
 | Field | Filled sheet |
 |---|---|
-| Locus | §3.1, pp.3–4; construction stage in §3.3, p.5. |
-| Eye — SOURCE | ReAG is a directed acyclic graph of steps and control/data dependencies. A step includes an identifier, agent role, operational content, and Intermediate Semantic Representation (ISR). ISR separates intent/context, reasoning/action, and signal/validation information. The paper explicitly describes trajectory indexing and memory. |
+| Locus | §3.1 **PDF pp.3–4**; ReAG construction in §3.3 **PDF p.5**. |
+| Eye — SOURCE | “Reasoning-Action Graph (ReAG). Formally, a ReAG is a directed acyclic graph: G = {V, E}” with edges “control or data dependencies”; vertex ⟨id, role, content, ISR⟩; ISR = (Intent/Context, Reasoning/Action, Signal/Validation). Trajectory “index and memory” motivate ISR. |
 | Map arrows | ReAG → structured holder diagnosis [SOURCE and project analogy]; ReAG vertex ↛ WORD; ReAG edge ↛ POINTER; ISR memory ↛ Lace's store [LAW]. A shared property such as acyclicity does not identify two structures. |
 | ON THE SHOE | Pieces 5, 6, and 13; Graphic D2–D3 and D6: a POINTER is further Lace, referencing earlier positions on the same line. Graphics C11 and D4 distinguish a view from the strand. |
 | KEEP | ReAG as a diagnostic picture of the holder, with the qualification that it contains constructed semantic annotations. |
@@ -56,8 +88,8 @@ Completion of [the AgentScope clipboard prompt](../prompts/agentscope-clipboard-
 
 | Field | Filled sheet |
 |---|---|
-| Locus | §3.2, p.4; Figure 1, p.5; staged diagnosis, §3.3, pp.5–6; Appendix A.1–A.10, pp.18–21. |
-| Eye — SOURCE | Neural functions use structured prompts and LLM judgments to evaluate semantic conditions over a trace. For Action Mismatch, aligned() compares an action with its preceding stated purpose. Candidate violations are retained with evidence before the final decisive-error selection. |
+| Locus | §3.2 **PDF p.4**; Figure 1 **PDF p.5**; staged diagnosis §3.3 **PDF pp.5–6**; Appendix A.1–A.10 **PDF pp.18–21**. |
+| Eye — SOURCE | §3.2: “Unlike traditional program invariants … AGENT S COPE supports semantic conditions via neural functions” (LLM calls with structured prompts). Action Mismatch: `aligned(purpose, action, tool_name, tool_args)`; “When implemented with an LLM judge, aligned() is treated as a binary classifier.” Fig.1 = aligned() prompt template. |
 | Map arrows | Predicate plus trace evidence → a diagnostic candidate [SOURCE]; candidate → source-and-law review [INFERENCE]; classifier verdict ↛ a proof, human acceptance, or Core write [LAW]. |
 | ON THE SHOE | Piece 14 and Graphic B10 prohibit stored meaning and collapse. Agent-control C06 permits scrutiny of public work statements, actions, and results without demanding private model reasoning. |
 | KEEP | Diagnostic predicates over holder traces; distinguish local detection from final attribution. Use observable evidence and available summaries. |
@@ -66,11 +98,11 @@ Completion of [the AgentScope clipboard prompt](../prompts/agentscope-clipboard-
 | EMISSION SETTLED? | **NO / [GAP].** |
 | vs reason-model-map | **CONFIRMS A3; REFINES the strength of “invariant.”** The comparison with traditional program invariants is the authors' distinction in §3.2, not a verbatim quote of the former clipboard's sentence. No theorem about Lace follows. |
 
-The paper reports empirical diagnostic accuracy, not a guarantee. For example, Table 3, p.10, reports AGENTSCOPE with GPT-5.1 on AgentErrata without the task solution at **31.35% step-level accuracy** and **45.87% classification accuracy**. These are separate reported metrics; they are neither a joint success rate nor measurements reproduced in laceArc.
+The paper reports empirical diagnostic accuracy, not a guarantee. **Table 3, PDF p.10** (AgentErrata): AGENTSCOPE with GPT-5.1 **w/o Solution** — Step-Level Accuracy (SLA) **31.35%**, Classification Accuracy (CA) **45.87%**. Same row w/ Solution: 29.70% / 44.88%. These are separate reported columns; they are neither a joint success rate nor measurements reproduced in laceArc. Pass 1 re-read the table; no [OPEN] overstatement found.
 
 ## PAGE E — SAMPLE HOLDER MODES
 
-**Locus:** Table 1, p.3; Appendix A.1–A.10, pp.18–21. Source meanings are paraphrased. Lace examples below are **conditional stewardship analogies [INFERENCE]**, not observed incidents, exclusive classifications, or automatic diagnoses.
+**Locus:** Table 1 **PDF p.3**; Appendix A.1–A.10 **PDF pp.18–21** (A.10 Execution Failure continues onto PDF p.21). Source meanings are paraphrased; mode abbreviations re-checked against Table 1. Lace examples below are **conditional stewardship analogies [INFERENCE]**, not observed incidents, exclusive classifications, or automatic diagnoses.
 
 | Source mode | Source distinction / appendix locus | Evidence needed for a Lace-holder analogy |
 |---|---|---|
@@ -99,8 +131,8 @@ The paper reports empirical diagnostic accuracy, not a guarantee. For example, T
 
 | Field | Filled sheet |
 |---|---|
-| Locus | **NONE FOUND as a Lace emission rule in the 22-page attachment.** Relevant lookalikes: ReAG dependencies (§3.1, pp.3–4), diagnostic selection (§3.3, pp.5–6), and invariant definitions (Appendix A, pp.18–21). |
-| Eye — SOURCE | These mechanisms construct or inspect agent traces. They do not define the Graphic D WORD/POINTER append contract. Appendix A supplies real diagnostic definitions; it is not an absent appendix. |
+| Locus | **NONE FOUND as a Lace emission rule in the 22-page attachment.** Lookalikes: ReAG dependencies (§3.1 **PDF pp.3–4**), decisive-error selection (§3.3 **PDF pp.5–6**), invariant definitions (Appendix A **PDF pp.18–21**). |
+| Eye — SOURCE | Mechanisms construct/inspect agent traces — not Graphic D WORD/POINTER append. Whole-word search for lace / pointer(s) / emission / append* on this PDF: **no hits**. Appendix A supplies real diagnostic definitions; it is not an absent appendix. |
 | Map arrows | Dependency edge, failure-step selection, or backward context window ↛ accepted POINTER emission. A diagnostic step number does not become a Lace index. |
 | ON THE SHOE | Pieces 2, 5, and 6; Graphic D2–D3 and D6. Backward references, including references to earlier POINTERs, are recorded constraints. Which event emits which references, with what arity, remains unresolved. |
 | KEEP | The bounded negative finding and the distinction between observing the holder and operating the strand. |
@@ -122,14 +154,14 @@ A full text-layer search for whole-word lace, pointer/pointers, emission, and ap
 | ReAG / ISR as the store | FORBID ReAG rows in the 1D array; semantic indexing remains holder machinery. | A2; Page C. |
 | ReAG edge = POINTER | Graphic D's existing constraints do not supply an emission algorithm. | A2; Pages C/F. |
 | Neural invariant = stored meaning or proof | Diagnostic judgment over [H] is not an authoritative field or write at [X]. | A3; Page D. |
-| First detected error = decisive cause | Retain the distinction between onset, manifestation, and the selected decisive error. | A5; §3.3, pp.5–6; §5.1, p.9; Appendix C, p.22. |
+| First detected error = decisive cause | Retain the distinction between onset, manifestation, and the selected decisive error. | A5; §3.3 **PDF pp.5–6**; §5.1 **PDF p.9**; Appendix C **PDF p.22**. |
 | Later appendix = hidden Core rule | The appendices define diagnostics, report distribution, and discuss a case; none accepts a Lace operator. | A5; Page F. |
 
 **ON THE SHOE:** Graphics B1/B10, C10/C11, and D1–D6; manifest Pieces 3, 5, 6, 13, and 14. **Map arrows:** trace evidence → holder diagnosis [INFERENCE under LAW]; diagnosis ↛ strand operation. **KEEP:** failure taxonomy for the HOLDER. **FORBID:** its graph, annotations, or verdicts becoming Core authority. **EMISSION:** NO / [GAP]. **vs reason-model-map:** CONFIRMS the A1–A5 boundaries and REFINES the source descriptions above.
 
 **A5 eye — SOURCE:** The decisive-error stage selects the candidate whose downstream impact best explains the degraded outcome, not necessarily the first anomaly. Appendix C discusses a trace with an early annotated mistake, later repeated ineffective actions, and a final orchestration error. This is the authors' case interpretation; this clipboard did not rerun that trace or independently establish its causality.
 
-**Source anomaly retained:** Appendix B, Figure 6, p.21, visibly labels Reasoning 36.0%, Control-flow 31.0%, and Action 36.0%, totaling 103.0%. This printed inconsistency is not silently normalized or treated as validated distribution evidence. It does not change the holder/Core boundary.
+**Source anomaly retained:** Appendix B, Figure 6 **PDF p.21**, visibly labels Reasoning 36.0%, Control-flow 31.0%, and Action 36.0%, totaling 103.0%. Pass 1 re-sighted the figure text layer; inconsistency retained (not normalized). It does not change the holder/Core boundary.
 
 **Product:** diagnoses the steward, not the lace. All prior passes remain intact; this reading adds no Core mechanism.
 
