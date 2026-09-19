@@ -32,6 +32,7 @@
 | [verification-iter2-pass-4-findings.md](verification-iter2-pass-4-findings.md) | pass 4 record. The seven receipts share six slots under seven names — a broken form, not broken practice; commits survive, paths do not |
 | [verification-iter2-pass-5-plan.md](verification-iter2-pass-5-plan.md) | `[PLAN]` iteration 2 pass 5: **human rulings E1-E6.** There is no enforcement path at all; main has been red for twelve commits |
 | [verification-iteration-2-receipt.md](verification-iteration-2-receipt.md) | **iteration 2 receipt.** Four modes of instrument failure; four checks repaired; the one decay that costs anything has no owner |
+| [verification-iteration-3-plan.md](verification-iteration-3-plan.md) | `[PROPOSAL]` iteration 3: **what rots.** Pass 1 executed — nine broken citations with four different causes, treated as one |
 | [restructure-plan.md](restructure-plan.md) | `[PROPOSAL]` coherence of the whole tree: twelve measured findings, eight phases, one station per commit; supersedes the defrag plan as filing plan of record |
 
 Sub-shelves: [fixtures/](fixtures/README.md) sealed golden IR · [tools/](tools/README.md) host validator.
