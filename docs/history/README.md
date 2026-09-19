@@ -26,3 +26,7 @@ An **extraction** is what a pass recovered. A **sit-note** is how that extract s
 | [history-recovered-pass-7-evidence-2026-09-18.json](history-recovered-pass-7-evidence-2026-09-18.json) | Pass 7 evidence (409 KB JSON; machine record, not prose) |
 
 POINTER emission stays `[GAP]`. No `src/`.
+
+## Relationship evidence questions
+
+[Two-point challenge, pass 1](relationship-evidence-pass-1.md): reproducibly sampled historical snapshots; word / definition-route / retained-touch questions for the global mapper. Sampling and bounded text inspection performed; mapper response and independent adjudication **NOT_RUN**. The two snapshots share document blobs and are not independent corroboration. This is not recovery pass 8, a global-diagram pass, or a reopening of quiet-door #5. No acceptance or Core change.
