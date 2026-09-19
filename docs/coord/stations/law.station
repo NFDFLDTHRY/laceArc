@@ -1,7 +1,7 @@
-STATUS: FREE
+STATUS: HELD
 STATION: law
 OWNS: AGENTS.md CLAUDE.md docs/staking-the-workspace.md docs/law-why-these-documents.md docs/systems-manifest.md docs/pointer-emission.md docs/references.md CONTRIBUTING.md README.md .gitignore LICENSE docs/README.md
-AGENT: -
-BASE: -
-SINCE: -
-NOTE: 
+AGENT: Grok-evidence
+BASE: a7caf31fe7392132a312760390e14d8c07b76bb6
+SINCE: 2026-09-19T21:37:50Z
+NOTE: Grok-evidence claimed for Φ-cluster sit. Human: stamps may lag; do not treat when/arity/slots/adjacency as one unsolved hole. Draft unanswered. No Answer lines filled this tick. History still HELD same agent. Φ file still DRAFT.
