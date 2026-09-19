@@ -10,9 +10,9 @@
   "theme_color": "#05070c",
   "icons": [
     {
-      "src": "../hologram/clockwork-view-lattice.jpg",
-      "sizes": "512x512",
-      "type": "image/jpeg",
+      "src": "./icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
       "purpose": "any"
     }
   ]

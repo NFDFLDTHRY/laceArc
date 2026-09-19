@@ -4,7 +4,7 @@
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
 <title>LaceArc · Layer III · 3D lattice (D1 time)</title>
-<link rel="manifest" href="manifest.webmanifest"/>
+<link rel="apple-touch-icon" href="icon-192.png"/>
 <meta name="theme-color" content="#05070c"/>
 <meta name="apple-mobile-web-app-capable" content="yes"/>
 <meta name="mobile-web-app-capable" content="yes"/>
@@ -48,7 +48,7 @@ aside[hidden]{display:none}
 </div>
 <div class="hud">
   <header class="hit">
-    <h1>LAYER III · i1p3 · GLASS + HEAT</h1>
+    <h1>LAYER III · i1p4 · INSTALL / UPDATE</h1>
     <p>Install on githack <code>main</code>, not a SHA. Audit ticks stay SHA-pinned. Cubes are glyphs. No emitter. [GAP]</p>
   </header>
   <div class="modes hit">
@@ -71,9 +71,11 @@ holder  outside this box</aside>
   </aside>
   <div class="dock hit">
     <button type="button" id="play">pause</button>
+    <button type="button" id="installbtn">Install</button>
+    <button type="button" id="updatebtn">Update</button>
     <input id="t" type="range" min="0" max="10" step="0.02" value="0"/>
     <span id="phase">t=0000</span>
-    <span class="stamp">i1p3</span>
+    <span class="stamp">i1p4</span>
     <span class="stamp" id="nnstamp">WebNN ?</span>
     <span class="stamp" id="pwastamp">PWA ?</span>
     <span class="stamp">glyphs ≠ schema</span>
@@ -402,19 +404,60 @@ main().catch(err=>{
     } else el.textContent="WebNN off";
   } catch (_) { el.textContent="WebNN off"; }
 })();
+let deferredPrompt=null;
+window.addEventListener("beforeinstallprompt", ev=>{
+  ev.preventDefault();
+  deferredPrompt=ev;
+  const b=document.getElementById("installbtn");
+  if(b) b.hidden=false;
+});
+document.getElementById("installbtn").onclick=async ()=>{
+  if(!deferredPrompt){
+    const e=document.getElementById("pwastamp");
+    if(e) e.textContent="Share→Add";
+    return;
+  }
+  deferredPrompt.prompt();
+  await deferredPrompt.userChoice.catch(()=>{});
+  deferredPrompt=null;
+  document.getElementById("installbtn").hidden=true;
+};
 if ("serviceWorker" in navigator) {
+  let reloading=false;
   navigator.serviceWorker.register("sw.js", { scope: "./" })
     .then(reg => {
       const e=document.getElementById("pwastamp"); if(e) e.textContent="PWA on";
-      try { reg.update(); } catch(_){}
+      const upd=document.getElementById("updatebtn");
+      const kick=()=>{
+        if(reg.waiting){
+          if(e) e.textContent="PWA upd";
+          upd.textContent="Reload";
+        }
+      };
+      kick();
+      reg.addEventListener("updatefound", ()=>{
+        const w=reg.installing;
+        if(!w) return;
+        w.addEventListener("statechange", kick);
+      });
+      upd.onclick=()=>{
+        try { reg.update(); } catch(_){}
+        if(reg.waiting){
+          reg.waiting.postMessage({type:"skip"});
+        } else if(e) e.textContent="PWA chk";
+      };
     })
     .catch(() => { const e=document.getElementById("pwastamp"); if(e) e.textContent="PWA off"; });
   navigator.serviceWorker.addEventListener("controllerchange", () => {
+    if(reloading) return;
+    reloading=true;
     const e=document.getElementById("pwastamp"); if(e) e.textContent="PWA upd";
     location.reload();
   });
 } else {
   const e=document.getElementById("pwastamp"); if(e) e.textContent="PWA off";
+  const b=document.getElementById("installbtn");
+  if(b){ b.hidden=false; }
 }
 </script>
 </body>

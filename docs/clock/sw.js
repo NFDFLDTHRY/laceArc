@@ -1,10 +1,14 @@
 /* Layer III cache. HTML is network-first so githack main can move. */
-const CACHE = "lace-iii-i1p3";
+const CACHE = "lace-iii-i1p4";
 const PRE = [
   "../hologram/clockwork-view-lattice.jpg",
   "../hologram/clockwork-view-traces.jpg",
-  "../hologram/clockwork-view-crossing.png"
+  "../hologram/clockwork-view-crossing.png",
+  "./icon-192.png"
 ];
+self.addEventListener("message", e => {
+  if (e.data && e.data.type === "skip") self.skipWaiting();
+});
 self.addEventListener("install", e => {
   e.waitUntil(caches.open(CACHE).then(c => c.addAll(PRE)).then(() => self.skipWaiting()));
 });
