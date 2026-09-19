@@ -29,6 +29,7 @@ Portable steward controls. Not Hands. Not Graphic D. Nothing here is a source of
 | [scanner-fix-receipt.md](scanner-fix-receipt.md) | Scanner-fix iteration receipt. CLOSED 6/6 | CLOSED |
 | [scanner.md](scanner.md) | Rescan spine. Stamp ≠ activity. Door #1 LIVE + CLOSED 6/6 | CLOSED 6/6 |
 | [quiet-door-3-pass-1-plan.md](quiet-door-3-pass-1-plan.md) | Door #3 (Court) pass 1: ASCII spine of docs/README.md | EXECUTED |
+| [quiet-door-3-pass-2-plan.md](quiet-door-3-pass-2-plan.md) | Door #3 pass 2 PLAN: In / Does / Break / Gap | **PLAN only. Not run** |
 | [quiet-door-3-ascii.md](quiet-door-3-ascii.md) | Door #3 ASCII companion. Does not replace the court. Does not fill G2 | pass 1 spine |
 | [agent-control.md](agent-control.md) | Portable standing prompt: the staking law verbatim, then the operating controls C01–C12 | DATED transport at `e21cf39`; [live law](../law-why-these-documents.md) wins |
 | [agent-task-template.md](agent-task-template.md) | One-task, adjudication, proof-contract and handoff forms | live |

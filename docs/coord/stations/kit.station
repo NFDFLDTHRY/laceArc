@@ -2,6 +2,6 @@ STATUS: HELD
 STATION: kit
 OWNS: docs/kit/** .claude/**
 AGENT: Grok-kit
-BASE: dbab169566e89f44fe4536c8bed79547ed1ba467
-SINCE: 2026-09-19T06:49:45Z
-NOTE: Court door pass 1 EXECUTED. Spine on quiet-door-3-ascii.md. Door untouched. Next pass 2 fields. Φ [GAP].
+BASE: 01ade425d03b47bf54f0990c1b21dc10330096c6
+SINCE: 2026-09-19T06:51:22Z
+NOTE: Court door pass 2 PLAN. Pass 1 spine EXECUTED. Fields. Φ [GAP].
