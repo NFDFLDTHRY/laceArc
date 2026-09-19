@@ -2,7 +2,7 @@
 
 **Object:** `docs/coord/README.md`  
 **Station:** coord.  
-**Executed:** [quiet-door-9-pass-1-plan.md](quiet-door-9-pass-1-plan.md) · [quiet-door-9-pass-2-plan.md](quiet-door-9-pass-2-plan.md) · [quiet-door-9-pass-3-plan.md](quiet-door-9-pass-3-plan.md) · [quiet-door-9-pass-4-plan.md](quiet-door-9-pass-4-plan.md).  
+**Executed:** [quiet-door-9-pass-1-plan.md](quiet-door-9-pass-1-plan.md) · [quiet-door-9-pass-2-plan.md](quiet-door-9-pass-2-plan.md) · [quiet-door-9-pass-3-plan.md](quiet-door-9-pass-3-plan.md) · [quiet-door-9-pass-4-plan.md](quiet-door-9-pass-4-plan.md · [quiet-door-9-pass-5-plan.md](quiet-door-9-pass-5-plan.md).  
 **Not:** Core. Not Graphic E. Not Hands. Not door #8 pass 7. Not projection iter 5. Not a shaft claim. Not a rewrite of `coord.sh`.  
 **Emission:** `[GAP]`. No `src/`. Coord door bytes untouched. `coord.sh` untouched. Renderer unclaimed. Shafts FREE. Door #8 CLOSED.
 
@@ -199,3 +199,26 @@ This walk names the owner or holds the unknown and does not emit POINTER. Hands 
 | T2 | Eight `New machine?` = no |
 | T3 | `coord.sh` unedited |
 | T4 | Door + `coord.sh` + shafts + Gearing untouched |
+
+## Pass 5 — seam
+
+Five files. None becomes another.
+
+| File | Names | Stores | Writes L? | Becomes the other if |
+|---|---|---|---|---|
+| `docs/coord/README.md` | Layer III umbrella; not Core | no | no | treated as Hands |
+| `docs/graphics/README.md` | the four graphics | yes — Hands | no | treated as a station object |
+| `docs/gearing/README.md` | Layer III shafts; CLOSED as door #8 | no | no | reopened as this campaign |
+| `docs/kit/README.md` | kit index; QUIET as door #2 | no | no | claimed as this door |
+| `docs/coord/quiet-door-9-ascii.md` | the coord door as a reading | no | no | treated as Hands or as `coord.sh` |
+
+Coord names. Hands stores. Gearing stays CLOSED. Kit stays QUIET. This file reads the coord door. `coord.sh` stays unedited.
+
+## Pass 5 deltas
+
+| Ticket | Action |
+|---|---|
+| T1 | Five-file seam |
+| T2 | None of the five rewritten |
+| T3 | This reading is not the store |
+| T4 | Door / Hands / gearing / kit / `coord.sh` untouched |

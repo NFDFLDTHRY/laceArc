@@ -2,6 +2,6 @@ STATUS: HELD
 STATION: coord
 OWNS: docs/coord/**
 AGENT: Grok-coord
-BASE: 451abcce56054c8a6c548b3e68a35172ba7939c7
-SINCE: 2026-09-19T15:18:35Z
-NOTE: Quiet door #9 pass 5 PLAN. Pass 1–4 EXECUTED. Seam. Door+coord.sh untouched. Door #8 CLOSED. Φ [GAP].
+BASE: c37a655a0d972d1dec6b31b0edf6da8922c1b6eb
+SINCE: 2026-09-19T15:23:10Z
+NOTE: Quiet door #9 pass 5 EXECUTED. Seam on quiet-door-9-ascii.md. Next pass 6 receipt. Door #8 CLOSED. Φ [GAP].

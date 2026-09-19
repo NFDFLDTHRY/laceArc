@@ -1,6 +1,6 @@
 # Quiet door #9 (Coord) — Pass 5 PLAN
 
-**Status:** PLAN only. Not run.  
+**Status:** EXECUTED — seam on `docs/coord/quiet-door-9-ascii.md`. Door + `coord.sh` unchanged. Emission `[GAP]`.  
 **Station:** coord (HELD Grok-coord).  
 **Object:** Coord seam — vs Hands, gearing, kit.  
 **Authority:** [`quiet-door-9-ascii.md`](quiet-door-9-ascii.md) passes 1–4. [`docs/coord/README.md`](README.md). [`docs/graphics/README.md`](../graphics/README.md). [`docs/gearing/README.md`](../gearing/README.md). [`docs/kit/README.md`](../kit/README.md).  
