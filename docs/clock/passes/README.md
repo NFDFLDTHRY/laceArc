@@ -4,6 +4,8 @@ Tickets for passes already run against a product on [the clock shelf](../README.
 
 **Where a new pass plan goes:** here, next to its siblings, and **the product it serves links it when the pass is executed**. A pass plan nobody links is provenance nobody can find.
 
+**When the product is not a document, that rule cannot be kept, and a campaign index stands in its place.** The projection campaigns serve `lace-projection.html`, an application — [`projection-iterations.md`](projection-iterations.md) indexes their thirty passes by link and by title stamp.
+
 ## Coffee Cup — event-time gear (Gear C)
 
 Product: [`coffee-cup-systems-manifest.md`](../coffee-cup-systems-manifest.md)
@@ -76,4 +78,10 @@ Product: [`lace-projection.html`](../lace-projection.html)
 | 1 | [projection-merge-pass-1-plan.md](projection-merge-pass-1-plan.md) |
 | 2 | [projection-merge-pass-2-plan.md](projection-merge-pass-2-plan.md) |
 
-30 executed pass plans across 6 campaigns. POINTER emission stays `[GAP]`. No `src/`.
+**Sixty executed pass plans.** Thirty are tabled above, against the four systems
+manifests they serve. The other thirty serve the projection viewer and are indexed
+in [`projection-iterations.md`](projection-iterations.md) — the tables above are not
+extended for them, because a document sibling is what this shelf was missing, not
+more rows in the door.
+
+POINTER emission stays `[GAP]`. No `src/`.
