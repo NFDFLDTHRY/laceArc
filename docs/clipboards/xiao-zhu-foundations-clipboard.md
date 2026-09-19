@@ -1,11 +1,11 @@
 # CLIPBOARD — laceArc ← Xiao & Zhu *Foundations of Large Language Models*
 
 Shadow stake only. Hands win. POINTER emission = `[GAP]`.
-PDF: local `artifacts/2501.09223v2.pdf` (arXiv:2501.09223v2, 15 Jun 2025 / book date 17 Jun 2025). **Never git-add the PDF.**
+PDF: gitignored `refs/local/xiao-zhu-foundations-llm.pdf` → attachment `0f5d145d…ba50bc1a.pdf` (arXiv:2501.09223v2, 15 Jun 2025 / book date 17 Jun 2025). **Never git-add the PDF.**
 License: CC BY-NC 4.0. Cite; do not fold body text into Apache Core.
 This file is Layer III. Not Core.
 
-**PDF fact this pass:** 277 pages. Text layer present. Printed page \(p\) ≈ PDF page \(p+7\) (ch.1 starts PDF 8 = printed p.1). Eye-quotes are short fragments.
+**PDF fact this pass:** 277 pages. Text layer present. Printed page \(p\) ≈ PDF page \(p−7\) (ch.1 starts PDF 8 = printed p.1; PDF = printed + 7). Eye-quotes are short fragments.
 
 Law on this clip: arrival order kin · intern / MASK / embed / next-token ≠ Core · `[GAP]` sealed.
 
@@ -17,6 +17,56 @@ fetch/ff main → shoe → graphics A–D → manifest → law
                  → this file
                  → STOP
 ```
+
+
+## Pass 1 (PDF-sighted) receipt
+
+| Field | Value |
+|---|---|
+| Status | EXECUTED |
+| When | 2026-09-18 ~19:06 PT |
+| Station | clipboards · agent `reference-Mapper` |
+| Plan | [xiao-zhu-pass-1-pdf-plan.md](xiao-zhu-pass-1-pdf-plan.md) |
+| Hands skim | shoe → graphics A–D → systems-manifest → staking / law-why → reason-model-map §3 (X1–X7) → this clipboard → five-stakes PAGE 3/5 (read-only; T6 skip) |
+| PDF | **PRESENT** — `refs/local/xiao-zhu-foundations-llm.pdf` → attachment `0f5d145d298a90bbe1648b365d97b8833e86be3c31bedd7db900a932ba50bc1a.pdf`; **277** pp.; text layer yes; SHA matches; `git check-ignore` OK; never staged |
+| Method | `pdftotext -f N -l N -layout` on this attachment (primary) |
+| Product | A–F, X loci re-pinned; Eq 1.1 / decoder-only prefix LM / MASK / embeds / generative next-token / Ch.5 inference re-verified; false friends refreshed; morals unchanged |
+| Stamps | **CONFIRM** ×6 (A,B,C,D,E,X) · **REFINE** ×1 (B eye-quote wording) · **SILENT** ×1 (F on Φ) · **CONFLICT** ×0 (no map/Hands conflict this pass) |
+| Amended | reason-model-map · law · graphics · five-stakes · src/ · systems-manifest | **No** |
+| Emission | still `[GAP]` — no POINTER when / arity / adjacency; no Lace tokenizer; Φ unfilled |
+
+### Offset certificate (printed ↔ PDF, this attachment)
+
+| Printed | PDF (1-based) | Locus |
+|---|---|---|
+| p.1 | 8 | Ch.1 Pre-training head |
+| p.2 | 9 | Eq (1.1) \(o = g_\theta(x_0,\ldots,x_m)\) |
+| p.7 | 14 | §1.2.1 Decoder-only “preceding tokens” |
+| p.9–10 | 16–17 | §1.2.2.1 Masked LM |
+| p.19 | 26 | Token Deletion (BART corruption) |
+| p.23 | 30 | BERT 80/10/10 MASK / replace / leave |
+| p.25 | 32 | \(e = x + e_{pos} + e_{seg}\) |
+| p.29 | 36 | “every token is just an entry of the shared vocabulary” |
+| p.37–38 | 44–45 | word/token interchangeably; eq (2.3); \(e_i\) = token + positional |
+| p.70 | 77 | §2.3.3 Cache and Memory |
+| p.203 | 210 | Ch.5 Inference · \(\hat y = \arg\max Pr(y\mid x)\) |
+
+Rule: **printed \(p\) ≈ PDF \(p − 7\)** (equivalently PDF ≈ printed + 7). **CONFIRM** on pairs above.
+
+### Per-page stamps vs reason-model-map §3
+
+| PAGE | Stamp | PDF pin(s) | Eye (short) / Notes |
+|---|---|---|---|
+| A Token sequence / arrival order | **CONFIRM** X1 (weak kin) | §1.2.1 PDF 14; Eq 1.1 PDF 9; encoder-only PDF 15 | “predicts the distribution of tokens at a position given its preceding tokens” · KEEP arrival order; dies at intern |
+| B Interned vocabulary token | **CONFIRM** X2 CONFLICT; **REFINE** eye-quote | PDF 36 shared-vocab entry; PDF 44–45 word↔token / pick \(x_i\in V\) | Prior “Each token is represented as an entry…” was paraphrase → replace with book wording · FORBID intern id as Lace occurrence identity |
+| C MASK / replace / corrupt | **CONFIRM** X4 CONFLICT | PDF 16–17; BERT PDF 30–31; deletion PDF 26 | 80% [MASK] / 10% random / 10% leave; Token Deletion · FORBID as Lace cut |
+| D Embed / position store | **CONFIRM** X5 CONFLICT | PDF 32–33 eq (1.20); PDF 45 \(e_i\) | \(e = x + e_{pos} + e_{seg}\); decoder \(e_i\) = token emb + positional emb · FORBID embed store as Core |
+| E Next-token / causal LM | **CONFIRM** X3 / X7 CONFLICT | PDF 14–15 loss (1.5)–(1.7); PDF 45 eq (2.3); Ch.5 PDF 210 eq (5.1) | \(\hat x_i = \arg\max Pr(x_i\mid prefix)\); inference \(\arg\max Pr(y\mid x)\) · FORBID next-token as Core continue |
+| F When-to-point / false friends | **SILENT** on Φ | none as emission; lookalikes PDF 44, 45, 77, 210; Ch.3–4 TOC | still no when/arity/adjacency; tokenizer [GAP] opened not closed |
+| X Cross-cut | **CONFIRM** | derived from A–F pins | temptations vs Hands; tokenizer `[GAP]`; Φ `[GAP]` |
+
+T6 five-stakes: **skip** — PAGE 3/5 source pins (Eq 1.1 PDF 9; BERT PDF 30; §2.1.1 PDF 45; Ch.5 PDF 210) and KEEP/FORBID agree with this PDF (no eye-quote conflict).
+
 
 ---
 
@@ -49,10 +99,10 @@ fetch/ff main → shoe → graphics A–D → manifest → law
 │                                                                          │
 │   ┌────────────────────────────────────────────────────────────────┐     │
 │   │ PAGE B — INTERNED VOCABULARY TOKEN                             │     │
-│   │ locus: §1.3 / BERT input notes printed ~p.23 (PDF 30);         │     │
+│   │ locus: shared vocab printed p.29 (PDF 36);                     │     │
 │   │        ch.2.1 printed p.37–38 (PDF 44–45)                      │     │
 │   │ quote/eye:                                                     │     │
-│   │   “Each token is represented as an entry in a vocabulary V.”   │     │
+│   │   “every token is just an entry of the shared vocabulary.”     │     │
 │   │   ch.2: “We will use terms word and token interchangeably.”    │     │
 │   │   Generation: pick xi from V so Pr(xi | prefix) is max.        │     │
 │   │                                                                │     │
@@ -63,7 +113,7 @@ fetch/ff main → shoe → graphics A–D → manifest → law
 │   │ FORBID: intern token as WORD / Star node                       │     │
 │   │ ON SHOE: Piece 4 / Piece 7 · Graphic B                         │     │
 │   │ EMISSION? NO [GAP]                                             │     │
-│   │ vs reason-model-map §3: CONFIRMS X2 CONFLICT.                  │     │
+│   │ vs reason-model-map §3: CONFIRMS X2 CONFLICT; REFINE eye-quote.│     │
 │   └────────────────────────────────────────────────────────────────┘     │
 │                                                                          │
 │   ┌────────────────────────────────────────────────────────────────┐     │
@@ -125,11 +175,12 @@ fetch/ff main → shoe → graphics A–D → manifest → law
 │   ┌────────────────────────────────────────────────────────────────┐     │
 │   │ PAGE F — ANYTHING THAT LOOKS LIKE “WHEN TO POINT”              │     │
 │   │ locus: NONE FOUND as an emission rule                          │     │
-│   │ false friends inspected:                                       │     │
-│   │   attention / cache / memory (ch.2.3)  → holder machinery [H]  │     │
-│   │   “word and token interchangeably”     → intern collapse [X]   │     │
-│   │   arg max Pr                         → projection, not append │     │
-│   │   tokenization                       → unstated in graphics   │     │
+│   │ false friends inspected (PDF pins):                            │     │
+│   │   cache / memory §2.3.3 PDF 77     → holder machinery [H]      │     │
+│   │   word↔token interchangeably PDF 44 → intern collapse [X]      │     │
+│   │   arg max Pr eq (2.3)/(5.1) PDF 45/210 → projection, not append│     │
+│   │   prompting Ch.3 / alignment Ch.4  → steward [H] (X6)          │     │
+│   │   tokenization footnote PDF 9      → unstated in graphics      │     │
 │   │                                                                │     │
 │   │   looks like emission ──silenced──► [GAP]                      │     │
 │   │   do not invent when / arity / adjacency                       │     │
@@ -168,5 +219,6 @@ fetch/ff main → shoe → graphics A–D → manifest → law
 - CC BY-NC stays out of Apache body text. These sheets cite; they do not paste chapters.
 - PAGE F opens a tokenizer gap. Opening is not filling \(\Phi\).
 - This file does not amend `docs/reason-model-map.md`.
+- Pass 1 (PDF-sighted) verified loci on attachment `0f5d145d…ba50bc1a`; emission remains `[GAP]`.
 
 Shoe in hands, or no.

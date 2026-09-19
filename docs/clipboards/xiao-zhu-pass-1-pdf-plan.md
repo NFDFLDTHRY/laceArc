@@ -1,6 +1,6 @@
 # Xiao & Zhu pass 1 (PDF-sighted) — clipboard vs attached *Foundations of Large Language Models*
 
-**Status:** PLANNED — not executed. Emission `[GAP]`.  
+**Status:** EXECUTED — 2026-09-18 ~19:06 PT. Emission `[GAP]`.  
 **Station:** clipboards (HELD `reference-Mapper`)  
 **Base at plan:** refresh to current `origin/main` before execute  
 **Book:** Tong Xiao & Jingbo Zhu, *Foundations of Large Language Models*  
@@ -18,7 +18,7 @@
 | Working link (gitignored) | `refs/local/xiao-zhu-foundations-llm.pdf` |
 | Pages | **277** (`pdfinfo`) |
 | Text layer | **Present** |
-| Printed ↔ PDF | printed \(p\) ≈ PDF \(p+7\) (ch.1 starts PDF 8 = printed p.1) — verify on execute |
+| Printed ↔ PDF | printed \(p\) ≈ PDF \(p−7\) (ch.1 starts PDF 8 = printed p.1) — **CERTIFIED** at execute |
 | SHA-256 | `0f5d145d298a90bbe1648b365d97b8833e86be3c31bedd7db900a932ba50bc1a` |
 | Git | **Never `git add` the PDF** |
 
@@ -47,7 +47,7 @@ pull/ff → claim clipboards → Hands skim
 | 14 | Decoder-only “predicts … given preceding tokens” | PAGE A seed **CONFIRM** |
 | 30 | BERT mask / replace discussion region | PAGE B/D seed **CONFIRM** |
 
-Full A–X walk remains **TODO** at execute. Clipboard header said 277 pp. — matches `pdfinfo`.
+Full A–X walk **DONE** at execute. Clipboard header said 277 pp. — matches `pdfinfo`.
 
 ---
 
@@ -141,13 +141,22 @@ Ask before push.
 
 ---
 
-## Execution (when you say go pass 1 / go Xiao pass 1)
+## Execution receipt
 
-1. Refresh claim.  
-2. T1–T5 (T6 only if needed).  
-3. Mark this plan EXECUTED.  
-4. Check · commit · release.  
-5. Stop.
+**EXECUTED** 2026-09-18 ~19:06 PT · station clipboards · `reference-Mapper`.
+
+| Ticket | Result |
+|---|---|
+| T0 Claim / base | REFRESHED clipboards; local pass-1 plan commit kept (ahead of origin) |
+| T1 Hands skim | shoe → graphics A–D → manifest → law → reason-model-map §3 X1–X7 → clipboard → five-stakes PAGE 3/5 |
+| T2 PDF gate | `refs/local/xiao-zhu-foundations-llm.pdf` → `0f5d145d…ba50bc1a`; SHA match; 277 pp.; text layer; `git check-ignore` OK |
+| T3 Offset | **printed ≈ PDF − 7** CERTIFIED (ch.1 PDF 8 = printed 1; pairs in clipboard receipt) |
+| T4 Page walk | A–F, X all PDF-pinned; stamps CONFIRM×6 · REFINE×1 (B) · SILENT×1 (F) · CONFLICT×0 |
+| T5 Scope | PAGE B eye-quote refined to book wording; no Lace tokenizer / Φ invent; CC BY-NC cite-only |
+| T6 Five-stakes | **skip** — PAGE 3/5 pins agree (no eye-quote conflict) |
+| T7 Commit / release | pending this commit |
+
+Amended: clipboard + this plan only. Emission `[GAP]`. PDF never staged.
 
 ---
 
