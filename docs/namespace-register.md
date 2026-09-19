@@ -3,9 +3,11 @@
 **Status:** `[PROPOSAL]` for the citation rule. The families themselves are measured, not proposed — each range below was read out of its defining document.
 **Station:** maps. **Emission:** `[GAP]`. No `src/`.
 
-Twenty-six identifier families share one small alphabet. **60 tokens are claimed by two or more families**, 19 of them by three and **5 by four**. `A5` is a Graphic A panel, a `trainA` gear tooth, a coherence-audit station, and a section of the AgentScope paper.
+Twenty-seven identifier families share one small alphabet. **72 tokens are claimed by two or more families**, 14 of them by three and **5 by four**. `A5` is a Graphic A panel, a `trainA` gear tooth, a coherence-audit station, and a section of the AgentScope paper.
 
-**How these numbers are got:** expand every `Range` cell in the table below into its tokens, *keeping zero-padding*, and count the tokens with more than one owner. Re-derived that way at `810d200`, at `af89f85` after passes 2b and 2c, and at `dbeaa88` after pass 3 replaced the inclusion rule. **The two-owner count moved 41 → 60 there**, because five newly registered families sit on letters other families already held.
+**How these numbers are got:** expand every `Range` cell in the table below into its tokens, *keeping zero-padding*, and count the tokens with more than one owner. Re-derived that way at `810d200`, at `af89f85` after passes 2b and 2c, at `dbeaa88` after pass 3 replaced the inclusion rule, and at iteration 4 pass 3. **The derivation is arithmetic on this table and nothing else:** read each `Range` cell, expand `X`–`Y` where both ends share a prefix and differ only in a number, keep every other backticked literal as one token, take the union per family, and count tokens owned by more than one family. One family is measured rather than expanded — the projection stamps are read off the status lines of `docs/clock/passes/`. **No script is committed for this**; adding one would be adding code, which this tree does not do without the human saying so.
+
+**The published figure of 26 families was the duplicate below counted twice; the true count was 25, and adding two families makes it 27.** Running one script over the table before and after this pass's edits gives **71 → 72** two-owner tokens — `i1`–`i3` gained a second owner, and `1`–`12` lost one when the duplicated row was merged onto the `Q` form. **The previously published 60 could not be reproduced by any reading of this table**, which is the failure this register already names twice elsewhere: a headline derived by a method nobody wrote down. The script is now the method.
 
 **Nothing is renamed to fix this, and nothing should be.** The gear keys are string literals in `contracts-*.js`, and [the 1:1 audit](clock/gearing-code-1to1.md) states the 47 names form a bijection with the registry — renaming a tooth breaks running code and a documented audit together. `A1` alone appears in 50 files. See [the restructure plan §4.7](plans/restructure-plan.md) for the measurement that settled this.
 
@@ -33,7 +35,7 @@ Each station applies this when it next touches a file it owns. **No file is rewr
 |---|---|---|---|---|
 | Graphic panel | `A1`–`A13` `B1`–`B12` `C1`–`C12` `D1`–`D6` | the four PNGs; labels assigned by [the manifest](systems-manifest.md) and [the close reading](graphics-close-reading.md) | law | source of record |
 | Manifest Piece | `1`–`15`, written **`Piece 5`** | [systems-manifest.md](systems-manifest.md) | law | |
-| Manifest open question | `1`–`12`, **bare numbers in the source** | [systems-manifest.md](systems-manifest.md) | law | cited downstream as `Q9`; that prefix is a convention, not in the source |
+| Manifest open question | `Q1`–`Q12` — **bare `1.`–`12.` in the source** | [systems-manifest.md](systems-manifest.md) | law | Twelve, counted in the source at `docs/systems-manifest.md:462`. The `Q` prefix is a downstream convention and is the form that collides; the bare numerals are list markers, not tokens. **Registered twice until iteration 4 pass 3**, once by each form, which double-counted the family in the headline below |
 | Boundary stamp | `[I]` `[II]` `[III]` `[H]` `[X]` `[GAP]` `[CONFLICT]` `[INFERENCE]` `[PROPOSAL]` `[PLAN]` | [staking](staking-the-workspace.md), [live law](law-why-these-documents.md) | law | |
 | Atomic primitive | `P0`–`P4` | [atomic-primitives-map.md](atomic-primitives-map.md) | maps | |
 | Atomic constraint | `K1`–`K6` | [atomic-primitives-map.md](atomic-primitives-map.md) | maps | |
@@ -54,9 +56,10 @@ Each station applies this when it next touches a file it owns. **No file is rewr
 | Kauffman clipboard section | `K1`–`K9` | [kauffman-4ed-clipboard.md](clipboards/kauffman-4ed-clipboard.md) | clipboards | `K8` is slide equivalence, Part II §4° |
 | Xiao & Zhu clipboard section | `X1`–`X9` | [xiao-zhu-clipboard.md](clipboards/xiao-zhu-foundations-clipboard.md) | clipboards | `X3`, `X7` are next-token-as-Core forbids |
 | Rust second-reading finding | `F1`–`F11` | [rust-nostd-second-reading.md](plans/rust-nostd-second-reading.md) | maps | `F7` is the validator finding |
-| Manifest open question | `Q1`–`Q12` | [systems-manifest.md](systems-manifest.md) | law | bare numbers in the source; the `Q` prefix is a downstream convention |
 | Ticket · tension · task | `T0`–`T9` | three sources — see the collision table | — | **three meanings**, see below |
 | Water bucket / spec | `OBS` `DELTA` `UNK` `INVALID`; `F1`–`F5` | [water-systems-manifest.md](clock/water-systems-manifest.md) | hologram | |
+| **Projection title stamp** | `i1`–`i5`, `i1p2`–`i5p6`, `ixp1`–`ixp2` | [the projection pass plans](clock/passes/README.md) | hologram | The stamp a pass writes into the running viewer, cited on the next pass's `Evidence:` line. **27 distinct stamps over 30 files, no duplicates.** A bare `i1` is this family only inside `docs/clock/passes/` |
+| **Graphics ASCII iteration** | `i1`–`i3` | [ascii-iterations.md](graphics/ascii-iterations.md) | graphics | Shorthand for a whole six-pass iteration, not a single pass. `docs/kit/scanner.md` and [cold-doors.md](kit/cold-doors.md) cite it as *graphics i1/i2* and *Graphics ASCII i3* — read in place, both are this family, not a third |
 
 ## Collisions, and how to tell
 
@@ -78,6 +81,7 @@ Each station applies this when it next touches a file it owns. **No file is rewr
 | `X1`–`X6` | gear audit key · crate-map page · **Xiao & Zhu section** | `audits:X2` is a key; the crate map has one page `X`; Xiao's run to `X9` |
 | `F1`–`F5` | Water spec · **rust second-reading finding** | Padding separates `F01`–`F12`; it does **not** separate these two, and both are bare |
 | `T0`–`T9` | ticket number · **rope tension** · **`M-T`/`P-T` task series** | A ticket is local to one pass plan. Tension is `T2 ≤ κ T1` in the Kauffman clipboard. The task series is always prefixed — `M-T3`, `P-T3` — and the prefix is the tell |
+| `i1`–`i3` | **projection title stamp** · **graphics ASCII iteration** | The shelf is the tell, and it is reliable: a projection stamp appears only under `docs/clock/passes/`, a graphics iteration only under `docs/graphics/` or citing it by name. A projection stamp usually carries a pass suffix — `i3p4` — which the graphics family never does. `i4` and `i5` are projection only |
 
 ## What puts a family in this register
 

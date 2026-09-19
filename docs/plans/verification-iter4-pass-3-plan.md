@@ -1,6 +1,6 @@
 # Verification iteration 4, pass 3 — the shelf that was split is the one that failed
 
-**Status:** `[PLAN]`. **Station:** maps *(committed without the claim; see the end)*. **Emission:** `[GAP]`. No `src/`.
+**Status:** **EXECUTED.** [Findings](verification-iter4-pass-3-findings.md). **Station:** maps *(committed without the claim; see the end)*. **Emission:** `[GAP]`. No `src/`.
 **Iteration:** [iteration 4](verification-iteration-4-plan.md). **Prior:** [pass 2 findings](verification-iter4-pass-2-findings.md).
 **Board pinned at:** `bda0e4d`.
 

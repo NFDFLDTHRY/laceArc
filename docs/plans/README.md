@@ -47,6 +47,7 @@
 | [verification-iter4-pass-2-plan.md](verification-iter4-pass-2-plan.md) | `[PLAN]` iteration 4 pass 2: the clipboards door names five campaigns and its shelf holds nine |
 | [verification-iter4-pass-2-findings.md](verification-iter4-pass-2-findings.md) | pass 2 record. Three structures, not one: a 36-file island, a 32-file cross-shelf island, 30 singletons |
 | [verification-iter4-pass-3-plan.md](verification-iter4-pass-3-plan.md) | `[PLAN]` iteration 4 pass 3: 190 of 220 pass plans are linked; the 30 that are not sit on the one shelf that was split |
+| [verification-iter4-pass-3-findings.md](verification-iter4-pass-3-findings.md) | pass 3 record. Document siblings, not doors, keep provenance reachable — one variable, ten shelves, no exceptions |
 | [restructure-plan.md](restructure-plan.md) | `[PROPOSAL]` coherence of the whole tree: twelve measured findings, eight phases, one station per commit; supersedes the defrag plan as filing plan of record |
 
 Sub-shelves: [fixtures/](fixtures/README.md) sealed golden IR · [tools/](tools/README.md) host validator.
