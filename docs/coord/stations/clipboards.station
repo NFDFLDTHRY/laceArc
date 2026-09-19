@@ -4,4 +4,4 @@ OWNS: docs/clipboards/**
 AGENT: -
 BASE: -
 SINCE: -
-NOTE: wasm-spec-3 Pass 6 EXECUTED (wasm64 seal); DIAGRAM SOUND WITH OPENS; FREE
+NOTE: webgpu Pass 1 PLAN landed (HELD/NOT EXECUTED); wasm-spec-3 Pass 6 EXECUTED (wasm64); FREE
