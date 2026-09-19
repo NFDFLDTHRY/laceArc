@@ -1,7 +1,7 @@
-STATUS: HELD
+STATUS: FREE
 STATION: history
 OWNS: docs/history-recovered* docs/history/**
-AGENT: Astra-evidence
-BASE: 4de5fc106b128cad009a16abe4dc2ea875c79112
-SINCE: 2026-09-19T16:22:21Z
-NOTE: Quiet door #5 CLOSED 6/6. Walkers dead. Not pass 8. Phi [GAP]. Active task: user-requested load-bearing relationship questions from two reproducibly sampled history points. Docs/review only; no global companion, law, emission, or runtime edits. Connector SHA-checked claim; coord.sh NOT_RUN (Git transport unavailable).
+AGENT: -
+BASE: -
+SINCE: -
+NOTE: Quiet door #5 CLOSED 6/6. History FREE. Walkers dead. Not pass 8. Φ [GAP]. Astra-evidence relationship questions pass 1 published at 8a2bac1692f2e99092ed5e1611e8caf49ec7b0a3; index at 882a0cabc7f038e4d1cbcfa871a85b2f98dd3ea3. Sampling/text inspection performed; mapper response and independent adjudication NOT_RUN. Connector SHA-checked claim/release; coord.sh NOT_RUN (Git transport unavailable).
