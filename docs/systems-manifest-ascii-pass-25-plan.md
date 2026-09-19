@@ -1,6 +1,6 @@
 # Systems-manifest ASCII pass 25 plan — Update wave · Iteration 3 · Pass 6 · DIAGRAM SOUND
 
-**Status:** **HELD** (plan only · 2026-09-19 PT). Emission `[GAP]`.  
+**Status:** **EXECUTED** (2026-09-19 PT) · verdict **DIAGRAM SOUND WITH OPENS** · P25-X PASS×15 · FIX=1 (#8 tip-cite `7ed7b29`) · OPEN×5 (#4/#5/#6/#7/#8 honesty). Emission `[GAP]`.  
 **Series:** Pass **25** (linear executed-passes list) = **Update wave · Iteration 3 · Pass 6**. Subtitle: **Update wave · Iteration 3 · Pass 6**.  
 **Station:** maps (catch-all for `docs/*.md` at court root). Holder: **reference-Mapper**. Keep maps **HELD**.  
 **Authority:** `docs/systems-manifest.md` (Contracts I / II / Layer III; Pieces unchanged).  
@@ -501,13 +501,13 @@ Refuse on execute (and for this Iteration-3 Pass 6):
 
 ### Execute turn (when human says Proceed)
 
-- [ ] T1 P25-A: structural analysis of whole companion as one systems diagram (Iter1 + Iter2 + Iter3); seams/double-claims/missing fences named; PASS or OPEN-with-cause; no invent Φ.  
-- [ ] T2 P25-P: all three Order Proposals rigor — NON-binding · FORBID-as-Core-write · SILENT · not rivals · Piece 13 dual · OPEN leftovers honest · Pass 7→11 · Pass 13→17 · Pass 19→24 intact; thin stamp FIX only if cited.  
-- [ ] T3 P25-X: deep accuracy matrix Core CONFIRM + G-III + G-KD + Iter3 + cross-layer + G2/Φ `[GAP]` + shoe + #4/#5/#6/#7/#8 honesty; PASS|FIX|OPEN; #4 may remain OPEN; no invent G-KD-4/5/6-Core/7/8.  
-- [ ] T4 P25-F/O: fix only cited thin drift; singular canonical overview Pass 7→24 reconfirmed (Iter1 + Iter2 + Iter3 not rival canons); no gear rename; no quiet-door→I; no soft FORBID.  
-- [ ] T5 P25-R: verdict DIAGRAM SOUND | DIAGRAM SOUND WITH OPENS | NOT SOUND; executed-passes +25; Pass 25 deltas; G2/Φ `[GAP]`; refuse honored (Pass 24 + no Core rewrite beyond thin FIX; no clipboard/kit/history/clock/hologram/gearing edits; no invent Φ; no src/; no fill G2; no Order→Core; no quiet-door→I; no soft FORBID; no invent G-KD-4/5/6-Core/7/8).  
-- [ ] Passes 1–24 retained (thin pointers / cited FIX only); no clipboard/kit/history/clock/hologram/gearing edits; no new machinery files; no Core invent beyond P25-cited thin fixes; no `src/`.  
-- [ ] maps still HELD by reference-Mapper (unless human releases).
+- [x] T1 P25-A: structural analysis of whole companion as one systems diagram (Iter1 + Iter2 + Iter3); seams/double-claims/missing fences named; PASS or OPEN-with-cause; no invent Φ.  
+- [x] T2 P25-P: all three Order Proposals rigor — NON-binding · FORBID-as-Core-write · SILENT · not rivals · Piece 13 dual · OPEN leftovers honest · Pass 7→11 · Pass 13→17 · Pass 19→24 intact; thin stamp FIX only if cited.  
+- [x] T3 P25-X: deep accuracy matrix Core CONFIRM + G-III + G-KD + Iter3 + cross-layer + G2/Φ `[GAP]` + shoe + #4/#5/#6/#7/#8 honesty; PASS|FIX|OPEN; #4 may remain OPEN; no invent G-KD-4/5/6-Core/7/8.  
+- [x] T4 P25-F/O: fix only cited thin drift; singular canonical overview Pass 7→24 reconfirmed (Iter1 + Iter2 + Iter3 not rival canons); no gear rename; no quiet-door→I; no soft FORBID.  
+- [x] T5 P25-R: verdict DIAGRAM SOUND | DIAGRAM SOUND WITH OPENS | NOT SOUND; executed-passes +25; Pass 25 deltas; G2/Φ `[GAP]`; refuse honored (Pass 24 + no Core rewrite beyond thin FIX; no clipboard/kit/history/clock/hologram/gearing edits; no invent Φ; no src/; no fill G2; no Order→Core; no quiet-door→I; no soft FORBID; no invent G-KD-4/5/6-Core/7/8).  
+- [x] Passes 1–24 retained (thin pointers / cited FIX only); no clipboard/kit/history/clock/hologram/gearing edits; no new machinery files; no Core invent beyond P25-cited thin fixes; no `src/`.  
+- [x] maps still HELD by reference-Mapper (unless human releases).
 
 ---
 
