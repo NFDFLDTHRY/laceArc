@@ -47,6 +47,16 @@ function ribbon(a,b,r=0.016){
   const p2=[b[0]-px,b[1],b[2]-pz], p3=[b[0]+px,b[1],b[2]+pz];
   return {p:[...p0,...p1,...p2,...p0,...p2,...p3], n:[0,1,0,0,1,0,0,1,0,0,1,0,0,1,0,0,1,0]};
 }
+function shorten(a,b,pad=0.55){
+  const dx=b[0]-a[0], dy=b[1]-a[1], dz=b[2]-a[2];
+  const L=Math.hypot(dx,dy,dz)||1;
+  const t=Math.min(0.42, pad/L);
+  if(t>=0.45) return null;
+  return [
+    [a[0]+dx*t, a[1]+dy*t, a[2]+dz*t],
+    [b[0]-dx*t, b[1]-dy*t, b[2]-dz*t]
+  ];
+}
 function bake(){
   const P=[],N=[],C=[],B=[];
   function add(g,col,off,born){
@@ -55,22 +65,22 @@ function bake(){
       N.push(g.n[i],g.n[i+1],g.n[i+2]); C.push(...col); B.push(born);
     }
   }
-  const shell=cube(0.50), core=cube(0.32), halo=cube(0.38), ball=sphere(0.62,20);
+  const shell=cube(0.50), core=cube(0.42), halo=cube(0.36), ball=sphere(0.62,20);
   for(const r of D1){
     const off=posOf(r.i);
     if(r.k==="WORD"){
       add(shell,[0.55,0.18,0.08],off,r.i);
-      add(halo,[0.90,0.28,0.06],off,r.i);
-      add(core,[1.0,0.45,0.08],off,r.i);
+      add(halo,[0.92,0.30,0.05],off,r.i);
+      add(core,[1.0,0.42,0.06],off,r.i);
       if(r.v==="PIE") add(ball,[0.12,0.95,0.32],[off[0],off[1]+1.05,off[2]], r.i);
     } else {
       add(cube(0.16),[0.15,0.55,0.95],off,r.i);
       const A=posOf(r.a), Bb=posOf(r.b);
-      const mid=[(A[0]+Bb[0])/2, 0.55, (A[2]+Bb[2])/2];
-      add(ribbon(A,mid,0.048),[0.18,0.62,0.92],[0,0,0],r.i);
-      add(ribbon(mid,Bb,0.048),[0.18,0.62,0.92],[0,0,0],r.i);
-      add(ribbon(A,mid,0.016),[0.25,0.85,1],[0,0,0],r.i);
-      add(ribbon(mid,Bb,0.016),[0.25,0.85,1],[0,0,0],r.i);
+      const seg=shorten(A,Bb,0.52);
+      if(seg){
+        add(ribbon(seg[0],seg[1],0.040),[0.18,0.62,0.92],[0,0,0],r.i);
+        add(ribbon(seg[0],seg[1],0.016),[0.25,0.85,1],[0,0,0],r.i);
+      }
     }
   }
   for(let i=-10;i<=10;i++){

@@ -1,6 +1,6 @@
 # Projection iteration 4 / pass 3 plan — floor + ember + short wires
 
-**Status:** PLAN. Not executed. Emission `[GAP]`.  
+**Status:** EXECUTED. Emission `[GAP]`. Title `i4p3`. Floor raised. Ember core 0.42. PTR chords padded to cube faces.  
 **Station:** hologram  
 **Evidence:** `i4p2` shot `t=0010 PTR`. `GPU on` · `persist on` · `id lace-iii` · `n=5958`.  
 Identity and resume stay frozen. The picture is still wrong.

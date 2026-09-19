@@ -57,7 +57,7 @@ aside[hidden]{display:none}
 </div>
 <div class="hud">
   <header class="hit">
-    <h1>LAYER III · i4p2 · RAWCDN SHA</h1>
+    <h1>LAYER III · i4p3 · RAWCDN SHA</h1>
     <p>Install this URL only if it is <code>rawcdn.githack.com</code> + a full SHA. Floating <code>main</code> is preview. Cubes are glyphs. No emitter. [GAP]</p>
   </header>
   <div class="modes hit">
@@ -82,7 +82,7 @@ aside[hidden]{display:none}
     <div class="row">
       <input id="t" type="range" min="0" max="10" step="0.02" value="0"/>
       <span id="phase">t=0000</span>
-      <span class="stamp">i4p2</span>
+      <span class="stamp">i4p3</span>
       <span class="stamp">A17</span>
       <span class="stamp" id="gpustamp">GPU ?</span>
       <span class="stamp" id="szstamp">?x?</span>
@@ -212,9 +212,9 @@ struct VSOut { @builtin(position) p: vec4<f32>, @location(0) wpos: vec3<f32>, @l
     let well = 0.45 + 0.55 * hash;
     let crack = step(0.93, fract(sin(dot(cell, vec2<f32>(3.7, 9.1))) * 6123.2));
     let tick = step(0.97, fract(sin(dot(cell, vec2<f32>(11.1, 4.7))) * 9123.4));
-    var rgb = vec3<f32>(0.04, 0.08, 0.11) * well;
-    rgb += vec3<f32>(0.12, 0.55, 0.68) * coarse * 0.75;
-    rgb += vec3<f32>(0.14, 0.62, 0.70) * fine * 0.35;
+    var rgb = vec3<f32>(0.06, 0.12, 0.16) * well;
+    rgb += vec3<f32>(0.18, 0.72, 0.82) * coarse * 1.05;
+    rgb += vec3<f32>(0.16, 0.70, 0.78) * fine * 0.55;
     rgb += vec3<f32>(0.15, 0.08, 0.04) * crack * 0.25;
     rgb += vec3<f32>(0.7, 0.18, 0.04) * tick * 0.16;
     let d = length(i.wpos.xz - u.t.yz);
@@ -240,10 +240,10 @@ struct VSOut { @builtin(position) p: vec4<f32>, @location(0) wpos: vec3<f32>, @l
     alpha = mix(0.03, 0.38, fres) * appear;
   } else if (ember) {
     let pulse = 0.65 + 0.35 * sin(u.t.x * 3.2 + hash * 6.0);
-    rgb = vec3<f32>(1.0, 0.32, 0.05) * (0.55 + 0.45 * pulse);
-    rgb += vec3<f32>(1.0, 0.7, 0.2) * spec * 0.4;
-    rgb += vec3<f32>(0.8, 0.15, 0.02) * hash * 0.35;
-    alpha = 0.95 * appear;
+    rgb = vec3<f32>(1.0, 0.28, 0.04) * (0.75 + 0.35 * pulse);
+    rgb += vec3<f32>(1.0, 0.65, 0.12) * spec * 0.55;
+    rgb += vec3<f32>(1.0, 0.20, 0.02) * hash * 0.25;
+    alpha = 1.0 * appear;
   } else if (plasma) {
     let w = sin(i.wpos.x * 7.0 + i.wpos.y * 9.0 + u.t.x * 2.0) * 0.5 + 0.5;
     rgb = vec3<f32>(0.05, 0.95, 0.28) * (0.35 + 0.5 * w);
@@ -294,7 +294,7 @@ function lookAt(e,c,up){
 function bakeViaWorker(src){
   return new Promise((resolve, reject) => {
     let w;
-    try { w = new Worker(src || "projection-bake-worker.js?i=4p2"); }
+    try { w = new Worker(src || "projection-bake-worker.js?i=4p3"); }
     catch (e) { reject(e); return; }
     const t = setTimeout(() => { try{w.terminate();}catch(_){ } reject(new Error("bake timeout")); }, 8000);
     w.onerror = e => { clearTimeout(t); try{w.terminate();}catch(_){ } reject(e); };
@@ -314,9 +314,9 @@ function bakeViaWorker(src){
 let bakedScene=null;
 async function bakeScene(){
   if(bakedScene && bakedScene.P && bakedScene.P.length>6) return bakedScene;
-  try { bakedScene = await bakeViaWorker("projection-bake-worker.js?i=4p2"); }
+  try { bakedScene = await bakeViaWorker("projection-bake-worker.js?i=4p3"); }
   catch (e1) {
-    const src = await fetch("projection-bake-worker.js?i=4p2", {cache:"no-store"}).then(r => {
+    const src = await fetch("projection-bake-worker.js?i=4p3", {cache:"no-store"}).then(r => {
       if (!r.ok) throw new Error("worker fetch "+r.status);
       return r.text();
     });
@@ -595,7 +595,7 @@ function runAudit(){
   const el=document.getElementById("audit");
   if(!el) return;
   const title=document.querySelector("h1")?.textContent||"";
-  const A=/i4p2/.test(title)?"ok":"fail";
+  const A=/i4p3/.test(title)?"ok":"fail";
   const D=!!(navigator.serviceWorker && navigator.serviceWorker.controller);
   const E=!!(window.deferredPrompt || window.matchMedia("(display-mode: standalone)").matches);
   const F=!!document.getElementById("installbtn");
@@ -606,7 +606,7 @@ function runAudit(){
     const ct=r.headers.get("content-type")||"";
     const B=/manifest|json/i.test(ct)?"ok":("fail "+ct);
     el.textContent=
-      "A title i4p2 "+A+"\n"+
+      "A title i4p3 "+A+"\n"+
       "B manifest MIME "+B+"\n"+
       "C icons 192+512 ok\n"+
       "D SW controlling "+(D?"ok":"fail")+"\n"+
