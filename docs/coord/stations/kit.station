@@ -2,6 +2,6 @@ STATUS: HELD
 STATION: kit
 OWNS: docs/kit/** .claude/**
 AGENT: Grok-kit
-BASE: 4c1a95a5a66e99335664a6063058184fc94579ec
-SINCE: 2026-09-19T06:21:53Z
-NOTE: Quiet door #1 pass 5 EXECUTED. Companion seam. Door untouched. Next pass 6 receipt. Φ [GAP].
+BASE: 0490a0530bd5bdb3c0dbbd070e78df2393a2554d
+SINCE: 2026-09-19T06:23:37Z
+NOTE: Quiet door #1 pass 6 PLAN. Pass 1–5 EXECUTED. Receipt. Door untouched. Φ [GAP].
