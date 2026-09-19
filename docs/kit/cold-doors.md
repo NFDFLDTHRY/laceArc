@@ -1,10 +1,11 @@
 # Cold doors
 
-**Status:** Pass 1 EXECUTED. Pass 2 EXECUTED. Pass 3 EXECUTED.
+**Status:** Pass 1 EXECUTED. Pass 2 EXECUTED. Pass 3 EXECUTED. Pass 4 EXECUTED.
 **Station:** kit.
 **Pass 1 BASE:** `ec5ae61624db93bb19e2560adacfded080f98a50`.
 **Pass 2 BASE:** `8c912a10df56504cb51cf95cd33c68ac8d3f2f45` (companions unchanged from `22ac006`).
 **Pass 3 BASE:** `e6e19352364cec81f96409596b8e8d3ffe70b63b`.
+**Pass 4 BASE:** `ccc68724d07095e5673ee380783bbdc4fc6c5326`.
 **Read:** 19 September 2026.
 **Emission:** `[GAP]`. No `src/`.
 
@@ -112,6 +113,26 @@ R1 sizes at this BASE are wrapper weight, not staking-fence disagreement: `staki
 `docs/staking-the-workspace.md` was not scored as a transport copy. It is the original stake. Law owns it.
 
 No companion stamp from pass 2 changes. Copies not regenerated. Live law not edited. Pin string not retargeted.
+
+---
+
+## Pass 4 — R1 file sit
+
+Question: how do the other R1-named files sit against the fence pass 3 proved identical in the two transports?
+
+Sit labels in this table only: **ORIGINAL** = frozen stake, not a lagging copy. **POINTER** = routes to live law, does not carry the fence. Door stamps above are unchanged.
+
+Sizes at Pass 4 BASE `ccc68724d07095e5673ee380783bbdc4fc6c5326`:
+
+| File | Bytes | Lines | Sit | Carries fence? | Carries header pair? |
+|---|---|---|---|---|---|
+| `docs/law-why-these-documents.md` | 17385 | 438 | LIVE | Yes (397-line fence). | Yes. Blockquote names existence ≠ acceptance. Line 14: *forbidden until … exists.* Fence IMPLEMENTATION LAW: *When the human has accepted … code may appear.* |
+| `docs/staking-the-workspace.md` | 5961 | 171 | ORIGINAL | No. Unfenced body. Header calls it frozen and points at live law. | No. Body includes the IMPLEMENTATION LAW *accepted* sentence. It does not repeat the live-law header pair. Shorter than the fence: ~197 fence-only lines (gears, hologram, later forbids). Three body lines are not in the fence (reading-order wording). Shorter ≠ STALE. |
+| `AGENTS.md` | 9771 | 142 | POINTER | No. `STAKING THE WORKSPACE` is absent. Standing orders point at live law (lines 8, 79, 122, 142). | No header pair. Gate is already joined: line 68 and line 104 require the emission file to *exist and* the human to have *accepted* it (the A6 shape the live-law header cites). Implementation Law here is a summary; full ASCII is live law. |
+| `docs/kit/agent-control.md` | 31663 | 557 | DATED | Yes. Identical to live-law fence (pass 3). | No. Wrapper C03 restates exist + settle + acceptance. Pin `e21cf39` still unreachable. |
+| `docs/kit/grok-bot-profile.md` | 18739 | 504 | DATED | Yes. Identical Explanation fence (pass 3). | No. Description fence joins *exists and the human accepted it*. Same unreachable pin. |
+
+No file in this table was edited. R1 remains a size split with different duties, not five broken copies of one file. Repair stays law-station if the human names that.
 
 ---
 

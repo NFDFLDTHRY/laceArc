@@ -1,9 +1,10 @@
 # Cold doors — Pass 4 PLAN
 
-**Status:** PLAN only. Not run.
+**Status:** EXECUTED. Sit table is the Pass 4 section of [`cold-doors.md`](cold-doors.md).
 **Station:** kit.
 **Agent:** Grok-kit.
 **Plan BASE:** `dbeaa8841f9952047e6e94fcdf1476e287055fd1`.
+**Execute BASE:** `ccc68724d07095e5673ee380783bbdc4fc6c5326`.
 **Emission:** `[GAP]`. No `src/`. Renderer stays paused. Seven Rust doors stay shut.
 
 Pass 3 said stop. The human named pass 4.
@@ -12,7 +13,7 @@ Pass 3 said stop. The human named pass 4.
 pull/ff → claim kit
         → write this plan
         → STOP
-execute (later, one authorized tick):
+execute (this tick):
         → append one R1-file table to docs/kit/cold-doors.md
         → check · commit · release · STOP
 ```
