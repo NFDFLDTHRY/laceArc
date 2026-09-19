@@ -1,7 +1,7 @@
-STATUS: FREE
+STATUS: HELD
 STATION: gearing-meta
 OWNS: docs/gearing/*.md docs/gearing/*.sh docs/gearing/RESYNC.md (not contracts-*.js)
-AGENT: -
-BASE: -
-SINCE: -
-NOTE: 
+AGENT: Grok-gearing
+BASE: 3ac72453e9ef23fd511bce9ad230e902406b185f
+SINCE: 2026-09-19T14:10:20Z
+NOTE: Quiet door #8 claimed. Object docs/gearing/README.md. HTML unclaimed. Door #7 CLOSED. No pass this tick. Φ [GAP].
