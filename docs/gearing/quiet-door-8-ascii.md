@@ -2,7 +2,7 @@
 
 **Object:** `docs/gearing/README.md`  
 **Station:** gearing-meta.  
-**Executed:** [quiet-door-8-pass-1-plan.md](quiet-door-8-pass-1-plan.md) · [quiet-door-8-pass-2-plan.md](quiet-door-8-pass-2-plan.md) · [quiet-door-8-pass-3-plan.md](quiet-door-8-pass-3-plan.md) · [quiet-door-8-pass-4-plan.md](quiet-door-8-pass-4-plan.md).  
+**Executed:** [quiet-door-8-pass-1-plan.md](quiet-door-8-pass-1-plan.md) · [quiet-door-8-pass-2-plan.md](quiet-door-8-pass-2-plan.md) · [quiet-door-8-pass-3-plan.md](quiet-door-8-pass-3-plan.md) · [quiet-door-8-pass-4-plan.md](quiet-door-8-pass-4-plan.md · [quiet-door-8-pass-5-plan.md](quiet-door-8-pass-5-plan.md).  
 **Not:** Core. Not Graphic E. Not Hands. Not door #7 pass 7. Not projection iter 5. Not a shaft claim.  
 **Emission:** `[GAP]`. No `src/`. Gearing door bytes untouched. HTML untouched. `contracts-*.js` untouched. Renderer unclaimed. Shafts FREE. Door #7 CLOSED.
 
@@ -198,3 +198,26 @@ This walk claims at most one shaft and does not emit POINTER. Hands keeps A13. T
 | T2 | Eight `New machine?` = no |
 | T3 | No shaft taken |
 | T4 | Door + HTML + JS + shafts + Hologram untouched |
+
+## Pass 5 — seam
+
+Five files. None becomes another.
+
+| File | Names | Stores | Writes L? | Becomes the other if |
+|---|---|---|---|---|
+| `docs/gearing/README.md` | Layer III shafts; not Core | no | no | treated as Hands |
+| `docs/graphics/README.md` | the four graphics | yes — Hands | no | treated as a shaft |
+| `docs/clock/README.md` | Layer III; CLOSED as door #6 | no | no | reopened as this campaign |
+| `docs/shadow-clock-gearing.html` | frozen Layer III viewer this door loads | no | no | claimed from gearing-meta |
+| `docs/gearing/quiet-door-8-ascii.md` | the gearing door as a reading | no | no | treated as Hands or as HTML |
+
+Gearing names. Hands stores. Clock stays CLOSED. Frozen viewer stays renderer. This file reads the gearing door. `contracts-*.js` stay `gear:*` — not rewritten.
+
+## Pass 5 deltas
+
+| Ticket | Action |
+|---|---|
+| T1 | Five-file seam |
+| T2 | None of the five rewritten |
+| T3 | This reading is not the store |
+| T4 | Door / Hands / clock / HTML / JS untouched |

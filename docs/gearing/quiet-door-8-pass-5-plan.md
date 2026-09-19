@@ -1,6 +1,6 @@
 # Quiet door #8 (Gearing) — Pass 5 PLAN
 
-**Status:** PLAN only. Not run.  
+**Status:** EXECUTED — seam on `docs/gearing/quiet-door-8-ascii.md`. Door + HTML + JS unchanged. Emission `[GAP]`.  
 **Station:** gearing-meta (HELD Grok-gearing).  
 **Object:** Gearing seam — vs Hands, clock, frozen viewer.  
 **Authority:** [`quiet-door-8-ascii.md`](quiet-door-8-ascii.md) passes 1–4. [`docs/gearing/README.md`](README.md). [`docs/graphics/README.md`](../graphics/README.md). [`docs/clock/README.md`](../clock/README.md). [`docs/shadow-clock-gearing.html`](../shadow-clock-gearing.html).  
