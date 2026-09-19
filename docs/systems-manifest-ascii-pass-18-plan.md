@@ -1,6 +1,6 @@
 # Systems-manifest ASCII pass 18 plan — Update wave · Iteration 2 · Pass 6 · DIAGRAM SOUND
 
-**Status:** **HELD**. Emission `[GAP]`.  
+**Status:** **EXECUTED** 2026-09-19 PT. Verdict: **DIAGRAM SOUND WITH OPENS**. Emission `[GAP]`.  
 **Series:** Pass **18** (linear executed-passes list) = **Update wave · Iteration 2 · Pass 6**. Subtitle: both names.  
 **Station:** maps (catch-all for `docs/*.md` at court root). Holder: **reference-Mapper**. Keep maps **HELD**.  
 **Authority:** `docs/systems-manifest.md` (Contracts I / II / Layer III; Pieces unchanged).  
@@ -454,13 +454,13 @@ Refuse on execute (and for this Iteration-2 Pass 6):
 
 ### Execute turn (when human says Proceed)
 
-- [ ] T1 P18-A: structural analysis of whole companion as one systems diagram (Iter1 + Iter2); seams/double-claims/missing fences named; PASS or OPEN-with-cause; no invent Φ.  
-- [ ] T2 P18-P: both Order Proposals rigor — NON-binding · FORBID-as-Core-write · SILENT · not rivals · Piece 13 dual · OPEN leftovers honest · Pass 7→11 and Pass 13→17 intact; thin stamp FIX only if cited.  
-- [ ] T3 P18-X: deep accuracy matrix Core CONFIRM pointer + G-III + G-KD + P15-M + cross-layer + G2/Φ `[GAP]` + shoe + #4/#5 cite-check; PASS|FIX|OPEN; #4 may remain OPEN; no invent G-KD-4/5.  
-- [ ] T4 P18-F/O: fix only cited thin drift; singular canonical overview Pass 7→17 reconfirmed (Iter1 + Iter2 not rival canons); no gear rename; no quiet-door→I; no soft FORBID.  
-- [ ] T5 P18-R: verdict DIAGRAM SOUND | DIAGRAM SOUND WITH OPENS | NOT SOUND; executed-passes +18; Pass 18 deltas; G2/Φ `[GAP]`; refuse honored (Pass 17 + no Core rewrite beyond thin FIX; no clipboard/kit/history edits; no invent Φ; no src/; no fill G2; no Order→Core; no quiet-door→I; no soft FORBID; no invent G-KD-4/5).  
-- [ ] Passes 1–17 retained (thin pointers / cited FIX only); no clipboard/kit/history edits; no new machinery files; no Core invent beyond P18-cited thin fixes; no `src/`.  
-- [ ] maps still HELD by reference-Mapper (unless human releases).
+- [x] T1 P18-A: structural analysis of whole companion as one systems diagram (Iter1 + Iter2); seams/double-claims/missing fences named; PASS or OPEN-with-cause; no invent Φ.  
+- [x] T2 P18-P: both Order Proposals rigor — NON-binding · FORBID-as-Core-write · SILENT · not rivals · Piece 13 dual · OPEN leftovers honest · Pass 7→11 and Pass 13→17 intact; thin stamp FIX only if cited.  
+- [x] T3 P18-X: deep accuracy matrix Core CONFIRM pointer + G-III + G-KD + P15-M + cross-layer + G2/Φ `[GAP]` + shoe + #4/#5 cite-check; PASS|FIX|OPEN; #4 may remain OPEN; no invent G-KD-4/5.  
+- [x] T4 P18-F/O: fix only cited thin drift; singular canonical overview Pass 7→17 reconfirmed (Iter1 + Iter2 not rival canons); no gear rename; no quiet-door→I; no soft FORBID.  
+- [x] T5 P18-R: verdict DIAGRAM SOUND | DIAGRAM SOUND WITH OPENS | NOT SOUND; executed-passes +18; Pass 18 deltas; G2/Φ `[GAP]`; refuse honored (Pass 17 + no Core rewrite beyond thin FIX; no clipboard/kit/history edits; no invent Φ; no src/; no fill G2; no Order→Core; no quiet-door→I; no soft FORBID; no invent G-KD-4/5).  
+- [x] Passes 1–17 retained (thin pointers / cited FIX only); no clipboard/kit/history edits; no new machinery files; no Core invent beyond P18-cited thin fixes; no `src/`.  
+- [x] maps still HELD by reference-Mapper (unless human releases).
 
 ---
 
