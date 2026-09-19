@@ -55,6 +55,7 @@
 | [verification-iter4-pass-3-findings.md](verification-iter4-pass-3-findings.md) | pass 3 record. Document siblings, not doors, keep provenance reachable — one variable, ten shelves, no exceptions |
 | [verification-iter4-pass-4-plan.md](verification-iter4-pass-4-plan.md) | `[PLAN]` iteration 4 pass 4: one ruling covered two checks; door findings grow with the tree and orphan findings do not |
 | [verification-iter4-pass-4-findings.md](verification-iter4-pass-4-findings.md) | pass 4 record. D1/D2 hold — a third of the tree was a transient orphan, and the checker has four standing false positives |
+| [verification-iter4-pass-5-plan.md](verification-iter4-pass-5-plan.md) | `[PLAN]` iteration 4 pass 5: the docket — fourteen items in four groups, one struck because it was already correct |
 | [restructure-plan.md](restructure-plan.md) | `[PROPOSAL]` coherence of the whole tree: twelve measured findings, eight phases, one station per commit; supersedes the defrag plan as filing plan of record |
 
 Sub-shelves: [fixtures/](fixtures/README.md) sealed golden IR · [tools/](tools/README.md) host validator.
