@@ -1,6 +1,6 @@
 # Quiet door #9 (Coord) — Pass 3 PLAN
 
-**Status:** PLAN only. Not run.  
+**Status:** EXECUTED — grain on `docs/coord/quiet-door-9-ascii.md`. Door + `coord.sh` unchanged. Emission `[GAP]`.  
 **Station:** coord (HELD Grok-coord).  
 **Object:** Coord grain — umbrella vs `coord.sh` vs stations vs Hands.  
 **Authority:** [`quiet-door-9-ascii.md`](quiet-door-9-ascii.md) passes 1–2. Coord door as written. `coord.sh which`.  

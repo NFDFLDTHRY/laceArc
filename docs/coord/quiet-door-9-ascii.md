@@ -2,7 +2,7 @@
 
 **Object:** `docs/coord/README.md`  
 **Station:** coord.  
-**Executed:** [quiet-door-9-pass-1-plan.md](quiet-door-9-pass-1-plan.md) · [quiet-door-9-pass-2-plan.md](quiet-door-9-pass-2-plan.md).  
+**Executed:** [quiet-door-9-pass-1-plan.md](quiet-door-9-pass-1-plan.md) · [quiet-door-9-pass-2-plan.md](quiet-door-9-pass-2-plan.md) · [quiet-door-9-pass-3-plan.md](quiet-door-9-pass-3-plan.md).  
 **Not:** Core. Not Graphic E. Not Hands. Not door #8 pass 7. Not projection iter 5. Not a shaft claim. Not a rewrite of `coord.sh`.  
 **Emission:** `[GAP]`. No `src/`. Coord door bytes untouched. `coord.sh` untouched. Renderer unclaimed. Shafts FREE. Door #8 CLOSED.
 
@@ -102,4 +102,30 @@ G2 stays `[GAP]`.
 | T1 | Eight In / Does / Break / Gap / Role rows |
 | T2 | Co3 Break = rewrite `coord.sh`; Co6 Break = take a shaft |
 | T3 | Spine left in place |
+| T4 | Door + `coord.sh` + shafts + Gearing untouched |
+
+## Pass 3 — grain
+
+The umbrella names. The script runs. Station files record. Hands stores. Those are not the same column.
+
+| Kind | Says | `which` | Collapse would look like |
+|---|---|---|---|
+| Coord door | Layer III umbrella; not Core | coord | treat the index as Hands |
+| `coord.sh` | status / which / claim / release | coord | rewrite the script this pass |
+| `stations/kit.station` (specimen) | kit’s FREE/HELD record | coord | treat the file as Hands |
+| Kit door | kit index; QUIET as door #2 | kit | claim kit from coord |
+| Gearing door (CLOSED) | Layer III shafts; not this iteration | gearing-meta | reopen door #8 |
+| Frozen viewer | `docs/shadow-clock-gearing.html` | renderer | claim renderer from coord |
+| Hands (four graphics) | source of record | graphics | stations as WORD rows |
+| Shafts (all eight) | FREE this tick | gear:* | take a shaft from coord |
+
+Station *files* live here. Station *objects* do not.
+
+## Pass 3 deltas
+
+| Ticket | Action |
+|---|---|
+| T1 | Eight-row grain |
+| T2 | Umbrella ≠ script ≠ station object ≠ Hands |
+| T3 | `coord.sh` still coord and unedited |
 | T4 | Door + `coord.sh` + shafts + Gearing untouched |
