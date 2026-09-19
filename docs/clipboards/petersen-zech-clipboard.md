@@ -4,11 +4,42 @@
 
 Execution of [the Petersen–Zech clipboard prompt](../prompts/petersen-zech-clipboard-prompt.md), with sheets A–F and X rendered as Markdown tables. This is a source-reading artifact, not a new mapping pass that reopens Core.
 
-**Source:** Philipp Petersen & Jakob Zech, *Mathematical theory of deep learning*, arXiv:2407.18384v4. The attached cover is dated January 16, 2026; its arXiv version stamp is January 15, 2026. Local attachment: `04-2407.18384v4.pdf`, 333 PDF pages, text layer present. SHA-256: `a8505f3de280cb1c6f9742161471fadc52c21340afc05efe4549bd58c84383fa`. The PDF stays outside git. All “eye” entries below are paraphrases, not quotations.
+**Source:** Philipp Petersen & Jakob Zech, *Mathematical theory of deep learning*, arXiv:2407.18384v4. The attached cover is dated January 16, 2026; its arXiv version stamp is January 15, 2026. Working PDF (gitignored): `refs/local/petersen-zech-mathematical-theory-deep-learning.pdf` → attachment `a8505f3de280cb1c6f9742161471fadc52c21340afc05efe4549bd58c84383fa.pdf` (≈18 MB). **333** pages; text layer present (arXiv GenPDF / pikepdf). SHA-256: `a8505f3de280cb1c6f9742161471fadc52c21340afc05efe4549bd58c84383fa`. Printed ≈ PDF − 1 at cited loci. **Never git-add the PDF.** All “eye” entries below are paraphrases or short fragments, not long dumps.
 
 **Authority:** [graphics A–D](../graphics/README.md), [systems manifest](../systems-manifest.md), the complete [staking law](../staking-the-workspace.md), and the complete [live law](../law-why-these-documents.md). These links retain the full laws; this clipboard does not replace them. Comparisons use [reason-model-map §4](../reason-model-map.md#4-petersen--zech--mathematical-theory-of-deep-learning), P1–P7. Those IDs name that section's book mappings, not additional Lace primitives.
 
 **Notation:** → records a source statement or a labeled comparison; ↛ rejects the proposed substitution. Neither arrow writes a POINTER. The book's Φ denotes a realized function, not a Lace emission rule. [H] means the holder; [X] marks a forbidden crossing into Graphic D's array authority, not the array's layer number. The clipboard itself remains [III].
+
+## Pass 1 (PDF-sighted) receipt
+
+| Field | Value |
+|---|---|
+| Status | EXECUTED |
+| When | 2026-09-18 ~18:14 PT |
+| Station | clipboards · agent `reference-Mapper` |
+| Plan | [petersen-zech-pass-1-pdf-plan.md](petersen-zech-pass-1-pdf-plan.md) |
+| Hands skim | shoe → graphics A–D → systems-manifest → staking / law-why → reason-model-map §4 (P1–P7) → this clipboard → five-stakes PAGE 4/5 (read-only; T5 skip) |
+| PDF | **PRESENT** — `refs/local/petersen-zech-mathematical-theory-deep-learning.pdf` → attachment `a8505f3d…c84383fa.pdf`; **333** pp.; text layer yes; SHA matches header; `git check-ignore` OK; never staged |
+| Method | `pdftotext -f N -l N -layout` on this attachment (primary) |
+| Product | A–F, X loci re-pinned; Remark 2.2 / Def 2.1 / Ch.10 / §1.5 GNN omit / §11.3–11.6 NTK re-verified; false friends refreshed; morals unchanged |
+| Stamps | **CONFIRM** ×6 (A,B,C,D,E,X) · **REFINE** ×5 retained (A,C,D,E,X vs map/prompt scope) · **SILENT** ×1 (F on Φ) · **CONFLICT** ×0 |
+| Metrics (T4) | eqs 10.1.2 (PDF 133), 10.2.2 (PDF 138), 11.3.1/11.3.4–5 (PDF 169–170), Thm 11.20 (PDF 180) re-pinned; no [OPEN] overstatement |
+| Amended | reason-model-map · law · graphics · five-stakes · src/ · systems-manifest | **No** |
+| Emission | still `[GAP]` — no POINTER when / arity / adjacency |
+
+### Per-page stamps vs reason-model-map §4
+
+| PAGE | Stamp | PDF pin(s) | Eye (short) / Notes |
+|---|---|---|---|
+| A Function ≠ construction | **CONFIRM** P5; **REFINE** evidential scope | Remark 2.2 PDF p.21 (printed ~20) | “different choices of architectures, weights, and biases yielding the same function Φ” · “cannot associate a unique meaning … solely based on the function” · KEEP Φ≠build; FORBID Φ-sameness as Lace identity |
+| B Star = neuron / hidden unit | **CONFIRM** P1–P2 | Def 2.1 PDF p.20 (printed ~19); architecture graph Remark 2.2 PDF p.21 | width = max hidden-layer units; nodes = neuron outputs · FORBID star=neuron / width=participation |
+| C Train w as history | **CONFIRM** P4; **REFINE** BP vs update | §10.1 eq.10.1.2 PDF p.133; §10.2 eq.10.2.2 PDF p.138; §10.5 PDF pp.152–153 | GD/SGD update w; backprop computes ∇ · FORBID train-w as Lace history |
+| D GNN / message-passing as Core | **CONFIRM** P6; **REFINE** no mechanics from omit | §1.5 PDF p.18 (printed ~17) | “Notably, we omit all discussion of graph neural networks” · FORBID import-from-omission |
+| E NTK / infinite width as store | **CONFIRM** P7; **REFINE** “second mutable world” | §11.3 eqs.11.3.1, 11.3.4–5 PDF pp.169–170; §11.6 Assump.11.17 / init 11.6.3 / Thm 11.20 PDF pp.179–180 | Φlin around w₀; empirical tangent kernel; infinite-width limit · FORBID NTK as store; width≠Piece 12 |
+| F When-to-point / false friends | **SILENT** on Φ; false-friend pins | none as emission; lookalikes §2.1 / Ch.10 / §11.3–11.6 / Ch.9 | no lace/emission whole-word hits; `pointer(s)` only lit. refs (PDF 18, 290) · still no when/arity/adjacency |
+| X Cross-cut | **CONFIRM** P1–P7; **REFINE** Ch.7–9 attributions | Ch.3 Thm 3.9 PDF ~30; Ch.7–8 pins as sheet; Def 9.1 PDF 122; Thm 9.3 PDF 123 | temptations vs Hands; approximation ≠ possession; Φ `[GAP]` |
+
+T5 five-stakes: **skip** — PAGE 4/5 source pins and KEEP/FORBID agree with this PDF (no eye-quote conflict).
 
 ## PAGE A — FUNCTION ≠ CONSTRUCTION
 

@@ -1,6 +1,6 @@
 # Petersen & Zech pass 1 (PDF-sighted) — clipboard vs attached deep-learning text
 
-**Status:** PLANNED — not executed. Emission `[GAP]`.  
+**Status:** EXECUTED — 2026-09-18 ~18:14 PT. Emission still `[GAP]`.  
 **Station:** clipboards (HELD `reference-Mapper`)  
 **Base at plan:** refresh to current `origin/main` before execute  
 **Book:** Philipp Petersen & Jakob Zech, *Mathematical theory of deep learning*  
@@ -46,7 +46,7 @@ pull/ff → claim clipboards → Hands skim
 | 21 | Remark 2.2 — different architectures/params can yield same Φ | PAGE A / P5 seed **CONFIRM** |
 | 169–170 | §11.3 tangent kernel / linearization around w₀ | PAGE E / P7 seed **CONFIRM** |
 
-Full A–X walk remains **TODO** at execute.
+Full A–X walk **DONE** at execute (see Execution receipt).
 
 ---
 
@@ -144,6 +144,29 @@ Ask before push.
 3. Mark this plan EXECUTED.  
 4. Check · commit · release.  
 5. Stop.
+
+---
+
+## Execution receipt
+
+| Field | Value |
+|---|---|
+| Status | **EXECUTED** |
+| When | 2026-09-18 ~18:14 PT |
+| Agent | `reference-Mapper` |
+| Base | `a6d174c` after `git pull --ff-only` · station refresh clipboards |
+| PDF | `refs/local/petersen-zech-mathematical-theory-deep-learning.pdf` → `a8505f3d…c84383fa`; 333 pp.; text layer; SHA match; gitignored; never staged |
+| Method | `pdftotext -f N -l N -layout` |
+| T1 Hands | skimmed shoe / graphics / manifest / law / reason-model-map §4 P1–P7 / clipboard / five-stakes PAGE 4/5 |
+| T2 PDF gate | symlink + SHA + `git check-ignore` OK; nothing PDF staged |
+| T3 Page walk | A–F, X all PDF-pinned; stamps CONFIRM×6 · REFINE×5 retained · SILENT×1 (F) · CONFLICT×0 |
+| T4 Metrics | 10.1.2 / 10.2.2 / 11.3.1 / 11.3.4–5 / Thm 11.20 re-pinned; no [OPEN] |
+| T5 five-stakes | **skip** — PAGE 4/5 eye-quotes agree |
+| Clipboard | Pass 1 receipt + per-page stamps; source header → `refs/local/` path; morals unchanged |
+| Untouched | src/ · systems-manifest · law · graphics · reason-model-map · five-stakes |
+| Emission | still `[GAP]` |
+
+Execute steps completed: refresh → T1–T4 → this plan EXECUTED → check · commit · release · STOP (no push).
 
 ---
 
