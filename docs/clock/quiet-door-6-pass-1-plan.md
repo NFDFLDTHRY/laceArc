@@ -1,6 +1,6 @@
 # Quiet door #6 (Clock) — Pass 1 PLAN
 
-**Status:** PLAN only. Not run.  
+**Status:** EXECUTED — spine on `docs/clock/quiet-door-6-ascii.md`. Door unchanged. HTML untouched. Emission `[GAP]`.  
 **Station:** hologram (HELD Grok-hologram). There is no clock station. `docs/clock/**` maps to hologram.  
 **Object:** quiet door #6 — [`docs/clock/README.md`](README.md).  
 **Why hologram, not kit / not renderer:** hologram OWNS `docs/clock/**`. The companion can live next to the door. Renderer owns three HTML viewers. This campaign does not claim renderer and does not rewrite HTML.  
