@@ -237,3 +237,45 @@ B10's green panel reads **"Itt is a continuously growing 3D structure."**
 With Graphic A's three, that is four typographical errors across the two prose-heavy graphics. D's table and C's bullets carry none. **The transcription ruling from 2c stands and now has more to bite on** — reproduce, mark where confusing, never silently correct.
 
 B12 and C12 both print the governing sentence ending **`Continue.`**, against A13's `Continure.` — two graphics against one, which is what made A13's a typo rather than a variant.
+
+---
+
+## 2c-1 revised — the unit is a category question, not a spelling one
+
+**Raised by the human, checked here, and it supersedes the framing above.**
+
+2c-1 reported that the close reading quotes Graphic A's header as "every word a **centimetre** of wire" where the panel prints **`centimeter`**. That still holds and a verbatim quote must match its source. **It is the smaller half.**
+
+**The larger half: a length unit is the wrong kind of unit for a 1D array.**
+
+The Lace is an append-only array addressed by index. Graphic D's only numeric evidence is eleven rows, `0000`–`0010`. The correspondent of "how much lace" is **how many indices**, not how many centimetres.
+
+### And the conversion table makes a silent claim about emission
+
+`graphics-close-reading.md` builds this on the clause:
+
+| Text | Lace |
+|---|---|
+| a 12-word sentence | 12 cm |
+| a 1,000-word document | 10 m |
+
+**Measured against D1: five WORD entries occupy eleven indices.** The other six are POINTERs.
+
+So twelve words are **not** twelve units of lace. They are twelve WORD entries **plus however many POINTERs get emitted** — and how many that is, is [`pointer-emission.md`](../pointer-emission.md), the project's one `[GAP]`.
+
+**The table's 1:1 conversion quietly asserts that pointers cost no lace.** D1 refutes that in its own eleven rows, where pointers outnumber words six to five.
+
+### Which is why the withdrawal was right, and now has a reason
+
+Commit `3c73190`, on [the recovered branch](verification-iter3-pass-4-findings.md), withdrew this arithmetic as *"reasoning, not a unit."* **That judgment was correct and this record supplies the model's own reason for it:** any words-to-length conversion is a claim about emission, and emission is not settled.
+
+### What this leaves for law
+
+Both wordings are confusing because both are a length:
+
+- **Hands keeps the clause as Hands.** A physical cord has a length you can hold, and the header is a Hands statement. `centimeter` is what the panel prints.
+- **Shadow's correspondent is the index**, and it does not convert. One WORD arrival advances the index by one; what else advances it is `[GAP]`.
+- **Nothing should carry a table between them** until emission is accepted.
+
+**Verdict: `MISQUOTE` stands, and a second finding is added — `UNSUPPORTED`.** The conversion is not in the source; it is a reading that requires the gap to be closed. Law station; still a proposal, still not a repair.
+
