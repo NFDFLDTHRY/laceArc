@@ -39,7 +39,7 @@ Iteration 0 drove that from 10 to 0. **It has survived a doubling of the tree wi
 
 ### And the measurement that actually matters
 
-**Following links from the court door, transitively: 271 of 377 markdown files are reachable. 106 are not — 28% of the tree.**
+**Following links from the court door, transitively: 271 of 377 markdown files are reachable. 106 are not.** *(Corrected in §1a: from every entrance the law names, the figure is **97 of 379 — 26%**.)*
 
 | Unreachable | Shelf |
 |---|---|
@@ -49,6 +49,53 @@ Iteration 0 drove that from 10 to 0. **It has survived a doubling of the tree wi
 | 8 each | `docs/clock`, `docs/hologram`, `docs/history` |
 
 **A reader entering where the law says to enter cannot reach a quarter of this repository by following links.**
+
+### 1a. Completed: measured from every entrance the law names
+
+Pass 1's first cut followed links from the court door alone. **The law names more than one entrance**, so the measure was re-run at `f741aab`:
+
+| Entrances | Unreachable |
+|---|---|
+| `docs/README.md` alone — pass 1's first cut | 107 |
+| **+ the repo root `README.md`** | **97** |
+| + `AGENTS.md`, `CLAUDE.md` | 97 |
+| + live law, the manifest, the staking | **97** |
+
+**Two findings, and the second is the sharper one.**
+
+**The figure was overstated by ten.** 97, not 107.
+
+**And `AGENTS.md`, `CLAUDE.md`, the live law, the manifest and the staking document add exactly zero.** Every route they open is already open. **The two READMEs are the only entrances this tree actually has** — the rest of the law routes through them.
+
+### 1b. The two entrances are not nested, and the court door is the smaller
+
+The root `README.md` reaches **nine prompts** the court door cannot:
+
+`clip-and-five-refs` · `gearing-html-fix` · `gearing-html-hologram-restyle` · `gearing-html-iterate` · `kauffman-clipboard` · `rowlands-clipboard` · `rust-nostd-branch-contracts` · `shadow-clock-shared-interactive` · `xiao-clipboard`
+
+**`docs/README.md` was created in iteration 0 phase 2a as *the court door*.** It does not reach the prompts shelf at all. **Two entrances, neither a superset of the other, and the one the law points at is the smaller.**
+
+### 1c. Which shelves are stranded, and which are not
+
+| Unreachable | Shelf |
+|---|---|
+| 36 | `docs/clipboards` |
+| 30 | `docs/clock/passes` |
+| 8 each | `docs/clock`, `docs/hologram`, `docs/history` |
+| 7 | `docs/gearing` |
+| **0** | **`docs/plans`, `docs/kit`, `docs/graphics`, `docs/prompts`** |
+
+**Every unreachable file is campaign output.** The shelves that stayed navigable are the ones whose campaigns add a row when they add a file — and one of them is this campaign's own, which is a fact about habit rather than virtue: `docs/plans` has a README row per document because every pass wrote one.
+
+### How each number is got
+
+```bash
+git ls-files '*.md' | wc -l
+./docs/coord/coord.sh which <path>      # per tracked file, for the ownership count
+.claude/hooks/check-docs.sh             # doors and orphans
+```
+
+Reachability is a breadth-first walk of markdown links from a named set of entrances, skipping fenced and backticked spans the way the checker does. **The walk is in this commit's diff rather than pasted here**, for the reason [iteration 2 pass 1](verification-iteration-2-plan.md) gives.
 
 ## 2. This corrects a ruling I took, on evidence I measured wrong
 
