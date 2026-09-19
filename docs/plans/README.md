@@ -4,6 +4,7 @@
 
 | File | Job |
 |---|---|
+| [math-execution-wasm-crosswalk-pass-3-plan.md](math-execution-wasm-crosswalk-pass-3-plan.md) | `[PLAN]` Pass 3: math-execution × WASM **adversarial misreadings** vs Pass 2 ledger; Φ `[GAP]`; bridge blocked |
 | [math-execution-wasm-crosswalk-pass-2-reading.md](math-execution-wasm-crosswalk-pass-2-reading.md) | **EXECUTED** math-execution × WASM **KEEP/FORBID/SILENT reading**; Φ `[GAP]`; bridge still blocked |
 | [math-execution-wasm-crosswalk-pass-2-plan.md](math-execution-wasm-crosswalk-pass-2-plan.md) | `[PLAN]` Pass 2 (executed): reading → [`math-execution-wasm-crosswalk-pass-2-reading.md`](math-execution-wasm-crosswalk-pass-2-reading.md); Φ `[GAP]`; bridge blocked |
 | [math-execution-wasm-crosswalk-pass-1.md](math-execution-wasm-crosswalk-pass-1.md) | **EXECUTED** math-execution × WASM Spec 3.0 **problem map**; sealed stack never cited WASM; READY-PARTIAL-CROSSWALK ∧ BLOCKED-BRIDGE-COMPLETE; Φ `[GAP]` |
