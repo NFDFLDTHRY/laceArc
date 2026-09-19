@@ -4,4 +4,4 @@ OWNS: docs/clipboards/**
 AGENT: -
 BASE: -
 SINCE: -
-NOTE: webgpu Pass 5 EXECUTED (P5-X CONFIRM · Order Proposal HOST/GPU Shadow; webgpu-ascii-machinery.md mirror); Pass 4 EXECUTED; Pass 3 EXECUTED; Pass 2 EXECUTED; Pass 1 EXECUTED; wasm-spec-3 Pass 6 EXECUTED (wasm64); FREE
+NOTE: wgsl Pass 1 PLAN landed (HELD/NOT EXECUTED); webgpu Pass 5 EXECUTED (P5-X CONFIRM · Order Proposal HOST/GPU Shadow; webgpu-ascii-machinery.md mirror); Pass 4–1 EXECUTED; webgpu Pass 6 HELD; wasm-spec-3 Pass 6 EXECUTED (wasm64); FREE
