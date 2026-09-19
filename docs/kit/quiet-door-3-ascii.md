@@ -2,7 +2,7 @@
 
 **Object:** `docs/README.md`  
 **Station:** kit (reading). Law wins on the door.  
-**Executed:** [quiet-door-3-pass-1-plan.md](quiet-door-3-pass-1-plan.md) · [quiet-door-3-pass-2-plan.md](quiet-door-3-pass-2-plan.md) · [quiet-door-3-pass-3-plan.md](quiet-door-3-pass-3-plan.md) · [quiet-door-3-pass-4-plan.md](quiet-door-3-pass-4-plan.md).  
+**Executed:** [quiet-door-3-pass-1-plan.md](quiet-door-3-pass-1-plan.md) · [quiet-door-3-pass-2-plan.md](quiet-door-3-pass-2-plan.md) · [quiet-door-3-pass-3-plan.md](quiet-door-3-pass-3-plan.md) · [quiet-door-3-pass-4-plan.md](quiet-door-3-pass-4-plan.md) · [quiet-door-3-pass-5-plan.md](quiet-door-3-pass-5-plan.md).  
 **Not:** live law. Not Hands. Not Graphic D. Not cold-doors pass 7. Not door #1 pass 7.  
 **Emission:** `[GAP]`. No `src/`. Court door bytes untouched.
 
@@ -208,3 +208,25 @@ All `New machine?` = no.
 | T2 | Eight-row register; all New machine?=no |
 | T3 | Court ↔ live law ↔ Hands seam |
 | T4 | Court bytes untouched |
+
+## Pass 5 — seam
+
+Four files. None becomes another.
+
+| File | Names | Stores | Routes | Becomes the other if |
+|---|---|---|---|---|
+| `docs/README.md` | Hands / gate / law / maps / ops / shelves | no | to the named files | treated as live law |
+| `docs/law-why-these-documents.md` | why the stakes; how code may exist | yes — live law | transport copies back to itself | treated as the court index |
+| `docs/kit/READ_ME_FIRST.md` | what the package is not | no | to AGENTS + live law | treated as live law or as the court |
+| `docs/kit/quiet-door-3-ascii.md` | the court as a reading | no | to the court page | treated as live law or as a fifth graphic |
+
+Court names. Law stores. Package routes. Kit reads.
+
+## Pass 5 deltas
+
+| Ticket | Action |
+|---|---|
+| T1 | Four-file seam |
+| T2 | None of the four rewritten |
+| T3 | This reading is not the store |
+| T4 | Court / live law / package door bytes untouched |
