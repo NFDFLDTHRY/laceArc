@@ -4,4 +4,4 @@ OWNS: docs/clipboards/**
 AGENT: -
 BASE: -
 SINCE: -
-NOTE: webgpu Pass 4 plan HELD (P-G* ASCII + P4-X; ascii not created); Pass 3 EXECUTED (M-G1…M-G9 + P3-M); Pass 2 EXECUTED (FM-Wgpu*/D7); Pass 1 EXECUTED; wasm-spec-3 Pass 6 EXECUTED (wasm64); FREE
+NOTE: webgpu Pass 4 EXECUTED (P-G1…P-G9 + P4-X; webgpu-ascii-machinery.md); Pass 3 EXECUTED (M-G1…M-G9 + P3-M); Pass 2 EXECUTED (FM-Wgpu*/D7); Pass 1 EXECUTED; wasm-spec-3 Pass 6 EXECUTED (wasm64); FREE
