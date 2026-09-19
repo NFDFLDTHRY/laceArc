@@ -57,7 +57,7 @@ aside[hidden]{display:none}
 </div>
 <div class="hud">
   <header class="hit">
-    <h1>LAYER III · i3p5 · RAWCDN SHA</h1>
+    <h1>LAYER III · i3p6 · RAWCDN SHA</h1>
     <p>Install this URL only if it is <code>rawcdn.githack.com</code> + a full SHA. Floating <code>main</code> is preview. Cubes are glyphs. No emitter. [GAP]</p>
   </header>
   <div class="modes hit">
@@ -82,13 +82,14 @@ aside[hidden]{display:none}
     <div class="row">
       <input id="t" type="range" min="0" max="10" step="0.02" value="0"/>
       <span id="phase">t=0000</span>
-      <span class="stamp">i3p5</span>
+      <span class="stamp">i3p6</span>
       <span class="stamp">A17</span>
       <span class="stamp" id="gpustamp">GPU ?</span>
       <span class="stamp" id="szstamp">?x?</span>
       <span class="stamp" id="nstamp">n=?</span>
       <span class="stamp" id="nnstamp">WebNN ?</span>
       <span class="stamp" id="pwastamp">PWA ?</span>
+      <span class="stamp" id="persiststamp">persist ?</span>
       <span class="stamp">glyphs ≠ schema</span>
     </div>
   </div>
@@ -293,7 +294,7 @@ function lookAt(e,c,up){
 function bakeViaWorker(src){
   return new Promise((resolve, reject) => {
     let w;
-    try { w = new Worker(src || "projection-bake-worker.js?i=3p5"); }
+    try { w = new Worker(src || "projection-bake-worker.js?i=3p6"); }
     catch (e) { reject(e); return; }
     const t = setTimeout(() => { try{w.terminate();}catch(_){ } reject(new Error("bake timeout")); }, 8000);
     w.onerror = e => { clearTimeout(t); try{w.terminate();}catch(_){ } reject(e); };
@@ -311,9 +312,9 @@ function bakeViaWorker(src){
   });
 }
 async function bakeScene(){
-  try { return await bakeViaWorker("projection-bake-worker.js?i=3p5"); }
+  try { return await bakeViaWorker("projection-bake-worker.js?i=3p6"); }
   catch (e1) {
-    const src = await fetch("projection-bake-worker.js?i=3p5", {cache:"no-store"}).then(r => {
+    const src = await fetch("projection-bake-worker.js?i=3p6", {cache:"no-store"}).then(r => {
       if (!r.ok) throw new Error("worker fetch "+r.status);
       return r.text();
     });
@@ -582,7 +583,7 @@ function runAudit(){
   const el=document.getElementById("audit");
   if(!el) return;
   const title=document.querySelector("h1")?.textContent||"";
-  const A=/i3p5/.test(title)?"ok":"fail";
+  const A=/i3p6/.test(title)?"ok":"fail";
   const D=!!(navigator.serviceWorker && navigator.serviceWorker.controller);
   const E=!!(window.deferredPrompt || window.matchMedia("(display-mode: standalone)").matches);
   const F=!!document.getElementById("installbtn");
@@ -593,7 +594,7 @@ function runAudit(){
     const ct=r.headers.get("content-type")||"";
     const B=/manifest|json/i.test(ct)?"ok":("fail "+ct);
     el.textContent=
-      "A title i3p5 "+A+"\n"+
+      "A title i3p6 "+A+"\n"+
       "B manifest MIME "+B+"\n"+
       "C icons 192+512 ok\n"+
       "D SW controlling "+(D?"ok":"fail")+"\n"+
@@ -607,6 +608,49 @@ function runAudit(){
 }
 setTimeout(runAudit, 600);
 let deferredPrompt=null;
+let persistAsked=false;
+function stampPersist(label){
+  const el=document.getElementById("persiststamp");
+  if(el) el.textContent=label;
+}
+async function readPersist(){
+  try {
+    if(!navigator.storage || !navigator.storage.persisted){
+      stampPersist("persist n/a");
+      return "n/a";
+    }
+    const on=await navigator.storage.persisted();
+    let extra="";
+    try {
+      if(navigator.storage.estimate){
+        const e=await navigator.storage.estimate();
+        if(e && e.quota) extra=" "+Math.round((e.usage||0)/1048576)+"/"+Math.round(e.quota/1048576)+"MB";
+      }
+    } catch(_){}
+    stampPersist((on?"persist on":"persist off")+extra);
+    return on?"on":"off";
+  } catch(_) {
+    stampPersist("persist deny");
+    return "deny";
+  }
+}
+async function askPersist(why){
+  if(persistAsked && why!=="install") return readPersist();
+  persistAsked=true;
+  try {
+    if(!navigator.storage || !navigator.storage.persist){
+      stampPersist("persist n/a");
+      return "n/a";
+    }
+    stampPersist("persist ask");
+    const ok=await navigator.storage.persist();
+    stampPersist(ok?"persist on":"persist deny");
+    return ok?"on":"deny";
+  } catch(_) {
+    stampPersist("persist deny");
+    return "deny";
+  }
+}
 window.addEventListener("beforeinstallprompt", ev=>{
   ev.preventDefault();
   deferredPrompt=ev;
@@ -619,10 +663,12 @@ document.getElementById("installbtn").addEventListener("click", async ev=>{
   const e=document.getElementById("pwastamp");
   if(window.matchMedia("(display-mode: standalone)").matches){
     if(e) e.textContent="installed";
+    await askPersist("install");
     return;
   }
   if(!deferredPrompt){
     if(e) e.textContent="no bip";
+    await askPersist("install");
     return;
   }
   try {
@@ -634,10 +680,11 @@ document.getElementById("installbtn").addEventListener("click", async ev=>{
   }
   deferredPrompt=null;
   window.deferredPrompt=null;
+  await askPersist("install");
 });
 if ("serviceWorker" in navigator) {
   let reloading=false;
-  navigator.serviceWorker.register("sw.js", { scope: "./" })
+  navigator.serviceWorker.register("sw.js", { scope: "./", updateViaCache: "none" })
     .then(reg => {
       const e=document.getElementById("pwastamp");
       if(e) e.textContent = navigator.serviceWorker.controller ? "PWA on" : "SW wait";
@@ -673,6 +720,8 @@ if ("serviceWorker" in navigator) {
 } else {
   const e=document.getElementById("pwastamp"); if(e) e.textContent="PWA off";
 }
+readPersist();
+if(window.matchMedia("(display-mode: standalone)").matches) askPersist("standalone");
 </script>
 </body>
 </html>

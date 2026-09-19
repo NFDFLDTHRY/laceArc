@@ -1,6 +1,6 @@
 # Projection iteration 3 / pass 6 plan — persist + load reliability
 
-**Status:** PLAN. Not executed. Emission `[GAP]`.  
+**Status:** EXECUTED. Emission `[GAP]`. Title `i3p6`. persist() on Install / standalone. HUD stamp. updateViaCache none.  
 **Station:** hologram  
 **Target:** Chrome Android 17, rawcdn SHA WebAPK and tab.  
 **Evidence:** `i3p5` paints. `i3p4` reboot exists. There is **no** `navigator.storage.persist()` call. HUD `ev.persisted` is bfcache, not durable storage.
