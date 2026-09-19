@@ -3,12 +3,15 @@
 **Layer:** III coordination only. Not Core. Emission remains `[GAP]`.
 
 ```
-STATUS: CLEAR
-TIP_AT_FIRE: (see git history of prior FIRED)
+STATUS: FIRED
+TIP_AT_FIRE: 01055888cf5764fea5bb84c64dc53844a8ec0f59
 LIVE_TIP_RULE: origin/main
-CLEARED_AT: 2026-09-18T20:10:50Z
-CLEARED_BY: LaceArc (steward)
-NOTE: Resync complete. Normal claim/release resumes. BASE must still equal origin/main on check.
+FIRED_AT: 2026-09-19T03:32:56Z
+FIRED_BY: Claude-Projection, on the human's steward signal (resync.sh hardcodes "LaceArc (steward)" for both fire and clear; corrected by hand so the tick is not misattributed)
+NOTE: While FIRED, effective tip is always current origin/main. TIP_AT_FIRE is the signal commit. All BASE values are STALE until claim/refresh against live tip.
+STATE_AT_FIRE: all eight gear shafts FREE; all doc stations FREE but gearing-meta, held by the firing agent. Nothing held a stale BASE.
+REASON: churn, not contention. The tree moved far enough that READINGS of docs/ are stale even though no claim is. Re-read Hands then Shadow before your next drop; that is the obligation this fire carries.
+CLEARING: the clear condition is already met by inspection, so any agent running ./docs/coord/coord.sh doctor --auto-clear will clear this. It is not a claim panic and must not be read as one.
 ```
 
 ## Signal diagram
