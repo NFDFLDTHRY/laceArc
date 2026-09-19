@@ -1,8 +1,9 @@
 # Quiet door #6 — Clock ASCII
 
+**Status:** CLOSED 6/6. Receipt: [quiet-door-6-receipt.md](quiet-door-6-receipt.md).  
 **Object:** `docs/clock/README.md`  
 **Station:** hologram. There is no clock station.  
-**Executed:** [quiet-door-6-pass-1-plan.md](quiet-door-6-pass-1-plan.md) · [quiet-door-6-pass-2-plan.md](quiet-door-6-pass-2-plan.md) · [quiet-door-6-pass-3-plan.md](quiet-door-6-pass-3-plan.md) · [quiet-door-6-pass-4-plan.md](quiet-door-6-pass-4-plan.md) · [quiet-door-6-pass-5-plan.md](quiet-door-6-pass-5-plan.md).  
+**Executed:** [quiet-door-6-pass-1-plan.md](quiet-door-6-pass-1-plan.md) · [quiet-door-6-pass-2-plan.md](quiet-door-6-pass-2-plan.md) · [quiet-door-6-pass-3-plan.md](quiet-door-6-pass-3-plan.md) · [quiet-door-6-pass-4-plan.md](quiet-door-6-pass-4-plan.md) · [quiet-door-6-pass-5-plan.md](quiet-door-6-pass-5-plan.md) · [quiet-door-6-pass-6-plan.md](quiet-door-6-pass-6-plan.md).  
 **Not:** Core. Not Graphic D. Not Hands. Not door #5 pass 7. Not projection iter 5.  
 **Emission:** `[GAP]`. No `src/`. Clock door bytes untouched. HTML untouched. Renderer unclaimed.
 

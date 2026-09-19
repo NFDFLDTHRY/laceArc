@@ -1,6 +1,6 @@
 # Quiet door #6 (Clock) — Pass 6 PLAN
 
-**Status:** PLAN only. Not run.  
+**Status:** EXECUTED — receipt on `docs/clock/quiet-door-6-receipt.md`. CLOSED 6/6. Door + HTML unchanged. Emission `[GAP]`.  
 **Station:** hologram (HELD Grok-hologram).  
 **Object:** Clock receipt. Close this iteration 6/6.  
 **Authority:** [`quiet-door-6-ascii.md`](quiet-door-6-ascii.md) passes 1–5. Clock door as written. Door #5 receipt as **form**, not as a history close.  
