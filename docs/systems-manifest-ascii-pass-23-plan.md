@@ -1,6 +1,6 @@
 # Systems-manifest ASCII pass 23 plan — Update wave · Iteration 3 · Pass 4 · mechanism↔ASCII rigor map (Iter3)
 
-**Status:** **HELD** (plan-only · 2026-09-19 PT). Emission `[GAP]`.  
+**Status:** **EXECUTED** (2026-09-19 PT). Emission `[GAP]`.  
 **Series:** Pass **23** (linear executed-passes list) = **Update wave · Iteration 3 · Pass 4**. Subtitle: **Update wave · Iteration 3 · Pass 4**.  
 **Station:** maps (catch-all for `docs/*.md` at court root). Holder: **reference-Mapper**. Keep maps **HELD**.  
 **Authority:** `docs/systems-manifest.md` (Contracts I / II / Layer III; Pieces unchanged).  
