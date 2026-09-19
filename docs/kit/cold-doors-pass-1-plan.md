@@ -1,10 +1,13 @@
 # Cold doors — Pass 1 PLAN
 
-**Status:** PLAN only. Not run.
+**Status:** EXECUTED at `ec5ae61624db93bb19e2560adacfded080f98a50` (refresh BASE; register commit follows).
 **Station:** kit.
 **Agent:** Grok-kit.
 **Plan BASE:** `8840f0875dbca23d968afb8bf77c8cb3d386d9d0`.
+**Execute BASE:** `ec5ae61624db93bb19e2560adacfded080f98a50`.
 **Emission:** `[GAP]`. No `src/`. Renderer stays paused. Seven Rust doors stay shut.
+
+Human said proceed. Discharge: `docs/kit/cold-doors.md` written. No foreign bodies edited.
 
 Human asked for pass 1 of the quiet-door list named after history pass 6.
 

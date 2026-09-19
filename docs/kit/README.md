@@ -5,7 +5,8 @@ Portable steward controls. Not Hands. Not Graphic D. Nothing here is a source of
 | File | Use | Status |
 |---|---|---|
 | [READ_ME_FIRST.md](READ_ME_FIRST.md) | Package door: what the documentation package is and what it does not establish | live routing; THEN pin `4fe984b`, NOW re-read `044257c` — read live [AGENTS.md](../../AGENTS.md) |
-| [cold-doors-pass-1-plan.md](cold-doors-pass-1-plan.md) | Pass 1 PLAN: classify the quiet doors. Register not written until execute | **PLAN only. Not run** |
+| [cold-doors.md](cold-doors.md) | Quiet-door register: LIVE / DATED / STALE / PAUSED / SHUT | Pass 1 EXECUTED at `ec5ae61` |
+| [cold-doors-pass-1-plan.md](cold-doors-pass-1-plan.md) | Pass 1 plan for that register | EXECUTED |
 | [agent-control.md](agent-control.md) | Portable standing prompt: the staking law verbatim, then the operating controls C01–C12 | transport copy of [the live law](../law-why-these-documents.md) |
 | [agent-task-template.md](agent-task-template.md) | One-task, adjudication, proof-contract and handoff forms | live |
 | [downstream-audit.md](downstream-audit.md) | Dated audit: evidence, failure paths, source corrections, agent challenge cases F01–F12 | dated snapshot at `4fe984b`, re-checked by the coherence audit |
