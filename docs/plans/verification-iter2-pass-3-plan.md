@@ -1,6 +1,6 @@
 # Verification iteration 2, pass 3 — the register, tested against its own rule
 
-**Status:** `[PLAN]`. Execution NOT_RUN. **Station:** maps — this plan, and [the register](../namespace-register.md) itself.
+**Status:** `[PLAN]`. **EXECUTED** — [the record](verification-iter2-pass-3-findings.md). Rule replaced; 5 families registered, 3 excluded, 1 struck. **Station:** maps — this plan, and [the register](../namespace-register.md) itself.
 **Emission:** `[GAP]`. No `src/`.
 **Iteration:** [iteration 2](verification-iteration-2-plan.md), pass 3 of six. Passes 1 and 2 EXECUTED.
 
