@@ -1,6 +1,6 @@
 # WGSL CRD 2026-09-15 — Pass 4 PLAN (SHADER-LANG ASCII source-machinery / Wave A P-S* + P4-X)
 
-**Status:** **HELD / NOT EXECUTED** · plan turn 2026-09-18 ~21:53 PT  
+**Status:** **EXECUTED** · plan turn 2026-09-18 ~21:53 PT · execute ~2026-09-18 21:57 PT  
 **Station:** clipboards (HELD `WGSL Pass 4 plan HELD` · claim BASE `f6e54d4` = `origin/main` at claim/refresh)  
 **Tip at plan:** `f6e54d4` (= `origin/main` after `git pull --ff-only`)  
 **Spec:** *WebGPU Shading Language* (WGSL) — **W3C Candidate Recommendation Draft, 15 September 2026** · editors Alan Baker, Mehmet Oguz Derin, David Neto (et al.)  
@@ -62,7 +62,7 @@ pull/ff → claim clipboards → Hands + shader-lang mesh skim
 |  inside fences; stamps live UNDER fences.                            |
 |  FORBID-as-Core-write; NON-binding on Core/src/Phi.                  |
 |  No src/ until pointer-emission accepted.  One strand.               |
-|  Ascii file = execute only.  Status: HELD / NOT EXECUTED.            |
+|  Ascii file = EXECUTED.  Status: Pass 4 EXECUTED. Emission [GAP].    |
 |  Emission [GAP] sealed.  Order Proposal = Pass 5. Audit = Pass 6.    |
 +======================================================================+
 ```
@@ -521,13 +521,13 @@ Fences stay Spec/shader-lang side; **no POINTER word inside fences**; stamps und
 
 | Field | Value |
 |---|---|
-| Status | _(empty until execute)_ |
-| When | |
-| Agent | |
-| Ascii created | |
-| Clipboard | |
-| Mechanisms | |
-| P4-X | |
+| Status | **EXECUTED** |
+| When | 2026-09-18 ~21:57 PT |
+| Agent | `WGSL Pass 4 EXECUTE ascii P-S1..P-S9 + P4-X` |
+| Ascii created | [`wgsl-ascii-machinery.md`](wgsl-ascii-machinery.md) · overview count=1 · P-S1…P-S9 · P4-X **PASS** |
+| Clipboard | Pass 4 receipt + P4-X mirror · P3-M ascii one-liner · D6 ascii seal lifted |
+| Mechanisms | status one-liner + panel cites **P-S*** (algorithms unchanged) |
+| P4-X | **PASS** × (9 panels + 10 overview + 12 special gates) · no FIX |
 | Emission | `[GAP]` |
-| PDF staged | |
-| Push | |
+| PDF staged | **No** |
+| Push | **No** |

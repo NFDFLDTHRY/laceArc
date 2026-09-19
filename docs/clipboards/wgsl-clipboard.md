@@ -311,7 +311,7 @@ PDF is **PRESENT** (do not narrate absent). Pass 1 receipt (P1-R): `refs/local/w
 - Swap WGSL for WebGPU Device/Queue/Buffer host API
 - Swap WGSL for wasm64 / wasm-spec-3 compile target
 - Treat validation / shader-creation / pipeline-creation / dynamic errors as Lace law / Φ gate
-- Create `wgsl-ascii-machinery.md` / Wave A panels (**still sealed — Pass 4**) · create `wgsl-mechanisms.md` / mechanism cards (**Pass 3 lifted — see P3-M/P3-R**; do not reopen inventively)
+- Create `wgsl-ascii-machinery.md` / Wave A panels (**Pass 4 lifted — see P4-X/P4-R**) · create `wgsl-mechanisms.md` / mechanism cards (**Pass 3 lifted — see P3-M/P3-R**; do not reopen inventively)
 - Amend webgpu-* / wasm-spec-3 / law / graphics / systems-manifest / five-stakes / clock / hologram
 - Invent Core maps into five-stakes / reason-model
 - Add `src/` / Cargo.toml before emission acceptance
@@ -354,7 +354,7 @@ PDF is **PRESENT** (do not narrate absent). Pass 1 receipt (P1-R): `refs/local/w
 
 **CONFLICT:** none. PAGE X remains mesh context (steward refuse · FM-Wgsl7/8 · SILENT · Φ `[GAP]`). Pass 1–2 morals / FM-Wgsl\* / D7 **stand** (not rewritten).  
 **Projection/hologram files:** cite-only — **not amended**. **webgpu-* products:** cite-only — **not amended**. **wasm-spec-3 products:** cite-only — **not amended**.  
-**Emission:** `[GAP]` on every row. **Ascii:** deferred Pass 4 → `wgsl-ascii-machinery.md` (future **P-S1…P-S9**; not created).
+**Emission:** `[GAP]` on every row. **Ascii:** Pass 4 → [`wgsl-ascii-machinery.md`](wgsl-ascii-machinery.md) (**P-S1…P-S9**).
 
 ### P3-5S — Five-stakes
 
@@ -379,5 +379,55 @@ PDF is **PRESENT** (do not narrate absent). Pass 1 receipt (P1-R): `refs/local/w
 | Amended | Core graphics · systems-manifest(-ascii) · five-stakes · src/ · webgpu-* · wasm-spec-3 · clock · hologram · law · pointer-emission | **No** |
 | Pass 1–2 / FM-Wgsl\* / D7 | **stand** (D6 mechanisms-deferred line annotated; no PAGE rewrite) |
 | Emission | still `[GAP]` — no POINTER when / arity / adjacency; no invented Φ |
+| PDF staged | **No** |
+| Push | **No** (ask before push) |
+
+---
+
+## Pass 4 — ASCII SOURCE MACHINERY (P4-X) + receipt (P4-R)
+
+**Status:** **EXECUTED** · agent `WGSL Pass 4 EXECUTE ascii P-S1..P-S9 + P4-X` · ~2026-09-18 21:57 PT.
+
+**One-liner:** Pass 4 ASCII panels **P-S1…P-S9** → [`wgsl-ascii-machinery.md`](wgsl-ascii-machinery.md) (singular SOURCE MACHINERY overview · P4-X all **PASS**). Algorithms / PAGE morals / FM-Wgsl* / D7 / P3-M **stand**.
+
+### P4-X — Rigor matrix (clipboard mirror · canonical detail on ascii)
+
+Columns: `node · P · M · stamp · Implements OK · Fence OK (Spec-only; no POINTER word) · Stamp OK · False-friend fence OK · Overview attach OK · PASS/FIX`
+
+| node | P | M | stamp | Impl | Fence | Stamp | FF fence | Overview | Verdict |
+|---|---|---|---|---|---|---|---|---|---|
+| module/parse | P-S1 | M-S1 | FORBID-as-Lace-WORD+strand+host-API-swap+D7 | Y | Y | Y | Y (FM-Wgsl1·4·7) | Y | **PASS** |
+| types | P-S2 | M-S2 | FORBID-as-Core-write+FORBID-as-Lace-WORD | Y | Y | Y | Y (FM-Wgsl4) | Y | **PASS** |
+| address spaces | P-S3 | M-S3 | FORBID-as-Lace-store | Y | Y | Y | Y (FM-Wgsl3) | Y | **PASS** |
+| expressions | P-S4 | M-S4 | FORBID-as-Lace-WORD | Y | Y | Y | Y (FM-Wgsl4) | Y | **PASS** |
+| statements | P-S5 | M-S5 | SILENT-for-Lace-append+FORBID-as-emission-rule | Y | Y | Y | Y (FM-Wgsl5) | Y | **PASS** |
+| functions/entry | P-S6 | M-S6 | FORBID-as-emission-rule+FORBID-as-Lace-strand | Y | Y | Y | Y (FM-Wgsl1·2) | Y | **PASS** |
+| attributes | P-S7 | M-S7 | FORBID-as-Lace-strand+FORBID-as-Core-write | Y | Y | Y | Y (FM-Wgsl1) | Y | **PASS** |
+| builtins | P-S8 | M-S8 | FORBID-as-Core-write+FORBID-as-emission-rule | Y | Y | Y | Y (FM-Wgsl9·6) | Y | **PASS** |
+| execution/uniformity | P-S9 | M-S9 | SILENT-for-Lace-append+FORBID-as-emission-rule | Y | Y | Y | Y (FM-Wgsl6) | Y | **PASS** |
+
+Overview spine (10 nodes incl. forbidden Core/Φ/host-API/wasm64 exit): all **PASS**. Special gates (P-S1/D7 · P-S3 store · P-S2/P-S4 WORD · P-S5 discard · P-S6 entry · P-S7 workgroup · P-S8 builtins · P-S9 uniformity · host-API FM-Wgsl7 · wasm64 FM-Wgsl8 · no-POINTER-in-fence · no-invent-Φ): all **PASS**.
+
+**P4-X verdict:** all cells **Y** → **PASS** × (9 panels + 10 overview + 12 special gates). No FIX remaining.
+
+### P4-R — Pass 4 receipt
+
+| Field | Value |
+|---|---|
+| Status | **EXECUTED** |
+| When | 2026-09-18 ~21:57 PT |
+| Station | clipboards · agent `WGSL Pass 4 EXECUTE ascii P-S1..P-S9 + P4-X` |
+| Plan | [wgsl-pass-4-plan.md](wgsl-pass-4-plan.md) (was HELD; tip at plan `db7a9f7` / `0d92605`) |
+| Claim BASE | refresh `27b0f907f2999fcb5d27db3518be93b6f9ab53c3` (local ahead of origin; ff-only diverged — execute on local plan tip) |
+| Artifact | [`wgsl-ascii-machinery.md`](wgsl-ascii-machinery.md) · overview count=1 · **P-S1…P-S9** · cross-walk · P4-X |
+| Panel count | **9** (P-S1…P-S9) 1:1 with M-S1…M-S9 |
+| P4-X | **PASS** (no FIX) |
+| Hard stamps | P-S1 **FORBID-as-Lace-WORD** + **FORBID-as-Lace-strand** + **FORBID-as-host-API-swap** + **D7** · P-S2 **FORBID-as-Core-write** + **FORBID-as-Lace-WORD** · P-S3 **FORBID-as-Lace-store** · P-S4 **FORBID-as-Lace-WORD** · P-S5 **SILENT-for-Lace-append** + **FORBID-as-emission-rule** · P-S6 **FORBID-as-emission-rule** + **FORBID-as-Lace-strand** · P-S7 **FORBID-as-Lace-strand** + **FORBID-as-Core-write** · P-S8 **FORBID-as-Core-write** + **FORBID-as-emission-rule** · P-S9 **SILENT-for-Lace-append** |
+| Fence audit | **no POINTER word** inside any diagram fence |
+| Mechanisms | thin status + panel cites **P-S*** (algorithms unchanged) |
+| Amended | Core graphics · systems-manifest(-ascii) · five-stakes · src/ · webgpu-* · wasm-spec-3 · clock · hologram · law · pointer-emission | **No** |
+| Pass 1–3 / FM-Wgsl* / D7 / P3-M | **stand** |
+| Emission | still `[GAP]` |
+| Pass 5 / Pass 6 | deferred (Order Proposal / deep diagram audit) |
 | PDF staged | **No** |
 | Push | **No** (ask before push) |

@@ -1,6 +1,6 @@
 # WGSL CRD 2026-09-15 — mechanism cards (SHADER-LANG system procedures)
 
-**Status:** Pass 3 EXECUTED (Wave A **M-S1…M-S9**; P3-M mesh on clipboard). Pass 4 ASCII: deferred → [`wgsl-ascii-machinery.md`](wgsl-ascii-machinery.md) (**P-S1…P-S9**; not created this pass). Algorithms unchanged. Emission `[GAP]`.  
+**Status:** Pass 3 EXECUTED (Wave A **M-S1…M-S9**; P3-M mesh on clipboard). Pass 4 ASCII: see [`wgsl-ascii-machinery.md`](wgsl-ascii-machinery.md) (**P-S1…P-S9**). Algorithms unchanged. Emission `[GAP]`.  
 **Source:** *WebGPU Shading Language* (WGSL) — **W3C Candidate Recommendation Draft, 15 September 2026**. Editors: Alan Baker, Mehmet Oguz Derin, David Neto (et al.).  
 **PDF:** `refs/local/wgsl-w3c-crd-20260915.pdf` → attachment `73dc9e35047d8715a88ae3b1082b2e887c750da9f5c0f97d78410fc6c2f5eb6d` (**381** pp., text layer; **never git-add**). SHA-256 `73dc9e35047d8715a88ae3b1082b2e887c750da9f5c0f97d78410fc6c2f5eb6d`. PDF one-based primary.  
 **Sighting this pass:** `pdftotext -f N -l N -layout` on §2 Module/Lifecycle/Errors · §6 Types · §7 vars · §8 Expressions · §9 Statements/`discard` · §11–13 Functions/Attributes/Entry · §14 Address spaces · §15 Execution/Uniformity · §17 Built-ins/sync; Pass 1–2 pins reused.  
@@ -26,7 +26,7 @@
 |  KEEP-read: shader-lang mechanics for Shadow projection draw path.   |
 |  FORBID-as-Core-write; NON-binding on Core/src/Phi.                  |
 |  No src/ until pointer-emission accepted.  One strand.               |
-|  No ascii Wave A this pass (Pass 4).  Mechanisms = EXECUTED.         |
+|  Pass 4 ASCII: wgsl-ascii-machinery.md (P-S1…P-S9). Mechanisms stand.|
 |  Emission [GAP] sealed.                                              |
 +======================================================================+
 ```
@@ -56,7 +56,7 @@ This file is **Shadow / Layer III documentation of CRD shader-lang procedures**,
 
 ---
 
-## Wave A — CRD constructive spine (blocking) — 1:1 with future P-S1…P-S9 (Pass 4)
+## Wave A — CRD constructive spine (blocking) — 1:1 with P-S1…P-S9 (Pass 4 ASCII)
 
 ### M-S1 — Module / parse / textual structure (compose module · textual structure · directives · scope · lifecycle cite)
 
@@ -74,7 +74,7 @@ This file is **Shadow / Layer III documentation of CRD shader-lang procedures**,
 | Worked miniature | **Pass 2 D7** — compose module → host createShaderModule cite → pipeline cite → execution start/end (do not rewrite D7) |
 | Lace stamp | **KEEP-read-as-shader-lang**; **FORBID-as-Lace-WORD** (module text ↛ WORD); **FORBID-as-Lace-strand** (module ↛ lace cord); **FORBID-as-host-API-swap** (lifecycle host hooks cite-only); **FORBID-as-Core**; **FORBID fill-GAP**; **PROPOSAL-only** for Lace↔shader embed sketches |
 | Hands cite | Graphics A–D · systems-manifest (one store) · AGENTS Implementation Law · PAGE A · D7 |
-| Panel cite | **future P-S1** · PAGE **A** |
+| Panel cite | **P-S1** · PAGE **A** |
 | False friend | **FM-Wgsl1** · **FM-Wgsl4** · **FM-Wgsl7** |
 | Projection / hologram cite | `clock/README.md` (`lace-projection.html`) · `hologram/visual-primitives.md` WGSL live path — Shadow module identity only; glyphs ≠ schema |
 | webgpu cite | webgpu-* cite-only — host `createShaderModule` / Device/Queue are **HOST/GPU companion** (**FM-Wgsl7**); do not edit |
@@ -113,7 +113,7 @@ This file is **Shadow / Layer III documentation of CRD shader-lang procedures**,
 | Worked miniature | EXAMPLE shadowing predeclared objects PDF **49**; plain-type note PDF **56** |
 | Lace stamp | **KEEP-read-as-shader-lang**; **FORBID-as-Core-write**; **FORBID-as-Lace-WORD** (types ↛ Lace schema / WORD) |
 | Hands cite | systems-manifest · PAGE B |
-| Panel cite | **future P-S2** · PAGE **B** |
+| Panel cite | **P-S2** · PAGE **B** |
 | False friend | **FM-Wgsl4** |
 | Projection / hologram cite | types ≠ schema; hologram may *draw* typed values; glyphs ≠ schema |
 | webgpu cite | cite-only (host pipeline typed resources ≠ this type system as Core) |
@@ -151,7 +151,7 @@ This file is **Shadow / Layer III documentation of CRD shader-lang procedures**,
 | Worked miniature | EXAMPLE let-declared constants at function scope PDF **106**; address-space table PDF **201–202** |
 | Lace stamp | **KEEP-read-as-shader-lang**; **FORBID-as-Lace-store** (memory ≠ strand / second store) |
 | Hands cite | Piece 1/6 · Graphic D (one strand) · PAGE C |
-| Panel cite | **future P-S3** · PAGE **C** |
+| Panel cite | **P-S3** · PAGE **C** |
 | False friend | **FM-Wgsl3** |
 | Projection / hologram cite | address space ≠ strand/store; may hold draw uniforms only |
 | webgpu cite | ≠ GPUBuffer swap as Lace store (**FM-Wgsl7** cite-only) |
@@ -190,7 +190,7 @@ This file is **Shadow / Layer III documentation of CRD shader-lang procedures**,
 | Worked miniature | Early-evaluation tradeoff note PDF **110** |
 | Lace stamp | **KEEP-read-as-shader-lang**; **FORBID-as-Lace-WORD** (expression algebra ↛ WORD / Core ops) |
 | Hands cite | PAGE D · AGENTS Implementation Law |
-| Panel cite | **future P-S4** · PAGE **D** |
+| Panel cite | **P-S4** · PAGE **D** |
 | False friend | **FM-Wgsl4** (adjacent) |
 | Projection / hologram cite | expr algebra ≠ WORD; may compute draw math only |
 | webgpu cite | cite-only |
@@ -228,7 +228,7 @@ This file is **Shadow / Layer III documentation of CRD shader-lang procedures**,
 | Worked miniature | EXAMPLE using discard to throw away a fragment PDF **159** |
 | Lace stamp | **KEEP-read-as-shader-lang**; **SILENT-for-Lace-append**; **FORBID-as-emission-rule** (`discard` ↛ Lace cut / Φ) |
 | Hands cite | PAGE E · pointer-emission `[GAP]` |
-| Panel cite | **future P-S5** · PAGE **E** |
+| Panel cite | **P-S5** · PAGE **E** |
 | False friend | **FM-Wgsl5** |
 | Projection / hologram cite | discard ≠ Lace cut; SILENT for append |
 | webgpu cite | cite-only |
@@ -266,7 +266,7 @@ This file is **Shadow / Layer III documentation of CRD shader-lang procedures**,
 | Worked miniature | EXAMPLE compute entry with `@compute @workgroup_size(1)` PDF **167**; entry-point interface PDF **182** |
 | Lace stamp | **KEEP-read-as-shader-lang**; **FORBID-as-emission-rule** (entry ≠ Φ); **FORBID-as-Lace-strand** (stage/workgroup ↛ lace cord); **FORBID fill-GAP** |
 | Hands cite | pointer-emission `[GAP]` · PAGE F · FM-Wgsl1 · FM-Wgsl2 |
-| Panel cite | **future P-S6** · PAGE **F** |
+| Panel cite | **P-S6** · PAGE **F** |
 | False friend | **FM-Wgsl1** · **FM-Wgsl2** |
 | Projection / hologram cite | entry ≠ Φ; stage ≠ lace cord; Shadow draw entry only |
 | webgpu cite | ≠ pipeline host API swap (**FM-Wgsl7**); host binds entry points cite-only |
@@ -304,7 +304,7 @@ This file is **Shadow / Layer III documentation of CRD shader-lang procedures**,
 | Worked miniature | `@compute @workgroup_size(1)` PDF **167** / attribute table PDF **179–180** |
 | Lace stamp | **KEEP-read-as-shader-lang**; **FORBID-as-Lace-strand** (`workgroup_size` ↛ Graphic D); **FORBID-as-Core-write** |
 | Hands cite | PAGE F · FM-Wgsl1 |
-| Panel cite | **future P-S7** · PAGE **F** |
+| Panel cite | **P-S7** · PAGE **F** |
 | False friend | **FM-Wgsl1** |
 | Projection / hologram cite | workgroup_size ≠ Graphic D |
 | webgpu cite | cite-only (host limits may cap sizes; still not Lace) |
@@ -342,7 +342,7 @@ This file is **Shadow / Layer III documentation of CRD shader-lang procedures**,
 | Worked miniature | §17.11 sync builtins PDF **347–348**; constructor note PDF **264** |
 | Lace stamp | **KEEP-read-as-shader-lang**; **FORBID-as-Core-write**; **FORBID-as-emission-rule** (builtins/barriers ↛ Core ops / Φ fillers) |
 | Hands cite | PAGE G · FM-Wgsl9 · FM-Wgsl6 |
-| Panel cite | **future P-S8** · PAGE **G** |
+| Panel cite | **P-S8** · PAGE **G** |
 | False friend | **FM-Wgsl9** · **FM-Wgsl6** |
 | Projection / hologram cite | builtins/barriers ≠ Core/Φ; may serve Shadow draw math only |
 | webgpu cite | cite-only |
@@ -380,7 +380,7 @@ This file is **Shadow / Layer III documentation of CRD shader-lang procedures**,
 | Worked miniature | Uniformity graph figure PDF **241**; error-phase note PDF **17** |
 | Lace stamp | **KEEP-read-as-shader-lang**; **SILENT-for-Lace-append**; **FORBID-as-emission-rule** (uniformity/validation ≠ Lace law / Φ gate) |
 | Hands cite | PAGE H · FM-Wgsl6 · pointer-emission `[GAP]` |
-| Panel cite | **future P-S9** · PAGE **H** |
+| Panel cite | **P-S9** · PAGE **H** |
 | False friend | **FM-Wgsl6** |
 | Projection / hologram cite | uniformity/validation ≠ Lace law |
 | webgpu cite | cite-only (host may surface pipeline errors; still not Lace cut) |
