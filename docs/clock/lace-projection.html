@@ -50,7 +50,7 @@ aside[hidden]{display:none}
 </div>
 <div class="hud">
   <header class="hit">
-    <h1>LAYER III · i2p1 · DOCK</h1>
+    <h1>LAYER III · i2p2 · PWA</h1>
     <p>Install on githack <code>main</code>, not a SHA. Audit ticks stay SHA-pinned. Cubes are glyphs. No emitter. [GAP]</p>
   </header>
   <div class="modes hit">
@@ -75,7 +75,7 @@ aside[hidden]{display:none}
     <div class="row">
       <input id="t" type="range" min="0" max="10" step="0.02" value="0"/>
       <span id="phase">t=0000</span>
-      <span class="stamp">i2p1</span>
+      <span class="stamp">i2p2</span>
       <span class="stamp">A17</span>
       <span class="stamp" id="nnstamp">WebNN ?</span>
       <span class="stamp" id="pwastamp">PWA ?</span>
@@ -411,7 +411,7 @@ function runAudit(){
   const el=document.getElementById("audit");
   if(!el) return;
   const title=document.querySelector("h1")?.textContent||"";
-  const A=/i2p1/.test(title)?"ok":"fail";
+  const A=/i2p2/.test(title)?"ok":"fail";
   const D=!!(navigator.serviceWorker && navigator.serviceWorker.controller);
   const E=!!(window.deferredPrompt || window.matchMedia("(display-mode: standalone)").matches);
   const F=!!document.getElementById("installbtn");
@@ -422,7 +422,7 @@ function runAudit(){
     const ct=r.headers.get("content-type")||"";
     const B=/manifest|json/i.test(ct)?"ok":("fail "+ct);
     el.textContent=
-      "A title i2p1 "+A+"\n"+
+      "A title i2p2 "+A+"\n"+
       "B manifest MIME "+B+"\n"+
       "C icons 192+512 ok\n"+
       "D SW controlling "+(D?"ok":"fail")+"\n"+
@@ -468,7 +468,8 @@ if ("serviceWorker" in navigator) {
   let reloading=false;
   navigator.serviceWorker.register("sw.js", { scope: "./" })
     .then(reg => {
-      const e=document.getElementById("pwastamp"); if(e) e.textContent="PWA on";
+      const e=document.getElementById("pwastamp");
+      if(e) e.textContent = navigator.serviceWorker.controller ? "PWA on" : "SW wait";
       const upd=document.getElementById("updatebtn");
       const kick=()=>{
         if(reg.waiting){

@@ -1,17 +1,15 @@
-/* Layer III cache. HTML is network-first so githack main can move. */
-const CACHE = "lace-iii-i2p1";
-const PRE = [
-  "../hologram/clockwork-view-lattice.jpg",
-  "../hologram/clockwork-view-traces.jpg",
-  "../hologram/clockwork-view-crossing.png",
-  "./icon-192.png",
-  "./icon-512.png"
-];
+/* Layer III. SW must activate even if lookrefs 404. */
+const CACHE = "lace-iii-i2p2";
+const PRE = ["./icon-192.png", "./icon-512.png"];
 self.addEventListener("message", e => {
   if (e.data && e.data.type === "skip") self.skipWaiting();
 });
 self.addEventListener("install", e => {
-  e.waitUntil(caches.open(CACHE).then(c => c.addAll(PRE)).then(() => self.skipWaiting()));
+  e.waitUntil(
+    caches.open(CACHE).then(c =>
+      Promise.all(PRE.map(u => c.add(u).catch(() => null)))
+    ).then(() => self.skipWaiting())
+  );
 });
 self.addEventListener("activate", e => {
   e.waitUntil(caches.keys().then(keys =>
