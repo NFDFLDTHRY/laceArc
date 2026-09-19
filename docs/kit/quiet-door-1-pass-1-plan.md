@@ -1,6 +1,6 @@
 # Quiet door #1 (package) — Pass 1 PLAN
 
-**Status:** PLAN only. Not run.  
+**Status:** EXECUTED — spine on `docs/kit/quiet-door-1-ascii.md`. Package door unchanged. Emission `[GAP]`.  
 **Station:** kit (HELD Grok-kit).  
 **Object:** quiet door #1 — `docs/kit/READ_ME_FIRST.md` (package door).  
 **Not:** cold-doors pass 7. The register is closed 6/6. This is pass 1 of a six-pass iteration **on that door**.  

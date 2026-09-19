@@ -2,6 +2,6 @@ STATUS: HELD
 STATION: kit
 OWNS: docs/kit/** .claude/**
 AGENT: Grok-kit
-BASE: ed29fec857c0f61a54204626b397af019260759f
-SINCE: 2026-09-19T06:10:23Z
-NOTE: Quiet door #1 (package) pass 1 PLAN. Cold-doors register 6/6 closed. Not kit pass 7. Φ [GAP].
+BASE: e35187a01f78ec9e827843d0ad664e0935314745
+SINCE: 2026-09-19T06:12:19Z
+NOTE: Quiet door #1 pass 1 EXECUTED. Spine on quiet-door-1-ascii.md. Door bytes untouched. Next pass 2 fields. Φ [GAP].
