@@ -37,7 +37,7 @@
 
 ## 3. The corrections ledger
 
-**Seventeen claims were published and then withdrawn or corrected in this iteration.** *(Seventeen because the human corrected the sixteenth's successor after the receipt was first written — see the last row.)* They are grouped by whose claim it was, because the distinction matters: correcting an earlier iteration is ordinary, and correcting the document you are currently writing is the thing that has to be habitual.
+**Eighteen claims were published and then withdrawn or corrected in this iteration.** *(The last two came after the receipt was first written, both from the human — see the final section.)* They are grouped by whose claim it was, because the distinction matters: correcting an earlier iteration is ordinary, and correcting the document you are currently writing is the thing that has to be habitual.
 
 ### Corrections of this iteration's own claims, inside the same iteration — nine
 
@@ -70,17 +70,18 @@
 | 15 | `docs/clipboards/README.md`: **"the five stake texts"** | **Nine campaigns.** Correct when written |
 | 16 | `graphics-close-reading.md` and four files: **"centimetre"** | **"centimeter."** Read off the PNG. [An abandoned branch had this right nineteen hours earlier](#6-the-branch) |
 
-### Corrected after this receipt was written — one
+### Corrected after this receipt was written — two, both by the human
 
 **And it took the human to catch it, which is the entry that matters.**
 
 | | Claim | Corrected to |
 |---|---|---|
 | **17** | Pass 5: *"an index has no centimetres"* — the ruling read as **demoting** the header's clause to a physical analogy | **The centimeter *is* the index unit.** One centimeter is one index. **The ruling names the unit; it does not retire it.** Corrected at `0554228` |
+| **18** | This document, and the close reading for three readings before it: that the clause **fixes an exchange rate** between a physical shoe lace and the model | **There is no exchange rate.** The author: *"I needed a unit so I picked one at random."* **The unit is one item in the lace array; `centimeter` is a placeholder for it.** Recorded at `a2cbc55` |
 
-**Nine of the sixteen above were caught by this campaign's own next pass. The seventeenth was not caught at all** — it stood through the pass that made it, the receipt that ratified it, and the close of the iteration, and it was corrected only when the human said so plainly.
+**Nine of the sixteen above were caught by this campaign's own next pass. The last two were not caught at all** — one stood through the pass that made it, the receipt that ratified it, and the close of the iteration; the other stood through **three readings of the close reading** and every audit this campaign ran over it. Both were corrected only when the human said so plainly.
 
-**That is the honest limit of a self-correcting campaign**, and it belongs in the receipt beside the nine: a campaign can find its own arithmetic wrong, and it cannot reliably find the place where it misread an instruction.
+**That is the honest limit of a self-correcting campaign**, and it belongs in the receipt beside the nine: **a campaign can find its own arithmetic wrong, and it cannot find the place where it misread the author.** Entry 18 is the sharper case — nothing in the tree was inconsistent, so nothing in the tree could have revealed it. Only the person who wrote the source knew the unit had been picked at random.
 
 **Pass 2's characterisation of the 30 singletons — *"linked to nothing, not even each other"* — is also corrected**, by pass 3: they are a chain of 27 distinct title stamps, 26 of them cited by a sibling. True of links, false of the reference structure.
 
@@ -171,7 +172,7 @@ The reader-level incoherence this iteration was convened to find is **resolved f
 
 **No — not as a measuring campaign.**
 
-Four iterations have now each ended by finding the **measuring instrument** wrong rather than the tree: iteration 1 found the range checker wrong, 2 found four checks failing their own labels, 3 found eleven queued repairs that were all correct as written, and **4 found its own thesis wrong in three of its four working passes.** §3 is seventeen entries long, ten of them this iteration correcting itself — and **the seventeenth is the one the campaign could not catch**, which is the sharper reason to stop measuring and start ruling.
+Four iterations have now each ended by finding the **measuring instrument** wrong rather than the tree: iteration 1 found the range checker wrong, 2 found four checks failing their own labels, 3 found eleven queued repairs that were all correct as written, and **4 found its own thesis wrong in three of its four working passes.** §3 is eighteen entries long, ten of them this iteration correcting itself — and **the last two are the ones no amount of measuring could have caught**, which is the sharper reason to stop measuring and start ruling.
 
 **That is a campaign that has run out of things to be wrong about, which is the good outcome and also the signal to stop.**
 

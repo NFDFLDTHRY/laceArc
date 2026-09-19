@@ -61,7 +61,7 @@ Each commit: `pull --ff-only` → `which` → `claim` → edit only owned paths 
 
 ## 6. Where things stand
 
-**The campaign is closed.** [Iteration 4's receipt](verification-iteration-4-receipt.md) recommends no iteration 5 **as a measuring campaign**, and the reason is in the table above: four iterations each ended by finding the *instrument* wrong rather than the tree, and the fourth spent ten of its seventeen corrections on itself. **That is a campaign that has run out of things to be wrong about.**
+**The campaign is closed.** [Iteration 4's receipt](verification-iteration-4-receipt.md) recommends no iteration 5 **as a measuring campaign**, and the reason is in the table above: four iterations each ended by finding the *instrument* wrong rather than the tree, and the fourth spent ten of its eighteen corrections on itself. **That is a campaign that has run out of things to be wrong about.**
 
 **What this document still governs:** if a sixth-pass cadence is convened again, it takes this form. The form is not retired — the subject is exhausted.
 

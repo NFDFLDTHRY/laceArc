@@ -33,7 +33,11 @@ Applied to `docs/graphics-close-reading.md`. The conversion table is kept and ma
 
 **So point 1 is the whole fault and it is a counting fault.** The table reads *one word, one centimeter* as *one word, one index*, which assumes only WORDs occupy indices. Measured in indices, `D1`'s example is **eleven centimeters, not five.**
 
-**The `[GAP]` moves with it:** not *what unit an index carries* — that is answered — but **does a POINTER occupy a centimeter.** `D1` puts pointers in the array's own rows, which is the reason to think so; nothing in the four graphics states it.
+**And then the author closed that gap too.** *"I needed a unit so I picked one at random — the centimeter. In reality the unit could be anything; an item in the lace array is probably the best answer we have for this project."*
+
+**The unit is one item in the array, and `centimeter` is the author's arbitrary placeholder for it.** So a POINTER costs exactly what a WORD costs — one — because `D1` writes pointers as rows of the array. `D1`'s example is **eleven units, not five.** Recorded at `a2cbc55`, closed by the author's ruling rather than by the graphics.
+
+**POINTER emission is untouched and remains `[GAP]`.** Which arrivals write a pointer is a different question from what one costs once written.
 
 ### And the quotation was wrong
 
