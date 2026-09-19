@@ -1,12 +1,12 @@
 # Graphic A → ASCII systems diagram — Pass 1 PLAN
 
-**Status:** PLAN only. Not run. One act. Remainder queued.  
+**Status:** EXECUTED — `docs/graphics/graphic-a-ascii.md`. Emission `[GAP]`.  
 **Station:** graphics (HELD Grok-graphics).  
 **Authority:** `docs/graphics/from-words-to-worlds.png` (original `13284.png`). Then `docs/graphics/README.md`. Then panel cites already bound in `docs/systems-manifest.md`.  
 **Not authority:** OCR of this file. The existing eight-line stub under `docs/systems-manifest-ascii.md` (maps station). Layer III viewers.  
 **Emission:** `[GAP]`. No `src/`. PNG bytes stay put.
 
-Pass 0 said sit. The human named pass 1. Execute is not this tick.
+Execute landed: spine + README pointer. Remainder still queued.
 
 ```
 pull/ff → refresh graphics
