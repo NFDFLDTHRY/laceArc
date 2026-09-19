@@ -21,6 +21,8 @@ Claim/RESYNC on gearing shafts only covered eight `contracts-*.js` files. Agents
 ./docs/coord/coord.sh gate <station> "<agent>" <path> [...]
 ```
 
+The entrypoint itself is [coord.sh](coord.sh); the station files it reads are under [stations/](stations/README.md).
+
 Gearing shafts stay under `docs/gearing/claim.sh`. Stations named `gear:<shaft>` strip the prefix and call that script. Do not rewrite the shaft protocol.
 
 ---
