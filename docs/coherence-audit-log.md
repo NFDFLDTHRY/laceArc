@@ -156,3 +156,35 @@ Agent: Grok. Date: America/Denver.
 - fix: log-only
 - cites: docs/clipboards/petersen-zech-clipboard.md; docs/clipboards/README.md; docs/plans/rust-nostd-crate-map.md; docs/plans/rust-nostd-branch-contracts.md; A5 rollup above
 - emission contact: silenced → [GAP]
+
+### tick 2026-09-19 · station A1–A14 rollup · dating stanza · tip 91a75ccacac15dae1e95d3fe3790f48345ce5c11
+Agent: Claude-Projection. Date: UTC. Verification iteration 1, pass 4.
+- finding: **Every A1–A14 verdict above is a claim about its own named tip, and about no later tree.** Measured: each tick's `cites` line was parsed and every concrete cited path tested against that tick's own tip. **17 of 17 ticks carrying citations cite at least one path that has since moved or changed. None of the verdicts above describes main.** Distance from the last campaign tip `33b7e79` to this one: **396 commits** — 196 when iteration 1 first measured it, 249 midway through that session. A suspicion is killed rather than carried: the five tips in the campaign look like a walk across a moving tree and are not, since **five commits separate the first tip from the last**. The campaign was tight; the staleness is entirely downstream of it. Method limit, stated: `cites` lines carry globs, brace expansion and parentheticals, so the parse is approximate and the four genuinely moved paths below were confirmed by hand. **This stanza does not rewrite any tick above; it dates them.** No station is re-walked here, and no new `ok` is issued about today's tree — see the pass 4 plan for why re-walking loses at this churn rate.
+- kind: ok
+- fix: log-only
+- cites: docs/plans/verification-iter1-pass-4-plan.md; docs/plans/verification-iteration-1-plan.md; docs/kit/downstream-audit.md (the dating model); A1–A14 ticks above
+- emission contact: silenced → [GAP]
+
+### tick 2026-09-19 · station A7 · dating stanza · tip 91a75ccacac15dae1e95d3fe3790f48345ce5c11
+Agent: Claude-Projection. Date: UTC. Verification iteration 1, pass 4.
+- finding: The first A7 tick (`tip 6603c1b`, doors coherence) cites `docs/rust-nostd-crate-map-prompt.md` and `docs/rust-nostd-branch-contracts-prompt.md`. That is **THEN**. **NOW:** both are on the shelf at `docs/prompts/rust-nostd-crate-map-prompt.md` and `docs/prompts/rust-nostd-branch-contracts-prompt.md`, moved by `94cdba8` *Defrag pass 1: shelf prompts and history*. **`94cdba8` is the very next tip in this same campaign** — A8–A10 were walked against it. So A7's citations were re-shelved two commits after A7 was written, by a campaign running underneath the audit. Recorded because it sets the shelf life: a verdict here goes unfollowable in commits, not in weeks. The A7 verdict itself is untouched and stands as a claim about `6603c1b`.
+- kind: drift
+- fix: log-only (paths re-pointed in this stanza; the tick above is not edited)
+- cites: docs/prompts/rust-nostd-crate-map-prompt.md; docs/prompts/rust-nostd-branch-contracts-prompt.md; docs/prompts/README.md
+- emission contact: silenced → [GAP]
+
+### tick 2026-09-19 · station A7 · dating stanza · tip 91a75ccacac15dae1e95d3fe3790f48345ce5c11
+Agent: Claude-Projection. Date: UTC. Verification iteration 1, pass 4.
+- finding: The second A7 tick (`tip 6603c1b`, the stale-steward-note drift) cites `docs/pointer-emission-prompt.md`. That is **THEN**. **NOW:** `docs/prompts/pointer-emission-prompt.md`, moved by the same `94cdba8`. Emission remains `[GAP]`; the move is a shelving, and nothing about the emission question changed with it. That tick's own finding — a steward note calling `agentscope-clipboard.md` untracked when it was tracked — is the same class of defect this stanza repairs, one layer up: a claim about the tree outliving the tree.
+- kind: drift
+- fix: log-only (path re-pointed here; the tick above is not edited)
+- cites: docs/prompts/pointer-emission-prompt.md; docs/pointer-emission.md
+- emission contact: silenced → [GAP]
+
+### tick 2026-09-19 · station A14 · dating stanza · tip 91a75ccacac15dae1e95d3fe3790f48345ce5c11
+Agent: Claude-Projection. Date: UTC. Verification iteration 1, pass 4.
+- finding: The A14 tick (`tip 33b7e79`) cites `docs/downstream-audit.md`. That is **THEN**. **NOW:** `docs/kit/downstream-audit.md`, moved by `f1adf2d` *Defrag pass 2: shelf clipboards and kit; rewrite links*. Worth naming precisely: **the file whose dating model this whole pass borrows is itself cited at a path that no longer resolves.** Its F01–F12 findings are unchanged and still pinned to `4fe984bb`; only the shelf moved. This log's own header already links the new path — the A14 tick simply predates the move.
+- kind: drift
+- fix: log-only (path re-pointed here; the tick above is not edited)
+- cites: docs/kit/downstream-audit.md; docs/kit/README.md
+- emission contact: silenced → [GAP]

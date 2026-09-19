@@ -1,6 +1,6 @@
 # Verification iteration 1, pass 4 — the audit log's stale verdicts
 
-**Status:** `[PLAN]`. Execution NOT_RUN. **Station:** maps.
+**Status:** `[PLAN]`. **EXECUTED** at `91a75cc` — four stanzas appended to [the log](../coherence-audit-log.md), which now holds 22 ticks. **Station:** maps.
 **Emission:** `[GAP]`. No `src/`.
 **Iteration:** [verification iteration 1](verification-iteration-1-plan.md), pass 4 of six.
 
@@ -78,6 +78,8 @@ Append-only, per [the court door](../README.md): *"Never rewrite an earlier tick
 | **four path stanzas** | One per broken citation: old path, new path, the commit that moved it. These are the ones a reader literally cannot follow | `drift` / `log-only` |
 
 **Nothing else.** No new `ok` or `drift` verdict about today's tree.
+
+**As executed:** one rollup and **three** path stanzas, not four. The two moved rust prompts sit in the *same* A7 tick, and the log's unit is the tick, so splitting them would have filed one tick's drift under two headings. Four stanzas total. The drift figure was re-measured at execution and had moved again: **396 commits**, not 392.
 
 ## 5. Station: maps alone
 
