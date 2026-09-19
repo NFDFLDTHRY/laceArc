@@ -2,7 +2,7 @@
 
 **Object:** `docs/kit/READ_ME_FIRST.md`  
 **Station:** kit.  
-**Executed:** [quiet-door-1-pass-1-plan.md](quiet-door-1-pass-1-plan.md) · [quiet-door-1-pass-2-plan.md](quiet-door-1-pass-2-plan.md) · [quiet-door-1-pass-3-plan.md](quiet-door-1-pass-3-plan.md) · [quiet-door-1-pass-4-plan.md](quiet-door-1-pass-4-plan.md).  
+**Executed:** [quiet-door-1-pass-1-plan.md](quiet-door-1-pass-1-plan.md) · [quiet-door-1-pass-2-plan.md](quiet-door-1-pass-2-plan.md) · [quiet-door-1-pass-3-plan.md](quiet-door-1-pass-3-plan.md) · [quiet-door-1-pass-4-plan.md](quiet-door-1-pass-4-plan.md) · [quiet-door-1-pass-5-plan.md](quiet-door-1-pass-5-plan.md).  
 **Not:** live law. Not Hands. Not Graphic D. Not cold-doors pass 7.  
 **Emission:** `[GAP]`. No `src/`. Package door bytes untouched.
 
@@ -205,3 +205,31 @@ All `New machine?` = no.
 | T2 | Eight-row register; all New machine?=no |
 | T3 | Door↔law seam; wrapper-as-law `[X]` |
 | T4 | Hands verbs not copied |
+
+## Pass 5 — companion seam
+
+Door table names three. Kit holds more. None is live law. Stamps cited from cold-doors pass 2. Companion bodies not edited. `e21cf39` not retargeted.
+
+| File | On the door table? | Stamp | Job | Collapse would look like |
+|---|---|---|---|---|
+| `agent-control.md` | yes | DATED `e21cf39` | standing prompt; transport of live-law fence | treat as live law |
+| `agent-task-template.md` | yes | LIVE | forms; routes to current repository law | treat forms as the law |
+| `downstream-audit.md` | yes | DATED THEN `4fe984b` | THEN snapshot; body not rewritten from this door | rewrite the audit as current fact |
+| `grok-bot-profile.md` | no | DATED `e21cf39` | paste blocks; same fence as control | promote paste to live law |
+| `githack-pwa-deploy.md` | no | LIVE | Layer III install host+SHA | a fifth graphic / a Core store |
+| `.claude/README.md` | no | LIVE | hook door; checks advisory | a publishing gate |
+| `quiet-door-1-ascii.md` | no | reading | this diagram | replace the package door |
+| `cold-doors.md` | no | register | quiet-door stamps | a second package door |
+
+Three named routes. Extras exist and stay off the door table.
+
+## Pass 5 deltas
+
+| Ticket | Action |
+|---|---|
+| T1 | Eight-row seam |
+| T2 | Door names three; kit holds more |
+| T3 | None is live law |
+| T4 | Stamps cited, not changed |
+
+Queued (later pass on this door, not cold-doors 7): receipt.

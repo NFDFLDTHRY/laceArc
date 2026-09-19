@@ -1,6 +1,6 @@
 # Quiet door #1 (package) — Pass 5 PLAN
 
-**Status:** PLAN only. Not run.  
+**Status:** EXECUTED — companion seam on `docs/kit/quiet-door-1-ascii.md`. Package door unchanged. Companion bodies untouched. Emission `[GAP]`.  
 **Station:** kit (HELD Grok-kit).  
 **Object:** quiet door #1 — companion seam.  
 **Authority:** companion table on [`READ_ME_FIRST.md`](READ_ME_FIRST.md). Cold-doors pass 2 companion stamps (cite; do not redo). Pass 1–4 on [`quiet-door-1-ascii.md`](quiet-door-1-ascii.md).  
