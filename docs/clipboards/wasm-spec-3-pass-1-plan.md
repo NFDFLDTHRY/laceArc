@@ -1,7 +1,7 @@
 # WebAssembly Spec 3.0 — Pass 1 PLAN (hybrid: PDF admission + ASCII target machinery)
 
-**Status:** **HELD / NOT EXECUTED** — plan only (2026-09-18 ~19:51 PT).  
-**Station:** clipboards (claim note: `wasm-spec-3.0 Pass 1 PLAN only`)  
+**Status:** **EXECUTED** — Pass 1 products landed (2026-09-18 ~19:57 PT).
+**Station:** clipboards (claim note: `wasm-spec-3.0 Pass 1 EXECUTE`)
 **Base at plan:** `1831ad1` (station claim BASE) · refresh `git pull --ff-only` before any execute  
 **Emission:** still `[GAP]` (`docs/pointer-emission.md` = DRAFT, not human-accepted)  
 **Push:** **DO NOT PUSH** this plan turn. **DO NOT EXECUTE** Pass 1 products in this commit.
@@ -251,3 +251,22 @@ Linear memory is not Graphic D.
 Traps are not append rules.  
 Host imports do not accept Φ.  
 Φ stays `[GAP]`.
+
+
+---
+
+## Execution receipt (Pass 1)
+
+| Field | Value |
+|---|---|
+| Status | **EXECUTED** |
+| When | 2026-09-18 ~19:57 PT |
+| Station | clipboards · `wasm-spec-3.0 Pass 1 EXECUTE` |
+| Sync | rebased plan commit onto `origin/main` (`f3b554c`); claim BASE `f3b554c` |
+| PDF | symlinked `refs/local/webassembly-spec-3.0.pdf`; SHA-256 `687e73641a7eec8692273fdf048e1578bf2f379f507c36ec284a39d9e7f70fce`; 323 pp.; text layer; `git check-ignore` OK; **never staged** |
+| Offset | printed ≈ PDF − 4 re-verified (Ch.1/Structure/Execution) |
+| Products | [`wasm-spec-3-clipboard.md`](wasm-spec-3-clipboard.md) PAGE A–H,X · [`wasm-spec-3-ascii-machinery.md`](wasm-spec-3-ascii-machinery.md) overview + **P-T1…P-T9** |
+| Mechanisms | **deferred** (captions-under-panels sufficient) |
+| Amended | Core graphics · systems-manifest(-ascii) · five-stakes · src/ · rust-nostd plans | **No** |
+| Emission | still `[GAP]` |
+| Push | **NOT pushed** (per plan) |
