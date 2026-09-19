@@ -70,20 +70,24 @@ function bake(){
     n:[0,1,0,0,1,0,0,1,0,0,1,0,0,1,0,0,1,0]
   },[0.05,0.10,0.13],[0,0,0],-1);
   const fCount=P.length/3;
-  const shell=cube(0.50), core=cube(0.46), ball=sphere(0.62,20);
+  const core=cube(0.48), ball=sphere(0.62,20);
+  for(let i=-10;i<=10;i++){
+    const t=i*1.2;
+    add(ribbon([-12,0.35,t],[12,0.35,t],0.045),[0.55,0.95,1.0],[0,0,0],0);
+    add(ribbon([t,0.35,-12],[t,0.35,12],0.045),[0.55,0.95,1.0],[0,0,0],0);
+  }
   for(const r of D1){
     const off=posOf(r.i);
     if(r.k==="WORD"){
-      add(core,[1.0,0.32,0.04],off,r.i);
-      add(shell,[0.55,0.18,0.08],off,r.i);
+      add(core,[1.0,0.28,0.04],off,r.i);
       if(r.v==="PIE") add(ball,[0.12,0.95,0.32],[off[0],off[1]+0.85,off[2]], r.i);
     } else {
       add(cube(0.16),[0.15,0.55,0.95],off,r.i);
       const A=posOf(r.a), Bb=posOf(r.b);
-      const seg=shorten(A,Bb,0.52);
+      const seg=shorten(A,Bb,0.45);
       if(seg){
-        add(ribbon(seg[0],seg[1],0.080),[0.82,0.52,0.08],[0,0,0],r.i);
-        add(ribbon(seg[0],seg[1],0.032),[0.78,0.68,0.12],[0,0,0],r.i);
+        add(ribbon(seg[0],seg[1],0.140),[0.82,0.52,0.08],[0,0,0],r.i);
+        add(ribbon(seg[0],seg[1],0.055),[0.78,0.68,0.12],[0,0,0],r.i);
       }
     }
     add(ribbon([off[0],0.55,off[2]],[off[0],2.35,off[2]],0.018),[0.05,0.88,1.0],[0,0,0],r.i);

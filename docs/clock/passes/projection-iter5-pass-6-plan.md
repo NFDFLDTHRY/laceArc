@@ -1,6 +1,6 @@
 # Projection iteration 5 / pass 6 plan — the lace is geometry
 
-**Status:** PLAN. Not executed. Emission `[GAP]`.  
+**Status:** EXECUTED. Emission `[GAP]`. Title `i5p6`. Cyan trace ribbons y=0.35. Orange cubes, no shell. Gold bar 0.14.  
 **Station:** hologram  
 **Evidence:** stamp `i5p5`, `f=6`, `n=5514`, `t=0005 WHOLE`. Three flat teal cubes, spotted green ball, navy stage. Floor quad exists and still matches **clearValue**. Gold chords absent. The lace is invisible.
 
