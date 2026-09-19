@@ -1,6 +1,6 @@
 # Projection iteration 3 / pass 4 plan — second load must render
 
-**Status:** PLAN. Not executed. Emission `[GAP]`.  
+**Status:** EXECUTED. Emission `[GAP]`. Title `i3p4`. Reboot on lost/bfcache/draw throw. JS network-first.  
 **Station:** hologram  
 **Target:** Chrome Android 17, rawcdn SHA WebAPK and tab reload.  
 **Evidence:** first paint of `i3p3` works; a second load (reload, leave+reopen PWA, or bfcache return) refuses the GPU stage.

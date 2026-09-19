@@ -1,5 +1,5 @@
 /* Layer III. SW must activate even if lookrefs 404. */
-const CACHE = "lace-iii-i3p3";
+const CACHE = "lace-iii-i3p4";
 const PRE = ["./icon-192.png", "./icon-512.png"];
 self.addEventListener("message", e => {
   if (e.data && e.data.type === "skip") self.skipWaiting();
@@ -16,22 +16,30 @@ self.addEventListener("activate", e => {
     Promise.all(keys.filter(k => k !== CACHE).map(k => caches.delete(k)))
   ).then(() => self.clients.claim()));
 });
+function netFirst(req){
+  return fetch(req).then(res => {
+    if (res && res.ok) {
+      const copy = res.clone();
+      caches.open(CACHE).then(c => c.put(req, copy)).catch(()=>{});
+    }
+    return res;
+  }).catch(() => caches.match(req));
+}
 self.addEventListener("fetch", e => {
   const u = new URL(e.request.url);
   if (u.origin !== location.origin) return;
-  const html = u.pathname.endsWith(".html") || u.pathname.endsWith("/");
-  if (html) {
-    e.respondWith(fetch(e.request).then(res => {
-      const copy = res.clone();
-      caches.open(CACHE).then(c => c.put(e.request, copy)).catch(()=>{});
-      return res;
-    }).catch(() => caches.match(e.request)));
+  const path = u.pathname;
+  const live = path.endsWith(".html") || path.endsWith("/") || path.endsWith(".js");
+  if (live) {
+    e.respondWith(netFirst(e.request));
     return;
   }
   e.respondWith(
     caches.match(e.request).then(hit => hit || fetch(e.request).then(res => {
-      const copy = res.clone();
-      caches.open(CACHE).then(c => c.put(e.request, copy)).catch(()=>{});
+      if (res && res.ok) {
+        const copy = res.clone();
+        caches.open(CACHE).then(c => c.put(e.request, copy)).catch(()=>{});
+      }
       return res;
     }))
   );
