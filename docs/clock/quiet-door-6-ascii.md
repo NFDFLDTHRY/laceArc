@@ -2,7 +2,7 @@
 
 **Object:** `docs/clock/README.md`  
 **Station:** hologram. There is no clock station.  
-**Executed:** [quiet-door-6-pass-1-plan.md](quiet-door-6-pass-1-plan.md) · [quiet-door-6-pass-2-plan.md](quiet-door-6-pass-2-plan.md) · [quiet-door-6-pass-3-plan.md](quiet-door-6-pass-3-plan.md).  
+**Executed:** [quiet-door-6-pass-1-plan.md](quiet-door-6-pass-1-plan.md) · [quiet-door-6-pass-2-plan.md](quiet-door-6-pass-2-plan.md) · [quiet-door-6-pass-3-plan.md](quiet-door-6-pass-3-plan.md) · [quiet-door-6-pass-4-plan.md](quiet-door-6-pass-4-plan.md).  
 **Not:** Core. Not Graphic D. Not Hands. Not door #5 pass 7. Not projection iter 5.  
 **Emission:** `[GAP]`. No `src/`. Clock door bytes untouched. HTML untouched. Renderer unclaimed.
 
@@ -129,4 +129,70 @@ Hologram owns the door and lace-projection. Renderer owns two HTML viewers. Hand
 | T1 | Seven-row grain |
 | T2 | Hologram ≠ renderer ≠ Hands |
 | T3 | Cubes still not WORD |
+| T4 | Door + HTML + Hands untouched |
+
+## Pass 4 — walk
+
+This walk projects what is already on L and does not append. Hands keeps A13. Cubes stay glyphs.
+
+### Operator (from the clock door)
+
+```
+ ╔══════════════════════════════════════════════════════════════╗
+ ║  Read-only projection.                                       ║
+ ║  It shows the strand; it never decides what goes on it.      ║
+ ╚══════════════════════════════════════════════════════════════╝
+
+  reader arrives at docs/clock/README.md
+    if a viewer is asked        → show L; do not write L
+    if Hands is asked           → send to the four graphics
+    if frozen HTML is asked     → renderer; do not claim it
+    if install is asked         → rawcdn + full SHA; never main
+    never: cube ⇒ WORD
+    never: viewer ⇒ emitter
+    never: this shelf ⇒ Hands
+    never: hologram ⇒ renderer
+
+  not "emit POINTER."
+  not A13 arrive / through-star / continue.
+```
+
+### Application register
+
+| # | Role | What arrives | What is walked | What continues | New machine? |
+|---|---|---|---|---|---|
+| Cl1 | door | a reader at `docs/clock/` | index of Layer III | Hands still the store | no |
+| Cl2 | Layer III | a bid to treat this shelf as Hands | keep it off Core | — | no |
+| Cl3 | cubes | a cube on a viewer | keep them glyphs | — | no |
+| Cl4 | shadow prose | a brief / contract / map | reading; not Hands | G2 still `[GAP]` | no |
+| Cl5 | gears | H / C / W / train | already bound | OBS ≠ POINTER | no |
+| Cl6 | viewer | a strand already on L | project; never write | renderer stays unclaimed | no |
+| Cl7 | PWA | an install request | rawcdn + SHA | never `main` | no |
+| Cl8 | provenance | a new pass plan | `passes/` + product link | no orphan; no frozen edit | no |
+
+All `New machine?` = no.
+
+### Clock versus Hands versus renderer
+
+```
+ quiet-door-6-ascii.md       clock door              Hands
+ --------------------       ----------              -----
+ Layer III reading          the index               the store
+ names viewers              names viewers           four graphics
+
+ wrapper-as-Core            [X]
+ Hands verbs pasted here    [X]
+ cubes as WORD              [X]
+ viewer writes L            [X]
+ renderer claimed           [X]
+ G2                         [GAP]
+```
+
+## Pass 4 deltas
+
+| Ticket | Action |
+|---|---|
+| T1 | One walk box quoted from the clock door |
+| T2 | Eight-row register; all New machine?=no |
+| T3 | Clock ↔ Hands ↔ renderer |
 | T4 | Door + HTML + Hands untouched |

@@ -1,6 +1,6 @@
 # Quiet door #6 (Clock) — Pass 4 PLAN
 
-**Status:** PLAN only. Not run.  
+**Status:** EXECUTED — walk on `docs/clock/quiet-door-6-ascii.md`. Door + HTML unchanged. Emission `[GAP]`.  
 **Station:** hologram (HELD Grok-hologram).  
 **Object:** Clock **walk** — one mechanism on [`quiet-door-6-ascii.md`](quiet-door-6-ascii.md).  
 **Authority:** Clock door passes 1–3. Clock door as a *named door*, not bytes to edit.  
