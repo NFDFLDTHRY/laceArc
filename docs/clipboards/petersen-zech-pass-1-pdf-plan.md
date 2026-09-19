@@ -92,7 +92,7 @@ Shoe → A–D → manifest → law → reason-model-map §4 → current Peterse
 
 ### T2 — PDF gate
 
-Confirm `refs/local/petersen-zech-mathematical-theory-deep-learning.pdf` resolves to attachment `a8505f3d…4383fa`. Confirm `git check-ignore`. Abort if a PDF is staged.
+Confirm `refs/local/petersen-zech-mathematical-theory-deep-learning.pdf` resolves to attachment `a8505f3d…c84383fa`. Confirm `git check-ignore`. Abort if a PDF is staged.
 
 ### T3 — Page walk (core)
 
