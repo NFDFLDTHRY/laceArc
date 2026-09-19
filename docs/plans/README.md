@@ -16,6 +16,7 @@
 | [rust-nostd-second-reading.md](rust-nostd-second-reading.md) | second reading of the two rust plans and their IR tooling — findings with consequences, amendments proposed, none applied |
 | [verification-iteration-1-plan.md](verification-iteration-1-plan.md) | `[PROPOSAL]` iteration 1: whether what the documents say is true. Six passes. Iteration 0 was [the restructure](restructure-plan.md) |
 | [verification-iter1-pass-2-plan.md](verification-iter1-pass-2-plan.md) | `[PLAN]` iteration 1 pass 2: 240 cite-bearing lines read against the four PNGs, by graphic not by document; all four sources read-only |
+| [verification-iter1-pass-2-findings.md](verification-iter1-pass-2-findings.md) | pass 2 record, append-only per sub-pass. 2a complete: 79 of 79 Graphic D cites, both D1 transcriptions exact, three findings |
 | [restructure-plan.md](restructure-plan.md) | `[PROPOSAL]` coherence of the whole tree: twelve measured findings, eight phases, one station per commit; supersedes the defrag plan as filing plan of record |
 
 Sub-shelves: [fixtures/](fixtures/README.md) sealed golden IR · [tools/](tools/README.md) host validator.

@@ -1,6 +1,6 @@
 # Verification iteration 1, pass 2 — citations against the source
 
-**Status:** `[PLAN]`. Execution NOT_RUN. **Station:** maps (for this file and its record only).
+**Status:** `[PLAN]`. **2a EXECUTED**; 2b–2d NOT_RUN. **Station:** maps (for this file and its record only).
 **Emission:** `[GAP]`. No `src/`.
 **Iteration:** [verification iteration 1](verification-iteration-1-plan.md), pass 2 of six. Pass 1 is EXECUTED.
 
@@ -45,7 +45,7 @@ Opening a PNG is the expensive step and a cite is cheap, so the pass is cut the 
 
 | Sub-pass | Graphic | Lines | Note |
 |---|---|---|---|
-| **2a** | D — the 1D array | 79 | Densest, and the only numeric evidence in the project. Already read once in planning |
+| **2a** | D — the 1D array | 79 | **EXECUTED** — 79 of 79, both D1 transcriptions exact, three findings, no wrong-panel cite. [Record](verification-iter1-pass-2-findings.md) |
 | **2b** | C — n-dimensional relationships | 58 | Already read once in planning |
 | **2c** | A — from words to worlds | 57 | Not yet opened |
 | **2d** | B — mechanisms in 3D | 46 | Not yet opened |
@@ -84,7 +84,7 @@ Pass 3's standard — evidence reported at its actual strength — applied one p
 - **C7** reads "5D and beyond — Touches can participate in later touches", labelled "Relation among relations (5D+)". `MATCH`.
 - **D6** shows the chain `0000` → `0002` → `0007` → `0010`. Row `0009` is not on that panel; it is in D1's table and again in D3. Read strictly, the cite is `NEAR`. Read charitably — "see D6, and rows 0007/0009/0010 of the array" — it is `MATCH`.
 
-Kept as calibration rather than filed as a finding. **2a decides which reading the documents intend, and whichever it picks it applies to all 79 D-cites.** Fixing the reading before starting the count is the whole point of taking a sample first; deciding it case by case is how an audit returns whatever its auditor already believed.
+Kept as calibration rather than filed as a finding. **2a decides which reading the documents intend, and whichever it picks it applies to all 79 D-cites.** *(2a ruled: panel for the claim, rows as array addresses. See the record.)* Fixing the reading before starting the count is the whole point of taking a sample first; deciding it case by case is how an audit returns whatever its auditor already believed.
 
 ## 7. A carried instrument gap
 
