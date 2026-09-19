@@ -1,9 +1,10 @@
 # Cold doors
 
-**Status:** Pass 1 EXECUTED. Pass 2 EXECUTED.
+**Status:** Pass 1 EXECUTED. Pass 2 EXECUTED. Pass 3 EXECUTED.
 **Station:** kit.
 **Pass 1 BASE:** `ec5ae61624db93bb19e2560adacfded080f98a50`.
 **Pass 2 BASE:** `8c912a10df56504cb51cf95cd33c68ac8d3f2f45` (companions unchanged from `22ac006`).
+**Pass 3 BASE:** `e6e19352364cec81f96409596b8e8d3ffe70b63b`.
 **Read:** 19 September 2026.
 **Emission:** `[GAP]`. No `src/`.
 
@@ -75,6 +76,42 @@ Behind the package door. Same stamps. Live law bytes not edited. Copies not rege
 No companion in this table is STALE.
 
 A lagging copy that says it may lag is DATED. R1 size split remains noticed, not repaired.
+
+---
+
+## Pass 3 — transport lag inventory
+
+Question: what lags in the two DATED transport copies against the live-law **fenced** block, and does pin `e21cf39` resolve?
+
+Method: `git rev-parse` / `git rev-list --all` / `git ls-remote origin` for the pin. Python extract of the first `STAKING THE WORKSPACE` fence in live law vs the matching fences in the two copies. Line-diff. No paste-over.
+
+| Object | Finding |
+|---|---|
+| Pin `e21cf39` | **UNREACHABLE** on this clone. No object, no `origin` ref, no `rev-list --all` prefix match (152 commits walked). The two copies still name it. That name is a declaration, not a resolvable locator on this tree. |
+| Live-law fence | `docs/law-why-these-documents.md` fenced `STAKING THE WORKSPACE` block: 397 lines, 14903 bytes. |
+| `agent-control.md` staking fence | **IDENTICAL** to the live-law fence (0 line diffs). |
+| `grok-bot-profile.md` Explanation fence | **IDENTICAL** to the live-law fence (0 line diffs). |
+| Fence KEEP/FORBID drift | None found. The declared transport blocks match live law at this BASE. |
+
+The copies may still lag **outside** the fence. That is wrapper prose, not fence bytes.
+
+| Pair | Where it lives | In the shared fence? | In the two copies' wrappers? |
+|---|---|---|---|
+| Existence sentence | Live-law header line 14: *Implementation remains forbidden until `docs/pointer-emission.md` exists.* | No. Header is outside the fence. | Neither copy repeats that header pair. |
+| Acceptance sentence | Shared fence IMPLEMENTATION LAW: *When the human has accepted docs/pointer-emission.md, code may appear…* | Yes. Present and identical in all three fences. | Also restated in wrappers (see below). |
+| Header notice of the pair | Live-law blockquote: existence is not acceptance; neither sentence edited here. | No. | Absent from both copies. |
+
+Wrapper restatements (not fence drift; not repaired here):
+
+- `grok-bot-profile.md` Description fence (a different fence): refuses `src/` until the emission file *exists and the human accepted it* — one line joins both gates.
+- `agent-control.md` C03: gate requires the file to exist, to settle the questions the task uses, *and* identifiable human acceptance of that exact content.
+- `agent-control.md` C01 dated observation at `4fe984b` still says the emission file was absent at that pin (pass 2 already stamped this).
+
+R1 sizes at this BASE are wrapper weight, not staking-fence disagreement: `staking-the-workspace.md` 5961 (original stake, unfenced, not this compare), live law 17385 (header + fence), `grok-bot-profile.md` 18739 (profile + Description fence + identical Explanation fence), `agent-control.md` 31663 (identical fence + C01–C12).
+
+`docs/staking-the-workspace.md` was not scored as a transport copy. It is the original stake. Law owns it.
+
+No companion stamp from pass 2 changes. Copies not regenerated. Live law not edited. Pin string not retargeted.
 
 ---
 

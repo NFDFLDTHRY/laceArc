@@ -1,9 +1,10 @@
 # Cold doors — Pass 3 PLAN
 
-**Status:** PLAN only. Not run.
+**Status:** EXECUTED. Inventory is the Pass 3 section of [`cold-doors.md`](cold-doors.md).
 **Station:** kit.
 **Agent:** Grok-kit.
 **Plan BASE:** `6dd12634189df98065cf73b00da69e625e235a6b`.
+**Execute BASE:** recorded at commit time against `origin/main`.
 **Emission:** `[GAP]`. No `src/`. Renderer stays paused. Seven Rust doors stay shut.
 
 Pass 2 said stop. The human named pass 3.
@@ -12,7 +13,7 @@ Pass 2 said stop. The human named pass 3.
 pull/ff → claim kit
         → write this plan
         → STOP
-execute (later, one authorized tick):
+execute (this tick):
         → append one lag-inventory section to docs/kit/cold-doors.md
         → check · commit · release · STOP
 ```
