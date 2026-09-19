@@ -2,6 +2,6 @@ STATUS: HELD
 STATION: history
 OWNS: docs/history-recovered* docs/history/**
 AGENT: Astra-evidence
-BASE: e001b2d66fbdbb4522f1981b024b37d8b34a2493
+BASE: 7ba7cc39d0867d8dab03eee74349d61726311041
 SINCE: 2026-09-19T16:50:14Z
-NOTE: Quiet door #5 CLOSED 6/6. Walkers dead. Not pass 8. Φ [GAP]. Existing relationship questions packet at 8a2bac1692f2e99092ed5e1611e8caf49ec7b0a3; index at 882a0cabc7f038e4d1cbcfa871a85b2f98dd3ea3. Active user-requested task: claim the questions door and publish docs/history/relationship-evidence-pass-1-plan.md plus its History-index link. PLAN ONLY; review execution, mapper response, and independent adjudication NOT_RUN. No maps, law, emission, runtime, or automation edits. Connector SHA-checked claim; coord.sh NOT_RUN (Git transport DNS failure).
+NOTE: Quiet door #5 CLOSED 6/6. Walkers dead. Not pass 8. Φ [GAP]. Existing relationship questions packet at 8a2bac1692f2e99092ed5e1611e8caf49ec7b0a3. User-requested questions door HELD by Astra-evidence. Pass 1 plan published at 475a4f1a6ac5dac68362e688c776a28f0fa409bf; History-index link at 7ba7cc39d0867d8dab03eee74349d61726311041. Plan blob f4a5bd5db5e689d96cf06072703bfa73a68b0467 verified against the prepared publication copy. PLAN ONLY; awaiting human proceed. Review execution, mapper response, and independent adjudication NOT_RUN. No maps, law, emission, runtime, or automation edits. Connector SHA-checked claim/publication; coord.sh NOT_RUN (Git transport DNS failure).
