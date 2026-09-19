@@ -1,6 +1,6 @@
 # Quiet door #4 (live law) — Pass 3 PLAN
 
-**Status:** PLAN only. Not run.  
+**Status:** EXECUTED — grain on `docs/kit/quiet-door-4-ascii.md`. Pair untouched. Emission `[GAP]`.  
 **Station:** kit (HELD Grok-kit).  
 **Object:** live-law grain — header pair vs IMPLEMENTATION LAW vs transports.  
 **Authority:** [`quiet-door-4-ascii.md`](quiet-door-4-ascii.md) passes 1–2. Live-law file as written. `coord.sh which`.  

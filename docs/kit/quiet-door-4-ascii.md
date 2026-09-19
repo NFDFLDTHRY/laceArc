@@ -2,7 +2,7 @@
 
 **Object:** `docs/law-why-these-documents.md`  
 **Station:** kit (reading). Live law wins on the door.  
-**Executed:** [quiet-door-4-pass-1-plan.md](quiet-door-4-pass-1-plan.md) · [quiet-door-4-pass-2-plan.md](quiet-door-4-pass-2-plan.md).  
+**Executed:** [quiet-door-4-pass-1-plan.md](quiet-door-4-pass-1-plan.md) · [quiet-door-4-pass-2-plan.md](quiet-door-4-pass-2-plan.md) · [quiet-door-4-pass-3-plan.md](quiet-door-4-pass-3-plan.md).  
 **Not:** live law. Not Hands. Not the header pair. Not door #3 pass 7.  
 **Emission:** `[GAP]`. No `src/`. Live-law bytes untouched.
 
@@ -110,3 +110,27 @@ G2 stays `[GAP]`.
 | T2 | L3 Break = edit the pair; L6 Break = exists as accepted |
 | T3 | Spine left in place |
 | T4 | Live-law bytes untouched |
+
+## Pass 3 — grain
+
+Exists is not accepted. Copies lag. This file wins. The pair is human.
+
+| Source | Says | `which` | Collapse would look like |
+|---|---|---|---|
+| Header pair | both sentences live here; agent must not edit | law | pick a winner and rewrite the file |
+| Line 10 (“exists”) | implementation forbidden until `pointer-emission.md` exists | law | treat existence as the gate |
+| IMPLEMENTATION LAW (“accepted”) | code may appear when the human has accepted the file | law | treat DRAFT as accepted |
+| `staking-the-workspace.md` | original stake this file discharges | law | treat staking as the winner over live law |
+| `AGENTS.md` | standing orders; must cite this file | law | treat AGENTS as live law |
+| kit `agent-control.md` | transport copy; may lag | kit | treat the copy as winner |
+| kit `grok-bot-profile.md` | paste block; may lag | kit | friendlier paraphrase replaces the ASCII |
+| `pointer-emission.md` | DRAFT; not accepted; Φ `[GAP]` | law | existence = acceptance |
+
+## Pass 3 deltas
+
+| Ticket | Action |
+|---|---|
+| T1 | Eight-row grain |
+| T2 | Exists ≠ accepted |
+| T3 | Transports `which` = kit; they lag |
+| T4 | Pair unnamed-as-winner; live-law bytes untouched |
