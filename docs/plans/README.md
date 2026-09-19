@@ -4,6 +4,7 @@
 
 | File | Job |
 |---|---|
+| [math-execution-model-pass-4-plan.md](math-execution-model-pass-4-plan.md) | `[PLAN]` Pass 4: **adversarial non-examples** (+ optional D1 prefixes) under Pass 2/3; Φ `[GAP]`; not an emitter |
 | [../math-execution-model-pass-3-witness.md](../math-execution-model-pass-3-witness.md) | **EXECUTED** Pass 3 Graphic D **witness** under Pass 2 partial algebra; Φ `[GAP]`; not an emitter |
 | [../math-execution-model.md](../math-execution-model.md) | **EXECUTED** Pass 2 sealed **partial** math-execution model — Arrive/WORD; Star view; Φ `[GAP]`; no `src/` |
 | [math-execution-model-pass-3-plan.md](math-execution-model-pass-3-plan.md) | `[PLAN]` Pass 3 (executed): Graphic D witness → [`../math-execution-model-pass-3-witness.md`](../math-execution-model-pass-3-witness.md); Φ `[GAP]` |
