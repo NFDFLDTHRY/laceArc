@@ -1,7 +1,7 @@
-STATUS: HELD
+STATUS: FREE
 STATION: kit
 OWNS: docs/kit/** .claude/**
-AGENT: Grok-kit
-BASE: 1fcada25a43c88b3328cb529befff2c531ba28d9
-SINCE: 2026-09-19T06:05:04Z
-NOTE: Cold doors pass 6 EXECUTED. Remainder stamped. Renderer PAUSED. Rust SHUT. Φ [GAP].
+AGENT: -
+BASE: -
+SINCE: -
+NOTE: Cold doors pass 6 EXECUTED. Kit FREE. Remainder is other stations. Φ [GAP].
