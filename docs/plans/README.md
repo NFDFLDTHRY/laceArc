@@ -4,7 +4,8 @@
 
 | File | Job |
 |---|---|
-| [math-execution-model-pass-2-plan.md](math-execution-model-pass-2-plan.md) | `[PLAN]` Pass 2: write sealed **partial** math-execution model (`docs/math-execution-model.md`); Φ `[GAP]`; authorized by Pass 1 READY-PARTIAL |
+| [../math-execution-model.md](../math-execution-model.md) | **EXECUTED** Pass 2 sealed **partial** math-execution model — Arrive/WORD; Star view; Φ `[GAP]`; no `src/` |
+| [math-execution-model-pass-2-plan.md](math-execution-model-pass-2-plan.md) | `[PLAN]` Pass 2 (executed): sealed partial model → [`../math-execution-model.md`](../math-execution-model.md); Φ `[GAP]` |
 | [math-execution-problem-map-pass-1.md](math-execution-problem-map-pass-1.md) | **EXECUTED** problem map for math-execution Pass 1 — READY-PARTIAL ∧ BLOCKED-COMPLETE; Φ `[GAP]`; not a formal model |
 | [rust-nostd-crate-map.md](rust-nostd-crate-map.md) | first-party crate *tree* |
 | [rust-nostd-branch-contracts.md](rust-nostd-branch-contracts.md) | serial *birth cards* |
