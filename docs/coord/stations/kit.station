@@ -1,7 +1,7 @@
-STATUS: FREE
+STATUS: HELD
 STATION: kit
 OWNS: docs/kit/** .claude/**
-AGENT: -
-BASE: -
-SINCE: -
-NOTE: Court door CLOSED 6/6. Kit FREE. Not door #4. Φ [GAP].
+AGENT: Grok-kit
+BASE: 2c66d6b09b0c2ec0728331c89c5fc2f3a3d2a441
+SINCE: 2026-09-19T07:04:21Z
+NOTE: Live-law door pass 1 PLAN. Object docs/law-why-these-documents.md. Door untouched. Not law rewrite. Φ [GAP].
