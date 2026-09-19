@@ -4,6 +4,8 @@
 
 | File | Job |
 |---|---|
+| [math-execution-wasm-crosswalk-pass-2-reading.md](math-execution-wasm-crosswalk-pass-2-reading.md) | **EXECUTED** math-execution × WASM **KEEP/FORBID/SILENT reading**; Φ `[GAP]`; bridge still blocked |
+| [math-execution-wasm-crosswalk-pass-2-plan.md](math-execution-wasm-crosswalk-pass-2-plan.md) | `[PLAN]` Pass 2 (executed): reading → [`math-execution-wasm-crosswalk-pass-2-reading.md`](math-execution-wasm-crosswalk-pass-2-reading.md); Φ `[GAP]`; bridge blocked |
 | [math-execution-wasm-crosswalk-pass-1.md](math-execution-wasm-crosswalk-pass-1.md) | **EXECUTED** math-execution × WASM Spec 3.0 **problem map**; sealed stack never cited WASM; READY-PARTIAL-CROSSWALK ∧ BLOCKED-BRIDGE-COMPLETE; Φ `[GAP]` |
 | [math-execution-wasm-crosswalk-pass-1-plan.md](math-execution-wasm-crosswalk-pass-1-plan.md) | `[PLAN]` Pass 1 (executed): problem map → [`math-execution-wasm-crosswalk-pass-1.md`](math-execution-wasm-crosswalk-pass-1.md); Φ `[GAP]` |
 | [../math-execution-model-pass-6-arrival.md](../math-execution-model-pass-6-arrival.md) | **EXECUTED** Pass 6 Contract II **Arrival** reading (thin feed; zero own store); Φ `[GAP]`; G1 open; not an emitter |
