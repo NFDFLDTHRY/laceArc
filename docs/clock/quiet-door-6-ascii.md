@@ -2,7 +2,7 @@
 
 **Object:** `docs/clock/README.md`  
 **Station:** hologram. There is no clock station.  
-**Executed:** [quiet-door-6-pass-1-plan.md](quiet-door-6-pass-1-plan.md) · [quiet-door-6-pass-2-plan.md](quiet-door-6-pass-2-plan.md) · [quiet-door-6-pass-3-plan.md](quiet-door-6-pass-3-plan.md) · [quiet-door-6-pass-4-plan.md](quiet-door-6-pass-4-plan.md).  
+**Executed:** [quiet-door-6-pass-1-plan.md](quiet-door-6-pass-1-plan.md) · [quiet-door-6-pass-2-plan.md](quiet-door-6-pass-2-plan.md) · [quiet-door-6-pass-3-plan.md](quiet-door-6-pass-3-plan.md) · [quiet-door-6-pass-4-plan.md](quiet-door-6-pass-4-plan.md) · [quiet-door-6-pass-5-plan.md](quiet-door-6-pass-5-plan.md).  
 **Not:** Core. Not Graphic D. Not Hands. Not door #5 pass 7. Not projection iter 5.  
 **Emission:** `[GAP]`. No `src/`. Clock door bytes untouched. HTML untouched. Renderer unclaimed.
 
@@ -196,3 +196,26 @@ All `New machine?` = no.
 | T2 | Eight-row register; all New machine?=no |
 | T3 | Clock ↔ Hands ↔ renderer |
 | T4 | Door + HTML + Hands untouched |
+
+## Pass 5 — seam
+
+Five files. None becomes another.
+
+| File | Names | Stores | Writes L? | Becomes the other if |
+|---|---|---|---|---|
+| `docs/clock/README.md` | Layer III; not Core; cubes not WORD | no | no | treated as Hands |
+| `docs/graphics/README.md` | the four graphics | yes — Hands | no | treated as a viewer |
+| `docs/law-why-these-documents.md` | why the stakes; how code may exist | yes — live law | no | treated as a clock brief |
+| `docs/shadow-clock-gearing.html` | frozen Layer III viewer | no | no | claimed from hologram |
+| `docs/clock/quiet-door-6-ascii.md` | the clock door as a reading | no | no | treated as Hands or as HTML |
+
+Clock names. Hands stores. Law stores. Frozen viewer stays renderer. This file reads the clock door.
+
+## Pass 5 deltas
+
+| Ticket | Action |
+|---|---|
+| T1 | Five-file seam |
+| T2 | None of the five rewritten |
+| T3 | This reading is not the store |
+| T4 | Door / Hands / live law / HTML untouched |
