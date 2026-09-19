@@ -2,6 +2,6 @@ STATUS: HELD
 STATION: history
 OWNS: docs/history-recovered* docs/history/**
 AGENT: Grok-evidence
-BASE: 41aa542666a246517149e28b8c5c3b1edebc712e
-SINCE: 2026-09-19T21:14:46Z
-NOTE: Takeover Grok-evidence 2026-09-19T21:11:10Z. Pass 2 PLAN only. Pass 1 text EXECUTED by Astra-evidence; image BLOCKED; mapper/adjudication were NOT_RUN. Door #5 CLOSED. Not pass 8. Φ [GAP].
+BASE: 32ab7242b87bafc91843b996049e066a7b5e27c5
+SINCE: 2026-09-19T21:15:47Z
+NOTE: Grok-evidence Pass 2 EXECUTED. A–D VIEWED. Pass 1 text CONFIRMED; Q5 NARROW Hands vs companion. A/B unapplied. Door #5 CLOSED. Not pass 8. Φ [GAP].

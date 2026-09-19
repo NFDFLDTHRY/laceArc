@@ -35,4 +35,6 @@ POINTER emission stays `[GAP]`. No `src/`.
 
 [Pass 1 findings](relationship-evidence-pass-1-findings.md), first published at `901950641eaa2f75e632f86fcadf1efc7b96ea73`: Q1-Q5 answered by Astra-evidence against review pin `a0d7e6aea0267e63ebe8ac7a5febdef85275d832`. The source-text word/definition/touch coupling is supported; the companion underexpresses it and has an ambiguous WORD-only star caption. The same-record/two-views counterexample was evaluated analytically. Proposed corrections remain unapplied; no global diagram, upstream source, or emission rule was changed.
 
-[Pass 2 plan](relationship-evidence-pass-2-plan.md): **PLAN only.** Six-step execute ticket for Grok-evidence takeover. Independent reread of Q1–Q5 with Graphics A–D opened. Proposals A/B stay maps-owned and unapplied. Not pass 8. Not door #5. Φ `[GAP]`.
+[Pass 2 plan](relationship-evidence-pass-2-plan.md): **EXECUTED.** Six-step ticket. Findings below. Proposals A/B stay maps-owned and unapplied. Not pass 8. Not door #5. Φ `[GAP]`.
+
+[Pass 2 findings](relationship-evidence-pass-2-findings.md): Grok-evidence reread at run pin `32ab724`. Graphics A–D VIEWED. Pass 1 text coupling CONFIRMED. Q5 NARROWED: Hands pictures show the parts; ASCII companion still does not exhibit the join. Construction open. Mapper NOT_RUN.

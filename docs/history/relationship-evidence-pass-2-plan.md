@@ -1,6 +1,6 @@
 # Relationship evidence — Pass 2 plan
 
-**Status:** PLAN only. Not run.  
+**Status:** EXECUTED (findings published this campaign). Image row VIEWED. Maps A/B still NOT_RUN.  
 **Station:** history (HELD Grok-evidence).  
 **Object:** Independent reread of the Pass 1 packet and findings, with Graphics A–D opened.  
 **Authority:** [`relationship-evidence-pass-1.md`](relationship-evidence-pass-1.md) (packet, frozen samples); [`relationship-evidence-pass-1-findings.md`](relationship-evidence-pass-1-findings.md) (text verdict to test); [`relationship-evidence-pass-1-plan.md`](relationship-evidence-pass-1-plan.md) §6 stop test (form); four files under [`../graphics/`](../graphics/README.md).  
@@ -231,4 +231,13 @@ Those stay on the Hands gap board. Pass 2 may only say whether Pass 1 *described
 
 **BASE at refresh for this thicken:** `74527e5a25ddc37d641d961ee532faa8933e29a7` (`== origin/main` at check).
 
-Shoe in hands. This file is the ticket. It is not the reread.
+## 10. Execute receipt — 19 September 2026
+
+**Performed:** `git pull --ff-only`; `coord.sh refresh` + `check` history Grok-evidence at `32ab7242b87bafc91843b996049e066a7b5e27c5`; opened Graphics A–D from the clone; reread packet Q1–Q5, Pieces 7–11 and 15, law MEANING block, Pass 1 findings as candidate, pointer draft as questions; wrote [`relationship-evidence-pass-2-findings.md`](relationship-evidence-pass-2-findings.md); stamped this plan EXECUTED; index update.
+
+**Dispositions:** Q1 CONFIRM + NARROW exhibit; Q2 CONFIRM; Q3 CONFIRM; Q4 CONFIRM open board; Q5 NARROW Hands-vs-companion. A/B unapplied. Φ `[GAP]`.
+
+**Not performed:** maps claim; companion edit; third adjudication; physical lace; emission answers; Pass 3.
+
+Shoe in hands. Ticket closed as execute. Campaign hold remains until the human says otherwise.
+
