@@ -1,6 +1,6 @@
 # Verification iteration 2 — the instruments
 
-**Status:** `[PROPOSAL]`. **Pass 1 EXECUTED** at `9d27286`, **completed at `823bef9`** — the first cut measured two instruments of nine and stated a thesis one mode too narrow; §1.4–§1.6 and §2 are that correction. Passes 2–6 NOT_RUN.
+**Status:** **CLOSED** — [the receipt](verification-iteration-2-receipt.md). Passes 1–6 EXECUTED; E1, E2 and E5 are open human rulings. Pass 1 EXECUTED at `9d27286`, **completed at `823bef9`** — the first cut measured two instruments of nine and stated a thesis one mode too narrow; §1.4–§1.6 and §2 are that correction. Passes 2–6 NOT_RUN.
 **Station:** maps. **Emission:** `[GAP]`. No `src/`.
 **Previous:** [iteration 1](verification-iteration-1-plan.md), CLOSED — [its receipt](verification-iteration-1-receipt.md). Iteration 0 was [the restructure](restructure-plan.md).
 
