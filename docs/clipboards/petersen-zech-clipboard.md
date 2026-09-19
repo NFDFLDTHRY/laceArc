@@ -288,6 +288,23 @@ PDF is **PRESENT** (do not narrate absent). Pass 1 receipt: `refs/local/petersen
 
 
 
+## Pass 4 receipt
+
+| Field | Content |
+|---|---|
+| Status | **EXECUTED** |
+| Artifact | [`petersen-zech-ascii-machinery.md`](petersen-zech-ascii-machinery.md) — SOURCE MACHINERY overview + panels **P-A1…P-A9** (9 panels) |
+| P4-X | **9/9 PASS · FIX 0** (matrix in ascii file § P4-X; stamp/Implements/fence/overview all PASS) |
+| Emission | `[GAP]` — no panel closes Φ |
+| Law | KEEP fn≠construction; FORBID star=neuron; FORBID train-w as Lace history (P-A8); FORBID NTK as store (P-A9) |
+| Core ASCII | Untouched — `docs/systems-manifest-ascii.md` not edited; not conflated |
+| PDF | Never staged (gitignored `refs/local/…`) |
+| Algorithms | M-A1…M-A9 bodies unchanged (cite only) |
+
+**P4-X summary:** each panel Implements reverse-walk · Fence book-only · Stamp match · Overview attach → all **PASS**. P-A8 fence is parameter-update only (not Lace append); P-A9 fence is kernel analysis only (not Graphic D store).
+
+Optional pointer under P3-M: Pass 4 ASCII diagrams of Wave A live in [petersen-zech-ascii-machinery.md](petersen-zech-ascii-machinery.md) (P-A1…P-A9). P3-M teeth unchanged.
+
 ## Pass 3 — P3-M mechanism coherence mesh
 
 Mechanism cards: [petersen-zech-mechanisms.md](petersen-zech-mechanisms.md). One tooth per Wave A card. Pass 1–2 morals / FM-P* / D1–D7 unchanged. CONFLICT would halt; none found.
@@ -307,6 +324,8 @@ Mechanism cards: [petersen-zech-mechanisms.md](petersen-zech-mechanisms.md). One
 **P3-5S five-stakes:** skip — no PAGE 4/5 drift; mesh does not soften KEEP function≠construction or FORBID star=neuron / train-w / GNN / NTK.
 
 **Counts:** CONFIRM 7 · REFINE 2 · CONFLICT 0.
+
+**Pass 4 ASCII:** see [petersen-zech-ascii-machinery.md](petersen-zech-ascii-machinery.md) (P-A1…P-A9). P3-M teeth unchanged.
 
 ## Source and law receipt
 

@@ -1,6 +1,6 @@
 # Petersen & Zech — mechanism cards (constructive algorithms)
 
-**Status:** Pass 3 EXECUTED (Wave A M-A1…M-A9; Waves B–D deferred one-line seeds). ASCII deferred (no `petersen-zech-ascii-machinery.md` this pass). Emission `[GAP]`.  
+**Status:** Pass 3 EXECUTED (Wave A M-A1…M-A9; Waves B–D deferred one-line seeds). **Pass 4 ASCII:** see [`petersen-zech-ascii-machinery.md`](petersen-zech-ascii-machinery.md) (P-A1…P-A9). Algorithms unchanged. Emission `[GAP]`.  
 **Source:** Philipp Petersen & Jakob Zech, *Mathematical theory of deep learning*, arXiv:2407.18384v4 [cs.LG] · cover 16 Jan 2026  
 **PDF:** `refs/local/petersen-zech-mathematical-theory-deep-learning.pdf` → attachment `a8505f3de280cb1c6f9742161471fadc52c21340afc05efe4549bd58c84383fa.pdf` (**333** pp., text layer; **never git-add**)  
 **SHA-256:** `a8505f3de280cb1c6f9742161471fadc52c21340afc05efe4549bd58c84383fa`  

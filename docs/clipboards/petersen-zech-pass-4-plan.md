@@ -1,6 +1,7 @@
 # Petersen & Zech pass 4 — rigorous ASCII map of Wave A system mechanisms
 
-**Status:** PLANNED — not executed. Emission `[GAP]`.  
+**Status:** **EXECUTED** — Pass 4 complete. Emission `[GAP]`.
+**Execution receipt:** artifact `docs/clipboards/petersen-zech-ascii-machinery.md` (overview + P-A1…P-A9); P4-X 9/9 PASS · FIX 0; clipboard Pass 4 receipt; M-A* algorithms unchanged; Core ASCII / map / law / graphics / src untouched; PDF never staged.  
 **Station:** clipboards (HELD `reference-Mapper`)  
 **Base at plan:** refresh to current `origin/main` before execute  
 **Book:** Philipp Petersen & Jakob Zech, *Mathematical theory of deep learning*  
@@ -245,11 +246,7 @@ Ask before push.
 
 ## Execution (when you say go pass 4)
 
-1. Refresh claim.  
-2. T1–T7.  
-3. Mark plan EXECUTED.  
-4. Check · commit · release.  
-5. Stop.
+**Done.** Refresh → T1–T7 → plan EXECUTED → check · commit · release · STOP. Do not push.
 
 ---
 
