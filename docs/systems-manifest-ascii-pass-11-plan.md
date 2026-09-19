@@ -1,6 +1,6 @@
 # Systems-manifest ASCII pass 11 plan — Update wave Pass 5 · Shadow Order Proposal + light accuracy
 
-**Status:** **HELD** (plan only · NOT EXECUTED). Emission `[GAP]`.  
+**Status:** **EXECUTED** (2026-09-18 PT). Emission `[GAP]`.  
 **Series:** Pass **11** (linear executed-passes list) = **Update wave · Pass 5**. Subtitle: both names.  
 **Station:** maps (catch-all for `docs/*.md` at court root). Holder: **reference-Mapper**. Keep maps **HELD**.  
 **Authority:** `docs/systems-manifest.md` (Contracts I / II / Layer III; Pieces unchanged).  
