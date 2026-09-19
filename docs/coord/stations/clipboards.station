@@ -4,4 +4,4 @@ OWNS: docs/clipboards/**
 AGENT: -
 BASE: -
 SINCE: -
-NOTE: wasm-spec-3 Pass 2 EXECUTED (D1–D6 + D7; FM-W1…W9); station FREE
+NOTE: wasm-spec-3 Pass 3 EXECUTED (M-T1…M-T9 + P3-M); station FREE
