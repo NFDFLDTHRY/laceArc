@@ -24,6 +24,7 @@ Moved here in defrag pass 3.
 | projection-visual-pass-3-plan.md | Pass 3: worker bake + cheap lattice. wasm32 sysroot still missing. |
 | projection-visual-pass-4-plan.md | Pass 4: follow-tick camera + PWA. Executed. |
 | projection-visual-pass-5-plan.md | Pass 5: githack install path. Executed. |
+| projection-visual-pass-6-plan.md | Pass 6: HUD v6 + SW update reload. Executed. |
 
 **Install (PWA):** https://raw.githack.com/NFDFLDTHRY/laceArc/main/docs/clock/lace-projection.html  
 **Audit a tick:** SHA-pinned raw.githack. Do not Add-to-Home-Screen a SHA URL.

@@ -31,7 +31,7 @@ button.on{background:var(--cyan);color:#061018}
 .dock{position:absolute;left:0;right:0;bottom:0;padding:8px 10px calc(10px + env(safe-area-inset-bottom));background:#05070cf2;border-top:1px solid var(--line);display:flex;gap:8px;align-items:center}
 .dock input{flex:1}
 #phase{color:var(--dim);font-size:12px;white-space:nowrap}
-aside{position:absolute;right:8px;top:calc(52px + env(safe-area-inset-top));width:min(320px,42vw);max-height:40vh;overflow:auto;background:#0b1018f2;border:1px solid var(--line);border-radius:8px;padding:10px;font:11px/1.4 ui-monospace,monospace;color:#c9d7ea}
+aside{position:absolute;right:8px;top:calc(52px + env(safe-area-inset-top));width:min(320px,42vw);max-height:40vh;overflow:auto;background:#0b1018f2;border:1px solid var(--line);border-radius:8px;padding:10px;font:11px/1.4 ui-monospace,monospace;color:#c9d7ea;z-index:3}
 aside[hidden]{display:none}
 .stamp{color:#9b7bff;font-size:10px;letter-spacing:.08em}
 </style>
@@ -46,7 +46,7 @@ aside[hidden]{display:none}
 </div>
 <div class="hud">
   <header class="hit">
-    <h1>LAYER III · 3D + TIME · D1 GIVEN</h1>
+    <h1>LAYER III · 3D + TIME · D1 · v6</h1>
     <p>Install on githack <code>main</code>, not a SHA. Audit ticks stay SHA-pinned. Cubes are glyphs. No emitter. [GAP]</p>
   </header>
   <div class="modes hit">
@@ -70,6 +70,7 @@ holder  outside this box</aside>
     <button type="button" id="play">pause</button>
     <input id="t" type="range" min="0" max="10" step="0.02" value="0"/>
     <span id="phase">t=0000</span>
+    <span class="stamp">v6</span>
     <span class="stamp" id="nnstamp">WebNN ?</span>
     <span class="stamp" id="pwastamp">PWA ?</span>
     <span class="stamp">glyphs ≠ schema</span>
@@ -383,8 +384,15 @@ main().catch(err=>{
 })();
 if ("serviceWorker" in navigator) {
   navigator.serviceWorker.register("sw.js", { scope: "./" })
-    .then(() => { const e=document.getElementById("pwastamp"); if(e) e.textContent="PWA on"; })
+    .then(reg => {
+      const e=document.getElementById("pwastamp"); if(e) e.textContent="PWA on";
+      try { reg.update(); } catch(_){}
+    })
     .catch(() => { const e=document.getElementById("pwastamp"); if(e) e.textContent="PWA off"; });
+  navigator.serviceWorker.addEventListener("controllerchange", () => {
+    const e=document.getElementById("pwastamp"); if(e) e.textContent="PWA upd";
+    location.reload();
+  });
 } else {
   const e=document.getElementById("pwastamp"); if(e) e.textContent="PWA off";
 }
