@@ -11,7 +11,9 @@ These four images are the source of record for laceArc. The systems manifest is 
 
 Read them in that order for the story, or read graphic 4 first if you need the store.
 
-Graphic A ASCII spine (pass 1, companion): [`graphic-a-ascii.md`](graphic-a-ascii.md). Does not replace the PNG. Does not fill G2.
+Graphic A ASCII spine (four passes, companion): [`graphic-a-ascii.md`](graphic-a-ascii.md). Does not replace the PNG. Does not fill G2.
+
+Graphic B ASCII spine (pass 1, companion): [`graphic-b-ascii.md`](graphic-b-ascii.md). Does not replace the PNG. Does not fill G2.
 
 Hologram touches (not this directory): `docs/hologram/`. Those diagnose the holder. They are not a fifth graphic.
 

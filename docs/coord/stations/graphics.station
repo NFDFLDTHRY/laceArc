@@ -2,6 +2,6 @@ STATUS: HELD
 STATION: graphics
 OWNS: docs/graphics/** docs/graphics-close-reading.md
 AGENT: Grok-graphics
-BASE: 6be7d27ed6d65ccf8717852b98dddc54c20940e5
-SINCE: 2026-09-19T05:22:36Z
+BASE: abcd14b3ad4ec9a6a05a1accfca9c48a03764c66
+SINCE: 2026-09-19T05:24:02Z
 NOTE: Hands A–D + close-reading. Same strand as Graphic D. Not a second store. Φ [GAP].

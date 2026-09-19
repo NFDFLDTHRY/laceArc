@@ -1,13 +1,13 @@
 # Graphic B → ASCII systems diagram — Pass 1 PLAN
 
-**Status:** PLAN only. Not run. One act. Remainder queued.  
+**Status:** EXECUTED — `docs/graphics/graphic-b-ascii.md`. Emission `[GAP]`.  
 **Station:** graphics (HELD Grok-graphics).  
 **This ticket:** graphics ASCII **pass 5** = Graphic B **pass 1**. Graphic A’s four-pass map is closed. Do not reopen A.  
 **Authority:** `docs/graphics/mechanisms-in-3d.png` (original `13285.png`). Then `docs/graphics/README.md`. Bound panel names in `docs/systems-manifest.md` are **working inventory**, not a substitute for the PNG.  
 **Not authority:** Graphic A ASCII (`graphic-a-ascii.md`). Maps-station `docs/systems-manifest-ascii.md`. Layer III viewers.  
 **Emission:** `[GAP]`. No `src/`. PNG bytes stay put.
 
-A pass 4 said next graphic is a new ticket. The human named pass 5. Execute is not this tick.
+Execute landed: B1–B12 spine, B10/B11 `[X]`, G2 pointed not filled. Remainder still queued.
 
 ```
 pull/ff → refresh graphics
