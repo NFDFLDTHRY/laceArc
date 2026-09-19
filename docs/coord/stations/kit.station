@@ -1,7 +1,7 @@
-STATUS: HELD
+STATUS: FREE
 STATION: kit
 OWNS: docs/kit/** .claude/**
-AGENT: Grok-kit
-BASE: 263a7954735635c3135188751948e96c15818b45
-SINCE: 2026-09-19T06:43:46Z
-NOTE: Scanner-fix pass 6 EXECUTE pending. Receipt. Φ [GAP].
+AGENT: -
+BASE: -
+SINCE: -
+NOTE: Scanner-fix CLOSED 6/6. Kit FREE. LIVE ≠ idle. Φ [GAP].
