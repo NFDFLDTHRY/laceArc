@@ -2,6 +2,6 @@ STATUS: HELD
 STATION: kit
 OWNS: docs/kit/** .claude/**
 AGENT: Grok-kit
-BASE: fdd1788312086ca8534a7ac3eaf5f76d651f1bee
-SINCE: 2026-09-19T07:00:38Z
-NOTE: Court door pass 6 PLAN. Receipt. Pass 1–5 EXECUTED. Φ [GAP].
+BASE: 4f1644776ac5c6c6aea93d6b4fed5b10561d4009
+SINCE: 2026-09-19T07:01:15Z
+NOTE: Court door pass 6 EXECUTE pending. Receipt. Φ [GAP].

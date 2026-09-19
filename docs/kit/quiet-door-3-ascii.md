@@ -1,8 +1,9 @@
 # Quiet door #3 — Court ASCII
 
+**Status:** CLOSED 6/6. Receipt: [quiet-door-3-receipt.md](quiet-door-3-receipt.md).  
 **Object:** `docs/README.md`  
 **Station:** kit (reading). Law wins on the door.  
-**Executed:** [quiet-door-3-pass-1-plan.md](quiet-door-3-pass-1-plan.md) · [quiet-door-3-pass-2-plan.md](quiet-door-3-pass-2-plan.md) · [quiet-door-3-pass-3-plan.md](quiet-door-3-pass-3-plan.md) · [quiet-door-3-pass-4-plan.md](quiet-door-3-pass-4-plan.md) · [quiet-door-3-pass-5-plan.md](quiet-door-3-pass-5-plan.md).  
+**Executed:** [quiet-door-3-pass-1-plan.md](quiet-door-3-pass-1-plan.md) · [quiet-door-3-pass-2-plan.md](quiet-door-3-pass-2-plan.md) · [quiet-door-3-pass-3-plan.md](quiet-door-3-pass-3-plan.md) · [quiet-door-3-pass-4-plan.md](quiet-door-3-pass-4-plan.md) · [quiet-door-3-pass-5-plan.md](quiet-door-3-pass-5-plan.md) · [quiet-door-3-pass-6-plan.md](quiet-door-3-pass-6-plan.md).  
 **Not:** live law. Not Hands. Not Graphic D. Not cold-doors pass 7. Not door #1 pass 7.  
 **Emission:** `[GAP]`. No `src/`. Court door bytes untouched.
 

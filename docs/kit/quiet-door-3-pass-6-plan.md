@@ -1,6 +1,6 @@
 # Quiet door #3 (Court) — Pass 6 PLAN
 
-**Status:** PLAN only. Not run.  
+**Status:** EXECUTED — receipt on `docs/kit/quiet-door-3-receipt.md`. CLOSED 6/6. Court door unchanged. Emission `[GAP]`.  
 **Station:** kit (HELD Grok-kit).  
 **Object:** Court receipt. Close this iteration 6/6.  
 **Authority:** [`quiet-door-3-ascii.md`](quiet-door-3-ascii.md) passes 1–5. Court page as written.  
