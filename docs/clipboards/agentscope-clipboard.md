@@ -41,6 +41,22 @@ Completion of [the AgentScope clipboard prompt](../prompts/agentscope-clipboard-
 
 T5 five-stakes: **skip** — PAGE 5/5 source pins and KEEP/FORBID agree with this PDF.
 
+## Pass 2 receipt
+
+| Field | Value |
+|---|---|
+| Status | EXECUTED |
+| When | 2026-09-18 ~17:33 PT |
+| Station | clipboards · agent `reference-Mapper` |
+| Plan | [agentscope-pass-2-plan.md](agentscope-pass-2-plan.md) |
+| Hands skim | shoe → graphics A–D → systems-manifest → staking / law-why → reason-model-map §5 (A1–A5) → Pass 1 clipboard → five-stakes PAGE 5/5 (read-only; T5 skip) |
+| PDF | **PRESENT** — cite Pass 1: `refs/local/bi-et-al-agentscope-diagnosing-insights.pdf` → attachment `6464d69d…fd1e9.pdf`; **22** pp.; text layer yes; gitignored; never staged |
+| Product | D1–D6 leftovers (+ D7 Shadow miniature of staged diagnosis / ReAG build); A–X morals untouched |
+| Amended | reason-model-map · law · graphics · five-stakes · src/ · systems-manifest | **No** |
+| Emission | still `[GAP]` — no POINTER when / arity / adjacency |
+| T5 five-stakes | **skip** (default) |
+| D7 | **included** — §3.3 staged diagnosis + §3.1 ReAG construction paper steps; FORBID-as-Core-write; SILENT for Lace append |
+
 
 ## PAGE A — FAILURE TAXONOMY FOR THE HOLDER
 
@@ -164,6 +180,112 @@ A full text-layer search for whole-word lace, pointer/pointers, emission, and ap
 **Source anomaly retained:** Appendix B, Figure 6 **PDF p.21**, visibly labels Reasoning 36.0%, Control-flow 31.0%, and Action 36.0%, totaling 103.0%. Pass 1 re-sighted the figure text layer; inconsistency retained (not normalized). It does not change the holder/Core boundary.
 
 **Product:** diagnoses the steward, not the lace. All prior passes remain intact; this reading adds no Core mechanism.
+
+
+## Pass 2 deltas
+
+Pass 1 filled PAGE A–F, X against the PDF. These deltas are leftovers only. They do not invent emission. A–X morals are unchanged. Failure taxonomy stays **holder** `[H]` vocabulary.
+
+### D1 — What this clipboard is not
+
+- Not Core / not a sixth graphic.
+- Not `docs/pointer-emission.md` / not a Φ fill.
+- Not a rewrite of `docs/reason-model-map.md` §5.
+- Not a replacement for AGENTS.md or agent-control.
+- Not permission to store ReAG / ISR / neural-invariant text in Graphic D.
+- Not an import of AgentErrata / Who&When scores as Lace correctness.
+- Not a substitute for [clipboard-five-stakes.md](clipboard-five-stakes.md) PAGE 5/5 (admission boundary lives there too; D2 mirrors it).
+
+### D2 — ON THE SHOE / KEEP / FORBID / MAP ARROWS
+
+Mirrored from five-stakes PAGE 5/5 and Pass 1 morals. Book clipboard holds the page walk; this strip is the admission boundary in one place.
+
+```
+┌──────────────────────────────────────────────────────────────────────────┐
+│ ON THE SHOE                                                              │
+│   A steward can fail. The lace does not store the failure graph.         │
+│   Diagnoses the hands, not the cord.                                     │
+│                                                                          │
+│ KEEP                           FORBID                                    │
+│   failure taxonomy for         taxonomy / flags as Core types            │
+│     the HOLDER (A4)                                                      │
+│   trajectory as steward        trace order as Lace arrival order         │
+│     observation (A1)                                                     │
+│   ReAG as diagnostic           **ReAG rows in the 1D array** (A2)        │
+│     picture (A2)                                                         │
+│   neural predicates over       invariant text as stored meaning /        │
+│     holder traces (A3)           infallible proof (A3)                   │
+│                                                                          │
+│ MAP ARROWS                                                               │
+│   A4 taxonomy  ──[H]──►  steward review / AGENTS.md                      │
+│   A1 trajectory──obs──►  observation only (not strand arrival)           │
+│   A2 ReAG      ──[X]──►  Piece 5 / Piece 6                               │
+│   A3 neural    ──adj──►  adjacent diagnosis over holder                  │
+│   emission     ──[GAP]─► POINTER when / arity / adjacency unset          │
+│                                                                          │
+│ EMISSION settled? NO  [GAP]                                              │
+└──────────────────────────────────────────────────────────────────────────┘
+```
+
+### D3 — Failure modes (FM-A1…A9)
+
+| ID | Misread | Hands deadbolt | PDF pin (Pass 1 reuse) |
+|---|---|---|---|
+| FM-A1 | failure taxonomy ⇒ Core types / WORD kinds | KEEP taxonomy for the **HOLDER**; FORBID as Core types | Table 1 **PDF p.3**; App. A **PDF pp.18–21** (cite A/E) |
+| FM-A2 | trajectory step order ⇒ Lace arrival order | trajectory = steward observation; Piece 3 / C10 keep input occurrence order | Abstract **PDF p.1**; §3.1 **PDF pp.3–4** (cite B) |
+| FM-A3 | ReAG vertex ⇒ WORD; ReAG edge ⇒ POINTER | ReAG is diagnostic picture; **FORBID ReAG rows in the 1D array** | §3.1 **PDF pp.3–4**; §3.3 **PDF p.5** (cite C) |
+| FM-A4 | ISR / trajectory memory ⇒ Lace store | ISR is [H] machinery; not Graphic D index/memory | §3.1 **PDF pp.3–4** (ISR tuple; cite C) |
+| FM-A5 | neural invariant text ⇒ Core proof / stored meaning | LLM-judged predicates over holder traces; not Piece 14 meaning / not infallible proof | §3.2 **PDF p.4**; Fig.1 **PDF p.5**; App. A **PDF pp.18–21** (cite D) |
+| FM-A6 | LLM judge verdict ⇒ acceptance / Hands override | classifier = binary diagnostic candidate; Hands / human review win | §3.2 **PDF p.4** (`aligned()` as LLM binary classifier; cite D) |
+| FM-A7 | AgentErrata / Who&When metrics ⇒ Lace correctness score | metrics measure diagnosis tools, not strand correctness | Table 3 **PDF p.10** (SLA 31.35% / CA 45.87% GPT-5.1 w/o Solution; cite D); §4.1 Who&When **PDF p.6** |
+| FM-A8 | “decisive error” / first-mistake selection ⇒ POINTER when-rule | decisive ≠ first anomaly; selection ↛ POINTER when / arity / adjacency | §3.3 **PDF pp.5–6**; §5.1 **PDF p.9**; App. C **PDF p.22** (cite F/X) |
+| FM-A9 | appendix / 22-page remainder ⇒ hidden Core piece / Φ fill | remainder is evaluation + App. A–C diagnostics; no Lace operator; Φ stays `[GAP]` | App. A–C **PDF pp.18–22**; experiments **PDF pp.6–13** (cite F/A5) |
+
+No FM row left `[OPEN]`. Pins reused from Pass 1; `pdftotext -f 3 -l 6` re-sighted §3.1–§3.3 for D7 only.
+
+### D4 — Interface coherence
+
+Only A1/A4 outputs are kin to Hands inputs: observe the steward; label breaches with evidence under AGENTS.md / agent-control. A2/A3 are diagnostic pictures and predicates over the holder — they do not match any Core write (ReAG ↛ Piece 5/6; neural invariants ↛ stored meaning or proof). Nothing in the paper supplies POINTER when / arity / adjacency — `[GAP]` remains. Diagnosis ↛ strand operation. This paragraph does not close Φ.
+
+### D5 — Source gate (cite Pass 1)
+
+PDF is **PRESENT** (do not narrate absent). Pass 1 receipt: `refs/local/bi-et-al-agentscope-diagnosing-insights.pdf` → attachment `6464d69d81d4265aff0cab1e1affe160ef7af4c77ccc142436528f75ea3fd1e9.pdf`; **22** pages; text layer present (arXiv GenPDF / pikepdf); printed ↔ PDF page numbers coincide at cited loci; `git check-ignore` OK; **never `git add`**. Method this pass: reuse Pass 1 pins; `pdftotext -f 3 -l 6` for optional D7 eye-walk. Five-stakes PAGE 5/5 left untouched (T5 skip).
+
+### D6 — Sealed (still)
+
+- Invent POINTER when / arity / adjacency (Φ stays `[GAP]`)
+- Soften A2 FORBID (ReAG-in-array) or A1/A3/A4 holder boundaries
+- Amend reason-model-map, law, graphics, systems-manifest, or five-stakes from this clipboard
+- Add `src/` or edit Kauffman / Rowlands mechanism shelves
+- Git-add the PDF
+- Treat AGENTSCOPE tooling / AgentErrata scores as Lace Core
+- Pretend OCR / claim PDF absent when the file is present
+- Confuse this paper with other products named AgentScope (bind to arXiv:2609.02371v1)
+
+### D7 — Constructive miniature (Shadow only) — staged diagnosis / ReAG build
+
+**Stamp:** FORBID-as-Core-write · **SILENT for Lace append** · not a Graphic D scheduler · not Φ. Paper algorithm only (§3.1 / §3.3 **PDF pp.3–6**). Steps below are what the PDF states; no invented operators.
+
+**Stage 0 — ReAG construction (§3.1 / §3.3):**
+1. Instrument API calls, tool interactions, and system logs into candidate steps.
+2. Refine step boundaries with semantic parsing (LLM used selectively for reasoning / implicit actions).
+3. Represent each step as vertex `⟨id, role, content, ISR⟩` where ISR = (Intent/Context, Reasoning/Action, Signal/Validation).
+4. Add edges for control or data dependencies → DAG `G = {V, E}` (Reasoning-Action Graph).
+5. Use ISR as trajectory index/memory for long-context analysis (holder machinery, not Lace store).
+
+**Stage 1 — Failure mode detection (§3.3):**
+6. Apply neural invariant checks over the annotated graph (one check family per taxonomy mode; Appendix A).
+7. Retain candidate failures with supporting evidence; do not collapse to a single verdict yet.
+
+**Stage 2 — Decisive error judgment (§3.3):**
+8. Select the candidate whose **downstream impact** best explains the degraded outcome (not necessarily the first anomaly).
+9. Keep the verdict traceable to prior-stage evidence.
+
+**[OPEN] (paper continues; not settled for Lace):** exact instrumentation schema beyond the quadruple/ISR tuple; judge prompt variants beyond Fig.1 `aligned()`; recovery-cutoff alternative mentioned in §3.3 — out of scope here. Do **not** finish those from Lace.
+
+**Lace refusal:** this diagnoses the **holder** on paper. It does **not** append ReAG rows to Graphic D, does **not** store ISR as Lace memory, does **not** treat LLM judge verdicts as acceptance, and does **not** schedule POINTER emission.
+
+---
 
 ## Source and law receipt
 

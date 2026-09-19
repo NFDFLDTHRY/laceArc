@@ -1,6 +1,6 @@
 # AgentScope pass 2 — leftovers / failure modes / coherence (PDF present)
 
-**Status:** PLANNED — not executed. Emission `[GAP]`.  
+**Status:** EXECUTED — 2026-09-18 ~17:33 PT. Emission still `[GAP]`.  
 **Station:** clipboards (HELD `reference-Mapper`)  
 **Base at plan:** refresh to current `origin/main` before execute  
 **Paper:** Jiayi Bi et al., *Diagnosing with Insights: Structured Analysis of Agent Failures via Behavioral Abstractions*  
@@ -207,13 +207,23 @@ Ask before push.
 
 ---
 
-## Execution (when you say go pass 2)
+## Execution receipt
 
-1. Refresh claim.  
-2. T1–T4 (+ T6 if time; T5 only if asked).  
-3. Mark this plan EXECUTED.  
-4. Check · commit · release.  
-5. Stop.
+| Field | Value |
+|---|---|
+| Status | **EXECUTED** |
+| When | 2026-09-18 ~17:33 PT |
+| Agent | `reference-Mapper` |
+| Station | clipboards (refreshed → check OK → release after commit) |
+| Product | D1–D6 + D7 on `agentscope-clipboard.md`; A–X morals untouched |
+| T5 | skip (default) |
+| FM pins | FM-A1…A9 all pinned (Pass 1 reuse; no `[OPEN]`) |
+| Amended | reason-model-map · law · graphics · five-stakes · src/ · systems-manifest | **No** |
+| PDF | present; never staged |
+| Emission | still `[GAP]` |
+| Push | **not** pushed |
+
+Steps done: refresh claim → Hands skim → PDF gate → D1–D7 write → this plan EXECUTED → check · commit · release · STOP.
 
 ---
 
