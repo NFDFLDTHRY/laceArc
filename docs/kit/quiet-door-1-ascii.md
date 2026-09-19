@@ -2,7 +2,7 @@
 
 **Object:** `docs/kit/READ_ME_FIRST.md`  
 **Station:** kit.  
-**Executed:** [quiet-door-1-pass-1-plan.md](quiet-door-1-pass-1-plan.md) · [quiet-door-1-pass-2-plan.md](quiet-door-1-pass-2-plan.md).  
+**Executed:** [quiet-door-1-pass-1-plan.md](quiet-door-1-pass-1-plan.md) · [quiet-door-1-pass-2-plan.md](quiet-door-1-pass-2-plan.md) · [quiet-door-1-pass-3-plan.md](quiet-door-1-pass-3-plan.md).  
 **Not:** live law. Not Hands. Not Graphic D. Not cold-doors pass 7.  
 **Emission:** `[GAP]`. No `src/`. Package door bytes untouched.
 
@@ -109,3 +109,33 @@ D2/D3 are pins, not machines. G2 stays `[GAP]`.
 | T2 | D1 precondition; D2/D3 pins; D4/D7 constraints; D6 route |
 | T3 | Spine left in place |
 | T4 | Door bytes untouched |
+
+## Pass 3 — THEN / NOW / tip grain
+
+Cite cold-doors pass 5: pins resolve as objects. Tip-moved is not a defect in NOW. Pins were not retargeted.
+
+Execute tip `8deec20d6bd4b3c5f970b1510fd19b69951419eb`.
+
+| Fact | THEN `4fe984b` | NOW `044257c` | Tip |
+|---|---|---|---|
+| `docs/pointer-emission.md` | absent | present | present |
+| Status line if present | — (no file) | DRAFT; not accepted; `[GAP]` | DRAFT; not accepted; `[GAP]` |
+| `src/` | absent | absent | absent |
+| Package door present? | no | yes | yes |
+| STALE banner on the door? | — (no door) | yes — `STALE pin:` at line 3 | no — THEN/NOW labels; the old banner is *mentioned*, not current |
+| Live AGENTS + live law named? | files exist | files exist; STALE banner points at AGENTS | door opening names both at tip |
+
+Three times stay three times.
+
+Collapse that would look like: move NOW to HEAD; drop THEN; treat DRAFT as accepted.
+
+## Pass 3 deltas
+
+| Ticket | Action |
+|---|---|
+| T1 | Three-column grain |
+| T2 | THEN door absent; NOW STALE banner; tip labeled THEN/NOW |
+| T3 | Pins cited, not moved |
+| T4 | Pass 5 resolve cited, not redone |
+
+Queued (later passes on this door, not cold-doors 7): routing mechanism; companion seam; receipt.

@@ -1,6 +1,6 @@
 # Quiet door #1 (package) — Pass 3 PLAN
 
-**Status:** PLAN only. Not run.  
+**Status:** EXECUTED — grain on `docs/kit/quiet-door-1-ascii.md`. Package door unchanged. Pins not moved. Emission `[GAP]`.  
 **Station:** kit (HELD Grok-kit).  
 **Object:** quiet door #1 — THEN / NOW / tip grain.  
 **Authority:** [`READ_ME_FIRST.md`](READ_ME_FIRST.md) pins as written. Cold-doors pass 5 pin table (cite; do not redo resolve). Pass 1–2 on [`quiet-door-1-ascii.md`](quiet-door-1-ascii.md).  
