@@ -1,13 +1,13 @@
 # Graphic B → ASCII systems diagram — Pass 2 PLAN
 
-**Status:** PLAN only. Not run. One act. Remainder queued.  
+**Status:** EXECUTED — panel fields on `docs/graphics/graphic-b-ascii.md`. Emission `[GAP]`.  
 **Station:** graphics (HELD Grok-graphics).  
 **This ticket:** graphics ASCII **pass 6** = Graphic B **pass 2**.  
 **Authority:** `docs/graphics/mechanisms-in-3d.png`. Then the pass-1 spine [`graphic-b-ascii.md`](graphic-b-ascii.md).  
 **Not authority:** Graphic A field board. Manifest piece-field dumps. Maps-station ASCII.  
 **Emission:** `[GAP]`. No `src/`. PNG bytes stay put. Spine from pass 1 stays. A’s file stays closed.
 
-Pass 1 drew B1→B12. The human named pass 6. Execute is not this tick.
+Execute landed: twelve In / Does / Break / Gap rows. Remainder still queued.
 
 ```
 pull/ff → refresh graphics

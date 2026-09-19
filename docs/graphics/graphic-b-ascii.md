@@ -2,7 +2,7 @@
 
 **Not Graphic B.** [`mechanisms-in-3d.png`](mechanisms-in-3d.png) is the source. This is an ASCII reading of how the wire behaves and settles nothing the PNG does not.
 
-**Executed:** [pass 1](graphic-b-ascii-pass-1-plan.md).  
+**Executed:** [pass 1](graphic-b-ascii-pass-1-plan.md) · [pass 2](graphic-b-ascii-pass-2-plan.md).  
 **Station:** graphics.  
 **Store:** Graphic D. B is the mechanism reading of the same strand.  
 **Not this file:** Graphic A ASCII (`graphic-a-ascii.md` is closed), C, D1 tape, Hands-manifest spine (`docs/systems-manifest-ascii.md`), H×C×W oil, `src/`, POINTER emission answers.
@@ -144,4 +144,34 @@ HCC π, Cup C*, Water OBS do not appear here. A's file is not this file.
 | T3 | Fence: no Star table; 3D ≠ store; G2 left `[GAP]` |
 | T4 | Pointer from `docs/graphics/README.md` |
 
-Queued (not this file): per-panel fields; B7–B9 grain; mechanism map vs D types.
+## Pass 2 — panel fields
+
+Off Graphic B only. In / Does / Break / Gap. Not manifest piece fields. Not A's board.
+
+| # | Title | In | Does | Break | Gap |
+|---|---|---|---|---|---|
+| B1 | Continuous wire | the strand as one wire | grows only; past stays; no cuts / no resets | cut, reset, rewrite, or a second strand | — |
+| B2 | Wire through star / arrival | an arriving word | routes new wire through that word's star (or begins one) | parse the word away; skip the star | printed title on PNG `[GAP]` |
+| B3 | Star | passes of the same word | accumulates a persistent formation; not a point | collapse passes into one node; allocate a Star table | — |
+| B4 | Dictionary | definition text (specimen PIE → dessert → slice → whole → food) | that text is a route through other word stars; nothing stored as a gloss | store `PIE = dessert` | — |
+| B5 | Sequence is physical | an ordered series of words | exact word order = exact physical route; the sentence is this piece of wire | store the sentence as a unit; reorder for syntax | — |
+| B6 | Document feed | a longer raw sequence | punch-card input; no interpretation; the strand grows | isolate a per-document graph; interpret before routing | document-as-entry vs D types → B pass 4 |
+| B7 | Touch (thread, not attach) | new occurrence plus existing 3D structure | threads through the existing formation; does not sit on the outside | attach-only to the outside | grain → B pass 3 |
+| B8 | Touch remains | a touch just made | the touch is permanent Lace; later wire can re-enter it | drop the touch when the sentence ends; write a POINTER-when rule here | when a POINTER is appended `[GAP]` (G2) |
+| B9 | Star-inside-star traffic | many strands already through one star | interior crossings; none merged or lost | flatten the interior to a hub node | grain → B pass 3 |
+| B10 | Collapse / stored definition | the forbidden picture | `[X]` — stored gloss is not Lace | treat `PIE = "a dessert …"` as Core | — |
+| B11 | Graph is a shadow | a 2D node-edge drawing | `[X]` — that drawing is a projection, not Lace | treat the flat graph as the store | — |
+| B12 | Governing rule | an arriving word | Input word arrives. Route new wire through that word's star. Continue. | a second rule; stored meaning; parse away arrival | array-layer POINTER sentence is not on B12 |
+
+B10 / B11 have no constructive operator. Their Does is the prohibition.
+
+## Pass 2 deltas
+
+| Ticket | Action |
+|---|---|
+| T1 | Twelve In / Does / Break / Gap rows |
+| T2 | B10 / B11 stay anti-model |
+| T3 | G2 pointed from B8, not filled |
+| T4 | Spine above this section left in place |
+
+Queued (not this file): B7–B9 grain; mechanism map vs D types.
