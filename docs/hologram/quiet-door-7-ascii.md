@@ -2,7 +2,7 @@
 
 **Object:** `docs/hologram/README.md`  
 **Station:** hologram.  
-**Executed:** [quiet-door-7-pass-1-plan.md](quiet-door-7-pass-1-plan.md) · [quiet-door-7-pass-2-plan.md](quiet-door-7-pass-2-plan.md).  
+**Executed:** [quiet-door-7-pass-1-plan.md](quiet-door-7-pass-1-plan.md) · [quiet-door-7-pass-2-plan.md](quiet-door-7-pass-2-plan.md) · [quiet-door-7-pass-3-plan.md](quiet-door-7-pass-3-plan.md).  
 **Not:** Core. Not Graphic E. Not Graphics A–D. Not Hands. Not door #6 pass 7. Not projection iter 5.  
 **Emission:** `[GAP]`. No `src/`. Hologram door bytes untouched. HTML untouched. Renderer unclaimed. Door #6 CLOSED.
 
@@ -111,4 +111,28 @@ G2 stays `[GAP]`.
 | T1 | Eight In / Does / Break / Gap / Role rows |
 | T2 | Hg5 Break = lookrefs as Graphic E; Hg7 Break = rewrite HTML |
 | T3 | Spine left in place |
+| T4 | Door + HTML + Hands + Clock untouched |
+
+## Pass 3 — grain
+
+Touches diagnose. Hands stores. Renderer owns HTML. Primitives catalog shapes. Those are not the same column.
+
+| Kind | Says | `which` | Collapse would look like |
+|---|---|---|---|
+| Hologram door | touches; not Graphics A–D; do not store | hologram | treat the index as Hands |
+| visual-primitives catalog | camera vocabulary; CTC anti-model | hologram | CTC as Core |
+| scene lookrefs (batch 2) | canvas follows this set | hologram | lookrefs as Graphic E |
+| ASTRA chrome (batch 1) | instruments only; not runtime | hologram | ASTRA as Lace runtime |
+| `nostd-pipeline.html` | Layer III canvas named here | renderer | rewrite HTML from hologram |
+| Hands (four graphics) | source of record | graphics | cubes as WORD rows |
+| Clock door (CLOSED) | Layer III index; not this iteration | hologram | reopen door #6 |
+| Frozen viewer | `docs/shadow-clock-gearing.html` | renderer | claim renderer from hologram |
+
+## Pass 3 deltas
+
+| Ticket | Action |
+|---|---|
+| T1 | Eight-row grain |
+| T2 | Touches ≠ Hands ≠ renderer ≠ primitives |
+| T3 | Lookrefs still not Graphic E |
 | T4 | Door + HTML + Hands + Clock untouched |
