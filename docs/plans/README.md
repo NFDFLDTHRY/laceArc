@@ -4,6 +4,8 @@
 
 | File | Job |
 |---|---|
+| [../math-execution-model-pass-5-projections.md](../math-execution-model-pass-5-projections.md) | **EXECUTED** Pass 5 Graphics A–C **projection readings** under Pass 2 π / Contract III; Φ `[GAP]`; not an emitter |
+| [math-execution-model-pass-5-plan.md](math-execution-model-pass-5-plan.md) | `[PLAN]` Pass 5 (executed): A–C projections → [`../math-execution-model-pass-5-projections.md`](../math-execution-model-pass-5-projections.md); Φ `[GAP]` |
 | [../math-execution-model-pass-4-adversarial.md](../math-execution-model-pass-4-adversarial.md) | **EXECUTED** Pass 4 **adversarial non-examples** under Pass 2/3; Φ `[GAP]`; not an emitter |
 | [math-execution-model-pass-4-plan.md](math-execution-model-pass-4-plan.md) | `[PLAN]` Pass 4 (executed): adversarial catalog → [`../math-execution-model-pass-4-adversarial.md`](../math-execution-model-pass-4-adversarial.md); Φ `[GAP]` |
 | [../math-execution-model-pass-3-witness.md](../math-execution-model-pass-3-witness.md) | **EXECUTED** Pass 3 Graphic D **witness** under Pass 2 partial algebra; Φ `[GAP]`; not an emitter |
