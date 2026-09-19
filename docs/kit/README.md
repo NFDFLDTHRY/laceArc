@@ -31,6 +31,7 @@ Portable steward controls. Not Hands. Not Graphic D. Nothing here is a source of
 | [quiet-door-3-pass-1-plan.md](quiet-door-3-pass-1-plan.md) | Door #3 (Court) pass 1: ASCII spine of docs/README.md | EXECUTED |
 | [quiet-door-3-pass-2-plan.md](quiet-door-3-pass-2-plan.md) | Door #3 pass 2: In / Does / Break / Gap | EXECUTED |
 | [quiet-door-3-pass-3-plan.md](quiet-door-3-pass-3-plan.md) | Door #3 pass 3: Hands vs law vs maps grain | EXECUTED |
+| [quiet-door-3-pass-4-plan.md](quiet-door-3-pass-4-plan.md) | Door #3 pass 4 PLAN: court indexes, law stores | **PLAN only. Not run** |
 | [quiet-door-3-ascii.md](quiet-door-3-ascii.md) | Door #3 ASCII companion. Does not replace the court. Does not fill G2 | pass 1–3 |
 | [agent-control.md](agent-control.md) | Portable standing prompt: the staking law verbatim, then the operating controls C01–C12 | DATED transport at `e21cf39`; [live law](../law-why-these-documents.md) wins |
 | [agent-task-template.md](agent-task-template.md) | One-task, adjudication, proof-contract and handoff forms | live |
