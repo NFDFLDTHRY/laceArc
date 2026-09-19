@@ -1,6 +1,6 @@
 # Verification iteration 4, pass 5 — the docket
 
-**Status:** `[PLAN]`. **Station:** maps writes the docket; **the rulings are the human's.** **Emission:** `[GAP]`. No `src/`.
+**Status:** **EXECUTED.** [Record](verification-iter4-pass-5-findings.md) — **four applied, eight still the human's.** **Station:** maps writes the docket; **the rulings are the human's.** **Emission:** `[GAP]`. No `src/`.
 **Iteration:** [iteration 4](verification-iteration-4-plan.md). **Prior:** [pass 4 findings](verification-iter4-pass-4-findings.md).
 **Board pinned at:** `a36acfc`.
 

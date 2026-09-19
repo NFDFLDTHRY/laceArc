@@ -1,6 +1,6 @@
 # Verification iteration 4 — the state of the tree
 
-**Status:** `[PROPOSAL]`. **Passes 1–4 EXECUTED**; passes 5–6 NOT_RUN.
+**Status:** `[PROPOSAL]`. **Passes 1–5 EXECUTED**; pass 6 NOT_RUN.
 **Station:** maps. **Emission:** `[GAP]`. No `src/`.
 **Previous:** [iteration 3](verification-iteration-3-receipt.md), CLOSED. Before it, [2](verification-iteration-2-receipt.md), [1](verification-iteration-1-receipt.md) and [the restructure](restructure-plan.md).
 
@@ -123,7 +123,7 @@ Ownership is a property of paths and it survived doubling. **Navigation is a pro
 | **2** | maps | **Read the 106.** Which are genuinely stranded, which are campaign-internal by design, which are superseded? §3's falsifier. **EXECUTED** — [findings](verification-iter4-pass-2-findings.md): three structures, not one |
 | **3** | maps | ~~**Have the shelves outgrown a flat index?** A door that lists 84 rows is not a door~~ — **the premise was false; no door in this tree lists 84 rows.** [Plan](verification-iter4-pass-3-plan.md) §0 says why. **EXECUTED** — [findings](verification-iter4-pass-3-findings.md): document siblings, not doors, are what keep provenance reachable |
 | **4** | kit + coord — **evidence for a ruling** | Re-open `D1`/`D2` against §2's result. Also: what would keep a door current without gating. **EXECUTED** — [findings](verification-iter4-pass-4-findings.md): `D1`/`D2` hold on a replay neither iteration had run; nothing has ever kept a door current |
-| **5** | — **human** | The five law items still open from iteration 1, plus whatever pass 4 refers up |
+| **5** | — **human** | The five law items still open from iteration 1, plus whatever pass 4 refers up. **EXECUTED** — [record](verification-iter4-pass-5-findings.md): four applied, advisories 45 → 15, orphans 35 → 6; eight still the human's |
 | **6** | maps | Receipt, and whether the coherence brief is discharged or continuing |
 
 ## 5. What iteration 4 must not do
