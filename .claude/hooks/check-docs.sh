@@ -15,6 +15,22 @@ report() { printf '  %s %s\n' "$1" "$2"; }
 note_fail() { report '‼️ ' "$1"; fail=1; }
 note_ok() { report '✅' "$1"; }
 
+# _prose <file>: the file with fenced blocks and inline `code` spans blanked,
+# line numbers preserved. A token inside a fence or backticks is a MENTION,
+# not a USE. Checks 4, 5, 6 and 8 read prose through this; check 7 parses
+# fences itself and does not. Measured in
+# docs/plans/verification-iter2-pass-2-findings.md: without it, a dead link
+# inside a fence trips check 4, an absence claim inside a quotation trips
+# check 5, and a path mentioned inside a fence makes check 6 call a file
+# reachable and check 8 call a door covered when neither is true.
+_prose() {
+  awk '
+    /^[[:space:]]*```/ { inf = !inf; print ""; next }
+    inf { print ""; next }
+    { gsub(/`[^`]*`/, ""); print }
+  ' "$1"
+}
+
 echo "laceArc checks"
 
 # 1. The four canonical graphics are the source of record (docs/graphics/README.md).
@@ -65,7 +81,7 @@ while IFS= read -r md; do
       report '‼️ ' "broken link in $md -> $target"
       broken=$((broken + 1))
     fi
-  done < <(grep -oE '\]\([^)]+\)' "$md" | sed -E 's/^\]\(//; s/\)$//; s/ .*$//')
+  done < <(_prose "$md" | grep -oE '\]\([^)]+\)' | sed -E 's/^\]\(//; s/\)$//; s/ .*$//')
 done < <(printf '%s\n' "$_docs")
 if [ "$broken" -eq 0 ]; then
   note_ok "relative markdown links: all resolve"
@@ -118,7 +134,7 @@ while IFS= read -r md; do
       note_warn "stale absence claim: $md:$lineno calls $tok absent — tracked at $path"
       stale=$((stale + 1))
     done
-  done < <(awk '{if (NR > 1) print prev " " $0; prev = $0} END {print prev}' "$md" \
+  done < <(_prose "$md" | awk '{if (NR > 1) print prev " " $0; prev = $0} END {print prev}' \
            | grep -nE "($_TOK).{0,30}($_PHR)")
 done < <(printf '%s\n' "$_docs")
 [ "$stale" -eq 0 ] && note_ok "no stale absence claims (nothing called absent that is tracked)"
@@ -139,8 +155,12 @@ linked=$(printf '%s\n' "$_docs" | tr '\n' '\0' | xargs -0 -r awk '
     for (i = 1; i <= k; i++) out = out (i > 1 ? "/" : "") st[i]
     return out
   }
+  FNR == 1 { inf = 0 }
+  /^[[:space:]]*```/ { inf = !inf; next }
+  inf { next }
   {
     line = $0
+    gsub(/`[^`]*`/, "", line)
     while (match(line, /\]\([^)]+\)/)) {
       t = substr(line, RSTART + 2, RLENGTH - 3)
       line = substr(line, RSTART + RLENGTH)
@@ -220,8 +240,12 @@ _links_of() {
       for (i = 1; i <= k; i++) out = out (i > 1 ? "/" : "") st[i]
       return out
     }
+    FNR == 1 { inf = 0 }
+    /^[[:space:]]*```/ { inf = !inf; next }
+    inf { next }
     {
       line = $0
+      gsub(/`[^`]*`/, "", line)
       while (match(line, /\]\([^)]+\)/)) {
         t = substr(line, RSTART + 2, RLENGTH - 3)
         line = substr(line, RSTART + RLENGTH)
