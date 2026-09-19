@@ -299,7 +299,7 @@ PDF is **PRESENT** (do not narrate absent). Pass 1 receipt: `refs/local/webgpu-c
 - Swap WebGPU for wasm64 / wasm-spec-3 compile target
 - Treat validation / device-lost as Lace cut / Φ gate / append rule
 - Treat `mapAsync` / `getMappedRange` / CPU readback as Lace append authority
-- Create `webgpu-ascii-machinery.md` / Wave A panels (still sealed) · ~~create `webgpu-mechanisms.md`~~ (**Pass 3 did**; ascii still absent)
+- ~~Create `webgpu-ascii-machinery.md` / Wave A panels~~ (**Pass 4 did**) · ~~create `webgpu-mechanisms.md`~~ (**Pass 3 did**)
 - Amend wasm-spec-3 products · law / graphics / systems-manifest / five-stakes / clock / hologram
 - Add `src/` / Cargo.toml before emission acceptance
 - Git-add the PDF · pretend OCR / claim PDF absent when present
@@ -343,7 +343,7 @@ PDF is **PRESENT** (do not narrate absent). Pass 1 receipt: `refs/local/webgpu-c
 
 **CONFLICT:** none. PAGE A/B/X remain mesh context (not Wave A cards). Pass 1–2 morals / FM-Wgpu\* / D7 **stand** (not rewritten).  
 **Projection/hologram files:** cite-only — **not amended**. **wasm-spec-3 products:** cite-only — **not amended**.  
-**Emission:** `[GAP]` on every row. **Ascii:** deferred Pass 4; future P-G\* titles reserved by M-G\*.
+**Emission:** `[GAP]` on every row. **Ascii:** Pass 4 → [`webgpu-ascii-machinery.md`](webgpu-ascii-machinery.md) (**P-G1…P-G9**).
 
 ### P3-5S — Five-stakes
 
@@ -368,5 +368,57 @@ PDF is **PRESENT** (do not narrate absent). Pass 1 receipt: `refs/local/webgpu-c
 | Amended | Core graphics · systems-manifest(-ascii) · five-stakes · src/ · wasm-spec-3 · clock · hologram · law · pointer-emission | **No** |
 | Pass 1–2 / FM-Wgpu\* / D7 | **stand** (D6 mechanisms-deferred line annotated; no PAGE rewrite) |
 | Emission | still `[GAP]` — no POINTER when / arity / adjacency; no invented Φ |
+| PDF staged | **No** |
+| Push | **No** (ask before push) |
+
+
+---
+
+## Pass 4 — ASCII SOURCE MACHINERY (P-G1…P-G9) + P4-X + receipt (P4-R)
+
+**Status:** **EXECUTED** · agent `webgpu Pass 4 EXECUTE` · ~2026-09-18 21:07 PT · claim BASE `d6050c5` (= `origin/main` at claim after `git pull --ff-only`).
+
+### Artifact
+
+[`webgpu-ascii-machinery.md`](webgpu-ascii-machinery.md) — HOST/GPU opening contract · stamp legend · **SOURCE MACHINERY overview** (adapter→device/queue→buffer/map→texture→bind→pipeline+WGSL→encoder→submit/present→error/lost) · panels **P-G1…P-G9** 1:1 with **M-G1…M-G9** · cross-walk M↔P · **P4-X** rigor matrix.
+
+### P4-X — Rigor matrix (summary)
+
+All **PASS**. Full matrix on ascii file. Panel rows P-G1…P-G9: Implements OK · Fence OK (API-only; **no POINTER word** inside fences) · Stamp OK · False-friend fence OK · Overview attach OK → **PASS** ×9. Overview spine nodes (10 incl. forbidden Core/Φ/wasm64 exit) → **PASS**. Special gates (P-G3 store/map · P-G1–2 strand · P-G7–8 emission/canvas · P-G6 WGSL · P-G4–5 store · P-G9 SILENT · wasm64 FM-Wgpu7 · no-POINTER-in-fence) → **PASS**.
+
+| Gate class | Verdict |
+|---|---|
+| P-G1…P-G9 Implements / Fence / Stamp / FF / Overview | **PASS** ×9 |
+| Overview spine + off-board Core/Φ/wasm64 | **PASS** |
+| No POINTER-in-fence audit | **PASS** |
+| P3-M baseline | CONFIRM×9 · CONFLICT×0 **stands** |
+
+### Hard stamps under fences (match M-G*)
+
+- **P-G1 / P-G2** — FORBID-as-Lace-strand (FM-Wgpu2)
+- **P-G3** — FORBID-as-Lace-store + map FORBID-as-emission-rule · SILENT (FM-Wgpu1 · FM-Wgpu9)
+- **P-G4 / P-G5** — FORBID-as-Lace-store (FM-Wgpu4)
+- **P-G6** — FORBID-as-Core-write (WGSL ≠ WORD; FM-Wgpu5)
+- **P-G7** — FORBID-as-emission-rule · FORBID-as-Core · SILENT · **D7** cross-link (FM-Wgpu3)
+- **P-G8** — FORBID-as-emission-rule · canvas **PROPOSAL-only** · **FORBID fill-GAP** (FM-Wgpu3 · FM-Wgpu6)
+- **P-G9** — SILENT-for-Lace-append (FM-Wgpu8)
+
+### P4-R — Pass 4 receipt
+
+| Field | Value |
+|---|---|
+| Status | **EXECUTED** |
+| When | 2026-09-18 ~21:07 PT |
+| Station | clipboards · agent `webgpu Pass 4 EXECUTE` |
+| Plan | [webgpu-pass-4-plan.md](webgpu-pass-4-plan.md) (was HELD; now EXECUTED) |
+| Claim BASE | `d6050c5` (= `origin/main` at claim) |
+| Hands skim | shoe → graphics A–D → systems-manifest → staking / law-why → AGENTS Implementation Law → pointer-emission DRAFT/`[GAP]` → clock/README → hologram (WGSL cite) → wasm-spec-3 banner (**cite-only**) → Pass 1–3 clipboard + M-G1…M-G9 → AgentScope ascii sample |
+| PDF | **PRESENT** — gitignored; **never staged** |
+| Artifact | [`webgpu-ascii-machinery.md`](webgpu-ascii-machinery.md) · overview + **P-G1…P-G9** + cross-walk + P4-X |
+| Mechanisms | thin status + panel cites → P-G* · **algorithms unchanged** |
+| Pass 1–3 / FM-Wgpu* / D7 / P3-M | **stand** |
+| Amended Core / src / wasm-spec-3 / clock / hologram / law / emission | **No** |
+| Emission | still `[GAP]` — no invented Φ; no POINTER when/arity/adjacency |
+| Fence hygiene | **no POINTER word** inside any diagram fence; stamps under fences |
 | PDF staged | **No** |
 | Push | **No** (ask before push) |

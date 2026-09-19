@@ -1,6 +1,6 @@
 # WebGPU CRD 2026-09-15 — Pass 4 PLAN (HOST/GPU ASCII source-machinery / Wave A P-G* + P4-X)
 
-**Status:** **HELD / NOT EXECUTED** · plan turn 2026-09-18 ~21:03 PT  
+**Status:** **EXECUTED** · plan turn 2026-09-18 ~21:03 PT · execute ~2026-09-18 21:07 PT  
 **Station:** clipboards (HELD `webgpu Pass 4 PLAN (HOST/GPU ASCII machinery HELD)` · claim BASE `74881b1` = `origin/main` at claim)  
 **Tip at plan:** `c604ee6` (local Pass 1–3 tip; **ahead of origin**; also **behind** unrelated gearing/RESYNC commits — rebase before execute)  
 **Spec:** *WebGPU* — **W3C Candidate Recommendation Draft, 15 September 2026** · editors Kai Ninomiya, Brandon Jones, Jim Blandy (et al.)  
@@ -56,7 +56,7 @@ pull/ff (or rebase onto origin/main) → claim clipboards → Hands + host/GPU m
 |  ASCII fences = Spec/API-side glyphs ONLY; NO Lace POINTER word      |
 |  inside fences; stamps live UNDER fences.                            |
 |  No src/ until pointer-emission accepted.  One strand.               |
-|  Ascii file = execute only.  Status this commit: HELD / NOT EXECUTED.|
+|  Ascii file = execute only.  Status: EXECUTED (see execute receipt). |
 +======================================================================+
 ```
 
@@ -443,18 +443,32 @@ Fences stay API-side; **no POINTER word inside fences**; stamps under fences.
 
 ---
 
-## Plan receipt (this turn)
+## Plan receipt (plan turn)
 
 | Field | Value |
 |---|---|
-| Status | **HELD / NOT EXECUTED** |
-| When | 2026-09-18 ~21:03 PT |
-| Station | clipboards · agent `webgpu Pass 4 PLAN (HOST/GPU ASCII machinery HELD)` |
-| Claim BASE | `74881b1` (= `origin/main` at claim) |
-| Tip at plan | `c604ee6` (local; ahead of origin; behind unrelated gearing/RESYNC — rebase before execute) |
-| Artifact created | this plan only |
-| Ascii created | **No** (execute only: `webgpu-ascii-machinery.md`) |
-| Mechanisms / clipboard product edits | **No** |
+| Status (plan) | **HELD / NOT EXECUTED** (then) |
+| When (plan) | 2026-09-18 ~21:03 PT |
+| Station (plan) | clipboards · agent `webgpu Pass 4 PLAN (HOST/GPU ASCII machinery HELD)` |
+| Claim BASE (plan) | `74881b1` |
+| Tip at plan | `c604ee6` (local; later reconciled) |
+| Artifact created (plan) | this plan only |
+| Ascii created (plan) | **No** |
+
+---
+
+## Execute receipt (this turn)
+
+| Field | Value |
+|---|---|
+| Status | **EXECUTED** |
+| When | 2026-09-18 ~21:07 PT |
+| Station | clipboards · agent `webgpu Pass 4 EXECUTE` |
+| Claim BASE | `d6050c5` (= `origin/main` at execute claim after ff-only) |
+| Ascii created | **Yes** — [`webgpu-ascii-machinery.md`](webgpu-ascii-machinery.md) · overview + **P-G1…P-G9** + cross-walk + P4-X |
+| Clipboard | Pass 4 receipt + P4-X |
+| Mechanisms | status one-liner + panel cites → P-G* (algorithms unchanged) |
+| P4-X | all **PASS** |
 | Emission | still `[GAP]` |
 | PDF staged | **No** |
 | Push | **No** |

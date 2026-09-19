@@ -1,10 +1,10 @@
 # WebGPU CRD 2026-09-15 — mechanism cards (HOST/GPU system procedures)
 
-**Status:** Pass 3 EXECUTED (Wave A **M-G1…M-G9**; P3-M mesh on clipboard). ASCII: **absent** (Pass 4; future **P-G1…P-G9** titles reserved). Emission `[GAP]`.  
+**Status:** Pass 3 EXECUTED (Wave A **M-G1…M-G9**; P3-M mesh on clipboard). Pass 4 ASCII: see [`webgpu-ascii-machinery.md`](webgpu-ascii-machinery.md) (**P-G1…P-G9**). Algorithms unchanged. Emission `[GAP]`.  
 **Source:** *WebGPU* — **W3C Candidate Recommendation Draft, 15 September 2026**. Editors: Kai Ninomiya, Brandon Jones, Jim Blandy (et al.).  
 **PDF:** `refs/local/webgpu-crd-20260915.pdf` → attachment `6bc31a9e21074a039a5c854f1bfc33bdbf282cd8b48e22a4977ca406ca64afe1` (**321** pp., text layer; **never git-add**). SHA-256 `6bc31a9e21074a039a5c854f1bfc33bdbf282cd8b48e22a4977ca406ca64afe1`. PDF one-based primary.  
 **Sighting this pass:** `pdftotext -f N -l N -layout` on §4 Adapter/Device · §5 Buffer/map · §6 Texture · §8 BindGroup · §9 WGSL · §12–13 CmdBuf/encoder · §16 Dispatch · draw IDL · §19 Queue submit · §21 Canvas · §22 errors; Pass 1–2 pins reused.  
-**Companion:** [`webgpu-clipboard.md`](webgpu-clipboard.md) · plan [`webgpu-pass-3-plan.md`](webgpu-pass-3-plan.md) · Pass 2 **D7** (encoder→submit miniature; cross-link from M-G7; do not rewrite) · [`pointer-emission.md`](../pointer-emission.md) = DRAFT/`[GAP]`.  
+**Companion:** [`webgpu-clipboard.md`](webgpu-clipboard.md) · ascii [`webgpu-ascii-machinery.md`](webgpu-ascii-machinery.md) · plan [`webgpu-pass-3-plan.md`](webgpu-pass-3-plan.md) · Pass 2 **D7** (encoder→submit miniature; cross-link from M-G7; do not rewrite) · [`pointer-emission.md`](../pointer-emission.md) = DRAFT/`[GAP]`.  
 **Not this file:** Lace Core ASCII = [`systems-manifest-ascii.md`](../systems-manifest-ascii.md) — **do not conflate**. wasm-spec-3 **M-T\*** / FM-W\* = **compile-target ISA** — cite-only; different layer.
 
 ```
@@ -20,7 +20,7 @@
 |  FORBID: validation/device-lost as Lace cut · mapAsync as append.    |
 |  KEEP-read: host/GPU mechanics for Shadow projection / hologram.     |
 |  No src/ until pointer-emission accepted.  One strand.               |
-|  No ascii Wave A this pass (Pass 4).  Status: Pass 3 EXECUTED.       |
+|  Pass 4 ASCII: webgpu-ascii-machinery.md (P-G*). Algorithms stand.   |
 +======================================================================+
 ```
 
@@ -47,7 +47,7 @@ This file is **Shadow / Layer III documentation of CRD host/GPU procedures**, no
 
 ---
 
-## Wave A — CRD constructive spine (blocking) — future 1:1 with P-G1…P-G9
+## Wave A — CRD constructive spine (blocking) — 1:1 with P-G1…P-G9 (Pass 4)
 
 ### M-G1 — Adapter request (`navigator.gpu` → `requestAdapter`)
 
@@ -65,7 +65,7 @@ This file is **Shadow / Layer III documentation of CRD host/GPU procedures**, no
 | Worked miniature | EXAMPLE 13 PDF **46**: `navigator.gpu.requestAdapter({ powerPreference: 'high-performance' })` |
 | Lace stamp | **KEEP-read-as-host-API**; **FORBID-as-Lace-strand**; **FORBID-as-Core-write** (adapter ↛ Graphic D / Core door) |
 | Hands cite | Graphics A–D · systems-manifest (one store) · AGENTS Implementation Law (no `src/` until emission) · PAGE C |
-| Panel cite | **future P-G1** · PAGE **C** |
+| Panel cite | **P-G1** · PAGE **C** |
 | False friend | **FM-Wgpu2** — Adapter ⇒ Core / Graphic D / lace cord |
 | Projection / hologram cite | `clock/README.md` (`lace-projection.html` WebGPU 3D) — Shadow host acquire only; glyphs ≠ schema |
 | wasm64 cite | wasm-spec-3 cite-only — **different layer**; adapter ≠ wasm64 compile target (**FM-Wgpu7**) |
@@ -102,7 +102,7 @@ This file is **Shadow / Layer III documentation of CRD host/GPU procedures**, no
 | Worked miniature | Pass 2 **D7** step 1: obtain `GPUDevice` (KEEP-read only; Device ↛ Graphic D — FM-Wgpu2) |
 | Lace stamp | **KEEP-read-as-host-API**; **FORBID-as-Lace-strand**; **FORBID-as-Core-write** |
 | Hands cite | Graphics A–D · AGENTS Implementation Law · PAGE C |
-| Panel cite | **future P-G2** · PAGE **C** |
+| Panel cite | **P-G2** · PAGE **C** |
 | False friend | **FM-Wgpu2** — Device/Queue ⇒ Core / Graphic D / lace cord |
 | Projection / hologram cite | Device ≠ Graphic D; projection viewer may hold a device for draw only |
 | wasm64 cite | ≠ wasm64 ISA / module instance (**FM-Wgpu7**); cite-only |
@@ -139,7 +139,7 @@ This file is **Shadow / Layer III documentation of CRD host/GPU procedures**, no
 | Worked miniature | EXAMPLE 18 PDF **55–60** — mapAsync → mapped → getMappedRange → unmap timeline figure |
 | Lace stamp | **KEEP-read-as-host-API**; **FORBID-as-Lace-store**; **FORBID-as-emission-rule** (map/readback ↛ append); **SILENT-for-Lace-append** |
 | Hands cite | Piece 1/6 · Graphic D (one strand) · PAGE D |
-| Panel cite | **future P-G3** · PAGE **D** |
+| Panel cite | **P-G3** · PAGE **D** |
 | False friend | **FM-Wgpu1** (GPUBuffer ⇒ Lace strand) · **FM-Wgpu9** (mapAsync/readback ⇒ append authority) |
 | Projection / hologram cite | Buffer/map ≠ strand/append; may hold vertex/uniform bytes for Shadow draw only |
 | wasm64 cite | ≠ linear mem strand / wasm memory (**FM-Wgpu7** cite-only) |
@@ -177,7 +177,7 @@ This file is **Shadow / Layer III documentation of CRD host/GPU procedures**, no
 | Worked miniature | createTexture with `TEXTURE_BINDING` usage (PDF ~**70–72** example path) |
 | Lace stamp | **KEEP-read-as-host-API**; **FORBID-as-Lace-store** (texture ≠ second store / Graphic D) |
 | Hands cite | systems-manifest (one store) · PAGE D |
-| Panel cite | **future P-G4** · PAGE **D** |
+| Panel cite | **P-G4** · PAGE **D** |
 | False friend | **FM-Wgpu4** — Texture ⇒ second Lace store / Graphic D backing |
 | Projection / hologram cite | hologram/clock may *draw* with textures; glyphs ≠ schema; texture ≠ store |
 | wasm64 cite | cite-only; different layer |
@@ -214,7 +214,7 @@ This file is **Shadow / Layer III documentation of CRD host/GPU procedures**, no
 | Worked miniature | EXAMPLE 25 PDF **108** — createBindGroupLayout → createBindGroup → pipeline layout |
 | Lace stamp | **KEEP-read-as-host-API**; **FORBID-as-Lace-store** (bind-group ≠ second Lace store) |
 | Hands cite | systems-manifest (one store) · PAGE D |
-| Panel cite | **future P-G5** · PAGE **D** |
+| Panel cite | **P-G5** · PAGE **D** |
 | False friend | **FM-Wgpu4** — bind-group ⇒ second Lace store |
 | Projection / hologram cite | Bind ≠ second Lace store; may wire uniforms/samplers for Shadow draw |
 | wasm64 cite | cite-only |
@@ -251,7 +251,7 @@ This file is **Shadow / Layer III documentation of CRD host/GPU procedures**, no
 | Worked miniature | EXAMPLE 27 PDF **120** — WGSL `@id` overrides + JS `constants: { … }` |
 | Lace stamp | **KEEP-read-as-host-API**; **FORBID-as-Core-write** (WGSL ≠ WORD; pipeline ≠ Core ops) |
 | Hands cite | AGENTS Implementation Law · PAGE E · hologram `visual-primitives.md` (WGSL live path cite) |
-| Panel cite | **future P-G6** · PAGE **E** |
+| Panel cite | **P-G6** · PAGE **E** |
 | False friend | **FM-Wgpu5** — WGSL ⇒ Lace WORD / Core operator / schema language |
 | Projection / hologram cite | `hologram/visual-primitives.md` — “Live draw path… WGSL”; glyphs ≠ schema; WGSL ≠ WORD |
 | wasm64 cite | cite-only; WGSL ≠ wasm text / ISA |
@@ -288,7 +288,7 @@ This file is **Shadow / Layer III documentation of CRD host/GPU procedures**, no
 | Worked miniature | **Pass 2 D7** + EXAMPLE 31 PDF **~160–162**: createCommandEncoder → (encode) → finish → (submit in M-G8) |
 | Lace stamp | **KEEP-read-as-host-API**; **FORBID-as-emission-rule**; **FORBID-as-Core**; **SILENT-for-Lace-append** |
 | Hands cite | pointer-emission `[GAP]` · PAGE F · D7 |
-| Panel cite | **future P-G7** · PAGE **F** |
+| Panel cite | **P-G7** · PAGE **F** |
 | False friend | **FM-Wgpu3** — encode/draw/dispatch ⇒ POINTER when / Φ |
 | Projection / hologram cite | Encoder ≠ Φ; Shadow may encode draw for viewer only |
 | wasm64 cite | cite-only |
@@ -326,7 +326,7 @@ This file is **Shadow / Layer III documentation of CRD host/GPU procedures**, no
 | Worked miniature | D7 step 5 + EXAMPLE 31: `device.queue.submit([commandBuffer])`; EXAMPLE 34 PDF **228** getContext('webgpu') |
 | Lace stamp | **KEEP-read-as-host-API** (submit); **FORBID-as-emission-rule**; canvas **PROPOSAL-only** · **FORBID fill-GAP** |
 | Hands cite | pointer-emission DRAFT/`[GAP]` · PAGE F+G · D1/D6 |
-| Panel cite | **future P-G8** · PAGE **F+G** |
+| Panel cite | **P-G8** · PAGE **F+G** |
 | False friend | **FM-Wgpu3** (submit/draw ⇒ Φ) · **FM-Wgpu6** (canvas ⇒ accept emission) |
 | Projection / hologram cite | submit ≠ emission; canvas PROPOSAL-only; `lace-projection.html` may present Shadow frames without accepting Φ |
 | wasm64 cite | cite-only |
@@ -366,7 +366,7 @@ This file is **Shadow / Layer III documentation of CRD host/GPU procedures**, no
 | Worked miniature | Push/pop error scope stack (PDF **241–243**); observe `device.lost` (PDF **238**) |
 | Lace stamp | **KEEP-read-as-host-API**; **SILENT-for-Lace-append**; **FORBID-as-emission-rule** (lost/validation ≠ Lace cut / Φ gate) |
 | Hands cite | PAGE H · pointer-emission `[GAP]` · AGENTS (Hands win) |
-| Panel cite | **future P-G9** · PAGE **H** |
+| Panel cite | **P-G9** · PAGE **H** |
 | False friend | **FM-Wgpu8** — validation / device-lost ⇒ Lace cut / Φ gate / append rule |
 | Projection / hologram cite | device-lost ≠ Lace cut; viewer may reacquire device — still Shadow |
 | wasm64 cite | cite-only; trap ≠ this shelf’s lost (different layer) |
