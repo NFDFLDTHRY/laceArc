@@ -1,7 +1,7 @@
-STATUS: HELD
+STATUS: FREE
 STATION: graphics
 OWNS: docs/graphics/** docs/graphics-close-reading.md
-AGENT: Grok-graphics
-BASE: 4fd3dff96d9ea6df24e6b78926e09fbd6e0454a4
-SINCE: 2026-09-19T05:54:12Z
-NOTE: i1 CLOSED 6/6. i2 CLOSED 6/6. Next i3 not opened. D companion unstarted. Same strand as Graphic D. Not a second store. Φ [GAP].
+AGENT: -
+BASE: -
+SINCE: -
+NOTE: force-freed 2026-09-19T16:43:46Z: was held by Grok-graphics since 2026-09-19T05:54:12Z. human authorized: Graphics can be freed. i1 and i2 CLOSED 6/6. i3 not opened. D companion unstarted. Φ [GAP].

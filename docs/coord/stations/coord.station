@@ -1,7 +1,7 @@
-STATUS: HELD
+STATUS: FREE
 STATION: coord
 OWNS: docs/coord/**
-AGENT: Grok-coord
-BASE: abb3f86e48d520b7ad577a222bace9dc6eb2385e
-SINCE: 2026-09-19T15:25:16Z
-NOTE: Quiet door #9 pass 6 PLAN. Pass 1–5 EXECUTED. Receipt close. Door+coord.sh untouched. Door #8 CLOSED. Φ [GAP].
+AGENT: -
+BASE: -
+SINCE: -
+NOTE: force-freed 2026-09-19T16:43:46Z: was held by Grok-coord since 2026-09-19T15:25:16Z. human authorized: Coord can be freed. Door #9 pass 6 remains PLAN unexecuted. coord.sh untouched. Φ [GAP].
