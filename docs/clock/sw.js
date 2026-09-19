@@ -1,9 +1,6 @@
-/* Layer III cache only. Not Core. */
-const CACHE = "lace-iii-d1-v6f-lookrefs-stay";
+/* Layer III cache. HTML is network-first so githack main can move. */
+const CACHE = "lace-iii-i1";
 const PRE = [
-  "./lace-projection.html",
-  "./projection-bake-worker.js",
-  "./manifest.webmanifest",
   "../hologram/clockwork-view-lattice.jpg",
   "../hologram/clockwork-view-traces.jpg",
   "../hologram/clockwork-view-crossing.png"
@@ -19,11 +16,20 @@ self.addEventListener("activate", e => {
 self.addEventListener("fetch", e => {
   const u = new URL(e.request.url);
   if (u.origin !== location.origin) return;
+  const html = u.pathname.endsWith(".html") || u.pathname.endsWith("/");
+  if (html) {
+    e.respondWith(fetch(e.request).then(res => {
+      const copy = res.clone();
+      caches.open(CACHE).then(c => c.put(e.request, copy)).catch(()=>{});
+      return res;
+    }).catch(() => caches.match(e.request)));
+    return;
+  }
   e.respondWith(
     caches.match(e.request).then(hit => hit || fetch(e.request).then(res => {
       const copy = res.clone();
       caches.open(CACHE).then(c => c.put(e.request, copy)).catch(()=>{});
       return res;
-    }).catch(() => caches.match("./lace-projection.html")))
+    }))
   );
 });

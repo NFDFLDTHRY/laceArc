@@ -3,7 +3,7 @@
   "short_name": "LaceArc III",
   "description": "Read-only D1 time projection. Not Core. No emitter.",
   "id": "/NFDFLDTHRY/laceArc/main/docs/clock/",
-  "start_url": "./lace-projection.html",
+  "start_url": "./lace-projection.html?i=1",
   "scope": "./",
   "display": "standalone",
   "background_color": "#05070c",
