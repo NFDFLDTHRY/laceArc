@@ -1,6 +1,6 @@
 # Quiet door #8 (Gearing) — Pass 2 PLAN
 
-**Status:** PLAN only. Not run.  
+**Status:** EXECUTED — fields on `docs/gearing/quiet-door-8-ascii.md`. Door + HTML + JS unchanged. Emission `[GAP]`.  
 **Station:** gearing-meta (HELD Grok-gearing).  
 **Object:** Gearing fields — In / Does / Break / Gap / Role.  
 **Authority:** [`quiet-door-8-ascii.md`](quiet-door-8-ascii.md) pass-1 spine. Gearing door as written.  

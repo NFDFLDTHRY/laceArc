@@ -2,7 +2,7 @@
 
 **Object:** `docs/gearing/README.md`  
 **Station:** gearing-meta.  
-**Executed:** [quiet-door-8-pass-1-plan.md](quiet-door-8-pass-1-plan.md).  
+**Executed:** [quiet-door-8-pass-1-plan.md](quiet-door-8-pass-1-plan.md) · [quiet-door-8-pass-2-plan.md](quiet-door-8-pass-2-plan.md).  
 **Not:** Core. Not Graphic E. Not Hands. Not door #7 pass 7. Not projection iter 5. Not a shaft claim.  
 **Emission:** `[GAP]`. No `src/`. Gearing door bytes untouched. HTML untouched. `contracts-*.js` untouched. Renderer unclaimed. Shafts FREE. Door #7 CLOSED.
 
@@ -79,3 +79,29 @@ Shafts are Layer III. Named scripts are not owned here. Renderer stays unclaimed
 | T1 | Spine drawn from `docs/gearing/README.md` headings |
 | T2 | Scripts named, not rewritten |
 | T3 | Door + HTML + JS + shafts + Hologram untouched |
+
+## Pass 2 — fields
+
+Off the gearing door headings. Door wins over invention.
+
+| # | Block | In | Does | Break | Gap | Role |
+|---|---|---|---|---|---|---|
+| Gr1 | the gearing door | a reader at `docs/gearing/` | names shafts, not Hands | treat this page as Hands | — | index |
+| Gr2 | Layer III / not Core | a bid to store | keeps shafts off Core | treat this shelf as Hands | — | fence |
+| Gr3 | named scripts (not owned here) | a `contracts-*.js` path | names axle…audits; does not own them | edit JS from gearing-meta | — | catalog |
+| Gr4 | claim / release | an agent wanting a shaft | one shaft per agent; ff-only `main` | edit another shaft’s `.claim` | — | protocol |
+| Gr5 | RESYNC FIRED/CLEAR | a full-repo halt bid | steward word only | rewrite RESYNC from this pass | — | signal |
+| Gr6 | frozen HTML / WebGPU | a viewer bid | HTML is renderer; WebGPU 3D only | rewrite `shadow-clock-gearing.html` | — | viewer |
+| Gr7 | one shaft per agent | a second shaft this tick | refuse the second | claim a shaft this pass | — | fence |
+| Gr8 | Φ / do not invent | a missing emission rule | leave G2 open | fill G2 here | G2 `[GAP]` | fence |
+
+G2 stays `[GAP]`.
+
+## Pass 2 deltas
+
+| Ticket | Action |
+|---|---|
+| T1 | Eight In / Does / Break / Gap / Role rows |
+| T2 | Gr3 Break = edit JS here; Gr6 Break = rewrite HTML |
+| T3 | Spine left in place |
+| T4 | Door + HTML + JS + shafts + Hologram untouched |
