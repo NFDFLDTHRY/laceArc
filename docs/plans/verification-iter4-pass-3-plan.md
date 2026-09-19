@@ -146,3 +146,17 @@ We tidied a shelf by giving it a room of its own, and the room filled up in the 
 ---
 
 **Station note.** `maps` is HELD by `reference-Mapper` at `139752d`. This file is maps-owned and committed without the claim. Collision risk measured before writing: nothing outside this campaign has touched `docs/plans/` since that claim was taken. The violation is recorded here and in the commit message rather than excused.
+
+---
+
+## Board moved, `0509d5c` — and it moved toward the thesis
+
+Two things changed within minutes of this plan being pinned at `bda0e4d`. Both are recorded rather than folded into the numbers above, which stay as measured.
+
+**The 31st unlinked pass plan is no longer unlinked.** `docs/coord/quiet-door-9-ascii.md:5` now links both `quiet-door-9-pass-1-plan.md` and `quiet-door-9-pass-2-plan.md`. **The link is from the product**, exactly as §2's rule asks, added by another campaign on another shelf within hours of the plan landing and without anybody citing the rule to them.
+
+So §7's instruction not to treat that file as rot is discharged, and the census is sharper than it was: **190 of 220 linked, and the 30 unlinked are `docs/clock/passes` with no exceptions anywhere in the tree.**
+
+**Where the product is a document, campaigns obey the rule by reflex.** That is the strongest available support for §5: the failure at `lace-projection.html` is not neglect by one campaign, it is what the rule does when its unwritten precondition is absent.
+
+**And `maps` is FREE**, released at `129bfbe` as premature. It is claimed properly for the rest of this pass. The station note above stands as the record of the commit that was made without it.
