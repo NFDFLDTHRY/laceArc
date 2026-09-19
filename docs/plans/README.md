@@ -29,6 +29,7 @@
 | [verification-iter2-pass-3-plan.md](verification-iter2-pass-3-plan.md) | `[PLAN]` iteration 2 pass 3: the register's stated rule is not the rule it applies. T1-T2 lead the tree at 124 files and are the excluded ones |
 | [verification-iter2-pass-3-findings.md](verification-iter2-pass-3-findings.md) | pass 3 record. Inclusion rule replaced; 5 families registered, 3 excluded with reasons, L0 struck; T had a third meaning |
 | [verification-iter2-pass-4-plan.md](verification-iter2-pass-4-plan.md) | `[PLAN]` iteration 2 pass 4: the template's form has been filled zero times; seven documents invent seven receipts; every pinned commit resolves |
+| [verification-iter2-pass-4-findings.md](verification-iter2-pass-4-findings.md) | pass 4 record. The seven receipts share six slots under seven names — a broken form, not broken practice; commits survive, paths do not |
 | [restructure-plan.md](restructure-plan.md) | `[PROPOSAL]` coherence of the whole tree: twelve measured findings, eight phases, one station per commit; supersedes the defrag plan as filing plan of record |
 
 Sub-shelves: [fixtures/](fixtures/README.md) sealed golden IR · [tools/](tools/README.md) host validator.

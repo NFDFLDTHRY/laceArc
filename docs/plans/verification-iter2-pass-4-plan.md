@@ -1,6 +1,6 @@
 # Verification iteration 2, pass 4 — the templates and prompts
 
-**Status:** `[PLAN]`. Execution NOT_RUN. **Station:** maps for this plan and its record. Read-only on kit and prompts.
+**Status:** `[PLAN]`. **EXECUTED** — [the record](verification-iter2-pass-4-findings.md). 4a: a broken form, not broken practice. 4b: commits survive, paths do not. 4c: the prompts door is a filing gap. **Station:** maps for this plan and its record. Read-only on kit and prompts.
 **Emission:** `[GAP]`. No `src/`.
 **Iteration:** [iteration 2](verification-iteration-2-plan.md), pass 4 of six. Passes 1–3 EXECUTED.
 
