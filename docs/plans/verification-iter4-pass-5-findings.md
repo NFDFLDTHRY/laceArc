@@ -98,6 +98,24 @@ The intro was corrected with it: it said *"the five stake texts"* while the shel
 - **A nineteen-hour-old abandoned branch already contained a finding this pass re-derived from scratch.**
 - **Two remedies were applied and neither satisfies check 8**, exactly as priced. `docs/clipboards` satisfies it only because there the door genuinely was the bridge.
 
+---
+
+## 8. Observed during the pass, not caused by it: the WGSL case, live
+
+Two minutes after this record was committed, `main` went red on an **invariant**:
+
+```
+broken link in docs/history/relationship-evidence-pass-3-plan.md -> relationship-evidence-pass-3-handoff.md
+```
+
+**Not this campaign's, not this station's, and not repaired.** `history` is **HELD by `Grok-evidence`** as of `73bbca5`, timestamped one second after the commit that created the link. The campaign is working right now.
+
+**Read in place, it is a *not yet* and the file says so itself.** Line 113 of the citing plan is the instruction `Write` **`relationship-evidence-pass-3-handoff.md`**, and its siblings at passes 1 and 2 each have theirs. **Check 4 cannot tell a *not yet* from a *never*** — the defect [iteration 2 pass 5](verification-iter2-pass-5-plan.md) measured at 21 commits.
+
+**This is the second time this campaign has caught a live forward reference in the act, and it is the argument for `E1`, `D1` and `D2` happening in front of us.** Had any check gated, `Grok-evidence` would be blocked, mid-pass, over a file its own plan is an instruction to write.
+
+**No action.** [Pass 4](verification-iter4-pass-4-findings.md) priced the only installable gate and this is what it would have cost, once, in the ninety minutes it took to run pass 5.
+
 ## Steward test
 
 If you cannot do it to a shoe lace in your hands, you may not do it to laceArc.
