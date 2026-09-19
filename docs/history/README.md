@@ -29,6 +29,8 @@ POINTER emission stays `[GAP]`. No `src/`.
 
 ## Relationship evidence questions
 
-[Two-point challenge, pass 1](relationship-evidence-pass-1.md): reproducibly sampled historical snapshots; word / definition-route / retained-touch questions for the global mapper. Sampling and bounded text inspection performed; mapper response and independent adjudication **NOT_RUN**. The two snapshots share document blobs and are not independent corroboration. This is not recovery pass 8, a global-diagram pass, or a reopening of quiet-door #5. No acceptance or Core change.
+[Two-point challenge, pass 1](relationship-evidence-pass-1.md): original question packet and fixed historical samples, preserved. The two snapshots share document blobs and are not independent corroboration. This is not recovery pass 8, a global-diagram pass, or a reopening of quiet-door #5. No acceptance or Core change.
 
-[Pass 1 review plan](relationship-evidence-pass-1-plan.md): **PLAN ONLY; review execution NOT_RUN**. Answers the existing Q1-Q5 through a source-to-diagram coupling review and a same-strand/two-views counterexample. The findings document is a proposed execution output, not an existing result. Publication does not execute the plan or authorize changes to the global companion.
+[Pass 1 review plan](relationship-evidence-pass-1-plan.md): **EXECUTED within the text-source review scope**; section 9 records execution separately from the original planning/publication receipts. Canonical-image verification remains **BLOCKED**. Global-mapper response and independent adjudication remain **NOT_RUN**.
+
+[Pass 1 findings](relationship-evidence-pass-1-findings.md), first published at `901950641eaa2f75e632f86fcadf1efc7b96ea73`: Q1-Q5 answered by Astra-evidence against review pin `a0d7e6aea0267e63ebe8ac7a5febdef85275d832`. The source-text word/definition/touch coupling is supported; the companion underexpresses it and has an ambiguous WORD-only star caption. The same-record/two-views counterexample was evaluated analytically. Proposed corrections remain unapplied; no global diagram, upstream source, or emission rule was changed.
