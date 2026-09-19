@@ -1,6 +1,6 @@
 # Quiet door #3 (Court) — Pass 4 PLAN
 
-**Status:** PLAN only. Not run.  
+**Status:** EXECUTED — walk on `docs/kit/quiet-door-3-ascii.md`. Court door unchanged. Emission `[GAP]`.  
 **Station:** kit (HELD Grok-kit).  
 **Object:** Court **walk** — one mechanism on [`quiet-door-3-ascii.md`](quiet-door-3-ascii.md).  
 **Authority:** Court passes 1–3. Court page as a *named door*, not bytes to edit.  

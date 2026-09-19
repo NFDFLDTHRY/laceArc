@@ -2,7 +2,7 @@
 
 **Object:** `docs/README.md`  
 **Station:** kit (reading). Law wins on the door.  
-**Executed:** [quiet-door-3-pass-1-plan.md](quiet-door-3-pass-1-plan.md) · [quiet-door-3-pass-2-plan.md](quiet-door-3-pass-2-plan.md) · [quiet-door-3-pass-3-plan.md](quiet-door-3-pass-3-plan.md).  
+**Executed:** [quiet-door-3-pass-1-plan.md](quiet-door-3-pass-1-plan.md) · [quiet-door-3-pass-2-plan.md](quiet-door-3-pass-2-plan.md) · [quiet-door-3-pass-3-plan.md](quiet-door-3-pass-3-plan.md) · [quiet-door-3-pass-4-plan.md](quiet-door-3-pass-4-plan.md).  
 **Not:** live law. Not Hands. Not Graphic D. Not cold-doors pass 7. Not door #1 pass 7.  
 **Emission:** `[GAP]`. No `src/`. Court door bytes untouched.
 
@@ -145,4 +145,66 @@ Hands on this page is a **source claim**. It is not `which=graphics` for every r
 | T1 | Fourteen-row grain |
 | T2 | Page label ≠ ownership |
 | T3 | Manifest Hands-on-page / law-at-which |
+| T4 | Court bytes untouched |
+
+## Pass 4 — walk
+
+This walk names a file, then sends the reader. It does not store law. Hands keeps A13 / B12 / C12.
+
+### Operator (from the court)
+
+```
+ ╔══════════════════════════════════════════════════════════════╗
+ ║  The court names. Law stores. Kit reads.                     ║
+ ╚══════════════════════════════════════════════════════════════╝
+
+  reader arrives at docs/README.md
+    read the heading          → page label
+    follow the named path     → file
+    do not copy that file here
+    do not become live law
+    never: DRAFT ⇒ accepted
+    never: map ⇒ Hands
+    never: HTML ⇒ Graphic D
+
+  not "emit POINTER."
+  not A13 arrive / through-star / continue.
+```
+
+### Application register
+
+| # | Role | What arrives | What is walked | What continues | New machine? |
+|---|---|---|---|---|---|
+| Ct1 | court page | a reader at `docs/` | headings as index | the named file | no |
+| Ct2 | Hands | a source question | send to PNGs / manifest / D1 reading | do not become a fifth graphic | no |
+| Ct3 | open gate | an emission question | send to DRAFT | do not accept | no |
+| Ct4 | Law | a posture question | send to live law | this page is not the store | no |
+| Ct5 | Maps | a reading question | send to the named map | do not become Hands | no |
+| Ct6 | Operations | a tick / filing question | send to audit / defrag | do not rewrite a tick | no |
+| Ct7 | Not prose | a viewer question | send to HTML | do not become Graphic D | no |
+| Ct8 | Shelves | a shelf question | send to that door | this page is not those shelves | no |
+
+All `New machine?` = no.
+
+### Court versus live law versus Hands
+
+```
+ quiet-door-3-ascii.md       docs/README.md           live law
+ --------------------       ---------------           --------
+ kit reading                the index                 the store
+ names + sends              names + sends             wins
+
+ wrapper-as-Core            [X]
+ Hands verbs pasted here    [X]
+ court page as live law     [X]
+ G2                         [GAP]
+```
+
+## Pass 4 deltas
+
+| Ticket | Action |
+|---|---|
+| T1 | One walk box quoted from the court |
+| T2 | Eight-row register; all New machine?=no |
+| T3 | Court ↔ live law ↔ Hands seam |
 | T4 | Court bytes untouched |
