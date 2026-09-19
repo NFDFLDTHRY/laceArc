@@ -87,6 +87,26 @@
 
 ---
 
+## Pass 2 receipt — P2-R
+
+| Field | Value |
+|---|---|
+| Status | **EXECUTED** |
+| When | 2026-09-18 ~21:41 PT |
+| Station | clipboards · agent `wgsl Pass 2 EXECUTE` |
+| Plan | [wgsl-pass-2-plan.md](wgsl-pass-2-plan.md) (was HELD; plan commits `7731c5c` · `e6e1935`; claim BASE `76f0472` = origin/main (refreshed after kit cold-doors tip)) |
+| Hands skim | shoe → graphics A–D → systems-manifest → staking / law-why → AGENTS Implementation Law → pointer-emission DRAFT/`[GAP]` → clock/README + lace-projection → clock/wasm README (different layer) → hologram/README + visual-primitives (WGSL live path cite) → webgpu Pass 1 banner / PAGE E WGSL boundary (**cite-only**; untouched) → wasm-spec-3 Pass 1–6 banner (**cite-only**; untouched) → Pass 1 clipboard → this plan → PDF |
+| PDF | **PRESENT** — cite Pass 1: `refs/local/wgsl-w3c-crd-20260915.pdf` → `73dc9e35…c2f5eb6d.pdf`; **381** pp.; text layer; PDF one-based primary; SHA match; gitignored; **never staged** |
+| Product | D1–D6 leftovers (+ D7 Shadow module-lifecycle miniature); A–H/X morals untouched; **no** ascii Wave A; mechanisms deferred |
+| Amended | Core graphics · systems-manifest(-ascii) · five-stakes · src/ · webgpu-* · wasm-spec-3 · clock · hologram · law | **No** |
+| Emission | still `[GAP]` — no POINTER when / arity / adjacency; no invented Φ |
+| T5 five-stakes / Core maps | **skip** (default) |
+| T7 ascii/mechanisms/webgpu/wasm | **skip** — no ascii Wave A; mechanisms deferred; webgpu-* untouched; wasm-spec-3 untouched |
+| D7 | **included** — shader module lifecycle sketch (PAGE A · Module PDF **15–16** · Lifecycle §2.1); **FORBID-as-Lace-strand** · **FORBID-as-host-API-swap** · **FORBID-as-Core** · **FORBID-as-emission-rule** · **SILENT-for-Lace-append** |
+| FM-Wgsl1…Wgsl9 | all pinned (no OPEN) |
+
+---
+
 ## PAGE A — Overview / Syntax (Introduction · Module · Textual Structure · Directives · Scope)
 
 | Field | Content |
@@ -187,4 +207,128 @@
 
 ---
 
-*Pass 1 only — no ascii Wave A / no mechanisms this pass. Companion shelves (webgpu-*, wasm-spec-3-*) cite-only, untouched.*
+## Explicitly not this pass (Pass 1–2 stand; Pass 3+ later)
+
+- No `wgsl-ascii-machinery.md` / Wave A panels (**Pass 3+ / Pass 4 shape later**).
+- No `wgsl-mechanisms.md` / mechanism cards (**deferred Pass 3+**).
+- No five-stakes rewrite / no invent Core maps into reason-model (default **skip**).
+- webgpu-* products **untouched** (cite-only; Pass 1–5 EXECUTED · Pass 6 HELD).
+- wasm-spec-3 products **untouched** (cite-only; Pass 1–6 EXECUTED).
+- No new PAGEs for Ch.16 Keyword·Token Summary or Ch.18 Grammar (cite-as-needed only).
+- No `src/`. Emission still `[GAP]`.
+
+---
+
+## Pass 2 deltas
+
+Pass 1 filled PAGE A–H, X against the CRD. These deltas are **shader-lang leftovers / false friends / coherence** only. They do not invent emission. A–H/X morals are unchanged. FORBID-as-Lace-WORD / FORBID-as-Lace-store / FORBID-as-Lace-strand / FORBID-as-emission-rule / FORBID-as-host-API-swap / FORBID-as-compile-target-swap / PROPOSAL-only / SILENT are not softened. WGSL remains **SHADER-LANG Shadow only**.
+
+### D1 — What this clipboard / shelf is not
+
+- Not Core / not a sixth graphic / not systems-manifest-ascii.
+- Not `pointer-emission.md` / not a Φ fill / not acceptance of emission by citing WGSL.
+- Not Lace’s 1D strand, star index, or Graphic D scheduler.
+- Not permission to treat **WGSL source / types / identifiers** as Lace WORD / Core schema.
+- Not permission to treat **shader module / stage / workgroup** as lace cord / Graphic D.
+- Not permission to treat **entry point / builtins / barriers / uniformity** as POINTER when / arity / adjacency / Φ.
+- Not permission to treat **address spaces / buffers / memory model** as Lace store / second strand.
+- Not permission to treat **`discard`** as Lace cut / append refuse.
+- Not a **WebGPU Device/Queue/Buffer** host-API swap (webgpu-* shelf stands; different Spec).
+- Not a **wasm64 compile-target** swap (wasm-spec-3 shelf stands; different layer).
+- Not permission to treat **validation / shader-creation / pipeline-creation / dynamic errors** as Lace law / Φ gate.
+- Not a rewrite of clock / hologram / AGENTS Implementation Law.
+- Not permission to add `src/` before emission acceptance.
+- Not an anti-model LLM leftover shelf; not an ISA leftover shelf; not a host/GPU leftover shelf (FM-W\* / FM-Wgpu\* stay home).
+- Not new PAGEs for Ch.16 Keyword Summary or Ch.18 Grammar (cite-as-needed only).
+
+### D2 — ON-TARGET / KEEP / FORBID / MAP strip
+
+Compact spine on this clipboard (not five-stakes). Matches Pass 1 morals.
+
+| KEEP-read-as-shader-lang | FORBID |
+|---|---|
+| CRD 2026-09-15 identity / module / textual structure (PAGE A) | Module text ⇒ Lace WORD / Core schema (A; **FORBID-as-Lace-WORD**) |
+| Types / plain / memory-view / texture·sampler (PAGE B) | WGSL types ⇒ Lace schema / Core types (B; **FORBID-as-Core-write**) |
+| Address spaces / vars / layout / memory model (PAGE C) | Address space / buffer / memory ⇒ Lace strand or second store (C; **FORBID-as-Lace-store**) |
+| Expressions / ops / address-of / indirection (PAGE D) | Expression algebra ⇒ Lace WORD algebra / Core ops (D; **FORBID-as-Lace-WORD**) |
+| Statements / control flow / discard / const_assert (PAGE E) | `discard` / control flow ⇒ Lace cut / append scheduler (E; **SILENT-for-Lace-append**) |
+| Functions / attributes / entry points / stages (PAGE F) | Entry point ⇒ Φ; module/stage/workgroup ⇒ lace cord / Graphic D (F; **FORBID-as-emission-rule** / **FORBID-as-Lace-strand**) |
+| Built-in functions (numeric/texture/atomic/barrier/…) (PAGE G) | Builtins / barriers ⇒ Core ops / Φ fillers / POINTER when (G; **FORBID-as-Core-write** / **FORBID-as-emission-rule**) |
+| Execution / uniformity / validation / errors (PAGE H) | Uniformity / validation / errors ⇒ Lace law / Φ gate (H; **SILENT-for-Lace-append**) |
+| Shader-lang as Shadow projection language (PAGE X) | WGSL ⇒ WebGPU Device/Queue swap · WGSL ⇒ wasm64 swap (X; **FORBID-as-host-API-swap** / **FORBID-as-compile-target-swap**) |
+
+**MAP arrows (coherence with Hands / projection / hologram / WebGPU companion / wasm64 — all exits FORBIDDEN into Core write):**
+
+```
+A ──KEEP-read-as-shader-lang──► Shadow shader-lang identity   ──[X]──► Core / sixth graphic / WORD
+B ──KEEP-read──► shader types                                  ──[X]──► Lace schema / Core types
+C ──KEEP-read──► address spaces / layout / memory model        ──[X]──► Lace 1D strand / second store
+D ──KEEP-read──► expression model                              ──[X]──► Lace WORD algebra / Core ops
+E ──SILENT──► control flow / discard                           ──[X]──► Lace cut / append scheduler
+F ──KEEP-read──► stages / entry / interface                    ──[X]──► Φ / Graphic D / lace cord
+G ──KEEP-read──► builtins (draw path cite)                     ──[X]──► Core ops / Φ fillers / src/
+H ──SILENT──► uniformity / validation / errors                 ──[X]──► Lace law / Φ gate
+X ──SILENT──► false friends / steward refuse                   ──[X]──► host-API swap · wasm64 swap · invent Φ
+webgpu-* ──cite-only──► HOST/GPU companion (PAGE E WGSL boundary)──[X]──► conflate shelves / edit webgpu-*
+wasm-spec-3 ──cite-only──► wasm64 compile target               ──[X]──► conflate with WGSL
+clock/hologram ──cite──► Shadow viewer using WGSL draw path    ──[X]──► Core authority
+emission = [GAP]  ·  Hands win  ·  no src/ until human-accepted emission
+```
+
+### D3 — Failure modes (FM-Wgsl1…Wgsl9)
+
+| ID | Misread | Hands / law deadbolt | PDF pin (Pass 1 reuse + Pass 2 verify) |
+|---|---|---|---|
+| **FM-Wgsl1** | **Shader module / stage / workgroup** ⇒ Lace **strand** / Graphic D / lace cord | **FORBID-as-Lace-strand** · PAGE F | §2 Module PDF **15** — “§ 2. WGSL Module”; Lifecycle §2.1 PDF **16**; Entry/stages PDF **181–182** — “An entry point is a user-defined function that performs the work for a particular shader stage.”; `workgroup_size` Attribute PDF **180**; workgroups §15.3 PDF **241** (cite F/A) |
+| **FM-Wgsl2** | **Entry point** ⇒ POINTER **when** / arity / adjacency (**Φ** fill) | **FORBID-as-emission-rule** · pointer-emission `[GAP]` · PAGE F | §13 Entry Points PDF **181** — entry ≠ Φ; interface / EXAMPLE ENTRY POINT PDF **182** (cite F) |
+| **FM-Wgsl3** | **Address space / buffer / memory model** ⇒ Lace **1D strand** / second store | **FORBID-as-Lace-store** · PAGE C | Address Spaces §14.3 PDF **201–202**; no-heap note PDF **90** — “In WGSL there is no way to allocate new memory from a \"heap\".” (cite C) |
+| **FM-Wgsl4** | **WGSL types / source / identifiers** ⇒ Lace **WORD** / Core schema language | **FORBID-as-Lace-WORD** · **FORBID-as-Core-write** · PAGE B | §6 Types PDF **49** — “In WGSL, a type is a set of values…”; §6.2 Plain Types PDF **56**; Module text PDF **15–16** (cite B/A) |
+| **FM-Wgsl5** | **`discard`** ⇒ Lace **cut** / authorized rewrite / append refuse / Φ gate | **SILENT-for-Lace-append** · **FORBID-as-emission-rule** · PAGE E | Control Flow §9.4 PDF **149**; discard EXAMPLE PDF **159** — “USING THE DISCARD STATEMENT TO THROW AWAY A FRAGMENT” (cite E) |
+| **FM-Wgsl6** | **Barrier / uniformity analysis** ⇒ POINTER emission accept / **Φ** gate / Lace scheduler | **FORBID-as-emission-rule** · **SILENT-for-Lace-append** · PAGE G/H | §17.11 Synchronization PDF **347** — control barrier / AcquireRelease / uniform control flow; `storageBarrier` PDF **347**; `workgroupBarrier` PDF **348**; Uniformity / Execution §15 PDF **213+** (cite G/H) |
+| **FM-Wgsl7** | **WGSL** ⇒ **WebGPU Device/Queue/Buffer** host API / replaces webgpu-* shelf | **FORBID-as-host-API-swap** · PAGE X | Module lifecycle cites host `createShaderModule` PDF **16** (host hook ≠ this Spec’s shelf) · cite webgpu Pass 1–5 (different Spec; **do not edit**) |
+| **FM-Wgsl8** | **WGSL** ⇒ **wasm64 compile target** / replaces wasm-spec-3 shelf | **FORBID-as-compile-target-swap** · PAGE X | PAGE X steward refuse (6) + wasm-spec-3 Pass 1–6 cite-only (different layer; **not** this CRD) |
+| **FM-Wgsl9** | **Builtins** (numeric / texture / atomic / constructors) ⇒ Lace **Core ops** / Φ fillers | **FORBID-as-Core-write** · **FORBID-as-emission-rule** · PAGE G | §17 Built-in Functions PDF **264** — “Certain functions are predeclared… called built-in functions.”; numeric §17.5 PDF **284**; texture §17.7 PDF **313**; atomic §17.8 PDF **338** (cite G) |
+
+No FM row left `[OPEN]`. Pins reused/verified from Pass 1; Pass 2 re-sighted Module/Lifecycle/`workgroup_size`/Entry/Address/Types/`discard`/barriers/Uniformity/Built-ins via `pdftotext -f N -l N -layout`. Tightened FM-Wgsl1 `workgroup_size` pin to Attribute PDF **180** (Pass 1 locus ~179); barriers to §17.11 PDF **347–348**.
+
+### D4 — Interface coherence (Hands + projection + hologram + WebGPU companion + wasm64)
+
+**Only** KEEP-read-as-shader-lang outputs may sit **beside** Lace: WGSL CRD as the **shader language** Shadow projection / hologram draw path may compile into a WebGPU shader module. **Nothing** in A–H/X writes Graphic D, strand/, word/, pointer/, or fills `pointer-emission.md`. **webgpu-*** = **HOST/GPU Web API** companion — cite-only; WGSL does **not** replace Device/Queue/Buffer (**FM-Wgsl7**). WebGPU PAGE E “WGSL boundary” cites this language Spec; do **not** edit webgpu-*. **wasm-spec-3** = **compile-target ISA / wasm64 seal** — cite-only; WGSL does **not** replace it (**FM-Wgsl8**). **clock/** (`lace-projection.html`) and **hologram/** (`visual-primitives.md` WGSL live path / `shadow-clock-gearing.html`) are **Shadow surfaces** that *cite* WGSL — glyphs ≠ schema; they do not become Core authority for this CRD or vice versa. **`docs/clock/wasm/README.md`** is Shadow **projection bake** — **different layer** from this shader-lang shelf; not Spec authority. Lace↔shader / hologram draw sketches stay **PROPOSAL-only**; compiling or citing WGSL does **not** accept emission. Ch.16 / Ch.18 remain cite-as-needed — not Core grammar, not new PAGEs. `[GAP]` remains. Shoe in hands, or no. **Do not invent Core maps** from this clipboard into five-stakes or reason-model.
+
+### D5 — Source gate (cite Pass 1)
+
+PDF is **PRESENT** (do not narrate absent). Pass 1 receipt (P1-R): `refs/local/wgsl-w3c-crd-20260915.pdf` → attachment `73dc9e35047d8715a88ae3b1082b2e887c750da9f5c0f97d78410fc6c2f5eb6d.pdf`; **381** pages; text layer present (Skia/PDF); PDF one-based primary (no clear printed↔PDF offset); SHA-256 `73dc9e35047d8715a88ae3b1082b2e887c750da9f5c0f97d78410fc6c2f5eb6d`; title WebGPU Shading Language · W3C CRD **15 September 2026** · URL `https://www.w3.org/TR/2026/CRD-WGSL-20260915/`; `git check-ignore` OK; **never `git add`**. Pass 1 products: clipboard PAGE A–H, X · **no** ascii Wave A · mechanisms deferred · execute ~`c64a620` / receipt refresh ~`402f128` / plan ancestor station release tip historically ~`8c912a1` (rebase-aware: cite P1-R fields on clipboard). Method this pass: reuse Pass 1 pins; `pdftotext` verify for FM-Wgsl\* + D7. Five-stakes left untouched (T5 skip).
+
+### D6 — Sealed (still)
+
+- Invent POINTER when / arity / adjacency (Φ stays `[GAP]`)
+- Soften Pass 1 FORBID-as-Lace-WORD / FORBID-as-Lace-store / FORBID-as-Lace-strand / FORBID-as-emission-rule / FORBID-as-host-API-swap / FORBID-as-compile-target-swap / PROPOSAL-only / SILENT
+- Promote WGSL types / source / identifiers as Lace WORD / Core schema
+- Promote shader module / stage / workgroup as Graphic D / lace cord
+- Use entry point / builtins / barriers / uniformity as POINTER emission / Φ
+- Treat address spaces / buffers / memory model as Lace store / second strand
+- Treat `discard` as Lace cut / append refuse / Φ gate
+- Swap WGSL for WebGPU Device/Queue/Buffer host API
+- Swap WGSL for wasm64 / wasm-spec-3 compile target
+- Treat validation / shader-creation / pipeline-creation / dynamic errors as Lace law / Φ gate
+- Create `wgsl-ascii-machinery.md` / Wave A panels · create `wgsl-mechanisms.md` / mechanism cards
+- Amend webgpu-* / wasm-spec-3 / law / graphics / systems-manifest / five-stakes / clock / hologram
+- Invent Core maps into five-stakes / reason-model
+- Add `src/` / Cargo.toml before emission acceptance
+- Git-add the PDF · pretend OCR / claim PDF absent when present
+- Clone Xiao–Zhu / Petersen / AgentScope LLM morals, wasm FM-W\* ISA morals, or WebGPU FM-Wgpu\* host morals onto this shelf
+- Open new PAGEs for Ch.16 Keyword Summary or Ch.18 Grammar
+
+### D7 — Constructive miniature (Shadow only) — shader module lifecycle sketch
+
+**Choice (a).** Stamp: **FORBID-as-Lace-strand** · **FORBID-as-host-API-swap** · **FORBID-as-Core** · **FORBID-as-emission-rule** · **SILENT-for-Lace-append** · not POINTER when-rule · not Φ · not `src/`. Language-side paper sketch only (Ch.2 / PAGE A · Module PDF **15–16**). Host API method names below are **cite hooks** into the webgpu companion shelf — they do **not** move this clipboard onto the Device/Queue shelf (FM-Wgsl7). Choice (b) entry-point interface miniature deferred.
+
+1. Compose a single WGSL module (Unicode UTF-8 text, no BOM) — **KEEP-read-as-shader-lang** identity only; module text ↛ Lace WORD (FM-Wgsl4) · module ↛ lace cord (FM-Wgsl1).
+2. Host hook (cite-only): shader module creation via WebGPU `createShaderModule` — lifecycle event on PDF **16**; **FORBID-as-host-API-swap** (do not treat this Spec as Device/Queue API).
+3. Host hook (cite-only): pipeline creation binds the module’s entry points / stages — still host/GPU companion; entry ↛ Φ (FM-Wgsl2).
+4. Shader execution start / end (lifecycle events on PDF **16**) — GPU invocation semantics; **SILENT-for-Lace-append**; not Lace append order / not Φ gate (FM-Wgsl6).
+
+**[OPEN] (book continues; not settled for Lace):** full Valid Usage / diagnostic filter detail; which hologram draw embed may compile which module — out of scope here. Do **not** finish those from Lace.
+
+**Lace refusal:** this sketches **shader-lang module → host create → pipeline → execution** on the language side only. It does **not** emit POINTER, does **not** append to Graphic D, does **not** open Core doors / `src/`, and does **not** fill emission `[GAP]`. Shader module is not strand. Entry point is not Φ. WGSL is not Device/Queue.
+

@@ -1,7 +1,7 @@
 # WGSL CRD 2026-09-15 — Pass 2 PLAN (leftovers / failure modes / shader-lang coherence)
 
-**Status:** **HELD / NOT EXECUTED** — plan only this turn.  
-**Station:** clipboards (plan claim: `wgsl Pass 2 plan HELD`)  
+**Status:** **EXECUTED** — Pass 2 deltas landed on `wgsl-clipboard.md`.  
+**Station:** clipboards (execute claim: `wgsl Pass 2 EXECUTE`)  
 **Base at plan:** `ec3d8b7` (= `origin/main` after maps release / verification-iter2-pass-2 + cold-doors pass 3 plan). Refresh `git pull --ff-only` before any execute.  
 **Spec:** *WebGPU Shading Language* (WGSL) — **W3C Candidate Recommendation Draft, 15 September 2026** · editors Alan Baker, Mehmet Oguz Derin, David Neto (et al.)  
 **Clipboard under test:** `docs/clipboards/wgsl-clipboard.md`  
@@ -57,7 +57,7 @@ pull/ff → claim clipboards → Hands + projection skim (shader-lang mesh)
 |  KEEP-read: shader-lang mechanics for Shadow projection draw path.   |
 |  FORBID-as-Core-write; NON-binding on Core/src/Phi.                  |
 |  No src/ until pointer-emission accepted.  One strand.               |
-|  Status this commit: HELD / NOT EXECUTED — plan only.                |
+|  Status this commit: EXECUTED — D1–D6 (+ D7) on clipboard.                |
 |  Emission [GAP] sealed.  No mechanism cards / ASCII yet (Pass 3+).   |
 +======================================================================+
 ```
@@ -417,7 +417,7 @@ WGSL ≠ WebGPU Device/Queue. WGSL ≠ wasm64.
 
 | Field | Value |
 |---|---|
-| Status | **HELD / NOT EXECUTED** |
+| Status | **HELD / NOT EXECUTED** (historical — plan turn) |
 | When | 2026-09-18 ~21:38 PT |
 | Agent | `wgsl Pass 2 plan HELD` |
 | Base | `ec3d8b7` (= origin/main at claim) |
@@ -428,19 +428,19 @@ WGSL ≠ WebGPU Device/Queue. WGSL ≠ wasm64.
 | Push | **No** |
 | Emission | `[GAP]` |
 
-### Execution receipt (fill on execute)
+### Execution receipt (filled on execute)
 
 | Field | Value |
 |---|---|
-| Status | _pending_ |
-| When | |
+| Status | **EXECUTED** |
+| When | 2026-09-18 ~21:41 PT |
 | Agent | `wgsl Pass 2 EXECUTE` |
-| Product | D1–D6 (+ D7 if any) on `wgsl-clipboard.md` |
+| Product | D1–D6 (+ D7 module-lifecycle) on `wgsl-clipboard.md` · P2-R |
 | T5 five-stakes / Core maps | **skip** (default) |
 | T7 ascii/mechanisms/webgpu/wasm | **skip** |
-| FM-Wgsl1…Wgsl9 | _pending_ |
-| Amended map/law/graphics/src/webgpu/wasm | **No** (expected) |
-| PDF staged | **No** (required) |
+| FM-Wgsl1…Wgsl9 | all pinned (no OPEN); barriers PDF **347–348**; workgroup_size Attribute PDF **180** |
+| Amended map/law/graphics/src/webgpu/wasm | **No** |
+| PDF staged | **No** |
 | Emission | `[GAP]` |
-| D7 | _pending_ |
-| Claim BASE | |
+| D7 | **included** — choice (a) module lifecycle · FORBID-as-Lace-strand · FORBID-as-host-API-swap · FORBID-as-Core · FORBID-as-emission-rule · SILENT |
+| Claim BASE | `76f0472` (= origin/main after refresh; was `e6e1935` at first claim) |
