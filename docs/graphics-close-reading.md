@@ -198,13 +198,21 @@ repo's first line is a physical instruction — *put a shoe lace in your hands* 
 and this is the only place the source fixes the exchange rate between that object
 and the model.
 
-### `[UNSUPPORTED]` — the conversion table, and the ruling that replaces it
+### The centimeter is the index unit
 
-**Human ruling, iteration 4 pass 5:** *the unit is the index. The lace is a 1D
-array, and both length wordings are confusing.*
+**Human ruling:** *the unit is the index. The centimeter **is** the index unit,
+whatever a unit of lace is.*
 
-The table below is kept for the record and is **`[UNSUPPORTED]`**. It is not
-merely unproven; **it is the wrong kind of quantity.**
+**So the header's clause is not an analogy and must not be read as one.** It is the
+source naming the step between one position on the strand and the next. One
+centimeter is one index. The lace is a 1D array; the array's positions are
+indices; the source calls an index a centimeter of wire.
+
+**This document said otherwise for one commit.** It read the ruling as demoting
+the clause to a physical metaphor — *"an index has no centimetres"* — and that was
+wrong. The ruling names the unit; it does not retire it.
+
+**The conversion table is kept for the record and is `[UNSUPPORTED]`.**
 
 | Text | Lace | |
 |---|---|---|
@@ -213,26 +221,23 @@ merely unproven; **it is the wrong kind of quantity.**
 | a 1,000-word document | 10 m | `[UNSUPPORTED]` |
 | an 80,000-word book | 800 m | `[UNSUPPORTED]` |
 
-**Two things are wrong with it, and the second is the ruling.**
+**What is wrong with it is the counting, not the unit.**
 
-1. **It counts only words.** The array holds WORD **and** POINTER entries. Panel
-   `D1` shows **six pointers against five words** — so a table that converts word
-   count to length understates the strand by more than half, on the source's own
-   eleven rows. Whatever the exchange rate is, it is not one word to one unit.
-2. **Length is not the array's unit.** The lace is one append-only 1D array and
-   its positions are **indices**. An index has no centimetres. A sentence of
-   twelve words does not occupy twelve of anything until you say twelve *what*,
-   and the only answer the structure supports is **entries** — which is eleven,
-   not twelve, for `D1`'s example.
+It reads *one word, one centimeter* as *one word, one index* — **and that assumes
+only WORDs occupy indices.** They do not. The array holds WORD **and** POINTER
+entries, and panel `D1` shows **eleven rows for five words: six pointers against
+five words.** Measured in indices, `D1`'s example is **eleven centimeters, not
+five**, and every row of the table above is short by whatever the pointers cost.
 
-**So the header's clause is the source's physical analogy for holding the object,
-not a unit of the model.** It earns the shoe lace in the hands; it does not fix an
-exchange rate, and nothing may derive one from it. The hands test in
-`docs/reason-model-map.md` stands as an instruction to hold a lace, not as a
-measurement.
+**`[GAP]` — does a POINTER occupy a centimeter?** The source names the unit and
+does not say what fills it. `D1` puts pointers in the array's own rows, which is
+the reason to think they do; nothing in the four graphics states it. **The ruling
+fixes the unit. It does not fix the census, and a convenient census must not be
+invented for it.**
 
-**`[GAP]`** — the source states no unit for an index. It is not closed here, and
-a convenient one must not be invented for it.
+So the hands test in `docs/reason-model-map.md` still measures something real —
+**a centimeter of lace is an index of Lace** — and what remains unknown is how many
+indices a given text costs, not what an index is.
 
 ---
 
