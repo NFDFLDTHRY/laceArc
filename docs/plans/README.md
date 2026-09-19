@@ -4,6 +4,7 @@
 
 | File | Job |
 |---|---|
+| [math-execution-problem-map-pass-1.md](math-execution-problem-map-pass-1.md) | **EXECUTED** problem map for math-execution Pass 1 — READY-PARTIAL ∧ BLOCKED-COMPLETE; Φ `[GAP]`; not a formal model |
 | [rust-nostd-crate-map.md](rust-nostd-crate-map.md) | first-party crate *tree* |
 | [rust-nostd-branch-contracts.md](rust-nostd-branch-contracts.md) | serial *birth cards* |
 | [hologram-ast-ir.md](hologram-ast-ir.md) | AST→IR for Layer III nostd pipeline hologram |
