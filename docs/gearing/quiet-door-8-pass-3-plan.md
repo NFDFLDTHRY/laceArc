@@ -1,6 +1,6 @@
 # Quiet door #8 (Gearing) — Pass 3 PLAN
 
-**Status:** PLAN only. Not run.  
+**Status:** EXECUTED — grain on `docs/gearing/quiet-door-8-ascii.md`. Door + HTML + JS unchanged. Emission `[GAP]`.  
 **Station:** gearing-meta (HELD Grok-gearing).  
 **Object:** Gearing grain — protocol vs JS vs renderer vs Hands.  
 **Authority:** [`quiet-door-8-ascii.md`](quiet-door-8-ascii.md) passes 1–2. Gearing door as written. `coord.sh which`.  

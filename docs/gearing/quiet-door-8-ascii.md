@@ -2,7 +2,7 @@
 
 **Object:** `docs/gearing/README.md`  
 **Station:** gearing-meta.  
-**Executed:** [quiet-door-8-pass-1-plan.md](quiet-door-8-pass-1-plan.md) · [quiet-door-8-pass-2-plan.md](quiet-door-8-pass-2-plan.md).  
+**Executed:** [quiet-door-8-pass-1-plan.md](quiet-door-8-pass-1-plan.md) · [quiet-door-8-pass-2-plan.md](quiet-door-8-pass-2-plan.md) · [quiet-door-8-pass-3-plan.md](quiet-door-8-pass-3-plan.md).  
 **Not:** Core. Not Graphic E. Not Hands. Not door #7 pass 7. Not projection iter 5. Not a shaft claim.  
 **Emission:** `[GAP]`. No `src/`. Gearing door bytes untouched. HTML untouched. `contracts-*.js` untouched. Renderer unclaimed. Shafts FREE. Door #7 CLOSED.
 
@@ -104,4 +104,28 @@ G2 stays `[GAP]`.
 | T1 | Eight In / Does / Break / Gap / Role rows |
 | T2 | Gr3 Break = edit JS here; Gr6 Break = rewrite HTML |
 | T3 | Spine left in place |
+| T4 | Door + HTML + JS + shafts + Hologram untouched |
+
+## Pass 3 — grain
+
+Protocol names. Shafts own JS. Renderer owns HTML. Hands stores. Those are not the same column.
+
+| Kind | Says | `which` | Collapse would look like |
+|---|---|---|---|
+| Gearing door | Layer III shafts; not Core | gearing-meta | treat the index as Hands |
+| CLAIMS / RESYNC protocol | one shaft per agent; FIRED/CLEAR | gearing-meta | rewrite protocol as a drop |
+| `contracts-axle.js` (specimen) | axle / Reality deadbolt | gear:axle | edit JS from gearing-meta |
+| Frozen viewer | `docs/shadow-clock-gearing.html` | renderer | claim renderer from gearing-meta |
+| Hands (four graphics) | source of record | graphics | shafts as WORD rows |
+| Hologram door (CLOSED) | touches; not this iteration | hologram | reopen door #7 |
+| Clock door (CLOSED) | Layer III index; not this iteration | hologram | reopen door #6 |
+| Shafts (all eight) | FREE this tick | gear:* | claim a shaft this pass |
+
+## Pass 3 deltas
+
+| Ticket | Action |
+|---|---|
+| T1 | Eight-row grain |
+| T2 | Protocol ≠ JS ≠ renderer ≠ Hands |
+| T3 | `contracts-axle.js` still `gear:axle` |
 | T4 | Door + HTML + JS + shafts + Hologram untouched |
