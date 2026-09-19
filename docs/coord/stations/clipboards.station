@@ -1,7 +1,7 @@
-STATUS: FREE
+STATUS: HELD
 STATION: clipboards
 OWNS: docs/clipboards/**
-AGENT: -
-BASE: -
-SINCE: -
+AGENT: Grok-webnn-pass4-plan
+BASE: 77b6be69a298662c6e6cf2bd77c0d237f56ce157
+SINCE: 2026-09-19T05:43:53Z
 NOTE: webnn Pass 2 EXECUTED (HOST-NN leftovers / FM-Webnn1…9 + D1–D6 + D7 · docs/clipboards/webnn-clipboard.md P2-R · plan EXECUTED); webnn Pass 3 EXECUTED (HOST-NN M-N1…M-N9 + P3-M/P3-R · docs/clipboards/webnn-mechanisms.md · clipboard P3-R · plan EXECUTED · ascii deferred Pass 4+); webnn Pass 1 EXECUTED (HOST-NN · docs/clipboards/webnn-clipboard.md PAGE A–H,X · P1-R · plan EXECUTED); wgsl Pass 6 PLAN HELD (DIAGRAM SOUND / deep ASCII · P6-A/P/X/F/O/R · docs/clipboards/wgsl-pass-6-plan.md · NOT EXECUTED); Pass 5 EXECUTED (P5-X CONFIRM · Order Proposal SHADER-LANG Shadow; clipboard P5-P + ascii mirror; plan EXECUTED); Pass 4 EXECUTED (P-S1…P-S9 + P4-X · wgsl-ascii-machinery.md); Pass 3 EXECUTED (M-S1…M-S9 + P3-M/P3-R · wgsl-mechanisms.md); Pass 2 EXECUTED (D1–D6 + FM-Wgsl1…9 + D7 · P2-R); Pass 1 EXECUTED (SHADER-LANG A–H,X · P1-R); webgpu Pass 5 EXECUTED (HOST/GPU Shadow Order Proposal); webgpu Pass 6 HELD; wasm-spec-3 Pass 6 EXECUTED (wasm64); FREE
