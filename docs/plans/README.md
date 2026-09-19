@@ -24,6 +24,7 @@
 | [verification-iter1-phase-6-plan.md](verification-iter1-phase-6-plan.md) | `[PLAN]` iteration 1 phase 6: run the queued 2b-2d, then the receipt. Graphic A probed; a second MISQUOTE and typos in the source |
 | [verification-iteration-1-receipt.md](verification-iteration-1-receipt.md) | **iteration 1 receipt.** 240/240 cites verified, zero wrong-panel; four counts dissolved on reading; the board for iteration 2 |
 | [verification-iteration-2-plan.md](verification-iteration-2-plan.md) | `[PROPOSAL]` iteration 2: **the instruments.** Pass 1 executed — 4 of 8 checks cannot tell use from mention; 42 cross-file tokens unregistered |
+| [verification-iter2-pass-2-plan.md](verification-iter2-pass-2-plan.md) | `[PLAN]` iteration 2 pass 2: eight adversarial cases against the checker's own labels, run in a disposable tree; plus 2v, the validator |
 | [restructure-plan.md](restructure-plan.md) | `[PROPOSAL]` coherence of the whole tree: twelve measured findings, eight phases, one station per commit; supersedes the defrag plan as filing plan of record |
 
 Sub-shelves: [fixtures/](fixtures/README.md) sealed golden IR · [tools/](tools/README.md) host validator.
