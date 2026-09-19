@@ -1,6 +1,6 @@
 # Systems-manifest ASCII pass 17 plan — Update wave · Iteration 2 · Pass 5 · Shadow Order Proposal + light accuracy (Iter2)
 
-**Status:** **HELD**. Emission `[GAP]`.  
+**Status:** **EXECUTED** (2026-09-19 PT). Emission `[GAP]`.  
 **Series:** Pass **17** (linear executed-passes list) = **Update wave · Iteration 2 · Pass 5**. Subtitle: both names.  
 **Station:** maps (catch-all for `docs/*.md` at court root). Holder: **reference-Mapper**. Keep maps **HELD**.  
 **Authority:** `docs/systems-manifest.md` (Contracts I / II / Layer III; Pieces unchanged).  
@@ -398,13 +398,13 @@ Refuse on execute (and for this Iteration-2 Pass 5):
 
 ### Execute turn (when human says Proceed)
 
-- [ ] T1 P17-X: reconfirm P16-X PASS×11; note FIX applied · OPEN×1 #4; CONFIRM-first; reopen only real drift; thin FIX only if cited; G2/Φ `[GAP]`.  
-- [ ] T2 P17-O: one canonical Iter2 stack Pass 13→14→15→16→P17-P; pointer that Iter1 Pass 11 Order stands for G-III (not rival).  
-- [ ] T3 P17-P: Iter2 Shadow Order Proposal body on companion; NON-binding · FORBID-as-Core-write · G-KD OPEN-with-cause · P15-M · Piece 13 dual · retained G-III cite · #4 leftover · I→III read/cite · Hands win · emission `[GAP]`; does not overwrite P11-P.  
-- [ ] T4 thin Overview/Pass 16/P11 pointers + executed-passes +17; no Core gear rename; no quiet-door→I.  
-- [ ] T5 Pass 17 deltas; G2 / Φ remain `[GAP]`; refuse honored (incl. no Order-as-Core; no invent G-KD-4/5; no clipboard/kit/history edits; no invent Φ; no src/; no fill G2).  
-- [ ] Passes 1–16 retained (thin pointers only); P11-P retained; no clipboard/kit/history edits; no new machinery files; no Core invent beyond P17-X-cited thin fixes; no `src/`.  
-- [ ] maps still HELD by reference-Mapper (unless human releases).
+- [x] T1 P17-X: reconfirm P16-X PASS×11; note FIX applied · OPEN×1 #4; CONFIRM-first; reopen only real drift; thin FIX only if cited; G2/Φ `[GAP]`.  
+- [x] T2 P17-O: one canonical Iter2 stack Pass 13→14→15→16→P17-P; pointer that Iter1 Pass 11 Order stands for G-III (not rival).  
+- [x] T3 P17-P: Iter2 Shadow Order Proposal body on companion; NON-binding · FORBID-as-Core-write · G-KD OPEN-with-cause · P15-M · Piece 13 dual · retained G-III cite · #4 leftover · I→III read/cite · Hands win · emission `[GAP]`; does not overwrite P11-P.  
+- [x] T4 thin Overview/Pass 16/P11 pointers + executed-passes +17; no Core gear rename; no quiet-door→I.  
+- [x] T5 Pass 17 deltas; G2 / Φ remain `[GAP]`; refuse honored (incl. no Order-as-Core; no invent G-KD-4/5; no clipboard/kit/history edits; no invent Φ; no src/; no fill G2).  
+- [x] Passes 1–16 retained (thin pointers only); P11-P retained; no clipboard/kit/history edits; no new machinery files; no Core invent beyond P17-X-cited thin fixes; no `src/`.  
+- [x] maps still HELD by reference-Mapper (unless human releases).
 
 ---
 
