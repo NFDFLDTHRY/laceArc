@@ -18,6 +18,7 @@
 | [verification-iter1-pass-2-plan.md](verification-iter1-pass-2-plan.md) | `[PLAN]` iteration 1 pass 2: 240 cite-bearing lines read against the four PNGs, by graphic not by document; all four sources read-only |
 | [verification-iter1-pass-2-findings.md](verification-iter1-pass-2-findings.md) | pass 2 record, append-only per sub-pass. 2a complete: 79 of 79 Graphic D cites, both D1 transcriptions exact, three findings |
 | [verification-iter1-pass-3-plan.md](verification-iter1-pass-3-plan.md) | `[PLAN]` iteration 1 pass 3: evidence strength. C10's vocabulary has zero adoption outside C10; C01 prescribes a rival set and that one won |
+| [verification-iter1-pass-3-findings.md](verification-iter1-pass-3-findings.md) | pass 3 record, 3a-3c complete. No document has ever recorded a positive evidence state; the task template, not the law, is the de-facto standard |
 | [restructure-plan.md](restructure-plan.md) | `[PROPOSAL]` coherence of the whole tree: twelve measured findings, eight phases, one station per commit; supersedes the defrag plan as filing plan of record |
 
 Sub-shelves: [fixtures/](fixtures/README.md) sealed golden IR · [tools/](tools/README.md) host validator.

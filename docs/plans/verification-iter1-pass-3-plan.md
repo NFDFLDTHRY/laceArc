@@ -1,6 +1,6 @@
 # Verification iteration 1, pass 3 — evidence at its actual strength
 
-**Status:** `[PLAN]`. Execution NOT_RUN. **Station:** maps (this file and the shared record only).
+**Status:** `[PLAN]`. **EXECUTED** at `0b97eec` — [the record](verification-iter1-pass-3-findings.md). **Station:** maps (this file and the shared record only).
 **Emission:** `[GAP]`. No `src/`.
 **Iteration:** [verification iteration 1](verification-iteration-1-plan.md), pass 3 of six. Pass 1 EXECUTED; pass 2 at 2a.
 
@@ -76,7 +76,7 @@ The distinction that decides every verdict is between a **claim** ("this was ver
 
 The 173 lines span **five stations** — maps, prompts, kit, hologram, history. `agent-control.md` is kit, and C01 and C10 are operating law.
 
-**Pass 3 edits none of them.** Findings land in the [pass 2 record](verification-iter1-pass-2-findings.md) under its own heading, the way 2a established. One claim, one file, no contention with four campaigns.
+**Pass 3 edits none of them.** Findings land in one maps-owned record, the way 2a established. One claim, one file, no contention with four campaigns. *(Executed as its own file, not inside the pass 2 record: filing pass 3 under a pass 2 name is the incoherence iteration 0 undid.)*
 
 **Reconciling C01 and C10 is not pass 3's to do.** It is a kit edit to law-adjacent text, and which vocabulary wins is a human ruling. Pass 3 states the collision, counts it, and proposes; pass 5 is where enforcement questions are decided.
 
