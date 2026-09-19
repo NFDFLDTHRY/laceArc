@@ -57,7 +57,7 @@ aside[hidden]{display:none}
 </div>
 <div class="hud">
   <header class="hit">
-    <h1>LAYER III · i3p4 · RAWCDN SHA</h1>
+    <h1>LAYER III · i3p5 · RAWCDN SHA</h1>
     <p>Install this URL only if it is <code>rawcdn.githack.com</code> + a full SHA. Floating <code>main</code> is preview. Cubes are glyphs. No emitter. [GAP]</p>
   </header>
   <div class="modes hit">
@@ -82,7 +82,7 @@ aside[hidden]{display:none}
     <div class="row">
       <input id="t" type="range" min="0" max="10" step="0.02" value="0"/>
       <span id="phase">t=0000</span>
-      <span class="stamp">i3p4</span>
+      <span class="stamp">i3p5</span>
       <span class="stamp">A17</span>
       <span class="stamp" id="gpustamp">GPU ?</span>
       <span class="stamp" id="szstamp">?x?</span>
@@ -198,18 +198,25 @@ struct VSOut { @builtin(position) p: vec4<f32>, @location(0) wpos: vec3<f32>, @l
   let spec = pow(max(dot(reflect(-L, N), V), 0.0), 48.0);
   let hash = fract(sin(dot(i.wpos.xz + i.wpos.y, vec2<f32>(12.99, 78.23))) * 43758.5);
   if (i.born < 0.0) {
+    if (u.t.w > 0.5) { discard; }
     let cell = floor(i.wpos.xz * 0.72);
     let fx = fract(i.wpos.x * 0.72);
     let fz = fract(i.wpos.z * 0.72);
     let edge = min(min(fx, 1.0 - fx), min(fz, 1.0 - fz));
-    let trace = 1.0 - smoothstep(0.012, 0.038, edge);
-    let well = 0.55 + 0.45 * hash;
+    let coarse = 1.0 - smoothstep(0.018, 0.045, edge);
+    let fx2 = fract(i.wpos.x * 2.16);
+    let fz2 = fract(i.wpos.z * 2.16);
+    let fine = 1.0 - smoothstep(0.008, 0.022, min(min(fx2, 1.0-fx2), min(fz2, 1.0-fz2)));
+    let well = 0.45 + 0.55 * hash;
+    let crack = step(0.93, fract(sin(dot(cell, vec2<f32>(3.7, 9.1))) * 6123.2));
     let tick = step(0.97, fract(sin(dot(cell, vec2<f32>(11.1, 4.7))) * 9123.4));
-    var rgb = vec3<f32>(0.03, 0.055, 0.08) * well;
-    rgb += vec3<f32>(0.08, 0.42, 0.52) * trace * 0.55;
-    rgb += vec3<f32>(0.7, 0.18, 0.04) * tick * 0.18;
+    var rgb = vec3<f32>(0.025, 0.045, 0.07) * well;
+    rgb += vec3<f32>(0.07, 0.38, 0.48) * coarse * 0.42;
+    rgb += vec3<f32>(0.10, 0.48, 0.55) * fine * 0.22;
+    rgb += vec3<f32>(0.15, 0.08, 0.04) * crack * 0.25;
+    rgb += vec3<f32>(0.7, 0.18, 0.04) * tick * 0.16;
     let d = length(i.wpos.xz - u.t.yz);
-    rgb += vec3<f32>(0.12, 0.45, 0.55) * (1.0 - smoothstep(0.3, 2.4, d)) * 0.28;
+    rgb += vec3<f32>(0.12, 0.45, 0.55) * (1.0 - smoothstep(0.3, 2.4, d)) * 0.22;
     return vec4<f32>(rgb, 1.0);
   }
   let appear = smoothstep(i.born - 0.15, i.born + 0.05, u.t.x);
@@ -217,16 +224,19 @@ struct VSOut { @builtin(position) p: vec4<f32>, @location(0) wpos: vec3<f32>, @l
   var rgb = i.col;
   var alpha = 1.0;
   let plasma = i.col.g > 0.7 && i.col.r < 0.4;
-  let filament = i.col.b > 0.75 && i.col.g > 0.6 && i.col.r < 0.45;
+  let filament = i.col.b > 0.75 && i.col.g > 0.55 && i.col.r < 0.45;
   let ember = i.col.r > 0.85;
   let glass = i.col.r > 0.4 && i.col.r < 0.75 && i.col.g < 0.28 && i.col.b < 0.2;
   let bead = i.col.b > 0.7 && i.col.g < 0.65 && i.col.r < 0.3;
+  let glassPass = u.t.w > 0.5;
+  let isGlassish = glass || plasma || filament;
+  if (glassPass != isGlassish) { discard; }
   if (glass) {
     rgb = vec3<f32>(0.35, 0.62, 0.72) * (0.12 + 0.35 * diff);
     rgb += vec3<f32>(0.55, 0.9, 1.0) * fres * 1.15;
     rgb += vec3<f32>(spec) * 0.55;
     rgb += vec3<f32>(0.45, 0.12, 0.04) * (0.08 + 0.12 * hash);
-    alpha = mix(0.14, 0.62, fres) * appear;
+    alpha = mix(0.08, 0.42, fres) * appear;
   } else if (ember) {
     let pulse = 0.65 + 0.35 * sin(u.t.x * 3.2 + hash * 6.0);
     rgb = vec3<f32>(1.0, 0.32, 0.05) * (0.55 + 0.45 * pulse);
@@ -283,7 +293,7 @@ function lookAt(e,c,up){
 function bakeViaWorker(src){
   return new Promise((resolve, reject) => {
     let w;
-    try { w = new Worker(src || "projection-bake-worker.js?i=3p4"); }
+    try { w = new Worker(src || "projection-bake-worker.js?i=3p5"); }
     catch (e) { reject(e); return; }
     const t = setTimeout(() => { try{w.terminate();}catch(_){ } reject(new Error("bake timeout")); }, 8000);
     w.onerror = e => { clearTimeout(t); try{w.terminate();}catch(_){ } reject(e); };
@@ -301,9 +311,9 @@ function bakeViaWorker(src){
   });
 }
 async function bakeScene(){
-  try { return await bakeViaWorker("projection-bake-worker.js?i=3p4"); }
+  try { return await bakeViaWorker("projection-bake-worker.js?i=3p5"); }
   catch (e1) {
-    const src = await fetch("projection-bake-worker.js?i=3p4", {cache:"no-store"}).then(r => {
+    const src = await fetch("projection-bake-worker.js?i=3p5", {cache:"no-store"}).then(r => {
       if (!r.ok) throw new Error("worker fetch "+r.status);
       return r.text();
     });
@@ -427,22 +437,27 @@ async function main(gen){
   }
   const bP=buf(scene.P), bN=buf(scene.N), bC=buf(scene.C), bB=buf(scene.B);
   const uni=device.createBuffer({size:256,usage:GPUBufferUsage.UNIFORM|GPUBufferUsage.COPY_DST});
-  const pipe=device.createRenderPipeline({
-    layout:"auto",
-    vertex:{
-      module:device.createShaderModule({code:WGSL}), entryPoint:"vs",
-      buffers:[
-        {arrayStride:12,attributes:[{shaderLocation:0,offset:0,format:"float32x3"}]},
-        {arrayStride:12,attributes:[{shaderLocation:1,offset:0,format:"float32x3"}]},
-        {arrayStride:12,attributes:[{shaderLocation:2,offset:0,format:"float32x3"}]},
-        {arrayStride:4,attributes:[{shaderLocation:3,offset:0,format:"float32"}]}
-      ]
-    },
-    fragment:{module:device.createShaderModule({code:WGSL}),entryPoint:"fs",targets:[{format:fmt,blend:{color:{srcFactor:"src-alpha",dstFactor:"one-minus-src-alpha",operation:"add"},alpha:{srcFactor:"one",dstFactor:"one-minus-src-alpha",operation:"add"}}}]},
-    primitive:{topology:"triangle-list",cullMode:"none"},
-    depthStencil:{format:"depth24plus",depthWriteEnabled:true,depthCompare:"less"}
-  });
-  const bg=device.createBindGroup({layout:pipe.getBindGroupLayout(0),entries:[{binding:0,resource:{buffer:uni}}]});
+  const shader=device.createShaderModule({code:WGSL});
+  const vbufs=[
+    {arrayStride:12,attributes:[{shaderLocation:0,offset:0,format:"float32x3"}]},
+    {arrayStride:12,attributes:[{shaderLocation:1,offset:0,format:"float32x3"}]},
+    {arrayStride:12,attributes:[{shaderLocation:2,offset:0,format:"float32x3"}]},
+    {arrayStride:4,attributes:[{shaderLocation:3,offset:0,format:"float32"}]}
+  ];
+  const blend={color:{srcFactor:"src-alpha",dstFactor:"one-minus-src-alpha",operation:"add"},alpha:{srcFactor:"one",dstFactor:"one-minus-src-alpha",operation:"add"}};
+  function mkPipe(depthWrite){
+    return device.createRenderPipeline({
+      layout:"auto",
+      vertex:{module:shader,entryPoint:"vs",buffers:vbufs},
+      fragment:{module:shader,entryPoint:"fs",targets:[{format:fmt,blend}]},
+      primitive:{topology:"triangle-list",cullMode:"none"},
+      depthStencil:{format:"depth24plus",depthWriteEnabled:depthWrite,depthCompare:"less"}
+    });
+  }
+  const pipeSolid=mkPipe(true);
+  const pipeGlass=mkPipe(false);
+  const bgSolid=device.createBindGroup({layout:pipeSolid.getBindGroupLayout(0),entries:[{binding:0,resource:{buffer:uni}}]});
+  const bgGlass=device.createBindGroup({layout:pipeGlass.getBindGroupLayout(0),entries:[{binding:0,resource:{buffer:uni}}]});
   const sess={dead:false,raf:0,device,depth:null};
   gpuSession=sess;
   device.lost.then(()=>{
@@ -511,17 +526,28 @@ async function main(gen){
       const vp=matMul(persp(0.85,asp,0.1,80), lookAt(eye, frame.look,[0,1,0]));
       const ub=new Float32Array(64);
       ub.set(vp,0); ub[16]=eye[0];ub[17]=eye[1];ub[18]=eye[2];ub[19]=1;
-      ub[20]=tVal; ub[21]=frame.look[0]; ub[22]=frame.look[2];
+      ub[20]=tVal; ub[21]=frame.look[0]; ub[22]=frame.look[2]; ub[23]=0;
       device.queue.writeBuffer(uni,0,ub);
       const tex=ctx.getCurrentTexture();
       const enc=device.createCommandEncoder();
       const pass=enc.beginRenderPass({
-        colorAttachments:[{view:tex.createView(),clearValue:{r:0.07,g:0.12,b:0.18,a:1},loadOp:"clear",storeOp:"store"}],
+        colorAttachments:[{view:tex.createView(),clearValue:{r:0.05,g:0.08,b:0.12,a:1},loadOp:"clear",storeOp:"store"}],
         depthStencilAttachment:{view:sess.depth.createView(),depthClearValue:1,depthLoadOp:"clear",depthStoreOp:"store"}
       });
-      pass.setPipeline(pipe); pass.setBindGroup(0,bg);
+      pass.setPipeline(pipeSolid); pass.setBindGroup(0,bgSolid);
       pass.setVertexBuffer(0,bP); pass.setVertexBuffer(1,bN); pass.setVertexBuffer(2,bC); pass.setVertexBuffer(3,bB);
-      pass.draw(vCount); pass.end();
+      pass.draw(vCount);
+      pass.end();
+      ub[23]=1;
+      device.queue.writeBuffer(uni,0,ub);
+      const passG=enc.beginRenderPass({
+        colorAttachments:[{view:tex.createView(),clearValue:{r:0,g:0,b:0,a:1},loadOp:"load",storeOp:"store"}],
+        depthStencilAttachment:{view:sess.depth.createView(),depthClearValue:1,depthLoadOp:"load",depthStoreOp:"store"}
+      });
+      passG.setPipeline(pipeGlass); passG.setBindGroup(0,bgGlass);
+      passG.setVertexBuffer(0,bP); passG.setVertexBuffer(1,bN); passG.setVertexBuffer(2,bC); passG.setVertexBuffer(3,bB);
+      passG.draw(vCount);
+      passG.end();
       device.queue.submit([enc.finish()]);
     } catch(_) {
       requestReboot("draw");
@@ -556,7 +582,7 @@ function runAudit(){
   const el=document.getElementById("audit");
   if(!el) return;
   const title=document.querySelector("h1")?.textContent||"";
-  const A=/i3p4/.test(title)?"ok":"fail";
+  const A=/i3p5/.test(title)?"ok":"fail";
   const D=!!(navigator.serviceWorker && navigator.serviceWorker.controller);
   const E=!!(window.deferredPrompt || window.matchMedia("(display-mode: standalone)").matches);
   const F=!!document.getElementById("installbtn");
@@ -567,7 +593,7 @@ function runAudit(){
     const ct=r.headers.get("content-type")||"";
     const B=/manifest|json/i.test(ct)?"ok":("fail "+ct);
     el.textContent=
-      "A title i3p4 "+A+"\n"+
+      "A title i3p5 "+A+"\n"+
       "B manifest MIME "+B+"\n"+
       "C icons 192+512 ok\n"+
       "D SW controlling "+(D?"ok":"fail")+"\n"+

@@ -1,6 +1,6 @@
 # Projection iteration 3 / pass 5 plan — shaders to the hologram lookrefs
 
-**Status:** PLAN. Not executed. Emission `[GAP]`.  
+**Status:** EXECUTED. Emission `[GAP]`. Title `i3p5`. Solid then glass pipelines. Ember halo. Sphere 20. Spine+halo PTR.  
 **Station:** hologram  
 **Target:** Chrome Android 17, rawcdn SHA.  
 **Evidence:** `i3p4` shots `t=0001 DESSERT` and `t=0002 PTR`. Second load lives. Cubes are icy boxes. The orb is a golf ball. The wire is a thread.

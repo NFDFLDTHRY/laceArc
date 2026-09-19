@@ -1,5 +1,5 @@
 /* Layer III. SW must activate even if lookrefs 404. */
-const CACHE = "lace-iii-i3p4";
+const CACHE = "lace-iii-i3p5";
 const PRE = ["./icon-192.png", "./icon-512.png"];
 self.addEventListener("message", e => {
   if (e.data && e.data.type === "skip") self.skipWaiting();
