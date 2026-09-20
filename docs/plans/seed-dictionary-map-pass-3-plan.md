@@ -1,6 +1,6 @@
 # Seed dictionary × model — Pass 3 of 6 PLAN
 
-**Status:** **`PLAN`** · not executed. **Station:** maps (HELD `Grok-maps` · BASE `a3141da`).
+**Status:** **`EXECUTED`** 2026-09-20 · [`seed-dictionary-map-pass-3-defroute.md`](seed-dictionary-map-pass-3-defroute.md). **Station:** maps (`Grok-maps`).
 **Depends on:** pass 2 WORD-only prefix.
 **Human ruling:** what is wired is **each dictionary word to the words used to define that word**.
 **Hands:** Piece 9 — “A word’s definition is a route through other word stars.” Example path: PIE → dessert → slice → whole → food.
