@@ -1,6 +1,6 @@
 # Miss-map — Pass 2 of 6 PLAN
 
-**Status:** **`PLAN`** · not executed. **Station:** maps (HELD `Grok-maps` · BASE `0410f96`).
+**Status:** **`EXECUTED`** 2026-09-20 · [`miss-map-pass-2-sort.md`](miss-map-pass-2-sort.md). **Station:** maps (`Grok-maps`).
 **Depends on:** [`miss-map-pass-1.md`](miss-map-pass-1.md).
 **Emission:** `[GAP]`. No `src/`. Does not fill Slot II or tag D2.
 
