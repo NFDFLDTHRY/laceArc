@@ -85,8 +85,9 @@ cmd_claim() {
   status="$(read_field "$f" STATUS)"
   holder="$(read_field "$f" AGENT)"
 
-  if [[ "$status" == "HELD" && -n "$holder" && "$holder" != "$agent" ]]; then
-    die "shaft '$shaft' is HELD by '$holder' — pick another FREE shaft or wait"
+  if [[ "$status" != "FREE" ]]; then
+    [[ "$status" == "HELD" && -n "$holder" ]] || die "shaft '$shaft' has invalid claim state (STATUS=${status:-missing}, AGENT=${holder:-missing})"
+    [[ "$holder" == "$agent" ]] || die "shaft '$shaft' is HELD by '$holder' — pick another FREE shaft or wait"
   fi
 
   local since

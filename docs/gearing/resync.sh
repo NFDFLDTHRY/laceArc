@@ -34,6 +34,7 @@ cmd_status() {
 cmd_fire() {
   local agent="${1:-}"
   [[ -n "$agent" ]] || { echo "usage: $0 fire \"<agent>\"  (a tick signed by nobody is the defect this argument fixes)" >&2; exit 1; }
+  [[ "$agent" != *$'\n'* && "$agent" != *$'\r'* ]] || { echo "actor must fit one metadata line (no CR/LF)" >&2; exit 1; }
   git -C "$ROOT" fetch origin main -q
   local tip since
   tip="$(git -C "$ROOT" rev-parse origin/main)"
@@ -50,9 +51,12 @@ FIRED_AT: {since}
 FIRED_BY: {agent}
 NOTE: While FIRED, effective tip is always current origin/main. TIP_AT_FIRE is the signal commit. All BASE values are STALE until claim/refresh against live tip.
 ```"""
-t2, n = re.subn(r"```\nSTATUS:.*?\n```", meta, t, count=1, flags=re.S)
+t2, n = re.subn(r"```\nSTATUS:.*?\n```", lambda _: meta, t, count=1, flags=re.S)
 if n == 0:
-    t2 = t.replace("# FULL REPO RESYNC\n", "# FULL REPO RESYNC\n\n" + meta + "\n", 1)
+    heading = "# FULL REPO RESYNC\n"
+    if heading not in t:
+        sys.exit("no STATUS block or FULL REPO RESYNC heading to fire")
+    t2 = t.replace(heading, heading + "\n" + meta + "\n", 1)
 path.write_text(t2)
 print(f"FIRED TIP_AT_FIRE={tip} at {since} (live tip follows origin/main)")
 PY
@@ -61,6 +65,7 @@ PY
 cmd_clear() {
   local agent="${1:-}"
   [[ -n "$agent" ]] || { echo "usage: $0 clear \"<agent>\"" >&2; exit 1; }
+  [[ "$agent" != *$'\n'* && "$agent" != *$'\r'* ]] || { echo "actor must fit one metadata line (no CR/LF)" >&2; exit 1; }
   git -C "$ROOT" fetch origin main -q
   local tip since
   tip="$(git -C "$ROOT" rev-parse origin/main)"
@@ -77,7 +82,7 @@ CLEARED_AT: {since}
 CLEARED_BY: {agent}
 NOTE: Resync complete. Normal claim/release resumes. BASE must still equal origin/main on check.
 ```"""
-t2, n = re.subn(r"```\nSTATUS:.*?\n```", meta, t, count=1, flags=re.S)
+t2, n = re.subn(r"```\nSTATUS:.*?\n```", lambda _: meta, t, count=1, flags=re.S)
 if n == 0:
     sys.exit("no STATUS block to clear")
 path.write_text(t2)
@@ -89,5 +94,5 @@ case "${1:-}" in
   status) cmd_status ;;
   fire) shift; cmd_fire "$@" ;;
   clear) shift; cmd_clear "$@" ;;
-  *) echo "Usage: $0 status | fire "<agent>" | clear "<agent>""; exit 1 ;;
+  *) printf 'Usage: %s status | fire "<agent>" | clear "<agent>"\n' "$0"; exit 1 ;;
 esac
