@@ -2,7 +2,7 @@
 
 **Status:** PARTIAL mathematical execution model. **ROOT / TOUCH / FOLD Pass 2 executed 2026-09-20. Not a complete emitter.**
 **Prior pass line:** old math-execution Pass 2 + prefix-device fidelity + UPDATE 6/6 CLOSED; ROOT / TOUCH / FOLD Pass 1 mapped the delta and Pass 2 formalizes arrival landing + seen-word root-touch.
-**ROOT / TOUCH / FOLD Pass 2:** [plan](plans/math-execution-root-touch-fold-pass-2-plan.md) and findings.
+**ROOT / TOUCH / FOLD Pass 2:** [plan](plans/math-execution-root-touch-fold-pass-2-plan.md) · [findings](plans/math-execution-root-touch-fold-pass-2-findings.md).
 **Φ-morphism:** append-only POINTER shape remains as stated on [pointer-emission.md](pointer-emission.md).
 **Current decomposition:** successful word arrival **LANDS on \(L\)** as a WORD occurrence; if the word was already seen, that occurrence **TOUCHES its word root**; the remaining punch-card **GROUND** schedule that recursively composes larger points is not yet calculated.
 **Pointer-emission draft:** still **not accepted**. General arity remains Q2 **CONFLICT**. Grounding cadence/grouping/base remain open. No src/.
