@@ -4,7 +4,8 @@ Plans, proposals, executed pass records, and dated receipts share this shelf. Ea
 
 | File | Job |
 |---|---|
-| [systems-eq-map-pass-2-plan.md](systems-eq-map-pass-2-plan.md) | **`PLAN`** — systems×equations pass 2. WALL-CALC cards: what the wall may compute without writing \(L\). Does not fill G2. Φ `[GAP]` |
+| [systems-eq-map-pass-2-wall.md](systems-eq-map-pass-2-wall.md) | **EXECUTED** systems×equations pass 2. W1–W6 wall cards. Limits not stitches. G2 unfilled. Φ `[GAP]` |
+| [systems-eq-map-pass-2-plan.md](systems-eq-map-pass-2-plan.md) | **`EXECUTED`** — pass 2 WALL-CALC cards. Φ `[GAP]` |
 | [systems-eq-map-pass-1.md](systems-eq-map-pass-1.md) | **EXECUTED** systems×equations map pass 1. 31 rows. Wall and U12 on the map, not on \(L\). G2 unfilled. Φ `[GAP]` |
 | [systems-eq-map-pass-1-plan.md](systems-eq-map-pass-1-plan.md) | **`EXECUTED`** — new iteration pass 1 of 6. Map ASCII spine × equations. Φ `[GAP]` |
 | [math-execution-update-pass-6-readiness.md](math-execution-update-pass-6-readiness.md) | **EXECUTED** UPDATE pass 6 readiness. A1–A14 14 PASS / 0 FAIL. Campaign **CLOSED 6/6**. Holes empty. Φ `[GAP]` |

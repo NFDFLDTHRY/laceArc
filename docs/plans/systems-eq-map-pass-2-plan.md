@@ -1,6 +1,6 @@
 # Systems × equations map — Pass 2 of 6 PLAN
 
-**Status:** **`PLAN`** · not executed. **Station:** maps (HELD `Grok-maps` · BASE `4325d56`).
+**Status:** **`EXECUTED`** 2026-09-20 · [`systems-eq-map-pass-2-wall.md`](systems-eq-map-pass-2-wall.md). **Station:** maps (`Grok-maps`).
 **Depends on:** [`systems-eq-map-pass-1.md`](systems-eq-map-pass-1.md) EXECUTED — WALL-CALC rows 12, 16, 17, 23, 25, 31.
 **Emission:** `[GAP]`. No `src/`. Does not accept `pointer-emission.md`.
 **Ruling:** the wall is **in the calculation**. Shadow state is **not** a row of \(L\). \(W : \mathcal{S} \not\hookrightarrow \mathcal{H}\) stands.
