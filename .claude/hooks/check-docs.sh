@@ -340,7 +340,10 @@ done < <(printf '%s\n' "$_all" | grep -E '(^|/)README\.md$' | sort -u)
 unsigned=0
 if git rev-parse --verify HEAD >/dev/null 2>&1; then
   total_c=$(git rev-list --count --max-count=200 HEAD)
-  signed=$(git log -200 --format='%(trailers:key=Co-Authored-By,valueonly)%(trailers:key=Agent,valueonly)' | grep -c . || true)
+  # NUL separates commits; multiple supported trailers still count only once.
+  # Empty/whitespace-only values do not attribute a commit.
+  signed=$(git log -z -200 --format='%(trailers:key=Co-Authored-By,valueonly)%(trailers:key=Agent,valueonly)' \
+    | awk 'BEGIN { RS = "\0" } /[^[:space:]]/ { n++ } END { print n + 0 }')
   unsigned=$((total_c - signed))
   if [ "$unsigned" -eq 0 ]; then
     note_ok "actor attribution: last $total_c commits all carry an actor trailer"
