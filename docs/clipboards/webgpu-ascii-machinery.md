@@ -1,5 +1,7 @@
 # WebGPU CRD 2026-09-15 — ASCII SOURCE MACHINERY (HOST/GPU · Wave A P-G1…P-G9 · P4-X)
 
+**Current source correction, 2026-09-20 — repository update pass 3:** P-G8 now distinguishes GPUQueue IDL PDF **218** from submit scheduling/nonreuse prose PDF **222**, matching current M-G8 and the [bounded correction receipt](webgpu-clipboard.md#repository-update-pass-3--submit-source-locators). Earlier P4/P5 receipts and sighting references remain dated records; this locator repair does not execute Pass 6 or change the algorithm.
+
 **Status:** Pass 4 **EXECUTED** · Pass 5 **EXECUTED** (Shadow Order Proposal + light P5-X CONFIRM) · Wave A panels **P-G1…P-G9** 1:1 with **M-G1…M-G9** · P4-X/P5-X all **PASS**. Emission `[GAP]`.  
 **Source:** *WebGPU* — **W3C Candidate Recommendation Draft, 15 September 2026**. Editors: Kai Ninomiya, Brandon Jones, Jim Blandy (et al.).  
 **PDF:** `refs/local/webgpu-crd-20260915.pdf` → attachment `6bc31a9e21074a039a5c854f1bfc33bdbf282cd8b48e22a4977ca406ca64afe1` (**321** pp., text layer; **never git-add**). PDF one-based primary.  
@@ -367,7 +369,7 @@ stamp under fence: KEEP-read | FORBID-as-emission-rule | FORBID-as-Core | SILENT
 
 | Field | Content |
 |---|---|
-| Mechanism cite | **M-G8** · §19.2 submit PDF **218** · §21 Canvas PDF **228–230**, **235** |
+| Mechanism cite | **M-G8** · §19.2 GPUQueue IDL PDF **218**; submit scheduling/nonreuse prose PDF **222** · §21 Canvas PDF **228–230**, **235** |
 | Sighting | Pass 1 PAGE F+G · FM-Wgpu3 · FM-Wgpu6 · Pass 3 M-G8 · D7 step 5 |
 | Lace stamp | **KEEP-read-as-host-API** (submit) · **FORBID-as-emission-rule** · canvas **PROPOSAL-only** · **FORBID fill-GAP** |
 | PAGE cite | **F+G** |
@@ -381,7 +383,7 @@ stamp under fence: KEEP-read | FORBID-as-emission-rule | FORBID-as-Core | SILENT
   GPUCommandBuffer(s) from P-G7 · device.queue
            |
            |  device.queue.submit([commandBuffer, …])
-           |  "Schedules the execution…" (PDF 218)
+           |  "Schedules the execution…" (PDF 222)
            |  submitted buffers cannot be reused
            v
   Queue timeline  (GPU work scheduled)

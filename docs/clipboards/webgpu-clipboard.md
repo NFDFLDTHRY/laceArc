@@ -1,5 +1,7 @@
 # CLIPBOARD — laceArc ← WebGPU W3C CRD 2026-09-15 (HOST/GPU API)
 
+**Current source correction, 2026-09-20:** the [repository update pass 3 addendum](#repository-update-pass-3--submit-source-locators) distinguishes GPUQueue IDL PDF **218** from submit scheduling/nonreuse prose PDF **222**. It qualifies the historical FM-Wgpu3/D7 mispins without rewriting their bodies or sighting receipts. PAGE F already records the correct distinction; WebGPU Pass 6 remains `HELD` / `NOT_EXECUTED`.
+
 **[III] Shadow / read-only host-API projection. Hands win. POINTER emission = `[GAP]`.**  
 **SPECIAL:** This is **HOST / GPU Web API** admission — Shadow projection / hologram / canvas embed surfaces. **NOT** Core. **NOT** Lace store. **NOT** POINTER emission / Φ. **NOT** the wasm64 compile-target shelf.
 
@@ -567,3 +569,15 @@ Mirror (short): under SOURCE MACHINERY overview in [`webgpu-ascii-machinery.md`]
 | Push | **No** (ask before push) |
 | `src/` | absent |
 
+## Repository update pass 3 — submit source locators
+
+**2026-09-20; base `e14b13c08fbfe6c280e9f0460d383a6be4479865`.** Codex-References visually inspected exactly one-based PDF pages **218** and **222** during pass 3 planning, after targeted text extraction. Source: supplied `10-WebGPU.pdf`, *WebGPU*, W3C CRD 2026-09-15, SHA-256 `6bc31a9e21074a039a5c854f1bfc33bdbf282cd8b48e22a4977ca406ca64afe1`. This dated correction records those sightings and their current consumers; it does not claim the earlier campaigns inspected page 222 at every mispinned reference.
+
+| Source location | Visually observed content | Current correction |
+|---|---|---|
+| PDF **218**, §19.2 | GPUQueue IDL, including the `submit` signature; start of `writeBuffer` | Retain **218** for the IDL/signature |
+| PDF **222** | `submit(commandBuffers)` scheduling prose and the rule that submitted command buffers cannot be used again | Use **222** for scheduling/nonreuse in M-G8's source locus and algorithm citation and P-G8's citation/diagram |
+
+**Historical mispins qualified:** FM-Wgpu3 and D7 step 5 above attach the submit scheduling quotation to PDF **218**. The quotation belongs to PDF **222**, as PAGE F already records. Their original bodies and sighting receipts are preserved. M-G8's earlier `Sighting method` row and P-G8's earlier sighting references likewise remain historical; the dated qualification supplies the new evidence.
+
+**Scope and remaining states:** this repairs source locators only. It does not change an API algorithm, take an emission ruling, or establish runtime behavior. WebGPU and WGSL Pass 6 remain dated `HELD` / `NOT_EXECUTED`; no new whole-campaign verdict is claimed. No browser, GPU, device or built-artifact evidence was produced by these source sightings. Other source locators, including PAGE D, were outside this correction. The supplied PDF was neither changed nor added to Git.

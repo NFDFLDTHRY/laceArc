@@ -1,5 +1,7 @@
 # WebGPU CRD 2026-09-15 — mechanism cards (HOST/GPU system procedures)
 
+**Current source correction, 2026-09-20 — repository update pass 3:** M-G8 now distinguishes the GPUQueue IDL on PDF **218** from submit scheduling/nonreuse prose on PDF **222**. Both pages were visually inspected from the supplied PDF; see the [bounded correction receipt](webgpu-clipboard.md#repository-update-pass-3--submit-source-locators). Earlier sighting-method rows and campaign receipts remain dated records. No algorithm or campaign status changes.
+
 **Status:** Pass 3 EXECUTED (Wave A **M-G1…M-G9**; P3-M mesh on clipboard). Pass 4 ASCII: see [`webgpu-ascii-machinery.md`](webgpu-ascii-machinery.md) (**P-G1…P-G9**). Algorithms unchanged. Emission `[GAP]`.  
 **Source:** *WebGPU* — **W3C Candidate Recommendation Draft, 15 September 2026**. Editors: Kai Ninomiya, Brandon Jones, Jim Blandy (et al.).  
 **PDF:** `refs/local/webgpu-crd-20260915.pdf` → attachment `6bc31a9e21074a039a5c854f1bfc33bdbf282cd8b48e22a4977ca406ca64afe1` (**321** pp., text layer; **never git-add**). SHA-256 `6bc31a9e21074a039a5c854f1bfc33bdbf282cd8b48e22a4977ca406ca64afe1`. PDF one-based primary.  
@@ -315,8 +317,9 @@ This file is **Shadow / Layer III documentation of CRD host/GPU procedures**, no
 | Field | Content |
 |---|---|
 | Kind | submit-present |
-| Spec locus | §19.2 GPUQueue `submit` · PDF **218** (“Schedules the execution… Submitted command buffers cannot be used again.”); §21 Canvas · PDF **228–230**; `GPUCanvasConfiguration` PDF **235** |
+| Spec locus | §19.2 GPUQueue IDL / `submit` signature · PDF **218**; submit scheduling and command-buffer nonreuse prose · PDF **222**; §21 Canvas · PDF **228–230**; `GPUCanvasConfiguration` PDF **235** |
 | Sighting method | `pdftotext -f 218 -l 218` / `-f 228 -l 230` / `-f 235 -l 235` (this pass); Pass 1 PAGE F+G / FM-Wgpu3 · FM-Wgpu6 |
+| Current locator qualification | Repository update pass 3, 2026-09-20: PDF **218** and **222** visually inspected; IDL and prose locators distinguished. The preceding method row records the earlier pass, not this new sighting |
 | Eye-quote | `submit(commandBuffers)` — “Schedules the execution of the command buffers by the GPU on this queue.” · `canvas.getContext('webgpu')` · `configure()` · `GPUCanvasConfiguration` (`device`, `format`, `usage`, …) |
 | Inputs | Sequence of finished `GPUCommandBuffer`s; optionally a canvas + `GPUCanvasConfiguration` |
 | Outputs | GPU work scheduled on Queue timeline; optionally configured canvas presentation via `getCurrentTexture()` |
@@ -337,7 +340,7 @@ This file is **Shadow / Layer III documentation of CRD host/GPU procedures**, no
 1. **Preconditions.** Finished `GPUCommandBuffer`(s) (M-G7); valid `device.queue`. Optional canvas for present.  
 2. **State.** Command buffers ready; canvas may be unconfigured.  
 3. **Steps (submit).**  
-   1. `device.queue.submit([commandBuffer, …])` (PDF **218**).  
+   1. `device.queue.submit([commandBuffer, …])` (IDL PDF **218**; scheduling/nonreuse prose PDF **222**).
    2. Buffers are scheduled on Queue timeline; **cannot be used again**.  
    3. Refuse submit as POINTER when/arity/adjacency or Φ fill.  
 4. **Steps (present, optional).**  

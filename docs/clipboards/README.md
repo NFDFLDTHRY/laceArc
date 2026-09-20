@@ -59,7 +59,13 @@ Provenance for the clipboards above includes completed passes and pending plans.
 
 POINTER emission stays `[GAP]`. No `src/`.
 
+The shelf 10 entries below summarize the **historical Pass 0/1 receipts**. Read their measured results with the current source qualification following the table.
+
 | Shelf 10 — staked by the human 2026-09-19 (A1) | |
 |---|---|
 | [rust-target-clipboard.md](rust-target-clipboard.md) | **The rustc book** · toolchain for the sealed `wasm64-unknown-unknown` target · **Pass 0** (staking receipt) EXECUTED: 14 eye entries, T1–T4 upgraded to SOURCE, four new sourced facts (panic=abort forced · dlmalloc in std · assumed proposals · 64-bit space vs 16 GB engine cap) · **Pass 1** (mapping, pages A–H, X) EXECUTED: 18 mechanisms M-R1–M-R18 with verified locators → sheets T/H, R1/R11/R12, gates G1–G3, G8′, G9, G10; the recipe B as prose, every row `NOT_RUN`; six pass 0 locators corrected in the open. Document gitignored; sighting by SHA. Prompt: [`../prompts/rust-target-clipboard-prompt.md`](../prompts/rust-target-clipboard-prompt.md) |
 | [rust-target-pass-1-plan.md](rust-target-pass-1-plan.md) | **`EXECUTED` — shelf 10 pass 1, the mapping.** The desired result stated as a recipe B with seven checkable rows (b1–b7); measured: the book closes b4–b6 alone, b1–b3 wait on A4, b7 is ruling R12. Run: falsifier did not fire; G8 reformulated as validation under a feature set; G10 named; b2/b3 flags `[BLOCKED on A4]` |
+
+**Current target qualification, 2026-09-20 — repository update pass 3:** the [Wasm W2-S1–S6 sightings](wasm-spec-3-clipboard.md#repository-update-pass-2--target-sightings) completed the bounded source request across 14 visually inspected PDF pages. The [rust-target carry](rust-target-clipboard.md#repository-update-pass-2--target-evidence-carry) distinguishes memory/address and tag/operator grammar, the optional name carrier, profiles and validation pseudocode from complete provenance or an enforced artifact policy. **Name-based crate absence remains UNESTABLISHED**; exact validator version, mode, feature subset and enforcement still need evidence. Builds, actual artifact checks and the G10 checked/shipped-byte relationship remain `NOT_RUN` / unestablished. The historical Pass 1 falsifier result does not close those obligations.
+
+**A4 remains next and absent** from the supplied twelve-file corpus: Cargo `build-std` crate-list, lockfile behavior and `rust-src` identity questions remain open. No new source intake, fixture, build, campaign completion or R1/R11/R12 ruling follows from this summary.
