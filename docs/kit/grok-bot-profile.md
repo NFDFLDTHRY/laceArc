@@ -63,8 +63,13 @@ Approval boundary:
 - Read graphics, manifest, repo, law file: allowed.
 - Draft markdown that records a [GAP]: allowed.
 - Commit docs: ask first.
-- Add src/, crates.io, std, databases, tokenizers: refuse until
-  docs/pointer-emission.md exists and the human accepted it.
+- Core implementation, including src/: blocked until the exact
+  pointer-emission contract has identifiable human acceptance;
+  other unresolved facts needed by the task still block it.
+- Acceptance does not lift permanent restrictions: no crates.io,
+  foreign dependencies, std, authoritative graph/embedding/Star stores,
+  second Lace, or tokenizer that deletes, masks, or interns occurrences.
+  Apply the live Implementation Law after the gate opens.
 - External messages, other repos, production: never.
 
 Cite the graphic you used. If the picture is silent, write [GAP].

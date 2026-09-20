@@ -4,7 +4,7 @@
 **Proven:** Chrome Android Install sheet + standalone WebAPK for LaceArc Layer III, 2026-09-18T18:07, host `rawcdn.githack.com`.  
 **Kin:** StrawDummy `Screechrac` spatial-v1-1.
 
-This is the only allowed install / Add-to-Home-Screen path for HTML in this repo.
+This is the install / Add-to-Home-Screen path required by current AGENTS.md and used for Layer III development. The production-host proposal has an unresolved acceptance and scope conflict, recorded below; this page does not establish a new exception.
 
 ```
 ╔══════════════════════════════════════════════════════════════════════════╗
@@ -76,6 +76,8 @@ This is the only allowed install / Add-to-Home-Screen path for HTML in this repo
 ╚══════════════════════════════════════════════════════════════════════════╝
 ```
 
-**Amended by scope, 2026-09-19:** this file governs the **development** install path. The production path — the business custom domain, pinned glacier releases, installed once and offline forever — is [`distribution-model.md`](distribution-model.md). The Pages FORBID above stands for the development path.
+**Production proposal and unresolved scope, re-read 2026-09-20:** [`distribution-model.md`](distribution-model.md) records a human-attributed production goal and the editor's proposed Pages-backed exception. The former footer here called that amendment effective while the proposal recorded acceptance as absent and AGENTS.md retained its Pages prohibition. That conflict is not settled by commit order. This page grants no production-host exception; exact acceptance and scope remain to be established. See [pass 1 U03](../plans/repo-update-pass-1-evidence.md).
+
+The install observation above is dated evidence for the named development revision. It is not a test of every later revision, update migration, the proposed production carrier, or perpetual offline operation. This documentation pass changes no viewer, manifest, service worker, or release pointer and performs no new install/device test.
 
 POINTER emission stays `[GAP]`. No `src/`.

@@ -4,9 +4,11 @@ This file is kit, not Hands. Live law is [`AGENTS.md`](../../AGENTS.md) and [`do
 
 **THEN:** prepared 18 September 2026 against `NFDFLDTHRY/laceArc` commit `4fe984bb098d5ca21c9704234df4fddd53056efb`. At that pin `docs/pointer-emission.md` was absent. The file opened with a STALE banner so agents would not treat this package as the tip.
 
-**NOW:** re-read 19 September 2026 against claim BASE `044257ceb95e78612d302a204a9438c72d06aa96`. Routing still holds. [`docs/pointer-emission.md`](../pointer-emission.md) exists as DRAFT unanswered questions — not accepted; emission remains `[GAP]`. No `src/`. This re-read does not establish enforcement.
+**Earlier re-read:** 19 September 2026 against claim BASE `044257ceb95e78612d302a204a9438c72d06aa96`. The emission file then existed as a draft; acceptance and enforcement were not established. This pin records that reading, not the current tip.
 
-This documentation package is integrated into the repository for local and cloud agents. AGENTS.md, CLAUDE.md, the Grok profile, README.md, and CONTRIBUTING.md route contributors to these controls. The weaker entry-point gate wording has been aligned with the full law's requirement for human acceptance of exact content.
+**Current reading, 20 September 2026 at `0b2012b`:** [`docs/pointer-emission.md`](../pointer-emission.md) contains closed constraints, open questions, conflicts, and campaign Answer lines whose SPOKEN custody is disputed. It remains DRAFT and not accepted. See the [pass 1 evidence map](../plans/repo-update-pass-1-evidence.md) U01–U03. The [live law's opening](../law-why-these-documents.md) still preserves the existence/acceptance wording pair as unresolved for the human. The stronger acceptance requirement in AGENTS.md and the law's IMPLEMENTATION LAW block controls; this package does not resolve the reserved pair.
+
+This documentation package supplies controls for local and cloud agents. [CLAUDE.md](../../CLAUDE.md) and [CONTRIBUTING.md](../../CONTRIBUTING.md) explicitly require the control prompt and task forms. AGENTS.md supplies standing orders and requires the context pass. These routes do not prove that every external harness loads or enforces the files.
 
 This documentation integration creates no Core implementation, no accepted pointer-emission contract, and no acceptance record. File existence is not acceptance. It does not change repository permissions, configure external agent profiles, or establish enforcement.
 
@@ -20,9 +22,9 @@ Read the audit before giving agents repository write permissions. Use the full c
 
 ## Repository entry points
 
-The three `docs/` files supplement the canonical documents. The four graphics, systems manifest, reason map, and staking ASCII remain intact. The law document's introductory gate sentence has been aligned with its unchanged ASCII block.
+The three package files supplement the canonical documents. The earlier claim here that the law's introductory gate sentence had been aligned was inaccurate: the live law still marks that pair unresolved. No source document or acceptance gate is amended by this package correction.
 
-AGENTS.md requires every agent to read `docs/kit/agent-control.md` and `docs/kit/agent-task-template.md`, subordinate to the human-authored law. For a provider profile or local harness configured outside the repository, supply the following routing text with the current task appended:
+CLAUDE.md and CONTRIBUTING.md require the control prompt and task templates, subordinate to the human-authored law. For a provider profile or local harness configured outside the repository, supply the following routing text with the current task appended:
 
 ```text
 Project: NFDFLDTHRY/laceArc.
@@ -36,12 +38,12 @@ Acceptance does not lift any permanent prohibition.
 Work on the one assigned task. Do not create another implementation branch.
 ```
 
-The audited entry-point sentences now require both existence and exact human acceptance, while keeping permanent prohibitions in force. Do not replace the staking ASCII with this routing block. Its complete wording must remain available to every agent.
+The routing block requires both existence and exact human acceptance, while keeping permanent prohibitions in force. It does not establish that all other entrances have been reconciled. Do not replace the staking ASCII with this routing block. Its complete wording must remain available to every agent.
 
-The downstream audit remains pinned to the THEN commit `4fe984bb098d5ca21c9704234df4fddd53056efb`. Its original observations and hook experiments are preserved as historical evidence. At that pin, pointer-emission.md was absent (audit F10). The file now exists as DRAFT; acceptance is still missing. This door does not rewrite the audit body. Wording and routing were aligned after the pin; remaining enforcement findings are not claimed resolved.
+The downstream audit remains pinned to the THEN commit `4fe984bb098d5ca21c9704234df4fddd53056efb`. Its original observations and hook experiments are preserved as historical evidence. At that pin, pointer-emission.md was absent (audit F10). The file now exists as DRAFT; acceptance is still missing. This door does not rewrite the audit body or claim that its remaining wording and enforcement findings are resolved.
 
 Before treating controls as enforced, resolve the audit's admission blockers, configure the actual repository/harness permissions through an authorized control task, and test those particular paths. This package contains no CI workflow, new hook, provider setup claim, or permission change. Existing shell hooks do not authorize adding more non-Rust project machinery.
 
 ## What is ready now
 
-The prompt and forms can guide documentation and review work now. Pointer emission, Core implementation, code commits, and the next implementation branch remain subject to the existing law. The included agent challenges are test specifications; they have not been run against a population of models.
+The prompt and forms can guide documentation and review work now. Layer III viewers and steward scripts already exist; there is no Lace Core implementation. Pointer emission, Core implementation, code commits, and the next implementation branch remain subject to the existing law. The included agent challenges are test specifications; they have not been run against a population of models.

@@ -4,7 +4,7 @@ Portable steward controls. Not Hands. Not Graphic D. Nothing here is a source of
 
 | File | Use | Status |
 |---|---|---|
-| [READ_ME_FIRST.md](READ_ME_FIRST.md) | Package door: what the documentation package is and what it does not establish | live routing; THEN pin `4fe984b`, NOW re-read `044257c` — read live [AGENTS.md](../../AGENTS.md) |
+| [READ_ME_FIRST.md](READ_ME_FIRST.md) | Package door: what the documentation package is and what it does not establish | current reading at `0b2012b`; earlier pins preserved as history; unresolved gate wording exposed — read live [AGENTS.md](../../AGENTS.md) |
 | [cold-doors.md](cold-doors.md) | Quiet-door register: LIVE / DATED / STALE / PAUSED / SHUT | Pass 1–6 EXECUTED |
 | [cold-doors-pass-1-plan.md](cold-doors-pass-1-plan.md) | Pass 1 plan for that register | EXECUTED |
 | [cold-doors-pass-2-plan.md](cold-doors-pass-2-plan.md) | Pass 2 plan: stamp kit companions behind the package door | EXECUTED |
@@ -44,13 +44,13 @@ Portable steward controls. Not Hands. Not Graphic D. Nothing here is a source of
 | [quiet-door-4-pass-6-plan.md](quiet-door-4-pass-6-plan.md) | Door #4 pass 6: receipt. Close 6/6 | EXECUTED |
 | [quiet-door-4-receipt.md](quiet-door-4-receipt.md) | Door #4 iteration receipt. CLOSED 6/6 | CLOSED |
 | [quiet-door-4-ascii.md](quiet-door-4-ascii.md) | Door #4 ASCII companion. Does not replace live law. Does not fill G2 | CLOSED 6/6 |
-| [agent-control.md](agent-control.md) | Portable standing prompt: the staking law verbatim, then the operating controls C01–C12 | DATED transport at `e21cf39`; [live law](../law-why-these-documents.md) wins |
+| [agent-control.md](agent-control.md) | Portable standing prompt: the live-law fenced block, then operating controls C01–C12 | September 20 conceptual-reference correction, synchronized in `3861972`; matches [live law](../law-why-these-documents.md) at `0b2012b` |
 | [agent-task-template.md](agent-task-template.md) | One-task, adjudication, proof-contract and handoff forms | live |
 | [downstream-audit.md](downstream-audit.md) | Dated audit: evidence, failure paths, source corrections, agent challenge cases F01–F12 | dated snapshot at `4fe984b`, re-checked by the coherence audit |
-| [githack-pwa-deploy.md](githack-pwa-deploy.md) | Layer III HTML install: `rawcdn` + full SHA. Never `main`, never Pages | **LAW** |
-| [grok-bot-profile.md](grok-bot-profile.md) | Paste blocks for Grok Bot name/job/description, staking explanation, first task | DATED transport at `e21cf39`; live law wins |
+| [githack-pwa-deploy.md](githack-pwa-deploy.md) | Layer III development install: `rawcdn` + full SHA; production proposal's exception remains unresolved | current install policy; no production permission inferred |
+| [grok-bot-profile.md](grok-bot-profile.md) | Paste blocks for Grok Bot name/job/description, staking explanation, first task | September 20 law block synchronized in `3861972`; matches live law at `0b2012b`; compact profile keeps permanent prohibitions separate |
 
-The transport copies carry the law's blocks at the revision they were made; where a copy and [the live law](../law-why-these-documents.md) disagree, the live law wins. Restructure phase 3 regenerates them and adds a check.
+The transport copies carry the law's blocks at the revision they were made; where a copy and [the live law](../law-why-these-documents.md) disagree, the live law wins. At `0b2012b` both fenced blocks match the live block exactly; the existing checker reports law-copy parity as an advisory. This equality does not establish alignment of every surrounding profile sentence or enforcement by an agent harness. Earlier cold-door measurements remain dated records.
 
 This station also owns [`.claude/`](../../.claude/README.md) — the hooks and session settings.
 
@@ -58,5 +58,5 @@ This station also owns [`.claude/`](../../.claude/README.md) — the hooks and s
 
 POINTER emission stays `[GAP]`. No `src/`.
 
-| [distribution-model.md](distribution-model.md) | **Amendment (human-directed, 2026-09-19):** development on githack (unchanged law), production on the business custom domain as a pinned glacier release; installed once, offline forever; the promotion rule G1–G7. Re-scopes the Pages FORBID to the dev path |
+| [distribution-model.md](distribution-model.md) | **Proposed scope amendment:** recorded human production goal, editor's host interpretation and G1–G7 checks; acceptance of the Pages exception remains unestablished. Does not re-scope the current prohibition or prove perpetual offline behavior |
 | [roles.md](roles.md) | **Roles** (steward, `[PROPOSAL]`): who holds which station and why, each row cited to the census; the joining steps; the actor trailer; what waits on the human. The unsigned-commit count in `check-docs.sh` is advisory and points here |
