@@ -130,7 +130,7 @@ Entrypoint: [`./docs/coord/coord.sh`](./docs/coord/coord.sh) (doc stations + `ge
 Paste-ready: [`docs/prompts/coord-protocol-prompt.md`](docs/prompts/coord-protocol-prompt.md).
 
 Before editing: pull ff-only → `which` → `claim` → edit only owned paths → `check` → commit → `release`.
-Docs-only work does not need a gearing shaft claim. Steward may `doctor --auto-clear` when RESYNC is stuck FIRED and everything is FREE.
+Docs-only work does not need a gearing shaft claim. Steward may `doctor --auto-clear "<AgentName>"` when RESYNC is stuck FIRED and everything is FREE.
 
 ## Adjacent reading
 

@@ -81,7 +81,7 @@ Shelves (defrag pass 1–4). Hands stay at `docs/` root. Do not treat a prompt, 
 | [docs/clipboards/rowlands-zero-to-infinity-clipboard.md](docs/clipboards/rowlands-zero-to-infinity-clipboard.md) | Rowlands empty-start / no extra rooms / rewrite name-clash sheets. Not Core. |
 | [docs/clipboards/xiao-zhu-foundations-clipboard.md](docs/clipboards/xiao-zhu-foundations-clipboard.md) | Xiao–Zhu arrival-order / intern / MASK / embed / next-token sheets. Not Core. |
 | [docs/clipboards/agentscope-clipboard.md](docs/clipboards/agentscope-clipboard.md) | AgentScope taxonomy for the HOLDER. ReAG stays off Graphic D. Not Core. |
-| [docs/clock/gearing-code-1to1.md](docs/clock/gearing-code-1to1.md) | 47 visual keys ↔ planned Shadow units; earlier picker observations are dated. Current binding-data discrepancy is recorded in the update-pass evidence. |
+| [docs/clock/gearing-code-1to1.md](docs/clock/gearing-code-1to1.md) | 47 visual keys ↔ planned Shadow units; earlier picker observations are dated. AB/BC/CA binding descriptions were corrected in `bad05ca`; [pass 2](docs/plans/repo-update-pass-2-evidence.md#8-execution-dispositions) records the source checks, with browser/picker behavior still unverified. |
 | [docs/pointer-emission.md](docs/pointer-emission.md) | DRAFT. May be worked. Not accepted. Invented answers still a breach. |
 | [docs/clock/philosophy-map.md](docs/clock/philosophy-map.md) | Readings of three conceptual references: HCC-A, Coffee Cup, Water. The required-gearbox interpretation is superseded by the [human correction](docs/law-why-these-documents.md#conceptual-reference-documents). |
 | [docs/hologram/](docs/hologram/) | Hologram touches (PR / Story Defense). Shadow. Not Graphic E. |
@@ -139,6 +139,8 @@ The pointer-emission rule *is* dimensionality. Until it is written down as part 
 
 ## Status
 
-Model repository with Layer III viewers and steward tooling. Apache-2.0. No Lace Core implementation. Current reconciliation: [repository update pass 1](docs/plans/repo-update-pass-1-plan.md) and its [evidence register](docs/plans/repo-update-pass-1-evidence.md).
+Model repository with Layer III viewers and steward tooling. Apache-2.0. No Lace Core implementation. Current work: [repository update pass 3](docs/plans/repo-update-pass-3-plan.md), authorized for local execution; its [evidence record](docs/plans/repo-update-pass-3-evidence.md) distinguishes planned checks from actual results.
+
+[Pass 2](docs/plans/repo-update-pass-2-evidence.md#8-execution-dispositions) was published through `e14b13c`, including ordinary HCC/nostd source qualifications in `5e40a20` and the binding-description correction above. Its receipt preserves the earlier local handoff. Frozen gearing, browser/device observations and release promotion remain separate pending work; the pinned ixp2 release has not received those main-branch repairs. [Pass 1](docs/plans/repo-update-pass-1-evidence.md) remains the earlier branch/content and custody record.
 
 Same strand. More dimensions. A richer universe.
