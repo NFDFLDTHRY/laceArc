@@ -1,6 +1,6 @@
 # Systems × equations map — Pass 5 of 6 PLAN
 
-**Status:** **`PLAN`** · not executed. **Station:** maps (HELD `Grok-maps` · BASE `0c19245`).
+**Status:** **`EXECUTED`** 2026-09-20 · [`systems-eq-map-pass-5-d1.md`](systems-eq-map-pass-5-d1.md). **Station:** maps (`Grok-maps`).
 **Depends on:** pass 1–4 EXECUTED. Completeness: [`systems-eq-map-pass-4-complete.md`](systems-eq-map-pass-4-complete.md).
 **Specimen (frozen):** Graphic D / D1 + [`math-execution-update-pass-5-witness.md`](math-execution-update-pass-5-witness.md).
 **Figure:** ASCII one-tick (pass 5) + P27-F caption (arrival ≠ tick).
