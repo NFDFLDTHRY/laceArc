@@ -58,3 +58,7 @@ Provenance for the clipboards above. Each is headed `EXECUTED`; the clipboard it
 **A new pass plan goes here, beside the clipboard it serves, and that clipboard links it once the pass is executed.** At this size the shelf stays flat; `docs/clock/` moved its passes to a subdirectory only because it reached 30.
 
 POINTER emission stays `[GAP]`. No `src/`.
+
+| Shelf 10 — staked by the human 2026-09-19 (A1) | |
+|---|---|
+| [rust-target-clipboard.md](rust-target-clipboard.md) | **The rustc book** · toolchain for the sealed `wasm64-unknown-unknown` target · Pass 1 EXECUTED: 14 eye entries, T1–T4 upgraded to SOURCE, four new sourced facts (panic=abort forced · dlmalloc in std · assumed proposals · 64-bit space vs 16 GB engine cap). Document gitignored; sighting by SHA. Prompt: [`../prompts/rust-target-clipboard-prompt.md`](../prompts/rust-target-clipboard-prompt.md) |
