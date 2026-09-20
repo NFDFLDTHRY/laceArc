@@ -26,7 +26,9 @@ The entrypoint itself is [coord.sh](coord.sh); the station files it reads are un
 
 Gearing shafts stay under `docs/gearing/claim.sh`. Stations named `gear:<shaft>` strip the prefix and call that script. Do not rewrite the shaft protocol.
 
-**Current dispatch limitation, inspected 2026-09-20 at `0b2012b`:** the umbrella's gear `force-free` path reaches a delegate that does not permit that subcommand. Documentation of an override is not evidence that this particular dispatch works or permission to use it. [Update finding U21](../plans/repo-update-pass-1-evidence.md) records the separately gated repair and disposable-fixture check; no live claim is a test fixture.
+**Override dispatch, pass 2:** the umbrella forwards its required reason to the gear backend, which retains that supplied reason in `NOTE`. This repairs the rejected dispatch recorded by [pass 1 U21](../plans/repo-update-pass-1-evidence.md). Doc and gear behavior remains distinct: an already-FREE doc station rejects the override; an already-FREE gear claim accepts it and retains the reason. The direct gear command still permits its existing no-reason invocation and clears `NOTE` in that case. Command availability grants no override authority; the direct shaft override remains human-only.
+
+The [isolated regression fixture](tests/force-free-dispatch.sh), run with `bash docs/coord/tests/force-free-dispatch.sh`, copies both scripts into a temporary directory and creates synthetic claims there. It checks reason preservation, entrypoint-specific FREE behavior, rejected operations and untouched sentinels without changing real claims or contacting a remote.
 
 ---
 
@@ -96,9 +98,10 @@ NOTE: <optional>
 - `which` prefers the longest / most specific OWNS match. Unknown path → error.
 - `gate` = `which` + `check`: exit 0 only if every path maps to the named station and check passes.
 - `doctor --auto-clear`: if RESYNC is FIRED and every gear claim and doc station is FREE → runs `./docs/gearing/resync.sh clear`.
-- `force-free` clears a HELD station **without being its holder**, and requires a reason, which is written into `NOTE` so the override is never silent. The gear-shaft protocol has had this all along; this umbrella wrapped it and dropped the command, so clearing a stale doc station meant a hand edit. Restored under [iteration 2 pass 5, E3](../plans/verification-iter2-pass-5-plan.md). **It is an override, not an expiry**: nothing in this protocol decides a claim is stale, and a human still does.
+- `force-free` requires a reason. For doc stations it requires HELD and records the prior holder, timestamp and reason in `NOTE`. For gear claims it delegates to the shaft override, clears HELD or FREE state fields, and retains the supplied reason in `NOTE`. The doc command was restored under [iteration 2 pass 5, E3](../plans/verification-iter2-pass-5-plan.md); pass 2 repairs the later-identified gear dispatch and reason path. **It is an override, not an expiry**: nothing in this protocol decides a claim is stale or grants permission to clear it.
 
-Shaft claim protocol (unchanged): `docs/gearing/CLAIMS.md`.  
+Shaft claim protocol: [CLAIMS.md](../gearing/CLAIMS.md); its direct no-reason override remains compatible.
+
 Resync signal: `docs/gearing/RESYNC.md`.
 
 ## Quiet-door #9 records

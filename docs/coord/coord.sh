@@ -262,6 +262,9 @@ delegate_gear() {
     claim|release|check|refresh)
       "$CLAIM_SH" "$op" "$shaft" "$agent"
       ;;
+    force-free)
+      "$CLAIM_SH" force-free "$shaft" "${3:-}"
+      ;;
     *) die "internal: bad gear op $op" ;;
   esac
 }
@@ -307,7 +310,7 @@ cmd_force_free() {
   need_station "$station"
 
   if is_gear_station "$station"; then
-    delegate_gear force-free "$station"
+    delegate_gear force-free "$station" "$reason"
     return
   fi
 
@@ -509,6 +512,7 @@ Usage: ./docs/coord/coord.sh <command> ...
   which <path>
   claim <station> "<agent>"
   release <station> "<agent>"
+  force-free <station> "<reason>"
   check <station> "<agent>"
   refresh <station> "<agent>"
   doctor [--auto-clear]
@@ -534,7 +538,7 @@ main() {
     doctor) cmd_doctor "$@" ;;
     gate) cmd_gate "$@" ;;
     ""|-h|--help|help) usage ;;
-    *) die "unknown command '$cmd' (try: status|which|claim|release|check|refresh|doctor|gate)" ;;
+    *) die "unknown command '$cmd' (try: status|which|claim|release|force-free|check|refresh|doctor|gate)" ;;
   esac
 }
 
