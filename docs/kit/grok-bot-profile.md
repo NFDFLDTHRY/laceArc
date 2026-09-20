@@ -476,6 +476,10 @@ There is no build until emission is accepted.
 
 ```
 
+## Context pass
+
+After AGENTS.md and before the first task, read `docs/prompts/context-pass.md` — the same story every agent holds. Sign every commit (`docs/kit/roles.md`). Hold a station only as long as you said you would.
+
 ## First task
 
 ```
