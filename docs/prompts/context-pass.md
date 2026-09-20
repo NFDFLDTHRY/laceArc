@@ -8,6 +8,8 @@ Layer III steward prompt. Not Hands. Not law. Not Core. Emission remains `[GAP]`
 
 ---
 
+**Human correction, 2026-09-20:** HCC-A, The Coffee Cup, and Where the Water Is Loud are conceptual reference documents. The earlier H/C/W gearbox interpretation does not establish required holder machinery, runtime dependencies, or legal-append conditions. Apply the [live-law correction](../law-why-these-documents.md#conceptual-reference-documents) when reading the clock maps or older records. Their concepts remain available for reasoning; no pointer-emission rule or acceptance follows from them.
+
 ## 1. What this is (the Hands, in six sentences)
 
 Lace is **one continuously growing strand**. Every word occurrence is more wire; every word has a persistent star; a definition is a route through other stars; a document is a physical route in arrival order. The **only store** is Graphic D: one append-only 1D array of **WORD** and **POINTER** entries, where a POINTER names earlier entries on the same line and can itself be named later. Nothing is deleted, rewritten, parsed away, or stored as meaning. Higher dimensions are not new storage and not new meaning; they are more independent ways the same wire participates. The whole mechanism is one rule, said two ways: *Input word arrives. Route new wire through that word's star. Continue.* / *Input arrives. Append a new section. Use pointers to participate in what already exists.*
