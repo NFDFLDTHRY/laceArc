@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
-<title>HCC-A systems manifest projection</title>
+<title>HCC-A conceptual reference projection</title>
 <style>
 :root{
   --bg:#07080c;--ink:#e8eef8;--dim:#8b97b0;--line:#2a3348;
@@ -19,6 +19,8 @@ html,body{margin:0;height:100%;background:var(--bg);color:var(--ink);font:13px/1
 header.hit{position:absolute;top:0;left:0;right:0;padding:calc(8px + env(safe-area-inset-top)) 12px 8px;background:linear-gradient(#07080cf8 70%,#07080c00)}
 header h1{margin:0;font-size:12px;letter-spacing:.06em}
 header p{margin:2px 0 0;color:var(--dim);font-size:11px}
+header .reference-note{color:var(--ink);max-width:72em}
+.card-reference{margin:0;padding:0 12px 8px;color:var(--dim);font-size:11px;flex-shrink:0}
 .layers.hit{position:absolute;top:var(--head);left:8px;display:flex;gap:6px;flex-wrap:wrap}
 button, .chip{
   min-height:40px;border:1px solid var(--line);background:#0c1118ee;color:var(--ink);
@@ -39,7 +41,7 @@ aside.hidden{display:none}
 .card-top button{min-height:36px;padding:0 10px}
 .tabs{display:flex;gap:4px;padding:8px}
 .tabs button{flex:1;min-height:36px;padding:0}
-.card-body{overflow:auto;padding:0 12px 12px;flex:1}
+.card-body{overflow:auto;padding:0 12px 12px;flex:1;min-height:0}
 .stamp{display:inline-block;margin:0 4px 6px 0;padding:1px 6px;border:1px solid currentColor;font-size:11px}
 .H{color:var(--h)}.X{color:var(--x)}.I{color:var(--i)}.G{color:var(--g)}
 dt{color:var(--dim);font-size:10px;text-transform:uppercase;margin-top:8px}
@@ -48,7 +50,7 @@ dd{margin:2px 0 0}
 #peek{position:absolute;right:8px;top:var(--head);display:none}
 aside.hidden+#peek, body.card-closed #peek{display:block}
 @media(max-width:820px){
-  header p{display:none}
+  header p:not(.reference-note){display:none}
   aside.hit{left:8px;right:8px;width:auto;top:auto;bottom:var(--dock);max-height:38vh}
   .layers.hit{max-width:calc(100% - 16px)}
 }
@@ -58,8 +60,9 @@ aside.hidden+#peek, body.card-closed #peek{display:block}
 <canvas id="c"></canvas>
 <div class="hud">
   <header class="hit">
-    <h1>HCC-A SYSTEMS MANIFEST · LAYER III</h1>
-    <p>Housing = driver. Time = S0–S7. Oil ≠ Graphic D. Emission [GAP].</p>
+    <h1>HCC-A · CONCEPTUAL REFERENCE · LAYER III</h1>
+    <p class="reference-note">HCC-A, Coffee Cup and Water are conceptual references. These diagrams do not define required holder machinery or pointer emission.</p>
+    <p>Time = S0–S7 within the reference model. Graphic D remains the Lace store. Emission [GAP].</p>
   </header>
   <div class="layers hit" id="layers"></div>
   <aside class="hit" id="card"></aside>
@@ -208,6 +211,8 @@ const canvas=document.getElementById('c'), ctx=canvas.getContext('2d');
 let W=0,H=0,dpr=1, pointers=new Map(), moved=false, ready=false, loadErr='';
 
 function resize(){
+  const header=document.querySelector('header.hit');
+  document.documentElement.style.setProperty('--head', (header.getBoundingClientRect().height+8)+'px');
   dpr=Math.min(devicePixelRatio||1,2);
   W=innerWidth; H=innerHeight;
   canvas.width=W*dpr; canvas.height=H*dpr;
@@ -423,7 +428,7 @@ function card(){
     law:`<dt>Invariants</dt><dd>${n.inv||''}</dd>
          <dt>Failure</dt><dd>${n.fail||''}</dd>
          <dt>Boundary & coupling</dt><dd>${n.couple||''}</dd>
-         <dt>Implementation</dt><dd>${n.impl||''}</dd>`,
+         <dt>Interpretive implications</dt><dd>${n.impl||''}</dd>`,
     hands:`<dt>Hands</dt><dd>${n.hands||''}</dd>
            <dt>Metaphor</dt><dd>${n.meta||''}</dd>
            <dt>Source language</dt><dd>${n.quote||''}</dd>`
@@ -431,8 +436,9 @@ function card(){
   el.innerHTML=
     `<div class="card-top"><h2>${n.name}</h2><button type="button" id="hide">hide</button></div>`+
     (n.stamp||[]).map(t=>`<span class="stamp ${t==='G'?'G':t}">${t==='G'?'[GAP]':'['+t+']'}</span>`).join('')+
+    `<p class="card-reference">Conceptual-reference interpretation. Names, states and constraints here do not require holder machinery or supply pointer emission.</p>`+
     `<div class="tabs">${['now','ports','law','hands'].map(k=>
-      `<button type="button" data-t="${k}" class="${k===tab?'on':''}">${k}</button>`).join('')}</div>`+
+      `<button type="button" data-t="${k}" class="${k===tab?'on':''}">${k==='law'?'constraints':k}</button>`).join('')}</div>`+
     `<div class="card-body"><dl>${body}</dl><p class="port">source: hcc-a-systems-manifest.md</p></div>`;
   el.querySelector('#hide').onclick=()=>{cardOpen=false; card();};
   el.querySelectorAll('.tabs button').forEach(b=>b.onclick=()=>{tab=b.dataset.t; card();});
