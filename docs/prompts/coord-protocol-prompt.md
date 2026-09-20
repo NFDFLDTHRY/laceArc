@@ -2,7 +2,7 @@
 
 Layer III only. Not Core. Emission remains [GAP]. No src/.
 
-**Current command/mapping audit:** repository update pass 2, 2026-09-20, against base `10fe4947` with the local dispatch/reason repair. This prompt documents the dispatcher and its isolated checks; it grants no editing, override, commit or publication authority. Re-read live ownership before each task.
+**Current command/mapping audit:** [repository update pass 3](../plans/repo-update-pass-3-evidence.md), 2026-09-20, against base `e14b13c` with local canonical-path and doctor-actor repairs. Pass 2's dispatch/reason repair is published at that base. This prompt documents the dispatcher and its isolated checks; it grants no editing, override, commit or publication authority. Re-read live ownership before each task.
 
 ```
 ╔══════════════════════════════════════════════════════════════════════════╗
@@ -19,7 +19,7 @@ Layer III only. Not Core. Emission remains [GAP]. No src/.
   5. ./docs/coord/coord.sh gate <station> "<AgentName>" <paths...>
   6. commit / push only within the authorized task; one station per commit
   7. ./docs/coord/coord.sh release <station> "<AgentName>"
-  8. (steward) ./docs/coord/coord.sh doctor --auto-clear
+  8. (steward) ./docs/coord/coord.sh doctor --auto-clear "<AgentName>"
 
   DOC STATIONS (no gear shaft needed)
     clipboards  prompts  maps  history  hologram
@@ -32,13 +32,13 @@ Layer III only. Not Core. Emission remains [GAP]. No src/.
 
   COMMANDS
     status | which <path> | claim | release | check | refresh
-    doctor [--auto-clear] | gate <station> "<agent>" <path> [...]
+    doctor [--auto-clear "<agent>"] | gate <station> "<agent>" <path> [...]
     force-free <station> "<reason>"  (separate authorized override only)
 
   RULES
     • Fail closed: unknown station / cannot tell which → ERROR (treat as held)
     • Docs-only work never requires a gearing shaft claim
-    • RESYNC FIRED + all FREE → doctor --auto-clear (stops stuck BASE panic)
+    • RESYNC FIRED + all FREE → doctor --auto-clear "<AgentName>"
     • claim/check/refresh/doctor fetch origin/main; gate checks the claim
     • A BASE mismatch requires reanchoring; do not merely rewrite BASE
     • An available force-free command is not authority to clear a hold
@@ -56,7 +56,7 @@ Layer III only. Not Core. Emission remains [GAP]. No src/.
 
 ## Ownership that directory names alone do not reveal
 
-The dispatcher uses the most specific owned path. This table records the current map, not a proposed reassignment; run `which` on each actual target.
+The dispatcher normalizes supported in-repo paths before choosing the most specific owner. Repeated separators, dot segments and repo-absolute paths resolve consistently; escapes, symlink components and traversal through an existing non-directory reject. Ordinary `*` / `?` match within one component; `/**` is recursive. This table records the current map, not a proposed reassignment; run `which` on each actual target.
 
 | Path | Current station |
 |---|---|
@@ -66,9 +66,13 @@ The dispatcher uses the most specific owned path. This table records the current
 | `docs/graphics/**`, `docs/graphics-close-reading.md` | graphics |
 | `docs/coord/**` | coord |
 | `docs/gearing/contracts-<shaft>.js` | `gear:<shaft>` |
+| Root `docs/gearing/*.md` / `*.sh`, plus exact `docs/gearing/claims/README.md` | gearing-meta |
+| Otherwise-unassigned root `docs/*.md` | maps; no blanket ownership of new nested shelves |
 
 **Verified dispatch and reason path:** the [pass 2 repair](../plans/repo-update-pass-2-evidence.md) addresses the rejected gear dispatch recorded in [pass 1 U21](../plans/repo-update-pass-1-evidence.md). The umbrella requires a reason and forwards it to the gear backend, which retains it in `NOTE`. An already-FREE doc station rejects the override; an already-FREE gear claim accepts it and retains the supplied reason. The direct gear command still permits its existing no-reason invocation, which clears `NOTE`. The [15-case isolated fixture](../coord/tests/force-free-dispatch.sh) checks both entrypoints and untouched sentinels; no live hold was used as a fixture. Ordinary claim/release/check/refresh behavior is unchanged.
 
 The direct shaft override remains human-only under [CLAIMS.md](../gearing/CLAIMS.md#5-human-override). An available command does not grant authority, determine staleness or authorize editing state files. Preserve the applicable human instruction and reason; override is not a normal editing step.
+
+**Pass 3 controls:** [control-regressions.sh](../coord/tests/control-regressions.sh) exercises the actual copied scripts with synthetic paths, symlinks, claims and signal state. A path alias cannot gate under the spelling's former owner. Read-only `doctor` remains available; `doctor --auto-clear "<AgentName>"` requires and forwards that actor, and clears only a FIRED signal with all nineteen claims FREE. Missing or unknown state, or any HELD claim, prevents clearing. No live state was used as a test fixture.
 
 Follow the governing [coordination protocol](../coord/README.md) and [standing orders](../../AGENTS.md); this ticket cannot expand them.
