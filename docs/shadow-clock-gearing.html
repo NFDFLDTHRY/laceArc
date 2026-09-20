@@ -1,0 +1,1702 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>LaceArc / Shadow clock — Gearing Interaction Contracts (WebGPU 3D)</title>
+<meta name="description" content="Projection view: holder machine {A,B,C} as physical clock gearing of lace. WebGPU 3D only. Not Core. Not a sixth graphic."/>
+<style>
+  :root {
+    --bg: #06080c;
+    --panel: #0c1018;
+    --ink: #e6eef6;
+    --muted: #7a8a9c;
+    --axle: #e0b44a;
+    --a: #3ec8ff;
+    --b: #ff8a3a;
+    --c: #4dff8a;
+    --lace: #e8dcc8;
+    --danger: #e85d5d;
+    --gap: #9b7bff;
+    --wall: #3d4555;
+    --mesh: #7ee7ff;
+    --cyan: #3ec8ff;
+    --teal: #2a9bb5;
+    --bracket: rgba(62, 200, 255, 0.55);
+    --hud-line: rgba(62, 200, 255, 0.22);
+  }
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0; padding: 0;
+    background:
+      radial-gradient(ellipse at 50% 0%, #0c1520 0%, var(--bg) 55%),
+      var(--bg);
+    color: var(--ink);
+    font: 15px/1.45 "IBM Plex Sans", "Segoe UI", system-ui, sans-serif;
+    min-height: 100%;
+  }
+  header {
+    padding: 1rem 1.25rem 0.75rem;
+    border-bottom: 1px solid var(--hud-line);
+    display: flex; flex-wrap: wrap; gap: 0.75rem 1.5rem;
+    align-items: baseline; justify-content: space-between;
+    background: linear-gradient(180deg, rgba(12, 21, 32, 0.9), transparent);
+  }
+  header h1 {
+    margin: 0; font-size: 1.15rem; font-weight: 600; letter-spacing: 0.04em;
+    color: var(--cyan);
+    text-shadow: 0 0 18px rgba(62, 200, 255, 0.25);
+  }
+  header .sub { color: var(--muted); font-size: 0.85rem; max-width: 52rem; margin: 0.35rem 0 0; }
+  header .sub-wrap { max-width: 52rem; }
+  header .sub-wrap summary {
+    display: none;
+    color: var(--muted);
+    font-size: 0.75rem;
+    cursor: pointer;
+    list-style: none;
+  }
+  header .sub-wrap summary::-webkit-details-marker { display: none; }
+  header .badge {
+    font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.1em;
+    border: 1px solid var(--cyan); color: var(--cyan);
+    padding: 0.25rem 0.55rem; border-radius: 2px;
+    background: rgba(62, 200, 255, 0.06);
+  }
+  .layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(280px, 360px);
+    gap: 0;
+    min-height: calc(100vh - 5.5rem);
+  }
+  @media (max-width: 960px) {
+    .layout { grid-template-columns: 1fr; }
+    .side { max-height: none; }
+  }
+  @media (max-width: 600px) {
+    header { padding: 0.55rem 0.75rem 0.4rem; gap: 0.35rem; }
+    header h1 { font-size: 0.95rem; }
+    header .badge { font-size: 0.62rem; padding: 0.15rem 0.4rem; }
+    header .sub-wrap summary { display: block; }
+    header .sub-wrap:not([open]) .sub { display: none; }
+    header .sub { font-size: 0.78rem; }
+    canvas#clock3d {
+      height: 45vh;
+      min-height: 220px;
+    }
+    .stage { min-height: 0; }
+    .hud-labels {
+      position: relative;
+      top: auto;
+      left: auto;
+      max-width: none;
+      flex-direction: row;
+      flex-wrap: wrap;
+      padding: 0.3rem 0.5rem 0;
+      gap: 0.28rem;
+    }
+    .tick-bar {
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      gap: 0.28rem;
+      padding: 0.35rem 0.5rem;
+    }
+    .tick-bar button { white-space: nowrap; flex: 0 0 auto; }
+    .legend { display: none; }
+    .telemetry { font-size: 0.65rem; }
+  }
+  .stage {
+    position: relative;
+    padding: 0;
+    border-right: 1px solid var(--hud-line);
+    background:
+      radial-gradient(ellipse at 50% 45%, #0e1824 0%, var(--bg) 70%);
+    min-height: 420px;
+  }
+  /* ASTRA-style corner brackets — chrome only, around the stage */
+  .stage::before,
+  .stage::after,
+  .stage-brackets::before,
+  .stage-brackets::after {
+    content: "";
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    z-index: 6;
+    pointer-events: none;
+    border-color: var(--bracket);
+    border-style: solid;
+  }
+  .stage::before {
+    top: 8px; left: 8px;
+    border-width: 1.5px 0 0 1.5px;
+  }
+  .stage::after {
+    top: 8px; right: 8px;
+    border-width: 1.5px 1.5px 0 0;
+  }
+  .stage-brackets::before {
+    bottom: 8px; left: 8px;
+    border-width: 0 0 1.5px 1.5px;
+  }
+  .stage-brackets::after {
+    bottom: 8px; right: 8px;
+    border-width: 0 1.5px 1.5px 0;
+  }
+  .stage-brackets {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    z-index: 6;
+  }
+  .sci-label {
+    position: absolute;
+    z-index: 7;
+    pointer-events: none;
+    font-family: ui-monospace, "IBM Plex Mono", monospace;
+    font-size: 0.62rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: rgba(62, 200, 255, 0.7);
+  }
+  .sci-label.top-left { top: 12px; left: 32px; }
+  .sci-label.top-right { top: 12px; right: 32px; }
+  canvas#clock3d {
+    width: 100%;
+    height: min(78vh, 640px);
+    display: block;
+    touch-action: none;
+    cursor: crosshair;
+  }
+  .gpu-error {
+    position: absolute;
+    inset: 0;
+    z-index: 20;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+    background: rgba(6, 8, 12, 0.96);
+  }
+  .gpu-error[hidden] { display: none; }
+  .gpu-error .box {
+    max-width: 32rem;
+    border: 1px solid var(--danger);
+    border-radius: 2px;
+    padding: 1.25rem 1.4rem;
+    background: #1a1010;
+  }
+  .gpu-error h2 {
+    margin: 0 0 0.5rem;
+    font-size: 1rem;
+    color: var(--danger);
+  }
+  .gpu-error p, .gpu-error ol {
+    color: var(--muted);
+    font-size: 0.85rem;
+    margin: 0.4rem 0;
+  }
+  .gpu-error code {
+    font-family: ui-monospace, monospace;
+    font-size: 0.78rem;
+    color: var(--ink);
+  }
+  .hud-labels {
+    position: absolute;
+    top: 1.6rem;
+    left: 0.45rem;
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    gap: 0.28rem;
+    pointer-events: none;
+    max-width: 11.5rem;
+  }
+  .hud-labels .lab {
+    position: static;
+    transform: none;
+    pointer-events: auto;
+    background: rgba(6, 10, 16, 0.78);
+    border: 1px solid var(--hud-line);
+    color: var(--ink);
+    border-radius: 2px;
+    padding: 0.18rem 0.42rem;
+    font-size: 0.68rem;
+    font-weight: 600;
+    font-family: ui-monospace, monospace;
+    cursor: pointer;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    text-align: left;
+    width: max-content;
+    max-width: 100%;
+  }
+  .hud-labels .lab[data-key="A"] { border-color: var(--a); color: var(--a); }
+  .hud-labels .lab[data-key="B"] { border-color: var(--b); color: var(--b); }
+  .hud-labels .lab[data-key="C"] { border-color: var(--c); color: var(--c); }
+  .hud-labels .lab[data-key="axle"] { border-color: var(--axle); color: var(--axle); }
+  .hud-labels .lab[data-key="AB"],
+  .hud-labels .lab[data-key="BC"],
+  .hud-labels .lab[data-key="CA"] { border-color: var(--mesh); color: var(--mesh); font-weight: 600; }
+  .hud-labels .lab:hover {
+    box-shadow: 0 0 10px rgba(62, 200, 255, 0.35);
+  }
+  .hud-labels .lab.active {
+    box-shadow: 0 0 14px rgba(62, 200, 255, 0.55);
+    background: rgba(12, 28, 40, 0.94);
+    outline: 1px solid var(--cyan);
+  }
+  .hud-labels .lab[data-key="AB"].active,
+  .hud-labels .lab[data-key="BC"].active,
+  .hud-labels .lab[data-key="CA"].active {
+    background: rgba(18, 40, 48, 0.96);
+    box-shadow: 0 0 16px rgba(126, 231, 255, 0.55);
+  }
+  .tick-bar {
+    display: flex; flex-wrap: wrap; gap: 0.35rem;
+    padding: 0.5rem 0.75rem 0.25rem;
+    font-family: ui-monospace, monospace;
+    font-size: 0.72rem;
+  }
+  .tick-bar button {
+    background: #0e1620; border: 1px solid #243040; color: var(--muted);
+    border-radius: 2px; padding: 0.2rem 0.45rem; cursor: pointer;
+  }
+  .tick-bar button:hover, .tick-bar button.active {
+    border-color: var(--cyan); color: var(--cyan);
+  }
+  .side {
+    background: var(--panel);
+    padding: 1rem 1.1rem 2rem;
+    overflow: auto;
+    max-height: calc(100vh - 5.5rem);
+    border-left: 1px solid var(--hud-line);
+  }
+  .side h2 {
+    margin: 0 0 0.5rem; font-size: 0.95rem;
+    letter-spacing: 0.04em;
+  }
+  .side h3 {
+    margin: 1rem 0 0.35rem; font-size: 0.72rem;
+    text-transform: uppercase; letter-spacing: 0.1em; color: var(--teal);
+  }
+  #contract {
+    font-family: ui-monospace, "IBM Plex Mono", monospace;
+    font-size: 0.78rem; line-height: 1.4;
+    white-space: pre-wrap; background: #06080c;
+    border: 1px solid #1e2a38; border-radius: 2px;
+    padding: 0.75rem; min-height: 12rem; color: #d8dee9;
+  }
+  .hint { color: var(--muted); font-size: 0.8rem; margin: 0.5rem 0 1rem; }
+  .links a {
+    color: var(--a); text-decoration: none; display: block;
+    font-size: 0.82rem; margin: 0.25rem 0;
+  }
+  .links a:hover { text-decoration: underline; }
+  .legend {
+    display: flex; flex-wrap: wrap; gap: 0.5rem 1rem;
+    font-size: 0.75rem; color: var(--muted);
+    padding: 0.35rem 0.75rem 0.75rem;
+  }
+  .legend span::before {
+    content: ""; display: inline-block; width: 0.65rem; height: 0.65rem;
+    border-radius: 50%; margin-right: 0.35rem; vertical-align: -1px;
+  }
+  .legend .la::before { background: var(--a); }
+  .legend .lb::before { background: var(--b); }
+  .legend .lc::before { background: var(--c); }
+  .legend .ll::before { background: var(--lace); }
+  .legend .lx::before { background: var(--axle); }
+  button.chip {
+    background: #0e1620; border: 1px solid #243040; color: var(--ink);
+    border-radius: 2px; padding: 0.25rem 0.65rem; font-size: 0.75rem;
+    cursor: pointer; margin: 0.15rem 0.2rem 0.15rem 0;
+    font-family: ui-monospace, monospace;
+  }
+  button.chip:hover, button.chip.active {
+    border-color: var(--cyan); color: var(--cyan);
+  }
+  footer {
+    grid-column: 1 / -1; padding: 0.6rem 1.25rem;
+    border-top: 1px solid var(--hud-line); color: var(--muted); font-size: 0.75rem;
+  }
+  .wall-note {
+    border-left: 3px solid var(--danger); padding-left: 0.65rem;
+    margin: 0.75rem 0; color: var(--muted); font-size: 0.8rem;
+  }
+  .env-note {
+    border-left: 3px solid var(--axle); padding-left: 0.65rem;
+    margin: 0.75rem 0; color: var(--muted); font-size: 0.8rem;
+  }
+
+  .cam-controls {
+    display: flex; align-items: center; gap: .6rem;
+    flex-wrap: wrap; margin-top: .35rem;
+    padding: 0 0.75rem 0.5rem;
+  }
+  .cam-controls button {
+    background: #0c1a24; color: #cfe6f2;
+    border: 1px solid #2c4a5e; border-radius: 2px;
+    padding: .25rem .7rem; font-size: .78rem; cursor: pointer;
+    font-family: ui-monospace, monospace; letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+  .cam-controls button:hover { background: #142838; border-color: var(--cyan); }
+  .cam-hint { font-size: .72rem; color: #6f8496; }
+
+  .gpu-tier {
+    font-family: ui-monospace, "IBM Plex Mono", monospace;
+    font-size: 0.62rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--c);
+    border: 1px solid rgba(77, 255, 138, 0.45);
+    background: rgba(77, 255, 138, 0.08);
+    padding: 0.15rem 0.45rem;
+    border-radius: 2px;
+    white-space: nowrap;
+  }
+  .gpu-tier[data-tier="full"] {
+    color: var(--cyan);
+    border-color: rgba(62, 200, 255, 0.45);
+    background: rgba(62, 200, 255, 0.08);
+  }
+  .gpu-tier[data-tier="lookref"] {
+    color: var(--danger);
+    border-color: rgba(232, 93, 93, 0.45);
+    background: rgba(232, 93, 93, 0.08);
+  }
+  .lookref-fallback {
+    position: absolute;
+    inset: 0;
+    z-index: 15;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #06080c;
+    padding: 0.5rem;
+  }
+  .lookref-fallback[hidden] { display: none; }
+  .lookref-fallback img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    opacity: 0.92;
+  }
+
+  /* Telemetry strip — real LACE_CONTRACTS only; view instrument, not runtime */
+  .telemetry {
+    margin: 0 0.75rem 0.65rem;
+    padding: 0.45rem 0.65rem;
+    border: 1px solid var(--hud-line);
+    background: rgba(8, 14, 22, 0.92);
+    font-family: ui-monospace, "IBM Plex Mono", monospace;
+    font-size: 0.7rem;
+    line-height: 1.35;
+    color: var(--muted);
+  }
+  .telemetry .tel-key {
+    color: var(--cyan);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+  .telemetry .tel-stamp {
+    color: var(--b);
+    margin-left: 0.55rem;
+  }
+  .telemetry .tel-title {
+    color: var(--ink);
+    display: block;
+    margin-top: 0.15rem;
+  }
+  .telemetry .tel-body {
+    display: block;
+    margin-top: 0.2rem;
+    color: #8a9aab;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+  }
+</style>
+</head>
+<body>
+<header>
+  <div>
+    <h1>LaceArc / Shadow clock — Physical Gearing</h1>
+    <details class="sub-wrap">
+      <summary>Layer III · emission [GAP] · WebGPU 3D</summary>
+      <p class="sub">Holder machine {A, B, C} as clock gearing on one lace axle. Projection only — not Core, not a sixth graphic, not WORD/POINTER rows. POINTER emission stays [GAP]. <strong>3D WebGPU required</strong> (no 2D primary view).</p>
+    </details>
+  </div>
+  <span class="badge">REQUIRES WebGPU · 3D only · Layer III</span>
+</header>
+
+<div class="layout">
+  <div class="stage">
+    <div class="stage-brackets" aria-hidden="true"></div>
+    <span class="sci-label top-left">LAYER III · CLUSTER REGIONS</span>
+    <span class="sci-label top-right">SDF RAYMARCH · VIEW ONLY</span>
+    <div id="gpuError" class="gpu-error" hidden>
+      <div class="box">
+        <h2>WebGPU required</h2>
+        <p>This Layer-III shadow clock is <strong>3D only</strong>. There is no 2D SVG fallback as the primary view.</p>
+        <p>Target: <strong>Chrome on Android</strong> with experimental flags enabled:</p>
+        <ol>
+          <li>Open <code>chrome://flags</code></li>
+          <li>Enable <strong>WebGPU</strong> (<code>#enable-unsafe-webgpu</code> or platform WebGPU flag)</li>
+          <li>Enable <strong>WebNN</strong> (<code>#webnn</code> / <code>#enable-webnn</code>) — expected environment; not called by this render pass yet</li>
+          <li>Relaunch Chrome, then reload this page</li>
+        </ol>
+        <p>Desktop Chrome with WebGPU also works for preview. No Three.js, no CDN, no npm.</p>
+      </div>
+    </div>
+    <canvas id="clock3d" role="img" aria-label="Lace clustering regions A B C as glass cubes threaded by wire of light (WebGPU SDF)"></canvas>
+    <div id="hud" class="hud-labels" aria-hidden="false">
+      <button type="button" class="lab" data-key="A" id="labA">A · cluster</button>
+      <button type="button" class="lab" data-key="B" id="labB">B · cluster</button>
+      <button type="button" class="lab" data-key="C" id="labC">C · cluster</button>
+      <button type="button" class="lab" data-key="axle" id="labAxle">AXLE</button>
+      <button type="button" class="lab" data-key="AB" id="labAB">A×B</button>
+      <button type="button" class="lab" data-key="BC" id="labBC">B×C</button>
+      <button type="button" class="lab" data-key="CA" id="labCA">C×A</button>
+    </div>
+    <div class="tick-bar" id="tickBar" aria-label="Time cells t0–t6"></div>
+    <div class="legend">
+      <span class="la">A cluster region</span>
+      <span class="lb">B cluster region</span>
+      <span class="lc">C cluster region</span>
+      <span class="ll">Lace cord — wire of light (Hands)</span>
+      <span class="lx">Shared axle</span>
+    </div>
+    <div class="cam-controls">
+      <button id="camReset" type="button">Reset view</button>
+      <span class="cam-hint">drag to orbit · pinch or scroll to zoom · tap a station to select</span>
+      <span id="gpuTier" class="gpu-tier" hidden title="Active WebGPU quality tier">…</span>
+    </div>
+    <div id="lookrefFallback" class="lookref-fallback" hidden>
+      <img src="hologram/lookref-lattice-hub-uplink.png" alt="Static lattice lookref (WebGPU shader compile failed)"/>
+    </div>
+    <div id="telemetry" class="telemetry" aria-live="polite">
+      <span class="tel-key" id="telKey">—</span>
+      <span class="tel-stamp" id="telStamp"></span>
+      <span class="tel-title" id="telTitle">Select a station</span>
+      <span class="tel-body" id="telBody">Telemetry reads LACE_CONTRACTS only — no theater counts.</span>
+    </div>
+  </div>
+
+  <aside class="side">
+    <h2 id="panelTitle">Select a gear or mesh</h2>
+    <p class="hint">Tap a gear (A/B/C), a mesh contact band (A×B / B×C / C×A), the axle, HUD rail, or a time chip. Contracts are Shadow interaction specs — stamps show the great contract wall.</p>
+
+    <div id="chips"></div>
+
+    <h3>Interaction contract</h3>
+    <div id="contract">Click a hot target on the clock…</div>
+
+    <div class="wall-note">
+      If a contract would change WORD, POINTER, STAR, or the governing rule — discard for Core.
+      Escapement repair (C.Locate @ B.Traj) is [H] only — not pointer-emission.
+    </div>
+
+    <div class="env-note">
+      Environment: Chrome Android with WebGPU + WebNN flags expected.
+      This page uses <strong>WebGPU for rendering only</strong>; WebNN is not invoked in this pass.
+    </div>
+
+    <h3>Docs</h3>
+    <div class="links">
+      <a href="https://github.com/NFDFLDTHRY/laceArc/blob/main/docs/shadow-clock-hologram.md" target="_blank" rel="noopener">shadow-clock-hologram.md</a>
+      <a href="https://github.com/NFDFLDTHRY/laceArc/blob/main/docs/shadow-clock-agent-brief.md" target="_blank" rel="noopener">shadow-clock-agent-brief.md</a>
+      <a href="https://github.com/NFDFLDTHRY/laceArc/blob/main/docs/staking-the-workspace.md" target="_blank" rel="noopener">staking-the-workspace.md</a>
+      <a href="https://github.com/NFDFLDTHRY/laceArc/blob/main/docs/systems-manifest.md" target="_blank" rel="noopener">systems-manifest.md</a>
+      <a href="https://github.com/NFDFLDTHRY/laceArc" target="_blank" rel="noopener">NFDFLDTHRY/laceArc</a>
+    </div>
+  </aside>
+</div>
+
+<footer>
+  Projection (Layer III). WebGPU 3D required — no 2D primary clock. POINTER emission [GAP] untouched. Shoe lace in hands — or get out of here.
+</footer>
+
+<script src="gearing/contracts-axle.js"></script>
+<script src="gearing/contracts-gears.js"></script>
+<script src="gearing/contracts-trainA.js"></script>
+<script src="gearing/contracts-trainB.js"></script>
+<script src="gearing/contracts-trainC.js"></script>
+<script src="gearing/contracts-cells.js"></script>
+<script src="gearing/contracts-escape.js"></script>
+<script src="gearing/contracts-audits.js"></script>
+<script>
+(function () {
+  "use strict";
+
+  const CONTRACTS = window.LACE_CONTRACTS || {};
+
+  const titleEl = document.getElementById("panelTitle");
+  const bodyEl = document.getElementById("contract");
+  const chips = document.getElementById("chips");
+  const tickBar = document.getElementById("tickBar");
+  const gpuError = document.getElementById("gpuError");
+  const canvas = document.getElementById("clock3d");
+  const hud = document.getElementById("hud");
+
+  let selectedKey = "B";
+  let highlightKey = "B";
+
+  const telKey = document.getElementById("telKey");
+  const telStamp = document.getElementById("telStamp");
+  const telTitle = document.getElementById("telTitle");
+  const telBody = document.getElementById("telBody");
+
+  function show(key) {
+    const c = CONTRACTS[key];
+    if (!c) return;
+    selectedKey = key;
+    highlightKey = key;
+    titleEl.textContent = c.title;
+    bodyEl.textContent = c.body;
+    if (telKey) telKey.textContent = key;
+    if (telStamp) {
+      let st = c.stamp || c.group || "";
+      const m = String(c.body || "").match(/BOUNDARY STAMP:\s*(\[[^\]]+\][^\n]*)/);
+      if (m) st = m[1].trim();
+      telStamp.textContent = st ? String(st) : "";
+    }
+    if (telTitle) telTitle.textContent = c.title || "";
+    if (telBody) {
+      const raw = (c.body || "").replace(/\s+/g, " ").trim();
+      telBody.textContent = raw.length > 160 ? raw.slice(0, 157) + "…" : raw;
+    }
+    document.querySelectorAll("button.chip").forEach(b => {
+      b.classList.toggle("active", b.dataset.key === key);
+    });
+    document.querySelectorAll(".tick-bar button").forEach(b => {
+      b.classList.toggle("active", b.dataset.key === key);
+    });
+    document.querySelectorAll(".hud-labels .lab").forEach(b => {
+      b.classList.toggle("active", b.dataset.key === key);
+    });
+  }
+
+  const chipKeys = Object.keys(CONTRACTS).sort().map(k => [k, (CONTRACTS[k] && CONTRACTS[k].chip) || k]);
+  chipKeys.forEach(([k, label]) => {
+    const b = document.createElement("button");
+    b.className = "chip";
+    b.textContent = label;
+    b.dataset.key = k;
+    b.onclick = () => show(k);
+    chips.appendChild(b);
+  });
+
+  ["t0 Cond/Banks", "t1 Rel/Rapids", "t2 Traj/Locate*", "t3 Delta", "t4 Impact", "t5 After/Rebuild", "t6 next"].forEach((label, i) => {
+    const k = "t" + i;
+    const b = document.createElement("button");
+    b.type = "button";
+    b.textContent = label;
+    b.dataset.key = k;
+    b.onclick = () => show(k);
+    tickBar.appendChild(b);
+  });
+
+  hud.querySelectorAll(".lab").forEach(btn => {
+    btn.addEventListener("click", (e) => {
+      e.stopPropagation();
+      show(btn.dataset.key);
+    });
+  });
+
+  /* ——— math helpers ——— */
+  function mat4Identity() {
+    return new Float32Array([1,0,0,0, 0,1,0,0, 0,0,1,0, 0,0,0,1]);
+  }
+  function mat4Multiply(a, b) {
+    const o = new Float32Array(16);
+    for (let c = 0; c < 4; c++) {
+      for (let r = 0; r < 4; r++) {
+        o[c * 4 + r] =
+          a[0 * 4 + r] * b[c * 4 + 0] +
+          a[1 * 4 + r] * b[c * 4 + 1] +
+          a[2 * 4 + r] * b[c * 4 + 2] +
+          a[3 * 4 + r] * b[c * 4 + 3];
+      }
+    }
+    return o;
+  }
+  function mat4Perspective(fovy, aspect, near, far) {
+    const f = 1 / Math.tan(fovy / 2);
+    const nf = 1 / (near - far);
+    const o = new Float32Array(16);
+    o[0] = f / aspect; o[5] = f; o[10] = (far + near) * nf; o[11] = -1;
+    o[14] = 2 * far * near * nf;
+    return o;
+  }
+  function mat4LookAt(eye, center, up) {
+    let zx = eye[0] - center[0], zy = eye[1] - center[1], zz = eye[2] - center[2];
+    let len = Math.hypot(zx, zy, zz) || 1; zx /= len; zy /= len; zz /= len;
+    let xx = up[1] * zz - up[2] * zy, xy = up[2] * zx - up[0] * zz, xz = up[0] * zy - up[1] * zx;
+    len = Math.hypot(xx, xy, xz) || 1; xx /= len; xy /= len; xz /= len;
+    const yx = zy * xz - zz * xy, yy = zz * xx - zx * xz, yz = zx * xy - zy * xx;
+    const o = mat4Identity();
+    o[0] = xx; o[1] = yx; o[2] = zx;
+    o[4] = xy; o[5] = yy; o[6] = zy;
+    o[8] = xz; o[9] = yz; o[10] = zz;
+    o[12] = -(xx * eye[0] + xy * eye[1] + xz * eye[2]);
+    o[13] = -(yx * eye[0] + yy * eye[1] + yz * eye[2]);
+    o[14] = -(zx * eye[0] + zy * eye[1] + zz * eye[2]);
+    return o;
+  }
+  function transformPoint(m, x, y, z) {
+    const w = m[3] * x + m[7] * y + m[11] * z + m[15];
+    return [
+      (m[0] * x + m[4] * y + m[8] * z + m[12]) / w,
+      (m[1] * x + m[5] * y + m[9] * z + m[13]) / w,
+      (m[2] * x + m[6] * y + m[10] * z + m[14]) / w
+    ];
+  }
+
+  /* ——— Shader-first renderer ———
+     The templates are not geometry. They are volumetric glow inside glass,
+     bloom, and atmospheric falloff. So the scene is an SDF raymarch in WGSL:
+     no vertex buffers, no extruded cages. Emission accumulates ALONG the ray,
+     which is why a core bleeds through its shell.
+
+     Still Layer III. A cube is not a WORD row, a beam is not a POINTER, an orb
+     is not a star. The luminous strand tying stations is Hands geometry (wire of
+     light) — two ends, not a CTC. docs/hologram/README.md. ——— */
+
+  const FLOOR_Y = -1.30;
+  const STATION = {
+    /* flattened Y triad on floor — lookref field framing, not B sky-pillar */
+    /* cores match legend: A cyan, B orange lace, C green */
+    A: { pos: [-1.55, 0.12, -0.40], r: 0.40, core: [0.30, 0.82, 1.00], id: 1 },
+    B: { pos: [ 0.05, 0.22,  0.28], r: 0.44, core: [1.00, 0.48, 0.08], id: 2 },
+    C: { pos: [ 1.60, 0.08, -0.25], r: 0.40, core: [0.22, 1.00, 0.44], id: 3 },
+  };
+  /* green yarn spheres — separate lace suggestion clusters, not C tint */
+  const CLUSTER_POS = { A1: [-2.35, 0.28, 0.85], B1: [0.95, 0.32, 1.15], C1: [2.20, 0.26, 0.55] };
+  const ESCAPE_POS  = { E1: [-0.85, FLOOR_Y + 0.05, -1.35], E2: [0.90, FLOOR_Y + 0.05, -1.35], R1: [0.10, FLOOR_Y + 0.05, -2.05] };
+  const TICK_POS = [], AUDIT_POS = {};
+  for (let i = 0; i < 7; i++) TICK_POS.push([-2.4 + i * 0.8, FLOOR_Y + 0.02, 1.75]);
+  for (let i = 0; i < 6; i++) AUDIT_POS["X" + (i + 1)] = [-2.0 + i * 0.8, FLOOR_Y + 0.04, -2.70];
+
+  /* key -> shader id (0 = no 3D element; chips still reach it) */
+  const KEY_ID = { A:1, B:2, C:3, axle:4, AB:5, BC:6, CA:7, A1:8, B1:9, C1:10,
+                   E1:18, E2:19, R1:20 };
+  for (let i = 0; i < 7; i++) KEY_ID["t" + i] = 11 + i;
+  for (let i = 1; i <= 6; i++) KEY_ID["X" + i] = 20 + i;
+
+  /* ——— Dual WGSL variants: desktop (full) vs Android-safe (lighter) ———
+     Compiled once at init; MOBILE_GPU selects Android. Adaptive budget then
+     scales backing store / march steps — never piles work. Still WebGPU. */
+
+  const SHADER_COMMON_HEAD = `
+struct U {
+  res    : vec2f,
+  time   : f32,
+  hiId   : f32,
+  eye    : vec4f,
+  ctr    : vec4f,   // NOT "target" — reserved keyword in WGSL
+  params : vec4f,   // x = fov, y = maxSteps, z = quality (1=full emit), w = unused
+};
+@group(0) @binding(0) var<uniform> u : U;
+
+struct VSOut { @builtin(position) clip : vec4f, @location(0) uv : vec2f };
+
+@vertex
+fn vs_main(@builtin(vertex_index) vi : u32) -> VSOut {
+  var p = array<vec2f, 3>(vec2f(-1.0, -3.0), vec2f(-1.0, 1.0), vec2f(3.0, 1.0));
+  var o : VSOut;
+  o.clip = vec4f(p[vi], 0.0, 1.0);
+  o.uv = p[vi];
+  return o;
+}
+
+fn sdRoundBox(p : vec3f, b : vec3f, r : f32) -> f32 {
+  let q = abs(p) - b + vec3f(r);
+  return length(max(q, vec3f(0.0))) + min(max(q.x, max(q.y, q.z)), 0.0) - r;
+}
+fn sdCapsule(p : vec3f, a : vec3f, b : vec3f, r : f32) -> f32 {
+  let pa = p - a; let ba = b - a;
+  let h = clamp(dot(pa, ba) / dot(ba, ba), 0.0, 1.0);
+  return length(pa - ba * h) - r;
+}
+fn hiMul(id : f32) -> f32 { return select(1.0, 1.18, abs(u.hiId - id) < 0.5); }
+
+fn glowPoint(p : vec3f, c : vec3f, col : vec3f, rad : f32, id : f32) -> vec3f {
+  let d = max(length(p - c) - rad, 0.0);
+  /* wider falloff — phone must read orange cores / yarn through glass (was 420/90 too tight) */
+  return col * hiMul(id) * (10.0 / (1.0 + d * d * 160.0) + 0.70 / (1.0 + d * d * 36.0));
+}
+fn glowLine(p : vec3f, a : vec3f, b : vec3f, col : vec3f, rad : f32, id : f32) -> vec3f {
+  let d = max(sdCapsule(p, a, b, rad), 0.0);
+  return col * hiMul(id) * (4.5 / (1.0 + d * d * 900.0) + 0.28 / (1.0 + d * d * 140.0));
+}
+fn arcPt(a : vec3f, b : vec3f, lift : f32, t : f32) -> vec3f {
+  return mix(a, b, t) + vec3f(0.0, sin(3.14159 * t) * lift, 0.0);
+}
+`;
+
+  /* Desktop: ambient cubes + filaments + dense emit; march ≤64 */
+  const SHADER_DESKTOP_BODY = `
+fn mapGlass(p : vec3f) -> vec2f {
+  let a = sdRoundBox(p - vec3f(-1.55, 0.12, -0.40), vec3f(0.40), 0.045);
+  let b = sdRoundBox(p - vec3f( 0.05, 0.22,  0.28), vec3f(0.44), 0.045);
+  let c = sdRoundBox(p - vec3f( 1.60, 0.08, -0.25), vec3f(0.40), 0.045);
+  var d = a; var id = 1.0;
+  if (b < d) { d = b; id = 2.0; }
+  if (c < d) { d = c; id = 3.0; }
+  let amb = array<vec3f, 12>(
+    vec3f(-2.80, FLOOR_Y_C + 0.18, -1.10),
+    vec3f(-2.10, FLOOR_Y_C + 0.16,  0.70),
+    vec3f(-0.90, FLOOR_Y_C + 0.15, -1.55),
+    vec3f(-0.35, FLOOR_Y_C + 0.17,  1.20),
+    vec3f( 0.70, FLOOR_Y_C + 0.15, -1.20),
+    vec3f( 1.15, FLOOR_Y_C + 0.16,  0.85),
+    vec3f( 2.45, FLOOR_Y_C + 0.17, -0.90),
+    vec3f( 2.90, FLOOR_Y_C + 0.15,  0.40),
+    vec3f(-1.20, FLOOR_Y_C + 0.14,  0.15),
+    vec3f( 0.40, FLOOR_Y_C + 0.14, -0.55),
+    vec3f(-2.50, FLOOR_Y_C + 0.15, -0.20),
+    vec3f( 2.05, FLOOR_Y_C + 0.14,  1.35)
+  );
+  let ambR = array<f32, 12>(0.18, 0.15, 0.14, 0.16, 0.15, 0.14, 0.17, 0.15, 0.13, 0.14, 0.15, 0.13);
+  for (var i = 0; i < 12; i = i + 1) {
+    let di = sdRoundBox(p - amb[i], vec3f(ambR[i]), 0.03);
+    if (di < d) { d = di; id = 30.0 + f32(i); }
+  }
+  return vec2f(d, id);
+}
+
+fn emitField(p : vec3f) -> vec3f {
+  var e = vec3f(0.0);
+  let SA = vec3f(-1.55, 0.12, -0.40);
+  let SB = vec3f( 0.05, 0.22,  0.28);
+  let SC = vec3f( 1.60, 0.08, -0.25);
+  let puls = 0.88 + 0.12 * sin(u.time * 1.5);
+  /* A cyan hub · B orange lace · C green — legend + lookrefs (not all-sepia) */
+  let colA = vec3f(0.30, 0.82, 1.00);
+  let colB = vec3f(1.00, 0.42, 0.08);
+  let colC = vec3f(0.28, 1.00, 0.42);
+  let hotA = vec3f(0.55, 0.90, 1.00);
+  let hotB = vec3f(1.00, 0.22, 0.06);
+  let hotC = vec3f(0.40, 1.00, 0.55);
+  /* Hot dense lace cores through glass — B especially orange/amber (lookref) */
+  e += glowPoint(p, SA, colA * 2.40 * puls, 0.11, 1.0);
+  e += glowPoint(p, SB, colB * 3.20 * puls, 0.14, 2.0);
+  e += glowPoint(p, SC, colC * 2.40 * puls, 0.11, 3.0);
+  e += glowPoint(p, SA, hotA * 0.95 * puls, 0.22, 1.0);
+  e += glowPoint(p, SB, hotB * 1.45 * puls, 0.26, 2.0);
+  e += glowPoint(p, SC, hotC * 0.95 * puls, 0.22, 3.0);
+  e += glowPoint(p, SB + vec3f( 0.09, 0.05, -0.06), vec3f(1.00, 0.32, 0.04) * 1.70 * puls, 0.07, 2.0);
+  e += glowPoint(p, SB + vec3f(-0.08, -0.04, 0.08), vec3f(1.00, 0.48, 0.08) * 1.45 * puls, 0.06, 2.0);
+  e += glowPoint(p, SB + vec3f( 0.02, 0.10, 0.04), vec3f(1.00, 0.22, 0.03) * 1.80 * puls, 0.05, 2.0);
+  e += glowPoint(p, SA + vec3f( 0.06, 0.04, 0.05), vec3f(1.00, 0.55, 0.12) * 0.70 * puls, 0.055, 1.0);
+  e += glowPoint(p, SC + vec3f(-0.05, 0.04, -0.05), vec3f(1.00, 0.55, 0.12) * 0.70 * puls, 0.055, 3.0);
+  if (u.params.z > 0.5) {
+    for (var i = 0; i < 5; i = i + 1) {
+      let t0 = f32(i) / 5.0; let t1 = f32(i + 1) / 5.0;
+      let ang0 = t0 * 9.4 + u.time * 0.28; let ang1 = t1 * 9.4 + u.time * 0.28;
+      let ra = 0.13 + 0.04 * sin(t0 * 11.0);
+      let rb = 0.16 + 0.05 * sin(t0 * 9.0 + 1.1);
+      let rc = 0.13 + 0.04 * cos(t0 * 10.0);
+      let a0 = SA + vec3f(cos(ang0) * ra, (t0 - 0.5) * 0.28, sin(ang0) * ra);
+      let a1 = SA + vec3f(cos(ang1) * ra, (t1 - 0.5) * 0.28, sin(ang1) * ra);
+      let b0 = SB + vec3f(cos(ang0 * 1.1) * rb, (t0 - 0.5) * 0.32, sin(ang0 * 1.1) * rb);
+      let b1 = SB + vec3f(cos(ang1 * 1.1) * rb, (t1 - 0.5) * 0.32, sin(ang1 * 1.1) * rb);
+      let c0 = SC + vec3f(cos(ang0 * 0.9) * rc, (t0 - 0.5) * 0.26, sin(ang0 * 0.9) * rc);
+      let c1 = SC + vec3f(cos(ang1 * 0.9) * rc, (t1 - 0.5) * 0.26, sin(ang1 * 0.9) * rc);
+      e += glowLine(p, a0, a1, colA * 0.85, 0.008, 1.0);
+      e += glowLine(p, b0, b1, colB * 1.35, 0.010, 2.0);
+      e += glowLine(p, c0, c1, colC * 0.85, 0.008, 3.0);
+    }
+  }
+  /* jagged cyan lightning arcs between cubes */
+  for (var i = 0; i < 4; i = i + 1) {
+    let t0 = f32(i) / 4.0; let t1 = f32(i + 1) / 4.0;
+    let jag = sin(t0 * 18.0 + u.time) * 0.06;
+    e += glowLine(p, arcPt(SA, SB, 0.32 + jag, t0), arcPt(SA, SB, 0.32 - jag, t1), vec3f(0.28, 0.88, 1.00) * 0.95, 0.015, 5.0);
+    e += glowLine(p, arcPt(SB, SC, 0.32 - jag, t0), arcPt(SB, SC, 0.32 + jag, t1), vec3f(0.28, 0.88, 1.00) * 0.95, 0.015, 6.0);
+    e += glowLine(p, arcPt(SC, SA, -0.18 + jag, t0), arcPt(SC, SA, -0.18 - jag, t1), vec3f(0.32, 0.90, 1.00) * 0.82, 0.014, 7.0);
+  }
+  let startEnd = vec3f(-2.70, -0.55, -0.85);
+  let haltEnd  = vec3f( 2.70, -0.55,  0.30);
+  e += glowLine(p, startEnd, SA, vec3f(0.35, 0.88, 1.00) * 0.85, 0.022, 4.0);
+  e += glowLine(p, SA, SB,    vec3f(0.35, 0.88, 1.00) * 1.00, 0.026, 4.0);
+  e += glowLine(p, SB, SC,    vec3f(0.35, 0.88, 1.00) * 1.00, 0.026, 4.0);
+  e += glowLine(p, SC, haltEnd, vec3f(0.35, 0.88, 1.00) * 0.85, 0.022, 4.0);
+  e += glowLine(p, startEnd, SA, vec3f(1.00, 0.78, 0.25) * 0.42, 0.040, 4.0);
+  e += glowLine(p, SA, SB,    vec3f(1.00, 0.78, 0.25) * 0.52, 0.045, 4.0);
+  e += glowLine(p, SB, SC,    vec3f(1.00, 0.78, 0.25) * 0.52, 0.045, 4.0);
+  e += glowLine(p, SC, haltEnd, vec3f(1.00, 0.78, 0.25) * 0.42, 0.040, 4.0);
+  e += glowPoint(p, startEnd, vec3f(1.00, 0.88, 0.45) * 0.70, 0.055, 4.0);
+  e += glowPoint(p, haltEnd,  vec3f(1.00, 0.88, 0.45) * 0.70, 0.055, 4.0);
+  if (u.params.z > 0.5) {
+    for (var i = 0; i < 4; i = i + 1) {
+      let t0 = f32(i) / 4.0; let t1 = f32(i + 1) / 4.0;
+      let ang0 = t0 * 3.8; let ang1 = t1 * 3.8;
+      let r0 = 0.20 + 0.05 * sin(t0 * 6.28);
+      let r1 = 0.20 + 0.05 * sin(t1 * 6.28);
+      let w0 = SB + vec3f(cos(ang0) * r0, (t0 - 0.5) * 0.35, sin(ang0) * r0);
+      let w1 = SB + vec3f(cos(ang1) * r1, (t1 - 0.5) * 0.35, sin(ang1) * r1);
+      e += glowLine(p, w0, w1, vec3f(1.00, 0.80, 0.28) * 0.45, 0.010, 0.0);
+    }
+    for (var i = 0; i < 4; i = i + 1) {
+      let t0 = f32(i) / 4.0; let t1 = f32(i + 1) / 4.0;
+      let m0 = mix(startEnd, haltEnd, t0);
+      let m1 = mix(startEnd, haltEnd, t1);
+      let p0 = vec3f(m0.x, FLOOR_Y_C + 0.06, m0.z);
+      let p1 = vec3f(m1.x, FLOOR_Y_C + 0.06, m1.z);
+      e += glowLine(p, p0, p1, vec3f(1.00, 0.70, 0.20) * 0.18, 0.022, 0.0);
+    }
+    for (var i = 0; i < 3; i = i + 1) {
+      let t = (f32(i) + 0.5) / 3.0;
+      let abm = mix(SA, SB, t);
+      let bcm = mix(SB, SC, t);
+      let ab = vec3f(abm.x, FLOOR_Y_C + 0.035, abm.z);
+      let bc = vec3f(bcm.x, FLOOR_Y_C + 0.035, bcm.z);
+      let abDir = normalize(vec3f(SB.x - SA.x, 0.0, SB.z - SA.z)) * 0.09;
+      let bcDir = normalize(vec3f(SC.x - SB.x, 0.0, SC.z - SB.z)) * 0.09;
+      e += glowLine(p, ab - abDir, ab + abDir, vec3f(0.22, 0.88, 1.00) * 0.40, 0.010, 0.0);
+      e += glowPoint(p, ab + abDir * 1.35, vec3f(0.30, 0.92, 1.00) * 0.50, 0.028, 0.0);
+      e += glowLine(p, bc - bcDir, bc + bcDir, vec3f(0.22, 0.88, 1.00) * 0.40, 0.010, 0.0);
+      e += glowPoint(p, bc + bcDir * 1.35, vec3f(0.30, 0.92, 1.00) * 0.50, 0.028, 0.0);
+    }
+    let ambC = array<vec3f, 8>(
+      vec3f(-2.80, FLOOR_Y_C + 0.18, -1.10),
+      vec3f(-2.10, FLOOR_Y_C + 0.16,  0.70),
+      vec3f(-0.90, FLOOR_Y_C + 0.15, -1.55),
+      vec3f( 0.70, FLOOR_Y_C + 0.15, -1.20),
+      vec3f( 1.15, FLOOR_Y_C + 0.16,  0.85),
+      vec3f( 2.45, FLOOR_Y_C + 0.17, -0.90),
+      vec3f(-1.20, FLOOR_Y_C + 0.14,  0.15),
+      vec3f( 2.05, FLOOR_Y_C + 0.14,  1.35)
+    );
+    for (var i = 0; i < 8; i = i + 1) {
+      /* dim clear glass cores — not glowing cyan; A/B/C own the color story */
+      e += glowPoint(p, ambC[i], vec3f(0.55, 0.58, 0.62) * 0.06, 0.035, 0.0);
+    }
+  }
+  /* Vertical uplink from hub B — lookref signature (projection/axle visual only; not POINTER emission) */
+  let up0 = SB + vec3f(0.0, 0.38, 0.0);
+  let up1 = SB + vec3f(0.0, 2.45, 0.0);
+  e += glowLine(p, up0, up1, vec3f(0.55, 0.92, 1.00) * 1.85, 0.030, 0.0);
+  e += glowLine(p, up0, up1, vec3f(0.90, 0.98, 1.00) * 1.05, 0.012, 0.0);
+  e += glowPoint(p, up0, vec3f(0.85, 0.96, 1.00) * 1.45, 0.09, 0.0);
+  e += glowPoint(p, up1, vec3f(0.70, 0.92, 1.00) * 0.70, 0.06, 0.0);
+  let YA = vec3f(-2.35, 0.28, 0.85);
+  let YB = vec3f( 0.95, 0.32, 1.15);
+  let YC = vec3f( 2.20, 0.26, 0.55);
+  /* emerald yarn orbs — 5 glowPoints each, halo ~0.22–0.28 (phone-readable) */
+  e += glowPoint(p, YA, vec3f(0.18, 1.00, 0.38) * 2.10, 0.12,  8.0);
+  e += glowPoint(p, YA + vec3f( 0.09, 0.05, -0.06), vec3f(0.22, 1.00, 0.42) * 1.35, 0.10,  8.0);
+  e += glowPoint(p, YA + vec3f(-0.08, -0.04, 0.08), vec3f(0.12, 0.95, 0.32) * 1.20, 0.09,  8.0);
+  e += glowPoint(p, YA + vec3f( 0.03, 0.10, 0.04), vec3f(0.40, 1.00, 0.55) * 1.05, 0.08,  8.0);
+  e += glowPoint(p, YA, vec3f(0.45, 1.00, 0.60) * 0.72, 0.26,  8.0);
+  e += glowPoint(p, YB, vec3f(0.18, 1.00, 0.38) * 2.25, 0.13,  9.0);
+  e += glowPoint(p, YB + vec3f( 0.08, 0.06, -0.07), vec3f(0.22, 1.00, 0.42) * 1.40, 0.11,  9.0);
+  e += glowPoint(p, YB + vec3f(-0.09, -0.05, 0.06), vec3f(0.12, 0.95, 0.32) * 1.25, 0.10,  9.0);
+  e += glowPoint(p, YB + vec3f( 0.04, 0.11, 0.05), vec3f(0.40, 1.00, 0.55) * 1.10, 0.09,  9.0);
+  e += glowPoint(p, YB, vec3f(0.45, 1.00, 0.60) * 0.78, 0.28,  9.0);
+  e += glowPoint(p, YC, vec3f(0.18, 1.00, 0.38) * 2.10, 0.12, 10.0);
+  e += glowPoint(p, YC + vec3f( 0.09, 0.05, -0.05), vec3f(0.22, 1.00, 0.42) * 1.35, 0.10, 10.0);
+  e += glowPoint(p, YC + vec3f(-0.07, -0.04, 0.08), vec3f(0.12, 0.95, 0.32) * 1.20, 0.09, 10.0);
+  e += glowPoint(p, YC + vec3f( 0.02, 0.10, 0.03), vec3f(0.40, 1.00, 0.55) * 1.05, 0.08, 10.0);
+  e += glowPoint(p, YC, vec3f(0.45, 1.00, 0.60) * 0.72, 0.26, 10.0);
+  /* cyan path strands cube↔yarn (jagged mid) */
+  {
+    let midYA = mix(YA, SA, 0.5) + vec3f(0.0, 0.22, 0.0);
+    let midYB = mix(YB, SB, 0.5) + vec3f(0.0, 0.25, 0.0);
+    let midYC = mix(YC, SC, 0.5) + vec3f(0.0, 0.20, 0.0);
+    e += glowLine(p, YA, midYA, vec3f(0.28, 0.90, 1.00) * 0.85, 0.012, 0.0);
+    e += glowLine(p, midYA, SA, vec3f(0.28, 0.90, 1.00) * 0.85, 0.012, 0.0);
+    e += glowLine(p, YB, midYB, vec3f(0.28, 0.90, 1.00) * 0.90, 0.013, 0.0);
+    e += glowLine(p, midYB, SB, vec3f(0.28, 0.90, 1.00) * 0.90, 0.013, 0.0);
+    e += glowLine(p, YC, midYC, vec3f(0.28, 0.90, 1.00) * 0.85, 0.012, 0.0);
+    e += glowLine(p, midYC, SC, vec3f(0.28, 0.90, 1.00) * 0.85, 0.012, 0.0);
+  }
+  /* wispy lace trails (soft) */
+  e += glowPoint(p, SA + vec3f(0.40, 0.55, -0.25), vec3f(0.20, 0.55, 0.80) * 0.06, 0.38, 0.0);
+  e += glowPoint(p, SB + vec3f(-0.20, 0.55, 0.35), vec3f(1.00, 0.45, 0.10) * 0.08, 0.40, 0.0);
+  e += glowPoint(p, SB + vec3f(0.15, 1.10, 0.10), vec3f(0.55, 0.85, 1.00) * 0.05, 0.35, 0.0);
+  for (var i = 0; i < 7; i = i + 1) {
+    let x = -2.4 + f32(i) * 0.8;
+    e += glowPoint(p, vec3f(x, FLOOR_Y_C + 0.02, 1.75), vec3f(0.20, 0.65, 0.80) * 0.22, 0.055, 11.0 + f32(i));
+  }
+  e += glowPoint(p, vec3f(-0.85, FLOOR_Y_C + 0.05, -1.35), vec3f(1.00, 0.72, 0.25) * 0.28, 0.05, 18.0);
+  e += glowPoint(p, vec3f( 0.90, FLOOR_Y_C + 0.05, -1.35), vec3f(1.00, 0.72, 0.25) * 0.28, 0.05, 19.0);
+  e += glowPoint(p, vec3f( 0.10, FLOOR_Y_C + 0.05, -2.05), vec3f(1.00, 0.72, 0.25) * 0.28, 0.05, 20.0);
+  for (var i = 0; i < 6; i = i + 1) {
+    let x = -2.0 + f32(i) * 0.8;
+    e += glowPoint(p, vec3f(x, FLOOR_Y_C + 0.04, -2.70), vec3f(0.85, 0.30, 0.18) * 0.18, 0.045, 21.0 + f32(i));
+  }
+  return e;
+}
+
+fn floorColor(q : vec2f, foot : f32) -> vec3f {
+  let w = max(foot * 1.6, 0.005);
+  let res = 1.0 - smoothstep(0.30, 0.85, foot);
+  if (res <= 0.001) { return vec3f(0.0); }
+  let g = abs(fract(q * 2.0) - vec2f(0.5));
+  let minor = 1.0 - smoothstep(0.0, w * 2.0, min(g.x, g.y));
+  let g2 = abs(fract(q) - vec2f(0.5));
+  let mid = 1.0 - smoothstep(0.0, w, min(g2.x, g2.y));
+  let g4 = abs(fract(q * 0.25) - vec2f(0.5));
+  let major = 1.0 - smoothstep(0.0, w * 0.30, min(g4.x, g4.y));
+  let cell = floor(q * 5.0);
+  let h = fract(sin(dot(cell, vec2f(127.1, 311.7))) * 43758.5453);
+  let gx = abs(fract(q.x * 5.0) - 0.5);
+  let gz = abs(fract(q.y * 5.0) - 0.5);
+  let near = 1.0 - smoothstep(0.0, max(w * 3.0, 0.04), length(vec2f(gx, gz)));
+  let dots = select(0.0, near, h > 0.88);
+  let ticks = select(0.0, 1.0 - smoothstep(0.0, w * 2.5, min(gx, gz)), h > 0.78 && h <= 0.88);
+  let fade = exp(-length(q) * 0.28);
+  /* dark motherboard plate — cyan AND orange micro traces (lookref); cut blue grid wash */
+  let plate = vec3f(0.012, 0.016, 0.022) * 0.70;
+  let cyanTrace = vec3f(0.10, 0.55, 0.70);
+  let orangeTrace = vec3f(0.95, 0.42, 0.08);
+  return (plate
+        + cyanTrace * minor * 0.14
+        + orangeTrace * minor * 0.10
+        + cyanTrace * mid * 0.18
+        + orangeTrace * mid * 0.14
+        + cyanTrace * major * 0.28
+        + orangeTrace * major * 0.22
+        + cyanTrace * dots * 0.32
+        + orangeTrace * ticks * 0.38) * fade * res;
+}
+
+fn shade(ndc : vec2f) -> vec3f {
+  let aspect = u.res.x / u.res.y;
+  let uv = vec2f(ndc.x * aspect, ndc.y);
+  let ro = u.eye.xyz;
+  let fwd = normalize(u.ctr.xyz - ro);
+  let rgt = normalize(cross(fwd, vec3f(0.0, 1.0, 0.0)));
+  let upv = cross(rgt, fwd);
+  let rd = normalize(fwd + (rgt * uv.x + upv * uv.y) * u.params.x);
+  var col = vec3f(0.0);
+  var trans = 1.0;
+  var t = 0.05;
+  var tFloor = 1e9;
+  if (rd.y < -1e-4) {
+    let tf = (FLOOR_Y_C - ro.y) / rd.y;
+    if (tf > 0.0) { tFloor = tf; }
+  }
+  let maxSteps = i32(clamp(u.params.y, 16.0, 64.0));
+  var interiorHits = 0;
+  for (var i = 0; i < 64; i = i + 1) {
+    if (i >= maxSteps) { break; }
+    let p = ro + rd * t;
+    let g = mapGlass(p);
+    let step = clamp(max(g.x, 0.028) * 0.85, 0.028, 0.70);
+    let em = max(emitField(p) - vec3f(0.028), vec3f(0.0));
+    col += em * step * trans * 0.28;
+    if (g.x < 0.008) {
+      interiorHits = interiorHits + 1;
+      if ((interiorHits & 1) == 1) {
+        let e = vec2f(0.003, 0.0);
+        let n = normalize(vec3f(
+          mapGlass(p + e.xyy).x - mapGlass(p - e.xyy).x,
+          mapGlass(p + e.yxy).x - mapGlass(p - e.yxy).x,
+          mapGlass(p + e.yyx).x - mapGlass(p - e.yyx).x));
+        let fres = pow(1.0 - abs(dot(n, rd)), 2.5) * 0.38;
+        /* per-id tint dominates — generic cyan-white wash must not kill orange/green */
+        let tint = select(vec3f(0.42, 0.48, 0.55),
+                          select(select(vec3f(0.22, 0.98, 0.40), vec3f(1.00, 0.45, 0.08), g.y < 2.5),
+                                 vec3f(0.28, 0.80, 1.00), g.y < 1.5),
+                          g.y < 29.5);
+        let wash = select(vec3f(0.30, 0.36, 0.42) * 0.04, vec3f(0.45, 0.65, 0.85) * 0.03, g.y < 29.5);
+        col += (wash + tint * 0.62) * fres * trans * hiMul(min(g.y, 3.0));
+        col += tint * select(0.015, 0.10, g.y < 29.5) * trans * hiMul(min(g.y, 3.0));
+      }
+      trans *= 0.82;
+      t += 0.055;
+      if (interiorHits > 6) { t += 0.12; }
+      continue;
+    }
+    if (t >= tFloor) {
+      let fp = ro + rd * tFloor;
+      col += floorColor(fp.xz, tFloor * (2.0 * u.params.x / u.res.y)) * trans;
+      trans *= 0.06;
+      break;
+    }
+    t += step;
+    if (t > 22.0 || trans < 0.025) { break; }
+  }
+  col = col * 1.25 + vec3f(0.0005, 0.001, 0.002);
+  col = col / (col + vec3f(0.85));
+  col = pow(max(col, vec3f(0.0)), vec3f(0.92));
+  return col;
+}
+
+@fragment
+fn fs_main(input : VSOut) -> @location(0) vec4f {
+  return vec4f(shade(input.uv), 1.0);
+}
+`;
+
+  /* Android-safe: same visual language as desktop — A/B/C legend colors, ≥8
+     ambient glass, yarn, cyan+gold cord, dark circuit floor. Cheaper filaments
+     (B denser); sphere-trace 0.012–0.28; one glass hit then jump-out. Still WebGPU. */
+  const SHADER_ANDROID_BODY = `
+fn mapGlass(p : vec3f) -> vec2f {
+  let a = sdRoundBox(p - vec3f(-1.55, 0.12, -0.40), vec3f(0.40), 0.045);
+  let b = sdRoundBox(p - vec3f( 0.05, 0.22,  0.28), vec3f(0.44), 0.045);
+  let c = sdRoundBox(p - vec3f( 1.60, 0.08, -0.25), vec3f(0.40), 0.045);
+  var d = a; var id = 1.0;
+  if (b < d) { d = b; id = 2.0; }
+  if (c < d) { d = c; id = 3.0; }
+  /* ≥8 idle glass cubes — same language as desktop, cheaper count */
+  let amb = array<vec3f, 8>(
+    vec3f(-2.80, FLOOR_Y_C + 0.18, -1.10),
+    vec3f(-2.10, FLOOR_Y_C + 0.16,  0.70),
+    vec3f(-0.90, FLOOR_Y_C + 0.15, -1.55),
+    vec3f( 0.70, FLOOR_Y_C + 0.15, -1.20),
+    vec3f( 1.15, FLOOR_Y_C + 0.16,  0.85),
+    vec3f( 2.45, FLOOR_Y_C + 0.17, -0.90),
+    vec3f(-1.20, FLOOR_Y_C + 0.14,  0.15),
+    vec3f( 2.05, FLOOR_Y_C + 0.14,  1.35)
+  );
+  let ambR = array<f32, 8>(0.16, 0.14, 0.13, 0.14, 0.13, 0.15, 0.12, 0.13);
+  for (var i = 0; i < 8; i = i + 1) {
+    let di = sdRoundBox(p - amb[i], vec3f(ambR[i]), 0.028);
+    if (di < d) { d = di; id = 30.0 + f32(i); }
+  }
+  return vec2f(d, id);
+}
+
+fn emitField(p : vec3f) -> vec3f {
+  var e = vec3f(0.0);
+  let SA = vec3f(-1.55, 0.12, -0.40);
+  let SB = vec3f( 0.05, 0.22,  0.28);
+  let SC = vec3f( 1.60, 0.08, -0.25);
+  let puls = 0.90 + 0.10 * sin(u.time * 1.5);
+  /* MUST match desktop + legend: A cyan, B orange lace, C green — never paint SC orange */
+  let colA = vec3f(0.30, 0.82, 1.00);
+  let colB = vec3f(1.00, 0.42, 0.08);
+  let colC = vec3f(0.28, 1.00, 0.42);
+  let hotA = vec3f(0.55, 0.90, 1.00);
+  let hotB = vec3f(1.00, 0.22, 0.06);
+  let hotC = vec3f(0.40, 1.00, 0.55);
+  /* Hot dense lace cores — MUST read on Android (prefer emit over march steps) */
+  e += glowPoint(p, SA, colA * 2.60 * puls, 0.10, 1.0);
+  e += glowPoint(p, SB, colB * 3.40 * puls, 0.13, 2.0);
+  e += glowPoint(p, SC, colC * 2.60 * puls, 0.10, 3.0);
+  e += glowPoint(p, SA, hotA * 1.10 * puls, 0.20, 1.0);
+  e += glowPoint(p, SB, hotB * 1.60 * puls, 0.24, 2.0);
+  e += glowPoint(p, SC, hotC * 1.10 * puls, 0.20, 3.0);
+  e += glowPoint(p, SB + vec3f( 0.09, 0.05, -0.06), vec3f(1.00, 0.32, 0.04) * 1.80 * puls, 0.07, 2.0);
+  e += glowPoint(p, SB + vec3f(-0.08, -0.04, 0.08), vec3f(1.00, 0.48, 0.08) * 1.55 * puls, 0.06, 2.0);
+  e += glowPoint(p, SB + vec3f( 0.02, 0.10, 0.04), vec3f(1.00, 0.22, 0.03) * 1.90 * puls, 0.05, 2.0);
+  e += glowPoint(p, SA + vec3f( 0.06, 0.04, 0.05), vec3f(1.00, 0.55, 0.12) * 0.75 * puls, 0.05, 1.0);
+  e += glowPoint(p, SC + vec3f(-0.05, 0.04, -0.05), vec3f(1.00, 0.55, 0.12) * 0.75 * puls, 0.05, 3.0);
+  /* short capsule filaments (B denser) — lace cores through glass */
+  {
+    let ang = u.time * 0.35;
+    let b0 = SB + vec3f(cos(ang) * 0.14, -0.06, sin(ang) * 0.14);
+    let b1 = SB + vec3f(cos(ang + 2.1) * 0.14, 0.06, sin(ang + 2.1) * 0.14);
+    let b2 = SB + vec3f(cos(ang + 4.2) * 0.12, 0.0, sin(ang + 4.2) * 0.12);
+    let b3 = SB + vec3f(cos(ang + 1.0) * 0.10, 0.08, sin(ang + 1.0) * 0.10);
+    e += glowLine(p, b0, b1, colB * 1.25, 0.010, 2.0);
+    e += glowLine(p, b1, b2, colB * 1.05, 0.009, 2.0);
+    e += glowLine(p, b2, b3, colB * 0.95, 0.008, 2.0);
+    let a0 = SA + vec3f(cos(ang) * 0.12, -0.05, sin(ang) * 0.12);
+    let a1 = SA + vec3f(cos(ang + 2.4) * 0.12, 0.05, sin(ang + 2.4) * 0.12);
+    e += glowLine(p, a0, a1, colA * 0.90, 0.008, 1.0);
+    let c0 = SC + vec3f(cos(ang * 0.9) * 0.12, -0.05, sin(ang * 0.9) * 0.12);
+    let c1 = SC + vec3f(cos(ang * 0.9 + 2.4) * 0.12, 0.05, sin(ang * 0.9 + 2.4) * 0.12);
+    e += glowLine(p, c0, c1, colC * 0.90, 0.008, 3.0);
+  }
+  /* jagged cyan lightning — multi-segment */
+  for (var i = 0; i < 3; i = i + 1) {
+    let t0 = f32(i) / 3.0; let t1 = f32(i + 1) / 3.0;
+    let jag = sin(t0 * 16.0 + u.time) * 0.055;
+    e += glowLine(p, arcPt(SA, SB, 0.30 + jag, t0), arcPt(SA, SB, 0.30 - jag, t1), vec3f(0.28, 0.88, 1.00) * 1.05, 0.016, 5.0);
+    e += glowLine(p, arcPt(SB, SC, 0.30 - jag, t0), arcPt(SB, SC, 0.30 + jag, t1), vec3f(0.28, 0.88, 1.00) * 1.05, 0.016, 6.0);
+    e += glowLine(p, arcPt(SC, SA, -0.18 + jag, t0), arcPt(SC, SA, -0.18 - jag, t1), vec3f(0.32, 0.90, 1.00) * 0.90, 0.015, 7.0);
+  }
+  let startEnd = vec3f(-2.70, -0.55, -0.85);
+  let haltEnd  = vec3f( 2.70, -0.55,  0.30);
+  /* cyan path + gold Hands cord through clusters (start→halt) */
+  e += glowLine(p, startEnd, SA, vec3f(0.35, 0.88, 1.00) * 0.90, 0.024, 4.0);
+  e += glowLine(p, SA, SB,    vec3f(0.35, 0.88, 1.00) * 1.05, 0.028, 4.0);
+  e += glowLine(p, SB, SC,    vec3f(0.35, 0.88, 1.00) * 1.05, 0.028, 4.0);
+  e += glowLine(p, SC, haltEnd, vec3f(0.35, 0.88, 1.00) * 0.90, 0.024, 4.0);
+  e += glowLine(p, startEnd, SA, vec3f(1.00, 0.78, 0.25) * 0.40, 0.042, 4.0);
+  e += glowLine(p, SA, SB,    vec3f(1.00, 0.78, 0.25) * 0.52, 0.048, 4.0);
+  e += glowLine(p, SB, SC,    vec3f(1.00, 0.78, 0.25) * 0.52, 0.048, 4.0);
+  e += glowLine(p, SC, haltEnd, vec3f(1.00, 0.78, 0.25) * 0.40, 0.042, 4.0);
+  e += glowPoint(p, startEnd, vec3f(1.00, 0.88, 0.45) * 0.70, 0.055, 4.0);
+  e += glowPoint(p, haltEnd,  vec3f(1.00, 0.88, 0.45) * 0.70, 0.055, 4.0);
+  /* subtle arrow cues on floor paths */
+  {
+    let ab = vec3f(mix(SA, SB, 0.5).x, FLOOR_Y_C + 0.04, mix(SA, SB, 0.5).z);
+    let bc = vec3f(mix(SB, SC, 0.5).x, FLOOR_Y_C + 0.04, mix(SB, SC, 0.5).z);
+    let abDir = normalize(vec3f(SB.x - SA.x, 0.0, SB.z - SA.z)) * 0.10;
+    let bcDir = normalize(vec3f(SC.x - SB.x, 0.0, SC.z - SB.z)) * 0.10;
+    e += glowLine(p, ab - abDir, ab + abDir, vec3f(0.22, 0.88, 1.00) * 0.45, 0.010, 0.0);
+    e += glowPoint(p, ab + abDir * 1.3, vec3f(0.30, 0.92, 1.00) * 0.55, 0.028, 0.0);
+    e += glowLine(p, bc - bcDir, bc + bcDir, vec3f(0.22, 0.88, 1.00) * 0.45, 0.010, 0.0);
+    e += glowPoint(p, bc + bcDir * 1.3, vec3f(0.30, 0.92, 1.00) * 0.55, 0.028, 0.0);
+  }
+  /* Vertical uplink from hub B — lookref signature (projection/axle visual only; not POINTER emission) */
+  {
+    let up0 = SB + vec3f(0.0, 0.38, 0.0);
+    let up1 = SB + vec3f(0.0, 2.40, 0.0);
+    e += glowLine(p, up0, up1, vec3f(0.55, 0.92, 1.00) * 2.00, 0.032, 0.0);
+    e += glowLine(p, up0, up1, vec3f(0.90, 0.98, 1.00) * 1.15, 0.013, 0.0);
+    e += glowPoint(p, up0, vec3f(0.85, 0.96, 1.00) * 1.55, 0.09, 0.0);
+    e += glowPoint(p, up1, vec3f(0.70, 0.92, 1.00) * 0.75, 0.06, 0.0);
+  }
+  let YA = vec3f(-2.35, 0.28, 0.85);
+  let YB = vec3f( 0.95, 0.32, 1.15);
+  let YC = vec3f( 2.20, 0.26, 0.55);
+  /* emerald yarn orbs — 4–5 points, halo 0.22–0.28; must be obvious on phone */
+  e += glowPoint(p, YA, vec3f(0.18, 1.00, 0.38) * 2.40, 0.12,  8.0);
+  e += glowPoint(p, YA + vec3f( 0.09, 0.05, -0.06), vec3f(0.22, 1.00, 0.42) * 1.50, 0.10,  8.0);
+  e += glowPoint(p, YA + vec3f(-0.08, -0.04, 0.08), vec3f(0.12, 0.95, 0.32) * 1.30, 0.09,  8.0);
+  e += glowPoint(p, YA + vec3f( 0.03, 0.10, 0.04), vec3f(0.40, 1.00, 0.55) * 1.15, 0.08,  8.0);
+  e += glowPoint(p, YA, vec3f(0.45, 1.00, 0.60) * 0.85, 0.26,  8.0);
+  e += glowPoint(p, YB, vec3f(0.18, 1.00, 0.38) * 2.55, 0.13,  9.0);
+  e += glowPoint(p, YB + vec3f( 0.08, 0.06, -0.07), vec3f(0.22, 1.00, 0.42) * 1.55, 0.11,  9.0);
+  e += glowPoint(p, YB + vec3f(-0.09, -0.05, 0.06), vec3f(0.12, 0.95, 0.32) * 1.35, 0.10,  9.0);
+  e += glowPoint(p, YB + vec3f( 0.04, 0.11, 0.05), vec3f(0.40, 1.00, 0.55) * 1.20, 0.09,  9.0);
+  e += glowPoint(p, YB, vec3f(0.45, 1.00, 0.60) * 0.90, 0.28,  9.0);
+  e += glowPoint(p, YC, vec3f(0.18, 1.00, 0.38) * 2.40, 0.12, 10.0);
+  e += glowPoint(p, YC + vec3f( 0.09, 0.05, -0.05), vec3f(0.22, 1.00, 0.42) * 1.50, 0.10, 10.0);
+  e += glowPoint(p, YC + vec3f(-0.07, -0.04, 0.08), vec3f(0.12, 0.95, 0.32) * 1.30, 0.09, 10.0);
+  e += glowPoint(p, YC + vec3f( 0.02, 0.10, 0.03), vec3f(0.40, 1.00, 0.55) * 1.15, 0.08, 10.0);
+  e += glowPoint(p, YC, vec3f(0.45, 1.00, 0.60) * 0.85, 0.26, 10.0);
+  {
+    let midYA = mix(YA, SA, 0.5) + vec3f(0.0, 0.22, 0.0);
+    let midYB = mix(YB, SB, 0.5) + vec3f(0.0, 0.25, 0.0);
+    let midYC = mix(YC, SC, 0.5) + vec3f(0.0, 0.20, 0.0);
+    e += glowLine(p, YA, midYA, vec3f(0.28, 0.90, 1.00) * 0.95, 0.013, 0.0);
+    e += glowLine(p, midYA, SA, vec3f(0.28, 0.90, 1.00) * 0.95, 0.013, 0.0);
+    e += glowLine(p, YB, midYB, vec3f(0.28, 0.90, 1.00) * 1.00, 0.014, 0.0);
+    e += glowLine(p, midYB, SB, vec3f(0.28, 0.90, 1.00) * 1.00, 0.014, 0.0);
+    e += glowLine(p, YC, midYC, vec3f(0.28, 0.90, 1.00) * 0.95, 0.013, 0.0);
+    e += glowLine(p, midYC, SC, vec3f(0.28, 0.90, 1.00) * 0.95, 0.013, 0.0);
+  }
+  for (var i = 0; i < 7; i = i + 1) {
+    let x = -2.4 + f32(i) * 0.8;
+    e += glowPoint(p, vec3f(x, FLOOR_Y_C + 0.02, 1.75), vec3f(0.20, 0.65, 0.80) * 0.18, 0.035, 11.0 + f32(i));
+  }
+  e += glowPoint(p, vec3f(-0.85, FLOOR_Y_C + 0.05, -1.35), vec3f(1.00, 0.72, 0.25) * 0.22, 0.035, 18.0);
+  e += glowPoint(p, vec3f( 0.90, FLOOR_Y_C + 0.05, -1.35), vec3f(1.00, 0.72, 0.25) * 0.22, 0.035, 19.0);
+  e += glowPoint(p, vec3f( 0.10, FLOOR_Y_C + 0.05, -2.05), vec3f(1.00, 0.72, 0.25) * 0.22, 0.035, 20.0);
+  return e;
+}
+
+fn floorColor(q : vec2f, foot : f32) -> vec3f {
+  let w = max(foot * 1.6, 0.006);
+  let res = 1.0 - smoothstep(0.35, 0.90, foot);
+  if (res <= 0.001) { return vec3f(0.0); }
+  let g2 = abs(fract(q) - vec2f(0.5));
+  let mid = 1.0 - smoothstep(0.0, w, min(g2.x, g2.y));
+  let g4 = abs(fract(q * 0.25) - vec2f(0.5));
+  let major = 1.0 - smoothstep(0.0, w * 0.35, min(g4.x, g4.y));
+  let cell = floor(q * 4.0);
+  let h = fract(sin(dot(cell, vec2f(127.1, 311.7))) * 43758.5453);
+  let gx = abs(fract(q.x * 4.0) - 0.5);
+  let gz = abs(fract(q.y * 4.0) - 0.5);
+  let near = 1.0 - smoothstep(0.0, max(w * 3.0, 0.045), length(vec2f(gx, gz)));
+  let dots = select(0.0, near, h > 0.90);
+  let fade = exp(-length(q) * 0.28);
+  /* dark motherboard — cyan AND orange micro traces; cut blue grid wash */
+  let plate = vec3f(0.012, 0.016, 0.022) * 0.65;
+  let cyanTrace = vec3f(0.10, 0.55, 0.70);
+  let orangeTrace = vec3f(0.95, 0.42, 0.08);
+  let ticks = select(0.0, near, h > 0.78 && h <= 0.90);
+  return (plate
+        + cyanTrace * mid * 0.18
+        + orangeTrace * mid * 0.14
+        + cyanTrace * major * 0.28
+        + orangeTrace * major * 0.22
+        + cyanTrace * dots * 0.28
+        + orangeTrace * ticks * 0.35) * fade * res;
+}
+
+fn shade(ndc : vec2f) -> vec3f {
+  let aspect = u.res.x / u.res.y;
+  let uv = vec2f(ndc.x * aspect, ndc.y);
+  let ro = u.eye.xyz;
+  let fwd = normalize(u.ctr.xyz - ro);
+  let rgt = normalize(cross(fwd, vec3f(0.0, 1.0, 0.0)));
+  let upv = cross(rgt, fwd);
+  let rd = normalize(fwd + (rgt * uv.x + upv * uv.y) * u.params.x);
+  var col = vec3f(0.0);
+  var trans = 1.0;
+  var t = 0.05;
+  var tFloor = 1e9;
+  if (rd.y < -1e-4) {
+    let tf = (FLOOR_Y_C - ro.y) / rd.y;
+    if (tf > 0.0) { tFloor = tf; }
+  }
+  /* floor 36 — budget must not reintroduce smear via coarse shells */
+  let maxSteps = i32(clamp(u.params.y, 36.0, 48.0));
+  for (var i = 0; i < 48; i = i + 1) {
+    if (i >= maxSteps) { break; }
+    let p = ro + rd * t;
+    let g = mapGlass(p);
+    /* proper sphere-trace — never min 0.035 / max 0.85 */
+    let step = clamp(g.x * 0.85, 0.012, 0.28);
+    let em = max(emitField(p) - vec3f(0.012), vec3f(0.0));
+    /* cap step contribution so large leaps don't paint onion rings; stronger emit for phone */
+    col += em * min(step, 0.08) * trans * 0.30;
+    if (g.x < 0.010) {
+      /* ONE fresnel + one interior glow per surface entry, then jump out (no multi-interior smear) */
+      /* A cyan · B orange · C green · ambient cool (id≥30) */
+      let tint = select(vec3f(0.42, 0.48, 0.55),
+                        select(select(vec3f(0.22, 0.98, 0.40), vec3f(1.00, 0.45, 0.08), g.y < 2.5),
+                               vec3f(0.28, 0.80, 1.00), g.y < 1.5),
+                        g.y < 29.5);
+      let e = vec2f(0.004, 0.0);
+      let n = normalize(vec3f(
+        mapGlass(p + e.xyy).x - mapGlass(p - e.xyy).x,
+        mapGlass(p + e.yxy).x - mapGlass(p - e.yxy).x,
+        mapGlass(p + e.yyx).x - mapGlass(p - e.yyx).x));
+      let fres = pow(1.0 - abs(dot(n, rd)), 2.4) * 0.34;
+      let wash = select(vec3f(0.30, 0.36, 0.42) * 0.035, vec3f(0.45, 0.65, 0.85) * 0.025, g.y < 29.5);
+      col += (wash + tint * 0.58) * fres * trans * hiMul(min(g.y, 3.0));
+      let pIn = ro + rd * (t + 0.04);
+      let emIn = max(emitField(pIn) - vec3f(0.012), vec3f(0.0));
+      col += emIn * 0.12 * trans * hiMul(min(g.y, 3.0));
+      trans *= 0.72;
+      t += max(0.08, abs(g.x)) + 0.02;
+      continue;
+    }
+    if (t >= tFloor) {
+      let fp = ro + rd * tFloor;
+      col += floorColor(fp.xz, tFloor * (2.0 * u.params.x / u.res.y)) * trans;
+      trans *= 0.06;
+      break;
+    }
+    t += step;
+    if (t > 20.0 || trans < 0.03) { break; }
+  }
+  col = col * 1.25 + vec3f(0.0005, 0.001, 0.002);
+  col = col / (col + vec3f(0.85));
+  col = pow(max(col, vec3f(0.0)), vec3f(0.92));
+  return col;
+}
+
+@fragment
+fn fs_main(input : VSOut) -> @location(0) vec4f {
+  return vec4f(shade(input.uv), 1.0);
+}
+`;
+
+  function buildShader(body) {
+    return (SHADER_COMMON_HEAD + body).replace(/FLOOR_Y_C/g, FLOOR_Y.toFixed(2));
+  }
+  const SHADER_DESKTOP = buildShader(SHADER_DESKTOP_BODY);
+  const SHADER_ANDROID = buildShader(SHADER_ANDROID_BODY);
+
+  function detectMobileGpuTier() {
+    const ua = navigator.userAgent || "";
+    const androidUA = /Android/i.test(ua);
+    const dpr = window.devicePixelRatio || 1;
+    const cssW = canvas.clientWidth || window.innerWidth || 800;
+    const cssH = canvas.clientHeight || Math.min(window.innerHeight * 0.78, 640) || 480;
+    const narrow = cssW < 520 || (cssW / Math.max(cssH, 1)) < 0.78;
+    const hiDpr = dpr >= 2.5;
+    return androidUA || narrow || hiDpr;
+  }
+
+  function setTierChip(label, tier) {
+    const el = document.getElementById("gpuTier");
+    if (!el) return;
+    el.hidden = false;
+    el.textContent = label;
+    el.dataset.tier = tier || "android";
+  }
+
+  function showLookrefFallback(reason) {
+    console.warn("WebGPU unavailable; static lookref only:", reason);
+    const fb = document.getElementById("lookrefFallback");
+    if (fb) fb.hidden = false;
+    setTierChip("lookref · static", "lookref");
+  }
+
+  async function compilePipeline(device, format, code) {
+    const module = device.createShaderModule({ code });
+    if (module.getCompilationInfo) {
+      const info = await module.getCompilationInfo();
+      const err = (info.messages || []).filter(m => m.type === "error");
+      if (err.length) {
+        const msg = err.map(e => e.message).join("; ");
+        throw new Error("WGSL compile: " + msg);
+      }
+    }
+    return device.createRenderPipeline({
+      layout: "auto",
+      vertex: { module, entryPoint: "vs_main" },
+      fragment: { module, entryPoint: "fs_main", targets: [{ format }] },
+      primitive: { topology: "triangle-list" },
+    });
+  }
+
+  let gpuRecreateUsed = false;
+  let gpuSession = null;
+
+  async function initWebGPU() {
+    if (!navigator.gpu) { gpuError.hidden = false; showLookrefFallback("no navigator.gpu"); return null; }
+    const adapter = await navigator.gpu.requestAdapter();
+    if (!adapter) { gpuError.hidden = false; showLookrefFallback("no adapter"); return null; }
+    const device = await adapter.requestDevice();
+    const context = canvas.getContext("webgpu");
+    if (!context) { gpuError.hidden = false; showLookrefFallback("no webgpu context"); return null; }
+    const format = navigator.gpu.getPreferredCanvasFormat();
+
+    const mobileTier = detectMobileGpuTier();
+    let pipeline = null;
+    let usedAndroidShader = mobileTier;
+    try {
+      pipeline = await compilePipeline(device, format, mobileTier ? SHADER_ANDROID : SHADER_DESKTOP);
+    } catch (e1) {
+      console.warn("preferred shader failed, trying ANDROID_SHADER", e1);
+      try {
+        pipeline = await compilePipeline(device, format, SHADER_ANDROID);
+        usedAndroidShader = true;
+      } catch (e2) {
+        console.warn("ANDROID_SHADER failed", e2);
+        gpuError.hidden = false;
+        showLookrefFallback(String(e2 && e2.message || e2));
+        return null;
+      }
+    }
+
+    setTierChip(usedAndroidShader ? "WebGPU · Android safe" : "WebGPU · full",
+                usedAndroidShader ? "android" : "full");
+
+    let lost = false;
+    device.lost.then(async (info) => {
+      lost = true;
+      console.warn("WebGPU device lost", info);
+      if (gpuRecreateUsed) {
+        gpuError.hidden = false;
+        return;
+      }
+      gpuRecreateUsed = true;
+      try {
+        if (gpuSession && gpuSession.rafId) cancelAnimationFrame(gpuSession.rafId);
+        gpuSession = null;
+        await initWebGPU();
+      } catch (err) {
+        console.warn("device.lost recreate failed", err);
+        gpuError.hidden = false;
+      }
+    });
+
+    /* adaptive backing: Android ~0.58× DPR start; budget prefers resScale over steps */
+    let resScale = usedAndroidShader ? 0.58 : 1.0;
+    const RES_MIN = usedAndroidShader ? 0.35 : 0.75;
+    const RES_MAX = usedAndroidShader ? 0.70 : Math.min(window.devicePixelRatio || 1, 1.25);
+    let maxSteps = usedAndroidShader ? 40 : 64;
+    let emitQuality = usedAndroidShader ? 0.0 : 1.0; /* android shader ignores filaments anyway */
+    let overBudgetStreak = 0;
+    const FRAME_BUDGET_MS = 33;
+
+    let resizePending = null;
+    let lastCfgW = 0, lastCfgH = 0;
+    function resizeNow() {
+      const dpr = window.devicePixelRatio || 1;
+      const scale = usedAndroidShader
+        ? Math.min(dpr * resScale, dpr * RES_MAX)
+        : Math.min(dpr, RES_MAX) * Math.min(resScale, 1);
+      const w = Math.max(1, Math.floor(canvas.clientWidth * scale));
+      const h = Math.max(1, Math.floor(canvas.clientHeight * scale));
+      if (canvas.width !== w || canvas.height !== h) {
+        canvas.width = w; canvas.height = h;
+      }
+      if (w !== lastCfgW || h !== lastCfgH) {
+        /* canvas.width/height already set above — u.res written from same w/h each frame */
+        context.configure({ device, format, alphaMode: "opaque" });
+        lastCfgW = w; lastCfgH = h;
+      }
+      return [w, h];
+    }
+    function resize() {
+      if (resizePending != null) return [canvas.width || 1, canvas.height || 1];
+      resizePending = requestAnimationFrame(() => { resizePending = null; resizeNow(); });
+      return resizeNow();
+    }
+    resizeNow();
+
+    /* 256-byte uniform alignment (WebGPU minBindingAlignment) */
+    const uniformBuffer = device.createBuffer({
+      size: 256, usage: GPUBufferUsage.UNIFORM | GPUBufferUsage.COPY_DST,
+    });
+    const bindGroup = device.createBindGroup({
+      layout: pipeline.getBindGroupLayout(0),
+      entries: [{ binding: 0, resource: { buffer: uniformBuffer } }],
+    });
+
+    /* elevated 3/4 isometric over the FIELD — triad + yarn + cord centered.
+       TARGET = geometric center of A/B/C (light yarn Z bias), NOT YA alone. */
+    const TARGET = [0.03, 0.18, 0.12]; /* geo center A/B/C ≈ (0.033,0.14,-0.12) + yarn bias */
+    const DEFAULT_YAW = -0.62;
+    const DEFAULT_PITCH = 1.05; /* ~60° look-down — lookref elevated 3/4 */
+    let yaw = DEFAULT_YAW, pitch = DEFAULT_PITCH, radius = 7.0, userTouched = false;
+
+    const SCENE_R = 3.15;
+    const FOV_DESKTOP = 0.70;
+    const FOV_PORTRAIT = 0.80;
+    function fovFor(aspect) { return aspect < 0.78 ? FOV_PORTRAIT : FOV_DESKTOP; }
+    function autoRadius(aspect) {
+      const fov = fovFor(aspect);
+      const halfV = Math.atan(fov);
+      const halfH = Math.atan(fov * aspect);
+      const d = SCENE_R / Math.sin(Math.min(halfV, halfH));
+      const pad = aspect < 0.78 ? 1.18 : 1.08;
+      return Math.min(12, Math.max(5.5, d * pad));
+    }
+    function camEye() {
+      const cp = Math.cos(pitch), sp = Math.sin(pitch);
+      return [
+        TARGET[0] + radius * cp * Math.sin(yaw),
+        TARGET[1] + radius * sp,
+        TARGET[2] + radius * cp * Math.cos(yaw),
+      ];
+    }
+
+    let lastVP = mat4Identity();
+    function writeUniforms(w, h, eye, fovScale, hiId, time) {
+      const d = new Float32Array(64); /* 256 bytes */
+      d[0] = w; d[1] = h; d[2] = time; d[3] = hiId;
+      d.set([eye[0], eye[1], eye[2], 1], 4);
+      d.set([TARGET[0], TARGET[1], TARGET[2], 1], 8);
+      d[12] = fovScale;
+      d[13] = maxSteps;
+      d[14] = emitQuality;
+      d[15] = 0;
+      device.queue.writeBuffer(uniformBuffer, 0, d);
+    }
+
+    let rafId = 0;
+    let lastDrawnTs = 0;
+    let submitPending = false;
+    const MIN_FRAME_MS = usedAndroidShader ? 33 : 0; /* ~30fps Android */
+
+    function frame(ts) {
+      rafId = 0;
+      if (lost) return;
+      /* pause when tab hidden — single rAF chain resumes on visible */
+      if (document.hidden) {
+        /* visibilitychange resumes the single rAF chain */
+        return;
+      }
+      /* cap Android ~30fps */
+      if (MIN_FRAME_MS > 0 && lastDrawnTs && (ts - lastDrawnTs) < MIN_FRAME_MS) {
+        if (rafId === 0) rafId = requestAnimationFrame(frame);
+        return;
+      }
+      /* don't call getCurrentTexture if previous submit not done */
+      if (submitPending) {
+        if (rafId === 0) rafId = requestAnimationFrame(frame);
+        return;
+      }
+
+      const t0 = performance.now();
+      const [w, h] = resizeNow();
+      const aspect = w / Math.max(h, 1);
+      if (!userTouched) radius = autoRadius(aspect);
+      const eye = camEye();
+      const fovScale = fovFor(aspect);
+
+      const proj = mat4Perspective(2 * Math.atan(fovScale), aspect, 0.1, 100);
+      lastVP = mat4Multiply(proj, mat4LookAt(eye, TARGET, [0, 1, 0]));
+
+      writeUniforms(w, h, eye, fovScale, KEY_ID[highlightKey] || 0, ts * 0.001);
+
+      try {
+        const enc = device.createCommandEncoder();
+        const pass = enc.beginRenderPass({
+          colorAttachments: [{
+            view: context.getCurrentTexture().createView(),
+            clearValue: { r: 0.004, g: 0.006, b: 0.012, a: 1 },
+            loadOp: "clear", storeOp: "store",
+          }],
+        });
+        pass.setPipeline(pipeline);
+        pass.setBindGroup(0, bindGroup);
+        pass.draw(3);
+        pass.end();
+        submitPending = true;
+        device.queue.submit([enc.finish()]);
+        lastDrawnTs = ts;
+        const done = device.queue.onSubmittedWorkDone
+          ? device.queue.onSubmittedWorkDone()
+          : Promise.resolve();
+        done.then(() => {
+          submitPending = false;
+          const dt = performance.now() - t0;
+          if (dt > FRAME_BUDGET_MS) {
+            overBudgetStreak++;
+            if (overBudgetStreak >= 3) {
+              resScale = Math.max(RES_MIN, resScale * 0.88);
+              if (usedAndroidShader) {
+                /* keep maxSteps ≥36 — dropping steps reintroduces glow shells */
+                maxSteps = Math.max(36, maxSteps);
+              } else {
+                emitQuality = 0.0;
+                maxSteps = Math.max(32, maxSteps - 8);
+              }
+              overBudgetStreak = 0;
+            }
+          } else {
+            overBudgetStreak = 0;
+            if (dt < FRAME_BUDGET_MS * 0.65 && resScale < RES_MAX) {
+              resScale = Math.min(RES_MAX, resScale * 1.03);
+            }
+          }
+        }).catch(() => { submitPending = false; });
+      } catch (err) {
+        console.warn("frame submit failed", err);
+        submitPending = false;
+        lost = true;
+        gpuError.hidden = false;
+        return;
+      }
+      if (!lost && rafId === 0) rafId = requestAnimationFrame(frame);
+    }
+
+    const pickTargets = [
+      { key: "A", pos: STATION.A.pos, radius: 0.46 },
+      { key: "B", pos: STATION.B.pos, radius: 0.50 },
+      { key: "C", pos: STATION.C.pos, radius: 0.46 },
+      { key: "axle", pos: [-2.15, -0.14, -0.68], radius: 0.24 },
+      { key: "axle", pos: [ 2.15, -0.28, 0.00], radius: 0.24 },
+    ];
+    const mid = (a, b, lift) => [(a[0]+b[0])/2, (a[1]+b[1])/2 + lift, (a[2]+b[2])/2];
+    pickTargets.push({ key: "AB", pos: mid(STATION.A.pos, STATION.B.pos, 0.28), radius: 0.34, mesh: true });
+    pickTargets.push({ key: "BC", pos: mid(STATION.B.pos, STATION.C.pos, 0.28), radius: 0.34, mesh: true });
+    pickTargets.push({ key: "CA", pos: mid(STATION.C.pos, STATION.A.pos, -0.22), radius: 0.36, mesh: true });
+    for (const k of ["A1", "B1", "C1"]) pickTargets.push({ key: k, pos: CLUSTER_POS[k], radius: 0.30, mesh: true });
+    for (let i = 0; i < 7; i++) pickTargets.push({ key: "t" + i, pos: TICK_POS[i], radius: 0.28, mesh: true });
+    for (const k of ["E1", "E2", "R1"]) pickTargets.push({ key: k, pos: ESCAPE_POS[k], radius: 0.20, mesh: true });
+    for (let i = 1; i <= 6; i++) pickTargets.push({ key: "X" + i, pos: AUDIT_POS["X" + i], radius: 0.20, mesh: true });
+
+    function hitAmong(targets, nx, ny, vp) {
+      let best = null, bestDist = Infinity;
+      targets.forEach(t => {
+        const clip = transformPoint(vp, t.pos[0], t.pos[1], t.pos[2]);
+        const d = Math.hypot(clip[0] - nx, clip[1] - ny);
+        const edge = transformPoint(vp, t.pos[0] + t.radius, t.pos[1], t.pos[2]);
+        const pr = Math.max(0.05, Math.hypot(edge[0] - clip[0], edge[1] - clip[1]));
+        if (d < pr && d < bestDist) { bestDist = d; best = t.key; }
+      });
+      return best;
+    }
+    function pick(clientX, clientY) {
+      const rect = canvas.getBoundingClientRect();
+      const nx = ((clientX - rect.left) / rect.width) * 2 - 1;
+      const ny = 1 - ((clientY - rect.top) / rect.height) * 2;
+      const vp = lastVP;
+      return hitAmong(pickTargets.filter(t => t.mesh), nx, ny, vp)
+          || hitAmong(pickTargets.filter(t => !t.mesh), nx, ny, vp);
+    }
+
+    /* input handlers only once across device.lost recreate */
+    if (!canvas._laceInputBound) {
+      canvas._laceInputBound = true;
+      const pointers = new Map();
+      let dragged = false, lastX = 0, lastY = 0, pinchStart = 0, radiusStart = 0;
+      const getCam = () => gpuSession;
+
+      canvas.style.touchAction = "none";
+      canvas.addEventListener("pointerdown", (e) => {
+        canvas.setPointerCapture(e.pointerId);
+        pointers.set(e.pointerId, [e.clientX, e.clientY]);
+        dragged = false; lastX = e.clientX; lastY = e.clientY;
+        if (pointers.size === 2) {
+          const [p1, p2] = [...pointers.values()];
+          pinchStart = Math.hypot(p1[0] - p2[0], p1[1] - p2[1]);
+          const s = getCam();
+          radiusStart = s ? s.radius : 7.2;
+        }
+      });
+      canvas.addEventListener("pointermove", (e) => {
+        const s = getCam();
+        if (!s || !pointers.has(e.pointerId)) return;
+        pointers.set(e.pointerId, [e.clientX, e.clientY]);
+        if (pointers.size === 2 && pinchStart > 0) {
+          const [p1, p2] = [...pointers.values()];
+          const d = Math.hypot(p1[0] - p2[0], p1[1] - p2[1]);
+          s.radius = Math.min(18, Math.max(3.2, radiusStart * (pinchStart / Math.max(d, 1))));
+          s.userTouched = true; dragged = true;
+          return;
+        }
+        const dx = e.clientX - lastX, dy = e.clientY - lastY;
+        if (Math.hypot(dx, dy) > 2) dragged = true;
+        lastX = e.clientX; lastY = e.clientY;
+        s.yaw -= dx * 0.006;
+        s.pitch = Math.max(-0.25, Math.min(1.25, s.pitch + dy * 0.005));
+        s.userTouched = true;
+      });
+      function endPointer(e) {
+        if (pointers.size < 2) pinchStart = 0;
+        pointers.delete(e.pointerId);
+        if (!dragged) {
+          const s = getCam();
+          const k = s && s.pick ? s.pick(e.clientX, e.clientY) : null;
+          if (k) show(k);
+        }
+      }
+      canvas.addEventListener("pointerup", endPointer);
+      canvas.addEventListener("pointercancel", endPointer);
+      canvas.addEventListener("wheel", (e) => {
+        const s = getCam();
+        if (!s) return;
+        e.preventDefault();
+        s.radius = Math.min(18, Math.max(3.2, s.radius * (1 + Math.sign(e.deltaY) * 0.10)));
+        s.userTouched = true;
+      }, { passive: false });
+
+      const resetBtn = document.getElementById("camReset");
+      if (resetBtn) resetBtn.addEventListener("click", () => {
+        const s = getCam();
+        if (!s) return;
+        s.yaw = DEFAULT_YAW; s.pitch = DEFAULT_PITCH; s.userTouched = false;
+      });
+
+      window.addEventListener("resize", () => { if (gpuSession) gpuSession.resize(); });
+      document.addEventListener("visibilitychange", () => {
+        if (!document.hidden && gpuSession && !gpuSession.lost && gpuSession.rafId === 0) {
+          gpuSession.rafId = requestAnimationFrame(gpuSession.frame);
+        }
+      });
+    }
+
+    gpuSession = {
+      get lost() { return lost; },
+      get rafId() { return rafId; },
+      set rafId(v) { rafId = v; },
+      get radius() { return radius; },
+      set radius(v) { radius = v; },
+      get yaw() { return yaw; },
+      set yaw(v) { yaw = v; },
+      get pitch() { return pitch; },
+      set pitch(v) { pitch = v; },
+      get userTouched() { return userTouched; },
+      set userTouched(v) { userTouched = v; },
+      resize, frame, pick,
+    };
+
+    rafId = requestAnimationFrame(frame);
+    return true;
+  }
+
+
+  show("B");
+
+  initWebGPU().catch((err) => {
+    console.error(err);
+    gpuError.hidden = false;
+  });
+})();
+</script>
+</body>
+</html>

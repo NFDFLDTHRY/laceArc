@@ -1,0 +1,43 @@
+# CLAUDE.md
+
+Standing orders for this tree are in [AGENTS.md](AGENTS.md). They apply to every
+local and cloud agent, Claude Code included. Read that file together with
+[the repository law](docs/law-why-these-documents.md),
+[the agent control prompt](docs/kit/agent-control.md), and
+[the task and handoff templates](docs/kit/agent-task-template.md).
+The human-authored law governs these operating controls. Return the template's
+source-specific receipt before proposing Core structure.
+
+Source of record: `docs/graphics/` (four PNGs), then
+[docs/systems-manifest.md](docs/systems-manifest.md). Cite the graphic or manifest
+section you are using.
+
+The three that get broken first:
+
+- **No `src/`.** Core may not be implemented until `docs/pointer-emission.md`
+  exists as prose and the human has accepted its exact content. File existence
+  alone is not acceptance. An unanswered draft does not open the gate.
+- **No second store.** No Star table, graph DB, embedding store, definition
+  table, or N-dimensional storage. The append-only 1D array is the only store.
+- **Mark `[GAP]`** where the source is silent. Do not close a gap with a
+  convenient schema.
+
+Ask before any commit that adds code or types. Acceptance does not lift permanent
+prohibitions, and a second store remains forbidden. Work on the one assigned task;
+do not create another implementation branch before the current task is proven.
+
+## Working in this repo
+
+There is nothing to install, build, or run. Checks:
+
+```bash
+.claude/hooks/check-docs.sh
+```
+
+That verifies the four canonical graphics are present, no `src/` or PDF is
+tracked, and every relative markdown link resolves. It runs automatically at the
+start of web sessions via `.claude/hooks/session-start.sh`.
+
+These are limited documentation checks. The session-start wrapper reports check
+failures but returns success; it is advisory, not a publishing gate. Inspect the
+underlying result. See [the dated downstream audit](docs/kit/downstream-audit.md).

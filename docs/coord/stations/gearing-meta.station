@@ -1,0 +1,7 @@
+STATUS: FREE
+STATION: gearing-meta
+OWNS: docs/gearing/*.md docs/gearing/*.sh docs/gearing/RESYNC.md (not contracts-*.js)
+AGENT: -
+BASE: -
+SINCE: -
+NOTE: Quiet door #8 CLOSED 6/6. Gearing-meta FREE. Scripts not owned here. Renderer unclaimed. Shafts FREE. Door #7 CLOSED. Φ [GAP].

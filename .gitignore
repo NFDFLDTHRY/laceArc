@@ -1,0 +1,23 @@
+.DS_Store
+Thumbs.db
+*~
+*.swp
+.idea/
+.vscode/
+*.iml
+
+# Future runtimes — keep out of the model tree until Core exists
+node_modules/
+target/
+dist/
+build/
+__pycache__/
+.venv/
+venv/
+*.pyc
+.env
+.cache/
+
+# Lawful local copies of copyrighted references — never push
+refs/local/
+*.pdf

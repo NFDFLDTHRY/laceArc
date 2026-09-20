@@ -1,0 +1,7 @@
+STATUS: FREE
+STATION: coord
+OWNS: docs/coord/**
+AGENT: -
+BASE: -
+SINCE: -
+NOTE: force-freed 2026-09-19T16:43:46Z: was held by Grok-coord since 2026-09-19T15:25:16Z. human authorized: Coord can be freed. Door #9 pass 6 remains PLAN unexecuted. coord.sh untouched. Φ [GAP].
