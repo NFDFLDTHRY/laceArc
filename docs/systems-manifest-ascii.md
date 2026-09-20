@@ -2,7 +2,7 @@
 
 **Not the manifest.** [`systems-manifest.md`](systems-manifest.md) is the Hands contract map; this is an ASCII reading of it and settles nothing it does not.
 
-**Executed passes:** [1](systems-manifest-ascii-pass-1-plan.md) · [2](systems-manifest-ascii-pass-2-plan.md) · [3](systems-manifest-ascii-pass-3-plan.md) · [4](systems-manifest-ascii-pass-4-plan.md) · [5](systems-manifest-ascii-pass-5-plan.md) · [6](systems-manifest-ascii-pass-6-plan.md) · [7](systems-manifest-ascii-pass-7-plan.md) · [8](systems-manifest-ascii-pass-8-plan.md) · [9](systems-manifest-ascii-pass-9-plan.md) · [10](systems-manifest-ascii-pass-10-plan.md) · [11](systems-manifest-ascii-pass-11-plan.md) · [12](systems-manifest-ascii-pass-12-plan.md) · [13](systems-manifest-ascii-pass-13-plan.md) · [14](systems-manifest-ascii-pass-14-plan.md) · [15](systems-manifest-ascii-pass-15-plan.md) · [16](systems-manifest-ascii-pass-16-plan.md) · [17](systems-manifest-ascii-pass-17-plan.md) · [18](systems-manifest-ascii-pass-18-plan.md) · [19](systems-manifest-ascii-pass-19-plan.md) · [20](systems-manifest-ascii-pass-20-plan.md) · [21](systems-manifest-ascii-pass-21-plan.md) · [22](systems-manifest-ascii-pass-22-plan.md) · [23](systems-manifest-ascii-pass-23-plan.md) · [24](systems-manifest-ascii-pass-24-plan.md) · [25](systems-manifest-ascii-pass-25-plan.md) · [26](plans/lace-context-iter6-pass-3-findings.md). A new pass is linked here once it is executed.
+**Executed passes:** [1](systems-manifest-ascii-pass-1-plan.md) · [2](systems-manifest-ascii-pass-2-plan.md) · [3](systems-manifest-ascii-pass-3-plan.md) · [4](systems-manifest-ascii-pass-4-plan.md) · [5](systems-manifest-ascii-pass-5-plan.md) · [6](systems-manifest-ascii-pass-6-plan.md) · [7](systems-manifest-ascii-pass-7-plan.md) · [8](systems-manifest-ascii-pass-8-plan.md) · [9](systems-manifest-ascii-pass-9-plan.md) · [10](systems-manifest-ascii-pass-10-plan.md) · [11](systems-manifest-ascii-pass-11-plan.md) · [12](systems-manifest-ascii-pass-12-plan.md) · [13](systems-manifest-ascii-pass-13-plan.md) · [14](systems-manifest-ascii-pass-14-plan.md) · [15](systems-manifest-ascii-pass-15-plan.md) · [16](systems-manifest-ascii-pass-16-plan.md) · [17](systems-manifest-ascii-pass-17-plan.md) · [18](systems-manifest-ascii-pass-18-plan.md) · [19](systems-manifest-ascii-pass-19-plan.md) · [20](systems-manifest-ascii-pass-20-plan.md) · [21](systems-manifest-ascii-pass-21-plan.md) · [22](systems-manifest-ascii-pass-22-plan.md) · [23](systems-manifest-ascii-pass-23-plan.md) · [24](systems-manifest-ascii-pass-24-plan.md) · [25](systems-manifest-ascii-pass-25-plan.md) · [26](plans/lace-context-iter6-pass-3-findings.md) · [27](plans/lace-context-iter7-pass-3-audit.md). A new pass is linked here once it is executed.
 
 **Authority:** `docs/systems-manifest.md`. Companion, not a replacement.  
 **Hands:** Graphics A–D. Shoe in hands.  
@@ -14,7 +14,7 @@ Emission remains `[GAP]`.
 
 **Update wave · Iteration 3:** Pass **19** = Iteration-3 Pass **1** · **delta admission + mechanism/systems-level Δ map** (quiet-door **#6** NEW OPEN/cite · OPEN-with-cause (hologram CLOSED pin `f568275`) · #1/#3 OPEN-with-cause refresh · #4 leftover / #5 note-only cite-check · nine shelves reconfirm; station → disposition → systems slot; **no invent G-KD-6 Core**). Pass **20** = Iteration-3 Pass **1 completion** / **1b** · **interaction contracts map** (**P20-X**; mirror Pass 10 / Pass 16 rigor spirit · retargeted to who may read / write / cite / participate under Contracts I / II / Layer III · IX-* edges · KEEP·FORBID·MAP; Pass 19 Δ board retained; **no invent G-KD-4/5/6/7 Core**; no quiet-door→I). Pass **21** = Iteration-3 Pass **2** · **leftovers / FM audit / Iter3 coherence** (mirror Pass 14 / Pass 8 shape; #4 leftover OPEN · #5 note-only · #6 OPEN/cite honesty · #7 note-only · nine shelves · post-P20 thin drift; quiet-door≠Core · hologram CLOSED≠Core close · #6≠Core clock · Orders NON-binding · III↛I; Iter3 D1–D6; Pass 19/20 retained; Pass 18 **DIAGRAM SOUND WITH OPENS** retained). Pass **22** = Iteration-3 Pass **3** · **Iter3 delta / mechanism mesh** (thin **G-KD-6** cite-card adjunct beside G-KD · **not** Core invent · G-KD-1/3 CONFIRM pointer · **P22-M** · cross-walk; #4 leftover · #5/#7 note-only honesty; retained P15-M / P9-M / G-III / IX-*; Pass 19–21 retained; Pass 18 **DIAGRAM SOUND WITH OPENS** retained). Pass **23** = Iteration-3 Pass **4** · **mechanism↔ASCII rigor map** (**P23-X**; mirror Pass 16 / Pass 10 P4-X / P16-X spirit · Iter3 retarget; G-KD-6 cite-card CONFIRM · P22-M map · IX-* retained; thin Core CONFIRM to **P10-X**/**P12-X**/**P16-X**; #4 leftover · #5/#7 note-only; no invent G-KD-6 Core / G-KD-4/5/7; Pass 18–22 retained; G2/Φ `[GAP]`). Pass **24** = Iteration-3 Pass **5** · **Shadow Order Proposal** (**P24-P**; light **P24-X**; mirror Pass 17 / Pass 11 P5-X/O/P/R spirit · Iter3 surfaces steward beside **P11-P** + **P17-P**; G-KD-6 cite · IX-* · #4 leftover · #5/#7 note-only · #6 OPEN-with-cause · Piece 13 dual · Hands A–D; no invent G-KD-4/5/6-Core/7; Pass 18–23 retained; G2/Φ `[GAP]`). Pass **25** = Iteration-3 Pass **6** · **DIAGRAM SOUND** (**P25-A** / **P25-P** / **P25-X** / **P25-F/O** / **P25-R**; mirror Pass 18 / Pass 12 P6-A/P/X/F/O/R spirit · whole companion Iter1+Iter2+Iter3 + all three Order Proposals; cite Pass 18 tip; do not redo from scratch; #4 leftover · #5/#7 note-only · #6 OPEN-with-cause · #8 note-only cite; no invent G-KD-4/5/6-Core/7/8; no soft FORBID; G2/Φ `[GAP]`). Iteration **2** = linear Passes **13–18** (tip **DIAGRAM SOUND WITH OPENS**; #4 leftover · #5 note-only stay honest). Iteration **1** = linear Passes **7–12** (tip **DIAGRAM SOUND WITH OPENS**). G2 / Φ stay `[GAP]`.
 
-**Update wave · Iteration 4:** Pass **26** = Iteration-4 Pass **1** · **delta admission** (iteration 6 of the verification programme, convened by the human 2026-09-19 as *personal-context alignment and the shape of the crate*; Δ-Occ CONFIRM · Δ-Law OPEN **#13** · Δ-Target **G-III-4a** adjunct · Δ-Carry **F-Carry** note · Δ-Mem note-only · Δ-Shape reserved for the pass 6 receipt; no invent Φ · no fill G2 · no tenth shelf · no Core redraw). Pass 25 **DIAGRAM SOUND WITH OPENS** tip extended, not redone. G2 / Φ stay `[GAP]`.
+**Update wave · Iteration 4:** Pass **26** = Iteration-4 Pass **1** · **delta admission** (iteration 6 of the verification programme, convened by the human 2026-09-19 as *personal-context alignment and the shape of the crate*; Δ-Occ CONFIRM · Δ-Law OPEN **#13** · Δ-Target **G-III-4a** adjunct · Δ-Carry **F-Carry** note · Δ-Mem note-only · Δ-Shape reserved for the pass 6 receipt; no invent Φ · no fill G2 · no tenth shelf · no Core redraw). Pass 25 **DIAGRAM SOUND WITH OPENS** tip extended, not redone. G2 / Φ stay `[GAP]`. Pass **27** = Iteration-4 Pass **2** · **systems-level audit** (**P27-A** edge-by-edge walk · **P27-F** three thin captions · **P27-D** six missing boxes admitted cite-only: Carrier · Hopper · Seed corpus · Frontier · refuse edge · Layer III Runtime board · **P27-R** verdict *SOUND as Core · INCOMPLETE as deliverable, now drawn*; OPEN **#14** · **#15**; no redraw; G2 / Φ `[GAP]`).
 
 ---
 
@@ -182,6 +182,8 @@ Layer III also hosts a **cite-only** Shadow SOURCE MACHINERY inventory (pass 7):
 
 **Pass 26 pointer:** Iteration-4 Pass **1** **delta admission** (Δ-Occ · Δ-Law · Δ-Target · Δ-Carry · Δ-Mem · Δ-Shape reserved) → section after Pass 25. Outside Contract I except **C-Hands-Occ**, which CONFIRMs the Spine star line from A13 · B12.2 · C12.2 · C10.2 and changes nothing; OPEN **#13** added to the Open board (law station · human docket); **G-III-4a** target-fact adjunct beside G-III-4 (cite-only · `UNESTABLISHED` on device); **F-Carry** fidelity note on the G-III-4 fence; memory findings note-only / quarantined / `[PROPOSAL]`; no quiet-door→I; no soft-close of OPENS; Pass 25 **DIAGRAM SOUND WITH OPENS** retained; G2 / Φ `[GAP]`. Record: [`plans/lace-context-iter6-pass-3-findings.md`](plans/lace-context-iter6-pass-3-findings.md).
 
+**Pass 27 pointer:** Iteration-4 Pass **2** **systems-level audit** (edge-by-edge, not surface-by-surface) → section after Pass 26. Three literal-reading defects captioned in the open (**P27-F**: one-tick figure ≠ one section per arrival · *arriving pointer sections* are produced not supplied · IX-Core-clock write grant excludes hands); six absences admitted as cite-only boxes (**P27-D**: Carrier · Hopper · Seed corpus · Frontier · refuse back-edge · **Layer III — Runtime**); OPEN **#14** (Piece 13 disposable-view vs staking FORBID) and **#15** (seed corpus shipped?). Core art unchanged; Pass 25 / 26 tips retained; G2 / Φ `[GAP]`. Record: [`plans/lace-context-iter7-pass-3-audit.md`](plans/lace-context-iter7-pass-3-audit.md).
+
 ---
 
 ## Fence
@@ -231,6 +233,8 @@ They diagnose and time the holder. They do not grow Graphic D.
 ```
 
 No query interface. No delete interface. No transaction interface. No multi-Lace interface.
+
+*P27-F note (pass 27):* *"(and pointer sections)"* is the manifest's wording (*Major interfaces* §1). Under the Hands POINTER sections are **used** by the machine (D footer), not **supplied** to it; under the environment they are the schedule's output. The write interface admits arrivals only. Flagged to law for the manifest's sentence; not edited here.
 
 ## Presentation ladder (pass 2)
 
@@ -442,6 +446,8 @@ No new pieces.
 ```
 
 Illegal as a tick of I: compact/tidy rewrite; emit because adjacent; gear packet writes L.
+
+*P27-F caption (pass 27):* the figure shows **one tick**. **One arrival is one σ-step and may be several ticks** — D1 rows 0005–0007 are one arrival (WHOLE) and three sections. The first tick of an unseen `v` is Arrive (Q0 CLOSED); later ticks of that step are Φ_morphism under the open schedule. Read literally as *one section per arrival* the figure would be a schedule with no Φ, which the environment refutes (E5). Arrival ≠ tick.
 
 ## Participation mechanism (pass 5)
 
@@ -1895,6 +1901,8 @@ Systems-level map: who may **read** / **write** / **cite** / **participate** wit
 | **IX-OP-vs-I** | Order Proposals → Contract I | Y | **N** | Y · proposal-only | N | **FORBID** — SILENT-for-Lace-append | `[GAP]` |
 | **IX-QD7-note** | hologram.station NOTE → companion | Y · NOTE only | **N** | Y · emerging note if mentioned | N | **MAP** note-only · **FORBID** Δ admit / invent G-KD-7 | `[GAP]` |
 
+*P27-F note (pass 27):* on **IX-Core-clock**, *"May write / append: Y · inside I only"* covers **impulse / pallet / tape**. **Hands are projections** (pass 6: *"Views do not turn the tape"*) and read only. The row is one clock, two permissions.
+
 **Hard limits honored:** Contract I participation = shoe + Core mech/clock only (CONFIRM pointer; no redraw). Contract II / Hands A–D = write authority vs Layer III cite. Layer III Shadow + G-KD / quiet-door = **I→III** read/cite only. Piece 13 dual = intentional dual, not merge. Quiet-door = adjunct cite; station CLOSED ≠ Core close. Emission / G2 stay `[GAP]`.
 
 ## P20-X — Interaction-contracts accuracy matrix (pass 20 · T3)
@@ -2702,3 +2710,85 @@ Pass 25 refuse still stands (includes Pass 24 … Pass 12 refuse), plus: **no me
 | T4 | **G-III-4a** target adjunct (cite-only) · growth-bound target sentence · **F-Carry** fence note |
 | T5 | Leftovers: memory note-only / quarantined; A1–A6 requested; nine shelves; executed-passes +26; Iteration-4 banner; Pass 26 pointer; refuse honored; G2 `[GAP]`; Passes 7–25 / P11-P / P17-P / P24-P retained |
 | T6 | **Δ-Shape admitted (pass 6 receipt):** thin `[PLAN]` pointer only — the crate shape [`plans/lace-context-iter6-pass-5-crate-proposal.md`](plans/lace-context-iter6-pass-5-crate-proposal.md): seven doors unchanged; sheets T (target) · R (region, F-Carry) · H (host boundary, imports none) · C (carrier, R3) · S (shell, install law) · E (encoding, BLOCKED); rulings R1–R8 prepared, 0 taken; environment [`plans/lace-context-iter6-pass-4-environment.md`](plans/lace-context-iter6-pass-4-environment.md) types σ and proves the region non-empty / non-trivial with 0 of 17 candidates in it. **Not** a Contract IV; sheets R/H are *how I is carried*, S is Layer III. No Core change. G2 / Φ `[GAP]` |
+
+## Systems-level audit (pass 27 · Iteration-4 Pass 2)
+
+Update wave · **Iteration 4 · Pass 2** (linear Pass **27**). After Pass 26 Δ admission. The companion walked **edge by edge as one diagram** — not surface by surface (P12-A / P18-A / P25-A did that and PASSed). Record: [`plans/lace-context-iter7-pass-3-audit.md`](plans/lace-context-iter7-pass-3-audit.md). Absences confirmed by search before being drawn. **Not** a redo of Pass 25 or 26.
+
+### P27-A — edge walk
+
+| # | Finding | Kind | Disposition |
+|---|---|---|---|
+| A1 | one-tick figure, read literally, is *one section per arrival* — D1 gives 1–3 per arrival | literal-reading defect | **P27-F caption** under the figure |
+| A2 | *tick* (one append) · *Step* (one arrival) · Spine operator (one arrival) — two granularities, three names | duplicate under names | named; no rename (refuse: no gear rename); A1 caption states the relation |
+| A3 | *"arriving … pointer sections"* — POINTER is produced, not supplied | literal-reading defect · manifest wording | **P27-F note**; flagged to law |
+| A4 | IX-Core-clock write grant reads as including *hands* | ambiguous grant | **P27-F note** |
+| B1 | `L` has no drawn residence (Piece 6 *single append-only log*) | missing box | **P27-D Carrier** |
+| B2 | nothing supplies `v`; the arrival surface has no source node | missing box | **P27-D Hopper** |
+| B3 | dictionary wiring is ingest; an offline app must ship or lack a seed corpus | missing box | **P27-D Seed corpus** · **OPEN #15** |
+| B4 | *next unused index* / Frontier — the writer/reader seam — has no box | missing box | **P27-D Frontier** |
+| B5 | exhaustion → refusal → custody has no edge | missing edge | **P27-D refuse** back-edge |
+| B6 | the runtime Layer III (shell · SW · workers · renderer) is absent except the T6 pointer | missing region | **P27-D Layer III — Runtime** board |
+| C1 | Piece 13 *disposable views* vs staking *FORBID embedding store* — recorded conflict, no OPEN | missing OPEN | **OPEN #14** |
+| C2 | *touch* = geometry (B7/B8) = storage (POINTER, Piece 11) ≠ older-lineage walker | term with three meanings | named; register leftover |
+
+Contradictions of Hands or sealed products: **0**. Core art redrawn: **0**.
+
+### P27-D — boxes admitted, cite-only (they point at plans; they are not Core)
+
+```
+                    Seed corpus (shipped data · OPEN #15) ──┐
+                                                            v
+                    Hopper  (one arrival per submit · bytes as typed · cuts nothing)      sheet S
+                       │  arrive                                     ▲
+                       v                                             │  refuse (exhaustion · custody R4)
+ ╔═════════════════════════════════════════════════════════════════════════════════════╗
+ ║  Contract I — Lace Core   (unchanged rectangle above)                               ║
+ ║     L · WORD | POINTER · arrive → append → participate → continue                   ║
+ ║     FRONTIER = next unused index · the only state a reader shares with the writer  ║  R9
+ ╚═════════════════════════════════════════════════════════════════════════════════════╝
+                       │ carried in (≠ is · F-Carry)              │ read only
+                       v                                          v
+                    Carrier: region in linear memory ·        Layer III — Runtime (cite-only)
+                    residence across reloads = R3            shell · manifest · service worker (precache all;
+                    (volatile = demo only, per the            offline forever; COOP/COEP synthesis R11)
+                    distribution amendment)                   workers W (Core host) · R (readers) · IO (log)
+                                                              renderer WebGPU/WGSL (π) · NN projection R10
+                                                              probes P-64a/b/c · P-CAR · P-INST · P-COI
+                                                              III ↛ write I   (IX-III-I unchanged)
+```
+
+Each box cites: Hopper / Carrier → [the shape](plans/lace-context-iter6-pass-5-crate-proposal.md) sheets S / C; Frontier → sheet R and R9 ([pass 2](plans/lace-context-iter7-pass-2-compute-and-inventory.md) §3); Seed corpus → [distribution amendment](kit/distribution-model.md) §3; Runtime → inventory C16–C23. None is a Contract IV. None fills G2 / Φ.
+
+### Open board — rows added (pass 27)
+
+| # | Open | Stamp |
+|---|---|---|
+| 14 | Piece 13 *"graph databases, embedding spaces, and definition tables may be used only as disposable views"* vs staking law *FORBID embedding store* — which reading holds; load-bearing for R10 (WebNN as a never-persisted projection engine) | `[CONFLICT]` · law · human |
+| 15 | Is a seed corpus (dictionary text, Piece 9) shipped in the release at all; if so which, and under what identity rule for its words (G1)? | `[GAP]` · human |
+
+### P27-R — verdict
+
+| Gate | Result |
+|---|---|
+| P27-A edge walk | 28 of 28 surfaces walked as edges · literal defects **3** (captioned) · missing boxes/edges/regions **6** (admitted cite-only) · contradictions **0** |
+| P27-F | three captions, P27-cited, no redraw |
+| P27-D | six boxes, cite-only, pointing at plans |
+| OPENs | +2 (#14 · #15); none soft-closed |
+| G2 / emission Φ | `[GAP]` |
+
+**Overall verdict: DIAGRAM SOUND WITH OPENS (Core) · WAS INCOMPLETE AS A DIAGRAM OF THE DELIVERABLE, NOW DRAWN CITE-ONLY.** Pass 25 and Pass 26 tips retained. The Core rectangle is untouched; what changed is that the things around it that the shipped app needs now have boxes that point at the plans that own them.
+
+### Sealed refuse (pass 27 · honored)
+
+Pass 26 refuse still stands, plus: **no P27-D box as a Contract IV or a Core row**; **no reading of Carrier / Frontier / Hopper as second stores** (Carrier carries L, F-Carry; Frontier is an index; Hopper holds one arrival and no history); **no seed corpus chosen** (#15 is the human\'s); **no manifest edit for A3** (flagged to law); no invent Φ; no fill G2; no `src/`; no Core redraw; no rewrite of Passes 1–26 beyond the three P27-F captions / thin pointers / executed-passes link / Iteration-4 banner / this section; no push unless human asks.
+
+## Pass 27 deltas
+
+| Ticket | Action |
+|---|---|
+| T1 | **P27-A** edge-by-edge walk; 12 findings (A1–A4 · B1–B6 · C1–C2); 0 contradictions |
+| T2 | **P27-F** three captions in the open (one-tick ≠ one section per arrival; POINTER produced not supplied; hands read only) |
+| T3 | **P27-D** six cite-only boxes: Seed corpus · Hopper · Frontier · refuse edge · Carrier · Layer III — Runtime |
+| T4 | Open board **#14** (Piece 13 vs staking) · **#15** (seed corpus) |
+| T5 | **P27-R** verdict; executed-passes +27; Iteration-4 banner extended; Pass 27 pointer; refuse honored; G2 `[GAP]`; Passes 7–26 / P11-P / P17-P / P24-P retained |

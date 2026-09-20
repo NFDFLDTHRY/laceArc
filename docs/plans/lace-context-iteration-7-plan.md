@@ -1,6 +1,6 @@
 # Iteration 7 — the team, the distribution model, and the component inventory
 
-**Status:** `[PROPOSAL]` iteration. Passes 1–2 executed this sitting; pass 3 planned; passes 4–6 scoped. **Station:** maps. **Emission:** `[GAP]`. No `src/`.
+**Status:** `[PROPOSAL]` iteration. Passes 1–3 executed; passes 4–6 scoped. **Freeze:** the human stated 2026-09-19 21:23 PT that all other agents are paused for the duration of this work and the repo will not change underneath it; §3's local-claim caveat is therefore moot for this sitting and the bundle lands on `e2e8155` clean. **Station:** maps. **Emission:** `[GAP]`. No `src/`.
 **Pinned base:** `e2e8155942b6ef084d2ef9f4a05fcf8fb1dd829f`; **stacked on** branch `lace-context-iteration-6` (its receipt is the board this iteration inherits). **Editor:** one agent (Claude Fable 5.1, cloud, no push credential); propose / attack / resolve by the same hand — declared.
 **Convened by:** the human, 2026-09-19 21:12 PT, in this session. The subject is his, in his words, and each clause is carried to the pass that owns it:
 
@@ -27,7 +27,7 @@
 |---|---|---|---|
 | **1** | Who has touched this tree, by model, and how did each behave? | [actors and roles](lace-context-iter7-pass-1-actors.md) — census with git evidence; capability map; role assignment; protocol fixes F1–F7 | maps |
 | **2** | What is the law-clean heterogeneous compute model, and what is the complete component inventory it sits in? | [compute model and inventory](lace-context-iter7-pass-2-compute-and-inventory.md) | maps |
-| **3** | Does the global ASCII companion survive a *systems-level* audit — read as one diagram rather than as a 26-pass log? | planned: `lace-context-iter7-pass-3-audit.md` — method in §4 | maps |
+| **3** | Does the global ASCII companion survive a *systems-level* audit — read as one diagram rather than as a 26-pass log? | [systems audit](lace-context-iter7-pass-3-audit.md) — **executed**: 0 contradictions; 3 literal-reading defects captioned; 6 missing boxes admitted cite-only as Pass 27; OPEN #14, #15 | maps |
 | **4** | Can the environment *execute* — a Layer III checker that runs E7 mechanically on the D1 witness and on any candidate σ? | planned: a checker specification (not Core, not `src/`), then the checker as a Layer III page | maps → renderer |
 | **5** | The promotion rule from githack to the business domain — what must be proven, in what form, before anything moves | planned: the rulings brief, prepared for the human | maps |
 | **6** | Receipt; coverage as fractions; the reference queue | planned | maps |
