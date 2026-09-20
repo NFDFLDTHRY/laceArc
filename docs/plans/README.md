@@ -4,6 +4,7 @@ Plans, proposals, executed pass records, and dated receipts share this shelf. Ea
 
 | File | Job |
 |---|---|
+| [systems-eq-map-pass-6-plan.md](systems-eq-map-pass-6-plan.md) | **`PLAN`** — systems×equations pass 6 of 6. Map soundness + STOP. Does not fill Φ. Φ `[GAP]` |
 | [systems-eq-map-pass-5-d1.md](systems-eq-map-pass-5-d1.md) | **EXECUTED** systems×equations pass 5. D1 × one-tick. 0005–0007 CONFIRM. 6/6 Witness-only. Φ `[GAP]` |
 | [systems-eq-map-pass-5-plan.md](systems-eq-map-pass-5-plan.md) | **`EXECUTED`** — pass 5 D1 walk. Arrival ≠ tick. Φ `[GAP]` |
 | [systems-eq-map-pass-4-complete.md](systems-eq-map-pass-4-complete.md) | **EXECUTED** systems×equations pass 4 completeness. 0 skipped surfaces. Carrier/Hopper named-unmapped as I-letters. #14 kept. Φ `[GAP]` |
