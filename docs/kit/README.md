@@ -57,3 +57,5 @@ This station also owns [`.claude/`](../../.claude/README.md) — the hooks and s
 [`docs/clock/agent-interaction-model.md`](../clock/agent-interaction-model.md) stays outside this shelf — it is an elephant-clock `[PROPOSAL]`, not a control.
 
 POINTER emission stays `[GAP]`. No `src/`.
+
+| [distribution-model.md](distribution-model.md) | **Amendment (human-directed, 2026-09-19):** development on githack (unchanged law), production on the business custom domain as a pinned glacier release; installed once, offline forever; the promotion rule G1–G7. Re-scopes the Pages FORBID to the dev path |

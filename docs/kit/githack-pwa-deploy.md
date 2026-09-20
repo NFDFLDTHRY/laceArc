@@ -76,4 +76,6 @@ This is the only allowed install / Add-to-Home-Screen path for HTML in this repo
 ╚══════════════════════════════════════════════════════════════════════════╝
 ```
 
+**Amended by scope, 2026-09-19:** this file governs the **development** install path. The production path — the business custom domain, pinned glacier releases, installed once and offline forever — is [`distribution-model.md`](distribution-model.md). The Pages FORBID above stands for the development path.
+
 POINTER emission stays `[GAP]`. No `src/`.
