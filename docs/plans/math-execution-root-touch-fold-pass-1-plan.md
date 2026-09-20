@@ -1,10 +1,11 @@
 # Mathematical execution model — ROOT / TOUCH / FOLD campaign · Pass 1 PLAN
 
-**Status:** \`PLAN\` — **NOT EXECUTED**. **Station:** maps (\`Astra-math\`).
-**Pinned main:** \`4687e8a163dc0a76ba38b236f072a55b05b74c92\`.
-**Object under test:** [\`docs/math-execution-model.md\`](../math-execution-model.md), plus its environment / whole-app reduction products.
-**Prior campaign:** \`math-execution UPDATE\` is CLOSED 6/6. This is a new campaign, not Pass 7 of that series.
-**Emission:** remains \`[GAP]\` unless and until the exact human rulings below are reconciled into a complete, contradiction-accounted rule. This plan itself is not acceptance of \`pointer-emission.md\`. No \`src/\`.
+**Status:** **EXECUTED** 2026-09-20 → [findings](math-execution-root-touch-fold-pass-1-findings.md). **Station:** maps (`Astra-math`).
+**Pinned main (plan):** `4687e8a163dc0a76ba38b236f072a55b05b74c92`.  
+**Execute read pin:** `e053c022cfd1ac3d5023ce0550fc7fa9f5bba77d`.
+**Object under test:** [`docs/math-execution-model.md`](../math-execution-model.md), plus its environment / whole-app reduction products.
+**Prior campaign:** `math-execution UPDATE` is CLOSED 6/6. This is a new campaign, not Pass 7 of that series.
+**Emission:** remains `[GAP]` unless and until the exact human rulings below are reconciled into a complete, contradiction-accounted rule. This plan itself is not acceptance of `pointer-emission.md`. No `src/`.
 
 Pass 1 is a **delta / problem map**. It does not rewrite the model. It asks whether the newly stated root-touch-fold mechanics close part of the old Φ hole, which old equations they supersede, which source conflicts remain, and what exact mathematics a later pass may safely write.
 
@@ -60,13 +61,13 @@ Pass 1 must re-read these rather than rediscover them:
 
 | Existing product | What already stands | What H1/H2 may change |
 |---|---|---|
-| \`systems-manifest.md\` Pieces 2, 7–11, 15 | arrival routes through star; later occurrence threads existing formation; touch remains; relation may participate later | post-seed occurrence may be touch rather than another WORD root |
-| \`seed-dictionary-map-pass-1..6\` | dictionary is seed; wired first; headword→defining-word route; those definition routes are first-touch shape | H1 may close the previously-free “later document touch” regime |
-| \`math-execution-model.md\` S1–S4 | one line; WORD/POINTER; Arrive; star view; Φ morphism vs schedule | S2 universal Arrive-WORD and S4 Q0/Q1/Q5 may need restructuring |
-| \`lace-context-iter6-pass-4-environment.md\` E2–E7 | \(\sigma:\mathcal L\times V\to Step^*\); fences; candidate procedure | σ's output language may be reducible to seed vs post-seed recurrence |
-| \`reduction-pass-2-execution-model.md\` X2–X5 | whole-app \(\Sigma=(L,h,K)\); STEP; invariants; M1–M3 | STEP may gain a much more specific post-seed form |
-| \`graphics-close-reading.md\` §2–§3 | D1 slot order is semantic, not chronological; D1 is not an emitter | fold operand order must not be invented |
-| \`pointer-emission.md\` | backward same-line; POINTER→POINTER allowed; Q2 conflict; Q0/Q1/Q5 campaign speech | law-owned draft remains separate; do not silently rewrite it |
+| `systems-manifest.md` Pieces 2, 7–11, 15 | arrival routes through star; later occurrence threads existing formation; touch remains; relation may participate later | post-seed occurrence may be touch rather than another WORD root |
+| `seed-dictionary-map-pass-1..6` | dictionary is seed; wired first; headword→defining-word route; those definition routes are first-touch shape | H1 may close the previously-free “later document touch” regime |
+| `math-execution-model.md` S1–S4 | one line; WORD/POINTER; Arrive; star view; Φ morphism vs schedule | S2 universal Arrive-WORD and S4 Q0/Q1/Q5 may need restructuring |
+| `lace-context-iter6-pass-4-environment.md` E2–E7 | \(\sigma:\mathcal L\times V\to Step^*\); fences; candidate procedure | σ's output language may be reducible to seed vs post-seed recurrence |
+| `reduction-pass-2-execution-model.md` X2–X5 | whole-app \(\Sigma=(L,h,K)\); STEP; invariants; M1–M3 | STEP may gain a much more specific post-seed form |
+| `graphics-close-reading.md` §2–§3 | D1 slot order is semantic, not chronological; D1 is not an emitter | fold operand order must not be invented |
+| `pointer-emission.md` | backward same-line; POINTER→POINTER allowed; Q2 conflict; Q0/Q1/Q5 campaign speech | law-owned draft remains separate; do not silently rewrite it |
 | Global systems ASCII | current systems reading, Pass 28 + later qualifications | later incorporation only; not this pass |
 
 ---
@@ -139,7 +140,7 @@ p_{n+1}=\operatorname{POINTER}(p_n,\tau_{n+1})
 
 or the slot-reversed form.
 
-Pass 1 must **not** choose \`ref_A\` / \`ref_B\` by index chronology. \`graphics-close-reading.md\` establishes that D1 slot A is the described subject, not always newest or oldest.
+Pass 1 must **not** choose `ref_A` / `ref_B` by index chronology. `graphics-close-reading.md` establishes that D1 slot A is the described subject, not always newest or oldest.
 
 ### 4.4 “One point represents the entire Lace”
 
@@ -189,7 +190,7 @@ Pass 1 must test at least these possibilities:
 
 Execution product:
 
-\`docs/plans/math-execution-root-touch-fold-pass-1-findings.md\`
+`docs/plans/math-execution-root-touch-fold-pass-1-findings.md`
 
 Every row below must end as **KEEP / SUPERSEDE / CONFLICT / OPEN / DERIVE-LATER** with exact evidence.
 
@@ -213,7 +214,7 @@ Every row below must end as **KEEP / SUPERSEDE / CONFLICT / OPEN / DERIVE-LATER*
 | D16 | Seed pass 6 \(\theta_{when}\) free | split dictionary-wiring freedom from post-seed recurrence |
 | D17 | D1 rows 0007/0009/0010 | test as evidence for recursive relation-to-relation scaling, not proof of universal slot order |
 | D18 | Global ASCII / manifest | list required later propagation; do not edit under Pass 1 |
-| D19 | \`pointer-emission.md\` | list law-side questions changed by H1/H2; do not edit under maps |
+| D19 | `pointer-emission.md` | list law-side questions changed by H1/H2; do not edit under maps |
 | D20 | “entire Lace” | prove / refute transitive-coverage formulation and base |
 
 Execution may add rows but may not delete a conflict because the new recurrence feels cleaner.
@@ -224,12 +225,12 @@ Execution may add rows but may not delete a conflict because the new recurrence 
 
 Current D1 includes:
 
-- \`0000 WORD PIE\`
-- \`0003 WORD PIE\`
-- \`0004 POINTER 0003 → 0000\`
-- relation-to-relation rows \`0007\`, \`0009\`, \`0010\`.
+- `0000 WORD PIE`
+- `0003 WORD PIE`
+- `0004 POINTER 0003 → 0000`
+- relation-to-relation rows `0007`, `0009`, `0010`.
 
-H1 says post-seed seen words are touches to roots, so Pass 1 must classify D1's \`0003 WORD PIE\` under one of:
+H1 says post-seed seen words are touches to roots, so Pass 1 must classify D1's `0003 WORD PIE` under one of:
 
 1. seed / dictionary-construction specimen;
 2. pre-H1 mixed illustration not representing normal post-seed punch-card ingest;
@@ -238,7 +239,7 @@ H1 says post-seed seen words are touches to roots, so Pass 1 must classify D1's 
 
 No fifth “average them together” option.
 
-**Falsifier F-D1:** if the pass cannot place \`0003\` without contradicting either the current human ruling or the Graphic-D source, the result must retain an explicit CONFLICT and later passes may not write a total executor.
+**Falsifier F-D1:** if the pass cannot place `0003` without contradicting either the current human ruling or the Graphic-D source, the result must retain an explicit CONFLICT and later passes may not write a total executor.
 
 ---
 
@@ -285,7 +286,7 @@ Pass 1 must not invent answers to:
 - exact WORD identity / G1;
 - behavior for a word absent from the wired dictionary;
 - whether a touch is a unary POINTER, binary POINTER, or another arrangement using only existing row kinds;
-- exact \`ref_A\` / \`ref_B\` order for touch or grounding pointer;
+- exact `ref_A` / `ref_B` order for touch or grounding pointer;
 - whether dictionary wiring itself terminates in a single \(p_{seed}\);
 - whether every seed row is transitively represented by the runtime aggregate point;
 - concrete byte encoding;
@@ -300,11 +301,11 @@ Pass 1 execution may **read**:
 
 1. current human H1/H2 rulings recorded above;
 2. Graphics A–D and their close readings;
-3. \`docs/systems-manifest.md\`;
+3. `docs/systems-manifest.md`;
 4. seed-dictionary passes 1–6;
-5. \`docs/math-execution-model.md\`;
+5. `docs/math-execution-model.md`;
 6. environment / reduction execution model;
-7. \`docs/pointer-emission.md\`;
+7. `docs/pointer-emission.md`;
 8. global systems ASCII.
 
 Pass 1 may **write only maps-owned planning records**:
@@ -314,9 +315,9 @@ Pass 1 may **write only maps-owned planning records**:
 
 Pass 1 must **not** edit:
 - Graphics / graphics ASCII;
-- \`docs/systems-manifest.md\` (law);
-- \`docs/pointer-emission.md\` (law);
-- Core code / \`src/\`;
+- `docs/systems-manifest.md` (law);
+- `docs/pointer-emission.md` (law);
+- Core code / `src/`;
 - old seed campaign records;
 - global systems ASCII;
 - the mathematical model body itself.
@@ -347,10 +348,10 @@ No automatic Pass 2.
 |---|---|
 | **Expected** | H1 closes the normal post-seed touch target; H2 supplies a recurrence skeleton; most of old Φ uncertainty shrinks to base, encoding/arity/slot, G1 and out-of-dictionary behavior |
 | **Expected mathematical gain** | ordinary punch-card growth becomes a deterministic root-touch-fold recurrence once representation details are fixed |
-| **Expected conflict** | D1 \`0003 WORD PIE\` versus post-seed “seen word = touch” must be explicitly placed or retained as conflict |
+| **Expected conflict** | D1 `0003 WORD PIE` versus post-seed “seen word = touch” must be explicitly placed or retained as conflict |
 | **Expected theorem candidate** | newest grounding point transitively reaches all prior Lace iff the base point covers the seed and each fold includes prior point + new touch |
-| **Actual** | \`NOT_TESTED\` |
-| **Human acceptance of full emission draft** | **ABSENT** — H1/H2 are rulings to reconcile, not blanket acceptance of \`pointer-emission.md\` |
+| **Actual** | D01–D20 20/20 disposed. D1 `0010` reaches all 11 rows. H1 is compatible with repeated WORD occurrence + root touch. The provisional left-fold recurrence is not established. F-BASE fires only for the unrestricted theorem; D1 bounded coverage passes |
+| **Human acceptance of full emission draft** | **ABSENT** — H1/H2 are rulings to reconcile, not blanket acceptance of `pointer-emission.md` |
 
 ---
 
@@ -360,7 +361,7 @@ Pass 1 is complete only when:
 
 - every D01–D20 row has a disposition and cite;
 - H1 and H2 are separated from inferred equations;
-- D1 \`0003\` is explicitly classified;
+- D1 `0003` is explicitly classified;
 - touch formation is separated from touch serialization;
 - n+1 fold is separated from slot order;
 - the base case is explicit or marked OPEN;
@@ -368,9 +369,21 @@ Pass 1 is complete only when:
 - no earlier row is replaced / collapsed;
 - no new store is introduced;
 - no law-owned file is edited;
-- no \`src/\`;
+- no `src/`;
 - the findings identify exactly which current equations are safe to amend in Pass 2;
 - then STOP.
+
+## 13a. Execution receipt
+
+- Findings: [math-execution-root-touch-fold-pass-1-findings.md](math-execution-root-touch-fold-pass-1-findings.md).
+- D01–D20: **20/20 disposed**.
+- F-D1: **did not fire against H1**. D1 `0003 WORD PIE` is a later occurrence; `0004` is the root touch.
+- F-BASE: **fires for the unrestricted theorem; bounded D1 witness passes**.
+- D1 final reach: **11/11 rows from `0010`**.
+- Plan hypothesis `p_(n+1)=G(p_n,tau_(n+1))`: **not established as universal**; D1 grounding is branched.
+- Model body, law, manifest, graphics, global ASCII: **0 edits**.
+- `src/`: **0**.
+- Pass 2: **not automatically opened**.
 
 ## Steward test
 
