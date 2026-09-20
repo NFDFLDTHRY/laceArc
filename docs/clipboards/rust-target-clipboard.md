@@ -417,3 +417,43 @@ Two corrections arrive from the sibling clipboard and land on rows of this page.
 **Nothing was closed. No ruling was taken. No `[GAP]` was filled.**
 
 **F-R receipt:** 44 quoted fragments re-read against their own cited lines, 0 failures; 32 locator-bearing rows audited; a coverage map computed fail-closed over 79 cited ranges; the remainder merged to 25 ranges and 150 lines and ordered; one first-line-rule failure found in this page's own citation and repaired by carrying the label line, not by editing the executed body; two corrections received from the A4 half and recorded; the book not committed; no `src/`, no Cargo file, no script added to the tree. Emission `[GAP]`. Shoe in hands, or no.
+
+---
+
+## Pass 4 — ASCII source machinery · EXECUTED
+
+**2026-09-20 · base `43e290f` · station `clipboards` · plan [`rust-target-pass-4-plan.md`](rust-target-pass-4-plan.md) · product [`rust-target-ascii-machinery.md`](rust-target-ascii-machinery.md).**
+Pass 0, pass 1 and the forge above are dated records and are **not edited by this section.**
+
+**What pass 4 asked.** Page A mapped eighteen mechanisms in a table. A table can hold two mechanisms that contradict each other, or one that connects to nothing, and look complete either way. **Pass 4 drew them as one system.** Eighteen panels `P-R1`–`P-R18`, 1:1 with `M-R1`–`M-R18`, on a ten-node toolchain spine, under four drawing rules stated before anything was drawn.
+
+### The structural finding: the receipt is the hub, and it is the blind spot
+
+The plan guessed which mechanisms attach to which node. **Execution re-derived every attachment from Page B and seven of eighteen rows disagreed — six of them by adding node 8, the receipt.**
+
+| | Plan expected | Page B gives |
+|---|---|---|
+| mechanisms reporting to the **receipt** (`--print`, `-V --verbose`) | 2 — `M-R15`, `M-R16` | **6** — `M-R4`, `M-R8`, `M-R9`, `M-R10`, `M-R15`, `M-R16` |
+
+**So `M-R16` is not cited often by accident.** It is the node through which compile, codegen, link, target and pin all describe themselves to `B0`'s build receipt — **and [the forge measured it at 0 of 9 ranges carried](#f2--the-coverage-map-what-is-reachable-in-repo-and-what-still-needs-the-book).** The heaviest node on the spine is the least checkable thing on the shelf. That is now a fact about the shape, not an impression.
+
+### Two falsifiers fired
+
+| | Result |
+|---|---|
+| **`F1`** — a mechanism attaching to no node | did not fire. All eighteen attach; all ten nodes carry one |
+| **`F2`** — a panel that cannot be drawn without naming a store or a strand | did not fire. `P-R5` and `P-R18` came within a word; both carry `FORBID-as-Lace-store` and the mechanical audit found **0** off-board tokens outside a refusal line |
+| **`F3`** — a fence that, relabelled, would serve as a drawing of Core | **FIRED, on `P-R18`.** The first fence drew the 64-bit address space with indices into it. Change three labels and it is Core. **The fence was cut** and the panel redrawn as the *decision* — the target fixes `usize` at 8 bytes, the engine's smaller cap binds. The plan's word *"cut it"* admits two readings; **this execution cut the drawing and kept the mechanism, and says so for the human to overrule** |
+| **`F4`** — an open item closed elsewhere and never carried | **FIRED, three rows.** Page B's *Leaves open* cells for `M-R6`, `M-R12` and (via Page D) `G9` are **stale**: [repository update pass 2](#repository-update-pass-2--target-evidence-carry) already carried `W2-S1`–`S4`, which **located** the carriers. In each case the sighting turned a *carrier gap* into a *proof gap* — a harder question. Carried into the panels; **not closed** |
+
+### What the drawing rules caught before the commit
+
+`R-D2` — *an open edge wherever something is unrun or unsaid* — was run as a mechanical check over the file's twenty fenced blocks, not recited. **Three panels failed and were fixed:** `P-R2` drew a settled-looking route choice the book leaves to A4; `P-R4` and `P-R15` used the open-edge form to carry **reach**, which belongs to `R-D4`'s caption. **Reach and openness are different properties and must not share a notation.**
+
+One exception stands recorded rather than smoothed: `P-R13` closes what the book leaves open and still carries an open edge, for `G4` — the D1 replay, never green. **Page B's *Leaves open* measures the book's silence; `R-D2` measures anything unrun.** The rule is refined here by the case that forced it.
+
+### What did not move
+
+Node 9 is open on every row — `G1` `G2` `G3` `G8′` `G9` `G10`, all `NOT_RUN`. No `[GAP]` closed. No ruling taken. No build run. No new book line cut. No script, no `src/`.
+
+**`P4-R` receipt:** 18 panels, all eight fields, a stamp line under every fence; spine re-derived with 7 of 18 attachments corrected; cross-walk 18 rows with no blank cell; `P4-X` 18 PASS — three after fixes the matrix caught, one after `F3`, one with a recorded rule refinement; mechanical audits — emission word in fences **0 of 20**, off-board tokens off a refusal line **0**, `FM-Rust*` ids minted **0**; reach 9 `FULL` · 6 `PARTIAL` · 3 `NONE`, matching the forge's 49 of 79. Emission `[GAP]`. Shoe in hands, or no.

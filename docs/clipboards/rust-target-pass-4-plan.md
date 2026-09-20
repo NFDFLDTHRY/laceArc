@@ -1,6 +1,6 @@
 # The rustc book → shelf 10 — Pass 4 PLAN · ASCII source machinery (`P-R1`…`P-R18` + `P4-X`)
 
-**Status:** **`PLAN`** · not executed. **Station:** clipboards (HELD `Claude-Projection` · BASE `5999635` = `origin/main` after `pull --ff-only`). **Emission:** `[GAP]`. No `src/`.
+**Status:** **`EXECUTED`** 2026-09-20 → [`rust-target-ascii-machinery.md`](rust-target-ascii-machinery.md). **Two falsifiers fired:** `F3` cut `P-R18`'s first fence, which relabelled would have been a drawing of Core; `F4` found three *Leaves open* cells on Page B stale against a carry already in the tree. **The spine guess in §2 was wrong on 7 of 18 rows**, six of them by adding node 8 — the receipt, which turns out to be the heaviest node on the spine and the least reachable thing on the shelf. `R-D2` was run as a mechanical check and caught three panels before the commit. **Station:** clipboards. **Emission:** `[GAP]`. No `src/`.
 **Product (execute only — do not create at plan time):** `docs/clipboards/rust-target-ascii-machinery.md`.
 **Clipboards under test:** [`rust-target-clipboard.md`](rust-target-clipboard.md) (A1 · pass 0 + pass 1 + forge) · [`cargo-build-std-clipboard.md`](cargo-build-std-clipboard.md) (A4 · pass 0 + forge).
 **Mechanisms (done — cite, do not rewrite):** **Page A, `M-R1`…`M-R18`**, inside the A1 clipboard. **There is no `rust-target-mechanisms.md`.** §0.
