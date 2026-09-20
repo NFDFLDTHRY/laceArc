@@ -1,7 +1,7 @@
-STATUS: FREE
+STATUS: HELD
 STATION: maps
 OWNS: docs/reason-model-map.md docs/rust-nostd-*.md docs/atomic-primitives-map.md docs/clock/gearing-code-1to1.md docs/coherence-audit*.md docs/clock/system-mathematical-model.md docs/defrag-plan.md docs/plans/** docs/namespace-register.md docs/*.md (catch-all: any unmatched file at the docs/ root)
-AGENT: -
-BASE: -
-SINCE: -
-NOTE: Astra-math ROOT / TOUCH / FOLD Pass 1 EXECUTED. Findings commit 5c34604d6f07dd02a0836c538e023bb888d9eb46; plan closed 94f138ce3c665d28c812065c6467075ad0835a7d; indexed 346a2cbbe5c62f79a3cf55c5afc1de44149f1282. D01-D20 20/20; D1 0010 reaches 11/11 rows; unrestricted base theorem still open. Model/law/graphics/global ASCII unchanged. Emission not blanket-accepted. coord.sh NOT_RUN.
+AGENT: Astra-math
+BASE: ea8a4a8d653b6ab953d6494cd1368fb078f9904e
+SINCE: 2026-09-20T23:45:00Z
+NOTE: User-directed ROOT / TOUCH / FOLD Pass 2 planning. H3: all arrivals land on Lace. Goal: formalize universal arrival landing + seen-word root touch, isolate n+1 grounding as remaining emission calculation. Pass 1 complete. No blanket pointer-emission acceptance; no src/. Connector claim; coord.sh NOT_RUN.
