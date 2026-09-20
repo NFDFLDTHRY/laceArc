@@ -4,7 +4,7 @@
 # Usage: ./docs/coord/coord.sh <status|which|claim|release|force-free|check|refresh|doctor|gate> ...
 set -euo pipefail
 
-ROOT="$(cd "$(dirname "$0")/../.." && pwd)"
+ROOT="$(cd "$(dirname "$0")/../.." && pwd -P)"
 STATIONS_DIR="$ROOT/docs/coord/stations"
 CLAIM_SH="$ROOT/docs/gearing/claim.sh"
 RESYNC_SH="$ROOT/docs/gearing/resync.sh"
@@ -95,6 +95,39 @@ norm_agent() {
 
 # --- path → station mapping -------------------------------------------------
 
+# Normalize supported spellings before ownership matching. Inspect each original
+# component before consuming a later "..", so it cannot hide a symlink traversal.
+# Symlink aliases are deliberately rejected; new ordinary paths need not exist.
+canonical_path() {
+  local raw="$1" part path=""
+  local -a parts
+  [[ "$raw" != *$'\n'* && "$raw" != *$'\r'* ]] || die "unsupported path spelling"
+  if [[ "$raw" == /* ]]; then
+    [[ "$raw" == "$ROOT/"* ]] || die "path is outside repository: '$raw'"
+    raw="${raw#"$ROOT/"}"
+  fi
+  IFS=/ read -r -a parts <<< "$raw"
+  for part in "${parts[@]}"; do
+    # Existing non-directories cannot be traversed, even by a following "..".
+    if [[ -n "$path" && -e "$ROOT/$path" && ! -d "$ROOT/$path" ]]; then
+      die "path traverses a non-directory: '$1'"
+    fi
+    case "$part" in
+      ""|.) continue ;;
+      ..)
+        [[ -n "$path" ]] || die "path escapes repository: '$1'"
+        if [[ "$path" == */* ]]; then path="${path%/*}"; else path=""; fi
+        ;;
+      *)
+        path="${path:+$path/}$part"
+        [[ ! -L "$ROOT/$path" ]] || die "symlink path is ambiguous; use its target path: '$1'"
+        ;;
+    esac
+  done
+  [[ -n "$path" ]] || die "path must name a repository entry: '$1'"
+  printf '%s\n' "$path"
+}
+
 # Score how well a pattern matches path. Higher = more specific. -1 = no match.
 # Patterns: exact file, glob with **, glob with *, prefix dirs.
 match_score() {
@@ -128,8 +161,9 @@ match_score() {
   # Convert simple globs: if pat has * but not **/
   case "$pat" in
     *'*'*|*'?'*)
-      # Use bash pathname matching against the path string
-      if [[ "$path" == $pat ]]; then
+      # Bash string globs cross '/'; equal separator counts keep * and ?
+      # within their components. Recursive /** patterns were handled above.
+      if [[ "${path//[^\/]/}" == "${pat//[^\/]/}" && "$path" == $pat ]]; then
         # Prefer longer literal prefix before first wildcard
         local lit="${pat%%[*?]*}"
         echo $((3000 + ${#lit}))
@@ -153,9 +187,8 @@ match_score() {
 # Returns station name or empty
 path_to_station() {
   local raw="$1"
-  local path="${raw#./}"
-  # Strip leading repo-relative noise
-  path="${path#$ROOT/}"
+  local path
+  path="$(canonical_path "$raw")" || return 1
 
   # Gear contracts → gear:<shaft>
   if [[ "$path" =~ ^docs/gearing/contracts-([a-zA-Z0-9]+)\.js$ ]]; then
@@ -190,7 +223,7 @@ path_to_station() {
     [kit]="docs/kit/** .claude/**"
     [graphics]="docs/graphics/** docs/graphics-close-reading.md"
     [law]="AGENTS.md CLAUDE.md docs/staking-the-workspace.md docs/law-why-these-documents.md docs/systems-manifest.md docs/pointer-emission.md docs/references.md CONTRIBUTING.md README.md .gitignore LICENSE docs/README.md"
-    [gearing-meta]="docs/gearing/*.md docs/gearing/*.sh docs/gearing/RESYNC.md"
+    [gearing-meta]="docs/gearing/*.md docs/gearing/*.sh docs/gearing/RESYNC.md docs/gearing/claims/README.md"
     [coord]="docs/coord/**"
   )
 
@@ -445,11 +478,13 @@ all_doc_free() {
 }
 
 cmd_doctor() {
-  local auto=0
+  local auto=0 agent=""
   if [[ "${1:-}" == "--auto-clear" ]]; then
+    [[ $# -eq 2 && -n "$2" ]] || die 'usage: doctor --auto-clear "<agent>"'
     auto=1
-  elif [[ -n "${1:-}" ]]; then
-    die "usage: doctor [--auto-clear]"
+    agent="$2"
+  elif [[ $# -ne 0 ]]; then
+    die 'usage: doctor [--auto-clear "<agent>"]'
   fi
 
   fetch_origin_main
@@ -468,16 +503,16 @@ cmd_doctor() {
     if (( gear_ok && doc_ok )); then
       if (( auto )); then
         echo "doctor: RESYNC FIRED and all FREE — clearing"
-        "$RESYNC_SH" clear
+        "$RESYNC_SH" clear "$agent"
       else
         echo "doctor: RESYNC FIRED but all stations/claims FREE — safe to clear:"
-        echo "  ./docs/coord/coord.sh doctor --auto-clear"
-        echo "  or: ./docs/gearing/resync.sh clear"
+        echo '  ./docs/coord/coord.sh doctor --auto-clear "<agent>"'
+        echo '  or: ./docs/gearing/resync.sh clear "<agent>"'
       fi
     else
       echo "doctor: RESYNC FIRED — do NOT clear yet. Release held stations/shafts first."
       echo "  Advice: git pull --ff-only origin main; ./docs/coord/coord.sh status"
-      echo "  Holders: release or refresh so BASE == tip; then doctor --auto-clear"
+      echo '  Holders: release or refresh so BASE == tip; then doctor --auto-clear "<agent>"'
     fi
   elif [[ "$rstatus" == "CLEAR" ]]; then
     echo "doctor: RESYNC CLEAR — normal claim/release; check still requires BASE == origin/main"
@@ -515,7 +550,7 @@ Usage: ./docs/coord/coord.sh <command> ...
   force-free <station> "<reason>"
   check <station> "<agent>"
   refresh <station> "<agent>"
-  doctor [--auto-clear]
+  doctor [--auto-clear "<agent>"]
   gate <station> "<agent>" <path> [...]
 
 Doc stations: ${DOC_STATIONS[*]}

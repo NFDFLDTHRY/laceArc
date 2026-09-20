@@ -18,7 +18,7 @@ Claim/RESYNC on gearing shafts only covered eight `contracts-*.js` files. Agents
 ./docs/coord/coord.sh force-free <station> "<reason>"
 ./docs/coord/coord.sh check <station> "<agent>"
 ./docs/coord/coord.sh refresh <station> "<agent>"
-./docs/coord/coord.sh doctor [--auto-clear]
+./docs/coord/coord.sh doctor [--auto-clear "<agent>"]
 ./docs/coord/coord.sh gate <station> "<agent>" <path> [...]
 ```
 
@@ -41,10 +41,10 @@ The [isolated regression fixture](tests/force-free-dispatch.sh), run with `bash 
 5. `./docs/coord/coord.sh check <station> "<AgentName>"` before commit
 6. Commit / push
 7. `./docs/coord/coord.sh release <station> "<AgentName>"`
-8. Optionally `./docs/coord/coord.sh doctor --auto-clear` after release if you are steward
+8. Optionally `./docs/coord/coord.sh doctor --auto-clear "<AgentName>"` after release if you are steward
 
 Docs-only work never requires a gearing shaft claim.  
-`RESYNC` FIRED only blocks gear claims with BASE mismatch; `doctor --auto-clear` clears stuck FIRED when **all** gear claims and **all** doc stations are FREE.
+`RESYNC` FIRED only blocks gear claims with BASE mismatch; `doctor --auto-clear "<AgentName>"` clears stuck FIRED when **all** gear claims and **all** doc stations are FREE.
 
 Paste-ready ASCII: `docs/prompts/coord-protocol-prompt.md`.
 
@@ -66,7 +66,7 @@ Station files: `docs/coord/stations/<name>.station` — see [stations/README.md]
 | law | `AGENTS.md` `CLAUDE.md` staking, law-why, manifest, `pointer-emission.md`, references, CONTRIBUTING, README, `.gitignore`, `LICENSE`, `docs/README.md` |
 | graphics | `docs/graphics/**` `docs/graphics-close-reading.md` — Hands A–D. Source of record. Not a second store. |
 | coord | docs/coord/** (this umbrella) |
-| gearing-meta | `docs/gearing/*.md` `docs/gearing/*.sh` `docs/gearing/RESYNC.md` (not `contracts-*.js`) |
+| gearing-meta | root-level `docs/gearing/*.md` / `docs/gearing/*.sh`, plus the exact `docs/gearing/claims/README.md` exception (not `contracts-*.js`) |
 
 ## Gear stations (delegate to claim.sh)
 
@@ -93,16 +93,29 @@ NOTE: <optional>
 
 ## Behavior notes
 
-- `claim` / `check` / `refresh` / `doctor` always `git fetch origin main`.
+- Valid `claim` / `check` / `refresh` / `doctor` invocations fetch `origin main`; invalid doctor arguments reject before fetching.
 - `claim` fails if HELD by another agent; sets `BASE` to current `origin/main` SHA.
-- `which` prefers the longest / most specific OWNS match. Unknown path → error.
+- `which` normalizes repository-relative paths, repeated separators, dot segments and absolute paths beneath the physical repository root before matching the authoritative rule table. It rejects escapes, symlinked files or parents (even before a later `..`), and traversal through an existing non-directory. Use the target's ordinary path for a symlink alias. New files need not exist. Unknown path → error.
+- Exact paths win over recursive `/**` rules; ordinary `*` and `?` stay within one path component. The root Markdown catch-all does not assign arbitrary nested shelves. The existing claims README has an explicit gearing-meta rule.
 - `gate` = `which` + `check`: exit 0 only if every path maps to the named station and check passes.
-- `doctor --auto-clear`: if RESYNC is FIRED and every gear claim and doc station is FREE → runs `./docs/gearing/resync.sh clear`.
+- `doctor --auto-clear "<AgentName>"`: requires the explicit actor; if RESYNC is FIRED and every gear claim and doc station is FREE, it forwards that actor to `./docs/gearing/resync.sh clear "<AgentName>"`. Read-only `doctor` remains available. Missing/unknown state or any HELD claim prevents automatic clearing; CLEAR does not mutate. No actor argument grants stewardship or override authority.
 - `force-free` requires a reason. For doc stations it requires HELD and records the prior holder, timestamp and reason in `NOTE`. For gear claims it delegates to the shaft override, clears HELD or FREE state fields, and retains the supplied reason in `NOTE`. The doc command was restored under [iteration 2 pass 5, E3](../plans/verification-iter2-pass-5-plan.md); pass 2 repairs the later-identified gear dispatch and reason path. **It is an override, not an expiry**: nothing in this protocol decides a claim is stale or grants permission to clear it.
 
 Shaft claim protocol: [CLAIMS.md](../gearing/CLAIMS.md); its direct no-reason override remains compatible.
 
 Resync signal: `docs/gearing/RESYNC.md`.
+
+## Ownership and doctor regression checks
+
+[control-regressions.sh](tests/control-regressions.sh) copies the actual dispatcher and gear/resync backends into a temporary Git tree. All claims, the signal, symlinks and their targets are synthetic; a constrained Git stub prevents remote access. It checks canonical ownership, root-only patterns, rejected aliases/escapes, gate ownership, doctor actor custody and unchanged sentinels. No live override is exercised.
+
+```bash
+bash docs/coord/tests/control-regressions.sh
+LACE_SOURCE_REV=e14b13c08fbfe6c280e9f0460d383a6be4479865 bash docs/coord/tests/control-regressions.sh
+bash docs/coord/tests/force-free-dispatch.sh
+```
+
+The optional revision selects script sources with `git show`; it does not change the checkout. The second command intentionally challenges the pre-repair scripts. These synthetic checks establish the named tool behavior, not human authorization, content agreement or emission acceptance.
 
 ## Quiet-door #9 records
 
