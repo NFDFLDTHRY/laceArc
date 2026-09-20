@@ -7,7 +7,7 @@
 |---|---|---|---|---|---|
 | 1 | **R1** trust boundary | Is `rustc` + `rust-src` (`core`, `compiler_builtins`) on a pinned nightly inside "zero external dependencies"? | yes as the stated trust row / no | **every build** (Tier 3 ships no `core`) | sheet T |
 | 2 | **R2** target | Reaffirm `wasm64` with the cost table in view, or dual-target for probes? | reaffirm / dual for probes / re-rule | sheet T, R6 | wasm-spec-3 banner stands or is amended |
-| 3 | **A1** attach | rustc *Platform Support → wasm64-unknown-unknown* (PDF, dated) | — | R1's evidence becomes a clipboard | clipboards, via a prompt |
+| 3 | **A1** attach | **DONE 22:54 PT** — the rustc book attached as text; [shelf 10](../clipboards/rust-target-clipboard.md) pass 1 executed; T1–T4 now SOURCE; four new sourced facts | — | R1 has its evidence | clipboards |
 | 4 | **R6** encoding | fixed `k = 2` (takes Q2) or per-row `k` (variable-length, which the card declined)? index width? slot order (#9)? | see sheet E | **birth #1** (`strand/` cannot exist without bytes) | sheet E; `pointer/` card |
 | 5 | **R4** capacity | `region/` birth #0 growing by `memory.grow`, or fixed capacity + refusal? **Who holds a refused arrival?** | (a) / (b); custody: shell keeps / drops and says / other | sheet R; REFUSE; `strand/` resources | branch order |
 | 6 | **R3** carrier | Where does `L` live across a reload? *(pressed by the amendment: volatile = demo only)* | volatile / durable log written by the shell / other | PERSIST, OPEN; the deliverable | sheet C |
