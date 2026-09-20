@@ -1,6 +1,6 @@
 # Technician references × mathematical model — Pass 1 of 6 PLAN
 
-**Status:** **`PLAN`** · not executed. **Station:** maps (HELD `Grok-maps` · BASE `22e0cf9`).
+**Status:** **`EXECUTED`** 2026-09-20 · [`tech-ref-eq-map-pass-1.md`](tech-ref-eq-map-pass-1.md). **Station:** maps (`Grok-maps`).
 **Emission:** `[GAP]`. No `src/`. Does not accept `pointer-emission.md`.
 **Does not import adjacent axioms into Core.**
 
