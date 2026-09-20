@@ -71,25 +71,22 @@ Approximation, ReLU calculus, depth. Adjacent if someone asks whether a star is 
 
 Reasoning-Action graphs and neural invariants for agent failure localization. Adjacent to the LaceArc *Grok Bot* (how a steward fails), not to Lace storage. Do not add ReAG or a failure taxonomy as a second store beside the append-only line.
 
-### Philosophy of seeing and talking (gearbox to operate upon the lace)
+### Conceptual references: cognition, causality, and communication
 
 Workspace attachments. Not committed as binaries. Map: `docs/clock/philosophy-map.md`.
-Fence posts (1–5) surround the shoe. Gears (6–8) stand between hands and shoe. Not Core rows.
+The [human correction of 2026-09-20](law-why-these-documents.md#conceptual-reference-documents) classifies documents 6–8 as conceptual references. Earlier H/C/W gear assignments are interpretations, not required holder machinery or runtime dependencies.
 
-#### 6. HCC-A v1.0 — Human Cognitive Compiler Architecture  (Gear H, driver)
+#### 6. HCC-A v1.0 — Human Cognitive Compiler Architecture
 
-Self/other mapping spec: RIC ∥ PFC → Compiler → Story Ledger → Meaning → Emotion → Identity → Behavior.  
-Keep dual shaft and output = Behavior only. Internals may mutate *inside the box*. Do not import ledger merge/re-index/delete or a Meaning Engine into Graphic D.
+Conceptual model of how perception and existing interpretations contribute to story, meaning, emotion, identity, and behavior. Its compiler, ledger, and engines are concepts within that model. They do not become required LaceArc components, and ledger merge/re-index/delete is not a Graphic D operation.
 
-#### 7. The Coffee Cup — A Walk-Through of How You Actually See  (Gear C, phase)
+#### 7. The Coffee Cup — A Walk-Through of How You Actually See
 
-Five stages: conditions, release, trajectory, impact, aftermath.  
-Tooth 3 is the work window. Tooth 5 drives the next tooth 1. Do not file impact.
+Conceptual reference for event causality and intervention: conditions, release, trajectory, impact, and aftermath, including how aftermath changes future conditions. These stages do not prescribe a Lace runtime clock or append gate.
 
-#### 8. Where the Water Is Loud + Dual Proofing Systems  (Gear W, clutch)
+#### 8. Where the Water Is Loud + Dual Proofing Systems
 
-OBS / DELTA / UNK / INVALID and river banks / rapids / delta.  
-No mesh, no torque. Do not treat OBS as POINTER emission.
+Conceptual reference for communication and shared footing. The story, Proof Ledger, River model, and proposed interface examine pointable observations, differences, unknowns, and pressure. OBS / DELTA / UNK / INVALID are concepts in that reference, not required LaceArc machinery or POINTER emission.
 
 #### 8b. Model of Perceived Reality and Story Defense  (hologram touch)
 
@@ -151,4 +148,3 @@ Five-page KEEP/FORBID clip of stakes 1–5: `docs/clipboards/clipboard-five-stak
 #### History — sixth extraction plan (18 September 2026)
 
 Bound as `docs/history/history-recovered-pass-6-plan.md`. Plans the next recovery pass; does not execute it. Governing check: located ≠ read ≠ accepted ≠ proven. Historical Shadow only; does not amend staking or settle pointer-emission.
-

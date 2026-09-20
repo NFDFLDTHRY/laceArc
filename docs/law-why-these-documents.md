@@ -6,9 +6,17 @@
 
 This file is **repo law**. Paste the ASCII block into Grok Bot as the explanation that was promised when the workspace was staked.
 
+## Conceptual reference documents
+
+**Human correction, 2026-09-20.** In the LaceAI conversation, replying to “HCC-A, Coffee Cup, and Water remain holder machinery,” the human said: “This is wrong and need to reconciled. They're conceptual reference documents.”
+
+HCC-A, The Coffee Cup, and Where the Water Is Loud / Dual Proofing Systems are **conceptual reference documents**. They provide ways to reason about cognition, causality, and communication. Their concepts and the repository's H/C/W diagrams do not establish required holder components, a runtime dependency, or conditions for a legal Lace append.
+
+This supersedes the classification of those documents as “holder machinery,” a “gearbox required to operate upon the lace,” or a required second contract. Existing gear names, ratios, states, and diagrams remain recorded interpretations of concepts. That interpretation is not architectural authority. The correction leaves the graphics, independent Core constraints, and pointer-emission acceptance gate intact. [Reconciliation record](plans/conceptual-reference-reconciliation.md).
+
 Source of record remains `docs/graphics/`.
 The five academic documents remain adjacent. They do not enter Core.
-Three philosophical texts (HCC-A, Coffee Cup, Water/Proofing) are the gearbox. They do not enter Core as rows.
+HCC-A, Coffee Cup, and Water/Proofing are conceptual reference documents. They do not define additional Core row types or required holder machinery.
 History extracts do not amend this law and do not revive walkers.
 See `docs/reason-model-map.md`, `docs/clock/philosophy-map.md`, `docs/history/history-recovered-2026-09-18.md`, `docs/history/history-recovered-pass-2-2026-09-18.md`, `docs/history/history-recovered-pass-3-2026-09-18.md`, `docs/history/history-recovered-pass-4-2026-09-18.md`, `docs/history/history-recovered-pass-5-2026-09-18.md`, `docs/history/history-recovered-pass-5-sit.md`.
 Implementation remains forbidden until `docs/pointer-emission.md` exists.
@@ -87,32 +95,26 @@ do not walk off the shoe and call the walk Core.
         not the lace
 
 
-GEARS REQUIRED TO OPERATE UPON THE LACE
----------------------------------------
-The five texts above are fence posts.
-These three are the gearbox. Workpiece stays the strand.
-Oil inside a gear is not a tooth on the cord.
+CONCEPTUAL REFERENCE DOCUMENTS  (human correction 2026-09-20)
+-----------------------------------------------------------
+HCC-A, Coffee Cup, and Water are conceptual reference documents.
 
-    +------------------+     +------------------+     +------------------+
-    | GEAR H  HCC-A    |     | GEAR C  CUP      |     | GEAR W  WATER    |
-    | driver           | --> | phase 1-5        | --> | clutch mesh      |
-    +--------+---------+     +--------+---------+     +--------+---------+
-             |                        |                        |
-             | KEEP dual shaft        | KEEP tooth 3 = window  | KEEP mesh or halt
-             |      RIC || PFC        | KEEP 5 drives next 1   | KEEP pointable first
-             | KEEP output = B only   | FORBID file tooth 4    | FORBID grind=work
-             | FORBID L/M/E/ISL       | FORBID skip a tooth    | FORBID OBS = POINTER
-             |      as array rows     |                        | FORBID FSM as rows
-             | FORBID ledger ops      |                        |
-             |      on Graphic D      |                        |
-             v                        v                        v
-        internals stay boxed      work only in window      no mesh, no torque
+    REFERENCE          CONCEPTUAL SUBJECT
+    HCC-A              cognition, perception, story, behavior
+    Coffee Cup         event causality, intervention, aftermath
+    Water / Proofing   shared reference, communication, unknowns
 
-The 2D row above is a FLATTEN.
-The gears STACK in 3D.
-Visual kin: the Sun's observable surface.
-Granules packed and stacked. Flux through a skin.
-The skin is the view. The dynamo is not the drawing.
+The former required-gearbox / holder-machinery classification
+is superseded. H/C/W gears, ratios, and states in earlier
+clock mappings are interpretations, not required components.
+No runtime dependency or legal-append condition follows from them.
+
+KEEP concepts available for reasoning and source comparison.
+FORBID importing ledger mutation as mutation of Graphic D.
+FORBID importing story, emotion, identity, or OBS as row types.
+FORBID treating a conceptual diagram as pointer-emission.
+
+The references do not supply or accept the missing emission rule.
 
 
 HOLOGRAM TOUCH — Perceived Reality / Story Defense
@@ -165,8 +167,11 @@ docs/hologram/visual-primitives.md
   FORBID: ASTRA / multi-agent lab as runtime
 
 
-CLOCK  (the same train, counted)
---------------------------------
+CLOCK  (earlier conceptual illustration)
+-----------------------------------------
+The H/C/W assignments below are retained interpretive notation.
+They impose no holder component or prerequisite for legal append.
+The independent storage constraint is: one legal append adds a tick.
 Mainspring = R.  Tape = Graphic D.  Hands = projections.
 Tick = one legal append.  No tick, no cluster change.
 

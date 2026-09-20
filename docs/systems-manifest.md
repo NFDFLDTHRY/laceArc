@@ -485,17 +485,17 @@ That pass also rules out one candidate emission rule rather than leaving it open
 "every adjacent WORD pair emits a pointer" is contradicted by D1, where two of four
 adjacent pairs have no pointer between them.
 
-12. [GAP] Pointer emission remains unanswered. The holder gearbox documented under
+12. [GAP] Pointer emission remains unanswered. The conceptual-reference analysis under
     `docs/clock/hcc-a-systems-manifest.md` (HCC-A pipeline, packets, S0–S7) does
     **not** close questions 1–11 and is not a sixteenth piece.
 
 ---
 
-## Adjacent holder pipeline — do not import
+## Conceptual reference analysis — HCC-A
 
-HCC-A is Gear H: a data pipeline that compiles Reality into local story, force, self, and behavior. It is required to *operate upon* lace. It is not lace.
+HCC-A is a conceptual reference document describing a model of cognition, including perception, story, meaning, emotion, identity, and behavior. It is not required holder machinery. The same classification applies to The Coffee Cup and Where the Water Is Loud; see the [human correction of 2026-09-20](law-why-these-documents.md#conceptual-reference-documents).
 
-Nuances found while mapping that pipeline. Each is a **fence**, not a Core row.
+The table retains comparisons from the earlier pipeline interpretation. Its holder, housing, and oil terms describe that reading of the concepts; they establish no runtime components or legal-append prerequisites. Independent Core exclusions still apply.
 
 | Found | Hands reading |
 |---|---|

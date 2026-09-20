@@ -83,7 +83,7 @@ Shelves (defrag pass 1–4). Hands stay at `docs/` root. Do not treat a prompt, 
 | [docs/clipboards/agentscope-clipboard.md](docs/clipboards/agentscope-clipboard.md) | AgentScope taxonomy for the HOLDER. ReAG stays off Graphic D. Not Core. |
 | [docs/clock/gearing-code-1to1.md](docs/clock/gearing-code-1to1.md) | 47 visual keys ↔ planned Shadow units. Chip-only drift noted. Not Core. |
 | [docs/pointer-emission.md](docs/pointer-emission.md) | DRAFT. May be worked. Not accepted. Invented answers still a breach. |
-| [docs/clock/philosophy-map.md](docs/clock/philosophy-map.md) | HCC-A, Coffee Cup, Water as the clock-gearbox. Clusters by tick. Not Core rows. |
+| [docs/clock/philosophy-map.md](docs/clock/philosophy-map.md) | Readings of three conceptual references: HCC-A, Coffee Cup, Water. The required-gearbox interpretation is superseded by the [human correction](docs/law-why-these-documents.md#conceptual-reference-documents). |
 | [docs/hologram/](docs/hologram/) | Hologram touches (PR / Story Defense). Shadow. Not Graphic E. |
 
 There is no `src/` on purpose. Code that appears before the pointer-emission rule is locked will invent a second machine.
