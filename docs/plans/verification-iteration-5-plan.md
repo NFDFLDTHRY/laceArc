@@ -48,7 +48,27 @@ Its comment is honest about why — new files at `docs/` root matched nothing an
 
 `match_score` tests globs with bash `[[ "$path" == $pat ]]`, where `*` is **not** path-aware. `docs/*.md` therefore *matches* `docs/plans/verification-iterations.md` and every other markdown file at any depth. It loses only on **score** — 3005 against 5011 for `docs/plans/**`.
 
-**So the map's behaviour rests on the scoring arithmetic, not on what the pattern appears to say.** No misassignment is claimed here; pass 2 tests it adversarially, because a rule whose correctness depends on a number nobody has re-derived is the shape iteration 2 found four times.
+**So the map's behaviour rests on the scoring arithmetic, not on what the pattern appears to say.**
+
+### I(b) resolved — it is not a defect, it is a trap
+
+**Tested rather than deferred.** Ownership was computed for every tracked path twice — once under `coord.sh`'s current path-blind `*`, once under a path-aware `*` — and the two results diffed.
+
+**One file differs in the whole repository.**
+
+| | |
+|---|---|
+| `docs/gearing/claims/README.md` | now **`gearing-meta`** · path-aware **nothing** |
+
+**No file is wrongly owned today.** The hazard is the other way round: **one file is *rightly* owned only by accident.** `docs/gearing/*.md` reaches into `claims/` solely because bash's `*` crosses `/`, and the answer it lands on — gearing-meta — is the correct one.
+
+**So the obvious improvement is the dangerous move.** Making the glob path-aware is a correctness fix any reader would reach for, and it would leave that file matching nothing, which `path_to_station` answers by **failing closed and dying** — taking `which`, `claim`, `gate` and `doctor` with it for that path.
+
+**The cause is one missing rule.** `docs/gearing/` is **the only campaign directory in the tree with no `/**` rule** — every other station names its directory outright. Gearing-meta covers its own subdirectory by accident rather than by statement.
+
+**The repair is one pattern**, `docs/gearing/**`, after which the crossing behaviour stops being load-bearing anywhere. **It is `coord`'s and it is code**, so it goes to pass 5 with the rest — §5 forbids this campaign from editing `coord.sh`, and `CLAUDE.md` says ask.
+
+**Recorded as a finding and not inflated into one:** the map has a single accidental dependency, it currently produces the right answer, and the fix is a line. That is a smaller claim than §2's catch-all and it is stated at its actual size.
 
 ### II — the namespace register does not know about the campaign that just concluded
 
@@ -72,14 +92,14 @@ Iteration 4 found the same shape in navigation and called it a habit: *doors are
 
 **Falsifier:** if the 31 are genuinely maps' work — *"derivative maps of the manifest are maps work"*, as the rule's own comment claims — then the default is **correct**, the only defect is that it is implicit, and the repair is one line of documentation rather than two new stations. **Pass 2 decides that by reading them**, and iteration 3 is the standing warning: its eleven queued repairs were all correct as written.
 
-**Second falsifier:** if pass 2's adversarial test finds no path where the `*`-crossing behaviour misassigns a file, then I(b) is a hazard note and not a finding, and it should be recorded as such rather than inflated.
+**Second falsifier — fired, and the thesis took the loss.** It said that if no path is misassigned by the `*`-crossing behaviour, I(b) is a hazard note rather than a finding. **No path is misassigned.** I(b) is recorded at the size the evidence supports: one file, right answer, wrong reason, one-line fix.
 
 ## 4. The six passes
 
 | Pass | Station | Question |
 |---|---|---|
 | **1** | maps | What are the mappings and what state are they in? **This document. EXECUTED.** |
-| **2** | maps | **Read the 31.** Maps' work, or two campaigns without a rule? Plus: adversarially test whether `*` crossing `/` can misassign a path |
+| **2** | maps | **Read the 31.** Maps' work, or two campaigns without a rule? *(The `*`-crossing test moved into pass 1 and is answered in §I(b) — one file, no misassignment.)* |
 | **3** | maps | **The register against the two new vocabularies** — Φ, `Q0`–`Q5`, `slot I/II`, math-execution. What collides, what is merely unregistered |
 | **4** | maps + law | **Derivation.** State the order between the twelve map documents, or mark it `[GAP]` where nothing does |
 | **5** | — **human** | Whatever passes 2–4 refer up, plus the standing docket: `D10`, **`D11`**, `D12`, `D13`, the SPOKEN widening, the branch |
@@ -96,7 +116,7 @@ Iteration 4 found the same shape in navigation and called it a habit: *doors are
 
 ## 6. Accept iteration 5 when
 
-Each of the 31 files has a named owner arrived at by reading rather than by default; the `*`-crossing behaviour is tested and recorded as a finding or a non-finding; the register carries the two new vocabularies or says why not; the derivation order between the twelve map documents is written down or marked `[GAP]`; and the receipt says whether a mapping now exists that nobody has to remember to maintain.
+Each of the 31 files has a named owner arrived at by reading rather than by default; the `*`-crossing behaviour is tested and recorded as a finding or a non-finding; the register carries the two new vocabularies or says why not; the derivation order between the twelve map documents is written down or marked `[GAP]`; `docs/gearing/**` is ruled on; and the receipt says whether a mapping now exists that nobody has to remember to maintain.
 
 ## 7. Two probe failures in this pass, recorded
 

@@ -71,7 +71,7 @@
 | [verification-iter4-pass-5-findings.md](verification-iter4-pass-5-findings.md) | pass 5 record. Seven applied — advisories 45 to 11, orphans 35 to 2. Six still the human's |
 | [verification-iter4-pass-6-plan.md](verification-iter4-pass-6-plan.md) | `[PLAN]` iteration 4 pass 6: the receipt. Unreachable 97 to 39, and all 39 are one campaign's |
 | [verification-iteration-4-receipt.md](verification-iteration-4-receipt.md) | **iteration 4 CLOSED.** Unreachable 26% → 9%, advisories 45 → 11, sixteen corrections. Discharged as work, not as a property |
-| [verification-iteration-5-plan.md](verification-iteration-5-plan.md) | `[PROPOSAL]` iteration 5: **the global scope mappings.** Pass 1 executed — ownership has a catch-all and 31 files of two live campaigns live in it |
+| [verification-iteration-5-plan.md](verification-iteration-5-plan.md) | `[PROPOSAL]` iteration 5: **the global scope mappings.** Pass 1 executed — a catch-all owns 31 files of two live campaigns, and one file is rightly owned only because a glob crosses a slash |
 | [restructure-plan.md](restructure-plan.md) | `[PROPOSAL]` coherence of the whole tree: twelve measured findings, eight phases, one station per commit; supersedes the defrag plan as filing plan of record |
 
 Sub-shelves: [fixtures/](fixtures/README.md) sealed golden IR · [tools/](tools/README.md) host validator.
