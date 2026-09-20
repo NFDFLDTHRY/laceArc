@@ -156,6 +156,18 @@ Ten nodes. Every mechanism attaches to at least one; every node carries at least
 
 **Read the shape.** Nodes 1–7 are closed: the book states them at locators. **Node 9 is open on every row, and node 8 is open on its right edge** — the two nodes that would tell you whether the pipeline works are the two the shelf cannot close. Node 10 binds all of them and is itself the reason: a Tier 3 target with no builds and no tests.
 
+**`P5-O`:** this file holds **exactly one** canonical SOURCE MACHINERY overview — the spine above. **count = 1**, confirmed at pass 5. Core, Φ, Graphic D, the strand and the target seal remain off-board and refused.
+
+### Order proposal (Shadow) — shelf 10's order, as shelf hygiene *(short mirror)*
+
+**Full text:** [clipboard `P5-P`](rust-target-clipboard.md#p5-p--the-order-proposal-reading-a-source-you-may-not-commit). **Stamps:** `PROPOSAL` · **`NON-binding`** · `FORBID-as-Core` · `FORBID-as-Core-write` · `FORBID-as-Lace-store` · `SILENT-for-Lace-append` · emission `[GAP]`.
+
+Shelf 10 proposes an order for **reading a staked source you are not allowed to commit** — **stake → cut → gate → reach → draw → confirm** — and each rule in it is named after the pass that got it wrong first. It is **not** the siblings' *observe → name → diagram-check* order, and pass 5 declined to inherit one this shelf never earned.
+
+**`F2` fired, and the proposal is narrower for it.** *Stake*, *draw* and *confirm* are general. *Cut* is general as a rule and shelf-local as a mechanism. **`Gate` and `reach` cannot be run on a PDF shelf at all** — not through any fault of those shelves, but because [the tree forbids tracked PDFs](../law-why-these-documents.md), so a PDF source can never be carried into the repository the way lines can. **A text-sourced shelf can be made checkable in-repo; a PDF-sourced shelf cannot, and should say so rather than imply it.**
+
+**NON-binding** on `AGENTS.md`, the law, the manifest, the graphics, and every sibling shelf. Only the human rules.
+
 ---
 
 ## Wave A — eighteen panels, 1:1 with `M-R1`…`M-R18`
@@ -289,12 +301,12 @@ stamp under fence: KEEP-read-as-toolchain | FORBID-as-Core | SILENT-for-Lace-app
 
 | Field | Content |
 |---|---|
-| Mechanism cite | **`M-R4`** · 14815–14821 · 14876 |
+| Mechanism cite | **`M-R4`** · 14815–14821 · 14876 · **A4 (pass 5, `P5-F`):** `C7`'s second requirement — *"You must use both a nightly Cargo and a nightly rustc"*, 8759 |
 | Sighting | Pass 1 Page A/B only |
 | Lace stamp | `KEEP-read-as-toolchain` · `FORBID-as-Core` · `SILENT-for-Lace-append` |
 | PAGE cite | A · B · D (`B0`) |
 | False friend | **A4 §5:** reading *"very early stages of development"* (8763) as a reason to pin nothing — **the opposite: instability is why the receipt pins the nightly** |
-| Reach | **NONE** — 0 of 2 ranges carried. A session without the book cannot check either citation |
+| Reach | **NONE** — 0 of 2 **A1** ranges carried; a session without the rustc book cannot check either. **The A4 sentence added by `P5-F` is carried** ([A4 locators run 1](cargo-build-std-locators.md)), so the panel is no longer wholly unreachable — but **the reach class is measured on Page A's ranges and does not move**. A1 reach and A4 reach are different measures and are not summed |
 | Emission | `[GAP]` |
 | Implements | Page B — *touches* R1, `b1`; *settles* that nightly is inside the trust boundary **by necessity, not preference**, because `-Z` flags are nightly-only; *leaves open* R1 itself, which is **the human's** |
 

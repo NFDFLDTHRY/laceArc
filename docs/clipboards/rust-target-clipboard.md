@@ -2,6 +2,10 @@
 
 **Shelf 10 forge, 2026-09-20 — read this first.** Every quoted fragment on this page has been re-read against its own cited lines in the SHA-verified file: **44 of 44 stand byte-verbatim, 0 failures.** The [coverage map](#f2--the-coverage-map-what-is-reachable-in-repo-and-what-still-needs-the-book) says which claims a session without the book can check — **9 of 18 mechanisms fully, 11 of 14 pass-0 eyes, 49 of 79 cited ranges** — and what is left is **25 ranges, 150 lines**, listed in order. One citation on this page (`14926–14934`) fails the shelf's own first-line rule and is repaired by a carry, not by an edit. See [the forge section](#shelf-10-forge--the-traceability-gate-and-the-coverage-map). The pass bodies below are dated records and stand unedited.
 
+**Pass 5, 2026-09-20 — a flag for anyone reading Page B.** **Three of Page B's *Leaves open* cells are stale.** `M-R6`'s EH-disabled validation, `M-R12`'s scan carrier and (through Page D) `G9`'s binary flag bits are all recorded there as waiting on a spec-shelf sighting — **and [repository update pass 2](#repository-update-pass-2--target-evidence-carry) already carried it.** In each case the sighting **located** the carrier and left a *harder* question behind it: a negative name scan does not prove crate absence, *"no tag section, no try/throw"* is incomplete shorthand, and no module has ever been decoded. [Pass 4's `F4`](#pass-4--ascii-source-machinery--executed) has the three rows; the panels are drawn against the current obligations, not Page B's superseded ones. Page B is a dated record and stands unedited.
+
+**Pass 5 also re-measured pass 4 rather than quoting it** — five audits re-run, all matching; the eighteen reach ratios recomputed from Page A's own locators, all matching; a new cross-table check over 18 panels × 3 tables, 0 disagreements, with the check proved to have teeth first. The [Order Proposal](#p5-p--the-order-proposal-reading-a-source-you-may-not-commit) is `PROPOSAL` and **`NON-binding`**.
+
 **Current A4 availability, 2026-09-20 — later pass 4 source arrival:** the supplied Cargo Book is now **A4 AVAILABLE / BOUNDED SOURCE MAPPING COMPLETE**; read the [A4 Cargo source mapping](#repository-update-pass-4--a4-cargo-source-mapping) for the supported selection syntax and remaining lockfile, component-identity and artifact questions. This later arrival supersedes the earlier A4-absent/next status in the A1 and target-evidence banners below. Those banners, mapping bodies and absence receipts remain dated records. A4's arrival does not close every question assigned to it or authorize a build or ruling.
 
 **Current A1 availability, 2026-09-20 — repository update pass 4:** the newly supplied rustc text exactly matches this shelf's recorded A1 hash, byte count and line count. The [dated re-sighting](#repository-update-pass-4--a1-re-sighting) records the identity and targeted passages read. The earlier twelve-file/A1-absent statements remain dated records; A4 is still absent and next. No build, artifact check or ruling follows from restored source access.
@@ -457,3 +461,116 @@ One exception stands recorded rather than smoothed: `P-R13` closes what the book
 Node 9 is open on every row — `G1` `G2` `G3` `G8′` `G9` `G10`, all `NOT_RUN`. No `[GAP]` closed. No ruling taken. No build run. No new book line cut. No script, no `src/`.
 
 **`P4-R` receipt:** 18 panels, all eight fields, a stamp line under every fence; spine re-derived with 7 of 18 attachments corrected; cross-walk 18 rows with no blank cell; `P4-X` 18 PASS — three after fixes the matrix caught, one after `F3`, one with a recorded rule refinement; mechanical audits — emission word in fences **0 of 20**, off-board tokens off a refusal line **0**, `FM-Rust*` ids minted **0**; reach 9 `FULL` · 6 `PARTIAL` · 3 `NONE`, matching the forge's 49 of 79. Emission `[GAP]`. Shoe in hands, or no.
+
+---
+
+## Pass 5 — light accuracy steward + Shadow Order Proposal · EXECUTED
+
+**2026-09-20 · base `27b15a7` · station `clipboards` · plan [`rust-target-pass-5-plan.md`](rust-target-pass-5-plan.md).**
+Pass 0, pass 1, the forge and pass 4 above are dated records and are **not edited by this section.**
+
+### `P5-X` — light accuracy matrix · CONFIRM, re-measured
+
+**The plan forbade quoting pass 4's numbers.** All four audits were re-executed against the file as it now stands.
+
+| Audit | Pass 4 published | Pass 5 re-ran and got | |
+|---|---|---|---|
+| fenced blocks | 20 | **20** | ✅ |
+| emission word inside a fence | 0 | **0** | ✅ |
+| off-board tokens off a refusal line | 0 | **0** | ✅ |
+| panels · missing fields · stamp lines | 18 · 0 · 18 | **18 · 0 · 18** | ✅ |
+| reach tally | 9 `FULL` · 6 `PARTIAL` · 3 `NONE` | **9 · 6 · 3** | ✅ |
+
+**And one audit pass 4 did not run: the reach ratios themselves.** All eighteen were recomputed from **Page A's own locators** against the carried runs, rather than read back from pass 4's table. **18 of 18 match; 49 of 79 ranges carried.** Reach is now verified against its source, not against its own restatement.
+
+### `P5-X` — the new check: cross-table consistency
+
+Pass 4 wrote the same eighteen facts into three places — each panel's caption, the cross-walk row, and the `P4-X` row — and nobody checked the three agree.
+
+**Run over all eighteen panels, comparing spine nodes, hard stamp, reach class, reach ratio and emission: 0 disagreements.**
+
+**A zero is worth nothing unless the check could have found something, so it was tested.** Three mutations were injected into a scratch copy — a node changed in one cross-walk row, a stamp dropped from another, a reach ratio altered in a third — and **the check caught all three, one per field kind.** The zero on the real file is measured, not vacuous.
+
+### `P5-X` — the four OPENS pass 4 left
+
+| | Open | Verdict |
+|---|---|---|
+| **`O1`** | `F3`'s *"cut it"* — the drawing, or the mechanism? | **CARRIED to the human.** Pass 4 cut the drawing and kept `M-R18`; pass 5 does not decide what pass 4 flagged. Unchanged and still visible |
+| **`O2`** | Page B carries no flag that three of its *Leaves open* cells are stale | **FIXED** — `P5-F` 2. A banner line now names Page B at the top of this file, where a reader lands |
+| **`O3`** | `R-D2`'s refinement was made by the one case that forced it and never checked against the other seventeen | **RESOLVED.** Seven panels close what the book leaves open. **Exactly one — `P-R13` — draws something unrun, and it has the open edge; the other six draw nothing unrun and carry none.** The refinement is consistent across all eighteen |
+| **`O4`** | the A4 half has no panels | **CONFIRMED, with one correction** — `P5-F` 1 below |
+
+### `P5-F` — the two fixes the matrix required, and nothing else
+
+**1 · `P-R4` had a carried citation filed under the wrong panel.** `O4`'s confirmation surfaced it: `C7`'s second requirement — *"You must use both a nightly Cargo and a nightly rustc"* (8759) — is **`M-R4`'s subject**, nightly as a necessity, and pass 4 filed the whole of `C7` under `P-R3`. `P-R4` is the panel with `Reach: NONE`, and it had a **carried** sentence bearing on it that nobody had pointed at.
+
+The cross-citation is added. **The reach class does not move**, and the panel now says why: reach is measured on **Page A's** ranges, so A1 reach and A4 reach are different measures and **are not summed**. That distinction is new here and is the honest reading — `M-R4`'s own two citations remain unreachable.
+
+**2 · Page B gets a flag where a reader lands** — the banner at the top of this file. `F4` corrected three of Page B's *Leaves open* cells in pass 4 and left the correction 400 lines below the cells it corrects.
+
+**Nothing else was touched.** No panel was redrawn; no verdict reopened.
+
+### `P5-O` — overview singularity
+
+**count = 1.** [The machinery file](rust-target-ascii-machinery.md) holds exactly one canonical SOURCE MACHINERY overview. Core, Φ, Graphic D, the strand and the target seal remain off-board and refused; the mechanical audit confirms **0** off-board tokens outside a refusal line across all 20 fenced blocks.
+
+---
+
+### `P5-P` — the Order Proposal: reading a source you may not commit
+
+**Stamps:** `PROPOSAL` · **`NON-binding`** · `FORBID-as-Core` · `FORBID-as-Core-write` · `FORBID-as-Lace-store` · `SILENT-for-Lace-append` · emission `[GAP]`.
+
+**This shelf declined to inherit the siblings' order.** Every other pass 5 in this tree proposes *observe → name → diagram-check → stamp-check → list OPENs → decide*. **That is not what shelf 10 has been doing**, and adopting it would have been the fourth time this campaign nearly took a form it never earned.
+
+**What shelf 10 actually has is the only source in the tree that cannot be opened by anyone else.** The nine sibling shelves cite printed pages of PDFs; a human can find page 28. This shelf cites **line numbers into a file that is gitignored by law**. Every discipline here came out of that one difference — and every one of them was learned by getting it wrong first.
+
+| Stage | The rule it proposes | Earned by | Generalises? |
+|---|---|---|---|
+| **stake** | the source never enters git. It is named by SHA, its line and byte counts recorded, and held in `refs/local/` | pass 0 | **yes** — every shelf does this |
+| **cut** | *an extract carries the lines a claim **rests on**, not the lines it **refuses***; *a fragment may be carried when its first line names the thing it defines*; *a fidelity block records its own failures* | locator passes 2, 3, and **1 — which shipped 36 rows of carriage return and said in its own fidelity block that it had** | **as a rule, yes. As a mechanism, no** — you cannot cut lines out of a PDF page |
+| **gate** | every quote is re-read at **its own cited lines**, never against the source at large — a locator that points at the wrong sentence must be able to fail | the forge | **no** — see below |
+| **reach** | fail closed. A claim is checkable only when **every** range it cites is carried; a claim whose evidence nobody can reach says so on its face | the forge | **no** — see below |
+| **draw** | a panel draws a **decision or a duty, never a substance**; and **reach and openness must not share a notation** | pass 4 — `F3` cut a fence, `R-D2` caught three panels | **yes** |
+| **confirm** | re-run, never re-quote. A CONFIRM that re-reads its own receipt has measured nothing | this pass | **yes** |
+
+#### `F2` fired, and the proposal is narrower for it
+
+**Two of the six stages cannot be run on a PDF shelf, and the reason is the law, not the shelves.**
+
+`gate` and `reach` both presuppose that the source can be **carried into the repository**. [No PDF is tracked](../law-why-these-documents.md) — it is one of the four invariants `check-docs.sh` enforces. So a PDF shelf's quotes can never be re-read in-repo and its coverage can never be measured there. **That is a structural consequence of an invariant this project holds for good reason, not a defect of the nine shelves.**
+
+**The honest generalisation is therefore narrower and more useful than the one the plan set out to make:**
+
+> **A shelf whose staked source is text can be made checkable inside the repository. A shelf whose staked source is a PDF cannot, and should say so on its face rather than let a reader assume its locators have been verified by anyone but their author.**
+
+Shelf 10 is the tree's only text-sourced shelf. **That is why it is the only one with an extract, a gate and a coverage map — and the nine others are not behind, they are differently bound.**
+
+#### The binding test — `F3`, applied clause by clause
+
+| Clause | Would it bind anything? |
+|---|---|
+| *stake* | No — it restates what the law already requires. Proposes nothing new |
+| *cut*, *gate*, *reach*, *draw*, *confirm* | No — each describes how **this shelf** worked and offers it to a steward. None names a file outside `docs/clipboards/`, none amends a check, none adds a gate |
+| the narrower generalisation | **It came closest.** As first drafted it read *"a PDF shelf should carry a banner saying its locators are author-verified only"* — **a requirement on nine shelves this pass does not own. The clause was cut** and rewritten as an observation about what such a shelf *can* claim |
+| the whole proposal | `NON-binding` on `AGENTS.md`, `CONTRIBUTING.md`, the law station, the manifest, the graphics, `check-docs.sh`, and every sibling shelf. **If any of it should bind, that is a ruling and it is the human's** |
+
+**One clause cut. `F3` fired here as it did in pass 4** — and in both cases what fired was the drafting, caught before the commit.
+
+### `P5-R` — pass 5 execute receipt
+
+| | |
+|---|---|
+| **`P5-X` re-runs** | 5 of 5 audits re-executed, **all match pass 4** — `F4` did not fire |
+| **`P5-X` new check** | cross-table consistency over 18 panels × 3 tables × 5 fields: **0 disagreements**, and the check was **proved to have teeth** by 3 injected mutations, 3 caught |
+| **`P5-X` external check** | 18 of 18 reach ratios recomputed from Page A's own locators: **all match; 49 of 79** |
+| **OPENS** | `O1` carried to the human · `O2` fixed · `O3` resolved across all eighteen · `O4` confirmed with one correction |
+| **`P5-F`** | **2 fixes, nothing else** — `P-R4`'s misfiled carried citation; Page B's missing flag |
+| **`P5-O`** | overview **count = 1** |
+| **`P5-P`** | written; **not** the siblings' order; six stages, each named after the pass that got it wrong first |
+| **`F1`** cross-table inconsistency | **did not fire** — 0 of 270 comparisons |
+| **`F2`** a stage that is shelf-local | **FIRED.** `gate` and `reach` cannot run on a PDF shelf, because no PDF may be tracked. The generality was dropped and replaced with a narrower claim |
+| **`F3`** a clause that binds | **FIRED, once.** A clause requiring a banner on nine other shelves was cut before the commit |
+| **`F4`** a re-run disagreeing with a published number | **did not fire** |
+| **Moved** | **nothing.** No `[GAP]` closed, no ruling taken, no build run, no new book line cut, no panel redrawn, no script or `src/` |
+
+**Emission `[GAP]`. Shoe in hands, or no.**
