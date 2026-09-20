@@ -1,6 +1,6 @@
 # Mathematical execution model - ROOT / TOUCH / FOLD campaign - Pass 2 PLAN
 
-**Status:** PLAN - NOT EXECUTED. **Station:** maps (Astra-math).
+**Status:** **EXECUTED** 2026-09-20 -> [findings](math-execution-root-touch-fold-pass-2-findings.md). **Station:** maps (Astra-math).
 **Pinned main before claim:** ea8a4a8d653b6ab953d6494cd1368fb078f9904e.
 **Claim commit:** 74f7626ecacb074a8dde311ace512357a95e4eda.
 **Depends on:** Pass 1 findings, 20/20 delta dispositions.
@@ -436,10 +436,24 @@ That exact residual is the handoff to Pass 3.
 | Expected | Q1-GROUND becomes the dominant remaining pointer-emission calculation |
 | Expected | Q2 stays CONFLICT globally even if root-touch is binary |
 | Expected | D1 Reach(0010)=all eleven rows remains a bounded theorem |
-| Actual | NOT TESTED |
+| Actual | A1-A9 **9 PASS**; D1 POINTER roles 6/6 bounded classified; Q0-LAND and seen-word Q1-TOUCH closed in the mathematical model; Q1-GROUND remains the residual calculation; post-seed unseen value remains OPEN |
 | Full pointer-emission acceptance | ABSENT; law file untouched |
 
 ---
+
+## 12a. Execution receipt
+
+- Model update: commit 73d1b6c4ae829293b35a36390744d7de7991e60c.
+- Findings: [math-execution-root-touch-fold-pass-2-findings.md](math-execution-root-touch-fold-pass-2-findings.md), commit 127a52b02efe8592216958ba9a49606687e79de3.
+- A1-A9: **9 PASS**.
+- D1 POINTER role classification: **6/6 bounded**.
+- Q0-LAND: **closed in model by H3**.
+- seen-word Q1-TOUCH: **closed in model by H1**.
+- Q1-GROUND: **OPEN calculation**.
+- Q2 CONFLICT, G1 OPEN, post-seed unseen value OPEN.
+- Law / manifest / graphics / global ASCII / environment / reduction model: **0 edits**.
+- src/: **0**.
+- Pass 3 is not automatically opened.
 
 ## 13. Stop condition
 
