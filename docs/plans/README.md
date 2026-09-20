@@ -4,6 +4,8 @@ Plans, proposals, executed pass records, and dated receipts share this shelf. Ea
 
 | File | Job |
 |---|---|
+| [math-execution-root-touch-fold-pass-2-findings.md](math-execution-root-touch-fold-pass-2-findings.md) | **EXECUTED** ROOT / TOUCH / FOLD Pass 2. A1-A9 9 PASS; D1 roles 6/6 bounded; LAND + seen-root TOUCH formalized; GROUND is residual blocker |
+| [math-execution-root-touch-fold-pass-2-plan.md](math-execution-root-touch-fold-pass-2-plan.md) | **EXECUTED** Pass 2 plan/receipt. Q0-LAND and seen-word Q1-TOUCH closed in model; Q1-GROUND open; Pass 3 not automatically opened |
 | [math-execution-root-touch-fold-pass-1-findings.md](math-execution-root-touch-fold-pass-1-findings.md) | **EXECUTED** ROOT / TOUCH / FOLD Pass 1. H1 reconciled with repeated WORD + root touch; D1 `0010` reaches 11/11 rows; unrestricted base theorem still open; no model/law/global-ASCII edit |
 | [math-execution-root-touch-fold-pass-1-plan.md](math-execution-root-touch-fold-pass-1-plan.md) | **EXECUTED** Pass 1 plan/receipt. D01–D20 20/20 disposed; left-fold hypothesis not established; Pass 2 not automatically opened |
 | [seed-dictionary-map-pass-6-soundness.md](seed-dictionary-map-pass-6-soundness.md) | **EXECUTED** seed-dictionary pass 6. 8 PASS. Campaign **CLOSED 6/6**. Φ `[GAP]` |
