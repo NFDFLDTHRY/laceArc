@@ -1,7 +1,7 @@
-STATUS: FREE
+STATUS: HELD
 STATION: maps
 OWNS: docs/reason-model-map.md docs/rust-nostd-*.md docs/atomic-primitives-map.md docs/clock/gearing-code-1to1.md docs/coherence-audit*.md docs/clock/system-mathematical-model.md docs/defrag-plan.md docs/plans/** docs/namespace-register.md docs/*.md (catch-all: any unmatched file at the docs/ root)
-AGENT: -
-BASE: -
-SINCE: -
-NOTE: Astra-math ROOT / TOUCH / FOLD Pass 2 EXECUTED. Model 73d1b6c4ae829293b35a36390744d7de7991e60c; findings 127a52b02efe8592216958ba9a49606687e79de3; plan closed 2fcc9154d7a376b6566c217c3ca8c545086e85a2; model findings link bb2abe2cfc40f5bfbad863756ea58c3f25ce4272; indexed 7c2fc14361277077a509ce1673f045e14b424f97. A1-A9 9 PASS; LAND + seen-root TOUCH formalized; GROUND grouping/cadence/base remains residual. Law/manifest/graphics/global ASCII unchanged. No blanket pointer-emission acceptance. coord.sh NOT_RUN.
+AGENT: Astra-math
+BASE: e67b170c55605d120d5da7a816e84f2dd4e90bb5
+SINCE: 2026-09-20T23:52:00Z
+NOTE: User-directed ROOT / TOUCH / FOLD Pass 3 planning. New rulings: unseen word becomes root on arrival; GROUND makes arbitrary Lace portions addressable as one point; each grounded sample/scale occupies Lace; this underlies dot-to-dot N-D representation. Plan only; exact sample/arity semantics to be tested. No blanket pointer-emission acceptance; no src/. Connector claim; coord.sh NOT_RUN.
