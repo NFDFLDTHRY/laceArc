@@ -4,7 +4,8 @@ Plans, proposals, executed pass records, and dated receipts share this shelf. Ea
 
 | File | Job |
 |---|---|
-| [model-behavior-map-pass-1-plan.md](model-behavior-map-pass-1-plan.md) | **`PLAN`** — model behaviors × equations pass 1. Forced / free / refused traces. Does not fill H-PTR. Φ `[GAP]` |
+| [model-behavior-map-pass-1.md](model-behavior-map-pass-1.md) | **EXECUTED** model-behavior pass 1. 11 classes. B-When free. Φ `[GAP]` |
+| [model-behavior-map-pass-1-plan.md](model-behavior-map-pass-1-plan.md) | **`EXECUTED`** — pass 1 behavior register. Φ `[GAP]` |
 | [tech-ref-eq-map-pass-6-agentscope.md](tech-ref-eq-map-pass-6-agentscope.md) | **EXECUTED** technician-refs pass 6. A1–A5 + STOP. Campaign **CLOSED 6/6**. Φ `[GAP]` |
 | [tech-ref-eq-map-pass-6-plan.md](tech-ref-eq-map-pass-6-plan.md) | **`EXECUTED`** — pass 6 of 6 **CLOSED**. ReAG ≠ POINTER. Φ `[GAP]` |
 | [tech-ref-eq-map-pass-5-petersen.md](tech-ref-eq-map-pass-5-petersen.md) | **EXECUTED** technician-refs pass 5. P1–P7 stamped. Kernel ≠ strand. Φ `[GAP]` |

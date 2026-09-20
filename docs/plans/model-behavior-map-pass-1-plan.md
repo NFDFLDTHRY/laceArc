@@ -1,6 +1,6 @@
 # Model behaviors × equations — Pass 1 of 6 PLAN
 
-**Status:** **`PLAN`** · not executed. **Station:** maps (HELD `Grok-maps` · BASE `9d31a04`).
+**Status:** **`EXECUTED`** 2026-09-20 · [`model-behavior-map-pass-1.md`](model-behavior-map-pass-1.md). **Station:** maps (`Grok-maps`).
 **Parents:** sealed [`../math-execution-model.md`](../math-execution-model.md) · systems-eq-map CLOSED 6/6 · tech-ref-eq-map CLOSED 6/6.
 **Emission:** `[GAP]`. No `src/`. Does not accept `pointer-emission.md`.
 
