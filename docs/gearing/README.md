@@ -2,6 +2,8 @@
 
 Additive `window.LACE_CONTRACTS` scripts loaded by [`../shadow-clock-gearing.html`](../shadow-clock-gearing.html) via relative `<script src>` (no `fetch`, no CDN).
 
+**Interpretation status, 2026-09-20:** these scripts are display data for the earlier H/C/W clock interpretation. HCC-A, Coffee Cup, and Water are conceptual reference documents under the [human correction](../law-why-these-documents.md#conceptual-reference-documents). Gear names in the viewer do not establish required holder machinery, runtime dependencies, or legal-append conditions. This correction changes documentation, not the existing renderer or its data.
+
 | File | Role |
 |---|---|
 | [`contracts-axle.js`](contracts-axle.js) | Shared axle / Reality deadbolt |
