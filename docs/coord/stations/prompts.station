@@ -1,7 +1,7 @@
-STATUS: FREE
+STATUS: HELD
 STATION: prompts
 OWNS: docs/prompts/**
-AGENT: -
-BASE: -
-SINCE: -
+AGENT: Claude-Fable-reduction
+BASE: e2e8155942b6ef084d2ef9f4a05fcf8fb1dd829f
+SINCE: 2026-09-20T05:22:03Z
 NOTE: Cleared 2026-09-19 by Claude-Projection on the human's instruction. Held by Codex-atomic-pass2 from 2026-09-18T20:48:47Z at BASE fa15cb5e1d89 with one commit — the claim itself (1a0dc7b). coord.sh carries no expiry rule, so this was a manual clear, not a protocol action. Codex-atomic-pass2 may re-claim; its plan (docs/plans/atomic-construction-pass-1-plan.md) is untouched and still NOT_RUN.

@@ -98,6 +98,7 @@ Layer III steward prompt. Not Hands. Not law. Not Core. Emission remains `[GAP]`
 8. **Station.** `which → claim → edit only what you own → gate → commit → release`. One station per commit. Findings go into a maps-owned record, never into another campaign's file, never into `pointer-emission.md`.
 9. **Return** the adjudication form ([template §3](../kit/agent-task-template.md)): claim and revision assessed · facts with evidence and scope · refutations with counterexamples · open obligations · files changed vs authorization · complete / needs work / blocked at a named boundary · one next narrow question.
 10. **Say** whether propose / attack / resolve were one agent or separate. One agent is allowed and must be declared.
+11. **Sign** the commit with an actor trailer and hold only the station your role names — [`docs/kit/roles.md`](../kit/roles.md). To start a campaign, use [the generator](six-pass-proposal-generator.md).
 
 ## What ends the task
 
