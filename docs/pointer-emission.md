@@ -33,6 +33,60 @@ Do not silence the graphics with a default. Do not treat this draft as Core code
 - This campaign (prefix-device passes 1–7): dictionary as seed on L; punch-card pays pointers into that seed; original sentence object is not kept; word-to-the-machine is the defining pointer cluster.
 - Partial algebra: [`math-execution-model.md`](math-execution-model.md).
 
+## What has already been written toward these questions
+
+**This section links. It answers nothing.** No Answer, Stamp or Acceptance line
+below was touched to add it. Added 20 September 2026 under a live `law` claim,
+because this file carried **two** outbound links while **thirty** documents in
+this tree addressed its questions — so the work looked undone from inside the
+file that poses it.
+
+**Three kinds of entry, and the difference matters.** A document that *bears on*
+an answer is not a document that *records a silence*, and neither is a document
+that *rules a candidate out* — though [the editing rules](#how-this-file-may-be-edited)
+count that last kind as `CLOSED`-eligible: *"including a ruled-out candidate."*
+
+### Bears on an answer
+
+| Document | Bears on |
+|---|---|
+| [`math-execution-model-pass-6-arrival.md`](math-execution-model-pass-6-arrival.md) | **Q0** — Arrival under Contract II. *"Arrival feeds the strand. It does not keep a second book, and it does not decide participation"* — a constraint on **Q1** as well |
+| [`math-execution-model.md`](math-execution-model.md) | **Q1**, and the partial algebra the Φ definition above rests on |
+| [`math-execution-model-pass-3-witness.md`](math-execution-model-pass-3-witness.md) | a `D1` witness transcript under the partial algebra |
+| [`math-execution-model-pass-4-adversarial.md`](math-execution-model-pass-4-adversarial.md) | non-examples — what the algebra refuses |
+| [`math-execution-model-pass-5-projections.md`](math-execution-model-pass-5-projections.md) | projection readings, Graphics A–C |
+| [`plans/math-execution-problem-map-pass-1.md`](plans/math-execution-problem-map-pass-1.md) | the problem map behind that series |
+| [`graphics/prefix-device-pass-1.md`](graphics/prefix-device-pass-1.md) · [`2`](graphics/prefix-device-pass-2.md) · [`3`](graphics/prefix-device-pass-3.md) · [`4`](graphics/prefix-device-pass-4.md) · [`5`](graphics/prefix-device-pass-5.md) · [`6`](graphics/prefix-device-pass-6.md) | **the campaign named in `Authority` above.** Pass 7 was linked; passes 1–6, which produced the content, were not. Pass 2 holds the two collision sheets; pass 3 opened entry admission as **Q0**; pass 5 stated Φ-morphism |
+| [`plans/lace-context-iter6-pass-4-environment.md`](plans/lace-context-iter6-pass-4-environment.md) | **Q0** — the fences an implementation would have to sit inside |
+| [`plans/lace-context-iter6-pass-5-crate-proposal.md`](plans/lace-context-iter6-pass-5-crate-proposal.md) | the shape a Core would take **after** acceptance. Its own first line: *"No `src/`. No `Cargo.toml`. No type. No emit stub"* |
+| [`plans/lace-context-iter6-pass-1-findings.md`](plans/lace-context-iter6-pass-1-findings.md) · [`iter7-pass-2`](plans/lace-context-iter7-pass-2-compute-and-inventory.md) | inventory and compute readings the crate proposal cites |
+| [`plans/reduction-pass-2-execution-model.md`](plans/reduction-pass-2-execution-model.md) · [`rulings brief`](plans/reduction-pass-5-rulings-brief.md) | the reduction series' execution model and its open rulings |
+| [`graphics/graphic-a-ascii.md`](graphics/graphic-a-ascii.md) · [`b`](graphics/graphic-b-ascii.md) · [`c`](graphics/graphic-c-ascii.md) | **text transcriptions of three of the four graphics** — the only route to the source for a reader whose tools cannot open a PNG. **Graphic D has no ASCII file**, and D is where every one of these questions is decided |
+
+### Rules a candidate out — `CLOSED`-eligible under the rules above
+
+| Document | Rules out |
+|---|---|
+| [`reason-model-map.md`](reason-model-map.md) | **Q5** — interning a later pass. *"Collapse curls = intern a pass. That is the collapse Graphic B forbids"*, and *"Failure: intern 'one node named PIE'"* |
+| [`clock/shadow-clock-gear-contracts.md`](clock/shadow-clock-gear-contracts.md) | **Q5** — the Shadow gearing's account of repeated passage |
+
+### Records a silence — a source read and found to say nothing
+
+**These do not answer. They are evidence that a stake was checked.**
+
+| Document | Records |
+|---|---|
+| [`clipboards/petersen-zech-clipboard.md`](clipboards/petersen-zech-clipboard.md) | *"EMISSION SETTLED? **NO / `[GAP]`**. Nonuniqueness supplies no timing, targets, arity, or adjacency rule."* |
+| [`clipboards/agentscope-clipboard.md`](clipboards/agentscope-clipboard.md) | **SILENT** on Φ; its loop is explicitly FORBIDden as a Φ scheduler |
+
+### What this does not do
+
+**It does not close a single question.** Every `Answer` and `Stamp` above stands
+exactly as pass 7 left it. Whether any of these documents closes a `[GAP]` is a
+reading someone must make against the panel and record here under a live claim —
+and a campaign may not write its own reasoning onto an Answer line.
+
+
 ## Φ — partial definition
 
 **Status:** morphism stated. Schedule SPOKEN on Q1. Not accepted.
