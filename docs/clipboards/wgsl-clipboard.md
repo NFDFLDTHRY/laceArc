@@ -1,5 +1,7 @@
 # CLIPBOARD — laceArc ← WGSL W3C CRD 2026-09-15 (SHADER-LANG)
 
+**Current discard locators, 2026-09-20 — repository update pass 4:** the [dated source qualification](#repository-update-pass-4--discard-rule-and-example) distinguishes the PDF **158** rule from the PDF **159** worked example. It qualifies PAGE E's approximate159 pin and the per-page summary; their historical bodies and campaign receipts remain intact. WGSL Pass 6 remains `HELD` / `NOT_EXECUTED`.
+
 **[III] Shadow / read-only shader-language projection. Hands win. POINTER emission = `[GAP]`.**  
 **SPECIAL:** This is **SHADER LANGUAGE** admission — Shadow projection / hologram draw surfaces. Companion to WebGPU HOST/GPU API. **NOT** Core. **NOT** Lace store. **NOT** POINTER emission / Φ. **NOT** wasm64 compile-target. **NOT** WebGPU Device/Queue host API.
 
@@ -575,3 +577,14 @@ Mirror (short): under SOURCE MACHINERY overview in [`wgsl-ascii-machinery.md`](w
 | PDF staged | **No** |
 | Push | **No** (ask before push) |
 | `src/` | absent |
+
+## Repository update pass 4 — discard rule and example
+
+**2026-09-20; base `335429cc0352c2e93c8009c6db57dd977ec783bb`.** The reference reviewer visually inspected one-based PDF pages **158–159** during pass 4 planning. Source: supplied `11-WebGPU-Shading-Language.pdf`, W3C CRD 2026-09-15, SHA-256 `73dc9e35047d8715a88ae3b1082b2e887c750da9f5c0f97d78410fc6c2f5eb6d`.
+
+| Source page | Observed scope | Current carry |
+|---|---|---|
+| **158**, §9.4.11 | Fragment-stage `discard` converts the invocation to a helper invocation, prevents downstream fragment output, and leaves only preceding statements with observable effects | M-S5's rule locus/algorithm citation and P-S5's citation/diagram use **158** |
+| **159** | Worked discard example, including the suppressed shared-memory writes of a helper invocation | Keep M-S5's worked-example and FM-Wgsl5's example locators at **159** |
+
+PAGE E and the per-page E summary retain their historical approximate159 pointers; this dated qualification distinguishes the rule from the example. M-S5's original158–160 sighting-method row, earlier receipts and their verdicts are preserved. This is a locator correction: the existing helper-invocation/effect description was not shown wrong, and `discard` is not reinterpreted as immediate function termination. WGSL Pass 6 remains `HELD` / `NOT_EXECUTED`; no shader execution, API implementation, browser/device observation or emission acceptance follows. The source PDF remains unchanged and outside Git.

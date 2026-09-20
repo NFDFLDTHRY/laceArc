@@ -1,5 +1,7 @@
 # CLIPBOARD — laceArc ← WebGPU W3C CRD 2026-09-15 (HOST/GPU API)
 
+**Current texture locator, 2026-09-20 — repository update pass 4:** GPUTexture IDL is on PDF **66**, matching M-G4/P-G4. The [dated texture qualification](#repository-update-pass-4--texture-source-locator) records the new visual sighting and qualifies the old approximate222 fragment. The submit IDL218/prose222 correction below is unchanged.
+
 **Current source correction, 2026-09-20:** the [repository update pass 3 addendum](#repository-update-pass-3--submit-source-locators) distinguishes GPUQueue IDL PDF **218** from submit scheduling/nonreuse prose PDF **222**. It qualifies the historical FM-Wgpu3/D7 mispins without rewriting their bodies or sighting receipts. PAGE F already records the correct distinction; WebGPU Pass 6 remains `HELD` / `NOT_EXECUTED`.
 
 **[III] Shadow / read-only host-API projection. Hands win. POINTER emission = `[GAP]`.**  
@@ -72,7 +74,7 @@
 | A | Identity / Intro / Fundamentals | **KEEP-read-as-host-API** | PDF 1; TOC 2–6; §1 PDF 7; §3 PDF 13; timelines PDF 19 |
 | B | Security & Privacy (Ch.2) | KEEP-read-as-host-API; **FORBID-as-Core-write** (not Lace law) | §2 PDF 7–8; §2.1.1 PDF 8; Privacy §2.2 PDF 11 |
 | C | Adapter / Device / Queue | KEEP-read-as-host-API; **FORBID-as-Lace-strand** | §4 PDF 41; Adapter PDF ~46–47; Device PDF 50; Queue PDF 218 |
-| D | Buffer / Texture / Binding | KEEP-read-as-host-API; **FORBID-as-Lace-store** | Buffer PDF 53; Bind Group PDF 100; Texture IDL ~PDF 222 fragment |
+| D | Buffer / Texture / Binding | KEEP-read-as-host-API; **FORBID-as-Lace-store** | Buffer PDF 53; Bind Group PDF 100; GPUTexture IDL PDF 66 (current locator; see pass 4 qualification) |
 | E | Pipelines + WGSL boundary | KEEP-read-as-host-API; FORBID WGSL as Lace WORD | §9 PDF 108–110; override ex. PDF 120 |
 | F | Commands / Encoders / Passes | KEEP-read-as-host-API; **FORBID-as-emission-rule** | CmdBuf PDF 160; Dispatch PDF 185–186; draw PDF 200; `submit` PDF 218/222 |
 | G | Canvas / presentation | KEEP-read-as-host-API; **PROPOSAL-only** Lace↔canvas | §21 PDF 228; configure PDF 230; `GPUCanvasConfiguration` PDF 235 |
@@ -138,7 +140,7 @@
 
 | Field | Content |
 |---|---|
-| PDF pin | §5 GPUBuffer PDF **53**; §8.2.1 Bind Group Creation PDF **100**; bind-group example PDF **108**; GPUTexture IDL (text-layer near PDF **222**) |
+| PDF pin | §5 GPUBuffer PDF **53**; §8.2.1 Bind Group Creation PDF **100**; bind-group example PDF **108**; GPUTexture IDL PDF **66** (current locator; see pass 4 qualification) |
 | Eye | “A GPUBuffer represents a block of memory that can be used in GPU operations. Data is stored in linear layout…” · `createBindGroup()` / layout entries · textures as GPU-backed image resources |
 | Stamps | **KEEP-read-as-host-API** GPU resources; **FORBID-as-Lace-store** (**GPUBuffer ≠ Lace strand**; texture/bind-group ≠ second store / Graphic D) |
 | Steward refuse | “GPUBuffer is the Lace strand” / “WebGPU texture/bind-group is a second Lace store” → **FORBID-as-Lace-store** |
@@ -581,3 +583,9 @@ Mirror (short): under SOURCE MACHINERY overview in [`webgpu-ascii-machinery.md`]
 **Historical mispins qualified:** FM-Wgpu3 and D7 step 5 above attach the submit scheduling quotation to PDF **218**. The quotation belongs to PDF **222**, as PAGE F already records. Their original bodies and sighting receipts are preserved. M-G8's earlier `Sighting method` row and P-G8's earlier sighting references likewise remain historical; the dated qualification supplies the new evidence.
 
 **Scope and remaining states:** this repairs source locators only. It does not change an API algorithm, take an emission ruling, or establish runtime behavior. WebGPU and WGSL Pass 6 remain dated `HELD` / `NOT_EXECUTED`; no new whole-campaign verdict is claimed. No browser, GPU, device or built-artifact evidence was produced by these source sightings. Other source locators, including PAGE D, were outside this correction. The supplied PDF was neither changed nor added to Git.
+
+## Repository update pass 4 — texture source locator
+
+**2026-09-20; base `335429cc0352c2e93c8009c6db57dd977ec783bb`.** The reference reviewer visually inspected one-based PDF page **66** during pass 4 planning. Source: supplied `10-WebGPU.pdf`, W3C CRD 2026-09-15, SHA-256 `6bc31a9e21074a039a5c854f1bfc33bdbf282cd8b48e22a4977ca406ca64afe1`. The page contains the GPUTexture IDL with `createView`, `destroy` and immutable attributes; existing M-G4/P-G4 already cite it correctly.
+
+The current per-page D summary and PAGE D pin now use **66** for that IDL. Their former approximate222 pointers and FM-Wgpu4's retained “Pass 1 cite” fragment are qualified by this new sighting, not retroactively attributed to the earlier pass. Historical receipt fields and FM-Wgpu4's body remain intact. The pass 3 submit IDL218/prose222 correction remains unchanged; no other API locator or algorithm was reviewed through this one-page check. WebGPU Pass 6 remains `HELD` / `NOT_EXECUTED`. No browser, device or artifact result is claimed; the source PDF remains unchanged and outside Git.

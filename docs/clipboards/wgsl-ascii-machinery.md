@@ -1,5 +1,7 @@
 # WGSL CRD 2026-09-15 — ASCII SOURCE MACHINERY (SHADER-LANG · Wave A P-S1…P-S9 · P4-X)
 
+**Current discard locators, 2026-09-20 — repository update pass 4:** P-S5 now cites PDF **158** for the §9.4.11 rule; the worked example remains PDF **159**, as recorded in the [dated source qualification](wgsl-clipboard.md#repository-update-pass-4--discard-rule-and-example). Earlier sighting references and campaign receipts remain historical; the helper-invocation/effect scope is unchanged.
+
 **Status:** Pass 4 **EXECUTED** · Pass 5 **EXECUTED** (Shadow Order Proposal + light P5-X CONFIRM) · Wave A panels **P-S1…P-S9** 1:1 with **M-S1…M-S9** · P4-X/P5-X all **PASS**. Emission `[GAP]`.  
 **Source:** *WebGPU Shading Language* (WGSL) — **W3C Candidate Recommendation Draft, 15 September 2026**. Editors: Alan Baker, Mehmet Oguz Derin, David Neto (et al.).  
 **PDF:** `refs/local/wgsl-w3c-crd-20260915.pdf` → attachment `73dc9e35047d8715a88ae3b1082b2e887c750da9f5c0f97d78410fc6c2f5eb6d` (**381** pp., text layer; **never git-add**). SHA-256 `73dc9e35047d8715a88ae3b1082b2e887c750da9f5c0f97d78410fc6c2f5eb6d`. PDF one-based primary.  
@@ -299,7 +301,7 @@ stamp under fence: KEEP-read-as-shader-lang | FORBID-as-Lace-WORD | FM-Wgsl4
 
 | Field | Content |
 |---|---|
-| Mechanism cite | **M-S5** · §9 Statements PDF **140** · Control Flow §9.4 PDF **149** · Discard §9.4.11 PDF **159** · `const_assert` §10 PDF **166** |
+| Mechanism cite | **M-S5** · §9 Statements PDF **140** · Control Flow §9.4 PDF **149** · Discard §9.4.11 rule PDF **158**, worked example **159** · `const_assert` §10 PDF **166** |
 | Sighting | Pass 1 PAGE E · Pass 3 M-S5 · plan Pass 4 |
 | Lace stamp | **KEEP-read-as-shader-lang** · **SILENT-for-Lace-append** · **FORBID-as-emission-rule** |
 | PAGE cite | **E** |
@@ -318,7 +320,7 @@ stamp under fence: KEEP-read-as-shader-lang | FORBID-as-Lace-WORD | FM-Wgsl4
            +--> discard (fragment only)
            |    convert to helper invocation
            |    throw away fragment output
-           |    (§9.4.11 PDF 159)
+           |    (§9.4.11 PDF 158)
            |
            +--> const_assert
                 (creation-time)    (§10 PDF 166)

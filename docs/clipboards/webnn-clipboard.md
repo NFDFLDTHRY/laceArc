@@ -1,5 +1,7 @@
 # CLIPBOARD — laceArc ← WebNN W3C CRD 2026-09-10 (HOST-NN inference API)
 
+**Current issue scope, 2026-09-20 — repository update pass 4:** the [dated source qualification](#repository-update-pass-4--dispatch-issue-scope) narrows Issues5/7 to execution-error reporting and preserves the separate dispatch/readback completion distinction. Historical D7/P5/P6 OPEN wording remains as recorded, qualified by this note; no API algorithm or campaign verdict changes.
+
 **[III] Shadow / read-only host-NN projection. Hands win. POINTER emission = `[GAP]`.**  
 **SPECIAL:** This is **HOST-NN inference Web API** admission — Shadow projection / hologram / host-embed surfaces. **NOT** Core. **NOT** Lace store. **NOT** POINTER emission / Φ. **NOT** WebGPU Device/Queue. **NOT** WGSL. **NOT** the wasm64 compile-target shelf.
 
@@ -718,3 +720,15 @@ Exactly **one** `## SOURCE MACHINERY overview` fence in `webnn-ascii-machinery.m
 **Overall verdict: DIAGRAM SOUND WITH OPENS** — SOURCE MACHINERY + P-N1…P-N9 coherent, non-leaking, reverse-walk accurate, stamp-correct, steward-refusable under Hands as **HOST-NN Shadow**. Prior book OPENS remain non-blocking (no representation conflict). Order Proposal still Shadow / NON-binding. Emission `[GAP]`. No Wave B.
 
 **Steward test:** Shoe in hands — refuse install-as-Core, MLGraph=strand, MLContext=Graphic D, MLTensor=store, dispatch=Φ, operators=WORD, WebNN=WebGPU/WGSL/wasm64, builder=Core ctor, exportToGPU=accept GAP, validation=cut, proposal-rewrites-clock/hologram/companions — using P6-A + P6-P + P6-X alone.
+
+## Repository update pass 4 — dispatch issue scope
+
+**2026-09-20; base `335429cc0352c2e93c8009c6db57dd977ec783bb`.** The reference reviewer visually inspected one-based PDF pages **22, 32 and 33** during pass 4 planning. Source: supplied `12-Web-Neural-Network-API.pdf`, W3C CRD 2026-09-10, SHA-256 `e11532183ed50d11e91c70881c59b805346b6607d41e82e7d52aca520df53fdc`. A full-text search located Issue5; it was not a full-document reread.
+
+| Source page | Observed scope | Current carry |
+|---|---|---|
+| **22**, Issue5 | Proposed mechanism for reporting errors during `dispatch()`; issue778 | Execution-error reporting remains a source open |
+| **32**, §8.3.1 NOTE | Dispatch itself supplies no completion signal; callers can await results from reading output tensors | Keep direct dispatch return and later readback observation distinct |
+| **33**, Issue7 | Proposed mechanism for reporting errors during graph execution; the same issue778 | This second issue label concerns error reporting, not an absent readback route |
+
+M-N6's current OPEN label now names execution-error reporting precisely. The “completion/error signaling” shorthand in D7 and the P5/P6 OPEN tables remains historical, qualified by the source distinctions above. M-N6's existing algorithm and P-N6's later-readTensor diagram already make the correct distinction and remain unchanged. The Issues5/7 error-reporting open is not closed by this correction. No new campaign verdict, API implementation, inference result, browser/device observation, R10 admission or emission ruling follows; the completed WebNN Pass 6 receipt is preserved. The source PDF remains unchanged and outside Git.

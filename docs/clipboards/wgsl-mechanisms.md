@@ -1,5 +1,7 @@
 # WGSL CRD 2026-09-15 — mechanism cards (SHADER-LANG system procedures)
 
+**Current discard locators, 2026-09-20 — repository update pass 4:** M-S5 cites PDF **158** for the §9.4.11 rule and PDF **159** for its worked example. The [dated source qualification](wgsl-clipboard.md#repository-update-pass-4--discard-rule-and-example) records the two-page visual sighting. The original158–160 method receipt and algorithm semantics are preserved; no campaign is restamped.
+
 **Status:** Pass 3 EXECUTED (Wave A **M-S1…M-S9**; P3-M mesh on clipboard). Pass 4 ASCII: see [`wgsl-ascii-machinery.md`](wgsl-ascii-machinery.md) (**P-S1…P-S9**). Algorithms unchanged. Emission `[GAP]`.  
 **Source:** *WebGPU Shading Language* (WGSL) — **W3C Candidate Recommendation Draft, 15 September 2026**. Editors: Alan Baker, Mehmet Oguz Derin, David Neto (et al.).  
 **PDF:** `refs/local/wgsl-w3c-crd-20260915.pdf` → attachment `73dc9e35047d8715a88ae3b1082b2e887c750da9f5c0f97d78410fc6c2f5eb6d` (**381** pp., text layer; **never git-add**). SHA-256 `73dc9e35047d8715a88ae3b1082b2e887c750da9f5c0f97d78410fc6c2f5eb6d`. PDF one-based primary.  
@@ -217,7 +219,7 @@ This file is **Shadow / Layer III documentation of CRD shader-lang procedures**,
 | Field | Content |
 |---|---|
 | Kind | statements |
-| Spec locus | §9 Statements PDF **140**; Control Flow §9.4 PDF **149**; Discard Statement §9.4.11 PDF **159**; §10 Assertions / `const_assert` PDF **166** |
+| Spec locus | §9 Statements PDF **140**; Control Flow §9.4 PDF **149**; Discard Statement §9.4.11 PDF **158** (worked example **159**); §10 Assertions / `const_assert` PDF **166** |
 | Sighting method | `pdftotext -f 149 -l 150` / `-f 158 -l 160` / `-f 166 -l 166` (this pass); Pass 1 PAGE E |
 | Eye-quote | “A discard statement converts the invocation into a helper invocation and throws away the fragment output.” · “The discard statement must only be used in a fragment shader stage.” · control-flow / if / switch / loop family §9.4 · const assertion §10 |
 | Inputs | Statement list in function bodies; fragment-stage context for `discard` |
@@ -241,7 +243,7 @@ This file is **Shadow / Layer III documentation of CRD shader-lang procedures**,
 2. **State.** Control-flow position in an invocation.  
 3. **Steps.**  
    1. Execute statements in control-flow order (§9; §9.4 PDF **149**).  
-   2. On `discard` in fragment stage (§9.4.11 PDF **159**): convert invocation to helper; throw away fragment output; only prior statements remain observable.  
+   2. On `discard` in fragment stage (§9.4.11 PDF **158**): convert invocation to helper; throw away fragment output; only prior statements remain observable.
    3. Evaluate `const_assert` at creation time (§10 PDF **166**).  
    4. Refuse `discard`/control flow as Lace cut / append scheduler / Φ gate.  
 4. **Choice points.** Branching / loops / continuing / return.  

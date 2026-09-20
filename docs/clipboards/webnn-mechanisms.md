@@ -1,5 +1,7 @@
 # WebNN CRD 2026-09-10 — mechanism cards (HOST-NN system procedures)
 
+**Current issue scope, 2026-09-20 — repository update pass 4:** M-N6's Issues5/7 concern execution-error reporting. Dispatch's lack of a direct completion signal and the output-readback route remain separate, as the existing algorithm already states. See the [dated source qualification](webnn-clipboard.md#repository-update-pass-4--dispatch-issue-scope); earlier sighting rows and campaign receipts are unchanged.
+
 **Status:** Pass 3 EXECUTED (Wave A **M-N1…M-N9**; P3-M mesh on clipboard). Pass 4 ASCII: see [`webnn-ascii-machinery.md`](webnn-ascii-machinery.md) (**P-N1…P-N9**). Algorithms unchanged. Emission `[GAP]`.  
 **Source:** *Web Neural Network API* (WebNN) — **W3C Candidate Recommendation Draft, 10 September 2026**. Editors: Ningxin Hu, Dwayne Robinson (et al.).  
 **PDF:** `refs/local/webnn-crd-20260910.pdf` → attachment `e11532183ed50d11e91c70881c59b805346b6607d41e82e7d52aca520df53fdc` (**353** pp., text layer; **never git-add**). SHA-256 `e11532183ed50d11e91c70881c59b805346b6607d41e82e7d52aca520df53fdc`. PDF one-based primary.  
@@ -272,7 +274,7 @@ This file is **Shadow / Layer III documentation of CRD host-NN procedures**, not
 | False friend | **FM-Webnn4** |
 | Companion cite | cite-only; dispatch ≠ `queue.submit` / draw / wasm instantiate as emission |
 | Projection / hologram cite | dispatch ≠ Φ; projection may schedule inference without accepting emission |
-| Open gaps | Φ / emission `[GAP]`; ISSUE 5/7 completion/error signaling during dispatch — Spec open; do not finish from Lace |
+| Open gaps | Φ / emission `[GAP]`; ISSUE 5 (PDF **22**) / ISSUE 7 (PDF **33**) execution-error reporting — Spec open, both refer to issue778; do not finish from Lace. The separate dispatch/readback completion distinction is stated at PDF **32** |
 
 **Algorithm**
 
