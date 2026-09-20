@@ -56,7 +56,7 @@ HANDS CITE: append-only growth ≠ story rewrite
 SHADOW CITE: hologram morphism B→A
 HISTORY CITE: none
 DELTA vs HOLOGRAM: confirms
-BIND: chip only this renderer · key AB · no pickTarget` },
+BIND: WebGPU mesh pick + HUD + chip · key AB` },
   "BC": { group: "gears", chip: "B×C", title: "MESH B×C — fall window × crossing", body: `MESH: B.Traj ↔ C.Locate/Anchor   (scale: A×B×C ; time: t2)
 INPUTS: shrinking control window + Rapids heat
 OUTPUTS: manual escapement release OR window burn
@@ -69,7 +69,7 @@ HANDS CITE: emission still sealed
 SHADOW CITE: hologram § Escapement; Water repair sentence
 HISTORY CITE: pass2 — contact rules cannot supply emission
 DELTA vs HOLOGRAM: confirms
-BIND: chip only this renderer · key BC · no pickTarget` },
+BIND: WebGPU mesh pick + HUD + chip · key BC` },
   "CA": { group: "gears", chip: "C×A", title: "MESH C×A — crossing × two compiles", body: `MESH: C states ↔ A×A   (scale: A×B×C)
 INPUTS: two local compiles (separate RIC/PFC)
 OUTPUTS: Banks / Rapids / Delta / Cross / Rebuild per mind pair
@@ -82,5 +82,5 @@ HANDS CITE: Piece 14 no stored meaning
 SHADOW CITE: hologram morphism C→A
 HISTORY CITE: pass1
 DELTA vs HOLOGRAM: confirms
-BIND: chip only this renderer · key CA · no pickTarget` }
+BIND: WebGPU mesh pick + HUD + chip · key CA` }
 });
