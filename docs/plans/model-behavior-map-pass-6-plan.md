@@ -1,6 +1,6 @@
 # Model behaviors × equations — Pass 6 of 6 PLAN
 
-**Status:** **`PLAN`** · not executed. **Station:** maps (HELD `Grok-maps` · BASE `3e740cf`).
+**Status:** **`EXECUTED`** 2026-09-20 · [`model-behavior-map-pass-6-soundness.md`](model-behavior-map-pass-6-soundness.md). Campaign **CLOSED 6/6**. **Station:** maps (`Grok-maps`).
 **Depends on:** passes 1–5 EXECUTED.
 **Emission:** `[GAP]`. No `src/`. Does not accept `pointer-emission.md`.
 

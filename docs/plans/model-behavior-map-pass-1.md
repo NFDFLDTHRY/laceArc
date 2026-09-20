@@ -1,6 +1,6 @@
 # Model behaviors × equations — Pass 1
 
-**Status:** **EXECUTED** 2026-09-20. **Station:** maps (`Grok-maps`).
+**Status:** **EXECUTED** 2026-09-20. Campaign **CLOSED 6/6** at pass 6. **Station:** maps (`Grok-maps`).
 **Ticket:** [`model-behavior-map-pass-1-plan.md`](model-behavior-map-pass-1-plan.md).
 **Model:** [`../math-execution-model.md`](../math-execution-model.md) after UPDATE 6/6.
 **Emission:** `[GAP]`. B-When unfilled. No `src/`.
