@@ -100,6 +100,7 @@
 | [reduction-pass-3-findings.md](reduction-pass-3-findings.md) | pass 3 record. Pass 28 on the companion: the execution model as a reading; **M1 CONFIRMs *shared state = L***; the door and roles boards cite-only; 0 Core changes |
 | [reduction-pass-5-rulings-brief.md](reduction-pass-5-rulings-brief.md) | pass 5. **The rulings brief** — 23 items only the human can take (R1–R11, #13–#15, the gate, the amendment, the door, F1/F2/F3/F6, R8, the probes, the queue), ordered by what each unblocks; nothing taken |
 | [reduction-receipt.md](reduction-receipt.md) | **the reduction receipt.** Six planned, six run; the execution model proved within scope (the #1 result); the companion at Pass 28; roles + generator + advisory check; S = 21; 0 rulings taken; two own failures named; next: A1 |
+| [probe-boundary-ladder.md](probe-boundary-ladder.md) | `[PROPOSAL]` reading note: a DeepSeek search order relayed by the human, **re-topped** — the Hands, not POSIX, at the top; Core's probe suite inverted to *absence*; bridges only if they pass the fences; σ is an absence no ladder finds. Orders G2–G5 and the P-* probes: first divergence wins the budget |
 | [restructure-plan.md](restructure-plan.md) | `[PROPOSAL]` coherence of the whole tree: twelve measured findings, eight phases, one station per commit; supersedes the defrag plan as filing plan of record |
 
 Sub-shelves: [fixtures/](fixtures/README.md) sealed golden IR · [tools/](tools/README.md) host validator.
