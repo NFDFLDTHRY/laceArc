@@ -1,6 +1,6 @@
 # Seed dictionary × model — Pass 4 of 6 PLAN
 
-**Status:** **`PLAN`** · not executed. **Station:** maps (HELD `Grok-maps` · BASE `e8eb52d`).
+**Status:** **`EXECUTED`** 2026-09-20 · [`seed-dictionary-map-pass-4-touch.md`](seed-dictionary-map-pass-4-touch.md). **Station:** maps (`Grok-maps`).
 **Depends on:** pass 3 definition-route *shape*.
 **Human ruling:** the route **is** to wire the lace to each word a word is defined by. Those are our **first touches**.
 **Hands:** Piece 9 route · Piece 11 Touch (“the newly created touch remains”).
