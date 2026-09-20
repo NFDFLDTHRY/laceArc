@@ -1,7 +1,7 @@
-STATUS: FREE
+STATUS: HELD
 STATION: maps
 OWNS: docs/reason-model-map.md docs/rust-nostd-*.md docs/atomic-primitives-map.md docs/clock/gearing-code-1to1.md docs/coherence-audit*.md docs/clock/system-mathematical-model.md docs/defrag-plan.md docs/plans/** docs/namespace-register.md docs/*.md (catch-all: any unmatched file at the docs/ root)
-AGENT: -
-BASE: -
-SINCE: -
-NOTE: seed-dictionary-map campaign CLOSED 6/6 (8 PASS · #15 HOLE · when free · emission [GAP])
+AGENT: Astra-math
+BASE: a8e759511e0e146fa0dca8a7e97ffa90725e90a0
+SINCE: 2026-09-20T23:20:00Z
+NOTE: User-directed claim for mathematical-model / global-systems synthesis. Previous seed-dictionary-map campaign CLOSED 6/6 (8 PASS · #15 HOLE · when free · emission [GAP]). No acceptance implied; emission remains [GAP].
