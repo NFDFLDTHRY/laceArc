@@ -321,8 +321,9 @@ cmd_claim() {
   status="$(read_field "$f" STATUS)"
   holder="$(norm_agent "$(read_field "$f" AGENT)")"
 
-  if [[ "$status" == "HELD" && -n "$holder" && "$holder" != "$agent" ]]; then
-    die "station '$station' is HELD by '$holder' — pick another FREE station or wait"
+  if [[ "$status" != "FREE" ]]; then
+    [[ "$status" == "HELD" && -n "$holder" ]] || die "station '$station' has invalid claim state (STATUS=${status:-missing}, AGENT=${holder:-missing})"
+    [[ "$holder" == "$agent" ]] || die "station '$station' is HELD by '$holder' — pick another FREE station or wait"
   fi
 
   local since

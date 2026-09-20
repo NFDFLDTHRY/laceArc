@@ -94,7 +94,7 @@ NOTE: <optional>
 ## Behavior notes
 
 - Valid `claim` / `check` / `refresh` / `doctor` invocations fetch `origin main`; invalid doctor arguments reject before fetching.
-- `claim` fails if HELD by another agent; sets `BASE` to current `origin/main` SHA.
+- `claim` admits FREE or HELD by the same recorded holder and sets `BASE` to current `origin/main` SHA. Unknown/missing STATUS and HELD with an empty holder reject without rewriting the claim; HELD by another actor still rejects. This applies to doc stations, direct gear claims and umbrella gear delegation, following the existing [shaft admission contract](../gearing/CLAIMS.md#1-claim-exactly-one-shaft).
 - `which` normalizes repository-relative paths, repeated separators, dot segments and absolute paths beneath the physical repository root before matching the authoritative rule table. It rejects escapes, symlinked files or parents (even before a later `..`), and traversal through an existing non-directory. Use the target's ordinary path for a symlink alias. New files need not exist. Unknown path → error.
 - Exact paths win over recursive `/**` rules; ordinary `*` and `?` stay within one path component. The root Markdown catch-all does not assign arbitrary nested shelves. The existing claims README has an explicit gearing-meta rule.
 - `gate` = `which` + `check`: exit 0 only if every path maps to the named station and check passes.
@@ -103,19 +103,19 @@ NOTE: <optional>
 
 Shaft claim protocol: [CLAIMS.md](../gearing/CLAIMS.md); its direct no-reason override remains compatible.
 
-Resync signal: `docs/gearing/RESYNC.md`.
+Resync signal: `docs/gearing/RESYNC.md`. The [backend](../gearing/resync.sh) reports FIRED only after replacing its metadata block or initializing beneath the supported `# FULL REPO RESYNC` heading; absent both, it rejects without writing. Clear requires an existing metadata block. Fire/clear preserve the surrounding history and store single-line actor text literally, including backslashes, apostrophes and Unicode. Actual CR/LF characters reject before fetch or write because they split metadata fields. This is serialization validity, not actor authentication or an identity allowlist. Missing/unknown commands print usage and exit nonzero without writes.
 
-## Ownership and doctor regression checks
+## Control regression checks
 
-[control-regressions.sh](tests/control-regressions.sh) copies the actual dispatcher and gear/resync backends into a temporary Git tree. All claims, the signal, symlinks and their targets are synthetic; a constrained Git stub prevents remote access. It checks canonical ownership, root-only patterns, rejected aliases/escapes, gate ownership, doctor actor custody and unchanged sentinels. No live override is exercised.
+[control-regressions.sh](tests/control-regressions.sh) copies the actual dispatcher and gear/resync backends into a temporary Git tree. All claims, the signal, symlinks and their targets are synthetic; a constrained Git stub prevents remote access. It checks canonical ownership, root-only patterns, rejected aliases/escapes, gate ownership, doctor actor custody, claim admission through all three entrypoints, RESYNC writes/actor handling/usage, and unchanged sentinels. Usage checks include a synthetic cwd file named `agent`; actual CR/LF rejection checks that Git was never called. No live override is exercised.
 
 ```bash
 bash docs/coord/tests/control-regressions.sh
-LACE_SOURCE_REV=e14b13c08fbfe6c280e9f0460d383a6be4479865 bash docs/coord/tests/control-regressions.sh
+LACE_SOURCE_REV=335429cc0352c2e93c8009c6db57dd977ec783bb bash docs/coord/tests/control-regressions.sh
 bash docs/coord/tests/force-free-dispatch.sh
 ```
 
-The optional revision selects script sources with `git show`; it does not change the checkout. The second command intentionally challenges the pre-repair scripts. These synthetic checks establish the named tool behavior, not human authorization, content agreement or emission acceptance.
+The optional revision selects script sources with `git show`; it does not change the checkout. The second command intentionally challenges the pre-pass-4 scripts: **53 pass / 22 fail**, including all fourteen planning counterexamples. The repaired scripts pass **75/75**: the original 36 guards plus 39 claim/RESYNC cases. The separate force-free fixture retains its 15 guards. These synthetic checks establish the named tool behavior, not human authorization, content agreement or emission acceptance.
 
 ## Quiet-door #9 records
 

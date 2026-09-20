@@ -177,5 +177,135 @@ for scenario in readonly CLEAR UNKNOWN missing-signal doc-held gear-held doc-unk
   run_case "doctor preserves state: $scenario" doctor_no_write "$scenario"
 done
 
+# Pass 4: exercise the actual claim and RESYNC backends as well as delegation.
+run_script() {
+  local expected="$1" script="$2" result=0; shift 2
+  (cd "$FIXTURE" && bash "$FIXTURE/$script" "$@") >"$TEST_ROOT/command-output" 2>&1 || result=$?
+  [[ "$result" -eq "$expected" ]] || {
+    cat "$TEST_ROOT/command-output"
+    fail "expected exit $expected, got $result"
+  }
+}
+claim_admission() {
+  local route="$1" scenario="$2" target script station expected=1
+  reset_state
+  case "$route" in
+    doc) target=docs/coord/stations/kit.station; script=docs/coord/coord.sh; station=kit ;;
+    gear) target=docs/gearing/claims/gears.claim; script=docs/gearing/claim.sh; station=gears ;;
+    umbrella-gear) target=docs/gearing/claims/gears.claim; script=docs/coord/coord.sh; station=gear:gears ;;
+  esac
+  case "$scenario" in
+    FREE) expected=0 ;;
+    same) printf '%s\n' 'STATUS: HELD' 'AGENT: Fixture' 'NOTE: claim sentinel' >"$FIXTURE/$target"; expected=0 ;;
+    other) printf '%s\n' 'STATUS: HELD' 'AGENT: Another' 'NOTE: claim sentinel' >"$FIXTURE/$target" ;;
+    unknown) printf '%s\n' 'STATUS: UNKNOWN' 'AGENT: Previous' 'NOTE: claim sentinel' >"$FIXTURE/$target" ;;
+    missing-status) printf '%s\n' 'AGENT: Previous' 'NOTE: claim sentinel' >"$FIXTURE/$target" ;;
+    empty-holder) printf '%s\n' 'STATUS: HELD' 'AGENT: ' 'NOTE: claim sentinel' >"$FIXTURE/$target" ;;
+  esac
+  snapshot
+  run_script "$expected" "$script" claim "$station" Fixture
+  if [[ "$expected" -eq 0 ]]; then
+    grep -qxF 'STATUS: HELD' "$FIXTURE/$target" || fail 'claim not HELD'
+    grep -qxF 'AGENT: Fixture' "$FIXTURE/$target" || fail 'claim actor changed'
+    grep -qxF 'BASE: aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa' "$FIXTURE/$target" || fail 'claim did not use live tip'
+    grep -qE '^SINCE: [0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}Z$' "$FIXTURE/$target" || fail 'claim timestamp missing'
+    cp "$FIXTURE/$target" "$BEFORE/$target"
+  fi
+  unchanged
+}
+for route in doc gear umbrella-gear; do
+  for scenario in FREE same other unknown missing-status empty-holder; do
+    run_case "claim admission: $route $scenario" claim_admission "$route" "$scenario"
+  done
+done
+
+resync_shape() {
+  local operation="$1" shape="$2" expected=0
+  reset_state
+  case "$shape" in
+    block) ;;
+    heading) printf '%s\n' '# FULL REPO RESYNC' '' 'Historical prose sentinel: keep this exact line.' >"$FIXTURE/docs/gearing/RESYNC.md" ;;
+    absent) printf '%s\n' '# Unexpected heading' '' 'Historical prose sentinel: keep this exact line.' >"$FIXTURE/docs/gearing/RESYNC.md"; expected=1 ;;
+  esac
+  snapshot
+  run_script "$expected" docs/gearing/resync.sh "$operation" Fixture
+  if [[ "$expected" -eq 0 ]]; then
+    python3 - "$BEFORE/docs/gearing/RESYNC.md" "$FIXTURE/docs/gearing/RESYNC.md" "$operation" "$shape" <<'PY' || fail 'signal metadata/history assertion failed'
+import pathlib, re, sys
+before, after = (pathlib.Path(p).read_bytes() for p in sys.argv[1:3])
+operation, shape = sys.argv[3:]
+pattern = rb'```\nSTATUS:.*?\n```'
+blocks = re.findall(pattern, after, re.S)
+assert len(blocks) == 1, 'expected exactly one signal metadata block'
+state, field = (b'FIRED', b'FIRED_BY') if operation == 'fire' else (b'CLEAR', b'CLEARED_BY')
+assert b'STATUS: ' + state + b'\n' in blocks[0], 'wrong signal state'
+assert field + b': Fixture\n' in blocks[0], 'wrong signal actor'
+if shape == 'block':
+    assert re.sub(pattern, b'<metadata>', before, count=1, flags=re.S) == re.sub(pattern, b'<metadata>', after, count=1, flags=re.S), 'history outside metadata changed'
+else:
+    assert after.replace(b'\n' + blocks[0] + b'\n', b'', 1) == before, 'heading initialization changed history'
+PY
+    unchanged signal
+  else
+    ! grep -qE '^(FIRED|CLEARED)' "$TEST_ROOT/command-output" || fail 'rejected write reported success'
+    unchanged
+  fi
+}
+run_case 'RESYNC fire replaces existing block only' resync_shape fire block
+run_case 'RESYNC fire initializes supported heading only' resync_shape fire heading
+run_case 'RESYNC fire rejects absent block and heading' resync_shape fire absent
+run_case 'RESYNC clear replaces existing block only' resync_shape clear block
+run_case 'RESYNC clear rejects missing metadata' resync_shape clear absent
+
+resync_actor() {
+  local operation="$1" scenario="$2" actor expected=0 field
+  reset_state
+  case "$scenario" in
+    literal-newline) actor='Fixture\nSecond' ;;
+    literal-backreference) actor='Fixture\1Second' ;;
+    ordinary-text) actor="Fixture O'Brien · Controls" ;;
+    shell-text) actor='Fixture $(touch actor-command) `touch actor-backtick` \ path' ;;
+    LF) actor=$'Fixture\nSecond'; expected=1 ;;
+    CR) actor=$'Fixture\rSecond'; expected=1 ;;
+  esac
+  snapshot
+  run_script "$expected" docs/gearing/resync.sh "$operation" "$actor"
+  if [[ "$expected" -eq 0 ]]; then
+    if [[ "$operation" == fire ]]; then field=FIRED_BY; else field=CLEARED_BY; fi
+    grep -qxF "$field: $actor" "$FIXTURE/docs/gearing/RESYNC.md" || fail 'actor did not round-trip literally'
+    grep -qxF 'Historical prose sentinel: keep this exact line.' "$FIXTURE/docs/gearing/RESYNC.md" || fail 'signal prose changed'
+    [[ ! -e "$FIXTURE/actor-command" && ! -e "$FIXTURE/actor-backtick" ]] || fail 'actor text executed'
+    unchanged signal
+  else
+    [[ ! -s "$CONTROL_GIT_LOG" ]] || fail 'invalid actor reached Git'
+    unchanged
+  fi
+}
+for operation in fire clear; do
+  for scenario in literal-newline literal-backreference ordinary-text shell-text LF CR; do
+    run_case "RESYNC actor: $operation $scenario" resync_actor "$operation" "$scenario"
+  done
+done
+
+resync_usage() {
+  local scenario="$1" cwd_agent="$2"
+  reset_state
+  rm -f -- "$FIXTURE/agent" "$FIXTURE/ | clear "
+  if [[ "$cwd_agent" == present ]]; then printf '%s\n' 'cwd input sentinel' >"$FIXTURE/agent"; fi
+  rm -rf -- "$TEST_ROOT/usage-before"
+  cp -a "$FIXTURE" "$TEST_ROOT/usage-before"
+  if [[ "$scenario" == no-arguments ]]; then run_script 1 docs/gearing/resync.sh
+  else run_script 1 docs/gearing/resync.sh unknown; fi
+  [[ ! -s "$CONTROL_GIT_LOG" ]] || fail 'usage reached Git'
+  diff -r --no-dereference "$TEST_ROOT/usage-before" "$FIXTURE" || fail 'usage changed cwd, scripts or state'
+  grep -q '^Usage: ' "$TEST_ROOT/command-output" || fail 'safe usage missing'
+  rm -f -- "$FIXTURE/agent"
+}
+for scenario in no-arguments unknown; do
+  for cwd_agent in present absent; do
+    run_case "RESYNC usage: $scenario, agent file $cwd_agent" resync_usage "$scenario" "$cwd_agent"
+  done
+done
+
 echo "$passed passed / $failed failed; copied sources, synthetic state, no live claims or network."
 [[ "$failed" -eq 0 ]]
