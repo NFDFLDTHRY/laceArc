@@ -1,6 +1,6 @@
 # Seed dictionary × model — Pass 6 of 6 PLAN
 
-**Status:** **`PLAN`** · not executed. **Station:** maps (HELD `Grok-maps` · BASE `bb5de62`).
+**Status:** **`EXECUTED`** 2026-09-20 · [`seed-dictionary-map-pass-6-soundness.md`](seed-dictionary-map-pass-6-soundness.md). Campaign **CLOSED 6/6**. **Station:** maps (`Grok-maps`).
 **Depends on:** passes 1–5 EXECUTED.
 **Emission:** `[GAP]`. No `src/`. Does not accept `pointer-emission.md`.
 

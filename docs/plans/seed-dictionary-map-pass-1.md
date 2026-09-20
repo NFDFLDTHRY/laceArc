@@ -1,6 +1,6 @@
 # Seed dictionary × model — Pass 1
 
-**Status:** **EXECUTED** 2026-09-20. **Station:** maps (`Grok-maps`).
+**Status:** **EXECUTED** 2026-09-20. Campaign **CLOSED 6/6** at pass 6. **Station:** maps (`Grok-maps`).
 **Ticket:** [`seed-dictionary-map-pass-1-plan.md`](seed-dictionary-map-pass-1-plan.md).
 **Hands:** Piece 9 · Piece 3 · Piece 10.
 **Emission:** `[GAP]`. Wired-first ≠ schedule. No lexicon on \(L\). No `src/`.
