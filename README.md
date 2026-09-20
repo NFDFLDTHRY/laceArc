@@ -139,7 +139,9 @@ The pointer-emission rule *is* dimensionality. Until it is written down as part 
 
 ## Status
 
-Model repository with Layer III viewers and steward tooling. Apache-2.0. No Lace Core implementation. Current work: [repository update pass 3](docs/plans/repo-update-pass-3-plan.md), authorized for local execution; its [evidence record](docs/plans/repo-update-pass-3-evidence.md) distinguishes planned checks from actual results.
+Model repository with Layer III viewers and steward tooling. Apache-2.0. No Lace Core implementation. Current work: [repository update pass 4](docs/plans/repo-update-pass-4-plan.md), executed locally; its [evidence record](docs/plans/repo-update-pass-4-evidence.md#10-execution-reanchor-and-choices) separates reproduced failures, local repairs, synthetic checks and pending client observations. HCC-A, Coffee Cup and Water remain conceptual references.
+
+[Pass 3](docs/plans/repo-update-pass-3-evidence.md) was published through `335429c`, in eight station commits covering thirty paths. Its local-handoff receipt is preserved; the later [publication record](docs/plans/repo-update-pass-4-evidence.md#1-published-baseline-and-arrival) identifies those commits. Pass4 does not promote the pinned release. The re-supplied [rustc book matches A1](docs/clipboards/rust-target-clipboard.md#repository-update-pass-4--a1-re-sighting); the newly supplied [Cargo A4 mapping](docs/clipboards/rust-target-clipboard.md#repository-update-pass-4--a4-cargo-source-mapping) records crate-list syntax and source/lockfile requirements at source strength, with builds and artifact obligations still unverified.
 
 [Pass 2](docs/plans/repo-update-pass-2-evidence.md#8-execution-dispositions) was published through `e14b13c`, including ordinary HCC/nostd source qualifications in `5e40a20` and the binding-description correction above. Its receipt preserves the earlier local handoff. Frozen gearing, browser/device observations and release promotion remain separate pending work; the pinned ixp2 release has not received those main-branch repairs. [Pass 1](docs/plans/repo-update-pass-1-evidence.md) remains the earlier branch/content and custody record.
 

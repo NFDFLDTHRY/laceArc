@@ -43,8 +43,10 @@ Derived from the Hands. Proposals and readings, never a second source.
 | [math-execution-model-pass-4-adversarial.md](math-execution-model-pass-4-adversarial.md) | Adversarial reading of the partial model |
 | [math-execution-model-pass-5-projections.md](math-execution-model-pass-5-projections.md) | Contract III projection readings, under governing sources |
 | [math-execution-model-pass-6-arrival.md](math-execution-model-pass-6-arrival.md) | Contract II arrival reading; no independent history |
-| [plans/repo-update-pass-3-plan.md](plans/repo-update-pass-3-plan.md) | Current update pass, authorized for local execution within its exact edit boundaries and verification gates |
-| [plans/repo-update-pass-3-evidence.md](plans/repo-update-pass-3-evidence.md) | Current findings and evidence; planned checks remain distinct from actual results, acceptance and release |
+| [plans/repo-update-pass-4-plan.md](plans/repo-update-pass-4-plan.md) | Executed local update: lifecycle, release freshness, fallback/install controls, claim/RESYNC behavior and bounded source/reader corrections; conditional client/renderer work remains pending |
+| [plans/repo-update-pass-4-evidence.md](plans/repo-update-pass-4-evidence.md) | Reproduced failures and actual execution dispositions; source sightings, synthetic checks, pending client observations, publication and acceptance remain distinct |
+| [plans/repo-update-pass-3-plan.md](plans/repo-update-pass-3-plan.md) | Executed and subsequently published through `335429c`: thirty paths in eight station commits; release promotion remains separate |
+| [plans/repo-update-pass-3-evidence.md](plans/repo-update-pass-3-evidence.md) | Preserved local-handoff receipt; pass4 evidence records the later publication, without rewriting historical results |
 | [plans/repo-update-pass-2-plan.md](plans/repo-update-pass-2-plan.md) | Executed local repairs, subsequently published through `e14b13c`; frozen-renderer, browser/device and release work remain separately pending |
 | [plans/repo-update-pass-2-evidence.md](plans/repo-update-pass-2-evidence.md) | Source corrections, synthetic checks and exact file manifest; the preserved receipt predates publication |
 | [plans/repo-update-pass-1-plan.md](plans/repo-update-pass-1-plan.md) | Earlier executed documentation update; original scope and verification record |
