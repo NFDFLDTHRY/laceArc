@@ -156,18 +156,30 @@ A sentence that meets 1–7 is a candidate. It is still not accepted. Acceptance
 
 ## E7 — The procedure (what an agent runs)
 
+**Current procedure qualification, 2026-09-20.** Evidence must cover each predicate's existing E2/E3 domain. A restricted-domain proof or D1-only run remains bounded evidence; it does not establish unrestricted IN-REGION. Keep an unresolved obligation distinct from a demonstrated violation.
+
 ```
 INPUT   one candidate sentence C, verbatim, with its author and locator
 STEP 1  Write C as σ(L, v) = ... .  If C cannot be so written: verdict NOT-A-σ, cite E2, STOP.
 STEP 2  F-S1, F-S2, F-S3, F-S4.  Any fail: verdict NOT-A-σ, cite fence, STOP.
 STEP 3  F-H1, F-H2, F-H3, F-A1.   Any fail: verdict REFUTED, cite fence + the offending step, STOP.
-STEP 4  F-H4: run C on (PIE, DESSERT, PIE, WHOLE, CUSTOMER) from ε.  Write all eleven
-        rows the run produces beside D1's eleven.  First mismatch: REFUTED, cite the row.
+STEP 4  F-H4: run C on (PIE, DESSERT, PIE, WHOLE, CUSTOMER) from ε.  Write every produced
+        row beside D1's eleven.  First mismatch, including a missing or extra row: REFUTED, cite it.
         If the run needs a fact D1 does not carry (a boundary, an identity decision): BLOCKED, cite F-B / F-G.
-STEP 5  F-N: exhibit one (L, v) on which C emits Φ.  None: REFUTED (vacuous).
-STEP 6  Verdict IN-REGION.  Stamp: [PROPOSAL] · UNESTABLISHED as the rule · acceptance ABSENT.
+        F-H5: record the final D1 gaps; per-STEP counts additionally need the S4.3 premise below.
+STEP 5  F-N: the successful D1 run already exhibits Φ; cite that witness, with no additional search.
+        Failure to exhibit a witness is UNESTABLISHED, not proof of vacuity. REFUTED (vacuous)
+        requires proof that no (L, v) in the existing domain yields a Φ.
+STEP 6  F-G, F-B: inspect the candidate over their existing E2/E3 domains, including branches
+        outside the D1 run. An unstated identity or boundary dependency is BLOCKED; cite F-G / F-B
+        and G1 / open #3 respectively. If absence of such a dependency is unproved, keep it UNESTABLISHED.
+STEP 7  Verdict IN-REGION only when all thirteen E3 predicates have evidence at their stated scopes.
+        Otherwise retain the unresolved obligation as UNESTABLISHED / BLOCKED, as appropriate.
+        Stamp an IN-REGION result: [PROPOSAL] · UNESTABLISHED as the rule · acceptance ABSENT.
 OUTPUT  the adjudication form (agent-task-template §3): claim, facts, refutations, obligations, next question.
 ```
+
+**F-H5 / S4.3 scope.** Final D1 equality fixes the POINTER gaps between WORD rows and after the last WORD. Identifying those gaps with each STEP's emission count requires its sole `Arrive(v)` to come first, followed only by Φ appends (E2/E6; reduction M3). State whether that premise is assumed; this procedure does not decide its inheritance or add it as a new fence. A dependency outside the five-input witness still needs the global F-G/F-B check; matching D1 cannot discharge it.
 
 One agent may run all steps and must say so. A second agent re-running STEP 4 independently is the only independence this procedure knows.
 

@@ -1,8 +1,10 @@
 # Verification iteration 5 — the global scope mappings
 
-**Status:** `[PROPOSAL]`. **Pass 1 EXECUTED.** Passes 2–6 NOT_RUN.
+**Status:** `[PROPOSAL]` iteration. **Passes 1–3 EXECUTED.** Pass 4 is not established complete; passes 5–6 remain NOT_RUN.
 **Station:** maps. **Emission:** `[GAP]`. No `src/`.
 **Previous:** [iteration 4](verification-iteration-4-receipt.md), CLOSED. Before it, [3](verification-iteration-3-receipt.md), [2](verification-iteration-2-receipt.md), [1](verification-iteration-1-receipt.md), [the restructure](restructure-plan.md).
+
+**Current status, 2026-09-20.** Pass 1 is this document; [pass 2](verification-iter5-pass-2-plan.md) and [pass 3](verification-iter5-pass-3-plan.md) each record execution with linked findings. [Pass 4](verification-iter5-pass-4-plan.md) remains a plan: its extraction prompt was later used in [iteration 6 §0](lace-context-iteration-6-plan.md#0-why-this-iteration-exists), with the yield recorded in [that iteration's pass 1](lace-context-iter6-pass-1-findings.md). That reuse does not establish completion of all pass-4 obligations or of iteration 5. The original board, six-pass outline and findings below remain the dated record; this entrance does not restamp them or take a ruling.
 
 ## 0. This answers iteration 4's receipt rather than ignoring it
 

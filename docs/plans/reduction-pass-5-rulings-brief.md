@@ -27,7 +27,7 @@
 | 20 | **F6** push | Add this repo to the cloud session's sources, or land bundles each sitting? | either | claims visible on origin | account |
 | 21 | **R8** roles | Confirm the role cards; name the designated editor for the first pre-gate task (probes) | — | [roles.md](../kit/roles.md) | kit |
 | 22 | **Probes** | Run P-64a · **P-64b** · P-64c · P-CAR · P-INST · P-COI on the 9a; SHA the evidence | — | sheets T, R, C; R2, R3, R11 | pass 2 findings §4 |
-| 23 | **Current source queue** | [Rust-target Page G](../clipboards/rust-target-clipboard.md#page-g--open-items-the-queue-stays-one-at-a-time): **A4 next** (Cargo `build-std`); then A3 and A10; A11 only if `target_features` is wanted as a witness. A separate wasm-spec-3 sighting request accompanies the queue | one source at a time; other earlier requests remain recorded at their original locators | build inputs and artifact-check premises | prompts → clipboards |
+| 23 | **Current source queue** | [Rust-target Page G](../clipboards/rust-target-clipboard.md#page-g--open-items-the-queue-stays-one-at-a-time): **A4 next** (Cargo `build-std`); then A3 and A10; A11 only if `target_features` is wanted as a witness. The separate Wasm request now has [W2-S1–S6: fourteen pages sighted at bounded source scope](../clipboards/wasm-spec-3-clipboard.md#repository-update-pass-2--target-sightings), with artifact obligations still open | one source at a time; other earlier requests remain recorded at their original locators | build inputs and artifact-check premises | prompts → clipboards |
 
 **Order that unblocks the most first:** 1 → 3 → 4 → 5 → 6 → 14. Items 10–13 and 16–21 can be taken in any order. Nothing here is taken by the agent.
 
@@ -35,10 +35,12 @@
 
 The [rust-target mapping Pages D–G](../clipboards/rust-target-clipboard.md) adds these obligations to the original docket. This entry records their arrival; it does not authorize a fixture or execute a build.
 
+**Current source carry, 2026-09-20.** [W2-S1–S6](../clipboards/wasm-spec-3-clipboard.md#repository-update-pass-2--target-sightings) sight memory/address grammar and validation rules, the optional name carrier, local/imported tags and named exception constructs, profiles, and bounded validation-appendix passages. Their [rust-target carry](../clipboards/rust-target-clipboard.md#repository-update-pass-2--target-evidence-carry) leaves name-based crate absence and complete provenance UNESTABLISHED, and configured checker enforcement, builds and device checks NOT_RUN. These are the recorded source sightings, not new artifact results or a complete validation-algorithm review. Cargo A4 remains absent and next: the `build-std` crate list, lockfile and `rust-src` identity support. The original A1 text and A3/A10/A11 are also absent from the supplied corpus; their dated receipts are not re-certified here.
+
 | Item | Current question / scope | Evidence still required |
 |---|---|---|
 | **R12** — pre-gate fixture | Is the proposed target fixture permitted before Core acceptance? This is reduction R12, not restructure R12 | exact human scope; no `.wat`, Cargo project or new code authorized here |
-| **G8 → G8′** — feature validation | The shelf proposes validation under exactly the allowed feature set; a parsed `target_features` section alone is insufficient | spec-shelf sightings, tool/check scope and actual artifact; `NOT_RUN` |
+| **G8 → G8′** — feature validation | The shelf proposes validation under exactly the allowed feature set; a parsed `target_features` section alone is insufficient | W2-S4–S6 supply bounded source distinctions, not an exhaustive enforced policy. The exact feature set, checker/version/configuration and its enforcement on an actual artifact remain to be evidenced; validator/artifact checks `NOT_RUN` |
 | **G10** — reproducibility | The shelf proposes two builds from recorded inputs with byte-identical modules; relates checked and shipped artifact identities | pinned inputs including `rust-src` identity, two build receipts; `NOT_RUN` |
 | **P-64a additions** | Record whether the pinned nightly supplies working `wasm-ld` and whether `-Ctarget-cpu=mvp` retains memory64 | device/toolchain observation; currently unestablished |
 

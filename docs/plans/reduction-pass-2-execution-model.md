@@ -157,9 +157,9 @@ The table names responsibilities and ruling dependencies. It is not a complete o
 | The bytes of a section; `k`; slot order; index width | enc is a parameter; Q2 CONFLICT, #9, P-64b | R6 |
 | Whether the strand grows by `memory.grow` or refuses at a fixed capacity; who holds a refused arrival | cap is a parameter | R4 |
 | Where `L` lives across reloads | res is a parameter; the amendment presses it, the Hands are silent | R3 |
-| The memory order at the frontier | ord is a parameter; append-only makes readers safe under release/acquire, but the choice is the human's | R9 |
+| The memory order at the frontier | ord is a parameter. The [compute §3 proposal](lace-context-iter7-pass-2-compute-and-inventory.md#3-where-the-parallelism-is-on-the-two-surfaces) requires complete publication, memory-order, carrier/lifecycle and host premises; append-only alone proves none of those. R9 and its proof obligations remain open | R9 |
 | Whether a seed corpus exists, and its identity rule | #15 · G1 | the brief |
-| Concurrency beyond one writer | manifest open #5; single writer is a **target circumstance** on both surfaces, not a Core rule | R9 · R11 |
+| Concurrency beyond one writer | One writer is a premise of [compute §1/§3](lace-context-iter7-pass-2-compute-and-inventory.md), not a thread-count consequence of E2. Manifest open #5 leaves concurrency unstated; production isolation and shared reads remain conditional. No target-wide or Core rule follows | R9 · R11 |
 
 ---
 
