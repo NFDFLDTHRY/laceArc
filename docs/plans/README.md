@@ -4,6 +4,7 @@ Plans, proposals, executed pass records, and dated receipts share this shelf. Ea
 
 | File | Job |
 |---|---|
+| [miss-map-pass-3-plan.md](miss-map-pass-3-plan.md) | **`PLAN`** — miss-map pass 3. Hands: D2 panel × equations. Slot II unfilled. Φ `[GAP]` |
 | [miss-map-pass-2-sort.md](miss-map-pass-2-sort.md) | **EXECUTED** miss-map pass 2. Slot II IN-CALC-MISS. D2 SPECIMEN-MISS. Φ `[GAP]` |
 | [miss-map-pass-2-plan.md](miss-map-pass-2-plan.md) | **`EXECUTED`** — pass 2 sort. Φ `[GAP]` |
 | [miss-map-pass-1.md](miss-map-pass-1.md) | **EXECUTED** miss-map pass 1. NEW-MISS: Slot II + D2 specimen. Φ `[GAP]` |
