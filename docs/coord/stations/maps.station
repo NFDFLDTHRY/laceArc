@@ -2,6 +2,6 @@ STATUS: HELD
 STATION: maps
 OWNS: docs/reason-model-map.md docs/rust-nostd-*.md docs/atomic-primitives-map.md docs/clock/gearing-code-1to1.md docs/coherence-audit*.md docs/clock/system-mathematical-model.md docs/defrag-plan.md docs/plans/** docs/namespace-register.md docs/*.md (catch-all: any unmatched file at the docs/ root)
 AGENT: Astra-math
-BASE: a8e759511e0e146fa0dca8a7e97ffa90725e90a0
+BASE: f29fac9622958371a9fbf392f0be637765e47084
 SINCE: 2026-09-20T23:20:00Z
-NOTE: User-directed claim for mathematical-model / global-systems synthesis. Previous seed-dictionary-map campaign CLOSED 6/6 (8 PASS · #15 HOLE · when free · emission [GAP]). No acceptance implied; emission remains [GAP].
+NOTE: User-directed ROOT / TOUCH / FOLD Pass 1 execution. Base refreshed after claim + plan-only commits through f29fac9. Previous seed-dictionary-map campaign CLOSED 6/6 (8 PASS · #15 HOLE · when free · emission [GAP]). No acceptance implied; emission remains [GAP]. Connector refresh; coord.sh NOT_RUN.
