@@ -3,7 +3,7 @@
 These four images are the source of record for laceArc. The systems manifest is derived from them. Do not treat a later diagram, graph screenshot, or 3D viewer as a replacement store.
 
 | File | Original attachment | Title |
-|---|---|---|
+|---|---|
 | [from-words-to-worlds.png](from-words-to-worlds.png) | `13284.png` | The Lace Model in 3D: From Words to Worlds |
 | [mechanisms-in-3d.png](mechanisms-in-3d.png) | `13285.png` | Lace Mechanisms in 3D: How the Wire Actually Behaves |
 | [n-dimensional-relationships.png](n-dimensional-relationships.png) | `13286.png` | N-Dimensional Relationships in Lace: How Higher Dimensions Present Themselves |
@@ -18,6 +18,8 @@ Graphic B ASCII companion (iteration 1 passes 5–6 + i2p1–p2): [`graphic-b-as
 Graphic C ASCII companion (iteration 2 passes 3–6): [`graphic-c-ascii.md`](graphic-c-ascii.md). Does not replace the PNG. Does not fill G2 or C6 vs D.
 
 Iteration law + queue: [`ascii-iterations.md`](ascii-iterations.md). Iteration 1 receipt: [`ascii-iteration-1-receipt.md`](ascii-iteration-1-receipt.md). Iteration 2 receipt: [`ascii-iteration-2-receipt.md`](ascii-iteration-2-receipt.md). Six passes close an iteration. Leftovers are the next iteration, not pass 7.
+
+Prefix-device pass 1 (lens, not law): [`prefix-device-pass-1.md`](prefix-device-pass-1.md). Plan: [`prefix-device-pass-1-plan.md`](prefix-device-pass-1-plan.md). Does not replace the PNGs. Does not fill G2.
 
 Hologram touches (not this directory): `docs/hologram/`. Those diagnose the holder. They are not a fifth graphic.
 
