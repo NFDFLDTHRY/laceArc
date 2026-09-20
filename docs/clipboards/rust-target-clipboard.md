@@ -574,3 +574,28 @@ Shelf 10 is the tree's only text-sourced shelf. **That is why it is the only one
 | **Moved** | **nothing.** No `[GAP]` closed, no ruling taken, no build run, no new book line cut, no panel redrawn, no script or `src/` |
 
 **Emission `[GAP]`. Shoe in hands, or no.**
+
+---
+
+## Pass 6 — deep diagram audit · EXECUTED
+
+**Station:** clipboards · `Grok-clipboards`. **Ticket:** [`rust-target-pass-6-plan.md`](rust-target-pass-6-plan.md). **Sit:** [`rust-target-pass-6-sit.md`](rust-target-pass-6-sit.md). **Object:** [`rust-target-ascii-machinery.md`](rust-target-ascii-machinery.md).
+
+Books in hand this session, SHA-verified, **not** committed: rustc `4a30e620…4e74d3` · Cargo `9d7048e1…63c0a5`.
+
+### `P6-R` — pass 6 execute receipt
+
+| | |
+|---|---|
+| **`P6-A`** | 10 nodes classified: **9 SOURCE** (1–8, 10) · **1 SHELF** (9, the project gates) · **every spine edge `[INFERENCE]`**. `F1` fired; stamp placed under the spine |
+| **`P6-P`** | **208** factual fence lines: **75 CARRIED** · **48 BOOK-ONLY** (*verified by one hand*) · **85 SHELF** · **0 NOT FOUND** |
+| **`P6-X`** | `F1` fired (expected) · `F2` fired once and was fixed · `F3` did not fire · `F4` fired once (i64 vs 64-bit memories) and was fixed |
+| **`P6-F`** | **3 surgical edits**: spine stamp + node-[7] label; `P-R6` first box; `P-R18` first box. No redraw |
+| **`P6-O`** | overview **count = 1** |
+| **Verdict** | **DIAGRAM SOUND WITH OPENS** |
+| **Qualification** | 0 NOT-FOUND left standing. 0 `F2` left standing. Composition now wears `[INFERENCE]`. OPENS that remain are **named and already on the shelf**: node 9 `NOT_RUN`, node 8 Reach NONE, 48 BOOK-ONLY lines, `O1`, rust-src hash, A4 `compiler_builtins` / lockfile. None of those is a fence saying what the book does not |
+| **Moved otherwise** | **nothing.** No `[GAP]` closed, no ruling, no build, no extract rows added, no `P5-P` edit, no `src/` |
+
+**Overall verdict: DIAGRAM SOUND WITH OPENS** — the eighteen fences, held against the books, add no claim the books and the shelf do not already make. What they added was composition; the composition is now stamped. The drawing is open where the project is unrun and where the extract does not reach. Emission `[GAP]`.
+
+**Steward test:** shoe in hands — refuse rustc-as-Core, `--print` as Φ, wasm64 memory as L, `build-std` as a first-party branch, a receipt as a proof, a Tier 3 page as an artifact. Pass 6 does not fill pointer-emission.

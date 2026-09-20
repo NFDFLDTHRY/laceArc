@@ -1,7 +1,8 @@
 # The rustc toolchain → shelf 10 — Pass 6 PLAN · deep diagram audit (`P6-A` `P6-P` `P6-X` `P6-F` `P6-O` `P6-R`)
 
-**Status:** **`PLAN`** · not executed. **Station:** clipboards (HELD `Grok-clipboards` after takeover; original plan-time hold was `Claude-Projection` · BASE `014a8a3`). **Emission:** `[GAP]`. No `src/`.
-**Completion sit:** [`rust-target-pass-6-sit.md`](rust-target-pass-6-sit.md) — books now in hand; execute not started.
+**Status:** **`EXECUTED`** · 2026-09-20 · agent `Grok-clipboards`. **Emission:** `[GAP]`. No `src/`.
+**Completion sit:** [`rust-target-pass-6-sit.md`](rust-target-pass-6-sit.md).
+**Receipt:** [`rust-target-clipboard.md`](rust-target-clipboard.md) `P6-R` · machinery Pass 6 section. **Verdict: DIAGRAM SOUND WITH OPENS.**
 **Under test:** [`rust-target-ascii-machinery.md`](rust-target-ascii-machinery.md) — the ten-node spine, `P-R1`…`P-R18`, and the pass 5 mirror.
 **Prior accuracy (baselines — pass 6 goes deeper, it does not repeat them):** `P4-X` 18 PASS · `P5-X` 5 audits re-run and matching, cross-table **0 of 270**, 18 of 18 reach ratios recomputed.
 **Carriers the audit runs against:** [`rust-target-locators.md`](rust-target-locators.md) — 407 rows, 575 source lines · [`cargo-build-std-locators.md`](cargo-build-std-locators.md) — 38 rows.

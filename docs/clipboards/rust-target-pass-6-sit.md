@@ -1,6 +1,6 @@
 # The rustc toolchain → shelf 10 — Pass 6 SIT · completion order
 
-**Status:** **SIT** · not execute. **Station:** clipboards (HELD `Grok-clipboards` · BASE `9c8b967` at claim; tip after claim `1cd862f`).
+**Status:** **SIT consumed by EXECUTE** · ticket now `EXECUTED`. See clipboard `P6-R`.
 **Ticket:** [`rust-target-pass-6-plan.md`](rust-target-pass-6-plan.md) remains the pass. This file does not replace it.
 **Emission:** `[GAP]`. No `src/`. No verdict yet.
 

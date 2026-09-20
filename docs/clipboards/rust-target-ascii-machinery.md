@@ -127,8 +127,8 @@ Ten nodes. Every mechanism attaches to at least one; every node carries at least
    [7] ARTIFACT
    +----------------------------+
    | one .wasm module           |
-   | usize = 8 bytes; i64-      |
-   |   addressed memory         |
+   | usize = 8 bytes; 64-bit    |
+   |   memories (30620-23)      |
    | no libc, no C mixing       |
    | M-R14 M-R18                |
    +-------------+--------------+
@@ -153,6 +153,8 @@ Ten nodes. Every mechanism attaches to at least one; every node carries at least
    #   the strand / the array    - node [7]'s memory is not its domain
    #   the target seal           - wasm-spec-3's shelf, not this one
 ```
+stamp under spine: KEEP-read-as-toolchain | FORBID-as-Core | SILENT-for-Lace-append | [INFERENCE] — node boxes 1–8 and 10 are SOURCE at their M-R cites; node 9 is SHELF (project gates); arrows and pipeline order are composition, not a book sentence
+
 
 **Read the shape.** Nodes 1–7 are closed: the book states them at locators. **Node 9 is open on every row, and node 8 is open on its right edge** — the two nodes that would tell you whether the pipeline works are the two the shelf cannot close. Node 10 binds all of them and is itself the reason: a Tier 3 target with no builds and no tests.
 
@@ -396,8 +398,8 @@ stamp under fence: KEEP-read-as-toolchain | FORBID-as-Core | SILENT-for-Lace-app
 ```
    +----------------------------+
    | wasm64 does not support    |
-   | panic=unwind. abort is     |
-   | forced, not chosen. (30649)|
+   | panic=unwind at this time  |
+   | (30649)                    |
    +-------------+--------------+
                  |
                  v
@@ -876,7 +878,7 @@ stamp under fence: KEEP-read-as-toolchain | FORBID-as-Core | SILENT-for-Lace-app
    +------------------------------+
    | usize = 8 bytes              |
    | pointers = 8 bytes           |
-   | memory is i64-addressed      |
+   | 64-bit memories (30620-23)   |
    +--------------+---------------+
                   |
                   v
@@ -1093,3 +1095,95 @@ Per the plan: *"it is not toolchain machinery. Say so and cut it."* **The fence 
 | **Moved** | **nothing.** No `[GAP]` closed, no ruling taken, no build run, no book line newly cut, no script or `src/` added |
 
 **Emission `[GAP]`. Shoe in hands, or no.**
+
+---
+
+## Pass 6 — deep diagram audit · EXECUTED
+
+Pass 0–5 above are dated records and are **not rewritten by this section.** Spine stamp and two fence lines listed under `P6-F` are the only bytes this pass moved in the drawing.
+
+**Authority this session:** rustc book SHA `4a30e620a066c8157de4af674196df81694bb183ea09cef0a89dd8dbec4e74d3` (31,482 CRLF lines) · Cargo book SHA `9d7048e1ecb50ae5ed95dc64fe504cf968a4a9a7c2cc9c903e48ae38d163c0a5` (21,712 lines). Line numbers: strip `CR`, keep `LF`. Books not copied into git.
+
+### `P6-A` — the spine
+
+| Node | Class | Why |
+|---|---|---|
+| [1] pin | **SOURCE** | rustup / rust-src / nightly / `-Z` locators this shelf cites |
+| [2] target resolution | **SOURCE** | built-in name before path / `RUST_TARGET_PATH` (14906–14917) |
+| [3] std source | **SOURCE** | rust-src + `-Z build-std` + crate list (A4 8734–8752) |
+| [4] compile | **SOURCE** | cfg, panic, assumed proposals on the wasm64 page |
+| [5] codegen | **SOURCE** | `-C` options this shelf cites |
+| [6] link | **SOURCE** | `lld = true` on the wasm64 page; `wasm-ld` flavor at 1100 |
+| [7] artifact | **SOURCE** | usize/pointers 8 bytes, 64-bit memories, no known libc (30620–30689) |
+| [8] receipt | **SOURCE** | `--print` / `-V` are book options; **uncarried** (Reach NONE) |
+| [9] checks | **SHELF** | G1–G10 / `NOT_RUN` are this project's gates, not a rustc chapter |
+| [10] trust | **SOURCE** | Tier 3 policy + wasm64 `Tier: 3` |
+
+| Edges | Class |
+|---|---|
+| every arrow on the spine, including "reports into" node 8 and "binds" from node 10 | **`[INFERENCE]`** — conventional toolchain order; **not a sentence in the rustc book** |
+
+**`F1` fired as expected.** The spine wore no composition stamp. Stamp added under the fence (`P6-F`). No redraw.
+
+### `P6-P` — 208 factual fence lines
+
+Re-count of non-art, non-`#` lines inside the eighteen panel fences: **208**. Same number the sit carried. Box art, arrows and `#` refusal lines are not in this count (`P6-A` / `R-D3`).
+
+| Panel | Reach | n | CARRIED | BOOK-ONLY | SHELF | NOT FOUND |
+|---|---|---:|---:|---:|---:|---:|
+| `P-R1` | PARTIAL | 8 | 1 | 5 | 2 | 0 |
+| `P-R2` | FULL | 12 | 8 | 0 | 4 | 0 |
+| `P-R3` | PARTIAL | 14 | 6 | 2 | 6 | 0 |
+| `P-R4` | NONE | 11 | 0 | 4 | 7 | 0 |
+| `P-R5` | FULL | 10 | 6 | 0 | 4 | 0 |
+| `P-R6` | FULL | 15 | 8 | 3 | 4 | 0 |
+| `P-R7` | PARTIAL | 21 | 8 | 6 | 7 | 0 |
+| `P-R8` | PARTIAL | 6 | 2 | 2 | 2 | 0 |
+| `P-R9` | NONE | 9 | 0 | 5 | 4 | 0 |
+| `P-R10` | FULL | 11 | 6 | 1 | 4 | 0 |
+| `P-R11` | FULL | 15 | 10 | 0 | 5 | 0 |
+| `P-R12` | PARTIAL | 17 | 3 | 4 | 10 | 0 |
+| `P-R13` | FULL | 9 | 3 | 0 | 6 | 0 |
+| `P-R14` | FULL | 6 | 4 | 0 | 2 | 0 |
+| `P-R15` | PARTIAL | 7 | 1 | 3 | 3 | 0 |
+| `P-R16` | NONE | 18 | 0 | 12 | 6 | 0 |
+| `P-R17` | FULL | 5 | 3 | 0 | 2 | 0 |
+| `P-R18` | FULL | 14 | 6 | 1 | 7 | 0 |
+| **total** | | **208** | **75** | **48** | **85** | **0** |
+
+**`BOOK-ONLY` = 48, verified by one hand** against the SHA-verified rustc / Cargo files. A stranger with only the extract can check the **75 CARRIED**. The **85 SHELF** lines are project facts (gates, `NOT_RUN`, Page B assignments, R1/R11, law forbids) and cite Pages C/D/E/G, not the books.
+
+### `P6-X` — falsifiers
+
+| | Fired? | Evidence |
+|---|---|---|
+| **F1** unsourced structure | **yes** | spine arrows cited nothing; stamp added |
+| **F2** fence line the cited lines do not support | **yes, once, fixed** | `P-R6` said *"abort is forced, not chosen"* at 30649. 30649 is *"does not support panic=unwind at this time."* Line rewritten to the book's sentence. Graph rule 1247–1250 stays in the next box, where it belongs |
+| **F3** right line, wrong cite | **no** | `wasm-ld` on `P-R10` is supported by 1100 and 30261–30262, both already on that panel's cite list |
+| **F4** editor vocabulary as the source's | **yes, fixed** | spine node [7] and `P-R18` said *"i64-addressed memory"*. The rustc book says *64-bit memories* / *usize is 8-bytes*. *"i64"* stays on G9, which is SHELF |
+
+### `P6-F` — what moved
+
+1. Spine fence: stamp line `[INFERENCE]` added under the fence. Node [7] label *i64-addressed memory* → *64-bit memories (30620-23)*.
+2. `P-R6` first box: *abort is forced, not chosen* → *does not support panic=unwind at this time (30649)*.
+3. `P-R18` first box: *memory is i64-addressed* → *64-bit memories (30620-23)*. G9 line unchanged.
+
+No redraw. No `FM-Rust*`. No new extract rows. No `P5-P` edit.
+
+### `P6-O`
+
+Overview count = **1**. The spine above remains the only SOURCE MACHINERY overview in this file.
+
+### Named OPENS (not NOT-FOUND)
+
+| OPEN | Disposition |
+|---|---|
+| Node 9 every row `NOT_RUN` | SHELF. Stands. Not this pass |
+| Node 8 Reach NONE (0 of 9 `--print` ranges carried) | extract job cluster 1. Stands |
+| 48 BOOK-ONLY lines | stay BOOK-ONLY; not carried this pass |
+| `O1` *"cut it"* | the human's. Untouched |
+| rust-src identity / hash | book names the component, never a hash. SHELF/`NOT_RUN` |
+| A4 `compiler_builtins` / lockfile | already `[GAP]` on `P-R3`. Untouched |
+
+**Emission `[GAP]`.**
+
