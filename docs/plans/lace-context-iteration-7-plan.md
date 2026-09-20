@@ -43,7 +43,7 @@ Kit amendment (this sitting, kit station): [distribution-model.md](../kit/distri
 | **The kit amendment is the human's.** His words are quoted; the agent's reading of what they force is `[INFERENCE]` beneath them | C02 amendment rule |
 | **One reference per reply.** The queue is ordered by what each unblocks | the human's instruction |
 
-## 4. Pass 3 method (planned, not run)
+## 4. Pass 3 method (run — see the audit record)
 
 Read `systems-manifest-ascii.md` **top-down as a diagram**: every box on the Spine, Contract map, Fence, G-III cards and Pass-26 additions becomes a row; each row gets (component · owner contract or layer · what it depends on · what depends on it · evidence state · the pass that introduced it · whether anything after that pass contradicts it). Then the two questions a systems audit asks and a log audit never does: **is every dependency edge drawn** (or is a component used by something that does not cite it), and **is any component drawn twice under two names** (the Φ / Φ-morphism / Φ-schedule split was exactly that, found by iteration 5). Output: a dependency table, a duplicate list, a missing-edge list, and a verdict in the companion's own vocabulary — extend Pass 26; do not redo Pass 25.
 
