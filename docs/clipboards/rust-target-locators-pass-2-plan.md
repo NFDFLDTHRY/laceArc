@@ -1,6 +1,6 @@
 # The rustc book → locator extract — Pass 2 PLAN
 
-**Status:** **`PLAN`. Not executed.** **Station:** clipboards. **Emission:** `[GAP]`. No `src/`.
+**Status:** **`EXECUTED`** → [`rust-target-locators.md`](rust-target-locators.md) runs 2 and 3. **Falsifier 2 did not fire** (138 of 139 lines new). **Falsifier 1 fired narrowly and the pass narrowed rather than grew:** one cited line, 30154, lay outside the span, so one line entered — not the page. **Station:** clipboards. **Emission:** `[GAP]`. No `src/`.
 **Product:** [`rust-target-locators.md`](rust-target-locators.md) — pass 2 appends a second run.
 **Authority:** `refs/local/The-rustc-book.txt` · `sha256 4a30e620a066c8157de4af674196df81694bb183ea09cef0a89dd8dbec4e74d3`. **Not authority:** the extract.
 **Prior:** [pass 1](rust-target-locators-pass-1-plan.md) — the wasm64 page, `30597–30689`, EXECUTED.

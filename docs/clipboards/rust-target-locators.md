@@ -95,13 +95,229 @@ Lines 30690–30700 are the **`*-windows-gnu`** page — a different target, a d
 | 30689 | Rust with this target effectively cannot be done. |
 ---
 
-## What this run carries
+## Run 2 — the `wasm32-unknown-unknown` page
+
+**The page `wasm64` defers to.** `30613–30614`: *"The target supports std in the same manner as the wasm32-unknown-unknown target."* Six mechanisms carry a `W32` scope row and their evidence is here.
+
+### Fidelity — run 2
+
+| Field | Value |
+|---|---|
+| **Line span** | **30210–30471**, inclusive — 262 source lines, **173 carrying text** |
+| **Method** | `sed -n '30210,30471p'`, carriage return stripped. Nothing retyped |
+| **Verbatim / elided** | **Verbatim.** Blank lines dropped; a gap in the left column is a blank source line |
+| **Empty cells** | **0** — counted before commit, per [the pass 2 plan](rust-target-locators-pass-2-plan.md) §4, because at this length the CRLF defect pass 1 caught would have produced ~100 junk rows |
+| **Verified** | **Yes** — every non-blank source line present as a row; every `W32` locator resolves inside |
+| **Novelty** | **138 of 139** lines ≥25 characters are new against the clipboard's quotes. Tested **before** building, as the plan required |
+
+| Line | Text |
+|---|---|
+| 30210 | wasm32-unknown-unknown |
+| 30211 | Tier: 2 |
+| 30213 | The wasm32-unknown-unknown target is a WebAssembly compilation target which does not |
+| 30214 | import any functions from the host for the standard library. This is the “minimal” WebAssembly |
+| 30215 | in the sense of making the fewest assumptions about the host environment. This target is often |
+| 30216 | used when compiling to the web or JavaScript environments as there is no standard for what |
+| 30217 | functions can be imported on the web. This target can also be useful for creating minimal or |
+| 30218 | bare-bones WebAssembly binaries. |
+| 30220 | The wasm32-unknown-unknown target has support for the Rust standard library but many parts |
+| 30221 | of the standard library do not work and return errors. For example println! does nothing, |
+| 30222 | std::fs always return errors, and std::thread::spawn will panic. There is no means by |
+| 30223 | which this can be overridden. For a WebAssembly target that more fully supports the standard |
+| 30224 | library see the wasm32-wasip1 or wasm32-wasip2 targets. |
+| 30226 | The wasm32-unknown-unknown target has full support for the core and alloc crates. It |
+| 30227 | additionally supports the HashMap type in the std crate, although hash maps are not |
+| 30228 | randomized like they are on other platforms. |
+| 30230 | One existing user of this target (please feel free to edit and expand this list too) is the wasm- |
+| 30231 | bindgen project which facilitates Rust code interoperating with JavaScript code. Note, though, |
+| 30232 | that not all uses of wasm32-unknown-unknown are using JavaScript and the web. |
+| 30237 | Target maintainers |
+| 30238 | When this target was added to the compiler, platform-specific documentation here was not |
+| 30239 | maintained at that time. This means that the list below is not exhaustive, and there are more |
+| 30240 | interested parties in this target. That being said, those interested in maintaining this target are: |
+| 30242 | @alexcrichton |
+| 30247 | Requirements |
+| 30248 | This target is cross-compiled. The target includes support for std itself, but as mentioned |
+| 30249 | above many pieces of functionality that require an operating system do not work and will |
+| 30250 | return errors. |
+| 30252 | This target currently has no equivalent in C/C++. There is no C/C++ toolchain for this target. |
+| 30253 | While interop is theoretically possible it’s recommended to instead use one of: |
+| 30255 | wasm32-unknown-emscripten - for web-based use cases the Emscripten toolchain is |
+| 30256 | typically chosen for running C/C++. |
+| 30257 | wasm32-wasip1 - the wasi-sdk toolchain is used to compile C/C++ on this target and can |
+| 30258 | interop with Rust code. WASI works on the web so far as there’s no blocker, but an |
+| 30259 | implementation of WASI APIs must be either chosen or reimplemented. |
+| 30261 | This target has no build requirements beyond what’s in-tree in the Rust repository. Linking |
+| 30262 | binaries requires LLD to be enabled for the wasm-ld driver. This target uses the dlmalloc |
+| 30263 | crate as the default global allocator. |
+| 30268 | Building the target |
+| 30269 | Building this target can be done by: |
+| 30271 | Configure the wasm32-unknown-unknown target to get built. |
+| 30272 | Configure LLD to be built. |
+| 30273 | Ensure the WebAssembly target backend is not disabled in LLVM. |
+| 30275 | These are all controlled through bootstrap.toml options. It should be possible to build this |
+| 30276 | target on any platform. |
+| 30281 | Building Rust programs |
+| 30282 | Rust programs can be compiled by adding this target via rustup: |
+| 30284 | $ rustup target add wasm32-unknown-unknown |
+| 30287 | and then compiling with the target: |
+| 30289 | $ rustc foo.rs --target wasm32-unknown-unknown |
+| 30290 | $ file foo.wasm |
+| 30291 | Cross-compilation |
+| 30292 | This target can be cross-compiled from any host. |
+| 30297 | Testing |
+| 30298 | This target is not tested in CI for the rust-lang/rust repository. Many tests must be disabled to |
+| 30299 | run on this target and failures are non-obvious because println! doesn’t work in the standard |
+| 30300 | library. It’s recommended to test the wasm32-wasip1 target instead for WebAssembly |
+| 30301 | compatibility. |
+| 30306 | Conditionally compiling code |
+| 30307 | It’s recommended to conditionally compile code for this target with: |
+| 30309 | #[cfg(all(target_family = "wasm", target_os = "unknown"))] |
+| 30312 | Note that there is no way to tell via #[cfg] whether code will be running on the web or not. |
+| 30317 | Enabled WebAssembly features |
+| 30318 | WebAssembly is an evolving standard which adds new features such as new instructions over |
+| 30319 | time. This target’s default set of supported WebAssembly features will additionally change over |
+| 30320 | time. The wasm32-unknown-unknown target inherits the default settings of LLVM which typically |
+| 30321 | matches the default settings of Emscripten as well. |
+| 30323 | Changes to WebAssembly go through a proposals process but reaching the final stage (stage 5) |
+| 30324 | does not automatically mean that the feature will be enabled in LLVM and Rust by default. At |
+| 30325 | this time the general guidance is that features must be present in most engines for a “good |
+| 30326 | chunk of time” before they’re enabled in LLVM by default. There is currently no exact number |
+| 30327 | of months or engines that are required to enable features by default. |
+| 30329 | As of the time of this writing the proposals that are enabled by default (the generic CPU in |
+| 30330 | LLVM terminology) are: |
+| 30332 | multivalue |
+| 30333 | mutable-globals |
+| 30334 | reference-types |
+| 30335 | sign-ext |
+| 30336 | nontrapping-fptoint (Rust 1.87.0+, LLVM 20+) |
+| 30337 | bulk-memory (Rust 1.87.0+, LLVM 20+) |
+| 30339 | If you’re compiling WebAssembly code for an engine that does not support a feature in LLVM’s |
+| 30340 | default feature set then the feature must be disabled at compile time. There are two |
+| 30341 | approaches to choose from: |
+| 30343 | If you are targeting a feature set no smaller than the W3C WebAssembly Core 1.0 |
+| 30344 | recommendation – which is equivalent to the WebAssembly MVP plus the mutable- |
+| 30345 | globals feature – and you are building no_std , then you can simply use the wasm32v1- |
+| 30346 | none target instead of wasm32-unknown-unknown , which uses only those minimal features |
+| 30347 | and includes a core and alloc library built with only those minimal features. |
+| 30349 | Otherwise – if you need std, or if you need to target the ultra-minimal “MVP” feature set, |
+| 30350 | excluding mutable-globals – you will need to manually specify -Ctarget-cpu=mvp and |
+| 30351 | also rebuild the stdlib using that target to ensure no features are used in the stdlib. This in |
+| 30352 | turn requires use of a nightly compiler. |
+| 30354 | Compiling all code for the initial release of WebAssembly looks like: |
+| 30356 | $ export RUSTFLAGS=-Ctarget-cpu=mvp |
+| 30357 | $ cargo +nightly build -Zbuild-std=panic_abort,std --target wasm32-unknown-unknown |
+| 30360 | Here the mvp “cpu” is a placeholder in LLVM for disabling all supported features by default. |
+| 30361 | Cargo’s -Zbuild-std feature, a Nightly Rust feature, is then used to recompile the standard |
+| 30362 | library in addition to your own code. This will produce a binary that uses only the original |
+| 30363 | WebAssembly features by default and no proposals since its inception. |
+| 30365 | To enable individual features on either this target or wasm32v1-none , pass arguments of the |
+| 30366 | form -Ctarget-feature=+foo . Available features for Rust code itself are documented in the |
+| 30367 | reference and can also be found through: |
+| 30369 | $ rustc -Ctarget-feature=help --target wasm32-unknown-unknown |
+| 30372 | You’ll need to consult your WebAssembly engine’s documentation to learn more about the |
+| 30373 | supported WebAssembly features the engine has. |
+| 30375 | Note that it is still possible for Rust crates and libraries to enable WebAssembly features on a |
+| 30376 | per-function level. This means that the build command above may not be sufficient to disable |
+| 30377 | all WebAssembly features. If the final binary still has SIMD instructions, for example, the |
+| 30378 | function in question will need to be found and the crate in question will likely contain |
+| 30379 | something like: |
+| 30381 | #[target_feature(enable = "simd128")] |
+| 30382 | fn foo() { |
+| 30383 | // ... |
+| 30384 | } |
+| 30387 | In this situation there is no compiler flag to disable emission of SIMD instructions and the crate |
+| 30388 | must instead be modified to not include this function at compile time either by default or |
+| 30389 | through a Cargo feature. For crate authors it’s recommended to avoid # |
+| 30390 | [target_feature(enable = "...")] except where necessary and instead use: |
+| 30393 | #[cfg(target_feature = "simd128")] |
+| 30394 | fn foo() { |
+| 30395 | // ... |
+| 30396 | } |
+| 30399 | That is to say instead of enabling target features it’s recommended to conditionally compile |
+| 30400 | code instead. This is notably different to the way native platforms such as x86_64 work, and |
+| 30401 | this is due to the fact that WebAssembly binaries must only contain code the engine |
+| 30402 | understands. Native binaries work so long as the CPU doesn’t execute unknown code |
+| 30403 | dynamically at runtime. |
+| 30408 | Unwinding |
+| 30409 | By default the wasm32-unknown-unknown target is compiled with -Cpanic=abort . Historically |
+| 30410 | this was due to the fact that there was no way to catch panics in wasm, but since mid-2025 the |
+| 30411 | WebAssembly exception-handling proposal reached stabilization. LLVM has support for this |
+| 30412 | proposal as well and when this is all combined together it’s possible to enable -Cpanic=unwind |
+| 30413 | on wasm targets. |
+| 30415 | Compiling wasm targets with -Cpanic=unwind is not as easy as just passing -Cpanic=unwind , |
+| 30416 | however: |
+| 30418 | $ rustc foo.rs -Cpanic=unwind --target wasm32-unknown-unknown |
+| 30419 | error: the crate `panic_unwind` does not have the panic strategy `unwind` |
+| 30422 | Notably the precompiled standard library that is shipped through Rustup is compiled with - |
+| 30423 | Cpanic=abort , not -Cpanic=unwind . While this is the case you’re going to be required to use |
+| 30424 | Cargo’s -Zbuild-std feature to build with unwinding support: |
+| 30425 | $ RUSTFLAGS='-Cpanic=unwind' cargo +nightly build --target wasm32-unknown-unknown |
+| 30426 | -Zbuild-std |
+| 30429 | Note, however, that as of 2025-10-03 LLVM is still using the “legacy exception instructions” by |
+| 30430 | default, not the officially standard version of the exception-handling proposal: |
+| 30432 | $ wasm-tools validate target/wasm32-unknown-unknown/debug/foo.wasm |
+| 30433 | error: <sysroot>/library/std/src/sys/backtrace.rs:161:5 |
+| 30434 | function `std::sys::backtrace::__rust_begin_short_backtrace` failed to validate |
+| 30436 | Caused by: |
+| 30437 | 0: func 2 failed to validate |
+| 30438 | 1: legacy_exceptions feature required for try instruction (at offset 0x880) |
+| 30441 | Fixing this requires passing -Cllvm-args=-wasm-use-legacy-eh=false to the Rust compiler as |
+| 30442 | well: |
+| 30444 | $ RUSTFLAGS='-Cpanic=unwind -Cllvm-args=-wasm-use-legacy-eh=false' cargo +nightly |
+| 30445 | build --target wasm32-unknown-unknown -Zbuild-std |
+| 30446 | $ wasm-tools validate target/wasm32-unknown-unknown/debug/foo.wasm |
+| 30449 | At this time there are no concrete plans for adding new targets to the Rust compiler which have |
+| 30450 | -Cpanic=unwind enabled-by-default. The most likely route to having this enabled is that in a |
+| 30451 | few years when the exception-handling target feature is enabled by default in LLVM (due to |
+| 30452 | browsers/runtime support propagating widely enough) the targets will switch to using - |
+| 30453 | Cpanic=unwind by default. This is not for certain, however, and will likely be accompanied with |
+| 30454 | either an MCP or an RFC about changing all wasm targets in the same manner. In the |
+| 30455 | meantime using -Cpanic=unwind will require using -Zbuild-std and passing the appropriate |
+| 30456 | flags to rustc. |
+| 30460 | The exception tag for panics |
+| 30462 | Rust panics are currently implemented as a specific class of C++ exceptions. This is because |
+| 30463 | llvm only supports throwing and catching the C++ exception tag from wasm_throw intrinsic and |
+| 30464 | the lowering for the catchpads emitted by the Rust try intrinsic. |
+| 30466 | In particular, llvm throw and catch blocks expect a WebAssembly.Tag symbol called |
+| 30467 | __cpp_exception . If it is not defined somewhere, llvm will generate an Emscripten style import |
+| 30468 | from env.__cpp_exception . We don’t want this, so we define the symbol in libunwind but |
+| 30469 | only for wasm32-unknown-unknown. WASI doesn’t currently support unwinding at all, and the |
+| 30470 | Emscripten linker provides the tag in an appropriate manner depending on what sort of binary |
+| 30471 | is being linked. |
+
+---
+
+## Run 3 — one line the rule admits, and the page it sits on that the rule refuses
+
+**`M-R3` cites line 30154 for the bare `-Zbuild-std` form.** That line is on the **`wasm32-unknown-emscripten`** page — a page this shelf cites *only to refuse it* (Page E: *"`wasm-bindgen`, Emscripten … foreign crates; JS glue; a different target"*).
+
+**So the rule stated in [pass 2 §2](rust-target-locators-pass-2-plan.md) did its first real work here:** *an extract carries the lines a claim rests on, not the lines a claim refuses.* `M-R3` **rests on** 30154 — it is the mechanism's evidence, not a refusal — so the line enters. `30058` and `30077`, cited in the same anti-import row, **do not**.
+
+**One line enters, 151 stay out.** The rule admits lines, not pages.
+
+| Field | Value |
+|---|---|
+| **Line span** | **30154** — one line |
+| **Page it is on** | `wasm32-unknown-emscripten`, 30058–30209 — **not carried** |
+| **Why carried** | `M-R3` rests on it; the anti-import citations of the same page do not |
+| **Verified** | Yes |
+
+| Line | Text |
+|---|---|
+| 30154 | cargo +nightly -Zbuild-std build |
+
+---
+
+## What these runs carry
 
 | | |
 |---|---|
 | Pass 0 eye entries resolving here | **E1–E11** — all fourteen entries' wasm64-page rows |
 | Pass 1 mechanisms resolving here | **M-R1, M-R2, M-R5, M-R6, M-R7, M-R8, M-R14, M-R15, M-R17, M-R18** |
-| Deferrals **out** of this run | 30613 defers std behaviour to the wasm32 page; 30654–30663 and 30669–30671 name build-std and the bootstrap route. **Those pages are other runs and are not chased here** |
+| Deferrals **out** of run 1 | 30613 defers std behaviour to the wasm32 page — **carried by run 2.** 30654–30663 and 30669–30671 name build-std and the bootstrap route |
+| Run 2 `W32` mechanisms | **M-R5, M-R6, M-R7, M-R8, M-R10, M-R13** — all twelve of their cited ranges resolve inside |
+| Run 3 | **30154 only.** `M-R3`'s bare `-Zbuild-std` evidence, lifted off a page this shelf otherwise refuses |
 
 **A deferral is not missing context.** Each sentence above is complete and states its claim; where it points elsewhere, the pointer is the content.
 
@@ -109,5 +325,5 @@ Lines 30690–30700 are the **`*-windows-gnu`** page — a different target, a d
 
 - **Not authority.** The book at the SHA is.
 - **Not the shelf's reading.** [The clipboard](rust-target-clipboard.md) maps these lines onto sheets, gates and rulings. This file only shows what the lines say.
-- **Not a licence to grow.** A line enters this shelf's extracts because a tree document cites it, never because it is useful. This run entered whole because the page is one contiguous citation.
+- **Not a licence to grow.** **An extract carries the lines a claim *rests on*, not the lines a claim *refuses*.** Stated in [pass 2 §2](rust-target-locators-pass-2-plan.md) and applied at once: `M-R3` rests on line 30154, so that line is here; the 152-line Emscripten page it sits on is cited only to be refused, so **151 lines stayed out**. The rule admits lines, not pages.
 - **Not emission.** Nothing here bears on Φ. `[GAP]` stands.
