@@ -1,10 +1,10 @@
 #!/bin/bash
 # SessionStart hook for Claude Code on the web.
 #
-# laceArc has no dependency manifest, no build, and no runtime — that is the
-# point of the repo, not an omission (README.md "Status", AGENTS.md "Job").
-# So this hook installs nothing. It confirms the model tree is intact and
-# hands that result to the session.
+# laceArc has Layer III viewers and steward scripts, but no Lace Core
+# implementation. Core requires the human's in-repo acceptance of
+# docs/pointer-emission.md (AGENTS.md "Job"). This hook installs nothing;
+# it reports the existing repository checks to the session.
 #
 # Standing orders live in AGENTS.md and are loaded via CLAUDE.md; they are not
 # repeated here. One source of record.
@@ -18,9 +18,9 @@ fi
 cd "${CLAUDE_PROJECT_DIR:-$(git rev-parse --show-toplevel)}" || exit 0
 
 echo "laceArc session environment"
-echo "No dependencies to install: this is a model repository with no runtime."
-echo "There is no src/, no build, and no test suite. Do not create them to"
-echo "'get something running' — see AGENTS.md."
+echo "This hook installs nothing. Layer III viewers and steward scripts exist."
+echo "Lace Core is not implemented. Do not create src/ to 'get something running'."
+echo "Core requires human acceptance of docs/pointer-emission.md in-repo; see AGENTS.md."
 echo
 echo "Repository checks (.claude/hooks/check-docs.sh):"
 

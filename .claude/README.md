@@ -10,6 +10,6 @@ Session wiring for agents working in this repository. **Steward tooling, not Cor
 
 Owned by the `kit` station. The checks are documentation checks over the tree, not a compliance gate — see [downstream-audit.md](../docs/kit/downstream-audit.md) F06 and F07 for what they do not cover.
 
-The repository has Layer III viewers and steward scripts, but no Lace Core implementation. The session hook's older “no runtime” wording must be read within that Core scope; its script is unchanged by this documentation pass. Hook execution is registered for Claude Code web sessions, not every agent harness.
+The repository has Layer III viewers and steward scripts, but no Lace Core implementation. The hooks state that distinction and the human's in-repo acceptance requirement for pointer emission. The tracked-path check does not determine acceptance. The session hook installs nothing; execution is registered for Claude Code web sessions, not every agent harness. Hook predicates, registration, exit behavior and advisory checks are unchanged by this wording correction.
 
 POINTER emission stays `[GAP]`. There is no `src/`.

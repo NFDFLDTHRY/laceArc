@@ -1,9 +1,9 @@
 #!/bin/bash
 # Repository checks for laceArc.
 #
-# There is no build, no test suite, and no linter here: the repo is a model,
-# not an implementation (see README.md "Status" and AGENTS.md "Job").
-# What can still be checked is that the model tree holds its own invariants.
+# Lace Core is not implemented; Layer III viewers and steward scripts exist
+# (see README.md "Status" and AGENTS.md "Job"). These repository checks do
+# not run those viewers or establish human acceptance of pointer emission.
 #
 # Exit 0 = clean. Exit 1 = at least one check failed.
 set -uo pipefail
@@ -44,11 +44,12 @@ else
   note_fail "canonical graphics missing or empty: ${missing[*]}"
 fi
 
-# 2. No src/. AGENTS.md "Never": do not add src/ to get something running.
+# 2. No src/. Core requires human acceptance of docs/pointer-emission.md;
+# this tracked-path check does not determine acceptance (AGENTS.md "Job").
 if git ls-files --error-unmatch src >/dev/null 2>&1; then
-  note_fail "src/ is tracked — Core must not exist before docs/pointer-emission.md"
+  note_fail "src/ is tracked — Core requires human acceptance of docs/pointer-emission.md"
 else
-  note_ok "no src/ (Core stays unwritten until the pointer-emission rule is)"
+  note_ok "no src/ (Core requires human acceptance of the pointer-emission rule)"
 fi
 
 # 3. No PDFs. References are citations only (docs/references.md, .gitignore).
