@@ -167,8 +167,16 @@ label that no longer identifies what it once did.
 
 ## What this reading does not claim
 
-The primary's verdicts stand. This file found **no conflict** with it and proposes
-no change to any stamp. Two items initially held as additive were checked and
+The primary's verdicts stand. This file found **no conflict at the verdict level**
+with it and proposes no change to any stamp.
+
+> **Correction.** An earlier revision said simply "no conflict," which was a false
+> mesh by the definition in `agent-interaction-model.md` §3b F1 — agreement that
+> preserves apparent assent while the readings differ. The verdicts matched; the
+> readings did not. Eight of ten spot-checked findings were absent from the
+> primary entirely. Two readings can agree on every verdict and still be reading
+> different things, and that difference is the information rule 3 says averaging
+> destroys. The count was right. The word was wrong. Two items initially held as additive were checked and
 withdrawn: the RIC∥PFC fan-out (the primary contracts it as a mesh) and graphics
 provenance (the primary carries it as open `[GAP]` 8).
 
