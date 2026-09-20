@@ -36,7 +36,7 @@ Existing Layer III software replays the fixed eleven-row D1 specimen and display
 | File | Role |
 |---|---|
 | [lace-projection.html](lace-projection.html) | JavaScript + WGSL WebGPU viewer of D1 time; glyphs ≠ schema |
-| [hcc-a-projection.html](hcc-a-projection.html) | Canvas 2D projection of the HCC-A analysis; visible classification correction remains pending |
+| [hcc-a-projection.html](hcc-a-projection.html) | Canvas 2D projection of the HCC-A analysis; persistent conceptual-reference qualification is present in source, browser layout remains unobserved |
 | [projection-bake-worker.js](projection-bake-worker.js) | JavaScript vertex bake with transferable buffers; returns `wasm: false` |
 | [sw.js](sw.js) · [manifest.webmanifest](manifest.webmanifest) | Development PWA shell; historical Android installation evidence is recorded in the deployment policy |
 | [wasm/](wasm/README.md) | Historical wasm32 bake attempt, current JavaScript path, and separate proposed wasm64 Core target |
@@ -44,9 +44,11 @@ Existing Layer III software replays the fixed eleven-row D1 specimen and display
 
 ### Source, evidence, and release status (2026-09-20)
 
-**Scope:** source inspection at `0b2012bb221184f684f672f63260c6b1ecd9427b`; no browser or device run in this documentation update. The current service worker precaches only the two icons and uses network-first loading for HTML and JavaScript. Other same-origin resources are cached on use. This is not the complete offline production carrier proposed in the [distribution model](../kit/distribution-model.md). The viewer's WebNN indicator records whether context creation succeeded; it does not demonstrate neural-network execution.
+**Current scope:** [pass 2](../plans/repo-update-pass-2-evidence.md) was published at `e14b13c08fbfe6c280e9f0460d383a6be4479865`. [Pass 3](../plans/repo-update-pass-3-evidence.md) adds local source repairs and [51 synthetic runtime checks](tests/README.md), including worker recovery, filament/plasma classification, truthful diagnostics and bounded release selection. The expanded fixture passes 24 and fails 27 against the pass 2 base, and passes all 51 on the repaired source. No browser or device result follows from those checks; the fresh browser preflight found no usable executable or service.
 
-The conceptual-reference correction is present in the current Markdown analyses. It is not yet carried into the executable views: the HCC-A viewer discards the Markdown preamble containing that correction, and the separate gearing viewer still displays the earlier machinery labels and contract text. The [update-pass evidence map](../plans/repo-update-pass-1-evidence.md) records that visibility gap as U19 and keeps renderer/recovery work separate from documentation changes.
+The ordinary HCC-A and nostd viewer qualifications were published at `5e40a20`; AB/BC/CA binding prose was corrected at `bad05ca`. The HCC-A page has a persistent source qualification even though its Markdown parser selects headings and table rows. Its narrow/wide layout remains unobserved. The frozen gearing viewer still awaits the designated-editor condition; its prepared patch remains **NOT_APPLIED** ([pass 2 §10](../plans/repo-update-pass-2-evidence.md#10-prepared-frozen-renderer-edit)). These source corrections do not close that separate renderer gate or establish browser-visible results.
+
+The service worker still precaches only the two icons and uses network-first loading for HTML and JavaScript. Other same-origin resources are cached on use. This is not the complete offline production carrier proposed in the [distribution model](../kit/distribution-model.md). The viewer now labels successful WebNN context creation at that strength, with no inference claim. Its audit checks HTTP success and a parsed manifest object; icons remain explicitly unverified.
 
 [LATEST.json](LATEST.json) still names **ixp2 at `3b619929182e98ccaa348a2fc696b98c2e416a2e`**. The [pinned ixp2 development URL](https://rawcdn.githack.com/NFDFLDTHRY/laceArc/3b619929182e98ccaa348a2fc696b98c2e416a2e/docs/clock/lace-projection.html) and its relative resources remain at that commit; a change on main does not update them. This update does not promote a release or verify that URL on a device. The [ixp2 pass receipt](passes/projection-interaction-pass-2-plan.md) records an executed change, but its observation is the preceding ixp1 image with a lone green volume. Its required ixp2 combined view remains an unverified success criterion in that receipt.
 
@@ -56,7 +58,7 @@ The conceptual-reference correction is present in the current Markdown analyses.
 https://rawcdn.githack.com/NFDFLDTHRY/laceArc/<FULL_COMMIT_SHA>/docs/clock/lace-projection.html
 ```
 
-The manifest and service-worker scope are relative to that pinned path. A new commit is a new URL. The viewer's Update action resolves the release pointer and navigates to its SHA; installed identity, cache retention, and successful rendering require their own observations. The repository's current branch and its release pointer are distinct.
+The manifest and service-worker scope are relative to that pinned path. A new commit is a new URL. The current-source Update action resolves only a pointer with the exact app identity/path and a full SHA, with 2500 ms per provider including body reads; exhaustion retains the pin and permits retry. Selection is available without SW registration; a same pin reports that limitation. Installed identity, cache retention, and successful rendering require their own observations. The repository's current branch and its release pointer are distinct.
 
 **Preview / audit:** `raw.githack.com` against `main` or a SHA is fine to *look*. Do not Add-to-Home-Screen those.
 

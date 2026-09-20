@@ -178,7 +178,10 @@ function page(options = {}) {
     updateCalls: 0,
     async update() { this.updateCalls++; if (options.updateError) throw new Error('fixture SW update failure'); return this; }
   });
-  const serviceWorker = Object.assign(new Events(), { controller: {}, register: async () => reg });
+  const serviceWorker = Object.assign(new Events(), { controller: {}, register: async () => {
+    if (options.registrationError) throw new Error('fixture registration failure');
+    return reg;
+  } });
   const location = { pathname: `/NFDFLDTHRY/laceArc/${PIN}/${APP}`, replace: url => navigations.push(url) };
   const globalEvents = new Events();
   const context = vm.createContext({
@@ -189,14 +192,15 @@ function page(options = {}) {
     GPUBufferUsage: { VERTEX: 1, COPY_DST: 2, UNIFORM: 4 }, GPUTextureUsage: { RENDER_ATTACHMENT: 1 },
     requestAnimationFrame(fn) { const id = ++counter; raf.set(id, fn); return id; },
     cancelAnimationFrame: id => raf.delete(id),
-    setTimeout(fn) { const id = ++counter; timers.set(id, fn); return id; }, clearTimeout: id => timers.delete(id),
+    setTimeout(fn, delay) { const id = ++counter; timers.set(id, { fn, delay }); return id; }, clearTimeout: id => timers.delete(id),
     addEventListener: (...args) => globalEvents.addEventListener(...args),
-    fetch: async url => {
+    fetch: async (url, init) => {
       requests.push(url);
+      if (options.response) return options.response(url, requests.length, init);
       const value = options.fetch ? await options.fetch(url, requests.length) : { id: ID, html: APP, sha: PIN };
       return { ok: true, json: async () => value, headers: { get: () => 'application/json' } };
     },
-    URL, Blob,
+    URL, Blob, AbortController,
     Worker: class {
       postMessage() {
         queueMicrotask(() => this.onmessage({ data: Object.fromEntries(['P', 'N', 'C', 'B'].map(k => [k, baked.worker[k].buffer]).concat([['fCount', 6], ['wasm', false]])) }));
@@ -206,9 +210,18 @@ function page(options = {}) {
   });
   context.window = context;
   context.matchMedia = () => ({ matches: false });
+  if (options.noSW) delete context.navigator.serviceWorker;
+  if (options.ml) context.navigator.ml = options.ml;
   vm.runInContext(pageScript, context, { timeout: 1000 });
   return {
     context, get, body, device, reg, requests, navigations, messages, submissions, attempts,
+    async expire(delay) {
+      await settle();
+      const timer = [...timers].find(([, entry]) => entry.delay === delay);
+      assert.ok(timer, `actual page must bound this pending operation at ${delay} ms`);
+      timers.delete(timer[0]); timer[1].fn(); await settle();
+    },
+    async audit() { await vm.runInContext('runAudit()', context); await settle(); },
     async frame() {
       const before = attempts.length;
       for (let i = 0; i < 12; i++) {
@@ -388,4 +401,229 @@ test('P2-09: Holder doors opt into the HUD pointer-access rule', () => {
   const classes = aside.match(/\bclass="([^"]*)"/)?.[1].split(/\s+/) || [];
   assert.ok(classes.includes('hit'), 'reference links must opt into HUD pointer events');
   assert.match(html, /\.hud\s+\.hit\s*\{\s*pointer-events\s*:\s*auto/);
+});
+
+// Controlled browser event boundary around the actual worker client and fallback.
+// Timers are advanced explicitly; an unresolved promise fails an observation,
+// rather than hanging Node or replacing the source's settlement algorithm.
+function observed(promise) {
+  const result = { state: 'pending' };
+  promise.then(value => Object.assign(result, { state: 'fulfilled', value }), error => Object.assign(result, { state: 'rejected', error }));
+  return result;
+}
+function packedScene() {
+  return Object.fromEntries(['P', 'N', 'C', 'B'].map(k => [k, baked.worker[k].buffer]).concat([['fCount', 6], ['wasm', false]]));
+}
+function transport(options = {}) {
+  const timers = new Map(), workers = [], errors = [], requests = [], revoked = [];
+  let counter = 0;
+  const context = vm.createContext({
+    AbortController, Blob,
+    URL: { createObjectURL: () => 'blob:fixture-worker', revokeObjectURL: value => revoked.push(value) },
+    document: { getElementById: () => ({ textContent: '' }) },
+    setTimeout(fn, delay) { const id = ++counter; timers.set(id, { fn, delay }); return id; },
+    clearTimeout(id) { timers.delete(id); },
+    fetch: async (url, init) => {
+      requests.push({ url, init });
+      return options.response ? options.response(url, init) : { ok: true, text: async () => worker };
+    },
+    Worker: class {
+      constructor(url) {
+        if (options.constructorError) throw new Error('fixture constructor failure');
+        this.url = url; this.terminations = 0; workers.push(this);
+      }
+      postMessage() {
+        if (options.postError) throw new Error('fixture post failure');
+        if (options.start) queueMicrotask(() => options.start(this, workers.length));
+      }
+      message(data) { try { this.onmessage({ data }); } catch (error) { errors.push(error); } }
+      terminate() { this.terminations++; }
+    }
+  });
+  const geometryStart = pageScript.indexOf('const D1 = [');
+  const geometryEnd = pageScript.indexOf('const WGSL = `');
+  const clientStart = pageScript.includes('function readBodyWithin(')
+    ? pageScript.indexOf('function readBodyWithin(') : pageScript.indexOf('function bakeViaWorker(');
+  const clientEnd = pageScript.indexOf('let playing=');
+  assert.ok(clientStart >= 0 && clientEnd > clientStart);
+  vm.runInContext(pageScript.slice(geometryStart, geometryEnd) + pageScript.slice(clientStart, clientEnd), context, { timeout: 1000 });
+  return {
+    workers, timers, errors, requests, revoked,
+    worker: () => observed(vm.runInContext('bakeViaWorker()', context)),
+    scene: () => observed(vm.runInContext('bakeScene()', context)),
+    async expire() {
+      await settle();
+      const timer = [...timers].find(([, entry]) => entry.delay === 2500);
+      assert.ok(timer, 'pending transport must retain a 2500 ms deadline');
+      timers.delete(timer[0]); timer[1].fn(); await settle();
+    }
+  };
+}
+for (const [name, change] of [
+  ['null data', () => null], ['missing fields', () => ({})],
+  ['misaligned buffer', () => ({ ...packedScene(), P: new ArrayBuffer(1) })],
+  ['wrong field type', () => ({ ...packedScene(), P: 9 })],
+  ['mismatched lengths', () => ({ ...packedScene(), B: new ArrayBuffer(4) })],
+  ['invalid floor count', () => ({ ...packedScene(), fCount: -1 })]
+]) {
+  test(`P3-05: worker ${name} rejects and cleans up before fallback`, async () => {
+    const app = transport();
+    const result = app.worker();
+    app.workers[0].message(change());
+    await settle();
+    assert.equal(result.state, 'rejected');
+    assert.equal(app.errors.length, 0, 'decode errors must reject, not escape the message callback');
+    assert.equal(app.workers[0].terminations, 1);
+    assert.equal(app.timers.size, 0);
+    app.workers[0].message(packedScene());
+    assert.equal(app.workers[0].terminations, 1, 'late delivery cannot repeat cleanup');
+    assert.equal(result.state, 'rejected');
+  });
+}
+for (const event of ['valid', 'error', 'timeout', 'constructor', 'post']) {
+  test(`P3-05: worker ${event} settles once, including late delivery`, async () => {
+    const app = transport({ constructorError: event === 'constructor', postError: event === 'post' });
+    const result = app.worker();
+    if (event === 'valid') app.workers[0].message(packedScene());
+    if (event === 'error') app.workers[0].onerror(new Error('fixture worker error'));
+    if (event === 'timeout') await app.expire();
+    await settle();
+    assert.equal(result.state, event === 'valid' ? 'fulfilled' : 'rejected');
+    assert.equal(app.timers.size, 0);
+    for (const w of app.workers) {
+      assert.equal(w.terminations, 1);
+      w.message(packedScene());
+      if (w.onerror) w.onerror(new Error('late error'));
+      assert.equal(w.terminations, 1);
+    }
+    assert.equal(app.errors.length, 0);
+    if (event === 'valid') assert.equal(result.value.P.length, baked.worker.P.length);
+  });
+}
+for (const stage of ['fetch', 'body']) {
+  test(`P3-08: stalled fallback ${stage} reaches inline bake; late rejection is consumed`, async () => {
+    let rejectLate;
+    const pending = new Promise((resolve, reject) => { rejectLate = reject; });
+    const app = transport({
+      start: w => w.onerror(new Error('fixture direct worker failure')),
+      response: () => stage === 'fetch' ? pending : { ok: true, text: () => pending }
+    });
+    const result = app.scene();
+    await settle();
+    assert.equal(app.requests.length, 1);
+    await app.expire();
+    assert.equal(result.state, 'fulfilled');
+    assert.equal(result.value.P.length, baked.inline.P.length);
+    assert.equal(app.requests[0].init.signal.aborted, true);
+    rejectLate(new Error('late transport rejection'));
+    await settle();
+    assert.equal(result.value.P.length, baked.inline.P.length);
+    assert.equal(app.workers.length, 1, 'expired source must not create a blob worker');
+  });
+}
+for (const blobValid of [true, false]) {
+  test(`P3-05: malformed direct worker continues through blob fallback; valid=${blobValid}`, async () => {
+    const app = transport({ start: (w, n) => w.message(n === 2 && blobValid ? packedScene() : null) });
+    const result = app.scene();
+    await settle();
+    assert.equal(result.state, 'fulfilled');
+    assert.equal(result.value.P.length, blobValid ? baked.worker.P.length : baked.inline.P.length);
+    assert.equal(app.workers.length, 2);
+    assert.ok(app.workers.every(w => w.terminations === 1));
+    assert.deepEqual(app.revoked, ['blob:fixture-worker']);
+    assert.equal(app.timers.size, 0);
+    assert.equal(app.errors.length, 0);
+  });
+}
+test('P3-04: actual shader classifier sends cyan filaments and green spheres to their own treatments', () => {
+  const shader = pageScript.match(/const WGSL = `([\s\S]*?)`;/)[1];
+  const predicates = shader.slice(shader.indexOf('var alpha ='), shader.indexOf('let glassPass ='));
+  const declarations = [...predicates.matchAll(/let (\w+) = ([^;]+);/g)].map(([, name, expression]) => `const ${name} = ${expression.replaceAll('i.col.', 'col.')};`).join('\n');
+  const treatment = shader.slice(shader.indexOf('if (glass) {'), shader.indexOf('let fog ='));
+  const order = [...treatment.matchAll(/(?:else )?if \((glass|ember|plasma|gold|filament|bead)\) \{/g)].map(match => match[1]);
+  assert.deepEqual([...order].sort(), ['bead', 'ember', 'filament', 'glass', 'gold', 'plasma']);
+  const body = `${declarations}\n${order.map(name => `if (${name}) return '${name}';`).join('\n')}`;
+  for (const scene of [baked.worker, baked.inline]) {
+    for (const [rgb, expected] of [[[.05, .88, 1], 'filament'], [[.12, .95, .32], 'plasma']]) {
+      const index = material(scene, rgb)[0];
+      assert.notEqual(index, undefined);
+      const [r, g, b] = scene.C.slice(index * 3, index * 3 + 3);
+      assert.equal(vm.runInNewContext(`(function(){${body}})()`, { col: { r, g, b } }), expected);
+    }
+  }
+});
+for (const mode of ['no API', 'registration rejected']) {
+  for (const different of [false, true]) {
+    test(`P3-08: Update remains actionable with ${mode}; different release=${different}`, async () => {
+      const app = page({ noSW: mode === 'no API', registrationError: mode !== 'no API', fetch: async () => ({ id: ID, html: APP, sha: different ? NEXT : PIN }) });
+      await app.update();
+      assert.equal(app.requests.length, 1, 'visible Update must execute release selection');
+      assert.equal(app.reg.updateCalls, 0);
+      if (different) assert.deepEqual(app.navigations, [`https://rawcdn.githack.com/NFDFLDTHRY/laceArc/${NEXT}/${APP}`]);
+      else {
+        assert.equal(app.navigations.length, 0);
+        assert.match(app.get('pwastamp').textContent, /same.*SW unavailable/i);
+      }
+    });
+  }
+}
+for (const stage of ['fetch', 'body']) {
+  test(`P3-08: stalled release ${stage} exhausts providers without moving pin; late success cannot override retry`, async () => {
+    const pending = [], signals = [];
+    let retry = false;
+    const app = page({ response: (url, n, init) => {
+      signals.push(init.signal);
+      if (retry) return { ok: true, json: async () => ({ id: ID, html: APP, sha: NEXT }) };
+      const wait = new Promise(resolve => pending.push(resolve));
+      return stage === 'fetch' ? wait : { ok: true, json: () => wait };
+    } });
+    const update = app.update();
+    for (let i = 0; i < 3; i++) await app.expire(2500);
+    await update;
+    assert.equal(app.requests.length, 3);
+    assert.ok(signals.every(signal => signal.aborted));
+    assert.equal(app.navigations.length, 0);
+    assert.equal(app.reg.updateCalls, 0);
+    assert.match(app.get('pwastamp').textContent, /unavailable/i);
+    const valid = { id: ID, html: APP, sha: NEXT };
+    for (const resolve of pending) resolve(stage === 'fetch' ? { ok: true, json: async () => valid } : valid);
+    await settle();
+    assert.equal(app.navigations.length, 0, 'late providers cannot navigate');
+    assert.match(app.get('pwastamp').textContent, /unavailable/i);
+    retry = true;
+    await app.update();
+    assert.deepEqual(app.navigations, [`https://rawcdn.githack.com/NFDFLDTHRY/laceArc/${NEXT}/${APP}`]);
+  });
+}
+test('P3-08: timed-out first release provider falls through to the next valid provider', async () => {
+  const app = page({ response: (url, n) => n === 1 ? new Promise(() => {}) : { ok: true, json: async () => ({ id: ID, html: APP, sha: NEXT }) } });
+  const update = app.update();
+  await app.expire(2500);
+  await update;
+  assert.equal(app.requests.length, 2);
+  assert.deepEqual(app.navigations, [`https://rawcdn.githack.com/NFDFLDTHRY/laceArc/${NEXT}/${APP}`]);
+});
+for (const [name, response] of [
+  ['404 with JSON MIME', { ok: false, status: 404, json: async () => ({}), headers: { get: () => 'application/json' } }],
+  ['invalid JSON with JSON MIME', { ok: true, json: async () => { throw new SyntaxError('fixture invalid JSON'); }, headers: { get: () => 'application/json' } }],
+  ['null JSON', { ok: true, json: async () => null, headers: { get: () => 'application/json' } }]
+]) {
+  test(`P3-08: audit rejects ${name} without claiming icons present`, async () => {
+    const app = page({ response: () => response });
+    await app.audit();
+    assert.match(app.get('audit').textContent, /manifest.*fail/i);
+    assert.doesNotMatch(app.get('audit').textContent, /icons[^\n]*\bok\b/i);
+  });
+}
+test('P3-08: audit labels parsed manifest and unmeasured icons at their actual strength', async () => {
+  const app = page({ fetch: async () => ({ icons: [{ src: 'missing-192.png', sizes: '192x192' }, { src: 'missing-512.png', sizes: '512x512' }] }) });
+  await app.audit();
+  assert.match(app.get('audit').textContent, /manifest.*HTTP.*JSON object.*ok/i);
+  assert.match(app.get('audit').textContent, /icons[^\n]*(unverified|unmeasured)/i);
+  assert.doesNotMatch(app.get('audit').textContent, /icons[^\n]*\bok\b/i);
+});
+test('P3-08: WebNN context creation does not claim inference execution', async () => {
+  const app = page({ ml: { createContext: async () => ({}) } });
+  await settle();
+  assert.equal(app.get('nnstamp').textContent, 'WebNN context ready');
 });

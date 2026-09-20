@@ -284,8 +284,8 @@ struct VSOut { @builtin(position) p: vec4<f32>, @location(0) wpos: vec3<f32>, @l
   if (appear < 0.01) { discard; }
   var rgb = i.col;
   var alpha = 1.0;
-  let plasma = i.col.g > 0.7 && i.col.r < 0.4;
   let filament = i.col.b > 0.75 && i.col.g > 0.55 && i.col.r < 0.45;
+  let plasma = i.col.g > 0.7 && i.col.r < 0.4 && !filament;
   let gold = i.col.r > 0.7 && i.col.g > 0.35 && i.col.b < 0.35;
   let ember = i.col.r > 0.85;
   let glass = i.col.r > 0.4 && i.col.r < 0.75 && i.col.g < 0.28 && i.col.b < 0.2;
@@ -356,25 +356,65 @@ function lookAt(e,c,up){
   return m;
 }
 
+// The deadline includes response-body decoding. A suspended event loop can delay
+// the timer; late success/rejection is consumed without changing the outcome.
+function readBodyWithin(url, kind, milliseconds=2500){
+  return new Promise((resolve, reject) => {
+    const controller=new AbortController();
+    let settled=false;
+    const finish=(error, value)=>{
+      if(settled) return;
+      settled=true;
+      clearTimeout(timer);
+      if(error) reject(error); else resolve(value);
+    };
+    const timer=setTimeout(()=>{
+      finish(new Error("request timeout"));
+      controller.abort();
+    }, milliseconds);
+    Promise.resolve().then(()=>fetch(url,{cache:"no-store",signal:controller.signal}))
+      .then(response=>{
+        if(settled) return;
+        if(!response.ok) throw new Error("HTTP "+response.status);
+        return response[kind]();
+      })
+      .then(value=>finish(null,value), error=>finish(error));
+  });
+}
 function bakeViaWorker(src){
   return new Promise((resolve, reject) => {
-    let w;
-    try { w = new Worker(src || "projection-bake-worker.js?i=xp2"); }
-    catch (e) { reject(e); return; }
-    const t = setTimeout(() => { try{w.terminate();}catch(_){ } reject(new Error("bake timeout")); }, 2500);
-    w.onerror = e => { clearTimeout(t); try{w.terminate();}catch(_){ } reject(e); };
-    w.onmessage = ev => {
-      clearTimeout(t);
-      const d = ev.data;
-      resolve({
-        P: new Float32Array(d.P), N: new Float32Array(d.N),
-        C: new Float32Array(d.C), B: new Float32Array(d.B),
-        fCount: d.fCount|0,
-        wasm: !!d.wasm, isolated: !!d.isolated
-      });
-      w.terminate();
+    let w, timer, settled=false;
+    const finish=(error, value)=>{
+      if(settled) return;
+      settled=true;
+      clearTimeout(timer);
+      try { if(w) w.terminate(); } catch(_){}
+      if(error) reject(error); else resolve(value);
     };
-    w.postMessage("bake");
+    try {
+      w=new Worker(src || "projection-bake-worker.js?i=xp2");
+      timer=setTimeout(()=>finish(new Error("bake timeout")),2500);
+      w.onerror=error=>finish(error);
+      w.onmessage=ev=>{
+        if(settled) return;
+        try {
+          const d=ev.data, scene={};
+          for(const key of ["P","N","C","B"]){
+            if(!d || Object.prototype.toString.call(d[key])!=="[object ArrayBuffer]")
+              throw new Error("invalid bake buffer "+key);
+            scene[key]=new Float32Array(d[key]);
+            if(!scene[key].every(Number.isFinite)) throw new Error("nonfinite bake buffer "+key);
+          }
+          const count=scene.P.length/3;
+          if(!count || count%3 || scene.N.length!==scene.P.length ||
+              scene.C.length!==scene.P.length || scene.B.length!==count ||
+              !Number.isInteger(d.fCount) || d.fCount<0 || d.fCount>count || d.fCount%3)
+            throw new Error("invalid bake shape");
+          finish(null,{...scene,fCount:d.fCount,wasm:!!d.wasm,isolated:!!d.isolated});
+        } catch(error) { finish(error); }
+      };
+      w.postMessage("bake");
+    } catch(error) { finish(error); }
   });
 }
 let bakedScene=null;
@@ -384,10 +424,7 @@ async function bakeScene(){
   try { bakedScene = await bakeViaWorker("projection-bake-worker.js?i=xp2"); }
   catch (e1) {
     try {
-      const src = await fetch("projection-bake-worker.js?i=xp2", {cache:"no-store"}).then(r => {
-        if (!r.ok) throw new Error("worker fetch "+r.status);
-        return r.text();
-      });
+      const src = await readBodyWithin("projection-bake-worker.js?i=xp2","text");
       const url = URL.createObjectURL(new Blob([src], {type:"text/javascript"}));
       try { bakedScene = await bakeViaWorker(url); }
       finally { URL.revokeObjectURL(url); }
@@ -777,13 +814,19 @@ bootGpu();
   try {
     if (navigator.ml && navigator.ml.createContext) {
       await navigator.ml.createContext();
-      el.textContent="WebNN on";
-    } else el.textContent="WebNN off";
-  } catch (_) { el.textContent="WebNN off"; }
+      el.textContent="WebNN context ready";
+    } else el.textContent="WebNN unavailable";
+  } catch (_) { el.textContent="WebNN context failed"; }
 })();
-function runAudit(){
+async function runAudit(){
   const el=document.getElementById("audit");
   if(!el) return;
+  el.textContent="Manifest check pending; icons unverified";
+  let manifest="fail";
+  try {
+    const value=await readBodyWithin("manifest.webmanifest","json");
+    if(value && typeof value==="object" && !Array.isArray(value)) manifest="ok";
+  } catch(_){}
   const title=document.querySelector("h1")?.textContent||"";
   const A=/ixp2/.test(title)?"ok":"fail";
   const D=!!(navigator.serviceWorker && navigator.serviceWorker.controller);
@@ -792,13 +835,11 @@ function runAudit(){
   const G=!!document.getElementById("updatebtn");
   const H=!!navigator.gpu;
   const I=typeof Worker!=="undefined";
-  fetch("manifest.webmanifest",{cache:"no-store"}).then(r=>{
-    const ct=r.headers.get("content-type")||"";
-    const B=/manifest|json/i.test(ct)?"ok":("fail "+ct);
-    el.textContent=
+  el.textContent=
+      "Snapshot; API presence is not an execution test\n"+
       "A title ixp2 "+A+"\n"+
-      "B manifest MIME "+B+"\n"+
-      "C icons 192+512 ok\n"+
+      "B manifest HTTP + JSON object "+manifest+"\n"+
+      "C icons 192+512 unverified\n"+
       "D SW controlling "+(D?"ok":"fail")+"\n"+
       "E bip|standalone "+(E?"ok":"wait")+"\n"+
       "F Install btn "+(F?"ok":"fail")+"\n"+
@@ -806,7 +847,6 @@ function runAudit(){
       "H navigator.gpu "+(H?"ok":"fail")+"\n"+
       "I Worker "+(I?"ok":"fail")+"\n"+
       "J iOS ignore n/a";
-  }).catch(()=>{ el.textContent="B manifest fetch fail"; });
 }
 setTimeout(runAudit, 600);
 let deferredPrompt=null;
@@ -844,7 +884,9 @@ async function resolveLatestSha(){
   ];
   for(const pointer of pointers){
     try {
-      const j=await fetch(pointer,{cache:"no-store"}).then(r=>{ if(!r.ok) throw new Error("latest "+r.status); return r.json(); });
+      // Small release pointers get 2500 ms each, including JSON decoding.
+      // Exhaustion retains the pin; the user can retry a slower connection.
+      const j=await readBodyWithin(pointer,"json");
       if(j && j.id==="https://github.com/NFDFLDTHRY/laceArc/lace-iii" &&
           j.html==="docs/clock/lace-projection.html" && /^[0-9a-f]{40}$/i.test(j.sha||"")) {
         return j.sha.toLowerCase();
@@ -919,6 +961,24 @@ document.getElementById("installbtn").addEventListener("click", async ev=>{
   window.deferredPrompt=null;
   await askPersist("install");
 });
+let checkCurrentWorker=null, updateRunning=false;
+document.getElementById("updatebtn").addEventListener("click", async ev=>{
+  ev.preventDefault();
+  if(updateRunning) return;
+  updateRunning=true;
+  const e=document.getElementById("pwastamp");
+  if(e) e.textContent="chk";
+  try {
+    try {
+      if(await goLatest(e)==="jump") return;
+    } catch(_) {
+      if(e) e.textContent="release unavailable";
+      return;
+    }
+    if(checkCurrentWorker) await checkCurrentWorker();
+    else if(e) e.textContent="same release; SW unavailable";
+  } finally { updateRunning=false; }
+});
 if ("serviceWorker" in navigator) {
   let reloading=false;
   const already=hadController;
@@ -950,16 +1010,7 @@ if ("serviceWorker" in navigator) {
       };
       watchInstalling();
       reg.addEventListener("updatefound", watchInstalling);
-      upd.addEventListener("click", async ev=>{
-        ev.preventDefault();
-        if(e) e.textContent="chk";
-        try {
-          const act=await goLatest(e);
-          if(act==="jump") return;
-        } catch(err) {
-          if(e) e.textContent="release unavailable";
-          return;
-        }
+      checkCurrentWorker=async ()=>{
         try { await reg.update(); }
         catch(_) {
           if(e) e.textContent="SW check failed";
@@ -973,7 +1024,7 @@ if ("serviceWorker" in navigator) {
         } else if(watchedInstalling?.state==="redundant"){
           kick(watchedInstalling);
         } else if(e) e.textContent="fresh";
-      });
+      };
     })
     .catch(() => { const e=document.getElementById("pwastamp"); if(e) e.textContent="PWA off"; });
   navigator.serviceWorker.addEventListener("controllerchange", () => {
