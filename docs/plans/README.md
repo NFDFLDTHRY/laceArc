@@ -4,7 +4,8 @@ Plans, proposals, executed pass records, and dated receipts share this shelf. Ea
 
 | File | Job |
 |---|---|
-| [tech-ref-eq-map-pass-4-plan.md](tech-ref-eq-map-pass-4-plan.md) | **`PLAN`** — technician-refs pass 4. Xiao–Zhu X1–X7 × equations. Likelihood ≠ section. Φ `[GAP]` |
+| [tech-ref-eq-map-pass-4-xiao.md](tech-ref-eq-map-pass-4-xiao.md) | **EXECUTED** technician-refs pass 4. X1–X7 stamped. Likelihood ≠ section. Φ `[GAP]` |
+| [tech-ref-eq-map-pass-4-plan.md](tech-ref-eq-map-pass-4-plan.md) | **`EXECUTED`** — pass 4 Xiao–Zhu × equations. Φ `[GAP]` |
 | [tech-ref-eq-map-pass-3-rowlands.md](tech-ref-eq-map-pass-3-rowlands.md) | **EXECUTED** technician-refs pass 3. R1–R6 stamped. Rewrite ≠ Arrive. Φ `[GAP]` |
 | [tech-ref-eq-map-pass-3-plan.md](tech-ref-eq-map-pass-3-plan.md) | **`EXECUTED`** — pass 3 Rowlands × equations. Φ `[GAP]` |
 | [tech-ref-eq-map-pass-2-kauffman.md](tech-ref-eq-map-pass-2-kauffman.md) | **EXECUTED** technician-refs pass 2. K1–K9 stamped. Grab ≠ emission. Φ `[GAP]` |

@@ -1,6 +1,6 @@
 # Technician references × mathematical model — Pass 4 of 6 PLAN
 
-**Status:** **`PLAN`** · not executed. **Station:** maps (HELD `Grok-maps` · BASE `df8b5cf`).
+**Status:** **`EXECUTED`** 2026-09-20 · [`tech-ref-eq-map-pass-4-xiao.md`](tech-ref-eq-map-pass-4-xiao.md). **Station:** maps (`Grok-maps`).
 **Depends on:** pass 1 T3 · passes 2–3 EXECUTED.
 **Text:** Xiao & Zhu *Foundations of Large Language Models*.
 **Cite-only:** reason-map §3 X1–X7 · xiao-zhu clipboard · five-stakes page 3.
