@@ -18,16 +18,18 @@ Agent ticket. Not Hands. Not law. Not Core. POINTER emission stays `[GAP]`. No `
 
 A different conversion of the same book has a different SHA and is a different sighting. Re-attach, re-hash, re-cite.
 
-## Passes (the shelf pattern; pass 0 executed on staking; pass 1 planned)
+**Current status, 2026-09-20:** [the clipboard](../clipboards/rust-target-clipboard.md) records **Pass 0 staking and Pass 1 mapping as EXECUTED**. Page G queues **A4**, Cargo's `build-std` source, next. Pass 0 was originally mislabelled Pass 1; keep the receipt's open correction. G8′ (feature-set validation), G10 (reproducibility) and the recipe remain proposals; recipe builds/probes are NOT_RUN, and R12 remains a human ruling. This ticket does not restart executed work or authorize later passes by itself.
+
+## Passes (recorded state and proposed continuation)
 
 | Pass | Job |
 |---|---|
 | 0 | **staking receipt**: sighting + eye entries + stamps for the `wasm64-unknown-unknown` page and the *Custom Targets* page → `docs/clipboards/rust-target-clipboard.md` (executed on staking) |
-| 1 | **the mapping**, pages A–H, X: every toolchain mechanism the book names → the project surface it touches → KEEP / FORBID / SILENT → the check that verifies it on the artifact. Plan: `docs/clipboards/rust-target-pass-1-plan.md` |
-| 2 | leftovers: every other page of the book that a `#![no_std]` build touches (`-Z build-std` mentions · target features · `panic` strategy · lints) — cite-only |
-| 3 | mechanisms M-R*: what the toolchain *does* (build-std, sysroot, target spec JSON) as target mechanisms, never Core |
-| 4 | ASCII machinery P-R*: the build pipeline drawn, one panel per mechanism |
-| 5 | order proposal: where this shelf sits beside G-III-4 (wasm64 compile-target) — a toolchain adjunct, not a rival |
-| 6 | DIAGRAM SOUND: the shelf against the companion; G-III-10 cite-card proposed |
+| 1 | **the mapping**, pages A–H, X: every toolchain mechanism the book names → the project surface it touches → KEEP / FORBID / SILENT → the check that verifies it on the artifact. **EXECUTED mapping**, [Pass 1 / Pages A–H, X](../clipboards/rust-target-clipboard.md); [original plan](../clipboards/rust-target-pass-1-plan.md) |
+| 2 | **Proposed, not recorded executed here.** leftovers: every other page of the book that a `#![no_std]` build touches (`-Z build-std` mentions · target features · `panic` strategy · lints) — cite-only |
+| 3 | **Proposed, not recorded executed here.** mechanisms M-R*: what the toolchain *does* (build-std, sysroot, target spec JSON) as target mechanisms, never Core |
+| 4 | **Proposed, not recorded executed here.** ASCII machinery P-R*: the build pipeline drawn, one panel per mechanism |
+| 5 | **Proposed, not recorded executed here.** order proposal: where this shelf sits beside G-III-4 (wasm64 compile-target) — a toolchain adjunct, not a rival |
+| 6 | **Proposed, not recorded executed here.** DIAGRAM SOUND: the shelf against the companion; G-III-10 cite-card proposed |
 
 Station: **clipboards** for the products; **prompts** for this ticket. Nothing here answers Φ.

@@ -1,6 +1,16 @@
 # Pointer-emission outline — ASCII diagram agent prompt
 
-Paste everything inside the outer box to an agent. **Unanswered questions only.** Not answers. Not Core code. Not acceptance.
+**Status: historical initial-creation ticket, retired from current execution on 2026-09-20.** The [existing pointer-emission document](../pointer-emission.md) now contains accumulated Answers, source-closed constraints, conflicts, campaign stamps and an unfilled acceptance gate. Do not regenerate it from this outline, erase its answers, or replace them with `[GAP]`.
+
+## Current entry for emission work
+
+Read [AGENTS.md](../../AGENTS.md), the source graphics and the live document's **How this file may be edited**, **Required open questions**, and **Acceptance** sections. A separately authorized law-station task may record supported findings within those rules. Preserve existing Answer/Stamp lines unless that exact amendment is in scope; record custody conflicts in the current [update-pass evidence](../plans/repo-update-pass-1-evidence.md). Five locations carry SPOKEN content: Q0, Q1, Q3, Q5 and slot II. The stamp does not witness itself or accept a rule.
+
+Current Q4 already closes backward references on the same line and permits POINTER-to-POINTER targets. The old Page E below predates that closure and must not reopen it. Timing, arity, custody and acceptance retain their actual current states; no answer follows from this prompt.
+
+## Historical creation instructions (preserved verbatim below)
+
+The remaining introduction and fenced outline describe the initial questions-only task. Their write/erase commands are historical text, not instructions to apply to the existing document. The original instruction was: “Paste everything inside the outer box to an agent. **Unanswered questions only.** Not answers. Not Core code. Not acceptance.”
 
 Product: `docs/pointer-emission.md`  
 Status after write: **DRAFT — awaiting human acceptance.** Writing the file does **not** accept it. `src/` stays forbidden until the human accepts.

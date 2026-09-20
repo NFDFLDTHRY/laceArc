@@ -2,9 +2,13 @@
 
 Layer III steward prompt. Not Hands. Not law. Not Core. Emission remains `[GAP]`. No `src/` from a prompt.
 
-**What this is.** A paste-ready prompt whose body is a diagram. It does not tell the agent what its result must be. It tells the agent where every box came from, how strong each box is, which boxes are holes, and how to map anything it finds back onto the global systems manifest and its ASCII companion. An agent that returns a filled hole has failed the prompt.
+**What this is.** A paste-ready prompt whose body is a diagram. It does not tell the agent what its result must be. It tells the agent where every box came from, how strong each box is, which boxes are holes, and how to map anything it finds back onto the global systems manifest and its ASCII companion. An agent that silently fills a hole has failed the prompt; a source-supported finding must retain its evidence and acceptance scope.
 
 **Produced by** [iteration 6](../plans/lace-context-iteration-6-plan.md) pass 6. **Reads with:** [AGENTS.md](../../AGENTS.md) · [agent-control.md](../kit/agent-control.md) · [agent-task-template.md](../kit/agent-task-template.md) · [coord-protocol-prompt.md](coord-protocol-prompt.md).
+
+**Current routing, 2026-09-20:** this diagram is a steward view of cited documents, not a new source. Read [current context](context-pass.md), [update-pass evidence](../plans/repo-update-pass-1-evidence.md), and the companion's named **Systems-level audit (pass 27)** / **Execution-model reading (pass 28)** sections and later scope notes. The reduction's 21-document door is a dated base; add the [rust-target Pass 1 mapping and Page G queue](../clipboards/rust-target-clipboard.md) for target work.
+
+**Model scope:** no recorded candidate is established in-region; BLOCKED and REFUTED remain different. The execution model's M1 concerns strand-history observations, not pending-input or persistence state; I1/I6 apply within an OPEN-free interval. M3's intermediate frontiers require the additional S4.3 STEP-partition premise, not final D1 equality alone. The five SPOKEN custody locations are Q0/Q1/Q3/Q5/slot II. Read the governing records before reusing a stamp.
 
 ---
 
@@ -29,18 +33,18 @@ Layer III steward prompt. Not Hands. Not law. Not Core. Emission remains `[GAP]`
             ▼                                                             ▼
   ┌─ MANIFEST ─────────────────────────────────┐   ┌─ ASCII COMPANION ──────────────────────┐
   │  docs/systems-manifest.md                  │   │  docs/systems-manifest-ascii.md         │
-  │  Pieces 1–15 · Contracts I / II / III      │   │  Pass 26 tip: DIAGRAM SOUND WITH OPENS  │
-  │  open #1–#12  (SOURCE · law station)       │   │  Spine · Contract map · Fence · Open    │
-  │                                            │   │  board #1–#13 · G-III-1…9 (+4a) · F-Carry│
+  │  Pieces 1–15 · Contracts I / II / III      │   │  Passes 26–28 + current scope notes    │
+  │  open #1–#12 (DERIVED · law station)       │   │  Spine · Contract map · Fence · Open   │
+  │                                            │   │  board #1–#15 · G-III cards · F-Carry  │
   └────────────────────────────────────────────┘   └────────────────────────────────────────┘
             │                                                             │
             ▼                                                             ▼
-  ┌─ ALGEBRA (sealed) ─────────────────────────┐   ┌─ ENVIRONMENT (PROPOSAL) ───────────────┐
+  ┌─ ALGEBRA (partial reading) ────────────────┐   ┌─ ENVIRONMENT (PROPOSAL) ───────────────┐
   │  docs/math-execution-model.md  S1–S6       │   │  plans/lace-context-iter6-pass-4-…      │
   │  L · Arrive · Φ_morphism · Star · π        │   │  σ : 𝓛 × V → Step*   (the rule's TYPE) │
   │  Φ_schedule = [GAP]                        │   │  13 fences F-H1…F-B, each cited        │
   │                                            │   │  region non-empty (E4.1) · non-trivial │
-  │                                            │   │  (E4.2) · 17 candidates run · 0 in it  │
+  │                                            │   │  (E4.2); 17 assessed, none established │
   └────────────────────────────────────────────┘   └────────────────────────────────────────┘
             │                                                             │
             └──────────────────────────┬──────────────────────────────────┘
@@ -48,7 +52,7 @@ Layer III steward prompt. Not Hands. Not law. Not Core. Emission remains `[GAP]`
   ┌─ THE SHAPE (PLAN · PROPOSAL · UNESTABLISHED as a machine) ─────────────────────────────┐
   │  plans/lace-context-iter6-pass-5-crate-proposal.md                                     │
   │                                                                                        │
-  │   SHELL S (Layer III · install PROVEN 2026-09-18 · may be built now)                   │
+  │  SHELL S (Layer III proposal; prior install HUMAN_REPORTED; code scope separate)       │
   │     hopper: one arrival per submit, bytes as typed     canvas ◄ π bytes                │
   │  ══ HOST BOUNDARY H ══ exports: continue star_view view_1d/2d/3d memory · imports NONE │
   │     embedder can write all exported memory ── TRUST, not enforced ── ruling R5         │
@@ -63,8 +67,8 @@ Layer III steward prompt. Not Hands. Not law. Not Core. Emission remains `[GAP]`
   └────────────────────────────────────────────────────────────────────────────────────────┘
                                        │
                                        ▼
-  ┌─ TARGET FACTS (SOURCE web · OBSERVED · on-device UNESTABLISHED) ───────────────────────┐
-  │  Rust wasm64: Tier 3 · no prebuilt core · nightly + -Zbuild-std     (attach A1, A4)    │
+  ┌─ TARGET REPORT (dated web + A1 shelf; on-device UNESTABLISHED) ────────────────────────┐
+  │  Rust wasm64: Tier 3; no prebuilt core; nightly + -Zbuild-std; A1 mapped, A4 next      │
   │  Chrome: Memory64 shipped M133 incl. Android                        (attach A2)        │
   │  JS-API cap 16 GB · bounds-check tax 10–100%+                       (attach A2, A3)    │
   │  Pixel 9a: Android 17 · Chrome 151 · Mali-G715 · WebGPU needs flags + AP off (HUMAN)   │
@@ -73,7 +77,7 @@ Layer III steward prompt. Not Hands. Not law. Not Core. Emission remains `[GAP]`
 
   ┌─ HOLES (report them; never fill them) ─────────────────────────────────────────────────┐
   │  Φ_schedule (R7 · the gate)   G1 word identity   open #3 boundaries   Q2 arity          │
-  │  #9 slot order   #13 SPOKEN custody   R1 R2 R3 R4 R5 R6 R8   A1–A6 unattached           │
+  │  #9 slot order; #13 SPOKEN custody; R1 R2 R3 R4 R5 R6 R8; A4 next (Page G)             │
   │  P-64a/b/c · P-CAR · P-INST unrun                                                       │
   └────────────────────────────────────────────────────────────────────────────────────────┘
 
@@ -98,7 +102,7 @@ Layer III steward prompt. Not Hands. Not law. Not Core. Emission remains `[GAP]`
 8. **Station.** `which → claim → edit only what you own → gate → commit → release`. One station per commit. Findings go into a maps-owned record, never into another campaign's file, never into `pointer-emission.md`.
 9. **Return** the adjudication form ([template §3](../kit/agent-task-template.md)): claim and revision assessed · facts with evidence and scope · refutations with counterexamples · open obligations · files changed vs authorization · complete / needs work / blocked at a named boundary · one next narrow question.
 10. **Say** whether propose / attack / resolve were one agent or separate. One agent is allowed and must be declared.
-11. **Sign** the commit with an actor trailer and hold only the station your role names — [`docs/kit/roles.md`](../kit/roles.md). To start a campaign, use [the generator](six-pass-proposal-generator.md).
+11. **When a commit is authorized, sign** it with an actor trailer and hold only the station your role names — [`docs/kit/roles.md`](../kit/roles.md). To start a campaign, use [the generator](six-pass-proposal-generator.md).
 
 ## What ends the task
 
