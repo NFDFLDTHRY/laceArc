@@ -2,6 +2,8 @@
 
 **Not the manifest.** [`systems-manifest.md`](systems-manifest.md) is the Hands contract map; this is an ASCII reading of it and settles nothing it does not.
 
+**Current reading qualification, 2026-09-20:** read the [repository update qualification](#repository-update-pass-1--current-qualification) alongside the passages below. It qualifies the dated WORD-only Star caption, Pass 28's proof shorthand, the 21-member reading door, and Open #13's custody count. Passes 1–28 remain records of their own readings; their stamps do not establish present acceptance. HCC-A, Coffee Cup, and Water are conceptual reference documents.
+
 **Executed passes:** [1](systems-manifest-ascii-pass-1-plan.md) · [2](systems-manifest-ascii-pass-2-plan.md) · [3](systems-manifest-ascii-pass-3-plan.md) · [4](systems-manifest-ascii-pass-4-plan.md) · [5](systems-manifest-ascii-pass-5-plan.md) · [6](systems-manifest-ascii-pass-6-plan.md) · [7](systems-manifest-ascii-pass-7-plan.md) · [8](systems-manifest-ascii-pass-8-plan.md) · [9](systems-manifest-ascii-pass-9-plan.md) · [10](systems-manifest-ascii-pass-10-plan.md) · [11](systems-manifest-ascii-pass-11-plan.md) · [12](systems-manifest-ascii-pass-12-plan.md) · [13](systems-manifest-ascii-pass-13-plan.md) · [14](systems-manifest-ascii-pass-14-plan.md) · [15](systems-manifest-ascii-pass-15-plan.md) · [16](systems-manifest-ascii-pass-16-plan.md) · [17](systems-manifest-ascii-pass-17-plan.md) · [18](systems-manifest-ascii-pass-18-plan.md) · [19](systems-manifest-ascii-pass-19-plan.md) · [20](systems-manifest-ascii-pass-20-plan.md) · [21](systems-manifest-ascii-pass-21-plan.md) · [22](systems-manifest-ascii-pass-22-plan.md) · [23](systems-manifest-ascii-pass-23-plan.md) · [24](systems-manifest-ascii-pass-24-plan.md) · [25](systems-manifest-ascii-pass-25-plan.md) · [26](plans/lace-context-iter6-pass-3-findings.md) · [27](plans/lace-context-iter7-pass-3-audit.md) · [28](plans/reduction-pass-3-findings.md). A new pass is linked here once it is executed.
 
 **Authority:** `docs/systems-manifest.md`. Companion, not a replacement.  
@@ -2850,3 +2852,31 @@ Pass 27 refuse still stands, plus: **no reading of Σ's `h` or `K` as Core rows*
 | T3 | Door pointer (S = 21; companion view = 1–553 + 26 + 27 + 28) |
 | T4 | Roles board, steward cite-only, locators to the census |
 | T5 | executed-passes +28; banner; pointer; refuse honored; G2 `[GAP]`; Passes 7–27 retained |
+
+---
+
+## Repository update pass 1 — current qualification
+
+**2026-09-20; base `0b2012b`.** This is a bounded reading correction under the [repository update plan](plans/repo-update-pass-1-plan.md), not global ASCII Pass 29, a source amendment, or acceptance. The original Passes 1–28 above remain intact. Where their shorthand conflicts with the qualifications below, use these qualifications for current reading and keep the older wording as a dated record.
+
+### Star formation and the relationship handoff
+
+The [history A/B handoff](history/relationship-evidence-pass-3-handoff.md) was checked against the actual base content: **both were NOT_APPLIED at `0b2012b`**. A changed companion hash did not establish their adoption. This section applies both as current qualifications; it does not retroactively change the history receipt or the pass-5 diagram.
+
+**A — Star caption, APPLIED_AS_CURRENT_QUALIFICATION.** WORD rows retain distinct word occurrences. A star is not separately written as a row or object. Manifest Piece 7 describes occurrence membership together with recorded POINTER participation threading those occurrences. The pass-5 `write: the WORD rows only` caption and C-Mech-3's occurrence shorthand are therefore incomplete as descriptions of the full formation. This qualification does not decide when additional POINTER sections are appended, or define a traversal algorithm.
+
+**B — Coupling, APPLIED_AS_CURRENT_QUALIFICATION.** Definition text follows an ordered route through ordinary word-stars. Further definition text and later documents reuse those formations through distinct passages of the same Lace. Existing passages and recorded participation remain; new wire can thread that formation, and the resulting touch remains available for later participation. Read manifest Pieces 7–11 and 15 together, with Graphics A6/A8/A10/B4/B8. This describes the source coupling; it is not automatic definition expansion, a dictionary engine, or a completed emission contract.
+
+### Execution claims and current reading order
+
+| Earlier shorthand | Current scope and source |
+|---|---|
+| Pass 28 / C-Exec-M1, “shared state = L” | [Execution X4–X5](plans/reduction-pass-2-execution-model.md): `L` suffices for indexed strand-history observations. Pending custody `h` and persistence progress `K` do not follow from `L` alone; this is not a theorem about every app observable |
+| Prefix-freeze / arrival equality | I1 preserves the prefix between OPENs; I6 counts successful STEP consumption in that interval. Pending SUBMITs are not yet recorded arrivals, and arbitrary OPEN can restore an older prefix |
+| M3 frontiers 1,3,5,8,11 | Conditional on each STEP beginning with its sole Arrive and then only Φ appends. Final D1 equality alone does not determine the partition; [environment E2/E6/E9](plans/lace-context-iter6-pass-4-environment.md) records the inheritance obligation |
+| “17 of 17 outside” / no point | Environment E5 establishes no recorded candidate in-region. Its BLOCKED cases remain undetermined; this is not proof that all seventeen are refuted |
+| Seven doors compose | [Current cards](plans/rust-nostd-branch-contracts.md) and [shape](plans/lace-context-iter6-pass-5-crate-proposal.md) leave σ implementation ownership unassigned. A human ruling owner is not an implementation owner |
+| Open #13: four SPOKEN locations | [Custody register](plans/repo-update-pass-1-evidence.md#6-spoken-answer-custody-register) accounts for **five**: Q0/Q1/Q3/Q5/slot II. Existing answers and stamps remain unchanged; their exact human-statement locators are missing in the checked chain |
+| Door S = 21 / old line ranges | The reduction's 21-member set is a dated reading selection. Read named sections: **Spine**, **Δ admission board (pass 26)**, **Systems-level audit (pass 27)**, **Execution-model reading (pass 28)**, and this qualification. Include the later [rust-target shelf](clipboards/rust-target-clipboard.md) and current [context prompt](prompts/context-pass.md); do not treat the earlier selection as today's complete dependency closure |
+
+HCC-A, Coffee Cup, and Water remain conceptual references under the accepted classification correction. Their exclusion as imported Core state does not make them required holder or runtime components. All model and companion readings remain subordinate to the four PNGs and governing law. Emission remains `[GAP]`; no physical, Core, browser or release execution is claimed here.

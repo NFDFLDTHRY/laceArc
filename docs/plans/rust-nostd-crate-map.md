@@ -48,6 +48,8 @@ All paths in this table are **future candidates after the gate**, not existing f
 
 **One Core contract remains irreducible.** These are proposed proof/work boundaries, not independently owned strands or seven Core engines. WORD, POINTER, route, touch, and star formation remain coupled through one retained history. The two view doors expose Layer III readings; listing them as callees of the core/ facade does not promote them into authoritative Core state.
 
+**Unassigned responsibility (update pass 1, 2026-09-20):** the [branch cards](rust-nostd-branch-contracts.md) let route/ append independently admitted sections and let core/ delegate; both exclude scheduling. No listed door owns the accepted σ decision. The seven-door map therefore is not yet a complete implementation decomposition even if a rule is accepted. Its ownership must be reconciled explicitly before implementation; this note adds no branch or dependency edge and changes no card's task.
+
 The statement “one folder per Piece” is therefore not adopted as a law. Several Pieces describe the same store or operation. Conversely, a Piece can have both a Core formation and a read-only presentation. Any later physical packaging must preserve these distinctions.
 
 **vs Hands:** CONFIRMS one strand and one store; REFINES the former draft's folder-to-Piece equivalence. The concrete section representation and inter-crate composition remain unproved.
@@ -113,7 +115,7 @@ There are convergent read paths, such as core/ reaching view_star/ directly and 
 | codec/, weld/, utils/ | Named-as-forbid as convenience doors | Do not revive rejected history machinery or hide a second task under a generic name. |
 | Arrival Surface that owns a vocabulary or document history | Leak-risk | Contract II depends on I; it is not a second authority. |
 | view cache that owns participation facts | Leak-risk | A disposable label does not admit a forbidden graph, definition, or Star store. |
-| HCC-A / Cup / Water / trainA as Core dependencies | Named-as-forbid | The holder's gears and HTML renderer remain Shadow; they do not decide Graphic D rows. |
+| HCC-A / Cup / Water / trainA as Core dependencies | Named-as-forbid | HCC-A, Cup and Water are conceptual reference documents; trainA and the HTML renderer interpret concepts. They establish no required holder/runtime components and do not decide Graphic D rows ([live-law correction](../law-why-these-documents.md#conceptual-reference-documents)). |
 
 These are exclusions from this planned Core workspace, not claims that external books contain no such machinery. No attached PDF or adjacent framework is imported.
 
@@ -175,7 +177,7 @@ Before graduation, each task needs its exact contract and revision, implementati
 | route/ or core/ composition | May eventually realize independently accepted continuation. | No emission answer may be hidden in glue, an input constructor, or a “type-only” helper. |
 | Read/identity/resource contracts | Their obligations are identified by the manifest and agent controls. | Their unresolved premises are not closed by accepting an unrelated filename. |
 
-The emission draft §4 currently reopens whether POINTERs may target POINTERs. This conflicts with the explicit permission in Graphic D3/D6 and the standing orders. Preserve that permission while keeping timing, arity, target selection, and adjacency unresolved. This map does not edit the draft or treat its questions as an amendment.
+**Current Q4, reconciled 2026-09-20:** the emission document §4 closes permission for POINTER→POINTER and rejects WORD-only targeting, agreeing with Graphic D3/D6 and the standing orders. The earlier target-kind conflict recorded in this map's receipt is no longer a current blocker. Required emission, target selection, timing, arity and the proof of “earlier” remain separate obligations; this correction accepts no schedule.
 
 The updated manifest also records a counterexample to the proposed rule that every consecutive WORD pair emits a POINTER. In D1's WORD subsequence, pairs 0001/0003 and 0005/0008 have no corresponding POINTER in the illustrated prefix. This bounds a candidate against the recorded example; it does not establish a replacement emission rule or settle whether adjacency itself is a relation. “Consecutive” here means consecutive WORD occurrences, not adjacent array indices. [Row-level reading, §3](../graphics-close-reading.md#3-emission-is-underdetermined-and-the-rows-prove-it).
 
@@ -220,7 +222,7 @@ The companion plan records a required outline at [pointer-emission-prompt.md](..
 | Adjacent sources | No PDF is imported or used to settle a Core rule. Rust reference pages support only the bounded language cautions on Page F, not Lace semantics. |
 | Repository inspection | Proposed seven directories, src/, and root Cargo.toml are absent before this edit; no implementation or manifest is authored by the task. |
 | Permission / proof / enforcement | Documentation work authorized. Exact emission acceptance is not established; all future task proofs UNESTABLISHED. No compiler, runtime, physical test, or proof checker was run. These plans remain ADVISORY controls. |
-| Open differences retained | Emission draft's target-kind question versus D3/D6; manifest Piece 13's disposable-database wording versus the stricter live-law prohibition. No forbidden store is admitted by calling it a view. |
+| Open differences retained at the original receipt | Emission draft's target-kind question versus D3/D6; manifest Piece 13's disposable-database wording versus the stricter live-law prohibition. No forbidden store is admitted by calling it a view. The target-kind item is superseded by the current Q4 qualification above. |
 | Completion boundary | All nine prompt sheets and all fifteen Pieces are mapped, with seven conditional births and their proof obligations. This is a completed planning artifact, not permission to implement. |
 
 **Next narrow question:** what exact source-grounded emission contract and other task-specific premises must be accepted before the first proposed birth can become eligible? This question is not answered by the map.

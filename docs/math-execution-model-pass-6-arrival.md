@@ -6,7 +6,7 @@
 **Pinned main:** `5da058eb5802b2f2c660e0707792232b6109450f`.
 **Emission / Φ:** `[GAP]`. **G1 tokenization:** still open. No `src/`.
 
-**Authority:** Pass 2 S2 / S5 Contract II / S6 → systems-manifest Piece 3 + Contract II paragraph + Pieces 9–10 as *use of I* → Pass 4 N03–N05 / N08 → Pass 5 (II ≠ III) → Pass 1 K11 / G1 → [pointer-emission.md](pointer-emission.md) (questions + non-answers only) → this reading (lowest).
+**Source roles:** Graphics A–D are the source of record; the manifest is derived from them. AGENTS / live law govern permitted work. **Reading dependencies:** Pass 2 S2 / S5 Contract II / S6; manifest Piece 3, Contract II, and Pieces 9–10 as *use of I*; Pass 4 N03–N05 / N08; Pass 5 (II ≠ III); Pass 1 K11 / G1; [pointer-emission.md](pointer-emission.md) with its closed constraints and unresolved questions. This order describes derivation, not an authority ranking or acceptance.
 
 Steward line: *Shoe in hands. Arrival feeds the strand. It does not keep a second book, and it does not decide participation.*
 
@@ -87,7 +87,7 @@ Systems-manifest Contract II: Arrival contains Piece 3 and the document/dictiona
 | **Q1** When is a POINTER appended? | **No.** |
 | **Q2** What is the arity? | **No.** |
 | **Q3** Do adjacent WORDs already constitute a relation? | **No.** Order-preserving feed ≠ adjacency⇒emit. |
-| **Q4** POINTER→POINTER / WORD-only / proof of earlier? | **No.** |
+| **Q4** POINTER→POINTER / WORD-only / proof of earlier? | **No new answer from Contract II.** Current Q4 already permits POINTER→POINTER and rejects WORD-only targeting; proof procedure and required emission remain open. |
 | **Q5** Does a later star pass require a POINTER? | **No.** |
 
 Rejected emission lookalikes remain non-answers here too.

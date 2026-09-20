@@ -188,3 +188,11 @@ Agent: Claude-Projection. Date: UTC. Verification iteration 1, pass 4.
 - fix: log-only (path re-pointed here; the tick above is not edited)
 - cites: docs/kit/downstream-audit.md; docs/kit/README.md
 - emission contact: silenced → [GAP]
+
+### tick 2026-09-20 · repository update pass 1 · base 0b2012bb221184f684f672f63260c6b1ecd9427b
+Agent: Codex, with independent station editors/reviewers. Date: UTC.
+- finding: The 558-path census and 17-branch comparison found different commit-arrival forms, not an established missing-content backlog. Current entrances also conflated proposal execution, source agreement, human acceptance and displayed release. The pass recorded 26 findings and repaired the selected documentation dependency sets; no blanket verdict on all 558 files is issued.
+- kind: drift / bounded documentation reconciliation
+- fix: current instructions, source roles, proof scopes, conceptual-reference consumers, custody/target queues, identifier register and navigation updated. The five SPOKEN Answer locations retain their original bytes and visible missing-human-locator obligations. Companion history A/B now applied as current qualifications; dated passes and audit ticks preserved. Runtime/deploy/coord-code findings remain separately deferred.
+- cites: [plan](plans/repo-update-pass-1-plan.md); [evidence, dispositions and actual receipt](plans/repo-update-pass-1-evidence.md); [base inventory](plans/repo-update-pass-1-inventory.json); [current companion qualification](systems-manifest-ascii.md#repository-update-pass-1--current-qualification)
+- emission contact: remains [GAP]; no new schedule, acceptance, Core, physical/device evidence, release or branch integration

@@ -105,7 +105,7 @@ Nothing moves to the domain until G1–G7 are on a receipt with hashes. That is 
 
 ## 6. The global component inventory
 
-*"Describe the entire global systems manifest of components consistent with the global ASCII systems diagram."* Every component named on the companion (Spine, Contract map, Fence, G-III cards, Pass 26) or introduced by the shape, with an owner, what it depends on, and its gate. **A component with no owner or no gate is a hole and is marked.**
+*"Describe the entire global systems manifest of components consistent with the global ASCII systems diagram."* This pass inventories the components on its companion baseline (Spine, Contract map, Fence, G-III cards, Pass 26) or introduced by the shape. **Current ownership qualification, 2026-09-20:** a documentation station, human decision owner and future implementation owner are different roles. The table's station column does not establish complete code ownership; C6's σ implementation responsibility remains unassigned, and C7 cannot silently absorb it.
 
 | # | Component | Layer / Contract | Authority | Depends on | Depended on by | Evidence state | Gate | Owner station |
 |---|---|---|---|---|---|---|---|---|
@@ -114,9 +114,9 @@ Nothing moves to the domain until G1–G7 are on a receipt with hashes. That is 
 | C3 | POINTER entry | I | D2 · Piece 5 | C1 | C6, C8 | SOURCE · arity Q2 CONFLICT | R6, Q2 | — |
 | C4 | `Arrive` | I | S2 · Q0 CLOSED | C2 | C7 | SOURCE | R7 | — |
 | C5 | `Φ_morphism` | I | S4.2 | C3 | C7 | SOURCE | R7 | — |
-| **C6** | **`Φ_schedule` = σ** | **I** | **S4.2 = `[GAP]`; environment E2–E6** | C1–C5 | C7 | **`[GAP]` — region non-empty, no point** | **R7 (the gate)** | **law · human** |
-| C7 | `Continue` / `route/` | I | S4.3; route card | C4, C5, C6 | C10 | `[PLAN]` | R7 | maps |
-| C8 | `Star(v)` view / `view_star/` | I (view) | S3.1; card | C1 | C9, C16 | `[PLAN]` | R7; G1 for identity | maps |
+| **C6** | **`Φ_schedule` = σ** | **I** | **S4.2 = `[GAP]`; environment E2–E6** | C1–C5 | admitted sections for C7; owner edge unresolved | **`[GAP]` — no recorded candidate established in-region; E5 includes BLOCKED cases** | **R7 acceptance; explicit ownership reconciliation** | **law · human (decision); implementation unassigned** |
+| C7 | `Continue` / `route/` | I | S4.3; route card | C4/C5 section layouts; admission obligation from C6, not an owned scheduler | C10 | `[PLAN]` | R7; no hidden decision in an input constructor | maps (card) |
+| C8 | `Star(v)` membership / `view_star/` formation reading | I (view) | S3.1 membership is partial; card also requires route/participation | C1 | C9, C16 | `[PLAN]` | R7; G1 for identity | maps |
 | C9 | `π` / `view_proj/` | III | S3.4; card | C1, C8 | C16, C17 | `[PLAN]` | R7 | maps |
 | C10 | `core/` composition | I | card; Piece 2 | C7–C9 | C13 | `[PLAN]` | R7 | maps |
 | C11 | `strand/` · `word/` · `pointer/` | I | cards | C14 | C7–C9 | `[PLAN]` | R7, R6 | maps |
@@ -142,7 +142,7 @@ Nothing moves to the domain until G1–G7 are on a receipt with hashes. That is 
 | C31 | `pointer-emission.md` | law | the human | C29 | C6 | DRAFT · not accepted · OPEN #13 | R7 | **law · human only** |
 | C32 | Memory / conversation record | — | iteration 6 pass 1 | — | nothing (quarantined) | `[PROPOSAL]` | — | maps (note-only) |
 
-**Holes visible in the table:** C6 (the gate); C15's writer is Layer III (R3); C18's isolation is unestablished (P-COI); C22 sits on a conflict (R10); C28 is unattached. Every other component has an owner, an authority and a gate.
+**Holes identified at this pass:** C6 (acceptance and unassigned implementation ownership); C15's writer is Layer III (R3); C18's isolation is unestablished (P-COI); C22 sits on a conflict (R10); C28 recorded the attachment queue at that time. The [current rulings brief](reduction-pass-5-rulings-brief.md) carries later source/queue dispositions. The table does not establish that every implementation responsibility has an owner merely because it names a station.
 
 ---
 
@@ -159,7 +159,7 @@ Nothing moves to the domain until G1–G7 are on a receipt with hashes. That is 
 | | Fraction |
 |---|---|
 | The four named technologies placed under the law | 4 of 4 (one conditionally absent) |
-| Components inventoried | 32; with owner **32 of 32**; with gate 32 of 32; with a hole named 5 |
+| Components inventoried | 32. The original “owner 32 of 32” counted station/decision coverage; it is not a code-ownership result. C6 implementation ownership is unassigned. Five hole categories were named at the original pass; later dispositions are in the current brief |
 | Companion boxes without an inventory row | 0 found (Spine, Contract map, Fence, G-III-1…9, Pass 26 additions) — pass 3 re-checks this as a diagram |
 | Hardware observed by this session | 0 |
 

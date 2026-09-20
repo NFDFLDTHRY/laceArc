@@ -1,10 +1,10 @@
 # Iteration 6, pass 5 — the crate shape: from `strand/` to an installed WebAPK
 
 **Status:** `[PLAN]` · `[PROPOSAL]`. **No `src/`. No `Cargo.toml`. No type. No emit stub.** **Station:** maps. **Emission:** `[GAP]`.
-**Method:** [iteration 6 plan](lace-context-iteration-6-plan.md) §2 pass 5. Retains [the crate tree](rust-nostd-crate-map.md) and [the seven birth cards](rust-nostd-branch-contracts.md) unchanged. Adds only the sheets that sit between `core/` and an installed Chrome Android app, in the [template's §5 form](../kit/agent-task-template.md). Every unsettled premise is a **ruling R1–R8** in §7 — prepared, not taken. The gate is the gate.
-**Coherence:** every door and sheet is tied to a manifest Piece, an algebra element, the [environment's](lace-context-iter6-pass-4-environment.md) fences it must uphold, the reference shelves it must respect, and the [target facts](lace-context-iter6-pass-2-findings.md) it depends on (§4). That table is the *globally consistent* claim, and it is checkable.
+**Method:** [iteration 6 plan](lace-context-iteration-6-plan.md) §2 pass 5. Retains [the crate tree](rust-nostd-crate-map.md) and [the seven birth cards](rust-nostd-branch-contracts.md) unchanged. Adds only the sheets that sit between `core/` and an installed Chrome Android app, in the [template's §5 form](../kit/agent-task-template.md). **Rulings R1–R8** in §7 were prepared, not taken; they do not establish exhaustive ownership or discharge the branch proofs. The gate is the gate.
+**Coherence scope:** §4 maps doors and sheets to source dependencies and obligations. It is not a complete implementation-ownership proof: the accepted σ decision has no assigned door, because both route/ and core/ exclude scheduling. A citation in every cell cannot close that edge.
 
-**The honest sentence first.** This shape, followed by a team, produces the app **after** two things that are not the team's to supply: the human's acceptance of an emission rule that passes [E6](lace-context-iter6-pass-4-environment.md), and rulings R1–R6. Before those, the team can build everything in §6 — the shell, the probes, the clipboards, a candidate σ — and nothing in Core. That is the law, not a shortfall of the plan.
+**The honest sentence first.** This is a proposed shape toward an app, not a sufficiency result. Human acceptance of an emission rule passing [E6](lace-context-iter6-pass-4-environment.md) and rulings R1–R6 remain necessary; explicit σ ownership and the cards' other proof obligations also remain unresolved. §6 lists proposed pre-gate work, subject to its applicable scope. None of it authorizes Core.
 
 ---
 
@@ -53,6 +53,8 @@ Reading order is the law's: shoe → graphics → manifest → the two rust plan
 ## 2. What is retained, verbatim in intent
 
 The seven doors, their one-task sentences, their birth order `strand → word → pointer → route → view_star → view_proj → core`, their nine dependency edges, their forbidden states, and every `UNESTABLISHED` proof status — **unchanged**. This document does not rename, reorder, merge, or add a door among the seven. Read them there; they are not reproduced here.
+
+**Unassigned edge, qualified 2026-09-20:** route/ can append an independently admitted section; core/ cannot supply scheduling as glue. R7's acceptance of a rule would not by itself assign the rule's implementation to either door. The prospective decomposition must explicitly resolve that responsibility; this document neither adds an eighth branch nor widens an existing card.
 
 Two things the cards say that this document builds on rather than around:
 
@@ -168,9 +170,9 @@ The cards choose no encoding. This sheet does not either. It lists what an encod
 
 ---
 
-## 4. Coherence table — the globally consistent claim
+## 4. Coherence table — dependencies and remaining obligations
 
-Each row: what the part is tied to. If any cell is empty the part is unmoored; none is.
+Each row records what the part is tied to. Nonempty cells are traceability, not proof of complete composition; σ ownership remains unassigned.
 
 | Part | Manifest Piece | Algebra (S) | Fences it must uphold (E3) | Shelves it must respect | Target facts it depends on |
 |---|---|---|---|---|---|
@@ -178,15 +180,15 @@ Each row: what the part is tied to. If any cell is empty the part is unmoored; n
 | `word/` | 4 | S1.3 `(WORD, v)` | F-S1 (no table), F-G (silent) | Xiao–Zhu FORBID `[MASK]` / intern / embed | none |
 | `pointer/` | 5 | S1.3 `(POINTER, r..)`; Q4 | F-H2 | Kauffman *grab ≠ POINTER* | R6 index width |
 | `route/` | 2, 8 | S2 `Arrive`; S4.3 `Continue` | F-H1, F-A1; **σ absent** — route appends only what is independently admitted | — | none |
-| `view_star/` | 7, 9, 15 | S3.1 `Star(v)` | F-S1 (no Star table) | Petersen–Zech FORBID star = neuron | none |
+| `view_star/` | 7, 9, 15 | S3.1 `Star(v)` membership; full formation also needs route/participation readings | F-S1 (no Star table) | Petersen–Zech FORBID star = neuron | none |
 | `view_proj/` | 10, 12, 13 | S3.4 `π` | no write-back (S6 `[X]` 6) | WebGPU / WGSL shelves: Device / Queue / Buffer ≠ store | T11/T12 for the picture only |
 | `core/` | 2 | S5 Contract I composition | F-S3 (no imports), F-S4 | AgentScope: holder diagnoses the steward, not the lace | sheet H |
 | sheet T | — | — | E8 (invisible to σ) | wasm-spec-3 KEEP-read-as-target | T1–T8 |
 | sheet R | 6 | S1.2 concatenation-only growth | F-Carry | G-III-4 fence *mem ≠ L* | P-64b |
 | sheet H | Contract II, III | S2 (arrival into `Arrive`); S3.4 | F-S3 by construction; F-B (no boundary crosses) | crosswalk P-T8 host ≠ fill-GAP | R5 |
-| sheet C | 6 *"single append-only log"* | S1.2 (indices forever) | F-H1 across restarts | — | T14, A5 |
+| sheet C | 6 *"single append-only log"* | S1.2 (indices forever) | persisted-prefix preservation under the proposed durable mode; arbitrary-reload retention remains R3 | — | T14, A5 |
 | sheet S | 3, 13 | — | F-A1 (arrival law), F-G (cuts nothing) | AgentScope KEEP failure taxonomy for the *steward* | T16, T10, T11 |
-| **σ (the rule)** | 5 · open #2 | **S4.2 Φ-schedule = `[GAP]`** | **all thirteen; E6** | all nine FORBID rows | none — E8 |
+| **σ (the rule; implementation owner unassigned)** | 5 · open #2 | **S4.2 Φ-schedule = `[GAP]`** | **all thirteen; E6; acceptance does not assign a branch** | all nine FORBID rows | none — E8 |
 
 ---
 
@@ -210,6 +212,8 @@ Each row: what the part is tied to. If any cell is empty the part is unmoored; n
 ```
 
 No parallel branch fan-out. No scaffold. Each `PROVE` is a written proof note in `docs/` if the human requires one (branch-contracts G), at an exact reviewed commit.
+
+The diagram retains the proposed birth sequence; its path to “the app” is conditional on resolving the σ ownership gap and all applicable card premises. It does not show an existing callee for the missing decision.
 
 ---
 
@@ -251,13 +255,13 @@ Roles are the human's own pattern (pass 1 §4: *"ChatGPT builds, EW identifies e
 
 ---
 
-## 8. Propose / attack / resolve — one agent, not independent review
+## 8. Original propose / attack / resolve — one agent, not independent review
 
 **Propose:** keep the seven doors; add T, R, H, C, S, E as sheets; extend the birth order with an optional #0; move every unsettled premise into R1–R8.
 
 **Attack:** (1) *Sheet R is a second store.* — It is a byte range; `L` is the abstraction; F-Carry. Survives, with the fence quoted. (2) *Sheet C(ii) has Layer III writing Core's history.* — Named as the tension in the sheet; it is why R3 exists. **Not resolved here; correctly refused resolution.** (3) *Sheet S's arrival law decides tokenization.* — It decides *not* to tokenize; each submit is one value; G1 is untouched. Survives. (4) *`memory` export lets the host forge a POINTER.* — Yes; that is R5, and no wasm feature removes it. Survives as a stated trust row. (5) *The shape is unbuildable because the gate is closed.* — True and intended; §6 lists what is buildable now, and it is not nothing. (6) *The thesis (iteration plan §1) said the non-composing places are each a ruling; is that so?* — R1–R6 are six; none is an agent default; **the thesis holds at pass 5 and the falsifier did not fire.** (7) *R6's `k` cannot be deferred forever; an encoding must exist to build `strand/`.* — Correct: birth #1 is blocked on R6 as well as R7. Stated in §5.
 
-**Resolve:** the shape composes; six rulings and one acceptance stand between it and the first birth; nothing was invented to close them.
+**Original resolve:** the pass reported that the shape composed, with six rulings and one acceptance before the first birth. **Current qualification, 2026-09-20:** that sufficiency claim is not established. The σ implementation edge is unassigned, and the cards retain their other proof obligations. The preceding attack/resolve account is preserved as the original assessment, not current evidence that the edge is closed.
 
 ## 9. Steward receipt
 

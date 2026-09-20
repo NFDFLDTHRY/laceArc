@@ -139,16 +139,16 @@ These are **[INFERENCE] proof sketches over the abstract description**, reviewed
 
 Closing G2 is necessary for Core construction and does not automatically close G1 or G3–G7. The mathematical model §6's executable-incompleteness “if and only if” wording is too strong to use as a sufficiency result: control C03 explicitly keeps other facts needed by an implementation open. No such sufficiency claim is made here.
 
-## 5. Holder machinery and visual vocabulary
+## 5. Conceptual references and visual vocabulary
 
-“All mechanisms” must retain the boundary between Lace structure and the machinery used by its holder. The three philosophical texts supply holder mechanisms. They are required by the live law for operating on the workpiece; they are **not derived Core operators** or additional Graphic D entries.
+HCC-A, The Coffee Cup, and Where the Water Is Loud / Dual Proofing Systems are **conceptual reference documents**, as [corrected by the human on 2026-09-20](law-why-these-documents.md#conceptual-reference-documents). The clock's driver/phase/clutch labels below are interpretations of their concepts. They do not establish required holder machinery, runtime dependencies, or legal-append conditions. Their concepts remain available for reasoning; none supplies a Core operator or an additional Graphic D entry.
 
 | Mechanism family | Constituent vocabulary / composition | Where it belongs |
 |---|---|---|
-| HCC-A driver; clock train A | Reality → Interface; parallel RIC and PFC; Compiler; Story Ledger; Meaning Engine; Emotional Layer; Identity/State Layer; Behavior; feedback to Reality. Its S0–S7 phases and Six-Act cycle organize this same holder process. | `[H]`. Ledger addition/merge/re-index/delete and meaning weights remain inside the holder. B is its observable output; B does not specify G2. |
-| Coffee Cup phase; clock train B | Conditions, Release, Trajectory, Impact, Aftermath; Aftermath changes subsequent Conditions. Trajectory is the intervention window. | `[H]`. No stage rewrites a historical Lace occurrence or decides POINTER emission. |
-| Water/Proofing clutch; clock train C | Banks, Rapids, Delta, Crossing, Bank Rebuild; OBS, DELTA, UNK, INVALID; Locate, Anchor, Pair, Unknowns, Reject. | `[H]`. Pointability and shared comparison organize talk. An OBS address is not a Graphic D position; Anchor is not P3/P4. |
-| Coupled clock | Co-presence cells t0–t6, Lock/Release escapement, Aftermath/Rebuild/ActVI recurrence, and six boundary audits. | Holder composition and `[III]` display. The [walk artifact](clock/shadow-clock-gear-contracts.md) controls the panel copies. It does not supply G2. |
+| HCC-A concepts; interpreted as clock train A / driver | Reality → Interface; parallel RIC and PFC; Compiler; Story Ledger; Meaning Engine; Emotional Layer; Identity/State Layer; Behavior; feedback to Reality; S0–S7 phases and Six-Act cycle. | `[H]` names the conceptual model's domain, not a required component. Ledger mutation and meaning weights are not Lace writes; B does not specify G2. |
+| Coffee Cup concepts; interpreted as clock train B / phase | Conditions, Release, Trajectory, Impact, Aftermath; Aftermath changes subsequent Conditions. Trajectory is the intervention window. | Conceptual causal sequence. No stage rewrites a historical Lace occurrence or decides POINTER emission. |
+| Water/Proofing concepts; interpreted as clock train C / clutch | Banks, Rapids, Delta, Crossing, Bank Rebuild; OBS, DELTA, UNK, INVALID; Locate, Anchor, Pair, Unknowns, Reject. | Conceptual communication vocabulary. An OBS address is not a Graphic D position; Anchor is not P3/P4. |
+| Coupled clock interpretation | Co-presence cells t0–t6, Lock/Release escapement, Aftermath/Rebuild/ActVI recurrence, and six boundary audits. | `[III]` conceptual display, not required holder composition. The [walk artifact](clock/shadow-clock-gear-contracts.md) controls its panel copies. It does not supply G2. |
 | Visual primitives | Worldline, slice, stream, helix, shells, projected crossings; holder recirculation may be shown as a torus. | `[III]`. No closed Core ends, vortex reconnection write, stored coordinates, or dynamical physics inferred from a picture. |
 
 Source crosswalk: HCC-A §§1–5; *The Coffee Cup*, Stages One–Five and its loop; *Where the Water Is Loud*, Specs §§1–4, 6; repository [philosophy map](clock/philosophy-map.md), [hologram](clock/shadow-clock-hologram.md), [walks](clock/shadow-clock-gear-contracts.md), and [visual vocabulary](hologram/visual-primitives.md).
@@ -169,13 +169,13 @@ The five academic stakes also supply no atomic Core operator. Kauffman's later g
 | “Backward” forces every depicted operand arrow to descend. | D1 row 0006 depicts 0003 → 0005. | Section 3 separates the three relations; the proof uses only section-to-reference descent. |
 | Add a continuation field now and fill it later. | A later write changes an earlier section, even if performed once. | K1 rules it out; no mutable continuation slot. |
 | Labels splitting or merging must split or merge historical WORDs. | Live law confines these acts to naming observed geometry. | Three identities remain separate; K5 applies. |
-| An OBS anchor or a holder's Release provides emission. | Water's talk pointers and Cup's phases belong to the holder. | Section 5 keeps their effects out of Graphic D; G2 is unchanged. |
+| An OBS anchor or a holder's Release provides emission. | Water's talk pointers and Cup's phases are concepts in reference documents, not Lace operations. | Section 5 keeps their interpreted effects out of Graphic D; G2 is unchanged. |
 | Pointer depth gives a numeric dimension or intelligence score. | C5–C8 discuss independent participation; no such metric is specified. | G5 remains open; density proves neither learning nor reasoning. |
 | Recursive definitions close the ends or guarantee an infinite existing path. | Live law forbids a closed splice; finite descending references cannot cycle. | K6 and the bounded proof preserve both distinctions. |
 | Completing emission alone proves the whole system executable. | Word identity, traversal, encoding, resources, and relevant failure obligations can still be unsettled. | G1–G7 remain separate obligations. |
 | A derived cache may become the authority because it is called a view. | Control C05 requires removing a derived aid to lose no authoritative fact; the permanent store prohibitions still apply. | P0 and K4–K5 preserve authority on the line. |
 
-**Bounded verdict:** Complete as a mapping of the current 15 manifest pieces and the named holder/view families above. Incomplete as an executable construction, physical validation, minimality proof, or accepted POINTER contract. These limits are part of the result.
+**Bounded verdict:** Complete as a mapping of the current 15 manifest pieces and the named conceptual-reference/view families above. Incomplete as an executable construction, physical validation, minimality proof, or accepted POINTER contract. These limits are part of the result.
 
 **Next narrow question:** What precise source-backed condition distinguishes a WORD-only continuation from one that also appends a POINTER, and how does that condition determine the earlier targets? A future `docs/pointer-emission.md` must resolve the relevant G2 questions and receive human acceptance of its exact revision before Core code is permitted. This map supplies no answer by default.
 

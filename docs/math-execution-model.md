@@ -7,7 +7,7 @@
 **Φ-schedule:** Q1 open. Completeness of a Core executor requires human-accepted schedule prose.  
 **No `src/`.** File existence here does not authorize code.
 
-**Authority (highest first):** Graphics A–D → [`systems-manifest.md`](systems-manifest.md) → [`systems-manifest-ascii.md`](systems-manifest-ascii.md) (companion) → AGENTS / law → this formalization (lowest).  
+**Source roles:** Graphics A–D are the source of record; [`systems-manifest.md`](systems-manifest.md) is derived from them. AGENTS / live law govern permitted work. [`systems-manifest-ascii.md`](systems-manifest-ascii.md) is a reading companion; this partial formalization is a derivative model. Neither companion nor model outranks the sources or supplies human acceptance.
 **DRAFT questions:** [`pointer-emission.md`](pointer-emission.md).  
 **Fidelity sheet:** [`graphics/prefix-device-pass-6.md`](graphics/prefix-device-pass-6.md).  
 **Align, do not elevate:** [`atomic-primitives-map.md`](atomic-primitives-map.md) `[PROPOSAL]`; Hands §2 of [`clock/system-mathematical-model.md`](clock/system-mathematical-model.md).
@@ -95,13 +95,13 @@ There is no second engine after ingest (Piece 2; Hands §2.4).
 
 ## S3 — Readings (not stores)
 
-### S3.1 Star as formation / view
+### S3.1 Star occurrence membership (partial view)
 
 \[
 \mathrm{Star}(v) = \{ i < |L| \mid e_i = (\mathsf{WORD},\, v) \}.
 \]
 
-Star is accumulated passages through the same word-variable (Pieces 7, 15). It is **not** a row kind and **not** a side table. Installing a Star table beside \(L\) is forbidden. A POINTER-cluster reading (prefix-device pass 4 N2) is not this set and is not a fifth Kind.
+The notation \(\mathrm{Star}(v)\) here records only WORD-occurrence membership. The **full star formation** is accumulated passages through the same word-variable with route context and recorded participation retained (Pieces 7, 15); that structure is not exhausted by this set ([atomic map](atomic-primitives-map.md) §3; witness pass 3). Neither the membership view nor the formation is a row kind or a side table. Installing a Star table beside \(L\) is forbidden. A POINTER-cluster reading (prefix-device pass 4 N2) is not this membership set and is not a fifth Kind. A complete structural readout remains open.
 
 ### S3.2 Sequence as route
 
@@ -171,6 +171,8 @@ Rejected lookalikes in the emission draft stay **non-answers** here too.
 
 The bracket is not a when. Schedule is not given. When a schedule is accepted it can only fire \(\Phi_{\mathrm{morphism}}\).
 
+**Scope of later refinements:** this partial schema places `Arrive` before its Φ bracket. A later model that types the whole arrival as an arbitrary sequence of `{Arrive, Φ}` must state whether it inherits this ordering. Final-row equality alone does not establish arrival boundaries; [environment E2/E6/E9](plans/lace-context-iter6-pass-4-environment.md) and [reduction M3](plans/reduction-pass-2-execution-model.md#x5--theorems) keep the per-STEP frontier claim conditional. This qualification supplies no schedule.
+
 Continue means the same rule remains available for further arrivals without closing or resetting the strand — not a scheduler and not a promise of infinite runtime.
 
 ---
@@ -216,7 +218,7 @@ Relative to Graphic D and Pieces 1, 6, 13, 14 — each is **not** a Core morphis
 | \(\mathsf{Arrive}\) | P4 on WORD | §2.4 | Agree |
 | \(\Phi_{\mathrm{morphism}}\) | G2 shape | emission pass 5 | Agree with law file; not a new atom |
 | \(\Phi_{\mathrm{schedule}}\) | G2 when | §2.4 Participate when | OPEN in all |
-| \(\mathrm{Star}(v)\) view | Piece 7 | §2.3 | Agree — not a table |
+| \(\mathrm{Star}(v)\) membership view | Piece 7 | §2.3 | Partial observation only; not the complete formation or a table |
 | G1 word identity | G1 | §2.1 | OPEN |
 | Holder train | Out of Core | §3 | excluded from \(L\) |
 

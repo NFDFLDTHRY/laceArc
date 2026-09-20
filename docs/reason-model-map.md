@@ -16,6 +16,8 @@ Core pieces named below are the pieces in `docs/systems-manifest.md` (Pieces 1�
 
 **Mapping status:** 3/3. Complete. Pointer-emission is still a Core [GAP], not a missing map cell.
 
+**Source-attribution correction, 2026-09-20 (update pass 1, U16):** Targeted sightings of Kauffman printed pp.16–17 / PDF pp.35–36 (Figure 8) and printed p.323 / PDF p.342, plus Xiao–Zhu printed p.2 / PDF p.9 (Equation 1.1) and printed p.38 / PDF p.45 (§2.1.1), correct the diagram-equivalence, hitch-inequality and token-occurrence characterizations below. These corrections retain the existing prohibitions on replacing Lace history; they add no Core operator, tokenizer or emission rule. The original three-pass mapping remains its own completed campaign.
+
 ---
 
 ## Overview
@@ -30,7 +32,7 @@ What you must not do to that object and still call it Lace:
 - write a gloss and throw the cord away
 - put the lace in a graph database and declare the graph the shoe
 
-Knot theory’s Reidemeister moves *untie and retie* while claiming the knot is the same. A lace already threaded is not the same object after a pass is pulled out. Rule Zero is that difference.
+Kauffman’s Reidemeister moves change a diagram while preserving knot or link type; they do not require cutting the strand. Lace forbids using diagram equivalence to replace or erase its recorded passages. That admission boundary is distinct from the source’s definition of the moves.
 
 ```
 HANDS                         SHADOW
@@ -88,7 +90,7 @@ These are not new Core pieces. They are how the Core pieces feel.
 - **Kind:** Mechanism
 - **Maps onto:** Piece 5 POINTER Entry; participation / later touch
 - **Hands test:** Pull the standing part. An earlier wrap tightens. The earlier wrap is still there.
-- **Failure:** Untie the earlier wrap so the diagram looks cleaner. That is Reidemeister, not a hitch.
+- **Failure:** Replace retained passage history with a simplified equivalent diagram. Reidemeister equivalence supplies no authority for that replacement; a hitch does not erase earlier wraps.
 - **[GAP]:** On a shoe the grab is physics of friction. In Graphic D the grab is a later POINTER row. The five documents do not say when that row is written.
 
 ### RM5 — Chart is not the shoe (projection)
@@ -160,11 +162,11 @@ Hands: **adjacent** to RM5. Deforming a drawing of the lace is not deforming the
 **Verdict on K3:** allowed as how a shadow may wiggle. Not a write to the array.
 
 **K4 — Reidemeister I–III**  
-Kind: Operator on diagrams. Part I §2°, Figure 8.  
+Kind: Operator on diagrams. Part I §2°, Figure 8, printed pp.16–17 / PDF pp.35–36.
 Source language: the three moves “change the graphical structure of the diagram while leaving the topological type of the embedding of the corresponding knot or link the same.” II+III generate *regular isotopy*. I+II+III generate *ambient isotopy*. Reidemeister’s theorem: two links in 3-space deform into each other iff diagrams transform by these moves.  
-Hands: **[CONFLICT]** with RM1 / Piece 1. Each move is pull-a-pass-out or invent-a-pass.  
-Coupling: Looks like it could “simplify” stars (collapse curls = intern a pass). That is the collapse Graphic B forbids.  
-**Verdict on K4:** legal topology, illegal Lace. Pointer emission is not move II.
+Hands: **[CONFLICT]** if diagram equivalence is imported as permission to replace retained Lace history. The moves are diagram transformations, not literal instructions to cut the strand or delete recorded WORD occurrences.
+Coupling: Simplifying a projection does not authorize collapsing distinct passages in Graphic D. This is Lace’s admission boundary, not a claim that Kauffman specifies Lace writes.
+**Verdict on K4:** retain the source distinction; forbid equivalent diagrams as replacement occurrence history. Pointer emission is not move II.
 
 **K5 — Bracket / Jones / Yang–Baxter / quantum group / Gauss code**  
 Kind: Invariants and codes of a *diagram class*. Later Part I.  
@@ -175,9 +177,9 @@ Hands: **off-shoe** as physics; **conflict** if treated as history of wraps. Gau
 Kind: Topological move.  
 Hands: tempting “thread through.” Still a cut-and-rejoin in the topological sense. **conflict** with Rule Zero.
 
-**K7 — Theory of Hitches (Part II §1°, p.323, after Bayman)**  
+**K7 — Theory of Hitches (Part II §1°, printed p.323 / PDF p.342, after Bayman)**
 Kind: Physics of wrapping a rope on a post.  
-Source language: “A hitch is a mode of wrapping a rope around a post so that, with the help of a little friction, the rope holds to the post.” Windings: no slip while \(T_2 < \kappa T_1\), with \(\kappa\) growing with turns; model \(\kappa = e^{\theta}\) (unit friction). Clove hitch wrap-overs: “the top part squeezes the bottom part against the rod.” Square grips; granny feeds through. Fork restated: “The topology that we know has been obtained at the price of initial abstraction from these physical grounds.”  
+Source language: “A hitch is a mode of wrapping a rope around a post so that, with the help of a little friction, the rope holds to the post.” Windings: no slip while \(T_2 \le \kappa T_1\), with \(\kappa\) growing with turns; model \(\kappa = e^{\theta}\) (unit friction). Clove hitch wrap-overs: “the top part squeezes the bottom part against the rod.” Square grips; granny feeds through. Fork restated: “The topology that we know has been obtained at the price of initial abstraction from these physical grounds.”
 Hands: **kin** of RM4, Piece 11, Piece 15. Many turns through one post, all kept. Later tension participates.  
 Does **not** emit a POINTER row. The inequalities are friction, not array fields.  
 **Verdict on K7:** same as K1, now with the deferred math. Still not emission.
@@ -250,14 +252,14 @@ arXiv:2501.09223v2, June 17, 2025. CC BY-NC 4.0. Cite; do not fold body text int
 
 **X1 — Token sequence / arrival order**  
 Kind: Presentation. Ch. 1–2.  
-Source language: decoder-only models “predict the distribution of tokens at a position given its preceding tokens.” Sequences \(x_0,\ldots,x_i\).  
-Hands: **weak kin** of RM3 / Piece 3 only. Before/after on one wire.  
-Stops being kin the moment the token is an interned vocab atom.
+Source: §1.1, Equation 1.1 (printed p.2 / PDF p.9) retains an indexed sequence \(x_0,\ldots,x_m\); §2.1.1 (printed p.38 / PDF p.45) distinguishes a token’s representation from its position.
+Hands: **weak kin** of RM3 / Piece 3 only: the bounded comparison is sequence order. Shared vocabulary identity does not by itself erase separate indexed occurrences.
+This order comparison supplies no Lace representation or tokenizer; replacing distinct Lace passages with one vocabulary object remains forbidden.
 
-**X2 — Interned vocabulary token**  
-Kind: Primitive of the book.  
-Hands: **[CONFLICT]** with RM2 / Piece 4 / Piece 7. Two passes of “the” on a shoe are two wraps. The book’s token is one id plus positions. That is “one node named THE.”  
-Coupling: intern-in-place is the Star-table Graphic D forbids.
+**X2 — Shared vocabulary identity and indexed occurrences**
+Kind: Representation in the book. §1.1, Equation 1.1 (printed p.2 / PDF p.9); §2.1.1 (printed p.38 / PDF p.45). A token representation can be reused at distinct sequence positions; token identity and occurrence identity are different claims.
+Hands: **[CONFLICT]** with RM2 / Piece 4 / Piece 7 only for the proposed substitution that collapses distinct Lace passages into one vocabulary object, count or embedding store. Two passes of “the” remain two wraps. An indexed sequence with a shared token ID does not itself establish that collapse.
+Coupling: forbid vocabulary identity as a replacement for retained occurrence history or as a second authoritative Star table. The source comparison does not admit a vocabulary-based Lace implementation.
 
 **X3 — Causal language modeling (next-token loss)**  
 Kind: Training objective. §1.2.1.  
@@ -287,9 +289,9 @@ Does not decide ingest. Does not emit POINTER.
 
 ### Interface coherence (Xiao & Zhu → Core)
 
-X1’s output (an ordered list of atoms) looks like Piece 3’s input and is not. Piece 3 consumes raw arrival and emits WORD sections without discarding. X4’s output is a *damaged* sequence. That cannot be an input to Piece 2.
+X1 supports a bounded comparison of order; its indexed token sequence is not a specification of Piece 3’s raw-arrival contract. Shared vocabulary entries do not establish loss of the indexed occurrences. Piece 3 preserves arrival rather than substituting a collapsed vocabulary object. X4’s modified training sequence cannot authorize replacing Lace’s retained input.
 
-**[GAP] opened, not closed:** how an arriving spelling becomes a WORD without intern, mask, or delete. Tokenization remains unstated in the graphics. This book only constrains it from below: whatever it is, it may not be BERT-style corruption or vocab intern-as-identity.
+**[GAP] opened, not closed:** how an arriving spelling becomes a WORD. Tokenization remains unstated in the graphics. The standing restrictions forbid collapsing distinct passages, masking or deleting retained arrival, and replacing history with vocabulary identity. The source correction supplies no tokenizer or exception to those restrictions.
 
 ---
 
@@ -399,14 +401,14 @@ RM5 chart  ──reads──  Pieces 1–7 without becoming them
 RM6 no tag  ──forbids──  meaning table / embedding store
 ```
 
-### Edges the five texts try to add
+### Potential substitutions into Core (project comparisons, not the authors’ claims)
 
 | Proposed edge | What would flow | Status |
 |---|---|---|
 | K4 Reidemeister → Piece 6 | equivalent diagram after local rewrite | **[CONFLICT]** Rule Zero |
 | K1 hitch → Piece 5 | felt participation | **kin**, does not close [GAP] |
 | R3 rewrite-from-zero → Piece 2 | generated alphabet | name clash; wrong object |
-| X2 intern token → Piece 4/7 | vocab id as identity | **[CONFLICT]** intern |
+| X2 vocabulary → Piece 4/7 | vocabulary identity replacing distinct passages | **[CONFLICT]** occurrence collapse; sharing an ID alone does not show collapse |
 | X4 [MASK] → Piece 3 | damaged sequence | **[CONFLICT]** cut |
 | X3 next-token → Piece 2 | \(\mathrm{Pr}(x_{i+1}\mid x_{\le i})\) | wrong output type |
 | X7 decode \(\arg\max\mathrm{Pr}(y\mid x)\) → Piece 2 | sampled continuation | wrong output type |
@@ -418,7 +420,7 @@ RM6 no tag  ──forbids──  meaning table / embedding store
 ### Failure propagation
 
 If K4 is accepted as a write, Piece 1 dies and every other piece becomes a diagram class.  
-If X2/X4 are accepted as ingest, Piece 7 becomes a vocab table and Piece 3 lies.  
+If vocabulary identity replaces distinct passages, Piece 7 becomes a vocabulary table; if masked training input replaces retained arrival, Piece 3 loses that arrival. Neither substitution follows merely from an indexed token sequence.
 If P1/P4 are accepted as Core, Piece 6 becomes a weight file.  
 If A2 is accepted as storage, Graphic D’s “no separate graph” dies.  
 If R3’s *name* enters AGENTS.md, stewards will mutate WORD rows and call it theory.
@@ -514,7 +516,7 @@ Diagnostic use:
 | Kauffman slide / virtual handles | **conflict** | collapse risk | conflict | extra rooms | — | false solution |
 | Rowlands empty + one process | kin | — | — | — | kin (no extra store) | no |
 | Rowlands rewrite-from-zero | name clash | — | — | — | — | no |
-| Xiao & Zhu sequence | weak kin (order) | **conflict** (intern) | — | — | **conflict** | no (opens tokenizer gap) |
+| Xiao & Zhu sequence | weak kin (indexed order) | **conflict** only if vocabulary identity replaces distinct passages | — | — | **conflict** if an embedding store replaces history | no (tokenizer remains a gap) |
 | Xiao & Zhu mask/replace | **conflict** | — | — | — | — | no |
 | Petersen & Zech nets | conflict | conflict | — | shadow | conflict | no |
 | Petersen Remark 2.2 | — | — | — | kin of negation | — | no |
@@ -536,22 +538,22 @@ Marks in cells: kin / weak / adj / conflict / off / — (no contact).
 | 1 Strand / Rule Zero | K1 kin; K2/K4 conflict | R1 kin; R3 name clash | X4 conflict | P4 conflict | A2 in-array conflict |
 | 2 Governing Rule | K1 reads “continue wrapping”; K4 false operator | R1 “one process” kin | X3 next-token is wrong output | P1 Φ is wrong operator | steward policy only |
 | 3 Raw Input | off (closed-loop erases arrival) | off | X1 weak order; X4 conflict | off | off |
-| 4 WORD Entry | off | off | X2 intern conflict | off | off |
+| 4 WORD Entry | off | off | X2 vocabulary-as-occurrence-collapse conflict; indexed occurrences are distinct | off | off |
 | 5 POINTER Entry | K1 strong kin of grab; does not emit row | off | off | off | A2 false POINTER |
 | 6 1D Array | diagram class ≠ array | no extra-dimensional store kin | embedding store conflict | weight file conflict | ReAG store conflict |
-| 7 Star | hitch windings kin of many wraps; Reidemeister curl = collapse | off | intern = one node | hidden unit = false star | off |
-| 8 Sequence as route | closed loop *drops* the open route (conflict with continue) | generate-from-zero is not arrival order | token sequence weak kin until intern | input vector ≠ word order | trajectory order is steward, not lace |
+| 7 Star | hitch windings kin of many wraps; diagram simplification cannot replace retained passages | off | replacing distinct passages with one vocabulary object conflicts; sharing token identity alone is not collapse | hidden unit = false star | off |
+| 8 Sequence as route | closed loop *drops* the open route (conflict with continue) | generate-from-zero is not arrival order | indexed token sequence is weak kin of order, not a Lace arrival specification | input vector ≠ word order | trajectory order is steward, not lace |
 | 9 Dictionary wiring | off-shoe (invariants are not definition routes) | universal grammar / DNA rewrite **off-shoe**; name clash if called rewrite of PIE | gloss / embedding as definition **conflict** with “route not stored meaning” | approximating a lexicon **conflict** | off |
 | 10 Document feed | a link diagram is not a document ingest | off | corpus as training set: mutates weights, does not append lace | dataset \((x_i,y_i)\) is not punch-card append | AgentErrata is a steward corpus |
 | 11 Touch / later participation | **K1 clove hitch is the kin** | off | attention *looks* like touch; it is a weight, **conflict** if stored | message-passing / GNN **conflict** | ReAG edge is steward touch, not lace touch |
 | 12 Dimension as participation axis | extra space in ambient isotopy is room around a closed loop, not a new grab **conflict** if stored | R2 kin (must explain dimension, not store it) | positional / segment embedding = extra rooms **conflict** | width / depth as dimension **conflict** | ReAG DAG axes = steward shadow |
 | 13 Projection vs actual | K3 Move Zero adj; “diagram is not the rope” kin | math representation of strings allowed *as* representation (preface) — adj if kept as shadow | model of language is a shadow that the book treats as the thing **conflict** | Φ approximates f: shadow treated as possession **conflict** | ReAG explicitly a structured representation — adj over steward, conflict in array |
 | 14 No stored meaning / no collapse | bracket polynomial *is* stored meaning of a diagram class **conflict** as Core | particle tables / rewrite alphabets as stored code **off / clash** | embeddings, vocab, [MASK] **conflict** | weights **conflict** | neural invariant text **adj** over steward only |
-| 15 Star-internal traffic | windings on a post: many turns through one place, all kept — **kin** of traffic; Reidemeister I deletes a curl — **conflict** | off | one token id with positions collapses traffic **conflict** | one neuron absorbs many paths **conflict** | off |
+| 15 Star-internal traffic | retained windings are **kin**; replacing recorded passages with diagram equivalence is **conflict** | off | indexed occurrences survive shared token IDs; replacing retained Lace traffic with one vocabulary object is **conflict** | one neuron absorbs many paths **conflict** | off |
 
 ### Piece-by-piece notes (8–15 only)
 
-**Piece 8.** Xiao’s sequence is the only imported *order*. It dies as soon as the atom is interned. Kauffman’s closed loop is the opposite of an open route still being fed.
+**Piece 8.** Xiao’s indexed sequence supports the order comparison even when positions share a vocabulary identity. That does not specify Lace’s arrival or storage mechanism. Kauffman’s closed-loop convention is distinct from an open route still being fed.
 
 **Piece 9.** None of the five texts give a definition-as-route. Xiao/Petersen will offer a gloss or an approximator. That is RM8’s failure mode.
 
@@ -565,11 +567,11 @@ Marks in cells: kin / weak / adj / conflict / off / — (no contact).
 
 **Piece 14.** Every imported invariant polynomial, embedding, or weight file is a tag that wants to replace the bow.
 
-**Piece 15.** Multiple windings through one post, all left in place (K7), is star-internal traffic on a shoe. Reidemeister I and token-intern both flatten that traffic.
+**Piece 15.** Multiple windings through one post, all left in place (K7), is star-internal traffic on a shoe. Diagram equivalence or a shared vocabulary object cannot replace that retained traffic. Neither a Reidemeister transformation nor shared token identity alone establishes erasure of indexed occurrence history.
 
 ### Pass 2 samples (the lookalikes that could have hidden a sixth piece)
 
-**Kauffman Part II §1 Theory of Hitches** — kin only. Friction inequalities, wrap-overs, square vs granny. No POINTER emission. Do not copy \(T_2 < e^{\theta} T_1\) into the array.
+**Kauffman Part II §1 Theory of Hitches** — kin only. Friction inequalities, wrap-overs, square vs granny. No POINTER emission. Do not copy \(T_2 \le e^{\theta} T_1\) into the array.
 
 **Kauffman Part II §4 Slide equivalence** — conflict. Slide axioms imply Reidemeister II and III. Larger write, not milder.
 
@@ -610,7 +612,7 @@ If you cannot do it to a shoe lace in your hands, you may not do it to laceArc.
 
 - Core is one contract. The five books are not five contracts.
 - Only Kauffman hitch, Rowlands empty/no-extra-store, and AgentScope-on-the-holder may sit beside Core.
-- Reidemeister, intern/mask, \(\Phi(w)\), and ReAG-in-the-array are illegal fusions.
+- Reidemeister equivalence as replacement history, vocabulary-as-occurrence-collapse, masking retained arrival, \(\Phi(w)\), and ReAG-in-the-array remain illegal fusions.
 - Pointer-emission remains an internal Core [GAP]. Do not fill it from these volumes.
 
 ---

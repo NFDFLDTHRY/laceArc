@@ -2,7 +2,7 @@
 
 **Status:** `[PROPOSAL]` environment. **Not an emitter. Not a schedule. Not `src/`.** **Station:** maps. **Emission:** `[GAP]`.
 **Method:** [iteration 6 plan](lace-context-iteration-6-plan.md) §2 pass 4. Builds on the sealed [partial algebra](../math-execution-model.md) S1–S6 (**cited, not edited**), the [WASM crosswalk](math-execution-wasm-crosswalk-pass-2-reading.md) KEEP/FORBID reading, the nine reference shelves' stamps, and the [emission file's](../pointer-emission.md) CLOSED rows and non-answers table.
-**Authority (highest first):** Graphics A–D → manifest → algebra → emission file's CLOSED rows → this environment (lowest). Where this file and any of those differ, this file is wrong.
+**Source roles:** Graphics A–D are the source of record; the manifest is derived from them. AGENTS and live law govern permitted work. The algebra and source-closed emission constraints are inputs to this proposed environment; their use here does not accept a schedule or promote a proposal above the sources. Open or conflicting emission sentences remain open or conflicting.
 
 **One sentence:** the environment does not choose the rule; it computes the region the rule must lie in, proves that region is non-empty and non-trivial, and runs any candidate against it. *Solving lace against the reference material* means exactly that: every reference is a fence, and a solution is the fenced region — not a point in it.
 
@@ -35,11 +35,11 @@ valid(L)  :⇔  ∀ j, ∀ i:  e_j = (POINTER, ..r_i..)  ⇒  0 ≤ r_i < j     
 
 Arrive(v)        : L ↦ L ⌢ (WORD, v)                                          [S2]
 Φ_morphism(R)    : L ↦ L ⌢ (POINTER, r_1..r_k),  each r_i < |L|              [S4.2]
-Star(v)          = { i < |L| | e_i = (WORD, v) }      a view, not a row       [S3.1]
+Star(v)          = { i < |L| | e_i = (WORD, v) }      occurrence membership [S3.1]
 π                : L → View,  no View → L                                    [S3.4]
 ```
 
-Nothing above is new. E1 is the algebra's own state space written without LaTeX.
+Nothing above is a new row or store. E1 restates the algebra's state space. `Star(v)` is only the WORD-occurrence membership view; it omits route context and recorded participation and is not the full star formation (atomic map §3; witness pass 3).
 
 ---
 
@@ -54,7 +54,9 @@ run(σ, L, v)  =  L ⌢ σ(L, v)                    apply the appends in order
 run(σ, L, v_1..v_m)  =  run(σ, run(σ, L, v_1), v_2..v_m)
 ```
 
-**σ is the schedule.** It takes the whole current strand and the arriving value and returns what to append. Three things follow from the type alone, and each is already a ruling:
+**σ is the schedule.** It takes the whole current strand and the arriving value and returns what to append. It describes the whole arrival's appends, not merely S4.3's bracket after `Arrive`. The broad `Step*` type alone does not require `Arrive` to come first. A claimed refinement of S4.3 must explicitly use `σ(L,v) = [Arrive(v)] ⌢ p`, with `p` containing only Φ appends. Whether that refinement is required of a prospective accepted schedule is an inheritance obligation; neither final D1 equality nor this type alone settles it. No Φ timing or refs are chosen here. See [reduction M3](reduction-pass-2-execution-model.md#x5--theorems).
+
+The signature and append form carry the following proposed restrictions; their governing sources are separate from the type notation:
 
 | From the type | Is the ruling |
 |---|---|
@@ -76,12 +78,12 @@ Each fence is a predicate `F(σ)`. A candidate that fails one is **REFUTED by th
 | **F-H2** backward | `∀ L, v:` every `Φ(r..)` in `σ(L, v)` has each `r <` the index it is appended at | D2 *"references earlier entries"*; Q4 CLOSED |
 | **F-H3** empty start | `∀ v:  σ(ε, v) = [Arrive(v)]` — exactly one WORD, no POINTER | A1; A2 *"first occurrence creates the beginning of a star"*; Q0 CLOSED *"first unseen v is Arrive"*; Rowlands KEEP empty start |
 | **F-H4** D1-admissible | `run(σ, ε, PIE, DESSERT, PIE, WHOLE, CUSTOMER) = D1` — the eleven rows, in order, refs as drawn | D1 (`VISUALLY_OBSERVED`); math-execution pass 3 witness; close-reading §3. **D1 is illustrative of the schedule, so this is a *necessary* condition only: a σ that cannot produce D1 cannot be the rule; a σ that can is not thereby the rule** |
-| **F-H5** non-constant fan-out | derived from F-H4: after WORDs at 0000, 0001, 0003, 0005, 0008 the POINTER counts are 0, 1, 1, 2, 2 | emission file Q1 *HANDS still CLOSED* row |
+| **F-H5** non-constant fan-out | derived from F-H4: between successive WORD rows in final D1 (and after the last), POINTER counts are 0, 1, 1, 2, 2. Identifying these with per-STEP emission counts additionally needs the S4.3 ordering premise in E2 | emission file Q1 *HANDS still CLOSED* row |
 | **F-A1** arrival order | the subsequence of `Arrive` steps in `run(σ, ε, v_1..v_m)` is `v_1..v_m` in order — no reorder, no drop, no merge | B5, B6, C10 *"input is fed in arrival order"*; Piece 3; A13 *"every word occurrence preserved"* (pass 1 §3) |
 | **F-S1** no side state | σ has the signature of E2 and nothing else: no table, cache, vocabulary, embedding, count, or holder record read or written | S6 `[X]` 2–5; C05; Xiao–Zhu / Petersen–Zech FORBID rows |
 | **F-S2** time-invariant | the same σ at every arrival; no parameter of σ is a function of history except through `L` itself | Petersen–Zech FORBID train-w-as-history; staking *"function ≠ construction"* |
 | **F-S3** no host state | σ does not read WASM store / memory / table / stack, GPU device / queue / buffer, MLGraph, or any Layer III object | G-III-1…4 fences; wasm crosswalk pass 2 FORBID rows |
-| **F-S4** no holder state | σ does not read HCC-A / Cup / Water / ReAG / OBS / UNK / clock-tooth state | staking *GEARS* block; AgentScope FORBID ReAG rows; emission non-answers *clock tooth / Anchor / Locate* |
+| **F-S4** no imported conceptual-model state | σ does not read HCC-A / Cup / Water / ReAG / OBS / UNK / clock-tooth state | live-law conceptual-reference correction; AgentScope FORBID ReAG rows; emission non-answers *clock tooth / Anchor / Locate*. These exclusions do not require the reference documents to exist as holder or runtime components |
 | **F-N** non-vacuous | `∃ L, v:  σ(L, v)` contains at least one `Φ` | branch-contracts pointer/ card: *"an opaque type with no lawful inhabitants is not proof"* |
 | **F-G** no imported word identity | σ does not decide `v = v'` by a rule the Hands do not state (case-fold, stem, tokenizer, regex boundary, character arithmetic) | G1 OPEN; C05; manifest open #1. **Note:** this fence is *silent*, not *closed* — a σ that needs an identity rule is BLOCKED on G1, not refuted |
 | **F-B** no unstated boundaries | σ does not consult a sentence / document / conversation / provenance boundary unless such boundaries are rows in `L` | D shows only WORD and POINTER; manifest open #3. A σ needing them is BLOCKED on #3 |
@@ -132,7 +134,7 @@ Candidates come from: the emission file's non-answers table; the close-reading's
 | older lineage · **star-similarity licenses ties** (radius = character value, angle = position) | needs character arithmetic on `v` and a threshold | identity by arithmetic → G1; threshold is a free constant | **BLOCKED** | F-G (open #1); F-N untested |
 | older lineage · **bind at UNK resolution** | no — UNK is holder (Water) state | — | **not a σ** | F-S4 |
 
-**Reading the table.** Every candidate anyone has written down is outside the region, and the environment names the fence for each. **No candidate on record is in the region.** The region is non-empty (E4.1). Therefore the rule that would open `src/` has not yet been *stated by anyone* — not the campaign, not the older lineage, not any book. This is not a failure of the environment; it is the environment's finding, and it is the same finding the emission file states in prose (*"Not accepted"*), now with a reason per candidate.
+**Reading the table (current scope, 2026-09-20).** Of these seventeen recorded candidates, four are REFUTED, nine are not a σ, one is not a candidate, one is not yet a σ / UNESTABLISHED, and two are BLOCKED. **None is established in-region by this table.** BLOCKED leaves membership undetermined; it does not prove exclusion. E4.1 remains the stated existence witness for the fences, not an accepted rule. This bounded inventory cannot prove that nobody elsewhere has stated a rule, and in-region evidence would still not supply human acceptance.
 
 ---
 
@@ -144,7 +146,7 @@ Derived from E3, not invented: a candidate σ the human could rule on must
 2. return only appends, each `Φ` ref earlier than its own index (F-H1, F-H2);
 3. return exactly `[Arrive(v)]` on the empty strand (F-H3);
 4. keep every arrival as its own `Arrive`, in order — including repeats (F-A1; this is where the campaign's Q0/Q5 sentence fell);
-5. reproduce D1 exactly on D1's input (F-H4) — and the author should show the run, row by row;
+5. reproduce D1 exactly on D1's input (F-H4) — show the run row by row and mark each arrival's STEP boundary. State whether S4.3's `Arrive`-first refinement is being assumed; final equality alone does not establish it;
 6. emit at least one `Φ` somewhere (F-N);
 7. either need no word-identity rule and no boundaries, **or** say so, so that G1 / open #3 are ruled first (F-G, F-B).
 
@@ -184,7 +186,7 @@ One agent may run all steps and must say so. A second agent re-running STEP 4 in
 | This environment | Sealed product | Stance |
 |---|---|---|
 | E1 universe | S1–S3 | identical; restated |
-| σ type over `{Arrive, Φ}` | S4.2 two morphisms; S4.3 `Step_partial` | agrees; σ is the bracket in S4.3 given a type |
+| σ type over `{Arrive, Φ}` | S4.2 two morphisms; S4.3 `Step_partial` | σ covers the whole arrival; it is not the Φ-only bracket. Inheritance of S4.3's ordering requires the explicit premise in E2/E6 |
 | F-H3 | Q0 CLOSED | identical |
 | F-H4 | pass 3 witness *"witness-only"* | agrees; sharpened to *necessary condition* |
 | F-S1–S4 | S6 `[X]` 2–5, 8; crosswalk pass 2 FORBID | agrees |
@@ -194,7 +196,9 @@ One agent may run all steps and must say so. A second agent re-running STEP 4 in
 
 No competing atom. No new morphism. No fence without a source.
 
-## E10 — Steward receipt
+## E10 — Original steward receipt (preserved)
+
+This table preserves the original pass's report. Its “0 in region” is now read as **0 established in-region**, with two BLOCKED cases as detailed in E5; it is not an exclusion proof for those two.
 
 | Field | Value |
 |---|---|

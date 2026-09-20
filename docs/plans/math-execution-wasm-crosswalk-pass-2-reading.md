@@ -7,7 +7,7 @@
 **Emission / Φ:** `[GAP]`. No `src/`.
 **WASM role:** Shadow compile-target (`wasm64`) only. **Not** Core. **Not** Graphic D.
 
-**Authority:** Pass 1 map → math-execution Pass 2–6 (cite-only) → wasm-spec-3 clipboard / ascii-machinery / mechanisms (cite-only; **not edited**) → systems-manifest-ascii **G-III-4** → pointer-emission (questions only) → this reading (lowest).
+**Source roles:** Graphics A–D are the Lace source of record; the manifest is derived from them. AGENTS / live law govern permitted work. The WASM shelf records target-spec evidence, not Lace append authority. **Reading dependencies:** Pass 1 map; math-execution Pass 2–6; wasm-spec-3 clipboard / ascii-machinery / mechanisms; companion G-III-4; pointer-emission with its closed constraints and unresolved questions. This derivation order does not rank proposals above governing sources or establish acceptance.
 
 Steward line: *Shoe in hands. Stamps already inked. Reading pairs them; it does not invent the cut.*
 
@@ -88,7 +88,7 @@ No KEEP row below implies Core write, Arrive extension, or Φ fill.
 | Φ Q1 — when POINTER appends | `[GAP]` / SILENT-for-Lace-append | Control / validate / reduce do not state Lace participation |
 | Φ Q2 — arity | `[GAP]` | Instruction forms ≠ Hands arity law |
 | Φ Q3 — adjacent WORD relation | `[GAP]` | Feed order ≠ emission (Pass 4 N08; Pass 6) |
-| Φ Q4 — POINTER→POINTER / proof of earlier | `[GAP]` | Call stacks ≠ Lace proof |
+| Φ Q4 — POINTER→POINTER / proof of earlier | Permission CLOSED; admission proof procedure remains `[GAP]` | Q4 permits earlier POINTER targets; WASM call stacks supply no Lace proof |
 | Φ Q5 — later star pass requires POINTER? | `[GAP]` | Star views ≠ WASM tables |
 | G1 tokenization | `[GAP]` | Spec codecs ≠ Hands Arrival G1 (Pass 6) |
 | “WASM op ⇒ Arrive / Participate” | SILENT / FORBID invent | Would invent Core morphisms (Pass 1 M3) |

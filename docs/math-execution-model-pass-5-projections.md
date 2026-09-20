@@ -6,7 +6,7 @@
 **Pinned main:** `7ba7cc39d0867d8dab03eee74349d61726311041`.
 **Emission / Φ:** `[GAP]`. No `src/`.
 
-**Authority:** Graphics A–C PNGs → Pass 2 model (S3.4 / S5 / S6) → systems-manifest Piece 13 → Pass 3 D seam → Pass 4 N03–N06 / N14 refusals → [pointer-emission.md](pointer-emission.md) (questions + non-answers only) → this reading (lowest).
+**Source roles:** Graphics A–D are the source of record; A–C supply the projection evidence here and D fixes the store. The manifest is derived from them; AGENTS / live law govern permitted work. **Reading dependencies:** Pass 2 model (S3.4 / S5 / S6), manifest Piece 13, Pass 3 D seam, Pass 4 N03–N06 / N14, and [pointer-emission.md](pointer-emission.md) with its closed constraints and unresolved questions. These derivative readings do not become source authority or acceptance by being listed first.
 
 Steward line: *Shoe in hands. A–C show how lace may be seen. They do not write the strand.*
 
@@ -112,7 +112,7 @@ D1 is not a training set for drawing A–C. A–C do not authorize edits to D1.
 | **Q1** When is a POINTER appended? | **No.** Pictures of seeing are not a when-rule. |
 | **Q2** What is the arity? | **No.** View chrome does not fix arity. |
 | **Q3** Do adjacent WORDs already constitute a relation? | **No.** Graph pictures must not be inverted into adjacency⇒emit. |
-| **Q4** POINTER→POINTER / WORD-only / proof of earlier? | **No.** Pass 2 backward-same-line constraint unchanged; A–C add no proof. |
+| **Q4** POINTER→POINTER / WORD-only / proof of earlier? | **No new answer from this projection reading.** Current Q4 already permits POINTER→POINTER and rejects WORD-only targeting; the proof procedure and required-emission questions remain open. |
 | **Q5** Does a later star pass require a POINTER? | **No.** Star pictures are views; requirement stays open. |
 
 Rejected lookalikes in emission “Explicit non-answers” remain non-answers here too.

@@ -55,6 +55,13 @@ The seven doors are proof and implementation boundaries over **one Lace**.
 They are not seven independently stored systems. The manifest's irreducible
 Core still holds; Piece 1 and Piece 6 are the same physical object.
 
+**Current ownership limit (2026-09-20):** no card owns the σ decision.
+route/ appends already-admitted sections; core/ delegates, and both exclude
+scheduling. These cards are therefore an incomplete implementation
+decomposition, not proof that acceptance alone makes all responsibilities
+compose. Reconcile ownership explicitly before implementation without
+silently widening a task or adding a helper, branch, or dependency edge.
+
 No `arrival/`, `array/`, `emit_pointer/`, `utils/`, or other convenience door
 is added. Arrival stays a surface with no store. `alloc/` is not an eighth
 planned birth. No door is renamed. A future rename must pass the
@@ -97,14 +104,12 @@ anti-import boundaries; it does not reopen the five-stake mapping.
    the outline file now exists at `docs/prompts/pointer-emission-prompt.md`
    (defrag pass 1). Page H still treats the outline as
    distinct from the acceptance gate: outline ≠ contract; existence ≠ acceptance.
-2. **Target-kind conflict.** The current `pointer-emission.md` section 4 asks
-   whether POINTER-to-POINTER targeting is general or merely illustrative.
-   Graphic D3 says later entries can reference words or other pointers;
-   D6 and the key properties explicitly permit pointers to reference
-   pointers. Manifest Piece 5 and AGENTS.md also state this. The pointer
-   card preserves that graphic-supported permission. It does not turn
-   permission into a target-selection, timing or arity rule. The draft's
-   contrary uncertainty remains a `[CONFLICT]` to reconcile in its own task.
+2. **Target-kind item reconciled, 2026-09-20.** Current `pointer-emission.md`
+   section 4 closes POINTER-to-POINTER permission and rejects WORD-only
+   targeting, agreeing with Graphic D3/D6, Piece 5 and AGENTS.md. The
+   earlier conflict is not a current blocker. The pointer card preserves
+   that permission without turning it into required emission, target
+   selection, timing, arity, or a proof procedure for “earlier.”
 3. **View-store conflict.** Manifest Piece 13's implementation paragraph
    permits graph databases, embedding spaces and definition tables as
    disposable views. The staking law forbids those stores; Graphic D4
@@ -470,7 +475,8 @@ unresolved pairs such as PIE/pie; it is not a default normalization rule.
 
 - **`[GAP]` at section admission.** Continue is not a decision about
   which section to append or when a POINTER should exist. This plan
-  assigns that missing rule to no helper or branch.
+  assigns that missing rule to no helper or branch. Acceptance of σ would
+  still require explicit reconciliation of that unassigned responsibility.
 
 ### branch: view_star/
 
@@ -668,7 +674,9 @@ irreducible-Core boundary; AGENTS.md Implementation Law.
 #### Emission contact
 
 - **`[GAP]` remains outside this plan's answers.** Core may not fill it
-  as glue. Delegating Continue does not supply when/arity/adjacency.
+  as glue. Delegating Continue does not supply when/arity/adjacency or
+  assign σ to a proven callee. The unassigned edge remains visible at
+  composition; this card does not absorb it.
 
 ## PAGE F — Virtual workspace and permitted dependency edges
 

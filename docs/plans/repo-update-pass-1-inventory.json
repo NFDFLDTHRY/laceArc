@@ -1,0 +1,3912 @@
+{
+  "base": "0b2012bb221184f684f672f63260c6b1ecd9427b",
+  "files": [
+    {
+      "path": ".claude/README.md",
+      "blob": "48d2733b87d31ab6cc926af03ac7995f5e9625d8",
+      "bytes": 1055,
+      "family": ".claude",
+      "extension": ".md"
+    },
+    {
+      "path": ".claude/hooks/check-docs.sh",
+      "blob": "74d5eaf00431c2cff7bfa362de1d3ea4f0abb77f",
+      "bytes": 16658,
+      "family": ".claude",
+      "extension": ".sh"
+    },
+    {
+      "path": ".claude/hooks/session-start.sh",
+      "blob": "8930191170e97531daea89eb2fc7076f934e5537",
+      "bytes": 1191,
+      "family": ".claude",
+      "extension": ".sh"
+    },
+    {
+      "path": ".claude/settings.json",
+      "blob": "e06b0338e2585d90e2529cddfd6cbfba1234e79b",
+      "bytes": 225,
+      "family": ".claude",
+      "extension": ".json"
+    },
+    {
+      "path": ".gitignore",
+      "blob": "affde2a1d6e2033f61118fc56e1bcb9b5bdab2b0",
+      "bytes": 281,
+      "family": "root-controls",
+      "extension": "(none)"
+    },
+    {
+      "path": "AGENTS.md",
+      "blob": "d30347034eca14403123036457c26fd6268af91a",
+      "bytes": 10828,
+      "family": "root-controls",
+      "extension": ".md"
+    },
+    {
+      "path": "CLAUDE.md",
+      "blob": "774ab3812ba900525a538c2ade1179edce51bd06",
+      "bytes": 1983,
+      "family": "root-controls",
+      "extension": ".md"
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "blob": "c050b0636b14184b1c3a71f6c42e674ef8e037c2",
+      "bytes": 2842,
+      "family": "root-controls",
+      "extension": ".md"
+    },
+    {
+      "path": "LICENSE",
+      "blob": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64",
+      "bytes": 11357,
+      "family": "root-controls",
+      "extension": "(none)"
+    },
+    {
+      "path": "README.md",
+      "blob": "afdaccc975e26c9c98f79af0325e9269721935c7",
+      "bytes": 12628,
+      "family": "root-controls",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/README.md",
+      "blob": "9abff1ffabcea43c2b5c729fbe292304c3b8ded9",
+      "bytes": 3541,
+      "family": "docs-root",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/atomic-primitives-map.md",
+      "blob": "6c0a7c987914709b41d54ab94f578b74d2eb3928",
+      "bytes": 26371,
+      "family": "docs-root",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/clipboards/README.md",
+      "blob": "df1e7c40aec09444c1e0e188fbe4f235e1b670c1",
+      "bytes": 7035,
+      "family": "clipboards",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/clipboards/agentscope-ascii-machinery.md",
+      "blob": "96b732ef33a47847448bfbf42323df227b625180",
+      "bytes": 16218,
+      "family": "clipboards",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/clipboards/agentscope-clipboard.md",
+      "blob": "d29dc67c306cc22e82c9d60676325aa3a5548185",
+      "bytes": 53381,
+      "family": "clipboards",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/clipboards/agentscope-mechanisms.md",
+      "blob": "0e5ccd847c86e80bdf343f874322bb74488b12f3",
+      "bytes": 24866,
+      "family": "clipboards",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/clipboards/agentscope-pass-1-pdf-plan.md",
+      "blob": "819742986d4b46d60bd9914047f86653c32fd7c4",
+      "bytes": 8256,
+      "family": "clipboards",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/clipboards/agentscope-pass-2-plan.md",
+      "blob": "60694f7eb1db66d2307d548df8bea3b52a130d46",
+      "bytes": 10206,
+      "family": "clipboards",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/clipboards/agentscope-pass-3-plan.md",
+      "blob": "a367d7bb23bb8a07255a4e4d66ca483952549d8c",
+      "bytes": 9817,
+      "family": "clipboards",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/clipboards/agentscope-pass-4-plan.md",
+      "blob": "407a30ca29e30e5d1cf24a976c7dabdb24ec4145",
+      "bytes": 10636,
+      "family": "clipboards",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/clipboards/agentscope-pass-5-plan.md",
+      "blob": "a18ac8022545cd37ddecff2ba77f5b644e6dcb3d",
+      "bytes": 9838,
+      "family": "clipboards",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/clipboards/agentscope-pass-6-plan.md",
+      "blob": "a8ff537d9e9872eb340bbce2d5daf830083a367b",
+      "bytes": 9828,
+      "family": "clipboards",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/clipboards/clipboard-five-stakes.md",
+      "blob": "154c622cdd4ff48d8e964a9989a23b3ad065d4a8",
+      "bytes": 20519,
+      "family": "clipboards",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/clipboards/kauffman-4ed-ascii-machinery.md",
+      "blob": "92c5f6dc7209f05797bc68b5a56d807ab33152df",
+      "bytes": 23154,
+      "family": "clipboards",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/clipboards/kauffman-4ed-clipboard.md",
+      "blob": "d53bbf6335a0df70b2fa76e8655254f9399425b3",
+      "bytes": 31271,
+      "family": "clipboards",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/clipboards/kauffman-4ed-mechanisms.md",
+      "blob": "197525f8cfe46f44529edc7ab25933c7e5eaf730",
+      "bytes": 44831,
+      "family": "clipboards",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/clipboards/kauffman-pass-1-pdf-plan.md",
+      "blob": "b0c08f6d6cd6ca5b7e7142dae4702831f748f6e9",
+      "bytes": 7265,
+      "family": "clipboards",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/clipboards/kauffman-pass-1-plan.md",
+      "blob": "5d6dd2213d3547cc8f7078b318a74a5c9b80cd4e",
+      "bytes": 6218,
+      "family": "clipboards",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/clipboards/kauffman-pass-2-pdf-plan.md",
+      "blob": "6201a1075d0c8a60bd88edb0cbb993b3f4e5411b",
+      "bytes": 5947,
+      "family": "clipboards",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/clipboards/kauffman-pass-2-plan.md",
+      "blob": "f489067281553f7f15e9fae146a9ee6af794ac20",
+      "bytes": 6843,
+      "family": "clipboards",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/clipboards/kauffman-pass-3-plan.md",
+      "blob": "e4a4f8e50138a71e9d8b04da802e975a835997ec",
+      "bytes": 5679,
+      "family": "clipboards",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/clipboards/kauffman-pass-4-plan.md",
+      "blob": "adb0c9407032339da127fce04df248b95fa2d2ef",
+      "bytes": 10210,
+      "family": "clipboards",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/clipboards/kauffman-pass-5-plan.md",
+      "blob": "a5e3f38aee268cb9dfaec12e9af92c7764f942bf",
+      "bytes": 11188,
+      "family": "clipboards",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/clipboards/kauffman-pass-6-plan.md",
+      "blob": "b18ff8113df760852a93cec1cf05ea276e0df5eb",
+      "bytes": 8892,
+      "family": "clipboards",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/clipboards/petersen-zech-ascii-machinery.md",
+      "blob": "32647b964002559ba1b5666587b0476be20eb437",
+      "bytes": 19950,
+      "family": "clipboards",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/clipboards/petersen-zech-clipboard.md",
+      "blob": "a1f7945582b12cd72a9fb7bb2923bf4dc989df8e",
+      "bytes": 59650,
+      "family": "clipboards",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/clipboards/petersen-zech-mechanisms.md",
+      "blob": "f30193759bae923b5913ab757dbe8dec958ed387",
+      "bytes": 28544,
+      "family": "clipboards",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/clipboards/petersen-zech-pass-1-pdf-plan.md",
+      "blob": "1e09a16a27ad71028d81643e1af01f9cbd7c4f68",
+      "bytes": 8589,
+      "family": "clipboards",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/clipboards/petersen-zech-pass-2-plan.md",
+      "blob": "f7dae65508dad2ff8090b6561cb49ce98ddb9629",
+      "bytes": 9489,
+      "family": "clipboards",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/clipboards/petersen-zech-pass-3-plan.md",
+      "blob": "a0b217bde58e1c6b00fd03a47a65578e1b4a1fdc",
+      "bytes": 9722,
+      "family": "clipboards",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/clipboards/petersen-zech-pass-4-plan.md",
+      "blob": "84988e01f1c36bd2333e541ebc6ddf0f3552c7b6",
+      "bytes": 10909,
+      "family": "clipboards",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/clipboards/petersen-zech-pass-5-plan.md",
+      "blob": "dc0113014d4344d2d27950b7f96e76b02f5bbb5c",
+      "bytes": 9624,
+      "family": "clipboards",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/clipboards/petersen-zech-pass-6-plan.md",
+      "blob": "534c3ed46bb013321395eb7ba5007b9598f6b9eb",
+      "bytes": 9844,
+      "family": "clipboards",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/clipboards/rowlands-pass-1-pdf-plan.md",
+      "blob": "c640031fc91fdb036ba7055fea41161ddce97f73",
+      "bytes": 8313,
+      "family": "clipboards",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/clipboards/rowlands-pass-2-plan.md",
+      "blob": "f5b06b5620f1d320c054dd106d66575dbb23bd58",
+      "bytes": 8566,
+      "family": "clipboards",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/clipboards/rowlands-pass-3-plan.md",
+      "blob": "6bef07436aa9c0a4682f9c85fefc3924f82a0ea4",
+      "bytes": 6587,
+      "family": "clipboards",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/clipboards/rowlands-pass-4-plan.md",
+      "blob": "50def7018d973406197a18049f3cbaec2aa8d421",
+      "bytes": 11312,
+      "family": "clipboards",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/clipboards/rowlands-pass-5-plan.md",
+      "blob": "a442b9814f7e1752d79ec177a9825e3093967851",
+      "bytes": 9211,
+      "family": "clipboards",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/clipboards/rowlands-pass-6-plan.md",
+      "blob": "bb2e03f6670bb3c0d9c2af03d9cf8bf1c8751417",
+      "bytes": 7465,
+      "family": "clipboards",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/clipboards/rowlands-zero-to-infinity-ascii-machinery.md",
+      "blob": "adcc359739ad86212a4dfb3bc93422677364d1f7",
+      "bytes": 20312,
+      "family": "clipboards",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/clipboards/rowlands-zero-to-infinity-clipboard.md",
+      "blob": "c3af124e4db3107bb98d2d688ae26b50f3e202fd",
+      "bytes": 35624,
+      "family": "clipboards",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/clipboards/rowlands-zero-to-infinity-mechanisms.md",
+      "blob": "3c542dc97666d36e6142801a555cd504aa1ace1e",
+      "bytes": 45289,
+      "family": "clipboards",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/clipboards/rust-target-clipboard.md",
+      "blob": "06ea13aa8e2a908cf3c74bfce797539124c2f309",
+      "bytes": 38466,
+      "family": "clipboards",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/clipboards/rust-target-pass-1-plan.md",
+      "blob": "0934c182b45ad1d77dee792cbf1bb466e6d65ec4",
+      "bytes": 9576,
+      "family": "clipboards",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/clipboards/wasm-spec-3-ascii-machinery.md",
+      "blob": "54e19fc0f612e149753b905a885997c44e071ff6",
+      "bytes": 18130,
+      "family": "clipboards",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/clipboards/wasm-spec-3-clipboard.md",
+      "blob": "2ed9a112907bda8a99f3cae2703b7a6dd0526987",
+      "bytes": 59140,
+      "family": "clipboards",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/clipboards/wasm-spec-3-mechanisms.md",
+      "blob": "2e7380068aa8dd065009df3f18c4f8cb1cf42ef4",
+      "bytes": 27970,
+      "family": "clipboards",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/clipboards/wasm-spec-3-pass-1-plan.md",
+      "blob": "044451b3df2edfa389752ad0b113298dbc5833e4",
+      "bytes": 14447,
+      "family": "clipboards",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/clipboards/wasm-spec-3-pass-2-plan.md",
+      "blob": "aca3a07542f4c6d816ee3af94da5f1114e259634",
+      "bytes": 21875,
+      "family": "clipboards",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/clipboards/wasm-spec-3-pass-3-plan.md",
+      "blob": "ae97da22006cc0b195060912c3d4719ac9f2b3a7",
+      "bytes": 20905,
+      "family": "clipboards",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/clipboards/wasm-spec-3-pass-4-plan.md",
+      "blob": "bbf5165d27cbe346fcbb34d88c5ce953d4e16097",
+      "bytes": 20356,
+      "family": "clipboards",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/clipboards/wasm-spec-3-pass-5-plan.md",
+      "blob": "077e7b901ad1f29df9454040919683920ef376f9",
+      "bytes": 20716,
+      "family": "clipboards",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/clipboards/wasm-spec-3-pass-6-plan.md",
+      "blob": "7d5c5c2343569e9122278f7e0c535152abf89aac",
+      "bytes": 28290,
+      "family": "clipboards",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/clipboards/webgpu-ascii-machinery.md",
+      "blob": "f2b9cc565e742e5f3bba49a272f96a1b6cbc2f27",
+      "bytes": 28045,
+      "family": "clipboards",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/clipboards/webgpu-clipboard.md",
+      "blob": "3d93a5e20dc6d419750725bd0159ea2aed7ae340",
+      "bytes": 48476,
+      "family": "clipboards",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/clipboards/webgpu-mechanisms.md",
+      "blob": "2c2a61d3df825beb24e787aae8fdd817b2dc3014",
+      "bytes": 30364,
+      "family": "clipboards",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/clipboards/webgpu-pass-1-plan.md",
+      "blob": "25fabf95d15ced6078b46c01c892ea19d9346f45",
+      "bytes": 14962,
+      "family": "clipboards",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/clipboards/webgpu-pass-2-plan.md",
+      "blob": "d15daf7e5e8f0b41032af31a82915da15f58ad75",
+      "bytes": 26660,
+      "family": "clipboards",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/clipboards/webgpu-pass-3-plan.md",
+      "blob": "7b712176bdc741837e46aec91be058fa7d93f934",
+      "bytes": 26492,
+      "family": "clipboards",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/clipboards/webgpu-pass-4-plan.md",
+      "blob": "7383062511f9b04ab04aac1161a73e5d0af5803b",
+      "bytes": 29955,
+      "family": "clipboards",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/clipboards/webgpu-pass-5-plan.md",
+      "blob": "b5f22b4dd4c2b6eacc360a8dcdb20c5d6c7f51fd",
+      "bytes": 25199,
+      "family": "clipboards",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/clipboards/webgpu-pass-6-plan.md",
+      "blob": "6ecd9f63bb593654c03fc10cd5c922a42535d808",
+      "bytes": 30790,
+      "family": "clipboards",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/clipboards/webnn-ascii-machinery.md",
+      "blob": "939d1be1d3c383ee31a14ec8c318886116df3f83",
+      "bytes": 34589,
+      "family": "clipboards",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/clipboards/webnn-clipboard.md",
+      "blob": "4631382739519a67f8bd19628e5618bdf10dddb8",
+      "bytes": 72212,
+      "family": "clipboards",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/clipboards/webnn-mechanisms.md",
+      "blob": "221ba481e4934d4ac08657eb405bbdb66b2f2558",
+      "bytes": 35056,
+      "family": "clipboards",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/clipboards/webnn-pass-1-plan.md",
+      "blob": "85c13fd50768b9930637860ad53c3af65e69cb10",
+      "bytes": 19256,
+      "family": "clipboards",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/clipboards/webnn-pass-2-plan.md",
+      "blob": "7d04f64959dc25de80d2dc248487f375e0b5cc96",
+      "bytes": 35470,
+      "family": "clipboards",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/clipboards/webnn-pass-3-plan.md",
+      "blob": "4241fbeda2818542544499e2a752076a11246727",
+      "bytes": 33367,
+      "family": "clipboards",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/clipboards/webnn-pass-4-plan.md",
+      "blob": "f2212b47349ab4840048bd4c67a06cb863c1e1d7",
+      "bytes": 38756,
+      "family": "clipboards",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/clipboards/webnn-pass-5-plan.md",
+      "blob": "870a684e65b4a2fd15b537a7ffefd0bac61f341c",
+      "bytes": 28923,
+      "family": "clipboards",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/clipboards/webnn-pass-6-plan.md",
+      "blob": "c0e83a9071e365f1d4e878befa6fb5f0ed1387c6",
+      "bytes": 34431,
+      "family": "clipboards",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/clipboards/wgsl-ascii-machinery.md",
+      "blob": "cbdd3aa84045e12ae7b7604ff5de46859a882305",
+      "bytes": 31702,
+      "family": "clipboards",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/clipboards/wgsl-clipboard.md",
+      "blob": "42dcef299c014346d58d605d05b7672ae0f1ae79",
+      "bytes": 56260,
+      "family": "clipboards",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/clipboards/wgsl-mechanisms.md",
+      "blob": "0efe8ce034b55d093ab81f32045e65d7b99225d3",
+      "bytes": 30620,
+      "family": "clipboards",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/clipboards/wgsl-pass-1-plan.md",
+      "blob": "8abfb58768c64adc23a7cbe93ed0db29317b51dc",
+      "bytes": 18348,
+      "family": "clipboards",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/clipboards/wgsl-pass-2-plan.md",
+      "blob": "11d34674a3fb288b2187ecc71772461d6ca5d746",
+      "bytes": 32574,
+      "family": "clipboards",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/clipboards/wgsl-pass-3-plan.md",
+      "blob": "ae2361427268081c053a8bade4cea53bfbae3a4c",
+      "bytes": 31385,
+      "family": "clipboards",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/clipboards/wgsl-pass-4-plan.md",
+      "blob": "4b7e561cb48b9de2f139e3d6fa8fb2ff10285a2b",
+      "bytes": 35845,
+      "family": "clipboards",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/clipboards/wgsl-pass-5-plan.md",
+      "blob": "d558a74d061d6c1a2b3bf3fb7cea19feaff24bab",
+      "bytes": 26957,
+      "family": "clipboards",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/clipboards/wgsl-pass-6-plan.md",
+      "blob": "62343097ae39e62103a059cae2fd1748257bc5fe",
+      "bytes": 31060,
+      "family": "clipboards",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/clipboards/xiao-zhu-foundations-ascii-machinery.md",
+      "blob": "36f110eb0fa99c6c6c279d2be6b802bf0c5e526f",
+      "bytes": 24437,
+      "family": "clipboards",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/clipboards/xiao-zhu-foundations-clipboard.md",
+      "blob": "da02d3048b93c3dccaae9db9a325dc1971b3051b",
+      "bytes": 54957,
+      "family": "clipboards",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/clipboards/xiao-zhu-foundations-mechanisms.md",
+      "blob": "2d231cdd041b578951a394808df297a06d0c4db5",
+      "bytes": 30522,
+      "family": "clipboards",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/clipboards/xiao-zhu-pass-1-pdf-plan.md",
+      "blob": "645b2cd5352ac3fbfdb668f18ce6aab85b137de2",
+      "bytes": 8334,
+      "family": "clipboards",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/clipboards/xiao-zhu-pass-2-plan.md",
+      "blob": "6712ee325705e46f95a2868685df56578bc930fb",
+      "bytes": 10049,
+      "family": "clipboards",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/clipboards/xiao-zhu-pass-3-plan.md",
+      "blob": "431b896b0488ba322948a06c263a28c67e881cb0",
+      "bytes": 13921,
+      "family": "clipboards",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/clipboards/xiao-zhu-pass-4-plan.md",
+      "blob": "9df4e90d19b5dc67003fc62076a8ba490e37edba",
+      "bytes": 16985,
+      "family": "clipboards",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/clipboards/xiao-zhu-pass-5-plan.md",
+      "blob": "a14a5da1cfad8f9a47c25e4d593d5b96406f6a8d",
+      "bytes": 13157,
+      "family": "clipboards",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/clipboards/xiao-zhu-pass-6-plan.md",
+      "blob": "a3c173e7276200c033b40b47f217862b7da057d2",
+      "bytes": 14319,
+      "family": "clipboards",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/clock/LATEST.json",
+      "blob": "3b2b0c607a43dda304c88540892a0b7fc92a7bcf",
+      "bytes": 178,
+      "family": "clock",
+      "extension": ".json"
+    },
+    {
+      "path": "docs/clock/README.md",
+      "blob": "2483782a097a0c35264855c98c67c3ab27f7a49d",
+      "bytes": 3919,
+      "family": "clock",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/clock/agent-interaction-model.md",
+      "blob": "8bdeed732538afe5c84a2302432bc7ed3eff2a2e",
+      "bytes": 14509,
+      "family": "clock",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/clock/coffee-cup-systems-manifest.md",
+      "blob": "ae77b0376acd9d47813f154d346ae9fef6c21fec",
+      "bytes": 19658,
+      "family": "clock",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/clock/gearing-code-1to1.md",
+      "blob": "3b0a7d35d02976852b64517b0452f6d253c843e7",
+      "bytes": 30588,
+      "family": "clock",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/clock/hcc-a-mechanisms-plan.md",
+      "blob": "d90acbc0cdb95007d729f0c5c1d74c7f0c3f18aa",
+      "bytes": 4312,
+      "family": "clock",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/clock/hcc-a-projection.html",
+      "blob": "ae3c1fc388235b1212326ad02beb80f47f5f729d",
+      "bytes": 19921,
+      "family": "clock",
+      "extension": ".html"
+    },
+    {
+      "path": "docs/clock/hcc-a-systems-manifest.md",
+      "blob": "106bcc0b8bbed8def767fb162f75f9532172e074",
+      "bytes": 46888,
+      "family": "clock",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/clock/icon-192.png",
+      "blob": "3dc6374482371b57b76bfd7fa0b9b21b60d59775",
+      "bytes": 563,
+      "family": "clock",
+      "extension": ".png"
+    },
+    {
+      "path": "docs/clock/icon-512.png",
+      "blob": "8d49021025cd3b35a7ab6b3ac6baa39a28a0da98",
+      "bytes": 2311,
+      "family": "clock",
+      "extension": ".png"
+    },
+    {
+      "path": "docs/clock/lace-projection.html",
+      "blob": "b7267ea4ef030182e3f432b807d0afa21bf20831",
+      "bytes": 38409,
+      "family": "clock",
+      "extension": ".html"
+    },
+    {
+      "path": "docs/clock/manifest.webmanifest",
+      "blob": "be2eb9137bb61dc76b3284e836d32f71b8993009",
+      "bytes": 728,
+      "family": "clock",
+      "extension": ".webmanifest"
+    },
+    {
+      "path": "docs/clock/passes/README.md",
+      "blob": "f929acefaf4bceb788f98675afcfdb98cab32a91",
+      "bytes": 3798,
+      "family": "clock",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/clock/passes/coffee-cup-pass-1-plan.md",
+      "blob": "4c02a9bad9ea0f11001bdce0068bb85eb718c0b2",
+      "bytes": 4067,
+      "family": "clock",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/clock/passes/coffee-cup-pass-2-plan.md",
+      "blob": "263a390656eb059018fdde006f67275636e52185",
+      "bytes": 2924,
+      "family": "clock",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/clock/passes/coffee-cup-pass-3-plan.md",
+      "blob": "83a4f8f0069e83913357fc962cf7b0238bd5b628",
+      "bytes": 3966,
+      "family": "clock",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/clock/passes/coffee-cup-pass-4-plan.md",
+      "blob": "ad0e23c8b96b26ecd12186c24ec83fc8e396bfcb",
+      "bytes": 3023,
+      "family": "clock",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/clock/passes/coffee-cup-pass-5-plan.md",
+      "blob": "de354cd41b3ee5d715df84ae008ea9a286b4ec50",
+      "bytes": 4011,
+      "family": "clock",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/clock/passes/coffee-cup-pass-6-plan.md",
+      "blob": "ae8c5731570a75c449138d3e9ab7600036f0e0e2",
+      "bytes": 2923,
+      "family": "clock",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/clock/passes/hcc-a-pass-2-plan.md",
+      "blob": "ccc24384b88c84a8091d1528f67727b232a8fdeb",
+      "bytes": 3891,
+      "family": "clock",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/clock/passes/hcc-a-pass-3-plan.md",
+      "blob": "e53890a10c45ddfaf5e5a2575bbe96dc67a80b85",
+      "bytes": 6052,
+      "family": "clock",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/clock/passes/hcc-a-pass-4-plan.md",
+      "blob": "db32ae77d8a630f66e00fdd1aa6b6bae1d2d096d",
+      "bytes": 3538,
+      "family": "clock",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/clock/passes/hcc-a-pass-5-plan.md",
+      "blob": "5d5f8c7cc858684b905bc2d8e180e5781e909805",
+      "bytes": 3158,
+      "family": "clock",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/clock/passes/projection-interaction-pass-1-plan.md",
+      "blob": "180fdd97acd69e9a66a60106ce3472fbb9db8a09",
+      "bytes": 2583,
+      "family": "clock",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/clock/passes/projection-interaction-pass-2-plan.md",
+      "blob": "73f5d686e92249918bd8f74f1d98b8146bc56ef6",
+      "bytes": 1996,
+      "family": "clock",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/clock/passes/projection-iter1-pass-1-plan.md",
+      "blob": "b7cf7f09384441fb9a7e2c03bba46e7035a723a5",
+      "bytes": 2105,
+      "family": "clock",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/clock/passes/projection-iter1-pass-2-plan.md",
+      "blob": "278960027921eef04439f5c3b87594fdce534c6b",
+      "bytes": 1640,
+      "family": "clock",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/clock/passes/projection-iter1-pass-3-plan.md",
+      "blob": "ed0939d0931c0e0bdf600f1cb9215311162ff1db",
+      "bytes": 1214,
+      "family": "clock",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/clock/passes/projection-iter1-pass-4-plan.md",
+      "blob": "55e6b175c1edb8e3d33fb79114837c56c2ac4280",
+      "bytes": 2275,
+      "family": "clock",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/clock/passes/projection-iter1-pass-5-plan.md",
+      "blob": "44c2a4b60b88bb2c5878fc9b6a04ac0de4e7ea7d",
+      "bytes": 1963,
+      "family": "clock",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/clock/passes/projection-iter1-pass-6-plan.md",
+      "blob": "551efc4e4b81c6d682fc966fa0c8bd229a0a5be3",
+      "bytes": 1537,
+      "family": "clock",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/clock/passes/projection-iter2-pass-1-plan.md",
+      "blob": "fec37992b285c11ff204eba4b3ea231a2352193f",
+      "bytes": 1060,
+      "family": "clock",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/clock/passes/projection-iter2-pass-2-plan.md",
+      "blob": "a81bc94e30ab8c5ce133a5433a099e65bd17a45b",
+      "bytes": 1770,
+      "family": "clock",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/clock/passes/projection-iter2-pass-3-plan.md",
+      "blob": "9fb6cdc0f421e79da401d6dfc9b362d21faca3e6",
+      "bytes": 2767,
+      "family": "clock",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/clock/passes/projection-iter2-pass-4-plan.md",
+      "blob": "f1e495f288f49d4d20410c7a9e772f7e7b62a69c",
+      "bytes": 591,
+      "family": "clock",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/clock/passes/projection-iter3-pass-1-plan.md",
+      "blob": "e50ccbfef723fe25461701433168f67fa764b839",
+      "bytes": 3176,
+      "family": "clock",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/clock/passes/projection-iter3-pass-2-plan.md",
+      "blob": "1926e1a36c19c3ce875e37dc1b408dce6405c7d6",
+      "bytes": 1917,
+      "family": "clock",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/clock/passes/projection-iter3-pass-3-plan.md",
+      "blob": "717b436f2127bf6cc076f8bc5d04c899836c770f",
+      "bytes": 2643,
+      "family": "clock",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/clock/passes/projection-iter3-pass-4-plan.md",
+      "blob": "08ede5d68fef98564f4f7bd7631fb47b43b8de7e",
+      "bytes": 2469,
+      "family": "clock",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/clock/passes/projection-iter3-pass-5-plan.md",
+      "blob": "9b24fb5f5aaa0f72c15caab4b55d5195cd794bfa",
+      "bytes": 3110,
+      "family": "clock",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/clock/passes/projection-iter3-pass-6-plan.md",
+      "blob": "7053f1f25daca55ec9a23ee6bc3ca102410b2bbc",
+      "bytes": 2789,
+      "family": "clock",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/clock/passes/projection-iter4-pass-1-plan.md",
+      "blob": "fa6b87061192f33b1549749a23cef7c61deed007",
+      "bytes": 2563,
+      "family": "clock",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/clock/passes/projection-iter4-pass-2-plan.md",
+      "blob": "657a9e52a4545ab6076399c5b9f2e12c199056c9",
+      "bytes": 2828,
+      "family": "clock",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/clock/passes/projection-iter4-pass-3-plan.md",
+      "blob": "6acd389c5dd812b02790bf57009a1a5045c63e10",
+      "bytes": 2633,
+      "family": "clock",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/clock/passes/projection-iter4-pass-4-plan.md",
+      "blob": "07aa977afe0ce93221e1d5ca6ca5f3574b317ba5",
+      "bytes": 3144,
+      "family": "clock",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/clock/passes/projection-iter4-pass-5-plan.md",
+      "blob": "761134d18890b2975719100de41493b1d0bab84a",
+      "bytes": 3259,
+      "family": "clock",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/clock/passes/projection-iter4-pass-6-plan.md",
+      "blob": "4039a1697de98d62cd9ccd38a38bc4aaa3ff01db",
+      "bytes": 2666,
+      "family": "clock",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/clock/passes/projection-iter5-pass-1-plan.md",
+      "blob": "cfd122353bbc785e00314adb43f010e56322c921",
+      "bytes": 2516,
+      "family": "clock",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/clock/passes/projection-iter5-pass-2-plan.md",
+      "blob": "26c65e5f436cfca1679a59afd46e916deb5f2f0e",
+      "bytes": 2571,
+      "family": "clock",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/clock/passes/projection-iter5-pass-3-plan.md",
+      "blob": "67b1b0427b36426834760c779fbe8901bc1b5a5e",
+      "bytes": 2464,
+      "family": "clock",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/clock/passes/projection-iter5-pass-4-plan.md",
+      "blob": "e4b4686843880b35554fc36b7861ad5b981e4e43",
+      "bytes": 2518,
+      "family": "clock",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/clock/passes/projection-iter5-pass-5-plan.md",
+      "blob": "66408516b0e38438c3f462d55f3f32844982a985",
+      "bytes": 2333,
+      "family": "clock",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/clock/passes/projection-iter5-pass-6-plan.md",
+      "blob": "d2af264929599df2287c6591b16ad218ddd6fdac",
+      "bytes": 2042,
+      "family": "clock",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/clock/passes/projection-iterations.md",
+      "blob": "2ac23a9bc6c3e77395d5db3b41093aa2d0c8018b",
+      "bytes": 6240,
+      "family": "clock",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/clock/passes/projection-merge-pass-1-plan.md",
+      "blob": "4992434c423b3e899bc4f056496f920b8249d038",
+      "bytes": 1205,
+      "family": "clock",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/clock/passes/projection-merge-pass-2-plan.md",
+      "blob": "64fc60c8b90126e937f7e7ba93c39b2c8feebbd5",
+      "bytes": 302,
+      "family": "clock",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/clock/passes/projection-visual-pass-1-plan.md",
+      "blob": "3cbf2d8da6f117f3d7e640004d3e187b1ef903e2",
+      "bytes": 1689,
+      "family": "clock",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/clock/passes/projection-visual-pass-2-plan.md",
+      "blob": "1ad826849255cd1c298c80691733b52fa4e424ad",
+      "bytes": 1895,
+      "family": "clock",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/clock/passes/projection-visual-pass-3-plan.md",
+      "blob": "96d1cf8fe763beec2b4b81acc46ee7e4585aa08d",
+      "bytes": 2551,
+      "family": "clock",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/clock/passes/projection-visual-pass-4-plan.md",
+      "blob": "a939b4ca2a977087ab658dad4fff900801541538",
+      "bytes": 2271,
+      "family": "clock",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/clock/passes/projection-visual-pass-5-plan.md",
+      "blob": "677a1632fbab74407c4e05f16f13769af01a12cd",
+      "bytes": 2351,
+      "family": "clock",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/clock/passes/projection-visual-pass-6-plan.md",
+      "blob": "f608ac02bb127c07f2e0aafb9fa90234f03bcc9e",
+      "bytes": 1843,
+      "family": "clock",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/clock/passes/train-pass-1-plan.md",
+      "blob": "9e098afe51d47652d0e58d282aea6d74f23c7cbe",
+      "bytes": 4115,
+      "family": "clock",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/clock/passes/train-pass-2-plan.md",
+      "blob": "dff2998b1d616151b750aa709fa3a37e6b92fc15",
+      "bytes": 2494,
+      "family": "clock",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/clock/passes/train-pass-3-plan.md",
+      "blob": "5e42f0f1e8cb61c8ff37bde682cf51e78c282df7",
+      "bytes": 2084,
+      "family": "clock",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/clock/passes/train-pass-4-plan.md",
+      "blob": "7a44b133afa7f62711204c6f5cffdc70be70c623",
+      "bytes": 1795,
+      "family": "clock",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/clock/passes/train-pass-5-plan.md",
+      "blob": "6f8e61d2d53ba2353cc872b40e87dd2f79c01d2f",
+      "bytes": 1976,
+      "family": "clock",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/clock/passes/train-pass-6-plan.md",
+      "blob": "21e6c5ca29cef2dabec2d8a07dbed311706878cd",
+      "bytes": 1942,
+      "family": "clock",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/clock/passes/water-pass-1-plan.md",
+      "blob": "c3b10f9adef3e1e33d98927b38b057e8a05ceb43",
+      "bytes": 4003,
+      "family": "clock",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/clock/passes/water-pass-2-plan.md",
+      "blob": "b13af71e0485e05bade7f9b600283dfdb780e342",
+      "bytes": 2453,
+      "family": "clock",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/clock/passes/water-pass-3-plan.md",
+      "blob": "a2f547577e659584712006ea03f43f1e3263bb5d",
+      "bytes": 2767,
+      "family": "clock",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/clock/passes/water-pass-4-plan.md",
+      "blob": "9a293d7a58791719ea5ba4cc8899e12cd59b8dff",
+      "bytes": 4010,
+      "family": "clock",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/clock/passes/water-pass-5-plan.md",
+      "blob": "ef25771d81d73372efe6365b0899312cdb0158cf",
+      "bytes": 2372,
+      "family": "clock",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/clock/passes/water-pass-6-plan.md",
+      "blob": "c064177aaa67fe02752e845d43a68e3d12267f4a",
+      "bytes": 2468,
+      "family": "clock",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/clock/philosophy-map.md",
+      "blob": "e657b8167409d1c55e47e3a083dc2da630cc686a",
+      "bytes": 44373,
+      "family": "clock",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/clock/projection-bake-worker.js",
+      "blob": "2888045d6760311d4c722204b37625800435ff13",
+      "bytes": 4089,
+      "family": "clock",
+      "extension": ".js"
+    },
+    {
+      "path": "docs/clock/quiet-door-6-ascii.md",
+      "blob": "22ba83ce8fa610c19a0e2edcf77ed92305df3dc7",
+      "bytes": 9191,
+      "family": "clock",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/clock/quiet-door-6-pass-1-plan.md",
+      "blob": "5c0aba5a588876515012b72500c5f6317e25f44d",
+      "bytes": 4357,
+      "family": "clock",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/clock/quiet-door-6-pass-2-plan.md",
+      "blob": "c7706d82bfffc8ac95c058281f140744b4339647",
+      "bytes": 2801,
+      "family": "clock",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/clock/quiet-door-6-pass-3-plan.md",
+      "blob": "bb0b667028a7b9e09ea8a178d0ac53273c7240ec",
+      "bytes": 2711,
+      "family": "clock",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/clock/quiet-door-6-pass-4-plan.md",
+      "blob": "5b327d09f34a350c7b2387d157df87d809349b31",
+      "bytes": 4080,
+      "family": "clock",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/clock/quiet-door-6-pass-5-plan.md",
+      "blob": "f1ab4b417346a5451eaf62a50f98b7a10711ec50",
+      "bytes": 2732,
+      "family": "clock",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/clock/quiet-door-6-pass-6-plan.md",
+      "blob": "08d5b6534dfdc73596f8596210eecb05800b5375",
+      "bytes": 2891,
+      "family": "clock",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/clock/quiet-door-6-receipt.md",
+      "blob": "d9511e7bfd7267f130d11ef3525e4caa9cef346e",
+      "bytes": 1631,
+      "family": "clock",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/clock/shadow-clock-agent-brief.md",
+      "blob": "5f5e6d0c41c79b3640deb4aa4670d4be0d077f6a",
+      "bytes": 6171,
+      "family": "clock",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/clock/shadow-clock-gear-contracts-second-reading.md",
+      "blob": "02eae6c7393cff10d8265db4d3f7f480f574e3b9",
+      "bytes": 9664,
+      "family": "clock",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/clock/shadow-clock-gear-contracts.md",
+      "blob": "addebe297f714dbef9d505465acf05edf70c4ac4",
+      "bytes": 28682,
+      "family": "clock",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/clock/shadow-clock-hologram.md",
+      "blob": "4282b923600af64fc5c2e21507041e1ad6506278",
+      "bytes": 18121,
+      "family": "clock",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/clock/sw.js",
+      "blob": "0af50b805c97e4790ea5516ed46c923338605184",
+      "bytes": 1398,
+      "family": "clock",
+      "extension": ".js"
+    },
+    {
+      "path": "docs/clock/system-mathematical-model.md",
+      "blob": "bc33697c8b98aa17cd1bf06fd76d6bd54da7a8b8",
+      "bytes": 31341,
+      "family": "clock",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/clock/train-h-c-w-systems-manifest.md",
+      "blob": "a8141d4dd81d60efcf838323e2f1709936de582b",
+      "bytes": 10822,
+      "family": "clock",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/clock/wasm/README.md",
+      "blob": "a29dbdff4ed41d0957c7de4a258655af76501058",
+      "bytes": 445,
+      "family": "clock",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/clock/water-systems-manifest.md",
+      "blob": "766a4acc9822ebad30e46227496e47180cb4afd0",
+      "bytes": 18080,
+      "family": "clock",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/coherence-audit-log.md",
+      "blob": "a14bb840e5f1934c2f1ff12961ebede9e6966552",
+      "bytes": 23016,
+      "family": "docs-root",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/coord/README.md",
+      "blob": "d2399296f36cbf8eaff76ffaaf2640a53682a636",
+      "bytes": 5081,
+      "family": "coord",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/coord/coord.sh",
+      "blob": "caa96eddf9684c6cebc559b4970a82573f5f2818",
+      "bytes": 17131,
+      "family": "coord",
+      "extension": ".sh"
+    },
+    {
+      "path": "docs/coord/quiet-door-9-ascii.md",
+      "blob": "86a27c683203aa4c95b55ee78569bbd4834cdacc",
+      "bytes": 9431,
+      "family": "coord",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/coord/quiet-door-9-pass-1-plan.md",
+      "blob": "95b5a4ee20f998305c8bb1436efc5e125691bec3",
+      "bytes": 4370,
+      "family": "coord",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/coord/quiet-door-9-pass-2-plan.md",
+      "blob": "1a09b38e6b39d8da2cf030a174fd139007a1eac1",
+      "bytes": 3070,
+      "family": "coord",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/coord/quiet-door-9-pass-3-plan.md",
+      "blob": "1d79d2068553ed7c08ed8806692ab2729ddcc7db",
+      "bytes": 3199,
+      "family": "coord",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/coord/quiet-door-9-pass-4-plan.md",
+      "blob": "5c9d186d38097795d3e5849bca41c73cbc0d0d0a",
+      "bytes": 4736,
+      "family": "coord",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/coord/quiet-door-9-pass-5-plan.md",
+      "blob": "6305bee6c1874f16d8e8844b9b5d05cc2efe14f4",
+      "bytes": 2919,
+      "family": "coord",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/coord/quiet-door-9-pass-6-plan.md",
+      "blob": "dff49e690cbc83561ed3878f4d27f08f07d6dc0d",
+      "bytes": 3116,
+      "family": "coord",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/coord/stations/README.md",
+      "blob": "072b22e8e6cbadd4c773eefb0787405b8b00569b",
+      "bytes": 1742,
+      "family": "coord",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/coord/stations/clipboards.station",
+      "blob": "c4fbb8870897b41e7a0618921072ccc056477ef1",
+      "bytes": 1615,
+      "family": "coord",
+      "extension": ".station"
+    },
+    {
+      "path": "docs/coord/stations/coord.station",
+      "blob": "f721ae9b6c990afca489b001f43f861b428e53ad",
+      "bytes": 273,
+      "family": "coord",
+      "extension": ".station"
+    },
+    {
+      "path": "docs/coord/stations/gearing-meta.station",
+      "blob": "c85ada96d93a068f8d48d53b341d64ca33b2c398",
+      "bytes": 281,
+      "family": "coord",
+      "extension": ".station"
+    },
+    {
+      "path": "docs/coord/stations/graphics.station",
+      "blob": "ef8d3482f8c008a5a8addb4e99198b5dbfcfdf75",
+      "bytes": 316,
+      "family": "coord",
+      "extension": ".station"
+    },
+    {
+      "path": "docs/coord/stations/history.station",
+      "blob": "c467569dca23fc69300e8500c734b1cd20a0d1c6",
+      "bytes": 214,
+      "family": "coord",
+      "extension": ".station"
+    },
+    {
+      "path": "docs/coord/stations/hologram.station",
+      "blob": "763238b15c1ae270e0ba892ae091bfa4850472bf",
+      "bytes": 211,
+      "family": "coord",
+      "extension": ".station"
+    },
+    {
+      "path": "docs/coord/stations/kit.station",
+      "blob": "60eb6ea2038736d9633600f1fb0256f1a2b6957a",
+      "bytes": 158,
+      "family": "coord",
+      "extension": ".station"
+    },
+    {
+      "path": "docs/coord/stations/law.station",
+      "blob": "75364b8d7aa768203d3fbc2e8e6e7ff9e7cf8986",
+      "bytes": 381,
+      "family": "coord",
+      "extension": ".station"
+    },
+    {
+      "path": "docs/coord/stations/maps.station",
+      "blob": "aa5ab34653eb734aba57469302480f85d7240ddb",
+      "bytes": 412,
+      "family": "coord",
+      "extension": ".station"
+    },
+    {
+      "path": "docs/coord/stations/prompts.station",
+      "blob": "8e6bfc0ce133688bd288740bb2738def04e4e8ef",
+      "bytes": 480,
+      "family": "coord",
+      "extension": ".station"
+    },
+    {
+      "path": "docs/coord/stations/renderer.station",
+      "blob": "0292150b39e92d0038749a28a37c7776b06b94b3",
+      "bytes": 168,
+      "family": "coord",
+      "extension": ".station"
+    },
+    {
+      "path": "docs/defrag-plan.md",
+      "blob": "ed28119ea668ffcb888a17a8a091ab07f71eddd5",
+      "bytes": 12354,
+      "family": "docs-root",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/gearing/CLAIMS.md",
+      "blob": "26838f3307655086f447cfd9cf93c107da009b25",
+      "bytes": 4938,
+      "family": "gearing",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/gearing/README.md",
+      "blob": "c5a4bdd02bd5c02c66c07cffade8722210c45ac8",
+      "bytes": 2631,
+      "family": "gearing",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/gearing/RESYNC.md",
+      "blob": "66dd0a8acc17507c41d55566b7b504d15bbdcf68",
+      "bytes": 5473,
+      "family": "gearing",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/gearing/claim.sh",
+      "blob": "855b3745ddeb292c01ce5a2e191cf64eb4db85db",
+      "bytes": 6048,
+      "family": "gearing",
+      "extension": ".sh"
+    },
+    {
+      "path": "docs/gearing/claims/README.md",
+      "blob": "006a5b9353d329bbebd2f709997ef21737e4d254",
+      "bytes": 1289,
+      "family": "gearing",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/gearing/claims/audits.claim",
+      "blob": "cd25730dea71b3260f2458af7abe653e8c0c1083",
+      "bytes": 92,
+      "family": "gearing",
+      "extension": ".claim"
+    },
+    {
+      "path": "docs/gearing/claims/axle.claim",
+      "blob": "00039811fd22a1069dfef67fbd80e4b292d6aea5",
+      "bytes": 92,
+      "family": "gearing",
+      "extension": ".claim"
+    },
+    {
+      "path": "docs/gearing/claims/cells.claim",
+      "blob": "2d5187a290fd079e34e20c77087b2699e1931877",
+      "bytes": 90,
+      "family": "gearing",
+      "extension": ".claim"
+    },
+    {
+      "path": "docs/gearing/claims/escape.claim",
+      "blob": "7c7a5ebf58b9c77d198f07e1030610a6522c1dd0",
+      "bytes": 92,
+      "family": "gearing",
+      "extension": ".claim"
+    },
+    {
+      "path": "docs/gearing/claims/gears.claim",
+      "blob": "701276c4abd3ed0b28c1f4eccd220ae9f85a469f",
+      "bytes": 94,
+      "family": "gearing",
+      "extension": ".claim"
+    },
+    {
+      "path": "docs/gearing/claims/trainA.claim",
+      "blob": "e4bfcd6edd3ad0860caef5292206e41b26f0fdb7",
+      "bytes": 92,
+      "family": "gearing",
+      "extension": ".claim"
+    },
+    {
+      "path": "docs/gearing/claims/trainB.claim",
+      "blob": "3818ba9f590b1171e10347498808878ebe32d654",
+      "bytes": 92,
+      "family": "gearing",
+      "extension": ".claim"
+    },
+    {
+      "path": "docs/gearing/claims/trainC.claim",
+      "blob": "14f9b502c1923b264dc7ac9d18b29f59242cafdc",
+      "bytes": 92,
+      "family": "gearing",
+      "extension": ".claim"
+    },
+    {
+      "path": "docs/gearing/contracts-audits.js",
+      "blob": "6bc8f4180c531b530a9d3a93f49345e18c507ba7",
+      "bytes": 2430,
+      "family": "gearing",
+      "extension": ".js"
+    },
+    {
+      "path": "docs/gearing/contracts-axle.js",
+      "blob": "9b6a253dae7cd8a1aa7c04419dd43b4f881182a0",
+      "bytes": 755,
+      "family": "gearing",
+      "extension": ".js"
+    },
+    {
+      "path": "docs/gearing/contracts-cells.js",
+      "blob": "f8e8510fc21761077af190199f66906ab8c122f4",
+      "bytes": 4805,
+      "family": "gearing",
+      "extension": ".js"
+    },
+    {
+      "path": "docs/gearing/contracts-escape.js",
+      "blob": "7c7dc47d6c46e49c4c0d207ae45d9c032674aedf",
+      "bytes": 2716,
+      "family": "gearing",
+      "extension": ".js"
+    },
+    {
+      "path": "docs/gearing/contracts-gears.js",
+      "blob": "e48d3c90b293b423296b2ac1a77a16eb42af6aae",
+      "bytes": 5035,
+      "family": "gearing",
+      "extension": ".js"
+    },
+    {
+      "path": "docs/gearing/contracts-trainA.js",
+      "blob": "a536178a192e515dcb05c887860b632aa830a2c3",
+      "bytes": 7005,
+      "family": "gearing",
+      "extension": ".js"
+    },
+    {
+      "path": "docs/gearing/contracts-trainB.js",
+      "blob": "8f48956e05d717bd0849b49c00777cafdbf74130",
+      "bytes": 3538,
+      "family": "gearing",
+      "extension": ".js"
+    },
+    {
+      "path": "docs/gearing/contracts-trainC.js",
+      "blob": "f3efa932e97db703cd76aac967c099f69aa9f95f",
+      "bytes": 6195,
+      "family": "gearing",
+      "extension": ".js"
+    },
+    {
+      "path": "docs/gearing/quiet-door-8-ascii.md",
+      "blob": "32ff12740d850ff71a09f302d046564c1a754e42",
+      "bytes": 9386,
+      "family": "gearing",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/gearing/quiet-door-8-pass-1-plan.md",
+      "blob": "910259d84f2fb1f9d5444b37c08d780c111eb03b",
+      "bytes": 4105,
+      "family": "gearing",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/gearing/quiet-door-8-pass-2-plan.md",
+      "blob": "097575a183158dc032f2ab3ed650b3bcaf8d1903",
+      "bytes": 3027,
+      "family": "gearing",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/gearing/quiet-door-8-pass-3-plan.md",
+      "blob": "d35b5e29704b161c47230960956018b9fa2c428c",
+      "bytes": 3031,
+      "family": "gearing",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/gearing/quiet-door-8-pass-4-plan.md",
+      "blob": "6f5d0ca2b90bded16be7e391aca1ce71430c851b",
+      "bytes": 4647,
+      "family": "gearing",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/gearing/quiet-door-8-pass-5-plan.md",
+      "blob": "9c2de9dd666a6e2fe242b63b273824d0b04bd0b8",
+      "bytes": 2940,
+      "family": "gearing",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/gearing/quiet-door-8-pass-6-plan.md",
+      "blob": "c7c76b4bbeafc3679efa95b769cfdba4d879afcb",
+      "bytes": 3202,
+      "family": "gearing",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/gearing/quiet-door-8-receipt.md",
+      "blob": "c12e72b9c75353aeb5fd1ef95fe3893eaec80184",
+      "bytes": 1888,
+      "family": "gearing",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/gearing/resync-pass-1-plan.md",
+      "blob": "6bc7a1d3ba5bf8084eb0b4fa2e1bfc1ee674e81c",
+      "bytes": 5704,
+      "family": "gearing",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/gearing/resync.sh",
+      "blob": "50b06f4602e1888b768f4c44b1a87e7de53bb01d",
+      "bytes": 3235,
+      "family": "gearing",
+      "extension": ".sh"
+    },
+    {
+      "path": "docs/graphics-close-reading.md",
+      "blob": "8f292930482c24710c93a8709fbb6d10faf2af04",
+      "bytes": 22066,
+      "family": "docs-root",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/graphics/README.md",
+      "blob": "7ebec8c880fcc65de1ffa9e9ffffe136e0d2534a",
+      "bytes": 2653,
+      "family": "graphics",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/graphics/ascii-iteration-1-receipt.md",
+      "blob": "37e3cba0c5ed4d5fd330a6a5260a1f3a34795fd4",
+      "bytes": 1560,
+      "family": "graphics",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/graphics/ascii-iteration-2-pass-1-plan.md",
+      "blob": "8e8ed61e0e276055a752881a2f1bf27cf2cfe67f",
+      "bytes": 4031,
+      "family": "graphics",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/graphics/ascii-iteration-2-pass-2-plan.md",
+      "blob": "51028b975b6d0a9909469ba28ec17333f2eaaf64",
+      "bytes": 6604,
+      "family": "graphics",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/graphics/ascii-iteration-2-pass-3-plan.md",
+      "blob": "ae931314531b4a3b7bc8888bd21883437f0e91ff",
+      "bytes": 7351,
+      "family": "graphics",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/graphics/ascii-iteration-2-pass-4-plan.md",
+      "blob": "a55ef54c0b7dc06573949902da0e65ebd5066661",
+      "bytes": 6177,
+      "family": "graphics",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/graphics/ascii-iteration-2-pass-5-plan.md",
+      "blob": "3925c80c5962e38ef4159817156d4085d56c1201",
+      "bytes": 5255,
+      "family": "graphics",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/graphics/ascii-iteration-2-pass-6-plan.md",
+      "blob": "219f7757472c07170e71015b2549d426a9f7cf30",
+      "bytes": 6918,
+      "family": "graphics",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/graphics/ascii-iteration-2-receipt.md",
+      "blob": "c439e27b21b5c268b048a92a8944a045c0db0497",
+      "bytes": 1845,
+      "family": "graphics",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/graphics/ascii-iterations.md",
+      "blob": "887f6c818d9dca55175fe48e3c8e926ba5c03452",
+      "bytes": 2812,
+      "family": "graphics",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/graphics/data-structure-1d-array.png",
+      "blob": "681384934bc98064b99fd78fe2cc31f9de64995c",
+      "bytes": 2063524,
+      "family": "graphics",
+      "extension": ".png"
+    },
+    {
+      "path": "docs/graphics/from-words-to-worlds.png",
+      "blob": "403d4754ede54eccf8defbc55d27d22fc6b4d8ed",
+      "bytes": 2342639,
+      "family": "graphics",
+      "extension": ".png"
+    },
+    {
+      "path": "docs/graphics/graphic-a-ascii-pass-1-plan.md",
+      "blob": "d06f002337b7855f98137505a1ddce5ab9693e72",
+      "bytes": 8228,
+      "family": "graphics",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/graphics/graphic-a-ascii-pass-2-plan.md",
+      "blob": "67824b052468f540aa7b5d14f3a17535eb18a149",
+      "bytes": 4786,
+      "family": "graphics",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/graphics/graphic-a-ascii-pass-3-plan.md",
+      "blob": "18f3c7f7433faa8481ed3e37e9bd00b6db5c0f9c",
+      "bytes": 4904,
+      "family": "graphics",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/graphics/graphic-a-ascii-pass-4-plan.md",
+      "blob": "4a94977c28649ff81f61da354f9eeab124922984",
+      "bytes": 7744,
+      "family": "graphics",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/graphics/graphic-a-ascii.md",
+      "blob": "55cfe6ba973fe7246587255ce6687b4a090fe00a",
+      "bytes": 18841,
+      "family": "graphics",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/graphics/graphic-b-ascii-pass-1-plan.md",
+      "blob": "07e540755c9db54fee372b07452a89733792cf09",
+      "bytes": 7552,
+      "family": "graphics",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/graphics/graphic-b-ascii-pass-2-plan.md",
+      "blob": "505c78479ef4b1a22468aa4eeba81ef71591445d",
+      "bytes": 5371,
+      "family": "graphics",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/graphics/graphic-b-ascii-pass-3-plan.md",
+      "blob": "39f415e81e7fd89750eb1bda2e70ecbafdd55b00",
+      "bytes": 5186,
+      "family": "graphics",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/graphics/graphic-b-ascii.md",
+      "blob": "eb8ba03183b1ef7366f09cfab4297c53b0dd997b",
+      "bytes": 14344,
+      "family": "graphics",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/graphics/graphic-c-ascii.md",
+      "blob": "7de576cee73249164a0a476ce1f794849379d7a3",
+      "bytes": 13654,
+      "family": "graphics",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/graphics/mechanisms-in-3d.png",
+      "blob": "794e11b2f609fdf3927a961726f228013aec3cad",
+      "bytes": 2361167,
+      "family": "graphics",
+      "extension": ".png"
+    },
+    {
+      "path": "docs/graphics/n-dimensional-relationships.png",
+      "blob": "554360f3765904652e947c5b497108a347788ac5",
+      "bytes": 2436297,
+      "family": "graphics",
+      "extension": ".png"
+    },
+    {
+      "path": "docs/graphics/prefix-device-pass-1-plan.md",
+      "blob": "385f02bd31f9abb82f27918040daf46477826b0a",
+      "bytes": 8444,
+      "family": "graphics",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/graphics/prefix-device-pass-1.md",
+      "blob": "8df6287145a785486d75e2e18987b42893096579",
+      "bytes": 9525,
+      "family": "graphics",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/graphics/prefix-device-pass-2-plan.md",
+      "blob": "e43eb72d31b4391b23aebcdba5396ac36f8c2514",
+      "bytes": 6227,
+      "family": "graphics",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/graphics/prefix-device-pass-2.md",
+      "blob": "ccdef9ebffe4c1b1c6347b801fc94e7d5d4aa9af",
+      "bytes": 4772,
+      "family": "graphics",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/graphics/prefix-device-pass-3-plan.md",
+      "blob": "3dce7c6d867019dfc9552c4429de8cfd3c83b21f",
+      "bytes": 427,
+      "family": "graphics",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/graphics/prefix-device-pass-3.md",
+      "blob": "1e6d81d02c96502273f921c2bd1d0807650a49fe",
+      "bytes": 778,
+      "family": "graphics",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/graphics/prefix-device-pass-4-plan.md",
+      "blob": "fda3f222c62270754ca1b38443bb5fdfabec403d",
+      "bytes": 8918,
+      "family": "graphics",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/graphics/prefix-device-pass-4.md",
+      "blob": "87c99398c603571965db83aa5959f808f1908ce5",
+      "bytes": 6033,
+      "family": "graphics",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/graphics/prefix-device-pass-5-plan.md",
+      "blob": "f9005d31a44761b023e70231b4b3080fddf424d3",
+      "bytes": 393,
+      "family": "graphics",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/graphics/prefix-device-pass-5.md",
+      "blob": "21087faa12b24c6f611863ddadee48d9f0e66876",
+      "bytes": 488,
+      "family": "graphics",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/graphics/prefix-device-pass-6-plan.md",
+      "blob": "2b182143684753e3cd460dc6cbd36182e0cf9e0a",
+      "bytes": 352,
+      "family": "graphics",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/graphics/prefix-device-pass-6.md",
+      "blob": "66848e9d43b446664e92669b3c26cbcf5f6c6188",
+      "bytes": 1181,
+      "family": "graphics",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/graphics/prefix-device-pass-7.md",
+      "blob": "f44ea32957a7b0b915718691771b6abeeccd44d9",
+      "bytes": 385,
+      "family": "graphics",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/history/README.md",
+      "blob": "834eea18e931e27dac8b5ac55b97a212df9dc1b0",
+      "bytes": 5172,
+      "family": "history",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/history/history-recovered-2026-09-18.md",
+      "blob": "d1967530fa0a8164e90c8dd0e21a086f652c1883",
+      "bytes": 7109,
+      "family": "history",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/history/history-recovered-pass-2-2026-09-18.md",
+      "blob": "17053e59d7adeaeface6fd2ae176be250a4901c1",
+      "bytes": 11208,
+      "family": "history",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/history/history-recovered-pass-3-2026-09-18.md",
+      "blob": "362f95b10a9f7f2fb55af5691a66fe9936ad2b6e",
+      "bytes": 22053,
+      "family": "history",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/history/history-recovered-pass-4-2026-09-18.md",
+      "blob": "804a7265568e991e08510669d2a22e7813a2b4fa",
+      "bytes": 20625,
+      "family": "history",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/history/history-recovered-pass-4-sit.md",
+      "blob": "a0c5386b15a0c8ba4cc98abb72882439a0b6c911",
+      "bytes": 11134,
+      "family": "history",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/history/history-recovered-pass-5-2026-09-18.md",
+      "blob": "e385e9a898c67b6561a7c0f290dbb352fe466adc",
+      "bytes": 29163,
+      "family": "history",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/history/history-recovered-pass-5-sit.md",
+      "blob": "a76e6e646bbb1e096932b9d4734dc6e609a05ee2",
+      "bytes": 6625,
+      "family": "history",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/history/history-recovered-pass-6-2026-09-18.md",
+      "blob": "c9ec0828c96bb50364876d7e1f3fb99ed22d3178",
+      "bytes": 21468,
+      "family": "history",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/history/history-recovered-pass-6-plan.md",
+      "blob": "a6baf89874ef8bf82c0edb2c08e3c2e3bc16c905",
+      "bytes": 5029,
+      "family": "history",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/history/history-recovered-pass-6-sit.md",
+      "blob": "a59f206c57baa12b866ec705aa1c4f940a8b89ef",
+      "bytes": 8608,
+      "family": "history",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/history/history-recovered-pass-7-2026-09-18.md",
+      "blob": "6de304324d2d1939c0a7fd8103fa4e9dc5302b4b",
+      "bytes": 22752,
+      "family": "history",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/history/history-recovered-pass-7-evidence-2026-09-18.json",
+      "blob": "4d0c9128e2cc9caefb3e06a66afe7392d00e59a4",
+      "bytes": 418508,
+      "family": "history",
+      "extension": ".json"
+    },
+    {
+      "path": "docs/history/quiet-door-5-ascii.md",
+      "blob": "f2f5689faff9d737ab4a81bf9c96cfd51737b7ff",
+      "bytes": 8528,
+      "family": "history",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/history/quiet-door-5-pass-1-plan.md",
+      "blob": "71461966bad04d0522b8f301ef9cdc0eb79634e4",
+      "bytes": 3661,
+      "family": "history",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/history/quiet-door-5-pass-2-plan.md",
+      "blob": "9fd7534f9f395904569d71e5e04e365b30ef2a22",
+      "bytes": 2819,
+      "family": "history",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/history/quiet-door-5-pass-3-plan.md",
+      "blob": "f8daf34ee699d192ab656786b949121fcd56e938",
+      "bytes": 2660,
+      "family": "history",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/history/quiet-door-5-pass-4-plan.md",
+      "blob": "585fc1897c03331076dec9a88ab36198b958be53",
+      "bytes": 3997,
+      "family": "history",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/history/quiet-door-5-pass-5-plan.md",
+      "blob": "8921fbe1a3703de0c13d9ed5f85735b0419428c4",
+      "bytes": 2570,
+      "family": "history",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/history/quiet-door-5-pass-6-plan.md",
+      "blob": "dd7d1f7d77da97afaf91009f555d916afe257bae",
+      "bytes": 3052,
+      "family": "history",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/history/quiet-door-5-receipt.md",
+      "blob": "5fc81f0d041f261f5f1aafde475b72ab43ba36d0",
+      "bytes": 1609,
+      "family": "history",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/history/relationship-evidence-pass-1-findings.md",
+      "blob": "4dc3d7ab343f6a6cd585839092113d38991b084b",
+      "bytes": 25428,
+      "family": "history",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/history/relationship-evidence-pass-1-plan.md",
+      "blob": "8d81edd30ba0eb208da8f59e18508d6253f7e7b6",
+      "bytes": 21621,
+      "family": "history",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/history/relationship-evidence-pass-1.md",
+      "blob": "6a1896b0b9f1c6319a0f7329a167562a47185961",
+      "bytes": 13782,
+      "family": "history",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/history/relationship-evidence-pass-2-findings.md",
+      "blob": "1cad52d1991e53ba29e801754ce29e0eae603afb",
+      "bytes": 13808,
+      "family": "history",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/history/relationship-evidence-pass-2-plan.md",
+      "blob": "42943a0431881fd3162d7a7c5f334666d31e6712",
+      "bytes": 11129,
+      "family": "history",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/history/relationship-evidence-pass-3-handoff.md",
+      "blob": "dc5508a871a58a172ec749163763208df032d630",
+      "bytes": 7541,
+      "family": "history",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/history/relationship-evidence-pass-3-plan.md",
+      "blob": "f16a57f797259cdb868907998fb219357130bb27",
+      "bytes": 7274,
+      "family": "history",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/history/relationship-evidence-pass-4-close.md",
+      "blob": "894dc1f7825cd0aea02d4fbe7ed45062e84d1259",
+      "bytes": 3699,
+      "family": "history",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/history/relationship-evidence-pass-4-plan.md",
+      "blob": "43e0666f482bd3906a50683e34c1d23e5bb51651",
+      "bytes": 5007,
+      "family": "history",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/history/relationship-evidence-pass-5-drift.md",
+      "blob": "6812319fbe3db9a04fd1712f3faf9717eef58fbd",
+      "bytes": 1875,
+      "family": "history",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/history/relationship-evidence-pass-5-plan.md",
+      "blob": "a9f25933ac9fadd987129a7183a10c3b36c30052",
+      "bytes": 4604,
+      "family": "history",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/history/relationship-evidence-pass-6-plan.md",
+      "blob": "0697c0f81a8b81ad25c3512877a345112b82b609",
+      "bytes": 4619,
+      "family": "history",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/history/relationship-evidence-receipt.md",
+      "blob": "6cd7462af9c1b99f949028c88fe27829d0a83e0d",
+      "bytes": 2793,
+      "family": "history",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/hologram/README.md",
+      "blob": "2bbd1c7f628b799155d16f39eaf5e10b5f311387",
+      "bytes": 4812,
+      "family": "hologram",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/hologram/clockwork-view-crossing.png",
+      "blob": "48f59977abea0c25526bd445467d211875b930e7",
+      "bytes": 204824,
+      "family": "hologram",
+      "extension": ".png"
+    },
+    {
+      "path": "docs/hologram/clockwork-view-lattice.jpg",
+      "blob": "fe9ec5ea684f44685f1486fe210ec0c1b3914e29",
+      "bytes": 185166,
+      "family": "hologram",
+      "extension": ".jpg"
+    },
+    {
+      "path": "docs/hologram/clockwork-view-traces.jpg",
+      "blob": "d9fd505713f4d049e68307de32ee6d77e1f474e3",
+      "bytes": 338376,
+      "family": "hologram",
+      "extension": ".jpg"
+    },
+    {
+      "path": "docs/hologram/lookref-astra-helical-shell.png",
+      "blob": "639e5cb06831e3722467ea18c61111475319b113",
+      "bytes": 1006690,
+      "family": "hologram",
+      "extension": ".png"
+    },
+    {
+      "path": "docs/hologram/lookref-astra-stream-bifurcation.png",
+      "blob": "30c0521cc378121a9e2513f4f4f0338f6d877666",
+      "bytes": 1039900,
+      "family": "hologram",
+      "extension": ".png"
+    },
+    {
+      "path": "docs/hologram/lookref-astra-toroidal-pair.png",
+      "blob": "13600e5952b620101fc4365cf980e479e7c971cc",
+      "bytes": 1012855,
+      "family": "hologram",
+      "extension": ".png"
+    },
+    {
+      "path": "docs/hologram/lookref-astra-toroidal-tangle.png",
+      "blob": "bd9545bd67b5b40a75d1ef69b8fc4bed38605099",
+      "bytes": 776681,
+      "family": "hologram",
+      "extension": ".png"
+    },
+    {
+      "path": "docs/hologram/lookref-astra-vortex-reconnect.png",
+      "blob": "66349ace2e8a87e27bb4ddf8e5102ed51d06d40d",
+      "bytes": 837213,
+      "family": "hologram",
+      "extension": ".png"
+    },
+    {
+      "path": "docs/hologram/lookref-lattice-glyph-arrows.jpg",
+      "blob": "00941620e85a3954bc4827899b49c3d507f9b11a",
+      "bytes": 374097,
+      "family": "hologram",
+      "extension": ".jpg"
+    },
+    {
+      "path": "docs/hologram/lookref-lattice-hub-uplink.png",
+      "blob": "aa312e0c6c4716fa078c9118e568c3ca67d810bd",
+      "bytes": 1818858,
+      "family": "hologram",
+      "extension": ".png"
+    },
+    {
+      "path": "docs/hologram/lookref-lattice-trail-annotations.jpg",
+      "blob": "5e342a75ba33be2563bf5cc24ce615cfd5618cdb",
+      "bytes": 696352,
+      "family": "hologram",
+      "extension": ".jpg"
+    },
+    {
+      "path": "docs/hologram/lookref-worldline-ctc-full.png",
+      "blob": "0f5b0ef638a71fe9a6bb369eff6fd3c4b3890bb6",
+      "bytes": 189471,
+      "family": "hologram",
+      "extension": ".png"
+    },
+    {
+      "path": "docs/hologram/nostd-pipeline.html",
+      "blob": "45eeb58116d399237ca1f2e29cad2f1a1fa02400",
+      "bytes": 45497,
+      "family": "hologram",
+      "extension": ".html"
+    },
+    {
+      "path": "docs/hologram/perceived-reality-story-defense.png",
+      "blob": "679fa601aa7e68fe6609e93c9f14248fcc602c1e",
+      "bytes": 246859,
+      "family": "hologram",
+      "extension": ".png"
+    },
+    {
+      "path": "docs/hologram/primitive-helical-shell.png",
+      "blob": "8c1200da317d6ed6819b7836d02298575074816c",
+      "bytes": 100696,
+      "family": "hologram",
+      "extension": ".png"
+    },
+    {
+      "path": "docs/hologram/primitive-inward-spiral.png",
+      "blob": "6bde5ba7b21397985cc888a196aadb787d21a7b8",
+      "bytes": 101066,
+      "family": "hologram",
+      "extension": ".png"
+    },
+    {
+      "path": "docs/hologram/primitive-split-shells.png",
+      "blob": "96741b9321cd78d23a85b6caabd0cc6694a64325",
+      "bytes": 104414,
+      "family": "hologram",
+      "extension": ".png"
+    },
+    {
+      "path": "docs/hologram/primitive-stream-bifurcation.png",
+      "blob": "9f07541ad3be57b4f606b5a680bcc915fd6fbf04",
+      "bytes": 96141,
+      "family": "hologram",
+      "extension": ".png"
+    },
+    {
+      "path": "docs/hologram/primitive-toroidal-tangle.png",
+      "blob": "0bc6fb41044a5be508db90f8cb827156428315d3",
+      "bytes": 95263,
+      "family": "hologram",
+      "extension": ".png"
+    },
+    {
+      "path": "docs/hologram/primitive-toroidal.png",
+      "blob": "113ec8c048abff3f86aed4e79a233be134eb747c",
+      "bytes": 89426,
+      "family": "hologram",
+      "extension": ".png"
+    },
+    {
+      "path": "docs/hologram/primitive-vortex-reconnect.png",
+      "blob": "252a8aea9b7456b346e5b56f59f8423813c781d5",
+      "bytes": 92738,
+      "family": "hologram",
+      "extension": ".png"
+    },
+    {
+      "path": "docs/hologram/primitive-worldline-ctc.png",
+      "blob": "e6ba3222e74e4edf5aa54ef970d91859ad53f71e",
+      "bytes": 57134,
+      "family": "hologram",
+      "extension": ".png"
+    },
+    {
+      "path": "docs/hologram/quiet-door-7-ascii.md",
+      "blob": "65da531f611d55220f5ac5733dfe2b542a8adb27",
+      "bytes": 9747,
+      "family": "hologram",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/hologram/quiet-door-7-pass-1-plan.md",
+      "blob": "87edf28eca16e0f0323085d72c452f0ace70b390",
+      "bytes": 4651,
+      "family": "hologram",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/hologram/quiet-door-7-pass-2-plan.md",
+      "blob": "4f8d7af795001492002e1ba255becf3f671ed1e7",
+      "bytes": 3034,
+      "family": "hologram",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/hologram/quiet-door-7-pass-3-plan.md",
+      "blob": "8ea4c999d6524d2903e996e03a16ee3906a5d1e0",
+      "bytes": 2951,
+      "family": "hologram",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/hologram/quiet-door-7-pass-4-plan.md",
+      "blob": "29271a8ad459b7a6821ebe4e97c0cb3bb328edac",
+      "bytes": 4394,
+      "family": "hologram",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/hologram/quiet-door-7-pass-5-plan.md",
+      "blob": "b5e36360bedd17da5a6b2de40dd6f29f2ff93011",
+      "bytes": 2940,
+      "family": "hologram",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/hologram/quiet-door-7-pass-6-plan.md",
+      "blob": "d2ebffaf1ef96926fcb567b9e1856beef7458744",
+      "bytes": 3109,
+      "family": "hologram",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/hologram/quiet-door-7-receipt.md",
+      "blob": "9729948c901972b90c0e8450c3a8844ac8c98873",
+      "bytes": 1778,
+      "family": "hologram",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/hologram/visual-primitives.md",
+      "blob": "1db8351b5ec3210348d3661dcd394991286aabe4",
+      "bytes": 9953,
+      "family": "hologram",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/kit/README.md",
+      "blob": "666cb6c871a016178c3abb577c7b5cca3cd8829c",
+      "bytes": 6910,
+      "family": "kit",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/kit/READ_ME_FIRST.md",
+      "blob": "a6081c83cdc9e2cd7e29c1d6f1bc4b40ec56856d",
+      "bytes": 4679,
+      "family": "kit",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/kit/agent-control.md",
+      "blob": "f817d6a90f621f45f4e74d929fbe1de4a5394007",
+      "bytes": 32523,
+      "family": "kit",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/kit/agent-task-template.md",
+      "blob": "8c1a08a1cb13c6cdf9ad362cb1c0cfe9eac46437",
+      "bytes": 8363,
+      "family": "kit",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/kit/cold-doors-pass-1-plan.md",
+      "blob": "2c36974aa5abf6ae0d1616f87e730f7df9491fa2",
+      "bytes": 4882,
+      "family": "kit",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/kit/cold-doors-pass-2-plan.md",
+      "blob": "f92587600ca4a410dfae8f45b628204fded28fee",
+      "bytes": 3794,
+      "family": "kit",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/kit/cold-doors-pass-3-plan.md",
+      "blob": "edb3bf73c77af2dc506c769a9bcef8a7e24abff6",
+      "bytes": 3432,
+      "family": "kit",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/kit/cold-doors-pass-4-plan.md",
+      "blob": "84e20914fec998a2d3814f6a81b322bf21496e84",
+      "bytes": 3146,
+      "family": "kit",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/kit/cold-doors-pass-5-plan.md",
+      "blob": "d0b6d2ddef1d6d59e3705f80b4d9344d1d1faf44",
+      "bytes": 3850,
+      "family": "kit",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/kit/cold-doors-pass-6-plan.md",
+      "blob": "cced7beea40fad9cee7be09beda221044aefd44a",
+      "bytes": 3703,
+      "family": "kit",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/kit/cold-doors.md",
+      "blob": "8d2f2a4703f3217248d11054b520923dd03197b8",
+      "bytes": 14934,
+      "family": "kit",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/kit/distribution-model.md",
+      "blob": "ef178d8307e8e33d48d6bc0595832feb3371806d",
+      "bytes": 8301,
+      "family": "kit",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/kit/downstream-audit.md",
+      "blob": "525da297e27bbac20b04d83771c11969b5af197b",
+      "bytes": 28697,
+      "family": "kit",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/kit/githack-pwa-deploy.md",
+      "blob": "06612fed21418eacb8891157d51e75749fff16a1",
+      "bytes": 3824,
+      "family": "kit",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/kit/grok-bot-profile.md",
+      "blob": "3b63813e60d70671c018b9119450545bc9ca2147",
+      "bytes": 18816,
+      "family": "kit",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/kit/quiet-door-1-ascii.md",
+      "blob": "50f2eae1fb537ac9583ac7410c44329fe304c70b",
+      "bytes": 10579,
+      "family": "kit",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/kit/quiet-door-1-pass-1-plan.md",
+      "blob": "751757ae6f89dafa509de3575eb52802151b69ca",
+      "bytes": 4655,
+      "family": "kit",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/kit/quiet-door-1-pass-2-plan.md",
+      "blob": "e2c58514d79edddc97f92e76e109e9e83f08921f",
+      "bytes": 3327,
+      "family": "kit",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/kit/quiet-door-1-pass-3-plan.md",
+      "blob": "8e5b00c69c6033a0bcc72b4f8d03b37b29ff4d61",
+      "bytes": 3245,
+      "family": "kit",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/kit/quiet-door-1-pass-4-plan.md",
+      "blob": "9d6612ce5eed604194e1f0c1aee150fc475e1a1c",
+      "bytes": 4019,
+      "family": "kit",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/kit/quiet-door-1-pass-5-plan.md",
+      "blob": "32c393df346e36b4a7e4ba6c08c2efeec3782813",
+      "bytes": 3222,
+      "family": "kit",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/kit/quiet-door-1-pass-6-plan.md",
+      "blob": "98114ba03786225ce024203f5c1db2add3b2a780",
+      "bytes": 3110,
+      "family": "kit",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/kit/quiet-door-1-receipt.md",
+      "blob": "6b6f4f65e98fce6de5f88ff3911a576e8cab6de4",
+      "bytes": 1684,
+      "family": "kit",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/kit/quiet-door-3-ascii.md",
+      "blob": "84f785399d7e91ce56681973ac19801aa059a0c3",
+      "bytes": 9747,
+      "family": "kit",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/kit/quiet-door-3-pass-1-plan.md",
+      "blob": "7541b1183c92607fce40e9a1ce686ef3492c67c0",
+      "bytes": 3613,
+      "family": "kit",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/kit/quiet-door-3-pass-2-plan.md",
+      "blob": "a00e4ef4f0c471e7465af610b977113a7bfcbda3",
+      "bytes": 2691,
+      "family": "kit",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/kit/quiet-door-3-pass-3-plan.md",
+      "blob": "6f142e8683f3bf0ee4c047762c650186c13fc50d",
+      "bytes": 3214,
+      "family": "kit",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/kit/quiet-door-3-pass-4-plan.md",
+      "blob": "07d4fb4f3d5eef689bbfb089f0e2715b81a5b956",
+      "bytes": 3879,
+      "family": "kit",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/kit/quiet-door-3-pass-5-plan.md",
+      "blob": "d2ea136e592255219d2d697bf138eab714e6312e",
+      "bytes": 2481,
+      "family": "kit",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/kit/quiet-door-3-pass-6-plan.md",
+      "blob": "edc074c06635ffe52baf585f1e282c64db288fad",
+      "bytes": 2903,
+      "family": "kit",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/kit/quiet-door-3-receipt.md",
+      "blob": "74418ce73480af5b97d4886845e361bf1717b75f",
+      "bytes": 1426,
+      "family": "kit",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/kit/quiet-door-4-ascii.md",
+      "blob": "d50a500fad2bfd002c11abfcb6a444748384cea3",
+      "bytes": 9374,
+      "family": "kit",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/kit/quiet-door-4-pass-1-plan.md",
+      "blob": "f52a9ba877da099d7b427350e4a15e22df949059",
+      "bytes": 3926,
+      "family": "kit",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/kit/quiet-door-4-pass-2-plan.md",
+      "blob": "cded7ea5269c139c68388bd012ceceb21c6266b9",
+      "bytes": 2703,
+      "family": "kit",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/kit/quiet-door-4-pass-3-plan.md",
+      "blob": "d121ce40ef15be25f120296529cf2ecab528036a",
+      "bytes": 2783,
+      "family": "kit",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/kit/quiet-door-4-pass-4-plan.md",
+      "blob": "23a0186da924d66efd1bdb8c1a5b8672eb0770fe",
+      "bytes": 3903,
+      "family": "kit",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/kit/quiet-door-4-pass-5-plan.md",
+      "blob": "c8a3337e243a03acdb20975a00b22f13762a22f1",
+      "bytes": 2638,
+      "family": "kit",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/kit/quiet-door-4-pass-6-plan.md",
+      "blob": "099ffe08cfabd6859fbffc7ae5fe125dee7010a5",
+      "bytes": 2942,
+      "family": "kit",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/kit/quiet-door-4-receipt.md",
+      "blob": "8e1d8f52ecc70f3ff3b6e4d96af88f53d1b0db9b",
+      "bytes": 1529,
+      "family": "kit",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/kit/roles.md",
+      "blob": "a3fde725d400a5992bf81e240a7a7ead63538028",
+      "bytes": 4493,
+      "family": "kit",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/kit/scanner-fix-pass-1-plan.md",
+      "blob": "b42673f803fce7d29548f2541a53ca5ed320a051",
+      "bytes": 3845,
+      "family": "kit",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/kit/scanner-fix-pass-2-plan.md",
+      "blob": "2f6d304d779c88d4967dd1335c1fdc01509e7670",
+      "bytes": 2590,
+      "family": "kit",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/kit/scanner-fix-pass-3-plan.md",
+      "blob": "913831e4b74deb73c86944753db1eb753fb77be7",
+      "bytes": 2897,
+      "family": "kit",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/kit/scanner-fix-pass-4-plan.md",
+      "blob": "df1eaa732c7e85628bd8b8858dcb966fde52bb67",
+      "bytes": 4357,
+      "family": "kit",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/kit/scanner-fix-pass-5-plan.md",
+      "blob": "f46ede0cdc9eb479bb923e1713cf2eb18c1fb0ff",
+      "bytes": 3503,
+      "family": "kit",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/kit/scanner-fix-pass-6-plan.md",
+      "blob": "e9f977c4eff6dcbf1982251243fbb28d42c88969",
+      "bytes": 3047,
+      "family": "kit",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/kit/scanner-fix-receipt.md",
+      "blob": "95738546a243b324a51b72d3f80d76cb9b4a7cd8",
+      "bytes": 1662,
+      "family": "kit",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/kit/scanner.md",
+      "blob": "4be6151771e3b3b892b8f57f7bc118199710dea2",
+      "bytes": 8656,
+      "family": "kit",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/law-why-these-documents.md",
+      "blob": "48c0de07a43951792b22d13fecc846e291addb20",
+      "bytes": 18248,
+      "family": "docs-root",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/math-execution-model-pass-3-witness.md",
+      "blob": "a8217cfe0c9bd22b871524ade40ab900514150f7",
+      "bytes": 7904,
+      "family": "docs-root",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/math-execution-model-pass-4-adversarial.md",
+      "blob": "2c263117f43ded641583fa4bcc0796bb0d09747d",
+      "bytes": 8905,
+      "family": "docs-root",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/math-execution-model-pass-5-projections.md",
+      "blob": "9f086b9014e756f663dd0c838e458b79e7849966",
+      "bytes": 7638,
+      "family": "docs-root",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/math-execution-model-pass-6-arrival.md",
+      "blob": "325c544c39b76a87789ebbe128648ab30f94e57d",
+      "bytes": 6346,
+      "family": "docs-root",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/math-execution-model.md",
+      "blob": "5163e9cb1e0ca8dac09441be7a844618afc5f3c2",
+      "bytes": 10770,
+      "family": "docs-root",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/namespace-register.md",
+      "blob": "6a5c1724d6caf6ea87df43cf16f5721b6a1d422b",
+      "bytes": 16298,
+      "family": "docs-root",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/plans/README.md",
+      "blob": "2238c623c2e3a88eaa88b21e9aa83458c15efaf2",
+      "bytes": 24815,
+      "family": "plans",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/plans/atomic-construction-pass-1-plan.md",
+      "blob": "225b90ad6659b326293f5d90fcd8a9075654dd2d",
+      "bytes": 29385,
+      "family": "plans",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/plans/conceptual-reference-reconciliation.md",
+      "blob": "57ba4f9718041db86691d1b3ae5282504c79d7d5",
+      "bytes": 7088,
+      "family": "plans",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/plans/fixtures/README.md",
+      "blob": "3322043f54517c8b483deeae47914b4018d2ce8e",
+      "bytes": 917,
+      "family": "plans",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/plans/fixtures/hologram-ir-golden-v0.1.0.json",
+      "blob": "a186f160b0e524a70dadc739c10ad69ba08112e9",
+      "bytes": 10689,
+      "family": "plans",
+      "extension": ".json"
+    },
+    {
+      "path": "docs/plans/fixtures/hologram-ir-golden-v0.2.0.json",
+      "blob": "b971387ef55369e4f8a360db5ed0fbd89be1ee90",
+      "bytes": 18069,
+      "family": "plans",
+      "extension": ".json"
+    },
+    {
+      "path": "docs/plans/hologram-ast-ir-viewer.md",
+      "blob": "181073d24be6e750bfd45f20f9b3f5492e045981",
+      "bytes": 13068,
+      "family": "plans",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/plans/hologram-ast-ir.md",
+      "blob": "12b39cfdeb7dd7aed228371effe75d0a1d076bfe",
+      "bytes": 14715,
+      "family": "plans",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/plans/lace-context-iter6-pass-1-findings.md",
+      "blob": "810506c7c3a60fc62b6637e2ab6140e5a2ddf6df",
+      "bytes": 16297,
+      "family": "plans",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/plans/lace-context-iter6-pass-2-findings.md",
+      "blob": "26d65da227bb7ea27478f2b3e9fb25094efab457",
+      "bytes": 13557,
+      "family": "plans",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/plans/lace-context-iter6-pass-3-findings.md",
+      "blob": "0d4f93275f352e4d1f2c919b12edbf8b1d71f8cb",
+      "bytes": 7283,
+      "family": "plans",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/plans/lace-context-iter6-pass-4-environment.md",
+      "blob": "aeed8385c110fa2da6724db67783cbad44d5dc2f",
+      "bytes": 17961,
+      "family": "plans",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/plans/lace-context-iter6-pass-5-crate-proposal.md",
+      "blob": "df2505eff9222dc109b8969cfec76defacb5d4da",
+      "bytes": 28728,
+      "family": "plans",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/plans/lace-context-iter7-pass-1-actors.md",
+      "blob": "8c5723dddbdb9572b2ceae41b564a50c5ba31335",
+      "bytes": 15140,
+      "family": "plans",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/plans/lace-context-iter7-pass-2-compute-and-inventory.md",
+      "blob": "d2f36d92fb4fe575c734885973439f06a4b1dad4",
+      "bytes": 17224,
+      "family": "plans",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/plans/lace-context-iter7-pass-3-audit.md",
+      "blob": "2e62736ccfc741f140c038fa531c0749e07cdde4",
+      "bytes": 10913,
+      "family": "plans",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/plans/lace-context-iteration-6-plan.md",
+      "blob": "5eabb2e898c2fd6677720bcbfe92337cbc2b51a5",
+      "bytes": 8131,
+      "family": "plans",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/plans/lace-context-iteration-6-receipt.md",
+      "blob": "2bfbb1d692f33778f000a9d12cdf11dbb10b70a6",
+      "bytes": 7644,
+      "family": "plans",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/plans/lace-context-iteration-7-plan.md",
+      "blob": "fba6c92691c6234ae8e9b509997a4be402825663",
+      "bytes": 7099,
+      "family": "plans",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/plans/lace-context-iteration-7-receipt.md",
+      "blob": "28c0d680a15811f115a7ee1f028c6c18f1b57b6f",
+      "bytes": 4609,
+      "family": "plans",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/plans/lace-projection-brief.md",
+      "blob": "ee6be3a01e5b8c595f48ab4aeb1a3d04303bd87c",
+      "bytes": 10408,
+      "family": "plans",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/plans/math-execution-model-pass-2-plan.md",
+      "blob": "c5dfc53c4f9c7f72f303b9cf4b94857e7aa89098",
+      "bytes": 6851,
+      "family": "plans",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/plans/math-execution-model-pass-3-plan.md",
+      "blob": "b55749ec317b49465144550ecc4533630bfb3e48",
+      "bytes": 6674,
+      "family": "plans",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/plans/math-execution-model-pass-4-plan.md",
+      "blob": "4fcbd549f31f4bdddd7d0bdcc0bfb391d73acb21",
+      "bytes": 9052,
+      "family": "plans",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/plans/math-execution-model-pass-5-plan.md",
+      "blob": "d0ae18f26cba9557e0bb53a850bb7f34185855f8",
+      "bytes": 8519,
+      "family": "plans",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/plans/math-execution-model-pass-6-plan.md",
+      "blob": "fa2dea76a4ede0d035edb40d85b04c4902d2bfd8",
+      "bytes": 8520,
+      "family": "plans",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/plans/math-execution-problem-map-pass-1.md",
+      "blob": "044e43e2ce79fbc7a54b9f6d0904cceb4c0ea0ac",
+      "bytes": 10294,
+      "family": "plans",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/plans/math-execution-wasm-crosswalk-pass-1-plan.md",
+      "blob": "d923ce036b71ded67d71767093c5ef995feeed6f",
+      "bytes": 8738,
+      "family": "plans",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/plans/math-execution-wasm-crosswalk-pass-1.md",
+      "blob": "dfe43a60a2d86b8e28089141b4805db38871c924",
+      "bytes": 10134,
+      "family": "plans",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/plans/math-execution-wasm-crosswalk-pass-2-plan.md",
+      "blob": "25a4f855206a0765f4a83c28b14eb16e1da27c64",
+      "bytes": 8217,
+      "family": "plans",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/plans/math-execution-wasm-crosswalk-pass-2-reading.md",
+      "blob": "dce8f6755c798c0ed54e325be8f2fdfc1858df95",
+      "bytes": 8243,
+      "family": "plans",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/plans/math-execution-wasm-crosswalk-pass-3-adversarial.md",
+      "blob": "0b4d679d045521c6d7f1d8147c3698a08144b82e",
+      "bytes": 11630,
+      "family": "plans",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/plans/math-execution-wasm-crosswalk-pass-3-plan.md",
+      "blob": "c94b9823e26837b6481c97d8df5f7c2f96109994",
+      "bytes": 7151,
+      "family": "plans",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/plans/math-execution-wasm-crosswalk-pass-4-plan.md",
+      "blob": "6e264553735a0383f97dfb36f91bbb1c5764869c",
+      "bytes": 8196,
+      "family": "plans",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/plans/probe-boundary-ladder.md",
+      "blob": "b2a2f6af595989f0b0caeea7550c88d2479b1fb4",
+      "bytes": 4673,
+      "family": "plans",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/plans/reduction-pass-1-findings.md",
+      "blob": "0f706eeed57001f3be71d958a0cd9359b978d62d",
+      "bytes": 8211,
+      "family": "plans",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/plans/reduction-pass-1-plan.md",
+      "blob": "6d22d182cf3412bb19fac89085872e89adef662f",
+      "bytes": 10704,
+      "family": "plans",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/plans/reduction-pass-2-execution-model.md",
+      "blob": "1c0f810883fa8855bbaf049a374a2a8452154632",
+      "bytes": 14317,
+      "family": "plans",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/plans/reduction-pass-2-plan.md",
+      "blob": "c97e00d22d637fd02d41dc1304f40cd97dbefc3f",
+      "bytes": 3093,
+      "family": "plans",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/plans/reduction-pass-3-findings.md",
+      "blob": "c64c58f02ae2f250db39c1d392f84a1983db0cf6",
+      "bytes": 1502,
+      "family": "plans",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/plans/reduction-pass-3-plan.md",
+      "blob": "5495042dddee235f73f9aa93a1522ec9ee289ac8",
+      "bytes": 2210,
+      "family": "plans",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/plans/reduction-pass-4-plan.md",
+      "blob": "9f5108c3510293a8e1a970b38fdfd49fdbb1fcf6",
+      "bytes": 2630,
+      "family": "plans",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/plans/reduction-pass-5-plan.md",
+      "blob": "af3e659a6291e3caf607c04a57717abb5f690f2d",
+      "bytes": 1912,
+      "family": "plans",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/plans/reduction-pass-5-rulings-brief.md",
+      "blob": "e63780c5765636123f5666a1b93fd2df77e4ebed",
+      "bytes": 5062,
+      "family": "plans",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/plans/reduction-pass-6-plan.md",
+      "blob": "8f7cb861f84b961283880dff341482d2774f99c3",
+      "bytes": 1247,
+      "family": "plans",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/plans/reduction-receipt.md",
+      "blob": "b37d732216bdf75c687d3814e64c8d33beeb0a32",
+      "bytes": 3351,
+      "family": "plans",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/plans/restructure-plan.md",
+      "blob": "2e60009068f4ba98d02ab5b37c2009fb4811c68e",
+      "bytes": 60182,
+      "family": "plans",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/plans/rust-nostd-branch-contracts.md",
+      "blob": "91a72cd0fb696abd4e5d86b97bdd2862e5980199",
+      "bytes": 44615,
+      "family": "plans",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/plans/rust-nostd-crate-map.md",
+      "blob": "352cf62d509e757f9541d03741522d815a4b1eb4",
+      "bytes": 29214,
+      "family": "plans",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/plans/rust-nostd-second-reading.md",
+      "blob": "daabe31cc2d92302cb4921b2fb1e7d710e07749d",
+      "bytes": 25595,
+      "family": "plans",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/plans/structural-alignment-pass-1-plan.md",
+      "blob": "e74d3ec2118cc6e226a81bd2eccb4ad8c204a626",
+      "bytes": 11911,
+      "family": "plans",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/plans/tools/README.md",
+      "blob": "d594cddea587ccc2ec38a0418a914fe5fcbeb735",
+      "bytes": 1138,
+      "family": "plans",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/plans/tools/hologram-ir-shape-check.py",
+      "blob": "3cc145d50690f9932c0bba42ff40084a9d604b99",
+      "bytes": 13146,
+      "family": "plans",
+      "extension": ".py"
+    },
+    {
+      "path": "docs/plans/verification-iter1-pass-2-findings.md",
+      "blob": "7344289a576a9a68a0a257dc9bf02d8e3f0f9f56",
+      "bytes": 19918,
+      "family": "plans",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/plans/verification-iter1-pass-2-plan.md",
+      "blob": "e91f5988c33a2554b86894f18c5fb59a64b01a45",
+      "bytes": 8509,
+      "family": "plans",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/plans/verification-iter1-pass-3-findings.md",
+      "blob": "db0d98a5357b533676dcd2283446c01e3a3f1969",
+      "bytes": 8433,
+      "family": "plans",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/plans/verification-iter1-pass-3-plan.md",
+      "blob": "c0f9a6721d639b28cd724bf0eb8a854ece3b31f3",
+      "bytes": 7689,
+      "family": "plans",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/plans/verification-iter1-pass-4-plan.md",
+      "blob": "1149ef01123df337c20372516afb0ae2099a543f",
+      "bytes": 7489,
+      "family": "plans",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/plans/verification-iter1-pass-5-plan.md",
+      "blob": "06e483c60689a2ad58f45d506e9e1e32b248fb59",
+      "bytes": 7827,
+      "family": "plans",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/plans/verification-iter1-phase-6-plan.md",
+      "blob": "fe04ad71afbf46b2893c46c399e52ed7b75a5427",
+      "bytes": 7078,
+      "family": "plans",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/plans/verification-iter2-pass-2-findings.md",
+      "blob": "a7a127c18c65ff89066838d552136a35e651e184",
+      "bytes": 7527,
+      "family": "plans",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/plans/verification-iter2-pass-2-plan.md",
+      "blob": "6869b7b20d06634cc5cbbb570b1147b5dfd0b871",
+      "bytes": 6628,
+      "family": "plans",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/plans/verification-iter2-pass-3-findings.md",
+      "blob": "2c74c83c1d7684ef3bb6355c88fb2e8ab4b654cc",
+      "bytes": 4829,
+      "family": "plans",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/plans/verification-iter2-pass-3-plan.md",
+      "blob": "9b930521ec5dc0d260f529d03be8c495ca58346f",
+      "bytes": 6633,
+      "family": "plans",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/plans/verification-iter2-pass-4-findings.md",
+      "blob": "b91d98d51936cf8484c0e3c582b35c53caf4f757",
+      "bytes": 7954,
+      "family": "plans",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/plans/verification-iter2-pass-4-plan.md",
+      "blob": "5f19320f52da84bca8e4ade8995d752d6347f4ca",
+      "bytes": 6408,
+      "family": "plans",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/plans/verification-iter2-pass-5-plan.md",
+      "blob": "c219aa8646fc82ee8b57a217318a5cc5cdb1f790",
+      "bytes": 8291,
+      "family": "plans",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/plans/verification-iter3-pass-2-findings.md",
+      "blob": "f966110238b3e06575073d1e96c4405ae02c979d",
+      "bytes": 5174,
+      "family": "plans",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/plans/verification-iter3-pass-2-plan.md",
+      "blob": "7dd181886f70f27b72a54c09820559baf546b0ba",
+      "bytes": 5380,
+      "family": "plans",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/plans/verification-iter3-pass-3-findings.md",
+      "blob": "14ad0a8474dd6024413fadb58bc6e6bfae087804",
+      "bytes": 5987,
+      "family": "plans",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/plans/verification-iter3-pass-3-plan.md",
+      "blob": "ebbb321b22c278a093333c937445334590088033",
+      "bytes": 4620,
+      "family": "plans",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/plans/verification-iter3-pass-4-findings.md",
+      "blob": "c1e8f800de1fcf8ba1e20e809e9c63915ec4fffc",
+      "bytes": 7072,
+      "family": "plans",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/plans/verification-iter3-pass-4-plan.md",
+      "blob": "537c6f33d0e520ed0505865cf2817e862b183551",
+      "bytes": 5471,
+      "family": "plans",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/plans/verification-iter3-pass-5-plan.md",
+      "blob": "6bd5ad6c65aa0917778344b2eb84a08eb7c1765d",
+      "bytes": 7754,
+      "family": "plans",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/plans/verification-iter3-pass-6-plan.md",
+      "blob": "e741dd1b558e00c663644065f48b79d612e397d3",
+      "bytes": 5240,
+      "family": "plans",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/plans/verification-iter4-pass-2-findings.md",
+      "blob": "37a5d5269bd31b4182cdf938276c651b74b3eeb4",
+      "bytes": 5043,
+      "family": "plans",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/plans/verification-iter4-pass-2-plan.md",
+      "blob": "d156f2567ff8e5d76fe21a923feb443f21f8c39d",
+      "bytes": 4613,
+      "family": "plans",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/plans/verification-iter4-pass-3-findings.md",
+      "blob": "2d689ed025039126de05c2fdbd550e7650f72953",
+      "bytes": 16607,
+      "family": "plans",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/plans/verification-iter4-pass-3-plan.md",
+      "blob": "fe0da287261b8bf6f802a3846381a1579ffe5718",
+      "bytes": 12398,
+      "family": "plans",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/plans/verification-iter4-pass-4-findings.md",
+      "blob": "fdd177cdc13161b35b6b6d7d27af9e9c263d7f56",
+      "bytes": 11471,
+      "family": "plans",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/plans/verification-iter4-pass-4-plan.md",
+      "blob": "6f4ef2bdb000bb598cc1ea7d9df3f577b563dc6e",
+      "bytes": 9772,
+      "family": "plans",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/plans/verification-iter4-pass-5-findings.md",
+      "blob": "2e5590ac19b037e79c450718fab4d29aeae0dcc4",
+      "bytes": 14290,
+      "family": "plans",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/plans/verification-iter4-pass-5-plan.md",
+      "blob": "988687f110ce84974e8c62fea84285556dc9d9fd",
+      "bytes": 11093,
+      "family": "plans",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/plans/verification-iter4-pass-6-plan.md",
+      "blob": "03a4b5b29401533df46cf7caad71a2d881819c2e",
+      "bytes": 7843,
+      "family": "plans",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/plans/verification-iter5-pass-2-findings.md",
+      "blob": "f173bee2c9197430dc4ba93f4e6e63dbf9079892",
+      "bytes": 7338,
+      "family": "plans",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/plans/verification-iter5-pass-2-plan.md",
+      "blob": "69702545cdd2446dba9d7b8dc3f11ff319c27355",
+      "bytes": 7227,
+      "family": "plans",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/plans/verification-iter5-pass-3-findings.md",
+      "blob": "df7ce54718f7ab96330af6f7679cb951a06b7d9c",
+      "bytes": 4849,
+      "family": "plans",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/plans/verification-iter5-pass-3-plan.md",
+      "blob": "14751d1b1ab9bb76d19cf7d6b434ff54efecdcf4",
+      "bytes": 6569,
+      "family": "plans",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/plans/verification-iter5-pass-4-plan.md",
+      "blob": "425494116dcd127f1d7e35491d0f00a6e9b4eb52",
+      "bytes": 7978,
+      "family": "plans",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/plans/verification-iteration-1-plan.md",
+      "blob": "3a7e1de8b3e8e5772ff39fbb0580f125054dadc3",
+      "bytes": 8113,
+      "family": "plans",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/plans/verification-iteration-1-receipt.md",
+      "blob": "06db3a246762b168c057125e8a06ffd61b89f218",
+      "bytes": 7770,
+      "family": "plans",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/plans/verification-iteration-2-plan.md",
+      "blob": "691fc92ada02b4df9dede8d7d2d6dd04fcc7d0f2",
+      "bytes": 13466,
+      "family": "plans",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/plans/verification-iteration-2-receipt.md",
+      "blob": "ab958ea75ec14d3992af9287c0ad1156d8188778",
+      "bytes": 9505,
+      "family": "plans",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/plans/verification-iteration-3-plan.md",
+      "blob": "aaae7c263fb15db15582f4486b7b47b40eff240e",
+      "bytes": 9306,
+      "family": "plans",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/plans/verification-iteration-3-receipt.md",
+      "blob": "af05b298120af0dc64db37069f762ed37e804543",
+      "bytes": 7122,
+      "family": "plans",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/plans/verification-iteration-4-plan.md",
+      "blob": "e9b87e8e02e215888210e98ed2322e9237a47dc4",
+      "bytes": 9364,
+      "family": "plans",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/plans/verification-iteration-4-receipt.md",
+      "blob": "bff1b24bf6306d7c16fdc636d26130924d8a7a88",
+      "bytes": 15395,
+      "family": "plans",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/plans/verification-iteration-5-plan.md",
+      "blob": "cf8792e581bc1a3290690d226b5440f83ab0dba8",
+      "bytes": 10913,
+      "family": "plans",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/plans/verification-iterations.md",
+      "blob": "88affb1ee9eae17f520eaa830f6d3b26b9b854c6",
+      "bytes": 5666,
+      "family": "plans",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/pointer-emission.md",
+      "blob": "dc01b4fbf23791da91a89427c89646db32ea4689",
+      "bytes": 13294,
+      "family": "docs-root",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/prompts/README.md",
+      "blob": "f37f6a6a548c76e2b2ec8fd9b5e0eb0cf94364c2",
+      "bytes": 1761,
+      "family": "prompts",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/prompts/agentscope-clipboard-prompt.md",
+      "blob": "4b54abb3a2acfc310bee3e31a108c0ef6bbbbb7d",
+      "bytes": 15647,
+      "family": "prompts",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/prompts/clip-and-five-refs-prompt.md",
+      "blob": "8e6117a48184b3965595c894365744e76840c327",
+      "bytes": 10846,
+      "family": "prompts",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/prompts/coherence-audit-prompt.md",
+      "blob": "39c96df68d13e442d9789496ae9be3f638941690",
+      "bytes": 17805,
+      "family": "prompts",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/prompts/context-pass.md",
+      "blob": "7667c262511cbf517d3ed157f5754a1be9a2b9eb",
+      "bytes": 12853,
+      "family": "prompts",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/prompts/coord-protocol-prompt.md",
+      "blob": "4325450945b40b4fc636ec9935fc0c2c7585ef7c",
+      "bytes": 2766,
+      "family": "prompts",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/prompts/gearing-code-1to1-prompt.md",
+      "blob": "68f75d1a3fe4e7987119b688b7c71dbc274b4e6b",
+      "bytes": 22472,
+      "family": "prompts",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/prompts/gearing-html-fix-prompt.md",
+      "blob": "b0fce433be26af35f74385f8c74cb18f6c030f2a",
+      "bytes": 18252,
+      "family": "prompts",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/prompts/gearing-html-hologram-restyle-prompt.md",
+      "blob": "87fa45d8d6755bc04cfe2be252699981eb0178b8",
+      "bytes": 19102,
+      "family": "prompts",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/prompts/gearing-html-iterate-prompt.md",
+      "blob": "fc904dfb1190ca74cf4c139245910379a049b7f4",
+      "bytes": 19249,
+      "family": "prompts",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/prompts/kauffman-clipboard-prompt.md",
+      "blob": "d53bd09ddec6a98dff14056755e40395d117d2b5",
+      "bytes": 14594,
+      "family": "prompts",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/prompts/lace-context-diagram-prompt.md",
+      "blob": "143842d37316b0c8e628bceb7d1b506233459806",
+      "bytes": 12609,
+      "family": "prompts",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/prompts/lace-projection-review-prompt.md",
+      "blob": "d99ef0b321c83159b1ee2a090475643274e4dca9",
+      "bytes": 15773,
+      "family": "prompts",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/prompts/petersen-zech-clipboard-prompt.md",
+      "blob": "a0f358be9cec0ad2d123566201684c1874bc962c",
+      "bytes": 15139,
+      "family": "prompts",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/prompts/pointer-emission-prompt.md",
+      "blob": "420c3e25a322fe8c48e538778933f0c76eaa7893",
+      "bytes": 20330,
+      "family": "prompts",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/prompts/rowlands-clipboard-prompt.md",
+      "blob": "e3d68bedbdb306814e7513450ae71322b0634fc7",
+      "bytes": 14957,
+      "family": "prompts",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/prompts/rust-nostd-branch-contracts-prompt.md",
+      "blob": "659ce3e90f67ebed3b2ce0c873d61dbbcaeeb675",
+      "bytes": 20837,
+      "family": "prompts",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/prompts/rust-nostd-crate-map-prompt.md",
+      "blob": "d16591ee783ad94ecdd57465d6dbbf61ed7e37a5",
+      "bytes": 21617,
+      "family": "prompts",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/prompts/rust-target-clipboard-prompt.md",
+      "blob": "866e8fdeb0e10a76b4e4eb23adc229e433e0f7fd",
+      "bytes": 2644,
+      "family": "prompts",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/prompts/shadow-clock-shared-interactive-prompt.md",
+      "blob": "83d7f90444b797be7a9a505d15a7af8526a2a306",
+      "bytes": 6823,
+      "family": "prompts",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/prompts/six-pass-proposal-generator.md",
+      "blob": "487b0ffb90b733c5a42796e71a03bed05ad72c0f",
+      "bytes": 4543,
+      "family": "prompts",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/prompts/xiao-clipboard-prompt.md",
+      "blob": "ba8d47ce84b927a19d28ace31aff9b36039f2fc2",
+      "bytes": 15099,
+      "family": "prompts",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/reason-model-map.md",
+      "blob": "facb236d4d9684bad9e7784585c1500c5010937a",
+      "bytes": 40253,
+      "family": "docs-root",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/references.md",
+      "blob": "7d195b0f195242be7b928fef772f13747d3a9c3e",
+      "bytes": 8696,
+      "family": "docs-root",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/shadow-clock-gearing.html",
+      "blob": "d2d62ac38ce8011a49cb6765270812bef84ae823",
+      "bytes": 70706,
+      "family": "docs-root",
+      "extension": ".html"
+    },
+    {
+      "path": "docs/staking-the-workspace.md",
+      "blob": "f9a30e08a258d3f782e6f3a23b0b582ec051b9cd",
+      "bytes": 5961,
+      "family": "docs-root",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/systems-manifest-ascii-pass-1-plan.md",
+      "blob": "7a2f98d995a5ccedaeba46662a3df0c40ce42aeb",
+      "bytes": 3349,
+      "family": "docs-root",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/systems-manifest-ascii-pass-10-plan.md",
+      "blob": "31efdec7f661cf42bdefaf25407549ad4a490774",
+      "bytes": 21859,
+      "family": "docs-root",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/systems-manifest-ascii-pass-11-plan.md",
+      "blob": "e87f886d9675ae4427166b6b27dac5dfc5e9fa12",
+      "bytes": 24275,
+      "family": "docs-root",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/systems-manifest-ascii-pass-12-plan.md",
+      "blob": "482270334cbdf970540e75a63d8fc94ad5d2fc60",
+      "bytes": 31019,
+      "family": "docs-root",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/systems-manifest-ascii-pass-13-plan.md",
+      "blob": "46b24774834fd9840cfd3d6aef71797d0165c8a9",
+      "bytes": 17209,
+      "family": "docs-root",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/systems-manifest-ascii-pass-14-plan.md",
+      "blob": "569ccd30ae19bbb6091fbea891af64d8c4200407",
+      "bytes": 19425,
+      "family": "docs-root",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/systems-manifest-ascii-pass-15-plan.md",
+      "blob": "6b679795cf4b740d13c2cf5285b06fa6823727a5",
+      "bytes": 22955,
+      "family": "docs-root",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/systems-manifest-ascii-pass-16-plan.md",
+      "blob": "f4a0a22b5f7c560b5585054b9f2a1813ca30ec7d",
+      "bytes": 26497,
+      "family": "docs-root",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/systems-manifest-ascii-pass-17-plan.md",
+      "blob": "fde179dbf0a494769be09d7320987f3581d984d6",
+      "bytes": 32373,
+      "family": "docs-root",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/systems-manifest-ascii-pass-18-plan.md",
+      "blob": "32c7bfacd8e2f5c5bd4e0c0c3d3bd8b39076a778",
+      "bytes": 43778,
+      "family": "docs-root",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/systems-manifest-ascii-pass-19-plan.md",
+      "blob": "9b30e672e91c2b43edfa45536abade911eff0212",
+      "bytes": 28776,
+      "family": "docs-root",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/systems-manifest-ascii-pass-2-plan.md",
+      "blob": "da3faef8b6726161b8f89fb894ed755ccfaa9a7c",
+      "bytes": 2214,
+      "family": "docs-root",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/systems-manifest-ascii-pass-20-plan.md",
+      "blob": "49f02f2d79ff9daeb076a7558ec01ee532b59aff",
+      "bytes": 33420,
+      "family": "docs-root",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/systems-manifest-ascii-pass-21-plan.md",
+      "blob": "82b0b8ca90f6fae0cbef7e3e52a71e92d66f38f0",
+      "bytes": 26277,
+      "family": "docs-root",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/systems-manifest-ascii-pass-22-plan.md",
+      "blob": "e9798cc76ed20940ea3579c42a55b9345b64faca",
+      "bytes": 34462,
+      "family": "docs-root",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/systems-manifest-ascii-pass-23-plan.md",
+      "blob": "275f9dfd45fe6857385224fcda1490876de3cea9",
+      "bytes": 40080,
+      "family": "docs-root",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/systems-manifest-ascii-pass-24-plan.md",
+      "blob": "d02c961a8bc17a0421680570dc427dc3bf9dda95",
+      "bytes": 41011,
+      "family": "docs-root",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/systems-manifest-ascii-pass-25-plan.md",
+      "blob": "b59f2e53e753fb3d282075e5e7fe5a79a2b63421",
+      "bytes": 53773,
+      "family": "docs-root",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/systems-manifest-ascii-pass-3-plan.md",
+      "blob": "3f7bf13641e641d3902108f1df6a2e8509c4a900",
+      "bytes": 1720,
+      "family": "docs-root",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/systems-manifest-ascii-pass-4-plan.md",
+      "blob": "8181d272a9981561aa681a5d0be8c4a26ff7291b",
+      "bytes": 2130,
+      "family": "docs-root",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/systems-manifest-ascii-pass-5-plan.md",
+      "blob": "f2181e4280857aed844791a08aa6f97cb465ef69",
+      "bytes": 2923,
+      "family": "docs-root",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/systems-manifest-ascii-pass-6-plan.md",
+      "blob": "bd7144d546dd56c91b35c5335b0056ed3017ec00",
+      "bytes": 2387,
+      "family": "docs-root",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/systems-manifest-ascii-pass-7-plan.md",
+      "blob": "7e22a2dc0faf2b6b14de6cec05e451f82c603429",
+      "bytes": 10040,
+      "family": "docs-root",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/systems-manifest-ascii-pass-8-plan.md",
+      "blob": "13d61be124e37e2d5e5ff4095d53155c180468e9",
+      "bytes": 13415,
+      "family": "docs-root",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/systems-manifest-ascii-pass-9-plan.md",
+      "blob": "71624e9eac00cc02b7c0e564edd6aac401d2007f",
+      "bytes": 16536,
+      "family": "docs-root",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/systems-manifest-ascii.md",
+      "blob": "3d39f5378cf0201c90e0b54e3a1d8c4a04e98e23",
+      "bytes": 261031,
+      "family": "docs-root",
+      "extension": ".md"
+    },
+    {
+      "path": "docs/systems-manifest.md",
+      "blob": "01587dbe3f894812dc11c72436003cf0d46cf277",
+      "bytes": 46647,
+      "family": "docs-root",
+      "extension": ".md"
+    }
+  ],
+  "scope": "Tracked-path and blob census at the pinned base; inclusion is not a semantic review, proof, acceptance, or runtime test."
+}

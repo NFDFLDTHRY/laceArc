@@ -6,7 +6,7 @@
 **Pinned main:** `b69495497d0c6eddc978a9d8f17812a7dde6ed3d`.  
 **Emission / Φ:** `[GAP]`. No `src/`.
 
-**Authority:** Graphic D PNG → Pass 2 model → systems-manifest Pieces 4–5, 7, 11 → [pointer-emission.md](pointer-emission.md) (questions only) → [atomic-primitives-map.md](atomic-primitives-map.md) §3 as specimen aid (`[PROPOSAL]` — not elevated) → this transcript (lowest).
+**Source roles:** Graphics A–D are the source of record, with Graphic D the witness here; the manifest is derived from them. AGENTS / live law govern permitted work. **Reading dependencies:** Pass 2 model; manifest Pieces 4–5, 7, 11; [pointer-emission.md](pointer-emission.md), retaining its closed constraints and unresolved questions; [atomic-primitives-map.md](atomic-primitives-map.md) §3 as a proposed specimen aid. This transcript and those derivative aids neither outrank the sources nor establish acceptance.
 
 Steward line: *Shoe in hands. D1 is a specimen on the table, not a machine that writes the next stitch.*
 
@@ -117,7 +117,7 @@ These support Pass 2’s forbidden set (no rewrite; no collapse of occurrences).
 | **Q1** When is a POINTER appended? | **No.** D1 shows POINTERs interleaved with WORDs; it does not state the observable condition for writing one. |
 | **Q2** What is the arity? | **No.** Binary drawings are illustrative (Pass 2 S1/S4; emission Q2). |
 | **Q3** Do adjacent WORDs already constitute a relation? | **No.** 0000–0001 sit adjacent and a POINTER also appears at 0002; the specimen does not say adjacency alone is / is not enough. |
-| **Q4** POINTER→POINTER / WORD-only / proof of earlier? | **Partial.** Backward same-line refs hold in the table; generality of POINTER→POINTER as law stays open even though 0007/0009/0010 exhibit it. |
+| **Q4** POINTER→POINTER / WORD-only / proof of earlier? | **Current qualification:** Q4 closes permission for POINTER→POINTER and rejects WORD-only targeting, supported by D3/D6. Rows 0007/0009/0010 witness that permission. They do not supply an admission proof procedure or decide when such participation is required. |
 | **Q5** Does a later star pass require a POINTER? | **No.** 0003 is a later PIE WORD; whether a POINTER was *required* for that pass is unanswered. |
 
 ---
