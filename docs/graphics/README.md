@@ -21,6 +21,8 @@ Iteration law + queue: [`ascii-iterations.md`](ascii-iterations.md). Iteration 1
 
 Prefix-device: [pass 1](prefix-device-pass-1.md) lens. [pass 2](prefix-device-pass-2.md) collisions. [pass 3](prefix-device-pass-3.md) Q0 opened. [pass 4](prefix-device-pass-4.md) nuance map. [pass 5](prefix-device-pass-5.md) Φ-morphism. [pass 6](prefix-device-pass-6.md) algebra fidelity. Do not replace the PNGs. Do not fill G2. Do not stamp SPOKEN from the map.
 
+Historical [pass 7 receipt](prefix-device-pass-7.md): campaign Answer lines were recorded as SPOKEN. Their exact human-source custody remains unresolved in the [five-location register](../plans/repo-update-pass-1-evidence.md#6-spoken-answer-custody-register). This receipt supplies no acceptance and does not open another graphics iteration.
+
 Hologram touches (not this directory): `docs/hologram/`. Those diagnose the holder. They are not a fifth graphic.
 
 ## Format
