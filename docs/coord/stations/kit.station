@@ -1,7 +1,7 @@
-STATUS: HELD
+STATUS: FREE
 STATION: kit
 OWNS: docs/kit/** .claude/**
-AGENT: Claude-Fable-reduction
-BASE: e2e8155942b6ef084d2ef9f4a05fcf8fb1dd829f
-SINCE: 2026-09-20T05:37:52Z
+AGENT: -
+BASE: -
+SINCE: -
 NOTE: Live-law door CLOSED 6/6. Kit FREE. Pair human. Not door #5. Φ [GAP].
