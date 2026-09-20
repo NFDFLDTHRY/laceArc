@@ -635,7 +635,6 @@ A later book can reopen the map. It cannot be reopened from the five texts alrea
 
 ## Related Shadow hologram
 
-Philosophical altitudes {A,B,C} (HCC-A, Coffee Cup, Where the Water Is Loud) are forged as a holder clock in [`docs/clock/shadow-clock-hologram.md`](clock/shadow-clock-hologram.md). That file traces every gear to the great contract boundary. It is not a sixth graphic and does not fill pointer-emission.
+HCC-A, Coffee Cup, and Where the Water Is Loud are conceptual reference documents. [`docs/clock/shadow-clock-hologram.md`](clock/shadow-clock-hologram.md) retains the repository's earlier clock interpretation of their concepts. The [human correction of 2026-09-20](law-why-these-documents.md#conceptual-reference-documents) supersedes its classification as required holder machinery. The diagram establishes no runtime dependency and does not fill pointer emission.
 
 Agents directed to contract-walk the hologram use [`docs/clock/shadow-clock-agent-brief.md`](clock/shadow-clock-agent-brief.md).
-

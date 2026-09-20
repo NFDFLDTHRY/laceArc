@@ -1,10 +1,12 @@
 # System Mathematical Model — Lace Hands + Shadow Clock
 
-**Status:** Formal dual-universe specification derived from Hands and Shadow contracts. Not Core executable code. Not a sixth graphic.  
+**Conceptual-reference status, corrected 2026-09-20:** HCC-A, The Coffee Cup, and Where the Water Is Loud are conceptual reference documents. The [human correction](../law-why-these-documents.md#conceptual-reference-documents) supersedes their classification as required holder machinery. This file retains an analysis of their concepts; H/C/W or A/B/C gears, states, ratios, and contracts are interpretive notation. They establish no required LaceArc components, runtime dependencies, or conditions for legal append. Historical readings remain recorded at their original evidence strength.
+
+**Status:** Formal conceptual interpretation derived from Hands and earlier Shadow readings. The second mathematical universe models reference concepts, not a required second subsystem. Not Core executable code. Not a sixth graphic.
 **Primary derivation:** `docs/clock/shadow-clock-gear-contracts.md` (walks 1–7).  
 **Hands authority:** Graphic D (`docs/graphics/`), `docs/systems-manifest.md` Contracts I–III.  
 **Shadow companions:** `docs/clock/shadow-clock-hologram.md`, `docs/staking-the-workspace.md`, `docs/law-why-these-documents.md`.  
-**Hard law:** POINTER emission remains \([GAP]\). Shadow \(\{A,B,C\}\) is the HOLDER machine, not Lace Core rows. Hands win over Shadow on conflict. No `src/` is implied by this document.
+**Hard law:** POINTER emission remains \([GAP]\). Shadow \(\{A,B,C\}\) is interpretive notation for concepts from the reference documents, not required holder machinery or Lace Core rows. Hands win over Shadow on conflict. No `src/` is implied by this document.
 
 ---
 
@@ -25,7 +27,7 @@ It is **not** complete as a Core executable. The governing step that would turn 
 We work in two disjoint universes of state.
 
 - **Hands universe** \(\mathcal{H}\). Objects of Lace Core (Contract I), thin Arrival (Contract II), and read-only Projection (Contract III). The only persistent store in \(\mathcal{H}\) is the append-only array \(L\) of Graphic D.
-- **Shadow universe** \(\mathcal{S}\). Objects of the holder machine \(\{A,B,C\}\) (HCC-A / Coffee Cup / Water) as contracted in gear-contracts walks 1–6. Story ledger, meaning, emotion, identity, OBS/DELTA talk types, and trajectory windows live in \(\mathcal{S}\) only.
+- **Shadow universe** \(\mathcal{S}\). Mathematical objects used to interpret concepts from HCC-A / Coffee Cup / Water in gear-contracts walks 1–6. Story ledger, meaning, emotion, identity, OBS/DELTA talk types, and trajectory windows are concepts represented in this analysis. Defining \(\mathcal{S}\) does not require an implemented holder subsystem.
 
 The wall morphism is deliberately **not** an embedding of Shadow into Hands:
 

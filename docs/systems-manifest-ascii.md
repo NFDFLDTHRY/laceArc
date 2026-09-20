@@ -124,11 +124,12 @@ Emission remains `[GAP]`.
   G2  POINTER when / arity / adjacency     = [GAP]
       (Hands silent. This diagram does not fill it.)
 
-  holder train H × C × W
+  conceptual references: HCC-A / Coffee Cup / Water
       docs/clock/train-h-c-w-systems-manifest.md
-      required to *operate upon* I
-      ZERO state in L
-      not drawn inside the Core box
+      earlier H × C × W train = conceptual interpretation
+      required-holder-machine classification SUPERSEDED (2026-09-20)
+      no required component, runtime dependency, or append condition
+      no reference-document state in L
 ```
 
 ---
@@ -190,8 +191,7 @@ Layer III also hosts a **cite-only** Shadow SOURCE MACHINERY inventory (pass 7):
 
 ## Fence
 
-HCC π, Cup C*, Water OBS/DELTA/UNK/INVALID do not appear inside I.  
-They diagnose and time the holder. They do not grow Graphic D.
+HCC π, Cup C*, Water OBS/DELTA/UNK/INVALID name concepts in reference documents and their interpretations. They do not appear inside I or establish a required holder machine. The [human correction of 2026-09-20](law-why-these-documents.md#conceptual-reference-documents) supersedes the required-train classification throughout the earlier passes retained below. Their dated findings remain evidence of those readings, not authority to restore that dependency.
 
 ---
 
@@ -542,7 +542,7 @@ W pallet : tape = 0 or 1 lives on the **train** file. Not Piece 16.
 
 ## Two clocks, one workpiece (pass 6)
 
-Holder train times the steward. Core clock counts appends. They mesh only as train “legal work.” Not redrawn here.
+The earlier holder train illustrates concepts of timing and communication. It does not time an established subsystem or impose “legal work” conditions. The independent Core clock counts legal appends. The required-train reading of this pass is superseded by the 2026-09-20 human correction.
 
 ## Pass 6 deltas
 

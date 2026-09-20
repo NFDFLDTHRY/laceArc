@@ -36,7 +36,7 @@ Joint readiness: **READY-PARTIAL ∧ BLOCKED-COMPLETE**.
 
 ### S1.1 Universe
 
-Work in the **Hands** universe only. The sole persistent carrier is Graphic D’s append-only line. Holder / Shadow machinery (H×C×W and kin) may operate *upon* Lace; they contribute **zero** rows to the store ([AGENTS](../AGENTS.md); ASCII Core fence).
+Work in the **Hands** universe only. The sole persistent carrier is Graphic D’s append-only line. HCC-A, Coffee Cup, and Water are conceptual reference documents; the H×C×W diagrams interpret their concepts and establish no required holder machinery. Their conceptual model states introduce no Core rows or row types ([human correction](law-why-these-documents.md#conceptual-reference-documents); ASCII Core fence).
 
 ### S1.2 State
 

@@ -4,6 +4,7 @@
 
 | File | Job |
 |---|---|
+| [conceptual-reference-reconciliation.md](conceptual-reference-reconciliation.md) | Human classification correction, 2026-09-20: HCC-A, Coffee Cup, and Water are conceptual reference documents; required-holder-machinery interpretation superseded |
 | [math-execution-wasm-crosswalk-pass-4-plan.md](math-execution-wasm-crosswalk-pass-4-plan.md) | `[PLAN]` Pass 4: Contract I–III **seam / projection atlas** → `math-execution-wasm-crosswalk-pass-4-seams.md` *(not yet written — pass 4's output; linked when it lands)* (execute later); Φ `[GAP]`; bridge blocked |
 | [math-execution-wasm-crosswalk-pass-3-adversarial.md](math-execution-wasm-crosswalk-pass-3-adversarial.md) | **EXECUTED** math-execution × WASM Pass 3 **adversarial misreadings** (W01–W15); Φ `[GAP]`; BLOCKED-BRIDGE-COMPLETE retained; not an emitter |
 | [math-execution-wasm-crosswalk-pass-3-plan.md](math-execution-wasm-crosswalk-pass-3-plan.md) | `[PLAN]` Pass 3 (executed): adversarial catalog → [`math-execution-wasm-crosswalk-pass-3-adversarial.md`](math-execution-wasm-crosswalk-pass-3-adversarial.md); Φ `[GAP]`; bridge blocked; supersedes plan PR #18 |
