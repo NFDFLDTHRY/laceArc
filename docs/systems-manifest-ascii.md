@@ -2,7 +2,7 @@
 
 **Not the manifest.** [`systems-manifest.md`](systems-manifest.md) is the Hands contract map; this is an ASCII reading of it and settles nothing it does not.
 
-**Executed passes:** [1](systems-manifest-ascii-pass-1-plan.md) · [2](systems-manifest-ascii-pass-2-plan.md) · [3](systems-manifest-ascii-pass-3-plan.md) · [4](systems-manifest-ascii-pass-4-plan.md) · [5](systems-manifest-ascii-pass-5-plan.md) · [6](systems-manifest-ascii-pass-6-plan.md) · [7](systems-manifest-ascii-pass-7-plan.md) · [8](systems-manifest-ascii-pass-8-plan.md) · [9](systems-manifest-ascii-pass-9-plan.md) · [10](systems-manifest-ascii-pass-10-plan.md) · [11](systems-manifest-ascii-pass-11-plan.md) · [12](systems-manifest-ascii-pass-12-plan.md) · [13](systems-manifest-ascii-pass-13-plan.md) · [14](systems-manifest-ascii-pass-14-plan.md) · [15](systems-manifest-ascii-pass-15-plan.md) · [16](systems-manifest-ascii-pass-16-plan.md) · [17](systems-manifest-ascii-pass-17-plan.md) · [18](systems-manifest-ascii-pass-18-plan.md) · [19](systems-manifest-ascii-pass-19-plan.md) · [20](systems-manifest-ascii-pass-20-plan.md) · [21](systems-manifest-ascii-pass-21-plan.md) · [22](systems-manifest-ascii-pass-22-plan.md) · [23](systems-manifest-ascii-pass-23-plan.md) · [24](systems-manifest-ascii-pass-24-plan.md) · [25](systems-manifest-ascii-pass-25-plan.md). A new pass is linked here once it is executed.
+**Executed passes:** [1](systems-manifest-ascii-pass-1-plan.md) · [2](systems-manifest-ascii-pass-2-plan.md) · [3](systems-manifest-ascii-pass-3-plan.md) · [4](systems-manifest-ascii-pass-4-plan.md) · [5](systems-manifest-ascii-pass-5-plan.md) · [6](systems-manifest-ascii-pass-6-plan.md) · [7](systems-manifest-ascii-pass-7-plan.md) · [8](systems-manifest-ascii-pass-8-plan.md) · [9](systems-manifest-ascii-pass-9-plan.md) · [10](systems-manifest-ascii-pass-10-plan.md) · [11](systems-manifest-ascii-pass-11-plan.md) · [12](systems-manifest-ascii-pass-12-plan.md) · [13](systems-manifest-ascii-pass-13-plan.md) · [14](systems-manifest-ascii-pass-14-plan.md) · [15](systems-manifest-ascii-pass-15-plan.md) · [16](systems-manifest-ascii-pass-16-plan.md) · [17](systems-manifest-ascii-pass-17-plan.md) · [18](systems-manifest-ascii-pass-18-plan.md) · [19](systems-manifest-ascii-pass-19-plan.md) · [20](systems-manifest-ascii-pass-20-plan.md) · [21](systems-manifest-ascii-pass-21-plan.md) · [22](systems-manifest-ascii-pass-22-plan.md) · [23](systems-manifest-ascii-pass-23-plan.md) · [24](systems-manifest-ascii-pass-24-plan.md) · [25](systems-manifest-ascii-pass-25-plan.md) · [26](plans/lace-context-iter6-pass-3-findings.md). A new pass is linked here once it is executed.
 
 **Authority:** `docs/systems-manifest.md`. Companion, not a replacement.  
 **Hands:** Graphics A–D. Shoe in hands.  
@@ -13,6 +13,8 @@ Emission remains `[GAP]`.
 **Update wave · Iteration 2:** Pass **13** = Iteration-2 Pass **1** · **delta admission**. Pass **14** = Iteration-2 Pass **2** · **leftovers / FM audit / coherence**. Pass **15** = Iteration-2 Pass **3** · **kit-door / Iter2 delta mechanism mesh**. Pass **16** = Iteration-2 Pass **4** · **mechanism↔ASCII rigor map** (**P16-X**; mirror Pass 10 / Update-wave Pass 4 P4-X spirit). Pass **17** = Iteration-2 Pass **5** · **Shadow Order Proposal** (**P17-P**; light **P17-X**; mirror Pass 11 / Update-wave Pass 5 P5-X/O/P/R spirit · Iter2 kit-door steward beside **P11-P**). Pass **18** = Iteration-2 Pass **6** · **DIAGRAM SOUND** (**P18-A** / **P18-P** / **P18-X** / **P18-F/O** / **P18-R**; mirror Pass 12 / Update-wave Pass 6 P6-A/P/X/F/O/R spirit · whole companion Iter1+Iter2). Iteration **1** = linear Passes **7–12** (tip **DIAGRAM SOUND WITH OPENS**; **P10-X** / **P12-X** stand; **P11-P** stands for G-III). G2 / Φ stay `[GAP]`.
 
 **Update wave · Iteration 3:** Pass **19** = Iteration-3 Pass **1** · **delta admission + mechanism/systems-level Δ map** (quiet-door **#6** NEW OPEN/cite · OPEN-with-cause (hologram CLOSED pin `f568275`) · #1/#3 OPEN-with-cause refresh · #4 leftover / #5 note-only cite-check · nine shelves reconfirm; station → disposition → systems slot; **no invent G-KD-6 Core**). Pass **20** = Iteration-3 Pass **1 completion** / **1b** · **interaction contracts map** (**P20-X**; mirror Pass 10 / Pass 16 rigor spirit · retargeted to who may read / write / cite / participate under Contracts I / II / Layer III · IX-* edges · KEEP·FORBID·MAP; Pass 19 Δ board retained; **no invent G-KD-4/5/6/7 Core**; no quiet-door→I). Pass **21** = Iteration-3 Pass **2** · **leftovers / FM audit / Iter3 coherence** (mirror Pass 14 / Pass 8 shape; #4 leftover OPEN · #5 note-only · #6 OPEN/cite honesty · #7 note-only · nine shelves · post-P20 thin drift; quiet-door≠Core · hologram CLOSED≠Core close · #6≠Core clock · Orders NON-binding · III↛I; Iter3 D1–D6; Pass 19/20 retained; Pass 18 **DIAGRAM SOUND WITH OPENS** retained). Pass **22** = Iteration-3 Pass **3** · **Iter3 delta / mechanism mesh** (thin **G-KD-6** cite-card adjunct beside G-KD · **not** Core invent · G-KD-1/3 CONFIRM pointer · **P22-M** · cross-walk; #4 leftover · #5/#7 note-only honesty; retained P15-M / P9-M / G-III / IX-*; Pass 19–21 retained; Pass 18 **DIAGRAM SOUND WITH OPENS** retained). Pass **23** = Iteration-3 Pass **4** · **mechanism↔ASCII rigor map** (**P23-X**; mirror Pass 16 / Pass 10 P4-X / P16-X spirit · Iter3 retarget; G-KD-6 cite-card CONFIRM · P22-M map · IX-* retained; thin Core CONFIRM to **P10-X**/**P12-X**/**P16-X**; #4 leftover · #5/#7 note-only; no invent G-KD-6 Core / G-KD-4/5/7; Pass 18–22 retained; G2/Φ `[GAP]`). Pass **24** = Iteration-3 Pass **5** · **Shadow Order Proposal** (**P24-P**; light **P24-X**; mirror Pass 17 / Pass 11 P5-X/O/P/R spirit · Iter3 surfaces steward beside **P11-P** + **P17-P**; G-KD-6 cite · IX-* · #4 leftover · #5/#7 note-only · #6 OPEN-with-cause · Piece 13 dual · Hands A–D; no invent G-KD-4/5/6-Core/7; Pass 18–23 retained; G2/Φ `[GAP]`). Pass **25** = Iteration-3 Pass **6** · **DIAGRAM SOUND** (**P25-A** / **P25-P** / **P25-X** / **P25-F/O** / **P25-R**; mirror Pass 18 / Pass 12 P6-A/P/X/F/O/R spirit · whole companion Iter1+Iter2+Iter3 + all three Order Proposals; cite Pass 18 tip; do not redo from scratch; #4 leftover · #5/#7 note-only · #6 OPEN-with-cause · #8 note-only cite; no invent G-KD-4/5/6-Core/7/8; no soft FORBID; G2/Φ `[GAP]`). Iteration **2** = linear Passes **13–18** (tip **DIAGRAM SOUND WITH OPENS**; #4 leftover · #5 note-only stay honest). Iteration **1** = linear Passes **7–12** (tip **DIAGRAM SOUND WITH OPENS**). G2 / Φ stay `[GAP]`.
+
+**Update wave · Iteration 4:** Pass **26** = Iteration-4 Pass **1** · **delta admission** (iteration 6 of the verification programme, convened by the human 2026-09-19 as *personal-context alignment and the shape of the crate*; Δ-Occ CONFIRM · Δ-Law OPEN **#13** · Δ-Target **G-III-4a** adjunct · Δ-Carry **F-Carry** note · Δ-Mem note-only · Δ-Shape reserved for the pass 6 receipt; no invent Φ · no fill G2 · no tenth shelf · no Core redraw). Pass 25 **DIAGRAM SOUND WITH OPENS** tip extended, not redone. G2 / Φ stay `[GAP]`.
 
 ---
 
@@ -177,6 +179,8 @@ Layer III also hosts a **cite-only** Shadow SOURCE MACHINERY inventory (pass 7):
 **Pass 24 pointer:** Iteration-3 Pass **5** **Shadow Order Proposal** (**P24-P**) + light **P24-X** reconfirm of **P23-X** → sections after Pass 23. NON-binding · FORBID-as-Core-write · PROPOSAL-only; Iter3 surfaces steward **beside** Pass 11 **P11-P** (G-III stands) **and** Pass 17 **P17-P** (Iter2 kit-door stands); G-KD-6 cite adjunct · IX-* · #4 leftover OPEN · #5/#7 note-only · #6 OPEN-with-cause · Piece 13 dual · Hands A–D; no invent G-KD-4/5/6-Core/7; no quiet-door→I; Pass 18 **DIAGRAM SOUND WITH OPENS** + Pass 19–23 retained; G2 / Φ `[GAP]`. Whole-companion DIAGRAM SOUND → **P25-A** / **P25-P** / **P25-X** / **P25-R** (pass 25).
 
 **Pass 25 pointer:** Iteration-3 Pass **6** **DIAGRAM SOUND** audit (**P25-A** / **P25-P** / **P25-X** / **P25-F/O** / **P25-R**) → sections after Pass 24. Whole companion (Iter1 Core/Layer III + Iter2 kit-door + Iter3 surfaces + **all three** Order Proposals) as one systems diagram; extends Pass 18 tip (do not redo from scratch); #4 leftover may stay OPEN · #5/#7 note-only · #6 OPEN-with-cause · #8 gearing **CLOSED** 6/6 pin **`7ed7b29`** · companion **note-only** / no invent G-KD-8; no invent G-KD-4/5/6-Core/7/8; no soft FORBID to force SOUND; no quiet-door→I; G2 / Φ `[GAP]`.
+
+**Pass 26 pointer:** Iteration-4 Pass **1** **delta admission** (Δ-Occ · Δ-Law · Δ-Target · Δ-Carry · Δ-Mem · Δ-Shape reserved) → section after Pass 25. Outside Contract I except **C-Hands-Occ**, which CONFIRMs the Spine star line from A13 · B12.2 · C12.2 · C10.2 and changes nothing; OPEN **#13** added to the Open board (law station · human docket); **G-III-4a** target-fact adjunct beside G-III-4 (cite-only · `UNESTABLISHED` on device); **F-Carry** fidelity note on the G-III-4 fence; memory findings note-only / quarantined / `[PROPOSAL]`; no quiet-door→I; no soft-close of OPENS; Pass 25 **DIAGRAM SOUND WITH OPENS** retained; G2 / Φ `[GAP]`. Record: [`plans/lace-context-iter6-pass-3-findings.md`](plans/lace-context-iter6-pass-3-findings.md).
 
 ---
 
@@ -2623,3 +2627,78 @@ Pass 24 refuse still stands (includes Pass 23 / 22 / 21 / 20 / 19 / 18 / 17 / 16
 ### Pass 18 + Pass 19–24 retained (T5)
 
 Pass 18 verdict **DIAGRAM SOUND WITH OPENS** stands as Iteration-2 tip. Pass 12 **DIAGRAM SOUND WITH OPENS** stands as Iteration-1 tip. Pass 19 Δ / systems-slot · Pass 20 IX-*/**P20-X** · Pass 21 leftovers/D · Pass 22 G-KD-6 / **P22-M** · Pass 23 **P23-X** · Pass 24 **P24-P** / **P24-X** / **P24-O** stand as Iteration-3 Pass 1–5 baseline. Pass 11 **P11-P** stands for G-III; Pass 17 **P17-P** stands for Iter2 kit-door; Pass 24 **P24-P** stands for Iter3 surfaces. This pass **extends** with whole-companion DIAGRAM SOUND; it does **not** replace Pass 19–24 boards and does **not** soft-close OPENS (#4 leftover · #5 note-only · #6 OPEN/cite · #7 note-only · #8 note-only stay honest — #8 tip cite refreshed to CLOSED/`7ed7b29`). G2 / emission Φ remain **`[GAP]`**.
+
+## Δ admission board (pass 26 · Iteration-4 Pass 1)
+
+Update wave · **Iteration 4 · Pass 1** (linear Pass **26**). After Pass 25 **DIAGRAM SOUND WITH OPENS**. Delta admission only — mirror Pass 13 / Pass 19 shape. **Not** a redo of Pass 25. Source of the deltas: [iteration 6](plans/lace-context-iteration-6-plan.md) passes [1](plans/lace-context-iter6-pass-1-findings.md) · [2](plans/lace-context-iter6-pass-2-findings.md) · [3](plans/lace-context-iter6-pass-3-findings.md).
+
+| Δ | Station of origin | Disposition | Systems slot | Core? |
+|---|---|---|---|---|
+| **Δ-Occ** | graphics (read, not edited) | **CONFIRM** | Spine · star line · new **C-Hands-Occ** row below | confirms I · changes nothing |
+| **Δ-Law** | law (docket) · maps (record) | **OPEN #13** | Open board · law note | no |
+| **Δ-Target** | maps (record) · clipboards (cite) | **cite-card adjunct G-III-4a** | G-III inventory · Parameters | no · Layer III |
+| **Δ-Carry** | maps | **F-Carry** fidelity note | Fence | no · reading |
+| **Δ-Mem** | maps | **note-only** | Leftovers | no · `[PROPOSAL]` |
+| **Δ-Shape** | maps | **reserved** → pass 6 receipt | Contract map thin `[PLAN]` pointer, later | no · `[PLAN]` |
+
+### C-Hands-Occ — CONFIRM (pass 26)
+
+The Spine line *star = passes of the same word (formation / view)* and Piece 4's *later occurrences are additional WORD entries at new indices* are stated at governing-rule level in three of the four graphics, verbatim from the PNGs (`VISUALLY_OBSERVED` 2026-09-19):
+
+| Panel | Verbatim | Confirms |
+|---|---|---|
+| **A13** | *"Every word occurrence preserved"* | Piece 4 · D5 · Spine star line |
+| **B12** rule 2 | *"Every occurrence is kept (no deletions, no edits)"* | same |
+| **C12** rule 2 | *"Every word occurrence is kept (no deletions, no edits)"* | same |
+| **C10** bullet 2 | *"Every word occurrence is preserved as another segment"* — and C10 **draws** *the* three times as three beads in one sentence | same |
+
+Nothing on the Spine changes. What changes is that a campaign sentence saying *a second WORD row is not required* now stands against four governing-rule statements and a drawn counterexample, not one D1 row. The CONFLICT lives on `pointer-emission.md` (law); this row is the companion's cite.
+
+### OPEN #13 — added to the Open board (pass 26)
+
+| # | Open | Stamp |
+|---|---|---|
+| 13 | the four `SPOKEN (campaign)` stamps on emission Q0 / Q1 / Q5 / slot II: the campaign's own speak-sheet (`fd3f8b9`) was never filled; pass 5 / 6 receipts say *Not SPOKEN*; pass 7 (`662ccc2`) stamped them anyway; the human's memory record holds **no** corroboration in laceArc vocabulary | **OPEN-with-cause** · law · human docket |
+
+Beside **#5** (concurrency): on the G-III-4 install host `crossOriginIsolated` is `false` → single-threaded module → one writer **by target circumstance**. Not a Core ruling; #5 stays `[GAP]`.
+
+### G-III-4a — target-fact adjunct (pass 26 · cite-only · not Core · not a tenth shelf)
+
+| Fact | Strength | Cite |
+|---|---|---|
+| `wasm64-unknown-unknown` is Rust **Tier 3**; no prebuilt `core`; nightly + `-Zbuild-std`; maintainer: *not a stable target*; LLVM-bug warning | SOURCE (web) `OBSERVED` 2026-09-19 | pass 2 T1–T4 · attachment **A1** requested |
+| Chrome shipped **Memory64 in M133, incl. Android** | SOURCE (web) `OBSERVED` | pass 2 T6 · **A2** requested |
+| JS-API memory cap **16 GB**; memory64 **10–100%+ slower** (explicit bounds checks) | SOURCE (web, secondary) `OBSERVED` | pass 2 T7–T8 · **A2/A3** requested |
+| Spec 3.0 §2.3.11 `addrtype ::= i32 \| i64` | SOURCE (clipboard) | wasm-spec-3 P-T4 (already staked) |
+| Target sealed as wasm64 by human correction | SPOKEN in-repo | wasm-spec-3 banner |
+| **Practical wasm64 scale on the Pixel 9a: `UNESTABLISHED`** | the human's V17 verdict | pass 2 T15 · probe **P-64b** `NOT_RUN` |
+
+**Parameters that are not G2 — growth bound, target sentence added:** Core: *unbounded; no pruning* (unchanged). **Target (G-III-4):** the supported domain of any finite build is ≤ the linear-memory ceiling less the module's own needs, in whatever section encoding is later accepted; the number is the ceiling, the encoding is not chosen here. Two sentences; they do not merge.
+
+### F-Carry — fidelity note on the G-III-4 fence (pass 26)
+
+The fence *linear mem / table / stack ≠ L* forbids importing WASM store semantics as Lace semantics. It does **not** forbid the strand's bytes being **carried in** a sub-region of linear memory under a first-party append discipline. *Carried in* ≠ *is*. A later plan that says *the region carries L* has not said *linear memory is L*. If a later plan says the second thing, the fence bites.
+
+### Leftovers (pass 26)
+
+| Leftover | Stamp |
+|---|---|
+| Memory / conversation findings (iteration 6 pass 1) | **note-only** · `[PROPOSAL]` · older-lineage vocabulary (*tie · window · closed loop · block · Unit*) **quarantined** — never mapped onto WORD / POINTER / Φ · no cite-card · no shelf |
+| Attachments A1–A6 (iteration 6 pass 2) | **requested**, not staked · web rows stay `[BLOCKED]` as references until the human attaches |
+| #4 / #5 / #6 / #7 / #8 | as Pass 25 left them |
+| Machinery shelves | still **nine**. G-III-4a is an adjunct **beside** G-III-4, not a tenth |
+
+### Sealed refuse (pass 26 · honored)
+
+Pass 25 refuse still stands (includes Pass 24 … Pass 12 refuse), plus: **no memory / conversation item above `[PROPOSAL]`** anywhere on this companion; **no older-lineage term as a Core term**; **no G-III-4a as Core** (target facts are Layer III; *no Device / Queue / dispatch / WGSL / wasm64 / MLGraph as Core ops* retained); **no reading of F-Carry as "linear memory is L"**; **no edit to `pointer-emission.md` from this pass** (OPEN #13 is a note to law, not a fill); **no soft-close of #13** by re-stamping; **no tenth shelf** for memory or for unattached references; no invent Φ; no fill G2; no `src/`; no Core redraw of Pass 5/6 art; no rewrite of Passes 1–25 beyond thin pointers / executed-passes link / Iteration-4 banner / this Pass 26 section; no push unless human asks.
+
+## Pass 26 deltas
+
+| Ticket | Action |
+|---|---|
+| T1 | Δ admission board (six deltas · station → disposition → slot · Core? column all *no* except one CONFIRM) |
+| T2 | **C-Hands-Occ** CONFIRM row from four PNG-verbatim governing statements; Spine unchanged |
+| T3 | **OPEN #13** added (SPOKEN custody); #5 target-circumstance note; law station / human docket |
+| T4 | **G-III-4a** target adjunct (cite-only) · growth-bound target sentence · **F-Carry** fence note |
+| T5 | Leftovers: memory note-only / quarantined; A1–A6 requested; nine shelves; executed-passes +26; Iteration-4 banner; Pass 26 pointer; refuse honored; G2 `[GAP]`; Passes 7–25 / P11-P / P17-P / P24-P retained |
+| T6 | *reserved* — Δ-Shape thin `[PLAN]` pointer from the iteration 6 pass 6 receipt |
