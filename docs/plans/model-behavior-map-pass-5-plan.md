@@ -1,6 +1,6 @@
 # Model behaviors × equations — Pass 5 of 6 PLAN
 
-**Status:** **`PLAN`** · not executed. **Station:** maps (HELD `Grok-maps` · BASE `688cd14`).
+**Status:** **`EXECUTED`** 2026-09-20 · [`model-behavior-map-pass-5-params.md`](model-behavior-map-pass-5-params.md). **Station:** maps (`Grok-maps`).
 **Depends on:** passes 1–4 EXECUTED.
 **Emission:** `[GAP]`. No `src/`. Parameters stay parameters.
 
