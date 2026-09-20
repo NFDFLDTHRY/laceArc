@@ -4,7 +4,8 @@ Plans, proposals, executed pass records, and dated receipts share this shelf. Ea
 
 | File | Job |
 |---|---|
-| [seed-dictionary-map-pass-2-plan.md](seed-dictionary-map-pass-2-plan.md) | **`PLAN`** — seed-dictionary pass 2. L1-only prefix before Φ. Φ `[GAP]` |
+| [seed-dictionary-map-pass-2-prefix.md](seed-dictionary-map-pass-2-prefix.md) | **EXECUTED** seed-dictionary pass 2. WORD-only prefix. Unused ≠ wired. Φ `[GAP]` |
+| [seed-dictionary-map-pass-2-plan.md](seed-dictionary-map-pass-2-plan.md) | **`EXECUTED`** — pass 2 L1-only seed. Φ `[GAP]` |
 | [seed-dictionary-map-pass-1.md](seed-dictionary-map-pass-1.md) | **EXECUTED** seed-dictionary pass 1. Seed = L1 prefix. Wired-first ≠ Φ. Φ `[GAP]` |
 | [seed-dictionary-map-pass-1-plan.md](seed-dictionary-map-pass-1-plan.md) | **`EXECUTED`** — pass 1 dictionary seed. Φ `[GAP]` |
 | [miss-map-pass-5-q-theta.md](miss-map-pass-5-q-theta.md) | **EXECUTED** miss-map pass 5. Q × \(\theta\) ALIGNED. 0 values. Φ `[GAP]` |

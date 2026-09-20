@@ -1,6 +1,6 @@
 # Seed dictionary × model — Pass 2 of 6 PLAN
 
-**Status:** **`PLAN`** · not executed. **Station:** maps (HELD `Grok-maps` · BASE `a419290`).
+**Status:** **`EXECUTED`** 2026-09-20 · [`seed-dictionary-map-pass-2-prefix.md`](seed-dictionary-map-pass-2-prefix.md). **Station:** maps (`Grok-maps`).
 **Depends on:** [`seed-dictionary-map-pass-1.md`](seed-dictionary-map-pass-1.md).
 **Emission:** `[GAP]`. No `src/`. No word list loaded.
 
