@@ -4,6 +4,8 @@
 **Not accepted.** Not implemented. `src/` remains forbidden.  
 This file is the next honest artifact. It may be worked.
 
+**Φ-morphism** is stated in the section Φ — partial definition. **Φ-schedule** is Q1.
+
 Three rules used to be one sentence. That sentence was the blocker.
 
 | Rule | Still | Not |
@@ -18,23 +20,70 @@ Existence is not acceptance. A filled Answer line is not acceptance. Only the ac
 
 Under a live law claim:
 
-- **CLOSED** — picture or D1 already settles it (including a ruled-out candidate). Cite the panel. Not Φ invented.
+- **CLOSED** — picture or D1 already settles it (including a ruled-out candidate). Cite the panel. Not a schedule invented.
 - **SPOKEN** — the human wrote the sentence in-repo. Record it here. Still not accepted until they say accepted.
 - **CONFLICT** — two source-or-history readings, both kept visible. Do not pick a winner to soothe.
-- **`[GAP]`** — picture silent, human silent.
+- **`[GAP]`** — picture silent, human silent. On this file that mark now means **schedule**, not “Φ has no shape.”
 
 Do not silence the graphics with a default. Do not treat this draft as Core code.
 
 ## Authority
 
 - Four graphics in `docs/graphics/` (A–D) and `docs/systems-manifest.md` derived from them.
-- Prefix-device readings: [`graphics/prefix-device-pass-1.md`](graphics/prefix-device-pass-1.md), [`graphics/prefix-device-pass-2.md`](graphics/prefix-device-pass-2.md), [`graphics/prefix-device-pass-3.md`](graphics/prefix-device-pass-3.md). Nuance map (not SPOKEN): [`graphics/prefix-device-pass-4.md`](graphics/prefix-device-pass-4.md).
-- If the picture is silent → write `[GAP]`. Do not invent.
+- Prefix-device readings: [`graphics/prefix-device-pass-1.md`](graphics/prefix-device-pass-1.md), [`graphics/prefix-device-pass-2.md`](graphics/prefix-device-pass-2.md), [`graphics/prefix-device-pass-3.md`](graphics/prefix-device-pass-3.md). Nuance map (not SPOKEN): [`graphics/prefix-device-pass-4.md`](graphics/prefix-device-pass-4.md). Φ-morphism receipt: [`graphics/prefix-device-pass-5.md`](graphics/prefix-device-pass-5.md).
+- Partial algebra (Arrive defined; schedule not): [`math-execution-model.md`](math-execution-model.md).
+- If the picture is silent → write `[GAP]` on the schedule. Do not invent.
 - Stake PDFs, history recoveries, shadow-clock / gearing, crate maps, and “helpful” defaults are silenced for *invented* answers. They may be cited as CONFLICT when the repo already recorded one.
+
+## Φ — partial definition
+
+**Status:** morphism stated. Schedule not stated. Not accepted. Not SPOKEN.
+
+Two morphisms. Not one device.
+
+```text
+Arrive(v)  :  L  ↦  L 〈 (WORD, v)
+
+Φ          :  L × R  ↦  L 〈 (POINTER, r_1, …, r_k)
+             R = { r | 0 ≤ r < |L| }, k ≥ 1, each r_i ∈ R
+
+Φ-morphism = that append.
+Φ-schedule = the rule that chooses whether R is supplied
+             and which r_i. That rule is Q1.
+```
+
+Session lens “next cell = Φ of the prefix” is pass 4 option D. It is not this definition. `Arrive` is not merged into Φ.
+
+### CLOSED constraints on the morphism
+
+| Constraint | Cite |
+|---|---|
+| Append only, same line | D footer, D1 |
+| Kind is POINTER | D2 |
+| Refs name earlier indices on this line | Q4 |
+| A ref may be WORD or POINTER | Q4 |
+| POINTER→POINTER allowed | D6, Q4 |
+| First unseen v is Arrive, not Φ | Q0 |
+
+Arity k stays **CONFLICT** (Q2). Written here as k ≥ 1. Not promoted to k = 2.
+
+### CLOSED refusals on the schedule (not a when)
+
+| Refusal | Cite |
+|---|---|
+| Adjacency of WORDs does not fire Φ | Q3 |
+| Not one POINTER per WORD | Q1 |
+| Not every adjacent pair | Q1 |
+
+### Still the schedule
+
+Q1 Answer remains `[GAP]`. Pass 4 options A–D remain unpicked. Speak-sheet on [`graphics/prefix-device-pass-4.md`](graphics/prefix-device-pass-4.md) remains blank.
+
+---
 
 ## Required open questions (AGENTS.md)
 
-Entry admission is Q0. Pointer admission is Q1. They are not one question.
+Entry admission is Q0. Pointer admission is Q1. They are not one question. Q1 is Φ-schedule.
 
 ### 0. When is a WORD (entry) appended?
 
@@ -44,7 +93,7 @@ Entry admission is Q0. Pointer admission is Q1. They are not one question.
 - **What the picture does not settle:** Whether a later arrival of an already-present variable could be POINTER-only (session speech “do not save the original text”; pass 2 slot I still `[unspoken]`).
 - **Answer:** `[GAP]` for later-arrival kind. **CLOSED** that the first occurrence of a variable is a WORD. **CLOSED** intern (same as Q5: `0003` is a new WORD, not a count on `0000`).
 - **Stamp:** `[GAP]` + two CLOSED. Not accepted. Not SPOKEN.
-- **Bind:** Pass 2 Collision I. Pass 4 nuance map N1 options A–D and N3 two senses of don’t-save-text: [`graphics/prefix-device-pass-4.md`](graphics/prefix-device-pass-4.md). Map is not SPOKEN.
+- **Bind:** Pass 2 Collision I. Pass 4 N1 A–D and N3. Pass 5: first unseen v is Arrive, not Φ-morphism.
 
 ### 1. When is a POINTER appended?
 
@@ -52,10 +101,10 @@ Entry admission is Q0. Pointer admission is Q1. They are not one question.
 - **Graphic / Piece cited:** Graphic D (D1–D3, D6); Piece 5 Boundary; Piece 2 Continue.
 - **What the picture shows:** The array contains both WORD rows and POINTER rows. A later section can participate in earlier sections. Continue is “append a new section.” D footer: use pointers to participate in what already exists.
 - **What the picture does not settle:** Which arrivals write WORD only, which write POINTER, which write both, and what in the hands decides. Piece 5: Graphic D’s table is an illustrative mix, not a complete emission algorithm.
-- **Answer:** `[GAP]` for the positive *when*.
+- **Answer:** `[GAP]` for the **schedule**. Φ-morphism is stated above. This Answer is not that morphism.
 - **CLOSED (ruled out, not a when):** “every adjacent WORD pair emits” — D1 WORD pairs DESSERT–PIE (0001 then 0003) and WHOLE–CUSTOMER (0005 then 0008) have no pointer. “One POINTER per WORD arrival” — D1 fan-out after successive WORDs is 0, 1, 1, 2, 2.
-- **Stamp:** `[GAP]` + two CLOSED refusals. Not accepted. Not SPOKEN.
-- **Bind:** Pass 2 Collision I. Pass 4 N1 / speak-sheet Q1-when. Map is not this Answer.
+- **Stamp:** `[GAP]` schedule + two CLOSED refusals. Not accepted. Not SPOKEN.
+- **Bind:** Pass 2 Collision I. Pass 4 N1 / speak-sheet Q1-when. Pass 5 Φ-morphism section. Map is not this Answer.
 
 ### 2. What is the arity?
 
@@ -63,7 +112,7 @@ Entry admission is Q0. Pointer admission is Q1. They are not one question.
 - **Graphic / Piece cited:** Graphic D example shape; Piece 5 Inputs/Outputs `{index, type: POINTER, ref_A, ref_B}`.
 - **What the picture shows:** D2 draws two slots under “What each entry looks like” / “Minimal structure.” D1 six of six pointers name two earlier indices.
 - **What the picture does not settle:** The words *exactly two* are not on the graphic. Piece 5 still calls the shape example form. Repo history recorded a unary POINT form as `[CONFLICT]`.
-- **Answer:** **CONFLICT.** D2+D1 weigh toward two. Piece 5 and the missing words *exactly two* refuse promoting that to schema. No SPOKEN pick.
+- **Answer:** **CONFLICT.** D2+D1 weigh toward two. Piece 5 and the missing words *exactly two* refuse promoting that to schema. No SPOKEN pick. Φ-morphism writes k ≥ 1 only.
 - **Stamp:** CONFLICT. Not accepted.
 
 ### 3. Do adjacent WORD rows already constitute a relation?
@@ -72,14 +121,14 @@ Entry admission is Q0. Pointer admission is Q1. They are not one question.
 - **Graphic / Piece cited:** Graphic D sequence of rows; Piece 3 arrival order; Piece 8 sequence-as-route; Piece 5 Boundary.
 - **What the picture shows:** Arrival order is kept. Sequence of WORDs is a physical route through stars. Adjacent WORDs sometimes have a POINTER between them and sometimes do not.
 - **What the picture does not settle:** Whether adjacency-without-POINTER is a relation, a non-relation, or something unnamed (Piece 8 route is not automatically Piece 5 participation).
-- **Answer:** **CLOSED** that adjacency does **not** emit a POINTER. **`[GAP]`** whether leftover adjacency *is* a relation.
+- **Answer:** **CLOSED** that adjacency does **not** fire Φ. **`[GAP]`** whether leftover adjacency *is* a relation.
 - **Stamp:** split. Not accepted. Not SPOKEN.
 
 ### 4. Refs point only backward on the same line
 
 **Hard constraint — CLOSED:**
 
-Pointers reference earlier positions in the same line. Graphic D key properties; D1 six of six; Piece 5 invariants. Forward indices and external stores remain failure modes. This is a constraint on whatever emission later becomes. It is not the emission rule.
+Pointers reference earlier positions in the same line. Graphic D key properties; D1 six of six; Piece 5 invariants. Forward indices and external stores remain failure modes. This is a constraint on the Φ-morphism. It is not the schedule.
 
 **Sub-questions:**
 
@@ -99,11 +148,11 @@ Pointers reference earlier positions in the same line. Graphic D key properties;
 - **Graphic / Piece cited:** Graphic A5 / B3; Piece 4 WORD; Piece 7 Star; Graphic D WORD rows.
 - **What the picture shows:** A5/B3: later occurrence is more wire through the same star, new direction. D1 writes WORD 0003 for the second PIE. POINTER 0004 *may* then relate that occurrence to the first; it is not drawn as the occurrence itself.
 - **What the picture does not settle:** Whether that pass *must* also write a POINTER.
-- **Answer:** `[GAP]` for *require*. **CLOSED** that a later pass is at least a new WORD occurrence (0003), not a collapsed intern.
+- **Answer:** `[GAP]` for *require* (schedule). **CLOSED** that a later pass is at least a new WORD occurrence (0003), not a collapsed intern.
 - **Stamp:** `[GAP]` + one CLOSED (no intern). Not accepted.
-- **Bind:** Q0 later-arrival kind and Q1 positive when. Pass 2 Collision I. Pass 4 N1 option B vs C. Do not pick slot I here.
+- **Bind:** Q0 later-arrival kind and Q1 schedule. Pass 2 Collision I. Pass 4 N1 option B vs C. Pass 5 does not pick slot I.
 
-No other extra questions. Document provenance, query operators, and spelling/case are silences of other pieces; they do not by themselves force an emission rule.
+No other extra questions. Document provenance, query operators, and spelling/case are silences of other pieces; they do not by themselves force a schedule.
 
 ## Explicit non-answers
 
@@ -122,14 +171,13 @@ These are **rejected lookalikes**, not candidate rules. This table is not an alg
 | D06 substitution | not a write |
 | variable / cluster label | names; does not write POINTER |
 | clock tooth / Anchor / Locate | holder gear; Graphic D is silent |
-| prefix-device Φ as when | lens from pass 1; not Q0/Q1 |
+| prefix-device next-cell lens as Φ | option D; not the morphism above |
 | chat ENTRY/POINTER pair | offered; not written back; not SPOKEN |
 | pass 4 nuance map | distinctions; speak-sheet blank; not SPOKEN |
 
 ## Pass 1 — stamp walk
 
-**Status:** EXECUTED. Not accepted. No SPOKEN lines. No `src/`.  
-**Run pin:** `9b8667f06014c5c9b36a4a2cdb69e29be7497143`. Graphic D blob `68138493`. Close-reading blob `8f292930`. A, B, D VIEWED this tick.
+**Status:** EXECUTED. Not accepted. No SPOKEN lines. No `src/`.
 
 ### Pass 1 stamp table
 
@@ -146,20 +194,12 @@ These are **rejected lookalikes**, not candidate rules. This table is not an alg
 | Q4 POINTER→POINTER required | `[GAP]` | illustration is not a must |
 | Q4 WORD-only targets | CLOSED false as restriction | D1 mixed targets |
 | Q4 how earlier is proven | `[GAP]` | no operator on the picture |
-| Slots A vs B (not an AGENTS Q) | `[GAP]` | array does not compute subject; close-reading remains a reading |
 | Q5 require POINTER on re-pass | `[GAP]` | A5/B3 more wire; 0003 is WORD |
 | Q5 later pass is intern | CLOSED ruled out | 0003 new occurrence |
 
-### Execute receipt — 19 September 2026
-
-Opened A, B, D from the clone. D1 eleven rows match the close-reading transcription. Answer lines above carry the stamps. Acceptance section untouched. Manifest open-question list untouched. Companion untouched.
-
-Shoe in hands. Stamps are not the when.
-
 ## Pass 3 — entry admission opened
 
-**Status:** EXECUTED. Not accepted. No new SPOKEN lines. No `src/`.  
-**Receipt:** [`docs/graphics/prefix-device-pass-3.md`](graphics/prefix-device-pass-3.md).
+**Status:** EXECUTED. Not accepted. No new SPOKEN lines. No `src/`.
 
 ### Pass 3 stamp table
 
@@ -168,14 +208,26 @@ Shoe in hands. Stamps are not the when.
 | Q0 first occurrence is WORD | CLOSED | A2; D1 `0000` |
 | Q0 intern | CLOSED ruled out | D1 `0003`; same as Q5 |
 | Q0 later-arrival kind | `[GAP]` | pass 2 slot I unspoken |
-| Q1 when | `[GAP]` (unchanged) | bind pass 2 I; chat candidate not SPOKEN |
+| Q1 when | `[GAP]` (unchanged) | bind pass 2 I |
 | Q5 require POINTER | `[GAP]` (unchanged) | bind Q0/Q1 |
 
 ## Pass 4 — nuance map bound
 
 **Status:** EXECUTED bind. Not SPOKEN.  
 **Map:** [`graphics/prefix-device-pass-4.md`](graphics/prefix-device-pass-4.md).  
-Speak-sheet blank. Answers above unchanged.
+Speak-sheet blank.
+
+## Pass 5 — Φ-morphism stated
+
+**Status:** EXECUTED. Not SPOKEN. Not accepted.  
+**Receipt:** [`graphics/prefix-device-pass-5.md`](graphics/prefix-device-pass-5.md).
+
+| Piece | Stamp |
+|---|---|
+| Φ-morphism | stated |
+| Φ-schedule (Q1) | `[GAP]` unchanged |
+| Arrive merged into Φ | refused |
+| Option D as law | refused |
 
 ---
 
