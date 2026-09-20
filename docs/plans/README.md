@@ -4,6 +4,7 @@ Plans, proposals, executed pass records, and dated receipts share this shelf. Ea
 
 | File | Job |
 |---|---|
+| [systems-eq-map-pass-1-plan.md](systems-eq-map-pass-1-plan.md) | **`PLAN`** — new iteration pass 1 of 6. Map global systems ASCII spine × equations. Wall and U12 are **in** the calculation, not on \(L\). Does not fill G2. Φ `[GAP]` |
 | [math-execution-update-pass-6-readiness.md](math-execution-update-pass-6-readiness.md) | **EXECUTED** UPDATE pass 6 readiness. A1–A14 14 PASS / 0 FAIL. Campaign **CLOSED 6/6**. Holes empty. Φ `[GAP]` |
 | [math-execution-update-pass-6-plan.md](math-execution-update-pass-6-plan.md) | **`EXECUTED`** — UPDATE campaign pass 6 of 6 **CLOSED**. Accuracy board + STOP. Does not accept emission. Φ `[GAP]` |
 | [math-execution-update-pass-5-witness.md](math-execution-update-pass-5-witness.md) | **EXECUTED** UPDATE pass 5 D1 refresh. 11 rows. 6/6 POINTER Witness-only. Q2 unpicked. Old witness frozen. Φ `[GAP]` |
