@@ -1,6 +1,6 @@
 # Miss-map — Pass 3 of 6 PLAN
 
-**Status:** **`PLAN`** · not executed. **Station:** maps (HELD `Grok-maps` · BASE `cf3c77b`).
+**Status:** **`EXECUTED`** 2026-09-20 · [`miss-map-pass-3-hands.md`](miss-map-pass-3-hands.md). **Station:** maps (`Grok-maps`).
 **Depends on:** [`miss-map-pass-2-sort.md`](miss-map-pass-2-sort.md).
 **Emission:** `[GAP]`. No `src/`. Slot II stays unanswered.
 
