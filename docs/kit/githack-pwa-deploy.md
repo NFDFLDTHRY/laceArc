@@ -52,7 +52,8 @@ This is the install / Add-to-Home-Screen path required by current AGENTS.md and 
     relative manifest / sw.js / icons beside that HTML
     stable manifest id  https://github.com/NFDFLDTHRY/laceArc/lace-iii
     pointer file        docs/clock/LATEST.json on main (names the SHA)
-    new commit ⇒ new SHA URL; Update replaces the same id (not a new icon)
+    new commit ⇒ new SHA URL; Update selects a pinned URL.
+    Same-installation/icon migration remains unobserved here.
 
   FORBID
     raw.githack.com as the install host
@@ -69,7 +70,8 @@ This is the install / Add-to-Home-Screen path required by current AGENTS.md and 
   STEWARD TEST
     shoe lace in hands, or no.
     If Chrome's sheet names rawcdn.githack.com and Install is live, the path is the template.
-    If the sheet says "cannot be installed", you are on the wrong host or a floating ref.
+    If the sheet says "cannot be installed", check the host and full SHA first.
+    That message alone does not identify the cause; record the failure for the exact URL.
 
 ╔══════════════════════════════════════════════════════════════════════════╗
 ║  END POLICY — pin the SHA, then install, then stop                       ║
