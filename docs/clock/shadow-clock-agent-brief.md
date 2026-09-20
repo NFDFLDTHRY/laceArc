@@ -1,10 +1,12 @@
 # Shadow Clock Agent Brief — Gear Interaction Contracts
 
+**Conceptual-reference status, corrected 2026-09-20:** HCC-A, The Coffee Cup, and Where the Water Is Loud are conceptual reference documents. The [human correction](../law-why-these-documents.md#conceptual-reference-documents) supersedes their classification as required holder machinery. This file retains an analysis of their concepts; H/C/W or A/B/C gears, states, ratios, and contracts are interpretive notation. They establish no required LaceArc components, runtime dependencies, or conditions for legal append. Historical readings remain recorded at their original evidence strength.
+
 **Audience:** Any agent operating on laceArc Shadow clock work.  
-**Status:** Standing brief. Not a sixth graphic. Not Core.  
+**Status:** Brief for conceptual-reference analysis. The former required-holder-machine classification is superseded. Not a sixth graphic. Not Core.
 **Gearing diagram under test:** [`docs/clock/shadow-clock-hologram.md`](shadow-clock-hologram.md)
 
-You are not implementing Lace Core. You are auditing and contracting the **holder machine** `{A, B, C}` already forged in the hologram.
+The task is to audit the diagram's interpretation of concepts from three reference documents. `{A, B, C}` labels those readings; it is not an already-established holder machine. Record which relationships come from the references and which were introduced by the diagram. Do not turn them into required runtime components or append prerequisites.
 
 ---
 

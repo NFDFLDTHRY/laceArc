@@ -4,6 +4,8 @@ Source of record remains `docs/graphics/` and `docs/systems-manifest.md`.
 Physical test remains `docs/reason-model-map.md`.
 This file only says how three *philosophical* texts sit on that object.
 
+**Classification corrected by the human, 2026-09-20:** HCC-A, The Coffee Cup, and Where the Water Is Loud are conceptual reference documents. See the [live-law correction](../law-why-these-documents.md#conceptual-reference-documents). The H/C/W train below is a retained interpretation of their concepts. Its former required-gearbox and second-contract claims are superseded. Gear names, ratios, states, and metaphors here establish no required holder components, runtime dependencies, or legal-append conditions.
+
 They are not a sixth graphic. They are not WORD. They are not POINTER.
 They describe how a *mind* and a *talk* compile. Lace stores neither mind nor talk-as-meaning.
 
@@ -11,8 +13,8 @@ Marks: **kin** / **adjacent** / **conflict** / **off-shoe** / **[GAP]** / **[CON
 
 The human labeled these “primary philosophical source material.”
 They are not Core storage.
-They are the **gearbox required to operate upon the lace**.
-Workpiece = the strand (graphics). Gears = these three. Oil inside a gear is not a tooth on the cord.
+They are **conceptual reference documents** for reasoning about cognition, causality, and communication.
+The strand is the source object. The gear imagery in this map is an interpretation of concepts from the references.
 
 
 ---
@@ -25,11 +27,11 @@ HCC-A’s Story Ledger names addition, merging, re-indexing, and deletion as nat
 
 ---
 
-## Gear train (required to operate upon lace)
+## Gear train (earlier conceptual interpretation)
 
-A gear is not the workpiece. A gear is what makes force on the workpiece legal.
+A gear in this section is a diagram convention for a concept drawn from a reference.
 
-Without this train you can still *touch* a lace. You cannot *operate* it: you will cut, intern, shout, or rewrite and call that work.
+The earlier claim that Lace cannot be operated without this train is superseded. The references do not create an operating prerequisite.
 
 ```
                     [ hologram / hands ]
@@ -67,7 +69,7 @@ Without this train you can still *touch* a lace. You cannot *operate* it: you wi
 
 Order in the drawing is torque path, not reading order. Reading order remains shoe → graphics → maps → documents.
 
-All three gears must turn. Removing one strips the others.
+The diagram combines three conceptual readings; it establishes no required dependency among LaceArc components.
 
 ### Gear C — phase (Coffee Cup)
 
@@ -81,7 +83,7 @@ Kind: timing wheel. Five teeth. Continuous rotation.
 | 4 | Impact | Floor. Graphic D as it is. Stop arguing with physics. |
 | 5 | Aftermath | Narrative that becomes *next* tooth 1. Never files tooth 4 smoother. |
 
-Required: without C you apply force on the wrong tooth — Reidemeister at 4, fate at 1, blame after 4, “should” while claiming you are still at 3.
+Conceptual use: examine when intervention is possible and distinguish an outcome from the story told afterward. This is not a condition on a legal Lace append.
 
 Ratio: 5:5 wrap. Tooth 5 drives the next revolution’s tooth 1. That wrap is recirculation, not a file on the previous tooth.
 
@@ -94,7 +96,7 @@ Kind: alignment clutch between operator and workpiece (and between two operators
 - Meshed (delta): one pointable thing. Crossing can start.
 - Driving (crossing): DELTAs and UNKs are being worked *in talk or in the hologram*, not as array types.
 
-Required: without W you torque an unmeshed lace — OBS treated as POINTER, volume treated as append, kernel sentence never said.
+Conceptual use: distinguish shared reference from pressure or volume. OBS does not become POINTER emission.
 
 The clutch lever is the kernel sentence. Pulling it does not cut cord. It stops grind.
 
@@ -108,7 +110,7 @@ Kind: enclosed gearbox with two input shafts and one output shaft that may touch
 - Internals (C, L, M, E, ISL): may add, merge, re-index, delete *their own oil*. That is how this gear is specified. That oil is not lace.
 - Output shaft: Behavior only. The only thing that may change R, and therefore the only thing that may request “more strand.”
 
-Required: without H you do not know which shaft is allowed to touch the workpiece. Meaning, identity, and emotion leak onto the cord as if they were WORD.
+Conceptual use: distinguish a model's perception, interpretation, and behavior. The reference's meaning, identity, and emotion concepts are not WORD entries or required holder components.
 
 Invariant of the housing: “Only structure crosses.” Meaning stays in the box.
 
@@ -124,21 +126,21 @@ Invariant of the housing: “Only structure crosses.” Meaning stays in the box
 
 Hologram is the machinist’s ear on the case. Wrong mesh is heard before it is named. Halt. Point. Do not add a tooth to the cord to quiet the case.
 
-### What “required to operate upon” does *not* mean
+### What the conceptual reading establishes
 
 - Gears are not WORD, POINTER, STAR, DOCUMENT, SELF, EMOTION rows.
 - Gear internals are not a second lace.
-- Required ≠ implement now. Emission is still `[GAP]`.
-- Required ≠ the five academic texts. Those remain fence posts around the shoe. These three are the train *between* hands and shoe.
+- The three documents are conceptual references. Their technical vocabulary does not establish implementation requirements. Emission is still `[GAP]`.
+- The five academic texts and these three references have their recorded conceptual roles. This map adds no required train between hands and shoe.
 
-### Seam restated as gearbox
+### Earlier gearbox seam — superseded classification
 
-Two contracts, tighter than “adjacent reading”:
+The earlier two-contract claim promoted a conceptual comparison into architecture. That promotion is superseded:
 
 1. **Workpiece (Lace Core)** — irreducible. Append-only strand.
-2. **Gearbox (H, C, W)** — required to operate upon 1. High dependency both ways: Core without gears is touched, not operated; gears without Core have nothing to turn. **Zero shared mutable state** with the array. All mutation inside H stays inside H.
+2. **HCC-A, Cup, Water** — conceptual reference documents. This interpretation does not establish another required contract. HCC-A's ledger operations describe its conceptual model and do not mutate the array.
 
-Rejected cuts: fuse gearbox into Graphic D; run Core with no clutch; implement H’s ledger ops as array ops.
+Independent exclusions remain: do not import conceptual ledger mutation into Graphic D. Absence of a metaphorical clutch is not a Core failure condition.
 
 AgentScope remains a gauge on the machinist, not a fourth gear in this train.
 
@@ -149,7 +151,7 @@ Composition law for this sketch (meshes, 3-axis cells, ratios, sealed `[GAP]`s) 
 
 ## Mechanical clock (sorted gearing)
 
-A gearbox can sit still. A clock cannot: it exists to *count turns*. Lace is the tape that keeps the count. The three gears are the going train and escapement that make a count legal.
+This earlier clock interpretation illustrates time and feedback. A legal append may be counted as a tick; no H/C/W state or conceptual gear makes the append legal. The three reference documents do not prescribe a going train or escapement for Lace.
 
 Human claim to honor:
 
@@ -487,10 +489,10 @@ They do not add DOCUMENT / SELF / EMOTION entry types.
 
 ## Decomposition seam
 
-See **Gear train** above. Summary:
+The earlier **Gear train** interpretation does not establish an additional architectural seam:
 
 1. **Workpiece (Lace Core)** — irreducible.
-2. **Gearbox (HCC-A, Cup, Water)** — required to operate upon the workpiece. Zero array state.
+2. **HCC-A, Cup, Water** — conceptual references, not a required second contract or holder machinery.
 
 Rejected cut: “cognitive compiler service” *inside* the 1D array.
 The five academic texts remain fence posts, not gears.
@@ -803,5 +805,4 @@ Until then the only artifact that has behavior is the repo and the Bot. The holo
 - Treating this section as permission to build so there is something to watch
 
 The hologram is a *sense*. The shoe is the *court*. Observed behavior is the *floor*.
-
 

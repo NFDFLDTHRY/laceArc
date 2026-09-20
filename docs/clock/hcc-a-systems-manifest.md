@@ -1,10 +1,12 @@
-# Gear manifest — HCC-A (the driver (Gear H))
+# Conceptual reference analysis — HCC-A
+
+**Conceptual-reference status, corrected 2026-09-20:** HCC-A, The Coffee Cup, and Where the Water Is Loud are conceptual reference documents. The [human correction](../law-why-these-documents.md#conceptual-reference-documents) supersedes their classification as required holder machinery. This file retains an analysis of their concepts; H/C/W or A/B/C gears, states, ratios, and contracts are interpretive notation. They establish no required LaceArc components, runtime dependencies, or conditions for legal append. Historical readings remain recorded at their original evidence strength.
 
 **Executed passes:** [2](passes/hcc-a-pass-2-plan.md) · [3](passes/hcc-a-pass-3-plan.md) · [4](passes/hcc-a-pass-4-plan.md) · [5](passes/hcc-a-pass-5-plan.md) — plans in [`passes/`](passes/README.md). A new pass is linked here once it is executed.
 
 ## Overview
 
-HCC-A is Gear H: the enclosed driver that compiles Reality into local story, force, self, and behavior. It is not Lace Core. It is not Graphic D. Internals may add, merge, re-index, and delete **their own oil**. Those operations applied to the tape kill Rule Zero.
+HCC-A is a conceptual reference document describing a model of cognition. This analysis uses the former Gear H / pipeline imagery to examine its concepts, including story, meaning, emotion, identity, and behavior. Its ledger operations belong to that conceptual model; applying them as mutation of Graphic D would violate Rule Zero.
 
 **Form (pass 3 reforge):** this clipboard is a **data pipeline**. Stations below are buffers and transforms. Time is S0–S7. Recursions are feedback pipes, not extra stores.
 
@@ -535,12 +537,12 @@ Numeric RIC vs PFC switch remains `[GAP]`.
 
 ## System-Level Composition & Interfaces
 
-Two contracts, already stated in philosophy-map:
+The philosophy map previously classified these as two required contracts. That classification is superseded; the current distinction is:
 
 1. **Workpiece (Lace Core)** — irreducible append-only strand.
-2. **Gearbox (H, C, W)** — required to operate upon 1. Zero shared mutable state with the array.
+2. **HCC-A, Cup, Water** — conceptual reference documents. The former required-gearbox classification is superseded; these analyses establish no second required contract.
 
-HCC-A is the driver *inside* contract 2. Cup and Water are not pieces of this mill. They are other gears. Crossings with Cup are on `docs/clock/coffee-cup-systems-manifest.md` (pass 5 register). Not “only B and RIC”: C1 already touches πRIC/πPFC; C5 writes πID; C4 is πFB.
+In the earlier interpretation, HCC-A was drawn as the driver *inside* the proposed contract 2, with Cup and Water as other gears. Those assignments remain conceptual comparisons, not required contracts. Crossings with Cup are on `docs/clock/coffee-cup-systems-manifest.md` (pass 5 register). Not “only B and RIC”: C1 already touches πRIC/πPFC; C5 writes πID; C4 is πFB.
 
 ```
   [H housing]
@@ -593,7 +595,7 @@ Candidate cuts (ranked):
 6. **Do not cut** L, M, C from each other. That would invent wires the source treats as one mill.
 7. **Do not cut** H into Graphic D. That is the rejected “cognitive compiler service inside the 1D array.”
 
-Dependency coupling to Core is high (nothing to operate upon without the workpiece). State coupling to Core must stay **zero**.
+The earlier dependency-coupling claim belongs to the superseded operating-gear interpretation. This conceptual reference establishes no dependency of Core on HCC-A; its model state does not become state in Graphic D.
 
 ---
 

@@ -1,10 +1,12 @@
-# Gear manifest — Train H × C × W (the composition)
+# Conceptual comparison — HCC-A, Coffee Cup, and Water
+
+**Conceptual-reference status, corrected 2026-09-20:** HCC-A, The Coffee Cup, and Where the Water Is Loud are conceptual reference documents. The [human correction](../law-why-these-documents.md#conceptual-reference-documents) supersedes their classification as required holder machinery. This file retains an analysis of their concepts; H/C/W or A/B/C gears, states, ratios, and contracts are interpretive notation. They establish no required LaceArc components, runtime dependencies, or conditions for legal append. Historical readings remain recorded at their original evidence strength.
 
 **Executed passes:** [1](passes/train-pass-1-plan.md) · [2](passes/train-pass-2-plan.md) · [3](passes/train-pass-3-plan.md) · [4](passes/train-pass-4-plan.md) · [5](passes/train-pass-5-plan.md) · [6](passes/train-pass-6-plan.md) — plans in [`passes/`](passes/README.md). A new pass is linked here once it is executed.
 
 ## Overview
 
-Composition of three already-bound gears. Not a fourth mill. Not Lace Core. Not Graphic D. Does not close POINTER emission.
+Retained comparison of concepts from three reference documents, using an H × C × W train illustration. Its former required-component classification is superseded. This interpretation does not establish an operating subsystem or close POINTER emission.
 
 **Hands of this file**
 
@@ -46,9 +48,9 @@ A revolution of the train is three overlapping walks, not one number. No author 
 
 ---
 
-## Legal work (mesh)
+## Earlier mesh conditions — superseded as operating requirements
 
-Work on the lace (more cord, not less) is legal only when all hold:
+The earlier interpretation imposed the following conditions on work. That requirement is superseded by the human correction. The list remains a conceptual comparison, not a legal-append gate:
 
 1. Cup C3 — window still open  
 2. Water S2 or S3 — meshed; one pointable pair forming or DELTA listed  
@@ -274,7 +276,7 @@ No further composition passes against H×C×W unless a new remainder is pointed 
 ## Executive Seams Summary
 
 - Three clocks. Composition, not a fourth mill.  
-- Legal lace work = C3 ∧ Water S2|S3 ∧ no P0 write.  
+- Earlier interpretation only: C3 ∧ Water S2|S3 ∧ no P0 write was labelled “legal lace work.” This is superseded as an operating requirement.
 - Kernel stops grind. Kernel is not APPEND.  
 - OBS is not POINTER. Action is not P4.  
 - Emission remains `[GAP]`.

@@ -1,10 +1,12 @@
-# Gear manifest — Coffee Cup (event-time gear (Gear C))
+# Conceptual reference analysis — The Coffee Cup
+
+**Conceptual-reference status, corrected 2026-09-20:** HCC-A, The Coffee Cup, and Where the Water Is Loud are conceptual reference documents. The [human correction](../law-why-these-documents.md#conceptual-reference-documents) supersedes their classification as required holder machinery. This file retains an analysis of their concepts; H/C/W or A/B/C gears, states, ratios, and contracts are interpretive notation. They establish no required LaceArc components, runtime dependencies, or conditions for legal append. Historical readings remain recorded at their original evidence strength.
 
 **Executed passes:** [1](passes/coffee-cup-pass-1-plan.md) · [2](passes/coffee-cup-pass-2-plan.md) · [3](passes/coffee-cup-pass-3-plan.md) · [4](passes/coffee-cup-pass-4-plan.md) · [5](passes/coffee-cup-pass-5-plan.md) · [6](passes/coffee-cup-pass-6-plan.md) — plans in [`passes/`](passes/README.md). A new pass is linked here once it is executed.
 
 ## Overview
 
-The Coffee Cup is Gear C: the five-tooth phase wheel that times work on the lace. It is not Lace Core. It is not Graphic D. It is not HCC oil. It does not close POINTER emission.
+The Coffee Cup is a conceptual reference document about event causality, intervention, and aftermath. The five-tooth wheel is this analysis's illustration of the five stages, not a runtime clock timing Lace work. It does not close POINTER emission.
 
 **Pass 1 source:** attachment `The Coffee Cup (1).txt`. Not in git.  
 **Compressed ancestor:** `docs/clock/philosophy-map.md` Gear C. Where that file dropped lanes, questions, or recirculation, **the attachment wins**.  

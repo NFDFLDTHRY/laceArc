@@ -1,5 +1,7 @@
 # Shadow Clock Gear Interaction Contracts
 
+**Conceptual-reference status, corrected 2026-09-20:** HCC-A, The Coffee Cup, and Where the Water Is Loud are conceptual reference documents. The [human correction](../law-why-these-documents.md#conceptual-reference-documents) supersedes their classification as required holder machinery. This file retains an analysis of their concepts; H/C/W or A/B/C gears, states, ratios, and contracts are interpretive notation. They establish no required LaceArc components, runtime dependencies, or conditions for legal append. Historical readings remain recorded at their original evidence strength.
+
 **Status:** Shadow audit. Not a sixth graphic. Not Core.  
 **Diagram under test:** `docs/clock/shadow-clock-hologram.md`  
 **Brief:** `docs/clock/shadow-clock-agent-brief.md`  
@@ -9,7 +11,7 @@
 Label note: hologram `{A,B,C}` = HCC-A / Coffee Cup / Water.  
 `docs/clock/philosophy-map.md` used Gear H / Gear C / Gear W for the same three. This file uses hologram letters only.
 
-If Hands and hologram conflict, Hands win. Hologram wins over a Shadow text only when Hands agree.
+The reference text is the source for claims about its own concepts; the hologram is an interpretation that can be wrong. Hands govern claims about Lace. Agreement with Hands does not promote the hologram above the conceptual references or create a required holder machine.
 
 ---
 

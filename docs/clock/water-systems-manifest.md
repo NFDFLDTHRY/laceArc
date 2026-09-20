@@ -1,10 +1,12 @@
-# Gear manifest — Where the Water Is Loud (the clutch (Gear W))
+# Conceptual reference analysis — Where the Water Is Loud
+
+**Conceptual-reference status, corrected 2026-09-20:** HCC-A, The Coffee Cup, and Where the Water Is Loud are conceptual reference documents. The [human correction](../law-why-these-documents.md#conceptual-reference-documents) supersedes their classification as required holder machinery. This file retains an analysis of their concepts; H/C/W or A/B/C gears, states, ratios, and contracts are interpretive notation. They establish no required LaceArc components, runtime dependencies, or conditions for legal append. Historical readings remain recorded at their original evidence strength.
 
 **Executed passes:** [1](passes/water-pass-1-plan.md) · [2](passes/water-pass-2-plan.md) · [3](passes/water-pass-3-plan.md) · [4](passes/water-pass-4-plan.md) · [5](passes/water-pass-5-plan.md) · [6](passes/water-pass-6-plan.md) — plans in [`passes/`](passes/README.md). A new pass is linked here once it is executed.
 
 ## Overview
 
-Water is Gear W: the alignment clutch between operator and workpiece, and between two operators. It is not Lace Core. It is not Graphic D. It is not HCC oil. It is not the Cup wheel. It does not close POINTER emission.
+Where the Water Is Loud is a conceptual reference document about communication and shared footing. The clutch imagery is this analysis's interpretation of its Proof Ledger, River model, and proposed interface. It establishes no required alignment component and does not close POINTER emission.
 
 **Pass 1 source:** attachment `Where the Water Is Loud.txt`. Not in git.  
 **Compressed ancestor:** `docs/clock/philosophy-map.md` Gear W. Attachment wins.  

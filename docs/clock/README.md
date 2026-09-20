@@ -1,6 +1,6 @@
 # Clock (Layer III)
 
-Shadow holder machine. **Not Core. Not Graphic D. Cubes are not WORD rows.** The source of record is [the four graphics](../graphics/README.md); nothing on this shelf amends them.
+Conceptual-reference analyses and Layer III visualizations. HCC-A, Coffee Cup, and Water are conceptual reference documents; their former classification as required holder machinery is superseded by the [human correction of 2026-09-20](../law-why-these-documents.md#conceptual-reference-documents). Gear and holder labels in the retained analyses describe interpretations, not required runtime components. **Not Core. Not Graphic D. Cubes are not WORD rows.** The source of record is [the four graphics](../graphics/README.md).
 
 Moved here in defrag pass 3. Pass plans shelved in restructure phase 5.
 
@@ -13,20 +13,20 @@ Moved here in defrag pass 3. Pass plans shelved in restructure phase 5.
 | [shadow-clock-gear-contracts.md](shadow-clock-gear-contracts.md) | Mesh contracts |
 | [shadow-clock-gear-contracts-second-reading.md](shadow-clock-gear-contracts-second-reading.md) | `[PROPOSAL]` counter-reading |
 | [gearing-code-1to1.md](gearing-code-1to1.md) | Visual key ↔ code unit; the 47-name bijection |
-| [philosophy-map.md](philosophy-map.md) | HCC-A / Cup / Water as gears |
+| [philosophy-map.md](philosophy-map.md) | Three conceptual references; earlier required-gear interpretation superseded |
 | [agent-interaction-model.md](agent-interaction-model.md) | Elephant clock `[PROPOSAL]` |
 | [system-mathematical-model.md](system-mathematical-model.md) | Hands L + Shadow H; emission `[GAP]` |
 
-## Gear manifests
+## Conceptual-reference manifests
 
-One per gear. Each links its own executed passes.
+These retain analyses of source concepts and the earlier gear interpretation. Each links its reading passes; those passes do not establish required machinery.
 
 | File | Gear |
 |---|---|
-| [hcc-a-systems-manifest.md](hcc-a-systems-manifest.md) | **H** — the driver. Stations H1–H11, phases S0–S7 |
-| [coffee-cup-systems-manifest.md](coffee-cup-systems-manifest.md) | **C** — event time. Stages C1–C5 + loop |
-| [water-systems-manifest.md](water-systems-manifest.md) | **W** — the clutch. OBS ≠ POINTER |
-| [train-h-c-w-systems-manifest.md](train-h-c-w-systems-manifest.md) | **H × C × W** composition |
+| [hcc-a-systems-manifest.md](hcc-a-systems-manifest.md) | Cognition model; H1–H11 and S0–S7 label its analysis |
+| [coffee-cup-systems-manifest.md](coffee-cup-systems-manifest.md) | Causality and intervention; five event stages |
+| [water-systems-manifest.md](water-systems-manifest.md) | Communication and shared reference; OBS ≠ POINTER |
+| [train-h-c-w-systems-manifest.md](train-h-c-w-systems-manifest.md) | Earlier combined interpretation; no required H × C × W subsystem |
 | [hcc-a-mechanisms-plan.md](hcc-a-mechanisms-plan.md) | `[PLAN]` ASCII systems map of HCC-A internals |
 
 ## Viewer app (Layer III)

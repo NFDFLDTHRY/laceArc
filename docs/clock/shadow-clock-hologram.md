@@ -1,8 +1,10 @@
-# Shadow Clock Hologram — Holder Machine {A, B, C}
+# Shadow Clock Hologram — Conceptual Interpretation {A, B, C}
+
+**Conceptual-reference status, corrected 2026-09-20:** HCC-A, The Coffee Cup, and Where the Water Is Loud are conceptual reference documents. The [human correction](../law-why-these-documents.md#conceptual-reference-documents) supersedes their classification as required holder machinery. This file retains an analysis of their concepts; H/C/W or A/B/C gears, states, ratios, and contracts are interpretive notation. They establish no required LaceArc components, runtime dependencies, or conditions for legal append. Historical readings remain recorded at their original evidence strength.
 
 **Status:** Shadow reading note. Not a sixth graphic. Not Core.  
 **Authority:** Hands = `docs/graphics/` A–D, then `docs/systems-manifest.md`, then `docs/staking-the-workspace.md`, then `docs/reason-model-map.md`.  
-**This file:** forges the mechanical clock of the three philosophical altitudes into one hologram and traces every gear to the great contract boundary.
+**This file:** retains a clock visualization of concepts from the three references. The diagram is an interpretation, not an established holder machine or architecture required by those documents.
 
 If a sentence here would change WORD, POINTER, STAR, or the governing rule: discard it for Core; keep it as holder reading only. Do not invent pointer-emission. Never PDF into git.
 
@@ -343,9 +345,10 @@ From `docs/systems-manifest.md` Decomposition Seams:
 
 ---
 
-## Law of the machine (compressed)
+## Earlier model summary (conceptual interpretation)
 
 ```
+  INTERPRETATION ONLY: no required holder machine or append condition
   A = local compile clock
   B = event-time clock
   C = joint-crossing clock
