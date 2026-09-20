@@ -1,6 +1,6 @@
 # Miss-map — Pass 1 of 6 PLAN
 
-**Status:** **`PLAN`** · not executed. **Station:** maps (HELD `Grok-maps` · BASE `20656df`).
+**Status:** **`EXECUTED`** 2026-09-20 · [`miss-map-pass-1.md`](miss-map-pass-1.md). **Station:** maps (`Grok-maps`).
 **Parents:** math-execution UPDATE CLOSED · systems-eq-map CLOSED · tech-ref-eq-map CLOSED · model-behavior CLOSED.
 **Emission:** `[GAP]`. No `src/`. Does not accept `pointer-emission.md`.
 **Charge:** rigorously analyze and map **what has been missed**.

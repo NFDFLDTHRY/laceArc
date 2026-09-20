@@ -4,7 +4,8 @@ Plans, proposals, executed pass records, and dated receipts share this shelf. Ea
 
 | File | Job |
 |---|---|
-| [miss-map-pass-1-plan.md](miss-map-pass-1-plan.md) | **`PLAN`** — miss-map pass 1. What closed campaigns left unmapped. Does not fill Φ. Φ `[GAP]` |
+| [miss-map-pass-1.md](miss-map-pass-1.md) | **EXECUTED** miss-map pass 1. NEW-MISS: Slot II + D2 specimen. Φ `[GAP]` |
+| [miss-map-pass-1-plan.md](miss-map-pass-1-plan.md) | **`EXECUTED`** — pass 1 miss register. Φ `[GAP]` |
 | [model-behavior-map-pass-6-soundness.md](model-behavior-map-pass-6-soundness.md) | **EXECUTED** model-behavior pass 6. 8 PASS. Campaign **CLOSED 6/6**. Φ `[GAP]` |
 | [model-behavior-map-pass-6-plan.md](model-behavior-map-pass-6-plan.md) | **`EXECUTED`** — pass 6 of 6 **CLOSED**. Φ `[GAP]` |
 | [model-behavior-map-pass-5-params.md](model-behavior-map-pass-5-params.md) | **EXECUTED** model-behavior pass 5. 7 params, 0 values. Φ `[GAP]` |
