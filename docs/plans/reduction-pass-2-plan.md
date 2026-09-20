@@ -1,6 +1,6 @@
 # The reduction — pass 2 plan: the mathematical model of execution
 
-**Status:** `PLAN` at writing; flipped below when executed. **Station:** maps. **Emission:** `[GAP]`. No `src/`.
+**Status:** **`EXECUTED`** → [execution model](reduction-pass-2-execution-model.md). **Thesis held: authoritative state is `L` alone (M1); six transitions; parameters = the rulings list.** **Station:** maps. **Emission:** `[GAP]`. No `src/`.
 **Campaign:** [the reduction](reduction-pass-1-plan.md) — six passes inside the human's added budget (2026-09-19 22:11 PT), weighted to his three results: **(1) the mathematical model of execution — the #1 result; (2) the global ASCII systems diagram updated; (3) the collaborative agentic apparatus.** **Pinned:** `e2e8155` + branch tip. **Editor:** Claude Fable 5.1; one hand; declared.
 
 ## Question (one act)
