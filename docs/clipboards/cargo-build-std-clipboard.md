@@ -1,6 +1,7 @@
 # The Cargo Book — `build-std` · shelf 10, attachment A4
 
-**Status:** **Pass 0 (staking receipt) EXECUTED.** **Station:** clipboards. **Emission:** `[GAP]`. No `src/`.
+**Status:** **Pass 0 (staking receipt) EXECUTED** · **forge EXECUTED 2026-09-20.** **Station:** clipboards. **Emission:** `[GAP]`. No `src/`.
+**Read the [forge section](#shelf-10-forge--the-locator-carry-and-the-traceability-gate--executed) before citing any line below.** The ten eye entries are now checkable in-repo through [`cargo-build-std-locators.md`](cargo-build-std-locators.md); three of their quotes silently repaired the source's lost ligatures; one elision hid the `panic-unwind` default and opened sub-question **d**; and this source carries **213 lone carriage returns**, so a reader whose tool translates them reads every locator past line 1,406 off by 214. Pass 0's body is a dated record and stands unedited.
 **Shelf:** 10 — the toolchain shelf. Sibling: [`rust-target-clipboard.md`](rust-target-clipboard.md) (A1, *The rustc book*).
 **Staked by:** the human, 2026-09-20. **Editor:** Claude Opus 5; one hand; declared.
 
@@ -89,3 +90,84 @@ Held at `refs/local/`, **gitignored** (`.gitignore:22`). No text is copied into 
 **Both are outside A4.** They need a new attachment or a build, and a build is `NOT_RUN` by law until R12.
 
 **P0-R receipt:** ten eye entries, every locator verified by `grep -n` against the SHA; the sibling shelf's named question answered one-of-three and the other two marked `[GAP]` rather than inferred; one correction to the sibling in the open; nothing copied into git; no `src/`, no Cargo file, no script. Emission `[GAP]`. Shoe in hands, or no.
+
+---
+
+## Shelf 10 forge — the locator carry and the traceability gate · EXECUTED
+
+**2026-09-20 · base `3df3df80` · station `clipboards` · plan [`shelf-10-forge-pass-1-plan.md`](shelf-10-forge-pass-1-plan.md).**
+Pass 0 above is a dated record and is **not edited by this section**. Everything below is attached, in the open, the way the sibling shelf attaches its corrections.
+
+**What the forge does.** A4 was staked, read once, and quoted. Nothing in the repository let a later session *check* the quotes: the book is gitignored, so the ten eye entries were assertions about a file nobody else could open. [`cargo-build-std-locators.md`](cargo-build-std-locators.md) carries the 55 source lines the shelf cites, and this section records what happened when every quote was re-read against its own cited lines.
+
+### F1 — the gate, and its result
+
+Each `*"…"*` quote and each backticked string over 12 characters was matched against **the lines its own row cites**, in the SHA-verified file — not against the book at large, which would let a wrong locator pass.
+
+| | Fragments | Result |
+|---|---|---|
+| Italic quotes | 9 | **6 byte-verbatim at their cited lines · 3 only after ligature repair · 0 missing** |
+| With backticked strings over 12 chars | 14 | **11 byte-verbatim · 3 ligature-repaired · 0 missing** |
+| Rows carrying no quoted string (`C3`-style) | 3 | claim nothing verbatim; correct |
+
+**Every locator on this page is right. No quote is invented.** `C1`–`C10` stand where they say they stand.
+
+### F2 — the defect the gate found: three silent repairs
+
+The supplied text lost its `fl`/`fi` ligatures in conversion. The file writes **`?ag`**, **`pro?le`**, **`con?gure`**, **`?le`**. The A1 attachment has **zero** such damage; this one has it throughout.
+
+Pass 0 repaired the damage while quoting, inside a column headed **Verbatim**, and said nothing:
+
+| Eye | The file, at the cited line | Pass 0's quote |
+|---|---|---|
+| `C2` | *"behind a **?ag** called -Z build-std"* | *"behind a **flag** called `-Z build-std`"* |
+| `C7` (third) | *"The -Z build-std **?ag** must be passed to all cargo invocations."* | *"The `-Z build-std` **flag** must be passed to **all** cargo invocations."* |
+| `C8` | *"This **?ag** is a sibling … This will **con?gure** the features"* | *"This **flag** is a sibling … This will **configure** the features"* |
+
+**Each repair restores what the conversion destroyed, and every one is substantively right.** The defect is not the repair — it is that a reader could not tell one had happened. Corrected by carrying the damaged lines in the locator file, where the difference is visible.
+
+### F3 — the elision that cost a sentence, and the `[GAP]` it opens
+
+`C8` quotes line 8772 and stops mid-line. The rest of that same line reads:
+
+> *"The default enabled features, at this time, are backtrace and panic-unwind ."*
+
+**`panic-unwind` is a default of `build-std-features`.** The A1 page states the target *"does not support panic=unwind at this time"* (30649, eye `E5` on [the sibling shelf](rust-target-clipboard.md)). Both sentences belong to this shelf and the elision carried only one of them.
+
+**What follows.** Nothing yet, and that is the point. The book states the defaults and is **silent on whether they apply when the crate list omits `std`** — `build-std-features` occurs at 8411, 8769 and 8772 and nowhere else in 21,712 lines.
+
+| | New sub-question | Verdict |
+|---|---|---|
+| **d** | Do `build-std-features`' defaults (`backtrace`, `panic-unwind`) apply when `-Z build-std=core` names a crate list without `std`? | **`[GAP]`.** Not stated. It is a recipe obligation either way: **`B5` must set `-Z build-std-features` explicitly rather than inherit a default it cannot read** |
+
+`[PROPOSAL]` and nothing more: the recipe row states the feature set; it does not rely on the default being empty.
+
+### F4 — the locator hazard this source carries and A1 does not
+
+`The_Cargo_Book.txt` contains **213 bare carriage returns** that are not part of a `CRLF`, the first at line 1,406. `sed`, `grep -n` and `wc -l` see **21,712** lines; a reader in universal-newline mode sees **21,926**, and every locator past 1,406 lands on the wrong sentence with nothing to announce it. A1 has **0**.
+
+**Every locator on this page is a `sed`/`grep` number.** Read the file with newline translation off, or read [the locator carry](cargo-build-std-locators.md) instead. None of the 213 falls inside the carried runs.
+
+### F5 — the two silences, re-verified
+
+| Claim | Check re-run at this pass | Result |
+|---|---|---|
+| §3b — `compiler_builtins` is not raised | `grep -c` both spellings, whole file | **0 and 0.** `[GAP]` holds |
+| §3c — nothing relates `build-std` to the lockfile | every `build-std` line filtered for `lock`; 8700–8800 searched for `lock` | **none, and none.** `[GAP]` holds |
+
+A `[GAP]` nobody re-checks becomes a habit. These two are now written down as searches, so the next session can repeat them instead of trusting this one.
+
+### F6 — what moved, and what did not
+
+| | Before the forge | After |
+|---|---|---|
+| The ten eye entries | assertions about a gitignored file | **checkable in-repo** — 10 of 10 fall inside the carried runs |
+| The three repaired quotes | silent | **named**, with the damaged text beside them |
+| The `build-std-features` default | not read | **read, and `[GAP]`-marked** (sub-question `d`) |
+| Line numbering | assumed stable | **hazard recorded** — 213 lone CRs, two readers, 214 lines apart |
+| §3a `CLOSED`, §3b/§3c `[GAP]` | pass 0's verdicts | **unchanged, and re-verified** |
+| Any build · any crate list · emission | `NOT_RUN` · unsettled · `[GAP]` | **`NOT_RUN` · unsettled · `[GAP]`** |
+
+**Nothing was closed by this pass.** One question opened, four defects named, one file added.
+
+**F-R receipt:** 55 lines carried at 0.25% of the source; three runs, each with its first-line test recorded; 38 rows, 0 empty cells, 0 surviving carriage returns, counted before the commit; 14 fragments re-read against their own cited lines with 0 failures and 3 silent repairs exposed; one elision found and its consequence marked `[GAP]` rather than ruled; two `[GAP]`s re-verified as written-down searches; the book not committed; no `src/`, no Cargo file, no script. Emission `[GAP]`. Shoe in hands, or no.

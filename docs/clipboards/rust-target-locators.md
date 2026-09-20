@@ -19,6 +19,7 @@
 | **Verbatim / elided** | **Verbatim.** No line shortened, reordered or omitted. **57 of the 93 lines carry text; 36 are blank and are dropped**, so a gap in the left column is a blank source line and nothing else. The source is CRLF; the carriage return is stripped and nothing else is. **The first build of this table claimed the same thing and was wrong** — the CR survived, 36 blank lines emitted as rows holding a bare `^M`, and this pass's own acceptance check caught it before the commit. The field earned its place on the file it is attached to |
 | **Verified** | **Yes** — each row re-read against the SHA after writing |
 | **Fraction of source** | 93 of 31,482 — **0.3%** |
+| **This file, all runs** | source lines: run 1 (93) · run 2 (262) · run 3 (1) · run 4 (209) · run 5 (10) = **575 of 31,482 — 1.8%**, carried as **407 rows** (57 · 173 · 1 · 167 · 9), the rest being blank lines dropped. Each run carries its own fidelity block below; this row is the total, not a substitute for them |
 
 ## The span is 30597–30689, not 30597–30700
 
@@ -573,6 +574,32 @@ Lines 30690–30700 are the **`*-windows-gnu`** page — a different target, a d
 | 1513 | linkage. |
 | 1515 | Each target and target-cpu has a default set of enabled features. |
 
+
+## Run 5 — the paragraph both halves of the shelf now rest on · 14925–14934
+
+**Carried by [the forge](rust-target-clipboard.md#shelf-10-forge--the-traceability-gate-and-the-coverage-map), not by a locator pass**, because two independent claims came to rest on it and neither could be checked in-repo:
+
+- `M-R7`'s soundness obligation — *build all code, the standard library included, with a common set of target-features* — which the recipe's step **B5** turns into a check;
+- the cargo half's new sub-question **d**, opened when [`cargo-build-std-clipboard.md`](cargo-build-std-clipboard.md) found that `build-std-features` carries `panic-unwind` as a **default**.
+
+**First-line test: PASS at 14925 — and the clipboard's own locator fails it.** [Page A](rust-target-clipboard.md) and [Page D](rust-target-clipboard.md) both cite this paragraph as **`14926–14934`**. Line 14926 opens *"Most target-feature problems arise, when mixing code…"* — mid-thought, with no label. Under the rule this file inherited, that is a cut and not a fragment. **The label is one line above, at 14925: `Target Features`.** The span carried here begins there.
+
+**The clipboard's citation is not wrong about where the sentences are** — every quoted fragment in that row stands inside 14926–14934, and the gate confirms it. It is one line short of being *citable* under the shelf's own rule. Recorded; the executed pass bodies are not edited.
+
+**Novelty: 6 of 7** lines ≥25 characters are new against the clipboard, tested before building. **9 rows · 10 source lines · 1 blank dropped · 0 empty cells.**
+
+| Line | Text |
+|---|---|
+| 14925 | Target Features |
+| 14926 | Most target-feature problems arise, when mixing code that have the target-feature enabled |
+| 14927 | with code that have it disabled. If you want to avoid undefined behavior, it is recommended to |
+| 14928 | build all code (including the standard library and imported crates) with a common set of target- |
+| 14929 | features. |
+| 14931 | By default, compiling your code with the -C target-feature flag will not recompile the entire |
+| 14932 | standard library and/or imported crates with matching target features. Therefore, target |
+| 14933 | features are generally considered as unsafe. Using #[target_feature] on individual functions |
+| 14934 | makes the function unsafe. |
+
 ---
 
 ## What these runs carry
@@ -585,6 +612,7 @@ Lines 30690–30700 are the **`*-windows-gnu`** page — a different target, a d
 | Run 2 `W32` mechanisms | **M-R5, M-R6, M-R7, M-R8, M-R10, M-R13** — all twelve of their cited ranges resolve inside |
 | Run 4 | **15 codegen-option fragments**, 209 lines — `M-R6`, `M-R7`, `M-R10`, `M-R11`, `M-R12`, and every option step `B7` fixes as a recipe input |
 | Run 3 | **30154 only.** `M-R3`'s bare `-Zbuild-std` evidence, lifted off a page this shelf otherwise refuses |
+| Run 5 | **14925–14934.** The *Target Features* known-issue paragraph — `M-R7`'s obligation, step `B5`'s reason, and the paragraph the cargo half's sub-question **d** now points at. Carried with the label line the clipboard's locator omits |
 
 **A deferral is not missing context.** Each sentence above is complete and states its claim; where it points elsewhere, the pointer is the content.
 

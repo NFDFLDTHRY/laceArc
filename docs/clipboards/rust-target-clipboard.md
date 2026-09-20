@@ -1,5 +1,7 @@
 # CLIPBOARD — laceArc ← The rustc book (Rust toolchain · target `wasm64-unknown-unknown`)
 
+**Shelf 10 forge, 2026-09-20 — read this first.** Every quoted fragment on this page has been re-read against its own cited lines in the SHA-verified file: **44 of 44 stand byte-verbatim, 0 failures.** The [coverage map](#f2--the-coverage-map-what-is-reachable-in-repo-and-what-still-needs-the-book) says which claims a session without the book can check — **9 of 18 mechanisms fully, 11 of 14 pass-0 eyes, 49 of 79 cited ranges** — and what is left is **25 ranges, 150 lines**, listed in order. One citation on this page (`14926–14934`) fails the shelf's own first-line rule and is repaired by a carry, not by an edit. See [the forge section](#shelf-10-forge--the-traceability-gate-and-the-coverage-map). The pass bodies below are dated records and stand unedited.
+
 **Current A4 availability, 2026-09-20 — later pass 4 source arrival:** the supplied Cargo Book is now **A4 AVAILABLE / BOUNDED SOURCE MAPPING COMPLETE**; read the [A4 Cargo source mapping](#repository-update-pass-4--a4-cargo-source-mapping) for the supported selection syntax and remaining lockfile, component-identity and artifact questions. This later arrival supersedes the earlier A4-absent/next status in the A1 and target-evidence banners below. Those banners, mapping bodies and absence receipts remain dated records. A4's arrival does not close every question assigned to it or authorize a build or ruling.
 
 **Current A1 availability, 2026-09-20 — repository update pass 4:** the newly supplied rustc text exactly matches this shelf's recorded A1 hash, byte count and line count. The [dated re-sighting](#repository-update-pass-4--a1-re-sighting) records the identity and targeted passages read. The earlier twelve-file/A1-absent statements remain dated records; A4 is still absent and next. No build, artifact check or ruling follows from restored source access.
@@ -320,3 +322,98 @@ The file-wide literal search found no `Cargo.lock` occurrence. Its `build-std` r
 **Current Page G carry:** A4 is now available and mapped at bounded source strength; its source-absence blocker is removed. B0/b1 still lacks exact toolchain/component identity, B1/b2/G1 still lacks the build-std lock representation, and B2/b3 still lacks compiler-builtins/closure and complete provenance evidence. These residuals remain **UNESTABLISHED**. A3 and A10 remain absent in their recorded queue order; A11 remains conditional on wanting `target_features` as a witness. This mapping does not reorder the queue or substitute one of those sources for a missing answer.
 
 The corpus now contains fourteen supplied files. Earlier A4-absent/next and thirteen-file statements remain records of the moment before this arrival, as do the original Pass 0/1 mapping and the A1 re-sighting. A4 observations here are **SOURCE / TEXT_OBSERVED**; proposed recipe checks and G8′/G10 remain **NOT_RUN**, with W2's grammar/provenance/validator distinctions unchanged. No download, fixture, build, validator/artifact run, browser/device observation, source import, new campaign verdict, Core operation or R1/R11/R12 ruling was produced.
+
+---
+
+## Shelf 10 forge — the traceability gate and the coverage map
+
+**2026-09-20 · base `3df3df80` · station `clipboards` · plan [`shelf-10-forge-pass-1-plan.md`](shelf-10-forge-pass-1-plan.md).**
+Pass 0 and pass 1 above are dated records and are **not edited by this section.** Everything here is attached, the way the repository-update carries are.
+
+**What the forge does.** Four locator passes carried 565 lines of A1 into [`rust-target-locators.md`](rust-target-locators.md) so that a session never handed the book could check this shelf. Nobody had yet asked the two questions that make a carry worth anything: **are the quotes right**, and **how much of what this page cites is actually reachable?** Both are answered below, mechanically, with the numbers.
+
+### F1 — the gate: every quote re-read at its own cited lines
+
+Each `*"…"*` fragment on this page was matched against **the lines its own row cites** — not against the book at large, which would let a wrong locator pass unnoticed.
+
+| | Count | Result |
+|---|---|---|
+| Rows carrying a locator (pass 0 eye tables + Page A) | **32** | every locator resolves |
+| Quoted fragments inside them | **44** | **44 stand byte-verbatim at their cited lines. 0 failures. 0 repairs needed** |
+| Rows carrying no quoted string | **4** | claim nothing verbatim; correct |
+
+**A1 needed no repair because A1 has no damage.** The attachment contains **zero** lost-ligature artefacts and **zero** lone carriage returns, so its line numbers read the same under `sed`, `grep`, an editor, or a program in universal-newline mode. [The A4 half is not so lucky](cargo-build-std-clipboard.md#shelf-10-forge--the-locator-carry-and-the-traceability-gate--executed), and the contrast is the only reason the A4 defect was visible at all.
+
+### F2 — the coverage map: what is reachable in-repo, and what still needs the book
+
+**Fail closed.** A mechanism is *carried* only when **every** range it cites falls inside a carried run. One range outside and the row is `PARTIAL`, however small the remainder.
+
+| Page A | Rows | Cited ranges |
+|---|---|---|
+| **Fully carried** | **9** — `M-R2`, `M-R5`, `M-R6`, `M-R10`, `M-R11`, `M-R13`, `M-R14`, `M-R17`, `M-R18` | checkable in-repo end to end |
+| **Partly carried** | **6** — `M-R1`, `M-R3`, `M-R7`, `M-R8`, `M-R12`, `M-R15` | the wasm64/wasm32/codegen parts resolve; the rest do not |
+| **Not carried** | **3** — `M-R4`, `M-R9`, `M-R16` | every range still needs the book |
+| **Ranges** | | **49 of 79 carried** |
+
+| Pass 0 eyes | | |
+|---|---|---|
+| **Carried** | **11 of 14** — `E1`–`E11`, the whole wasm64 page | |
+| **Not carried** | **3** — `E12` (14885), `E13` (14887–14888), `E14` (18878) | custom targets and the tier table, deferred by every pass so far |
+
+**`M-R16` is 0 of 9 and it is the one that matters most.** It is the `--print` set — the raw material of the build receipt that step **B0** requires and rows `b1`, `b3` depend on. The recipe's most-cited mechanism is its least checkable.
+
+### F3 — what remains is finite, and here it is
+
+Every range this page cites that no run carries, merged and counted:
+
+| Cluster | Ranges | Lines | Serves |
+|---|---|---|---|
+| **`--print` and the command-line set** | 332–333 · 394 · 565–570 · 575–582 · 587–599 · 604–627 · 632–633 · 638–640 · 645–650 · 722–728 · 15683 | **73** | `M-R16` (all 9) · `M-R15` · `M-R8` · `M-R7` |
+| **Custom targets** | 14815–14821 · 14863–14865 · 14871–14885 · 14887–14888 · 14893–14901 · 14906–14917 | **48** | `M-R9` (all 5) · `M-R3` · `M-R4` · `E12` · `E13` |
+| **Symbol mangling** | 16797–16801 · 16820–16823 · 16962–16970 | **18** | `M-R12` — and with it `b3`'s name-section scan |
+| **Tier tables** | 18460–18462 · 18468 · 18878 | **5** | `M-R1` · `E14` |
+| **nvptx** | 26538–26539 · 26587–26590 | **6** | `M-R3`'s `OTHER`-scope crate-list evidence |
+| | **25 ranges** | **150** | |
+
+**150 lines.** 575 are carried; complete coverage of everything this page cites is **725 of 31,482 — 2.3%**, inside [pass 1's ceiling of 3.8%](rust-target-locators-pass-1-plan.md). The job was open-ended before this section; it is bounded now, and the cluster order above is the order the earlier passes named — the `--print` set first, *"the one that matters most for `b1`."*
+
+**This is not the same 499 that [pass 3's plan](rust-target-locators-pass-3-plan.md) §0 counted, and both numbers are right.** That table counted **whole chapter fragments** — each option entry end to end, gaps included. This one counts **only the ranges this page cites**, which is what [the rests-on rule](rust-target-locators.md#what-this-is-not) admits: *an extract carries the lines a claim rests on.* The difference is the uncited text between cited ranges.
+
+**A later pass will land between the two, and [run 5](rust-target-locators.md#run-5--the-paragraph-both-halves-of-the-shelf-now-rest-on--1492514934) shows why:** the first-line test can force a carry to be *larger* than the cited range, when the label the rule demands sits outside it. **The rests-on rule sets the floor; the first-line test raises it where a fragment would otherwise open mid-sentence.** 150 is the floor, not the estimate.
+
+### F4 — one citation on this page fails the shelf's own rule
+
+Pages A and D both cite the *Target Features* known-issue paragraph as **`14926–14934`**. Line 14926 opens *"Most target-feature problems arise, when mixing code…"* — mid-thought, unlabelled.
+
+**Under the first-line rule this shelf adopted — *a fragment may be carried when its first line names the thing it defines* — a fragment cut at 14926 is not a fragment.** The label sits one line above: `Target Features`, at **14925**.
+
+The quotes are not wrong; the gate confirms every one of them stands inside 14926–14934. The citation is **one line short of being citable**. [Run 5](rust-target-locators.md#run-5--the-paragraph-both-halves-of-the-shelf-now-rest-on--1492514934) carries **14925–14934** with the label, which is the repair — the executed pass bodies above stay as they are.
+
+This paragraph was carried out of turn because **both halves of the shelf now rest on it**: it is `M-R7`'s soundness obligation and step `B5`'s reason, and the A4 half's [new sub-question **d**](cargo-build-std-clipboard.md#f3--the-elision-that-cost-a-sentence-and-the-gap-it-opens) points straight at it.
+
+### F5 — what the A4 half sent back
+
+Two corrections arrive from the sibling clipboard and land on rows of this page. **Neither is applied to the pass bodies above; both are recorded:**
+
+| From A4 | Lands on |
+|---|---|
+| `build-std-features` carries **`panic-unwind` as a default**, and the book is silent on whether the defaults apply when the crate list omits `std` (`[GAP]`, sub-question **d**) | **`B5`** — the recipe must set `-Z build-std-features` **explicitly** rather than inherit a default it cannot read. `[PROPOSAL]`, not a ruling |
+| A4 answers the flag form and **not** the lockfile or `compiler_builtins` | **`b2`, `b3`** — *`[BLOCKED on A4]`* was too optimistic; already recorded in [the A4 pass](cargo-build-std-clipboard.md) §3 and restated here so this page's Page G queue is not read as satisfied |
+
+### F6 — what moved, and what did not
+
+| | Before the forge | After |
+|---|---|---|
+| Are the 44 quotes right? | untested | **44 of 44 at their own cited lines** |
+| How much is reachable in-repo? | unknown | **9 of 18 mechanisms fully · 11 of 14 eyes · 49 of 79 ranges** |
+| How much work is left in the extract job? | open-ended | **25 ranges · 150 lines · 5 clusters, in order** |
+| The `14926` citation | assumed citable | **fails the first-line rule; run 5 carries the label line** |
+| `M-R16` / the build receipt | cited everywhere | **named as the least-checkable mechanism on the page** |
+| `B5` | inherits a feature default | **must state it** — `[PROPOSAL]` |
+| Page D rows · G8′ · G9 · G10 · any build | `NOT_RUN` | **`NOT_RUN`** |
+| `b2`, `b3`, `b7`, R1, R11, R12 | blocked · blocked · human | **unchanged** |
+| Emission | `[GAP]` | **`[GAP]`** |
+
+**Nothing was closed. No ruling was taken. No `[GAP]` was filled.**
+
+**F-R receipt:** 44 quoted fragments re-read against their own cited lines, 0 failures; 32 locator-bearing rows audited; a coverage map computed fail-closed over 79 cited ranges; the remainder merged to 25 ranges and 150 lines and ordered; one first-line-rule failure found in this page's own citation and repaired by carrying the label line, not by editing the executed body; two corrections received from the A4 half and recorded; the book not committed; no `src/`, no Cargo file, no script added to the tree. Emission `[GAP]`. Shoe in hands, or no.
