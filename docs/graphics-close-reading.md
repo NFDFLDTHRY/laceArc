@@ -108,28 +108,45 @@ new arrival" — would contradict rows 0002 and 0006.
 
 The manifest states that D1 "is an illustrative mix of WORD and POINTER rows,
 not a complete emission algorithm" (Piece 5), and marks the emission rule
-[GAP]. The rows demonstrate it rather than assert it. Two independent
-demonstrations:
+[GAP]. The rows constrain possible emitters while leaving that rule open.
 
-**Adjacency does not emit a pointer.** The array holds four adjacent WORD pairs.
-Only two are linked:
+**Current scope clarification (2026-09-20):** the row observations below are
+source readings; the per-STEP conclusion is a conditional inference using the
+existing S4.3 premise. No emission rule or arrival partition is selected here.
 
-| Adjacent WORD pair | Words | Linked by |
+**Consecutive WORDs need not be linked in the illustrated prefix.** D1 has four
+pairs consecutive in its WORD subsequence, not necessarily adjacent in the raw
+array. Only two are linked:
+
+| Consecutive WORD-subsequence pair | Words | Linked by |
 |---|---|---|
 | 0000, 0001 | PIE, DESSERT | 0002 ✔ |
 | 0001, 0003 | DESSERT, PIE | — ✘ |
 | 0003, 0005 | PIE, WHOLE | 0006 ✔ |
 | 0005, 0008 | WHOLE, CUSTOMER | — ✘ |
 
-DESSERT→PIE and WHOLE→CUSTOMER are consecutive words with no pointer between
-them. "Every consecutive pair emits a pointer" is therefore ruled out by the
-source itself — not merely unstated.
+DESSERT→PIE and WHOLE→CUSTOMER are consecutive WORD occurrences with no linking
+POINTER in D1. A rule requiring a POINTER for every consecutive WORD pair within
+this illustrated prefix cannot reproduce D1. This does not rule out a later
+POINTER or decide whether adjacency itself is a relation.
 
-**Pointer count per arrival is variable.** Pointers appended after each WORD,
-in order: **0, 1, 1, 2, 2**. No arrival-driven rule of fixed fan-out fits.
+**Final POINTER gaps differ.** Between successive WORD rows, and after the last
+WORD, D1 has **0, 1, 1, 2, 2** POINTER rows. These are final-array gap counts.
+They become per-STEP emission counts only under the
+[S4.3 refinement premise](math-execution-model.md#s43-partial-step-schema-honest):
+each STEP's sole `Arrive(v)` comes first, followed only by zero or more Φ
+appends. Under that premise, the frontiers are **1, 3, 5, 8, 11**, and a fixed
+fan-out per STEP cannot reproduce D1. This is the conditional reading retained
+by [environment F-H5](plans/lace-context-iter6-pass-4-environment.md#e3--the-fences-as-predicates-on-σ).
 
-Taken together: D1 shows what pointers *can express*. It is not a trace of a
-deterministic emitter, and it cannot be reverse-engineered into one.
+[Reduction M3](plans/reduction-pass-2-execution-model.md#x5--theorems) gives the
+boundary counterexample: placing row 0002 at the beginning of the third segment
+preserves final D1 but gives frontiers **1, 2, 5, 8, 11**. That is missing
+partition information, not an admissible schedule under S4.3. The broad schedule
+type and final-row equality do not settle the ordering inheritance obligation.
+
+D1 shows what pointers *can express*. Its final rows alone neither identify a
+deterministic emitter nor determine arrival boundaries.
 
 One further pattern, recorded but **not** promoted to a rule: every entry except
 the newest (0010) is referenced by at least one later entry. If that were a
