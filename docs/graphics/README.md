@@ -19,7 +19,7 @@ Graphic C ASCII companion (iteration 2 passes 3–6): [`graphic-c-ascii.md`](gra
 
 Iteration law + queue: [`ascii-iterations.md`](ascii-iterations.md). Iteration 1 receipt: [`ascii-iteration-1-receipt.md`](ascii-iteration-1-receipt.md). Iteration 2 receipt: [`ascii-iteration-2-receipt.md`](ascii-iteration-2-receipt.md). Six passes close an iteration. Leftovers are the next iteration, not pass 7.
 
-Prefix-device pass 1 (lens, not law): [`prefix-device-pass-1.md`](prefix-device-pass-1.md). Pass 2 (no winner): [`prefix-device-pass-2.md`](prefix-device-pass-2.md). Pass 3 (Q0 entry admission opened on the emission file; when still `[GAP]`): [`prefix-device-pass-3.md`](prefix-device-pass-3.md). Do not replace the PNGs. Do not fill G2.
+Prefix-device: [pass 1](prefix-device-pass-1.md) lens. [pass 2](prefix-device-pass-2.md) collisions. [pass 3](prefix-device-pass-3.md) Q0 opened. [pass 4](prefix-device-pass-4.md) nuance map / blank speak-sheet. Do not replace the PNGs. Do not fill G2. Do not stamp SPOKEN from the map.
 
 Hologram touches (not this directory): `docs/hologram/`. Those diagnose the holder. They are not a fifth graphic.
 
