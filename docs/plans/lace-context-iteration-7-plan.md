@@ -1,6 +1,6 @@
 # Iteration 7 — the team, the distribution model, and the component inventory
 
-**Status:** `[PROPOSAL]` iteration. Passes 1–3 executed; passes 4–6 scoped. **Freeze:** the human stated 2026-09-19 21:23 PT that all other agents are paused for the duration of this work and the repo will not change underneath it; §3's local-claim caveat is therefore moot for this sitting and the bundle lands on `e2e8155` clean. **Station:** maps. **Emission:** `[GAP]`. No `src/`.
+**Status:** `[PROPOSAL]` iteration — **closed early**, receipt: [lace-context-iteration-7-receipt.md](lace-context-iteration-7-receipt.md). Passes 1–3 executed; 4–6 folded into [the reduction](reduction-pass-1-plan.md). **Freeze:** the human stated 2026-09-19 21:23 PT that all other agents are paused for the duration of this work and the repo will not change underneath it; §3's local-claim caveat is therefore moot for this sitting and the bundle lands on `e2e8155` clean. **Station:** maps. **Emission:** `[GAP]`. No `src/`.
 **Pinned base:** `e2e8155942b6ef084d2ef9f4a05fcf8fb1dd829f`; **stacked on** branch `lace-context-iteration-6` (its receipt is the board this iteration inherits). **Editor:** one agent (Claude Fable 5.1, cloud, no push credential); propose / attack / resolve by the same hand — declared.
 **Convened by:** the human, 2026-09-19 21:12 PT, in this session. The subject is his, in his words, and each clause is carried to the pass that owns it:
 
