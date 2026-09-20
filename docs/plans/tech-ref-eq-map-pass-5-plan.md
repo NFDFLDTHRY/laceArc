@@ -1,6 +1,6 @@
 # Technician references × mathematical model — Pass 5 of 6 PLAN
 
-**Status:** **`PLAN`** · not executed. **Station:** maps (HELD `Grok-maps` · BASE `32bace2`).
+**Status:** **`EXECUTED`** 2026-09-20 · [`tech-ref-eq-map-pass-5-petersen.md`](tech-ref-eq-map-pass-5-petersen.md). **Station:** maps (`Grok-maps`).
 **Depends on:** pass 1 T4 · passes 2–4 EXECUTED.
 **Text:** Petersen & Zech *Mathematical theory of deep learning*.
 **Cite-only:** reason-map §4 P1–P7 · petersen-zech clipboard · five-stakes page 4.
