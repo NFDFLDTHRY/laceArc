@@ -75,6 +75,7 @@
 | [verification-iter5-pass-2-plan.md](verification-iter5-pass-2-plan.md) | `[PLAN]` iteration 5 pass 2: a human ruling makes the station map a handover document, and 31 files give an arriving agent the wrong campaign |
 | [verification-iter5-pass-2-findings.md](verification-iter5-pass-2-findings.md) | pass 2 record. The catch-all was right about all 31 — and the largest campaign in the tree has never claimed a station |
 | [verification-iter5-pass-3-plan.md](verification-iter5-pass-3-plan.md) | `[PLAN]` iteration 5 pass 3: Φ gained a definition and every existing use of it became imprecise in the same commit |
+| [verification-iter5-pass-3-findings.md](verification-iter5-pass-3-findings.md) | pass 3 record. The Φ split predates the campaign by a day; Q1–Q5 is a real collision and the Roman numerals are not |
 | [restructure-plan.md](restructure-plan.md) | `[PROPOSAL]` coherence of the whole tree: twelve measured findings, eight phases, one station per commit; supersedes the defrag plan as filing plan of record |
 
 Sub-shelves: [fixtures/](fixtures/README.md) sealed golden IR · [tools/](tools/README.md) host validator.

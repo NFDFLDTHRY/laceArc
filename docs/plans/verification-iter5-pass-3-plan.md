@@ -1,6 +1,6 @@
 # Verification iteration 5, pass 3 — a token that changed underneath the tree
 
-**Status:** `[PLAN]`. **Station:** maps. **Emission:** `[GAP]`. No `src/`.
+**Status:** **EXECUTED.** [Findings](verification-iter5-pass-3-findings.md) — **the falsifier fired: the split is a day older than the campaign.** **Station:** maps. **Emission:** `[GAP]`. No `src/`.
 **Iteration:** [iteration 5](verification-iteration-5-plan.md). **Prior:** [pass 2 findings](verification-iter5-pass-2-findings.md).
 **Subject:** mapping **II** — [the namespace register](../namespace-register.md), 28 families.
 
