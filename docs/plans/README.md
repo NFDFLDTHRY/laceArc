@@ -4,7 +4,8 @@ Plans, proposals, executed pass records, and dated receipts share this shelf. Ea
 
 | File | Job |
 |---|---|
-| [math-execution-update-pass-1-plan.md](math-execution-update-pass-1-plan.md) | **`PLAN`** — UPDATE campaign pass 1 of 6 for the sealed partial math-execution model. Model is old against the tree. Human: Φ rules **calculated, not known yet**. Pass 1 = drift register only; does not rewrite S0–S8; does not promote SPOKEN to schedule. Φ `[GAP]` |
+| [math-execution-update-pass-1-drift.md](math-execution-update-pass-1-drift.md) | **EXECUTED** UPDATE pass 1 drift register. 12/12 U-rows kept. Model body frozen. SPOKEN ≠ calculated. Φ `[GAP]` |
+| [math-execution-update-pass-1-plan.md](math-execution-update-pass-1-plan.md) | **`EXECUTED`** — UPDATE campaign pass 1 of 6. Drift audit only. Does not rewrite S0–S8. Does not promote SPOKEN to schedule. Φ `[GAP]` |
 | [repo-update-pass-4-plan.md](repo-update-pass-4-plan.md) | **EXECUTED locally** at `335429c`:27 paths across nine stations, including the recorded A1 re-sighting amendment; lifecycle/update/install/fallback, claim/RESYNC and source/reader repairs. Browser/device/renderer conditions remain pending; the receipt preserves the local handoff before publication |
 | [repo-update-pass-4-evidence.md](repo-update-pass-4-evidence.md) | 570-path baseline and pass3 publication; P4-01–P4-13 dispositions;74 runtime /75 control /15 override checks, failing-baseline and independent challenges, six PDF pages, restored exact A1 source and subsequent bounded Cargo A4 mapping; exact manifest and dated local handoff |
 | [repo-update-pass-3-plan.md](repo-update-pass-3-plan.md) | **EXECUTED; subsequently published**: thirty scoped paths in eight station commits ending `335429c`; reviewed controls/viewer and procedure/source repairs; conditional browser/source/renderer work remains explicit |

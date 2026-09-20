@@ -1,8 +1,8 @@
 # Mathematical execution model — UPDATE campaign · Pass 1 of 6 PLAN
 
-**Status:** **`PLAN`** · not executed. **Station:** maps (HELD `Grok-maps` · BASE `ad54212`).
+**Status:** **`EXECUTED`** 2026-09-20 · [`math-execution-update-pass-1-drift.md`](math-execution-update-pass-1-drift.md). **Station:** maps (`Grok-maps`).
 **Emission:** `[GAP]`. No `src/`. Not an emitter. Does not accept `pointer-emission.md`.
-**Object under test:** [`docs/math-execution-model.md`](../math-execution-model.md) — sealed **partial** Hands algebra (old Pass 2 product).
+**Object under test:** [`docs/math-execution-model.md`](../math-execution-model.md) — sealed **partial** Hands algebra (old Pass 2 product). **Body untouched this pass.**
 **Why a new campaign:** that model is **old against the tree**. Human 2026-09-20: pointer-emission rules **will need to be calculated, not known yet**. The systems-level model is how those questions get answered. Copying SPOKEN campaign lines into `Step` would be knowing, not calculating.
 
 This file does not rewrite S0–S8. Execute writes a drift register only.
