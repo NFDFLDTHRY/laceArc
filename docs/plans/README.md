@@ -4,6 +4,7 @@ Plans, proposals, executed pass records, and dated receipts share this shelf. Ea
 
 | File | Job |
 |---|---|
+| [systems-eq-map-pass-4-plan.md](systems-eq-map-pass-4-plan.md) | **`PLAN`** — systems×equations pass 4. Completeness sit: UNMAPPED, likely misses, no invented symbols. Φ `[GAP]` |
 | [systems-eq-map-pass-3-u12.md](systems-eq-map-pass-3-u12.md) | **EXECUTED** systems×equations pass 3. U1–U7 toolchain cards. Target not a stitch. Φ `[GAP]` |
 | [systems-eq-map-pass-3-plan.md](systems-eq-map-pass-3-plan.md) | **`EXECUTED`** — pass 3 U12-CALC cards. Φ `[GAP]` |
 | [systems-eq-map-pass-2-wall.md](systems-eq-map-pass-2-wall.md) | **EXECUTED** systems×equations pass 2. W1–W6 wall cards. Limits not stitches. G2 unfilled. Φ `[GAP]` |
