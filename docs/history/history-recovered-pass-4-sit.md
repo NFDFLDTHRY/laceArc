@@ -1,5 +1,7 @@
 # History recovery pass 4 — how the fourth extract sits
 
+**Supersession notice, 2026-09-20:** The [human correction in live law](../law-why-these-documents.md#conceptual-reference-documents) classifies HCC-A, The Coffee Cup, and Where the Water Is Loud / Dual Proofing Systems as conceptual reference documents. The gearbox classification presented below as “Lawful reading now” is the earlier interpretation and is superseded. Historical quotations and their attribution limits are preserved; they do not establish required holder components, runtime dependencies, or legal-append conditions. The exclusions against importing conceptual ledger operations or OBS as Graphic D remain intact.
+
 Source: workspace attachment `Lace_Memory_Recovery_Pass_4_2026-09-18.md` (18 September 2026).
 
 Supplements [pass 1](history-recovered-2026-09-18.md), [pass 2](history-recovered-pass-2-2026-09-18.md), [pass 3](history-recovered-pass-3-2026-09-18.md).

@@ -8,7 +8,9 @@ Moved here in defrag pass 1.
 
 ## Extractions and their sit-notes
 
-An **extraction** is what a pass recovered. A **sit-note** is how that extract sits against the law as it stands. They are separate files on purpose: the extract is evidence, the sit-note is the ruling.
+An **extraction** is what a pass recovered. A **sit-note** is the interpretation of that extract against the law at the time of its reading. They are separate files on purpose. A sit-note does not amend live law; its dated interpretation can be superseded without changing the extracted evidence.
+
+**Human correction, 2026-09-20:** HCC-A, The Coffee Cup, and Where the Water Is Loud / Dual Proofing Systems are conceptual reference documents. The [live-law correction](../law-why-these-documents.md#conceptual-reference-documents) supersedes their earlier required-gearbox / holder-machinery classification. The source concepts, historical quotations, and exclusions against importing ledger mutation or OBS as Graphic D operations remain available. References to required gears in the retained records describe the earlier interpretation, not present runtime dependencies or legal-append conditions.
 
 | File | What it is |
 |---|---|
@@ -28,6 +30,21 @@ An **extraction** is what a pass recovered. A **sit-note** is how that extract s
 POINTER emission stays `[GAP]`. No `src/`.
 
 ## Relationship evidence questions
+
+### Current re-anchor — 2026-09-20
+
+The approved repo-update pass compared the [Pass 3 handoff](relationship-evidence-pass-3-handoff.md) directly with the companion at baseline `0b2012bb221184f684f672f63260c6b1ecd9427b`, blob `3d39f5378cf0201c90e0b54e3a1d8c4a04e98e23`. The blob has changed since the closed campaign; that alone does not establish adoption of either proposal.
+
+| Handoff item | Direct comparison at this baseline | Disposition |
+|---|---|---|
+| A — star caption | `Star mechanism (pass 5)` still says `write: the WORD rows only`; it lacks the proposed distinction between occurrence rows and the star view's recorded threading participation | `NOT_APPLIED`; presentation remains maps-owned |
+| B — coupling note | The piece board, graphic lists, participation/star panels, and later definition/dictionary passages still do not state the proposed coupling of ordered definition routes, later reuse through distinct passages, and retained participation together | `NOT_APPLIED`; presentation remains maps-owned |
+
+The previous campaign's station hold ended: the history station records a force-release at `2026-09-20T01:04:47Z` and was FREE at this baseline. Use [coordination status](../coord/README.md#entrypoint) for live claims. The campaign remains **CLOSED 6/6**; this re-anchor neither starts its Pass 7 nor accepts emission. It changes no companion text. Any later maps disposition must cite its own comparison or edit.
+
+### Frozen campaign summaries
+
+The entries below describe each linked pass at its recorded pin. In particular, `2628df45`, `NO-DRIFT`, and the campaign's hold statements are historical receipts, not current companion or station status. The re-anchor above supplies the later comparison; the original question packet, findings, and receipts remain preserved.
 
 [Two-point challenge, pass 1](relationship-evidence-pass-1.md): original question packet and fixed historical samples, preserved. The two snapshots share document blobs and are not independent corroboration. This is not recovery pass 8, a global-diagram pass, or a reopening of quiet-door #5. No acceptance or Core change.
 

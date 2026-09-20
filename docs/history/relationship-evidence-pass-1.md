@@ -1,5 +1,7 @@
 # Relationship evidence questions — pass 1
 
+**Supersession notice, 2026-09-20:** The [human correction in live law](../law-why-these-documents.md#conceptual-reference-documents) classifies HCC-A, The Coffee Cup, and Where the Water Is Loud / Dual Proofing Systems as conceptual reference documents. The retained packet's “holder machinery” classification is superseded; it supplies no required runtime component or legal-append condition. The historical samples, questions, read-scope limits, and exclusion of those concepts as WORD/POINTER sections are preserved.
+
 **Stage:** documentation / evidence questions. **Sampling and bounded text inspection:** performed. **Mapper response / independent adjudication:** NOT_RUN. This is not a global ASCII pass, recovery pass 8, or a reopening of quiet-door #5. It does not amend the manifest or accept pointer emission.
 
 **Requested task:** The human asked to claim a door for load-bearing evidence questions, with two random points in repository history as a test. This task takes the `history` station for this question packet, not `maps` for diagram editing. The scheduled global-manifest tracking task remains read-only and is not changed here.
