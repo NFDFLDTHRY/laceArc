@@ -1,13 +1,13 @@
 # Pointer emission
 
-**Status:** DRAFT. **Object:** claimed. Law station HELD Grok-evidence.  
+**Status:** DRAFT. **Object:** claimed. Law station.  
 **Not accepted.** Not implemented. `src/` remains forbidden.  
 This file is the next honest artifact. It may be worked.
 
 Three rules used to be one sentence. That sentence was the blocker.
 
 | Rule | Still | Not |
-|---|---|---|
+|---|---|
 | Invent an emit-when, arity law, or adjacency law from habit, stakes, or “helpful” default | **Breach** | — |
 | Record what the four graphics already close, or write the human’s in-repo sentence onto an Answer line | **Work on this file** | Acceptance |
 | Human says this file is accepted, in-repo, in words | **Opens Implementation Law** | A commit, a draft rule v0, or an `emit` stub |
@@ -28,21 +28,34 @@ Do not silence the graphics with a default. Do not treat this draft as Core code
 ## Authority
 
 - Four graphics in `docs/graphics/` (A–D) and `docs/systems-manifest.md` derived from them.
+- Prefix-device pass 1–2 are readings, not a when-law: [`docs/graphics/prefix-device-pass-1.md`](graphics/prefix-device-pass-1.md), [`docs/graphics/prefix-device-pass-2.md`](graphics/prefix-device-pass-2.md).
 - If the picture is silent → write `[GAP]`. Do not invent.
 - Stake PDFs, history recoveries, shadow-clock / gearing, crate maps, and “helpful” defaults are silenced for *invented* answers. They may be cited as CONFLICT when the repo already recorded one.
 
 ## Required open questions (AGENTS.md)
 
+Entry admission is Q0. Pointer admission is Q1. They are not one question.
+
+### 0. When is a WORD (entry) appended?
+
+- **Question:** After a punch-card word arrives, when is a WORD section appended?
+- **Graphic / Piece cited:** D1, D2, D5, A2, A5, B2, B3, B6, C10. Prefix-device pass 2 Collision I.
+- **What the picture shows:** Empty line, then first WORD begins a star (A2; D1 `0000 PIE`). Later same variable is another WORD (D1 `0003 PIE`; D5). Punch-card feeds words in arrival order (B6, C10). D2: the variable is the word.
+- **What the picture does not settle:** Whether a later arrival of an already-present variable could be POINTER-only (session speech “do not save the original text”; pass 2 slot I still `[unspoken]`).
+- **Answer:** `[GAP]` for later-arrival kind. **CLOSED** that the first occurrence of a variable is a WORD. **CLOSED** intern (same as Q5: `0003` is a new WORD, not a count on `0000`).
+- **Stamp:** `[GAP]` + two CLOSED. Not accepted. Not SPOKEN.
+- **Bind:** Pass 2 Collision I points here and at Q1/Q5. Do not merge. Chat candidate “WORD on every punch-card arrival” is not SPOKEN.
 
 ### 1. When is a POINTER appended?
 
 - **Question:** After a word arrives and a WORD section is (or is not) appended, when — if ever — is a POINTER section also appended?
 - **Graphic / Piece cited:** Graphic D (D1–D3, D6); Piece 5 Boundary; Piece 2 Continue.
-- **What the picture shows:** The array contains both WORD rows and POINTER rows. A later section can participate in earlier sections. Continue is “append a new section.”
+- **What the picture shows:** The array contains both WORD rows and POINTER rows. A later section can participate in earlier sections. Continue is “append a new section.” D footer: use pointers to participate in what already exists.
 - **What the picture does not settle:** Which arrivals write WORD only, which write POINTER, which write both, and what in the hands decides. Piece 5: Graphic D’s table is an illustrative mix, not a complete emission algorithm.
 - **Answer:** `[GAP]` for the positive *when*.
 - **CLOSED (ruled out, not a when):** “every adjacent WORD pair emits” — D1 WORD pairs DESSERT–PIE (0001 then 0003) and WHOLE–CUSTOMER (0005 then 0008) have no pointer. “One POINTER per WORD arrival” — D1 fan-out after successive WORDs is 0, 1, 1, 2, 2.
 - **Stamp:** `[GAP]` + two CLOSED refusals. Not accepted. Not SPOKEN.
+- **Bind:** Pass 2 Collision I. Prefix-device Φ is a lens, not this Answer. Chat candidate “POINTER when the section must participate” is not SPOKEN.
 
 ### 2. What is the arity?
 
@@ -88,6 +101,7 @@ Pointers reference earlier positions in the same line. Graphic D key properties;
 - **What the picture does not settle:** Whether that pass *must* also write a POINTER.
 - **Answer:** `[GAP]` for *require*. **CLOSED** that a later pass is at least a new WORD occurrence (0003), not a collapsed intern.
 - **Stamp:** `[GAP]` + one CLOSED (no intern). Not accepted.
+- **Bind:** Q0 later-arrival kind and Q1 positive when. Pass 2 Collision I. One collision, three questions. Do not pick slot I here.
 
 No other extra questions. Document provenance, query operators, and spelling/case are silences of other pieces; they do not by themselves force an emission rule.
 
@@ -101,13 +115,15 @@ These are **rejected lookalikes**, not candidate rules. This table is not an alg
 | Reidemeister / slide / virtual | rewrite — Rule Zero |
 | next-token / causal LM | projection, not append |
 | `[MASK]` / intern / embed | cut / second store |
-| train \(w\) / NTK / GNN | second world |
+| train / NTK / GNN | second world |
 | ReAG edge | holder photo ≠ POINTER |
 | “touch grows lace” | history — rejected walker |
 | exact-match ties | history — rejected |
 | D06 substitution | not a write |
 | variable / cluster label | names; does not write POINTER |
 | clock tooth / Anchor / Locate | holder gear; Graphic D is silent |
+| prefix-device Φ as when | lens from pass 1; not Q0/Q1 |
+| chat ENTRY/POINTER pair | offered; not written back; not SPOKEN |
 
 ## Pass 1 — stamp walk
 
@@ -117,7 +133,7 @@ These are **rejected lookalikes**, not candidate rules. This table is not an alg
 ### Pass 1 stamp table
 
 | Q | Stamp | Cite |
-|---|---|---|
+|---|---|
 | Q1 when | `[GAP]` | D1 mix; Piece 5 illustrative |
 | Q1 every-adjacent-emits | CLOSED ruled out | D1 0001–0003, 0005–0008 |
 | Q1 fixed fan-out | CLOSED ruled out | D1 0,1,1,2,2 |
@@ -139,11 +155,24 @@ Opened A, B, D from the clone. D1 eleven rows match the close-reading transcript
 
 Shoe in hands. Stamps are not the when.
 
+## Pass 3 — entry admission opened
+
+**Status:** EXECUTED. Not accepted. No new SPOKEN lines. No `src/`.  
+**Receipt:** [`docs/graphics/prefix-device-pass-3.md`](graphics/prefix-device-pass-3.md). Plan: [`docs/graphics/prefix-device-pass-3-plan.md`](graphics/prefix-device-pass-3-plan.md).
+
+### Pass 3 stamp table
+
+| Q | Stamp | Cite |
+|---|---|
+| Q0 first occurrence is WORD | CLOSED | A2; D1 `0000` |
+| Q0 intern | CLOSED ruled out | D1 `0003`; same as Q5 |
+| Q0 later-arrival kind | `[GAP]` | pass 2 slot I unspoken |
+| Q1 when | `[GAP]` (unchanged) | bind pass 2 I; chat candidate not SPOKEN |
+| Q5 require POINTER | `[GAP]` (unchanged) | bind Q0/Q1 |
 
 ---
 
 ## Acceptance
-
 
 This file is accepted only when the human says so **in-repo**.
 
