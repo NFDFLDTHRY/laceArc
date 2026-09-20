@@ -1,6 +1,6 @@
 # The rustc book → locator extract — Pass 1 PLAN
 
-**Status:** **`PLAN`. Not executed.** **Station:** clipboards. **Emission:** `[GAP]`. No `src/`.
+**Status:** **`EXECUTED`** → [`rust-target-locators.md`](rust-target-locators.md). **Neither falsifier fired.** 53 of 63 lines were new against the clipboard's quotes; the run is a whole page and self-contained. **Station:** clipboards. **Emission:** `[GAP]`. No `src/`.
 **Product it will build:** `rust-target-locators.md` — **not the book.**
 **Authority:** `refs/local/The-rustc-book.txt` · **31,482 lines** · `sha256 4a30e620a066c8157de4af674196df81694bb183ea09cef0a89dd8dbec4e74d3`. Then [the clipboard](rust-target-clipboard.md)'s cited ranges.
 **Not authority:** this extract, ever. A locator points at the book at that SHA; the extract is a convenience and may not be cited in its place.
