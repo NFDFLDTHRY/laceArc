@@ -2,7 +2,7 @@
 
 Layer III only. Not Core. Emission remains [GAP]. No src/.
 
-**Current command/mapping audit:** repository update pass 1, 2026-09-20, base `0b2012b`. This prompt documents the existing dispatcher; it grants no editing, override, commit or publication authority. Re-read live ownership before each task.
+**Current command/mapping audit:** repository update pass 2, 2026-09-20, against base `10fe4947` with the local dispatch/reason repair. This prompt documents the dispatcher and its isolated checks; it grants no editing, override, commit or publication authority. Re-read live ownership before each task.
 
 ```
 ╔══════════════════════════════════════════════════════════════════════════╗
@@ -67,6 +67,8 @@ The dispatcher uses the most specific owned path. This table records the current
 | `docs/coord/**` | coord |
 | `docs/gearing/contracts-<shaft>.js` | `gear:<shaft>` |
 
-**Known dispatcher limitation:** at the audited base, `force-free gear:<shaft>` reaches a delegate that accepts only claim/release/check/refresh and rejects force-free. This is [U21](../plans/repo-update-pass-1-evidence.md), a static finding awaiting a separately scoped code fix. Do not work around it by editing state files or clearing a real hold as a test. A documented override still requires applicable steward/human authority and a recorded reason; it is not a normal editing step.
+**Verified dispatch and reason path:** the [pass 2 repair](../plans/repo-update-pass-2-evidence.md) addresses the rejected gear dispatch recorded in [pass 1 U21](../plans/repo-update-pass-1-evidence.md). The umbrella requires a reason and forwards it to the gear backend, which retains it in `NOTE`. An already-FREE doc station rejects the override; an already-FREE gear claim accepts it and retains the supplied reason. The direct gear command still permits its existing no-reason invocation, which clears `NOTE`. The [15-case isolated fixture](../coord/tests/force-free-dispatch.sh) checks both entrypoints and untouched sentinels; no live hold was used as a fixture. Ordinary claim/release/check/refresh behavior is unchanged.
+
+The direct shaft override remains human-only under [CLAIMS.md](../gearing/CLAIMS.md#5-human-override). An available command does not grant authority, determine staleness or authorize editing state files. Preserve the applicable human instruction and reason; override is not a normal editing step.
 
 Follow the governing [coordination protocol](../coord/README.md) and [standing orders](../../AGENTS.md); this ticket cannot expand them.
