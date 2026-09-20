@@ -77,6 +77,8 @@
 | [verification-iter5-pass-3-plan.md](verification-iter5-pass-3-plan.md) | `[PLAN]` iteration 5 pass 3: Φ gained a definition and every existing use of it became imprecise in the same commit |
 | [verification-iter5-pass-3-findings.md](verification-iter5-pass-3-findings.md) | pass 3 record. The Φ split predates the campaign by a day; Q1–Q5 is a real collision and the Roman numerals are not |
 | [verification-iter5-pass-4-plan.md](verification-iter5-pass-4-plan.md) | `[PLAN]` iteration 5 pass 4: the unwritten dependency set — four session-only claims the tree named and nobody fetched, plus the extraction prompt |
+| [lace-context-iteration-6-plan.md](lace-context-iteration-6-plan.md) | `[PROPOSAL]` iteration 6: **personal-context alignment and the shape of the crate.** Thesis: the parts already held compose without inventing emission, and the non-composing places are each a human ruling. Branch `lace-context-iteration-6`; no push credential |
+| [lace-context-iter6-pass-1-findings.md](lace-context-iter6-pass-1-findings.md) | pass 1 record. The iteration-5 extraction prompt, run: **0 of 4 gaps answered in laceArc vocabulary, 0 items above `[PROPOSAL]`**; pass 7's SPOKEN stamps bypassed the campaign's own speak-sheet; four uncited Hands governing statements on Q0/Q5 |
 | [restructure-plan.md](restructure-plan.md) | `[PROPOSAL]` coherence of the whole tree: twelve measured findings, eight phases, one station per commit; supersedes the defrag plan as filing plan of record |
 
 Sub-shelves: [fixtures/](fixtures/README.md) sealed golden IR · [tools/](tools/README.md) host validator.
