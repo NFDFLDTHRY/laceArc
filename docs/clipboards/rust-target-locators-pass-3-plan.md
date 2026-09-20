@@ -1,6 +1,6 @@
 # The rustc book → locator extract — Pass 3 PLAN
 
-**Status:** **`PLAN`. Not executed.** **Station:** clipboards. **Emission:** `[GAP]`. No `src/`.
+**Status:** **`EXECUTED`** → [`rust-target-locators.md`](rust-target-locators.md) run 4. **All three gates passed, and the locator gate caught a fragment this plan had dropped** — `codegen-units` 770–779, filed as a command-line option by a sweep that split the chapter at 800. **Fifteen fragments, not fourteen.** **Station:** clipboards. **Emission:** `[GAP]`. No `src/`.
 **Product:** [`rust-target-locators.md`](rust-target-locators.md) — pass 3 appends run 4.
 **Authority:** `refs/local/The-rustc-book.txt` · `sha256 4a30e620a066c8157de4af674196df81694bb183ea09cef0a89dd8dbec4e74d3`. **Not authority:** the extract.
 **Prior:** [pass 1](rust-target-locators-pass-1-plan.md) wasm64 · [pass 2](rust-target-locators-pass-2-plan.md) wasm32 + the rests-on rule. Both EXECUTED.
