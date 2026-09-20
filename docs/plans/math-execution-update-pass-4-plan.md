@@ -1,6 +1,6 @@
 # Mathematical execution model — UPDATE campaign · Pass 4 of 6 PLAN
 
-**Status:** **`PLAN`** · not executed. **Station:** maps (HELD `Grok-maps` · BASE `613f784`).
+**Status:** **`EXECUTED`** 2026-09-20 · [`math-execution-update-pass-4-align.md`](math-execution-update-pass-4-align.md). **Station:** maps (`Grok-maps`).
 **Emission:** `[GAP]`. No `src/`. Not an emitter. Does not accept `pointer-emission.md`.
 **Depends on:** pass 1–3 EXECUTED. Interface: [`math-execution-update-pass-3-inputs.md`](math-execution-update-pass-3-inputs.md). Governing MUST-NOT remains **U6**.
 **Objects (read):** [`docs/math-execution-model.md`](../math-execution-model.md) · Hands §2 + wall §5 of [`docs/clock/system-mathematical-model.md`](../clock/system-mathematical-model.md).

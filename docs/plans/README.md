@@ -4,7 +4,8 @@ Plans, proposals, executed pass records, and dated receipts share this shelf. Ea
 
 | File | Job |
 |---|---|
-| [math-execution-update-pass-4-plan.md](math-execution-update-pass-4-plan.md) | **`PLAN`** — UPDATE campaign pass 4 of 6. Align execution-model Hands with dual-universe Hands §2 + wall. No Shadow import. No Participate fill. Φ `[GAP]` |
+| [math-execution-update-pass-4-align.md](math-execution-update-pass-4-align.md) | **EXECUTED** UPDATE pass 4 Hands/Hands align: 12 AGREE · 4 LABEL-ONLY · 0 DIVERGE. Wall pointed. Participate unfilled. Φ `[GAP]` |
+| [math-execution-update-pass-4-plan.md](math-execution-update-pass-4-plan.md) | **`EXECUTED`** — UPDATE campaign pass 4 of 6. Align execution-model Hands with dual-universe Hands §2 + wall. No Shadow import. Φ `[GAP]` |
 | [math-execution-update-pass-3-inputs.md](math-execution-update-pass-3-inputs.md) | **EXECUTED** UPDATE pass 3 interface: 6 may-take · 8 must-not · 4 empty holes. No function. Φ `[GAP]` |
 | [math-execution-update-pass-3-plan.md](math-execution-update-pass-3-plan.md) | **`EXECUTED`** — UPDATE campaign pass 3 of 6. Calculation interface only. S2/S3 residue retied. Does not write Φ-schedule. Φ `[GAP]` |
 | [math-execution-update-pass-2-plan.md](math-execution-update-pass-2-plan.md) | **`EXECUTED`** — UPDATE campaign pass 2 of 6. Model header / S4.2 / S8 retied to emission stamps. SPOKEN ≠ calculated. Φ `[GAP]` |
