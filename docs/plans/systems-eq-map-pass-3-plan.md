@@ -1,6 +1,6 @@
 # Systems × equations map — Pass 3 of 6 PLAN
 
-**Status:** **`PLAN`** · not executed. **Station:** maps (HELD `Grok-maps` · BASE `6daa770`).
+**Status:** **`EXECUTED`** 2026-09-20 · [`systems-eq-map-pass-3-u12.md`](systems-eq-map-pass-3-u12.md). **Station:** maps (`Grok-maps`).
 **Depends on:** pass 1 rows 19, 24, 25, 30 · pass 2 wall cards EXECUTED (`6daa770`).
 **Emission:** `[GAP]`. No `src/`. Does not accept `pointer-emission.md`.
 **Ruling:** U12 (rustc / Cargo shelf 10) is **in the calculation**. rustc is **not** \(\mathsf{Arrive}\).
