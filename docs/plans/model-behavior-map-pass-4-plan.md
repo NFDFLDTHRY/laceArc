@@ -1,6 +1,6 @@
 # Model behaviors × equations — Pass 4 of 6 PLAN
 
-**Status:** **`PLAN`** · not executed. **Station:** maps (HELD `Grok-maps` · BASE `bfeff99`).
+**Status:** **`EXECUTED`** 2026-09-20 · [`model-behavior-map-pass-4-d1.md`](model-behavior-map-pass-4-d1.md). **Station:** maps (`Grok-maps`).
 **Depends on:** L0–L5 · refuse catalog · D1 walks already frozen.
 **Cite-only:** [`systems-eq-map-pass-5-d1.md`](systems-eq-map-pass-5-d1.md) · [`math-execution-update-pass-5-witness.md`](math-execution-update-pass-5-witness.md).
 **Emission:** `[GAP]`. No `src/`. Do not rewrite those witness files.

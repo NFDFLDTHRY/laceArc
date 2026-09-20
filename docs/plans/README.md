@@ -4,7 +4,8 @@ Plans, proposals, executed pass records, and dated receipts share this shelf. Ea
 
 | File | Job |
 |---|---|
-| [model-behavior-map-pass-4-plan.md](model-behavior-map-pass-4-plan.md) | **`PLAN`** — model-behavior pass 4. D1 as L1+L4 mixed trace. Showing ≠ scheduling. Φ `[GAP]` |
+| [model-behavior-map-pass-4-d1.md](model-behavior-map-pass-4-d1.md) | **EXECUTED** model-behavior pass 4. D1 L1+L4. 0005–0007 L5. Φ `[GAP]` |
+| [model-behavior-map-pass-4-plan.md](model-behavior-map-pass-4-plan.md) | **`EXECUTED`** — pass 4 D1 mixed trace. Φ `[GAP]` |
 | [model-behavior-map-pass-3-refuse.md](model-behavior-map-pass-3-refuse.md) | **EXECUTED** model-behavior pass 3. 11 refused acts. No ≠ when. Φ `[GAP]` |
 | [model-behavior-map-pass-3-plan.md](model-behavior-map-pass-3-plan.md) | **`EXECUTED`** — pass 3 refuse catalog. Φ `[GAP]` |
 | [model-behavior-map-pass-2-legal.md](model-behavior-map-pass-2-legal.md) | **EXECUTED** model-behavior pass 2. L0–L5 legal classes. POINTER not forced. Φ `[GAP]` |
