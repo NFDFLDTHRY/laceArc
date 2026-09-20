@@ -6,6 +6,10 @@
 **Emission / Φ:** `[GAP]`. No `src/`.
 **WASM role:** Shadow **compile-target** shelf only (`wasm64-unknown-unknown`). **Not** Core. **Not** Graphic D.
 
+**Current reading qualification, 2026-09-20 ([update pass 2, P2-01](repo-update-pass-2-evidence.md#2-current-finding-register)):** the four graphics are the Lace source of record; the manifest is derived from them, and AGENTS / live law govern permitted work. Model products and the companion are derivation aids; the WASM shelf supplies target-spec evidence, not Lace append authority. Current [emission Q4](../pointer-emission.md#4-refs-point-only-backward-on-the-same-line) permits earlier POINTER targets and rejects WORD-only targeting. A procedure proving “earlier” and any requirement to emit remain open. The [current Pass 2 reading](math-execution-wasm-crosswalk-pass-2-reading.md) retains that distinction.
+
+**Original pass record follows.** Its Authority chain is an older reading order, not the governing hierarchy. M1's “Q1–Q5 open” and M3-Q4 must not reopen the source-closed permission. The original inventory, refusal families and receipt are preserved; neither a target operation nor this qualification supplies a schedule or acceptance.
+
 **Authority:** Hands via math-execution Pass 2 cites → math-execution Pass 1–6 products → wasm-spec-3 clipboard / ascii-machinery / mechanisms (cite-only) → systems-manifest-ascii **G-III-4** → pointer-emission (questions only) → rust-nostd + clock/wasm (adjacent) → this map (lowest).
 
 Steward line: *Shoe in hands. Two shelves. The target ISA is not the strand.*

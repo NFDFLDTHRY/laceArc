@@ -113,12 +113,12 @@ Two things the cards say that this document builds on rather than around:
 | Authority | manifest Contract II *"bytes/words in, appends out … only if it cannot refuse, rewrite, or interpret"*; Contract III *"read-only projection"*; crosswalk P-T8 *host embed = PROPOSAL-only, FORBID fill-GAP* |
 | Inputs (host → module) | one arrival: a byte range in a **hopper** sub-range plus its length; then a call to `continue`. Nothing else enters. No configuration, no schedule parameter, no boundary marker (F-B) |
 | Outputs (module → host) | results of `star_view`, `view_1d`, `view_2d`, `view_3d` written into a **view** sub-range, plus a length. Read-only by contract. Nothing the host reads there is authoritative (Piece 13) |
-| Imports into the module | **none.** No host function is callable from Core. This is what makes F-S3 true by construction rather than by discipline |
+| Imports into the proposed module | **none.** This excludes imported host-function calls. It does not by itself prove F-S3: σ's permitted-input behavior and the R5 memory-access trust premises still need separate evidence |
 | Exports from the module | `continue`, `star_view`, `view_1d`, `view_2d`, `view_3d` — exactly the `core/` card's delegation surface — and `memory` |
 | Invariant | the host writes only inside the hopper; the strand range is never written by the host; every module write to the view range is a projection of `L` at that moment |
 | **Trust (R5)** | WebAssembly gives an embedder unrestricted read and write of exported memory. **The invariant above is a stated trust assumption about the shell's JS, not a property wasm enforces.** Either accept that as R5's trust row, or require a copy-in/copy-out ABI with no `memory` export — which still trusts the embedder, only with a smaller surface. Stated, not accepted |
 | Failure model | a refused `continue` (capacity, sheet R) returns a code; the arrival stays in the hopper; the shell decides (R4 second half). No partial append is ever visible |
-| Proof | that every exported function is one of the `core/` card's allowed ops; that no export reaches `route/`'s `Continue` except through `core/`; that the view range is written only by view doors |
+| Proof | that every exported function is one of the `core/` card's allowed ops; that no export reaches `route/`'s `Continue` except through `core/`; that the view range is written only by view doors; and that σ's decisions depend only on its permitted `L`/`v` inputs under the stated R5 trust premises. Import absence alone discharges none of those behavior obligations |
 | Composition | born with `core/` (birth #7) as its exported surface; not a crate; a sheet |
 | Validation | P-INST (install + instantiate); a host-side test that writes garbage into the view range and shows `L` unchanged |
 | Completion | when R5 is ruled and `core/` is born |
@@ -147,7 +147,7 @@ Two things the cards say that this document builds on rather than around:
 | Authority | [`githack-pwa-deploy.md`](../kit/githack-pwa-deploy.md) (LAW for Layer III HTML; install **proven** 2026-09-18); the human's 2026-09-09 rule *"installed WebAPK must be Termux-independent after install"* (pass 1 §4, `[PROPOSAL]`); manifest Contract II/III |
 | Inputs | keystrokes; the module's exports |
 | Effects | writes only the hopper (and the log under R3(ii)); draws; installs; caches for offline via the service worker |
-| **Arrival law (`[PROPOSAL]`)** | **one arrival per submit, bytes as typed.** The shell cuts nothing: no whitespace split, no case-fold, no trim, no Unicode normalisation. The human is the punch-card; each submit is one value `v`. This is the only reading of B6/C10 *"raw sequence, no interpretation"* that adds no tokenizer, and it leaves G1 exactly as open as the Hands leave it — the shell does not decide `PIE = pie`; it delivers both as arrived |
+| **Arrival behavior (`[PROPOSAL]`)** | This sheet proposes **one arrival per submit, bytes as typed**, with no whitespace split, case-fold, trim or Unicode normalisation in the shell. B6/C10 require occurrence/order fidelity; they do not uniquely identify a UI submit action with one word value. That boundary is this proposal's premise, not a source-derived tokenizer rule or a resolution of G1. The shell's proposed preservation of supplied values does not decide `PIE = pie` |
 | Must not | keep documents, a vocabulary, a parse, a sentence buffer, a "recent words" list, an undo stack; write the strand range; call anything but the exports |
 | Projection | `view_3d` bytes → WebGPU vertex buffer → draw. The WebGPU path on the 9a needs Advanced Protection off and flags (T11) — that affects the picture only, never `L` |
 | Deploy | per the install law: `rawcdn.githack.com` + 40-char SHA + path; `docs/clock/LATEST.json` names the SHA; never `main`, never Pages |
@@ -162,7 +162,7 @@ The cards choose no encoding. This sheet does not either. It lists what an encod
 
 | Decision | Blocked on |
 |---|---|
-| WORD value bytes: length-prefixed, **as arrived**, no decode | nothing — but the *identity* of two values stays G1; the encoding stores bytes, it does not compare them |
+| WORD value representation and framing, preserving the supplied value | R6, including whether any length prefix is used and how it is represented. The earlier “length-prefixed” wording selected an unstated framing choice; this sheet leaves it open. Identity/word boundaries remain G1, separate from value preservation |
 | POINTER ref count `k`: fixed 2 (D2 drawing) or carried per row | **Q2 CONFLICT** — an encoding that fixes `k = 2` has taken Q2; one that carries `k` has selected *"variable-length target collection,"* which the pointer/ card declines. **Either choice is a ruling (R6)** |
 | slot order if `k = 2` | manifest open #9 |
 | index width | the ceiling (P-64b) and the row size decide whether 32-bit indices suffice; wasm64 addresses are 64-bit regardless (R6) |
@@ -182,10 +182,10 @@ Each row records what the part is tied to. Nonempty cells are traceability, not 
 | `route/` | 2, 8 | S2 `Arrive`; S4.3 `Continue` | F-H1, F-A1; **σ absent** — route appends only what is independently admitted | — | none |
 | `view_star/` | 7, 9, 15 | S3.1 `Star(v)` membership; full formation also needs route/participation readings | F-S1 (no Star table) | Petersen–Zech FORBID star = neuron | none |
 | `view_proj/` | 10, 12, 13 | S3.4 `π` | no write-back (S6 `[X]` 6) | WebGPU / WGSL shelves: Device / Queue / Buffer ≠ store | T11/T12 for the picture only |
-| `core/` | 2 | S5 Contract I composition | F-S3 (no imports), F-S4 | AgentScope: holder diagnoses the steward, not the lace | sheet H |
+| `core/` | 2 | S5 Contract I composition | F-S3 (permitted-input behavior), F-S4; sheet H separately proposes no imports | AgentScope: holder diagnoses the steward, not the lace | sheet H |
 | sheet T | — | — | E8 (invisible to σ) | wasm-spec-3 KEEP-read-as-target | T1–T8 |
 | sheet R | 6 | S1.2 concatenation-only growth | F-Carry | G-III-4 fence *mem ≠ L* | P-64b |
-| sheet H | Contract II, III | S2 (arrival into `Arrive`); S3.4 | F-S3 by construction; F-B (no boundary crosses) | crosswalk P-T8 host ≠ fill-GAP | R5 |
+| sheet H | Contract II, III | S2 (arrival into `Arrive`); S3.4 | F-S3 is a behavior/proof obligation, not established by import absence; F-B (no boundary crosses) | crosswalk P-T8 host ≠ fill-GAP | R5 |
 | sheet C | 6 *"single append-only log"* | S1.2 (indices forever) | persisted-prefix preservation under the proposed durable mode; arbitrary-reload retention remains R3 | — | T14, A5 |
 | sheet S | 3, 13 | — | F-A1 (arrival law), F-G (cuts nothing) | AgentScope KEEP failure taxonomy for the *steward* | T16, T10, T11 |
 | **σ (the rule; implementation owner unassigned)** | 5 · open #2 | **S4.2 Φ-schedule = `[GAP]`** | **all thirteen; E6; acceptance does not assign a branch** | all nine FORBID rows | none — E8 |

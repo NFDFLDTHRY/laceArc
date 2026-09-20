@@ -3,6 +3,8 @@
 **Status: PLAN / PROPOSAL. Planning complete; Pass 1 execution NOT_RUN.**
 **Station: maps. Editor: Codex-atomic-pass1. Documentation only. POINTER emission remains [GAP].**
 
+**Current entrance update, 2026-09-20:** [repository update pass 2, P2-01](repo-update-pass-2-evidence.md#2-current-finding-register) reconciles this pending plan's Q4 and conceptual-reference premises below. The construction pass itself remains **NOT_RUN**; its original planning receipt is preserved. The current crate cards also [leave σ implementation ownership unassigned](rust-nostd-branch-contracts.md); this plan's premise audit must retain that obligation without inventing a branch or widening a task.
+
 The human authorized taking the maps station and planning Pass 1 after proposing a connection between the existing atomic primitives, all fifteen manifest pieces, and the seven planned branch contracts. This document defines that pass. Its numbering belongs to the construction mapping; it does not reopen the reason-model map's completed three academic mapping passes.
 
 Initial source and claim base: [b7d4891545de712832dece67163d69ac276996d3](https://github.com/NFDFLDTHRY/laceArc/tree/b7d4891545de712832dece67163d69ac276996d3). Its parent, 24c6348e5bec4918b61846360cd28bca4a52937d, is the substantive source baseline. The plan was re-anchored and maps reclaimed at [a793aa95149b92ff2be1466c600cfb4891510d92](https://github.com/NFDFLDTHRY/laceArc/tree/a793aa95149b92ff2be1466c600cfb4891510d92); its controlling source contents are unchanged. Recheck live main and relevant source identities before execution.
@@ -35,7 +37,7 @@ Keep the complete [staking law](../staking-the-workspace.md) and [live law](../l
 5. Read the [atomic map](../atomic-primitives-map.md), [crate map](rust-nostd-crate-map.md), and all seven [branch cards](rust-nostd-branch-contracts.md). These are proposals and explanatory maps, not amendments to the sources.
 6. Read the [emission draft](../pointer-emission.md), and [close reading §§1–4](../graphics-close-reading.md#the-evidence) against D1. Keep the draft's lack of acceptance and any disagreement with the graphics explicit.
 
-The five academic texts and three holder texts supply no new Core primitive in this pass. Their established boundaries remain in the full laws and existing maps. This task does not require another book pass or importing PDFs into git.
+The five academic texts and the three conceptual reference documents supply no new Core primitive in this pass. HCC-A, Coffee Cup and Water are [conceptual references](../law-why-these-documents.md#conceptual-reference-documents), not required holder components. Their established exclusion boundaries remain in the full laws and existing maps. This task does not require another book pass or importing PDFs into git.
 
 ## 3. Three dependency relations, recorded separately
 
@@ -182,11 +184,11 @@ Preserve G1–G7 from the atomic map. Add subordinate questions or source-linked
 | G6: concurrency | Repository station coordination is steward machinery, not a Core scheduling or atomicity rule. |
 | G7: concrete realization | Preserve capacity, encoding, stable payload, failure, interruption, input-custody and composition premises. No resource or persistence strategy is selected. |
 | Manifest Q10: eventual participation | The D1 pattern does not require that every entry eventually be referenced. The last depicted entry does not establish an exception rule either. |
-| Emission draft §4 vs D3/D6 and AGENTS.md | Earlier POINTER targets are explicitly permitted by the sources. The draft's uncertainty about that permission is a conflict, not a reason to erase it. Timing and selection remain open. |
+| Current emission §4, D3/D6 and AGENTS.md | Earlier POINTER targets are explicitly permitted; current Q4 agrees and rejects WORD-only targeting. The former draft uncertainty is no longer a conflict on permission. Timing, selection, required emission and the procedure proving “earlier” remain separate open obligations. |
 | Manifest Piece 13 vs full store prohibitions | Do not admit a forbidden database or table by calling it a disposable view. Refer any needed wording correction to the law station. |
 | Mathematical-model sufficiency wording flagged by the atomic map | Emission acceptance alone cannot discharge unrelated identity, read, representation, or resource obligations. Follow control C03's task-specific gate. |
 
-The holder's HCC-A, Cup, and Water mechanisms remain [H], and their displays remain [III]. Their permission, phase, ledger, or talk-pointer operations cannot become a premise provider for a Graphic D append decision. This boundary is inherited from the full laws; the pass creates no new interpretation of those texts.
+HCC-A, Cup and Water supply conceptual vocabulary; `[H]` in older maps names that interpretive domain, and `[III]` names its displays. Neither label requires a holder subsystem. Their permission, phase, ledger, or talk-pointer concepts cannot become a premise provider for a Graphic D append decision. This applies the live-law classification correction and retains its Core exclusions.
 
 ## 6. Completion criteria for executing Pass 1
 

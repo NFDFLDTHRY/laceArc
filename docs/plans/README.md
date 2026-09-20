@@ -4,6 +4,8 @@ Plans, proposals, executed pass records, and dated receipts share this shelf. Ea
 
 | File | Job |
 |---|---|
+| [repo-update-pass-2-plan.md](repo-update-pass-2-plan.md) | **EXECUTED locally**: current-source corrections, grouped navigation, hook/coordination and bounded Layer III repairs; frozen-renderer, browser/device and release boundaries remain explicit |
+| [repo-update-pass-2-evidence.md](repo-update-pass-2-evidence.md) | Base `10fe4947`; P2-01–P2-14 dispositions, exact file manifest, source sightings, 23 runtime and 15 coordination regressions, independent challenges and prepared frozen-renderer patch; no publication or acceptance |
 | [repo-update-pass-1-plan.md](repo-update-pass-1-plan.md) | **EXECUTED**: authorized documentation update pass 1, 47 changed/new paths within bounded station batches; reviewed proof/source corrections and current routing; runtime and release work remain deferred |
 | [repo-update-pass-1-evidence.md](repo-update-pass-1-evidence.md) | 558-file base census, 17-branch arrival map, 26 finding dispositions, five-location SPOKEN custody register, source sightings and actual execution receipt; no new acceptance or publication |
 | [repo-update-pass-1-inventory.json](repo-update-pass-1-inventory.json) | Exact 558-path inventory with base commit, blob identities, sizes and families; inventory is not semantic review |

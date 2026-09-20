@@ -60,8 +60,8 @@ Punch-card fidelity (Piece 3): arrival order *is* the order the model recognizes
 | Stream | Role under Contract II |
 |---|---|
 | Piece 3 raw / conversational arrival | Primary illustration of ordered feed |
-| Piece 9 document feed | **Same** Arrival surface on a document stream — *use of I*, not a peer Core |
-| Piece 10 dictionary feed | **Same** Arrival surface on a dictionary stream — *use of I*, not a peer Core |
+| Piece 9 dictionary wiring | **Same** Arrival surface on a dictionary stream — *use of I*, not a peer Core |
+| Piece 10 document feed | **Same** Arrival surface on a document stream — *use of I*, not a peer Core |
 
 Systems-manifest Contract II: Arrival contains Piece 3 and the document/dictionary feeds as the same surface applied to different streams. State coupling must stay zero beyond appending into I. If Arrival keeps documents, vocabularies, or parses, it has become a second store.
 

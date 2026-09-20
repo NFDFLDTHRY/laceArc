@@ -177,9 +177,9 @@ Hands: **off-shoe** as physics; **conflict** if treated as history of wraps. Gau
 Kind: Topological move.  
 Hands: tempting “thread through.” Still a cut-and-rejoin in the topological sense. **conflict** with Rule Zero.
 
-**K7 — Theory of Hitches (Part II §1°, printed p.323 / PDF p.342, after Bayman)**
+**K7 — Theory of Hitches (Part II §1°, printed pp.323–324 / PDF pp.342–343, after Bayman)**
 Kind: Physics of wrapping a rope on a post.  
-Source language: “A hitch is a mode of wrapping a rope around a post so that, with the help of a little friction, the rope holds to the post.” Windings: no slip while \(T_2 \le \kappa T_1\), with \(\kappa\) growing with turns; model \(\kappa = e^{\theta}\) (unit friction). Clove hitch wrap-overs: “the top part squeezes the bottom part against the rod.” Square grips; granny feeds through. Fork restated: “The topology that we know has been obtained at the price of initial abstraction from these physical grounds.”
+Source language: “A hitch is a mode of wrapping a rope around a post so that, with the help of a little friction, the rope holds to the post.” Windings: no slip while \(T_2 \le \kappa T_1\). The printed model on p.324 is \(\kappa = \exp(\theta/(2\pi))\), where \(\theta\) is the total angle in radians: one revolution gives \(\exp(1)\), and \(n\) revolutions, \(\theta=2\pi n\), give \(\exp(n)\). This attributes the book's stated normalization, not a generalized friction law. See the [source sighting](plans/repo-update-pass-2-evidence.md#4-source-probe-and-supplied-file-limits) and [Kauffman clipboard Page A](clipboards/kauffman-4ed-clipboard.md). Clove hitch wrap-overs: “the top part squeezes the bottom part against the rod.” Square grips; granny feeds through. Fork restated: “The topology that we know has been obtained at the price of initial abstraction from these physical grounds.”
 Hands: **kin** of RM4, Piece 11, Piece 15. Many turns through one post, all kept. Later tension participates.  
 Does **not** emit a POINTER row. The inequalities are friction, not array fields.  
 **Verdict on K7:** same as K1, now with the deferred math. Still not emission.
@@ -571,7 +571,7 @@ Marks in cells: kin / weak / adj / conflict / off / — (no contact).
 
 ### Pass 2 samples (the lookalikes that could have hidden a sixth piece)
 
-**Kauffman Part II §1 Theory of Hitches** — kin only. Friction inequalities, wrap-overs, square vs granny. No POINTER emission. Do not copy \(T_2 \le e^{\theta} T_1\) into the array.
+**Kauffman Part II §1 Theory of Hitches** — kin only. Friction inequalities, wrap-overs, square vs granny. No POINTER emission. The printed normalization is \(T_2 \le \exp(\theta/(2\pi)) T_1\), or \(T_2 \le \exp(n) T_1\) for \(n\) complete turns; neither the formula nor its angle/turn parameters belong in the array.
 
 **Kauffman Part II §4 Slide equivalence** — conflict. Slide axioms imply Reidemeister II and III. Larger write, not milder.
 

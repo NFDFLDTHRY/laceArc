@@ -2,19 +2,21 @@
 
 **Status:** `[PROPOSAL]`. **Station:** maps. **Emission:** `[GAP]`. No `src/`.
 **Method:** [iteration 7 plan](lace-context-iteration-7-plan.md) §2 pass 2. Builds on [the shape](lace-context-iter6-pass-5-crate-proposal.md), [the environment](lace-context-iter6-pass-4-environment.md), [the target facts](lace-context-iter6-pass-2-findings.md) and [the distribution amendment](../kit/distribution-model.md). The four host shelves are cited by their G-III cards; none is edited.
-**The human asked for** *"a combined heterogeneous compute model across wasm64, WebGPU, WebNN, and WGSL, parallel / concurrent."* This pass says what the law lets each of the four do, where the parallelism actually is, and what it costs. It says **no** where the law says no.
+**The human asked for** *"a combined heterogeneous compute model across wasm64, WebGPU, WebNN, and WGSL, parallel / concurrent."* This pass maps source constraints, proposed roles and parallelism, and cited costs. A proposed arrangement is not a measured implementation or an accepted ruling.
+
+**Current qualification, 2026-09-20 ([update pass 2, P2-03](repo-update-pass-2-evidence.md#2-current-finding-register)):** the one-writer, host-boundary and frontier arrangements below are proposed design premises, with R5/R9 and their proof obligations still open. An empty import section is a structural observation, not a proof of σ's permitted reads. Finite offline observations do not prove perpetual availability, and the proposed production host has no accepted exception to the current install law. No protocol, ABI, gate or ruling is selected by these corrections.
 
 ---
 
-## 1. What the law fixes before any hardware is mentioned
+## 1. Source constraints and proposed compute premises
 
-| Fixed | By | Consequence for compute |
+| Constraint or premise | Source / status | Consequence and limit |
 |---|---|---|
-| `L` has **one writer** | σ is a function of `(L, v)` (E2); manifest open #5 *"one strand suggests a single writer"*; on both deployment surfaces the module is single-threaded unless isolated (§3) | *parallel* can never mean parallel appends. Every design below has exactly one thread that calls `continue` |
-| Core has **no host imports** | sheet H; F-S3 | no GPU, NN, or I/O call originates inside the module. Heterogeneous compute is **Layer III orchestration around** a module that knows nothing of it |
+| **One writer in this proposal** | E2 types σ's inputs, not the number of executing threads; manifest open #5 leaves concurrency unstated. §3/R9 propose one writer | Every design below assumes one thread calls `continue`. This is not a source prohibition derived from the function type |
+| **No host imports in the proposed module** | sheet H proposes this boundary; F-S3 separately restricts σ's reads | No imported host function is callable. Host independence still requires the permitted-input/dataflow proof and R5 trust premises; the import list alone does not establish it |
 | Views never write back | S3.4 `π`; S6 `[X]` 6 | GPU and NN work is `π` work: it reads a prefix of `L` and produces bytes the strand never sees |
 | Star ≠ neuron; no train; no embed store; no GNN as Core | staking Petersen–Zech / Xiao–Zhu FORBID rows | **WebNN has no Core role.** Its only candidate role is a projection engine (§2.4), and that sits on a recorded conflict |
-| Append-only, indices forever | Piece 6 | readers need no locks: a reader that reads only below a published frontier index can never observe a torn or reused entry. **The Hands make concurrent reading free** |
+| Append-only, indices forever | Piece 6 fixes retained history; §3 proposes publication/read ordering | An unchanged committed prefix supports the proposed read boundary. Whether concurrent readers observe complete entries depends on the stated publication, memory-order and carrier premises; append-only alone is not that proof (R9) |
 
 ---
 
@@ -22,7 +24,7 @@
 
 ### 2.1 wasm64 — Core, the one writer
 
-The module from the shape: `#![no_std]` → `wasm64-unknown-unknown`; exports `continue · star_view · view_1d · view_2d · view_3d · memory`; imports none. It runs in **one dedicated Worker** (`W`), never on the UI thread, so a long append or view never blocks the hopper. Its only shared state with anyone is **the frontier** — the index of the next free position — which `W` publishes after each successful append.
+The module proposed by the shape is `#![no_std]` → `wasm64-unknown-unknown`, with exports `continue · star_view · view_1d · view_2d · view_3d · memory` and no imports. This model places it in **one dedicated Worker** (`W`) to keep append/view computation off the UI thread; no responsiveness result has been measured here. The **frontier** is the proposed publication marker, not all the shared data: readers use the represented prefix of `L` through shared memory or copies, under the different premises in §3.
 
 ### 2.2 WebGPU — Layer III projection compute and rendering
 
@@ -67,9 +69,9 @@ Shader language only. G-III-2: *WGSL ≠ WORD; module/entry ≠ strand/Φ; addre
 | Surface | `crossOriginIsolated` | SharedArrayBuffer / wasm threads | What is parallel |
 |---|---|---|---|
 | **githack (dev)** | `false` (T13, `HUMAN_REPORTED`) | no | UI ‖ W ‖ GPU only. `R` cannot share `W`'s memory; it works on **copies** `W` posts (transferable buffers), which the human's own note already prescribes (`docs/clock/wasm/README.md`) |
-| **business domain on GitHub Pages (prod)** | `false` from the server — Pages sets no custom headers ([distribution-model.md](../kit/distribution-model.md) §3) — **unless the service worker synthesises `COOP: same-origin` + `COEP: require-corp` on its own responses**, after which the next load is isolated | **conditional**: the human recorded this exact fix as the remedy for `crossOriginIsolated: false` on the launcher (2026-09-04, pass 1 memory record) — `[INFERENCE]` that it holds inside an installed WebAPK on Android 17 / Chrome 151; **`UNESTABLISHED` → probe P-COI** | if isolated: `R` reads `W`'s shared memory below the frontier with no copy; wasm threads for view work. **Still one writer** |
+| **business domain on GitHub Pages (unaccepted production proposal; hosting conflict)** | The original proposal assumes no server-supplied isolation headers and considers service-worker synthesis of `COOP: same-origin` + `COEP: require-corp`; see the current [distribution qualification](../kit/distribution-model.md) | **conditional**: the earlier launcher remedy is a memory-recorded report, not evidence that this proposed host or an installed WebAPK on Android 17 / Chrome 151 is isolated. **`UNESTABLISHED` → P-COI**, separately from hosting acceptance | If isolation and the R9 premises hold, the proposal has `R` read `W`'s shared memory below the frontier, with one writer. No production permission follows |
 
-**The frontier protocol (`[PROPOSAL]`, ruling R9).** `W` is the only thread that writes `L` or the frontier. After an append completes, `W` stores the new frontier with a release-store. Any reader loads the frontier with an acquire-load and reads only `[0, frontier)`. Because nothing below the frontier is ever rewritten (Piece 6), readers need no lock, no epoch, no retry. This is the entire concurrency model, and it is a consequence of append-only rather than a design on top of it. It touches manifest open #5 and is therefore the human's to rule, not the agent's.
+**The frontier protocol (`[PROPOSAL]`, ruling R9).** The proposed arrangement has `W` alone write `L` and the frontier, publishing the new frontier with a release-store after a complete append; readers acquire-load it and read only the resulting `[0, frontier)` prefix. Piece 6 supplies prefix immutability. It does not select that publication mechanism or prove its memory-order and carrier premises. The claimed absence of locks, epochs or retries remains conditional on those premises and their proof; R9 is untaken. This paragraph records the proposal, not a concurrency law derived from append-only.
 
 ---
 
@@ -87,19 +89,21 @@ Shader language only. G-III-2: *WGSL ≠ WORD; module/entry ≠ strand/Φ; addre
 
 ## 5. The show-your-work gate, as a machine-checkable list (prepared for iteration 7 pass 5)
 
-The human: *"I will link to my business domain only what I can prove under a show your work mathematical model."* Six of the seven checks below are mechanical on the built artefact; none needs Core to be believed.
+The human: *"I will link to my business domain only what I can prove under a show your work mathematical model."* The seven proposed checks below mix artifact inspection, bounded device observation and human review. Their distinct scopes do not combine into a proof of the entire app or acceptance of the hosting proposal.
 
 | # | Check | How it is shown | Machine-checkable? |
 |---|---|---|---|
-| G1 | The build has **zero** crates outside the repo | `Cargo.lock` lists only path dependencies; the build receipt names the pinned nightly and `rust-src` hash | yes |
-| G2 | The module's **import section is empty** | parse the `.wasm` binary's import section; expect zero entries | **yes, without running it** — this makes F-S3 a binary fact |
+| G1 | The build has **zero** crates outside the repo | inspect declared dependencies and record the pinned nightly / `rust-src` identity; relate those inputs to the exact built artifact | partial structural evidence only: a path-only `Cargo.lock` and toolchain IDs do not establish complete linked-code/compiler-runtime provenance. R1, A4 and the build-accounting obligations remain open ([target record](../clipboards/rust-target-clipboard.md)) |
+| G2 | The module's **import section is empty** | parse the `.wasm` binary's import section; expect zero entries | **yes, without running it**, for import absence only; F-S3 still needs proof that σ reads only its permitted inputs, with R5 trust premises |
 | G3 | The module's export section is exactly `{continue, star_view, view_1d, view_2d, view_3d, memory}` | parse the export section | yes |
-| G4 | The **D1 witness replays byte-identically** through the built module | feed `PIE, DESSERT, PIE, WHOLE, CUSTOMER`; dump `L`; compare to the accepted encoding of D1's eleven rows | yes — this is E7 STEP 4 run by the machine |
-| G5 | **Offline forever**: the SW precache manifest covers every URL the app fetches | install; airplane mode; exercise every screen; zero network requests logged | yes, on device |
+| G4 | The **D1 witness replays byte-identically** through the built module | identify the accepted encoding and exact build artifact; feed `PIE, DESSERT, PIE, WHOLE, CUSTOMER`; dump `L` and compare all eleven final rows. Record an independent replay separately | yes for that bounded final-row comparison, not full E7 discharge. Any intermediate-frontier claim additionally needs [M3's S4.3 partition premise](reduction-pass-2-execution-model.md#x5--theorems); final equality alone does not prove it |
+| G5 | **Finite offline exercise**, distinct from the requested “offline forever” goal | record duration, device/browser, install/cache conditions, exercised paths and network observations; inspect the release's resource coverage | bounded device/artifact evidence only; no finite run proves perpetual offline availability |
 | G6 | The release is **pinned**: the served files' hashes equal the tagged commit's | hash the deployed tree against the release SHA | yes |
-| G7 | The accepted σ **is** the built σ | the acceptance sentence's commit ⊆ the build's commit; the human re-reads | no — human |
+| G7 | The accepted σ **is** the built σ | locate the exact accepted text/revision and establish its correspondence to the inspected source and exact built artifact, with build provenance | not established by commit ancestry or re-reading alone: a descendant can change σ. The accepted-content/source/artifact correspondence remains a separate proof and review obligation |
 
-Nothing moves to the domain until G1–G7 are on a receipt with hashes. That is the promotion rule this iteration's pass 5 will formalise for the human to take.
+**G2 limit:** the absence of imports does not prevent a module from basing a decision on bytes outside the admitted `L` and `v`; sheet H already records host access to exported memory. The required behavior proof and trust scope therefore remain separate from the binary import check.
+
+The original campaign proposed G1–G7 as inputs to a later promotion rule; that work was transferred to the reduction ([iteration 7 receipt](lace-context-iteration-7-receipt.md)). The current [distribution model](../kit/distribution-model.md) keeps the production amendment unaccepted and the hosting conflict visible. A complete checklist does not grant an exception to the live install law.
 
 ---
 
@@ -129,7 +133,7 @@ Nothing moves to the domain until G1–G7 are on a receipt with hashes. That is 
 | C18 | Service worker: precache-all · offline · (COOP/COEP synthesis) | III | amendment §4; A6 (requested) | release manifest (C21) | C16, C20 | `NOT_RUN`; COI `UNESTABLISHED` | P-COI; G5 | renderer / kit |
 | C19 | Web app manifest + icons | III | kit `manifest.webmanifest` (exists for the clock) | — | install | `OBSERVED` for the clock app | — | renderer |
 | C20 | Workers `W` (Core host) · `R` (readers) · I/O (log) | III | §3 | C13, C15, C18 | C16 | `[PROPOSAL]` | R9 (frontier protocol) | renderer |
-| C21 | Release: pinned SHA on githack (dev) / tagged glacier release on the domain (prod) | III / distribution | githack law + amendment | G1–G7 | C18 | dev `OBSERVED`; prod `NOT_RUN` | pass 5 promotion rule | kit |
+| C21 | Release: pinned SHA on githack (dev) / tagged glacier release on the domain (unaccepted production proposal) | III / distribution | githack law + proposed amendment | G1–G7 | C18 | dev `OBSERVED`; production `NOT_RUN`, hosting conflict open | proposed promotion rule; no hosting exception accepted | kit |
 | C22 | NN projection engine (WebNN) | III (view) | G-III-3; §2.4 | copy of `L` | C17 | `[PROPOSAL]` on a recorded conflict | **R10** | renderer |
 | C23 | Probes P-64a/b/c · P-CAR · P-INST · **P-COI** | III steward | pass 2 §4 | device | C12, C15, C18 | all `NOT_RUN` | human runs | renderer / kit |
 | C24 | The environment (E1–E7) | steward | iteration 6 pass 4 | Hands, S1–S6, shelves | acceptance of σ | `PROVED_WITHIN_SCOPE` (E4) | — | maps |

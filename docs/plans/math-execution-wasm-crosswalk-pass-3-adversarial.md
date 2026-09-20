@@ -10,6 +10,10 @@
 **WASM role:** Shadow compile-target only. **Not** Core. **Not** Graphic D.
 **Bridge:** BLOCKED-BRIDGE-COMPLETE **retained**.
 
+**Current reading qualification, 2026-09-20 ([update pass 2, P2-01](repo-update-pass-2-evidence.md#2-current-finding-register)):** the graphics are the Lace source of record; the manifest is derived from them, and AGENTS / live law govern permitted work. Pass 1/2 readings, adversarial catalogs and target shelves are derivation/evidence dependencies, not a hierarchy above those sources. Current [emission Q4](../pointer-emission.md#4-refs-point-only-backward-on-the-same-line) closes permission for earlier POINTER targets and rejects WORD-only targeting. WASM call stacks still provide no admission proof, and no required emission or schedule follows from that permission.
+
+**Original pass record follows.** Its Authority line, A1-C14's blanket gap, A4-Q4 and concluding “Q1–Q5 + G1 unanswered” are historical shorthand; use the distinction above and the [current Pass 2 reading](math-execution-wasm-crosswalk-pass-2-reading.md) when citing them today. W01–W15 and the receipt remain intact. W10's refusal to equate host ingestion with Lace Arrival remains valid; no bridge or emission acceptance is added.
+
 **Authority:** Pass 2 reading (K3–K5) → Pass 1 map (M3–M4) → math-exec Pass 4 adversarial (shape only) → mechanisms FM-* / M-T* (cite-only) → G-III-4 → pointer-emission (questions + non-answers) → this catalog (lowest).
 
 Steward line: *Shoe in hands. These sketches show what the crosswalk refuses — not when lace should write a POINTER.*

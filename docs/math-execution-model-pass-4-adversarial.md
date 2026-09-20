@@ -6,6 +6,10 @@
 **Pinned main:** `6a89da52dea9c854b1584900b61d3bc2c1975d3a`.  
 **Emission / Φ:** `[GAP]`. No `src/`.
 
+**Current reading qualification, 2026-09-20 ([update pass 2, P2-01](plans/repo-update-pass-2-evidence.md#2-current-finding-register)):** Graphics A–D are the source of record; the [manifest](systems-manifest.md) is derived from them, and AGENTS / live law govern permitted work. The parent model and witness are derivation dependencies, not authorities above the manifest. Current [emission Q4](pointer-emission.md#4-refs-point-only-backward-on-the-same-line) permits earlier POINTER targets and rejects a WORD-only restriction. The procedure proving “earlier,” required emission, timing, and selection remain open; permission is not a schedule or acceptance.
+
+**Original pass record follows.** Its Authority line, A0's blanket “open Q1–Q5,” A1-C6, and A4-Q4 describe the older reading and are superseded on those points by the qualification above. A5's repeated checklist/no-conflict report is historical. N01–N15, the bounded specimen cuts and the receipt remain intact; in particular N12's refusal to treat a commit as acceptance still applies.
+
 **Authority:** Graphics A–D → Pass 2 model → Pass 3 witness → systems-manifest (as cited by Pass 2) → [pointer-emission.md](pointer-emission.md) (questions + explicit non-answers only) → Pass 1 M6 → this catalog (lowest).
 
 Steward line: *Shoe in hands. These sketches show what the partial algebra refuses — not when lace should write a POINTER.*

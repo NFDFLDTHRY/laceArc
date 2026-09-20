@@ -5,6 +5,8 @@
 **Pinned main:** `30f6f870e2db94dbe4a418f61921f1a7b85f76be` (2026-09-19).
 **Emission / Φ:** remains `[GAP]`. No `src/`.
 
+**Current entrance qualification, 2026-09-20 ([update pass 2, P2-01](repo-update-pass-2-evidence.md#2-current-finding-register)):** this is the original problem-map record at the pin above. K15 and the related M3 target-kind gap predate current [emission Q4](../pointer-emission.md#4-refs-point-only-backward-on-the-same-line): earlier POINTER targets are permitted, a WORD-only restriction is rejected, and the admission proof / required-emission questions remain open. K17's holder-train classification is superseded by the [human's conceptual-reference correction](../law-why-these-documents.md#conceptual-reference-documents); HCC-A, Coffee Cup and Water establish no required holder/runtime components. Their concepts supply no Core state or append rule. The [partial model](../math-execution-model.md) now exists; M8's next-task instruction is historical, not an instruction to recreate it. The tables, original handoff and receipt below are preserved at their original evidence strength.
+
 **One question:** What must be true, cited, sealed, or deferred before any mathematical execution model of Lace may begin — and which beginning (partial vs complete) does that evidence allow?
 
 **One result:** This map. It does not introduce new Core equations, fill Φ, or amend Graphics / systems-manifest / ASCII.
