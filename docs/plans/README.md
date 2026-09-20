@@ -4,7 +4,8 @@ Plans, proposals, executed pass records, and dated receipts share this shelf. Ea
 
 | File | Job |
 |---|---|
-| [tech-ref-eq-map-pass-2-plan.md](tech-ref-eq-map-pass-2-plan.md) | **`PLAN`** — technician-refs pass 2. Kauffman loci × equations. Grab ≠ emission. Φ `[GAP]` |
+| [tech-ref-eq-map-pass-2-kauffman.md](tech-ref-eq-map-pass-2-kauffman.md) | **EXECUTED** technician-refs pass 2. K1–K9 stamped. Grab ≠ emission. Φ `[GAP]` |
+| [tech-ref-eq-map-pass-2-plan.md](tech-ref-eq-map-pass-2-plan.md) | **`EXECUTED`** — pass 2 Kauffman × equations. Φ `[GAP]` |
 | [tech-ref-eq-map-pass-1.md](tech-ref-eq-map-pass-1.md) | **EXECUTED** technician-refs × equations pass 1. Five cards. H-PTR unfilled. Hitch ≠ when. Φ `[GAP]` |
 | [tech-ref-eq-map-pass-1-plan.md](tech-ref-eq-map-pass-1-plan.md) | **`EXECUTED`** — pass 1 five stakes onto Arrive/Star/Φ-shape/holes/wall/U12. Φ `[GAP]` |
 | [systems-eq-map-pass-6-soundness.md](systems-eq-map-pass-6-soundness.md) | **EXECUTED** systems×equations pass 6. S1–S8 8 PASS. Campaign **CLOSED 6/6**. Φ `[GAP]` |

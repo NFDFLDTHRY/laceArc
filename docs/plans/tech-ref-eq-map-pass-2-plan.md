@@ -1,6 +1,6 @@
 # Technician references × mathematical model — Pass 2 of 6 PLAN
 
-**Status:** **`PLAN`** · not executed. **Station:** maps (HELD `Grok-maps` · BASE `020f068`).
+**Status:** **`EXECUTED`** 2026-09-20 · [`tech-ref-eq-map-pass-2-kauffman.md`](tech-ref-eq-map-pass-2-kauffman.md). **Station:** maps (`Grok-maps`).
 **Depends on:** [`tech-ref-eq-map-pass-1.md`](tech-ref-eq-map-pass-1.md) T1 card.
 **Text:** Kauffman *Knots and Physics* 4ed.
 **Cite-only:** [`../reason-model-map.md`](../reason-model-map.md) §1 K1–K9 · [`../clipboards/kauffman-4ed-clipboard.md`](../clipboards/kauffman-4ed-clipboard.md) · five-stakes page 1.
