@@ -4,6 +4,7 @@ Plans, proposals, executed pass records, and dated receipts share this shelf. Ea
 
 | File | Job |
 |---|---|
+| [seed-dictionary-map-pass-6-plan.md](seed-dictionary-map-pass-6-plan.md) | **`PLAN`** — seed-dictionary pass 6 of 6. Soundness + STOP. Φ `[GAP]` |
 | [seed-dictionary-map-pass-5-ingest.md](seed-dictionary-map-pass-5-ingest.md) | **EXECUTED** seed-dictionary pass 5. Hopper / G1 / #15. No corpus. Φ `[GAP]` |
 | [seed-dictionary-map-pass-5-plan.md](seed-dictionary-map-pass-5-plan.md) | **`EXECUTED`** — pass 5 ingest face. Φ `[GAP]` |
 | [seed-dictionary-map-pass-4-touch.md](seed-dictionary-map-pass-4-touch.md) | **EXECUTED** seed-dictionary pass 4. First touches = L4 shape, not forced. Φ `[GAP]` |
