@@ -4,6 +4,7 @@ Plans, proposals, executed pass records, and dated receipts share this shelf. Ea
 
 | File | Job |
 |---|---|
+| [systems-eq-map-pass-5-plan.md](systems-eq-map-pass-5-plan.md) | **`PLAN`** — systems×equations pass 5. D1 × one-tick × equations. Arrival ≠ tick. POINTER Witness-only. Φ `[GAP]` |
 | [systems-eq-map-pass-4-complete.md](systems-eq-map-pass-4-complete.md) | **EXECUTED** systems×equations pass 4 completeness. 0 skipped surfaces. Carrier/Hopper named-unmapped as I-letters. #14 kept. Φ `[GAP]` |
 | [systems-eq-map-pass-4-plan.md](systems-eq-map-pass-4-plan.md) | **`EXECUTED`** — pass 4 completeness sit. Φ `[GAP]` |
 | [systems-eq-map-pass-3-u12.md](systems-eq-map-pass-3-u12.md) | **EXECUTED** systems×equations pass 3. U1–U7 toolchain cards. Target not a stitch. Φ `[GAP]` |
