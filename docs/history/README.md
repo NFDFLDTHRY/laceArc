@@ -6,6 +6,10 @@ Rejected walkers stay rejected: see the "Adjacent reading" paragraph in [AGENTS.
 
 Moved here in defrag pass 1.
 
+## Closed shelf-reading campaign
+
+[Quiet door #5 ASCII reading](quiet-door-5-ascii.md) and its [receipt](quiet-door-5-receipt.md) record the closed six-pass reading of this shelf at `45a6830233c7282d7a83d7ffc664575297c2a41d`. The ASCII header links all six executed plans. These are historical readings, not current station status, a new extraction, or authorization for recovery pass 8.
+
 ## Extractions and their sit-notes
 
 An **extraction** is what a pass recovered. A **sit-note** is the interpretation of that extract against the law at the time of its reading. They are separate files on purpose. A sit-note does not amend live law; its dated interpretation can be superseded without changing the extracted evidence.
