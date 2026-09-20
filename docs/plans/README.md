@@ -95,6 +95,7 @@
 | [reduction-pass-4-plan.md](reduction-pass-4-plan.md) | `PLAN` — the reduction, pass 4: the collaborative agentic apparatus applied — role cards, trailer convention, advisory unsigned-commit check; four items to the human |
 | [reduction-pass-5-plan.md](reduction-pass-5-plan.md) | `PLAN` — the reduction, pass 5: the rulings brief — one page of everything only the human can take, ordered by what each unblocks |
 | [reduction-pass-6-plan.md](reduction-pass-6-plan.md) | `PLAN` — the reduction, pass 6: receipt — coverage, verdicts, queue, bundle |
+| [reduction-pass-1-findings.md](reduction-pass-1-findings.md) | pass 1 record. **S = 21 members** (thesis said < 20 — missed by one, falsifier did not fire); with PNGs, manifest and law a builder opens 27 things; the only shelf opened is wasm-spec-3; the companion as a ~640-line view; the remainder classified; the door drafted; the generator written |
 | [restructure-plan.md](restructure-plan.md) | `[PROPOSAL]` coherence of the whole tree: twelve measured findings, eight phases, one station per commit; supersedes the defrag plan as filing plan of record |
 
 Sub-shelves: [fixtures/](fixtures/README.md) sealed golden IR · [tools/](tools/README.md) host validator.

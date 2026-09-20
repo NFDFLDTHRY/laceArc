@@ -1,6 +1,6 @@
 # The reduction — pass 1 plan: what a builder must read, and whether that set is closed
 
-**Status:** **`PLAN`. Not executed.** The human added budget and said plan all six (22:11 PT); passes 2–6 have their own plan files. **Budget weighting:** the mathematical model of execution (pass 2) is the #1 result; the companion (pass 3) and the agentic apparatus (pass 4) the other two. **Station:** maps. **Emission:** `[GAP]`. No `src/`.
+**Status:** **`EXECUTED`** → [findings](reduction-pass-1-findings.md). **Falsifier did not fire; size thesis missed by one (S = 21).** The human added budget and said plan all six (22:11 PT); passes 2–6 have their own plan files. **Budget weighting:** the mathematical model of execution (pass 2) is the #1 result; the companion (pass 3) and the agentic apparatus (pass 4) the other two. **Station:** maps. **Emission:** `[GAP]`. No `src/`.
 **Campaign:** *the reduction* — the human's name for it, 2026-09-19 21:58 PT: *"claiming the door of repo reducer / future downstream shape architect of global systems cohesion."* **Board pinned at:** `e2e8155` (origin/main) + branch `lace-context-iteration-6` tip. **Editor:** Claude Fable 5.1 (cloud; bundles, not pushes). **Inherits:** [iteration 7 receipt](lace-context-iteration-7-receipt.md).
 **Cadence:** this file first; *Proceed* only on the human's word; findings to `reduction-pass-1-findings.md`; then this status line flips to `EXECUTED` with the link and says whether the falsifier fired.
 
