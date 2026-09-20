@@ -1,7 +1,7 @@
-STATUS: FREE
+STATUS: HELD
 STATION: maps
 OWNS: docs/reason-model-map.md docs/rust-nostd-*.md docs/atomic-primitives-map.md docs/clock/gearing-code-1to1.md docs/coherence-audit*.md docs/clock/system-mathematical-model.md docs/defrag-plan.md docs/plans/** docs/namespace-register.md docs/*.md (catch-all: any unmatched file at the docs/ root)
-AGENT: -
-BASE: -
-SINCE: -
-NOTE: miss-map pass 5 EXECUTED (Q×θ ALIGNED · 0 values · Slot II no θ · emission [GAP]); pass 6 not opened
+AGENT: Grok-maps
+BASE: 4b2e81e29370e47968eb0d71685a4248149d415a
+SINCE: 2026-09-20T23:08:12Z
+NOTE: seed-dictionary-map pass 1 PLAN; miss-map pass 5 EXECUTED (pass 6 not opened); execute not started; emission [GAP]

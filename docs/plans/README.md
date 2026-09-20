@@ -4,6 +4,7 @@ Plans, proposals, executed pass records, and dated receipts share this shelf. Ea
 
 | File | Job |
 |---|---|
+| [seed-dictionary-map-pass-1-plan.md](seed-dictionary-map-pass-1-plan.md) | **`PLAN`** — seed dictionary as first prefix. Piece 9. Wired-first ≠ schedule. Φ `[GAP]` |
 | [miss-map-pass-5-q-theta.md](miss-map-pass-5-q-theta.md) | **EXECUTED** miss-map pass 5. Q × \(\theta\) ALIGNED. 0 values. Φ `[GAP]` |
 | [miss-map-pass-5-plan.md](miss-map-pass-5-plan.md) | **`EXECUTED`** — pass 5 Q × \(\theta\). Φ `[GAP]` |
 | [miss-map-pass-4-wall-u12.md](miss-map-pass-4-wall-u12.md) | **EXECUTED** miss-map pass 4. G-gates NOT_RUN. U7 U12-hole. Φ `[GAP]` |
