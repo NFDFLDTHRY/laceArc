@@ -1,6 +1,6 @@
 # Mathematical execution model — UPDATE campaign · Pass 6 of 6 PLAN
 
-**Status:** **`PLAN`** · not executed. **Station:** maps (HELD `Grok-maps` · BASE `8d1a42d`).
+**Status:** **`EXECUTED`** 2026-09-20 · [`math-execution-update-pass-6-readiness.md`](math-execution-update-pass-6-readiness.md). Campaign **CLOSED 6/6**. **Station:** maps (`Grok-maps`).
 **Emission:** `[GAP]`. No `src/`. Not an emitter. Does not accept `pointer-emission.md`.
 **Depends on:** passes 1–5 EXECUTED.
 **Charge (human):** ensure the model is **accurate** — accurate to Hands and to this campaign, not complete, not accepted.

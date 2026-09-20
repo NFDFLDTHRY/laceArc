@@ -1,9 +1,10 @@
 # Mathematical execution model — Lace (partial)
 
 **Status:** PARTIAL mathematical execution model. **Not an emitter.**  
-**Pass:** old 2 execute + prefix-device pass 6 fidelity (S4 split) + UPDATE pass 2 label retie.  
+**Pass:** old 2 execute + prefix-device pass 6 fidelity + UPDATE passes 2–6 (labels, interface, wall, D1 refresh, readiness). Campaign **CLOSED 6/6**.  
 **Pinned main at pass 2:** `3cee660a5f0f1be160271103260a087d7d8cbfb8`.  
 **UPDATE pin (pass 1 execute):** `b013337f42d1ecb94a9aa92f92057ad9168f8df5`.  
+**UPDATE pin (pass 5 execute):** `8d1a42db184db8cdee7ba9697e6b40cff42f9294`.  
 **Φ-morphism:** stated on [`pointer-emission.md`](pointer-emission.md) (prefix-device pass 5).  
 **Φ-schedule:** Q1 **SPOKEN** on the emission file · **not accepted** · **not calculated**. Completeness of a Core executor still requires a calculated, human-accepted schedule.  
 **No `src/`.** File existence here does not authorize code.
@@ -182,7 +183,7 @@ Continue means the same rule remains available for further arrivals without clos
 
 | Contract | Role in this partial model | Contains (manifest) | Must not |
 |---|---|---|---|
-| **I Core** | Carrier \(L\), \(\mathsf{Arrive}\), \(\Phi_{\mathrm{morphism}}\), open schedule, readings | Pieces 1, 2, 4, 5, 6, 7, 8, 11, 14, 15 | Star table; holder oil; second store |
+| **I Core** | Carrier \(L\), \(\mathsf{Arrive}\), \(\Phi_{\mathrm{morphism}}\), schedule SPOKEN≠calculated, readings | Pieces 1, 2, 4, 5, 6, 7, 8, 11, 14, 15 | Star table; holder oil; second store |
 | **II Arrival** | Thin ordered feed into \(\mathsf{Arrive}\); zero own store | Piece 3; 9–10 as *use of I* | Lexicon / document store at the edge |
 | **III Projection** | \(\pi\) read-only | Piece 13; views of 7, 12, 15; Graphics A–C as views | Write-back into \(L\) |
 
@@ -231,7 +232,7 @@ No competing atom is introduced.
 
 | Field | Value |
 |---|---|
-| Pass | Old math-execution Pass 2 + prefix-device pass 6 fidelity + UPDATE pass 2 label retie |
+| Pass | Old math-execution Pass 2 + prefix-device pass 6 fidelity + UPDATE campaign 6/6 CLOSED |
 | Product | `docs/math-execution-model.md` |
 | Φ-morphism | Stated (emission file + S4.2) |
 | Φ-schedule | Q1 SPOKEN on emission file · not accepted · not calculated |
