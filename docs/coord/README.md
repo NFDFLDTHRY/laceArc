@@ -26,6 +26,8 @@ The entrypoint itself is [coord.sh](coord.sh); the station files it reads are un
 
 Gearing shafts stay under `docs/gearing/claim.sh`. Stations named `gear:<shaft>` strip the prefix and call that script. Do not rewrite the shaft protocol.
 
+**Current dispatch limitation, inspected 2026-09-20 at `0b2012b`:** the umbrella's gear `force-free` path reaches a delegate that does not permit that subcommand. Documentation of an override is not evidence that this particular dispatch works or permission to use it. [Update finding U21](../plans/repo-update-pass-1-evidence.md) records the separately gated repair and disposable-fixture check; no live claim is a test fixture.
+
 ---
 
 ## Standing rule (every agent, before edit)
@@ -56,8 +58,8 @@ Station files: `docs/coord/stations/<name>.station` — see [stations/README.md]
 | prompts | `docs/prompts/**` |
 | maps | `docs/reason-model-map.md` `docs/rust-nostd-*.md` `docs/atomic-primitives-map.md` `docs/clock/gearing-code-1to1.md` `docs/coherence-audit*.md` `docs/clock/system-mathematical-model.md` `docs/defrag-plan.md` `docs/plans/**` `docs/namespace-register.md` — and `docs/*.md` as a **catch-all**, so a new file at the court root never fails closed |
 | history | `docs/history-recovered*` `docs/history/**` |
-| hologram | `docs/hologram/**` `docs/clock/**` (1:1 + math stay maps: exact path wins) |
-| renderer | the three Layer III viewers: `docs/shadow-clock-gearing.html` (frozen; designated editor, per `gearing/CLAIMS.md`), `docs/hologram/nostd-pipeline.html`, `docs/clock/hcc-a-projection.html` |
+| hologram | `docs/hologram/**` `docs/clock/**` (1:1 + math stay maps: exact path wins); this currently includes `docs/clock/lace-projection.html`, `projection-bake-worker.js`, `sw.js`, and release metadata |
+| renderer | three explicit viewer exceptions: `docs/shadow-clock-gearing.html` (frozen; designated editor, per `gearing/CLAIMS.md`), `docs/hologram/nostd-pipeline.html`, `docs/clock/hcc-a-projection.html` |
 | kit | `docs/kit/**` `.claude/**` (hooks + session config are operating kit) |
 | law | `AGENTS.md` `CLAUDE.md` staking, law-why, manifest, `pointer-emission.md`, references, CONTRIBUTING, README, `.gitignore`, `LICENSE`, `docs/README.md` |
 | graphics | `docs/graphics/**` `docs/graphics-close-reading.md` — Hands A–D. Source of record. Not a second store. |
@@ -98,3 +100,17 @@ NOTE: <optional>
 
 Shaft claim protocol (unchanged): `docs/gearing/CLAIMS.md`.  
 Resync signal: `docs/gearing/RESYNC.md`.
+
+## Quiet-door #9 records
+
+These are dated records of the coordination-document reading, not live claim occupancy or a replacement protocol. Status checked against each header and the companion at `0b2012b`: passes 1–5 executed; pass 6 remains planned. Indexing it does not execute it.
+
+| Record | Recorded state |
+|---|---|
+| [ASCII companion](quiet-door-9-ascii.md) | Passes 1–5 present; no closure receipt for pass 6 |
+| [Pass 1](quiet-door-9-pass-1-plan.md) | EXECUTED: spine |
+| [Pass 2](quiet-door-9-pass-2-plan.md) | EXECUTED: fields |
+| [Pass 3](quiet-door-9-pass-3-plan.md) | EXECUTED: grain |
+| [Pass 4](quiet-door-9-pass-4-plan.md) | EXECUTED: walk |
+| [Pass 5](quiet-door-9-pass-5-plan.md) | EXECUTED: seam |
+| [Pass 6](quiet-door-9-pass-6-plan.md) | PLAN: not run |
