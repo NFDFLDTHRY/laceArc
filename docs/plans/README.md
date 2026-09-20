@@ -4,6 +4,7 @@ Plans, proposals, executed pass records, and dated receipts share this shelf. Ea
 
 | File | Job |
 |---|---|
+| [tech-ref-eq-map-pass-1-plan.md](tech-ref-eq-map-pass-1-plan.md) | **`PLAN`** — technician refs (five stakes) × mathematical model pass 1. Kin ≠ stitch. Does not fill H-PTR. Φ `[GAP]` |
 | [systems-eq-map-pass-6-soundness.md](systems-eq-map-pass-6-soundness.md) | **EXECUTED** systems×equations pass 6. S1–S8 8 PASS. Campaign **CLOSED 6/6**. Φ `[GAP]` |
 | [systems-eq-map-pass-6-plan.md](systems-eq-map-pass-6-plan.md) | **`EXECUTED`** — pass 6 of 6 **CLOSED**. Map soundness + STOP. Φ `[GAP]` |
 | [systems-eq-map-pass-5-d1.md](systems-eq-map-pass-5-d1.md) | **EXECUTED** systems×equations pass 5. D1 × one-tick. 0005–0007 CONFIRM. 6/6 Witness-only. Φ `[GAP]` |
