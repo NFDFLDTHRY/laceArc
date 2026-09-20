@@ -88,4 +88,4 @@ NOTE: Pass 1 execute. Hands re-read (graphics A–D door + Graphic D present + l
 ## Steward
 
 At fire time all eight shafts were FREE. TIP is pinned above.
-When agents have re-anchored, steward runs `./docs/gearing/resync.sh clear`.
+When every doc station and gear shaft is FREE, the steward may run `./docs/coord/coord.sh doctor --auto-clear "<AgentName>"`; for a FIRED signal it forwards that actor to `./docs/gearing/resync.sh clear "<AgentName>"`.
