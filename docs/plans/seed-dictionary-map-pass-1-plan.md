@@ -1,6 +1,6 @@
 # Seed dictionary × model — Pass 1 of 6 PLAN
 
-**Status:** **`PLAN`** · not executed. **Station:** maps (HELD `Grok-maps` · BASE `4b2e81e`).
+**Status:** **`EXECUTED`** 2026-09-20 · [`seed-dictionary-map-pass-1.md`](seed-dictionary-map-pass-1.md). **Station:** maps (`Grok-maps`).
 **Human charge:** the dictionary is the lace **seed**. It is wired first. It is what later text is wired *up to*.
 **Hands:** Piece 9 Dictionary Wiring · Piece 3 ingest · Piece 10 document feed.
 **Emission:** `[GAP]`. Spoken “dictionary wired first” is **not** \(\Phi_{\mathrm{schedule}}\). No `src/`.
