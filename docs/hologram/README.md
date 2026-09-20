@@ -4,6 +4,8 @@ These images are **not** Graphics A–D. They do not store Lace. They diagnose t
 
 Source of record remains `docs/graphics/` A–D.
 
+**Interpretation status, 2026-09-20:** HCC-A, Coffee Cup, and Water are conceptual reference documents under the [human correction](../law-why-these-documents.md#conceptual-reference-documents). Their concepts can inform these views; retained gear or holder imagery establishes no required machine component, runtime dependency, or legal-append condition.
+
 | File | Attachment | Title | Role |
 |---|---|---|---|
 | [perceived-reality-story-defense.png](perceived-reality-story-defense.png) | `13960.png` | Model of Perceived Reality and Story Defense | Overlap, story defense, why a true claim can fail to land |
@@ -41,7 +43,9 @@ Primitive sheets (`primitive-*.png`) remain the lawful shape catalog beside thes
 
 | File | Title | Role |
 |---|---|---|
-| [nostd-pipeline.html](nostd-pipeline.html) | LaceArc / nostd pipeline hologram (Layer III) | Canvas 2D viewer with **Manifest / Packaging / Both** modes (default Manifest: Hands pieces + strand spine). Packaging keeps 7-door arc; Both shows dashed PROPOSAL binds. Typed edge filters, inspection, transforms rail, timeline token. Fixture-honest. IR binding: [../plans/hologram-ast-ir-viewer.md](../plans/hologram-ast-ir-viewer.md). Schema: [../plans/hologram-ast-ir.md](../plans/hologram-ast-ir.md). Golden: [../plans/fixtures/hologram-ir-golden-v0.2.0.json](../plans/fixtures/hologram-ir-golden-v0.2.0.json). **Not** `shadow-clock-gearing.html` / `{A,B,C}` holder machine. |
+| [nostd-pipeline.html](nostd-pipeline.html) | LaceArc / nostd pipeline hologram (Layer III) | Canvas 2D viewer with **Manifest / Packaging / Both** modes (default Manifest: Hands pieces + strand spine). Packaging keeps 7-door arc; Both shows dashed PROPOSAL binds. Typed edge filters, inspection, transforms rail, timeline token. Sealed fixture with no AST extraction. IR binding: [../plans/hologram-ast-ir-viewer.md](../plans/hologram-ast-ir-viewer.md). Schema: [../plans/hologram-ast-ir.md](../plans/hologram-ast-ir.md). Golden: [../plans/fixtures/hologram-ir-golden-v0.2.0.json](../plans/fixtures/hologram-ir-golden-v0.2.0.json). Separate from the `{A,B,C}` conceptual-reference interpretation in [shadow-clock-gearing.html](../shadow-clock-gearing.html). |
+
+**Current source versus visible view:** source inspection at `0b2012bb221184f684f672f63260c6b1ecd9427b` found the pipeline viewer's footer still naming the earlier “holder machine,” while the gearing and HCC-A viewers retain additional machinery labels. These executable consumers remain deferred under U19 in the [update-pass evidence map](../plans/repo-update-pass-1-evidence.md). This index correction changes none of their HTML or contract data and reports no new browser observation. The [clock shelf's release note](../clock/README.md#source-evidence-and-release-status-2026-09-20) distinguishes corrected main documentation from the unchanged pinned development build.
 
 ## Geometry metaphor
 

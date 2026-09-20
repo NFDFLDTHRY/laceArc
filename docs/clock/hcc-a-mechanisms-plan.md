@@ -1,5 +1,9 @@
 # HCC-A mechanisms — ASCII systems map (PLAN)
 
+**Current reading, 2026-09-20:** HCC-A is a conceptual reference document about cognition under the [human correction](../law-why-these-documents.md#conceptual-reference-documents). The gear, housing, oil, and shaft language below is a retained interpretation of its concepts. It establishes no required holder component, runtime dependency, or condition for legal Lace append. Independent Graphic D exclusions and the pointer-emission gate remain intact.
+
+**Historical plan preserved:** the original status, claim wording, diagrams, and “Next” instruction below describe this earlier planning artifact, not a current station hold or an outstanding instruction to create a manifest. The [HCC-A conceptual-reference analysis](hcc-a-systems-manifest.md) now exists. The [HCC-A viewer](hcc-a-projection.html) still has a separate visibility gap: its parser discards the analysis's correction preamble, so this Markdown note does not update the visible application. See U19 in the [update-pass evidence map](../plans/repo-update-pass-1-evidence.md).
+
 **Station:** hologram  
 **Status:** PLAN. Not Core. Not Graphic D. Not accepted emission.  
 **Source of record for the workpiece:** `docs/graphics/` + `docs/systems-manifest.md`  

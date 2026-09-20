@@ -31,15 +31,23 @@ These retain analyses of source concepts and the earlier gear interpretation. Ea
 
 ## Viewer app (Layer III)
 
-Read-only projection. It shows the strand; it never decides what goes on it.
+Existing Layer III software replays the fixed eleven-row D1 specimen and displays conceptual-reference interpretations. It does not ingest a strand or decide when to emit a POINTER.
 
 | File | Role |
 |---|---|
-| [lace-projection.html](lace-projection.html) | Merged Layer III viewer: WebGPU 3D + D1 time. Glyphs ≠ schema |
-| [hcc-a-projection.html](hcc-a-projection.html) | HCC-A systems-manifest projection |
-| [projection-bake-worker.js](projection-bake-worker.js) | Bake worker |
-| [sw.js](sw.js) · [manifest.webmanifest](manifest.webmanifest) | Service worker and web manifest — installable. `file://` will not install |
-| [wasm/](wasm/README.md) | wasm notes; the wasm32 sysroot is still missing |
+| [lace-projection.html](lace-projection.html) | JavaScript + WGSL WebGPU viewer of D1 time; glyphs ≠ schema |
+| [hcc-a-projection.html](hcc-a-projection.html) | Canvas 2D projection of the HCC-A analysis; visible classification correction remains pending |
+| [projection-bake-worker.js](projection-bake-worker.js) | JavaScript vertex bake with transferable buffers; returns `wasm: false` |
+| [sw.js](sw.js) · [manifest.webmanifest](manifest.webmanifest) | Development PWA shell; historical Android installation evidence is recorded in the deployment policy |
+| [wasm/](wasm/README.md) | Historical wasm32 bake attempt, current JavaScript path, and separate proposed wasm64 Core target |
+
+### Source, evidence, and release status (2026-09-20)
+
+**Scope:** source inspection at `0b2012bb221184f684f672f63260c6b1ecd9427b`; no browser or device run in this documentation update. The current service worker precaches only the two icons and uses network-first loading for HTML and JavaScript. Other same-origin resources are cached on use. This is not the complete offline production carrier proposed in the [distribution model](../kit/distribution-model.md). The viewer's WebNN indicator records whether context creation succeeded; it does not demonstrate neural-network execution.
+
+The conceptual-reference correction is present in the current Markdown analyses. It is not yet carried into the executable views: the HCC-A viewer discards the Markdown preamble containing that correction, and the separate gearing viewer still displays the earlier machinery labels and contract text. The [update-pass evidence map](../plans/repo-update-pass-1-evidence.md) records that visibility gap as U19 and keeps renderer/recovery work separate from documentation changes.
+
+[LATEST.json](LATEST.json) still names **ixp2 at `3b619929182e98ccaa348a2fc696b98c2e416a2e`**. The [pinned ixp2 development URL](https://rawcdn.githack.com/NFDFLDTHRY/laceArc/3b619929182e98ccaa348a2fc696b98c2e416a2e/docs/clock/lace-projection.html) and its relative resources remain at that commit; a change on main does not update them. This update does not promote a release or verify that URL on a device. The [ixp2 pass receipt](passes/projection-interaction-pass-2-plan.md) records an executed change, but its observation is the preceding ixp1 image with a lone green volume. Its required ixp2 combined view remains an unverified success criterion in that receipt.
 
 **Install (PWA):** repo law is [`docs/kit/githack-pwa-deploy.md`](../kit/githack-pwa-deploy.md).
 
@@ -47,7 +55,7 @@ Read-only projection. It shows the strand; it never decides what goes on it.
 https://rawcdn.githack.com/NFDFLDTHRY/laceArc/<FULL_COMMIT_SHA>/docs/clock/lace-projection.html
 ```
 
-That origin+path owns the manifest, service worker, and storage. A new commit is a new URL. Update = open the new SHA and install that.
+The manifest and service-worker scope are relative to that pinned path. A new commit is a new URL. The viewer's Update action resolves the release pointer and navigates to its SHA; installed identity, cache retention, and successful rendering require their own observations. The repository's current branch and its release pointer are distinct.
 
 **Preview / audit:** `raw.githack.com` against `main` or a SHA is fine to *look*. Do not Add-to-Home-Screen those.
 
@@ -55,7 +63,7 @@ That origin+path owns the manifest, service worker, and storage. A new commit is
 
 | | |
 |---|---|
-| [passes/](passes/README.md) | **Executed pass plans** — 30 across six campaigns |
+| [passes/](passes/README.md) | **60 historical executed pass records**: 30 tabled at the door and 30 linked through [projection iterations](passes/projection-iterations.md) |
 
 **A new pass plan goes in [`passes/`](passes/README.md), and the product it serves links it once the pass is executed.** A pass plan nobody links is provenance nobody can find.
 
