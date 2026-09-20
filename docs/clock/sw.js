@@ -11,11 +11,8 @@ self.addEventListener("install", e => {
     )
   );
 });
-self.addEventListener("activate", e => {
-  e.waitUntil(caches.keys().then(keys =>
-    Promise.all(keys.filter(k => k !== CACHE).map(k => caches.delete(k)))
-  ));
-});
+// Pinned installations and unrelated apps share this origin. Activation must
+// not purge their caches. No automatic cache deletion is performed here.
 function netFirst(req){
   return fetch(req).then(res => {
     if (res && res.ok) {

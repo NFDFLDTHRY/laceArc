@@ -41,11 +41,13 @@ function sphere(r, seg=8){
   return {p,n};
 }
 function ribbon(a,b,r=0.016){
-  const dx=b[0]-a[0], dz=b[2]-a[2], len=Math.hypot(dx,dz)||1;
-  const px=-dz/len*r, pz=dx/len*r;
+  const dx=b[0]-a[0], dz=b[2]-a[2], len=Math.hypot(dx,dz);
+  // Vertical filaments need width even when their endpoints share x/z.
+  const px=len ? -dz/len*r : r, pz=len ? dx/len*r : 0;
   const p0=[a[0]+px,a[1],a[2]+pz], p1=[a[0]-px,a[1],a[2]-pz];
   const p2=[b[0]-px,b[1],b[2]-pz], p3=[b[0]+px,b[1],b[2]+pz];
-  return {p:[...p0,...p1,...p2,...p0,...p2,...p3], n:[0,1,0,0,1,0,0,1,0,0,1,0,0,1,0,0,1,0]};
+  const normal=len ? [0,1,0] : [0,0,-1];
+  return {p:[...p0,...p1,...p2,...p0,...p2,...p3], n:Array(6).fill(normal).flat()};
 }
 function shorten(a,b,pad=0.55){
   const dx=b[0]-a[0], dy=b[1]-a[1], dz=b[2]-a[2];

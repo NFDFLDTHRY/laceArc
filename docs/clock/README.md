@@ -40,6 +40,7 @@ Existing Layer III software replays the fixed eleven-row D1 specimen and display
 | [projection-bake-worker.js](projection-bake-worker.js) | JavaScript vertex bake with transferable buffers; returns `wasm: false` |
 | [sw.js](sw.js) · [manifest.webmanifest](manifest.webmanifest) | Development PWA shell; historical Android installation evidence is recorded in the deployment policy |
 | [wasm/](wasm/README.md) | Historical wasm32 bake attempt, current JavaScript path, and separate proposed wasm64 Core target |
+| [Runtime regression checks](tests/README.md) | Built-in Node checks of the current Layer III sources; distinct browser/device completion steps |
 
 ### Source, evidence, and release status (2026-09-20)
 
@@ -66,6 +67,8 @@ The manifest and service-worker scope are relative to that pinned path. A new co
 | [passes/](passes/README.md) | **60 historical executed pass records**: 30 tabled at the door and 30 linked through [projection iterations](passes/projection-iterations.md) |
 
 **A new pass plan goes in [`passes/`](passes/README.md), and the product it serves links it once the pass is executed.** A pass plan nobody links is provenance nobody can find.
+
+**Historical quiet-door #6:** [ASCII reading](quiet-door-6-ascii.md) and [receipt](quiet-door-6-receipt.md), recorded CLOSED 6/6 at `f568275`. The ASCII header links all six pass plans. These are dated readings of the clock entrance, not current runtime or installation evidence; apply the current conceptual-reference qualification above to their retained imagery.
 
 ## Deliberately elsewhere
 

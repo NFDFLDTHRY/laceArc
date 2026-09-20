@@ -53,7 +53,7 @@ aside[hidden]{display:none}
   <img id="look-lattice" class="on" alt="lattice template"/>
   <img id="look-traces" alt="traces template"/>
   <img id="look-crossing" alt="crossing template"/>
-  <p class="why" id="why">Lookrefs on stage until WebGPU paints. Glyphs ≠ schema. [GAP]</p>
+  <p class="why" id="why">Reference images. Glyphs ≠ schema. [GAP]</p>
 </div>
 <div class="hud">
   <header class="hit">
@@ -68,7 +68,7 @@ aside[hidden]{display:none}
   </div>
   <aside id="ascii" hidden>A–J audit (Chrome Android)
 <span id="audit">running…</span></aside>
-  <aside id="holder" hidden>
+  <aside id="holder" class="hit" hidden>
     <a href="../shadow-clock-gearing.html" style="color:#3ec8ff">shadow-clock-gearing.html</a><br/>
     <a href="hcc-a-projection.html" style="color:#3ec8ff">hcc-a-projection.html</a><br/>
     Doors. Not fused into L.
@@ -177,11 +177,13 @@ function beam(a,b,r=0.04){
   return {p,n};
 }
 function ribbon(a,b,r=0.016){
-  const dx=b[0]-a[0], dz=b[2]-a[2], len=Math.hypot(dx,dz)||1;
-  const px=-dz/len*r, pz=dx/len*r;
+  const dx=b[0]-a[0], dz=b[2]-a[2], len=Math.hypot(dx,dz);
+  // Vertical filaments need width even when their endpoints share x/z.
+  const px=len ? -dz/len*r : r, pz=len ? dx/len*r : 0;
   const p0=[a[0]+px,a[1],a[2]+pz], p1=[a[0]-px,a[1],a[2]-pz];
   const p2=[b[0]-px,b[1],b[2]-pz], p3=[b[0]+px,b[1],b[2]+pz];
-  return {p:[...p0,...p1,...p2,...p0,...p2,...p3], n:[0,1,0,0,1,0,0,1,0,0,1,0,0,1,0,0,1,0]};
+  const normal=len ? [0,1,0] : [0,0,-1];
+  return {p:[...p0,...p1,...p2,...p0,...p2,...p3], n:Array(6).fill(normal).flat()};
 }
 function shorten(a,b,pad=0.55){
   const dx=b[0]-a[0], dy=b[1]-a[1], dz=b[2]-a[2];
@@ -226,6 +228,7 @@ function bakeMain(){
         add(ribbon(seg[0],seg[1],0.055),[0.78,0.68,0.12],[0,0,0],r.i);
       }
     }
+    add(ribbon([off[0],0.55,off[2]],[off[0],2.35,off[2]],0.018),[0.05,0.88,1.0],[0,0,0],r.i);
   }
   return {
     P: new Float32Array(P), N: new Float32Array(N),
@@ -433,7 +436,11 @@ function keepFallback(why){
   if(g) g.textContent="GPU off";
 }
 function hideFallback(){
-  /* lookrefs stay unloaded until REF or GPU-off */
+  // Leave the explicit REF choice to CSS; release only the forced failure view.
+  document.getElementById("fallback").style.removeProperty("display");
+  document.body.classList.remove("gpu-off");
+  document.getElementById("why").textContent="Reference images. Glyphs ≠ schema. [GAP]";
+  gpuGaveUp=false;
 }
 function ensureLookrefs(){
   if(ensureLookrefs.done) return;
@@ -577,6 +584,7 @@ async function main(gen){
   }
   const bP=buf(scene.P), bN=buf(scene.N), bC=buf(scene.C), bB=buf(scene.B);
   const uni=device.createBuffer({size:256,usage:GPUBufferUsage.UNIFORM|GPUBufferUsage.COPY_DST});
+  const uniGlass=device.createBuffer({size:256,usage:GPUBufferUsage.UNIFORM|GPUBufferUsage.COPY_DST});
   const shader=device.createShaderModule({code:WGSL});
   const vbufs=[
     {arrayStride:12,attributes:[{shaderLocation:0,offset:0,format:"float32x3"}]},
@@ -605,9 +613,15 @@ async function main(gen){
   const pipeGlass=mkPipe(false);
   const bgFloor=device.createBindGroup({layout:pipeFloor.getBindGroupLayout(0),entries:[{binding:0,resource:{buffer:uni}}]});
   const bgSolid=device.createBindGroup({layout:pipeSolid.getBindGroupLayout(0),entries:[{binding:0,resource:{buffer:uni}}]});
-  const bgGlass=device.createBindGroup({layout:pipeGlass.getBindGroupLayout(0),entries:[{binding:0,resource:{buffer:uni}}]});
+  const bgGlass=device.createBindGroup({layout:pipeGlass.getBindGroupLayout(0),entries:[{binding:0,resource:{buffer:uniGlass}}]});
   const sess={dead:false,raf:0,device,depth:null};
   gpuSession=sess;
+  if(gstamp) gstamp.textContent="GPU ready";
+  device.addEventListener("uncapturederror", ev=>{
+    if(sess.dead || gen!==gpuGen) return;
+    keepFallback("WebGPU error: "+(ev.error?.message || "validation or device failure"));
+    killGpuSession();
+  });
   device.lost.then(()=>{
     if(sess.dead) return;
     const early = (performance.now()-bootAt)<1000 || !gpuLive;
@@ -656,13 +670,6 @@ async function main(gen){
     if(!sized){ sess.raf=requestAnimationFrame(frame); return; }
     if(playing){ tVal+=dt*0.7; if(tVal>10.4) tVal=0; tEl.value=tVal; }
     showLook(tVal);
-    if(!gpuLive){
-      gpuLive=true;
-      document.body.classList.remove("gpu-off");
-      if(gstamp) gstamp.textContent="GPU on";
-      const ms=document.getElementById("msstamp");
-      if(ms) ms.textContent="ms "+Math.round(performance.now()-bootAt);
-    }
     const idx=Math.min(10, Math.floor(tVal+0.001));
     const live=D1[idx];
     phase.textContent="t="+String(idx).padStart(4,"0")+" "+(live.k==="WORD"?live.v:"PTR");
@@ -697,7 +704,7 @@ async function main(gen){
       else pass.draw(vCount);
       pass.end();
       ub[23]=1;
-      device.queue.writeBuffer(uni,0,ub);
+      device.queue.writeBuffer(uniGlass,0,ub);
       const passG=enc.beginRenderPass({
         colorAttachments:[{view:tex.createView(),clearValue:{r:0,g:0,b:0,a:1},loadOp:"load",storeOp:"store"}],
         depthStencilAttachment:{view:sess.depth.createView(),depthClearValue:1,depthLoadOp:"load",depthStoreOp:"store"}
@@ -708,8 +715,17 @@ async function main(gen){
       else passG.draw(vCount);
       passG.end();
       device.queue.submit([enc.finish()]);
+      if(!gpuLive){
+        // Submission is observable here; painted geometry needs a separate check.
+        gpuLive=true;
+        hideFallback();
+        if(gstamp) gstamp.textContent="GPU submitted";
+        const ms=document.getElementById("msstamp");
+        if(ms) ms.textContent="ms "+Math.round(performance.now()-bootAt);
+      }
       drawFails=0;
-    } catch(_) {
+    } catch(err) {
+      keepFallback("WebGPU submission failed: "+(err.message || String(err)));
       drawFails++;
       if(drawFails>=12){ requestReboot("draw"); return; }
       sess.raf=requestAnimationFrame(frame);
@@ -829,15 +845,13 @@ async function resolveLatestSha(){
   for(const pointer of pointers){
     try {
       const j=await fetch(pointer,{cache:"no-store"}).then(r=>{ if(!r.ok) throw new Error("latest "+r.status); return r.json(); });
-      if(j && /^[0-9a-f]{40}$/i.test(j.sha||"")) return j.sha.toLowerCase();
+      if(j && j.id==="https://github.com/NFDFLDTHRY/laceArc/lace-iii" &&
+          j.html==="docs/clock/lace-projection.html" && /^[0-9a-f]{40}$/i.test(j.sha||"")) {
+        return j.sha.toLowerCase();
+      }
     } catch(_){}
   }
-  const tip=await fetch("https://api.github.com/repos/NFDFLDTHRY/laceArc/commits/main",{cache:"no-store"}).then(r=>{
-    if(!r.ok) throw new Error("tip "+r.status);
-    return r.json();
-  });
-  if(!tip || !tip.sha) throw new Error("no tip");
-  return String(tip.sha).toLowerCase();
+  throw new Error("release pointer unavailable or invalid");
 }
 function currentPinSha(){
   const m=location.pathname.match(/\/laceArc\/([0-9a-f]{40})\//i);
@@ -913,18 +927,29 @@ if ("serviceWorker" in navigator) {
       const e=document.getElementById("pwastamp");
       if(e) e.textContent = navigator.serviceWorker.controller ? "PWA on" : "SW wait";
       const upd=document.getElementById("updatebtn");
-      const kick=()=>{
+      let watchedInstalling=null;
+      const kick=(worker=reg.installing)=>{
         if(reg.waiting){
           if(e) e.textContent="PWA upd";
           upd.textContent="Reload";
+        } else if(worker){
+          if(e) e.textContent=worker.state==="redundant" ? "SW install failed" :
+            worker.state==="activated" ? "SW active" : "SW installing";
+          if(worker.state==="redundant") upd.textContent="Update";
         }
       };
-      kick();
-      reg.addEventListener("updatefound", ()=>{
+      const watchInstalling=()=>{
         const w=reg.installing;
-        if(!w) return;
-        w.addEventListener("statechange", kick);
-      });
+        if(w && w!==watchedInstalling){
+          watchedInstalling=w;
+          w.addEventListener("statechange", ()=>{
+            if(w===watchedInstalling) kick(w);
+          });
+        }
+        kick(w);
+      };
+      watchInstalling();
+      reg.addEventListener("updatefound", watchInstalling);
       upd.addEventListener("click", async ev=>{
         ev.preventDefault();
         if(e) e.textContent="chk";
@@ -932,11 +957,21 @@ if ("serviceWorker" in navigator) {
           const act=await goLatest(e);
           if(act==="jump") return;
         } catch(err) {
-          if(e) e.textContent="tip fail";
+          if(e) e.textContent="release unavailable";
+          return;
         }
-        try { reg.update(); } catch(_){}
+        try { await reg.update(); }
+        catch(_) {
+          if(e) e.textContent="SW check failed";
+          return;
+        }
         if(reg.waiting){
+          if(e) e.textContent="SW activating";
           reg.waiting.postMessage({type:"skip"});
+        } else if(reg.installing){
+          watchInstalling();
+        } else if(watchedInstalling?.state==="redundant"){
+          kick(watchedInstalling);
         } else if(e) e.textContent="fresh";
       });
     })

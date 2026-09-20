@@ -4,6 +4,8 @@ These images are **not** Graphics A–D. They do not store Lace. They diagnose t
 
 Source of record remains `docs/graphics/` A–D.
 
+**Historical quiet-door #7:** [ASCII reading](quiet-door-7-ascii.md) and [receipt](quiet-door-7-receipt.md), recorded CLOSED 6/6 at `bb476ad`. The ASCII header links all six pass plans. These are dated readings of this entrance, not current viewer or device evidence; the interpretation qualification below applies to their retained imagery.
+
 **Interpretation status, 2026-09-20:** HCC-A, Coffee Cup, and Water are conceptual reference documents under the [human correction](../law-why-these-documents.md#conceptual-reference-documents). Their concepts can inform these views; retained gear or holder imagery establishes no required machine component, runtime dependency, or legal-append condition.
 
 | File | Attachment | Title | Role |
