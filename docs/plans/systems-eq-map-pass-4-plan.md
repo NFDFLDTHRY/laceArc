@@ -1,6 +1,6 @@
 # Systems × equations map — Pass 4 of 6 PLAN
 
-**Status:** **`PLAN`** · not executed. **Station:** maps (HELD `Grok-maps` · BASE `5d29437`).
+**Status:** **`EXECUTED`** 2026-09-20 · [`systems-eq-map-pass-4-complete.md`](systems-eq-map-pass-4-complete.md). **Station:** maps (`Grok-maps`).
 **Depends on:** pass 1 map · pass 2 W1–W6 · pass 3 U1–U7.
 **Emission:** `[GAP]`. No `src/`. Does not accept `pointer-emission.md`.
 **Charge (human):** ensure we are **not missing anything**.
