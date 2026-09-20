@@ -1,6 +1,6 @@
 # Iteration 6 — personal-context alignment and the shape of the crate
 
-**Status:** `[PROPOSAL]` iteration. Passes 1–4 executed. **Station:** maps. **Emission:** `[GAP]`. No `src/`.
+**Status:** `[PROPOSAL]` iteration. Passes 1–5 executed. **Station:** maps. **Emission:** `[GAP]`. No `src/`.
 **Pinned at:** `e2e8155942b6ef084d2ef9f4a05fcf8fb1dd829f` (origin/main, 2026-09-20T03:14Z). **Branch:** `lace-context-iteration-6`.
 **Convened by:** the human, 2026-09-19, in words: *"Your first 6 pass iteration of personal lace context informed repo alignment and repo coherence"* and *"absolute repo God mode to reshape."* Recorded as an amendment of scope, not of law. **No permanent prohibition is lifted by this iteration.** `src/`, Cargo, emit stubs and second stores stay forbidden.
 **Editor:** one agent (Claude Fable 5.1, cloud session, no push credential — see §6). Propose / attack / resolve are performed by that one agent and are **not independent review**.
@@ -27,7 +27,7 @@ The human then asked for more than the yield: a coherent shape — a `#![no_std]
 | **2** | What is true of the target — `wasm64-unknown-unknown`, Chrome on Android, the Pixel 9a — at evidence strength, and which references must the human attach? | [pass 2 findings](lace-context-iter6-pass-2-findings.md) | maps |
 | **3** | Does the global ASCII systems diagram match the evidence-backed rulings? | Pass 26 appended to [systems-manifest-ascii.md](../systems-manifest-ascii.md) as Iteration-4 Pass 1 delta admission; [pass 3 findings](lace-context-iter6-pass-3-findings.md) | maps |
 | **4** | What is the mathematical execution environment — the thing that "solves lace against the reference material" — stated so an agent can run it and cannot fill Φ with it? | [pass 4 environment](lace-context-iter6-pass-4-environment.md) | maps |
-| **5** | What is the complete crate shape, from `strand/` to an installed WebAPK, with every unsettled premise named as a human ruling? | `lace-context-iter6-pass-5-crate-proposal.md` (pass 5, pending) — **the rulings brief is written by the agent and not taken by it** | maps |
+| **5** | What is the complete crate shape, from `strand/` to an installed WebAPK, with every unsettled premise named as a human ruling? | [pass 5 crate proposal](lace-context-iter6-pass-5-crate-proposal.md) — **the rulings brief is written by the agent and not taken by it** | maps |
 | **6** | What was established, what could not be, what is unrecoverable, what the human must attach or rule, and what the team does next? | `docs/prompts/lace-context-diagram-prompt.md` (pass 6, pending) (prompts); `lace-context-iteration-6-receipt.md` (pass 6, pending) (maps) | prompts · maps |
 
 Pass 5 of the standing [iteration shape](verification-iterations.md) is the human's. Here it is folded into the crate proposal as a **rulings brief** because the rulings are the crate's open premises; the brief is prepared, the rulings are not taken.
