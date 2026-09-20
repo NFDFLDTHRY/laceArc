@@ -16,7 +16,7 @@ Keep copies off `main`. Suggested local names (gitignored):
 - `refs/local/petersen-zech-mathematical-theory-of-deep-learning.pdf`
 - `refs/local/bi-et-al-agentscope-2609.02371.pdf`
 
-In this Grok project workspace the same files live under `artifacts/refs/`.
+An earlier Grok workspace used `artifacts/refs/`. These are workspace conventions, not guarantees about a fresh checkout. Record the actual attachment path and source identity in each reading receipt; keep PDF bytes outside Git.
 
 ## Catalog
 
@@ -145,6 +145,18 @@ If a sentence in any of these works would change WORD, POINTER, star, or the gov
 
 Five-page KEEP/FORBID clip of stakes 1–5: `docs/clipboards/clipboard-five-stakes.md`. Projection of `docs/reason-model-map.md`. Not Core.
 
-#### History — sixth extraction plan (18 September 2026)
+#### History — sixth and seventh extraction records
 
-Bound as `docs/history/history-recovered-pass-6-plan.md`. Plans the next recovery pass; does not execute it. Governing check: located ≠ read ≠ accepted ≠ proven. Historical Shadow only; does not amend staking or settle pointer-emission.
+The [sixth extraction plan](history/history-recovered-pass-6-plan.md) records execution and points to its [recovered material](history/history-recovered-pass-6-2026-09-18.md) and [sit-note](history/history-recovered-pass-6-sit.md). The [seventh extraction](history/history-recovered-pass-7-2026-09-18.md) has a separate [evidence capture](history/history-recovered-pass-7-evidence-2026-09-18.json). Current history routing lives in the [history index](history/README.md). Located, read, accepted and proven remain different claims. These records do not amend staking or settle pointer emission.
+
+## Technology reference shelves
+
+These are source-mapping and target-reference shelves, not additional canonical graphics or admitted Core dependencies. The [clipboard index](clipboards/README.md) distinguishes executed readings from pending work.
+
+| Reference family | Current route | Scope |
+|---|---|---|
+| WebAssembly | [Wasm Spec 3 clipboard](clipboards/wasm-spec-3-clipboard.md) | Target/runtime reference reading; wasm64 target does not accept encoding, emission or a build |
+| WebGPU | [WebGPU clipboard](clipboards/webgpu-clipboard.md) | Host/GPU projection reading; device execution requires its own observation |
+| WGSL | [WGSL clipboard](clipboards/wgsl-clipboard.md) | Shader-language reading; not a Lace operator |
+| WebNN | [WebNN clipboard](clipboards/webnn-clipboard.md) | Host neural-network reference; proposed roles retain their source/acceptance limits |
+| Rust target/toolchain | [rust-target clipboard](clipboards/rust-target-clipboard.md) | Completed staking/mapping records and current attachment queue; toolchain rulings and builds remain separate |

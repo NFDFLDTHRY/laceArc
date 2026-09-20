@@ -4,7 +4,7 @@ Put a shoe lace in your hands or get out of here.
 
 Lace is one continuously growing strand. Every word occurrence is more wire. Each word has a persistent star. Meaning is not stored. Only structure, sequence, and participation.
 
-This repository is the home of that model. It is not a graph database, not a lexicon, and not an implementation yet.
+This repository is the home of that model. Lace Core is not implemented. Layer III viewers, coordination scripts, and documentation checks exist alongside the model.
 
 ## The rule
 
@@ -27,16 +27,16 @@ Shelves (defrag pass 1–4). Hands stay at `docs/` root. Do not treat a prompt, 
 | Shelf | Path | What it is |
 |---|---|---|
 | The court | [docs/](docs/README.md) | Everything at the `docs/` root, and which of it is Hands |
-| Hands | [docs/graphics/](docs/graphics/), manifest, law, staking, reason-model-map, close-reading | Source of record |
+| Hands | [docs/graphics/](docs/graphics/) | Four canonical PNGs, the source of record. The manifest and close-reading derive from them; law governs work; reason maps are interpretations |
 | Open `[GAP]` | [docs/pointer-emission.md](docs/pointer-emission.md) | DRAFT. May be worked. Not accepted. Invented answers still a breach |
-| Shadow prose | [docs/clock/](docs/clock/README.md) | Holder contracts, gear manifests and math. Not Core |
-| Shadow view | [docs/shadow-clock-gearing.html](docs/shadow-clock-gearing.html) + two more viewers, [docs/gearing/](docs/gearing/README.md), [docs/hologram/](docs/hologram/README.md) | Renderer + shafts + templates. Cubes ≠ rows |
+| Shadow prose | [docs/clock/](docs/clock/README.md) | Conceptual clock readings, proposed contracts and math. H/C/W interpretations do not impose holder components |
+| Shadow view | [gearing](docs/shadow-clock-gearing.html), [HCC](docs/clock/hcc-a-projection.html), [Lace specimen](docs/clock/lace-projection.html), [no_std plan](docs/hologram/nostd-pipeline.html) | Four Layer III viewers; current-source, pinned release and device observations are separate states |
 | Coord | [docs/coord/](docs/coord/README.md) | Doc stations + gear claim umbrella (Layer III) |
 | History | [docs/history/](docs/history/README.md) | Recoveries. Do not revive walkers |
 | Prompts | [docs/prompts/](docs/prompts/README.md) | Agent tickets. Not law |
-| Clipboards | [docs/clipboards/](docs/clipboards/README.md) | KEEP/FORBID mappings of the five stake texts |
+| Clipboards | [docs/clipboards/](docs/clipboards/README.md) | Five stake-text families plus Wasm, WebGPU, WGSL, WebNN and rust-target source mappings |
 | Kit | [docs/kit/](docs/kit/README.md) | Steward controls. PWA install law: [githack-pwa-deploy.md](docs/kit/githack-pwa-deploy.md) |
-| Plans | [docs/plans/](docs/plans/README.md) | `[PLAN]` only: rust doors, hologram IR, the projection brief, the restructure plan. Not Core |
+| Plans | [docs/plans/](docs/plans/README.md) | Plans, proposals, executed findings and receipts, each with its own status. Arrival in Git is not execution or acceptance |
 
 | Path | Role |
 |---|---|
@@ -47,8 +47,8 @@ Shelves (defrag pass 1–4). Hands stay at `docs/` root. Do not treat a prompt, 
 | [docs/clock/shadow-clock-gear-contracts-second-reading.md](docs/clock/shadow-clock-gear-contracts-second-reading.md) | [PROPOSAL] Bounded counter-reading of the gear contracts. Five findings outstanding; one absorbed by the primary. |
 | [docs/law-why-these-documents.md](docs/law-why-these-documents.md) | Repo law: why the five adjacent documents were staked, and the only allowed implementation posture (Rust `no_std`, zero foreign deps). |
 | [docs/staking-the-workspace.md](docs/staking-the-workspace.md) | Exact Hands vs Shadow staking ASCII (companion to law-why). |
-| [docs/clock/shadow-clock-hologram.md](docs/clock/shadow-clock-hologram.md) | Holder machine {A,B,C} clock hologram; gears traced to contract boundary. Shadow only. |
-| [docs/clock/shadow-clock-agent-brief.md](docs/clock/shadow-clock-agent-brief.md) | Standing brief for agents: define gear interaction contracts and walk all sources. |
+| [docs/clock/shadow-clock-hologram.md](docs/clock/shadow-clock-hologram.md) | Recorded {A,B,C} clock interpretation; conceptual-reference classification governs its use. |
+| [docs/clock/shadow-clock-agent-brief.md](docs/clock/shadow-clock-agent-brief.md) | Source-reading brief for the conceptual clock interpretation; no required holder machinery follows. |
 | [docs/clock/shadow-clock-gear-contracts.md](docs/clock/shadow-clock-gear-contracts.md) | Walk artifact: every mesh contracted, stamped, cited. Shadow only. |
 | [docs/clock/system-mathematical-model.md](docs/clock/system-mathematical-model.md) | Dual-universe formal model: Hands Contract I + Shadow {A,B,C}; emission sealed [GAP]. |
 | [docs/shadow-clock-gearing.html](docs/shadow-clock-gearing.html) | Interactive Layer-III projection: {A,B,C} as physical clock gearing + mesh contracts — **WebGPU 3D required**. Preview on raw.githack. **Install** only via [GitHack PWA policy](docs/kit/githack-pwa-deploy.md). |
@@ -63,7 +63,7 @@ Shelves (defrag pass 1–4). Hands stay at `docs/` root. Do not treat a prompt, 
 | [docs/prompts/rust-nostd-crate-map-prompt.md](docs/prompts/rust-nostd-crate-map-prompt.md) | Agent prompt: ASCII map of Hands → Rust `#![no_std]` first-party crates (intuitive tree; no `src/` yet). |
 | [docs/prompts/rust-nostd-branch-contracts-prompt.md](docs/prompts/rust-nostd-branch-contracts-prompt.md) | Agent prompt: next plan — per-branch `#![no_std]` contracts on top of the crate map (plan only; no `src/`). |
 | [docs/prompts/gearing-code-1to1-prompt.md](docs/prompts/gearing-code-1to1-prompt.md) | Agent prompt: force 1:1 between WebGPU gearing visual keys and code units (Layer III; emission [GAP]). |
-| [docs/prompts/pointer-emission-prompt.md](docs/prompts/pointer-emission-prompt.md) | Agent prompt: draft `docs/pointer-emission.md` as unanswered questions only (DRAFT; human accepts later; no `src/`). |
+| [docs/prompts/pointer-emission-prompt.md](docs/prompts/pointer-emission-prompt.md) | Historical outline task with current preservation instructions: retain the accumulated draft and grounded constraints; acceptance remains absent. |
 | [docs/prompts/gearing-html-iterate-prompt.md](docs/prompts/gearing-html-iterate-prompt.md) | Agent prompt: iterate WebGPU gearing HTML / shafts under claim law, 1:1 keys, Layer III. |
 | [docs/prompts/gearing-html-fix-prompt.md](docs/prompts/gearing-html-fix-prompt.md) | Agent prompt: designated-editor FIX pass for WebGPU gearing HTML (mobile HUD/camera/chrome). |
 | [docs/prompts/gearing-html-hologram-restyle-prompt.md](docs/prompts/gearing-html-hologram-restyle-prompt.md) | Agent prompt: restyle WebGPU gearing HTML to hologram lattice/crossing/traces templates (keep keys; [GAP]). |
@@ -81,7 +81,7 @@ Shelves (defrag pass 1–4). Hands stay at `docs/` root. Do not treat a prompt, 
 | [docs/clipboards/rowlands-zero-to-infinity-clipboard.md](docs/clipboards/rowlands-zero-to-infinity-clipboard.md) | Rowlands empty-start / no extra rooms / rewrite name-clash sheets. Not Core. |
 | [docs/clipboards/xiao-zhu-foundations-clipboard.md](docs/clipboards/xiao-zhu-foundations-clipboard.md) | Xiao–Zhu arrival-order / intern / MASK / embed / next-token sheets. Not Core. |
 | [docs/clipboards/agentscope-clipboard.md](docs/clipboards/agentscope-clipboard.md) | AgentScope taxonomy for the HOLDER. ReAG stays off Graphic D. Not Core. |
-| [docs/clock/gearing-code-1to1.md](docs/clock/gearing-code-1to1.md) | 47 visual keys ↔ planned Shadow units. Chip-only drift noted. Not Core. |
+| [docs/clock/gearing-code-1to1.md](docs/clock/gearing-code-1to1.md) | 47 visual keys ↔ planned Shadow units; earlier picker observations are dated. Current binding-data discrepancy is recorded in the update-pass evidence. |
 | [docs/pointer-emission.md](docs/pointer-emission.md) | DRAFT. May be worked. Not accepted. Invented answers still a breach. |
 | [docs/clock/philosophy-map.md](docs/clock/philosophy-map.md) | Readings of three conceptual references: HCC-A, Coffee Cup, Water. The required-gearbox interpretation is superseded by the [human correction](docs/law-why-these-documents.md#conceptual-reference-documents). |
 | [docs/hologram/](docs/hologram/) | Hologram touches (PR / Story Defense). Shadow. Not Graphic E. |
@@ -139,6 +139,6 @@ The pointer-emission rule *is* dimensionality. Until it is written down as part 
 
 ## Status
 
-Model repository. Apache-2.0. No runtime.
+Model repository with Layer III viewers and steward tooling. Apache-2.0. No Lace Core implementation. Current reconciliation: [repository update pass 1](docs/plans/repo-update-pass-1-plan.md) and its [evidence register](docs/plans/repo-update-pass-1-evidence.md).
 
 Same strand. More dimensions. A richer universe.

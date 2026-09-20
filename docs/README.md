@@ -4,7 +4,7 @@ Files at the `docs/` root. This is where the source of record and the law sit �
 
 Not everything here is Hands. The table says which is which.
 
-## Hands — source of record
+## Canonical source and derived readings
 
 The four graphics define the project. Everything else on this page is derived from them and can be wrong about them.
 
@@ -18,7 +18,7 @@ The four graphics define the project. Everything else on this page is derived fr
 
 | File | Status |
 |---|---|
-| [pointer-emission.md](pointer-emission.md) | **DRAFT. Pass 1 EXECUTED (stamps). Not accepted.** Invented when still a breach. `src/` waits on accept |
+| [pointer-emission.md](pointer-emission.md) | **DRAFT, not accepted.** Contains grounded constraints, unresolved answers and disputed campaign stamps; the [update-pass custody record](plans/repo-update-pass-1-evidence.md) keeps these separate. No invented emission |
 
 ## Law
 
@@ -26,7 +26,7 @@ The four graphics define the project. Everything else on this page is derived fr
 |---|---|
 | [law-why-these-documents.md](law-why-these-documents.md) | **The live law.** Why the adjacent documents were staked, and the only posture under which code may exist |
 | [staking-the-workspace.md](staking-the-workspace.md) | The human's original staking ASCII, verbatim. Companion to the live law |
-| [references.md](references.md) | The five adjacent works, as citations. No PDF enters this repository |
+| [references.md](references.md) | Adjacent works, conceptual references, source-shelf routes and recovered history. No PDF enters this repository |
 
 ## Maps and readings
 
@@ -36,8 +36,15 @@ Derived from the Hands. Proposals and readings, never a second source.
 |---|---|
 | [reason-model-map.md](reason-model-map.md) | The five stakes mapped onto the shoe: KEEP / FORBID per text |
 | [atomic-primitives-map.md](atomic-primitives-map.md) | `[PROPOSAL]` P0–P4 and K1–K6: the smallest source-supported obligations, and the G1–G7 gaps |
-| [namespace-register.md](namespace-register.md) | Sixteen identifier families on one alphabet. `A5` is a Graphic panel, a gear tooth and an audit station — which one, and how to tell |
-| [systems-manifest-ascii.md](systems-manifest-ascii.md) | ASCII spine of the manifest |
+| [namespace-register.md](namespace-register.md) | Qualified identifier families: distinguish graphic panels, gears, audit stations, rulings and model notation by their defining source |
+| [systems-manifest-ascii.md](systems-manifest-ascii.md) | Manifest companion with dated passes and current qualifications; a derived view, never a replacement source |
+| [math-execution-model.md](math-execution-model.md) | Partial algebra reading, with occurrence-membership scope and emission left open |
+| [math-execution-model-pass-3-witness.md](math-execution-model-pass-3-witness.md) | Graphic D row witness; reproducing a specimen does not select a schedule |
+| [math-execution-model-pass-4-adversarial.md](math-execution-model-pass-4-adversarial.md) | Adversarial reading of the partial model |
+| [math-execution-model-pass-5-projections.md](math-execution-model-pass-5-projections.md) | Contract III projection readings, under governing sources |
+| [math-execution-model-pass-6-arrival.md](math-execution-model-pass-6-arrival.md) | Contract II arrival reading; no independent history |
+| [plans/repo-update-pass-1-plan.md](plans/repo-update-pass-1-plan.md) | Current update pass, exact edit boundaries and verification gates |
+| [plans/repo-update-pass-1-evidence.md](plans/repo-update-pass-1-evidence.md) | Branch/content map, source custody, findings and execution dispositions |
 | systems-manifest-ascii-pass-{[1](systems-manifest-ascii-pass-1-plan.md),[2](systems-manifest-ascii-pass-2-plan.md),[3](systems-manifest-ascii-pass-3-plan.md),[4](systems-manifest-ascii-pass-4-plan.md),[5](systems-manifest-ascii-pass-5-plan.md),[6](systems-manifest-ascii-pass-6-plan.md)}-plan.md | Six pass tickets behind that spine. **One file per pass** — the pattern [the restructure plan](plans/restructure-plan.md) calls R4; a shelf for them is phase 5's work |
 
 ## Operations
@@ -51,7 +58,7 @@ Derived from the Hands. Proposals and readings, never a second source.
 
 | File | What it is |
 |---|---|
-| [shadow-clock-gearing.html](shadow-clock-gearing.html) | The `{A,B,C}` holder clock viewer. Layer III, renderer station, WebGPU. **Not** Graphic D |
+| [shadow-clock-gearing.html](shadow-clock-gearing.html) | The `{A,B,C}` interpretation viewer. Layer III, renderer station, WebGPU. Its unreconciled on-screen machinery wording is tracked separately from the corrected documentation |
 
 ## Shelves
 

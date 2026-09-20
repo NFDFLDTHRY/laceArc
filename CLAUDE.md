@@ -28,7 +28,7 @@ do not create another implementation branch before the current task is proven.
 
 ## Working in this repo
 
-There is nothing to install, build, or run. Checks:
+There is no Lace Core implementation to install, build, or run. Layer III HTML viewers and steward scripts do exist; their behavior is not evidence that Core exists or that emission is accepted. Documentation checks:
 
 ```bash
 .claude/hooks/check-docs.sh
