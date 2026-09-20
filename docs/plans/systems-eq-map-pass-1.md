@@ -1,6 +1,6 @@
 # Systems × equations map — Pass 1
 
-**Status:** **EXECUTED** 2026-09-20. **Station:** maps (`Grok-maps`).
+**Status:** **EXECUTED** 2026-09-20. Campaign **CLOSED 6/6** at pass 6. **Station:** maps (`Grok-maps`).
 **Ticket:** [`systems-eq-map-pass-1-plan.md`](systems-eq-map-pass-1-plan.md).
 **Ruling:** wall and U12 are **in the calculation**, not on \(L\).
 **Emission:** `[GAP]`. G2 unfilled. No `src/`.
