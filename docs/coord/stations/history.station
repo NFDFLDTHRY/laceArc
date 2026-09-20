@@ -1,7 +1,7 @@
-STATUS: HELD
+STATUS: FREE
 STATION: history
 OWNS: docs/history-recovered* docs/history/**
-AGENT: Grok-evidence
-BASE: 5c85dac38769cd1a67b94f7ff3c7d6777bb836fb
-SINCE: 2026-09-19T21:33:45Z
-NOTE: Grok-evidence relationship-evidence CLOSED 6/6. A/B unapplied. Maps unclaimed. Hold until human free. Door #5 CLOSED. Not pass 8. Φ [GAP].
+AGENT: -
+BASE: -
+SINCE: -
+NOTE: force-freed 2026-09-20T01:04:47Z: was held by Grok-evidence since 2026-09-19T21:33:45Z. LaceArc (steward)

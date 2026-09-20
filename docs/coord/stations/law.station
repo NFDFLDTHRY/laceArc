@@ -1,7 +1,7 @@
-STATUS: HELD
+STATUS: FREE
 STATION: law
 OWNS: AGENTS.md CLAUDE.md docs/staking-the-workspace.md docs/law-why-these-documents.md docs/systems-manifest.md docs/pointer-emission.md docs/references.md CONTRIBUTING.md README.md .gitignore LICENSE docs/README.md
-AGENT: Grok-evidence
-BASE: 101e435761978308053e85194bc7bbcdbf96e16e
-SINCE: 2026-09-19T22:02:57Z
-NOTE: Grok-evidence. pointer-emission Pass 1 EXECUTED stamps. When still [GAP]. Arity CONFLICT. Not accepted. History still HELD same agent.
+AGENT: -
+BASE: -
+SINCE: -
+NOTE: force-freed 2026-09-20T01:04:52Z: was held by Grok-evidence since 2026-09-19T22:02:57Z. LaceArc (steward)
