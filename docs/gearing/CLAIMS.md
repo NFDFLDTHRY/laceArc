@@ -122,9 +122,13 @@ If a claim is stuck (agent gone):
 
 ```bash
 ./docs/gearing/claim.sh force-free <shaft>
+# Optional reason retained in NOTE:
+./docs/gearing/claim.sh force-free <shaft> "<reason>"
 ```
 
-Human-only. Record why in the commit message.
+Human-only. Record why in the commit message. The command accepts HELD or already-FREE claims and clears `AGENT`, `BASE` and `SINCE`. Without a reason it also clears `NOTE`, preserving the original direct-command behavior; with a supplied reason it retains that exact argument in `NOTE`.
+
+The [coordination umbrella](../coord/README.md) requires a reason and forwards it to this backend. Supplying an argument does not grant override authority or establish that a claim is stale. The [isolated regression fixture](../coord/tests/force-free-dispatch.sh) checks both entrypoints using synthetic claims; real holds are never test fixtures.
 
 ---
 
@@ -158,4 +162,3 @@ git fetch origin main && git pull --ff-only origin main
 ```
 
 If you cannot tell whether resync is live, it is live. See `docs/gearing/RESYNC.md`.
-

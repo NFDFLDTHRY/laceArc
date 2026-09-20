@@ -172,13 +172,14 @@ cmd_refresh() {
 }
 
 cmd_force_free() {
-  local shaft="${1:-}"
-  [[ -n "$shaft" ]] || die "usage: force-free <shaft>"
+  local shaft="${1:-}" reason="${2:-}"
+  [[ -n "$shaft" ]] || die 'usage: force-free <shaft> ["<reason>"]'
   need_shaft "$shaft"
   local f
   f="$(claim_path "$shaft")"
   [[ -f "$f" ]] || die "missing claim file $f"
-  write_claim "$shaft" "FREE" "" "" "" ""
+  # No reason preserves the direct command's existing NOTE clearing.
+  write_claim "$shaft" "FREE" "" "" "" "$reason"
   echo "FORCE-FREED $shaft (human override)"
 }
 
@@ -191,7 +192,7 @@ Usage: ./docs/gearing/claim.sh <command> ...
   release <shaft> "<agent>"
   check <shaft> "<agent>"
   refresh <shaft> "<agent>"
-  force-free <shaft>
+  force-free <shaft> ["<reason>"]
 
 Shafts: ${SHAFTS[*]}
 See docs/gearing/CLAIMS.md

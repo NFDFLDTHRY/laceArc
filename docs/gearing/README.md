@@ -35,4 +35,8 @@ One shaft per agent. Zero or one drop per shaft per tick. Always `git fetch` + f
 ./docs/gearing/claim.sh release axle "YourAgent"
 ```
 
+## Closed quiet-door #8 campaign
+
+The [ASCII companion](quiet-door-8-ascii.md) links all six executed plans; its [receipt](quiet-door-8-receipt.md) records CLOSED 6/6 at `7ed7b29`. These are historical readings of this entrance, not current claim occupancy or permission to edit the renderer. Their bodies remain unchanged.
+
 **Renderer requirement:** the HTML stage is **WebGPU 3D only** (Chrome Android: enable WebGPU + WebNN flags). No 2D SVG primary clock. POINTER emission remains `[GAP]` — do not invent it here.
