@@ -4,6 +4,7 @@ Plans, proposals, executed pass records, and dated receipts share this shelf. Ea
 
 | File | Job |
 |---|---|
+| [model-behavior-map-pass-6-plan.md](model-behavior-map-pass-6-plan.md) | **`PLAN`** — model-behavior pass 6 of 6. Soundness + STOP. Does not pick \(\theta\). Φ `[GAP]` |
 | [model-behavior-map-pass-5-params.md](model-behavior-map-pass-5-params.md) | **EXECUTED** model-behavior pass 5. 7 params, 0 values. Φ `[GAP]` |
 | [model-behavior-map-pass-5-plan.md](model-behavior-map-pass-5-plan.md) | **`EXECUTED`** — pass 5 free parameters. Φ `[GAP]` |
 | [model-behavior-map-pass-4-d1.md](model-behavior-map-pass-4-d1.md) | **EXECUTED** model-behavior pass 4. D1 L1+L4. 0005–0007 L5. Φ `[GAP]` |
