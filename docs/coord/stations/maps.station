@@ -1,7 +1,7 @@
-STATUS: FREE
+STATUS: HELD
 STATION: maps
 OWNS: docs/reason-model-map.md docs/rust-nostd-*.md docs/atomic-primitives-map.md docs/clock/gearing-code-1to1.md docs/coherence-audit*.md docs/clock/system-mathematical-model.md docs/defrag-plan.md docs/plans/** docs/namespace-register.md docs/*.md (catch-all: any unmatched file at the docs/ root)
-AGENT: -
-BASE: -
-SINCE: -
+AGENT: LaceArc (steward)
+BASE: 1ed8c7778da31b00fa6392582ff38779adfebeff
+SINCE: 2026-09-20T01:29:26Z
 NOTE: Released — claim was premature; will return later.

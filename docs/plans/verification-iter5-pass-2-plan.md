@@ -1,6 +1,6 @@
 # Verification iteration 5, pass 2 — what the map tells an arriving agent
 
-**Status:** `[PLAN]`. **Station:** maps *(this document)*. **Emission:** `[GAP]`. No `src/`.
+**Status:** **EXECUTED.** [Findings](verification-iter5-pass-2-findings.md) — **falsifier 1 fired; the label was true and the campaign was absent.** **Station:** maps *(this document)*. **Emission:** `[GAP]`. No `src/`.
 **Iteration:** [iteration 5](verification-iteration-5-plan.md). **Board pinned at:** `1758a7d`.
 
 ## 0. A human ruling landed, and it changes what pass 2 is asking
