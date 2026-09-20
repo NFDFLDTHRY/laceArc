@@ -1,6 +1,6 @@
 # Systems × equations map — Pass 1 of 6 PLAN
 
-**Status:** **`PLAN`** · not executed. **Station:** maps (HELD `Grok-maps` · BASE `3872895`).
+**Status:** **`EXECUTED`** 2026-09-20 · [`systems-eq-map-pass-1.md`](systems-eq-map-pass-1.md). **Station:** maps (`Grok-maps`).
 **Iteration:** new, after math-execution UPDATE **CLOSED 6/6**.
 **Emission:** `[GAP]`. No `src/`. Does not accept `pointer-emission.md`.
 **Human ruling this iteration sits on:** U12 (rustc / Cargo shelf 10) and the Hands/Shadow wall **are part of the calculations**. They cannot be forbidden from the map. They still are **not** rows of \(L\).
