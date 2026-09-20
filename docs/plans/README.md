@@ -4,6 +4,7 @@ Plans, proposals, executed pass records, and dated receipts share this shelf. Ea
 
 | File | Job |
 |---|---|
+| [math-execution-update-pass-6-plan.md](math-execution-update-pass-6-plan.md) | **`PLAN`** — UPDATE campaign pass 6 of 6. Accuracy board + calculable/uncomputable + STOP. Does not fill holes. Does not accept emission. Φ `[GAP]` |
 | [math-execution-update-pass-5-witness.md](math-execution-update-pass-5-witness.md) | **EXECUTED** UPDATE pass 5 D1 refresh. 11 rows. 6/6 POINTER Witness-only. Q2 unpicked. Old witness frozen. Φ `[GAP]` |
 | [math-execution-update-pass-5-plan.md](math-execution-update-pass-5-plan.md) | **`EXECUTED`** — UPDATE campaign pass 5 of 6. Refresh D1 under new stamps. No Q2 from the picture. Φ `[GAP]` |
 | [math-execution-update-pass-4-align.md](math-execution-update-pass-4-align.md) | **EXECUTED** UPDATE pass 4 Hands/Hands align: 12 AGREE · 4 LABEL-ONLY · 0 DIVERGE. Wall pointed. Participate unfilled. Φ `[GAP]` |
