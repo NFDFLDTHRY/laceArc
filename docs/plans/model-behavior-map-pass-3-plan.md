@@ -1,6 +1,6 @@
 # Model behaviors × equations — Pass 3 of 6 PLAN
 
-**Status:** **`PLAN`** · not executed. **Station:** maps (HELD `Grok-maps` · BASE `52fb895`).
+**Status:** **`EXECUTED`** 2026-09-20 · [`model-behavior-map-pass-3-refuse.md`](model-behavior-map-pass-3-refuse.md). **Station:** maps (`Grok-maps`).
 **Depends on:** pass 1 B-Refuse · pass 2 L0–L5 · model S6 · WallCalc · U12Calc.
 **Emission:** `[GAP]`. No `src/`. Does not fill B-When.
 

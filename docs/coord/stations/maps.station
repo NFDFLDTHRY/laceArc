@@ -1,7 +1,7 @@
-STATUS: HELD
+STATUS: FREE
 STATION: maps
 OWNS: docs/reason-model-map.md docs/rust-nostd-*.md docs/atomic-primitives-map.md docs/clock/gearing-code-1to1.md docs/coherence-audit*.md docs/clock/system-mathematical-model.md docs/defrag-plan.md docs/plans/** docs/namespace-register.md docs/*.md (catch-all: any unmatched file at the docs/ root)
-AGENT: Grok-maps
-BASE: 52fb8955e9c603e8eb5af89532b88579d70a505f
-SINCE: 2026-09-20T22:49:38Z
-NOTE: model-behavior-map pass 3 PLAN; pass 2 EXECUTED; execute not started; emission [GAP]
+AGENT: -
+BASE: -
+SINCE: -
+NOTE: model-behavior-map pass 3 EXECUTED (11 refused · No ≠ when · emission [GAP]); pass 4 not opened
