@@ -1,5 +1,7 @@
 # CLIPBOARD — laceArc ← The rustc book (Rust toolchain · target `wasm64-unknown-unknown`)
 
+**Current target evidence, 2026-09-20:** read the [repository update pass 2 carry](#repository-update-pass-2--target-evidence-carry) alongside Pages B/D/F/G/X. The Wasm grammar and optional name carrier have now been sighted; name-based crate absence and configured feature-subset enforcement remain unestablished. Original Pass 0/1 bodies, statuses and receipts remain dated records, not a fresh build or acceptance claim. Cargo A4 is still next.
+
 **[III] Shadow / read-only. Hands win. POINTER emission = `[GAP]`.**
 **SPECIAL:** this is **toolchain** admission for the sealed compile target — how Rust reaches `wasm64-unknown-unknown` — **NOT** Core, **NOT** Graphic D, **NOT** a second target (the target itself is sealed on the [wasm-spec-3 shelf](wasm-spec-3-clipboard.md); this shelf is the compiler beside it).
 
@@ -260,3 +262,21 @@ Not a script, not a Cargo file, not a workflow; it is the *shape* a build must h
 **Next narrow question:** *When A4 is staked — does the Cargo book define a build-std crate list that names `core` (and `compiler_builtins`) without `alloc`, and what does `Cargo.lock` record for the standard library under it?* That is B1 and B2, and nothing else on this shelf is waiting.
 
 **P1-R receipt:** pages A–H, X written; eighteen mechanisms with verified locators, a surface, and a stamp; B's seven rows each carry a check or a ruling; falsifier did not fire; two amendments (G8′, G10) and one residual named; six locators corrected in the open; ~700 lines read of 31,482; no PDF or text added to git; no `src/`, no Cargo, no `.wat`, no script. Emission `[GAP]`. Shoe in hands, or no.
+
+
+---
+
+## Repository update pass 2 — target evidence carry
+
+**2026-09-20; base `10fe4947`.** This addendum carries the [Wasm source sightings W2-S1–S6](wasm-spec-3-clipboard.md#repository-update-pass-2--target-sightings) into the existing recipe obligations. Source: supplied WebAssembly Release 3.0 (2026-09-11), SHA-256 `687e73641a7eec8692273fdf048e1578bf2f379f507c36ec284a39d9e7f70fce`. The linked receipt names all 14 visually inspected pages and their printed pagination. The original rustc attachment was not available for a new sighting; its earlier line-locator receipts are not re-certified here.
+
+| Existing row / claim | Current source-supported carry | Remaining obligation |
+|---|---|---|
+| M-R18 / B6 / b6 / G9 | W2-S1–S2 establish the limits/address-type encoding and validation rule: i64 limits flags are `0x04` / `0x05` at their grammatical position; the memory-section and imported-memory routes are distinct | Decode an actual artifact's memory types and check the intended G9 predicate. A byte occurrence alone is insufficient; no module or engine was tested |
+| M-R12 / B2 / b3 / Page F carrier gap | W2-S3 sights the optional `name` custom section and its function-index/name mapping | **Carrier located; crate-absence proof UNESTABLISHED.** Missing metadata or a negative name scan does not show that crate code is absent. Complete provenance coverage under the actual v0/strip/optimization/toolchain choices remains to be demonstrated. Page F/X's earlier *in-principle* claim remains historical and is qualified by this limit |
+| M-R6 / B4 / b4 / G8′-EH | W2-S4 identifies local tag declarations, imported tags and the actual `throw`, `throw_ref`, `try_table` encodings | “No tag section, no try/throw” is incomplete shorthand. A bounded artifact policy must account for imported tags and grammar-level constructs, then be tied to a verified checker. These pages do not prove an exhaustive EH test or that a selected validator has an effective disabled-EH mode |
+| M-R7 / B5 / G8′ | W2-S5–S6 distinguish source validation, FUL/DET profiles and project artifact restrictions | G8′ remains **PROPOSAL / NOT_RUN**. Its exact feature subset, checker mode, version and enforcement need evidence; no feature name or `target_features` payload establishes them. No atomics ruling or replacement allowed set is selected |
+| B7 / G10 | No new build or relation between checked and shipped bytes was observed | Reproducibility and provenance coverage remain distinct. Two-build receipts and the exact relationship between any unstripped checked module and shipped module remain absent |
+| Page G / A4 and R12 | The separate Wasm sighting request now has the bounded source results above | A4 remains the next attachment for Cargo/build-std questions. A1's original text, A3/A10/A11 are also absent here. No Cargo flags, `rust-src` identity, toolchain trust, fixture permission or build result follows from the Wasm pages |
+
+**Evidence states:** the cited Wasm passages are `SOURCE / VISUALLY_OBSERVED`; the recipe and G8′/G10 remain `PROPOSAL`; builds, validator runs, device checks and physical operations are `NOT_RUN` / `NOT_PERFORMED`. No Core operation, pointer-emission answer, human ruling or acceptance changed. This is a dated source addendum, not a new verdict on the completed rust-target mapping campaign.

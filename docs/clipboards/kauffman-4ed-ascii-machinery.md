@@ -1,5 +1,7 @@
 # Kauffman 4ed — ASCII source-machinery model (Shadow)
 
+**Current source correction, 2026-09-20 — repository update pass 2:** printed p.324 / PDF p.343 was rendered and visually checked from SHA-256 `5bc2465525431f2a944cfb1af1ee51e24d1bba242bdcb40d277faa2d37581697`. The printed unity-coefficient model is `κ = exp(θ/(2π))`, with total angle `θ` in radians, so `n` full turns give `exp(n)`. The corrections below preserve that source convention and the inclusive bound; they do not introduce a generalized friction algorithm or any Lace field. Earlier pass statuses and receipts remain dated records. See [update-pass evidence](../plans/repo-update-pass-2-evidence.md#4-source-probe-and-supplied-file-limits).
+
 **Status:** Pass 6 EXECUTED (Wave A P-A1–A9 + Wave B P-B1–B5). Emission `[GAP]`.  
 **Source:** L.H. Kauffman, *Knots and Physics*, 4ed.  
 **PDF:** `refs/local/kauffman-knots-and-physics-4ed.pdf` (image-only; **never git-add**).  
@@ -132,11 +134,11 @@ Law: diagram ≠ rope · hitch kin · grab ≠ emission · Hands win · `[GAP]` 
 | Field | Content |
 |---|---|
 | Mechanism cite | M-A2 · Part II §1° pp.323–324 / PDF 342–343 |
-| Sighting | cite prior pass 4 OCR |
+| Sighting | Prior pass 4 OCR retained as history; update pass 2 visually checks printed p.324 / PDF p.343 for the current normalization |
 | Lace stamp | **FORBID-as-fields**; **KEEP-read** as physics image |
-| Map cite | K7 (clipboard uses book ≤; map `<` sync OPEN) |
+| Map cite | K7 and its sample: inclusive `≤` repaired in update pass 1; printed normalization reconciled in update pass 2 |
 | False friend | Continuous κ,T as Core scalars; emission threshold from inequality |
-| Implements | M-A2 steps: θ → κ=e^(μθ) → compare T2 ≤ κ T1 |
+| Implements | M-A2 steps: θ in radians → κ=exp(θ/(2π)) → compare T2 ≤ κ T1 |
 
 ```
   T1 ----\                  /---- T2
@@ -145,8 +147,8 @@ Law: diagram ≠ rope · hitch kin · grab ≠ emission · Hands win · `[GAP]` 
           /   n turns      \
          /                  \
 
-  model (book simple):  μ = 1,  κ = e^θ
-  n full turns:         θ = 2πn ,  κ = e^(2πn)
+  printed model:       κ = exp(θ/(2π)); θ in radians
+  n full turns:        θ = 2πn, so κ = exp(n)
 
   decide:  if T2 <= κ * T1 then NO_SLIP else MAY_SLIP
 
@@ -611,7 +613,7 @@ Law: diagram ≠ rope · hitch kin · grab ≠ emission · Hands win · `[GAP]` 
 | P-ID | M-ID | Lace stamp | Map | Clipboard PAGE / FM |
 |---|---|---|---|---|
 | P-A1 | M-A1 | KEEP-read | K1 | PAGE A · hitch |
-| P-A2 | M-A2 | FORBID-as-fields; KEEP-read image | K7 (≤ sync OPEN on map) | PAGE A · FM inequality |
+| P-A2 | M-A2 | FORBID-as-fields; KEEP-read image | K7 (≤ and printed normalization reconciled) | PAGE A · FM inequality |
 | P-A3 | M-A3 | FORBID-as-Lace-identity | K2 | PAGE B |
 | P-A4 | M-A4 | KEEP-read projection | K3-ish | PAGE C (Move Zero) |
 | P-A5 | M-A5 | FORBID-as-Core-write | K3–K4 | PAGE C · FM Reidemeister |

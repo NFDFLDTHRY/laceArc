@@ -1,5 +1,7 @@
 # CLIPBOARD — laceArc five-stake mappings
 
+**Current reading and fix routing, 2026-09-20 — repository update pass 2:** X1/X2 and the dependent panels below now distinguish shared token identity from indexed occurrences. The reason-map K7 inclusive bound and X1/X2 corrections landed in repository update pass 1; its K7 normalization is reconciled with the printed Kauffman model in pass 2. The final Review receipt records an older source comparison at `cffe7e5`; its then-OPEN entries and other historical evidence remain intact. See [pass 2 source evidence](../plans/repo-update-pass-2-evidence.md#4-source-probe-and-supplied-file-limits).
+
 Layer III reading aid. Not a sixth graphic. Not Core.
 Source of the mapping: [reason-model-map.md](../reason-model-map.md).
 Source of record: [graphics A–D](../graphics/README.md).
@@ -70,9 +72,9 @@ Legend:
 
 **Source check.** *Knots and Physics*, 4th ed.: Part I §1, printed p.4 / PDF p.23 (clove hitch and windings); Part I §2, printed pp.9, 16–17 / PDF pp.28, 35–36 (closed-loop convention, Move Zero, Figure 8 and Reidemeister moves); Part II §1, printed p.323 / PDF p.342 (hitches); Part II §4, printed p.336 / PDF p.355 (slide equivalence). The hitch, Move Zero/Reidemeister, and friction pages were visually inspected; the scanned text was also read with OCR.
 
-**vs reason-model-map.** K1/K7 remain physical kin of later participation, and K2/K4/K8 remain forbidden Core imports. Kauffman's deformations preserve knot type; they do not require tearing the rope. The project restriction concerns replacing Lace's retained occurrence history with diagram equivalence. The reason map's “untie and retie” wording is a Lace analogy, not a literal definition of all Reidemeister moves. K5/K6/K9 retain their existing map/law classifications; their full source regions were not reread for this clipboard check.
+**vs reason-model-map.** K1/K7 remain physical kin of later participation, and K2/K4/K8 remain forbidden Core imports. Kauffman's deformations preserve knot type; they do not require tearing the rope. The project restriction concerns replacing Lace's retained occurrence history with diagram equivalence. The reason map's earlier “untie and retie” wording was corrected in repository update pass 1; it is not a literal definition of all Reidemeister moves. K5/K6/K9 retain their existing map/law classifications; their full source regions were not reread for this clipboard check.
 
-**[NOTE: transcription · Pass 3 sync]** Printed p.323 / PDF p.342 give the no-slip inequality as `T2 ≤ κ T1` (inclusive). The [Kauffman-specific clipboard](kauffman-4ed-clipboard.md) now follows **≤** (PDF-sighted pass 1). Older drafts and `docs/reason-model-map.md` K7 prose may still show a strict `<`; that map line is OPEN, not silently edited here. Neither form is a Lace field or emission rule.
+**Current K7 source route:** printed p.323 / PDF p.342 give the inclusive bound `T2 ≤ κ T1`; the reason-map transcription was repaired in repository update pass 1. Printed p.324 / PDF p.343 gives `κ = exp(θ/(2π))` for total angle `θ` in radians in the stated simplified model; its n-turn result is `exp(n)`. Repository update pass 2 reconciles this normalization across the [Kauffman shelf](kauffman-4ed-clipboard.md) and reason map. Neither the bound nor its parameters are Lace fields or emission rules.
 
 **Contact with the atomic map:** POINTER participation is the comparison point. Friction does not determine emission timing, targets, or arity.
 
@@ -136,7 +138,7 @@ Legend:
 |                              next-token as Core (X3,X7)            |
 |                                                                    |
 | MAP ARROWS                                                         |
-|   X1 sequence ──weak kin──► Piece 3  (dies at intern)              |
+|   X1 indexed sequence ──weak kin──► Piece 3 order only             |
 |   X2 intern   ──[X]──►      Piece 4 / Piece 7                      |
 |   X3/X7 Pr(.) ──[X]──►      Piece 2  (wrong output type)           |
 |   X4 [MASK]   ──[X]──►      Piece 3                                |
@@ -150,7 +152,7 @@ Legend:
 
 **Source check.** *Foundations of Large Language Models*, arXiv:2501.09223v2: §1.1, Equation 1.1, printed p.2 / PDF p.9 (indexed input sequence); §1.3, printed p.23 / PDF p.30 (BERT masking and replacement); §2.1.1, printed p.38 / PDF p.45 (token and position representations, prediction); Chapter 5 opening / PDF p.210 (inference objective).
 
-**vs reason-model-map.** X1 preserves only the order comparison. **[CONFLICT: source characterization]** X2 and the Piece 15 cell go too far if read as saying that a shared vocabulary ID, even with separate positions, necessarily erases occurrences. Equation 1.1 retains a sequence indexed by position, and §2.1.1 includes position representations. The prohibition remains: do not replace Lace's distinct WORD passages with one vocabulary object, a count, or an embedding store, and do not import this model as Core. Token identity and occurrence identity must be distinguished; this correction supplies no Lace tokenizer. X4's modified training input also does not imply deletion of the author's original corpus.
+**vs current reason-model-map.** X1 preserves only the order comparison. Repository update pass 1 corrected X2 and the Piece 15 cell: shared vocabulary identity does not itself erase separate indexed occurrences. Equation 1.1 retains a sequence indexed by position, and §2.1.1 includes position representations. The prohibition remains: do not replace Lace's distinct WORD passages with one vocabulary object, a count, or an embedding store, and do not import this model as Core. Token identity and occurrence identity must be distinguished; this correction supplies no Lace tokenizer. X4's modified training input also does not imply deletion of the author's original corpus.
 
 **Contact with the atomic map:** occurrence distinction and arrival order. Prediction and corruption are not Lace's governing growth rule.
 
@@ -238,7 +240,7 @@ graphics A–D          ← only Core
     │
     ├── 1 Kauffman hitch     [I] read of later grab
     ├── 2 Rowlands empty     [I] read of A1 + no extra rooms
-    ├── 3 Xiao order only    [I] weak; dies at intern
+    ├── 3 Xiao indexed order [I] weak; shared IDs keep positions
     ├── 4 Petersen ≠build    [I] negation of nets-as-store
     └── 5 AgentScope tax.    [H] holder, not array
 

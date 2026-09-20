@@ -1,5 +1,9 @@
 # CLIPBOARD — laceArc ← Kauffman 4ed
 
+**Current source correction, 2026-09-20 — repository update pass 2:** printed p.324 / PDF p.343 was rendered and visually checked from SHA-256 `5bc2465525431f2a944cfb1af1ee51e24d1bba242bdcb40d277faa2d37581697`. The printed unity-coefficient model is `κ = exp(θ/(2π))`, with total angle `θ` in radians, so `n` full turns give `exp(n)`. The corrections below preserve that source convention and the inclusive bound; they do not introduce a generalized friction algorithm or any Lace field. Earlier pass statuses and receipts remain dated records. See [update-pass evidence](../plans/repo-update-pass-2-evidence.md#4-source-probe-and-supplied-file-limits).
+
+**Current routing:** the older Pass 3 `OPEN` notes below describe its unchanged reason map at that time. The inclusive-inequality repair landed in repository update pass 1; K7 and its sample now carry the printed normalization in update pass 2. Those earlier receipts and their counts are preserved, not re-stamped.
+
 Shadow stake only. Hands win. POINTER emission = `[GAP]`.
 Source slug: `dokumen.pub_knots-and-physics-4ed-9814383007`.
 Book: L.H. Kauffman, *Knots and Physics*, 4ed · ISBN family `9814383007`.
@@ -175,7 +179,7 @@ Law on this clip: diagram ≠ rope · hitch kin · grab ≠ emission · `[GAP]` 
 │   │                                                                │     │
 │   │ ON SHOE: kin of Piece 5 / Graphic B,D participation            │     │
 │   │ KEEP: hitch image                                              │     │
-│   │ FORBID: copy friction law T2≤κ T1 / e^{θ} into array fields    │     │
+│   │ FORBID: copy the friction bound into Lace array fields         │     │
 │   │ EMISSION? NO — grab ≠ POINTER rule [GAP]                       │     │
 │   │ vs reason-model-map: CONFIRM K1/K7 (PDF). Does not close Φ.    │     │
 │   └────────────────────────────────────────────────────────────────┘     │
@@ -377,7 +381,7 @@ Mirrored from five-stakes PAGE 1/5. Book clipboard holds the page walk; this str
 | FM-K4 | Reidemeister ⇒ simplify stars / emit | Rule Zero; not Piece 6 | PDF p.35–36 / printed p.16–17 (cite C) |
 | FM-K5 | Jones/bracket/Gauss ⇒ wrap history on D | do not store | Jones **PDF p.68 / p.49**; bracket **PDF p.44 / p.25**; Gauss appendix **PDF p.562 / printed p.543** |
 | FM-K6 | DNA passage ⇒ thread-through write | cut-rejoin `[X]` | **PDF p.507 / printed p.488** §15° DNA and QFT |
-| FM-K7 | T2 / κ / e^θ ⇒ array columns | friction ≠ fields | PDF p.342–343 / printed p.323–324 (cite A) |
+| FM-K7 | T2 / κ / printed friction model ⇒ array columns | friction ≠ fields | PDF p.342–343 / printed p.323–324 (cite A) |
 | FM-K8 | slide ⇒ milder Core write | implies RII/RIII class | PDF p.355 / printed p.336 (cite D) |
 | FM-K9 | virtual 1-handles ⇒ extra rooms | one store | preface PDF p.16; appendix title **PDF p.782 / printed p.763** |
 

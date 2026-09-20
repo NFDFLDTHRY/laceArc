@@ -1,5 +1,7 @@
 # CLIPBOARD — laceArc ← Xiao & Zhu *Foundations of Large Language Models*
 
+**Current source qualification, 2026-09-20 — repository update pass 2:** the [pass 1 source sightings](../plans/repo-update-pass-1-evidence.md#7-targeted-source-sightings-and-current-handoff) of printed p.2 / PDF p.9 Eq.1.1 and printed p.38 / PDF p.45 §2.1.1 distinguish indexed occurrences from shared vocabulary identity. An indexed sequence keeps its order comparison when positions share a token ID. The current panels and failure/coupling readings below now carry corrected X1/X2; replacing retained Lace occurrences with one vocabulary object, count or embedding store remains forbidden. Earlier Pass 1–6 receipts, including their CONFIRM counts and the old “dies at intern” receipt wording, remain dated records of the earlier reading. No new PDF sighting, tokenizer, emission rule or campaign restamp is claimed here.
+
 Shadow stake only. Hands win. POINTER emission = `[GAP]`.
 PDF: gitignored `refs/local/xiao-zhu-foundations-llm.pdf` → attachment `0f5d145d…ba50bc1a.pdf` (arXiv:2501.09223v2, 15 Jun 2025 / book date 17 Jun 2025). **Never git-add the PDF.**
 License: CC BY-NC 4.0. Cite; do not fold body text into Apache Core.
@@ -340,13 +342,13 @@ No Implements/stamp/pin/fence/proposal wording edits required beyond that. Mecha
 │   │    of tokens x = x0...xm.”                                     │     │
 │   │                                                                │     │
 │   │   ordered tokens ──looks like──► Piece 3 arrival               │     │
-│   │   (kin only while tokens are not interned ids)                 │     │
+│   │   (indexed order survives shared vocabulary IDs)               │     │
 │   │                                                                │     │
 │   │ ON SHOE: Piece 3 Raw Input / Arrival Order                     │     │
 │   │ KEEP: arrival order                                            │     │
 │   │ FORBID: treat vocab atoms as Lace WORD identity                │     │
 │   │ EMISSION? NO [GAP]                                             │     │
-│   │ vs reason-model-map §3: CONFIRMS X1 (weak kin). Dies at intern. │     │
+│   │ vs current X1: indexed order is weak kin; no Lace tokenizer.    │     │
 │   └────────────────────────────────────────────────────────────────┘     │
 │                                                                          │
 │   ┌────────────────────────────────────────────────────────────────┐     │
@@ -358,14 +360,14 @@ No Implements/stamp/pin/fence/proposal wording edits required beyond that. Mecha
 │   │   ch.2: “We will use terms word and token interchangeably.”    │     │
 │   │   Generation: pick xi from V so Pr(xi | prefix) is max.        │     │
 │   │                                                                │     │
-│   │   one id "THE" @ many positions ──X──► two wraps of "the"      │     │
-│   │   (Graphic B forbids intern collapse)                          │     │
+│   │   one id "THE" @ many positions keeps indexed occurrences      │     │
+│   │   (forbid replacing distinct Lace passes with one object)      │     │
 │   │                                                                │     │
 │   │ KEEP: (none as Core primitive)                                 │     │
 │   │ FORBID: intern token as WORD / Star node                       │     │
 │   │ ON SHOE: Piece 4 / Piece 7 · Graphic B                         │     │
 │   │ EMISSION? NO [GAP]                                             │     │
-│   │ vs reason-model-map §3: CONFIRMS X2 CONFLICT; REFINE eye-quote.│     │
+│   │ vs current X2: identity sharing alone is not pass collapse.    │     │
 │   └────────────────────────────────────────────────────────────────┘     │
 │                                                                          │
 │   ┌────────────────────────────────────────────────────────────────┐     │
@@ -429,7 +431,7 @@ No Implements/stamp/pin/fence/proposal wording edits required beyond that. Mecha
 │   │ locus: NONE FOUND as an emission rule                          │     │
 │   │ false friends inspected (PDF pins):                            │     │
 │   │   cache / memory §2.3.3 PDF 77     → holder machinery [H]      │     │
-│   │   word↔token interchangeably PDF 44 → intern collapse [X]      │     │
+│   │   word/token usage PDF 44 does not establish pass collapse     │     │
 │   │   arg max Pr eq (2.3)/(5.1) PDF 45/210 → projection, not append│     │
 │   │   prompting Ch.3 / alignment Ch.4  → steward [H] (X6)          │     │
 │   │   tokenization footnote PDF 9      → unstated in graphics      │     │
@@ -503,12 +505,12 @@ Mirrored from five-stakes PAGE 3/5 and Pass 1 morals. Book clipboard holds the p
 │                                                                          │
 │ KEEP                           FORBID                                    │
 │   arrival order (X1)           intern token as identity (X2)             │
-│     weak kin; dies at intern   [MASK] / replace / delete (X4)            │
+│     indexed order is weak kin  [MASK] / replace / delete (X4)            │
 │                                embed / position store (X5)               │
 │                                next-token / causal LM as Core (X3, X7)   │
 │                                                                          │
 │ MAP ARROWS                                                               │
-│   X1 sequence ──weak kin──► Piece 3  (dies at intern)                    │
+│   X1 indexed sequence ──weak kin──► Piece 3 order only                   │
 │   X2 intern   ──[X]──►      Piece 4 / Piece 7                            │
 │   X3/X7 Pr(.) ──[X]──►      Piece 2  (wrong output type)                 │
 │   X4 [MASK]   ──[X]──►      Piece 3                                      │
@@ -523,8 +525,8 @@ Mirrored from five-stakes PAGE 3/5 and Pass 1 morals. Book clipboard holds the p
 
 | ID | Misread | Hands deadbolt | PDF pin (Pass 1 reuse) |
 |---|---|---|---|
-| FM-X1 | token sequence order ⇒ Lace WORD identity (collapse before intern dies) | KEEP arrival order only as **weak kin** of Piece 3; dies the moment the atom is an interned id | §1.2.1 “preceding tokens” **PDF 14** / printed p.7; Eq (1.1) **PDF 9** / printed p.2 (cite A) |
-| FM-X2 | shared vocab id ⇒ same Lace occurrence / star node | two wraps ≠ one node named THE; FORBID intern id as WORD / Star (Piece 4/7 · Graphic B) | “every token is just an entry of the shared vocabulary” **PDF 36** / printed p.29; word↔token **PDF 44–45** (cite B) |
+| FM-X1 | token sequence order ⇒ a Lace arrival or identity specification | KEEP indexed order as **weak kin** of Piece 3 even with shared vocabulary IDs; that comparison supplies no Lace representation or tokenizer | §1.2.1 “preceding tokens” **PDF 14** / printed p.7; Eq (1.1) **PDF 9** / printed p.2 (cite A) |
+| FM-X2 | shared vocab id ⇒ permission to collapse separate Lace occurrences | Distinct indexed occurrences can share token identity. FORBID replacing retained WORD passages with one vocabulary object, count or embedding store (Piece 4/7 · Graphic B) | Eq (1.1) **PDF 9** / printed p.2; token/position representations **PDF 45** / printed p.38; prior shared-vocabulary pin **PDF 36** (cite B) |
 | FM-X3 | next-token / argmax ⇒ Core continue / ingest operator | Piece 2 output = new section, not a distribution; FORBID next-token as Core continue | §1.2.1 loss (1.5)–(1.7) **PDF 14–15**; eq (2.3) **PDF 45**; Ch.5 \(\hat y=\arg\max Pr(y\mid x)\) **PDF 210** (cite E) |
 | FM-X4 | [MASK] / replace / delete ⇒ Lace cut or authorized rewrite | Rule Zero / Piece 1 continuous strand; FORBID MASK/replace/delete as Lace write | §1.2.2.1 Masked LM **PDF 16–17**; BERT 80/10/10 **PDF 30–31**; Token Deletion **PDF 26** (cite C) |
 | FM-X5 | token+pos(+seg) embed table ⇒ Core store / second world | Graphic D — no separate database; FORBID embed/position store as Core | \(e=x+e_{pos}+e_{seg}\) **PDF 32–33**; decoder \(e_i\) **PDF 45** (cite D) |
@@ -537,7 +539,7 @@ No FM row left `[OPEN]`. Pins reused from Pass 1; `pdftotext` on PDF 9, 14–15,
 
 ### D4 — Interface coherence
 
-Only X1 (arrival order) is kin to Hands inputs, and only as a **weak read** that dies when tokens are interned ids. X2–X5 and X3/X7 outputs do not match any Core write (intern ↛ WORD/Star; MASK ↛ Lace cut; embeds ↛ Graphic D store; next-token / \(\arg\max Pr\) ↛ Piece 2 continue). Soft prompts / alignment / RLHF (X6) stay steward-side if used at all. Nothing in the book supplies POINTER when / arity / adjacency or a Lace tokenizer — `[GAP]` remains. Prediction ↛ putting cord through a hole. This paragraph does not close Φ.
+X1 supports only a **weak comparison of indexed order** with Hands inputs; shared vocabulary IDs do not erase those positions. This comparison is not a Lace arrival or storage specification. X2–X5 and X3/X7 outputs do not match any Core write (intern ↛ WORD/Star; MASK ↛ Lace cut; embeds ↛ Graphic D store; next-token / \(\arg\max Pr\) ↛ Piece 2 continue). Soft prompts / alignment / RLHF (X6) stay steward-side if used at all. Nothing in the book supplies POINTER when / arity / adjacency or a Lace tokenizer — `[GAP]` remains. Prediction ↛ putting cord through a hole. This paragraph does not close Φ.
 
 ### D5 — Source gate (cite Pass 1)
 

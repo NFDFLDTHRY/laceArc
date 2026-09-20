@@ -1,5 +1,7 @@
 # Kauffman 4ed — mechanism cards (constructive algorithms)
 
+**Current source correction, 2026-09-20 — repository update pass 2:** printed p.324 / PDF p.343 was rendered and visually checked from SHA-256 `5bc2465525431f2a944cfb1af1ee51e24d1bba242bdcb40d277faa2d37581697`. The printed unity-coefficient model is `κ = exp(θ/(2π))`, with total angle `θ` in radians, so `n` full turns give `exp(n)`. The corrections below preserve that source convention and the inclusive bound; they do not introduce a generalized friction algorithm or any Lace field. Earlier pass statuses and receipts remain dated records. See [update-pass evidence](../plans/repo-update-pass-2-evidence.md#4-source-probe-and-supplied-file-limits).
+
 **Status:** Pass 6 EXECUTED (Wave A + Wave B complete; Waves C–D deferred).  
 **Source:** L.H. Kauffman, *Knots and Physics*, 4th ed.  
 **PDF:** `refs/local/kauffman-knots-and-physics-4ed.pdf` (865 pp., image-only `tiff2pdf`; **never git-add**)  
@@ -81,35 +83,35 @@ wrap(pattern) → apply T_load → check(grab of earlier wrap) → {hold|slip}
 |---|---|
 | Kind | physics |
 | Book locus | Part II §1° Theory of Hitches · printed pp.323–324 · PDF pp.342–343 |
-| Sighting method | OCR this pass on PDF 342–343; inequality inclusive ≤ confirmed pass 1 PDF-sighted |
-| Eye-quote | "In general, there will be no slippage in the T2-direction so long as T2 ≤ κ T1 for an appropriate constant κ." / "κ = e^θ" (friction coeff. taken as 1; θ total wrap angle in radians) |
-| Inputs | End tensions \(T_1, T_2\); wrap angle \(\theta\) (or integer revolutions \(n\)); friction model |
-| Outputs | Slip / no-slip decision; bound \(\kappa(\theta)\) |
-| Invariants | Rope–post contact; integral windings assumption in the simple model |
+| Sighting method | Earlier OCR/inequality receipts retained; update pass 2 visually checks printed p.324 / PDF p.343 for the normalization below |
+| Source statement | The no-slip bound is inclusive. Printed p.324 simplifies the friction coefficient to unity and displays `κ = exp(θ/(2π))`, where `θ` is the total rope-turn angle in radians; its one-turn and n-turn examples give `exp(1)` and `exp(n)` |
+| Inputs | End tensions \(T_1, T_2\); total wrap angle \(\theta\) in radians (or integer revolutions \(n\)); the printed unity-coefficient model |
+| Outputs | No-slip under the printed model / may-slip; bound \(\kappa(\theta)\) |
+| Invariants / example scope | Rope–post contact; `θ` is total angle in radians. Integer `n` counts full revolutions in the worked example |
 | Algorithm | See below |
 | Complexity / termination | O(1) after \(\theta\) known |
 | Worked miniature | One revolution: no slip in \(T_2\) direction while \(T_2 \le e\, T_1\); \(n\) revolutions: \(T_2 \le e^n T_1\) (PDF 343) |
 | Lace stamp | **FORBID-as-fields**; **KEEP-read** as physics image |
 | Hands cite | Capstan / friction image |
-| Map cite | K7 (tension inequality; note map may still show strict `<` — clipboard uses book `≤`; OPEN sync on map only) |
+| Map cite | K7 and the Kauffman sample: inclusive `≤` corrected in repository update pass 1; printed normalization reconciled in update pass 2 |
 | False friend | Continuous \(\kappa, T\) as Core scalars; emission threshold "when \(T_2 \le \kappa T_1\)" |
-| Open gaps | Book: "depending upon the magnitudes… the rope may slip"; exact material \(\mu\) left to experiment. Lace Φ = `[GAP]` |
+| Open gaps | This card transcribes the printed simplified model; it supplies no general coefficient law or empirical material calibration. Lace Φ = `[GAP]` |
 
 **Algorithm**
 
-1. **Preconditions.** Coil form around a rod; integral number of windings (simple model); friction present.  
+1. **Preconditions.** Coil form around a rod; friction present; use the printed simplified model. The n-turn example takes an integral number of revolutions.
 2. **State.** \(T_1, T_2, \theta\) (total angle of rope-turn).  
 3. **Steps.**  
    1. Measure or set wrap angle \(\theta\) (radians). For \(n\) full revolutions, \(\theta = 2\pi n\).  
-   2. Set friction coefficient \(\mu\) (book's simple model: \(\mu = 1\)).  
-   3. Compute \(\kappa = e^{\mu\theta}\) (book: \(\kappa = e^\theta\) when \(\mu=1\)).  
+   2. Use the book's stated unity-coefficient simplification; do not introduce an adjustable \(\mu\) into this transcription.
+   3. Compute \(\kappa = e^{\theta/(2\pi)}\). Substitution of \(\theta=2\pi n\) gives \(\kappa=e^n\), matching the printed miniature.
    4. Compare: if \(T_2 \le \kappa T_1\), certify **no slippage** in the \(T_2\)-direction under the model; else **may slip**.  
-4. **Choice points.** Value of \(\mu\) — book simplifies to 1; real experiment varies.  
-5. **Halt.** Boolean no-slip vs slip under the inequality.  
+4. **Choice points.** None beyond the stated tensions and angle in this source transcription. Generalizing the material model requires separate evidence.
+5. **Halt.** Report no-slip-under-the-model when the bound holds; otherwise report may-slip, not a proved slip event.
 6. **Output certificate.** Pair \((\kappa, \text{no-slip?})\) with cited \(\theta\).
 
 ```text
-κ ← exp(μ * θ)
+κ ← exp(θ / (2π))
 if T2 ≤ κ * T1 then NO_SLIP else MAY_SLIP
 ```
 
@@ -655,7 +657,7 @@ word --flip each label--> Jordan code --chords--> universe --O/U--> diagram
 | M-ID | Lace stamp | Map | Clipboard PAGE / FM |
 |---|---|---|---|
 | M-A1 | KEEP-read | K1 | PAGE A · hitch |
-| M-A2 | FORBID-as-fields; KEEP-read image | K7 (≤ sync OPEN on map) | PAGE A · FM inequality |
+| M-A2 | FORBID-as-fields; KEEP-read image | K7 (≤ and printed normalization reconciled) | PAGE A · FM inequality |
 | M-A3 | FORBID-as-Lace-identity | K2 | PAGE B |
 | M-A4 | KEEP-read projection | K3-ish | PAGE C (Move Zero) |
 | M-A5 | FORBID-as-Core-write | K3–K4 | PAGE C · FM Reidemeister |
