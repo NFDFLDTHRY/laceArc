@@ -1,8 +1,8 @@
 # Rust target shelf — pass 1 plan: the mapping, rigorously, against a stated result
 
-**Status:** **`PLAN`. Not executed.** **Station:** clipboards. **Emission:** `[GAP]`. No `src/`.
+**Status:** **`EXECUTED`** → [the clipboard, Pass 1](rust-target-clipboard.md#pass-1--mapping-pages-ah-x--executed). **Falsifier did not fire; thesis holds with two amendments (G8 → G8′ validation-under-a-feature-set; G10 reproducibility added as a named residual).** M-R count 18 (expected 10–12). One correction to §1 carried in the open: b4's artifact check reads *"no exception-handling constructs"*, not *"no unwind tables"* (the book, 30410–30413). **Station:** clipboards. **Emission:** `[GAP]`. No `src/`.
 **Shelf:** 10 — *The rustc book*, staked by the human (A1). **Pass 0** (the staking receipt) is executed on [the clipboard](rust-target-clipboard.md). **Pinned:** `e2e8155` + branch `lace-context-iteration-6`. **Editor:** Claude Fable 5.1; one hand; declared.
-**Cadence, this time honored:** this file first; execute only on the human's proceed; then the clipboard gains *Pass 1 — mapping* and this status line flips.
+**Cadence, this time honored:** this file first; executed on the human's proceed (2026-09-19 23:03 PT); the clipboard gained *Pass 1 — mapping*; this status line flipped.
 
 ---
 
