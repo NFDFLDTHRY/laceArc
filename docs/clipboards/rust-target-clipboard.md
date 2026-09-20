@@ -19,7 +19,9 @@
 
 ---
 
-## Pass 1 — sighting, eye entries, stamps · EXECUTED
+## Pass 0 — staking receipt: sighting, eye entries, stamps · EXECUTED
+
+*Relabelled 2026-09-19 22:57 PT, in the open: this section was first headed "Pass 1". In the shelf pattern pass 1 is the **mapping** (pages A–H, X); this is the sighting that a staking produces. The mapping has its own plan: [`rust-target-pass-1-plan.md`](rust-target-pass-1-plan.md).*
 
 ### The `wasm64-unknown-unknown` page — lines 30597–30700
 
@@ -82,4 +84,4 @@
 | Facts upgraded to SOURCE | 4 (T1–T4); new sourced facts 4 (E5–E8) |
 | Anything about Φ | none |
 
-Pass 1 receipt: eye entries verbatim from the attached file at the cited lines; SHA verified; no PDF/text added to git; `refs/local/` gitignored (`.gitignore:22`). Emission `[GAP]`. Shoe in hands, or no.
+Pass 0 receipt: eye entries verbatim from the attached file at the cited lines; SHA verified; no PDF/text added to git; `refs/local/` gitignored (`.gitignore:22`). Emission `[GAP]`. Shoe in hands, or no.
