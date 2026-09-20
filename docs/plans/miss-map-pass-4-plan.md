@@ -1,6 +1,6 @@
 # Miss-map — Pass 4 of 6 PLAN
 
-**Status:** **`PLAN`** · not executed. **Station:** maps (HELD `Grok-maps` · BASE `30a14fc`).
+**Status:** **`EXECUTED`** 2026-09-20 · [`miss-map-pass-4-wall-u12.md`](miss-map-pass-4-wall-u12.md). **Station:** maps (`Grok-maps`).
 **Depends on:** pass 3 Hands EXECUTED · W1–W6 · U1–U7.
 **Emission:** `[GAP]`. No `src/`. No rustc run.
 

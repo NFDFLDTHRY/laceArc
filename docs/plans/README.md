@@ -4,7 +4,8 @@ Plans, proposals, executed pass records, and dated receipts share this shelf. Ea
 
 | File | Job |
 |---|---|
-| [miss-map-pass-4-plan.md](miss-map-pass-4-plan.md) | **`PLAN`** — miss-map pass 4. Wall/U12 leftovers. G-gates stay NOT_RUN. Φ `[GAP]` |
+| [miss-map-pass-4-wall-u12.md](miss-map-pass-4-wall-u12.md) | **EXECUTED** miss-map pass 4. G-gates NOT_RUN. U7 U12-hole. Φ `[GAP]` |
+| [miss-map-pass-4-plan.md](miss-map-pass-4-plan.md) | **`EXECUTED`** — pass 4 wall/U12 leftovers. Φ `[GAP]` |
 | [miss-map-pass-3-hands.md](miss-map-pass-3-hands.md) | **EXECUTED** miss-map pass 3. D2 panel mapped. Slot II CONFLICT kept. Φ `[GAP]` |
 | [miss-map-pass-3-plan.md](miss-map-pass-3-plan.md) | **`EXECUTED`** — pass 3 Hands. Φ `[GAP]` |
 | [miss-map-pass-2-sort.md](miss-map-pass-2-sort.md) | **EXECUTED** miss-map pass 2. Slot II IN-CALC-MISS. D2 SPECIMEN-MISS. Φ `[GAP]` |
