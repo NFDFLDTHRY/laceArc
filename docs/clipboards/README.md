@@ -2,7 +2,7 @@
 
 KEEP/FORBID mappings of adjacent work onto the shoe. **Not Core. Not an emitter. Not a sixth graphic.** The source of record is [the four graphics](../graphics/README.md).
 
-**Nine campaigns, not five.** The five stake texts — AgentScope, Kauffman, Petersen & Zech, Rowlands, Xiao & Zhu — plus four web specifications read the same way: WebAssembly 3.0, WebGPU, WebNN and WGSL. This door named the five for as long as the shelf held nine, and the four later campaigns' output was unreachable from either entrance to the repository until iteration 4 pass 5.
+**Ten reference campaigns.** The five stake texts — AgentScope, Kauffman, Petersen & Zech, Rowlands, Xiao & Zhu — plus WebAssembly 3.0, WebGPU, WebNN, WGSL, and the rustc toolchain shelf below. Historically this door named five while the shelf held nine; iteration 4 pass 5 exposed the four web-specification campaigns. The human staked the tenth shelf on 2026-09-19.
 
 A clipboard records what an adjacent work does and does not license. Nothing here enters Core; see [the reason model](../reason-model-map.md) for the standing boundaries.
 
@@ -39,9 +39,9 @@ A clipboard records what an adjacent work does and does not license. Nothing her
 | [xiao-zhu-foundations-ascii-machinery.md](xiao-zhu-foundations-ascii-machinery.md) | Xiao & Zhu ASCII machinery |
 | [xiao-zhu-foundations-mechanisms.md](xiao-zhu-foundations-mechanisms.md) | Xiao & Zhu mechanisms register |
 
-## Executed pass plans
+## Pass plans and recorded status
 
-Provenance for the clipboards above. Each is headed `EXECUTED`; the clipboard it served links it.
+Provenance for the clipboards above includes completed passes and pending plans. **Status reconciled 2026-09-20 against the linked plan headers and terminal clipboard receipts:** the five stake texts, Wasm, and WebNN have executed Pass 6; WebGPU and WGSL have executed Pass 5, with Pass 6 still `HELD` / `NOT_EXECUTED`. `HELD` here is the dated plan status, not a live station claim. The rustc shelf has executed staking Pass 0 and mapping Pass 1, with every build-recipe row still `NOT_RUN`.
 
 | Campaign | Passes |
 |---|---|
