@@ -1,6 +1,6 @@
 # Technician references × mathematical model — Pass 6 of 6 PLAN
 
-**Status:** **`PLAN`** · not executed. **Station:** maps (HELD `Grok-maps` · BASE `c07811b`).
+**Status:** **`EXECUTED`** 2026-09-20 · [`tech-ref-eq-map-pass-6-agentscope.md`](tech-ref-eq-map-pass-6-agentscope.md). Campaign **CLOSED 6/6**. **Station:** maps (`Grok-maps`).
 **Depends on:** pass 1 T5 · passes 2–5 EXECUTED.
 **Text:** Bi et al. AgentScope (arXiv:2609.02371).
 **Cite-only:** reason-map §5 A1–A5 · agentscope clipboard · five-stakes page 5.

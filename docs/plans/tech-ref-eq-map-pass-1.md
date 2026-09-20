@@ -1,6 +1,6 @@
 # Technician references × mathematical model — Pass 1
 
-**Status:** **EXECUTED** 2026-09-20. **Station:** maps (`Grok-maps`).
+**Status:** **EXECUTED** 2026-09-20. Campaign **CLOSED 6/6** at pass 6. **Station:** maps (`Grok-maps`).
 **Ticket:** [`tech-ref-eq-map-pass-1-plan.md`](tech-ref-eq-map-pass-1-plan.md).
 **Cite-only:** [`../references.md`](../references.md) · [`../reason-model-map.md`](../reason-model-map.md) · [`../clipboards/clipboard-five-stakes.md`](../clipboards/clipboard-five-stakes.md).
 **Emission:** `[GAP]`. Five cards. Zero H-PTR fills. No PDF bytes. No `src/`.

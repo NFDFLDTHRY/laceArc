@@ -4,7 +4,8 @@ Plans, proposals, executed pass records, and dated receipts share this shelf. Ea
 
 | File | Job |
 |---|---|
-| [tech-ref-eq-map-pass-6-plan.md](tech-ref-eq-map-pass-6-plan.md) | **`PLAN`** — technician-refs pass 6 of 6. AgentScope + STOP. ReAG ≠ POINTER. Φ `[GAP]` |
+| [tech-ref-eq-map-pass-6-agentscope.md](tech-ref-eq-map-pass-6-agentscope.md) | **EXECUTED** technician-refs pass 6. A1–A5 + STOP. Campaign **CLOSED 6/6**. Φ `[GAP]` |
+| [tech-ref-eq-map-pass-6-plan.md](tech-ref-eq-map-pass-6-plan.md) | **`EXECUTED`** — pass 6 of 6 **CLOSED**. ReAG ≠ POINTER. Φ `[GAP]` |
 | [tech-ref-eq-map-pass-5-petersen.md](tech-ref-eq-map-pass-5-petersen.md) | **EXECUTED** technician-refs pass 5. P1–P7 stamped. Kernel ≠ strand. Φ `[GAP]` |
 | [tech-ref-eq-map-pass-5-plan.md](tech-ref-eq-map-pass-5-plan.md) | **`EXECUTED`** — pass 5 Petersen–Zech × equations. Φ `[GAP]` |
 | [tech-ref-eq-map-pass-4-xiao.md](tech-ref-eq-map-pass-4-xiao.md) | **EXECUTED** technician-refs pass 4. X1–X7 stamped. Likelihood ≠ section. Φ `[GAP]` |
