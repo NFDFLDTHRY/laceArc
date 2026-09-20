@@ -4,6 +4,7 @@ Plans, proposals, executed pass records, and dated receipts share this shelf. Ea
 
 | File | Job |
 |---|---|
+| [model-behavior-map-pass-3-plan.md](model-behavior-map-pass-3-plan.md) | **`PLAN`** — model-behavior pass 3. Refused traces. No is not when. Φ `[GAP]` |
 | [model-behavior-map-pass-2-legal.md](model-behavior-map-pass-2-legal.md) | **EXECUTED** model-behavior pass 2. L0–L5 legal classes. POINTER not forced. Φ `[GAP]` |
 | [model-behavior-map-pass-2-plan.md](model-behavior-map-pass-2-plan.md) | **`EXECUTED`** — pass 2 legal traces. Φ `[GAP]` |
 | [model-behavior-map-pass-1.md](model-behavior-map-pass-1.md) | **EXECUTED** model-behavior pass 1. 11 classes. B-When free. Φ `[GAP]` |
