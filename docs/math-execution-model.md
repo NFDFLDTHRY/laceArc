@@ -88,7 +88,7 @@ Piece 2 states **one** governing operator in two voices (mechanism / array). Thi
 - Repeated \(v\) yields a **new** occurrence at a new index (Piece 4).  
 - Does **not** schedule POINTER writes. First unseen \(v\) is Arrive, not Φ (emission Q0).
 
-Mechanism voice (“route new wire through that word’s star; continue”) names the same step’s participation half in prose. The append *shape* of that half is Φ-morphism (S4). The algorithm that chooses *when* to fire it is Φ-schedule (Q1), still open.
+Mechanism voice (“route new wire through that word’s star; continue”) names the same step’s participation half in prose. The append *shape* of that half is Φ-morphism (S4). The algorithm that chooses *when* to fire it is Φ-schedule (Q1): **SPOKEN** on the emission file, **not accepted**, **not calculated**.
 
 There is no second engine after ingest (Piece 2; Hands §2.4).
 
@@ -106,11 +106,11 @@ The notation \(\mathrm{Star}(v)\) here records only WORD-occurrence membership. 
 
 ### S3.2 Sequence as route
 
-Order of WORD appends is the physical route through stars (Piece 8). No sentence container is added. Adjacency does **not** fire Φ (emission Q3 CLOSED). Whether leftover adjacency *is* a relation remains OPEN.
+Order of WORD appends is the physical route through stars (Piece 8). No sentence container is added. Adjacency does **not** fire Φ (emission Q3 CLOSED). Leftover adjacency is emission Q3 **SPOKEN** as arrival order on the wire (B5), not a stored relation — **not accepted**, **not calculated**.
 
 ### S3.3 Touch / re-entry (reading)
 
-Later participation can mention earlier participation because POINTER sections are themselves addressable (Piece 11; Graphic D chains). **Which** touch is written is Φ-schedule (Q1), still OPEN. Observation is not automatically an append (Hands §2.8 item 2).
+Later participation can mention earlier participation because POINTER sections are themselves addressable (Piece 11; Graphic D chains). **Which** touch is written is Φ-schedule (Q1): **SPOKEN** on the emission file, **not accepted**, **not calculated**. Observation is not automatically an append (Hands §2.8 item 2).
 
 ### S3.4 Projection
 
