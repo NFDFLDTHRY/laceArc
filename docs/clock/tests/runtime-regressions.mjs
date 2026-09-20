@@ -135,8 +135,8 @@ function page(options = {}) {
   const doc = { body, getElementById: get, querySelectorAll: () => [], querySelector: () => ({ textContent: 'LAYER III ixp2' }) };
   const raf = new Map(), timers = new Map(), submissions = [], attempts = [], requests = [], navigations = [], messages = [];
   let counter = 0, now = 0;
-  const device = Object.assign(new Events(), {
-    lost: new Promise(() => {}), destroy() {},
+  function makeDevice() { return Object.assign(new Events(), {
+    lost: new Promise(() => {}), destroyCalls: 0, destroy() { this.destroyCalls++; },
     createBuffer: ({ size }) => ({ bytes: new Uint8Array(size) }),
     createShaderModule: value => value,
     createRenderPipeline(desc) { return { desc, getBindGroupLayout: () => ({}) }; },
@@ -171,7 +171,8 @@ function page(options = {}) {
         }));
       }
     }
-  });
+  }); }
+  const device = makeDevice();
   get('c').getContext = () => ({ configure() {}, getCurrentTexture: () => ({ createView: () => ({}) }) });
   const reg = Object.assign(new Events(), {
     waiting: options.waiting ? { postMessage: msg => messages.push(msg) } : null,
@@ -203,6 +204,7 @@ function page(options = {}) {
     URL, Blob, AbortController,
     Worker: class {
       postMessage() {
+        if (options.workerStart) { options.workerStart(this); return; }
         queueMicrotask(() => this.onmessage({ data: Object.fromEntries(['P', 'N', 'C', 'B'].map(k => [k, baked.worker[k].buffer]).concat([['fCount', 6], ['wasm', false]])) }));
       }
       terminate() {}
@@ -211,10 +213,20 @@ function page(options = {}) {
   context.window = context;
   context.matchMedia = () => ({ matches: false });
   if (options.noSW) delete context.navigator.serviceWorker;
+  if (options.noGPU) delete context.navigator.gpu;
   if (options.ml) context.navigator.ml = options.ml;
   vm.runInContext(pageScript, context, { timeout: 1000 });
   return {
-    context, get, body, device, reg, requests, navigations, messages, submissions, attempts,
+    context, get, body, device, makeDevice, reg, requests, navigations, messages, submissions, attempts, raf, timers,
+    setNow(value) { now = value; },
+    event: (...args) => globalEvents.emit(...args),
+    async step(milliseconds = 16) {
+      await settle();
+      const next = raf.entries().next().value;
+      if (!next) return false;
+      raf.delete(next[0]); now += milliseconds; next[1](now); await settle();
+      return true;
+    },
     async expire(delay) {
       await settle();
       const timer = [...timers].find(([, entry]) => entry.delay === delay);
@@ -627,3 +639,255 @@ test('P3-08: WebNN context creation does not claim inference execution', async (
   await settle();
   assert.equal(app.get('nnstamp').textContent, 'WebNN context ready');
 });
+
+function deferred() {
+  let resolve, reject;
+  const promise = new Promise((yes, no) => { resolve = yes; reject = no; });
+  return { promise, resolve, reject };
+}
+function enableGPU(app, requestDevice = async () => app.makeDevice()) {
+  app.context.navigator.gpu = { requestAdapter: async () => ({ requestDevice }), getPreferredCanvasFormat: () => 'bgra8unorm' };
+}
+async function suspend(app, type = 'visibilitychange') {
+  app.context.document.visibilityState = 'hidden';
+  await app.event(type);
+}
+async function resume(app, type = 'visibilitychange') {
+  app.context.document.visibilityState = 'visible';
+  await app.event(type, { persisted: true });
+}
+function state(app, expression) { return vm.runInContext(expression, app.context); }
+
+for (const watchdogUsed of [false, true]) {
+  test(`P4-01: repeated quick suspension recovers without focus; watchdog used=${watchdogUsed}`, async () => {
+    const app = page({ noGPU: watchdogUsed });
+    if (watchdogUsed) {
+      await app.step(); await app.step();
+      enableGPU(app); app.setNow(1500); await app.expire(1500);
+    } else enableGPU(app);
+    await app.frame();
+    await app.get('refbtn').emit('click');
+    app.get('t').value = '5'; app.get('t').oninput();
+    const camera = state(app, 'JSON.stringify([yaw,pitch])');
+    for (let i = 0; i < 2; i++) {
+      const old = state(app, 'gpuSession.device');
+      await suspend(app); await resume(app); await app.frame();
+      assert.equal(old.destroyCalls, 1);
+      assert.equal(state(app, 'gpuLive'), true);
+      assert.equal(app.raf.size, 1);
+      assert.equal(state(app, 'tVal'), 5);
+      assert.equal(app.body.classList.contains('ref'), true);
+      // Camera rotation is independent of paused D1 time; suspension must not reset it.
+      assert.equal(state(app, 'pitch'), JSON.parse(camera)[1]);
+    }
+  });
+}
+for (const event of ['visibilitychange', 'pagehide', 'freeze']) {
+  test(`P4-01: ${event} cancels startup RAF without acquiring an adapter`, async () => {
+    const app = page(); let acquisitions = 0;
+    app.context.navigator.gpu.requestAdapter = async () => { acquisitions++; return null; };
+    const staleCallbacks = [...app.raf.values()];
+    await suspend(app, event);
+    assert.equal(app.raf.size, 0, 'startup RAF must be cancelled');
+    for (const fn of staleCallbacks) fn(16); // A queued stale callback cannot revive boot.
+    await settle();
+    assert.equal(acquisitions, 0);
+    assert.equal(app.raf.size, 0);
+    assert.equal(state(app, 'gpuSession'), null);
+  });
+  test(`P4-01: ${event} rejects late device ownership and preserves a newer session`, async () => {
+    const app = page(); const pending = deferred();
+    const late = app.makeDevice(); let requests = 0;
+    enableGPU(app, () => { requests++; return requests === 1 ? pending.promise : Promise.resolve(app.makeDevice()); });
+    await app.step(); await app.step();
+    assert.equal(requests, 1);
+    await suspend(app, event);
+    await resume(app, event === 'pagehide' ? 'pageshow' : event === 'freeze' ? 'resume' : 'visibilitychange');
+    await app.frame();
+    const current = state(app, 'gpuSession');
+    pending.resolve(late); await settle();
+    assert.equal(late.destroyCalls, 1);
+    assert.equal(state(app, 'gpuSession'), current);
+    assert.equal(current.device.destroyCalls, 0);
+    assert.equal(app.raf.size, 1);
+    assert.equal(state(app, 'gpuLive'), true);
+  });
+}
+test('P4-01: late adapter after suspension cannot request a device', async () => {
+  const app = page(); const pending = deferred(); let requested = 0;
+  app.context.navigator.gpu.requestAdapter = () => pending.promise;
+  await app.step(); await app.step(); await suspend(app);
+  pending.resolve({ requestDevice: async () => { requested++; return app.makeDevice(); } });
+  await settle();
+  assert.equal(requested, 0);
+  assert.equal(state(app, 'gpuSession'), null);
+  assert.equal(app.raf.size, 0);
+});
+test('P4-01: suspension during bake releases an acquired unowned device exactly once', async () => {
+  let workerClient;
+  const app = page({ workerStart: w => { workerClient = w; } });
+  await app.step(); await app.step();
+  await suspend(app);
+  assert.equal(app.device.destroyCalls, 1);
+  workerClient.onmessage({ data: packedScene() }); await settle();
+  assert.equal(app.device.destroyCalls, 1);
+  assert.equal(state(app, 'gpuSession'), null);
+  assert.equal(app.raf.size, 0);
+});
+test('P4-01: obsolete watchdog cannot restart a suspended viewer', async () => {
+  const app = page(); await app.frame();
+  const watchdog = [...app.timers.values()].find(timer => timer.delay === 1500);
+  assert.ok(watchdog);
+  await suspend(app);
+  watchdog.fn(); await settle();
+  assert.equal(state(app, 'gpuSession'), null);
+  assert.equal(state(app, 'gpuBooting'), false);
+  assert.equal(app.raf.size, 0);
+  await resume(app); await app.frame();
+  watchdog.fn(); // A stale queued callback must not erase the new timer's handle.
+  await suspend(app);
+  assert.equal([...app.timers.values()].some(timer => timer.delay === 1500), false);
+});
+
+for (const online of [false, true]) {
+  test(`P4-02: actual page-to-SW no-store release lookup bypasses stale cache; online=${online}`, async () => {
+    const events = new Events(); const entries = new Map([
+      ['stale release', { id: ID, html: APP, sha: PIN }], ['unrelated app', 'sentinel'], ['other pin', 'sentinel']
+    ]);
+    const before = structuredClone(entries); let networkCalls = 0, cacheReads = 0, cacheWrites = 0;
+    const response = value => ({ ok: true, json: async () => value, clone() { return this; } });
+    const context = vm.createContext({
+      self: { addEventListener: (...args) => events.addEventListener(...args) }, URL,
+      location: { origin: 'https://rawcdn.githack.com' },
+      fetch: async () => { networkCalls++; if (!online) throw new Error('fixture offline'); return response({ id: ID, html: APP, sha: NEXT }); },
+      caches: { match: async () => { cacheReads++; return response(entries.get('stale release')); }, open: async () => ({ put: async () => { cacheWrites++; } }) }
+    });
+    vm.runInContext(sw, context);
+    const app = page({ response: async (url, n, init) => {
+      if (!url.startsWith('https://rawcdn.githack.com/')) throw new Error('fixture provider failure');
+      let reply;
+      await events.emit('fetch', { request: { url, method: 'GET', cache: init.cache }, respondWith: promise => { reply = promise; } });
+      return reply;
+    } });
+    await app.update();
+    assert.equal(networkCalls, 1);
+    assert.equal(cacheReads, 0);
+    assert.equal(cacheWrites, 0);
+    assert.deepEqual(entries, before);
+    assert.equal(app.reg.updateCalls, 0);
+    if (online) assert.deepEqual(app.navigations, [`https://rawcdn.githack.com/NFDFLDTHRY/laceArc/${NEXT}/${APP}`]);
+    else { assert.equal(app.navigations.length, 0); assert.match(app.get('pwastamp').textContent, /release unavailable/); }
+  });
+}
+for (const initialGPU of [false, true]) {
+  test(`P4-03: fallback scrub is accurate and playback unavailable; initial GPU=${initialGPU}`, async () => {
+    const app = page({ noGPU: !initialGPU });
+    if (initialGPU) { await app.frame(); await app.device.emit('uncapturederror', { error: { message: 'fixture fallback' } }); }
+    else { await app.step(); await app.step(); }
+    app.get('t').value = '10'; app.get('t').oninput();
+    assert.equal(app.get('phase').textContent, 't=0010 PTR');
+    assert.equal(app.get('look-crossing').classList.contains('on'), true);
+    assert.equal(app.get('play').disabled, true);
+    assert.match(app.get('play').textContent, /paused.*unavailable/i);
+    app.get('play').onclick(); // Even a directly invoked disabled handler cannot start playback.
+    assert.equal(state(app, 'playing'), false);
+    assert.equal(state(app, 'tVal'), 10);
+    enableGPU(app); state(app, 'requestReboot("fixture recovery")'); await app.frame();
+    assert.equal(app.get('play').disabled, false);
+    assert.equal(app.get('play').textContent, 'play');
+    assert.equal(state(app, 'tVal'), 10);
+    app.get('play').onclick(); await app.frame();
+    assert.equal(app.get('play').textContent, 'pause');
+    assert.ok(state(app, 'tVal') > 10);
+    assert.equal(app.raf.size, 1);
+  });
+}
+test('P4-03: temporary fallback retains play intent without advancing until recovery', async () => {
+  const options = { submitError: false }; const app = page(options); await app.frame();
+  await app.device.emit('uncapturederror', { error: { message: 'fixture fallback' } });
+  assert.equal(state(app, 'playing'), true);
+  assert.equal(app.get('play').disabled, true);
+  const time = state(app, 'tVal');
+  options.submitError = true; state(app, 'requestReboot("fixture recovery")'); await app.frame(); await app.frame();
+  assert.equal(state(app, 'tVal'), time, 'failed fallback retries do not advance the display time');
+  options.submitError = false; await app.frame();
+  assert.equal(app.get('play').disabled, false);
+  assert.equal(app.get('play').textContent, 'pause');
+  await app.frame();
+  assert.ok(state(app, 'tVal') > time);
+});
+
+test('P4-04: rejected prompt settles Install and consumes its rejection', async () => {
+  const app = page(); await settle(); const rejection = Promise.reject(new Error('fixture prompt rejected'));
+  // Handle it in the fixture as well so the baseline failure is an assertion,
+  // rather than a runner-global unhandled rejection; actual handler must settle.
+  rejection.catch(() => {});
+  await app.event('beforeinstallprompt', { prompt: () => rejection, userChoice: new Promise(() => {}) });
+  const click = observed(app.get('installbtn').emit('click'));
+  await settle();
+  assert.equal(click.state, 'fulfilled');
+  assert.match(app.get('pwastamp').textContent, /fail/i);
+  assert.equal(app.context.deferredPrompt, null);
+});
+for (const outcome of ['accepted', 'dismissed']) {
+  test(`P4-04: ${outcome} choice consumes one event once, including repeated clicks`, async () => {
+    const app = page(); const choice = deferred(); let calls = 0;
+    await app.event('beforeinstallprompt', { prompt: async () => { calls++; }, userChoice: choice.promise });
+    const first = app.get('installbtn').emit('click'); await settle();
+    const second = app.get('installbtn').emit('click'); await settle();
+    assert.equal(calls, 1);
+    choice.resolve({ outcome }); await Promise.all([first, second]);
+    assert.equal(app.context.deferredPrompt, null);
+    assert.match(app.get('pwastamp').textContent, /prompted/);
+  });
+}
+for (const firstOutcome of ['success', 'failure']) {
+  test(`P4-04: new event survives older in-flight ${firstOutcome}`, async () => {
+    const app = page(); const pending = deferred(), choice = deferred(); let firstCalls = 0, secondCalls = 0;
+    const firstEvent = { prompt: () => { firstCalls++; return pending.promise; }, userChoice: choice.promise };
+    await app.event('beforeinstallprompt', firstEvent);
+    const first = app.get('installbtn').emit('click'); await settle();
+    const secondEvent = { prompt: async () => { secondCalls++; }, userChoice: Promise.resolve({ outcome: 'accepted' }) };
+    await app.event('beforeinstallprompt', secondEvent);
+    if (firstOutcome === 'failure') { pending.promise.catch(() => {}); pending.reject(new Error('fixture old prompt failure')); }
+    else pending.resolve();
+    choice.resolve({ outcome: 'dismissed' });
+    await first; await settle();
+    assert.equal(app.context.deferredPrompt, secondEvent, 'old completion must preserve the newly delivered event');
+    await app.get('installbtn').emit('click');
+    assert.equal(firstCalls, 1); assert.equal(secondCalls, 1);
+    assert.equal(app.context.deferredPrompt, null);
+  });
+}
+
+for (const outcome of ['invalid result', 'rejection']) {
+  test(`P4-01: obsolete bake ${outcome} cannot overwrite a newer live session`, async () => {
+    const app = page(); const pending = deferred(), devices = [];
+    await suspend(app);
+    app.context.pendingBake = pending.promise;
+    state(app, 'bakeInFlight=pendingBake');
+    enableGPU(app, async () => { const device = app.makeDevice(); devices.push(device); return device; });
+    await resume(app); await app.step(); await app.step();
+    assert.equal(devices.length, 1, 'the superseded attempt must reach its bake await');
+    await suspend(app);
+    app.context.freshBake = baked.inline;
+    state(app, 'bakeInFlight=Promise.resolve(freshBake)');
+    await resume(app); await app.frame();
+    const current = state(app, 'gpuSession');
+    const before = ['gpustamp', 'wdogstamp', 'why'].map(id => app.get(id).textContent);
+    const fallbackBefore = app.body.classList.contains('gpu-off');
+    // Observe whether the stale catch invokes the existing inline bake at all.
+    state(app, 'var fallbackBakeCalls=0; var savedBakeMain=bakeMain; bakeMain=()=>{fallbackBakeCalls++;return savedBakeMain();}');
+    if (outcome === 'rejection') pending.reject(new Error('fixture obsolete bake failure'));
+    else pending.resolve(null);
+    await settle();
+    assert.equal(state(app, 'gpuSession'), current);
+    assert.equal(state(app, 'gpuLive'), true);
+    assert.equal(devices[0].destroyCalls, 1);
+    assert.equal(current.device.destroyCalls, 0);
+    assert.equal(state(app, 'fallbackBakeCalls'), 0);
+    assert.deepEqual(['gpustamp', 'wdogstamp', 'why'].map(id => app.get(id).textContent), before);
+    assert.equal(app.body.classList.contains('gpu-off'), fallbackBefore);
+    assert.equal(app.raf.size, 1);
+  });
+}

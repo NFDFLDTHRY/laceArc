@@ -25,6 +25,11 @@ function netFirst(req){
 self.addEventListener("fetch", e => {
   const u = new URL(e.request.url);
   if (u.origin !== location.origin) return;
+  // Fresh pointer/diagnostic/source requests must not reuse a stale app cache.
+  if (e.request.cache === "no-store") {
+    e.respondWith(fetch(e.request));
+    return;
+  }
   const path = u.pathname;
   const live = path.endsWith(".html") || path.endsWith("/") || path.endsWith(".js");
   if (live) {

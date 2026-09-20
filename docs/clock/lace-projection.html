@@ -441,6 +441,7 @@ let playing=true, tVal=0, gpuLive=false;
 let yaw=0.7, pitch=0.85, dragging=false, lastPtr=null;
 let gpuBooting=false, gpuGen=0, needReboot=false, gpuGaveUp=false;
 let gpuSession=null, lastRebootAt=0, wdogUsed=false, recycleUsed=false;
+let gpuSuspended=document.visibilityState==="hidden", gpuAttempt=null, watchdogTimer=0;
 const hadController=!!(navigator.serviceWorker && navigator.serviceWorker.controller);
 const bootAt=performance.now();
 {
@@ -471,6 +472,7 @@ function keepFallback(why){
   if(w) w.textContent=why;
   const g=document.getElementById("gpustamp");
   if(g) g.textContent="GPU off";
+  syncPlaybackControl();
 }
 function hideFallback(){
   // Leave the explicit REF choice to CSS; release only the forced failure view.
@@ -478,6 +480,7 @@ function hideFallback(){
   document.body.classList.remove("gpu-off");
   document.getElementById("why").textContent="Reference images. Glyphs ≠ schema. [GAP]";
   gpuGaveUp=false;
+  syncPlaybackControl();
 }
 function ensureLookrefs(){
   if(ensureLookrefs.done) return;
@@ -494,11 +497,24 @@ function ensureLookrefs(){
 }
 const tEl=document.getElementById("t");
 const phase=document.getElementById("phase");
+function syncTimeView(){
+  showLook(tVal);
+  const idx=Math.min(10, Math.floor(tVal+0.001)), live=D1[idx];
+  phase.textContent="t="+String(idx).padStart(4,"0")+" "+(live.k==="WORD"?live.v:"PTR");
+}
+function syncPlaybackControl(){
+  const button=document.getElementById("play");
+  button.disabled=!gpuLive;
+  button.textContent=gpuLive ? (playing?"pause":"play") : "playback paused (GPU unavailable)";
+}
 document.getElementById("play").onclick=()=>{
+  if(!gpuLive) return;
   playing=!playing;
-  document.getElementById("play").textContent=playing?"pause":"play";
+  syncPlaybackControl();
 };
-tEl.oninput=()=>{ tVal=+tEl.value; playing=false; document.getElementById("play").textContent="play"; showLook(tVal); };
+tEl.oninput=()=>{ tVal=+tEl.value; playing=false; syncTimeView(); syncPlaybackControl(); };
+syncTimeView();
+syncPlaybackControl();
 document.getElementById("refbtn").addEventListener("click", ev=>{
   ev.preventDefault();
   ev.stopPropagation();
@@ -515,17 +531,47 @@ document.querySelectorAll(".modes button[data-mode]").forEach(btn=>{
 });
 
 function killGpuSession(){
-  if(!gpuSession) return;
-  gpuSession.dead=true;
-  if(gpuSession.raf) try{cancelAnimationFrame(gpuSession.raf);}catch(_){}
-  if(gpuSession.depth) try{gpuSession.depth.destroy();}catch(_){}
-  if(gpuSession.device) try{gpuSession.device.destroy();}catch(_){}
+  if(gpuSession){
+    gpuSession.dead=true;
+    if(gpuSession.raf) try{cancelAnimationFrame(gpuSession.raf);}catch(_){}
+    if(gpuSession.depth) try{gpuSession.depth.destroy();}catch(_){}
+    if(gpuSession.device) try{gpuSession.device.destroy();}catch(_){}
+  }
   gpuSession=null;
   gpuLive=false;
+  syncPlaybackControl();
+}
+function disposeBoot(attempt){
+  if(!attempt) return;
+  attempt.dead=true;
+  if(attempt.raf) cancelAnimationFrame(attempt.raf);
+  if(attempt.finishStart) attempt.finishStart();
+  if(attempt.device){
+    try{attempt.device.destroy();}catch(_){}
+    attempt.device=null;
+  }
+}
+function suspendGpu(){
+  gpuSuspended=true;
+  gpuGen++;
+  disposeBoot(gpuAttempt);
+  gpuAttempt=null;
+  gpuBooting=false;
+  needReboot=false;
+  clearTimeout(watchdogTimer);
+  watchdogTimer=0;
+  killGpuSession();
+  document.getElementById("gpustamp").textContent="GPU suspended";
+}
+function resumeGpu(why){
+  if(document.visibilityState==="hidden") return;
+  gpuSuspended=false;
+  requestReboot(why);
 }
 function requestReboot(why){
+  if(gpuSuspended) return;
   const now=performance.now();
-  if((why==="visible"||why==="focus"||why==="pageshow"||why==="bfcache") && now-lastRebootAt<900) return;
+  if(gpuLive && gpuSession && (why==="visible"||why==="focus"||why==="pageshow"||why==="bfcache") && now-lastRebootAt<900) return;
   lastRebootAt=now;
   needReboot=true;
   const g=document.getElementById("gpustamp");
@@ -533,28 +579,38 @@ function requestReboot(why){
   if(!gpuBooting) bootGpu();
 }
 async function bootGpu(){
-  if(gpuBooting) return;
+  if(gpuBooting || gpuSuspended) return;
   gpuBooting=true;
   needReboot=false;
   gpuGaveUp=false;
   lastRebootAt=performance.now();
   gpuGen++;
   const my=gpuGen;
+  const attempt={dead:false,raf:0,finishStart:null,device:null};
+  gpuAttempt=attempt;
+  clearTimeout(watchdogTimer);
+  watchdogTimer=0;
   killGpuSession();
   try {
-    await main(my);
+    await main(my,attempt);
   } catch(err) {
     console.warn(err);
     if(my===gpuGen) keepFallback("WebGPU failed — CSS grid on stage.");
   } finally {
+    disposeBoot(attempt);
+    if(gpuAttempt===attempt) gpuAttempt=null;
     if(my===gpuGen) gpuBooting=false;
     if(needReboot && my===gpuGen) bootGpu();
     else if(my===gpuGen) armWatchdog();
   }
 }
 function armWatchdog(){
-  setTimeout(()=>{
-    if(gpuLive || gpuBooting) return;
+  const gen=gpuGen;
+  clearTimeout(watchdogTimer);
+  watchdogTimer=setTimeout(()=>{
+    if(gen!==gpuGen) return;
+    watchdogTimer=0;
+    if(gpuSuspended || gpuLive || gpuBooting) return;
     const w=document.getElementById("wdogstamp");
     if(!wdogUsed){
       wdogUsed=true;
@@ -567,14 +623,21 @@ function armWatchdog(){
   }, 1500);
 }
 
-async function main(gen){
+async function main(gen,attempt){
   const canvas=document.getElementById("c");
   const gstamp=document.getElementById("gpustamp");
   const szstamp=document.getElementById("szstamp");
   const nstamp=document.getElementById("nstamp");
   showLook(tVal);
   const bakeP = bakeInFlight || (bakeInFlight=bakeScene());
-  await new Promise(r=>requestAnimationFrame(()=>requestAnimationFrame(r)));
+  await new Promise(resolve=>{
+    const done=()=>{ attempt.raf=0; attempt.finishStart=null; resolve(); };
+    attempt.finishStart=done;
+    attempt.raf=requestAnimationFrame(()=>{
+      if(attempt.dead){ done(); return; }
+      attempt.raf=requestAnimationFrame(done);
+    });
+  });
   if(gen!==gpuGen) return;
   if(!navigator.gpu){ keepFallback("No navigator.gpu — CSS grid on stage."); return; }
   let ad=null;
@@ -588,17 +651,21 @@ async function main(gen){
   let device=null;
   for(let i=0;i<3 && !device;i++){
     if(gen!==gpuGen) return;
-    try { device=await ad.requestDevice(); } catch(_){ device=null; }
+    try { device=await ad.requestDevice(); attempt.device=device; } catch(_){ device=null; }
     if(!device && i<2) await new Promise(r=>setTimeout(r,300));
   }
-  if(gen!==gpuGen){ if(device) try{device.destroy();}catch(_){ } return; }
+  if(gen!==gpuGen) return;
   if(!device){ keepFallback("No GPU device — CSS grid on stage."); return; }
   const ctx=canvas.getContext("webgpu");
   if(!ctx){ keepFallback("No WebGPU canvas context — CSS grid on stage."); return; }
   const fmt=navigator.gpu.getPreferredCanvasFormat();
   let scene;
-  try { scene = await bakeP; }
+  try {
+    scene = await bakeP;
+    if(gen!==gpuGen) return;
+  }
   catch (e) {
+    if(gen!==gpuGen) return;
     scene = bakeMain();
     const w=document.getElementById("wdogstamp");
     if(w) w.textContent="bake main";
@@ -607,7 +674,7 @@ async function main(gen){
     keepFallback("Bake produced no triangles.");
     return;
   }
-  if(gen!==gpuGen){ try{device.destroy();}catch(_){ } return; }
+  if(gen!==gpuGen) return;
   const vCount=scene.P.length/3;
   let fCount=Math.max(0, Math.min(vCount, scene.fCount|0));
   if(fCount>=vCount) fCount=0;
@@ -653,6 +720,7 @@ async function main(gen){
   const bgGlass=device.createBindGroup({layout:pipeGlass.getBindGroupLayout(0),entries:[{binding:0,resource:{buffer:uniGlass}}]});
   const sess={dead:false,raf:0,device,depth:null};
   gpuSession=sess;
+  attempt.device=null; // Ownership transfers to killGpuSession.
   if(gstamp) gstamp.textContent="GPU ready";
   device.addEventListener("uncapturederror", ev=>{
     if(sess.dead || gen!==gpuGen) return;
@@ -705,11 +773,9 @@ async function main(gen){
     const dt=(now-last)/1000; last=now;
     if(!sized) sized=resize();
     if(!sized){ sess.raf=requestAnimationFrame(frame); return; }
-    if(playing){ tVal+=dt*0.7; if(tVal>10.4) tVal=0; tEl.value=tVal; }
-    showLook(tVal);
-    const idx=Math.min(10, Math.floor(tVal+0.001));
-    const live=D1[idx];
-    phase.textContent="t="+String(idx).padStart(4,"0")+" "+(live.k==="WORD"?live.v:"PTR");
+    // `playing` retains intent; failed/unavailable rendering pauses progression.
+    if(playing && gpuLive){ tVal+=dt*0.7; if(tVal>10.4) tVal=0; tEl.value=tVal; }
+    syncTimeView();
     const asp=canvas.width/Math.max(1,canvas.height);
     if(!dragging) yaw+=dt*0.12;
     const cp=Math.cos(pitch), sp=Math.sin(pitch);
@@ -774,19 +840,19 @@ async function main(gen){
 }
 addEventListener("resize", ()=>{ if(gpuSession && gpuSession.resize) gpuSession.resize(); });
 addEventListener("pageshow", ev=>{
-  if(ev.persisted) requestReboot("bfcache");
+  if(ev.persisted || gpuSuspended) resumeGpu(ev.persisted?"bfcache":"pageshow");
   else if(gpuSession && gpuSession.resize) gpuSession.resize();
 });
-addEventListener("pagehide", ()=>{ killGpuSession(); });
-addEventListener("freeze", ()=>{ killGpuSession(); });
-addEventListener("resume", ()=>{ requestReboot("resume"); });
+addEventListener("pagehide", suspendGpu);
+addEventListener("freeze", suspendGpu);
+addEventListener("resume", ()=>{ resumeGpu("resume"); });
 addEventListener("focus", ()=>{ requestReboot("focus"); });
 addEventListener("visibilitychange", ()=>{
   if(document.visibilityState==="hidden"){
-    killGpuSession();
+    suspendGpu();
     return;
   }
-  requestReboot("visible");
+  resumeGpu("visible");
 });
 if(window.visualViewport) visualViewport.addEventListener("resize", ()=>{
   if(gpuSession && gpuSession.resize) gpuSession.resize();
@@ -849,7 +915,7 @@ async function runAudit(){
       "J iOS ignore n/a";
 }
 setTimeout(runAudit, 600);
-let deferredPrompt=null;
+let deferredPrompt=null, installRunning=false;
 let persistAsked=false;
 function stampPersist(label){
   const el=document.getElementById("persiststamp");
@@ -939,6 +1005,7 @@ window.addEventListener("beforeinstallprompt", ev=>{
 });
 document.getElementById("installbtn").addEventListener("click", async ev=>{
   ev.preventDefault();
+  if(installRunning) return;
   const e=document.getElementById("pwastamp");
   if(window.matchMedia("(display-mode: standalone)").matches){
     if(e) e.textContent="installed";
@@ -950,15 +1017,19 @@ document.getElementById("installbtn").addEventListener("click", async ev=>{
     await askPersist("install");
     return;
   }
+  const prompt=deferredPrompt;
+  deferredPrompt=null;
+  window.deferredPrompt=null;
+  installRunning=true;
   try {
-    deferredPrompt.prompt();
-    await deferredPrompt.userChoice;
+    await prompt.prompt();
+    await prompt.userChoice;
     if(e) e.textContent="prompted";
   } catch(err) {
     if(e) e.textContent="bip fail";
+  } finally {
+    installRunning=false;
   }
-  deferredPrompt=null;
-  window.deferredPrompt=null;
   await askPersist("install");
 });
 let checkCurrentWorker=null, updateRunning=false;
