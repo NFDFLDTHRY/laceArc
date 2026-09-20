@@ -332,13 +332,29 @@ while IFS= read -r rp; do
 done < <(printf '%s\n' "$_all" | grep -E '(^|/)README\.md$' | sort -u)
 [ "$thin" -eq 0 ] && note_ok "every shelf door links every file on its shelf"
 
+# 9. Actor attribution (advisory, never a gate). Commits without a model/actor
+# trailer cannot be assigned or audited by actor: 810 of 1,035 lacked one at
+# e2e8155 (docs/plans/lace-context-iter7-pass-1-actors.md §1). Convention and
+# forms: docs/kit/roles.md.
+unsigned=0
+if git rev-parse --verify HEAD >/dev/null 2>&1; then
+  total_c=$(git rev-list --count --max-count=200 HEAD)
+  signed=$(git log -200 --format='%(trailers:key=Co-Authored-By,valueonly)%(trailers:key=Agent,valueonly)' | grep -c . || true)
+  unsigned=$((total_c - signed))
+  if [ "$unsigned" -eq 0 ]; then
+    note_ok "actor attribution: last $total_c commits all carry an actor trailer"
+  else
+    note_warn "actor attribution: $unsigned of the last $total_c commits carry no actor trailer (advisory; docs/kit/roles.md)"
+  fi
+fi
+
 if [ "$fail" -eq 0 ]; then
-  if [ $((stale + orphans + drift + thin)) -eq 0 ]; then
+  if [ $((stale + orphans + drift + thin + unsigned)) -eq 0 ]; then
     echo "All checks passed."
   else
     printf '\n'
-    echo "Invariants hold. $((stale + orphans + drift + thin)) advisory finding(s) above — voids, not breaches."
-    echo "  unreferenced files: $orphans · thin doors: $thin · stale absence: $stale · law-copy drift: $drift"
+    echo "Invariants hold. $((stale + orphans + drift + thin + unsigned)) advisory finding(s) above — voids, not breaches."
+    echo "  unreferenced files: $orphans · thin doors: $thin · stale absence: $stale · law-copy drift: $drift · unsigned commits (last 200): $unsigned"
   fi
 else
   echo "Checks failed."

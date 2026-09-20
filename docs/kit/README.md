@@ -59,3 +59,4 @@ This station also owns [`.claude/`](../../.claude/README.md) — the hooks and s
 POINTER emission stays `[GAP]`. No `src/`.
 
 | [distribution-model.md](distribution-model.md) | **Amendment (human-directed, 2026-09-19):** development on githack (unchanged law), production on the business custom domain as a pinned glacier release; installed once, offline forever; the promotion rule G1–G7. Re-scopes the Pages FORBID to the dev path |
+| [roles.md](roles.md) | **Roles** (steward, `[PROPOSAL]`): who holds which station and why, each row cited to the census; the joining steps; the actor trailer; what waits on the human. The unsigned-commit count in `check-docs.sh` is advisory and points here |
