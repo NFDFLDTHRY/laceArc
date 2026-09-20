@@ -18,11 +18,12 @@ Agent ticket. Not Hands. Not law. Not Core. POINTER emission stays `[GAP]`. No `
 
 A different conversion of the same book has a different SHA and is a different sighting. Re-attach, re-hash, re-cite.
 
-## Six passes (the shelf pattern; pass 1 executed on staking)
+## Passes (the shelf pattern; pass 0 executed on staking; pass 1 planned)
 
 | Pass | Job |
 |---|---|
-| 1 | **sighting + eye entries + stamps** for the `wasm64-unknown-unknown` page and the *Custom Targets* page → `docs/clipboards/rust-target-clipboard.md` |
+| 0 | **staking receipt**: sighting + eye entries + stamps for the `wasm64-unknown-unknown` page and the *Custom Targets* page → `docs/clipboards/rust-target-clipboard.md` (executed on staking) |
+| 1 | **the mapping**, pages A–H, X: every toolchain mechanism the book names → the project surface it touches → KEEP / FORBID / SILENT → the check that verifies it on the artifact. Plan: `docs/clipboards/rust-target-pass-1-plan.md` |
 | 2 | leftovers: every other page of the book that a `#![no_std]` build touches (`-Z build-std` mentions · target features · `panic` strategy · lints) — cite-only |
 | 3 | mechanisms M-R*: what the toolchain *does* (build-std, sysroot, target spec JSON) as target mechanisms, never Core |
 | 4 | ASCII machinery P-R*: the build pipeline drawn, one panel per mechanism |
