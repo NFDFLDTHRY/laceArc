@@ -4,6 +4,7 @@ Plans, proposals, executed pass records, and dated receipts share this shelf. Ea
 
 | File | Job |
 |---|---|
+| [math-execution-update-pass-3-plan.md](math-execution-update-pass-3-plan.md) | **`PLAN`** — UPDATE campaign pass 3 of 6. Calculation interface only: what Φ may see / must not see / holes left empty. Does not write the function. Φ `[GAP]` |
 | [math-execution-update-pass-2-plan.md](math-execution-update-pass-2-plan.md) | **`EXECUTED`** — UPDATE campaign pass 2 of 6. Model header / S4.2 / S8 retied to emission stamps. SPOKEN ≠ calculated. Φ `[GAP]` |
 | [math-execution-update-pass-1-drift.md](math-execution-update-pass-1-drift.md) | **EXECUTED** UPDATE pass 1 drift register. 12/12 U-rows kept. Model body frozen. SPOKEN ≠ calculated. Φ `[GAP]` |
 | [math-execution-update-pass-1-plan.md](math-execution-update-pass-1-plan.md) | **`EXECUTED`** — UPDATE campaign pass 1 of 6. Drift audit only. Does not rewrite S0–S8. Does not promote SPOKEN to schedule. Φ `[GAP]` |
