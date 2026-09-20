@@ -5,7 +5,6 @@
 **Depends on:** [`prefix-device-pass-1.md`](prefix-device-pass-1.md) EXECUTED.  
 **Object:** the leftover pass 1 named — spoken “don’t save the text” versus Graphic D WORD rows.  
 **This pass:** write a conflict sheet. Keep both sides visible. Do not pick a winner.  
-**Product:** [`prefix-device-pass-2.md`](prefix-device-pass-2.md)  
 **Authority:** four PNGs, then pass 1 stamps.  
 **Spoken (not Hands, not acceptance):** dictionary seed; arrival pays a pointer into that seed; original text need not be kept; a word to the machine is its defining cluster.  
 **Not authority:** span pyramids, emit-when, arity, adjacency-as-relation, clock, crates, history.  
@@ -51,39 +50,125 @@ Do not restamp panels. This pass hangs under those stamps.
 
 ### Collision I — what an arrival writes
 
-Hands: arriving word can be a WORD row with a value. Second PIE is WORD `0003`, not only a pointer. D1, D2, D5, A2, A5.
+| Side | Claim | Where it lives |
+|---|---|---|
+| Hands | An arriving word can be a WORD row with a value (`PIE`, `DESSERT`, `CUSTOMER`). Second PIE is WORD `0003`, not only a pointer. | D1, D2, D5, A2, A5 |
+| Spoken | After the dictionary is on the line, input need not keep the original text. Pointers into dictionary entries are the structure. | this session; not in-repo |
 
-Spoken: after the dictionary is on the line, input need not keep the original text. Pointers into dictionary entries are the structure. Session; not in-repo.
-
-Punch-card (B6 / C10 / A13) sits on both sides. It does not say whether the section written is WORD, POINTER, or both.
+Punch-card (B6 / C10 / A13) sits on both sides: raw word-by-word arrival. It does not say whether the *section written* is WORD, POINTER, or both.
 
 ### Collision II — what a word is to the machine
 
-Hands: “A word is just its variable. The variable is the word.” D2, D5, B2, B3.
+| Side | Claim | Where it lives |
+|---|---|---|
+| Hands | “A word is just its variable. The variable is the word.” Star = repeated passage through that variable. | D2, D5, B2, B3 |
+| Spoken | A word is the pointer cluster that defines it. | this session; B4 / C9 give the *route*, not that identity-replacement |
 
-Spoken: a word is the pointer cluster that defines it. Session. B4 / C9 give the route, not that identity-replacement.
+B4 “a definition is a route through other stars” is not yet “delete the WORD row.” Route and identity are different sentences.
 
-B4 is not yet “delete the WORD row.” Route and identity are different sentences.
+Execute fills evidence rows. It does not merge I and II.
 
 ---
 
-## 5. What execute wrote
+## 3. Stamp vocabulary (this pass only)
 
-- [`prefix-device-pass-2.md`](prefix-device-pass-2.md) — filled sheets I and II, ruling slots blank.
+| Stamp | Means |
+|---|---|
+| HANDS | Picture states this side. Cite panel. |
+| SPOKEN | Human said this in session. Not in-repo. Not accepted. |
+| KIN | Looks related; does not decide the collision. |
+| `[GAP]` | Picture silent on which write / which identity. |
+| RULING | Empty until the human writes in-repo. |
+
+---
+
+## 4. Sheets (empty until execute)
+
+### Sheet I — saved text vs pointer-only
+
+| Item | Stamp | Cite | Notes |
+|---|---|---|---|
+| D1 WORD rows carry values | | | |
+| D1 second PIE is a WORD | | | |
+| D2 WORD shape `{index, type, value}` | | | |
+| D5 more history = more WORD passages | | | |
+| B6 / C10 punch-card names words arriving | | | |
+| B5 sentence is the wire, not a unit | | | |
+| Spoken: don’t save original text | | | |
+| Spoken: pointers to dict entries suffice | | | |
+| Does punch-card require a WORD row? | | | |
+| Does “no sentence object” delete WORD values? | | | |
+
+### Sheet II — variable vs defining cluster
+
+| Item | Stamp | Cite | Notes |
+|---|---|---|---|
+| D2 variable *is* the word | | | |
+| B4 / C9 definition is a route | | | |
+| A11 each star is a word | | | |
+| B10 stored gloss forbidden | | | |
+| Spoken: word = defining pointer cluster | | | |
+| Is the cluster a VIEW of WORD rows + POINTER rows? | | | |
+| Is the cluster a replacement for the WORD row? | | | |
+
+### Ruling slots (stay empty)
+
+```
+I.  On a later arrival of a word already on L,
+    the section written is:  WORD / POINTER / both / [unspoken]
+
+II. To the machine, a word is:
+    the variable on the WORD row /
+    the defining cluster /
+    the variable, with the cluster as VIEW /
+    [unspoken]
+```
+
+Filling either slot from habit is a fail. Filling either slot as a when-law is a fail.
+
+---
+
+## 5. What execute may write
+
+- Product: `docs/graphics/prefix-device-pass-2.md` — filled sheets I and II, ruling slots blank.
+- Mark this plan EXECUTED.
+- One line on [`prefix-device-pass-1.md`](prefix-device-pass-1.md) pointing at the product.
 - Door pointer on [`README.md`](README.md).
-- Pointer line on [`prefix-device-pass-1.md`](prefix-device-pass-1.md).
 
-## 6. What execute did not do
+---
+
+## 6. What execute must not do
 
 - Pick a winner.
-- Demote WORD as a D type.
-- Write document-feed-as-POINTER-only as Φ.
+- Delete or demote WORD as a D type.
+- Write “document feed is POINTER-only” as Φ.
 - Edit `docs/pointer-emission.md`.
+- Treat session speech as SPOKEN-in-repo (it is not; it is session-SPOKEN on the sheet).
 - Start pass 3.
 
-## 8. Queued
+---
 
-Pass 3 only after a human in-repo sentence on I and/or II.
+## 7. Single execute act
+
+When the human says proceed (not this tick):
+
+1. Re-open D1 D2 D5, B4 B5 B6 B10, A2 A5 A11, C9 C10.
+2. Fill sheets I and II with HANDS / SPOKEN / KIN / `[GAP]` only.
+3. Leave ruling slots blank.
+4. Stop.
+
+**Success:** both collisions visible; WORD still a drawn type; G2 untouched.  
+**Failure:** “don’t save text” becomes Core; second PIE is explained away; cluster replaces D2; a when-rule sneaks in as “then write POINTER.”
+
+---
+
+## 8. Queued — not this pass
+
+| Later | Act |
+|---|---|
+| Pass 3 | Only after a human in-repo sentence on I and/or II: which emission Answer lines may be marked SPOKEN. Not invented here. |
+
+---
 
 ## 9. Governing check
 
