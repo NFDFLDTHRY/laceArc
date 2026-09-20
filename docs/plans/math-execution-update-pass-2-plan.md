@@ -1,6 +1,6 @@
 # Mathematical execution model — UPDATE campaign · Pass 2 of 6 PLAN
 
-**Status:** **`PLAN`** · not executed. **Station:** maps (HELD `Grok-maps` · BASE `b013337`).
+**Status:** **`EXECUTED`** 2026-09-20 · receipt [`math-execution-update-pass-1-drift.md`](math-execution-update-pass-1-drift.md) `P2-R`. **Station:** maps (`Grok-maps`).
 **Emission:** `[GAP]`. No `src/`. Not an emitter. Does not accept `pointer-emission.md`.
 **Depends on:** [`math-execution-update-pass-1-drift.md`](math-execution-update-pass-1-drift.md) EXECUTED — 12/12 kept. Governing MUST-NOT is **U6**: SPOKEN ≠ calculated.
 **Object:** [`docs/math-execution-model.md`](../math-execution-model.md).

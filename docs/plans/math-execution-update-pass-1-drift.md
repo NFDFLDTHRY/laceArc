@@ -60,3 +60,29 @@ Retie **labels only** on the model header and S4.2 / S8 question table:
 Pass 2 is a later ticket. This file does not start it.
 
 **Emission `[GAP]`. Shoe in hands.**
+
+---
+
+## `P2-R` — UPDATE pass 2 execute receipt
+
+**Ticket:** [`math-execution-update-pass-2-plan.md`](math-execution-update-pass-2-plan.md). **Object:** [`../math-execution-model.md`](../math-execution-model.md).
+
+| Drift | Acted? |
+|---|---|
+| U1 header / S0 / S4.2 #1 / S4.2 \(\Phi_{\mathrm{schedule}}\) / S7 / S8 | **yes** — OPEN → SPOKEN, not accepted, not calculated |
+| U2 S4.2 #0 | **yes** — SPOKEN + HANDS CONFLICT `0003` + CLOSED intern |
+| U3 | covered with U1 |
+| U4 S4.2 #3 | **yes** — leftover SPOKEN = B5 arrival order |
+| U5 S4.2 #5 | **yes** — SPOKEN Φ payment + HANDS CONFLICT `0003`+`0004` |
+| U6 | **held** — S4.3 sentence added: *a SPOKEN Q1 is not the missing schedule* |
+| U7 | **yes** — old pin kept; UPDATE pin `b013337` added |
+| U8 | **not this pass** (hygiene) |
+| U9 | **yes** — pass 7 cited as SPOKEN, not acceptance |
+| U10–U12 | **not this pass** / MUST-NOT held |
+
+**Residue (S2/S3 not in the allowed-locus list):** S2 L90-ish “Q1 still open”, S3.2 leftover OPEN, S3.3 “Q1 still OPEN” remain as dated copies. They are the same cells as U1/U4. Pass 3 may retie those restatements. They are not a second schedule.
+
+Arrive / Star / S4.1 / S4.3 equations / S5 / S6 untouched except the one S4.3 sentence.
+
+**Emission `[GAP]`. No `src/`.**
+
