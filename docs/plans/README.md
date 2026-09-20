@@ -4,7 +4,8 @@ Plans, proposals, executed pass records, and dated receipts share this shelf. Ea
 
 | File | Job |
 |---|---|
-| [tech-ref-eq-map-pass-3-plan.md](tech-ref-eq-map-pass-3-plan.md) | **`PLAN`** — technician-refs pass 3. Rowlands R1–R6 × equations. Rewrite ≠ Arrive. Φ `[GAP]` |
+| [tech-ref-eq-map-pass-3-rowlands.md](tech-ref-eq-map-pass-3-rowlands.md) | **EXECUTED** technician-refs pass 3. R1–R6 stamped. Rewrite ≠ Arrive. Φ `[GAP]` |
+| [tech-ref-eq-map-pass-3-plan.md](tech-ref-eq-map-pass-3-plan.md) | **`EXECUTED`** — pass 3 Rowlands × equations. Φ `[GAP]` |
 | [tech-ref-eq-map-pass-2-kauffman.md](tech-ref-eq-map-pass-2-kauffman.md) | **EXECUTED** technician-refs pass 2. K1–K9 stamped. Grab ≠ emission. Φ `[GAP]` |
 | [tech-ref-eq-map-pass-2-plan.md](tech-ref-eq-map-pass-2-plan.md) | **`EXECUTED`** — pass 2 Kauffman × equations. Φ `[GAP]` |
 | [tech-ref-eq-map-pass-1.md](tech-ref-eq-map-pass-1.md) | **EXECUTED** technician-refs × equations pass 1. Five cards. H-PTR unfilled. Hitch ≠ when. Φ `[GAP]` |

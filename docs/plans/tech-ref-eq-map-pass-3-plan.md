@@ -1,6 +1,6 @@
 # Technician references × mathematical model — Pass 3 of 6 PLAN
 
-**Status:** **`PLAN`** · not executed. **Station:** maps (HELD `Grok-maps` · BASE `9af0d94`).
+**Status:** **`EXECUTED`** 2026-09-20 · [`tech-ref-eq-map-pass-3-rowlands.md`](tech-ref-eq-map-pass-3-rowlands.md). **Station:** maps (`Grok-maps`).
 **Depends on:** pass 1 T2 card · pass 2 Kauffman EXECUTED.
 **Text:** Rowlands *Zero to Infinity*.
 **Cite-only:** reason-map §2 R1–R6 · rowlands clipboard · five-stakes page 2.
