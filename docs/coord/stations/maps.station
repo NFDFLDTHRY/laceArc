@@ -1,7 +1,7 @@
-STATUS: FREE
+STATUS: HELD
 STATION: maps
 OWNS: docs/reason-model-map.md docs/rust-nostd-*.md docs/atomic-primitives-map.md docs/clock/gearing-code-1to1.md docs/coherence-audit*.md docs/clock/system-mathematical-model.md docs/defrag-plan.md docs/plans/** docs/namespace-register.md docs/*.md (catch-all: any unmatched file at the docs/ root)
-AGENT: -
-BASE: -
-SINCE: -
-NOTE: seed-dictionary-map pass 4 EXECUTED (first-touch L4 shape · when free · emission [GAP]); pass 5 not opened
+AGENT: Grok-maps
+BASE: 11faa5037cad2b3b392f7472f919de566c4accb3
+SINCE: 2026-09-20T23:16:07Z
+NOTE: seed-dictionary-map pass 5 PLAN; pass 4 EXECUTED; execute not started; emission [GAP]
