@@ -4,7 +4,8 @@ Plans, proposals, executed pass records, and dated receipts share this shelf. Ea
 
 | File | Job |
 |---|---|
-| [model-behavior-map-pass-2-plan.md](model-behavior-map-pass-2-plan.md) | **`PLAN`** — model-behavior pass 2. Forced-legal and shape-legal traces. B-When free. Φ `[GAP]` |
+| [model-behavior-map-pass-2-legal.md](model-behavior-map-pass-2-legal.md) | **EXECUTED** model-behavior pass 2. L0–L5 legal classes. POINTER not forced. Φ `[GAP]` |
+| [model-behavior-map-pass-2-plan.md](model-behavior-map-pass-2-plan.md) | **`EXECUTED`** — pass 2 legal traces. Φ `[GAP]` |
 | [model-behavior-map-pass-1.md](model-behavior-map-pass-1.md) | **EXECUTED** model-behavior pass 1. 11 classes. B-When free. Φ `[GAP]` |
 | [model-behavior-map-pass-1-plan.md](model-behavior-map-pass-1-plan.md) | **`EXECUTED`** — pass 1 behavior register. Φ `[GAP]` |
 | [tech-ref-eq-map-pass-6-agentscope.md](tech-ref-eq-map-pass-6-agentscope.md) | **EXECUTED** technician-refs pass 6. A1–A5 + STOP. Campaign **CLOSED 6/6**. Φ `[GAP]` |

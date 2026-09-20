@@ -1,6 +1,6 @@
 # Model behaviors × equations — Pass 2 of 6 PLAN
 
-**Status:** **`PLAN`** · not executed. **Station:** maps (HELD `Grok-maps` · BASE `e97be41`).
+**Status:** **`EXECUTED`** 2026-09-20 · [`model-behavior-map-pass-2-legal.md`](model-behavior-map-pass-2-legal.md). **Station:** maps (`Grok-maps`).
 **Depends on:** [`model-behavior-map-pass-1.md`](model-behavior-map-pass-1.md).
 **Emission:** `[GAP]`. No `src/`. B-When stays free.
 
