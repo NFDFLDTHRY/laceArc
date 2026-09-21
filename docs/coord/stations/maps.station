@@ -1,7 +1,7 @@
-STATUS: FREE
+STATUS: HELD
 STATION: maps
 OWNS: docs/reason-model-map.md docs/rust-nostd-*.md docs/atomic-primitives-map.md docs/clock/gearing-code-1to1.md docs/coherence-audit*.md docs/clock/system-mathematical-model.md docs/defrag-plan.md docs/plans/** docs/namespace-register.md docs/*.md (catch-all: any unmatched file at the docs/ root)
-AGENT: -
-BASE: -
-SINCE: -
-NOTE: Astra-sampling SAMPLING / DENSITY / EMERGENCE Pass 1 PLAN committed at de1d61d34d2f9360656bc4b588087f03e673112d; plans index d21ad092c963808b4737405b600c5f8352e35aca. Pass 1 not executed. New campaign anchors H7-H9: no arbitrary relation choice; n+1 sampling over growing text discovers recurring structure; heat-map/star/N-D are derived observation/search views. Plan maps sample domain, n/recurrence/equality, observation-vs-retained-touch seam, higher-order root question, density measures, D1 falsifiers. No law edit. No src/Cargo. coord.sh NOT_RUN.
+AGENT: Astra-sampling
+BASE: a421792e8a597c3d1e4de0fa658040b55ff8d94b
+SINCE: 2026-09-21T01:43:00Z
+NOTE: User-directed SAMPLING / DENSITY / EMERGENCE Pass 1 replanning. Promote new rulings to starting invariants: WORD/POINTER rows persist on 1D Lace; sampling creates a derived 2D position-by-scale working array; pointers can relate structures across any n+1 level while retained POINTER rows remain on 1D. Revise plan only. No law edit. No src/Cargo. Connector claim; coord.sh NOT_RUN.
