@@ -560,9 +560,9 @@ The old broad “pointer emission remains unanswered” statement is superseded.
 
 ## Conceptual reference analysis — HCC-A
 
-HCC-A is a conceptual reference document describing a model of cognition, including perception, story, meaning, emotion, identity, and behavior. It is not required holder machinery. The same classification applies to The Coffee Cup and Where the Water Is Loud; see the [human correction of 2026-09-20](law-why-these-documents.md#conceptual-reference-documents).
+HCC-A is a **conceptual reference / behavioral-goal source** describing target behavior families around cognition, including perception, story, meaning, emotion, identity, and behavior. The same classification applies to The Coffee Cup and Where the Water Is Loud; see the [human correction and clarification](law-why-these-documents.md#conceptual-reference-documents). **The concrete mechanisms that realize those behaviors are not determined by these documents.** They are not required holder machinery and do not predeclare compiler/runtime components.
 
-The table retains comparisons from the earlier pipeline interpretation. Its holder, housing, and oil terms describe that reading of the concepts; they establish no runtime components or legal-append prerequisites. Independent Core exclusions still apply.
+The table retains comparisons from the earlier pipeline interpretation as correspondence probes and refusal fences. Its holder, housing, and oil terms describe that reading of the concepts; they establish no runtime components, mechanism obligations, or legal-append prerequisites. Independent Core exclusions still apply.
 
 | Found | Hands reading |
 |---|---|

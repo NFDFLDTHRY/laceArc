@@ -10,7 +10,7 @@ This file is **repo law**. Paste the ASCII block into Grok Bot as the explanatio
 
 **Human correction, 2026-09-20.** In the LaceAI conversation, replying to “HCC-A, Coffee Cup, and Water remain holder machinery,” the human said: “This is wrong and need to reconciled. They're conceptual reference documents.”
 
-HCC-A, The Coffee Cup, and Where the Water Is Loud / Dual Proofing Systems are **conceptual reference documents**. They provide ways to reason about cognition, causality, and communication. Their concepts and the repository's H/C/W diagrams do not establish required holder components, a runtime dependency, or conditions for a legal Lace append.
+HCC-A, The Coffee Cup, and Where the Water Is Loud / Dual Proofing Systems are **conceptual reference / behavioral-goal sources**. They describe target families of cognition, causality, communication, and behavior that the eventual machine should be able to realize. **They do not specify which concrete Lace, compiler, holder, or other mechanisms realize those behaviors.** Their concepts and the repository's H/C/W diagrams do not establish required holder components, a runtime dependency, or conditions for a legal Lace append.
 
 This supersedes the classification of those documents as “holder machinery,” a “gearbox required to operate upon the lace,” or a required second contract. Existing gear names, ratios, states, and diagrams remain recorded interpretations of concepts. That interpretation is not architectural authority. The correction leaves the graphics, independent Core constraints, and pointer-emission acceptance gate intact. [Reconciliation record](plans/conceptual-reference-reconciliation.md).
 
@@ -20,11 +20,11 @@ This supersedes the classification of those documents as “holder machinery,”
 
 > *"To state the problem this repo solution space for is can we build a mind inside a compiler."*
 
-**Three layers, ruled.** **Materials** — the five academic documents and the toolchain/web specifications. **Substrate** — Lace: `docs/graphics/`, then `docs/systems-manifest.md`. **Machine** — HCC-A, with The Coffee Cup and Where the Water Is Loud as parts of it.
+**Three layers, reconciled.** **Materials** — the five academic documents and the toolchain/web specifications. **Substrate** — Lace: `docs/graphics/`, then `docs/systems-manifest.md`. **Behavioral target** — HCC-A, The Coffee Cup, and Where the Water Is Loud as conceptual reference / behavioral-goal sources. **Implementation machine** — **OPEN**: the mechanisms and component decomposition that realize those behaviors against or through the Lace substrate are not yet determined. The earlier “parts of it” wording identifies the intended behavioral envelope; it does not predeclare runtime parts.
 
 **What this changes.** The 2026-09-20 correction answered the claim that these three documents *"remain holder machinery"* — a gearbox **required to operate upon** the Lace, a required second contract. That answer stands: **they are not a constraint on the substrate.** They add no Core row type, impose no runtime dependency, and set no condition for a legal append.
 
-**What it does not license.** Reading *"not a constraint on the substrate"* as *"establishes nothing"* is a category error. **HCC-A is the client of the substrate, not a constraint on it** — a compiler does not constrain the memory model it targets. The classification of the three documents and of `docs/clock/train-h-c-w-systems-manifest.md` as *illustration* or *interpretive notation* is superseded to this extent: **their concepts are architecture under construction, and correspondences between them and the graphics are `[PROPOSAL]`, not breaches.**
+**What it does not license.** Reading *"not a constraint on the substrate"* as *"establishes nothing"* is a category error. The eventual compiler/machine may operate against or through Lace, but **the reference texts establish behavioral targets, not the mechanisms that satisfy them**. The classification of the three documents and of `docs/clock/train-h-c-w-systems-manifest.md` as *mere illustration* is superseded to this extent: **their behavioral goals are architectural targets under construction, while correspondences between those goals and concrete Lace/compiler machinery remain `[PROPOSAL]` until separately established.**
 
 **Fences that are not affected.** Every refusal that keeps *meaning* out of the store stands unchanged and is the experimental control of the stated problem: no second store, no stored meaning, no collapse, no merge, no deletion, `FORBID-as-Lace-store`, `FORBID-as-Core`. A fence protecting the thesis is not the same object as a fence between the machine and its target, and only the second kind is lifted here.
 
@@ -32,9 +32,9 @@ This supersedes the classification of those documents as “holder machinery,”
 
 - **INVALID** is **historically proven wrong** — an outcome reached through later evidence, not a format verdict at the door. **There is no table of invalid phrases or words.** The earlier reading (*"not wrong; meaningless until converted"*) is superseded.
 - **UNK** is **a predicted evidence shape that the system must wait for the future to fill with evidence** — *"an unknown shape of what is required to resolve the unknown flag."* It does not block. The earlier reading (*"unresolved UNK blocks coherent comprehension"*), and the recorded failure mode *"UNK as a waiting row on the tape,"* are superseded: **a row that waits is what an UNK is.**
-- **Compression is losing the evidence chain.** A derived structure is permitted when it can be discarded and rebuilt from the strand alone; one that cannot holds evidence the strand does not, and is a second store. **A state machine of the kind HCC-A describes fits as the ISL layer** — its state is re-derivable by replay, so the chain is intact.
+- **Compression is losing the evidence chain.** A derived structure is permitted when it can be discarded and rebuilt from the strand alone; one that cannot holds evidence the strand does not, and is a second store. **A replay-derivable state machine of the kind discussed around HCC-A is an admissible `[PROPOSAL]`, not an established ISL implementation.** Replay preserves the evidence-chain criterion; it does not decide which mechanism ultimately realizes the behavioral goal.
 
-**Source identity, staked 2026-09-21.** The three machine texts are held at `refs/local/`, gitignored, never committed. Their git blob SHAs match the identities recorded in [`plans`-adjacent history](history/history-recovered-pass-5-2026-09-18.md) byte for byte:
+**Source identity, staked 2026-09-21.** The three behavioral-goal source texts are held at `refs/local/`, gitignored, never committed. Their git blob SHAs match the identities recorded in [`plans`-adjacent history](history/history-recovered-pass-5-2026-09-18.md) byte for byte:
 
 | Text | Bytes | Lines | Git blob | SHA-256 |
 |---|---|---|---|---|
@@ -42,13 +42,13 @@ This supersedes the classification of those documents as “holder machinery,”
 | `the-coffee-cup.txt` | 7,623 | 189 | `e22c06ce2f808efca0ee0c17f57dc0f7e3dbef06` | `7bc4fd8d…2cd4` |
 | `where-the-water-is-loud.txt` | 19,862 | 502 | `0812654cf8d1609a7d24b29fdb2f9deb64b5647f` | `9b7eddd5…ff65` |
 
-Until this date the four `docs/clock/` manifests carried no source identity at all — *"attachment. Not in git."* Every reading of the machine was a reading of a remembered compression. **Claims about these texts now cite lines.**
+Until this date the four `docs/clock/` manifests carried no source identity at all — *"attachment. Not in git."* Every reading of those behavioral goals was a reading of a remembered compression. **Claims about these texts now cite lines.**
 
-**Unchanged by all of the above.** `src/` remains forbidden. `docs/pointer-emission.md` remains unaccepted. Arbitrary relation/sample selection remains `[GAP]`. **This ruling opens no gate.**
+**Unchanged by all of the above.** `src/` remains forbidden. `docs/pointer-emission.md` remains unaccepted. **Exact sampling-derived retention/materialization remains `[GAP]`; the arbitrary semantic-chooser framing is historical.** **This ruling opens no gate.**
 
 Source of record remains `docs/graphics/`.
 The five academic documents remain adjacent. They do not enter Core.
-HCC-A, Coffee Cup, and Water/Proofing are conceptual reference documents. They do not define additional Core row types or required holder machinery.
+HCC-A, Coffee Cup, and Water/Proofing are conceptual reference / behavioral-goal sources. They do not define additional Core row types, required holder machinery, or the concrete mechanisms that realize their target behaviors.
 History extracts do not amend this law and do not revive walkers.
 See `docs/reason-model-map.md`, `docs/clock/philosophy-map.md`, `docs/history/history-recovered-2026-09-18.md`, `docs/history/history-recovered-pass-2-2026-09-18.md`, `docs/history/history-recovered-pass-3-2026-09-18.md`, `docs/history/history-recovered-pass-4-2026-09-18.md`, `docs/history/history-recovered-pass-5-2026-09-18.md`, `docs/history/history-recovered-pass-5-sit.md`.
 Implementation remains forbidden until `docs/pointer-emission.md` exists.
