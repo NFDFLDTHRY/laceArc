@@ -1,6 +1,6 @@
 # Mathematical execution model — ROOT / TOUCH / FOLD Pass 6 findings
 
-**Status:** PHASE A EXECUTED 2026-09-21. **Station:** maps (Astra-selection).
+**Status:** **EXECUTED — PASS 6 COMPLETE** 2026-09-21. **Stations:** maps → law → maps.
 **Plan:** [math-execution-root-touch-fold-pass-6-plan.md](math-execution-root-touch-fold-pass-6-plan.md).
 **Execute base:** 5868c5149744c28da8384d61ff321225ada991d3.
 **Gate-question input:** gate-question-surface Pass-1 census at a2796948118d91753f45c68a00a73ff7d5cdb4cf.
@@ -800,3 +800,196 @@ The array shows six relations. It does not thereby show six decisions.
 RootTouch has a ruled origin. The other five have visible operands and invisible provenance.
 
 The shoe can prove the knot exists without telling us who put those two pieces together.
+
+
+---
+
+## 16. Phase B — law provenance reconciliation
+
+Phase A was committed before law work:
+- findings: **266c6388388f7672ae3dadcf48d2dc17a89979d6**
+- maps release: **5ce84af5739218647761e26c552592dde07876b0**
+
+Preconditions passed:
+- gate-question Pass-1 plan/census unchanged;
+- law station FREE;
+- pointer-emission and manifest blobs unchanged from planning read.
+
+Law work:
+- law claim: **c7a403265a5b2f4be69ca97afd75438ace4f53ae**
+- pointer-emission provenance reclassification: **c4a399bd537393888a87acbf533ec932e0f69dca**
+- systems-manifest provenance reclassification: **491421f93bf8336108e5ca3831154d544759d99b**
+- one stale manifest current-label sweep: **2ec1174e8903bea7b459361ee23b624eb87430a1**
+- law release: **a61a3913106debb42c74e690f79ef2e6b6f15726**
+
+### Law change
+
+Old current shorthand:
+
+\[
+\text{arbitrary relation/sample selection}=[GAP].
+\]
+
+Current law after Pass 6:
+
+\[
+\boxed{
+\operatorname{Origin}(\rho)=[GAP]
+}
+\]
+
+where \(\rho\) is an already-specified arbitrary non-root ordered relation/sample.
+
+The law now says:
+- Join does not originate its own relation;
+- RootTouch provenance is ruled by H1;
+- automatic Core chooser is not established;
+- external assertion/write interface is not established;
+- hidden Contract-II relation payload is refused;
+- route/document boundaries are not provenance metadata;
+- constructor mechanics are unchanged;
+- acceptance remains absent.
+
+No GAP was closed. The GAP was reclassified.
+
+---
+
+## 17. Phase C — model/status closeout
+
+Maps reclaimed at:
+**311c86cc640782d2d9ce41f2f1fce65ca0909c67**
+
+Mathematical-model status refresh:
+**57908a7779226dac72b3677837266e2acdc3d3a9**
+
+No equations or proofs changed. Pass-3 construction theorems remain intact. Only the current residual wording changed from "selection/scheduler input" to relation-assertion provenance/authority.
+
+Deferred propagation docket:
+[math-execution-root-touch-fold-pass-6-propagation-docket.md](math-execution-root-touch-fold-pass-6-propagation-docket.md)
+
+Commit:
+**0bc86bd800732bc6fce8f07447b6d28ce1a43d9d**
+
+No global ASCII / graphics / control-surface propagation was executed in Pass 6.
+
+---
+
+## 18. Final tracked-tree check
+
+At closeout tip **0bc86bd800732bc6fce8f07447b6d28ce1a43d9d**:
+
+- tracked paths: **691**
+- recursive Git tree truncated: **NO**
+- src/ paths: **0**
+- Cargo.toml paths: **0**
+- .rs files: **0**
+
+No implementation artifact was created.
+
+---
+
+## 19. Final Pass-6 verdict
+
+\[
+\boxed{\textbf{V-C — ASSERTION-PROVENANCE GAP}}
+\]
+
+Current Core mechanics are:
+
+\[
+\rho \rightarrow \mathsf{Join}/\mathsf{Ground}.
+\]
+
+The unresolved thing is:
+
+\[
+\boxed{
+\operatorname{Origin}(\rho)
+}
+\]
+
+not a proven missing function:
+
+\[
+Select(L,v).
+\]
+
+### What Pass 6 established
+
+- D1 has one provenance-closed relation: RootTouch.
+- Five other D1 relation origins remain OPEN.
+- D1 shows operand pairs but does not explain their origin.
+- selected-sample n+1 is construction capability, not a provenance rule.
+- mandatory whole-prefix grounding after every arrival is refuted as universal.
+- one persistent active-sample ladder is refuted as a complete rule.
+- automatic materialization of all finite portions is refuted as an obligation.
+- branched local grounding is legal but does not choose branches.
+- automatic Core chooser is **not established**.
+- external assertion interface is **not established**.
+- relation assertion / ordered operands remain constructor preconditions.
+- the remaining question is provenance / authority / ownership.
+
+### What remains open
+
+Primary:
+- arbitrary non-root relation-assertion provenance / authority / ownership.
+
+Independent neighboring questions remain separate:
+- G1/tokenization;
+- operand semantic ordering;
+- concurrency;
+- eventual reference;
+- route-family labels;
+- document/conversation/provenance boundaries;
+- read/query/traversal;
+- projection remainder;
+- multi-Lace/snapshot/export.
+
+The gate-question-surface campaign remains the owner of its operand-ordering/closure-authority work.
+
+### Acceptance / implementation
+
+- pointer-emission.md: reconciled, **not human-accepted**
+- no selector API/interface added
+- no branch ownership assigned
+- no src/
+- no Cargo
+- no Rust source
+- no implementation authorization
+
+---
+
+## 20. Final proof board
+
+| ID | Result |
+|---|---|
+| P6-1 all six D1 POINTER rows have provenance dispositions | **PASS** |
+| P6-2 RootTouch used as closed control | **PASS** |
+| P6-3 construction separated from provenance | **PASS** |
+| P6-4 whole-prefix-per-arrival traced exactly | **PASS** |
+| P6-5 one-active-sample tested against branching | **PASS** |
+| P6-6 all-portions-auto attacked | **PASS** |
+| P6-7 capability vs obligation explicit | **PASS** |
+| P6-8 one-operator wording confronted | **PASS** |
+| P6-9 Contract II hidden relation payload refused | **PASS** |
+| P6-10 Layer III remains read-only | **PASS** |
+| P6-11 route/document boundaries not used as provenance metadata | **PASS** |
+| P6-12 operand semantic ordering kept separate | **PASS** |
+| P6-13 closure authority stamped P/R/I/HIST/OPEN/CONFLICT | **PASS** |
+| P6-14 one V-A…V-F verdict produced | **PASS: V-C** |
+| P6-15 no selector/interface/API invented | **PASS** |
+| P6-16 acceptance/no-src/Cargo/Rust proof gates intact | **PASS** |
+
+**Board: 16 / 16 PASS.**
+
+## Steward verdict
+
+Pass 6 does not answer who ties the arbitrary relation.
+
+It proves that the current record does not justify pretending there is a missing automatic chooser.
+
+The open problem is now pointable:
+
+> **Who or what has authority to originate the relation assertion whose ordered operands Core can already write?**
+
+No Pass 7 is opened automatically.
