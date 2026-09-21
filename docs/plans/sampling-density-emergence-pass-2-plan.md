@@ -1,6 +1,6 @@
 # SAMPLING / DENSITY / EMERGENCE campaign — Pass 2 PLAN
 
-**Status:** PLAN — NOT EXECUTED.
+**Status:** **EXECUTED 2026-09-21 — PASS 2 COMPLETE.**
 **Name:** MINIMAL 2D LATTICE / ADDRESSABILITY WITNESS
 **Planning station:** maps (Astra-sampling).
 **Pinned main before claim:** 47ec7704d06df3ad58dc2376466dd83f513aab55.
@@ -1030,3 +1030,117 @@ Do not decide which square gets a knot yet.
 For every sample on the 2D sheet, know exactly what words it covers, whether it has appeared before, and whether Lace already contains a point that can stand for it.
 
 Then compare that sheet to the POINTERs the 1D Lace actually kept.
+
+
+---
+
+## 25. Execution receipt
+
+Pass 2 executed under maps with a human-directed scale amendment.
+
+Execution claim:
+**ec389daca3ff9cb21c70f13b3d44d9e974d2724e**
+
+Findings:
+**d6062a252d4bd652d73885c6dacd3f780490c4e3**
+
+### Scale amendment
+
+The planned D1 + APPLES experiment was extended to the user-provided prose corpus The Coffee Cup:
+
+- first two form-feed pages: 375 bounded-analysis tokens;
+- full text: 1,219 bounded-analysis tokens.
+
+The conceptual content of that reference was not imported into Lace law. It was used only as a real-prose sampling specimen.
+
+### Main result
+
+The minimal nonsemantic contiguous 2D lattice survives:
+
+\[
+S[n,t]=(r_{t-n+1},\ldots,r_t).
+\]
+
+Direct windows, endpoint n+1 extension, and overlap-merge recurrence agree.
+
+The larger corpus reveals what the toy specimens did not:
+
+\[
+\boxed{
+\text{recurrence forms nested multi-scale ridges over the 2D position×scale surface}
+}
+\]
+
+rather than isolated hot cells.
+
+The full 1,219-word specimen induces:
+
+\[
+743{,}590
+\]
+
+conceptual contiguous sample cells.
+
+Exact recurrence becomes increasingly sparse as n grows:
+- broad at n=1;
+- much thinner at n=2…5;
+- only two recurrent classes at n=6;
+- none at n=7.
+
+This creates a structural, nonsemantic scale filter.
+
+### D1 result
+
+D1 confirms the retained POINTER map is not identical to the contiguous sample lattice.
+
+Retained rows separate into:
+- exact contiguous-cell covers;
+- root-touch noncontiguous cross-links;
+- POINTER-on-POINTER relational superstructure;
+- whole-span covers whose topology is not canonical.
+
+Seven of fifteen D1 lattice cells have no exact-cover retained point.
+
+Therefore 2D sample existence does not require 1D materialization.
+
+Exact recurrence is not the retention rule:
+- 0002 and 0006 are retained although their n=2 cells had no prior exact recurrence.
+
+The rule “materialize the cheapest available contiguous sample” also fails:
+- a one-Join n=4 contiguous cover was available at t=3;
+- D1 instead retained 0007, a different relational branch.
+
+### Primary residuals
+
+\[
+\boxed{
+\text{what structural condition causes retention from 2D into the 1D POINTER map?}
+}
+\]
+
+and:
+
+\[
+\boxed{
+\text{if an ephemeral 2D sample must become a POINTER operand, how is it grounded/addressed?}
+}
+\]
+
+remain open.
+
+### Proof board
+
+20/20 PASS.
+
+### Scope preserved
+
+- no retention threshold invented;
+- no law edit;
+- no pointer n field;
+- no sentence/document boundary row;
+- no src/;
+- no Cargo;
+- no Rust;
+- no Pass 3 auto-opened.
+
+STOP after final verification and maps release.
