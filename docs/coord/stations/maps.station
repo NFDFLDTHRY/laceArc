@@ -1,7 +1,7 @@
-STATUS: HELD
+STATUS: FREE
 STATION: maps
 OWNS: docs/reason-model-map.md docs/rust-nostd-*.md docs/atomic-primitives-map.md docs/clock/gearing-code-1to1.md docs/coherence-audit*.md docs/clock/system-mathematical-model.md docs/defrag-plan.md docs/plans/** docs/namespace-register.md docs/*.md (catch-all: any unmatched file at the docs/ root)
-AGENT: Astra-convergence
-BASE: e7650843520666f10414daaa05665852d6afc120
-SINCE: 2026-09-21T19:50:00Z
-NOTE: Final Pass 6 closure after F6-2 manifest correction. Re-pin global systems ASCII as FINAL non-receipt content edit, then read-only sweeps, findings/index, tree/station verification, release. No further semantic/model/control edits unless a falsifier fires. coord.sh NOT_RUN.
+AGENT: -
+BASE: -
+SINCE: -
+NOTE: Astra-convergence hold released after human clarification. No maps/global-ASCII content was edited under this hold. Lab framing correction belongs in live law before any further campaign convergence. coord.sh NOT_RUN.
