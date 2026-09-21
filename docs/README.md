@@ -18,7 +18,7 @@ The four graphics define the project. Everything else on this page is derived fr
 
 | File | Status |
 |---|---|
-| [pointer-emission.md](pointer-emission.md) | **DRAFT, not accepted.** Contains grounded constraints, unresolved answers and disputed campaign stamps; the [update-pass custody record](plans/repo-update-pass-1-evidence.md) keeps these separate. No invented emission |
+| [pointer-emission.md](pointer-emission.md) | **Reconciled DRAFT, not accepted.** Current LAND/root/RootTouch/binary Join/finite-sample mechanics are recorded; arbitrary non-root-touch relation/sample selection remains `[GAP]`. Historical campaign answers remain preserved below the current reconciliation |
 
 ## Law
 
@@ -38,7 +38,7 @@ Derived from the Hands. Proposals and readings, never a second source.
 | [atomic-primitives-map.md](atomic-primitives-map.md) | `[PROPOSAL]` P0–P4 and K1–K6: the smallest source-supported obligations, and the G1–G7 gaps |
 | [namespace-register.md](namespace-register.md) | Qualified identifier families: distinguish graphic panels, gears, audit stations, rulings and model notation by their defining source |
 | [systems-manifest-ascii.md](systems-manifest-ascii.md) | Manifest companion with dated passes and current qualifications; a derived view, never a replacement source |
-| [math-execution-model.md](math-execution-model.md) | Partial algebra reading, with occurrence-membership scope and emission left open |
+| [math-execution-model.md](math-execution-model.md) | Current mathematical construction: WORD/root/RootTouch, binary Join, finite-sample and whole-prefix grounding proofs; arbitrary relation/sample selection remains open |
 | [math-execution-model-pass-3-witness.md](math-execution-model-pass-3-witness.md) | Graphic D row witness; reproducing a specimen does not select a schedule |
 | [math-execution-model-pass-4-adversarial.md](math-execution-model-pass-4-adversarial.md) | Adversarial reading of the partial model |
 | [math-execution-model-pass-5-projections.md](math-execution-model-pass-5-projections.md) | Contract III projection readings, under governing sources |
@@ -70,4 +70,4 @@ Derived from the Hands. Proposals and readings, never a second source.
 
 Everything else lives on a shelf with its own door: [clock/](clock/README.md) · [clipboards/](clipboards/README.md) · [coord/](coord/README.md) · [gearing/](gearing/README.md) · [history/](history/README.md) · [hologram/](hologram/README.md) · [kit/](kit/README.md) · [plans/](plans/README.md) · [prompts/](prompts/README.md)
 
-POINTER emission stays `[GAP]`. There is no `src/`.
+POINTER construction is reconciled in the unaccepted draft law. **Arbitrary non-root-touch relation/sample selection remains `[GAP]`.** There is no `src/`; reconciliation does not open the implementation gate.
