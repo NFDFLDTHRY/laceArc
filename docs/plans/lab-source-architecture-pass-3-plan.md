@@ -1,6 +1,6 @@
 # LAB SOURCE ARCHITECTURE — Pass 3 PLAN · a harness that can hold time, state and weight
 
-**Status:** **`PLAN`** · not executed. **Station:** maps (`Claude-Projection` · BASE `a81a8f6`).
+**Status:** **`EXECUTED`** 2026-09-21 → [findings](lab-source-architecture-pass-3-findings.md). **`F2` fired and the harness was the thing it caught** — the first replay check passed the deliberate cheat, because it compared two instances reading the same smuggled store. Repaired with determinism + prefix purity; now catches it at `0000`. **`F3` fired partly**: two of four retention mechanisms remain unstateable, **for source silence rather than harness narrowness**. **`F1` and `F4` did not fire.** **Station:** maps (`Claude-Projection` · BASE `a81a8f6`).
 **Campaign:** Lab Source Architecture. **Pass:** 3.
 **Implementation:** none. No `src/`, no Cargo, no runtime gate, no Core code. **This pass extends a Layer III instrument; it builds nothing that could be mistaken for Core.**
 **Acceptance:** unchanged. The Core-adjacent `[GAP]` is **exact sampling-derived retention / materialization**.
