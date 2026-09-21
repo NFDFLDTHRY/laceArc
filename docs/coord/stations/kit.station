@@ -1,7 +1,7 @@
-STATUS: FREE
+STATUS: HELD
 STATION: kit
 OWNS: docs/kit/** .claude/**
-AGENT: -
-BASE: -
-SINCE: -
-NOTE: Lab Source Architecture Pass 1 kit inspection COMPLETE. One live agent-control selector-era line corrected to retention/materialization. Historical transport law block and dated audit history untouched.
+AGENT: Astra-manifest-reconcile-p2
+BASE: c9d5d7320adb80ed647f6265ca5fffc216bd8eb2
+SINCE: 2026-09-21T22:28:27.292Z
+NOTE: Manifest Reconciliation Pass 2 kit wave: remove stale current selector-era framing from agent-control and READ_ME_FIRST; preserve verbatim historical law/dated evidence.
