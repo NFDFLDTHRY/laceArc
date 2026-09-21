@@ -2,9 +2,9 @@
 
 Repo description: *Put a shoe lace in your hands or get out of here.*
 
-That sentence is the test, not branding. Source of record remains `docs/graphics/` and `docs/systems-manifest.md`. This file only says how five adjacent documents sit on the physical object those graphics already describe.
+That sentence is the test, not branding. Source of record for the Lace substrate remains `docs/graphics/` and `docs/systems-manifest.md`. This file maps the five research/book sources against that physical object; it does **not** exhaust the repository's distributed clipboard system.
 
-Core pieces named below are the pieces in `docs/systems-manifest.md` (Pieces 1–15). Adjacent texts do not add a Core piece.
+Core pieces named below are the pieces in `docs/systems-manifest.md` (Pieces 1–15). Research texts do not add a Core piece by citation. Their source-described machinery can still enter the **laceArc lab as candidate machinery** for propose → attack → reproduce → test → falsify/retain.
 
 **N = 3.** Three mapping passes. No pass 4 unless a new document arrives.
 
@@ -14,7 +14,9 @@ Core pieces named below are the pieces in `docs/systems-manifest.md` (Pieces 1�
 | 2 | High-risk lookalikes: Kauffman hitches / slide / virtual; Rowlands §20 DNA / UG |
 | 3 | Leftovers that pass 2 only type-classified: Xiao ch. 5 inference; Petersen NTK; AgentScope remainder (22-page paper, no hidden appendix piece) |
 
-**Mapping status:** 3/3. Complete. **Current-law qualification, SAMPLING / DENSITY / EMERGENCE Pass 6:** the adjacent books still do not supply Lace's sampler or retention machinery. Current human rulings separately settle WORD landing, root/RootTouch, binary Join, one authoritative 1D Lace, derived 2D sampling, and read-only star/search. The remaining Core-adjacent [GAP] is exact sampling-derived retention/materialization. This map must not be read as reopening the constructor or sampler.
+**Mapping status:** 3/3. Complete. **Current-law qualification, SAMPLING / DENSITY / EMERGENCE Pass 6:** the research books still do not supply Lace's sampler or retention/materialization rule. That negative source finding does **not** make their other machinery irrelevant to the lab. Current human rulings separately settle WORD landing, root/RootTouch, binary Join, one authoritative 1D Lace, derived 2D sampling, and read-only star/search. The remaining Core-adjacent [GAP] is exact sampling-derived retention/materialization. This map must not be read as reopening the constructor or sampler.
+
+**Lab Source Architecture Pass 1 qualification:** “adjacent” and “not Core” are authority fences. They mean a book cannot become a Lace operator merely because it resembles the shoe. They do not mean *do not test the mechanism*. Kauffman, Rowlands, Xiao–Zhu, Petersen–Zech, and AgentScope machinery may be carried through their clipboards as candidate laboratory systems, provided the source fact, proposed correspondence, falsifier, and evidence state remain distinct. Behavioral-goal clipboards live under `docs/clock/`; platform/toolchain clipboards live under `docs/clipboards/`.
 
 **Source-attribution correction, 2026-09-20 (update pass 1, U16):** Targeted sightings of Kauffman printed pp.16–17 / PDF pp.35–36 (Figure 8) and printed p.323 / PDF p.342, plus Xiao–Zhu printed p.2 / PDF p.9 (Equation 1.1) and printed p.38 / PDF p.45 (§2.1.1), correct the diagram-equivalence, hitch-inequality and token-occurrence characterizations below. These corrections retain the existing prohibitions on replacing Lace history; they add no Core operator, tokenizer or emission rule. The original three-pass mapping remains its own completed campaign.
 
@@ -51,7 +53,7 @@ Graphic D writes the hands as a line. Graphics A–C are the same cord when you 
 | Mark | Meaning |
 |---|---|
 | **kin** | The physical lace already contains the fact. The text names it. |
-| **adjacent** | Useful for a reader or steward. Not a Core operator. |
+| **adjacent** | Source evidence outside Core authority. May supply candidate laboratory machinery; not a Core operator by citation. |
 | **conflict** | Importing the text as a write would take the lace out of the hands. |
 | **off-shoe** | No contact with cord, eyelet, over/under, or arrival. |
 | **[GAP]** | Lace source is silent. Adjacent text does not close the silence. |
