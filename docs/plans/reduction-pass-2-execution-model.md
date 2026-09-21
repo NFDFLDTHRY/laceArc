@@ -1,6 +1,6 @@
 # The reduction — pass 2: the mathematical model of execution
 
-**Status:** [PROPOSAL] dated whole-app model. **Not src/.** **Station:** maps. **Original pass status:** broad emission [GAP]. **Current qualification:** LAND/root/RootTouch/binary Join/finite-sample grounding are reconciled in draft law; arbitrary relation/sample selection remains [GAP]. See the Pass-5 qualification appended below.
+**Status:** [PROPOSAL] dated whole-app model. **Not src/.** **Station:** maps. **Original pass status:** broad emission [GAP]. **Current qualification (Sampling Pass 6):** LAND/root/RootTouch/binary Join plus the human-ruled derived sampling/search architecture are reconciled in draft law; exact sampling-derived retention/materialization remains [GAP]. See the later qualification appended below.
 **Plan:** [reduction-pass-2-plan.md](reduction-pass-2-plan.md). **Extends, does not edit:** the sealed [algebra](../math-execution-model.md) S1–S6 (Core growth) and the [environment](lace-context-iter6-pass-4-environment.md) E1–E7 (σ typed and fenced). **Models:** the whole deliverable — hopper, Core, carrier, views, reload — as one state machine.
 **Source roles:** Graphics A–D are the source of record; the manifest is derived from them. AGENTS and live law govern permitted work. The algebra, environment, [shape](lace-context-iter6-pass-5-crate-proposal.md), and [compute model](lace-context-iter7-pass-2-compute-and-inventory.md) are this proposal's derivation dependencies, not additional source authority or acceptance. Disagreement with them is an obligation to reconcile, not permission to change a governing source.
 
@@ -232,7 +232,7 @@ For selected finite sample \(S\), repeated Join supplies the n+1 grounding const
 
 ### What remains unresolved
 
-The whole-app model still does not state where an **arbitrary non-root-touch relation/sample selection** originates.
+The whole-app model still does not state the exact **sampling-derived retention/materialization** condition.
 
 Do not silently transform hopper \(h\) from:
 
@@ -248,7 +248,7 @@ Do not change:
 \Sigma=(L,h,K)
 \]
 
-by adding \(S\), a selector, or a Ground command merely to hide this gap.
+by adding a hidden retention selector, semantic chooser, or Ground command merely to hide this gap.
 
 The legal boundary is:
 
@@ -271,7 +271,7 @@ For current reading:
 - seen RootTouch is fixed;
 - binary Join is fixed;
 - finite-sample grounding is fixed;
-- arbitrary relation/sample selection is the residual free input/obligation.
+- exact sampling-derived retention/materialization is the residual obligation; sampling discovery itself is current.
 
 This qualification does **not** assert a new function type for Select, does not assign it to route/, core/, the shell, hopper \(h\), Layer III, or Contract II, and does not alter capacity, persistence, memory ordering, or OPEN behavior.
 
