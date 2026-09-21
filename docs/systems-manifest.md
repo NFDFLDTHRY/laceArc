@@ -529,7 +529,7 @@ The old broad “pointer emission remains unanswered” statement is superseded.
 - N-D remains projection-only.
 
 **Still open:**
-- arbitrary non-root-touch relation/sample selection;
+- arbitrary non-root relation-assertion provenance / authority;
 - G1/tokenization;
 - the other independent questions above.
 
