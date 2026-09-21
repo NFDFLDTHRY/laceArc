@@ -560,9 +560,9 @@ The old broad “pointer emission remains unanswered” statement is superseded.
 
 ## Conceptual reference analysis — HCC-A
 
-HCC-A is a **conceptual reference / behavioral-goal source** describing target behavior families around cognition, including perception, story, meaning, emotion, identity, and behavior. The same classification applies to The Coffee Cup and Where the Water Is Loud; see the [human correction and clarification](law-why-these-documents.md#conceptual-reference-documents). **The concrete mechanisms that realize those behaviors are not determined by these documents.** They are not required holder machinery and do not predeclare compiler/runtime components.
+HCC-A is a **conceptual reference / behavioral-goal source** describing target behavior families around cognition, including perception, story, meaning, emotion, identity, and behavior. The same classification applies to The Coffee Cup and Where the Water Is Loud; see the [human correction and clarification](law-why-these-documents.md#conceptual-reference-documents). **laceArc is the lab that explores which systems are required for Lace to function as described by those goals.** The concrete enabling mechanisms are therefore experimental unknowns: the goal documents do not predeclare holder machinery, compiler/runtime components, or Core structure.
 
-The table retains comparisons from the earlier pipeline interpretation as correspondence probes and refusal fences. Its holder, housing, and oil terms describe that reading of the concepts; they establish no runtime components, mechanism obligations, or legal-append prerequisites. Independent Core exclusions still apply.
+The table retains comparisons from the earlier pipeline interpretation as **candidate-system probes and refusal fences**. Holder, housing, oil, state-machine, and other correspondences may be tested by the lab; none becomes required machinery without surviving evidence and the repository's authority/acceptance rules. Independent Core exclusions still apply.
 
 | Found | Hands reading |
 |---|---|
