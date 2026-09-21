@@ -599,3 +599,60 @@ Books in hand this session, SHA-verified, **not** committed: rustc `4a30e620…4
 **Overall verdict: DIAGRAM SOUND WITH OPENS** — the eighteen fences, held against the books, add no claim the books and the shelf do not already make. What they added was composition; the composition is now stamped. The drawing is open where the project is unrun and where the extract does not reach. Emission `[GAP]`.
 
 **Steward test:** shoe in hands — refuse rustc-as-Core, `--print` as Φ, wasm64 memory as L, `build-std` as a first-party branch, a receipt as a proof, a Tier 3 page as an artifact. Pass 6 does not fill pointer-emission.
+
+---
+
+## Pass 6 — independent replication · `P6-REP`
+
+**2026-09-21 · station `clipboards` · replicator `Claude-Projection` · object [`rust-target-pass-6-plan.md`](rust-target-pass-6-plan.md).**
+
+**Two agents executed this plan independently, neither aware of the other.** `Grok-clipboards` executed and pushed it; this session executed the same plan against the same two SHA-verified books and collided on push. **[Its pass 6](#pass-6--deep-diagram-audit--executed) stands as the executed pass and is not edited here.** This section records only what a second, independent run adds — which is the one thing the campaign has never had. [The roles table](../kit/roles.md) says independence is *"the only independence the environment knows"*; it arrived by accident.
+
+### Where the two runs agreed
+
+| | Both runs |
+|---|---|
+| **`F1`** | **fired.** The spine's arrows cite nothing, the rustc book has no end-to-end account of a build, and the composition was unstamped. Both fixed it with a stamp and refused to redraw |
+| **`F4`** on *"i64-addressed"* | **fired.** Both found the same line, both traced it to the wasm spec rather than Page A, both replaced it with the book's *"64-bit memories"* (30620) and both left `i64` only on `G9` |
+| **`F3`** in the fences | **did not fire** |
+| **NOT FOUND** | **0**, on independent counts |
+| **`P6-O`** | count = 1 |
+| **Moved** | nothing — no `[GAP]`, no ruling, no build |
+
+**Two auditors, 208 lines each, no contact: same structural finding, same vocabulary defect, same zero.** That is worth more than either run alone.
+
+### Where they disagreed — and where this run was wrong
+
+| | `Grok-clipboards` | this run | Resolved |
+|---|---|---|---|
+| **`F2` on `P-R6`** | **fired.** The fence said *"abort is forced, not chosen. (30649)"*; line 30649 says *"This target does not support panic=unwind at this time."* The citation pointed at the book for a sentence the book does not contain | **did not fire.** This run classified the line `SHELF`, on the grounds that *"forced, not chosen"* is the clipboard's own `E5` gloss | **Grok is right and this run was too generous.** The gloss is sound, but an inline `(30649)` attached to it sends a reader to a sentence that does not say it. **Letting a book citation stand on a line the book does not support is exactly what pass 6 exists to catch, and this run classified it away.** Their fix stands |
+| **Class counts** | 75 CARRIED · 48 BOOK-ONLY · 85 SHELF | 59 · 27 · 117 | **Same total, different boundary.** This run sent a line to `SHELF` whenever the shelf supported it, **even when the book also did**; Grok counted it against the book first. **Grok's ordering is the correct one** — `SHELF` should mean *the books do not support this*, not *the shelf happens to as well*. Their **48 BOOK-ONLY** is the number to trust, and it is worse than this run's 27: **more of the drawing is one-hand-verified than this run's classifier implied.** The optimistic split was this run's, and it flattered the shelf |
+| **`F4` count** | 1 | 2 | **Both right, on different axes** — below |
+
+### What the second run adds: node `[2]`, and a gap in the plan
+
+**`P6-A` never said whether a node is classified by its *label* or by its *contents*, and the two runs took different axes.** Grok classified node `[8] receipt` **SOURCE** because `--print` and `-V` are the book's options. This run classified it **SHELF** because *"build receipt"* occurs **0 times** in 31,482 lines — it is Page D's `B0`. **Neither is wrong. The plan left the axis unpinned, and that is the plan's defect, recorded here.**
+
+On the **label** axis, one node fails the very test Grok applied to node `[7]`:
+
+| Label | Occurrences in the rustc book |
+|---|---|
+| node `[2]` *"target resolution"* | **0** |
+| the book's own heading at 14906 | *"Custom Target Lookup Path"* — **1** |
+| node `[8]` *"build receipt"* | **0** — but it is honestly the project's, and Page D names it |
+
+**Their `P6-A` table still names the node *target resolution*. That is a dated record and is left as written** — the rename is to the live drawing, and this receipt is where the two are reconciled.
+
+**`F4`, second instance.** Node `[2]` is renamed to the book's word — **the same fix, by the same test, that Grok applied to node `[7]`.** Its contents were never in doubt: 14906–14917 states the three-step lookup verbatim, *"1. if TARGET is the name of a built-in target, use that"*.
+
+### `P6-REP` receipt
+
+| | |
+|---|---|
+| **Replicated** | `F1` · `F4`(i64) · `F3` no-fire · **0 NOT FOUND** · count = 1 — all independently |
+| **Corrected in this run** | `F2` on `P-R6` — **missed here, caught by Grok**; and the `SHELF`/`BOOK-ONLY` boundary, where this run's split was optimistic. **Grok's 48 BOOK-ONLY supersedes this run's 27** |
+| **Added** | `F4` second instance — node `[2]` renamed *target resolution* → **target lookup (14906)**, the book's own heading; and the plan's unpinned **label-vs-contents axis**, named |
+| **Not done** | **no second pass 6 section, no duplicate counts published as if authoritative, no edit to Grok's executed record.** The verdict on this shelf remains theirs: **DIAGRAM SOUND WITH OPENS** |
+| **Moved** | one node label. No `[GAP]` closed, no ruling, no build, no `src/`. Emission `[GAP]` |
+
+**What a replication is worth, said plainly:** it confirmed the two findings that mattered, it **caught this run in one bad call and one flattering count**, and it produced one genuine addition. **The campaign has argued for independent audit since `E7` STEP 4 and never had one. This is the first, and it cost a collision on push to get.**

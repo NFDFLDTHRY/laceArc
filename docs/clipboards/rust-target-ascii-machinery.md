@@ -84,7 +84,7 @@ Ten nodes. Every mechanism attaches to at least one; every node carries at least
    +-------------+--------------+             | LLVM bugs expected.      |
                  |                            | M-R1 M-R2 M-R13 M-R17    |
                  v                            +--------------------------+
-   [2] TARGET RESOLUTION                        (binds every node below;
+   [2] TARGET LOOKUP  (14906)                   (binds every node below;
    +----------------------------+                drawn once, not repeated)
    | built-in name wins before  |
    | any file or search path    |             [3] STD SOURCE
