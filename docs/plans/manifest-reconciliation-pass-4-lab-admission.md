@@ -1,6 +1,6 @@
 # MANIFEST RECONCILIATION — Pass 4 Lab admission envelope
 
-**Status:** working audit artifact for Manifest Reconciliation Pass 4.  
+**Status:** **EXECUTED admission envelope** for Manifest Reconciliation Pass 4. **Verdict: LAB ADMISSION ENVELOPE SOUND WITH CONDITIONALS.**  
 **Authority:** **NOT CANONICAL ARCHITECTURE.** The canonical mechanism catalog remains `systems-manifest-ascii.md`; behavioral contracts and open interfaces remain `systems-manifest.md`.  
 **Purpose:** define the exact bounded experimental envelope that a replacement Lab Source Architecture Pass 4 may use without silently resolving unrelated repository opens.
 
