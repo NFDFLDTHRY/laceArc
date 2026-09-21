@@ -896,3 +896,31 @@ It is:
 > show me the current structural frontier, tell me exactly how each result is connected, and let me walk outward deliberately.
 
 The star stays useful because the path stays visible.
+
+
+---
+
+## 21. Final verification
+
+Final pre-release tip:
+
+**ef8491ab72a81768c1fe6d44890490cc31f084c0**
+
+Tracked tree:
+
+- 703 paths
+- recursive tree not truncated
+- src/ paths: 0
+- Cargo.toml paths: 0
+- .rs files: 0
+
+Law surfaces remained byte-unchanged:
+
+- pointer-emission.md: 51224368ae966b6c480746925caa2cade970842e
+- systems-manifest.md: 6f0310099cbcf482ad884f653f423b4e806f724b
+
+Law station remained FREE.
+
+Pass 4 changed maps-owned plan/findings/index surfaces only.
+
+**PASS 4 COMPLETE.**
