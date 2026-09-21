@@ -4,6 +4,9 @@ Plans, proposals, executed pass records, and dated receipts share this shelf. Ea
 
 | File | Job |
 |---|---|
+| [math-execution-root-touch-fold-pass-4-findings.md](math-execution-root-touch-fold-pass-4-findings.md) | **EXECUTED** ROOT / TOUCH / FOLD Pass 4. Law reconciled; binary Join current; arbitrary relation/sample selector remains GAP; global ASCII deferred |
+| [math-execution-root-touch-fold-pass-4-propagation-docket.md](math-execution-root-touch-fold-pass-4-propagation-docket.md) | **DATED HANDOFF** after Pass 4. Scopes global ASCII Pass 29, graphics ASCII, maps, environment, reduction, and Rust premise propagation; none executed here |
+| [math-execution-root-touch-fold-pass-4-plan.md](math-execution-root-touch-fold-pass-4-plan.md) | **EXECUTED** three-phase maps→law→maps reconciliation; acceptance absent; no src/ |
 | [math-execution-root-touch-fold-pass-3-findings.md](math-execution-root-touch-fold-pass-3-findings.md) | **EXECUTED** ROOT / TOUCH / FOLD Pass 3. H4 root-on-arrival; G1-G12 12/12; D1 6/6 binary Join; finite-sample + whole-prefix proofs; final residual = sample/relation selection |
 | [math-execution-root-touch-fold-pass-3-plan.md](math-execution-root-touch-fold-pass-3-plan.md) | **EXECUTED** Pass 3 plan/receipt. Model-side constructor/grounding mechanics closed; law reconciliation still pending |
 | [math-execution-root-touch-fold-pass-2-findings.md](math-execution-root-touch-fold-pass-2-findings.md) | **EXECUTED** ROOT / TOUCH / FOLD Pass 2. A1-A9 9 PASS; D1 roles 6/6 bounded; LAND + seen-root TOUCH formalized; GROUND is residual blocker |
