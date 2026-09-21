@@ -1,7 +1,7 @@
-STATUS: FREE
+STATUS: HELD
 STATION: maps
 OWNS: docs/reason-model-map.md docs/rust-nostd-*.md docs/atomic-primitives-map.md docs/clock/gearing-code-1to1.md docs/coherence-audit*.md docs/clock/system-mathematical-model.md docs/defrag-plan.md docs/plans/** docs/namespace-register.md docs/*.md (catch-all: any unmatched file at the docs/ root)
-AGENT: -
-BASE: -
-SINCE: -
-NOTE: Lab Source Architecture Pass 1 PLAN recorded and indexed. Plan only: source-role taxonomy, common clipboard contract, missing HCC-A/Coffee Cup/Water clipboards, platform/hardware reality below Lace, global ASCII last if executed. No execution performed.
+AGENT: Astra-lab-architecture
+BASE: 7b38745f6644155d361c0eac1fdaba0a93c85cb6
+SINCE: 2026-09-21T20:20:00Z
+NOTE: Rebuilding Lab Source Architecture Pass 1 plan from the complete current main tree. Existing HCC-A/Coffee Cup/Water clock manifests are recognized as existing clipboard products; no duplicate clipboard creation.
