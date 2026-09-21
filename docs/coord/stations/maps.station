@@ -1,7 +1,7 @@
-STATUS: HELD
+STATUS: FREE
 STATION: maps
 OWNS: docs/reason-model-map.md docs/rust-nostd-*.md docs/atomic-primitives-map.md docs/clock/gearing-code-1to1.md docs/coherence-audit*.md docs/clock/system-mathematical-model.md docs/defrag-plan.md docs/plans/** docs/namespace-register.md docs/*.md (catch-all: any unmatched file at the docs/ root)
-AGENT: Astra-lab-source-p4-replacement
-BASE: dd84e2bfb76eb74cdf97358aef3cd8ad85e83fc5
-SINCE: 2026-09-21T23:25:56.330Z
-NOTE: Replacement Lab Source Architecture Pass 4 under Manifest Reconciliation Pass 4 admission envelope. Execute source-of-record 45-panel RM-A/B/C harvest + instrument/oracle-independence accounting. Inherited Lab Pass 4 remains PAUSED and unexecuted.
+AGENT: -
+BASE: -
+SINCE: -
+NOTE: Replacement Lab Source Architecture Pass 4 COMPLETE — SOURCE SILENT ON GENERAL RM PREDICATE. 45/45 A-D surfaces harvested under RM-A retain / RM-B materialize / RM-C role-order. No general SOURCE candidate admitted. Retention harness now reports authority, RM coverage, D1 oracle-independence, TP/FN/FP, pair/order and event/index mismatches. RootTouch calibrates 1 TP; CheatingMemory fails determinism@0000; SidecarMemory scores 6 TP but is ORACLE-CHEAT/REJECT. Existing D1 fixture, systems-manifest, pointer-emission and inherited paused Pass 4 remain unchanged. Research via SM-X-RES is next eligible family.
