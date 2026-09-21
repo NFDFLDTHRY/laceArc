@@ -1,6 +1,6 @@
 # Contributing
 
-This repository is model-first. The four graphics in `docs/graphics/` are the source. The systems manifest maps their couplings. `docs/pointer-emission.md` now exists as a **reconciled but unaccepted** draft: current WORD/root/RootTouch/binary Join/finite-sample mechanics are recorded, while arbitrary non-root-touch relation/sample selection remains `[GAP]`. Core implementation still requires identifiable human acceptance of the exact pointer prose plus every other premise required by the proposed task. File existence or reconciliation alone does not open the gate.
+This repository is model-first. The four graphics in `docs/graphics/` remain source authority, and later explicit human amendments are identified separately. `docs/pointer-emission.md` is a **reconciled but unaccepted** draft: WORD/root/RootTouch/binary Join and the human-ruled sampling architecture are recorded, while exact sampling-derived retention/materialization remains `[GAP]`. Core implementation still requires identifiable human acceptance of the exact pointer prose plus every other premise required by the proposed task. File existence or reconciliation alone does not open the gate.
 
 Repo law: `docs/law-why-these-documents.md`.
 
@@ -25,7 +25,7 @@ All contributors and agent harnesses must use [the agent controls](docs/kit/agen
 - Implement dictionary, document, conversation, or provenance as separate engines.
 - Add N-dimensional storage.
 - Write a tokenizer that discards, masks, or interns words.
-- Invent an arbitrary relation/sample selector, change the reconciled Join mechanics, or use code to bypass the unaccepted pointer contract.
+- Reintroduce an arbitrary semantic relation chooser, invent the open retention/materialization rule, change the reconciled Join mechanics, or use code to bypass the unaccepted pointer contract.
 - Add crates.io dependencies, foreign submodules, or a language other than Rust `no_std`.
 - Vendor Coq, seL4, CompCert, or any posture-list tool as if that imported the height.
 
@@ -35,7 +35,7 @@ Lock the write contract:
 
 1. WORD append on arrival; unseen→root and seen→RootTouch as recorded in the reconciled draft.
 2. Binary Join over two ordered earlier same-line WORD/POINTER operands, with human acceptance of the exact prose revision before implementation.
-3. Explicit ownership/input contract for any arbitrary non-root-touch relation/sample selection required by the task; this remains `[GAP]` today.
+3. Exact retention/materialization premise required by the task, including how a sampled structure becomes addressable if retention needs it; this remains `[GAP]` today.
 4. Views that cannot write back.
 
 Then lock the code contract from `docs/law-why-these-documents.md`:
