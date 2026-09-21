@@ -29,7 +29,7 @@
 |  FORBID-as-Core-write; NON-binding on Core/src/Phi.                  |
 |  No src/ until pointer-emission accepted.  One strand.               |
 |  Pass 4 ASCII: wgsl-ascii-machinery.md (P-S1…P-S9). Mechanisms stand.|
-|  Emission [GAP] sealed.                                              |
+|  Lace retention/materialization [GAP] sealed; WGSL supplies no rule.                                              |
 +======================================================================+
 ```
 
