@@ -28,7 +28,7 @@ Shelves (defrag pass 1–4). Hands stay at `docs/` root. Do not treat a prompt, 
 |---|---|---|
 | The court | [docs/](docs/README.md) | Everything at the `docs/` root, and which of it is Hands |
 | Hands | [docs/graphics/](docs/graphics/) | Four canonical PNGs, the source of record. The manifest and close-reading derive from them; law governs work; reason maps are interpretations |
-| Open `[GAP]` | [docs/pointer-emission.md](docs/pointer-emission.md) | DRAFT. May be worked. Not accepted. Invented answers still a breach |
+| Selection `[GAP]` / implementation gate | [docs/pointer-emission.md](docs/pointer-emission.md) | **Reconciled DRAFT, not accepted.** LAND/root/RootTouch/binary Join/finite-sample grounding are current; arbitrary non-root-touch relation/sample selection remains `[GAP]` |
 | Shadow prose | [docs/clock/](docs/clock/README.md) | Conceptual clock readings, proposed contracts and math. H/C/W interpretations do not impose holder components |
 | Shadow view | [gearing](docs/shadow-clock-gearing.html), [HCC](docs/clock/hcc-a-projection.html), [Lace specimen](docs/clock/lace-projection.html), [no_std plan](docs/hologram/nostd-pipeline.html) | Four Layer III viewers; current-source, pinned release and device observations are separate states |
 | Coord | [docs/coord/](docs/coord/README.md) | Doc stations + gear claim umbrella (Layer III) |
@@ -50,7 +50,7 @@ Shelves (defrag pass 1–4). Hands stay at `docs/` root. Do not treat a prompt, 
 | [docs/clock/shadow-clock-hologram.md](docs/clock/shadow-clock-hologram.md) | Recorded {A,B,C} clock interpretation; conceptual-reference classification governs its use. |
 | [docs/clock/shadow-clock-agent-brief.md](docs/clock/shadow-clock-agent-brief.md) | Source-reading brief for the conceptual clock interpretation; no required holder machinery follows. |
 | [docs/clock/shadow-clock-gear-contracts.md](docs/clock/shadow-clock-gear-contracts.md) | Walk artifact: every mesh contracted, stamped, cited. Shadow only. |
-| [docs/clock/system-mathematical-model.md](docs/clock/system-mathematical-model.md) | Dual-universe formal model: Hands Contract I + Shadow {A,B,C}; emission sealed [GAP]. |
+| [docs/clock/system-mathematical-model.md](docs/clock/system-mathematical-model.md) | Dual-universe formal model separating Hands from conceptual references. Its older emission status is dated; current constructor/selection status is in the manifest, pointer draft, and math-execution model. |
 | [docs/shadow-clock-gearing.html](docs/shadow-clock-gearing.html) | Interactive Layer-III projection: {A,B,C} as physical clock gearing + mesh contracts — **WebGPU 3D required**. Preview on raw.githack. **Install** only via [GitHack PWA policy](docs/kit/githack-pwa-deploy.md). |
 | [docs/gearing/](docs/gearing/) | Shared-interactive Layer-III contract data (`window.LACE_CONTRACTS` additive scripts). |
 | [docs/coord/](docs/coord/) | Multi-agent coordination umbrella: doc stations + `coord.sh`; gear shafts still via claim.sh. |
@@ -76,17 +76,17 @@ Shelves (defrag pass 1–4). Hands stay at `docs/` root. Do not treat a prompt, 
 | [.claude/](.claude/) | Session setup for Claude Code on the web: startup hook and repository checks. No runtime. |
 | [docs/references.md](docs/references.md) | Adjacent books. Citations only. PDFs are not in this public repo. |
 | [docs/reason-model-map.md](docs/reason-model-map.md) | Physical shoe lace as reason model. How five adjacent works may and may not touch Core. |
-| [docs/clipboards/clipboard-five-stakes.md](docs/clipboards/clipboard-five-stakes.md) | Five-page KEEP/FORBID clipboard of the stake texts. Emission still [GAP]. |
+| [docs/clipboards/clipboard-five-stakes.md](docs/clipboards/clipboard-five-stakes.md) | Five-page KEEP/FORBID clipboard of the stake texts. Those adjacent sources do not supply the arbitrary relation selector; they are not current constructor law. |
 | [docs/clipboards/kauffman-4ed-clipboard.md](docs/clipboards/kauffman-4ed-clipboard.md) | Kauffman 4ed hitch / diagram / Reidemeister / slide / virtual sheets. Not Core. |
 | [docs/clipboards/rowlands-zero-to-infinity-clipboard.md](docs/clipboards/rowlands-zero-to-infinity-clipboard.md) | Rowlands empty-start / no extra rooms / rewrite name-clash sheets. Not Core. |
 | [docs/clipboards/xiao-zhu-foundations-clipboard.md](docs/clipboards/xiao-zhu-foundations-clipboard.md) | Xiao–Zhu arrival-order / intern / MASK / embed / next-token sheets. Not Core. |
 | [docs/clipboards/agentscope-clipboard.md](docs/clipboards/agentscope-clipboard.md) | AgentScope taxonomy for the HOLDER. ReAG stays off Graphic D. Not Core. |
 | [docs/clock/gearing-code-1to1.md](docs/clock/gearing-code-1to1.md) | 47 visual keys ↔ planned Shadow units; earlier picker observations are dated. AB/BC/CA binding descriptions were corrected in `bad05ca`; [pass 2](docs/plans/repo-update-pass-2-evidence.md#8-execution-dispositions) records the source checks, with browser/picker behavior still unverified. |
-| [docs/pointer-emission.md](docs/pointer-emission.md) | DRAFT. May be worked. Not accepted. Invented answers still a breach. |
+| [docs/pointer-emission.md](docs/pointer-emission.md) | **Reconciled DRAFT, not accepted.** Binary Join/current growth mechanics are recorded; arbitrary relation/sample selection remains `[GAP]`. |
 | [docs/clock/philosophy-map.md](docs/clock/philosophy-map.md) | Readings of three conceptual references: HCC-A, Coffee Cup, Water. The required-gearbox interpretation is superseded by the [human correction](docs/law-why-these-documents.md#conceptual-reference-documents). |
 | [docs/hologram/](docs/hologram/) | Hologram touches (PR / Story Defense). Shadow. Not Graphic E. |
 
-There is no `src/` on purpose. Code that appears before the pointer-emission rule is locked will invent a second machine.
+There is no `src/` on purpose. The constructor prose is now reconciled, but **reconciled is not accepted** and arbitrary relation/sample selection remains unresolved. Core code still waits on explicit human acceptance, task authorization, and every premise required by that task.
 
 When code is ever allowed it is only Rust `#![no_std]`, with zero external dependencies. Every dependency is a first-party branch that does one mathematically stated and proven task. See [docs/law-why-these-documents.md](docs/law-why-these-documents.md).
 
@@ -126,16 +126,27 @@ Stars, dictionary routes, documents, touches, and dimensions do not separate int
 
 ## Open before any implementation
 
-The graphics show WORD entries, POINTER entries, and pointer-to-pointer chains. They do not specify:
+The current reconciled draft now settles the physical growth/participation mechanics:
 
-- when a POINTER is written
-- pointer arity beyond the `ref_A` / `ref_B` example
-- whether adjacent WORD rows are already a relation without a POINTER
-- tokenization (`PIE` vs `pie`, phrase vs word)
-- document / conversation / provenance as entry types
-- a read or query operator
+- every successful arrival appends a WORD occurrence
+- unseen WORD becomes its root
+- seen occurrence remains a WORD and RootTouches that root
+- POINTER is binary `Join(a,b)` over two selected ordered earlier same-line WORD/POINTER points
+- repeated Join grounds finite selected samples
+- POINTER-to-POINTER is ordinary recursive participation
+- adjacency alone is not a relation trigger
 
-The pointer-emission rule *is* dimensionality. Until it is written down as part of Core, do not implement “higher-D touch” as a separate layer.
+What remains open includes:
+
+- **arbitrary non-root-touch relation/sample selection**
+- tokenization / word equality (`PIE` vs `pie`, phrase vs word)
+- document / conversation / provenance boundaries and labels
+- a read/query/traversal operator
+- concurrency and other independent implementation premises
+
+The dot-to-dot N-D representation is a projection of recursive Join participation, not a separate “higher-D touch” store.
+
+**Implementation is still blocked.** `docs/pointer-emission.md` is reconciled but not human-accepted, arbitrary selection remains `[GAP]`, and task-specific proof/authorization requirements remain.
 
 ## Status
 
