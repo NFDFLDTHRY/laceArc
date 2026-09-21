@@ -2,7 +2,7 @@
 
 **Status:** ROOT / TOUCH / FOLD Pass 3 mathematical model, executed 2026-09-20. **Pointer construction is now mathematically specified; relation/sample selection remains a separate input-selection question.**
 **Campaign:** Pass 1 mapped the root/touch/fold delta; Pass 2 formalized LAND + seen-root TOUCH; Pass 3 formalizes unseen-root creation and recursive sample-to-point GROUND.
-**Pass 3:** [plan](plans/math-execution-root-touch-fold-pass-3-plan.md) · findings to be linked on receipt.
+**Pass 3:** [plan](plans/math-execution-root-touch-fold-pass-3-plan.md) · [findings](plans/math-execution-root-touch-fold-pass-3-findings.md).
 **Physical POINTER constructor in this model:** binary \(\mathsf{Join}(a,b)\), grounded by D2/D1 plus H5/H6. The law-owned pointer-emission draft is still unchanged and not blanket-accepted.
 **Current growth:** ARRIVE → unseen BECOMES ROOT / seen ROOT TOUCH → optional/required sample GROUND by repeated Join → Continue.
 **N-D:** recursive points-of-points are stored only as WORD/POINTER rows; dot-to-dot 2D/3D/N-D is a projection of those participation paths, never a second store.
