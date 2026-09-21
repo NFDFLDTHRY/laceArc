@@ -425,6 +425,8 @@ The source-specific clipboard/clock documents remain the detailed behavior recor
 
 **Pass-32 verdict:** **CANONICAL CATALOG ↔ CONTRACT CROSSWALK RECONCILED.** Current Lace mechanisms and external integration classes resolve to the contract registry in `systems-manifest.md`; the A6/B4 and B10/B11 current provenance splits are corrected; persistence/re-entry is distinct from retention/materialization; Graphic-C projection is distinct from H7–H12 sampling; D1 remains a state witness rather than a universal selection rule. Downstream drift is recorded in [Pass 1 findings](plans/manifest-reconciliation-pass-1-findings.md). Retention/materialization remains `[GAP]`; acceptance remains absent.
 
+**Manifest Reconciliation Pass 2 foundation certification:** **FOUNDATION SOUND WITH DATED ARTIFACTS.** Current maps, prompt/kit entrances, Rust planning and history routing have been propagated or qualified against this catalog and the manifest contract registry. Sealed/historical artifacts that still carry older semantic snapshots are explicitly fenced as dated rather than rewritten. See [Pass 2 findings](plans/manifest-reconciliation-pass-2-findings.md). **Pass 32 remains the current mechanism catalog; Pass 2 does not add a new mechanism or close L-GAP-RM.** Lab Source Architecture Pass 4 remains paused pending an explicit replan.
+
 ---
 
 ## Spine
