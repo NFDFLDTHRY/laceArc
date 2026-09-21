@@ -190,7 +190,7 @@ Historical receipts were not rewritten to pretend they always used the new sourc
 | G15 retention/materialization remains `[GAP]` | **PASS** |
 | G16 pointer-emission acceptance remains absent | **PASS** |
 | G17 no duplicate source products created | **PASS** |
-| G18 all claims released | **PENDING final maps release at receipt commit** |
+| G18 all claims released | **PASS** — verified at `b9aa9f2ad02d6fe62b7c4f9d7d0518d63eb0d687`: all 11 document stations FREE and all 8 gearing shafts FREE |
 
 ---
 
@@ -211,6 +211,8 @@ At semantic tip `f82903f`:
 - all three behavioral-goal source products explicitly identify themselves as source clipboards.
 
 No browser/device/hardware runtime execution was performed by this pass. Platform source roles were documentation alignment only.
+
+**Claim verification:** after the maps release commit `b9aa9f2ad02d6fe62b7c4f9d7d0518d63eb0d687`, direct reads confirmed every document station (`clipboards`, `coord`, `gearing-meta`, `graphics`, `history`, `hologram`, `kit`, `law`, `maps`, `prompts`, `renderer`) was `FREE`, and all eight gearing shafts (`audits`, `axle`, `cells`, `escape`, `gears`, `trainA`, `trainB`, `trainC`) were `FREE`. This receipt-finalization edit temporarily reclaimed `maps` only to pin that verification and is released immediately afterward.
 
 ---
 
