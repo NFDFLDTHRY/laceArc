@@ -1,7 +1,7 @@
-STATUS: FREE
+STATUS: HELD
 STATION: law
 OWNS: AGENTS.md CLAUDE.md docs/staking-the-workspace.md docs/law-why-these-documents.md docs/systems-manifest.md docs/pointer-emission.md docs/references.md CONTRIBUTING.md README.md .gitignore LICENSE docs/README.md
-AGENT: -
-BASE: -
-SINCE: -
-NOTE: Astra-law ROOT / TOUCH / FOLD Pass 4 Phase B EXECUTED. pointer-emission reconciliation commits d2df9fd5269c07d3dcba2e0a2ca250dd9ef2ea67 + 3454891c97d1d058cceeae36146a8ca2bf8f6a84; systems-manifest reconciliation commits 9f899cc29fe10cf2151e96d6d26f42c6bbf15f0e + fc2cc5b861d73f54054c08b85c0638b6b17b2004. Current law: binary Join constructor, LAND/root/RootTouch/finite-sample grounding reconciled; arbitrary relation/sample selection remains [GAP]. Historical Pass-7 receipts and explicit acceptance gate preserved. No src/. coord.sh NOT_RUN.
+AGENT: Astra-law-entrypoints
+BASE: 6c23538a4649fbce3c5614def01e12a5bc1fb698
+SINCE: 2026-09-21T00:48:00Z
+NOTE: User-directed ROOT / TOUCH / FOLD Pass 5 Phase D. Audit/correct current-facing status in README.md, docs/README.md, CONTRIBUTING.md, AGENTS.md, CLAUDE.md only. Preserve human-authored law conflict in law-why and frozen staking text; preserve acceptance gate/permanent bans. Current residual = arbitrary relation/sample selection [GAP]. No src/. Connector claim; coord.sh NOT_RUN.
