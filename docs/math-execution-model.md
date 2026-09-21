@@ -1,9 +1,10 @@
 # Mathematical execution model — Lace
 
-**Status:** ROOT / TOUCH / FOLD Pass 3 mathematical construction + Pass 4 law reconciliation, current 2026-09-20. **Pointer construction is specified and reconciled; arbitrary relation/sample selection remains the named [GAP].**
+**Status:** ROOT / TOUCH / FOLD Pass 3 mathematical construction + Pass 4 law reconciliation + Pass 6 provenance reclassification, current 2026-09-21. **Pointer construction is specified and reconciled; arbitrary non-root relation-assertion provenance / authority remains the named [GAP].**
 **Campaign:** Pass 1 mapped the root/touch/fold delta; Pass 2 formalized LAND + seen-root TOUCH; Pass 3 formalizes unseen-root creation and recursive sample-to-point GROUND.
 **Pass 3:** [plan](plans/math-execution-root-touch-fold-pass-3-plan.md) · [findings](plans/math-execution-root-touch-fold-pass-3-findings.md).  
-**Pass 4 reconciliation:** [plan](plans/math-execution-root-touch-fold-pass-4-plan.md) · [findings](plans/math-execution-root-touch-fold-pass-4-findings.md).
+**Pass 4 reconciliation:** [plan](plans/math-execution-root-touch-fold-pass-4-plan.md) · [findings](plans/math-execution-root-touch-fold-pass-4-findings.md).  
+**Pass 6 provenance audit:** [plan](plans/math-execution-root-touch-fold-pass-6-plan.md) · [findings](plans/math-execution-root-touch-fold-pass-6-findings.md).
 **Physical POINTER constructor:** binary \(\mathsf{Join}(a,b)\), grounded by D2/D1 plus H5/H6 and now reconciled into [pointer-emission.md](pointer-emission.md) / [systems-manifest.md](systems-manifest.md). The law draft remains **not accepted**.
 **Current growth:** ARRIVE → unseen BECOMES ROOT / seen ROOT TOUCH → optional/required sample GROUND by repeated Join → Continue.
 **N-D:** recursive points-of-points are stored only as WORD/POINTER rows; dot-to-dot 2D/3D/N-D is a projection of those participation paths, never a second store.
@@ -29,12 +30,12 @@ Steward line: *Every arrival adds wire. Unseen wire becomes its root. Seen wire 
 | D1 0010 covers the whole eleven-row D1 prefix | **Yes** |
 | Whole-prefix covering point exists for every finite prefix by recursive Join | **Yes, constructive theorem** |
 | N-D coordinates / dimension rows stored in Core | **No** |
-| Which sample / relation is selected for grounding at a given moment | **Not determined here** — input/relation-selection question |
+| What authoritatively originates an arbitrary non-root ordered relation/sample | **Not determined here** — relation-assertion provenance / authority [GAP] |
 | G1 word-equality policy | **Open** |
 | pointer-emission.md accepted as a whole | **No** |
 | Permission to add src/ | **No** |
 
-The old monolithic POINTER-emission blocker is split. **Constructor/grounding mechanics are defined; sample/relation selection is the remaining scheduler input.**
+The old monolithic POINTER-emission blocker is split. **Constructor/grounding mechanics are defined; the remaining hole is relation-assertion provenance / authority, not an established unfinished scheduler function.**
 
 ## S1 — Universe and state
 
@@ -395,10 +396,10 @@ Grounding then uses the same Join constructor on whatever finite sample / portio
 | one new row for \(n+1\) sample extension? | **PROVED / H6-grounded** |
 | one global row per cardinality? | **REFUSED** — collapse |
 | N-D requires second store? | **REFUSED** — projection only |
-| which sample / relation is selected to ground now? | **selection input remains external to Join** |
+| what authoritatively originates the arbitrary non-root relation/sample? | **[GAP]** — automatic Core chooser not established; external assertion interface not established |
 | G1 word equality | **OPEN** |
 
-The remaining selection question is no longer a missing POINTER constructor. Once operands / a sample are selected, emission is mechanically determined by binary Join.
+The remaining provenance question is no longer a missing POINTER constructor. Once an ordered relation/sample is specified, emission is mechanically determined by binary Join. Pass 6 does not establish whether the relation assertion originates inside or outside Core.
 
 ### S4.6 Current STEP schema
 
@@ -415,7 +416,7 @@ The remaining selection question is no longer a missing POINTER constructor. Onc
 \mathsf{Continue}.
 \]
 
-GROUND(S) is the repeated-Join construction above, not a separate storage engine. Selection of \(S\) is relation/input choice; storage of its grounded result is fully specified.
+GROUND(S) is the repeated-Join construction above, not a separate storage engine. The construction presumes an already-specified sample \(S\); **what authoritatively originates/asserts that sample remains [GAP]**. Storage of its grounded result is fully specified.
 
 ## S5 — Contracts I / II / III
 
@@ -442,7 +443,7 @@ Relative to Graphic D and Pieces 1, 6, 13, 14 — each is **not** a Core morphis
 5. Second Lace / second row-kind schema  
 6. Write-back from any projection  
 7. Label split/merge/create implemented as mutate-WORD  
-8. Filling the remaining GROUND schedule from Shadow Anchor / OBS / unrelated conceptual machinery  
+8. Filling arbitrary relation-assertion provenance / authority from Shadow Anchor / OBS / unrelated conceptual machinery  
 9. Treating ASCII companion or emission DRAFT commit as Hands acceptance  
 10. Adding `src/` or Cargo under color of this document
 
@@ -465,9 +466,9 @@ Relative to Graphic D and Pieces 1, 6, 13, 14 — each is **not** a Core morphis
 | whole-prefix point | H2 + D1 0010 | constructive theorem + bounded witness |
 | N-D dot view | H6 + C5/C7/C8/C11 | projection of recursive points, not store |
 | multiple grouping trees | Rule Zero / no collapse | retained as distinct Lace history; no canonicalization required by current sources |
-| which sample is selected | not stated as automatic policy | relation/input selection remains separate |
+| arbitrary relation-assertion provenance | not stated | Origin(rho) remains OPEN; automatic Core chooser and external assertion interface are both unestablished |
 | G1 identity | existing open | still open |
-| pointer-emission.md | Pass 4 reconciled law surface | binary Join current; arbitrary selection GAP; not accepted |
+| pointer-emission.md | Pass 6 reconciled law surface | binary Join current; arbitrary non-root relation-assertion provenance/authority GAP; not accepted |
 
 No second store, sample registry, dimension table, or new row kind is introduced.
 
@@ -475,7 +476,7 @@ No second store, sample registry, dimension table, or new row kind is introduced
 
 | Field | Value |
 |---|---|
-| Current campaign | ROOT / TOUCH / FOLD Pass 3 **EXECUTED** |
+| Current campaign | ROOT / TOUCH / FOLD Pass 3 construction + Pass 6 provenance audit **EXECUTED** |
 | Successful arrival | LAND as WORD |
 | Unseen word | new WORD becomes root |
 | Seen word | new WORD + RootTouch Join |
@@ -489,9 +490,9 @@ No second store, sample registry, dimension table, or new row kind is introduced
 | Sample size | selected-point cardinality |
 | Global size-\(n\) registry row | refused |
 | N-D | projection of recursive points-of-points |
-| Remaining selection issue | which sample / relation is chosen to ground |
+| Remaining provenance issue | what authoritatively originates/asserts an arbitrary non-root ordered relation/sample |
 | G1 word identity | OPEN |
-| pointer-emission.md | Pass 4 reconciled draft / not accepted |
+| pointer-emission.md | Pass 6 provenance-reconciled draft / not accepted |
 | src/ | not authorized |
 
 **Current steward tests:** no old row is rewritten; all Join refs are backward; every grounded point is itself Lace; repeated Join represents arbitrary finite selected portions; equal-size samples do not collapse; N-D remains a view; constructor mechanics no longer depend on an unknown arity/schedule once the sample operands are selected.
