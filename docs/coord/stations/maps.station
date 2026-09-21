@@ -1,7 +1,7 @@
-STATUS: FREE
+STATUS: HELD
 STATION: maps
 OWNS: docs/reason-model-map.md docs/rust-nostd-*.md docs/atomic-primitives-map.md docs/clock/gearing-code-1to1.md docs/coherence-audit*.md docs/clock/system-mathematical-model.md docs/defrag-plan.md docs/plans/** docs/namespace-register.md docs/*.md (catch-all: any unmatched file at the docs/ root)
-AGENT: -
-BASE: -
-SINCE: -
-NOTE: Astra-sampling SAMPLING / DENSITY / EMERGENCE Pass 1 REPLAN complete. Revised plan commit d1b02325738cf1df88f146f7b78fbe4f650160c5; plans index bdca45862ce81e30c8c5b7090973b5c1226be0ba. Pass 1 not executed. Fixed invariants: durable WORD/POINTER history stays on 1D Lace; sampling creates derived 2D position-by-scale working array; POINTERs can retain relations across any sampling level back onto 1D. Pass 1 now maps exact cell/axis/n/recurrence/addressability/retention mechanics, APPLES specimen, density/search seam, D1 replay and 20 falsifiers. No law edit. No src/Cargo. coord.sh NOT_RUN.
+AGENT: Astra-sampling
+BASE: 4644b6d4005214dbfe2d0bfe2ef0a705c5b0d6c2
+SINCE: 2026-09-21T01:55:00Z
+NOTE: User-directed SAMPLING / DENSITY / EMERGENCE Pass 1 execution. Fixed invariants: authoritative 1D WORD/POINTER history; derived 2D sampling surface over position × scale; retained POINTERs may relate addressable structures across any sample level and return to 1D. Execute five matrices, APPLES specimen, D1 replay and 20 falsifiers. No law edit. No src/Cargo. Connector claim; coord.sh NOT_RUN.
