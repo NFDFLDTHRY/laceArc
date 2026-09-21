@@ -28,7 +28,7 @@ Shelves (defrag pass 1–4). Hands stay at `docs/` root. Do not treat a prompt, 
 |---|---|---|
 | The court | [docs/](docs/README.md) | Everything at the `docs/` root, and which of it is Hands |
 | Hands | [docs/graphics/](docs/graphics/) | Four canonical PNGs, the source of record. The manifest and close-reading derive from them; law governs work; reason maps are interpretations |
-| Selection `[GAP]` / implementation gate | [docs/pointer-emission.md](docs/pointer-emission.md) | **Reconciled DRAFT, not accepted.** LAND/root/RootTouch/binary Join/finite-sample grounding are current; arbitrary non-root-touch relation/sample selection remains `[GAP]` |
+| Retention/materialization `[GAP]` / implementation gate | [docs/pointer-emission.md](docs/pointer-emission.md) | **Reconciled DRAFT, not accepted.** LAND/root/RootTouch/binary Join plus the human-ruled sampling architecture are current; the exact sampling-derived retention/materialization rule remains `[GAP]` |
 | Shadow prose | [docs/clock/](docs/clock/README.md) | Conceptual clock readings, proposed contracts and math. H/C/W interpretations do not impose holder components |
 | Shadow view | [gearing](docs/shadow-clock-gearing.html), [HCC](docs/clock/hcc-a-projection.html), [Lace specimen](docs/clock/lace-projection.html), [no_std plan](docs/hologram/nostd-pipeline.html) | Four Layer III viewers; current-source, pinned release and device observations are separate states |
 | Coord | [docs/coord/](docs/coord/README.md) | Doc stations + gear claim umbrella (Layer III) |
@@ -76,17 +76,17 @@ Shelves (defrag pass 1–4). Hands stay at `docs/` root. Do not treat a prompt, 
 | [.claude/](.claude/) | Session setup for Claude Code on the web: startup hook and repository checks. No runtime. |
 | [docs/references.md](docs/references.md) | Adjacent books. Citations only. PDFs are not in this public repo. |
 | [docs/reason-model-map.md](docs/reason-model-map.md) | Physical shoe lace as reason model. How five adjacent works may and may not touch Core. |
-| [docs/clipboards/clipboard-five-stakes.md](docs/clipboards/clipboard-five-stakes.md) | Five-page KEEP/FORBID clipboard of the stake texts. Those adjacent sources do not supply the arbitrary relation selector; they are not current constructor law. |
+| [docs/clipboards/clipboard-five-stakes.md](docs/clipboards/clipboard-five-stakes.md) | Five-page KEEP/FORBID clipboard of the stake texts. Those adjacent sources do not supply Lace's sampling/retention machinery; current human rulings separately establish sampling as discovery, with retention/materialization still open. |
 | [docs/clipboards/kauffman-4ed-clipboard.md](docs/clipboards/kauffman-4ed-clipboard.md) | Kauffman 4ed hitch / diagram / Reidemeister / slide / virtual sheets. Not Core. |
 | [docs/clipboards/rowlands-zero-to-infinity-clipboard.md](docs/clipboards/rowlands-zero-to-infinity-clipboard.md) | Rowlands empty-start / no extra rooms / rewrite name-clash sheets. Not Core. |
 | [docs/clipboards/xiao-zhu-foundations-clipboard.md](docs/clipboards/xiao-zhu-foundations-clipboard.md) | Xiao–Zhu arrival-order / intern / MASK / embed / next-token sheets. Not Core. |
 | [docs/clipboards/agentscope-clipboard.md](docs/clipboards/agentscope-clipboard.md) | AgentScope taxonomy for the HOLDER. ReAG stays off Graphic D. Not Core. |
 | [docs/clock/gearing-code-1to1.md](docs/clock/gearing-code-1to1.md) | 47 visual keys ↔ planned Shadow units; earlier picker observations are dated. AB/BC/CA binding descriptions were corrected in `bad05ca`; [pass 2](docs/plans/repo-update-pass-2-evidence.md#8-execution-dispositions) records the source checks, with browser/picker behavior still unverified. |
-| [docs/pointer-emission.md](docs/pointer-emission.md) | **Reconciled DRAFT, not accepted.** Binary Join/current growth mechanics are recorded; arbitrary relation/sample selection remains `[GAP]`. |
+| [docs/pointer-emission.md](docs/pointer-emission.md) | **Reconciled DRAFT, not accepted.** Binary Join/current growth and sampling architecture are recorded; exact sampling-derived retention/materialization remains `[GAP]`. |
 | [docs/clock/philosophy-map.md](docs/clock/philosophy-map.md) | Readings of three conceptual references: HCC-A, Coffee Cup, Water. The required-gearbox interpretation is superseded by the [human correction](docs/law-why-these-documents.md#conceptual-reference-documents). |
 | [docs/hologram/](docs/hologram/) | Hologram touches (PR / Story Defense). Shadow. Not Graphic E. |
 
-There is no `src/` on purpose. The constructor prose is now reconciled, but **reconciled is not accepted** and arbitrary relation/sample selection remains unresolved. Core code still waits on explicit human acceptance, task authorization, and every premise required by that task.
+There is no `src/` on purpose. The constructor prose is reconciled, but **reconciled is not accepted** and exact sampling-derived retention/materialization remains unresolved. Core code still waits on explicit human acceptance, task authorization, and every premise required by that task.
 
 When code is ever allowed it is only Rust `#![no_std]`, with zero external dependencies. Every dependency is a first-party branch that does one mathematically stated and proven task. See [docs/law-why-these-documents.md](docs/law-why-these-documents.md).
 
@@ -138,7 +138,7 @@ The current reconciled draft now settles the physical growth/participation mecha
 
 What remains open includes:
 
-- **arbitrary non-root-touch relation/sample selection**
+- **exact sampling-derived retention/materialization**
 - tokenization / word equality (`PIE` vs `pie`, phrase vs word)
 - document / conversation / provenance boundaries and labels
 - a read/query/traversal operator
@@ -146,7 +146,7 @@ What remains open includes:
 
 The dot-to-dot N-D representation is a projection of recursive Join participation, not a separate “higher-D touch” store.
 
-**Implementation is still blocked.** `docs/pointer-emission.md` is reconciled but not human-accepted, arbitrary selection remains `[GAP]`, and task-specific proof/authorization requirements remain.
+**Implementation is still blocked.** `docs/pointer-emission.md` is reconciled but not human-accepted, retention/materialization remains `[GAP]`, and task-specific proof/authorization requirements remain.
 
 ## Status
 
