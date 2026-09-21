@@ -183,7 +183,7 @@ This file is **Shadow / Layer III documentation of CRD host/GPU procedures**, no
 | False friend | **FM-Wgpu4** — Texture ⇒ second Lace store / Graphic D backing |
 | Projection / hologram cite | hologram/clock may *draw* with textures; glyphs ≠ schema; texture ≠ store |
 | wasm64 cite | cite-only; different layer |
-| Open gaps | Φ / emission `[GAP]`; HDR/alpha canvas edge cases deferred Wave B |
+| Open gaps | WebGPU supplies no Lace retention rule; current sampling-derived retention/materialization `[GAP]`; HDR/alpha canvas edge cases deferred Wave B |
 
 **Algorithm**
 
@@ -333,7 +333,7 @@ This file is **Shadow / Layer III documentation of CRD host/GPU procedures**, no
 | False friend | **FM-Wgpu3** (submit/draw ⇒ Φ) · **FM-Wgpu6** (canvas ⇒ accept emission) |
 | Projection / hologram cite | submit ≠ emission; canvas PROPOSAL-only; `lace-projection.html` may present Shadow frames without accepting Φ |
 | wasm64 cite | cite-only |
-| Open gaps | Φ / emission **`[GAP]`** (FORBID fill); Lace↔canvas bridge remains proposal |
+| Open gaps | WebGPU supplies no Lace retention rule; current retention/materialization **`[GAP]`** (FORBID fill); Lace↔canvas bridge remains proposal |
 
 **Algorithm**
 
