@@ -1,7 +1,7 @@
-STATUS: HELD
+STATUS: FREE
 STATION: maps
 OWNS: docs/reason-model-map.md docs/rust-nostd-*.md docs/atomic-primitives-map.md docs/clock/gearing-code-1to1.md docs/coherence-audit*.md docs/clock/system-mathematical-model.md docs/defrag-plan.md docs/plans/** docs/namespace-register.md docs/*.md (catch-all: any unmatched file at the docs/ root)
-AGENT: Astra-sampling
-BASE: 47ec7704d06df3ad58dc2376466dd83f513aab55
-SINCE: 2026-09-21T02:00:00Z
-NOTE: User-directed SAMPLING / DENSITY / EMERGENCE Pass 2 planning. Build plan for minimal nonsemantic 2D lattice only: endpoint/WORD-position × contiguous span n, root-key tuple identity, direct-window vs overlap-recursive equivalence, D1 pointer WORD-leaf mapping, APPLES online recurrence field, and first 2D-cell→1D-address failure. Retention rule remains out of scope except as observed mismatch. No law edit. No src/Cargo. Connector claim; coord.sh NOT_RUN.
+AGENT: -
+BASE: -
+SINCE: -
+NOTE: Astra-sampling SAMPLING / DENSITY / EMERGENCE Pass 2 PLAN committed at e3678e9d4f3d22c0831681bb9b8f19ef32a84e4a; plans index 53da2dc6d9cd2da0e96ee901866865b73460422a. Pass 2 not executed. Scope: minimal nonsemantic 2D lattice/addressability witness only: endpoint WORD-position × contiguous span n, root-key tuple identity, direct-window vs endpoint-extension vs overlap-merge equivalence, D1 15-cell lattice, exact online recurrence field, D1 WORD-leaf/Addr/grounding-cost audit, APPLES B0/B1 boundary controls, 20 falsifiers. Retention threshold/policy remains explicitly out of scope. No law edit. No src/Cargo. coord.sh NOT_RUN.
