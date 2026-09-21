@@ -16,8 +16,8 @@ The three that get broken first:
 
 - **No `src/`.** `docs/pointer-emission.md` now exists as a reconciled but
   **unaccepted** draft. Binary Join/current growth mechanics being written does
-  not open the gate: the human must accept the exact content, arbitrary relation/
-  sample selection remains `[GAP]`, and every task-specific premise must be resolved.
+  not open the gate: the human must accept the exact content, the exact sampling-derived
+  retention/materialization rule remains `[GAP]`, and every task-specific premise must be resolved.
 - **No second store.** No Star table, graph DB, embedding store, definition
   table, or N-dimensional storage. The append-only 1D array is the only store.
 - **Mark `[GAP]`** where the source is silent. Do not close a gap with a
