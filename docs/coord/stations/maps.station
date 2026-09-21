@@ -1,7 +1,7 @@
-STATUS: FREE
+STATUS: HELD
 STATION: maps
 OWNS: docs/reason-model-map.md docs/rust-nostd-*.md docs/atomic-primitives-map.md docs/clock/gearing-code-1to1.md docs/coherence-audit*.md docs/clock/system-mathematical-model.md docs/defrag-plan.md docs/plans/** docs/namespace-register.md docs/*.md (catch-all: any unmatched file at the docs/ root)
-AGENT: -
-BASE: -
-SINCE: -
-NOTE: Astra-propagation ROOT / TOUCH / FOLD Pass 5 COMPLETE. Global ASCII Pass 29 a7a7180f31b5c3b2483c928d766d38d8648281a3; B/C graphics f6c68ba105bb2aed7ed284e350d8fea422ab8810 + 17edb9f6306413671f0710a4463278dddd8b6de6; maps/environment/reduction/Rust premises 84ceeac... d12820a... ee62a700... f848a508... 1c0c442... a66b586... 18d60e5... 9f07e477...; law entrypoints 223b776... 9b6a3ab... bae2d71... 58ccbf3... 996a2ce...; context aed51f60...; kit 9f851775... e58742d... 1b8ea279...; final findings 377223217e186387c43bf9f0ae70e019c2b50466; plan close de21cfdfab86684076ef4d49e5202e94602fa924; index 112bee53b87eb59b418898d31f3387924f06260f. P5 proof board 16/16 PASS. Final pre-release tree 686 tracked paths, no src/, Cargo.toml, or .rs. Current residual = arbitrary non-root-touch relation/sample selection [GAP]. Pointer draft reconciled but not human-accepted. coord.sh NOT_RUN.
+AGENT: Astra-selection
+BASE: a2796948118d91753f45c68a00a73ff7d5cdb4cf
+SINCE: 2026-09-21T01:04:00Z
+NOTE: User-directed ROOT / TOUCH / FOLD Pass 6 planning. Investigate whether the remaining 'selection' is actually a required automatic Core algorithm, a relation-assertion provenance/ownership gap, an active-sample punch-card rule, or a new interface requiring human ruling. Plan only. Preserve current constructor, acceptance gate, no-src/Cargo. Connector claim; coord.sh NOT_RUN.
