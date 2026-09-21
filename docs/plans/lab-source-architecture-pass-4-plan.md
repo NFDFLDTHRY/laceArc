@@ -1,6 +1,6 @@
 # LAB SOURCE ARCHITECTURE — Pass 4 PLAN · harvest the source of record, and join the two instruments
 
-**Status:** `[PLAN]`. **Station:** maps. **Base:** `6d7ceb2`.
+**Status:** **`PAUSED` by human 2026-09-21 pending Manifest Reconciliation Pass 1 information mapping.** The experiment below is preserved as planned and is not executed. **Station:** maps. **Base:** `6d7ceb2`.
 **Prior:** [pass 1](lab-source-architecture-pass-1-plan.md) · [findings](lab-source-architecture-pass-1-findings.md) — the families and their fences.
 [pass 2](lab-source-architecture-pass-2-plan.md) · [findings](lab-source-architecture-pass-2-findings.md) — the behavioral harvest.
 [pass 3](lab-source-architecture-pass-3-plan.md) · [findings](lab-source-architecture-pass-3-findings.md) — the harness, and the cheat it first failed to catch.
