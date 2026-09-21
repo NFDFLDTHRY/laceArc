@@ -1,7 +1,7 @@
-STATUS: HELD
+STATUS: FREE
 STATION: maps
 OWNS: docs/reason-model-map.md docs/rust-nostd-*.md docs/atomic-primitives-map.md docs/clock/gearing-code-1to1.md docs/coherence-audit*.md docs/clock/system-mathematical-model.md docs/defrag-plan.md docs/plans/** docs/namespace-register.md docs/*.md (catch-all: any unmatched file at the docs/ root)
-AGENT: Astra-manifest-reconcile-p2
-BASE: b0d26f98fefb755edec6243f456f9ee49a45d8e7
-SINCE: 2026-09-21T22:23:39.986Z
-NOTE: Manifest Reconciliation Pass 2 maps wave: propagate Pass-32 canonical foundation to current maps/plans, fence dated fixtures, and rewrite paused Lab Pass 4 premise without resuming it.
+AGENT: -
+BASE: -
+SINCE: -
+NOTE: Manifest Reconciliation Pass 2 maps wave COMPLETE. Atomic provenance corrected; Hologram IR v0.2 fenced as dated semantic fixture; Rust planning qualified against derived sampling/search working machinery and SM-GAP-RM; Lab Pass 4 premise/proxy provenance corrected and remains PAUSED; retention harness provenance corrected without behavior change; plans index normalized. Control-surface propagation pending.
