@@ -1,7 +1,7 @@
-STATUS: FREE
+STATUS: HELD
 STATION: law
 OWNS: AGENTS.md CLAUDE.md docs/staking-the-workspace.md docs/law-why-these-documents.md docs/systems-manifest.md docs/pointer-emission.md docs/references.md CONTRIBUTING.md README.md .gitignore LICENSE docs/README.md
-AGENT: -
-BASE: -
-SINCE: -
-NOTE: Astra-law-entrypoints ROOT / TOUCH / FOLD Pass 5 Phase D EXECUTED. README 223b77648d5579b9fd76da3600f098c33e91bdb6; docs/README 9b6a3abc439dd6525f9b42b965bb41ecac921a4c; CONTRIBUTING bae2d717b7f971273bb0c3cf3d767c9ceab6dc6b; AGENTS 58ccbf3c11833c1d9d0da6b1779159392edb5e37; CLAUDE 996a2ce55f61aacb4ad0dbc4c0b1f26c80828df9. Editable current-facing broad-gap wording cleared; reconciled-but-unaccepted contract + arbitrary selection [GAP] stated; implementation gate/permanent bans preserved. Human-authored law conflict and frozen staking text intentionally untouched. No src/. coord.sh NOT_RUN.
+AGENT: Astra-law-provenance
+BASE: 5ce84af5739218647761e26c552592dde07876b0
+SINCE: 2026-09-21T01:14:00Z
+NOTE: User-directed ROOT / TOUCH / FOLD Pass 6 Phase B. Reclassify only the current remaining gap in pointer-emission.md + systems-manifest.md from implied automatic chooser/selection process to arbitrary non-root relation-assertion provenance/authority/ownership. Preserve RootTouch closed special case, constructor law, historical receipts, gate-question campaign ownership, and acceptance gate. No selector/interface/code. No src/. Connector claim; coord.sh NOT_RUN.
