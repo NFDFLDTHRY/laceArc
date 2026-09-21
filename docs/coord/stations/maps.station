@@ -1,7 +1,7 @@
-STATUS: FREE
+STATUS: HELD
 STATION: maps
 OWNS: docs/reason-model-map.md docs/rust-nostd-*.md docs/atomic-primitives-map.md docs/clock/gearing-code-1to1.md docs/coherence-audit*.md docs/clock/system-mathematical-model.md docs/defrag-plan.md docs/plans/** docs/namespace-register.md docs/*.md (catch-all: any unmatched file at the docs/ root)
-AGENT: -
-BASE: -
-SINCE: -
+AGENT: Claude-Projection
+BASE: 625979a3ba05e4995802398e2afbb73be5adfcfd
+SINCE: 2026-09-21T21:03:24Z
 NOTE: Lab Source Architecture Pass 1 COMPLETE and receipt finalized. Global ASCII Pass 31 is the final semantic edit; all source families route through the lab; Pass 30 and retention/materialization GAP preserved; no implementation or acceptance.

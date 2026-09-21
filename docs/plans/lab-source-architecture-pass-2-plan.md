@@ -1,6 +1,6 @@
 # LAB SOURCE ARCHITECTURE — Pass 2 PLAN · harvest the behavioral family, run it
 
-**Status:** **`PLAN`** · not executed. **Station:** maps (`Claude-Projection` · BASE `43b8146`).
+**Status:** **`EXECUTED`** 2026-09-21 → [findings](lab-source-architecture-pass-2-findings.md). **`F1` and `F3` both fired.** `F1`: four retention mechanisms exist — and none is stateable, so `F1` and `F3` fired together. `F3`: **19 of 32 mechanisms are not stateable**, a majority, which indicts the bench and not the sources. **Every behavioral candidate derives 0 of 6; only `root_touch` — ruling `H1`, the human — derives anything.** **Station:** maps (`Claude-Projection` · BASE `43b8146`).
 **Campaign:** Lab Source Architecture. **Pass:** 2.
 **Implementation:** none. No `src/`, no Cargo, no runtime gate, no Core code.
 **Acceptance:** unchanged. [`pointer-emission.md`](../pointer-emission.md) remains unaccepted. The current Core-adjacent `[GAP]` is **exact sampling-derived retention / materialization**.

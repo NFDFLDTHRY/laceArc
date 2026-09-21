@@ -115,6 +115,45 @@ def pointability(i, lace, roots):
     return None
 
 
+def ric_faithful(i, lace, roots):
+    """HCC-A line 33: RIC preserves external structure as faithfully as possible.
+
+    Faithful preservation proposes no relation. It is an input discipline,
+    not an emission rule.
+    """
+    return None
+
+
+def f5_reject(i, lace, roots):
+    """Water line 449, F5 Reject: non-computable claims -> INVALID.
+
+    Every arrival on a word stream carries an index the moment it lands, so
+    nothing is non-computable and nothing is rejected. F5 is a doorman with
+    no one to turn away.
+    """
+    return None
+
+
+def f3_pair(i, lace, roots):
+    """Water line 438, F3 Pair: input two OBS nodes, output a DELTA node.
+
+    F3 requires two OBS and names no way to choose them. It is a CONSTRUCTOR,
+    not a chooser -- the same shape as the gap it would have to fill.
+    """
+    return None
+
+
+def i_a2_sharedness(i, lace, roots):
+    """Water line 320, I-A2: sharedness optional at OBS, MANDATORY at DELTA.
+
+    A DELTA pairs two OBS inventories -- two parties. D1 is one strand from
+    one party, so I-A2 can never be satisfied in a single-strand trace at
+    all. The Proof Ledger's relation presupposes a second inventory Lace
+    does not have.
+    """
+    return None
+
+
 def adjacent_pairs(i, lace, roots):
     """Ruled out by the panel itself. Included so the bench can kill it."""
     ws = [r for r in lace if r["type"] == "WORD"]
@@ -126,7 +165,11 @@ def adjacent_pairs(i, lace, roots):
 # name, rule, provenance -- where the candidate came from. Printed, never weighed.
 CANDIDATES = [
     ("words_only",     words_only,     "editor · null hypothesis"),
-    ("pointability",   pointability,   "clipboard · Water Specs I-A1"),
+    ("pointability",   pointability,   "behavioral · Water L318 I-A1"),
+    ("ric_faithful",   ric_faithful,   "behavioral · HCC-A L33 RIC"),
+    ("f5_reject",      f5_reject,      "behavioral · Water L449 F5 Reject"),
+    ("f3_pair",        f3_pair,        "behavioral · Water L438 F3 Pair"),
+    ("i_a2_sharedness", i_a2_sharedness, "behavioral · Water L320 I-A2"),
     ("root_touch",     root_touch,     "ruling H1 · witnessed D1 row 0004"),
     ("adjacent_pairs", adjacent_pairs, "graphics · ruled out by D1 itself"),
 ]
@@ -148,7 +191,7 @@ def main():
         o = Oracle(golden)
         lace, by_rule = run(rule, words, golden, o)
         d = exact(lace, golden)
-        print(f"{name:<16}{prov:<34}{len(by_rule):>8}{len(o.supplied):>8}"
+        print(f"{name:<17}{prov:<34}{len(by_rule):>8}{len(o.supplied):>8}"
               f"{('yes' if d is None else 'no'):>7}  "
               f"{'-' if d is None else f'row {d:04d}'}"
               f"{'  rows ' + ','.join(f'{x:04d}' for x in by_rule) if by_rule else ''}")
