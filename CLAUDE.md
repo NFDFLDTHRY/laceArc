@@ -14,9 +14,10 @@ section you are using.
 
 The three that get broken first:
 
-- **No `src/`.** Core may not be implemented until `docs/pointer-emission.md`
-  exists as prose and the human has accepted its exact content. File existence
-  alone is not acceptance. An unanswered draft does not open the gate.
+- **No `src/`.** `docs/pointer-emission.md` now exists as a reconciled but
+  **unaccepted** draft. Binary Join/current growth mechanics being written does
+  not open the gate: the human must accept the exact content, arbitrary relation/
+  sample selection remains `[GAP]`, and every task-specific premise must be resolved.
 - **No second store.** No Star table, graph DB, embedding store, definition
   table, or N-dimensional storage. The append-only 1D array is the only store.
 - **Mark `[GAP]`** where the source is silent. Do not close a gap with a
@@ -28,7 +29,7 @@ do not create another implementation branch before the current task is proven.
 
 ## Working in this repo
 
-There is no Lace Core implementation to install, build, or run. Layer III HTML viewers and steward scripts do exist; their behavior is not evidence that Core exists or that emission is accepted. Documentation checks:
+There is no Lace Core implementation to install, build, or run. Layer III HTML viewers and steward scripts do exist; their behavior is not evidence that Core exists or that the reconciled pointer contract has been human-accepted. Documentation checks:
 
 ```bash
 .claude/hooks/check-docs.sh
