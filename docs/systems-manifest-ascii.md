@@ -22,6 +22,10 @@
 
 ## Pass 30 — current sampling / search reconciliation overlay
 
+**Pass-30 final subordinate verification:** law, graphics, prompts, kit, clipboards, math/model maps, and Rust planning were reconciled before this final companion pin. A stale-wording sweep caught and repaired two current subordinate lines before this re-pin; historical/source-silence text remains intentionally preserved.
+
+
+
 **Authority split:** Graphic D + current law own retained rows; H7–H12 own the sampling amendment; Passes 1–5 of SAMPLING / DENSITY / EMERGENCE supply maps-level tested consequences. Graphic C remains projection evidence and does **not** prove the sampler.
 
 \`\`\`
