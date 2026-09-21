@@ -7,7 +7,7 @@
 **Store:** Graphic D. C is the N-D presentation reading of the same strand.  
 **Not this file:** Graphic A ASCII, Graphic B ASCII, D1 tape, Hands-manifest spine (`docs/systems-manifest-ascii.md`), HCC/Cup C*, `src/`, POINTER emission answers.
 
-**Current law qualification (ROOT / TOUCH / FOLD Pass 5):** Graphic C remains an N-D presentation reading, not storage law. Current law now settles binary Join, RootTouch, POINTER→POINTER participation, and finite-sample grounding. **Arbitrary non-root-touch relation/sample selection remains `[GAP]`; C6 route-family labeling/discrimination also remains `[GAP]`.** Historical C-pass G2 stamps below remain dated source-reading records.
+**Current law qualification (SAMPLING / DENSITY / EMERGENCE Pass 6):** Graphic C remains an N-D presentation reading, not storage law. Later human rulings separately establish a derived 2D position×scale sampling working surface; **that sampler is not claimed as a C3 source reading**. Current law keeps binary Join, RootTouch, POINTER→POINTER participation, and the one-store fence. **Exact sampling-derived retention/materialization remains `[GAP]`; C6 route-family labeling/discrimination also remains `[GAP]`.** Historical C-pass G2 stamps below remain dated source-reading records.
 
 
 ## Current law qualification — not a Graphic-C source amendment
@@ -21,9 +21,10 @@ Graphic C remains the N-D presentation source reading. The following is a **curr
   where either operand may already be a POINTER/Join point.
 - Recursive Join points are real rows of Graphic-D Lace.
 - The 2D / 3D / N-D dot-to-dot rendering remains a projection of those retained participation paths.
+- **Sampler / projection distinction:** the later human-ruled 2D sampling surface is derived working machinery over position × scale; Graphic C's 2D/3D/N-D renderings remain read-only presentations. The two derived objects must not be collapsed.
 - C11 no-write-back remains absolute.
 - C6 dictionary / document / conversation / provenance families remain **views / labels**, not row types; how those families are discriminated or labeled remains [GAP].
-- Current law does **not** establish an automatic arbitrary relation/sample chooser. Selection remains [GAP].
+- Current human rulings reject an arbitrary semantic chooser as the active model: sampling discovers structure across scale. The exact retention/materialization condition remains [GAP].
 
 Current split:
 
@@ -33,7 +34,7 @@ Current split:
 | adjacency-alone trigger | closed false |
 | RootTouch | closed |
 | POINTER→POINTER / relation-among-relation storage | closed |
-| arbitrary relation/sample selection | [GAP] |
+| sampling-derived retention/materialization | [GAP] |
 | C6 family labels / discriminator | [GAP] |
 
 The historical C7/C11/G2 iteration text below is preserved as dated source-reading history.
