@@ -1,7 +1,7 @@
-STATUS: HELD
+STATUS: FREE
 STATION: law
 OWNS: AGENTS.md CLAUDE.md docs/staking-the-workspace.md docs/law-why-these-documents.md docs/systems-manifest.md docs/pointer-emission.md docs/references.md CONTRIBUTING.md README.md .gitignore LICENSE docs/README.md
-AGENT: Astra-sampling-reconcile
-BASE: df38b4328922e630f26b227d96518b5b0fe8efd4
-SINCE: 2026-09-21T20:45:00Z
-NOTE: Pass 6 final stale correction. Deeper systems-manifest current sections still carry provenance/selection-era wording despite the earlier top/cross-piece reconciliation. Replace those active blocks with retention/materialization and narrowed search/traversal status only; preserve historical sections and acceptance. coord.sh NOT_RUN.
+AGENT: -
+BASE: -
+SINCE: -
+NOTE: Pass 6 final manifest stale correction COMPLETE. Deeper I4-7 / boundary / open-questions / pointer-status / executive-seam provenance-era blocks now use sampling-derived retention/materialization and narrowed read/search status. Historical provenance-era records remain preserved; acceptance absent. coord.sh NOT_RUN.
