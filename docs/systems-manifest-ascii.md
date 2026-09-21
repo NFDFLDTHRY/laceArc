@@ -2,21 +2,124 @@
 
 **Not the manifest.** [`systems-manifest.md`](systems-manifest.md) is the Hands contract map; this is an ASCII reading of it and settles nothing it does not.
 
-**Current reading qualification, 2026-09-20:** read the [repository update qualification](#repository-update-pass-1--current-qualification) and [Pass 29](#pass-29--iteration-4-pass-4--root--touch--join-propagation) alongside the passages below. Pass 29 carries the reconciled current LAND / ROOT / RootTouch / binary Join / finite-sample grounding mechanics and narrows the current Core-adjacent gap to arbitrary relation/sample selection. Passes 1–28 remain records of their own readings; their stamps do not establish present acceptance. HCC-A, Coffee Cup, and Water are conceptual reference documents.
+**Current reading qualification, 2026-09-21:** read the Pass-30 sampling reconciliation overlay below as the current companion state. Pass 29 and Passes 1–28 remain dated records of their own readings; their stamps do not establish present acceptance. Current law carries LAND / ROOT / RootTouch / binary Join plus the human-ruled derived 2D sampling/search architecture. The active Core-adjacent gap is exact sampling-derived retention/materialization. HCC-A, Coffee Cup, and Water remain conceptual reference documents / behavioral-goal sources, not holder machinery or runtime dependencies.
 
-**Executed passes:** [1](systems-manifest-ascii-pass-1-plan.md) · [2](systems-manifest-ascii-pass-2-plan.md) · [3](systems-manifest-ascii-pass-3-plan.md) · [4](systems-manifest-ascii-pass-4-plan.md) · [5](systems-manifest-ascii-pass-5-plan.md) · [6](systems-manifest-ascii-pass-6-plan.md) · [7](systems-manifest-ascii-pass-7-plan.md) · [8](systems-manifest-ascii-pass-8-plan.md) · [9](systems-manifest-ascii-pass-9-plan.md) · [10](systems-manifest-ascii-pass-10-plan.md) · [11](systems-manifest-ascii-pass-11-plan.md) · [12](systems-manifest-ascii-pass-12-plan.md) · [13](systems-manifest-ascii-pass-13-plan.md) · [14](systems-manifest-ascii-pass-14-plan.md) · [15](systems-manifest-ascii-pass-15-plan.md) · [16](systems-manifest-ascii-pass-16-plan.md) · [17](systems-manifest-ascii-pass-17-plan.md) · [18](systems-manifest-ascii-pass-18-plan.md) · [19](systems-manifest-ascii-pass-19-plan.md) · [20](systems-manifest-ascii-pass-20-plan.md) · [21](systems-manifest-ascii-pass-21-plan.md) · [22](systems-manifest-ascii-pass-22-plan.md) · [23](systems-manifest-ascii-pass-23-plan.md) · [24](systems-manifest-ascii-pass-24-plan.md) · [25](systems-manifest-ascii-pass-25-plan.md) · [26](plans/lace-context-iter6-pass-3-findings.md) · [27](plans/lace-context-iter7-pass-3-audit.md) · [28](plans/reduction-pass-3-findings.md) · [29](plans/math-execution-root-touch-fold-pass-5-findings.md). A new pass is linked here once it is executed.
+**Executed passes:** [1](systems-manifest-ascii-pass-1-plan.md) · [2](systems-manifest-ascii-pass-2-plan.md) · [3](systems-manifest-ascii-pass-3-plan.md) · [4](systems-manifest-ascii-pass-4-plan.md) · [5](systems-manifest-ascii-pass-5-plan.md) · [6](systems-manifest-ascii-pass-6-plan.md) · [7](systems-manifest-ascii-pass-7-plan.md) · [8](systems-manifest-ascii-pass-8-plan.md) · [9](systems-manifest-ascii-pass-9-plan.md) · [10](systems-manifest-ascii-pass-10-plan.md) · [11](systems-manifest-ascii-pass-11-plan.md) · [12](systems-manifest-ascii-pass-12-plan.md) · [13](systems-manifest-ascii-pass-13-plan.md) · [14](systems-manifest-ascii-pass-14-plan.md) · [15](systems-manifest-ascii-pass-15-plan.md) · [16](systems-manifest-ascii-pass-16-plan.md) · [17](systems-manifest-ascii-pass-17-plan.md) · [18](systems-manifest-ascii-pass-18-plan.md) · [19](systems-manifest-ascii-pass-19-plan.md) · [20](systems-manifest-ascii-pass-20-plan.md) · [21](systems-manifest-ascii-pass-21-plan.md) · [22](systems-manifest-ascii-pass-22-plan.md) · [23](systems-manifest-ascii-pass-23-plan.md) · [24](systems-manifest-ascii-pass-24-plan.md) · [25](systems-manifest-ascii-pass-25-plan.md) · [26](plans/lace-context-iter6-pass-3-findings.md) · [27](plans/lace-context-iter7-pass-3-audit.md) · [28](plans/reduction-pass-3-findings.md) · [29](plans/math-execution-root-touch-fold-pass-5-findings.md) · **30 = SAMPLING / DENSITY / EMERGENCE Pass 6 reconciliation (this current overlay; receipt in plans/sampling-density-emergence-pass-6-findings.md).**
 
 **Authority:** `docs/systems-manifest.md`. Companion, not a replacement.  
 **Hands:** Graphics A–D. Shoe in hands.  
 **Not this file:** H×C×W oil, five-stake imports, `src/`, POINTER emission answers.
 
-**Current status after Pass 29:** POINTER construction is no longer a broad [GAP]. LAND, unseen→ROOT, seen→RootTouch Join, binary Join, WORD/POINTER operands, backward same-line legality, finite-sample n+1 grounding, POINTER→POINTER participation, and adjacency-as-trigger=false are current law. **Arbitrary non-root-touch relation/sample selection remains [GAP].** Acceptance remains absent.
+**Historical status at Pass 29:** POINTER construction was no longer a broad [GAP]; that pass still framed the residual as arbitrary non-root-touch relation/sample selection. **Pass 30 supersedes that residual as current:** human rulings H7–H12 establish sampling as relationship discovery; exact sampling-derived retention/materialization remains [GAP]. Acceptance remains absent.
 
 **Update wave · Iteration 2:** Pass **13** = Iteration-2 Pass **1** · **delta admission**. Pass **14** = Iteration-2 Pass **2** · **leftovers / FM audit / coherence**. Pass **15** = Iteration-2 Pass **3** · **kit-door / Iter2 delta mechanism mesh**. Pass **16** = Iteration-2 Pass **4** · **mechanism↔ASCII rigor map** (**P16-X**; mirror Pass 10 / Update-wave Pass 4 P4-X spirit). Pass **17** = Iteration-2 Pass **5** · **Shadow Order Proposal** (**P17-P**; light **P17-X**; mirror Pass 11 / Update-wave Pass 5 P5-X/O/P/R spirit · Iter2 kit-door steward beside **P11-P**). Pass **18** = Iteration-2 Pass **6** · **DIAGRAM SOUND** (**P18-A** / **P18-P** / **P18-X** / **P18-F/O** / **P18-R**; mirror Pass 12 / Update-wave Pass 6 P6-A/P/X/F/O/R spirit · whole companion Iter1+Iter2). Iteration **1** = linear Passes **7–12** (tip **DIAGRAM SOUND WITH OPENS**; **P10-X** / **P12-X** stand; **P11-P** stands for G-III). G2 / Φ stay `[GAP]`.
 
 **Update wave · Iteration 3:** Pass **19** = Iteration-3 Pass **1** · **delta admission + mechanism/systems-level Δ map** (quiet-door **#6** NEW OPEN/cite · OPEN-with-cause (hologram CLOSED pin `f568275`) · #1/#3 OPEN-with-cause refresh · #4 leftover / #5 note-only cite-check · nine shelves reconfirm; station → disposition → systems slot; **no invent G-KD-6 Core**). Pass **20** = Iteration-3 Pass **1 completion** / **1b** · **interaction contracts map** (**P20-X**; mirror Pass 10 / Pass 16 rigor spirit · retargeted to who may read / write / cite / participate under Contracts I / II / Layer III · IX-* edges · KEEP·FORBID·MAP; Pass 19 Δ board retained; **no invent G-KD-4/5/6/7 Core**; no quiet-door→I). Pass **21** = Iteration-3 Pass **2** · **leftovers / FM audit / Iter3 coherence** (mirror Pass 14 / Pass 8 shape; #4 leftover OPEN · #5 note-only · #6 OPEN/cite honesty · #7 note-only · nine shelves · post-P20 thin drift; quiet-door≠Core · hologram CLOSED≠Core close · #6≠Core clock · Orders NON-binding · III↛I; Iter3 D1–D6; Pass 19/20 retained; Pass 18 **DIAGRAM SOUND WITH OPENS** retained). Pass **22** = Iteration-3 Pass **3** · **Iter3 delta / mechanism mesh** (thin **G-KD-6** cite-card adjunct beside G-KD · **not** Core invent · G-KD-1/3 CONFIRM pointer · **P22-M** · cross-walk; #4 leftover · #5/#7 note-only honesty; retained P15-M / P9-M / G-III / IX-*; Pass 19–21 retained; Pass 18 **DIAGRAM SOUND WITH OPENS** retained). Pass **23** = Iteration-3 Pass **4** · **mechanism↔ASCII rigor map** (**P23-X**; mirror Pass 16 / Pass 10 P4-X / P16-X spirit · Iter3 retarget; G-KD-6 cite-card CONFIRM · P22-M map · IX-* retained; thin Core CONFIRM to **P10-X**/**P12-X**/**P16-X**; #4 leftover · #5/#7 note-only; no invent G-KD-6 Core / G-KD-4/5/7; Pass 18–22 retained; G2/Φ `[GAP]`). Pass **24** = Iteration-3 Pass **5** · **Shadow Order Proposal** (**P24-P**; light **P24-X**; mirror Pass 17 / Pass 11 P5-X/O/P/R spirit · Iter3 surfaces steward beside **P11-P** + **P17-P**; G-KD-6 cite · IX-* · #4 leftover · #5/#7 note-only · #6 OPEN-with-cause · Piece 13 dual · Hands A–D; no invent G-KD-4/5/6-Core/7; Pass 18–23 retained; G2/Φ `[GAP]`). Pass **25** = Iteration-3 Pass **6** · **DIAGRAM SOUND** (**P25-A** / **P25-P** / **P25-X** / **P25-F/O** / **P25-R**; mirror Pass 18 / Pass 12 P6-A/P/X/F/O/R spirit · whole companion Iter1+Iter2+Iter3 + all three Order Proposals; cite Pass 18 tip; do not redo from scratch; #4 leftover · #5/#7 note-only · #6 OPEN-with-cause · #8 note-only cite; no invent G-KD-4/5/6-Core/7/8; no soft FORBID; G2/Φ `[GAP]`). Iteration **2** = linear Passes **13–18** (tip **DIAGRAM SOUND WITH OPENS**; #4 leftover · #5 note-only stay honest). Iteration **1** = linear Passes **7–12** (tip **DIAGRAM SOUND WITH OPENS**). G2 / Φ stay `[GAP]`.
 
 **Update wave · Iteration 4:** Pass **26** = Iteration-4 Pass **1** · **delta admission** (iteration 6 of the verification programme, convened by the human 2026-09-19 as *personal-context alignment and the shape of the crate*; Δ-Occ CONFIRM · Δ-Law OPEN **#13** · Δ-Target **G-III-4a** adjunct · Δ-Carry **F-Carry** note · Δ-Mem note-only · Δ-Shape reserved for the pass 6 receipt; no invent Φ · no fill G2 · no tenth shelf · no Core redraw). Pass 25 **DIAGRAM SOUND WITH OPENS** tip extended, not redone. G2 / Φ stay `[GAP]`. Pass **27** = Iteration-4 Pass **2** · **systems-level audit** (**P27-A** edge-by-edge walk · **P27-F** three thin captions · **P27-D** six missing boxes admitted cite-only: Carrier · Hopper · Seed corpus · Frontier · refuse edge · Layer III Runtime board · **P27-R** verdict *SOUND as Core · INCOMPLETE as deliverable, now drawn*; OPEN **#14** · **#15**; no redraw; G2 / Φ `[GAP]`). Pass **28** = Iteration-4 Pass **3** · **execution-model reading + door + roles** (the reduction: Σ · six transitions · I1–I6 · **M1 CONFIRMs** *shared state = L* · door S of 21 · roles board cite-only; no Core change; G2 / Φ `[GAP]`).
+
+---
+
+## Pass 30 — current sampling / search reconciliation overlay
+
+**Authority split:** Graphic D + current law own retained rows; H7–H12 own the sampling amendment; Passes 1–5 of SAMPLING / DENSITY / EMERGENCE supply maps-level tested consequences. Graphic C remains projection evidence and does **not** prove the sampler.
+
+\`\`\`
+                         Contract II — Arrival
+                                  |
+                                  v
+                    +---------------------------+
+                    |  1D AUTHORITATIVE LACE    |
+                    |  WORD | POINTER            |
+                    |  append-only, index forever|
+                    +-------------+-------------+
+                                  |
+                    +-------------+-------------+
+                    |                           |
+          unseen WORD -> ROOT         seen WORD -> RootTouch
+                    |                           |
+                    +-------------+-------------+
+                                  |
+                                  v
+                    DERIVED 2D SAMPLING
+                    position x sample scale
+                    reconstructible / disposable
+                    NOT a second authoritative store
+                                  |
+                    recurrence / overlap /
+                    multi-scale ridges
+                                  |
+                                  v
+                    +---------------------------+
+                    | [GAP] RETAIN / MATERIALIZE|
+                    | exact general condition    |
+                    | ephemeral sample -> address|
+                    +-------------+-------------+
+                                  |
+                                  v
+                    RETAINED POINTER TOPOLOGY
+                    binary Join over earlier
+                    WORD / POINTER points
+                    cross-scale allowed
+                    POINTER -> POINTER allowed
+                                  |
+                                  v
+                    DERIVED STAR SEARCH
+                    + lexical frontier
+                    + repeated-pattern frontier
+                    + pointer witness paths
+                    + neighboring-star frontier
+                    explicit expansion, no closure default
+                                  |
+                                  v
+                    disposable replay handle
+                    SearchHandle =
+                    through + anchor + tagged item
+                    rebuild from immutable Lace prefix
+\`\`\`
+
+### Pass-30 hard fences
+
+\`\`\`
+2D SAMPLER                         GRAPHIC-C / LAYER-III PROJECTION
+derived working machinery          derived read-only presentation
+position x scale                    2D / 3D / N-D shadow
+may expose structural evidence      reads retained participation
+NOT durable truth                   NOT durable truth
+NOT a second store                  NOT a coordinate store
+        |                                  |
+        +---- neither may write Lace ------+
+\`\`\`
+
+- Sampling observation != retained POINTER append != search/projection.
+- Exact recurrence is not a universal retention trigger.
+- Not every sampled cell becomes a row.
+- No semantic relation chooser is reintroduced.
+- No Star table, recurrence table, reverse-pointer database, embedding store, or graph DB becomes authoritative.
+- Derived search expansion is a read, not a Core query/write interface.
+- SearchHandle is disposable replay metadata, not stored memory.
+- RootTouch remains the closed retention special case.
+- G1 word equality/tokenization remains OPEN.
+- General retention/materialization remains OPEN.
+- Human acceptance of the pointer draft remains ABSENT.
+- No src/, Cargo, Rust, or implementation branch is authorized.
+
+### Conceptual-reference fence
+
+\`\`\`
+HCC-A / The Coffee Cup / Where the Water Is Loud
+        |
+        +--> conceptual reference / behavioral-goal sources
+        +--> Coffee Cup also used as a bounded prose stress specimen
+        |
+        X--> holder machinery
+        X--> runtime dependency
+        X--> Lace row type / Core module
+\`\`\`
+
+### Historical note
+
+Pass 29 and ROOT / TOUCH / FOLD Pass 6 are retained as the dated path that narrowed the former chooser/provenance question. Pass 30 does not delete them. It moves their active conclusion behind the later human sampling rulings: the current unresolved seam is retention/materialization, not who semantically chooses a relation.
 
 ---
 
