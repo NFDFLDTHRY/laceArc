@@ -1,12 +1,14 @@
 # Pointer emission
 
-**Status:** DRAFT. **Object:** claimed. Law station.  
+**Status:** DRAFT · **Pass 4 reconciled current rule** · **Object:** claimed. Law station.  
 **Not accepted.** Not implemented. `src/` remains forbidden.  
-Campaign Answers on Q0 / Q1 / Q5 / slot II are **SPOKEN**. That is not acceptance.
+The historical prefix-device Pass-7 Answers remain below as dated receipts. They are **not the current answer surface where Pass 4 supersedes them**.
 
-**Φ-morphism** is stated below. **Φ-schedule** is Q1 (now SPOKEN, not accepted).
+**Current constructor:** binary `Join(a,b)` over earlier same-line Lace points.  
+**Current remaining [GAP]:** what upstream process selects an arbitrary non-root-touch ordered relation/sample.  
+**Acceptance:** still absent.
 
-Three rules used to be one sentence. That sentence was the blocker.
+The old single Φ-schedule blocker has been decomposed into arrival/root/touch, physical Join construction, and upstream relation/sample selection.
 
 | Rule | Still | Not |
 |---|---|
@@ -30,8 +32,119 @@ Do not silence the graphics with a default. Do not treat this draft as Core code
 ## Authority
 
 - Four graphics in `docs/graphics/` (A–D) and `docs/systems-manifest.md` derived from them.
-- This campaign (prefix-device passes 1–7): dictionary as seed on L; punch-card pays pointers into that seed; original sentence object is not kept; word-to-the-machine is the defining pointer cluster.
-- Partial algebra: [`math-execution-model.md`](math-execution-model.md).
+- Prefix-device passes 1–7 are retained as historical campaign evidence.
+- Current human rulings H1–H6 are recorded and analyzed by [ROOT / TOUCH / FOLD passes 1–4](plans/math-execution-root-touch-fold-pass-4-findings.md).
+- Current mathematical construction: [`math-execution-model.md`](math-execution-model.md).
+- The four graphics remain upstream source; this file reconciles their storage constraints with the explicit human rulings without turning the mathematical derivations into graphic quotes.
+
+## Current reconciliation — ROOT / TOUCH / FOLD Pass 4
+
+**Current. Not accepted.** This section supersedes the current-status readings of the historical Pass-7 Answer lines below; the historical text remains preserved as evidence.
+
+### Current growth rule
+
+Every successful word arrival lands on the one append-only Lace:
+
+\[
+\mathsf{Arrive}(v):
+L\mapsto L^\smallfrown(\mathsf{WORD},v).
+\]
+
+Let \(j=|L|\) before the append.
+
+If \(v\) was unseen, the new WORD row at \(j\) becomes the root for that identity.
+
+If \(v\) was already seen, the earlier root remains the root and the new occurrence is retained as another WORD row. The required root touch is:
+
+\[
+\mathsf{Join}(j,\mathrm{Root}_L(v)).
+\]
+
+D1 rows 0003 + 0004 are the bounded source witness for that later-occurrence/root-touch pair.
+
+### One physical POINTER constructor
+
+For selected ordered earlier Lace points \(a,b\):
+
+\[
+\boxed{
+\mathsf{Join}(a,b):
+L\mapsto L^\smallfrown(\mathsf{POINTER},a,b)
+}
+\]
+
+with \(a<|L|\) and \(b<|L|\) before the new row is appended.
+
+Current law-side basis:
+
+- D2 presents the two-reference POINTER schema;
+- D1 is 6/6 binary;
+- D6 permits POINTER→POINTER;
+- H5 says arbitrary existing portions can become one point;
+- H6 gives the \(n+1\) grounding construction.
+
+The current governing constructor is therefore binary. The earlier Q2 conflict is retained below only as dated campaign history.
+
+### Finite-sample grounding
+
+For a selected finite ordered sample \(S=(s_1,\ldots,s_n)\):
+
+\[
+P_1=s_1,
+\qquad
+P_{m+1}=\mathsf{Join}(P_m,s_{m+1}).
+\]
+
+Each \(n\to n+1\) extension appends one new POINTER row. Already-grounded branches may also be joined. No global sample-size registry is stored.
+
+### What remains open
+
+The constructor does **not** discover a relation.
+
+For arbitrary non-root-touch participation, the unresolved question is:
+
+\[
+\boxed{
+\text{what upstream process selects the ordered operands / sample?}
+}
+\]
+
+Current placement:
+
+- the selected ordered operands are **inputs / preconditions to Join**;
+- Core validates that they are earlier same-line indices and appends the POINTER;
+- no source-backed automatic chooser has been established;
+- Contract II remains raw word/punch-card input and is not expanded to carry a hidden sample channel;
+- no query/write operator is invented;
+- route/document boundaries are not promoted to selection metadata.
+
+RootTouch is the closed special case because H1 fixes its operands: new occurrence + word root.
+
+### Current question table
+
+| Question | Current status |
+|---|---|
+| Q0 WORD admission | **CLOSED by human ruling:** every successful arrival appends WORD |
+| unseen arrival | **CLOSED by human ruling:** new WORD becomes root |
+| seen arrival | **CLOSED:** another WORD occurrence; root stays first occurrence |
+| Q1 root touch | **CLOSED by human ruling + D1 witness:** Join(new occurrence, root) |
+| Q1 physical relation constructor | **CLOSED:** selected ordered pair emits binary Join |
+| Q1 arbitrary relation/sample chooser | **[GAP]** |
+| Q2 arity | **CLOSED current constructor: 2** |
+| Q3 adjacency trigger | **CLOSED no** |
+| Q4 earlier/same-line refs | **CLOSED**; earlier is checked by operand index before append |
+| Q4 target kind | **CLOSED:** WORD or POINTER |
+| Q5 later pass | **WORD occurrence + RootTouch Join** |
+| Slot II word identity | **WORD/root anchors lexical identity; definition-route Join structure participates in the star and does not replace the root** |
+| G1 word equality / tokenization | **[GAP]** |
+
+### Acceptance state
+
+This reconciliation is still a draft law surface.
+
+It does **not** authorize implementation until the human explicitly accepts this file in-repo.
+
+---
 
 ## What has already been written toward these questions
 
@@ -87,50 +200,67 @@ reading someone must make against the panel and record here under a live claim �
 and a campaign may not write its own reasoning onto an Answer line.
 
 
-## Φ — partial definition
+## Φ / Join — current constructor
 
-**Status:** morphism stated. Schedule SPOKEN on Q1. Not accepted.
+**Status:** constructor reconciled. Upstream arbitrary relation/sample selection remains \`[GAP]\`. Not accepted.
 
-Two morphisms. Not one device.
+Arrival and POINTER construction are distinct append forms on the same Lace:
 
-```text
-Arrive(v)  :  L  ↦  L 〈 (WORD, v)
+\[
+\mathsf{Arrive}(v):
+L\mapsto L^\smallfrown(\mathsf{WORD},v)
+\]
 
-Φ          :  L × R  ↦  L 〈 (POINTER, r_1, …, r_k)
-             R = { r | 0 ≤ r < |L| }, k ≥ 1, each r_i ∈ R
+\[
+\mathsf{Join}(a,b):
+L\mapsto L^\smallfrown(\mathsf{POINTER},a,b)
+\]
 
-Φ-morphism = that append.
-Φ-schedule = Q1.
-```
+where \(a,b\) are selected ordered indices that already exist on the same line.
 
-`Arrive` is not merged into Φ. Session “next cell = Φ(prefix)” is not `Step`.
+\`Join\` is the current physical realization of the old Φ-morphism.
 
-### CLOSED constraints on the morphism
+### CLOSED constraints on Join
 
 | Constraint | Cite |
 |---|---|
 | Append only, same line | D footer, D1 |
 | Kind is POINTER | D2 |
-| Refs name earlier indices on this line | Q4 |
-| A ref may be WORD or POINTER | Q4 |
-| POINTER→POINTER allowed | D6, Q4 |
-| First unseen v is Arrive, not Φ | Q0 CLOSED + SPOKEN |
+| Exactly two refs in the governing constructor | D2 + D1 6/6 + H5/H6 reconciliation |
+| Refs name earlier indices on this line | D1, Q4 |
+| Either ref may be WORD or POINTER | D6, Q4 |
+| POINTER→POINTER allowed | D6 |
+| Join row is itself Lace and may be referenced later | D6 |
+| Adjacency alone does not select operands or emit Join | D1/Q3 |
 
-Arity k stays **CONFLICT** (Q2). Written here as k ≥ 1. Not promoted to k = 2.
+### Selection boundary
 
-### CLOSED refusals on the schedule (not a when)
+\[
+\mathrm{Select}\;[GAP]
+\longrightarrow
+(a,b)
+\longrightarrow
+\mathsf{Join}(a,b).
+\]
 
-| Refusal | Cite |
-|---|---|
-| Adjacency of WORDs does not fire Φ | Q3 |
-| Not one POINTER per WORD | Q1 Hands |
-| Not every adjacent pair | Q1 Hands |
+The current sources do not establish a general automatic \(\mathrm{Select}\) rule for arbitrary relations.
 
----
+This is the remaining open scheduler input. It is not a missing POINTER shape.
 
-## Required open questions (AGENTS.md)
+RootTouch is the closed selection special case:
 
-Entry admission is Q0. Pointer admission is Q1. They are not one question.
+\[
+(a,b)=
+(\text{new occurrence},\mathrm{Root}(v)).
+\]
+
+
+
+## Historical Pass-7 question surface (retained)
+
+**Historical receipt.** The subsections below preserve the Pass-7 Answer/Stamp state. Use [Current reconciliation — ROOT / TOUCH / FOLD Pass 4](#current-reconciliation--root--touch--fold-pass-4) for current law status. Do not treat superseded Pass-7 Answer lines as current.
+
+Entry admission and pointer construction were historically separated here as Q0/Q1.
 
 ### 0. When is a WORD (entry) appended?
 
@@ -205,7 +335,7 @@ Pointers reference earlier positions in the same line. This constrains Φ-morphi
 | clock tooth / Anchor / Locate | holder gear |
 | option D as total Step | next-cell lens; Arrive still exists |
 
-## Pass 7 — campaign Answers written
+## Pass 7 — historical campaign Answers written
 
 **Status:** EXECUTED. SPOKEN. Not accepted.  
 **Receipt:** [`graphics/prefix-device-pass-7.md`](graphics/prefix-device-pass-7.md).
