@@ -1,6 +1,6 @@
 # Rust `no_std` plans — second reading
 
-**Status:** `[PROPOSAL]` review. One agent. No `src/`. POINTER emission remains `[GAP]`.
+**Status:** `[PROPOSAL]` dated review. One agent. No `src/`. **Current qualification:** binary Join/root-touch/finite-sample mechanics are reconciled in unaccepted draft law; arbitrary non-root-touch relation/sample selection remains `[GAP]`.
 **Station:** maps. Reads the two rust plans, the atomic map, the Pass 1 plan, the hologram IR schema, its viewer binding, the validator and both golden fixtures, the emission draft, and the IMPLEMENTATION LAW block. Writes this file and one README row. Applies no amendment.
 **Relation to Pass 1:** [the Pass 1 plan](atomic-construction-pass-1-plan.md) §4 step 4 names the premise to investigate for each birth. This reading follows three of those to a consequence and hands them back. Pass 1 stays `NOT_RUN` and stays its editor's.
 
@@ -8,14 +8,56 @@ The two plans are careful about the gate. They are less careful about
 each other. Read as one design, they contain three contradictions that no
 amount of emission acceptance will resolve, one process hole that would
 stop the first birth from ever finishing, and one piece of tooling that
-cannot tell the plan from its opposite. None of this touches the `[GAP]`.
-All of it would have surfaced on the first day anyone tried to write
+cannot tell the plan from its opposite. These findings remain independent of the **current arbitrary-selection `[GAP]`** and of human acceptance. Most are plan/process contradictions rather than constructor questions. All of them would have surfaced on the first day anyone tried to write
 `strand/`.
 
 **Severity words used below:** *blocks-birth* — a birth cannot graduate
 as written; *contradiction* — two plan sentences cannot both hold;
 *mislead* — a reader of the artifact would believe something the plan
 does not say; *cosmetic*.
+
+---
+
+## Current qualification — ROOT / TOUCH / FOLD Pass 5
+
+This second reading is a dated analysis of the earlier Rust plans. Its F1–F11 findings and historical evidence remain as written unless explicitly qualified here.
+
+Later law reconciliation changes the premise status of the old G2 bundle:
+
+**Current draft-law constructor facts**
+- successful word arrival appends WORD;
+- unseen WORD becomes root;
+- seen occurrence remains WORD and RootTouches root;
+- POINTER is binary Join(a,b);
+- both operands are earlier same-line entries;
+- WORD and POINTER are legal operand kinds;
+- Join rows may be referenced by later Join;
+- repeated Join grounds finite selected samples;
+- adjacency alone does not emit.
+
+**Still unresolved**
+- arbitrary non-root-touch relation/sample selection;
+- semantic ordered-operand choice for an arbitrary relation assertion;
+- G1 identity/tokenization;
+- exact implementation ownership of selection;
+- human acceptance of pointer-emission.md;
+- the independent capacity/proof/test/dependency issues F1–F11 identified.
+
+The current birth-premise reading is therefore:
+
+| Birth | Current required premises beyond the global acceptance gate | Not assigned here |
+|---|---|---|
+| 1 strand/ | G7 capacity strategy, index width, failure contract; generic section preservation | relation selection |
+| 2 word/ | WORD representation + accepted G1 domain needed for equality-sensitive claims | arbitrary selector |
+| 3 pointer/ | binary Join layout is a draft-law premise; prove earlier/same-line evidence representation and immutable refs | arbitrary operand selection |
+| 4 route/ | append/continuation composition over independently authorized sections | arbitrary relation/sample selector ownership remains open |
+| 5 view_star/ | G1 identity/equality domain + read contract | relation selector |
+| 6 view_proj/ | G5 read/projection fidelity | relation selector |
+| 7 core/ | all required proved predecessors + arrival-surface ownership + accepted law | arbitrary selection ownership still unresolved |
+
+This qualification does **not** decide F1(a) vs F1(b), F2's dependency edge, the proof standard, test-host carve-out, validator defects, arrival ownership, or any branch eligibility.
+
+Known constructor \(\neq\) accepted implementation authorization.
 
 ---
 
@@ -54,18 +96,18 @@ does not say; *cosmetic*.
 **HANDS CITE:** A1 (start empty), D1 footer (one line), the law's *"no alloc unless a FIRST-PARTY branch exists whose ONE task is alloc"*.
 **STAMP:** `[I]` `[INFERENCE]`
 **SEVERITY:** blocks-birth (#1); mislead (a reader concludes emission is the only gate)
-**EVIDENCE:** `alloc` is absent from all seven births. Under `#![no_std]` with no allocator the retained line can only live in a fixed-size array, a caller-supplied backing slice, or a linker-placed region — each is a premise the storage theorem depends on. The `strand/` proof shape is stated *"for ... sufficient declared resources"*; Page B says *"if a branch's claimed theorem needs one, the unresolved premise blocks that claim."* So birth #1 is blocked by G7 whether or not emission is ever accepted. The atomic map says this in one sentence (*"Closing G2 ... does not automatically close G1 or G3–G7"*). No document says which gap blocks which birth. A reader of the crate map's Page G — *"Depend on no later birth"* for `strand/` — concludes that once emission is accepted, `strand/` can begin. It cannot.
-**PROPOSED:** One table, in the branch contracts, birth × premise. First cut, `[INFERENCE]`:
+**EVIDENCE:** `alloc` is absent from all seven births. Under `#![no_std]` with no allocator the retained line can only live in a fixed-size array, a caller-supplied backing slice, or a linker-placed region — each is a premise the storage theorem depends on. The `strand/` proof shape is stated *"for ... sufficient declared resources"*; Page B says *"if a branch's claimed theorem needs one, the unresolved premise blocks that claim."* So birth #1 is blocked by G7 whether or not the reconciled pointer law is eventually accepted. The atomic map says this in one sentence (*"Closing G2 ... does not automatically close G1 or G3–G7"*). No document says which gap blocks which birth. A reader of the crate map's Page G — *"Depend on no later birth"* for `strand/` — concludes that once emission is accepted, `strand/` can begin. It cannot.
+**PROPOSED (dated):** the original birth × premise table below was written before H1–H6 / Pass-4 law reconciliation. Use the **Current qualification** table above for present premise status; preserve this older table as the proposal F4 originally made.
 
-| Birth | Must be accepted before eligible | Not needed by this birth |
+| Birth | Historical proposed premise at this reading | Historical note |
 |---|---|---|
-| 1 `strand/` | G7: capacity strategy, index width, failure signal; section type left parametric | G1 identity, G2 emission |
-| 2 `word/` | G1-*representation* (which bytes are preserved) — not G1-identity | G2 |
-| 3 `pointer/` | arity (G2-partial); slot rule if arity > 1 (manifest Q9); frontier witness (F1) | timing |
-| 4 `route/` | G2 timing and target selection — the gate proper | G4 |
-| 5 `view_star/` | G1-identity (the `value_equal` domain); G4 read | — |
-| 6 `view_proj/` | G5 fidelity conventions; the 1D view needs nothing beyond a strand read | — |
-| 7 `core/` | all of the above at pinned revisions; an arrival home (F11) | — |
+| 1 `strand/` | G7: capacity strategy, index width, failure signal; section type left parametric | then listed G1/G2 as not needed |
+| 2 `word/` | G1 representation | then listed broad G2 as not needed |
+| 3 `pointer/` | then-open arity / slot / frontier witness | arity is now superseded by binary Join; frontier issue F1 remains |
+| 4 `route/` | then-broad G2 timing / target selection | current residual is arbitrary relation/sample selection |
+| 5 `view_star/` | G1 identity + G4 read | still independent of constructor arity |
+| 6 `view_proj/` | G5 fidelity | still independent of constructor arity |
+| 7 `core/` | all predecessors + arrival home | selector ownership remains unresolved |
 
 The law gates *all* code on emission acceptance; this table does not loosen that. It says what *else* must be accepted, birth by birth, so that acceptance of emission is not mistaken for the whole gate.
 
@@ -116,14 +158,14 @@ The validator checks that ids exist, endpoints are doors, and one honesty flag i
 **EVIDENCE:** The golden's transform sequence is `describe_word (word) → constrain_pointer (pointer) → compose_section (route) → retain_section (strand) → …`, and it carries `dataflow` edges `word → route` and `pointer → route`. The viewer moves an orange token along that path. But under the cards, `word/` and `pointer/` have no producing op (F3): they *read* sections that already sit on the strand. Nothing flows *out of* `word/` into `route/` at runtime; `route/` *uses* `word/`'s layout, which is a `call`, and the viewer binding §2 itself warns *"Collapsing `call` into `dataflow` confuses control/use with carrier movement."* The only thing that flows into `route/` is an arrival, and Arrival is a seam band in this IR, not a door. So the picture shows `word/` producing values. The plan says Arrival does. This is the persuasive-wrong-artifact pattern: read-only, fixture-honest, every diag present, and the pipeline it draws is not the pipeline the cards describe.
 **PROPOSED:** Wait for F3. If the cards give `word/` and `pointer/` constructors, the dataflow `word → route` is real and stays. If they do not, the dataflow edges become `arrival(seam) → route → strand`, and `word → route` / `pointer → route` are `call` only. The fixture follows the cards, not the other way round.
 
-### F9 — Two of the emission draft's §4 sub-questions are not gaps; four documents already say so
+### F9 — Historical false gaps in the old emission draft (now reconciled)
 
 **WHERE:** [pointer-emission.md](../pointer-emission.md) §4, sub-questions 1 and 2. Law station — not edited here.
 **HANDS CITE:** D3 *"later entries can reference words or other pointers"*; D6 chain; D1 rows 0007 (→0006, 0004), 0009 (→0008, 0007), 0010 (→0009, 0002).
 **STAMP:** `[CONFLICT]` (draft against source)
 **SEVERITY:** mislead (a `[GAP]` where the picture speaks)
 **EVIDENCE:** The draft asks *"May a POINTER target another POINTER as a general rule, or only in the D6 example chain? Answer: `[GAP]`"* and *"May a POINTER target only WORD? Answer: `[GAP]`."* The crate map (Page H), the branch contracts (source difference 2), the atomic map (K3) and [the close reading](../graphics-close-reading.md) §1 each state that D3 grants the permission in words and D1 witnesses it three times. The law's own rule is *"Mark `[GAP]` where the source is silent."* The source is not silent on kind. It is silent on *when*, and that stays open.
-**PROPOSED:** For the human, in the draft, in words: kind-permission is answered — *a POINTER may reference an earlier WORD or an earlier POINTER (D3; D1 0007/0009/0010)*; "only WORD" is false by source. Timing, selection, arity and adjacency remain `[GAP]`. This closes nothing about emission. It removes a false gap that four plans have to route around.
+**Current status:** Pass 4 reconciled this later. WORD/POINTER operand kinds, binary arity, RootTouch, and adjacency-alone=false are now current draft-law facts. **Arbitrary relation/sample selection remains `[GAP]` and acceptance remains absent.** F9 is retained as the dated finding that correctly identified the target-kind false gap before that reconciliation.
 
 ### F10 — One task, three views; and the order puts the cheapest view behind the hardest premise
 
@@ -183,7 +225,7 @@ the plans get a great deal right.
 | A9 | Close the two §4 kind sub-questions in the draft, in words | F9 | `docs/pointer-emission.md` | law | human only |
 | A10 | `core/` names the arrival function | F11 | branch contracts | maps | Pass 1 editor |
 
-Every row is `[PROPOSAL]`. None fills emission. A1–A2 change the edge
+Every row is `[PROPOSAL]`. None supplies the still-open arbitrary relation/sample selector or human acceptance. A1–A2 change the edge
 count, which four documents and the golden repeat as "nine"; whoever
 applies them updates all five.
 
@@ -218,7 +260,7 @@ nor later. It is one row away in a table the plan will not let it read.
 | Ran | `hologram-ir-validate.py` on the golden (PASS). Six mutations of the golden through the same validator (five PASS, one FAIL — table in F7). `grep` for external loads in `nostd-pipeline.html` (none). Repository link check (green on this tip before this file). |
 | Did not | Hold a cord. Write or compile any Rust. Run Pass 1. Edit any plan, the draft, the golden, the validator or the viewer. Consult independent reviewers — one agent proposed, attacked and resolved. |
 | Physical / graphics | Graphics A–D read earlier in this session at source resolution; D1's eleven rows re-checked against the atomic map's transcription. Physical test: `NOT_PERFORMED`. |
-| Acceptance | `ABSENT`. This file accepts nothing and opens nothing. |
+| Acceptance | `ABSENT`. Pass-4 law reconciliation did not change this; this file accepts nothing and opens nothing. |
 
 **Next narrow question:** which of A1(a) and A1(b) does the human want —
 backward-only as a type law at birth #3 with a tenth edge, or a layout
@@ -233,4 +275,4 @@ If you cannot do it to a shoe lace in your hands, you may not do it to laceArc.
 
 You can tie a knot that refers to an earlier wrap. You cannot tie one that
 refers to a wrap you have not made. A crate that cannot see the cord
-cannot tell the difference. Emission remains `[GAP]`.
+cannot tell the difference. **Binary Join is now a current draft-law premise; arbitrary relation/sample selection remains `[GAP]`, and acceptance remains absent.**
