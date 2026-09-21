@@ -1,9 +1,9 @@
 # Mathematical execution model - ROOT / TOUCH / FOLD Pass 4 findings
 
-**Status:** PHASE A EXECUTED 2026-09-20. **Station:** maps (Astra-math).
+**Status:** **EXECUTED — PHASES A/B/C COMPLETE** 2026-09-20. **Stations:** maps → law → maps.
 **Plan:** [math-execution-root-touch-fold-pass-4-plan.md](math-execution-root-touch-fold-pass-4-plan.md).
 **Phase-A pin:** bf04188421d266df0498ab5e4183fd28a563e032.
-**Scope:** reconciliation analysis only. Law files are still unchanged at this point.
+**Phase-A scope:** reconciliation analysis only. **Phase B then reconciled law exactly from this committed delta; Phase C recorded propagation without editing the global ASCII.**
 **Acceptance:** absent. No src/.
 
 ## 0. Phase-A conclusion
@@ -456,3 +456,161 @@ Pass 4 does not edit these.
 ## Steward test
 
 The law should now say exactly what the machine can do without pretending the machine knows why two arbitrary pieces should relate. The relation's selected operands are enough to build the point. Choosing an arbitrary relation is a separate question and stays named.
+
+
+---
+
+## 13. Phase B — law reconciliation executed
+
+Law was claimed only after Phase A commit and maps release.
+
+Pre-edit target blobs matched the Phase-A preconditions exactly:
+
+- pointer-emission.md: dc01b4fbf23791da91a89427c89646db32ea4689
+- systems-manifest.md: 01587dbe3f894812dc11c72436003cf0d46cf277
+
+### pointer-emission.md
+
+Current reconciliation commit:
+
+**d2df9fd5269c07d3dcba2e0a2ca250dd9ef2ea67**
+
+Historical-scope cleanup:
+
+**3454891c97d1d058cceeae36146a8ca2bf8f6a84**
+
+Result:
+- current rule surface now states LAND/root/RootTouch/binary Join/finite-sample grounding;
+- arbitrary relation/sample selector is the remaining [GAP];
+- Pass-7 answers remain preserved as historical receipts;
+- Q2 current constructor is binary;
+- Q5 current later pass is WORD occurrence + RootTouch Join;
+- Slot II current word identity is WORD/root anchor plus definition-route participation;
+- acceptance remains absent.
+
+### systems-manifest.md
+
+Primary reconciliation commit:
+
+**9f899cc29fe10cf2151e96d6d26f42c6bbf15f0e**
+
+Stale-current-language sweep:
+
+**fc2cc5b861d73f54054c08b85c0638b6b17b2004**
+
+Result:
+- Pieces 2–5 and 7–15 reconciled;
+- control flow replaced with LAND → root/root-touch → selected Join grounding → Continue;
+- I4 interface audit carried;
+- broad pointer-emission gap replaced by arbitrary selection gap;
+- binary Join and recursive N-D participation are current;
+- Contract II remains raw word input;
+- projection remains read-only;
+- no sample registry / N-D store added.
+
+Law released at:
+
+**42888ac2c60991dc869d7ddf582f282d2287a18f**
+
+No human acceptance was fabricated.
+
+---
+
+## 14. Phase C — maps closeout executed
+
+Maps reclaimed after law release.
+
+### Mathematical model authority refresh
+
+Commit:
+
+**65a1ba9cafaf1e4090da2f8b2a472dfad833d4b0**
+
+This changes no mathematics. It updates the model to say:
+- pointer-emission and systems-manifest are now reconciled to the same binary Join mechanics;
+- acceptance remains absent;
+- arbitrary relation/sample selection remains [GAP].
+
+### Propagation docket
+
+Product:
+
+[math-execution-root-touch-fold-pass-4-propagation-docket.md](math-execution-root-touch-fold-pass-4-propagation-docket.md)
+
+Commit:
+
+**a9d1b52e20b94d2a1f792710aab6037c0216d2f9**
+
+The docket scopes, but does not execute:
+- global systems ASCII Pass 29 / Iteration-4 Pass 4;
+- Graphic B/C ASCII qualification;
+- atomic/reason model refresh;
+- environment narrowing from broad sigma gap to selection gap;
+- reduction STEP reconciliation;
+- Rust crate/branch contract premise refresh.
+
+Global ASCII remained untouched in Pass 4.
+
+---
+
+## 15. Final Pass-4 verdict
+
+### Closed / reconciled
+
+- every successful arrival lands as WORD;
+- unseen WORD becomes root;
+- seen occurrence remains WORD and RootTouches root;
+- physical POINTER constructor is binary Join;
+- operands are earlier same-line WORD or POINTER points;
+- repeated Join grounds finite selected samples;
+- n+1 sample extension adds one row;
+- relation-of-relation / N-D storage correspondent is Join-of-Join;
+- adjacency alone does not emit;
+- word identity anchor is WORD/root, not definition cluster;
+- pointer-emission law and manifest now agree with the mathematical model.
+
+### Still open
+
+\[
+\boxed{
+\text{arbitrary non-root-touch relation/sample selection}
+}
+\]
+
+More precisely:
+- selected ordered operands are admitted as Join inputs/preconditions;
+- RootTouch has a closed selector;
+- no automatic arbitrary selector is established;
+- no hidden Contract-II sample channel is admitted;
+- no general query/write action is invented;
+- route boundaries do not currently select samples.
+
+Independent gaps remain, including G1/tokenization, document/provenance boundaries, query/traversal, concurrency, and route-family labels.
+
+### Acceptance / implementation
+
+- pointer-emission.md: reconciled draft, **not accepted**;
+- src/: absent;
+- Cargo: not authorized;
+- implementation gate remains intact.
+
+---
+
+## 16. Pass-4 receipt
+
+| Field | Result |
+|---|---|
+| Phase A maps analysis | **EXECUTED** |
+| Selection matrix | S-A BLOCKED · S-B REFUTED · S-C BLOCKED · S-D BLOCKED · S-E ADMIT boundary |
+| Current automatic chooser | **[GAP]** |
+| Phase B law reconciliation | **EXECUTED** |
+| pointer-emission current law | **reconciled** |
+| systems-manifest current law | **reconciled** |
+| Historical receipts | **preserved** |
+| Acceptance gate | **preserved / absent** |
+| Phase C model authority refresh | **EXECUTED** |
+| Propagation docket | **written** |
+| Global ASCII | **not edited** |
+| Graphics | **not edited** |
+| src/ | **0** |
+| Next | global propagation Pass 29 first, then lower-authority dependent surfaces |
