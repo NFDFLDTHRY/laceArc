@@ -7,7 +7,36 @@
 **Store:** Graphic D. B is the mechanism reading of the same strand.  
 **Not this file:** Graphic A ASCII (`graphic-a-ascii.md` is closed), C, D1 tape, Hands-manifest spine (`docs/systems-manifest-ascii.md`), H×C×W oil, `src/`, POINTER emission answers.
 
-Emission remains `[GAP]`.
+**Current law qualification (ROOT / TOUCH / FOLD Pass 5):** Graphic B still does not itself specify the array constructor. Current law now settles unseen→root, seen→RootTouch Join, binary Join, backward same-line WORD/POINTER operands, and finite-sample grounding. **Arbitrary non-root-touch relation/sample selection remains `[GAP]`.** Historical B-pass G2 stamps below remain records of what B alone did not settle.
+
+
+## Current law qualification — not a Graphic-B source amendment
+
+Graphic B remains the geometric/mechanism source reading. The following is a **current-law cross-reference**, not text attributed to the PNG.
+
+- B8 source fact remains: a touch persists and later wire can re-enter it.
+- Current law maps the **seen-word** retained touch to:
+  \[
+  \mathsf{RootTouch}
+  =
+  \mathsf{Join}(\text{new occurrence},\mathrm{Root}(v)).
+  \]
+- The array-layer physical constructor is binary Join over two selected earlier same-line Lace points.
+- A Join point may itself participate in later Join.
+- B12's three-verb governing-rule box remains exactly a B-source reading; the array constructor comes from current D/law reconciliation, not from B12.
+- For arbitrary non-root-touch relations, **which ordered operands/sample are selected remains [GAP]**.
+
+So the current companion split is:
+
+| Surface | Current status |
+|---|---|
+| root-touch operand choice | closed by current human ruling |
+| physical POINTER / Join constructor | closed |
+| binary arity | closed |
+| POINTER→POINTER participation | closed |
+| arbitrary non-root-touch operand/sample selection | [GAP] |
+
+The historical B8/B12 and iteration tables below are not rewritten. Their older G2 labels record the narrower source-reading state at those passes.
 
 Printed panel numbers on the PNG were not recovered this tick. Working titles B1–B12 are the Hands-map inventory. If a later pass reads a different title on the artwork, the PNG wins.
 
