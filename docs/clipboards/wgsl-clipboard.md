@@ -18,7 +18,7 @@
 |  FORBID: conflating WGSL with WebGPU Device/Queue or with wasm64.    |
 |  KEEP-read: shader-lang mechanics for Shadow projection draw path.   |
 |  FORBID-as-Core-write; NON-binding on Core/src/Phi.                  |
-|  Emission [GAP] sealed.  No src/ until pointer-emission accepted.    |
+|  WGSL supplies no Lace retention rule. Current Lace retention/materialization [GAP] sealed. No src/ until pointer-emission accepted.    |
 |  One strand.                                                         |
 +======================================================================+
 ```
