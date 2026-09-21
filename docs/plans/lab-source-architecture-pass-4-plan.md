@@ -1,13 +1,13 @@
 # LAB SOURCE ARCHITECTURE — Pass 4 PLAN · harvest the source of record, and join the two instruments
 
-**Status:** **`PAUSED` by human 2026-09-21 pending Manifest Reconciliation Pass 1 information mapping.** The experiment below is preserved as planned and is not executed. **Station:** maps. **Base:** `6d7ceb2`.
+**Status:** **`PAUSED` by human 2026-09-21 through Manifest Reconciliation Pass 2 foundation certification.** The experiment below remains unexecuted. Its premise has been corrected against the Pass-32 catalog/contract foundation, but resumption still requires an explicit post-foundation replan. **Station:** maps. **Base:** `6d7ceb2`.
 **Prior:** [pass 1](lab-source-architecture-pass-1-plan.md) · [findings](lab-source-architecture-pass-1-findings.md) — the families and their fences.
 [pass 2](lab-source-architecture-pass-2-plan.md) · [findings](lab-source-architecture-pass-2-findings.md) — the behavioral harvest.
 [pass 3](lab-source-architecture-pass-3-plan.md) · [findings](lab-source-architecture-pass-3-findings.md) — the harness, and the cheat it first failed to catch.
 **Implementation:** none. No `src/`, no Cargo, no build, no Core code. Layer III instruments only.
 **Acceptance:** not sought. `docs/pointer-emission.md` stays unaccepted; the emission rule stays `[GAP]`.
 
-**In one line: every candidate in this campaign that does anything at all came from the graphics, and no pass has yet read the graphics for retention machinery on purpose.**
+**In one line, corrected by Manifest Reconciliation:** the only current candidates that do anything are `RootTouch` (**human ruling H1 with bounded D1 witness**) and `WeightByRepetition` (**an editor-derived replay proxy motivated by A5 repetition/pass accumulation**). Earlier prefix-device and relationship-evidence campaigns already performed bounded retention-adjacent readings of A10/B8/C7/D6; what has **not** been done is one exhaustive current-law 45-panel source-first harvest that consistently separates persistence, re-entry, discovery, retention, and materialization.
 
 ---
 
@@ -40,7 +40,7 @@ the clipboards are clipboards *of*. `CLAUDE.md`: *"Source of record: `docs/graph
 | candidate | result in the instruments | provenance as the tools record it |
 |---|---|---|
 | `RootTouch` | retains 1 · scores 1/6 on D1 | ruling H1 · **witnessed D1 row `0004`** |
-| `WeightByRepetition` | holds a replayable weight | **Graphic A5** |
+| `WeightByRepetition` | holds a replayable editor-derived count proxy | **A5 source fact: repetition strengthens/adds passage; integer weight is a test representation, not a PNG-defined field/rule** |
 | `AftermathRecirculation` | discovers 34 · retains **0** | Coffee Cup L124 / L147 |
 | `pointability` | 0/6 | Water L318 I-A1 |
 | `ric_faithful` | 0/6 | HCC-A L33 RIC |
@@ -49,10 +49,37 @@ the clipboards are clipboards *of*. `CLAUDE.md`: *"Source of record: `docs/graph
 | `i_a2_sharedness` | 0/6 | Water L320 I-A2 |
 
 **Five behavioral candidates from three machine sources produce nothing. One produces 34 discoveries and
-keeps none. The only two candidates in the whole campaign that do anything are the two derived from the
-graphics.** Pass 3 saw this for A5 alone and called it a live question. It is broader than that, and
-**no pass has ever read Graphics A–D looking for retention.** Passes 1–4 of the graphics shelf read them
-for panels, devices and prefixes.
+keeps none. The only two candidates in the whole campaign that currently do anything are `RootTouch`
+(**human H1; D1 row `0004` is a bounded witness**) and `WeightByRepetition` (**editor-derived proxy from
+A5 repetition/pass accumulation**). Earlier graphics/prefix-device and relationship-evidence work already
+examined retention-adjacent source surfaces, especially A10/B8/C7/D6, and explicitly kept the emit/retain
+`when` open. **The missing work is narrower:** no single exhaustive current-law 45-panel harvest has tested
+the source while keeping persistence, re-entry, discovery, retention, and materialization separate.
+
+---
+
+## Pause correction — Manifest Reconciliation Passes 1–2
+
+This plan is **not executable as originally written** until it is replanned from the certified foundation.
+
+Pass-32 distinctions are binding on any future replan:
+
+```
+persistence      != retention
+re-entry         != materialization
+Graphic-C 2D     != H7-H12 2D sampling
+D1 state witness != universal selection/materialization rule
+```
+
+B8 strongly says an existing touch remains and may participate later. That is **SM-C12 persistence/re-entry**, not by itself SM-GAP-RM's missing sampled-evidence → retained POINTER rule.
+
+Any future candidate must identify whether its executable representation is:
+- directly SOURCE-stated;
+- HUMAN-ruled;
+- DERIVED from those authorities; or
+- merely an editor/LAB proxy used to test an idea.
+
+The latter may be useful, but it must not be reported as “the graphic's rule.”
 
 ---
 
@@ -67,9 +94,10 @@ Panels in scope: **A1–A13** (13) · **B1–B12** (12) · **C1–C12** (12) · 
 
 ## 2. Thesis, stated so it can lose
 
-> **The source of record carries retention machinery the behavioral family does not: at least one rule
-> readable from Graphics A–D can be expressed as a `retain()` that returns a row, survives replay, and
-> agrees with the D1 oracle on more rows than `RootTouch`'s one.**
+> **Beyond source-established persistence/re-entry, the source of record carries at least one general
+> retention/materialization condition that can be stated without importing an editor predicate: the
+> resulting candidate can be expressed as `retain()`, survives replay, and agrees with the D1 oracle on
+> more rows than `RootTouch`'s one.**
 
 Three ways to lose: it retains nothing; it retains and fails replay; it retains, replays clean, and still
 scores at most 1 on D1.
