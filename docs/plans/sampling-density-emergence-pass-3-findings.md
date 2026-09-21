@@ -950,3 +950,32 @@ That is enough to search.
 But a flat star becomes useless as Lace grows.
 
 The next problem is preserving **shape and distance** while the search expands.
+
+
+---
+
+## 22. Final verification
+
+Final pre-release tip:
+
+**c152d0edc8365dcda0505d373411092ede138abd**
+
+Tracked tree:
+
+- 702 paths
+- recursive tree not truncated
+- src/ paths: 0
+- Cargo.toml paths: 0
+- .rs files: 0
+
+Law surfaces remained byte-unchanged:
+
+- pointer-emission.md: 51224368ae966b6c480746925caa2cade970842e
+- systems-manifest.md: 6f0310099cbcf482ad884f653f423b4e806f724b
+
+Law station remained FREE.
+
+Pass 3 is closed as EXECUTED.
+Pass 4 has been rewritten from the actual Pass-3 leftovers only.
+
+**PASS 3 COMPLETE.**
