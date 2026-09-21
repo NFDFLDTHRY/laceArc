@@ -124,7 +124,7 @@ These are not retroactive quotes from the PNGs. Where the graphics are silent, t
   - A Join row is Lace, not an edge-table record.
   - Adjacency alone does not select operands.
 - **Failure modes / breakdown conditions:** Forward/off-line refs; external edge DB; n-ary side object; mutating a Join after append; asking Join to infer semantic relations.
-- **Boundary & Coupling:** RootTouch is one relation-assertion role: Join(new occurrence, root), with provenance closed by H1. General grounding uses the same constructor. For arbitrary relations, **what authoritatively originates/asserts the ordered operands/sample remains [GAP]**.
+- **Boundary & Coupling:** RootTouch is the closed retention special case: Join(new occurrence, root). General retained participation uses the same constructor. H7–H12 replace the arbitrary-assertion premise with sampling-derived discovery; **the exact general retention/materialization condition remains [GAP]**.
 - **Implementation implications:** The physical append is deterministic once the ordered relation operands are specified. Earlier-index legality is proven by checking \(a,b<new\_index\) at append. No separate “prove earlier” operator and no automatic chooser is established here.
 - **Metaphor / diagnostic role:** Tie two already-existing pieces with one new piece of the same lace.
 - **Key source language:** “A pointer is also a section of Lace. It can be referenced by later entries.” “No separate graph. No separate database.”
@@ -196,7 +196,7 @@ These are not retroactive quotes from the PNGs. Where the graphics are silent, t
 - **Effects:** Definition routes accumulate structure around the WORD/root identities. Later documents reuse those roots and retained route structure.
 - **Invariants:** Definition is a route, not a stored gloss. **Definition-route POINTER structure does not replace the WORD/root as lexical identity.**
 - **Failure modes / breakdown conditions:** Definition payload on WORD; separate lexicon table; treating defining pointer cluster as the only word identity; collapsing route to gloss.
-- **Boundary & Coupling:** Same governing rule as document feed. Arbitrary relation/sample selection beyond root-touch remains a separate [GAP]; no semantic selector is inferred from definition text.
+- **Boundary & Coupling:** Same governing rule as document feed. Sampling may expose recurring definition-route structure, but no semantic selector is inferred from definition text; exact retention/materialization beyond RootTouch remains [GAP].
 - **Implementation implications:** Loading dictionary text is ingest + participation, not a lexicon API.
 - **Metaphor / diagnostic role:** Definition as path.
 - **Key source language:** “A word’s definition is a route through other word stars.”
@@ -212,7 +212,7 @@ These are not retroactive quotes from the PNGs. Where the graphics are silent, t
 - **Effects:** All passages remain in one Lace. Distinct contexts remain distinct.
 - **Invariants:** No per-document graph; no document row type; arrivals never disappear into a sample point.
 - **Failure modes / breakdown conditions:** Document isolation; coreference collapse; hidden document-selection table; using document boundary as an unstated automatic Join selector.
-- **Boundary & Coupling:** Document source differs from dictionary source, not from Core mechanics. [GAP] Document boundaries and arbitrary relation/sample selection remain unstated.
+- **Boundary & Coupling:** Document source differs from dictionary source, not from Core mechanics. Document boundaries remain separately [GAP]; sampling discovery does not by itself settle which sampled structure is retained/materialized.
 - **Implementation implications:** Multi-document Lace is still one array. Do not add sample metadata to Contract II.
 - **Metaphor / diagnostic role:** Punch-card document.
 - **Key source language:** “This is like a punch-card input: raw sequence, no interpretation.”
