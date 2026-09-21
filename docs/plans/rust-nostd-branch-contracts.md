@@ -1,7 +1,7 @@
 # CLIPBOARD — laceArc no_std branch contracts
 
-**Status: PLAN / PROPOSAL. Seven prose cards. No implementation acceptance. Current draft-law constructor: binary Join; arbitrary relation/sample selection remains [GAP].**
-Shelf note (defrag pass 2): this file is the **serial birth cards**. The crate tree is `docs/plans/rust-nostd-crate-map.md`. Neither authorizes implementation or supplies the still-open arbitrary relation/sample selector.
+**Status: PLAN / PROPOSAL. Seven prose cards. No implementation acceptance. Current draft-law premise: binary Join + human-ruled sampling architecture; exact sampling-derived retention/materialization remains [GAP]. SearchHandle/search expansion remain maps-level derived reads, not accepted branch contracts.**
+Shelf note (defrag pass 2): this file is the **serial birth cards**. The crate tree is `docs/plans/rust-nostd-crate-map.md`. Neither authorizes implementation or supplies the still-open retention/materialization rule.
 
 Repository destination: `docs/plans/rust-nostd-branch-contracts.md`.
 Prior product: [rust-nostd-crate-map.md](rust-nostd-crate-map.md).
@@ -23,7 +23,7 @@ Source baseline: `NFDFLDTHRY/laceArc` main at
                                      v
                     state ownership + excluded states
                                      |
-                        constructor known · selection [GAP] · acceptance absent
+                        constructor + sampler known · retention/materialization [GAP] · acceptance absent
                                      |
                                      v
                     challenge against shoe and source
@@ -53,8 +53,8 @@ Current draft-law premises available to future proof work:
 - adjacency alone does not emit.
 
 Still unresolved / not owned by any card:
-- arbitrary non-root-touch relation/sample selection;
-- semantic operand/subject choice for an arbitrary asserted relation;
+- sampling-derived retention/materialization;
+- task-specific ordered-operand/slot proof where retention requires one;
 - G1 identity/tokenization;
 - human acceptance of pointer-emission.md;
 - task-specific implementation and proof premises.
@@ -80,7 +80,7 @@ The seven doors are proof and implementation boundaries over **one Lace**.
 They are not seven independently stored systems. The manifest's irreducible
 Core still holds; Piece 1 and Piece 6 are the same physical object.
 
-**Current ownership limit (ROOT / TOUCH / FOLD Pass 5):** no card owns arbitrary non-root-touch relation/sample selection. route/ appends already-admitted sections; core/ delegates; pointer/ constrains the binary Join layout. These cards therefore remain an incomplete implementation decomposition even though the physical constructor is known. Reconcile selection ownership explicitly before implementation without silently widening a task or adding a helper, branch, or dependency edge.
+**Current ownership limit (ROOT / TOUCH / FOLD Pass 5):** no card owns sampling-derived retention/materialization. route/ appends already-admitted sections; core/ delegates; pointer/ constrains the binary Join layout. These cards therefore remain an incomplete implementation decomposition even though the physical constructor is known. Reconcile retention/materialization ownership explicitly before implementation without silently widening a task or adding a helper, branch, or dependency edge.
 
 No `arrival/`, `array/`, `emit_pointer/`, `utils/`, or other convenience door
 is added. Arrival stays a surface with no store. `alloc/` is not an eighth
@@ -99,7 +99,7 @@ before it can be proposed for use.
 | Graphics | A, B, C and D visually inspected from their canonical repository bytes. |
 | Physical evidence | `NOT_PERFORMED`: no claim that the agent held or tested a physical cord. Shoe statements below are source-grounded review conditions. |
 | Allowed product | This Markdown document, for the repository destination above. |
-| Implementation status | **BLOCKED**: pointer-emission is reconciled but not human-accepted; arbitrary relation/sample selection remains [GAP]; every branch proof remains UNESTABLISHED. |
+| Implementation status | **BLOCKED**: pointer-emission is reconciled but not human-accepted; sampling-derived retention/materialization remains [GAP]; every branch proof remains UNESTABLISHED. |
 | Human acceptance | `ABSENT` for the current draft according to its own status; this task grants prose drafting only. |
 | Proof status | `UNESTABLISHED` for every future branch. Contract prose is not an implemented type boundary or a proof. |
 | Review roles | One agent performs propose, attack and resolve; no independent review is claimed. |
@@ -127,7 +127,7 @@ anti-import boundaries; it does not reopen the five-stake mapping.
 2. **Target-kind item reconciled, 2026-09-20.** Current `pointer-emission.md`
    section 4 closes POINTER-to-POINTER permission and rejects WORD-only
    targeting, agreeing with Graphic D3/D6, Piece 5 and AGENTS.md. The
-   earlier conflict is not a current blocker. Later ROOT / TOUCH / FOLD reconciliation also fixes the governing physical constructor as binary Join and the repeated-word RootTouch path. The pointer card still must not invent arbitrary relation/sample selection, semantic operand choice, implementation timing ownership, or a proof procedure for “earlier.”
+   earlier conflict is not a current blocker. Later ROOT / TOUCH / FOLD reconciliation also fixes the governing physical constructor as binary Join and the repeated-word RootTouch path. The pointer card still must not invent sampling-derived retention/materialization, semantic operand choice, implementation timing ownership, or a proof procedure for “earlier.”
 3. **View-store conflict.** Manifest Piece 13's implementation paragraph
    permits graph databases, embedding spaces and definition tables as
    disposable views. The staking law forbids those stores; Graphic D4
@@ -211,7 +211,7 @@ reason-model RM1. Piece 1 is Piece 6, not a separate `array/` store.
 
 #### Must not own
 
-- Word identity/segmentation, arbitrary relation/sample selection, semantic operand choice, star construction, sentence containers, projection geometry, or meaning.
+- Word identity/segmentation, sampling-derived retention/materialization, semantic operand choice, star construction, sentence containers, projection geometry, or meaning.
 - A spare strand, mutable continuation slot, replay mirror or storage
   compactor. No placeholder row may later be filled with a reference.
 
@@ -263,7 +263,7 @@ POINTER. It is no permission to append before the gate.
 
 #### Emission contact
 
-- **none.** The storage door accepts only an independently authorized section. Binary Join layout is a current draft-law premise, but strand/ does not choose an arbitrary relation/sample, bypass acceptance, or decide section admission.
+- **none.** The storage door accepts only an independently authorized section. Binary Join layout is a current draft-law premise, but strand/ does not choose an retained relation/sample, bypass acceptance, or decide section admission.
 
 ## PAGE D — word/ and pointer/ (type discipline)
 
@@ -334,7 +334,7 @@ unresolved pairs such as PIE/pie; it is not a default normalization rule.
 
 #### Emission contact
 
-- **none.** Value equality does not own relation selection. Current law separately requires a seen occurrence to RootTouch its root; word/ does not schedule or append that Join and still does not choose arbitrary relations.
+- **none.** Value equality does not own relation selection. Current law separately requires a seen occurrence to RootTouch its root; word/ does not schedule or append that Join and still does not choose retained relations.
 
 ### branch: pointer/
 
@@ -348,14 +348,14 @@ unresolved pairs such as PIE/pie; it is not a default normalization rule.
 
 - **Pointer section** is the binary Join form from current draft law: two ordered references to earlier existing entries on the same strand. It is retained at its own entry index and can itself be referenced later.
 - **Earlier reference** is a constraint, not a raw integer blessed as a reference. For a POINTER entry at j, both operands must already exist on that line and have indices less than j. Self, forward, missing and external targets cannot inhabit the admitted reference state.
-- WORD and POINTER are both permitted operand kinds (D3/D6). This constrains type, not which arbitrary relation/sample should be asserted.
+- WORD and POINTER are both permitted operand kinds (D3/D6). This constrains type, not which retained relation/sample should be asserted.
 - **Binary arity is now a premise, not a branch choice:** the governing Join has exactly two ordered operands. The card must not substitute unary, variable-length, optional-slot, or heap-backed layouts.
-- **Semantic operand/subject choice remains outside pointer/.** Join preserves the ordered selected pair; the still-open arbitrary selector/relation assertion is responsible for supplying that ordered pair. D1's six examples remain evidence that chronology alone is not the semantic ordering rule.
+- **Semantic operand/subject choice remains outside pointer/.** Join preserves the ordered selected pair; the still-open retention/materialization rule/relation assertion is responsible for supplying that ordered pair. D1's six examples remain evidence that chronology alone is not the semantic ordering rule.
 - The concrete Rust encoding and proof mechanism for carrying existing/same-line/earlier evidence remain unstated and must be proven at later composition. This card invents no arbitrary operand chooser or unchecked builder.
 
 #### Must not own
 
-- Append authority, an arbitrary relation/sample selector, semantic target discovery, star matching, arrival decisions, an unchecked POINTER factory, a reference side table, or a rule that invents a relation from adjacency/touch/grab.
+- Append authority, an retention/materialization rule, semantic target discovery, star matching, arrival decisions, an unchecked POINTER factory, a reference side table, or a rule that invents a relation from adjacency/touch/grab.
 
 #### Public surface (names only — no signatures that emit)
 
@@ -372,7 +372,7 @@ unresolved pairs such as PIE/pie; it is not a default normalization rule.
 
 #### Forbidden states (must be unrepresentable)
 
-- Self/forward/dangling/external targets admitted as valid; an existing POINTER retargeted in place; an unfinished operand patched later; an external edge object standing for the POINTER; a layout that violates the current binary Join premise; a "read" that creates a row or chooses an arbitrary relation; or an ordered pair whose provenance/semantic ordering is silently invented by pointer/.
+- Self/forward/dangling/external targets admitted as valid; an existing POINTER retargeted in place; an unfinished operand patched later; an external edge object standing for the POINTER; a layout that violates the current binary Join premise; a "read" that creates a row or chooses an retained relation; or an ordered pair whose provenance/semantic ordering is silently invented by pointer/.
 
 #### Proof shape (what “proven” means before next birth)
 
@@ -393,7 +393,7 @@ unresolved pairs such as PIE/pie; it is not a default normalization rule.
 
 #### Emission contact
 
-- **type-only.** Binary Join layout, target kinds, and backward-reference constraints are current draft-law premises. `pointer/` still may not choose an arbitrary relation/sample, bypass human acceptance, or turn layout validity into append authority. No selector or emit signature/stub.
+- **type-only.** Binary Join layout, target kinds, and backward-reference constraints are current draft-law premises. `pointer/` still may not choose an retained relation/sample, bypass human acceptance, or turn layout validity into append authority. No selector or emit signature/stub.
 
 ## PAGE E — route/, views and core/
 
@@ -418,7 +418,7 @@ unresolved pairs such as PIE/pie; it is not a default normalization rule.
 
 #### Must not own
 
-- A hidden arbitrary-selection helper, semantic target policy, intern table, parser, route graph, document batch object or continuation slot.
+- A hidden retention/materialization helper, semantic target policy, intern table, parser, route graph, document batch object or continuation slot.
 
 #### Public surface (names only — no signatures that emit)
 
@@ -431,7 +431,7 @@ unresolved pairs such as PIE/pie; it is not a default normalization rule.
 
 - `strand/`: the proven append door.
 - `word/`: WORD layout/value surface only.
-- `pointer/`: binary POINTER/Join layout and read surface only; no arbitrary-selection callee exists.
+- `pointer/`: binary POINTER/Join layout and read surface only; no retention/materialization callee exists.
 
 #### Forbidden states (must be unrepresentable)
 
@@ -447,7 +447,7 @@ unresolved pairs such as PIE/pie; it is not a default normalization rule.
 - Compose the three earlier branch contracts at their exact proved
   revisions. Keep their resource and failure preconditions visible.
 - This conditional storage step does not prove a complete arrival-to-Lace
-  mechanism. The remaining arbitrary relation-selection decision cannot be smuggled into an
+  mechanism. The remaining arbitrary retention/materialization decision cannot be smuggled into an
   input constructor or caller. Proof status: `UNESTABLISHED`.
 
 #### no_std / alloc
@@ -457,7 +457,7 @@ unresolved pairs such as PIE/pie; it is not a default normalization rule.
 
 #### Emission contact
 
-- **Selection [GAP] outside route/.** Continue is not an arbitrary relation chooser. This plan assigns the still-open relation/sample selector to no helper or branch. Acceptance of the reconciled law would
+- **Retention/materialization [GAP] outside route/.** Continue is not an retained relation chooser. This plan assigns the still-open relation/sample selector to no helper or branch. Acceptance of the reconciled law would
   still require explicit reconciliation of that unassigned responsibility.
 
 ### branch: view_star/
@@ -611,7 +611,7 @@ irreducible-Core boundary; AGENTS.md Implementation Law.
 
 #### Must not own
 
-- Storage, WORD/POINTER layout, star lookup, projection logic, allocator, parsing, arbitrary relation/sample selection, or invented semantic policy.
+- Storage, WORD/POINTER layout, star lookup, projection logic, allocator, parsing, sampling-derived retention/materialization, or invented semantic policy.
 - HCC-A/Cup/Water internals, `trainA` teeth, the A/B/C HTML shadow gearing,
   or a model/agent framework as runtime machinery. Layer III stays Shadow.
 
@@ -641,7 +641,7 @@ irreducible-Core boundary; AGENTS.md Implementation Law.
   Show orchestration adds no store, hidden operation or capability leak.
 - Account for the one append history across all calls. Admission of
   sections must trace to independently accepted source prose; thin
-  orchestration cannot manufacture the missing arbitrary relation/sample selector.
+  orchestration cannot manufacture the missing retention/materialization rule.
 - No claim of complete working Lace while an applicable premise is
   `[GAP]`. Composition and trust review remain required even if every
   leaf is proved. Proof status: `UNESTABLISHED`.
@@ -708,7 +708,7 @@ REQUIRED OUTLINE: docs/prompts/pointer-emission-prompt.md
                             |
                             v
 POINTER CONTRACT: docs/pointer-emission.md
-        currently reconciled DRAFT / not accepted / arbitrary selection [GAP]
+        currently reconciled DRAFT / not accepted / arbitrary retention/materialization [GAP]
                             |
               exact content accepted by human?
                    NO: stay in docs/review
@@ -743,7 +743,7 @@ next is permitted. These boxes are intentionally unchecked:
 - [ ] Zero crates.io or other external dependencies; all required first-party callees have exact proved revisions.
 - [ ] Shoe test: the operation is doable to the lace while retaining every old pass; actual physical evidence is identified without claiming an unperformed test.
 - [ ] Arbitrary relation/sample selection remains `[GAP]` in this plan: no branch invents it, supplies a selector stub, or treats binary Join type validity as permission to assert a relation.
-- [ ] The independent implementation gate is genuinely open for the exact work: human-accepted pointer prose and every premise needed by this birth are present. If arbitrary selection ownership or another required premise is unresolved, this box cannot pass.
+- [ ] The independent implementation gate is genuinely open for the exact work: human-accepted pointer prose and every premise needed by this birth are present. If arbitrary retention/materialization ownership or another required premise is unresolved, this box cannot pass.
 - [ ] No extra store, intern collapse, projection write path, permanent prohibition breach or hidden second task appears.
 - [ ] The human's requirement for a written proof note in `docs/`, if imposed before the next birth, has been met and the human has allowed that transition. Record the requirement and its source; do not manufacture a blanket acceptance.
 
@@ -764,7 +764,7 @@ or a grant of permission.
 |---|---|---|
 | RootTouch append | Current law H1 + D1 0003/0004 | **settled current premise:** seen occurrence + Join(new occurrence, root) |
 | POINTER arity / layout | Current pointer-emission reconciliation + D2/D1 | **settled current premise:** binary Join(a,b); no unary/variable-length default |
-| Ordered semantic operands for an arbitrary asserted relation | D1 + current Join | Join consumes an ordered pair; **which arbitrary relation/subject supplies that order remains part of selection [GAP]** |
+| Ordered semantic operands for an arbitrary asserted relation | D1 + current Join | Join consumes an ordered pair; **which retained relation/subject supplies that order remains part of retention/materialization [GAP]** |
 | Adjacency trigger | Current pointer-emission reconciliation / D1 | **settled false:** adjacency alone does not emit Join |
 | Word identity, case, stem, homograph and segmentation | Pieces 3–4; A6–A7; reason-map open questions | `[GAP]`; no normalization or tokenizer choice |
 | Arbitrary relation/sample selection | Manifest selection boundary; current pointer-emission | **[GAP]** upstream chooser. Earlier/same-line legality and WORD/POINTER operand kinds are settled constructor premises |
@@ -792,7 +792,7 @@ No answers to these questions are drafted here.
 |---|---|
 | Start coding `strand/` because storage looks settled | Required outline, exact accepted pointer contract and all applicable premises before the first birth |
 | "Just signatures" for emission | An emit signature still invents a door; absent |
-| Treat a binary POINTER type as an arbitrary relation decision | Type law constrains Join; **arbitrary relation/sample selection remains [GAP]** |
+| Treat a binary POINTER type as an retained relation decision | Type law constrains Join; **sampling-derived retention/materialization remains [GAP]** |
 | Prove safety with an unusable empty type | Legal source behavior must remain representable; no vacuous graduation |
 | Parallel branch PRs or empty scaffolds | Serial: state and prove the one task before another branch exists |
 | Two ends imply two stores or two writers | Two views of one retained strand; one frontier extension contract |
@@ -834,7 +834,7 @@ Prior map, law, graphics and pointer draft are unchanged. No Rust source,
 Cargo files, planned branch directories, code/type definitions, commit,
 push, branch birth or acceptance record is part of this task.
 
-**Next narrow question:** After explicit human acceptance, what exact ownership/input contract supplies arbitrary relation/sample selection without adding a forbidden store or widening a branch?
+**Next narrow question:** After explicit human acceptance, what exact ownership/input contract supplies sampling-derived retention/materialization without adding a forbidden store or widening a branch?
 outline should be placed at the missing required path? This question
 does not authorize another file or an implementation branch in this pass.
 
