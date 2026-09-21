@@ -69,10 +69,14 @@ class RootTouch(Candidate):
 
 
 class WeightByRepetition(Candidate):
-    """Graphic A5: 'Repetition strengthens stars.' A weight per value,
-    derived from the prefix. Discovers nothing: a weight is not a pointer.
-    Present to prove the harness can hold a weight and replay it."""
-    provenance = "graphics · A5 repetition"
+    """EDITOR-DERIVED TEST PROXY motivated by Graphic A5.
+
+    A5 states that repetition strengthens/adds passage through a star. It does
+    not define an integer weight field or counting rule. This candidate uses
+    prefix occurrence count only to test whether the harness can hold and
+    replay a derived accumulated-state proxy. It discovers nothing: a count is
+    not a pointer and supplies no retention/materialization predicate."""
+    provenance = "editor proxy · A5 repetition/pass accumulation"
     def __init__(self): self.w = {}
     def observe(self, lace, i):
         if i and lace[i-1]["type"] == "WORD":
