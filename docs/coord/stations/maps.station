@@ -2,6 +2,6 @@ STATUS: HELD
 STATION: maps
 OWNS: docs/reason-model-map.md docs/rust-nostd-*.md docs/atomic-primitives-map.md docs/clock/gearing-code-1to1.md docs/coherence-audit*.md docs/clock/system-mathematical-model.md docs/defrag-plan.md docs/plans/** docs/namespace-register.md docs/*.md (catch-all: any unmatched file at the docs/ root)
 AGENT: Astra-math
-BASE: e67b170c55605d120d5da7a816e84f2dd4e90bb5
+BASE: f33e03362a4b86986150f7de7eb0caf93f1de97c
 SINCE: 2026-09-20T23:52:00Z
-NOTE: User-directed ROOT / TOUCH / FOLD Pass 3 planning. New rulings: unseen word becomes root on arrival; GROUND makes arbitrary Lace portions addressable as one point; each grounded sample/scale occupies Lace; this underlies dot-to-dot N-D representation. Plan only; exact sample/arity semantics to be tested. No blanket pointer-emission acceptance; no src/. Connector claim; coord.sh NOT_RUN.
+NOTE: User-directed ROOT / TOUCH / FOLD Pass 3 execution. Base refreshed through Pass 3 plan. Test unseen-root + binary Join/sample-to-point grounding + N-D projection mapping. No blanket pointer-emission acceptance; no src/. Connector refresh; coord.sh NOT_RUN.
