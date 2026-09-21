@@ -1,7 +1,7 @@
-STATUS: HELD
+STATUS: FREE
 STATION: prompts
 OWNS: docs/prompts/**
-AGENT: Astra-context
-BASE: d7f1151fa0986d0e1ce7e5b12aed0d4f5af6ae86
-SINCE: 2026-09-21T00:53:00Z
-NOTE: ROOT / TOUCH / FOLD Pass 5 control-surface extension. Update mandatory context-pass current status only: constructor reconciled, arbitrary relation/sample selection [GAP], acceptance absent. Preserve dated evidence/candidate ledgers and all source-law boundaries. No src/. Connector claim; coord.sh NOT_RUN.
+AGENT: -
+BASE: -
+SINCE: -
+NOTE: Astra-context ROOT / TOUCH / FOLD Pass 5 control-surface extension EXECUTED. Mandatory context-pass current story updated in aed51f60c0a54f67df4223071c1774df5ca984ce: constructor/root/touch/grounding reconciled, arbitrary relation/sample selection [GAP], acceptance absent; dated E5/Pass-7 history preserved. No src/. coord.sh NOT_RUN.
