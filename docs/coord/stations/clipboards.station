@@ -1,7 +1,7 @@
-STATUS: HELD
+STATUS: FREE
 STATION: clipboards
 OWNS: docs/clipboards/**
-AGENT: Astra-lab-architecture
-BASE: 17ed51b7644c733580eef6a237dd37cf8c576d29
-SINCE: 2026-09-21T20:44:00Z
-NOTE: Lab Source Architecture Pass 1: align clipboard door with distributed source-clipboard system and candidate-machinery laboratory role. Existing campaign bodies untouched.
+AGENT: -
+BASE: -
+SINCE: -
+NOTE: Lab Source Architecture Pass 1 clipboard-door alignment COMPLETE. Distributed clipboard routes now include HCC-A/Coffee Cup/Water under docs/clock; research/platform shelves remain here. KEEP/FORBID is authority fencing, not a ban on lab use.
