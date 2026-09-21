@@ -1,6 +1,6 @@
 # LAB SOURCE ARCHITECTURE — Pass 4 REPLACEMENT PLAN · source-of-record RM-A/RM-B/RM-C harvest
 
-**Status:** **EXECUTING** 2026-09-21.  
+**Status:** **EXECUTED** 2026-09-21 → [findings](lab-source-architecture-pass-4-replacement-findings.md). **Verdict: SOURCE SILENT ON GENERAL RM PREDICATE.**  
 **Campaign:** Lab Source Architecture. **Pass:** 4 replacement.  
 **Replaces for execution:** the inherited [Pass 4 plan](lab-source-architecture-pass-4-plan.md), which remains **PAUSED** and is not executed verbatim.  
 **Admission authority:** [Manifest Reconciliation Pass 4 Lab admission envelope](manifest-reconciliation-pass-4-lab-admission.md).  
