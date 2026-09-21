@@ -1,7 +1,7 @@
-STATUS: HELD
+STATUS: FREE
 STATION: graphics
 OWNS: docs/graphics/** docs/graphics-close-reading.md
-AGENT: Astra-sampling-reconcile
-BASE: 144098fc3b3f1ee7f721377f14cd09fd96d7a191
-SINCE: 2026-09-21T19:05:00Z
-NOTE: SAMPLING / DENSITY / EMERGENCE Pass 6 graphics reconciliation. Preserve PNG/source authority and Graphic-C projection reading; qualify later H7-H12 2D sampling as distinct derived working machinery, not a recovered C3 claim. Replace active arbitrary-selection gap summaries with retention/materialization OPEN where current. No source rewrite. coord.sh NOT_RUN.
+AGENT: -
+BASE: -
+SINCE: -
+NOTE: Astra-sampling-reconcile Pass 6 graphics reconciliation COMPLETE. PNG/source authority unchanged. Graphic B/C current qualifications now preserve source silence while recognizing later H7-H12 sampling architecture. Graphic C remains projection/view evidence; the human-ruled 2D position×scale sampling surface is explicitly distinct derived working machinery and is not attributed to C3. Active gap = exact sampling-derived retention/materialization; C6 route-family labeling remains separately open. No source image rewrite. coord.sh NOT_RUN.
