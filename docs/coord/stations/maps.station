@@ -1,7 +1,7 @@
-STATUS: HELD
+STATUS: FREE
 STATION: maps
 OWNS: docs/reason-model-map.md docs/rust-nostd-*.md docs/atomic-primitives-map.md docs/clock/gearing-code-1to1.md docs/coherence-audit*.md docs/clock/system-mathematical-model.md docs/defrag-plan.md docs/plans/** docs/namespace-register.md docs/*.md (catch-all: any unmatched file at the docs/ root)
-AGENT: Astra-search-contract
-BASE: 95d13dd46e3bfce8a0a604d9ca1ffe3936a5d736
-SINCE: 2026-09-21T02:45:00Z
-NOTE: User-directed SAMPLING / DENSITY / EMERGENCE Pass 5 planning. One complete pass, no subpasses. Target actual Pass-4 leftovers only: minimal derived search-result contract, DAG/frontier serialization, explicit expansion operators, and local reconstruction without full 2D materialization. New planning invariant to test: derived results must carry an as-of Lace prefix because support/frontiers change as append-only Lace grows. No law edit. No src/Cargo/Rust. Connector claim; coord.sh NOT_RUN.
+AGENT: -
+BASE: -
+SINCE: -
+NOTE: Astra-search-contract SAMPLING / DENSITY / EMERGENCE Pass 5 PLAN committed at 8a1a85749376c3616957da8671e6673ebe86693d; plans index d2fa1e8837f5bea8c3987663d9a16dcdfb579cfb. Pass 5 not executed. One complete pass, no subpasses. Target actual Pass-4 leftovers only: minimal disposable/replayable search-result contract, pattern/witness-DAG serialization, explicit expansion operators, and local reconstruction without full 2D materialization. Key test: SearchRead=(through,anchor,frontier,body), with deletion/round-trip minimality; through prefix needed because support/frontiers change as Lace grows. Local cone upper bounds: QUESTION 105, ANSWERS 75, IS 1365 candidates vs 743,590 full Coffee cells; execution must compute actual counts and exact equality with Pass 4. D1 PIE pointer overlay to be reconstructed by one forward scan, no reverse index. No law edit, no src/Cargo/Rust. coord.sh NOT_RUN.
