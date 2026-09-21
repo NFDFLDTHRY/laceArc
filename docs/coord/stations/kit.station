@@ -1,7 +1,7 @@
-STATUS: FREE
+STATUS: HELD
 STATION: kit
 OWNS: docs/kit/** .claude/**
-AGENT: -
-BASE: -
-SINCE: -
-NOTE: Astra-kit ROOT / TOUCH / FOLD Pass 5 control-surface extension EXECUTED. agent-control steward qualification/current controls 9f8517759b80e7e46b5a091a0b3a71245168311f; roles e58742deec16f81344e65637fc0308e5b4c6ae91; READ_ME_FIRST 1b8ea27983f566319ff146abc72227285face028. Verbatim transported human-law block and dated downstream audit preserved. Current constructor reconciled; arbitrary selection [GAP]; acceptance absent. No src/. coord.sh NOT_RUN.
+AGENT: Astra-sampling-reconcile
+BASE: 6bf1c65cf3b9e40cd0c58093071bc0f6cfd2844b
+SINCE: 2026-09-21T19:35:00Z
+NOTE: Pass 6 kit reconciliation. Preserve verbatim transported human-law blocks and dated receipts; update current steward qualification/roles/READ_ME_FIRST from arbitrary-selection framing to human-ruled sampling architecture with exact retention/materialization OPEN. Search remains derived/disposable; implementation acceptance absent. coord.sh NOT_RUN.
