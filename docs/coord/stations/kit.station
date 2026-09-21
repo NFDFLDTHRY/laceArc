@@ -1,7 +1,7 @@
-STATUS: HELD
+STATUS: FREE
 STATION: kit
 OWNS: docs/kit/** .claude/**
-AGENT: Astra-sampling-reconcile
-BASE: f9494d85d6030a852393b7bca704cc93cf6e9d18
-SINCE: 2026-09-21T20:30:00Z
-NOTE: Pass 6 verification correction. One current selector-era line remains in docs/kit/roles.md. Replace with retention/materialization wording only; preserve all other kit content and verbatim law. coord.sh NOT_RUN.
+AGENT: -
+BASE: -
+SINCE: -
+NOTE: Pass 6 verification correction COMPLETE. Final current selector-era line in roles.md replaced by sampling-derived retention/materialization wording. Earlier kit reconciliation stands; verbatim transported law and dated audit history unchanged. coord.sh NOT_RUN.
