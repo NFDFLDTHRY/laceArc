@@ -1,7 +1,7 @@
-STATUS: HELD
+STATUS: FREE
 STATION: prompts
 OWNS: docs/prompts/**
-AGENT: Astra-manifest-reconcile-p2
-BASE: db9d0a25d19abbe5fca8eef9429a9c8416a2f8c3
-SINCE: 2026-09-21T22:27:53.904Z
-NOTE: Manifest Reconciliation Pass 2 prompts wave: remove stale current selector-era framing from mandatory context while preserving dated sigma/selector history.
+AGENT: -
+BASE: -
+SINCE: -
+NOTE: Manifest Reconciliation Pass 2 prompts wave COMPLETE. context-pass current selector-era header replaced with exact sampling-derived retention/materialization framing; Pass-32 catalog vs systems-manifest contract roles and A6/B4, B10/B11, persistence/retention, projection/sampling distinctions added. Dated selector evidence retained as history.
