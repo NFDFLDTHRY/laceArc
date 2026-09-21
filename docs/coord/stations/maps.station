@@ -1,7 +1,7 @@
-STATUS: HELD
+STATUS: FREE
 STATION: maps
 OWNS: docs/reason-model-map.md docs/rust-nostd-*.md docs/atomic-primitives-map.md docs/clock/gearing-code-1to1.md docs/coherence-audit*.md docs/clock/system-mathematical-model.md docs/defrag-plan.md docs/plans/** docs/namespace-register.md docs/*.md (catch-all: any unmatched file at the docs/ root)
-AGENT: Astra-search-bounds
-BASE: 77a8d64d8b745fe3c3bc54a465b90ac2880e5fd8
-SINCE: 2026-09-21T02:20:00Z
-NOTE: User-directed SAMPLING / DENSITY / EMERGENCE Pass 4 planning. Conditional on Pass 3 execution surviving. Target: structural search bounding/ordering without semantic scoring. Plan multiple-anchor saturation controls, structural hit signature, frontier/partial-order candidates, one-hop and multi-hop expansion bounds, no arbitrary weighted relevance score. Plan only. No law edit. No src/Cargo. Connector claim; coord.sh NOT_RUN.
+AGENT: -
+BASE: -
+SINCE: -
+NOTE: Astra-search-bounds SAMPLING / DENSITY / EMERGENCE Pass 4 PLAN committed at 2a61d91588ed136071e5e9747817b8a840376853; plans index cde4f7a60acd0d0a00ec04c17369d0bd67576fc6. Pass 4 not executed and is hard-gated on Pass 3 execution. Target: structural search bounding/ordering without semantic scoring using QUESTION, ANSWERS, high-frequency IS, and D1 PIE pointer rings. Tests layer/ring frontiers, support-vs-scale orderings, Pareto/extension-tree views, trunk/branch/support-change compression, one-hop/two-hop star expansion, pointer shortest/alternative paths, and saturation. No semantic weights, stop-word policy, retention, law edit, src/Cargo. coord.sh NOT_RUN.
