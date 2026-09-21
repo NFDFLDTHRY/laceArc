@@ -5,10 +5,10 @@
 The historical prefix-device Pass-7 Answers remain below as dated receipts. They are **not the current answer surface where Pass 4 supersedes them**.
 
 **Current constructor:** binary `Join(a,b)` over earlier same-line Lace points.  
-**Current remaining [GAP]:** what upstream process selects an arbitrary non-root-touch ordered relation/sample.  
+**Current remaining [GAP]:** what authoritatively originates / asserts the ordered operands or sample for an arbitrary non-root-touch relation.  
 **Acceptance:** still absent.
 
-The old single Φ-schedule blocker has been decomposed into arrival/root/touch, physical Join construction, and upstream relation/sample selection.
+The old single Φ-schedule blocker has been decomposed into arrival/root/touch, physical Join construction, and arbitrary non-root relation-assertion provenance / authority.
 
 | Rule | Still | Not |
 |---|---|
@@ -33,7 +33,7 @@ Do not silence the graphics with a default. Do not treat this draft as Core code
 
 - Four graphics in `docs/graphics/` (A–D) and `docs/systems-manifest.md` derived from them.
 - Prefix-device passes 1–7 are retained as historical campaign evidence.
-- Current human rulings H1–H6 are recorded and analyzed by [ROOT / TOUCH / FOLD passes 1–4](plans/math-execution-root-touch-fold-pass-4-findings.md).
+- Current human rulings H1–H6 are recorded and analyzed by [ROOT / TOUCH / FOLD passes 1–4](plans/math-execution-root-touch-fold-pass-4-findings.md); [Pass 6](plans/math-execution-root-touch-fold-pass-6-findings.md) reclassifies the remaining arbitrary relation hole as provenance/authority rather than assuming an automatic selector.
 - Current mathematical construction: [`math-execution-model.md`](math-execution-model.md).
 - The four graphics remain upstream source; this file reconciles their storage constraints with the explicit human rulings without turning the mathematical derivations into graphic quotes.
 
@@ -99,26 +99,35 @@ Each \(n\to n+1\) extension appends one new POINTER row. Already-grounded branch
 
 ### What remains open
 
-The constructor does **not** discover a relation.
+The constructor does **not** originate its own relation.
 
 For arbitrary non-root-touch participation, the unresolved question is:
 
 \[
 \boxed{
-\text{what upstream process selects the ordered operands / sample?}
+\operatorname{Origin}(\rho)=?
 }
 \]
 
-Current placement:
+where \(\rho\) is analysis notation for an already-specified ordered relation/sample to be grounded.
 
-- the selected ordered operands are **inputs / preconditions to Join**;
-- Core validates that they are earlier same-line indices and appends the POINTER;
-- no source-backed automatic chooser has been established;
-- Contract II remains raw word/punch-card input and is not expanded to carry a hidden sample channel;
+In prose:
+
+> **What authoritatively originates / asserts the ordered operands or sample for an arbitrary non-root-touch relation?**
+
+Current boundary:
+
+- \(\rho\) / the selected ordered operands are **inputs / preconditions to Join/Ground**;
+- Core validates that referenced operands are earlier same-line indices and appends the required Join row(s);
+- current sources do **not** establish that Core must automatically choose arbitrary relations;
+- current sources also do **not** establish an external assertion/write interface;
+- Contract II remains raw word/punch-card input and is not expanded to carry a hidden relation/sample channel;
 - no query/write operator is invented;
-- route/document boundaries are not promoted to selection metadata.
+- route/document boundaries are not promoted to relation provenance metadata.
 
-RootTouch is the closed special case because H1 fixes its operands: new occurrence + word root.
+RootTouch is the closed special case because H1 fixes the relation origin and operands: new occurrence + word root.
+
+ROOT / TOUCH / FOLD Pass 6 tested several stronger automatic punch-card readings against D1. Mandatory per-arrival whole-prefix grounding, one persistent active-sample ladder, and automatic materialization of all possible portions do not reproduce D1 as universal rules. This reclassifies the remaining hole; it does not close it and does not prove that relation provenance is external to Core.
 
 ### Current question table
 
@@ -129,7 +138,7 @@ RootTouch is the closed special case because H1 fixes its operands: new occurren
 | seen arrival | **CLOSED:** another WORD occurrence; root stays first occurrence |
 | Q1 root touch | **CLOSED by human ruling + D1 witness:** Join(new occurrence, root) |
 | Q1 physical relation constructor | **CLOSED:** selected ordered pair emits binary Join |
-| Q1 arbitrary relation/sample chooser | **[GAP]** |
+| Q1 arbitrary non-root relation-assertion provenance / authority | **[GAP]** — automatic Core chooser not established; external assertion interface not established |
 | Q2 arity | **CLOSED current constructor: 2** |
 | Q3 adjacency trigger | **CLOSED no** |
 | Q4 earlier/same-line refs | **CLOSED**; earlier is checked by operand index before append |
@@ -230,26 +239,31 @@ where \(a,b\) are selected ordered indices that already exist on the same line.
 | Join row is itself Lace and may be referenced later | D6 |
 | Adjacency alone does not select operands or emit Join | D1/Q3 |
 
-### Selection boundary
+### Relation-assertion provenance boundary
+
+Let \(\rho\) denote an already-specified ordered relation/sample. This is analysis notation, not a stored row, command, queue item, or interface.
 
 \[
-\mathrm{Select}\;[GAP]
+\operatorname{Origin}(\rho)\;[GAP]
 \longrightarrow
-(a,b)
+\rho
 \longrightarrow
-\mathsf{Join}(a,b).
+\mathsf{Join}/\mathsf{Ground}.
 \]
 
-The current sources do not establish a general automatic \(\mathrm{Select}\) rule for arbitrary relations.
+The current sources do not establish a general automatic \(\mathrm{Select}(L,v)\) rule for arbitrary relations. They also do not establish an external relation-assertion interface.
 
-This is the remaining open scheduler input. It is not a missing POINTER shape.
+The remaining hole is therefore **relation-assertion provenance / authority / ownership**. It is not a missing POINTER shape and not, on current evidence, an established unfinished scheduler function.
 
-RootTouch is the closed selection special case:
+RootTouch is the closed provenance special case:
 
 \[
-(a,b)=
+\rho_{\text{root-touch}}
+=
 (\text{new occurrence},\mathrm{Root}(v)).
 \]
+
+Its origin is ruled by H1; the other arbitrary non-root relation origins remain open.
 
 
 
