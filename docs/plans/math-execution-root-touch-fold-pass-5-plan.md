@@ -1,6 +1,6 @@
 # Mathematical execution model - ROOT / TOUCH / FOLD campaign - Pass 5 PLAN
 
-**Status:** PLAN - NOT EXECUTED.
+**Status:** **EXECUTED 2026-09-20 — PASS 5 COMPLETE.**
 **Planning station:** maps (Astra-propagation).
 **Pinned main before claim:** 7654c06bf72ea0f1d7ba9ae397b2461b316e7c25.
 **Maps claim:** 6992dfeed3fc53b0c4c565a33cd346fb10ff2955.
@@ -803,3 +803,88 @@ Pass 5 is complete only when:
 ## Steward test
 
 Do not let old documentation make the hole larger than it is. Do not let new documentation make the hole smaller than it is. The constructor is known. The arbitrary chooser is not. Pass 5 exists to make every current-facing surface say exactly that.
+
+
+---
+
+## 18. Execution receipt
+
+Pass 5 executed as a staged propagation campaign.
+
+### Phase A — maps
+- Global systems ASCII Pass 29: a7a7180f31b5c3b2483c928d766d38d8648281a3
+- Phase-A findings: b073c8c8589c196def6a648799edf365eb4618eb
+
+### Phase B — graphics
+- Graphic B ASCII: f6c68ba105bb2aed7ed284e350d8fea422ab8810
+- Graphic C ASCII: 17edb9f6306413671f0710a4463278dddd8b6de6
+- graphics release: 3c11cc7c98e074f0a56f52cb8f5f5be3b56d00b7
+
+### Phase C — maps/proof/Rust surfaces
+- atomic map: 84ceeac21ab7a89ca2f9d418cf0b47bbc1de97e2
+- reason map: d12820abb716a4c3d8836aa266174ef290e70240
+- environment qualification: ee62a700f4e29fbce7f88604ba58fb914f50e8ee
+- reduction qualification: f848a508e465cb43a84c91d59ebcc779cc55d14c
+- Rust crate map: 1c0c44285e1565b8f06a88ac2ed109064d898d5a
+- Rust branch contracts: a66b58690733e5e6040258f05ba00f7baabdfd8e + 18d60e5bb378108976e87a03a77b033ddc525e97
+- Rust second reading: 9f07e477241c5854d34cee3df96ea653ef023e78
+- Phase B/C findings receipt: d84726b2c16f077de8a3b4a3aea17e2e8a7daef3
+
+### Phase D — law entrypoints
+- README: 223b77648d5579b9fd76da3600f098c33e91bdb6
+- docs/README: 9b6a3abc439dd6525f9b42b965bb41ecac921a4c
+- CONTRIBUTING: bae2d717b7f971273bb0c3cf3d767c9ceab6dc6b
+- AGENTS: 58ccbf3c11833c1d9d0da6b1779159392edb5e37
+- CLAUDE: 996a2ce55f61aacb4ad0dbc4c0b1f26c80828df9
+- law release: 73e76fe961880c7f342e5e531ba02f057536734c
+
+### Census-triggered bounded control extension
+
+The planned closeout census found mandatory future-agent control surfaces outside the initial target list. Rather than claim a false green result, Pass 5 paused closeout and propagated current status through those owning stations:
+
+- context-pass: aed51f60c0a54f67df4223071c1774df5ca984ce
+- prompts release: c5586627042c69bc13daf8a31d0cd1a8043481db
+- agent-control steward layer: 9f8517759b80e7e46b5a091a0b3a71245168311f
+- roles: e58742deec16f81344e65637fc0308e5b4c6ae91
+- kit READ_ME_FIRST: 1b8ea27983f566319ff146abc72227285face028
+- kit release: a3c075bacd95ea17d3bcc9d49ce8d54dde20d2fc
+
+The verbatim transported human-law block and dated audit were preserved.
+
+### Final proof board
+
+**P5-1 through P5-16: 16/16 PASS.**
+
+The bounded 19-surface active-status census and exact methodology are in:
+[math-execution-root-touch-fold-pass-5-findings.md](math-execution-root-touch-fold-pass-5-findings.md).
+
+### Final current result
+
+Settled/current:
+- WORD landing;
+- unseen root;
+- seen RootTouch;
+- binary Join;
+- earlier same-line WORD/POINTER operands;
+- repeated finite-sample grounding;
+- relation-among-relation storage;
+- N-D projection reading.
+
+Still open:
+
+\[
+\boxed{
+\text{arbitrary non-root-touch relation/sample selection}
+}
+\]
+
+Implementation status:
+- pointer-emission draft reconciled but **not human-accepted**;
+- no branch proof/eligibility upgrade;
+- no src/;
+- no Cargo;
+- no implementation artifact.
+
+The census extension changed documentation scope only. It did not add Core machinery.
+
+**STOP. No Pass 6 opened automatically.**
