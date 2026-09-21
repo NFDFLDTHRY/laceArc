@@ -1,7 +1,7 @@
-STATUS: FREE
+STATUS: HELD
 STATION: prompts
 OWNS: docs/prompts/**
-AGENT: -
-BASE: -
-SINCE: -
-NOTE: Pass 6 verification correction COMPLETE. Final current selector-era lines in context-pass.md replaced by sampling-derived retention/materialization wording. Earlier prompt reconciliation stands; dated prompt history preserved. coord.sh NOT_RUN.
+AGENT: Astra-sampling-reconcile
+BASE: d77756665d6fce9c6d9006b96c8c7d86e0fb5138
+SINCE: 2026-09-21T20:50:00Z
+NOTE: Pass 6 final stale correction. One context-pass crosswalk row still labels the dated environment as arbitrary relation/sample selection / selector. Replace current qualification only with retention/materialization wording. coord.sh NOT_RUN.
