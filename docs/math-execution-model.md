@@ -1,9 +1,10 @@
 # Mathematical execution model — Lace
 
-**Status:** ROOT / TOUCH / FOLD Pass 3 mathematical model, executed 2026-09-20. **Pointer construction is now mathematically specified; relation/sample selection remains a separate input-selection question.**
+**Status:** ROOT / TOUCH / FOLD Pass 3 mathematical construction + Pass 4 law reconciliation, current 2026-09-20. **Pointer construction is specified and reconciled; arbitrary relation/sample selection remains the named [GAP].**
 **Campaign:** Pass 1 mapped the root/touch/fold delta; Pass 2 formalized LAND + seen-root TOUCH; Pass 3 formalizes unseen-root creation and recursive sample-to-point GROUND.
-**Pass 3:** [plan](plans/math-execution-root-touch-fold-pass-3-plan.md) · [findings](plans/math-execution-root-touch-fold-pass-3-findings.md).
-**Physical POINTER constructor in this model:** binary \(\mathsf{Join}(a,b)\), grounded by D2/D1 plus H5/H6. The law-owned pointer-emission draft is still unchanged and not blanket-accepted.
+**Pass 3:** [plan](plans/math-execution-root-touch-fold-pass-3-plan.md) · [findings](plans/math-execution-root-touch-fold-pass-3-findings.md).  
+**Pass 4 reconciliation:** [plan](plans/math-execution-root-touch-fold-pass-4-plan.md) · [findings](plans/math-execution-root-touch-fold-pass-4-findings.md).
+**Physical POINTER constructor:** binary \(\mathsf{Join}(a,b)\), grounded by D2/D1 plus H5/H6 and now reconciled into [pointer-emission.md](pointer-emission.md) / [systems-manifest.md](systems-manifest.md). The law draft remains **not accepted**.
 **Current growth:** ARRIVE → unseen BECOMES ROOT / seen ROOT TOUCH → optional/required sample GROUND by repeated Join → Continue.
 **N-D:** recursive points-of-points are stored only as WORD/POINTER rows; dot-to-dot 2D/3D/N-D is a projection of those participation paths, never a second store.
 **No src/.**
@@ -88,7 +89,7 @@ Why binary is adopted here:
 4. H5 requires arbitrary portions to become one point.
 5. H6 supplies the \(n+1\) sample construction and distinct row per scale.
 
-The earlier model-side Q2 CONFLICT is therefore resolved **for the Core constructor represented here**. The law-owned pointer-emission draft has not yet been reconciled and remains a separate handoff.
+The earlier model-side Q2 CONFLICT is resolved **for the Core constructor represented here**. Pass 4 reconciled the same binary constructor into the law-owned pointer-emission draft while preserving the historical Q2 conflict as dated history and preserving acceptance as absent.
 
 Slot semantics are not chronological. D1 close reading shows \(\mathsf{ref_A}\) is the described subject in the six fixed examples. Pass 3 does not invent a universal semantic subject-selection algorithm; \(\mathsf{Join}(a,b)\) preserves the selected ordered operand pair.
 
@@ -466,7 +467,7 @@ Relative to Graphic D and Pieces 1, 6, 13, 14 — each is **not** a Core morphis
 | multiple grouping trees | Rule Zero / no collapse | retained as distinct Lace history; no canonicalization required by current sources |
 | which sample is selected | not stated as automatic policy | relation/input selection remains separate |
 | G1 identity | existing open | still open |
-| pointer-emission.md | law-owned stale surface | not edited / not blanket-accepted |
+| pointer-emission.md | Pass 4 reconciled law surface | binary Join current; arbitrary selection GAP; not accepted |
 
 No second store, sample registry, dimension table, or new row kind is introduced.
 
@@ -490,7 +491,7 @@ No second store, sample registry, dimension table, or new row kind is introduced
 | N-D | projection of recursive points-of-points |
 | Remaining selection issue | which sample / relation is chosen to ground |
 | G1 word identity | OPEN |
-| pointer-emission.md | unchanged / not blanket-accepted |
+| pointer-emission.md | Pass 4 reconciled draft / not accepted |
 | src/ | not authorized |
 
 **Current steward tests:** no old row is rewritten; all Join refs are backward; every grounded point is itself Lace; repeated Join represents arbitrary finite selected portions; equal-size samples do not collapse; N-D remains a view; constructor mechanics no longer depend on an unknown arity/schedule once the sample operands are selected.
