@@ -1,7 +1,7 @@
-STATUS: HELD
+STATUS: FREE
 STATION: kit
 OWNS: docs/kit/** .claude/**
-AGENT: Astra-sampling-reconcile
-BASE: 6bf1c65cf3b9e40cd0c58093071bc0f6cfd2844b
-SINCE: 2026-09-21T19:35:00Z
-NOTE: Pass 6 kit reconciliation. Preserve verbatim transported human-law blocks and dated receipts; update current steward qualification/roles/READ_ME_FIRST from arbitrary-selection framing to human-ruled sampling architecture with exact retention/materialization OPEN. Search remains derived/disposable; implementation acceptance absent. coord.sh NOT_RUN.
+AGENT: -
+BASE: -
+SINCE: -
+NOTE: Astra-sampling-reconcile Pass 6 kit reconciliation COMPLETE. Verbatim transported human-law blocks and pinned downstream-audit history preserved. Current roles/READ_ME_FIRST/agent-control now load human-ruled sampling architecture, derived/read-only star search, exact retention/materialization [GAP], G1 and other separate opens, and absent acceptance. No selector heuristic invented; no src/Cargo/Rust. coord.sh NOT_RUN.
