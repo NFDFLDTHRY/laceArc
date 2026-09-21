@@ -1,6 +1,6 @@
 # LAB SOURCE ARCHITECTURE — Pass 4 PLAN · harvest the source of record, and join the two instruments
 
-**Status:** **`PAUSED` by human 2026-09-21. Manifest Reconciliation Pass 3 now certifies the foundation as `FOUNDATION SOUND WITH EXPLICIT OPEN INTERFACES`, but this experiment remains unexecuted and does not auto-resume.** Its inherited premise has been corrected; resumption requires an explicit replan aimed at the now-pointable `SM-GAP-RM` socket. **Station:** maps. **Base:** `6d7ceb2`.
+**Status:** **`PAUSED` by human 2026-09-21. Manifest Reconciliation Pass 4 now certifies `LAB ADMISSION ENVELOPE SOUND WITH CONDITIONALS`, but this inherited experiment remains unexecuted and does not auto-resume.** Its assumptions are superseded where necessary by the [Pass-4 Lab admission envelope](manifest-reconciliation-pass-4-lab-admission.md). Resumption requires a replacement plan aimed at the RM-A/RM-B/RM-C faces of `SM-GAP-RM`. **Station:** maps. **Base:** `6d7ceb2`.
 **Prior:** [pass 1](lab-source-architecture-pass-1-plan.md) · [findings](lab-source-architecture-pass-1-findings.md) — the families and their fences.
 [pass 2](lab-source-architecture-pass-2-plan.md) · [findings](lab-source-architecture-pass-2-findings.md) — the behavioral harvest.
 [pass 3](lab-source-architecture-pass-3-plan.md) · [findings](lab-source-architecture-pass-3-findings.md) — the harness, and the cheat it first failed to catch.
