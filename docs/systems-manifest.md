@@ -398,7 +398,7 @@ Repetition does not update a count; it adds a passage. Structure densifies. Late
 
 ### Major interfaces the source actually gives
 
-1. **Write interface:** arriving words (and, in D, arriving pointer sections).
+1. **Write interface:** arriving words become WORD rows; selected ordered earlier operands are written by Core as binary Join POINTER rows. POINTER sections are produced, not supplied as a second arrival stream.
 2. **Identity interface:** word variable → star; index → exact occurrence.
 3. **Participation interface:** pointer to earlier index (word or pointer).
 4. **View interface:** projections downward; not upward writes.
@@ -461,7 +461,7 @@ Resolves into **one irreducible contract (Lace Core)** with a **thin arrival ada
 ## Cross-Cutting Parameters & Variation
 
 - **Word identity rule** — what counts as “the same word” / same variable / same star. Examples mix `PIE` and `pie`, and split `Golden` / `Skillet`. Unspecified, system-wide.
-- **Pointer emission rule** — when a POINTER is written, arity (`ref_A`, `ref_B` shown), whether consecutive WORDs imply a relation without a POINTER. Unspecified, system-wide, controls apparent dimensionality.
+- **Relation/sample selection rule** — binary Join construction, arity, backwardness, and recursive grounding are reconciled. What remains system-wide and unspecified is the upstream choice of an arbitrary non-root-touch ordered operand pair/sample. Adjacency alone does not choose it.
 - **Route-family labels** — Dictionary / Document / Conversation / Provenance (C6). Named as independent axes; not stored as types in D. Variation in labeling must not become extra stores.
 - **Projection choice** — 1D / 2D / 3D / “N-D symptoms” (C8). View parameter only.
 - **Growth bound** — source says unbounded growth, no pruning parameter. Absence of pruning is itself a cross-cutting choice.
