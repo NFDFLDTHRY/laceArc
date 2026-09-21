@@ -364,7 +364,7 @@ The paper reports empirical diagnostic accuracy, not a guarantee. **Table 3, PDF
 | Locus | **NONE FOUND as a Lace emission rule in the 22-page attachment.** Lookalikes: ReAG dependencies (§3.1 **PDF pp.3–4**), decisive-error selection (§3.3 **PDF pp.5–6**), invariant definitions (Appendix A **PDF pp.18–21**). |
 | Eye — SOURCE | Mechanisms construct/inspect agent traces — not Graphic D WORD/POINTER append. Whole-word search for lace / pointer(s) / emission / append* on this PDF: **no hits**. Appendix A supplies real diagnostic definitions; it is not an absent appendix. |
 | Map arrows | Dependency edge, failure-step selection, or backward context window ↛ accepted POINTER emission. A diagnostic step number does not become a Lace index. |
-| ON THE SHOE | Pieces 2, 5, and 6; Graphic D2–D3 and D6. Backward references, including references to earlier POINTERs, are recorded constraints. Which event emits which references, with what arity, remains unresolved. |
+| ON THE SHOE | Pieces 2, 5, and 6; Graphic D2–D3 and D6. Backward references, including references to earlier POINTERs, are recorded constraints. This paper does not determine Lace retention timing or operands; current repository law separately fixes binary Join/target kinds while leaving sampling-derived retention/materialization open. |
 | KEEP | The bounded negative finding and the distinction between observing the holder and operating the strand. |
 | FORBID | Inferring emission timing, target selection, arity, or adjacency from ReAG, ISR, neural predicates, benchmark annotations, or a page count. |
 | HOLDER / ARRAY | AgentErrata and diagnostic results concern [H]. They supply no new operation at [X]. |
