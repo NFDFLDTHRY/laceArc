@@ -11,6 +11,11 @@
 
 Pass 1 aligns the repository around the **existing clipboard system**. It does not create duplicate HCC-A / Coffee Cup / Water clipboards and it does not choose which candidate machinery is ultimately required.
 
+
+**Repair notice, 2026-09-21 (`Claude-Projection`, maps).** This file was committed with **damaged LaTeX escapes**, and the plan carried a literal **backspace byte (0x08)** — the only control character in the tree. `\boxed{` had become `<BS>oxed{`, `\text{` had become `<TAB>ext{`, `\to` had become `<TAB>o`. **12 escapes restored across the two files; the control character removed.** Each source string is unambiguous — no other LaTeX produces those bytes — so this is a decode, not a content edit. **No word of the pass was changed.**
+
+**Cause, and how the next pass avoids it.** The damage is consistent with writing the file through a path that interprets backslash escapes — an unquoted heredoc body, `echo -e`, or a format string. The safe pattern is a **quoted** heredoc delimiter (`<<'EOF'`) or a direct file write, neither of which touches `\t`, `\b` or `\n`. **Unrepaired, every future pass of this campaign that writes math will reproduce this**, and it landed on the one line the pass chose to `\boxed{}` — its own critical rule.
+
 ---
 
 ## 0. Human architecture to preserve
@@ -66,7 +71,7 @@ Pass 1 aligns the repository around the **existing clipboard system**. It does n
 The critical rule is:
 
 [
-oxed{	ext{clipboard evidence may enter the lab; clipboard authority does not automatically enter Lace}}
+\boxed{\text{clipboard evidence may enter the lab; clipboard authority does not automatically enter Lace}}
 ]
 
 ---

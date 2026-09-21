@@ -6,6 +6,19 @@ fixture or candidate fault. This is not Core and cannot become Core: it
 builds a throwaway list in memory, compares it to eleven transcribed rows,
 and prints counts.
 
+WHERE THIS SITS. Lab Source Architecture pass 1 draws
+
+    source -> clipboard -> lab evidence -> candidate systems
+
+and rules that all source-family arrows terminate at the lab, never at
+Contract I. This is the instrument at the third arrow. Its critical rule --
+"clipboard evidence may enter the lab; clipboard authority does not
+automatically enter Lace" -- is enforced here mechanically: every candidate
+declares its PROVENANCE, and provenance is printed in a column of its own,
+never folded into the result. A rule sourced from a staked clipboard and a
+rule guessed by an editor are reported the same way and judged only by
+what they derive.
+
 WHAT THIS MEASURES. Graphic D panel 1 draws five word arrivals and eleven
 rows, six of them POINTERs. A candidate rule consumes the word stream and
 emits rows. Where the rule cannot produce a pointer D1 has, an ORACLE
@@ -77,7 +90,8 @@ def exact(lace, golden):
 
 # ---- candidates -------------------------------------------------------
 def words_only(i, lace, roots):
-    return None                                   # proposes no pointer, ever
+    """Null hypothesis. Proposes no pointer, ever."""
+    return None
 
 
 def root_touch(i, lace, roots):
@@ -90,6 +104,17 @@ def root_touch(i, lace, roots):
     return None
 
 
+def pointability(i, lace, roots):
+    """Water Specs I-A1: no claim enters unless it can be pointed at.
+
+    Every operand in D1 already carries an index -- refs are backward-only
+    by construction -- so this admits all six and selects none. That is the
+    finding, not a failure: I-A1 is an ADMISSION test, not a selection rule.
+    Clipboard evidence entering the lab and declining to become authority.
+    """
+    return None
+
+
 def adjacent_pairs(i, lace, roots):
     """Ruled out by the panel itself. Included so the bench can kill it."""
     ws = [r for r in lace if r["type"] == "WORD"]
@@ -98,9 +123,13 @@ def adjacent_pairs(i, lace, roots):
     return None
 
 
-CANDIDATES = [("words_only", words_only),
-              ("root_touch", root_touch),
-              ("adjacent_pairs", adjacent_pairs)]
+# name, rule, provenance -- where the candidate came from. Printed, never weighed.
+CANDIDATES = [
+    ("words_only",     words_only,     "editor · null hypothesis"),
+    ("pointability",   pointability,   "clipboard · Water Specs I-A1"),
+    ("root_touch",     root_touch,     "ruling H1 · witnessed D1 row 0004"),
+    ("adjacent_pairs", adjacent_pairs, "graphics · ruled out by D1 itself"),
+]
 
 
 def main():
@@ -113,20 +142,21 @@ def main():
     print(f"fixture   : {fx['fixture']} v{fx['version']}  ({fx['source']})")
     print(f"stream    : {' '.join(words)}")
     print(f"golden    : {len(golden)} rows, {npointers} pointers\n")
-    print(f"{'candidate':<16}{'by rule':>9}{'by oracle':>11}{'exact':>8}   first divergence")
-    print("-" * 74)
-    for name, rule in CANDIDATES:
+    print(f"{'candidate':<16}{'provenance':<34}{'by rule':>8}{'oracle':>8}{'exact':>7}  divergence")
+    print("-" * 92)
+    for name, rule, prov in CANDIDATES:
         o = Oracle(golden)
         lace, by_rule = run(rule, words, golden, o)
         d = exact(lace, golden)
-        print(f"{name:<16}{len(by_rule):>9}{len(o.supplied):>11}"
-              f"{('yes' if d is None else 'no'):>8}   "
+        print(f"{name:<16}{prov:<34}{len(by_rule):>8}{len(o.supplied):>8}"
+              f"{('yes' if d is None else 'no'):>7}  "
               f"{'-' if d is None else f'row {d:04d}'}"
-              f"{'   rule rows: ' + ','.join(f'{x:04d}' for x in by_rule) if by_rule else ''}")
-    print("-" * 74)
-    print(f"\nOf {npointers} pointers in D1, the count under 'by rule' is how many a")
-    print("candidate derives from the word stream. 'by oracle' is how many require")
-    print("information the words do not carry.")
+              f"{'  rows ' + ','.join(f'{x:04d}' for x in by_rule) if by_rule else ''}")
+    print("-" * 92)
+    print(f"\nOf {npointers} pointers in D1, 'by rule' is how many a candidate derives")
+    print("from the word stream. 'oracle' is how many require information the words")
+    print("do not carry. Provenance is shown and not weighed: a rule from a staked")
+    print("clipboard earns nothing here that an editor's guess does not.")
     return 0
 
 

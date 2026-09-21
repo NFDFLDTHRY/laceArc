@@ -28,6 +28,11 @@ platform/hardware ─source clipboards──┘        |
 
 The pass did **not** select which machinery ultimately wins.
 
+
+**Repair notice, 2026-09-21 (`Claude-Projection`, maps).** This file was committed with **damaged LaTeX escapes**, and the plan carried a literal **backspace byte (0x08)** — the only control character in the tree. `\boxed{` had become `<BS>oxed{`, `\text{` had become `<TAB>ext{`, `\to` had become `<TAB>o`. **12 escapes restored across the two files; the control character removed.** Each source string is unambiguous — no other LaTeX produces those bytes — so this is a decode, not a content edit. **No word of the pass was changed.**
+
+**Cause, and how the next pass avoids it.** The damage is consistent with writing the file through a path that interprets backslash escapes — an unquoted heredoc body, `echo -e`, or a format string. The safe pattern is a **quoted** heredoc delimiter (`<<'EOF'`) or a direct file write, neither of which touches `\t`, `\b` or `\n`. **Unrepaired, every future pass of this campaign that writes math will reproduce this**, and it landed on the one line the pass chose to `\boxed{}` — its own critical rule.
+
 ---
 
 ## 1. Corrected baseline
@@ -223,13 +228,13 @@ No browser/device/hardware runtime execution was performed by this pass. Platfor
 The repository now has a coherent rule for the source system it already possessed:
 
 [
-	ext{source} 	o 	ext{clipboard} 	o 	ext{lab evidence} 	o 	ext{candidate systems}
+\text{source} \to \text{clipboard} \to \text{lab evidence} \to \text{candidate systems}
 ]
 
 not:
 
 [
-	ext{source citation} 	o 	ext{Core architecture}.
+\text{source citation} \to \text{Core architecture}.
 ]
 
 The behavioral-goal sources remain load-bearing targets and keep their possible machinery. Research mechanisms remain testable. Platform/toolchain machinery remains physically consequential. Lace remains the substrate being grown and tested against both behavioral success and physical reality.
