@@ -413,7 +413,7 @@ BLOCKED-BY   edge cannot legally complete while the named GAP is open
        L-M14 N-D presentation
 
   L-M08 sequence route
-       | USES/APPLIES
+       | USES
        +----> L-M09 dictionary route
        +----> L-M10 document feed
 
@@ -471,6 +471,10 @@ BLOCKED-BY   edge cannot legally complete while the named GAP is open
 **Composition rule:** a bare visual resemblance is not an edge. General sampling-derived retention has no direct `L-M20 → L-M05` edge; it is explicitly interrupted by `L-GAP-RM`. Persistence/re-entry constrains structure **after recording** and never feeds Join. RootTouch reads the new occurrence/root and specializes Join; it is not produced by an already-formed star.
 
 L-M19 finite grounding uses repeated L-M05 Join only after a sample is selected and its operands are addressable. It does not decide L-GAP-RM.
+
+**Pass 3 current-open correction — Open #14:** the Pass-27 audit correctly recorded a conflict **at that historical revision** because the then-current Piece 13 allowed graph databases / embedding spaces / definition tables as disposable views while staking forbade those stores. Current Piece 13 / SM-C15 no longer grants that permission; SM-C16 forbids embedding-as-truth and current SM-X-L3 grants no Lace write authority. Therefore **Open #14 is SUPERSEDED as a current architecture conflict.** Historical Pass-27 text stays intact. R10 may remain as a narrower proposal about whether WebNN can be used as a non-authoritative recomputed projection, but it is no longer a governing-text conflict.
+
+**Current-proposal apparatus classification:** the Pass-27/28 Carrier · Hopper · Seed corpus · Frontier · refuse edge · Runtime Layer III boxes remain **proposal/cite-only deliverable apparatus**, already cataloged in this global companion and not promoted to L-M substrate mechanisms. Their unresolved choices remain R3 / R4 / R9 / #15 / runtime proposals. They do not bypass the Pass-32 catalog or add Core write authority.
 
 ### P32-F — catalog falsifiers
 
