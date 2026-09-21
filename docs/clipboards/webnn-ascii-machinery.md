@@ -29,7 +29,7 @@
 |  ASCII fences = Spec/host-NN glyphs ONLY; stamps live UNDER fences.  |
 |  FORBID-as-Core-write; NON-binding on Core/src/Phi.                  |
 |  No src/ until pointer-emission accepted.  One strand.               |
-|  Status: Pass 4–6 EXECUTED. Emission [GAP]. Order Proposal = Pass 5. |
+|  Status: Pass 4–6 EXECUTED. WebNN supplies no Lace retention rule; current retention/materialization [GAP]. Order Proposal = Pass 5. |
 +======================================================================+
 ```
 
