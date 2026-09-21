@@ -1,7 +1,7 @@
-STATUS: FREE
+STATUS: HELD
 STATION: maps
 OWNS: docs/reason-model-map.md docs/rust-nostd-*.md docs/atomic-primitives-map.md docs/clock/gearing-code-1to1.md docs/coherence-audit*.md docs/clock/system-mathematical-model.md docs/defrag-plan.md docs/plans/** docs/namespace-register.md docs/*.md (catch-all: any unmatched file at the docs/ root)
-AGENT: -
-BASE: -
-SINCE: -
-NOTE: Astra-search-bounds SAMPLING / DENSITY / EMERGENCE Pass 4 PLAN committed at 2a61d91588ed136071e5e9747817b8a840376853; plans index cde4f7a60acd0d0a00ec04c17369d0bd67576fc6. Pass 4 not executed and is hard-gated on Pass 3 execution. Target: structural search bounding/ordering without semantic scoring using QUESTION, ANSWERS, high-frequency IS, and D1 PIE pointer rings. Tests layer/ring frontiers, support-vs-scale orderings, Pareto/extension-tree views, trunk/branch/support-change compression, one-hop/two-hop star expansion, pointer shortest/alternative paths, and saturation. No semantic weights, stop-word policy, retention, law edit, src/Cargo. coord.sh NOT_RUN.
+AGENT: Astra-star-search
+BASE: d2b72163e2e76856956925ecfe1f901222e28486
+SINCE: 2026-09-21T02:32:00Z
+NOTE: Correction run. Execute SAMPLING / DENSITY / EMERGENCE Pass 3 fully now, then rewrite Pass 4 only from actual Pass-3 leftovers. No subpasses. Primary QUESTION star over full Coffee Cup plus D1 PIE retained-pointer control, saturation/path tests, intersections and one-hop star traversal. Then close Pass 3 and replace speculative Pass-4 plan. No law edit. No src/Cargo. Connector claim; coord.sh NOT_RUN.
