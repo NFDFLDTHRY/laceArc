@@ -1,7 +1,7 @@
-STATUS: FREE
+STATUS: HELD
 STATION: kit
 OWNS: docs/kit/** .claude/**
-AGENT: -
-BASE: -
-SINCE: -
-NOTE: Live-law door CLOSED 6/6. Kit FREE. Pair human. Not door #5. Φ [GAP].
+AGENT: Astra-kit
+BASE: c5586627042c69bc13daf8a31d0cd1a8043481db
+SINCE: 2026-09-21T00:55:00Z
+NOTE: ROOT / TOUCH / FOLD Pass 5 control-surface extension. Update current steward/control status in agent-control, roles, READ_ME_FIRST only. Preserve verbatim transported human law and dated downstream-audit observations. Constructor reconciled; arbitrary selection [GAP]; acceptance absent; no src/. Connector claim; coord.sh NOT_RUN.
