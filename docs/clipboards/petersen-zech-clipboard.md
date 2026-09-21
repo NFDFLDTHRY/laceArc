@@ -160,7 +160,7 @@ T5 five-stakes: **skip** — PAGE 4/5 source pins and KEEP/FORBID agree with thi
 
 Retrieval check repeated over all 333 text-layer pages: case-insensitive whole-word searches for `lace`, `emission`, and the forms `append`, `appends`, `appended`, `appending` found no matches. `pointer`/`pointers` matched only PDF pp.18 and 290, both references to other literature. This lexical check helps locate passages; it is not a full-book semantic proof. “Appendix” is not an append operation.
 
-The current [pointer-emission draft](../pointer-emission.md) exists, explicitly unanswered and unaccepted. Its §4 reopens whether a POINTER may target a POINTER, although Graphic D3/D6, manifest Piece 5, and agent-control C05 already permit that target kind. **[CONFLICT]** Keep that permission distinct from the unresolved choice of which earlier targets, when, and with what arity. The manifest also explicitly rejects “every adjacent WORD pair emits a pointer”; this rejected candidate does not settle adjacency's meaning or supply a replacement rule. This clipboard changes neither document.
+The current [pointer-emission draft](../pointer-emission.md) exists and remains unaccepted. Current law separately settles binary Join and WORD/POINTER target kinds, and later human rulings establish sampling as relationship discovery. This book does not supply Lace's exact retention/materialization rule, so its silence must not be read as reopening the sampler or the constructor. The manifest still rejects “every adjacent WORD pair emits a pointer”; that refusal does not itself supply the retention rule. This clipboard changes neither source nor law.
 
 ## PAGE X — CROSS-CUT
 
@@ -173,7 +173,7 @@ The current [pointer-emission draft](../pointer-emission.md) exists, explicitly 
 | NTK as store | A fixed or changing surrogate is not authorized as the strand's store. | P7; Page E. |
 | Approximation = possession | Piece 13 distinguishes projection from store. Function approximation does not establish retention of a particular construction. | P3; Ch.3, 7, and 8 statements below. |
 | Exact sample fit = retained route | Matching finite outputs does not identify behavior elsewhere or establish recorded occurrence history. | P7's Ch.9 citation; Definition 9.1 and Theorem 9.3 below. |
-| Emit POINTER from this book | Timing, target selection, arity, adjacency, and slot assignment remain [GAP]. | §4 interface boundary; Page F and the current manifest. |
+| Emit POINTER from this book | This book supplies no Lace sampling or retention/materialization rule. Current Lace separately fixes binary Join/target kinds; exact retention/materialization remains [GAP]. | §4 interface boundary; Page F and the current manifest. |
 
 **P3 eye — SOURCE:** The following statement-level readings extend the earlier draft's Chapter 3 coverage to the depth and high-dimensional results named in P3. They record the book's premises and conclusions; they are not independent verification of its proofs. Symbols such as n, N, d, and m retain each cited statement's local meaning.
 
