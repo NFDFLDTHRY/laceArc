@@ -1,14 +1,14 @@
 # Pointer emission
 
-**Status:** DRAFT · **Pass 4 reconciled current rule** · **Object:** claimed. Law station.  
+**Status:** DRAFT · **Sampling / Density / Emergence Pass 6 reconciled current rule** · **Object:** claimed. Law station.  
 **Not accepted.** Not implemented. `src/` remains forbidden.  
 The historical prefix-device Pass-7 Answers remain below as dated receipts. They are **not the current answer surface where Pass 4 supersedes them**.
 
 **Current constructor:** binary `Join(a,b)` over earlier same-line Lace points.  
-**Current remaining [GAP]:** what authoritatively originates / asserts the ordered operands or sample for an arbitrary non-root-touch relation.  
+**Current remaining [GAP]:** the exact sampling-derived retention / materialization condition: when discovered structure becomes a retained POINTER, and how an ephemeral sampled structure is grounded when a retained operand requires an address.  
 **Acceptance:** still absent.
 
-The old single Φ-schedule blocker has been decomposed into arrival/root/touch, physical Join construction, and arbitrary non-root relation-assertion provenance / authority.
+The old single Φ-schedule blocker was first decomposed into arrival/root/touch, physical Join construction, and a presumed arbitrary relation-assertion provenance question. Later human rulings H7–H12 supersede that provenance framing as the active problem: sampling discovers structure as Lace grows. The remaining active gap is the exact sampling-derived retention / materialization condition.
 
 | Rule | Still | Not |
 |---|---|
@@ -33,11 +33,11 @@ Do not silence the graphics with a default. Do not treat this draft as Core code
 
 - Four graphics in `docs/graphics/` (A–D) and `docs/systems-manifest.md` derived from them.
 - Prefix-device passes 1–7 are retained as historical campaign evidence.
-- Current human rulings H1–H6 are recorded and analyzed by [ROOT / TOUCH / FOLD passes 1–4](plans/math-execution-root-touch-fold-pass-4-findings.md); [Pass 6](plans/math-execution-root-touch-fold-pass-6-findings.md) reclassifies the remaining arbitrary relation hole as provenance/authority rather than assuming an automatic selector.
+- Human rulings H1–H6 are recorded by the ROOT / TOUCH / FOLD campaign. That campaign’s Pass 6 remains dated history for the former arbitrary-assertion/provenance question. Later human rulings H7–H12 and [SAMPLING / DENSITY / EMERGENCE Passes 1–5](plans/sampling-density-emergence-pass-5-findings.md) supersede that question as the active model: sampling discovers recurring structure across scale; the exact retention/materialization rule remains open.
 - Current mathematical construction: [`math-execution-model.md`](math-execution-model.md).
 - The four graphics remain upstream source; this file reconciles their storage constraints with the explicit human rulings without turning the mathematical derivations into graphic quotes.
 
-## Current reconciliation — ROOT / TOUCH / FOLD Pass 4
+## Current reconciliation — SAMPLING / DENSITY / EMERGENCE Pass 6
 
 **Current. Not accepted.** This section supersedes the current-status readings of the historical Pass-7 Answer lines below; the historical text remains preserved as evidence.
 
@@ -97,37 +97,51 @@ P_{m+1}=\mathsf{Join}(P_m,s_{m+1}).
 
 Each \(n\to n+1\) extension appends one new POINTER row. Already-grounded branches may also be joined. No global sample-size registry is stored.
 
-### What remains open
+### Sampling, retention, and what remains open
 
-The constructor does **not** originate its own relation.
+The constructor does **not** semantically choose an arbitrary relation first.
 
-For arbitrary non-root-touch participation, the unresolved question is:
+Current human rulings establish the architecture:
+
+- retained WORD and POINTER history remains on one append-only 1D Lace;
+- sampling derives a 2D position-by-scale working surface from growing Lace/text;
+- structures may participate across different sampling levels;
+- POINTER topology is the retained relational map;
+- star/search is a derived read surface, not a stored Star or write authority.
+
+Three events must remain distinct:
+
+\[
+\text{sampled observation}
+\neq
+\text{retained POINTER append}
+\neq
+\text{search / projection}.
+\]
+
+The exact general retention rule is still open:
 
 \[
 \boxed{
-\operatorname{Origin}(\rho)=?
+\text{When does sampling-derived structural evidence become a retained POINTER?}
 }
 \]
 
-where \(\rho\) is analysis notation for an already-specified ordered relation/sample to be grounded.
+A second part of the same boundary is also open:
 
-In prose:
+\[
+\boxed{
+\text{If the desired retained operand is only an ephemeral sample, how is it grounded into an addressable 1D point?}
+}
+\]
 
-> **What authoritatively originates / asserts the ordered operands or sample for an arbitrary non-root-touch relation?**
+The sampling campaign refuted several universal answers: every sampled cell, every adjacent pair, exact-repeat-only retention, first-seen-every-cell materialization, and cheapest-contiguous grounding.
 
-Current boundary:
+RootTouch remains the closed special case: a seen word occurrence appends another WORD and joins that occurrence to its root.
 
-- \(\rho\) / the selected ordered operands are **inputs / preconditions to Join/Ground**;
-- Core validates that referenced operands are earlier same-line indices and appends the required Join row(s);
-- current sources do **not** establish that Core must automatically choose arbitrary relations;
-- current sources also do **not** establish an external assertion/write interface;
-- Contract II remains raw word/punch-card input and is not expanded to carry a hidden relation/sample channel;
-- no query/write operator is invented;
-- route/document boundaries are not promoted to relation provenance metadata.
+Contract II remains raw word/punch-card input; it is not expanded with a hidden relation/sample payload. No external Core relation-write interface is established. The derived search operations mapped by Passes 3–5 are read operations and do not write Lace.
 
-RootTouch is the closed special case because H1 fixes the relation origin and operands: new occurrence + word root.
-
-ROOT / TOUCH / FOLD Pass 6 tested several stronger automatic punch-card readings against D1. Mandatory per-arrival whole-prefix grounding, one persistent active-sample ladder, and automatic materialization of all possible portions do not reproduce D1 as universal rules. This reclassifies the remaining hole; it does not close it and does not prove that relation provenance is external to Core.
+**Historical note:** ROOT / TOUCH / FOLD Pass 6’s \(Origin(\rho)=[GAP]\) finding is retained as the correct narrowing of the then-assumed arbitrary-relation question. H7–H12 later superseded that assumption as the active problem; the historical finding is not deleted or rewritten.
 
 ### Current question table
 
@@ -138,7 +152,7 @@ ROOT / TOUCH / FOLD Pass 6 tested several stronger automatic punch-card readings
 | seen arrival | **CLOSED:** another WORD occurrence; root stays first occurrence |
 | Q1 root touch | **CLOSED by human ruling + D1 witness:** Join(new occurrence, root) |
 | Q1 physical relation constructor | **CLOSED:** selected ordered pair emits binary Join |
-| Q1 arbitrary non-root relation-assertion provenance / authority | **[GAP]** — automatic Core chooser not established; external assertion interface not established |
+| Q1 sampling-derived retention / materialization | **[GAP]** — sampling discovers structure; the exact general condition for retaining a POINTER and grounding an ephemeral sampled operand is not established |
 | Q2 arity | **CLOSED current constructor: 2** |
 | Q3 adjacency trigger | **CLOSED no** |
 | Q4 earlier/same-line refs | **CLOSED**; earlier is checked by operand index before append |
@@ -208,7 +222,7 @@ count that last kind as `CLOSED`-eligible: *"including a ruled-out candidate."*
 
 ## Φ / Join — current constructor
 
-**Status:** constructor reconciled. Upstream arbitrary relation/sample selection remains \`[GAP]\`. Not accepted.
+**Status:** constructor reconciled. Sampling architecture current; exact retention/materialization remains \`[GAP]\`. Not accepted.
 
 Arrival and POINTER construction are distinct append forms on the same Lace:
 
@@ -239,33 +253,35 @@ where \(a,b\) are selected ordered indices that already exist on the same line.
 | Join row is itself Lace and may be referenced later | D6 |
 | Adjacency alone does not select operands or emit Join | D1/Q3 |
 
-### Relation-assertion provenance boundary
+### Sampling-derived retention boundary
 
-Let \(\rho\) denote an already-specified ordered relation/sample. This is analysis notation, not a stored row, command, queue item, or interface.
+The earlier active analysis used \(\rho\) for an already-specified relation/sample and asked \(Origin(\rho)\). That framing is now **HISTORICAL** under H7–H12.
+
+Current active flow:
 
 \[
-\operatorname{Origin}(\rho)\;[GAP]
-\longrightarrow
-\rho
-\longrightarrow
+L
+\to
+\text{derived 2D sampling}
+\to
+\text{recurrence / overlap evidence}
+\to
+[\text{OPEN retention/materialization}]
+\to
 \mathsf{Join}/\mathsf{Ground}.
 \]
 
-The current sources do not establish a general automatic \(\mathrm{Select}(L,v)\) rule for arbitrary relations. They also do not establish an external relation-assertion interface.
+The current source/human record does not establish a universal retain-when rule, nor a universal rule for materializing an ephemeral sample into a 1D operand. It also does not establish an external relation-write interface.
 
-The remaining hole is therefore **relation-assertion provenance / authority / ownership**. It is not a missing POINTER shape and not, on current evidence, an established unfinished scheduler function.
-
-RootTouch is the closed provenance special case:
+RootTouch remains the closed special case:
 
 \[
-\rho_{\text{root-touch}}
-=
-(\text{new occurrence},\mathrm{Root}(v)).
+\mathsf{Join}(\text{new occurrence},\mathrm{Root}(v)).
 \]
 
-Its origin is ruled by H1; the other arbitrary non-root relation origins remain open.
+Star/search reads are derived from Lace and sampling; they do not provide write authority.
 
-
+---
 
 ## Historical Pass-7 question surface (retained)
 
