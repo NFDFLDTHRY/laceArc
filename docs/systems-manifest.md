@@ -72,7 +72,7 @@ These are not retroactive quotes from the PNGs. Where the graphics are silent, t
   - Join never discovers meaning or invents an arbitrary relation.
 - **Failure modes / breakdown conditions:** Parsing/discarding arrivals; interning repeated words; creating a second relation store; allowing Join to infer relations from semantic similarity; rewriting earlier rows.
 - **Boundary & Coupling:** This operator couples Strand, WORD/root identity, Star, Join participation, and Continue. An arbitrary non-root relation assertion is a constructor precondition; its **provenance / authority / ownership remains open**. Current evidence does not establish that Core must automatically originate it.
-- **Implementation implications:** No second graph-building engine. Once an ordered relation/sample is specified, physical append is deterministic. The remaining design gap is **relation-assertion provenance / authority**, not POINTER representation and not a proven automatic selector.
+- **Implementation implications:** No second graph-building engine. Once retained operands are addressable, physical append is deterministic. The remaining design gap is the **sampling-derived retention/materialization condition**, not POINTER representation and not a semantic chooser.
 - **Metaphor / diagnostic role:** Single-rule universe.
 - **Key source language:** “Input word arrives. Route new wire through that word’s star. Continue.” “No stored meaning — only routes, touches, and structure.”
 
