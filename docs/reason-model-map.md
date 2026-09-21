@@ -14,7 +14,7 @@ Core pieces named below are the pieces in `docs/systems-manifest.md` (Pieces 1�
 | 2 | High-risk lookalikes: Kauffman hitches / slide / virtual; Rowlands §20 DNA / UG |
 | 3 | Leftovers that pass 2 only type-classified: Xiao ch. 5 inference; Petersen NTK; AgentScope remainder (22-page paper, no hidden appendix piece) |
 
-**Mapping status:** 3/3. Complete. **Current-law qualification, ROOT / TOUCH / FOLD Pass 5:** the adjacent books still do not supply Lace relation selection, but current repository law separately settles WORD landing, root/RootTouch, binary Join, target kinds, backward refs, and finite-sample grounding. The remaining Core-adjacent [GAP] is arbitrary non-root-touch relation/sample selection. This map must not be read as reopening the constructor.
+**Mapping status:** 3/3. Complete. **Current-law qualification, SAMPLING / DENSITY / EMERGENCE Pass 6:** the adjacent books still do not supply Lace's sampler or retention machinery. Current human rulings separately settle WORD landing, root/RootTouch, binary Join, one authoritative 1D Lace, derived 2D sampling, and read-only star/search. The remaining Core-adjacent [GAP] is exact sampling-derived retention/materialization. This map must not be read as reopening the constructor or sampler.
 
 **Source-attribution correction, 2026-09-20 (update pass 1, U16):** Targeted sightings of Kauffman printed pp.16–17 / PDF pp.35–36 (Figure 8) and printed p.323 / PDF p.342, plus Xiao–Zhu printed p.2 / PDF p.9 (Equation 1.1) and printed p.38 / PDF p.45 (§2.1.1), correct the diagram-equivalence, hitch-inequality and token-occurrence characterizations below. These corrections retain the existing prohibitions on replacing Lace history; they add no Core operator, tokenizer or emission rule. The original three-pass mapping remains its own completed campaign.
 
@@ -91,7 +91,7 @@ These are not new Core pieces. They are how the Core pieces feel.
 - **Maps onto:** Piece 5 POINTER Entry; participation / later touch
 - **Hands test:** Pull the standing part. An earlier wrap tightens. The earlier wrap is still there.
 - **Failure:** Replace retained passage history with a simplified equivalent diagram. Reidemeister equivalence supplies no authority for that replacement; a hitch does not erase earlier wraps.
-- **Source silence:** On a shoe the grab is physics of friction. In Graphic D the grab is a later POINTER row. The five mapped documents do not supply Lace's arbitrary relation selector. Current constructor law comes from the Hands/human-ruling chain, not these books.
+- **Source silence:** On a shoe the grab is physics of friction. In Graphic D the grab is a later POINTER row. The five mapped documents do not supply Lace's sampler or retention/materialization rule. Current sampling architecture comes from the Hands/human-ruling chain, not these books.
 
 ### RM5 — Chart is not the shoe (projection)
 
@@ -396,7 +396,7 @@ A2’s output (a DAG of steps) does not match Piece 5’s input (earlier indices
 RM1 one cord  ──is──  Piece 1 + Piece 6
 RM2 eyelet+passes  ──is──  Piece 7 read off many Piece 4 rows
 RM3 next hole  ──is──  Piece 3 + Piece 2
-RM4 later grab  ──is──  Piece 5   [source kin only; current arbitrary selector GAP]
+RM4 later grab  ──is──  Piece 5   [source kin only; current retention/materialization GAP]
 RM5 chart  ──reads──  Pieces 1–7 without becoming them
 RM6 no tag  ──forbids──  meaning table / embedding store
 ```
@@ -431,7 +431,7 @@ Change amplification: any one of those imports forces a second store. The second
 
 Piece 2’s input is an arriving word. Piece 2’s output is more strand.  
 None of the five documents emit that pair except as analogy (order, empty start, felt grab).  
-The mapped books do not bridge “later grab on a shoe” to an arbitrary Lace relation assertion. Current law now supplies the binary Join constructor; **arbitrary relation/sample selection remains [GAP]**.
+The mapped books do not supply Lace's sampling/retention machinery. Current human rulings separately establish sampling as discovery and current law supplies binary Join; **exact sampling-derived retention/materialization remains [GAP]**.
 
 ---
 
@@ -482,7 +482,7 @@ Do not create a third contract from these five books. Current Core already has t
 | Parameter | Who owns it | Allowed variation |
 |---|---|---|
 | Tokenization | Core [GAP] | Constrained by X4: no mask/delete/random-replace; constrained by Piece 4: no intern-as-identity |
-| Arbitrary relation/sample selection | Core-adjacent [GAP] | Not K4, not next-token, not GNN message-pass; physical Join mechanics are current law |
+| Sampling-derived retention/materialization | Core-adjacent [GAP] | Not K4, not next-token, not GNN message-pass; sampling discovery and physical Join mechanics are current elsewhere |
 | Word identity (case, stem, homograph) | Core [GAP] | Graphics show both “PIE” and “pie”; do not resolve from Xiao vocab |
 | Projection choice (1D/2D/3D) | Read layer | Any shadow; none authoritative |
 | Steward stop/start | AGENTS.md | AgentScope taxonomy may label breaches |
@@ -503,13 +503,13 @@ Diagnostic use:
 - Asked to tokenize like BERT → X4 conflict.
 - Asked to train a net of stars → P1–P4 conflict.
 - Asked to store agent graphs in the array → A2 conflict.
-- Asked these five books for the arbitrary relation chooser → answer: **source-silent**. Current `docs/pointer-emission.md` separately reconciles the constructor and preserves arbitrary selection as [GAP].
+- Asked these five books for Lace sampling/retention machinery → answer: **source-silent**. Current `docs/pointer-emission.md` separately reconciles the human-ruled sampling architecture and preserves exact retention/materialization as [GAP].
 
 ---
 
 ## Coupling matrix (what may touch Core)
 
-|  | Strand / Rule Zero | Star as eyelet+passes | POINTER / hitch | Projection vs thing | No stored meaning | Arbitrary-selection [GAP] |
+|  | Strand / Rule Zero | Star as eyelet+passes | POINTER / hitch | Projection vs thing | No stored meaning | Retention/materialization [GAP] |
 |---|---|---|---|---|---|---|
 | Kauffman hitch / friction / Part II §1 | kin | kin | **strong kin** | kin (diagram≠rope) | — | does **not** close |
 | Kauffman closed-loop + Reidemeister | **conflict** | collapse risk | conflict | — | — | false solution |
@@ -597,7 +597,7 @@ Marks in cells: kin / weak / adj / conflict / off / — (no contact).
 
 ## Open Questions (none closed by these documents)
 
-They do not supply Lace's arbitrary relation-selection rule.  
+They do not supply Lace's sampling-derived retention/materialization rule.  
 Their silence on POINTER arity is historical source silence, not current repository-law status; current law fixes binary Join.  
 They do not say whether adjacent WORD rows are already a relation.  
 They do not license Reidemeister, next-token prediction, or a ReLU star as Core.
@@ -613,7 +613,7 @@ If you cannot do it to a shoe lace in your hands, you may not do it to laceArc.
 - Core is one contract. The five books are not five contracts.
 - Only Kauffman hitch, Rowlands empty/no-extra-store, and AgentScope-on-the-holder may sit beside Core.
 - Reidemeister equivalence as replacement history, vocabulary-as-occurrence-collapse, masking retained arrival, \(\Phi(w)\), and ReAG-in-the-array remain illegal fusions.
-- These volumes do not supply the arbitrary relation/sample selector. Do not fill that remaining [GAP] from them; current constructor law is supplied elsewhere.
+- These volumes do not supply the sampling-derived retention/materialization rule. Do not fill that remaining [GAP] from them; current sampling/constructor law is supplied elsewhere.
 
 ---
 
