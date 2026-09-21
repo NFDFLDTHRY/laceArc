@@ -31,9 +31,24 @@ An **extraction** is what a pass recovered. A **sit-note** is the interpretation
 | [history-recovered-pass-7-2026-09-18.md](history-recovered-pass-7-2026-09-18.md) | Pass 7 extraction (bound; cites pass 6) |
 | [history-recovered-pass-7-evidence-2026-09-18.json](history-recovered-pass-7-evidence-2026-09-18.json) | Pass 7 evidence (409 KB JSON; machine record, not prose) |
 
-POINTER emission stays `[GAP]`. No `src/`.
+Current constructor/sampling architecture is reconciled in an unaccepted draft; **exact sampling-derived retention/materialization remains `[GAP]`**. No `src/`.
 
 ## Relationship evidence questions
+
+### Manifest Reconciliation Pass 2 reader qualification — 2026-09-21
+
+The executed relationship-evidence bodies below are preserved as historical evidence. A later direct sight-read of the four canonical PNGs during Manifest Reconciliation Pass 1 established one source-attribution defect in that campaign:
+
+- **A6** is the PIE-in-context specimen (“The order said: PIE.”), not the explicit dictionary-definition route.
+- **B4** carries the explicit `PIE → dessert → slice → whole → food` definition path.
+- **C9** carries the dictionary-wiring analogue.
+- **A11/A12** carry dictionary/document integration and dictionary-definition traffic.
+
+Therefore any retained historical statement that attributes B4's explicit route to A6 describes the campaign's earlier reading, not current source truth. Do **not** rewrite the executed findings to make them retrospectively correct. For current structural work use the [Pass-32 mechanism catalog](../systems-manifest-ascii.md#pass-32--manifest-reconciliation-pass-1--canonical-mechanism-catalog) and the [systems-manifest contract registry](../systems-manifest.md#current-mechanism-contract-registry--manifest-reconciliation-pass-1).
+
+The same current split applies to **B10/B11**: B10 is the no-collapse anti-model; B11 is the projection boundary.
+
+
 
 ### Current re-anchor — 2026-09-20
 
