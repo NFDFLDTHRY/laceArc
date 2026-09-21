@@ -1,7 +1,7 @@
-STATUS: FREE
+STATUS: HELD
 STATION: maps
 OWNS: docs/reason-model-map.md docs/rust-nostd-*.md docs/atomic-primitives-map.md docs/clock/gearing-code-1to1.md docs/coherence-audit*.md docs/clock/system-mathematical-model.md docs/defrag-plan.md docs/plans/** docs/namespace-register.md docs/*.md (catch-all: any unmatched file at the docs/ root)
-AGENT: -
-BASE: -
-SINCE: -
-NOTE: Correction complete. SAMPLING / DENSITY / EMERGENCE Pass 3 fully EXECUTED and closed. Execution claim 4d71e05e4ef6194cccc77e0f3a7c8dfcf2e64339; findings e26d026c3f623dc4cc9b676ec4a4fc71bc5bfe70 + final verification ee8d72f0dff7a2bd369773c6ea1cb52aa5f49cb1; plan close 2598430d24cedf51e6edbbc5370f57b86908ab7e; index 41684fb5a15eee396bb0bf38cc261598829dc8e8. Result: layered StarSearch = lexical occurrences + anchored multi-scale patterns + retained pointer paths. QUESTION recovers repeated trunk/branches; D1 PIE flat transitive membership saturates all 6 POINTER rows, so distance/path structure is required. Pass 4 speculative plan was replaced from actual leftovers only at 7c1a269d651eb44894977e82849f9fe43bc35279; index refreshed c152d0edc8365dcda0505d373411092ede138abd. Pass 4 now targets structural search frontiers/path preservation only. No subpasses, no law edit, no src/Cargo/Rust. coord.sh NOT_RUN.
+AGENT: Astra-search-bounds
+BASE: 98ba7ad49ade797c67492cf5f3379844e8508867
+SINCE: 2026-09-21T02:35:00Z
+NOTE: User-directed SAMPLING / DENSITY / EMERGENCE Pass 4 execution as one complete pass. Execute structural search frontiers/path preservation only: QUESTION/ANSWERS/IS recurrence compression/order, one-hop/two-hop expansion, and D1 PIE path-ring preservation. No subpasses. No retention/semantic ranking/law edit/src/Cargo/Rust. Connector claim; coord.sh NOT_RUN.
