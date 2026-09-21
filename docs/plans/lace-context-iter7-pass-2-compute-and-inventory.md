@@ -47,10 +47,10 @@ Shader language only. G-III-2: *WGSL ≠ WORD; module/entry ≠ strand/Φ; addre
 |---|---|---|
 | Learn or apply the schedule σ | **No** | F-S2 (not learned), F-S1 (no side state), Petersen–Zech FORBID train-w-as-history |
 | Word identity (embedding two spellings to decide `PIE = pie`) | **No** | F-G; C05 *"a spelling match is not permission … choose a star handle"*; G1 is the human's |
-| A **projection engine**: compute a layout of stars for the 3D picture from a copy of `L[0, frontier)`, recomputed on demand, never persisted | **Conditional — R10** | manifest Piece 13 permits *"embedding spaces … only as disposable views"*; the staking law forbids *"embedding store"*; the branch-contracts already record this as the **view-store conflict** (source difference 3). An NN-computed layout that is recomputed from `L` each time and never stored is a view under the manifest's reading and a store under the law's if it is ever cached. **The human rules which reading holds** |
+| A **projection engine**: compute a layout of stars for the 3D picture from a copy of `L[0, frontier)`, recomputed on demand, never persisted | **Conditional proposal — R10 reframed** | Manifest Reconciliation superseded the old Piece-13 permission for *"embedding spaces … only as disposable views"*. Current SM-C15 permits read-only projection but grants no graph/embedding/definition-table store; SM-C16 forbids embedding-as-truth and the staking law still forbids an embedding store. R10 therefore no longer asks which of two governing texts wins. It asks a narrower app-design question: whether WebNN may be used as a **non-authoritative projection computation** whose output is derived from recorded Lace, discarded, and never treated as relation truth. That proposal remains unaccepted and may still be rejected. |
 | Steward tooling (classify a candidate σ, summarise a shelf) | Layer III steward, outside the app | C06: a model helping the project is a steward; its weights are not Lace's design. Not part of the installed app |
 
-**Honest line:** if R10 goes the law's way, WebNN is absent from the shipped app, and the heterogeneous model is *three*, not four. That is a legitimate outcome and this pass does not soften it.
+**Honest line:** R10 is now an application/design proposal, not a manifest-vs-staking authority conflict. If the view-only proof is not accepted, WebNN is absent from the shipped app and the heterogeneous model is *three*, not four. That is a legitimate outcome and this pass does not soften it.
 
 ---
 
@@ -155,7 +155,7 @@ The original campaign proposed G1–G7 as inputs to a later promotion rule; that
 | R | Question | Options |
 |---|---|---|
 | **R9** | Frontier protocol: may readers read `[0, frontier)` concurrently with the single writer, on the strength of append-only alone? | yes as stated / yes with a stated memory-order proof obligation / no — readers run only between appends |
-| **R10** | Is an NN-computed, never-persisted, recomputed-from-`L` layout a *view* (manifest Piece 13) or an *embedding store* (staking law)? | view — WebNN admitted as C22 under the `view_*` card's proof shape / store — WebNN absent from the app |
+| **R10** | May WebNN be used in the shipped app solely as a non-authoritative, recomputed projection computation under SM-C15 / SM-X-PLAT / SM-X-L3, with no embedding store and no inferred relation truth? | yes under an explicit view-only proof / no — WebNN absent from the app |
 | **R11** | Is COOP/COEP synthesis by the service worker an acceptable production mechanism for isolation on the domain, given Pages sets no headers? | yes, after P-COI / no — copies only, no threads |
 
 ## 8. Coverage
