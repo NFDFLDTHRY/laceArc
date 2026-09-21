@@ -7,7 +7,36 @@
 **Store:** Graphic D. C is the N-D presentation reading of the same strand.  
 **Not this file:** Graphic A ASCII, Graphic B ASCII, D1 tape, Hands-manifest spine (`docs/systems-manifest-ascii.md`), HCC/Cup C*, `src/`, POINTER emission answers.
 
-Emission remains `[GAP]`.
+**Current law qualification (ROOT / TOUCH / FOLD Pass 5):** Graphic C remains an N-D presentation reading, not storage law. Current law now settles binary Join, RootTouch, POINTER→POINTER participation, and finite-sample grounding. **Arbitrary non-root-touch relation/sample selection remains `[GAP]`; C6 route-family labeling/discrimination also remains `[GAP]`.** Historical C-pass G2 stamps below remain dated source-reading records.
+
+
+## Current law qualification — not a Graphic-C source amendment
+
+Graphic C remains the N-D presentation source reading. The following is a **current-law/storage cross-reference**, not text attributed to the PNG.
+
+- C7 relations-among-relations now have a current storage correspondent:
+  \[
+  \mathsf{Join}(\text{point},\text{point}),
+  \]
+  where either operand may already be a POINTER/Join point.
+- Recursive Join points are real rows of Graphic-D Lace.
+- The 2D / 3D / N-D dot-to-dot rendering remains a projection of those retained participation paths.
+- C11 no-write-back remains absolute.
+- C6 dictionary / document / conversation / provenance families remain **views / labels**, not row types; how those families are discriminated or labeled remains [GAP].
+- Current law does **not** establish an automatic arbitrary relation/sample chooser. Selection remains [GAP].
+
+Current split:
+
+| Surface | Current status |
+|---|---|
+| binary Join / arity | closed |
+| adjacency-alone trigger | closed false |
+| RootTouch | closed |
+| POINTER→POINTER / relation-among-relation storage | closed |
+| arbitrary relation/sample selection | [GAP] |
+| C6 family labels / discriminator | [GAP] |
+
+The historical C7/C11/G2 iteration text below is preserved as dated source-reading history.
 
 Printed panel numbers on the PNG were not recovered this tick. Working titles C1–C12 are the Hands-map inventory. If a later pass reads a different title on the artwork, the PNG wins.
 
