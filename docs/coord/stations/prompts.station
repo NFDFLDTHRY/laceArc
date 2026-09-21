@@ -1,7 +1,7 @@
-STATUS: FREE
+STATUS: HELD
 STATION: prompts
 OWNS: docs/prompts/**
-AGENT: -
-BASE: -
-SINCE: -
-NOTE: Lab Source Architecture Pass 1 prompt alignment COMPLETE. Mandatory context now routes behavioral, research and platform clipboards through the lab and uses retention/materialization as the current Core-adjacent gap. Historical receipts preserved.
+AGENT: Astra-manifest-reconcile-p2
+BASE: db9d0a25d19abbe5fca8eef9429a9c8416a2f8c3
+SINCE: 2026-09-21T22:27:53.904Z
+NOTE: Manifest Reconciliation Pass 2 prompts wave: remove stale current selector-era framing from mandatory context while preserving dated sigma/selector history.
