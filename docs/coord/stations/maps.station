@@ -1,7 +1,7 @@
-STATUS: FREE
+STATUS: HELD
 STATION: maps
 OWNS: docs/reason-model-map.md docs/rust-nostd-*.md docs/atomic-primitives-map.md docs/clock/gearing-code-1to1.md docs/coherence-audit*.md docs/clock/system-mathematical-model.md docs/defrag-plan.md docs/plans/** docs/namespace-register.md docs/*.md (catch-all: any unmatched file at the docs/ root)
-AGENT: -
-BASE: -
-SINCE: -
-NOTE: Lab Source Architecture Pass 1 COMPLETE and receipt finalized. Global ASCII Pass 31 is the final semantic edit; all source families route through the lab; Pass 30 and retention/materialization GAP preserved; no implementation or acceptance.
+AGENT: Astra-manifest-reconcile
+BASE: 86500eebe7d7f0bd2a941c0d76d723be571e09c1
+SINCE: 2026-09-21T22:08:29.492Z
+NOTE: Manifest Reconciliation Pass 1: canonical global mechanism catalog + contract crosswalk. Lab Source Architecture Pass 4 PAUSED by human pending information mapping.
