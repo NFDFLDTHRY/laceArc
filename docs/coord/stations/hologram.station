@@ -1,7 +1,7 @@
-STATUS: FREE
+STATUS: HELD
 STATION: hologram
 OWNS: docs/hologram/** docs/clock/**
-AGENT: -
-BASE: -
-SINCE: -
-NOTE: Quiet door #7 CLOSED 6/6. Hologram FREE. Lookrefs not Graphic E. Renderer unclaimed. Door #6 CLOSED. Φ [GAP].
+AGENT: Astra-lab-architecture
+BASE: acd3f83eb8bb6a9460fc5afe574fa1edb5510ce8
+SINCE: 2026-09-21T20:39:00Z
+NOTE: Lab Source Architecture Pass 1: qualify existing HCC-A/Coffee Cup/Water clipboard products and H×C×W composition as behavioral-goal/candidate-machinery inputs to the lab. Historical pass bodies preserved.
