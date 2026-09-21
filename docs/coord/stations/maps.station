@@ -1,7 +1,7 @@
-STATUS: FREE
+STATUS: HELD
 STATION: maps
 OWNS: docs/reason-model-map.md docs/rust-nostd-*.md docs/atomic-primitives-map.md docs/clock/gearing-code-1to1.md docs/coherence-audit*.md docs/clock/system-mathematical-model.md docs/defrag-plan.md docs/plans/** docs/namespace-register.md docs/*.md (catch-all: any unmatched file at the docs/ root)
-AGENT: -
-BASE: -
-SINCE: -
-NOTE: Manifest Reconciliation Pass 4 maps phase A complete: plan + non-canonical Lab admission envelope drafted. Law phase pending. Inherited Lab Source Architecture Pass 4 remains PAUSED.
+AGENT: Astra-manifest-reconcile-p4
+BASE: 0cdbc0d21bc0f779184f585c3333fbad4cd06115
+SINCE: 2026-09-21T23:14:16.567Z
+NOTE: Manifest Reconciliation Pass 4 maps phase B: annotate existing L-GAP-RM socket with RM-A/B/C and bounded-freeze boundary; audit current Lab/control surfaces; finalize admission envelope/findings. No new mechanism. Lab Source Architecture Pass 4 remains PAUSED.
