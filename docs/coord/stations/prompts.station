@@ -1,7 +1,7 @@
-STATUS: HELD
+STATUS: FREE
 STATION: prompts
 OWNS: docs/prompts/**
-AGENT: Astra-sampling-reconcile
-BASE: 8cf7c78f934be660c3a81a4930ed7f775be8de86
-SINCE: 2026-09-21T19:20:00Z
-NOTE: Pass 6 prompt reconciliation. Update live agent entry prompts from arbitrary-selection gap to current 1D Lace + derived 2D sampling + OPEN retention/materialization story. Preserve dated creation prompts/history and no-acceptance/no-implementation fences. coord.sh NOT_RUN.
+AGENT: -
+BASE: -
+SINCE: -
+NOTE: Astra-sampling-reconcile Pass 6 prompts reconciliation COMPLETE. context-pass now tells the current 1D Lace → derived 2D sampling → OPEN retention/materialization → retained POINTER → derived star/search story; arbitrary semantic chooser is historical, search is read-only, acceptance absent. prompts README qualification updated. pointer-emission-prompt preserved as dated creation ticket with a current-status warning rather than rewritten. No src/Cargo/Rust. coord.sh NOT_RUN.
