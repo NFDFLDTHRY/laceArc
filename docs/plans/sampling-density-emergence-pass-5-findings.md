@@ -1083,3 +1083,31 @@ Name:
 Everything else should be rebuilt from Lace.
 
 If it cannot be rebuilt, it is trying to become another memory.
+
+
+---
+
+## 27. Final verification
+
+Final pre-release tip:
+
+**685c8308bc7b842d0eb884533da1d8e1afbf05a9**
+
+Tracked tree:
+
+- 705 paths
+- recursive tree not truncated
+- src/ paths: 0
+- Cargo.toml paths: 0
+- .rs files: 0
+
+Law surfaces remained byte-unchanged:
+
+- pointer-emission.md: 51224368ae966b6c480746925caa2cade970842e
+- systems-manifest.md: 6f0310099cbcf482ad884f653f423b4e806f724b
+
+Law station remained FREE.
+
+Pass 5 changed maps-owned plan/findings/index surfaces only.
+
+**PASS 5 COMPLETE.**
