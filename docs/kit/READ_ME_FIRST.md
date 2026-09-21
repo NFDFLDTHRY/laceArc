@@ -40,7 +40,7 @@ reconciliation is not acceptance. Permanent prohibitions remain.
 Work on the one assigned task. Do not create another implementation branch.
 ```
 
-The routing block requires exact human acceptance and all task-specific premises while keeping permanent prohibitions in force. It does not establish an arbitrary selector or reconcile every other entrance. Do not replace the staking ASCII with this routing block. Its complete wording must remain available to every agent.
+The routing block requires exact human acceptance and all task-specific premises while keeping permanent prohibitions in force. It does not establish the open sampling-derived retention/materialization rule or reconcile every other entrance. Do not replace the staking ASCII with this routing block. Its complete wording must remain available to every agent.
 
 The downstream audit remains pinned to the THEN commit `4fe984bb098d5ca21c9704234df4fddd53056efb`. Its original observations and hook experiments are preserved as historical evidence. At that pin, pointer-emission.md was absent (audit F10). The file now exists as DRAFT; acceptance is still missing. This door does not rewrite the audit body or claim that its remaining wording and enforcement findings are resolved.
 
@@ -48,4 +48,4 @@ Before treating controls as enforced, resolve the audit's admission blockers, co
 
 ## What is ready now
 
-The prompt and forms can guide documentation and review work now. Layer III viewers and steward scripts already exist; there is no Lace Core implementation. The pointer constructor prose is reconciled but not accepted; arbitrary relation/sample selection remains `[GAP]`; Core implementation, code commits, and the next implementation branch remain subject to the existing law and task-specific proof gates. The included agent challenges are test specifications; they have not been run against a population of models.
+The prompt and forms can guide documentation and review work now. Layer III viewers and steward scripts already exist; there is no Lace Core implementation. The pointer constructor and human-ruled sampling architecture are reconciled but not accepted; exact sampling-derived retention/materialization remains `[GAP]`; Core implementation, code commits, and the next implementation branch remain subject to the existing law and task-specific proof gates. The included agent challenges are test specifications; they have not been run against a population of models.
