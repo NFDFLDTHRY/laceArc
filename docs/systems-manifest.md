@@ -163,7 +163,7 @@ B8 therefore contracts **persistence and future re-entry once a touch exists**. 
 - **Source location:** B12 Governing rule; C12 Governing rule; D footer; A13 last bullet; current human rulings H1–H6
 - **Purpose:** State the entire mechanism as one append-only growth rule.
 - **Inputs:** An arriving word. For general non-root participation, derived sampling may supply structural evidence; a Join append occurs only after the still-open retention/materialization boundary has produced addressable ordered operands.
-- **Outputs:** Continued Lace: the arriving word becomes a WORD occurrence; an unseen occurrence becomes its root; a seen occurrence touches its root through binary Join; selected relations/samples are grounded through repeated Join.
+- **Outputs:** Continued Lace: the arriving word becomes a WORD occurrence; an unseen occurrence becomes its root; a seen occurrence touches its root through binary Join; any non-root relation that has actually crossed the retention/materialization boundary is grounded through ordinary/repeated Join.
 - **Preconditions:** One append-only Lace. Existing relation operands must already exist before Join.
 - **Effects:** Sequence preserved. Every occurrence kept. Root identity stays positional. Touches remain. Join rows remain addressable and can participate later.
 - **Invariants:**
@@ -391,7 +391,7 @@ B8 therefore contracts **persistence and future re-entry once a touch exists**. 
 ### Piece 14 — No Stored Meaning / No Collapse
 
 - **Kind:** Invariant set
-- **Source location:** A13; B10; C9, C12; D key properties; current H5/H6 reconciliation
+- **Source location:** **A8, A12–A13; B10; C9, C12; D key properties;** current H5/H6 reconciliation
 - **Purpose:** Forbid meaning objects, second stores, and collapse of distinct construction histories.
 - **Invariants:**
   - no stored meaning;
@@ -634,7 +634,7 @@ Author’s panels do not separate into independently ownable modules. Stars, tou
 
 That is the beginning, not the end. Contract units sit above the panels.
 
-### Proposed contract set: 2 contracts + 1 dependent layer
+### Current contract set: 2 persistent contracts + derived working machinery + 1 dependent view layer
 
 **Contract I — Lace Core (irreducible)**  
 Contains Pieces 1, 2, 4, 5, 6, 7, 8, 11, 14, 15.
@@ -656,6 +656,17 @@ State coupling: should be zero beyond appending into I. If Arrival keeps documen
 
 Rank: viable only as a dependent adapter, not as an equal module.
 
+**Derived working machinery — Sampling / Search (dependent, reconstructible, non-authoritative)**  
+Contains SM-C20 and SM-C21. This is real working machinery in the current architecture, but it is **not another persistent contract/store** and it is not Piece-13 projection.
+
+- Sampling may derive position×scale structural evidence from an immutable Lace prefix.
+- Search may derive disposable structural frontiers/handles from roots, sampling evidence and retained POINTER topology.
+- Both must be reconstructible/disposable at their stated scope.
+- Neither has independent write authority into Contract I.
+- Their one write-adjacent edge terminates at **SM-GAP-RM**: until an exact retention/materialization rule is accepted, sampled evidence does not become a retained Join by convenience.
+
+This layer is therefore stronger than a picture and weaker than an authoritative store: **working computation over Lace whose outputs do not become Lace unless a separate legal append contract says so.**
+
 **Layer III — Projection / Visualization (dependent layer, not a strong cut)**  
 Piece 13, plus 3D pictures of Pieces 7, 12, 15.
 
@@ -671,7 +682,7 @@ Piece 12 (Dimension) is **configuration/reading of I**, not Contract IV. Axes ar
 
 ### Verdict
 
-Resolves into **one irreducible contract (Lace Core)** with a **thin arrival adapter** and a **read-only projection layer**. The author’s 12-panel structure is pedagogical slicing of one mechanism, not contract slicing.
+Resolves into **one irreducible persistent contract (Lace Core)** with a **thin arrival adapter**, **reconstructible derived sampling/search working machinery**, and a **read-only projection layer**. The author’s panel structure is pedagogical slicing of one substrate mechanism; later human rulings add working computation without adding another authoritative store.
 
 ---
 
