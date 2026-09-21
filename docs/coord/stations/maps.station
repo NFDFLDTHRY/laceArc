@@ -1,7 +1,7 @@
-STATUS: FREE
+STATUS: HELD
 STATION: maps
 OWNS: docs/reason-model-map.md docs/rust-nostd-*.md docs/atomic-primitives-map.md docs/clock/gearing-code-1to1.md docs/coherence-audit*.md docs/clock/system-mathematical-model.md docs/defrag-plan.md docs/plans/** docs/namespace-register.md docs/*.md (catch-all: any unmatched file at the docs/ root)
-AGENT: -
-BASE: -
-SINCE: -
-NOTE: Lab Source Architecture Pass 1 COMPLETE through global ASCII Pass 31 and findings receipt. Existing distributed clipboards aligned to the lab; Pass 30 and retention/materialization GAP preserved; no implementation or acceptance.
+AGENT: Astra-lab-architecture
+BASE: b9aa9f2ad02d6fe62b7c4f9d7d0518d63eb0d687
+SINCE: 2026-09-21T21:16:00Z
+NOTE: Receipt-finalization only: pin all-stations/all-shafts FREE verification from b9aa9f2. No semantic edits.
