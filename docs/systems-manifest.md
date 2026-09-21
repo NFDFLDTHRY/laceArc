@@ -15,6 +15,21 @@ The four graphics are four presentations of one mechanism, not four subsystems. 
 
 ASCII spine (pass 1, companion): `docs/systems-manifest-ascii.md`. Does not replace this file. Does not fill G2.
 
+### Current human-ruling reconciliation — 2026-09-20
+
+The graphics remain the source corpus. The following current mechanics also incorporate explicit human rulings H1–H6, reconciled in ROOT / TOUCH / FOLD passes 1–4:
+
+- every successful word arrival appends a WORD occurrence;
+- if unseen, that arriving WORD becomes the word root;
+- if seen, the new occurrence remains a WORD and touches the existing root;
+- the one physical POINTER constructor is binary \(\mathsf{Join}(a,b)\) over two earlier same-line Lace points;
+- repeated Join can ground any finite selected sample into one later addressable point;
+- the dot-to-dot N-D presentation is a projection of recursively grounded points, not N-D storage;
+- for arbitrary non-root-touch relations, the upstream mechanism that selects the ordered operands/sample remains \([GAP]\).
+
+These are not retroactive quotes from the PNGs. Where the graphics are silent, the human ruling or mathematical derivation is named explicitly.
+
+
 
 ---
 
@@ -43,68 +58,75 @@ ASCII spine (pass 1, companion): `docs/systems-manifest-ascii.md`. Does not repl
 ### Piece 2 — Governing Rule
 
 - **Kind:** Mechanism / Operator
-- **Source location:** B12 Governing rule; C12 Governing rule; D footer; A13 last bullet
-- **Purpose:** State the entire mechanism as one rule.
-- **Inputs:** An arriving word (mechanism layer) / arriving input (array layer).
-- **Outputs:** Continued Lace: new wire routed through that word’s star; a new section appended; pointers used to participate in what already exists.
-- **Preconditions:** The word has (or will have) a star. Prior Lace exists to participate in, except at first occurrence.
-- **Effects:** Sequence preserved. Every occurrence kept. New wire threads existing structure. Touches remain.
-- **Invariants:** Same rule at both presentation layers:
-  - Mechanism: “Input word arrives. Route new wire through that word’s star. Continue.”
-  - Array: “Input arrives. Append a new section to the Lace. Use pointers to participate in what already exists.”
-  - [INFERENCE] These two sentences are the same operator at geometric vs storage presentation. The source presents both as “the entire mechanism in one simple rule” / “same simple rule.”
-- **Failure modes / breakdown conditions:** Parsing, discarding, collapsing to a stored definition, attaching only to the outside of a star without threading, or creating a parallel structure instead of appending to the same Lace.
-- **Boundary & Coupling:** This operator *is* the coupling among Strand, Star, Input, Pointer, and Participation. It has no clean interface of its own; it names the closed loop. What must move with it: the append-only log, star identity of words, and pointer-back-into-earlier-entries. Non-obvious: “Continue.” is not a loop construct in software rhetoric; it is the prohibition on termination, batch close, or document-as-unit commit that would cut the strand.
-- **Implementation implications:** There is no second engine after ingest. Routing, appending, and participating are one step. A pipeline that tokenizes, then later “builds graph,” then later “indexes meaning” is the projection error named in B10/C11.
+- **Source location:** B12 Governing rule; C12 Governing rule; D footer; A13 last bullet; current human rulings H1–H6
+- **Purpose:** State the entire mechanism as one append-only growth rule.
+- **Inputs:** An arriving word. For arbitrary non-root-touch relation grounding, selected ordered earlier Lace points are an additional constructor precondition; the upstream selector remains \([GAP]\).
+- **Outputs:** Continued Lace: the arriving word becomes a WORD occurrence; an unseen occurrence becomes its root; a seen occurrence touches its root through binary Join; selected relations/samples are grounded through repeated Join.
+- **Preconditions:** One append-only Lace. Existing relation operands must already exist before Join.
+- **Effects:** Sequence preserved. Every occurrence kept. Root identity stays positional. Touches remain. Join rows remain addressable and can participate later.
+- **Invariants:**
+  - Mechanism voice remains: “Input word arrives. Route new wire through that word’s star. Continue.”
+  - Array voice remains append-only.
+  - **Human reconciliation:** every arrival lands as WORD; unseen WORD becomes root; seen occurrence RootTouches the root.
+  - **Human + D reconciliation:** selected ordered operands are written by one binary \(\mathsf{Join}(a,b)\) constructor.
+  - Join never discovers meaning or invents an arbitrary relation.
+- **Failure modes / breakdown conditions:** Parsing/discarding arrivals; interning repeated words; creating a second relation store; allowing Join to infer relations from semantic similarity; rewriting earlier rows.
+- **Boundary & Coupling:** This operator couples Strand, WORD/root identity, Star, Join participation, and Continue. Selection of an arbitrary non-root-touch relation is an upstream precondition, not hidden Core semantics.
+- **Implementation implications:** No second graph-building engine. Once operands are selected, physical append is deterministic. The remaining design gap is operand/sample selection, not POINTER representation.
 - **Metaphor / diagnostic role:** Single-rule universe.
 - **Key source language:** “Input word arrives. Route new wire through that word’s star. Continue.” “No stored meaning — only routes, touches, and structure.”
 
 ### Piece 3 — Raw Input / Arrival Order
 
 - **Kind:** Stage / Interface
-- **Source location:** C10 Input treatment; B2; A2–A4, A13 “punch-card style”; B6 “punch-card input”
-- **Purpose:** Feed raw input directly into Lace, word by word, in arrival order. No parsing, no discarding.
-- **Inputs:** Raw input text / arriving words. Example: “The customer paid the restaurant for the dessert slice.”
-- **Outputs:** Each word occurrence as another segment of the same wire, appended in order.
-- **Preconditions:** Input is treated as a sequence of words. [GAP] Tokenization criteria (punctuation, case, multiword names like “Golden Skillet”) are shown in examples but not specified as a rule.
-- **Effects:** “The sentence becomes a physical route through the dictionary wiring.” Every word occurrence is preserved as another segment.
-- **Invariants:** Input is fed in arrival order. Sequence is preserved because the wire is continuous. “No parsing, no discarding — just continuous growth.”
-- **Failure modes / breakdown conditions:** Interpreting before append; storing the sentence as a unit; dropping stopwords; normalizing two occurrences into one stored word.
-- **Boundary & Coupling:** Clean-looking as an ingest face, but entangled with Sequence-as-Route and Star routing: the output is not tokens-for-later; the append *is* the route. “Golden Skillet” is shown as two stars (A3), while also labeled as a feed unit (B5 “The Golden Skillet had pancakes”). [CONFLICT-light / example inconsistency] A3 splits Golden and Skillet; B5 also splits them as separate colored stars. Treat as word-level, not phrase-level, unless later source says otherwise. Non-obvious dependency: arrival order *is* the only order the model recognizes. There is no second “logical order.”
-- **Implementation implications:** Ingest cannot sit behind an NLP preprocessor that throws tokens away. Any tokenizer is an unstated degree of freedom, not a modeled component.
+- **Source location:** C10 Input treatment; B2; A2–A4, A13 “punch-card style”; B6 “punch-card input”; H3/H4
+- **Purpose:** Feed raw word arrivals directly into Lace in order. No parsing-away, no discarding.
+- **Inputs:** Raw input text / arriving words.
+- **Outputs:** Exactly one new WORD occurrence per successful arrival, appended in order.
+- **Preconditions:** Input is treated as a sequence of words. [GAP] Tokenization / equality criteria remain unstated.
+- **Effects:** If the value was unseen, the new WORD occurrence becomes its root (H4). If seen, the new occurrence remains distinct; Piece 11 records its RootTouch participation.
+- **Invariants:** Every successful word arrival lands on Lace. Arrival order is preserved. No arrival is replaced by an interned root count.
+- **Failure modes / breakdown conditions:** Interpreting before append; dropping words; storing the sentence as a unit; normalizing repeated occurrences into one stored row; expanding Contract II into an unstated hidden relation/sample channel.
+- **Boundary & Coupling:** Contract II remains a thin raw word feed. It does **not** currently carry arbitrary Join operands/sample metadata. Root/touch/grounding are Contract-I growth once the arrival reaches Lace.
+- **Implementation implications:** Any tokenizer is still an unstated degree of freedom. Relation/sample selection must not be smuggled into the input schema without a separate ruling.
 - **Metaphor / diagnostic role:** Punch-card: raw sequence, no interpretation.
 - **Key source language:** “Raw input is fed directly into Lace, word by word.” “Input is treated exactly as it arrives (punch-card style).”
 
 ### Piece 4 — WORD Entry
 
 - **Kind:** Primitive
-- **Source location:** D1–D2; D5
-- **Purpose:** Represent a word occurrence as a section of the strand.
+- **Source location:** D1–D2; D5; H3/H4
+- **Purpose:** Represent every successful word occurrence as a section of the strand and anchor lexical root identity.
 - **Inputs:** A word value arriving now.
-- **Outputs:** An append-only array entry: `{index, type: WORD, value}`.
+- **Outputs:** \(\{index,type:WORD,value\}\).
 - **Preconditions:** Next unused index. Array only grows.
-- **Effects:** First occurrence of a word begins a star. Later occurrences of the same word are additional WORD entries at new indices, not rewrites of the first.
-- **Invariants:** “A word is just its variable. The variable is the word.” Words and pointers are both entries. Nothing is deleted or rewritten.
-- **Failure modes / breakdown conditions:** Updating the first WORD in place when the word repeats. Interning the word as a single row with a count. Storing a definition payload on the WORD.
-- **Boundary & Coupling:** Coupled to Star (repeated WORD values are how a star forms) and to Pointer (pointers name WORD indices). The “variable” is identity-by-value across entries, but identity-in-Lace is positional (each occurrence is a new index). Non-obvious: the star is not a field on the WORD entry. Graphic D stores only index/type/value. Star-ness is a reading of many entries, not a stored object.
-- **Implementation implications:** Equality of `value` is the only word-identity key shown. [GAP] Case, stemming, and homographs (“PIE” vs “pie” appear in A6–A7) are not resolved; both appear in examples.
-- **Metaphor / diagnostic role:** “Each entry is a section of the same continuous strand.”
+- **Effects:** First occurrence of a value becomes the root for that word identity. Later occurrences are additional WORD entries at new indices; they do not replace or move the root.
+- **Invariants:** “A word is just its variable. The variable is the word.” Root is a role/read of the first occurrence, not a new type or table. Every later occurrence remains.
+- **Failure modes / breakdown conditions:** Updating/interning the first WORD when the word repeats; storing a count; moving identity into a definition cluster; storing a definition payload on the WORD.
+- **Boundary & Coupling:** WORD/root anchors identity; definition routes and later Join participation accumulate around it without replacing it. Equality of \`value\` remains G1 [GAP].
+- **Implementation implications:** \(\mathrm{Root}(v)\) is the first WORD(v) index read from Lace. No root table.
+- **Metaphor / diagnostic role:** First pass through an eyelet establishes the eyelet/root; later passes remain distinct wire.
 - **Key source language:** “A word is just its variable. The variable is the word.”
 
-### Piece 5 — POINTER Entry
+### Piece 5 — POINTER Entry / binary Join
 
-- **Kind:** Primitive
-- **Source location:** D1–D3, D6
-- **Purpose:** Let a later section of Lace participate in earlier sections, including earlier pointers.
-- **Inputs:** Earlier indices already in the array (`ref_A`, `ref_B` in the example shape).
-- **Outputs:** An append-only entry: `{index, type: POINTER, ref_A, ref_B}` (example form). The pointer is itself a section of Lace and can be referenced later.
-- **Preconditions:** Referenced indices already exist (“Pointers reference earlier positions in the same line”).
-- **Effects:** Builds word-to-word relations, relationship-to-relationship chains, and “relationship to an earlier relationship.” This is how N-dimensional participation is stored without changing the storage model.
-- **Invariants:** Pointers reference earlier positions. Pointers can reference other pointers. A pointer is Lace, not a side table.
-- **Failure modes / breakdown conditions:** Forward pointers into not-yet-written indices (not shown; would break “earlier positions”). External graph edges stored outside the array. Mutating a pointer after append.
-- **Boundary & Coupling:** Tightly coupled to the array’s linear order: directionality is time/index, not a free graph. Coupled to Dimension: each extra pointer-to-pointer level is presented as another participation level, not new storage. Example chain in D6: WORD `0000 PIE` → POINTER `0002` (`0000→0001`) → POINTER `0007` (`0006→0004`) → POINTER `0010` (`0009→0002`). Non-obvious: the source does **not** say every consecutive word pair automatically emits a pointer. Graphic D’s table is an illustrative mix of WORD and POINTER rows, not a complete emission algorithm. [GAP] When a POINTER is appended versus when only a WORD is appended.
-- **Implementation implications:** The pointer *is* the relation. There is no edge table. Higher-dimensional structure is pointer-to-pointer appends, still 1D.
-- **Metaphor / diagnostic role:** Later entries participate in earlier entries.
+- **Kind:** Primitive / Constructor
+- **Source location:** D1–D3, D6; current human H5/H6 reconciliation
+- **Purpose:** Join two selected earlier Lace points into one new addressable Lace point.
+- **Inputs:** An **ordered selected pair** of earlier indices \(a,b\). Each operand may name a WORD or POINTER.
+- **Outputs:** \(\{index,type:POINTER,ref_A:a,ref_B:b\}\).
+- **Preconditions:** Both operands already exist on the same line.
+- **Effects:** The new Join point can itself be referenced later. Repeated Join grounds finite selected samples and relationship-to-relationship structure without changing the storage model.
+- **Invariants:**
+  - Physical constructor is binary: \(\mathsf{Join}(a,b)\).
+  - Both refs point backward on the same line.
+  - WORD and POINTER operands are both legal.
+  - A Join row is Lace, not an edge-table record.
+  - Adjacency alone does not select operands.
+- **Failure modes / breakdown conditions:** Forward/off-line refs; external edge DB; n-ary side object; mutating a Join after append; asking Join to infer semantic relations.
+- **Boundary & Coupling:** RootTouch is one operand-selection role: Join(new occurrence, root). General grounding uses the same constructor. For arbitrary relations, **which ordered operands/sample are selected remains [GAP] upstream**.
+- **Implementation implications:** The physical append is deterministic after selection. Earlier-index legality is proven by checking \(a,b<new\_index\) at append. No separate “prove earlier” operator.
+- **Metaphor / diagnostic role:** Tie two already-existing pieces with one new piece of the same lace.
 - **Key source language:** “A pointer is also a section of Lace. It can be referenced by later entries.” “No separate graph. No separate database.”
 
 ### Piece 6 — Append-Only 1D Array (the Lace as stored)
@@ -130,210 +152,223 @@ ASCII spine (pass 1, companion): `docs/systems-manifest-ascii.md`. Does not repl
 ### Piece 7 — Star (persistent word identity)
 
 - **Kind:** Mechanism / Formation
-- **Source location:** A5, A12; B2–B3, B9; C4, C6, C8; D4–D5
-- **Purpose:** Be each word’s persistent 3D identity: the accumulated formation created by every passage of wire through that word.
-- **Inputs:** A new occurrence of a word (new wire / new WORD entry).
-- **Outputs:** A more complex star. Wire continues out to the next word.
-- **Preconditions:** First occurrence creates the beginning of a star (A2). Later occurrences pass through the same star from a new direction (A5, B3).
-- **Effects:** “The occurrence becomes part of the star’s structure.” “All passes remain part of the structure.” Repeated passages form persistent stars.
+- **Source location:** A5, A12; B2–B3, B9; C4, C6, C8; D4–D5; H1/H4
+- **Purpose:** Be the persistent accumulated formation around one word/root.
+- **Inputs:** WORD occurrences plus retained Join participation that threads them.
+- **Outputs:** A richer formation through which later wire can participate.
+- **Preconditions:** First occurrence establishes the root. Later same-value occurrences remain distinct WORD rows.
+- **Effects:** Later occurrences RootTouch the root; later Join rows may include those touches and other grounded points.
 - **Invariants:**
-  - Each word has a persistent 3D star (its identity).
-  - The star is not a point. It is an accumulated 3D formation.
-  - Passes can come from any direction in 3D.
-  - The star is not stored as a separate object in the 1D array. [INFERENCE from D4: “Nothing in the 3D view is stored in the main data structure.” + “Repeated passages through the same variable form a star.”]
-- **Failure modes / breakdown conditions:** Collapsing all passages into one node. Replacing the star with a stored definition string. Treating two contexts of the same word as two words, or merging distinct passes into one edge (A8: “In 3D, these are distinct passes, not collapsed edges.”).
-- **Boundary & Coupling:** Entangled with Strand (the star is wire), WORD value-identity, Routing, and later Touch. A star has internal traffic (B9): incoming passes from many contexts, internal threading in higher dimensions, outgoing passes to other stars. Non-obvious: “same star” across dictionary route, document route, conversation route, provenance route (C6) means identity is the word-variable, not the document. Routes are families of participation, not separate stars.
-- **Implementation implications:** Do not allocate a Star table. A star is an indexical view: all WORD rows with that value, plus all POINTER chains that thread them. Changing word-identity rules (case, lemma) would silently fuse or split stars.
-- **Metaphor / diagnostic role:** Star / persistent 3D identity / “same word threaded from different directions.”
+  - one root role per word identity under the current equality rule;
+  - every occurrence remains;
+  - full star includes root, occurrences, RootTouch Join rows, and later Join ancestry involving them;
+  - no Star table or Star row type.
+- **Failure modes / breakdown conditions:** Collapse to one node; split by document; stored gloss; sample registry; external star graph.
+- **Boundary & Coupling:** WORD/root anchors lexical identity. Join carries participation. C6 route-family names remain views and do not become fields on the star.
+- **Implementation implications:** Star is a derived/indexical structural read over WORD values and Join ancestry. G1 equality still governs root membership.
+- **Metaphor / diagnostic role:** Persistent threaded star.
 - **Key source language:** “Each word’s star is its persistent 3D identity.” “The star is not a point. It is an accumulated 3D formation.”
 
 ### Piece 8 — Sequence as Physical Route
 
 - **Kind:** Mechanism
-- **Source location:** B5 Sequence is physical; A4; C2 1D presentation
-- **Purpose:** Make exact word order the exact physical route of the wire through stars.
-- **Inputs:** An ordered series of word arrivals.
-- **Outputs:** One continuous piece of wire passing through each star in sequence.
-- **Preconditions:** Continuous strand; each word has a star.
-- **Effects:** “The sentence is not stored as a unit — it is this piece of wire.” Sequence is preserved because the wire is continuous.
-- **Invariants:** Before/after is the only 1D fact. In 1D you only see sequence; no crossings, no depth, no visible structure (C2).
-- **Failure modes / breakdown conditions:** Storing a sentence object. Reordering for syntax. Dropping sequence and keeping a bag of co-occurring stars.
-- **Boundary & Coupling:** Coupled to Input arrival order and to Dictionary wiring: a document sentence is a route *through* dictionary stars, not a separate layer. Interface-coherence: Output of Input Treatment is this route. Non-obvious: 1D sequence is not a lesser Lace; it is Lace with structure not yet visible. Higher-D presentations do not replace sequence.
-- **Implementation implications:** Order of WORD appends is sacred. Secondary indexes that ignore order are projections and must not become the store.
+- **Source location:** B5; A4; C2
+- **Purpose:** Preserve exact successful WORD arrival order as the physical route.
+- **Inputs:** Ordered word arrivals.
+- **Outputs:** One continuous ordered route through word roots/stars.
+- **Preconditions:** Continuous strand; arrivals land as WORD occurrences.
+- **Effects:** The sentence is this route, not a stored sentence object.
+- **Invariants:** WORD append order is sacred. Later Join grounding adds participation and addressable points but does not replace, reorder, or summarize-away the arrival route.
+- **Failure modes / breakdown conditions:** Sentence object; syntax reorder; bag-of-words; treating a grounded sample point as a replacement for its constituent arrival history.
+- **Boundary & Coupling:** Sequence is one dimension/read of Lace. Grounded Join ancestry can reference portions of the route while the original WORD route remains intact.
+- **Implementation implications:** Arrival order and sample-grounding order are distinct facts; both remain in append history.
 - **Metaphor / diagnostic role:** Sentence as wire segment.
-- **Key source language:** “The exact word order is the exact physical route.” “The sentence is not stored as a unit — it is this piece of wire.”
+- **Key source language:** “The exact word order is the exact physical route.”
 
 ### Piece 9 — Dictionary Wiring
 
-- **Kind:** Mechanism / Library-like formation (not a separate store)
+- **Kind:** Mechanism / formation, not a separate store
 - **Source location:** B4; C9; A6, A11
-- **Purpose:** Treat a word’s definition as an actual route through other word stars.
-- **Inputs:** Definition-like sequences (example path: PIE → dessert → slice → whole → food).
-- **Outputs:** Wire through those stars. “Nothing is stored as a definition — it’s just this route.”
-- **Preconditions:** The cited words exist as stars (or are created as the definition is fed).
-- **Effects:** Later documents reuse the same stars through new routes. Dictionary and documents are wired together in one Lace (A11).
-- **Invariants:** Definition stars are ordinary word stars, used in many contexts. No stored meaning — only routes, touches, and participation.
-- **Failure modes / breakdown conditions:** A definition field on PIE. A lexicon table beside Lace. Replacing routes with a gloss.
-- **Boundary & Coupling:** Not a separate module. Dictionary wiring is the same Governing Rule applied to definition text. Coupled to Star reuse and Document feed. Non-obvious: “A definition is a route, not a stored meaning” is an invariant on *all* text, not a special dictionary mode. The source still names “dictionary route” as one independent relation family among others (C6).
-- **Implementation implications:** Loading a dictionary is ingest. There is no lexicon API distinct from append-and-route.
+- **Purpose:** Treat definition text as routes/participation through ordinary word roots and points.
+- **Inputs:** Definition-like word sequences.
+- **Outputs:** WORD arrivals plus Join participation along the definition route.
+- **Preconditions:** Words arrive through the same Piece-3 path; unseen words become roots, seen words reuse existing roots.
+- **Effects:** Definition routes accumulate structure around the WORD/root identities. Later documents reuse those roots and retained route structure.
+- **Invariants:** Definition is a route, not a stored gloss. **Definition-route POINTER structure does not replace the WORD/root as lexical identity.**
+- **Failure modes / breakdown conditions:** Definition payload on WORD; separate lexicon table; treating defining pointer cluster as the only word identity; collapsing route to gloss.
+- **Boundary & Coupling:** Same governing rule as document feed. Arbitrary relation/sample selection beyond root-touch remains a separate [GAP]; no semantic selector is inferred from definition text.
+- **Implementation implications:** Loading dictionary text is ingest + participation, not a lexicon API.
 - **Metaphor / diagnostic role:** Definition as path.
-- **Key source language:** “A word’s definition is a route through other word stars.” “PIE → dessert → slice → whole → food is a physical path.”
+- **Key source language:** “A word’s definition is a route through other word stars.”
 
 ### Piece 10 — Document Feed
 
 - **Kind:** Stage
-- **Source location:** B6 Document feed; A6–A9; C10
-- **Purpose:** Route a longer text through many stars in arrival order, growing the single Lace.
-- **Inputs:** A document’s raw word sequence.
-- **Outputs:** A chain of participation across those stars; all connections remain in the single Lace.
-- **Preconditions:** Same punch-card rule as Input Treatment.
-- **Effects:** Responsibility-chain example (A9): Courier / Restaurant / Customer / Support connected by the actual sequence of the text. Ambiguity remains as distinct 3D passes (A8), not resolved senses.
-- **Invariants:** Every word routes through its star in arrival order. The strand grows as the document is processed. All connections remain in the single Lace.
-- **Failure modes / breakdown conditions:** Document isolation (a per-document graph). Coreference collapse. Sense disambiguation that splits or merges stars.
-- **Boundary & Coupling:** Same operator as Dictionary Wiring; difference is only the source of the word stream. Coupled to later Touch: the document’s passages remain and can be threaded by future input (A10, B8). Non-obvious: “document” is not a stored container. [GAP] Document boundaries are not entries in Graphic D’s type system (only WORD and POINTER are shown).
-- **Implementation implications:** Multi-document Lace is still one array. Provenance of a passage is either implicit in sequence or an unstated POINTER convention.
-- **Metaphor / diagnostic role:** Punch-card document; responsibility chain.
+- **Source location:** B6; A6–A9; C10
+- **Purpose:** Feed longer raw word sequences through the same roots/stars while growing one Lace.
+- **Inputs:** Document raw word sequence.
+- **Outputs:** WORD occurrences in arrival order; RootTouch Join for seen words; any further selected relation/sample grounding as additional Join history.
+- **Preconditions:** Same punch-card arrival rule as Piece 3.
+- **Effects:** All passages remain in one Lace. Distinct contexts remain distinct.
+- **Invariants:** No per-document graph; no document row type; arrivals never disappear into a sample point.
+- **Failure modes / breakdown conditions:** Document isolation; coreference collapse; hidden document-selection table; using document boundary as an unstated automatic Join selector.
+- **Boundary & Coupling:** Document source differs from dictionary source, not from Core mechanics. [GAP] Document boundaries and arbitrary relation/sample selection remain unstated.
+- **Implementation implications:** Multi-document Lace is still one array. Do not add sample metadata to Contract II.
+- **Metaphor / diagnostic role:** Punch-card document.
 - **Key source language:** “This is like a punch-card input: raw sequence, no interpretation.”
 
 ### Piece 11 — Touch / Higher-Dimensional Participation
 
 - **Kind:** Mechanism / Loop
-- **Source location:** B7–B8; C7; A10; D6
-- **Purpose:** Let new wire thread existing 3D structure so a passage becomes material for future Lace; let relations participate in later relations.
-- **Inputs:** New wire (arrival now) plus existing structure from many past passes.
-- **Outputs:** A higher-dimensional touch that remains in Lace. Future wire can pass through this passage.
-- **Preconditions:** Existing star/structure to thread; not merely attach to the outside (B7).
-- **Effects:** “The newly created touch remains in Lace.” “Touches are not temporary — they are permanent structure.” “Every touch can participate in later formations.” “Later touch re-enters earlier structure.” “Star within a larger structure.”
-- **Invariants:** Higher dimensions allow relations among relations. You can re-enter prior formations through new routes. Deeper reuse and nested participation, not new meaning.
-- **Failure modes / breakdown conditions:** Flat attach-to-node. Discarding a touch after the sentence ends. Treating a relation as ephemeral metadata.
-- **Boundary & Coupling:** Closed loop with Star and Pointer: geometrically a threading; in storage, a pointer that can itself be pointed at (D6). This is the growth loop that makes Rule Zero generate structure rather than a flat tape. Non-obvious: “touch” is not an event log beside Lace; the touch *is* more Lace. Time is participation (later entries reference earlier), not a clock field.
-- **Implementation implications:** Any design that builds edges and then freezes them kills Piece 11. Future appends must be able to name prior pointers.
+- **Source location:** B7–B8; C7; A10; D6; H1/H5/H6
+- **Purpose:** Retain participation so occurrences, touches, and grounded relations can themselves participate later.
+- **Inputs:** Existing Lace points plus new arrival / selected relation operands.
+- **Outputs:** Binary Join points that remain Lace.
+- **Preconditions:** Referenced operands already exist.
+- **Effects:** **RootTouch = Join(new occurrence, root).** General grounding uses the same Join constructor. A Join may name prior Join points, producing points-of-points.
+- **Invariants:** Touches are permanent; relations can participate in relations; no separate event log or edge table.
+- **Failure modes / breakdown conditions:** Attach-only hub; dropping touches; separate relationship objects; semantic chooser hidden in Join.
+- **Boundary & Coupling:** Geometric “thread through” and storage Join are two presentations of participation. The constructor is settled; arbitrary operand/sample selection remains upstream [GAP].
+- **Implementation implications:** Future appends may name any selected earlier WORD/POINTER pair. One physical constructor suffices.
 - **Metaphor / diagnostic role:** Threading / re-entry / nested participation.
-- **Key source language:** “A new occurrence doesn’t just attach to the outside. It threads through the existing 3D structure.” “A touch becomes material for future Lace.”
+- **Key source language:** “A touch becomes material for future Lace.”
 
 ### Piece 12 — Dimension (independent participation axis)
 
-- **Kind:** Parameter Set / Conceptual axis
-- **Source location:** C5–C8; C header
-- **Purpose:** Name what a dimension adds: another independent way for the same wire to participate in existing structure.
-- **Inputs:** N/A as a data input. Presented as D1, D2, D3, D4, … stacked axes around the same strand.
-- **Outputs:** Additional independent relational axes for the same structure. Example families in 4D (C6): Dictionary route, Document route, Conversation route, Provenance route — “Four independent relational axes (same structure, no new meaning).”
-- **Preconditions:** The same continuous strand and the same stars.
-- **Effects:** More simultaneous contexts, denser structure, more recoverable routes, more ways to revisit structure without rewriting history. “N-dimensionality presents itself as a denser, more richly interconnected structure where the same wire participates in many independent ways at once.”
+- **Kind:** Parameter Set / Conceptual axis / View
+- **Source location:** C5–C8; C header; D6; H6 reconciliation
+- **Purpose:** Describe how recursively participating points present as higher-dimensional relationship structure.
+- **Inputs:** The same one-dimensional Lace with WORD/Join points.
+- **Outputs:** Read-only N-D presentations of independent participation.
+- **Preconditions:** Recursive Join ancestry already exists on the one line.
+- **Effects:** POINTER→POINTER / point-of-points supplies the storage correspondent for relations-among-relations. More dimensions appear as denser, more recoverable participation paths.
 - **Invariants:**
-  - More dimensions do not add meaning.
-  - They add independent ways the same continuous wire can participate in existing structure.
-  - Each dimension reveals new relationships, not new content.
-  - It’s still the same continuous strand.
-- **Failure modes / breakdown conditions:** Adding a meaning layer per dimension. Allocating N-dimensional storage (explicitly denied by D header). Treating a new dimension as a new universe or a new word.
-- **Boundary & Coupling:** Dimension is not a module and not a store. It is a reading of participation families over the same array. Coupled to Pointer-to-pointer chains (D6) and to named route families (C6). [INFERENCE] C6’s four named routes are examples of axes, not an exhaustive schema. [GAP] How an implementer *labels* an axis, or whether axes are explicit at all, is unstated; D says N-D structure emerges without changing the 1D model. Non-obvious: 3D in Graphics A–B is already “true structure begins to appear” (C4), while 4D+ is more families of relation, not a new physics.
-- **Implementation implications:** Do not add dimension columns. If route families are needed operationally, they must be encoded as further participation in the same array, or marked as a view convention.
-- **Metaphor / diagnostic role:** Stacked translucent planes D1–Dn through one strand.
+  - no dimension row type;
+  - no coordinate store;
+  - no new meaning per dimension;
+  - same continuous Lace.
+- **Failure modes / breakdown conditions:** Dimension columns; N-D side store; meaning layer per axis; treating C6 family labels as stored metadata.
+- **Boundary & Coupling:** C7 relations-among-relations map to Join-of-Join. C6 dictionary/document/conversation/provenance names remain route-family views; their label/discriminator remains [GAP].
+- **Implementation implications:** The dot-to-dot N-D view reads Join ancestry. It cannot write back.
+- **Metaphor / diagnostic role:** Stacked participation axes over one strand.
 - **Key source language:** “More dimensions do not add meaning. They add independent ways the same continuous wire can participate in existing structure.”
 
 ### Piece 13 — Projection vs Actual Lace
 
 - **Kind:** Interface / View
-- **Source location:** C2–C4, C11; B10–B11; D4
-- **Purpose:** Separate flattened views from Lace itself.
-- **Inputs:** The 1D array / the real threaded structure.
-- **Outputs:** 1D sequence view; 2D flat graph / paper projection; 3D visualization of stars and threads.
-- **Preconditions:** A projection is requested for seeing, not for storing.
-- **Effects:** None on Lace if the projection is view-only. If a projection is mistaken for the store, structure is lost.
-- **Invariants:** “A 2D view is a projection, not the real thing.” “Lower-dimensional views are shadows, not the thing itself.” “This is a projection, not storage.”
-- **Failure modes / breakdown conditions (named by source):**
-  - 2D / simplified projection: hides higher-dimensional structure; collapses rich connections; loses over/under and threading; suggests a simple node-edge model; not the real Lace.
-  - Database lookup: Word → stored entry; loses the structure.
-  - One flat edge A—B: ignores 3D structure.
-  - Stored definition “PIE = a dessert …”: no stored meanings.
-  - Semantic collapse network: destroys the real behavior.
-- **Boundary & Coupling:** Clean *as a read model* if it cannot write back. Entangled if any write path updates the projection and not the array. Non-obvious: even the 3D pictures in the graphics are declared visualization (D4). The “actual Lace (3D+)” panel is still a picture of the formation, not a second store.
-- **Implementation implications:** Graph databases, embedding spaces, and definition tables may be used only as disposable views. Bidirectional sync with those views would invert the model.
-- **Metaphor / diagnostic role:** Shadow vs thing; diagnostic contrast panels with red X / green check.
-- **Key source language:** “Lace is not a flattened abstraction.” “It is a continuously growing 3D structure.” “Real wire. Real structure. Real behavior.”
+- **Source location:** C2–C4, C11; B10–B11; D4; H6 reconciliation
+- **Purpose:** Separate the actual WORD/Join Lace from any dot-to-dot rendering.
+- **Inputs:** The one-dimensional append-only Lace and derived Join ancestry/reach.
+- **Outputs:** 1D, 2D, 3D, or N-D views.
+- **Preconditions:** Projection is requested for seeing only.
+- **Effects:** None on Lace.
+- **Invariants:** Dot-to-dot N-D connections are read from Join participation. Projection never becomes the authority and cannot write back.
+- **Failure modes / breakdown conditions:** Graph/mesh as Core; coordinates as truth; projection edge creating a Join; bidirectional sync.
+- **Boundary & Coupling:** Clean read-only boundary. Any selection performed in the UI does not become a legal Core write unless a separately authorized input/interface contract exists.
+- **Implementation implications:** Renderers may traverse ancestry. They may not own relation truth.
+- **Metaphor / diagnostic role:** Shadow vs thing.
+- **Key source language:** “A 2D view is a projection, not the real thing.”
 
 ### Piece 14 — No Stored Meaning / No Collapse
 
 - **Kind:** Invariant set
-- **Source location:** A13; B10; C9, C12; D key properties; headers of A and C
-- **Purpose:** Forbid meaning objects, second stores, and collapse of many passes into one abstract edge or definition.
-- **Inputs:** N/A
-- **Outputs:** N/A
-- **Preconditions:** N/A
-- **Effects:** Forces all “knowledge” effects to be realized as routes, touches, and participation.
-- **Invariants:** “Meaning does not exist. Only structure, sequence, and participation.” “No stored meaning — only routes, touches, and structure.” “No collapse, no second store, no separate mechanisms.”
-- **Failure modes / breakdown conditions:** Any semantic memory, embedding-as-truth, sense inventory, or rewrite of history to keep a consistent meaning.
-- **Boundary & Coupling:** Cross-cuts every piece. This is not a subsystem; it is the prohibition that keeps Dictionary Wiring, Document Feed, and Dimension from growing their own stores. Non-obvious: “ambiguity forms in 3D” (A8) is a *success* condition of this invariant — distinct passes must remain.
-- **Implementation implications:** Retrieval can follow routes; it cannot return “the meaning of PIE.” Answers, if any, would be traversals. [GAP] The graphics do not specify a query/read operator beyond visualization and participation.
-- **Metaphor / diagnostic role:** Anti-model panels (B10).
+- **Source location:** A13; B10; C9, C12; D key properties; current H5/H6 reconciliation
+- **Purpose:** Forbid meaning objects, second stores, and collapse of distinct construction histories.
+- **Invariants:**
+  - no stored meaning;
+  - no Star/root/sample registry beside Lace;
+  - no global “sample-size-n” row shared by distinct samples;
+  - equal-cardinality samples may remain distinct grounded histories;
+  - no rewrite/canonicalization merely because two grounding trees cover similar leaves.
+- **Failure modes / breakdown conditions:** Embedding-as-truth; sense inventory; sample registry; canonical graph replacement; rewriting history to collapse duplicate structures.
+- **Boundary & Coupling:** Cross-cuts dictionary/document/dimension/projection. The finite-sample theorem creates one point by **adding Lace**, never by replacing the represented rows.
+- **Implementation implications:** Derived caches may never become authoritative.
+- **Metaphor / diagnostic role:** Anti-collapse fence.
 - **Key source language:** “No meaning stored, only structure, sequence, and participation.”
 
 ### Piece 15 — Star-Internal Traffic
 
-- **Kind:** Region (interior of a star)
-- **Source location:** B9 Star inside star traffic; A12 Zoom in: The PIE star
-- **Purpose:** Describe what exists *inside* a word star: many distinct strands passing through the same formation from many contexts and directions.
-- **Inputs:** Incoming passes from many contexts; later outgoing passes to other stars.
-- **Outputs:** A complex shape that “emerges from all occurrences.” Internal threading in higher dimensions (many crossings).
-- **Preconditions:** Multiple occurrences / multiple source texts have already routed through the word.
-- **Effects:** None beyond accumulating structure. “No meaning is stored — only accumulated structure and participation.”
-- **Invariants:** Same star; many passes; different directions; different contexts; all remain in Lace; none merged or lost (A12).
-- **Failure modes / breakdown conditions:** Flattening internal crossings to a single hub node. Merging dictionary-definition passes with conversational passes into one edge.
-- **Boundary & Coupling:** This is the interior view of Piece 7, not a separate engine. Coupled to Dimension (internal threading is higher-D) and to Touch (those interior crossings are reusable). Non-obvious: outgoing passes to other stars are how Dictionary Wiring and Document Feed leave the star without a function call; the wire just continues.
-- **Implementation implications:** Visual “star” layout is a projection of many index references that share a WORD value. Interior crossings are POINTER chains, not coordinates.
-- **Metaphor / diagnostic role:** Zoom-in ball of threads; PIE star sources listed (dictionary, “This says pie.”, “slice of pie”, “whole pie”, liability discussion, future conversations).
+- **Kind:** Region / View
+- **Source location:** B9; A12
+- **Purpose:** Describe the retained WORD/Join traffic inside a word's accumulated star formation.
+- **Inputs:** Root, later occurrences, RootTouch joins, and later grounding paths that include them.
+- **Outputs:** A denser projected formation with many reusable participation paths.
+- **Preconditions:** Multiple passages/joins already exist.
+- **Effects:** None beyond append-only accumulated participation.
+- **Invariants:** All passes remain; none are merged. Interior crossings are Join ancestry/participation, not stored coordinates.
+- **Failure modes / breakdown conditions:** Hub-node flattening; coordinate store; merging route families; discarding older grounded branches.
+- **Boundary & Coupling:** Interior is a view of Piece 7 + Piece 11 history. N-D rendering may expose it but does not own it.
+- **Implementation implications:** Traverse WORD/root and Join ancestry; do not store a second geometry.
+- **Metaphor / diagnostic role:** Zoomed threaded star.
 - **Key source language:** “Many distinct strands pass through the same star.” “None are merged or lost.”
-
----
 
 ## Relational Mapping (Second Pass)
 
 ### Shared state
 
-There is one shared mutable-by-append world: the 1D array / continuous strand. Every piece either appends to it or is a reading of it. There is no other state in the source.
+There is one authoritative append-only world: the Graphic-D line \(L\). WORD/root roles, RootTouch, Join, grounded points, and N-D ancestry are all rows/readings of that one world.
 
-Shared identity key: WORD `value` (the variable). Shared address key: array `index`. Shared continuation: wire out / next append.
+Shared lexical identity anchor: first WORD occurrence under the current value-equality rule.  
+Shared address key: permanent array index.  
+Shared relation constructor: binary Join over selected ordered earlier indices.
 
-### Control flow (actual, not diagnostic)
+### Control flow (current reconciliation)
 
-1. Input word arrives (Piece 3).
-2. Append a WORD section (Pieces 4, 6).
-3. Route that new wire through the word’s star (Pieces 2, 7) — first occurrence begins the star; later occurrence threads existing formation (Pieces 11, 15).
-4. Optionally / illustratively, append POINTER sections that reference earlier WORD or POINTER indices (Piece 5). [GAP] emission rule.
-5. Continue (Piece 2). Sequence of WORDs is the physical route (Piece 8).
-6. Later arrivals may point at earlier pointers, producing relation-among-relations (Pieces 11–12).
+1. Input word arrives.
+2. Append one WORD occurrence.
+3. If unseen, that row becomes the word root.
+4. If seen, append \(\mathsf{Join}(\text{new occurrence},\text{root})\) as RootTouch.
+5. If an arbitrary relation/sample has **selected ordered operands**, ground it with binary Join; repeated Join handles finite samples and already-grounded branches.
+6. Continue. WORD append order remains the physical arrival route.
+7. Projection may read WORD/Join ancestry as 1D/2D/3D/N-D but cannot write back.
 
-Dictionary wiring (9) and document feed (10) are the same flow with different source text.
+Dictionary and document feeds use the same flow. They differ in source stream, not Core machinery.
 
 ### Interface-coherence check
 
-- Piece 3 Outputs (“word occurrences as segments”) match Piece 4 Inputs and Piece 8 Inputs.
-- Piece 4 Outputs (WORD entries) match Piece 7’s formation rule only via value-equality across entries — the star is not handed as an object. The real entity that flows is **(index, value)** plus the ongoing strand position.
-- Piece 5 Inputs require earlier indices. Piece 3/4 do not emit pointers by themselves. The entity that should flow between “word arrived” and “structure built” is **an unstated participation decision**: when to write a pointer, to which prior indices, and whether a document adjacency is implicit in consecutive WORD rows or explicit as POINTER rows. [GAP]
-- Piece 12 (Dimension) has no Inputs/Outputs that chain. It names families of routes over the same entries. The flowing entity is not a dimension record; it is additional POINTER participation. [INFERENCE]
-- Piece 13 consumes the array and must not produce writes. If a UI “edge” is created, there is no source-legal handoff back into Piece 6.
-- Piece 14 produces nothing; it constrains 9, 10, 12, and 13.
+- **I4-1 Arrival → WORD:** PASS. Contract II produces an arrival; Piece 4 consumes it as one occurrence.
+- **I4-2 Unseen → root:** PASS. Root is the new WORD index; no new field/store.
+- **I4-3 Seen → RootTouch:** PASS. RootTouch is one Join over two existing WORD indices.
+- **I4-4 Join → reusable point:** PASS. POINTER row is Lace and can be named by later Join.
+- **I4-5 finite selected sample → point:** PASS by repeated Join; no sample store.
+- **I4-6 point ancestry → N-D view:** PASS under Piece 13 no-write-back.
+- **I4-7 arbitrary selection handoff:** PARTIAL / [GAP]. Join receives selected ordered operands, but current sources do not specify an automatic general chooser.
+
+### Selection boundary
+
+The lawfully known boundary is:
+
+\[
+\text{selected ordered earlier operands}
+\longrightarrow
+\mathsf{Join}(a,b).
+\]
+
+RootTouch has a closed selector: new occurrence + root.
+
+For arbitrary relations/samples:
+
+- Core-derived selector from \(L,v\): BLOCKED, no rule stated.
+- Contract-II hidden sample channel: REFUSED by current raw-word interface.
+- general query/write action: BLOCKED, source does not specify it.
+- route/document boundary as selector: BLOCKED, boundaries are not stored/defined.
+- relation assertion supplying its ordered operands: ADMITTED as constructor precondition; what originates the assertion remains [GAP].
 
 ### Failure propagation
 
-- Break Rule Zero (rewrite/delete) → stars lie, pointers dangle or become false history, later participation is poisoned.
-- Collapse star to a node/definition (Piece 14 breach) → Piece 11 cannot re-enter distinct passes; ambiguity (A8) disappears; projections start looking like the real model and then replace it.
-- Treat 2D graph as store (Piece 13 breach) → over/under, threading, and future participation become inexpressible; implementers “complete” the system with a second database.
-- Intern words (mutate Piece 4) → occurrence identity dies; sequence-as-route cannot point at a particular pass.
-- Forward or external pointers → Piece 5’s “earlier positions in the same line” fails; Lace is no longer one line.
-
-### Change amplification
-
-- Change word identity (case, lemma, phrase vs word) → every star boundary moves.
-- Change pointer emission → every claimed dimension and “touch” changes density.
-- Add a document or provenance type to the array → may close the [GAP] in Piece 10, but is a schema change the source did not draw.
-- Add a query engine → unconstrained by source; high risk of becoming a second store.
+- Break Rule Zero → false ancestry/dangling history.
+- Intern WORD occurrences → destroys sequence and RootTouch witness.
+- Hide relation discovery inside Join → imports unstated semantics.
+- Treat N-D projection as store → forks Lace.
+- Collapse equal-cardinality samples → loses distinct construction history.
+- Forward/off-line refs → violates one-line temporal construction.
 
 ### Hidden couplings
 
-- Geometric language (thread, over/under, star, 3D) and array language (index, WORD, POINTER) are two presentations of one thing. An implementation that builds both a 3D mesh and an array has already forked Lace.
-- “Same star” + “many independent routes” means word-identity is global to the Lace, not scoped by document, while route families remain distinguishable only if their passes are not collapsed. Distinguishability without extra types is left to path identity (which indices were traversed).
-- “Continue.” couples ingest to forever-open growth. Batch “build the graph of this corpus” is a different machine.
+- Geometric thread/touch and storage Join are presentations of one participation act.
+- Root identity and definition route are coupled but not identical: WORD/root anchors identity; definition Join structure participates around it.
+- More dimensions are more recursive participation paths, not more storage dimensions.
+- Continue means the construction remains open-ended; it does not supply the missing arbitrary relation selector.
 
 ---
 
@@ -461,33 +496,39 @@ Intended use of the four graphics together: A = growth story; B = 3D mechanism; 
 
 ## Open Questions or Remaining Design Degrees of Freedom
 
-1. [GAP] Tokenization: word boundaries, punctuation, case, `PIE` vs `pie`, multiword names.
-2. [GAP] POINTER emission algorithm: which arrivals write pointers; 2-ref shape vs other arities; whether adjacent WORDs are implicit edges.
-3. [GAP] How (or whether) document, conversation, and provenance boundaries exist as entries. D shows only WORD and POINTER.
-4. [GAP] Read/query/traversal operator. Source specifies growth and visualization, not retrieval.
-5. [GAP] Concurrency: one strand suggests a single writer. Multi-writer append is unstated.
-6. [GAP] Physical encoding of “thread through existing 3D structure” beyond “append WORD + pointer to prior formation.” The geometric remainder may be projection language for pointer participation.
-7. [INFERENCE to verify later] The two Kauffman *Knots and Physics* PDFs in `artifacts/` are adjacent reference, not part of these four graphics. Do not import knot axioms into Lace unless a later source says so.
-8. No multi-Lace, snapshot, or export rule is given.
+1. **[GAP] Word identity / tokenization:** boundaries, punctuation, case, \`PIE\` vs \`pie\`, multiword names.
+2. **[GAP] Arbitrary relation/sample selection:** the binary Join constructor is settled; current sources do not specify the automatic upstream process, if any, that chooses an arbitrary non-root-touch ordered operand pair/sample.
+3. **[GAP] Document / conversation / provenance boundaries:** D still stores only WORD and POINTER/Join; no boundary row type is established.
+4. **[GAP] Read/query/traversal operator:** source specifies growth and visualization, not a general retrieval/write-query interface.
+5. **[GAP] Concurrency:** one strand suggests a single writer; multi-writer append remains unstated.
+6. **Projection/geometric remainder:** storage participation is represented by WORD + binary Join ancestry. Exact rendered over/under coordinates remain projection concerns, not Core row fields.
+7. **Adjacent references:** Kauffman materials remain adjacent reference only; no knot rewrite axioms are imported into Lace.
+8. **No multi-Lace / snapshot / export rule is given.**
+9. **Operand semantic ordering:** physical Join takes an ordered selected pair. D1 shows \`ref_A\` as the described subject in its six examples; the automatic subject/relation chooser remains part of open selection.
+10. **[GAP] Eventual reference:** D1 happens to reference every row except newest; no rule requires every row to be used later.
+11. **[GAP] C6 route-family labels:** dictionary/document/conversation/provenance are views/families; no stored discriminator is defined.
 
-A later row-level pass over panel D1 (`docs/graphics-close-reading.md`) leaves
-questions 1–8 standing and adds three:
+### Pointer-emission status after ROOT / TOUCH / FOLD Pass 4
 
-9. [GAP] Slot assignment: what makes an index `ref_A` rather than `ref_B`. D1's six
-   pointers are not ordered by index (two ascending, four descending); in all six
-   `ref_A` is the subject of the panel's gloss, which the array cannot compute.
-10. [GAP] Whether every entry must eventually be referenced. True of every entry but
-    the newest in D1; never stated as a rule.
-11. [GAP] Which reading of C6's four relation families holds. The 4D rung of C's own
-    ladder is the only one with no correspondent in D's entry schema.
+The old broad “pointer emission remains unanswered” statement is superseded.
 
-That pass also rules out one candidate emission rule rather than leaving it open:
-"every adjacent WORD pair emits a pointer" is contradicted by D1, where two of four
-adjacent pairs have no pointer between them.
+**Closed current mechanics:**
+- every successful arrival appends WORD;
+- unseen WORD becomes root;
+- seen occurrence remains WORD and RootTouches root;
+- physical POINTER constructor is binary \(\mathsf{Join}(a,b)\);
+- operands are earlier same-line WORD or POINTER points;
+- repeated Join grounds finite selected samples;
+- Join-of-Join supplies relation-among-relation storage;
+- adjacency alone does not emit;
+- N-D remains projection-only.
 
-12. [GAP] Pointer emission remains unanswered. The conceptual-reference analysis under
-    `docs/clock/hcc-a-systems-manifest.md` (HCC-A pipeline, packets, S0–S7) does
-    **not** close questions 1–11 and is not a sixteenth piece.
+**Still open:**
+- arbitrary non-root-touch relation/sample selection;
+- G1/tokenization;
+- the other independent questions above.
+
+**Acceptance:** [\`pointer-emission.md\`](pointer-emission.md) remains a reconciled draft and still requires explicit human acceptance before implementation authorization.
 
 ---
 
@@ -523,4 +564,4 @@ Do not add an R table, RIC table, Story Ledger type, meaning weights, ISL star, 
 - One contract: the append-only strand/array under “arrive, route/point into what exists, continue.”
 - Stars, dictionary routes, documents, touches, and dimensions are formations and readings of that contract, not sibling services.
 - The only safe extra surfaces are thin ingest and read-only projection; both become model-breaks if they keep their own state.
-- The live [GAP] that will dominate implementation is the unstated pointer-emission / participation rule — that rule *is* dimensionality.
+- The remaining Core-adjacent [GAP] is **arbitrary relation/sample selection**. The binary Join constructor and recursive grounding mechanics are reconciled; dimensionality is the projection of the resulting participation structure.
