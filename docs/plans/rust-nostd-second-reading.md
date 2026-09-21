@@ -1,6 +1,6 @@
 # Rust `no_std` plans — second reading
 
-**Status:** `[PROPOSAL]` dated review. One agent. No `src/`. **Current qualification:** binary Join/root-touch/finite-sample mechanics are reconciled in unaccepted draft law; arbitrary non-root-touch relation/sample selection remains `[GAP]`.
+**Status:** `[PROPOSAL]` dated review. One agent. No `src/`. **Current qualification:** binary Join/root-touch plus the human-ruled derived sampling/search architecture are reconciled in unaccepted draft law; exact sampling-derived retention/materialization remains `[GAP]`. SearchHandle is not an accepted implementation contract.
 **Station:** maps. Reads the two rust plans, the atomic map, the Pass 1 plan, the hologram IR schema, its viewer binding, the validator and both golden fixtures, the emission draft, and the IMPLEMENTATION LAW block. Writes this file and one README row. Applies no amendment.
 **Relation to Pass 1:** [the Pass 1 plan](atomic-construction-pass-1-plan.md) §4 step 4 names the premise to investigate for each birth. This reading follows three of those to a consequence and hands them back. Pass 1 stays `NOT_RUN` and stays its editor's.
 
@@ -8,7 +8,7 @@ The two plans are careful about the gate. They are less careful about
 each other. Read as one design, they contain three contradictions that no
 amount of emission acceptance will resolve, one process hole that would
 stop the first birth from ever finishing, and one piece of tooling that
-cannot tell the plan from its opposite. These findings remain independent of the **current arbitrary-selection `[GAP]`** and of human acceptance. Most are plan/process contradictions rather than constructor questions. All of them would have surfaced on the first day anyone tried to write
+cannot tell the plan from its opposite. These findings remain independent of the **current retention/materialization `[GAP]`** and of human acceptance. Most are plan/process contradictions rather than constructor questions. All of them would have surfaced on the first day anyone tried to write
 `strand/`.
 
 **Severity words used below:** *blocks-birth* — a birth cannot graduate
@@ -36,8 +36,8 @@ Later law reconciliation changes the premise status of the old G2 bundle:
 - adjacency alone does not emit.
 
 **Still unresolved**
-- arbitrary non-root-touch relation/sample selection;
-- semantic ordered-operand choice for an arbitrary relation assertion;
+- sampling-derived retention/materialization;
+- semantic ordered-operand choice for an retained relation assertion;
 - G1 identity/tokenization;
 - exact implementation ownership of selection;
 - human acceptance of pointer-emission.md;
@@ -48,12 +48,12 @@ The current birth-premise reading is therefore:
 | Birth | Current required premises beyond the global acceptance gate | Not assigned here |
 |---|---|---|
 | 1 strand/ | G7 capacity strategy, index width, failure contract; generic section preservation | relation selection |
-| 2 word/ | WORD representation + accepted G1 domain needed for equality-sensitive claims | arbitrary selector |
-| 3 pointer/ | binary Join layout is a draft-law premise; prove earlier/same-line evidence representation and immutable refs | arbitrary operand selection |
-| 4 route/ | append/continuation composition over independently authorized sections | arbitrary relation/sample selector ownership remains open |
-| 5 view_star/ | G1 identity/equality domain + read contract | relation selector |
-| 6 view_proj/ | G5 read/projection fidelity | relation selector |
-| 7 core/ | all required proved predecessors + arrival-surface ownership + accepted law | arbitrary selection ownership still unresolved |
+| 2 word/ | WORD representation + accepted G1 domain needed for equality-sensitive claims | retention/materialization rule |
+| 3 pointer/ | binary Join layout is a draft-law premise; prove earlier/same-line evidence representation and immutable refs | retention/materialization policy |
+| 4 route/ | append/continuation composition over independently authorized sections | retention/materialization rule ownership remains open |
+| 5 view_star/ | G1 identity/equality domain + read contract | retention/materialization rule |
+| 6 view_proj/ | G5 read/projection fidelity | retention/materialization rule |
+| 7 core/ | all required proved predecessors + arrival-surface ownership + accepted law | arbitrary retention/materialization ownership still unresolved |
 
 This qualification does **not** decide F1(a) vs F1(b), F2's dependency edge, the proof standard, test-host carve-out, validator defects, arrival ownership, or any branch eligibility.
 
@@ -104,10 +104,10 @@ Known constructor \(\neq\) accepted implementation authorization.
 | 1 `strand/` | G7: capacity strategy, index width, failure signal; section type left parametric | then listed G1/G2 as not needed |
 | 2 `word/` | G1 representation | then listed broad G2 as not needed |
 | 3 `pointer/` | then-open arity / slot / frontier witness | arity is now superseded by binary Join; frontier issue F1 remains |
-| 4 `route/` | then-broad G2 timing / target selection | current residual is arbitrary relation/sample selection |
+| 4 `route/` | then-broad G2 timing / target selection | current residual is sampling-derived retention/materialization |
 | 5 `view_star/` | G1 identity + G4 read | still independent of constructor arity |
 | 6 `view_proj/` | G5 fidelity | still independent of constructor arity |
-| 7 `core/` | all predecessors + arrival home | selector ownership remains unresolved |
+| 7 `core/` | all predecessors + arrival home | retention/materialization ownership remains unresolved |
 
 The law gates *all* code on emission acceptance; this table does not loosen that. It says what *else* must be accepted, birth by birth, so that acceptance of emission is not mistaken for the whole gate.
 
@@ -225,7 +225,7 @@ the plans get a great deal right.
 | A9 | Close the two §4 kind sub-questions in the draft, in words | F9 | `docs/pointer-emission.md` | law | human only |
 | A10 | `core/` names the arrival function | F11 | branch contracts | maps | Pass 1 editor |
 
-Every row is `[PROPOSAL]`. None supplies the still-open arbitrary relation/sample selector or human acceptance. A1–A2 change the edge
+Every row is `[PROPOSAL]`. None supplies the still-open retention/materialization rule or human acceptance. A1–A2 change the edge
 count, which four documents and the golden repeat as "nine"; whoever
 applies them updates all five.
 
@@ -275,4 +275,4 @@ If you cannot do it to a shoe lace in your hands, you may not do it to laceArc.
 
 You can tie a knot that refers to an earlier wrap. You cannot tie one that
 refers to a wrap you have not made. A crate that cannot see the cord
-cannot tell the difference. **Binary Join is now a current draft-law premise; arbitrary relation/sample selection remains `[GAP]`, and acceptance remains absent.**
+cannot tell the difference. **Binary Join is now a current draft-law premise; sampling-derived retention/materialization remains `[GAP]`, and acceptance remains absent.**
