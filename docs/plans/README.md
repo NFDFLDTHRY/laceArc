@@ -4,6 +4,7 @@ Plans, proposals, executed pass records, and dated receipts share this shelf. Ea
 
 | File | Job |
 |---|---|
+| [math-execution-root-touch-fold-pass-6-plan.md](math-execution-root-touch-fold-pass-6-plan.md) | **PLAN — NOT EXECUTED.** SELECTION / ASSERTION / PROVENANCE: D1 provenance audit + punch-card necessity tests + ownership classes. Tests whether an automatic Core chooser is actually required or whether the residual is relation-assertion provenance/authority. No law change, acceptance, selector, src or Cargo |
 | [math-execution-root-touch-fold-pass-5-findings.md](math-execution-root-touch-fold-pass-5-findings.md) | **EXECUTED** ROOT / TOUCH / FOLD Pass 5. Propagated Pass-4 law through global ASCII Pass 29, graphics companions, active maps/environment/reduction/Rust premises, law entrypoints, and mandatory context/kit controls. 16/16 proof board; arbitrary relation/sample selection remains GAP; acceptance absent |
 | [math-execution-root-touch-fold-pass-5-plan.md](math-execution-root-touch-fold-pass-5-plan.md) | **EXECUTED** staged propagation campaign with census-triggered prompts/kit extension. Constructor known, selector open, no src/Cargo, no branch/proof eligibility upgrade |
 | [math-execution-root-touch-fold-pass-4-findings.md](math-execution-root-touch-fold-pass-4-findings.md) | **EXECUTED** ROOT / TOUCH / FOLD Pass 4. Law reconciled; binary Join current; arbitrary relation/sample selector remains GAP; global ASCII deferred |
