@@ -1,7 +1,7 @@
-STATUS: HELD
+STATUS: FREE
 STATION: prompts
 OWNS: docs/prompts/**
-AGENT: Astra-lab-architecture
-BASE: 1dc705ee67fb74c9d8b894a4b8c0ab579176b097
-SINCE: 2026-09-21T20:49:00Z
-NOTE: Lab Source Architecture Pass 1: align mandatory context prompt with distributed clipboards/lab source roles and clear any current selector-era wording. Historical receipts untouched.
+AGENT: -
+BASE: -
+SINCE: -
+NOTE: Lab Source Architecture Pass 1 prompt alignment COMPLETE. Mandatory context now routes behavioral, research and platform clipboards through the lab and uses retention/materialization as the current Core-adjacent gap. Historical receipts preserved.
