@@ -1,387 +1,352 @@
 # SAMPLING / DENSITY / EMERGENCE campaign - Pass 4 PLAN
 
 **Status:** PLAN - NOT EXECUTED.
-**Name:** STRUCTURAL SEARCH BOUNDS / ORDERING WITHOUT MEANING
+**Name:** STRUCTURAL SEARCH FRONTIERS / PATH PRESERVATION
 **Planning station:** maps (Astra-search-bounds).
-**Pinned main before claim:** 77a8d64d8b745fe3c3bc54a465b90ac2880e5fd8.
-**Maps claim:** 5d08b38bd80f72b3aa40f0936d5780e72bca4ef2.
-**Depends on:** Sampling / Density / Emergence Passes 1-2 EXECUTED, Pass 3 PLAN. Pass 4 execution is **gated on Pass 3 being executed first**.
+**Replan base:** Pass 3 findings commit e26d026c3f623dc4cc9b676ec4a4fc71bc5bfe70.
+**Pass 3:** EXECUTED. No dependency gate remains.
 **Law:** no law edit.
 **Implementation:** no src/. No Cargo. No Rust. No search API.
 **Acceptance:** absent.
 
-Pass 3 asks whether a star can serve as a read-only search entrypoint into:
-- lexical occurrences;
-- repeated multi-scale patterns;
-- retained POINTER participation.
-
-Pass 4 assumes none of those results until Pass 3 actually executes.
-
-If Pass 3 falsifies the layered-star thesis, this plan must shrink or stop.
-
-If Pass 3 survives, Pass 4 attacks the next problem:
+Pass 3 answered the star/search question:
 
 \[
 \boxed{
-\text{How should structural search be bounded and ordered without semantic relevance scoring?}
+StarSearch(a)
+=
+Lexical(a)
++
+AnchoredPatterns(a)
++
+PointerPaths(a)
 }
 \]
 
-The target is not a "best result" score.
+and proved the model is reconstructible without stored meaning.
 
-The target is a **structural frontier discipline** that prevents star search from degenerating into:
-- all occurrences;
-- all recurrent patterns;
-- all pointer ancestry;
-- all neighboring stars;
-- eventually most of Lace.
+It also found the failure that opens Pass 4:
+
+\[
+\boxed{
+\text{flat transitive star membership saturates.}
+}
+\]
+
+For D1 PIE:
+- 100% of POINTER rows eventually contain PIE in ancestry;
+- minimum distance distinguishes some structure;
+- alternative paths show distance alone is not enough.
+
+Pass 4 therefore does not ask whether stars search.
+
+It asks one complete question:
+
+\[
+\boxed{
+\text{How should structural search preserve shape and distance while expansion stays usable?}
+}
+\]
+
+No subpasses.
 
 ---
 
-## 0. Execution gate - Pass 3 must exist first
+## 0. Pass-3 facts inherited as settled campaign evidence
 
-Before any Pass-4 analysis:
+### QUESTION
 
-1. refresh main;
-2. confirm sampling-density-emergence-pass-3-findings.md exists;
-3. confirm Pass-3 plan status is EXECUTED;
-4. read its falsifier/proof boards;
-5. verify law and gate-question ownership have not moved incompatibly;
-6. claim maps only if FREE.
+- 7 occurrences.
+- 13 repeated anchored pattern classes.
+- recurrence through n=5.
+- five-support trunk:
+  \[
+  ANSWERS\ ONE\ QUESTION\ ONLY
+  \]
+- recurrent WHEN and WHAT branches.
+- separate QUESTION IS branch.
+- one-hop neighboring roots:
+  \[
+  \{ANSWERS,IS,ONE,ONLY,WHAT,WHEN\}.
+  \]
 
-### Hard gate
+### D1 PIE
 
-If Pass 3 concludes any of the following, Pass 4 must STOP or be replanned:
+Lexical anchor rows:
+- 0000;
+- 0003.
 
-- star search recovers only lexical occurrences;
-- anchored pattern cone cannot be reconstructed;
-- D1 PIE pointer overlay cannot be derived;
-- flat/transitive participation is the only available representation;
-- the star-search operation needs a new authoritative store;
-- search requires semantic similarity.
+Direct retained PIE relations:
+- 0002;
+- 0004;
+- 0006.
 
-Pass 4 may not pretend Pass 3 succeeded because its plan expected success.
+Transitive:
+- 0007;
+- 0009;
+- 0010.
+
+Flat pointer participation:
+
+\[
+6/6=100\%.
+\]
+
+Alternative path structure exists, especially at 0010.
+
+These are no longer questions for Pass 4.
 
 ---
 
 ## 1. Pass-4 thesis
 
-Test this thesis:
+Test:
 
-> Structural search can remain useful without semantic scoring if results are kept in typed/ringed frontiers rather than collapsed into one ranked list.
+> Search remains useful without semantic relevance scoring if results are exposed as structural frontiers and paths rather than one flat ranked list.
 
-Candidate search result structure:
+Candidate model:
 
 \[
-\boxed{
 Search(a)
 =
-F_{lex}
+F_0(a)
 \cup
-F_{pattern}
+F_1(a)
 \cup
-F_{pointer}
+F_2(a)
 \cup
-F_{hop}
-}
+F_3(a)
 \]
 
-where each frontier exposes its own structural coordinates.
+with:
 
-The pass tests whether search can be made **progressive and bounded by structural distance / recurrence**, while preserving the user's ability to expand farther.
+### F0 - lexical
 
-The pass does **not** assume one universal scalar relevance score exists.
+Root / occurrences / RootTouch.
+
+### F1 - repeated-pattern structure
+
+Anchored repeated patterns organized by:
+- n;
+- support;
+- extension relation;
+- branch;
+- terminal recurrence.
+
+### F2 - retained POINTER structure
+
+Organized by:
+- directness;
+- minimum pointer distance;
+- actual path witness;
+- alternative paths.
+
+### F3 - neighboring-star expansion
+
+Word → repeated pattern → other participating root.
+
+Expansion is explicit.
+
+It is never silently recursive to closure.
 
 ---
 
-## 2. Why Pass 4 exists
+## 2. Anchor set
 
-The likely Pass-3 failure mode is saturation.
-
-For a common anchor \(a\):
-
-\[
-Participates_a
-=
-\{p:Reach(p)\cap OccRows(a)\neq\varnothing\}
-\]
-
-may become very large.
-
-Likewise, the 2D anchored cone contains many cells:
-
-\[
-Cone(a)
-=
-\bigcup_{q\in Occ(a)}Cone(q).
-\]
-
-Therefore useful search must preserve distinctions such as:
-
-- direct occurrence vs distant ancestry;
-- repeated vs unique pattern;
-- short vs long pattern;
-- high-support trunk vs low-support branch;
-- direct pointer contact vs long pointer path;
-- one-hop neighboring star vs recursively exploded neighborhood.
-
-Pass 4 tests which of these distinctions can bound search **without inventing meaning**.
-
----
-
-## 3. Anchor test set
-
-Pass 4 uses multiple anchor regimes to avoid overfitting QUESTION.
+Use three Coffee Cup anchors plus D1 PIE.
 
 ### A1 - QUESTION
 
-Structured medium-frequency anchor.
-
-Expected properties from Pass-3 plan:
-- 7 occurrences;
-- five-occurrence ANSWERS ONE QUESTION ONLY trunk;
-- separate QUESTION IS branch;
-- clear scale-dependent recurrence.
+Known structured anchor.
 
 Purpose:
-- test structured trunk/branch ordering.
+- trunk/branch preservation.
 
 ### A2 - ANSWERS
 
-Tighter scaffold anchor.
+Tighter anchor.
 
-Expected:
-- concentrated around the five-stage recurring scaffold.
+Planning pre-audit:
+- 5 occurrences;
+- 6 repeated anchored pattern classes;
+- recurrence through n=5;
+- 5 one-hop neighboring roots.
 
 Purpose:
-- test whether a more specific anchor produces a smaller, cleaner frontier.
+- compare a concentrated star against QUESTION.
 
 ### A3 - IS
 
-High-frequency saturation stress test.
+High-frequency stress anchor.
+
+Planning pre-audit:
+- 65 occurrences;
+- 42 repeated anchored pattern classes;
+- recurrence through n=6;
+- 25 one-hop neighboring roots.
 
 Purpose:
-- test whether the same frontier discipline remains usable when lexical occurrence count and low-n recurrence are broad.
+- stress saturation without inventing stop words.
 
-No stop-word policy may be invented.
+### A4 - PIE
 
-IS remains a normal word root in the bounded specimen.
+D1 retained-pointer path control.
 
-### A4 - PIE (D1)
-
-Retained-pointer control.
-
-Purpose:
-- test direct vs transitive pointer distance;
-- test flat-star saturation;
-- test ringed pointer traversal.
-
-Execution must recompute all counts from the source/Pass-3 findings rather than using planning expectations as facts.
+All planning pre-audit counts must be recomputed during execution.
 
 ---
 
-## 4. Structural hit signature
+## 3. Raw structural result signature
 
-Pass 4 may describe a derived hit with a raw structural signature:
+Pass 4 may annotate a derived result with:
 
 \[
-\sigma(h\mid a)
-=
+\sigma(h|a)=
 (
 layer,
 n,
 support,
-occurrence\_coverage,
-extension\_depth,
-branch\_fanout,
+coverage,
+branch\_type,
 pointer\_distance,
-directness,
+path,
 hop\_depth
 ).
 \]
 
-Fields apply only where meaningful.
+No scalar score.
 
-### Definitions
+### layer
 
-#### layer
-One of:
-- LEXICAL;
-- PATTERN;
-- POINTER;
-- STAR-HOP.
+LEXICAL / PATTERN / POINTER / STAR-HOP.
 
-#### n
-Sampling scale for a pattern hit.
+### n
 
-#### support
-Exact recurrence count for the pattern.
+Pattern sample scale where applicable.
 
-#### occurrence_coverage
-How many anchor occurrences participate in the hit.
+### support
 
-#### extension_depth
-How far the pattern sits above the n=1 anchor in the extension DAG.
+Exact recurrence support.
 
-#### branch_fanout
-Number of exact one-step continuations from the pattern.
+### coverage
 
-#### pointer_distance
-Minimum retained POINTER steps from an anchor occurrence/root.
+Which anchor occurrences participate.
 
-#### directness
-Direct occurrence/root, direct pointer, transitive pointer, or derived pattern.
+### branch_type
 
-#### hop_depth
-Number of word-star transitions in word→pattern→word traversal.
+TRUNK / BRANCH / TERMINAL / UNIQUE-CONTEXT.
 
-### Fence
+### pointer_distance
 
-This tuple is **descriptive metadata**, not a stored score or API.
+Minimum retained pointer distance.
 
-Pass 4 must not silently convert it into a weighted scalar.
+### path
+
+Actual structural witness.
+
+### hop_depth
+
+Number of word→pattern→word transitions.
+
+This is analysis notation only.
 
 ---
 
-## 5. Frontier model
+## 4. Recurrent ridge compression
 
-Candidate progressive frontiers:
+Pass 3 proved repeated anchored structures form nested n-level ridges.
 
-### F0 - lexical occurrence frontier
+Returning every nested pattern is complete but redundant.
 
-\[
-F_{lex}(a)=Occ(a).
-\]
+Pass 4 compares four structural views.
 
-Answers:
-- where did the root appear?
+### C-A - all repeated patterns
 
-### F1 - repeated pattern frontier
+Baseline.
 
-\[
-F_{pattern}(a)
-=
-\{u:Support_a(u)\ge2\}.
-\]
+### C-B - maximal repeated patterns only
 
-Organized by:
-- n;
-- support;
-- extension DAG.
+Keep repeated patterns with no repeated extension.
 
-No semantic relevance.
+Risk:
+- discards high-support shorter trunks.
 
-### F2 - retained pointer frontier
+### C-C - event nodes
 
-Ring by minimum pointer distance:
+Keep a node when at least one is true:
+- support changes from parent;
+- branch fan-out changes;
+- node is terminal;
+- node begins a distinct recurrent branch.
 
-\[
-F_{pointer}^{(d)}(a)
-=
-\{p:dist_a(p)=d\}.
-\]
+This is the main candidate.
 
-### F3 - one-hop star frontier
+### C-D - Pareto nodes
 
-From repeated pattern \(u\), expose other root identities participating in \(u\).
+A pattern is retained in the view if no other anchored repeated pattern is:
+- at least as large in n;
+- at least as strong in support;
+- at least as broad in occurrence coverage;
 
-\[
-a
-\to
-u
-\to
-b.
-\]
+with one strict improvement.
 
-Pass 3 permits at most one hop.
+No weights.
 
-Pass 4 tests whether additional hops explode.
+### Required comparison
 
-### Candidate result
+For QUESTION, ANSWERS, IS report:
+- raw repeated pattern count;
+- result count under C-B/C-C/C-D;
+- branch preservation;
+- support levels preserved;
+- longest scale preserved;
+- redundancy reduction.
 
-Search need not return "the answer."
-
-It can expose these frontiers progressively.
+No permanent display policy is chosen unless one candidate is strictly forced.
 
 ---
 
-## 6. Ordering candidates - no semantic score
+## 5. Ordering without semantic score
 
-Pass 4 compares ordering disciplines.
+Pass 4 compares deterministic structural orderings.
 
-### O-A - layer/ring order
+### O-A - extension-tree order
 
-1. lexical occurrences;
-2. repeated patterns;
-3. direct pointer ring;
-4. farther pointer rings;
-5. one-hop star expansion.
+Start at root and walk n→n+1 edges.
 
-Within each frontier, preserve deterministic structural order.
+### O-B - support-first
 
-**Candidate:** ADMIT if useful and stable.
-
-### O-B - support-first within pattern frontier
-
-For equal layer:
+Within a pattern frontier:
 
 \[
 support\downarrow
 \]
 
-then perhaps:
+then deterministic tuple/position tie-break.
+
+### O-C - scale-first
 
 \[
 n\downarrow
 \]
 
-as a tie-break.
+then support.
 
-Tests:
-- does high support merely surface generic short patterns?
-- does larger n help specificity?
+### O-D - partial order only
 
-### O-C - scale-first within pattern frontier
+Expose Pareto/event nodes without forcing total ordering.
 
-\[
-n\downarrow
-\]
+### O-E - pointer rings
 
-then:
+For retained relations:
 
 \[
-support\downarrow.
+d=0,1,2,\ldots
 \]
 
-Tests:
-- does this surface highly specific but weakly supported patterns first?
+with actual path witnesses.
 
-### O-D - Pareto frontier
-
-A pattern dominates another only if it is no worse in:
-- support;
-- scale;
-- occurrence coverage;
-
-and better in at least one.
-
-No arbitrary weights.
-
-Pass 4 tests whether a useful small nondominated set emerges.
-
-### O-E - extension-tree order
-
-Start at anchor and traverse the repeated-pattern DAG outward by n.
-
-This preserves how patterns grow.
-
-### O-F - pointer BFS order
-
-Retained relations ordered strictly by minimum pointer distance.
-
-### O-G - weighted scalar
-
-Example forbidden temptation:
+### Forbidden default
 
 \[
 Score
@@ -389,383 +354,71 @@ Score
 \alpha support+\beta n-\gamma distance.
 \]
 
-**Default verdict: BLOCKED** unless a human/source rule supplies weights.
+No weights are supplied by law or human ruling.
 
-Pass 4 may demonstrate why arbitrary weights change ordering.
-
-It may not choose them.
+Pass 4 must not invent them.
 
 ---
 
-## 7. Bounding candidates
+## 6. Nested-ridge redundancy measurement
 
-Search must be bounded without silently deleting structure.
-
-### B-A - recurrence bound
-
-Pattern frontier includes only:
-
-\[
-Support\ge2.
-\]
-
-This is not an arbitrary threshold in this experiment.
-
-It means:
-- repeated structure vs unique context.
-
-Unique context remains separately accessible from occurrence expansion.
-
-### B-B - exact scale exhaustion
-
-For a given anchor, stop repeated-pattern expansion when no repeated anchored pattern exists at n+1 or above.
-
-This is data-derived.
-
-### B-C - pointer distance rings
-
-Expose:
-- d=0;
-- d=1;
-- d=2;
-- ...
-
-Do not preselect one global maximum d as Core law.
-
-The user/search surface may request farther rings.
-
-### B-D - one star hop
-
-Pass 3 tests one word→pattern→word hop.
-
-Pass 4 must calculate what happens at:
-- 0 hops;
-- 1 hop;
-- 2 hops;
-
-for at least QUESTION and IS.
-
-Purpose:
-- measure neighborhood explosion.
-
-No arbitrary permanent hop cap is set.
-
-### B-E - marginal novelty
-
-At each expansion ring, calculate:
-- new roots;
-- new patterns;
-- new pointer points.
-
-A plateau may be observable.
-
-No numeric stopping threshold may be invented.
-
-### B-F - top-k
-
-UI result count such as top 10.
-
-**OUT OF CORE / BLOCKED as semantic law.**
-
-May be mentioned only as later presentation policy.
-
----
-
-## 8. Saturation stress test
-
-For each anchor A1-A3:
+For each Coffee anchor:
 
 Calculate:
 
-1. lexical occurrence count;
-2. number of recurrent anchored patterns;
-3. recurrent pattern count by n;
-4. maximum n;
-5. unique other roots reachable through one word→pattern→word hop;
-6. unique roots after two hops;
-7. expansion factor:
-   \[
-   E_1=\frac{|Roots_{hop1}|}{1},
-   \]
-   \[
-   E_2=\frac{|Roots_{hop2}|}{\max(1,|Roots_{hop1}|)}.
-   \]
+\[
+R_{raw}
+=
+\#\{\text{all repeated anchored patterns}\}.
+\]
 
-For D1 PIE:
+For each compression candidate X:
 
-Calculate:
-- direct pointer rows;
-- transitive pointer rows;
-- ring sizes by d;
-- saturation fraction.
+\[
+R_X
+=
+\#\{\text{patterns shown by X}\}.
+\]
 
-### Purpose
+Compression ratio:
 
-QUESTION may look clean while IS explodes.
+\[
+C_X
+=
+1-\frac{R_X}{R_{raw}}.
+\]
 
-The search discipline must survive both.
+Also calculate a **branch loss count**:
+
+number of distinct recurrent branch continuations present in raw DAG but absent from compressed representation.
+
+Any candidate with branch loss > 0 fails.
+
+This makes compression falsifiable without semantic judgment.
 
 ---
 
-## 9. QUESTION ordering experiment
+## 7. One-hop and two-hop star expansion
 
-Using actual Pass-3 findings:
-
-Build all repeated QUESTION patterns.
-
-Produce the first result sets under:
-- O-B support-first;
-- O-C scale-first;
-- O-D Pareto;
-- O-E extension-tree.
-
-Do not judge them semantically.
-
-Compare structurally:
-
-- result count;
-- scales represented;
-- support represented;
-- branch diversity;
-- duplicate/nested redundancy.
-
-### Key question
-
-Does a Pareto / extension-tree presentation preserve:
-- the five-support trunk;
-- longer two-support branches;
-- QUESTION IS branch;
-
-without one type suppressing the others?
-
----
-
-## 10. ANSWERS control
-
-Repeat the same pattern-frontier analysis for ANSWERS.
-
-Expected use:
-- tighter anchor;
-- fewer divergent branches.
-
-If QUESTION and ANSWERS produce radically different frontier sizes, that is useful evidence for anchor-sensitive search complexity.
-
-No stop-word or content policy is inferred.
-
----
-
-## 11. IS saturation control
-
-IS is expected to be common.
-
-Execution must calculate, not assume:
-- occurrences;
-- recurrent anchored patterns;
-- maximum n;
-- branch fanout;
-- one-hop root count.
-
-### Hard test
-
-Can the same structural frontier representation keep IS search inspectable?
-
-If not, Pass 4 must report which layer saturates:
-- lexical;
-- low-n pattern;
-- one-hop star graph;
-- pointer-like transitive structure.
-
-Do not patch it with semantic stop-word filtering.
-
----
-
-## 12. Nested-pattern redundancy
-
-Pass 2 discovered recurrence ridges:
-
-a repeated n=5 pattern implies recurrent contained n=1..4 structures.
-
-Therefore a naive result list may be dominated by nested duplicates.
-
-Pass 4 must define and test a **containment relation**:
+Pass 3 proved one hop:
 
 \[
-u\prec v
+a
+\to
+pattern
+\to
+b.
 \]
 
-when:
-- u is a contiguous subpattern of v;
-- both are recurrent anchored patterns.
+Pass 4 measures one additional hop.
 
-Candidate display structures:
-
-### R-A - show every pattern
-
-Complete but redundant.
-
-### R-B - maximal recurrent patterns
-
-Show only patterns that have no recurrent one-word extension.
-
-Risk:
-- hides high-support shorter trunks.
-
-### R-C - trunk + branch nodes
-
-Show nodes where:
-- support changes;
-- fanout changes;
-- recurrence terminates.
-
-This is structurally motivated and may compress ridges without semantic scoring.
-
-### R-D - Pareto nodes
-
-Use support + n + coverage nondominance.
-
-Pass 4 compares these.
-
-It does not choose a permanent UI.
-
----
-
-## 13. Support-change nodes
-
-Define a pattern extension:
-
-\[
-u_n\to v_{n+1}.
-\]
-
-A **support-change node** occurs when:
-
-\[
-Support(v)\neq Support(u).
-\]
-
-A **branch node** occurs when one pattern has multiple recurrent one-step extensions.
-
-A **terminal node** has no recurrent extension.
-
-Candidate compressed star view:
-
-\[
-\boxed{
-\text{retain/show trunk root + support-change + branch + terminal nodes}
-}
-\]
-
-as a derived search presentation.
-
-This may capture recurrence geometry more compactly than every cell.
-
-Pass 4 tests it on QUESTION and IS.
-
-This is view logic only.
-
-No Core retention rule is implied.
-
----
-
-## 14. Pointer-path compression
-
-For D1 PIE:
-
-If transitive participation includes many later rows, search can present:
-- minimum distance;
-- shortest retained path;
-- branch alternatives.
-
-Candidate:
-
-\[
-PIE
-\to
-0004
-\to
-0007
-\to
-0009
-\to
-0010
-\]
-
-rather than a flat set:
-
-\[
-\{0004,0007,0009,0010\}.
-\]
-
-Pass 4 tests whether shortest-path/ring presentation preserves enough structure to avoid saturation.
-
-No general graph-search implementation is designed.
-
----
-
-## 15. Cross-layer search result
-
-A star hit may be represented in one of three nonflattened forms:
-
-### Pattern hit
-
-\[
-QUESTION
-\to
-ANSWERS\ ONE\ QUESTION\ ONLY
-\]
-
-with:
-- n;
-- support;
-- spans;
-- branch children.
-
-### Pointer hit
-
-\[
-PIE
-\to
-0004
-\to
-0007.
-\]
-
-with:
-- directness;
-- pointer distance;
-- path.
-
-### Star-hop hit
-
-\[
-QUESTION
-\to
-ANSWERS\ ONE\ QUESTION\ ONLY
-\to
-ANSWERS.
-\]
-
-with:
-- hop depth = 1;
-- shared pattern witness.
-
-The search model should not force these into one scalar ranking.
-
----
-
-## 16. Two-hop explosion experiment
-
-Pass 3 stops after one word→pattern→word hop.
-
-Pass 4 calculates a second hop.
-
-For anchor a:
+Define:
 
 \[
 Roots_1(a)
 =
-\{b:
-a\to pattern\to b\}.
+\{b\neq a:
+a\to repeated\ pattern\to b\}.
 \]
 
 Then:
@@ -773,142 +426,348 @@ Then:
 \[
 Roots_2(a)
 =
-\bigcup_{b\in Roots_1(a)}
-Roots_1(b).
+\bigcup_{b\in Roots_1(a)}Roots_1(b).
 \]
 
-Calculate for:
-- QUESTION;
-- ANSWERS;
-- IS.
-
 Report:
-- number of roots at hop 1;
-- new roots introduced at hop 2;
-- overlap with prior roots;
+- |Roots1|;
+- new roots at hop2;
+- total distinct roots through hop2;
+- vocabulary fraction;
 - expansion factor.
 
-### Falsifier
+Planning pre-audit using the Pass-3 exact recurrence rule:
 
-If hop 2 approaches most lexical roots in the specimen for common anchors, unrestricted recursive star hopping is unsuitable as a default search presentation.
+| anchor | hop1 roots | new roots at hop2 | total through hop2 incl. anchor | corpus vocabulary |
+|---|---:|---:|---:|---:|
+| QUESTION | 6 | 27 | 34 | 469 |
+| ANSWERS | 5 | 5 | 11 | 469 |
+| IS | 25 | 33 | 59 | 469 |
 
-That does not prohibit explicit farther traversal.
+Approximate total vocabulary fractions:
+- QUESTION: 7.25%;
+- ANSWERS: 2.35%;
+- IS: 12.58%.
 
----
+Execution must recompute them.
 
-## 17. Search reconstructibility
+### Interpretation fence
 
-Every Pass-4 result must be derivable from:
-- authoritative 1D word/pointer history;
-- derived 2D sample field;
-- Pass-3 derived star layers.
+A larger set is not "less relevant."
 
-No required persistent search index.
+It only means more structural expansion.
 
-Execution must identify which computations are:
-- corpus-wide scans;
-- local anchor-cone scans;
-- pointer Reach traversals.
-
-Efficiency is not solved here.
-
-Reconstructibility is.
+No stop-word logic.
 
 ---
 
-## 18. Structural ordering invariants
+## 8. Expansion presentation
 
-Candidate invariants to test:
+Compare:
+
+### H-A - implicit recursive expansion
+
+Automatically show hop2 after hop1.
+
+### H-B - explicit frontier expansion
+
+Default shows:
+- anchor;
+- current frontier;
+- available next frontier count.
+
+Farther traversal is an explicit search action.
+
+### H-C - closure
+
+Return every root reachable by repeated star hopping.
+
+Expected saturation risk.
+
+Pass 4 must calculate enough to reject or admit these structurally.
+
+No UI is designed.
+
+---
+
+## 9. D1 PIE pointer rings
+
+Using actual Pass-3 distances:
+
+### Ring d=0
+
+- 0000;
+- 0003.
+
+### Ring d=1
+
+- 0002;
+- 0004;
+- 0006.
+
+### Ring d=2
+
+- 0007;
+- 0010 by shortest path.
+
+### Ring d=3
+
+- 0009.
+
+But 0010 also has longer PIE paths.
+
+Pass 4 must calculate:
+- ring sizes;
+- shortest path(s);
+- all distinct PIE witness paths in the tiny DAG;
+- path count per row;
+- whether ring-only presentation loses branch history.
+
+---
+
+## 10. Pointer path preservation candidates
+
+### P-A - minimum distance only
+
+Compact, but likely incomplete.
+
+### P-B - one shortest witness path
+
+Still may lose alternate history.
+
+### P-C - all witness paths
+
+Complete, may grow combinatorially.
+
+### P-D - shortest path + branch alternatives
+
+Represent:
+- minimum distance;
+- one canonical deterministic shortest path;
+- count / first divergence of alternatives.
+
+No semantic score.
+
+Pass 4 tests these on D1.
+
+A candidate fails if it makes 0010's short 0000→0002 route erase the longer root-touch/relationship branch.
+
+---
+
+## 11. Structural frontier contract candidate
+
+A search view may return typed groups rather than one list.
+
+Candidate:
+
+    ANCHOR
+      lexical occurrences
+
+    REPEATED PATTERNS
+      trunk / branch / terminal nodes
+      n + support + spans
+
+    POINTER PATHS
+      direct ring
+      farther rings
+      path witnesses
+
+    NEIGHBOR STARS
+      one-hop roots
+      pattern witness
+      next-hop count
+
+This is the main Pass-4 object.
+
+It remains derived.
+
+No persistent search index.
+
+---
+
+## 12. QUESTION test
+
+Execution must compare C-A/B/C/D and O-A/B/C/D on the actual QUESTION DAG.
+
+Required invariants:
+- five-support trunk remains visible;
+- WHEN branch remains visible;
+- WHAT branch remains visible;
+- QUESTION IS branch remains visible;
+- longest n=5 patterns remain visible;
+- lexical QUESTION occurrences remain separately accessible.
+
+If a compression/order loses one, it fails.
+
+---
+
+## 13. ANSWERS control
+
+Run the same recurrence compression/order experiment.
+
+Because ANSWERS is concentrated in the five-stage scaffold, it should test whether the frontier model stays compact when the anchor has one strong trunk.
+
+Planning pre-audit:
+- 5 occurrences;
+- repeated patterns through n=5;
+- 6 repeated classes.
+
+Execution must recompute.
+
+---
+
+## 14. IS saturation control
+
+Run the same analysis with no special handling.
+
+Planning pre-audit:
+- 65 occurrences;
+- 42 repeated anchored classes;
+- recurrence through n=6;
+- 25 one-hop roots.
+
+Questions:
+- which frontier grows largest?
+- does event-node compression preserve all recurrent branches?
+- does hop2 expansion remain inspectable?
+- does any method require treating IS as a stop word?
+
+If a method only works by suppressing IS semantically, it fails this campaign.
+
+---
+
+## 15. Search result invariants
+
+Pass 4 tests these derived-view invariants.
 
 ### I1
 
-Direct occurrence/root information must never disappear behind transitive results.
+Lexical occurrence/root information is never hidden by transitive structure.
 
 ### I2
 
-Direct pointer contact must be distinguishable from transitive ancestry.
+Repeated-pattern n and support remain visible.
 
 ### I3
 
-Pattern scale n and support must both remain visible.
+Trunk and branch are distinguishable.
 
 ### I4
 
-Cross-scale relation does not imply comparable relevance.
+Unique continuation is distinguishable from recurrent branch.
 
 ### I5
 
-Unique context is not recurrent pattern and should be labeled separately.
+Direct POINTER contact is distinguishable from transitive ancestry.
 
 ### I6
 
-One-hop star neighbors must include a pattern witness.
-
-No naked word→word edge is invented from co-occurrence.
+Minimum distance never substitutes for full relational path identity.
 
 ### I7
 
-A larger pattern does not erase the shorter trunk it contains.
+Neighbor-star hit always includes a pattern witness.
+
+No naked co-occurrence edge.
 
 ### I8
 
-A shorter high-support trunk does not erase longer low-support branches.
+Hop depth remains explicit.
 
-These are search-display invariants, not Core write rules.
+### I9
+
+Cross-scale participation does not imply semantic similarity.
+
+### I10
+
+Filtering/compression never deletes Lace; it only changes the read view.
 
 ---
 
-## 19. Pass-4 falsifier board
+## 16. Reconstructibility
+
+Everything must be reconstructible from:
+- authoritative 1D Lace;
+- derived 2D sampling field;
+- root identity;
+- POINTER ancestry.
+
+Classify each calculation as:
+
+### local anchor-cone read
+
+Occurrence/pattern search.
+
+### pointer traversal
+
+D1 retained paths.
+
+### bounded star-hop expansion
+
+Derived repeated-pattern adjacency.
+
+No correctness dependency on:
+- persistent star table;
+- inverted index;
+- trie;
+- embeddings;
+- graph DB.
+
+Efficiency remains later work.
+
+---
+
+## 17. Pass-4 falsifier board
 
 | ID | Falsifier | Consequence |
 |---|---|---|
-| **F4-1** | Pass 3 star thesis failed | STOP / replan |
-| **F4-2** | QUESTION, ANSWERS or IS anchors unavailable under bounded tokenization | adjust anchor set transparently |
-| **F4-3** | structural hit signature requires semantic annotation | reject field |
-| **F4-4** | layer/ring frontiers cannot be reconstructed | reject frontier model |
-| **F4-5** | support-first requires semantic tie-break | reject tie-break |
-| **F4-6** | scale-first collapses all useful trunk structure | report; candidate fails |
-| **F4-7** | Pareto frontier equals almost all patterns | insufficient compression |
-| **F4-8** | extension-tree cannot preserve branch/support changes | reject |
-| **F4-9** | support-change/branch/terminal compression loses a distinct recurrence branch | reject compression |
-| **F4-10** | flat QUESTION search already saturates entire corpus | quantify; star needs stronger layers |
-| **F4-11** | IS search cannot be bounded structurally without semantic stop-word logic | thesis fails for high-frequency anchors |
-| **F4-12** | one-hop star traversal already reaches most roots for all anchors | default star-hop unsafe |
-| **F4-13** | two-hop expansion adds negligible structure and only duplicates | recursive hopping low value |
-| **F4-14** | two-hop expansion explodes toward all roots | recursive hopping must remain explicit/bounded |
-| **F4-15** | D1 PIE minimum pointer distance loses a retained branch | distance-only presentation insufficient |
-| **F4-16** | shortest-path presentation hides alternative relational history | must retain path alternatives |
-| **F4-17** | any ordering needs arbitrary weighted scalar | refuse scalar; retain partial/frontier ordering |
-| **F4-18** | result bounding requires deleting authoritative structure | reject; search views may filter but Lace remains intact |
-| **F4-19** | persistent search index becomes necessary for correctness | reject under current one-store law |
-| **F4-20** | Pass 4 defines retention, semantic ranking, law edits, code, src/Cargo/Rust | STOP / scope breach |
+| **F4-1** | Pass-3 layered star result cannot be reproduced | STOP |
+| **F4-2** | compression loses WHEN / WHAT / QUESTION-IS branch | candidate fails |
+| **F4-3** | maximal-only view hides high-support trunk | C-B fails |
+| **F4-4** | event-node compression loses any recurrent branch | C-C fails |
+| **F4-5** | Pareto view contains almost all raw patterns | insufficient compression |
+| **F4-6** | Pareto view deletes a structurally distinct branch | candidate fails |
+| **F4-7** | support-first needs semantic tie-break | candidate fails |
+| **F4-8** | scale-first needs semantic tie-break | candidate fails |
+| **F4-9** | IS requires stop-word suppression for method to function | thesis fails |
+| **F4-10** | one-hop pattern witness cannot reconstruct neighbor root | star-hop fails |
+| **F4-11** | hop2 already reaches most corpus vocabulary | implicit recursion unsafe |
+| **F4-12** | closure is required for correctness | investigate contradiction |
+| **F4-13** | distance-only PIE view loses alternative ancestry | P-A fails |
+| **F4-14** | one-shortest-path view loses distinct D1 branch | P-B fails |
+| **F4-15** | all-path view is necessary even in D1 | record path-contract cost |
+| **F4-16** | shortest+alternatives cannot preserve D1 structure | P-D fails |
+| **F4-17** | structural result requires scalar semantic weights | reject scalar |
+| **F4-18** | result contract requires a persistent second index for correctness | reject architecture |
+| **F4-19** | search view writes/rewrites Lace or defines retention | scope breach |
+| **F4-20** | law edits/code/src/Cargo/Rust needed | STOP |
 
 ---
 
-## 20. Proof board
+## 18. Proof board
 
 Execution must produce:
 
-1. Pass-3 execution gate receipt.
-2. QUESTION anchor frontier metrics.
-3. ANSWERS anchor frontier metrics.
-4. IS saturation metrics.
-5. Pattern counts by n for all three.
-6. QUESTION O-B support-first result set.
-7. QUESTION O-C scale-first result set.
-8. QUESTION O-D Pareto set.
-9. QUESTION O-E extension-tree structure.
-10. Nested-pattern redundancy count.
-11. support-change / branch / terminal compressed QUESTION tree.
-12. same compression attempted on IS.
-13. one-hop root counts for QUESTION / ANSWERS / IS.
-14. two-hop root counts for all three.
-15. expansion factors.
-16. D1 PIE pointer ring sizes.
-17. D1 shortest-path / alternative-path witness.
-18. 20 falsifiers scored.
-19. exact remaining search questions named.
-20. no law/code/implementation changes.
+1. Pass-3 layered result reproduction.
+2. QUESTION raw repeated DAG count.
+3. QUESTION C-B maximal result.
+4. QUESTION C-C event-node result.
+5. QUESTION C-D Pareto result.
+6. branch-loss comparison.
+7. redundancy/compression ratios.
+8. ANSWERS control.
+9. IS saturation control.
+10. support-first ordering.
+11. scale-first ordering.
+12. partial-order/event-tree ordering.
+13. hop1 counts all anchors.
+14. hop2 counts all anchors.
+15. expansion factors/vocabulary fractions.
+16. D1 PIE ring/path table.
+17. P-A/B/C/D pointer-path comparison.
+18. ten search-view invariants tested.
+19. 20 falsifiers reported.
+20. no law/code/retention changes.
 
 Target:
 
@@ -918,124 +777,78 @@ Target:
 
 ---
 
-## 21. Required execution product
+## 19. Required product
 
 Create:
 
 docs/plans/sampling-density-emergence-pass-4-findings.md
 
-Required contents:
-
-1. Pass-3 dependency gate;
-2. anchor corpus facts;
-3. raw structural hit signature;
-4. frontier definitions;
-5. QUESTION ordering comparison;
-6. ANSWERS control;
-7. IS saturation control;
-8. nested-ridge redundancy analysis;
-9. support-change/branch/terminal compression;
-10. one-hop/two-hop expansion;
-11. D1 PIE pointer-ring/path analysis;
-12. structural ordering invariants;
-13. falsifier board;
-14. proof board;
-15. exact residuals;
-16. recommended Pass-5 target without opening it.
+It must contain:
+- actual Pass-3 baseline;
+- QUESTION/ANSWERS/IS recurrence metrics;
+- compression comparison;
+- structural ordering comparison;
+- one-hop/two-hop expansion;
+- D1 PIE pointer-path comparison;
+- surviving frontier/result contract;
+- falsifier board;
+- proof board;
+- exact leftovers for Pass 5;
+- no law edit.
 
 ---
 
-## 22. Expected outcomes - not findings
+## 20. Expected outcomes - not findings
 
-Likely, not assumed:
+Likely:
 
-### E1
+- maximal-only compression will hide useful trunks;
+- event-node compression will preserve the recurrence shape with fewer nodes;
+- support-first and scale-first each expose different structure, making one total ordering unjustified;
+- partial/frontier ordering will survive;
+- IS will expand more than QUESTION/ANSWERS but not require semantic suppression at two hops;
+- D1 will prove minimum distance alone is insufficient;
+- shortest path + explicit alternatives may be a workable retained-path result.
 
-QUESTION will be well served by extension-tree / trunk-branch presentation.
-
-### E2
-
-ANSWERS will produce a tighter frontier than QUESTION.
-
-### E3
-
-IS will expose saturation at lexical/low-n levels.
-
-### E4
-
-Support-first alone will overfavor short generic structures.
-
-### E5
-
-Scale-first alone will overfavor long low-support structures.
-
-### E6
-
-A Pareto or branch-aware partial order will preserve both.
-
-### E7
-
-Displaying every nested pattern will be redundant.
-
-### E8
-
-Support-change / branch / terminal nodes will compress recurrence ridges without semantic scoring.
-
-### E9
-
-One-hop star traversal will be useful.
-
-### E10
-
-Two-hop traversal may explode for common anchors and therefore should not be implicit/default.
-
-### E11
-
-D1 PIE will confirm pointer distance is necessary but not sufficient; actual path witness also matters.
-
-### E12
-
-The next residual may become:
+The likely next leftover is:
 
 \[
 \boxed{
-\text{what is the minimal structural result contract for search?}
+\text{minimal structural search-result contract}
 }
 \]
 
-rather than a relevance-ranking problem.
+not semantic relevance.
 
-Execution may refute all of these.
+Actual execution may refute these.
 
 ---
 
-## 23. Stop line
+## 21. Stop line
 
 Pass 4 does not:
-
+- revisit whether star search works;
+- define retention;
 - define semantic relevance;
-- choose scalar score weights;
+- choose scalar weights;
 - create stop-word lists;
 - create embeddings;
-- define retention;
-- append POINTERs;
-- design a general query language;
-- create persistent search indexes;
-- add sentence/page boundaries;
-- edit pointer-emission.md;
-- edit systems-manifest.md;
-- reconcile Pass-6 law;
-- create src/, Cargo, Rust or tests;
-- start Pass 5 automatically.
+- invent a persistent search index;
+- define a query language;
+- edit law;
+- create src/Cargo/Rust;
+- auto-open Pass 5.
 
 ## Steward test
 
-Do not ask:
+Pass 3 proved you can enter Lace through a star.
 
-> Which result is most meaningful?
+Pass 4 asks how to keep your place while you walk outward.
 
-Ask:
+Never replace:
 
-> How far is it from the anchor, how often does the structure repeat, how large is the repeated structure, where does it branch, and what exact path connects it?
+> what path got me here?
 
-If those structural facts are enough to keep search useful for both QUESTION and IS, the star can search without storing meaning.
+with:
+
+> this result feels more relevant.
