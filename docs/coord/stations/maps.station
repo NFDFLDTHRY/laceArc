@@ -1,7 +1,7 @@
-STATUS: FREE
+STATUS: HELD
 STATION: maps
 OWNS: docs/reason-model-map.md docs/rust-nostd-*.md docs/atomic-primitives-map.md docs/clock/gearing-code-1to1.md docs/coherence-audit*.md docs/clock/system-mathematical-model.md docs/defrag-plan.md docs/plans/** docs/namespace-register.md docs/*.md (catch-all: any unmatched file at the docs/ root)
-AGENT: -
-BASE: -
-SINCE: -
-NOTE: Astra-math ROOT / TOUCH / FOLD Pass 4 Phase A EXECUTED. Findings commit f942896e9f7dd3143bdbd8a78499d30f08868625. Q0-Q5/Slot II adjudicated; S-E admitted as Join operand boundary; arbitrary chooser remains [GAP]. Law files untouched. Next planned phase claims law. Acceptance absent. coord.sh NOT_RUN.
+AGENT: Astra-math
+BASE: 42888ac2c60991dc869d7ddf582f282d2287a18f
+SINCE: 2026-09-21T00:26:10Z
+NOTE: User-directed ROOT / TOUCH / FOLD Pass 4 Phase C closeout. Law reconciled and released: pointer-emission d2df9fd... + 3454891...; systems-manifest 9f899cc... + fc2cc5b.... Close findings/plan/index, refresh model authority wording, write global-ASCII propagation docket. No global ASCII edit in Pass 4. No blanket acceptance; no src/. Connector claim; coord.sh NOT_RUN.
