@@ -473,7 +473,7 @@ Rejected cuts:
 - “Learned star” as a net (P1 would leak).
 - “ReAG store” beside Graphic D (A2 would leak).
 
-Do not create a third contract from these five books. Current Core already has the reconciled Join constructor; inventing the remaining arbitrary selector from these books would still be a fidelity violation.
+Do not create a third contract from these five books. Current Core already has the reconciled Join constructor and human-ruled sampling discovery; inventing the remaining retention/materialization rule from these books would still be a fidelity violation.
 
 ---
 
