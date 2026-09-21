@@ -1,7 +1,7 @@
-STATUS: HELD
+STATUS: FREE
 STATION: kit
 OWNS: docs/kit/** .claude/**
-AGENT: Astra-kit
-BASE: c5586627042c69bc13daf8a31d0cd1a8043481db
-SINCE: 2026-09-21T00:55:00Z
-NOTE: ROOT / TOUCH / FOLD Pass 5 control-surface extension. Update current steward/control status in agent-control, roles, READ_ME_FIRST only. Preserve verbatim transported human law and dated downstream-audit observations. Constructor reconciled; arbitrary selection [GAP]; acceptance absent; no src/. Connector claim; coord.sh NOT_RUN.
+AGENT: -
+BASE: -
+SINCE: -
+NOTE: Astra-kit ROOT / TOUCH / FOLD Pass 5 control-surface extension EXECUTED. agent-control steward qualification/current controls 9f8517759b80e7e46b5a091a0b3a71245168311f; roles e58742deec16f81344e65637fc0308e5b4c6ae91; READ_ME_FIRST 1b8ea27983f566319ff146abc72227285face028. Verbatim transported human-law block and dated downstream audit preserved. Current constructor reconciled; arbitrary selection [GAP]; acceptance absent. No src/. coord.sh NOT_RUN.
