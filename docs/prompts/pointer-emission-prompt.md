@@ -61,7 +61,9 @@ Do **not** answer from Shadow stakes, history recoveries, gearing, or crate maps
 │   ┌────────────────────────────────────────────────────────────────┐     │
 │   │ PAGE A — FILE SHAPE (must match this skeleton)                 │     │
 │   │                                                                │     │
-│   │   # Pointer emission                                           │     │
+│   │   # Pointer emission
+
+**Current-status warning (SAMPLING / DENSITY / EMERGENCE Pass 6):** this is a dated creation ticket. Its body preserves the earlier unanswered-emission prompt and must not be replayed as current law. Current human rulings establish sampling as the relationship-discovery mechanism; exact sampling-derived retention/materialization remains open; acceptance remains absent. Use `docs/pointer-emission.md` for current status.                                           │     │
 │   │                                                                │     │
 │   │   Status: DRAFT — unanswered questions from docs/graphics.     │     │
 │   │   Not accepted. Not implemented. Emission remains [GAP].       │     │
