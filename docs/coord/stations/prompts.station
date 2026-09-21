@@ -1,7 +1,7 @@
-STATUS: FREE
+STATUS: HELD
 STATION: prompts
 OWNS: docs/prompts/**
-AGENT: -
-BASE: -
-SINCE: -
-NOTE: Cleared 2026-09-19 by Claude-Projection on the human's instruction. Held by Codex-atomic-pass2 from 2026-09-18T20:48:47Z at BASE fa15cb5e1d89 with one commit — the claim itself (1a0dc7b). coord.sh carries no expiry rule, so this was a manual clear, not a protocol action. Codex-atomic-pass2 may re-claim; its plan (docs/plans/atomic-construction-pass-1-plan.md) is untouched and still NOT_RUN.
+AGENT: Astra-context
+BASE: d7f1151fa0986d0e1ce7e5b12aed0d4f5af6ae86
+SINCE: 2026-09-21T00:53:00Z
+NOTE: ROOT / TOUCH / FOLD Pass 5 control-surface extension. Update mandatory context-pass current status only: constructor reconciled, arbitrary relation/sample selection [GAP], acceptance absent. Preserve dated evidence/candidate ledgers and all source-law boundaries. No src/. Connector claim; coord.sh NOT_RUN.
