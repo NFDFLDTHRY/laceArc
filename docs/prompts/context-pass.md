@@ -29,7 +29,7 @@ Source of record: the four PNGs in `docs/graphics/` (open them; cite panels), th
 
 | Product | One line | Strength |
 |---|---|---|
-| [the environment](../plans/lace-context-iter6-pass-4-environment.md) | dated σ search space, 13 fences, 17-candidate ledger; current qualification narrows the unresolved object to arbitrary relation/sample selection | E4 remains `PROVED_WITHIN_SCOPE` for its dated claim; selector remains `[GAP]` |
+| [the environment](../plans/lace-context-iter6-pass-4-environment.md) | dated σ search space, 13 fences, 17-candidate ledger; current qualification narrows the unresolved object to sampling-derived retention/materialization | E4 remains `PROVED_WITHIN_SCOPE` for its dated claim; retention/materialization remains `[GAP]` |
 | [the execution model](../plans/reduction-pass-2-execution-model.md) | Σ = (L, h, K); six transitions. M1 concerns **strand-history observations**: h and persistence progress are operational state, not functions of L. I1/I6 require an OPEN-free interval; pending SUBMIT is not yet an appended WORD. M2 keeps its stated premises; M3's intermediate frontiers additionally require the S4.3 STEP partition | bounded model claims; `[PROPOSAL]`; read X3–X5 and update-pass U04/U05, not a blanket app-correctness proof |
 | [the shape](../plans/lace-context-iter6-pass-5-crate-proposal.md) | seven doors unchanged + sheets T R H C S E from `strand/` to an installed WebAPK; rulings R1–R8 prepared, none taken | `[PLAN]` |
 | [the target facts](../plans/lace-context-iter6-pass-2-findings.md) | wasm64 is Rust Tier 3 (nightly + `build-std`); Chrome ≥ 133 has Memory64 on Android; 16 GB cap; 10–100% bounds tax; **on-device wasm64 scale `UNESTABLISHED`** | web `OBSERVED`; device `HUMAN_REPORTED` |
