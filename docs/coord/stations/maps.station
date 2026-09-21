@@ -1,7 +1,7 @@
-STATUS: HELD
+STATUS: FREE
 STATION: maps
 OWNS: docs/reason-model-map.md docs/rust-nostd-*.md docs/atomic-primitives-map.md docs/clock/gearing-code-1to1.md docs/coherence-audit*.md docs/clock/system-mathematical-model.md docs/defrag-plan.md docs/plans/** docs/namespace-register.md docs/*.md (catch-all: any unmatched file at the docs/ root)
-AGENT: Astra-sampling
-BASE: a421792e8a597c3d1e4de0fa658040b55ff8d94b
-SINCE: 2026-09-21T01:43:00Z
-NOTE: User-directed SAMPLING / DENSITY / EMERGENCE Pass 1 replanning. Promote new rulings to starting invariants: WORD/POINTER rows persist on 1D Lace; sampling creates a derived 2D position-by-scale working array; pointers can relate structures across any n+1 level while retained POINTER rows remain on 1D. Revise plan only. No law edit. No src/Cargo. Connector claim; coord.sh NOT_RUN.
+AGENT: -
+BASE: -
+SINCE: -
+NOTE: Astra-sampling SAMPLING / DENSITY / EMERGENCE Pass 1 REPLAN complete. Revised plan commit d1b02325738cf1df88f146f7b78fbe4f650160c5; plans index bdca45862ce81e30c8c5b7090973b5c1226be0ba. Pass 1 not executed. Fixed invariants: durable WORD/POINTER history stays on 1D Lace; sampling creates derived 2D position-by-scale working array; POINTERs can retain relations across any sampling level back onto 1D. Pass 1 now maps exact cell/axis/n/recurrence/addressability/retention mechanics, APPLES specimen, density/search seam, D1 replay and 20 falsifiers. No law edit. No src/Cargo. coord.sh NOT_RUN.
