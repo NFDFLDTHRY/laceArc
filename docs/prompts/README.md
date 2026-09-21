@@ -1,6 +1,6 @@
 # Prompts
 
-Agent tickets. Not Hands. Not law. Not Core. POINTER emission stays `[GAP]`. No `src/` from a prompt.
+Agent tickets. Not Hands. Not law. Not Core. Current sampling architecture is reconciled; the exact sampling-derived POINTER retention/materialization condition stays `[GAP]`. No `src/` from a prompt.
 
 **Current index, 2026-09-20:** all 21 prompt files are listed below. A current ticket supplies a process, not authorization for a new task. A historical or completed creation ticket points to its accumulated product; do not replay its initial instructions over that product. An EXECUTED receipt reports a bounded past pass, not current source agreement or human acceptance. Renderer work remains frozen/designated-editor work under its existing scope.
 
