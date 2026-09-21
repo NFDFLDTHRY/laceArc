@@ -491,13 +491,13 @@ These contracts bind catalog mechanisms that were made explicit by later human r
 
 This is **not an implemented mechanism** and not a contract whose behavior may be guessed. It is the named missing transition:
 
-[
-	ext{sampling-derived structural evidence}
-longrightarrow
-[	ext{OPEN retain/materialize}]
-longrightarrow
-	ext{retained POINTER topology / addressable sampled operand}.
-]
+\[
+\text{sampling-derived structural evidence}
+\longrightarrow
+[\text{OPEN retain/materialize}]
+\longrightarrow
+\text{retained POINTER topology / addressable sampled operand}.
+\]
 
 Manifest Reconciliation Pass 4 decomposes the **question**, not the catalog, into three subquestions:
 
@@ -519,7 +519,7 @@ Manifest Reconciliation Pass 4 decomposes the **question**, not the catalog, int
 
 - **Input:** a candidate retained relation whose physical Join is ordered.
 - **Question:** where do any required ordered operand roles come from?
-- **Constraint:** chronology is not a universal role rule; D1's explanatory `ref_A/ref_B` ordering may score a candidate but may not be imported as hidden evidence into a D1-blind candidate.
+- **Constraint:** chronology is not a universal role rule; D1's explanatory \`ref_A/ref_B\` ordering may score a candidate but may not be imported as hidden evidence into a D1-blind candidate.
 - **Scope:** RM-C may be candidate-specific rather than one universal subject/target theorem.
 
 RM-A / RM-B / RM-C are **subquestions of this one GAP**. They are not L-M mechanisms, row kinds, APIs, or implementation modules. A candidate may cover only part of the socket; partial coverage must be reported as such.
@@ -532,10 +532,6 @@ Known constraints:
 - B8 source permanence applies **after** a touch exists; it does not select a sampled touch.
 - D1 witnesses retained POINTER states but does not provide the universal selection rule.
 - No semantic chooser, external relation-write API, source-book analogy, or platform primitive may fill this gap by convenience.
-
----
-
-## Relational Mapping (Second Pass)
 
 ---
 
@@ -792,8 +788,6 @@ This classification answers only **whether a bounded D1 retention/materializatio
 **Bounded-freeze rule:** an open does not block the base Lab when holding it fixed to the exact specimen leaves the validity of the retention experiment unchanged. A candidate may pull a conditional open into scope; that candidate must declare and justify the extra premise before execution.
 
 **Important:** freezing an open for one specimen is not architectural closure. G1, route-family boundaries, concurrency, traversal remainder, operand-role questions, and the other listed degrees of freedom retain their existing global status.
-
-### Pointer-emission status after SAMPLING / DENSITY / EMERGENCE Pass 6
 
 ### Pointer-emission status after SAMPLING / DENSITY / EMERGENCE Pass 6
 
