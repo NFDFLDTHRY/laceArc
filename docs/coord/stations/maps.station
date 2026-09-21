@@ -1,7 +1,7 @@
-STATUS: HELD
+STATUS: FREE
 STATION: maps
 OWNS: docs/reason-model-map.md docs/rust-nostd-*.md docs/atomic-primitives-map.md docs/clock/gearing-code-1to1.md docs/coherence-audit*.md docs/clock/system-mathematical-model.md docs/defrag-plan.md docs/plans/** docs/namespace-register.md docs/*.md (catch-all: any unmatched file at the docs/ root)
-AGENT: Astra-search-bounds
-BASE: 98ba7ad49ade797c67492cf5f3379844e8508867
-SINCE: 2026-09-21T02:35:00Z
-NOTE: User-directed SAMPLING / DENSITY / EMERGENCE Pass 4 execution as one complete pass. Execute structural search frontiers/path preservation only: QUESTION/ANSWERS/IS recurrence compression/order, one-hop/two-hop expansion, and D1 PIE path-ring preservation. No subpasses. No retention/semantic ranking/law edit/src/Cargo/Rust. Connector claim; coord.sh NOT_RUN.
+AGENT: -
+BASE: -
+SINCE: -
+NOTE: Astra-search-bounds SAMPLING / DENSITY / EMERGENCE Pass 4 COMPLETE. Execution claim 089a039b268c24dc9fddc13d7999c218f0795bbc; findings f8dae453bce04d8f6b92e8f53a718224e7a5ca3b + final verification a806890d0c167d9569968776152edd76afed1e5f; plan close 7d9022c995db04d25aa236566b599a4e5944b321; index ef8491ab72a81768c1fe6d44890490cc31f084c0. Result: explicit structural frontiers and witness-path/DAG preservation survive. Maximal-only drops high-support trunks; Pareto drops real branches; strict event-node compression barely helps common anchors; full word-hop closure makes QUESTION/ANSWERS/IS converge to the same 75-root component. D1 PIE distance/one-shortest-path are insufficient; exact preservation requires all witness paths or equivalent witness-DAG slice. Actual leftovers: minimal derived search-result record, DAG/frontier serialization, explicit expansion operators, local reconstruction strategy. 20/20 proof board. No subpasses, no law edit, no src/Cargo/Rust. coord.sh NOT_RUN.
