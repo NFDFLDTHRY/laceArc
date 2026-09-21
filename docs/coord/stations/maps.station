@@ -1,7 +1,7 @@
-STATUS: FREE
+STATUS: HELD
 STATION: maps
 OWNS: docs/reason-model-map.md docs/rust-nostd-*.md docs/atomic-primitives-map.md docs/clock/gearing-code-1to1.md docs/coherence-audit*.md docs/clock/system-mathematical-model.md docs/defrag-plan.md docs/plans/** docs/namespace-register.md docs/*.md (catch-all: any unmatched file at the docs/ root)
-AGENT: -
-BASE: -
-SINCE: -
+AGENT: Claude-Projection
+BASE: fed084c5e3d5e47259ab130d24e3b5a1afbd2618
+SINCE: 2026-09-21T01:20:02Z
 NOTE: Astra-selection ROOT / TOUCH / FOLD Pass 6 COMPLETE. Phase A findings 266c6388388f7672ae3dadcf48d2dc17a89979d6; Phase-A release 5ce84af5739218647761e26c552592dde07876b0; law provenance reclassification c4a399bd537393888a87acbf533ec932e0f69dca + 491421f93bf8336108e5ca3831154d544759d99b + 2ec1174e8903bea7b459361ee23b624eb87430a1; law release a61a3913106debb42c74e690f79ef2e6b6f15726; math status refresh 57908a7779226dac72b3677837266e2acdc3d3a9; provenance propagation docket 0bc86bd800732bc6fce8f07447b6d28ce1a43d9d; final findings f01581cecebb183e82d83ee39c329fdbcf384298; plan close 68ad490a151ef651f66220c1bed8529bc4574e46; index 643e0dac5db34a49ea5be636e6f7aefbfd1a23e0. Verdict V-C: Origin(rho) provenance/authority [GAP]; automatic Core chooser not established; external assertion interface not established; RootTouch provenance ruled. Proof board 16/16 PASS. Final tree 691 paths, no src/Cargo.toml/.rs. Gate-question Pass-1 files unchanged. Acceptance absent. coord.sh NOT_RUN.
