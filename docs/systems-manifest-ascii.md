@@ -423,7 +423,7 @@ The source-specific clipboard/clock documents remain the detailed behavior recor
 | **F9** | retention/materialization is silently closed |
 | **F10** | this ASCII duplicates contract prose instead of cataloging |
 
-**Pass-32 maps phase verdict:** catalog role is now explicit; current canonical Lace mechanisms and integration classes have contract IDs; the A6/B4 attribution defect is corrected at the current-catalog layer; retention/materialization remains `[GAP]`. Contract definitions land in the law phase of this same pass.
+**Pass-32 verdict:** **CANONICAL CATALOG ↔ CONTRACT CROSSWALK RECONCILED.** Current Lace mechanisms and external integration classes resolve to the contract registry in `systems-manifest.md`; the A6/B4 and B10/B11 current provenance splits are corrected; persistence/re-entry is distinct from retention/materialization; Graphic-C projection is distinct from H7–H12 sampling; D1 remains a state witness rather than a universal selection rule. Downstream drift is recorded in [Pass 1 findings](plans/manifest-reconciliation-pass-1-findings.md). Retention/materialization remains `[GAP]`; acceptance remains absent.
 
 ---
 
