@@ -1,7 +1,7 @@
-STATUS: HELD
+STATUS: FREE
 STATION: law
 OWNS: AGENTS.md CLAUDE.md docs/staking-the-workspace.md docs/law-why-these-documents.md docs/systems-manifest.md docs/pointer-emission.md docs/references.md CONTRIBUTING.md README.md .gitignore LICENSE docs/README.md
-AGENT: Astra-law-provenance
-BASE: 5ce84af5739218647761e26c552592dde07876b0
-SINCE: 2026-09-21T01:14:00Z
-NOTE: User-directed ROOT / TOUCH / FOLD Pass 6 Phase B. Reclassify only the current remaining gap in pointer-emission.md + systems-manifest.md from implied automatic chooser/selection process to arbitrary non-root relation-assertion provenance/authority/ownership. Preserve RootTouch closed special case, constructor law, historical receipts, gate-question campaign ownership, and acceptance gate. No selector/interface/code. No src/. Connector claim; coord.sh NOT_RUN.
+AGENT: -
+BASE: -
+SINCE: -
+NOTE: Astra-law-provenance ROOT / TOUCH / FOLD Pass 6 Phase B EXECUTED. pointer-emission provenance reclassification c4a399bd537393888a87acbf533ec932e0f69dca; systems-manifest reclassification 491421f93bf8336108e5ca3831154d544759d99b + stale-label sweep 2ec1174e8903bea7b459361ee23b624eb87430a1. Current gap = arbitrary non-root relation-assertion provenance / authority / ownership, expressed as Origin(rho) [GAP]. Automatic Core chooser not established; external assertion interface not established. RootTouch provenance remains ruled. Historical receipts/gate-question ownership/acceptance gate preserved. No src/. coord.sh NOT_RUN.
