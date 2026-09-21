@@ -58,6 +58,20 @@ the source while keeping persistence, re-entry, discovery, retention, and materi
 
 ---
 
+### Manifest Reconciliation Pass 4 admission supersession
+
+The [Pass-4 Lab admission envelope](manifest-reconciliation-pass-4-lab-admission.md) now supersedes this inherited plan's experimental assumptions where they differ:
+
+- **SM-GAP-RM** is one open socket with RM-A retain / RM-B materialize / RM-C role-order subquestions.
+- Unrelated opens may be frozen at the bounded D1 specimen without being globally closed.
+- Candidate authority and D1-oracle independence must be recorded independently.
+- A bare expected-row score is insufficient; false-positive retention must be counted.
+- H1–H12 are architecture constraints, not candidates in a scoreboard.
+- Source-of-record silence does **not** skip the eligible research family and jump directly to human invention.
+- SidecarMemory is a permanent adversarial control, not a candidate that the instrument must somehow promote/reject from replay score alone.
+
+This file remains **PAUSED**. These corrections do not resume or execute its harness changes.
+
 ## Pause correction — Manifest Reconciliation Passes 1–2
 
 This plan is **not executable as originally written** until it is replanned from the certified foundation.
@@ -188,7 +202,7 @@ firing inside the instrument built to prevent `F5`.
 
 | | fires when |
 |---|---|
-| **`F1`** | **The graphics carry no retention rule either.** Every graphics candidate discovers and retains nothing, or retains only through a predicate I supplied. Then the predicate is in neither the machine nor the source of record, and **it is the human's to write.** Report it as the result; **do not invent one** |
+| **`F1`** | **The graphics carry no complete RM-A/RM-B/RM-C rule.** Every graphics candidate is silent on one or more GAP faces, retains only through an editor predicate, or supplies only persistence/re-entry. Then the **source-of-record result is silence/partial coverage**. Do **not** jump from that silence to “the human must write it”: the research family remains eligible candidate machinery through SM-X-RES, while platform machinery remains fenced from semantics. |
 | **`F2`** | **The new cheat is not caught.** `SidecarMemory` passes replay and scores on the oracle. Then replay purity is **not** a sufficient executable form of the compression rule, and **the instrument is the finding** — as it was in pass 3 |
 | **`F3`** | **The harvest returns only A5 and the D-row-`0004` touch.** The graphics are no richer than what the campaign already holds; pass 3 §8 item 2 is answered **no**, and the two working candidates were the whole graphics contribution |
 | **`F4`** | **A transcription and its PNG disagree** on a panel carrying retention language. Then a graphics-derived claim in this tree rests on a reading the source does not support. Stop, mark it, report it, and prefer neither |
@@ -229,8 +243,8 @@ wants one found. The pressure to round a silence up into a predicate has never b
 
 ## 9. Not this pass
 
-The research family. The platform family. Cross-family comparison. **Answering the retention `[GAP]`** — pass 3
-built the instrument that can ask; pass 4 asks the source of record; answering remains the human's.
+The research family. The platform family. Cross-family comparison. **Answering the retention `[GAP]`.**
+This paused graphics harvest, if later replaced and executed, may report source silence or partial RM-A/RM-B/RM-C coverage. **Research remains the next eligible candidate family through SM-X-RES; platform remains feasibility-only under SM-X-PLAT.** Human ruling/design is a later possibility if evidence remains insufficient, not the automatic consequence of graphics silence.
 
 ---
 
