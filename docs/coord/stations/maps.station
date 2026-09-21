@@ -1,7 +1,7 @@
-STATUS: FREE
+STATUS: HELD
 STATION: maps
 OWNS: docs/reason-model-map.md docs/rust-nostd-*.md docs/atomic-primitives-map.md docs/clock/gearing-code-1to1.md docs/coherence-audit*.md docs/clock/system-mathematical-model.md docs/defrag-plan.md docs/plans/** docs/namespace-register.md docs/*.md (catch-all: any unmatched file at the docs/ root)
-AGENT: -
-BASE: -
-SINCE: -
-NOTE: Pass 6 maps content reconciliation paused only to correct two verification-found current-stale subordinate lines: docs/prompts/context-pass.md and docs/kit/roles.md. Core maps/Rust/global ASCII reconciliation already written; maps will be reclaimed after subordinate fixes and global ASCII re-touched last. No findings/index closure yet. coord.sh NOT_RUN.
+AGENT: Astra-sampling-reconcile
+BASE: d0f19abd3699ea6eb1d7f725b17cb23f7336ae9b
+SINCE: 2026-09-21T20:35:00Z
+NOTE: Pass 6 final maps closure. Verification-found prompt/kit stale lines corrected under their owners. Reclaim maps to re-touch global systems ASCII as the final non-receipt content edit, then findings/index/stale classification/final tree and release. No further model/control content changes permitted after ASCII unless a falsifier fires. coord.sh NOT_RUN.
