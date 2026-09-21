@@ -24,7 +24,7 @@
 |  KEEP-read: host/GPU mechanics for Shadow projection / hologram.     |
 |  ASCII fences = Spec/API-side glyphs ONLY; stamps live UNDER fences. |
 |  No src/ until pointer-emission accepted.  One strand.               |
-|  Status: Pass 4+5 EXECUTED (Order Proposal Shadow). Emission [GAP]. |
+|  Status: Pass 4+5 EXECUTED (Order Proposal Shadow). WebGPU supplies no Lace retention rule; current retention/materialization [GAP]. |
 +======================================================================+
 ```
 
