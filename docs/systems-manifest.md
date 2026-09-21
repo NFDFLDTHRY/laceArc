@@ -499,6 +499,31 @@ longrightarrow
 	ext{retained POINTER topology / addressable sampled operand}.
 ]
 
+Manifest Reconciliation Pass 4 decomposes the **question**, not the catalog, into three subquestions:
+
+#### RM-A — RETAIN?
+
+- **Input:** sampling-derived structural evidence.
+- **Question:** what authority-backed condition warrants retaining that structure as Lace?
+- **Output if answered:** a retention decision or retained-relation description precise enough to continue toward a legal append.
+- **Must not be supplied by convenience:** semantic/embedding similarity, adjacency, “retain every cell,” future knowledge, oracle lookup, or an editor-chosen threshold with no stated authority.
+
+#### RM-B — MATERIALIZE?
+
+- **Input:** a selected structure that may still exist only as an ephemeral sampling object.
+- **Question:** how is that selected structure grounded/resolved into one or more addressable 1D Lace operands?
+- **Known machinery:** SM-C19 can ground a finite **already-selected and addressable** sample by repeated SM-C05 Join.
+- **Still open:** how an ephemeral sample crosses into that addressable domain when retention warrants it.
+
+#### RM-C — ROLE / ORDER?
+
+- **Input:** a candidate retained relation whose physical Join is ordered.
+- **Question:** where do any required ordered operand roles come from?
+- **Constraint:** chronology is not a universal role rule; D1's explanatory `ref_A/ref_B` ordering may score a candidate but may not be imported as hidden evidence into a D1-blind candidate.
+- **Scope:** RM-C may be candidate-specific rather than one universal subject/target theorem.
+
+RM-A / RM-B / RM-C are **subquestions of this one GAP**. They are not L-M mechanisms, row kinds, APIs, or implementation modules. A candidate may cover only part of the socket; partial coverage must be reported as such.
+
 Known constraints:
 - RootTouch is the closed special case and does not generalize this rule.
 - Not every sampled cell is retained.
@@ -507,6 +532,10 @@ Known constraints:
 - B8 source permanence applies **after** a touch exists; it does not select a sampled touch.
 - D1 witnesses retained POINTER states but does not provide the universal selection rule.
 - No semantic chooser, external relation-write API, source-book analogy, or platform primitive may fill this gap by convenience.
+
+---
+
+## Relational Mapping (Second Pass)
 
 ---
 
@@ -724,7 +753,7 @@ Intended use of the four graphics together: A = growth story; B = 3D mechanism; 
 
 ## Open Questions or Remaining Design Degrees of Freedom
 
-1. **[GAP] Word identity / tokenization:** boundaries, punctuation, case, \`PIE\` vs \`pie\`, multiword names.
+1. **[GAP] Word identity / tokenization:** boundaries, punctuation, case, `PIE` vs `pie`, multiword names.
 2. **[GAP] Sampling-derived retention / materialization:** sampling discovery and binary Join are reconciled; the exact general retain-when condition and the grounding/resolution of an ephemeral sampled operand remain open. No semantic chooser or external relation-write interface is introduced.
 3. **[GAP] Document / conversation / provenance boundaries:** D still stores only WORD and POINTER/Join; no boundary row type is established.
 4. **General traversal / query remainder:** star-search structural reads are now mapped as derived lexical/pattern/pointer/star-hop frontiers, but no general Core retrieval/write-query interface is established; geometry/route-family traversal questions outside that mapped read remain open.
@@ -732,9 +761,39 @@ Intended use of the four graphics together: A = growth story; B = 3D mechanism; 
 6. **Projection/geometric remainder:** storage participation is represented by WORD + binary Join ancestry. Exact rendered over/under coordinates remain projection concerns, not Core row fields.
 7. **Adjacent references:** Kauffman materials remain adjacent reference only; no knot rewrite axioms are imported into Lace.
 8. **No multi-Lace / snapshot / export rule is given.**
-9. **Operand ordering:** physical Join preserves an ordered pair. D1 shows \`ref_A\` as the described subject in its six examples; no universal semantic subject chooser is admitted. Task-specific ordered-operand/slot proof remains required where retention uses it.
+9. **Operand ordering:** physical Join preserves an ordered pair. D1 shows `ref_A` as the described subject in its six examples; no universal semantic subject chooser is admitted. Task-specific ordered-operand/slot proof remains required where retention uses it.
 10. **[GAP] Eventual reference:** D1 happens to reference every row except newest; no rule requires every row to be used later.
 11. **[GAP] C6 route-family labels:** dictionary/document/conversation/provenance are views/families; no stored discriminator is defined.
+
+### Current Open Interface Dependency Classification — Manifest Reconciliation Pass 4
+
+This classification answers only **whether a bounded D1 retention/materialization experiment requires a global answer to each open**. It does not close any open.
+
+| Open / proposal | Lab dependency class | Bounded specimen treatment |
+|---|---|---|
+| **SM-GAP-RM / question 2** | **LAB TARGET** | no freeze; this is the socket under investigation |
+| **G1 / question 1** | **LAB CONDITIONAL** | exact D1 supplied tokens/identities may be frozen for the specimen; no lowercase/stemming/tokenizer rule follows |
+| **question 3 + question 11 route-family/boundary labels** | **LAB CONDITIONAL / otherwise orthogonal** | absent from the base D1 retention specimen; a candidate using them must declare and ground the added premise |
+| **question 4 traversal/query remainder** | **LAB CONDITIONAL** | base candidate may avoid SM-C21; a candidate consuming search must cite its exact read/replay contract |
+| **question 9 operand role/order** | **LAB CONDITIONAL / candidate-specific** | ordered roles must come from admitted candidate inputs/derivation; D1 oracle labels cannot be imported secretly |
+| **question 5 concurrency** | **ORTHOGONAL** | bounded Lab runs serially |
+| **question 6 projection geometry** | **ORTHOGONAL** | render coordinates are not candidate inputs |
+| **question 8 multi-Lace/snapshot/export** | **ORTHOGONAL** | one bounded Lace prefix |
+| **question 10 eventual reference** | **ORTHOGONAL** | future rows are unavailable to the candidate and cannot justify retention |
+| **question 7 adjacent references** | **AUTHORITY FENCE** | external source machinery enters only through SM-X + Lab and cannot close the socket by citation |
+| **R3 residence/recovery / Carrier** | **IMPLEMENTATION / APP** | in-memory bounded specimen |
+| **R4 capacity/refusal custody** | **IMPLEMENTATION / APP** | bounded specimen is assumed to fit; no resource-policy ruling follows |
+| **R9 frontier publication/concurrency** | **IMPLEMENTATION / APP** | serial evaluator; no memory-order conclusion follows |
+| **R10 WebNN projection proposal** | **APPLICATION PROPOSAL** | excluded from base retention experiment |
+| **Open #15 seed corpus** | **APPLICATION / DATA** | D1 itself is the fixed specimen |
+| **pointer-emission human acceptance** | **ACCEPTANCE GATE** | still required before Core implementation; not required for documentation/Lab evidence |
+| **concrete encoding/resource/failure proof** | **IMPLEMENTATION** | abstract current row objects only |
+
+**Bounded-freeze rule:** an open does not block the base Lab when holding it fixed to the exact specimen leaves the validity of the retention experiment unchanged. A candidate may pull a conditional open into scope; that candidate must declare and justify the extra premise before execution.
+
+**Important:** freezing an open for one specimen is not architectural closure. G1, route-family boundaries, concurrency, traversal remainder, operand-role questions, and the other listed degrees of freedom retain their existing global status.
+
+### Pointer-emission status after SAMPLING / DENSITY / EMERGENCE Pass 6
 
 ### Pointer-emission status after SAMPLING / DENSITY / EMERGENCE Pass 6
 
@@ -757,6 +816,14 @@ The old broad “pointer emission remains unanswered” statement is superseded.
 - the other independent questions above.
 
 **Acceptance:** [\`pointer-emission.md\`](pointer-emission.md) remains a reconciled draft and still requires explicit human acceptance before implementation authorization.
+
+---
+
+## Manifest Reconciliation Pass 4 — Lab-admission qualification
+
+The current manifest now distinguishes the **one Lab target** (SM-GAP-RM), **candidate-specific conditional opens**, and **orthogonal implementation/application opens**. RM-A/RM-B/RM-C refine the question surface without creating mechanisms. The bounded D1 experiment may freeze token identity, concurrency, projection, route-family metadata, residence/capacity and seed-corpus questions at the specimen boundary without claiming they are solved globally.
+
+This qualification adds **no retention predicate**, **no write authority**, **no acceptance**, and **no new L-M mechanism**. The inherited Lab Source Architecture Pass 4 remains paused until a replacement experiment is explicitly planned against this envelope.
 
 ---
 
