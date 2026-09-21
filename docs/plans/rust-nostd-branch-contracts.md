@@ -1,6 +1,8 @@
 # CLIPBOARD — laceArc no_std branch contracts
 
 **Status: PLAN / PROPOSAL. Seven prose cards. No implementation acceptance. Current draft-law premise: binary Join + human-ruled sampling architecture; exact sampling-derived retention/materialization remains [GAP]. SearchHandle/search expansion remain maps-level derived reads, not accepted branch contracts.**
+
+**Manifest Reconciliation Pass 2 qualification:** Pass 32 distinguishes persistent Contract-I state, thin arrival, **derived sampling/search working machinery**, and read-only projection. These seven future branch cards are still only an implementation-decomposition proposal. Their lack of a sampling/search branch does not erase SM-C20/SM-C21, and it does not authorize adding such a branch here. No card owns SM-GAP-RM; no card may demote the H7–H12 sampler to a projection or hide retention/materialization in glue.
 Shelf note (defrag pass 2): this file is the **serial birth cards**. The crate tree is `docs/plans/rust-nostd-crate-map.md`. Neither authorizes implementation or supplies the still-open retention/materialization rule.
 
 Repository destination: `docs/plans/rust-nostd-branch-contracts.md`.
@@ -350,12 +352,12 @@ unresolved pairs such as PIE/pie; it is not a default normalization rule.
 - **Earlier reference** is a constraint, not a raw integer blessed as a reference. For a POINTER entry at j, both operands must already exist on that line and have indices less than j. Self, forward, missing and external targets cannot inhabit the admitted reference state.
 - WORD and POINTER are both permitted operand kinds (D3/D6). This constrains type, not which retained relation/sample should be asserted.
 - **Binary arity is now a premise, not a branch choice:** the governing Join has exactly two ordered operands. The card must not substitute unary, variable-length, optional-slot, or heap-backed layouts.
-- **Semantic operand/subject choice remains outside pointer/.** Join preserves the ordered selected pair; the still-open retention/materialization rule/relation assertion is responsible for supplying that ordered pair. D1's six examples remain evidence that chronology alone is not the semantic ordering rule.
+- **Operand role/order remains outside pointer/.** Join preserves the ordered pair supplied by a lawful retained relation; `pointer/` neither discovers that relation nor infers subject/target roles. D1's six examples show that chronology alone is not a universal role/order rule. The active write-adjacent gap is the sampling-derived retention/materialization boundary, not an arbitrary semantic chooser.
 - The concrete Rust encoding and proof mechanism for carrying existing/same-line/earlier evidence remain unstated and must be proven at later composition. This card invents no arbitrary operand chooser or unchecked builder.
 
 #### Must not own
 
-- Append authority, an retention/materialization rule, semantic target discovery, star matching, arrival decisions, an unchecked POINTER factory, a reference side table, or a rule that invents a relation from adjacency/touch/grab.
+- Append authority, a retention/materialization rule, sampling/relationship discovery, star matching, arrival decisions, an unchecked POINTER factory, a reference side table, or a rule that invents a relation from adjacency/touch/grab.
 
 #### Public surface (names only — no signatures that emit)
 
@@ -447,7 +449,7 @@ unresolved pairs such as PIE/pie; it is not a default normalization rule.
 - Compose the three earlier branch contracts at their exact proved
   revisions. Keep their resource and failure preconditions visible.
 - This conditional storage step does not prove a complete arrival-to-Lace
-  mechanism. The remaining arbitrary retention/materialization decision cannot be smuggled into an
+  mechanism. The remaining **sampling-derived retention/materialization boundary** cannot be smuggled into an
   input constructor or caller. Proof status: `UNESTABLISHED`.
 
 #### no_std / alloc
@@ -457,7 +459,7 @@ unresolved pairs such as PIE/pie; it is not a default normalization rule.
 
 #### Emission contact
 
-- **Retention/materialization [GAP] outside route/.** Continue is not an retained relation chooser. This plan assigns the still-open relation/sample selector to no helper or branch. Acceptance of the reconciled law would
+- **Retention/materialization [GAP] outside route/.** Continue is not a retention decision. This plan assigns the still-open sampled-evidence → retained/addressable transition to no helper or branch. Acceptance of the reconciled law would
   still require explicit reconciliation of that unassigned responsibility.
 
 ### branch: view_star/
@@ -708,7 +710,7 @@ REQUIRED OUTLINE: docs/prompts/pointer-emission-prompt.md
                             |
                             v
 POINTER CONTRACT: docs/pointer-emission.md
-        currently reconciled DRAFT / not accepted / arbitrary retention/materialization [GAP]
+        currently reconciled DRAFT / not accepted / exact sampling-derived retention/materialization [GAP]
                             |
               exact content accepted by human?
                    NO: stay in docs/review
@@ -743,7 +745,7 @@ next is permitted. These boxes are intentionally unchecked:
 - [ ] Zero crates.io or other external dependencies; all required first-party callees have exact proved revisions.
 - [ ] Shoe test: the operation is doable to the lace while retaining every old pass; actual physical evidence is identified without claiming an unperformed test.
 - [ ] Exact sampling-derived retention/materialization remains `[GAP]` in this plan: no branch invents it, supplies a retention stub, or treats binary Join type validity as permission to retain a relation.
-- [ ] The independent implementation gate is genuinely open for the exact work: human-accepted pointer prose and every premise needed by this birth are present. If arbitrary retention/materialization ownership or another required premise is unresolved, this box cannot pass.
+- [ ] The independent implementation gate is genuinely open for the exact work: human-accepted pointer prose and every premise needed by this birth are present. If sampling-derived retention/materialization ownership or another required premise is unresolved, this box cannot pass.
 - [ ] No extra store, intern collapse, projection write path, permanent prohibition breach or hidden second task appears.
 - [ ] The human's requirement for a written proof note in `docs/`, if imposed before the next birth, has been met and the human has allowed that transition. Record the requirement and its source; do not manufacture a blanket acceptance.
 
@@ -764,7 +766,7 @@ or a grant of permission.
 |---|---|---|
 | RootTouch append | Current law H1 + D1 0003/0004 | **settled current premise:** seen occurrence + Join(new occurrence, root) |
 | POINTER arity / layout | Current pointer-emission reconciliation + D2/D1 | **settled current premise:** binary Join(a,b); no unary/variable-length default |
-| Ordered semantic operands for an arbitrary asserted relation | D1 + current Join | Join consumes an ordered pair; **which retained relation/subject supplies that order remains part of retention/materialization [GAP]** |
+| Ordered operand roles for a retained relation | D1 + current Join | Join preserves an ordered pair once a retained relation is lawful/addressable. **Chronology does not determine universal subject/target role; task-specific role/order proof remains separate from the active sampling-derived retention/materialization [GAP].** |
 | Adjacency trigger | Current pointer-emission reconciliation / D1 | **settled false:** adjacency alone does not emit Join |
 | Word identity, case, stem, homograph and segmentation | Pieces 3–4; A6–A7; reason-map open questions | `[GAP]`; no normalization or tokenizer choice |
 | Sampling-derived retention/materialization | Current manifest / pointer-emission | **[GAP]** exact retain/materialize rule. Earlier/same-line legality and WORD/POINTER operand kinds are settled constructor premises |
