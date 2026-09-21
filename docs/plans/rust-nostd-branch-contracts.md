@@ -130,12 +130,16 @@ anti-import boundaries; it does not reopen the five-stake mapping.
    section 4 closes POINTER-to-POINTER permission and rejects WORD-only
    targeting, agreeing with Graphic D3/D6, Piece 5 and AGENTS.md. The
    earlier conflict is not a current blocker. Later ROOT / TOUCH / FOLD reconciliation also fixes the governing physical constructor as binary Join and the repeated-word RootTouch path. The pointer card still must not invent sampling-derived retention/materialization, semantic operand choice, implementation timing ownership, or a proof procedure for “earlier.”
-3. **View-store conflict.** Manifest Piece 13's implementation paragraph
-   permits graph databases, embedding spaces and definition tables as
-   disposable views. The staking law forbids those stores; Graphic D4
-   says the 3D view is not stored in the main data structure. These
-   contracts authorize only read-only views, with no such tables or
-   databases. Calling a forbidden store a cache does not admit it.
+3. **View-store conflict — SUPERSEDED as a current manifest conflict.** An
+   older Piece-13 implementation paragraph permitted graph databases,
+   embedding spaces and definition tables as disposable views. Current
+   Piece 13 / SM-C15 no longer grants that permission: projection reads
+   Lace, cannot write back, and may not own relation truth. Piece 14 /
+   SM-C16 separately forbids embedding-as-truth and authoritative side
+   registries; the staking law still forbids graph DB / embedding store /
+   Star table. These cards therefore authorize only read-only derived
+   views and no such stores or tables. Historical R10 records may retain
+   the old conflict as dated evidence; it is not a current contract split.
 4. **Gate wording differs.** The law document's introduction mentions file
    existence, while its Implementation Law block requires human acceptance.
    AGENTS.md and CONTRIBUTING.md also require acceptance. The full gate
