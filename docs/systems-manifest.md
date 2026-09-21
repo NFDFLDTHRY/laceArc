@@ -153,9 +153,9 @@ These are not retroactive quotes from the PNGs. Where the graphics are silent, t
 
 - **Kind:** Mechanism / Formation
 - **Source location:** A5, A12; B2–B3, B9; C4, C6, C8; D4–D5; H1/H4
-- **Purpose:** Be the persistent accumulated formation around one word/root.
+- **Purpose:** Be the persistent accumulated formation around one word/root and the natural read anchor for derived structural search.
 - **Inputs:** WORD occurrences plus retained Join participation that threads them.
-- **Outputs:** A richer formation through which later wire can participate.
+- **Outputs:** A richer formation through which later wire can participate; a derived search anchor into repeated multi-scale samples and retained POINTER paths.
 - **Preconditions:** First occurrence establishes the root. Later same-value occurrences remain distinct WORD rows.
 - **Effects:** Later occurrences RootTouch the root; later Join rows may include those touches and other grounded points.
 - **Invariants:**
@@ -165,7 +165,7 @@ These are not retroactive quotes from the PNGs. Where the graphics are silent, t
   - no Star table or Star row type.
 - **Failure modes / breakdown conditions:** Collapse to one node; split by document; stored gloss; sample registry; external star graph.
 - **Boundary & Coupling:** WORD/root anchors lexical identity. Join carries participation. C6 route-family names remain views and do not become fields on the star.
-- **Implementation implications:** Star is a derived/indexical structural read over WORD values and Join ancestry. G1 equality still governs root membership.
+- **Implementation implications:** Star is a derived/indexical structural read over WORD values and Join ancestry. Sampling/search may derive lexical, repeated-pattern, retained-path, and neighboring-star frontiers from it, but no Star table/index becomes authoritative. G1 equality still governs root membership.
 - **Metaphor / diagnostic role:** Persistent threaded star.
 - **Key source language:** “Each word’s star is its persistent 3D identity.” “The star is not a point. It is an accumulated 3D formation.”
 
@@ -228,10 +228,27 @@ These are not retroactive quotes from the PNGs. Where the graphics are silent, t
 - **Effects:** **RootTouch = Join(new occurrence, root).** General grounding uses the same Join constructor. A Join may name prior Join points, producing points-of-points.
 - **Invariants:** Touches are permanent; relations can participate in relations; no separate event log or edge table.
 - **Failure modes / breakdown conditions:** Attach-only hub; dropping touches; separate relationship objects; semantic chooser hidden in Join.
-- **Boundary & Coupling:** Geometric “thread through” and storage Join are two presentations of participation. The constructor is settled; arbitrary non-root relation-assertion provenance / authority remains [GAP].
-- **Implementation implications:** Future appends may name any selected earlier WORD/POINTER pair. One physical constructor suffices.
+- **Boundary & Coupling:** Geometric “thread through” and storage Join are two presentations of participation. The constructor is settled. Human rulings H7–H12 make sampling, not an arbitrary semantic chooser, the discovery mechanism. The exact sampling-derived retention/materialization condition remains [GAP].
+- **Implementation implications:** Future retained POINTERs may name earlier WORD/POINTER points across sampling scales. One physical constructor suffices; the general rule deciding when sampled structure is retained and how an ephemeral sampled operand is grounded remains open.
 - **Metaphor / diagnostic role:** Threading / re-entry / nested participation.
 - **Key source language:** “A touch becomes material for future Lace.”
+
+### Cross-piece amendment — Derived 2D Sampling Surface
+
+- **Kind:** Derived working surface / Read-compute machinery
+- **Authority:** Human rulings H7–H12 plus SAMPLING / DENSITY / EMERGENCE Passes 1–5. This is **not** claimed as text recovered from Graphic C.
+- **Purpose:** Sample growing Lace/text across source position and sample scale so recurring / overlapping structure becomes discoverable without a semantic chooser.
+- **Inputs:** The authoritative one-dimensional Lace, WORD/root identity under G1, and retained POINTER ancestry where present.
+- **Outputs:** A reconstructible position × scale sampling surface, recurrence/overlap evidence, and anchor-local structural frontiers.
+- **Invariants:**
+  - the 2D sampling surface is derived working state, not a second authoritative store;
+  - not every sampled cell becomes a retained row;
+  - structures at different sample scales may later participate through ordinary POINTERs;
+  - exact recurrence is not the universal retention rule;
+  - search reads from the sampler / POINTER topology and cannot write Lace.
+- **Open boundary:** the exact sampling-derived retention/materialization rule remains **[GAP]**, including how an ephemeral sampled structure becomes an addressable 1D operand when retention requires it.
+- **Search consequence:** a star may be used as a derived search anchor; disposable replay handles can be reconstructed from an immutable Lace prefix. These are read artifacts, not Core row types or persistent indexes.
+- **Not Piece 12:** Graphic-C dimensional presentation remains a projection/view of retained participation. The sampling surface and the dimensional projection are distinct derived objects.
 
 ### Piece 12 — Dimension (independent participation axis)
 
@@ -348,16 +365,16 @@ where \(\rho\) denotes an already-specified ordered relation/sample. It is analy
 
 RootTouch has closed provenance under H1: new occurrence + root.
 
-For arbitrary relations/samples:
+For sampling-derived non-root participation:
 
-- an automatic Core-derived selector from \(L,v\): **NOT ESTABLISHED / BLOCKED by current evidence**;
-- Contract-II hidden relation/sample channel: **REFUSED** by the current raw-word interface;
-- general query/write assertion surface: **BLOCKED**, not source-specified;
-- route/document boundary as provenance metadata: **BLOCKED**, boundaries are not stored/defined;
-- relation assertion supplying its ordered operands: **ADMITTED as constructor precondition**;
-- **what authoritatively originates / owns that relation assertion remains [GAP]**.
+- a semantic/arbitrary Core chooser is **not the intended current model** under H7–H12;
+- Contract-II hidden relation/sample payload remains **REFUSED** by the raw-word interface;
+- a general Core relation-write/query assertion surface remains **BLOCKED**, not source-specified;
+- route/document boundaries remain separate open questions and are not promoted to retention metadata;
+- the 2D sampling surface supplies derived structural evidence, not write authority;
+- **the exact condition that retains a POINTER, and the exact grounding step for an ephemeral sampled operand when needed, remain [GAP]**.
 
-Pass 6 tested stronger automatic punch-card readings against D1. Mandatory whole-prefix grounding after every arrival, one persistent active-sample ladder, and automatic materialization of every possible finite portion do not reproduce D1 as universal rules. This narrows the gap to provenance/authority without proving an external interface.
+The earlier ROOT / TOUCH / FOLD Pass 6 provenance result is retained as historical narrowing of the then-assumed arbitrary-relation question. Later H7–H12 and SAMPLING / DENSITY / EMERGENCE Passes 1–5 supersede that assumption as the active problem. Mandatory whole-prefix grounding, one persistent active-sample ladder, automatic materialization of all portions, exact-repeat-only retention, and first-seen-every-cell retention are all rejected as universal rules.
 
 ### Failure propagation
 
@@ -373,7 +390,7 @@ Pass 6 tested stronger automatic punch-card readings against D1. Mandatory whole
 - Geometric thread/touch and storage Join are presentations of one participation act.
 - Root identity and definition route are coupled but not identical: WORD/root anchors identity; definition Join structure participates around it.
 - More dimensions are more recursive participation paths, not more storage dimensions.
-- Continue means the construction remains open-ended; it does not supply the missing arbitrary relation selector.
+- Continue means the construction remains open-ended; it does not supply the still-open sampling-derived retention/materialization rule.
 
 ---
 
@@ -383,7 +400,7 @@ Pass 6 tested stronger automatic punch-card readings against D1. Mandatory whole
 
 The system composes as one operator over one store:
 
-`arrive → append section → participate in existing sections by routing/pointing → continue`
+`arrive → append WORD / RootTouch as ruled → derive multi-scale samples → discover recurring structure → [OPEN retain/materialize] → append POINTER participation → continue`
 
 All named capabilities (dictionary, document, conversation, provenance, 4D axes, touches) are applications of that operator.
 
