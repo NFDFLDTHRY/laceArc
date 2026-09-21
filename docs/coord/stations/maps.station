@@ -1,7 +1,7 @@
-STATUS: HELD
+STATUS: FREE
 STATION: maps
 OWNS: docs/reason-model-map.md docs/rust-nostd-*.md docs/atomic-primitives-map.md docs/clock/gearing-code-1to1.md docs/coherence-audit*.md docs/clock/system-mathematical-model.md docs/defrag-plan.md docs/plans/** docs/namespace-register.md docs/*.md (catch-all: any unmatched file at the docs/ root)
-AGENT: Astra-star-search
-BASE: 188d83d9851b232536ca4c6f4db4e79b6238e661
-SINCE: 2026-09-21T02:15:00Z
-NOTE: User-directed SAMPLING / DENSITY / EMERGENCE Pass 3 planning. Test star system as read-only search entrypoint. Primary anchor QUESTION in full Coffee Cup corpus: trace occurrence cone, repeated multi-scale anchored patterns, extension/branch structure and support. D1 PIE is retained-pointer control using direct vs transitive Reach participation. Explicitly test saturation/overreach. No retention rule, law edit, src/Cargo. Connector claim; coord.sh NOT_RUN.
+AGENT: -
+BASE: -
+SINCE: -
+NOTE: Astra-star-search SAMPLING / DENSITY / EMERGENCE Pass 3 PLAN committed at eaaa988673a602e068b95df0500e88a7deb59d76; plans index 9dc34ee3801468ff5ea578cd2e3f5a6905ea2763. Pass 3 not executed. Primary anchor QUESTION in full Coffee Cup: 7 occurrences, five in repeated ANSWERS ONE QUESTION ONLY scaffold plus two Quiet End QUESTION IS occurrences. Plan tests star as layered read-only search surface: lexical occurrences, anchored multi-scale recurrence cone/extension DAG, exact branch fan-out, star intersection, one word→pattern→word hop. D1 PIE is retained-pointer control using direct/transitive Reach, minimum pointer distance and saturation. No retention/ranking/law edit. No src/Cargo. coord.sh NOT_RUN.
