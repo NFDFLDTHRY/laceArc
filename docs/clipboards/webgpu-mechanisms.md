@@ -2,7 +2,7 @@
 
 **Current source correction, 2026-09-20 — repository update pass 3:** M-G8 now distinguishes the GPUQueue IDL on PDF **218** from submit scheduling/nonreuse prose on PDF **222**. Both pages were visually inspected from the supplied PDF; see the [bounded correction receipt](webgpu-clipboard.md#repository-update-pass-3--submit-source-locators). Earlier sighting-method rows and campaign receipts remain dated records. No algorithm or campaign status changes.
 
-**Status:** Pass 3 EXECUTED (Wave A **M-G1…M-G9**; P3-M mesh on clipboard). Pass 4 ASCII: see [`webgpu-ascii-machinery.md`](webgpu-ascii-machinery.md) (**P-G1…P-G9**). Algorithms unchanged. Emission `[GAP]`.  
+**Status:** Pass 3 EXECUTED (Wave A **M-G1…M-G9**; P3-M mesh on clipboard). Pass 4 ASCII: see [`webgpu-ascii-machinery.md`](webgpu-ascii-machinery.md) (**P-G1…P-G9**). Algorithms unchanged. WebGPU supplies no Lace retention rule; current sampling-derived retention/materialization remains `[GAP]`.  
 **Source:** *WebGPU* — **W3C Candidate Recommendation Draft, 15 September 2026**. Editors: Kai Ninomiya, Brandon Jones, Jim Blandy (et al.).  
 **PDF:** `refs/local/webgpu-crd-20260915.pdf` → attachment `6bc31a9e21074a039a5c854f1bfc33bdbf282cd8b48e22a4977ca406ca64afe1` (**321** pp., text layer; **never git-add**). SHA-256 `6bc31a9e21074a039a5c854f1bfc33bdbf282cd8b48e22a4977ca406ca64afe1`. PDF one-based primary.  
 **Sighting this pass:** `pdftotext -f N -l N -layout` on §4 Adapter/Device · §5 Buffer/map · §6 Texture · §8 BindGroup · §9 WGSL · §12–13 CmdBuf/encoder · §16 Dispatch · draw IDL · §19 Queue submit · §21 Canvas · §22 errors; Pass 1–2 pins reused.  
