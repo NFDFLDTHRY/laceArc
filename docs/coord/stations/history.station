@@ -1,7 +1,7 @@
-STATUS: HELD
+STATUS: FREE
 STATION: history
 OWNS: docs/history-recovered* docs/history/**
-AGENT: Astra-manifest-reconcile-p2
-BASE: be7423e57febec9257077fa3f6df0a48597435e3
-SINCE: 2026-09-21T22:29:13.959Z
-NOTE: Manifest Reconciliation Pass 2 history wave: preserve executed evidence bodies; add current reader qualification for later A6/B4 provenance correction and current canonical routing.
+AGENT: -
+BASE: -
+SINCE: -
+NOTE: Manifest Reconciliation Pass 2 history wave COMPLETE. Executed relationship-evidence bodies preserved unchanged; history README now carries the current A6/B4 and B10/B11 provenance correction and routes current readers to Pass 32/contract registry. Current gap wording narrowed to sampling-derived retention/materialization.
