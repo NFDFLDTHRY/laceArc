@@ -1,6 +1,6 @@
 # SAMPLING / DENSITY / EMERGENCE campaign - Pass 3 PLAN
 
-**Status:** PLAN - NOT EXECUTED.
+**Status:** **EXECUTED 2026-09-21 - PASS 3 COMPLETE.**
 **Name:** STAR SEARCH / ANCHORED PATTERN CONE
 **Planning station:** maps (Astra-star-search).
 **Pinned main before claim:** 188d83d9851b232536ca4c6f4db4e79b6238e661.
@@ -1063,3 +1063,55 @@ Ask what repeatedly grows around it at n=2, n=3, n=4, n=5...
 Then follow the actual retained POINTER paths that include it.
 
 If the star is useful for search, it should expose repeated structure and its branches without needing a meaning table.
+
+
+---
+
+## 27. Execution receipt
+
+Pass 3 executed under maps.
+
+- execution claim: 4d71e05e4ef6194cccc77e0f3a7c8dfcf2e64339
+- findings: e26d026c3f623dc4cc9b676ec4a4fc71bc5bfe70
+
+### Result
+
+Star search is admitted as a layered read model:
+
+\[
+StarSearch(a)
+=
+Lexical(a)
++
+AnchoredPatterns(a)
++
+PointerPaths(a).
+\]
+
+QUESTION:
+- 7 occurrences;
+- exact repeated anchored patterns through n=5;
+- five-support ANSWERS ONE QUESTION ONLY trunk;
+- recurrent WHEN/WHAT branches;
+- separate QUESTION IS branch.
+
+D1 PIE:
+- all 6 POINTER rows transitively participate in PIE;
+- flat transitive star therefore saturates 100% of D1 pointers;
+- minimum distance and actual/alternative path witnesses recover structure.
+
+### Pass-4 leftovers
+
+Only:
+- progressive bounding/frontiers;
+- nested recurrence compression;
+- path preservation;
+- star-hop expansion;
+- structural ordering without semantic scalar scores;
+- minimal derived search-result contract.
+
+Star-search viability itself is no longer open.
+
+No law edits.
+No retention/ranking rule.
+No implementation.
