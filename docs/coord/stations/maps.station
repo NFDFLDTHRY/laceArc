@@ -1,7 +1,7 @@
-STATUS: FREE
+STATUS: HELD
 STATION: maps
 OWNS: docs/reason-model-map.md docs/rust-nostd-*.md docs/atomic-primitives-map.md docs/clock/gearing-code-1to1.md docs/coherence-audit*.md docs/clock/system-mathematical-model.md docs/defrag-plan.md docs/plans/** docs/namespace-register.md docs/*.md (catch-all: any unmatched file at the docs/ root)
-AGENT: -
-BASE: -
-SINCE: -
-NOTE: Astra-search-contract SAMPLING / DENSITY / EMERGENCE Pass 5 COMPLETE. Execution claim 78d56eccb4efc24ced3f728de3b81c3757804eb3; findings e4d7ba168c509cbfe0b9f8c126d29d8f11112eb4 + final verification 6f7b6e593b276019c977666997a99c4400b0fae7; plan close 7353fd1a047a977670af0d102818c8012e27fbe1; index 685c8308bc7b842d0eb884533da1d8e1afbf05a9. Result: minimal disposable replay handle SearchHandle=(through,anchor,item). Pattern hit shrinks to n+one exemplar start; pointer hit shrinks to target; support/occurrence lists/witness rows/edges/distance/paths derive from Lace. Local reconstruction exactly reproduces Pass-4 frontiers using QUESTION 105, ANSWERS 75, IS 1297 anchored cells versus 743,590 full Coffee cells; D1 PIE recovered by one forward scan with no reverse index. Actual leftovers: law/model/global-ASCII reconciliation/propagation, later engineering efficiency/caching, optional cross-Lace identity if portability is required. 20/20 proof board. No subpasses, no law edit, no src/Cargo/Rust. coord.sh NOT_RUN.
+AGENT: Astra-sampling-reconcile
+BASE: 17236ca14c8278e384b0ac8fa5d3f0762523c1c7
+SINCE: 2026-09-21T03:00:00Z
+NOTE: User-directed SAMPLING / DENSITY / EMERGENCE Pass 6 planning. One reconciliation/propagation pass, no subpasses. Plan sequential station handoffs law→graphics→prompts→kit→clipboards→maps, with maps/global systems ASCII last after subordinate control surfaces. Correct active chooser-era Origin(rho)/arbitrary-selection framing to human-ruled sampling architecture while preserving exact unresolved retention/materialization rule, G1, acceptance gate, and all historical/source-silence receipts. No implementation. Connector claim; coord.sh NOT_RUN.
