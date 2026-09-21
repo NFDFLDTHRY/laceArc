@@ -1,6 +1,6 @@
 # Mathematical execution model - ROOT / TOUCH / FOLD campaign - Pass 4 PLAN
 
-**Status:** PLAN - NOT EXECUTED.
+**Status:** **EXECUTED 2026-09-20 — PHASES A/B/C COMPLETE**.
 **Planning station:** maps (Astra-math).
 **Pinned main before claim:** d3f66a7ac652319f019fff19076e866ec1512de4.
 **Maps claim:** ff638a4b47533432cbfa39cbac2f6d9ddecf0ea3.
@@ -786,3 +786,21 @@ Pass 4 is complete only when:
 ## Steward test
 
 The knot is no longer "how do I make a point?" Join answers that. The remaining question is "why these two pieces, now?" Pass 4 must put that question at the interface that actually owns it. If no source owns it yet, the honest result is one named gap, not another invented machine.
+
+
+---
+
+## 18. Execution receipt
+
+- Phase A findings: [math-execution-root-touch-fold-pass-4-findings.md](math-execution-root-touch-fold-pass-4-findings.md), initial commit f942896e9f7dd3143bdbd8a78499d30f08868625.
+- Selection result: S-E admitted as Join operand boundary; upstream arbitrary chooser remains [GAP].
+- pointer-emission law: d2df9fd5269c07d3dcba2e0a2ca250dd9ef2ea67 + 3454891c97d1d058cceeae36146a8ca2bf8f6a84.
+- systems-manifest law: 9f899cc29fe10cf2151e96d6d26f42c6bbf15f0e + fc2cc5b861d73f54054c08b85c0638b6b17b2004.
+- law released: 42888ac2c60991dc869d7ddf582f282d2287a18f.
+- math-model authority refresh: 65a1ba9cafaf1e4090da2f8b2a472dfad833d4b0.
+- propagation docket: [math-execution-root-touch-fold-pass-4-propagation-docket.md](math-execution-root-touch-fold-pass-4-propagation-docket.md), commit a9d1b52e20b94d2a1f792710aab6037c0216d2f9.
+- global ASCII: not edited.
+- graphics: not edited.
+- acceptance: absent.
+- src/: 0.
+- STOP.
