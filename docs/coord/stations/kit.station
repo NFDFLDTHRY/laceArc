@@ -1,7 +1,7 @@
-STATUS: FREE
+STATUS: HELD
 STATION: kit
 OWNS: docs/kit/** .claude/**
-AGENT: -
-BASE: -
-SINCE: -
-NOTE: Pass 6 verification correction COMPLETE. Final current selector-era line in roles.md replaced by sampling-derived retention/materialization wording. Earlier kit reconciliation stands; verbatim transported law and dated audit history unchanged. coord.sh NOT_RUN.
+AGENT: Astra-lab-architecture
+BASE: d54022c551929006c5eb1c18e8df82cc690decfc
+SINCE: 2026-09-21T20:53:00Z
+NOTE: Lab Source Architecture Pass 1 bounded control repair: one current agent-control line still names selector-era gap. Historical transport law block remains untouched.
