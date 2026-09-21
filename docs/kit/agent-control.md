@@ -510,7 +510,7 @@ Every future implementation task needs a written input domain, permitted effects
 
 Distinguish: an invariant statement; a proof sketch; a reviewed proof; an executable test; and a measured runtime result. Do not promote one into another. A "proof-shaped" argument with an open premise remains open. A branch does not graduate because every example passed, several models agreed, or no counterexample was found.
 
-Necessary obligations already implied by current law include preserved prior entries, retained occurrence order, binary Join over existing earlier positions, and no authoritative side store. They still do not decide the upstream arbitrary relation/sample selector, acceptance, or task-specific implementation proof.
+Necessary obligations already implied by current law include preserved prior entries, retained occurrence order, binary Join over existing earlier positions, derived multi-scale sampling, and no authoritative side store. They still do not decide the exact sampling-derived retention/materialization condition, acceptance, or task-specific implementation proof.
 
 For accepted Rust work, review the exact compiler/target assumptions, all effective imports and linked components, possible panics, arithmetic bounds, stack use, I/O paths, allocation, and any unsafe operations. `#![no_std]` alone does not prove those properties. No standard-library linkage or allocator may slip in through a build mode, helper, generated file, or test exception. Keep the allocator condition exactly as stated in the law; do not assume a generic allocation library is authorized.
 
