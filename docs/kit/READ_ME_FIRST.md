@@ -6,7 +6,7 @@ This file is kit, not Hands. Live law is [`AGENTS.md`](../../AGENTS.md) and [`do
 
 **Earlier re-read:** 19 September 2026 against claim BASE `044257ceb95e78612d302a204a9438c72d06aa96`. The emission file then existed as a draft; acceptance and enforcement were not established. This pin records that reading, not the current tip.
 
-**Current reading, 20 September 2026 at `0b2012b`:** [`docs/pointer-emission.md`](../pointer-emission.md) contains closed constraints, open questions, conflicts, and campaign Answer lines whose SPOKEN custody is disputed. It remains DRAFT and not accepted. See the [pass 1 evidence map](../plans/repo-update-pass-1-evidence.md) U01–U03. The [live law's opening](../law-why-these-documents.md) still preserves the existence/acceptance wording pair as unresolved for the human. The stronger acceptance requirement in AGENTS.md and the law's IMPLEMENTATION LAW block controls; this package does not resolve the reserved pair.
+**Current reading, ROOT / TOUCH / FOLD Pass 5:** [`docs/pointer-emission.md`](../pointer-emission.md) is now a **reconciled DRAFT, not accepted**. Current WORD/root/RootTouch/binary Join/finite-sample mechanics are recorded; arbitrary non-root-touch relation/sample selection remains `[GAP]`. Historical campaign Answer lines and their custody record remain preserved. The [live law's opening](../law-why-these-documents.md) still preserves its human-authored existence/acceptance wording pair; AGENTS.md and the IMPLEMENTATION LAW acceptance requirement control implementation. This package does not resolve or waive that gate.
 
 This documentation package supplies controls for local and cloud agents. [CLAUDE.md](../../CLAUDE.md) and [CONTRIBUTING.md](../../CONTRIBUTING.md) explicitly require the control prompt and task forms. AGENTS.md supplies standing orders and requires the context pass. These routes do not prove that every external harness loads or enforces the files.
 
@@ -32,13 +32,15 @@ Read AGENTS.md and docs/law-why-these-documents.md.
 Read docs/kit/agent-control.md and docs/kit/agent-task-template.md.
 Then follow the law's source-reading order for the assigned task.
 Return a source-specific receipt before proposing Core structure.
-Pointer-emission remains a gap unless the exact current contract has
-identifiable human acceptance. A file's existence is not acceptance.
-Acceptance does not lift any permanent prohibition.
+Pointer construction is recorded in a reconciled but unaccepted draft.
+Arbitrary non-root-touch relation/sample selection remains [GAP].
+Core still requires identifiable human acceptance of the exact contract
+plus every premise required by the assigned task. File existence or
+reconciliation is not acceptance. Permanent prohibitions remain.
 Work on the one assigned task. Do not create another implementation branch.
 ```
 
-The routing block requires both existence and exact human acceptance, while keeping permanent prohibitions in force. It does not establish that all other entrances have been reconciled. Do not replace the staking ASCII with this routing block. Its complete wording must remain available to every agent.
+The routing block requires exact human acceptance and all task-specific premises while keeping permanent prohibitions in force. It does not establish an arbitrary selector or reconcile every other entrance. Do not replace the staking ASCII with this routing block. Its complete wording must remain available to every agent.
 
 The downstream audit remains pinned to the THEN commit `4fe984bb098d5ca21c9704234df4fddd53056efb`. Its original observations and hook experiments are preserved as historical evidence. At that pin, pointer-emission.md was absent (audit F10). The file now exists as DRAFT; acceptance is still missing. This door does not rewrite the audit body or claim that its remaining wording and enforcement findings are resolved.
 
@@ -46,4 +48,4 @@ Before treating controls as enforced, resolve the audit's admission blockers, co
 
 ## What is ready now
 
-The prompt and forms can guide documentation and review work now. Layer III viewers and steward scripts already exist; there is no Lace Core implementation. Pointer emission, Core implementation, code commits, and the next implementation branch remain subject to the existing law. The included agent challenges are test specifications; they have not been run against a population of models.
+The prompt and forms can guide documentation and review work now. Layer III viewers and steward scripts already exist; there is no Lace Core implementation. The pointer constructor prose is reconciled but not accepted; arbitrary relation/sample selection remains `[GAP]`; Core implementation, code commits, and the next implementation branch remain subject to the existing law and task-specific proof gates. The included agent challenges are test specifications; they have not been run against a population of models.
