@@ -1,6 +1,6 @@
 # Clock (Layer III)
 
-Conceptual-reference analyses and Layer III visualizations. HCC-A, Coffee Cup, and Water are conceptual reference documents; their former classification as required holder machinery is superseded by the [human correction of 2026-09-20](../law-why-these-documents.md#conceptual-reference-documents). Gear and holder labels in the retained analyses describe interpretations, not required runtime components. **Not Core. Not Graphic D. Cubes are not WORD rows.** The source of record is [the four graphics](../graphics/README.md).
+Behavioral-goal source clipboards and Layer III visualizations. HCC-A, Coffee Cup, and Water are conceptual reference / behavioral-goal sources under the [current law](../law-why-these-documents.md#conceptual-reference-documents). Their source-described pipelines, stages, proofing systems, gears, state machines, and compositions are **candidate machinery for the laceArc lab**: they may be proposed, attacked, reproduced, tested, falsified, or survive bounded evidence. Their former classification as automatically required holder machinery is superseded. **Not Core** means no automatic authority jump into Graphic D, not “ignore the machinery.” **Not Graphic D. Cubes are not WORD rows.** The source of record for the Lace substrate is [the four graphics](../graphics/README.md), then the manifest.
 
 Moved here in defrag pass 3. Pass plans shelved in restructure phase 5.
 

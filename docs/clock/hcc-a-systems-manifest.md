@@ -1,6 +1,6 @@
 # Conceptual reference analysis — HCC-A
 
-**Conceptual-reference status, corrected 2026-09-20:** HCC-A, The Coffee Cup, and Where the Water Is Loud are conceptual reference documents. The [human correction](../law-why-these-documents.md#conceptual-reference-documents) supersedes their classification as required holder machinery. This file retains an analysis of their concepts; H/C/W or A/B/C gears, states, ratios, and contracts are interpretive notation. They establish no required LaceArc components, runtime dependencies, or conditions for legal append. Historical readings remain recorded at their original evidence strength.
+**Behavioral-goal clipboard status, clarified 2026-09-21:** HCC-A, The Coffee Cup, and Where the Water Is Loud are conceptual reference / behavioral-goal sources under the [current law](../law-why-these-documents.md#conceptual-reference-documents). **This file is the HCC-A source clipboard.** Its pipeline, shafts, compiler, ledger, M/E/ISL/B machinery, feedback paths, knobs, and failure modes remain available as **candidate systems for the laceArc lab**. They are not automatically required LaceArc components, runtime dependencies, Core rows, or legal-append conditions merely because the source describes them. Historical readings remain recorded at their original evidence strength.
 
 **Executed passes:** [2](passes/hcc-a-pass-2-plan.md) · [3](passes/hcc-a-pass-3-plan.md) · [4](passes/hcc-a-pass-4-plan.md) · [5](passes/hcc-a-pass-5-plan.md) — plans in [`passes/`](passes/README.md). A new pass is linked here once it is executed.
 

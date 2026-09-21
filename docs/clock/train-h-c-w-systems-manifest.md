@@ -1,12 +1,12 @@
 # Conceptual comparison — HCC-A, Coffee Cup, and Water
 
-**Conceptual-reference status, corrected 2026-09-20:** HCC-A, The Coffee Cup, and Where the Water Is Loud are conceptual reference documents. The [human correction](../law-why-these-documents.md#conceptual-reference-documents) supersedes their classification as required holder machinery. This file retains an analysis of their concepts; H/C/W or A/B/C gears, states, ratios, and contracts are interpretive notation. They establish no required LaceArc components, runtime dependencies, or conditions for legal append. Historical readings remain recorded at their original evidence strength.
+**Candidate-composition status, clarified 2026-09-21:** HCC-A, The Coffee Cup, and Where the Water Is Loud are behavioral-goal source clipboards under the [current law](../law-why-these-documents.md#conceptual-reference-documents). This file composes candidate correspondences among those three source clipboards. H/C/W gears, states, ratios, contracts, mesh rules, and timing relationships are therefore **laboratory hypotheses / candidate systems**: testable, falsifiable, and preservable as negative or surviving evidence. They are not automatically a required H×C×W runtime subsystem, Core machinery, or legal-append gate. Historical readings remain recorded at their original evidence strength.
 
 **Executed passes:** [1](passes/train-pass-1-plan.md) · [2](passes/train-pass-2-plan.md) · [3](passes/train-pass-3-plan.md) · [4](passes/train-pass-4-plan.md) · [5](passes/train-pass-5-plan.md) · [6](passes/train-pass-6-plan.md) — plans in [`passes/`](passes/README.md). A new pass is linked here once it is executed.
 
 ## Overview
 
-Retained comparison of concepts from three reference documents, using an H × C × W train illustration. Its former required-component classification is superseded. This interpretation does not establish an operating subsystem or close POINTER emission.
+Composition surface for three behavioral-goal source clipboards, using the H × C × W train to expose candidate couplings, contradictions, and failure conditions. Its former automatic required-component classification is superseded. The composition is **not dismissed as illustration**: it is candidate machinery for the lab, but it does not establish an operating subsystem or close POINTER emission without surviving the relevant experiments and authority gates.
 
 **Hands of this file**
 
