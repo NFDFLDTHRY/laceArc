@@ -3,6 +3,8 @@
 **Status: PLAN / PROPOSAL. Documentation only. No `src/`. POINTER emission remains `[GAP]`.**  
 **Station: maps. Brief owner: human (2026-09-18).**
 
+**Manifest Reconciliation Pass 2 qualification, 2026-09-21:** the sealed `hologram-ir-golden-v0.2.0.json` is the viewer's current default fixture but a **dated semantic snapshot**, not the current global mechanism map. Pass 32 now catalogs L-M01…L-M21 plus L-GAP-RM; the systems manifest binds SM-C01…SM-C21, SM-GAP-RM and the SM-X integration contracts. The v0.2.0 fixture intentionally remains frozen with P1–P15 and its historical three seam bands. It therefore does **not** encode the current A6/B4 or B10/B11 provenance corrections or the distinct derived sampling/search working-machinery layer. A semantic refresh requires a future schema/fixture revision; do not mutate the sealed v0.2.0 bytes in place.
+
 ## 0. What this file is
 
 The Layer III hologram does **not** primarily project the `{A,B,C}` holder gearing diagram.
@@ -66,7 +68,7 @@ Versioned JSON (or MessagePack) document produced by the extractor and consumed 
 
 ```text
 HologramIr {
-  ir_version: "0.2.0"       // 0.1.0 historical (doors-only); prefer 0.2.0
+  ir_version: "0.2.0"       // current viewer fixture schema; dated semantic snapshot
   generated_at: ISO-8601
   source: SourcePin
   mode: "fixture" | "workspace"
@@ -123,6 +125,8 @@ ManifestPiece {
 ```
 
 ### 3.3c SeamBand (contract seams — ir_version ≥ 0.2.0)
+
+**Dated-schema note:** the v0.2.0 seam vocabulary predates the current contract decomposition. Its `contract_I / contract_II / layer_III` bands remain valid as the fixture's historical shape, but the current manifest also names **derived working sampling/search machinery** that is reconstructible/non-authoritative and is neither Contract I storage nor Piece-13 projection. Do not force that machinery into `layer_III` merely because v0.2.0 lacks a band for it.
 
 ```text
 SeamBand {
