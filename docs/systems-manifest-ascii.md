@@ -22,7 +22,7 @@
 
 ## Pass 30 — current sampling / search reconciliation overlay
 
-**Pass-30 final subordinate verification:** law, graphics, prompts, kit, clipboards, math/model maps, and Rust planning were reconciled before this final companion pin. A stale-wording sweep caught and repaired two current subordinate lines before this re-pin; historical/source-silence text remains intentionally preserved.
+**Pass-30 final subordinate verification:** law, graphics, prompts, kit, clipboards, math/model maps, and Rust planning were reconciled before this final companion pin. Staged stale-wording sweeps caught and repaired current subordinate lines in prompts/kit plus a deeper manifest/context crosswalk before this final pin; historical/source-silence text remains intentionally preserved.
 
 
 
