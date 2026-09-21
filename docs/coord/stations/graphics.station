@@ -1,7 +1,7 @@
-STATUS: FREE
+STATUS: HELD
 STATION: graphics
 OWNS: docs/graphics/** docs/graphics-close-reading.md
-AGENT: -
-BASE: -
-SINCE: -
-NOTE: force-freed 2026-09-19T16:43:46Z: was held by Grok-graphics since 2026-09-19T05:54:12Z. human authorized: Graphics can be freed. i1 and i2 CLOSED 6/6. i3 not opened. D companion unstarted. Φ [GAP].
+AGENT: Astra-graphics
+BASE: ad1df55742b9f56e850dc0151c5f0f97e766d3a1
+SINCE: 2026-09-21T00:39:00Z
+NOTE: User-directed ROOT / TOUCH / FOLD Pass 5 Phase B. Qualify Graphic B/C ASCII companions against current law without changing PNG authority or literal source readings. Current gap = arbitrary relation/sample selection; acceptance absent; no src/. Connector claim; coord.sh NOT_RUN.
