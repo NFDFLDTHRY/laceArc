@@ -1,6 +1,6 @@
 # MANIFEST RECONCILIATION — Pass 1 PLAN · catalog mechanisms, then bind contracts
 
-**Status:** **EXECUTING** 2026-09-21.  
+**Status:** **EXECUTED** 2026-09-21 → [findings](manifest-reconciliation-pass-1-findings.md).  
 **Campaign:** Manifest Reconciliation. **Pass:** 1.  
 **Authority:** the four canonical PNGs in `docs/graphics/`, then current explicit human rulings, then derived/lab evidence at its stated authority.  
 **Primary products:** `docs/systems-manifest-ascii.md` (global mechanism catalog) and `docs/systems-manifest.md` (mechanism contract register).  
