@@ -25,7 +25,7 @@ The graphics remain the source corpus. The following current mechanics also inco
 - the one physical POINTER constructor is binary \(\mathsf{Join}(a,b)\) over two earlier same-line Lace points;
 - repeated Join can ground any finite selected sample into one later addressable point;
 - the dot-to-dot N-D presentation is a projection of recursively grounded points, not N-D storage;
-- for arbitrary non-root-touch relations, the upstream mechanism that selects the ordered operands/sample remains \([GAP]\).
+- for arbitrary non-root-touch relations, the authoritative **origin / assertion / ownership** of the ordered operands/sample remains \([GAP]\). Current sources do not establish either an automatic Core chooser or an external assertion interface.
 
 These are not retroactive quotes from the PNGs. Where the graphics are silent, the human ruling or mathematical derivation is named explicitly.
 
@@ -60,7 +60,7 @@ These are not retroactive quotes from the PNGs. Where the graphics are silent, t
 - **Kind:** Mechanism / Operator
 - **Source location:** B12 Governing rule; C12 Governing rule; D footer; A13 last bullet; current human rulings H1–H6
 - **Purpose:** State the entire mechanism as one append-only growth rule.
-- **Inputs:** An arriving word. For arbitrary non-root-touch relation grounding, selected ordered earlier Lace points are an additional constructor precondition; the upstream selector remains \([GAP]\).
+- **Inputs:** An arriving word. For arbitrary non-root-touch relation grounding, an already-specified ordered relation/sample is an additional constructor precondition; **who/what authoritatively originates that assertion remains \([GAP]\)**.
 - **Outputs:** Continued Lace: the arriving word becomes a WORD occurrence; an unseen occurrence becomes its root; a seen occurrence touches its root through binary Join; selected relations/samples are grounded through repeated Join.
 - **Preconditions:** One append-only Lace. Existing relation operands must already exist before Join.
 - **Effects:** Sequence preserved. Every occurrence kept. Root identity stays positional. Touches remain. Join rows remain addressable and can participate later.
@@ -71,8 +71,8 @@ These are not retroactive quotes from the PNGs. Where the graphics are silent, t
   - **Human + D reconciliation:** selected ordered operands are written by one binary \(\mathsf{Join}(a,b)\) constructor.
   - Join never discovers meaning or invents an arbitrary relation.
 - **Failure modes / breakdown conditions:** Parsing/discarding arrivals; interning repeated words; creating a second relation store; allowing Join to infer relations from semantic similarity; rewriting earlier rows.
-- **Boundary & Coupling:** This operator couples Strand, WORD/root identity, Star, Join participation, and Continue. Selection of an arbitrary non-root-touch relation is an upstream precondition, not hidden Core semantics.
-- **Implementation implications:** No second graph-building engine. Once operands are selected, physical append is deterministic. The remaining design gap is operand/sample selection, not POINTER representation.
+- **Boundary & Coupling:** This operator couples Strand, WORD/root identity, Star, Join participation, and Continue. An arbitrary non-root relation assertion is a constructor precondition; its **provenance / authority / ownership remains open**. Current evidence does not establish that Core must automatically originate it.
+- **Implementation implications:** No second graph-building engine. Once an ordered relation/sample is specified, physical append is deterministic. The remaining design gap is **relation-assertion provenance / authority**, not POINTER representation and not a proven automatic selector.
 - **Metaphor / diagnostic role:** Single-rule universe.
 - **Key source language:** “Input word arrives. Route new wire through that word’s star. Continue.” “No stored meaning — only routes, touches, and structure.”
 
@@ -124,8 +124,8 @@ These are not retroactive quotes from the PNGs. Where the graphics are silent, t
   - A Join row is Lace, not an edge-table record.
   - Adjacency alone does not select operands.
 - **Failure modes / breakdown conditions:** Forward/off-line refs; external edge DB; n-ary side object; mutating a Join after append; asking Join to infer semantic relations.
-- **Boundary & Coupling:** RootTouch is one operand-selection role: Join(new occurrence, root). General grounding uses the same constructor. For arbitrary relations, **which ordered operands/sample are selected remains [GAP] upstream**.
-- **Implementation implications:** The physical append is deterministic after selection. Earlier-index legality is proven by checking \(a,b<new\_index\) at append. No separate “prove earlier” operator.
+- **Boundary & Coupling:** RootTouch is one relation-assertion role: Join(new occurrence, root), with provenance closed by H1. General grounding uses the same constructor. For arbitrary relations, **what authoritatively originates/asserts the ordered operands/sample remains [GAP]**.
+- **Implementation implications:** The physical append is deterministic once the ordered relation operands are specified. Earlier-index legality is proven by checking \(a,b<new\_index\) at append. No separate “prove earlier” operator and no automatic chooser is established here.
 - **Metaphor / diagnostic role:** Tie two already-existing pieces with one new piece of the same lace.
 - **Key source language:** “A pointer is also a section of Lace. It can be referenced by later entries.” “No separate graph. No separate database.”
 
@@ -228,7 +228,7 @@ These are not retroactive quotes from the PNGs. Where the graphics are silent, t
 - **Effects:** **RootTouch = Join(new occurrence, root).** General grounding uses the same Join constructor. A Join may name prior Join points, producing points-of-points.
 - **Invariants:** Touches are permanent; relations can participate in relations; no separate event log or edge table.
 - **Failure modes / breakdown conditions:** Attach-only hub; dropping touches; separate relationship objects; semantic chooser hidden in Join.
-- **Boundary & Coupling:** Geometric “thread through” and storage Join are two presentations of participation. The constructor is settled; arbitrary operand/sample selection remains upstream [GAP].
+- **Boundary & Coupling:** Geometric “thread through” and storage Join are two presentations of participation. The constructor is settled; arbitrary non-root relation-assertion provenance / authority remains [GAP].
 - **Implementation implications:** Future appends may name any selected earlier WORD/POINTER pair. One physical constructor suffices.
 - **Metaphor / diagnostic role:** Threading / re-entry / nested participation.
 - **Key source language:** “A touch becomes material for future Lace.”
@@ -332,27 +332,32 @@ Dictionary and document feeds use the same flow. They differ in source stream, n
 - **I4-4 Join → reusable point:** PASS. POINTER row is Lace and can be named by later Join.
 - **I4-5 finite selected sample → point:** PASS by repeated Join; no sample store.
 - **I4-6 point ancestry → N-D view:** PASS under Piece 13 no-write-back.
-- **I4-7 arbitrary selection handoff:** PARTIAL / [GAP]. Join receives selected ordered operands, but current sources do not specify an automatic general chooser.
+- **I4-7 arbitrary relation-assertion provenance:** PARTIAL / [GAP]. Join receives an already-specified ordered relation/sample. Current sources do not establish what authoritatively originates it, whether inside or outside Core.
 
-### Selection boundary
+### Relation-assertion provenance boundary
 
-The lawfully known boundary is:
+The lawfully known constructor boundary is:
 
 \[
-\text{selected ordered earlier operands}
+\rho
 \longrightarrow
-\mathsf{Join}(a,b).
+\mathsf{Join}/\mathsf{Ground},
 \]
 
-RootTouch has a closed selector: new occurrence + root.
+where \(\rho\) denotes an already-specified ordered relation/sample. It is analysis notation only, not a new row type or interface.
+
+RootTouch has closed provenance under H1: new occurrence + root.
 
 For arbitrary relations/samples:
 
-- Core-derived selector from \(L,v\): BLOCKED, no rule stated.
-- Contract-II hidden sample channel: REFUSED by current raw-word interface.
-- general query/write action: BLOCKED, source does not specify it.
-- route/document boundary as selector: BLOCKED, boundaries are not stored/defined.
-- relation assertion supplying its ordered operands: ADMITTED as constructor precondition; what originates the assertion remains [GAP].
+- an automatic Core-derived selector from \(L,v\): **NOT ESTABLISHED / BLOCKED by current evidence**;
+- Contract-II hidden relation/sample channel: **REFUSED** by the current raw-word interface;
+- general query/write assertion surface: **BLOCKED**, not source-specified;
+- route/document boundary as provenance metadata: **BLOCKED**, boundaries are not stored/defined;
+- relation assertion supplying its ordered operands: **ADMITTED as constructor precondition**;
+- **what authoritatively originates / owns that relation assertion remains [GAP]**.
+
+Pass 6 tested stronger automatic punch-card readings against D1. Mandatory whole-prefix grounding after every arrival, one persistent active-sample ladder, and automatic materialization of every possible finite portion do not reproduce D1 as universal rules. This narrows the gap to provenance/authority without proving an external interface.
 
 ### Failure propagation
 
@@ -461,7 +466,7 @@ Resolves into **one irreducible contract (Lace Core)** with a **thin arrival ada
 ## Cross-Cutting Parameters & Variation
 
 - **Word identity rule** — what counts as “the same word” / same variable / same star. Examples mix `PIE` and `pie`, and split `Golden` / `Skillet`. Unspecified, system-wide.
-- **Relation/sample selection rule** — binary Join construction, arity, backwardness, and recursive grounding are reconciled. What remains system-wide and unspecified is the upstream choice of an arbitrary non-root-touch ordered operand pair/sample. Adjacency alone does not choose it.
+- **Arbitrary relation-assertion provenance / authority** — binary Join construction, arity, backwardness, and recursive grounding are reconciled. What remains system-wide and unspecified is **what authoritatively originates an arbitrary non-root-touch ordered relation/sample**. Current sources do not establish an automatic Core chooser or an external assertion interface.
 - **Route-family labels** — Dictionary / Document / Conversation / Provenance (C6). Named as independent axes; not stored as types in D. Variation in labeling must not become extra stores.
 - **Projection choice** — 1D / 2D / 3D / “N-D symptoms” (C8). View parameter only.
 - **Growth bound** — source says unbounded growth, no pruning parameter. Absence of pruning is itself a cross-cutting choice.
@@ -497,7 +502,7 @@ Intended use of the four graphics together: A = growth story; B = 3D mechanism; 
 ## Open Questions or Remaining Design Degrees of Freedom
 
 1. **[GAP] Word identity / tokenization:** boundaries, punctuation, case, \`PIE\` vs \`pie\`, multiword names.
-2. **[GAP] Arbitrary relation/sample selection:** the binary Join constructor is settled; current sources do not specify the automatic upstream process, if any, that chooses an arbitrary non-root-touch ordered operand pair/sample.
+2. **[GAP] Arbitrary non-root relation-assertion provenance / authority:** the binary Join constructor is settled; current sources do not establish what authoritatively originates/asserts an arbitrary ordered operand pair/sample. An automatic Core chooser is not established; an external assertion interface is also not established.
 3. **[GAP] Document / conversation / provenance boundaries:** D still stores only WORD and POINTER/Join; no boundary row type is established.
 4. **[GAP] Read/query/traversal operator:** source specifies growth and visualization, not a general retrieval/write-query interface.
 5. **[GAP] Concurrency:** one strand suggests a single writer; multi-writer append remains unstated.
@@ -564,4 +569,4 @@ Do not add an R table, RIC table, Story Ledger type, meaning weights, ISL star, 
 - One contract: the append-only strand/array under “arrive, route/point into what exists, continue.”
 - Stars, dictionary routes, documents, touches, and dimensions are formations and readings of that contract, not sibling services.
 - The only safe extra surfaces are thin ingest and read-only projection; both become model-breaks if they keep their own state.
-- The remaining Core-adjacent [GAP] is **arbitrary relation/sample selection**. The binary Join constructor and recursive grounding mechanics are reconciled; dimensionality is the projection of the resulting participation structure.
+- The remaining Core-adjacent [GAP] is **arbitrary non-root relation-assertion provenance / authority**. The binary Join constructor and recursive grounding mechanics are reconciled; dimensionality is the projection of the resulting participation structure.
