@@ -15,21 +15,123 @@ The four graphics are four presentations of one mechanism, not four subsystems. 
 
 ASCII spine (pass 1, companion): `docs/systems-manifest-ascii.md`. Does not replace this file. Does not fill G2.
 
-### Current human-ruling reconciliation — 2026-09-20
+### Current human-ruling reconciliation — 2026-09-21
 
-The graphics remain the source corpus. The following current mechanics also incorporate explicit human rulings H1–H6, reconciled in ROOT / TOUCH / FOLD passes 1–4:
+The graphics remain the source corpus. Current mechanics also incorporate explicit later human rulings. H1–H6 reconcile arrival/root/RootTouch/binary Join/finite grounding; H7–H12 establish sampling as relationship discovery and a derived position×scale working surface.
 
 - every successful word arrival appends a WORD occurrence;
 - if unseen, that arriving WORD becomes the word root;
-- if seen, the new occurrence remains a WORD and touches the existing root;
+- if seen, the new occurrence remains a WORD and RootTouches the existing root through binary Join;
 - the one physical POINTER constructor is binary \(\mathsf{Join}(a,b)\) over two earlier same-line Lace points;
-- repeated Join can ground any finite selected sample into one later addressable point;
+- repeated Join can ground any finite **already-selected/addressable** sample into one later addressable point;
 - the dot-to-dot N-D presentation is a projection of recursively grounded points, not N-D storage;
-- for arbitrary non-root-touch relations, the authoritative **origin / assertion / ownership** of the ordered operands/sample remains \([GAP]\). Current sources do not establish either an automatic Core chooser or an external assertion interface.
+- sampling derives structural evidence across position × scale without becoming a second authoritative store;
+- **the exact general sampling-derived retention/materialization condition remains \([GAP]\)**, including the boundary that grounds an ephemeral sampled structure when a retained operand needs an address.
 
-These are not retroactive quotes from the PNGs. Where the graphics are silent, the human ruling or mathematical derivation is named explicitly.
+These are not retroactive quotes from the PNGs. Where the graphics are silent, the human ruling, mathematical derivation, or lab result is named explicitly. Graphic-C 2D presentation remains distinct from the later H7–H12 sampling surface.
 
 
+
+---
+
+## Current Mechanism Contract Registry — Manifest Reconciliation Pass 1
+
+**Role of this file:** this is the contract register for mechanisms cataloged by [`systems-manifest-ascii.md`](systems-manifest-ascii.md). The ASCII answers **what mechanisms exist and how they connect**. This manifest answers **how each cataloged mechanism is allowed/required to behave**.
+
+**Catalog IDs are navigation handles only.** They are not Graphic-D row types, opcodes, crates, or implementation modules.
+
+### Contract authority classes
+
+- **SOURCE** — direct Graphics A–D behavior.
+- **HUMAN** — later explicit human ruling.
+- **DERIVED** — mathematical/structural consequence of SOURCE/HUMAN.
+- **LAB** — reproduced/tested behavior at stated scope.
+- **CANDIDATE** — admitted machinery whose architectural necessity is unproven.
+- **VIEW** — read/projection only.
+- **FORBID** — anti-model / prohibited behavior.
+- **GAP** — required behavior not established.
+
+### Canonical catalog → contract crosswalk
+
+| Catalog mechanism | Contract | Governing detailed section | Authority | Contract summary |
+|---|---|---|---|---|
+| L-M01 Continuous growth | **SM-C01** | Piece 1 | SOURCE | one strand; append/extend only; no deletion, reset, rewrite, second authoritative store |
+| L-M02 Governing growth rule | **SM-C02** | Piece 2 | SOURCE + HUMAN | arrive → WORD/root/RootTouch as ruled → sampled discovery → only retained/materialized relations append through Join → continue |
+| L-M03 Raw arrival | **SM-C03** | Piece 3 | SOURCE + HUMAN | preserve successful arrivals and order; no hidden relation/sample payload |
+| L-M04 WORD occurrence + root role | **SM-C04** | Piece 4 | SOURCE + HUMAN | every successful word occurrence is a distinct immutable WORD row; first occurrence is root role under current identity policy |
+| L-M05 Binary POINTER / Join | **SM-C05** | Piece 5 | SOURCE-shape + HUMAN | append binary Join over ordered earlier same-line WORD/POINTER points; constructor never chooses the relation |
+| L-M06 One append-only 1D store | **SM-C06** | Piece 6 | SOURCE | WORD and POINTER share one authoritative line; all higher structure is participation/read over it |
+| L-M07 Star formation | **SM-C07** | Piece 7 | SOURCE + current-law qualification | accumulated repeated passages around one word/root; no Star row/table; derived search may read it |
+| L-M08 Sequence as physical route | **SM-C08** | Piece 8 | SOURCE | arrival order is route; no sentence object or adjacency-emission default |
+| L-M09 Dictionary definition as route | **SM-C09** | Piece 9 | SOURCE + current-law qualification | definition text is more Lace through ordinary stars; explicit route source is B4/C9, with A11/A12 integration/traffic |
+| L-M10 Document feed | **SM-C10** | Piece 10 | SOURCE | longer text uses the same arrival/route mechanics; no document graph/type/store |
+| L-M11 Thread / touch | **SM-C11** | Piece 11 | SOURCE + current-law correspondence | later wire threads existing formation; touch is participation, not a new opcode or retain-when rule |
+| L-M12 Persistence / later re-entry | **SM-C12** | Piece 11 + clarification below | SOURCE | once participation is recorded, it remains available for later participation; this does not decide general retention |
+| L-M13 Recursive participation | **SM-C13** | Pieces 5, 11, 12 | SOURCE + current-law correspondence | POINTER/Join may name earlier POINTER/Join; relation participates in relation without extra storage |
+| L-M14 N-D presentation | **SM-C14** | Piece 12 | SOURCE + VIEW | independent participation presents as higher-D structure; no dimension store or meaning layer |
+| L-M15 Projection vs actual Lace | **SM-C15** | Piece 13 | SOURCE + VIEW | projections read Lace only; no write-back and no graph/geometry authority |
+| L-M16 No stored meaning / no collapse | **SM-C16** | Piece 14 | SOURCE + FORBID | no gloss/sense/embedding/registry authority and no replacement of distinct history by a simpler equivalent |
+| L-M17 Star-internal traffic | **SM-C17** | Piece 15 | SOURCE + VIEW | denser view of retained passages/participation; no coordinates or second geometry store |
+| L-M18 RootTouch | **SM-C18** | specialized contract below | HUMAN + bounded SOURCE witness | seen WORD occurrence joins to its existing root; mandatory special case only |
+| L-M19 Finite sample grounding | **SM-C19** | specialized contract below | HUMAN + DERIVED | repeated binary Join can make an already-selected/addressable finite sample one later point; does not select/retain the sample |
+| L-M20 Derived 2D sampling | **SM-C20** | Derived 2D Sampling Surface + specialized contract below | HUMAN + DERIVED/LAB | reconstructible position×scale working surface discovers structural evidence; not Graphic-C projection and not a store |
+| L-M21 Derived star/search read | **SM-C21** | specialized contract below | DERIVED + LAB + VIEW | disposable structural search/frontier reads from Lace/sampling/retained topology; no write authority |
+| L-GAP-RM Retention/materialization boundary | **SM-GAP-RM** | Sampling-derived retention/materialization boundary | GAP | exact general sampled-evidence → retained POINTER / addressable sampled operand rule is not established |
+
+### Source-provenance correction carried by this pass
+
+**A6 is not the explicit dictionary-definition route.** A6 is the PIE-in-context specimen (“The order said: PIE.”). The explicit `PIE → dessert → slice → whole → food` path is **B4**. **C9** carries the dictionary-wiring analogue. **A11/A12** carry dictionary/document integration and dictionary-definition traffic.
+
+Therefore the active SM-C09 source route is **B4 · C9 · A11/A12**. A6 remains legitimate evidence for SM-C10 document/context feed, not the explicit B4 definition path. Historical receipts that copied the B4 path into A6 remain historical and are not rewritten here.
+
+### Integration contracts for cataloged non-Core machinery
+
+The global ASCII also catalogs source/candidate/Layer-III mechanisms in its G-III, G-KD, IX, clipboard and behavioral-goal surfaces. Their detailed source behavior remains in their source-specific manifest/clipboard. Their **integration behavior with Lace** is controlled here:
+
+#### SM-X-BEH — behavioral-goal candidate machinery
+
+- **Applies to:** HCC-A, Coffee Cup, Water / Dual Proofing, and H×C×W candidate compositions.
+- **May:** state target behaviors, constraints, hypotheses, candidate mechanisms and falsifiers; enter the laceArc lab for testing.
+- **Must:** preserve source provenance and experimental status.
+- **Must not:** become a required runtime component, Graphic-D row type, legal-append condition, retention rule, or Core authority by citation.
+- **Write authority to Lace:** none.
+
+#### SM-X-RES — research/book candidate machinery
+
+- **Applies to:** Kauffman, Rowlands, Xiao–Zhu, Petersen–Zech, AgentScope and later research shelves.
+- **May:** contribute mathematics, algorithms, mechanisms, known limits, counterexamples and falsifiers to the lab.
+- **Must not:** become Core because of analogy; source equations/algorithms do not override Graphics A–D or human rulings.
+- **Write authority to Lace:** none unless separately established by an accepted Lace contract, which is absent here.
+
+#### SM-X-PLAT — platform/toolchain machinery
+
+- **Applies to:** Wasm, WebGPU, WGSL, WebNN, rustc, Cargo and hardware/target facts.
+- **May:** establish executable primitives, resource ceilings, target/toolchain facts and physical feasibility constraints.
+- **Must not:** supply Lace semantics, a retention/materialization rule, pointer acceptance, or human acceptance.
+- **Write authority to Lace:** none.
+
+#### SM-X-L3 — Layer-III / steward machinery
+
+- **Applies to:** Piece-13 projections, viewers, hologram/clock surfaces, G-KD/IX coordination/read surfaces and steward tooling.
+- **May:** read, project, cite, test, diagnose and coordinate within its assigned contract.
+- **Must:** treat any cache/handle as disposable or non-authoritative unless separately proven; preserve the one-store fence.
+- **Must not:** write Contract I by implication, turn a visualization into storage truth, or convert a catalog/clipboard result into acceptance.
+- **Write authority to Lace:** none under this manifest.
+
+These integration contracts are intentionally narrower than the source-specific mechanism descriptions. Cataloging a candidate mechanism means **the repository knows it exists**, not that Lace has adopted it.
+
+### Contract distinctions that remain binding
+
+```
+persistence      != retention
+re-entry         != materialization
+Graphic-C 2D     != H7-H12 2D sampling
+D1 state witness != a complete selection/generation rule
+source behavior  != a convenient experimental representation
+cataloged        != Core
+```
+
+B8 therefore contracts **persistence and future re-entry once a touch exists**. It does not provide the universal sampled-structure retain-when predicate.
 
 ---
 
@@ -60,7 +162,7 @@ These are not retroactive quotes from the PNGs. Where the graphics are silent, t
 - **Kind:** Mechanism / Operator
 - **Source location:** B12 Governing rule; C12 Governing rule; D footer; A13 last bullet; current human rulings H1–H6
 - **Purpose:** State the entire mechanism as one append-only growth rule.
-- **Inputs:** An arriving word. For arbitrary non-root-touch relation grounding, an already-specified ordered relation/sample is an additional constructor precondition; **who/what authoritatively originates that assertion remains \([GAP]\)**.
+- **Inputs:** An arriving word. For general non-root participation, derived sampling may supply structural evidence; a Join append occurs only after the still-open retention/materialization boundary has produced addressable ordered operands.
 - **Outputs:** Continued Lace: the arriving word becomes a WORD occurrence; an unseen occurrence becomes its root; a seen occurrence touches its root through binary Join; selected relations/samples are grounded through repeated Join.
 - **Preconditions:** One append-only Lace. Existing relation operands must already exist before Join.
 - **Effects:** Sequence preserved. Every occurrence kept. Root identity stays positional. Touches remain. Join rows remain addressable and can participate later.
@@ -71,7 +173,7 @@ These are not retroactive quotes from the PNGs. Where the graphics are silent, t
   - **Human + D reconciliation:** selected ordered operands are written by one binary \(\mathsf{Join}(a,b)\) constructor.
   - Join never discovers meaning or invents an arbitrary relation.
 - **Failure modes / breakdown conditions:** Parsing/discarding arrivals; interning repeated words; creating a second relation store; allowing Join to infer relations from semantic similarity; rewriting earlier rows.
-- **Boundary & Coupling:** This operator couples Strand, WORD/root identity, Star, Join participation, and Continue. An arbitrary non-root relation assertion is a constructor precondition; its **provenance / authority / ownership remains open**. Current evidence does not establish that Core must automatically originate it.
+- **Boundary & Coupling:** This operator couples Strand, WORD/root identity, Star, Join participation, sampling-derived discovery, and Continue. Join is the physical constructor after operands are addressable; sampling supplies derived structural evidence, not write authority. **The exact general retention/materialization condition remains open.**
 - **Implementation implications:** No second graph-building engine. Once retained operands are addressable, physical append is deterministic. The remaining design gap is the **sampling-derived retention/materialization condition**, not POINTER representation and not a semantic chooser.
 - **Metaphor / diagnostic role:** Single-rule universe.
 - **Key source language:** “Input word arrives. Route new wire through that word’s star. Continue.” “No stored meaning — only routes, touches, and structure.”
@@ -188,12 +290,12 @@ These are not retroactive quotes from the PNGs. Where the graphics are silent, t
 ### Piece 9 — Dictionary Wiring
 
 - **Kind:** Mechanism / formation, not a separate store
-- **Source location:** B4; C9; A6, A11
+- **Source location:** **B4; C9; A11–A12.** A6 is document/context evidence under Piece 10, not the explicit definition-route panel.
 - **Purpose:** Treat definition text as routes/participation through ordinary word roots and points.
 - **Inputs:** Definition-like word sequences.
-- **Outputs:** WORD arrivals plus Join participation along the definition route.
+- **Outputs:** WORD arrivals in definition order; any retained Join participation around that route is governed by the ordinary current Join/retention contracts rather than being guaranteed by the definition label itself.
 - **Preconditions:** Words arrive through the same Piece-3 path; unseen words become roots, seen words reuse existing roots.
-- **Effects:** Definition routes accumulate structure around the WORD/root identities. Later documents reuse those roots and retained route structure.
+- **Effects:** Definition text creates/reuses ordinary word-star passages on the same Lace. Where participation has actually been retained, later text may reuse that retained structure; the source label “definition” does not itself force extra POINTER materialization.
 - **Invariants:** Definition is a route, not a stored gloss. **Definition-route POINTER structure does not replace the WORD/root as lexical identity.**
 - **Failure modes / breakdown conditions:** Definition payload on WORD; separate lexicon table; treating defining pointer cluster as the only word identity; collapsing route to gloss.
 - **Boundary & Coupling:** Same governing rule as document feed. Sampling may expose recurring definition-route structure, but no semantic selector is inferred from definition text; exact retention/materialization beyond RootTouch remains [GAP].
@@ -221,12 +323,12 @@ These are not retroactive quotes from the PNGs. Where the graphics are silent, t
 
 - **Kind:** Mechanism / Loop
 - **Source location:** B7–B8; C7; A10; D6; H1/H5/H6
-- **Purpose:** Retain participation so occurrences, touches, and grounded relations can themselves participate later.
+- **Purpose:** Describe threading/touch and the persistence/re-entry of participation that already exists, so recorded occurrences/touches/Join points can participate later. This purpose does **not** supply the general sampled-structure retain-when rule.
 - **Inputs:** Existing Lace points plus new arrival / selected relation operands.
-- **Outputs:** Binary Join points that remain Lace.
+- **Outputs:** Source-level touch/re-entry behavior plus, under current array correspondence, binary Join points when a legal retained participation has actually been materialized.
 - **Preconditions:** Referenced operands already exist.
 - **Effects:** **RootTouch = Join(new occurrence, root).** General grounding uses the same Join constructor. A Join may name prior Join points, producing points-of-points.
-- **Invariants:** Touches are permanent; relations can participate in relations; no separate event log or edge table.
+- **Invariants:** Recorded touches/Join participation are permanent; relations can participate in relations; no separate event log or edge table. **Persistence after recording is distinct from the open rule deciding which sampled structure is recorded.**
 - **Failure modes / breakdown conditions:** Attach-only hub; dropping touches; separate relationship objects; semantic chooser hidden in Join.
 - **Boundary & Coupling:** Geometric “thread through” and storage Join are two presentations of participation. The constructor is settled. Human rulings H7–H12 make sampling, not an arbitrary semantic chooser, the discovery mechanism. The exact sampling-derived retention/materialization condition remains [GAP].
 - **Implementation implications:** Future retained POINTERs may name earlier WORD/POINTER points across sampling scales. One physical constructor suffices; the general rule deciding when sampled structure is retained and how an ephemeral sampled operand is grounded remains open.
@@ -273,7 +375,7 @@ These are not retroactive quotes from the PNGs. Where the graphics are silent, t
 ### Piece 13 — Projection vs Actual Lace
 
 - **Kind:** Interface / View
-- **Source location:** C2–C4, C11; B10–B11; D4; H6 reconciliation
+- **Source location:** C2–C4, C11; **B11**; D4; H6 reconciliation. B10 belongs to the no-collapse contract (Piece 14), not the projection source set.
 - **Purpose:** Separate the actual WORD/Join Lace from any dot-to-dot rendering.
 - **Inputs:** The one-dimensional append-only Lace and derived Join ancestry/reach.
 - **Outputs:** 1D, 2D, 3D, or N-D views.
@@ -319,6 +421,95 @@ These are not retroactive quotes from the PNGs. Where the graphics are silent, t
 - **Metaphor / diagnostic role:** Zoomed threaded star.
 - **Key source language:** “Many distinct strands pass through the same star.” “None are merged or lost.”
 
+## Specialized Current Mechanism Contracts
+
+These contracts bind catalog mechanisms that were made explicit by later human reconciliation/derivation and therefore do not map cleanly one-to-one onto the original Pieces 1–15.
+
+### SM-C12 — Persistence / later re-entry
+
+- **Authority:** SOURCE — A10/A12, B3/B8, C7/C12, D6/key properties.
+- **Consumes:** participation/touch/Join structure that already exists on Lace.
+- **Produces:** no mandatory new row by itself; grants future participation/readability of the recorded structure.
+- **Preconditions:** the structure being re-entered is already part of authoritative Lace.
+- **Invariant:** once recorded, it is not deleted or rewritten.
+- **Must not become:** a general retention predicate. “This touch remains” does not answer “which sampled candidate becomes a touch/POINTER?”
+- **Couples to:** SM-C11, SM-C13, SM-C18, SM-C05.
+
+### SM-C13 — Recursive participation / relation-among-relation
+
+- **Authority:** SOURCE permission — D3/D6 and D1 rows 0007/0009/0010; Graphic C C7 is the N-D presentation.
+- **Consumes:** earlier addressable WORD or POINTER/Join points.
+- **Produces:** later Join participation that may itself become an operand of still-later Join.
+- **Preconditions:** all referenced points already exist on the same Lace.
+- **Invariant:** recursion adds rows; it never creates a second stack/graph/N-D store.
+- **Must not become:** automatic nested-relation discovery or a semantic chooser.
+- **Couples to:** SM-C05, SM-C12, SM-C14.
+
+### SM-C18 — RootTouch
+
+- **Authority:** HUMAN H1/H4 with bounded SOURCE witness D1 rows 0003→0004.
+- **Consumes:** a newly appended seen WORD occurrence and the existing root WORD for that identity.
+- **Produces:** `Join(new_occurrence, root)`.
+- **Preconditions:** the occurrence has landed; the root already exists; G1 equality/tokenization still governs identity.
+- **Effect:** records the mandatory seen-word/root participation as ordinary Lace.
+- **Invariant:** root remains the first occurrence; the new occurrence remains a distinct WORD row; RootTouch uses the same binary Join constructor as all other retained participation.
+- **Must not become:** a general semantic relation selector or evidence that every sampled relation must be retained.
+- **Status:** current closed special case; pointer draft still not human-accepted as a whole.
+
+### SM-C19 — Finite sample grounding by repeated Join
+
+- **Authority:** HUMAN H5/H6 + DERIVED induction in the current mathematical model.
+- **Consumes:** a finite ordered set/sequence of **already-selected and addressable** Lace points.
+- **Produces:** a later addressable point through repeated binary Join.
+- **Preconditions:** each next operand is an earlier same-line WORD/POINTER point; the sample has already crossed any applicable retention/materialization boundary.
+- **Invariant:** every grounding step adds Lace; no global sample registry/cardinality row is stored.
+- **Must not become:** a selection rule, a retention threshold, or proof that a sampled ephemeral structure is already addressable.
+- **Couples to:** SM-C05 and SM-GAP-RM.
+
+### SM-C20 — Derived 2D position×scale sampling
+
+- **Authority:** HUMAN H7–H12 + DERIVED/LAB consequences from SAMPLING / DENSITY / EMERGENCE.
+- **Consumes:** an immutable Lace/text prefix plus current root/retained participation information required by the tested sampler.
+- **Produces:** reconstructible position×scale samples, overlap/recurrence evidence and bounded structural frontiers.
+- **Preconditions:** authoritative history remains Graphic-D Lace; any working surface is reconstructible/disposable.
+- **Invariants:** not a second authoritative store; sampled observation is not retained POINTER append; exact recurrence is not a universal retention trigger.
+- **Must not become:** Graphic-C C3, a stored 2D Core table, a semantic chooser, or the missing retain/materialize rule.
+- **Couples to:** SM-GAP-RM and SM-C21.
+
+### SM-C21 — Derived star/search read
+
+- **Authority:** DERIVED/LAB/VIEW from current sampling/search work.
+- **Consumes:** root/star formation, sampling evidence, retained POINTER topology and an immutable Lace prefix.
+- **Produces:** disposable/reconstructible search handles, structural frontiers and witnessed navigation paths.
+- **Preconditions:** reads are reproducible from authoritative Lace plus stated derived machinery.
+- **Effects on Lace:** none.
+- **Invariants:** no permanent reverse-pointer DB, Star table, embedding store or hidden write path becomes authoritative.
+- **Must not become:** retention/materialization authority or a Core query/write interface.
+- **Couples to:** SM-C07, SM-C20, SM-C15.
+
+### SM-GAP-RM — Sampling-derived retention/materialization boundary
+
+This is **not an implemented mechanism** and not a contract whose behavior may be guessed. It is the named missing transition:
+
+[
+	ext{sampling-derived structural evidence}
+longrightarrow
+[	ext{OPEN retain/materialize}]
+longrightarrow
+	ext{retained POINTER topology / addressable sampled operand}.
+]
+
+Known constraints:
+- RootTouch is the closed special case and does not generalize this rule.
+- Not every sampled cell is retained.
+- Adjacency alone is false.
+- Exact-repeat-only, first-seen-every-cell and cheapest-contiguous universal rules have been rejected by the sampling campaign.
+- B8 source permanence applies **after** a touch exists; it does not select a sampled touch.
+- D1 witnesses retained POINTER states but does not provide the universal selection rule.
+- No semantic chooser, external relation-write API, source-book analogy, or platform primitive may fill this gap by convenience.
+
+---
+
 ## Relational Mapping (Second Pass)
 
 ### Shared state
@@ -335,7 +526,7 @@ Shared relation constructor: binary Join over selected ordered earlier indices.
 2. Append one WORD occurrence.
 3. If unseen, that row becomes the word root.
 4. If seen, append \(\mathsf{Join}(\text{new occurrence},\text{root})\) as RootTouch.
-5. If an arbitrary relation/sample has **selected ordered operands**, ground it with binary Join; repeated Join handles finite samples and already-grounded branches.
+5. Derive sampling evidence under the H7–H12 sampling architecture. If the still-open retention/materialization condition warrants a retained relation **and** its operands are addressable, ground it with binary Join; repeated Join handles finite samples and already-grounded branches.
 6. Continue. WORD append order remains the physical arrival route.
 7. Projection may read WORD/Join ancestry as 1D/2D/3D/N-D but cannot write back.
 
@@ -424,7 +615,7 @@ Repetition does not update a count; it adds a passage. Structure densifies. Late
 
 ### Major interfaces the source actually gives
 
-1. **Write interface:** arriving words become WORD rows; selected ordered earlier operands are written by Core as binary Join POINTER rows. POINTER sections are produced, not supplied as a second arrival stream.
+1. **Write interface:** arriving words become WORD rows; when current law requires RootTouch, or when a future accepted retention/materialization rule yields addressable ordered operands, Core writes binary Join POINTER rows. POINTER sections are produced, not supplied as a second arrival stream.
 2. **Identity interface:** word variable → star; index → exact occurrence.
 3. **Participation interface:** pointer to earlier index (word or pointer).
 4. **View interface:** projections downward; not upward writes.
@@ -555,6 +746,18 @@ The old broad “pointer emission remains unanswered” statement is superseded.
 - the other independent questions above.
 
 **Acceptance:** [\`pointer-emission.md\`](pointer-emission.md) remains a reconciled draft and still requires explicit human acceptance before implementation authorization.
+
+---
+
+## Manifest Reconciliation Pass 1 — canonical-pair receipt
+
+**Current result:** the global ASCII now catalogs current Lace mechanisms under L-M01…L-M21 plus the explicit L-GAP-RM seam and routes external/candidate mechanism classes to integration contracts. This manifest now supplies the matching SM-C / SM-X contract lookup without turning catalog IDs into runtime types.
+
+**Source correction applied to current canonical surfaces:** A6 is document/context, not the explicit B4 definition path. SM-C09 uses B4 · C9 · A11/A12. Historical receipts remain untouched.
+
+**Contract correction applied:** persistence/re-entry is now explicitly separated from sampling-derived retention/materialization; Graphic-C 2D projection is separated from H7–H12 2D sampling; D1 is a state/shape witness and not a universal selection rule.
+
+**Unchanged gates:** exact sampling-derived retention/materialization remains `[GAP]`; G1/tokenization and other listed opens remain; `pointer-emission.md` remains unaccepted; no `src/` or implementation authority is created.
 
 ---
 
