@@ -1,8 +1,8 @@
-# Adjacent reference
+# Reference and clipboard sources
 
-These works are **not** the source of record for laceArc. The source of record is `docs/graphics/`.
+These works are **not** the source of record for the Lace substrate. The substrate source of record is `docs/graphics/`, then `docs/systems-manifest.md`.
 
-They sit next to the model. Do not import their axioms into Core because a passage feels similar to wire, star, strand, token, or graph.
+They are source material for the **laceArc laboratory**. Their clipboards may expose behavioral goals, possible machinery, algorithms, mathematics, failure modes, and physical/platform constraints. Do not import those directly into Core because a passage feels similar to wire, star, strand, token, or graph; route them through laboratory evidence and testing instead.
 
 Do not commit PDF binaries to this public repository.
 
@@ -74,7 +74,7 @@ Reasoning-Action graphs and neural invariants for agent failure localization. Ad
 ### Conceptual references: cognition, causality, and communication
 
 Workspace attachments. Not committed as binaries. Map: `docs/clock/philosophy-map.md`.
-The [human correction of 2026-09-20](law-why-these-documents.md#conceptual-reference-documents) classifies documents 6–8 as conceptual references. Earlier H/C/W gear assignments are interpretations, not required holder machinery or runtime dependencies.
+The [human correction and clarification](law-why-these-documents.md#conceptual-reference-documents) classifies documents 6–8 as conceptual reference / behavioral-goal sources. Their existing source clipboards are [HCC-A](clock/hcc-a-systems-manifest.md), [Coffee Cup](clock/coffee-cup-systems-manifest.md), and [Water](clock/water-systems-manifest.md), with the [H×C×W comparison](clock/train-h-c-w-systems-manifest.md) composing candidate correspondences. Earlier H/C/W gear assignments are not automatically required holder machinery or runtime dependencies, but the source-described machinery remains legitimate material for laboratory testing.
 
 #### 6. HCC-A v1.0 — Human Cognitive Compiler Architecture
 
@@ -151,7 +151,7 @@ The [sixth extraction plan](history/history-recovered-pass-6-plan.md) records ex
 
 ## Technology reference shelves
 
-These are source-mapping and target-reference shelves, not additional canonical graphics or admitted Core dependencies. The [clipboard index](clipboards/README.md) distinguishes executed readings from pending work.
+These are the platform/toolchain face of the laboratory. Their clipboards expose executable mechanisms, target facts, and physical limits that may enable or falsify implementation candidates. They are not additional canonical graphics, admitted Core dependencies, or a source of missing Lace semantics. The [clipboard index](clipboards/README.md) distinguishes executed readings from pending work.
 
 | Reference family | Current route | Scope |
 |---|---|---|

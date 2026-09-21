@@ -74,8 +74,8 @@ Shelves (defrag pass 1–4). Hands stay at `docs/` root. Do not treat a prompt, 
 | [AGENTS.md](AGENTS.md) | Standing orders for any Grok / Grok Bot / Grok Build session in this tree. |
 | [CLAUDE.md](CLAUDE.md) | Pointer that loads those standing orders into Claude Code sessions. |
 | [.claude/](.claude/) | Session setup for Claude Code on the web: startup hook and repository checks. No runtime. |
-| [docs/references.md](docs/references.md) | Adjacent books. Citations only. PDFs are not in this public repo. |
-| [docs/reason-model-map.md](docs/reason-model-map.md) | Physical shoe lace as reason model. How five adjacent works may and may not touch Core. |
+| [docs/references.md](docs/references.md) | Source catalog for behavioral-goal, research, and platform/toolchain material. Clipboards feed the lab; source citation alone does not enter Core. PDFs are not in this public repo. |
+| [docs/reason-model-map.md](docs/reason-model-map.md) | Physical shoe lace as reason model plus source-boundary map. Research machinery may enter the lab without becoming Core. |
 | [docs/clipboards/clipboard-five-stakes.md](docs/clipboards/clipboard-five-stakes.md) | Five-page KEEP/FORBID clipboard of the stake texts. Those adjacent sources do not supply Lace's sampling/retention machinery; current human rulings separately establish sampling as discovery, with retention/materialization still open. |
 | [docs/clipboards/kauffman-4ed-clipboard.md](docs/clipboards/kauffman-4ed-clipboard.md) | Kauffman 4ed hitch / diagram / Reidemeister / slide / virtual sheets. Not Core. |
 | [docs/clipboards/rowlands-zero-to-infinity-clipboard.md](docs/clipboards/rowlands-zero-to-infinity-clipboard.md) | Rowlands empty-start / no extra rooms / rewrite name-clash sheets. Not Core. |
@@ -83,7 +83,7 @@ Shelves (defrag pass 1–4). Hands stay at `docs/` root. Do not treat a prompt, 
 | [docs/clipboards/agentscope-clipboard.md](docs/clipboards/agentscope-clipboard.md) | AgentScope taxonomy for the HOLDER. ReAG stays off Graphic D. Not Core. |
 | [docs/clock/gearing-code-1to1.md](docs/clock/gearing-code-1to1.md) | 47 visual keys ↔ planned Shadow units; earlier picker observations are dated. AB/BC/CA binding descriptions were corrected in `bad05ca`; [pass 2](docs/plans/repo-update-pass-2-evidence.md#8-execution-dispositions) records the source checks, with browser/picker behavior still unverified. |
 | [docs/pointer-emission.md](docs/pointer-emission.md) | **Reconciled DRAFT, not accepted.** Binary Join/current growth and sampling architecture are recorded; exact sampling-derived retention/materialization remains `[GAP]`. |
-| [docs/clock/philosophy-map.md](docs/clock/philosophy-map.md) | Readings of three conceptual references: HCC-A, Coffee Cup, Water. The required-gearbox interpretation is superseded by the [human correction](docs/law-why-these-documents.md#conceptual-reference-documents). |
+| [docs/clock/philosophy-map.md](docs/clock/philosophy-map.md) | Behavioral-goal source readings for HCC-A, Coffee Cup, and Water. Their source-described machinery remains candidate lab machinery; the required-gearbox interpretation is superseded by the [human correction](docs/law-why-these-documents.md#conceptual-reference-documents). |
 | [docs/hologram/](docs/hologram/) | Hologram touches (PR / Story Defense). Shadow. Not Graphic E. |
 
 There is no `src/` on purpose. The constructor prose is reconciled, but **reconciled is not accepted** and exact sampling-derived retention/materialization remains unresolved. Core code still waits on explicit human acceptance, task authorization, and every premise required by that task.

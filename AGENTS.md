@@ -7,6 +7,7 @@ Claude Code sessions load this file through [`CLAUDE.md`](CLAUDE.md). These orde
 Source of record for the **Lace substrate**: [`docs/graphics/`](docs/graphics/) then [`docs/systems-manifest.md`](docs/systems-manifest.md).
 Behavioral-goal sources: HCC-A, The Coffee Cup, and Where the Water Is Loud / Dual Proofing Systems as classified by [`docs/law-why-these-documents.md`](docs/law-why-these-documents.md). **This repository is the lab for discovering and testing the systems required to make Lace function as described by those goals; those enabling systems are not predetermined.**
 Repo law for adjacent documents and future code: [`docs/law-why-these-documents.md`](docs/law-why-these-documents.md).
+Source clipboards are distributed: HCC-A / Coffee Cup / Water products live under [`docs/clock/`](docs/clock/README.md); research, specification, and toolchain products live under [`docs/clipboards/`](docs/clipboards/README.md). Treat source-described machinery as **candidate laboratory machinery** unless stronger evidence and authority establish more.
 There is no `src/` yet. That is intentional.
 
 ```
@@ -79,6 +80,7 @@ Guard the model. [`docs/pointer-emission.md`](docs/pointer-emission.md) now exis
 7. Ask before any commit that adds code, types, or a second store.
 8. Treat [`docs/law-why-these-documents.md`](docs/law-why-these-documents.md) as law for why adjacent texts exist and how code may exist.
 9. Deploy Layer III HTML only by [`docs/kit/githack-pwa-deploy.md`](docs/kit/githack-pwa-deploy.md): `rawcdn.githack.com` + full commit SHA + app path. Never `main`. Never GitHub Pages. A new commit is a new install URL.
+10. Use clipboards as the lab interface: preserve source mechanisms, constraints, hypotheses, falsifiers, and negative results; test them without promoting them into Core by citation or filename.
 
 ## Never
 

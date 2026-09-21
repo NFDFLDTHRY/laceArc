@@ -26,7 +26,7 @@ The four graphics define the project. Everything else on this page is derived fr
 |---|---|
 | [law-why-these-documents.md](law-why-these-documents.md) | **The live law.** Why the adjacent documents were staked, and the only posture under which code may exist |
 | [staking-the-workspace.md](staking-the-workspace.md) | The human's original staking ASCII, verbatim. Companion to the live law |
-| [references.md](references.md) | Adjacent works, conceptual references, source-shelf routes and recovered history. No PDF enters this repository |
+| [references.md](references.md) | Source catalog and routes for behavioral-goal, research, and platform/toolchain clipboards. These feed the lab without becoming Core by citation. No PDF enters this repository |
 
 ## Maps and readings
 
@@ -34,7 +34,7 @@ Derived from the Hands. Proposals and readings, never a second source.
 
 | File | What it is |
 |---|---|
-| [reason-model-map.md](reason-model-map.md) | The five stakes mapped onto the shoe: KEEP / FORBID per text |
+| [reason-model-map.md](reason-model-map.md) | Shoe-lace reason model and research-source boundary map: KEEP/FORBID plus candidate machinery that may be tested by the lab |
 | [atomic-primitives-map.md](atomic-primitives-map.md) | `[PROPOSAL]` P0–P4 and K1–K6: the smallest source-supported obligations, and the G1–G7 gaps |
 | [namespace-register.md](namespace-register.md) | Qualified identifier families: distinguish graphic panels, gears, audit stations, rulings and model notation by their defining source |
 | [systems-manifest-ascii.md](systems-manifest-ascii.md) | Manifest companion with dated passes and current qualifications; a derived view, never a replacement source |
