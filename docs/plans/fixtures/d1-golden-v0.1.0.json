@@ -1,0 +1,39 @@
+{
+  "fixture": "d1-golden",
+  "version": "0.1.0",
+  "source": "Graphic D panel 1, 'The 1D Lace (append-only array)'",
+  "source_of_record": "docs/graphics/data-structure-1d-array.png",
+  "transcription": "docs/graphics-close-reading.md, 'Panel D1, transcribed exactly'",
+  "verified_by_sighted_read": "2026-09-20, gate-question-surface pass 3",
+  "not": "This fixture is not Graphic D. It is the eleven rows the panel draws, carried so a candidate rule can be run against them. It settles nothing the PNG does not.",
+
+  "word_stream": ["PIE", "DESSERT", "PIE", "WHOLE", "CUSTOMER"],
+
+  "rows": [
+    {"index": 0,  "type": "WORD",    "value": "PIE",      "note": "First occurrence of PIE"},
+    {"index": 1,  "type": "WORD",    "value": "DESSERT",  "note": "First occurrence of DESSERT"},
+    {"index": 2,  "type": "POINTER", "ref_A": 0, "ref_B": 1, "note": "PIE relates to DESSERT"},
+    {"index": 3,  "type": "WORD",    "value": "PIE",      "note": "Second occurrence of PIE"},
+    {"index": 4,  "type": "POINTER", "ref_A": 3, "ref_B": 0, "note": "New PIE relates to first PIE"},
+    {"index": 5,  "type": "WORD",    "value": "WHOLE",    "note": "Occurrence of WHOLE"},
+    {"index": 6,  "type": "POINTER", "ref_A": 3, "ref_B": 5, "note": "This PIE relates to WHOLE"},
+    {"index": 7,  "type": "POINTER", "ref_A": 6, "ref_B": 4, "note": "A relationship participates in another relationship"},
+    {"index": 8,  "type": "WORD",    "value": "CUSTOMER", "note": "Occurrence of CUSTOMER"},
+    {"index": 9,  "type": "POINTER", "ref_A": 8, "ref_B": 7, "note": "CUSTOMER relates to that relationship"},
+    {"index": 10, "type": "POINTER", "ref_A": 9, "ref_B": 2, "note": "This relationship relates to an earlier relationship"}
+  ],
+
+  "properties_the_panel_states": [
+    "The array only grows. Nothing is deleted. Nothing is rewritten.",
+    "A pointer references earlier entries in the same array.",
+    "A pointer is also a section of Lace. It can be referenced by later entries.",
+    "Words and pointers are both entries.",
+    "3D (and higher) views are projections, not storage."
+  ],
+
+  "ruled_out_by_these_rows": [
+    "every adjacent WORD pair emits a POINTER -- 0001..0003 and 0005..0008 are adjacent WORDs with no pointer between them",
+    "slot order is chronological -- 4 of 6 pointers have ref_A later than ref_B",
+    "slot order is reverse-chronological -- 0002 and 0006 have ref_A earlier than ref_B"
+  ]
+}
