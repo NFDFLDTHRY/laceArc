@@ -1,7 +1,7 @@
-STATUS: FREE
+STATUS: HELD
 STATION: law
 OWNS: AGENTS.md CLAUDE.md docs/staking-the-workspace.md docs/law-why-these-documents.md docs/systems-manifest.md docs/pointer-emission.md docs/references.md CONTRIBUTING.md README.md .gitignore LICENSE docs/README.md
-AGENT: -
-BASE: -
-SINCE: -
-NOTE: Lab Source Architecture Pass 1 law alignment COMPLETE. Clipboard defined as distributed source-to-lab interface; candidate machinery preserved; no automatic authority jump into Core. Core mechanics, Pass 30, retention/materialization GAP and acceptance gate unchanged.
+AGENT: Astra-manifest-reconcile
+BASE: 0d1067c2f5b4a980a4ff3bbd879c438732c2d921
+SINCE: 2026-09-21T22:11:25.378Z
+NOTE: Manifest Reconciliation Pass 1 law phase: bind Pass-32 mechanism catalog to current systems-manifest contracts; repair active source provenance and stale current-law framing only. No acceptance, no retention rule.
