@@ -31,7 +31,7 @@
 |  FORBID-as-Core-write; NON-binding on Core/src/Phi.                  |
 |  No src/ until pointer-emission accepted.  One strand.               |
 |  No ascii Wave A this pass (Pass 4+).  Mechanisms = execute product. |
-|  Emission [GAP] sealed.                                              |
+|  Lace retention/materialization [GAP] sealed; WebNN supplies no rule.                                              |
 +======================================================================+
 ```
 
@@ -288,7 +288,7 @@ This file is **Shadow / Layer III documentation of CRD host-NN procedures**, not
    5. Refuse dispatch / ML task source as POINTER emission / Lace append / Φ gate.  
 4. **Choice points.** Which named tensors bind; sync throw vs timeline abort when lost.  
 5. **Halt.** Workload scheduled (or TypeError / InvalidStateError).  
-6. **Output certificate.** Host-NN scheduled execution (Shadow only) · **D7** cross-link · emission remains `[GAP]`.
+6. **Output certificate.** Host-NN scheduled execution (Shadow only) · **D7** cross-link · WebNN supplies no Lace retention rule; current sampling-derived retention/materialization remains `[GAP]`.
 
 ---
 
