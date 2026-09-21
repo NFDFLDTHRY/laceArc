@@ -1,7 +1,7 @@
-STATUS: HELD
+STATUS: FREE
 STATION: maps
 OWNS: docs/reason-model-map.md docs/rust-nostd-*.md docs/atomic-primitives-map.md docs/clock/gearing-code-1to1.md docs/coherence-audit*.md docs/clock/system-mathematical-model.md docs/defrag-plan.md docs/plans/** docs/namespace-register.md docs/*.md (catch-all: any unmatched file at the docs/ root)
-AGENT: Astra-sampling-reconcile
-BASE: a5991e9d068634221c53f3b7717dfbdbdc938f1a
-SINCE: 2026-09-21T21:05:00Z
+AGENT: -
+BASE: -
+SINCE: -
 NOTE: Final Pass 6 closure after F6-2 manifest correction. Re-pin global systems ASCII as FINAL non-receipt content edit, then read-only sweeps, findings/index, tree/station verification, release. No further semantic/model/control edits unless a falsifier fires. coord.sh NOT_RUN.
