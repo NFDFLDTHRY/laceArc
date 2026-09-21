@@ -1145,3 +1145,31 @@ It is a position-by-scale field whose structure becomes visible only as the corp
 The POINTER map then preserves selected/cross-linked relational history over that field, including relations that are not themselves contiguous cells.
 
 That is what the toy test missed.
+
+
+---
+
+## 23. Final verification
+
+Final pre-release tip:
+
+**a2e27f875830b05e77be6510eedf08031c02b5e6**
+
+Tracked tree:
+
+- 699 paths
+- recursive tree not truncated
+- src/ paths: 0
+- Cargo.toml paths: 0
+- .rs files: 0
+
+Law surfaces remained byte-unchanged:
+
+- pointer-emission.md: 51224368ae966b6c480746925caa2cade970842e
+- systems-manifest.md: 6f0310099cbcf482ad884f653f423b4e806f724b
+
+Law station remained FREE.
+
+Pass 2 changed maps-owned plan/findings/index surfaces only.
+
+**PASS 2 COMPLETE.**
