@@ -1,6 +1,6 @@
 # Roles — who holds which station, and why
 
-**Status:** kit · steward · `[PROPOSAL]` until the human affirms. Not Core. Emission `[GAP]`. No `src/`.
+**Status:** kit · steward · `[PROPOSAL]` until the human affirms. Not Core. **Current constructor reconciled; arbitrary relation/sample selection `[GAP]`; pointer contract not accepted.** No `src/`.
 **Evidence:** every row cites [the census](../plans/lace-context-iter7-pass-1-actors.md) (commit hashes and station lines). A role here is a description of demonstrated behaviour, not a grant: **permissions are the human's**, and the law station's allow-list (F3) is a ruling that has not been taken.
 **Applied here (no ruling needed):** role cards; the trailer convention; an **advisory** unsigned-commit count in `check-docs.sh`. **Not applied (needs the human):** a `CONTRIBUTING.md` line (law); claim durations in `coord.sh` (coord, code); the law allow-list; push for cloud sessions.
 
@@ -49,4 +49,4 @@ An unsigned commit is not refused — the tree has no gate without a human rulin
 
 If you cannot do it to a shoe lace in your hands, you may not do it to laceArc.
 
-Hands that sign the knot can be asked to tie the next one. Emission remains `[GAP]`.
+Hands that sign the knot can be asked to tie the next one. **Constructor is known in the reconciled draft; arbitrary relation/sample selection remains `[GAP]`, and human acceptance remains absent.**
