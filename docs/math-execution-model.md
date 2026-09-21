@@ -1,13 +1,14 @@
 # Mathematical execution model — Lace
 
-**Status:** ROOT / TOUCH / FOLD Pass 3 mathematical construction + Pass 4 law reconciliation + Pass 6 provenance reclassification, current 2026-09-21. **Pointer construction is specified and reconciled; arbitrary non-root relation-assertion provenance / authority remains the named [GAP].**
-**Campaign:** Pass 1 mapped the root/touch/fold delta; Pass 2 formalized LAND + seen-root TOUCH; Pass 3 formalizes unseen-root creation and recursive sample-to-point GROUND.
+**Status:** ROOT / TOUCH / FOLD constructor history + SAMPLING / DENSITY / EMERGENCE Passes 1–6 reconciliation, current 2026-09-21. **Pointer construction and the human-ruled sampling/search architecture are reconciled; exact sampling-derived retention/materialization remains the named [GAP].**
+**Campaign:** ROOT / TOUCH / FOLD established LAND/root/RootTouch/binary Join/finite grounding; its provenance-era Pass 6 is retained as history. SAMPLING / DENSITY / EMERGENCE Passes 1–5 establish the later human-ruled 1D+2D sampling/search model; this Pass 6 propagates that active reconciliation.
 **Pass 3:** [plan](plans/math-execution-root-touch-fold-pass-3-plan.md) · [findings](plans/math-execution-root-touch-fold-pass-3-findings.md).  
 **Pass 4 reconciliation:** [plan](plans/math-execution-root-touch-fold-pass-4-plan.md) · [findings](plans/math-execution-root-touch-fold-pass-4-findings.md).  
-**Pass 6 provenance audit:** [plan](plans/math-execution-root-touch-fold-pass-6-plan.md) · [findings](plans/math-execution-root-touch-fold-pass-6-findings.md).
+**Historical provenance audit:** [ROOT / TOUCH / FOLD Pass 6 plan](plans/math-execution-root-touch-fold-pass-6-plan.md) · [findings](plans/math-execution-root-touch-fold-pass-6-findings.md).  
+**Sampling campaign:** [Pass 1 findings](plans/sampling-density-emergence-pass-1-findings.md) → [Pass 5 findings](plans/sampling-density-emergence-pass-5-findings.md); Pass 6 reconciliation is current.
 **Physical POINTER constructor:** binary \(\mathsf{Join}(a,b)\), grounded by D2/D1 plus H5/H6 and now reconciled into [pointer-emission.md](pointer-emission.md) / [systems-manifest.md](systems-manifest.md). The law draft remains **not accepted**.
-**Current growth:** ARRIVE → unseen BECOMES ROOT / seen ROOT TOUCH → optional/required sample GROUND by repeated Join → Continue.
-**N-D:** recursive points-of-points are stored only as WORD/POINTER rows; dot-to-dot 2D/3D/N-D is a projection of those participation paths, never a second store.
+**Current growth:** ARRIVE → unseen BECOMES ROOT / seen ROOT TOUCH → derive multi-scale sampling structure → **[OPEN retain/materialize]** → append retained Join(s) → Continue.
+**Sampling vs N-D:** a later human-ruled 2D position×scale sampling surface is derived working machinery and is not stored. Graphic-C dot-to-dot 2D/3D/N-D remains a separate projection of retained participation paths, also never a second store.
 **No src/.**
 
 **Source roles:** Graphics A–D remain source of record; [systems-manifest.md](systems-manifest.md) is derived; [systems-manifest-ascii.md](systems-manifest-ascii.md) is a lower-authority companion. Human H4–H6 provide the current root/grounding rulings. This model does not edit or accept law-owned files by implication.
@@ -30,12 +31,12 @@ Steward line: *Every arrival adds wire. Unseen wire becomes its root. Seen wire 
 | D1 0010 covers the whole eleven-row D1 prefix | **Yes** |
 | Whole-prefix covering point exists for every finite prefix by recursive Join | **Yes, constructive theorem** |
 | N-D coordinates / dimension rows stored in Core | **No** |
-| What authoritatively originates an arbitrary non-root ordered relation/sample | **Not determined here** — relation-assertion provenance / authority [GAP] |
+| Exact general condition that retains sampling-derived structure / materializes an ephemeral sampled operand | **Not determined here** — retention/materialization [GAP] |
 | G1 word-equality policy | **Open** |
 | pointer-emission.md accepted as a whole | **No** |
 | Permission to add src/ | **No** |
 
-The old monolithic POINTER-emission blocker is split. **Constructor/grounding mechanics are defined; the remaining hole is relation-assertion provenance / authority, not an established unfinished scheduler function.**
+The old monolithic POINTER-emission blocker was first split into constructor/grounding plus a presumed relation-provenance question. H7–H12 supersede that premise as the active model: **sampling discovers structure; the remaining hole is the exact retention/materialization transition, not a semantic chooser and not an established unfinished scheduler function.**
 
 ## S1 — Universe and state
 
@@ -255,7 +256,66 @@ creates one new point whose reach includes both portions. D1 0007 and 0010 are f
 
 Different grounding trees are allowed to remain different Lace history. The model does not canonicalize them into one structure merely because they reach the same leaves.
 
-### S3.5 Projection / dot-to-dot N-D view
+### S3.5 Derived 2D sampling working surface
+
+Later human rulings H7–H12 add a derived working surface distinct from Graphic-C projection.
+
+For the bounded contiguous-root-key candidate tested in SAMPLING / DENSITY / EMERGENCE Pass 2, let \(r_t\) be the root identity of the WORD at source-word position \(t\), and define:
+
+\[
+\mathcal{S}[n,t]=(r_{t-n+1},\ldots,r_t),
+\qquad 1\le n\le t+1.
+\]
+
+This is a **derived read/computation**, not a stored row family. It may be reconstructed locally around an anchor rather than materialized globally.
+
+Campaign-level consequences:
+
+- sampled observation does not imply retained POINTER append;
+- recurrence/overlap can form multi-scale ridges across \(n\);
+- structures at different sampling levels may later participate through ordinary binary Join;
+- no \(n\) field is required in the POINTER schema by current evidence;
+- exact recurrence is not the universal retention rule;
+- G1/tokenization still bounds exact root-key identity outside the bounded specimens.
+
+The active open transition is:
+
+\[
+\boxed{
+\text{sampling evidence}
+\longrightarrow
+[\text{OPEN retention/materialization}]
+\longrightarrow
+\text{retained POINTER topology}.
+}
+\]
+
+If a structure to be retained is only an ephemeral sample, the rule that grounds/resolves it into an addressable 1D operand is part of the same open boundary.
+
+### S3.6 Star search as a derived read
+
+Passes 3–5 map a star as a read anchor, not a stored table.
+
+A layered read may derive:
+
+- lexical root / occurrences / RootTouch;
+- repeated anchored pattern frontiers from the local sampling cone;
+- retained POINTER witness paths;
+- explicit neighboring-star hops with pattern witnesses.
+
+Flat transitive closure is not a sufficient result model because it saturates. Search preserves frontiers and path witnesses.
+
+A minimal selected-result replay handle is:
+
+\[
+\mathsf{SearchHandle}=(through,anchor,item),
+\]
+
+where the tagged item may identify a lexical row, a pattern by \(n\)+one exemplar WORD row, a retained POINTER target, or a neighboring star plus its via-pattern witness.
+
+The handle is disposable derived state. Given the immutable Lace prefix named by through, its structural content can be reconstructed; it is not a Core row, cache authority, or write interface.
+
+### S3.7 Projection / dot-to-dot N-D view
 
 \[
 \pi:L\rightarrow\mathsf{View},
@@ -396,12 +456,14 @@ Grounding then uses the same Join constructor on whatever finite sample / portio
 | one new row for \(n+1\) sample extension? | **PROVED / H6-grounded** |
 | one global row per cardinality? | **REFUSED** — collapse |
 | N-D requires second store? | **REFUSED** — projection only |
-| what authoritatively originates the arbitrary non-root relation/sample? | **[GAP]** — automatic Core chooser not established; external assertion interface not established |
+| exact sampling-derived retention/materialization rule? | **[GAP]** — sampling discovers structure, but the universal retain-when/materialize-operand condition is not established |
 | G1 word equality | **OPEN** |
 
-The remaining provenance question is no longer a missing POINTER constructor. Once an ordered relation/sample is specified, emission is mechanically determined by binary Join. Pass 6 does not establish whether the relation assertion originates inside or outside Core.
+The remaining question is no longer arbitrary relation provenance. Once retained operands are addressable, append is mechanically determined by binary Join. What remains open is when sampling-derived structure is retained and how an ephemeral sampled structure becomes addressable when retention requires it.
 
 ### S4.6 Current STEP schema
+
+The current architecture is intentionally split between ruled append acts and derived sampling:
 
 \[
 \mathsf{STEP}
@@ -412,11 +474,23 @@ The remaining provenance question is no longer a missing POINTER constructor. On
 \mathsf{ROOT\ TOUCH}, & \text{if seen}
 \end{cases}
 ;
-[\mathsf{GROUND}(S)\text{ for selected sample }S];
+\mathsf{SampleRead};
+[\mathsf{Retain/Materialize}\;\text{OPEN}];
 \mathsf{Continue}.
 \]
 
-GROUND(S) is the repeated-Join construction above, not a separate storage engine. The construction presumes an already-specified sample \(S\); **what authoritatively originates/asserts that sample remains [GAP]**. Storage of its grounded result is fully specified.
+\(\mathsf{SampleRead}\) is derived working machinery, not a second store. When retention is actually warranted and operands are addressable, the physical write uses the same binary \(\mathsf{Join}\) / repeated-grounding construction.
+
+This model does **not** define a universal Retain/Materialize function. It specifically refuses to substitute:
+
+- every sampled cell;
+- every adjacent pair;
+- exact-repeat-only;
+- first-seen-every-cell;
+- cheapest contiguous grounding;
+- semantic similarity / learned chooser.
+
+RootTouch remains the closed mandatory special case.
 
 ## S5 — Contracts I / II / III
 
@@ -426,9 +500,9 @@ GROUND(S) is the repeated-Join construction above, not a separate storage engine
 | **II Arrival** | Thin ordered feed; every successful word arrival lands through \(\mathsf{Arrive}\); zero own store | Piece 3; 9–10 as *use of I* | Lexicon / document store at the edge |
 | **III Projection** | \(\pi\) read-only | Piece 13; views of 7, 12, 15; Graphics A–C as views | Write-back into \(L\) |
 
-Piece 12 (dimension) is a **reading of I**, not Contract IV.
+Piece 12 (dimension) is a **reading of I**, not Contract IV. The H7–H12 2D sampling surface is also derived working state rather than a new persistent contract/store; it is distinct from Contract III projection.
 
-No query / delete / transaction / multi-Lace interface is supplied by Hands.
+No Core write-query / delete / transaction / multi-Lace interface is supplied by Hands. The mapped star-search expansion operations are derived read operations only.
 
 ---
 
@@ -443,7 +517,7 @@ Relative to Graphic D and Pieces 1, 6, 13, 14 — each is **not** a Core morphis
 5. Second Lace / second row-kind schema  
 6. Write-back from any projection  
 7. Label split/merge/create implemented as mutate-WORD  
-8. Filling arbitrary relation-assertion provenance / authority from Shadow Anchor / OBS / unrelated conceptual machinery  
+8. Filling the open sampling-derived retention/materialization rule from Shadow Anchor / OBS / unrelated conceptual machinery  
 9. Treating ASCII companion or emission DRAFT commit as Hands acceptance  
 10. Adding `src/` or Cargo under color of this document
 
@@ -466,9 +540,10 @@ Relative to Graphic D and Pieces 1, 6, 13, 14 — each is **not** a Core morphis
 | whole-prefix point | H2 + D1 0010 | constructive theorem + bounded witness |
 | N-D dot view | H6 + C5/C7/C8/C11 | projection of recursive points, not store |
 | multiple grouping trees | Rule Zero / no collapse | retained as distinct Lace history; no canonicalization required by current sources |
-| arbitrary relation-assertion provenance | not stated | Origin(rho) remains OPEN; automatic Core chooser and external assertion interface are both unestablished |
+| sampling-derived relationship discovery | H7–H12 | current; no arbitrary semantic chooser is the intended model |
+| retention/materialization condition | not fully stated | OPEN: exact retain-when rule and ephemeral-sample grounding boundary |
 | G1 identity | existing open | still open |
-| pointer-emission.md | Pass 6 reconciled law surface | binary Join current; arbitrary non-root relation-assertion provenance/authority GAP; not accepted |
+| pointer-emission.md | Sampling Pass 6 reconciled law surface | binary Join + sampling architecture current; retention/materialization GAP; not accepted |
 
 No second store, sample registry, dimension table, or new row kind is introduced.
 
@@ -476,7 +551,7 @@ No second store, sample registry, dimension table, or new row kind is introduced
 
 | Field | Value |
 |---|---|
-| Current campaign | ROOT / TOUCH / FOLD Pass 3 construction + Pass 6 provenance audit **EXECUTED** |
+| Current campaign | SAMPLING / DENSITY / EMERGENCE Passes 1–5 **EXECUTED** + Pass 6 reconciliation current; ROOT / TOUCH / FOLD provenance audit retained as history |
 | Successful arrival | LAND as WORD |
 | Unseen word | new WORD becomes root |
 | Seen word | new WORD + RootTouch Join |
@@ -490,11 +565,11 @@ No second store, sample registry, dimension table, or new row kind is introduced
 | Sample size | selected-point cardinality |
 | Global size-\(n\) registry row | refused |
 | N-D | projection of recursive points-of-points |
-| Remaining provenance issue | what authoritatively originates/asserts an arbitrary non-root ordered relation/sample |
+| Remaining retention issue | exact sampling-derived retain/materialize condition; ephemeral sample→addressable operand when needed |
 | G1 word identity | OPEN |
-| pointer-emission.md | Pass 6 provenance-reconciled draft / not accepted |
+| pointer-emission.md | Sampling Pass 6 reconciled draft / not accepted |
 | src/ | not authorized |
 
-**Current steward tests:** no old row is rewritten; all Join refs are backward; every grounded point is itself Lace; repeated Join represents arbitrary finite selected portions; equal-size samples do not collapse; N-D remains a view; constructor mechanics no longer depend on an unknown arity/schedule once the sample operands are selected.
+**Current steward tests:** no old row is rewritten; all Join refs are backward; every grounded point is itself Lace; repeated Join can ground arbitrary finite selected portions; sampled observation remains distinct from retained append; the sampling surface is derived and distinct from N-D projection; search is read-only/disposable; the exact retention/materialization rule is not invented.
 
 *Shoe in hands. Tie two existing parts with a new piece of the same lace. That new tie is itself something later lace can tie through. Repeat it and a whole chosen portion becomes one point without any part disappearing.*
