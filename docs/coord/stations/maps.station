@@ -1,7 +1,7 @@
-STATUS: FREE
+STATUS: HELD
 STATION: maps
 OWNS: docs/reason-model-map.md docs/rust-nostd-*.md docs/atomic-primitives-map.md docs/clock/gearing-code-1to1.md docs/coherence-audit*.md docs/clock/system-mathematical-model.md docs/defrag-plan.md docs/plans/** docs/namespace-register.md docs/*.md (catch-all: any unmatched file at the docs/ root)
-AGENT: -
-BASE: -
-SINCE: -
-NOTE: Astra-sampling SAMPLING / DENSITY / EMERGENCE Pass 2 PLAN committed at e3678e9d4f3d22c0831681bb9b8f19ef32a84e4a; plans index 53da2dc6d9cd2da0e96ee901866865b73460422a. Pass 2 not executed. Scope: minimal nonsemantic 2D lattice/addressability witness only: endpoint WORD-position × contiguous span n, root-key tuple identity, direct-window vs endpoint-extension vs overlap-merge equivalence, D1 15-cell lattice, exact online recurrence field, D1 WORD-leaf/Addr/grounding-cost audit, APPLES B0/B1 boundary controls, 20 falsifiers. Retention threshold/policy remains explicitly out of scope. No law edit. No src/Cargo. coord.sh NOT_RUN.
+AGENT: Astra-sampling
+BASE: 6e1274e7131ab9546fc3501daa281284f32303f3
+SINCE: 2026-09-21T02:05:00Z
+NOTE: User-directed SAMPLING / DENSITY / EMERGENCE Pass 2 execution with scale amendment. Execute original D1/APPLES minimal-lattice plan plus real-prose scale ladder using uploaded The Coffee Cup: first two form-feed pages and full ~1216-word text. Goal: identify structures only evident at larger scale. No law edit. No src/Cargo. Connector claim; coord.sh NOT_RUN.
