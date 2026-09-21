@@ -1,12 +1,12 @@
 # Lace agent package
 
-This file is kit, not Hands. Live law is [`AGENTS.md`](../../AGENTS.md) and [`docs/law-why-these-documents.md`](../law-why-these-documents.md) at the current tip. No wrapper here substitutes for those.
+This file is kit, not Hands. Live law is [`AGENTS.md`](../../AGENTS.md) and [`docs/law-why-these-documents.md`](../law-why-these-documents.md) at the current tip. No wrapper here substitutes for those. Current structural work also reads the [Pass-32 global mechanism catalog](../systems-manifest-ascii.md#pass-32--manifest-reconciliation-pass-1--canonical-mechanism-catalog) for mechanism existence/connections and the [systems-manifest contract registry](../systems-manifest.md#current-mechanism-contract-registry--manifest-reconciliation-pass-1) for mechanism behavior/boundaries.
 
 **THEN:** prepared 18 September 2026 against `NFDFLDTHRY/laceArc` commit `4fe984bb098d5ca21c9704234df4fddd53056efb`. At that pin `docs/pointer-emission.md` was absent. The file opened with a STALE banner so agents would not treat this package as the tip.
 
 **Earlier re-read:** 19 September 2026 against claim BASE `044257ceb95e78612d302a204a9438c72d06aa96`. The emission file then existed as a draft; acceptance and enforcement were not established. This pin records that reading, not the current tip.
 
-**Current reading, ROOT / TOUCH / FOLD Pass 5:** [`docs/pointer-emission.md`](../pointer-emission.md) is now a **reconciled DRAFT, not accepted**. Current WORD/root/RootTouch/binary Join/finite-sample mechanics are recorded; arbitrary non-root-touch relation/sample selection remains `[GAP]`. Historical campaign Answer lines and their custody record remain preserved. The [live law's opening](../law-why-these-documents.md) still preserves its human-authored existence/acceptance wording pair; AGENTS.md and the IMPLEMENTATION LAW acceptance requirement control implementation. This package does not resolve or waive that gate.
+**Current reading, Manifest Reconciliation Pass 2:** [`docs/pointer-emission.md`](../pointer-emission.md) is a **reconciled DRAFT, not accepted**. Current WORD/root/RootTouch/binary Join/finite-grounding mechanics plus the human-ruled derived sampling/search architecture are recorded; **exact sampling-derived retention/materialization remains `[GAP]`**. The earlier arbitrary-selector question survives only as dated campaign history. Historical Answer lines and their custody record remain preserved. The [live law's opening](../law-why-these-documents.md) still preserves its human-authored existence/acceptance wording pair; AGENTS.md and the IMPLEMENTATION LAW acceptance requirement control implementation. This package does not resolve or waive that gate.
 
 This documentation package supplies controls for local and cloud agents. [CLAUDE.md](../../CLAUDE.md) and [CONTRIBUTING.md](../../CONTRIBUTING.md) explicitly require the control prompt and task forms. AGENTS.md supplies standing orders and requires the context pass. These routes do not prove that every external harness loads or enforces the files.
 
@@ -33,7 +33,7 @@ Read docs/kit/agent-control.md and docs/kit/agent-task-template.md.
 Then follow the law's source-reading order for the assigned task.
 Return a source-specific receipt before proposing Core structure.
 Pointer construction is recorded in a reconciled but unaccepted draft.
-Arbitrary non-root-touch relation/sample selection remains [GAP].
+Exact sampling-derived retention/materialization remains [GAP].
 Core still requires identifiable human acceptance of the exact contract
 plus every premise required by the assigned task. File existence or
 reconciliation is not acceptance. Permanent prohibitions remain.
