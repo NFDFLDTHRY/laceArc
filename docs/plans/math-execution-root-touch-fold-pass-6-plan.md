@@ -1,6 +1,6 @@
 # Mathematical execution model — ROOT / TOUCH / FOLD campaign — Pass 6 PLAN
 
-**Status:** PLAN — NOT EXECUTED.
+**Status:** **EXECUTED 2026-09-21 — PASS 6 COMPLETE.**
 **Name:** SELECTION / ASSERTION / PROVENANCE
 **Planning station:** maps (Astra-selection).
 **Pinned main before claim:** a2796948118d91753f45c68a00a73ff7d5cdb4cf.
@@ -916,3 +916,90 @@ Do not build a chooser merely because the constructor needs operands.
 First prove that the machine is supposed to choose.
 
 A shoe lace can join two pieces once your hands put them together. That fact alone does not say what chose those two pieces.
+
+
+---
+
+## 22. Execution receipt
+
+### Phase A — maps
+
+- claim: aa02d8fd88e98e40dc82da6d5970ff4f34316b69
+- findings: 266c6388388f7672ae3dadcf48d2dc17a89979d6
+- maps release: 5ce84af5739218647761e26c552592dde07876b0
+- verdict: **V-C — ASSERTION-PROVENANCE GAP**
+
+Phase-A results:
+- D1 provenance: 1 ruled special case + 5 OPEN relation origins
+- PC-2 whole-prefix-per-arrival: REFUTED as universal
+- PC-3 one persistent active sample: REFUTED as complete rule
+- PC-4 all-portions-auto: REFUTED as obligation
+- automatic Core chooser requirement: NOT ESTABLISHED
+- relation-assertion provenance / authority: remaining GAP
+
+### Phase B — law
+
+- claim: c7a403265a5b2f4be69ca97afd75438ace4f53ae
+- pointer-emission: c4a399bd537393888a87acbf533ec932e0f69dca
+- systems-manifest: 491421f93bf8336108e5ca3831154d544759d99b
+- manifest stale-label sweep: 2ec1174e8903bea7b459361ee23b624eb87430a1
+- law release: a61a3913106debb42c74e690f79ef2e6b6f15726
+
+Law result:
+
+\[
+\operatorname{Origin}(\rho)=[GAP]
+\]
+
+replaces the stronger implied assumption of an unfinished automatic selector.
+
+No external relation interface is established.
+
+### Phase C — maps
+
+- maps reclaim: 311c86cc640782d2d9ce41f2f1fce65ca0909c67
+- math-model status refresh: 57908a7779226dac72b3677837266e2acdc3d3a9
+- propagation docket: 0bc86bd800732bc6fce8f07447b6d28ce1a43d9d
+- final findings: f01581cecebb183e82d83ee39c329fdbcf384298
+
+### Final proof board
+
+**P6-1 through P6-16: 16/16 PASS.**
+
+### Implementation check
+
+At closeout tip 0bc86bd800732bc6fce8f07447b6d28ce1a43d9d:
+- 691 tracked paths
+- recursive tree not truncated
+- src/: 0
+- Cargo.toml: 0
+- .rs files: 0
+
+### Final state
+
+Settled:
+- LAND / WORD
+- unseen -> root
+- seen -> RootTouch
+- binary Join
+- earlier same-line WORD/POINTER operands
+- finite-sample grounding
+- branched relation-of-relation construction
+
+Open:
+- **arbitrary non-root relation-assertion provenance / authority / ownership**
+
+Not established:
+- automatic Core chooser
+- external assertion/write interface
+- hidden Contract-II relation payload
+- Layer-III write path
+- route/document selector
+
+Acceptance:
+- ABSENT
+
+Implementation:
+- still forbidden
+
+**STOP. No Pass 7 opened automatically.**
