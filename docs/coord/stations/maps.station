@@ -1,7 +1,7 @@
-STATUS: HELD
+STATUS: FREE
 STATION: maps
 OWNS: docs/reason-model-map.md docs/rust-nostd-*.md docs/atomic-primitives-map.md docs/clock/gearing-code-1to1.md docs/coherence-audit*.md docs/clock/system-mathematical-model.md docs/defrag-plan.md docs/plans/** docs/namespace-register.md docs/*.md (catch-all: any unmatched file at the docs/ root)
-AGENT: Astra-sampling
-BASE: 6e1274e7131ab9546fc3501daa281284f32303f3
-SINCE: 2026-09-21T02:05:00Z
-NOTE: User-directed SAMPLING / DENSITY / EMERGENCE Pass 2 execution with scale amendment. Execute original D1/APPLES minimal-lattice plan plus real-prose scale ladder using uploaded The Coffee Cup: first two form-feed pages and full ~1216-word text. Goal: identify structures only evident at larger scale. No law edit. No src/Cargo. Connector claim; coord.sh NOT_RUN.
+AGENT: -
+BASE: -
+SINCE: -
+NOTE: Astra-sampling SAMPLING / DENSITY / EMERGENCE Pass 2 COMPLETE. Execution claim ec389daca3ff9cb21c70f13b3d44d9e974d2724e; findings d6062a252d4bd652d73885c6dacd3f780490c4e3 + final verification 18de12e97faafaccffcbe103f1fac729ac75cece; plan close 176e853aaffcea5d77ed9ca18a1e95c10481d292; index a2e27f875830b05e77be6510eedf08031c02b5e6. Human scale amendment used user-provided The Coffee Cup as prose-only specimen: first 2 pages 375 tokens / 70,500 conceptual cells; full 1,219 tokens / 743,590 conceptual cells. Key new finding: exact recurrence forms nested multi-scale ridges across distant text; low-n heat broad, high-n heat sparse. Minimal contiguous lattice survives; D1 retained POINTER map is an overlay, not identical to lattice cells. Repeat-only, first-seen-every-cell, cheapest-contiguous-cell retention rules refuted. Primary residuals: structural retention trigger and ephemeral 2D-cell→1D address bridge; recursive identity/combined heat remain open. 20/20 proof board. Law unchanged. Final tree 699 paths, no src/Cargo.toml/.rs. coord.sh NOT_RUN.
