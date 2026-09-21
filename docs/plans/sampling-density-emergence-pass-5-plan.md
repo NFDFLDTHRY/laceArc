@@ -1,6 +1,6 @@
 # SAMPLING / DENSITY / EMERGENCE campaign - Pass 5 PLAN
 
-**Status:** PLAN - NOT EXECUTED.
+**Status:** **EXECUTED 2026-09-21 - PASS 5 COMPLETE.**
 **Name:** MINIMAL DERIVED SEARCH RESULT CONTRACT / LOCAL RECONSTRUCTION
 **Planning station:** maps (Astra-search-contract).
 **Pinned main before claim:** 95d13dd46e3bfce8a0a604d9ca1ffe3936a5d736.
@@ -854,3 +854,80 @@ A search result is allowed to disappear.
 The Lace is not.
 
 If the result cannot be thrown away and reconstructed exactly from the named Lace prefix, the search layer has accidentally become another store.
+
+
+---
+
+## 28. Execution receipt
+
+Pass 5 executed as one complete pass under maps.
+
+- execution claim: 78d56eccb4efc24ced3f728de3b81c3757804eb3
+- findings: e4d7ba168c509cbfe0b9f8c126d29d8f11112eb4
+
+### Main result
+
+The planned SearchRead envelope shrank to:
+
+\[
+SearchHandle=(through,anchor,item).
+\]
+
+Tagged item variants:
+
+\[
+LEXICAL(row)
+\]
+
+\[
+PATTERN(n,exemplar\_start)
+\]
+
+\[
+POINTER(target)
+\]
+
+\[
+STAR\_HOP(to\_root,via\_pattern).
+\]
+
+Most apparent result fields are derived, not required:
+- pattern tuple;
+- occurrence starts;
+- support;
+- pattern edges;
+- pointer witness rows;
+- pointer edges;
+- pointer distance;
+- path lists/count;
+- hop depth.
+
+### Local reconstruction
+
+Exact Pass-4 pattern frontiers were recovered using only local anchor cones:
+- QUESTION: 105 cells -> 13/13 classes;
+- ANSWERS: 75 -> 6/6;
+- IS: 1297 -> 42/42;
+
+versus 743,590 full Coffee Cup conceptual cells.
+
+D1 PIE pointer participation was exactly recovered with one forward scan and no reverse index.
+
+### Primary leftovers
+
+Search semantics are substantially closed at maps level.
+
+Remaining work is:
+- law/model/global-ASCII reconciliation and propagation;
+- optional implementation efficiency/caching;
+- cross-Lace identity only if portability across separate Lace instances becomes required.
+
+No Pass 6 opened automatically.
+
+### Scope preserved
+
+- no semantic ranking;
+- no retention rule;
+- no persistent search store;
+- no law edit;
+- no src/Cargo/Rust.
