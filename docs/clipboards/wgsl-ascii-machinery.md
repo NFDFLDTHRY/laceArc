@@ -30,7 +30,7 @@
 |  No Lace emission tokens inside fences (stamps under).               |
 |  FORBID-as-Core-write; NON-binding on Core/src/Phi.                  |
 |  No src/ until pointer-emission accepted.  One strand.               |
-|  Status: Pass 4+5 EXECUTED (Order Proposal Shadow). Emission [GAP]. |
+|  Status: Pass 4+5 EXECUTED (Order Proposal Shadow). WGSL supplies no Lace retention rule; current retention/materialization [GAP]. |
 +======================================================================+
 ```
 
