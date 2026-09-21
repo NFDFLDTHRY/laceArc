@@ -4,6 +4,9 @@
 
 **Status: [PROPOSAL] for the decomposition and notation in this map.** The cited source facts remain source facts; deductions are marked `[INFERENCE]`. This is a read-only specification map, not an accepted emission contract or Core implementation. “Atomic” means small specification obligations here. It asserts neither hardware atomicity nor a proof that this is a mathematically minimal basis.
 
+
+**Current-law qualification — ROOT / TOUCH / FOLD Pass 5.** This map predates the Pass-4 law reconciliation. Read its dated G2/source-silence statements as historical unless qualified here. Current constructor facts are: every successful arrival appends WORD; unseen WORD becomes root; seen occurrence RootTouches root; POINTER is binary Join over two selected ordered earlier same-line WORD/POINTER points; repeated Join grounds finite selected samples; adjacency alone is not a trigger. **The remaining Core-adjacent gap is arbitrary non-root-touch relation/sample selection.** G1/tokenization and the other independent obligations remain open. The reconciled pointer-emission draft is still not human-accepted, so no implementation authorization follows.
+
 **Source revision:** `NFDFLDTHRY/laceArc` at `ba6a0ee5660dc4222701d8c5b0a38f4a4d6af041`. Graphic letters refer to the [four canonical graphics](graphics/README.md); piece numbers refer to the [systems manifest](systems-manifest.md). The complete [staking law](staking-the-workspace.md) and [live law](law-why-these-documents.md) remain binding. This map does not replace either text.
 
 ## 1. The atomic map
@@ -15,8 +18,8 @@ These are different roles within **one irreducible contract**, not five services
 | P0 | **One strand / one array** | Carrier. Start empty; all WORD and POINTER sections belong to the same ordered line. The strand has two ends and remains open to further growth. | One cord; earlier wrapping stays on that cord. | A1; B1; C1; D1; live law; Piece 1, 6; RM1 |
 | P1 | **Occurrence at a position** | Identity and order intrinsic to P0. Each appended section has its own permanent position. Two occurrences of the same word remain two sections. | Two passes through one eyelet remain two passes. | D1–D2, D5; Piece 4, 6, 8; RM2, RM7 |
 | P2 | **WORD** | Entry form. A word occurrence carries its word value at its own position. The examples establish repeated occurrences; the general word-boundary and identity rules remain G1. | A new passage through the word's formation. | A2, A5; B2–B3; D2, D5; Piece 4 |
-| P3 | **POINTER** | Entry form. A new section refers to already existing earlier positions on the same line. Those positions may contain WORD or POINTER. The new POINTER can itself be referred to later. | A later grab can involve an earlier wrap while leaving it intact. This analogy does not select or schedule a POINTER. | B8; C7; D2–D3, D6; Piece 5, 11; RM4 |
-| P4 | **APPEND** | Growth effect. Add a new section at the end, preserving every earlier section and position. This states the permitted effect, not which POINTER should be appended: G2 remains open. | More cord and another pass; previous passes remain. | B1, B12; C1, C12; D1 and footer; Piece 1–2, 6 |
+| P3 | **POINTER** | Entry form. A new section is a binary Join over two selected ordered earlier positions on the same line. Either position may contain WORD or POINTER. The new POINTER can itself be referred to later. | A later grab can involve an earlier wrap while leaving it intact. This analogy does not select or schedule a POINTER. | B8; C7; D2–D3, D6; Piece 5, 11; RM4 |
+| P4 | **APPEND** | Growth effect. Add a new section at the end, preserving every earlier section and position. This states the permitted append effect. Current law fixes the binary Join constructor once operands are selected; the arbitrary relation/sample selector remains open. | More cord and another pass; previous passes remain. | B1, B12; C1, C12; D1 and footer; Piece 1–2, 6 |
 
 P1 follows from the indexed carrier; it is listed separately because occurrence identity is a separate obligation to preserve. Only P2 and P3 are entry kinds. P4 is the only source-supported change to the line. Input arrival belongs to Contract II; observation belongs to Layer III. Neither introduces another entry kind.
 
@@ -37,25 +40,25 @@ The constraints are laws on composition, not additional callable operators.
 
 ## 2. Composition into the documented mechanisms
 
-This table covers **all 15 manifest pieces**. A composition here identifies structural dependencies. It does not prescribe a sequence of POINTER writes. A row marked G2 has no complete construction algorithm yet.
+This table covers **all 15 manifest pieces**. A composition here identifies structural dependencies. Current law now fixes the physical Join construction; rows that historically named G2 should be read as leaving **arbitrary relation/sample selection** unresolved unless another independent gap is named.
 
 | Piece | Mechanism | Composition / dependency | What remains open | Source |
 |---|---|---|---|---|
 | 1 | Continuous strand | P0 extended by P4 under K1, K6. | Concrete resource and failure contract G7. | A1; B1; C1; D1 |
-| 2 | Governing rule | Arrival contributes a new P2 occurrence to P0; the same rule threads the word's formation, participates through P3, and continues. | The participation/emission part G2. No independent graph-building phase follows ingest. | B12; C12; D footer |
+| 2 | Governing rule | Arrival contributes a new P2 occurrence to P0; unseen becomes root; seen occurrence RootTouches root through P3; selected relations use repeated binary Join. | Arbitrary non-root-touch relation/sample selection remains open. No independent graph-building phase follows ingest. | B12; C12; D footer; current law |
 | 3 | Raw input / arrival | Contract II supplies ordered word occurrences to the governing rule, preserving each arrival through P1, P2, P4. | Word boundaries and identity G1; concurrent ordering G6. | A2–A4; B6; C10 |
 | 4 | WORD entry | P2 at its distinct P1 position in P0. A repeated word is a new occurrence. | G1; no normalization default. | D1–D2, D5 |
-| 5 | POINTER entry | P3 appended by P4; references earlier P1 positions under K3. | Trigger, selection, arity, adjacency, and interleaving G2. | D1–D3, D6 |
+| 5 | POINTER entry | P3 is binary Join(a,b), appended by P4 with two selected ordered earlier P1 positions under K3; either operand may be WORD or POINTER. | Arbitrary relation/sample selection and semantic operand/subject choice remain open; adjacency alone is closed false. | D1–D3, D6; current law |
 | 6 | Only store | P0 contains both entry forms and grows by P4 under K1–K4. | Concrete encoding, persistence, resources G7. | Graphic D |
-| 7 | Star formation | First occurrence begins the formation; subsequent same-variable passages accumulate, with their order and participation retained. Depends on P1–P4, not a Star record. | General identity G1; construction G2; faithful structural readout G5. | A2, A5, A12; B2–B3; D4–D5 |
-| 8 | Sequence as route | Ordered occurrences on the continuous strand give the word route through formations. No sentence container is added. | Whether adjacent WORDs imply a relation is still G2. Sequence alone does not settle it. | A4; B5; C2 |
-| 9 | Dictionary wiring | Definition text uses the governing rule and sequence-as-route through ordinary stars. | G1–G2; identifying and traversing a particular definition G3–G4. | A6, A11; B4; C9 |
+| 7 | Star formation | First occurrence is the root; later occurrences remain distinct and RootTouch that root; later Join ancestry participates in the formation. Depends on P1–P4, not a Star record. | General identity G1; arbitrary relation/sample selection; faithful structural readout G5. | A2, A5, A12; B2–B3; D4–D5; current law |
+| 8 | Sequence as route | Ordered occurrences on the continuous strand give the word route through formations. No sentence container is added. | Adjacency alone does not emit Join. Arbitrary relation/sample selection remains separate from arrival order. | A4; B5; C2; current law |
+| 9 | Dictionary wiring | Definition text uses the governing rule and sequence-as-route through ordinary roots/stars; selected structural participation uses Join. | G1; arbitrary relation/sample selection; identifying/traversing a particular definition G3–G4. | A6, A11; B4; C9; current law |
 | 10 | Document feed | Document words use the same arrival and route mechanism as dictionary words. Distinct contextual passages remain. | Boundary/provenance representation G3. | A6–A9, A11; B6; C10 |
-| 11 | Touch / re-entry | New participation can refer to earlier participation because a P3 section is itself addressable through P1. Existing sections remain. | Which touch is admitted or written G2; read-versus-new-arrival distinction G4. | A10; B7–B8; C7; D6 |
-| 12 | Dimension | Read independent participation and relations among relations in the same P0. Further participation uses P3, not another store. | Axis identification and independence criterion G5; emission G2. | C5–C8; D6 |
+| 11 | Touch / re-entry | Seen-word RootTouch is Join(new occurrence, root); any P3 Join remains addressable and may participate in later Join. Existing sections remain. | Arbitrary non-root-touch operand/sample selection; read-versus-new-arrival distinction G4. | A10; B7–B8; C7; D6; current law |
+| 12 | Dimension | Read independent participation and relations among relations in the same P0. Join may name prior Join; N-D remains a projection. | Axis/family identification G5 and arbitrary relation/sample selection remain open. | C5–C8; D6; current law |
 | 13 | Projection | Read P0's order, occurrences, and references into a sequence, graph drawing, or 3D view under K5. | General traversal G4; faithful geometry/readout G5. | B10–B11; C2–C4, C11; D4 |
 | 14 | No stored meaning / no collapse | K1–K5 constrain every preceding composition. Ambiguity remains as distinct passages. | No new mechanism is needed to enforce this at specification level; implementation enforcement is unproved. | A8, A13; B10; C9, C12; D |
-| 15 | Star-internal traffic | Observe incoming passages, internal participation, and outgoing passages of Piece 7 with order and occurrence distinctions preserved. | Precise readout G4–G5; emission G2. | A12; B9 |
+| 15 | Star-internal traffic | Observe root, occurrences, RootTouch and later Join ancestry with order and occurrence distinctions preserved. | Precise readout G4–G5; arbitrary non-root-touch relation/sample selection. | A12; B9; current law |
 
 ### Further names already used in the repository
 
@@ -64,14 +67,14 @@ This table covers **all 15 manifest pieces**. A composition here identifies stru
 | Conversation and provenance routes | The same strand, arrival rule, sequence, and participation as Pieces 8–10. C6 names these route families. | Naming a family supplies neither a new row type nor its boundary encoding; G3. |
 | Project meaning / recursive definition | Words are defined through routes of other word stars; those words have further definition routes. Pieces 7–9, 11 support this structural description. | Live-law usage of “meaning”; no stored gloss, HCC-A weight, accepted traversal algorithm, or closed splice. |
 | Cluster / variable label | A Layer III name for observed index geometry after legal growth. A changed cluster can receive created, split, or merged labels. | Label operations do not mutate WORD values, change occurrence identity, or write POINTERs. |
-| Clock tick | One legal append, P4, as counted in the live law. | Neither elapsed time nor a holder's request establishes that a legal append occurred. G2 still controls the missing construction rule. |
+| Clock tick | One legal append, P4, as counted in the live law. | Neither elapsed time nor a holder's request selects an arbitrary relation/sample. The Join constructor is fixed; selection remains the missing input. |
 | Focus / zoom / camera | A selected view of existing structure. | Focus is not the append frontier. Picture depth is not contact admission or POINTER arity. |
 
 Sources: [live law, Clock and Meaning](law-why-these-documents.md), [mathematical model §2.3.1](clock/system-mathematical-model.md), [pass-5 sit map](history/history-recovered-pass-5-sit.md), and [visual vocabulary](hologram/visual-primitives.md).
 
 ## 3. Concrete witness: Graphic D's existing example
 
-The following is a transcription of **D1**, not a trace generated by a proposed emission algorithm. D2's two-reference example does not settle general arity.
+The following is a transcription of **D1**, not a generated trace. D2/D1 remain source evidence; current human rulings and Pass-4 law reconciliation now settle the governing physical constructor as binary Join.
 
 | Position | Kind | Value / depicted references |
 |---|---|---|
@@ -123,21 +126,21 @@ These are **[INFERENCE] proof sketches over the abstract description**, reviewed
 
 **Finite backward-reference descent.** In a finite prefix, follow only the relation “POINTER section at j references position r.” K3 gives `0 ≤ r < j` at every step. A chain beginning at j can make at most j strictly decreasing steps, so that relation has no cycle. This proves neither termination of an unspecified general traversal nor acyclicity of all depicted operand relations. Unbounded future growth alone does not prove an infinite walk through a fixed finite prefix.
 
-**[UNESTABLISHED] Full construction and minimality.** The sources support the listed forms and constraints. They do not yet provide a total rule taking arbitrary arrivals to all required POINTER sections, a faithful reconstruction algorithm for all geometric distinctions, or a proof that this basis is algebraically minimal. Removing occurrence distinction loses the two PIE passages; removing POINTER addressability loses D1's 0007/0009/0010 participation. Those are necessity witnesses at the stated grain, not a general completeness theorem.
+**[UNESTABLISHED] Full automatic relation selection and minimality.** Current law supports the listed WORD/root/RootTouch/binary Join construction. It still does not provide an automatic rule choosing every arbitrary relation/sample, a faithful reconstruction algorithm for all geometric distinctions, or a proof that this basis is algebraically minimal. Removing occurrence distinction loses the two PIE passages; removing POINTER addressability loses D1's 0007/0009/0010 participation. Those are necessity witnesses at the stated grain, not a general completeness theorem.
 
 ### Open construction obligations
 
 | Gap | Exact unresolved obligation | Source / impact |
 |---|---|---|
 | G1 — Arrival and word identity | What are word boundaries? What distinguishes or equates case, punctuation, homographs, and multiword names? | Manifest Q1; agent-control C04–C05. Needed for general arrival and star reuse. |
-| G2 — POINTER emission | What observable condition emits a POINTER, when relative to WORD arrivals, with which earlier targets, at what arity? Does adjacency already constitute participation? What distinguishes no emission from an emitted section? | Manifest Q2; D2 is only an example; AGENTS implementation gate. Needed to construct the full mechanism. |
+| G2-current — arbitrary relation/sample selection | What upstream process, if any, selects an arbitrary non-root-touch ordered pair/sample for Join? RootTouch has a closed selector; binary arity, target kinds, backwardness, repeated-WORD admission, and finite-sample construction are settled. | Current manifest / pointer-emission reconciliation. Needed only for arbitrary relation assertion, not physical Join layout. |
 | G3 — Route boundaries | How are dictionary, document, conversation, and provenance boundaries represented or recognized using the permitted model? | Manifest Q3 and C6. No new boundary row is authorized. |
 | G4 — Read / query / traversal | Which recorded structure may a read traverse, in what direction, and what does it return? If interaction later causes an arrival, what distinguishes that from the read itself? | Manifest Q4; mathematical model §2.8. Layer III stays strictly read-only. |
 | G5 — Structural fidelity | Which array facts establish threading, independent participation axes, and a faithful view? Which geometric details are only rendering choices? | Manifest Q6; C5–C8; D4. No inference of missing participation from a picture. |
 | G6 — Concurrent arrival | What establishes one order when arrivals compete? | Manifest Q5. The shared-agent editing protocol is not a Core scheduler. |
 | G7 — Concrete realization | Representation, index bounds, capacity, allocation, persistence, interruption and failure behavior must be contracted before relevant implementation. | Agent task template §5; control C08. Engineering obligations, not newly discovered Core operators. |
 
-Closing G2 is necessary for Core construction and does not automatically close G1 or G3–G7. The mathematical model §6's executable-incompleteness “if and only if” wording is too strong to use as a sufficiency result: control C03 explicitly keeps other facts needed by an implementation open. No such sufficiency claim is made here.
+Closing the old broad G2 constructor bundle no longer closes every implementation obligation. The remaining arbitrary-selection gap is independent of G1 and G3–G7. The mathematical model §6's executable-incompleteness “if and only if” wording is too strong to use as a sufficiency result: control C03 explicitly keeps other facts needed by an implementation open. No such sufficiency claim is made here.
 
 ## 5. Conceptual references and visual vocabulary
 
@@ -194,7 +197,7 @@ The five academic stakes also supply no atomic Core operator. Kauffman's later g
 | Prose read | Manifest Pieces 1–15, seams, questions; standing orders; control C01–C12; task template; full staking/live law; relevant reason-map and philosophy-map sections; mathematical model; shadow hologram and relevant walk sections; visual primitives; pass-5 sit; pass-6 plan; current resync. |
 | Original holder texts | HCC-A v1.0, Coffee Cup, and Water/Proofing supplied text originals read in full. Source identities are recorded in the repository reference/philosophy maps; no original copied into git. |
 | Unread / unperformed | No new full reading of the five academic works or exhaustive historical recovery. Pass 6 remains a plan. No physical experiment, Core runtime test, renderer change, or independent review. |
-| Known source limitations | General arity remains unresolved despite D2's binary example; historical unary POINT is not imported. Membership is not full star structure. Unbounded extension does not by itself prove infinite traversal. Emission closure is not sufficient for every implementation obligation. |
+| Known source limitations | Current law fixes binary Join; historical unary POINT is not imported. Membership is not full star structure. Unbounded extension does not by itself prove infinite traversal. Constructor closure is not sufficient for arbitrary relation selection or every implementation obligation. |
 | Allowed file / effects | Only `docs/atomic-primitives-map.md`: a reviewable prose map. No changes to other contributors' files, renderer, canonical graphics, law, or source definitions. |
 | Expected check | All 15 pieces mapped; every composition names its dependencies and unresolved obligations; local links resolve; sole changed file is this map. |
 | Actual evidence | Source review and file inspection: Pieces 1–15 each appear once in the composition table; all 14 local links resolve; D1 has all 11 transcribed rows and every POINTER operand is earlier than its containing section. Only this file is changed. These are document checks, not a Core execution test. |
