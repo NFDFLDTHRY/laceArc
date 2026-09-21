@@ -1,7 +1,7 @@
-STATUS: HELD
+STATUS: FREE
 STATION: maps
 OWNS: docs/reason-model-map.md docs/rust-nostd-*.md docs/atomic-primitives-map.md docs/clock/gearing-code-1to1.md docs/coherence-audit*.md docs/clock/system-mathematical-model.md docs/defrag-plan.md docs/plans/** docs/namespace-register.md docs/*.md (catch-all: any unmatched file at the docs/ root)
-AGENT: Astra-search-contract
-BASE: 2a64cd3dd3a4924717fd7da18f24642e6ec5a10f
-SINCE: 2026-09-21T02:50:00Z
-NOTE: User-directed SAMPLING / DENSITY / EMERGENCE Pass 5 execution as one complete pass. Execute minimal derived search-result contract, as-of prefix replay, pattern/witness-DAG/star-hop round trips, local QUESTION/ANSWERS/IS cone reconstruction, D1 PIE one-forward-scan pointer reconstruction, minimality deletion tests and expansion-operator sufficiency. No subpasses. No law edit. No src/Cargo/Rust. Connector claim; coord.sh NOT_RUN.
+AGENT: -
+BASE: -
+SINCE: -
+NOTE: Astra-search-contract SAMPLING / DENSITY / EMERGENCE Pass 5 COMPLETE. Execution claim 78d56eccb4efc24ced3f728de3b81c3757804eb3; findings e4d7ba168c509cbfe0b9f8c126d29d8f11112eb4 + final verification 6f7b6e593b276019c977666997a99c4400b0fae7; plan close 7353fd1a047a977670af0d102818c8012e27fbe1; index 685c8308bc7b842d0eb884533da1d8e1afbf05a9. Result: minimal disposable replay handle SearchHandle=(through,anchor,item). Pattern hit shrinks to n+one exemplar start; pointer hit shrinks to target; support/occurrence lists/witness rows/edges/distance/paths derive from Lace. Local reconstruction exactly reproduces Pass-4 frontiers using QUESTION 105, ANSWERS 75, IS 1297 anchored cells versus 743,590 full Coffee cells; D1 PIE recovered by one forward scan with no reverse index. Actual leftovers: law/model/global-ASCII reconciliation/propagation, later engineering efficiency/caching, optional cross-Lace identity if portability is required. 20/20 proof board. No subpasses, no law edit, no src/Cargo/Rust. coord.sh NOT_RUN.
