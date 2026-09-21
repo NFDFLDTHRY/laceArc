@@ -2,13 +2,13 @@
 
 **Not the manifest.** [`systems-manifest.md`](systems-manifest.md) is the Hands contract map; this is an ASCII reading of it and settles nothing it does not.
 
-**Current reading qualification, 2026-09-21:** read the Pass-30 sampling reconciliation overlay below as the current companion state. Pass 29 and Passes 1–28 remain dated records of their own readings; their stamps do not establish present acceptance. Current law carries LAND / ROOT / RootTouch / binary Join plus the human-ruled derived 2D sampling/search architecture. The active Core-adjacent gap is exact sampling-derived retention/materialization. HCC-A, Coffee Cup, and Water remain conceptual reference documents / behavioral-goal sources, not holder machinery or runtime dependencies.
+**Current reading qualification, 2026-09-21:** read **Pass 31 — Lab Source Architecture Pass 1** as the current source/laboratory context wrapped around the **Pass-30 sampling reconciliation**, which remains the current Lace substrate reading. Pass 29 and Passes 1–28 remain dated records of their own readings; their stamps do not establish present acceptance. Current law carries LAND / ROOT / RootTouch / binary Join plus the human-ruled derived 2D sampling/search architecture. The active Core-adjacent gap is exact sampling-derived retention/materialization. HCC-A, Coffee Cup, and Water are behavioral-goal source clipboards with candidate machinery; research and platform/toolchain clipboards likewise feed the lab. None enters Core by citation.
 
-**Executed passes:** [1](systems-manifest-ascii-pass-1-plan.md) · [2](systems-manifest-ascii-pass-2-plan.md) · [3](systems-manifest-ascii-pass-3-plan.md) · [4](systems-manifest-ascii-pass-4-plan.md) · [5](systems-manifest-ascii-pass-5-plan.md) · [6](systems-manifest-ascii-pass-6-plan.md) · [7](systems-manifest-ascii-pass-7-plan.md) · [8](systems-manifest-ascii-pass-8-plan.md) · [9](systems-manifest-ascii-pass-9-plan.md) · [10](systems-manifest-ascii-pass-10-plan.md) · [11](systems-manifest-ascii-pass-11-plan.md) · [12](systems-manifest-ascii-pass-12-plan.md) · [13](systems-manifest-ascii-pass-13-plan.md) · [14](systems-manifest-ascii-pass-14-plan.md) · [15](systems-manifest-ascii-pass-15-plan.md) · [16](systems-manifest-ascii-pass-16-plan.md) · [17](systems-manifest-ascii-pass-17-plan.md) · [18](systems-manifest-ascii-pass-18-plan.md) · [19](systems-manifest-ascii-pass-19-plan.md) · [20](systems-manifest-ascii-pass-20-plan.md) · [21](systems-manifest-ascii-pass-21-plan.md) · [22](systems-manifest-ascii-pass-22-plan.md) · [23](systems-manifest-ascii-pass-23-plan.md) · [24](systems-manifest-ascii-pass-24-plan.md) · [25](systems-manifest-ascii-pass-25-plan.md) · [26](plans/lace-context-iter6-pass-3-findings.md) · [27](plans/lace-context-iter7-pass-3-audit.md) · [28](plans/reduction-pass-3-findings.md) · [29](plans/math-execution-root-touch-fold-pass-5-findings.md) · **30 = SAMPLING / DENSITY / EMERGENCE Pass 6 reconciliation (this current overlay; receipt in plans/sampling-density-emergence-pass-6-findings.md).**
+**Executed passes:** [1](systems-manifest-ascii-pass-1-plan.md) · [2](systems-manifest-ascii-pass-2-plan.md) · [3](systems-manifest-ascii-pass-3-plan.md) · [4](systems-manifest-ascii-pass-4-plan.md) · [5](systems-manifest-ascii-pass-5-plan.md) · [6](systems-manifest-ascii-pass-6-plan.md) · [7](systems-manifest-ascii-pass-7-plan.md) · [8](systems-manifest-ascii-pass-8-plan.md) · [9](systems-manifest-ascii-pass-9-plan.md) · [10](systems-manifest-ascii-pass-10-plan.md) · [11](systems-manifest-ascii-pass-11-plan.md) · [12](systems-manifest-ascii-pass-12-plan.md) · [13](systems-manifest-ascii-pass-13-plan.md) · [14](systems-manifest-ascii-pass-14-plan.md) · [15](systems-manifest-ascii-pass-15-plan.md) · [16](systems-manifest-ascii-pass-16-plan.md) · [17](systems-manifest-ascii-pass-17-plan.md) · [18](systems-manifest-ascii-pass-18-plan.md) · [19](systems-manifest-ascii-pass-19-plan.md) · [20](systems-manifest-ascii-pass-20-plan.md) · [21](systems-manifest-ascii-pass-21-plan.md) · [22](systems-manifest-ascii-pass-22-plan.md) · [23](systems-manifest-ascii-pass-23-plan.md) · [24](systems-manifest-ascii-pass-24-plan.md) · [25](systems-manifest-ascii-pass-25-plan.md) · [26](plans/lace-context-iter6-pass-3-findings.md) · [27](plans/lace-context-iter7-pass-3-audit.md) · [28](plans/reduction-pass-3-findings.md) · [29](plans/math-execution-root-touch-fold-pass-5-findings.md) · **30 = SAMPLING / DENSITY / EMERGENCE Pass 6 reconciliation** · **[31](plans/lab-source-architecture-pass-1-plan.md) = LAB SOURCE ARCHITECTURE Pass 1 (current source/lab overlay; Core unchanged).**
 
 **Authority:** `docs/systems-manifest.md`. Companion, not a replacement.  
 **Hands:** Graphics A–D. Shoe in hands.  
-**Not this file:** H×C×W oil, five-stake imports, `src/`, POINTER emission answers.
+**Not Core in this file:** H×C×W candidate machinery, research/platform clipboard mechanisms, `src/`, or missing POINTER retention answers. Pass 31 draws laboratory context around Lace; it does not import those sources into Contract I.
 
 **Historical status at Pass 29:** POINTER construction was no longer a broad [GAP]; that pass still framed the residual as arbitrary non-root-touch relation/sample selection. **Pass 30 supersedes that residual as current:** human rulings H7–H12 establish sampling as relationship discovery; exact sampling-derived retention/materialization remains [GAP]. Acceptance remains absent.
 
@@ -124,6 +124,145 @@ HCC-A / The Coffee Cup / Where the Water Is Loud
 ### Historical note
 
 Pass 29 and ROOT / TOUCH / FOLD Pass 6 are retained as the dated path that narrowed the former chooser/provenance question. Pass 30 does not delete them. It moves their active conclusion behind the later human sampling rulings: the current unresolved seam is retention/materialization, not who semantically chooses a relation.
+
+---
+
+## Pass 31 — Lab Source Architecture Pass 1 — source → clipboard → lab context
+
+**Campaign identity:** [Lab Source Architecture Pass 1](plans/lab-source-architecture-pass-1-plan.md).  
+**Scope:** repository source roles and laboratory handoffs. **No Contract-I rewrite. No new row type. No implementation authorization.**
+
+The clipboard census is distributed, not directory-defined:
+
+- behavioral-goal source clipboards: [HCC-A](clock/hcc-a-systems-manifest.md) · [Coffee Cup](clock/coffee-cup-systems-manifest.md) · [Water / Dual Proofing](clock/water-systems-manifest.md);
+- behavioral-goal candidate composition: [H×C×W](clock/train-h-c-w-systems-manifest.md);
+- research/book clipboards and mechanism registers: [clipboards/](clipboards/README.md);
+- platform/toolchain clipboards: Wasm · WebGPU · WGSL · WebNN · rustc · Cargo, routed through the same clipboard shelf.
+
+```
+                 BEHAVIORAL-GOAL SOURCES
+              HCC-A · Coffee Cup · Water
+                         |
+                 existing source clipboards
+                         |
+        goals · constraints · hypotheses · possible machinery
+                         |
+                         v
++-------------------+    +----------------------------------+
+| RESEARCH / BOOKS  |--->|                                  |
+| Kauffman          |    |          laceArc LAB             |
+| Rowlands          |    |                                  |
+| Xiao–Zhu          |    |  propose → attack → reproduce    |
+| Petersen–Zech     |    |      → test → falsify/retain     |
+| AgentScope        |    |                                  |
++---------+---------+    +----------------+-----------------+
+          |                               |
+   existing clipboards                    | surviving evidence
+   mechanisms · math                      | is still bounded
+   algorithms · limits                    v
+          +----------------------> +-------------------------+
+                                   |          LACE           |
+                                   | experimental substrate  |
+                                   | / growing machine       |
+                                   |                         |
+                                   | Pass-30 Core reading:   |
+                                   | WORD | POINTER          |
+                                   | sampling → [GAP] retain |
+                                   +------------+------------+
+                                                |
+                                      must physically run on
+                                                |
+                                                v
+                                  +---------------------------+
+                                  | PLATFORM / HARDWARE REALITY|
+                                  | CPU · GPU · browser/device |
+                                  | Wasm · WebGPU · WGSL       |
+                                  | WebNN · rustc · Cargo      |
+                                  +-------------+-------------+
+                                                |
+                                      existing source clipboards
+                                                |
+                                  capabilities · target facts
+                                  resource ceilings · constraints
+                                                |
+                                                +---------> LAB
+```
+
+### P31-A — authority split
+
+| Surface | What it can establish | What it cannot establish by itself |
+|---|---|---|
+| Behavioral-goal clipboards | target behaviors · source constraints · candidate machinery · hypotheses | required runtime decomposition · Core rows · retention rule |
+| Research/book clipboards | source mathematics · algorithms · mechanisms · failure modes · negative evidence | behavioral-goal authority · automatic Core operator |
+| Platform/toolchain clipboards | executable primitives · target/toolchain facts · physical limits · observed device/browser behavior | Lace semantics · retention/materialization · human acceptance |
+| Lace graphics + manifest | substrate/storage law and current admitted Lace mechanics | success against every behavioral goal or physical feasibility on every target |
+| laceArc lab | evidence trail for proposals, attacks, reproductions, tests, falsifications, bounded survivors | acceptance by mere file existence or commit |
+
+### P31-B — clipboard rule
+
+```
+SOURCE
+  |
+  v
+CLIPBOARD
+  |
+  +--> source fact / constraint
+  +--> possible machinery
+  +--> hypothesis / correspondence
+  +--> falsifier / negative result
+  |
+  v
+LAB TESTING
+  |
+  +--> FALSIFIED ----------------> retained negative evidence
+  |
+  +--> SURVIVES BOUNDED TEST ----> stronger candidate
+                                      |
+                                      X  not automatic Core
+                                      X  not automatic acceptance
+```
+
+“Not Core” is an **authority fence**, not a claim that the machinery is useless.  
+“Behavioral-goal source” is **not** a claim that its internal machinery must be implemented.  
+“Platform-capable” is **not** a missing semantic rule.
+
+### P31-C — behavioral-goal clipboard status
+
+HCC-A's pipeline/dual-shaft/compiler/ledger/M/E/ISL/B machinery, Coffee Cup's C1–C5 causal loop, Water's Proof Ledger/River/FSM/interface, and the H×C×W mesh remain available as **candidate systems**. The lab may test them individually or in composition. Their former automatic required-gearbox status remains superseded.
+
+### P31-D — Pass-30 preservation
+
+Pass 31 changes **none** of the Pass-30 substrate statements:
+
+- one authoritative append-only 1D Lace;
+- WORD / POINTER;
+- root / RootTouch;
+- binary Join over earlier Lace points;
+- derived 2D position×scale sampling;
+- retained POINTER topology;
+- derived star/search reads;
+- **exact sampling-derived retention/materialization remains `[GAP]`**;
+- human acceptance remains absent;
+- no `src/`, Cargo, Rust, or implementation branch is authorized.
+
+### P31-X — falsifier board
+
+| Falsifier | Result |
+|---|---|
+| duplicate HCC-A/Coffee Cup/Water clipboard created | **NO** |
+| directory/filename treated as clipboard ontology | **NO** |
+| H/C/W source machinery erased because “behavioral goal” | **NO** |
+| H×C×W restored as automatically required runtime gearbox | **NO** |
+| research mechanisms reduced to decorative metaphor only | **NO** |
+| platform mechanisms reduced to projection-only machinery | **NO** |
+| platform capability used to fill Lace semantics | **NO** |
+| clipboard/file existence treated as acceptance | **NO** |
+| Pass 30 sampling architecture changed | **NO** |
+| implementation gate moved | **NO** |
+
+### P31-R — verdict
+
+**LAB SOURCE ARCHITECTURE ALIGNED WITH OPENS.** The repository now distinguishes behavioral-goal authority, research evidence, platform/physical authority, Lace substrate authority, and the lab process that tests candidate systems. Existing clipboards are reused. Candidate machinery survives as candidate machinery. The unresolved Core-adjacent seam remains retention/materialization, and later passes may compare candidate systems without pretending citation is architecture.
 
 ---
 
