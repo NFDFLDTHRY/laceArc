@@ -7,7 +7,7 @@
 **Store:** Graphic D. B is the mechanism reading of the same strand.  
 **Not this file:** Graphic A ASCII (`graphic-a-ascii.md` is closed), C, D1 tape, Hands-manifest spine (`docs/systems-manifest-ascii.md`), H×C×W oil, `src/`, POINTER emission answers.
 
-**Current law qualification (ROOT / TOUCH / FOLD Pass 5):** Graphic B still does not itself specify the array constructor. Current law now settles unseen→root, seen→RootTouch Join, binary Join, backward same-line WORD/POINTER operands, and finite-sample grounding. **Arbitrary non-root-touch relation/sample selection remains `[GAP]`.** Historical B-pass G2 stamps below remain records of what B alone did not settle.
+**Current law qualification (SAMPLING / DENSITY / EMERGENCE Pass 6):** Graphic B still does not itself specify the sampler or retention rule. Current law settles unseen→root, seen→RootTouch Join, binary Join, backward same-line WORD/POINTER operands, and the later human-ruled sampling architecture. **Exact sampling-derived retention/materialization remains `[GAP]`.** Historical B-pass G2 stamps below remain records of what B alone did not settle.
 
 
 ## Current law qualification — not a Graphic-B source amendment
@@ -24,7 +24,7 @@ Graphic B remains the geometric/mechanism source reading. The following is a **c
 - The array-layer physical constructor is binary Join over two selected earlier same-line Lace points.
 - A Join point may itself participate in later Join.
 - B12's three-verb governing-rule box remains exactly a B-source reading; the array constructor comes from current D/law reconciliation, not from B12.
-- For arbitrary non-root-touch relations, **which ordered operands/sample are selected remains [GAP]**.
+- Later H7–H12 supersede the arbitrary-selector framing as the active model: sampling discovers structure. **The exact condition that retains/materializes a sampled relation remains [GAP]**.
 
 So the current companion split is:
 
@@ -34,7 +34,7 @@ So the current companion split is:
 | physical POINTER / Join constructor | closed |
 | binary arity | closed |
 | POINTER→POINTER participation | closed |
-| arbitrary non-root-touch operand/sample selection | [GAP] |
+| sampling-derived retention/materialization | [GAP] |
 
 The historical B8/B12 and iteration tables below are not rewritten. Their older G2 labels record the narrower source-reading state at those passes.
 
