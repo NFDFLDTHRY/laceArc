@@ -495,6 +495,8 @@ L-M19 finite grounding uses repeated L-M05 Join only after a sample is selected 
 
 **Manifest Reconciliation Pass 2 foundation certification:** **FOUNDATION SOUND WITH DATED ARTIFACTS.** Current maps, prompt/kit entrances, Rust planning and history routing have been propagated or qualified against this catalog and the manifest contract registry. Sealed/historical artifacts that still carry older semantic snapshots are explicitly fenced as dated rather than rewritten. See [Pass 2 findings](plans/manifest-reconciliation-pass-2-findings.md). **Pass 32 remains the current mechanism catalog; Pass 2 does not add a new mechanism or close L-GAP-RM.** Lab Source Architecture Pass 4 remains paused pending an explicit replan.
 
+**Manifest Reconciliation Pass 3 composition certification:** **FOUNDATION SOUND WITH EXPLICIT OPEN INTERFACES.** Pass 3 attacked mechanism identity, aliases, reverse/forward census, state/write ownership, Piece↔L-M overlap, H1–H12 provenance, SM-X ingress and forbidden-state ownership. Two bare-arrow topology defects fired and were repaired with typed edges; Open #14's old Piece-13 conflict is superseded as a current architecture conflict. The [traceability audit](plans/manifest-reconciliation-pass-3-traceability.md) is non-canonical evidence; [Pass 3 findings](plans/manifest-reconciliation-pass-3-findings.md) records the falsifier board. **Pass 32 remains the current mechanism catalog. No new L-M mechanism was added and L-GAP-RM remains open.** Lab Source Architecture Pass 4 remains paused pending explicit replan.
+
 ---
 
 ## Spine
