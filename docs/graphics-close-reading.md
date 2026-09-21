@@ -10,6 +10,8 @@ leave open, and one claim in the source that no file in this repo had recorded.
 Source of record is unchanged: `docs/graphics/`, then the manifest. Panels are
 cited as in the manifest (`A1`–`A13`, `B1`–`B12`, `C1`–`C12`, `D1`–`D6`).
 
+**Current-law sampling qualification (2026-09-21):** this file remains a source close-reading. Later human rulings H7–H12 separately establish a derived 2D position-by-scale sampling working surface and reject the arbitrary semantic-chooser framing. That sampler is **not** attributed to C3 or any other Graphic-C panel. Graphic C's 2D/3D/N-D material remains projection/view evidence. The exact sampling-derived retention/materialization rule remains open.
+
 **Grounding** (`docs/kit/agent-control.md` C01). Graphic D read directly from
 `docs/graphics/data-structure-1d-array.png`: `VISUALLY_OBSERVED`. Panel D1's
 eleven rows transcribed and the derived claims re-checked mechanically. Physical
