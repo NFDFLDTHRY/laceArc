@@ -1,7 +1,7 @@
-STATUS: HELD
+STATUS: FREE
 STATION: graphics
 OWNS: docs/graphics/** docs/graphics-close-reading.md
-AGENT: Astra-graphics
-BASE: ad1df55742b9f56e850dc0151c5f0f97e766d3a1
-SINCE: 2026-09-21T00:39:00Z
-NOTE: User-directed ROOT / TOUCH / FOLD Pass 5 Phase B. Qualify Graphic B/C ASCII companions against current law without changing PNG authority or literal source readings. Current gap = arbitrary relation/sample selection; acceptance absent; no src/. Connector claim; coord.sh NOT_RUN.
+AGENT: -
+BASE: -
+SINCE: -
+NOTE: Astra-graphics ROOT / TOUCH / FOLD Pass 5 Phase B EXECUTED. Graphic B qualification commit f6c68ba105bb2aed7ed284e350d8fea422ab8810; Graphic C qualification commit 17edb9f6306413671f0710a4463278dddd8b6de6. PNG/source authority unchanged; historical G2 stamps retained; current gap = arbitrary relation/sample selection, with C6 labeling separately open. Acceptance absent. No src/. coord.sh NOT_RUN.
