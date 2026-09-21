@@ -1,7 +1,7 @@
-STATUS: HELD
+STATUS: FREE
 STATION: maps
 OWNS: docs/reason-model-map.md docs/rust-nostd-*.md docs/atomic-primitives-map.md docs/clock/gearing-code-1to1.md docs/coherence-audit*.md docs/clock/system-mathematical-model.md docs/defrag-plan.md docs/plans/** docs/namespace-register.md docs/*.md (catch-all: any unmatched file at the docs/ root)
-AGENT: Astra-selection
-BASE: a2796948118d91753f45c68a00a73ff7d5cdb4cf
-SINCE: 2026-09-21T01:04:00Z
-NOTE: User-directed ROOT / TOUCH / FOLD Pass 6 planning. Investigate whether the remaining 'selection' is actually a required automatic Core algorithm, a relation-assertion provenance/ownership gap, an active-sample punch-card rule, or a new interface requiring human ruling. Plan only. Preserve current constructor, acceptance gate, no-src/Cargo. Connector claim; coord.sh NOT_RUN.
+AGENT: -
+BASE: -
+SINCE: -
+NOTE: Astra-selection ROOT / TOUCH / FOLD Pass 6 PLAN committed at 737e0a8b90cd1a31b368957f8c933a6eb2c5ebf3; plans index a94c93e8ceb483779751399c273c9c3f18ff45de. Pass 6 not executed. It tests whether remaining selection is automatic Core behavior or relation-assertion provenance/ownership, with D1 + punch-card falsifiers and gate-question census non-overlap. Acceptance absent. No src/Cargo. coord.sh NOT_RUN.
