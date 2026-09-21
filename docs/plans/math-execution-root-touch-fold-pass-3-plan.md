@@ -1,6 +1,6 @@
 # Mathematical execution model - ROOT / TOUCH / FOLD campaign - Pass 3 PLAN
 
-**Status:** PLAN - NOT EXECUTED. **Station:** maps (Astra-math).
+**Status:** **EXECUTED** 2026-09-20 -> [findings](math-execution-root-touch-fold-pass-3-findings.md). **Station:** maps (Astra-math).
 **Pinned main before claim:** e67b170c55605d120d5da7a816e84f2dd4e90bb5.
 **Claim commit:** 2ad4677e498421edfaa5c4ef101dd1b29720ca05.
 **Depends on:** Pass 1 findings + Pass 2 model / findings.
@@ -658,9 +658,26 @@ Expected, not yet tested:
    - **which portions should be sampled/joined at each punch-card step?**
 10. If H5/H6 already determine that selection sufficiently, the model-side pointer-emission blocker may be mathematically closable in this pass.
 
-**Actual:** NOT TESTED.
+**Actual:** H4 formalized; sample interpretations I/II PASS and III REFUTED; G1-G12 12/12 PASS; D1 6/6 one binary Join constructor; finite-sample and whole-prefix theorems proved; model-side constructor/grounding mechanics closed; sample/relation selection remains the final residual.
 
 ---
+
+## 17a. Execution receipt
+
+- Model update: commit 319c23490244bac55d71beda2f6547df5b1f53fb.
+- Findings: [math-execution-root-touch-fold-pass-3-findings.md](math-execution-root-touch-fold-pass-3-findings.md), commit 156606255c83ccca5fce2d36fb17d96027703d4c.
+- H4 unseen-root: **formalized**.
+- Sample interpretations: **I PASS · II PASS · III REFUTED**.
+- G1-G12: **12/12 PASS**.
+- D1 replay: **6/6 one binary Join**.
+- Model-side Q2 / physical constructor: **closed to binary Join**.
+- Finite-sample representability: **proved**.
+- Whole-prefix covering point: **proved constructively**.
+- N-D mapping: **projection-only PASS**.
+- Final residual: **sample/relation selection**.
+- pointer-emission.md / manifest / graphics / global ASCII: **0 edits**.
+- src/: **0**.
+- Next work is law reconciliation + selection placement; not automatically opened.
 
 ## 18. Stop condition
 
