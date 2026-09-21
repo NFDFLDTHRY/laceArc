@@ -1,7 +1,7 @@
-STATUS: HELD
+STATUS: FREE
 STATION: maps
 OWNS: docs/reason-model-map.md docs/rust-nostd-*.md docs/atomic-primitives-map.md docs/clock/gearing-code-1to1.md docs/coherence-audit*.md docs/clock/system-mathematical-model.md docs/defrag-plan.md docs/plans/** docs/namespace-register.md docs/*.md (catch-all: any unmatched file at the docs/ root)
-AGENT: Astra-manifest-reconcile
-BASE: 682d493743753b1dd839f7ac963d6a1052d85aea
-SINCE: 2026-09-21T22:15:09.000Z
-NOTE: Manifest Reconciliation Pass 1 final verification/receipt: 45-panel census, catalog↔contract crosswalk, downstream drift register. Canonical pair already landed; no downstream repairs in this pass.
+AGENT: -
+BASE: -
+SINCE: -
+NOTE: Manifest Reconciliation Pass 1 COMPLETE. Pass 32 is the current global mechanism catalog; systems-manifest contract registry resolves all catalog IDs. 45/45 source surfaces mapped. A6/B4 and B10/B11 current provenance corrected. Persistence/re-entry separated from retention/materialization; Graphic-C projection separated from H7-H12 sampling; D1 witness separated from selection rule. Downstream drift registered for next pass. Lab Source Architecture Pass 4 remains PAUSED.
