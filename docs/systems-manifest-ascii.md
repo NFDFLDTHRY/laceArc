@@ -451,6 +451,10 @@ BLOCKED-BY   edge cannot legally complete while the named GAP is open
                     |
                     +----FEEDS----> L-GAP-RM [GAP]
                                       |
+                                      | RM-A RETAIN?
+                                      | RM-B MATERIALIZE?
+                                      | RM-C ROLE / ORDER?
+                                      |
                                       | BLOCKED-BY
                                       X
                               general retained/materialized
@@ -471,6 +475,15 @@ BLOCKED-BY   edge cannot legally complete while the named GAP is open
 **Composition rule:** a bare visual resemblance is not an edge. General sampling-derived retention has no direct `L-M20 → L-M05` edge; it is explicitly interrupted by `L-GAP-RM`. Persistence/re-entry constrains structure **after recording** and never feeds Join. RootTouch reads the new occurrence/root and specializes Join; it is not produced by an already-formed star.
 
 L-M19 finite grounding uses repeated L-M05 Join only after a sample is selected and its operands are addressable. It does not decide L-GAP-RM.
+
+**Pass 4 Lab-admission qualification:** RM-A / RM-B / RM-C are **subquestions of L-GAP-RM, not new mechanisms**. A bounded D1 Lab may freeze unrelated opens to the exact specimen when doing so does not change the validity of the retention test: exact supplied token identities for G1, serial execution for concurrency/R9, no projection geometry, no route-family metadata, one Lace prefix, in-memory/capacity-sufficient execution, and D1 as the fixed specimen rather than a release seed corpus. A candidate that actually consumes G1 normalization, L-M21 search, route-family labels, or another conditional open pulls that premise back into scope and must declare it before admission.
+
+The global catalog therefore contains **one** retention/materialization GAP with three named question faces:
+- **RM-A:** what warrants retention?
+- **RM-B:** how does an ephemeral selected structure become addressable Lace?
+- **RM-C:** where do any required ordered operand roles come from?
+
+Freezing an open for one experiment is not global closure. No new L-M ID follows.
 
 **Pass 3 current-open correction — Open #14:** the Pass-27 audit correctly recorded a conflict **at that historical revision** because the then-current Piece 13 allowed graph databases / embedding spaces / definition tables as disposable views while staking forbade those stores. Current Piece 13 / SM-C15 no longer grants that permission; SM-C16 forbids embedding-as-truth and current SM-X-L3 grants no Lace write authority. Therefore **Open #14 is SUPERSEDED as a current architecture conflict.** Historical Pass-27 text stays intact. R10 may remain as a narrower proposal about whether WebNN can be used as a non-authoritative recomputed projection, but it is no longer a governing-text conflict.
 
