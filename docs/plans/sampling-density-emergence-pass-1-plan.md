@@ -1,46 +1,42 @@
 # SAMPLING / DENSITY / EMERGENCE campaign — Pass 1 PLAN
 
 **Status:** PLAN — NOT EXECUTED.
+**Subtitle:** 1D LACE → 2D SAMPLING SURFACE → CROSS-SCALE POINTER MAP
 **Planning station:** maps (Astra-sampling).
-**Pinned main before claim:** 69c0f5b8112f9cf23b2b980c2f72cefe5ac8b015.
-**Maps claim:** 2405511e3d2efb97841672ada19123153bf847ec.
-**Depends on:** current Lace law/model, ROOT / TOUCH / FOLD Passes 1–6 as dated history, gate-question-surface Passes 1–3, Graphics A–D, and the new human rulings below.
+**Original campaign-plan commit:** de1d61d34d2f9360656bc4b588087f03e673112d.
+**Replan base:** a421792e8a597c3d1e4de0fa658040b55ff8d94b.
+**Replan maps claim:** 5e08a1decb06c0c6d155d47f91b252eca93ded0c.
+**Depends on:** current Lace law/model, ROOT / TOUCH / FOLD Passes 1–6 as dated history, gate-question-surface Passes 1–3, Graphics A–D, and the direct human rulings H7–H12 below.
 **Implementation:** no src/. No Cargo. No Rust. No sampler stub.
 **Law:** no law edit in Pass 1.
 **Acceptance:** absent.
 
-This is a **new campaign**.
+This is a new campaign.
 
-ROOT / TOUCH / FOLD solved the storage constructor but ended by asking who originates an arbitrary relation assertion.
+The first draft correctly abandoned the arbitrary-relation chooser, but it still treated the 2D sampling surface as partly open.
 
-The human has now corrected that premise:
-
-> relationships are **not chosen first**.
-
-They are found through sampling as Lace grows.
-
-Pass 1 maps that mechanism without inventing it.
+The human has now fixed that architecture.
 
 ---
 
-## 0. New human rulings that open this campaign
+## 0. Human rulings that define the campaign
 
-### H7 — no arbitrary relation choice
+### H7 — relationships are not chosen first
 
 Human:
 
 > “O I didn't intend to choose. If it exists a touch, if it doesn't root, the n+1 sampling will all text to like a heat map show the system where to make touches, the star system is view that might be useful to enable search for larger non-word linked patterns which will show up in text.”
 
-Interpretation allowed for this pass:
+Current allowed reading:
 
-- there is no intended semantic/manual arbitrary chooser deciding relationships first;
-- root/touch is recurrence-sensitive;
-- n+1 sampling operates across growing text;
-- repeated structure accumulates evidence that can be viewed like a heat map;
-- star-like views may support search for structures larger than one word;
-- larger structures emerge from text rather than being inserted as stored concepts.
+- no semantic/manual arbitrary chooser precedes relation structure;
+- recurrence decides root-vs-touch behavior at the word level;
+- n+1 sampling operates over growing text/Lace;
+- repeated structure accumulates something like density;
+- star-like views are useful for observing/searching that structure;
+- larger non-word structures emerge from usage patterns.
 
-### H8 — relationships are discovered over growth
+### H8 — relationships are discovered through growth
 
 Human:
 
@@ -48,44 +44,198 @@ Human:
 
 This is the campaign anchor.
 
-Pass 1 must not weaken H8 back into:
+The target machine is not:
 
 \[
-\text{choose relation}\rightarrow\mathsf{Join}.
+\text{choose relationship}
+\to
+\mathsf{Join}.
 \]
 
-The new target is closer to:
+It is:
 
 \[
-\text{text growth}
-\rightarrow
+\text{growth}
+\to
 \text{sampling}
-\rightarrow
-\text{recurrence / overlap evidence}
-\rightarrow
-\text{touch structure}
-\rightarrow
-\text{denser recurring formations}.
+\to
+\text{repeated structure}
+\to
+\text{relational map}.
 \]
 
-### H9 — star is a view, not a chooser
+### H9 — star is a view / search surface
 
-Current human clarification places the star system on the **observation/search** side.
+The star system is useful for observing density and searching larger patterns.
 
-A star may be useful for:
-- seeing repeated participation;
-- seeing density;
-- searching for larger recurring structures.
+It is not itself the chooser, not a second authoritative store, and not a semantic object.
 
-Pass 1 must not turn “star view” into:
-- a second store;
-- an authoritative semantic object;
-- an engine that chooses relationships;
-- a write-back projection.
+### H10 — durable history is 1D
+
+Human:
+
+> “Entries and pointers get laid down on the 1D array…”
+
+This is now a starting invariant.
+
+Authoritative retained Lace remains:
+
+\[
+L=(e_0,e_1,\ldots)
+\]
+
+with durable WORD and POINTER rows.
+
+The sampling campaign must not move durable truth into the 2D surface.
+
+### H11 — sampling creates a 2D array
+
+Human:
+
+> “…the sampling creates the 2D array…”
+
+This is no longer a candidate.
+
+Pass 1 must model a derived 2D sampling surface.
+
+The expected axes are:
+
+\[
+\boxed{
+\text{Lace/text position}
+\times
+\text{sample scale}
+}
+\]
+
+but the exact coordinate definition is still under test.
+
+### H12 — pointers can connect any sampling level
+
+Human:
+
+> “…enabling pointers at any level.”
+
+Together with the preceding clarification:
+
+> a short paragraph or sentence can link to the corpus of priors such as APPLES; recurring usage patterns may connect at any layer of the n+1 sampling; the POINTERs are the relational map.
+
+Current campaign invariant:
+
+\[
+\boxed{
+\text{POINTER operands are not restricted to equal sample scale.}
+}
+\]
+
+A retained relation may connect structures corresponding to:
+
+- word ↔ word;
+- word ↔ phrase-scale structure;
+- phrase ↔ sentence;
+- sentence ↔ paragraph;
+- paragraph ↔ large prior formation;
+- small-n ↔ large-n;
+- grounded point ↔ grounded point.
+
+The retained POINTER row still lands on the 1D Lace.
 
 ---
 
-## 1. Campaign reset — what Pass 6 got wrong
+## 1. Architecture fixed before Pass 1 begins
+
+The architecture under investigation is now:
+
+    AUTHORITATIVE RETAINED HISTORY
+
+    1D Lace
+    ---------------------------------------------------->
+    WORD  WORD  POINTER  WORD  POINTER  WORD  POINTER ...
+      |
+      | derive samples across position and scale
+      v
+
+    2D SAMPLING SURFACE
+
+                    text / Lace position -------------------->
+
+    scale n     [ sample ][ sample ][ sample ] ...
+    scale 5       [      sample      ] ...
+    scale 4        [     sample     ] ...
+    scale 3         [   sample   ] ...
+    scale 2          [ sample ] ...
+    scale 1           [cell][cell][cell]...
+        ^
+        |
+        sample scale
+
+      |
+      | recurrence / overlap / structural correspondence
+      | can be discovered across any scale
+      v
+
+    CROSS-SCALE RELATIONAL CANDIDATES
+
+      |
+      | retained relations become POINTER rows
+      v
+
+    1D Lace grows again
+      |
+      +--------------------------> sample again
+
+This feedback loop is now the campaign object.
+
+### Hard distinction
+
+The 2D sampling array is **working/derived machinery**.
+
+The 1D Lace is **durable authoritative history**.
+
+The 2D surface may enable a POINTER append, but the POINTER itself is retained on the 1D array.
+
+Pass 1 must make this distinction mathematically exact.
+
+---
+
+## 2. What Pass 1 is actually chasing
+
+The new campaign question is:
+
+\[
+\boxed{
+\text{How is the 2D n+1 sampling surface constructed from the 1D Lace?}
+}
+\]
+
+and then:
+
+\[
+\boxed{
+\text{How do structures on that surface become cross-scale POINTER relations?}
+}
+\]
+
+More concretely, Pass 1 must identify:
+
+1. what one 2D sample cell denotes;
+2. what the horizontal coordinate denotes;
+3. what the vertical n coordinate denotes;
+4. how row n+1 is built from row n and the growing text;
+5. how two sample cells are recognized as recurring/corresponding;
+6. whether observation alone creates a retained point;
+7. what event causes a POINTER to be laid down on 1D;
+8. how structures at different n levels become addressable to the same binary Join machinery;
+9. how accumulated pointer structure becomes density / heat-map evidence;
+10. how star/N-D/search views read this without becoming authoritative storage.
+
+Pass 1 maps these questions and kills invalid candidate classes.
+
+It does not choose final formulas unless the evidence already forces them.
+
+---
+
+## 3. Pass 6 is now a dated wrong-turn, not the campaign target
 
 ROOT / TOUCH / FOLD Pass 6 ended with:
 
@@ -93,820 +243,1039 @@ ROOT / TOUCH / FOLD Pass 6 ended with:
 \operatorname{Origin}(\rho)=[GAP].
 \]
 
-That was an honest narrowing of the old chooser assumption, but H7/H8 now correct the deeper premise:
+That was a disciplined answer to the then-assumed problem:
 
-> there may be no prior arbitrary relation assertion whose origin must be found.
+> an arbitrary relation assertion exists; who originated it?
 
-The sampling process itself is intended to **discover recurring structural relationships over time**.
+H7–H12 change the premise.
+
+There is no intended arbitrary semantic relation assertion waiting for provenance.
+
+Instead:
+
+\[
+\text{2D sampling}
+\to
+\text{repeated structural correspondence}
+\to
+\text{relational pointer map}.
+\]
 
 ### Historical discipline
 
-Pass 1 must not delete or rewrite Pass 6.
+Do not delete Pass 6.
 
-Pass 6 remains a dated record of the wrong question:
+Pass 1 must record it as:
 
-> “who originates the arbitrary relation assertion?”
+**HIST — correct work on a wrong problem statement.**
 
-The new campaign asks instead:
+Its useful surviving results include:
 
-> **What exact n+1 sampling process over growing Lace makes recurring structure visible and causes/grounds touches without semantic choice?**
+- no semantic chooser;
+- no hidden Contract-II relation payload;
+- no Layer-III write authority;
+- D1 does not itself provide a chooser;
+- all-portions automatic materialization is not justified.
 
-Pass 1 only maps the delta.
+Its active Origin(rho) framing is expected to require later law reconciliation after the sampler is mapped.
 
-Law reconciliation belongs to a later pass after the sampler is actually constrained.
-
----
-
-## 2. One campaign question
-
-\[
-\boxed{
-\text{What does n+1 sampling actually do?}
-\]
-
-More precisely:
-
-> Given only the growing append-only Lace, word root/touch behavior, and no stored meaning, how are samples formed and extended so repeated structural patterns accumulate evidence, repeated patterns can touch/re-enter prior structure, and larger non-word formations become discoverable through read-only star/N-D/density views?
-
-Pass 1 is a **problem map**.
-
-It must identify the variables and falsifiers before selecting a sampling recurrence.
+Pass 1 does not edit law.
 
 ---
 
-## 3. Current known substrate — do not reopen
+## 4. The 1D / 2D split
 
-Pass 1 treats these as current premises unless a direct contradiction appears.
+### 4.1 1D Lace
 
-### Word arrival
+Durable:
+
+- WORD entries;
+- POINTER entries;
+- append order;
+- permanent indices;
+- recursive pointer ancestry.
+
+No rewrite. No delete. No second authoritative relational store.
+
+### 4.2 2D sampling array
+
+Derived from the 1D Lace.
+
+Its provisional mathematical form is:
 
 \[
-\mathsf{Arrive}(v)\Rightarrow\mathsf{WORD}(v).
+\mathcal S[n,x]
 \]
 
-### Word root/touch
+where:
 
-If unseen:
+- \(n\) is sample scale;
+- \(x\) is a position coordinate.
+
+Both meanings require exact definition.
+
+The 2D array is not merely a pretty visualization.
+
+It is working sampling machinery.
+
+But it must also not become a competing persistent truth store.
+
+### 4.3 Retained pointer feedback
+
+When the sampling mechanism establishes a structural relation that should persist, the relation is encoded by the existing 1D constructor:
 
 \[
-\mathsf{Root}(v)=\text{new WORD occurrence}.
+\mathsf{Join}(a,b).
 \]
 
-If seen:
+The new POINTER row enlarges \(L\).
+
+The next sampling state is derived from the enlarged \(L\).
+
+Thus:
 
 \[
-\mathsf{RootTouch}
+L_t
+\to
+\mathcal S_t
+\to
+\text{retained POINTER append}
+\to
+L_{t+1}
+\to
+\mathcal S_{t+1}.
+\]
+
+Pass 1 must determine which arrow is still underspecified.
+
+---
+
+## 5. 2D coordinate question
+
+The user has fixed the existence of the 2D sampling array.
+
+Pass 1 must now determine the axes precisely.
+
+### X-A — horizontal coordinate = WORD-arrival position
+
+Only word occurrences index the horizontal axis.
+
+POINTER rows do not advance text position.
+
+### X-B — horizontal coordinate = full Lace index
+
+WORD and POINTER rows both advance x.
+
+### X-C — horizontal coordinate = source-text position mapped into Lace
+
+Text position is a separate derived coordinate pointing into the 1D rows.
+
+### X-D — horizontal coordinate = sample endpoint
+
+A cell \(\mathcal S[n,x]\) denotes the scale-n sample ending at x.
+
+### X-E — horizontal coordinate = sample start
+
+A cell denotes the scale-n sample starting at x.
+
+### X-F — span coordinate
+
+A cell is best defined by a source span \([i,j]\), and the rectangular array is only one projection of spans.
+
+Pass 1 does not assume the answer.
+
+It must report which candidates are compatible with H10–H12 and D1.
+
+---
+
+## 6. What does one cell mean?
+
+Candidate cell semantics:
+
+### C-A — ordered text window
+
+\[
+\mathcal S[n,x]
 =
-\mathsf{Join}(\text{new occurrence},\mathsf{Root}(v)).
+(w_x,\ldots,w_{x+n-1})
 \]
 
-### Physical Join
+or endpoint equivalent.
 
-Current reconciled constructor:
+### C-B — ordered root sequence
+
+Repeated WORD occurrences are normalized to roots for sample identity.
+
+### C-C — grounded point representing that sample
+
+Every cell has a corresponding Lace point.
+
+This is a strong claim and must be tested against D1 row counts.
+
+### C-D — ephemeral sample descriptor
+
+The cell denotes a sample without requiring a retained Lace row.
+
+Only some cells later correspond to retained points.
+
+### C-E — set of addressable structures overlapping that span
+
+A cell may contain multiple existing points/relations.
+
+Potentially useful but may be too rich.
+
+### C-F — recursive current-scale structure
+
+A scale-n cell is built from lower-scale cells/grounded points.
+
+This is closest to the n+1 intuition, but its exact recurrence remains OPEN.
+
+The first major test is whether **every cell must be retained**.
+
+D1 strongly constrains that.
+
+---
+
+## 7. Sampling observation is not automatically a retained append
+
+Pass 1 must preserve three separate acts:
+
+### O1 — sample exists on the 2D working surface
+
+The sampler can inspect/construct the scale-n sample.
+
+### O2 — recurrence / correspondence is detected
+
+The current sample matches or overlaps prior structural material.
+
+### O3 — relation is retained
+
+A POINTER row is appended to the 1D Lace.
+
+These are not assumed equivalent.
+
+D1 makes this distinction necessary because not every obvious adjacent WORD pair has an explicit POINTER.
+
+The campaign must determine:
 
 \[
-\mathsf{Join}(a,b)
+O1\to O2?
+\]
+
+and:
+
+\[
+O2\to O3?
+\]
+
+without inserting semantic choice.
+
+---
+
+## 8. What does n mean?
+
+H11 fixes n as an axis of the 2D array, but not yet its exact measure.
+
+Candidates:
+
+### N-A — number of source WORD occurrences in the sample
+
+\[
+n=1
+\]
+
+word-scale,
+
+\[
+n=2
+\]
+
+two-word structure, etc.
+
+### N-B — number of current-scale child structures
+
+A higher cell can combine two or more lower-level points.
+
+### N-C — source-text span
+
+n means span length in arrival positions.
+
+### N-D — sample cardinality in addressable Lace points
+
+The older Pass-3 definition.
+
+### N-E — recursive scale level
+
+n denotes hierarchy level, not literal member count.
+
+### N-F — mixed
+
+At level 1 the units are words; higher levels may be grounded structures.
+
+Pass 1 must not silently equate:
+
+- n;
+- POINTER arity;
+- Reach size;
+- tree depth;
+- text span.
+
+Binary Join can connect structures of arbitrarily different n.
+
+---
+
+## 9. n→n+1 recurrence candidates
+
+### R-A — overlapping window extension
+
+\[
+\mathcal S[n+1,x]
 =
-(\mathsf{POINTER},a,b)
+\mathcal S[n,x]
++
+\text{one adjacent word}.
 \]
 
-over earlier same-line addressable points.
+Classic sliding hierarchy.
 
-### Recursive point construction
-
-A Join point can participate in later Join.
-
-### Projection fence
-
-N-D / star / diagram views are not second authoritative stores.
-
-### No meaning store
-
-No semantic labels, embeddings, concepts, graph DB, or external edge table become Core truth.
-
-Pass 1 does **not** reopen these merely because the sampling rule is incomplete.
-
----
-
-## 4. New candidate pipeline to map
-
-Not yet a law:
-
-    raw text grows
-         |
-         v
-    WORD arrival
-         |
-         +-- unseen word --> root
-         |
-         +-- seen word ----> root touch
-         |
-         v
-    n+1 sampling over accumulated text/Lace
-         |
-         v
-    recurrence / overlap evidence
-         |
-         v
-    repeated structural participation
-         |
-         v
-    density accumulates
-         |
-         +------> Core may use derived recurrence evidence
-         |        to determine where structural touches occur
-         |
-         +------> star / N-D / heat-map-style views
-                  expose dense recurring structure
-                             |
-                             v
-                  search for larger non-word patterns
-
-Every arrow below word root/touch is **under test**.
-
----
-
-## 5. The first critical distinction — sampling vs storage
-
-The human says sampling finds relationships over time.
-
-Pass 1 must distinguish:
-
-### SAMP-A — sampled observation
-
-A structure is examined as part of the sampling process.
-
-This alone does not necessarily mean a POINTER row is appended.
-
-### SAMP-B — retained structural touch
-
-Sampling finds enough recurrence/overlap to cause/justify a retained Lace participation.
-
-This would use the existing Join machinery.
-
-### SAMP-C — view / heat-map evidence
-
-Density is derived from accumulated structure and shown/searchable.
-
-This is not automatically another append.
-
-These three events must not be collapsed.
-
-This distinction is required because D1 does **not** contain a POINTER for every consecutive pair in the WORD subsequence.
-
----
-
-## 6. D1 constraint — sampling cannot mean “append every observed window” without proof
-
-D1 WORD subsequence:
+### R-B — neighboring sample composition
 
 \[
-PIE,\ DESSERT,\ PIE,\ WHOLE,\ CUSTOMER.
-\]
-
-Consecutive WORD-subsequence pairs:
-
-| Pair | Explicit D1 relation |
-|---|---|
-| PIE → DESSERT | yes, 0002 |
-| DESSERT → PIE | no |
-| PIE → WHOLE | yes, 0006 |
-| WHOLE → CUSTOMER | no |
-
-Therefore any candidate saying:
-
-> every sampled adjacent pair immediately becomes a POINTER row
-
-must explain these absences or be refuted.
-
-This does **not** prove sampling is non-contiguous.
-
-It proves:
-
-\[
-\boxed{
-\text{sampled}
-\not\equiv
-\text{automatically stored as one POINTER}
-}
-\]
-
-unless another premise explains D1.
-
-This will be the main bounded specimen test.
-
----
-
-## 7. Sampling domain — Pass 1 must keep the possibilities separate
-
-What exactly is sampled?
-
-### D-A — raw word-arrival subsequence
-
-Samples are windows/routes over arriving WORD occurrences.
-
-### D-B — root identities
-
-Repeated occurrences map through their roots before sample identity is compared.
-
-### D-C — full Lace row sequence
-
-Samples may contain WORD and POINTER rows.
-
-### D-D — already-grounded points
-
-Sampling can operate recursively over points that themselves represent prior structure.
-
-### D-E — mixed hierarchy
-
-A sample may be built from current-scale points, with lower scales already grounded beneath them.
-
-Pass 1 may not choose a domain simply because it is convenient.
-
-Each domain gets:
-- source support;
-- human-ruling support;
-- D1 compatibility;
-- side-state cost;
-- whether it creates meaning;
-- whether it is recursive.
-
----
-
-## 8. What does sample size n mean now?
-
-Earlier Pass 3 used:
-
-\[
-|S|=n
-\]
-
-for selected-point cardinality.
-
-H7/H8 now introduce **systematic sampling over growing text**, so Pass 1 must re-test what n measures.
-
-Candidate meanings:
-
-### N-A — number of WORD occurrences in a text window
-
-Classic ordered sample length.
-
-### N-B — number of current-scale points
-
-A recursive sample can contain grounded points.
-
-### N-C — construction depth
-
-Probably not equivalent to sample size; test and likely reject.
-
-### N-D — Reach cardinality
-
-Also not automatically equivalent; test and likely reject.
-
-### N-E — route span
-
-Number of arrival positions covered, even if internal grounded structure has fewer/more points.
-
-No silent equivalence.
-
----
-
-## 9. n+1 recurrence candidates
-
-Pass 1 must map, not choose.
-
-### R-A — rolling text window
-
-For arrival sequence \(w_1,\ldots,w_t\):
-
-\[
-W_{n,t}
+\mathcal S[n+1,x]
 =
-(w_{t-n+1},\ldots,w_t).
+F(\mathcal S[n,x],\mathcal S[n,x+1]).
 \]
 
-Then n+1 extends an overlapping text sample.
+This naturally creates overlap pyramids.
 
-Questions:
-- exact occurrence or root identity?
-- what becomes stored?
-- how does this fit D1's missing consecutive-pair relations?
-- are all n sampled simultaneously?
+But F must not smuggle in meaning.
 
-### R-B — prefix ladder
+### R-C — grounded-point extension
 
 \[
-S_{n+1}=S_n+\text{next arrival}.
-\]
-
-Pass 6 refuted one universal whole-prefix **grounding schedule**.
-
-Do not reintroduce it as storage.
-
-It may still be a **read-only sampling** interpretation; test separately.
-
-### R-C — recursive point composition
-
-\[
-S_{n+1}
+P_{n+1}
 =
-(S_n,\ p)
+\mathsf{Join}(P_n,p)
 \]
 
-where \(S_n\) is represented by a grounded point and \(p\) is another point.
+for a sample already retained.
 
-Compatible with branch construction, but does not define which text slices are sampled.
+This is valid construction machinery but does not alone define the entire 2D sampling surface.
 
-### R-D — overlapping hierarchy
+### R-D — all overlapping windows exist ephemerally; only recurrence is retained
 
-All scale-n samples are read; overlapping recurrent samples contribute to scale-(n+1) evidence.
+The full 2D array can exist as derived computation without writing every cell to Lace.
 
-This resembles the human “heat map” intuition but is not yet formal.
+This is now a major candidate because it respects H10/H11 and may fit D1 sparsity.
 
-### R-E — sparse recurrence expansion
+### R-E — recurrence-promoted hierarchy
 
-Only a sample that reappears / overlaps strongly enough is promoted to a larger-scale tracked formation.
+Scale n+1 is only formed/retained when lower-scale recurrence provides evidence.
 
-Potentially explains why sampling need not append every window.
+This may fit the heat-map idea, but any trigger/threshold is OPEN.
 
-But:
-- “strong enough” is undefined;
-- no threshold may be invented.
+### R-F — recursive sparse graph of sample cells
 
-### R-F — every finite portion
+The 2D array provides candidate spans/scales, while POINTER rows create the sparse relational map among them.
 
-Earlier automatic materialization was refuted.
-
-Do not revive it.
-
-Capability to inspect/sample many portions is not obligation to append all of them.
+This is architecturally attractive but must be tested rather than assumed.
 
 ---
 
-## 10. Sample identity — the central unsolved comparator
+## 10. Cross-scale addressability — now a fixed requirement
 
-To find recurrence, the system needs some notion that two samples are “the same” or structurally correspond.
+H12 says POINTERs can connect structures at any sampling level.
 
-Pass 1 must map possible equality relations.
+Therefore Pass 1 must define how a 2D sample becomes an operand of the existing 1D Join.
+
+Possible mechanisms:
+
+### A-A — every retained sample has a Lace point
+
+Cross-scale pointering references those points directly.
+
+### A-B — only recurring samples receive retained Lace points
+
+Ephemeral cells become addressable only after promotion.
+
+### A-C — sample corresponds to an existing grounded point whose Reach covers its span
+
+No new sample row type needed.
+
+### A-D — sample span is resolved at pointer time into an existing point
+
+Potentially requires deterministic grounding before pointer append.
+
+### A-E — pointer may target a point at any scale because scale is not stored in the pointer at all
+
+Scale belongs to the 2D interpretation/view, while the operand is just a Lace index.
+
+This is likely compatible with current binary Join, but it is still an inference until Pass 1 tests it.
+
+### Cross-scale invariant
+
+No rule may require:
+
+\[
+n_a=n_b
+\]
+
+for:
+
+\[
+\mathsf{Join}(a,b).
+\]
+
+Equal-scale-only POINTERs violate H12.
+
+---
+
+## 11. APPLES specimen — campaign thought experiment
+
+Pass 1 must use one concrete multi-scale specimen.
+
+Suppose prior text repeatedly contains APPLE in usage patterns.
+
+The corpus may have recurring samples such as:
+
+- APPLE;
+- RED APPLE;
+- APPLE PIE;
+- APPLE TREE;
+- EAT AN APPLE;
+- sentence-scale apple usage;
+- paragraph-scale structures involving apples.
+
+A new paragraph arrives.
+
+Its 2D sampling surface contains cells across many n values.
+
+Pass 1 asks:
+
+1. which cells can correspond to prior APPLE-associated structure?
+2. what counts as the same recurring structure?
+3. can a paragraph-scale cell connect to a word-root/star formation?
+4. can a paragraph-scale cell connect to a prior sentence-scale grounded point?
+5. can n=20 connect to n=1?
+6. what 1D index actually becomes each Join operand?
+7. does recurrence create a new point, a pointer to an existing point, or both?
+8. how does density accumulate without a separate score store?
+
+No semantic statement “this paragraph is about apples” may be used.
+
+Only recurring structural usage is allowed.
+
+---
+
+## 12. Sample identity / recurrence comparator
+
+To find recurrence over the 2D surface, the system needs a comparator.
+
+Candidates:
 
 ### E-A — exact ordered WORD values
 
-Two samples match if every position's word value matches.
+Same text sequence.
 
-Depends on G1 word equality.
+Depends on G1 equality.
 
-### E-B — exact ordered root identities
+### E-B — exact ordered root sequence
 
-Same root sequence, regardless of occurrence indices.
+Occurrence-independent lexical recurrence.
 
-### E-C — exact ordered Lace-point topology
+### E-C — exact pointer/word structural signature
 
-Compare grounded structure, not lexical values alone.
+A sample is identified by topology.
 
-### E-D — structural isomorphism
+### E-D — exact grounded-point ancestry
 
-Dangerous:
-- may require canonicalization;
-- may exceed current law;
-- must not be assumed.
+Two cells recur if they resolve to identical prior grounded structure.
 
-### E-E — semantic similarity
+### E-E — overlap of retained pointers
 
-**FORBID as default.**
-
-Would import stored/learned meaning not present in current Core law.
+Recurrence is detected through already-shared relational paths.
 
 ### E-F — partial overlap
 
-Could underlie heat-map density, but “how much overlap counts” is a new question.
+Heat-map-like structural density may not require exact equality.
 
-Pass 1 must explicitly separate:
-- exact repeat;
-- overlap;
-- similarity.
+But overlap measure is OPEN.
 
-They are not interchangeable.
+### E-G — semantic similarity
+
+FORBIDDEN by default.
+
+No embeddings / meaning model enters Core.
+
+Pass 1 must distinguish:
+
+\[
+\text{exact recurrence}
+\neq
+\text{structural overlap}
+\neq
+\text{semantic similarity}.
+\]
 
 ---
 
-## 11. First occurrence vs repeat at scales above words
+## 13. Root / touch at higher scales
 
-This is a major new question.
+Word-level rule:
 
-The human word-level rule is clear:
+    unseen WORD -> root
+    seen WORD   -> RootTouch
 
-    if word exists -> touch
-    if word does not exist -> root
+The new 2D hierarchy raises a sharper question:
 
-Does the same rule recurse to larger samples?
+> Does each recurrent sample structure have an analogous first-seen anchor and later touch?
 
-Candidate hypothesis:
+Possibilities:
 
-\[
-\text{sample unseen}
-\rightarrow
-\text{sample root}
-\]
+### HT-A — recursive root/touch identity
 
-\[
-\text{sample seen}
-\rightarrow
-\text{sample touch}
-\]
+First retained occurrence of a sample-scale pattern becomes its root point; later recurrences touch it.
 
-This would naturally create higher-order stars.
+### HT-B — no special higher-order root object
 
-But the human has **not yet explicitly said** that every higher-scale sample gets a root/touch identity exactly like a word.
+The relational density itself is enough; search finds recurring formations without one canonical sample root.
 
-Pass 1 must test:
+### HT-C — existing grounded point acts as anchor
 
-1. Does H7 imply this recursively?
-2. Would it append a row for every unique observed sample?
-3. Would D1 permit that?
-4. Is the “root” a stored point, or only a read/index into already-built structure?
-5. Can a larger pattern be discovered without giving it a special stored root?
+No new root type. A prior grounded point is simply reused as the recurrence target.
 
-Do not promote the analogy to law without passing these tests.
+### HT-D — different scales use different anchoring rules
+
+Dangerous unless source/human ruling requires it.
+
+Pass 1 must test HT-A against D1:
+
+If every unique sampled window immediately acquires a retained root point, D1 may be too sparse.
+
+Therefore the distinction between **ephemeral 2D cell** and **retained 1D anchor** is central.
 
 ---
 
-## 12. Heat map — define what it is NOT before asking what it is
+## 14. Heat map means density on the sampling/relational structure
 
-H7 says “like a heat map.”
+The human says “like a heat map.”
 
-Pass 1 treats this as a **human metaphor for structural density**, not a stored object.
+This is not a literal persistent heat-map object.
 
-Heat map is not automatically:
+Pass 1 maps derived density candidates:
 
-- a matrix;
-- an embedding;
-- an attention map;
-- a second graph;
-- a mutable score table;
-- a semantic salience model;
-- a neural activation tensor;
-- a Layer-III write authority.
+### H-A — recurrence count per 2D cell pattern
 
-Candidate mathematical readings to test:
+How often equivalent cells recur.
 
-### H-A — recurrence multiplicity
+### H-B — retained-pointer incidence
 
-How many times an exact sample/pattern has reappeared.
+How many retained relations involve the structure.
 
-### H-B — touch degree
+### H-C — cross-scale connectivity
 
-How much retained participation enters/leaves a point/formation.
+How many n levels connect into/out of the structure.
 
-### H-C — route multiplicity
+### H-D — route multiplicity
 
-How many distinct arrival routes traverse the same formation.
+How many source-text routes revisit the formation.
 
-### H-D — shared ancestry density
+### H-E — shared ancestry overlap
 
-How much recursive Reach overlap exists among grounded points.
+How much recursive Reach is shared among retained points.
 
-### H-E — multi-scale recurrence
+### H-F — multi-scale density field
 
-A region is “hot” when it recurs at several sample sizes.
+A derived measure over:
 
-### H-F — combination of the above
+\[
+(n,x)
+\]
 
-Do not combine until source/human ruling requires it.
+where “hot” means repeated participation across both position and scale.
 
-All density measures must be **derived from Lace**, not authoritative state beside Lace.
+### H-G — relational-map density
+
+Density is not a separate score at all; it is visible from the pointer topology itself.
+
+Pass 1 must decide what evidence supports each reading.
+
+Any cached density must remain disposable/derived.
 
 ---
 
-## 13. Critical Core/view split
+## 15. The 2D array is not Layer III
 
-The human says the heat-map-like sampling “show[s] the system where to make touches,” while the star system is a view useful for search.
+This is a major correction to the first draft.
 
-That creates an important distinction.
+### 2D sampling array
 
-### Internal derived sampling read
+Working computational structure produced by sampling the authoritative 1D Lace.
 
-Core may be able to derive recurrence evidence from \(L\) without storing a second authoritative structure.
+It may participate in deciding/deriving which retained structural relation is written.
 
-Potential analytical shape:
+It is not merely a display.
 
-\[
-\mathsf{SampleRead}(L,n,t)
-\rightarrow
-\text{ephemeral recurrence evidence}.
-\]
+### Layer III views
 
-This is **not yet admitted**.
+Star / heat-map visualization / N-D visualization / search interface may read:
 
-### Layer-III heat-map/star view
+- 1D Lace;
+- derived 2D sample structure;
+- derived density;
+- pointer topology.
 
-A visualization/search surface may render the same derived evidence:
+But Layer III remains non-authoritative and cannot write Core truth.
+
+Thus:
 
 \[
 L
-\rightarrow
-\text{density/star/N-D view}.
+\to
+\mathcal S
+\to
+\text{Core-derived relation evidence}
+\to
+\text{POINTER append to }L
 \]
 
-This remains read-only.
+is potentially legal working machinery,
 
-### Hard fence
-
-Do not say:
+while:
 
 \[
-\text{Layer III heat map}
-\rightarrow
-\text{Core write}.
+\text{GUI heat map}
+\to
+\text{POINTER append}
 \]
 
-Current no-write-back law forbids that.
+remains forbidden.
 
-If recurrence evidence participates in Core decisions, it must be:
-- a Core-derived read from authoritative Lace;
-- or another lawfully stated mechanism.
-
-It cannot be authoritative because a viewer painted it.
-
-Pass 1 must map this seam carefully.
+Pass 1 must preserve this boundary.
 
 ---
 
-## 14. Larger non-word linked patterns
+## 16. POINTER is the relational map
 
-H7 says larger patterns “will show up in text.”
-
-Pass 1 must define what that claim could mean without inventing concepts.
-
-Candidate:
-
-    many passages
-        |
-        v
-    same / overlapping multi-point route recurs
-        |
-        v
-    retained touches share structure
-        |
-        v
-    dense formation emerges
-        |
-        v
-    view/search finds it
-
-A larger pattern is **not automatically**:
-- a named concept;
-- an entity object;
-- a semantic class;
-- a new row kind;
-- a stored phrase record.
-
-Possible representations:
-- one grounded point whose ancestry spans it;
-- a recurrent family of grounded points;
-- a dense shared substructure visible through traversal;
-- a search result over existing Lace.
-
-Pass 1 must keep these distinct.
-
----
-
-## 15. Search role of stars
-
-Current word star:
+H12 fixes a central interpretation:
 
 \[
-\text{root}
-+
-\text{occurrences}
-+
-\text{RootTouches}
-+
-\text{later participation}.
+\boxed{
+\text{POINTER topology is the retained relational map.}
+}
 \]
 
-New human direction suggests star-like search may generalize.
+The 2D sampling surface exposes candidate recurring structures across scale.
 
-Questions:
+The POINTER rows preserve discovered relationships on the 1D Lace.
 
-1. Is “star” still strictly word-root-centered?
-2. Are larger patterns merely star-shaped views without being called stars?
-3. Can a grounded sample point become a search anchor?
-4. Can density search start from a word root, grounded point, route fragment, or arbitrary Lace index?
-5. Does searching a formation require any new stored index?
-6. Can all search indices be ephemeral/derived?
+Therefore no second graph database is required.
 
-Pass 1 does not design a search API.
+A pointer can connect:
 
-It maps the structural search surface.
+\[
+\mathcal S[n_a,x_a]
+\leftrightarrow
+\mathcal S[n_b,x_b]
+\]
 
----
+only after those structures resolve to addressable Lace points:
 
-## 16. D1 replay obligations for the new campaign
+\[
+a,b<|L|.
+\]
 
-Pass 1 findings must replay D1 under each surviving sampling interpretation.
+The physical stored relation remains:
 
-### D1-S1
-Can the interpretation explain why PIE repetition causes explicit RootTouch 0004?
+\[
+\mathsf{Join}(a,b).
+\]
 
-### D1-S2
-Does it require a POINTER for DESSERT→PIE?
-If yes, D1 lacks it.
+Sampling level is interpretive/derived context, not necessarily a stored pointer field.
 
-### D1-S3
-Does it require a POINTER for WHOLE→CUSTOMER?
-If yes, D1 lacks it.
+Pass 1 must test whether any extra scale field is actually necessary.
 
-### D1-S4
-Can it explain 0002 and 0006 as sampled structure without semantic chooser?
-
-### D1-S5
-Can recursive sampling explain why 0007 / 0009 / 0010 operate on prior POINTER points?
-
-### D1-S6
-Does it require extra sample rows absent from D1?
-
-### D1-S7
-Can D1 remain an illustrative sparse specimen while the sampler observes more than it appends?
-
-This is likely the critical storage-vs-observation seam.
+Default answer: do not add one.
 
 ---
 
-## 17. New campaign falsifier board
+## 17. Higher dimensions from the end
 
-| ID | Falsifier | Consequence |
+The campaign now approaches N-D from the resulting relational system.
+
+### 1D
+
+Durable chronological Lace:
+
+\[
+WORD|POINTER|WORD|POINTER|\cdots
+\]
+
+### 2D
+
+Derived sampling surface:
+
+\[
+\text{position}\times\text{sample scale}.
+\]
+
+### Higher-D
+
+Cross-scale and recursive POINTER relations among structures exposed by the 2D sampling system.
+
+POINTER→POINTER enables relations among already-retained relations.
+
+Star/N-D views expose the resulting density/topology.
+
+Pass 1 must test this mapping against Graphics C/D without claiming that Graphic C literally specifies the new 2D sampling algorithm.
+
+Authority discipline matters:
+
+- H11/H12 = human ruling;
+- C/D = compatibility evidence;
+- exact algorithm = OPEN.
+
+---
+
+## 18. D1 obligations under the new model
+
+D1 must be replayed as a sparse retained trace of a richer 2D sampling process.
+
+### D1-1
+
+The sampler may observe more samples than D1 retains as POINTERs.
+
+This is now an explicit candidate, not an assumption.
+
+### D1-2
+
+PIE repetition must still produce RootTouch 0004.
+
+### D1-3
+
+DESSERT→PIE has no explicit pointer row.
+
+Any model saying every sampled pair is retained fails.
+
+### D1-4
+
+WHOLE→CUSTOMER has no explicit pointer row.
+
+Same constraint.
+
+### D1-5
+
+0002 and 0006 must be explainable as retained relations discovered from sampling without semantic choice.
+
+### D1-6
+
+0007, 0009 and 0010 must be explainable as cross-level / relation-of-relation pointering.
+
+### D1-7
+
+No candidate may require equal-scale operands.
+
+### D1-8
+
+No candidate may require one stored row per 2D cell unless D1 can support the predicted rows.
+
+### D1-9
+
+The 2D surface may be denser than the retained 1D relational map.
+
+This is a major hypothesis to test.
+
+---
+
+## 19. Pass-1 candidate matrices
+
+Execution findings must include five matrices.
+
+### M1 — 2D cell semantics
+
+C-A…C-F.
+
+### M2 — axis semantics
+
+X-A…X-F.
+
+### M3 — n meaning
+
+N-A…N-F.
+
+### M4 — recurrence construction
+
+R-A…R-F.
+
+### M5 — addressability / cross-scale pointer bridge
+
+A-A…A-E.
+
+Each row gets:
+
+- R/P/I/HIST/OPEN authority;
+- D1 fit;
+- H10/H11/H12 fit;
+- hidden-state requirement;
+- second-store risk;
+- whether it forces extra retained rows;
+- verdict: ADMIT / BLOCK / REFUTE / OPEN.
+
+---
+
+## 20. New falsifier board
+
+| ID | Falsifier | Action |
 |---|---|---|
-| **F1-1** | a candidate requires semantic relation choice | reject; H8 breach |
-| **F1-2** | a candidate stores a heat map/density table as authority | reject; second-store breach |
-| **F1-3** | a candidate makes Layer III write touches | reject; projection breach |
-| **F1-4** | candidate says every observed adjacent pair appends Join | test against D1 missing pair links; likely reject |
-| **F1-5** | candidate silently equates sample size with pointer arity | reject |
-| **F1-6** | candidate requires hidden active-sample state | mark side-state conflict |
-| **F1-7** | candidate creates a root for every higher-order sample and predicts rows absent from D1 | reject or narrow to read-only sample identity |
-| **F1-8** | candidate uses semantic similarity / embeddings | reject |
-| **F1-9** | candidate turns recurring pattern into a stored concept object | reject |
-| **F1-10** | exact recurrence cannot produce larger D1 pointer-of-pointer structure | candidate insufficient |
-| **F1-11** | Pass 6 provenance framing still required after H7/H8 | record exact residual; do not assume campaign correction |
-| **F1-12** | gate-question campaign owns a tested sub-question | hand off rather than overwrite |
-| **F1-13** | candidate cannot distinguish sample observation from retained touch | reject as underspecified |
-| **F1-14** | candidate makes density depend on information not derivable from Lace | reject / new-source required |
-| **F1-15** | “heat map” is treated literally rather than as human metaphor | reject |
-| **F1-16** | plan needs src/Cargo/code to answer the mathematical question | stop |
+| **F1-1** | candidate chooses relations semantically | reject |
+| **F1-2** | candidate stores durable truth in the 2D array independent of 1D Lace | reject / second authoritative store |
+| **F1-3** | candidate treats 2D sampling as mere Layer-III picture | reject; H11 breach |
+| **F1-4** | candidate lets Layer III write Core | reject |
+| **F1-5** | every 2D cell must append a POINTER/root and D1 lacks rows | refute |
+| **F1-6** | every adjacent sampled pair must be retained | refute against D1 |
+| **F1-7** | candidate restricts POINTERs to equal n levels | reject; H12 breach |
+| **F1-8** | candidate adds sample-scale fields to POINTER without necessity | block |
+| **F1-9** | candidate equates n with POINTER arity | reject |
+| **F1-10** | candidate needs semantic similarity / embeddings | reject |
+| **F1-11** | candidate needs a second graph/meaning store | reject |
+| **F1-12** | candidate cannot explain cross-level 0007/0009/0010 | insufficient |
+| **F1-13** | candidate cannot resolve a 2D sample to an addressable 1D operand | insufficient |
+| **F1-14** | candidate requires hidden persistent sample state beyond reconstructible 2D working structure | block |
+| **F1-15** | density cannot be derived from 1D + reconstructed 2D/pointer structure | block / new source needed |
+| **F1-16** | higher-order root/touch rule predicts retained rows absent from D1 | refute that rule |
+| **F1-17** | Pass-6 Origin(rho) remains necessary after explicit sampling mechanism | record residual precisely rather than force reconciliation |
+| **F1-18** | gate-question campaign owns a sub-question | hand off |
+| **F1-19** | plan needs implementation to answer | stop |
+| **F1-20** | sampling surface cannot be reconstructed after restart from authoritative Lace under a candidate | candidate violates derived-surface premise unless human rules otherwise |
 
 ---
 
-## 18. Pass-1 authority discipline
+## 21. Heat-map / search outputs are downstream readings
+
+Pass 1 must keep:
+
+\[
+\text{sampling machinery}
+\]
+
+separate from:
+
+\[
+\text{search/visualization of its accumulated structure}.
+\]
+
+A future star/search tool may ask:
+
+- what repeatedly passes through APPLE?
+- what phrase-scale patterns repeatedly connect here?
+- what sentence-scale structures share this region?
+- which large-n patterns connect to this small-n root?
+- what non-word pattern is structurally dense enough to retrieve?
+
+But Pass 1 does not define ranking, UI, API, labels, or thresholds.
+
+Search is downstream of the structural map.
+
+---
+
+## 22. APPLES acceptance specimen
+
+Pass 1 findings must include one worked but non-semantic specimen.
+
+Use a synthetic corpus containing repeated APPLE usage.
+
+Required demonstration questions:
+
+1. Draw the 1D WORD/POINTER history abstractly.
+2. Construct the candidate 2D sampling surface for at least n=1…4.
+3. Identify which samples repeat exactly.
+4. Identify which samples overlap without exact equality.
+5. Show how a small-n APPLE anchor could connect to a larger-n sentence/paragraph structure.
+6. Show how a large-n current structure could connect to a large prior APPLE formation.
+7. Show that the retained relation is still a binary POINTER row on 1D.
+8. Show that no semantic statement “about apples” was needed.
+9. Show what information a heat-map/star view could display.
+10. Identify every still-open rule rather than inventing it.
+
+This specimen is analytical only.
+
+Do not create synthetic Core rows as law unless the candidate explicitly predicts them and D1 constraints allow it.
+
+---
+
+## 23. Pass-1 authority discipline
 
 Every finding must be stamped:
 
-- **R** — current direct human ruling H7/H8/H9;
+- **R** — direct human rulings H7–H12;
 - **P** — Graphics A–D;
 - **I** — inference;
-- **HIST** — older campaign record;
+- **HIST** — prior campaign record;
 - **OPEN**;
 - **CONFLICT**.
 
-Important examples:
+Key classifications at plan time:
 
-- “relationships are not chosen; sampling finds them over time” = **R**
-- “heat map” is a structural-density metaphor = **R**, but exact density measure = **OPEN**
-- star is a useful view/search surface = **R**
-- exact n+1 recurrence = **OPEN**
-- exact sample equality above words = **OPEN**
-- D1 missing adjacent links = **P**
-- pointer-to-pointer recursion = **P**
-- Pass 6 Origin(rho) = **HIST current-law wrong-turn pending reconciliation**, not silently deleted
+| Claim | Authority |
+|---|---|
+| relationships are discovered through sampling, not chosen first | **R** |
+| WORD/POINTER rows persist on 1D Lace | **R + P-compatible** |
+| sampling creates a 2D array | **R** |
+| 2D sampling enables POINTER relations at any n level | **R** |
+| POINTER rows remain the retained relational map | **R + current D-compatible** |
+| cross-scale operands need equal n | **REFUTED by R** |
+| exact x-axis definition | **OPEN** |
+| exact n meaning | **OPEN** |
+| exact cell content | **OPEN** |
+| exact n+1 recurrence | **OPEN** |
+| exact recurrence comparator | **OPEN** |
+| exact retain-vs-observe rule | **OPEN** |
+| exact density measure | **OPEN** |
+| star / heat-map search is downstream view | **R** |
+| Pass 6 Origin(rho) is current active law | **HIST / pending later reconciliation under new ruling** |
 
 ---
 
-## 19. Pass-1 required product
+## 24. Pass-1 execution product
 
-Execution product:
+Create:
 
 docs/plans/sampling-density-emergence-pass-1-findings.md
 
-It must contain:
+Required contents:
 
-1. H7/H8/H9 exact ruling record.
-2. ROOT / TOUCH / FOLD Pass-6 delta map.
-3. Sampling-vs-storage three-way distinction.
-4. Sampling-domain matrix D-A…D-E.
-5. Sample-size matrix N-A…N-E.
-6. n+1 recurrence candidates R-A…R-F.
-7. Sample-identity/equality matrix E-A…E-F.
-8. Higher-scale root/touch question.
-9. Heat-map density candidates H-A…H-F.
-10. Core-derived-read vs Layer-III-view seam.
-11. Larger non-word-pattern representation options.
-12. Star/search surface map.
-13. D1-S1…D1-S7 replay.
-14. F1-1…F1-16 falsifier results.
-15. Exact residual questions after Pass 1.
-16. A recommendation for what Pass 2 should calculate next, **without opening it automatically**.
-
-No law file is edited in Pass 1.
-
----
-
-## 20. Expected Pass-1 result
-
-Expected, not tested:
-
-The old relation-choice model will be removed from the active problem statement.
-
-The likely new decomposition is:
-
-\[
-\boxed{
-\text{growth}
-\rightarrow
-\text{sampling}
-\rightarrow
-\text{recurrence evidence}
-\rightarrow
-\text{retained structural touch}
-}
-\]
-
-plus a read-only observation side:
-
-\[
-\boxed{
-\text{Lace}
-\rightarrow
-\text{density / star / N-D views}
-\rightarrow
-\text{pattern search}
-}
-\]
-
-The likely remaining mathematical gaps are expected to be:
-
-1. exact sampling domain;
-2. exact meaning of \(n\);
-3. exact n→n+1 recurrence;
-4. exact sample identity/equality;
-5. exact condition under which recurrence becomes a retained touch;
-6. whether higher-order samples themselves have root/touch identity;
-7. exact derived density measure;
-8. how larger recurring patterns are anchored for search without new storage.
-
-**Actual:** NOT TESTED.
+1. H7–H12 exact ruling record.
+2. old Pass-6 model delta.
+3. 1D authoritative-array contract.
+4. 2D sampling-array contract.
+5. 1D→2D→POINTER→1D feedback diagram.
+6. M1 cell-semantics matrix.
+7. M2 axis-semantics matrix.
+8. M3 n-semantics matrix.
+9. M4 n+1 recurrence matrix.
+10. M5 cross-scale addressability matrix.
+11. sample observation vs retained append distinction.
+12. recurrence/equality comparator analysis.
+13. higher-order root/touch alternatives.
+14. density/heat-map derivations.
+15. APPLES worked specimen.
+16. D1-1…D1-9 replay.
+17. F1-1…F1-20 falsifier results.
+18. exact residual equations/questions.
+19. recommended Pass-2 mathematical experiment.
+20. explicit statement that law was not edited.
 
 ---
 
-## 21. What Pass 1 must not do
+## 25. Expected Pass-1 residuals
+
+Likely but not yet tested:
+
+### G-S1 — cell definition
+
+What exactly is:
+
+\[
+\mathcal S[n,x]?
+\]
+
+### G-S2 — x coordinate
+
+WORD position, Lace index, span start/end, or another derived coordinate?
+
+### G-S3 — n coordinate
+
+Text length, recursive scale, point cardinality, or mixed hierarchy?
+
+### G-S4 — recurrence construction
+
+How exactly is row n+1 derived from row n?
+
+### G-S5 — recurrence identity
+
+Exact words, root sequence, pointer topology, overlap, or something else?
+
+### G-S6 — retention rule
+
+When does an observed recurrence become a new POINTER on 1D?
+
+### G-S7 — higher-order anchoring
+
+Does a recurring larger pattern get a retained root-like point?
+
+### G-S8 — density measure
+
+What exact derived property corresponds to “hot”?
+
+### G-S9 — addressability
+
+How does a 2D cell resolve to the 1D index used by Join?
+
+### G-S10 — cross-scale relation
+
+Does Join need any scale metadata at all, or are the operand points sufficient?
+
+Expected answer to G-S10 may be “operand points are enough,” but Pass 1 must test it.
+
+---
+
+## 26. What Pass 1 must not do
 
 Pass 1 does not:
 
-- choose relationships;
-- retain Pass 6's Origin(rho) as the campaign target without re-testing it;
-- invent a semantic chooser;
-- invent an automatic threshold;
-- define cosine similarity / embeddings;
-- assume rolling n-grams;
-- assume every n-gram is stored;
-- assume every higher sample gets a root;
-- assume star means stored cluster;
-- add a heat-map table;
-- add pattern/entity/concept rows;
-- add Layer-III write-back;
+- choose semantic relationships;
+- treat the 2D sampling array as optional;
+- demote the 2D sampling array to a mere visualization;
+- promote the 2D sampling array to a second authoritative durable store;
+- require equal-scale POINTER operands;
+- add n fields to POINTER by default;
+- assume all 2D cells are retained;
+- assume all observed samples append;
+- assume rolling n-grams without testing;
+- assume every higher-order sample gets a root;
+- invent recurrence thresholds;
+- invent semantic similarity;
+- store concepts/entities/phrases as new row types;
+- let Layer III write;
 - edit pointer-emission.md;
 - edit systems-manifest.md;
 - rewrite Pass 6 history;
-- alter gate-question campaign files;
+- overwrite gate-question campaign work;
 - create src/, Cargo, Rust, tests or branches;
 - start Pass 2 automatically.
 
 ---
 
-## 22. Stop condition
+## 27. Stop condition
 
-Pass 1 stops when:
+Pass 1 is complete only when:
 
-- new human rulings are recorded;
-- the old chooser/provenance premise is explicitly mapped as a dated wrong turn;
-- sampling observation is separated from retained append;
-- all sampling domains/scales/recurrences/equality candidates are mapped;
-- heat-map density is bounded as derived evidence, not storage;
-- Core-derived recurrence evidence is separated from Layer-III visualization;
-- larger non-word pattern search is described without semantic objects;
-- D1 has been replayed against every surviving candidate class;
-- all 16 falsifiers have results;
-- exact residual mathematical questions are named;
-- no law edit occurs;
-- no code/artifact implementation occurs;
+- H7–H12 are recorded exactly;
+- 1D authoritative persistence is fixed;
+- 2D sampling-array existence is fixed;
+- position × scale semantics are mapped;
+- cross-scale POINTER capability is fixed and tested;
+- cell/axis/n/recurrence/addressability candidates are dispositioned;
+- observation vs retained pointer append is explicit;
+- APPLES specimen is worked without semantic choice;
+- D1 is replayed against the surviving candidates;
+- all twenty falsifiers are scored;
+- exact remaining sampler questions are named;
+- no law file changed;
+- no implementation artifact exists;
 - maps is released;
 - then STOP.
 
 ## Steward test
 
-Do not ask “which relationship should Lace choose?”
+The machine is not deciding that APPLES relates to a paragraph.
 
-Ask:
+The 1D history is sampled across position and scale.
 
-> **What recurring structure does the n+1 sampler keep seeing as the same text keeps growing?**
+The 2D sampling surface exposes recurring structure at many resolutions.
 
-The relationship is supposed to emerge from repeated structure.
+POINTERs retain discovered relationships between addressable structures at any of those resolutions.
 
-The heat map is evidence of where the lace has repeatedly passed, not a hand deciding where the next knot should go.
+Then the enlarged 1D Lace is sampled again.
+
+That loop is the thing Pass 1 must finally make precise.
