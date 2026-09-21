@@ -1,6 +1,6 @@
 # LAB SOURCE ARCHITECTURE — Pass 1 PLAN
 
-**Status:** PLAN — NOT EXECUTED.  
+**Status:** EXECUTED — see [findings](lab-source-architecture-pass-1-findings.md).  
 **Campaign:** Lab Source Architecture.  
 **Pass:** 1.  
 **Planning station:** maps (Astra-lab-architecture).  
@@ -672,3 +672,23 @@ The findings must report:
 - no-implementation/no-acceptance state.
 
 **STOP after Pass 1.** Later passes may compare candidate machinery across the behavioral, research, and platform clipboard families. Pass 1 only makes that comparison possible without lying about source authority.
+
+
+---
+
+## 12. Actual result
+
+Executed 2026-09-21 under sequential station ownership.
+
+- **Law:** source authority now distinguishes Lace substrate, behavioral-goal sources, research evidence, platform/toolchain reality, and the lab. Clipboard is explicitly an interface rather than a directory suffix.
+- **Hologram/clock:** existing HCC-A, Coffee Cup, and Water source clipboards are explicitly preserved as behavioral-goal clipboards with candidate machinery. H×C×W is a candidate composition, not an automatically required gearbox.
+- **Clipboards:** the door now routes the distributed clipboard system and defines KEEP/FORBID as an authority fence rather than a ban on laboratory use.
+- **Prompts:** the mandatory context tells the same source→clipboard→lab story and removes current selector-era drift.
+- **Kit:** one live selector-era control line was corrected to exact sampling-derived retention/materialization; historical transport text stayed untouched.
+- **Maps:** the reason model now allows research machinery into lab testing without Core import. Global ASCII **linear Pass 31** adds the source/lab context around Pass 30 without changing Contract I.
+- **No duplicate H/C/W clipboard products were created.**
+- **No Core mechanic, canonical graphic, pointer-emission acceptance, or implementation gate was changed.**
+
+Execution commits and the complete census/falsifier board are recorded in [lab-source-architecture-pass-1-findings.md](lab-source-architecture-pass-1-findings.md).
+
+**STOP.** Pass 1 does not select the winning machinery.
