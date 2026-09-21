@@ -2,9 +2,9 @@
 
 **Not the manifest.** [`systems-manifest.md`](systems-manifest.md) is the Hands contract map; this is an ASCII reading of it and settles nothing it does not.
 
-**Current reading qualification, 2026-09-21:** read **Pass 31 — Lab Source Architecture Pass 1** as the current source/laboratory context wrapped around the **Pass-30 sampling reconciliation**, which remains the current Lace substrate reading. Pass 29 and Passes 1–28 remain dated records of their own readings; their stamps do not establish present acceptance. Current law carries LAND / ROOT / RootTouch / binary Join plus the human-ruled derived 2D sampling/search architecture. The active Core-adjacent gap is exact sampling-derived retention/materialization. HCC-A, Coffee Cup, and Water are behavioral-goal source clipboards with candidate machinery; research and platform/toolchain clipboards likewise feed the lab. None enters Core by citation.
+**Current reading qualification, 2026-09-21:** **Pass 32 — Manifest Reconciliation Pass 1** is the current mechanism-catalog layer. It wraps **Pass 31** source/lab authority context around the **Pass-30** sampling reconciliation without changing either. Passes 1–29 remain dated records. Current Lace mechanics are cataloged by authority and bound to contract IDs in `systems-manifest.md`; exact sampling-derived retention/materialization remains `[GAP]`, human acceptance remains absent, and cataloging candidate machinery does not promote it into Core.
 
-**Executed passes:** [1](systems-manifest-ascii-pass-1-plan.md) · [2](systems-manifest-ascii-pass-2-plan.md) · [3](systems-manifest-ascii-pass-3-plan.md) · [4](systems-manifest-ascii-pass-4-plan.md) · [5](systems-manifest-ascii-pass-5-plan.md) · [6](systems-manifest-ascii-pass-6-plan.md) · [7](systems-manifest-ascii-pass-7-plan.md) · [8](systems-manifest-ascii-pass-8-plan.md) · [9](systems-manifest-ascii-pass-9-plan.md) · [10](systems-manifest-ascii-pass-10-plan.md) · [11](systems-manifest-ascii-pass-11-plan.md) · [12](systems-manifest-ascii-pass-12-plan.md) · [13](systems-manifest-ascii-pass-13-plan.md) · [14](systems-manifest-ascii-pass-14-plan.md) · [15](systems-manifest-ascii-pass-15-plan.md) · [16](systems-manifest-ascii-pass-16-plan.md) · [17](systems-manifest-ascii-pass-17-plan.md) · [18](systems-manifest-ascii-pass-18-plan.md) · [19](systems-manifest-ascii-pass-19-plan.md) · [20](systems-manifest-ascii-pass-20-plan.md) · [21](systems-manifest-ascii-pass-21-plan.md) · [22](systems-manifest-ascii-pass-22-plan.md) · [23](systems-manifest-ascii-pass-23-plan.md) · [24](systems-manifest-ascii-pass-24-plan.md) · [25](systems-manifest-ascii-pass-25-plan.md) · [26](plans/lace-context-iter6-pass-3-findings.md) · [27](plans/lace-context-iter7-pass-3-audit.md) · [28](plans/reduction-pass-3-findings.md) · [29](plans/math-execution-root-touch-fold-pass-5-findings.md) · **30 = SAMPLING / DENSITY / EMERGENCE Pass 6 reconciliation** · **[31](plans/lab-source-architecture-pass-1-plan.md) = LAB SOURCE ARCHITECTURE Pass 1 (current source/lab overlay; Core unchanged).**
+**Executed passes:** [1](systems-manifest-ascii-pass-1-plan.md) · [2](systems-manifest-ascii-pass-2-plan.md) · [3](systems-manifest-ascii-pass-3-plan.md) · [4](systems-manifest-ascii-pass-4-plan.md) · [5](systems-manifest-ascii-pass-5-plan.md) · [6](systems-manifest-ascii-pass-6-plan.md) · [7](systems-manifest-ascii-pass-7-plan.md) · [8](systems-manifest-ascii-pass-8-plan.md) · [9](systems-manifest-ascii-pass-9-plan.md) · [10](systems-manifest-ascii-pass-10-plan.md) · [11](systems-manifest-ascii-pass-11-plan.md) · [12](systems-manifest-ascii-pass-12-plan.md) · [13](systems-manifest-ascii-pass-13-plan.md) · [14](systems-manifest-ascii-pass-14-plan.md) · [15](systems-manifest-ascii-pass-15-plan.md) · [16](systems-manifest-ascii-pass-16-plan.md) · [17](systems-manifest-ascii-pass-17-plan.md) · [18](systems-manifest-ascii-pass-18-plan.md) · [19](systems-manifest-ascii-pass-19-plan.md) · [20](systems-manifest-ascii-pass-20-plan.md) · [21](systems-manifest-ascii-pass-21-plan.md) · [22](systems-manifest-ascii-pass-22-plan.md) · [23](systems-manifest-ascii-pass-23-plan.md) · [24](systems-manifest-ascii-pass-24-plan.md) · [25](systems-manifest-ascii-pass-25-plan.md) · [26](plans/lace-context-iter6-pass-3-findings.md) · [27](plans/lace-context-iter7-pass-3-audit.md) · [28](plans/reduction-pass-3-findings.md) · [29](plans/math-execution-root-touch-fold-pass-5-findings.md) · **30 = SAMPLING / DENSITY / EMERGENCE Pass 6 reconciliation** · **[31](plans/lab-source-architecture-pass-1-plan.md) = LAB SOURCE ARCHITECTURE Pass 1 (current source/lab overlay; Core unchanged).** · **[32](plans/manifest-reconciliation-pass-1-plan.md) = MANIFEST RECONCILIATION Pass 1 (current mechanism catalog ↔ contract registry).**
 
 **Authority:** `docs/systems-manifest.md`. Companion, not a replacement.  
 **Hands:** Graphics A–D. Shoe in hands.  
@@ -263,6 +263,167 @@ Pass 31 changes **none** of the Pass-30 substrate statements:
 ### P31-R — verdict
 
 **LAB SOURCE ARCHITECTURE ALIGNED WITH OPENS.** The repository now distinguishes behavioral-goal authority, research evidence, platform/physical authority, Lace substrate authority, and the lab process that tests candidate systems. Existing clipboards are reused. Candidate machinery survives as candidate machinery. The unresolved Core-adjacent seam remains retention/materialization, and later passes may compare candidate systems without pretending citation is architecture.
+
+---
+
+## Pass 32 — Manifest Reconciliation Pass 1 — canonical mechanism catalog
+
+**Job of this file:** catalog mechanisms and their connections. The behavioral contract for each catalog entry lives in [`systems-manifest.md`](systems-manifest.md). **Catalog ID is navigation only; it is not a Graphic-D row type, opcode, or implementation module.**
+
+**Authority order:** Graphics A–D → explicit human rulings → named mathematical derivation / lab evidence. A later layer may qualify an earlier reading, but it may not rewrite a HUMAN/DERIVED statement into a PNG quote.
+
+### P32-A — authority legend
+
+```
+[SOURCE]    directly stated/drawn by Graphics A-D
+[HUMAN]     explicit later human ruling
+[DERIVED]   consequence of SOURCE/HUMAN
+[LAB]       reproduced/tested machinery, not source law
+[CANDIDATE] source-described/proposed machinery admitted to the lab
+[VIEW]      read/projection only; no Lace write authority
+[FORBID]    anti-model / prohibited interpretation
+[GAP]       required behavior not established
+```
+
+### P32-M — canonical Lace mechanism catalog
+
+| Catalog | Mechanism | Authority / evidence | Connects to | Manifest contract |
+|---|---|---|---|---|
+| **L-M01** | Continuous growth / Rule Zero | **[SOURCE]** A1 · B1 · C1 · D footer/key properties | every Lace mechanism | **SM-C01** |
+| **L-M02** | Governing growth rule | **[SOURCE]** A13 · B12 · C12 · D footer; current rulings qualify array acts | arrival · star · participation · continue | **SM-C02** |
+| **L-M03** | Raw arrival / punch-card order | **[SOURCE]** A2–A4/A13 · B2/B6 · C10 | WORD/root · sequence | **SM-C03** |
+| **L-M04** | WORD occurrence + root role | **[SOURCE]** D1–D2/D5 + **[HUMAN]** H4 root role | star · RootTouch · sequence | **SM-C04** |
+| **L-M05** | Binary POINTER / Join | **[SOURCE]** D1–D3/D6 shape/permission + **[HUMAN]** H5–H6 constructor reconciliation | RootTouch · grounding · recursive participation | **SM-C05** |
+| **L-M06** | One append-only 1D store | **[SOURCE]** Graphic D | all writes; all views read it | **SM-C06** |
+| **L-M07** | Star formation / repeated passage | **[SOURCE]** A2/A5/A12 · B2–B3/B9 · C4/C8 · D4–D5 | WORD/root · sequence · touch · star read | **SM-C07** |
+| **L-M08** | Sequence as physical route | **[SOURCE]** A4/A9 · B5 · C2/C10 | arrival · dictionary/document routes | **SM-C08** |
+| **L-M09** | Dictionary definition as route | **[SOURCE]** **B4 · C9 · A11/A12** | arrival · star · sequence · retained participation | **SM-C09** |
+| **L-M10** | Document feed | **[SOURCE]** A6–A9/A11 · B6 · C10 | arrival · sequence · star · touch | **SM-C10** |
+| **L-M11** | Thread / touch | **[SOURCE]** A10 · B7–B8 · C7 | persistence/re-entry · recursive participation | **SM-C11** |
+| **L-M12** | Persistence + later re-entry | **[SOURCE]** A10/A12 · B3/B8 · C7/C12 · D6/key properties | touch · Join ancestry · future participation | **SM-C12** |
+| **L-M13** | Recursive participation / relation-among-relation | **[SOURCE]** C7 · D3/D6 · D1 witnesses | Join-of-Join · N-D presentation | **SM-C13** |
+| **L-M14** | N-dimensional participation presentation | **[SOURCE][VIEW]** C5–C8 + D6 storage correspondent | recursive participation · projection | **SM-C14** |
+| **L-M15** | Projection vs actual Lace | **[SOURCE][VIEW]** B11 · C2–C4/C11 · D4 | all read layers; never upward write | **SM-C15** |
+| **L-M16** | No stored meaning / no collapse | **[SOURCE][FORBID]** A8/A13 · B10 · C5/C9/C12 · D one-store/type fence | cross-cuts all mechanisms | **SM-C16** |
+| **L-M17** | Star-internal traffic | **[SOURCE][VIEW]** A12 · B9 | star · touch · recursive participation | **SM-C17** |
+| **L-M18** | RootTouch | **[HUMAN]** H1/H4 + **[SOURCE witness]** D1 0003→0004; implemented as Join(new occurrence, root) in current law | WORD/root · Join · persistence | **SM-C18** |
+| **L-M19** | Finite sample grounding by repeated Join | **[HUMAN]** H5–H6 + **[DERIVED]** induction/current math model | Join · addressable grounded point | **SM-C19** |
+| **L-M20** | Derived 2D position×scale sampling | **[HUMAN]** H7–H12 + **[DERIVED][LAB]** Sampling/Density/Emergence | Lace prefix → structural evidence; not Graphic-C C3 | **SM-C20** |
+| **L-M21** | Derived star/search read | **[DERIVED][LAB][VIEW]** current sampling/search campaign | root/star + sampling + retained POINTER topology | **SM-C21** |
+| **L-GAP-RM** | Retention/materialization boundary | **[GAP]** not a mechanism yet | sampling evidence → ? → retained POINTER / addressable sampled operand | **SM-GAP-RM** |
+
+### P32-S — distinctions the catalog must not collapse
+
+```
+PERSISTENCE
+    already-recorded structure remains
+         ≠
+RETENTION
+    discovered structure is selected for a new retained POINTER
+
+RE-ENTRY
+    later Lace may participate through recorded structure
+         ≠
+MATERIALIZATION
+    an ephemeral sampled structure becomes an addressable Lace point
+
+GRAPHIC-C 2D PROJECTION
+    read-only presentation of retained participation
+         ≠
+H7-H12 2D SAMPLING
+    derived position x scale working machinery
+
+D1 STATE WITNESS
+    six POINTERs existed with these operands
+         ≠
+D1 GENERATIVE RULE
+    why each relation was selected/materialized (not supplied)
+```
+
+B8 therefore establishes **persistence/later participation once a touch exists**. It does not by itself supply the general sampling-derived retain-when condition.
+
+### P32-X — source-attribution correction
+
+**A6 is not the explicit dictionary-definition route.** A6 is the PIE-in-context specimen (“The order said: PIE.”): each word routes through its star and PIE creates/reinforces the PIE star. The explicit `PIE → dessert → slice → whole → food` definition path is **B4**; **C9** carries the dictionary-wiring analogue; **A11/A12** carry dictionary/document integration and dictionary-definition traffic.
+
+Current canonical routing is therefore:
+
+```
+dictionary route  = B4 · C9 · A11/A12
+document/context  = A6-A9 · A11 · B6 · C10
+```
+
+Historical receipts that attributed B4's explicit path to A6 remain dated evidence and are not rewritten by this catalog pass.
+
+### P32-E — external/candidate mechanism catalog classes
+
+The global companion already contains the detailed per-shelf/per-door inventories below. Pass 32 does not duplicate them; it gives them a current contract route.
+
+| Existing catalog surfaces | Mechanism class | Authority in Lace | Integration contract |
+|---|---|---|---|
+| HCC-A · Coffee Cup · Water + H×C×W products | behavioral-goal candidate machinery | **[CANDIDATE]** target behavior/mechanism hypotheses; no automatic Core authority | **SM-X-BEH** |
+| G-III / research clipboard M-* and P-* surfaces | research/book candidate machinery | **[CANDIDATE]** algorithms/math/mechanisms/falsifiers; no automatic Core authority | **SM-X-RES** |
+| Wasm · WebGPU · WGSL · WebNN · rustc · Cargo surfaces | platform/toolchain machinery | **[CANDIDATE]** executable primitives/constraints/feasibility; no Lace semantics | **SM-X-PLAT** |
+| Piece-13 projections · hologram/clock viewers · G-KD / IX / steward surfaces | Layer-III machinery | **[VIEW] / steward** read/cite/test only unless a separate contract explicitly says otherwise; never implicit Contract-I write | **SM-X-L3** |
+
+The source-specific clipboard/clock documents remain the detailed behavior record for those candidate mechanisms. The system manifest defines their **integration contract with Lace**; cataloging them is not promotion.
+
+### P32-D — global mechanism topology
+
+```
+                           CONTRACT II / ARRIVAL
+                                  L-M03
+                                    |
+                                    v
+  +-------------------------------------------------------------------+
+  |                    CONTRACT I / ONE LACE                           |
+  |                                                                   |
+  | L-M01 continuous growth                                           |
+  |   |                                                               |
+  |   +--> L-M04 WORD/root --> L-M07 star --> L-M18 RootTouch --+     |
+  |   |                                                          |     |
+  |   +--> L-M08 sequence --> L-M09 dictionary route             |     |
+  |   |                    \-> L-M10 document feed                |     |
+  |   |                                                          v     |
+  |   +--> L-M11 thread/touch --> L-M12 persistence/re-entry --> L-M05 Join
+  |                                      |                         |     |
+  |                                      +--> L-M13 recursive <----+     |
+  |                                                                   |
+  | L-M16 no-collapse / no-stored-meaning cross-cuts every path       |
+  | L-M06 is the one authoritative store                              |
+  +-------------------------------------------------------------------+
+             |                         ^
+             | read                    | retained Join only after
+             v                         | exact rule is known
+  L-M14 N-D presentation               |
+  L-M15 projection                     |
+  L-M17 star traffic              L-GAP-RM  [GAP]
+             ^                         ^
+             |                         |
+             +----- L-M21 search <-----+---- L-M20 2D sampling
+                                               |
+                                      structural evidence only
+
+  L-M19 finite grounding = repeated L-M05 Join once operands are
+                           selected/addressable; it does not decide L-GAP-RM.
+```
+
+### P32-F — catalog falsifiers
+
+| F | Failure |
+|---|---|
+| **F1** | catalog mechanism has no manifest contract |
+| **F2** | active manifest contract has no catalog mechanism |
+| **F3** | `[SOURCE]` cites the wrong panel |
+| **F4** | HUMAN/DERIVED machinery is attributed to a PNG |
+| **F5** | persistence is used as a retain-when predicate |
+| **F6** | D1 is treated as a complete selection algorithm |
+| **F7** | historical/superseded wording is treated as current |
+| **F8** | candidate/Shadow machinery becomes Core by cataloging |
+| **F9** | retention/materialization is silently closed |
+| **F10** | this ASCII duplicates contract prose instead of cataloging |
+
+**Pass-32 maps phase verdict:** catalog role is now explicit; current canonical Lace mechanisms and integration classes have contract IDs; the A6/B4 attribution defect is corrected at the current-catalog layer; retention/materialization remains `[GAP]`. Contract definitions land in the law phase of this same pass.
 
 ---
 
@@ -3111,7 +3272,7 @@ The [history A/B handoff](history/relationship-evidence-pass-3-handoff.md) was c
 
 **A — Star caption, APPLIED_AS_CURRENT_QUALIFICATION.** WORD rows retain distinct word occurrences. A star is not separately written as a row or object. Manifest Piece 7 describes occurrence membership together with recorded POINTER participation threading those occurrences. The pass-5 `write: the WORD rows only` caption and C-Mech-3's occurrence shorthand are therefore incomplete as descriptions of the full formation. This qualification does not decide when additional POINTER sections are appended, or define a traversal algorithm.
 
-**B — Coupling, APPLIED_AS_CURRENT_QUALIFICATION.** Definition text follows an ordered route through ordinary word-stars. Further definition text and later documents reuse those formations through distinct passages of the same Lace. Existing passages and recorded participation remain; new wire can thread that formation, and the resulting touch remains available for later participation. Read manifest Pieces 7–11 and 15 together, with Graphics A6/A8/A10/B4/B8. This describes the source coupling; it is not automatic definition expansion, a dictionary engine, or a completed emission contract.
+**B — Coupling, APPLIED_AS_CURRENT_QUALIFICATION.** Definition text follows an ordered route through ordinary word-stars. Further definition text and later documents reuse those formations through distinct passages of the same Lace. Existing passages and recorded participation remain; new wire can thread that formation, and the resulting touch remains available for later participation. Read manifest Pieces 7–11 and 15 together, with Graphics A10/A11/A12/B4/B8. This describes the source coupling; it is not automatic definition expansion, a dictionary engine, or a completed emission contract.
 
 ### Execution claims and current reading order
 
