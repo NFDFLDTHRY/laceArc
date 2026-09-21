@@ -1068,3 +1068,33 @@ It is:
 \]
 
 Pass 1 stops here.
+
+
+---
+
+## 24. Final verification
+
+Final pre-release tip:
+
+**0e52b6f713a90b4c235bdeea786bd17e7973159f**
+
+Tracked tree:
+
+- 697 paths
+- recursive tree not truncated
+- src/ paths: 0
+- Cargo.toml paths: 0
+- .rs files: 0
+
+Protected neighboring surfaces remained byte-unchanged during Pass 1:
+
+- pointer-emission.md: 51224368ae966b6c480746925caa2cade970842e
+- systems-manifest.md: 6f0310099cbcf482ad884f653f423b4e806f724b
+- gate-question Pass-2 findings: a3c4ce9faf4054ae7678dfbb0be8fb00aada8b00
+- gate-question Pass-3 findings: 615df14a3b41d9c2ed2375da0738052ee439673d
+
+Law station remained FREE.
+
+Pass 1 changed only maps-owned planning/findings/index surfaces.
+
+**PASS 1 COMPLETE.**
