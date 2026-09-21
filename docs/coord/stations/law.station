@@ -1,7 +1,7 @@
-STATUS: FREE
+STATUS: HELD
 STATION: law
 OWNS: AGENTS.md CLAUDE.md docs/staking-the-workspace.md docs/law-why-these-documents.md docs/systems-manifest.md docs/pointer-emission.md docs/references.md CONTRIBUTING.md README.md .gitignore LICENSE docs/README.md
-AGENT: -
-BASE: -
-SINCE: -
-NOTE: Human lab framing correction COMPLETE. laceArc is the lab for discovering/testing systems required for Lace to realize HCC-A/Coffee Cup/Water behavioral goals; those enabling systems remain experimental unknowns. Sampling-derived retention/materialization remains the active Core-adjacent gap; acceptance absent. coord.sh NOT_RUN.
+AGENT: Astra-lab-architecture
+BASE: 09be228b1ddf82790aa4bc6a840bd667b45ed59f
+SINCE: 2026-09-21T20:31:00Z
+NOTE: Lab Source Architecture Pass 1 execution: current entrance/source-role alignment only. Preserve Core mechanics, Pass 30, retention/materialization GAP, and unaccepted implementation gate.
