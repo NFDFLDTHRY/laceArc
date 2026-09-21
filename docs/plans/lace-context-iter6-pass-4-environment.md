@@ -1,6 +1,6 @@
 # Iteration 6, pass 4 — the mathematical execution environment
 
-**Status:** [PROPOSAL] dated environment. **Not an emitter. Not src/.** **Station:** maps. **Original pass status:** broad emission [GAP]. **Current qualification:** constructor/root/touch/grounding mechanics were later reconciled; arbitrary non-root-touch relation/sample selection remains [GAP]. See the Pass-5 qualification appended below.
+**Status:** [PROPOSAL] dated environment. **Not an emitter. Not src/.** **Station:** maps. **Original pass status:** broad emission [GAP]. **Current qualification (Sampling Pass 6):** constructor/root/touch mechanics and the later human-ruled sampling/search architecture are reconciled; exact sampling-derived retention/materialization remains [GAP]. See the later qualification appended below.
 **Method:** [iteration 6 plan](lace-context-iteration-6-plan.md) §2 pass 4. Builds on the sealed [partial algebra](../math-execution-model.md) S1–S6 (**cited, not edited**), the [WASM crosswalk](math-execution-wasm-crosswalk-pass-2-reading.md) KEEP/FORBID reading, the nine reference shelves' stamps, and the [emission file's](../pointer-emission.md) CLOSED rows and non-answers table.
 **Source roles:** Graphics A–D are the source of record; the manifest is derived from them. AGENTS and live law govern permitted work. The algebra and source-closed emission constraints are inputs to this proposed environment; their use here does not accept a schedule or promote a proposal above the sources. Open or conflicting emission sentences remain open or conflicting.
 
@@ -269,7 +269,7 @@ For successful word arrival \(v\):
 
 The unresolved Core-adjacent question is no longer the entire append sequence.
 
-It is the upstream origin of an arbitrary non-root-touch ordered relation/sample:
+The old text below analyzed an upstream arbitrary-relation origin. That framing is now historical; the active open seam is the sampling-derived retention/materialization condition:
 
 \[
 \boxed{
@@ -287,7 +287,7 @@ This qualification **does not define**:
 \mathrm{Select}(L,v)=\ldots
 \]
 
-and does not admit semantic similarity, a learned chooser, adjacency, a document/window boundary, a hidden Contract-II sample channel, or a query/write operator.
+and does not admit semantic similarity, a learned chooser, adjacency, a document/window boundary, a hidden Contract-II sample channel, or a Core query/write operator. Derived star/search reads mapped by the sampling campaign remain read-only.
 
 ### Effect on the dated E5 candidate ledger
 
@@ -298,10 +298,10 @@ Read them now as dated tests of candidate schedulers before H1–H6 narrowed the
 ### Current readiness
 
 - constructor mechanics: reconciled draft law;
-- arbitrary relation/sample selection: [GAP];
+- sampling-derived retention/materialization: [GAP];
 - G1/tokenization and independent system questions: still open;
 - pointer-emission human acceptance: **ABSENT**;
 - implementation authorization: **ABSENT**;
 - src/: still forbidden.
 
-The environment no longer justifies saying "POINTER representation / arity / target kinds are unknown." It still justifies refusing an invented arbitrary selector.
+The environment no longer justifies saying "POINTER representation / arity / target kinds are unknown." It still justifies refusing an invented retention/materialization rule or semantic chooser.
