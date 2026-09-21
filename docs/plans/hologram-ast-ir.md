@@ -1,6 +1,6 @@
 # Hologram AST → IR — nostd pipeline projection
 
-**Status: PLAN / PROPOSAL. Documentation only. No `src/`. POINTER emission remains `[GAP]`.**  
+**Status: PLAN / PROPOSAL. Documentation only. No `src/`. Current constructor/sampling architecture is reconciled in an unaccepted draft; exact sampling-derived retention/materialization remains `[GAP]`.**  
 **Station: maps. Brief owner: human (2026-09-18).**
 
 **Manifest Reconciliation Pass 2 qualification, 2026-09-21:** the sealed `hologram-ir-golden-v0.2.0.json` is the viewer's current default fixture but a **dated semantic snapshot**, not the current global mechanism map. Pass 32 now catalogs L-M01…L-M21 plus L-GAP-RM; the systems manifest binds SM-C01…SM-C21, SM-GAP-RM and the SM-X integration contracts. The v0.2.0 fixture intentionally remains frozen with P1–P15 and its historical three seam bands. It therefore does **not** encode the current A6/B4 or B10/B11 provenance corrections or the distinct derived sampling/search working-machinery layer. A semantic refresh requires a future schema/fixture revision; do not mutate the sealed v0.2.0 bytes in place.
