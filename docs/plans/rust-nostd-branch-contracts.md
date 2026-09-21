@@ -393,7 +393,7 @@ unresolved pairs such as PIE/pie; it is not a default normalization rule.
 
 #### Emission contact
 
-- **type-only.** Binary Join layout, target kinds, and backward-reference constraints are current draft-law premises. `pointer/` still may not choose an retained relation/sample, bypass human acceptance, or turn layout validity into append authority. No selector or emit signature/stub.
+- **type-only.** Binary Join layout, target kinds, and backward-reference constraints are current draft-law premises. `pointer/` still may not invent a retention/materialization decision, bypass human acceptance, or turn layout validity into append authority. No selector or emit signature/stub.
 
 ## PAGE E — route/, views and core/
 
@@ -654,7 +654,7 @@ irreducible-Core boundary; AGENTS.md Implementation Law.
 
 #### Emission contact
 
-- **Arbitrary relation/sample selection remains `[GAP]` outside this plan's answers.** Core may not fill it as glue. Delegating Continue does not supply a selector or assign that responsibility to a proven callee. The unassigned edge remains visible at
+- **Exact sampling-derived retention/materialization remains `[GAP]` outside this plan's answers.** Core may not fill it as glue. Delegating Continue does not supply a retention rule or assign that responsibility to a proven callee. The unassigned edge remains visible at
   composition; this card does not absorb it.
 
 ## PAGE F — Virtual workspace and permitted dependency edges
@@ -742,7 +742,7 @@ next is permitted. These boxes are intentionally unchecked:
 - [ ] `#![no_std]` applies to the entire effective build; there is no silent `alloc`, `std`, or test/helper exception.
 - [ ] Zero crates.io or other external dependencies; all required first-party callees have exact proved revisions.
 - [ ] Shoe test: the operation is doable to the lace while retaining every old pass; actual physical evidence is identified without claiming an unperformed test.
-- [ ] Arbitrary relation/sample selection remains `[GAP]` in this plan: no branch invents it, supplies a selector stub, or treats binary Join type validity as permission to assert a relation.
+- [ ] Exact sampling-derived retention/materialization remains `[GAP]` in this plan: no branch invents it, supplies a retention stub, or treats binary Join type validity as permission to retain a relation.
 - [ ] The independent implementation gate is genuinely open for the exact work: human-accepted pointer prose and every premise needed by this birth are present. If arbitrary retention/materialization ownership or another required premise is unresolved, this box cannot pass.
 - [ ] No extra store, intern collapse, projection write path, permanent prohibition breach or hidden second task appears.
 - [ ] The human's requirement for a written proof note in `docs/`, if imposed before the next birth, has been met and the human has allowed that transition. Record the requirement and its source; do not manufacture a blanket acceptance.
@@ -767,7 +767,7 @@ or a grant of permission.
 | Ordered semantic operands for an arbitrary asserted relation | D1 + current Join | Join consumes an ordered pair; **which retained relation/subject supplies that order remains part of retention/materialization [GAP]** |
 | Adjacency trigger | Current pointer-emission reconciliation / D1 | **settled false:** adjacency alone does not emit Join |
 | Word identity, case, stem, homograph and segmentation | Pieces 3–4; A6–A7; reason-map open questions | `[GAP]`; no normalization or tokenizer choice |
-| Arbitrary relation/sample selection | Manifest selection boundary; current pointer-emission | **[GAP]** upstream chooser. Earlier/same-line legality and WORD/POINTER operand kinds are settled constructor premises |
+| Sampling-derived retention/materialization | Current manifest / pointer-emission | **[GAP]** exact retain/materialize rule. Earlier/same-line legality and WORD/POINTER operand kinds are settled constructor premises |
 | Repeated passage | H1/H3/H4 + D1 0003/0004 | **settled current premise:** another WORD occurrence + RootTouch Join; G1 equality policy remains open |
 | Read/traversal semantics, geometric encoding and axis labels | Pieces 12–15 and manifest open questions | `[GAP]`; no invented walker or coordinate store |
 | Finite resources, layout composition, failure/durability and concurrent arrival ordering | Future proof obligations; manifest open questions | Unsettled premises; no allocator, persistence or concurrency scheme selected |
