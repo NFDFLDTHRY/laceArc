@@ -219,7 +219,7 @@
 - `webnn-mechanisms.md` — **Pass 3 EXECUTED** (M-N1…M-N9); see P3-M / P3-R below. (Pass 2 had deferred mechanisms.)
 - No five-stakes rewrite (default **skip**).
 - webgpu-* / wgsl-* / wasm-spec-3-* products **untouched** (cite-only).
-- No `src/`. Emission still `[GAP]`.
+- No `src/`. WebNN remains silent as a Lace retention source; current Lace separately uses human-ruled sampling discovery, with exact retention/materialization still `[GAP]`.
 
 ---
 
