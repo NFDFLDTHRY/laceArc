@@ -1,7 +1,7 @@
-STATUS: FREE
+STATUS: HELD
 STATION: history
 OWNS: docs/history-recovered* docs/history/**
-AGENT: -
-BASE: -
-SINCE: -
-NOTE: force-freed 2026-09-20T01:04:47Z: was held by Grok-evidence since 2026-09-19T21:33:45Z. LaceArc (steward)
+AGENT: Astra-manifest-reconcile-p2
+BASE: be7423e57febec9257077fa3f6df0a48597435e3
+SINCE: 2026-09-21T22:29:13.959Z
+NOTE: Manifest Reconciliation Pass 2 history wave: preserve executed evidence bodies; add current reader qualification for later A6/B4 provenance correction and current canonical routing.
