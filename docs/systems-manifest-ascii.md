@@ -370,43 +370,107 @@ The source-specific clipboard/clock documents remain the detailed behavior recor
 
 ### P32-D — global mechanism topology
 
+**Manifest Reconciliation Pass 3 edge correction:** the original Pass-32 drawing used bare arrows and accidentally suggested two false operational directions: `star → RootTouch` and `persistence/re-entry → Join`. The contracts already contradicted those readings. This typed topology is current; the old visual ordering is superseded by this section, not silently reinterpreted.
+
+Edge vocabulary:
+
+```
+FEEDS        output is valid input to the destination
+USES         mechanism invokes/depends on another mechanism without owning it
+SPECIALIZES  constrained case of another mechanism
+READS        read-only access; no write authority crosses the edge
+DERIVES      reconstructible working computation
+CONSTRAINS   invariant/boundary limits another mechanism
+BLOCKED-BY   edge cannot legally complete while the named GAP is open
+```
+
 ```
                            CONTRACT II / ARRIVAL
                                   L-M03
                                     |
+                                    | FEEDS
                                     v
-  +-------------------------------------------------------------------+
-  |                    CONTRACT I / ONE LACE                           |
-  |                                                                   |
-  | L-M01 continuous growth                                           |
-  |   |                                                               |
-  |   +--> L-M04 WORD/root --> L-M07 star --> L-M18 RootTouch --+     |
-  |   |                                                          |     |
-  |   +--> L-M08 sequence --> L-M09 dictionary route             |     |
-  |   |                    \-> L-M10 document feed                |     |
-  |   |                                                          v     |
-  |   +--> L-M11 thread/touch --> L-M12 persistence/re-entry --> L-M05 Join
-  |                                      |                         |     |
-  |                                      +--> L-M13 recursive <----+     |
-  |                                                                   |
-  | L-M16 no-collapse / no-stored-meaning cross-cuts every path       |
-  | L-M06 is the one authoritative store                              |
-  +-------------------------------------------------------------------+
-             |                         ^
-             | read                    | retained Join only after
-             v                         | exact rule is known
-  L-M14 N-D presentation               |
-  L-M15 projection                     |
-  L-M17 star traffic              L-GAP-RM  [GAP]
-             ^                         ^
-             |                         |
-             +----- L-M21 search <-----+---- L-M20 2D sampling
-                                               |
-                                      structural evidence only
+                               L-M04 WORD
+                            occurrence + root role
+                              /              \
+                  FEEDS new/root             \ FEEDS occurrences
+                            /                  v
+                           v                 L-M07 STAR FORMATION
+                      L-M18 RootTouch              ^
+                           |                       |
+                           | SPECIALIZES           | FEEDS recorded
+                           v                       | participation
+                      L-M05 binary Join -----------+
+                           |
+             +-------------+----------------------+
+             | USES                               | USES
+             v                                    v
+       L-M13 recursive                     L-M19 finite grounding
+       participation                       (repeated Join over an
+             |                              already-selected /
+             | READS                        addressable sample)
+             v
+       L-M14 N-D presentation
 
-  L-M19 finite grounding = repeated L-M05 Join once operands are
-                           selected/addressable; it does not decide L-GAP-RM.
+  L-M08 sequence route
+       | USES/APPLIES
+       +----> L-M09 dictionary route
+       +----> L-M10 document feed
+
+  L-M11 thread / touch
+       |
+       | source/topological participation event
+       v
+  [only when legally recorded as Lace: L-M05 / L-M18]
+       |
+       | CONSTRAINED-BY
+       v
+  L-M12 persistence / later re-entry
+  (already-recorded participation remains; this edge NEVER selects a write)
+
+  L-M06 = one authoritative append-only store
+       ^         ^            ^
+       | FEEDS   | FEEDS      | all retained rows live here
+     L-M04     L-M05       L-M18 through L-M05
+
+  L-M01 Rule Zero  --CONSTRAINS--> L-M03 / L-M04 / L-M05 / L-M06
+  L-M16 no-collapse --CONSTRAINS--> every stored/read/derived path
+
+                         DERIVED WORKING MACHINERY
+
+  L-M06 + L-M04 + retained topology
+                    |
+                    | DERIVES
+                    v
+              L-M20 2D sampling
+                    |
+                    +----FEEDS----> L-M21 search/read
+                    |                ^   ^   ^
+                    |                |   |   |
+                    |              READS L-M07 / L-M05 / L-M13
+                    |
+                    +----FEEDS----> L-GAP-RM [GAP]
+                                      |
+                                      | BLOCKED-BY
+                                      X
+                              general retained/materialized
+                              L-M19 / L-M05 write path
+
+  L-M18 RootTouch is the ruled special case and does not pass through
+  L-GAP-RM.
+
+                              READ-ONLY PRESENTATION
+
+  L-M14 N-D presentation --READS--> retained L-M05/L-M13 topology
+  L-M15 projection       --READS--> L-M06 and retained topology
+  L-M17 star traffic     --READS--> L-M07/L-M11/L-M13
+
+  No READS / DERIVES / CONSTRAINS edge grants append authority.
 ```
+
+**Composition rule:** a bare visual resemblance is not an edge. General sampling-derived retention has no direct `L-M20 → L-M05` edge; it is explicitly interrupted by `L-GAP-RM`. Persistence/re-entry constrains structure **after recording** and never feeds Join. RootTouch reads the new occurrence/root and specializes Join; it is not produced by an already-formed star.
+
+L-M19 finite grounding uses repeated L-M05 Join only after a sample is selected and its operands are addressable. It does not decide L-GAP-RM.
 
 ### P32-F — catalog falsifiers
 
