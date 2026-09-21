@@ -510,6 +510,8 @@ Freezing an open for one experiment is not global closure. No new L-M ID follows
 
 **Manifest Reconciliation Pass 3 composition certification:** **FOUNDATION SOUND WITH EXPLICIT OPEN INTERFACES.** Pass 3 attacked mechanism identity, aliases, reverse/forward census, state/write ownership, Piece↔L-M overlap, H1–H12 provenance, SM-X ingress and forbidden-state ownership. Two bare-arrow topology defects fired and were repaired with typed edges; Open #14's old Piece-13 conflict is superseded as a current architecture conflict. The [traceability audit](plans/manifest-reconciliation-pass-3-traceability.md) is non-canonical evidence; [Pass 3 findings](plans/manifest-reconciliation-pass-3-findings.md) records the falsifier board. **Pass 32 remains the current mechanism catalog. No new L-M mechanism was added and L-GAP-RM remains open.** Lab Source Architecture Pass 4 remains paused pending explicit replan.
 
+**Manifest Reconciliation Pass 4 Lab-admission certification:** **LAB ADMISSION ENVELOPE SOUND WITH CONDITIONALS.** The manifest now classifies which opens are the Lab target, candidate-conditional, orthogonal, implementation/application, or acceptance-only; L-GAP-RM remains one GAP with RM-A retain / RM-B materialize / RM-C role-order faces. The [Lab admission envelope](plans/manifest-reconciliation-pass-4-lab-admission.md) is non-canonical evidence and [Pass 4 findings](plans/manifest-reconciliation-pass-4-findings.md) records the falsifier board. **No new L-M mechanism was added, no retention predicate was supplied, and L-GAP-RM remains open.** The inherited Lab Source Architecture Pass 4 remains paused; the next Lab action is a replacement plan.
+
 ---
 
 ## Spine
