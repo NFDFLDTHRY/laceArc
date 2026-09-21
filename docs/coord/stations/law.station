@@ -1,7 +1,7 @@
-STATUS: HELD
+STATUS: FREE
 STATION: law
 OWNS: AGENTS.md CLAUDE.md docs/staking-the-workspace.md docs/law-why-these-documents.md docs/systems-manifest.md docs/pointer-emission.md docs/references.md CONTRIBUTING.md README.md .gitignore LICENSE docs/README.md
-AGENT: Astra-law-entrypoints
-BASE: 6c23538a4649fbce3c5614def01e12a5bc1fb698
-SINCE: 2026-09-21T00:48:00Z
-NOTE: User-directed ROOT / TOUCH / FOLD Pass 5 Phase D. Audit/correct current-facing status in README.md, docs/README.md, CONTRIBUTING.md, AGENTS.md, CLAUDE.md only. Preserve human-authored law conflict in law-why and frozen staking text; preserve acceptance gate/permanent bans. Current residual = arbitrary relation/sample selection [GAP]. No src/. Connector claim; coord.sh NOT_RUN.
+AGENT: -
+BASE: -
+SINCE: -
+NOTE: Astra-law-entrypoints ROOT / TOUCH / FOLD Pass 5 Phase D EXECUTED. README 223b77648d5579b9fd76da3600f098c33e91bdb6; docs/README 9b6a3abc439dd6525f9b42b965bb41ecac921a4c; CONTRIBUTING bae2d717b7f971273bb0c3cf3d767c9ceab6dc6b; AGENTS 58ccbf3c11833c1d9d0da6b1779159392edb5e37; CLAUDE 996a2ce55f61aacb4ad0dbc4c0b1f26c80828df9. Editable current-facing broad-gap wording cleared; reconciled-but-unaccepted contract + arbitrary selection [GAP] stated; implementation gate/permanent bans preserved. Human-authored law conflict and frozen staking text intentionally untouched. No src/. coord.sh NOT_RUN.
