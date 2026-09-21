@@ -1,6 +1,6 @@
 # CLIPBOARD — laceArc ← Rust `#![no_std]` crate / branch map
 
-**PLAN / PROPOSAL. Nine sheets, A–H and X. No implementation acceptance. Current constructor premise: binary Join is reconciled in draft law; arbitrary non-root-touch relation/sample selection remains [GAP].**
+**PLAN / PROPOSAL. Nine sheets, A–H and X. No implementation acceptance. Current premise: binary Join plus the human-ruled sampling architecture are reconciled in draft law; exact sampling-derived retention/materialization remains [GAP]. SearchHandle is maps-level derived analysis, not an accepted ABI/API.**
 
 Shelf note (defrag pass 2): this file is the **crate tree**. Serial birth cards live in `docs/plans/rust-nostd-branch-contracts.md`. Neither file is an accepted emission rule.
 
@@ -10,7 +10,7 @@ Execution of [the crate-map prompt](../prompts/rust-nostd-crate-map-prompt.md), 
 
 **Implementation Law:** Rust; `#![no_std]`; zero external dependencies; every dependency is our first-party branch; one branch, one task; state and prove that task before another branch exists. Allocation requires its own proven first-party task under the full law. The posture names, including seL4 and Coq, are the bar, not dependencies to import.
 
-**Gate:** [pointer-emission.md](../pointer-emission.md) is now a reconciled but still unaccepted draft. It supplies current WORD/root/RootTouch/binary Join/finite-sample constructor premises, but **does not supply an arbitrary relation/sample selector and is not human-accepted**. Its filename, commits, or reconciliation do not open implementation. Exact human acceptance and every premise needed by the particular task remain required.
+**Gate:** [pointer-emission.md](../pointer-emission.md) is now a reconciled but still unaccepted draft. It supplies current WORD/root/RootTouch/binary Join/finite-sample constructor premises, but **does not supply an retention/materialization rule and is not human-accepted**. Its filename, commits, or reconciliation do not open implementation. Exact human acceptance and every premise needed by the particular task remain required.
 
 
 ## Current premise qualification — ROOT / TOUCH / FOLD Pass 5
@@ -29,7 +29,7 @@ This map predates the Pass-4 law reconciliation. Read its dated "emission [GAP]"
 - adjacency alone does not emit.
 
 **Still open / not owned by these seven doors:**
-- arbitrary non-root-touch relation/sample selection;
+- sampling-derived retention/materialization;
 - semantic subject/operand choice for an arbitrary asserted relation;
 - G1 identity/tokenization;
 - acceptance of pointer-emission.md;
@@ -81,7 +81,7 @@ All paths in this table are **future candidates after the gate**, not existing f
 
 **One Core contract remains irreducible.** These are proposed proof/work boundaries, not independently owned strands or seven Core engines. WORD, POINTER, route, touch, and star formation remain coupled through one retained history. The two view doors expose Layer III readings; listing them as callees of the core/ facade does not promote them into authoritative Core state.
 
-**Current unassigned responsibility (ROOT / TOUCH / FOLD Pass 5):** the branch cards let route/ append independently admitted sections and core/ delegate. The physical Join constructor is now a draft-law premise, but **no listed door owns arbitrary non-root-touch relation/sample selection**. The seven-door map therefore remains an incomplete implementation decomposition. This note adds no branch or dependency edge and changes no card's task.
+**Current unassigned responsibility (ROOT / TOUCH / FOLD Pass 5):** the branch cards let route/ append independently admitted sections and core/ delegate. The physical Join constructor is now a draft-law premise, but **no listed door owns sampling-derived retention/materialization**. The seven-door map therefore remains an incomplete implementation decomposition. This note adds no branch or dependency edge and changes no card's task.
 
 The statement “one folder per Piece” is therefore not adopted as a law. Several Pieces describe the same store or operation. Conversely, a Piece can have both a Core formation and a read-only presentation. Any later physical packaging must preserve these distinctions.
 
@@ -94,10 +94,10 @@ These mappings identify responsibilities, not implemented types or executable in
 | Piece / source | Planned locus | One-task contribution and unresolved boundary |
 |---|---|---|
 | 1 Strand; A1, B1, C1 | strand/ | Retain one continuous history; no second array for the other end. |
-| 2 Governing Rule; A13, B12, C12, D footer | route/ with thin core/ composition | Realize accepted continuation through the one strand. LAND/root/RootTouch/binary Join mechanics are current draft-law premises; arbitrary relation/sample selection remains unowned. |
+| 2 Governing Rule; A13, B12, C12, D footer | route/ with thin core/ composition | Realize accepted continuation through the one strand. LAND/root/RootTouch/binary Join mechanics are current draft-law premises; sampling-derived retention/materialization remains unowned. |
 | 3 Raw Input / Arrival Order; C10, B6 | Contract II surface into the core/route path | Preserve supplied occurrences and order. Segmentation, case, and input-custody details are not selected; no new arrival/ crate is proposed here. |
 | 4 WORD; D1–D2, D5 | word/ content held by strand/ | Preserve each occurrence at its distinct position. Encoding and unresolved word-identity criteria remain open. |
-| 5 POINTER; D1–D3, D6 | pointer/ constraints, composed with strand/ | Current draft law fixes binary Join with two earlier same-line WORD/POINTER operands. pointer/ still must not choose arbitrary relation operands, own append timing, or infer semantic subject/order. |
+| 5 POINTER; D1–D3, D6 | pointer/ constraints, composed with strand/ | Current draft law fixes binary Join with two earlier same-line WORD/POINTER operands. pointer/ still must not choose retained relation operands, own append timing, or infer semantic subject/order. |
 | 6 Append-only 1D Array; D1 and key properties | strand/ | The same store as Piece 1, with permanent positions and no rewritten prefix. |
 | 7 Star; A5/A12, B2–B3, D5 | Core formation; view_star/ reads it | Distinct passes remain on the strand. Reading requires stated identity and traversal premises; it does not construct a stored Star. |
 | 8 Sequence as Physical Route; B5, C2 | route/ and strand/ | Retain exact supplied order; no sentence object, reordering, or parallel route log. |
@@ -144,7 +144,7 @@ There are convergent read paths, such as core/ reaching view_star/ directly and 
 | reag/, agent_errata/ | Named-as-forbid as Core doors | Holder diagnosis remains outside WORD/POINTER and the planned Core dependency set. |
 | reidemeister/ | Named-as-forbid | Rule Zero prohibits rewriting recorded history. |
 | star_table/ | Named-as-forbid | A12/D5 preserve every pass; the star is read from the strand. |
-| emit_pointer/, emit stub | Named-as-forbid in this plan | Binary Join mechanics are already a draft-law premise; a folder must not invent the still-open arbitrary selector, bypass acceptance, or become a convenience emission owner. |
+| emit_pointer/, emit stub | Named-as-forbid in this plan | Binary Join mechanics are already a draft-law premise; a folder must not invent the still-open retention/materialization rule, bypass acceptance, or become a convenience emission owner. |
 | codec/, weld/, utils/ | Named-as-forbid as convenience doors | Do not revive rejected history machinery or hide a second task under a generic name. |
 | Arrival Surface that owns a vocabulary or document history | Leak-risk | Contract II depends on I; it is not a second authority. |
 | view cache that owns participation facts | Leak-risk | A disposable label does not admit a forbidden graph, definition, or Star store. |
@@ -164,7 +164,7 @@ These are exclusions from this planned Core workspace, not claims that external 
 | Views cannot write the strand | Required, NOT_IMPLEMENTED. A read-looking method name is insufficient evidence. |
 | core/ delegates without hidden branch logic | Required, NOT_IMPLEMENTED. Exact composition proof remains open. |
 | Source graphics and law remain authoritative | OBSERVED for this documentation change; every Piece is cited on Page C. |
-| Emission module absent | OBSERVED. The law draft is reconciled but unaccepted; arbitrary relation/sample selection remains open. No implementation module is authorized. |
+| Emission module absent | OBSERVED. The law draft is reconciled but unaccepted; sampling-derived retention/materialization remains open. No implementation module is authorized. |
 | No foreign Cargo dependencies | No Cargo workspace or proposed crate directories exist. Future dependency compliance is UNESTABLISHED, not a completed build check. |
 
 Two language facts prevent false green boxes. Rust's no_std attribute changes automatic library/prelude behavior; it does not itself prevent explicit or transitive linkage of std. The future effective build must be inspected under the repository's stricter law. [Rust Reference: no_std](https://doc.rust-lang.org/reference/names/preludes.html#the-no_std-attribute).
@@ -201,13 +201,13 @@ Before graduation, each task needs its exact contract and revision, implementati
 |---|---|---|
 | Backward references | D2/D3: targets are earlier existing positions on the same line. | The evidence/admission mechanism and choice of targets. |
 | Target kinds | D3/D6, key properties, AGENTS.md, and Piece 5 allow earlier WORD or POINTER targets. | Permission does not select a particular target or cause an append. |
-| POINTER representation | Current draft law: POINTER is binary Join(a,b), itself a retained section; both operands are earlier same-line WORD/POINTER points. | Concrete Rust representation/proof remains unimplemented; arbitrary operand selection remains open. |
+| POINTER representation | Current draft law: POINTER is binary Join(a,b), itself a retained section; both operands are earlier same-line WORD/POINTER points. | Concrete Rust representation/proof remains unimplemented; retention/materialization policy remains open. |
 | Ordered operands / semantic subject | D1's reference order is not uniformly chronological; current Join consumes an ordered selected pair. | What upstream relation assertion/selector supplies semantic operand order remains part of arbitrary selection. |
 | Arrival and adjacency | Every successful arrival appends WORD; seen occurrence RootTouches root; adjacency alone is not a relation trigger. | Arbitrary non-root-touch relation/sample selection remains open. |
 | Repetition / star reading | Repeated occurrences remain distinct; current law requires seen occurrence + RootTouch Join. | G1 identity policy remains open; arbitrary additional relation selection remains open. |
 | Eventual participation | In the illustrated D1 prefix, all entries except the newest are referenced later. | Whether every entry must eventually be referenced; an example pattern is not a requirement. |
 | C6's four relation families | C6 names dictionary, document, conversation, and provenance routes; D shows no family field. | The relation between those families and the retained schema; no discriminator, extra row kind, or separate engine is added. |
-| route/ or core/ composition | May eventually realize independently accepted continuation and Join construction. | No arbitrary selector may be hidden in glue, an input constructor, or a type-only helper. |
+| route/ or core/ composition | May eventually realize independently accepted continuation and Join construction. | No retention/materialization rule may be hidden in glue, an input constructor, or a type-only helper. |
 | Read/identity/resource contracts | Their obligations are identified by the manifest and agent controls. | Their unresolved premises are not closed by accepting an unrelated filename. |
 
 **Current constructor qualification, ROOT / TOUCH / FOLD Pass 5:** pointer-emission now reconciles binary Join, WORD/POINTER operands, backward same-line refs, RootTouch, and finite-sample grounding. Earlier target-kind and arity conflicts are no longer current blockers. **Arbitrary relation/sample selection, human acceptance, G1, and implementation proof remain separate obligations.**
@@ -216,7 +216,7 @@ The updated manifest also records a counterexample to the proposed rule that eve
 
 The companion plan records a required outline at [pointer-emission-prompt.md](../prompts/pointer-emission-prompt.md). It was absent at the original audit revision and is present at the commit-integration base 6fb2dac. Its header explicitly calls for unanswered questions, keeps the output DRAFT, and states that writing it is not acceptance. The outline remains distinct from an exact accepted emission contract; this commit task does not execute it.
 
-**DELTA, current:** physical Join construction is a reconciled draft-law premise; FALSE FRIEND if a type/folder is mistaken for acceptance or for the arbitrary selector. **SELECTION SETTLED? NO / [GAP]. IMPLEMENTATION AUTHORIZED? NO.**
+**DELTA, current:** physical Join construction is a reconciled draft-law premise; FALSE FRIEND if a type/folder is mistaken for acceptance or for the retention/materialization rule. **RETENTION/MATERIALIZATION SETTLED? NO / [GAP]. IMPLEMENTATION AUTHORIZED? NO.**
 
 ## PAGE X — CROSS-CUT AND BOUNDED VERDICT
 
@@ -258,6 +258,6 @@ The companion plan records a required outline at [pointer-emission-prompt.md](..
 | Open differences retained at the original receipt | Emission draft's target-kind question versus D3/D6; manifest Piece 13's disposable-database wording versus the stricter live-law prohibition. No forbidden store is admitted by calling it a view. The target-kind item is superseded by the current Q4 qualification above. |
 | Completion boundary | All nine prompt sheets and all fifteen Pieces are mapped, with seven conditional births and their proof obligations. This is a completed planning artifact, not permission to implement. |
 
-**Next narrow question:** after explicit human acceptance of the reconciled law, what task-specific premises and ownership rule for the still-open arbitrary relation/sample selector are required before any proposed birth can become eligible? This map does not answer that question.
+**Next narrow question:** after explicit human acceptance of the reconciled law, what task-specific premises and ownership rule for the still-open retention/materialization rule are required before any proposed birth can become eligible? This map does not answer that question.
 
 **STOP.** Commit only on the human's instruction. This run does not start another prompt or create a branch.
