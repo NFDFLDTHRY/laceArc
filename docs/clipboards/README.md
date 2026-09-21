@@ -1,10 +1,18 @@
 # Clipboards
 
-KEEP/FORBID mappings of adjacent work onto the shoe. **Not Core. Not an emitter. Not a sixth graphic.** The source of record is [the four graphics](../graphics/README.md).
+A clipboard is a **source-grounded laboratory interface**, not a filename suffix or a guarantee that the product lives in this directory. It preserves what a source actually says, the machinery it may suggest, the constraints it imposes, and the falsifiers that keep analogy from turning into authority. **Not Core. Not an emitter. Not a sixth graphic.** The source of record for the Lace substrate is [the four graphics](../graphics/README.md), then the manifest.
 
-**Ten reference campaigns.** The five stake texts — AgentScope, Kauffman, Petersen & Zech, Rowlands, Xiao & Zhu — plus WebAssembly 3.0, WebGPU, WebNN, WGSL, and the rustc toolchain shelf below. Historically this door named five while the shelf held nine; iteration 4 pass 5 exposed the four web-specification campaigns. The human staked the tenth shelf on 2026-09-19.
+## Distributed clipboard system
 
-A clipboard records what an adjacent work does and does not license. Nothing here enters Core; see [the reason model](../reason-model-map.md) for the standing boundaries.
+| Source role | Existing clipboard route | What enters the lab |
+|---|---|---|
+| **Behavioral goals** | [HCC-A](../clock/hcc-a-systems-manifest.md) · [Coffee Cup](../clock/coffee-cup-systems-manifest.md) · [Water / Dual Proofing](../clock/water-systems-manifest.md) · [H×C×W candidate composition](../clock/train-h-c-w-systems-manifest.md) | behavioral constraints · possible machinery · hypotheses · failure conditions |
+| **Research / books / papers** | this `docs/clipboards/` shelf | algorithms · mathematics · mechanisms · known limits · negative evidence |
+| **Platform / hardware / toolchain** | this shelf's Wasm · WebGPU · WGSL · WebNN · rustc · Cargo products | executable primitives · resource ceilings · target/toolchain facts · physical feasibility constraints |
+
+**This directory currently carries ten reference campaigns.** The five stake texts — AgentScope, Kauffman, Petersen & Zech, Rowlands, Xiao & Zhu — plus WebAssembly 3.0, WebGPU, WebNN, WGSL, and the rustc toolchain shelf below. Historically this door named five while the shelf held nine; iteration 4 pass 5 exposed the four web-specification campaigns. The human staked the tenth shelf on 2026-09-19.
+
+A clipboard records source evidence and candidate machinery. **KEEP/FORBID is an authority fence, not a ban on laboratory use.** “Not Core” means the clipboard cannot promote its mechanism directly into Lace. It does not mean the mechanism is decorative or irrelevant. Candidate machinery may be proposed, attacked, reproduced, tested, falsified, or survive bounded evidence in the laceArc lab. See [the reason model](../reason-model-map.md) for the standing substrate boundaries.
 
 ## Clipboards
 
