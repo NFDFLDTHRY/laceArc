@@ -1,6 +1,6 @@
 # MANIFEST RECONCILIATION — Pass 4 PLAN · open-interface partition + Lab admission envelope
 
-**Status:** **EXECUTING** 2026-09-21.  
+**Status:** **EXECUTED** 2026-09-21 → [Lab admission envelope](manifest-reconciliation-pass-4-lab-admission.md) · [findings](manifest-reconciliation-pass-4-findings.md). **Verdict: LAB ADMISSION ENVELOPE SOUND WITH CONDITIONALS.**  
 **Campaign:** Manifest Reconciliation. **Pass:** 4.  
 **Baseline:** Pass 3 verdict `FOUNDATION SOUND WITH EXPLICIT OPEN INTERFACES` at `02487dd1ada9761ed601f7f63c972325e561de72`.  
 **Primary question:** which unresolved interfaces actually block a bounded retention/materialization experiment, which may be frozen for that specimen, and which are orthogonal implementation/application decisions?  
