@@ -65,7 +65,7 @@ LACEARC  —  one strand, one rule, one store
 
 ## Job
 
-Guard the model. Do not implement Core until [`docs/pointer-emission.md`](docs/pointer-emission.md) exists **and the human has accepted it**; do not guess emission in code.
+Guard the model. [`docs/pointer-emission.md`](docs/pointer-emission.md) now exists as a **reconciled but unaccepted** draft. Do not implement Core until the human has accepted its exact content and every premise required by the assigned implementation task is resolved. Do not invent the still-open arbitrary relation/sample selector in code.
 
 ## Always
 
@@ -81,7 +81,7 @@ Guard the model. Do not implement Core until [`docs/pointer-emission.md`](docs/p
 
 ## Never
 
-- Invent when a POINTER is written.
+- Invent an arbitrary non-root-touch relation/sample selector, semantic operand chooser, or alternate POINTER constructor.
 - Intern a word (one row + count).
 - Store `PIE = "a dessert..."`.
 - Collapse many passes into one edge.
@@ -94,16 +94,21 @@ Guard the model. Do not implement Core until [`docs/pointer-emission.md`](docs/p
 
 ## If asked to implement
 
-Stop. The next honest artifact is [`docs/pointer-emission.md`](docs/pointer-emission.md). That file may be worked under a law claim. It states, or will state:
+Stop unless the implementation gate is actually open.
 
-- when a POINTER is appended
-- arity
-- whether adjacent WORD rows already constitute a relation
-- that refs point only backward on the same line
+The current [`docs/pointer-emission.md`](docs/pointer-emission.md) is **reconciled but not accepted**. Its current constructor surface records:
 
-Inventing those answers from habit or to soothe a halt remains a breach. Recording a source-closed constraint or a human-spoken sentence on that file is work, not acceptance.
+- every successful word arrival appends WORD
+- unseen WORD becomes the root
+- seen occurrence RootTouches the root
+- POINTER is binary `Join(a,b)`
+- both operands are ordered earlier same-line WORD/POINTER points
+- repeated Join grounds finite selected samples
+- adjacency alone does not emit
 
-Only after that file exists **and the human accepted it** may Core code appear, and it must implement that file exactly, under Implementation Law.
+The remaining Core-adjacent gap is **arbitrary non-root-touch relation/sample selection**. Do not invent a selector, hide one in Contract II, derive one from semantics/similarity, or create a query/write API to soothe the halt.
+
+Recording or reconciling prose is not acceptance. Only after the human has accepted the exact pointer contract **and** the assigned task's other required premises/authorization are resolved may Core code appear, under Implementation Law.
 
 ## Implementation Law
 
@@ -137,11 +142,11 @@ Docs-only work does not need a gearing shaft claim. Steward may `doctor --auto-c
 **Context pass — read next, before any task:** [`docs/prompts/context-pass.md`](docs/prompts/context-pass.md). The same story for every agent and every model; the door to the twenty-one documents a builder reads; the failure modes this tree has already produced. Added 2026-09-19 on the human's instruction (*"all agents need to see the same story in the repo"*).
 
 Reason model: [`docs/reason-model-map.md`](docs/reason-model-map.md) (a shoe lace in the hands). History: [`docs/history/history-recovered-2026-09-18.md`](docs/history/history-recovered-2026-09-18.md), [`docs/history/history-recovered-pass-2-2026-09-18.md`](docs/history/history-recovered-pass-2-2026-09-18.md), [`docs/history/history-recovered-pass-3-2026-09-18.md`](docs/history/history-recovered-pass-3-2026-09-18.md), [`docs/history/history-recovered-pass-4-2026-09-18.md`](docs/history/history-recovered-pass-4-2026-09-18.md), [`docs/history/history-recovered-pass-5-sit.md`](docs/history/history-recovered-pass-5-sit.md). Ancestry and rejected walkers. Do not revive lace_walk.py, intern dictionaries, recursion guards, mirrors, lookups, BFS closures, sorted touches, closed rings, eleven-rule or degree-sloped schedulers, mutable continuation slots, XOR tensor probes, or C-machine metrics. Do not restore connect-the-ends from the August 15 ruling. Do not treat “touch grows lace” or exact-match ties as pointer-emission. Do not treat D06 substitution as a write. Do not treat codec roundtrip or P02 StructureBytes as possession of the strand. Do not cherry-pick P02 versions. Do not import WELD-1 or scoped-UNK. Do not manufacture cat/cat-1. Do not swap graphics bytes because a recovered PNG matches the picture. ShoeLacey (`cda3bb34` and its surface branches) is a dated other repo, not this law.
-Clock: objects do not have relationships. The premise is structure. Clusters form as the train ticks. Gears STACK in 3D (photosphere-like surface; dynamo not the picture). The 2D H→C→W strip is a flatten. A variable is a label on observed index geometry of Graphic D — a view, not a second array, not pointer-emission. When the observed cluster changes, the label may be created, split, or merged. Those acts name. They do not rewrite WORD @ i. The cat fragment is the specimen; do not invent `>`. Project meaning is a word defined by words, recursively, on an infinite two-ended wire. That is the electrician routing the shoe lace. It is not HCC-A M and not a closed splice. Seeing a definition-route is a view; writing the POINTER remains [GAP].
+Clock: objects do not have relationships. The premise is structure. Clusters form as the train ticks. Gears STACK in 3D (photosphere-like surface; dynamo not the picture). The 2D H→C→W strip is a flatten. A variable is a label on observed index geometry of Graphic D — a view, not a second array, not relation selection. When the observed cluster changes, the label may be created, split, or merged. Those acts name. They do not rewrite WORD @ i. The cat fragment is the specimen; do not invent `>`. Project meaning is a word defined by words, recursively, on an infinite two-ended wire. That is the electrician routing the shoe lace. It is not HCC-A M and not a closed splice. Seeing a definition-route is a view; it does not choose an arbitrary Join relation. **Arbitrary non-root-touch relation/sample selection remains `[GAP]`.**
 **Conceptual references, corrected by the human on 2026-09-20:** HCC-A, The Coffee Cup, and Where the Water Is Loud / Dual Proofing Systems are conceptual reference documents about cognition, causality, and communication. The former required-gearbox / holder-machinery classification is superseded by [`docs/law-why-these-documents.md`](docs/law-why-these-documents.md#conceptual-reference-documents). [`docs/clock/philosophy-map.md`](docs/clock/philosophy-map.md) and the clock diagrams are interpretations of their concepts. H/C/W labels do not establish required holder components, runtime dependencies, or legal-append conditions. Ledger mutation and OBS remain excluded as Graphic D operations or row types. Conceptual analogy does not supply pointer emission.
 Hologram touch [`docs/hologram/perceived-reality-story-defense.png`](docs/hologram/perceived-reality-story-defense.png): overlap is mesh; story defense is PFC-wins; “signal arrives, meaning does not” is a missing route in the other holder, not emission.
 Cited in [`docs/references.md`](docs/references.md).
 Not source of record. Do not import their axioms into Core. Do not add PDF files to git.
 Do not treat Story Ledger merge/delete, Meaning Engine weights, or OBS talk-pointers as Graphic D.
-The human holds a hologram of the machine. Wrongness may arrive before speech. Halt. Demand one pointable thing. Do not fill pointer-emission to soothe the halt. Shoe in hands is the court; the hologram is not a Meaning Engine and not a license to build.
+The human holds a hologram of the machine. Wrongness may arrive before speech. Halt. Demand one pointable thing. Do not invent the remaining relation/sample selector or pretend the reconciled pointer draft is accepted to soothe the halt. Shoe in hands is the court; the hologram is not a Meaning Engine and not a license to build.
 Why documents were handed to the Bot: [`docs/law-why-these-documents.md`](docs/law-why-these-documents.md).
