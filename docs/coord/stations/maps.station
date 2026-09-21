@@ -1,7 +1,7 @@
-STATUS: HELD
+STATUS: FREE
 STATION: maps
 OWNS: docs/reason-model-map.md docs/rust-nostd-*.md docs/atomic-primitives-map.md docs/clock/gearing-code-1to1.md docs/coherence-audit*.md docs/clock/system-mathematical-model.md docs/defrag-plan.md docs/plans/** docs/namespace-register.md docs/*.md (catch-all: any unmatched file at the docs/ root)
-AGENT: Astra-manifest-reconcile-p4
-BASE: 0cdbc0d21bc0f779184f585c3333fbad4cd06115
-SINCE: 2026-09-21T23:14:16.567Z
-NOTE: Manifest Reconciliation Pass 4 maps phase B: annotate existing L-GAP-RM socket with RM-A/B/C and bounded-freeze boundary; audit current Lab/control surfaces; finalize admission envelope/findings. No new mechanism. Lab Source Architecture Pass 4 remains PAUSED.
+AGENT: -
+BASE: -
+SINCE: -
+NOTE: Manifest Reconciliation Pass 4 COMPLETE — LAB ADMISSION ENVELOPE SOUND WITH CONDITIONALS. systems-manifest classifies current opens by Lab dependency and decomposes one SM-GAP-RM into RM-A retain / RM-B materialize / RM-C role-order. Pass-32 ASCII annotates the same socket with no new L-M IDs. Bounded D1 freezes, candidate authority/oracle-independence classes, TP/FN/FP scoring, silence classes and admission form are recorded in a non-canonical envelope. Inherited Lab Source Architecture Pass 4 remains PAUSED; its direct-human fallback/search-order wording is superseded where necessary. Next Lab action is a replacement plan.
