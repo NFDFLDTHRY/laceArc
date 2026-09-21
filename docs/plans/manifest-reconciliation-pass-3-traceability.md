@@ -90,8 +90,8 @@ Current canonical typed edges are maintained in Pass-32 P32-D. Audit result:
 | L-M04 occurrences + L-M05 participation | FEEDS | L-M07 star formation | PASS — formation is read from retained history |
 | L-M05 Join | USES / enables | L-M13 recursive participation | PASS — POINTER may name POINTER |
 | L-M13 retained topology | READS | L-M14 N-D presentation | PASS — view only |
-| L-M08 sequence | USES/APPLIES | L-M09 dictionary route | PASS — dictionary is a route application |
-| L-M08 sequence | USES/APPLIES | L-M10 document feed | PASS — document uses ordinary route mechanics |
+| L-M08 sequence | USES | L-M09 dictionary route | PASS — dictionary is a route application |
+| L-M08 sequence | USES | L-M10 document feed | PASS — document uses ordinary route mechanics |
 | legally recorded L-M11 touch | CONSTRAINED-BY | L-M12 persistence/re-entry | PASS — input is already recorded participation |
 | L-M04 / L-M05 | FEEDS | L-M06 authoritative store | PASS — both are row forms of the one Lace |
 | L-M01 | CONSTRAINS | L-M03/M04/M05/M06 | PASS — no cut/reset/rewrite |
