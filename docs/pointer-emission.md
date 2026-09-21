@@ -192,12 +192,9 @@ count that last kind as `CLOSED`-eligible: *"including a ruled-out candidate."*
 | [`clipboards/petersen-zech-clipboard.md`](clipboards/petersen-zech-clipboard.md) | *"EMISSION SETTLED? **NO / `[GAP]`**. Nonuniqueness supplies no timing, targets, arity, or adjacency rule."* |
 | [`clipboards/agentscope-clipboard.md`](clipboards/agentscope-clipboard.md) | **SILENT** on Φ; its loop is explicitly FORBIDden as a Φ scheduler |
 
-### What this does not do
+### What this did not do at the time
 
-**It does not close a single question.** Every `Answer` and `Stamp` above stands
-exactly as pass 7 left it. Whether any of these documents closes a `[GAP]` is a
-reading someone must make against the panel and record here under a live claim —
-and a campaign may not write its own reasoning onto an Answer line.
+**Historical scope of the 20 September link-only insertion.** That insertion closed no question and changed no Pass-7 Answer/Stamp line. Pass 4 later reconciled the current law surface above while preserving those original Pass-7 lines below as dated history.
 
 
 ## Φ / Join — current constructor
