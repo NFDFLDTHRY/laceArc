@@ -1,6 +1,6 @@
 # MANIFEST RECONCILIATION — Pass 2 PLAN · propagate the canonical foundation
 
-**Status:** **EXECUTING** 2026-09-21.  
+**Status:** **EXECUTED** 2026-09-21 → [findings](manifest-reconciliation-pass-2-findings.md). **Verdict: FOUNDATION SOUND WITH DATED ARTIFACTS.**  
 **Campaign:** Manifest Reconciliation. **Pass:** 2.  
 **Baseline:** Pass 1 canonical pair at `b0d26f98fefb755edec6243f456f9ee49a45d8e7`.  
 **Primary question:** do all **current** repository consumers agree with the Pass-32 global mechanism catalog and the matching mechanism contract registry?  
