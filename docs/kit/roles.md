@@ -49,4 +49,4 @@ An unsigned commit is not refused — the tree has no gate without a human rulin
 
 If you cannot do it to a shoe lace in your hands, you may not do it to laceArc.
 
-Hands that sign the knot can be asked to tie the next one. **Constructor is known in the reconciled draft; arbitrary relation/sample selection remains `[GAP]`, and human acceptance remains absent.**
+Hands that sign the knot can be asked to tie the next one. **Constructor + sampling architecture are known in the reconciled draft; exact sampling-derived retention/materialization remains `[GAP]`, and human acceptance remains absent.**
