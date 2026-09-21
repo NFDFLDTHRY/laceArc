@@ -165,7 +165,7 @@ The validator checks that ids exist, endpoints are doors, and one honesty flag i
 **STAMP:** `[CONFLICT]` (draft against source)
 **SEVERITY:** mislead (a `[GAP]` where the picture speaks)
 **EVIDENCE:** The draft asks *"May a POINTER target another POINTER as a general rule, or only in the D6 example chain? Answer: `[GAP]`"* and *"May a POINTER target only WORD? Answer: `[GAP]`."* The crate map (Page H), the branch contracts (source difference 2), the atomic map (K3) and [the close reading](../graphics-close-reading.md) §1 each state that D3 grants the permission in words and D1 witnesses it three times. The law's own rule is *"Mark `[GAP]` where the source is silent."* The source is not silent on kind. It is silent on *when*, and that stays open.
-**Current status:** Pass 4 reconciled this later. WORD/POINTER operand kinds, binary arity, RootTouch, and adjacency-alone=false are now current draft-law facts. **Arbitrary relation/sample selection remains `[GAP]` and acceptance remains absent.** F9 is retained as the dated finding that correctly identified the target-kind false gap before that reconciliation.
+**Current status:** later reconciliation fixes WORD/POINTER operand kinds, binary arity, RootTouch, adjacency-alone=false, and the human-ruled sampling discovery model. **Exact sampling-derived retention/materialization remains `[GAP]` and acceptance remains absent.** F9 is retained as the dated finding that correctly identified the target-kind false gap before that reconciliation.
 
 ### F10 — One task, three views; and the order puts the cheapest view behind the hardest premise
 
