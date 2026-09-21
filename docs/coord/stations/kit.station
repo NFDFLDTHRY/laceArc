@@ -1,7 +1,7 @@
-STATUS: HELD
+STATUS: FREE
 STATION: kit
 OWNS: docs/kit/** .claude/**
-AGENT: Astra-lab-architecture
-BASE: d54022c551929006c5eb1c18e8df82cc690decfc
-SINCE: 2026-09-21T20:53:00Z
-NOTE: Lab Source Architecture Pass 1 bounded control repair: one current agent-control line still names selector-era gap. Historical transport law block remains untouched.
+AGENT: -
+BASE: -
+SINCE: -
+NOTE: Lab Source Architecture Pass 1 kit inspection COMPLETE. One live agent-control selector-era line corrected to retention/materialization. Historical transport law block and dated audit history untouched.
