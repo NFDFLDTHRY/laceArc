@@ -1,7 +1,7 @@
-STATUS: FREE
+STATUS: HELD
 STATION: maps
 OWNS: docs/reason-model-map.md docs/rust-nostd-*.md docs/atomic-primitives-map.md docs/clock/gearing-code-1to1.md docs/coherence-audit*.md docs/clock/system-mathematical-model.md docs/defrag-plan.md docs/plans/** docs/namespace-register.md docs/*.md (catch-all: any unmatched file at the docs/ root)
-AGENT: -
-BASE: -
-SINCE: -
-NOTE: Astra-math ROOT / TOUCH / FOLD Pass 3 EXECUTED. Model 319c23490244bac55d71beda2f6547df5b1f53fb; findings 156606255c83ccca5fce2d36fb17d96027703d4c; plan closed 2ccc2590515c3215c6ec86be2aebad7cf7754e9c; model findings link 3eb86d9c1ebbe9cf835a2bea473178f064b8367e; indexed 19ccfbe3d9192f635a3ac288c74425915ae7ffc7. H4 formalized; G1-G12 12/12 PASS; D1 6/6 binary Join; finite-sample + whole-prefix proofs; model-side constructor/grounding mechanics closed; final residual sample/relation selection. Law/manifest/graphics/global ASCII unchanged. No blanket pointer-emission acceptance. coord.sh NOT_RUN.
+AGENT: Astra-math
+BASE: d3f66a7ac652319f019fff19076e866ec1512de4
+SINCE: 2026-09-21T00:08:00Z
+NOTE: User-directed ROOT / TOUCH / FOLD Pass 4 planning. Plan law reconciliation of pointer-emission/manifest plus placement of final sample/relation-selection responsibility, then map propagation to global ASCII. Planning only; law remains unclaimed until execution phase. No blanket acceptance; no src/. Connector claim; coord.sh NOT_RUN.
