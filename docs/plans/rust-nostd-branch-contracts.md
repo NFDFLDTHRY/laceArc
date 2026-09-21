@@ -355,9 +355,7 @@ unresolved pairs such as PIE/pie; it is not a default normalization rule.
 
 #### Must not own
 
-- Append authority, an emission scheduler, target discovery, star matching,
-  arrival decisions, a POINTER factory, a reference side table or a rule
-  for turning adjacency/touch/grab into a new section.
+- Append authority, an arbitrary relation/sample selector, semantic target discovery, star matching, arrival decisions, an unchecked POINTER factory, a reference side table, or a rule that invents a relation from adjacency/touch/grab.
 
 #### Public surface (names only — no signatures that emit)
 
@@ -374,12 +372,7 @@ unresolved pairs such as PIE/pie; it is not a default normalization rule.
 
 #### Forbidden states (must be unrepresentable)
 
-- Self/forward/dangling/external targets admitted as valid; an existing
-  POINTER retargeted in place; an unfinished slot patched later; an
-  external edge object standing for the POINTER; arity fixed by example;
-  a "read" that creates a row or chooses when one should be created;
-  a multi-slot layout whose slots carry no stated filling rule, so that a
-  semantically reversed POINTER is type-valid.
+- Self/forward/dangling/external targets admitted as valid; an existing POINTER retargeted in place; an unfinished operand patched later; an external edge object standing for the POINTER; a layout that violates the current binary Join premise; a "read" that creates a row or chooses an arbitrary relation; or an ordered pair whose provenance/semantic ordering is silently invented by pointer/.
 
 #### Proof shape (what “proven” means before next birth)
 
@@ -391,20 +384,16 @@ unresolved pairs such as PIE/pie; it is not a default normalization rule.
 - Show retained references cannot change and layout inspection cannot
   append. Identify exact upstream evidence needed to connect this
   layout to strand indices without changing the dependency map.
-- Layout sufficiency cannot be proved by guessing arity or treating a
-  candidate index as an emitted row. All needed layout/admission premises
-  remain blockers until settled. Proof status: `UNESTABLISHED`.
+- Layout sufficiency cannot be proved merely by restating the current binary-Join premise or treating candidate indices as an authorized relation. Representation/admission proof and every applicable accepted premise remain blockers. Proof status: `UNESTABLISHED`.
 
 #### no_std / alloc
 
 - `#![no_std]` required: yes.
-- alloc: absent. Do not solve open arity by selecting a heap collection.
+- alloc: absent. Binary Join requires no heap collection; do not add one as a convenience representation.
 
 #### Emission contact
 
-- **type-only.** Backward reference is a type law. When appended is
-  `[GAP]`. No future `pointer/` README may answer timing, target selection
-  or arity on the strength of this card. No emit signature or stub.
+- **type-only.** Binary Join layout, target kinds, and backward-reference constraints are current draft-law premises. `pointer/` still may not choose an arbitrary relation/sample, bypass human acceptance, or turn layout validity into append authority. No selector or emit signature/stub.
 
 ## PAGE E — route/, views and core/
 
