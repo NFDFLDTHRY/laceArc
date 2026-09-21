@@ -4,7 +4,7 @@ Layer III steward prompt. Not Hands. Not law. Not Core. **Current constructor me
 
 **Read this immediately after [`AGENTS.md`](../../AGENTS.md), before any task.** It is the story one editor holds after reading the whole tree, the four PNGs, and the human's own record; it is written so that DeepSeek, Grok, Codex, Astra, ChatGPT, Claude and the next model nobody has met yet hold the *same* story. Every sentence here is either a citation into the tree or stamped. Where it and its governing source differ, follow that source; where sources conflict, preserve and route the conflict rather than choosing the later file.
 
-**Current reconciliation:** repository-update Pass 4 remains the current lifecycle/release evidence baseline, while ROOT / TOUCH / FOLD Passes 1–5 carry the later Core-law reconciliation. [Pointer emission](../pointer-emission.md) and the [systems manifest](../systems-manifest.md) now record LAND/root/RootTouch/binary Join/finite-sample grounding; [global ASCII Pass 29](../systems-manifest-ascii.md#pass-29--iteration-4-pass-4--root--touch--join-propagation) propagates that reading. **Human acceptance remains absent and arbitrary relation/sample selection remains `[GAP]`.** Earlier repository-update receipts remain dated evidence; no source publication promotes the pinned ixp2 release.
+**Current reconciliation:** repository-update Pass 4 remains the lifecycle/release evidence baseline; ROOT / TOUCH / FOLD is retained as dated constructor/provenance history; SAMPLING / DENSITY / EMERGENCE Passes 1–5 carry the later human-ruled sampling/search reconciliation. [Pointer emission](../pointer-emission.md) and the [systems manifest](../systems-manifest.md) now record LAND/root/RootTouch/binary Join plus a derived 2D position×scale sampling surface and read-only star/search frontiers. **Human acceptance remains absent; the exact sampling-derived retention/materialization condition remains `[GAP]`.** Earlier receipts remain dated evidence; no source publication promotes the pinned ixp2 release.
 
 **Written** 2026-09-19 by Claude Fable 5.1 at branch `lace-context-iteration-6` (base `e2e8155`), on the human's instruction: *"all agents need to see the same story in the repo that you do."*
 
@@ -88,4 +88,30 @@ Pass 2's [bounded Wasm sightings](../clipboards/wasm-spec-3-clipboard.md#reposit
 
 If you cannot do it to a shoe lace in your hands, you may not do it to laceArc.
 
-One story, told the same way to every hand. **Constructor reconciled; acceptance absent; arbitrary relation/sample selection remains `[GAP]`.**
+One story, told the same way to every hand.
+
+Current active flow:
+
+    word arrival -> root / RootTouch
+        |
+        v
+    append-only 1D Lace
+        |
+        v
+    derived 2D sampling across position × scale
+        |
+        v
+    recurrence / overlap becomes discoverable
+        |
+        v
+    [GAP] exact retention / materialization
+        |
+        v
+    retained POINTER topology
+        |
+        v
+    derived star/search frontiers
+
+Search is read-only. The sampler is derived working machinery, not a second store and not merely the Graphic-C projection. Do not reintroduce an arbitrary semantic chooser. Do not invent the retention rule. Do not treat reconciliation as acceptance.
+
+One story, told the same way to every hand. **Constructor + sampling architecture reconciled; acceptance absent; exact retention/materialization remains `[GAP]`.**
