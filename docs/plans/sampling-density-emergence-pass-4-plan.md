@@ -1,6 +1,6 @@
 # SAMPLING / DENSITY / EMERGENCE campaign - Pass 4 PLAN
 
-**Status:** PLAN - NOT EXECUTED.
+**Status:** **EXECUTED 2026-09-21 - PASS 4 COMPLETE.**
 **Name:** STRUCTURAL SEARCH FRONTIERS / PATH PRESERVATION
 **Planning station:** maps (Astra-search-bounds).
 **Replan base:** Pass 3 findings commit e26d026c3f623dc4cc9b676ec4a4fc71bc5bfe70.
@@ -852,3 +852,59 @@ Never replace:
 with:
 
 > this result feels more relevant.
+
+
+---
+
+## 22. Execution receipt
+
+Pass 4 executed as one complete pass under maps.
+
+- execution claim: 089a039b268c24dc9fddc13d7999c218f0795bbc
+- findings: f8dae453bce04d8f6b92e8f53a718224e7a5ca3b
+
+### Main result
+
+Search remains usable without semantic relevance scoring when it preserves explicit structural frontiers and path witnesses.
+
+Surviving read model:
+
+\[
+Search(a)
+=
+F_{lexical}
++
+F_{pattern}
++
+F_{pointer}
++
+F_{star-hop}.
+\]
+
+Key findings:
+- maximal-only pattern compression loses high-support trunks;
+- Pareto-only compression loses real branches;
+- strict event-node compression barely compresses common anchors;
+- hop-2 expansion remains bounded in the Coffee Cup specimen;
+- full repeated-pattern closure makes QUESTION, ANSWERS and IS converge to the same 75-root component, erasing anchor-specific shape;
+- D1 PIE minimum distance and one shortest path are insufficient because alternative retained branches exist;
+- exact retained path preservation is naturally represented as a derived witness DAG slice.
+
+### Actual residuals
+
+Only:
+- minimal derived search-result record;
+- DAG/frontier serialization;
+- explicit expansion operator vocabulary;
+- local reconstruction strategy over a large conceptual 2D surface.
+
+No Pass 5 opened automatically.
+
+### Scope preserved
+
+- no semantic score;
+- no retention rule;
+- no stop-word policy;
+- no persistent search index;
+- no law edit;
+- no src/Cargo/Rust.
