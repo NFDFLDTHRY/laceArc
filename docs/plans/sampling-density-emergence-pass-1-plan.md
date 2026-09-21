@@ -1,6 +1,6 @@
 # SAMPLING / DENSITY / EMERGENCE campaign — Pass 1 PLAN
 
-**Status:** PLAN — NOT EXECUTED.
+**Status:** **EXECUTED 2026-09-21 — PASS 1 COMPLETE.**
 **Subtitle:** 1D LACE → 2D SAMPLING SURFACE → CROSS-SCALE POINTER MAP
 **Planning station:** maps (Astra-sampling).
 **Original campaign-plan commit:** de1d61d34d2f9360656bc4b588087f03e673112d.
@@ -1279,3 +1279,98 @@ POINTERs retain discovered relationships between addressable structures at any o
 Then the enlarged 1D Lace is sampled again.
 
 That loop is the thing Pass 1 must finally make precise.
+
+
+---
+
+## 28. Execution receipt
+
+Pass 1 executed under maps only.
+
+- maps claim for execution: 815529719cca471e54876b0b4ee8991faa0c6cde
+- findings: 9215f775a7c605370451558c64580828fd4e3477
+- pointer-emission.md blob remained: 51224368ae966b6c480746925caa2cade970842e
+- systems-manifest.md blob remained: 6f0310099cbcf482ad884f653f423b4e806f724b
+- gate-question Pass-2 findings blob remained: a3c4ce9faf4054ae7678dfbb0be8fb00aada8b00
+- gate-question Pass-3 findings blob remained: 615df14a3b41d9c2ed2375da0738052ee439673d
+
+### Main result
+
+Strongest surviving architecture:
+
+\[
+\boxed{
+\text{dense derived 2D sampling}
++
+\text{sparse retained 1D POINTER map}
+}
+\]
+
+with:
+- 1D Lace = authoritative WORD/POINTER history;
+- 2D surface = working position × scale sampler;
+- cross-scale relations allowed;
+- retained relations return to 1D as ordinary POINTER rows;
+- no scale field required in POINTER by current evidence.
+
+### Refuted
+
+- every 2D cell becomes a retained row;
+- every sampled adjacent pair becomes a POINTER;
+- equal-scale-only pointering;
+- n = POINTER arity;
+- semantic similarity / embeddings;
+- durable 2D authority beside Lace;
+- automatic higher-order root row for every sample cell.
+
+### Primary residuals
+
+\[
+\boxed{
+\text{2D sample cell}
+\rightarrow
+\text{addressable 1D point}
+}
+\]
+
+and:
+
+\[
+\boxed{
+\text{recurrence / overlap evidence}
+\rightarrow
+\text{retained 1D POINTER}
+}
+\]
+
+remain unspecified.
+
+The exact recurrence comparator and canonical heat/density metric are also open.
+
+### Recommended next mathematical experiment
+
+Construct the minimal nonsemantic 2D lattice:
+- x = WORD/source position;
+- n = contiguous word-span length;
+- cells ephemeral;
+- n=1 identity by word root;
+- n+1 identity by ordered lower-scale identities;
+- no automatic retained rows.
+
+Run it on:
+- D1 WORD sequence;
+- the APPLES specimen.
+
+Only after the lattice itself survives should a later pass attack retention/addressability.
+
+No Pass 2 is opened automatically.
+
+### Gates
+
+- law edited: NO
+- acceptance: absent
+- src/: 0 intended
+- Cargo: 0 intended
+- Rust: 0 intended
+
+STOP after final tree verification and maps release.
