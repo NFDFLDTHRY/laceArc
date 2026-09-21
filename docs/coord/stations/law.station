@@ -1,7 +1,7 @@
-STATUS: FREE
+STATUS: HELD
 STATION: law
 OWNS: AGENTS.md CLAUDE.md docs/staking-the-workspace.md docs/law-why-these-documents.md docs/systems-manifest.md docs/pointer-emission.md docs/references.md CONTRIBUTING.md README.md .gitignore LICENSE docs/README.md
-AGENT: -
-BASE: -
-SINCE: -
-NOTE: Campaign convergence law COMPLETE. HCC-A/Coffee Cup/Water are behavioral-goal sources; enabling mechanisms remain open. Sampling-derived retention/materialization remains the active Core-adjacent gap; acceptance absent. coord.sh NOT_RUN.
+AGENT: Astra-convergence
+BASE: 9e1455ceb50875016d3b246204f74326eb6d0433
+SINCE: 2026-09-21T19:55:00Z
+NOTE: Bounded correction of Astra-convergence wording after human clarification: laceArc is the lab used to explore/test the systems required for Lace to exhibit the behavioral goals; the goal documents do not predeclare those mechanisms. Sampling reconciliation and acceptance gate unchanged. coord.sh NOT_RUN.
