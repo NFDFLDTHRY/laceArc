@@ -1,7 +1,7 @@
-STATUS: FREE
+STATUS: HELD
 STATION: maps
 OWNS: docs/reason-model-map.md docs/rust-nostd-*.md docs/atomic-primitives-map.md docs/clock/gearing-code-1to1.md docs/coherence-audit*.md docs/clock/system-mathematical-model.md docs/defrag-plan.md docs/plans/** docs/namespace-register.md docs/*.md (catch-all: any unmatched file at the docs/ root)
-AGENT: -
-BASE: -
-SINCE: -
-NOTE: Lab Source Architecture Pass 1 rebuilt from complete current main tree. Existing HCC-A/Coffee Cup/Water source clipboards under docs/clock are reused; no duplicate clipboard files planned. Research and platform/toolchain clipboard families feed the laceArc lab as evidence/candidate machinery; global ASCII last if executed.
+AGENT: Astra-lab-architecture
+BASE: e643af48f19d9b65711bfd77a5b2222961ea9bf2
+SINCE: 2026-09-21T20:58:00Z
+NOTE: Lab Source Architecture Pass 1 final maps stage. Reason-model source-role correction first; global systems ASCII Pass 31 is final semantic content edit; receipts/index only afterward.
