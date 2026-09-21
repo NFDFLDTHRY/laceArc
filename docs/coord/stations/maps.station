@@ -1,7 +1,7 @@
-STATUS: FREE
+STATUS: HELD
 STATION: maps
 OWNS: docs/reason-model-map.md docs/rust-nostd-*.md docs/atomic-primitives-map.md docs/clock/gearing-code-1to1.md docs/coherence-audit*.md docs/clock/system-mathematical-model.md docs/defrag-plan.md docs/plans/** docs/namespace-register.md docs/*.md (catch-all: any unmatched file at the docs/ root)
-AGENT: -
-BASE: -
-SINCE: -
-NOTE: Astra-star-search SAMPLING / DENSITY / EMERGENCE Pass 3 PLAN committed at eaaa988673a602e068b95df0500e88a7deb59d76; plans index 9dc34ee3801468ff5ea578cd2e3f5a6905ea2763. Pass 3 not executed. Primary anchor QUESTION in full Coffee Cup: 7 occurrences, five in repeated ANSWERS ONE QUESTION ONLY scaffold plus two Quiet End QUESTION IS occurrences. Plan tests star as layered read-only search surface: lexical occurrences, anchored multi-scale recurrence cone/extension DAG, exact branch fan-out, star intersection, one word→pattern→word hop. D1 PIE is retained-pointer control using direct/transitive Reach, minimum pointer distance and saturation. No retention/ranking/law edit. No src/Cargo. coord.sh NOT_RUN.
+AGENT: Astra-search-bounds
+BASE: 77a8d64d8b745fe3c3bc54a465b90ac2880e5fd8
+SINCE: 2026-09-21T02:20:00Z
+NOTE: User-directed SAMPLING / DENSITY / EMERGENCE Pass 4 planning. Conditional on Pass 3 execution surviving. Target: structural search bounding/ordering without semantic scoring. Plan multiple-anchor saturation controls, structural hit signature, frontier/partial-order candidates, one-hop and multi-hop expansion bounds, no arbitrary weighted relevance score. Plan only. No law edit. No src/Cargo. Connector claim; coord.sh NOT_RUN.
