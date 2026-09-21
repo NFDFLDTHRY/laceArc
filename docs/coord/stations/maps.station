@@ -1,7 +1,7 @@
-STATUS: HELD
+STATUS: FREE
 STATION: maps
 OWNS: docs/reason-model-map.md docs/rust-nostd-*.md docs/atomic-primitives-map.md docs/clock/gearing-code-1to1.md docs/coherence-audit*.md docs/clock/system-mathematical-model.md docs/defrag-plan.md docs/plans/** docs/namespace-register.md docs/*.md (catch-all: any unmatched file at the docs/ root)
-AGENT: Astra-sampling-reconcile
-BASE: 17236ca14c8278e384b0ac8fa5d3f0762523c1c7
-SINCE: 2026-09-21T03:00:00Z
-NOTE: User-directed SAMPLING / DENSITY / EMERGENCE Pass 6 planning. One reconciliation/propagation pass, no subpasses. Plan sequential station handoffs law→graphics→prompts→kit→clipboards→maps, with maps/global systems ASCII last after subordinate control surfaces. Correct active chooser-era Origin(rho)/arbitrary-selection framing to human-ruled sampling architecture while preserving exact unresolved retention/materialization rule, G1, acceptance gate, and all historical/source-silence receipts. No implementation. Connector claim; coord.sh NOT_RUN.
+AGENT: -
+BASE: -
+SINCE: -
+NOTE: Astra-sampling-reconcile SAMPLING / DENSITY / EMERGENCE Pass 6 PLAN committed at 9b9d73d86501f2ccd5a7e85bf0ce648482d44682; plans index 320ef6483902dbd223357db2c5eedbf2c0cb8d83. Pass 6 not executed. One complete reconciliation/propagation pass, no subpasses. Planned station order law→graphics→prompts→kit→clipboards→maps, with global systems ASCII last. Active chooser/Origin(rho)/arbitrary-selection framing will be replaced by human-ruled sampling architecture while preserving the real OPEN gap: exact sampling-derived retention/materialization, plus G1 and other separate unresolved premises. Historical chooser/provenance receipts and external-source silence remain intact. Sampling 2D working surface will be distinguished from Graphic-C/N-D projection; star/search remains derived/disposable; acceptance remains absent; no implementation. coord.sh NOT_RUN.
