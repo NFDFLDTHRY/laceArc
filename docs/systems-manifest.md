@@ -349,21 +349,25 @@ Dictionary and document feeds use the same flow. They differ in source stream, n
 - **I4-4 Join → reusable point:** PASS. POINTER row is Lace and can be named by later Join.
 - **I4-5 finite selected sample → point:** PASS by repeated Join; no sample store.
 - **I4-6 point ancestry → N-D view:** PASS under Piece 13 no-write-back.
-- **I4-7 arbitrary relation-assertion provenance:** PARTIAL / [GAP]. Join receives an already-specified ordered relation/sample. Current sources do not establish what authoritatively originates it, whether inside or outside Core.
+- **I4-7 sampling-derived retention/materialization:** PARTIAL / [GAP]. Sampling discovers structure; the exact general condition that retains a POINTER, and the grounding step for an ephemeral sampled operand when needed, remain open.
 
-### Relation-assertion provenance boundary
+### Sampling-derived retention/materialization boundary
 
-The lawfully known constructor boundary is:
+The lawfully known boundary is now split between derived discovery and retained append:
 
 \[
-\rho
+L
 \longrightarrow
-\mathsf{Join}/\mathsf{Ground},
+\text{derived 2D sampling}
+\longrightarrow
+\text{structural evidence}
+\longrightarrow
+[\text{OPEN retain/materialize}]
+\longrightarrow
+\mathsf{Join}/\mathsf{Ground}.
 \]
 
-where \(\rho\) denotes an already-specified ordered relation/sample. It is analysis notation only, not a new row type or interface.
-
-RootTouch has closed provenance under H1: new occurrence + root.
+RootTouch remains the closed special case under H1: new occurrence + root. The earlier \(Origin(\rho)\) analysis is retained only as historical provenance-era reasoning.
 
 For sampling-derived non-root participation:
 
@@ -519,18 +523,18 @@ Intended use of the four graphics together: A = growth story; B = 3D mechanism; 
 ## Open Questions or Remaining Design Degrees of Freedom
 
 1. **[GAP] Word identity / tokenization:** boundaries, punctuation, case, \`PIE\` vs \`pie\`, multiword names.
-2. **[GAP] Arbitrary non-root relation-assertion provenance / authority:** the binary Join constructor is settled; current sources do not establish what authoritatively originates/asserts an arbitrary ordered operand pair/sample. An automatic Core chooser is not established; an external assertion interface is also not established.
+2. **[GAP] Sampling-derived retention / materialization:** sampling discovery and binary Join are reconciled; the exact general retain-when condition and the grounding/resolution of an ephemeral sampled operand remain open. No semantic chooser or external relation-write interface is introduced.
 3. **[GAP] Document / conversation / provenance boundaries:** D still stores only WORD and POINTER/Join; no boundary row type is established.
-4. **[GAP] Read/query/traversal operator:** source specifies growth and visualization, not a general retrieval/write-query interface.
+4. **General traversal / query remainder:** star-search structural reads are now mapped as derived lexical/pattern/pointer/star-hop frontiers, but no general Core retrieval/write-query interface is established; geometry/route-family traversal questions outside that mapped read remain open.
 5. **[GAP] Concurrency:** one strand suggests a single writer; multi-writer append remains unstated.
 6. **Projection/geometric remainder:** storage participation is represented by WORD + binary Join ancestry. Exact rendered over/under coordinates remain projection concerns, not Core row fields.
 7. **Adjacent references:** Kauffman materials remain adjacent reference only; no knot rewrite axioms are imported into Lace.
 8. **No multi-Lace / snapshot / export rule is given.**
-9. **Operand semantic ordering:** physical Join takes an ordered selected pair. D1 shows \`ref_A\` as the described subject in its six examples; the automatic subject/relation chooser remains part of open selection.
+9. **Operand ordering:** physical Join preserves an ordered pair. D1 shows \`ref_A\` as the described subject in its six examples; no universal semantic subject chooser is admitted. Task-specific ordered-operand/slot proof remains required where retention uses it.
 10. **[GAP] Eventual reference:** D1 happens to reference every row except newest; no rule requires every row to be used later.
 11. **[GAP] C6 route-family labels:** dictionary/document/conversation/provenance are views/families; no stored discriminator is defined.
 
-### Pointer-emission status after ROOT / TOUCH / FOLD Pass 4
+### Pointer-emission status after SAMPLING / DENSITY / EMERGENCE Pass 6
 
 The old broad “pointer emission remains unanswered” statement is superseded.
 
@@ -546,7 +550,7 @@ The old broad “pointer emission remains unanswered” statement is superseded.
 - N-D remains projection-only.
 
 **Still open:**
-- arbitrary non-root relation-assertion provenance / authority;
+- exact sampling-derived retention/materialization, including ephemeral-sample grounding when required;
 - G1/tokenization;
 - the other independent questions above.
 
@@ -586,4 +590,4 @@ Do not add an R table, RIC table, Story Ledger type, meaning weights, ISL star, 
 - One contract: the append-only strand/array under “arrive, route/point into what exists, continue.”
 - Stars, dictionary routes, documents, touches, and dimensions are formations and readings of that contract, not sibling services.
 - The only safe extra surfaces are thin ingest and read-only projection; both become model-breaks if they keep their own state.
-- The remaining Core-adjacent [GAP] is **arbitrary non-root relation-assertion provenance / authority**. The binary Join constructor and recursive grounding mechanics are reconciled; dimensionality is the projection of the resulting participation structure.
+- The remaining Core-adjacent [GAP] is **exact sampling-derived retention/materialization**. Binary Join, the human-ruled sampling architecture, and derived star/search reads are reconciled; dimensionality remains a separate projection of retained participation structure.
