@@ -487,7 +487,7 @@ Resolves into **one irreducible contract (Lace Core)** with a **thin arrival ada
 ## Cross-Cutting Parameters & Variation
 
 - **Word identity rule** — what counts as “the same word” / same variable / same star. Examples mix `PIE` and `pie`, and split `Golden` / `Skillet`. Unspecified, system-wide.
-- **Arbitrary relation-assertion provenance / authority** — binary Join construction, arity, backwardness, and recursive grounding are reconciled. What remains system-wide and unspecified is **what authoritatively originates an arbitrary non-root-touch ordered relation/sample**. Current sources do not establish an automatic Core chooser or an external assertion interface.
+- **Sampling-derived retention / materialization** — binary Join construction, arity, backwardness, and recursive grounding are reconciled, and H7–H12 establish sampling as relationship discovery. What remains system-wide and unspecified is the exact retain/materialize condition, including grounding an ephemeral sampled operand when needed. No semantic chooser or external relation-write interface is established.
 - **Route-family labels** — Dictionary / Document / Conversation / Provenance (C6). Named as independent axes; not stored as types in D. Variation in labeling must not become extra stores.
 - **Projection choice** — 1D / 2D / 3D / “N-D symptoms” (C8). View parameter only.
 - **Growth bound** — source says unbounded growth, no pruning parameter. Absence of pruning is itself a cross-cutting choice.
