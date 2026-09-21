@@ -14,6 +14,38 @@ HCC-A, The Coffee Cup, and Where the Water Is Loud / Dual Proofing Systems are *
 
 This supersedes the classification of those documents as “holder machinery,” a “gearbox required to operate upon the lace,” or a required second contract. Existing gear names, ratios, states, and diagrams remain recorded interpretations of concepts. That interpretation is not architectural authority. The correction leaves the graphics, independent Core constraints, and pointer-emission acceptance gate intact. [Reconciliation record](plans/conceptual-reference-reconciliation.md).
 
+**Human ruling, 2026-09-21 — the machine, and what the 2026-09-20 correction did and did not say.** The human stated, in the LaceAI conversation:
+
+> *"The machine being built is the HCC-A compiler and a part of that compiler is the coffee cup and where the water is loud. Those are the machines to solve implementation for against the substrate we're building using the descriptive sources as the building materials."*
+
+> *"To state the problem this repo solution space for is can we build a mind inside a compiler."*
+
+**Three layers, ruled.** **Materials** — the five academic documents and the toolchain/web specifications. **Substrate** — Lace: `docs/graphics/`, then `docs/systems-manifest.md`. **Machine** — HCC-A, with The Coffee Cup and Where the Water Is Loud as parts of it.
+
+**What this changes.** The 2026-09-20 correction answered the claim that these three documents *"remain holder machinery"* — a gearbox **required to operate upon** the Lace, a required second contract. That answer stands: **they are not a constraint on the substrate.** They add no Core row type, impose no runtime dependency, and set no condition for a legal append.
+
+**What it does not license.** Reading *"not a constraint on the substrate"* as *"establishes nothing"* is a category error. **HCC-A is the client of the substrate, not a constraint on it** — a compiler does not constrain the memory model it targets. The classification of the three documents and of `docs/clock/train-h-c-w-systems-manifest.md` as *illustration* or *interpretive notation* is superseded to this extent: **their concepts are architecture under construction, and correspondences between them and the graphics are `[PROPOSAL]`, not breaches.**
+
+**Fences that are not affected.** Every refusal that keeps *meaning* out of the store stands unchanged and is the experimental control of the stated problem: no second store, no stored meaning, no collapse, no merge, no deletion, `FORBID-as-Lace-store`, `FORBID-as-Core`. A fence protecting the thesis is not the same object as a fence between the machine and its target, and only the second kind is lifted here.
+
+**Rulings on the Proof Ledger, same date, same conversation:**
+
+- **INVALID** is **historically proven wrong** — an outcome reached through later evidence, not a format verdict at the door. **There is no table of invalid phrases or words.** The earlier reading (*"not wrong; meaningless until converted"*) is superseded.
+- **UNK** is **a predicted evidence shape that the system must wait for the future to fill with evidence** — *"an unknown shape of what is required to resolve the unknown flag."* It does not block. The earlier reading (*"unresolved UNK blocks coherent comprehension"*), and the recorded failure mode *"UNK as a waiting row on the tape,"* are superseded: **a row that waits is what an UNK is.**
+- **Compression is losing the evidence chain.** A derived structure is permitted when it can be discarded and rebuilt from the strand alone; one that cannot holds evidence the strand does not, and is a second store. **A state machine of the kind HCC-A describes fits as the ISL layer** — its state is re-derivable by replay, so the chain is intact.
+
+**Source identity, staked 2026-09-21.** The three machine texts are held at `refs/local/`, gitignored, never committed. Their git blob SHAs match the identities recorded in [`plans`-adjacent history](history/history-recovered-pass-5-2026-09-18.md) byte for byte:
+
+| Text | Bytes | Lines | Git blob | SHA-256 |
+|---|---|---|---|---|
+| `hcc-a-v1.0.txt` | 12,084 | 470 | `97010d27fc7347ecd3db67f2db19cf9c431fcb6a` | `209c8f25…f3f9` |
+| `the-coffee-cup.txt` | 7,623 | 189 | `e22c06ce2f808efca0ee0c17f57dc0f7e3dbef06` | `7bc4fd8d…2cd4` |
+| `where-the-water-is-loud.txt` | 19,862 | 502 | `0812654cf8d1609a7d24b29fdb2f9deb64b5647f` | `9b7eddd5…ff65` |
+
+Until this date the four `docs/clock/` manifests carried no source identity at all — *"attachment. Not in git."* Every reading of the machine was a reading of a remembered compression. **Claims about these texts now cite lines.**
+
+**Unchanged by all of the above.** `src/` remains forbidden. `docs/pointer-emission.md` remains unaccepted. Arbitrary relation/sample selection remains `[GAP]`. **This ruling opens no gate.**
+
 Source of record remains `docs/graphics/`.
 The five academic documents remain adjacent. They do not enter Core.
 HCC-A, Coffee Cup, and Water/Proofing are conceptual reference documents. They do not define additional Core row types or required holder machinery.
