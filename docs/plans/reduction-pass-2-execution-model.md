@@ -1,6 +1,6 @@
 # The reduction — pass 2: the mathematical model of execution
 
-**Status:** `[PROPOSAL]` model. **Not an emitter. Not `src/`. Parametric in exactly the human's rulings.** **Station:** maps. **Emission:** `[GAP]`.
+**Status:** [PROPOSAL] dated whole-app model. **Not src/.** **Station:** maps. **Original pass status:** broad emission [GAP]. **Current qualification:** LAND/root/RootTouch/binary Join/finite-sample grounding are reconciled in draft law; arbitrary relation/sample selection remains [GAP]. See the Pass-5 qualification appended below.
 **Plan:** [reduction-pass-2-plan.md](reduction-pass-2-plan.md). **Extends, does not edit:** the sealed [algebra](../math-execution-model.md) S1–S6 (Core growth) and the [environment](lace-context-iter6-pass-4-environment.md) E1–E7 (σ typed and fenced). **Models:** the whole deliverable — hopper, Core, carrier, views, reload — as one state machine.
 **Source roles:** Graphics A–D are the source of record; the manifest is derived from them. AGENTS and live law govern permitted work. The algebra, environment, [shape](lace-context-iter6-pass-5-crate-proposal.md), and [compute model](lace-context-iter7-pass-2-compute-and-inventory.md) are this proposal's derivation dependencies, not additional source authority or acceptance. Disagreement with them is an obligation to reconcile, not permission to change a governing source.
 
@@ -199,3 +199,86 @@ The table below records the original pass's claims, not their current proof scop
 If you cannot do it to a shoe lace in your hands, you may not do it to laceArc.
 
 One lace, one hand tying, any number of eyes; retention across reload still depends on the stated carrier premises and R3. Emission remains `[GAP]`.
+
+
+---
+
+## ROOT / TOUCH / FOLD Pass 5 — current execution qualification
+
+**This qualification does not rewrite the dated X0–X9 model, its six transitions, OPEN/PERSIST semantics, or its historical sigma-based proofs.**
+
+### What later law fixed
+
+Current deterministic Core mechanics are:
+
+\[
+\mathsf{Arrive}(v)
+\rightarrow
+\begin{cases}
+\text{new WORD becomes root}, & \text{unseen}\\
+\mathsf{Join}(\text{new occurrence},\mathrm{Root}(v)), & \text{seen}
+\end{cases}
+\]
+
+and, for selected ordered earlier operands:
+
+\[
+\mathsf{Join}(a,b)
+=
+(\mathsf{POINTER},a,b).
+\]
+
+For selected finite sample \(S\), repeated Join supplies the n+1 grounding construction.
+
+### What remains unresolved
+
+The whole-app model still does not state where an **arbitrary non-root-touch relation/sample selection** originates.
+
+Do not silently transform hopper \(h\) from:
+
+\[
+h\in V\cup\{\bot\}
+\]
+
+into relation/sample custody.
+
+Do not change:
+
+\[
+\Sigma=(L,h,K)
+\]
+
+by adding \(S\), a selector, or a Ground command merely to hide this gap.
+
+The legal boundary is:
+
+\[
+\text{selected ordered relation/sample}
+\longrightarrow
+\text{deterministic Join construction}.
+\]
+
+The upstream chooser remains [GAP].
+
+### Reading the old sigma parameter
+
+The X1/X3 symbol \(\sigma\) is a dated abstraction over the then-broad unresolved STEP.
+
+For current reading:
+
+- LAND is fixed;
+- unseen/root handling is fixed;
+- seen RootTouch is fixed;
+- binary Join is fixed;
+- finite-sample grounding is fixed;
+- arbitrary relation/sample selection is the residual free input/obligation.
+
+This qualification does **not** assert a new function type for Select, does not assign it to route/, core/, the shell, hopper \(h\), Layer III, or Contract II, and does not alter capacity, persistence, memory ordering, or OPEN behavior.
+
+### Gate
+
+The reconciled pointer-emission document is still **not human-accepted**. Therefore:
+- implementation remains blocked by acceptance/task authorization;
+- no src/;
+- no Cargo;
+- no claim that current documentation alone proves the complete app.
