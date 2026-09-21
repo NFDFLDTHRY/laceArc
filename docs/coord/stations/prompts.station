@@ -1,7 +1,7 @@
-STATUS: FREE
+STATUS: HELD
 STATION: prompts
 OWNS: docs/prompts/**
-AGENT: -
-BASE: -
-SINCE: -
-NOTE: Astra-sampling-reconcile Pass 6 prompts reconciliation COMPLETE. context-pass now tells the current 1D Lace → derived 2D sampling → OPEN retention/materialization → retained POINTER → derived star/search story; arbitrary semantic chooser is historical, search is read-only, acceptance absent. prompts README qualification updated. pointer-emission-prompt preserved as dated creation ticket with a current-status warning rather than rewritten. No src/Cargo/Rust. coord.sh NOT_RUN.
+AGENT: Astra-sampling-reconcile
+BASE: ac7a33774bb546dd8fed74afcf6926cbcc4d18aa
+SINCE: 2026-09-21T20:25:00Z
+NOTE: Pass 6 verification correction. Two current selector-era lines remained in context-pass.md after the first prompts sweep. Replace them with retention/materialization wording only; no other prompt content change. coord.sh NOT_RUN.
