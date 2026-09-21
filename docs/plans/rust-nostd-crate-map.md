@@ -83,6 +83,8 @@ All paths in this table are **future candidates after the gate**, not existing f
 
 **Current unassigned responsibility (ROOT / TOUCH / FOLD Pass 5):** the branch cards let route/ append independently admitted sections and core/ delegate. The physical Join constructor is now a draft-law premise, but **no listed door owns sampling-derived retention/materialization**. The seven-door map therefore remains an incomplete implementation decomposition. This note adds no branch or dependency edge and changes no card's task.
 
+**Manifest Reconciliation Pass 2 qualification:** the current systems manifest now names SM-C20 (derived 2D sampling) and SM-C21 (derived star/search) as **reconstructible working machinery**, distinct from Piece-13 projection and from persistent Contract-I storage. The seven-door proposal does not currently allocate those mechanisms to implementation branches. That is an explicit incompleteness of this packaging proposal, **not evidence that sampling/search is merely a view and not permission to add a new branch here**. SM-GAP-RM remains unowned and open.
+
 The statement “one folder per Piece” is therefore not adopted as a law. Several Pieces describe the same store or operation. Conversely, a Piece can have both a Core formation and a read-only presentation. Any later physical packaging must preserve these distinctions.
 
 **vs Hands:** CONFIRMS one strand and one store; REFINES the former draft's folder-to-Piece equivalence. The concrete section representation and inter-crate composition remain unproved.
