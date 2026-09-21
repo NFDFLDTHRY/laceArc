@@ -2,15 +2,15 @@
 
 **Not the manifest.** [`systems-manifest.md`](systems-manifest.md) is the Hands contract map; this is an ASCII reading of it and settles nothing it does not.
 
-**Current reading qualification, 2026-09-20:** read the [repository update qualification](#repository-update-pass-1--current-qualification) alongside the passages below. It qualifies the dated WORD-only Star caption, Pass 28's proof shorthand, the 21-member reading door, and Open #13's custody count. Passes 1–28 remain records of their own readings; their stamps do not establish present acceptance. HCC-A, Coffee Cup, and Water are conceptual reference documents.
+**Current reading qualification, 2026-09-20:** read the [repository update qualification](#repository-update-pass-1--current-qualification) and [Pass 29](#pass-29--iteration-4-pass-4--root--touch--join-propagation) alongside the passages below. Pass 29 carries the reconciled current LAND / ROOT / RootTouch / binary Join / finite-sample grounding mechanics and narrows the current Core-adjacent gap to arbitrary relation/sample selection. Passes 1–28 remain records of their own readings; their stamps do not establish present acceptance. HCC-A, Coffee Cup, and Water are conceptual reference documents.
 
-**Executed passes:** [1](systems-manifest-ascii-pass-1-plan.md) · [2](systems-manifest-ascii-pass-2-plan.md) · [3](systems-manifest-ascii-pass-3-plan.md) · [4](systems-manifest-ascii-pass-4-plan.md) · [5](systems-manifest-ascii-pass-5-plan.md) · [6](systems-manifest-ascii-pass-6-plan.md) · [7](systems-manifest-ascii-pass-7-plan.md) · [8](systems-manifest-ascii-pass-8-plan.md) · [9](systems-manifest-ascii-pass-9-plan.md) · [10](systems-manifest-ascii-pass-10-plan.md) · [11](systems-manifest-ascii-pass-11-plan.md) · [12](systems-manifest-ascii-pass-12-plan.md) · [13](systems-manifest-ascii-pass-13-plan.md) · [14](systems-manifest-ascii-pass-14-plan.md) · [15](systems-manifest-ascii-pass-15-plan.md) · [16](systems-manifest-ascii-pass-16-plan.md) · [17](systems-manifest-ascii-pass-17-plan.md) · [18](systems-manifest-ascii-pass-18-plan.md) · [19](systems-manifest-ascii-pass-19-plan.md) · [20](systems-manifest-ascii-pass-20-plan.md) · [21](systems-manifest-ascii-pass-21-plan.md) · [22](systems-manifest-ascii-pass-22-plan.md) · [23](systems-manifest-ascii-pass-23-plan.md) · [24](systems-manifest-ascii-pass-24-plan.md) · [25](systems-manifest-ascii-pass-25-plan.md) · [26](plans/lace-context-iter6-pass-3-findings.md) · [27](plans/lace-context-iter7-pass-3-audit.md) · [28](plans/reduction-pass-3-findings.md). A new pass is linked here once it is executed.
+**Executed passes:** [1](systems-manifest-ascii-pass-1-plan.md) · [2](systems-manifest-ascii-pass-2-plan.md) · [3](systems-manifest-ascii-pass-3-plan.md) · [4](systems-manifest-ascii-pass-4-plan.md) · [5](systems-manifest-ascii-pass-5-plan.md) · [6](systems-manifest-ascii-pass-6-plan.md) · [7](systems-manifest-ascii-pass-7-plan.md) · [8](systems-manifest-ascii-pass-8-plan.md) · [9](systems-manifest-ascii-pass-9-plan.md) · [10](systems-manifest-ascii-pass-10-plan.md) · [11](systems-manifest-ascii-pass-11-plan.md) · [12](systems-manifest-ascii-pass-12-plan.md) · [13](systems-manifest-ascii-pass-13-plan.md) · [14](systems-manifest-ascii-pass-14-plan.md) · [15](systems-manifest-ascii-pass-15-plan.md) · [16](systems-manifest-ascii-pass-16-plan.md) · [17](systems-manifest-ascii-pass-17-plan.md) · [18](systems-manifest-ascii-pass-18-plan.md) · [19](systems-manifest-ascii-pass-19-plan.md) · [20](systems-manifest-ascii-pass-20-plan.md) · [21](systems-manifest-ascii-pass-21-plan.md) · [22](systems-manifest-ascii-pass-22-plan.md) · [23](systems-manifest-ascii-pass-23-plan.md) · [24](systems-manifest-ascii-pass-24-plan.md) · [25](systems-manifest-ascii-pass-25-plan.md) · [26](plans/lace-context-iter6-pass-3-findings.md) · [27](plans/lace-context-iter7-pass-3-audit.md) · [28](plans/reduction-pass-3-findings.md) · [29](plans/math-execution-root-touch-fold-pass-5-findings.md). A new pass is linked here once it is executed.
 
 **Authority:** `docs/systems-manifest.md`. Companion, not a replacement.  
 **Hands:** Graphics A–D. Shoe in hands.  
 **Not this file:** H×C×W oil, five-stake imports, `src/`, POINTER emission answers.
 
-Emission remains `[GAP]`.
+**Current status after Pass 29:** POINTER construction is no longer a broad [GAP]. LAND, unseen→ROOT, seen→RootTouch Join, binary Join, WORD/POINTER operands, backward same-line legality, finite-sample n+1 grounding, POINTER→POINTER participation, and adjacency-as-trigger=false are current law. **Arbitrary non-root-touch relation/sample selection remains [GAP].** Acceptance remains absent.
 
 **Update wave · Iteration 2:** Pass **13** = Iteration-2 Pass **1** · **delta admission**. Pass **14** = Iteration-2 Pass **2** · **leftovers / FM audit / coherence**. Pass **15** = Iteration-2 Pass **3** · **kit-door / Iter2 delta mechanism mesh**. Pass **16** = Iteration-2 Pass **4** · **mechanism↔ASCII rigor map** (**P16-X**; mirror Pass 10 / Update-wave Pass 4 P4-X spirit). Pass **17** = Iteration-2 Pass **5** · **Shadow Order Proposal** (**P17-P**; light **P17-X**; mirror Pass 11 / Update-wave Pass 5 P5-X/O/P/R spirit · Iter2 kit-door steward beside **P11-P**). Pass **18** = Iteration-2 Pass **6** · **DIAGRAM SOUND** (**P18-A** / **P18-P** / **P18-X** / **P18-F/O** / **P18-R**; mirror Pass 12 / Update-wave Pass 6 P6-A/P/X/F/O/R spirit · whole companion Iter1+Iter2). Iteration **1** = linear Passes **7–12** (tip **DIAGRAM SOUND WITH OPENS**; **P10-X** / **P12-X** stand; **P11-P** stands for G-III). G2 / Φ stay `[GAP]`.
 
@@ -2880,3 +2880,178 @@ The [history A/B handoff](history/relationship-evidence-pass-3-handoff.md) was c
 | Door S = 21 / old line ranges | The reduction's 21-member set is a dated reading selection. Read named sections: **Spine**, **Δ admission board (pass 26)**, **Systems-level audit (pass 27)**, **Execution-model reading (pass 28)**, and this qualification. Include the later [rust-target shelf](clipboards/rust-target-clipboard.md) and current [context prompt](prompts/context-pass.md); do not treat the earlier selection as today's complete dependency closure |
 
 HCC-A, Coffee Cup, and Water remain conceptual references under the accepted classification correction. Their exclusion as imported Core state does not make them required holder or runtime components. All model and companion readings remain subordinate to the four PNGs and governing law. Emission remains `[GAP]`; no physical, Core, browser or release execution is claimed here.
+
+
+---
+
+## Pass 29 — Iteration-4 Pass 4 — ROOT / TOUCH / JOIN propagation
+
+**Executed under ROOT / TOUCH / FOLD Pass 5.** This is a current-law incorporation into the companion, not a source amendment and not a rewrite of Passes 1–28.
+
+Authority remains:
+
+\[
+\text{Graphics A–D}
+>
+\text{systems-manifest.md}
+>
+\text{this ASCII companion}.
+\]
+
+Current law locators:
+- pointer-emission.md, Pass-4 reconciliation;
+- systems-manifest.md, current human-ruling reconciliation;
+- math-execution-model.md, current mathematical construction.
+
+### P29-A — current Core growth reading
+
+    Contract II — raw word arrival
+                |
+                v
+             WORD row
+                |
+          +-----+-----+
+          |           |
+        unseen       seen
+          |           |
+         ROOT    RootTouch Join
+          |      Join(new occurrence, Root)
+          |           |
+          +-----+-----+
+                |
+      arbitrary relation/sample selected?
+          no    |    yes
+          |     |     |
+          |     |     v
+          |     |  binary Join(a,b)
+          |     |     |
+          |     |  repeated n+1 Join
+          |     |     |
+          |     |  grounded point
+          |     |     |
+          +-----+-----+
+                |
+             Continue
+
+Current constructor:
+
+\[
+\mathsf{Join}(a,b)
+=
+(\mathsf{POINTER},a,b),
+\]
+
+with \(a,b\) selected ordered earlier same-line Lace points. Each operand may be WORD or POINTER.
+
+RootTouch is the closed selector special case:
+
+\[
+(a,b)
+=
+(\text{new occurrence},\mathrm{Root}(v)).
+\]
+
+For a selected finite sample:
+
+\[
+P_1=s_1,
+\qquad
+P_{n+1}=\mathsf{Join}(P_n,s_{n+1}).
+\]
+
+Each \(n\to n+1\) extension appends one new POINTER row. Already-grounded branches may also be joined.
+
+### P29-S — selection fence
+
+       selected ordered earlier operands
+                     |
+                     v
+                Join(a,b)
+
+       what chooses an arbitrary non-root-touch
+       relation/sample?                     [GAP]
+
+Current refuses:
+
+- Join does not discover meaning.
+- Contract II does not secretly carry a sample S.
+- No semantic similarity / learned-state chooser enters Core.
+- No route/document boundary is silently promoted to a selector.
+- No projection/UI edge writes back as relation truth.
+- No query/write operator is invented by this companion.
+
+This is the remaining Core-adjacent selection gap. It is not a missing POINTER representation, arity rule, or target-kind permission.
+
+### P29-ND — dot-to-dot N-D reading
+
+             WORD / JOIN point
+                    |
+                    v
+           Join may name prior Join
+                    |
+                    v
+             point-of-points
+                    |
+                    v
+          relations among relations
+                    |
+                    v
+      dot-to-dot 2D / 3D / N-D projection
+                    |
+                 read only
+
+No coordinate columns. No N-D store. No family row types. Piece 13 / C11 no-write-back remains absolute.
+
+### P29-O — current open-board delta
+
+**Closed from the historical G2/Φ bundle:**
+
+| Item | Current status |
+|---|---|
+| successful arrival appends WORD | CLOSED |
+| unseen WORD becomes root | CLOSED |
+| later same word remains another WORD occurrence | CLOSED |
+| seen occurrence RootTouches root | CLOSED |
+| physical POINTER constructor | CLOSED: binary Join |
+| POINTER arity | CLOSED: 2 for governing Join |
+| WORD/POINTER operand kinds | CLOSED |
+| refs earlier on same line | CLOSED |
+| POINTER→POINTER | CLOSED |
+| finite selected sample grounding | CLOSED by repeated Join |
+| adjacency alone emits relation | CLOSED false |
+
+**Still open:**
+
+| Item | Current status |
+|---|---|
+| arbitrary non-root-touch relation/sample selection | [GAP] |
+| G1 / tokenization / equality | [GAP] |
+| document / conversation / provenance boundaries | [GAP] |
+| read/query/traversal operator | [GAP] |
+| concurrency / multi-writer ordering | [GAP] |
+| C6 route-family discriminator / label storage | [GAP] |
+| eventual-reference rule | [GAP] |
+| unrelated runtime/device doors | retain their own current statuses |
+
+Historical Passes 1–28 keep their then-current G2/Φ stamps. They are provenance, not today's gap size.
+
+### P29-X — accuracy / refusal board
+
+| Test | Result |
+|---|---|
+| Passes 1–28 rewritten | **NO** |
+| Graphics claimed to literally say Join | **NO** |
+| selection gap erased | **NO** |
+| hidden sample input added to Contract II | **NO** |
+| N-D promoted to stored dimensions | **NO** |
+| acceptance implied | **NO** |
+| current law cited | **YES** |
+| clipboard shelf promoted to Core authority | **NO** |
+
+### P29-R — verdict
+
+**CURRENT DIAGRAM READING SOUND WITH ONE NARROWER CORE-ADJACENT GAP:** arbitrary relation/sample selection.
+
+The companion no longer treats POINTER representation, arity, target kinds, RootTouch, or finite-sample grounding as current unknowns. It also does not pretend the arbitrary chooser has been solved.
+
+**Acceptance remains absent. No implementation authorization follows. No src/.**
