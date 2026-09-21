@@ -1,7 +1,7 @@
-STATUS: FREE
+STATUS: HELD
 STATION: law
 OWNS: AGENTS.md CLAUDE.md docs/staking-the-workspace.md docs/law-why-these-documents.md docs/systems-manifest.md docs/pointer-emission.md docs/references.md CONTRIBUTING.md README.md .gitignore LICENSE docs/README.md
-AGENT: -
-BASE: -
-SINCE: -
-NOTE: Astra-sampling-reconcile SAMPLING / DENSITY / EMERGENCE Pass 6 law reconciliation COMPLETE. pointer-emission current gap reclassified from historical Origin(rho)/arbitrary-assertion provenance to exact sampling-derived retention/materialization; binary Join, RootTouch, one-store/no-write fences and absent acceptance preserved. systems-manifest now distinguishes human-ruled derived 2D sampling working surface from Graphic-C/N-D projection and records Star as derived search anchor, not stored index. AGENTS/CLAUDE/README/docs README/CONTRIBUTING current entrypoints reconciled. Historical chooser/provenance receipts preserved. No src/Cargo/Rust. coord.sh NOT_RUN.
+AGENT: Astra-sampling-reconcile
+BASE: df38b4328922e630f26b227d96518b5b0fe8efd4
+SINCE: 2026-09-21T20:45:00Z
+NOTE: Pass 6 final stale correction. Deeper systems-manifest current sections still carry provenance/selection-era wording despite the earlier top/cross-piece reconciliation. Replace those active blocks with retention/materialization and narrowed search/traversal status only; preserve historical sections and acceptance. coord.sh NOT_RUN.
