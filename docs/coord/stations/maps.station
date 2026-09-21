@@ -1,7 +1,7 @@
-STATUS: FREE
+STATUS: HELD
 STATION: maps
 OWNS: docs/reason-model-map.md docs/rust-nostd-*.md docs/atomic-primitives-map.md docs/clock/gearing-code-1to1.md docs/coherence-audit*.md docs/clock/system-mathematical-model.md docs/defrag-plan.md docs/plans/** docs/namespace-register.md docs/*.md (catch-all: any unmatched file at the docs/ root)
-AGENT: -
-BASE: -
-SINCE: -
-NOTE: Astra-sampling SAMPLING / DENSITY / EMERGENCE Pass 1 COMPLETE. Execution claim 815529719cca471e54876b0b4ee8991faa0c6cde; findings 9215f775a7c605370451558c64580828fd4e3477 + final verification db7932f39147f732c1903522b85a38a17c3fcdc5; plan close 89a13470b527c5b891879767dc5e31381fd6d033; index 0e52b6f713a90b4c235bdeea786bd17e7973159f. Strongest survivor: dense derived 2D sampling surface + sparse retained 1D POINTER map. Fixed: authoritative 1D WORD/POINTER history, 2D position-by-scale working array, cross-scale POINTER capability. Primary residuals: 2D cell→1D addressable-point bridge and recurrence/overlap→retained POINTER rule; recurrence comparator and density metric remain open. APPLES specimen worked; D1 replay complete; 20/20 falsifiers reported. Law/gate surfaces unchanged. Final verified tree 697 paths, no src/Cargo.toml/.rs. coord.sh NOT_RUN.
+AGENT: Astra-sampling
+BASE: 47ec7704d06df3ad58dc2376466dd83f513aab55
+SINCE: 2026-09-21T02:00:00Z
+NOTE: User-directed SAMPLING / DENSITY / EMERGENCE Pass 2 planning. Build plan for minimal nonsemantic 2D lattice only: endpoint/WORD-position × contiguous span n, root-key tuple identity, direct-window vs overlap-recursive equivalence, D1 pointer WORD-leaf mapping, APPLES online recurrence field, and first 2D-cell→1D-address failure. Retention rule remains out of scope except as observed mismatch. No law edit. No src/Cargo. Connector claim; coord.sh NOT_RUN.
