@@ -1,7 +1,7 @@
-STATUS: FREE
+STATUS: HELD
 STATION: clipboards
 OWNS: docs/clipboards/**
-AGENT: -
-BASE: -
-SINCE: -
-NOTE: Restart Pass 5 cross-shelf target cleanup COMPLETE. WebGPU/WGSL/WebNN current entrances now point to the undecided Wasm/rustc target court; historical ≠wasm64 false-friend bodies remain dated evidence.
+AGENT: ChatGPT
+BASE: a3d55b0a3372e5446ac5fd87f6dd47671d11b1d5
+SINCE: 2026-09-22T06:42:00Z
+NOTE: EXECUTING Behavioral Read Devices Pass 3 clipboard taxonomy correction. Reclassify technical shelf by source role and expose host/embedder + R3-conditional carrier gaps without reopening completed source campaigns.
