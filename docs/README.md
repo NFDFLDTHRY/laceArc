@@ -32,6 +32,8 @@ The four graphics define the project. Everything else on this page is derived fr
 
 Derived from the Hands. Proposals and readings, never a second source.
 
+**Current integration route, 2026-09-22:** [Global ASCII Pass 39](systems-manifest-ascii.md#pass-39--behavioral-read-devices-pass-6--whole-campaign-reconciliation) is the current derived whole-campaign overlay above preserved Passes 32–38. For agent entry, [the prompt shelf](prompts/README.md) now distinguishes live entrances, standing processes, bounded-future tickets, and historical/completed creation tickets.
+
 | File | What it is |
 |---|---|
 | [reason-model-map.md](reason-model-map.md) | Shoe-lace reason model and research-source boundary map: KEEP/FORBID plus candidate machinery that may be tested by the lab |

@@ -20,6 +20,29 @@ The entire mechanism is one rule, said two ways:
 
 Same rule. Same strand. 3D stars and N-dimensional participation are readings of that line, not extra stores.
 
+## Current court
+
+**Current integration overlay:** [Behavioral Read Devices Pass 6 / Global ASCII Pass 39](docs/systems-manifest-ascii.md#pass-39--behavioral-read-devices-pass-6--whole-campaign-reconciliation). Pass 39 is a **derived integration companion**, not Core authority; the four graphics and [systems manifest](docs/systems-manifest.md) remain upstream.
+
+| Surface | Current status |
+|---|---|
+| Core mathematical substrate | [`math-execution-model.md`](docs/math-execution-model.md) **S0–S8** plus L-M01…L-M21 / L-GAP-RM |
+| Read device | **S9** — non-Core, read-only over Lace |
+| Observability | **S10** — evidence/identifiability/provenance court |
+| Realization / evidence | **S11** — Cargo/rustc/Wasm/HOST/WebGPU/WGSL/WebNN; **GAP-HOST remains open** |
+| Device-local machine operators | **S12** — optional; fixed common chassis rejected |
+| Behavioral device blueprints | HCC-A / Coffee Cup / Water mathematical realizations; **not implementations** |
+| Retain-when | **RM-A OPEN / MISSING-A** |
+| Tokenization / word identity | **G1 OPEN** |
+| Volatile vs durable lifetime | **R3 OPEN** |
+| Exact H×C×W runtime coupling | **OPEN** |
+| Compilation target | **TARGET UNDECIDED** — wasm64 and wasm32 remain candidates |
+| Pointer contract acceptance | **ABSENT** |
+| Core implementation | **CLOSED** |
+| `src/` | **ABSENT** |
+
+The current Water target uses **nonblocking predicted-evidence UNK** and **evidence-backed INVALID**; older blocking/lexical interpretations survive only as source/history. For the mandatory same-story entrance used by agents, read [`AGENTS.md`](AGENTS.md) then [`docs/prompts/context-pass.md`](docs/prompts/context-pass.md).
+
 ## What this repo contains
 
 Shelves (defrag pass 1–4). Hands stay at `docs/` root. Do not treat a prompt, clipboard, clock cube, plan, or recovery as Graphic D.
@@ -33,7 +56,7 @@ Shelves (defrag pass 1–4). Hands stay at `docs/` root. Do not treat a prompt, 
 | Shadow view | [gearing](docs/shadow-clock-gearing.html), [HCC](docs/clock/hcc-a-projection.html), [Lace specimen](docs/clock/lace-projection.html), [no_std plan](docs/hologram/nostd-pipeline.html) | Four Layer III viewers; current-source, pinned release and device observations are separate states |
 | Coord | [docs/coord/](docs/coord/README.md) | Doc stations + gear claim umbrella (Layer III) |
 | History | [docs/history/](docs/history/README.md) | Recoveries. Do not revive walkers |
-| Prompts | [docs/prompts/](docs/prompts/README.md) | Agent tickets. Not law |
+| Prompts | [docs/prompts/](docs/prompts/README.md) | Agent tickets/processes classified as live, standing, bounded-future, or historical/completed. Not law |
 | Clipboards | [docs/clipboards/](docs/clipboards/README.md) | Five stake-text families plus Wasm, WebGPU, WGSL, WebNN and rust-target source mappings |
 | Kit | [docs/kit/](docs/kit/README.md) | Steward controls. PWA install law: [githack-pwa-deploy.md](docs/kit/githack-pwa-deploy.md) |
 | Plans | [docs/plans/](docs/plans/README.md) | Plans, proposals, executed findings and receipts, each with its own status. Arrival in Git is not execution or acceptance |
@@ -54,22 +77,22 @@ Shelves (defrag pass 1–4). Hands stay at `docs/` root. Do not treat a prompt, 
 | [docs/shadow-clock-gearing.html](docs/shadow-clock-gearing.html) | Interactive Layer-III projection: {A,B,C} as physical clock gearing + mesh contracts — **WebGPU 3D required**. Preview on raw.githack. **Install** only via [GitHack PWA policy](docs/kit/githack-pwa-deploy.md). |
 | [docs/gearing/](docs/gearing/) | Shared-interactive Layer-III contract data (`window.LACE_CONTRACTS` additive scripts). |
 | [docs/coord/](docs/coord/) | Multi-agent coordination umbrella: doc stations + `coord.sh`; gear shafts still via claim.sh. |
-| [docs/prompts/clip-and-five-refs-prompt.md](docs/prompts/clip-and-five-refs-prompt.md) | Agent prompt: clipboard-looking mapping sheets while walking the five stake references. |
-| [docs/prompts/kauffman-clipboard-prompt.md](docs/prompts/kauffman-clipboard-prompt.md) | Agent prompt: clipboard mapping for Kauffman *Knots and Physics* 4ed (dokumen.pub slug / ISBN 9814383007). |
-| [docs/prompts/rowlands-clipboard-prompt.md](docs/prompts/rowlands-clipboard-prompt.md) | Agent prompt: ASCII clipboard for Rowlands *Zero to Infinity* (Series on Knots and Everything). |
-| [docs/prompts/xiao-clipboard-prompt.md](docs/prompts/xiao-clipboard-prompt.md) | Agent prompt: ASCII clipboard for Xiao & Zhu *Foundations of Large Language Models*. |
-| [docs/prompts/petersen-zech-clipboard-prompt.md](docs/prompts/petersen-zech-clipboard-prompt.md) | Agent prompt: ASCII clipboard for Petersen & Zech *Mathematical theory of deep learning*. |
-| [docs/prompts/agentscope-clipboard-prompt.md](docs/prompts/agentscope-clipboard-prompt.md) | Agent prompt: ASCII clipboard for Bi et al. AgentScope (Diagnosing with Insights). |
-| [docs/prompts/rust-nostd-crate-map-prompt.md](docs/prompts/rust-nostd-crate-map-prompt.md) | Agent prompt: ASCII map of Hands → Rust `#![no_std]` first-party crates (intuitive tree; no `src/` yet). |
-| [docs/prompts/rust-nostd-branch-contracts-prompt.md](docs/prompts/rust-nostd-branch-contracts-prompt.md) | Agent prompt: next plan — per-branch `#![no_std]` contracts on top of the crate map (plan only; no `src/`). |
-| [docs/prompts/gearing-code-1to1-prompt.md](docs/prompts/gearing-code-1to1-prompt.md) | Agent prompt: force 1:1 between WebGPU gearing visual keys and code units (Layer III; emission [GAP]). |
+| [docs/prompts/clip-and-five-refs-prompt.md](docs/prompts/clip-and-five-refs-prompt.md) | **[STANDING PROCESS]** Five-stake source re-walk/audit form; existing clipboard products remain the record. |
+| [docs/prompts/kauffman-clipboard-prompt.md](docs/prompts/kauffman-clipboard-prompt.md) | **[HISTORICAL / COMPLETED]** Original Kauffman clipboard creation ticket; do not replay over the existing product. |
+| [docs/prompts/rowlands-clipboard-prompt.md](docs/prompts/rowlands-clipboard-prompt.md) | **[HISTORICAL / COMPLETED]** Original Rowlands clipboard creation ticket; do not replay over the existing product. |
+| [docs/prompts/xiao-clipboard-prompt.md](docs/prompts/xiao-clipboard-prompt.md) | **[HISTORICAL / COMPLETED]** Original Xiao–Zhu clipboard creation ticket; do not replay over the existing product. |
+| [docs/prompts/petersen-zech-clipboard-prompt.md](docs/prompts/petersen-zech-clipboard-prompt.md) | **[HISTORICAL / COMPLETED]** Original Petersen–Zech clipboard creation ticket; do not replay over the existing product. |
+| [docs/prompts/agentscope-clipboard-prompt.md](docs/prompts/agentscope-clipboard-prompt.md) | **[HISTORICAL / COMPLETED]** Original AgentScope clipboard creation ticket; do not replay over the existing product. |
+| [docs/prompts/rust-nostd-crate-map-prompt.md](docs/prompts/rust-nostd-crate-map-prompt.md) | **[HISTORICAL / COMPLETED]** Original no_std crate-map planning ticket; existing map is a future implementation-decomposition proposal, not authorization. |
+| [docs/prompts/rust-nostd-branch-contracts-prompt.md](docs/prompts/rust-nostd-branch-contracts-prompt.md) | **[HISTORICAL / COMPLETED]** Original branch-card planning ticket; existing cards remain proposal-only, with target undecided and no `src/`. |
+| [docs/prompts/gearing-code-1to1-prompt.md](docs/prompts/gearing-code-1to1-prompt.md) | **[BOUNDED FUTURE]** Re-audit only under a current task; existing 1:1 map is the accumulated product. |
 | [docs/prompts/pointer-emission-prompt.md](docs/prompts/pointer-emission-prompt.md) | Historical outline task with current preservation instructions: retain the accumulated draft and grounded constraints; acceptance remains absent. |
-| [docs/prompts/gearing-html-iterate-prompt.md](docs/prompts/gearing-html-iterate-prompt.md) | Agent prompt: iterate WebGPU gearing HTML / shafts under claim law, 1:1 keys, Layer III. |
-| [docs/prompts/gearing-html-fix-prompt.md](docs/prompts/gearing-html-fix-prompt.md) | Agent prompt: designated-editor FIX pass for WebGPU gearing HTML (mobile HUD/camera/chrome). |
-| [docs/prompts/gearing-html-hologram-restyle-prompt.md](docs/prompts/gearing-html-hologram-restyle-prompt.md) | Agent prompt: restyle WebGPU gearing HTML to hologram lattice/crossing/traces templates (keep keys; [GAP]). |
-| [docs/prompts/coherence-audit-prompt.md](docs/prompts/coherence-audit-prompt.md) | Agent prompt: standing coherence audit (update docs as you go; emission [GAP]). |
+| [docs/prompts/gearing-html-iterate-prompt.md](docs/prompts/gearing-html-iterate-prompt.md) | **[BOUNDED FUTURE]** Renderer/gearing iteration requires a current claim and current evidence; not a standing edit loop. |
+| [docs/prompts/gearing-html-fix-prompt.md](docs/prompts/gearing-html-fix-prompt.md) | **[HISTORICAL / COMPLETED]** Dated mobile-readability diagnosis; reuse only if a current probe reproduces it. |
+| [docs/prompts/gearing-html-hologram-restyle-prompt.md](docs/prompts/gearing-html-hologram-restyle-prompt.md) | **[HISTORICAL / COMPLETED]** Dated restyle brief; not standing renderer permission. |
+| [docs/prompts/coherence-audit-prompt.md](docs/prompts/coherence-audit-prompt.md) | **[STANDING PROCESS]** Current-tip drift audit through Pass 39; process does not itself authorize edits. |
 | [docs/coherence-audit-log.md](docs/coherence-audit-log.md) | Append-only coherence audit tick log. |
-| [docs/prompts/shadow-clock-shared-interactive-prompt.md](docs/prompts/shadow-clock-shared-interactive-prompt.md) | Prompt that defined the shared-interactive gearing architecture (Layer III). |
+| [docs/prompts/shadow-clock-shared-interactive-prompt.md](docs/prompts/shadow-clock-shared-interactive-prompt.md) | **[HISTORICAL / COMPLETED]** Bootstrap ticket for renderer/contracts that now exist. |
 | [LICENSE](LICENSE) | Apache-2.0 |
 | [AGENTS.md](AGENTS.md) | Standing orders for any Grok / Grok Bot / Grok Build session in this tree. |
 | [CLAUDE.md](CLAUDE.md) | Pointer that loads those standing orders into Claude Code sessions. |
@@ -150,7 +173,11 @@ The dot-to-dot N-D representation is a projection of recursive Join participatio
 
 ## Status
 
-Model repository with Layer III viewers and steward tooling. Apache-2.0. No Lace Core implementation. Current work: [repository update pass 4](docs/plans/repo-update-pass-4-plan.md), executed locally; its [evidence record](docs/plans/repo-update-pass-4-evidence.md#10-execution-reanchor-and-choices) separates reproduced failures, local repairs, synthetic checks and pending client observations. HCC-A, Coffee Cup and Water remain conceptual references.
+Model repository with Layer III viewers and steward tooling. Apache-2.0. **No Lace Core implementation.**
+
+**Current integration baseline:** Behavioral Read Devices Pass 6 / Global ASCII **Pass 39**. The non-Core machine court is S9–S12 above the unchanged substrate; current HCC-A / Coffee Cup / Water mathematical blueprints are not runtime implementations. **RM-A remains OPEN / MISSING-A; G1 OPEN; R3 OPEN; GAP-HOST OPEN; exact H×C×W coupling OPEN; compilation target TARGET UNDECIDED; pointer acceptance ABSENT.**
+
+The repository-update Passes 1–4 below remain dated lifecycle/source/publication evidence. They are not the current whole-repository campaign state.
 
 [Pass 3](docs/plans/repo-update-pass-3-evidence.md) was published through `335429c`, in eight station commits covering thirty paths. Its local-handoff receipt is preserved; the later [publication record](docs/plans/repo-update-pass-4-evidence.md#1-published-baseline-and-arrival) identifies those commits. Pass4 does not promote the pinned release. The re-supplied [rustc book matches A1](docs/clipboards/rust-target-clipboard.md#repository-update-pass-4--a1-re-sighting); the newly supplied [Cargo A4 mapping](docs/clipboards/rust-target-clipboard.md#repository-update-pass-4--a4-cargo-source-mapping) records crate-list syntax and source/lockfile requirements at source strength, with builds and artifact obligations still unverified.
 
