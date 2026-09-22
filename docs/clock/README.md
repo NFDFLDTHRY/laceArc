@@ -1,6 +1,6 @@
 # Clock (Layer III)
 
-Behavioral-goal source clipboards and Layer III visualizations. HCC-A, Coffee Cup, and Water are conceptual reference / behavioral-goal sources under the [current law](../law-why-these-documents.md#conceptual-reference-documents). Their source-described pipelines, stages, proofing systems, gears, state machines, and compositions are **candidate machinery for the laceArc lab**: they may be proposed, attacked, reproduced, tested, falsified, or survive bounded evidence. Their former classification as automatically required holder machinery is superseded. **Not Core** means no automatic authority jump into Graphic D, not “ignore the machinery.” **Not Graphic D. Cubes are not WORD rows.** The source of record for the Lace substrate is [the four graphics](../graphics/README.md), then the manifest.
+Behavioral-goal source clipboards and Layer III visualizations. HCC-A, Coffee Cup, and Water are conceptual reference / behavioral-goal sources under the [current law](../law-why-these-documents.md#conceptual-reference-documents). **Alignment Restart Pass 4 separates three things that earlier prose sometimes compressed:** (1) source-defined **desired-behavior mechanisms** such as HCC's parallel evidence/prior processing, Coffee Cup's causal recurrence, and Water's dual proofing/interface logic; (2) observable behavioral assays/projections of those mechanisms; and (3) concrete runtime/holder implementation machinery, which remains experimental. Source mechanisms therefore matter as functional obligations without becoming literal Core components or mandatory software objects. Repo gears/shafts/clutches/train meshes remain interpretive candidate machinery unless the original itself defines the relation. **Not Core** means no automatic authority jump into Graphic D, not “ignore the mechanism.” **Not Graphic D. Cubes are not WORD rows.** The source of record for the Lace substrate is [the four graphics](../graphics/README.md), then the manifest.
 
 Moved here in defrag pass 3. Pass plans shelved in restructure phase 5.
 
@@ -19,7 +19,7 @@ Moved here in defrag pass 3. Pass plans shelved in restructure phase 5.
 
 ## Conceptual-reference manifests
 
-These retain analyses of source concepts and the earlier gear interpretation. Each links its reading passes; those passes do not establish required machinery.
+These retain analyses of source concepts and the earlier gear interpretation. Each links its reading passes; those passes do not establish literal runtime machinery. For source-first functional obligations, see the Pass-4 mechanism maps: [HCC-A](../plans/source-lab-lace-alignment-pass-4-hcc-a-behavior-mechanisms.md), [Coffee Cup](../plans/source-lab-lace-alignment-pass-4-coffee-cup-behavior-mechanisms.md), [Water](../plans/source-lab-lace-alignment-pass-4-water-behavior-mechanisms.md), and the source-separated [crosswalk](../plans/source-lab-lace-alignment-pass-4-crosswalk.md).
 
 | File | Gear |
 |---|---|
