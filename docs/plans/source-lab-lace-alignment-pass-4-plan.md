@@ -1,6 +1,6 @@
 # SOURCE → LAB → LACE ALIGNMENT — Restart Pass 4 PLAN
 
-**Status:** PLAN — NOT EXECUTED.  
+**Status:** EXECUTED — see source-lab-lace-alignment-pass-4-findings.md.  
 **Campaign:** Source → Lab → Lace Alignment — restart.  
 **Pass:** 4.  
 **Pass name:** **READ THE MACHINES AGAIN — desired-behavior mechanism recovery.**  
@@ -1141,3 +1141,32 @@ It does **not** automatically:
 The question Pass 4 must answer is:
 
 > **What mechanisms are actually part of the desired behavior described by the originals, and what remains free for the Lab to discover underneath them?**
+
+
+---
+
+## 21. Actual execution result
+
+Executed against current main beginning at `c81790d57a92c845b7d63033ebc8b3c4fdf40b99`.
+
+Source originals were read first from the uploaded files and matched the pinned SHA-256 identities.
+
+Products:
+- HCC-A desired-behavior mechanism map;
+- Coffee Cup desired-behavior mechanism map;
+- Water desired-behavior mechanism map;
+- source-separated cross-source mechanism crosswalk;
+- source-backed clock/law/context entrance corrections;
+- Pass-3 assay qualification;
+- global ASCII **linear Pass 36**;
+- Pass-4 findings.
+
+Verdicts:
+- **Source mechanism recovery:** DESIRED-BEHAVIOR MECHANISMS MAPPED WITH SOURCE OPENS.
+- **Existing clipboard fidelity:** FAITHFUL WITH COMPRESSION / INTERPRETIVE OVERLAY.
+- **Pass-3 assay fidelity:** ASSAYS ARE VALID BUT THIN.
+- **Implementation freedom:** FUNCTIONAL OBLIGATIONS CLEAR / CONCRETE IMPLEMENTATION OPEN.
+
+No concrete holder/runtime implementation was selected. RM-A remains un-designed. No Core mechanism, pointer acceptance, or implementation gate moved.
+
+**STOP.** Pass 5 is not opened automatically.
