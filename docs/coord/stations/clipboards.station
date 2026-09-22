@@ -1,7 +1,7 @@
-STATUS: FREE
+STATUS: HELD
 STATION: clipboards
 OWNS: docs/clipboards/**
-AGENT: -
-BASE: -
-SINCE: -
-NOTE: Behavioral Read Devices Pass 3 technical inventory reconciliation COMPLETE. Technical shelf stratified by source role; Wasm core/browser-host boundary corrected; GAP-HOST explicit; WebGPU/WGSL/WebNN/rustc/Cargo entrances otherwise stood. No source campaign reopened, no target/carrier/RM-A/implementation selected.
+AGENT: ChatGPT
+BASE: f2202beba96b83f4481b2feebb3dfe777292526d
+SINCE: 2026-09-22T08:22:00Z
+NOTE: EXECUTING Behavioral Read Devices Pass 6 Stage D. Reconcile research shelf index with Pass-5 positive machine-construction result; no individual source-card rewrites unless a live false route is found.
