@@ -1,7 +1,7 @@
-STATUS: HELD
+STATUS: FREE
 STATION: maps
 OWNS: docs/reason-model-map.md docs/rust-nostd-*.md docs/atomic-primitives-map.md docs/clock/gearing-code-1to1.md docs/coherence-audit*.md docs/clock/system-mathematical-model.md docs/defrag-plan.md docs/plans/** docs/namespace-register.md docs/*.md (catch-all: any unmatched file at the docs/ root)
-AGENT: Astra-alignment-restart
-BASE: 8cdbdb88c4c78b424c31cb95a6b074e0bc0df783
-SINCE: 2026-09-21T22:42:00-07:00
-NOTE: Receipt-finalization only for Alignment Restart Pass 5. Post-release direct reads after 8cdbdb88 confirmed all 11 document stations FREE and all 8 gearing shafts FREE. Update G61 only; no semantic edits.
+AGENT: -
+BASE: -
+SINCE: -
+NOTE: Source→Lab→Lace Alignment Restart Pass 5 COMPLETE and receipt finalized. TARGET UNDECIDED; former wasm64 seal superseded as current state; Pass 37 is final semantic edit; all 11 document stations and 8 gearing shafts verified FREE; no Core/RM-A/acceptance/implementation change.
