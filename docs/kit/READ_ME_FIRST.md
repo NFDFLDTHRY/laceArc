@@ -6,7 +6,7 @@ This file is kit, not Hands. Live law is [`AGENTS.md`](../../AGENTS.md) and [`do
 
 **Earlier re-read:** 19 September 2026 against claim BASE `044257ceb95e78612d302a204a9438c72d06aa96`. The emission file then existed as a draft; acceptance and enforcement were not established. This pin records that reading, not the current tip.
 
-**Current reading, Manifest Reconciliation Pass 2:** [`docs/pointer-emission.md`](../pointer-emission.md) is a **reconciled DRAFT, not accepted**. Current WORD/root/RootTouch/binary Join/finite-grounding mechanics plus the human-ruled derived sampling/search architecture are recorded; **exact sampling-derived retention/materialization remains `[GAP]`**. The earlier arbitrary-selector question survives only as dated campaign history. Historical Answer lines and their custody record remain preserved. The [live law's opening](../law-why-these-documents.md) still preserves its human-authored existence/acceptance wording pair; AGENTS.md and the IMPLEMENTATION LAW acceptance requirement control implementation. This package does not resolve or waive that gate.
+**Current reading, Alignment Restart Pass 1:** [`docs/pointer-emission.md`](../pointer-emission.md) is a **reconciled DRAFT, not accepted**. WORD/root/RootTouch/binary Join/finite-grounding plus human-ruled sampling/search are recorded. The canonical `SM-GAP-RM` interface remains open, but latest bounded Lab evidence narrows it: **RM-A retain-when remains open; RM-B is partially closed for selected finite contiguous samples; RM-C is class-specifically closed for RootTouch and contiguous sample grounding.** The earlier arbitrary-selector question survives only as dated campaign history. This package does not resolve or waive the acceptance gate.
 
 This documentation package supplies controls for local and cloud agents. [CLAUDE.md](../../CLAUDE.md) and [CONTRIBUTING.md](../../CONTRIBUTING.md) explicitly require the control prompt and task forms. AGENTS.md supplies standing orders and requires the context pass. These routes do not prove that every external harness loads or enforces the files.
 
@@ -33,14 +33,14 @@ Read docs/kit/agent-control.md and docs/kit/agent-task-template.md.
 Then follow the law's source-reading order for the assigned task.
 Return a source-specific receipt before proposing Core structure.
 Pointer construction is recorded in a reconciled but unaccepted draft.
-Exact sampling-derived retention/materialization remains [GAP].
+General `SM-GAP-RM` remains open; RM-A is primary. Bounded RM-B/RM-C results remain scoped Lab evidence.
 Core still requires identifiable human acceptance of the exact contract
 plus every premise required by the assigned task. File existence or
 reconciliation is not acceptance. Permanent prohibitions remain.
 Work on the one assigned task. Do not create another implementation branch.
 ```
 
-The routing block requires exact human acceptance and all task-specific premises while keeping permanent prohibitions in force. It does not establish the open sampling-derived retention/materialization rule or reconcile every other entrance. Do not replace the staking ASCII with this routing block. Its complete wording must remain available to every agent.
+The routing block requires exact human acceptance and all task-specific premises while keeping permanent prohibitions in force. It does not establish RM-A, universalize bounded RM-B/RM-C results, or reconcile every other entrance. Do not replace the staking ASCII with this routing block. Its complete wording must remain available to every agent.
 
 The downstream audit remains pinned to the THEN commit `4fe984bb098d5ca21c9704234df4fddd53056efb`. Its original observations and hook experiments are preserved as historical evidence. At that pin, pointer-emission.md was absent (audit F10). The file now exists as DRAFT; acceptance is still missing. This door does not rewrite the audit body or claim that its remaining wording and enforcement findings are resolved.
 
@@ -48,4 +48,4 @@ Before treating controls as enforced, resolve the audit's admission blockers, co
 
 ## What is ready now
 
-The prompt and forms can guide documentation and review work now. Layer III viewers and steward scripts already exist; there is no Lace Core implementation. The pointer constructor and human-ruled sampling architecture are reconciled but not accepted; exact sampling-derived retention/materialization remains `[GAP]`; Core implementation, code commits, and the next implementation branch remain subject to the existing law and task-specific proof gates. The included agent challenges are test specifications; they have not been run against a population of models.
+The prompt and forms can guide documentation and review work now. Layer III viewers and steward/Lab tools already exist; there is no Lace Core implementation. Candidate runners, retention harnesses, golden fixtures, admission envelopes and falsifier boards are **Lab instruments/evidence**, never Core dependencies or acceptance. The pointer constructor and human-ruled sampling architecture are reconciled but not accepted; RM-A remains open while bounded RM-B/RM-C results retain their tested scope. Core implementation, code commits, and the next implementation branch remain subject to the existing law and task-specific proof gates.
