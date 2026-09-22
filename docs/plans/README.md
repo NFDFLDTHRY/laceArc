@@ -4,6 +4,8 @@ Plans, proposals, executed pass records, and dated receipts share this shelf. Ea
 
 | File | Job |
 |---|---|
+| [repo-lag-pass-4-clock-target-plan.md](repo-lag-pass-4-clock-target-plan.md) | **EXECUTED — CLOCK / WASM TARGET COURT RECONCILED.** Two live clock entrances now state TARGET UNDECIDED; wasm64 remains conditional/high-burden, wasm32 candidate/unproved; historical viewer/toolchain evidence and release/runtime state preserved. |
+| [repo-lag-pass-4-clock-target-findings.md](repo-lag-pass-4-clock-target-findings.md) | **EXECUTED PASS-4 RECEIPT.** Exactly two semantic clock files changed; F1–F21 held, G1–G22 passed; remaining lag reduced to namespace register, append-only coherence tick and coord station description. |
 | [repo-lag-pass-3-kit-control-plan.md](repo-lag-pass-3-kit-control-plan.md) | **EXECUTED — KIT CONTROL / TRANSPORT LAYER RECONCILED.** Byte-identical human-law fences preserved; agent-control routes Pass 39/S9–S12/current gates; Grok First Task now grounds on current state and cannot self-assign a next file; package/index/cold-door live routes repaired. |
 | [repo-lag-pass-3-kit-control-findings.md](repo-lag-pass-3-kit-control-findings.md) | **EXECUTED PASS-3 RECEIPT.** Five kit files changed, task-template/Claude/scanner/hooks preserved; F1–F21 held, G1–G22 passed; hologram/maps/coord debt handed off. |
 | [repo-lag-pass-2-law-entry-plan.md](repo-lag-pass-2-law-entry-plan.md) | **EXECUTED — ROOT / LAW ENTRANCES RECONCILED.** Root README carries Pass 39, S9–S12, current open gates, TARGET UNDECIDED and Prompt-Pass-1 classifications; live law/frozen stake/current registry surfaces preserved. |

@@ -1,6 +1,6 @@
 # Repo lag cleanup — Pass 4 clock / hologram target-court reconciliation plan
 
-**Status:** PLAN — human approved in conversation by “Proceed with pass 4.”  
+**Status:** EXECUTED — CLOCK / WASM TARGET COURT RECONCILED; HISTORICAL VIEWER EVIDENCE PRESERVED.  
 **Station sequence:** maps persists this plan, then releases; hologram executes the target-court repair; maps writes closeout findings and the narrowed remainder docket.  
 **Base before plan persistence:** `b589e6fa549f635e9722dcc8ec5c115eff0253f1` (repo-lag Pass 3 closeout).  
 **No new theory. No Core change. No target selection. No acceptance. No implementation.**
@@ -220,3 +220,12 @@ G22 next-backlog docket updated.
 ## Stop
 
 Do not automatically begin namespace/audit-log or coord cleanup after this pass.
+
+
+## Execution closeout
+
+**Executed 2026-09-22.** The plan was persisted before hologram execution. Only `docs/clock/wasm/README.md` and `docs/clock/README.md` were semantically edited. The former selected/proposed-wasm64 current wording was replaced by **TARGET UNDECIDED** with wasm64 conditional/high-burden and wasm32 lower-burden but unproved. The historical wasm32 bake attempt, current JavaScript `wasm:false` path, viewer/runtime/release state, and clock pass history were preserved.
+
+The post-edit direct-file sweep found no stale current target-selection claim. GitHub code-search indexing lagged the just-written bytes, so final classification used fetched current file contents plus unchanged historical blobs. See [Pass-4 findings](repo-lag-pass-4-clock-target-findings.md).
+
+Verdict: **CLOCK TARGET COURT CURRENT / TARGET UNDECIDED / HISTORICAL WASM EVIDENCE PRESERVED / RUNTIME AND RELEASE UNCHANGED.**
