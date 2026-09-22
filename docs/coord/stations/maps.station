@@ -1,7 +1,7 @@
-STATUS: FREE
+STATUS: HELD
 STATION: maps
 OWNS: docs/reason-model-map.md docs/rust-nostd-*.md docs/atomic-primitives-map.md docs/clock/gearing-code-1to1.md docs/coherence-audit*.md docs/clock/system-mathematical-model.md docs/defrag-plan.md docs/plans/** docs/namespace-register.md docs/*.md (catch-all: any unmatched file at the docs/ root)
-AGENT: -
-BASE: -
-SINCE: -
-NOTE: Behavioral Read Devices Pass 5 planning COMPLETE. Five research sources rigorously remapped as machine-construction material above Lace; plan tests common chassis vs operator library vs source-specific factorization and calls for full HCC/Coffee Cup/Water mathematical device blueprints, assays, and conditional S12 only if earned. No Core/RM-A/G1/target/R3/acceptance/implementation movement.
+AGENT: ChatGPT
+BASE: 4fb2c1ae46580c8a4cc07369957fec4253c09c38
+SINCE: 2026-09-22T07:32:00Z
+NOTE: EXECUTING Behavioral Read Devices Pass 5. Five-source machine atlas; minimal operator-library/factorization court; full HCC/Coffee Cup/Water mathematical blueprints; assays; conditional S12. Current law supersedes stale Water UNK/INVALID clipboard wording. No Core/RM-A/G1/target/R3/acceptance/implementation movement.
