@@ -1,7 +1,7 @@
-STATUS: HELD
+STATUS: FREE
 STATION: clipboards
 OWNS: docs/clipboards/**
-AGENT: ChatGPT
-BASE: a3d55b0a3372e5446ac5fd87f6dd47671d11b1d5
-SINCE: 2026-09-22T06:42:00Z
-NOTE: EXECUTING Behavioral Read Devices Pass 3 clipboard taxonomy correction. Reclassify technical shelf by source role and expose host/embedder + R3-conditional carrier gaps without reopening completed source campaigns.
+AGENT: -
+BASE: -
+SINCE: -
+NOTE: Behavioral Read Devices Pass 3 technical inventory reconciliation COMPLETE. Technical shelf stratified by source role; Wasm core/browser-host boundary corrected; GAP-HOST explicit; WebGPU/WGSL/WebNN/rustc/Cargo entrances otherwise stood. No source campaign reopened, no target/carrier/RM-A/implementation selected.
