@@ -1,6 +1,6 @@
 # Reference audit — iteration board (six passes)
 
-**Status:** PLAN · nothing executed · each pass below stays `PLAN` until the human says proceed.  
+**Status:** EXECUTED — all six passes, each on the human's per-pass *proceed*, 2026-09-22 · closeout receipt [reference-audit-pass-6-findings.md](reference-audit-pass-6-findings.md) · the register, theses and coverage tables below are the pre-execution board and are not rewritten; the receipts carry the outcomes.  
 **Station:** maps holds this board and the six pass plans. Execution stations, in order: graphics · graphics · law · hologram · maps · coord then maps.  
 **Pinned:** `21652f463b3178075cc9d4568847502766c0304a` (`origin/main` at the maps claim, 2026-09-22). Branch `claude/repo-reference-audit-sie0s7`.  
 **Editor (declared):** Claude Fable 5.1, cloud session, identity `Claude-Fable-reference-audit`. One agent wrote propose / attack / resolve for every finding below; that is not independent review.  

@@ -1,6 +1,6 @@
 # Reference audit — pass 6 plan: closeout — last coord debt, coherence tick, receipt, rulings (coord, then maps)
 
-**Status:** PLAN · not executed.  
+**Status:** EXECUTED — CLOSED · receipt [reference-audit-pass-6-findings.md](reference-audit-pass-6-findings.md).  
 **Stations:** coord (one commit) then maps (one commit). This plan file is maps-owned.  
 **Board:** [reference-audit-iteration-plan.md](reference-audit-iteration-plan.md) · findings RA-C01, RA-L04 · rulings RA-H01–RA-H05.  
 **Pinned:** `21652f463b3178075cc9d4568847502766c0304a`.  
