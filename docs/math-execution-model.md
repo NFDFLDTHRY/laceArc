@@ -1,6 +1,6 @@
 # Mathematical execution model — Lace
 
-**Status:** ROOT / TOUCH / FOLD constructor history + SAMPLING / DENSITY / EMERGENCE reconciliation + Behavioral Read Devices Passes 1–4 (generic S9 + observability/composition S10 + technical realization S11 + canonical-graphics source-fidelity repair), qualified by Alignment Restart Pass 1. **Pointer construction and human-ruled sampling/search are reconciled; canonical `SM-GAP-RM` remains open, with RM-A the primary unresolved retain decision. Pass 4 re-sighted Graphics A–D and repaired bounded source-fidelity wording: Root/occurrence membership are not the full star, set-valued Reach is ancestry membership rather than path multiplicity, WORD route is distinct from all interleaved rows, projection geometry is policy-dependent/read-only, and later behavioral/technical layers remain overlays rather than graphic mechanisms. Browser Wasm host/embedder sourcing remains GAP-HOST; R3 carrier, G1, target and acceptance remain open/unchanged. No Core row, retention rule, target choice, or implementation follows.**
+**Status:** ROOT / TOUCH / FOLD constructor history + SAMPLING / DENSITY / EMERGENCE reconciliation + Behavioral Read Devices Passes 1–5 (generic S9 + observability/composition S10 + technical realization S11 + canonical-graphics source-fidelity repair + behavioral-machine construction S12), qualified by Alignment Restart Pass 1. **Pointer construction and human-ruled sampling/search are reconciled; canonical `SM-GAP-RM` remains open, with RM-A the primary unresolved retain decision. Pass 4 repaired graphics-source fidelity. Pass 5 keeps S9 as the minimal outer device algebra, admits only an optional local machine-operator library, and mathematically defines HCC-A, Coffee Cup, and Water devices with their source-specific opens. The Water blueprint follows current human law: UNK is a nonblocking expected-evidence shape and INVALID requires later refuting evidence. Browser Wasm host/embedder sourcing remains GAP-HOST; R3 carrier, G1, target and acceptance remain open/unchanged. No Core row, retention rule, target choice, or implementation follows.**
 **Campaign:** ROOT / TOUCH / FOLD established LAND/root/RootTouch/binary Join/finite grounding; its provenance-era Pass 6 is retained as history. SAMPLING / DENSITY / EMERGENCE Passes 1–5 establish the later human-ruled 1D+2D sampling/search model; this Pass 6 propagates that active reconciliation.
 **Pass 3:** [plan](plans/math-execution-root-touch-fold-pass-3-plan.md) · [findings](plans/math-execution-root-touch-fold-pass-3-findings.md).  
 **Pass 4 reconciliation:** [plan](plans/math-execution-root-touch-fold-pass-4-plan.md) · [findings](plans/math-execution-root-touch-fold-pass-4-findings.md).  
@@ -1820,3 +1820,321 @@ That remains a separate source surface.
 \]
 
 Target, R3, RM-A, pointer acceptance, implementation and full source-specific behavioral devices remain unchanged/open as previously stated.
+
+
+---
+
+## S12 — Behavioral-machine construction factorization
+
+**Campaign:** Behavioral Read Devices Pass 5.
+**Scope:** reusable mathematical machine operators **inside** the existing S9 read-device boundary. S12 does not add a Core contract, new Lace row, target, carrier, or runtime architecture.
+
+### S12.1 Outer algebra remains S9
+
+A behavioral device remains:
+
+\[
+\mathcal D_\theta
+=
+(Q,G,\Omega,\Delta,\omega).
+\]
+
+Pass 5 found no source-backed reason to enlarge this tuple.
+
+Research machinery factors the internals of \(\Omega\) and \(\Delta\).
+
+### S12.2 Optional local operator library
+
+The reusable library is:
+
+\[
+\boxed{
+\mathfrak M
+=
+\{
+\mathsf{Par},
+\Gamma,
+\mathcal V,
+\Psi,
+\tau,
+\rho
+\}.
+}
+\]
+
+Where:
+
+- \(\mathsf{Par}\): semantic parallel composition of compatible functions;
+- \(\Gamma\): finite candidate generation;
+- \(\mathcal V\): source-specific provenance-bearing check/judgment;
+- \(\Psi\): device-local candidate/frontier transition such as expand, preserve, prune, or backtrack;
+- \(\tau\): stop/control predicate for an inner iterative computation;
+- \(\rho\): source-specific resolution/aggregation that may select, aggregate, preserve a set, or return unresolved.
+
+None is mandatory in every device.
+
+A candidate set:
+
+\[
+\mathcal C\in\mathcal P_f(\mathsf{Cand})
+\]
+
+is device-local working data, not a new S9 field and never Lace.
+
+### S12.3 Candidate/evidence fence
+
+A generated candidate is not an observation:
+
+\[
+\boxed{
+Candidate\neq Evidence.
+}
+\]
+
+A candidate may have empty Lace support.
+
+It gains no SEE-L status merely by:
+- model confidence;
+- survival of search;
+- being the highest-scored candidate;
+- being selected by \(\rho\).
+
+### S12.4 Verifier/truth fence
+
+A checker may be symbolic or model-based.
+
+For judgment \(j=\mathcal V(c,x)\):
+
+\[
+\boxed{
+VerifierScore\neq Truth.
+}
+\]
+
+Neural/model judgments retain their model/local provenance and declared error semantics.
+
+A checker cannot promote a claim's evidence class by itself.
+
+### S12.5 Learned-state authority fence
+
+\[
+\boxed{
+LearnedState\not\Rightarrow LaceFact.
+}
+\]
+
+Embeddings, hidden vectors, scores, classifications, and model representations remain device/implementation state unless separately backed by lawful evidence.
+
+### S12.6 Inner-iteration control
+
+If \(\Psi\) is iterated inside one bounded device computation, an explicit control/termination contract is required:
+
+\[
+\boxed{
+InnerIteration
+\Rightarrow
+ExplicitControl.
+}
+\]
+
+The control may use:
+- success/goal;
+- no change;
+- cycle;
+- finite budget;
+- deadline;
+- source-specific stop condition.
+
+No universal budget is supplied.
+
+Ordinary recurrence across future world events is not an inner search loop and need not halt forever.
+
+### S12.7 Detect/resolution separation
+
+Where a source or algorithm requires alternatives to remain available:
+
+\[
+\boxed{
+Detect\neq Resolve.
+}
+\]
+
+Candidate discovery/checking may preserve multiple hypotheses before \(\rho\).
+
+This separation is optional where the problem is deterministic.
+
+### S12.8 Representation-loss contract
+
+Any derived representation \(R_d\) used by a device must state the distinctions it preserves and drops.
+
+A claim requiring a dropped distinction is invalid.
+
+Pass-4 PATH-1 and VIEW-1 remain binding.
+
+### S12.9 Behavioral-kernel dominance
+
+Generic machine operators cannot invent source semantics:
+
+\[
+\boxed{
+\mathfrak M
+\not\Rightarrow
+\mathcal R_B,
+}
+\]
+
+where \(\mathcal R_B\) is a behavioral source's required relation/transition system.
+
+Therefore the library does not invent:
+- HCC priorities/arbitration semantics;
+- Coffee Cup utility/objective;
+- Water sharedness/refutation semantics.
+
+### S12.10 Witness continuity
+
+Resolution/pruning must retain enough provenance to expose:
+- how a surviving candidate was generated;
+- what checked it;
+- what assumptions affected resolution;
+- the support of every Lace-grounded claim.
+
+S10 EP-1 remains the Lace-support rule.
+
+S12 does not turn candidate provenance into evidence.
+
+### S12.11 HCC-A device
+
+Pass-5 blueprint:
+
+[HCC-A device blueprint](plans/math-execution-behavioral-read-devices-pass-5-hcc-device-blueprint.md).
+
+Current mathematical verdict:
+
+\[
+\boxed{
+\text{HCC DEVICE MATHEMATICALLY DEFINED WITH OPEN PARAMETERS}.
+}
+\]
+
+HCC requires source-semantic parallel:
+
+\[
+RIC\parallel PFC.
+\]
+
+Thus \(\mathsf{Par}\) is required there.
+
+Its local Story Ledger, Meaning, Emotion, Identity and priors live in \(Q_H\), not Lace.
+
+Search/branch/verifier operators are optional.
+
+### S12.12 Coffee Cup device
+
+Pass-5 blueprint:
+
+[Coffee Cup device blueprint](plans/math-execution-behavioral-read-devices-pass-5-coffee-cup-device-blueprint.md).
+
+Current mathematical verdict:
+
+\[
+\boxed{
+\text{CUP DEVICE MATHEMATICALLY DEFINED WITH COUNTERFACTUAL/MODEL OPENS}.
+}
+\]
+
+The device preserves:
+
+\[
+(C,R,T,I,A)
+\]
+
+as simultaneous causal roles.
+
+Search is optional counterfactual machinery.
+
+No scalar optimization objective is supplied by the source.
+
+Live intervention closes at Impact; retrospective counterfactual analysis remains possible only with explicit SEE-CF assumptions.
+
+### S12.13 Water / Dual Proofing device
+
+Pass-5 blueprint:
+
+[Water device blueprint](plans/math-execution-behavioral-read-devices-pass-5-water-device-blueprint.md).
+
+Current human law supersedes two raw-source readings:
+
+\[
+\boxed{
+UNK=\text{nonblocking expected-evidence shape}
+}
+\]
+
+and:
+
+\[
+\boxed{
+INVALID=\text{historically refuted claim with later evidence}.
+}
+\]
+
+Separate holder OBS inventories remain distinct until explicit sharedness/pairing.
+
+Generated candidates cannot become OBS merely by plausibility.
+
+Exact pointability, evidence-shape matching, sharedness and refutation policies remain open.
+
+### S12.14 HCC / Cup / Water composition
+
+Current human law places Coffee Cup and Water inside the broader HCC compiler machine goal.
+
+Pass 5 establishes a type-safe behavioral composition route:
+
+- Cup/Water devices may emit provenance-bearing diagnostics;
+- HCC may consume them as explicit external/local diagnostic inputs;
+- shared Lace does not merge their \(Q\) states;
+- diagnostic output is not a Lace fact;
+- exact scheduling/coupling remains PROJECT-CAND / OPEN.
+
+No literal runtime nesting is selected.
+
+### S12.15 Realization neutrality
+
+S12 chooses no implementation.
+
+Surviving operators may later be realized through:
+- deterministic host/CPU/Wasm compute;
+- bounded search/controller code;
+- model/LLM/WebNN inference;
+- optional parallel/accelerator work;
+- application-local state.
+
+S11 T0–T6 evidence rules still govern every realization claim.
+
+### S12.16 Pass-5 operator verdict
+
+\[
+\boxed{
+\text{COMMON OPERATOR LIBRARY SOUND}
+}
+\]
+
+\[
+\boxed{
+\text{FIXED COMMON CHASSIS UNSOUND}
+}
+\]
+
+\[
+\boxed{
+\text{S9 OUTER DEVICE ALGEBRA REMAINS MINIMAL}
+}
+\]
+
+\[
+\boxed{
+\text{MACHINE CONSTRUCTION PATH ESTABLISHED WITH SOURCE-SPECIFIC OPENS}
+}
+\]
+
+RM-A, G1, target, R3, pointer acceptance and implementation remain unchanged/open.
