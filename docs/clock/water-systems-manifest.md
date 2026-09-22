@@ -2,6 +2,8 @@
 
 **Behavioral-goal clipboard status, clarified by Alignment Restart Pass 4:** **This file is the Water / Dual Proofing source clipboard.** The original explicitly describes **two desired-behavior proofing systems plus an interface**: Proof Ledger (OBS/DELTA/UNK/INVALID), River Proofing (Banks/Rapids/Delta/Crossing), a source-defined structural isomorphism, the Delta Bridge, shared S0–S4 states, F1–F5 routing functions, units of progress, and three still-open forging parameters. Those are source-defined communication/proofing mechanisms, not merely metaphors. They do **not** require OBS/DELTA/UNK/INVALID as Graphic-D row types, nor literal River/FSM implementation objects. Repo clutch/gearing and cross-source meshes remain interpretations unless separately supported. Source-first map: [Pass-4 Water behavior mechanisms](../plans/source-lab-lace-alignment-pass-4-water-behavior-mechanisms.md). Historical readings remain recorded at their original evidence strength.
 
+**Current target semantics — later human ruling, reconciled by Behavioral Read Devices Pass 5/6:** preserve the raw source below as provenance, but do **not** use its blocking-UNK or lexical-INVALID rules as the current machine target. Current law is: **UNK is a nonblocking predicted shape of evidence that would resolve an unknown and may wait for future evidence; INVALID is a prior claim that later evidence has established as wrong.** There is no current lexical INVALID/stop-word table. The current mathematical target is the [Pass-5 Water device blueprint](../plans/math-execution-behavioral-read-devices-pass-5-water-device-blueprint.md). Exact pointability, evidence-shape matching, sharedness, and refutation policies remain open implementation/model parameters.
+
 **Executed passes:** [1](passes/water-pass-1-plan.md) · [2](passes/water-pass-2-plan.md) · [3](passes/water-pass-3-plan.md) · [4](passes/water-pass-4-plan.md) · [5](passes/water-pass-5-plan.md) · [6](passes/water-pass-6-plan.md) — plans in [`passes/`](passes/README.md). A new pass is linked here once it is executed.
 
 ## Overview
@@ -32,7 +34,7 @@ Stamps: `[H]` clutch · `[X]` forbidden as Core type · `[I]` kin-read · `[GAP]
 - **Kind:** Specimen / walk-through
 - **Source location:** Story
 - **Purpose:** Three men, food talk, one word “Narrative,” heat, leave, write, then “pick one thing you can point at.” River metaphor arrives later as the same fact.
-- **Invariants:** From outside it looked like disagreement. From closer: standing in the wrong place. No one had to be malicious or stupid. Heat-lines that could not be touched: “You’re not listening.” “You’re trying to control the conversation.” “This shouldn’t be this hard.” Those left heat. They are INVALID specimens, not new buckets. “I can’t speak here” is FM-A2 in the room.
+- **Invariants:** From outside it looked like disagreement. From closer: standing in the wrong place. No one had to be malicious or stupid. The raw source used heat-lines such as “You’re not listening,” “You’re trying to control the conversation,” and “This shouldn’t be this hard” as INVALID-style specimens. **Current target correction:** wording/heat alone does not establish INVALID; without pointable support these are ungrounded/interpretive claims or prompts for an evidence request, and only later contradictory evidence can establish INVALID. “I can’t speak here” remains FM-A2 in the room.
 - **Failure modes:** Treating the story as Core types or as a moral.
 - **Hands:** `[H]`
 
@@ -60,25 +62,27 @@ Stamps: `[H]` clutch · `[X]` forbidden as Core type · `[I]` kin-read · `[GAP]
 - **Failure modes:** DELTA as an array edge. Fight without two OBS.
 - **Hands:** `[H]` / `[X]` as Graphic D edge
 
-### A-UNK — Unknown
+### A-UNK — Unknown / expected-evidence shape
 
-- **Kind:** Bucket
-- **Source location:** System A §3; I-A3
-- **Purpose:** Something required for understanding that is missing. Must say what would become OBS and which DELTAs that OBS would resolve.
-- **Invariants:** Unresolved UNK blocks coherent comprehension. You cannot push through UNK with confidence or volume.
-- **Failure modes:** UNK as a waiting row on the tape. Volume as append.
-- **Open:** halt-at-any-UNK vs bounded budget — source lists this as unpinned. `[GAP]`
-- **Hands:** `[H]` / `[GAP]` budget
+- **Kind:** Holder-local evidence forecast / waiting dependency
+- **Raw source location:** System A §3; I-A3
+- **Current target purpose:** Name the **shape of evidence** that would resolve an unknown, and which DELTA/question that evidence could resolve.
+- **Current invariant:** UNK is explicit and provenance-bearing but **does not globally block** the machine. Other grounded OBS/DELTA work may continue while the evidence is absent.
+- **Resolution:** When later pointable evidence matching the predicted shape arrives, it may become a new OBS and move the UNK from waiting to filled/retired under the current device policy.
+- **Failure modes:** treating UNK as a Lace row; converting absence into confident fact; erasing the missing-evidence requirement; using volume as proof.
+- **Historical source note:** the original attachment said unresolved UNK blocks comprehension and left halt-at-any-UNK vs bounded budget unpinned. Later human ruling supersedes that target behavior.
+- **Hands:** `[H]` / `[X]` as Graphic-D row
 
-### A-INVALID — Non-computable
+### A-INVALID — Evidence-backed historical refutation
 
-- **Kind:** Bucket
-- **Source location:** System A §4; FM-A3
-- **Purpose:** Statements with no usable payload. Examples: “You’re bad.” “This is stupid.” “Obviously.”
-- **Invariants:** Not wrong. Meaningless until converted into OBS, DELTA, or UNK. Produce heat, no compute. Function: reject and route back — ask for OBS / DELTA / UNK. F5 does not delete.
-- **Failure modes:** INVALID as a WORD value. Treating accusation as structure.
-- **Open:** stop-word list not pinned. `[GAP]`
-- **Hands:** `[H]` / `[GAP]` list
+- **Kind:** Holder/application conclusion with refuting evidence
+- **Raw source location:** System A §4; FM-A3
+- **Current target purpose:** Record that a prior claim has later been established wrong by pointable contradictory/refuting evidence.
+- **Current invariant:** INVALID requires an explicit prior claim plus later evidence and a domain-specific refutation rule. Wording, accusation, urgency, or a lexical pattern is **not sufficient**.
+- **Current routing:** unsupported or non-pointable statements route to evidence request / UNK / unresolved interpretation, not directly to INVALID.
+- **Failure modes:** INVALID as a WORD value; lexical stop-word table; treating a model judgment as refuting evidence; deleting the prior claim instead of preserving its history.
+- **Historical source note:** the original attachment used non-computable/phrase-style examples and left an INVALID pattern list unpinned. That is preserved as source provenance but superseded for the current machine target.
+- **Hands:** `[H]` / `[X]` as Graphic-D row
 
 ### B-Banks
 
@@ -120,11 +124,11 @@ Stamps: `[H]` clutch · `[X]` forbidden as Core type · `[I]` kin-read · `[GAP]
 
 | State | Condition | Allowed |
 |---|---|---|
-| S0 Banks | no shared reference yet | UNK + request OBS; “opposite banks” |
-| S1 Rapids | heat + missing anchors | INVALID on accusations; demand OBS; “crossing impossible” |
-| S2 Delta setup | one pointable element acknowledged | create OBS_A, OBS_B; “crossing can start” |
-| S3 Crossing | DELTA exists; UNKs listed | resolve DELTA / promote UNK → OBS; “we’re crossing” |
-| S4 Bank rebuild | crossing completed | action list from resolved DELTAs; “calm water; proceed” |
+| S0 Banks | no shared reference yet | request pointable evidence; create/maintain UNK evidence shapes; “opposite banks” |
+| S1 Rapids | heat + missing anchors | demand/locate pointable OBS; ungrounded accusations are not automatically INVALID; “crossing impossible” |
+| S2 Delta setup | one pointable element acknowledged | create holder-local OBS_A / OBS_B and explicit sharedness relation; “crossing can start” |
+| S3 Crossing | DELTA exists; relevant UNKs may be listed/waiting | work DELTA; fill a UNK when matching evidence arrives; other grounded work may continue |
+| S4 Bank rebuild | a crossing task is sufficiently resolved for action | action list / changed expectations; “calm water; proceed” |
 
 - **Invariants:** Diagnose location, not people.
 - **Failure modes:** S4 action as P4. S1 talk as progress (FM-B3).
@@ -141,8 +145,8 @@ Stamps: `[H]` clutch · `[X]` forbidden as Core type · `[I]` kin-read · `[GAP]
 | F1 Locate | “feels loud / I can’t speak here / stop meta / you’re bad” | BANKS \| RAPIDS \| DELTA \| CROSSING and a ledger route | where we are |
 | F2 Anchor | a thing we can point at | OBS with pointer metadata | “at delta now” |
 | F3 Pair | two OBS nodes | DELTA node | “crossing possible” |
-| F4 Unknowns | “I don’t understand / missing context / what do you mean?” | UNK naming the required OBS | still too loud; widen delta |
-| F5 Reject | “you’re bad / obviously / that’s stupid” | INVALID + route back to OBS / DELTA / UNK | shouting in rapids |
+| F4 Unknowns | “I don’t understand / missing context / what do you mean?” or another missing dependency | UNK naming the predicted evidence shape and what it would resolve | evidence may be awaited while other grounded work continues |
+| F5* Refute / route | prior claim + later candidate evidence | INVALID only when the evidence and domain rule establish refutation; otherwise request evidence / create UNK / leave unresolved | phrase shape alone never establishes INVALID |
 
 - **Hands:** `[H]` / `[X]` if F2 writes Graphic D
 
@@ -154,14 +158,15 @@ Stamps: `[H]` clutch · `[X]` forbidden as Core type · `[I]` kin-read · `[GAP]
 - **Effects:** Stops grind. Does not cut cord. Does not emit POINTER.
 - **Hands:** `[H]` / `[X]` as emission
 
-### Open parameters (source-marked)
+### Open parameters — source versus current target
 
-- **Kind:** Unpinned tolerances
-- **Source location:** Specs §6
-- **Still open in the attachment:** OBS pointer format; INVALID pattern list; UNK halt vs budget.
+- **Kind:** Source provenance + current implementation/model opens
+- **Raw source location:** Specs §6
+- **Original attachment opens:** OBS pointer format; INVALID pattern list; UNK halt vs budget.
+- **Current target:** only the **pointability/OBS locator format** remains the same kind of open. The lexical INVALID list and semantic halt-vs-budget choice are superseded by later human ruling.
+- **Current remaining opens:** concrete OBS pointer serialization; pointability rule by application; evidence-shape matching; sharedness/acknowledgement rule; domain-specific refutation rule; optional active evidence-search budget.
 - **Examples, not a choice:** quote snippet; timestamp; message id; “the sentence you said: X”.
-- **Invariants:** Marked by the source as degrees of freedom. Pass 1 does not invent them. They are not G2.
-- **Hands:** `[GAP]`
+- **Hands:** `[GAP]` only for the still-open implementation/model policies above
 
 ---
 
@@ -197,9 +202,9 @@ Not therapy. Not a debate framework. Not a power move. Not a spec meant to impre
 
 | ID | Failure |
 |---|---|
-| FM-A1 | Meta without anchors → INVALID to directive thinkers |
+| FM-A1 | Meta without anchors → ungrounded / request pointable evidence; raw source historically called this INVALID-like |
 | FM-A2 | Directive without premises → floating force vector; “can’t speak here” |
-| FM-A3 | Accusation language → INVALID; heat, no compute |
+| FM-A3 | Accusation language → heat/ungrounded interpretation; **not current INVALID without later refuting evidence** |
 | FM-B1 | Start in rapids → confusion amplified; content used as weapons |
 | FM-B2 | Stay on banks → positional warfare; no shared object |
 | FM-B3 | Mistaking motion for progress → talked a lot; zero crossing |
@@ -280,8 +285,8 @@ I-A2: each party has an OBS list. DELTA requires pairing. Not Graphic D. Not HCC
 | conversational signal | speech / writing | F1 | a row |
 | OBS node | F2 | F3, S3 | P3 POINTER |
 | DELTA node | F3 | S3 resolve | Graphic D edge |
-| UNK entry | F4 | S3 (must be listed); blocks S4 while open | a waiting tape row |
-| INVALID | F5 | convert-or-drop | WORD |
+| UNK entry | F4 | relevant DELTA/question; may remain WAITING until matching evidence arrives | a waiting tape row; a global block |
+| INVALID | F5* / refutation rule | preserve prior claim + later refuting evidence | WORD; lexical phrase bucket |
 | action list | S4 | may become πB / C2 | P4 |
 
 Quote / timestamp / message id are §6 examples, not a chosen OBS format. `[GAP]`
@@ -293,14 +298,12 @@ Quote / timestamp / message id are §6 examples, not a chosen OBS format. `[GAP]
 | — | pressure forces engagement | S1 | calling S1 progress |
 | S0 | F2 acknowledged by the other | S2 | pairing with one OBS |
 | S1 | F2 acknowledged (leave loud water) | S2 | F3 in S1 |
-| S1 | F5 only | S1 | treating heat as OBS |
-| S2 | F3 + UNKs listed | S3 | S3 without a pair |
-| S3 | DELTAs worked; UNKs cleared *or* listed under unpinned budget | S4 | S4 with silent UNK |
+| S1 | pointable anchor/sharedness not yet established | S1 or S2 after lawful Anchor acknowledgement | treating heat as OBS or lexical INVALID |
+| S2 | F3 pairing condition established | S3 | S3 without a lawful pair |
+| S3 | relevant DELTA sufficiently worked for the requested action; WAITING UNKs remain explicit | S4 for that resolved crossing task | silently treating a WAITING UNK as resolved evidence |
 | S4 | action done / inventories changed | S0 | S4 as append |
 
-S3→S4 UNK halt vs budget remains `[GAP]`.  
-S3 “resolve” = record the mismatch and/or promote UNK→OBS in talk or writing. Not P4. Not agreement-as-truth.  
-S1 cannot pair (I-B1). INVALID does not advance the FSM.
+Historical source semantics left S3→S4 UNK halt-vs-budget open; **current target no longer uses UNK as a global blocking guard**. S3 “resolve” may record/work a mismatch and fill a UNK only when matching pointable evidence arrives. Not P4. Not agreement-as-truth. S1 cannot pair without lawful shared footing. INVALID is evidence-backed historical refutation and does not advance the FSM by lexical classification.
 
 ## Kernel as a call (pass 4)
 
