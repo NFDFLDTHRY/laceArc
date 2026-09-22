@@ -1,202 +1,163 @@
-# Repo coherence audit — process ASCII prompt
+# Repo coherence audit — standing current-tip process prompt
 
-Paste everything inside the outer box to an agent. **Audit + update-as-you-go.** Hands win. Emission `[GAP]`. No `src/`. No inventing pointer-emission answers.
+**Classification:** STANDING PROCESS. Not Hands. Not law. Not Core. This prompt defines a way to detect drift; it does not authorize edits outside a separately claimed station.
 
-Prior related work (do not ignore): `docs/kit/downstream-audit.md` (pre-integration / enforcement findings).  
-This prompt is a **standing walk** across live tip materials: graphics → law → maps → Shadow → plans → HTML, fixing doc drift as each station passes.
+**Current baseline, 2026-09-22:** the live entry story is `AGENTS.md` → [`context-pass.md`](context-pass.md) → current source/consumer closure, with [Global ASCII Pass 39](../systems-manifest-ascii.md#pass-39--behavioral-read-devices-pass-6--whole-campaign-reconciliation) as the current integration overlay. Earlier A1–A14 coherence ticks are historical campaign records in `docs/coherence-audit-log.md`; do not replay their old hotspot list as the definition of current coherence.
+
+**Current gate:** pointer construction/sampling prose is reconciled but unaccepted; RM-A retain-when remains OPEN / MISSING-A; G1 OPEN; R3 OPEN; TARGET UNDECIDED; GAP-HOST open; exact H×C×W coupling open; no `src/`.
 
 ```
-╔══════════════════════════════════════════════════════════════════════════╗
-║  LACEARC  ·  ASCII PROMPT  ·  COHERENCE AUDIT (UPDATE AS YOU GO)         ║
-║  Hands first · one station per tick · [GAP] sealed · NO src/             ║
-╚══════════════════════════════════════════════════════════════════════════╝
+╔══════════════════════════════════════════════════════════════════════════════╗
+║  LACEARC · COHERENCE AUDIT · CURRENT TIP · FIND DRIFT, DO NOT CREATE LAW  ║
+╚══════════════════════════════════════════════════════════════════════════════╝
 
-  YOU ARE walking the repo for coherence and repairing doc drift when found.
-  YOU ARE NOT filling pointer-emission answers.
-  YOU ARE NOT adding src/, crates.io, or Core operators from Shadow.
-  YOU ARE writing findings into docs/coherence-audit-log.md as you go.
-
-
-                    ┌────────────── READING ORDER (law) ───────────┐
-                    │  shoe → graphics A–D → systems-manifest        │
-                    │  → staking / law-why → AGENTS.md               │
-                    │  → reason-model-map → Shadow/plans/HTML last   │
-                    └──────────────────┬───────────────────────────┘
-                                       │ never reverse
-                                       v
-              STATION → FIND → FIX (docs only) → LOG → NEXT
-
-
-┌──────────────────────────────────────────────────────────────────────────┐
-│ CLIPBOARD                                                                │
-│ laceArc ← coherence audit with live updates                              │
-│ law: Hands > Shadow · update drift · do not invent emission · [GAP]      │
-├──────────────────────────────────────────────────────────────────────────┤
-│ [clip]                                                                   │
-│                                                                          │
-│   ┌────────────────────────────────────────────────────────────────┐     │
-│   │ PAGE 0 — RUN PROTOCOL                                          │     │
-│   │                                                                │     │
-│   │  1. git fetch + ff-only origin/main                            │     │
-│   │  2. If RESYNC FIRED → treat all claims BASE stale; refresh tip │     │
-│   │  3. One STATION per tick (below). Do not boil the ocean.       │     │
-│   │  4. For each finding:                                          │     │
-│   │       KIND: drift | conflict | [GAP] | stale-link | ok         │     │
-│   │       FIX:  edit docs now if Hands-safe; else LOG only         │     │
-│   │  5. Append a row to docs/coherence-audit-log.md                │     │
-│   │  6. Commit only if human asked (or standing ask this session)  │     │
-│   │  7. Push only if human said push                               │     │
-│   │                                                                │     │
-│   │  Agent id: ________   Tip SHA: ________   Date: ________       │     │
-│   └────────────────────────────────────────────────────────────────┘     │
-│                                                                          │
-│   ┌────────────────────────────────────────────────────────────────┐     │
-│   │ PAGE A — STATIONS (walk in order; tick = one letter)           │     │
-│   │                                                                │     │
-│   │  A1  Graphics A–D present + graphics/README cites              │     │
-│   │  A2  systems-manifest vs graphics (Pieces; open [GAP]s)        │     │
-│   │  A3  staking + law-why + AGENTS Implementation Law align       │     │
-│   │  A4  reason-model-map vs five stake KEEP/FORBID                │     │
-│   │  A5  Stake prompts ↔ filled clipboards (all five?)             │     │
-│   │  A6  pointer-emission.md DRAFT-only; no false acceptance       │     │
-│   │  A7  rust-nostd-crate-map ↔ branch-contracts ↔ birth order     │     │
-│   │  A8  gearing 1:1 ↔ contracts-*.js ↔ HTML picks/skin            │     │
-│   │  A9  hologram templates ↔ gearing-html-hologram-restyle law    │     │
-│   │  A10 shadow-clock hologram/agent-brief/contracts prose align   │     │
-│   │  A11 history-recovered-* steward filters still Hands-safe      │     │
-│   │  A12 README contents table ↔ files on disk (no missing links)  │     │
-│   │  A13 CLAIMS/RESYNC coherence (Layer III only)                  │     │
-│   │  A14 downstream-audit.md: which F## still live at this tip?    │     │
-│   │                                                                │     │
-│   │  Mark each: PASS | FIX-APPLIED | OPEN | BLOCKED-[GAP]          │     │
-│   └────────────────────────────────────────────────────────────────┘     │
-│                                                                          │
-│   ┌────────────────────────────────────────────────────────────────┐     │
-│   │ PAGE B — WHAT “COHERENT” MEANS                                 │     │
-│   │                                                                │     │
-│   │  · Same claim in two docs ⇒ same disposition                   │     │
-│   │    (kin / conflict / off-shoe / [GAP])                         │     │
-│   │  · Prompt product path = file that exists (or marked ABSENT)   │     │
-│   │  · Shadow never promoted to Core operator                      │     │
-│   │  · Visual keys ↔ contract keys ↔ 1:1 plan (or noted drift)     │     │
-│   │  · README link target exists                                   │     │
-│   │  · “Accepted” never means “file exists” for emission           │     │
-│   │                                                                │     │
-│   │  NOT required: filling [GAP] · inventing arity · src/          │     │
-│   └────────────────────────────────────────────────────────────────┘     │
-│                                                                          │
-│   ┌────────────────────────────────────────────────────────────────┐     │
-│   │ PAGE C — UPDATE RULES (as you go)                              │     │
-│   │                                                                │     │
-│   │  ALLOWED fixes without new human ask (docs only):              │     │
-│   │    · broken relative links / wrong product paths in prompts    │     │
-│   │    · README row for a file that already exists                 │     │
-│   │    · stale “untracked” / “absent” notes when file is on main   │     │
-│   │    · 1:1 PAGE F notes when HTML pick/skin already changed      │     │
-│   │    · steward filter reminders that repeat existing law         │     │
-│   │                                                                │     │
-│   │  REQUIRES human ask:                                           │     │
-│   │    · changing KEEP/FORBID or staking text                      │     │
-│   │    · accepting pointer-emission                                │     │
-│   │    · adding src/ or Cargo                                      │     │
-│   │    · rewriting graphics / manifest Piece meaning               │     │
-│   │    · clearing RESYNC / force-free shafts                       │     │
-│   │                                                                │     │
-│   │  LOG-ONLY (do not “helpfully” close):                          │     │
-│   │    · true [GAP]s (when / arity / adjacency / identity…)        │     │
-│   │    · conflicts that need a ruling                              │     │
-│   └────────────────────────────────────────────────────────────────┘     │
-│                                                                          │
-│   ┌────────────────────────────────────────────────────────────────┐     │
-│   │ PAGE D — LOG SHAPE (docs/coherence-audit-log.md)               │     │
-│   │                                                                │     │
-│   │  Create if missing. Append only (Rule Zero for the log).       │     │
-│   │                                                                │     │
-│   │  ### tick YYYY-MM-DD · station A__ · tip ________              │     │
-│   │  - finding: …                                                  │     │
-│   │  - kind: drift|conflict|[GAP]|stale-link|ok                    │     │
-│   │  - fix: none | path edited | blocked                           │     │
-│   │  - cites: files…                                               │     │
-│   │  - emission contact: none | silenced → [GAP]                   │     │
-│   │                                                                │     │
-│   │  Never rewrite an earlier tick.                                │     │
-│   └────────────────────────────────────────────────────────────────┘     │
-│                                                                          │
-│   ┌────────────────────────────────────────────────────────────────┐     │
-│   │ PAGE E — FIRST FULL PASS ORDER (suggested campaign)            │     │
-│   │                                                                │     │
-│   │   Week of ticks (serial):                                      │     │
-│   │     Day: A1–A3 Hands spine                                     │     │
-│   │     Day: A4–A6 stakes + emission DRAFT status                  │     │
-│   │     Day: A7 rust plans                                         │     │
-│   │     Day: A8–A10 gearing + hologram skin law                    │     │
-│   │     Day: A11–A14 history + README + RESYNC + downstream F##    │     │
-│   │                                                                │     │
-│   │   After campaign: one summary paragraph in the log             │     │
-│   │   (still append-only). Do not declare Core ready.              │     │
-│   └────────────────────────────────────────────────────────────────┘     │
-│                                                                          │
-│   ┌────────────────────────────────────────────────────────────────┐     │
-│   │ PAGE F — KNOWN HOTSPOTS (check explicitly)                     │     │
-│   │                                                                │     │
-│   │  [ ] Petersen filled clipboard vs prompt-only                  │     │
-│   │  [ ] Prompt write-paths vs actual product filenames            │     │
-│   │  [ ] Plastic-gear HTML vs hologram restyle prompt (pixels)     │     │
-│   │  [ ] pointer-emission Status still DRAFT / not accepted        │     │
-│   │  [ ] branch-contracts PLAN ≠ permission for src/               │     │
-│   │  [ ] Elephant clock / agent-interaction ≠ LACE_CONTRACTS keys  │     │
-│   │  [ ] History FORCE/Onion dual-store language still filtered    │     │
-│   │  [ ] downstream-audit F01 protection claim re-checked live?    │     │
-│   └────────────────────────────────────────────────────────────────┘     │
-│                                                                          │
-│   ┌────────────────────────────────────────────────────────────────┐     │
-│   │ PAGE X — CROSS-CUT                                             │     │
-│   │                                                                │     │
-│   │  temptation              │ Hands deadbolt                      │     │
-│   │  ───────────────────────┼──────────────────────────────────── │     │
-│   │  fill [GAP] to finish   │ LOG only — helpful is the breach     │     │
-│   │  one giant PR           │ one station per tick                 │     │
-│   │  Shadow wins a clash    │ Hands win; Shadow yields             │     │
-│   │  “file exists”=accepted │ only human acceptance for emission   │     │
-│   │  audit as Core work     │ docs/Layer III only until gate       │     │
-│   │                                                                │     │
-│   │  PRODUCT: docs/coherence-audit-log.md (+ small doc fixes)      │     │
-│   │  AFTER each tick: STOP or continue to next station if asked    │     │
-│   └────────────────────────────────────────────────────────────────┘     │
-│                                                                          │
-│ [clip]                                                                   │
-└──────────────────────────────────────────────────────────────────────────┘
-
-
-  FLOW (ASCII)
-
-       fetch/ff main ──► PAGE 0 protocol
-              │
-              v
-         pick next open station A1…A14
-              │
-              v
-         read Hands authorities first
-              │
-              v
-         FIND → FIX if allowed → APPEND log
-              │
-              v
-         STOP (or next station if campaign continues)
-
-
-  FORBIDDEN
-    invent emission · add src/ · paraphrase staking away
-    rewrite old log ticks · promote hologram/cubes to Core
-    close [GAP] with stakes, history, or “obvious” defaults
-
-
-  STEWARD TEST
-    shoe lace in hands, or no.
-    If the fix needs a second store to “make sense,” it is wrong.
-
-
-╔══════════════════════════════════════════════════════════════════════════╗
-║  END ASCII PROMPT — audit coherence; update docs as you go; leave [GAP]  ║
-╚══════════════════════════════════════════════════════════════════════════╝
+  PIN current main
+       |
+       v
+  READ AGENTS -> context-pass -> governing source -> consumer
+       |
+       v
+  CLASSIFY claim/evidence/authority
+       |
+       v
+  FIND drift
+       |
+       +--> owner claimed + bounded fix authorized -> FIX -> gate -> commit
+       |
+       +--> wrong station / human ruling / true open -> LOG / HANDOFF
+       |
+       v
+  append a new audit tick only when maps is separately claimed
+  never rewrite old ticks
 ```
+
+## 1. Current coherence invariants
+
+A live repository surface is coherent only if it preserves all applicable invariants:
+
+### Core / gate
+- Graphics A–D remain the structural source of record.
+- current Core mathematics is S0–S8 plus the manifest mechanism catalog/contract registry.
+- S9–S12 are non-Core read/observability/realization/machine overlays.
+- RM-A retain-when remains OPEN / MISSING-A.
+- G1 tokenization remains OPEN.
+- R3 lifetime/carrier remains OPEN.
+- pointer contract human acceptance remains ABSENT.
+- no `src/` or implementation authority follows from documentation.
+
+### Behavioral machine
+- S9 = minimal read-device algebra; RD-1 no-write.
+- S10 = observability/non-identifiability/provenance court.
+- S12 = optional device-local operators, **not** a fixed common chassis.
+- HCC/Coffee Cup/Water blueprints are mathematical target machinery, not implementations.
+- exact H×C×W coupling/schedule remains OPEN.
+- Candidate != Evidence.
+- Verifier != Truth.
+
+### Water
+- raw blocking-UNK / lexical-INVALID language may remain as source/history.
+- current target UNK is nonblocking expected-evidence shape.
+- current target INVALID requires later pointable refuting evidence.
+- no live target may silently restore a stop-word/invalid-phrase table.
+
+### Technical / target
+- S11 separates Cargo/rustc/Wasm/HOST/WebGPU/WGSL/WebNN planes.
+- GAP-HOST remains explicit until its missing primary source is supplied.
+- compute plane does not determine evidence class.
+- SOURCE-SPECIFIED capability != browser/device execution.
+- compilation target is **TARGET UNDECIDED**.
+- wasm64 is conditional; wasm32 is a candidate, not an accepted answer.
+- Cargo A4 is already available/mapped; “A4 next” is historical.
+
+### Prompt / transport
+- a historical creation ticket must not be replayed over an existing product.
+- a live prompt must route to the current product/current law.
+- a transport copy may be DATED, but must say live law wins.
+- “file exists” or “reconciled” never means “human accepted.”
+
+## 2. Current drift classes to hunt
+
+```
+C1  target silently resealed to wasm64
+C2  A4 advertised as missing / next
+C3  Pass 26–28 or Pass 38 presented as the current whole-repo tip
+C4  S9–S12 absent from a live entrance that claims to explain current machinery
+C5  S9–S12 promoted into Core
+C6  RM-A/G1/R3/GAP-HOST silently closed
+C7  blocking-UNK or lexical-INVALID restored as current Water law
+C8  research shelf described only as forbidden/decorative
+C9  fixed common behavioral chassis resurrected
+C10 Candidate promoted to Evidence
+C11 Verifier/model score promoted to Truth
+C12 blueprint called implementation
+C13 historical creation ticket replayed over an existing product
+C14 transport copy outruns live law without declaring itself dated
+C15 acceptance inferred from file existence/reconciliation
+C16 source capability reported as executed device fact
+C17 cross-station fix made without claiming the owner
+C18 true historical wording “cleaned up” until provenance is lost
+```
+
+## 3. Run protocol
+
+1. `git pull --ff-only origin main`; state the SHA.
+2. Read `AGENTS.md` and `context-pass.md`.
+3. Select **one bounded surface or relation**, not the entire repository by habit.
+4. Use `coord.sh which <path>`; claim the owning station before any edit.
+5. Record each finding as:
+   - path / line or heading;
+   - current claim;
+   - governing source;
+   - class: `drift | conflict | open | historical-ok | current-ok`;
+   - evidence/authority strength;
+   - repair allowed? yes/no and why.
+6. If repair is within the claim and changes no human ruling, fix it.
+7. If it is a true open, human ruling, foreign station, or historical record, preserve it and hand it off.
+8. Gate changed paths before commit.
+9. If a coherence-log tick is part of the authorized task, claim **maps** separately and append only. Never rewrite an earlier tick.
+10. Release the station.
+
+## 4. Historical campaign rule
+
+The old A1–A14 campaign remains evidence about its named tips. It is not deleted and not re-stamped “current.” Old findings such as Petersen-absent, broad arity/emission uncertainty, or old RESYNC state must be read as dated unless a live source independently re-establishes them.
+
+## 5. What an audit may fix without inventing law
+
+When the correct station is claimed and the task authorizes it:
+
+- stale current-status wrappers;
+- wrong product routes;
+- stale “absent/untracked/next” claims contradicted by existing current products;
+- live index descriptions that lag the product they index;
+- missing supersession qualification around preserved historical text;
+- current-target labels that contradict an already-recorded human ruling.
+
+It may **not**:
+
+- create a new Core mechanism;
+- choose RM-A;
+- choose tokenization;
+- choose R3;
+- select wasm32/wasm64;
+- accept the pointer contract;
+- invent H×C×W scheduling;
+- erase raw-source/history because it is no longer current;
+- add `src/`.
+
+## 6. Receipt shape
+
+```
+### tick YYYY-MM-DD · <surface> · tip <sha>
+- finding:
+- class:
+- governing source:
+- evidence scope:
+- fix:
+- station:
+- open gates preserved:
+- next narrow question:
+```
+
+A current audit is successful when the reader can distinguish **current**, **historical**, **open**, **source-only**, **Lab evidence**, and **accepted** without guessing.
+
+A diagram of a hole is not a lid.
