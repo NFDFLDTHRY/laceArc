@@ -1,6 +1,6 @@
 # Mathematical execution model audit — pass 1 plan: census and the human-rulings register
 
-**Status:** PLAN · not executed.  
+**Status:** EXECUTED — CLOSED · receipt [math-execution-audit-pass-1-findings.md](math-execution-audit-pass-1-findings.md) · census [math-execution-audit-pass-1-census.md](math-execution-audit-pass-1-census.md) · register [math-execution-rulings-register.md](math-execution-rulings-register.md). The *Measured* readings below are the pre-execution readings; the receipt §2 corrects the H1–H6 locator claim and the citation count.  
 **Station:** maps.  
 **Board:** [math-execution-audit-iteration-plan.md](math-execution-audit-iteration-plan.md) · findings MA-M01, MA-M13.  
 **Pinned:** `5ffe01156047df01e8cd0823a286b53e89082905`.  
