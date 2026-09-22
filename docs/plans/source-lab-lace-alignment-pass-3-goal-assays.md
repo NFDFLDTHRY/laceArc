@@ -1,6 +1,6 @@
 # SOURCE → LAB → LACE ALIGNMENT — Restart Pass 3 behavioral-goal assays
 
-**Status:** PASS-3 ASSAY REGISTER · specified before tool creation.  
+**Status:** PASS-3 ASSAY REGISTER · SPECIFIED + SELF-TESTED.  
 **Campaign:** Source → Lab → Lace Alignment — restart.  
 **Pass:** 3 — TEST THE DESTINATION.  
 **Authority:** **NON-CANONICAL Lab/alignment evidence.** HCC-A, Coffee Cup, and Water remain the behavioral-goal sources. This register does not redefine them and does not select their internal machinery.  
@@ -373,7 +373,50 @@ Debt is not failure.
 
 ---
 
-## 10. Preliminary Pass-3 verdict before harness execution
+## 10. Assay self-test execution
+
+Committed products:
+- `docs/plans/tools/lace-behavior-assay.py` — GitHub blob `47edcff0da2cc5d24e3d1e24d9f5aefd5a0fed21`;
+- `docs/plans/fixtures/behavioral-goals-assay-controls-v0.1.0.json` — GitHub blob `e3e8745415eb7689b569485cb14143e3d6ff4b3b`.
+
+Before execution, local `git hash-object` matched both GitHub blob SHAs exactly.
+
+Run:
+
+```bash
+python3 docs/plans/tools/lace-behavior-assay.py
+```
+
+Result:
+
+```
+cases=24
+goals=12
+mismatches=0
+exit=0
+```
+
+Every goal has both control polarities:
+- one unlabeled behavioral PASS control;
+- one anti-goal FAIL control, typically carrying convincing source labels.
+
+Therefore:
+- source labels do not make an anti-goal pass;
+- lack of source labels does not make correct behavior fail;
+- all twelve assay predicates can lose.
+
+This proves **assay integrity only**.
+
+It does **not** prove:
+- current Lace satisfies the goals;
+- a holder/application candidate exists;
+- HCC-A/Cup/Water machinery is the implementation;
+- RM-A is solved;
+- passing one bounded fixture identifies the true mechanism.
+
+---
+
+## 11. Pass-3 verdict after assay self-test
 
 ### Goal specification
 
@@ -383,17 +426,17 @@ This is not a claim that every sentence in all three sources has been operationa
 
 ### Assay integrity
 
-**MECHANISM-AGNOSTIC**, specification-level, pending adversarial harness self-test.
+**MECHANISM-AGNOSTIC.** The 24-control self-test passed 24/24: unlabeled good behavior passed and label-mimic anti-goals failed.
 
 ### Current coverage
 
 **BOUNDED BEHAVIORAL COVERAGE / NAMED DEBT.**
 
-There is currently no holder/application candidate whose behavior can justify broad HCC-A/Cup/Water satisfaction claims.
+The bounded coverage is currently **assay coverage**, not holder-success coverage. There is no holder/application candidate whose behavior can justify broad HCC-A/Cup/Water satisfaction claims.
 
 ---
 
-## 11. Stop conditions
+## 12. Stop conditions
 
 This register does not:
 - select HCC/Cup/Water machinery;
