@@ -1983,7 +1983,7 @@ No bucket may impersonate another.
 
 ```
 PRE-FLIGHT
-main + stations + source PDF hash
+main + stations + source file hashes
         |
         v
 CLIPBOARDS
@@ -1993,8 +1993,8 @@ WGSL source re-admission (same existing shelf/hash)
 WebNN source re-admission (same existing shelf/hash)
 rustc book source re-admission (same existing toolchain shelf/hash)
 Cargo Book source re-admission (same existing build-std shelf/hash)
-rustc target
-Cargo build-std
+existing rustc target clipboard / locator carry
+existing Cargo build-std clipboard / locator carry
         |
         v
 MAPS
