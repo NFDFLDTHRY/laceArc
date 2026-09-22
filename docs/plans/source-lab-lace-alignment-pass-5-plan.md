@@ -24,7 +24,7 @@ The question is:
 
 ---
 
-## 0. Newly pinned building material
+## 0. Newly pinned building materials
 
 Human-supplied file:
 
@@ -65,6 +65,49 @@ These facts establish **capability**.
 
 They do not select the project target.
 
+### 0-B — Human-supplied WebGPU host/GPU material
+
+Human-supplied file:
+
+`WebGPU.pdf`
+
+SHA-256:
+
+`6bc31a9e21074a039a5c854f1bfc33bdbf282cd8b48e22a4977ca406ca64afe1`
+
+This exactly matches the source hash already recorded by `docs/clipboards/webgpu-clipboard.md` for the **WebGPU W3C Candidate Recommendation Draft, 15 September 2026**.
+
+Therefore Pass 5 does **not** create a duplicate WebGPU clipboard. The existing shelf is the clipboard; this human-supplied PDF upgrades its source identity for this campaign from historically local/gitignored evidence to a user-supplied source with matching hash.
+
+Pass-5-relevant source facts:
+
+- WebGPU is a host/GPU API, not a Rust/Wasm compilation target;
+- WebGPU has independent adapter/device features and limits;
+- script-owned memory is generally not directly accessible by a GPU driver;
+- data may cross user-agent process boundaries, staging memory, and GPU memory;
+- `GPUBuffer` and binding sizes use 64-bit API size types, but usable resource sizes are separately constrained by device limits and allocation success;
+- portable default `maxBufferSize` is **256 MiB**;
+- portable default `maxStorageBufferBindingSize` is **128 MiB**;
+- adapters/devices may expose better limits, but those are negotiated/observed capabilities, not implied by the integer type;
+- CPU mapping and GPU use are distinct buffer states;
+- WebGPU is exposed in secure Window/Worker contexts, but adapter acquisition can still fail.
+
+New inventory rule:
+
+```
+Wasm linear-memory capacity
+        !=
+GPUBuffer capacity
+        !=
+storage-binding capacity
+        !=
+portable zero-copy shared capacity
+```
+
+A wasm64 decision must therefore not rely on an assumption that a large Wasm resident set automatically becomes an equally large WebGPU working set.
+
+WebGPU remains **Layer III / host-GPU material**. It does not become Core, the authoritative Lace carrier, or a replacement compilation target.
+
 ---
 
 ## 1. Pass-5 thesis
@@ -98,7 +141,7 @@ eq 	ext{browser/device viability}
 
 ---
 
-## 2. The five widths that must not be conflated
+## 2. The six widths/domains that must not be conflated
 
 Pass 5 must explicitly separate:
 
@@ -141,6 +184,16 @@ How much i64-addressed Wasm memory can the actual browser/device instantiate/gro
 The core spec deliberately does not define this ceiling.
 
 This belongs to the Web embedding + actual device.
+
+### W6 — WebGPU resource / binding domain
+
+How much Lace-derived data must be simultaneously visible to one WebGPU operation?
+
+This is independently bounded by `GPUDevice.limits`, including `maxBufferSize`, `maxStorageBufferBindingSize`, buffer-count/binding limits, workgroup limits, and actual allocation success.
+
+The API's 64-bit size fields are not evidence that a multi-gigabyte GPU resource is available.
+
+If Layer III uses WebGPU, Pass 5 must state the GPU-visible window/chunking contract separately from the Wasm linear-memory working set.
 
 ---
 
@@ -340,6 +393,18 @@ Current project emphasis:
 
 Do not silently optimize for desktop Wasmtime if the required deployment is Chrome Android.
 
+### RQ8 — Layer III GPU-visible working set
+
+If WebGPU participates in required projection/view work, determine:
+
+- largest Lace-derived window one GPU operation must consume;
+- whether one buffer/binding must hold it or chunking is lawful;
+- whether results require readback;
+- whether copy/staging cost is acceptable;
+- whether WebGPU is required capability or optional acceleration.
+
+This is a Layer III requirement. It must not rewrite Core semantics or silently choose the authoritative carrier.
+
 ---
 
 ## 6. WebAssembly 3.0 source court
@@ -393,6 +458,109 @@ These require separate material.
 Current core configuration semantics are single-threaded.
 
 Do not infer browser shared-memory availability from the core spec.
+
+---
+
+## 6A. WebGPU source court — host/GPU constraints on the target audit
+
+Re-read the human-supplied `WebGPU.pdf` against the existing WebGPU shelf. Do not convert WebGPU into a compile target or Core authority.
+
+### S-G1 — separate execution/memory domain
+
+The WebGPU memory model distinguishes script-owned memory, user-agent/process transfer, driver/staging memory, and GPU memory. Copies may be required. An implementation may optimize them away, but zero-copy aliasing is not a portable contract.
+
+### S-G2 — 64-bit size type != large portable capacity
+
+WebGPU uses 64-bit size types for several buffer/binding quantities, while separately applying device limits.
+
+Portable defaults relevant to this inventory include:
+
+- `maxBufferSize = 256 MiB`;
+- `maxStorageBufferBindingSize = 128 MiB`;
+- `maxComputeWorkgroupStorageSize = 16 KiB`;
+- `maxComputeInvocationsPerWorkgroup = 256`.
+
+These defaults are source facts, not Pixel measurements.
+
+### S-G3 — actual device limits are evidence
+
+Adapters expose supported limits/features; devices validate against the exact capabilities selected at creation. A user agent may expose better limits or return no adapter.
+
+Therefore Pass 5 must record the actual Pixel adapter/device limits before using WebGPU capacity in a target verdict.
+
+### S-G4 — mapping is not a universal shared-memory bridge
+
+A mapped `GPUBuffer` exposes mapped bytes to host code and has explicit availability/mapping state. GPU work and host mapping are coordinated, not modeled as both sides freely dereferencing one giant shared Lace memory.
+
+### S-G5 — target-selection consequence
+
+WebGPU cannot by itself choose wasm32 or wasm64.
+
+It can falsify an architecture that assumes:
+
+```
+large Wasm memory
+      ->
+equally large one-shot GPU resource
+      ->
+cheap/no-copy GPU projection
+```
+
+The target audit must treat CPU/Wasm resident working set and GPU-visible working set as separate constraints.
+
+### Pass-5 WebGPU probes
+
+#### P-GPU-LIMITS
+
+On the same Pixel/Chrome/install path used for target testing:
+
+- request adapter/device;
+- record adapter and device limits/features;
+- especially `maxBufferSize`, `maxStorageBufferBindingSize`, storage-buffer counts, and compute-workgroup limits;
+- record adapter-null/device-loss failures verbatim.
+
+#### P-GPU-TRANSFER
+
+For bounded Lace-derived windows:
+
+- measure upload/copy time across several sizes;
+- measure compute dispatch separately;
+- measure readback separately if required;
+- repeat with fixed data/workload;
+- record whether extra host allocations/copies are observed by the chosen API path;
+- never promote implementation-specific zero-copy behavior into a portable rule.
+
+#### P-GPU-WINDOW
+
+Determine the largest useful GPU-visible view window that can be legally created/bound and completes within the intended latency/energy envelope.
+
+This probe is Layer III evidence only. It does not select the Lace carrier.
+
+### Pass-5 decision-matrix addition
+
+Add criterion **D15 — WebGPU interop / projection-window fit**:
+
+- required Wasm→GPU window size;
+- number/size of GPU resources and bindings;
+- actual device limits;
+- transfer/readback cost;
+- whether any claimed wasm64 benefit survives the GPU window/copy boundary.
+
+### Additional assumptions to attack
+
+**A-9:** “A giant wasm64 linear memory gives WebGPU one giant equally addressable working set.”  
+Attack: separate resource/binding domain and possible copy/staging boundaries.
+
+**A-10:** “WebGPU uses `GPUSize64`, therefore huge GPU buffers are a portable baseline.”  
+Attack: type width != device limit != successful allocation.
+
+### Additional falsifiers
+
+**F18 — GPUSize64 = practical capacity.** A 64-bit API field is treated as capacity evidence.
+
+**F19 — zero-copy by assumption.** Wasm linear memory is treated as directly GPU-visible without device evidence.
+
+**F20 — WebGPU promotion.** WebGPU becomes a replacement compile target, authoritative Lace carrier, or Core mechanism because it constrains Layer III working sets.
 
 ---
 
@@ -789,7 +957,7 @@ the project has not specified the carrier/working-set/domain requirement suffici
 
 ## 16. Relation to current building-materials inventory
 
-Pass 5 classifies target materials into four buckets.
+Pass 5 classifies target materials into five buckets.
 
 ### CORE WASM MATERIAL
 
@@ -818,6 +986,23 @@ Answers:
 Answers:
 - what the Web environment exposes.
 
+### HOST / GPU MATERIAL
+
+- uploaded WebGPU CRD 2026-09-15;
+- existing WebGPU clipboard / mechanisms;
+- adapter/device limits and features;
+- buffer/binding/mapping/transfer model.
+
+Answers:
+- what Layer III GPU execution can actually expose;
+- how large the GPU-visible window may be;
+- where copy/staging boundaries may exist.
+
+Does **not** answer:
+- Lace semantics;
+- authoritative carrier choice;
+- wasm32 vs wasm64 by itself.
+
 ### DEVICE EVIDENCE
 
 - Pixel 9a probes;
@@ -840,6 +1025,7 @@ main + stations + source PDF hash
         v
 CLIPBOARDS
 Wasm 3.0 source re-admission
+WebGPU source re-admission (same existing shelf/hash)
 rustc target
 Cargo build-std
         |
@@ -861,6 +1047,7 @@ artifact inspection
         v
 DEVICE PROBES
 memory64 / memory32 capacity + cost
+WebGPU limits + transfer/window cost
         |
         v
 EMBEDDER SOURCE
@@ -1008,7 +1195,12 @@ No.
 | G25 | Pass 32–36 preserved |
 | G26 | global ASCII changed last only if needed |
 | G27 | if changed, linear Pass 37 |
-| G28 | all claims released |
+| G28 | uploaded WebGPU CRD hash verified against existing shelf |
+| G29 | GPU resource/binding domain separated from Wasm linear-memory domain |
+| G30 | actual WebGPU adapter/device limits recorded or honestly NOT-RUN |
+| G31 | GPU transfer/window assumptions measured or explicitly conditional |
+| G32 | WebGPU remains Layer III / host-GPU material; no Core or target-swap promotion |
+| G33 | all claims released |
 
 ---
 
@@ -1043,6 +1235,7 @@ WHY THIS TARGET
 WHAT REQUIREMENT IT SATISFIES
 WHAT COST IT ACCEPTS
 WHAT DEVICE EVIDENCE SUPPORTS IT
+WHAT WEBGPU RESOURCE / TRANSFER ASSUMPTIONS IT DEPENDS ON
 WHAT WOULD FALSIFY IT
 WHAT WOULD TRIGGER RE-TARGETING
 ```
@@ -1068,6 +1261,8 @@ It does **not** automatically:
 - choose a memory allocator;
 - accept pointer emission;
 - make WebGPU/WebNN part of Core;
+- treat GPUBuffer / GPUTexture as the authoritative Lace carrier;
+- assume whole-memory zero-copy Wasm↔GPU aliasing;
 - open Pass 6.
 
 The exact question is:
