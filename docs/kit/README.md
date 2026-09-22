@@ -4,7 +4,7 @@ Portable steward controls. Not Hands. Not Graphic D. Nothing here is a source of
 
 | File | Use | Status |
 |---|---|---|
-| [READ_ME_FIRST.md](READ_ME_FIRST.md) | Package door: what the documentation package is and what it does not establish | current reading at `0b2012b`; earlier pins preserved as history; unresolved gate wording exposed — read live [AGENTS.md](../../AGENTS.md) |
+| [READ_ME_FIRST.md](READ_ME_FIRST.md) | Package door: what the documentation package is and what it does not establish | **LIVE current wrapper through Pass 39 / repo-lag Pass 3**; THEN/earlier pins preserved as history; read live [AGENTS.md](../../AGENTS.md) + context pass |
 | [cold-doors.md](cold-doors.md) | Quiet-door register: LIVE / DATED / STALE / PAUSED / SHUT | Pass 1–6 EXECUTED |
 | [cold-doors-pass-1-plan.md](cold-doors-pass-1-plan.md) | Pass 1 plan for that register | EXECUTED |
 | [cold-doors-pass-2-plan.md](cold-doors-pass-2-plan.md) | Pass 2 plan: stamp kit companions behind the package door | EXECUTED |
@@ -44,19 +44,19 @@ Portable steward controls. Not Hands. Not Graphic D. Nothing here is a source of
 | [quiet-door-4-pass-6-plan.md](quiet-door-4-pass-6-plan.md) | Door #4 pass 6: receipt. Close 6/6 | EXECUTED |
 | [quiet-door-4-receipt.md](quiet-door-4-receipt.md) | Door #4 iteration receipt. CLOSED 6/6 | CLOSED |
 | [quiet-door-4-ascii.md](quiet-door-4-ascii.md) | Door #4 ASCII companion. Does not replace live law. Does not fill G2 | CLOSED 6/6 |
-| [agent-control.md](agent-control.md) | Portable standing prompt: the live-law fenced block, then operating controls C01–C12 | September 20 conceptual-reference correction, synchronized in `3861972`; matches [live law](../law-why-these-documents.md) at `0b2012b` |
+| [agent-control.md](agent-control.md) | Portable standing prompt: byte-preserved human-law fence + operating controls C01–C12 + current steward overlay | **LIVE wrapper through Pass 39 / repo-lag Pass 3**; transported law fence remains DATED provenance and was byte-identical to live law at Pass-3 pre-edit tip `0bd0b326` |
 | [agent-task-template.md](agent-task-template.md) | One-task, adjudication, proof-contract and handoff forms | live |
 | [downstream-audit.md](downstream-audit.md) | Dated audit: evidence, failure paths, source corrections, agent challenge cases F01–F12 | dated snapshot at `4fe984b`, re-checked by the coherence audit |
 | [githack-pwa-deploy.md](githack-pwa-deploy.md) | Layer III development install: `rawcdn` + full SHA; production proposal's exception remains unresolved | current install policy; no production permission inferred |
-| [grok-bot-profile.md](grok-bot-profile.md) | Paste blocks for Grok Bot name/job/description, staking explanation, first task | September 20 law block synchronized in `3861972`; matches live law at `0b2012b`; compact profile keeps permanent prohibitions separate |
+| [grok-bot-profile.md](grok-bot-profile.md) | Provider transport: Name/Job/Description + byte-preserved law Explanation + current grounding First Task | **LIVE wrapper through Pass 39 / repo-lag Pass 3**; law transport remains DATED provenance and was byte-identical at `0bd0b326`; first task no longer creates/chooses a next file |
 
-The transport copies carry the law's blocks at the revision they were made; where a copy and [the live law](../law-why-these-documents.md) disagree, the live law wins. At `0b2012b` both fenced blocks match the live block exactly; the existing checker reports law-copy parity as an advisory. This equality does not establish alignment of every surrounding profile sentence or enforcement by an agent harness. Earlier cold-door measurements remain dated records.
+The transport copies carry the law's blocks at the revision they were made; where a copy and [the live law](../law-why-these-documents.md) disagree, the live law wins. **Repo-lag Pass 3 re-extracted the current live-law fence plus both transport fences at pre-edit tip `0bd0b326`: all three were byte-identical (14,616 characters; same extracted content).** The transport provenance remains DATED while the surrounding wrappers are current. The existing checker is advisory; parity does not establish provider enforcement or alignment of unrelated wrapper prose. Earlier cold-door measurements remain dated records.
 
 This station also owns [`.claude/`](../../.claude/README.md) — the hooks and session settings.
 
 [`docs/clock/agent-interaction-model.md`](../clock/agent-interaction-model.md) stays outside this shelf — it is an elephant-clock `[PROPOSAL]`, not a control.
 
-POINTER emission stays `[GAP]`. No `src/`.
+Pointer contract acceptance remains absent; **RM-A retain-when remains OPEN / MISSING-A**. No `src/`.
 
 | [distribution-model.md](distribution-model.md) | **Proposed scope amendment:** recorded human production goal, editor's host interpretation and G1–G7 checks; acceptance of the Pages exception remains unestablished. Does not re-scope the current prohibition or prove perpetual offline behavior |
 | [roles.md](roles.md) | **Roles** (steward, `[PROPOSAL]`): who holds which station and why, each row cited to the census; the joining steps; the actor trailer; what waits on the human. The unsigned-commit count in `check-docs.sh` is advisory and points here |

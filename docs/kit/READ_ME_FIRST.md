@@ -6,7 +6,7 @@ This file is kit, not Hands. Live law is [`AGENTS.md`](../../AGENTS.md) and [`do
 
 **Earlier re-read:** 19 September 2026 against claim BASE `044257ceb95e78612d302a204a9438c72d06aa96`. The emission file then existed as a draft; acceptance and enforcement were not established. This pin records that reading, not the current tip.
 
-**Current reading, Alignment Restart Pass 1:** [`docs/pointer-emission.md`](../pointer-emission.md) is a **reconciled DRAFT, not accepted**. WORD/root/RootTouch/binary Join/finite-grounding plus human-ruled sampling/search are recorded. The canonical `SM-GAP-RM` interface remains open, but latest bounded Lab evidence narrows it: **RM-A retain-when remains open; RM-B is partially closed for selected finite contiguous samples; RM-C is class-specifically closed for RootTouch and contiguous sample grounding.** The earlier arbitrary-selector question survives only as dated campaign history. This package does not resolve or waive the acceptance gate.
+**Current reading, 2026-09-22 — Pass 39 + repo-lag Passes 1–3:** [`docs/pointer-emission.md`](../pointer-emission.md) is a **reconciled DRAFT, not accepted**. WORD/root/RootTouch/binary Join/finite-grounding plus human-ruled sampling/search are recorded. The non-Core current machine court is S9 read devices, S10 observability, S11 realization/evidence, and S12 optional device-local operators; the HCC-A / Coffee Cup / Water mathematical blueprints are not runtime implementations. The canonical `SM-GAP-RM` interface remains open, with **RM-A retain-when OPEN / MISSING-A; G1 OPEN; R3 OPEN; GAP-HOST OPEN; exact H×C×W runtime coupling OPEN; TARGET UNDECIDED; pointer acceptance ABSENT; no `src/`.** Prompt Pass 1 repaired the agent-ticket entrances and Root/Law Pass 2 repaired the GitHub/court entrances. This package does not resolve or waive any gate.
 
 This documentation package supplies controls for local and cloud agents. [CLAUDE.md](../../CLAUDE.md) and [CONTRIBUTING.md](../../CONTRIBUTING.md) explicitly require the control prompt and task forms. AGENTS.md supplies standing orders and requires the context pass. These routes do not prove that every external harness loads or enforces the files.
 
@@ -29,8 +29,9 @@ CLAUDE.md and CONTRIBUTING.md require the control prompt and task templates, sub
 ```text
 Project: NFDFLDTHRY/laceArc.
 Read AGENTS.md and docs/law-why-these-documents.md.
+Read docs/prompts/context-pass.md before the assigned task.
 Read docs/kit/agent-control.md and docs/kit/agent-task-template.md.
-Then follow the law's source-reading order for the assigned task.
+Then follow the law's source-reading order and task-specific source/consumer closure.
 Return a source-specific receipt before proposing Core structure.
 Pointer construction is recorded in a reconciled but unaccepted draft.
 General `SM-GAP-RM` remains open; RM-A is primary. Bounded RM-B/RM-C results remain scoped Lab evidence.

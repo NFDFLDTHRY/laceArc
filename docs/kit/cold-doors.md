@@ -32,7 +32,7 @@ THEN/NOW on the package door is a reading, not a retarget.
 | 7 | Hologram door | `docs/hologram/README.md` | hologram | LIVE | none | Lookrefs and primitives indexed. Not a fifth graphic. |
 | 8 | Gearing door | `docs/gearing/README.md` + `docs/gearing/RESYNC.md` | gearing-meta | LIVE | RESYNC CLEAR at `2026-09-19T04:05:47Z` by Grok-resync-p1 | Shaft protocol live. RESYNC receipt is dated and CLEAR, not a tip pin. |
 | 9 | Coord door | `docs/coord/README.md` | coord | LIVE | none | Claim/release umbrella. Fail closed. |
-| 10 | Graphics door | `docs/graphics/README.md` | law | LIVE | none | Four lossless PNGs named and present at this BASE. Source of record. |
+| 10 | Graphics door | `docs/graphics/README.md` | graphics | LIVE | none | Current coord ownership is `graphics`; four lossless PNGs remain the source of record. Historical Pass-6 text below preserves the earlier discovery that this row still said `law`. |
 
 No row in this table is STALE.
 
@@ -71,8 +71,8 @@ Behind the package door. Same stamps. Live law bytes not edited. Copies not rege
 
 | # | Companion | Path | Stamp | Pin | Evidence |
 |---|---|---|---|---|---|
-| 1 | Standing prompt | `docs/kit/agent-control.md` | DATED | transport regen `e21cf39` | Calls itself a transport copy of the live-law fenced block. Says live law wins where they differ. Does not claim to be the tip. |
-| 2 | Grok paste | `docs/kit/grok-bot-profile.md` | DATED | transport regen `e21cf39` | Same declaration. Points at live law. Size still ≠ live law (R1). Lag is labeled. |
+| 1 | Standing prompt | `docs/kit/agent-control.md` | DATED | transport regen `e21cf39` | Transport provenance remains dated. Pass-3 recheck at `0bd0b326`: human-law fence byte-identical to live law; surrounding steward wrapper reconciled to Pass 39. |
+| 2 | Grok paste | `docs/kit/grok-bot-profile.md` | DATED | transport regen `e21cf39` | Transport provenance remains dated. Pass-3 recheck at `0bd0b326`: Explanation fence byte-identical to live law; surrounding wrapper/First Task reconciled to current grounding. |
 | 3 | Downstream audit | `docs/kit/downstream-audit.md` | DATED | `4fe984bb098d5ca21c9704234df4fddd53056efb` | Header is the THEN pin. Package door already says the body is not rewritten. F10 at that pin: emission file absent; file now exists as DRAFT — the audit records the old observation, it does not pretend the tree is still missing the file. |
 | 4 | Task forms | `docs/kit/agent-task-template.md` | LIVE | none | Version 1.0 forms. Routes to “the current repository law.” Not a law-block copy. |
 | 5 | GitHack deploy | `docs/kit/githack-pwa-deploy.md` | LIVE | none as tip | Layer III deploy law. Host `rawcdn.githack.com` + full SHA; never branch name; never Pages. Matches AGENTS rule 9. |
