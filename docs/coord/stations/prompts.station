@@ -1,7 +1,7 @@
-STATUS: FREE
+STATUS: HELD
 STATION: prompts
 OWNS: docs/prompts/**
-AGENT: -
-BASE: -
-SINCE: -
-NOTE: Restart Pass 5 mandatory-context reconciliation COMPLETE. Active target instruction is TARGET UNDECIDED; target facts route to Pass-5 requirements/audit; historical wasm64 receipts remain dated evidence.
+AGENT: ChatGPT
+BASE: acba1021322bd15bc58c771cd484212e2f6baa10
+SINCE: 2026-09-22T08:34:00Z
+NOTE: EXECUTING Behavioral Read Devices Pass 6 Stage F. Reconcile mandatory context-pass to the current S9-S12 machine story, Pass-4 graphics fidelity, S11/GAP-HOST, Pass-5 blueprints and current Water ruling. No law/Core changes.
