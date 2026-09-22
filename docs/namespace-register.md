@@ -37,7 +37,7 @@ Each station applies this when it next touches a file it owns. **No file is rewr
 
 | Family | Range | Defined in | Station | |
 |---|---|---|---|---|
-| Graphic panel | `A1`–`A13` `B1`–`B12` `C1`–`C12` `D1`–`D6` | the four PNGs; labels assigned by [the manifest](systems-manifest.md) and [the close reading](graphics-close-reading.md) | law | source of record |
+| Graphic panel | `A1`–`A13` `B1`–`B12` `C1`–`C12` `D1`–`D6` | the four PNGs; the numerals `1.`–`13.` / `1.`–`12.` / `1.`–`12.` / `1.`–`6.` are printed on the artwork before each title; the letter prefix is assigned by [the manifest](systems-manifest.md) and [the close reading](graphics-close-reading.md) (qualified by [reference audit pass 5](plans/reference-audit-pass-5-plan.md), 2026-09-22; printed titles are in the [companions](graphics/README.md)) | law | source of record |
 | Manifest Piece | `1`–`15` | [systems-manifest.md](systems-manifest.md) | law | Write **`Piece 5`**, not a bare number outside its source |
 | Manifest open question | `Q1`–`Q12` | [systems-manifest.md](systems-manifest.md) | law | The source uses twelve bare list markers `1.`–`12.`; counted at `docs/systems-manifest.md:462`. The `Q` prefix is a downstream convention and is the form that collides; the bare numerals are list markers, not tokens. **Registered twice until iteration 4 pass 3**, once by each form, which double-counted the family in the headline below |
 | Boundary stamp | `[I]` `[II]` `[III]` `[H]` `[X]` `[GAP]` `[CONFLICT]` `[INFERENCE]` `[PROPOSAL]` `[PLAN]` | [staking](staking-the-workspace.md), [live law](law-why-these-documents.md) | law | |
