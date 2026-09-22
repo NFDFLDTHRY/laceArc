@@ -1,7 +1,7 @@
-STATUS: HELD
+STATUS: FREE
 STATION: maps
 OWNS: docs/reason-model-map.md docs/rust-nostd-*.md docs/atomic-primitives-map.md docs/clock/gearing-code-1to1.md docs/coherence-audit*.md docs/clock/system-mathematical-model.md docs/defrag-plan.md docs/plans/** docs/namespace-register.md docs/*.md (catch-all: any unmatched file at the docs/ root)
-AGENT: Astra-alignment-restart
-BASE: bd37c37c8a21a47822de528f29f2fc0180956f81
-SINCE: 2026-09-22T04:12:00Z
-NOTE: Receipt-finalization only: pin G22 post-release verification after bd37c37c8a21a47822de528f29f2fc0180956f81. All 11 document stations and all 8 gearing shafts read FREE. No semantic edits.
+AGENT: -
+BASE: -
+SINCE: -
+NOTE: Source→Lab→Lace Alignment Restart Pass 2 COMPLETE. Verdict TRACEABLE WITH DEBT / BOUNDED COVERAGE. Pass 34 is final semantic edit; byte-exact Lab reproduction and platform/experiment debt recorded; all claims/shafts verified FREE; RM-A remains MISSING-A; no implementation or acceptance.
