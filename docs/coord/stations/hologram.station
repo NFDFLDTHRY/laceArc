@@ -1,7 +1,7 @@
-STATUS: FREE
+STATUS: HELD
 STATION: hologram
 OWNS: docs/hologram/** docs/clock/**
-AGENT: -
-BASE: -
-SINCE: -
+AGENT: Claude-Fable-reference-audit
+BASE: dc3a03d2d51b46b7ce8e539a39ef4bf19c67f9a6
+SINCE: 2026-09-22T22:18:38Z
 NOTE: Repo-lag Pass 4 hologram execution COMPLETE. Clock/wasm and clock README now state TARGET UNDECIDED; wasm32 historical attempt preserved; wasm64 remains conditional candidate; clock gate summary narrowed. Only two semantic files changed; runtime/viewer/release/pass-history surfaces untouched.
