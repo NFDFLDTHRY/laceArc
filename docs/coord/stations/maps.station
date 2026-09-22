@@ -1,7 +1,7 @@
-STATUS: FREE
+STATUS: HELD
 STATION: maps
 OWNS: docs/reason-model-map.md docs/rust-nostd-*.md docs/atomic-primitives-map.md docs/clock/gearing-code-1to1.md docs/coherence-audit*.md docs/clock/system-mathematical-model.md docs/defrag-plan.md docs/plans/** docs/namespace-register.md docs/*.md (catch-all: any unmatched file at the docs/ root)
-AGENT: -
-BASE: -
-SINCE: -
-NOTE: Lab Source Architecture Pass 6 COMPLETE — CROSS-FAMILY SYNTHESIS NARROWS RM-B / RM-C BUT RM-A REMAINS OPEN. Strongest cross-family RM-A chains C1-C8 all fail at named illegal/missing adapters. Selected contiguous sample occurrences derive ordered existing WORD rows and can be grounded by L-M19, partially closing RM-B; RootTouch and contiguous sample grounding supply class-specific RM-C. RM-A evidence insufficiency certified as MISSING-A: sampling-derived structural evidence -> authority-backed retain decision. Design docket prepared with NO RULING TAKEN. Foundation/law/catalog/harness/fixture unchanged.
+AGENT: Astra-alignment-restart
+BASE: 80b0346fdca5fdd928d9285bf8bb4f6e8b228b11
+SINCE: 2026-09-22T01:50:00Z
+NOTE: Planning only: new Source→Lab→Lace Alignment Restart campaign, Pass 1. Re-anchor current Pass-32/Pass-6 repo against the human vertical architecture. No execution or semantic edits under this claim.
