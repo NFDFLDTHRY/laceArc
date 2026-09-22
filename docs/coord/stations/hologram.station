@@ -1,7 +1,7 @@
-STATUS: HELD
+STATUS: FREE
 STATION: hologram
 OWNS: docs/hologram/** docs/clock/**
-AGENT: ChatGPT
-BASE: 8a203a3436ca77b3861b8a91ba7f690bb7ad3b30
-SINCE: 2026-09-22T08:15:00Z
-NOTE: EXECUTING Behavioral Read Devices Pass 6 Stage C. Reconcile HCC/Cup/Water/train current entrances; substantively repair Water current UNK/INVALID/F4/F5 semantics while preserving raw-source provenance.
+AGENT: -
+BASE: -
+SINCE: -
+NOTE: Behavioral Read Devices Pass 6 Stage C COMPLETE. HCC/Cup clipboards route to current Pass-5 blueprints; Water active UNK/INVALID/F4/F5/FSM semantics follow later human law while raw-source history remains explicit; H×C×W train is qualified as historical/candidate beside current typed diagnostic composition; clock README routes current devices.
