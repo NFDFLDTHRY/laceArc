@@ -2,9 +2,9 @@
 
 **Not the manifest.** [`systems-manifest.md`](systems-manifest.md) is the Hands contract map; this is an ASCII reading of it and settles nothing it does not.
 
-**Current reading qualification, 2026-09-21:** **Pass 37 — Source → Lab → Lace Alignment Restart Pass 5** is the current compilation-target audit overlay. **Pass 36 remains the desired-behavior mechanism layer; Pass 35 remains the mechanism-agnostic assay layer; Pass 34 remains operational traceability; Pass 33 remains vertical authority/context; Pass 32 remains the canonical mechanism catalog; `systems-manifest.md` remains the contract registry.** Pass 37 does not change Core. It separates permanent logical Lace positions from native Wasm pointer width, derives the target requirements before selecting a target, and records the current verdict **TARGET UNDECIDED**. The former sealed-wasm64 reading is now dated history: wasm64 is a conditional capability candidate; wasm32 is a viable lower-burden candidate; neither is accepted architecture. RM-A remains open / MISSING-A and implementation remains closed.
+**Current reading qualification, 2026-09-21:** **Pass 38 — Source → Lab → Lace Alignment Restart Pass 6** is the current supported-domain / carrier / working-set envelope. **Pass 37 remains the compilation-target audit; Pass 36 remains the desired-behavior mechanism layer; Pass 35 remains the mechanism-agnostic assay layer; Pass 34 remains operational traceability; Pass 33 remains vertical authority/context; Pass 32 remains the canonical mechanism catalog; `systems-manifest.md` remains the contract registry.** Pass 38 does not change Core. It separates logical domain, encoded history, authoritative retained history, resident Core bytes, disposable derived working state, and holder/Layer-III state; proves no current mechanism requires whole-history residence; derives backend-neutral carrier/refusal/recovery obligations; and records **SUPPORTED DOMAIN BOUNDED CONDITIONALLY · CARRIER OBLIGATIONS CLOSED WITH RULING DEBT · CORRECTNESS WORKING SET PARAMETRIC · NOT READY FOR TARGET COURT**. Compilation target remains **TARGET UNDECIDED**. RM-A remains open / MISSING-A and implementation remains closed.
 
-**Executed passes:** [1](systems-manifest-ascii-pass-1-plan.md) · [2](systems-manifest-ascii-pass-2-plan.md) · [3](systems-manifest-ascii-pass-3-plan.md) · [4](systems-manifest-ascii-pass-4-plan.md) · [5](systems-manifest-ascii-pass-5-plan.md) · [6](systems-manifest-ascii-pass-6-plan.md) · [7](systems-manifest-ascii-pass-7-plan.md) · [8](systems-manifest-ascii-pass-8-plan.md) · [9](systems-manifest-ascii-pass-9-plan.md) · [10](systems-manifest-ascii-pass-10-plan.md) · [11](systems-manifest-ascii-pass-11-plan.md) · [12](systems-manifest-ascii-pass-12-plan.md) · [13](systems-manifest-ascii-pass-13-plan.md) · [14](systems-manifest-ascii-pass-14-plan.md) · [15](systems-manifest-ascii-pass-15-plan.md) · [16](systems-manifest-ascii-pass-16-plan.md) · [17](systems-manifest-ascii-pass-17-plan.md) · [18](systems-manifest-ascii-pass-18-plan.md) · [19](systems-manifest-ascii-pass-19-plan.md) · [20](systems-manifest-ascii-pass-20-plan.md) · [21](systems-manifest-ascii-pass-21-plan.md) · [22](systems-manifest-ascii-pass-22-plan.md) · [23](systems-manifest-ascii-pass-23-plan.md) · [24](systems-manifest-ascii-pass-24-plan.md) · [25](systems-manifest-ascii-pass-25-plan.md) · [26](plans/lace-context-iter6-pass-3-findings.md) · [27](plans/lace-context-iter7-pass-3-audit.md) · [28](plans/reduction-pass-3-findings.md) · [29](plans/math-execution-root-touch-fold-pass-5-findings.md) · **30 = SAMPLING / DENSITY / EMERGENCE Pass 6 reconciliation** · **[31](plans/lab-source-architecture-pass-1-plan.md) = LAB SOURCE ARCHITECTURE Pass 1 (current source/lab overlay; Core unchanged).** · **[32](plans/manifest-reconciliation-pass-1-plan.md) = MANIFEST RECONCILIATION Pass 1 (current mechanism catalog ↔ contract registry).** · **[33](plans/source-lab-lace-alignment-pass-1-plan.md) = SOURCE → LAB → LACE ALIGNMENT RESTART Pass 1 (current vertical authority/context overlay; Pass 32 catalog preserved).** · **[34](plans/source-lab-lace-alignment-pass-2-plan.md) = SOURCE → LAB → LACE ALIGNMENT RESTART Pass 2 (operational traceability; evidence/debt overlay; Pass 32/33 preserved).** · **[35](plans/source-lab-lace-alignment-pass-3-plan.md) = SOURCE → LAB → LACE ALIGNMENT RESTART Pass 3 (behavioral-goal assays; mechanism-agnostic self-test; no holder/Core promotion).** · **[36](plans/source-lab-lace-alignment-pass-4-plan.md) = SOURCE → LAB → LACE ALIGNMENT RESTART Pass 4 (desired-behavior mechanism recovery; Pass-3 assays retained as projections; implementation open).** · **[37](plans/source-lab-lace-alignment-pass-5-plan.md) = SOURCE → LAB → LACE ALIGNMENT RESTART Pass 5 (compilation-target audit; former wasm64 seal reopened; TARGET UNDECIDED; Core unchanged).**
+**Executed passes:** [1](systems-manifest-ascii-pass-1-plan.md) · [2](systems-manifest-ascii-pass-2-plan.md) · [3](systems-manifest-ascii-pass-3-plan.md) · [4](systems-manifest-ascii-pass-4-plan.md) · [5](systems-manifest-ascii-pass-5-plan.md) · [6](systems-manifest-ascii-pass-6-plan.md) · [7](systems-manifest-ascii-pass-7-plan.md) · [8](systems-manifest-ascii-pass-8-plan.md) · [9](systems-manifest-ascii-pass-9-plan.md) · [10](systems-manifest-ascii-pass-10-plan.md) · [11](systems-manifest-ascii-pass-11-plan.md) · [12](systems-manifest-ascii-pass-12-plan.md) · [13](systems-manifest-ascii-pass-13-plan.md) · [14](systems-manifest-ascii-pass-14-plan.md) · [15](systems-manifest-ascii-pass-15-plan.md) · [16](systems-manifest-ascii-pass-16-plan.md) · [17](systems-manifest-ascii-pass-17-plan.md) · [18](systems-manifest-ascii-pass-18-plan.md) · [19](systems-manifest-ascii-pass-19-plan.md) · [20](systems-manifest-ascii-pass-20-plan.md) · [21](systems-manifest-ascii-pass-21-plan.md) · [22](systems-manifest-ascii-pass-22-plan.md) · [23](systems-manifest-ascii-pass-23-plan.md) · [24](systems-manifest-ascii-pass-24-plan.md) · [25](systems-manifest-ascii-pass-25-plan.md) · [26](plans/lace-context-iter6-pass-3-findings.md) · [27](plans/lace-context-iter7-pass-3-audit.md) · [28](plans/reduction-pass-3-findings.md) · [29](plans/math-execution-root-touch-fold-pass-5-findings.md) · **30 = SAMPLING / DENSITY / EMERGENCE Pass 6 reconciliation** · **[31](plans/lab-source-architecture-pass-1-plan.md) = LAB SOURCE ARCHITECTURE Pass 1 (current source/lab overlay; Core unchanged).** · **[32](plans/manifest-reconciliation-pass-1-plan.md) = MANIFEST RECONCILIATION Pass 1 (current mechanism catalog ↔ contract registry).** · **[33](plans/source-lab-lace-alignment-pass-1-plan.md) = SOURCE → LAB → LACE ALIGNMENT RESTART Pass 1 (current vertical authority/context overlay; Pass 32 catalog preserved).** · **[34](plans/source-lab-lace-alignment-pass-2-plan.md) = SOURCE → LAB → LACE ALIGNMENT RESTART Pass 2 (operational traceability; evidence/debt overlay; Pass 32/33 preserved).** · **[35](plans/source-lab-lace-alignment-pass-3-plan.md) = SOURCE → LAB → LACE ALIGNMENT RESTART Pass 3 (behavioral-goal assays; mechanism-agnostic self-test; no holder/Core promotion).** · **[36](plans/source-lab-lace-alignment-pass-4-plan.md) = SOURCE → LAB → LACE ALIGNMENT RESTART Pass 4 (desired-behavior mechanism recovery; Pass-3 assays retained as projections; implementation open).** · **[37](plans/source-lab-lace-alignment-pass-5-plan.md) = SOURCE → LAB → LACE ALIGNMENT RESTART Pass 5 (compilation-target audit; former wasm64 seal reopened; TARGET UNDECIDED; Core unchanged).** · **[38](plans/source-lab-lace-alignment-pass-6-findings.md) = SOURCE → LAB → LACE ALIGNMENT RESTART Pass 6 (supported-domain / carrier / working-set envelope; TARGET UNDECIDED; NOT READY FOR TARGET COURT; Core unchanged).**
 
 **Authority:** `docs/systems-manifest.md`. Companion, not a replacement.  
 **Hands:** Graphics A–D. Shoe in hands.  
@@ -4544,3 +4544,169 @@ Historical Passes 1–28 keep their then-current G2/Φ stamps. They are provenan
 The companion no longer treats POINTER representation, arity, target kinds, RootTouch, or finite-sample grounding as current unknowns. It also does not pretend the arbitrary chooser has been solved.
 
 **Acceptance remains absent. No implementation authorization follows. No src/.**
+
+
+---
+
+## Pass 38 — Source → Lab → Lace Alignment Restart Pass 6 — supported-domain / carrier / working-set envelope
+
+**Authority:** current Hands/manifest + Pass-5 requirements/audit + current execution/search/branch contracts.  
+**Scope:** finite implementation envelope only. No target, backend, encoding, Index width, RM-A rule, Core implementation or acceptance selected.
+
+~~~
+                 ONE AUTHORITATIVE LOGICAL LACE
+                              |
+                              v
+                SUPPORTED LOGICAL DOMAIN I
+                  finite · no wrap/reuse
+                              |
+               +--------------+--------------+
+               |                             |
+               v                             v
+        ENCODING ENVELOPE E          AUTHORITATIVE HISTORY H
+        WORD / POINTER symbolic              |
+        Index width candidate only           |
+               |                             |
+               +--------------+--------------+
+                              |
+                              v
+                    CARRIER CONTRACT K1-K7
+                 one authority · stable order
+                 append · address/replay
+                 capacity · recovery identity
+                              |
+               +--------------+--------------+
+               |                             |
+               v                             v
+      RESIDENT CORE BYTES R        DERIVED WORKING STATE W
+      simultaneous address space    sampling/search/frontiers
+      target-sensitive              disposable / reconstructible
+               |                             |
+               +--------------+--------------+
+                              |
+                              v
+                   HOLDER / LAYER-III V
+             mutable behavior · GPU · WGSL · WebNN
+                   not authoritative Core
+                              |
+                              v
+                 CAPACITY / REFUSAL BOUNDARY
+             refuse before wrap/reuse/renumber
+             failed append leaves prefix unchanged
+             refused-arrival custody remains OPEN
+                              |
+                              v
+                   RESTART / RECOVERY COURT
+                  volatile OR durable remains R3
+                              |
+                              v
+                   TARGET RE-ENTRY GATE
+                    NOT READY FOR COURT
+                              |
+                              v
+                    TARGET UNDECIDED
+~~~
+
+### Pass-38 domain split
+
+~~~
+D = (I, E, H, R, W, V)
+
+I = logical Index domain
+E = encoded retained-row envelope
+H = authoritative retained history
+R = resident Core bytes
+W = disposable derived Core working state
+V = holder / Layer-III / view state
+~~~
+
+Hard separations:
+
+- permanent logical positions do **not** imply native pointer width;
+- total authoritative history H does **not** imply simultaneously resident R;
+- sampling/search state W is reconstructible and may not become a second Lace;
+- holder and Layer-III state V may be mutable/discardable without becoming Core.
+
+### Pass-38 access / CWS court
+
+| Mechanism | Minimum current access result | Residence result |
+|---|---|---|
+| WORD arrival | tail-local | bounded |
+| seen/root recovery | prefix-scan sufficient in principle | whole residence not required |
+| RootTouch | finite-set(2) + tail | whole residence not required |
+| binary Join | finite-set(2) | whole residence not required |
+| finite grounding | k-parametric selection; constant per Join step | finite != small; whole residence not required |
+| L-M20 sampling | global-derived / prefix / window | parametric; no global table required |
+| L-M21 search | derived frontier/path + point/window reads | parametric; SearchHandle disposable |
+| RM-A | excluded | remains MISSING-A |
+
+No accepted numeric performance SLA exists, so performance working sets remain OPEN and may not be promoted into semantics.
+
+### Pass-38 carrier court
+
+A lawful backend must satisfy K1-K7:
+
+1. one authoritative retained history;
+2. append preserves every earlier position/content pair;
+3. earlier positions remain addressable/replayable;
+4. prefix reads correspond to an actual authoritative prefix;
+5. finite capacity/resident/refusal limits are disclosed;
+6. restart semantics state volatile or durable identity;
+7. interrupted physical writes cannot become fabricated committed rows.
+
+Monolithic resident, bounded-window durable, segmented and volatile carrier classes remain comparison scenarios. No concrete backend is selected.
+
+### Pass-38 refusal / recovery fence
+
+~~~
+arrival
+  |
+capacity preflight
+  |
+  +--> capacity available --> one committed retained row
+  |
+  +--> insufficient -------> REFUSE
+                              |
+                              +--> authoritative prefix unchanged
+                              +--> no wrap/reuse/renumber/truncate
+                              +--> custody/retry policy OPEN
+~~~
+
+Durable mode, if later selected, must recover the same committed prefix with stable positions and treat incomplete tail as absent or detectably non-authoritative. Volatile mode remains source-permitted until R3/product lifetime is ruled.
+
+### Pass-38 Layer-III fence
+
+- WebGPU required window: OPEN / workload-dependent; no whole-history mirror required.
+- WGSL global logical Index representation: not currently required; host pointer width does not become shader pointer width.
+- WebNN required tensor window: no current required workload.
+- none supplies a hidden wasm64 requirement.
+
+### Pass-38 verdict board
+
+~~~
+DOMAIN SPECIFICATION:
+    SUPPORTED DOMAIN BOUNDED CONDITIONALLY
+    exact required cardinality OPEN
+
+CARRIER:
+    CARRIER OBLIGATIONS CLOSED WITH RULING DEBT
+    backend and R3 lifetime OPEN
+
+WORKING SET:
+    CORRECTNESS WORKING SET PARAMETRIC
+    WHOLE-HISTORY RESIDENCE NOT ESTABLISHED
+
+TARGET RE-ENTRY:
+    NOT READY FOR TARGET COURT
+
+COMPILATION TARGET:
+    TARGET UNDECIDED
+
+RM-A:
+    MISSING-A / unchanged
+
+IMPLEMENTATION / ACCEPTANCE:
+    CLOSED / ABSENT
+~~~
+
+Pass 38 narrows the court. It does not award wasm32 or wasm64 a win.
