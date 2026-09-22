@@ -1,7 +1,7 @@
-STATUS: HELD
+STATUS: FREE
 STATION: maps
 OWNS: docs/reason-model-map.md docs/rust-nostd-*.md docs/atomic-primitives-map.md docs/clock/gearing-code-1to1.md docs/coherence-audit*.md docs/clock/system-mathematical-model.md docs/defrag-plan.md docs/plans/** docs/namespace-register.md docs/*.md (catch-all: any unmatched file at the docs/ root)
-AGENT: ChatGPT
-BASE: fee484821a09cff8b03259b22bc1d600a4c4cb3f
-SINCE: 2026-09-22T18:21:00Z
-NOTE: Persisting repo-lag Pass 3 kit control/transport reconciliation plan before execution. Plan only; no kit edits from maps.
+AGENT: -
+BASE: -
+SINCE: -
+NOTE: Repo-lag Pass 3 kit control/transport plan persisted at docs/plans/repo-lag-pass-3-kit-control-plan.md before execution. Maps released; no kit semantics edited under maps.
