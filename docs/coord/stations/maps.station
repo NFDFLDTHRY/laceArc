@@ -1,7 +1,7 @@
-STATUS: HELD
+STATUS: FREE
 STATION: maps
 OWNS: docs/reason-model-map.md docs/rust-nostd-*.md docs/atomic-primitives-map.md docs/clock/gearing-code-1to1.md docs/coherence-audit*.md docs/clock/system-mathematical-model.md docs/defrag-plan.md docs/plans/** docs/namespace-register.md docs/*.md (catch-all: any unmatched file at the docs/ root)
-AGENT: Astra-alignment-restart
-BASE: b926d1b9eebfeca7176cadf3487c675a12cf45ff
-SINCE: 2026-09-21T22:10:00-07:00
-NOTE: Planning only: Source→Lab→Lace Alignment Restart Pass 6. Derive supported logical domain, carrier contract, resident working-set envelope, capacity/refusal, restart/recovery, and target-discriminating premises without selecting a concrete carrier or reopening implementation.
+AGENT: -
+BASE: -
+SINCE: -
+NOTE: Source→Lab→Lace Alignment Restart Pass 6 PLAN recorded and indexed. Pass 6 will bound logical domain, encoding envelope, carrier obligations, correctness/performance working sets, refusal/recovery, and target-discriminating premises, ending in a target re-entry verdict rather than forcing wasm32/wasm64. No implementation or target selection.
