@@ -12,8 +12,16 @@ The worker reports whether SharedArrayBuffer is exposed in an isolated context; 
 
 The original note arrived in commit `5f11c129710626f4c7c5ae15cc8f9828ae89b8fe` with the projection worker. It reported `rustc` present and the `wasm32-unknown-unknown` libcore unavailable in that session, deferred `rustup target add`, and proposed SIMD Wasm as a later drop. Those are the earlier session's environment report and intended work, not a current toolchain measurement or a completed implementation.
 
-## Separate Core target
+## Current Core target court
 
-The repository's proposed Core targets `wasm64-unknown-unknown`, as recorded in [the context pass](../../prompts/context-pass.md#2-where-it-stands-the-gate). That target is separate from the historical wasm32 projection-bake attempt. Core remains gated by human acceptance of [pointer emission](../../pointer-emission.md); the JavaScript viewer, worker, and development service worker do not satisfy that gate or implement the proposed [production distribution model](../../kit/distribution-model.md).
+**Compilation target: TARGET UNDECIDED.** The historical wasm32 projection-bake attempt above is not a target decision, and source/toolchain support for wasm64 does not select wasm64.
+
+- `wasm64-unknown-unknown` remains a **conditional Tier-3 / higher-burden candidate**. Current target requirements do not establish the >4 GiB simultaneously resident Lace requirement that would justify selecting it, and actual toolchain/browser/device proof remains separate.
+- `wasm32-unknown-unknown` remains a **lawful lower-burden candidate**, but current evidence does not prove it sufficient for the eventual supported domain, carrier, working set, or device path.
+- permanent logical Lace positions are not the same thing as Rust/Wasm native pointer width;
+- total persistent Lace history is not required by current law to equal simultaneously resident Wasm linear memory;
+- source-specified capability is not executed build/browser/device evidence.
+
+The current viewer path remains JavaScript and reports `wasm: false`; no `.wasm` module is loaded here. Core also remains gated by human acceptance of [pointer emission](../../pointer-emission.md) and every task-specific premise. This documentation does not choose a target, perform a build/probe, or implement the proposed [production distribution model](../../kit/distribution-model.md).
 
 Current source versus the pinned development build is recorded at the [clock shelf](../README.md#source-evidence-and-release-status-2026-09-20). This documentation update changes neither runtime nor release metadata.

@@ -15,7 +15,7 @@ Moved here in defrag pass 3. Pass plans shelved in restructure phase 5.
 | [gearing-code-1to1.md](gearing-code-1to1.md) | Visual key ↔ code unit; the 47-name bijection |
 | [philosophy-map.md](philosophy-map.md) | Three conceptual references; earlier required-gear interpretation superseded |
 | [agent-interaction-model.md](agent-interaction-model.md) | Elephant clock `[PROPOSAL]` |
-| [system-mathematical-model.md](system-mathematical-model.md) | Hands L + Shadow H; emission `[GAP]` |
+| [system-mathematical-model.md](system-mathematical-model.md) | **Historical dual-universe / Shadow interpretation.** Current Core + read-device/observability/realization/machine mathematics is [`math-execution-model.md` S0–S12](../math-execution-model.md); broad old emission-gap wording in the historical body does not override current constructor/RM-A law |
 
 ## Conceptual-reference manifests
 
@@ -35,13 +35,15 @@ These retain analyses of source concepts and the earlier gear interpretation. Ea
 
 Existing Layer III software replays the fixed eleven-row D1 specimen and displays conceptual-reference interpretations. It does not ingest a strand or decide when to emit a POINTER.
 
+**Current Core compilation target court:** **TARGET UNDECIDED.** Historical wasm32 viewer/toolchain attempts and wasm64 source/capability evidence are different evidence classes; neither selects the Core target. wasm64 remains conditional/high-burden, while wasm32 remains a lower-burden candidate not yet proved sufficient. Viewer behavior is Layer III evidence, not Core execution or target acceptance.
+
 | File | Role |
 |---|---|
 | [lace-projection.html](lace-projection.html) | JavaScript + WGSL WebGPU viewer of D1 time; glyphs ≠ schema |
 | [hcc-a-projection.html](hcc-a-projection.html) | Canvas 2D projection of the HCC-A analysis; persistent conceptual-reference qualification is present in source, browser layout remains unobserved |
 | [projection-bake-worker.js](projection-bake-worker.js) | JavaScript vertex bake with transferable buffers; returns `wasm: false` |
 | [sw.js](sw.js) · [manifest.webmanifest](manifest.webmanifest) | Development PWA shell; historical Android installation evidence is recorded in the deployment policy |
-| [wasm/](wasm/README.md) | Historical wasm32 bake attempt, current JavaScript path, and separate proposed wasm64 Core target |
+| [wasm/](wasm/README.md) | Historical wasm32 bake attempt + current JavaScript path + **current target court: TARGET UNDECIDED**; wasm32 and wasm64 remain unselected candidates at different burden/evidence levels |
 | [Runtime regression checks](tests/README.md) | Built-in Node checks of the current Layer III sources; distinct browser/device completion steps |
 
 ### Source, evidence, and release status (2026-09-20)
@@ -82,4 +84,4 @@ The manifest and service-worker scope are relative to that pinned path. A new co
 - shafts: [`docs/gearing/`](../gearing/README.md)
 - templates: [`docs/hologram/`](../hologram/README.md)
 
-POINTER emission stays `[GAP]`. No `src/`.
+The pointer draft is **reconciled but unaccepted**. **RM-A retain-when remains OPEN / MISSING-A**; G1, R3 and GAP-HOST remain open at their recorded scope. No `src/`.
