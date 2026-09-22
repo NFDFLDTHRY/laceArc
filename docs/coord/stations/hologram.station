@@ -1,7 +1,7 @@
-STATUS: FREE
+STATUS: HELD
 STATION: hologram
 OWNS: docs/hologram/** docs/clock/**
-AGENT: -
-BASE: -
-SINCE: -
-NOTE: Alignment Restart Pass 4 clock entrance correction COMPLETE. HCC/Cup/Water source-defined functional/causal mechanisms are desired-behavior obligations; concrete runtime remains open; repo gear/shaft/clutch/train interpretations remain hypotheses. Historical bodies untouched.
+AGENT: ChatGPT
+BASE: 8a203a3436ca77b3861b8a91ba7f690bb7ad3b30
+SINCE: 2026-09-22T08:15:00Z
+NOTE: EXECUTING Behavioral Read Devices Pass 6 Stage C. Reconcile HCC/Cup/Water/train current entrances; substantively repair Water current UNK/INVALID/F4/F5 semantics while preserving raw-source provenance.
