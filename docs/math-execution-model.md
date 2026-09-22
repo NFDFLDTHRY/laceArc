@@ -1,6 +1,6 @@
 # Mathematical execution model — Lace
 
-**Status:** ROOT / TOUCH / FOLD constructor history + SAMPLING / DENSITY / EMERGENCE reconciliation, qualified by Alignment Restart Pass 1. **Pointer construction and human-ruled sampling/search are reconciled; canonical `SM-GAP-RM` remains open, with RM-A the primary unresolved retain decision. Bounded Lab evidence partially closes RM-B for selected finite contiguous samples and class-specifically closes RM-C for RootTouch / contiguous grounding.**
+**Status:** ROOT / TOUCH / FOLD constructor history + SAMPLING / DENSITY / EMERGENCE reconciliation + Behavioral Read Devices Pass 1 generic S9, qualified by Alignment Restart Pass 1. **Pointer construction and human-ruled sampling/search are reconciled; canonical `SM-GAP-RM` remains open, with RM-A the primary unresolved retain decision. Bounded Lab evidence partially closes RM-B for selected finite contiguous samples and class-specifically closes RM-C for RootTouch / contiguous grounding. Behavioral devices are now admitted mathematically as read-only stateful observers over Lace plus explicit external context; no source-specific device, Core row, retention rule, or implementation follows.**
 **Campaign:** ROOT / TOUCH / FOLD established LAND/root/RootTouch/binary Join/finite grounding; its provenance-era Pass 6 is retained as history. SAMPLING / DENSITY / EMERGENCE Passes 1–5 establish the later human-ruled 1D+2D sampling/search model; this Pass 6 propagates that active reconciliation.
 **Pass 3:** [plan](plans/math-execution-root-touch-fold-pass-3-plan.md) · [findings](plans/math-execution-root-touch-fold-pass-3-findings.md).  
 **Pass 4 reconciliation:** [plan](plans/math-execution-root-touch-fold-pass-4-plan.md) · [findings](plans/math-execution-root-touch-fold-pass-4-findings.md).  
@@ -573,3 +573,355 @@ No second store, sample registry, dimension table, or new row kind is introduced
 **Current steward tests:** no old row is rewritten; all Join refs are backward; every grounded point is itself Lace; repeated Join can ground arbitrary finite selected portions; sampled observation remains distinct from retained append; the sampling surface is derived and distinct from N-D projection; search is read-only/disposable; the exact retention/materialization rule is not invented.
 
 *Shoe in hands. Tie two existing parts with a new piece of the same lace. That new tie is itself something later lace can tie through. Repeat it and a whole chosen portion becomes one point without any part disappearing.*
+
+---
+
+## S9 — Mathematical devices that see into Lace
+
+**Campaign:** Behavioral Read Devices Pass 1 plan; Pass-1 source pressure ledger; Pass-1 generic device algebra.
+
+**Scope:** generic mathematical interface only. HCC-A, Coffee Cup, and Water supplied the pressure tests that earned this section, but their full source-specific devices are not defined here.
+
+### S9.1 Device family
+
+A behavioral read device is a member of a parameterized family
+
+\[
+\mathcal D_\theta
+=
+(Q,G,\Omega,\Delta,\omega),
+\qquad
+\theta\in\Theta.
+\]
+
+Where:
+
+- \(Q\) is mutable **device-local** state;
+- \(G\) is explicit external/context input not claimed to be derivable from Lace;
+- \(\Omega\) is a pure mathematical read over the current Lace prefix;
+- \(\Delta\) updates local device state and returns typed device output;
+- \(\omega\) exposes the witness/provenance of that output;
+- \(\theta\) selects fixed/slow device parameters and is not authoritative Lace state.
+
+For step \(t\):
+
+\[
+o_t
+=
+\Omega_\theta(L_{n_t},q_t,g_t),
+\]
+
+\[
+(q_{t+1},y_t)
+=
+\Delta_\theta(q_t,o_t,g_t),
+\]
+
+\[
+w_t
+=
+\omega_\theta(y_t,o_t,g_t).
+\]
+
+The generic output \(y_t\) may later be specialized as an assertion, diagnosis, request, behavior, or no-output result. These are device output classes, not Graphic-D row kinds.
+
+### S9.2 Why the device has two input domains
+
+The generic device may read Lace, but not every behavioral-source input is guaranteed to live in Lace.
+
+Therefore the model keeps
+
+\[
+L_{n_t}
+\]
+
+and
+
+\[
+g_t\in G
+\]
+
+distinct.
+
+Examples that pressure this separation:
+
+- HCC-A Reality/Interface state may exceed the retained Lace prefix;
+- Coffee Cup Trajectory depends on time and intervention affordances not implied by index distance;
+- Water may depend on another holder's current acknowledgement or live conversational pressure.
+
+Thus:
+
+\[
+\text{not in Lace}
+\not\Rightarrow
+\text{invalid},
+\]
+
+but every claim must distinguish Lace-derived, external, local, and unknown basis.
+
+### S9.3 Base mathematical Lace reads
+
+This section names mathematical read forms, not a new Core query API.
+
+Indexed selection:
+
+\[
+\mathsf{Select}_{L_n}(i)=e_i,
+\qquad
+0\le i<n.
+\]
+
+Ordered prefix fold:
+
+\[
+\mathsf{Fold}_{L_n}(f,s_0)
+=
+f(\cdots f(f(s_0,e_0),e_1)\cdots,e_{n-1}).
+\]
+
+The current higher readings remain derived:
+
+- finite-set read = finite repeated \(\mathsf{Select}\);
+- root/star = current root/occurrence/participation mathematics over the prefix;
+- \(\operatorname{Reach}\) = recursive selection over POINTER ancestry;
+- position×scale sampling = current S3.5 derived computation;
+- star/search frontier = current S3.6 derived read;
+- projection = current S3.7 / Contract-III pure view.
+
+No new store is introduced.
+
+### S9.4 Provenance-bearing observations
+
+A device observation is modeled as
+
+\[
+o=(v,\nu),
+\]
+
+where \(v\) is the observed result and \(\nu\) is sufficient replayable provenance for later witness extraction.
+
+\(\nu\) may use existing disposable prefix/SearchHandle-style machinery.
+
+It is not authoritative history.
+
+### S9.5 Witness algebra
+
+For prefix \(L_n\), witness atoms are
+
+\[
+\mathsf{WAtom}_n
+=
+\mathsf{Lace}(i)
+\uplus
+\mathsf{LacePath}(p)
+\uplus
+\mathsf{External}(e)
+\uplus
+\mathsf{Local}(\ell)
+\uplus
+\mathsf{Unknown}(u).
+\]
+
+Validity requires
+
+\[
+\mathsf{Lace}(i)
+\Rightarrow
+0\le i<n,
+\]
+
+and every index in \(\mathsf{LacePath}(p)\) must also lie in the named prefix.
+
+A witness is finite:
+
+\[
+w\in\mathcal P_f(\mathsf{WAtom}_n).
+\]
+
+Interpretation:
+
+- \(\mathsf{Lace}(i)\): pointable retained row;
+- \(\mathsf{LacePath}(p)\): pointable retained/replayable structural path;
+- \(\mathsf{External}(e)\): pointable non-Lace evidence;
+- \(\mathsf{Local}(\ell)\): holder/device-local state, not shared structural truth;
+- \(\mathsf{Unknown}(u)\): required evidence is absent or unresolved.
+
+This permits mixed evidence without laundering external or local state into Lace.
+
+### S9.6 RD-1 — read-device no-write theorem
+
+Let a device-only step be
+
+\[
+T_{\theta,g}(L_n,q)
+=
+(L_n,q',y,w),
+\]
+
+where
+
+\[
+o=\Omega_\theta(L_n,q,g),
+\]
+
+\[
+(q',y)=\Delta_\theta(q,o,g),
+\]
+
+\[
+w=\omega_\theta(y,o,g).
+\]
+
+Then
+
+\[
+\boxed{
+\pi_L\circ T_{\theta,g}
+=
+\pi_L
+}
+\]
+
+and therefore
+
+\[
+\boxed{
+L_n'=L_n
+}
+\]
+
+for the device step alone.
+
+**Proof.** \(\Omega\) is read-only. \(\Delta\) has codomain \(Q\times Y\). \(\omega\) has witness codomain. None has authoritative Lace state in its codomain. The first component of \(T\) is exactly \(L_n\). Finite composition preserves the same identity on the Lace component. ∎
+
+This is a theorem of the mathematical type separation.
+
+It is not evidence that future code obeys the theorem.
+
+### S9.7 Feedback may produce later input without backward mutation
+
+A behavioral device may affect the external world or request action:
+
+\[
+(L_n,q,R)
+\xrightarrow{\mathcal D}
+(L_n,q',R').
+\]
+
+A later external event may then become a new input and pass through the already-governed Lace growth path:
+
+\[
+R'
+\to
+\text{future input}
+\to
+\mathsf{Arrive}/\mathsf{RootTouch}/[\text{lawful retention if separately established}]
+\to
+L_{n+k}.
+\]
+
+Therefore
+
+\[
+\text{behavioral feedback}
+\neq
+\text{rewrite of prior Lace}.
+\]
+
+### S9.8 RM-A fence
+
+Device output has no automatic retention authority.
+
+In particular
+
+\[
+\text{Meaning},
+\text{Emotion},
+\text{Identity},
+\text{Behavior},
+\text{Impact},
+\text{Aftermath},
+\text{OBS},
+\text{DELTA},
+\text{UNK},
+\text{INVALID},
+\text{Rapids},
+\text{Delta},
+\text{crossability}
+\]
+
+do not become \(\mathsf{Join}\) or another retained Lace section merely because a device computes them.
+
+The active general retention boundary remains
+
+\[
+\boxed{
+\text{RM-A retain-when}=[\mathrm{OPEN}].
+}
+\]
+
+S9 supplies no candidate answer.
+
+### S9.9 Source-pressure results that justify the abstraction
+
+The three source families pressure different parts of the same interface:
+
+- **HCC-A:** requires stateful local interpretation beside a separately preserved structural/evidence path, plus observable behavior and external feedback.
+- **Coffee Cup:** requires local causal-stage/aftermath state and explicit external time/context so index order is not mistaken for elapsed time; Impact evidence must remain pointable after Aftermath.
+- **Water / Dual Proofing:** requires pointability, explicit missing evidence, separate local inventories and routing outputs without equating OBS addressability with a Graphic-D POINTER.
+
+These are pressures on the generic interface.
+
+They do not establish one combined H×C×W runtime.
+
+### S9.10 Stale-Shadow quarantine
+
+The older docs/clock/system-mathematical-model.md remains useful for candidate behavioral notation but does not govern current Core mathematics.
+
+For this campaign:
+
+- HCC parallel RIC/PFC and S0–S7 source mechanisms remain reusable;
+- Coffee Cup five-stage chain remains reusable;
+- the monotone trajectory-window set equation is a source-faithful **device lift**, not a source-supplied equation;
+- Water S0–S4 and F1–F5 source mechanisms remain reusable;
+- historical H×C×W co-presence products remain hypotheses;
+- old Core claims that binary POINTER arity is open or that broad participation/emission is still the active hole are **STALE-CORE** and may not migrate here.
+
+Current S1–S8 win every Core conflict.
+
+### S9.11 What remains open
+
+S9 does not define:
+
+- full \(Q,G,Y,\theta\) for HCC-A;
+- full \(Q,G,Y,\theta\) for Coffee Cup;
+- full \(Q,G,Y,\theta\) for Water;
+- any cross-device composition;
+- source-specific witness admissibility beyond this generic algebra;
+- any concrete device implementation;
+- any performance or carrier choice;
+- RM-A;
+- G1 word identity;
+- pointer-draft acceptance.
+
+### S9.12 Pass-1 verdict
+
+\[
+\boxed{
+\text{DEVICE ALGEBRA SOUND WITH OPENS}
+}
+\]
+
+\[
+\boxed{
+\text{READ-ONLY SEPARATION PROVED}
+}
+\]
+
+\[
+\boxed{
+\text{WITNESS ALGEBRA SUFFICIENT FOR PASS-1 PRESSURE SET}
+}
+\]
+
+Full source-specific behavioral devices are deliberately deferred.
