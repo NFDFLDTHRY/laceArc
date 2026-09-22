@@ -1,7 +1,7 @@
-STATUS: HELD
+STATUS: FREE
 STATION: maps
 OWNS: docs/reason-model-map.md docs/rust-nostd-*.md docs/atomic-primitives-map.md docs/clock/gearing-code-1to1.md docs/coherence-audit*.md docs/clock/system-mathematical-model.md docs/defrag-plan.md docs/plans/** docs/namespace-register.md docs/*.md (catch-all: any unmatched file at the docs/ root)
-AGENT: Astra-alignment-restart
-BASE: 59b96dcc6989123b9777151ce44dd5735692fa2d
-SINCE: 2026-09-21T21:16:00-07:00
-NOTE: Planning-only amendment to Restart Pass 5. Admit human-supplied WebNN CRD 2026-09-10 as matching existing HOST-NN shelf; add independent WebNN tensor/operator/device domain, support-limit and Wasm/WebGPU bridge probes, and target-boundary falsifiers. No WebNN-as-Core, no target change, no implementation gate movement.
+AGENT: -
+BASE: -
+SINCE: -
+NOTE: Restart Pass 5 PLAN amended with human-supplied WebNN CRD 2026-09-10. Source hash matches existing HOST-NN shelf. Plan now separates WebNN tensor/operator/device domain from Wasm pointer and WGSL domains, adds support-limit, int64/uint64, Wasm-buffer, tensor-capacity, WebGPU-export, device-hint and graph-lifecycle probes, plus WebNN falsifiers. No target/Core/carrier/implementation change.
