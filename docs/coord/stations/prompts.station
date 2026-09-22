@@ -1,7 +1,7 @@
-STATUS: FREE
+STATUS: HELD
 STATION: prompts
 OWNS: docs/prompts/**
-AGENT: -
-BASE: -
-SINCE: -
-NOTE: Alignment Restart Pass 1 prompt alignment COMPLETE. Mandatory context now states the source→clipboard→Lab→Lace→platform model, distinguishes Lab retain-evidence from Lace retention, and carries RM-A open with bounded/class-specific RM-B/RM-C evidence. No acceptance or implementation.
+AGENT: Astra-alignment-restart
+BASE: b016d31d1bb5964a2af0bef0ec9eea967722d8a2
+SINCE: 2026-09-21T20:42:00-07:00
+NOTE: Alignment Restart Pass 4. Correct mandatory context so source-defined desired-behavior mechanisms remain binding behavioral obligations while concrete implementation stays open; qualify Pass-3 assays as projections, not whole target models.
