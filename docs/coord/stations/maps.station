@@ -1,7 +1,7 @@
-STATUS: FREE
+STATUS: HELD
 STATION: maps
 OWNS: docs/reason-model-map.md docs/rust-nostd-*.md docs/atomic-primitives-map.md docs/clock/gearing-code-1to1.md docs/coherence-audit*.md docs/clock/system-mathematical-model.md docs/defrag-plan.md docs/plans/** docs/namespace-register.md docs/*.md (catch-all: any unmatched file at the docs/ root)
-AGENT: -
-BASE: -
-SINCE: -
-NOTE: Behavioral Read Devices Pass 5 COMPLETE. Five-source research shelf mapped into coherent machine-construction material; fixed common chassis refuted; S9 remains minimal; optional Par/Generate/Check/Advance/Stop/Resolve library admitted as S12; full HCC/Coffee Cup/Water mathematical blueprints and assays pass; Water follows current human UNK/INVALID law and exposes stale clock-clipboard wording for later clock-station reconciliation. 30/30 falsifiers held. RM-A/G1/target/R3/acceptance/implementation unchanged.
+AGENT: ChatGPT
+BASE: 7256d25c61e3f697f2e15849ae2d80bab646ed03
+SINCE: 2026-09-22T07:57:00Z
+NOTE: PLANNING Behavioral Read Devices Pass 6 whole-campaign reconciliation. Audit Passes 1-5 as one system against living repo entry surfaces, classify stale-vs-historical documents, and plan multi-station propagation without new theory or Core movement.
