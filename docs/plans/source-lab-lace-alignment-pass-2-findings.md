@@ -234,6 +234,8 @@ It adds:
 
 No Core mechanism or authority class was created.
 
+**Coordination verification:** after maps release commit `bd37c37c8a21a47822de528f29f2fc0180956f81`, direct reads confirmed FREE status for clipboards, coord, gearing-meta, graphics, history, hologram, kit, law, maps, prompts and renderer stations, plus audits, axle, cells, escape, gears, trainA, trainB and trainC gearing shafts. This receipt-finalization claim changes only the findings receipt and is released immediately afterward.
+
 ---
 
 ## 9. Station disposition
@@ -308,7 +310,7 @@ No gearing shaft was required.
 | G19 global ASCII changed last | PASS |
 | G20 companion delta is linear Pass 34 | PASS |
 | G21 experiment-debt register present | PASS |
-| G22 all claims released | **PENDING final maps release** |
+| G22 all claims released | **PASS** — release commit `bd37c37c8a21a47822de528f29f2fc0180956f81`; direct post-release reads confirmed all 11 document stations FREE and all 8 gearing shafts FREE |
 
 ---
 
