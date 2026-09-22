@@ -50,15 +50,15 @@ B map complete. C map four-pass complete. G2 still `[GAP]`.
 
 ---
 
-## Iteration 3 — not opened this tick
+## Iteration 3 — opened 2026-09-22 by the reference audit
 
-Leftover from iteration 2, in order. These would be **iteration 3 passes 1–6**, not C-pass-7. Do not start them from the i2 receipt.
+Leftover from iteration 2, in order. These are **iteration 3 passes 1–6**, not C-pass-7. Opened on the human's word *"proceed with pass 1"* for [reference audit pass 1](../plans/reference-audit-pass-1-plan.md), which read *"pay special attention to the 4 graphics"* as naming the D companion (board ruling RA-H05). Pass 3 below is carried by [reference audit pass 2](../plans/reference-audit-pass-2-plan.md) when the human says proceed for it.
 
 | i3 pass | Act | Plan on disk |
 |---|---|---|
-| 1 | Graphic D ASCII spine (if named) | not written |
-| 2 | D fields | not written |
-| 3 | printed A/B/C numbers if recovered | not written |
+| 1 | Graphic D ASCII companion (header, D1–D6, key properties, footer) **EXECUTED** | [`graphic-d-ascii.md`](graphic-d-ascii.md) · plan [reference-audit-pass-1](../plans/reference-audit-pass-1-plan.md) |
+| 2 | D fields | carried inside pass 1's companion (Fields table); no separate pass |
+| 3 | printed A/B/C/D numbers — recovered: all four PNGs print their panel numerals; the letter is the repository's | D recorded in pass 1; A/B/C queued to [reference-audit-pass-2](../plans/reference-audit-pass-2-plan.md) (PLAN) |
 | 4–6 | leftover Hands-silent `[GAP]`s — point, do not fill G2 | not written |
 
 ---

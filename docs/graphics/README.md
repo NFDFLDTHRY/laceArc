@@ -17,6 +17,8 @@ Graphic B ASCII companion (iteration 1 passes 5–6 + i2p1–p2): [`graphic-b-as
 
 Graphic C ASCII companion (iteration 2 passes 3–6): [`graphic-c-ascii.md`](graphic-c-ascii.md). Does not replace the PNG. Does not fill G2 or C6 vs D.
 
+Graphic D ASCII companion (reference audit pass 1, 2026-09-22): [`graphic-d-ascii.md`](graphic-d-ascii.md). Header, D1–D6, the nine key properties and the footer rule as printed; D1 rows diffed clean against the close reading and the D1 fixture. Does not replace the PNG. Does not fill G2, slot order or G1.
+
 Iteration law + queue: [`ascii-iterations.md`](ascii-iterations.md). Iteration 1 receipt: [`ascii-iteration-1-receipt.md`](ascii-iteration-1-receipt.md). Iteration 2 receipt: [`ascii-iteration-2-receipt.md`](ascii-iteration-2-receipt.md). Six passes close an iteration. Leftovers are the next iteration, not pass 7.
 
 Prefix-device: [pass 1](prefix-device-pass-1.md) lens. [pass 2](prefix-device-pass-2.md) collisions. [pass 3](prefix-device-pass-3.md) Q0 opened. [pass 4](prefix-device-pass-4.md) nuance map. [pass 5](prefix-device-pass-5.md) Φ-morphism. [pass 6](prefix-device-pass-6.md) algebra fidelity. Do not replace the PNGs. Do not fill G2. Do not stamp SPOKEN from the map.
