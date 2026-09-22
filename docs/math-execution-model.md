@@ -35,6 +35,8 @@ Steward line: *Every arrival adds wire. Unseen wire becomes its root. Seen wire 
 | G1 word-equality policy | **Open** |
 | pointer-emission.md accepted as a whole | **No** |
 | Permission to add src/ | **No** |
+| Where each ruling H1–H12 is quoted, and by whom it is cited | [rulings register](plans/math-execution-rulings-register.md) — maps companion, DERIVED, not law (audit pass 1) |
+| Which results are proved, from which premises, and what would refute them | [theorem register](math-execution-model-theorems.md) — DERIVED companion (audit pass 2); the lemma blocks in S1.3–S4.3, S9.6, S10.3 are the record |
 
 The old monolithic POINTER-emission blocker was first split into constructor/grounding plus a presumed relation-provenance question. H7–H12 supersede that premise as the active model: **sampling discovers structure. The remaining primary hole is RM-A retain-when, not a semantic chooser.** Later bounded Lab work shows that some materialization/order cases can proceed once RM-A has selected the object; those partial closures do not supply RM-A or a universal topology-identification rule.
 
@@ -139,6 +141,8 @@ Every successful word arrival lands:
 
 Let \(j=|L|\) before landing and \(L_1=\mathsf{Arrive}(v)(L)\).
 
+*Pointer (audit pass 3).* **Successful** presupposes a refusal path, which this model does not define and which is not a Core row: an arrival the finite realization cannot take is REFUSE in [the reduction execution model](plans/reduction-pass-2-execution-model.md) (X3, under ruling R4: nothing changes, custody of the arrival stays outside Lace), and the finite refusal boundary before any unsupported mutation is the lab-source Pass-6 [capacity / refusal contract](plans/source-lab-lace-alignment-pass-6-capacity-recovery.md). Arrive below is the successful case only.
+
 ### Unseen arrival
 
 H4 closes the prior structural boundary:
@@ -223,6 +227,8 @@ and, once participation beyond isolated WORD occurrences exists,
 }
 \]
 
+*Label (audit pass 3).* The two boxes above are **STAR-1**, defined in the Pass-4 [star / projection fidelity artifact](plans/math-execution-behavioral-read-devices-pass-4-star-projection-fidelity.md) §1–§2: a GFX-backed fidelity fence (D5, A12, B9) over a read the model does not define formally, hence not a theorem ([theorem register](math-execution-model-theorems.md) §3).
+
 \(\mathrm{FullStar}\) is a read concept over recorded passages/participation, not a stored Star row or side table.
 
 ### S3.2 Sequence as route
@@ -243,7 +249,7 @@ where each \(e_{i_j}\) is a WORD row. Its value trace is:
 \mathsf{ValueTrace}(L)=(v_{i_1},\ldots,v_{i_k}).
 \]
 
-No sentence container is added. Adjacency does **not** fire Φ (emission Q3 CLOSED). Leftover adjacency is emission Q3 **SPOKEN** as arrival order on the wire (B5), not a stored relation — **not accepted**, **not calculated**.
+No sentence container is added. Adjacency does **not** fire Φ (emission Q3 CLOSED; Φ is the historical emission notation of the pointer draft, kept for dated receipts — the current physical constructor is Join, S1.3 and S4.1 — and Q3 CLOSED stands under it). Leftover adjacency is emission Q3 **SPOKEN** as arrival order on the wire (B5), not a stored relation — **not accepted**, **not calculated**.
 
 ### S3.3 Seen-root touch is Join
 
@@ -309,6 +315,8 @@ Yet \(\operatorname{Reach}(0010)\) contains 0000 only once. Therefore:
 \operatorname{ReachMembership}\neq\operatorname{PathMultiplicity}.
 }
 \]
+
+*Label (audit pass 3).* The box above is **PATH-1**, defined in the Pass-4 [D1 path audit](plans/math-execution-behavioral-read-devices-pass-4-d1-path-audit.md) §7 and proved below as Lemma L4 (`PROVED_WITHIN_SCOPE`, [theorem register](math-execution-model-theorems.md)).
 
 Reach must not be substituted for the full star/route/threading structure shown by A8/A12/B9/C8. When path distinction matters, a derived read must preserve explicit ordered witness paths/frontiers; S3.6 does so without creating a second store.
 
@@ -471,6 +479,8 @@ B11/C11 directly forbid treating a flat node-edge graph as the full Lace:
 \mathsf{FlatGraphView}(L)\neq\mathsf{FullLaceStructure}(L).
 }
 \]
+
+*Label (audit pass 3).* The box above is **VIEW-1**, defined in the Pass-4 [star / projection fidelity artifact](plans/math-execution-behavioral-read-devices-pass-4-star-projection-fidelity.md) §6 and cited by name in S12.8: a B11/C11 fidelity fence over a read the model does not define formally, hence not a theorem ([theorem register](math-execution-model-theorems.md) §3).
 
 Graphic-C 2D projection is also distinct from S3.5's later H7–H12 position×scale sampling surface. The former presents already-recorded participation; the latter is HUMAN/DERIVED discovery machinery.
 
@@ -638,8 +648,8 @@ Grounding then uses the same Join constructor on whatever finite sample / portio
 | seen occurrence touches root? | **CLOSED by H1** |
 | physical POINTER row shape? | **CLOSED in this model: binary Join** |
 | POINTER→POINTER? | **CLOSED** |
-| arbitrary finite sample representable by one point? | **PROVED** |
-| one new row for \(n+1\) sample extension? | **PROVED / H6-grounded** |
+| arbitrary finite sample representable by one point? | **PROVED_WITHIN_SCOPE** — Theorem G (S4.2, restated); premises: Reach, Join under the operand condition (Lemmas L1, L2); scope: an already-selected sample, not a selection rule |
+| one new row for \(n+1\) sample extension? | **PROVED_WITHIN_SCOPE** — Theorem G restated (exactly one row per step); H6 is the warrant for adopting the ladder, not a proof premise |
 | one global row per cardinality? | **REFUSED** — collapse |
 | N-D requires second store? | **REFUSED** — projection only |
 | exact sampling-derived retention/materialization rule? | **[GAP]** — sampling discovers structure, but the universal retain-when/materialize-operand condition is not established |
@@ -690,6 +700,8 @@ Piece 12 (dimension) is a **reading of I**, not Contract IV. The H7–H12 2D sam
 
 No Core write-query / delete / transaction / multi-Lace interface is supplied by Hands. The mapped star-search expansion operations are derived read operations only.
 
+*Pointer (audit pass 3).* The whole-app execution model — state Σ over the triple (L, h, K), with hopper h and carrier K outside Core state, six small-step transitions of which STEP and REFUSE's Core half are Core, and the invariants and theorems over them — is [the reduction execution model](plans/reduction-pass-2-execution-model.md) (X2–X5), read under its own *ROOT / TOUCH / FOLD Pass 5 — current execution qualification*. Refusal (REFUSE, ruling R4) and the carrier ruling R3 live there and in the lab-source Pass-6 capacity / refusal contract; Contract II's *successful* arrival is the arrival that was not refused. Nothing in that model adds a Core row or a second store.
+
 ---
 
 ## S6 — Forbidden morphisms \`[X]\`
@@ -729,7 +741,7 @@ These remain forbidden by later project law or current open-boundary discipline,
 | POINTER→POINTER | D6 / C7 | recursive grounding |
 | sample size | H6 | selected-point cardinality, not pointer arity or Reach size |
 | \(n+1\) row | H6 | each sample extension appends one Join row |
-| arbitrary finite portion to one point | H5 | proved by repeated Join |
+| arbitrary finite portion to one point | H5 | PROVED_WITHIN_SCOPE by repeated Join (Theorem G, S4.2; theorem register) |
 | whole-prefix point | H2 + D1 0010 | constructive theorem + bounded witness |
 | N-D dot view | H6 + C5/C7/C8/C11 | projection of recursive points, not store |
 | multiple grouping trees | Rule Zero / no collapse | retained as distinct Lace history; no canonicalization required by current sources |
@@ -1087,14 +1099,16 @@ The older docs/clock/system-mathematical-model.md remains useful for candidate b
 
 For this campaign:
 
-- HCC parallel RIC/PFC and S0–S7 source mechanisms remain reusable;
+- HCC parallel RIC/PFC and S0–S7 source mechanisms remain reusable (**HCC phases** S0–S7, not sections of this file);
 - Coffee Cup five-stage chain remains reusable;
 - the monotone trajectory-window set equation is a source-faithful **device lift**, not a source-supplied equation;
-- Water S0–S4 and F1–F5 source mechanisms remain reusable;
+- Water S0–S4 and F1–F5 source mechanisms remain reusable (**Water states** S0–S4, not sections of this file);
 - historical H×C×W co-presence products remain hypotheses;
 - old Core claims that binary POINTER arity is open or that broad participation/emission is still the active hole are **STALE-CORE** and may not migrate here.
 
 Current S1–S8 win every Core conflict.
+
+*Qualifier (audit pass 3).* In this file `S0`–`S12` are section numbers. The HCC clipboard's phases `S0`–`S7` and the Water blueprint's states `S0`–`S4` share the letter and are always written with their owner's name here; the [namespace register](namespace-register.md#collisions-and-how-to-tell) records the collision.
 
 ### S9.11 What remains open
 
@@ -1130,6 +1144,8 @@ S9 does not define:
 \text{WITNESS ALGEBRA SUFFICIENT FOR PASS-1 PRESSURE SET}
 }
 \]
+
+*Stamp (audit pass 3).* *READ-ONLY SEPARATION PROVED* is RD-1 (S9.6): `PROVED_WITHIN_SCOPE`, premises in its pass-2 note, scope the typed algebra only. The other two boxes are pass verdicts, not results ([theorem register](math-execution-model-theorems.md) §0).
 
 Full source-specific behavioral devices are deliberately deferred.
 
@@ -1425,6 +1441,8 @@ In particular:
 S0\text{--}S7\text{ runtime flow}.
 \]
 
+*Qualifier (audit pass 3).* `S0`–`S7` in the display above are the **HCC phases** of the conceptual source, not sections of this file.
+
 The structural evidence path must remain replayable independently of prior-conditioned interpretation.
 
 ### S10.11 Coffee Cup descriptive shape
@@ -1531,6 +1549,8 @@ Cross-source compatibility is not runtime identity.
 \text{SOURCE ARCHITECTURES MAPPED WITHOUT FUSION}
 }
 \]
+
+*Stamp (audit pass 3).* *OBS-1 PROVED WITH SOURCE WITNESSES* joins two stamps: the OBS-1 conditional (S10.3) is `PROVED_WITHIN_SCOPE`, premises in its pass-2 note; the three S10.4 witnesses are `DERIVED` from readings of the conceptual sources, not proved ([theorem register](math-execution-model-theorems.md)). The other three boxes are pass verdicts, not results.
 
 Full HCC-A, Coffee Cup, and Water device equations remain deliberately deferred.
 
@@ -1673,6 +1693,8 @@ HOST\!-\!1:
 \text{host dependence proved}.
 }
 \]
+
+*Stamp (audit pass 3).* HOST-1 is `DERIVED`: the implication above is sound, and its premise — no embedding API, no ambient access — is a reading of the WebAssembly core specification at evidence rung \(T_0\), so *proved* in the box overstates by one rung ([theorem register](math-execution-model-theorems.md)).
 
 The concrete browser binding remains:
 
@@ -1918,6 +1940,8 @@ That remains a separate source surface.
 }
 \]
 
+*Stamp (audit pass 3).* *HOST DEPENDENCE PROVED* and *ACCELERATOR NON-AUTHORITY PROVED* are HOST-1 and ACCEL-1: both `DERIVED` from cited source readings, neither `PROVED_WITHIN_SCOPE` ([theorem register](math-execution-model-theorems.md)). The other four boxes are pass verdicts, not results.
+
 Target, R3, RM-A, pointer acceptance, implementation and full source-specific behavioral devices remain unchanged/open as previously stated.
 
 
@@ -2068,7 +2092,7 @@ Any derived representation \(R_d\) used by a device must state the distinctions 
 
 A claim requiring a dropped distinction is invalid.
 
-Pass-4 PATH-1 and VIEW-1 remain binding.
+Pass-4 PATH-1 and VIEW-1 remain binding (PATH-1: the S3.4 box, Lemma L4, defined in the [D1 path audit](plans/math-execution-behavioral-read-devices-pass-4-d1-path-audit.md) §7; VIEW-1: the S3.7 box, defined in the [star / projection fidelity artifact](plans/math-execution-behavioral-read-devices-pass-4-star-projection-fidelity.md) §6).
 
 ### S12.9 Behavioral-kernel dominance
 
@@ -2237,3 +2261,27 @@ S11 T0–T6 evidence rules still govern every realization claim.
 \]
 
 RM-A, G1, target, R3, pointer acceptance and implementation remain unchanged/open.
+
+---
+
+## Current steward receipt — 2026-09-22 (audit pass 3)
+
+*Unnumbered, appended by the mathematical execution model audit (pass 3, maps). S8 is the S0–S8 receipt of the sampling campaign and is byte-identical to before this audit; this receipt covers the whole file as it stands today and is the one to read first.*
+
+| Field | Value |
+|---|---|
+| Current campaign | Mathematical execution model audit, [board](plans/math-execution-audit-iteration-plan.md): passes 1–3 EXECUTED, passes 4–6 PLAN. Before it: Behavioral Read Devices Passes 1–6 (S9–S12; [Global ASCII Pass 39](systems-manifest-ascii.md#pass-39--behavioral-read-devices-pass-6--whole-campaign-reconciliation) is the current derived whole-campaign overlay), Sampling / Density / Emergence Passes 1–6 (S3.5, S4.5, S4.6, S8), ROOT / TOUCH / FOLD Passes 1–6 (S1–S4) |
+| Core court | S0–S8: state, arrival, root, RootTouch, readings, binary Join, finite grounding, contracts, refusals, alignment, the S8 receipt. Authority per claim: [pass-1 census](plans/math-execution-audit-pass-1-census.md) |
+| Overlay court | S9 read-device algebra · S10 observability and descriptive composition · S11 technical realization · S12 behavioral-machine construction. Non-Core; nothing in them adds a row, a store, a target or a runtime |
+| Human rulings | H1–H12, each quoted at its locator in the [rulings register](plans/math-execution-rulings-register.md) (11 verbatim, H9 as a clause of H7); channel the agent session; the register is a maps companion, not law (MA-H02 open) |
+| Proved | Lemmas L1, L2 (S1.3), L3 (S2), L4 / PATH-1 (S3.4), L5 (S4.1), Theorem G restated (S4.2), Lemma WP (S4.3), RD-1 (S9.6), OBS-1 (S10.3): `PROVED_WITHIN_SCOPE`, premises and refuters in the blocks and the [theorem register](math-execution-model-theorems.md). The S8 rows *Finite sample representability* and *Whole-prefix covering point* read as those two results; S8 itself is not rewritten |
+| Derived, not proved | HOST-1, ACCEL-1, ML-1, COPY-1 (S11): sound inferences from source readings at rung \(T_0\). EP-1 is a requirement. STAR-1, VIEW-1 are fidelity fences over reads not formally defined |
+| Not a result | the nineteen pass-verdict boxes of S9.12, S10.14, S11.14, S12.11–S12.16: status stamps of their passes |
+| Collisions | `S0`–`S7` (HCC phases), `S0`–`S4` (Water states), `H1`–`H11` (HCC stations) and `L_n` (state notation) share letters with this file's sections, rulings and lemma labels; every use here names its owner; the namespace register carries the families (pass 6 registers the lemma and ruling families) |
+| Open gates | **RM-A retain-when OPEN / MISSING-A** · RM-B bounded closure (contiguous samples) · RM-C closed for RootTouch and contiguous grounding, candidate-specific elsewhere · G1 OPEN · R3 OPEN · GAP-HOST OPEN · TARGET UNDECIDED · pointer draft reconciled, **not accepted** · `src/` not authorized |
+| What this audit changed in this file | Passes 2–3: dated lemma and premises blocks, labels, qualifiers, pointers, retied stamps, this receipt. **No equation, box, table cell of substance, section number, or S8 byte changed.** The equation-line diff is empty by construction and is checked in each pass receipt |
+| What it did not do | write a retain-when, an arity law, a slot rule, a word-equality rule, a target, an acceptance, or a line of code |
+
+**Steward tests, current:** every earlier row unchanged and every reference backward (Lemma L2, proved); every grounded point is itself Lace (Join appends a row); repeated Join grounds any selected finite portion (Theorem G) and the whole prefix (Lemma WP); membership is not multiplicity (Lemma L4); a device step writes nothing (RD-1); Lace alone does not identify device-local quantities (OBS-1); the sampling surface is derived and distinct from projection; search is read-only and disposable; the retention rule is not invented.
+
+*Shoe in hands. The knots are where they were; the tags on them now say who tied each one, from what, and what would untie it.*
