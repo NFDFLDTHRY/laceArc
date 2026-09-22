@@ -2,6 +2,8 @@
 
 **Alignment Restart Pass 5 current target qualification, 2026-09-21:** the executed [target requirements](../plans/source-lab-lace-alignment-pass-5-target-requirements.md) and [target audit](../plans/source-lab-lace-alignment-pass-5-target-audit.md) supersede the former **sealed wasm64** entrance. Current verdict: **TARGET UNDECIDED**. Spec 3.0 establishes Memory64 capability; it does not select the Rust target. `wasm64-unknown-unknown` remains a conditional candidate, and `wasm32-unknown-unknown` is a viable lower-burden candidate. Historical Pass 1–6 seal language below remains dated evidence and must not override this current qualification.
 
+**Behavioral Read Devices Pass 3 source-scope qualification:** this source is the **WebAssembly core ISA / validation / execution** court. The spec explicitly delegates specific environment invocation/import/export mechanics to complementary embedding-environment APIs and provides no ambient access to host resources. Therefore this clipboard does **not** source the browser Wasm host/embedder contract. Current technical inventory records that host plane as `GAP-HOST`; any browser Wasm→WebGPU/WebNN/storage route requires explicit host mediation and later source evidence.
+
 **Current target-sighting addendum, 2026-09-20:** the [repository update pass 2 sightings](#repository-update-pass-2--target-sightings) below address the rust-target Page G request. They distinguish binary grammar, optional name metadata, imported tags and the proposed feature-subset check from an executed validator or build. Earlier Pass 1–6 bodies and receipts remain intact; this is no new whole-shelf accuracy verdict.
 
 **[III] Shadow / read-only projection. Hands win. POINTER emission = `[GAP]`.**  
