@@ -1,7 +1,7 @@
-STATUS: HELD
+STATUS: FREE
 STATION: prompts
 OWNS: docs/prompts/**
-AGENT: Astra-alignment-restart
-BASE: c8d55563a5d1f393e906a89cdd247b9ec592aa85
-SINCE: 2026-09-22T02:35:00Z
-NOTE: Alignment Restart Pass 1. Update mandatory context to the vertical source→clipboard→Lab→Lace→platform story, distinguish Lab evidence retention from Lace POINTER retention, and carry current RM-A/B/C evidence scope.
+AGENT: -
+BASE: -
+SINCE: -
+NOTE: Alignment Restart Pass 1 prompt alignment COMPLETE. Mandatory context now states the source→clipboard→Lab→Lace→platform model, distinguishes Lab retain-evidence from Lace retention, and carries RM-A open with bounded/class-specific RM-B/RM-C evidence. No acceptance or implementation.
