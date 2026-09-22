@@ -1,7 +1,7 @@
-STATUS: FREE
+STATUS: HELD
 STATION: law
 OWNS: AGENTS.md CLAUDE.md docs/staking-the-workspace.md docs/law-why-these-documents.md docs/systems-manifest.md docs/pointer-emission.md docs/references.md CONTRIBUTING.md README.md .gitignore LICENSE docs/README.md
-AGENT: -
-BASE: -
-SINCE: -
-NOTE: Behavioral Read Devices Pass 6 Stage E COMPLETE. Manifest non-Core integration contracts route to S9-S12/current Water law; AGENTS exposes current behavioral-machine court; references/docs index current products. No new human ruling, Core mechanism, pointer-emission change, acceptance, target, carrier or implementation movement.
+AGENT: ChatGPT
+BASE: 94e26956590f2e77286c159dfd7db8b9739d5cb3
+SINCE: 2026-09-22T18:14:00Z
+NOTE: EXECUTING repo-lag Pass 2 law/root entrance reconciliation. Primary repair target README.md; other law-owned entrances audit-first. Preserve live law and frozen stake unless an actual contradiction is found. Record foreign-station lag as handoff only.
