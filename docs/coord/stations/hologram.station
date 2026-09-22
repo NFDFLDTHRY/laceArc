@@ -1,7 +1,7 @@
-STATUS: HELD
+STATUS: FREE
 STATION: hologram
 OWNS: docs/hologram/** docs/clock/**
-AGENT: ChatGPT
-BASE: 3b4a10d8e196d1c394d374f7de01d00f64ccb855
-SINCE: 2026-09-22T19:08:00Z
-NOTE: EXECUTING repo-lag Pass 4 clock target-court reconciliation. Primary write set is docs/clock/wasm/README.md + docs/clock/README.md; audit historical clock/hologram surfaces; no viewer/runtime/release/probe changes.
+AGENT: -
+BASE: -
+SINCE: -
+NOTE: Repo-lag Pass 4 hologram execution COMPLETE. Clock/wasm and clock README now state TARGET UNDECIDED; wasm32 historical attempt preserved; wasm64 remains conditional candidate; clock gate summary narrowed. Only two semantic files changed; runtime/viewer/release/pass-history surfaces untouched.
