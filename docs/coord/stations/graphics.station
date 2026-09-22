@@ -1,7 +1,7 @@
-STATUS: HELD
+STATUS: FREE
 STATION: graphics
 OWNS: docs/graphics/** docs/graphics-close-reading.md
-AGENT: Claude-Fable-reference-audit
-BASE: dc3a03d2d51b46b7ce8e539a39ef4bf19c67f9a6
-SINCE: 2026-09-22T22:09:50Z
-NOTE: Reference audit pass 1 COMPLETE. Graphic D ASCII companion added (graphic-d-ascii.md); D1 rows diffed 11/11 against close reading and d1 fixture; panel numerals confirmed printed on all four PNGs; iteration 3 opened. PNG bytes unchanged. Pass 2 (A/B/C companion fidelity) is PLAN and waits on the human's proceed.
+AGENT: -
+BASE: -
+SINCE: -
+NOTE: Reference audit pass 2 COMPLETE. A/B/C companions carry printed numerals, titles, lists and labels in dated pass-2 sections; centimetre->centimeter; close reading §7 qualified; graphics door 1:1. PNG bytes unchanged. Pass 3 (law) is PLAN and waits on the human's proceed.
