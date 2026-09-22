@@ -200,6 +200,96 @@ A host-side `u64` logical index, a WebNN `uint64` tensor element, and a 64-bit W
 
 WebNN remains **Layer III / HOST-NN inference material**. It does not become Lace WORD, Core schema, the authoritative carrier, or a replacement Rust/Wasm compilation target.
 
+### 0-E — Human-supplied rustc compiler / target material
+
+Human-supplied file:
+
+`The-rustc-book.txt`
+
+SHA-256:
+
+`4a30e620a066c8157de4af674196df81694bb183ea09cef0a89dd8dbec4e74d3`
+
+This exactly matches the source hash already recorded by `docs/clipboards/rust-target-clipboard.md`, `docs/clipboards/rust-target-locators.md`, and the shelf-10 receipts for *The rustc book*.
+
+Therefore Pass 5 does **not** create another rustc clipboard. The existing compiler/target shelf is the source-grounded clipboard; this human-supplied text re-admits the exact same source bytes for this campaign.
+
+The attachment parser and the shelf's raw `grep -n` / `wc -l` conventions do not number the final line identically. The SHA is the identity. Pass 5 must preserve the existing shelf locators rather than silently re-numbering them from this chat attachment.
+
+Pass-5-relevant source facts:
+
+- `rustc` is the Rust compiler; Cargo ordinarily invokes it and `cargo build --verbose` can expose the actual compiler invocations;
+- `--target` selects the compilation target and `rustc --print target-list` reports built-in targets for the installed compiler;
+- custom target JSON and `--print target-spec-json` are unstable interfaces and are compiler-version-bound;
+- `wasm64-unknown-unknown` is documented as a **Tier 3** cross target using 64-bit memories;
+- on that target `usize` and pointers are 8 bytes;
+- the target does not ship precompiled artifacts in the source material and instead requires either a Rust build with the target enabled or a source-built standard library through `build-std` or similar;
+- the target page records default WebAssembly feature assumptions including bulk-memory, mutable-globals, sign-ext, and nontrapping-fptoint;
+- the target page says `panic=unwind` is unsupported and that upstream testing is not well supported;
+- the target page's sentence that Memory64 is “not standardized” is a **toolchain-document snapshot**, not authority over the newer human-supplied WebAssembly 3.0 core specification. Pass 5 must preserve that source conflict rather than letting the compiler book override the language spec.
+
+This adds the toolchain boundary:
+
+```
+WebAssembly language capability
+        !=
+rustc built-in target definition
+        !=
+installed rustc target availability
+        !=
+Cargo build recipe
+        !=
+browser/device runtime support
+```
+
+The rustc book therefore supplies compiler/target facts and probe mechanisms. It does not decide Lace semantics, carrier choice, browser viability, or the final wasm32/wasm64 verdict.
+
+### 0-F — Human-supplied Cargo build-orchestrator / stdlib material
+
+Human-supplied file:
+
+`The Cargo Book.txt`
+
+SHA-256:
+
+`9d7048e1ecb50ae5ed95dc64fe504cf968a4a9a7c2cc9c903e48ae38d163c0a5`
+
+This exactly matches the source hash already recorded by `docs/clipboards/cargo-build-std-clipboard.md` and `docs/clipboards/cargo-build-std-locators.md`.
+
+Therefore Pass 5 does **not** create another Cargo clipboard. The existing build-std shelf is the source-grounded clipboard; this human-supplied text re-admits the same source bytes.
+
+The existing Cargo shelf records a source-format hazard: the file contains bare carriage returns and raw `grep -n` locators differ from universal-newline readers. Pass 5 must retain that shelf's locator convention and SHA identity; it must not “repair” citations by renumbering the book from this interface.
+
+Pass-5-relevant source facts:
+
+- Cargo is the Rust package/build orchestrator that resolves the crate graph and invokes `rustc`;
+- `-Z build-std` is unstable and compiles standard-library crates from source as part of the crate graph;
+- current documented prerequisites are `rust-src`, **nightly Cargo**, **nightly rustc**, and passing `-Z build-std` to every Cargo invocation involved;
+- bare `-Z build-std` implicitly selects `core`, `std`, `alloc`, and `proc_macro`, plus `test` for `cargo test`;
+- an explicit comma-separated crate list is supported, so the crate set must be intentional rather than inherited from the bare default;
+- `build-std-features` controls standard-library features; the documented defaults include `backtrace` and `panic-unwind`;
+- when Cargo is invoked with `--target`, target artifacts are built separately from host build scripts/proc macros, and target `RUSTFLAGS` do not simply apply to those host units;
+- `--locked` and `--frozen` constrain ordinary Cargo dependency resolution, but the supplied book does **not** state that build-std's standard-library closure or source identity is represented in `Cargo.lock`;
+- the supplied book also does **not** state whether `compiler_builtins` must be explicitly named for the intended core-only wasm64 recipe.
+
+Those last two silences remain `[GAP]`. Source silence is not permission to guess.
+
+This adds another boundary:
+
+```
+Cargo dependency lock
+        !=
+rustc target definition
+        !=
+build-std crate closure
+        !=
+rust-src component identity
+        !=
+final Wasm artifact contents
+```
+
+Cargo therefore answers **how the build is orchestrated**. It does not establish which target is semantically required, which transitive stdlib crates appear unless observed, or whether the resulting module actually runs on the deployment device.
+
 ---
 
 ## 1. Pass-5 thesis
@@ -1082,21 +1172,72 @@ Attack: WebNN is a compiled neural-network graph/operator API, not custom shader
 
 ---
 
-## 7. Toolchain court — Rust target facts
+## 7. Toolchain court — rustc target facts + Cargo build closure
 
 Re-read current:
-- `docs/clipboards/rust-target-clipboard.md`;
-- locator carry;
-- rustc source material;
-- Cargo build-std clipboard.
 
-Pass 5 must compare at least:
+- `docs/clipboards/rust-target-clipboard.md`;
+- `docs/clipboards/rust-target-locators.md`;
+- the human-supplied `The-rustc-book.txt` at SHA `4a30e620…4e74d3`;
+- `docs/clipboards/cargo-build-std-clipboard.md`;
+- `docs/clipboards/cargo-build-std-locators.md`;
+- the human-supplied `The Cargo Book.txt` at SHA `9d7048e1…63c0a5`.
+
+The two books answer different questions and must not be collapsed.
+
+### 7A — rustc compiler/target court
+
+Pass 5 must establish, for **each candidate target**:
+
+- whether the target is built into the exact installed/pinned compiler;
+- support tier in the supplied source;
+- `target_arch`, `target_family`, and `target_pointer_width`;
+- default/required WebAssembly target features;
+- panic behavior;
+- linker path/flavor;
+- whether precompiled target artifacts exist for that exact toolchain;
+- whether the target depends on nightly-only compiler behavior;
+- whether the installed compiler's view differs from the supplied book.
+
+The rustc source is authoritative for what that documented compiler target claims, **not** for WebAssembly standards status or browser support.
+
+If the human-supplied source and the installed compiler disagree:
+
+1. record the source statement;
+2. record the installed compiler observation;
+3. name the version/date mismatch;
+4. do not silently rewrite the source-derived shelf.
+
+### 7B — Cargo build-std / orchestration court
+
+Pass 5 must establish:
+
+- exact Cargo and rustc versions used together;
+- exact `rust-src` component/toolchain identity;
+- explicit `build-std` crate list;
+- explicit `build-std-features` list;
+- whether any default would pull `std`, `alloc`, `proc_macro`, `panic-unwind`, or another forbidden/unwanted component;
+- every effective rustc invocation for the probe build;
+- host-vs-target unit separation under `--target`;
+- whether `compiler_builtins` enters the actual closure and by what mechanism;
+- what, if anything, the build records in `Cargo.lock`;
+- whether `--locked` / `--frozen` actually strengthen the intended reproducibility claim;
+- whether the same recipe can be replayed from a clean toolchain/component state.
+
+Bare `-Z build-std` is **not** an acceptable no_std recipe merely because the probe crate itself says `#![no_std]`.
+
+The documented default includes `std` and `alloc`; the recipe must name what it intends.
+
+Likewise, the documented `build-std-features` default includes `backtrace` and `panic-unwind`. Pass 5 may not inherit that default silently.
+
+### 7C — comparison matrix to fill from source + execution
 
 | Question | wasm64 | wasm32 |
 |---|---|---|
 | Rust support tier | ? | ? |
+| built into pinned rustc | ? | ? |
 | stable/nightly | ? | ? |
-| prebuilt core | ? | ? |
+| prebuilt target artifacts | ? | ? |
 | build-std needed | ? | ? |
 | pointer/`usize` width | ? | ? |
 | default/required target features | ? | ? |
@@ -1104,14 +1245,16 @@ Pass 5 must compare at least:
 | C/FFI consequence | ? | ? |
 | linker availability | ? | ? |
 | expected memory address type | ? | ? |
+| exact build-std crate closure | ? | ? |
+| exact build-std feature set | ? | ? |
+| `compiler_builtins` path | ? | ? |
+| lockfile/sysroot provenance story | ? | ? |
 | reproducibility burden | ? | ? |
 | target-specific LLVM risk | ? | ? |
 
 Fill only from pointable toolchain materials or executed receipts.
 
-No folklore.
-
----
+No folklore. No missing-row inference. No “the book is silent, therefore no.”
 
 ## 8. Carrier/target coupling audit
 
@@ -1236,6 +1379,78 @@ Only as an exploratory probe:
 
 No custom target may be introduced merely to force this probe to pass.
 
+### P-RUSTC-IDENTITY
+
+For the pinned toolchain used by every target probe, record:
+
+- `rustc -Vv`;
+- `cargo -V`;
+- `rustc --print sysroot`;
+- `rustc --print target-list` membership for both candidate targets;
+- `rustc --print cfg --target <target>`;
+- `rustc --print target-features --target <target>`;
+- linker identity/path where observable.
+
+This is a **toolchain receipt**, not device proof.
+
+### P-RUSTC-TARGET-SPEC
+
+For built-in targets only, a pinned-nightly `--print target-spec-json` dump may be captured as a read-only receipt if it materially helps compare targets.
+
+Rules:
+
+- same pinned compiler as the build;
+- record that the interface is unstable;
+- do not edit the JSON;
+- do not save it as a custom target;
+- do not use it to manufacture a target that wins the audit.
+
+### P-CARGO-INVOKE
+
+For each disposable target probe:
+
+- run Cargo in verbose/very-verbose mode;
+- capture the actual rustc command line(s);
+- record target, profile, panic mode, target features, linker, and build-std settings;
+- verify host build units are not mistaken for target units.
+
+A successful Cargo command does not prove browser execution.
+
+### P-BUILDSTD-CLOSURE
+
+Using a disposable non-Core `#![no_std]` probe only when execution is permitted:
+
+- use an **explicit** build-std crate list;
+- record every standard-library crate actually built;
+- determine empirically whether `compiler_builtins` enters the closure and how;
+- inspect the produced module for `std`, `alloc`, allocator, panic-unwind, imports, and other forbidden/unwanted residue.
+
+If this cannot be run, keep the closure question OPEN. Do not infer it from the Cargo book's silence.
+
+### P-BUILDSTD-FEATURES
+
+Make `build-std-features` explicit.
+
+The probe must not inherit the documented `backtrace` / `panic-unwind` defaults without knowing whether they apply to the chosen crate list.
+
+Record:
+
+- requested stdlib features;
+- effective rustc feature flags where observable;
+- artifact evidence for exception-handling/panic residue;
+- any mismatch between requested and observed behavior.
+
+### P-BUILDSTD-LOCK
+
+Observe, do not assume:
+
+- whether `Cargo.lock` changes under build-std;
+- whether any stdlib/sysroot packages appear in it;
+- whether `--locked` or `--frozen` constrains the relevant part of the build;
+- what additional receipt is needed to pin `rust-src` / sysroot content.
+
+The supplied Cargo book does not answer this. The pass must either produce an execution receipt or leave it `[GAP]`.
+
 ---
 
 ## 11. Actual device/browser probes
@@ -1318,15 +1533,30 @@ A current primary browser/engine source if the project claims family support bey
 
 Device execution can establish the user's Pixel; it does not establish every supported Chrome/Android environment.
 
-### M-C — current rustc target source
+### M-C — rustc source ↔ probed toolchain version match
 
-The existing rust-target clipboard is already present, but execution must verify its date/version is compatible with the toolchain actually probed.
+The human-supplied rustc book is present and matches the existing shelf hash.
 
-If the source is stale:
-- record the mismatch;
-- do not silently update target facts from model knowledge.
+What remains unresolved is **version correspondence**: the attachment does not itself establish that every target-page sentence matches the exact compiler installed for the probe.
 
----
+Execution must compare:
+
+- supplied source statement;
+- pinned `rustc -Vv`;
+- installed target/cfg/feature output.
+
+If they disagree, keep both receipts and qualify the target fact.
+
+### M-D — Cargo source ↔ probed toolchain version match
+
+The human-supplied Cargo Book is present and matches the existing build-std shelf hash.
+
+Execution must still record the exact Cargo version used by the probe and verify that the required unstable options exist with the documented semantics.
+
+The source's two explicit silences remain blockers for any dependent claim until execution or another admitted primary source closes them:
+
+- exact `compiler_builtins` participation;
+- build-std relationship to `Cargo.lock` / sysroot source provenance.
 
 ## 13. Decision matrix
 
@@ -1423,6 +1653,22 @@ A target does not gain credit merely because the host can address a larger memor
 
 WebNN receives no target credit merely because its tensor vocabulary contains 64-bit integers.
 
+### D18 — rustc / Cargo toolchain-closure fit
+
+- target support tier and installed-target reality;
+- prebuilt-vs-source-built stdlib burden;
+- nightly and `rust-src` requirements;
+- exact build-std crate closure;
+- exact build-std feature set;
+- linker/toolchain availability;
+- captured rustc invocation reproducibility;
+- `compiler_builtins` provenance;
+- Cargo.lock/sysroot provenance;
+- cost of replaying the build from a clean toolchain state;
+- absence of a custom target unless independently justified.
+
+A target gets no credit merely because `rustc --print target-list` names it. It must have a reproducible build path for this project.
+
 ---
 
 ## 14. Decision rules
@@ -1441,7 +1687,8 @@ all relevant conditions survive:
 8. the target's required feature set is supported by the actual deployment environment;
 9. any required WebGPU path works within actual GPU resource/binding limits without assuming whole-memory zero-copy aliasing;
 10. any required WGSL path has an exact representation for logical indices/offsets without assuming host pointer width becomes shader integer width;
-11. any required WebNN path fits actual tensor/operator/device support and measured transfer costs without treating tensor element width as host pointer width.
+11. any required WebNN path fits actual tensor/operator/device support and measured transfer costs without treating tensor element width as host pointer width;
+12. the rustc/Cargo route is reproducible on a pinned toolchain with an explicit build-std crate/feature set, with unresolved `compiler_builtins` or sysroot-lock provenance kept OPEN rather than guessed.
 
 ### wasm64 is OVER-SPECIFIED if
 
@@ -1556,11 +1803,46 @@ the project has not specified the carrier/working-set/domain requirement suffici
 
 **Attack:** it is neural-network graph/operator inference machinery, not custom shader authoring.
 
+### A-19
+“`wasm64-unknown-unknown` appears in rustc, therefore rustup ships a ready target.”
+
+**Attack:** the supplied rustc book says the target has no precompiled artifacts in that source snapshot.
+
+### A-20
+“`#![no_std]` plus bare `-Z build-std` means no std/alloc.”
+
+**Attack:** Cargo's documented bare default explicitly selects `core`, `std`, `alloc`, and `proc_macro`.
+
+### A-21
+“`build-std-features` defaults are harmless.”
+
+**Attack:** the supplied Cargo book names `backtrace` and `panic-unwind` as defaults. The recipe must not inherit them silently.
+
+### A-22
+“Cargo.lock proves the exact source-built standard-library closure.”
+
+**Attack:** the supplied Cargo book does not state that build-std/sysroot content is represented there.
+
+### A-23
+“The Cargo book never mentions `compiler_builtins`, therefore it is not required.”
+
+**Attack:** absence from this source is a `[GAP]`, not a negative proof.
+
+### A-24
+“`--print target-spec-json` is a stable contract we can copy into a custom target.”
+
+**Attack:** the rustc book marks target JSON unstable and compiler-version-bound; custom-target creation is separately disfavored by this pass.
+
+### A-25
+“The rustc target page decides whether Memory64 is standardized.”
+
+**Attack:** rustc documentation describes compiler-target state. The human-supplied WebAssembly 3.0 core specification owns current language semantics and has newer evidence than the target page's stale standards-status sentence.
+
 ---
 
 ## 16. Relation to current building-materials inventory
 
-Pass 5 classifies target materials into seven buckets.
+Pass 5 classifies target materials into eight buckets.
 
 ### CORE WASM MATERIAL
 
@@ -1570,15 +1852,49 @@ Pass 5 classifies target materials into seven buckets.
 Answers:
 - what the language permits.
 
-### COMPILER MATERIAL
+### RUSTC COMPILER / TARGET MATERIAL
 
-- rustc target clipboard;
-- rustc target spec;
-- LLVM feature assumptions;
-- Cargo build-std material.
+- human-supplied *The rustc book*;
+- existing rust-target clipboard / locator carry;
+- built-in target identity and support tier;
+- target cfg / pointer width;
+- target feature assumptions;
+- panic/linker/toolchain facts;
+- unstable target-spec inspection surface.
 
 Answers:
-- what Rust emits and what it costs to build.
+- what rustc says it can emit for a named target;
+- what pointer ABI and default feature assumptions the compiler target carries;
+- what compiler/toolchain burdens attach to that target.
+
+Does **not** answer:
+- WebAssembly language standards status;
+- Cargo's exact source-built stdlib closure;
+- browser/device support;
+- Lace semantics or carrier choice.
+
+### CARGO BUILD-ORCHESTRATOR / STDLIB MATERIAL
+
+- human-supplied *The Cargo Book*;
+- existing Cargo build-std clipboard / locator carry;
+- nightly / rust-src prerequisites;
+- build-std crate-list behavior;
+- build-std-features behavior;
+- target-vs-host build orchestration;
+- lock/frozen behavior and its limits.
+
+Answers:
+- how the selected Rust target is built;
+- which stdlib crates/features Cargo is asked to rebuild;
+- what build commands and reproducibility receipts are possible.
+
+Does **not** answer by itself:
+- whether `compiler_builtins` enters the actual closure;
+- whether Cargo.lock pins source-built sysroot content;
+- whether the target runs in Chrome/Pixel;
+- which target Lace requires;
+- any Core semantic question.
+
 
 ### EMBEDDER MATERIAL
 
@@ -1675,6 +1991,8 @@ Wasm 3.0 source re-admission
 WebGPU source re-admission (same existing shelf/hash)
 WGSL source re-admission (same existing shelf/hash)
 WebNN source re-admission (same existing shelf/hash)
+rustc book source re-admission (same existing toolchain shelf/hash)
+Cargo Book source re-admission (same existing build-std shelf/hash)
 rustc target
 Cargo build-std
         |
@@ -1699,6 +2017,8 @@ memory64 / memory32 capacity + cost
 WebGPU limits + transfer/window cost
 WGSL wide-index + layout + dispatch probes
 WebNN support + tensor + bridge + lifecycle probes
+rustc identity / target-spec receipt
+Cargo invocation / build-std closure / feature / lockfile probes
         |
         v
 EMBEDDER SOURCE
@@ -1754,6 +2074,7 @@ toolchain + embedder + device evidence
         +---- WebGPU resource / transfer constraints
         +---- WGSL integer / pointer / layout constraints
         +---- WebNN tensor / operator / accelerator constraints
+        +---- rustc target + Cargo build-closure constraints
         |
         v
 TARGET VERDICT
@@ -1849,6 +2170,27 @@ A WebNN preference is reported as proof that a specific GPU/NPU was selected.
 ### F28 — MLTensor promoted to Lace store
 WebNN tensor/graph state is treated as authoritative append-only Lace storage.
 
+### F29 — rustc target page overrides core-spec authority
+A compiler documentation snapshot is used to decide current WebAssembly standards semantics.
+
+### F30 — built-in target name = ready/prebuilt toolchain
+Presence in `target-list` is treated as proof that the required precompiled artifacts and complete build path are available.
+
+### F31 — bare build-std smuggles forbidden stdlib crates
+A `#![no_std]` probe uses bare `-Z build-std` and silently inherits `std` / `alloc` / `proc_macro`.
+
+### F32 — build-std-features defaults inherited silently
+The build inherits `backtrace` / `panic-unwind` defaults without an explicit feature decision and artifact receipt.
+
+### F33 — Cargo.lock promoted to sysroot provenance
+Ordinary dependency locking is treated as proof of the exact source-built standard-library inputs.
+
+### F34 — compiler_builtins inferred from source silence
+The Cargo book's failure to mention `compiler_builtins` is treated as proof that the crate is absent or unnecessary.
+
+### F35 — unstable target JSON becomes architecture
+A `target-spec-json` dump is copied or edited into a project custom target without an independently established need.
+
 ---
 
 ## 20. Completion board
@@ -1902,7 +2244,20 @@ WebNN tensor/graph state is treated as authoritative append-only Lace storage.
 | G45 | WebNN tensor capacity and allocation limit recorded or honestly NOT-RUN |
 | G46 | WebNN device-selection claims limited to evidence actually exposed by the API |
 | G47 | WebNN remains Layer III / HOST-NN material; no Core/carrier/target-swap promotion |
-| G48 | all claims released |
+| G48 | human-supplied rustc book hash verified against existing toolchain shelf |
+| G49 | human-supplied Cargo Book hash verified against existing build-std shelf |
+| G50 | rustc/Cargo source locator conventions preserved; no parser renumbering substituted for shelf locators |
+| G51 | exact rustc + Cargo toolchain versions recorded for execution or honestly NOT-RUN |
+| G52 | wasm64 and wasm32 installed target/cfg/feature facts compared or honestly NOT-RUN |
+| G53 | build-std recipe uses explicit crate list; bare default is not silently accepted |
+| G54 | build-std-features is explicit or dependent claim remains OPEN |
+| G55 | actual Cargo→rustc invocation captured for each build probe or honestly NOT-RUN |
+| G56 | `compiler_builtins` participation observed or preserved as `[GAP]` |
+| G57 | build-std / Cargo.lock / sysroot provenance behavior observed or preserved as `[GAP]` |
+| G58 | target-spec-json, if read, remains a read-only receipt; no custom target smuggling |
+| G59 | rustc compiler-target facts kept separate from Wasm spec and browser/device facts |
+| G60 | Cargo orchestration facts kept separate from target suitability and Core semantics |
+| G61 | all claims released |
 
 ---
 
@@ -1940,6 +2295,7 @@ WHAT DEVICE EVIDENCE SUPPORTS IT
 WHAT WEBGPU RESOURCE / TRANSFER ASSUMPTIONS IT DEPENDS ON
 WHAT WGSL REPRESENTATION / LAYOUT ASSUMPTIONS IT DEPENDS ON
 WHAT WEBNN TENSOR / OPERATOR / TRANSFER ASSUMPTIONS IT DEPENDS ON
+WHAT RUSTC / CARGO TOOLCHAIN / STDLIB ASSUMPTIONS IT DEPENDS ON
 WHAT WOULD FALSIFY IT
 WHAT WOULD TRIGGER RE-TARGETING
 ```
@@ -1974,6 +2330,13 @@ It does **not** automatically:
 - treat `maxTensorByteLength` field width as practical capacity;
 - assume WebNN↔WebGPU export is zero-copy;
 - treat an MLTensor or MLGraph as the authoritative Lace carrier;
+- treat rustc target-list membership as prebuilt/usable target proof;
+- use bare `-Z build-std` for the no_std probe;
+- inherit `build-std-features` defaults without an explicit decision;
+- infer `compiler_builtins` absence from Cargo-book silence;
+- treat Cargo.lock as proof of source-built sysroot provenance without evidence;
+- copy `target-spec-json` into a custom target to rescue a preferred verdict;
+- let a stale rustc standards-status sentence override the newer WebAssembly core source;
 - open Pass 6.
 
 The exact question is:
