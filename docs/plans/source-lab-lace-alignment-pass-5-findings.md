@@ -508,7 +508,7 @@ Statuses are intentionally not collapsed into PASS when execution did not occur.
 | G58 target-spec-json remains read-only / no custom target | PASS |
 | G59 rustc target facts separated from Wasm spec/browser facts | PASS |
 | G60 Cargo orchestration separated from target/Core semantics | PASS |
-| G61 all claims released | **PENDING final maps release verification** |
+| G61 all claims released | **PASS** — maps release `8cdbdb88c4c78b424c31cb95a6b074e0bc0df783`; direct post-release reads confirmed all 11 document stations FREE and all 8 gearing shafts FREE |
 
 ---
 
@@ -547,5 +547,7 @@ IMPLEMENTATION:
 ```
 
 Pass 5 answers the target question as far as the current evidence permits without manufacturing the missing implementation and device premises.
+
+**Coordination verification:** after maps release commit `8cdbdb88c4c78b424c31cb95a6b074e0bc0df783`, direct reads confirmed FREE status for clipboards, coord, gearing-meta, graphics, history, hologram, kit, law, maps, prompts and renderer stations, plus audits, axle, cells, escape, gears, trainA, trainB and trainC gearing shafts. This receipt-finalization update changes no semantic surface.
 
 **STOP. Pass 6 is not opened automatically.**
