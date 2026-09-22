@@ -1,7 +1,7 @@
-STATUS: FREE
+STATUS: HELD
 STATION: maps
 OWNS: docs/reason-model-map.md docs/rust-nostd-*.md docs/atomic-primitives-map.md docs/clock/gearing-code-1to1.md docs/coherence-audit*.md docs/clock/system-mathematical-model.md docs/defrag-plan.md docs/plans/** docs/namespace-register.md docs/*.md (catch-all: any unmatched file at the docs/ root)
-AGENT: -
-BASE: -
-SINCE: -
-NOTE: Source→Lab→Lace Alignment Restart Pass 4 COMPLETE. Desired-behavior mechanisms mapped from originals with source opens; clipboards faithful with compression/interpretive overlay; Pass-3 assays valid but thin; implementation freedom preserved; Pass 36 final semantic edit; all stations/shafts verified FREE.
+AGENT: Astra-alignment-restart
+BASE: cb4b3a24c4974d7bbeaa87bdd675289acc5b0647
+SINCE: 2026-09-21T21:05:00-07:00
+NOTE: Planning only: Source→Lab→Lace Alignment Restart Pass 5. Re-open compilation-target choice as a building-materials inventory question: derive required address/pointer/carrier properties from Lace, compare wasm64 vs wasm32 scenarios, and require toolchain/embedder/device evidence before re-sealing. No execution or target change under this claim.
