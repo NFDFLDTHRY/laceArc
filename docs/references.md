@@ -155,7 +155,7 @@ These are the platform/toolchain face of the laboratory. Their clipboards expose
 
 | Reference family | Current route | Scope |
 |---|---|---|
-| WebAssembly | [Wasm Spec 3 clipboard](clipboards/wasm-spec-3-clipboard.md) | Target/runtime reference reading; wasm64 target does not accept encoding, emission or a build |
+| WebAssembly | [Wasm Spec 3 clipboard](clipboards/wasm-spec-3-clipboard.md) | Target/runtime capability reading; Alignment Restart Pass 5 verdict is **TARGET UNDECIDED**. Neither wasm32 nor wasm64 supplies encoding, emission, carrier law, acceptance, or a build by citation |
 | WebGPU | [WebGPU clipboard](clipboards/webgpu-clipboard.md) | Host/GPU projection reading; device execution requires its own observation |
 | WGSL | [WGSL clipboard](clipboards/wgsl-clipboard.md) | Shader-language reading; not a Lace operator |
 | WebNN | [WebNN clipboard](clipboards/webnn-clipboard.md) | Host neural-network reference; proposed roles retain their source/acceptance limits |
