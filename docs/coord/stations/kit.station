@@ -1,7 +1,7 @@
-STATUS: FREE
+STATUS: HELD
 STATION: kit
 OWNS: docs/kit/** .claude/**
-AGENT: -
-BASE: -
-SINCE: -
-NOTE: Alignment Restart Pass 1 kit alignment COMPLETE. Active controls distinguish Lab evidence from Core authority and Lab retain-evidence from Lace retention; RM-A remains open while bounded RM-B/RM-C results stay scoped. Acceptance and implementation gates unchanged.
+AGENT: ChatGPT
+BASE: a030654e5dc7b6ef3888f165611a175286a04fc2
+SINCE: 2026-09-22T18:23:00Z
+NOTE: EXECUTING repo-lag Pass 3 kit control/transport reconciliation. First gate: exact compare live-law transport blocks before wrapper edits. No hooks/enforcement changes; no foreign-station repairs.
