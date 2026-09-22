@@ -1,6 +1,6 @@
 # LAB SOURCE ARCHITECTURE — Pass 6 PLAN · cross-family synthesis / insufficiency proof
 
-**Status:** **EXECUTING** 2026-09-21.  
+**Status:** **EXECUTED** 2026-09-21 → [synthesis](lab-source-architecture-pass-6-synthesis.md) · [design docket](lab-source-architecture-pass-6-design-docket.md) · [findings](lab-source-architecture-pass-6-findings.md). **Verdict: CROSS-FAMILY SYNTHESIS NARROWS RM-B / RM-C BUT RM-A REMAINS OPEN.**  
 **Campaign:** Lab Source Architecture. **Pass:** 6.  
 **Baseline:** Pass 5 verdict `RESEARCH SUPPLIES RM-SHAPED MACHINERY BUT NO LEGAL LACE INPUT PATH` at `ba2325e04cdbaa0bad02d2bafb99ccb29e6318d9`.  
 **Primary question:** can already-harvested behavioral, source, human-ruled, derived-sampling/search, and research machinery compose across RM-A/RM-B/RM-C without an editor-created correspondence?  
