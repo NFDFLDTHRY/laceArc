@@ -1505,6 +1505,8 @@ TARGET UNDECIDED
 
 Historical sealed-wasm64 text remains in dated pass bodies as provenance and is not current target law.
 
+**Post-verdict entrance check:** current WebGPU, WGSL, and WebNN clipboard entrances now point to the **Wasm/rustc target court (TARGET UNDECIDED)** rather than to a selected wasm64 target. Their deeper historical `≠ wasm64` false-friend language remains dated evidence that those Layer-III systems do not replace the compile-target layer.
+
 ---
 
 ## Spine
