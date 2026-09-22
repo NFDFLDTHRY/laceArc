@@ -1,6 +1,6 @@
 # Mathematical execution model audit — pass 2 plan: theorem register and proofs
 
-**Status:** PLAN · not executed.  
+**Status:** EXECUTED — CLOSED · receipt [math-execution-audit-pass-2-findings.md](math-execution-audit-pass-2-findings.md) · companion [math-execution-model-theorems.md](../math-execution-model-theorems.md). Eight dated blocks in the model (99 lines added, 0 removed); nine results `PROVED_WITHIN_SCOPE`, four `DERIVED`, one requirement, none `UNESTABLISHED`.  
 **Station:** maps.  
 **Board:** [math-execution-audit-iteration-plan.md](math-execution-audit-iteration-plan.md) · findings MA-M02, MA-M03, MA-M04, MA-M05, MA-M13.  
 **Pinned:** `5ffe01156047df01e8cd0823a286b53e89082905`.  

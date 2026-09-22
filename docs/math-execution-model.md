@@ -103,6 +103,32 @@ The earlier model-side Q2 CONFLICT is resolved **for the Core constructor repres
 
 Slot semantics are not chronological. D1 close reading shows \(\mathsf{ref_A}\) is the described subject in the six fixed examples. Pass 3 does not invent a universal semantic subject-selection algorithm; \(\mathsf{Join}(a,b)\) preserves the selected ordered operand pair.
 
+#### Audit pass 2 — Lemma L1 (Reach is well-founded) and Lemma L2 (validity and prefix-freeze are invariant) · 2026-09-22
+
+*Added block (mathematical execution model audit, pass 2, maps). Nothing above it is edited. It states two facts that S3.4 and S4 use without writing them. "Lemma L1" here is never the state \(L_1\) of S2.*
+
+**Validity.** Call a state \(L\) **valid** when every POINTER row references strictly lower indices:
+
+\[
+\forall j<|L|:\quad e_j=(\mathsf{POINTER},a,b)\ \Rightarrow\ a<j\ \wedge\ b<j.
+\]
+
+This is the constructor's own side condition (\(0\le a<j,\ 0\le b<j\) above) read as a property of the whole state. In a valid state row 0 is a WORD row, since no index is below 0.
+
+**Lemma L1 (Reach is well-founded).** On a valid state, \(\operatorname{Reach}_L(i)\) as defined in S3.4 is a well-defined finite set for every \(i<|L|\), it contains \(i\), and every index it contains is \(\le i\).
+
+*Premises:* validity; the S3.4 definition of Reach.
+*Proof.* Strong induction on \(i\). A WORD row gives \(\{i\}\). A POINTER row \((a,b)\) has \(a,b<i\) by validity, so \(\operatorname{Reach}(a)\) and \(\operatorname{Reach}(b)\) are defined by the induction hypothesis, are finite, and contain only indices \(\le a<i\) and \(\le b<i\); their union with \(\{i\}\) is finite, contains \(i\), and is bounded by \(i\). ∎
+
+**Lemma L2 (validity and prefix-freeze are invariant).** If \(L\) is valid, then \(\mathsf{Arrive}(v)(L)\) is valid, and for any \(a,b<|L|\), \(\mathsf{Join}_L(a,b)\) is valid. In both cases the first \(|L|\) rows of the result are exactly the rows of \(L\).
+
+*Premises:* Arrive (S2) and Join (above, S4.1) as concatenation of one row; the operand condition \(a,b<|L|\).
+*Proof.* Concatenation leaves rows \(0,\ldots,|L|-1\) unchanged (prefix-freeze) and adds one row at index \(j=|L|\). A WORD row imposes no condition. A POINTER row \((a,b)\) has \(a,b<|L|=j\) by the operand condition. Every earlier row was valid before and is unchanged. ∎
+
+*Consequence used later.* The empty state is valid, so every state reached from it by Arrive and Join is valid and Lemma L1 applies to all of them; any finite sequence of the two steps preserves every earlier row index-for-index. These are the S8 steward tests *no old row is rewritten* and *all Join refs are backward*, now proved rather than listed.
+
+*Stamp:* `PROVED_WITHIN_SCOPE` — scope: the two constructors as defined and the operand condition; nothing about which operands are selected (RM-A), which values are equal (G1), or slot order. *Refuter:* a POINTER row whose reference is not strictly lower, or a step that changes an earlier row. *D1 check:* all six POINTER rows reference lower indices; script receipt in [the pass-2 findings](plans/math-execution-audit-pass-2-findings.md).
+
 ## S2 — Arrival, root creation, and root stability
 
 Every successful word arrival lands:
@@ -136,6 +162,19 @@ If \(\mathrm{Seen}_L(v)\), the earlier root remains stable:
 The new WORD row is another occurrence / more wire, not another lexical root. H1 then requires the new occurrence to touch the stable root through S3.3.
 
 No root table exists. G1 still decides what counts as the same word value; Pass 3 closes the structural branch, not the equality policy.
+
+#### Audit pass 2 — Lemma L3 (root stability under any append) · 2026-09-22
+
+*Added block (audit pass 2, maps). Nothing above it is edited. It supplies the proof behind "the earlier root remains stable", which the section states as a consequence of H1 without an argument.*
+
+**Lemma L3.** Let \(L'\) be \(L\) extended by one row, WORD or POINTER. If \(\mathrm{Seen}_L(v)\), then \(\mathrm{Root}_{L'}(v)=\mathrm{Root}_L(v)\). If \(\neg\mathrm{Seen}_L(v)\) and the new row is \((\mathsf{WORD},v)\), then \(\mathrm{Root}_{L'}(v)=|L|\).
+
+*Premises:* \(\mathrm{Root}_L(v)=\min\mathrm{StarWords}_L(v)\) (S3.1); prefix-freeze (Lemma L2); one fixed word-equality relation for \(v\) — G1 supplies the relation, and the lemma holds for whichever relation is fixed.
+*Proof.* The new row has index \(|L|\), larger than every index of \(L\). By prefix-freeze, \(\mathrm{StarWords}_{L'}(v)=\mathrm{StarWords}_L(v)\cup X\) with \(X\subseteq\{|L|\}\). If \(\mathrm{StarWords}_L(v)\neq\varnothing\), its minimum is below \(|L|\) and is unchanged by adjoining a larger element. If it is empty and the new row is \((\mathsf{WORD},v)\), the set becomes \(\{|L|\}\), whose minimum is \(|L|\). ∎
+
+*What this closes, and what it does not.* The two displayed equations of this section follow from the definitions alone. H4 and H1 remain the premises for **what is appended** (the unseen row is the root; the seen occurrence touches the root through S3.3); they are not needed for the *stability* of Root. Nothing here decides which values are equal (G1) or whether any touch beyond the ruled one is written (RM-A).
+
+*Stamp:* `PROVED_WITHIN_SCOPE` — scope: one append under a fixed equality relation; by Lemma L2, any finite sequence of appends. *Refuter:* an append that changes an earlier row, or a root defined as anything other than the least occurrence. *D1 check:* \(\mathrm{Root}(\text{PIE})=0000\) after each of the eleven prefixes, \(\mathrm{Root}(\text{DESSERT})=0001\) from the second prefix on; script receipt in [the pass-2 findings](plans/math-execution-audit-pass-2-findings.md).
 
 ## S3 — Readings (not stores)
 
@@ -272,6 +311,21 @@ Yet \(\operatorname{Reach}(0010)\) contains 0000 only once. Therefore:
 \]
 
 Reach must not be substituted for the full star/route/threading structure shown by A8/A12/B9/C8. When path distinction matters, a derived read must preserve explicit ordered witness paths/frontiers; S3.6 does so without creating a second store.
+
+#### Audit pass 2 — Lemma L4 (PATH-1: membership is not multiplicity; exactly two D1 paths) · 2026-09-22
+
+*Added block (audit pass 2, maps). Nothing above it is edited. The boxed inequality above is the statement the Behavioral Read Devices Pass-4 artifacts call **PATH-1** ([D1 path audit §7](plans/math-execution-behavioral-read-devices-pass-4-d1-path-audit.md)); this block names it here, fixes the witness count, and writes the proof.*
+
+**Definition.** A **reference path** from \(i\) to \(t\) is a sequence \(i=p_0,p_1,\ldots,p_k=t\) in which each \(p_{r+1}\) is one of the two references of the POINTER row \(p_r\). Write \(\mathrm{Paths}_L(i,t)\) for the set of such paths; by Lemma L1 it is finite.
+
+**Lemma L4 (PATH-1).** Membership of \(t\) in \(\operatorname{Reach}_L(i)\) is a single fact — a set holds an index once — while \(|\mathrm{Paths}_L(i,t)|\) can exceed one. On D1: \(0000\in\operatorname{Reach}(0007)\) with \(|\mathrm{Paths}(0007,0000)|=1\), and \(0000\in\operatorname{Reach}(0010)\) with \(|\mathrm{Paths}(0010,0000)|=2\). A quantity that is identically 1 is not a quantity that takes the value 2; that is the boxed inequality.
+
+*Premises:* the S3.4 definition of Reach; the D1 rows as carried by the fixture `d1-golden-v0.1.0`.
+*Proof.* Enumerate from 0010 through both references of every POINTER row. \(0010\to0009\) and \(0010\to0002\). From 0009: \(\to0008\) (WORD, stops, not 0000) and \(\to0007\). From 0007: \(\to0006\to\{0003,0005\}\) (both WORD, neither 0000) and \(\to0004\to\{0003,0000\}\). From 0002: \(\to\{0000,0001\}\). The paths ending at 0000 are therefore \(0010\to0009\to0007\to0004\to0000\) and \(0010\to0002\to0000\), and no other. From 0007 the only path to 0000 is \(0007\to0004\to0000\). ∎
+
+*Correction to the prose above:* "at least two distinct recursive reference paths" is exact — **exactly two**.
+
+*Stamp:* `PROVED_WITHIN_SCOPE` — scope: the D1 witness under the Reach definition; the inequality is between two derived quantities and claims nothing about any source beyond the rows D1 draws. *Refuter:* a third path from 0010 to 0000, which the enumeration excludes; or a Reach that recorded an index more than once, which a set cannot. Script receipt in [the pass-2 findings](plans/math-execution-audit-pass-2-findings.md).
 
 A **sample instance** is a finite nonempty selection of already-existing Lace points:
 
@@ -448,6 +502,19 @@ One physical constructor, different selected operands / participation roles.
 
 **Authority boundary.** D1/D2 directly witness the two-reference POINTER schema and D6 witnesses POINTER→POINTER recursion. The current universal binary \(\mathsf{Join}(a,b)\) constructor is the current HUMAN/MODEL law built on those source constraints. Graphic D by itself does not state a universal retain-when or say that every arbitrary pair is automatically authorized for append.
 
+#### Audit pass 2 — Lemma L5 (D1 replay) · 2026-09-22
+
+*Added block (audit pass 2, maps). Nothing above it is edited. It states what the table above shows as a claim checkable against the carried fixture.*
+
+**Lemma L5.** Starting from the empty state, the eleven steps Arrive(PIE), Arrive(DESSERT), Join(0000,0001), Arrive(PIE), Join(0003,0000), Arrive(WHOLE), Join(0003,0005), Join(0006,0004), Arrive(CUSTOMER), Join(0008,0007), Join(0009,0002) yield exactly the eleven D1 rows; every Join operand is an earlier index; and the fifth step is \(\mathsf{RootTouch}(j,r)=\mathsf{Join}(0003,0000)\) with \(j=0003\) the newly landed PIE and \(r=\mathrm{Root}(\text{PIE})=0000\).
+
+*Premises:* the fixture [`d1-golden-v0.1.0.json`](plans/fixtures/d1-golden-v0.1.0.json) (eleven rows transcribed from Graphic D panel 1, sighted 2026-09-20); the definitions of Arrive (S2), Join (above) and RootTouch (S3.3).
+*Proof.* Direct computation, row by row: 11/11 rows equal, 6/6 operand pairs equal, every reference lower (script receipt in [the pass-2 findings](plans/math-execution-audit-pass-2-findings.md)). ∎
+
+*What this does not say.* That D1 **selects** these operands — the panel shows what was appended, not why (the Authority boundary above; RM-A). Nor that 0004 is the only touch that could have been written: it is the touch H1 requires, and D1 agrees with it.
+
+*Stamp:* `PROVED_WITHIN_SCOPE` — scope: the fixture's eleven rows under the two constructors. *Refuter:* a fixture row the Join reading does not reproduce, or a reference that is not lower.
+
 ### S4.2 Grounding a finite sample
 
 For any finite nonempty ordered sample \(S=(s_1,\ldots,s_n)\) of existing points, define the incremental grounding ladder:
@@ -470,6 +537,15 @@ Then \(P_n\) is one addressable point representing the selected sample through a
 **Authority:** DERIVED from the current binary constructor plus HUMAN H5/H6 selected-sample grounding premises. D1/D2/D6 provide bounded binary-recursion capability witnesses; the graphics do not state this universal theorem.
 
 Every finite nonempty sample of already-existing Lace points can be represented by one later Lace point using repeated binary Join.
+
+*Audit pass 2 note — 2026-09-22 (maps). Added; the statement and proof above are kept as written.* The statement reads, verbatim, *"can be represented by one **later** Lace point"*; its base case reads *"the selected row is already one addressable point"*. For \(n=1\) the representing point is the sample point itself, not a later one (board finding MA-M03). Restated with the base case included and the premises named:
+
+**Theorem G (restated).** For every valid state \(L\) and every finite nonempty ordered sample \(S=(s_1,\ldots,s_n)\) of its indices, the ladder \(P_1=s_1\), \(P_{m+1}=\mathsf{Join}(P_m,s_{m+1})\) yields a point \(P_n\) with \(S\subseteq\operatorname{Reach}(P_n)\); it appends exactly \(n-1\) rows; and for \(n\ge2\), \(P_n>s_i\) for every \(i\) — the point is later than every sample point. For \(n=1\), \(P_1=s_1\) and nothing is appended.
+
+*Premises:* the S3.4 definition of Reach; Join as concatenation under the operand condition — Lemma L2 keeps every intermediate state valid, so Lemma L1 makes every Reach defined. The human premises H5 (a chosen portion may become one point) and H6 (one row per sample extension) fix **that this ladder is the construction the model adopts**; the proof does not use them. Nothing about which samples are chosen (RM-A) is assumed.
+*Proof.* As above, with the base case as stated. The "later" clause: for \(n\ge2\), \(P_n\) is the last appended row, so its index exceeds every index present before the ladder, including every \(s_i\). The row count is one per step. ∎
+
+*Stamp:* `PROVED_WITHIN_SCOPE` — scope: the ladder over an already-selected sample; not a selection rule, not a retention rule. *Refuter:* a sample point outside \(\operatorname{Reach}(P_n)\), or a step that appends other than one row. *Script receipt:* 500 random valid states with random samples, 0 failures ([pass-2 findings](plans/math-execution-audit-pass-2-findings.md)).
 
 *Proof by induction.*
 
@@ -513,6 +589,25 @@ D1 row 0010 is a bounded source witness of the same effect:
 \]
 
 D1 0010 is a **bounded GFX witness**. The universal whole-prefix construction is DERIVED from the HUMAN grounding premises plus repeated Join; it is not direct Graphic-D prose.
+
+#### Audit pass 2 — Lemma WP (whole-prefix covering point, with the index arithmetic) · 2026-09-22
+
+*Added block (audit pass 2, maps). Nothing above it is edited. The paragraphs above assert the conclusion; this block writes the construction's indices and proves coverage by induction (board finding MA-M04).*
+
+**Lemma WP.** Let \(L_0\) be a valid state with \(m\ge2\) rows, indices \(0,\ldots,m-1\), and ground the sample \((0,1,\ldots,m-1)\) by the S4.2 ladder. Then:
+
+1. the ladder appends exactly \(m-1\) rows, and \(P_k\) sits at index \(m+k-2\) for \(2\le k\le m\) (with \(P_1=0\));
+2. \(\operatorname{Reach}(P_k)=\{0,\ldots,k-1\}\cup\{m,\ldots,m+k-2\}\) for \(2\le k\le m\);
+3. the final point \(P_m\) sits at index \(2m-2\) and \(\operatorname{Reach}(P_m)=\{0,\ldots,2m-2\}\): every original row and every intermediate Join row.
+
+For \(m=1\), \(P_1=0\), nothing is appended, and the covering point is the row itself.
+
+*Premises:* Lemma L1, Lemma L2, the S3.4 definition of Reach, the S4.2 ladder. No human premise beyond those the ladder already carries.
+*Proof.* (1) Each step from \(P_k\) to \(P_{k+1}\) appends one row; the first appended row takes index \(m\), so the \((k-1)\)-th takes index \(m+k-2\). (2) Induction on \(k\). For \(k=2\): \(P_2=\mathsf{Join}(0,1)\) at index \(m\), and \(\operatorname{Reach}(P_2)=\{m\}\cup\operatorname{Reach}(0)\cup\operatorname{Reach}(1)\); row 0 is a WORD row in a valid state, so \(\operatorname{Reach}(0)=\{0\}\), and by Lemma L1 \(\operatorname{Reach}(1)\) contains 1 and lies in \(\{0,1\}\); the union is \(\{0,1,m\}\). For the step: \(\operatorname{Reach}(P_{k+1})=\{m+k-1\}\cup\operatorname{Reach}(P_k)\cup\operatorname{Reach}(k)\), and by Lemma L1 \(\operatorname{Reach}(k)\) contains \(k\) and lies in \(\{0,\ldots,k\}\), so the union is \(\{0,\ldots,k\}\cup\{m,\ldots,m+k-1\}\). (3) Put \(k=m\): \(\{0,\ldots,m-1\}\cup\{m,\ldots,2m-2\}=\{0,\ldots,2m-2\}\). ∎
+
+*On the D1 witness above.* D1's own row 0010 covers the eleven-row prefix by the six Joins the panel draws — a different construction from this ladder; the ladder applied to D1 (\(m=11\)) appends ten rows and its covering point sits at index 20 with \(\operatorname{Reach}=\{0,\ldots,20\}\). Both are computed in the script receipt. The panel witnesses coverage; it does not draw this ladder.
+
+*Stamp:* `PROVED_WITHIN_SCOPE` — scope: the ladder over the full prefix in index order; it does not say such a grounding is ever selected (RM-A). *Refuter:* an index outside the formula in (1), or a row outside \(\operatorname{Reach}(P_k)\) that (2) claims. Script receipt: D1 and 500 random valid states, 0 failures ([pass-2 findings](plans/math-execution-audit-pass-2-findings.md)).
 
 ### S4.4 Arrival / root / touch / ground
 
@@ -908,6 +1003,8 @@ This is a theorem of the mathematical type separation.
 
 It is not evidence that future code obeys the theorem.
 
+*Audit pass 2 note — 2026-09-22 (maps). Added; the theorem and proof above are kept as written.* **Premises of RD-1:** \(\Omega_\theta\), \(\Delta_\theta\), \(\omega_\theta\) typed as in S9.1 with codomains that exclude the Lace component; \(\pi_L\) the projection of \((L_n,q,y,w)\) onto its first component; a **device-only** step is one containing no \(\mathsf{Arrive}\) and no \(\mathsf{Join}\). Under those three, the proof above is complete: the Lace component of \(T\) is returned unchanged by construction. *Stamp:* `PROVED_WITHIN_SCOPE` — scope: the typed algebra; a step that includes an append is not a device-only step and is outside the theorem, which is why RD-1 says nothing about code. *Refuter:* none inside the scope; outside it, any step that appends.
+
 ### S9.7 Feedback may produce later input without backward mutation
 
 A behavioral device may affect the external world or request action:
@@ -1133,6 +1230,8 @@ at the claimed source scope.
 **Proof:** a single \(f(L_n)\) cannot equal two distinct values for the same \(L_n\). ∎
 
 This theorem limits inference strength. It does not deny that Lace may be relevant evidence for \(z\).
+
+*Audit pass 2 note — 2026-09-22 (maps). Added; the theorem and proof above are kept as written.* **Premises of OBS-1:** an admissible world set \(\mathcal X\); the projection \(\pi_L\); \(z\) total on \(\mathcal X\); and the S10.2 definition of Lace-identifiability. The theorem is the contrapositive of *"\(z=f\circ\pi_L\) implies \(z\) constant on every fiber of \(\pi_L\)"*, and the one-line proof above is complete. *Stamp:* `PROVED_WITHIN_SCOPE` — scope: the conditional; whether its hypothesis (two admissible worlds with equal Lace and different \(z\)) holds for a given source quantity is what S10.4 argues from readings of the three conceptual sources. Those readings are `DERIVED` from cited source sentences, not proved; the S10.14 line *OBS-1 PROVED WITH SOURCE WITNESSES* joins a proved conditional to derived witnesses, and pass 3 reties that stamp. *Refuter:* none for the conditional; a witness is refuted by showing the two worlds are not both admissible or do not share a Lace prefix.
 
 ### S10.4 Source-backed OBS-1 witnesses
 
