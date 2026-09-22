@@ -1,7 +1,7 @@
-STATUS: FREE
+STATUS: HELD
 STATION: law
 OWNS: AGENTS.md CLAUDE.md docs/staking-the-workspace.md docs/law-why-these-documents.md docs/systems-manifest.md docs/pointer-emission.md docs/references.md CONTRIBUTING.md README.md .gitignore LICENSE docs/README.md
-AGENT: -
-BASE: -
-SINCE: -
-NOTE: Restart Pass 5 narrow reference reconciliation COMPLETE. WebAssembly row now routes target capability with TARGET UNDECIDED; no Core/pointer/acceptance/implementation change.
+AGENT: ChatGPT
+BASE: be6cb35826cdb907a51c6445c8eea5c296ab8b9c
+SINCE: 2026-09-22T08:28:00Z
+NOTE: EXECUTING Behavioral Read Devices Pass 6 Stage E. Reconcile existing manifest integration contracts and agent/source routing to S9-S12/current Water law. No new human ruling, no Core mechanism, no pointer-emission edit.
