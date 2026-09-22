@@ -1,7 +1,7 @@
-STATUS: FREE
+STATUS: HELD
 STATION: maps
 OWNS: docs/reason-model-map.md docs/rust-nostd-*.md docs/atomic-primitives-map.md docs/clock/gearing-code-1to1.md docs/coherence-audit*.md docs/clock/system-mathematical-model.md docs/defrag-plan.md docs/plans/** docs/namespace-register.md docs/*.md (catch-all: any unmatched file at the docs/ root)
-AGENT: -
-BASE: -
-SINCE: -
-NOTE: Behavioral Read Devices Pass 2 COMPLETE. SEE-L/G/Q/H/CF/U observability map sound with opens; OBS-1 proved with source witnesses; S9 chassis sufficient with source-specific factorization; EP-1 support traceability, multi-holder and counterfactual discipline admitted; source architectures mapped without fusion; bounded S10 admitted. No full devices, Core/RM-A/acceptance/target change.
+AGENT: ChatGPT
+BASE: f656efbc3e1fffd857cfca2f8ec6889d52629550
+SINCE: 2026-09-22T06:29:00Z
+NOTE: PLAN ONLY — sit with six technical building references, map capability/interop/host/toolchain relations against math-execution S1-S10, assess inventory modeling, and derive Behavioral Read Devices Pass 3. No model semantic edit or implementation selection.
