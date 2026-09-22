@@ -1,18 +1,20 @@
 # CLIPBOARD — laceArc ← WebAssembly Spec 3.0 (compile target)
 
+**Alignment Restart Pass 5 current target qualification, 2026-09-21:** the executed [target requirements](../plans/source-lab-lace-alignment-pass-5-target-requirements.md) and [target audit](../plans/source-lab-lace-alignment-pass-5-target-audit.md) supersede the former **sealed wasm64** entrance. Current verdict: **TARGET UNDECIDED**. Spec 3.0 establishes Memory64 capability; it does not select the Rust target. `wasm64-unknown-unknown` remains a conditional candidate, and `wasm32-unknown-unknown` is a viable lower-burden candidate. Historical Pass 1–6 seal language below remains dated evidence and must not override this current qualification.
+
 **Current target-sighting addendum, 2026-09-20:** the [repository update pass 2 sightings](#repository-update-pass-2--target-sightings) below address the rust-target Page G request. They distinguish binary grammar, optional name metadata, imported tags and the proposed feature-subset check from an executed validator or build. Earlier Pass 1–6 bodies and receipts remain intact; this is no new whole-shelf accuracy verdict.
 
 **[III] Shadow / read-only projection. Hands win. POINTER emission = `[GAP]`.**  
-**SPECIAL:** This is **compilation-target** admission — Lace Rust `#![no_std]` → `wasm64-unknown-unknown`. **NOT** Core. **NOT** Graphic D. **NOT** an anti-model shelf clipboard.
+**SPECIAL:** This is **compilation-target capability/source** admission for the current wasm32/wasm64 target court. **No target is currently sealed.** **NOT** Core. **NOT** Graphic D. **NOT** an anti-model shelf clipboard.
 
 ```
 +======================================================================+
-|  COMPILATION TARGET — Lace Rust #![no_std]  -->  wasm64-unknown-unknown |
-|  Sealed by human correction: wasm64.  wasm32 is NOT the shelf target.  |
-|  Shadow docs only this pass.  NOT Lace Core.  NOT Graphic D.           |
-|  WASM ops = TARGET semantics.  Do NOT invent POINTER emission / Phi.   |
-|  Do NOT import WASM store/memory/table/stack as Lace's 1D strand.      |
-|  Zero crates.io / foreign deps.  No src/ until pointer-emission accepted.|
+|  TARGET COURT — Lace Rust #![no_std] -> wasm32 OR wasm64              |
+|  Pass-5 verdict: TARGET UNDECIDED. Former wasm64 seal is historical.  |
+|  Memory64 = capability, not target selection.                          |
+|  Shadow docs only. NOT Lace Core. NOT Graphic D.                       |
+|  WASM ops = TARGET semantics. Do NOT invent POINTER emission / Phi.    |
+|  Linear memory / table / stack are not Lace's authoritative strand.    |
 +======================================================================+
 ```
 

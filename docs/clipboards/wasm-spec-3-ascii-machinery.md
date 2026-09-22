@@ -1,6 +1,8 @@
 # WebAssembly Spec 3.0 — ASCII SOURCE MACHINERY (Shadow · compile target)
 
-**Status:** Pass 1–6 EXECUTED (Pass 6 = rigorous diagram correctness + **wasm64** seal). Emission `[GAP]`. See clipboard **P6-A / P6-P / P6-X / P6-F / P6-R**.  
+**Current target qualification — Alignment Restart Pass 5:** historical Pass-6 wasm64-seal language below is preserved as dated source work. The current [target audit](../plans/source-lab-lace-alignment-pass-5-target-audit.md) verdict is **TARGET UNDECIDED**. Read every panel as ISA/target capability machinery usable by whichever target is later selected; no panel itself chooses wasm32 or wasm64.
+
+**Status:** Pass 1–6 EXECUTED historically; Pass 6's **wasm64 seal is superseded as current target state by Alignment Restart Pass 5**. Emission `[GAP]`. See clipboard **P6-A / P6-P / P6-X / P6-F / P6-R**.  
 **Source:** Andreas Rossberg / WebAssembly Community Group, *WebAssembly Specification* Release **3.0 (2026-09-11)**.  
 **PDF:** `refs/local/webassembly-spec-3.0.pdf` → attachment `687e73641a7eec8692273fdf048e1578bf2f379f507c36ec284a39d9e7f70fce` (323 pp., text layer; **never git-add**). SHA-256 `687e73641a7eec8692273fdf048e1578bf2f379f507c36ec284a39d9e7f70fce`. Printed ≈ PDF − 4.  
 **Admission:** [`wasm-spec-3-clipboard.md`](wasm-spec-3-clipboard.md).  
@@ -10,12 +12,11 @@
 
 ```
 +======================================================================+
-|  COMPILATION TARGET — Lace Rust #![no_std]  -->  wasm64-unknown-unknown |
-|  Sealed by human correction: wasm64.  wasm32 is NOT the shelf target.  |
-|  Shadow docs.  NOT Lace Core.  NOT Graphic D.                          |
-|  WASM ops = TARGET semantics.  Do NOT invent emission rules / Phi.     |
-|  Do NOT import WASM store/memory/table/stack as Lace's 1D strand.      |
-|  Zero crates.io / foreign deps.  No src/ until pointer-emission accepted.|
+|  TARGET CAPABILITY MAP — wasm32 / wasm64 candidates                    |
+|  Current verdict: TARGET UNDECIDED. Former wasm64 seal is dated.       |
+|  Shadow docs. NOT Lace Core. NOT Graphic D.                            |
+|  WASM ops = target semantics; they do not select target or emission.   |
+|  Memory/table/stack remain separate from Lace's authoritative strand.  |
 +======================================================================+
 ```
 

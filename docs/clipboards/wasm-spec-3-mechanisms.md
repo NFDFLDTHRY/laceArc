@@ -1,5 +1,7 @@
 # WebAssembly Spec 3.0 — mechanism cards (compile-target system procedures)
 
+**Current target qualification — Alignment Restart Pass 5:** these mechanism cards remain valid WebAssembly target/ISA machinery, but the historical wasm64 seal below is no longer the current target decision. The [Pass-5 target audit](../plans/source-lab-lace-alignment-pass-5-target-audit.md) is **TARGET UNDECIDED**; neither wasm32 nor wasm64 is promoted into Core by this file.
+
 **Status:** Pass 3–4 EXECUTED (Wave A **M-T1…M-T9**; Pass 4 fidelity). ASCII: [`wasm-spec-3-ascii-machinery.md`](wasm-spec-3-ascii-machinery.md) (P-T1…P-T9). Clipboard **P4-X / P4-R**. Emission `[GAP]`.  
 **Source:** Andreas Rossberg / WebAssembly Community Group, *WebAssembly Specification* Release **3.0 (2026-09-11)**.  
 **PDF:** `refs/local/webassembly-spec-3.0.pdf` → attachment `687e73641a7eec8692273fdf048e1578bf2f379f507c36ec284a39d9e7f70fce` (323 pp., text layer; **never git-add**). SHA-256 `687e73641a7eec8692273fdf048e1578bf2f379f507c36ec284a39d9e7f70fce`. Printed ≈ PDF − 4.  
@@ -9,15 +11,11 @@
 
 ```
 +======================================================================+
-|  COMPILATION TARGET — Lace Rust #![no_std]  -->  wasm64-unknown-unknown |
-|  Sealed by human correction: wasm64.  wasm32 is NOT the shelf target.  |
-|  Pass 3 = Wave A system mechanisms (M-T1…M-T9) + P3-M mesh.            |
-|  NOT Xiao–Zhu / Petersen / AgentScope morals (those are anti-model).   |
-|  NOT Lace Core.  NOT Graphic D.  NOT pointer-emission fill.            |
-|  WASM ops = TARGET semantics.  Do NOT invent POINTER emission / Phi.   |
-|  Do NOT import WASM store/memory/table/stack as Lace's 1D strand.      |
-|  Zero crates.io / foreign deps.  No src/ until pointer-emission accepted.|
-|  Status this commit: Pass 3 EXECUTED — Wave A cards + P3-M.            |
+|  TARGET MECHANISMS — usable by wasm target candidates                  |
+|  Current Pass-5 verdict: TARGET UNDECIDED. Historical seal is dated.   |
+|  M-T1…M-T9 remain target/ISA mechanisms, never Lace Core.              |
+|  WASM ops do not choose retention, emission, carrier, or target.       |
+|  Memory/table/stack remain separate from Lace's authoritative strand.  |
 +======================================================================+
 ```
 

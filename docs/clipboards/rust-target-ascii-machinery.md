@@ -1,5 +1,7 @@
 # The rustc toolchain — ASCII SOURCE MACHINERY (shelf 10 · `P-R1`…`P-R18` · `P4-X`)
 
+**Current target qualification — Alignment Restart Pass 5:** this drawing remains a faithful map of the historical wasm64 toolchain path, but it is no longer a target seal. The current [target audit](../plans/source-lab-lace-alignment-pass-5-target-audit.md) verdict is **TARGET UNDECIDED**. Use these panels to price/prove a candidate target, not to decide one by inheritance.
+
 **Status:** **Pass 4 EXECUTED** 2026-09-20 · base `43e290f`. **Station:** clipboards. **Emission:** `[GAP]`. No `src/`.
 **Plan:** [`rust-target-pass-4-plan.md`](rust-target-pass-4-plan.md). **Mechanisms (cited, never rewritten):** Page A of [`rust-target-clipboard.md`](rust-target-clipboard.md), `M-R1`–`M-R18`.
 **Carriers:** [`rust-target-locators.md`](rust-target-locators.md) · [`cargo-build-std-locators.md`](cargo-build-std-locators.md).
@@ -7,11 +9,11 @@
 
 **What this file is.** The eighteen mechanisms drawn as one system, to answer the question a table cannot: **do they compose?**
 
-**What it is not.** Not Core. Not Graphic D. Not a fill of [`pointer-emission.md`](../pointer-emission.md). Not a build, a script, or a recipe that has been run. Not the target seal — that is [the wasm-spec-3 shelf's](wasm-spec-3-clipboard.md); this shelf is the compiler beside it.
+**What it is not.** Not Core. Not Graphic D. Not a fill of [`pointer-emission.md`](../pointer-emission.md). Not a build, a script, or a recipe that has been run. **Not a current target seal.** The Wasm/rustc/Cargo shelves supply evidence to the Pass-5 target court.
 
 ```
 +======================================================================+
-|  SHELF 10 SPECIAL — rustc + cargo -> wasm64-unknown-unknown (Tier 3)  |
+|  SHELF 10 SPECIAL — rustc + cargo target evidence (wasm32/wasm64)    |
 |  Pass 4 = ASCII SOURCE MACHINERY. Toolchain surfaces ONLY.            |
 |  KEEP-read-as-toolchain on all 18 · FORBID-as-Core on all 18.         |
 |                                                                       |
@@ -31,7 +33,7 @@
 
 | Stamp | Where it comes from | Read as |
 |---|---|---|
-| `KEEP-read-as-toolchain` | Page C — all eighteen | how rustc reaches a sealed target, and nothing more |
+| `KEEP-read-as-toolchain` | Page C — all eighteen | how rustc/Cargo reach and constrain candidate targets, and nothing more |
 | `FORBID-as-Core` | Page C — all eighteen | no mechanism here is a Lace mechanism |
 | `SILENT-for-Lace-append` | Page C — all eighteen | the books have no sentence about when a section is appended. Φ `[GAP]` |
 | `FORBID-as-Lace-store` | Page C — `M-R5`, `M-R18` only | a heap is not the strand; an address space is not `L`'s domain |

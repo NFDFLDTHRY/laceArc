@@ -1,4 +1,6 @@
-# CLIPBOARD — laceArc ← The rustc book (Rust toolchain · target `wasm64-unknown-unknown`)
+# CLIPBOARD — laceArc ← The rustc book (Rust toolchain · wasm target candidates)
+
+**Alignment Restart Pass 5 current target qualification, 2026-09-21:** the executed [target requirements](../plans/source-lab-lace-alignment-pass-5-target-requirements.md) and [target audit](../plans/source-lab-lace-alignment-pass-5-target-audit.md) supersede the former **sealed wasm64** entrance. Current verdict: **TARGET UNDECIDED**. This shelf still accurately records the rustc costs and mechanics of `wasm64-unknown-unknown`, but those facts no longer imply selection. Current primary Rust docs retain wasm64 as Tier 3/no precompiled artifacts while wasm32 is Tier 2; actual build/device probes remain NOT_RUN in this pass. Historical mapping bodies below remain dated evidence.
 
 **Shelf 10 forge, 2026-09-20 — read this first.** Every quoted fragment on this page has been re-read against its own cited lines in the SHA-verified file: **44 of 44 stand byte-verbatim, 0 failures.** The [coverage map](#f2--the-coverage-map-what-is-reachable-in-repo-and-what-still-needs-the-book) says which claims a session without the book can check — **9 of 18 mechanisms fully, 11 of 14 pass-0 eyes, 49 of 79 cited ranges** — and what is left is **25 ranges, 150 lines**, listed in order. One citation on this page (`14926–14934`) fails the shelf's own first-line rule and is repaired by a carry, not by an edit. See [the forge section](#shelf-10-forge--the-traceability-gate-and-the-coverage-map). The pass bodies below are dated records and stand unedited.
 
@@ -13,21 +15,21 @@
 **Current target evidence, 2026-09-20:** read the [repository update pass 2 carry](#repository-update-pass-2--target-evidence-carry) alongside Pages B/D/F/G/X. The Wasm grammar and optional name carrier have now been sighted; name-based crate absence and configured feature-subset enforcement remain unestablished. Original Pass 0/1 bodies, statuses and receipts remain dated records, not a fresh build or acceptance claim. Cargo A4 is still next.
 
 **[III] Shadow / read-only. Hands win. POINTER emission = `[GAP]`.**
-**SPECIAL:** this is **toolchain** admission for the sealed compile target — how Rust reaches `wasm64-unknown-unknown` — **NOT** Core, **NOT** Graphic D, **NOT** a second target (the target itself is sealed on the [wasm-spec-3 shelf](wasm-spec-3-clipboard.md); this shelf is the compiler beside it).
+**SPECIAL:** this is **toolchain** admission for the wasm target court — how Rust reaches built-in wasm32/wasm64 targets and what each costs. **No target is currently sealed.** **NOT** Core, **NOT** Graphic D, **NOT** a second target authority.
 
 ```
 +======================================================================+
-|  TOOLCHAIN — rustc  -->  wasm64-unknown-unknown  (Tier 3)              |
-|  Staked by the human 2026-09-19 22:54 PT by attachment (A1).           |
-|  Document never enters git. Sighting enters. Eye entries are short.    |
+|  TOOLCHAIN COURT — rustc -> wasm32 / wasm64 candidates                 |
+|  Pass-5 verdict: TARGET UNDECIDED. wasm64 Tier-3 costs remain sourced. |
+|  wasm32 is now a lawful comparison candidate; neither is Core law.     |
 |  KEEP-read-as-toolchain · FORBID-as-Core · SILENT-for-Lace-append.     |
-|  Zero crates.io / foreign deps still law. No src/ until emission.      |
+|  Zero crates.io / foreign deps still law. No implementation gate.      |
 +======================================================================+
 ```
 
 **Source:** *The rustc book* (rust-lang.org; the compiler's own documentation), **version not stated in the attachment**; identity is the file. Attachment: `4cd6a54b-The-rustc-book.txt`, a text conversion; **1,056,614 bytes · 31,482 lines**; **SHA-256 `4a30e620a066c8157de4af674196df81694bb183ea09cef0a89dd8dbec4e74d3`**. Working copy (gitignored): `refs/local/the-rustc-book.txt`. **Never git-add it.** Locators are line numbers into that exact file.
 
-**Authority:** [graphics A–D](../graphics/README.md) → [manifest](../systems-manifest.md) → [law](../law-why-these-documents.md) → [AGENTS.md](../../AGENTS.md) Implementation Law → the wasm-spec-3 shelf (target seal) → this shelf (toolchain, lowest).
+**Authority:** [graphics A–D](../graphics/README.md) → [manifest](../systems-manifest.md) → [law](../law-why-these-documents.md) → [AGENTS.md](../../AGENTS.md) Implementation Law → the Wasm/rustc/Cargo source shelves → Pass-5 target court. This shelf supplies toolchain evidence; it does not select the target.
 
 ---
 
