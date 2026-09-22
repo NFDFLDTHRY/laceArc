@@ -1,6 +1,6 @@
 # MATHEMATICAL EXECUTION MODEL — Behavioral Read Devices Pass 2 PLAN
 
-**Status:** PLAN — NOT EXECUTED.
+**Status:** EXECUTED 2026-09-21.
 **Campaign:** Mathematical Execution Model — Behavioral Read Devices.
 **Pass:** 2.
 **Pass name:** **MAP WHAT THE EYE CAN SEE — observability, non-identifiability, and descriptive composition.**
@@ -10,6 +10,12 @@
 **Implementation:** none.
 **Core / RM-A / acceptance / target:** unchanged.
 **Full source-specific devices:** still deferred.
+**Execution claim:** 0f81a798f773d5b97c8860d10f17e0649e632168.
+**Observability map:** ccee46bfb63174e7bcfe2c897eaa434a271d5df1.
+**Composition map:** 28aef6c5230429aed1f267060c9d6709d8408cc5.
+**Primary model S10:** 986606f4456313519c3b16601b847468c593a3bc.
+**Findings:** c407064bfcb88dde0d4b36492c67f63dbdccbe50.
+**Final verdict:** **OBSERVABILITY MAP SOUND WITH OPENS · OBS-1 PROVED WITH SOURCE WITNESSES · S9 CHASSIS SUFFICIENT WITH SOURCE-SPECIFIC FACTORIZATION · SOURCE ARCHITECTURES MAPPED WITHOUT FUSION · S10 ADMITTED WITH OPENS.**
 
 ---
 
