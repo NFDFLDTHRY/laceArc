@@ -4,6 +4,8 @@ These works are **not** the source of record for the Lace substrate. The substra
 
 They are source material for the **laceArc laboratory**. Their clipboards may expose behavioral goals, possible machinery, algorithms, mathematics, failure modes, and physical/platform constraints. Do not import those directly into Core because a passage feels similar to wire, star, strand, token, or graph; route them through laboratory evidence and testing instead.
 
+**Current machine-construction routing — Behavioral Read Devices Pass 5/6:** the five research sources now also feed a tested optional machine-operator library **above Lace**, without becoming Core; see the [source-machine atlas](plans/math-execution-behavioral-read-devices-pass-5-source-machine-atlas.md), [machine factorization](plans/math-execution-behavioral-read-devices-pass-5-machine-factorization.md), and [`math-execution-model.md` S12](math-execution-model.md#s12--behavioral-machine-construction-factorization). The behavioral-goal sources have current mathematical blueprints: [HCC-A](plans/math-execution-behavioral-read-devices-pass-5-hcc-device-blueprint.md), [Coffee Cup](plans/math-execution-behavioral-read-devices-pass-5-coffee-cup-device-blueprint.md), and [Water](plans/math-execution-behavioral-read-devices-pass-5-water-device-blueprint.md). These are mathematical device realizations, not code/runtime selection.
+
 Do not commit PDF binaries to this public repository.
 
 ## Holdings (local / project workspace only)
@@ -86,7 +88,7 @@ Conceptual reference for event causality and intervention: conditions, release, 
 
 #### 8. Where the Water Is Loud + Dual Proofing Systems
 
-Conceptual reference for communication and shared footing. The story, Proof Ledger, River model, and proposed interface examine pointable observations, differences, unknowns, and pressure. OBS / DELTA / UNK / INVALID are concepts in that reference, not required LaceArc machinery or POINTER emission.
+Conceptual reference for communication and shared footing. The story, Proof Ledger, River model, and proposed interface examine pointable observations, differences, unknowns, and pressure. OBS / DELTA / UNK / INVALID are concepts in that reference, not required LaceArc machinery or POINTER emission. **Current target qualification:** later human law supersedes the raw source's blocking-UNK / lexical-INVALID behavior: UNK is a nonblocking expected-evidence shape, and INVALID requires later evidence-backed refutation.
 
 #### 8b. Model of Perceived Reality and Story Defense  (hologram touch)
 
