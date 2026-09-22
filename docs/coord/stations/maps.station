@@ -1,7 +1,7 @@
-STATUS: FREE
+STATUS: HELD
 STATION: maps
 OWNS: docs/reason-model-map.md docs/rust-nostd-*.md docs/atomic-primitives-map.md docs/clock/gearing-code-1to1.md docs/coherence-audit*.md docs/clock/system-mathematical-model.md docs/defrag-plan.md docs/plans/** docs/namespace-register.md docs/*.md (catch-all: any unmatched file at the docs/ root)
-AGENT: -
-BASE: -
-SINCE: -
+AGENT: Claude-Fable-math-audit
+BASE: 5ffe01156047df01e8cd0823a286b53e89082905
+SINCE: 2026-09-22T23:44:45Z
 NOTE: Math-execution audit pass 3 COMPLETE 2026-09-22 (6c6e590): STAR-1/PATH-1/VIEW-1 labeled, S-collisions qualified, ten PROVED stamps retied (two of S8's by reference), Phi dated, refusal + Sigma pointed, S0 routes, unnumbered current receipt after S12. Equation-line diff empty, S8 byte-identical, heading set unchanged. Pass 4 (dated headers on the four satellites + update-pass-5 witness) is PLAN and waits on the human's proceed.
