@@ -2,9 +2,9 @@
 
 **Not the manifest.** [`systems-manifest.md`](systems-manifest.md) is the Hands contract map; this is an ASCII reading of it and settles nothing it does not.
 
-**Current reading qualification, 2026-09-21:** **Pass 38 — Source → Lab → Lace Alignment Restart Pass 6** is the current supported-domain / carrier / working-set envelope. **Pass 37 remains the compilation-target audit; Pass 36 remains the desired-behavior mechanism layer; Pass 35 remains the mechanism-agnostic assay layer; Pass 34 remains operational traceability; Pass 33 remains vertical authority/context; Pass 32 remains the canonical mechanism catalog; `systems-manifest.md` remains the contract registry.** Pass 38 does not change Core. It separates logical domain, encoded history, authoritative retained history, resident Core bytes, disposable derived working state, and holder/Layer-III state; proves no current mechanism requires whole-history residence; derives backend-neutral carrier/refusal/recovery obligations; and records **SUPPORTED DOMAIN BOUNDED CONDITIONALLY · CARRIER OBLIGATIONS CLOSED WITH RULING DEBT · CORRECTNESS WORKING SET PARAMETRIC · NOT READY FOR TARGET COURT**. Compilation target remains **TARGET UNDECIDED**. RM-A remains open / MISSING-A and implementation remains closed.
+**Current reading qualification, 2026-09-22:** **Pass 39 — Behavioral Read Devices Pass 6 whole-campaign reconciliation** is the current integration overlay. It adds no Core mechanism and supersedes none of Passes 32–38. **Pass 38 remains the supported-domain / carrier / working-set envelope; Pass 37 remains the compilation-target audit; Pass 36 remains desired-behavior mechanism recovery; Pass 35 remains the mechanism-agnostic assay layer; Pass 34 remains operational traceability; Pass 33 remains vertical authority/context; Pass 32 remains the canonical mechanism catalog; `systems-manifest.md` remains the contract registry.** Pass 39 routes canonical Lace through derived sampling/search/views into the non-Core S9 read-device algebra, S10 observability court, S12 optional machine-operator library and source-specific HCC/Coffee Cup/Water device blueprints, while S11 remains the separate realization/evidence court. Water follows the later human ruling: UNK is nonblocking expected-evidence shape and INVALID requires later refuting evidence. Exact H×C×W coupling remains OPEN. RM-A remains OPEN / MISSING-A; G1 OPEN; R3 OPEN; compilation target **TARGET UNDECIDED**; pointer acceptance absent; implementation closed.
 
-**Executed passes:** [1](systems-manifest-ascii-pass-1-plan.md) · [2](systems-manifest-ascii-pass-2-plan.md) · [3](systems-manifest-ascii-pass-3-plan.md) · [4](systems-manifest-ascii-pass-4-plan.md) · [5](systems-manifest-ascii-pass-5-plan.md) · [6](systems-manifest-ascii-pass-6-plan.md) · [7](systems-manifest-ascii-pass-7-plan.md) · [8](systems-manifest-ascii-pass-8-plan.md) · [9](systems-manifest-ascii-pass-9-plan.md) · [10](systems-manifest-ascii-pass-10-plan.md) · [11](systems-manifest-ascii-pass-11-plan.md) · [12](systems-manifest-ascii-pass-12-plan.md) · [13](systems-manifest-ascii-pass-13-plan.md) · [14](systems-manifest-ascii-pass-14-plan.md) · [15](systems-manifest-ascii-pass-15-plan.md) · [16](systems-manifest-ascii-pass-16-plan.md) · [17](systems-manifest-ascii-pass-17-plan.md) · [18](systems-manifest-ascii-pass-18-plan.md) · [19](systems-manifest-ascii-pass-19-plan.md) · [20](systems-manifest-ascii-pass-20-plan.md) · [21](systems-manifest-ascii-pass-21-plan.md) · [22](systems-manifest-ascii-pass-22-plan.md) · [23](systems-manifest-ascii-pass-23-plan.md) · [24](systems-manifest-ascii-pass-24-plan.md) · [25](systems-manifest-ascii-pass-25-plan.md) · [26](plans/lace-context-iter6-pass-3-findings.md) · [27](plans/lace-context-iter7-pass-3-audit.md) · [28](plans/reduction-pass-3-findings.md) · [29](plans/math-execution-root-touch-fold-pass-5-findings.md) · **30 = SAMPLING / DENSITY / EMERGENCE Pass 6 reconciliation** · **[31](plans/lab-source-architecture-pass-1-plan.md) = LAB SOURCE ARCHITECTURE Pass 1 (current source/lab overlay; Core unchanged).** · **[32](plans/manifest-reconciliation-pass-1-plan.md) = MANIFEST RECONCILIATION Pass 1 (current mechanism catalog ↔ contract registry).** · **[33](plans/source-lab-lace-alignment-pass-1-plan.md) = SOURCE → LAB → LACE ALIGNMENT RESTART Pass 1 (current vertical authority/context overlay; Pass 32 catalog preserved).** · **[34](plans/source-lab-lace-alignment-pass-2-plan.md) = SOURCE → LAB → LACE ALIGNMENT RESTART Pass 2 (operational traceability; evidence/debt overlay; Pass 32/33 preserved).** · **[35](plans/source-lab-lace-alignment-pass-3-plan.md) = SOURCE → LAB → LACE ALIGNMENT RESTART Pass 3 (behavioral-goal assays; mechanism-agnostic self-test; no holder/Core promotion).** · **[36](plans/source-lab-lace-alignment-pass-4-plan.md) = SOURCE → LAB → LACE ALIGNMENT RESTART Pass 4 (desired-behavior mechanism recovery; Pass-3 assays retained as projections; implementation open).** · **[37](plans/source-lab-lace-alignment-pass-5-plan.md) = SOURCE → LAB → LACE ALIGNMENT RESTART Pass 5 (compilation-target audit; former wasm64 seal reopened; TARGET UNDECIDED; Core unchanged).** · **[38](plans/source-lab-lace-alignment-pass-6-findings.md) = SOURCE → LAB → LACE ALIGNMENT RESTART Pass 6 (supported-domain / carrier / working-set envelope; TARGET UNDECIDED; NOT READY FOR TARGET COURT; Core unchanged).**
+**Executed passes:** [1](systems-manifest-ascii-pass-1-plan.md) · [2](systems-manifest-ascii-pass-2-plan.md) · [3](systems-manifest-ascii-pass-3-plan.md) · [4](systems-manifest-ascii-pass-4-plan.md) · [5](systems-manifest-ascii-pass-5-plan.md) · [6](systems-manifest-ascii-pass-6-plan.md) · [7](systems-manifest-ascii-pass-7-plan.md) · [8](systems-manifest-ascii-pass-8-plan.md) · [9](systems-manifest-ascii-pass-9-plan.md) · [10](systems-manifest-ascii-pass-10-plan.md) · [11](systems-manifest-ascii-pass-11-plan.md) · [12](systems-manifest-ascii-pass-12-plan.md) · [13](systems-manifest-ascii-pass-13-plan.md) · [14](systems-manifest-ascii-pass-14-plan.md) · [15](systems-manifest-ascii-pass-15-plan.md) · [16](systems-manifest-ascii-pass-16-plan.md) · [17](systems-manifest-ascii-pass-17-plan.md) · [18](systems-manifest-ascii-pass-18-plan.md) · [19](systems-manifest-ascii-pass-19-plan.md) · [20](systems-manifest-ascii-pass-20-plan.md) · [21](systems-manifest-ascii-pass-21-plan.md) · [22](systems-manifest-ascii-pass-22-plan.md) · [23](systems-manifest-ascii-pass-23-plan.md) · [24](systems-manifest-ascii-pass-24-plan.md) · [25](systems-manifest-ascii-pass-25-plan.md) · [26](plans/lace-context-iter6-pass-3-findings.md) · [27](plans/lace-context-iter7-pass-3-audit.md) · [28](plans/reduction-pass-3-findings.md) · [29](plans/math-execution-root-touch-fold-pass-5-findings.md) · **30 = SAMPLING / DENSITY / EMERGENCE Pass 6 reconciliation** · **[31](plans/lab-source-architecture-pass-1-plan.md) = LAB SOURCE ARCHITECTURE Pass 1 (current source/lab overlay; Core unchanged).** · **[32](plans/manifest-reconciliation-pass-1-plan.md) = MANIFEST RECONCILIATION Pass 1 (current mechanism catalog ↔ contract registry).** · **[33](plans/source-lab-lace-alignment-pass-1-plan.md) = SOURCE → LAB → LACE ALIGNMENT RESTART Pass 1 (current vertical authority/context overlay; Pass 32 catalog preserved).** · **[34](plans/source-lab-lace-alignment-pass-2-plan.md) = SOURCE → LAB → LACE ALIGNMENT RESTART Pass 2 (operational traceability; evidence/debt overlay; Pass 32/33 preserved).** · **[35](plans/source-lab-lace-alignment-pass-3-plan.md) = SOURCE → LAB → LACE ALIGNMENT RESTART Pass 3 (behavioral-goal assays; mechanism-agnostic self-test; no holder/Core promotion).** · **[36](plans/source-lab-lace-alignment-pass-4-plan.md) = SOURCE → LAB → LACE ALIGNMENT RESTART Pass 4 (desired-behavior mechanism recovery; Pass-3 assays retained as projections; implementation open).** · **[37](plans/source-lab-lace-alignment-pass-5-plan.md) = SOURCE → LAB → LACE ALIGNMENT RESTART Pass 5 (compilation-target audit; former wasm64 seal reopened; TARGET UNDECIDED; Core unchanged).** · **[38](plans/source-lab-lace-alignment-pass-6-findings.md) = SOURCE → LAB → LACE ALIGNMENT RESTART Pass 6 (supported-domain / carrier / working-set envelope; TARGET UNDECIDED; NOT READY FOR TARGET COURT; Core unchanged).** · **[39](plans/math-execution-behavioral-read-devices-pass-6-findings.md) = BEHAVIORAL READ DEVICES Pass 6 whole-campaign reconciliation (S9–S12 / blueprints / Water current law / realization court propagated; non-Core; gates unchanged).**
 
 **Authority:** `docs/systems-manifest.md`. Companion, not a replacement.  
 **Hands:** Graphics A–D. Shoe in hands.  
@@ -4710,3 +4710,189 @@ IMPLEMENTATION / ACCEPTANCE:
 ~~~
 
 Pass 38 narrows the court. It does not award wasm32 or wasm64 a win.
+
+---
+
+## Pass 39 — Behavioral Read Devices Pass 6 — whole-campaign reconciliation
+
+**Campaign:** [Behavioral Read Devices Pass 6](plans/math-execution-behavioral-read-devices-pass-6-plan.md).  
+**Findings:** [Pass-6 findings](plans/math-execution-behavioral-read-devices-pass-6-findings.md).  
+**Job:** reconcile the five executed Behavioral Read Devices passes across the live repository after upstream source/entry surfaces have been repaired. **This is an integration overlay, not a new theory pass, not a Core mechanism pass, and not implementation authority.**
+
+### P39-A — one substrate, read-only machine layer
+
+~~~text
+CANONICAL LACE
+Graphics A-D / systems-manifest
+L-M01...L-M21 + L-GAP-RM
+        |
+        +--> derived sampling / search / views
+        |        L-M20 / L-M21
+        |        reconstructible / non-authoritative
+        |
+        v
+S9 READ DEVICE
+D_theta = (Q, G, Omega, Delta, omega)
+read-only over Lace
+RD-1: device-only step = identity on authoritative Lace
+        |
+        v
+S10 OBSERVABILITY COURT
+SEE-L / SEE-G / SEE-Q / SEE-H / SEE-CF / SEE-U
+pointability + provenance + identifiability
+        |
+        v
+S12 OPTIONAL MACHINE-OPERATOR LIBRARY
+Par / Generate / Check / Advance / Stop / Resolve
+Candidate != Evidence
+Verifier != Truth
+optional device-local operators, not a common mandatory chassis
+        |
+        +----------------------+----------------------+
+        |                      |                      |
+        v                      v                      v
+ HCC-A DEVICE           COFFEE CUP DEVICE         WATER DEVICE
+ source-specific        source-specific           source-specific
+ blueprint              blueprint                 blueprint
+        |                      |                      |
+        +----------------------+----------------------+
+                               |
+                               v
+                   holder/application behavior
+
+NO EDGE ABOVE WRITES DIRECTLY TO LACE.
+A future accepted Lace contract is still required for any write-adjacent promotion.
+~~~
+
+### P39-O — S11 realization/evidence court runs beside the device
+
+~~~text
+                         S9 / S10 / S12 DEVICE
+                                  |
+                                  | realization may use
+                                  v
+CARGO -> RUSTC -> WASM -> BROWSER HOST / EMBEDDER
+                              |
+                              +--> GAP-HOST remains named
+                              |
+                              +--> WEBGPU -> WGSL
+                              |
+                              +--> WEBNN (optional application plane)
+
+technical source / build / runtime / accelerator evidence
+                    !=
+semantic truth / behavioral evidence class / Lace authority
+~~~
+
+S11 preserves the T0-T6 evidence ladder and typed planes:
+
+- Cargo / rustc establish build and toolchain facts;
+- WebAssembly establishes module/runtime semantics available from its source;
+- the browser host/embedder is a separate dependency surface and **GAP-HOST** remains explicit where source evidence is missing;
+- WebGPU/WGSL and WebNN are optional realization/application planes;
+- accelerator state is not authoritative Lace state;
+- compute-plane success does not upgrade Candidate to Evidence or Verifier to Truth.
+
+### P39-F — Pass-4 graphics-fidelity fences retained
+
+Pass 39 inherits, without weakening:
+
+- Root != FullStar;
+- StarWords != FullStar;
+- Reach proves membership, not path multiplicity;
+- D1 contains real POINTER-to-POINTER recursion and multiple distinct paths;
+- WordTrace/path provenance remains explicit;
+- projection is a policy family, not one uniquely implied layout;
+- Graphic-C 2D projection is not the H7-H12 sampling mechanism;
+- source authority, human rulings, derived mathematics and overlays remain separately stamped;
+- S9-S12 remain external overlays, not Graphic-D row kinds or new L-M mechanisms.
+
+### P39-W — Water current-law reconciliation
+
+Three layers remain separate:
+
+~~~text
+RAW WATER SOURCE
+historical source wording
+        |
+        X not automatically current target semantics
+        |
+        v
+LATER HUMAN RULING
+current target semantics
+        |
+        v
+PASS-5 WATER DEVICE BLUEPRINT
+~~~
+
+Current target:
+
+- **UNK** = nonblocking expected-evidence shape awaiting future evidence;
+- **INVALID** = a claim later refuted by evidence;
+- old blocking-UNK / lexical-INVALID / stop-word interpretations remain historical provenance only;
+- Water OBS / DELTA / UNK / INVALID do not become Graphic-D row types;
+- Water's device does not supply RM-A or pointer acceptance.
+
+### P39-C — composition status
+
+~~~text
+HCC-A blueprint
+      \
+       \
+        +---- typed candidate interfaces ----+
+       /                                      |
+Coffee Cup blueprint                          |
+       \                                      v
+        +------------------------------> diagnostic / holder composition
+       /
+Water blueprint
+
+exact H x C x W runtime coupling / scheduler = OPEN
+~~~
+
+The Pass-5 crosswalk admits type-safe candidate interfaces and useful compatibility hypotheses. It does **not** establish one fused runtime, one universal schedule, or automatic promotion of Cup/Water diagnostics into HCC facts.
+
+### P39-G — unchanged gates
+
+| Gate | Current status after Pass 39 |
+|---|---|
+| RM-A retain-when | **OPEN / MISSING-A** |
+| G1 tokenization | **OPEN** |
+| R3 volatile vs durable lifetime | **OPEN** |
+| compilation target | **TARGET UNDECIDED** |
+| pointer-emission human acceptance | **ABSENT** |
+| Core implementation authorization | **CLOSED** |
+| `src/` | **ABSENT** |
+| exact H x C x W coupling | **OPEN** |
+| GAP-HOST | **OPEN / NAMED SOURCE GAP** |
+
+### P39-R — reconciliation verdict
+
+~~~text
+FIVE-PASS CAMPAIGN:
+    COHERENT AFTER PROPAGATION REPAIR
+
+WATER CURRENT LAW:
+    RECONCILED
+
+HISTORY:
+    PRESERVED
+
+ENTRY STORY:
+    COHERENT FOR THE BOUNDED CAMPAIGN
+
+S9-S12:
+    NON-CORE INTEGRATION LAYER
+
+PASS 39:
+    WHOLE-CAMPAIGN OVERLAY SOUND
+
+NEW CORE MECHANISMS:
+    NONE
+
+RM-A / G1 / R3 / TARGET / POINTER ACCEPTANCE:
+    UNCHANGED
+~~~
+
+Pass 39 closes the Behavioral Read Devices propagation campaign. It does not start implementation, RM-A design, G1 work, target selection, carrier selection, host-source acquisition, or H x C x W scheduler design.
+
