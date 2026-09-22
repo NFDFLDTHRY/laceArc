@@ -1,6 +1,6 @@
 # Mathematical execution model — Lace
 
-**Status:** ROOT / TOUCH / FOLD constructor history + SAMPLING / DENSITY / EMERGENCE reconciliation + Behavioral Read Devices Pass 1 generic S9, qualified by Alignment Restart Pass 1. **Pointer construction and human-ruled sampling/search are reconciled; canonical `SM-GAP-RM` remains open, with RM-A the primary unresolved retain decision. Bounded Lab evidence partially closes RM-B for selected finite contiguous samples and class-specifically closes RM-C for RootTouch / contiguous grounding. Behavioral devices are now admitted mathematically as read-only stateful observers over Lace plus explicit external context; no source-specific device, Core row, retention rule, or implementation follows.**
+**Status:** ROOT / TOUCH / FOLD constructor history + SAMPLING / DENSITY / EMERGENCE reconciliation + Behavioral Read Devices Passes 1–2 (generic S9 + observability/composition S10), qualified by Alignment Restart Pass 1. **Pointer construction and human-ruled sampling/search are reconciled; canonical `SM-GAP-RM` remains open, with RM-A the primary unresolved retain decision. Bounded Lab evidence partially closes RM-B for selected finite contiguous samples and class-specifically closes RM-C for RootTouch / contiguous grounding. Behavioral devices are admitted mathematically as read-only stateful observers over Lace plus explicit external context; Pass 2 now limits what they may claim to know from Lace and preserves source-specific descriptive architectures without building full HCC/Cup/Water devices. No Core row, retention rule, acceptance, target choice, or implementation follows.**
 **Campaign:** ROOT / TOUCH / FOLD established LAND/root/RootTouch/binary Join/finite grounding; its provenance-era Pass 6 is retained as history. SAMPLING / DENSITY / EMERGENCE Passes 1–5 establish the later human-ruled 1D+2D sampling/search model; this Pass 6 propagates that active reconciliation.
 **Pass 3:** [plan](plans/math-execution-root-touch-fold-pass-3-plan.md) · [findings](plans/math-execution-root-touch-fold-pass-3-findings.md).  
 **Pass 4 reconciliation:** [plan](plans/math-execution-root-touch-fold-pass-4-plan.md) · [findings](plans/math-execution-root-touch-fold-pass-4-findings.md).  
@@ -925,3 +925,404 @@ S9 does not define:
 \]
 
 Full source-specific behavioral devices are deliberately deferred.
+
+
+---
+
+## S10 — Observability, non-identifiability, and descriptive composition
+
+**Campaign:** Behavioral Read Devices Pass 2 observability map + descriptive composition map.
+
+**Scope:** epistemic/descriptive court layered above S9. This section says what a behavioral device may claim to identify from Lace, how mixed provenance must remain visible, and what source-specific mathematical shapes must be preserved before full devices are written.
+
+### S10.1 Observability stamps
+
+For a source-defined quantity \(z\), Pass 2 may assign one or more analytical stamps:
+
+\[
+\Sigma_{\mathrm{see}}
+=
+\{
+SEE\!-\!L,\;
+SEE\!-\!G,\;
+SEE\!-\!Q,\;
+SEE\!-\!H,\;
+SEE\!-\!CF,\;
+SEE\!-\!U
+\}.
+\]
+
+Meanings:
+
+- \(SEE\!-\!L\): identifiable from the named Lace prefix using current lawful reads;
+- \(SEE\!-\!G\): requires external/context information not guaranteed by Lace;
+- \(SEE\!-\!Q\): requires holder/device-local state;
+- \(SEE\!-\!H\): requires multi-holder pairing/acknowledgement/relation;
+- \(SEE\!-\!CF\): requires counterfactual/model assumptions;
+- \(SEE\!-\!U\): unresolved, source-open, or missing-evidence dependent.
+
+These are **classification stamps**, not runtime types or storage classes.
+
+A quantity may carry several stamps.
+
+### S10.2 Lace-identifiability
+
+Let an admissible descriptive world be
+
+\[
+X=(L_n,q,g,h,m).
+\]
+
+A quantity \(z\) is Lace-identifiable on admissible world set \(\mathcal X\) iff there exists a total function \(f\) such that
+
+\[
+\forall X\in\mathcal X:
+\quad
+z(X)=f(\pi_L(X)).
+\]
+
+Equivalently, \(z\) must be constant on every fiber of the Lace projection:
+
+\[
+\pi_L(X)=\pi_L(X')
+\Rightarrow
+z(X)=z(X').
+\]
+
+### S10.3 OBS-1 — non-identifiability theorem
+
+If there exist admissible worlds \(X,X'\) such that
+
+\[
+\pi_L(X)=\pi_L(X')
+\]
+
+but
+
+\[
+z(X)\neq z(X'),
+\]
+
+then no total Lace-only function can correctly identify \(z\) over that admissible world set.
+
+Formally:
+
+\[
+\boxed{
+\exists X,X':
+\pi_L(X)=\pi_L(X')
+\land
+z(X)\neq z(X')
+\Rightarrow
+z\notin \mathsf{Func}(L)
+}
+\]
+
+at the claimed source scope.
+
+**Proof:** a single \(f(L_n)\) cannot equal two distinct values for the same \(L_n\). ∎
+
+This theorem limits inference strength. It does not deny that Lace may be relevant evidence for \(z\).
+
+### S10.4 Source-backed OBS-1 witnesses
+
+#### HCC-A
+
+The source explicitly permits the same architecture with different parameters and says RIC/PFC receive the same signals in parallel.
+
+Holding structural/Lace evidence fixed while varying:
+- priors/templates;
+- priority stack;
+- pruning/arbitration;
+- local Meaning/Emotion/Identity state
+
+can change Story updates, Meaning, Emotion, Identity and Behavior.
+
+Therefore those local quantities are not functions of Lace alone.
+
+#### Coffee Cup
+
+The same retained event history can coexist with different:
+- relevant current time;
+- intervention capability;
+- physical/social constraints;
+- aftermath narrative/state.
+
+The source makes Trajectory a shrinking intervention window under time and makes Aftermath causal in later conditions.
+
+Therefore the control window and aftermath are not functions of Lace history alone.
+
+#### Water / Dual Proofing
+
+The same recorded/shared structural prefix can coexist with different:
+- holder OBS inventories;
+- acknowledgement of an anchor;
+- missing context / UNK;
+- live pressure/location.
+
+The source requires separate inventories and explicit pairing/sharedness for DELTA/crossing.
+
+Therefore DELTA/crossing/comprehension state is not a function of Lace alone.
+
+### S10.5 Provenance separation
+
+S9 witness atoms remain the base provenance algebra.
+
+Pass 2 refines source-claim support as:
+
+\[
+w(y)
+=
+S_L(y)
+\uplus
+S_G(y)
+\uplus
+S_Q(y)
+\uplus
+S_H(y)
+\uplus
+S_{CF}(y)
+\uplus
+S_U(y),
+\]
+
+where the symbol \(\uplus\) is a bookkeeping separation of provenance classes, not a physical storage partition.
+
+### S10.6 EP-1 — support traceability
+
+For provenance-bearing observation
+
+\[
+o=(v,\nu),
+\]
+
+if derived output \(y\) claims a Lace-grounded proposition, then there must exist finite nonempty Lace support
+
+\[
+S_L(y)
+\subseteq
+\mathsf{LacePart}(\nu)
+\]
+
+sufficient to replay/check that Lace claim under the declared read rule.
+
+Thus:
+
+\[
+\boxed{
+\mathsf{ClaimsLace}(y)
+\Rightarrow
+\exists S_L(y)\neq\varnothing
+}
+\]
+
+with all additional dependence on external/local/multi-holder/counterfactual/open state separately stamped.
+
+EP-1 does not require every output to copy all input provenance.
+
+### S10.7 Multi-holder discipline
+
+Where a source requires several holders, descriptive state may factor as
+
+\[
+Q
+=
+Q_{shared}
+\times
+\prod_{h\in H}Q_h.
+\]
+
+Holders may share one Lace prefix:
+
+\[
+L_n
+\]
+
+while retaining distinct:
+
+\[
+Q_h,\quad G_h,\quad \omega_h.
+\]
+
+This does not create holder-specific authoritative Laces.
+
+A proposition enters \(Q_{shared}\) only through an explicit source/device rule establishing sharedness.
+
+For Water, one holder's pointable OBS does not become shared merely because both parties can access the same Lace.
+
+For HCC-A, shared structural evidence does not transfer Meaning/Emotion/Identity.
+
+### S10.8 Counterfactual provenance
+
+Coffee Cup requires claims about what **could still be altered**.
+
+Represent such a claim with explicit historical and model assumptions:
+
+\[
+\mathsf{CFClaim}
+=
+(X,w_X,\mathcal A,\mathcal M,\varphi),
+\]
+
+where:
+- \(X\) is observed/context state;
+- \(w_X\) is historical evidence;
+- \(\mathcal A\) is the admitted intervention set;
+- \(\mathcal M\) is the model/assumption set;
+- \(\varphi\) is the counterfactual proposition.
+
+A counterfactual result cannot be stamped \(SEE\!-\!L\) merely because Lace supplied part of \(X\).
+
+### S10.9 Description need not mutate device state
+
+S9's transition/output map remains sufficient for pure descriptive readout:
+
+\[
+\Delta(q,o,g)=(q,y).
+\]
+
+Therefore:
+- HCC Six-Act diagnostics;
+- Coffee Cup strategic causal tableau;
+- Water location/routing diagnosis
+
+may return typed descriptions without requiring \(q'\neq q\).
+
+No extra generic output field is added to S9.
+
+### S10.10 HCC descriptive shape
+
+A faithful later HCC device must preserve at least:
+
+\[
+\text{parallel RIC/PFC fork}
++
+\text{recurrent local compiler}
++
+\text{parameter family}
++
+\text{Six-Act diagnostic overlay}
++
+\text{representation layer}.
+\]
+
+These are not one state machine.
+
+In particular:
+
+\[
+\text{Six-Act diagnostic}
+\neq
+S0\text{--}S7\text{ runtime flow}.
+\]
+
+The structural evidence path must remain replayable independently of prior-conditioned interpretation.
+
+### S10.11 Coffee Cup descriptive shape
+
+A faithful later Cup device must not reduce the source to one active stage label.
+
+The source requires the five causal roles to remain simultaneously available for strategic literacy.
+
+A candidate descriptive tableau is:
+
+\[
+\mathcal C(e,t)
+=
+(C_e,R_e,T_e(t),I_e,A_e(t)),
+\]
+
+where:
+- \(C_e\): enabling-condition field;
+- \(R_e\): initiating boundary;
+- \(T_e(t)\): trajectory/control description with explicit time/context/counterfactual assumptions;
+- \(I_e\): realized outcome + witness;
+- \(A_e(t)\): aftermath effect on later state/conditions.
+
+This is a device lift, not a source-supplied equation.
+
+Unknown/future coordinates may remain unresolved; "hold all five" does not authorize invented outcomes.
+
+### S10.12 Water descriptive shape
+
+A faithful later Water device must preserve three native objects:
+
+\[
+\mathcal W
+=
+(\mathcal P,\mathcal R,\mathcal B),
+\]
+
+where:
+- \(\mathcal P\): Proof Ledger;
+- \(\mathcal R\): River Proofing;
+- \(\mathcal B\): Delta Bridge.
+
+The Bridge translates between systems; it does not erase them.
+
+Separate holder inventories remain holder-indexed.
+
+OBS pointability remains distinct from Graphic-D POINTER identity.
+
+The source-open:
+- OBS pointer format;
+- INVALID matcher;
+- UNK operating rule
+
+remain open.
+
+### S10.13 Common recurrence form is not state identity
+
+Several sources contain feedback into a later start.
+
+The valid shared abstraction is only:
+
+\[
+\mathsf{NextStartEffect}(x).
+\]
+
+Therefore:
+
+\[
+Aftermath
+\neq
+Water\ Rebuild
+\neq
+HCC\ ActVI.
+\]
+
+Likewise:
+- HCC PFC \(\neq\) Coffee Cup Conditions;
+- Water Delta \(\neq\) Lace topology.
+
+Cross-source compatibility is not runtime identity.
+
+### S10.14 Pass-2 verdict
+
+\[
+\boxed{
+\text{OBSERVABILITY MAP SOUND WITH OPENS}
+}
+\]
+
+\[
+\boxed{
+\text{OBS-1 PROVED WITH SOURCE WITNESSES}
+}
+\]
+
+\[
+\boxed{
+\text{S9 CHASSIS SUFFICIENT WITH SOURCE-SPECIFIC FACTORIZATION}
+}
+\]
+
+\[
+\boxed{
+\text{SOURCE ARCHITECTURES MAPPED WITHOUT FUSION}
+}
+\]
+
+Full HCC-A, Coffee Cup, and Water device equations remain deliberately deferred.
+
+RM-A remains open. Core remains unchanged.
