@@ -1,7 +1,7 @@
-STATUS: HELD
+STATUS: FREE
 STATION: maps
 OWNS: docs/reason-model-map.md docs/rust-nostd-*.md docs/atomic-primitives-map.md docs/clock/gearing-code-1to1.md docs/coherence-audit*.md docs/clock/system-mathematical-model.md docs/defrag-plan.md docs/plans/** docs/namespace-register.md docs/*.md (catch-all: any unmatched file at the docs/ root)
-AGENT: Astra-lab-source-p5
-BASE: 7b7f85e38417bcba4c30f0d01223002ec8565092
-SINCE: 2026-09-22T00:00:06.004Z
-NOTE: Lab Source Architecture Pass 5 research-family RM-A/B/C harvest under SM-X-RES. Five research sources only. Original-source verification required for candidate-bearing claims. No law/catalog/Core changes.
+AGENT: -
+BASE: -
+SINCE: -
+NOTE: Lab Source Architecture Pass 5 COMPLETE — RESEARCH SUPPLIES RM-SHAPED MACHINERY BUT NO LEGAL LACE INPUT PATH. Five SM-X-RES sources source-checked and gated G1 fidelity / G2 inputs / G3 output / G4 state-authority / G5 prefix legality. Research is not silent: thresholds, predicates, selectors, non-identification theorems and evidence-backed retention exist, but zero candidates reach the Lace RM socket without editor adapters, wrong outputs, forbidden state, or future/full-trajectory information. Candidate ledger empty; research-lesson ledger load-bearing. Existing controls rerun unchanged. No foundation/law/catalog/harness/fixture changes. Next: cross-family synthesis / insufficiency.
