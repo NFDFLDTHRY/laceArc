@@ -1,7 +1,7 @@
-STATUS: HELD
+STATUS: FREE
 STATION: kit
 OWNS: docs/kit/** .claude/**
-AGENT: Astra-alignment-restart
-BASE: c7b4ec3fe57c42069d2e01495155850e960439f6
-SINCE: 2026-09-22T02:48:00Z
-NOTE: Alignment Restart Pass 1. Qualify active agent controls/package entrance to current RM-A/B/C Lab evidence and explicitly fence Lab harness/fixture/candidate tooling outside Core. No gate or permission change.
+AGENT: -
+BASE: -
+SINCE: -
+NOTE: Alignment Restart Pass 1 kit alignment COMPLETE. Active controls distinguish Lab evidence from Core authority and Lab retain-evidence from Lace retention; RM-A remains open while bounded RM-B/RM-C results stay scoped. Acceptance and implementation gates unchanged.
