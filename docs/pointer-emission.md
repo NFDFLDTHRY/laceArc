@@ -5,10 +5,10 @@
 The historical prefix-device Pass-7 Answers remain below as dated receipts. They are **not the current answer surface where Pass 4 supersedes them**.
 
 **Current constructor:** binary `Join(a,b)` over earlier same-line Lace points.  
-**Current remaining [GAP]:** the exact sampling-derived retention / materialization condition: when discovered structure becomes a retained POINTER, and how an ephemeral sampled structure is grounded when a retained operand requires an address.  
+**Current remaining [GAP]:** the **general** sampling-derived retention interface, with **RM-A retain-when still open**. Latest bounded Lab evidence partially closes RM-B for selected finite contiguous samples and closes RM-C for RootTouch / contiguous sample grounding; those results are class-specific and do not close the general interface.  
 **Acceptance:** still absent.
 
-The old single Φ-schedule blocker was first decomposed into arrival/root/touch, physical Join construction, and a presumed arbitrary relation-assertion provenance question. Later human rulings H7–H12 supersede that provenance framing as the active problem: sampling discovers structure as Lace grows. The remaining active gap is the exact sampling-derived retention / materialization condition.
+The old single Φ-schedule blocker was first decomposed into arrival/root/touch, physical Join construction, and a presumed arbitrary relation-assertion provenance question. Later human rulings H7–H12 supersede that provenance framing as the active problem: sampling discovers structure as Lace grows. **The current primary unresolved face is RM-A: what lawful structural condition warrants durable retention.** Materialization/order are no longer one undifferentiated unknown: bounded Lab work supplies RM-B for selected contiguous sample occurrences and RM-C for RootTouch / contiguous sample grounding, while broader candidate classes remain open.
 
 | Rule | Still | Not |
 |---|---|
@@ -127,13 +127,17 @@ The exact general retention rule is still open:
 }
 \]
 
-A second part of the same boundary is also open:
+A second face of the same boundary is materialization:
 
 \[
 \boxed{
 \text{If the desired retained operand is only an ephemeral sample, how is it grounded into an addressable 1D point?}
 }
 \]
+
+**Latest bounded Lab evidence narrows this face:** when RM-A has already selected a **finite contiguous sample occurrence**, the named Lace prefix deterministically yields the ordered existing WORD rows for that sample, and repeated Join supplies one lawful addressable representative. That is a **class-specific RM-B closure**. It does not establish a universal representation for arbitrary pattern classes, ridges, branches, or cross-level structures, and it does not decide whether the sample should be retained.
+
+Likewise, ordered roles are known for RootTouch and contiguous sample grounding because those candidate classes already define their order. Generic RM-C remains candidate-specific.
 
 The sampling campaign refuted several universal answers: every sampled cell, every adjacent pair, exact-repeat-only retention, first-seen-every-cell materialization, and cheapest-contiguous grounding.
 
@@ -152,7 +156,7 @@ Contract II remains raw word/punch-card input; it is not expanded with a hidden 
 | seen arrival | **CLOSED:** another WORD occurrence; root stays first occurrence |
 | Q1 root touch | **CLOSED by human ruling + D1 witness:** Join(new occurrence, root) |
 | Q1 physical relation constructor | **CLOSED:** selected ordered pair emits binary Join |
-| Q1 sampling-derived retention / materialization | **[GAP]** — sampling discovers structure; the exact general condition for retaining a POINTER and grounding an ephemeral sampled operand is not established |
+| Q1 sampling-derived retention / materialization | **[GAP] general interface** — **RM-A retain-when remains open**; RM-B is partially closed for selected finite contiguous samples; RM-C is class-specifically closed for RootTouch and contiguous sample grounding; other candidate classes remain open |
 | Q2 arity | **CLOSED current constructor: 2** |
 | Q3 adjacency trigger | **CLOSED no** |
 | Q4 earlier/same-line refs | **CLOSED**; earlier is checked by operand index before append |
