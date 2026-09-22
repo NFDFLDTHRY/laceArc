@@ -1,7 +1,7 @@
-STATUS: FREE
+STATUS: HELD
 STATION: maps
 OWNS: docs/reason-model-map.md docs/rust-nostd-*.md docs/atomic-primitives-map.md docs/clock/gearing-code-1to1.md docs/coherence-audit*.md docs/clock/system-mathematical-model.md docs/defrag-plan.md docs/plans/** docs/namespace-register.md docs/*.md (catch-all: any unmatched file at the docs/ root)
-AGENT: -
-BASE: -
-SINCE: -
-NOTE: Repo-lag Pass 3 COMPLETE. Kit controls current through Pass 39; human-law transports byte-identical/preserved; Grok first task grounding-only; F1-F21 held, G1-G22 passed. Remaining debt: hologram target wording, maps namespace/audit tick, coord station description.
+AGENT: ChatGPT
+BASE: b589e6fa549f635e9722dcc8ec5c115eff0253f1
+SINCE: 2026-09-22T19:05:00Z
+NOTE: Persisting repo-lag Pass 4 clock/hologram target-court reconciliation plan before execution. Plan only; no clock edits from maps.
