@@ -26,7 +26,9 @@ The graphics remain the source corpus. Current mechanics also incorporate explic
 - repeated Join can ground any finite **already-selected/addressable** sample into one later addressable point;
 - the dot-to-dot N-D presentation is a projection of recursively grounded points, not N-D storage;
 - sampling derives structural evidence across position × scale without becoming a second authoritative store;
-- **the exact general sampling-derived retention/materialization condition remains \([GAP]\)**, including the boundary that grounds an ephemeral sampled structure when a retained operand needs an address.
+- **the general sampling-derived retention/materialization interface remains ([GAP]).**
+
+**Alignment Restart Pass 1 — current Lab-evidence qualification:** the canonical interface remains one `SM-GAP-RM`, but the latest bounded Lab work has narrowed its faces without universally closing it. **RM-A (retain?) remains open and is the primary missing authority-backed transition. RM-B (materialize?) is derived for a selected finite contiguous sample occurrence whose constituent WORD rows already exist in the named prefix. RM-C (role/order?) is closed for RootTouch and for contiguous sample grounding where the candidate's own structure supplies order; generic candidate classes may still carry RM-C debt.** These are bounded/class-specific Lab results, not new L-M mechanisms or universal Core law.
 
 These are not retroactive quotes from the PNGs. Where the graphics are silent, the human ruling, mathematical derivation, or lab result is named explicitly. Graphic-C 2D presentation remains distinct from the later H7–H12 sampling surface.
 
@@ -76,7 +78,7 @@ These are not retroactive quotes from the PNGs. Where the graphics are silent, t
 | L-M19 Finite sample grounding | **SM-C19** | specialized contract below | HUMAN + DERIVED | repeated binary Join can make an already-selected/addressable finite sample one later point; does not select/retain the sample |
 | L-M20 Derived 2D sampling | **SM-C20** | Derived 2D Sampling Surface + specialized contract below | HUMAN + DERIVED/LAB | reconstructible position×scale working surface discovers structural evidence; not Graphic-C projection and not a store |
 | L-M21 Derived star/search read | **SM-C21** | specialized contract below | DERIVED + LAB + VIEW | disposable structural search/frontier reads from Lace/sampling/retained topology; no write authority |
-| L-GAP-RM Retention/materialization boundary | **SM-GAP-RM** | Sampling-derived retention/materialization boundary | GAP | exact general sampled-evidence → retained POINTER / addressable sampled operand rule is not established |
+| L-GAP-RM Retention/materialization boundary | **SM-GAP-RM** | Sampling-derived retention/materialization boundary | GAP | general sampled-evidence → durable retention remains open; bounded RM-B/RM-C closures do not create a new mechanism or close the interface |
 
 ### Source-provenance correction carried by this pass
 
@@ -513,14 +515,16 @@ Manifest Reconciliation Pass 4 decomposes the **question**, not the catalog, int
 - **Input:** a selected structure that may still exist only as an ephemeral sampling object.
 - **Question:** how is that selected structure grounded/resolved into one or more addressable 1D Lace operands?
 - **Known machinery:** SM-C19 can ground a finite **already-selected and addressable** sample by repeated SM-C05 Join.
-- **Still open:** how an ephemeral sample crosses into that addressable domain when retention warrants it.
+- **Latest bounded Lab result:** for a **selected finite contiguous sample occurrence**, replay of the named prefix yields its ordered constituent WORD-row addresses, which are already valid SM-C19 inputs; repeated Join therefore supplies one lawful addressable representative. This is a **partial/class-specific RM-B closure**, not a universal materializer for arbitrary ridges, branches, abstract pattern classes, or cross-level structures.
+- **Still open generally:** materialization for candidate classes whose selected object does not already determine a finite addressable operand set.
 
 #### RM-C — ROLE / ORDER?
 
 - **Input:** a candidate retained relation whose physical Join is ordered.
 - **Question:** where do any required ordered operand roles come from?
 - **Constraint:** chronology is not a universal role rule; D1's explanatory \`ref_A/ref_B\` ordering may score a candidate but may not be imported as hidden evidence into a D1-blind candidate.
-- **Scope:** RM-C may be candidate-specific rather than one universal subject/target theorem.
+- **Latest bounded Lab result:** RM-C is already closed for **RootTouch** as `(new occurrence, root)`, and for **contiguous sample grounding** because the selected sample is intrinsically ordered and that order is preserved into SM-C19.
+- **Scope:** RM-C remains candidate-specific; arbitrary candidate classes whose lawful structure does not define roles/order still carry this debt.
 
 RM-A / RM-B / RM-C are **subquestions of this one GAP**. They are not L-M mechanisms, row kinds, APIs, or implementation modules. A candidate may cover only part of the socket; partial coverage must be reported as such.
 
@@ -750,7 +754,7 @@ Intended use of the four graphics together: A = growth story; B = 3D mechanism; 
 ## Open Questions or Remaining Design Degrees of Freedom
 
 1. **[GAP] Word identity / tokenization:** boundaries, punctuation, case, `PIE` vs `pie`, multiword names.
-2. **[GAP] Sampling-derived retention / materialization:** sampling discovery and binary Join are reconciled; the exact general retain-when condition and the grounding/resolution of an ephemeral sampled operand remain open. No semantic chooser or external relation-write interface is introduced.
+2. **[GAP] Sampling-derived retention / materialization:** sampling discovery and binary Join are reconciled. **RM-A's general retain-when condition remains open.** RM-B has a bounded closure for selected finite contiguous sample occurrences; RM-C has class-specific closures for RootTouch and contiguous sample grounding. General materialization/order remain open for candidate classes not covered by those results. No semantic chooser or external relation-write interface is introduced.
 3. **[GAP] Document / conversation / provenance boundaries:** D still stores only WORD and POINTER/Join; no boundary row type is established.
 4. **General traversal / query remainder:** star-search structural reads are now mapped as derived lexical/pattern/pointer/star-hop frontiers, but no general Core retrieval/write-query interface is established; geometry/route-family traversal questions outside that mapped read remain open.
 5. **[GAP] Concurrency:** one strand suggests a single writer; multi-writer append remains unstated.
