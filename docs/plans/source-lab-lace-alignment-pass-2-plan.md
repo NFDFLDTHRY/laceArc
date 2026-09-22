@@ -1,6 +1,6 @@
 # SOURCE → LAB → LACE ALIGNMENT — Restart Pass 2 PLAN
 
-**Status:** PLAN — NOT EXECUTED.  
+**Status:** EXECUTED — see source-lab-lace-alignment-pass-2-findings.md.  
 **Campaign:** Source → Lab → Lace Alignment — restart.  
 **Pass:** 2.  
 **Pass name:** **TRACE THE ARROWS — operational machinery traceability.**  
@@ -802,3 +802,25 @@ It does **not** automatically:
 - open Pass 3.
 
 The purpose is to know exactly which machinery is **source-grounded, representable, tested, falsified, surviving, blocked, and physically constrained** before the campaign tries to move anything else.
+
+
+---
+
+## 18. Actual execution result
+
+Executed against current main beginning at `444bcfad79ee5e53208b75ed2d31ce62a247aa61`.
+
+Products:
+- [operational traceability register](source-lab-lace-alignment-pass-2-traceability.md);
+- global ASCII **linear Pass 34**;
+- [Pass-2 findings](source-lab-lace-alignment-pass-2-findings.md).
+
+Required verdicts:
+- **Architecture flow:** TRACEABLE WITH DEBT.
+- **Experiment coverage:** BOUNDED COVERAGE / NAMED DEBT.
+
+Both current Lab instruments were reproduced from byte-exact GitHub blobs against the existing D1 fixture. Source-only and blocked machinery was not relabelled as tested. Platform/device evidence remains separated by source/observation/NOT-RUN strength.
+
+RM-A remains un-designed / MISSING-A. No new candidate, fixture, source adapter, mechanism, implementation, branch, or acceptance was created.
+
+**STOP.** Pass 3 is not opened automatically.
