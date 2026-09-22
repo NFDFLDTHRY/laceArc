@@ -1,7 +1,7 @@
-STATUS: FREE
+STATUS: HELD
 STATION: maps
 OWNS: docs/reason-model-map.md docs/rust-nostd-*.md docs/atomic-primitives-map.md docs/clock/gearing-code-1to1.md docs/coherence-audit*.md docs/clock/system-mathematical-model.md docs/defrag-plan.md docs/plans/** docs/namespace-register.md docs/*.md (catch-all: any unmatched file at the docs/ root)
-AGENT: -
-BASE: -
-SINCE: -
-NOTE: Behavioral Read Devices Pass 1 COMPLETE. Minimal device Dθ=(Q,G,Ω,Δ,ω); explicit external context; witness algebra; RD-1 read-only separation proved; HCC/Cup/Water minimum pressure tests PASS; S9 admitted with opens. Full source-specific devices deferred. RM-A/Core/acceptance/target unchanged.
+AGENT: ChatGPT
+BASE: 8bb86f10d2d3bd8d509f333b044a35b921ac0fdc
+SINCE: 2026-09-22T00:07:00Z
+NOTE: PLAN ONLY — sit in HCC-A/Coffee Cup/Water and current math-execution-model, map descriptive measurement architecture, then derive Behavioral Read Devices Pass 2. No model semantic edit or source-specific device execution.
