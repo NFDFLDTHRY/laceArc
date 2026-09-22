@@ -2,9 +2,9 @@
 
 **Not the manifest.** [`systems-manifest.md`](systems-manifest.md) is the Hands contract map; this is an ASCII reading of it and settles nothing it does not.
 
-**Current reading qualification, 2026-09-21:** **Pass 35 — Source → Lab → Lace Alignment Restart Pass 3** is the current behavioral-goal assay overlay. **Pass 34 remains operational machinery traceability; Pass 33 remains vertical authority/context; Pass 32 remains the canonical mechanism catalog; `systems-manifest.md` remains the contract registry.** Pass 35 operationalizes bounded HCC-A/Coffee Cup/Water behaviors as mechanism-agnostic Lab assays and records current Lace only as substrate/read support where appropriate. The assay self-test passes 24/24 controls, but no current holder/application candidate is shown to satisfy the behavioral goals. RM-A remains open / MISSING-A; no Core mechanism, holder runtime, acceptance, or implementation authority is introduced.
+**Current reading qualification, 2026-09-21:** **Pass 36 — Source → Lab → Lace Alignment Restart Pass 4** is the current desired-behavior mechanism overlay. **Pass 35 remains the mechanism-agnostic assay layer; Pass 34 remains operational traceability; Pass 33 remains vertical authority/context; Pass 32 remains the canonical mechanism catalog; `systems-manifest.md` remains the contract registry.** Pass 36 restores the source-defined functional/causal mechanisms underneath the Pass-3 assays: HCC-A recurrent cognition, Coffee Cup causal literacy/recurrence, and Water's dual proofing systems + interface. These are behavioral obligations, not automatic Core/runtime objects. Concrete realization remains experimental; RM-A remains open / MISSING-A; no implementation or acceptance authority is introduced.
 
-**Executed passes:** [1](systems-manifest-ascii-pass-1-plan.md) · [2](systems-manifest-ascii-pass-2-plan.md) · [3](systems-manifest-ascii-pass-3-plan.md) · [4](systems-manifest-ascii-pass-4-plan.md) · [5](systems-manifest-ascii-pass-5-plan.md) · [6](systems-manifest-ascii-pass-6-plan.md) · [7](systems-manifest-ascii-pass-7-plan.md) · [8](systems-manifest-ascii-pass-8-plan.md) · [9](systems-manifest-ascii-pass-9-plan.md) · [10](systems-manifest-ascii-pass-10-plan.md) · [11](systems-manifest-ascii-pass-11-plan.md) · [12](systems-manifest-ascii-pass-12-plan.md) · [13](systems-manifest-ascii-pass-13-plan.md) · [14](systems-manifest-ascii-pass-14-plan.md) · [15](systems-manifest-ascii-pass-15-plan.md) · [16](systems-manifest-ascii-pass-16-plan.md) · [17](systems-manifest-ascii-pass-17-plan.md) · [18](systems-manifest-ascii-pass-18-plan.md) · [19](systems-manifest-ascii-pass-19-plan.md) · [20](systems-manifest-ascii-pass-20-plan.md) · [21](systems-manifest-ascii-pass-21-plan.md) · [22](systems-manifest-ascii-pass-22-plan.md) · [23](systems-manifest-ascii-pass-23-plan.md) · [24](systems-manifest-ascii-pass-24-plan.md) · [25](systems-manifest-ascii-pass-25-plan.md) · [26](plans/lace-context-iter6-pass-3-findings.md) · [27](plans/lace-context-iter7-pass-3-audit.md) · [28](plans/reduction-pass-3-findings.md) · [29](plans/math-execution-root-touch-fold-pass-5-findings.md) · **30 = SAMPLING / DENSITY / EMERGENCE Pass 6 reconciliation** · **[31](plans/lab-source-architecture-pass-1-plan.md) = LAB SOURCE ARCHITECTURE Pass 1 (current source/lab overlay; Core unchanged).** · **[32](plans/manifest-reconciliation-pass-1-plan.md) = MANIFEST RECONCILIATION Pass 1 (current mechanism catalog ↔ contract registry).** · **[33](plans/source-lab-lace-alignment-pass-1-plan.md) = SOURCE → LAB → LACE ALIGNMENT RESTART Pass 1 (current vertical authority/context overlay; Pass 32 catalog preserved).** · **[34](plans/source-lab-lace-alignment-pass-2-plan.md) = SOURCE → LAB → LACE ALIGNMENT RESTART Pass 2 (operational traceability; evidence/debt overlay; Pass 32/33 preserved).** · **[35](plans/source-lab-lace-alignment-pass-3-plan.md) = SOURCE → LAB → LACE ALIGNMENT RESTART Pass 3 (behavioral-goal assays; mechanism-agnostic self-test; no holder/Core promotion).**
+**Executed passes:** [1](systems-manifest-ascii-pass-1-plan.md) · [2](systems-manifest-ascii-pass-2-plan.md) · [3](systems-manifest-ascii-pass-3-plan.md) · [4](systems-manifest-ascii-pass-4-plan.md) · [5](systems-manifest-ascii-pass-5-plan.md) · [6](systems-manifest-ascii-pass-6-plan.md) · [7](systems-manifest-ascii-pass-7-plan.md) · [8](systems-manifest-ascii-pass-8-plan.md) · [9](systems-manifest-ascii-pass-9-plan.md) · [10](systems-manifest-ascii-pass-10-plan.md) · [11](systems-manifest-ascii-pass-11-plan.md) · [12](systems-manifest-ascii-pass-12-plan.md) · [13](systems-manifest-ascii-pass-13-plan.md) · [14](systems-manifest-ascii-pass-14-plan.md) · [15](systems-manifest-ascii-pass-15-plan.md) · [16](systems-manifest-ascii-pass-16-plan.md) · [17](systems-manifest-ascii-pass-17-plan.md) · [18](systems-manifest-ascii-pass-18-plan.md) · [19](systems-manifest-ascii-pass-19-plan.md) · [20](systems-manifest-ascii-pass-20-plan.md) · [21](systems-manifest-ascii-pass-21-plan.md) · [22](systems-manifest-ascii-pass-22-plan.md) · [23](systems-manifest-ascii-pass-23-plan.md) · [24](systems-manifest-ascii-pass-24-plan.md) · [25](systems-manifest-ascii-pass-25-plan.md) · [26](plans/lace-context-iter6-pass-3-findings.md) · [27](plans/lace-context-iter7-pass-3-audit.md) · [28](plans/reduction-pass-3-findings.md) · [29](plans/math-execution-root-touch-fold-pass-5-findings.md) · **30 = SAMPLING / DENSITY / EMERGENCE Pass 6 reconciliation** · **[31](plans/lab-source-architecture-pass-1-plan.md) = LAB SOURCE ARCHITECTURE Pass 1 (current source/lab overlay; Core unchanged).** · **[32](plans/manifest-reconciliation-pass-1-plan.md) = MANIFEST RECONCILIATION Pass 1 (current mechanism catalog ↔ contract registry).** · **[33](plans/source-lab-lace-alignment-pass-1-plan.md) = SOURCE → LAB → LACE ALIGNMENT RESTART Pass 1 (current vertical authority/context overlay; Pass 32 catalog preserved).** · **[34](plans/source-lab-lace-alignment-pass-2-plan.md) = SOURCE → LAB → LACE ALIGNMENT RESTART Pass 2 (operational traceability; evidence/debt overlay; Pass 32/33 preserved).** · **[35](plans/source-lab-lace-alignment-pass-3-plan.md) = SOURCE → LAB → LACE ALIGNMENT RESTART Pass 3 (behavioral-goal assays; mechanism-agnostic self-test; no holder/Core promotion).** · **[36](plans/source-lab-lace-alignment-pass-4-plan.md) = SOURCE → LAB → LACE ALIGNMENT RESTART Pass 4 (desired-behavior mechanism recovery; Pass-3 assays retained as projections; implementation open).**
 
 **Authority:** `docs/systems-manifest.md`. Companion, not a replacement.  
 **Hands:** Graphics A–D. Shoe in hands.  
@@ -985,6 +985,254 @@ CURRENT COVERAGE:
 ~~~
 
 The Lab now has a falsifiable destination surface. The next behavioral step, if ever opened, is to bring an actual holder/application candidate output to these assays. Pass 35 does not create that candidate.
+
+
+
+---
+
+## Pass 36 — Source → Lab → Lace Alignment Restart Pass 4 — READ THE MACHINES AGAIN
+
+**Campaign identity:** [Source → Lab → Lace Alignment Restart Pass 4](plans/source-lab-lace-alignment-pass-4-plan.md).  
+**Source-first maps:** [HCC-A](plans/source-lab-lace-alignment-pass-4-hcc-a-behavior-mechanisms.md) · [Coffee Cup](plans/source-lab-lace-alignment-pass-4-coffee-cup-behavior-mechanisms.md) · [Water](plans/source-lab-lace-alignment-pass-4-water-behavior-mechanisms.md) · [crosswalk](plans/source-lab-lace-alignment-pass-4-crosswalk.md).  
+**Job:** recover source-defined desired-behavior mechanisms without turning them into literal Core/runtime implementation.
+
+### P36-S — three layers, not two
+
+~~~
+SOURCE DESIRED-BEHAVIOR MECHANISM
+    functional / causal / state obligation
+              |
+              +--> observable assay projection
+              |
+              +--> implementation obligation
+                        |
+                        X concrete realization still experimental
+~~~
+
+Therefore:
+
+~~~
+source mechanism != exact software object
+observable assay != whole source mechanism
+repo metaphor    != source mechanism unless the original says so
+~~~
+
+### P36-H — HCC-A recovered mechanism
+
+The HCC-A original requires a recurrent behavioral architecture including:
+
+~~~
+Reality / Interface
+        |
+        v
+same signals
+   |         |
+   v         v
+ RIC  ||    PFC
+            /
+           /
+       C
+       |
+       v
+       L
+       |
+       v
+       M
+       |
+       v
+       E
+       |
+       v
+      ISL
+       |
+       v
+       B
+       |
+       v
+Reality changes -> next cycle
+~~~
+
+Source-strength obligations include:
+- RIC + PFC parallel, not serial;
+- mutable holder-local Story Ledger behavior;
+- directive Meaning weighting/transitions;
+- Emotion as transient meaning-in-flight;
+- Identity synchronization with updated future priors;
+- Behavior as directly observable output;
+- S0–S7 recurrent flow;
+- seven parameter families;
+- separate Acts I–VI diagnostic/process stack;
+- objective Reality + subjective compilation;
+- no meaning transfer; structure-only communication.
+
+Pass-3 H-G1/H-G2/H-G3 remain valid **partial projections**. They are not the whole HCC-A target.
+
+### P36-C — Coffee Cup recovered mechanism
+
+The original defines causal literacy under time:
+
+~~~
+CONDITIONS
+  enable, do not cause
+      |
+      v
+RELEASE
+  initiates, not decisive
+      |
+      v
+TRAJECTORY
+  shrinking intervention window
+      |
+      v
+IMPACT
+  resolved ground truth
+      |
+      v
+AFTERMATH
+  causal future-condition change
+      |
+      +--------------------> next CONDITIONS
+~~~
+
+Recovered obligations include:
+- release != trajectory != impact;
+- opportunity contracts over time;
+- action may be needed before certainty;
+- impact constrains later interpretation;
+- aftermath is causal, not commentary;
+- planning means holding all five stages simultaneously;
+- visibility/causal literacy is non-moral and non-courtroom.
+
+Pass-3 C-G1/C-G2/C-G3 are valid but omit strategic-literacy and attention-collapse mechanisms.
+
+### P36-W — Water recovered mechanism
+
+The original explicitly defines **two proofing systems plus an interface**:
+
+~~~
+PROOF LEDGER
+OBS | DELTA | UNK | INVALID
+        |
+        | structural isomorphism
+        v
+RIVER
+BANKS -> RAPIDS -> DELTA/CROSSING
+        |
+        v
+DELTA BRIDGE
+shared S0-S4 FSM
+F1 Locate
+F2 Anchor
+F3 Pair
+F4 Unknowns
+F5 Reject
+~~~
+
+Recovered obligations include:
+- pointability;
+- separate party OBS inventories;
+- paired DELTA;
+- unresolved UNK blocks coherent comprehension;
+- INVALID routes back toward computable structure;
+- pressure != transfer;
+- crossing requires delta conditions;
+- source-defined structural isomorphism;
+- location ↔ proof-requirement translation;
+- units of progress for both systems;
+- explicit source-open parameters:
+  OBS pointer format, INVALID pattern list, UNK halt-vs-budget rule.
+
+Pass-3 W-G1–W-G4 are valid projections but **thin** relative to the full two-system/interface target.
+
+### P36-M — mutable desired behavior on immutable Lace
+
+Source behavior may require mutable/temporal working state while authoritative Lace remains append-only.
+
+~~~
+authoritative Lace history
+    immutable / append-only
+          |
+          v
+reconstructible evidence / provenance
+          |
+          v
+holder/application working behavior
+    may reweight / reclassify / update /
+    move state / change future policy
+          |
+          v
+observable action / later conditions
+~~~
+
+Examples:
+- HCC Ledger re-index/suppress, Meaning weights, Identity/PFC updates;
+- Cup aftermath changes later conditions;
+- Water inventories/FSM/UNK resolution.
+
+**Pass 36 preserves the obligation and leaves implementation open.**
+
+It does not choose replay state, cache, supersession, mutable holder object, or another design.
+
+### P36-A — Pass-3 assay audit
+
+| Family | Pass-3 status after source reread |
+|---|---|
+| HCC-A | **VALID BUT THIN** — H-G1/H-G2/H-G3 cover real projections; compiler/ledger/M-E-ISL-B, parameters, pruning/arbitration, S0–S7 and Acts I–VI mostly missing |
+| Coffee Cup | **VALID BUT THIN** — stage distinction/window/aftermath are real; strategic five-stage literacy, attention-collapse and non-courtroom discipline missing |
+| Water | **VALID BUT THIN** — pointability/rapids/shared footing/UNK real; Proof Ledger progression, structural isomorphism, Delta Bridge, full FSM, F1–F5 and progress metrics mostly missing |
+| Cross-source | **PARTIAL HYPOTHESES** — recurrence and shared pointable structure are useful compatibility assays, not proof of one H×C×W runtime |
+
+Mechanism-agnostic testing remains required at the implementation level. It no longer licenses flattening the target mechanism itself.
+
+### P36-X — cross-source discipline
+
+Cross-document relations are separately stamped:
+
+- **PASS4-COMPATIBLE** — originals can coexist;
+- **PASS4-HYPOTHESIS** — coupling worth testing;
+- **PASS4-TENSION** — scope distinction required;
+- **FALSE-FRIEND** — similar language, wrong identity.
+
+Examples:
+- HCC structure-only transfer ↔ Water pointable shared reference: compatible / possible interface hypothesis;
+- Cup aftermath ↔ HCC future priors: hypothesis, not source-defined equality;
+- Cup trajectory ↔ Water crossable location: specimen-specific hypothesis, not universal law;
+- Water OBS “pointer-addressable” != Lace POINTER;
+- River Delta != Lace retained relation topology.
+
+The old H×C×W train remains a Lab hypothesis surface.
+
+### P36-F — fidelity verdicts
+
+~~~
+SOURCE MECHANISM RECOVERY:
+    DESIRED-BEHAVIOR MECHANISMS MAPPED WITH SOURCE OPENS
+
+EXISTING CLOCK CLIPBOARDS:
+    FAITHFUL WITH COMPRESSION / INTERPRETIVE OVERLAY
+
+PASS-3 ASSAYS:
+    VALID BUT THIN
+
+IMPLEMENTATION FREEDOM:
+    FUNCTIONAL OBLIGATIONS CLEAR
+    CONCRETE IMPLEMENTATION OPEN
+~~~
+
+No current source reread establishes a contradiction with Lace storage law because holder/application mutable behavior and authoritative Lace mutation are different things.
+
+### P36-R — hard fences
+
+Pass 36 does **not**:
+- create HCC RIC/PFC/L/M/E/ISL as Core types;
+- create Coffee Cup C1–C5 runtime rows;
+- create Water OBS/DELTA/UNK/INVALID as Graphic-D row types;
+- choose Water's three source-open parameters;
+- choose a mutable holder representation;
+- define an H×C×W runtime;
+- solve RM-A;
+- accept pointer emission;
+- open implementation.
 
 
 ---
