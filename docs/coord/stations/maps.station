@@ -1,7 +1,7 @@
-STATUS: HELD
+STATUS: FREE
 STATION: maps
 OWNS: docs/reason-model-map.md docs/rust-nostd-*.md docs/atomic-primitives-map.md docs/clock/gearing-code-1to1.md docs/coherence-audit*.md docs/clock/system-mathematical-model.md docs/defrag-plan.md docs/plans/** docs/namespace-register.md docs/*.md (catch-all: any unmatched file at the docs/ root)
-AGENT: Astra-alignment-restart
-BASE: 21332069c9efc81f60c531f02188e98c92056522
-SINCE: 2026-09-22T05:20:00Z
-NOTE: EXECUTING Source→Lab→Lace Alignment Restart Pass 6. Derive supported logical domain, symbolic encoding envelope, mechanism access/CWS/PWS, backend-neutral carrier contract, refusal/recovery obligations, Layer-III windows, and target re-entry verdict. No target/carrier/encoding/RM-A/implementation selection.
+AGENT: -
+BASE: -
+SINCE: -
+NOTE: Human-authorized stale-claim release. Astra-alignment-restart thread will not return. Pass 6 semantic state is unchanged by this coordination cleanup.
