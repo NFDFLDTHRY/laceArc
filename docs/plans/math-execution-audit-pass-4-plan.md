@@ -1,6 +1,6 @@
 # Mathematical execution model audit — pass 4 plan: the satellites and the update witness under current law
 
-**Status:** PLAN · not executed.  
+**Status:** EXECUTED — CLOSED · receipt [math-execution-audit-pass-4-findings.md](math-execution-audit-pass-4-findings.md). Five dated headers, 5 lines added and 0 removed per file; every body byte-identical.  
 **Station:** maps.  
 **Board:** [math-execution-audit-iteration-plan.md](math-execution-audit-iteration-plan.md) · findings MA-X01, MA-X02.  
 **Pinned:** `5ffe01156047df01e8cd0823a286b53e89082905`.  
