@@ -1,7 +1,7 @@
-STATUS: FREE
+STATUS: HELD
 STATION: maps
 OWNS: docs/reason-model-map.md docs/rust-nostd-*.md docs/atomic-primitives-map.md docs/clock/gearing-code-1to1.md docs/coherence-audit*.md docs/clock/system-mathematical-model.md docs/defrag-plan.md docs/plans/** docs/namespace-register.md docs/*.md (catch-all: any unmatched file at the docs/ root)
-AGENT: -
-BASE: -
-SINCE: -
+AGENT: Claude-Fable-math-audit
+BASE: 5ffe01156047df01e8cd0823a286b53e89082905
+SINCE: 2026-09-22T22:43:55Z
 NOTE: Reference audit CLOSED 2026-09-22, six passes EXECUTED (receipts in docs/plans/reference-audit-pass-{1..6}-findings.md). Coherence tick appended append-only. check-docs orphans 0, advisories 7. Repo-lag docket empty. Rulings RA-H01-H04 wait on the human. No pass 7; leftovers are the next iteration's pass 1.
