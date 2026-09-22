@@ -57,8 +57,8 @@ A LIVE or STANDING prompt must not:
 
 A HISTORICAL prompt may contain older wording inside its preserved body **only when its current wrapper clearly says not to replay it**.
 
-## Pass-1 receipt
+## Pass-1 plan and receipt
 
-[Repo-lag prompt cleanup Pass 1 findings](repo-lag-pass-1-findings.md) record the 21-ticket census, repairs, stale-phrase sweep and preserved gates.
+[Repo-lag prompt cleanup Pass 1 plan](repo-lag-pass-1-plan.md) records the approved scope, falsifiers and completion gates. [Pass 1 findings](repo-lag-pass-1-findings.md) record the 21-ticket census, repairs, stale-phrase sweep and preserved gates.
 
 Moved here in defrag pass 1. Products remain on their own shelves.

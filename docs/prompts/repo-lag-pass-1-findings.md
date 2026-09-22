@@ -13,7 +13,11 @@ Can a fresh agent enter through `docs/prompts/` and reconstruct current Lace wit
 
 **Answer after repair: YES, within the prompt shelf.**
 
-## 2. Census
+## 2. Process note
+
+The human requested and approved the Pass-1 plan in the conversation before saying **“Proceed with pass 1.”** The repository-local plan file was not persisted before the first execution commit; it is added at closeout as an exact record of that approved scope. This is a sequencing deviation from the repository preference that a plan file exist first. It does not change the human-approved scope or the executed file boundary, but it is recorded rather than hidden.
+
+## 3. Census
 
 The shelf has **21 prompt tickets**:
 
@@ -27,7 +31,7 @@ The shelf has **21 prompt tickets**:
 
 Classification is now explicit in the prompt index. Direct-paste creation/review tickets that were most likely to be replayed also carry their own current wrapper.
 
-## 3. Repairs
+## 4. Repairs
 
 ### Live entrances
 
@@ -87,7 +91,7 @@ Replaced the old A1–A14 hotspot definition with a current-tip process that exp
 
 Old A1–A14 ticks remain append-only historical records; this pass did not edit the maps-owned audit log.
 
-## 4. Historical-ticket protection
+## 5. Historical-ticket protection
 
 Current wrappers were added without rewriting historical bodies to:
 
@@ -107,7 +111,7 @@ The pointer-emission outline already carried a correct historical/retired wrappe
 
 Bounded-future wrappers were added to the gearing 1:1 audit and renderer iteration ticket. They now require a new named task/current evidence rather than acting as a standing edit loop.
 
-## 5. Anchor preservation
+## 6. Anchor preservation
 
 `context-pass.md` was treated as the Pass-6 anchor and **not edited**. It remains the mandatory current story and already carries:
 
@@ -118,7 +122,7 @@ Bounded-future wrappers were added to the gearing 1:1 audit and renderer iterati
 - current target court;
 - RM-A/G1/R3 and acceptance gates.
 
-## 6. Pass-1 falsifiers
+## 7. Pass-1 falsifiers
 
 | Falsifier | Result |
 |---|---|
@@ -142,7 +146,7 @@ Bounded-future wrappers were added to the gearing 1:1 audit and renderer iterati
 
 **F1–F17: 17/17 HELD.**
 
-## 7. Completion gates
+## 8. Completion gates
 
 | Gate | Result |
 |---|---|
@@ -162,7 +166,7 @@ Bounded-future wrappers were added to the gearing 1:1 audit and renderer iterati
 | G14 no Core movement | PASS |
 | G15 no implementation authority | PASS |
 
-## 8. Deliberate non-scope
+## 9. Deliberate non-scope
 
 This pass did **not** repair:
 
@@ -176,7 +180,7 @@ This pass did **not** repair:
 
 Those remain backlog candidates for their owning stations. Prompt Pass 1 does not launder them into completion.
 
-## 9. Verdict
+## 10. Verdict
 
 ```
 PROMPT SHELF:
