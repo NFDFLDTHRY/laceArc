@@ -2,9 +2,9 @@
 
 **Not the manifest.** [`systems-manifest.md`](systems-manifest.md) is the Hands contract map; this is an ASCII reading of it and settles nothing it does not.
 
-**Current reading qualification, 2026-09-21:** **Pass 36 — Source → Lab → Lace Alignment Restart Pass 4** is the current desired-behavior mechanism overlay. **Pass 35 remains the mechanism-agnostic assay layer; Pass 34 remains operational traceability; Pass 33 remains vertical authority/context; Pass 32 remains the canonical mechanism catalog; `systems-manifest.md` remains the contract registry.** Pass 36 restores the source-defined functional/causal mechanisms underneath the Pass-3 assays: HCC-A recurrent cognition, Coffee Cup causal literacy/recurrence, and Water's dual proofing systems + interface. These are behavioral obligations, not automatic Core/runtime objects. Concrete realization remains experimental; RM-A remains open / MISSING-A; no implementation or acceptance authority is introduced.
+**Current reading qualification, 2026-09-21:** **Pass 37 — Source → Lab → Lace Alignment Restart Pass 5** is the current compilation-target audit overlay. **Pass 36 remains the desired-behavior mechanism layer; Pass 35 remains the mechanism-agnostic assay layer; Pass 34 remains operational traceability; Pass 33 remains vertical authority/context; Pass 32 remains the canonical mechanism catalog; `systems-manifest.md` remains the contract registry.** Pass 37 does not change Core. It separates permanent logical Lace positions from native Wasm pointer width, derives the target requirements before selecting a target, and records the current verdict **TARGET UNDECIDED**. The former sealed-wasm64 reading is now dated history: wasm64 is a conditional capability candidate; wasm32 is a viable lower-burden candidate; neither is accepted architecture. RM-A remains open / MISSING-A and implementation remains closed.
 
-**Executed passes:** [1](systems-manifest-ascii-pass-1-plan.md) · [2](systems-manifest-ascii-pass-2-plan.md) · [3](systems-manifest-ascii-pass-3-plan.md) · [4](systems-manifest-ascii-pass-4-plan.md) · [5](systems-manifest-ascii-pass-5-plan.md) · [6](systems-manifest-ascii-pass-6-plan.md) · [7](systems-manifest-ascii-pass-7-plan.md) · [8](systems-manifest-ascii-pass-8-plan.md) · [9](systems-manifest-ascii-pass-9-plan.md) · [10](systems-manifest-ascii-pass-10-plan.md) · [11](systems-manifest-ascii-pass-11-plan.md) · [12](systems-manifest-ascii-pass-12-plan.md) · [13](systems-manifest-ascii-pass-13-plan.md) · [14](systems-manifest-ascii-pass-14-plan.md) · [15](systems-manifest-ascii-pass-15-plan.md) · [16](systems-manifest-ascii-pass-16-plan.md) · [17](systems-manifest-ascii-pass-17-plan.md) · [18](systems-manifest-ascii-pass-18-plan.md) · [19](systems-manifest-ascii-pass-19-plan.md) · [20](systems-manifest-ascii-pass-20-plan.md) · [21](systems-manifest-ascii-pass-21-plan.md) · [22](systems-manifest-ascii-pass-22-plan.md) · [23](systems-manifest-ascii-pass-23-plan.md) · [24](systems-manifest-ascii-pass-24-plan.md) · [25](systems-manifest-ascii-pass-25-plan.md) · [26](plans/lace-context-iter6-pass-3-findings.md) · [27](plans/lace-context-iter7-pass-3-audit.md) · [28](plans/reduction-pass-3-findings.md) · [29](plans/math-execution-root-touch-fold-pass-5-findings.md) · **30 = SAMPLING / DENSITY / EMERGENCE Pass 6 reconciliation** · **[31](plans/lab-source-architecture-pass-1-plan.md) = LAB SOURCE ARCHITECTURE Pass 1 (current source/lab overlay; Core unchanged).** · **[32](plans/manifest-reconciliation-pass-1-plan.md) = MANIFEST RECONCILIATION Pass 1 (current mechanism catalog ↔ contract registry).** · **[33](plans/source-lab-lace-alignment-pass-1-plan.md) = SOURCE → LAB → LACE ALIGNMENT RESTART Pass 1 (current vertical authority/context overlay; Pass 32 catalog preserved).** · **[34](plans/source-lab-lace-alignment-pass-2-plan.md) = SOURCE → LAB → LACE ALIGNMENT RESTART Pass 2 (operational traceability; evidence/debt overlay; Pass 32/33 preserved).** · **[35](plans/source-lab-lace-alignment-pass-3-plan.md) = SOURCE → LAB → LACE ALIGNMENT RESTART Pass 3 (behavioral-goal assays; mechanism-agnostic self-test; no holder/Core promotion).** · **[36](plans/source-lab-lace-alignment-pass-4-plan.md) = SOURCE → LAB → LACE ALIGNMENT RESTART Pass 4 (desired-behavior mechanism recovery; Pass-3 assays retained as projections; implementation open).**
+**Executed passes:** [1](systems-manifest-ascii-pass-1-plan.md) · [2](systems-manifest-ascii-pass-2-plan.md) · [3](systems-manifest-ascii-pass-3-plan.md) · [4](systems-manifest-ascii-pass-4-plan.md) · [5](systems-manifest-ascii-pass-5-plan.md) · [6](systems-manifest-ascii-pass-6-plan.md) · [7](systems-manifest-ascii-pass-7-plan.md) · [8](systems-manifest-ascii-pass-8-plan.md) · [9](systems-manifest-ascii-pass-9-plan.md) · [10](systems-manifest-ascii-pass-10-plan.md) · [11](systems-manifest-ascii-pass-11-plan.md) · [12](systems-manifest-ascii-pass-12-plan.md) · [13](systems-manifest-ascii-pass-13-plan.md) · [14](systems-manifest-ascii-pass-14-plan.md) · [15](systems-manifest-ascii-pass-15-plan.md) · [16](systems-manifest-ascii-pass-16-plan.md) · [17](systems-manifest-ascii-pass-17-plan.md) · [18](systems-manifest-ascii-pass-18-plan.md) · [19](systems-manifest-ascii-pass-19-plan.md) · [20](systems-manifest-ascii-pass-20-plan.md) · [21](systems-manifest-ascii-pass-21-plan.md) · [22](systems-manifest-ascii-pass-22-plan.md) · [23](systems-manifest-ascii-pass-23-plan.md) · [24](systems-manifest-ascii-pass-24-plan.md) · [25](systems-manifest-ascii-pass-25-plan.md) · [26](plans/lace-context-iter6-pass-3-findings.md) · [27](plans/lace-context-iter7-pass-3-audit.md) · [28](plans/reduction-pass-3-findings.md) · [29](plans/math-execution-root-touch-fold-pass-5-findings.md) · **30 = SAMPLING / DENSITY / EMERGENCE Pass 6 reconciliation** · **[31](plans/lab-source-architecture-pass-1-plan.md) = LAB SOURCE ARCHITECTURE Pass 1 (current source/lab overlay; Core unchanged).** · **[32](plans/manifest-reconciliation-pass-1-plan.md) = MANIFEST RECONCILIATION Pass 1 (current mechanism catalog ↔ contract registry).** · **[33](plans/source-lab-lace-alignment-pass-1-plan.md) = SOURCE → LAB → LACE ALIGNMENT RESTART Pass 1 (current vertical authority/context overlay; Pass 32 catalog preserved).** · **[34](plans/source-lab-lace-alignment-pass-2-plan.md) = SOURCE → LAB → LACE ALIGNMENT RESTART Pass 2 (operational traceability; evidence/debt overlay; Pass 32/33 preserved).** · **[35](plans/source-lab-lace-alignment-pass-3-plan.md) = SOURCE → LAB → LACE ALIGNMENT RESTART Pass 3 (behavioral-goal assays; mechanism-agnostic self-test; no holder/Core promotion).** · **[36](plans/source-lab-lace-alignment-pass-4-plan.md) = SOURCE → LAB → LACE ALIGNMENT RESTART Pass 4 (desired-behavior mechanism recovery; Pass-3 assays retained as projections; implementation open).** · **[37](plans/source-lab-lace-alignment-pass-5-plan.md) = SOURCE → LAB → LACE ALIGNMENT RESTART Pass 5 (compilation-target audit; former wasm64 seal reopened; TARGET UNDECIDED; Core unchanged).**
 
 **Authority:** `docs/systems-manifest.md`. Companion, not a replacement.  
 **Hands:** Graphics A–D. Shoe in hands.  
@@ -1234,6 +1234,276 @@ Pass 36 does **not**:
 - accept pointer emission;
 - open implementation.
 
+
+
+---
+
+## Pass 37 — Source → Lab → Lace Alignment Restart Pass 5 — CHECK THE FOUNDATION
+
+**Campaign:** [Source → Lab → Lace Alignment Restart Pass 5](plans/source-lab-lace-alignment-pass-5-plan.md).  
+**Requirements:** [target requirements](plans/source-lab-lace-alignment-pass-5-target-requirements.md).  
+**Audit:** [target audit](plans/source-lab-lace-alignment-pass-5-target-audit.md).  
+**Question:** is `wasm64-unknown-unknown` actually the correct compilation target?
+
+### P37-S — separate the domains first
+
+~~~text
+LACE LOGICAL HISTORY
+permanent positions
+no reuse / no wrap
+        |
+        | DOES NOT IMPLY
+        v
+RUST usize / native pointer width
+        |
+        v
+WASM linear-memory address width
+        |
+        +-------> browser/embedder practical memory ceiling
+        |
+        +-------> WebGPU buffer / binding domain
+        |
+        +-------> WGSL runtime integer / pointer domain
+        |
+        +-------> WebNN tensor / accelerator domain
+~~~
+
+The target must satisfy the implementation's required physical domain.
+
+It does not define Lace semantics.
+
+### P37-R — requirement court
+
+Current repository requirements say:
+
+| Requirement | Current status |
+|---|---|
+| one append-only authoritative strand | REQUIRED |
+| permanent non-wrapping logical positions | REQUIRED |
+| logical Index type/width | **OPEN** |
+| encoded row size | **OPEN** |
+| total supported persistent domain | **OPEN** |
+| simultaneously resident Wasm working set | **OPEN** |
+| carrier: whole-memory vs external/windowed/other | **OPEN** |
+| persistence / restart | **OPEN R3** |
+| capacity / refusal policy | **OPEN R4** |
+| concurrency | **OPEN** |
+
+Therefore:
+
+~~~text
+forever index
+    !=
+64-bit native pointer
+
+and
+
+one strand
+    !=
+whole strand must live in one Wasm memory
+~~~
+
+No current Core/branch contract establishes a >4 GiB simultaneously resident requirement.
+
+### P37-W — material inventory result
+
+~~~text
+WEBASSEMBLY 3.0
+    i32 / i64 memory address capability
+                |
+                v
+RUSTC
+    wasm32 Tier 2 candidate
+    wasm64 Tier 3 candidate
+                |
+                v
+CARGO
+    build path / stdlib closure / rust-src / features
+                |
+                v
+WEB / BROWSER
+    memory32 runtime ceiling: 4 GiB
+    memory64 runtime ceiling: 16 GiB by current JS API spec
+                |
+       +--------+--------+
+       |                 |
+       v                 v
+    WebGPU              WGSL
+ resource limits     runtime i32/u32,
+ independent        pointer/layout domain
+       |
+       +--------> WebNN tensor/operator domain
+~~~
+
+Important current-source consequences:
+
+- Memory64 capability is real.
+- Chrome family support is real.
+- A browser Memory64 domain is **not** a practically unbounded 64-bit domain.
+- wasm64 remains higher toolchain burden in current Rust docs.
+- Layer-III 64-bit fields/types do not select the host pointer ABI.
+
+### P37-C — candidate court
+
+#### wasm64 monolithic resident strand
+
+~~~text
+requires:
+accepted >4 GiB resident need
++ successful Tier-3 toolchain build
++ actual Pixel Memory64 capacity
++ acceptable performance/overhead
+~~~
+
+**Current status: NOT JUSTIFIED.**
+
+#### wasm64 bounded/windowed carrier
+
+If the resident working set is already below memory32 limits, the wider native pointer ABI needs another project requirement.
+
+**Current status: POSSIBLE / CURRENTLY OVER-SPECIFIED ON KNOWN REQUIREMENTS.**
+
+#### wasm32 + wide logical indices + bounded resident set
+
+~~~text
+permanent logical index
+        |
+        +-- explicit logical integer / representation
+        |
+        v
+bounded memory32 working set
+        |
+        v
+optional admitted carrier/window for larger history
+~~~
+
+**Current status: VIABLE CANDIDATE, NOT YET PROVED SUFFICIENT.**
+
+#### custom target
+
+**Current status: NO DEFAULT JUSTIFICATION.**
+
+### P37-E — execution boundary
+
+Pass 5 executed the source/requirements court.
+
+It could **not** execute the compiler/device court in this environment:
+
+~~~text
+rustc     NOT INSTALLED
+cargo     NOT INSTALLED
+rustup    NOT INSTALLED
+
+Pixel / Chrome installed-app execution
+          NOT AVAILABLE HERE
+
+P-BUILD64 / P-BUILD32 / ABI / build-std closure
+          NOT_RUN
+
+P-64a / P-64b / P-32b / P-64c / P-INST
+          NOT_RUN
+
+WebGPU / WGSL / WebNN Pixel probes
+          NOT_RUN
+~~~
+
+Two build questions remain explicitly open:
+
+- `compiler_builtins` participation in the intended build-std closure;
+- build-std / Cargo.lock / sysroot source-provenance behavior.
+
+No silence is converted into a negative fact.
+
+### P37-V — target verdict
+
+~~~text
+TARGET VERDICT:
+    TARGET UNDECIDED
+
+FORMER WASM64 SEAL:
+    SUPERSEDED AS CURRENT TARGET STATE
+    PRESERVED ONLY AS DATED HISTORY
+
+WASM64:
+    CONDITIONAL CAPABILITY CANDIDATE
+
+WASM32:
+    VIABLE LOWER-BURDEN CANDIDATE
+
+CORE:
+    UNCHANGED
+
+IMPLEMENTATION:
+    STILL CLOSED
+~~~
+
+The direct answer to the Pass-5 question is:
+
+~~~text
+No current evidence establishes
+that wasm64 is correctly fixed
+as the compilation target.
+~~~
+
+This is not a proof that wasm64 is wrong.
+
+It is a proof that the old **resolved/sealed** status outran the current requirements and evidence.
+
+### P37-T — what would decide it
+
+~~~text
+IF accepted resident working set > 4 GiB
+AND lawful bounded/windowed alternatives fail
+AND wasm64 build + Pixel probes pass
+    -> wasm64 may be confirmed
+
+IF accepted resident working set <= memory32 domain
+AND wide logical indices remain independent
+AND carrier/persistence plan is lawful
+AND wasm32 build + Pixel probes pass
+    -> wasm32 may be confirmed
+
+ELSE
+    -> TARGET UNDECIDED
+~~~
+
+### P37-X — hard fences
+
+Pass 37 does **not**:
+
+- choose Index width;
+- choose row encoding;
+- choose R3 persistence;
+- choose R4 capacity/refusal;
+- choose an authoritative carrier;
+- choose a custom Rust target;
+- treat wasm64 or wasm32 as Core law;
+- treat WebGPU/WGSL/WebNN as target-selection authority;
+- infer build closure from source silence;
+- claim unrun Pixel/toolchain probes passed;
+- solve RM-A;
+- accept pointer emission;
+- open implementation.
+
+### P37-RC — reconciliation result
+
+Active entrances now route the target as:
+
+~~~text
+Wasm / rustc / Cargo source shelves
+        |
+        v
+Pass-5 target court
+        |
+        v
+TARGET UNDECIDED
+        |
+        +--> wasm64 candidate
+        |
+        +--> wasm32 candidate
+~~~
+
+Historical sealed-wasm64 text remains in dated pass bodies as provenance and is not current target law.
 
 ---
 
