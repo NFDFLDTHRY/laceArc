@@ -152,6 +152,54 @@ A 64-bit Lace logical index crossing into a WGSL shader therefore requires an ex
 
 WGSL remains **Layer III / shader-language material**. It does not become Lace WORD, Core schema, the authoritative carrier, or a replacement Rust/Wasm compilation target.
 
+### 0-D — Human-supplied WebNN HOST-NN inference material
+
+Human-supplied file:
+
+`Web Neural Network API.pdf`
+
+SHA-256:
+
+`e11532183ed50d11e91c70881c59b805346b6607d41e82e7d52aca520df53fdc`
+
+This exactly matches the source hash already recorded by `docs/clipboards/webnn-clipboard.md`, `docs/clipboards/webnn-mechanisms.md`, and `docs/clipboards/webnn-ascii-machinery.md` for the **Web Neural Network API W3C Candidate Recommendation Draft, 10 September 2026**.
+
+Therefore Pass 5 does **not** create another WebNN clipboard. The existing HOST-NN shelf is the source-grounded clipboard; this human-supplied PDF upgrades the source identity for this campaign to a user-supplied source with matching hash.
+
+Pass-5-relevant source facts:
+
+- WebNN is a low-level, hardware-agnostic neural-network inference API over implementation-selected CPU, GPU, and dedicated ML acceleration;
+- `MLContextOptions.powerPreference` and `accelerated` are preferences/hints; the user agent selects the concrete execution device and WebNN does not generally expose device enumeration;
+- an `MLContext` can also be created from a specific WebGPU `GPUDevice`, but that bridge does not make WebNN identical to WebGPU;
+- `MLOperandDataType` includes `int64` and `uint64`, but operator support is implementation- and operator-specific and must be queried with `opSupportLimits()`;
+- `opSupportLimits()` exposes `maxTensorByteLength` plus per-operator data-type/rank support, making tensor capacity a separate runtime capability domain;
+- an `MLTensor` has implementation-defined backing allocation, including possible alignment and memory-pool constraints;
+- a `Uint8Array` may represent a slice of `WebAssembly.Memory` for WebNN buffer input, but WebNN buffer/tensor operations define their own copy/ownership semantics;
+- `exportToGPU()` can bridge an exportable `MLTensor` to a WebGPU `GPUBuffer`, but zero-copy is explicitly **not guaranteed**, and while exported the GPU device has exclusive access to that tensor's contents;
+- compiled `MLGraph` objects are immutable and dispatch runs asynchronously on the context timeline; WebNN is graph/tensor inference machinery, not arbitrary shader authoring.
+
+This adds another inventory boundary:
+
+```
+Lace logical Index
+        !=
+Rust usize / Wasm pointer
+        !=
+WGSL runtime integer / pointer
+        !=
+WebNN tensor element data type
+        !=
+WebNN tensor byte capacity
+        !=
+selected accelerator identity
+```
+
+WebNN therefore cannot settle wasm32 versus wasm64 merely because it exposes 64-bit tensor element types or an unsigned-64-bit tensor-size field.
+
+A host-side `u64` logical index, a WebNN `uint64` tensor element, and a 64-bit Wasm pointer are three different claims that must be tested independently.
+
+WebNN remains **Layer III / HOST-NN inference material**. It does not become Lace WORD, Core schema, the authoritative carrier, or a replacement Rust/Wasm compilation target.
+
 ---
 
 ## 1. Pass-5 thesis
@@ -184,6 +232,12 @@ eq 	ext{browser/device viability}
 ]
 
 [
+\boxed{
+\text{Wasm pointer width} \neq \text{WebNN tensor element width / accelerator domain}
+}
+]
+
+[
 oxed{
 	ext{The target must be derived from the required implementation domain, not inherited from an old seal.}
 }
@@ -191,7 +245,7 @@ eq 	ext{browser/device viability}
 
 ---
 
-## 2. The seven widths/domains that must not be conflated
+## 2. The eight widths/domains that must not be conflated
 
 Pass 5 must explicitly separate:
 
@@ -261,6 +315,25 @@ Pass 5 must distinguish:
 - any explicitly encoded wide logical index such as a pair of `u32` values.
 
 No one of these may impersonate another.
+
+### W8 — WebNN tensor / operator / accelerator domain
+
+How much Lace-derived or model-derived data must enter WebNN, in what tensor element representation, through which operators, and on what actual implementation-selected backend?
+
+This is **not** the Wasm pointer domain and is also distinct from WGSL.
+
+Pass 5 must distinguish:
+
+- WebNN tensor element data type;
+- tensor byte length and allocation viability;
+- per-operator supported data types and ranks;
+- MLContext backend/device selection;
+- Wasm-memory → tensor copy/write behavior;
+- MLTensor → GPUBuffer export behavior;
+- graph build/dispatch/readback cost;
+- whether 64-bit integer tensors are actually needed by any Layer III workload.
+
+No WebNN capability may be used as a proxy for Wasm linear-memory width.
 
 ---
 
@@ -486,6 +559,24 @@ Questions:
 - can dispatch/window base + local `u32` index avoid carrying a full wide index per invocation.
 
 If no required shader consumes wide logical positions, record that explicitly rather than solving a problem the project does not have.
+
+### RQ10 — WebNN acceleration and tensor-domain requirement
+
+If WebNN participates in required Layer III work, determine:
+
+- which exact graph/operator workloads use it;
+- largest tensor byte length required by those workloads;
+- required tensor element types and ranks;
+- whether any operation actually requires `int64` or `uint64`;
+- whether the workload needs default UA-selected acceleration or a WebGPU-backed MLContext;
+- copy cost from Wasm-owned buffers into MLTensor;
+- readback cost;
+- MLTensor↔GPUBuffer bridge cost and ownership transition;
+- fallback behavior when an operator/data type/rank is unsupported.
+
+If WebNN is optional acceleration rather than required capability, record that explicitly.
+
+Do not choose wasm64 merely to mirror WebNN's 64-bit tensor data types or `maxTensorByteLength` field.
 
 ---
 
@@ -778,6 +869,216 @@ Attack: that built-in is `u32` and dispatch geometry is bounded accordingly.
 **F22 — AbstractInt promoted to runtime-u64 evidence.** Compile/source-domain range is used as proof of a concrete shader u64.
 
 **F23 — unchecked host↔WGSL struct copy.** A wide-index representation is copied across the buffer boundary without a layout round-trip receipt.
+
+## 6C. WebNN source court — HOST-NN constraints on the target audit
+
+Re-read the human-supplied `Web Neural Network API.pdf` against the existing WebNN shelf.
+
+Do **not** turn WebNN into Core, the compile target, the authoritative carrier, or a substitute for WebGPU/WGSL.
+
+### S-N1 — inference graph domain, not host address space
+
+WebNN constructs, compiles, and executes neural-network computational graphs.
+
+Its tensors and operands are a separate execution/data domain from Wasm linear memory.
+
+A larger WebNN tensor does not imply the host Wasm module needs equally wide native pointers.
+
+### S-N2 — 64-bit tensor types != 64-bit pointer ABI
+
+WebNN's operand type vocabulary includes `int64` and `uint64`.
+
+That is tensor **element** representation, not a host address type and not evidence for wasm64.
+
+Pass 5 must ask whether any required WebNN operation actually uses those types.
+
+### S-N3 — allowed type != supported type
+
+The specification distinguishes allowed data types from required interoperable data types and permits implementations to support fewer of the allowed types.
+
+`opSupportLimits()` exposes actual operator-level support.
+
+Therefore the existence of `uint64` in the enum is not a Pixel capability receipt.
+
+### S-N4 — tensor-size field != practical tensor capacity
+
+`MLOpSupportLimits.maxTensorByteLength` is an unsigned 64-bit quantity, but the returned value is an implementation capability limit.
+
+Actual tensor creation/allocation can also fail for implementation-defined allocation reasons.
+
+Do not read the IDL field width as portable capacity.
+
+### S-N5 — tensor backing is implementation-defined
+
+`MLTensor` backing storage is implementation-defined and may require particular byte alignment or a particular memory pool.
+
+It is not Wasm linear memory merely because the API accepts ArrayBuffer-backed input.
+
+### S-N6 — Wasm-memory input is a bridge, not identity
+
+The buffer validation rules allow a `Uint8Array` as a generic byte slice, including a slice of a `WebAssembly.Memory` instance.
+
+That establishes an input bridge.
+
+It does not establish shared authoritative storage or zero-copy tensor backing.
+
+### S-N7 — WebNN↔WebGPU export is exclusive and not guaranteed zero-copy
+
+An exportable `MLTensor` can be exported as a `GPUBuffer`.
+
+While exported, WebNN operations depending on the tensor are unavailable and the GPU device has exclusive access.
+
+The specification explicitly states that export may copy the tensor to the GPUBuffer and copy it back when the GPUBuffer is destroyed.
+
+This bridge must be measured, not idealized.
+
+### S-N8 — device selection is a hint domain
+
+Default WebNN context creation takes power/acceleration preferences, while the user agent selects the actual underlying CPU/GPU/NPU combination.
+
+The API deliberately limits direct device exposure.
+
+A WebNN performance result must therefore record the observed context path and support surface without pretending a specific hidden accelerator was selected unless independently evidenced.
+
+### S-N9 — build/dispatch are asynchronous lifecycle costs
+
+`MLGraphBuilder.build()` compiles/optimizes a graph into an immutable `MLGraph`.
+
+`dispatch()` enqueues execution and does not itself signal completion; readback is a synchronization/observation path.
+
+Pass 5 must separate graph-build cost, steady-state dispatch cost, upload/write cost, export cost, and readback cost.
+
+### Pass-5 WebNN probes
+
+#### P-WEBNN-SUPPORT
+
+On the actual Pixel/Chrome installed-app path, record:
+
+- `navigator.ml` availability;
+- context creation success;
+- `context.accelerated`;
+- `opSupportLimits().maxTensorByteLength`;
+- preferred input layout;
+- required data types/ranks for every WebNN operator the candidate Layer III workload would use.
+
+Do not dump the entire operator catalogue if the project only needs a subset.
+
+#### P-WEBNN-INT64
+
+Only if a candidate workload needs 64-bit integer tensor elements:
+
+- test creation of `int64` / `uint64` tensors;
+- query support for each required operator;
+- run exact-value round trips and required arithmetic/index operations;
+- record unsupported or implementation-defined cases.
+
+Do not infer general 64-bit WebNN arithmetic from enum membership.
+
+#### P-WEBNN-WASM-BRIDGE
+
+Use a `Uint8Array` view over a disposable `WebAssembly.Memory` region as WebNN input.
+
+Measure and verify:
+
+- byte-accurate transfer;
+- write/create-constant behavior;
+- whether source mutation after the API call affects tensor contents;
+- transfer cost over representative sizes.
+
+This proves bridge semantics without calling the MLTensor Wasm memory.
+
+#### P-WEBNN-CAPACITY
+
+Probe tensor creation at representative increasing sizes bounded by `maxTensorByteLength`, available device memory, and responsible test limits.
+
+Record:
+
+- descriptor;
+- data type;
+- shape;
+- byte length;
+- success/failure;
+- context mode;
+- observed memory pressure.
+
+Do not chase a theoretical maximum to the point of destabilizing the device.
+
+#### P-WEBNN-EXPORT-GPU
+
+For a WebGPU-compatible exportable tensor:
+
+- create/export/use/destroy/return;
+- verify exclusive-access behavior while exported;
+- measure export + GPU use + return cost;
+- compare against non-exported write/read path;
+- record that zero-copy status is **not assumed** even if timing suggests it.
+
+#### P-WEBNN-DEVICE
+
+Compare, where supported:
+
+- default context;
+- `accelerated: true`;
+- `accelerated: false`;
+- relevant `powerPreference`;
+- `createContext(gpuDevice)`.
+
+Record support/performance behavior, but do not claim hidden CPU/GPU/NPU identity that the API does not expose.
+
+#### P-WEBNN-GRAPH-LIFECYCLE
+
+For one representative graph:
+
+- build/compile time;
+- first dispatch;
+- repeated dispatch;
+- writeTensor cost;
+- readTensor cost;
+- graph/tensor reuse behavior.
+
+Separate setup cost from steady-state inference.
+
+### Pass-5 decision-matrix addition
+
+Add criterion **D17 — WebNN acceleration / tensor-domain fit**:
+
+- does required Layer III work actually use WebNN;
+- required tensor capacity and operator support;
+- required integer width inside tensors;
+- Wasm↔MLTensor transfer cost;
+- MLTensor↔GPUBuffer transfer/ownership cost;
+- graph build and repeated-dispatch cost;
+- backend/device-selection uncertainty;
+- whether WebNN offload makes host pointer width less relevant to the accelerated workload.
+
+### Additional assumptions to attack
+
+**A-14:** “WebNN has `uint64`, therefore the project needs wasm64.”  
+Attack: tensor element type != host pointer ABI.
+
+**A-15:** “`maxTensorByteLength` is unsigned long long, therefore enormous tensors are portable.”  
+Attack: field width != returned implementation limit != successful allocation.
+
+**A-16:** “WebNN export to WebGPU is zero-copy shared memory.”  
+Attack: zero-copy is explicitly not guaranteed and ownership is exclusive while exported.
+
+**A-17:** “`accelerated: true` means the app selected a specific GPU/NPU.”  
+Attack: it is a preference; the user agent chooses the concrete execution device.
+
+**A-18:** “WebNN can replace arbitrary WGSL/WebGPU compute.”  
+Attack: WebNN is a compiled neural-network graph/operator API, not custom shader authoring.
+
+### Additional falsifiers
+
+**F24 — WebNN tensor width promoted to Wasm pointer width.** Tensor `uint64` existence is used as evidence for wasm64.
+
+**F25 — maxTensorByteLength field width promoted to capacity.** IDL width substitutes for queried and allocated capacity.
+
+**F26 — WebNN/WebGPU zero-copy assumed.** `exportToGPU()` is treated as shared memory without measurement/source qualification.
+
+**F27 — acceleration hint promoted to device identity.** A preference is reported as proof of actual NPU/GPU selection.
+
+**F28 — MLTensor promoted to Lace store.** WebNN tensor allocation or graph state is used as the authoritative append-only carrier.
 
 ---
 
@@ -1109,6 +1410,19 @@ Do not assume migration is trivial.
 
 A target does not gain credit merely because the host can address a larger memory if required shader work still operates on bounded resources and 32-bit concrete indices.
 
+### D17 — WebNN acceleration / tensor-domain fit
+
+- whether required Layer III work uses WebNN at all;
+- required tensor byte lengths and data types;
+- actual per-operator support;
+- Wasm→MLTensor transfer cost;
+- MLTensor↔GPUBuffer bridge/ownership cost;
+- graph build and steady-state dispatch/readback cost;
+- backend-selection uncertainty;
+- whether WebNN offload changes the host-resident working-set requirement.
+
+WebNN receives no target credit merely because its tensor vocabulary contains 64-bit integers.
+
 ---
 
 ## 14. Decision rules
@@ -1126,7 +1440,8 @@ all relevant conditions survive:
 7. the target does not force unnecessary platform/toolchain debt;
 8. the target's required feature set is supported by the actual deployment environment;
 9. any required WebGPU path works within actual GPU resource/binding limits without assuming whole-memory zero-copy aliasing;
-10. any required WGSL path has an exact representation for logical indices/offsets without assuming host pointer width becomes shader integer width.
+10. any required WGSL path has an exact representation for logical indices/offsets without assuming host pointer width becomes shader integer width;
+11. any required WebNN path fits actual tensor/operator/device support and measured transfer costs without treating tensor element width as host pointer width.
 
 ### wasm64 is OVER-SPECIFIED if
 
@@ -1216,11 +1531,36 @@ the project has not specified the carrier/working-set/domain requirement suffici
 
 **Attack:** the built-in is `u32`; large logical domains require explicit window/base/chunk machinery if the shader needs them.
 
+### A-14
+“WebNN has `uint64`, therefore the project needs wasm64.”
+
+**Attack:** tensor element type != host pointer ABI.
+
+### A-15
+“`maxTensorByteLength` is unsigned long long, therefore enormous tensors are portable.”
+
+**Attack:** field width != queried implementation limit != successful allocation.
+
+### A-16
+“WebNN export to WebGPU is zero-copy shared memory.”
+
+**Attack:** the specification explicitly permits copies and gives the GPU exclusive tensor access while exported.
+
+### A-17
+“`accelerated: true` means the application selected a specific GPU/NPU.”
+
+**Attack:** it is a preference; actual selection belongs to the user agent.
+
+### A-18
+“WebNN can replace arbitrary WGSL/WebGPU compute.”
+
+**Attack:** it is neural-network graph/operator inference machinery, not custom shader authoring.
+
 ---
 
 ## 16. Relation to current building-materials inventory
 
-Pass 5 classifies target materials into six buckets.
+Pass 5 classifies target materials into seven buckets.
 
 ### CORE WASM MATERIAL
 
@@ -1285,6 +1625,31 @@ Does **not** answer:
 - authoritative carrier selection;
 - wasm32 vs wasm64 by itself.
 
+### HOST-NN / ACCELERATOR MATERIAL
+
+- uploaded WebNN CRD 2026-09-10;
+- existing WebNN clipboard / mechanisms / ASCII machinery;
+- MLContext device-selection model;
+- MLOperand / MLTensor data types and capacity limits;
+- operator-level support limits;
+- Wasm-buffer input bridge;
+- WebNN↔WebGPU export bridge;
+- graph build / dispatch / readback lifecycle.
+
+Answers:
+- what neural-network inference work can be offloaded through the browser;
+- what tensor widths/ranks/operators are actually supported;
+- how much tensor data may be resident;
+- what copy/ownership boundaries exist around Wasm and WebGPU;
+- what setup/dispatch/readback costs the acceleration path introduces.
+
+Does **not** answer:
+- Lace semantics;
+- Rust/Wasm pointer width;
+- authoritative carrier selection;
+- WGSL shader semantics;
+- wasm32 vs wasm64 by itself.
+
 ### DEVICE EVIDENCE
 
 - Pixel 9a probes;
@@ -1309,6 +1674,7 @@ CLIPBOARDS
 Wasm 3.0 source re-admission
 WebGPU source re-admission (same existing shelf/hash)
 WGSL source re-admission (same existing shelf/hash)
+WebNN source re-admission (same existing shelf/hash)
 rustc target
 Cargo build-std
         |
@@ -1332,6 +1698,7 @@ DEVICE PROBES
 memory64 / memory32 capacity + cost
 WebGPU limits + transfer/window cost
 WGSL wide-index + layout + dispatch probes
+WebNN support + tensor + bridge + lifecycle probes
         |
         v
 EMBEDDER SOURCE
@@ -1386,6 +1753,7 @@ wasm64 | wasm32 | conditional
 toolchain + embedder + device evidence
         +---- WebGPU resource / transfer constraints
         +---- WGSL integer / pointer / layout constraints
+        +---- WebNN tensor / operator / accelerator constraints
         |
         v
 TARGET VERDICT
@@ -1466,6 +1834,21 @@ WGSL's abstract integer range is used as proof of a concrete runtime `u64`/i64 s
 ### F23 — unchecked host↔WGSL struct copy
 A wide-index or offset representation is copied into a shader resource without a verified WGSL/Rust byte-layout round trip.
 
+### F24 — WebNN tensor width promoted to Wasm pointer width
+WebNN `uint64` / `int64` tensor types are treated as evidence for a 64-bit Wasm pointer ABI.
+
+### F25 — maxTensorByteLength field width promoted to capacity
+The unsigned-64-bit IDL type is treated as practical tensor capacity without querying support and allocation.
+
+### F26 — WebNN/WebGPU zero-copy assumed
+`exportToGPU()` is treated as shared memory without qualification or measurement.
+
+### F27 — acceleration hint promoted to device identity
+A WebNN preference is reported as proof that a specific GPU/NPU was selected.
+
+### F28 — MLTensor promoted to Lace store
+WebNN tensor/graph state is treated as authoritative append-only Lace storage.
+
 ---
 
 ## 20. Completion board
@@ -1510,7 +1893,16 @@ A wide-index or offset representation is copied into a shader resource without a
 | G36 | host↔WGSL layout round-trip proven for any selected wide-index representation |
 | G37 | dispatch-index / required WGSL extension limits checked or honestly NOT-RUN |
 | G38 | WGSL remains Layer III / shader-language material; no Core/target-swap promotion |
-| G39 | all claims released |
+| G39 | uploaded WebNN CRD hash verified against existing shelf |
+| G40 | WebNN tensor/operator/device domain separated from Wasm pointer and WGSL domains |
+| G41 | required WebNN operator/data-type/rank support queried or explicitly not required |
+| G42 | any required int64/uint64 WebNN behavior proven on the actual Pixel or kept OPEN |
+| G43 | Wasm-memory → WebNN tensor bridge semantics/cost measured or honestly NOT-RUN |
+| G44 | WebNN→WebGPU export ownership/copy cost measured or honestly NOT-RUN |
+| G45 | WebNN tensor capacity and allocation limit recorded or honestly NOT-RUN |
+| G46 | WebNN device-selection claims limited to evidence actually exposed by the API |
+| G47 | WebNN remains Layer III / HOST-NN material; no Core/carrier/target-swap promotion |
+| G48 | all claims released |
 
 ---
 
@@ -1547,6 +1939,7 @@ WHAT COST IT ACCEPTS
 WHAT DEVICE EVIDENCE SUPPORTS IT
 WHAT WEBGPU RESOURCE / TRANSFER ASSUMPTIONS IT DEPENDS ON
 WHAT WGSL REPRESENTATION / LAYOUT ASSUMPTIONS IT DEPENDS ON
+WHAT WEBNN TENSOR / OPERATOR / TRANSFER ASSUMPTIONS IT DEPENDS ON
 WHAT WOULD FALSIFY IT
 WHAT WOULD TRIGGER RE-TARGETING
 ```
@@ -1577,6 +1970,10 @@ It does **not** automatically:
 - assume Rust/Wasm pointer width becomes WGSL pointer/integer width;
 - treat WGSL `AbstractInt` as a general runtime u64;
 - copy host structs into shader resources without a verified layout contract;
+- infer wasm64 from WebNN `int64` / `uint64` tensor types;
+- treat `maxTensorByteLength` field width as practical capacity;
+- assume WebNN↔WebGPU export is zero-copy;
+- treat an MLTensor or MLGraph as the authoritative Lace carrier;
 - open Pass 6.
 
 The exact question is:
