@@ -1,6 +1,6 @@
 # MATHEMATICAL EXECUTION MODEL — Behavioral Read Devices Pass 4 PLAN
 
-**Status:** PLAN — NOT EXECUTED.
+**Status:** EXECUTED 2026-09-22.
 **Campaign:** Mathematical Execution Model — Behavioral Read Devices.
 **Pass:** 4.
 **Pass name:** **PUT THE SHOE BACK IN HAND — graphics source-fidelity, path multiplicity, and projection court.**
@@ -16,6 +16,14 @@
 **Target:** TARGET UNDECIDED.
 **R3 carrier:** OPEN.
 **Pointer acceptance:** absent.
+**Execution claim:** `ad764786618f9bd62838e6685a5ca54d748c5b0e`.
+**Graphics authority matrix:** `260b8ee439c46f547d67ecb49d6a39ccbe74fdf6`.
+**D1 path audit:** `60152b8e5854e4a7adc3bf346135b93e48fc70a5`.
+**Star/projection fidelity:** `343948dabf60f1efb409a5500b43c1d847d3fe55`.
+**Primary-model repair:** `5fd4df6ece415f3a974c1163ca6dc0c754eda97c`.
+**Atomic-map repair:** `e42439c37b9379618275cdf5e3aeeb7e4199c141`.
+**Findings:** `3d1b887161fba7b7c9feb715a7eb857e721fb7fc`.
+**Final verdict:** **CORE STORAGE MATH SOURCE-FAITHFUL WITH AUTHORITY RELABELING · STAR MODEL SOUND WITH PATH-FIDELITY QUALIFICATION · REACH VALID AS MEMBERSHIP ONLY · PROJECTION MODEL SOUND WITH NON-UNIQUENESS / LOSS DECLARATION · JOIN / GROUNDING PROVENANCE SOUND AFTER BOUNDED AUTHORITY REPAIR · S9–S11 CLEANLY EXTERNAL TO GRAPHIC CORE · MATH MODEL GRAPHICS-FAITHFUL AFTER BOUNDED REPAIR.**
 
 ---
 
