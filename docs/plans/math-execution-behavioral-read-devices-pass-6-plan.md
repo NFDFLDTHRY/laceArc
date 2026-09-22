@@ -1,6 +1,6 @@
 # MATHEMATICAL EXECUTION MODEL — Behavioral Read Devices Pass 6 PLAN
 
-**Status:** PLAN — NOT EXECUTED.
+**Status:** EXECUTED — FIVE-PASS CAMPAIGN COHERENT AFTER PROPAGATION REPAIR.
 **Pass:** 6 — **WHAT DID WE MISS?**
 **Purpose:** reconcile Passes 1–5 across the whole repository so every live entry surface tells the same current story.
 **Pre-plan sit:** docs/plans/math-execution-behavioral-read-devices-pass-6-whole-campaign-sit.md
@@ -487,3 +487,14 @@ It does not automatically start:
 - carrier selection
 - H×C×W scheduler design
 - Pass 7
+
+
+---
+
+## 12. Execution closeout
+
+**Executed 2026-09-22.** Stages A-G completed in station order. Upstream map, behavioral-clock, research-clipboard, law/entry, and mandatory context surfaces were reconciled before the global companion. Global ASCII Pass 39 then landed as the final overlay, followed by the required stale-phrase/coherence sweep.
+
+Final result: **FIVE-PASS CAMPAIGN COHERENT AFTER PROPAGATION REPAIR. WATER CURRENT-LAW CONFLICT RECONCILED. HISTORY PRESERVED. PASS 39 WHOLE-CAMPAIGN OVERLAY SOUND.**
+
+See [Pass-6 findings](math-execution-behavioral-read-devices-pass-6-findings.md). RM-A remains OPEN / MISSING-A; G1 OPEN; R3 OPEN; TARGET UNDECIDED; pointer acceptance absent; implementation closed; no `src/`.
