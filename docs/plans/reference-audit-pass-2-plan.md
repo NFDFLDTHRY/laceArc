@@ -1,6 +1,6 @@
 # Reference audit — pass 2 plan: A / B / C companion fidelity against the PNGs
 
-**Status:** PLAN · not executed.  
+**Status:** EXECUTED — CLOSED · receipt [reference-audit-pass-2-findings.md](reference-audit-pass-2-findings.md). Two table edits this plan named (B9 label rows; nothing else) were redirected to appended sections so no dated section was rewritten; receipt §3.  
 **Station:** graphics (execution). This plan file is maps-owned.  
 **Board:** [reference-audit-iteration-plan.md](reference-audit-iteration-plan.md) · findings RA-G01, RA-G02, RA-G03, RA-G04, RA-G06, RA-G09, RA-G10.  
 **Pinned:** `21652f463b3178075cc9d4568847502766c0304a`.  
