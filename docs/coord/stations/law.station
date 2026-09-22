@@ -1,7 +1,7 @@
-STATUS: FREE
+STATUS: HELD
 STATION: law
 OWNS: AGENTS.md CLAUDE.md docs/staking-the-workspace.md docs/law-why-these-documents.md docs/systems-manifest.md docs/pointer-emission.md docs/references.md CONTRIBUTING.md README.md .gitignore LICENSE docs/README.md
-AGENT: -
-BASE: -
-SINCE: -
-NOTE: Alignment Restart Pass 4 law clarification COMPLETE. Originals define behavioral goals plus desired-behavior functional/causal mechanisms; concrete implementation and repo cross-source mappings remain experimental. Core/acceptance unchanged.
+AGENT: Astra-alignment-restart
+BASE: 6fbf33784c3d8ed26afaf1ca462c166671570121
+SINCE: 2026-09-21T22:12:00-07:00
+NOTE: Restart Pass 5 narrow reference-route reconciliation only. Update active WebAssembly reference row from selected wasm64 wording to target-capability / TARGET UNDECIDED wording. No Core, pointer, acceptance, or implementation change.
