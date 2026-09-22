@@ -1,6 +1,6 @@
 # Reference audit — pass 5 plan: the Lab's obligation ledger and the maps repairs (maps station)
 
-**Status:** PLAN · not executed.  
+**Status:** EXECUTED — CLOSED · receipt [reference-audit-pass-5-findings.md](reference-audit-pass-5-findings.md). Ledger file name as executed: `source-lab-lace-alignment-obligation-ledger-2026-09-22.md`.  
 **Station:** maps (execution and this file).  
 **Board:** [reference-audit-iteration-plan.md](reference-audit-iteration-plan.md) · findings RA-B03, RA-L01, RA-L02, RA-L03, RA-G07, RA-R05, RA-R06.  
 **Pinned:** `21652f463b3178075cc9d4568847502766c0304a`.  
