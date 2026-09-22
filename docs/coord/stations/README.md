@@ -6,7 +6,7 @@ One file per doc station, written by [`../coord.sh`](../coord.sh) on claim, rele
 
 | Station file | Owns, in one line |
 |---|---|
-| [clipboards.station](clipboards.station) | `docs/clipboards/**` — KEEP/FORBID mappings of the five stake texts |
+| [clipboards.station](clipboards.station) | `docs/clipboards/**` — the research and technical reference shelf: ten campaigns (the five stake texts — AgentScope, Kauffman, Petersen & Zech, Rowlands, Xiao & Zhu — plus WebAssembly 3.0, WebGPU, WGSL, WebNN and the rustc / Cargo toolchain shelf), each with its KEEP/FORBID clipboard, mechanisms register, ASCII machinery and pass plans; the door is [`docs/clipboards/README.md`](../../clipboards/README.md). The behavioral-goal clipboards (HCC-A, Coffee Cup, Water) live under `docs/clock/` and are hologram's |
 | [prompts.station](prompts.station) | `docs/prompts/**` — agent tickets |
 | [maps.station](maps.station) | reason-model, atomic map, coherence log, `docs/plans/**` |
 | [history.station](history.station) | `docs/history/**` — recoveries |
