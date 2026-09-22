@@ -1,7 +1,7 @@
-STATUS: HELD
+STATUS: FREE
 STATION: maps
 OWNS: docs/reason-model-map.md docs/rust-nostd-*.md docs/atomic-primitives-map.md docs/clock/gearing-code-1to1.md docs/coherence-audit*.md docs/clock/system-mathematical-model.md docs/defrag-plan.md docs/plans/** docs/namespace-register.md docs/*.md (catch-all: any unmatched file at the docs/ root)
-AGENT: ChatGPT
-BASE: 7256d25c61e3f697f2e15849ae2d80bab646ed03
-SINCE: 2026-09-22T07:57:00Z
-NOTE: PLANNING Behavioral Read Devices Pass 6 whole-campaign reconciliation. Audit Passes 1-5 as one system against living repo entry surfaces, classify stale-vs-historical documents, and plan multi-station propagation without new theory or Core movement.
+AGENT: -
+BASE: -
+SINCE: -
+NOTE: Behavioral Read Devices Pass 6 planning COMPLETE. Whole-campaign audit finds propagation drift, not a missing sixth theory. Plan reconciles maps -> hologram/clock -> research clipboards -> law/manifest/AGENTS -> prompts -> global ASCII last; repairs current Water UNK/INVALID conflict while preserving raw-source history. No Core/RM-A/G1/target/R3/acceptance/implementation movement.
