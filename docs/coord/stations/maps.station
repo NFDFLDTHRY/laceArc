@@ -1,7 +1,7 @@
-STATUS: HELD
+STATUS: FREE
 STATION: maps
 OWNS: docs/reason-model-map.md docs/rust-nostd-*.md docs/atomic-primitives-map.md docs/clock/gearing-code-1to1.md docs/coherence-audit*.md docs/clock/system-mathematical-model.md docs/defrag-plan.md docs/plans/** docs/namespace-register.md docs/*.md (catch-all: any unmatched file at the docs/ root)
-AGENT: Astra-alignment-restart
-BASE: 4881fe676fffe6a4533a0c3a557a6c4c068616be
-SINCE: 2026-09-22T03:28:00Z
-NOTE: Receipt-finalization only. Pin G19 all-free verification after release commit 4881fe676fffe6a4533a0c3a557a6c4c068616be. No semantic edits.
+AGENT: -
+BASE: -
+SINCE: -
+NOTE: Source→Lab→Lace Alignment Restart Pass 1 COMPLETE. Verdict ALIGNED WITH OPENS. Findings receipt finalized with all stations/shafts FREE. Pass 32 preserved, Pass 33 current alignment overlay, RM-A primary open, bounded RM-B/RM-C evidence scoped, no RM-A design/implementation/acceptance.
