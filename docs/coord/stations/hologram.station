@@ -1,7 +1,7 @@
-STATUS: FREE
+STATUS: HELD
 STATION: hologram
 OWNS: docs/hologram/** docs/clock/**
-AGENT: -
-BASE: -
-SINCE: -
-NOTE: Behavioral Read Devices Pass 6 Stage C COMPLETE. HCC/Cup clipboards route to current Pass-5 blueprints; Water active UNK/INVALID/F4/F5/FSM semantics follow later human law while raw-source history remains explicit; H×C×W train is qualified as historical/candidate beside current typed diagnostic composition; clock README routes current devices.
+AGENT: ChatGPT
+BASE: 3b4a10d8e196d1c394d374f7de01d00f64ccb855
+SINCE: 2026-09-22T19:08:00Z
+NOTE: EXECUTING repo-lag Pass 4 clock target-court reconciliation. Primary write set is docs/clock/wasm/README.md + docs/clock/README.md; audit historical clock/hologram surfaces; no viewer/runtime/release/probe changes.
