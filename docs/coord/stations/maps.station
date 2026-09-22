@@ -1,7 +1,7 @@
-STATUS: FREE
+STATUS: HELD
 STATION: maps
 OWNS: docs/reason-model-map.md docs/rust-nostd-*.md docs/atomic-primitives-map.md docs/clock/gearing-code-1to1.md docs/coherence-audit*.md docs/clock/system-mathematical-model.md docs/defrag-plan.md docs/plans/** docs/namespace-register.md docs/*.md (catch-all: any unmatched file at the docs/ root)
-AGENT: -
-BASE: -
-SINCE: -
-NOTE: Behavioral Read Devices Pass 6 COMPLETE. Pass 39 landed last; final stale/coherence sweep, findings and plan/index closeout complete. F1-F36 held; G1-G45 closed. RM-A/G1/R3/target/pointer acceptance unchanged.
+AGENT: ChatGPT
+BASE: 9fcdda86f9c5b08544bc91c1eff872e7c02e2cf4
+SINCE: 2026-09-22T18:12:00Z
+NOTE: Persisting repo-lag Pass 2 law/root entrance plan before execution. Plan only; no law edits from maps.
