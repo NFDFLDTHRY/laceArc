@@ -1,6 +1,6 @@
 # Mathematical execution model audit — pass 6 plan: propagation, namespace gate, tick, receipt, rulings
 
-**Status:** PLAN · not executed.  
+**Status:** EXECUTED — CLOSED · receipt [math-execution-audit-pass-6-findings.md](math-execution-audit-pass-6-findings.md). Campaign closed; no pass 7.  
 **Station:** maps.  
 **Board:** [math-execution-audit-iteration-plan.md](math-execution-audit-iteration-plan.md) · findings MA-X07 · rulings MA-H01–MA-H05.  
 **Pinned:** `5ffe01156047df01e8cd0823a286b53e89082905`.  

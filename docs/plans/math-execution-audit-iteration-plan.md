@@ -1,6 +1,6 @@
 # Mathematical execution model audit — iteration board (six passes)
 
-**Status:** PLAN · nothing executed · each pass below stays `PLAN` until the human says proceed.  
+**Status:** EXECUTED — CLOSED 2026-09-22 · six passes executed, each on the human's *proceed* · receipts [pass 1](math-execution-audit-pass-1-findings.md) · [2](math-execution-audit-pass-2-findings.md) · [3](math-execution-audit-pass-3-findings.md) · [4](math-execution-audit-pass-4-findings.md) · [5](math-execution-audit-pass-5-findings.md) · [6](math-execution-audit-pass-6-findings.md) · no pass 7. The board below is the pre-execution text; the receipts correct it where they had to (pass 1 §2, pass 3 §4, pass 5 §7).  
 **Station:** maps holds this board, the six pass plans, and every file the passes name (the model and its satellites sit at the `docs/` root under the maps catch-all; the theorem companion, receipts and register go under `docs/plans/`). No law, graphics, hologram or coord file is written by this campaign; anything owed there is a handoff.  
 **Pinned:** `5ffe01156047df01e8cd0823a286b53e89082905` (`origin/main` at the maps claim, 2026-09-22 — the reference-audit closeout). Branch `claude/repo-reference-audit-sie0s7`.  
 **Editor (declared):** Claude Fable 5.1, cloud session, identity `Claude-Fable-math-audit`. One agent wrote propose / attack / resolve for every finding below; not independent review.  
