@@ -1,7 +1,7 @@
-STATUS: FREE
+STATUS: HELD
 STATION: prompts
 OWNS: docs/prompts/**
-AGENT: -
-BASE: -
-SINCE: -
-NOTE: Alignment Restart Pass 4 prompt correction COMPLETE. Mandatory context distinguishes source desired-behavior mechanisms, Pass-3 observable assay projections, and still-experimental concrete implementation. Core/acceptance unchanged.
+AGENT: Astra-alignment-restart
+BASE: 4846c3e42f104a01bf3c446c375598b269ea4e65
+SINCE: 2026-09-21T22:05:00-07:00
+NOTE: Restart Pass 5 mandatory-context reconciliation. Replace active sealed-wasm64 instruction with TARGET UNDECIDED and point target facts to Pass-5 requirements/audit. Historical target receipts remain cited as dated evidence.
