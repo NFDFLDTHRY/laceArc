@@ -359,6 +359,8 @@ It adds:
 
 No L-M mechanism or Core contract was created.
 
+**Coordination verification:** after maps release commit `529739e2ac580bb830098e449524eb5559cfcaad`, direct reads confirmed FREE status for clipboards, coord, gearing-meta, graphics, history, hologram, kit, law, maps, prompts and renderer stations, plus audits, axle, cells, escape, gears, trainA, trainB and trainC gearing shafts. This receipt-finalization claim changes only the findings receipt and is released immediately afterward.
+
 ---
 
 ## 12. Pass-4 falsifier board
@@ -414,7 +416,7 @@ No L-M mechanism or Core contract was created.
 | G22 companion delta is linear Pass 36 | PASS |
 | G23 findings separate source mechanism from implementation | PASS |
 | G24 no Core/acceptance/implementation gate moved | PASS |
-| G25 all claims released | **PENDING final maps release** |
+| G25 all claims released | **PASS** — release commit `529739e2ac580bb830098e449524eb5559cfcaad`; direct post-release reads confirmed all 11 document stations FREE and all 8 gearing shafts FREE |
 
 ---
 
