@@ -1,16 +1,18 @@
 # The context pass — the same story, for every agent
 
-Layer III steward prompt. Not Hands. Not law. Not Core. **Current constructor mechanics plus the human-ruled sampling/search architecture are reconciled in an unaccepted draft; exact sampling-derived retention/materialization remains `[GAP]`.** The older arbitrary-selector question survives only as dated adversarial history. No `src/` from a prompt.
+Layer III steward prompt. Not Hands. Not law. Not Core. **Current constructor mechanics plus the human-ruled sampling/search architecture are reconciled in an unaccepted draft. The general `SM-GAP-RM` interface remains open, with RM-A retain-when the primary missing transition; bounded Lab evidence partially closes RM-B for selected contiguous samples and class-specifically closes RM-C for RootTouch / contiguous grounding.** The older arbitrary-selector question survives only as dated adversarial history. No `src/` from a prompt.
 
 **Read this immediately after [`AGENTS.md`](../../AGENTS.md), before any task.** It is the story one editor holds after reading the whole tree, the four PNGs, and the human's own record; it is written so that DeepSeek, Grok, Codex, Astra, ChatGPT, Claude and the next model nobody has met yet hold the *same* story. Every sentence here is either a citation into the tree or stamped. Where it and its governing source differ, follow that source; where sources conflict, preserve and route the conflict rather than choosing the later file.
 
-**Current reconciliation:** repository-update Pass 4 remains the lifecycle/release evidence baseline; ROOT / TOUCH / FOLD is retained as dated constructor/provenance history; SAMPLING / DENSITY / EMERGENCE Passes 1–5 carry the later human-ruled sampling/search reconciliation. **Manifest Reconciliation Pass 1/2 foundation:** use the Pass-32 global mechanism catalog for *what mechanisms exist and how they connect*, and the systems-manifest contract registry for *what each mechanism may/shall do*. In particular: A6 is PIE-in-context, B4 is the explicit definition route, B10 is no-collapse, B11 is projection, persistence/re-entry is distinct from retention/materialization, and Graphic-C 2D projection is distinct from H7–H12 sampling. [Pointer emission](../pointer-emission.md) and the [systems manifest](../systems-manifest.md) now record LAND/root/RootTouch/binary Join plus a derived 2D position×scale sampling surface and read-only star/search frontiers. **Human acceptance remains absent; the exact sampling-derived retention/materialization condition remains `[GAP]`.** Earlier receipts remain dated evidence; no source publication promotes the pinned ixp2 release.
+**Current reconciliation:** repository-update Pass 4 remains the lifecycle/release evidence baseline; ROOT / TOUCH / FOLD is retained as dated constructor/provenance history; SAMPLING / DENSITY / EMERGENCE establishes the human-ruled sampling/search architecture. **Manifest Reconciliation Pass 1–4 foundation:** use the Pass-32 global mechanism catalog for *what mechanisms exist and how they connect*, and the systems-manifest contract registry for *what each mechanism may/shall do*. **Latest Lab Source Architecture evidence:** RM-A remains open / MISSING-A; RM-B is partially closed for selected finite contiguous sample occurrences; RM-C is closed for RootTouch and contiguous sample grounding but candidate-specific elsewhere. These Lab results narrow the canonical open interface without automatically becoming universal Core law. Human acceptance remains absent.
 
 **Written** 2026-09-19 by Claude Fable 5.1 at branch `lace-context-iteration-6` (base `e2e8155`), on the human's instruction: *"all agents need to see the same story in the repo that you do."*
 
 ---
 
 **Human correction / clarification, 2026-09-20 through 2026-09-21:** HCC-A, The Coffee Cup, and Where the Water Is Loud are conceptual reference / behavioral-goal sources. Their existing source clipboards are [HCC-A](../clock/hcc-a-systems-manifest.md), [Coffee Cup](../clock/coffee-cup-systems-manifest.md), and [Water](../clock/water-systems-manifest.md); the [H×C×W comparison](../clock/train-h-c-w-systems-manifest.md) is a candidate composition of those clipboards. The old automatic required-gearbox reading is superseded, but the machinery described by those sources is **not discarded**: it is candidate machinery for the laceArc lab. Research/book and platform/toolchain clipboards live under [`docs/clipboards/`](../clipboards/README.md). Clipboard evidence feeds propose → attack → reproduce → test → falsify/retain; it does not jump directly into Core or acceptance.
+
+**Vertical alignment rule:** behavioral-goal, research, and platform sources enter through their existing clipboards into the **laceArc Lab**. Lab plans, fixtures, harnesses, candidate runners, falsifier boards, and bounded findings are experimental instruments/evidence. **Lab `retain` means retain evidence/candidate status; it is not Lace `retain`, which means durable POINTER topology.** Lace remains the substrate/machine under experimental growth. Hardware/platform sources constrain realizability and may enable or kill implementation candidates, but they do not manufacture missing Lace semantics.
 
 ## 1. What this is (the Hands, in six sentences)
 
@@ -21,7 +23,7 @@ Source of record: the four PNGs in `docs/graphics/` (open them; cite panels), th
 ## 2. Where it stands (the gate)
 
 - **There is no Lace Core implementation, on purpose.** Layer III viewers, contract scripts and coordination tools exist. [`docs/pointer-emission.md`](../pointer-emission.md) is now a **reconciled but unaccepted** draft. It records WORD landing, unseen→root, seen→RootTouch, binary Join and finite-sample grounding. Core may not exist until the human accepts the exact contract and every premise required by the assigned task is resolved. File existence, reconciliation, a commit, or an agent-written Answer line is not acceptance.
-- **The old broad sigma / selector hole has been superseded as the active problem.** The dated [environment](../plans/lace-context-iter6-pass-4-environment.md) typed `σ : 𝓛 × V → Step*`, fenced it, and classified 17 historical candidates. Keep that ledger intact as adversarial evidence. Later human rulings resolved LAND/root/RootTouch/binary Join/finite-sample grounding and established derived multi-scale sampling as relationship discovery. The remaining Core-adjacent hole is **exact sampling-derived retention/materialization**, including how an ephemeral sampled structure becomes an addressable operand when retention requires it. Do not revive an old semantic selector candidate as the current answer.
+- **The old broad sigma / selector hole has been superseded as the active problem.** Later human rulings established LAND/root/RootTouch/binary Join/finite grounding and derived multi-scale sampling as relationship discovery. The canonical open interface is `SM-GAP-RM`, but latest bounded Lab evidence narrows its faces: **RM-A retain-when remains open and primary; RM-B is partially closed for selected finite contiguous samples; RM-C is class-specifically closed for RootTouch and contiguous sample grounding.** Do not revive an old semantic selector candidate, and do not universalize the bounded RM-B/RM-C results.
 - **The Pass-7 `SPOKEN (campaign)` Answer lines are historical custody evidence, not the current answer surface.** Q0/Q1/Q3/Q5/slot-II receipts remain preserved in the pointer draft, including the old custody problem. Pass 4 added a current reconciliation above them. Do not erase those historical stamps and do not use them to override the current WORD/root/RootTouch/binary Join law. This prompt accepts nothing.
 - **When Core code is allowed:** Rust, `#![no_std]`, zero external dependencies, every dependency a first-party branch, one branch one task, proven before the next branch exists. Target sealed by the human: `wasm64-unknown-unknown`.
 
@@ -30,6 +32,7 @@ Source of record: the four PNGs in `docs/graphics/` (open them; cite panels), th
 | Product | One line | Strength |
 |---|---|---|
 | [the environment](../plans/lace-context-iter6-pass-4-environment.md) | dated σ search space, 13 fences, 17-candidate ledger; current qualification narrows the unresolved object to sampling-derived retention/materialization | E4 remains `PROVED_WITHIN_SCOPE` for its dated claim; retention/materialization remains `[GAP]` |
+| [Lab Source Architecture Pass 6](../plans/lab-source-architecture-pass-6-findings.md) | cross-family synthesis: RM-A evidence insufficiency certified; RM-B bounded closure for selected contiguous samples; RM-C class-specific closures for RootTouch/contiguous grounding; no RM-A rule chosen | `LAB` bounded evidence; not universal Core law, not acceptance |
 | [the execution model](../plans/reduction-pass-2-execution-model.md) | Σ = (L, h, K); six transitions. M1 concerns **strand-history observations**: h and persistence progress are operational state, not functions of L. I1/I6 require an OPEN-free interval; pending SUBMIT is not yet an appended WORD. M2 keeps its stated premises; M3's intermediate frontiers additionally require the S4.3 STEP partition | bounded model claims; `[PROPOSAL]`; read X3–X5 and update-pass U04/U05, not a blanket app-correctness proof |
 | [the shape](../plans/lace-context-iter6-pass-5-crate-proposal.md) | seven doors unchanged + sheets T R H C S E from `strand/` to an installed WebAPK; rulings R1–R8 prepared, none taken | `[PLAN]` |
 | [the target facts](../plans/lace-context-iter6-pass-2-findings.md) | wasm64 is Rust Tier 3 (nightly + `build-std`); Chrome ≥ 133 has Memory64 on Android; 16 GB cap; 10–100% bounds tax; **on-device wasm64 scale `UNESTABLISHED`** | web `OBSERVED`; device `HUMAN_REPORTED` |
@@ -82,7 +85,7 @@ Pass 2's [bounded Wasm sightings](../clipboards/wasm-spec-3-clipboard.md#reposit
 
 ## 9. The story in one paragraph — what you should be able to say back
 
-*One strand, one rule, one store; the graphics and manifest govern the Lace substrate. HCC-A, Coffee Cup, and Water supply behavioral goals plus candidate machinery; research clipboards supply algorithms/mathematics/mechanisms; platform clipboards supply executable primitives and physical constraints. **All of them feed the laceArc lab, not Core directly.** The current draft records WORD landing, root/RootTouch, binary Join, finite-sample grounding, derived multi-scale sampling, and read-only star/search. **The draft is not human-accepted and exact sampling-derived retention/materialization remains `[GAP]`.** The dated sigma/selector work remains adversarial evidence, not today's active problem. Work within the authorized pass, one station per commit, signed, stamped and mapped; preserve failed candidates and source conflicts. The shoe is the court; a useful mechanism still has to survive the lab before it becomes architecture.*
+*One strand, one rule, one store; the graphics and manifest govern the Lace substrate. HCC-A, Coffee Cup, and Water supply behavioral goals plus candidate machinery; research clipboards supply algorithms/mathematics/mechanisms; platform clipboards supply executable primitives and physical constraints. **All of them feed the laceArc Lab, not Core directly.** Lab instruments may preserve candidate evidence, including failures, without making that machinery authoritative. The current draft records WORD landing, root/RootTouch, binary Join, finite-sample grounding, derived multi-scale sampling, and read-only star/search. **The general SM-GAP-RM interface remains open: RM-A retain-when is primary; bounded RM-B/RM-C results remain scoped evidence.** The draft is not human-accepted. Work within the authorized pass, preserve failed candidates and source conflicts, and never confuse Lab retain-evidence with Lace retain-POINTER. The shoe is the court; a useful mechanism still has to survive the lab and authority gates before it becomes architecture.*
 
 ## Steward test
 
@@ -104,7 +107,16 @@ Current active flow:
     recurrence / overlap becomes discoverable
         |
         v
-    [GAP] exact retention / materialization
+    RM-A [GAP] retain this structure?
+        |
+        v if selected
+    RM-B materialize to addressable Lace
+      (bounded closed: selected contiguous sample)
+        |
+        v
+    RM-C ordered roles
+      (RootTouch + contiguous grounding closed;
+       other candidate classes may remain open)
         |
         v
     retained POINTER topology
@@ -114,4 +126,4 @@ Current active flow:
 
 Search is read-only. The sampler is derived working machinery, not a second store and not merely the Graphic-C projection. Do not reintroduce an arbitrary semantic chooser. Do not invent the retention rule. Do not treat reconciliation as acceptance.
 
-One story, told the same way to every hand. **Constructor + sampling architecture reconciled; acceptance absent; exact retention/materialization remains `[GAP]`.**
+One story, told the same way to every hand. **Constructor + sampling architecture reconciled; acceptance absent; canonical SM-GAP-RM remains open with RM-A primary and bounded/class-specific RM-B/RM-C progress.**
