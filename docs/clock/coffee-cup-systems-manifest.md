@@ -4,6 +4,14 @@
 
 **Current mathematical realization — Behavioral Read Devices Pass 5/6:** the current [Coffee Cup device blueprint](../plans/math-execution-behavioral-read-devices-pass-5-coffee-cup-device-blueprint.md) preserves the five roles simultaneously as a causal tableau rather than a one-hot stage machine, keeps current time/affordances in explicit external context rather than Lace index distance, uses explicit `SEE-CF` assumptions for counterfactual intervention analysis, stops live intervention at Impact, and invents no scalar optimizer. Search/branch machinery is optional and only applies when an explicit counterfactual question is being asked. This is a mathematical realization, not a Core or runtime mandate.
 
+**Source identity — staked by the human 2026-09-21, recorded here by [reference audit pass 4](../plans/reference-audit-pass-4-plan.md), 2026-09-22.** The text this clipboard reads is held at `refs/local/`, gitignored, never committed. Its identity, copied from the [live law's staking table](../law-why-these-documents.md#conceptual-reference-documents) (blob SHA as recorded there; full SHA-256 as carried by the line-cited Pass-4 map):
+
+| Text | Bytes | Lines | Git blob | SHA-256 |
+|---|---|---|---|---|
+| `the-coffee-cup.txt` | 7,623 | 189 | `e22c06ce2f808efca0ee0c17f57dc0f7e3dbef06` | `7bc4fd8d5df1ff58c75609e50bda6376216e5520fc2594d20b26a7a1c52c2cd4` |
+
+The lines *"attachment … Not in git"* below are the Pass-1 provenance and remain true. **This clipboard does not cite source lines; the line-cited obligations are in the [Pass-4 mechanism map](../plans/source-lab-lace-alignment-pass-4-coffee-cup-behavior-mechanisms.md)**, which carries the same SHA-256 and cites `L`-ranges. Under the law, claims about this text cite lines; route line-level claims there.
+
 **Executed passes:** [1](passes/coffee-cup-pass-1-plan.md) · [2](passes/coffee-cup-pass-2-plan.md) · [3](passes/coffee-cup-pass-3-plan.md) · [4](passes/coffee-cup-pass-4-plan.md) · [5](passes/coffee-cup-pass-5-plan.md) · [6](passes/coffee-cup-pass-6-plan.md) — plans in [`passes/`](passes/README.md). A new pass is linked here once it is executed.
 
 ## Overview

@@ -4,6 +4,16 @@
 
 **Current composition qualification — Behavioral Read Devices Pass 5/6:** the old H×C×W train below remains a historical/candidate composition surface. Current mathematical work does **not** identify Cup or Water with HCC stages. The lawful current composition route is typed diagnostic coupling: provenance-bearing Coffee Cup and Water device outputs may enter HCC as explicit external or holder-local diagnostic inputs, while shared Lace does not merge device state and diagnostic output does not become a Lace fact. See the [behavioral-machine crosswalk](../plans/math-execution-behavioral-read-devices-pass-5-behavioral-machine-crosswalk.md). Exact runtime nesting, call schedule, gating, and whether either diagnostic is invoked on a given HCC revolution remain **OPEN / PROJECT-CAND**.
 
+**Source identity — staked by the human 2026-09-21, recorded here by [reference audit pass 4](../plans/reference-audit-pass-4-plan.md), 2026-09-22.** The text this clipboard reads is held at `refs/local/`, gitignored, never committed. Its identity, copied from the [live law's staking table](../law-why-these-documents.md#conceptual-reference-documents) (blob SHA as recorded there; full SHA-256 as carried by the line-cited Pass-4 map):
+
+| Text | Bytes | Lines | Git blob | SHA-256 |
+|---|---|---|---|---|
+| `hcc-a-v1.0.txt` | 12,084 | 470 | `97010d27fc7347ecd3db67f2db19cf9c431fcb6a` | `209c8f259225a4899b3736837919447381e94352a67d7f915eb95c36db90f3f9` |
+| `the-coffee-cup.txt` | 7,623 | 189 | `e22c06ce2f808efca0ee0c17f57dc0f7e3dbef06` | `7bc4fd8d5df1ff58c75609e50bda6376216e5520fc2594d20b26a7a1c52c2cd4` |
+| `where-the-water-is-loud.txt` | 19,862 | 502 | `0812654cf8d1609a7d24b29fdb2f9deb64b5647f` | `9b7eddd593765fb370ffd90020e9995fd30a96ce261cb9c5140ec3e14f97ff65` |
+
+**This file cites no source lines; the line-cited obligations are in the three Pass-4 mechanism maps** — [HCC-A](../plans/source-lab-lace-alignment-pass-4-hcc-a-behavior-mechanisms.md), [Coffee Cup](../plans/source-lab-lace-alignment-pass-4-coffee-cup-behavior-mechanisms.md), [Water](../plans/source-lab-lace-alignment-pass-4-water-behavior-mechanisms.md) — and the source-separated [crosswalk](../plans/source-lab-lace-alignment-pass-4-crosswalk.md). The identity lends no Core authority: these remain behavioral-goal sources, not Graphic-D row types or legal-append conditions.
+
 **Executed passes:** [1](passes/train-pass-1-plan.md) · [2](passes/train-pass-2-plan.md) · [3](passes/train-pass-3-plan.md) · [4](passes/train-pass-4-plan.md) · [5](passes/train-pass-5-plan.md) · [6](passes/train-pass-6-plan.md) — plans in [`passes/`](passes/README.md). A new pass is linked here once it is executed.
 
 ## Overview

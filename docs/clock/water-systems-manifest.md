@@ -4,6 +4,14 @@
 
 **Current target semantics — later human ruling, reconciled by Behavioral Read Devices Pass 5/6:** preserve the raw source below as provenance, but do **not** use its blocking-UNK or lexical-INVALID rules as the current machine target. Current law is: **UNK is a nonblocking predicted shape of evidence that would resolve an unknown and may wait for future evidence; INVALID is a prior claim that later evidence has established as wrong.** There is no current lexical INVALID/stop-word table. The current mathematical target is the [Pass-5 Water device blueprint](../plans/math-execution-behavioral-read-devices-pass-5-water-device-blueprint.md). Exact pointability, evidence-shape matching, sharedness, and refutation policies remain open implementation/model parameters.
 
+**Source identity — staked by the human 2026-09-21, recorded here by [reference audit pass 4](../plans/reference-audit-pass-4-plan.md), 2026-09-22.** The text this clipboard reads is held at `refs/local/`, gitignored, never committed. Its identity, copied from the [live law's staking table](../law-why-these-documents.md#conceptual-reference-documents) (blob SHA as recorded there; full SHA-256 as carried by the line-cited Pass-4 map):
+
+| Text | Bytes | Lines | Git blob | SHA-256 |
+|---|---|---|---|---|
+| `where-the-water-is-loud.txt` | 19,862 | 502 | `0812654cf8d1609a7d24b29fdb2f9deb64b5647f` | `9b7eddd593765fb370ffd90020e9995fd30a96ce261cb9c5140ec3e14f97ff65` |
+
+The lines *"attachment … Not in git"* below are the Pass-1 provenance and remain true. **This clipboard does not cite source lines; the line-cited obligations are in the [Pass-4 mechanism map](../plans/source-lab-lace-alignment-pass-4-water-behavior-mechanisms.md)**, which carries the same SHA-256 and cites `L`-ranges. Under the law, claims about this text cite lines; route line-level claims there.
+
 **Executed passes:** [1](passes/water-pass-1-plan.md) · [2](passes/water-pass-2-plan.md) · [3](passes/water-pass-3-plan.md) · [4](passes/water-pass-4-plan.md) · [5](passes/water-pass-5-plan.md) · [6](passes/water-pass-6-plan.md) — plans in [`passes/`](passes/README.md). A new pass is linked here once it is executed.
 
 ## Overview

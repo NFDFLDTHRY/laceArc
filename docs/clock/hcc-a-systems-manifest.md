@@ -4,6 +4,14 @@
 
 **Current mathematical realization — Behavioral Read Devices Pass 5/6:** the source obligations above now have a non-Core mathematical device blueprint: [HCC-A device blueprint](../plans/math-execution-behavioral-read-devices-pass-5-hcc-device-blueprint.md), under [`math-execution-model.md` S9–S12](../math-execution-model.md#s12--behavioral-machine-construction-factorization). It preserves source-required `RIC ∥ PFC`, keeps Story Ledger / Meaning / Emotion / Identity / priors as holder-local `Q_H`, separates the Six-Act diagnostic from S0–S7 runtime, and leaves exact compiler/arbitration/meaning/emotion/identity functions open. The Pass-5 research operator library is optional except for semantic parallel composition here; this is a mathematical realization, **not an implementation or Core subsystem**.
 
+**Source identity — staked by the human 2026-09-21, recorded here by [reference audit pass 4](../plans/reference-audit-pass-4-plan.md), 2026-09-22.** The text this clipboard reads is held at `refs/local/`, gitignored, never committed. Its identity, copied from the [live law's staking table](../law-why-these-documents.md#conceptual-reference-documents) (blob SHA as recorded there; full SHA-256 as carried by the line-cited Pass-4 map):
+
+| Text | Bytes | Lines | Git blob | SHA-256 |
+|---|---|---|---|---|
+| `hcc-a-v1.0.txt` | 12,084 | 470 | `97010d27fc7347ecd3db67f2db19cf9c431fcb6a` | `209c8f259225a4899b3736837919447381e94352a67d7f915eb95c36db90f3f9` |
+
+The lines *"attachment … Not in git"* below are the Pass-1 provenance and remain true. **This clipboard does not cite source lines; the line-cited obligations are in the [Pass-4 mechanism map](../plans/source-lab-lace-alignment-pass-4-hcc-a-behavior-mechanisms.md)**, which carries the same SHA-256 and cites `L`-ranges. Under the law, claims about this text cite lines; route line-level claims there.
+
 **Executed passes:** [2](passes/hcc-a-pass-2-plan.md) · [3](passes/hcc-a-pass-3-plan.md) · [4](passes/hcc-a-pass-4-plan.md) · [5](passes/hcc-a-pass-5-plan.md) — plans in [`passes/`](passes/README.md). A new pass is linked here once it is executed.
 
 ## Overview
