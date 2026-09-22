@@ -1,7 +1,7 @@
-STATUS: FREE
+STATUS: HELD
 STATION: maps
 OWNS: docs/reason-model-map.md docs/rust-nostd-*.md docs/atomic-primitives-map.md docs/clock/gearing-code-1to1.md docs/coherence-audit*.md docs/clock/system-mathematical-model.md docs/defrag-plan.md docs/plans/** docs/namespace-register.md docs/*.md (catch-all: any unmatched file at the docs/ root)
-AGENT: -
-BASE: -
-SINCE: -
-NOTE: Behavioral Read Devices Pass 3 planning COMPLETE after six-source technical building-inventory sit. Source identities and SM-X-PLAT authority fence correct; flat capability model incomplete; missing Wasm browser/embedder source exposed; durable carrier source remains R3-conditional; Pass 3 will map typed capability/interop/evidence graph against S1-S10. No model semantic edit, target/carrier/RM-A/implementation change.
+AGENT: ChatGPT
+BASE: a3d55b0a3372e5446ac5fd87f6dd47671d11b1d5
+SINCE: 2026-09-22T06:42:00Z
+NOTE: EXECUTING Behavioral Read Devices Pass 3. Technical capability/interop/evidence graph over six staked references; conditional S11 only if earned. No target/carrier/RM-A/implementation selection.
