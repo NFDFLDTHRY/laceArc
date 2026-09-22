@@ -1,6 +1,6 @@
 # Repo lag cleanup — Pass 3 kit control / transport reconciliation plan
 
-**Status:** PLAN — human approved in conversation by “Proceed with pass 3.”  
+**Status:** EXECUTED — KIT CONTROL / TRANSPORT LAYER RECONCILED; HUMAN-LAW FENCES PRESERVED.  
 **Station sequence:** maps persists this plan, then releases; kit executes the control/transport reconciliation; maps writes closeout findings and remainder docket.  
 **Base before plan persistence:** `fee484821a09cff8b03259b22bc1d600a4c4cb3f` (repo-lag Pass 2 closeout).  
 **No new law. No Core change. No target selection. No acceptance. No implementation.**
@@ -217,3 +217,12 @@ G22 foreign-station remainder docket updated.
 ## Stop
 
 Do not automatically begin hologram, namespace/audit-log or coord cleanup after this pass.
+
+
+## Execution closeout
+
+**Executed 2026-09-22.** The plan was persisted before kit execution. The live-law fence, agent-control transport fence and Grok Explanation fence were re-extracted at the Pass-3 pre-edit tip and were byte-identical: 14,616 characters of the same fenced content. Those human-law transport bytes were preserved.
+
+Five kit files were edited: `agent-control.md`, `grok-bot-profile.md`, `READ_ME_FIRST.md`, `README.md`, and the live-table portions of `cold-doors.md`. The task template, `.claude/README.md`, scanner, hooks and historical pass/receipt bodies remained unchanged. See [Pass-3 findings](repo-lag-pass-3-kit-control-findings.md).
+
+Verdict: **PORTABLE KIT CONTROLS CURRENT THROUGH PASS 39 / TRANSPORT LAW PRESERVED / GROK FIRST TASK NO LONGER SELF-ASSIGNS OBSOLETE POINTER-FILE WORK.**
