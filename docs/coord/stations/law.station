@@ -1,7 +1,7 @@
-STATUS: FREE
+STATUS: HELD
 STATION: law
 OWNS: AGENTS.md CLAUDE.md docs/staking-the-workspace.md docs/law-why-these-documents.md docs/systems-manifest.md docs/pointer-emission.md docs/references.md CONTRIBUTING.md README.md .gitignore LICENSE docs/README.md
-AGENT: -
-BASE: -
-SINCE: -
+AGENT: Claude-Fable-reference-audit
+BASE: dc3a03d2d51b46b7ce8e539a39ef4bf19c67f9a6
+SINCE: 2026-09-22T22:16:02Z
 NOTE: Repo-lag Pass 2 law execution COMPLETE. Root README now carries Pass 39, S9-S12, current open gates, TARGET UNDECIDED and Prompt Pass-1 classifications; docs court has a thin current route. AGENTS/CLAUDE/CONTRIBUTING/live law/frozen stake/manifest/references/pointer draft audited and intentionally unchanged. Foreign-station lag handed off only.
