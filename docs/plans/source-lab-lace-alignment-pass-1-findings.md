@@ -321,7 +321,7 @@ No hologram/clock edit was required: the current preambles already preserve goal
 | G16 global ASCII uses linear Pass 33 | PASS |
 | G17 no RM-A rule proposed/selected | PASS |
 | G18 no implementation/acceptance gate moved | PASS |
-| G19 all claims released | PENDING final maps release |
+| G19 all claims released | **PASS** — release commit 4881fe676fffe6a4533a0c3a557a6c4c068616be; direct post-release reads confirmed all 11 document stations FREE and all 8 gearing shafts FREE |
 
 ---
 
@@ -346,6 +346,8 @@ At d8071e96aea126f284c71b93d0f18e219bd35a27:
 No source PNG was changed.
 No code/runtime implementation was added.
 No RM-A predicate was proposed.
+
+**Coordination verification:** after maps release commit 4881fe676fffe6a4533a0c3a557a6c4c068616be, direct reads confirmed FREE status for clipboards, coord, gearing-meta, graphics, history, hologram, kit, law, maps, prompts and renderer stations, plus audits, axle, cells, escape, gears, trainA, trainB and trainC gearing shafts. This receipt-finalization claim changes only the findings receipt and is released immediately afterward.
 
 ---
 
