@@ -1,7 +1,7 @@
-STATUS: FREE
+STATUS: HELD
 STATION: maps
 OWNS: docs/reason-model-map.md docs/rust-nostd-*.md docs/atomic-primitives-map.md docs/clock/gearing-code-1to1.md docs/coherence-audit*.md docs/clock/system-mathematical-model.md docs/defrag-plan.md docs/plans/** docs/namespace-register.md docs/*.md (catch-all: any unmatched file at the docs/ root)
-AGENT: -
-BASE: -
-SINCE: -
-NOTE: Behavioral Read Devices Pass 4 planning COMPLETE after direct canonical Graphics A-D vs S0-S11 sit. Pass 4 will run authority stratification, D1 path-multiplicity, Root/Star/Reach, projection/threading/C6/sampling, meaning-scope and abstract-unbounded/finite-realization courts. No math-model semantic edit yet; RM-A/G1/target/R3/acceptance/implementation unchanged.
+AGENT: ChatGPT
+BASE: 1b41faef14b7bdb285ca6de506c9ea8cf13089cc
+SINCE: 2026-09-22T07:10:00Z
+NOTE: EXECUTING Behavioral Read Devices Pass 4. Direct Graphics A-D source-fidelity court over S0-S11; authority stratification, D1 path-multiplicity, Root/Star/Reach, projection/sampling/C6, meaning-scope, abstract-unbounded/finite-realization. In-place math correction only if defects are proved.
