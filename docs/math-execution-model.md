@@ -1,13 +1,13 @@
 # Mathematical execution model — Lace
 
-**Status:** ROOT / TOUCH / FOLD constructor history + SAMPLING / DENSITY / EMERGENCE Passes 1–6 reconciliation, current 2026-09-21. **Pointer construction and the human-ruled sampling/search architecture are reconciled; exact sampling-derived retention/materialization remains the named [GAP].**
+**Status:** ROOT / TOUCH / FOLD constructor history + SAMPLING / DENSITY / EMERGENCE reconciliation, qualified by Alignment Restart Pass 1. **Pointer construction and human-ruled sampling/search are reconciled; canonical `SM-GAP-RM` remains open, with RM-A the primary unresolved retain decision. Bounded Lab evidence partially closes RM-B for selected finite contiguous samples and class-specifically closes RM-C for RootTouch / contiguous grounding.**
 **Campaign:** ROOT / TOUCH / FOLD established LAND/root/RootTouch/binary Join/finite grounding; its provenance-era Pass 6 is retained as history. SAMPLING / DENSITY / EMERGENCE Passes 1–5 establish the later human-ruled 1D+2D sampling/search model; this Pass 6 propagates that active reconciliation.
 **Pass 3:** [plan](plans/math-execution-root-touch-fold-pass-3-plan.md) · [findings](plans/math-execution-root-touch-fold-pass-3-findings.md).  
 **Pass 4 reconciliation:** [plan](plans/math-execution-root-touch-fold-pass-4-plan.md) · [findings](plans/math-execution-root-touch-fold-pass-4-findings.md).  
 **Historical provenance audit:** [ROOT / TOUCH / FOLD Pass 6 plan](plans/math-execution-root-touch-fold-pass-6-plan.md) · [findings](plans/math-execution-root-touch-fold-pass-6-findings.md).  
 **Sampling campaign:** [Pass 1 findings](plans/sampling-density-emergence-pass-1-findings.md) → [Pass 5 findings](plans/sampling-density-emergence-pass-5-findings.md); Pass 6 reconciliation is current.
 **Physical POINTER constructor:** binary \(\mathsf{Join}(a,b)\), grounded by D2/D1 plus H5/H6 and now reconciled into [pointer-emission.md](pointer-emission.md) / [systems-manifest.md](systems-manifest.md). The law draft remains **not accepted**.
-**Current growth:** ARRIVE → unseen BECOMES ROOT / seen ROOT TOUCH → derive multi-scale sampling structure → **[OPEN retain/materialize]** → append retained Join(s) → Continue.
+**Current growth:** ARRIVE → unseen BECOMES ROOT / seen ROOT TOUCH → derive multi-scale sampling structure → **RM-A [OPEN retain?]** → if selected, materialize/order under the candidate's lawful RM-B/RM-C path → append retained Join(s) → Continue.
 **Sampling vs N-D:** a later human-ruled 2D position×scale sampling surface is derived working machinery and is not stored. Graphic-C dot-to-dot 2D/3D/N-D remains a separate projection of retained participation paths, also never a second store.
 **No src/.**
 
@@ -31,12 +31,12 @@ Steward line: *Every arrival adds wire. Unseen wire becomes its root. Seen wire 
 | D1 0010 covers the whole eleven-row D1 prefix | **Yes** |
 | Whole-prefix covering point exists for every finite prefix by recursive Join | **Yes, constructive theorem** |
 | N-D coordinates / dimension rows stored in Core | **No** |
-| Exact general condition that retains sampling-derived structure / materializes an ephemeral sampled operand | **Not determined here** — retention/materialization [GAP] |
+| General SM-GAP-RM interface | **Open.** RM-A retain-when is not determined here. RM-B has a bounded closure for selected finite contiguous samples; RM-C is closed for RootTouch and contiguous grounding but remains candidate-specific elsewhere. |
 | G1 word-equality policy | **Open** |
 | pointer-emission.md accepted as a whole | **No** |
 | Permission to add src/ | **No** |
 
-The old monolithic POINTER-emission blocker was first split into constructor/grounding plus a presumed relation-provenance question. H7–H12 supersede that premise as the active model: **sampling discovers structure; the remaining hole is the exact retention/materialization transition, not a semantic chooser and not an established unfinished scheduler function.**
+The old monolithic POINTER-emission blocker was first split into constructor/grounding plus a presumed relation-provenance question. H7–H12 supersede that premise as the active model: **sampling discovers structure. The remaining primary hole is RM-A retain-when, not a semantic chooser.** Later bounded Lab work shows that some materialization/order cases can proceed once RM-A has selected the object; those partial closures do not supply RM-A or a universal topology-identification rule.
 
 ## S1 — Universe and state
 
