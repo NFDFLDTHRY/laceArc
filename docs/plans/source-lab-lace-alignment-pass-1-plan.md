@@ -1,6 +1,6 @@
 # SOURCE → LAB → LACE ALIGNMENT — Restart Pass 1 PLAN
 
-**Status:** PLAN — NOT EXECUTED.  
+**Status:** EXECUTED — see source-lab-lace-alignment-pass-1-findings.md.  
 **Campaign:** Source → Lab → Lace Alignment — **restart**.  
 **Pass:** 1.  
 **Planning station:** maps · `Astra-alignment-restart`.  
@@ -763,3 +763,29 @@ Pass 1 does not:
 The campaign restarts by making the repository answer the architecture correctly **before** another mechanism/design pass is allowed.
 
 **STOP after the Pass-1 alignment verdict.**
+
+
+---
+
+## 14. Actual execution result
+
+Executed against current main beginning at 933f142fae1a17752c83793a8c201a896c2c4f10.
+
+Result: **ALIGNED WITH OPENS.**
+
+What changed:
+- canonical SM-GAP-RM stays one open interface;
+- RM-A is now named consistently as the primary unresolved retain-when transition;
+- bounded RM-B and class-specific RM-C Lab progress is carried without universal promotion;
+- Lab tools/fixtures/findings are explicitly non-Core evidence machinery;
+- behavioral-goal and research clipboard entrances were already aligned and were preserved;
+- the platform clipboard entrance was repaired so Cargo A4 is no longer simultaneously “forged” and “absent”;
+- Rust no_std crate/branch documents are explicitly future implementation-decomposition proposals;
+- global ASCII linear Pass 33 is the final semantic edit;
+- Pass 30's pointable global-companion execution history is separated from the still-unexecuted Sampling/Density/Emergence Pass-6 plan file.
+
+No RM-A rule was proposed or ranked. No new L-M mechanism was added. No Core implementation, branch birth, acceptance, or permission change occurred.
+
+See the findings/receipt for the vertical alignment register and falsifier board.
+
+**STOP.** No Pass 2 is opened automatically.
