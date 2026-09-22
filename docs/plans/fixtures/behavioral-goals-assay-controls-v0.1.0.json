@@ -1,0 +1,390 @@
+{
+  "fixture": "behavioral-goals-assay-controls",
+  "version": "0.1.0",
+  "purpose": "Self-test the mechanism-agnostic behavioral assay predicates. These are synthetic controls, not outputs from Lace or a holder candidate.",
+  "candidate_visibility": "No candidate is run in this fixture. expected_pass is harness-self-test metadata and must never be exposed to a future candidate under test.",
+  "cases": [
+    {
+      "goal_id": "H-G1",
+      "case_id": "behavior_without_labels",
+      "expected_pass": true,
+      "labels": [],
+      "observed": {
+        "structure_before": "S1",
+        "structure_after": "S1",
+        "history_rewritten": false,
+        "holder_local": true,
+        "interpretation_a": "A",
+        "interpretation_b": "B"
+      }
+    },
+    {
+      "goal_id": "H-G1",
+      "case_id": "label_mimic_rewrites_structure",
+      "expected_pass": false,
+      "labels": [
+        "RIC",
+        "PFC",
+        "Story Ledger"
+      ],
+      "observed": {
+        "structure_before": "S1",
+        "structure_after": "S2",
+        "history_rewritten": true,
+        "holder_local": true,
+        "interpretation_a": "A",
+        "interpretation_b": "A"
+      }
+    },
+    {
+      "goal_id": "H-G2",
+      "case_id": "feedback_without_rewrite",
+      "expected_pass": true,
+      "labels": [],
+      "observed": {
+        "round1_before": "R1",
+        "round1_after": "R1",
+        "feedback_recorded": true,
+        "round2_context_source": "round1_feedback"
+      }
+    },
+    {
+      "goal_id": "H-G2",
+      "case_id": "feedback_by_history_rewrite",
+      "expected_pass": false,
+      "labels": [
+        "piFB",
+        "piID"
+      ],
+      "observed": {
+        "round1_before": "R1",
+        "round1_after": "R1-edited",
+        "feedback_recorded": true,
+        "round2_context_source": "round1_feedback"
+      }
+    },
+    {
+      "goal_id": "H-G3",
+      "case_id": "shared_structure_local_meaning",
+      "expected_pass": true,
+      "labels": [],
+      "observed": {
+        "holder_a": "A",
+        "holder_b": "B",
+        "shared_structure_a": "obs-7",
+        "shared_structure_b": "obs-7",
+        "meaning_transfer": false,
+        "holders_separate": true,
+        "interpretation_a": "risk",
+        "interpretation_b": "opportunity"
+      }
+    },
+    {
+      "goal_id": "H-G3",
+      "case_id": "meaning_cloned_with_source_labels",
+      "expected_pass": false,
+      "labels": [
+        "RIC",
+        "PFC",
+        "M"
+      ],
+      "observed": {
+        "holder_a": "A",
+        "holder_b": "B",
+        "shared_structure_a": "obs-7",
+        "shared_structure_b": "obs-7",
+        "meaning_transfer": true,
+        "holders_separate": true,
+        "interpretation_a": "risk",
+        "interpretation_b": "risk"
+      }
+    },
+    {
+      "goal_id": "C-G1",
+      "case_id": "distinct_causal_moments",
+      "expected_pass": true,
+      "labels": [],
+      "observed": {
+        "precondition": 0,
+        "release": 1,
+        "trajectory": 2,
+        "impact": 3,
+        "aftermath": 4
+      }
+    },
+    {
+      "goal_id": "C-G1",
+      "case_id": "release_collapsed_into_impact",
+      "expected_pass": false,
+      "labels": [
+        "C1",
+        "C2",
+        "C3",
+        "C4",
+        "C5"
+      ],
+      "observed": {
+        "precondition": 0,
+        "release": 3,
+        "trajectory": 2,
+        "impact": 3,
+        "aftermath": 4
+      }
+    },
+    {
+      "goal_id": "C-G2",
+      "case_id": "shrinking_window",
+      "expected_pass": true,
+      "labels": [],
+      "observed": {
+        "outcomes_by_time": [
+          [
+            "A",
+            "B",
+            "C"
+          ],
+          [
+            "A",
+            "B"
+          ],
+          [
+            "B"
+          ]
+        ],
+        "post_impact_can_change": false
+      }
+    },
+    {
+      "goal_id": "C-G2",
+      "case_id": "window_reopens_after_time",
+      "expected_pass": false,
+      "labels": [
+        "C3"
+      ],
+      "observed": {
+        "outcomes_by_time": [
+          [
+            "A",
+            "B"
+          ],
+          [
+            "A",
+            "B",
+            "C"
+          ],
+          [
+            "C"
+          ]
+        ],
+        "post_impact_can_change": true
+      }
+    },
+    {
+      "goal_id": "C-G3",
+      "case_id": "aftermath_changes_next_round",
+      "expected_pass": true,
+      "labels": [],
+      "observed": {
+        "impact_a": "impact-1",
+        "impact_b": "impact-1",
+        "aftermath_a": "lesson-A",
+        "aftermath_b": "lesson-B",
+        "round2_condition_a": "cautious",
+        "round2_condition_b": "open",
+        "causal_link_declared": true
+      }
+    },
+    {
+      "goal_id": "C-G3",
+      "case_id": "later_story_rewrites_impact",
+      "expected_pass": false,
+      "labels": [
+        "C5",
+        "AFTERMATH"
+      ],
+      "observed": {
+        "impact_a": "impact-1",
+        "impact_b": "impact-rewritten",
+        "aftermath_a": "lesson-A",
+        "aftermath_b": "lesson-B",
+        "round2_condition_a": "cautious",
+        "round2_condition_b": "open",
+        "causal_link_declared": true
+      }
+    },
+    {
+      "goal_id": "W-G1",
+      "case_id": "anchor_required",
+      "expected_pass": true,
+      "labels": [],
+      "observed": {
+        "anchored_claim_admitted": true,
+        "unanchored_claim_admitted": false
+      }
+    },
+    {
+      "goal_id": "W-G1",
+      "case_id": "accusation_promoted_by_confidence",
+      "expected_pass": false,
+      "labels": [
+        "OBS",
+        "F1"
+      ],
+      "observed": {
+        "anchored_claim_admitted": true,
+        "unanchored_claim_admitted": true
+      }
+    },
+    {
+      "goal_id": "W-G2",
+      "case_id": "pressure_without_transfer",
+      "expected_pass": true,
+      "labels": [],
+      "observed": {
+        "pressure": 10,
+        "shared_anchor_count": 0,
+        "crossing_success": false
+      }
+    },
+    {
+      "goal_id": "W-G2",
+      "case_id": "pressure_called_crossing",
+      "expected_pass": false,
+      "labels": [
+        "RAPIDS",
+        "DELTA"
+      ],
+      "observed": {
+        "pressure": 10,
+        "shared_anchor_count": 0,
+        "crossing_success": true
+      }
+    },
+    {
+      "goal_id": "W-G3",
+      "case_id": "shared_footing_enables_pairing",
+      "expected_pass": true,
+      "labels": [],
+      "observed": {
+        "inventories_separate": true,
+        "hidden_merge": false,
+        "shared_before": false,
+        "crossing_before": false,
+        "shared_after": true,
+        "crossing_after": true
+      }
+    },
+    {
+      "goal_id": "W-G3",
+      "case_id": "hidden_merge_fakes_sharedness",
+      "expected_pass": false,
+      "labels": [
+        "OBS",
+        "DELTA",
+        "F3"
+      ],
+      "observed": {
+        "inventories_separate": false,
+        "hidden_merge": true,
+        "shared_before": false,
+        "crossing_before": true,
+        "shared_after": true,
+        "crossing_after": true
+      }
+    },
+    {
+      "goal_id": "W-G4",
+      "case_id": "missing_evidence_named",
+      "expected_pass": true,
+      "labels": [],
+      "observed": {
+        "missing_evidence_named": "timestamped quote",
+        "fabricated_evidence": false,
+        "resolved_without_evidence": false
+      }
+    },
+    {
+      "goal_id": "W-G4",
+      "case_id": "gap_filled_by_confidence",
+      "expected_pass": false,
+      "labels": [
+        "UNK",
+        "F4"
+      ],
+      "observed": {
+        "missing_evidence_named": "timestamped quote",
+        "fabricated_evidence": true,
+        "resolved_without_evidence": true
+      }
+    },
+    {
+      "goal_id": "X-G1",
+      "case_id": "distinct_feedback_channels",
+      "expected_pass": true,
+      "labels": [],
+      "observed": {
+        "channels": {
+          "cup": "aftermath-A",
+          "hcc_world": "world-B",
+          "hcc_identity": "prior-C",
+          "water": "action-D"
+        },
+        "provenance_preserved": true,
+        "fused_state": false
+      }
+    },
+    {
+      "goal_id": "X-G1",
+      "case_id": "all_feedback_fused",
+      "expected_pass": false,
+      "labels": [
+        "H",
+        "C",
+        "W",
+        "TRAIN"
+      ],
+      "observed": {
+        "channels": {
+          "cup": "same",
+          "hcc_world": "same",
+          "hcc_identity": "same",
+          "water": "same"
+        },
+        "provenance_preserved": false,
+        "fused_state": true
+      }
+    },
+    {
+      "goal_id": "X-G2",
+      "case_id": "shared_referent_different_interpretations",
+      "expected_pass": true,
+      "labels": [],
+      "observed": {
+        "holders_separate": true,
+        "shared_structure_a": "rock-1",
+        "shared_structure_b": "rock-1",
+        "meaning_transfer": false,
+        "interpretation_a": "safe",
+        "interpretation_b": "uncertain"
+      }
+    },
+    {
+      "goal_id": "X-G2",
+      "case_id": "shared_referent_forces_shared_meaning",
+      "expected_pass": false,
+      "labels": [
+        "OBS",
+        "RIC",
+        "PFC"
+      ],
+      "observed": {
+        "holders_separate": true,
+        "shared_structure_a": "rock-1",
+        "shared_structure_b": "rock-1",
+        "meaning_transfer": true,
+        "interpretation_a": "safe",
+        "interpretation_b": "safe"
+      }
+    }
+  ]
+}
