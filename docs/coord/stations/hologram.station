@@ -1,7 +1,7 @@
-STATUS: HELD
+STATUS: FREE
 STATION: hologram
 OWNS: docs/hologram/** docs/clock/**
-AGENT: Astra-alignment-restart
-BASE: 9e905d2f43d4f46c8a8d475e12e727ab8d93bfe4
-SINCE: 2026-09-21T20:30:00-07:00
-NOTE: Alignment Restart Pass 4 source-backed entrance correction. Distinguish desired-behavior mechanisms in HCC/Cup/Water originals from repo interpretation metaphors and from concrete runtime implementation. Historical bodies preserved.
+AGENT: -
+BASE: -
+SINCE: -
+NOTE: Alignment Restart Pass 4 clock entrance correction COMPLETE. HCC/Cup/Water source-defined functional/causal mechanisms are desired-behavior obligations; concrete runtime remains open; repo gear/shaft/clutch/train interpretations remain hypotheses. Historical bodies untouched.
