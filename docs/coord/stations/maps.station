@@ -1,7 +1,7 @@
-STATUS: FREE
+STATUS: HELD
 STATION: maps
 OWNS: docs/reason-model-map.md docs/rust-nostd-*.md docs/atomic-primitives-map.md docs/clock/gearing-code-1to1.md docs/coherence-audit*.md docs/clock/system-mathematical-model.md docs/defrag-plan.md docs/plans/** docs/namespace-register.md docs/*.md (catch-all: any unmatched file at the docs/ root)
-AGENT: -
-BASE: -
-SINCE: -
-NOTE: Source→Lab→Lace Alignment Restart Pass 3 COMPLETE through global ASCII Pass 35 and findings receipt. Verdict: BEHAVIORAL GOALS OPERATIONALIZED / MECHANISM-AGNOSTIC / BOUNDED BEHAVIORAL COVERAGE. 24/24 assay self-test recorded; no holder success, RM-A design, implementation, or acceptance.
+AGENT: Astra-alignment-restart
+BASE: 5f28877487d099ed8234a03d876fa7076eed8a25
+SINCE: 2026-09-22T05:00:00Z
+NOTE: Receipt-finalization only: pin G25 post-release verification after 5f28877487d099ed8234a03d876fa7076eed8a25. All 11 document stations and all 8 gearing shafts read FREE. No semantic edits.
