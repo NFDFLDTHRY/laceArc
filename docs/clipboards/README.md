@@ -56,6 +56,18 @@ INSTALLED APP / DISTRIBUTION
 
 A clipboard records source evidence and candidate machinery. **KEEP/FORBID is an authority fence, not a ban on laboratory use.** “Not Core” means the clipboard cannot promote its mechanism directly into Lace. It does not mean the mechanism is decorative or irrelevant. Candidate machinery may be proposed, attacked, reproduced, tested, falsified, or survive bounded evidence in the laceArc lab. See [the reason model](../reason-model-map.md) for the standing substrate boundaries.
 
+### Current research-machine role — Behavioral Read Devices Pass 5/6
+
+The five research sources now have a **positive tested role above Lace** in addition to their standing non-Core fence. Pass 5 re-sighted Kauffman, Rowlands, Xiao–Zhu, Petersen–Zech, and AgentScope and found that their source machinery can support an **optional device-local operator library** inside the existing S9 read-device algebra:
+
+\[
+\mathfrak M=\{\mathsf{Par},\Gamma,\mathcal V,\Psi,\tau,\rho\}.
+\]
+
+Interpretation: semantic parallel composition, finite candidate generation, provenance-bearing checks, bounded candidate/frontier advance, explicit stop/control, and source-specific resolution/aggregation. **The fixed common chassis was rejected.** S9 remains the minimal outer device algebra, and each behavioral source composes only the operators it actually needs. Current routes: [source machine atlas](../plans/math-execution-behavioral-read-devices-pass-5-source-machine-atlas.md), [machine factorization](../plans/math-execution-behavioral-read-devices-pass-5-machine-factorization.md), and [`math-execution-model.md` S12](../math-execution-model.md#s12--behavioral-machine-construction-factorization).
+
+Standing fences remain: research operators do not define Lace, do not supply RM-A, do not make generated candidates into evidence, and do not turn verifier/model output into truth. Individual source cards remain source evidence and are not rewritten to look like a joint research consensus.
+
 ## Clipboards
 
 | File | Stake |
