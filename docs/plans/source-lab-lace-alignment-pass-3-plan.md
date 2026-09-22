@@ -1,6 +1,6 @@
 # SOURCE → LAB → LACE ALIGNMENT — Restart Pass 3 PLAN
 
-**Status:** PLAN — NOT EXECUTED.  
+**Status:** EXECUTED — see source-lab-lace-alignment-pass-3-findings.md.  
 **Campaign:** Source → Lab → Lace Alignment — restart.  
 **Pass:** 3.  
 **Pass name:** **TEST THE DESTINATION — behavioral-goal assays.**  
@@ -951,3 +951,28 @@ It does **not** automatically:
 The purpose is to give the Lab an honest answer to:
 
 > **How will we know that Lace, plus whatever machinery survives above it, is actually approaching the behavioral goals?**
+
+
+---
+
+## 22. Actual execution result
+
+Executed against current main beginning at `26e7edf6808ab12657275764c4e0b0ad1327e197`.
+
+Products:
+- [behavioral-goal assay register](source-lab-lace-alignment-pass-3-goal-assays.md);
+- [Lab assay self-test harness](tools/lace-behavior-assay.py);
+- [synthetic assay control fixture](fixtures/behavioral-goals-assay-controls-v0.1.0.json);
+- global ASCII **linear Pass 35**;
+- [Pass-3 findings](source-lab-lace-alignment-pass-3-findings.md).
+
+Required verdicts:
+- **Goal specification:** BEHAVIORAL GOALS OPERATIONALIZED, bounded twelve-assay set.
+- **Assay integrity:** MECHANISM-AGNOSTIC.
+- **Current coverage:** BOUNDED BEHAVIORAL COVERAGE / NAMED DEBT.
+
+The assay tool and fixture were reconstructed byte-for-byte from the committed strings, local Git blob hashes matched GitHub, and the self-test returned 24/24 expected control outcomes with exit 0.
+
+This validates the assay predicates, not current Lace behavioral success. There is still no holder/application candidate demonstrated against the goals. RM-A remains un-designed / MISSING-A. No Core mechanism, implementation, holder runtime, or acceptance was created.
+
+**STOP.** Pass 4 is not opened automatically.
