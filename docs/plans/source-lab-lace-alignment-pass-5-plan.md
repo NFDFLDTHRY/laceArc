@@ -1,6 +1,6 @@
 # SOURCE → LAB → LACE ALIGNMENT — Restart Pass 5 PLAN
 
-**Status:** PLAN — NOT EXECUTED.  
+**Status:** EXECUTED — see [source-lab-lace-alignment-pass-5-findings.md](source-lab-lace-alignment-pass-5-findings.md).  
 **Campaign:** Source → Lab → Lace Alignment — restart.  
 **Pass:** 5.  
 **Pass name:** **CHECK THE FOUNDATION — is `wasm64-unknown-unknown` actually the right compilation target?**  
@@ -2342,3 +2342,55 @@ It does **not** automatically:
 The exact question is:
 
 > **Given what Lace actually needs, what Rust/Wasm compilation target is the smallest, most supportable target that satisfies those needs on the real deployment environment?**
+
+
+---
+
+## 23. Actual execution result
+
+Executed from baseline `2f7b8c81b35c087dd2b27c46ae8baf3f64422987`.
+
+Products:
+- [target requirements](source-lab-lace-alignment-pass-5-target-requirements.md);
+- [target audit](source-lab-lace-alignment-pass-5-target-audit.md);
+- [findings receipt](source-lab-lace-alignment-pass-5-findings.md);
+- active Wasm/rustc/Cargo target-shelf reconciliation;
+- mandatory-context target reconciliation;
+- technology-reference reconciliation;
+- global ASCII **linear Pass 37**.
+
+Primary verdict:
+
+```
+TARGET VERDICT:
+    TARGET UNDECIDED
+
+FORMER WASM64 SEAL:
+    SUPERSEDED AS CURRENT TARGET STATE
+
+WASM64:
+    CONDITIONAL CAPABILITY CANDIDATE
+
+WASM32:
+    VIABLE LOWER-BURDEN CANDIDATE
+    NOT YET PROVED SUFFICIENT
+```
+
+Reason:
+- current Lace law requires permanent/non-wrapping logical positions but does **not** select `Index = usize`;
+- index width, row encoding, supported domain, physical carrier, persistence and resident working set remain explicit opens;
+- no accepted >4 GiB simultaneously resident Wasm requirement exists;
+- current official Rust sources keep wasm64 at Tier 3 with a source-built/no-precompiled-target burden, while wasm32 is Tier 2;
+- current WebAssembly JS API evidence caps runtime Memory64 at 16 GiB rather than a practical full 64-bit address domain;
+- WebGPU, WGSL and WebNN expose separate resource/type domains and do not create a hidden host-pointer-width requirement.
+
+Execution boundaries:
+- `rustc`, `cargo`, and `rustup` were absent from the execution environment, so local compiler/build probes are **NOT_RUN**, not failed;
+- the user's Pixel/Chrome installed-WebApp path is not reachable from this execution environment, so all device probes are **NOT_RUN**;
+- `compiler_builtins` participation and build-std/Cargo.lock/sysroot provenance remain explicit `[GAP]`.
+
+No target was selected by this pass. No carrier, index width, row encoding, allocator, RM-A rule, pointer acceptance, Core mechanism, or implementation gate was selected or opened.
+
+**Final semantic edit:** global ASCII Pass 37 refresh at `81b47087488dbe54b505f1b3fdb8b8b936c46d58`.
+
+**STOP.** Pass 6 is not opened automatically.
