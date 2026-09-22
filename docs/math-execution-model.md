@@ -1,6 +1,6 @@
 # Mathematical execution model — Lace
 
-**Status:** ROOT / TOUCH / FOLD constructor history + SAMPLING / DENSITY / EMERGENCE reconciliation + Behavioral Read Devices Passes 1–3 (generic S9 + observability/composition S10 + technical realization boundary S11), qualified by Alignment Restart Pass 1. **Pointer construction and human-ruled sampling/search are reconciled; canonical `SM-GAP-RM` remains open, with RM-A the primary unresolved retain decision. Bounded Lab evidence partially closes RM-B for selected finite contiguous samples and class-specifically closes RM-C for RootTouch / contiguous grounding. Behavioral devices are admitted mathematically as read-only stateful observers over Lace plus explicit external context; S10 limits what they may claim to know from Lace; S11 now separates build/runtime/host/GPU/shader/ML capability and evidence rungs without selecting implementation. Browser Wasm host/embedder sourcing remains GAP-HOST; R3 carrier remains open. No Core row, retention rule, acceptance, target choice, or implementation follows.**
+**Status:** ROOT / TOUCH / FOLD constructor history + SAMPLING / DENSITY / EMERGENCE reconciliation + Behavioral Read Devices Passes 1–4 (generic S9 + observability/composition S10 + technical realization S11 + canonical-graphics source-fidelity repair), qualified by Alignment Restart Pass 1. **Pointer construction and human-ruled sampling/search are reconciled; canonical `SM-GAP-RM` remains open, with RM-A the primary unresolved retain decision. Pass 4 re-sighted Graphics A–D and repaired bounded source-fidelity wording: Root/occurrence membership are not the full star, set-valued Reach is ancestry membership rather than path multiplicity, WORD route is distinct from all interleaved rows, projection geometry is policy-dependent/read-only, and later behavioral/technical layers remain overlays rather than graphic mechanisms. Browser Wasm host/embedder sourcing remains GAP-HOST; R3 carrier, G1, target and acceptance remain open/unchanged. No Core row, retention rule, target choice, or implementation follows.**
 **Campaign:** ROOT / TOUCH / FOLD established LAND/root/RootTouch/binary Join/finite grounding; its provenance-era Pass 6 is retained as history. SAMPLING / DENSITY / EMERGENCE Passes 1–5 establish the later human-ruled 1D+2D sampling/search model; this Pass 6 propagates that active reconciliation.
 **Pass 3:** [plan](plans/math-execution-root-touch-fold-pass-3-plan.md) · [findings](plans/math-execution-root-touch-fold-pass-3-findings.md).  
 **Pass 4 reconciliation:** [plan](plans/math-execution-root-touch-fold-pass-4-plan.md) · [findings](plans/math-execution-root-touch-fold-pass-4-findings.md).  
@@ -53,6 +53,14 @@ L = (e_0,\ldots,e_{n-1}), \qquad n = |L| \in \mathbb{N}_0.
 \]
 
 Indices are permanent addresses. Growth is concatenation only. There is no delete, rewrite, reset, cut, or index reuse (Pieces 1, 6; Graphic D).
+
+Graphics A–C describe the abstract strand as continuing indefinitely / growing without a source-specified terminal bound. This model keeps every state \(L\) finite while permitting another legal extension whenever the abstract transition is considered. That is not a physical-capacity promise. A concrete finite realization must declare its supported domain and refuse safely before wrap/reuse/renumber, as the later implementation-envelope court requires. Thus:
+
+\[
+\text{no source-specified terminal bound}
+\neq
+\text{infinite physical capacity}.
+\]
 
 ### S1.3 Entry alphabet and physical POINTER constructor
 
@@ -160,9 +168,43 @@ These are reads, not tables.
 
 The full star formation includes WORD occurrences, root-touch Join rows, and later Join rows whose recursive participation includes those touches.
 
+The root and occurrence set are therefore anchors/partial reads, not the formation itself. Graphic D5 says the star is not a point; A12/B9 depict many distinct passages and internal traffic. For any repeated word whose formation includes later participation:
+
+\[
+\boxed{
+\mathrm{Root}_L(v)\neq \mathrm{FullStar}_L(v)
+}
+\]
+
+and, once participation beyond isolated WORD occurrences exists,
+
+\[
+\boxed{
+\mathrm{StarWords}_L(v)\neq \mathrm{FullStar}_L(v).
+}
+\]
+
+\(\mathrm{FullStar}\) is a read concept over recorded passages/participation, not a stored Star row or side table.
+
 ### S3.2 Sequence as route
 
-Order of WORD appends is the physical route through stars (Piece 8). No sentence container is added. Adjacency does **not** fire Φ (emission Q3 CLOSED). Leftover adjacency is emission Q3 **SPOKEN** as arrival order on the wire (B5), not a stored relation — **not accepted**, **not calculated**.
+Order of WORD appends is the physical route through stars (A4/B5/C2; Piece 8). Because POINTER rows may interleave with WORD rows, the word route is the ordered WORD subsequence, not the entire row sequence treated as text.
+
+Let:
+
+\[
+\mathsf{WordTrace}(L)=(i_1,\ldots,i_k),
+\qquad
+i_1<\cdots<i_k,
+\]
+
+where each \(e_{i_j}\) is a WORD row. Its value trace is:
+
+\[
+\mathsf{ValueTrace}(L)=(v_{i_1},\ldots,v_{i_k}).
+\]
+
+No sentence container is added. Adjacency does **not** fire Φ (emission Q3 CLOSED). Leftover adjacency is emission Q3 **SPOKEN** as arrival order on the wire (B5), not a stored relation — **not accepted**, **not calculated**.
 
 ### S3.3 Seen-root touch is Join
 
@@ -190,6 +232,8 @@ So TOUCH and GROUND do not need different row constructors. They are different *
 
 The resulting touch row is itself Lace and may be used as an operand of later Join, as D1 row 0007 directly demonstrates.
 
+This retained RootTouch relation is not, by itself, a complete geometric description of the source phrase “threads through the existing 3D star” (B7). It records one lawful retained participation event under current HUMAN/MODEL law; full path/threading readout remains a derived fidelity problem over the retained history.
+
 ### S3.4 Points, samples, reach, and grounded points
 
 Every stored row index is an addressable Lace point.
@@ -206,6 +250,28 @@ Define transitive backward reach:
 \]
 
 Reach is derived, never stored.
+
+**Reach is ancestry membership, not path multiplicity.** D1 provides a bounded counterexample. From 0010 to 0000 there are at least two distinct recursive reference paths:
+
+\[
+0010\to0002\to0000
+\]
+
+and:
+
+\[
+0010\to0009\to0007\to0004\to0000.
+\]
+
+Yet \(\operatorname{Reach}(0010)\) contains 0000 only once. Therefore:
+
+\[
+\boxed{
+\operatorname{ReachMembership}\neq\operatorname{PathMultiplicity}.
+}
+\]
+
+Reach must not be substituted for the full star/route/threading structure shown by A8/A12/B9/C8. When path distinction matters, a derived read must preserve explicit ordered witness paths/frontiers; S3.6 does so without creating a second store.
 
 A **sample instance** is a finite nonempty selection of already-existing Lace points:
 
@@ -317,23 +383,42 @@ The handle is disposable derived state. Given the immutable Lace prefix named by
 
 ### S3.7 Projection / dot-to-dot N-D view
 
+A view is selected by a read/render policy \(\kappa\):
+
 \[
-\pi:L\rightarrow\mathsf{View},
+\pi_\kappa:L\rightarrow\mathsf{View}_\kappa,
 \qquad
-\text{no write-back } \mathsf{View}\rightarrow L.
+\text{no write-back } \mathsf{View}_\kappa\rightarrow L.
 \]
 
-H6 identifies recursive grounded points as the machinery behind the dot-to-dot N-dimensional representation.
+The graphics constrain view fidelity but do **not** define one unique geometry, coordinate system, camera, crossing layout, or embedding algorithm. It is therefore useful to speak of the admissible family:
+
+\[
+\Pi(L)=
+\{\pi_\kappa(L)\mid \kappa\text{ satisfies the claimed source-fidelity constraints}\}.
+\]
+
+H6 identifies recursive grounded points as later HUMAN/MODEL machinery behind the dot-to-dot N-dimensional representation; Graphics C/D directly establish recursive participation and view-vs-store constraints.
 
 Model-side interpretation:
 
-- the **dots** are addressable WORD / POINTER points;
-- the **connections** are read from POINTER participation / ancestry;
+- the **dots** may be addressable WORD / POINTER points;
+- retained POINTER participation supplies a structural skeleton;
+- ordered witness paths/path multiplicity must be preserved whenever a view claims to show distinct passes/routes/threading;
 - POINTER→POINTER supplies points-of-points / relations-among-relations;
-- more independent participation yields denser N-D projections;
-- no coordinates, dimension columns, or N-D store are added to Core.
+- C6 dictionary/document/conversation/provenance names are route-family/view labels, **not row kinds or stored dimension columns**; their exact discriminator remains OPEN;
+- more independent recorded participation may support denser N-D projections;
+- no coordinates, dimension columns, route-family fields, or N-D store are added to Core.
 
-This aligns with Graphic C C5/C7/C8 and preserves C11's projection fence.
+B11/C11 directly forbid treating a flat node-edge graph as the full Lace:
+
+\[
+\boxed{
+\mathsf{FlatGraphView}(L)\neq\mathsf{FullLaceStructure}(L).
+}
+\]
+
+Graphic-C 2D projection is also distinct from S3.5's later H7–H12 position×scale sampling surface. The former presents already-recorded participation; the latter is HUMAN/DERIVED discovery machinery.
 
 ## S4 — Binary Join, sample grounding, and emission
 
@@ -361,6 +446,8 @@ The constructor is uniform across D1:
 
 One physical constructor, different selected operands / participation roles.
 
+**Authority boundary.** D1/D2 directly witness the two-reference POINTER schema and D6 witnesses POINTER→POINTER recursion. The current universal binary \(\mathsf{Join}(a,b)\) constructor is the current HUMAN/MODEL law built on those source constraints. Graphic D by itself does not state a universal retain-when or say that every arbitrary pair is automatically authorized for append.
+
 ### S4.2 Grounding a finite sample
 
 For any finite nonempty ordered sample \(S=(s_1,\ldots,s_n)\) of existing points, define the incremental grounding ladder:
@@ -379,6 +466,8 @@ P_{m+1}
 Then \(P_n\) is one addressable point representing the selected sample through ancestry.
 
 #### Theorem G — finite sample representability
+
+**Authority:** DERIVED from the current binary constructor plus HUMAN H5/H6 selected-sample grounding premises. D1/D2/D6 provide bounded binary-recursion capability witnesses; the graphics do not state this universal theorem.
 
 Every finite nonempty sample of already-existing Lace points can be represented by one later Lace point using repeated binary Join.
 
@@ -422,6 +511,8 @@ D1 row 0010 is a bounded source witness of the same effect:
 \[
 \operatorname{Reach}_{D1}(0010)=\{0000,\ldots,0010\}.
 \]
+
+D1 0010 is a **bounded GFX witness**. The universal whole-prefix construction is DERIVED from the HUMAN grounding premises plus repeated Join; it is not direct Graphic-D prose.
 
 ### S4.4 Arrival / root / touch / ground
 
@@ -498,7 +589,7 @@ RootTouch remains the closed mandatory special case.
 |---|---|---|---|
 | **I Core** | Carrier \(L\), LAND/Arrive, root creation, root TOUCH, binary Join, finite-sample GROUND, readings | Pieces 1, 2, 4, 5, 6, 7, 8, 11, 14, 15 | Star/root/sample registry table; holder oil; second store |
 | **II Arrival** | Thin ordered feed; every successful word arrival lands through \(\mathsf{Arrive}\); zero own store | Piece 3; 9–10 as *use of I* | Lexicon / document store at the edge |
-| **III Projection** | \(\pi\) read-only | Piece 13; views of 7, 12, 15; Graphics A–C as views | Write-back into \(L\) |
+| **III Projection** | selected \(\pi_\kappa\) read-only view | Piece 13; views of 7, 12, 15; Graphics A–C as views | Write-back into \(L\); treating one rendering policy as the unique stored geometry |
 
 Piece 12 (dimension) is a **reading of I**, not Contract IV. The H7–H12 2D sampling surface is also derived working state rather than a new persistent contract/store; it is distinct from Contract III projection.
 
@@ -506,22 +597,29 @@ No Core write-query / delete / transaction / multi-Lace interface is supplied by
 
 ---
 
-## S6 — Forbidden morphisms `[X]`
+## S6 — Forbidden morphisms \`[X]\`
 
-Relative to Graphic D and Pieces 1, 6, 13, 14 — each is **not** a Core morphism:
+The prohibitions below come from different authority levels and must not be flattened into one “Graphic D says” list.
+
+### S6.1 Graphics-backed Core refusals
+
+Relative to Graphics B10/B11, C11, D and manifest Pieces 1, 6, 13, 14, these are **not** Core morphisms:
 
 1. Delete, rewrite, reset, cut, index reuse  
 2. Intern / collapse many occurrences into one counted row  
-3. Star table, meaning table, embedding store, N-D store beside the line  
-4. Graph DB / edge table outside \(L\)  
+3. Star table, stored-meaning table, embedding store, N-D store beside the line  
+4. Graph DB / edge table outside \(L\) used as independent authority  
 5. Second Lace / second row-kind schema  
 6. Write-back from any projection  
+
+### S6.2 Human/repository/overlay refusals
+
+These remain forbidden by later project law or current open-boundary discipline, not because the PNGs literally enumerate them:
+
 7. Label split/merge/create implemented as mutate-WORD  
 8. Filling the open sampling-derived retention/materialization rule from Shadow Anchor / OBS / unrelated conceptual machinery  
 9. Treating ASCII companion or emission DRAFT commit as Hands acceptance  
-10. Adding `src/` or Cargo under color of this document
-
----
+10. Adding \`src/\` or Cargo under color of this document
 
 ## S7 — Alignment note (soft diff)
 
@@ -572,6 +670,8 @@ No second store, sample registry, dimension table, or new row kind is introduced
 
 **Current steward tests:** no old row is rewritten; all Join refs are backward; every grounded point is itself Lace; repeated Join can ground arbitrary finite selected portions; sampled observation remains distinct from retained append; the sampling surface is derived and distinct from N-D projection; search is read-only/disposable; the exact retention/materialization rule is not invented.
 
+**Authority note:** this receipt intentionally summarizes a mixed court. Graphic facts, later HUMAN rulings, DERIVED theorems and OPEN boundaries remain separately identified in S7 and the Pass-4 graphics authority matrix; coherence here does not turn them all into GFX/source statements.
+
 *Shoe in hands. Tie two existing parts with a new piece of the same lace. That new tie is itself something later lace can tie through. Repeat it and a whole chosen portion becomes one point without any part disappearing.*
 
 ---
@@ -581,6 +681,16 @@ No second store, sample registry, dimension table, or new row kind is introduced
 **Campaign:** Behavioral Read Devices Pass 1 plan; Pass-1 source pressure ledger; Pass-1 generic device algebra.
 
 **Scope:** generic mathematical interface only. HCC-A, Coffee Cup, and Water supplied the pressure tests that earned this section, but their full source-specific devices are not defined here.
+
+**Graphic-A meaning scope:** the canonical Lace graphics say “Meaning does not exist” and repeatedly forbid stored semantic meaning. Current project law separately treats HCC-A Meaning as holder/device-local conceptual state outside Graphic D. S9 therefore uses \(\text{Meaning}\) only as an OVERLAY state outside authoritative Lace:
+
+\[
+\boxed{
+\text{HCC local Meaning}\notin L.
+}
+\]
+
+Nothing in S9 reinterprets the strand as storing semantic meaning.
 
 ### S9.1 Device family
 
@@ -1335,6 +1445,8 @@ RM-A remains open. Core remains unchanged.
 **Campaign:** Behavioral Read Devices Pass 3 technical capability inventory · interoperability/boundary map · source-gap ledger.
 
 **Scope:** source-grounded technical realization court above S1–S10. This section classifies the six staked technical references by actual capability role, maps optional execution planes onto the mathematical model, and records missing source boundaries. It does not select a target, carrier, accelerator, or implementation.
+
+**Graphics boundary:** S11 is an OVERLAY realization court. Graphics A–D select none of Cargo, rustc, Wasm, WebGPU, WGSL or WebNN. These technical sources may realize or accelerate a conforming model; they do not become additional Lace mechanisms.
 
 ### S11.1 Technical source topology
 
