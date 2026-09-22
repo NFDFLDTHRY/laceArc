@@ -1,7 +1,7 @@
-STATUS: FREE
+STATUS: HELD
 STATION: clipboards
 OWNS: docs/clipboards/**
-AGENT: -
-BASE: -
-SINCE: -
-NOTE: Alignment Restart Pass 1 clipboard reconciliation COMPLETE. Distributed source roles remain aligned; current platform/toolchain door now marks the earlier A4-absent statement as historical and preserves later mapped/forged source strength without claiming builds or rulings.
+AGENT: Astra-alignment-restart
+BASE: e3c6444f1d34f1ecb9af61b52f9fd7a0fad5bb8a
+SINCE: 2026-09-21T21:55:00-07:00
+NOTE: Restart Pass 5 target-verdict reconciliation. Update active Wasm/rustc clipboard entrances and clipboard index only: previous wasm64 seal becomes dated history; current target verdict TARGET UNDECIDED. Historical pass bodies preserved; no Core or implementation.
