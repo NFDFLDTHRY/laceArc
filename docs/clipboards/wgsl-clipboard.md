@@ -1,9 +1,11 @@
 # CLIPBOARD — laceArc ← WGSL W3C CRD 2026-09-15 (SHADER-LANG)
 
+**Alignment Restart Pass 5 target qualification:** historical `WGSL ≠ wasm64` false-friend language below still correctly means **WGSL is not the host Rust/Wasm compile-target layer**, but the current target court is **TARGET UNDECIDED**. WGSL neither selects nor replaces wasm32/wasm64.
+
 **Current discard locators, 2026-09-20 — repository update pass 4:** the [dated source qualification](#repository-update-pass-4--discard-rule-and-example) distinguishes the PDF **158** rule from the PDF **159** worked example. It qualifies PAGE E's approximate159 pin and the per-page summary; their historical bodies and campaign receipts remain intact. WGSL Pass 6 remains `HELD` / `NOT_EXECUTED`.
 
 **[III] Shadow / read-only shader-language projection. Hands win. POINTER emission = `[GAP]`.**  
-**SPECIAL:** This is **SHADER LANGUAGE** admission — Shadow projection / hologram draw surfaces. Companion to WebGPU HOST/GPU API. **NOT** Core. **NOT** Lace store. **NOT** POINTER emission / Φ. **NOT** wasm64 compile-target. **NOT** WebGPU Device/Queue host API.
+**SPECIAL:** This is **SHADER LANGUAGE** admission — Shadow projection / hologram draw surfaces. Companion to WebGPU HOST/GPU API. **NOT** Core. **NOT** Lace store. **NOT** POINTER emission / Φ. **NOT** the Wasm compile-target / target-selection layer. **NOT** WebGPU Device/Queue host API.
 
 ```
 +======================================================================+
@@ -15,7 +17,7 @@
 |  FORBID: WGSL as Lace WORD / Core operator / schema language.        |
 |  FORBID: shader module as strand; entry point as Phi.                |
 |  FORBID: WGSL types/memory model as Lace append-only strand.         |
-|  FORBID: conflating WGSL with WebGPU Device/Queue or with wasm64.    |
+|  FORBID: conflating WGSL with WebGPU host API or Wasm target choice. |
 |  KEEP-read: shader-lang mechanics for Shadow projection draw path.   |
 |  FORBID-as-Core-write; NON-binding on Core/src/Phi.                  |
 |  WGSL supplies no Lace retention rule. Current Lace retention/materialization [GAP] sealed. No src/ until pointer-emission accepted.    |
@@ -33,7 +35,7 @@
 |---|---|
 | This clipboard | **Shader language** Spec map (Shadow draw) |
 | [`webgpu-*`](webgpu-pass-1-plan.md) (Pass 1–5 **EXECUTED**; Pass 6 **HELD**) | **HOST/GPU Web API** companion — different Spec. Cite-only; **do not edit** |
-| [`wasm-spec-3-*`](wasm-spec-3-pass-1-plan.md) (Pass 1–6 EXECUTED) | **Compile-target ISA / wasm64** — different layer. Cite-only; **do not disturb** |
+| [`wasm-spec-3-*`](wasm-spec-3-pass-1-plan.md) (Pass 1–6 EXECUTED) | **Compile-target ISA / current target court (TARGET UNDECIDED)** — different layer. Cite-only; **do not disturb** |
 | [`clock/README.md`](../clock/README.md) · `lace-projection.html` | Layer III viewer: WebGPU 3D + D1 time; glyphs ≠ schema |
 | [`clock/wasm/README.md`](../clock/wasm/README.md) | Shadow projection bake — not this CRD’s authority |
 | [`hologram/`](../hologram/README.md) · [`visual-primitives.md`](../hologram/visual-primitives.md) | Live draw path cites **WGSL** in `shadow-clock-gearing.html` — KEEP-read shader path; FORBID as Core WORD |
@@ -53,7 +55,7 @@
 | **SILENT-for-Lace-append** | Spec procedure is silent for Lace append; do not smuggle as scheduler |
 | **PROPOSAL-only** | Lace↔shader / hologram draw sketches are proposals only; not accepted law |
 | **FORBID-as-host-API-swap** | Must not claim WGSL replaces / is the WebGPU Device·Queue·Buffer host API shelf |
-| **FORBID-as-compile-target-swap** | Must not claim WGSL replaces wasm64 / wasm-spec-3 target shelf |
+| **FORBID-as-compile-target-swap** | Must not claim WGSL selects or replaces the Wasm/rustc target court |
 
 ---
 

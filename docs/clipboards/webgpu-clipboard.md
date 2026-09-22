@@ -1,11 +1,13 @@
 # CLIPBOARD — laceArc ← WebGPU W3C CRD 2026-09-15 (HOST/GPU API)
 
+**Alignment Restart Pass 5 target qualification:** historical `WebGPU ≠ wasm64` false-friend language below still correctly means **WebGPU is not the Rust/Wasm compile-target layer**, but the current target court is **TARGET UNDECIDED**. WebGPU neither selects nor replaces wasm32/wasm64.
+
 **Current texture locator, 2026-09-20 — repository update pass 4:** GPUTexture IDL is on PDF **66**, matching M-G4/P-G4. The [dated texture qualification](#repository-update-pass-4--texture-source-locator) records the new visual sighting and qualifies the old approximate222 fragment. The submit IDL218/prose222 correction below is unchanged.
 
 **Current source correction, 2026-09-20:** the [repository update pass 3 addendum](#repository-update-pass-3--submit-source-locators) distinguishes GPUQueue IDL PDF **218** from submit scheduling/nonreuse prose PDF **222**. It qualifies the historical FM-Wgpu3/D7 mispins without rewriting their bodies or sighting receipts. PAGE F already records the correct distinction; WebGPU Pass 6 remains `HELD` / `NOT_EXECUTED`.
 
 **[III] Shadow / read-only host-API projection. Hands win. POINTER emission = `[GAP]`.**  
-**SPECIAL:** This is **HOST / GPU Web API** admission — Shadow projection / hologram / canvas embed surfaces. **NOT** Core. **NOT** Lace store. **NOT** POINTER emission / Φ. **NOT** the wasm64 compile-target shelf.
+**SPECIAL:** This is **HOST / GPU Web API** admission — Shadow projection / hologram / canvas embed surfaces. **NOT** Core. **NOT** Lace store. **NOT** POINTER emission / Φ. **NOT** the Wasm compile-target / target-selection shelf.
 
 ```
 +======================================================================+
@@ -15,7 +17,7 @@
 |  FORBID: GPUDevice/Queue/Buffer/Texture as Lace strand or store.     |
 |  FORBID: queue.submit / draw / dispatch as POINTER emission.         |
 |  KEEP-read: host/GPU mechanics for Shadow projection work.           |
-|  WebGPU ≠ wasm64 compile target — different layer.                   |
+|  WebGPU ≠ Wasm target selection — different layer.                  |
 |  No src/ until pointer-emission accepted.  One strand.               |
 +======================================================================+
 ```
@@ -29,7 +31,7 @@
 | Artifact | Role |
 |---|---|
 | This clipboard | Host/GPU **Web API** mechanism map (Shadow) |
-| [`wasm-spec-3-*`](wasm-spec-3-pass-1-plan.md) (Pass 1–6 EXECUTED) | **Compile-target ISA / wasm64** — **different layer**. Cite-only; do not disturb |
+| [`wasm-spec-3-*`](wasm-spec-3-pass-1-plan.md) (Pass 1–6 EXECUTED) | **Compile-target ISA / current target court (TARGET UNDECIDED)** — **different layer**. Cite-only; do not disturb |
 | [`clock/README.md`](../clock/README.md) · `lace-projection.html` | Layer III viewer: WebGPU 3D + D1 time; glyphs ≠ schema |
 | [`clock/wasm/README.md`](../clock/wasm/README.md) | Shadow projection bake (`wasm32`/Workers) — not this CRD’s authority |
 | [`hologram/`](../hologram/README.md) · [`visual-primitives.md`](../hologram/visual-primitives.md) | Hologram / WGSL live draw path — Shadow only |
@@ -47,7 +49,7 @@
 | **FORBID-as-emission-rule** | Must not use `queue.submit`, draw, dispatch, or encoder finish as POINTER when/arity/adjacency |
 | **SILENT-for-Lace-append** | Spec procedure is silent for Lace append; do not smuggle as scheduler |
 | **PROPOSAL-only** | Lace↔canvas / host-embed sketches are proposals only; not accepted law |
-| **FORBID-as-compile-target-swap** | Must not claim WebGPU replaces wasm64 / wasm-spec-3 target shelf |
+| **FORBID-as-compile-target-swap** | Must not claim WebGPU selects or replaces the Wasm/rustc target court |
 
 ---
 

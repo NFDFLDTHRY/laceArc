@@ -1,9 +1,11 @@
 # CLIPBOARD — laceArc ← WebNN W3C CRD 2026-09-10 (HOST-NN inference API)
 
+**Alignment Restart Pass 5 target qualification:** historical `WebNN ≠ wasm64` false-friend language below still correctly means **WebNN is not the Rust/Wasm compile-target layer**, but the current target court is **TARGET UNDECIDED**. WebNN neither selects nor replaces wasm32/wasm64.
+
 **Current issue scope, 2026-09-20 — repository update pass 4:** the [dated source qualification](#repository-update-pass-4--dispatch-issue-scope) narrows Issues5/7 to execution-error reporting and preserves the separate dispatch/readback completion distinction. Historical D7/P5/P6 OPEN wording remains as recorded, qualified by this note; no API algorithm or campaign verdict changes.
 
 **[III] Shadow / read-only host-NN projection. Hands win. POINTER emission = `[GAP]`.**  
-**SPECIAL:** This is **HOST-NN inference Web API** admission — Shadow projection / hologram / host-embed surfaces. **NOT** Core. **NOT** Lace store. **NOT** POINTER emission / Φ. **NOT** WebGPU Device/Queue. **NOT** WGSL. **NOT** the wasm64 compile-target shelf.
+**SPECIAL:** This is **HOST-NN inference Web API** admission — Shadow projection / hologram / host-embed surfaces. **NOT** Core. **NOT** Lace store. **NOT** POINTER emission / Φ. **NOT** WebGPU Device/Queue. **NOT** WGSL. **NOT** the Wasm compile-target / target-selection shelf.
 
 ```
 +======================================================================+
@@ -16,7 +18,7 @@
 |  FORBID: WebNN as Lace WORD / Core operator / schema language.       |
 |  FORBID: MLGraph as strand; MLTensor as store/append; execute/       |
 |          dispatch as Phi / POINTER emission.                         |
-|  FORBID: conflating WebNN with WebGPU Device/Queue, WGSL, or wasm64. |
+|  FORBID: conflating WebNN with WebGPU/WGSL or Wasm target choice.    |
 |  FORBID: operator graph as Lace Core ops.                            |
 |  KEEP-read: host-NN inference mechanics for Shadow projection work.  |
 |  FORBID-as-Core-write; NON-binding on Core/src/Phi.                  |
@@ -36,7 +38,7 @@
 | This clipboard | Host-NN **inference Web API** mechanism map (Shadow) |
 | [`webgpu-*`](webgpu-pass-1-plan.md) (Pass 1–5 EXECUTED; Pass 6 HELD) | **HOST/GPU** companion — Device/Queue/Buffer/Texture/canvas. **Cite-only; do not edit.** WebNN ≠ WebGPU Device/Queue; `exportToGPU` is a bridge cite, not identity |
 | [`wgsl-*`](wgsl-pass-1-plan.md) (Pass 1–5 EXECUTED; Pass 6 PLAN HELD) | **SHADER-LANG** companion. **Cite-only; do not edit.** WebNN ≠ WGSL; operators ≠ shader entry points |
-| [`wasm-spec-3-*`](wasm-spec-3-pass-1-plan.md) (Pass 1–6 EXECUTED) | **Compile-target ISA / wasm64** — **different layer**. Cite-only; do not disturb |
+| [`wasm-spec-3-*`](wasm-spec-3-pass-1-plan.md) (Pass 1–6 EXECUTED) | **Compile-target ISA / current target court (TARGET UNDECIDED)** — **different layer**. Cite-only; do not disturb |
 | [`clock/README.md`](../clock/README.md) · hologram / visual-primitives | Shadow surfaces may later cite host-NN; glyphs ≠ schema |
 | [`clock/wasm/README.md`](../clock/wasm/README.md) | Shadow projection bake — not WebNN authority; not Core |
 | [`pointer-emission.md`](../pointer-emission.md) | Still **DRAFT / `[GAP]`** — `dispatch` / graph execute must not fill when/arity/adjacency |
@@ -57,7 +59,7 @@
 | **PROPOSAL-only** | Lace↔host-NN / `exportToGPU` bridge sketches are proposals only; not accepted law |
 | **FORBID-as-WebGPU-conflation** | Must not treat WebNN MLContext/Graph/Tensor as WebGPU Device/Queue/Buffer; bridge ≠ identity |
 | **FORBID-as-WGSL-conflation** | Must not treat WebNN operators as WGSL / shader-lang |
-| **FORBID-as-compile-target-swap** | Must not claim WebNN replaces wasm64 / wasm-spec-3 target shelf |
+| **FORBID-as-compile-target-swap** | Must not claim WebNN selects or replaces the Wasm/rustc target court |
 
 ---
 
