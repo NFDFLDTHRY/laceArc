@@ -1,6 +1,8 @@
 # SOURCE → LAB → LACE ALIGNMENT — Restart Pass 3 behavioral-goal assays
 
 **Status:** PASS-3 ASSAY REGISTER · SPECIFIED + SELF-TESTED.  
+**Current qualification — Alignment Restart Pass 4:** these twelve assays remain valid mechanism-agnostic **observable projections**, but they are not the complete HCC-A / Coffee Cup / Water target models. The original-source reread recovered source-defined desired-behavior mechanisms that several assays cover only partially or thinly. Use the Pass-4 [HCC-A](source-lab-lace-alignment-pass-4-hcc-a-behavior-mechanisms.md), [Coffee Cup](source-lab-lace-alignment-pass-4-coffee-cup-behavior-mechanisms.md), [Water](source-lab-lace-alignment-pass-4-water-behavior-mechanisms.md), and [crosswalk](source-lab-lace-alignment-pass-4-crosswalk.md) maps to determine the full functional obligation. Passing an assay does not prove the source mechanism has been fully realized; failing to copy source component names does not imply failure either. Concrete implementation remains open.
+
 **Campaign:** Source → Lab → Lace Alignment — restart.  
 **Pass:** 3 — TEST THE DESTINATION.  
 **Authority:** **NON-CANONICAL Lab/alignment evidence.** HCC-A, Coffee Cup, and Water remain the behavioral-goal sources. This register does not redefine them and does not select their internal machinery.  
