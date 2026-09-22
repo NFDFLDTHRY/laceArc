@@ -1,7 +1,7 @@
-STATUS: FREE
+STATUS: HELD
 STATION: maps
 OWNS: docs/reason-model-map.md docs/rust-nostd-*.md docs/atomic-primitives-map.md docs/clock/gearing-code-1to1.md docs/coherence-audit*.md docs/clock/system-mathematical-model.md docs/defrag-plan.md docs/plans/** docs/namespace-register.md docs/*.md (catch-all: any unmatched file at the docs/ root)
-AGENT: -
-BASE: -
-SINCE: -
-NOTE: Repo-lag Pass 2 law/root entrance plan persisted at docs/plans/repo-lag-pass-2-law-entry-plan.md before execution. Maps released; no law semantics edited under maps.
+AGENT: ChatGPT
+BASE: 6a18034ca850ef1c89f55624d319ed0fd25f0592
+SINCE: 2026-09-22T18:18:00Z
+NOTE: Closing repo-lag Pass 2 after law release: write findings/remainder docket, mark plan executed, index receipt. No foreign-station semantic repairs.
