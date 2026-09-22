@@ -108,6 +108,50 @@ A wasm64 decision must therefore not rely on an assumption that a large Wasm res
 
 WebGPU remains **Layer III / host-GPU material**. It does not become Core, the authoritative Lace carrier, or a replacement compilation target.
 
+### 0-C — Human-supplied WGSL shader-language material
+
+Human-supplied file:
+
+`WebGPU Shading Language.pdf`
+
+SHA-256:
+
+`73dc9e35047d8715a88ae3b1082b2e887c750da9f5c0f97d78410fc6c2f5eb6d`
+
+This exactly matches the source hash already recorded by `docs/clipboards/wgsl-clipboard.md` and `docs/clipboards/wgsl-mechanisms.md` for the **WebGPU Shading Language W3C Candidate Recommendation Draft, 15 September 2026**.
+
+Therefore Pass 5 does **not** create another WGSL clipboard. The existing shader-language shelf is the source-grounded clipboard; this human-supplied PDF upgrades the source identity for this campaign to a user-supplied source with matching hash.
+
+Pass-5-relevant source facts:
+
+- WGSL is the shader language used by WebGPU to express GPU programs;
+- ordinary GPU-materialized integer scalar values are `i32` and `u32`;
+- `AbstractInt` has a 64-bit two's-complement value domain, but it is an **abstract** numeric type used in source/early evaluation and does not establish a general runtime `i64`/`u64` shader scalar;
+- WGSL pointers are address-space-typed memory views, are not storable, cannot be returned from functions, and cannot be converted to or from integer values;
+- host-shareable buffer data must obey WGSL's explicit byte layout/alignment rules;
+- `global_invocation_index`, when available through the `linear_indexing` language extension, is `u32`; a dispatch whose linear index would exceed the `u32` range fails;
+- baseline atomic scalar types are `atomic<i32>` / `atomic<u32>`; the `atomic_vec2u_min_max` extension provides a special unsigned-64-bit atomic representation as `atomic<vec2<u32>>`, but does not establish a general runtime u64 scalar model;
+- minimum supported shader-local memory budgets include 8 KiB private, 8 KiB function, and 16 KiB workgroup storage for the quantified limits in this CRD;
+- WGSL language/enable extensions are independently exposed capabilities and cannot be presumed merely because WebGPU itself is present.
+
+This adds another inventory boundary:
+
+```
+Lace logical Index
+        !=
+Rust usize / Wasm pointer
+        !=
+WGSL pointer
+        !=
+WGSL concrete integer scalar
+        !=
+GPU dispatch index
+```
+
+A 64-bit Lace logical index crossing into a WGSL shader therefore requires an explicit, tested representation contract. It must not be assumed to become one native shader integer because the host side uses `u64` or wasm64.
+
+WGSL remains **Layer III / shader-language material**. It does not become Lace WORD, Core schema, the authoritative carrier, or a replacement Rust/Wasm compilation target.
+
 ---
 
 ## 1. Pass-5 thesis
@@ -134,6 +178,12 @@ eq 	ext{browser/device viability}
 ]
 
 [
+\boxed{
+\text{Wasm / Rust integer width} \neq \text{WGSL runtime integer / pointer domain}
+}
+]
+
+[
 oxed{
 	ext{The target must be derived from the required implementation domain, not inherited from an old seal.}
 }
@@ -141,7 +191,7 @@ eq 	ext{browser/device viability}
 
 ---
 
-## 2. The six widths/domains that must not be conflated
+## 2. The seven widths/domains that must not be conflated
 
 Pass 5 must explicitly separate:
 
@@ -194,6 +244,23 @@ This is independently bounded by `GPUDevice.limits`, including `maxBufferSize`, 
 The API's 64-bit size fields are not evidence that a multi-gigabyte GPU resource is available.
 
 If Layer III uses WebGPU, Pass 5 must state the GPU-visible window/chunking contract separately from the Wasm linear-memory working set.
+
+### W7 — WGSL runtime representation / index domain
+
+How are Lace logical positions, offsets, counts, and derived references represented once data enters a WGSL shader?
+
+This is **not** the Wasm pointer domain.
+
+Pass 5 must distinguish:
+
+- `AbstractInt` source/early-evaluation range;
+- concrete shader integer scalars `i32` / `u32`;
+- address-space-typed WGSL pointers;
+- resource byte offsets/layout;
+- built-in dispatch indices such as `global_invocation_index`;
+- any explicitly encoded wide logical index such as a pair of `u32` values.
+
+No one of these may impersonate another.
 
 ---
 
@@ -405,6 +472,21 @@ If WebGPU participates in required projection/view work, determine:
 
 This is a Layer III requirement. It must not rewrite Core semantics or silently choose the authoritative carrier.
 
+### RQ9 — shader representation of wide logical indices
+
+If any Layer III shader must observe Lace logical positions beyond the `u32` range, execution must state and test the representation.
+
+Questions:
+
+- does the shader actually need the full logical index, or only a bounded local/window index;
+- if the full index is needed, is it encoded as two `u32` lanes, a structure, or another admitted host-shareable representation;
+- which operations are required on the wide value: equality, ordering, addition, subtraction, range checks, atomics, hashing;
+- can those operations be implemented exactly and cheaply enough in WGSL;
+- does the selected representation preserve host↔shader byte layout without translation bugs;
+- can dispatch/window base + local `u32` index avoid carrying a full wide index per invocation.
+
+If no required shader consumes wide logical positions, record that explicitly rather than solving a problem the project does not have.
+
 ---
 
 ## 6. WebAssembly 3.0 source court
@@ -561,6 +643,141 @@ Attack: type width != device limit != successful allocation.
 **F19 — zero-copy by assumption.** Wasm linear memory is treated as directly GPU-visible without device evidence.
 
 **F20 — WebGPU promotion.** WebGPU becomes a replacement compile target, authoritative Lace carrier, or Core mechanism because it constrains Layer III working sets.
+
+## 6B. WGSL source court — shader representation constraints on the target audit
+
+Re-read the human-supplied `WebGPU Shading Language.pdf` against the existing WGSL shelf.
+
+Do **not** turn WGSL into Core, a compile target, or Lace's authoritative memory model.
+
+### S-S1 — shader language, not host ISA
+
+WGSL expresses programs executed in WebGPU shader stages. The Rust/Wasm target produces host-side code. WGSL is a separate shader-language execution domain.
+
+### S-S2 — abstract 64-bit integer range != runtime u64 scalar
+
+WGSL's `AbstractInt` covers integers representable in 64-bit two's-complement form, but it is abstract. The ordinary concrete integer scalar types materialized in shader execution are `i32` and `u32`.
+
+```
+host u64 / wasm64 usize
+        !=
+native WGSL u64 scalar
+```
+
+If a 64-bit logical Lace index must enter shader execution, Pass 5 must specify an encoding rather than assuming one.
+
+### S-S3 — WGSL pointers are not host pointers
+
+WGSL pointer/reference types are parameterized by address space, store type, and access mode. They are not storable, cannot be returned from functions, cannot be converted to integers, and integers cannot be converted into pointers.
+
+A Rust pointer, Wasm linear-memory address, and WGSL pointer are three different concepts.
+
+### S-S4 — host-shareable byte layout is an explicit ABI boundary
+
+Storage/uniform buffer contents shared or copied between host and GPU must use host-shareable WGSL types and obey WGSL layout/alignment rules.
+
+Pass 5 must not assume a Rust structure can be copied byte-for-byte into a shader merely because its field names/types look similar.
+
+Any candidate wide-index structure requires an explicit host↔WGSL layout receipt.
+
+### S-S5 — dispatch indexing is u32-bounded
+
+The `linear_indexing` language extension exposes linear dispatch indices such as `global_invocation_index` as `u32`. If the computed linear index would exceed the `u32` range, the dispatch fails.
+
+Therefore one-invocation-per-global-Lace-position cannot silently scale past that boundary. A larger logical domain requires a window/base/chunk scheme or another explicit mechanism.
+
+### S-S6 — atomic width is a separate capability
+
+Baseline atomic scalar store types are `i32` and `u32`. The `atomic_vec2u_min_max` extension introduces `atomic<vec2<u32>>` as a special unsigned-64-bit atomic representation, with extension-specific operations.
+
+Do not infer from its existence that WGSL has general runtime u64 arithmetic or universally available 64-bit atomics.
+
+### S-S7 — shader-local memory budgets are much smaller domains
+
+The CRD's minimum supported quantified limits include:
+
+- private variables statically accessed by one shader: **8192 bytes**;
+- function-address-space variables declared in one function: **8192 bytes**;
+- workgroup-address-space variables statically accessed by one shader: **16384 bytes**.
+
+These are separate again from WebGPU storage-buffer capacity and from Wasm linear memory.
+
+### S-S8 — WGSL extensions are capability gates
+
+Features such as `subgroups`, `f16`, `linear_indexing`, `buffer_view`, `unrestricted_pointer_parameters`, and related language features are not generic assumptions.
+
+Where Pass 5 relies on one, the actual implementation/device support must be recorded.
+
+### Pass-5 WGSL probes
+
+#### P-WGSL-WIDE-INDEX
+
+Build a disposable compute shader that receives a logical index encoded as two `u32` words. Test only operations actually required by Layer III, such as equality, ordering, bounded-delta add/subtract, window membership, and host-reference round-trip.
+
+Do not invent a full software-u64 package unless a required behavior needs it.
+
+#### P-WGSL-WINDOW-BASE
+
+Test the alternative:
+
+```
+wide host logical base
+        +
+u32 shader-local index
+        =
+wide logical position outside the shader
+```
+
+Determine whether the shader can operate entirely on local/window indices while the host preserves the full logical identity.
+
+#### P-WGSL-LAYOUT
+
+Create one non-Core host↔shader probe record containing a two-`u32` logical index, representative counters/offsets, and explicit padding/layout expectations.
+
+Round-trip it through a storage buffer and verify every field. Record Rust/Wasm-side offsets separately from WGSL `AlignOf` / `SizeOf` expectations.
+
+#### P-WGSL-DISPATCH
+
+When `linear_indexing` is supported, verify `global_invocation_index`, chunk/window base behavior, and the validation boundary for dispatch geometry approaching the `u32` linear-index limit.
+
+#### P-WGSL-ATOMICS
+
+Only if Layer III needs atomics:
+
+- record baseline atomic operations used;
+- probe `atomic_vec2u_min_max` availability separately;
+- prove whether the required operation exists for the chosen representation;
+- otherwise keep wide-index atomic behavior `OPEN`.
+
+### Pass-5 decision-matrix addition
+
+Add criterion **D16 — WGSL representation fit**:
+
+- can required logical indices be represented exactly in shader code;
+- does the representation require wide software arithmetic;
+- can a window-base + local-u32 model avoid that cost;
+- does host↔shader layout round-trip exactly;
+- do required atomics/features exist on the actual Pixel;
+- does the shader boundary erase any supposed advantage of a 64-bit Wasm pointer ABI.
+
+### Additional assumptions to attack
+
+**A-11:** “wasm64 means WGSL gets 64-bit pointers/integers.”  
+Attack: separate shader type and pointer system.
+
+**A-12:** “WGSL AbstractInt is a runtime i64.”  
+Attack: abstract early-evaluation domain != concrete GPU-materialized scalar.
+
+**A-13:** “A global Lace index can be used directly as `global_invocation_index` forever.”  
+Attack: that built-in is `u32` and dispatch geometry is bounded accordingly.
+
+### Additional falsifiers
+
+**F21 — host pointer width leaks into WGSL.** Rust/Wasm pointer width is treated as shader pointer/integer width.
+
+**F22 — AbstractInt promoted to runtime-u64 evidence.** Compile/source-domain range is used as proof of a concrete shader u64.
+
+**F23 — unchecked host↔WGSL struct copy.** A wide-index representation is copied across the buffer boundary without a layout round-trip receipt.
 
 ---
 
@@ -873,6 +1090,25 @@ If starting wasm64 and later moving wasm32, what changes?
 
 Do not assume migration is trivial.
 
+### D15 — WebGPU interop / projection-window fit
+
+- required Wasm→GPU window size;
+- number/size of GPU resources and bindings;
+- actual device limits;
+- transfer/readback cost;
+- whether any claimed wasm64 benefit survives the GPU window/copy boundary.
+
+### D16 — WGSL representation fit
+
+- representation of logical indices and offsets inside shaders;
+- exact host↔shader layout;
+- dispatch-index width;
+- required language/enable extensions;
+- atomic requirements;
+- cost of wide-index emulation versus bounded local/window indexing.
+
+A target does not gain credit merely because the host can address a larger memory if required shader work still operates on bounded resources and 32-bit concrete indices.
+
 ---
 
 ## 14. Decision rules
@@ -888,7 +1124,9 @@ all relevant conditions survive:
 5. practical memory capacity exceeds the wasm32-supported requirement by enough to matter;
 6. measured performance/memory overhead is acceptable;
 7. the target does not force unnecessary platform/toolchain debt;
-8. the target's required feature set is supported by the actual deployment environment.
+8. the target's required feature set is supported by the actual deployment environment;
+9. any required WebGPU path works within actual GPU resource/binding limits without assuming whole-memory zero-copy aliasing;
+10. any required WGSL path has an exact representation for logical indices/offsets without assuming host pointer width becomes shader integer width.
 
 ### wasm64 is OVER-SPECIFIED if
 
@@ -953,11 +1191,36 @@ the project has not specified the carrier/working-set/domain requirement suffici
 
 **Attack:** may be false; Pass 5 must determine the dependency direction.
 
+### A-9
+“A giant wasm64 linear memory gives WebGPU one giant equally addressable working set.”
+
+**Attack:** WebGPU has a separate resource/binding domain and possible copy/staging boundaries.
+
+### A-10
+“WebGPU uses `GPUSize64`, therefore huge GPU buffers are a portable baseline.”
+
+**Attack:** type width != device limit != successful allocation.
+
+### A-11
+“wasm64 means WGSL gets 64-bit pointers/integers.”
+
+**Attack:** WGSL has its own pointer/address-space model and concrete runtime scalar types.
+
+### A-12
+“WGSL `AbstractInt` is a runtime i64.”
+
+**Attack:** abstract early-evaluation range does not establish a concrete GPU runtime i64/u64 scalar.
+
+### A-13
+“A global Lace index can map directly to `global_invocation_index` forever.”
+
+**Attack:** the built-in is `u32`; large logical domains require explicit window/base/chunk machinery if the shader needs them.
+
 ---
 
 ## 16. Relation to current building-materials inventory
 
-Pass 5 classifies target materials into five buckets.
+Pass 5 classifies target materials into six buckets.
 
 ### CORE WASM MATERIAL
 
@@ -1003,6 +1266,25 @@ Does **not** answer:
 - authoritative carrier choice;
 - wasm32 vs wasm64 by itself.
 
+### SHADER-LANGUAGE MATERIAL
+
+- uploaded WGSL CRD 2026-09-15;
+- existing WGSL clipboard / mechanisms;
+- concrete/abstract numeric type system;
+- address spaces, pointers, host-shareable layout;
+- shader-local limits, dispatch indices, atomics and extension gates.
+
+Answers:
+- what values and memory views GPU shader code can actually manipulate;
+- how host-side logical indices must be encoded for shader use;
+- which shader-local limits/features constrain Layer III algorithms.
+
+Does **not** answer:
+- Lace semantics;
+- Rust/Wasm pointer width;
+- authoritative carrier selection;
+- wasm32 vs wasm64 by itself.
+
 ### DEVICE EVIDENCE
 
 - Pixel 9a probes;
@@ -1026,6 +1308,7 @@ main + stations + source PDF hash
 CLIPBOARDS
 Wasm 3.0 source re-admission
 WebGPU source re-admission (same existing shelf/hash)
+WGSL source re-admission (same existing shelf/hash)
 rustc target
 Cargo build-std
         |
@@ -1048,6 +1331,7 @@ artifact inspection
 DEVICE PROBES
 memory64 / memory32 capacity + cost
 WebGPU limits + transfer/window cost
+WGSL wide-index + layout + dispatch probes
         |
         v
 EMBEDDER SOURCE
@@ -1100,6 +1384,8 @@ wasm64 | wasm32 | conditional
         |
         v
 toolchain + embedder + device evidence
+        +---- WebGPU resource / transfer constraints
+        +---- WGSL integer / pointer / layout constraints
         |
         v
 TARGET VERDICT
@@ -1162,6 +1448,24 @@ Compilation target is inserted into Lace semantics.
 ### F17 — target audit opens implementation gate
 No.
 
+### F18 — GPUSize64 = practical capacity
+A 64-bit WebGPU API size type is treated as evidence that huge buffers/bindings are available.
+
+### F19 — zero-copy by assumption
+Wasm linear memory is treated as directly GPU-visible without source/device evidence.
+
+### F20 — WebGPU target/Core promotion
+WebGPU is treated as a replacement compile target, authoritative Lace carrier, or Core mechanism because it constrains Layer III working sets.
+
+### F21 — host pointer width leaks into WGSL
+Rust/Wasm pointer width is treated as WGSL pointer or concrete integer width.
+
+### F22 — AbstractInt promoted to runtime-u64 evidence
+WGSL's abstract integer range is used as proof of a concrete runtime `u64`/i64 shader scalar.
+
+### F23 — unchecked host↔WGSL struct copy
+A wide-index or offset representation is copied into a shader resource without a verified WGSL/Rust byte-layout round trip.
+
 ---
 
 ## 20. Completion board
@@ -1200,7 +1504,13 @@ No.
 | G30 | actual WebGPU adapter/device limits recorded or honestly NOT-RUN |
 | G31 | GPU transfer/window assumptions measured or explicitly conditional |
 | G32 | WebGPU remains Layer III / host-GPU material; no Core or target-swap promotion |
-| G33 | all claims released |
+| G33 | uploaded WGSL CRD hash verified against existing shelf |
+| G34 | WGSL runtime integer/pointer domain separated from Wasm/Rust pointer domain |
+| G35 | required wide logical-index shader representation proven or explicitly not required |
+| G36 | host↔WGSL layout round-trip proven for any selected wide-index representation |
+| G37 | dispatch-index / required WGSL extension limits checked or honestly NOT-RUN |
+| G38 | WGSL remains Layer III / shader-language material; no Core/target-swap promotion |
+| G39 | all claims released |
 
 ---
 
@@ -1236,6 +1546,7 @@ WHAT REQUIREMENT IT SATISFIES
 WHAT COST IT ACCEPTS
 WHAT DEVICE EVIDENCE SUPPORTS IT
 WHAT WEBGPU RESOURCE / TRANSFER ASSUMPTIONS IT DEPENDS ON
+WHAT WGSL REPRESENTATION / LAYOUT ASSUMPTIONS IT DEPENDS ON
 WHAT WOULD FALSIFY IT
 WHAT WOULD TRIGGER RE-TARGETING
 ```
@@ -1263,6 +1574,9 @@ It does **not** automatically:
 - make WebGPU/WebNN part of Core;
 - treat GPUBuffer / GPUTexture as the authoritative Lace carrier;
 - assume whole-memory zero-copy Wasm↔GPU aliasing;
+- assume Rust/Wasm pointer width becomes WGSL pointer/integer width;
+- treat WGSL `AbstractInt` as a general runtime u64;
+- copy host structs into shader resources without a verified layout contract;
 - open Pass 6.
 
 The exact question is:
