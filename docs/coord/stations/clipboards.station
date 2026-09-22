@@ -1,7 +1,7 @@
-STATUS: HELD
+STATUS: FREE
 STATION: clipboards
 OWNS: docs/clipboards/**
-AGENT: Astra-alignment-restart
-BASE: e3c6444f1d34f1ecb9af61b52f9fd7a0fad5bb8a
-SINCE: 2026-09-21T21:55:00-07:00
-NOTE: Restart Pass 5 target-verdict reconciliation. Update active Wasm/rustc clipboard entrances and clipboard index only: previous wasm64 seal becomes dated history; current target verdict TARGET UNDECIDED. Historical pass bodies preserved; no Core or implementation.
+AGENT: -
+BASE: -
+SINCE: -
+NOTE: Restart Pass 5 target reconciliation COMPLETE. Active Wasm/rustc/ascii/mechanism entrances + clipboard index now say TARGET UNDECIDED; historical wasm64 seal bodies preserved as dated provenance. No Core/implementation.
