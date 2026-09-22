@@ -442,7 +442,9 @@ that the subjects at those ordinals do not match — concluding that
 **"title, actual text and version are needed."**
 
 > Panel labels `D1`, `B8`, `C6` are assigned by the manifest and by these files.
-> They are not printed in the graphics. Combined with the unestablished provenance
+> They are not printed in the graphics. **Qualified 2026-09-22 by reference audit
+> pass 2: the numerals are printed — `1.`–`13.` on A, `1.`–`12.` on B and C, `1.`–`6.`
+> on D, each before its title; only the letter prefix is assigned.** Combined with the unestablished provenance
 > above, this repository can drift exactly as D01 did. This file happens to
 > transcribe D1's eleven rows verbatim, so its claims survive a relabelling; that
 > was not deliberate. See `docs/clock/agent-interaction-model.md` §3b F3.

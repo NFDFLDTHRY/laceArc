@@ -39,7 +39,7 @@ Current split:
 
 The historical C7/C11/G2 iteration text below is preserved as dated source-reading history.
 
-Printed panel numbers on the PNG were not recovered this tick. Working titles C1–C12 are the Hands-map inventory. If a later pass reads a different title on the artwork, the PNG wins.
+**Printed on the PNG — recovered by [reference audit pass 2](../plans/reference-audit-pass-2-plan.md), 2026-09-22.** Panel numerals `1.`–`12.` are printed before each title; the letter `C` is this repository's. Seven working titles below differ from the print; the printed titles are recorded in the [pass-2 section](#reference-audit-pass-2--printed-on-the-png) at the end of this file, and under this file's own rule the PNG wins. Working titles are kept as aliases in the dated sections.
 
 Stacked-plane labels D1, D2, D3, D4 on C are **presentation axes**, not Graphic D’s array panels. They do not become a second store.
 
@@ -308,6 +308,7 @@ C11 has no constructive operator.
 | Projection | not the Lace | C11 / B11 `[X]` | Pass |
 | Emission | unstated | G2 `[GAP]` | Pass (silent) |
 | Printed panel numbers | on artwork | unread this campaign | `[GAP]` |
+| Printed panel numbers — reference audit pass 2, 2026-09-22 | `1.`–`12.` printed before each title | recovered; twelve printed titles recorded below | Pass |
 | Document-as-entry | unstated | `[GAP]` | `[GAP]` |
 | Family-label-how | unstated | `[GAP]` | `[GAP]` |
 
@@ -323,3 +324,120 @@ No Fail this tick. Gaps stay gaps.
 | T4 | Iteration-2 receipt |
 
 Queued (iteration 3, not pass 7): Graphic D ASCII if named; printed numbers; remaining `[GAP]`s. See [`ascii-iterations.md`](ascii-iterations.md).
+
+## Reference audit pass 2 — printed on the PNG
+
+**Dated 2026-09-22.** Executed under [reference audit pass 2](../plans/reference-audit-pass-2-plan.md). Every line here was read from [`n-dimensional-relationships.png`](n-dimensional-relationships.png) at 1672×941, cropped panel by panel and upscaled 2× — `VISUALLY_OBSERVED`, and the stamp covers this section only. The dated sections above are not rewritten; the Pass-4 fields row for C3 (*printed title on PNG `[GAP]`*) is superseded here, not there; the correctness board gained one dated row beneath its historical `[GAP]` row.
+
+### Numerals and titles
+
+Panel numerals `1.`–`12.` are printed before each title. The letter `C` is this repository's.
+
+| # | Working title in this file | Printed title | Printed subtitle |
+|---|---|---|---|
+| C1 | Rule Zero | Rule zero | One continuous strand. Always growing. |
+| C2 | 1D presentation | 1D presentation | Seen as a line in time and order. |
+| C3 | 2D crossings / adjacency | **2D presentation** | A flat projection on paper. |
+| C4 | 3D looping / stars | **3D presentation** | The true structure begins to appear. |
+| C5 | More dimensions ≠ more meaning | **What a dimension adds** | Each new dimension is another independent way to participate. |
+| C6 | Four named families (views) | **4D presentation** | The same star in multiple independent relation families. |
+| C7 | 5D+ touches of touches | **5D and beyond** | Touches can participate in later touches. |
+| C8 | Symptoms of N-D (view) | **How N-dimensionality presents itself** | Many simultaneous routes through the same star. |
+| C9 | Dictionary / no collapse | **Dictionary wiring example** | A definition is a route through other stars. |
+| C10 | Input treatment | Input treatment | Raw input is fed directly into Lace, word by word. |
+| C11 | [X] Projection ≠ Lace | **Projection vs actual Lace** | Lower-dimensional views are shadows, not the thing itself. |
+| C12 | Governing rule | Governing rule | The entire mechanism in one simple rule. |
+
+Bold = the print differs from the working title. The working titles stay in the dated sections as aliases; cite the printed title off-shelf. The stacked-plane labels `D1`–`D4`, `Dn` on C5 remain presentation axes, not Graphic D panels.
+
+### Header and tagline, as printed
+
+```
+ N-Dimensional Relationships in Lace: How Higher Dimensions Present Themselves
+ More dimensions do not add meaning.  They add independent ways the same continuous wire can participate in existing structure.
+
+                                                          One strand.  Infinite participation.  A richer universe.
+```
+
+### C8 — Visible symptoms, as printed
+
+```
+ • More independent passes through the same star
+ • More simultaneous contexts
+ • Richer and denser structure
+ • More recoverable routes
+ • More ways to revisit structure without rewriting history
+ • Naturally formed from repeated threading
+```
+
+Beneath: *N-dimensionality presents itself as a denser, more richly interconnected structure where the same wire participates in many independent ways at once.* Star label: *"data" (same star)*.
+
+### C10 — specimen, as printed
+
+```
+ RAW INPUT (ARRIVAL ORDER)            Feed into Lace         The   customer   paid
+ ┌─────────────────────────┐          word by word            the   restaurant  for
+ │ The customer paid       │          (in order)              the   dessert     slice
+ │ the restaurant for      │   ───→
+ │ the dessert slice.      │
+ └─────────────────────────┘
+```
+
+The route is drawn as **nine occurrence nodes, one per word, with `the` drawn three times as three separate nodes** — an occurrence-per-node drawing, consistent with D5's one-passage-per-occurrence. The panel does not draw a single `the` star here. Printed bullets: *Input is fed in arrival order. · Every word occurrence is preserved as another segment. · The sentence becomes a physical route through the dictionary wiring. · No parsing, no discarding — just continuous growth.*
+
+### C11 — as printed
+
+| Simplified projection (flat graph view) | The actual Lace (3D+) |
+|---|---|
+| ✗ Hides higher-dimensional structure | ✓ Same continuous wire |
+| ✗ Collapses rich connections | ✓ Real threading and entanglement |
+| ✗ Loses over/under and threading | ✓ Many simultaneous routes |
+| ✗ Suggests a simple node-edge model | ✓ Touches remain and can be reused |
+| ✗ Not the real Lace | ✓ A richer universe |
+
+Left drawing: *customer · restaurant · food · dessert · slice* as a five-node graph. Right caption: *The real structure is a rich, continuous, higher-dimensional formation.*
+
+### C12 — as printed
+
+```
+ ┌──────────────────────────────────────────────┐
+ │  Input word arrives.                         │
+ │  Route new wire through that word's star.    │
+ │  Continue.                                   │
+ └──────────────────────────────────────────────┘
+  • Sequence is preserved (one continuous strand).
+  • Every word occurrence is kept (no deletions, no edits).
+  • Each word has a persistent star.
+  • New wire threads through existing structure.
+  • Touches remain and can participate later.
+  • Higher-dimensional participation emerges from repeated threading.
+  • No stored meaning — only routes, touches, and structure.
+
+        Same strand. More dimensions. A richer universe.
+```
+
+Seven bullets are printed under the rule; the dated sections carried only the three-verb box.
+
+### Panel labels, as printed
+
+- C1: *Past (already part of Lace)* · *New input (keeps growing)*.
+- C2: *The · quick · brown · fox · jumps · again* on a line marked *Time →*.
+- C3: the same six words on a tilted plane marked *2D projection (on paper/screen)*.
+- C4: *"the" (same star)* · *Same word, threaded from different directions in 3D.*
+- C5: planes *Dn · D4 · D3 · D2 · D1*; *Each dimension adds an independent relational axis for the same wire to participate in existing structure.*
+- C6: *"food" (same star)* · *Dictionary route · Document route · Conversation route · Provenance route* · *Four independent relational axes (same structure, no new meaning).*
+- C7: *Later touch re-enters earlier structure* · *Star within a larger structure* · *Relation among relations (5D+)* · *History of participation*.
+- C9: *PIE · dessert · slice · whole · food* on the upper route; *customer · liability · support* on the lower route; both routes open-ended (`···`).
+
+### Artwork glyph defects (recorded, not copied)
+
+C5 prints **`tways`** for *ways*. A glyph defect of the artwork; the reading above carries the word.
+
+### Pass 2 deltas (reference audit)
+
+| Ticket | Action |
+|---|---|
+| T1 | Numerals recorded printed; twelve printed titles and subtitles; correctness-board row added beneath the historical one |
+| T2 | Header and tagline; C8 six symptoms; C10 specimen with the three-`the` observation |
+| T3 | C11 two columns; C12 seven bullets + footer |
+| T4 | Panel labels; glyph defect; dated sections untouched; G2 and C6-vs-D untouched |

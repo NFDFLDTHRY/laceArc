@@ -58,7 +58,7 @@ Leftover from iteration 2, in order. These are **iteration 3 passes 1–6**, not
 |---|---|---|
 | 1 | Graphic D ASCII companion (header, D1–D6, key properties, footer) **EXECUTED** | [`graphic-d-ascii.md`](graphic-d-ascii.md) · plan [reference-audit-pass-1](../plans/reference-audit-pass-1-plan.md) |
 | 2 | D fields | carried inside pass 1's companion (Fields table); no separate pass |
-| 3 | printed A/B/C/D numbers — recovered: all four PNGs print their panel numerals; the letter is the repository's | D recorded in pass 1; A/B/C queued to [reference-audit-pass-2](../plans/reference-audit-pass-2-plan.md) (PLAN) |
+| 3 | printed A/B/C/D numbers — recovered: all four PNGs print their panel numerals; the letter is the repository's **EXECUTED** | D recorded in pass 1; A/B/C titles, lists and labels recorded by [reference-audit-pass-2](../plans/reference-audit-pass-2-plan.md) in each companion's pass-2 section |
 | 4–6 | leftover Hands-silent `[GAP]`s — point, do not fill G2 | not written |
 
 ---

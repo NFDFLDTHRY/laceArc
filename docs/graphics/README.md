@@ -3,13 +3,15 @@
 These four images are the source of record for laceArc. The systems manifest is derived from them. Do not treat a later diagram, graph screenshot, or 3D viewer as a replacement store.
 
 | File | Original attachment | Title |
-|---|---|
+|---|---|---|
 | [from-words-to-worlds.png](from-words-to-worlds.png) | `13284.png` | The Lace Model in 3D: From Words to Worlds |
 | [mechanisms-in-3d.png](mechanisms-in-3d.png) | `13285.png` | Lace Mechanisms in 3D: How the Wire Actually Behaves |
 | [n-dimensional-relationships.png](n-dimensional-relationships.png) | `13286.png` | N-Dimensional Relationships in Lace: How Higher Dimensions Present Themselves |
 | [data-structure-1d-array.png](data-structure-1d-array.png) | `13287.png` | Lace Data Structure: One 1D Array, Everything is Lace |
 
 Read them in that order for the story, or read graphic 4 first if you need the store.
+
+Panel numerals are printed on the artwork — `1.`–`13.` on graphic 1, `1.`–`12.` on graphics 2 and 3, `1.`–`6.` on graphic 4, each before its title. The letter prefix A/B/C/D used across this repository is assigned here, not printed (recorded by [reference audit pass 2](../plans/reference-audit-pass-2-plan.md), 2026-09-22).
 
 Graphic A ASCII companion (iteration 1 passes 1–4): [`graphic-a-ascii.md`](graphic-a-ascii.md). Does not replace the PNG. Does not fill G2.
 
@@ -38,3 +40,15 @@ record is kept lossless even though it costs about 9 MB.
 
 Re-encoding these to a lossy format is a model break in the same way a second
 store is: the graphics are the source, not a preview of it.
+
+## Provenance
+
+The pass plans behind the companions and the prefix-device sheets. Each product links its own plans; this table makes the door 1:1 with the shelf.
+
+| Product | Pass plans |
+|---|---|
+| [graphic-a-ascii.md](graphic-a-ascii.md) | [1](graphic-a-ascii-pass-1-plan.md) · [2](graphic-a-ascii-pass-2-plan.md) · [3](graphic-a-ascii-pass-3-plan.md) · [4](graphic-a-ascii-pass-4-plan.md) |
+| [graphic-b-ascii.md](graphic-b-ascii.md) | [1](graphic-b-ascii-pass-1-plan.md) · [2](graphic-b-ascii-pass-2-plan.md) · [3](graphic-b-ascii-pass-3-plan.md) · i2 [1](ascii-iteration-2-pass-1-plan.md) · [2](ascii-iteration-2-pass-2-plan.md) |
+| [graphic-c-ascii.md](graphic-c-ascii.md) | i2 [3](ascii-iteration-2-pass-3-plan.md) · [4](ascii-iteration-2-pass-4-plan.md) · [5](ascii-iteration-2-pass-5-plan.md) · [6](ascii-iteration-2-pass-6-plan.md) |
+| [graphic-d-ascii.md](graphic-d-ascii.md) | [reference audit pass 1](../plans/reference-audit-pass-1-plan.md) |
+| prefix-device sheets | [1](prefix-device-pass-1-plan.md) · [2](prefix-device-pass-2-plan.md) · [3](prefix-device-pass-3-plan.md) · [4](prefix-device-pass-4-plan.md) · [5](prefix-device-pass-5-plan.md) · [6](prefix-device-pass-6-plan.md) |

@@ -15,13 +15,13 @@ Emission remains `[GAP]`.
 
 ```
  One continuous strand.
- Every word a centimetre of wire.
+ Every word a centimeter of wire.
  Every word's star a persistent 3D formation.
  Meaning does not exist.
  Only structure, sequence, and participation.
 ```
 
-Centimetre scale is A's header language. Bound as a reading in `docs/graphics-close-reading.md` §5. Not a Core field.
+Centimeter scale is A's header language — the PNG prints `centimeter`; this file wrote `centimeter` until reference audit pass 2 (2026-09-22). The unit is one item in the lace array, the author's ruling in `docs/graphics-close-reading.md` §5a. Not a Core field.
 
 ---
 
@@ -168,6 +168,7 @@ On A, under “What this model gives you.” Not extra mechanism.
 - higher-dimensional touches form, participate, and enable future structure
 - input treated exactly as it arrives (punch-card style)
 - no meaning stored — only structure, sequence, and participation
+- everything builds on the same simple rule: Input word arrives. Route new wire through that word's star. Continue. *(tenth check, added by reference audit pass 2; the first nine were carried at pass 1)*
 
 ---
 
@@ -179,7 +180,7 @@ On A, under “What this model gives you.” Not extra mechanism.
 | 3D formation language | Star table beside D |
 | mechanism sentence at A13 | array-layer POINTER answers |
 | dictionary + document as one Lace | document type in D's schema |
-| centimetre header | a Core unit field |
+| centimeter header | a Core unit field |
 
 HCC π, Cup C*, Water OBS do not appear here.
 
@@ -304,7 +305,7 @@ One operator. Panels apply it or view it. Feeds are not types.
 
   constrained by A's header:
     one continuous strand
-    every word a centimetre of wire
+    every word a centimeter of wire
     every word's star a persistent 3D formation
     meaning does not exist
     only structure, sequence, and participation
@@ -380,3 +381,73 @@ B4’s PIE→dessert path is not on A11 and is not copied here.
 | T4 | Seam table |
 
 A map on this station is four passes. Next graphic is a new ticket.
+
+## Reference audit pass 2 — printed on the PNG
+
+**Dated 2026-09-22.** Executed under [reference audit pass 2](../plans/reference-audit-pass-2-plan.md). Every line here was read from [`from-words-to-worlds.png`](from-words-to-worlds.png) at 1536×1024, cropped panel by panel and upscaled 2× — `VISUALLY_OBSERVED`, and the stamp covers this section only. Nothing above this heading was rewritten except the four `centimetre` → `centimeter` transcription repairs and the tenth A13 check, both recorded here.
+
+### Numerals and titles
+
+Panel numerals `1.`–`13.` are printed before each title. The letter `A` is this repository's. All thirteen working titles in this file match the print.
+
+| # | Printed title | Printed subtitle / feed line |
+|---|---|---|
+| A1 | Start | An empty Lace. |
+| A2 | First word | Feed the word "The". |
+| A3 | More words | Feed "Golden Skillet". |
+| A4 | A sentence in 3D | Feed: "The Golden Skillet had pancakes." |
+| A5 | Repetition strengthens stars | Later, "The" appears again. |
+| A6 | The word "PIE" in context | Feed the line: "The order said: PIE." |
+| A7 | Later words connect | Feed: "Is that a slice of pie?" |
+| A8 | Ambiguity forms in 3D | Feed: "Or is it the whole pie?" |
+| A9 | Responsibility chain | Feed: "Courier... customer... support... |
+| A10 | Higher-dimensional touch | New input passes through a star that already contains history. |
+| A11 | A growing lexical Lace (partial view) | Dictionary + document wired together. |
+| A12 | Zoom in: The PIE star | Many distinct strands pass through the same star. |
+| A13 | What this model gives you | — (a list of ten checks, the rule, and the footer) |
+
+### Header, as printed
+
+```
+ One continuous strand.  Every word a centimeter of wire.  Every word's star a persistent 3D formation.
+ Meaning does not exist.  Only structure, sequence, and participation.
+```
+
+`centimeter`, as the PNG prints it. This file carried `centimetre` in four places (header block, its note, the Fence row, the Pass-4 operator box) from pass 1 until this pass; close reading §5 recorded the mismatch at verification iteration 4 and left the shelf untouched because the graphics station was not held. The author's ruling on what the unit is — one item in the lace array, the name picked at random — is in close reading §5a and is not restated here.
+
+### A13, as printed (ten checks)
+
+```
+ ✓ One continuous strand (no cuts, no resets)
+ ✓ Every word occurrence preserved
+ ✓ Each word has a persistent 3D star (its identity)
+ ✓ Definitions are just more wire through other stars
+ ✓ Documents become physical routes through the Lace
+ ✓ Repetition strengthens stars
+ ✓ Higher-dimensional touches form, participate, and enable future structure
+ ✓ Input is treated exactly as it arrives (punch-card style)
+ ✓ No meaning stored, only structure, sequence, and participation
+ ✓ Everything builds on the same simple rule:
+     Input word arrives. Route new wire through that word's star. Continue.
+```
+
+Printed beneath the list: *Lace is not a database. It is a growing 3D history of language in motion.* The third line of this file's Footer block — *The result is a single, continuously growing 3D object.* — is printed on **A11**, not under A13; the Footer block is left as written and this sentence dates it.
+
+### Panel labels, as printed
+
+- A9 stars: **Courier · Restaurant · Customer · Support** (the feed line prints three words; the drawing labels four stars).
+- A11 stars: **PIE · restaurant · support · customer · slice · liability**.
+- A12 sources: *From dictionary definition of pie · From "This says pie." · From "slice of pie" · From "whole pie" · From liability discussion · From future conversations* — the six the Pass-3 table already carries, confirmed.
+
+### Artwork glyph defects (recorded, not copied)
+
+The rendering prints **`occurrecos`** in A2's body (*"The first occurrecos of a word creates the beginning of a star."*) and **`obiect`** in A11's last line. Both are glyph defects of the artwork, not words; the readings above carry *occurrence* and *object*, as this file's Pass-3 rule already says (*PNG wins; garbled OCR not copied*). A6's feed line prints a stray period after the closing quote.
+
+### Pass 2 deltas (reference audit)
+
+| Ticket | Action |
+|---|---|
+| T1 | Numerals recorded printed; thirteen titles and feed lines as printed |
+| T2 | Header quoted as printed; four `centimetre` lines corrected to `centimeter` |
+| T3 | A13 ten checks and footer as printed; A11 sentence dated out of the Footer block |
+| T4 | Labels on A9, A11, A12 confirmed; glyph defects recorded; G2 untouched |

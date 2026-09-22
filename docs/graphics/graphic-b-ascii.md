@@ -38,9 +38,9 @@ So the current companion split is:
 
 The historical B8/B12 and iteration tables below are not rewritten. Their older G2 labels record the narrower source-reading state at those passes.
 
-Printed panel numbers on the PNG were not recovered this tick. Working titles B1–B12 are the Hands-map inventory. If a later pass reads a different title on the artwork, the PNG wins.
+**Printed on the PNG — recovered by [reference audit pass 2](../plans/reference-audit-pass-2-plan.md), 2026-09-22.** Panel numerals `1.`–`12.` are printed before each title; the letter `B` is this repository's. Six working titles below differ from the print; the printed titles are recorded in the [pass-2 section](#reference-audit-pass-2--printed-on-the-png) at the end of this file, and under this file's own rule the PNG wins. Working titles are kept as aliases in the dated sections.
 
-Three-column grouping (wire / star / touch) as printed headers: `[GAP]`. Not invented here.
+Three-column grouping (wire / star / touch) as printed headers: **closed negative, 2026-09-22** — no such headers are printed; B is a 4×3 grid of twelve numbered panels. Not invented here.
 
 ---
 
@@ -349,3 +349,122 @@ Feeds are names of incoming text. They are not array types.
 | T4 | Seam table; G2 pointed not filled |
 
 Queued (later i2, not this pass): Graphic C. See [`ascii-iterations.md`](ascii-iterations.md).
+
+## Reference audit pass 2 — printed on the PNG
+
+**Dated 2026-09-22.** Executed under [reference audit pass 2](../plans/reference-audit-pass-2-plan.md). Every line here was read from [`mechanisms-in-3d.png`](mechanisms-in-3d.png) at 1672×941, cropped panel by panel and upscaled 2× — `VISUALLY_OBSERVED`, and the stamp covers this section only. The dated sections above are not rewritten; where this section supersedes one of their `[GAP]` cells (the Pass-2 fields row for B2; the Iteration-2 B9 label table) the supersession is stated here, not there.
+
+### Numerals and titles
+
+Panel numerals `1.`–`12.` are printed before each title. The letter `B` is this repository's. No wire / star / touch column headers are printed; the grid is 4 × 3.
+
+| # | Working title in this file | Printed title | Printed subtitle |
+|---|---|---|---|
+| B1 | Continuous wire | Continuous wire | A single strand is fed continuously. |
+| B2 | Wire through star / arrival | **A word occurrence arrives** | New wire passes through the word's star. |
+| B3 | Star | **Repetition builds the star** | Later occurrences pass through the same star. |
+| B4 | Dictionary | Dictionary wiring (a definition is a route) | A word's definition is a path through other stars. |
+| B5 | Sequence is physical | Sequence is physical | A sentence becomes a continuous route in order. |
+| B6 | Document feed | Document feed | A longer text routes through many stars. |
+| B7 | Touch (thread, not attach) | **Higher-dimensional touch** | New wire threads through an existing 3D star. |
+| B8 | Touch remains | **Touch participates later** | A touch becomes material for future Lace. |
+| B9 | Star-inside-star traffic | Star inside star traffic | Zoom inside a word star. |
+| B10 | [X] Collapse | **No collapse** | Lace is not a flattened abstraction. |
+| B11 | [X] Graph as thing | **Projection vs Lace** | A 2D view is only a shadow of the full structure. |
+| B12 | Governing rule | Governing rule | The entire mechanism in one simple rule. |
+
+Bold = the print differs from the working title. The working titles stay in the dated sections as aliases; cite the printed title off-shelf.
+
+### Header and tagline, as printed
+
+```
+ Lace Mechanisms in 3D: How the Wire Actually Behaves
+ One continuous strand. Every word occurrence is more wire.  Each word's star is its persistent 3D identity.
+
+                                      Same simple rule.  Extraordinary structure.
+                                      A single growing strand weaves a 3D universe of connections.
+```
+
+### B9 — labels as printed
+
+Supersedes the `—` row in the Iteration-2 pass-1 B9 table, which is left as written.
+
+| Source label on B9 | Kind of pass | Merged with any other? |
+|---|---|---|
+| Incoming passes (from many contexts) | incoming | no |
+| Outgoing passes to other stars | outgoing | no |
+| Internal threading in higher dimensions (many crossings) | interior | no |
+
+Kind uses only the panel's own words. A12's six labels are not imported.
+
+### B10 — as printed
+
+```
+ Not a database lookup            Not one flat edge
+   [db] → Word → stored entry        (A)────────(B)
+   ✗ Loses the structure             ✗ Ignores 3D structure
+
+ Not a stored definition          Not semantic collapse
+   PIE = "a dessert ..."             [node-edge mesh]
+   ✗ No stored meanings              ✗ Destroys the real behavior
+
+ ✓ It is a continuously growing 3D structure
+   Real wire.  Real structure.  Real behavior.
+```
+
+Four refusals and one affirmation. The dated sections above carried only the stored-definition refusal; the other three are B10's too. The root README's *What is not Lace* list already carries all four.
+
+### B11 — as printed
+
+| 2D projection (simplified view) | True 3D Lace (actual structure) |
+|---|---|
+| Looks like a simple graph. | Full 3D (and higher) structure. |
+| Hides depth, crossings, loops. | Shows real threading and depth. |
+| Cannot show threading. | Every pass remaining in place. |
+| Misses future participation. | Touches participate in the future. |
+| Useful for visualization only. | This is the actual Lace. |
+
+### B12 — as printed
+
+```
+ ┌──────────────────────────────────────────────┐
+ │  Input word arrives.                         │
+ │  Route new wire through that word's star.    │
+ │  Continue.                                   │
+ └──────────────────────────────────────────────┘
+  ① Sequence is preserved (one continuous strand).
+  ② Every occurrence is kept (no deletions, no edits).
+  ③ Each word has a persistent 3D star.
+  ④ New wire threads through existing structure.
+  ⑤ Touches remain and can participate later.
+  ⑥ A definition is a route, not a stored meaning.
+  ⑦ The Lace grows without bound.
+  ⑧ No collapse, no second store, no separate mechanisms.
+
+        Same strand. More words. A richer universe.
+```
+
+Eight numbered points are printed under the rule; the dated sections carried only the three-verb box. ⑦ is a source sentence about growth, not a capacity ruling — R4 stays where it is. ⑧ is the source's own one-store fence.
+
+### Panel labels, as printed
+
+- B1: *Past Lace (extends indefinitely)* · *New wire (keeps going)*.
+- B2: *Wire in* · *Wire out* · star label *The*.
+- B4: *PIE · dessert · slice · whole · food*.
+- B5: *The · Golden · Skillet · had · pancakes*.
+- B6: *PIE · SLICE · WHOLE · CUSTOMER / RESTAURANT · COURIER · SUPPORT · LIABILITY* (two rows of four).
+- B7: *New wire (arrival now)* · *Existing structure (from many past passes)*.
+- B8: *Earlier passage (from past text)* · *New passage (arrival now)* · *Later wire threads through this touch*.
+
+### Artwork glyph defects (recorded, not copied)
+
+B1 prints **`indefinitiely`**, B10 prints **`Itt is`**, B11 prints **`remaing`**. Glyph defects of the artwork; the readings above carry the words.
+
+### Pass 2 deltas (reference audit)
+
+| Ticket | Action |
+|---|---|
+| T1 | Numerals recorded printed; twelve printed titles and subtitles; grouping gap closed negative |
+| T2 | B9 three labels; header and tagline |
+| T3 | B10 four refusals + one affirmation; B11 two columns; B12 eight points + footer |
+| T4 | Panel labels; glyph defects; dated sections untouched; G2 untouched |
