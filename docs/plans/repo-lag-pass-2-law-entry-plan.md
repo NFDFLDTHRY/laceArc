@@ -1,6 +1,6 @@
 # Repo lag cleanup — Pass 2 law/root entrance plan
 
-**Status:** PLAN — human approved in conversation by “Proceed with pass 2.”  
+**Status:** EXECUTED — ROOT / LAW ENTRANCES RECONCILED; FOREIGN-STATION DEBT HANDED OFF.  
 **Station sequence:** maps persists this plan, then releases; law executes the entrance audit/repairs.  
 **Base before plan persistence:** `9fcdda86f9c5b08544bc91c1eff872e7c02e2cf4` (repo-lag prompt Pass 1 closeout).  
 **No new theory. No Core change. No target selection. No implementation.**
@@ -164,3 +164,10 @@ G20 no new theory / Core / target / acceptance movement.
 ## Stop
 
 Do not automatically begin kit, hologram, maps/namespace, audit-log or coord cleanup after this pass.
+
+
+## Execution closeout
+
+**Executed 2026-09-22.** The plan was persisted before law execution. Root `README.md` and `docs/README.md` were the only law-owned semantic files changed. `AGENTS.md`, `CLAUDE.md`, `CONTRIBUTING.md`, live law, frozen stake, systems manifest, references and pointer draft were audited and intentionally left unchanged. The law station was released before maps wrote the receipt.
+
+Verdict: **ROOT / LAW ENTRANCES CURRENT THROUGH PASS 39.** Cross-station lag remains explicitly handed off; no foreign-station repair was folded into this pass. See [Pass-2 findings](repo-lag-pass-2-law-entry-findings.md).
