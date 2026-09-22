@@ -1,864 +1,709 @@
 # MATHEMATICAL EXECUTION MODEL — Behavioral Read Devices Pass 1 PLAN
 
-**Status:** PLAN — NOT EXECUTED.
-**Object:** prepare a source-first update of \`docs/math-execution-model.md\`.
-**Human direction:** examine HCC-A, The Coffee Cup, and Where the Water Is Loud as **mathematical devices that see into Lace**: their behavioral-goal mechanisms become mathematical observers/transducers over Lace-derived structure rather than literal holder machinery or automatic Core components.
-**Planning base:** \`f8441ec53d1eb88c8d874028ff5bc6d893b23d15\`.
-**Planning station:** maps · ChatGPT.
-**Implementation:** none.
-**Core change:** none.
-**RM-A:** unchanged / MISSING-A.
-**Pointer acceptance:** absent.
-**Compilation target:** TARGET UNDECIDED.
-**This plan does not execute the model update.**
+**Status:** PLAN — NOT EXECUTED.  
+**Campaign:** Mathematical Execution Model — Behavioral Read Devices.  
+**Pass:** 1.  
+**Pass name:** **DEFINE THE EYE — minimal mathematical device that can look into Lace without becoming Lace.**  
+**Planning base:** \`96393bb2e51e6fc33d3c5935c450cc582ca1221a\`.  
+**Planning station:** maps · ChatGPT.  
+**Primary target:** \`docs/math-execution-model.md\`.  
+**Implementation:** none. No \`src/\`, Cargo, target choice, carrier choice, encoding choice, RM-A rule, pointer acceptance, or Core promotion.  
+**Source-specific full devices:** explicitly deferred. HCC-A, Coffee Cup, and Water are pressure tests in Pass 1, not yet three completed mathematical machines.
 
 ---
 
-## 0. Why this pass exists
+## 0. Pass-1 question
 
-The current repository has three important layers that are not yet expressed as one mathematical object:
+> **What is the smallest mathematical object that can read lawful structure from Lace, carry source-required local state, produce pointable behavioral output, and still provably have no authority to alter Lace?**
 
-1. **Lace execution mathematics** already formalizes the authoritative append-only strand, WORD/POINTER, RootTouch, binary Join, finite grounding, derived position×scale sampling, and disposable star/search reads.
-2. **Behavioral-goal sources** define explicit desired-behavior mechanisms:
-   - HCC-A: dual input processing, compiler/ledger/meaning/emotion/identity/behavior feedback;
-   - Coffee Cup: conditions → release → trajectory → impact → aftermath, including a shrinking intervention window and recurrence;
-   - Water / Dual Proofing: Proof Ledger + River topology + Delta Bridge FSM/functions.
-3. Existing Shadow mathematics already contains useful candidate formalizations of those sources, but its Hands/Core section is historically stale relative to the current execution model. It must not be copied back into Core as authority.
+Pass 1 succeeds only if the same generic object survives pressure from all three behavioral source families without flattening them into one behavior.
 
-The missing mathematical object is therefore not another holder machine.
-
-It is a family of **read devices** whose source-defined behavior is stated mathematically while their relationship to Lace is explicit and fenced.
-
-The intended direction is:
-
-~~~
-                     authoritative Lace prefix L_n
-                                |
-                                | read only
-                                v
-                   +---------------------------+
-                   | mathematical read device  |
-                   | source-defined behavior   |
-                   +-------------+-------------+
-                                 |
-                    local state / transitions
-                                 |
-                                 v
-                       observable device output
-                                 |
-                    action / request / diagnosis
-                                 |
-                                 X
-                       no direct Lace write
-~~~
-
-A device may eventually influence Reality or future arrivals through behavior, but:
-
-~~~
-device output != POINTER emission
-device state  != Lace state
-device read   != second store
-device goal   != Core law
-~~~
+The pass is about the **eye**, not yet the three things looking through it.
 
 ---
 
-## 1. Authority and source order
+## 1. Why Pass 1 is narrower than the campaign
 
-Execution must read in this order.
+The campaign direction is:
+
+~~~text
+Lace
+  |
+  +--> mathematical device H  (HCC-A family)
+  +--> mathematical device C  (Coffee Cup family)
+  +--> mathematical device W  (Water family)
+~~~
+
+Pass 1 does **not** build H, C, or W completely.
+
+Instead it asks whether a single generic interface can support all three while preserving the critical differences already present in the sources:
+
+- HCC-A requires the same incoming structure to feed an evidence-preserving RIC path and a prior-conditioned PFC path in parallel; Behavior is the directly observable output; Story/Meaning/Emotion/Identity are local mutable state.
+- Coffee Cup requires five distinct causal positions and a shrinking intervention window; Conditions are not cause, Release is not total cause, Impact is resolved outcome, and Aftermath changes later conditions.
+- Water requires pointable OBS, separate inventories, DELTA/UNK/INVALID distinction, River location, a shared S0-S4 interface, and F1-F5 routing functions; pointability does not imply Lace POINTER identity.
+
+Pass 1 uses these as **requirements on the abstraction**, not as permission to merge them.
+
+---
+
+## 2. Authority order
 
 ### Lace court
 
-1. canonical Graphics A–D;
+1. canonical Graphics A-D;
 2. \`docs/systems-manifest.md\`;
 3. current \`docs/math-execution-model.md\`;
-4. current sampling/search reconciliation and Pass-38 domain/carrier/working-set envelope.
+4. current Pass-38 domain/carrier/working-set envelope.
 
-These define what Lace is and what mathematical reads already exist.
+These determine what Lace is and what reads are already lawful.
 
 ### Behavioral source court
 
-Originals, not their historical gear interpretation:
+Read the originals directly:
 
-- \`Human Cognitive Compiler Architecture.txt\` — SHA-256 \`209c8f259225a4899b3736837919447381e94352a67d7f915eb95c36db90f3f9\`;
-- \`The Coffee Cup (1).txt\` — SHA-256 \`7bc4fd8d5df1ff58c75609e50bda6376216e5520fc2594d20b26a7a1c52c2cd4\`;
-- \`Where the Water Is Loud.txt\` — SHA-256 \`9b7eddd593765fb370ffd90020e9995fd30a96ce261cb9c5140ec3e14f97ff65\`.
+- HCC-A;
+- The Coffee Cup;
+- Where the Water Is Loud.
 
-Repo source maps may be used as locators/analysis:
+Existing Pass-4 source mechanism maps are locators and prior analysis, not substitutes for the originals.
 
-- Pass-4 HCC-A mechanism map;
-- Pass-4 Coffee Cup mechanism map;
-- Pass-4 Water mechanism map;
-- Pass-4 cross-source crosswalk.
+### Historical math
 
-### Historical/candidate mathematics
+\`docs/clock/system-mathematical-model.md\` is candidate notation only.
 
-\`docs/clock/system-mathematical-model.md\` may be mined for notation and candidate equations, **not for current Core premises**.
+Every reused statement from it must be classified:
 
-It contains historical Core claims now superseded by the current execution model, including older arity/emission language.
+- SOURCE-FAITHFUL;
+- DEVICE-LIFT;
+- HISTORICAL-INTERPRETATION;
+- STALE-CORE;
+- CROSS-SOURCE-HYPOTHESIS.
 
-Rule:
-
-~~~
-current math-execution-model Lace algebra wins
-original behavioral source wins on its behavioral mechanism
-old Shadow algebra is candidate notation only
-~~~
+Current \`docs/math-execution-model.md\` wins every Core conflict.
 
 ---
 
-## 2. Mathematical object to be created
+## 3. Pass-1 deliverables
 
-The first task is to define a generic Lace-seeing mathematical device.
+Pass 1 should create exactly three new maps-level products and, only if the abstraction survives, one bounded edit to the primary mathematical model.
 
-Candidate formal signature:
+### P1-A — source pressure ledger
+
+\`docs/plans/math-execution-behavioral-read-devices-pass-1-source-pressure.md\`
+
+For each source family record only the mechanisms needed to test the generic abstraction.
+
+Required columns:
+
+| Field | Meaning |
+|---|---|
+| source mechanism | exact source behavior under test |
+| required input | what the behavior needs to observe |
+| local state | what must live outside Lace |
+| transition | what changes inside the device |
+| output | what the device exposes |
+| witness need | what must be pointable back into Lace or explicitly external/local |
+| external context | time, reality, other-holder input, etc. not inferable from Lace |
+| abstraction pressure | which field of the generic device this mechanism proves necessary |
+| anti-collapse | what would be lost if the generic device were too small |
+
+No full H/C/W implementation is allowed in this artifact.
+
+### P1-B — generic device algebra
+
+\`docs/plans/math-execution-behavioral-read-devices-pass-1-device-algebra.md\`
+
+Define and minimize the generic device.
+
+Starting candidate:
 
 \[
-\mathcal{D}
-=
-(Q,\Theta,\Omega,\delta,\lambda,\omega,\alpha,\mathcal{F})
+\mathcal D=(Q,\Theta,\Omega,\Gamma,\delta,\lambda,\omega,\alpha,\mathcal F)
 \]
 
 where:
 
-- \(Q\) = device-local state space;
-- \(\Theta\) = fixed or slowly changing holder/device parameters;
-- \(\Omega\) = read map from a named Lace prefix/read surface into device observations;
-- \(\delta\) = local transition map;
-- \(\lambda\) = observable output map;
-- \(\omega\) = witness/pointability map back to Lace positions or explicit LOCAL/UNK status;
-- \(\alpha\) = optional action/request output;
-- \(\mathcal{F}\) = invariants + falsifiers defining faithful source behavior.
+- \(Q\): local device state;
+- \(\Theta\): parameters;
+- \(\Omega\): Lace read map;
+- \(\Gamma\): explicit external/context input not derivable from Lace;
+- \(\delta\): local state transition;
+- \(\lambda\): observable output;
+- \(\omega\): pointability/witness map;
+- \(\alpha\): optional action/request to the external world;
+- \(\mathcal F\): source-family invariants and falsifiers.
 
-The intended execution shape is:
+The tuple is provisional.
+
+Pass 1 must run a **field-deletion test**:
+
+> Remove each field in turn. Which source pressure test becomes impossible or dishonest?
+
+Any field with no surviving necessity is cut.
+
+### P1-C — Pass-1 findings
+
+\`docs/plans/math-execution-behavioral-read-devices-pass-1-findings.md\`
+
+Record:
+- final minimal tuple;
+- no-write theorem result;
+- lawful sensor basis;
+- source pressure-test verdict;
+- stale-Shadow classification result;
+- whether a bounded S9 insertion into the primary model is justified;
+- all remaining opens.
+
+### Conditional primary-model edit
+
+If and only if the generic device survives:
+
+append a bounded new section to \`docs/math-execution-model.md\`:
+
+**S9 — Mathematical devices that see into Lace**
+
+S9 contains only:
+- generic tuple;
+- lawful read basis;
+- witness semantics;
+- no-write theorem;
+- feedback-via-later-arrival fence;
+- source-family pressure-test summary.
+
+It does **not** contain full HCC/Cup/Water device equations yet.
+
+---
+
+## 4. Generic observation boundary
+
+A device may see Lace only through already-lawful mathematical reads.
+
+Candidate basis:
+
+| ID | Read surface | Current role |
+|---|---|---|
+| O1 | point read | one immutable retained row |
+| O2 | finite-set read | bounded named positions |
+| O3 | prefix scan | replay/scan over \(L[0:n)\) |
+| O4 | root/star read | root, occurrences, RootTouch participation |
+| O5 | Reach / witness path | recursive retained POINTER ancestry |
+| O6 | position x scale sample read | derived sampling surface/local cone |
+| O7 | explicit search frontier | lexical/pattern/pointer/star-hop read with witnesses |
+| O8 | projection | read-only \(\pi(L)\) when presentation itself matters |
+
+Pass 1 must determine whether these are genuinely distinct mathematical primitives or whether some are derived compositions of others.
+
+Do not create a new Core query API merely because the algebra names a read.
+
+---
+
+## 5. Candidate generic execution law
+
+For device \(\mathcal D\) at step \(t\):
 
 \[
-o_t = \Omega_{\mathcal D}(L_{n_t}, c_t)
+o_t = \Omega_{\mathcal D}(L_{n_t},c_t)
+\]
+
+\[
+g_t = \Gamma_{\mathcal D}(x_t)
 \]
 
 \[
 q_{t+1}
 =
 \delta_{\mathcal D}
-(q_t,o_t,u_t;\Theta)
+(q_t,o_t,g_t;\Theta)
 \]
 
 \[
 y_t
 =
-\lambda_{\mathcal D}
-(q_{t+1},o_t)
+\lambda_{\mathcal D}(q_{t+1},o_t,g_t)
 \]
 
-with witness:
-
 \[
+w_t
+=
 \omega_{\mathcal D}(y_t)
-\subseteq
-\{0,\ldots,n_t-1\}
+\]
+
+where the witness result must distinguish at least:
+
+\[
+w_t \in
+\mathsf{LaceWitness}
 \cup
-\{\mathrm{LOCAL},\mathrm{UNK}\}.
+\mathsf{ExternalWitness}
+\cup
+\{\mathsf{LOCAL},\mathsf{UNK}\}.
 \]
 
-Here \(c_t\) may name a bounded read context such as an anchor, sample scale, search frontier, or externally supplied time/context.
+This avoids the false assumption that every valid behavioral statement must be entirely derivable from Lace.
 
-The exact signature is provisional until execution proves the fields are all necessary.
+Coffee Cup time and HCC Reality are obvious pressure tests for \(\Gamma\).
 
 ---
 
-## 3. What “see into Lace” must mean mathematically
+## 6. Read-only separation theorem
 
-A device may use only already-lawful mathematical readings of Lace.
+Pass 1's central theorem attempt:
 
-Candidate sensor basis:
+### Theorem candidate RD-1
 
-### O1 — point read
+Let \(L_n\) be an authoritative immutable Lace prefix.
 
-One retained position and its immutable row.
-
-### O2 — finite-set read
-
-A finite named set of earlier positions.
-
-### O3 — prefix scan
-
-Sequential observation of \(L[0:n)\).
-
-### O4 — root/star reading
-
-Current root, occurrences, RootTouch participation and derived star formation.
-
-### O5 — reach / witness path
-
-Backward recursive participation through retained POINTER topology.
-
-### O6 — position×scale sample read
-
-Current derived \(\mathcal S[n,t]\) surface or a bounded local cone.
-
-### O7 — explicit search frontier
-
-Current layered lexical / pattern / POINTER / neighboring-star read with witness paths.
-
-### O8 — projection
-
-Read-only \(\pi(L)\) when a source behavior genuinely needs a view rather than the retained representation.
-
-These are mathematical observation surfaces.
-
-They do **not** create a new Core read API by documentation alone.
-
----
-
-## 4. Device laws
-
-Every admitted behavioral mathematical device must satisfy the following before source-specific equations are added.
-
-### D-L1 — read-only Lace boundary
+If a device step uses only:
 
 \[
-\Omega_{\mathcal D}: L_n \rightarrow O_{\mathcal D}
+\Omega(L_n),\Gamma(x),Q,\Theta
 \]
 
-has no write-back morphism into \(L\).
-
-### D-L2 — local state is not authority
-
-\(Q\) may be mutable, lossy, probabilistic, parameterized or reconstructible as the source requires.
-
-It is not Graphic-D history.
-
-### D-L3 — pointability
-
-Whenever a device claims that an output is grounded in Lace structure, \(\omega(y)\) must expose finite pointable witnesses or explicitly say why the output is local/derived/unknown.
-
-No invisible “because the model saw it.”
-
-### D-L4 — prefix honesty
-
-A device result from prefix \(L_n\) may not cite a future Lace position \(i\ge n\).
-
-### D-L5 — behavioral output is not emission
-
-\[
-\alpha_{\mathcal D}(y)
-\nRightarrow
-\mathsf{Join}
-\]
-
-unless a separately accepted Lace retention/materialization contract supplies the lawful write.
-
-This prevents behavioral importance, meaning, pressure, impact, OBS, or identity from silently solving RM-A.
-
-### D-L6 — feedback goes around Lace, not backward through it
-
-A source may require:
-
-~~~
-device output -> external behavior/world -> later new input
-~~~
-
-It may not require:
-
-~~~
-device output -> rewrite prior Lace
-~~~
-
-### D-L7 — source mechanisms survive abstraction
-
-Turning a source into a mathematical device must preserve the source's actual state distinctions, transitions, invariants and causal structure.
-
-The pass may not reduce the originals back down to the thin Pass-3 assays.
-
----
-
-## 5. HCC-A device lift
-
-Execution should attempt a device family \(\mathcal D_H\).
-
-### Source obligations to preserve
-
-At minimum:
-
-- Reality / Interface boundary;
-- same structural input enters RIC and PFC in parallel;
-- RIC preserves external structure;
-- PFC applies priors/templates;
-- both affect compilation;
-- mutable Story/Meaning/Emotion/Identity state is holder-local;
-- Behavior is the direct observable output;
-- Behavior changes later Reality/input;
-- parameter variation changes outcomes without deleting the architecture;
-- only structure crosses holders; meaning/emotion remain local.
-
-### Candidate Lace lift
-
-Do **not** claim HCC says “RIC reads Lace.”
-
-Instead test this implementation hypothesis:
-
-\[
-r_t = \Omega_H(L_{n_t},c_t)
-\]
-
-\[
-p_t = P_H(r_t,q_t;\Theta_H)
-\]
-
-where the same Lace-grounded structural observation \(r_t\) is available both as preserved evidence and as input to prior-conditioned interpretation.
-
-Then a local transition:
-
-\[
-q_{t+1}
-=
-\delta_H(q_t,r_t,p_t)
-\]
-
-and behavior:
-
-\[
-b_t = \lambda_H(q_{t+1}).
-\]
-
-This candidate is faithful only if the evidence-preserving path remains separately pointable after interpretation.
-
-### Critical fence
-
-HCC Story Ledger, Meaning, Emotion, Identity and priors remain \(Q_H\), not rows/types/tables in Lace.
-
----
-
-## 6. Coffee Cup device lift
-
-Execution should attempt a causal-position device \(\mathcal D_C\).
-
-### Source obligations to preserve
-
-- Conditions make the outcome possible but do not cause it;
-- Release initiates motion;
-- Trajectory is a live intervention interval;
-- intervention options shrink with time;
-- Impact is resolved ground truth;
-- Aftermath changes later conditions;
-- all five causal positions may need to be held simultaneously;
-- acting under uncertainty is distinct from pretending certainty;
-- the model is structural, not a blame machine.
-
-### Candidate state
-
-\[
-q_C
-=
-(\chi, W_{\mathrm{traj}}, A_{\mathrm{after}})
-\]
-
-with stage:
-
-\[
-\chi \in
-\{\mathrm{Cond},\mathrm{Release},\mathrm{Trajectory},\mathrm{Impact},\mathrm{Aftermath}\}.
-\]
-
-The trajectory window may remain:
-
-\[
-W_{\mathrm{traj}}(t)
-\supseteq
-W_{\mathrm{traj}}(t')
-\quad (t\le t').
-\]
-
-### Lace-specific question
-
-What can the device infer from index/order/topology alone, and what requires an external time/context signal?
-
-Do **not** silently equate Lace index distance with elapsed time.
-
-If the source mechanism needs physical or social time not represented in Lace, the mathematical device must name that input explicitly.
-
-### Impact witness
-
-If \(\mathcal D_C\) claims a Lace-grounded impact, \(\omega_C\) must point to the retained evidence used.
-
-Later aftermath state may change \(Q_C\) or later device inputs without rewriting that witness.
-
----
-
-## 7. Water / Dual Proofing device lift
-
-Execution should attempt \(\mathcal D_W\).
-
-### Source obligations to preserve
-
-- OBS / DELTA / UNK / INVALID have distinct functions;
-- pointability is required for OBS;
-- separate party inventories may exist;
-- DELTA resolution requires pairing/shared footing;
-- unresolved required UNK blocks coherent comprehension;
-- pressure is not transfer;
-- crossing requires Delta conditions;
-- Delta Bridge translates River state to Proof-Ledger requirements and back;
-- S0–S4 has source-defined conditions/allowed outputs;
-- F1–F5 are actual desired-behavior interface functions;
-- OBS pointer format, INVALID pattern list and UNK operational budget remain source-open.
-
-### Candidate Lace witness lift
-
-A candidate OBS may cite Lace without becoming a Lace POINTER:
-
-\[
-\mathrm{OBS}
-=
-(\text{holder claim},\, \omega_W)
-\]
-
-where:
-
-\[
-\omega_W
-\subseteq
-\mathrm{Index}(L_n)
-\]
-
-or explicit external pointability metadata.
-
-Hard fence:
-
-\[
-\mathrm{OBS\ pointerability}
-\neq
-\mathrm{Lace\ POINTER}.
-\]
-
-### Device state
-
-Potential state components:
-
-\[
-q_W =
-(Q_{\mathrm{FSM}},
-O_A,
-O_B,
-\Delta,
-U)
-\]
-
-with:
-
-\[
-Q_{\mathrm{FSM}}
-=
-\{S0,S1,S2,S3,S4\}.
-\]
-
-These are holder/device state, not a second Lace.
-
-### Functions
-
-\[
-\mathsf{Locate},\;
-\mathsf{Anchor},\;
-\mathsf{Pair},\;
-\mathsf{Unknowns},\;
-\mathsf{Reject}
-\]
-
-should be specified as mathematical device operations with pointability/refusal obligations.
-
-None receives automatic Core append authority.
-
----
-
-## 8. Cross-device composition
-
-The three device families may observe the same Lace prefix:
-
-\[
-L_n
-\longrightarrow
-\begin{cases}
-\mathcal D_H\\
-\mathcal D_C\\
-\mathcal D_W
-\end{cases}
-\]
-
-but their local state spaces remain distinct unless a cross-source relation is independently justified.
-
-The Pass-4 crosswalk remains the constraint:
-
-- compatibility may be used as a Lab hypothesis;
-- source-defined within-document relations may be formalized directly;
-- cross-document couplings remain hypotheses;
-- false friends stay forbidden.
-
-Candidate product state:
-
-\[
-Q_{\times}
-=
-Q_H \times Q_C \times Q_W
-\]
-
-is allowed only as a mathematical co-presence construction.
-
-It must not be described as a source-defined combined runtime.
-
----
-
-## 9. Behavioral goals as device tests
-
-Each source mechanism should become one or more mathematical obligations over device traces.
-
-Form:
-
-\[
-\forall \tau \in \mathsf{AdmittedTraces},
-\quad
-P_i(\tau)
-\]
-
-or a falsifier:
-
-\[
-\exists \tau :
-P_i(\tau)\text{ fails}
-\Rightarrow
-\mathcal D\text{ does not realize mechanism }i.
-\]
-
-Examples to develop during execution:
-
-- HCC parallel-evidence preservation;
-- HCC local-meaning non-transfer;
-- Cup stage non-collapse;
-- Cup monotone shrinking intervention set;
-- Cup impact immutability under aftermath;
-- Water no-OBS-without-pointability;
-- Water pressure \(\neq\) transfer;
-- Water UNK blocking rule at its stated source strength;
-- Water S0–S4 allowed-output constraints.
-
-Pass-3 assays may become bounded test vectors for these device laws, but they cannot replace the source-defined mechanism.
-
----
-
-## 10. Intended update to \`docs/math-execution-model.md\`
-
-The primary model should be extended, not replaced.
-
-Proposed insertion after current S8:
-
-### S9 — Mathematical devices that see into Lace
-
-- generic device tuple;
-- read boundary;
-- witness map;
-- no-write theorem/fence;
-- feedback-via-future-arrival distinction.
-
-### S10 — HCC-A read device
-
-- source obligation equations;
-- Lace-read candidate lift;
-- holder-local state;
-- behavior/feedback boundary.
-
-### S11 — Coffee Cup causal device
-
-- staged causal state;
-- shrinking intervention set;
-- time/context input;
-- impact witness and aftermath recurrence.
-
-### S12 — Water proof/crossing device
-
-- pointable witness relation;
-- separate inventories;
-- FSM;
-- F1–F5 operations;
-- source-open parameters retained.
-
-### S13 — Device composition and behavioral falsifiers
-
-- product/co-presence only;
-- cross-source hypothesis stamps;
-- device-test ledger;
-- RM-A / Core / acceptance fences.
-
-Section numbering may change if execution finds a clearer structure.
-
----
-
-## 11. What \`docs/clock/system-mathematical-model.md\` contributes
-
-It may contribute candidate notation for:
-
-- HCC dynamical state;
-- Cup staged process and shrinking window;
-- Water FSM/functions;
-- local holder-state fencing.
-
-It must **not** contribute stale Core premises.
-
-Before reusing any equation from it, execution must classify it:
-
-| Class | Meaning |
-|---|---|
-| SOURCE-FAITHFUL | directly recoverable from one original source |
-| DEVICE-LIFT | new project mapping from source mechanism to Lace-reading device |
-| HISTORICAL-INTERPRETATION | useful older Shadow formalization, not authority |
-| STALE-CORE | contradicts current math-execution-model and must not migrate |
-| CROSS-SOURCE-HYPOTHESIS | composition candidate only |
-
-This prevents a useful old equation from dragging an obsolete architecture with it.
-
----
-
-## 12. Read-device / Core boundary theorem to attempt
-
-Execution should try to prove a generic separation statement.
-
-Candidate:
-
-> If a device's only Lace access is through read maps over an immutable prefix, its internal transition/output state cannot change authoritative Lace truth without a separately admitted append morphism.
-
-Sketch target:
-
-\[
-\Omega(L_n) = o
-\]
-
-\[
-(q,o)\mapsto(q',y)
-\]
-
-while:
+and its transition/output maps have codomain outside authoritative Lace state, then:
 
 \[
 L_n' = L_n
 \]
 
-for the device step alone.
+for that device step.
 
-Any later Lace change must enter through the already-governed append path:
+A later Lace change requires a **separate admitted Lace transition**:
 
 \[
 L_n
-\xrightarrow{\text{separate admitted arrival/retention act}}
+\xrightarrow{\text{Arrive / ruled RootTouch / separately lawful retention}}
 L_{n+k}.
 \]
 
-If this theorem cannot be stated without smuggling a Core query API or RM-A, stop and record the exact obstruction.
+Therefore:
+
+\[
+\text{device computation}
+\not\Rightarrow
+\text{Lace mutation}.
+\]
+
+Pass 1 must either prove this cleanly in the current model or identify the exact obstruction.
+
+### Corollary target
+
+Behavioral output, diagnostic output, meaning, impact, pointability, pressure, crossability, identity, or recurrence cannot by themselves supply RM-A.
 
 ---
 
-## 13. Falsifiers
+## 7. Witness algebra
 
-### F1 — device writes Lace
+Pass 1 must prevent the word "grounded" from becoming fog.
 
-Any \(\delta\), \(\lambda\), Anchor, Pair, Meaning, Impact, Aftermath or Behavior operation directly appends/rewrites Lace without existing authority.
+Candidate witness classes:
 
-### F2 — behavioral component becomes row type
+### W-LACE
 
-RIC/PFC/L/M/E/ISL, causal stages, OBS/DELTA/UNK/INVALID, FSM state, pressure or window becomes Graphic-D row schema.
+Finite pointable Lace evidence:
 
-### F3 — Water pointer false friend
+\[
+W_L \subseteq \{0,\ldots,n-1\}
+\]
 
-OBS pointability is equated with Lace POINTER.
+optionally with explicit witness paths.
 
-### F4 — HCC structure/evidence path disappears
+### W-EXTERNAL
 
-Interpretation is produced but the preserved structural witness can no longer be recovered.
+Pointable non-Lace evidence such as external clock/context, environment state, or another holder's supplied observation.
 
-### F5 — HCC mutable ledger mutates Lace
+### W-LOCAL
 
-Story re-index/delete/suppress is implemented as rewrite of retained Lace.
+A result of local device state that is not claimed as shared structural fact.
 
-### F6 — Cup time invented from indices
+### W-UNK
 
-Elapsed time or shrinking opportunity is inferred from Lace index distance without an admitted timing/context input.
+Required evidence is missing.
 
-### F7 — impact is overwritten by aftermath
+A device output may combine classes, but each claim must state which part came from where.
 
-Later state rewrites the grounded event used as impact witness.
-
-### F8 — device output solves RM-A
-
-Importance, meaning, recurrence, pressure, crossability or identity is silently made the universal retention trigger.
-
-### F9 — derived sensor becomes authoritative store
-
-Star table, sample lattice, frontier cache, witness graph or device ledger becomes another Lace.
-
-### F10 — cross-source fusion
-
-HCC/Cup/Water states are fused because the Pass-4 crosswalk says they are compatible.
-
-### F11 — thin assay replaces source mechanism
-
-Pass-3 test behavior is treated as the complete original mechanism.
-
-### F12 — stale Shadow Core imported
-
-Old arity/emission/Core statements from \`system-mathematical-model.md\` override current Lace mathematics.
-
-### F13 — pointability fabricated
-
-A device claims Lace-grounded output but cannot provide \(\omega(y)\) or explicitly classify the claim as local/unknown.
-
-### F14 — behavior output = arrival
-
-Behavior is automatically treated as a WORD/POINTER append rather than an external effect that may generate later input through a separately governed path.
-
-### F15 — source-open parameters silently closed
-
-Water pointer format / INVALID patterns / UNK budget or another explicit source open is chosen by the mathematical model.
+This is especially important for:
+- HCC local meaning versus structural evidence;
+- Cup timing/context versus retained sequence;
+- Water OBS pointability versus Lace POINTER identity.
 
 ---
 
-## 14. Execution phases
+## 8. Source pressure tests
 
-### Phase A — source-first mechanism ledger
+### 8.1 HCC-A pressure
 
-Re-read all three originals.
+Pass 1 does not formalize the full HCC chain.
 
-For each mechanism record:
+It asks whether the generic device can represent this minimum source obligation:
 
-- source line/range;
-- mathematical state;
-- input;
-- transformation;
-- output;
-- transition/order;
-- invariant;
-- source-open parameter;
-- whether Lace can supply a read witness;
-- what remains external/local.
+~~~text
+same structure
+   |
+   +--> evidence-preserving path
+   |
+   +--> prior-conditioned path
+            |
+            v
+       local compilation/state
+            |
+            v
+       observable Behavior
+~~~
 
-No cross-source coupling yet.
+Required abstraction pressure:
 
-### Phase B — generic read-device algebra
+- one observation may feed two parallel local transforms;
+- source structure must remain separately witnessable after interpretation;
+- local mutable state must not alter Lace;
+- behavior may affect future Reality/input without direct Lace mutation.
 
-Define the minimum \(\mathcal D\) tuple and prove/refute the read-only separation theorem.
+If the generic tuple cannot express that, it is too small.
 
-### Phase C — HCC device
+### 8.2 Coffee Cup pressure
 
-Formalize source mechanisms against the generic interface.
+Minimum obligation:
 
-### Phase D — Coffee Cup device
+~~~text
+Conditions -> Release -> Trajectory -> Impact -> Aftermath -> later Conditions
+~~~
 
-Formalize stage causality/window/aftermath against the generic interface.
+with a shrinking intervention set during Trajectory.
 
-### Phase E — Water device
+Required abstraction pressure:
 
-Formalize pointability, inventories, FSM and F1–F5.
+- device must carry stage/local state;
+- device may need explicit external time/context;
+- Impact witness must stay pointable after Aftermath changes local/future state;
+- index order alone may not be silently treated as elapsed time.
 
-### Phase F — composition
+If \(\Gamma\) is removed and Cup time must be fabricated from Lace, the tuple is too small.
 
-Add only source-supported or explicitly stamped hypothesis couplings.
+### 8.3 Water pressure
 
-### Phase G — behavioral-goal theorem/falsifier ledger
+Minimum obligation:
 
-Convert source obligations into mathematical trace conditions and bounded test hooks.
+- pointability gate;
+- separate inventories;
+- OBS / DELTA / UNK / INVALID distinction;
+- River location;
+- S0-S4 progression;
+- routing functions F1-F5.
 
-### Phase H — update \`docs/math-execution-model.md\`
+Required abstraction pressure:
 
-Integrate the surviving formalism after all source/device falsifiers run.
+- witness map must support pointability without equating OBS with Lace POINTER;
+- missing evidence must be representable explicitly;
+- two-holder/local inventories may coexist while referencing the same Lace;
+- device outputs may request a better anchor without writing Lace.
 
-### Phase I — reconciliation check
-
-Audit:
-
-- \`systems-manifest.md\`;
-- Pass-4 source maps/crosswalk;
-- Pass-38 envelope;
-- current context prompt;
-- old system mathematical model;
-- global ASCII.
-
-Only update other stations/files if the new primary model makes current active wording false.
-
----
-
-## 15. Must not happen during execution
-
-- no \`src/\`;
-- no Cargo;
-- no target selection;
-- no carrier/backend selection;
-- no encoding selection;
-- no RM-A rule;
-- no pointer acceptance;
-- no new Graphic-D row type;
-- no direct holder-state-to-Lace morphism;
-- no rewriting the source documents;
-- no treating gear/shaft/train interpretation as required runtime machinery;
-- no automatic global-ASCII edit before the primary model settles;
-- no automatic next pass.
+If the abstraction requires OBS to become a Core row or Lace POINTER, it fails.
 
 ---
 
-## 16. Completion board
+## 9. Stale Shadow quarantine
+
+Pass 1 must produce a small classification table for every old equation/definition it wants to reuse from \`docs/clock/system-mathematical-model.md\`.
+
+At minimum inspect:
+
+- HCC state tuple;
+- HCC parallel RIC/PFC;
+- HCC S0-S7 cycle;
+- Cup stage chain;
+- Cup shrinking window;
+- Water FSM;
+- Water F1-F5 operations;
+- co-presence/product state;
+- old Hands/Core sections concerning POINTER/emission.
+
+Expected treatment:
+
+~~~text
+behavioral notation may survive
+stale Core premises may not
+cross-source folds remain hypotheses
+~~~
+
+Any reused equation without classification fails Pass 1.
+
+---
+
+## 10. Field-deletion audit
+
+For candidate tuple:
+
+\[
+(Q,\Theta,\Omega,\Gamma,\delta,\lambda,\omega,\alpha,\mathcal F)
+\]
+
+run:
+
+| Delete | Question |
+|---|---|
+| Q | can HCC/Cup/Water preserve required local state? |
+| Theta | can source parameter variation be represented without hard-coding it into transition law? |
+| Omega | can the device still be said to see Lace at all? |
+| Gamma | can Cup time/HCC Reality/external context stay honest? |
+| delta | can staged/stateful source mechanisms exist? |
+| lambda | can observable output be separated from state? |
+| omega | can claims remain pointable? |
+| alpha | can external behavior/request be distinguished from mere description? |
+| F | can source fidelity be falsified rather than narrated? |
+
+A field survives only if at least one source mechanism or Lace fence needs it.
+
+---
+
+## 11. Pass-1 falsifiers
+
+### F1 — second Lace
+
+Device state, witness store, graph, ledger, sample table, or frontier becomes authoritative history.
+
+### F2 — hidden write
+
+Any device transition directly mutates/appends Lace.
+
+### F3 — RM-A smuggling
+
+A behavioral output becomes a universal retention trigger.
+
+### F4 — source flattening
+
+The generic tuple is only capable of the thin Pass-3 assays and cannot preserve source-defined mechanisms.
+
+### F5 — source fusion
+
+One device architecture is inferred because all three sources fit the tuple.
+
+A common mathematical interface is not a common state machine.
+
+### F6 — HCC evidence loss
+
+Prior-conditioned interpretation destroys separate pointability of the evidence path.
+
+### F7 — Cup time fabrication
+
+Lace index difference is treated as physical/social time without source or product authority.
+
+### F8 — Cup impact rewrite
+
+Aftermath alters the retained witness used as Impact.
+
+### F9 — Water pointer false friend
+
+OBS addressability is equated with Lace POINTER.
+
+### F10 — Water local inventory becomes Core
+
+Party-specific proof state is added to Graphic D.
+
+### F11 — source-open closure
+
+Water pointer format, INVALID matcher, UNK budget, or another explicit source open is silently chosen.
+
+### F12 — stale Core import
+
+Historical Shadow arity/emission language overrides the current mathematical execution model.
+
+### F13 — witness theater
+
+A device calls a conclusion Lace-grounded while \(\omega\) cannot point to actual retained evidence.
+
+### F14 — external context hidden
+
+A result depends on time/Reality/other-holder input but the model pretends it came from Lace.
+
+### F15 — action equals append
+
+External action/request is silently identified with Arrival or Join.
+
+---
+
+## 12. Execution sequence
+
+~~~text
+PRE-FLIGHT
+current main + all claims
+        |
+        v
+SOURCE PRESSURE LEDGER
+HCC / Cup / Water originals
+only mechanisms needed to test abstraction
+        |
+        v
+CURRENT LACE COURT
+math-execution-model + manifest + Pass 38
+        |
+        v
+SENSOR BASIS
+O1-O8: primitive vs derived classification
+        |
+        v
+GENERIC DEVICE TUPLE
+field-deletion audit
+        |
+        v
+WITNESS ALGEBRA
+Lace / external / local / unknown
+        |
+        v
+RD-1 NO-WRITE THEOREM
+prove or record obstruction
+        |
+        v
+SOURCE PRESSURE TESTS
+HCC minimum / Cup minimum / Water minimum
+        |
+        v
+STALE SHADOW QUARANTINE
+classify old equations before reuse
+        |
+        v
+FALSIFIER RUN
+F1-F15
+        |
+        v
+BOUNDED MODEL UPDATE
+only S9 generic read-device section if earned
+        |
+        v
+FINDINGS / INDEX / RELEASE
+~~~
+
+No full HCC/Cup/Water device construction occurs in Pass 1.
+
+---
+
+## 13. Primary-model insertion rule
+
+Pass 1 may edit \`docs/math-execution-model.md\` only if all of these hold:
+
+1. minimal tuple survives field-deletion audit;
+2. RD-1 no-write theorem survives;
+3. witness classes are pointable and do not require a second store;
+4. HCC minimum pressure test fits without evidence loss;
+5. Cup minimum pressure test fits without time fabrication;
+6. Water minimum pressure test fits without POINTER false friend;
+7. all source opens remain open;
+8. RM-A remains untouched.
+
+The S9 insertion must be explicitly generic.
+
+No S10 HCC, S11 Cup, or S12 Water full formalization in Pass 1.
+
+Those are later-pass candidates.
+
+---
+
+## 14. Pass-1 findings questions
+
+The findings must answer:
+
+1. What is the minimal surviving tuple?
+2. Which observation operators are primitive versus derived?
+3. Can read-device computation be formally separated from Lace mutation?
+4. What forms of witness are required?
+5. Which source forced each tuple field to exist?
+6. What information must come from outside Lace?
+7. Which old Shadow equations remain useful?
+8. Which old Shadow equations are stale and quarantined?
+9. Did any source force a second authoritative store? Expected answer: no, but test it.
+10. Did any source force RM-A? Expected answer: no, but test it.
+11. Is the generic device strong enough to justify S9 in the primary model?
+12. What exact work remains for Pass 2?
+
+---
+
+## 15. Completion board
 
 | Gate | Required |
 |---|---|
-| G1 | current main and all claim state pinned |
-| G2 | original three behavioral sources reread directly |
-| G3 | current math-execution-model reread as Lace court |
-| G4 | stale-vs-current split of system-mathematical-model recorded |
-| G5 | generic read-device tuple minimized |
-| G6 | lawful Lace sensor/read basis enumerated |
-| G7 | no-write separation theorem proved or exact obstruction recorded |
-| G8 | HCC device maps source mechanisms, not just assays |
-| G9 | Coffee Cup device maps five causal stages + window + aftermath |
-| G10 | Water device maps Proof Ledger + River + Delta Bridge + S0–S4 + F1–F5 |
-| G11 | every Lace-grounded output has witness/pointability semantics |
-| G12 | holder-local state stays outside authoritative Lace |
-| G13 | cross-source links stamped source/compatible/hypothesis/tension |
-| G14 | explicit source opens remain open |
-| G15 | RM-A not supplied by behavioral device output |
-| G16 | behavior/feedback path does not rewrite Lace |
-| G17 | device laws converted into mathematical trace tests/falsifiers |
-| G18 | current math-execution-model updated only after source/device audit |
-| G19 | old Shadow equations reused only after classification |
-| G20 | no Core/acceptance/implementation/target gate movement |
-| G21 | all claims released |
+| G1 | current main pinned |
+| G2 | all claims checked before execution |
+| G3 | three originals reread directly |
+| G4 | source pressure ledger created |
+| G5 | current Lace court reread |
+| G6 | O1-O8 primitive/derived audit complete |
+| G7 | generic tuple proposed |
+| G8 | tuple field-deletion audit complete |
+| G9 | witness algebra explicit |
+| G10 | RD-1 theorem proved or exact obstruction recorded |
+| G11 | HCC minimum pressure test complete |
+| G12 | Cup minimum pressure test complete |
+| G13 | Water minimum pressure test complete |
+| G14 | no source-specific full device smuggled into Pass 1 |
+| G15 | stale Shadow classification complete |
+| G16 | F1-F15 disposition recorded |
+| G17 | RM-A unchanged |
+| G18 | no Core row/type/storage promotion |
+| G19 | no acceptance/implementation/target movement |
+| G20 | S9 added only if gates 7-16 survive |
+| G21 | findings indexed |
+| G22 | all claims released |
 
 ---
 
-## 17. Expected useful result
+## 16. Expected Pass-1 verdicts
 
-The desired result is not:
+Pass 1 should end with independent verdicts.
 
-> HCC, Coffee Cup and Water are three modules beside Lace.
+### Generic abstraction
 
-The desired result is closer to:
+- DEVICE ALGEBRA SOUND
+- DEVICE ALGEBRA SOUND WITH OPENS
+- DEVICE ALGEBRA TOO SMALL
+- DEVICE ALGEBRA OVERBUILT
 
-~~~
-Lace is the immutable structural field.
+### Read/write boundary
 
-A behavioral mathematical device can look into that field
-through lawful derived reads,
-carry its own source-required state,
-perform source-required transitions,
-and produce observable outputs with pointable witnesses.
+- READ-ONLY SEPARATION PROVED
+- READ-ONLY SEPARATION CONDITIONAL
+- SEPARATION OBSTRUCTED
 
-Several different devices can look into the same Lace
-without becoming Lace
-and without forcing each other into one machine.
+### Witness model
 
-Their behavior becomes mathematics over Lace,
-not extra authority inside Lace.
-~~~
+- WITNESS ALGEBRA SUFFICIENT
+- WITNESS ALGEBRA NEEDS EXTERNAL CLASS
+- WITNESS MODEL UNDER-SPECIFIED
 
-That gives the behavioral goals a mathematically executable place in the project while preserving the one-strand court.
+### Primary-model update
+
+- S9 ADMITTED
+- S9 ADMITTED WITH OPENS
+- S9 DEFERRED
+
+These verdicts do not say whether HCC, Cup, or Water is "implemented."
 
 ---
 
-## 18. Stop
+## 17. Stop
 
-This preparation pass stops after committing this plan and releasing \`maps\`.
+Pass 1 stops after:
 
-Execution begins only when the human says to proceed.
+- source pressure ledger;
+- generic device algebra;
+- witness algebra;
+- no-write theorem;
+- HCC/Cup/Water minimum pressure tests;
+- stale-Shadow classification;
+- falsifier board;
+- optional bounded S9 insertion;
+- findings/index/release.
+
+It does not automatically:
+
+- formalize full HCC-A device;
+- formalize full Coffee Cup device;
+- formalize full Water device;
+- compose the three;
+- update global ASCII;
+- edit law;
+- solve RM-A;
+- accept pointer emission;
+- create implementation;
+- open Pass 2.
+
+The exact Pass-1 question is:
+
+> **Can one minimal, pointable, read-only mathematical device look into Lace deeply enough to host all three behavioral source families without becoming a second Lace or gaining write authority?**
