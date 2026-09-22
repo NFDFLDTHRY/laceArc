@@ -1,7 +1,7 @@
-STATUS: FREE
+STATUS: HELD
 STATION: maps
 OWNS: docs/reason-model-map.md docs/rust-nostd-*.md docs/atomic-primitives-map.md docs/clock/gearing-code-1to1.md docs/coherence-audit*.md docs/clock/system-mathematical-model.md docs/defrag-plan.md docs/plans/** docs/namespace-register.md docs/*.md (catch-all: any unmatched file at the docs/ root)
-AGENT: -
-BASE: -
-SINCE: -
-NOTE: Source→Lab→Lace Alignment Restart Pass 3 PLAN recorded and indexed. Behavioral-goal assay pass only: source-grounded observable goals/falsifiers independent of source machinery. No execution, RM-A design, implementation, or acceptance.
+AGENT: Astra-alignment-restart
+BASE: 26e7edf6808ab12657275764c4e0b0ad1327e197
+SINCE: 2026-09-22T04:40:00Z
+NOTE: Alignment Restart Pass 3 execution. Build mechanism-agnostic behavioral-goal assay register first; only then add a host-side Lab assay harness/controls if justified. No RM-A design, holder implementation, Core promotion, or acceptance.
