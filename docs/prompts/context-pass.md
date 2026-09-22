@@ -6,6 +6,10 @@ Layer III steward prompt. Not Hands. Not law. Not Core. **Current constructor me
 
 **Current reconciliation:** repository-update Pass 4 remains the lifecycle/release evidence baseline; ROOT / TOUCH / FOLD is retained as dated constructor/provenance history; SAMPLING / DENSITY / EMERGENCE establishes the human-ruled sampling/search architecture. **Manifest Reconciliation Pass 1–4 foundation:** use the Pass-32 global mechanism catalog for *what mechanisms exist and how they connect*, and the systems-manifest contract registry for *what each mechanism may/shall do*. **Latest Lab Source Architecture evidence:** RM-A remains open / MISSING-A; RM-B is partially closed for selected finite contiguous sample occurrences; RM-C is closed for RootTouch and contiguous sample grounding but candidate-specific elsewhere. These Lab results narrow the canonical open interface without automatically becoming universal Core law. Human acceptance remains absent.
 
+**Behavioral Read Devices Passes 1–6 current machine court:** [math-execution-model.md](../math-execution-model.md) now carries S9–S12 above the unchanged substrate. **S9** is the minimal read-device algebra (Q,G,Omega,Delta,witness) and RD-1 says device-only work leaves Lace unchanged. **S10** separates evidence classes (SEE-L/G/Q/H/CF/U), proves non-identifiability (OBS-1), and requires support traceability (EP-1). **Pass 4** re-grounded the math in Graphics A–D: root/occurrence membership are not the full star, Reach is ancestry membership rather than path multiplicity, WordTrace differs from all rows, and projection geometry is read-policy-dependent. **S11** separates build/Wasm/host/GPU/WGSL/WebNN realization from semantics, uses the T0–T6 evidence ladder, and records **GAP-HOST**; compute plane does not determine evidence class. **S12** admits only an optional device-local operator library (semantic parallelism, candidate generation, check, bounded advance, explicit stop/control, resolution) and explicitly rejects a fixed common chassis. Executed mathematical blueprints exist for [HCC-A](../plans/math-execution-behavioral-read-devices-pass-5-hcc-device-blueprint.md), [Coffee Cup](../plans/math-execution-behavioral-read-devices-pass-5-coffee-cup-device-blueprint.md), and [Water](../plans/math-execution-behavioral-read-devices-pass-5-water-device-blueprint.md). They are **not implementations**.
+
+**Water current human ruling:** the raw Water source's blocking-UNK / lexical-INVALID semantics survive only as source/history. The current target says **UNK is a nonblocking predicted evidence shape waiting for future evidence** and **INVALID is a prior claim later evidence has established as wrong**. There is no current invalid-phrase table. The active Water clipboard and Pass-5 blueprint carry this correction.
+
 **Written** 2026-09-19 by Claude Fable 5.1 at branch `lace-context-iteration-6` (base `e2e8155`), on the human's instruction: *"all agents need to see the same story in the repo that you do."*
 
 ---
@@ -41,6 +45,11 @@ Source of record: the four PNGs in `docs/graphics/` (open them; cite panels), th
 | [the companion](../systems-manifest-ascii.md), Passes 26–30 and later current scope notes | Pass 30 carries the sampling/search reconciliation over the dated ROOT / TOUCH / JOIN path while retaining older opens/history; later overlays may add lab/source context without rewriting Core. M1's shared-strand-history claim keeps its observation/lifecycle scope | readings, not new canonical sources or a universal app-state proof |
 | [the door](../plans/reduction-pass-1-findings.md), “S” and “The door” | **S = 21 documents** was the reduction's dated base reading set, plus four PNGs, manifest and law. Current target work also reads [rust-target Pass 1 / Page G](../clipboards/rust-target-clipboard.md) and current [update-pass evidence](../plans/repo-update-pass-4-evidence.md); follow each task's source/consumer closure | dated measurement plus current routing; not an exhaustive permanent allow-list |
 | [Wasm target sightings](../clipboards/wasm-spec-3-clipboard.md#repository-update-pass-2--target-sightings) and [rust-target carry](../clipboards/rust-target-clipboard.md#repository-update-pass-2--target-evidence-carry) | 14 PDF pages sighted for memory/address grammar, optional names, tags/operators, profiles and the validation appendix; name-based crate absence and configured feature-subset enforcement remain unestablished | `SOURCE / VISUALLY_OBSERVED` for the named passages; no validator, build or device result |
+| [Behavioral Read Devices Pass 1](../plans/math-execution-behavioral-read-devices-pass-1-findings.md) | S9 minimal read-device algebra + RD-1 no-write separation; explicit external context and witness/provenance | executed mathematical overlay; not Core, not implementation |
+| [Behavioral Read Devices Pass 2](../plans/math-execution-behavioral-read-devices-pass-2-findings.md) | S10 observability/non-identifiability: SEE-* classes, OBS-1, EP-1, multi-holder and counterfactual provenance | executed mathematical overlay; source-variable claims remain evidence-scoped |
+| [Behavioral Read Devices Pass 3](../plans/math-execution-behavioral-read-devices-pass-3-findings.md) | S11 technical realization court: typed build/Wasm/host/GPU/WGSL/WebNN planes, T0–T6, GAP-HOST, optional accelerators | executed technical/mathematical overlay; no target or implementation selected |
+| [Behavioral Read Devices Pass 4](../plans/math-execution-behavioral-read-devices-pass-4-findings.md) | canonical-graphics source-fidelity repair: Root != FullStar, Reach membership != path multiplicity, WordTrace, non-unique projection policy | executed source-fidelity repair; Core storage unchanged |
+| [Behavioral Read Devices Pass 5](../plans/math-execution-behavioral-read-devices-pass-5-findings.md) | S12 optional machine-operator library + mathematically defined HCC/Coffee Cup/Water devices; fixed common chassis rejected | executed mathematical machine construction with source-specific opens |
 | [roles](../kit/roles.md) · [generator](six-pass-proposal-generator.md) · [ladder](../plans/probe-boundary-ladder.md) · [diagram-prompt](lace-context-diagram-prompt.md) | who holds what; how to start a campaign; the order of the probes; how to map a finding | steward |
 
 ## 4. The human, as the record shows him (memory-informed; every line `[PROPOSAL]`, provenance in [iteration 6 pass 1](../plans/lace-context-iter6-pass-1-findings.md))
@@ -85,7 +94,7 @@ Pass 2's [bounded Wasm sightings](../clipboards/wasm-spec-3-clipboard.md#reposit
 
 ## 9. The story in one paragraph — what you should be able to say back
 
-*One strand, one rule, one store; the graphics and manifest govern the Lace substrate. HCC-A, Coffee Cup, and Water supply behavioral goals **and source-defined desired-behavior mechanisms**; research clipboards supply algorithms/mathematics/mechanisms; platform clipboards supply executable primitives and physical constraints. **All concrete realizations feed through the laceArc Lab, not Core directly.** Do not mistake a Pass-3 assay for the whole H/C/W target, and do not mistake an H/C/W source mechanism for a literal runtime object. Lab instruments may preserve candidate evidence, including failures, without making implementation machinery authoritative. The current draft records WORD landing, root/RootTouch, binary Join, finite-sample grounding, derived multi-scale sampling, and read-only star/search. **The general SM-GAP-RM interface remains open: RM-A retain-when is primary; bounded RM-B/RM-C results remain scoped evidence.** The draft is not human-accepted. Work within the authorized pass, preserve failed candidates and source conflicts, and never confuse Lab retain-evidence with Lace retain-POINTER. The shoe is the court; a useful implementation still has to survive the lab and authority gates before it becomes architecture.*
+*One strand, one rule, one store; the graphics and manifest govern the Lace substrate. HCC-A, Coffee Cup, and Water supply behavioral goals **and source-defined desired-behavior mechanisms**. The current mathematical machine layer is S9–S12: read devices keep local/context state outside Lace; S10 constrains what they may claim to know; Pass 4 preserves path/star/projection fidelity; S11 separates realization from evidence authority; S12 supplies only optional local machine operators and routes to explicit HCC/Cup/Water mathematical blueprints. Research clipboards now have a positive role in that operator library but still do not define Core; platform clipboards constrain realization but do not manufacture semantics. **Candidate != Evidence; VerifierScore != Truth; compute plane != evidence class.** Water current target follows later human law: UNK waits nonblocking for predicted evidence and INVALID requires later refuting evidence. The current Core draft still records WORD landing, root/RootTouch, binary Join, finite-sample grounding, derived sampling, and read-only search; **RM-A remains open, G1 remains open, TARGET is UNDECIDED, R3 remains open, and pointer acceptance is absent.** The shoe is the court; no mathematical blueprint is an implementation.*
 
 ## Steward test
 
@@ -125,5 +134,23 @@ Current active flow:
     derived star/search frontiers
 
 Search is read-only. The sampler is derived working machinery, not a second store and not merely the Graphic-C projection. Do not reintroduce an arbitrary semantic chooser. Do not invent the retention rule. Do not treat reconciliation as acceptance.
+
+Behavioral-device flow is separate and read-only with respect to Lace:
+
+    Lace prefix + external/context + local Q
+        |
+        v
+    S9 Omega / Delta / witness
+        |
+        +--> S10 evidence stamps / OBS-1 / EP-1
+        |
+        +--> optional S12 local operators
+             Par / Generate / Check / Advance / Stop / Resolve
+        |
+        +--> HCC / Coffee Cup / Water mathematical device outputs
+        |
+        X--> no direct Lace write
+
+S11 constrains where those computations may later run; it does not change their evidence class or authorize implementation. Exact H×C×W call scheduling remains OPEN.
 
 One story, told the same way to every hand. **Constructor + sampling architecture reconciled; acceptance absent; canonical SM-GAP-RM remains open with RM-A primary and bounded/class-specific RM-B/RM-C progress.**
