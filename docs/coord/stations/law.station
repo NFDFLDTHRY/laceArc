@@ -1,7 +1,7 @@
-STATUS: HELD
+STATUS: FREE
 STATION: law
 OWNS: AGENTS.md CLAUDE.md docs/staking-the-workspace.md docs/law-why-these-documents.md docs/systems-manifest.md docs/pointer-emission.md docs/references.md CONTRIBUTING.md README.md .gitignore LICENSE docs/README.md
-AGENT: Astra-alignment-restart
-BASE: 6fbf33784c3d8ed26afaf1ca462c166671570121
-SINCE: 2026-09-21T22:12:00-07:00
-NOTE: Restart Pass 5 narrow reference-route reconciliation only. Update active WebAssembly reference row from selected wasm64 wording to target-capability / TARGET UNDECIDED wording. No Core, pointer, acceptance, or implementation change.
+AGENT: -
+BASE: -
+SINCE: -
+NOTE: Restart Pass 5 narrow reference reconciliation COMPLETE. WebAssembly row now routes target capability with TARGET UNDECIDED; no Core/pointer/acceptance/implementation change.
