@@ -354,6 +354,8 @@ Pass 35 adds:
 
 No Core mechanism is added.
 
+**Coordination verification:** after maps release commit `5f28877487d099ed8234a03d876fa7076eed8a25`, direct reads confirmed FREE status for clipboards, coord, gearing-meta, graphics, history, hologram, kit, law, maps, prompts and renderer stations, plus audits, axle, cells, escape, gears, trainA, trainB and trainC gearing shafts. This receipt-finalization claim changes only the findings receipt and is released immediately afterward.
+
 ---
 
 ## 12. Station disposition
@@ -436,7 +438,7 @@ No gearing shaft was required.
 | G22 companion delta is linear Pass 35 | PASS |
 | G23 goal/assay debt register published | PASS |
 | G24 no implementation/acceptance/Core promotion | PASS |
-| G25 all claims released | **PENDING final maps release** |
+| G25 all claims released | **PASS** — release commit `5f28877487d099ed8234a03d876fa7076eed8a25`; direct post-release reads confirmed all 11 document stations FREE and all 8 gearing shafts FREE |
 
 ---
 
