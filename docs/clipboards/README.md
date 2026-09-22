@@ -10,9 +10,49 @@ A clipboard is a **source-grounded laboratory interface**, not a filename suffix
 |---|---|---|
 | **Behavioral goals** | [HCC-A](../clock/hcc-a-systems-manifest.md) · [Coffee Cup](../clock/coffee-cup-systems-manifest.md) · [Water / Dual Proofing](../clock/water-systems-manifest.md) · [H×C×W candidate composition](../clock/train-h-c-w-systems-manifest.md) | behavioral constraints · possible machinery · hypotheses · failure conditions |
 | **Research / books / papers** | this `docs/clipboards/` shelf | algorithms · mathematics · mechanisms · known limits · negative evidence |
-| **Platform / hardware / toolchain** | this shelf's Wasm · WebGPU · WGSL · WebNN · rustc · Cargo products | executable primitives · resource ceilings · target/toolchain facts · physical feasibility constraints |
+| **Technical building sources** | this shelf's Cargo/rustc · Wasm core · WebGPU/WGSL · WebNN products | typed build/runtime/accelerator primitives · resource/lifetime ceilings · target/toolchain facts · interoperability facts · physical feasibility constraints. **Not six peer layers.** Browser Wasm host/embedder remains an explicit source gap; durable carrier remains R3-conditional. |
 
 **This directory currently carries ten reference campaigns.** The five stake texts — AgentScope, Kauffman, Petersen & Zech, Rowlands, Xiao & Zhu — plus WebAssembly 3.0, WebGPU, WebNN, WGSL, and the rustc toolchain shelf below. Historically this door named five while the shelf held nine; iteration 4 pass 5 exposed the four web-specification campaigns. The human staked the tenth shelf on 2026-09-19.
+
+### Current technical-building topology — Behavioral Read Devices Pass 3
+
+The technical sources share one **authority class** under \`SM-X-PLAT\`, but they do **not** occupy one engineering layer.
+
+~~~text
+BUILD / ORCHESTRATION
+    Cargo -> rustc -> selected target artifact
+                          |
+                          v
+PORTABLE CORE EXECUTION
+    WebAssembly core
+                          |
+                          v
+HOST / EMBEDDER
+    [MISSING PRIMARY SOURCE IN CURRENT SIX-SOURCE CORPUS]
+             /                         \
+            v                           v
+GPU API / RESOURCE CONTROL         NEURAL INFERENCE
+    WebGPU                          WebNN
+      |                               |
+      v                               +-- conditional WebGPU interop
+GPU PROGRAM LANGUAGE
+    WGSL
+
+CARRIER / DURABILITY
+    [source required only if R3 selects durable]
+
+INSTALLED APP / DISTRIBUTION
+    separate source surface; not defined by these six
+~~~
+
+**Source-scope correction:** WebAssembly core explicitly delegates specific environment invocation/import/export mechanics to complementary embedding-environment APIs. Therefore the Wasm clipboard is **core-ISA/runtime evidence, not browser-host authority**.
+
+**Interop correction:** WebNN source supports conditional WebGPU interoperability and host-visible buffer inputs that may originate from \`WebAssembly.Memory\`; neither establishes a direct Wasm→WebNN edge or universal zero-copy.
+
+**Evidence correction:** a specification capability is normally only \`T0 SOURCE-SPECIFIED\`. It does not by itself prove browser exposure, device admission, successful execution, correctness, or sustained operation.
+
+**Standing fence remains unchanged:** none of these technical sources may supply Lace semantics, RM-A, pointer acceptance, human acceptance, or direct write authority to Lace.
+
 
 A clipboard records source evidence and candidate machinery. **KEEP/FORBID is an authority fence, not a ban on laboratory use.** “Not Core” means the clipboard cannot promote its mechanism directly into Lace. It does not mean the mechanism is decorative or irrelevant. Candidate machinery may be proposed, attacked, reproduced, tested, falsified, or survive bounded evidence in the laceArc lab. See [the reason model](../reason-model-map.md) for the standing substrate boundaries.
 
