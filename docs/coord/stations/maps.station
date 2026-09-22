@@ -1,7 +1,7 @@
-STATUS: FREE
+STATUS: HELD
 STATION: maps
 OWNS: docs/reason-model-map.md docs/rust-nostd-*.md docs/atomic-primitives-map.md docs/clock/gearing-code-1to1.md docs/coherence-audit*.md docs/clock/system-mathematical-model.md docs/defrag-plan.md docs/plans/** docs/namespace-register.md docs/*.md (catch-all: any unmatched file at the docs/ root)
-AGENT: -
-BASE: -
-SINCE: -
-NOTE: Repo-lag Pass 4 COMPLETE. Clock/Wasm target court current: TARGET UNDECIDED; wasm64 conditional, wasm32 candidate/unproved; historical viewer evidence and ixp2 release preserved; F1-F21 held, G1-G22 passed. Remaining lag is namespace register, append-only coherence tick, and coord station description.
+AGENT: ChatGPT
+BASE: 07a8396710fac6ebd515756065703a138ecc0e02
+SINCE: 2026-09-22T19:20:00Z
+NOTE: EXECUTING repo-lag Pass 5 namespace/coherence reconciliation. Hard gate: reproduce existing 49/371/125/578 namespace measurement before any namespace mutation. Append-only coherence history; no coord repair.
