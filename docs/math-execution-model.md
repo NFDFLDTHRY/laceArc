@@ -1,6 +1,6 @@
 # Mathematical execution model — Lace
 
-**Status:** ROOT / TOUCH / FOLD constructor history + SAMPLING / DENSITY / EMERGENCE reconciliation + Behavioral Read Devices Passes 1–2 (generic S9 + observability/composition S10), qualified by Alignment Restart Pass 1. **Pointer construction and human-ruled sampling/search are reconciled; canonical `SM-GAP-RM` remains open, with RM-A the primary unresolved retain decision. Bounded Lab evidence partially closes RM-B for selected finite contiguous samples and class-specifically closes RM-C for RootTouch / contiguous grounding. Behavioral devices are admitted mathematically as read-only stateful observers over Lace plus explicit external context; Pass 2 now limits what they may claim to know from Lace and preserves source-specific descriptive architectures without building full HCC/Cup/Water devices. No Core row, retention rule, acceptance, target choice, or implementation follows.**
+**Status:** ROOT / TOUCH / FOLD constructor history + SAMPLING / DENSITY / EMERGENCE reconciliation + Behavioral Read Devices Passes 1–3 (generic S9 + observability/composition S10 + technical realization boundary S11), qualified by Alignment Restart Pass 1. **Pointer construction and human-ruled sampling/search are reconciled; canonical `SM-GAP-RM` remains open, with RM-A the primary unresolved retain decision. Bounded Lab evidence partially closes RM-B for selected finite contiguous samples and class-specifically closes RM-C for RootTouch / contiguous grounding. Behavioral devices are admitted mathematically as read-only stateful observers over Lace plus explicit external context; S10 limits what they may claim to know from Lace; S11 now separates build/runtime/host/GPU/shader/ML capability and evidence rungs without selecting implementation. Browser Wasm host/embedder sourcing remains GAP-HOST; R3 carrier remains open. No Core row, retention rule, acceptance, target choice, or implementation follows.**
 **Campaign:** ROOT / TOUCH / FOLD established LAND/root/RootTouch/binary Join/finite grounding; its provenance-era Pass 6 is retained as history. SAMPLING / DENSITY / EMERGENCE Passes 1–5 establish the later human-ruled 1D+2D sampling/search model; this Pass 6 propagates that active reconciliation.
 **Pass 3:** [plan](plans/math-execution-root-touch-fold-pass-3-plan.md) · [findings](plans/math-execution-root-touch-fold-pass-3-findings.md).  
 **Pass 4 reconciliation:** [plan](plans/math-execution-root-touch-fold-pass-4-plan.md) · [findings](plans/math-execution-root-touch-fold-pass-4-findings.md).  
@@ -1326,3 +1326,385 @@ Cross-source compatibility is not runtime identity.
 Full HCC-A, Coffee Cup, and Water device equations remain deliberately deferred.
 
 RM-A remains open. Core remains unchanged.
+
+
+---
+
+## S11 — Technical realization boundary and capability graph
+
+**Campaign:** Behavioral Read Devices Pass 3 technical capability inventory · interoperability/boundary map · source-gap ledger.
+
+**Scope:** source-grounded technical realization court above S1–S10. This section classifies the six staked technical references by actual capability role, maps optional execution planes onto the mathematical model, and records missing source boundaries. It does not select a target, carrier, accelerator, or implementation.
+
+### S11.1 Technical source topology
+
+The six sources share the same non-Core authority class under \`SM-X-PLAT\` but occupy different engineering planes:
+
+~~~text
+BUILD / ORCHESTRATION
+    Cargo -> rustc -> selected target artifact
+                          |
+                          v
+PORTABLE CORE EXECUTION
+    WebAssembly core
+                          |
+                          v
+HOST / EMBEDDER
+    [GAP-HOST: MISSING PRIMARY SOURCE]
+             /                         \
+            v                           v
+GPU API / RESOURCE CONTROL         NEURAL INFERENCE
+    WebGPU                          WebNN
+      |
+      v
+GPU PROGRAM LANGUAGE
+    WGSL
+
+CARRIER / DURABILITY
+    [source required only if R3 selects durable]
+
+INSTALLED APP / DISTRIBUTION
+    separate source surface; not defined by these six
+~~~
+
+This topology is a source-role map, not an implementation diagram.
+
+### S11.2 Evidence ladder
+
+For a technical capability \(c\), define evidence rungs:
+
+\[
+T_0(c)=\text{SOURCE-SPECIFIED},
+\]
+
+\[
+T_1(c)=\text{TOOLCHAIN-SUPPORTED},
+\]
+
+\[
+T_2(c)=\text{HOST-EXPOSED},
+\]
+
+\[
+T_3(c)=\text{DEVICE-ADMITTED},
+\]
+
+\[
+T_4(c)=\text{EXECUTED},
+\]
+
+\[
+T_5(c)=\text{CORRECT},
+\]
+
+\[
+T_6(c)=\text{SUSTAINED}.
+\]
+
+No automatic implication holds:
+
+\[
+\boxed{
+T_k(c)\not\Rightarrow T_{k+1}(c).
+}
+\]
+
+A standards/toolchain document normally establishes \(T_0\), not actual browser/device execution.
+
+### S11.3 Build plane
+
+Cargo is build/package orchestration.
+
+rustc is compiler/target/codegen machinery.
+
+Therefore:
+
+\[
+CargoGraph\neq LaceTopology,
+\]
+
+and:
+
+\[
+DocumentedRustTarget\neq SelectedTarget.
+\]
+
+Project law such as zero external dependencies constrains Cargo configuration; Cargo does not supply that law.
+
+The current target remains:
+
+\[
+\boxed{TARGET=UNDECIDED.}
+\]
+
+### S11.4 WebAssembly core and HOST-1
+
+WebAssembly core defines the portable ISA, validation, runtime memory/tables/functions/imports/exports and instantiation/invocation semantics.
+
+It explicitly does not define a specific embedding-environment API and gives modules no ambient environment access.
+
+For any S9 external/context input \(g\) originating outside Wasm state:
+
+\[
+g\notin State_{Wasm}
+\land
+NoAmbientAccess(Wasm)
+\Rightarrow
+g\to\mathcal D
+\text{ requires host/embedder mediation}.
+\]
+
+Thus:
+
+\[
+\boxed{
+HOST\!-\!1:
+\text{host dependence proved}.
+}
+\]
+
+The concrete browser binding remains:
+
+\[
+\boxed{
+GAP\!-\!HOST=[MISSING\ PRIMARY\ SOURCE].
+}
+\]
+
+### S11.5 Address false-friend fence
+
+The following remain distinct:
+
+\[
+LaceIndex
+\neq
+Rust\ usize
+\neq
+WasmAddress
+\neq
+GPUBufferOffset
+\neq
+WGSLPointer.
+\]
+
+Likewise:
+
+\[
+GraphicDPointer
+\neq
+WasmReference
+\neq
+WGSLPointer.
+\]
+
+No technical address/pointer representation becomes a Lace identity without an explicit representation contract.
+
+### S11.6 WebGPU / WGSL accelerator boundary
+
+WebGPU owns GPU API/resource/queue/device semantics.
+
+WGSL owns shader-program semantics beneath WebGPU pipelines.
+
+WebGPU resources have device/resource lifetimes and can become unusable or be destroyed/lost.
+
+Therefore, in a conforming LaceArc realization:
+
+\[
+\boxed{
+GPUState\notin AuthoritativeLace.
+}
+\]
+
+and:
+
+\[
+\boxed{
+Loss(GPUState)
+\not\Rightarrow
+Change(LaceTruth).
+}
+\]
+
+This is **ACCEL-1**.
+
+WebGPU/WGSL are optional candidate execution planes for derived/reconstructible work such as bounded sampling, reductions, projections, or selected search substeps.
+
+They are not required by S1–S10.
+
+### S11.7 WebNN inference boundary
+
+WebNN defines a compiled neural-inference graph API.
+
+For model output:
+
+\[
+y_{ML}=F_\theta(x),
+\]
+
+the compute plane does not promote epistemic authority:
+
+\[
+\boxed{
+x\in SEE\!-\!L
+\not\Rightarrow
+y_{ML}\in SEE\!-\!L.
+}
+\]
+
+This is **ML-1**.
+
+WebNN may accelerate an admitted inference subproblem.
+
+It does not become the generic S9 transition machine by default.
+
+A WebNN "graph" is not Lace topology.
+
+A WebNN emotion classifier output is not HCC Emotion truth without a separate source/device inference contract.
+
+### S11.8 Interoperability and COPY-1
+
+Source-backed interop includes:
+
+- host -> WebGPU -> WGSL;
+- host -> WebNN;
+- WebNN context from a GPUDevice;
+- exportable MLTensor -> GPUBuffer;
+- host-visible \`Uint8Array\` input that may reference a \`WebAssembly.Memory\` slice.
+
+These edges do not establish direct Wasm invocation of WebGPU/WebNN.
+
+The source evidence also establishes that copies may occur.
+
+Therefore:
+
+\[
+\boxed{
+COPY\!-\!1:
+Interop\not\Rightarrow ZeroCopy.
+}
+\]
+
+Any later zero-copy claim requires separate device/implementation evidence.
+
+### S11.9 S1–S4 realization boundary
+
+Authoritative Lace operations remain mathematical/Core obligations first.
+
+Candidate technical placement:
+
+- Arrive / RootTouch / Join / capacity-refusal: ordinary host/CPU/Wasm candidate control path;
+- root/prefix scans: CPU/Wasm candidate, optional bounded GPU assistance;
+- finite grounding: authoritative append remains Core transition even if selection/precomputation is accelerated;
+- carrier access: depends on R3/carrier ruling.
+
+No technical source supplies RM-A.
+
+### S11.10 S3 derived-read realization boundary
+
+Current derived reads can be realized on different compute planes without changing authority:
+
+- prefix/replay: CPU/Wasm natural candidate;
+- sampling/overlap/reduction: CPU/Wasm or WebGPU/WGSL candidate;
+- Reach/frontier: host/CPU/Wasm natural candidate, accelerator assistance conditional;
+- projection: WebGPU/WGSL strong candidate.
+
+WebNN has no default role unless a later admitted subproblem is genuinely a neural-inference graph.
+
+### S11.11 S9 realization boundary
+
+For:
+
+\[
+\mathcal D_\theta=(Q,G,\Omega,\Delta,\omega),
+\]
+
+technical mapping remains:
+
+- \(Q\): application/host/Wasm working state by default;
+- \(G\): host/embedder-mediated when external to Wasm;
+- \(\Omega\): CPU/Wasm reads, optional WebGPU/WGSL kernels, bounded WebNN inference only where admitted;
+- \(\Delta\): general host/Wasm candidate control; accelerator subfunctions optional;
+- \(\omega\): logical/replayable witness, never a native technical address by default.
+
+### S11.12 S10 compute-plane invariance
+
+Pass 3 records:
+
+\[
+\boxed{
+ComputePlane(y)\not\Rightarrow EvidenceClass(y).
+}
+\]
+
+Executing a calculation on:
+- CPU/Wasm;
+- WebGPU/WGSL;
+- WebNN
+
+does not itself decide whether the result is:
+- SEE-L;
+- SEE-G;
+- SEE-Q;
+- SEE-H;
+- SEE-CF;
+- SEE-U.
+
+Evidence class follows provenance and source/device law.
+
+### S11.13 Carrier and installed-app boundary
+
+None of the six technical sources defines durable Lace storage.
+
+Thus:
+
+\[
+R3=[OPEN].
+\]
+
+If \(R3=durable\), a primary source for the chosen browser carrier becomes mandatory.
+
+If \(R3=volatile\), no durable source is required solely to satisfy a volatile declared lifetime.
+
+The six sources also do not define complete installed-WebApp lifecycle/install/cache/update behavior.
+
+That remains a separate source surface.
+
+### S11.14 Pass-3 verdict
+
+\[
+\boxed{
+\text{SOURCE SET CORRECT}
+}
+\]
+
+\[
+\boxed{
+\text{CAPABILITY GRAPH SOUND WITH SOURCE GAPS}
+}
+\]
+
+\[
+\boxed{
+\text{HOST DEPENDENCE PROVED / SOURCE MISSING}
+}
+\]
+
+\[
+\boxed{
+\text{ACCELERATOR NON-AUTHORITY PROVED}
+}
+\]
+
+\[
+\boxed{
+\text{TECHNICAL CROSSWALK SOUND WITH OPTIONAL ACCELERATORS}
+}
+\]
+
+\[
+\boxed{
+\text{S11 ADMITTED WITH SOURCE GAPS}
+}
+\]
+
+Target, R3, RM-A, pointer acceptance, implementation and full source-specific behavioral devices remain unchanged/open as previously stated.
