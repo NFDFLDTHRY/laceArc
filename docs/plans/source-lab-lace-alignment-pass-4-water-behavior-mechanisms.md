@@ -7,6 +7,8 @@
 **Authority:** source-analysis / Lab evidence. **Not Core. Not an implementation design.**  
 **Purpose:** recover the source's two cooperating proofing systems plus interface as desired-behavior mechanisms, separately from Pass-3 pointability/crossing assay projections.
 
+**Current-target qualification — Behavioral Read Devices Pass 6:** this file remains a faithful map of what the supplied Water source itself said at Alignment Restart Pass 4. Later human rulings supersede two source-level target behaviors for the current machine: **UNK is now a nonblocking predicted evidence shape that waits for future evidence**, and **INVALID is now a claim later evidence has established as wrong; lexical/non-computable phrase matching is not the current INVALID rule.** Preserve W-BM09/W-BM10/W-BM11 and the original F5 material below as source provenance/history, but do not use them as the current target contract. Current target route: [`law-why-these-documents.md`](../law-why-these-documents.md#conceptual-reference-documents) plus the Pass-5 [Water device blueprint](math-execution-behavioral-read-devices-pass-5-water-device-blueprint.md).
+
 ## 0. Source-level thesis
 
 Water describes a communication-repair architecture with three source-defined parts:
