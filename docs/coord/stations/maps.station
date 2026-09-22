@@ -1,7 +1,7 @@
-STATUS: HELD
+STATUS: FREE
 STATION: maps
 OWNS: docs/reason-model-map.md docs/rust-nostd-*.md docs/atomic-primitives-map.md docs/clock/gearing-code-1to1.md docs/coherence-audit*.md docs/clock/system-mathematical-model.md docs/defrag-plan.md docs/plans/** docs/namespace-register.md docs/*.md (catch-all: any unmatched file at the docs/ root)
-AGENT: Astra-alignment-restart
-BASE: 80b0346fdca5fdd928d9285bf8bb4f6e8b228b11
-SINCE: 2026-09-22T01:50:00Z
-NOTE: Planning only: new Source→Lab→Lace Alignment Restart campaign, Pass 1. Re-anchor current Pass-32/Pass-6 repo against the human vertical architecture. No execution or semantic edits under this claim.
+AGENT: -
+BASE: -
+SINCE: -
+NOTE: Source→Lab→Lace Alignment restart Pass 1 PLAN recorded and indexed. New campaign, not old Lab Source Architecture Pass 7. Plan only; no execution, RM-A design, canonical change, or implementation. Global ASCII Pass 33 only if later execution materially changes the companion.
