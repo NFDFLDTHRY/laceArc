@@ -1,6 +1,6 @@
 # Repo lag cleanup — Pass 5 namespace + coherence reconciliation plan
 
-**Status:** PLAN — human approved in conversation by “Proceed with pass 5.”  
+**Status:** EXECUTED — NAMESPACE REMEASURED / CURRENT COHERENCE TICK APPENDED.  
 **Station:** maps.  
 **Execution base:** `03a2d3c27eb204e1ccbcc2407b5d55b7c33b1e2e` (maps claim at post-Pass-4 baseline).  
 **No new theory. No Core change. No target selection. No acceptance. No implementation.**
@@ -204,3 +204,14 @@ G29 maps released.
 ## Stop
 
 Do not repair `docs/coord/stations/README.md` in this pass.
+
+
+## Execution closeout
+
+**Executed 2026-09-22.** The hard measurement gate reproduced the prior 49-row register exactly before mutation: **49 rows / 371 distinct tokens / 125 colliding tokens / 578 memberships**, with 80×2 / 25×3 / 8×4 / 7×5 / 5×6 ownership. An initial local parser interpretation incorrectly introduced zero-padding into ranges such as `A1–A13`; that failed the headline check while preserving 578 memberships, exposed the bug, and was corrected to preserve only zero-padding already present in the endpoints. The corrected parser then reproduced the old register exactly before any namespace edit.
+
+The current register measures **62 rows / 456 distinct tokens / 127 colliding tokens / 677 memberships**, with 70×2 / 37×3 / 8×4 / 7×5 / 5×6 ownership. Thirteen stable source-defined families were added, the math-section family expanded from S0–S8 to S0–S12, and historical Φ notation was qualified against the current Join/RM-A court.
+
+The coherence log was updated strictly append-only. Its previous 31,251 bytes remain an exact prefix; one current-entry tick was appended at namespace tip `52b82a8a`.
+
+See [Pass-5 findings](repo-lag-pass-5-namespace-coherence-findings.md). The only remaining repo-lag backlog item is the coord-owned station-description row.

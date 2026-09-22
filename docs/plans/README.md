@@ -4,6 +4,8 @@ Plans, proposals, executed pass records, and dated receipts share this shelf. Ea
 
 | File | Job |
 |---|---|
+| [repo-lag-pass-5-namespace-coherence-plan.md](repo-lag-pass-5-namespace-coherence-plan.md) | **EXECUTED — NAMESPACE + COHERENCE RECONCILED.** Prior 49/371/125/578 census reproduced exactly before mutation; current register remeasured at 62/456/127/677; one current Pass-39 coherence tick appended without rewriting history. |
+| [repo-lag-pass-5-namespace-coherence-findings.md](repo-lag-pass-5-namespace-coherence-findings.md) | **EXECUTED PASS-5 RECEIPT.** Thirteen stable families added, current math section expanded to S0–S12, historical Φ notation qualified, F1–F21 held, G1–G29 passed; only coord station-description debt remains. |
 | [repo-lag-pass-4-clock-target-plan.md](repo-lag-pass-4-clock-target-plan.md) | **EXECUTED — CLOCK / WASM TARGET COURT RECONCILED.** Two live clock entrances now state TARGET UNDECIDED; wasm64 remains conditional/high-burden, wasm32 candidate/unproved; historical viewer/toolchain evidence and release/runtime state preserved. |
 | [repo-lag-pass-4-clock-target-findings.md](repo-lag-pass-4-clock-target-findings.md) | **EXECUTED PASS-4 RECEIPT.** Exactly two semantic clock files changed; F1–F21 held, G1–G22 passed; remaining lag reduced to namespace register, append-only coherence tick and coord station description. |
 | [repo-lag-pass-3-kit-control-plan.md](repo-lag-pass-3-kit-control-plan.md) | **EXECUTED — KIT CONTROL / TRANSPORT LAYER RECONCILED.** Byte-identical human-law fences preserved; agent-control routes Pass 39/S9–S12/current gates; Grok First Task now grounds on current state and cannot self-assign a next file; package/index/cold-door live routes repaired. |
