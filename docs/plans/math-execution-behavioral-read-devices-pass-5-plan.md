@@ -1,6 +1,6 @@
 # MATHEMATICAL EXECUTION MODEL — Behavioral Read Devices Pass 5 PLAN
 
-**Status:** PLAN — NOT EXECUTED.
+**Status:** EXECUTED 2026-09-22.
 **Campaign:** Mathematical Execution Model — Behavioral Read Devices.
 **Pass:** 5.
 **Pass name:** **BUILD THE READER, NOT THE STRAND — source-grounded machine construction for behavioral devices.**
@@ -18,6 +18,17 @@
 **Target:** TARGET UNDECIDED.
 **R3:** OPEN.
 **Pointer acceptance:** absent.
+**Execution claim:** `e64157b895c5583863b2c50928090094c90aab3e`.
+**Source machine atlas:** `18d1c4d9aee405c8cb97ec1d8156fbc6683b37e0`.
+**Machine factorization:** `ff1d49e77ec5f2ab4fb0e21b9641ed49d0673fe9`.
+**HCC blueprint:** `803fdc5e6e5045025589ede1107c5efd7f6547cc`.
+**Coffee Cup blueprint:** `5c5d05a5aa401b556427c10ef660277c2cba4417`.
+**Water blueprint:** `782918f6398f0a0acad4d692e45e3e36168623c4`.
+**Behavioral-machine crosswalk:** `eb9ebe4cce08641f45e678de4de4c6666caf5cd9`.
+**Machine assays:** `82a5dc729876bff23367b8f0e988e22cb6fe1a23`.
+**Primary-model S12:** `e93297da52bcf6d5c3672ca2501668c778806b6f`.
+**Findings:** `6aa73ae7828654758d43b85ab24eaba15651f241`.
+**Final verdict:** **RESEARCH SHELF CONTAINS COHERENT MACHINE-CONSTRUCTION MATERIAL · COMMON OPERATOR LIBRARY SOUND · FIXED COMMON CHASSIS UNSOUND · S9 OUTER DEVICE ALGEBRA REMAINS MINIMAL · HCC DEVICE MATHEMATICALLY DEFINED WITH OPEN PARAMETERS · CUP DEVICE MATHEMATICALLY DEFINED WITH COUNTERFACTUAL/MODEL OPENS · WATER DEVICE MATHEMATICALLY DEFINED WITH CURRENT-LAW CORRECTIONS · MACHINE CONSTRUCTION PATH ESTABLISHED WITH SOURCE-SPECIFIC OPENS.**
 
 ---
 
