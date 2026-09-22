@@ -1,7 +1,7 @@
-STATUS: FREE
+STATUS: HELD
 STATION: maps
 OWNS: docs/reason-model-map.md docs/rust-nostd-*.md docs/atomic-primitives-map.md docs/clock/gearing-code-1to1.md docs/coherence-audit*.md docs/clock/system-mathematical-model.md docs/defrag-plan.md docs/plans/** docs/namespace-register.md docs/*.md (catch-all: any unmatched file at the docs/ root)
-AGENT: -
-BASE: -
-SINCE: -
+AGENT: Claude-Fable-math-audit
+BASE: 5ffe01156047df01e8cd0823a286b53e89082905
+SINCE: 2026-09-22T22:53:22Z
 NOTE: Math-execution audit board + six pass plans persisted 2026-09-22 (PLAN, nothing executed; docs/plans/math-execution-audit-*.md). Rulings MA-H00-H05 left with the human. Model, satellites, register untouched. Next event: the human's proceed for pass 1 (census + rulings register).
