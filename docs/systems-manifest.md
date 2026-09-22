@@ -13,6 +13,8 @@ Source corpus for this manifest (author-presented as the definition of the proje
 
 The four graphics are four presentations of one mechanism, not four subsystems. Graphic D is the only storage model. Graphics A–C are behavioral / topological presentations of the same growth rule.
 
+Panel numerals are printed on the artwork — `1.`–`13.` on A, `1.`–`12.` on B and C, `1.`–`6.` on D, each before its title; the letter prefix in the citations below (`A6`, `B4`, `C6`, `D1`) is this manifest's, not the graphics'. Printed titles are recorded in the per-graphic ASCII companions under `docs/graphics/`.
+
 ASCII spine (pass 1, companion): `docs/systems-manifest-ascii.md`. Does not replace this file. Does not fill G2.
 
 ### Current human-ruling reconciliation — 2026-09-21

@@ -143,7 +143,7 @@ Knots as a meeting place for apparently separate ideas. That is the only series 
 
 ## Rule for readers and bots
 
-If a sentence in any of these works would change WORD, POINTER, star, or the governing rule, discard it for Core and keep it as reading notes. Pointer emission remains a `[GAP]` until written in `docs/pointer-emission.md` from the four graphics, not from these volumes and not from HCC-A / Coffee Cup / Water OBS format.
+If a sentence in any of these works would change WORD, POINTER, star, or the governing rule, discard it for Core and keep it as reading notes. `docs/pointer-emission.md` exists as a reconciled but unaccepted draft (WORD landing, root, RootTouch, binary `Join`, finite grounding, the human-ruled sampling architecture); the open Core-adjacent question is **RM-A retain-when**. It will not be closed from these volumes, nor from HCC-A / Coffee Cup / Water OBS format, nor by this catalog: only the four graphics, an explicit human ruling, and the human's in-repo acceptance of the exact draft can move it. *(Wording reconciled by [reference audit pass 3](plans/reference-audit-pass-3-plan.md), 2026-09-22; the older sentence read "remains a `[GAP]` until written".)*
 
 Five-page KEEP/FORBID clip of stakes 1–5: `docs/clipboards/clipboard-five-stakes.md`. Projection of `docs/reason-model-map.md`. Not Core.
 

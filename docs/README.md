@@ -10,7 +10,8 @@ The four graphics define the project. Everything else on this page is derived fr
 
 | File | What it is |
 |---|---|
-| [graphics/](graphics/README.md) | **The four canonical PNGs.** The source. Never moved, never re-encoded |
+| [graphics/](graphics/README.md) | **The four canonical PNGs.** The source. Never moved, never re-encoded. Panel numerals are printed on the artwork; the A/B/C/D letter is this repository's |
+| [graphics/graphic-d-ascii.md](graphics/graphic-d-ascii.md) · [A](graphics/graphic-a-ascii.md) · [B](graphics/graphic-b-ascii.md) · [C](graphics/graphic-c-ascii.md) | ASCII companions, one per graphic, for a reader whose tools cannot open a PNG. D's carries the eleven rows, the two entry schemas, the nine key properties and the footer rule as printed. None replaces its PNG; none fills G2 |
 | [systems-manifest.md](systems-manifest.md) | Contract map extracted from the graphics: Pieces 1–15, couplings, seams, open questions |
 | [graphics-close-reading.md](graphics-close-reading.md) | Row-level second pass over panel D1: what the eleven rows close, and the gaps they open |
 

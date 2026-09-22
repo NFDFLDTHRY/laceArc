@@ -94,7 +94,7 @@ Shelves (defrag pass 1–4). Hands stay at `docs/` root. Do not treat a prompt, 
 | [docs/coherence-audit-log.md](docs/coherence-audit-log.md) | Append-only coherence audit tick log. |
 | [docs/prompts/shadow-clock-shared-interactive-prompt.md](docs/prompts/shadow-clock-shared-interactive-prompt.md) | **[HISTORICAL / COMPLETED]** Bootstrap ticket for renderer/contracts that now exist. |
 | [LICENSE](LICENSE) | Apache-2.0 |
-| [AGENTS.md](AGENTS.md) | Standing orders for any Grok / Grok Bot / Grok Build session in this tree. |
+| [AGENTS.md](AGENTS.md) | Standing orders for every agent in this tree — local or cloud, Grok, Codex, Claude Code (which loads them through `CLAUDE.md`) or the next model. Read first, then [`docs/prompts/context-pass.md`](docs/prompts/context-pass.md). |
 | [CLAUDE.md](CLAUDE.md) | Pointer that loads those standing orders into Claude Code sessions. |
 | [.claude/](.claude/) | Session setup for Claude Code on the web: startup hook and repository checks. No runtime. |
 | [docs/references.md](docs/references.md) | Source catalog for behavioral-goal, research, and platform/toolchain material. Clipboards feed the lab; source citation alone does not enter Core. PDFs are not in this public repo. |
