@@ -1,6 +1,6 @@
 # Reference audit — pass 3 plan: court-root reference wording (law station)
 
-**Status:** PLAN · not executed.  
+**Status:** EXECUTED — CLOSED · receipt [reference-audit-pass-3-findings.md](reference-audit-pass-3-findings.md). RA-H02 was not ruled, so the conditional pointer-draft delimiter edit did not run.  
 **Station:** law (execution). This plan file is maps-owned.  
 **Board:** [reference-audit-iteration-plan.md](reference-audit-iteration-plan.md) · findings RA-R01, RA-R02, RA-R03, RA-R04, RA-G09 (law half) · ruling RA-H02.  
 **Pinned:** `21652f463b3178075cc9d4568847502766c0304a`.  
