@@ -7,6 +7,8 @@
 
 **Current-law qualification — Alignment Restart Pass 1.** Read this map through the current [Pass-32 global mechanism catalog](systems-manifest-ascii.md#pass-32--manifest-reconciliation-pass-1--canonical-mechanism-catalog) and the matching [mechanism contract registry](systems-manifest.md#current-mechanism-contract-registry--manifest-reconciliation-pass-1). Current facts are: every successful arrival appends WORD; unseen WORD becomes root; seen occurrence RootTouches root; POINTER is binary Join over two ordered earlier same-line WORD/POINTER points; repeated Join grounds finite **already-selected/addressable** samples; H7–H12 establish derived position×scale sampling as relationship discovery; star/search is derived read-only machinery. The canonical `SM-GAP-RM` interface remains open, but latest bounded Lab evidence narrows it: **RM-A retain-when remains open / MISSING-A; RM-B is partially closed for selected finite contiguous samples; RM-C is class-specifically closed for RootTouch and contiguous sample grounding.** Older broad “retention/materialization remains open” rows in this map are read under that current qualification. Persistence/re-entry is not retention. Graphic-C 2D projection is not the H7–H12 sampler. The reconciled pointer-emission draft is still not human-accepted, so no implementation authorization follows.
 
+**Behavioral Read Devices Pass 4 graphics-fidelity qualification:** the current mathematical court now states explicitly that the root and occurrence set are partial reads, not the full star formation; set-valued \(\operatorname{Reach}\) is ancestry membership and does not preserve path multiplicity; D1 contains two distinct reference paths from 0010 to 0000; and a 3D/N-D view is policy-dependent/read-only rather than one source-specified unique geometry. This map already kept membership below full formation and faithful geometry in G5; those boundaries are now explicit here as well.
+
 **Source revision:** `NFDFLDTHRY/laceArc` at `ba6a0ee5660dc4222701d8c5b0a38f4a4d6af041`. Graphic letters refer to the [four canonical graphics](graphics/README.md); piece numbers refer to the [systems manifest](systems-manifest.md). The complete [staking law](staking-the-workspace.md) and [live law](law-why-these-documents.md) remain binding. This map does not replace either text.
 
 ## 1. The atomic map
@@ -168,7 +170,7 @@ The five academic stakes also supply no atomic Core operator. Kauffman's later g
 |---|---|---|
 | One WORD plus a repetition count is sufficient. | D1 has PIE at both 0000 and 0003. | P1/P2 and K2 retain both. |
 | A list of matching indices is the whole star. | A12/B9 require distinct traffic and contexts; D1 includes participation beyond WORD membership. | Section 3 limits the membership reading. Full readout remains G5. |
-| Every adjacent WORD pair emits a binary POINTER. | Manifest Q2 explicitly leaves timing, arity, and adjacency open. | G2 stays open; D1 is a witness, not a scheduler. |
+| Every adjacent WORD pair emits a binary POINTER. | Current law closes the binary Join **shape** but explicitly rejects adjacency alone as the retain/emission trigger; RM-A retain-when remains open. | Adjacency does not append Join. Binary arity is closed in the current model; schedule/retention remains separate. D1 is a state witness, not a selector. |
 | “Backward” forces every depicted operand arrow to descend. | D1 row 0006 depicts 0003 → 0005. | Section 3 separates the three relations; the proof uses only section-to-reference descent. |
 | Add a continuation field now and fill it later. | A later write changes an earlier section, even if performed once. | K1 rules it out; no mutable continuation slot. |
 | Labels splitting or merging must split or merge historical WORDs. | Live law confines these acts to naming observed geometry. | Three identities remain separate; K5 applies. |
@@ -180,7 +182,7 @@ The five academic stakes also supply no atomic Core operator. Kauffman's later g
 
 **Bounded verdict:** Complete as a mapping of the current 15 manifest pieces and the named conceptual-reference/view families above. Incomplete as an executable construction, physical validation, minimality proof, or accepted POINTER contract. These limits are part of the result.
 
-**Next narrow question:** What precise source-backed condition distinguishes a WORD-only continuation from one that also appends a POINTER, and how does that condition determine the earlier targets? A future `docs/pointer-emission.md` must resolve the relevant G2 questions and receive human acceptance of its exact revision before Core code is permitted. This map supplies no answer by default.
+**Next narrow question:** What exact RM-A condition retains a sampling-derived candidate, and when that candidate is still ephemeral, what lawful RM-B/RM-C path makes the required operands addressable without inventing a second store? RootTouch and contiguous-sample grounding have class-specific closure, binary Join is current, and adjacency alone is closed false. The reconciled `docs/pointer-emission.md` still requires human acceptance of its exact revision before Core code is permitted. This map supplies no missing RM-A answer by default.
 
 ## 7. Task and source receipt
 
