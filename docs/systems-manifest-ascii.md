@@ -2,9 +2,9 @@
 
 **Not the manifest.** [`systems-manifest.md`](systems-manifest.md) is the Hands contract map; this is an ASCII reading of it and settles nothing it does not.
 
-**Current reading qualification, 2026-09-21:** **Pass 33 — Source → Lab → Lace Alignment Restart Pass 1** is the current vertical authority/context overlay. **Pass 32 remains the current canonical mechanism catalog** and systems-manifest.md remains the contract registry; Pass 33 does not replace either. The restart aligns behavioral-goal, research, and platform sources through clipboards into the laceArc Lab, keeps Lab evidence distinct from Core authority, and records the latest bounded RM evidence: **RM-A retain-when remains open / MISSING-A; RM-B is partially closed for selected finite contiguous samples; RM-C is class-specifically closed for RootTouch and contiguous grounding.** Canonical SM-GAP-RM remains one open interface; acceptance remains absent.
+**Current reading qualification, 2026-09-21:** **Pass 34 — Source → Lab → Lace Alignment Restart Pass 2** is the current operational traceability overlay. **Pass 33 remains the vertical authority/context overlay; Pass 32 remains the canonical mechanism catalog; `systems-manifest.md` remains the contract registry.** Pass 34 records whether source machinery has a faithful Lab representation, actual experiment/derivation result, exact Lace consumer, and any implementation-relevant platform obligation. Current verdict: **TRACEABLE WITH DEBT / BOUNDED COVERAGE**. RM-A remains open / MISSING-A; no new retention rule, mechanism, acceptance, or implementation authority is introduced.
 
-**Executed passes:** [1](systems-manifest-ascii-pass-1-plan.md) · [2](systems-manifest-ascii-pass-2-plan.md) · [3](systems-manifest-ascii-pass-3-plan.md) · [4](systems-manifest-ascii-pass-4-plan.md) · [5](systems-manifest-ascii-pass-5-plan.md) · [6](systems-manifest-ascii-pass-6-plan.md) · [7](systems-manifest-ascii-pass-7-plan.md) · [8](systems-manifest-ascii-pass-8-plan.md) · [9](systems-manifest-ascii-pass-9-plan.md) · [10](systems-manifest-ascii-pass-10-plan.md) · [11](systems-manifest-ascii-pass-11-plan.md) · [12](systems-manifest-ascii-pass-12-plan.md) · [13](systems-manifest-ascii-pass-13-plan.md) · [14](systems-manifest-ascii-pass-14-plan.md) · [15](systems-manifest-ascii-pass-15-plan.md) · [16](systems-manifest-ascii-pass-16-plan.md) · [17](systems-manifest-ascii-pass-17-plan.md) · [18](systems-manifest-ascii-pass-18-plan.md) · [19](systems-manifest-ascii-pass-19-plan.md) · [20](systems-manifest-ascii-pass-20-plan.md) · [21](systems-manifest-ascii-pass-21-plan.md) · [22](systems-manifest-ascii-pass-22-plan.md) · [23](systems-manifest-ascii-pass-23-plan.md) · [24](systems-manifest-ascii-pass-24-plan.md) · [25](systems-manifest-ascii-pass-25-plan.md) · [26](plans/lace-context-iter6-pass-3-findings.md) · [27](plans/lace-context-iter7-pass-3-audit.md) · [28](plans/reduction-pass-3-findings.md) · [29](plans/math-execution-root-touch-fold-pass-5-findings.md) · **30 = SAMPLING / DENSITY / EMERGENCE Pass 6 reconciliation** · **[31](plans/lab-source-architecture-pass-1-plan.md) = LAB SOURCE ARCHITECTURE Pass 1 (current source/lab overlay; Core unchanged).** · **[32](plans/manifest-reconciliation-pass-1-plan.md) = MANIFEST RECONCILIATION Pass 1 (current mechanism catalog ↔ contract registry).** · **[33](plans/source-lab-lace-alignment-pass-1-plan.md) = SOURCE → LAB → LACE ALIGNMENT RESTART Pass 1 (current vertical authority/context overlay; Pass 32 catalog preserved).**
+**Executed passes:** [1](systems-manifest-ascii-pass-1-plan.md) · [2](systems-manifest-ascii-pass-2-plan.md) · [3](systems-manifest-ascii-pass-3-plan.md) · [4](systems-manifest-ascii-pass-4-plan.md) · [5](systems-manifest-ascii-pass-5-plan.md) · [6](systems-manifest-ascii-pass-6-plan.md) · [7](systems-manifest-ascii-pass-7-plan.md) · [8](systems-manifest-ascii-pass-8-plan.md) · [9](systems-manifest-ascii-pass-9-plan.md) · [10](systems-manifest-ascii-pass-10-plan.md) · [11](systems-manifest-ascii-pass-11-plan.md) · [12](systems-manifest-ascii-pass-12-plan.md) · [13](systems-manifest-ascii-pass-13-plan.md) · [14](systems-manifest-ascii-pass-14-plan.md) · [15](systems-manifest-ascii-pass-15-plan.md) · [16](systems-manifest-ascii-pass-16-plan.md) · [17](systems-manifest-ascii-pass-17-plan.md) · [18](systems-manifest-ascii-pass-18-plan.md) · [19](systems-manifest-ascii-pass-19-plan.md) · [20](systems-manifest-ascii-pass-20-plan.md) · [21](systems-manifest-ascii-pass-21-plan.md) · [22](systems-manifest-ascii-pass-22-plan.md) · [23](systems-manifest-ascii-pass-23-plan.md) · [24](systems-manifest-ascii-pass-24-plan.md) · [25](systems-manifest-ascii-pass-25-plan.md) · [26](plans/lace-context-iter6-pass-3-findings.md) · [27](plans/lace-context-iter7-pass-3-audit.md) · [28](plans/reduction-pass-3-findings.md) · [29](plans/math-execution-root-touch-fold-pass-5-findings.md) · **30 = SAMPLING / DENSITY / EMERGENCE Pass 6 reconciliation** · **[31](plans/lab-source-architecture-pass-1-plan.md) = LAB SOURCE ARCHITECTURE Pass 1 (current source/lab overlay; Core unchanged).** · **[32](plans/manifest-reconciliation-pass-1-plan.md) = MANIFEST RECONCILIATION Pass 1 (current mechanism catalog ↔ contract registry).** · **[33](plans/source-lab-lace-alignment-pass-1-plan.md) = SOURCE → LAB → LACE ALIGNMENT RESTART Pass 1 (current vertical authority/context overlay; Pass 32 catalog preserved).** · **[34](plans/source-lab-lace-alignment-pass-2-plan.md) = SOURCE → LAB → LACE ALIGNMENT RESTART Pass 2 (operational traceability; evidence/debt overlay; Pass 32/33 preserved).**
 
 **Authority:** `docs/systems-manifest.md`. Companion, not a replacement.  
 **Hands:** Graphics A–D. Shoe in hands.  
@@ -631,6 +631,196 @@ Separately, `docs/plans/sampling-density-emergence-pass-6-plan.md` still records
 ### P33-R — verdict
 
 **ALIGNED WITH OPENS.** The current active repository fits the vertical source → clipboard → Lab → Lace → platform model. Pass 32 remains the canonical mechanism catalog; systems-manifest remains the contract registry. The primary unresolved design obligation is RM-A. Bounded RM-B/RM-C results remain scoped Lab evidence. Historical receipts remain historical. Platform reality constrains realizability without defining Lace semantics.
+
+
+---
+
+## Pass 34 — Source → Lab → Lace Alignment Restart Pass 2 — TRACE THE ARROWS
+
+**Campaign identity:** [Source → Lab → Lace Alignment Restart Pass 2](plans/source-lab-lace-alignment-pass-2-plan.md).  
+**Trace artifact:** [Pass-2 operational traceability register](plans/source-lab-lace-alignment-pass-2-traceability.md).  
+**Job:** expose evidence-state on the arrows between source clipboards, Lab representations, bounded results, Lace consumers, and platform feasibility. **No new L-M mechanism. No RM-A rule. No implementation authorization.**
+
+### P34-E — edge-state model
+
+~~~
+SOURCE / AUTHORITY
+      |
+      | SOURCE-DEFINED / HUMAN / DERIVED / LAB-PROXY
+      v
+CLIPBOARD / POINTABLE PROVENANCE
+      |
+      v
+LAB REPRESENTATION
+      |
+      | REPRODUCED / TESTED / SOURCE-ONLY / BLOCKED
+      v
+BOUNDED RESULT
+      |
+      | BEARS-ON
+      v
+SM-Cxx / RM-A / RM-B / RM-C / FORBID / NONE
+      |
+      | only if implementation-relevant
+      v
+PLATFORM REQUIREMENT
+      |
+      v
+SOURCE / OBSERVED / HUMAN-REPORTED / SYNTHETIC / NOT-RUN / GAP
+~~~
+
+A missing edge is a result. It must not be filled by editor convenience.
+
+### P34-R — reproduced Lab baseline
+
+The two current D1 instruments were materialized from the pinned GitHub bytes and their blob identities verified before execution:
+
+- `lace-candidate-run.py` blob `7586d39ad56381b07cacdbe687e29aba984f1deb`;
+- `lace-retention-harness.py` blob `20c73806cc8e97041d545abb0a67e3b73504fcfe`;
+- D1 fixture blob `0a3e7e2cde0c87e574634b3da934ddebe5ec389f`.
+
+Candidate-run reproduction:
+
+~~~
+behavioral pointability / RIC / F5 / F3 / I-A2    0 of 6 by rule
+RootTouch                                          1 of 6 by rule
+AdjacentPairs                                      6 proposed, diverges at row 0004
+~~~
+
+Retention-harness reproduction:
+
+~~~
+RootTouch               TP1 / FN5 / replay PASS
+WeightByRepetition      LAB-PROXY / replay PASS / no retain event
+AftermathRecirculation  34 discovered / 0 retained / replay PASS
+CheatingMemory          replay FAIL determinism@0000 / REJECT
+SidecarMemory           TP6 / FN0 / replay PASS / ORACLE-CHEAT / REJECT
+~~~
+
+Therefore:
+
+~~~
+perfect D1 fit + replay legality
+        !=
+evidence provenance
+        !=
+architectural adoption
+~~~
+
+### P34-T — trace outcomes by source family
+
+| Family | Operational result |
+|---|---|
+| **Behavioral goals** | source mechanisms are pointable; some are reproduced, some are source-only, and the strongest retention-shaped Cup candidate reaches RM-A silence rather than a retain predicate |
+| **Research** | real thresholds/selectors/retainers exist, but the first Lace-facing edge fails at adapter/input/output/prefix authority before general RM-A admission |
+| **HUMAN / DERIVED Lace** | RootTouch, Join, finite grounding, sampling/search, bounded contiguous RM-B and class-specific RM-C have complete traces at their declared scopes |
+| **Lab proxies / controls** | provenance remains separate from score; AdjacentPairs is bounded-falsified; CheatingMemory and SidecarMemory prove replay and oracle-independence are separate axes |
+| **Platform / toolchain** | executable primitives and physical limits trace to future realization obligations; they do not supply RM-A semantics |
+
+### P34-D — named experiment debt
+
+~~~
+SOURCE-ONLY
+    behavioral machinery with no current Lace-facing hypothesis
+
+NOT-YET-INSTRUMENTED
+    lawful hypothesis exists but current Lab does not represent it
+
+BLOCKED-ADAPTER
+    source-domain object has no SOURCE/HUMAN/DERIVED mapping to Lace evidence
+
+BLOCKED-INPUT
+    required state is unavailable from lawful prefix evidence
+
+BLOCKED-OUTPUT
+    source result is not a retained Lace relation / required consumer type
+
+AUTHORITY-BLOCKED
+    mechanism requires forbidden semantic/learned/mutable authority
+
+PREFIX-BLOCKED
+    mechanism requires future/full-trajectory evidence
+
+PLATFORM-UNESTABLISHED
+    semantic obligation is coherent but target realization evidence is incomplete
+~~~
+
+These labels describe evidence flow. They are not new Core authority classes.
+
+### P34-RM — RM face trace
+
+~~~
+L-M20 sampling evidence
+        |
+        X  RM-A / MISSING-A
+        |
+authority-backed RETAIN decision
+        |
+        v if selected
+RM-B materialization
+    selected finite contiguous sample  --> bounded TRACE-COMPLETE
+    arbitrary pattern/ridge/cross-level --> still candidate-specific/open
+        |
+        v
+RM-C role/order
+    RootTouch              --> TRACE-COMPLETE
+    contiguous grounding   --> bounded TRACE-COMPLETE
+    other candidate class  --> candidate-specific/open
+        |
+        v
+L-M05 / L-M19 legal Join path
+~~~
+
+Pass 34 adds no adapter across MISSING-A.
+
+### P34-P — platform feasibility boundary
+
+Implementation-relevant current machinery has named physical debts:
+
+| Current semantic machinery / proposal | Platform evidence state |
+|---|---|
+| append-only WORD/POINTER store | finite carrier/index/exhaustion/recovery remains implementation/app debt |
+| wasm64 future Core target | source-mapped target/toolchain path; practical Pixel memory64 scale still UNESTABLISHED; P-64a/b/c NOT-RUN |
+| Cargo build-std | source syntax/prerequisites mapped; exact `compiler_builtins` / lockfile closure and actual wasm64 build remain unestablished |
+| WebGPU | Layer-III/projection role only; Pixel capability is HUMAN_REPORTED bounded observation, not family-wide proof |
+| WGSL | shader language role source-grounded; no semantic write authority |
+| WebNN | optional non-authoritative projection proposal; may be absent; no Core role |
+| installed browser/app path | bounded install evidence exists; production isolation/offline/shared-memory claims remain conditional or NOT-RUN |
+
+A failed realization path does not by itself falsify the semantic mechanism. A platform API does not create semantics.
+
+### P34-F — falsifier board
+
+| Falsifier | Result |
+|---|---|
+| orphan source mechanism silently treated as architecture | **NO** — source-only debt explicit |
+| LAB-PROXY laundered as source | **NO** |
+| unrun candidate reported as tested | **NO** |
+| instrument incapacity treated as source refutation | **NO** |
+| orphan Lab result treated as architecture | **NO** |
+| authority upgraded by score | **NO** — Sidecar 6/6 remains REJECT |
+| D1 fit treated as mechanism identity | **NO** |
+| false positives hidden | **NO** — TP/FN/FP/pair/event reported |
+| editor adapter hidden | **NO** |
+| platform supplies Lace semantics | **NO** |
+| platform evidence strengths collapsed | **NO** |
+| implementation-relevant path has no feasibility debt | **NO** |
+| bounded RM-B/RM-C result universalized | **NO** |
+| RM-A design/ranking performed | **NO** |
+| implementation/acceptance gate moved | **NO** |
+
+### P34-V — verdict
+
+~~~
+ARCHITECTURE FLOW:
+    TRACEABLE WITH DEBT
+
+EXPERIMENT COVERAGE:
+    BOUNDED COVERAGE / NAMED DEBT
+~~~
+
+Every candidate-bearing mechanism inspected has either a complete provenance→representation→result→consumer trace or a named first missing edge. The current primary semantic break remains RM-A / MISSING-A. Platform feasibility remains downstream evidence, not semantic authority.
+
 
 ---
 
