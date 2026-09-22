@@ -1,7 +1,7 @@
-STATUS: FREE
+STATUS: HELD
 STATION: maps
 OWNS: docs/reason-model-map.md docs/rust-nostd-*.md docs/atomic-primitives-map.md docs/clock/gearing-code-1to1.md docs/coherence-audit*.md docs/clock/system-mathematical-model.md docs/defrag-plan.md docs/plans/** docs/namespace-register.md docs/*.md (catch-all: any unmatched file at the docs/ root)
-AGENT: -
-BASE: -
-SINCE: -
-NOTE: Repo-lag Pass 4 clock/hologram target-court plan persisted at docs/plans/repo-lag-pass-4-clock-target-plan.md before execution. Maps released; no clock semantics edited under maps.
+AGENT: ChatGPT
+BASE: f987c585b57a674421d209fa9fe5e8fbe08b9139
+SINCE: 2026-09-22T19:12:00Z
+NOTE: Closing repo-lag Pass 4 after hologram release: write findings/remainder docket, mark plan executed, index receipt. Namespace/audit-log remain backlog; no coord repair.
