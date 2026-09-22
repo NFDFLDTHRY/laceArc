@@ -1,12 +1,14 @@
 # System Mathematical Model — Lace Hands + Shadow Clock
 
+> **CURRENT STATUS — HISTORICAL CONCEPTUAL INTERPRETATION.** This file preserves the older Shadow-clock / dual-universe mathematical reading and its dated candidate equations. It is **not** the current Core or behavioral-machine model. Current Core mathematics is [`docs/math-execution-model.md`](../math-execution-model.md) S0–S8; current read-device / observability / realization / machine-construction mathematics is S9–S12, with the executed Pass-5 [HCC](../plans/math-execution-behavioral-read-devices-pass-5-hcc-device-blueprint.md), [Coffee Cup](../plans/math-execution-behavioral-read-devices-pass-5-coffee-cup-device-blueprint.md), and [Water](../plans/math-execution-behavioral-read-devices-pass-5-water-device-blueprint.md) blueprints. Statements below that leave binary POINTER arity broadly open, frame the old broad emission gap as current, or equate H×C×W gear states are historical/candidate claims and do not override the current model. Exact H×C×W coupling remains OPEN.
+
 **Conceptual-reference status, corrected 2026-09-20:** HCC-A, The Coffee Cup, and Where the Water Is Loud are conceptual reference documents. The [human correction](../law-why-these-documents.md#conceptual-reference-documents) supersedes their classification as required holder machinery. This file retains an analysis of their concepts; H/C/W or A/B/C gears, states, ratios, and contracts are interpretive notation. They establish no required LaceArc components, runtime dependencies, or conditions for legal append. Historical readings remain recorded at their original evidence strength.
 
 **Status:** Formal conceptual interpretation derived from Hands and earlier Shadow readings. The second mathematical universe models reference concepts, not a required second subsystem. Not Core executable code. Not a sixth graphic.
 **Primary derivation:** `docs/clock/shadow-clock-gear-contracts.md` (walks 1–7).  
 **Hands authority:** Graphic D (`docs/graphics/`), `docs/systems-manifest.md` Contracts I–III.  
 **Shadow companions:** `docs/clock/shadow-clock-hologram.md`, `docs/staking-the-workspace.md`, `docs/law-why-these-documents.md`.  
-**Hard law:** POINTER emission remains \([GAP]\). Shadow \(\{A,B,C\}\) is interpretive notation for concepts from the reference documents, not required holder machinery or Lace Core rows. Hands win over Shadow on conflict. No `src/` is implied by this document.
+**Historical hard-law line:** this document originally stated that broad POINTER emission remained \([GAP]\). Current law is narrower: WORD landing, root/RootTouch, binary Join and finite grounding are reconciled; **RM-A retain-when remains the primary open Core-adjacent transition** and pointer acceptance remains absent. Shadow \(\{A,B,C\}\) remains interpretive notation, not required holder machinery or Lace Core rows. Hands/current law win on conflict. No `src/` is implied by this document.
 
 ---
 
