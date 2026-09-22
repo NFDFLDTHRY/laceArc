@@ -1,5 +1,8 @@
 # Lace projection — review prompt
 
+**Classification, 2026-09-22: HISTORICAL / COMPLETED REVIEW TICKET.** The target brief now exists on the current repository path and later projection work supersedes the old branch-discovery problem. The raw branch URL and pass-1 findings below are provenance. Do not restart review from the old branch pin; begin any new review from the current brief and current Layer-III evidence.
+
+
 **Purpose:** hand this to another agent so the fence in
 [`docs/lace-projection-brief.md`](../plans/lace-projection-brief.md) gets attacked before
 anything is built. It is an **attack** pass, not a build pass.

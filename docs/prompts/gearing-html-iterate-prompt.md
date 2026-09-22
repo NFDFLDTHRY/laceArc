@@ -1,5 +1,8 @@
 # Gearing HTML visualizer — iteration ASCII prompt
 
+**Classification, 2026-09-22: BOUNDED FUTURE RENDERER TICKET.** This is not a standing edit loop. Reuse only under an explicit current renderer/gearing claim, with current-source and device evidence. Historical visual diagnoses or old successful frames do not establish the current renderer state.
+
+
 Paste everything inside the outer box to an agent. **Layer III only.** Iterate `docs/shadow-clock-gearing.html` and/or claimed `docs/gearing/contracts-*.js`. Not Core. Emission `[GAP]`. No `src/`. No CDN / npm / Three.js / `fetch` for contracts.
 
 Authority: `docs/clock/shadow-clock-gear-contracts.md` → shafts → WebGPU page.  

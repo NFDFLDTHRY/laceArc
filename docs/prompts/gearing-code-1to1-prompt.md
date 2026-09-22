@@ -1,5 +1,8 @@
 # Gearing visual ↔ code 1:1 — ASCII diagram agent prompt
 
+**Classification, 2026-09-22: BOUNDED FUTURE AUDIT TICKET.** An existing 1:1 map already records the dated visual/code comparison. Reuse this prompt only for a newly authorized re-audit against current renderer/contracts and current Rust proposal state. The Rust side remains a future implementation-decomposition proposal and the compilation target is **TARGET UNDECIDED**; no code birth follows from visual symmetry.
+
+
 Paste everything inside the outer box to an agent. **Audit / map only.** Layer III. Not Core. Emission `[GAP]`. No `src/` until pointer-emission is accepted.
 
 Goal: the **visual clock gearing mapper** (`docs/shadow-clock-gearing.html` + `docs/gearing/contracts-*.js`) and the **code** (planned Rust `#![no_std]` first-party layout in `docs/plans/rust-nostd-crate-map.md` / later crates) stay in a **strict one-to-one** relationship — every visible contract key has exactly one code unit, and every gearing-related code unit has exactly one visual key.

@@ -1,5 +1,8 @@
 # Gearing HTML — hologram template restyle ASCII prompt
 
+**Classification, 2026-09-22: HISTORICAL / BOUNDED RESTYLE TICKET.** Preserve the visual target and fences below as a dated restyle brief. Do not treat it as standing permission to modify the renderer; a current designated-editor scope and current renderer evidence are required.
+
+
 Paste everything inside the outer box to an agent. **Designated-editor tick(s)** on `docs/shadow-clock-gearing.html` (and CSS/inline only). Layer III. Emission `[GAP]`. No `src/`. No CDN / npm / Three.js / `fetch` for contracts.
 
 **Visual authority (templates):** the three hologram clockwork views — not plastic toy gears.

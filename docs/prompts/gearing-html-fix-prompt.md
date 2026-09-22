@@ -1,5 +1,8 @@
 # Gearing HTML visualizer — FIX pass ASCII prompt
 
+**Classification, 2026-09-22: HISTORICAL / BOUNDED FIX TICKET.** The mobile diagnosis below is dated evidence from its original screenshot. Do not assume those pixels still reproduce. Reuse only after a current renderer probe and a current designated-editor task establish the same failure.
+
+
 Paste everything inside the outer box to an agent. **One designated-editor tick** on `docs/shadow-clock-gearing.html` only. Layer III. Emission `[GAP]`. No `src/`. No CDN / npm / Three.js / `fetch` for contracts. Do **not** edit `contracts-*.js` this turn.
 
 Parent loop: `docs/prompts/gearing-html-iterate-prompt.md`  
