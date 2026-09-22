@@ -1,7 +1,7 @@
-STATUS: FREE
+STATUS: HELD
 STATION: graphics
 OWNS: docs/graphics/** docs/graphics-close-reading.md
-AGENT: -
-BASE: -
-SINCE: -
+AGENT: Claude-Fable-reference-audit
+BASE: dc3a03d2d51b46b7ce8e539a39ef4bf19c67f9a6
+SINCE: 2026-09-22T22:03:42Z
 NOTE: Astra-sampling-reconcile Pass 6 graphics reconciliation COMPLETE. PNG/source authority unchanged. Graphic B/C current qualifications now preserve source silence while recognizing later H7-H12 sampling architecture. Graphic C remains projection/view evidence; the human-ruled 2D position×scale sampling surface is explicitly distinct derived working machinery and is not attributed to C3. Active gap = exact sampling-derived retention/materialization; C6 route-family labeling remains separately open. No source image rewrite. coord.sh NOT_RUN.
