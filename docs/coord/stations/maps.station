@@ -1,7 +1,7 @@
-STATUS: FREE
+STATUS: HELD
 STATION: maps
 OWNS: docs/reason-model-map.md docs/rust-nostd-*.md docs/atomic-primitives-map.md docs/clock/gearing-code-1to1.md docs/coherence-audit*.md docs/clock/system-mathematical-model.md docs/defrag-plan.md docs/plans/** docs/namespace-register.md docs/*.md (catch-all: any unmatched file at the docs/ root)
-AGENT: -
-BASE: -
-SINCE: -
-NOTE: Behavioral Read Devices Pass 3 COMPLETE. SOURCE SET CORRECT; capability graph sound with source gaps; HOST-1/ACCEL-1/ML-1/COPY-1 proved; S11 admitted with source gaps; GAP-HOST explicit; R3/RM-A/target/acceptance/implementation unchanged.
+AGENT: ChatGPT
+BASE: 397c0e9c436d085c8acb134013e9789ce9c389b5
+SINCE: 2026-09-22T07:00:00Z
+NOTE: PLAN ONLY — derive Behavioral Read Devices Pass 4 by direct panel-level comparison of math-execution S0-S11 against canonical Graphics A-D. Separate source fact, human ruling, model theorem, and later overlay; test star/threading/N-D fidelity. No math-model edit.
