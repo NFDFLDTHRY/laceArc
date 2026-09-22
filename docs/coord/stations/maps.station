@@ -1,7 +1,7 @@
-STATUS: FREE
+STATUS: HELD
 STATION: maps
 OWNS: docs/reason-model-map.md docs/rust-nostd-*.md docs/atomic-primitives-map.md docs/clock/gearing-code-1to1.md docs/coherence-audit*.md docs/clock/system-mathematical-model.md docs/defrag-plan.md docs/plans/** docs/namespace-register.md docs/*.md (catch-all: any unmatched file at the docs/ root)
-AGENT: -
-BASE: -
-SINCE: -
+AGENT: Claude-Fable-reference-audit
+BASE: dc3a03d2d51b46b7ce8e539a39ef4bf19c67f9a6
+SINCE: 2026-09-22T22:32:10Z
 NOTE: Reference audit passes 1-5 EXECUTED. Obligation ledger (71 rows) added; namespace headline 62/456/127/677 reproduced before and after; orphans 0. Pass 6 (coord then maps closeout) is PLAN and waits on the human's proceed. Remaining repo-lag debt: coord station-description row (pass 6).
