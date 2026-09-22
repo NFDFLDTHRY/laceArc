@@ -1,7 +1,7 @@
-STATUS: FREE
+STATUS: HELD
 STATION: law
 OWNS: AGENTS.md CLAUDE.md docs/staking-the-workspace.md docs/law-why-these-documents.md docs/systems-manifest.md docs/pointer-emission.md docs/references.md CONTRIBUTING.md README.md .gitignore LICENSE docs/README.md
-AGENT: -
-BASE: -
-SINCE: -
-NOTE: Manifest Reconciliation Pass 4 law phase COMPLETE. systems-manifest now classifies open interfaces for bounded Lab dependency and decomposes SM-GAP-RM into RM-A retain / RM-B materialize / RM-C role-order subquestions without creating mechanisms or changing acceptance. G1 and other opens may be frozen only as specimen premises, not globally closed.
+AGENT: Astra-alignment-restart
+BASE: 933f142fae1a17752c83793a8c201a896c2c4f10
+SINCE: 2026-09-22T02:10:00Z
+NOTE: Alignment Restart Pass 1. Qualify current Core-facing wording so canonical SM-GAP-RM remains one open interface while latest bounded Lab evidence records RM-A open, RM-B partial/class-specific closure, and RM-C class-specific closures. No RM-A design, implementation, or acceptance.
