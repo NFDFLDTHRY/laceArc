@@ -1,8 +1,8 @@
 # CLIPBOARD — laceArc no_std branch contracts
 
-**Status: PLAN / PROPOSAL. Seven prose cards. No implementation acceptance. Current draft-law premise: binary Join + human-ruled sampling architecture; exact sampling-derived retention/materialization remains [GAP]. SearchHandle/search expansion remain maps-level derived reads, not accepted branch contracts.**
+**Status: PLAN / PROPOSAL. Seven prose cards. No implementation acceptance.** These are **future implementation-decomposition proposals**, not current Lace runtime components. Current draft law reconciles binary Join plus human-ruled sampling/search; canonical `SM-GAP-RM` remains open with RM-A retain-when primary, RM-B bounded for selected finite contiguous samples, and RM-C class-specific for RootTouch/contiguous grounding. SearchHandle/search expansion remain derived reads, not accepted branch contracts.
 
-**Manifest Reconciliation Pass 2 qualification:** Pass 32 distinguishes persistent Contract-I state, thin arrival, **derived sampling/search working machinery**, and read-only projection. These seven future branch cards are still only an implementation-decomposition proposal. Their lack of a sampling/search branch does not erase SM-C20/SM-C21, and it does not authorize adding such a branch here. No card owns SM-GAP-RM; no card may demote the H7–H12 sampler to a projection or hide retention/materialization in glue.
+**Alignment Restart Pass 1 qualification:** Pass 32 distinguishes persistent Contract-I state, thin arrival, derived sampling/search working machinery, and read-only projection. These seven future branch cards remain only an implementation-decomposition proposal. Their lack of a sampling/search branch does not erase SM-C20/SM-C21, and bounded RM-B/RM-C Lab evidence does not assign branch ownership. No card owns RM-A or the general `SM-GAP-RM`; no card may hide that decision in glue or infer eligibility from a bounded Lab result.
 Shelf note (defrag pass 2): this file is the **serial birth cards**. The crate tree is `docs/plans/rust-nostd-crate-map.md`. Neither authorizes implementation or supplies the still-open retention/materialization rule.
 
 Repository destination: `docs/plans/rust-nostd-branch-contracts.md`.
@@ -55,7 +55,7 @@ Current draft-law premises available to future proof work:
 - adjacency alone does not emit.
 
 Still unresolved / not owned by any card:
-- sampling-derived retention/materialization;
+- RM-A retain-when / general SM-GAP-RM ownership;
 - task-specific ordered-operand/slot proof where retention requires one;
 - G1 identity/tokenization;
 - human acceptance of pointer-emission.md;
