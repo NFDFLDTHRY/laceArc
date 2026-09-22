@@ -1,6 +1,6 @@
 # MATHEMATICAL EXECUTION MODEL — Behavioral Read Devices Pass 3 PLAN
 
-**Status:** PLAN — NOT EXECUTED.
+**Status:** EXECUTED 2026-09-21.
 **Campaign:** Mathematical Execution Model — Behavioral Read Devices.
 **Pass:** 3.
 **Pass name:** **MAP THE BUILDING FLOOR — technical capability graph, host boundary, and accelerator authority.**
@@ -12,6 +12,15 @@
 **R3 carrier:** OPEN.
 **RM-A:** OPEN / MISSING-A.
 **Full source-specific behavioral devices:** still deferred.
+**Execution claims:** maps `b744002b598814566e36e456c2ab80767d55cf72` · clipboards `08f5cc54290659cb8587167ec171344dd09adc5c`.
+**Capability inventory:** `c76f86bf4e89993eb18fa1660cae9b8dba80a019`.
+**Interop boundaries:** `8426b647bb29edafc29fd403c8bfb58bf03757d4`.
+**Source-gap ledger:** `74c5cb8d5ac01dabe37ac98d9482b2d490e36b9e`.
+**Clipboard taxonomy:** `bec490a787bbc9bfdfc2d6f5be19d05e17970199`.
+**Wasm host-scope correction:** `22f649f3f359713572c07d4348e6448bffa476c8`.
+**Primary model S11:** `d9477389f83672b9949be299556ae8eab47e65f6`.
+**Findings:** `b825ae20086bc2e02c46aa02474492ca7073b3db`.
+**Final verdict:** **SOURCE SET CORRECT · CAPABILITY GRAPH SOUND WITH SOURCE GAPS · HOST DEPENDENCE PROVED / SOURCE MISSING · ACCELERATOR NON-AUTHORITY PROVED · TECHNICAL CROSSWALK SOUND WITH OPTIONAL ACCELERATORS · S11 ADMITTED WITH SOURCE GAPS.**
 
 ---
 
