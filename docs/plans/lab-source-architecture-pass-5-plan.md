@@ -1,6 +1,6 @@
 # LAB SOURCE ARCHITECTURE — Pass 5 PLAN · research-family RM-A / RM-B / RM-C harvest
 
-**Status:** **EXECUTING** 2026-09-21.  
+**Status:** **EXECUTED** 2026-09-21 → [findings](lab-source-architecture-pass-5-findings.md). **Verdict: RESEARCH SUPPLIES RM-SHAPED MACHINERY BUT NO LEGAL LACE INPUT PATH.**  
 **Campaign:** Lab Source Architecture. **Pass:** 5.  
 **Baseline:** replacement Pass 4 verdict `SOURCE SILENT ON GENERAL RM PREDICATE` at `7b7f85e38417bcba4c30f0d01223002ec8565092`.  
 **Admission authority:** [Manifest Reconciliation Pass 4 Lab admission envelope](manifest-reconciliation-pass-4-lab-admission.md).  
