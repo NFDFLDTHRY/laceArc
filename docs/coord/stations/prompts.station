@@ -1,7 +1,7 @@
-STATUS: HELD
+STATUS: FREE
 STATION: prompts
 OWNS: docs/prompts/**
-AGENT: ChatGPT
-BASE: acba1021322bd15bc58c771cd484212e2f6baa10
-SINCE: 2026-09-22T08:34:00Z
-NOTE: EXECUTING Behavioral Read Devices Pass 6 Stage F. Reconcile mandatory context-pass to the current S9-S12 machine story, Pass-4 graphics fidelity, S11/GAP-HOST, Pass-5 blueprints and current Water ruling. No law/Core changes.
+AGENT: -
+BASE: -
+SINCE: -
+NOTE: Behavioral Read Devices Pass 6 Stage F COMPLETE. Mandatory context-pass now carries S9-S12, Pass-4 graphics fidelity, S11 T0-T6/GAP-HOST, Pass-5 operator library and HCC/Cup/Water blueprints, current Water UNK/INVALID law, and unchanged Core/implementation gates.
