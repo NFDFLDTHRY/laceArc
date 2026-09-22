@@ -1,7 +1,7 @@
-STATUS: HELD
+STATUS: FREE
 STATION: maps
 OWNS: docs/reason-model-map.md docs/rust-nostd-*.md docs/atomic-primitives-map.md docs/clock/gearing-code-1to1.md docs/coherence-audit*.md docs/clock/system-mathematical-model.md docs/defrag-plan.md docs/plans/** docs/namespace-register.md docs/*.md (catch-all: any unmatched file at the docs/ root)
-AGENT: Astra-alignment-restart
-BASE: d73f152e145ac106b30a9edcb109aa3b2e7d9238
-SINCE: 2026-09-21T21:30:00-07:00
-NOTE: Planning-only amendment to Restart Pass 5. Admit human-supplied rustc book and Cargo Book as exact hash matches to existing toolchain shelves; strengthen compiler/build-std source courts, probes, boundaries and falsifiers. No target/Core/carrier/implementation gate movement.
+AGENT: -
+BASE: -
+SINCE: -
+NOTE: Restart Pass 5 PLAN amended with human-supplied rustc book and Cargo Book. Both hashes match existing toolchain shelves. Plan now separates rustc target facts from Cargo build orchestration, adds explicit toolchain/build-std/closure/features/lockfile probes and falsifiers, preserves compiler_builtins + sysroot-lock GAPs, and keeps target/Core/carrier/implementation unchanged.
