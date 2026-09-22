@@ -1,6 +1,6 @@
 # Reference audit — pass 1 plan: Graphic D ASCII companion
 
-**Status:** PLAN · not executed.  
+**Status:** EXECUTED — CLOSED · receipt [reference-audit-pass-1-findings.md](reference-audit-pass-1-findings.md). The *Measured* readings below are the pre-execution readings; the receipt §2 corrects panel 3's arc endpoints.  
 **Station:** graphics (execution). This plan file is maps-owned.  
 **Board:** [reference-audit-iteration-plan.md](reference-audit-iteration-plan.md) · findings RA-G05, RA-G08.  
 **Pinned:** `21652f463b3178075cc9d4568847502766c0304a`.  
