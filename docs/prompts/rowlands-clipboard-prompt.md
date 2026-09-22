@@ -1,5 +1,8 @@
 # Rowlands *Zero to Infinity* — ASCII diagram agent prompt
 
+**Classification, 2026-09-22: HISTORICAL / COMPLETED CREATION TICKET.** The filled [Rowlands product](../clipboards/rowlands-zero-to-infinity-clipboard.md) already exists and has completed source-mapping passes. Do **not** replay this prompt to recreate or overwrite that product. Preserve the body below as the original source-mapping task. For current research-machine use, read [the clipboard shelf](../clipboards/README.md#current-research-machine-role--behavioral-read-devices-pass-56), S9/S12, and the existing product; source machinery may support optional device-local operators but remains non-Core and source-specific.
+
+
 Paste everything inside the outer box to an agent. Shadow only. Not Core. Emission `[GAP]`. Never commit the PDF.
 
 Source slug: `Series-on-Knots-and-Everything-Peter-Rowlands-Z...` · Peter Rowlands — *Zero to Infinity: The Foundations of Physics* · Series on Knots and Everything Vol. 41 · ISBN `978-981-270-914-1`  

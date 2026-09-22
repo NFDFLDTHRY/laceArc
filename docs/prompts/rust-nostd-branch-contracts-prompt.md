@@ -1,5 +1,8 @@
 # Rust `#![no_std]` — next plan: per-branch contracts ASCII prompt
 
+**Classification, 2026-09-22: HISTORICAL / COMPLETED PLANNING TICKET.** The [existing proposal](../plans/rust-nostd-branch-contracts.md) is the accumulated product. Do **not** rerun this prompt to recreate the tree/cards or treat its older broad emission-gap language as the current whole gate. Current law: the pointer draft exists but is unaccepted; RM-A retain-when remains OPEN / MISSING-A; G1 and R3 remain OPEN; compilation target is **TARGET UNDECIDED**; no `src/`. The existing Rust documents are future implementation-decomposition proposals, not authorization.
+
+
 Paste everything inside the outer box to an agent. **Plan only.** Deepen `docs/plans/rust-nostd-crate-map.md` into per-branch contracts (API surface, forbidden states, proof shape). Not code. Not `src/`. Emission `[GAP]`.
 
 Prerequisite (already on disk): `docs/plans/rust-nostd-crate-map.md`  

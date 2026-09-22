@@ -1,5 +1,8 @@
 # Rust `#![no_std]` / first-party crates — ASCII diagram agent prompt
 
+**Classification, 2026-09-22: HISTORICAL / COMPLETED PLANNING TICKET.** The [existing proposal](../plans/rust-nostd-crate-map.md) is the accumulated product. Do **not** rerun this prompt to recreate the tree/cards or treat its older broad emission-gap language as the current whole gate. Current law: the pointer draft exists but is unaccepted; RM-A retain-when remains OPEN / MISSING-A; G1 and R3 remain OPEN; compilation target is **TARGET UNDECIDED**; no `src/`. The existing Rust documents are future implementation-decomposition proposals, not authorization.
+
+
 Paste everything inside the outer box to an agent. **Plan map only.** Not Core code. Emission `[GAP]`. No `src/` until `docs/pointer-emission.md` exists **and** the human accepted it.
 
 Hands first: shoe → graphics A–D → systems-manifest → staking IMPLEMENTATION LAW → AGENTS.md Implementation Law → reason-model-map → then propose crate/branch layout.
