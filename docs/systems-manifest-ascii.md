@@ -2,9 +2,9 @@
 
 **Not the manifest.** [`systems-manifest.md`](systems-manifest.md) is the Hands contract map; this is an ASCII reading of it and settles nothing it does not.
 
-**Current reading qualification, 2026-09-21:** **Pass 34 — Source → Lab → Lace Alignment Restart Pass 2** is the current operational traceability overlay. **Pass 33 remains the vertical authority/context overlay; Pass 32 remains the canonical mechanism catalog; `systems-manifest.md` remains the contract registry.** Pass 34 records whether source machinery has a faithful Lab representation, actual experiment/derivation result, exact Lace consumer, and any implementation-relevant platform obligation. Current verdict: **TRACEABLE WITH DEBT / BOUNDED COVERAGE**. RM-A remains open / MISSING-A; no new retention rule, mechanism, acceptance, or implementation authority is introduced.
+**Current reading qualification, 2026-09-21:** **Pass 35 — Source → Lab → Lace Alignment Restart Pass 3** is the current behavioral-goal assay overlay. **Pass 34 remains operational machinery traceability; Pass 33 remains vertical authority/context; Pass 32 remains the canonical mechanism catalog; `systems-manifest.md` remains the contract registry.** Pass 35 operationalizes bounded HCC-A/Coffee Cup/Water behaviors as mechanism-agnostic Lab assays and records current Lace only as substrate/read support where appropriate. The assay self-test passes 24/24 controls, but no current holder/application candidate is shown to satisfy the behavioral goals. RM-A remains open / MISSING-A; no Core mechanism, holder runtime, acceptance, or implementation authority is introduced.
 
-**Executed passes:** [1](systems-manifest-ascii-pass-1-plan.md) · [2](systems-manifest-ascii-pass-2-plan.md) · [3](systems-manifest-ascii-pass-3-plan.md) · [4](systems-manifest-ascii-pass-4-plan.md) · [5](systems-manifest-ascii-pass-5-plan.md) · [6](systems-manifest-ascii-pass-6-plan.md) · [7](systems-manifest-ascii-pass-7-plan.md) · [8](systems-manifest-ascii-pass-8-plan.md) · [9](systems-manifest-ascii-pass-9-plan.md) · [10](systems-manifest-ascii-pass-10-plan.md) · [11](systems-manifest-ascii-pass-11-plan.md) · [12](systems-manifest-ascii-pass-12-plan.md) · [13](systems-manifest-ascii-pass-13-plan.md) · [14](systems-manifest-ascii-pass-14-plan.md) · [15](systems-manifest-ascii-pass-15-plan.md) · [16](systems-manifest-ascii-pass-16-plan.md) · [17](systems-manifest-ascii-pass-17-plan.md) · [18](systems-manifest-ascii-pass-18-plan.md) · [19](systems-manifest-ascii-pass-19-plan.md) · [20](systems-manifest-ascii-pass-20-plan.md) · [21](systems-manifest-ascii-pass-21-plan.md) · [22](systems-manifest-ascii-pass-22-plan.md) · [23](systems-manifest-ascii-pass-23-plan.md) · [24](systems-manifest-ascii-pass-24-plan.md) · [25](systems-manifest-ascii-pass-25-plan.md) · [26](plans/lace-context-iter6-pass-3-findings.md) · [27](plans/lace-context-iter7-pass-3-audit.md) · [28](plans/reduction-pass-3-findings.md) · [29](plans/math-execution-root-touch-fold-pass-5-findings.md) · **30 = SAMPLING / DENSITY / EMERGENCE Pass 6 reconciliation** · **[31](plans/lab-source-architecture-pass-1-plan.md) = LAB SOURCE ARCHITECTURE Pass 1 (current source/lab overlay; Core unchanged).** · **[32](plans/manifest-reconciliation-pass-1-plan.md) = MANIFEST RECONCILIATION Pass 1 (current mechanism catalog ↔ contract registry).** · **[33](plans/source-lab-lace-alignment-pass-1-plan.md) = SOURCE → LAB → LACE ALIGNMENT RESTART Pass 1 (current vertical authority/context overlay; Pass 32 catalog preserved).** · **[34](plans/source-lab-lace-alignment-pass-2-plan.md) = SOURCE → LAB → LACE ALIGNMENT RESTART Pass 2 (operational traceability; evidence/debt overlay; Pass 32/33 preserved).**
+**Executed passes:** [1](systems-manifest-ascii-pass-1-plan.md) · [2](systems-manifest-ascii-pass-2-plan.md) · [3](systems-manifest-ascii-pass-3-plan.md) · [4](systems-manifest-ascii-pass-4-plan.md) · [5](systems-manifest-ascii-pass-5-plan.md) · [6](systems-manifest-ascii-pass-6-plan.md) · [7](systems-manifest-ascii-pass-7-plan.md) · [8](systems-manifest-ascii-pass-8-plan.md) · [9](systems-manifest-ascii-pass-9-plan.md) · [10](systems-manifest-ascii-pass-10-plan.md) · [11](systems-manifest-ascii-pass-11-plan.md) · [12](systems-manifest-ascii-pass-12-plan.md) · [13](systems-manifest-ascii-pass-13-plan.md) · [14](systems-manifest-ascii-pass-14-plan.md) · [15](systems-manifest-ascii-pass-15-plan.md) · [16](systems-manifest-ascii-pass-16-plan.md) · [17](systems-manifest-ascii-pass-17-plan.md) · [18](systems-manifest-ascii-pass-18-plan.md) · [19](systems-manifest-ascii-pass-19-plan.md) · [20](systems-manifest-ascii-pass-20-plan.md) · [21](systems-manifest-ascii-pass-21-plan.md) · [22](systems-manifest-ascii-pass-22-plan.md) · [23](systems-manifest-ascii-pass-23-plan.md) · [24](systems-manifest-ascii-pass-24-plan.md) · [25](systems-manifest-ascii-pass-25-plan.md) · [26](plans/lace-context-iter6-pass-3-findings.md) · [27](plans/lace-context-iter7-pass-3-audit.md) · [28](plans/reduction-pass-3-findings.md) · [29](plans/math-execution-root-touch-fold-pass-5-findings.md) · **30 = SAMPLING / DENSITY / EMERGENCE Pass 6 reconciliation** · **[31](plans/lab-source-architecture-pass-1-plan.md) = LAB SOURCE ARCHITECTURE Pass 1 (current source/lab overlay; Core unchanged).** · **[32](plans/manifest-reconciliation-pass-1-plan.md) = MANIFEST RECONCILIATION Pass 1 (current mechanism catalog ↔ contract registry).** · **[33](plans/source-lab-lace-alignment-pass-1-plan.md) = SOURCE → LAB → LACE ALIGNMENT RESTART Pass 1 (current vertical authority/context overlay; Pass 32 catalog preserved).** · **[34](plans/source-lab-lace-alignment-pass-2-plan.md) = SOURCE → LAB → LACE ALIGNMENT RESTART Pass 2 (operational traceability; evidence/debt overlay; Pass 32/33 preserved).** · **[35](plans/source-lab-lace-alignment-pass-3-plan.md) = SOURCE → LAB → LACE ALIGNMENT RESTART Pass 3 (behavioral-goal assays; mechanism-agnostic self-test; no holder/Core promotion).**
 
 **Authority:** `docs/systems-manifest.md`. Companion, not a replacement.  
 **Hands:** Graphics A–D. Shoe in hands.  
@@ -820,6 +820,171 @@ EXPERIMENT COVERAGE:
 ~~~
 
 Every candidate-bearing mechanism inspected has either a complete provenance→representation→result→consumer trace or a named first missing edge. The current primary semantic break remains RM-A / MISSING-A. Platform feasibility remains downstream evidence, not semantic authority.
+
+
+
+---
+
+## Pass 35 — Source → Lab → Lace Alignment Restart Pass 3 — TEST THE DESTINATION
+
+**Campaign identity:** [Source → Lab → Lace Alignment Restart Pass 3](plans/source-lab-lace-alignment-pass-3-plan.md).  
+**Assay register:** [behavioral-goal assays](plans/source-lab-lace-alignment-pass-3-goal-assays.md).  
+**Lab tool:** [lace-behavior-assay.py](plans/tools/lace-behavior-assay.py).  
+**Control fixture:** [behavioral-goals-assay-controls-v0.1.0.json](plans/fixtures/behavioral-goals-assay-controls-v0.1.0.json).  
+**Job:** make the behavioral-goal layer falsifiable without treating source-described machinery as required implementation. **No new L-M mechanism. No RM-A rule. No holder runtime.**
+
+### P35-G — goal vs machinery
+
+~~~
+BEHAVIORAL GOAL
+    what must observably happen
+
+SOURCE MACHINERY
+    one source-described organization of that behavior
+
+CANDIDATE MACHINERY
+    any Lab proposal
+
+ASSAY
+    mechanism-agnostic behavioral test
+~~~
+
+Two collapses remain forbidden:
+
+~~~
+source machinery present  !=  goal satisfied
+source machinery absent   !=  goal failed
+~~~
+
+### P35-A — admitted behavioral assay set
+
+| Source family | Goal IDs | Bounded target |
+|---|---|---|
+| **HCC-A** | H-G1 · H-G2 · H-G3 | structure vs local interpretation; feedback without history rewrite; structure-only boundary across holders |
+| **Coffee Cup** | C-G1 · C-G2 · C-G3 | causal-stage distinction; shrinking intervention window; aftermath affects later conditions without rewriting impact |
+| **Water / Dual Proofing** | W-G1 · W-G2 · W-G3 · W-G4 | pointability; pressure≠transfer; shared-footing transition with separate inventories; explicit missing evidence |
+| **Cross-source compatibility** | X-G1 · X-G2 | recurrence without fused state; shared pointable structure without forced shared meaning |
+
+These are bounded assay targets, not a claim that every sentence in all three source documents has been operationalized.
+
+### P35-M — mechanism-blindness rule
+
+Each assay was checked against two conceptual implementations:
+
+~~~
+M1  source-like internal machinery
+M2  alien internal machinery with equivalent observable behavior
+~~~
+
+All twelve assay specifications permit both to PASS when observable behavior is equivalent.
+
+Source labels are not part of any PASS criterion.
+
+### P35-T — assay self-test
+
+Committed blobs:
+
+- tool: `47edcff0da2cc5d24e3d1e24d9f5aefd5a0fed21`;
+- control fixture: `e3e8745415eb7689b569485cb14143e3d6ff4b3b`.
+
+Local Git blob hashing matched both before execution.
+
+Result:
+
+~~~
+goals       12
+cases       24
+mismatches   0
+exit          0
+~~~
+
+Control design:
+
+~~~
+unlabeled correct behavior        -> PASS
+source-label mimic + anti-goal    -> FAIL
+~~~
+
+Bad controls caught include:
+- history rewrite;
+- forced meaning transfer;
+- release=impact collapse;
+- intervention window reopening;
+- aftermath rewriting impact;
+- unanchored accusation promoted as evidence;
+- pressure called crossing;
+- hidden two-party inventory merge;
+- fabricated missing evidence;
+- fused feedback state.
+
+**This proves assay teeth only. It is not evidence that current Lace or any holder candidate satisfies the goals.**
+
+### P35-L — current Lace support
+
+| Goal family | Current Lace contribution | Behavioral status |
+|---|---|---|
+| HCC structure/history goals | append-only pointable history; derived reads | **SUBSTRATE / READ SUPPORT**, holder interpretation/feedback still outside Lace |
+| Coffee Cup temporal/causal goals | ordered immutable history can preserve event distinctions | **SUBSTRATE SUPPORT**, event/intervention/aftermath behavior not demonstrated |
+| Water pointability/shared-footing goals | pointable retained structure can support anchors | **SUBSTRATE SUPPORT**, evidence classification and multi-party crossing are holder/application behavior |
+| Cross-source compatibility | provenance/history can remain distinct | **SUBSTRATE SUPPORT**, no H×C×W runtime implied |
+
+Current Lace is therefore not stamped behavioral-goal PASS.
+
+### P35-D — goal/assay debt
+
+~~~
+GOAL-SPECIFIED
+ASSAY-SPECIFIED
+TESTABLE-NOW as assay self-test
+NO-CURRENT-CANDIDATE
+NEEDS-HOLDER-LAYER
+NEEDS-MULTI-PARTY-SPECIMEN
+NEEDS-TEMPORAL-SPECIMEN
+INSTRUMENT / FIXTURE debt for future real candidates
+SOURCE-AMBIGUOUS where the source itself leaves a tolerance open
+CROSS-SOURCE-CORRESPONDENCE-UNPROVED
+~~~
+
+Pass 35 does not call any of these debts a Core GAP unless a separate Core contract actually says so.
+
+### P35-F — behavioral falsifier board
+
+| Falsifier | Result |
+|---|---|
+| source machinery used as success criterion | **NO** |
+| alien but behaviorally equivalent implementation rejected | **NO** |
+| vague/non-falsifiable minimum goal admitted | **NO** |
+| private chain-of-thought required | **NO** |
+| source locator absent | **NO** |
+| LAB proxy laundered as source | **NO** |
+| substrate support called behavioral success | **NO** |
+| RM-A invented to make assay work | **NO** |
+| Water multi-party inventories collapsed | **NO** |
+| Cup/HCC recurrence collapsed into one round | **NO** |
+| oracle answer labels exposed to a candidate | **NO candidate is run; fixture metadata is self-test only** |
+| bounded behavioral fit called mechanism identity | **NO** |
+| research redefines behavioral goal | **NO** |
+| platform success used as behavioral correctness | **NO** |
+| platform failure used as goal impossibility | **NO** |
+| passing assay promotes machinery into Core | **NO** |
+
+### P35-V — verdict
+
+~~~
+GOAL SPECIFICATION:
+    BEHAVIORAL GOALS OPERATIONALIZED
+    (bounded twelve-assay set)
+
+ASSAY INTEGRITY:
+    MECHANISM-AGNOSTIC
+    (24/24 adversarial self-test)
+
+CURRENT COVERAGE:
+    BOUNDED BEHAVIORAL COVERAGE / NAMED DEBT
+    (assay coverage, not holder-success coverage)
+~~~
+
+The Lab now has a falsifiable destination surface. The next behavioral step, if ever opened, is to bring an actual holder/application candidate output to these assays. Pass 35 does not create that candidate.
 
 
 ---
