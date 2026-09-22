@@ -1,6 +1,6 @@
 # MATHEMATICAL EXECUTION MODEL — Behavioral Read Devices Pass 1 PLAN
 
-**Status:** PLAN — NOT EXECUTED.  
+**Status:** EXECUTED 2026-09-21.  
 **Campaign:** Mathematical Execution Model — Behavioral Read Devices.  
 **Pass:** 1.  
 **Pass name:** **DEFINE THE EYE — minimal mathematical device that can look into Lace without becoming Lace.**  
@@ -9,6 +9,12 @@
 **Primary target:** \`docs/math-execution-model.md\`.  
 **Implementation:** none. No \`src/\`, Cargo, target choice, carrier choice, encoding choice, RM-A rule, pointer acceptance, or Core promotion.  
 **Source-specific full devices:** explicitly deferred. HCC-A, Coffee Cup, and Water are pressure tests in Pass 1, not yet three completed mathematical machines.
+**Execution claim:** b1f9e680e3211ad4cf5f462e962dd59fca39b5bc.
+**Source pressure artifact:** 45076f444f476f2384adfa73f22d2d90aadd0b21.
+**Generic algebra artifact:** 7e70f8f2e2865cc5bab43f8e4f664350bf61210f.
+**Primary model S9:** 1fa15a3bc792fe920a041fc5bc33029e60278298.
+**Findings:** 3cae902310d04f72f487957f1c7514f13d6e276e.
+**Final verdict:** **DEVICE ALGEBRA SOUND WITH OPENS · READ-ONLY SEPARATION PROVED · WITNESS ALGEBRA SUFFICIENT FOR PASS-1 PRESSURE SET · S9 ADMITTED WITH OPENS.**
 
 ---
 
