@@ -1,7 +1,7 @@
-STATUS: FREE
+STATUS: HELD
 STATION: prompts
 OWNS: docs/prompts/**
-AGENT: -
-BASE: -
-SINCE: -
-NOTE: Behavioral Read Devices Pass 6 Stage F COMPLETE. Mandatory context-pass now carries S9-S12, Pass-4 graphics fidelity, S11 T0-T6/GAP-HOST, Pass-5 operator library and HCC/Cup/Water blueprints, current Water UNK/INVALID law, and unchanged Core/implementation gates.
+AGENT: ChatGPT
+BASE: 4848109e46acf3e58c91d3e2dc1e0f0d507bc058
+SINCE: 2026-09-22T18:07:00Z
+NOTE: EXECUTING repo-lag prompt cleanup Pass 1 planning. Scope is live prompt entrances only: inventory current-vs-historical tickets, identify pre-Pass-39 target/gate drift, and define bounded repair order. No law/kit/hologram/maps edits from this claim.
