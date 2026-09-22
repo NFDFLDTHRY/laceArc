@@ -1,6 +1,6 @@
 # CLIPBOARD — laceArc ← Rust `#![no_std]` crate / branch map
 
-**PLAN / PROPOSAL. Nine sheets, A–H and X. No implementation acceptance. Current premise: binary Join plus the human-ruled sampling architecture are reconciled in draft law; exact sampling-derived retention/materialization remains [GAP]. SearchHandle is maps-level derived analysis, not an accepted ABI/API.**
+**PLAN / PROPOSAL. Nine sheets, A–H and X. No implementation acceptance.** This is a **future implementation-decomposition proposal**, not current Lace machinery. Current draft law reconciles binary Join plus human-ruled sampling/search. Canonical `SM-GAP-RM` remains open; latest bounded Lab evidence narrows it to RM-A retain-when open, RM-B partially closed for selected finite contiguous samples, and RM-C class-specifically closed for RootTouch/contiguous grounding. None of that makes these proposed branches eligible. SearchHandle remains maps-level derived analysis, not an accepted ABI/API.
 
 Shelf note (defrag pass 2): this file is the **crate tree**. Serial birth cards live in `docs/plans/rust-nostd-branch-contracts.md`. Neither file is an accepted emission rule.
 
@@ -10,7 +10,7 @@ Execution of [the crate-map prompt](../prompts/rust-nostd-crate-map-prompt.md), 
 
 **Implementation Law:** Rust; `#![no_std]`; zero external dependencies; every dependency is our first-party branch; one branch, one task; state and prove that task before another branch exists. Allocation requires its own proven first-party task under the full law. The posture names, including seL4 and Coq, are the bar, not dependencies to import.
 
-**Gate:** [pointer-emission.md](../pointer-emission.md) is now a reconciled but still unaccepted draft. It supplies current WORD/root/RootTouch/binary Join/finite-sample constructor premises, but **does not supply an retention/materialization rule and is not human-accepted**. Its filename, commits, or reconciliation do not open implementation. Exact human acceptance and every premise needed by the particular task remain required.
+**Gate:** [pointer-emission.md](../pointer-emission.md) is a reconciled but still unaccepted draft. It supplies WORD/root/RootTouch/binary Join/finite-grounding premises plus current sampling/search architecture. **It does not supply RM-A retain-when and is not human-accepted.** Bounded RM-B/RM-C results do not allocate branch ownership or open implementation. Exact human acceptance and every premise needed by the particular task remain required.
 
 
 ## Current premise qualification — ROOT / TOUCH / FOLD Pass 5
@@ -29,7 +29,7 @@ This map predates the Pass-4 law reconciliation. Read its dated "emission [GAP]"
 - adjacency alone does not emit.
 
 **Still open / not owned by these seven doors:**
-- sampling-derived retention/materialization;
+- RM-A retain-when / ownership of the general sampled-evidence → durable-retention decision;
 - semantic subject/operand choice for an arbitrary asserted relation;
 - G1 identity/tokenization;
 - acceptance of pointer-emission.md;
