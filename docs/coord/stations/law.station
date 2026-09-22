@@ -1,7 +1,7 @@
-STATUS: HELD
+STATUS: FREE
 STATION: law
 OWNS: AGENTS.md CLAUDE.md docs/staking-the-workspace.md docs/law-why-these-documents.md docs/systems-manifest.md docs/pointer-emission.md docs/references.md CONTRIBUTING.md README.md .gitignore LICENSE docs/README.md
-AGENT: Astra-alignment-restart
-BASE: baa791f03bda3d8de2ab21fd05832b09f72576d6
-SINCE: 2026-09-21T20:36:00-07:00
-NOTE: Alignment Restart Pass 4 source-backed law clarification: behavioral-goal originals define both target behaviors and functional/causal desired-behavior mechanisms; concrete holder/Lace/runtime realization remains experimental. No Core or acceptance change.
+AGENT: -
+BASE: -
+SINCE: -
+NOTE: Alignment Restart Pass 4 law clarification COMPLETE. Originals define behavioral goals plus desired-behavior functional/causal mechanisms; concrete implementation and repo cross-source mappings remain experimental. Core/acceptance unchanged.
