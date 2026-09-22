@@ -1,7 +1,7 @@
-STATUS: HELD
+STATUS: FREE
 STATION: clipboards
 OWNS: docs/clipboards/**
-AGENT: Astra-alignment-restart
-BASE: 23f29a76e1c904b734ee4679737b573706bfbf95
-SINCE: 2026-09-21T22:30:00-07:00
-NOTE: Pass-5 cleanup of current WebGPU/WGSL/WebNN entrances only. Generalize stale selected-wasm64 cross-shelf labels to the current Wasm target court / TARGET UNDECIDED. Historical pass false-friend bodies remain untouched.
+AGENT: -
+BASE: -
+SINCE: -
+NOTE: Restart Pass 5 cross-shelf target cleanup COMPLETE. WebGPU/WGSL/WebNN current entrances now point to the undecided Wasm/rustc target court; historical ≠wasm64 false-friend bodies remain dated evidence.
