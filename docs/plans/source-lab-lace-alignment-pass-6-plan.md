@@ -1,6 +1,6 @@
 # SOURCE → LAB → LACE ALIGNMENT — Restart Pass 6 PLAN
 
-**Status:** PLAN — NOT EXECUTED.  
+**Status:** EXECUTED 2026-09-21.  
 **Campaign:** Source → Lab → Lace Alignment — restart.  
 **Pass:** 6.  
 **Pass name:** **BOUND THE MACHINE — supported domain, carrier, resident working set, refusal, and recovery envelope.**  
@@ -10,6 +10,10 @@
 **Inherits:** Restart Passes 1–5, global ASCII Passes 33–37, Pass-32 mechanism catalog, current systems-manifest contract registry, Pass-5 target requirements and target audit.  
 **Implementation:** none. No `src/`, Cargo project, carrier birth, allocator choice, target selection, RM-A design, pointer acceptance, or Core promotion.  
 **Current compilation target:** **UNDECIDED.** Pass 6 may produce the requirements that allow a later target decision; it may not inherit wasm64 or force wasm32.
+**Recovered execution claim:** 9c1e02ac0ad38dd9708a8c38dcd3a82c801ed5c4 · ChatGPT · maps, after human-authorized release of the abandoned Astra execution claim.
+**Execution products:** domain 9a090bea540fa0d905047ecdedb3fda0b485f584 · access/CWS da9a53bcab31361e40993b3a14f2a224eb4b0caf · carrier eb60b50c4bf9bd059dbf7df0b7449da820bb4059 · capacity/recovery c3a27f9069e87c8e040300dde8381aa0531f4073 · global ASCII Pass 38 ac7db32bc53ec435af9b0cec507e5ec220a04e72 · findings 703fc1167ec4d1ee27c7611c69028711362fd8c1.
+**Final Pass-6 verdict:** **SUPPORTED DOMAIN BOUNDED CONDITIONALLY · CARRIER OBLIGATIONS CLOSED WITH RULING DEBT · CORRECTNESS WORKING SET PARAMETRIC · NOT READY FOR TARGET COURT · TARGET UNDECIDED.**
+**Optional calculator:** not created; symbolic formulas were sufficient and no accepted numeric inputs exist.
 
 Pass 5 established:
 
@@ -61,38 +65,13 @@ Only the **resident Core domain** is a direct wasm32/wasm64 discriminator.
 
 ## 1. Thesis
 
-[
-oxed{
-	ext{Supported Lace domain} 
-eq 	ext{resident Wasm working set}
-}
-]
-
-[
-oxed{
-	ext{Logical Index representation} 
-eq 	ext{native pointer representation}
-}
-]
-
-[
-oxed{
-	ext{Correctness working set} 
-eq 	ext{performance cache}
-}
-]
-
-[
-oxed{
-	ext{Carrier contract must be derived before carrier implementation is selected}
-}
-]
-
-[
-oxed{
-	ext{Refusal before exhaustion is part of a finite implementation's correctness envelope}
-}
-]
+~~~
+Supported Lace domain != resident Wasm working set
+Logical Index representation != native pointer representation
+Correctness working set != performance cache
+Carrier contract must be derived before carrier implementation is selected
+Refusal before exhaustion is part of a finite implementation's correctness envelope
+~~~
 
 ---
 
@@ -225,9 +204,9 @@ It derives the requirement first.
 
 For supported maximum retained position `Nmax`:
 
-[
-0 le N < N_{max}
-]
+~~~
+0 <= N < Nmax
+~~~
 
 and the implementation must refuse before the next position would alias, wrap, or reuse an earlier index.
 
@@ -242,9 +221,9 @@ Evaluate as **logical encodings**, not Wasm pointer ABIs:
 
 For each calculate:
 
-[
-N_{max} = 2^b - 	ext{reserved values}
-]
+~~~
+Nmax = 2^b - reserved_values
+~~~
 
 No candidate wins merely because it has more bits.
 
@@ -321,25 +300,17 @@ This exposes the cost of logical Index width independently from native pointer w
 
 ### E3 — mixed-history average
 
-For WORD fraction `p`:
+For WORD fraction p:
 
-[
-ar B
-=
-pB_{WORD}
-+
-(1-p)B_{PTR}
-]
+~~~
+B_avg = p * B_WORD + (1 - p) * B_PTR
+~~~
 
 Then:
 
-[
-N_{resident}
-=
-leftlfloor
-rac{R}{ar B}
-ightfloor
-]
+~~~
+N_resident = floor(R / B_avg)
+~~~
 
 These are **scenario formulas**, not accepted encoding.
 
