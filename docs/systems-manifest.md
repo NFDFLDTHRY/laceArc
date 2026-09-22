@@ -94,22 +94,28 @@ The global ASCII also catalogs source/candidate/Layer-III mechanisms in its G-II
 
 - **Applies to:** HCC-A, Coffee Cup, Water / Dual Proofing, and H×C×W candidate compositions.
 - **May:** state target behaviors, constraints, hypotheses, candidate mechanisms and falsifiers; enter the laceArc lab for testing.
-- **Must:** preserve source provenance and experimental status.
-- **Must not:** become a required runtime component, Graphic-D row type, legal-append condition, retention rule, or Core authority by citation.
+- **Current mathematical status:** Behavioral Read Devices Passes 1–5 now provide a non-Core read-device algebra (S9), observability court (S10), optional machine-operator library (S12), and explicit HCC / Coffee Cup / Water mathematical blueprints. These are realizations of source obligations at the mathematical-device layer, **not runtime implementation**.
+- **Must:** preserve source provenance, current human supersession where applicable, and the distinction between source behavior, mathematical device realization, and implementation.
+- **Must not:** become a required runtime component, Graphic-D row type, legal-append condition, retention rule, or Core authority by citation. Exact H×C×W runtime nesting/schedule remains OPEN.
+- **Water current-law route:** UNK is a nonblocking expected-evidence shape; INVALID requires later refuting evidence. Raw-source blocking/lexical semantics remain historical/source provenance, not the current target.
 - **Write authority to Lace:** none.
 
 #### SM-X-RES — research/book candidate machinery
 
 - **Applies to:** Kauffman, Rowlands, Xiao–Zhu, Petersen–Zech, AgentScope and later research shelves.
 - **May:** contribute mathematics, algorithms, mechanisms, known limits, counterexamples and falsifiers to the lab.
-- **Must not:** become Core because of analogy; source equations/algorithms do not override Graphics A–D or human rulings.
+- **Current mathematical status:** Pass 5 found coherent machine-construction material and admitted an **optional device-local operator library** inside S9: semantic parallel composition, finite candidate generation, provenance-bearing checking, bounded candidate/frontier advance, explicit stop/control, and source-specific resolution/aggregation. The fixed common chassis was rejected.
+- **Must:** keep source mechanism, project-derived operator abstraction, and source-specific behavioral semantics distinct. Candidate != Evidence; VerifierScore != Truth; learned/model state does not become Lace fact.
+- **Must not:** become Core because of analogy; source equations/algorithms do not override Graphics A–D or human rulings, and the operator library does not supply HCC/Cup/Water semantics or RM-A.
 - **Write authority to Lace:** none unless separately established by an accepted Lace contract, which is absent here.
 
 #### SM-X-PLAT — platform/toolchain machinery
 
 - **Applies to:** Wasm, WebGPU, WGSL, WebNN, rustc, Cargo and hardware/target facts.
 - **May:** establish executable primitives, resource ceilings, target/toolchain facts and physical feasibility constraints.
-- **Must not:** supply Lace semantics, a retention/materialization rule, pointer acceptance, or human acceptance.
+- **Current mathematical status:** S11 separates build/toolchain, Wasm core, browser host/embedder, WebGPU/WGSL and WebNN planes; tracks technical evidence from T0 source-specified through T6 sustained; records **GAP-HOST** for the missing browser Wasm embedder source; and keeps accelerators optional/non-authoritative.
+- **Must:** preserve the rule that compute location does not determine evidence class and that interoperability does not imply zero-copy or semantic authority.
+- **Must not:** supply Lace semantics, a retention/materialization rule, pointer acceptance, human acceptance, or promote model/GPU output into truth by execution location.
 - **Write authority to Lace:** none.
 
 #### SM-X-L3 — Layer-III / steward machinery
