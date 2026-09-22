@@ -1,7 +1,7 @@
-STATUS: FREE
+STATUS: HELD
 STATION: maps
 OWNS: docs/reason-model-map.md docs/rust-nostd-*.md docs/atomic-primitives-map.md docs/clock/gearing-code-1to1.md docs/coherence-audit*.md docs/clock/system-mathematical-model.md docs/defrag-plan.md docs/plans/** docs/namespace-register.md docs/*.md (catch-all: any unmatched file at the docs/ root)
-AGENT: -
-BASE: -
-SINCE: -
-NOTE: Source→Lab→Lace Alignment Restart Pass 5 COMPLETE and receipt finalized. TARGET UNDECIDED; former wasm64 seal superseded as current state; Pass 37 is final semantic edit; all 11 document stations and 8 gearing shafts verified FREE; no Core/RM-A/acceptance/implementation change.
+AGENT: Astra-alignment-restart
+BASE: b926d1b9eebfeca7176cadf3487c675a12cf45ff
+SINCE: 2026-09-21T22:10:00-07:00
+NOTE: Planning only: Source→Lab→Lace Alignment Restart Pass 6. Derive supported logical domain, carrier contract, resident working-set envelope, capacity/refusal, restart/recovery, and target-discriminating premises without selecting a concrete carrier or reopening implementation.
