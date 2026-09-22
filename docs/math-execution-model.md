@@ -688,6 +688,84 @@ This model does **not** define a universal Retain/Materialize function. It speci
 
 RootTouch remains the closed mandatory special case.
 
+### S4.7 — Bounded closures and the remaining socket (audit pass 5, 2026-09-22)
+
+*Dated addition (mathematical execution model audit, pass 5, maps). Nothing above it is edited. It carries into the model what the Lab already closed at bounded scope, cites the refutations behind S4.6's refused substitutes, and states the remaining open exactly as the [RM-A design docket](plans/lab-source-architecture-pass-6-design-docket.md) prepared it. Sources: [lab-source Pass 6 findings](plans/lab-source-architecture-pass-6-findings.md) §3–§5, §9; the docket §2–§8; the sampling campaign's refutation tables; the D1 fixture. **No sentence in this subsection decides when to retain, ranks a candidate, or names a threshold.** RM-A remains `[GAP]`.*
+
+#### S4.7.1 Lemma RM-B(contig) — a selected contiguous cell has one lawful addressable representative
+
+**Lemma RM-B(contig).** Let \(L\) be a valid state and \(\mathcal S[n,t]=(r_{t-n+1},\ldots,r_t)\) a contiguous cell of the S3.5 surface (source-word positions \(t-n+1,\ldots,t\)) that **has already been selected for retention by some RM-A decision this model does not supply**. Then the ordered WORD-row addresses \((w_{t-n+1},\ldots,w_t)\) of the cell's positions are determined by \(L\) alone, and the S4.2 ladder over them appends exactly \(n-1\) rows and yields one point \(P\) with \(\{w_{t-n+1},\ldots,w_t\}\subseteq\operatorname{Reach}(P)\).
+
+*Premises:* (i) every successful word arrival is its own immutable WORD row (S2, H3); (ii) the source-word position of a WORD row is its rank in \(\mathsf{WordTrace}(L)\) (S3.2), so positions map to addresses deterministically from the named prefix, interleaved POINTER rows skipped; (iii) the S4.2 ladder consumes an ordered finite sample of addressable points and preserves its order (manifest SM-C19; Theorem G restated; Lemmas L1, L2); (iv) **the cell is already selected** — the lemma has no selection content.
+*Proof.* By (ii) the cell's positions name the addresses \(w_{t-n+1}<\cdots<w_t\), all \(<|L|\). That list is an ordered finite sample of existing points, the exact input of the S4.2 ladder, so Theorem G (restated) applies: \(n-1\) appended rows, one point whose Reach contains every \(w\). ∎ (The chain is the Lab's: *selected contiguous cell → ordered source positions → ordered WORD-row addresses → finite ordered addressable sample → one later addressable point*, lab-source Pass 6 §3.)
+
+*What the lemma says and does not say.* It says lawful materialization **exists** for this class. It does not say the resulting point reproduces any historical topology: a left fold over D1's five WORD rows (addresses 0000, 0001, 0003, 0005, 0008) yields a point at index 14 whose Reach is \(\{0,1,3,5,8,11,12,13,14\}\), covering the same words as D1 row 0010, whose Reach is \(\{0,\ldots,10\}\) through six differently branched joins — *same constituent coverage, different generating topology* (lab-source Pass 6 §4; the Petersen–Zech finite-fit warning). Nor does it say the cell is retained: the D1 cell \(\mathcal S[2,2]\) = DESSERT PIE derives the operands (0001, 0003) and could be grounded by one Join **if selected**, and D1 does not retain it — capability is not a trigger.
+
+*Scope (class-specific, the Lab's words):* a selected finite contiguous sample occurrence whose constituent WORD rows are in the named prefix. Not settled by it: an abstract repeated-pattern class; a ridge or branch as an object; a cross-level relation whose constituent operand set its candidate structure does not define; any unique or canonical topology.
+*Stamp:* `PROVED_WITHIN_SCOPE` — premises (i)–(iv); the fourth is the whole of RM-A and is assumed, not supplied. *Refuter:* a cell whose positions do not determine WORD-row addresses from the prefix (none exists under (i)–(ii)); a ladder that appends other than \(n-1\) rows.
+*D1 controls (lab-source Pass 6 §3, re-run this pass):* \(\mathcal S[2,1]\) = PIE DESSERT → (0000, 0001) → Join = 0002, matches D1; \(\mathcal S[2,3]\) = PIE WHOLE → (0003, 0005) → Join = 0006, matches D1; the five-WORD cell → (0000, 0001, 0003, 0005, 0008), four joins, representative at 14, Reach as above. Script receipt in [the pass-5 findings](plans/math-execution-audit-pass-5-findings.md).
+
+#### S4.7.2 Lemmas RM-C(RootTouch) and RM-C(contig) — where operand order is already determined
+
+**Lemma RM-C(RootTouch).** For the mandatory seen-word append, the ordered operand pair is \((\text{new occurrence},\ \text{root})\): \(\mathsf{RootTouch}(j,r)=\mathsf{Join}(j,r)\) with \(j\) the newly landed index and \(r=\mathrm{Root}_L(v)\).
+*Premises:* H1 (the seen occurrence touches the word root), H4 (the unseen occurrence is the root), S3.3's encoding. *Proof.* The rule that mandates the row also fixes its two operands and their order; there is no further choice. D1 0004 = (POINTER, 0003, 0000) agrees. ∎ *Stamp:* `PROVED_WITHIN_SCOPE` — definitional under H1/H4/S3.3. *Refuter:* a RootTouch row written with the operands reversed under the same rule.
+
+**Lemma RM-C(contig).** For the operation *ground this selected contiguous cell*, the operand order of every ladder step is determined by the cell: \(P_{k+1}=\mathsf{Join}(P_k,w_{t-n+k})\), with the \(w\) in source-position order.
+*Premises:* the cell is intrinsically ordered by source position; premise (ii) of Lemma RM-B(contig) preserves that order into the address list; the S4.2 ladder consumes the list in order (SM-C19). *Proof.* Each step's operands are the previous ladder point and the next address of an ordered list; the list's order is the cell's own. ∎ *Stamp:* `PROVED_WITHIN_SCOPE` — for this candidate class only. *Refuter:* a reconstruction that permutes the cell's positions.
+
+*Generic RM-C stays OPEN.* Neither lemma closes: a general \(\mathsf{ref_A}/\mathsf{ref_B}\) semantics; semantic subject/object roles (S1.3 keeps ref\_A as *described subject* in the six D1 examples only); the order of an arbitrary relation-between-relations; or any unordered abstract pattern class. The Lab's result, carried here: *closed — RootTouch; contiguous ordered sample grounding. Open — candidate classes whose own lawful structure does not provide role/order* (lab-source Pass 6 §5). RM-C is candidate-specific, as the manifest already allowed.
+
+#### S4.7.3 The refused families, with their refutations
+
+S4.6 refuses six universal Retain/Materialize substitutes without citing why. The docket §5 lists sixteen forbidden answer families. Each is listed here with the file and section that refutes it or the fence that forbids it. None is refuted by argument in this file; the table points.
+
+| # | Family | Refuted by / forbidden by |
+|---|---|---|
+| 1 | every sampled cell becomes a retained point | [sampling Pass 1 findings](plans/sampling-density-emergence-pass-1-findings.md) C-C and F1-5 — refuted as universal by D1 sparsity (seven of fifteen D1 cells have no exact-cover retained point, Pass 2 T-R2) |
+| 2 | every adjacent pair | sampling Pass 1 F1-6 — DESSERT→PIE and WHOLE→CUSTOMER are adjacent in D1 with no POINTER between them; the fixture's own *ruled out by these rows* line |
+| 3 | exact-repeat-only retention | [sampling Pass 2 findings](plans/sampling-density-emergence-pass-2-findings.md) T-R1 — D1 0002 and 0006 are retained with no prior repeat |
+| 4 | first-seen-every-cell materialization | sampling Pass 2 T-R2, F2-12 — refuted by D1 |
+| 5 | cheapest-contiguous universal grounding | sampling Pass 2 T-R5 — at \(t=3\) a one-Join exact cover of the \(n=4\) cell was available from 0002 and 0006; D1 retained 0007 = Join(0006, 0004), a different branch |
+| 6 | semantic similarity / embedding threshold | sampling Pass 1 recurrence table — *violates no-stored-meaning / H8*; this file S6 item 3, S9.8, S12.5 |
+| 7 | "B8 says it remains, therefore retain it" | lab-source Pass 6 §6 *Aftermath + B8* — persistence of a recorded touch is not retention of a discovered one; manifest SM-C12 *must not become a general retention predicate*; this file S3.3 |
+| 8 | D1 lookup / caption grammar | [Behavioral Read Devices Pass 4 findings](plans/math-execution-behavioral-read-devices-pass-4-findings.md) §14 *D1StateWitness ≠ RetainWhen*; the docket §3 forbids D1 answer labels as input; this file S4.1 authority boundary |
+| 9 | chronological ref\_A/ref\_B convention | the D1 fixture's *ruled out by these rows*: four of six pointers have ref\_A later than ref\_B, two earlier; this file S1.3 *slot semantics are not chronological* |
+| 10 | A5 occurrence count renamed as HCC-A weight | lab-source Pass 6 §6 *A5 + HCC-A weights/pruning* — the count is a lab proxy; *count → weight* is an editor adapter; no keep/prune predicate follows |
+| 11 | Kauffman no-slip renamed as retain | lab-source Pass 6 §6 — input/output incompatibility unchanged under composition (Pass 5 result carried) |
+| 12 | Rowlands nilpotency renamed as retain | same |
+| 13 | Xiao token selector renamed as relation retention | same |
+| 14 | AgentScope ReAG / neural evidence imported as Lace state | same; this file S12.5 *LearnedState ⇏ LaceFact*, S9.8 |
+| 15 | future / downstream-outcome selection | the docket §3 forbids future rows and outcomes; this file's reads are prefix-only (S3.5 *named prefix*, S9.4, EP-1 replay under the declared read rule); lab-source Pass 6 §8 *prefix legality* |
+| 16 | platform primitive as semantic policy | lab-source Pass 6 §9 item 4; this file S11.9 *no technical source supplies RM-A*, S11.12 |
+
+Families 1–6 are S4.6's six. Family 3 also answers the sampling campaign's own question *is exact recurrence the universal retention rule?* — no (S3.5). A recurrence **threshold** is not refuted; it is *open / not admitted* because no source backs one (sampling Pass 2 T-R3), which is the docket's point that a scalar needs an authority.
+
+#### S4.7.4 The socket — RM-A stated as the docket's five questions
+
+What remains is one obligation, in the docket's words (§2):
+
+> INPUT — sampling-derived structural evidence reconstructed from the current Lace prefix. OUTPUT — decision that a specific discovered structure warrants durable retention as Lace.
+
+With this model's names filled in:
+
+- **Input** (docket §3, legal classes): the S3.5 position×scale reads and the S3.6 frontier/witness reads over the named prefix \(L_n\) (manifest SM-C20, SM-C21); the current root, occurrence, RootTouch and retained-participation facts read from \(L_n\) (S3.1–S3.4); exact bounded specimen facts when explicitly frozen (the D1 fixture); and any additional input a **new human ruling or design** introduces by name, with its authority. Not silently consumable: meanings or similarity scores; embeddings; external learned-model state (S12.5); future rows or outcomes; D1 answer labels; hidden document/provenance classes (S3.7 leaves the C6 discriminator OPEN); source-domain quantities without a ruled correspondence.
+- **Output** (docket §4): `retain? · selected object · evidence`. The selected object must be precise enough to be either a finite ordered sample of addressable points — the input of Lemma RM-B(contig) and of the S4.2 ladder — or a declared constituent-point description from which such a sample follows. The evidence is finite nonempty `SEE-L` support under EP-1 (S10.6), replayable from the named prefix. No universal RM-C rule is required where the selected class carries its own order (S4.7.2).
+- **Write, once decided:** the same binary \(\mathsf{Join}\) / repeated grounding of S4.1–S4.2, unchanged; the STEP schema of S4.6 keeps its bracket \([\mathsf{Retain/Materialize}\ \mathrm{OPEN}]\).
+
+The questions a ruling or design must answer, verbatim from the docket §7:
+
+> 1. What structural condition on lawful sampling/search evidence warrants retention?
+> 2. What exact discovered object is selected when that condition fires?
+> 3. If that object is not already a finite ordered set of addressable Lace points, what constituent-point description does the rule provide so RM-B can proceed?
+> 4. What evidence would falsify the rule?
+> 5. Does the rule apply universally, or only to a declared candidate class?
+
+and its two riders: *a design that cannot answer question 2 is not an RM-A rule*; *a design that answers question 1 with a scalar threshold must also name the authority for both the scalar and the threshold*. The evidence such a design must survive is the docket §8 (source declaration; no forbidden side state; prefix legality; derived-state replay; oracle independence; false-positive accounting; the D1 bounded test without oracle tuning; the RootTouch, CheatingMemory and SidecarMemory controls; at least one out-of-D1 specimen before any general claim). The Lab's eight-step certificate that no admissible existing evidence supplies the answer is lab-source Pass 6 §9.
+
+**This model supplies no candidate answer.** RootTouch remains the only mandatory retained append. The next step is the human-facing design or ruling the Pass-6 docket prepared; convening it is the human's (board ruling MA-H01), and nothing in this audit does so.
+
+*Shoe in hands. Given five marked points on the cord that someone else already chose, you can tie them into one point and say where it sits (RM-B), and in what order you took them (RM-C). You cannot say which five to choose. That is RM-A, and it is still open.*
+
 ## S5 — Contracts I / II / III
 
 | Contract | Role in this partial model | Contains (manifest) | Must not |

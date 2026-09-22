@@ -1,6 +1,6 @@
 # Mathematical execution model audit — pass 5 plan: the bounded closures as lemmas, and the RM-A socket reduced
 
-**Status:** PLAN · not executed.  
+**Status:** EXECUTED — CLOSED · receipt [math-execution-audit-pass-5-findings.md](math-execution-audit-pass-5-findings.md). Dated S4.7 in the model, 78 lines added and 0 removed: Lemma RM-B(contig), Lemmas RM-C(RootTouch) and RM-C(contig), the sixteen refused families with citations, the docket's five questions verbatim; struck-sentence list empty.  
 **Station:** maps.  
 **Board:** [math-execution-audit-iteration-plan.md](math-execution-audit-iteration-plan.md) · findings MA-M11, MA-M12, MA-X04.  
 **Pinned:** `5ffe01156047df01e8cd0823a286b53e89082905`.  
