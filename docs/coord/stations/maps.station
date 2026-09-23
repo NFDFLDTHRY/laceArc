@@ -1,7 +1,7 @@
-STATUS: HELD
+STATUS: FREE
 STATION: maps
 OWNS: docs/reason-model-map.md docs/rust-nostd-*.md docs/atomic-primitives-map.md docs/clock/gearing-code-1to1.md docs/coherence-audit*.md docs/clock/system-mathematical-model.md docs/defrag-plan.md docs/plans/** docs/namespace-register.md docs/*.md (catch-all: any unmatched file at the docs/ root)
-AGENT: ChatGPT-language-structure-pass1
-BASE: aeb460616e9abdad12d86d599c07afa7a39ca9a0
-SINCE: 2026-09-23T02:00:00Z
-NOTE: EXECUTING language-structure / interaction-loop Pass 1 evidence mapping under docs/plans/language-structure-lace-pass-1-plan.md. Analysis artifacts only. No Core/law/model/manifest edits; no RM-A answer; no Pass 2 execution.
+AGENT: -
+BASE: -
+SINCE: -
+NOTE: Language-structure / interaction-loop Pass 1 EXECUTED 2026-09-23. Evidence map c5d758e; findings f6ddb04; plan status b094134; index bbb5348. Verdict: recursive language + dictionary-on-Lace supported; historical human seed charge recovered; corpus/density open; admitted input->Lace supported; local/view output->Lace refuted; external committed response->Lace OPEN; Star search derived/read-only; canonical Star-pattern/match/decode open; RM-A split/narrowed not closed; A/B undecided. Tooling qualifications: direct PNG sight and shell check-docs NOT_PERFORMED; current PNG blobs unchanged since sighted receipts, new artifacts manually indexed. Pass 2 not opened. Next event: human.
