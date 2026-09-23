@@ -1,7 +1,7 @@
-STATUS: HELD
+STATUS: FREE
 STATION: maps
 OWNS: docs/reason-model-map.md docs/rust-nostd-*.md docs/atomic-primitives-map.md docs/clock/gearing-code-1to1.md docs/coherence-audit*.md docs/clock/system-mathematical-model.md docs/defrag-plan.md docs/plans/** docs/namespace-register.md docs/*.md (catch-all: any unmatched file at the docs/ root)
-AGENT: ChatGPT-language-structure-pass3
-BASE: c8ba614ff7d25e0b61427a1d6b23f1b763250bc1
-SINCE: 2026-09-23
-NOTE: EXECUTING language-structure / interaction-loop Pass 3 corpus / G1 sensitivity / structural-density experiment. Lab corpora only; no release seed choice, no global G1, no RM-A rule, no Core/law/model/manifest edit, no Pass 4 execution.
+AGENT: -
+BASE: -
+SINCE: -
+NOTE: Language-structure / interaction-loop Pass 3 EXECUTED 2026-09-23. Corpus court 5fd625b; density ledger 9668f7f; findings 0f37cbe corrected at cfafb7a; plan status 6ad8626; index 03d2b7f. APPLES instrument reproduced; OEWN 2025 definition text admitted Lab-only; matched 5k/10k/20k dictionary/headword/shuffle/entry/prose runs across G1-A/B/C. Result: universal "dictionary is densest/best" refuted as too coarse; prose denser at low scale and Frankenstein supplies higher Alice prior coverage, while intact definitions show strong sequence-dependent n>=3 recurrence beyond identical shuffled tokens/headwords, robust across tested G1 policies. Open #15, global G1, G3, RM-A unchanged. No external corpus committed. Local shell check-docs NOT_PERFORMED tooling limit. Pass 4 not opened. Next event: human.
