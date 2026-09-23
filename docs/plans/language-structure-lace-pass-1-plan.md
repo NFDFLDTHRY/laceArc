@@ -1,6 +1,6 @@
 # Language structure / interaction loop - Pass 1 plan
 
-**Status:** PLAN - NOT EXECUTED.  
+**Status:** EXECUTED 2026-09-23 — evidence map + findings committed; analytical completion with two tooling qualifications: direct PNG sighting and shell `check-docs` were NOT_PERFORMED in this connector-only session and are recorded honestly in the findings.  
 **Campaign position:** Pass 1 of 6. Only Pass 1 is authorized by this file. Passes 2-6 are a provisional horizon, not executable plans.  
 **Station:** maps.  
 **Pinned main before claim:** `c6f047a4ffe208cc8bbdcec4c41f15763c21dcf9` (2026-09-23).  
