@@ -1,7 +1,7 @@
-STATUS: HELD
+STATUS: FREE
 STATION: maps
 OWNS: docs/reason-model-map.md docs/rust-nostd-*.md docs/atomic-primitives-map.md docs/clock/gearing-code-1to1.md docs/coherence-audit*.md docs/clock/system-mathematical-model.md docs/defrag-plan.md docs/plans/** docs/namespace-register.md docs/*.md (catch-all: any unmatched file at the docs/ root)
-AGENT: ChatGPT-language-structure-pass4-plan
-BASE: 04a1e31baa0eed135e5d14aea4ae17062499d4fc
-SINCE: 2026-09-23
-NOTE: PLAN ONLY: language-structure / interaction-loop Pass 4 structural retrieval / match / ranking. Map Pass-3 observed mechanisms into candidate query, witness, continuation and resolver machinery; no semantic similarity, no Core ranking, no RM-A rule, no decode/response execution, no law/model/manifest edit.
+AGENT: -
+BASE: -
+SINCE: -
+NOTE: Language-structure / interaction-loop Pass 4 PLAN persisted 2026-09-23: docs/plans/language-structure-lace-pass-4-plan.md at 7e995aa, indexed after planning. Target: causal Star-pattern query -> historical exact structural candidates -> continuation branch profiles -> resolver court R4-A..J; held-out Alice/OEWN/Frankenstein evaluation with intact/shuffle/headword controls and G1-A/B/C sensitivity. "Most likely" inside one fixed pattern = empirical witnessed continuation mode only; cross-pattern authority remains experimental. No embeddings, persistent search store, Core ranking, RM-A rule, decode/response, law/model/manifest edit. Pass 5 not opened. Next event: human proceed for Pass 4.
