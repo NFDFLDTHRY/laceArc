@@ -1,6 +1,6 @@
 # Language structure / interaction loop — Pass 2 plan: boundary / event algebra
 
-**Status:** PLAN — NOT EXECUTED.  
+**Status:** EXECUTED 2026-09-23 — boundary algebra, trace ledger and findings committed. BE-1 boundary non-identifiability and BE-2 span groundability proved within scope; G3 sharpened, not closed; no new row kind/store; RM-A unchanged; Pass 3 not opened. Direct PNG sight and local shell check-docs remain NOT_PERFORMED tooling qualifications.  
 **Campaign position:** Pass 2 of the six-pass language-structure / interaction-loop campaign. Pass 1 is EXECUTED; Pass 3 is not opened by this file.  
 **Station:** maps.  
 **Pinned main before planning claim:** `dc50aa0858653bdf6cf1bd8a7a28e76575be26a8`.  
