@@ -1,7 +1,7 @@
 STATUS: HELD
 STATION: maps
 OWNS: docs/reason-model-map.md docs/rust-nostd-*.md docs/atomic-primitives-map.md docs/clock/gearing-code-1to1.md docs/coherence-audit*.md docs/clock/system-mathematical-model.md docs/defrag-plan.md docs/plans/** docs/namespace-register.md docs/*.md (catch-all: any unmatched file at the docs/ root)
-AGENT: ChatGPT-language-structure-pass4
-BASE: 2c7b19abf53d87d3b7aa0a64eeebec8ca76ad0a9
-SINCE: 2026-09-23
-NOTE: EXECUTING language-structure / interaction-loop Pass 4 structural retrieval / match / continuation ranking. Frozen base parameters before final held-out scoring: max query depth 6; primary continuation k=1; multiword k=2..5; top-k branch reporting 3/5; R4-A..J formulas exactly as planned. No semantic similarity/embeddings, no corpus POINTER fiction, no RM-A/Core write, no decode/response, no law/model/manifest edit.
+AGENT: Grok-language-structure-pass4
+BASE: 8b6b954e7ae6533244404dfce98157fd9f07b1f0
+SINCE: 2026-09-23T03:54:09Z
+NOTE: force-freed 2026-09-23T03:54:09Z: was held by ChatGPT-language-structure-pass4 since 2026-09-23. human takeover 2026-09-22: ChatGPT-language-structure-pass4 stalled after mechanism map; Grok to finish Pass 4 retrieval court/ledger/findings
