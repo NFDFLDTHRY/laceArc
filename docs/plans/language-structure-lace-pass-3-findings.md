@@ -419,7 +419,7 @@ At 10k Q under G1-B the deterministic frequency anchors are:
 - median repeated: `PARDON`, support 4;
 - low repeated: `YOUNG`, support 2.
 
-At a 20k dictionary seed:
+At a 10k dictionary seed:
 
 - `THE` participates in 220 recurrent anchored classes through n=5;
 - `YOUNG` has a small recurrent seed structure through n=2;
