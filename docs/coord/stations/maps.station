@@ -1,7 +1,7 @@
-STATUS: HELD
+STATUS: FREE
 STATION: maps
 OWNS: docs/reason-model-map.md docs/rust-nostd-*.md docs/atomic-primitives-map.md docs/clock/gearing-code-1to1.md docs/coherence-audit*.md docs/clock/system-mathematical-model.md docs/defrag-plan.md docs/plans/** docs/namespace-register.md docs/*.md (catch-all: any unmatched file at the docs/ root)
-AGENT: ChatGPT-language-structure-pass1-plan
-BASE: c6f047a4ffe208cc8bbdcec4c41f15763c21dcf9
-SINCE: 2026-09-23T01:30:00Z
-NOTE: PLAN ONLY: Pass 1 of a six-pass language-structure / interaction-loop mapping campaign. Map the human's language-as-structure, dictionary-seed, input/output-boundary, Star-search, decode/respond hypotheses against current Lace law/evidence. No RM-A answer, no Core/law/model edit, no execution.
+AGENT: -
+BASE: -
+SINCE: -
+NOTE: Language-structure / interaction-loop Pass 1 PLAN persisted 2026-09-23: docs/plans/language-structure-lace-pass-1-plan.md at 2260f07, indexed at 38066ea. Plan only; no execution, no RM-A answer, no Core/law/model/manifest change. Next event: human proceed for Pass 1.
