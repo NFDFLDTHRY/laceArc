@@ -1,6 +1,6 @@
 # Language structure / interaction loop — Pass 3 plan: seed corpus / G1 sensitivity / structural density
 
-**Status:** PLAN — NOT EXECUTED.  
+**Status:** EXECUTED 2026-09-23 — real-corpus Lab experiment complete. APPLES instrument reproduced; OEWN 2025 definition corpus admitted Lab-only; matched 5k/10k/20k dictionary/headword/shuffle/entry/prose controls run under bounded G1-A/B/C; prefix-causal Alice seed utility measured; Open #15, global G1 and RM-A remain OPEN; no Core/law/model/manifest edit; Pass 4 not opened.  
 **Campaign position:** Pass 3 of the six-pass language-structure / interaction-loop campaign. Passes 1–2 are executed. Pass 4 is not opened by this file.  
 **Station:** maps.  
 **Pinned main before planning claim:** `763a83c9c75348d2eb4a95cc59320f96306553f0`.  
