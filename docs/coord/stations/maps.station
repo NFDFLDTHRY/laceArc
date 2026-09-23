@@ -1,7 +1,7 @@
-STATUS: HELD
+STATUS: FREE
 STATION: maps
 OWNS: docs/reason-model-map.md docs/rust-nostd-*.md docs/atomic-primitives-map.md docs/clock/gearing-code-1to1.md docs/coherence-audit*.md docs/clock/system-mathematical-model.md docs/defrag-plan.md docs/plans/** docs/namespace-register.md docs/*.md (catch-all: any unmatched file at the docs/ root)
-AGENT: ChatGPT-language-structure-pass2-plan
-BASE: dc50aa0858653bdf6cf1bd8a7a28e76575be26a8
-SINCE: 2026-09-23
-NOTE: PLAN ONLY: language-structure / interaction-loop Pass 2 boundary-event algebra. Derive and attack candidate inbound/outbound crossing models using existing WORD/POINTER machinery; no execution, no new row kind, no RM-A answer, no Core/law/model/manifest edit.
+AGENT: -
+BASE: -
+SINCE: -
+NOTE: Language-structure / interaction-loop Pass 2 PLAN persisted 2026-09-23: docs/plans/language-structure-lace-pass-2-plan.md at 5391408, indexed at 554553f. Plan only. Target: boundary/event algebra; BE-1 boundary non-identifiability; local selection != external commitment != recorded output; candidate courts for loopback/event grounding/role/sentinel/sidecar/pair topology; send-record custody debt explicit. No execution, no new row kind/store, no RM-A answer, no Core/law/model/manifest edit. Next event: human proceed for Pass 2.
