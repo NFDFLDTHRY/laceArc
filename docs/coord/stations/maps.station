@@ -1,7 +1,7 @@
-STATUS: FREE
+STATUS: HELD
 STATION: maps
 OWNS: docs/reason-model-map.md docs/rust-nostd-*.md docs/atomic-primitives-map.md docs/clock/gearing-code-1to1.md docs/coherence-audit*.md docs/clock/system-mathematical-model.md docs/defrag-plan.md docs/plans/** docs/namespace-register.md docs/*.md (catch-all: any unmatched file at the docs/ root)
-AGENT: -
-BASE: -
-SINCE: -
-NOTE: Findings handoff persisted 2026-09-23 (5e59cd3): docs/plans/math-execution-model-findings-handoff-2026-09-23.md, evidence state at b1ac324 for another reasoning model. No pass proposed, no ruling taken, model untouched. Leftovers unchanged (stale close-reading anchor; three theorem-register rows; court rows). Next event: the human's.
+AGENT: ChatGPT-language-structure-pass1-plan
+BASE: c6f047a4ffe208cc8bbdcec4c41f15763c21dcf9
+SINCE: 2026-09-23T01:30:00Z
+NOTE: PLAN ONLY: Pass 1 of a six-pass language-structure / interaction-loop mapping campaign. Map the human's language-as-structure, dictionary-seed, input/output-boundary, Star-search, decode/respond hypotheses against current Lace law/evidence. No RM-A answer, no Core/law/model edit, no execution.
