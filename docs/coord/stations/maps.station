@@ -1,7 +1,7 @@
-STATUS: FREE
+STATUS: HELD
 STATION: maps
 OWNS: docs/reason-model-map.md docs/rust-nostd-*.md docs/atomic-primitives-map.md docs/clock/gearing-code-1to1.md docs/coherence-audit*.md docs/clock/system-mathematical-model.md docs/defrag-plan.md docs/plans/** docs/namespace-register.md docs/*.md (catch-all: any unmatched file at the docs/ root)
-AGENT: -
-BASE: -
-SINCE: -
-NOTE: Language-structure / interaction-loop Pass 2 EXECUTED 2026-09-23. Boundary algebra 1c15fb3; trace ledger caa807b; findings 99b9805; plan status 7467b17; index c92351f. BE-1 boundary non-identifiability PROVED_WITHIN_SCOPE; BE-2 finite contiguous text-span groundability PROVED_WITHIN_SCOPE; BE-3 bare span grounding incomplete; BE-H role-bound wrapper exhibits existing WORD/POINTER capacity in principle but needs new boundary authority/role anchors/commit witness. G3 sharpened into segmentation/direction/commitment/representation/session questions; RM-A unchanged; GAP-HOST and R3/R4-style custody conditional for proof-grade outbound history. Direct PNG sight and local shell check-docs NOT_PERFORMED tooling limits. Pass 3 not opened. Next event: human.
+AGENT: ChatGPT-language-structure-pass3-plan
+BASE: 763a83c9c75348d2eb4a95cc59320f96306553f0
+SINCE: 2026-09-23
+NOTE: PLAN ONLY: language-structure / interaction-loop Pass 3 corpus / G1 sensitivity / structural-density experiment. Reuse current sampler/search metrics, do not solve global G1, do not choose/ship a seed corpus, do not touch Core/law/model/manifest, no Pass 4 execution.
